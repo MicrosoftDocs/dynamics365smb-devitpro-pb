@@ -1,6 +1,5 @@
 ---
 title: "EXECUTE Method"
-author: edupont04
 manager: edupont04
 ms.custom: na
 ms.date: 04/01/2019
