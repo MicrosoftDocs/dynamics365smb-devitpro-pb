@@ -1,3 +1,16 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
+- name: Dynamics 365
+  tocHref: /dynamics365/
+  topicHref: /dynamics365/index
+  items:
+  - name: Introduction to Dynamics 365
+    tocHref: /dynamics365/get-started/what-is/
+    topicHref: /dynamics365/get-started/what-is/index
+  - name: Business Central
+    tocHref: /dynamics365/financials/
+    topicHref: /dynamics365/financials/index
+  - name: Business Central Developer and IT-pro
+    tocHref: /dynamics365/business-central/devitpro
+    topicHref: /dynamics365/business-central/devitpro/index
+  - name: Accountant Hub
+    tocHref: /dynamics365/accountants/
+    topicHref: /dynamics365/accountants/index
