@@ -18,7 +18,7 @@ ms.author: solsen
 Represents a countriesRegions object in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], which is part of an address.
 
 > [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
@@ -60,8 +60,8 @@ Here is a JSON representation of the countriesRegions.
 
 ## See also
 [Working with [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] in Microsoft Graph](../resources/dynamics_overview.md)  
-[Enabling the APIs for Microsoft Dynamics NAV](../../enabling-apis-for-dynamics-nav.md)  
-[Endpoints for the APIs](../../endpoints-apis-for-dynamics.md)  
+[Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md)  
+[Endpoints for the APIs](../endpoints-apis-for-dynamics.md)  
 [Error Codes](../dynamics_error_codes.md)  
 [Get counties regions](../api/dynamics_countriesregions_get.md)  
 [Post countries regions](../api/dynamics_create_countriesregions.md)  

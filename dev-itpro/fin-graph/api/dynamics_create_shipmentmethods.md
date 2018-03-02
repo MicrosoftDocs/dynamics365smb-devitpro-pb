@@ -77,8 +77,8 @@ Content-type: application/json
 ## See also
 [Graph Reference](../api/dynamics_graph_reference.md)  
 [Working with [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] in Microsoft Graph](../resources/dynamics_overview.md)  
-[Enabling the APIs for Microsoft Dynamics NAV](../../enabling-apis-for-dynamics-nav.md)  
-[Endpoints for the APIs](../../endpoints-apis-for-dynamics.md)  
+[Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md)  
+[Endpoints for the APIs](../endpoints-apis-for-dynamics.md)  
 [Error Codes](../dynamics_error_codes.md)  
 [Shipment methods](../resources/dynamics_shipmentmethods.md)  
 [Get shipment methods](../api/dynamics_shipmentmethods_get.md)  
