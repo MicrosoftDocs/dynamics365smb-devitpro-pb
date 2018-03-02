@@ -16,7 +16,7 @@ For developers, administrators, and support personnel, it can be useful to view 
 
 -   In a production environment, administrators and support can view a table directly from the client in the browser. 
 
--   In a development environment, in addition to viewing a table directly from the client, developers can view a table automatically when they publish/debug an AL project from Visual Studio. 
+-   In a development environment, in addition to viewing a table directly from the client, developers can view a table automatically when they publish/debug an AL project from Visual Studio Code. 
 
 > [!NOTE]
 > The table appears as read-only in the client, so modifications cannot be made.
@@ -25,7 +25,7 @@ For developers, administrators, and support personnel, it can be useful to view 
 > Data in the tables can be sensitive. Be sure to follow your organization's guidelines for handling such data. 
 
 ## Required permissions
-Whether viewing the table directly from the client or from Visual Code, your [!INCLUDE[d365fin_md](includes/d365fin_md.md)] user account must have the following permissions:
+Whether viewing the table directly from the client or from Visual Studio Code, your [!INCLUDE[d365fin_md](includes/d365fin_md.md)] user account must have the following permissions:
 
 -   Read permission on the table that you want to view.
 -   Execution permission (direct) on the System object **1350 Run table**.
@@ -51,7 +51,7 @@ https://dynamics.businesscentral.com/?company=CRONUS%20Inc.&table=18
 
 Note the use of `&` when `table=<TableID>` is not located directly after the domain name.
 
-## View a table object from an AL project in Visual Studio
+## View a table object from an AL project in Visual Studio Code
 You can configure an AL project to view a table when you publish or debug the project (pressing F5 or Ctrl+F5). 
 
 In the `launch.json` file for the project, set the `"startupObjectType"` parameter to `"table"` and the `"startupObjectId"` parameter to the ID of the table. For example:
