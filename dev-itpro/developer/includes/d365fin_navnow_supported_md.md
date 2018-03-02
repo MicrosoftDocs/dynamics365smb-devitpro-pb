@@ -1,0 +1,1 @@
+AL tools functionality is supported in [!INCLUDE[d365fin_long_md](d365fin_long_md.md)] and [!INCLUDE[navnow_md](navnow_md.md)], but in some cases, there are limitations. These limitations are marked clearly in the specific topic. 
