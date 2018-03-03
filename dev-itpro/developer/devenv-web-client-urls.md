@@ -38,7 +38,7 @@ This article describe how you can constuct URLs, which can be useful for includi
 - [Filtering Data on the Page](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Filtering)  -->
  
 
-##  <a name="Syntax"></a> Page Address Syntax  
+##  <a name="Syntax"></a> URL Syntax  
 The [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL has the following syntax:
 
 ```
