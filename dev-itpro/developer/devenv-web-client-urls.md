@@ -17,7 +17,7 @@ https://dynamics.businesscentral.com/?company=CRONUS%20International%20Ltd.&page
 ```
 The following URL opens report **5 Receivables – Payables** for the same company:
 ```  
-http://dynamics.businesscentral.com/?company=CRONUS%20International%20Ltd.&report=5.   
+http://dynamics.businesscentral.com/?company=CRONUS%20International%20Ltd.&report=5   
 ```  
 
 This article describe how you can constuct URLs, which can be useful for including in other sources, such as emails or Word documents, or sending as hyperlinks to other users.
@@ -49,7 +49,7 @@ The URL consists of two parts, the domain part and the query string. The domain 
 
 
 ### Syntax Key
-The following table describes the notation that is used to indicate address syntax.
+The following table describes the notation that is used to indicate the syntax.
 
 |Notation|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
 |--------------|---------------------------------------|
