@@ -39,7 +39,7 @@ This article describe how you can constuct URLs, which can be useful for includi
  
 
 ##  <a name="Syntax"></a> Page Address Syntax  
-The [!INCLUDE[d365fin__web_md](includes/d365fin__web_md.md)] URL has the following syntax.
+The [!INCLUDE[d365fin__web_md](includes/d365fin__web_md.md)] URL has the following syntax:
 
 ```
 <http|https>://<domain>/?[company=<companyname>]&[page|report|table=<ID>]&[tenant=<tenantID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[redirect<0|1>]
