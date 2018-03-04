@@ -1,5 +1,5 @@
 ---
-title: "Classifying Data in Dynamics NAV"
+title: "Classifying Data in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]"
 ms.author: jswymer
 ms.custom: na
 ms.date: 01/05/2018
@@ -11,14 +11,14 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 
-# Classifying Data in [!INCLUDE[navnow_md](includes/navnow_md.md)]
-[!INCLUDE[navnow_md](includes/navnow_md.md)] includes development features for tagging business data with specific classifications. Specifically, this includes data that is stored in table fields of the database and telemetry data that is emitted from the application.    
+# Classifying Data in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]
+[!INCLUDE[d365fin_md](includes/d365fin_md.md)] includes development features for tagging business data with specific classifications. Specifically, this includes data that is stored in table fields of the database and telemetry data that is emitted from the application.    
 
 ## About Data Classification
 Classifying data serves different purposes. It can make data easier and more efficient to locate and retrieve, and also help to add another layer of protection and security for handling private and sensitive data. It can supplement your process for making the application compliant with legislative and regulatory requirements for collecting, storing, and using personal information. 
 
 >[!IMPORTANT]
-> You should consider the data classification features offered in [!INCLUDE[navnow_md](includes/navnow_md.md)] as the first layer of classification - done by developers (Dynamics NAV and partners) on customizations, add-ons, and extensions. The second layer is to classify the sensitivity of the data itself. For more information, see [Classifying Data Sensitivity](classifying-data-sensitivity.md). It's also important to consider end-users, and how they handle data they provide and that is made available to them.
+> You should consider the data classification features offered in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] as the first layer of classification - done by developers (Dynamics NAV and partners) on customizations, add-ons, and extensions. The second layer is to classify the sensitivity of the data itself. For more information, see [Classifying Data Sensitivity](classifying-data-sensitivity.md). It's also important to consider end-users, and how they handle data they provide and that is made available to them.
 
 ## <a name="DataClassifications"></a>What are the different data classifications?
 The following table describes the differents classifications that you can apply to data:
@@ -35,11 +35,12 @@ Dynamics NAV operates with some standard rules for classification:
 
 
 For more information about this property, see the following articles:
--   [DataClassification Property in C/AL](dataclassification-property.md)
+
 -   [DataClassification Property in AL](developer/properties/devenv-dataclassification-property.md) 
+-   [DataClassification Property in C/AL](https://docs.microsoft.com/en-us/dynamics-nav/dataclassification-property)
 
 ### Data classification on upgrade
-When you upgrade an application from a [!INCLUDE[navnow_md](includes/navnow_md.md)] version that does not contain the DataClassification property, existing tables and fields (except for FlowFields and FlowFilters) will automatically be assigned the **CustomerContent** classification. You can then access the **DataClassification** property on these tables and fields, and change the classification as needed. FlowFields and FlowFilters will be assigned the **SystemMetadata** classification automatically.
+When you upgrade an application from a [!INCLUDE[d365fin_md](includes/d365fin_md.md)] version that does not contain the DataClassification property, existing tables and fields (except for FlowFields and FlowFilters) will automatically be assigned the **CustomerContent** classification. You can then access the **DataClassification** property on these tables and fields, and change the classification as needed. FlowFields and FlowFilters will be assigned the **SystemMetadata** classification automatically.
 
 ### Bulk-classifying data
 The Field Data Classification report, which is described in the *Viewing current field classifications* section in this topic, provides an overview of the data classifications for fields. The report also lets you assign data classifications for more than one field. For example, this is useful if you are assigning classifications for the first time, or have changed several fields and want to update their classifications. You can bulk-edit classifications only for fields in CSIDE. The script does not update fields in extensions.  
@@ -73,8 +74,8 @@ Custom telemetry trace events are defined by calls to the SENDTRACETAG function/
 For more information, see the following articles:
 
 -   [Instrumenting an Application for Telemetry](instrumenting-application-for-telemetry.md) 
--   [SENDTRACETAG Function (C/AL)](sendtracetag-function.md)
 -   [SENDTRACETAG Method (AL)](developer/methods/devenv-sendtracetag-method.md)
+-   [SENDTRACETAG Function (C/AL)](https://docs.microsoft.com/en-us/dynamics-nav/sendtracetag-function)
 
 ## See Also
 [How to: Create a Page to View a Virtual Table](How-to--Create-a-Page-to-View-a-Virtual-Table.md)    
