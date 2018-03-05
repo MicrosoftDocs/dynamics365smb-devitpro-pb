@@ -22,7 +22,7 @@ To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fi
 ## Steps to set up a sandbox environment and Visual Studio Code
 Go through the following steps to set up a sandbox environment. With the preview you get sample code that compiles and runs with just a few commands.
 
-1) Sign up for a [Dynamics 365 for Finance and Operations, Business edition sandbox](https://aka.ms/GetSandboxForFinancials).  
+1) Sign up for a [Dynamics 365 Business Central sandbox](https://aka.ms/GetSandboxForFinancials).  
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
 3) Download the [AL Language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).  
 4) Press **Ctrl+,** to open the **user settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).  
