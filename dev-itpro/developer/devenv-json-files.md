@@ -58,7 +58,7 @@ The following table describes the settings in the ```launch.json``` file. The `l
 |serverInstance|Yes|The instance name of your server, for example: `"NAV"`|
 |authentication|Yes|Specifies the server authentication method.|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object. The default is `"Page"`.|
-|startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page are currently supported.|
+|startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |schemaUpdateMode|No|Specifies the data synchronization mode when you publish an extension to the development server, for example: <br>`"schemaUpdateMode": "Synchronize Recreate"`</br> The default value is Synchronize. For more information, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  <br>[!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]  |
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
 
@@ -69,7 +69,7 @@ The following table describes the settings in the ```launch.json``` file. The `l
 |type|Yes|Must be set to `".al"`. Required by Visual Studio Code.|
 |request|Yes|Request type of the configuration. Must be set to `"launch"`. Required by Visual Studio Code.|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object.  The default is `"Page"`.|
-|startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page are currently supported.|
+|startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |tenant|No|Specifies the tenant to which the package is deployed. If you specify multiple configurations, a drop-down of options will be available when you deploy.|
 
 ## The platform symbol file
