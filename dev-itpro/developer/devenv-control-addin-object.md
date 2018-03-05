@@ -17,10 +17,7 @@ caps.latest.revision: 18
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Control Add-In Object
-The control add-in object allows you to add custom functionality to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A control add-in is a custom control, or visual element, for displaying and modifying data on pages. Control add-ins can exchange data with the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)] server on various data types and can respond to user interaction to raise events that execute additional AL code.
-
-> [!NOTE]  
-> [!INCLUDE[d365fin_navnow_supported_md](includes/d365fin_navnow_supported_md.md)]
+The control add-in object allows you to add custom functionality to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A control add-in is a custom control, or visual element, for displaying and modifying data on pages. Control add-ins can exchange data with the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] server on various data types and can respond to user interaction to raise events that execute additional AL code.
 
 ## Control add-in properties
 In the control add-in definition, you must set the `Scripts` property to include scripts in the control add-in. The scripts could be local files in the package or references to external files using the HTTP or the HTTPS protocol. With the `StartupScript` property, you can call a special script that runs when the page you have implemented the control add-in on, is loaded. These settings initialize the control add-in.

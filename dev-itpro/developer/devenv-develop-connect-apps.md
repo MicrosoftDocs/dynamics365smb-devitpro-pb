@@ -13,7 +13,7 @@ ms.prod: "dynamics-nav-2018"
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# Developing Connect Apps for Dynamics 365 Business Central
+# Developing Connect Apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
 
 1. Sign up for a [Dynamics 365 Business Central sandbox]().  
 For exploring and prototyping with the APIs, use basic authentication with the tenant specific endpoint https://api.financials.dynamics.com/v1.0/<tenant user domain url>/api/beta. You can set up basic authentication by creating a **Web Service Access** key in Dynamics 365 Business Central. 

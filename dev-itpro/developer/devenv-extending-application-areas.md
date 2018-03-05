@@ -105,8 +105,6 @@ codeunit 50101 "Install Example Extension"
 The registration of the application area inside an experience tier is made inside the **OnGetEssentialExperienceAppArea**. There are different versions of this event, one for each experience tier and in this case, the Essential is chosen. This will make the extension visible inside the Essential experience and the event exposes an **Application Area Setup** temporary record, **TempApplicationAreaSetup**, to the **Application Area Setup** table. At this point, to enable the application area, this must be set to true.
 
 
-
-
 > [!NOTE]  
 > This event is important because it is called every single time an experience tier is reset, which can happen because of many reasons. 
 

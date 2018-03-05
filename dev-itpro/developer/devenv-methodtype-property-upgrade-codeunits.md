@@ -29,10 +29,4 @@ Sets the type of method in an upgrade codeunit.
 |**TableSyncSetup**|Provides instructions about how to synchronize the table schemas in the business database with the table definitions.|  
 |**CheckPrecondition**|Provides logic that checks conditions that must be met in order for the data upgrade process to continue and start running the **Upgrade** methods.|  
 
-<!--
-## Remarks  
-For more information about these methods and upgrade codeunits, see [Upgrade Codeunits](Upgrade-Codeunits.md).  
-
 ## See Also  
-[Upgrading Data](Upgrading-Data.md)
--->

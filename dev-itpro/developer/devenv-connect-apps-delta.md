@@ -16,9 +16,6 @@ ms.prod: "dynamics-nav-2018"
 # Using Delta Links When Developing Connect Apps
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
-> [!Note]  
-> Delta token support is available only in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and not available in Dynamics NAV.
-
 The user can obtain a delta link from each entity API in the library by including the `odata.track-changes` preference in the header of the request. The response to the GET request returns a deltaLink parameter, providing an opaque URL.
 
 On subsequent calls, the API consumer can use the deltaLink URL, which will provide the changes that have occurred in the data set since the initial request was made including the following points.

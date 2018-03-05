@@ -17,12 +17,9 @@ caps.latest.revision: 18
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Table Extension Object
-The table extension object allows you to add additional fields or to change some properties on a table provided by the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)] service. In this way, you can add data to the same table and treat it as a single table. For example, you may wish to create a table extension for a retail winter sports store. In your solution you want to have ```ShoeSize``` as an additional field on the customer table. Adding this as an extension allows you to write code for the customer record and also include values for the ```ShoeSize```.
+The table extension object allows you to add additional fields or to change some properties on a table provided by the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service. In this way, you can add data to the same table and treat it as a single table. For example, you may wish to create a table extension for a retail winter sports store. In your solution you want to have ```ShoeSize``` as an additional field on the customer table. Adding this as an extension allows you to write code for the customer record and also include values for the ```ShoeSize```.
 
 Along with defining other fields, the table extension is where you write trigger code for your additional fields.
-
-> [!NOTE]  
-> [!INCLUDE[d365fin_navnow_supported_md](includes/d365fin_navnow_supported_md.md)]
 
 When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] , you will follow the code layout for a table extension as shown in the example below.
 
