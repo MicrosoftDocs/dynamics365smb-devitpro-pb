@@ -24,7 +24,7 @@ Along with defining other fields, the table extension is where you write trigger
 > [!NOTE]  
 > [!INCLUDE[d365fin_navnow_supported_md](includes/d365fin_navnow_supported_md.md)]
 
-When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)], you will follow the code layout for a table extension as shown in the example below.
+When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] , you will follow the code layout for a table extension as shown in the example below.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.      

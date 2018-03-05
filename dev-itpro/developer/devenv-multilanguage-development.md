@@ -33,7 +33,7 @@ A multilanguage version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.m
  You can install language modules so that you can view text in the user interface in different languages. Once you have installed a language module, you can select that language on the **Select Language** page in the UI to change the language of all text that is displayed in the UI in captions for text boxes, on command buttons, in menus, and so on.  
   
 > [!NOTE]  
->  When you change the language, you are not changing the language of the data that is stored in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)]. Changing the text that is stored as application data is not part of the language modules. Examples of such text are the names of items in the inventory or the comments for a customer.  
+>  When you change the language, you are not changing the language of the data that is stored in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Changing the text that is stored as application data is not part of the language modules. Examples of such text are the names of items in the inventory or the comments for a customer.  
 
 <!--  
 For more information, see [Language Modules](Language-Modules.md).  
@@ -47,7 +47,7 @@ After you install a language module, you must design your application to take ad
  <!-- For more information, see [Viewing the Application in Different Languages](Viewing-the-Application-in-Different-Languages.md). -->
   
 ## Adding languages for extensions
-When developing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)], you must make sure that the user interface of the extension is translated to the language used in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)]. The properties in AL that contain strings surfacing in the UI, can be extracted to an .xliff file and sent for translation. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
+When developing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] , you must make sure that the user interface of the extension is translated to the language used in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. The properties in AL that contain strings surfacing in the UI, can be extracted to an .xliff file and sent for translation. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
 
 ## See Also
 [Working with Translation Files](devenv-work-with-translation-files.md)  

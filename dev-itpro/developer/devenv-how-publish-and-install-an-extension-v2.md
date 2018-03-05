@@ -70,7 +70,7 @@ After you publish and synchronize an extension, you can install it on tenants to
 
 ### To install an extension by using the client  
 
-1.  In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)], use search to open the **Extension Management** page.
+1.  In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] , use search to open the **Extension Management** page.
 
     In the **Extension Management** window, you can view the extensions that are published to your server. For each extension, you can see the current installation status. 
 2.  Choose an extension to see additional information and to install the extension.  

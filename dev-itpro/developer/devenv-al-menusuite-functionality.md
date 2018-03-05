@@ -23,7 +23,7 @@ AL provides navigational support for pages and reports in the client. You enable
 > [!INCLUDE[d365fin_navnow_supported_md](includes/d365fin_navnow_supported_md.md)]
 
 ## Working with Search
-When you create a [Page](devenv-page-object.md) or a [Report](devenv-report-object.md), you add the [UsageCategory Property](properties/devenv-usagecategory-property.md). If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**, the page or report will not show up when you use the Search functionality in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)]. 
+When you create a [Page](devenv-page-object.md) or a [Report](devenv-report-object.md), you add the [UsageCategory Property](properties/devenv-usagecategory-property.md). If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**, the page or report will not show up when you use the Search functionality in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
 
 ## UsageCategory property values
 The values for the UsageCategory property are listed below: 
