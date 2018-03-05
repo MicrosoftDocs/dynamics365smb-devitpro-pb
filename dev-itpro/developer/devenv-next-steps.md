@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 # Your Next Steps 
 
-## As a reseller of Dynamics 365 for Finance and Operations, Business edition
+## As a reseller of Dynamics 365 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
 
 ### You can provide packaged implementation services on Microsoft AppSource  
 Drive demand for your packaged implementation and consulting services with 100M users of Office 365, Dynamics 365, and Power BI. To get started providing consulting services, you need to do the following:  

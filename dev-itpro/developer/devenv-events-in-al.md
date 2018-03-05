@@ -1,5 +1,6 @@
 ---
-title: "Events in Microsoft Dynamics 365 for Financials and Dynamics NAV"
+title: "Events in Microsoft Dynamics 365 for Business Central"
+ms.author: solsen
 ms.custom: na
 ms.date: 02/01/2018
 ms.reviewer: na
@@ -9,11 +10,8 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e800bc78-feb2-4f19-b79a-3fd70e06320f
 caps.latest.revision: 7
-manager: edupont
----
 
-> [!NOTE]  
-> [!INCLUDE[d365fin_navnow_supported_md](includes/d365fin_navnow_supported_md.md)]
+---
 
 # Events in AL
 The use of events is a proven and established programming concept that can ease application upgrade and limit or even eliminate the need for code modifications in customized applications because of application platform changes.  

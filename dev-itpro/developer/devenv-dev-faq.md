@@ -23,11 +23,9 @@ For an overview of developing apps for [!INCLUDE[d365fin_long_md](includes/d365f
 
 Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the tools.
 
-
 ## Which version of the AL Language extension should I use?
-1) For [!INCLUDE[navnow_md](includes/navnow_md.md)] you must use the AL Language extension that is installed together with the product (minimum version 0.12.XXX).
-2) For [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] cloud sandboxes you must use the AL Language extension available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
-3) For the latest Developer Preview releases you must use the AL Language extension that is available on the Docker images.
+1) For [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] cloud sandboxes you must use the AL Language extension available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
+2) For the latest Developer Preview releases you must use the AL Language extension that is available on the Docker images.
 
 ## How do I enable the debugger?
 To read about enabling the Visual Studio Code Debugger, see here [Debugging](devenv-debugging.md)

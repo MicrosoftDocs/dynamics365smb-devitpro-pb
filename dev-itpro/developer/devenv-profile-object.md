@@ -17,10 +17,7 @@ caps.latest.revision: 18
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Profile Object
-The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)] allows you to build an individual experience for each user profile. Profile object performs a validatation to check whether the specified role center page exists, and [page customization objects](devenv-page-customization-object.md) exists, when you define a new profile object. You can add changes to the page layout, and actions; but you cannot add variables, procedures, or triggers. 
-
-> [!NOTE]  
-> [!INCLUDE[d365fin_navnow_supported_md](includes/d365fin_navnow_supported_md.md)]
+The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to build an individual experience for each user profile. Profile object performs a validatation to check whether the specified role center page exists, and [page customization objects](devenv-page-customization-object.md) exists, when you define a new profile object. You can add changes to the page layout, and actions; but you cannot add variables, procedures, or triggers. 
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.      

@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Asynchronous Considerations
-When writing control add-ins that work on all display targets, you have to consider some limitations regarding asynchronous communication. The limitations come from the nature of the asynchronous communication between the clients and the [!INCLUDE[nav_server](includes/nav_server_md.md)]. All calls between the AL code running on the [!INCLUDE[nav_server](includes/nav_server_md.md)] and the script method running in the Web browser are asynchronous. This means that methods in the control add-in interface must be of type void and property methods should not be used.  
+When writing control add-ins that work on all display targets, you have to consider some limitations regarding asynchronous communication. The limitations come from the nature of the asynchronous communication between the clients and the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server. All calls between the AL code running on the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server and the script method running in the Web browser are asynchronous. This means that methods in the control add-in interface must be of type void and property methods should not be used.  
   
 + To transfer a result from an AL trigger to the calling script method, just add a method to the control add-in interface that the AL trigger can invoke to send the result to the script.  
   

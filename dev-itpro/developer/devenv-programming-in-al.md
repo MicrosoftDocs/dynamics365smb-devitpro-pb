@@ -15,10 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Programming in AL
-AL is the programming language that is used for manipulating data (such as retrieving, inserting and modifying records) in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)] database, and controlling the execution of the various application objects, such as pages, reports, or codeunits.
-
-> [!NOTE]  
-> [!INCLUDE[d365fin_navnow_supported_md](includes/d365fin_navnow_supported_md.md)]
+AL is the programming language that is used for manipulating data (such as retrieving, inserting and modifying records) in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database, and controlling the execution of the various application objects, such as pages, reports, or codeunits.
 
 With AL, you can create business rules to ensure that the data which is stored in the database is meaningful and consistent with the way customers do business. Through AL programming, you can:
 -   Add new data or transfer data from one table to another, for example,
@@ -27,13 +24,13 @@ from a journal table to a ledger table.
 one form or page.
 
 ## Where to write AL code  
-Almost every object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)] contains triggers where you can add your AL code. Triggers exist for the following objects:  
+Almost every object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] contains triggers where you can add your AL code. Triggers exist for the following objects:  
 
 -   Tables  
 
 -   Table fields  
 
--   Pages <!--, including request pages  -->
+-   Pages 
 
 -   Reports  
 
