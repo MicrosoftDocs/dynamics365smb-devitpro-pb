@@ -10,10 +10,7 @@ ms.service: "dynamics365-financials"
 author: SusanneWindfeldPedersen
 ---
 # Event Types
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)] supports different types of events for different purposes.
-
-> [!NOTE]  
-> [!INCLUDE[d365fin_navnow_supported_md](includes/d365fin_navnow_supported_md.md)]
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports different types of events for different purposes.
 
 ##  <a name="BusinessEvents"></a> Business events  
  A business event is a custom event that is raised by AL code. It defines a formal contract that carries an implicit promise not to change in future releases. It is the expectation that business events are published by solution ISVs, including Microsoft.  
@@ -29,7 +26,7 @@ author: SusanneWindfeldPedersen
 ##  <a name="IntegrationEvents"></a> Integration events  
  An integration event is also a custom event that is raised by AL code, like a business event, except that it does not carry the same promise of not changing, nor does it have the restriction not to expose implementation details.  
   
- The main purpose of integration events is to enable the integration of other solutions with [!INCLUDE[navnow](includes/navnow_md.md)] without having to perform traditional code modifications.  
+ The main purpose of integration events is to enable the integration of other solutions with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] without having to perform traditional code modifications.  
   
  **Development considerations**  
   

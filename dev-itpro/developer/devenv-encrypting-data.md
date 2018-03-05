@@ -1,7 +1,7 @@
 ---
-title: "Encrypting Data in Dynamics 365 for Financials"
+title: "Encrypting Data in Dynamics 365 for Business Central"
 ms.custom: na
-ms.date: 07/06/2017
+ms.date: 03/05/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,13 +14,13 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# Encrypting Data in Dynamics 365 for Finance and Operations, Business edition
+# Encrypting Data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
 This article gives an overview of data encription and how to use it to add security [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
 ## Cryptography overview
 The methods that support cryptography provide services that enable developers manage encrypting and decrypting data. Each tenant supports a single encryption key which is used for encrypting and decrypting data stored in the database. Additional methods are provided to assist building robust solutions when working with encryption and for managing the encryption keys.  
 
- ![Flow between plain text and encrypted text](media/Encryption.jpg "Encryption in Dynamics 365 Financials")  
+ ![Flow between plain text and encrypted text](media/Encryption.jpg "Encryption in Dynamics 365 Business Central")  
 
 Encryption keys are stored in a secure location, and retrieved at runtime when needed. Additional functionality is provided to export and import keys, which is important when moving solutions from one location to another.
 
@@ -45,8 +45,4 @@ Each tenant supports having a single encryption key. To use the encryption meth
   The encryption key is stored in a file in a directory that the [!INCLUDE[d365fin_server](includes/d365fin_server_md.md)] has access to. When a key is created or imported, data is recorded in the tenant table registering that encryption has now been enabled. Any subsequent calls to **ENCRYPTIONENABLED** will return true after the tenant table has been updated with this information. However, if the encryption file is deleted, then **ENCRYPTIONENABLED** will continue to return true. Use the **ENCRYPTIONKEYEXISTS** method to perform a file system check to see whether the key is present.  
 
 ## See Also  
- <!--
- [Programming in C/AL](Programming-in-C-AL.md)   
- [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md)   
- [How to: Enable and Disable Encryption Keys](how-to-enable-and-disable-encryption-keys.md)   
- [Manage Data Encryption](manage-data-encryption.md) -->
+

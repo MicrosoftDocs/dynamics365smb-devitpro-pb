@@ -1,4 +1,4 @@
---
+---
 title: "GET, FIND, and NEXT methods"
 ms.custom: na
 ms.date: 06/07/2017
@@ -8,7 +8,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-financials"
 author: SusanneWindfeldPedersen
---
+---
+
 # GET, FIND, and NEXT Methods
 The following methods are used to search for records:  
   

@@ -1,6 +1,6 @@
 ---
-title: Enabling Sales Tables for Extension Development
-description: This topic explains how to enable Dynamics 365 for Sales tables for the extension development process.
+title: "Enabling Sales Tables for Extension Development"
+description: "This topic explains how to enable Dynamics 365 for Sales tables for the extension development process."
 ms.custom: na
 ms.date: 02/20/2018
 ms.reviewer: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 
 # Integrating Dynamics 365 for Sales for Extension Development
 
-Develop extensions and streamline the workflow by synchronizing the Sales data from Microsoft Dynamics 365 for Sales with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)]. 
+Develop extensions and streamline the workflow by synchronizing the Sales data from Microsoft Dynamics 365 for Sales with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 For developing extensions to integrate with sales data, you simply enable the tables used in Dynamics 365 for Sales. The extension development process includes the following set of properties to enable field mapping.
 You can enable the field mapping by using the following properties. 
@@ -36,7 +36,7 @@ The following properties are used for integrating with Microsoft Dynamics 365 fo
 |[OptionOrdinalValues Property](properties/devenv-optionordinalvalues-property.md)|Fields|Specifies the list of option values. You can set this property, if the ExternalType is set to Picklist.| 
 
 ## Enabling the entity
-Typically in Dynamics 365 for Sales, entities handle the internal processes. In order to access to the underlying CRM entity, you use the TableType property and select the value called **CRM**. This enables the table as an integration table for integrating [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] with Dynamics 365 for Sales. The table is mainly based on an entity in Dynamics 365 for Sales, such as the Accounts entity.
+Typically in Dynamics 365 for Sales, entities handle the internal processes. In order to access to the underlying CRM entity, you use the TableType property and select the value called **CRM**. This enables the table as an integration table for integrating [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] with Dynamics 365 for Sales. The table is mainly based on an entity in Dynamics 365 for Sales, such as the Accounts entity.
 
 ## Snippet support
 Typing the shortcut `ttable` will create the basic layout for a table object when using the AL Extension in Visual Studio Code. 

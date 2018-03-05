@@ -16,9 +16,6 @@ caps.latest.revision: 18
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-> [!NOTE]  
-> [!INCLUDE[d365fin_navnow_supported_md](includes/d365fin_navnow_supported_md.md)]
-
 # XMLport Object
 XMLports are used to export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Sharing data between different computer systems is seamless when it is shared in XML format. Working with XML files can be tedious so the details of how the XML file is handled are encapsulated in XMLports.
 

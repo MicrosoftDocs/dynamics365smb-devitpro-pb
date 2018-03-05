@@ -16,9 +16,6 @@ caps.latest.revision: 18
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-> [!NOTE]  
-> [!INCLUDE[d365fin_navnow_supported_md](includes/d365fin_navnow_supported_md.md)]
-
 # The Txt2Al Conversion Tool
 The Txt2Al conversion tool allows you to take existing [!INCLUDE[navnow_md](includes/navnow_md.md)] objects that have been exported in .txt format and convert them into the new .al format. The .al format is used when developing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Converting the objects consists of following two steps:
 
