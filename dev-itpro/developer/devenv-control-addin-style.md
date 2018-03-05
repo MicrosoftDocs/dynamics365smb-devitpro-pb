@@ -129,7 +129,7 @@ The main goal of typography is to provide clean and readable text in the user in
 |![Segoe UI Light font family](media/style/segoe-ui-light.png "Segoe UI Light font family")| Segoe UI Light | `"Segoe UI Light", "Segoe WP Light", device-segoe-light, "Segoe WP Semilight", "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
 |![Segoe UI Semilight font family](media/style/segoe-ui-semi-light.png "Segoe UI Semilight font family")| Segoe UI Semilight | `"Segoe UI Semilight", "Segoe WP Semilight", device-segoe-semilight, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
 |![Segoe UI Semibold font family](media/style/segoe-ui-semi-bold.png "Segoe UI Semibold font family")| Segoe UI Semibold | `"Segoe UI Semibold", "Segoe WP Semibold", device-segoe-semibold, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
-|![Bahnschrift font family](media/style/bahnschrift.png "Bahnschrift font family")| Bahnschrift | `"Bahnschrift", "Segoe UI", "Segoe WP", Segoe, device-segoe, Tahoma, Helvetica, Arial, sans-serif` |
+|![Bahnschrift font family](media/style/bahnschrift.png "Bahnschrift font family")| Bahnschrift | `webclient-standard, device-standard, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
 
 ### Sizes
 [!INCLUDE[d365fin_md](includes/d365fin_md.md)] uses the following font sizes for text. The same font family on different clients may apply different sizes.
