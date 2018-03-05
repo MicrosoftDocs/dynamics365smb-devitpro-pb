@@ -90,16 +90,16 @@ Generates a URL for the specified client target that is based on the configurati
 |Client|URL|  
 |------------|---------|  
 |[!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)]|https://yourfinancialURL/?company='[!INCLUDE[demoname](../includes/demoname_md.md)]|  
-|[!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)]|ms-financials://*server*:*port*/*instance*?company=’ [!INCLUDE[demoname](../includes/demoname_md.md)]’|  
-|[!INCLUDE[d365fin_phone_md](../includes/d365fin_phone_md.md)]|ms-financials://yourfinancialURL?company=’ [!INCLUDE[demoname](../includes/demoname_md.md)]’|  
+|[!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)]|ms-businesscentral://*server*:*port*/*instance*?company=’ [!INCLUDE[demoname](../includes/demoname_md.md)]’|  
+|[!INCLUDE[d365fin_phone_md](../includes/d365fin_phone_md.md)]|ms-businesscentral://yourfinancialURL?company=’ [!INCLUDE[demoname](../includes/demoname_md.md)]’|  
 |[!INCLUDE[d365fin_md](../includes/d365fin_md.md)] Desktop client|ms-dynamicsnav://yourfinancialURL?company=’ [!INCLUDE[demoname](../includes/demoname_md.md)]’|  
 |OData|https://yourfinancialURL/OData/Company\('[!INCLUDE[demoname](../includes/demoname_md.md)]'\)/|  
 |SOAP|https://yourfinancialURL/WS/[!INCLUDE[demoname](../includes/demoname_md.md)]|  
 
 <!--NAV |[!INCLUDE[nav_windows](../includes/nav_windows_md.md)]|DynamicsNAV://*server*:*port*/*instance*//[!INCLUDE[demoname](../includes/demoname_md.md)]|
 |[!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)]|https://*server*:*port*/*instance*/WebClient?company='[!INCLUDE[demoname](../includes/demoname_md.md)]'/|  
-|[!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)]|ms-financials://*server*:*port*/*instance*?company=’ [!INCLUDE[demoname](../includes/demoname_md.md)]’|  
-|[!INCLUDE[d365fin_phone_md](../includes/d365fin_phone_md.md)]|ms-financials://*server*:*port*/*instance*?company=’ [!INCLUDE[demoname](../includes/demoname_md.md)]’|  
+|[!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)]|ms-businesscentral://*server*:*port*/*instance*?company=’ [!INCLUDE[demoname](../includes/demoname_md.md)]’|  
+|[!INCLUDE[d365fin_phone_md](../includes/d365fin_phone_md.md)]|ms-businesscentral://*server*:*port*/*instance*?company=’ [!INCLUDE[demoname](../includes/demoname_md.md)]’|  
 |[!INCLUDE[d365fin_md](../includes/d365fin_md.md)] Desktop client|ms-dynamicsnav://*server*:*port*/*instance*?company=’ [!INCLUDE[demoname](../includes/demoname_md.md)]’|  
 |OData|https://*server*:*port*/*instance*/OData/Company\('[!INCLUDE[demoname](../includes/demoname_md.md)]'\)/|  
 |SOAP|https://*server*:*port*/*instance*/WS/[!INCLUDE[demoname](../includes/demoname_md.md)]|  
