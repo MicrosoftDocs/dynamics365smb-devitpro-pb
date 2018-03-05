@@ -74,6 +74,7 @@ The following table includes additional colors that you can use in the UI.
 
 ### Chart colors
 The following table describes the colors used in charts.
+
 |  Color  |  Description  | HEX value|
 |---------|---------------|----------|
 | ![Secondary (#505C6D)](media/style/505C6D.png "Secondary (#505C6D)")|-|#505C6D|
@@ -89,16 +90,7 @@ The following table describes the colors used in charts.
 |![TEAL (#39B294)](media/style/39B294.png "TEAL (#39B294)")|Teal|#39B294|
 |![GRASS (#73BA5A)](media/style/73BA5A.png "GRASS (#73BA5A)")|Grass|#73BA5A|
 
-<!--
 
-### Miscellaneous colors
-|  Color  |  Description  |  HEX value  |  RGB value |
-|---------|---------------|-------------|------------|
-|![White (#FFFFFF)](media/style/FFFFFF.png "White (#FFFFFF)")|White|#FFFFFF|255, 255, 255|
-|![Black (#000000)](media/style/000000.png "Black (#FFFFFF)")|Black|#000000|0, 0, 0|
-## Typography
-
--->
 ### Applying colors
 To apply a color scheme to the control add-in, you specify CSS rule-sets that use the following properties:
 
