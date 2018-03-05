@@ -27,7 +27,7 @@ There are two layout options that influence how Cues appear in the client: *norm
 -   The *wide* layout is designed to display large values, such as monetary values. The wide layout gives you a way emphasize a group of Cues. Wide and normal Cue groups can be interleaved. However, wide groups that precede all normal groups will appear in their own section of the workspace, spanning the entire width - providing space for the large values. Wide groups that are placed after normal groups will behave just like the normal layout groups. With this in mind, it is good practice to place Cue groups that use the wide layout, above those that use the normal layout. The wide layout is specified by setting the [CuegroupLayout property](properties/devenv-cuegrouplayout-property.md) to `wide`. 
 
 > [!NOTE]  
->  The wide layout is only supported in the [!INCLUDE[nav_web](includes/nav_web_md.md)].
+>  The wide layout is only supported in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].
 >
 > The [Caption](properties/devenv-caption-property.md) and [CaptionML](properties/devenv-captionml-property.md) properties of the `cuegroup` control are ignored when the layout is wide.
 

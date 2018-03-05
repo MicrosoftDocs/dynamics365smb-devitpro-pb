@@ -11,7 +11,11 @@ author: jswymer
 ---
 # Creating a Role Center Headline
 
-You can set up a Role Center to display a series of headlines, where headlines appear one at a time for a predefined period of time before displaying the next. The headlines can provide users with up-to-date information and insight into the business and daily work. Typical categories of headlines might include:
+You can set up a Role Center to display a series of headlines, where headlines appear one at a time for a predefined period of time before displaying the next.
+
+![Headline part](media/headline.png "Headline part on a Role Center")
+
+The headlines can provide users with up-to-date information and insight into the business and daily work. Typical categories of headlines might include:
 
 -   My performance
 -   My workday 
@@ -21,7 +25,7 @@ You can set up a Role Center to display a series of headlines, where headlines a
 -   Getting started information
  
 > [!IMPORTANT]
-> Headlines will only appear in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]; they will not be shown on other client types.
+> Headlines will only appear in [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]; they will not be shown on other client types.
 
 ## Design concept
 
@@ -32,21 +36,21 @@ In short, the Headline is basically a page that contains one or more fields. The
 
 -   Using the OnDrillDown trigger, headlines can be made interactive, meaning that users can select the headline to dig deeper into numbers or values that are shown in the headline or link to another page or URL.
 
--   You can dynamically toggle visibility of a specific headline, for example base its relevancy, by setting the Visible property on the field. 
+-   You can dynamically toggle visibility of a specific headline, for example based its relevancy, by setting the Visible property on the field. 
 
--    There are only a few field properties that apply to fields that are used on a **HeadlinePart** type page, including Caption, CaptionML, Expression, Visible, ApplicationArea, Drilldown, and DrillDownPageID. All other properties are ignored.
+-    There are only a few field properties that apply to fields that are used on a **HeadlinePart** type page, including Expression, Visible, ApplicationArea, Drilldown, and DrillDownPageID. All other properties are ignored.
 
 
 ### In the client 
-The Role Center will start by displaying the first visible headline that is defined on the Headline part page. The headline will appear for 5 seconds, then the next headline will appear for 5 seconds, and so on. When all the headlines have been displayed, it will cycle back to the first headline and continue from there.
+The Role Center will start by displaying the first visible headline that is defined on the HeadlinePart page. The headline will appear for 5 seconds, then the next headline will appear for 5 seconds, and so on. When all the headlines have been displayed, it will cycle back to the first headline, and continue from there.
 
--  If a headline is interactive, users can select the headline to open the target defined in the headline.
+-   If a headline is interactive, users can select the headline to open the target defined in the headline.
 
-- Users can pause on a headline by pointing to it. 
+-   Users can pause on a headline by pointing to it. 
 
--  Users can manually switch among headlines by selecting a corresponding dot that is displayed under the headlines. 
+-   Users can manually switch among headlines by selecting a corresponding dot that is displayed under the headlines. 
 
--  Users can personalize their Role Center to show or hide the Headline part as they like.
+-   Users can personalize their Role Center to show or hide the Headline part as they like.
 
 ## Creating a HeadlinePart page
 1. Implement the logic that resolves field expressions for the headlines that you will use on the page. 
@@ -95,6 +99,25 @@ The Role Center will start by displaying the first visible headline that is defi
     ```
 
 4. You can now add the **HeadlinePart** page to the **RoleCenter** page.
+
+## Constructing Headlines with the Expression property 
+The `Expression` property supports the following syntax that enables you to specify a title for the headline, the headline text itself, and emphasize a string of text in the headline:
+
+```
+'<qualifier>Title</qualifier><payload>This is the <emphasize>Headline</emphasize>.</payload>'
+```
+
+|Tag|Description|
+|---|-----------|
+|`<qualifier></qualifier>`|Specifies the title that appears above the headline. If you omit this tag, the text **HEADLINE** will be used by default.|
+|`<payload></payload>`|Specifies the actual headline text.|
+|`<emphasize></emphasize>`|Applies the style to the text.|
+
+The `Expression` property must evaluate to the correct syntax. For example, looking back at the previous example, the text constant `text001` could be:
+
+```
+text001: TextConst ENU='<qualifier>The first headline</qualifier><payload>This is the <emphasize>Headline 1</emphasize>.</payload>';
+```
 
 ## Making headlines interactive
 You can use the [OnDrillDown trigger](triggers/devenv-ondrilldown-trigger.md) of a headline field to link the headline to more details or relevant information about what is shown in the headlines. For example, if the headline announced the largest sales order for the month, you could set up the headline to open a page that shows a sorted list of sales order for the month.
