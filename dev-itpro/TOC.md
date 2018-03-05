@@ -352,8 +352,8 @@
 -->
 <!-- preview of Graph API starts-->
 # [Preview of API Reference](fin-graph/index.md)
-## [Enabling the APIs for Microsoft Dynamics NAV](enabling-apis-for-dynamics-nav.md)
-## [Endpoints for the APIs](endpoints-apis-for-dynamics.md)
+## [Enabling the APIs for Microsoft Dynamics NAV](fin-graph/enabling-apis-for-dynamics-nav.md)
+## [Endpoints for the APIs](fin-graph/endpoints-apis-for-dynamics.md)
 ## [Error Codes](fin-graph/dynamics_error_codes.md)
 ## [Account](fin-graph/resources/dynamics_account.md)
 ### [Get account](fin-graph/api/dynamics_account_get.md)
