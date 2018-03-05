@@ -27,7 +27,7 @@ Extensions are a programming model where functionality is defined as an addition
 5.  Uninstall the V1 extension, and publish and run upgrade on the V2 extension. 
 
 ## Convert the source code from V1 to V2
-To convert the source code, you must use the Txt2Al conversion tool. The Txt2Al conversion tool allows you to take existing application objects that have been exported in .txt format and convert them into the new .al format. The .al format is used when developing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)]. For more information about converting the source code, see [Txt2Al Conversion Tool](devenv-txt2al-tool.md). 
+To convert the source code, you must use the Txt2Al conversion tool. The Txt2Al conversion tool allows you to take existing application objects that have been exported in .txt format and convert them into the new .al format. The .al format is used when developing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information about converting the source code, see [Txt2Al Conversion Tool](devenv-txt2al-tool.md). 
 
 ## Complete the development of the extension
 When the source code has been converted using the Txt2Al conversion tool, open the project folder in Visual Studio Code, and then modify or add code to the new version as needed. For more information about getting started with Visual Studio Code and the AL Language extension, see [Getting Started with AL](devenv-get-started.md).
