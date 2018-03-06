@@ -30,7 +30,7 @@ The signing of an APP package file must be performed on a computer that has [!IN
 ## Steps for signing your .app file
 
 1. Prepare your computer for signing. 
-2. Make sure that you sign the .app file on a computer that has [!INCLUDE[navnow](includes/navnow_md.md)] 2018 or later (or the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]) installed.
+2. Make sure that you sign the .app file on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]) installed.
 3. Copy the certificate that you purchased from a third-party certificate authority to a folder on the computer. Optionally, create your own certificate for local test or development purposes using the [Self-signed certificate information](#self-signed-certificate). The file path for the sample command is `C:\Certificates\MyCert.pfx`.
 4. Install a signing tool such as [SignTool](https://docs.microsoft.com/en-us/dotnet/framework/tools/signtool-exe) or [SignCode](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537364(v=vs.85)) to the computer. The sample command will use SignTool.
 5. Copy your extensions .app file to the computer if it is not already on the computer. The file path for the sample command is `C:\NAV\Proseware.app`.
