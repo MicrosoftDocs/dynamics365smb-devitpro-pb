@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # SQL Server Data Types
 Every available [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] data type is mapped to an appropriate SQL Server data type. The following table shows which SQL Server data type is used for the corresponding Microsoft Dynamics NAV data type.  
   
-|Microsoft Dynamics NAV Data Type|SQL Server Data Type|  
+|[!INCLUDE[d365fin_md](../includes/d365fin_md.md)] Data Type|SQL Server Data Type|  
 |--------------------------------------|--------------------------|  
 |BigInteger|BIGINT|  
 |BLOB|IMAGE|  

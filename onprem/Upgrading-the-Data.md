@@ -158,13 +158,8 @@ Use the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] to compile all t
 In Object Designer, choose **Tools**, choose **Compile**, set the **Synchronize Schema** to **Later**, and then choose **OK**.
 -->
 
-<<<<<<< HEAD
-##  <a name="ImportAppObj"></a> Task 8: Import the application objects to the converted database  
-Using the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], import all the old application objects that you want in the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] database. This includes the application objects FOB file (from the application code upgrade) and the upgrade toolkit objects FOB file.
-=======
 ##  <a name="ImportAppObj"></a> Task 9: Import the upgraded application objects and upgrade toolkit objects into the converted database  
 Using the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], import the application objects that you want in the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] database. This includes the application objects FOB file (from the application code upgrade) and the upgrade toolkit objects FOB file.
->>>>>>> refs/remotes/origin/master
 
 1. Import the application objects FOB file first, and then import the upgrade toolkit FOB file.
 
