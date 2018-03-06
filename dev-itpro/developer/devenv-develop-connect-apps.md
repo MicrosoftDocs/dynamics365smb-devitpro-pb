@@ -56,3 +56,5 @@ Download an API explorer, such as Postman or Fiddler to connect to and explore t
 + All resources live in the context of a parent company, which means that the company ID must be provided in the URL for all resource API calls. For example, to GET all customers in the “CRONUS USA, Inc.” company, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`
 
 ## See Also
+[Using Deltas With APIs](devenv-connect-apps-delta.md)  
+[Using Filtering With APIs](devenv-connect-apps-filtering.md)

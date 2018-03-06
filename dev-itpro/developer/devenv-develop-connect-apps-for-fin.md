@@ -10,6 +10,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
+redirect_url: http://www.microsoft.com
 ---
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
