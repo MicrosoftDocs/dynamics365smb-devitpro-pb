@@ -24,16 +24,16 @@ Become [CSP](https://partner.microsoft.com/en-US/cloud-solution-provider) or
  
 Reach out to [offerspilot@microsoft.com](mailto:offerspilot@microsoft.com) on questions.   
  
-### You can provide customization services with Dynamics 365 for Finance and Operations, Business edition  
+### You can provide customization services with Dynamics 365 Business Central  
 Respond to the individual needs of your customer by building customizations for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Customizations can be developed in the Designer and by code developed in Visual Studio Code using the AL Language extension. See how you can easily get started here [aka.ms/GetStartedWithApps](http://aka.ms/getstartedwithapps). 
 
 And learn all about building customizations in [sandbox environments](https://docs.microsoft.com/en-us/dynamics365/financials/across-how-create-sandbox-environment).  
  
 Reach out to [dyn365bep@microsoft.com](mailto:dyn365bep@microsoft.com) on questions.  
 
-## As a developer on Dynamics 365 for Finance and Operations, Business edition
+## As a developer on Dynamics 365 Business Central
 
-### You can connect to or extend Dynamics 365 for Finance and Operations, Business edition by delivering apps in Microsoft AppSource  
+### You can connect to or extend Dynamics 365 Business Central by delivering apps in Microsoft AppSource  
 Reach more customers by bringing apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] into Microsoft AppSource, the marketplace for Microsoft business apps. Dynamics 365 gives you rich functionality, a modern always up-to-date platform, and a set of great new development tools. When your app is done, publish it through Microsoft AppSource – the marketplace for Microsoft’s business apps and start benefiting from a brand that millions of users know and trust.  
  
 You decide whether you want to connect to your existing service or extend the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] functionality. For more information on how to get started with building apps, click [here](https://aka.ms/getstartedwithapps).  
@@ -48,7 +48,7 @@ Reach out to [dyn365bep@microsoft.com](mailto:dyn365bep@microsoft.com) on questi
 
 ## As an accountant and financial service outsourcer 
 
-### You can use the Accountant portal extension for Dynamics 365 for Finance and Operations, Business edition
+### You can use the Accountant portal extension for Dynamics 365 Business Central
 Easily access client data, effectively manage accounting processes and tasks, and focus more on your clients using [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] — a complete Microsoft accounting software platform for accounting professionals. 
 
 Reach out to Christian Baek [cbaek@Microsoft.com](mailto:cbaek@Microsoft.com) on questions. 
@@ -58,7 +58,7 @@ Drive demand for your packaged consulting and consulting services with 100M user
 
 1) Get listed as a partner; [register](https://partner.microsoft.com/en-us/membership) with the Microsoft Partner Network and [create a marketing profile](https://msdn.microsoft.com/partner-center/create-a-marketing-profile) on PartnerCenter.  
 
-2) Become [CSP](https://partner.microsoft.com/en-US/cloud-solution-provider) or [DPOR](https://partner.microsoft.com/en-US/membership/digital-partner-of-Record) for Dynamics 365 for Finance and Operations, Business edition with at least 1 customer and [submit your offers](https://cloudpartner.azure.com/) to AppSource in the Cloud Partner Portal.  
+2) Become [CSP](https://partner.microsoft.com/en-US/cloud-solution-provider) or [DPOR](https://partner.microsoft.com/en-US/membership/digital-partner-of-Record) for Dynamics 365 Business Central with at least 1 customer and [submit your offers](https://cloudpartner.azure.com/) to AppSource in the Cloud Partner Portal.  
 
 If you experience issues accessing the Offer page, please contact [offerspilot@microsoft.com](mailto:offerspilot@microsoft.com).
 
