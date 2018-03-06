@@ -22,7 +22,3 @@ Returns the version of the [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] ext
 [Version :=] GETARCHIVEVERSION  
 ```  
   
-<!--Links
-## See Also  
- [Extending Microsoft Dynamics NAV Using Extension Packages](Extending-Microsoft-Dynamics-NAV-Using-Extension-Packages.md)   
- [How to: Develop an Extension](How-to--Develop-an-Extension.md)-->
