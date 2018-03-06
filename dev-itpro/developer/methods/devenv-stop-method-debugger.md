@@ -32,4 +32,3 @@ Stops execution as if the code hits an error.
   
 ## See Also  
  [Debugger Methods](devenv-debugger-methods.md)   
- <!--Links [Walkthrough: Debugging the Microsoft Dynamics NAV Windows Client](Walkthrough--Debugging-the-Microsoft-Dynamics-NAV-Windows-Client.md)-->
