@@ -1,6 +1,6 @@
 ---
 title: Get CustomerSales | Microsoft Docs
-description: Gets a customer sales object in Dynamics 365 for Financials.
+description: Gets a customer sales object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -19,7 +19,7 @@ Retrieve the properties and relationships of a customer sales report object for 
 
 ## HTTP request
 ```
-GET /financials/companies({id})/customerSales
+GET /businesscentral/companies({id})/customerSales
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and a **customer
 Here is an example of the request.
 
 ```json
-GET https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/customerSales
+GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/customerSales
 ```
 
 **Response**

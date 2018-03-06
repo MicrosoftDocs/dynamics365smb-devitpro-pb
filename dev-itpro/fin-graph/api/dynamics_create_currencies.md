@@ -1,6 +1,6 @@
 ---
 title: Create currencies | Microsoft Docs
-description: Creates a currency object in Dynamics 365 for Financials.
+description: Creates a currency object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Create currencies
-Create a currency object in Dynamics 365 for Financials.
+Create a currency object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/currencies
+POST /businesscentral/companies({id})/currencies
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **curre
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/currencies
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/currencies
 Content-type: application/json
 
 {

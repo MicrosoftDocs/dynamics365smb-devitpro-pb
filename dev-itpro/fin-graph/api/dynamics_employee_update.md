@@ -1,6 +1,6 @@
 ---
 title: Update employees | Microsoft Docs
-description: Updates an employee object in Dynamics 365 for Financials.
+description: Updates an employee object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -21,7 +21,7 @@ Update the properties of an employee object for [!INCLUDE[d365fin_long_md](../..
 ## HTTP request
 
 ```
-PATCH /financials/companies({id})/employees({id})
+PATCH /businesscentral/companies({id})/employees({id})
 ```
 
 ## Request headers
@@ -44,7 +44,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 Here is an example of the request.
 
 ```json
-PATCH https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/employees({id})
+PATCH https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/employees({id})
 Content-type: application/json
 
 {
@@ -87,7 +87,7 @@ Content-type: application/json
   "terminationDate": "0001-01-01",
   "status": "Active",
   "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/employees({id})/picture",
+  "picture@odata.mediaReadLink": "https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/employees({id})/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z" 
 }
 ```

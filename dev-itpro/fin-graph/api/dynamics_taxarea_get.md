@@ -1,6 +1,6 @@
 ---
 title: Get taxAreas | Microsoft Docs
-description: Gets a tax area object in Dynamics 365 for Financials. 
+description: Gets a tax area object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a tax area object for [!INCLUDE[d36
 ## HTTP request
 
 ```
-GET /financials/companies({id})/taxAreas({id})
+GET /businesscentral/companies({id})/taxAreas({id})
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and a **taxAreas
 
 Here is an example of the request.
 ```json
-GET https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/taxAreas({id})
+GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/taxAreas({id})
 ```
 
 **Response**

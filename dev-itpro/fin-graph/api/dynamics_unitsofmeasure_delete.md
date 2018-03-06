@@ -1,6 +1,6 @@
 ---
 title: Delete unitsOfMeasure | Microsoft Docs
-description: Deletes a unit of measure object in Dynamics 365 for Financials. 
+description: Deletes a unit of measure object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Delete unitsOfMeasure
-Deletes a units of measure object from Dynamics 365 for Financials.
+Deletes a units of measure object from Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-DELETE /financials/companies({id})/unitsOfMeasure({id})
+DELETE /businesscentral/companies({id})/unitsOfMeasure({id})
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/unitsOfMeasure({id})
+DELETE https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/unitsOfMeasure({id})
 ```
 
 **Response** 

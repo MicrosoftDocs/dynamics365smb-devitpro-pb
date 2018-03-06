@@ -1,6 +1,6 @@
 ---
 title: Get cashFlowStatement | Microsoft Docs
-description: Gets a cash flow statement object in Dynamics 365 for Financials.
+description: Gets a cash flow statement object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -19,7 +19,7 @@ Retrieve the properties and relationships of a cash flow statement report object
 
 ## HTTP request
 ```
-GET /financials/companies({id})/cashFlowStatement
+GET /businesscentral/companies({id})/cashFlowStatement
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and a **cashFlow
 
 Here is an example of the request.
 ```json
-GET https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/cashFlowStatement?$orderby=lineNumber&$filter=dateFilter ge 2019-01-01 and dateFilter le 2020-12-31
+GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/cashFlowStatement?$orderby=lineNumber&$filter=dateFilter ge 2019-01-01 and dateFilter le 2020-12-31
 ```
 
 **Response**
@@ -62,7 +62,7 @@ Here is an example of the response.
 
 
 ## See also
-[Working with Dynamics 365 for Financials in Microsoft Graph](../resources/dynamics_overview.md)  
+[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)  
 [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md)  
 [Endpoints for the APIs](../endpoints-apis-for-dynamics.md)  
 [Error Codes](../dynamics_error_codes.md)  

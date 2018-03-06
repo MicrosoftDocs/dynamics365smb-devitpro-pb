@@ -1,6 +1,6 @@
 ---
 title: Delete employees | Microsoft Docs
-description: Deletes an employee object in Dynamics 365 for Financials.
+description: Deletes an employee object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Delete employees
-Delete an employee from Dynamics 365 for Financials.
+Delete an employee from Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-DELETE /financials/companies({id})/employees({id})
+DELETE /businesscentral/companies({id})/employees({id})
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/employees({id})
+DELETE https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/employees({id})
 ```
 
 **Response** 
