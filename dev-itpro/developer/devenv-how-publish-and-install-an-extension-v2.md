@@ -31,7 +31,7 @@ Synchronizing an extension updates the database schema of the tenant database wi
 
 2.  To publish the extension, run the [Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079).
 
-    The cmdlet takes as parameters the [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance that you want to install to and the .app package file that contains the extension. The following example publishes the extension **MyExtension.app** to the **YourDynamicsNAVServer** instance.  
+    The cmdlet takes as parameters the [!INCLUDE[d365_server_md](includes/d365_server_md.md)] instance that you want to install to and the .app package file that contains the extension. The following example publishes the extension **MyExtension.app** to the **YourDynamicsNAVServer** instance.  
 
     ```  
     Publish-NAVApp -ServerInstance YourDynamicsNAVServer -Path ".\MyExtension.app"
@@ -49,7 +49,7 @@ Synchronizing an extension updates the database schema of the tenant database wi
 The extension can now be installed on tenants.
 
 ## Install an extension
-After you publish and synchronize an extension, you can install it on tenants to enable the extension and make it available to users in the client. Installing an extension can be done from the [!INCLUDE[navnow_md](includes/navnow_md.md)] client or [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)].
+After you publish and synchronize an extension, you can install it on tenants to enable the extension and make it available to users in the client. Installing an extension can be done from the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] client or [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)].
 
 > [!NOTE]  
 > Installing an extension will run any installation code that is built-in to the extension. Installation code could, for example, perform operations like populating empty records with data, service callbacks and telemetry, version checks, and messages to users. For more information, see [Writing Extension Install Code](devenv-extension-install-code.md).
