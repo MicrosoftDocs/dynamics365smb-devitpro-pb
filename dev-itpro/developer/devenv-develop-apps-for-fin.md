@@ -36,7 +36,7 @@ It's easy to get started! Just spin up a developer sandbox environment by going 
 >  Want to get started with APIs? Go to [https://aka.ms/getstartedwithapis](https://aka.ms/getstartedwithapis).
 
 
-1) Sign up for a [Dynamics 365 for Finance and Operations, Business edition sandbox](https://go.microsoft.com/fwlink/?linkid=847861).    
+1) Sign up for a [Dynamics 365 Business Central sandbox](https://go.microsoft.com/fwlink/?linkid=847861).    
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
 3) Download the [AL Language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).  
 4) Press **Alt+A, Alt+L** to trigger the **Go!** command, and then choose **Cloud**.  
@@ -65,7 +65,7 @@ We are excited to have you in our family of [!INCLUDE[d365fin_long_md](includes/
 #### 1)	Get the prerequisites in place  
 To get started with development, you must have some necessary accounts in place. Next, we ask you to send us your app idea via Microsoft AppSource to get your object range and developer license. Learn more about how to get your prerequisites in place [here](https://go.microsoft.com/fwlink/?linkid=857095). 
 
-#### 2)	Develop your Dynamics 365 for Finance and Operations, Business edition app   
+#### 2)	Develop your Dynamics 365 Business Central app   
 Use the development tools for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] (preview), which enables you to build Extensions v2.0. To get started, set up the [sandbox environment](#want-to-try-it-out). Please be aware, that we are **only** accepting [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] apps built on Extensions v2.0 with Visual Studio Code. You can no longer submit Extensions V1.0. For questions, please [email us](mailto:d365val@microsoft.com).
 
 After you have completed step 1; Get the prerequisites in place, you will be eligible to access the Ready! program. Ready! for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is an engagement program which enables those who want to develop and deliver apps for [!INCLUDE[d365fin_md](includes/d365fin_md.md)] in Microsoft AppSource. You will get: 
