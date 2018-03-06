@@ -44,11 +44,5 @@ Type: Boolean
 If you omit this optional return value and if archived data cannot be restored for the specified table, then a run-time error occurs. If you include a return value, then it is assumed that you will handle any errors and no run-time error occurs, even though the archived data is not restored.
 
 ## Remarks
-You use this method as part of the upgrade code for an extension, where it is called from the `OnNavAppUpgradePerDatabase()` or `OnNavAppUpgradePerCompany()` system methods. When an extension is uninstalled, the data in application tables of the extension is automatically stored into a set of special tables so that the data is still preserved. With the RESTOREARCHIVEDATA method, you can restore the archived data to the application table of the new version of an extension when it is installed. <!--Links For more information and sample code, see [Upgrading Extensions](extensions-upgrading.md) and [How to: Write Extension Upgrade Code](extensions-upgrade-howto.md).-->  
+You use this method as part of the upgrade code for an extension, where it is called from the `OnNavAppUpgradePerDatabase()` or `OnNavAppUpgradePerCompany()` system methods. When an extension is uninstalled, the data in application tables of the extension is automatically stored into a set of special tables so that the data is still preserved. With the RESTOREARCHIVEDATA method, you can restore the archived data to the application table of the new version of an extension when it is installed. 
 
-<!--Links
-## See Also  
-[Extending Microsoft Dynamics NAV Using Extension Packages](Extending-Microsoft-Dynamics-NAV-Using-Extension-Packages.md)   
-[Upgrading Extensions](extensions-upgrading.md)  
-[How to: Write Extension Upgrade Code](extensions-upgrade-howto.md)  
-[How to: Develop an Extension](How-to--Develop-an-Extension.md)  -->
