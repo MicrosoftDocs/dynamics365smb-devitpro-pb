@@ -32,7 +32,5 @@ Once you have the API access enabled, you can write code that integrates your we
 |**Development instance**|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Get [Docker](https://aka.ms/navdeveloperpreview) instance|
 
 ## See Also
-[API Documentation (Preview)](fin-graph/index.md)  
+[API Documentation (Preview)](index.md)  
 [Developing Connect Apps for Dynamics 365 Business Central](../developer/devenv-develop-connect-apps.md)  
-[Configuring Microsoft Dynamics NAV Server](configuring-microsoft-dynamics-nav-server.md)  
-[Microsoft Dynamics NAV Web Services Overview](microsoft-dynamics-nav-web-services-overview.md)  
