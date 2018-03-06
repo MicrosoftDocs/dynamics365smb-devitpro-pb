@@ -33,7 +33,7 @@ Table objects and field controls include the `DataClassification` property that 
 -   FlowField and FlowFilter fields are automatically set to the **SystemMetadata** data classification. This cannot be changed.
 -   Existing tables and fields (except for FlowFields and FlowFilters) in an application that has been upgraded from a [!INCLUDE[d365fin_md](includes/d365fin_md.md)] version without the `DataClassification` property, will automatically be assigned the **CustomerContent** classification.
 
-For more information about this property, see [DataClassification Property](developer/properties/devenv-dataclassification-property.md).
+For more information about this property, see [DataClassification Property](properties/devenv-dataclassification-property.md).
 
 ### Data classification on upgrade
 When you upgrade an application from a [!INCLUDE[d365fin_md](includes/d365fin_md.md)] version that does not contain the `DataClassification` property, existing tables and fields (except for FlowFields and FlowFilters) will automatically be assigned the **CustomerContent** classification. You can then access the `DataClassification` property on these tables and fields, and change the classification as needed. FlowFields and FlowFilters will be assigned the **SystemMetadata** classification automatically.
@@ -44,6 +44,7 @@ The Field Data Classification report, which is described in the *Viewing current
 To bulk-edit classifications, export the report to Excel, update the classifications, and then save your changes. Then, in Windows PowerShell, run the following commands to run the Import-Module script and set the classifications on the fields.  
 
 To run the script from the default folder on the DVD, run:  
+
 ``` 
 Import-Module WindowsPowerShellScripts\DataClassification\DataClassification.psm1
 ``` 
@@ -69,7 +70,7 @@ Custom telemetry trace events are defined by calls to the SENDTRACETAG function/
 For more information, see the following articles:
 
 -   [Instrumenting an Application for Telemetry](devenv-instrumenting-application-for-telemetry.md) 
--   [SENDTRACETAG Method (AL)](developer/methods/devenv-sendtracetag-method.md)
+-   [SENDTRACETAG Method (AL)](methods/devenv-sendtracetag-method.md)
 
 
 ## See Also
