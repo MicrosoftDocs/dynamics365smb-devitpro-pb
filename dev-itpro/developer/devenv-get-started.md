@@ -22,7 +22,7 @@ To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fi
 ## Steps to set up a sandbox environment and Visual Studio Code
 Go through the following steps to set up a sandbox environment. With the preview you get sample code that compiles and runs with just a few commands.
 
-1) Sign up for a [Dynamics 365 Business Central sandbox](https://aka.ms/GetSandboxForFinancials).  
+1) Sign up for a [Dynamics 365 Business Central sandbox]().  
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
 3) Download the [AL Language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).  
 4) Press **Ctrl+,** to open the **user settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).  
@@ -40,11 +40,13 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 
 As this feature is still in preview you might run into unrecoverable issues from time to time. In these cases, use [Reset Sandbox](https://portal.financials.dynamics.com/reset?env=sandbox&redirectedFromSignup=false) to reset the sandbox and start from a clean environment.
 
+<!--
 Interested in an on-premise version? It's just as easy. Just sign up by following these steps.
 
 1) First, you will need an Azure subscription, sign up for a free subscription.  
 2) Go to the [Developer Preview](http://aka.ms/navdeveloperpreview).  
 3) When you have a virtual machine set up, you will see a welcome text and here you can choose to try out the developer preview following the instructions on the screen.  
+-->
 
 > [!NOTE]  
 > Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
@@ -53,10 +55,6 @@ Interested in an on-premise version? It's just as easy. Just sign up by followin
 There are two JSON files in the project; the `app.json` file and the `launch.json` file. The files are automatically generated for your project. For more information, see [JSON files](devenv-json-files.md).
 
 ## Telemetry settings
-
-> [!NOTE]  
-> [!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]
-
 By default, Visual Studio Code is set up with a telemetry system to enable that data and errors are sent to Microsoft. If you do not want to send telemetry data, you can change the `telemetry.enableTelemetry` setting from `true` to `false`. 
 
 To modify the telemetry setting, press **Ctrl+,** in Visual Studio Code and choose the **user settings** window, which opens the `settings.json` file, and then add `telemetry.enableTelemetry` and set it to `false`. 
