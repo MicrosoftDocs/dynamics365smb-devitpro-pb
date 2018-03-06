@@ -1,9 +1,9 @@
 ---
-title: "Integrate a 3rd Party Solution/Service"
+title: "Connect Apps"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/20/2018
+ms.date: 03/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +13,15 @@ ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-# Integrate a 3rd Party Solution/Service (Connect Services and Interchange Data)
+# Connect Apps 
 
-## What is a Connect app? 
+## What is a Connect app?
 A Connect app describes the scenario of establishing a point-to-point connection between Dynamics 365 Business Central and a 3rd party solution or service.   
 
 ## How do I create a Connect app?
 A Connect app is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app.  
-Dynamics 365 Business Central exposes 44 standard APIs at the time of writing. More will be added over time. We strongly encourage using the standard APIs when possible. In cases where more interoperability is needed additional custom APIs can be created by utilizing Extensions v2.0 and the modern development tools.  
+
+Dynamics 365 Business Central exposes 44 standard APIs at the time of writing. More will be added over time. We strongly encourage using the standard APIs when possible. In cases where more interoperability is needed additional custom APIs can be created using Extensions v2.0 and the modern development tools.  
 
 <!-- INSERT VIDEO:  
 Objective: Introucing Connect Apps + Business value 
@@ -53,10 +54,10 @@ Dynamics 365 Business Central offers many APIs that you can call from within you
 Prior to publishing your app you can try out and develop against the APIs using a trial tenant: 
 
 1. Sign up for [Dynamics 365 Business Central](). 
-2. When exploring and prototyping the APIs, the easiest is to use basic authentication with the tenant specific endpoint https://api.financials.dynamics.com/v1.0/<tenant user domain url>/api/beta. 
+2. When exploring and prototyping the APIs, the easiest is to use basic authentication with the tenant-specific endpoint https://api.financials.dynamics.com/v1.0/<tenant user domain url>/api/beta. 
     - To set up basic authentication, create a Web Service Access key in Dynamics 365. Log into your tenant, search for and open the Users page, and in the Web Service Access Key field, generate a key. Copy this, and use as the password for the username. 
     - For developing and production, you must, however, use Azure Active Directory (AAD)/OAuth v2 authentication and the common endpoint https://api.financials.dynamics.com/v1.0/api/beta. 
-3. Go to the documentation on the APIs, you can get our published preview [here](). 
+3. Go to the documentation on the APIs, you can get our published preview [here](https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/). 
 4. Download an API explorer, such as Postman or Fiddler to connect to and explore the API. See examples in below video. 
  
 <!-- INSERT VIDEO: 
@@ -64,10 +65,11 @@ HDI – V6 – Use APIs from a Connect App -->
  
 You can now develop the integration using your favorite development tool. 
 
+<!-->
 ## How do I get my Connect app published in AppSource?  
 To ease your journey, from the initial idea submission to the final publication, we have created a guide that you can lean on throughout the process of bringing your Connect app to Microsoft AppSource. The guide consists of a set of documents outlining the steps to take to get your app go live on the platform. You must complete the following steps in the given order to pass the different validation stages and get your app published on AppSource: 
 
-- [How do I develop and publish a Connect app]().
+- [How do I develop and publish a Connect app]().-->
  
 ## Where do I learn more about Connect apps? 
 To learn more about how to develop Connect apps, see the following:  
@@ -75,6 +77,6 @@ To learn more about how to develop Connect apps, see the following:
 - [Getting started with connect apps](https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-develop-connect-apps-for-fin)  <!-- shift to the new one -->
 - [Overview of connection endpoints and authentication options](https://docs.microsoft.com/en-us/dynamics-nav/endpoints-apis-for-dynamics) 
 <!-- - Link to blogpost – haven’t been created yet  [Symbol] NOTE: waiting on input from Peter  -->
-- If your Connect app requires a specific setup in Dynamics 365 Business Central, you can add objects by following the guide on developing Add-on apps in combination with using the Connect API. Find the guide on how to develop Add-on apps [here](readiness-add-on-apps.md).  
+- If your Connect app requires a specific setup in Dynamics 365 Business Central, you can add objects. by following the guide on developing Add-on apps in combination with using the Connect API. Find the guide on how to develop Add-on apps [here](readiness-add-on-apps.md).  
 
 
