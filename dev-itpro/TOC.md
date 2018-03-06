@@ -176,7 +176,7 @@
 ### [Raising Events](developer/devenv-raising-events.md)
 ### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
 ## [Notifications](developer/devenv-notifications-developing.md)
-## [Instrumenting for Telemetry](developer/devenv-instrumenting-application-for-telemetry.md)
+<!-- ## [Instrumenting for Telemetry](developer/devenv-instrumenting-application-for-telemetry.md) -->
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
 ## [Reports](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)

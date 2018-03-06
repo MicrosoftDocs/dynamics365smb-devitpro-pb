@@ -1,6 +1,6 @@
 ---
 title: "Using the Code Analysis Tools"
-description: "Configuring and using a custom rule set on an AL project."
+description: "Configuring and using a custom ruleset on an AL project."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 02/20/2018
@@ -14,10 +14,10 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-# Using the Code Analysis Tools with the Rule Set
-This topic shows how you can use a custom rule set to customize the severity of diagnostics produced by the code analysis tools that are part of the AL Language extension for Visual Studio Code.
+# Using the Code Analysis Tools with the Ruleset
+This topic shows how you can use a custom ruleset to customize the severity of diagnostics produced by the code analysis tools that are part of the AL Language extension for Visual Studio Code.
 
-## Using rule sets with code analysis
+## Using rulesets with code analysis
 First, create a simple project in AL. 
 1. Press **Alt + A, Alt + L** to create a new project.
 2. Open the Command Palette by using the **Ctrl+Shift+B** shortcut and choose either User Settings or Workspace Settings.
@@ -46,8 +46,8 @@ pageextension 50100 CustomerListExt extends "Customer List"
 
 On the **View** tab of Visual Studio Code, select the **Problems** option and you will see a warning with the message **"There must be exactly one space character on each side of '+'."**. In this case, the problem can be fixed by running the AL Formatter command. For more information, see [AL Formatter](devenv-al-formatter.md).
 
-## Creating and customizing a rule set
-To create and customize a rule set of your own, follow the next steps:
+## Creating and customizing a ruleset
+To create and customize a ruleset of your own, follow the next steps:
 
 1. On the **File** tab in Visual Studio Code, choose **New File**.
 2. Save the empty file with a name, for example `<name>.ruleset.json` and make a note of the file path.
@@ -55,7 +55,7 @@ To create and customize a rule set of your own, follow the next steps:
 
     ```
     {
-        "name": "My Custom Rule Set",
+        "name": "My Custom ruleset",
         "rules": [
             {                    
                 "id": "AA0001",                    
@@ -64,10 +64,10 @@ To create and customize a rule set of your own, follow the next steps:
         ]
     }
     ```
-4. In your project settings set **al.ruleSetPath** to the path to the `<name>.ruleset.json` file, relative to the project root. For more information about custom rules, see [Rule Set for the Code Analysis tool](devenv-rule-set-syntax-for-code-analysis-tools.md).
+4. In your project settings set **al.ruleSetPath** to the path to the `<name>.ruleset.json` file, relative to the project root. For more information about custom rules, see [ruleset for the Code Analysis tool](devenv-rule-set-syntax-for-code-analysis-tools.md).
 
 > [!NOTE]
-> Use the `truleset` and `trule` snippets provided by the AL Language extension to create your rule set. The rule set will be applied to all the analyzers enabled for the current project. For more information about selectively enabling analyzers, see [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md).
+> Use the `truleset` and `trule` snippets provided by the AL Language extension to create your ruleset. The ruleset will be applied to all the analyzers enabled for the current project. For more information about selectively enabling analyzers, see [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md).
 
 ## Running the code analysis
 The code analysis will run in the background and you will see the warning **"There must be exactly one space character on each side of '+'."** disappear from the **Problems** option in Visual Studio Code.
@@ -75,13 +75,13 @@ The code analysis will run in the background and you will see the warning **"The
 To trigger a new compilation manually, use the **Ctrl+Shift+B** shortcut to build your project. For more information about AL keyboard shortcuts, see [Keyboard shortcuts](devenv-keyboard-shortcuts.md).
 
 ## Limitations
-Changing the contents of the rule set file will not be detected by the AL Language extension. To see the effects of changing the rule set file, you can try any of the following:
+Changing the contents of the ruleset file will not be detected by the AL Language extension. To see the effects of changing the ruleset file, you can try any of the following:
 - Trigger a new compilation manually by using the **Ctrl+Shift+B** shortcut.
 - Reload the window.
 - In the project settings, change the **al.ruleSetPath** setting to an invalid path. Save the settings file, change back the setting, and save it.
 
 ## See also
-[Rule Set for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)    
+[ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)    
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Development in AL](devenv-dev-overview.md)  
 [Debugging in AL](devenv-debugging.md)

@@ -21,7 +21,7 @@ caps.latest.revision: 18
 1. Open [!INCLUDE[navnow](../includes/navnow_md.md)] Administration tool. 
 2. Expand the **OData Services** tab, and select the **Enable OData Services** checkbox first, then select the **Enable API Services** checkbox.
 3. Check that the values for the **OData Base URL** and **Port** are entered correctly.  
-    When exposing a web service, you must open the port for other consumers of your web service to access it. You can have your system administrator add the port through Windows Firewall on the computer running [!INCLUDE[d365_server_md](includes/d365_server_md.md)]. The default port for ODdata web services is 7048.
+    When exposing a web service, you must open the port for other consumers of your web service to access it. You can have your system administrator add the port through Windows Firewall on the computer running [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] server. The default port for ODdata web services is 7048.
 4. In [!INCLUDE[navnow](../includes/navnow_md.md)], search for **API Setup** and then choose the related link.
 5. On the **API Setup** page, choose the **Integrate APIs** button.  
     This will start a process of populating all the integration tables with records for all APIs. The process can take several minutes.
@@ -29,7 +29,5 @@ caps.latest.revision: 18
 Depending on where you want to access the APIs from, you must specify the correct endpoint. For more information, see [Endpoints for APIs](endpoints-apis-for-dynamics.md).
 
 ## See Also
-[API Documentation (Preview)](fin-graph/index.md)  
-[Developing Connect Apps for Dynamics 365 for Finance and Operations, Business edition](../developer/devenv-develop-connect-apps-for-fin.md)  
-[Configuring Microsoft Dynamics NAV Server](configuring-microsoft-dynamics-nav-server.md)  
-[Microsoft Dynamics NAV Web Services Overview](microsoft-dynamics-nav-web-services-overview.md)  
+[API Documentation (Preview)](index.md)  
+[Developing Connect Apps for Dynamics 365 Business Central](../developer/devenv-develop-connect-apps.md)  
