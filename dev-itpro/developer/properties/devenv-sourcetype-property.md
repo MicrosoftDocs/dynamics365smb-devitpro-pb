@@ -24,7 +24,7 @@ Sets what a particular tag in the XMLport Designer corresponds to in the [!INCLU
   
 |**Value**|**Description**|  
 |---------------|---------------------|  
-|**Text**|The XML data in the object denoted by the [NodeName Property](devenv-nodename-property.md) cannot be mapped directly to the Microsoft Dynamics NAV database or when the database does not need the information. The name of the Text field in the XMLport Designer is put into a global text variable.<br/><br /> This variable functions just like a AL Global variable. However, it is not visible in AL Globals window but it is visible in the AL Symbol Menu.|  
+|**Text**|The XML data in the object denoted by the [NodeName Property](devenv-nodename-property.md) cannot be mapped directly to the [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] database or when the database does not need the information. The name of the Text field in the XMLport Designer is put into a global text variable.<br/><br /> This variable functions just like a AL Global variable. However, it is not visible in AL Globals window but it is visible in the AL Symbol Menu.|  
 |**Table**|The object denoted by the [NodeName Property](devenv-nodename-property.md) corresponds to a [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] table. You should also select this value when a [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] table record needs to be initialized.|  
 |**Field**|Access is required to a field in the database. For this selection to be valid, you must first have declared a table as the parent of this object or attribute. Failure to do so will cause an error to occur when you try to compile the XMLport object.|  
   

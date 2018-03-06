@@ -26,7 +26,7 @@ Sets the value that indicates whether the selected action is promoted, which mea
   
  Available options are **true**/**false**.  
   
- On [!INCLUDE[nav_tablet](../includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](../includes/nav_phone_md.md)] only promoted actions are displayed.  
+ On [!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)] and [!INCLUDE[d365fin_phone_md](../includes/d365fin_phone_md.md)] only promoted actions are displayed.  
   
 ## See Also  
  [PromotedIsBig Property](devenv-promotedisbig-property.md)   

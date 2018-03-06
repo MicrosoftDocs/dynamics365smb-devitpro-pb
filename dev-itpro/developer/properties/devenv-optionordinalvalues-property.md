@@ -26,7 +26,7 @@ Specifies the list of ordinal values and the position of the option member value
 The position of the option members value in the external database. You can set -1, 1, 2, but you cannot set the value to 0. 
 
 ## Remarks  
-This property is used when you specify **CRM** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
+This property is used when you specify **CRM** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.  
 
 ## See Also  
 [Properties](devenv-properties.md)  
