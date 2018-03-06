@@ -33,8 +33,6 @@ To obtain these goals, you can:
 ## See Also
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
-[Development of a Vertical Solution](readiness-develop-vertical-solution.md)  
-[Development of a Horizontal Solution](readiness-develop-horizontal-solution.md)  
+[Development of a Vertical Solution](readiness-develop-vertical.md)  
+[Development of a Horizontal Solution](readiness-develop-horizontal.md)  
 [Resell Different Solutions](readiness-reseller.md)  
-
-
