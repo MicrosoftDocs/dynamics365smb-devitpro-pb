@@ -14,6 +14,7 @@ ms.prod: "dynamics-nav-2018"
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Developing Connect Apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
+A Connect app establishes a point-to-point connection between [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and a 3rd party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. To get started with writing Connect apps, follow the steps below: 
 
 1. Sign up for a [Dynamics 365 Business Central sandbox]().  
 For exploring and prototyping with the APIs, use basic authentication with the tenant specific endpoint https://api.financials.dynamics.com/v1.0/<tenant user domain url>/api/beta. You can set up basic authentication by creating a **Web Service Access** key in Dynamics 365 Business Central. 
