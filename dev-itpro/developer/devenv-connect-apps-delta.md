@@ -1,5 +1,5 @@
 ---
-title: "Using Delta Links When Developing Connect Apps"
+title: "Using Delta Links With APIs"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
@@ -13,7 +13,7 @@ ms.prod: "dynamics-nav-2018"
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# Using Delta Links When Developing Connect Apps
+# Using Delta Links With APIs
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
 The user can obtain a delta link from each entity API in the library by including the `odata.track-changes` preference in the header of the request. The response to the GET request returns a deltaLink parameter, providing an opaque URL.
@@ -76,4 +76,7 @@ The response would return with the specified changes in the result, see the foll
 + The client must use the deltaLink URL as provided. The URL must not be modified either by parsing it or adding any additional query string parameters including changing the filters. The deltaLink and token are specific to the original query provided.
 
 ## See Also
+[Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
+[Using Filtering With APIs](devenv-connect-apps-filtering.md)  
+
 
