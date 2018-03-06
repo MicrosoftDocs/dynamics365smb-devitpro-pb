@@ -1,6 +1,6 @@
 ---
 title: Update purchaseInvoiceLines | Microsoft Docs
-description: Updates a purchase invoice line object in Dynamics 365 for Financials.
+description: Updates a purchase invoice line object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -20,7 +20,7 @@ Update the properties of a purchase invoice line object for [!INCLUDE[d365fin_lo
 ## HTTP request
 
 ```
-PATCH /financials/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines(documentId=({id}),sequence=({number}))
+PATCH /businesscentral/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines(documentId=({id}),sequence=({number}))
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines(documentId=({id}),sequence=({number}))
+PATCH https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines(documentId=({id}),sequence=({number}))
 Content-type: application/json
 
 {

@@ -1,6 +1,6 @@
 ---
 title: Create customerPaymentsJournals | Microsoft Docs
-description: Creates a customer payments journal object in Dynamics 365 for Financials.
+description: Creates a customer payments journal object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,12 +15,12 @@ ms.author: solsen
 ---
 
 # Create customerPaymentsJournals
-Creates a customer payments journal object in Dynamics 365 for Financials.
+Creates a customer payments journal object in Dynamics 365 Business Central.
 
 ## HTTP request
 
 ```
-POST /financials/companies({id})/customerPaymentsJournals({id})
+POST /businesscentral/companies({id})/customerPaymentsJournals({id})
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns ```201 Created``` response code and a **custo
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/customerPaymentsJournals
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/customerPaymentsJournals
 Content-type: application/json
 
 ```json

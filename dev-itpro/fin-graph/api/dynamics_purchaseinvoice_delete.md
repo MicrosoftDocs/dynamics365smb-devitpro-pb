@@ -1,6 +1,6 @@
 ---
 title: Delete purchaseInvoices | Microsoft Docs
-description: Deletes a purchase invoice object in Dynamics 365 for Financials.
+description: Deletes a purchase invoice object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Delete purchaseInvoices
-Delete a purchase invoice object from Dynamics 365 for Financials.
+Delete a purchase invoice object from Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-DELETE /financials/companies({id})/purchaseInvoices({id})
+DELETE /businesscentral/companies({id})/purchaseInvoices({id})
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/purchaseInvoices({id})
+DELETE https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/purchaseInvoices({id})
 ```
 
 **Response** 

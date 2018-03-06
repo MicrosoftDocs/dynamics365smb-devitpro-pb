@@ -1,6 +1,6 @@
 ---
 title: Create itemCategories | Microsoft Docs
-description: Creates an item category object in Dynamics 365 for Financials.
+description: Creates an item category object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Create itemCategories
-Create an item category object in Dynamics 365 for Financials.
+Create an item category object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/itemCategories
+POST /businesscentral/companies({id})/itemCategories
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and an **item
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/itemCategories
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/itemCategories
 Content-type: application/json
 
 {

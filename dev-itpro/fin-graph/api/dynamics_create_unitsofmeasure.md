@@ -1,6 +1,6 @@
 ---
 title: Create unitsOfMeasure | Microsoft Docs
-description: Creates a unit of measure object in Dynamics 365 for Financials. 
+description: Creates a unit of measure object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Create unitsOfMeasure
-Create a units of measure object in Dynamics 365 for Financials.
+Create a units of measure object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/unitsOfMeasure
+POST /businesscentral/companies({id})/unitsOfMeasure
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **units
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/unitsOfMeasure
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/unitsOfMeasure
 Content-type: application/json
 
 {

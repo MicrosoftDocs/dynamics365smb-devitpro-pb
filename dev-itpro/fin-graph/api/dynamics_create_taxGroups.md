@@ -1,6 +1,6 @@
 ---
 title: Create taxGroups | Microsoft Docs
-description: Creates a tax group object in Dynamics 365 for Financials. 
+description: Creates a tax group object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Create taxGroups
-Create a tax groups object in Dynamics 365 for Financials.
+Create a tax groups object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/taxGroups
+POST /businesscentral/companies({id})/taxGroups
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns ```201 Created``` response code and a **taxGr
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/taxGroups
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/taxGroups
 Content-type: application/json
 
 {

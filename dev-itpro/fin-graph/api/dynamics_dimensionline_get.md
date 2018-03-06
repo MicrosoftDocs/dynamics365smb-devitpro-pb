@@ -1,6 +1,6 @@
 ---
 title: Get dimensionLines | Microsoft Docs
-description: Gets a dimension line in Dynamics 365 for Financials.
+description: Gets a dimension line in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -23,12 +23,12 @@ Retrieve the properties and relationships of a dimension line object for [!INCLU
 
 If you want to receive all of the dimension lines of a specific parent entity, you can do it with the following URL:
 ```
-GET /financials/companies({id})/dimensionLines?$filter=parentId eq ({id})
+GET /businesscentral/companies({id})/dimensionLines?$filter=parentId eq ({id})
 ```
 
 In order to get a specific dimension line, you can use the following URL:
 ```
-GET /financials/companies({id})/dimensionLines(parentId=({id}),id=({id}))
+GET /businesscentral/companies({id})/dimensionLines(parentId=({id}),id=({id}))
 ```
 
 ## Request headers
@@ -48,7 +48,7 @@ If successful, this method returns a ```200 OK``` response code and a **dimensio
 
 Here is an example of the request.
 ```json
-GET https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/dimensionLines(parentId=({id}),id=({id}))
+GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/dimensionLines(parentId=({id}),id=({id}))
 ```
 
 **Response**

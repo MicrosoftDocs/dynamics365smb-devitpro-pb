@@ -1,6 +1,6 @@
 ---
 title: Get employees | Microsoft Docs
-description: Gets an employee object in Dynamics 365 for Financials.
+description: Gets an employee object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -19,7 +19,7 @@ Retrieve the properties and relationships of an employee object for [!INCLUDE[d3
 
 ## HTTP request
 ```
-GET /financials/companies({id})/employees({id})
+GET /businesscentral/companies({id})/employees({id})
 ```
 
 ## Request headers
@@ -38,7 +38,7 @@ If successful, this method returns a ```200 OK``` response code and an **employe
 Here is an example of the request.
 
 ```json
-GET https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/employees({id})
+GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/employees({id})
 ```
 
 **Response**
@@ -72,7 +72,7 @@ Here is an example of the response.
   "terminationDate": "0001-01-01",
   "status": "Active",
   "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/employees({id})/picture",
+  "picture@odata.mediaReadLink": "https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/employees({id})/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"  
 }
 ```
