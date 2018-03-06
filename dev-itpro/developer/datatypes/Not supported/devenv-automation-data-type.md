@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # Automation Data Type
 Use the Automation data type to reference an automation server.  
 
-### To use an automation server in Dynamics 365 for Financials
+### To use an automation server in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)]
 
 1.  Define a variable of type Automation and give it a name.  
 
