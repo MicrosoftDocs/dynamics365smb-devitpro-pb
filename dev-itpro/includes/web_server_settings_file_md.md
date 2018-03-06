@@ -1,0 +1,1 @@
+[configuration file](../Configuring-Microsoft-Dynamics-NAV-Web-Client-by-Modifying-the-Web.config-File.md#WebClientSettingsFile)

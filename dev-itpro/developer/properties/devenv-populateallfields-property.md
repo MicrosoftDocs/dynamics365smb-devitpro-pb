@@ -1,0 +1,31 @@
+---
+title: "PopulateAllFields Property"
+ms.custom: na
+ms.date: 06/16/2017
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.prod: "dynamics-nav-2018"
+ms.assetid: dd157345-e6b8-48d4-a38c-9da55a49289e
+caps.latest.revision: 13
+author: SusanneWindfeldPedersen
+---
+
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+
+# PopulateAllFields Property
+Sets whether fields are filled out automatically with a single filter value when a new record is inserted in a table.  
+  
+## Applies To  
+  
+-   Pages  
+  
+## Property Value  
+ **True** if you want the fields filled out automatically; otherwise, **false**. The default is **false**.  
+  
+## Remarks  
+ Values are inserted in those fields where a currently active filter expression evaluates to exactly one value. Key fields are always populated.  
+  
+## See Also  
+ [Properties](devenv-properties.md)
