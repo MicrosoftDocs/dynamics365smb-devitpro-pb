@@ -55,17 +55,14 @@ Set-FieldDataClassificationFromExcelFile -ExcelFilePath "C:\NAV\W1 Fields (Main)
 
 ## <a name="ViewDataClassifications"></a>Viewing current field classifications
 To view the data classification on all fields, you can do one of the following:
-<!-- onprem
+
 -   From [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], in the **Tools** menu, select **Show Field Data Classification**. 
--->
 -   From the client, search for and open the **Field Data Classification** page. 
 -   Create a page that has the virtual table **Field** (ID 2000000041) as its source, and open the page in the client.
 
 <!-- To view the data classification on all tables, create a page that has the virtual table **Table Metadata** (ID 2000000136)  as its source, and open the page in the client.
 -->
 
-
-<!-- onprem 
 ## Classifying data in custom telemetry trace events
 Custom telemetry trace events are defined by calls to the SENDTRACETAG function/method in the application code. The SENDTRACETAG function/method includes an optional parameter called `DataClassification` that you can use to tag the telemetry trace event with a data classification.
 
@@ -74,7 +71,6 @@ For more information, see the following articles:
 -   [Instrumenting an Application for Telemetry](devenv-instrumenting-application-for-telemetry.md) 
 -   [SENDTRACETAG Method (AL)](developer/methods/devenv-sendtracetag-method.md)
 
--->
 
 ## See Also
 [How to: Create a Page to View a Virtual Table](How-to--Create-a-Page-to-View-a-Virtual-Table.md)    
