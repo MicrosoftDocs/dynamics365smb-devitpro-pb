@@ -15,7 +15,7 @@ caps.latest.revision: 18
 ---
 
 # Endpoints for the APIs for Microsoft Dynamics NAV and Microsoft Dynamics 365 Business Central 
-[!INCLUDE[navnow](../includes/navnow_md.md)] and [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] expose an API that makes it possible to integrate with other services. To enable integration with these APIs, for [!INCLUDE[navnow](../includes/navnow_md.md)] you must go through a few steps to enable the access first. For more information about these steps, see [Enabling APIs for Microsoft Dynamics NAV](enabling-apis-for-dynamics-nav.md).
+[!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] exposes an API that makes it possible to integrate with other services. To enable integration with these APIs, for [!INCLUDE[navnow](../includes/navnow_md.md)] you must go through a few steps to enable the access first. For more information about these steps, see [Enabling APIs for Microsoft Dynamics NAV](enabling-apis-for-dynamics-nav.md).
 
 ## Accessing the endpoint
 Once you have the API access enabled, you can write code that integrates your web service or SaaS solution with [!INCLUDE[navnow](../includes/navnow_md.md)]. Creating your integration through an API provides simple access to the supported functionality in a single endpoint, giving you a simplified experience for creating a single app with integrations across multiple Microsoft products. 
