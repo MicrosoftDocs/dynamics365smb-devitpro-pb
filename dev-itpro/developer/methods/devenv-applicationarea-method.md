@@ -1,5 +1,6 @@
 ---
 title: "APPLICATIONAREA Method"
+ms.author: solsen
 ms.custom: na
 ms.date: 07/13/2017
 ms.reviewer: na
@@ -8,12 +9,11 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: dynamics365-financials
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
 
 [!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
-# APPLICATIONAREA Method
+# ApplicationArea Method
 Gets or sets the application areas for the current session.  
   
 ## Syntax  

@@ -1,16 +1,15 @@
 ---
-title: Dynamics 365 for Finance and Operations, Business edition Overview | Microsoft Docs
-description: Overview of the capabilities of Dynamics 365 for Finance and Operations Microsoft API.
+title: Dynamics 365 Business Central | Microsoft Docs
+description: Overview of the capabilities of Dynamics 365 Business Central API.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
 ms.service: dynamics365-financials
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/26/2018
+ms.date: 03/06/2018
 ms.author: solsen
 ---
 
