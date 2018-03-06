@@ -1,5 +1,5 @@
 ---
-title: "Using the Code Analysis Tools"
+title: "Using the Code Analysis Tool"
 description: "Using static code analysis tool on an AL project."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -14,8 +14,8 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-# Using the Code Analysis Tools
-This topic shows how you can use static code analysis tools on an AL project from within Visual Studio Code.
+# Using the Code Analysis Tool
+This topic shows how you can use static code analysis tool on an AL project from within Visual Studio Code.
 
 ## Enabling code analysis
 First, create a simple project in AL. 
@@ -52,8 +52,6 @@ You can also view the list of issues by selecting the **View** tab of Visual Stu
 Using the **Ctrl+Shift+B** shortcut to build your project will run the code analysis tools on the entire project and the detected issues will be displayed in the **Output** window of Visual Studio Code. For more information about AL keyboard shortcuts, see [Keyboard shortcuts](devenv-keyboard-shortcuts.md).
 
 ## Code analyzers
-<!-- What are the analyzers? -->
-<!-- What are the different types of analyzers? -->
 A code analyzer is a library that builds on the compiler's functionality to offer enhanced analysis of the syntax and semantics of your code at build time.
 The AL Language extension for Visual Studio Code contains three analyzers:
 - **CodeCop** is an analyzer that enforces the official AL Coding Guidelines.
@@ -73,8 +71,8 @@ The analyzers that are shipped with the AL Language extension are available thro
 - `"${PerTenantExtensionCop}"`
 
 ## See also
-[Using the Code Analysis Tools with the Rule Set](devenv-using-code-analysis-tool-with-rule-set.md)  
-[Rule Set for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)  
+[Using the Code Analysis Tools with the Ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  
+[Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Development in AL](devenv-dev-overview.md)  
 [Debugging in AL](devenv-debugging.md)
 
