@@ -13,7 +13,7 @@ caps.latest.revision: 8
 ---
 
 # InvokeExtensibilityMethod Method
-Invokes an AL trigger on the [!INCLUDE[nav_server](../includes/nav_server_md.md)] on the page that contains the control add-in.  
+Invokes an AL trigger on the [!INCLUDE[d365_server_md](includes/d365_server_md.md)] on the page that contains the control add-in.  
   
 ## Method Signature  
  `void Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(name, arguments, skipIfBusy, callback)`  
