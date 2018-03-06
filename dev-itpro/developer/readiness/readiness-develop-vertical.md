@@ -35,5 +35,10 @@ To bring your solution to the cloud with Dynamics 365 Business Central, there ar
 - This Add-on app adds unique functionality to advanced project accounting and project management, which is useful for Project Managers, Project Employees and Project Accountants. 
 - This business management solution extends the powerful financial management functionality of Microsoft Dynamics 365 Business Central to provide Professional Services Automation features for service and project based businesses. Progressus Software’s functionality spans all the important processes – resource management, project management, sales and marketing, human capital management, and financial management – to provide unparalled insight and control of critical business functions for different project based roles. 
 
- 
+## See Also
+[Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
+[Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
+[Development of a Vertical Solution](readiness-develop-vertical.md)  
+[Development of a Horizontal Solution](readiness-develop-horizontal.md)  
+[Resell Different Solutions](readiness-reseller.md)  
 

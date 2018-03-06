@@ -97,3 +97,10 @@ Learn more about how to develop Add-on apps here:
 To learn more about Add-on apps in general, select the following links:  
 FAQ on add-on apps – needs to be build 
 Best Practices (Add-on apps) – needs to be build -->
+
+## See Also
+[Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
+[Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
+[Development of a Vertical Solution](readiness-develop-vertical.md)  
+[Development of a Horizontal Solution](readiness-develop-horizontal.md)  
+[Resell Different Solutions](readiness-reseller.md)  
