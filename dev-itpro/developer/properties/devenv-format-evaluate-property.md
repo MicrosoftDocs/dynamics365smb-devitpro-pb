@@ -41,7 +41,7 @@ Sets the data that is being imported or exported as XML data types or as the sta
   
  The following XML Data types require evaluation.  
   
-|**XML Data Type**|**Dynamics 365 for Financials Data Type**|  
+|**XML Data Type**|**Dynamics 365 Business Central Data Type**|  
 |-----------------------|------------------------------------------|  
 |Decimal<br /><br /> Float<br /><br /> Double|Decimal|  
 |Boolean|Boolean|  
