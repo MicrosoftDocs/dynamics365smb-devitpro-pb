@@ -23,19 +23,7 @@ http://dynamics.businesscentral.com/?company=CRONUS%20International%20Ltd.&repor
 This article describe how you can constuct URLs, which can be useful for including in other sources, such as emails or Word documents, or sending as hyperlinks to other users.
 
 > [!IMPORTANT]  
->  Certain data in the URL, such as company name, could be considered sensitive information. Use discretion if you distribute URLs that contain the company name, or if it is possible, exclude this information from the address.  
-
-<!--This topic includes the following sections:  
-
--   [Example](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Example)  
-
-- [Page Address Syntax](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Syntax)
-
-- [Building the Page Address](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Building)
-
-- [URL Parameters](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Paramters)
-
-- [Filtering Data on the Page](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Filtering)  -->
+>  Certain data in the URL, such as company name, could be considered sensitive information. Use discretion if you distribute URLs that contain the company name, or if it is possible, exclude this information from the address. 
  
 
 ##  <a name="Syntax"></a> URL Syntax  
