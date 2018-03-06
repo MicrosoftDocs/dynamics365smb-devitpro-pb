@@ -12,11 +12,11 @@ ms.author: jswymer
 ---
 
 # Viewing Table Data
-For developers, administrators, and support personnel, it can be useful to inspect table data in the tenant database, particularly when debugging or troubleshooting. To support this need, you can view table objects in the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] Web client.
+For developers, administrators, and support personnel, it can be useful to inspect table data in the tenant database, particularly when debugging or troubleshooting. To support this need, you can view table objects in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].
 
--   In a production environment, administrators and support can view a table directly from the Web client. 
+-   In a production environment, administrators and support can view a table directly from the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. 
 
--   In a development environment, in addition to viewing a table directly from the Web client, developers can view a table automatically when they publish/debug an AL project from Visual Studio Code. 
+-   In a development environment, in addition to viewing a table directly from the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], developers can view a table automatically when they publish/debug an AL project from Visual Studio Code. 
 
 > [!NOTE]
 > The table appears as read-only in the client, so modifications, insertions and deletions cannot be made.
