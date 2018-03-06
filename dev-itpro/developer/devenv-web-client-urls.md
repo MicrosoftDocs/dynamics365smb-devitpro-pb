@@ -13,27 +13,39 @@ author: jswymer
 There are several parameters that you can add to the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL to manipulate what is displayed in the client, such as opening a specific company, or targeting a specific page, report, or table. For example, the following URL displays page **9305 Sales Order List** for the [!INCLUDE[demoname](includes/demoname_md.md)] company:
 
 ```
-https://dynamics.businesscentral.com/?company=CRONUS%20International%20Ltd.&page=9305  
+https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page=9305  
 ```
 The following URL opens report **5 Receivables – Payables** for the same company:
 ```  
-http://dynamics.businesscentral.com/?company=CRONUS%20International%20Ltd.&report=5   
+http://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&report=5   
 ```  
 
 This article describe how you can constuct URLs, which can be useful for including in other sources, such as emails or Word documents, or sending as hyperlinks to other users.
 
 > [!IMPORTANT]  
->  Certain data in the URL, such as company name, could be considered sensitive information. Use discretion if you distribute URLs that contain the company name, or if it is possible, exclude this information from the address. 
+>  Certain data in the URL, such as filters, could be considered sensitive information. Use discretion if you distribute URLs that contain filters, or if it is possible, exclude this information from the address.  
+
+<!--This topic includes the following sections:  
+
+-   [Example](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Example)  
+
+- [Page Address Syntax](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Syntax)
+
+- [Building the Page Address](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Building)
+
+- [URL Parameters](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Paramters)
+
+- [Filtering Data on the Page](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Filtering)  -->
  
 
 ##  <a name="Syntax"></a> URL Syntax  
 The [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL has the following syntax:
 
 ```
-<http|https>://<domain>/?[company=<companyname>]&[page|report|table=<ID>]&[tenant=<tenantID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[redirect<0|1>]
+<https>://<domain>/?[company=<companyname>]&[page|report|table=<ID>]&[tenant=<tenantID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[redirect<0|1>]
 ```
 
-The URL consists of two parts, the domain part and the query string. The domain part includes the protocol (http or https) and the domain name. The query string part includes everything after `<domain>`. The query string determines what content to target.
+The URL consists of two parts, the domain part and the query string. The domain part includes the protocol (https) and the domain name. The query string part includes everything after `<domain>`. The query string determines what content to target.
 
 
 ### Syntax Key
@@ -54,27 +66,27 @@ Use the following guidelines to write URL syntax and create a URL:
 - You can place parameters in any order after `/?`. For example, the following URLs will yield the same results.
 
     ```
-    https://dynamics.businesscentral.com/?company=CRONUS%20International%20Ltd.&page=9305&mode=View
+    https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page=9305&mode=View
     ```
 
     ```
-    https://dynamics.businesscentral.com/?page=9305&mode=View&company=CRONUS%20International%20Ltd.
+    https://businesscentral.dynamics.com/?page=9305&mode=View&company=CRONUS%20International%20Ltd.
     ```
 
 -   Separate parameters after `/?` with the ampersand symbol (`&`).
 
--   Use `-` for any spaces in values and names.
+-   Use `%20` for any spaces in values, or similar escape sequences for other characters which cannot be used in URLs.
 
--   Enclose values in single quotation marks (`''`).
+-   Enclose values in single quotation marks (`''`) if they are unescaped.
 
 ##  <a name="Paramters"></a> URL Parameters
  The following table describes the parameters of the URL for displaying a page.
 
 |Parameter|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
 |---------------|---------------------------------------|
-|`http`&#124;`https`|Specifies the Internet protocol to use. Valid options are `http` and `https`.<br /><br /> The `https` protocol helps secure the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] data that is transmitted over the Internet.|
-|`domain`|Specifies the domain name for [!INCLUDE[d365fin_md](includes/d365fin_md.md)], for example, `dynamics.businesscentral.com`. |
-|`company`|The name of the company in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] for which you want to target.<br /><br /> If you only have one company, then you can omit this parameter.|
+|`https`|Specifies the Internet protocol to use. Only `https` is supported.|
+|`domain`|Specifies the domain name for [!INCLUDE[d365fin_md](includes/d365fin_md.md)], for example, `businesscentral.dynamics.com`. |
+|`company`|The name of the company in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] which you want to target.<br /><br /> If you only have one company, then you can omit this parameter.|
 |`page`|Opens a page object.|
 |`report`|Opens a report object.|
 |`table`|Opens a table object. This requires special permissions. For more information about opening a table, see [Viewing Table Data](devenv-view-table-data.md).|
@@ -87,7 +99,7 @@ Use the following guidelines to write URL syntax and create a URL:
 |`showribbon`|Specifies whether to show the Action bar on the specified page when it opens.<br /><br />If you want the Action bar, either omit this parameter or set its value to `1`, such as `showribbon=1`.<br /><br />If you do not want the Action bar, set the value to `0`, such as `showribbon=0`.<br /><br />**Note:** This parameter only works for pages of the list page type.|
 |`shownavigation`|Specifies whether to show the navigation bar when the specified page opens. <br /><br />If you want the navigation bar, either omit this parameter or set its value to `1`, such as `shownavigation=1`.<br /><br />If you do not want the navigation bar, set the value to `0`, such as `shownavigation=0`.<br /><br />**Note:** This parameter only works for pages of the list page type.|
 |`showuiparts`|Specifies whether to show UI parts when the specified page opens. The default value, if the parameter is not specified, is `1` which displays the UI parts. Use the value `0` to not show UI parts.<br /><br />If you want the UI parts, either omit this parameter or set its value to `1`, such as `showuiparts=1`.<br /><br />If you do not want the UI parts, set the value to `0`, such as `showuiparts=0`.<br /><br /> **Note:**  This parameter only works for pages of the list page type.|
-|`redirect`|Specifies whether users are presented with an option to download the [!INCLUDE[d365fin_uni_app](includes/d365_uni_app_md.md)] when they open the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] in a browser in order to improve the user experience.<br /><br />If you want to give users this option, either omit this parameter or set its value to `1`, such as `redirect=1`.<br /><br />If you do not want to give users this option, set the value to `0`, such as `redirect=0`.<br /><br />|
+|`redirect`|Specifies whether users are presented with an option to download the [!INCLUDE[d365fin_uni_app](includes/d365_uni_app_md.md)] when they open the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] in a mobile browser in order to improve the user experience.<br /><br />If you do not want to give users this option, set the value to `0`, such as `redirect=0`.<br /><br />|
 |`extension`|Specifies the unique identifier (ID) of an extension that is deployed on the tenant. This parameter is mainly used during the development of the specified extension in a non-production environment. When this parameter is set, only the specifed extension is available in the client; all other extensions are ignored and not visible. This enables you to isolate and focus on the behavior of the specified extension only.<br /><br />An extension ID is a 32-digit GUID, such as `72CC5E27-BD97-4271-AF55-F77E4471E493`. You set this parameter using the format `extension={GUID}`, for example:<br /><br />`&extension={72CC5E27-BD97-4271-AF55-F77E4471E493}`<br /><br />You can determine an extension ID by opening the extension in Visual Studio Code and looking in the app.json file, or by running the [Get-NAVAppManifest cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools/Get-NAVAppManifest) on the extension package.|
 
 
@@ -100,7 +112,7 @@ You can filter the data that is displayed in the page by using the filter parame
  The following address displays data in page 9305 only for the customer who has the **Sell-to Customer No.**=10000 and the **Location Code**=Blue.
 
 ```
-https://dynamics.businesscentral.com/?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'  
+https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'  
 ```
 
 ### Filter Syntax
