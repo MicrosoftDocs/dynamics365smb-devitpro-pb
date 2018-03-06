@@ -25,7 +25,7 @@ Sets the actual fields that are used in the corresponding index on SQL Server.
   
  The fields in the SQL index can:  
   
--   Differ in number from the fields defined in the key in Microsoft Dynamics NAV—there can be fewer fields or more fields.  
+-   Differ in number from the fields defined in the key in [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] — there can be fewer fields or more fields.  
   
 -   Be arranged in a different order.  
   

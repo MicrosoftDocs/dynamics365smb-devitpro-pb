@@ -56,4 +56,4 @@ The next step would be to subscribe to the event to handle to condition.  To see
 ## See Also  
  [Publishing Events](devenv-Publishing-Events.md)   
  [Subscribing to Events](devenv-Subscribing-to-Events.md)   
- [Events in Microsoft Dynamics NAV](devenv-events-in-al.md)   
+ [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   

@@ -168,6 +168,7 @@
 ## [Upgrading Extensions V2](developer/devenv-upgrading-extensions.md)
 ## [Signing an APP Package File](developer/devenv-sign-extension.md)
 ## [How to: Publish and Install an Extension V2](developer/devenv-how-publish-and-install-an-extension-v2.md)
+## [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ## [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ## [Checklist for Submitting Your App](developer/devenv-checklist-submission.md)
 ## [Events](developer/devenv-events-in-al.md)

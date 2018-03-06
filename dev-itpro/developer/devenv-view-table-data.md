@@ -12,14 +12,14 @@ ms.author: jswymer
 ---
 
 # Viewing Table Data
-For developers, administrators, and support personnel, it can be useful to view and inspect records and data in tables of the tenant database, particularly when debugging or troubleshooting. To support this need, you can view table objects in the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] Web client.
+For developers, administrators, and support personnel, it can be useful to inspect table data in the tenant database, particularly when debugging or troubleshooting. To support this need, you can view table objects in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].
 
--   In a production environment, administrators and support can view a table directly from the client in the browser. 
+-   In a production environment, administrators and support can view a table directly from the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. 
 
--   In a development environment, in addition to viewing a table directly from the client, developers can view a table automatically when they publish/debug an AL project from Visual Studio Code. 
+-   In a development environment, in addition to viewing a table directly from the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], developers can view a table automatically when they publish/debug an AL project from Visual Studio Code. 
 
 > [!NOTE]
-> The table appears as read-only in the client, so modifications cannot be made.
+> The table appears as read-only in the client, so modifications, insertions and deletions cannot be made.
 
 > [!IMPORTANT]
 > Data in the tables can be sensitive. Be sure to follow your organization's guidelines for handling such data. 
@@ -30,22 +30,24 @@ Whether viewing the table directly from the client or from Visual Studio Code, y
 -   Read permission on the table that you want to view.
 -   Execution permission (direct) on the System object **1350 Run table**.
 
+Any end-user that is assigned these permissions will be able to view that table in the browser.
+
 For information about assigning permissions, see [Manage Users and Permissions](https://docs.microsoft.com/en-US/dynamics365/financials/ui-how-users-permissions).
  
 ## View a table object directly from the client
-To view a table, you add the `table=<TableID>` to the client's address (URL), replacing `<TableID>` with the ID of the table that you want to see.
+To view a table, you add the `table=<TableID>` parameter to the client's address (URL), replacing `<TableID>` with the ID of the table that you want to view.
 
-For example, if the domain URL is `https://dynamiics.businesscentral.com`, then to view table **18 Customer**, you could use the following URL:
+For example, if your URL starts with `https://businesscentral.dynamics.com`, then to view table **18 Customer** in your current company, you could use the following URL:
 
 ```
-https://dynamics.businesscentral.com/?table=18
+https://businesscentral.dynamics.com/?table=18
 
 ```
 
 Or for a specific company, such as "CRONUS Inc.":
 
 ```
-https://dynamics.businesscentral.com/?company=CRONUS%20Inc.&table=18
+https://businesscentral.dynamics.com/?company=CRONUS%20Inc.&table=18
 
 ```
 
