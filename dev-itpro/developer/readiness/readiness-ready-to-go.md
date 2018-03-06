@@ -3,7 +3,7 @@ title: "Ready to Go"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/27/2018
+ms.date: 03/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,16 +14,13 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Ready to Go
-## What does the “Ready to Go” program offering entail  
-As a partner, you have a widespread set of opportunities available at your hand when using Dynamics 365 Business Central, as you can provide both apps and services to your customers. 
+## What does the **Ready to Go** program offering entail  
+To support you in bringing your offerings (that being either services or apps) to Dynamics 365 Business Central and Microsoft AppSource, we have created a program called **Ready to Go**, which offers you different types of support material that you can mix and match as you see fit.  
 
-In this relation you might wonder how you will be supported in bringing your offerings to Dynamics 365 Business Central and Microsoft AppSource. 
-
-The **Ready to Go** program offerings are here to support you through that journey.  
-- The **Ready to Go** program offering consists of: 
-- The **Ready to Go** documentation and Online Training Catalog for a self-serve approach. 
-- The **Ready to Go** trainings and workshops provided by ISV Development Centers and Master VARs when you want to be guided. 
-- The **Ready to Go** platform which provides you with the latest bits. 
+The **Ready to Go** program has three different types of offerings:  
+- You can service yourself by using the **Ready to Go** Documentation and Online Training Catalog. 
+- You can be guided by ISV Development Centers and Master ISVs by using the **Ready to Go** Trainings and Workshops. 
+- You can find the latest bits by using the **Ready to Go** platform (also called Microsoft Collaborate). 
  
 ## The "Ready to Go" documentation and Online Training Catalog 
 To help you bring your app to AppSource we have made different materials available for you to use. In the **Ready to Go** documentation you can find information on both, which offerings you can provide, descriptions of the different opportunities that you can choose from, both technical and business for resellers and app developers. The **Ready to Go** documentation also offers guidance on how to publish your apps.

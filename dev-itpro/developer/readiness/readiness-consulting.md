@@ -3,7 +3,7 @@ title: "Consulting"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/28/2018
+ms.date: 03/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,10 +24,10 @@ AppSource consulting services offerings are customer-specific engagements that h
 ## How can I, as a user, find the consulting services that my business requires? 
 As a customer, you can easily search for consulting services offerings for solutions based on Dynamics 365 Business Central, Power BI, and PowerApps that are available near you, review the offer, and request to be contacted by the partner that offers the services that your business require. 
 
-Learn more about which consulting services that currently are offered on AppSource [here](). 
+Learn more about which consulting services that currently are offered on AppSource [here](https://appsource.microsoft.com/en-us/marketplace/consulting-services?country=US&page=1). 
 
 ## How can I, as I Microsoft partner, benefit from offering using Microsoft AppSource consulting services? 
-Microsoft’s catalog of consulting services offerings for solutions is based on Dynamics 365, Power BI, and PowerApps to AppSource. As a Microsoft partner, AppSource Consulting Services enables you to provide your expertise to customers near you, as a fully working customized offering in one week or less. In so doing, this service allows you to showcase your proven expertise and offer pre-defined engagements that are fixed in scope. When bundling your quality consulting service offerings you get the benefit of going to market quickly, while being exposed to more Dynamics 365, business edition Trial Prospects and customers.
+Microsoft’s catalog of consulting services offerings for solutions is based on Dynamics 365, Power BI, and PowerApps to AppSource. As a Microsoft partner, AppSource Consulting Services enables you to provide your expertise to customers near you, as a fully working customized offering in one week or less. In so doing, this service allows you to showcase your proven expertise and offer pre-defined engagements that are fixed in scope. When bundling your quality consulting service offerings you get the benefit of going to market quickly, while being exposed to more Dynamics 365 trial prospects and customers.
 
 ## How can Microsoft partners list the consulting services they want to offer? 
 To help deliver repeatable and predictable outcomes, partners and consulting services offerings need to meet the following requirements to be listed on AppSource: 
@@ -35,7 +35,7 @@ To help deliver repeatable and predictable outcomes, partners and consulting ser
 - Services offered are customer-specific engagements that are conducted on-site, are fixed in scope, many are fixed price or free, have a fixed duration, and a clearly defined outcome. 
 - The types of engagements are standardized to help drive consistency and predictable outcomes. The engagements categories are: briefings, assessments, workshops, proof of concepts, and implementations 
  
-If you are interested in listing consulting services on AppSource you can find more information on requirements and how to get started [here](). 
+If you are interested in listing consulting services on AppSource you can find more information on requirements and how to get started [here](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf). 
 
 ## Where do I learn more? 
 To learn more about Microsoft AppSource consulting services offerings select the following links:  
