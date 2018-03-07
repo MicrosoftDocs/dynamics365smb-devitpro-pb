@@ -64,7 +64,6 @@ To ease your journey, from the initial idea submission to the final publication,
 
 - [How do I develop and publish a Connect app]().-->
 
-Learn more about each step [here](aka.ms/BusinessCentralConnectApps).
  
 ## Where do I learn more about Connect apps? 
 To learn more about how to develop Connect apps, select the following links:  
