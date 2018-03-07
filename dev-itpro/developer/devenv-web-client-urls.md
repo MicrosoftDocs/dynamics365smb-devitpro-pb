@@ -42,7 +42,7 @@ This article describe how you can constuct URLs, which can be useful for includi
 The [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL has the following syntax:
 
 ```
-<https>://<hostname>/?[company=<companyname>]&[page|report|table=<ID>]&[tenant=<tenantID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[redirect<0|1>]
+https://<hostname>[/<aad>][/sandbox]/?[company=<companyname>]&[page|report|table=<ID>]&[tenant=<tenantID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[redirect<0|1>]
 ```
 
 The URL consists of two parts, the hostname part and the query string. The hostname part includes the protocol (https) and the hostname. The query string part includes everything after `<hostname>`. The query string determines what content to target.
@@ -86,6 +86,8 @@ Use the following guidelines to write URL syntax and create a URL:
 |---------------|---------------------------------------|
 |`https`|Specifies the Internet protocol to use. Only `https` is supported.|
 |`hostname`|Specifies the hostname for [!INCLUDE[d365fin_md](includes/d365fin_md.md)], for example, `businesscentral.dynamics.com`. |
+|`aad`|Specifies the unique identifier for an Azure Active Directory (AAD) tenant. The value can be formatted as a GUID or domain name. This is useful to those who work across multiple AAD organizations, such as delegated administrators, support personnel or external accountants, because it allows explicitly targeting an AAD tenant. If this is omitted, you will be directed to the primary AAD tenant or the same AAD tenant that you are currently signed-in to.|
+|`sandbox`|Specifies that the URL should target the the Dynamics 365 Business Central sandbox environment instead of a production environment.|
 |`company`|The name of the company in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] which you want to target.<br /><br /> If you only have one company, then you can omit this parameter.|
 |`page`|Opens a page object.|
 |`report`|Opens a report object.|
