@@ -75,6 +75,5 @@ The following table describes the settings in the ```launch.json``` file. The `l
 ## The platform symbol file
 The platform symbol file contains all of the base app objects that your extension builds on. If the symbol file is not present, you will be prompted to download it. For more information about the platform symbol file, see [Symbols](devenv-symbols.md).
 
-## See Also
-[Differences in the Dynamics NAV Development Environments](devenv-differences.md)  
+## See Also 
 [AL Development Environment](devenv-reference-overview.md)
