@@ -1,9 +1,9 @@
 ---
-title: "Development of a Horizontal Capability"
+title: "Develop a Horizontal Capability"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 03/07/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,17 +13,18 @@ ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-# Development of a Horizontal Capability
-If you want to create an industry-specific solution, then there are several reasons why you would want to choose Dynamics 365 Business Central: 
+# Develop a Horizontal Capability
+If you like to enhance the capabilities of the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] Core capability and its experience, then there are several reasons why you would want to choose [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]: 
 
-- Enrich the Dynamics 365 Business Central experience 
-- Reach more customers by selling your app on Microsoft AppSource 
-- Dynamics 365 Business Central provides a proven ERP platform and application for your Add-on Apps. 
+- Enrich the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]  experience.
+- Reach more customers by selling your app on Microsoft AppSource.
+- [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] provides a proven ERP platform and application for your Add-on apps. 
  
-If you like to enhance the capabilities of the Dynamics 365 Business Central Core capability and its experience, then you take the following paths: 
+As an app builder, your paths forward can be:
 
-- Build an Add-on app, which enriches the Dynamics 365 Business Central experience. This type of app, which integrates into user experience of Dynamics 365 Business Central, allows you to build an interface based on how you want your data to flow between Dynamics 365 Business Central and your service offering. Read more [here](readiness-add-on-apps.md).
-- Learn more about who can help you build a Business Central offering in the material of the **Ready to Go** program. Read more [here](readiness-ready-to-go.md).
+1. Build an Add-on app, which enriches the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] experience. This type of app, which integrates into user experience of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], allows you to build an interface based on how you want your data to flow between [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and your service offering. Read more [here](readiness-add-on-apps.md).
+
+Learn more details on how you can build a Business Central offering in the **Ready to Go** program details. Read more [here](readiness-ready-to-go.md).
 
 ## See Also
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
