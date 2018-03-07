@@ -1,6 +1,6 @@
 ---
 title: Delete salesInvoiceLines | Microsoft Docs
-description: Deletes a sales invoice line object in Dynamics 365 for Financials.
+description: Deletes a sales invoice line object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Delete salesInvoiceLines
-Delete a sales invoice line object from Dynamics 365 for Financials.
+Delete a sales invoice line object from Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-DELETE /financials/companies({id})/salesInvoices({id})/salesInvoiceLines(documentId=({id}),sequence=({number}))
+DELETE /businesscentral/companies({id})/salesInvoices({id})/salesInvoiceLines(documentId=({id}),sequence=({number}))
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/salesInvoices({id})/salesInvoiceLines(documentId=({id}),sequence=({number}))
+DELETE https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/salesInvoices({id})/salesInvoiceLines(documentId=({id}),sequence=({number}))
 ```
 
 **Response** 

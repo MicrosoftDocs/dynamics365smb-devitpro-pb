@@ -1,6 +1,6 @@
 ---
 title: Create purchaseInvoices | Microsoft Docs
-description: Creates a purchase invoice object in Dynamics 365 for Financials.
+description: Creates a purchase invoice object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,12 +15,12 @@ ms.author: solsen
 ---
 
 # Create purchaseInvoices
-Create a purchase invoice report object in Dynamics 365 for Financials.
+Create a purchase invoice report object in Dynamics 365 Business Central.
 
 ## HTTP request
 
 ```
-POST /financials/companies({id})/purchaseInvoices
+POST /businesscentral/companies({id})/purchaseInvoices
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ If successful, this method returns ```201 Created``` response code and a **purch
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/purchaseInvoices
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/purchaseInvoices
 Content-type: application/json
 
 {

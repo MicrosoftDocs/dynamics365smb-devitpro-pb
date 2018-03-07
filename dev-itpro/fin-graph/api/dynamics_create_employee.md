@@ -1,6 +1,6 @@
 ---
 title: Create employees | Microsoft Docs
-description: Creates an employee object in Dynamics 365 for Financials.
+description: Creates an employee object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Create employees
-Create an employee object in Dynamics 365 for Financials.
+Create an employee object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/employees
+POST /businesscentral/companies({id})/employees
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and an **empl
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/employees
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/employees
 Content-type: application/json
 
 {
@@ -100,7 +100,7 @@ Content-type: application/json
   "terminationDate": "0001-01-01",
   "status": "Active",
   "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/employees({id})/picture",
+  "picture@odata.mediaReadLink": "https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/employees({id})/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z" 
 }
 

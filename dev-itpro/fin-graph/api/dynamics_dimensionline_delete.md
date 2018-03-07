@@ -1,6 +1,6 @@
 ---
 title: Delete dimensionLines | Microsoft Docs
-description: Deletes a dimension line object in Dynamics 365 for Financials.
+description: Deletes a dimension line object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Delete dimensionLines
-Delete a dimension line object from Dynamics 365 for Financials.
+Delete a dimension line object from Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-DELETE /financials/companies({id})/dimensionLines(parentId=({id}),id=({id}))
+DELETE /businesscentral/companies({id})/dimensionLines(parentId=({id}),id=({id}))
 ```
 
 ## Request headers
@@ -41,12 +41,12 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/dimensionLines(parentId=({id}),id=({id}))
+DELETE https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/dimensionLines(parentId=({id}),id=({id}))
 ```
 
-**Response** 
+**Response**
 
-Here is an example of the response. 
+Here is an example of the response.
 
 ```json
 HTTP/1.1 204 No Content

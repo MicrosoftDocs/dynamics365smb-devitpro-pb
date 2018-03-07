@@ -1,6 +1,6 @@
 ---
 title: Get companies | Microsoft Docs
-description: Gets a company object in Dynamics 365 for Financials.
+description: Gets a company object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -19,7 +19,7 @@ Retrieve the properties and relationships of a companies object for [!INCLUDE[d3
 
 ## HTTP request
 ```
-GET /financials/companies
+GET /businesscentral/companies
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and a **companie
 
 Here is an example of the request.
 ```json
-GET https://api.financials.dynamics.com/v1.0/api/beta/companies
+GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies
 ```
 
 **Response**
@@ -61,4 +61,4 @@ Here is an example of the response.
 
 
 ## See Also
-[Working with Dynamics 365 for Financials in Microsoft Graph](../api/dynamics_graph_reference.md)  
+[Working with Dynamics 365 Business Central in Microsoft Graph](../api/dynamics_graph_reference.md)  

@@ -54,9 +54,9 @@ Dynamics 365 Business Central offers many APIs that you can call from within you
 Prior to publishing your app you can try out and develop against the APIs using a trial tenant: 
 
 1. Sign up for [Dynamics 365 Business Central](). 
-2. When exploring and prototyping the APIs, the easiest is to use basic authentication with the tenant-specific endpoint https://api.financials.dynamics.com/v1.0/<tenant user domain url>/api/beta. 
+2. When exploring and prototyping the APIs, the easiest is to use basic authentication with the tenant-specific endpoint https://api.businesscentral.dynamics.com/v1.0/<tenant user domain url>/api/beta. 
     - To set up basic authentication, create a Web Service Access key in Dynamics 365. Log into your tenant, search for and open the Users page, and in the Web Service Access Key field, generate a key. Copy this, and use as the password for the username. 
-    - For developing and production, you must, however, use Azure Active Directory (AAD)/OAuth v2 authentication and the common endpoint https://api.financials.dynamics.com/v1.0/api/beta. 
+    - For developing and production, you must, however, use Azure Active Directory (AAD)/OAuth v2 authentication and the common endpoint https://api.businesscentral.dynamics.com/v1.0/api/beta. 
 3. Go to the documentation on the APIs, you can get our published preview [here](https://docs.microsoft.com/en-us/dynamics-nav/fin-graph/). 
 4. Download an API explorer, such as Postman or Fiddler to connect to and explore the API. See examples in below video. 
  

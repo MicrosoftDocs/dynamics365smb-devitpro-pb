@@ -1,6 +1,6 @@
 ---
 title: Get items | Microsoft Docs
-description: Gets an item object in Dynamics 365 for Financials.
+description: Gets an item object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -21,7 +21,7 @@ Retrieve the properties and relationships of an item object for [!INCLUDE[d365fi
 ## HTTP request
 
 ```
-GET /financials/companies({id})/items({id})
+GET /businesscentral/companies({id})/items({id})
 ```
 
 ## Request headers

@@ -1,6 +1,6 @@
 ---
 title: Update itemCategories | Microsoft Docs
-description: Updates an item category in Dynamics 365 for Financials.
+description: Updates an item category in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -20,7 +20,7 @@ Update the properties of an item category object for [!INCLUDE[d365fin_long_md](
 ## HTTP request
 
 ```
-PATCH /financials/companies({id})/itemCategories({id})
+PATCH /businesscentral/companies({id})/itemCategories({id})
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/itemCategories({id})
+PATCH https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/itemCategories({id})
 Content-type: application/json
 
 {

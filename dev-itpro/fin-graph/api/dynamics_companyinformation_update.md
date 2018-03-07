@@ -1,6 +1,6 @@
 ---
 title: Update companyInformation | Microsoft Docs
-description: Updates a company information object in Dynamics 365 for Financials.
+description: Updates a company information object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -20,7 +20,7 @@ Update the properties of a company information object for [!INCLUDE[d365fin_long
 
 ## HTTP request
 ```
-PATCH /financials/companies({id})/companyInformation({id})
+PATCH /businesscentral/companies({id})/companyInformation({id})
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns a ```200 OK``` response code and an updated a
 
 Here is an example of the request.
 ```json
-PATCH https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/companyInformation({id})
+PATCH https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/companyInformation({id})
 Content-type: application/json
 
 {
@@ -80,7 +80,7 @@ Content-type: application/json
   "currencyCode": "USD",
   "currentFiscalYearStartDate": "2018-01-01",
   "industry": "",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/companyInformation({id})/picture",
+  "picture@odata.mediaReadLink": "https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/companyInformation({id})/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
   }
 ```

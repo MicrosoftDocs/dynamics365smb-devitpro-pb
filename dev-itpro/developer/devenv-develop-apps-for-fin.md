@@ -48,7 +48,7 @@ It's easy to get started! Just spin up a developer sandbox environment by going 
 > Use **Ctrl+Shift+P** to clear the credentials cache if you want to deploy against a different environment.
 
 
-As this feature is still in preview you might run into unrecoverable issues from time to time. In these cases, use [Reset Sandbox](https://portal.financials.dynamics.com/reset?env=sandbox&redirectedFromSignup=false) to reset the sandbox and start from a clean environment.
+As this feature is still in preview you might run into unrecoverable issues from time to time. In these cases, use [Reset Sandbox](https://portal.businesscentral.dynamics.com/reset?env=sandbox&redirectedFromSignup=false) to reset the sandbox and start from a clean environment.
 
 Interested in an on-premise version? It's just as easy. Just sign up by following these steps.
 

@@ -1,6 +1,6 @@
 ---
 title: Create shipmentMethods | Microsoft Docs
-description: Creates a shipment method object in Dynamics 365 for Financials. 
+description: Creates a shipment method object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Create shipmentMethods
-Create a shipment method object in Dynamics 365 for Financials.
+Create a shipment method object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/shipmentMethods
+POST /businesscentral/companies({id})/shipmentMethods
 ```
 ## Optional query parameters
 
@@ -43,7 +43,7 @@ If successful, this method returns ```201 Created``` response code and a **shipm
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/shipmentMethods
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/shipmentMethods
 Content-type: application/json
 
 {

@@ -1,6 +1,6 @@
 ---
 title: Get shipmentMethods | Microsoft Docs
-description: Gets a shipment method object in Dynamics 365 for Financials. 
+description: Gets a shipment method object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a shipment method object for [!INCL
 ## HTTP request
 
 ```
-GET /financials/companies({id})/shipmentMethods({id})
+GET /businesscentral/companies({id})/shipmentMethods({id})
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and a **shipment
 
 Here is an example of the request.
 ```json
-GET https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/shipmentMethods({id})
+GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/shipmentMethods({id})
 ```
 
 **Response**
