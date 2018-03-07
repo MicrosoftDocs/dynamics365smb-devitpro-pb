@@ -171,6 +171,7 @@
 ## [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ## [Checklist for Submitting Your App](developer/devenv-checklist-submission.md)
 ## [Extending Application Areas](developer/devenv-extending-application-areas.md)
+## [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
 ## [Events](developer/devenv-events-in-al.md)
 ### [Publishing Events](developer/devenv-publishing-events.md)
 ### [Raising Events](developer/devenv-raising-events.md)

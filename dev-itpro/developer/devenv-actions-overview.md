@@ -123,6 +123,5 @@ end;
 ```  
 
 ## See Also  
-[Differences in the Dynamics NAV Development Environments](devenv-differences.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  

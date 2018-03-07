@@ -54,7 +54,6 @@ pageextension 50120 ExtendNavigationPane extends "Order Processor Role Center"
 You can also enable pages and reports to appear in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] search for a quick navigational support. For more information, see [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md).   
 
 ## See Also
-[Differences in the Dynamics NAV Development Environments](devenv-differences.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
