@@ -1,7 +1,7 @@
 ---
 title: "Extending item charges distribution methods"
-description: "Document the extension of item charges."
-author: Gert Robyns
+description: "How you extend item charges in Dynamics 365 Business Central."
+author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 06/03/2018
 ms.reviewer: na
@@ -18,11 +18,12 @@ caps.latest.revision: 1
 
 # Extending Item Charge Distribution Methods 
 To ensure correct valuation, your inventory items must carry any added costs, such as freight, physical handling, insurance, and transportation that you incur when purchasing or selling the items.
+
 Users can add these costs by adding a Charge (Item) line to the involved purchase or sales document. For more information, see [Use Item Charges to Account for Additional Trade Costs](-dynamics-nav-app/payables-how-assign-item-charges) in application help. 
 
-Item charges are distributed over other item lines in the document according to a distribution method. [!INCLUDE[navnow_md](includes/navnow_md.md)] offers four distribution methods out of the box: Equally, By Amount,By Weight and By Volume. This article explains how to remove or add item charge distribution methods. The article describes the method for purchases. The steps are similar for sales, except the events are located in codeunit 5807, Item Charge Assgnt. (Sales).
+Item charges are distributed over other item lines in the document according to a distribution method. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers four distribution methods out of the box: **Equally**, **By Amount**, **By Weight**, and **By Volume**. This article explains how to remove or add item charge distribution methods. The article describes the method for purchases. The steps are similar for sales, except the events are located in codeunit 5807, **Item Charge Assgnt. (Sales)**.
 
-To enable extension of item charges distribution methods, two events have been added to codeunit 5805, Item Charge Assgnt. (Purch.). The work consists of the following two tasks:
+To enable extension of item charges distribution methods, two events have been added to codeunit 5805, **Item Charge Assgnt. (Purch.)**. The work consists of the following two tasks:
 
 1. In the **OnBeforeShowSuggestItemChargeAssignStrMenu** event, you manipulate the options that are presented to users. You can remove, add, and change the order of the options.
 
@@ -43,9 +44,10 @@ The following procedures show how to extend the item charges distribution method
 The procedures are based on an example where the **By Fairy Dust** option is added to the string menu (STRMENU) and added to the CASE statement.
 
 > [!NOTE]  
-> to complete this example you will have to add a new field **Fairy Dust** to the Purchase Line table and other relevant tables and pages.
+> To complete this example you will have to add a new field **Fairy Dust** to the **Purchase Line** table and other relevant tables and pages.
 
 ## To add a new option to the item charges distribution methods
+
 Create a new codeunit and add an event subscriber to the **OnBeforeShowSuggestItemChargeAssignStrMenu** event.
 ...
 codeunit 50100 "Item Ch. Assign by Fairy Dust"
@@ -200,4 +202,5 @@ In the new codeunit, add a subscriber to the **OnAssignItemCharges** event.
 ...
 
 ## See Also
+[Extending Application Areas](devenv-extending-application-areas.md)  
  
