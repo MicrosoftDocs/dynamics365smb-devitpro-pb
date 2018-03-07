@@ -3,7 +3,7 @@ title: "Best Practices for AL code"
 description: "Best Practices for writing AL code."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/12/2018
+ms.date: 03/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
