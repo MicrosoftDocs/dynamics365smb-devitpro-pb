@@ -184,7 +184,7 @@
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
-## [Designing Role Centers]
+## Designing Role Centers
 ### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 ### [Headlines](developer/devenv-create-role-center-headline.md)
 ### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
