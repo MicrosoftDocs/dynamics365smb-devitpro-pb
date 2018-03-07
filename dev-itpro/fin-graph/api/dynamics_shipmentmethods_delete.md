@@ -1,6 +1,6 @@
 ---
 title: Delete shipmentMethods | Microsoft Docs
-description: Deletes a shipment method object in Dynamics 365 for Financials.
+description: Deletes a shipment method object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Delete shipmentMethods
-Delete a shipment method object from Dynamics 365 for Financials.
+Delete a shipment method object from Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-DELETE /financials/companies({id})/shipmentMethods({id})
+DELETE /businesscentral/companies({id})/shipmentMethods({id})
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```204,No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/shipmentMethods({id})
+DELETE https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/shipmentMethods({id})
 ```
 
 **Response** 

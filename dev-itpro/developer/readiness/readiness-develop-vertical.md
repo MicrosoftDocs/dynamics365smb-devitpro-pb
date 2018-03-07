@@ -3,7 +3,7 @@ title: "Development of a Vertical Solution"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/28/2018
+ms.date: 03/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,11 +21,24 @@ If you want to create an industry-specific solution, there are several reasons w
 
 To bring your solution to the cloud with Dynamics 365 Business Central, there are different considerations you must make: 
 
-- You can choose to extend and customize the existing Dynamics 365 Business Central application and enrich the end-user experience with your industry-specific functionality using the new and modern development tools and Extensions v2.0, which are made available with Dynamics 365 Business Central. Read more [here](readiness-add-on-apps.md).
-- If you have an existing vertical ISV solution built on Microsoft Dynamics NAV and if that solution has already gained considerable traction in the market, then you will have the option to either:   
-   - Refactor the solution to Extensions v2.0 using the modern development experience for Dynamics 365 Business Central. 
-   - Or, *lift, then shift* the existing solution onto Dynamics 365 Business Central. Where the *lift* part enables to you take your existing code and move it to the cloud with minimal modifications and the *shift* part related to the modernization of the application over time using the new and improved modern development tools.  
-       > [!NOTE] 
-       > This option is currently in preview and access is limited.  
+- You can choose to extend and customize the existing Dynamics 365 Business Central application and enrich the end-user experience with your industry-specific functionality using the new and modern development tools and Extensions v2.0, which are made available with Dynamics 365 Business Central. Read more [here](readiness-embed-apps.md).
+
+- Learn more about who can help you build a Business Central offering in the material of the **Ready to Go** program. Read more [here](readiness-ready-to-go.md).
+
+## Examples of vertical solutions 
+
+[Build Food](https://appsource.microsoft.com/en-us/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.industrybuilt%7CAID.cac55419-9441-4cbd-b8a3-1a7b3fcd8c0d%7CPAPPID.b3c7bfc9-8c72-45f5-a057-d051f1cd21c1) from Industry Built 
+- This Add-on app adds functionality in industry expertise, which is useful for streamlining processes and systems. 
+- Build food is designed for food manufactures that need special features to manage the unique demands of working with food. This solution extends the capabilities of Microsoft Dynamics 365 Business Central to include the features that these companies need most by turning an already robust financial management system into a complete formulation and batch management system that is both powerful and easy to use. 
  
-Learn more about the material in the Ready to Go program which can help you build a Business Central Offering. Read more [here](readiness-ready-to-go.md).
+[Progressus Software](https://appsource.microsoft.com/en-us/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.progressussoftware%7CAID.27c95c42-3724-4c23-bc71-1eccdf3de37c%7CPAPPID.760fc3a0-ddab-43aa-93a5-6430f34f1b76) from Plumbline Consulting LLC 
+- This Add-on app adds unique functionality to advanced project accounting and project management, which is useful for Project Managers, Project Employees and Project Accountants. 
+- This business management solution extends the powerful financial management functionality of Microsoft Dynamics 365 Business Central to provide Professional Services Automation features for service and project based businesses. Progressus Software’s functionality spans all the important processes – resource management, project management, sales and marketing, human capital management, and financial management – to provide unparalled insight and control of critical business functions for different project based roles. 
+
+## See Also
+[Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
+[Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
+[Development of a Vertical Solution](readiness-develop-vertical.md)  
+[Development of a Horizontal Solution](readiness-develop-horizontal.md)  
+[Resell Different Solutions](readiness-reseller.md)  
+

@@ -1,6 +1,6 @@
 ---
 title: Create irs1099Codes | Microsoft Docs
-description: Creates an IRS 1099 code object in Dynamics 365 for Financials.
+description: Creates an IRS 1099 code object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Create irs1099Codes
-Create an IRS 1099 code object in Dynamics 365 for Financials.
+Create an IRS 1099 code object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/irs1099Codes
+POST /businesscentral/companies({id})/irs1099Codes
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and an **irs1
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/irs1099Codes
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/irs1099Codes
 Content-type: application/json
 
 {

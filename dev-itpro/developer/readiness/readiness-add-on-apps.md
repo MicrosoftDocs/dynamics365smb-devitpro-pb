@@ -3,7 +3,7 @@ title: "Add-On Apps"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/20/2018
+ms.date: 03/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,27 +16,30 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Add-On Apps (Enriches User Experience and Functionality)
 
 ## What is an Add-on app? 
-An Add-on app extends the experience and the existing functionality of Dynamics 365 Business Central. Add-on apps can be used in multiple scenarios, whether the purpose is  to integrate to online services, add business functionality, or extend the user interface.  
+An Add-on app extends the experience and the existing functionality of Dynamics 365 Business Central. Add-on apps can be used in multiple scenarios, whether the purpose is to integrate to online services,making custom web services, adding business functionality, or extending the user interface.  
 
-Add-on apps are developed using Extensions v2.0
+Add-on apps are developed using Extensions version 2.0 and the modern development tools based on Visual Studio Code. Add-On apps can be published through Microsoft AppSource, as configurable pre-built apps that can be applied on individual customer environments in Dynamics 365 Business Central.  
+
 > [!NOTE]  
-> Extensions v1.0 are not supported for use with Dynamics 365 Business Central and the modern development tools based on Visual Studio Code. Add-on apps can be published through Microsoft AppSource, as configurable pre-built apps that can be applied on individual customer environments in Dynamics 365 Business Central.  
+> Extensions v1.0 are not supported for use with Dynamics 365 Business Central.
 
 <!-- INSERT VIDEO: 
 Objective: Introducing add on apps (modern tools, integration points, rich base, “easy to publish”) 
 New video that needs to be created -->
 
 ### Examples of some of the current Add-on apps on AppSource are:  
-- [Shopify Connector from Scapta]()  
+- [Shopify Connector from Scapta](https://appsource.microsoft.com/en-us/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview)  
     - This Add-on app adds Dynamics 365 Business Central to webshops, generally useful for companies selling items or services. 
     - Shopify is a complete e-commerce solution that allows companies to set up an online store to sell their goods combined with the business process flows of the cutting edge ERP-system Microsoft Dynamics 365 Business Central. 
  
-- [LS Express from LS Retail]()  
+- [LS Express from LS Retail](https://appsource.microsoft.com/en-us/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.ls_retail%7CAID.a45ac602-7269-4b3a-bff0-2dce0b3d0b16%7CPAPPID.2d47a6c4-91c0-4593-be25-858c0b36c599?tab=Overview)  
     - This Add-on app adds a point of sales cashier, useful for front office sales. 
     - LS Express is designed for small retail companies that need to maintain accurate financial accounts, manage large inventories and live up to the expectations of today's customers. LS Express is a complete online POS system, natively integrated with Microsoft Dynamics 365 Business Central.  
- 
-- [Accountant Portal from Microsoft]() <!--   [Symbol] Note: Waiting on input from Christian Baek -->  
+
+<!--
+- [Accountant Portal from Microsoft]() [Symbol] Note: Waiting on input from Christian Baek
     - This Add-on app adds a dashboard where accountants can manage their clients, useful for accountant firms. 
+-->
 
 ## How do I develop an Add-on app?
 To develop an Add-on app, we advise you to create a development environment for Dynamics 365 Business Central. Follow the process described in this video to set up your environment:
@@ -73,14 +76,14 @@ Press F5 to deploy and run the extension on your online sandbox tenant
 ## How do I get my Add-on app published in Microsoft AppSource?  
 To ease your journey, from the initial idea submission to the final publication, we have created a guide that you can lean on throughout the process of bringing your app to AppSource. The guide consists of a set of documents that outlines all the steps that must be taken to get your app to go live on the platform. You need to complete the steps in the given order to pass the different validation stages and getting your app published on AppSource. Learn more about each step here: 
 
-- [Getting the prerequisites in place]()  
+- [Setting up your accounts]()  
 - [Listing your app on AppSource]()
-- [Developing your app & passing validations]() 
+- [Developing your app and passing validations]() 
 - [Publishing your app]() 
  
-Learn more about each step here: [aka.ms/BusinessCentralApps]() or [aka.ms/BusinessCentralAddOnApps](). 
+Learn more about each step here: [aka.ms/BusinessCentralApps](http://aka.ms/BusinessCentralApps) or [aka.ms/BusinessCentralAddOnApps](http://aka.ms/BusinessCentralAddOnApps). 
 
-## What if another ISV want to use my App-on app in their solution? 
+## What if another ISV wants to use my App-on app in their solution? 
 Anyone can discover your Add-on app on AppSource. For other ISV’s to use your Add-on app as an integral part of their solution we suggest that you advertise ways for them to contact you and that you provide your own ways of sharing documentation and everything else necessary for the ISV to test and integrate your Add-on app into their solution. 
 
 ## Where do I learn more about Add-on apps? 
@@ -94,3 +97,10 @@ Learn more about how to develop Add-on apps here:
 To learn more about Add-on apps in general, select the following links:  
 FAQ on add-on apps – needs to be build 
 Best Practices (Add-on apps) – needs to be build -->
+
+## See Also
+[Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
+[Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
+[Development of a Vertical Solution](readiness-develop-vertical.md)  
+[Development of a Horizontal Solution](readiness-develop-horizontal.md)  
+[Resell Different Solutions](readiness-reseller.md)  

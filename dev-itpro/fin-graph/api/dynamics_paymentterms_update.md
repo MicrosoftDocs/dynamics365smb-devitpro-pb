@@ -1,6 +1,6 @@
 ---
 title: Update paymentTerms | Microsoft Docs
-description: Updates a payment term object in Dynamics 365 for Financials.
+description: Updates a payment term object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -19,7 +19,7 @@ Update the properties of a payment terms object for [!INCLUDE[d365fin_long_md](.
 
 ## HTTP request
 ```
-PATCH /financials/companies({id})/paymentTerms({id})
+PATCH /businesscentral/companies({id})/paymentTerms({id})
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/paymentTerms({id})
+PATCH https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/paymentTerms({id})
 Content-type: application/json
 
 {

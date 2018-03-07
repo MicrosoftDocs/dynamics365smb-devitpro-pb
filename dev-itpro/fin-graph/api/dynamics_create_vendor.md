@@ -1,6 +1,6 @@
 ---
 title: Create vendors | Microsoft Docs
-description: Creates a vendor object in Dynamics 365 for Financials. 
+description: Creates a vendor object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,11 +15,11 @@ ms.author: solsen
 ---
 
 # Create vendors
-Create a vendor object in Dynamics 365 for Financials.
+Create a vendor object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/vendors
+POST /businesscentral/companies({id})/vendors
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **vendo
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/vendors
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/vendors
 Content-type: application/json
 
 {

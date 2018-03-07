@@ -90,4 +90,4 @@ The next step would be to raise this event in the application. To see an example
 ## See Also  
  [Raising Events](devenv-Raising-Events.md)   
  [Subscribing to Events](devenv-Subscribing-to-Events.md)   
- [Events in Microsoft Dynamics NAV](devenv-Events-in-al.md)
+  [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   

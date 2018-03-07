@@ -1,6 +1,6 @@
 ---
 title: Get vendors | Microsoft Docs
-description: Gets a vendor object in Dynamics 365 for Financials. 
+description: Gets a vendor object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -21,7 +21,7 @@ Retrieve the properties and relationships of a vendor object for [!INCLUDE[d365f
 ## HTTP request
 
 ```
-GET /financials/companies({id})/vendors({id})
+GET /businesscentral/companies({id})/vendors({id})
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and a **vendors*
 
 Here is an example of the request.
 ```json
-GET https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/vendors({id})
+GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/vendors({id})
 ```
 
 **Response**

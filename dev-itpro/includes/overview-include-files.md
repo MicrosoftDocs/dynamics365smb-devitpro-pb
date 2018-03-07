@@ -28,7 +28,7 @@ This table contains the INCLUDE expressions associated with the content of the i
 |`[!INCLUDE[bp_tableoption_md](includes/bp_tableoption_md.md)]`|Option|
 |`[!INCLUDE[bp_windownoneditable_md](includes/bp_windownoneditable_md.md)]`|You cannot change the contents of this window.|
 |`[!INCLUDE[crm_md](includes/crm_md.md)]`|Microsoft Dynamics 365 for Sales|
-|`[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]`|Dynamics 365 for Financials|
+|`[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]`|Dynamics 365 Business Central|
 |`[!INCLUDE[d365fin_md](includes/d365fin_md.md)]`|Financials|
 |`[!INCLUDE[demo_md](includes/demo_md.md)]`|CRONUS|
 |`[!INCLUDE[demolong_md](includes/demolong_md.md)]`|CRONUS Danmark A/S demonstration database|

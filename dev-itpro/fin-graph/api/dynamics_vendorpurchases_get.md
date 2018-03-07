@@ -1,6 +1,6 @@
 ---
 title: Get vendorPurchases | Microsoft Docs
-description: Gets a vendor purchase object in Dynamics 365 for Financials. 
+description: Gets a vendor purchase object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -19,7 +19,7 @@ Retrieve the properties and relationships of a vendor purchases report object fo
 
 ## HTTP request
 ```
-GET /financials/companies({id})/vendorPurchases
+GET /businesscentral/companies({id})/vendorPurchases
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and a **vendorPu
 
 Here is an example of the request.
 ```json
-GET https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/vendorPurchases
+GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/vendorPurchases
 ```
 
 **Response**

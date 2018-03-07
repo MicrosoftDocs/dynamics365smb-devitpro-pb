@@ -1,6 +1,6 @@
 ---
 title: Update customerPaymentsJournals | Microsoft Docs
-description: Updates a customer payments journal in Dynamics 365 for Financials.
+description: Updates a customer payments journal in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -20,7 +20,7 @@ Update the properties of a customer payments journal object for [!INCLUDE[d365fi
 ## HTTP request
 
 ```
-PATCH /financials/companies({id})/customerPaymentsJournals({id})
+PATCH /businesscentral/companies({id})/customerPaymentsJournals({id})
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 Here is an example of the request.
 
 ```json
-PATCH https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/customerPaymentsJournals({id})
+PATCH https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/customerPaymentsJournals({id})
 Content-type: application/json
 
 {

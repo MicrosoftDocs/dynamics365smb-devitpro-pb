@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 
 A multilanguage version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not the same as a localized version.  
   
--   A *localized* version is a version that is adapted to a local market. All text that is displayed to the user is translated into the local language, and all functional areas are adapted to the requirements of the local market. For example, the Canadian version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)] has additional local functionality that applies to the Canadian market.  
+-   A *localized* version is a version that is adapted to a local market. All text that is displayed to the user is translated into the local language, and all functional areas are adapted to the requirements of the local market. For example, the Canadian version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] has additional local functionality that applies to the Canadian market.  
   
 -   A *multilanguage* version is a localized version that you can run in different languages, but all local functionality remains the same. For example, you can run the Canadian version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] in both English and French, but it is still the Canadian localized version. It does not contain the same local functionality as the French localized version.  
   

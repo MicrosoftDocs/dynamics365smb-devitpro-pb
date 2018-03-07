@@ -90,4 +90,3 @@ MESSAGE(Text000 + Text001 + '%1\' +Text002 + '%2', Number, Text);
   
 ## See Also  
  [Dialog Data Type](../datatypes/devenv-Dialog-Data-Type.md)   
- <!--NAV [Configuring NAS Services](Configuring-NAS-Services.md)-->

@@ -1,6 +1,6 @@
 ---
 title: Update salesOrders | Microsoft Docs
-description: Updates a sales order object in Dynamics 365 for Financials.
+description: Updates a sales order object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -20,7 +20,7 @@ Update the properties of a sales orders object for [!INCLUDE[d365fin_long_md](..
 ## HTTP request
 
 ```
-PATCH /financials/companies({id})/salesOrders({id})
+PATCH /businesscentral/companies({id})/salesOrders({id})
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/salesOrders({id})
+PATCH https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/salesOrders({id})
 Content-type: application/json
 
 {

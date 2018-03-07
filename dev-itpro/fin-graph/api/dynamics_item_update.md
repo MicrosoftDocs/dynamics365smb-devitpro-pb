@@ -1,6 +1,6 @@
 ---
 title: Update items | Microsoft Docs
-description: Updates an item object in Dynamics 365 for Financials.
+description: Updates an item object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -19,7 +19,7 @@ Update the properties of an item object for [!INCLUDE[d365fin_long_md](../../inc
 
 ## HTTP request
 ```
-PATCH /financials/companies({id})/items({id})
+PATCH /businesscentral/companies({id})/items({id})
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/items({id})
+PATCH https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/items({id})
 Content-type: application/json
 
 {

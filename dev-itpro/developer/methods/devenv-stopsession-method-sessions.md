@@ -31,11 +31,6 @@ Stops a [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] session.
 
  The session can be any of the following:  
 
-<!--
--   [!INCLUDE[nav_windows](../includes/nav_windows_md.md)] session  
-
--   [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] session  
--->
 -   [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] client session  
 
 -   NAS services session  

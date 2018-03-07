@@ -12,7 +12,7 @@ caps.latest.revision: 6
 manager: edupont
 ---
 # RunOnClient Property
-Sets whether a .NET object that is defined by a variable is run on the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)] or [!INCLUDE[nav_server](../includes/nav_server_md.md)].  
+Sets whether a .NET object that is defined by a variable is run on the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)] or [!INCLUDE[d365_server_md](includes/d365_server_md.md)].  
 
 ## Applies To  
  Variables of the **DotNet** data type.  

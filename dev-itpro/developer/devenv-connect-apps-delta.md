@@ -1,5 +1,5 @@
 ---
-title: "Using Delta Links When Developing Connect Apps"
+title: "Using Delta Links With APIs"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
@@ -13,7 +13,7 @@ ms.prod: "dynamics-nav-2018"
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# Using Delta Links When Developing Connect Apps
+# Using Delta Links With APIs
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
 The user can obtain a delta link from each entity API in the library by including the `odata.track-changes` preference in the header of the request. The response to the GET request returns a deltaLink parameter, providing an opaque URL.
@@ -34,13 +34,13 @@ In the following example, the specified changes have occurred since the initial 
 When the API consumer calls a GET using the `@odata.deltaLink`, as shown below:  
 
 ```json
-GET https://api.financials.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=
+GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=
 ```
 The response would return with the specified changes in the result, see the following example:  
 
 ```json
 {
-    "@odata.context": "https://api.financials.dynamics.com/v1.0/api/beta/$metadata#companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=",
+    "@odata.context": "https://api.businesscentral.dynamics.com/v1.0/api/beta/$metadata#companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=",
     "value": [
         {
             "@odata.etag": "W/\"JzI4O0VnQUFBQUo3QlRVQU1BQXdBREFBTUFBQUFBQUE0OzQzMDgwOyc=\"",
@@ -51,7 +51,7 @@ The response would return with the specified changes in the result, see the foll
             "balance": 8836.8
         },
         {
-            “@odata.context”: “https://api.financials.dynamics.com/v1.0/api/beta/$metadata#companies(2d117882-81a5-489e-b956-613205b06c72)/customers/$deletedEntity”,
+            “@odata.context”: “https://api.businesscentral.dynamics.com/v1.0/api/beta/$metadata#companies(2d117882-81a5-489e-b956-613205b06c72)/customers/$deletedEntity”,
             "id": "e6b1c1f2-0694-46c0-96ec-6283627b1251",
             “reason": “changed”
         },
@@ -64,7 +64,7 @@ The response would return with the specified changes in the result, see the foll
             "balance": 4316.92
         }
     ],
-     "@odata.deltaLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ="
+     "@odata.deltaLink": "https://api.businesscentral.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ="
 }
 ```
 
@@ -76,4 +76,7 @@ The response would return with the specified changes in the result, see the foll
 + The client must use the deltaLink URL as provided. The URL must not be modified either by parsing it or adding any additional query string parameters including changing the filters. The deltaLink and token are specific to the original query provided.
 
 ## See Also
+[Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
+[Using Filtering With APIs](devenv-connect-apps-filtering.md)  
+
 

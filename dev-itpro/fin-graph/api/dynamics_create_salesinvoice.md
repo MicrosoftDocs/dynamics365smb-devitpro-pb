@@ -1,6 +1,6 @@
 ---
 title: Create salesInvoices | Microsoft Docs
-description: Create a sales invoice object in Dynamics 365 for Financials. 
+description: Create a sales invoice object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -15,12 +15,12 @@ ms.author: solsen
 ---
 
 # Create salesInvoices
-Create a sales invoice object in Dynamics 365 for Financials.
+Create a sales invoice object in Dynamics 365 Business Central.
 
 ## HTTP request
 
 ```
-POST /financials/companies({id})/salesInvoices
+POST /businesscentral/companies({id})/salesInvoices
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ If successful, this method returns ```201 Created``` response code and a **sales
 Here is an example of a request.
 
 ```json
-POST https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/salesInvoices
+POST https://api.businesscentral.dynamics.com/v1.0/api/beta/companies({id})/salesInvoices
 Content-type: application/json
 
 {
