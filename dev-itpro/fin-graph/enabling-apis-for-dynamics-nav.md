@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-# Enabling the APIs for Microsoft Dynamics NAV
+# Enabling the APIs for Dynamics 365 Business Central
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] exposes an API that makes it possible to integrate with other services. To enable integration with these APIs, you must go through a few steps to enable the access for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. For this you need access to [!INCLUDE[navnow](../includes/navnow_md.md)].
 
 ## Enable access to the APIs
