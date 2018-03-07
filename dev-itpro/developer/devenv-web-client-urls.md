@@ -92,7 +92,7 @@ Use the following guidelines to write URL syntax and create a URL:
 |---------------|---------------------------------------|
 |`https`|Specifies the Internet protocol to use. Only `https` is supported.|
 |`hostname`|Specifies the hostname for [!INCLUDE[d365fin_md](includes/d365fin_md.md)], for example, `businesscentral.dynamics.com`. |
-|`aadtenantid`|Specifies the unique identifier for an Azure Active Directory (AAD) tenant. The value can be formatted as a GUID or domain name. This is useful to those who work across multiple AAD organizations, such as delegated administrators, support personnel or external accountants, because it allows explicitly targeting an AAD tenant. If this is omitted, you will be directed to the primary AAD tenant or the same AAD tenant that you are currently signed-in to.|
+|`aadtenantid`|Specifies the unique identifier for an Azure Active Directory (AAD) tenant. The value can be formatted as a GUID or domain name. This is useful to those who work across multiple AAD organizations, such as delegated administrators, support personnel or external accountants, because it allows explicitly targeting an AAD tenant. If this is omitted, you will be directed to the primary AAD tenant or the same AAD tenant that you are currently signed in to.|
 |`sandbox`|Specifies that the URL should target the the Dynamics 365 Business Central sandbox environment instead of a production environment.|
 |`company`|The name of the company in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] which you want to target.<br /><br /> If you only have one company, then you can omit this parameter.|
 |`page`|Opens a page object.|
