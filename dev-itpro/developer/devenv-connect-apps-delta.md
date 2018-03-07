@@ -78,5 +78,6 @@ The response would return with the specified changes in the result, see the foll
 ## See Also
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
+[Tips for working with the APIs](devenv-connect-apps-tips.md)  
 
 

@@ -21,5 +21,6 @@ ms.prod: "dynamics-nav-2018"
 
 ## See Also
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
-[Using Deltas With APIs](devenv-connect-apps-delta.md)  
+[Using Deltas With APIs](devenv-connect-apps-delta.md)   
+[Tips for working with the APIs](devenv-connect-apps-tips.md)  
 
