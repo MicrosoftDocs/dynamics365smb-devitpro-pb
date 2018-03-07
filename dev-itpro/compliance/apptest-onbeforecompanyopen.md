@@ -3,7 +3,7 @@ title: "Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/09/2017
+ms.date: 03/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,3 +23,7 @@ To improve the login time for [!INCLUDE[d365fin_long_md](../includes/d365fin_lon
 
 *Task Scheduler Example:*
 - TASKSCHEDULER.CREATETASK(CODEUNIT::"Job Queue User Handler",0,TRUE,COMPANYNAME,CURRENTDATETIME + 15000); // Add 15s
+
+## See Also
+[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
+[Rules and Guidelines for AL Code](apptest-overview.md)  

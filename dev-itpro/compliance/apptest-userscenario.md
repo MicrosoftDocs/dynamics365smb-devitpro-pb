@@ -3,7 +3,7 @@ title: "User Scenario Documentation"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/09/2017
+ms.date: 03/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,3 +22,7 @@ One of the keys to a successful extension validation is a document that guides t
 - Use screenshots as much as possible. They provide a good picture of what you want the user to accomplish
 - Provide all prerequisite and setup steps required for successful test scenario completion
 - Include the most important functionality scenarios of your extension. We aren’t looking to test your entire extension, but we do want to ensure we are validating the most used aspects of your app
+
+## See Also
+[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
+[Rules and Guidelines for AL Code](apptest-overview.md)  
