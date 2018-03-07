@@ -1,4 +1,4 @@
-# [Welcome to the Developer and IT-Pro Help for Microsoft Dynamics NAV](index.md)
+# [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
 <!--
 ## [Getting Started](Getting-Started.md)
 ## [Touring the RoleTailored Client for Developers](Touring-the-RoleTailored-Client-for-Developers.md)
