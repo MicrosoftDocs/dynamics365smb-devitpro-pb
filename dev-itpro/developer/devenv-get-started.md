@@ -72,7 +72,6 @@ The symbol file contains metadata of the application. This is what your extensio
 ## Installing and publishing an extension
 To make your extension available to users, the package must be published to a specific Microsoft Dynamics 365 Business Central Server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension V2](devenv-how-publish-and-install-an-extension-v2.md). 
 
-## See Also
-[Differences in the Dynamics NAV Development Environments](devenv-differences.md)  
+## See Also 
 [AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  

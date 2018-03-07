@@ -50,7 +50,6 @@ When you set the schema update mode to **Recreate**, all the tables and table ex
 
 
 ## See Also
-[Differences in the Dynamics NAV Development Environments](devenv-differences.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Upgrading Extensions](devenv-upgrading-extensions.md)  
 [Debugging](devenv-debugging.md)  

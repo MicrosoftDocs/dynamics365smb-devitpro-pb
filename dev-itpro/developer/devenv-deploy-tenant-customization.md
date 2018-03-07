@@ -38,8 +38,10 @@ The extension you are deploying could be the initial release of the customizatio
 5.	Select if you want to deploy for the current version (most common) or next version. Select the language for the deployment.
 6.	Choose the **Deploy** button. 
 7.	The extension will be deployed in the background.  
-    To check the status of the deployment, choose **Upload Status** and then view the status of the extension deployment. Select the row to see additional details. 
-9.	When the extension has been successfully deployed, you will see the extension in the list of installed extensions.
+    To check the status of the deployment, choose **Upload Status** and then view the status of the extension deployment. Select the row to see additional details.  
+    In the deployment status details there is a **Refresh** button in the actions you must press to retrieve the most recent status and details.
+9.	When the extension has been successfully deployed, choose the **Refresh** button to see the new extension in the list of installed extensions.
+
 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  

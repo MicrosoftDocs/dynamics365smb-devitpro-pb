@@ -3,7 +3,7 @@ title: "Testing your Extension"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/09/2017
+ms.date: 03/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,3 +25,7 @@ Several key things lead to your extension passing the Microsoft validation proce
 - Walk through the setup and usage of your extension to verify it works as expected (**remember to test as a user that doesn’t have SUPER permissions**).
 - Check that you can uninstall and unpublish your extension without any errors.
 - Make sure you can republish and reinstall your extension without any errors.
+
+## See Also
+[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
+[Rules and Guidelines for AL Code](apptest-overview.md)  
