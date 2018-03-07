@@ -3,7 +3,7 @@ title: "Ready to Go"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 03/07/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,17 +52,14 @@ To get access to the **Ready to Go** platform, you need to go through these step
 
 1. Register on  http://aka.ms/Collaborate using your AAD Global Admin account. 
 2. Contact us, Once registered on Microsoft Collaborate. Your company’s Azure Active Directory (AAD) global administrator should contact us at Dyn365BEP@microsoft.com to complete the on-boarding.  When contacting us, please provide following information:  
+
     |Publisher display name|Name|Email|Role |
     |----------------------|----|-----|-----|
     |Chosen during registration, should be the same for all users|User 1|Email 1|Power user (can access content and add new users to engagements)| 
     ||User 2|Email 2 |Participant (can access content)| 
-    ||Etc.|Etc.|Power user|
+    ||Etc.|Etc.|Power user| 
+
 3. The **Ready to Go** team will notify you and confirm your registration.
-
-
-
-## The Ready to Go Platform 
-A place where you can find current & upcoming builds of Dynamics 365 Business Central which helps you with your App development and testing. It also holds a way to provide feedback to the Microsoft engineers working on Dynamics 365 Business Central.
 
 If you have questions or feedback about the “Ready to Go”offering, you can contact us at Dyn365BEP@microsoft.com. 
 
