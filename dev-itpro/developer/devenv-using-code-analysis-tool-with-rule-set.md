@@ -1,5 +1,5 @@
 ---
-title: "Using the Code Analysis Tools"
+title: "Using the Code Analysis Tools with the Ruleset"
 description: "Configuring and using a custom ruleset on an AL project."
 author: SusanneWindfeldPedersen
 ms.custom: na
