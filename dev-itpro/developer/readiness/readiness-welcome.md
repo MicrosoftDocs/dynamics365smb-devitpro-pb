@@ -40,6 +40,6 @@ In order to inform you in the best possible way, we have organized the following
 |------------------------|
 |[**3rd party online services**](readiness-thirdparty-solution.md) </br>An online service that you can connect and integrate with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] .|
 |[**Development of a vertical solution**](readiness-develop-vertical.md) </br>Create an app that is specialized within a specific industry.|
-|[**Add development of a horizontal solution**](readiness-develop-horizontal.md)</br>Extend the experience and capability of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] by creating an Add-On app.|
+|[**Add development of a horizontal solution**](readiness-develop-horizontal.md)</br>Extend the experience and capability of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] by creating an add-on app.|
 |[**Dynamics 365 Reseller (VARs)**](readiness-reseller.md)</br>Resell and adjust [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] to the individual needs of your customers.|
 
