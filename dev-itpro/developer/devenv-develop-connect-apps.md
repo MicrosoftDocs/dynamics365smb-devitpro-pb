@@ -16,11 +16,13 @@ ms.prod: "dynamics-nav-2018"
 # Getting Started Developing Connect Apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
 A Connect app establishes a point-to-point connection between [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and a 3rd party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. In the following section you can read about how you get started exploring the available APIs for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
-1. To explore and develop against APIs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you must first sign up for a trial tenant. Sign up for [Dynamics 365 Business Central]().  
+To explore and develop against APIs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you must first sign up for a trial tenant and then you have to connect and authenticate. To do that, follow the steps below.
+
+1. Sign up for [Dynamics 365 Business Central]().  
 When you have your tenant, you can sign into the UI to play with the product, as well as explore the APIs []()
 2. There are two different ways to connect to and authenticate against the APIs.  
-- Use Azure Active Directory (AAD) based authentication against the common API endpoint: https://api.businesscentral.dynamics.com/v1.0/api/beta
-- Use basic authentication with username and password (a so-called web service access key) against the common API endpoint that includes the user domain, for example https://api.businesscentral.dynamics.com/v1.0/<tenant user domain URL>/api/beta.
+    - Use Azure Active Directory (AAD) based authentication against the common API endpoint: https://api.businesscentral.dynamics.com/v1.0/api/beta
+    - Use basic authentication with username and password (a so-called web service access key) against the common API endpoint that includes the user domain, for example https://api.businesscentral.dynamics.com/v1.0/<tenant user domain URL>/api/beta.
 
 <!--
 For more information, see [../fin-graph/endpoints-apis-for-dynamics.md]. -->
