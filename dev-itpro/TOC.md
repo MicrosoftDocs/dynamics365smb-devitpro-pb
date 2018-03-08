@@ -198,6 +198,7 @@
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ## [Classifying Data](developer/devenv-classifying-data.md)
 ## [View Table Data](developer/devenv-view-table-data.md)
+## [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
 ## [AL Development Environment](developer/devenv-reference-overview.md)
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
