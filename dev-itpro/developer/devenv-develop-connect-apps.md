@@ -41,15 +41,15 @@ Now that we have the username and password, we can connect and authenticate. You
 In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. 
 
 1.	First, in Postman, set up a `GET` call to the base API URL.  
-    When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
+    - When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
 
-    Since we are using basic authentication, we need to include the users domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v1.0/myusersdomain.com/api/beta`
+    - Since we are using basic authentication, we need to include the users domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v1.0/myusersdomain.com/api/beta`
     
-    On the **Authorization** tab in Postman select **Basic Auth** in the **Type** and provide the Username and **Web Service Access Key** from above as password. 
+2. On the **Authorization** tab in Postman select **Basic Auth** in the **Type** and provide the Username and **Web Service Access Key** from above as password. 
+
+3. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
     
-    Then hit **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
-    
-2.	Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:
+Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:
 
 ``` 
 {
