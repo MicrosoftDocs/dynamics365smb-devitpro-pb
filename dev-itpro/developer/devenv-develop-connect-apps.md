@@ -45,25 +45,25 @@ In this `Hello World` example, we are going over the basic steps required to ret
 
 3. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
     
-Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:
+Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
 
-``` 
-{
-    "@odata.context": "<endpoint>/$metadata#companies",
-    "value": [
-        {
-            "id": "bb6d48b6-c7b2-4a38-9a93-ad5506407f12",
-            "systemVersion": "18453",
-            "name": "CRONUS USA, Inc.",
-            "displayName": "CRONUS USA, Inc.",
-            "businessProfileId": ""
-        }
-    ]
-}
-```
+    ``` 
+    {
+        "@odata.context": "<endpoint>/$metadata#companies",
+        "value": [
+            {
+                "id": "bb6d48b6-c7b2-4a38-9a93-ad5506407f12",
+                "systemVersion": "18453",
+                "name": "CRONUS USA, Inc.",
+                "displayName": "CRONUS USA, Inc.",
+                "businessProfileId": ""
+            }
+        ]
+    }
+    ```
 
 
-The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in () after the API endpoint. For example, to GET the “CRONUS USA, Inc.” company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
+The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis () after the API endpoint. For example, to GET the “CRONUS USA, Inc.” company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
 
 All resources, such as customers, invoices etc, live in the context of a parent company or legal entity, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore it is a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the “CRONUS USA, Inc.” company, we must call a GET on the URL `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`.
 
