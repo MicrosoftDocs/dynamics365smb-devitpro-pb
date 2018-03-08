@@ -81,7 +81,7 @@ Changing the contents of the ruleset file will not be detected by the AL Languag
 - In the project settings, change the **al.ruleSetPath** setting to an invalid path. Save the settings file, change back the setting, and save it.
 
 ## See also
-[ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)    
+[Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)    
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Development in AL](devenv-dev-overview.md)  
 [Debugging in AL](devenv-debugging.md)
