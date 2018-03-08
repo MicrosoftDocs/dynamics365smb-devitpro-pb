@@ -1,5 +1,5 @@
 ---
-title: "Develop a Horizontal Capability"
+title: "Develop a Horizontal Solution"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -13,7 +13,7 @@ ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-# Develop a Horizontal Capability
+# Develop a Horizontal Solution
 If you like to enhance the capabilities of the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] Core capability and its experience, then there are several reasons why you would want to choose [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]: 
 
 - Enrich the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]  experience.
