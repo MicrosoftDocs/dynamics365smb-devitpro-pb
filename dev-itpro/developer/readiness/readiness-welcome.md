@@ -19,7 +19,7 @@ Microsoft [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is a busin
 <!-- Insert video:
 General introduction video (type of apps, introduction to Business Central and AppsSource, introduction of different swimming-lanes).
 -->
- 
+
 ## Go to market with Microsoft AppSource
 AppSource is Microsoft’s marketplace for your [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] offerings and there are several reasons why going to market with Microsoft AppSource is a great idea:
 
