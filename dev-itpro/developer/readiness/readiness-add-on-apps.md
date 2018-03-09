@@ -33,11 +33,6 @@ New video that needs to be created -->
     - This add-on app adds a point of sales cashier, useful for front office sales. 
     - LS Express is designed for small retail companies that need to maintain accurate financial accounts, manage large inventories and live up to the expectations of today's customers. LS Express is a complete online POS system, natively integrated with Microsoft [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].   
 
-<!--
-- [Accountant Portal from Microsoft]() [Symbol] Note: Waiting on input from Christian Baek
-    - This Add-on app adds a dashboard where accountants can manage their clients, useful for accountant firms. 
--->
-
 ## How do I develop an add-on app?
 <!-- To develop an Add-on app, we advise you to create a development environment for Dynamics 365 Business Central. Follow the process described in this video to set up your environment:
 
@@ -45,7 +40,7 @@ INSERT VIDEO:
 Objective: Setting up a Dynamics 365 Business Central Development Environment 
 New video that needs to be created -->
  
-Add-on apps are created using the AL language in Visual Studio Code, which needs to be installed locally or on a Virtual Machine. The source-code for your add-on app is file based, and we recommend that you setup a repository in a source code management system like GitHub. 
+Add-on apps are created using the AL language in Visual Studio Code, which needs to be installed locally or on a Virtual Machine. The source-code for your add-on app is file based, and we recommend that you setup a repository in a source code management system like GitHub. For more information on getting started with AL, see [Development in AL](https://docs.microsoft.com/da-dk/dynamics-nav/developer/devenv-dev-overview).
 
 <!-- 
 To ease the development phase of Add-on aps we have created a video series to help you each step of the way. Learn more by consuming the content in the below video series: 
@@ -66,22 +61,6 @@ To ease your journey, from the initial idea submission to the final publication,
 - [Listing your app on AppSource]()
 - [Developing your app and passing validations]() 
 - [Publishing your app]() 
-
-<!-- 
-## What if another ISV wants to use my App-on app in their solution? 
-Anyone can discover your Add-on app on AppSource. For other ISV’s to use your Add-on app as an integral part of their solution we suggest that you advertise ways for them to contact you and that you provide your own ways of sharing documentation and everything else necessary for the ISV to test and integrate your Add-on app into their solution. 
-
-## Where do I learn more about Add-on apps? 
-Learn more about how to develop Add-on apps here:  
-- [Getting Started with AL](https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-get-started)  
-- [Development in AL](https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-dev-overview)  
-- [Dynamics NAV Team Blog](https://blogs.msdn.microsoft.com/nav/)  
-- [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-upgrade-v1-to-v2-overview)  
-
-
-To learn more about Add-on apps in general, select the following links:  
-FAQ on add-on apps – needs to be build 
-Best Practices (Add-on apps) – needs to be build -->
 
 ## See Also
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
