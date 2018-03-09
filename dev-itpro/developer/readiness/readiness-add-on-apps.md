@@ -16,7 +16,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Add-On Apps
 
 ## What is an Add-on app? 
-An Add-on app extends the experience and the existing functionality of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. Add-on apps can be used in multiple scenarios, whether it is to integrate to online services, making custom web services, adding business functionality or extending the user interface. 
+An Add-on app extends the experience and the existing functionality of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. Add-on apps can be used in multiple scenarios, whether it is to integrate to online services, making custom web services, adding business functionality, or extending the user interface. 
 
 Add-on apps are developed using Extensions version 2.0 and the modern development tools based on Visual Studio Code. Add-on apps can be published through Microsoft AppSource, as configurable pre-built apps that can be applied on individual customer environments in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
@@ -40,7 +40,7 @@ INSERT VIDEO:
 Objective: Setting up a Dynamics 365 Business Central Development Environment 
 New video that needs to be created -->
  
-Add-on apps are created using the AL language in Visual Studio Code, which needs to be installed locally or on a Virtual Machine. The source-code for your Add-on app is file based, and we recommend that you setup a repository in a source code management system like GitHub. For more information on getting started with AL, see COMING SOON.
+Add-on apps are created using the AL language in Visual Studio Code, which needs to be installed locally or on a Virtual Machine. The source code for your Add-on app is file-based, and we recommend that you set up a repository in a source code management system like GitHub. For more information on getting started with AL, see COMING SOON.
 
 <!-- 
 To ease the development phase of Add-on aps we have created a video series to help you each step of the way. Learn more by consuming the content in the below video series: 
