@@ -39,10 +39,10 @@ This workshop helps you in validating your complete offer, from a business, mark
 |Type|Company Name        |Ready to Go Validation Workshop|
 |----|--------------------|------------------|
 |Development Center       |1ClickFactory|Link|
-|    |Ciellos             |Link   |  
+|    |Ciellos             |    |  
 |    |Cloud Ready Software|Link   |
-|    |Innova Consulting   |Link   |
-|Master VARs|QBS Group    |Link   |
+|    |Innova Consulting   |[http://www.innovaconsulting.es/en/readytogo/](http://www.innovaconsulting.es/en/readytogo/)   |
+|Master VARs|QBS Group    |[https://www.qbsgroup.com/service/readytogo/](https://www.qbsgroup.com/service/readytogo/)  |
 |    |Velosio             |Link   |
 
 ## The Ready to Go platform

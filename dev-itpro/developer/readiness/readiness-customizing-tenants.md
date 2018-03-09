@@ -41,7 +41,7 @@ To ensure business continuity and protect the integrity of live customer data, y
 ## Where do I learn more? 
 To learn more about customization, select the following links:   
 - [Using Designer](https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-inclient-designer) 
-- [Getting started with AL development in Visual Studio Code]() <!--video will be inserted here -->
+- Coming soon - Getting started with AL development in Visual Studio Code
 - [Getting started with AL](https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-get-started) 
 - [AL Development Environment](https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-reference-overview)
  
