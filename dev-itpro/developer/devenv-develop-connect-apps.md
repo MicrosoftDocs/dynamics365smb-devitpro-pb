@@ -3,7 +3,7 @@ title: "Getting Started Developing Connect Apps for Dynamics 365 Business Centra
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 03/07/2018
+ms.date: 03/09/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
