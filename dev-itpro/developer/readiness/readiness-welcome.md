@@ -19,7 +19,7 @@ Microsoft [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is a busin
 <!-- Insert video:
 General introduction video (type of apps, introduction to Business Central and AppsSource, introduction of different swimming-lanes).
 -->
- 
+
 ## Go to market with Microsoft AppSource
 AppSource is Microsoft’s marketplace for your [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] offerings and there are several reasons why going to market with Microsoft AppSource is a great idea:
 
@@ -31,7 +31,7 @@ You can bring different types of offerings to market utilizing Microsoft AppSour
 - Apps – that bring your intellectual property to market. 
 - Packaged Consulting Services – that brings ready-made packaged engagements to market.    
  
-Find more information on which apps and consulting services that are currently available on Microsoft AppSource [here](https://appsource.microsoft.com/en-us/marketplace/consulting-services?country=US&page=1).<!-- link -->
+Find more information on which apps and consulting services that are currently available on Microsoft AppSource [here](https://appsource.microsoft.com/en-us/marketplace/consulting-services?country=US&page=1).
 
 ## Getting started: find what is important to you 
 In order to inform you in the best possible way, we have organized the following content in categories based on what you want to bring to market.  

@@ -60,7 +60,6 @@ To learn more about how to develop Connect apps, select the following links:
 1. [Documentation on REST APIs](https://docs.microsoft.com/en-us/rest/api/) 
 2. COMING SOON - Getting started with Connect apps <!--(https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-develop-connect-apps-for-fin) -->
 3. [Overview of connection endpoints and authentication options](https://docs.microsoft.com/en-us/dynamics-nav/endpoints-apis-for-dynamics) 
-4. <!-- - Link to blogpost – hasn’t been created yet  [Symbol] NOTE: waiting on input from Peter  -->
-5. If your Connect app requires a specific setup in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], then you have the opportunity to add objects. In this case, you will have to follow the guide on Add-on apps in combination with using the Connect API. Find the guide on how to develop Add-on apps [here](readiness-add-on-apps.md).  
+4. If your Connect app requires a specific setup in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], then you have the opportunity to add objects. In this case, you will have to follow the guide on Add-on apps in combination with using the Connect API. Find the guide on how to develop Add-on apps [here](readiness-add-on-apps.md).  
 
 

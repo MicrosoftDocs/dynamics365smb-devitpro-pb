@@ -139,11 +139,11 @@ page 50105 SalesInvoiceCuePage
         {
             cuegroup(SalesCueContainer)
             {
-                CaptionML=ENU='Sales Invoices';
+                Caption='Sales Invoices';
                 // CuegroupLayout=Wide;
                 field(SalesCue; SalesInvoicesOpen)
                 {
-                    CaptionML=ENU='Open';
+                    Caption='Open';
                     DrillDownPageId="Sales Invoice List";
                 }
             }

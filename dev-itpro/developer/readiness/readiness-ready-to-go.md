@@ -39,10 +39,10 @@ This workshop helps you in validating your complete offer, from a business, mark
 |Type|Company Name        |Ready to Go Validation Workshop|
 |----|--------------------|------------------|
 |Development Center       |1ClickFactory|Link|
-|    |Ciellos             |Link   |  
+|    |Ciellos             |    |  
 |    |Cloud Ready Software|Link   |
-|    |Innova Consulting   |Link   |
-|Master VARs|QBS Group    |Link   |
+|    |Innova Consulting   |[http://www.innovaconsulting.es/en/readytogo/](http://www.innovaconsulting.es/en/readytogo/)   |
+|Master VARs|QBS Group    |[https://www.qbsgroup.com/service/readytogo/](https://www.qbsgroup.com/service/readytogo/)  |
 |    |Velosio             |Link   |
 
 ## The Ready to Go platform
@@ -51,7 +51,7 @@ A place where you can find current & upcoming builds of [!INCLUDE[d365fin_long_m
 To get access to the **Ready to Go** platform, you need to go through these steps: 
 
 1. Register on  http://aka.ms/Collaborate using your AAD Global Admin account. 
-2. Contact us, Once registered on Microsoft Collaborate. Your company’s Azure Active Directory (AAD) global administrator should contact us at Dyn365BEP@microsoft.com to complete the on-boarding.  When contacting us, please provide following information:  
+2. Contact us, Once registered on Microsoft Collaborate. Your company’s Azure Active Directory (AAD) global administrator should [contact us](mailto:dyn365bep@microsoft.com) to complete the on-boarding.  When contacting us, please provide following information:  
 
     |Publisher display name|Name|Email|Role |
     |----------------------|----|-----|-----|
@@ -61,6 +61,6 @@ To get access to the **Ready to Go** platform, you need to go through these step
 
 3. The **Ready to Go** team will notify you and confirm your registration.
 
-If you have questions or feedback about the **Ready to Go** offering, you can contact us at dyn365bep@microsoft.com. 
+If you have questions or feedback about the **Ready to Go** offering, you can [contact us](mailto:dyn365bep@microsoft.com). 
 
 
