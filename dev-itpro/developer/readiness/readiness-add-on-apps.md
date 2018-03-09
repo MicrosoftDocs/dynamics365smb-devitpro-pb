@@ -54,13 +54,11 @@ HDI - V7: Build a custom control
 HDI - V8: How do I create custom web services for integration scenarios? 
 HDI - V9: Connect to webservices in an extension -->
 
-## How do I get my add-on app published in Microsoft AppSource?  
-To ease your journey, from the initial idea submission to the final publication, we have created a guide that you can lean on throughout the process of bringing your app to AppSource. The guide consists of a set of documents that outlines all the steps that must be taken to get your app to go live on the platform. You need to complete the steps in the given order to pass the different validation stages and getting your app published on AppSource. Learn more about each step here: 
+## How do I get my add-on app published in Microsoft AppSource? 
+To ease your journey, from the initial idea submission to the final publication, we have created a guide that you can lean on throughout the process of bringing your app to AppSource. The guide consists of two documents that outline all the steps that must be taken to get your app to go live on the platform. You need to complete the steps in the given order to pass the different validation stages and getting your app published on AppSource. Learn more here:
 
-- [Setting up your accounts]()  
-- [Listing your app on AppSource]()
-- [Developing your app and passing validations]() 
-- [Publishing your app]() 
+- [Getting you started with Microsoft Dynamics 365 Business Central Add-on Apps](https://go.microsoft.com/fwlink/?linkid=869734)  
+- [Developing and publishing Microsoft Dynamics 365 Business Central Add-on Apps](https://go.microsoft.com/fwlink/?linkid=869733) 
 
 ## See Also
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
