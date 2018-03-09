@@ -1,6 +1,6 @@
 ---
 title: "Integrate a 3rd Party Solution"
-description: ""
+description: "An online service that you can connect and integrate with Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/07/2018
@@ -20,7 +20,7 @@ If you are an ISV with an existing service offering, then there are several reas
 
 - Bundle your services with a [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] offering and give your customers an integrated experience that increases the value for their investment. 
 
-- Use Microsoft AppSource to promote your service offering and reach more customers together with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] . 
+- Use Microsoft AppSource to promote your service offering and reach more customers together with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 - Leverage and join the active community around [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] . 
 
