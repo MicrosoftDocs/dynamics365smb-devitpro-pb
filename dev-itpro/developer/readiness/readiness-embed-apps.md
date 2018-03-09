@@ -43,11 +43,11 @@ Being able to customize the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_
 ## What if I already have a vertical solution created for Dynamics NAV? 
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] represent the next exciting chapter of Dynamics NAV. To bring you existing Dynamics NAV vertical solution into the cloud and onto [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] you have two overall options:
 
-- **Refactor** your existing solution to use Extensions version 2.0 and the AL program language using the modern development tools and Visual Studio Code. 
+- *Refactor* your existing solution to use Extensions version 2.0 and the AL program language using the modern development tools and Visual Studio Code. 
  
-- **Lift** your existing C/SIDE based solution onto Dynamics 365 Business Central and then over time **shift** (aka. refactor) the solution to AL and Extensions version 2.0 to align you solution with the investments being made for Dynamics 365 Business Central and reap the benefits of a modern development approach. 
+- *Lift* your existing C/SIDE based solution onto Dynamics 365 Business Central and then over time *shift* (aka. refactor) the solution to AL and Extensions version 2.0 to align you solution with the investments being made for Dynamics 365 Business Central and reap the benefits of a modern development approach. 
  
-The **lift** and **shift** approach currently offers a limited preview for few selected partners. We expect to open for more broad access. Also, expect to see both business and technical requirements in order for you to step into this approach. More details will be shared later.
+The *lift** and **shift* approach currently offers a limited preview for few selected partners. We expect to open for more broad access. Also, expect to see both business and technical requirements in order for you to step into this approach. More details will be shared later.
 
 <!--  
 To learn more about embed apps in general, select the following links:  

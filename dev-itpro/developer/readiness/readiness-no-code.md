@@ -14,7 +14,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # No Code
-Use Microsoft Flow, Power Apps, and Power BI to create customized workflows, apps and business insight reports without having to write any code.  
+Use Microsoft **Flow**, **Power Apps**, and **Power BI** to create customized workflows, apps and business insight reports without having to write any code.  
 
 ## What is Microsoft Flow? 
 Microsoft Flow is a SaaS offering for automating workflows across the growing number of applications and SaaS services that business users rely on. With Microsoft Flow, you can automate tasks by integrating your favorite apps and services (including Power BI) to get notifications, synchronize files, collect data, and more. Repetitive tasks become easy with workflow automation. 

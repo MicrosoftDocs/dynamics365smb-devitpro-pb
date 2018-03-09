@@ -40,9 +40,9 @@ Below you can find some examples of online services, which could benefit from be
 - Web-shops - Synchronize items, customers, and other entities to create sales orders and invoices. 
 - Financial Services - Read financial data and provide value added services such as funding and loans. 
 
-## How do I develop a Connect App?
+## How do I develop a Connect app?
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] offers many APIs that you can call from within your preferred coding language.
-To explore and develop against these APIs, you must sign up for a trial tenant. See the documentation for how you sign up and get started with a simple call to retrieve the list of customers in your trial tenant. Coming soon.
+To explore and develop against these APIs, you must sign up for a trial tenant. See the documentation for how you sign up and get started with a simple call to retrieve the list of customers in your trial tenant. COMING SOON.
 
 
 <!-- INSERT VIDEO: 
