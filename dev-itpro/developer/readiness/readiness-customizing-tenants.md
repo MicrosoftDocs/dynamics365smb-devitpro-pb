@@ -36,7 +36,7 @@ You can start customizing in either the Designer or in Visual Studio Code. If yo
 The resulting AL code is compiled into an .app file, which can be deployed to production tenants. 
 
 ## How do I test my custom changes? 
-To ensure business continuity and protect the integrity of live customer data, you cannot customize Dynamics 365 Business Central for an organization running in production. Instead, custom changes are tested on hosted sandbox environments or in Docker containers. Changes can be tested thoroughly in the browser until they are deemed fit to deploy into production where they are applied as an Extension 2.0 and can immediately be used by everyone in the organization. 
+To ensure business continuity and protect the integrity of live customer data, you cannot customize [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] for an organization running in production. Instead, custom changes are tested on hosted sandbox environments or in Docker containers. Changes can be tested thoroughly in the browser until they are deemed fit to deploy into production where they are applied as an Extension 2.0 and can immediately be used by everyone in the organization. 
 
 ## Where do I learn more? 
 To learn more about customization, select the following links:   
