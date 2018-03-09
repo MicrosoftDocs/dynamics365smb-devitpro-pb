@@ -1,9 +1,9 @@
 ---
-title: "Add-On Apps"
-description: "An add-on app extends the over-all experience and the existing functionality of Dynamics 365 Business Central."
+title: "Add-on Apps"
+description: "An Add-on app extends the over-all experience and the existing functionality of Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 03/13/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,34 +13,34 @@ ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-# Add-On Apps (Enriches User Experience and Functionality)
+# Add-On Apps
 
-## What is an add-on app? 
-An add-on app extends the experience and the existing functionality of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. Add-on apps can be used in multiple scenarios, whether it is to integrate to online services, making custom web services, adding business functionality or extending the user interface. 
+## What is an Add-on app? 
+An Add-on app extends the experience and the existing functionality of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. Add-on apps can be used in multiple scenarios, whether it is to integrate to online services, making custom web services, adding business functionality or extending the user interface. 
 
-Add-on apps are developed using Extensions version 2.0 and the modern development tools based on Visual Studio Code. Add-On apps can be published through Microsoft AppSource, as configurable pre-built apps that can be applied on individual customer environments in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
+Add-on apps are developed using Extensions version 2.0 and the modern development tools based on Visual Studio Code. Add-on apps can be published through Microsoft AppSource, as configurable pre-built apps that can be applied on individual customer environments in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 <!-- INSERT VIDEO: 
 Objective: Introducing add on apps (modern tools, integration points, rich base, “easy to publish”) 
 New video that needs to be created -->
 
-### Examples of some of the current add-on apps on AppSource are:  
+### Examples of some of the current Add-on apps on AppSource are:  
 - [Shopify Connector from Scapta](https://appsource.microsoft.com/en-us/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview)  
-    - This add-on app adds [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] to webshops, generally useful for companies selling items or services.
+    - This Add-on app adds [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] to webshops, generally useful for companies selling items or services.
     - Shopify is a complete e-commerce solution that allows companies to set up an online store to sell their goods combined with the business process flows of the cutting edge ERP-system Microsoft [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
  
 - [LS Express from LS Retail](https://appsource.microsoft.com/en-us/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.ls_retail%7CAID.a45ac602-7269-4b3a-bff0-2dce0b3d0b16%7CPAPPID.2d47a6c4-91c0-4593-be25-858c0b36c599?tab=Overview)  
-    - This add-on app adds a point of sales cashier, useful for front office sales. 
+    - This Add-on app adds a point of sales cashier, useful for front office sales. 
     - LS Express is designed for small retail companies that need to maintain accurate financial accounts, manage large inventories and live up to the expectations of today's customers. LS Express is a complete online POS system, natively integrated with Microsoft [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].   
 
-## How do I develop an add-on app?
+## How do I develop an Add-on app?
 <!-- To develop an Add-on app, we advise you to create a development environment for Dynamics 365 Business Central. Follow the process described in this video to set up your environment:
 
 INSERT VIDEO:  
 Objective: Setting up a Dynamics 365 Business Central Development Environment 
 New video that needs to be created -->
  
-Add-on apps are created using the AL language in Visual Studio Code, which needs to be installed locally or on a Virtual Machine. The source-code for your add-on app is file based, and we recommend that you setup a repository in a source code management system like GitHub. For more information on getting started with AL, see [Development in AL](https://docs.microsoft.com/da-dk/dynamics-nav/developer/devenv-dev-overview).
+Add-on apps are created using the AL language in Visual Studio Code, which needs to be installed locally or on a Virtual Machine. The source-code for your Add-on app is file based, and we recommend that you setup a repository in a source code management system like GitHub. For more information on getting started with AL, see COMING SOON.
 
 <!-- 
 To ease the development phase of Add-on aps we have created a video series to help you each step of the way. Learn more by consuming the content in the below video series: 
@@ -54,7 +54,7 @@ HDI - V7: Build a custom control
 HDI - V8: How do I create custom web services for integration scenarios? 
 HDI - V9: Connect to webservices in an extension -->
 
-## How do I get my add-on app published in Microsoft AppSource? 
+## How do I get my Add-on app published in Microsoft AppSource? 
 To ease your journey, from the initial idea submission to the final publication, we have created a guide that you can lean on throughout the process of bringing your app to AppSource. The guide consists of two documents that outline all the steps that must be taken to get your app to go live on the platform. You need to complete the steps in the given order to pass the different validation stages and getting your app published on AppSource. Learn more here:
 
 - [Getting you started with Microsoft Dynamics 365 Business Central Add-on Apps](https://go.microsoft.com/fwlink/?linkid=869734)  
