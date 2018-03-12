@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-# Endpoints for the APIs for Microsoft Dynamics NAV and Microsoft Dynamics 365 Business Central 
+# Endpoints for the APIs for Dynamics 365 Business Central and Dynamics NAV
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] exposes an API that makes it possible to integrate with other services. To enable integration with these APIs, for [!INCLUDE[navnow](../includes/navnow_md.md)] you must go through a few steps to enable the access first. For more information about these steps, see [Enabling APIs for Microsoft Dynamics NAV](enabling-apis-for-dynamics-nav.md).
 
 ## Accessing the endpoint
