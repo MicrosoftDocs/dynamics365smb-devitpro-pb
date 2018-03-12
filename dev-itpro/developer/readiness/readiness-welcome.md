@@ -42,10 +42,10 @@ Find more information on which apps and Consulting Services that currently are a
 ## Getting started: find what is important to you 
 In order to inform you in the best possible way, we have organized the following content in categories based on what you want to bring to market.  
 
-|What do you want to achieve with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] ?|
+|What do you want to achieve with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]?|
 |------------------------|
 |[**3rd party online services**](readiness-thirdparty-solution.md) </br>You have an online service that you want to connect and integrate with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] .|
 |[**Development of a vertical solution**](readiness-develop-vertical.md) </br>Create an app that is specialized within a specific industry.|
-|[**Add development of a horizontal solution**](readiness-develop-horizontal.md)</br>Extend the experience and capability of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] by creating an Add-on app.|
+|[**Development of a horizontal solution**](readiness-develop-horizontal.md)</br>Extend the experience and capability of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] by creating an Add-on app.|
 |[**Dynamics 365 Reseller (VARs)**](readiness-reseller.md)</br>Resell and adjust [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] to the individual needs of your customers.|
 
