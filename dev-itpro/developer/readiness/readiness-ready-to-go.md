@@ -34,7 +34,7 @@ Learn more about Development Centers [here](https://mbs2.microsoft.com/ecsts/log
 
 Development Centers have strong ties with Microsoft’s R&D teams, as well as are an incremental part of our early Engagement programs. The **Ready to Go Validation Workshop** is a packaged offering, brought to market by all development centers and Master VARs and is co-developed with Microsoft. 
  
-This workshop helps you in validating your complete offer, from a business, marketing and technical perspective.    Learn more about the offerings of our Development Centers by following the links in the table below: 
+This workshop helps you in validating your complete offer, from a business, marketing and technical perspective. Learn more about the offerings of our Development Centers by following the links in the table below: 
 
 |Type|Company Name        |**Ready to Go** Validation Workshop|
 |----|--------------------|------------------|
@@ -50,8 +50,8 @@ A place where you can find current & upcoming builds of [!INCLUDE[d365fin_long_m
 
 To get access to the **Ready to Go** platform, you need to go through these steps: 
 
-1. Register [here](http://aka.ms/Collaborate) using your AAD Global Admin account. 
-2. Contact us, Once registered on Microsoft Collaborate. Your company’s Azure Active Directory (AAD) global administrator should [contact us](mailto:dyn365bep@microsoft.com) to complete the on-boarding.  When contacting us, please provide following information:  
+1. Register on [Microsoft Collaborate](http://aka.ms/Collaborate) using your AAD Global Admin account. 
+2. Contact us, once registered on Microsoft Collaborate. Your company’s Azure Active Directory (AAD) global administrator should [contact us](mailto:dyn365bep@microsoft.com) to complete the on-boarding. When contacting us, please provide following information:  
 
     |Publisher display name|Name|Email|Role |
     |----------------------|----|-----|-----|
