@@ -13,7 +13,7 @@ ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-# Develop a Horizontal Solution
+# Development of a Horizontal Solution
 If you like to enhance the capabilities of the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] Core capability and its experience, then there are several reasons why you would want to choose [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]: 
 
 - Enrich the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]  experience.
@@ -22,7 +22,7 @@ If you like to enhance the capabilities of the [!INCLUDE[d365fin_long_md](../inc
  
 As an app builder, your paths forward can be:
 
-1. Build an Add-on app, which enriches the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] experience. This type of app, which integrates into user experience of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], allows you to **build an interface** based on how you want your **data to flow** between [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and your service offering. Read more [here](readiness-add-on-apps.md).
+- Build an Add-on app, which enriches the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] experience. This type of app, which integrates into user experience of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], allows you to **build an interface** based on how you want your **data to flow** between [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and your service offering. Read more [here](readiness-add-on-apps.md).
 
 Learn more details on how you can build a Business Central offering in the **Ready to Go** program details. Read more [here](readiness-ready-to-go.md).
 
