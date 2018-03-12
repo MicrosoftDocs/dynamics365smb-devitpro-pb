@@ -3,7 +3,7 @@ title: "Ready to Go"
 description: "The Ready to Go program contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/07/2018
+ms.date: 03/13/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ You can find the **Ready to Go** Online Training Catalog at the Dynamics Learnin
 ## The Ready to Go trainings and workshops provided by Development Centers and Master VARs
 The Microsoft Development Centers and Master VARs provide technical service offerings and have industry specific knowledge that you can contract and leverage when developing your App. These companies are independently owned and operated.  There is a worldwide presence of development centers and are therefore always within reach to assist you. Over time, they have built up a strong knowledge base and a set of highly developed best practices that you can lean on when developing your apps. When contracting an Development Center, you get solid and well-founded assistance in creating offerings for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and Microsoft AppSource.  
 
-Learn more about Development Centers here  
+Learn more about Development Centers [here](https://mbs2.microsoft.com/ecsts/login?signin=df674c6c7559ddc58e42ef30e355498e).
 
 Development Centers have strong ties with Microsoft’s R&D teams, as well as are an incremental part of our early Engagement programs. The **Ready to Go Validation Workshop** is a packaged offering, brought to market by all development centers and Master VARs and is co-developed with Microsoft. 
  

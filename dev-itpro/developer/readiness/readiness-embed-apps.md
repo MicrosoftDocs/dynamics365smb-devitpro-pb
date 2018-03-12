@@ -3,7 +3,7 @@ title: "Embed Apps"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 03/13/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,9 +21,7 @@ An Embed App is therefore the term for what is being provided to a given custome
  
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] plays a fundamental role in the Embed App when [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is embedded as an integral part of the overall solution. 
   
-Examples of Embed apps:  
-- A dentist solution 
-- A real estate agent solution 
+Examples of Embed apps are a dentist solution and a real estate agent solution. 
 
 <!-- 
 INSERT VIDEO: 
@@ -47,7 +45,7 @@ Being able to customize the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_
  
 - *Lift* your existing C/SIDE based solution onto Dynamics 365 Business Central and then over time *shift* (aka. refactor) the solution to AL and Extensions version 2.0 to align you solution with the investments being made for Dynamics 365 Business Central and reap the benefits of a modern development approach. 
  
-The *lift** and **shift* approach currently offers a limited preview for few selected partners. We expect to open for more broad access. Also, expect to see both business and technical requirements in order for you to step into this approach. More details will be shared later.
+The *lift* and *shift* approach currently offers a limited preview for few selected partners. We expect to open for more broad access. Also, expect to see both business and technical requirements in order for you to step into this approach. More details will be shared later.
 
 <!--  
 To learn more about embed apps in general, select the following links:  
