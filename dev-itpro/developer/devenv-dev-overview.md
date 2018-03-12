@@ -20,7 +20,7 @@ Extensions are a programming model where functionality is defined as an addition
 
 If you are new to building extensions, we recommend that you read this document to get an understanding of the basics and terms you will encounter while working. Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the tools.
 
-> [!NOTE]  
+> [!TIP]  
 > If you are looking for the C/SIDE documentation, visit our [Dynamics NAV library](/dynamics-nav/development).
 
 ## Understanding objects in the development environment
