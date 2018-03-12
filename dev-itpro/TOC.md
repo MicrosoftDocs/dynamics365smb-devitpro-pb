@@ -186,8 +186,8 @@
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
-### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
-### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
+### [Creating an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
+### [Creating a Word Layout Report](developer/devenv-howto-report-layout.md)
 ## Designing Role Centers
 ### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 ### [Headlines](developer/devenv-create-role-center-headline.md)

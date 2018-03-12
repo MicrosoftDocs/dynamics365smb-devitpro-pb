@@ -40,10 +40,10 @@ In order to define the underlying data model, you use the report dataset. A repo
 The visual layout determines the content and format of a report when it is viewed and printed. You build the layout of a report by arranging data items and columns and specifying the general format, such as text font and size. A report that is viewed, printed, or saved from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] client must have a report layout. There are two types of report layouts: client report definition \(RDL\) layouts and Word layouts.  
 
 ### RDL report layout 
-To create an RDL layout report, you use Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. For more information, see [How to: Create an RDL Layout Report](devenv-howto-rdl-report-layout.md).  
+To create an RDL layout report, you use Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. For more information, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md).  
 
 ### Word report layout  
-You create Word layouts by using a Word Document. Word layouts are based on a Word document that includes a custom XML parts that represents the report dataset. For more information, see [How to: Create a Word Layout Report](devenv-howto-report-layout.md).  
+You create Word layouts by using a Word Document. Word layouts are based on a Word document that includes a custom XML parts that represents the report dataset. For more information, see [Creating a Word Layout Report](devenv-howto-report-layout.md).  
 
 
 ## See Also  

@@ -32,7 +32,7 @@ You build the layout of a report by arranging data items and columns, and specif
 Typing the shortcut ```treport``` will create the basic layout for a report object when using the AL Extension in Visual Studio Code.
 
 ## Report example
-The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a report, see [How to: Create a Report](devenv-howto-report-layout.md).
+The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a report, see [Creating a Report](devenv-howto-report-layout.md).
 
 ```
 report 70010101 "Customer List"
@@ -224,8 +224,8 @@ report 70010101 "Customer List"
 ```
 
 ## See Also
-[How to: Create an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-[How to: Create a Word Layout Report](devenv-howto-report-layout.md)  
+[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
+[Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Page Extension Object](devenv-page-ext-object.md)   
 [Page Properties](properties/devenv-page-property-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  
