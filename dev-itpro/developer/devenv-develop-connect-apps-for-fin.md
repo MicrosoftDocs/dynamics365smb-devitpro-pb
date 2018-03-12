@@ -37,7 +37,7 @@ It's easy to get started. Just spin up a tenant by going through these steps.
 3) Go to the documentation on the APIs, you can get our published preview [here](https://docs.microsoft.com/en-gb/dynamics-nav/fin-graph/).  
 4) Download an API explorer, such as [Postman](https://www.getpostman.com/) or [Fiddler](http://www.telerik.com/fiddler) to connect to and explore the API.
 
-### Some tips for working with the API's
+### Some tips for working with the APIs
 
 + Call (GET) the endpoint to list all the API
 + Call (GET) the endpoint with `$metadata` to list all metadata for the API
