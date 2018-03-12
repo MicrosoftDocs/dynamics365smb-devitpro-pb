@@ -21,17 +21,23 @@ General introduction video (type of apps, introduction to Business Central and A
 -->
 
 ## Go to market with Microsoft AppSource
-AppSource is Microsoft’s marketplace for your [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] offerings and there are several reasons why going to market with Microsoft AppSource is a great idea:
+AppSource is the launch pad for joint go-to-market activities with Microsoft and a flywheel for business growth. Using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine. There are no fees for listing your offer in AppSource. Our goal is to connect Microsoft customers with solutions and services that our partner ecosystem offers.
 
-- It allows you to promote your brand, expand your reach, accelerate the customer journey, and upsell your solutions.  
-- It connects you with millions of Office 365 and Dynamics 365 business users.  
+By listing your offer on AppSource you can get the following benefits:
+- Get started with confidence through a seamless onboarding experience
+- Use Microsoft’s Go-To-Market Services
+- Customize your app listing page
+- Connect directly with decision-makers and reach more customers 
+- Generate leads and sales opportunities
+- Enhance business value and increase deal size with existing and new customers 
+- Get actionable insights on the performance of your listings via the Cloud Partner Portal or the Office app publishing process. 
  
-You can bring different types of offerings to market utilizing Microsoft AppSource: 
+You can bring two types of offerings to Microsoft AppSource:
 
-- Apps – that bring your intellectual property to market. 
-- Packaged Consulting Services – that brings ready-made packaged engagements to market.    
+- Individual Apps – where you bring your industry expertise to market.
+- Packaged Consulting Services – where you bring ready-made packaged engagements to market.  
  
-Find more information on which apps and consulting services that are currently available on Microsoft AppSource [here](https://appsource.microsoft.com/en-us/marketplace/consulting-services?country=US&page=1).
+Find more information on which apps and Consulting Services that currently are available on Microsoft AppSource [here](https://appsource.microsoft.com/en-us/marketplace/consulting-services?country=US&page=1).
 
 ## Getting started: find what is important to you 
 In order to inform you in the best possible way, we have organized the following content in categories based on what you want to bring to market.  
