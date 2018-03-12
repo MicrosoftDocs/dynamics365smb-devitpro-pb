@@ -3,7 +3,7 @@ title: "Customizing Tenants"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 03/13/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,10 +40,10 @@ To ensure business continuity and protect the integrity of live customer data, y
 
 ## Where do I learn more? 
 To learn more about customization, select the following links:   
-- [Using Designer](https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-inclient-designer) 
-- Coming soon - Getting started with AL development in Visual Studio Code
-- [Getting started with AL](https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-get-started) 
-- [AL Development Environment](https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-reference-overview)
+- COMING SOON - Using Designer
+- COMING SOON - Getting started with AL development in Visual Studio Code
+- COMING SOON - Getting started with AL
+- COMING SOON - AL Development Environment
  
 
 

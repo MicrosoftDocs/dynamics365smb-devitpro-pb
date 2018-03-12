@@ -3,7 +3,7 @@ title: "Integrate a 3rd Party Solution"
 description: "An online service that you can connect and integrate with Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/07/2018
+ms.date: 03/13/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
