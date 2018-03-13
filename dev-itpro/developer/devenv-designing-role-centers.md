@@ -23,7 +23,7 @@ A Role Center is defined by page that has the [PageType property](properties/dev
 ![Role Center overview](media/rolecenter-overview.png "Role Center overview")
 
 ## Navigation area
-The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codenits, and more. You define the navigation area by adding actions to the Role Center page. The navigation area is subdivided into smaller areas, based on the `area()` control. The following table describes the elements in the navigation area:
+The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codenits, and more. You define the navigation area by adding actions to the Role Center page. The navigation area is subdivided into smaller areas by using the `area()` control. The following table describes the elements in the navigation area:
 
 |    |Area|Description|More information|
 |----|-------|-----------|----------------|
@@ -34,19 +34,22 @@ The navigation area appears at the top of the Role Center page, and provides lin
 ### Behavior
 
 ## Page part area
-The page part area specifies the content that appears on the Role Center. The page part area consists of one or more parts that are defined by an :
+The page part area specifies the content that appears on the Role Center. The page part area consists of one or more parts that are are associated with a :
 
 
 |    |Element|Description|More information|
 |----|-------|-----------|----------------|
-|4|Headline|Displays a series of automatically changing headlines to provide users with up-to-date information and insight into the business and daily work. Specified by a `HeadlinePart` page type, this for displaying headlines. |[Creating Role Center Headlines](devenv-create-role-center-headline.md)||
-|5|Wide cues | A set of cues for displaying large numbers, like monetary values.|[Designing Cues](devenv-cues-action-tiles.md#CueDesign)|
-|6|Normal cues |Provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. |[Designing Cues](devenv-cues-action-tiles.md#CueDesign)|
-|7|Action tiles |Action tiles act as links that perform a task or operation, like opening another page, starting a video, targeting an another resource or URL, or running code.|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
+|4|Headline|Displays a series of automatically changing headlines to provide users with up-to-date information and insight into the business and daily work. Created by a `HeadlinePart` page type. |[Creating Role Center Headlines](devenv-create-role-center-headline.md)||
+|5|Wide cues | A set of cues for displaying large numbers, like monetary values. Created by using a `cuegroup` control on a `CardPart` page type. |[Designing Cues](devenv-cues-action-tiles.md#CueDesign)|
+|6|Normal cues |Provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. Created by using a `cuegroup` control on a `CardPart` page type. |[Designing Cues](devenv-cues-action-tiles.md#CueDesign)|
+|7|Action tiles |Action tiles act as links that perform a task or operation, like opening another page, starting a video, targeting an another resource or URL, or running code. Created by using a `cuegroup` control on a `CardPart` page type|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
 |8|Chart|A graphical representation of business data controlled by a the Business Chart control add-in on a page. ||
 |9|CardPart page|A `CardPart` page type that displays fields in a gridlayout.||
 
-
+### Arranging
+- In general, the parts will appear in the client according to the order in which they are defined in the RoleCenter page code.
+- However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues will appear under the **Activities** section, not matter where they are placed in the code. All other page parts under the **Business Assistance** section.  
+ 
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
