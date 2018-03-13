@@ -26,13 +26,13 @@ A Role Center is defined by a `RoleCenter` page type. The Role Center page is di
 ![Role Center overview](media/rolecenter-overview.png "Role Center overview")
 
 ## Navigation area
-The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codenits, and more. You define the navigation area by adding actions to the Role Center page. By using the Depending on the subtype The following table describes the elements in the navigation area:
+The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codenits, and more. You define the navigation area by adding actions to the Role Center page. BThe navigation area is subdivided into smaller areas, based on the action `area()` control. The following table describes the elements in the navigation area:
 
-||Element|Description|More information|
-||-------|-----------|----------------|
-|1|Navigation bar|These items are defined by an `ActivityButton` control. ||
-|2|Home menu|These items are defined by a `HomeItems` control||
-|3|Action menu|These items are defined by an `ActionsItems` control||
+|    |Area|Description|More information|
+|----|-------|-----------|----------------|
+|1|Top-level menu|This area is defined by an `area(sections)` control. Each top-level item in the menu is defined by a `group` control, and the submenu items are defined by `action` controls under the `group` control.|The top-level menu should provide access to most important enitity lists based on the major areas of business.|
+|2|Second level menu |These items are defined by an `area(embedding)` control. Each item is defined by a `action` control that targets a specific object. |You should use these items to open the entity lists most used by the users, regardless of the business area. |
+|3|Action menu|The action menu area is defined by two `area`controls: `area(creation)` and `area(processing)`. </br> </br>  Actions in the `area(creation)` control will appear first in the action menu, and will have plus icon. These actions should target card type pages that enable users to create new entities, such as customers, invoices, and sales orders.</br></br> Actions in an an `area(processing)` control will appear after the `area(creation)` items. The actions can be groups are:<ul><li> ||
 
 
 The Navigation Pane appears on the left side of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] window, and contains multiple sections that enable users to quickly navigate and perform actions in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A single section in the Navigation Pane can be defined as a menu group that contains multiple sub-menu items. 
