@@ -1,7 +1,7 @@
 ---
-title: Adding Menus to the Navigation Pane
-description: "Enable users to quickly navigate and perform actions by adding the menu items to the navigation pane."
-author: SusanneWindfeldPedersen
+title: Designing Role Centers
+description: "Provides and overview of Role Center design"
+author: jswymer
 ms.custom: na
 ms.date: 01/19/2018
 ms.reviewer: na
@@ -9,10 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
-ms.author: solsen
-caps.latest.revision: 18 
-
+ms.author: jswymer
 ---
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
@@ -21,12 +18,12 @@ caps.latest.revision: 18
 The Role Center is the users entry point and home page for [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can develop several Role Centers, where each Role Center is customized to the users' profile. For example, you could have a Rolce Center for sales order processors, business managers, administrators and more. A Role Center should be designed to give users quick access to the information that is most important to them in their daily work.
 
 ## Overview
-A Role Center is defined by a `RoleCenter` page type. The Role Center page is divided into two main areas: navigation area and page parts area.
+A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation area and page parts area. The following figure illustrates the general layout and elements of a Role Center page.
 
 ![Role Center overview](media/rolecenter-overview.png "Role Center overview")
 
 ## Navigation area
-The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codenits, and more. You define the navigation area by adding actions to the Role Center page. BThe navigation area is subdivided into smaller areas, based on the action `area()` control. The following table describes the elements in the navigation area:
+The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codenits, and more. You define the navigation area by adding actions to the Role Center page. The navigation area is subdivided into smaller areas, based on the `area()` control. The following table describes the elements in the navigation area:
 
 |    |Area|Description|More information|
 |----|-------|-----------|----------------|
@@ -35,55 +32,21 @@ The navigation area appears at the top of the Role Center page, and provides lin
 |3|Action menu|The action menu area is defined by three different `area`controls: `area(creation)`, `area(processing)`, and  `area(reporting)`. </br> </br> Actions in the `area(creation)` control will appear first in the action menu, and will have plus icon. </br></br> Actions in an an `area(processing)` control will appear after the `area(creation)` items. The actions can be groups are:</br> </br> Actions in the `area(reporting)` control, display last in the action menu, and appear with defult report icon. |The action menau area is desgined for specific tasks and operations. se actions should target card type pages that enable users to create new entities, such as customers, invoices, and sales orders.|
 
 ### Behavior
--   The 
-The Navigation Pane appears on the left side of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] window, and contains multiple sections that enable users to quickly navigate and perform actions in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A single section in the Navigation Pane can be defined as a menu group that contains multiple sub-menu items. 
-
-
-
-The Navigation Pane displays the Home menu items by default; the other menu items can be accessed by clicking on the small drop-down arrow placed next to the *selected* menu category in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For users, the menu groups that display in the Navigation Pane could change depending on the Role Center page that they access. 
-
-### Example
-The example below explains how to add the menu group called `My New Action Group` to the Navigation Pane. The sub-menu items for the `My Customers` contains the actions which are named as `Customer Bank Account List` and `Customer Ledger Entries`, each opening the equivalent page object. In this example, the `My Customers` will appear on the Navigation Pane for the **Sales Order Processor** Role Center. 
-
-```al
-pageextension 50120 ExtendNavigationPane extends "Order Processor Role Center"
-{
-
-    actions
-    {
-        addlast(Sections)
-        {
-            group("My Customers")
-            {
-                action("Customer Bank Account List")
-                {
-                    RunObject = page "Customer Bank Account List";
-                    ApplicationArea = All;
-                }
-                 action("Customer Ledger Entries")
-                {
-                    RunObject = page "Customer Ledger Entries";
-                    ApplicationArea = All;
-                }
-            }
-        }
-    }
-}
-```
-
-You can also enable pages and reports to appear in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] search for a quick navigational support. For more information, see [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md).
 
 ## Page part area
 The page part area specifies the content that appears on the Role Center. The page part area consists of one or more parts that are defined by an :
 
 
-|Element|Description|More information|
-|-------|-----------|----------------|
-|4|A HeadlinePart page for displaying headlines. |[Creating Role Center Headlines](devenv-create-role-center-headline.md)|
-|5|Wide cue for displaying large values|[Cues](devenv-cues-action-tiles.md)|
-|6|Normal cue for displaying |[Cues](devenv-cues-action-tiles.md)|
-|7|Action tiles |[Action Tiles](devenv-cues-action-tiles.md)|
-|8|These items are defined by a `HomeItems` control||
+|    |Element|Description|More information|
+|----|-------|-----------|----------------|
+|4|Headline|Displays a series of automatically changing headlines to provide users with up-to-date information and insight into the business and daily work. Specified by a `HeadlinePart` page type, this for displaying headlines. |[Creating Role Center Headlines](devenv-create-role-center-headline.md)||
+|5|Wide cues | A set of cues for displaying large numbers, like monetary values.|[Designing Cues](devenv-cues-action-tiles.md#CueDesign)|
+|6|Normal cues |Provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. |[Designing Cues](devenv-cues-action-tiles.md#CueDesign)|
+|7|Action tiles |Action tiles act as links that perform a task or operation, like opening another page, starting a video, targeting an another resource or URL, or running code.|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
+|8|Chart|A graphical representation of business data controlled by a the Business Chart control add-in on a page. ||
+|9|CardPart page|A `CardPart` page type that displays fields in a gridlayout.||
+
+
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
