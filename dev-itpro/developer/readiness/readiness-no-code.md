@@ -29,11 +29,11 @@ PowerApps is a service that lets you build business apps that run in a browser o
 You can provide customization services to respond to the customers individual needs. Microsoft Flow, Power BI, and PowerApps enable you to bring together the data from Dynamics 365 Business Central data, along with data from other applications, services, web pages, etc., in one simple to use set of tools. Monitor, receive notifications, sync data, and build impactful reports and Apps from multiple data sources.   
 
 ### Examples of scenarios where Microsoft Flow, Power BI, and PowerApps can be used with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] 
-- Create [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] workflows using Microsoft Flow Templates 
-- Use Microsoft Flow to Syncronize data between [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and other applications used in your business 
-- Monitor data, manage approvals, and receive email or mobile app notifications using Microsoft Flow 
-- Build Power BI reports that are inclusive off all your business data 
-- Build and share powerful apps without entering a single line of code 
+- Create [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] workflows using Microsoft Flow Templates. 
+- Use Microsoft Flow to Syncronize data between [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and other applications used in your business. 
+- Monitor data, manage approvals, and receive email or mobile app notifications using Microsoft Flow. 
+- Build Power BI reports that are inclusive off all your business data. 
+- Build and share powerful apps without entering a single line of code. 
  
 ## Where do I learn more? 
 To learn more about Microsoft Flow, Power BI and PowerApps, select the following links:  

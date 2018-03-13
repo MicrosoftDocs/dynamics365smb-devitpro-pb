@@ -16,13 +16,13 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Integrate a 3rd Party Solution
 If you are an ISV with an existing service offering, then there are several reasons why you should choose to integrate your service with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]:
 
-- [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] exposes many “ready-to-use” APIs for Connect apps to make a seamless integration between your service offering and [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] . 
+- [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] exposes many “ready-to-use” APIs for Connect apps to make a seamless integration between your service offering and [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 - Bundle your services with a [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] offering and give your customers an integrated experience that increases the value for their investment. 
 
 - Use Microsoft AppSource to promote your service offering and reach more customers together with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
-- Leverage and join the active community around [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] . 
+- Leverage and join the active community around [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 With your existing service offering, you path forward with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] can be: 
 
