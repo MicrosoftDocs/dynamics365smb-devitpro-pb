@@ -34,23 +34,32 @@ The navsettings.json or web.config file is stored in the physical path of the we
     
     -   In the navsettings.json file, a setting has the format:
 
-        `"keyname": "keyvalue",`
+        ```
+        "keyname": "keyvalue",
+        ```
 
     -   In the web.config file, a setting has the format:
 
-        `<add key="keyname" value="keyvalue"/>`
+        ```
+        <add key="keyname" value="keyvalue"/>
+        ```
 
+    
     
     The `keyname` is the name of the configuration setting and the `keyvalue` is the value.
     
     For example, in the navsettings.json file, the configuration setting that specifies the Windows credential type for authenticating users is:
 
-    `"ClientServicesCredentialType":  "Windows",`
+    ```
+    "ClientServicesCredentialType":  "Windows",
+    ```
 
     In the web.config file, the setting is:
     
-    `<add key="ClientServicesCredentialType" value="Windows"/>`
-
+    ```
+    <add key="ClientServicesCredentialType" value="Windows"/>
+    ```
+    Include values in double quotes.
 2.  Find the configuration settings that you want to change, and then change the values.
 
     See the [Settings](Configuring-Microsoft-Dynamics-NAV-Web-Client-by-Modifying-the-Web.config-File.md#Settings) section for a description of each setting.
