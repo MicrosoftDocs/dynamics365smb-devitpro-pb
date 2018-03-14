@@ -14,7 +14,7 @@ ms.author: grobyns
 caps.latest.revision: 1
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Extending Item Charge Distribution Methods 
 To ensure correct valuation, your inventory items must carry any added costs, such as freight, physical handling, insurance, and transportation that you incur when purchasing or selling the items.

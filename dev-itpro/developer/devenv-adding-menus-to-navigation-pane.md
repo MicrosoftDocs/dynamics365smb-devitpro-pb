@@ -15,7 +15,7 @@ caps.latest.revision: 18
 
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Adding Menus to the Navigation Pane
 The Navigation Pane appears on the left side of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] window, and contains multiple sections that enable users to quickly navigate and perform actions in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A single section in the Navigation Pane can be defined as a menu group that contains multiple sub-menu items. 

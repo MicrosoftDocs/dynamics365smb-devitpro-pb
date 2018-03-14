@@ -2,7 +2,7 @@
 title: Report Properties
 description: This topic lists report properties that apply to controls of a report object.
 ms.custom: na
-ms.date: 11/23/2017
+ms.date: 03/14/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,11 +13,55 @@ caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
-
 # Report Properties
 This topic lists properties of the report object.  
 
+|Property Name|Applies to|
+|-------------|-----------|  
+[AccessByPermission Property](devenv-accessbypermission-property.md)|<ul><li>Report Object</li></ul>|
+|[ApplicationArea Property](devenv-applicationarea-property.md)|<ul><li>Report Object</li></ul>|
+|[AutoCalcField Property](devenv-autocalcfield-property.md)|<ul><li>Column controls</li></ul>|
+|[AutoFormatExpr Property](devenv-autoformatexpr-property.md)|<ul><li>Column controls</li></ul>|
+|[AutoFormatType Property](devenv-autoformattype-property.md)|<ul><li>Column controls</li></ul>|
+|[Caption Property](devenv-caption-property.md)|<ul><li>Report Object</li><li>Report Labels</li></ul>|
+|[CaptionML Property](devenv-captionml-property.md)|<ul><li>Report Object</li><li>Report Labels</li></ul>|
+|[CalcFields Property](devenv-calcfields-property.md)|<ul><li>DataItem control</li></ul>|
+|[DataItemLink Property \(Reports\)](devenv-dataitemlink-reports-property.md)|<ul><li>DataItem controls</li></ul>|
+|[DataItemLinkReference Property](devenv-dataitemlink-reference-property.md)|<ul><li>DataItem controls</li></ul>|
+|[DataItemTable Property](devenv-dataitemtable-property.md)|<ul><li>DataItem controls</li></ul>|
+|[DataItemTableView Property](devenv-dataitemtableview-property.md)|<ul><li>DataItem controls</li></ul>|
+|[DecimalPlaces Property](devenv-decimalplaces-property.md)|<ul><li>Column controls</li></ul>|
+|[Description Property](devenv-description-property.md)|<ul><li>Report Object</li><li>Column controls</li><li>Report Labels</li></ul>|
+|[EnableExternalAssemblies Property](devenv-enableexternalassemblies-property.md)|<ul><li>Report Object</li></ul>|
+|[EnableExternalImages Property](devenv-enableexternalimages-property.md)|<ul><li>Report Object</li></ul>|
+|[EnableHyperlinks Property](devenv-enablehyperlinks-property.md)|<ul><li>Report Object</li></ul>|
+|[ID Property](devenv-id-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li><li>Report Labels</li></ul>|
+|[IncludeCaption Property](devenv-includecaption-property.md)|<ul><li>Column controls</li></ul>| 
+|[Indentation Property \(Reports\)](devenv-indentation-reports-property.md)|<ul><li>DataItem controls</li><li>Column controls</li><ul>|
+|[MaxIteration Property](devenv-maxiteration-property.md)|<ul><li>DataItem controls</li></ul>|
+|[Name Property](devenv-name-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li><li>Report Labels</li></ul>|
+|[OptionCaption Property](devenv-optioncaption-property.md)|<ul><li>Column controls</li></ul>|
+|[OptionCaptionML Property](devenv-optioncaptionml-property.md)|<ul><li>Column controls</li></ul>|
+|[OptionString Property](devenv-optionstring-property.md)|<ul><li>Column controls</li></ul>|
+|[PaperSourceDefaultPage Property](devenv-papersourcedefaultpage-property.md)|<ul><li>Report Object</li></ul>|
+|[PaperSourceFirstPage Property](devenv-papersourcefirstpage-property.md)|<ul><li>Report Object</li></ul>|
+|[PaperSourceLastPage Property](devenv-papersourcelastpage-property.md)|<ul><li>Report Object</li></ul>|
+|[PDFFontEmbedding Property](devenv-pdf-fontembedding-property.md)|<ul><li>Report Object</li></ul>|
+|[Permissions Property](devenv-permissions-property.md)|<ul><li>Report Object</li></ul>|
+|[PrintOnlyIfDetail Property](devenv-printonlyifdetail-property.md)|<ul><li>DataItem controls</li></ul>|
+|[ProcessingOnly Property](devenv-processingonly-property.md)|<ul><li>Report Object</li></ul>|
+|[ReqFilterFields Property](devenv-reqfilterfields-property.md)|<ul><li>DataItem controls</li></ul>|
+|[ReqFilterHeading Property](devenv-reqfilterheading-property.md)|<ul><li>DataItem controls</li></ul>|
+|[ReqFilterHeadingML Property](devenv-reqfilterheadingml-property.md)|<ul><li>DataItem controls</li></ul>|
+|[ShowPrintStatus Property](devenv-showprintstatus-property.md)|<ul><li>Report Object</li></ul>|
+|[SourceExpr Property](devenv-sourceexpr-property.md)|<ul><li>Column controls</li></ul>|
+|[Temporary Property \(Reports\)](devenv-temporary-reports-property.md)|<ul><li>DataItem controls</li></ul>|
+|[TransactionType Property](devenv-transactiontype-property.md)|<ul><li>Report Object</li></ul>|
+|[UsageCategory Property](devenv-usagecategory-property.md)|<ul><li>Report Object</li></ul>|
+|[UseRequestPage Property](devenv-userequestpage-property.md)|<ul><li>Report Object</li></ul>|
+|[UseSystemPrinter Property](devenv-usesystemprinter-property.md)|<ul><li>Report Object</li></ul>|
+
+<!--
 ## Report Object Properties  
  The following properties apply to the report object.  
 
@@ -93,6 +137,8 @@ This topic lists properties of the report object.
 |[Description Property](devenv-description-property.md)|X|
 |[ID Property](devenv-id-property.md)|X|
 |[Name Property](devenv-name-property.md)|X|
+
+-->
 
 ## See Also  
 [Properties](devenv-properties.md)  

@@ -13,7 +13,7 @@ ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Multilanguage Development
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are multilanguage enabled, which means that you can display the user interface (UI) in different languages.  
