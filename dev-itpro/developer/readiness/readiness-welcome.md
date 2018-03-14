@@ -24,12 +24,12 @@ General introduction video (type of apps, introduction to Business Central and A
 AppSource is the launch pad for joint go-to-market activities with Microsoft and a flywheel for business growth. Using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine. There are no fees for listing your offer in AppSource. Our goal is to connect Microsoft customers with solutions and services that our partner ecosystem offers.
 
 By listing your offer on AppSource you can get the following benefits:
-- Get started with confidence through a seamless onboarding experience
-- Use Microsoft’s Go-To-Market Services
-- Customize your app listing page
-- Connect directly with decision-makers and reach more customers 
-- Generate leads and sales opportunities
-- Enhance business value and increase deal size with existing and new customers 
+- Get started with confidence through a seamless onboarding experience.
+- Use Microsoft’s Go-To-Market Services.
+- Customize your app listing page.
+- Connect directly with decision-makers and reach more customers. 
+- Generate leads and sales opportunities.
+- Enhance business value and increase deal size with existing and new customers. 
 - Get actionable insights on the performance of your listings via the Cloud Partner Portal or the Office app publishing process. 
  
 You can bring two types of offerings to Microsoft AppSource:
@@ -44,7 +44,7 @@ In order to inform you in the best possible way, we have organized the following
 
 |What do you want to achieve with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]?|
 |------------------------|
-|[**3rd party online services**](readiness-thirdparty-solution.md) </br>You have an online service that you want to connect and integrate with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] .|
+|[**3rd party online services**](readiness-thirdparty-solution.md) </br>You have an online service that you want to connect and integrate with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].|
 |[**Development of a vertical solution**](readiness-develop-vertical.md) </br>Create an app that is specialized within a specific industry.|
 |[**Development of a horizontal solution**](readiness-develop-horizontal.md)</br>Extend the experience and capability of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] by creating an Add-on app.|
 |[**Dynamics 365 Reseller (VARs)**](readiness-reseller.md)</br>Resell and adjust [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] to the individual needs of your customers.|
