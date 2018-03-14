@@ -29,7 +29,7 @@ As a reseller, your paths forward can be:
 5. Learn more about who can help you build a [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] offering in the materials of the **Ready to Go** program. Read more [here](readiness-ready-to-go.md).
 
 ### Example services provided by other resellers 
-- Power BI for Dynamics 365: 1-Hr Assessment by Bond Consulting Services  
+- Power BI for Dynamics 365: 1-Hr Assessment by Bond Consulting Services.  
     An engagement to evaluate how Power BI can help you manage your finances, increase sales, and streamline your operations.
 
 ## See Also

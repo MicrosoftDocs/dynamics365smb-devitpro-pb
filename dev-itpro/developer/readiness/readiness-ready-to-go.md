@@ -18,9 +18,9 @@ The **Ready to Go** program contains a set of resources, services and tools whic
 
 It holds the following three core elements:
 
-1. The Ready to Go online learning
-2. The Ready to Go trainings and workshops provided by Development Centers and Master VARs
-3. The Ready to Go platform
+1. The Ready to Go online learning.
+2. The Ready to Go trainings and workshops provided by Development Centers and Master VARs.
+3. The Ready to Go platform.
 
 ## The Ready to Go online learning
 An extensive resource library hosted on the **Dynamics Learning Portal**. It contains readiness information for marketers, business decision makers, Architects and developers. The content addresses the needs of both reselling partners of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] as App builders who want to provide Apps on Microsoft AppSource. 
