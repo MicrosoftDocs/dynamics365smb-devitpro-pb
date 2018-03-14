@@ -36,7 +36,7 @@ When a report is based on more than one table, you must set relations between th
 Typing the shortcut ```treport``` will create the basic layout for a report object when using the AL Extension in Visual Studio Code. 
 
 ### Example
-The following example adds the `Customer` table as the data item and the `CustomerName` and `CompanyName` as fields of a column to the report. For more information on creating a report, see [How to: Create a Report](devenv-howto-report-layout.md).
+The following example adds the `Customer` table as the data item and the `CustomerName` and `CompanyName` as fields of a column to the report. For more information on creating a report, see [Creating a Report](devenv-howto-report-layout.md).
 ```
   dataset
     {

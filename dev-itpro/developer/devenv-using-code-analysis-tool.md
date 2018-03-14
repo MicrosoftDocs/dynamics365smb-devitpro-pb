@@ -1,5 +1,5 @@
 ---
-title: "Using the Code Analysis Tool"
+title: "    "
 description: "Using static code analysis tool on an AL project."
 author: SusanneWindfeldPedersen
 ms.custom: na

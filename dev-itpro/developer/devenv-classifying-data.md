@@ -33,6 +33,9 @@ Table objects and field controls include the `DataClassification` property that 
 -   FlowField and FlowFilter fields are automatically set to the **SystemMetadata** data classification. This cannot be changed.
 -   Existing tables and fields (except for FlowFields and FlowFilters) in an application that has been upgraded from a [!INCLUDE[d365fin_md](includes/d365fin_md.md)] version without the `DataClassification` property, will automatically be assigned the **CustomerContent** classification.
 
+>[!IMPORTANT]
+> Microsoft is providing this `DataClassification` property as a matter of convenience only. It's your responsibility to classify the data appropriately and comply with any laws and regulations that are applicable to you. Microsoft disclaims all responsibility towards any claims related to your classification of the data.  
+
 For more information about this property, see [DataClassification Property](properties/devenv-dataclassification-property.md).
 
 ### Data classification on upgrade

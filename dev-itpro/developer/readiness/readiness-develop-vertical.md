@@ -3,7 +3,7 @@ title: "Develop a Vertical Solution"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/07/2018
+ms.date: 03/13/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,15 +13,15 @@ ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-# Develop a Vertical Solution
+# Development of a Vertical Solution
 If you like to create an industry specific solution, then there are several reasons why you would want to choose [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]:
 
 - [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] provides a proven ERP platform and application for your vertical solution. 
 - [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available in the cloud and to users across various multiple types of devices, which is always up-to-date. 
 
-To bring your solution to the cloud with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] there are different considerations you must make: 
+To bring your solution to the cloud with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], there are different considerations you must make: 
 
-1. You can choose to extend and customize the existing [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] application and enrich the end-user experience with your industry specific functionality using the new and modern development tools and Extensions v2.0, which are made available with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. Read more [here](readiness-embed-apps.md).
+- You can choose to **extend and customize** the existing [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] application and enrich the end-user experience with your industry specific functionality using the new and modern development tools and Extensions version 2.0, which are made available with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. Read more [here](readiness-embed-apps.md).
 
 Learn more details on how you can build a Business Central offering in the **Ready to Go** program details. Read more [here](readiness-ready-to-go.md).
 
