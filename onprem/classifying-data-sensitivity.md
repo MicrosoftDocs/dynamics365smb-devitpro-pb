@@ -16,6 +16,9 @@ To classify the fields that hold sensitive or personal data, a Microsoft partner
 
 As a customer, you can add a second level of classification by specifying sensitivity levels for the data you store in standard and custom fields. Classifying data sensitivity helps ensure that you know where you keep personal data in your system, and makes it easier to respond to requests from data subjects. For example, if a contact or customer asks you to export their personal data.
 
+> [!Important]
+> Microsoft is providing this Data Sensitivity Classification feature as a matter of convenience only. It's your responsibility to classify the data appropriately and comply with any laws and regulations that are applicable to you. Microsoft disclaims all responsibility towards any claims related to your classification of the data.  
+
 The following table describes data sensitivity levels you can assign.
 
 |Sensitivity|Description|
