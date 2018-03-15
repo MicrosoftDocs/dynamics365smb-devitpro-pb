@@ -12,7 +12,7 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # AL Simple Statements
 AL simple statements are single-line statements that are executed sequentially and do not alter the flow of execution of code. This article explains some of the simple statements in AL.   

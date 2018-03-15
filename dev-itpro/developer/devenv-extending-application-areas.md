@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Extending Application Areas 
 Application area represents a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences.

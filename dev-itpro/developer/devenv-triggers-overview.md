@@ -12,7 +12,7 @@ caps.latest.revision: 9
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Triggers Overview
 Triggers activate a method when a certain event occurs. When AL methods are executed as a result of a predefined event on either an object or a control, the event triggers the method. Together the event and method make a trigger.

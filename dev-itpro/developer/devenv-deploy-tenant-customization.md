@@ -13,7 +13,7 @@ ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Deploying a Tenant Customization
 When you have you have finished developing and testing your tenant customization, you must deploy the extension (.app file) containing the customization to your customer’s production tenant. 

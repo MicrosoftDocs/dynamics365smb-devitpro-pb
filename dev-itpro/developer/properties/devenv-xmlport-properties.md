@@ -1,7 +1,7 @@
 ---
 title: "XMLport Properties"
 ms.custom: na
-ms.date: 06/15/2017
+ms.date: 03/14/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,11 +12,64 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # XMLport Properties
 This topic lists properties of the XMLport object, element, and attribute.  
-  
+
+|Property Name|XMLport Object|
+|-------------|--------------|
+|[AutoCalcField Property](devenv-autocalcfield-property.md)|<ul><li>Field elements</li><li>Field attributes</li></ul>|
+|[AutoReplace Property](devenv-autoreplace-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[AutoSave Property](devenv-autosave-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[AutoUpdate Property](devenv-autoupdate-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[CalcFields Property](devenv-calcfields-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[Caption Property](devenv-caption-property.md)|<ul><li>XMLport object</li></ul>|
+|[CaptionML Property](devenv-captionml-property.md)|<ul><li>XMLport object</li></ul>|
+|[CurrentPath Property](devenv-currentpath-property.md)|<ul><li>XMLport object</li></ul>|
+|[DefaultFieldsValidation Property](devenv-defaultfieldsvalidation-property.md)|<ul><li>XMLport object</li></ul>|
+|[DefaultNamespace Property](devenv-defaultnamespace-property.md)|<ul><li>XMLport object</li></ul>|
+|[Direction Property](devenv-direction-property.md)|<ul><li>XMLport object</li></ul>|
+|[Encoding Property](devenv-encoding-property.md)|<ul><li>XMLport object</li></ul>|
+|[FieldValidate Property](devenv-fieldvalidate-property.md)|<ul><li>Field elements</li><li>Field attributes</li></ul>|
+|[FileName Property](devenv-filename-property.md)|<ul><li>XMLport object</li></ul>|
+|[Format Property](devenv-format-property.md)|<ul><li>XMLport object</li></ul>|
+|[Format-Evaluate Property](devenv-format-evaluate-property.md)|<ul><li>XMLport object</li></ul>|
+|[ID Property](devenv-id-property.md)|<ul><li>XMLport object</li></ul>|
+|[Indentation Property \(XMLports\)](devenv-indentation-xmlports-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Table attributes</li><li>Field attributes</li></ul>|
+|[InlineSchema Property](devenv-inlineschema-property.md)|<ul><li>XMLport object</li></ul>|
+|[LinkFields Property](devenv-linkfields-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[LinkTable Property](devenv-linktable-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[LinkTableForceInsert Property](devenv-linktableforceinsert-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[MaxOccurs Property](devenv-maxoccurs-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li></ul>|
+|[MinOccurs Property](devenv-minoccurs-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li></ul>|
+|[Name Property](devenv-name-property.md)|<ul><li>XMLport object</li></ul>|
+|[NamespacePrefix Property](devenv-namespaceprefix-property.md)|<ul><li>XMLport object</li></ul>|
+|[Namespaces Property](devenv-namespaces-property.md)|<ul><li>XMLport object</li></ul>|
+|[NodeName Property](devenv-nodename-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Table attributes</li><li>Field attributes</li></ul>|
+|[NodeType Property](devenv-nodetype-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Table attributes</li><li>Field attributes</li></ul>|
+|[Occurrence Property](devenv-occurrence-property.md)|<ul><li>Text attributes</li><li>Table attributes</li><li>Field attributes</li></ul>|
+|[Permissions Property](devenv-permissions-property.md)|<ul><li>XMLport object</li></ul>|
+|[PreserveWhiteSpace Property](devenv-preservewhitespace-property.md)|<ul><li>XMLport object</li></ul>|
+|[ReqFilterFields Property](devenv-reqfilterfields-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[ReqFilterHeading Property](devenv-reqfilterheading-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[ReqFilterHeadingML Property](devenv-reqfilterheadingml-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[SourceField Property](devenv-sourcefield-property.md)|<ul><li>Field elements</li><li>Field attributes</li></ul>|
+|[SourceTable Property \(XMLports\)](devenv-sourcetable-xmlports-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[SourceTableView Property \(XMLports\)](devenv-sourcetableview-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[SourceType Property](devenv-sourcetype-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Table attributes</li><li>Field attributes</li></ul>|
+|[Temporary Property \(XMLports\)](devenv-temporary-xmlports-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
+|[TextEncoding Property \(XMLports\)](devenv-textencoding-xmlports-property.md)|<ul><li>XMLport object</li></ul>|
+|[TextType Property](devenv-texttype-property.md)|<ul><li>Text elements</li><li>Text attributes</li></ul>|
+|[TransactionType Property](devenv-transactiontype-property.md)|<ul><li>XMLport object</li></ul>|
+|[Unbound Property](devenv-unbound-property.md)|<ul><li>Text elements</li><li>Field elements</li></ul>|
+|[UseDefaultNamespace Property](devenv-usedefaultnamespace-property.md)|<ul><li>XMLport object</li></ul>|
+|[UseLax Property](devenv-uselax-property.md)|<ul><li>XMLport object</li></ul>|
+|[UseRequestPage Property](devenv-userequestpage-property.md)|<ul><li>XMLport object</li></ul>|
+|[VariableName Properties](devenv-variablename-properties.md)|<ul><li>Text elements</li><li>Table elements</li><li>Text attributes</li><li>Table attributes</li></ul>|
+|[Width Property \(XMLport\)](devenv-width-xmlports-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Table attributes</li><li>Field attributes</li></ul>|
+
+<!--
+
 ## XMLport Object Properties  
  The following properties apply to the **XMLport** object.  
   
@@ -162,7 +215,10 @@ This topic lists properties of the XMLport object, element, and attribute.
 |[SourceType Property](devenv-sourcetype-property.md)|X|
 |[Width Property \(XMLport\)](devenv-width-xmlports-property.md)|X|
   
+
+--> 
+
 ## See Also  
- [Properties](devenv-properties.md)
- [Table and Table Extension Properties](devenv-table-properties.md)
+ [Properties](devenv-properties.md)  
+ [Table and Table Extension Properties](devenv-table-properties.md)  
  [Page and Page Extension Properties Overview](devenv-page-property-overview.md)

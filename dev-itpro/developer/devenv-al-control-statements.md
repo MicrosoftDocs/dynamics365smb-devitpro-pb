@@ -12,7 +12,7 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # AL Control Statements
 AL code consist of one or more statements, which are executed sequentially in top-down order. However, you will often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do this, you use control structures.  

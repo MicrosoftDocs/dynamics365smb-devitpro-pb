@@ -12,7 +12,7 @@ caps.latest.revision: 44
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Actions Overview
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page in the ribbon or in the navigation pane. In this topic, you learn about different types of actions, and how you can enable users to quickly locate the actions they want to use.  

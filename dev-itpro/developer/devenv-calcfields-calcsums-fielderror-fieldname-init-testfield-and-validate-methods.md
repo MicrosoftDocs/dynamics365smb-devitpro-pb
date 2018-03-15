@@ -12,7 +12,7 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # CALCFIELDS, CALCSUMS,FIELDERROR, FIELDNAME, INIT, TESTFIELD, and VALIDATE Methods
 The following methods perform various actions on fields:  
