@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2017"
+ms.service: "dynamics365-business-central": "dynamics-nav-2017"
 ---
 # HideSubsequentDialogs Function
 Specifies whether to hide other dialogs within the current scope that are not instantiated by this dialog variable. When this is set to **true**, any calls to dialog methods ([OPEN](devenv-open-method-dialog.md), [UPDATE](devenv-update-method-dialog.md), and [CLOSE](devenv-close-method-dialog.md)) on other dialog variables are ignored, and the dialogs will not appear in the user interface.

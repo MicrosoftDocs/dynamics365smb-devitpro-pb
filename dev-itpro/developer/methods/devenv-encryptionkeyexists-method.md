@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-financials"
+ms.service: "dynamics365-business-central"
 ms.assetid: c31eb42b-c3a4-4592-b712-a24bb6141ccc
 author: SusanneWindfeldPedersen
 ---
