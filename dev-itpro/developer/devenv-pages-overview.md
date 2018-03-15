@@ -12,7 +12,7 @@ caps.latest.revision: 35
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Pages Overview
 

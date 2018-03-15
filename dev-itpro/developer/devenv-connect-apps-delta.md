@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Using Delta Links With APIs
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 

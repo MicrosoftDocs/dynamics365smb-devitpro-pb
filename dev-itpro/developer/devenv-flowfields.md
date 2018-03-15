@@ -12,7 +12,7 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # FlowFields
 FlowFields display the result of the calculation described in the [CalcFormula Property](properties/devenv-calcformula-property.md). For example, the Account Balance field in the General Ledger Account table shows the balance of the account and is calculated as the sum of the NetAmount fields for all General Journal entries in the account.  
