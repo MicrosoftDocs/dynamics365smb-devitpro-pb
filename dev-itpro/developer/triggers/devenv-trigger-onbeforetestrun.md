@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-financials"
+ms.service: "dynamics365-business-central"
 ---
 
 [!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
