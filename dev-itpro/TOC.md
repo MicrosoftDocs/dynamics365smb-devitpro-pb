@@ -198,7 +198,6 @@
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ## [Classifying Data](developer/devenv-classifying-data.md)
 ## [View Table Data](developer/devenv-view-table-data.md)
-## [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
 ## [AL Development Environment](developer/devenv-reference-overview.md)
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
@@ -206,6 +205,7 @@
 ### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
 #### [Using the Code Analysis Tools with the Ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
+### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
 ### [Table Object](developer/devenv-table-object.md)
 ### [Table Extension Object](developer/devenv-table-ext-object.md)
 ### [Page Object](developer/devenv-page-object.md)
@@ -366,7 +366,7 @@
 ## [Development Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools)
 -->
 <!-- preview of Graph API starts-->
-# [Preview of API Reference](fin-graph/index.md)
+# [Preview of Dynamics 365 Business Central API](fin-graph/index.md)
 ## [Enabling the APIs](fin-graph/enabling-apis-for-dynamics-nav.md)
 ## [Endpoints for the APIs](fin-graph/endpoints-apis-for-dynamics.md)
 ## [Error Codes](fin-graph/dynamics_error_codes.md)

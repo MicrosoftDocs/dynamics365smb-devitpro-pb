@@ -8,12 +8,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Choosing Your Dynamics 365 Business Central Development Sandbox Environment
 To get started developing for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] it is important to understand the different options you have at hand. You can either choose to run a sandbox environment deployed as a Dynamics 365 Cloud Service, or you can run a container-based image either hosted as an Azure VM or locally. Both options provide the AL development tools; the Docker sandbox additionally provides access to the C/SIDE development tools.

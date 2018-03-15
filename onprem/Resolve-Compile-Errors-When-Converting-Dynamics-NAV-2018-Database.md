@@ -1,5 +1,5 @@
 ---
-title: "Compilation Errors When Converting a Microsoft Dynamics NAV 2017 Database"
+title: "Compilation Errors When Converting a Microsoft Dynamics NAV 2018 Database"
 ms.custom: na
 ms.date: 20/11/2017
 ms.reviewer: na
@@ -18,7 +18,13 @@ The following table lists the compilation errors that might occur when you compi
 |  Object Type  |  Object ID  |  Object Name  |  Function/Trigger  |  Error Message  |  Solution  |
 |---------------|-------------|---------------|--------------------|------------|------------|
 |Codeunit|700|Page Management|CheckAnyRoleAssignedToUser|Type conversion is not possible because 1 of the operators contains an invalid type. Text = Integer.|See [Resolving Codeunit 700 Page Management Compilation Error](Resolve-Codunit-700-Error-Converting-Database.md). |
-|Codeunit|5330|CRM Integration Management|CheckAnyRoleAssignedToUser|You have specified an unknown variable. Entities Define the variable under 'Global C/AL symbols'.|See [Resolving Codeunit 5330 CRM Integration Management Compilation Error](Resolve-Codunit-5330-Error-Converting-Database.md). |
+
+Error No.	Object Type	Object ID	Object Name	Error Type	Function/Trigger	Line No.	Description
+35	Codeunit	5330	CRM Integration Management	Error		10	
+|Codeunit|5330|CRM Integration Management|ImportCRMSolution|You have specified an unknown variable. ServiceManagement Define the variable under 'Global C/AL symbols'.|See [Resolving Codeunit 5330 CRM Integration Management Compilation Error](Resolve-Codunit-5330-Error-Converting-Database.md). |
+Error No.	Object Type	Object ID	Object Name	Error Type	Function/Trigger	Line No.	Description
+6	Table	5330	CRM Connection Setup	Error	CreateOrganizationService	1	You have specified an unknown variable. CrmServiceClient Define the variable under 'Global C/AL symbols'.
+|Table|5330|CRM Connection Setup|CreateOrganizationService|You have specified an unknown variable. CrmServiceClient Define the variable under 'Global C/AL symbols'.|See [Resolving Codeunit 5330 CRM Integration Management Compilation Error](Resolve-Codunit-5330-Error-Converting-Database.md). |
 |Codeunit|6303|Azure AD Auth Flow|Initialize|Type conversion is not possible because 1 of the operators contains an invalid type. DotNet := GUID|See [Resolving Codeunit 6303 Azure AD Auth Flow Compilation Error](Resolve-Codunit-6303-Error-Converting-Database.md).|
 |Page|9621|Add Page Fields| SaveNewFieldDefinition|Type conversion is not possible because 1 of the operators contains an invalid type. Integer := OemMText|See [Resolving Page 9621 Add Page Fields Compilation Error](Resolve-Page-9621-Error-Converting-Database.md).|
 |Page|9626|New Page Patterns List Part| - |TableData 2000000174 does not exist.|[Resolving Page 9626 New Page Patterns List Part Compilation Error](Resolve-Page-9626-Error-Converting-Database.md).|

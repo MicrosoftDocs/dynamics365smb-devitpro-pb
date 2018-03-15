@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
 manager: edupont
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Notifications
 Notifications provide a programmatic way to send non-intrusive information to the User Interface (UI) in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. Notifications differ from messages initiated by the MESSAGE method. Messages are modal, which means users are typically required to address the message and take some form of corrective action before they continue working. On the other hand, notifications are non-modal. Their purpose is to give users information about a current situation, but do not require any immediate action or block users from continuing with their current task. For example, you could have a notification that a customer's credit limit is exceeded.
