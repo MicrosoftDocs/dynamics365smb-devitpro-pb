@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Report Object
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.

@@ -13,7 +13,7 @@ ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Differences in the Development Environments
 Coming from the Dynamics NAV Development Environment and C/SIDE, there are some differences and optimizations that you should familiarize yourself with. The following sections go through these changes.  

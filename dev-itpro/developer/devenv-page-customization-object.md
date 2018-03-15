@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Page Customization Object
 The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add changes to the page layout and actions. The page customization object has more restrictions than the [page extension object](devenv-page-ext-object.md); when you define a new page customization object, you cannot add variables, procedures, or triggers. 

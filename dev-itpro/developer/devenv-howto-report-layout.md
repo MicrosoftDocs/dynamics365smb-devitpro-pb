@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Creating a Word Layout Report
 When you create a new report, there are two things you have to think about; defining the report dataset of data items and columns, and then designing the report layout. These steps will show how to create a very simple report based on a Word layout. For more information about the report object, see [Report Object](devenv-report-object.md).

@@ -11,7 +11,7 @@ ms.assetid: 5d2c7db2-fc8b-46e1-a1c3-2be06f806258
 caps.latest.revision: 17
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Progress Windows, MESSAGE, ERROR, and CONFIRM Methods
 You can use several specialized methods to display messages and gather input. We recommend that you use pages to ensure that your application has a consistent user interface. However, there are situations where you may want to use the dialog methods instead of pages. The most important uses of the dialog methods are as follows:  

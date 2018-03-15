@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+
 
 # Query Object
 
