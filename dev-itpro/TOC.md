@@ -182,7 +182,6 @@
 ## [Notifications](developer/devenv-notifications-developing.md)
 <!-- ## [Instrumenting for Telemetry](developer/devenv-instrumenting-application-for-telemetry.md) -->
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
-## [Pages](developer/devenv-pages-overview.md)  
 ## [Reports](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
