@@ -1,7 +1,7 @@
 ---
 title: "PDFFontEmbedding Property"
 ms.custom: na
-ms.date: 06/14/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,18 +21,28 @@ Specifies whether fonts are embedded in PDF files that are generated for reports
   
 -   Reports  
   
-    > [!NOTE]  
-    >  This property only applies when the report uses an RDLC report layout at runtime. This property is ignored when a Word report layout is used.  
+> [!NOTE]  
+>  This property only applies when the report uses an RDL report layout at runtime. This property is ignored when a Word report layout is used.  
   
 ## Property Value  
   
 |[!INCLUDE[bp_tableoption](../includes/bp_tableoption_md.md)]|[!INCLUDE[bp_tabledescription](../includes/bp_tabledescription_md.md)]|  
 |----------------------------------|---------------------------------------|  
-|**Default**|Uses the **Report PDF Embedding** setting of the [!INCLUDE[d365_server_md](includes/d365_server_md.md)] instance to determine whether fonts are embedded in PDF files. <!-- For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).--> <br /><br /> This is the default setting.|  
+|**Default**|Uses the **Report PDF Embedding** setting of the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] instance to determine whether fonts are embedded in PDF files.  <br /><br /> This is the default setting.|  
 |**False**|Fonts are not embedded in PDF files.|  
 |**True**|Fonts are embedded in PDF files.|  
 
+## See Also
+[Report](../devenv-reports.md)  
+[RDL Layout Reports](../devenv-howto-rdl-report-layout.md) 
+
 <!-- 
+|[!INCLUDE[bp_tableoption](../includes/bp_tableoption_md.md)]|[!INCLUDE[bp_tabledescription](../includes/bp_tabledescription_md.md)]|  
+|----------------------------------|---------------------------------------|  
+|**Default**|Uses the **Report PDF Embedding** setting of the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance to determine whether fonts are embedded in PDF files. <!-- For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).<br /><br /> This is the default setting.|  
+|**False**|Fonts are not embedded in PDF files.|  
+|**True**|Fonts are embedded in PDF files.|  
+
 ## Remarks  
  This property applies when an RDLC report is saved as a PDF under the following circumstances:  
   
