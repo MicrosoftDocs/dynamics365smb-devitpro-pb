@@ -3,7 +3,7 @@ title: "ObsoleteReason Property"
 description: "Description of the ObsoleteReason property"
 author: jswymer
 ms.custom: na
-ms.date: 10/31/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,5 +30,5 @@ Use this property to inform developers about a table, field, or key that will be
 ## See Also  
  [ObsoleteState](devenv-obsoletestate-property.md)  
  [Properties](devenv-properties.md)  
- [Upgrade Codeunits](../../upgrade-codeunits.md)  
+ [MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  
 
