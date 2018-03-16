@@ -1,5 +1,6 @@
 ---
 title: "Pages Overview"
+author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 03/16/2018
 ms.reviewer: na
@@ -9,10 +10,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 0ba68a20-d83a-4e4c-9938-dac7fa8f5461
 caps.latest.revision: 35
-manager: edupont
+ms.author: solsen
 ---
-
-
 
 # Pages Overview
 
@@ -20,7 +19,7 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], pages are the main 
 
 A page is defined in code as an object composed of controls, properties, actions, and triggers. You can also use Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to create a page. For more information, see [Using Designer](devenv-inclient-designer.md).
 
-Whether you're creating a new page, or extending en existing page, you will add a new .al file to your project and describe the page object in code. The difference is basically that for a new page, you need to define the entire page, whereas when modifying an existing page, you only add the extra functionality or modify the existing. 
+Whether you are creating a new page, or extending en existing page, you will add a new .al file to your project and describe the page object in code. The difference is basically that for a new page, you need to define the entire page, whereas when modifying an existing page, you only add the extra functionality or modify the existing. 
 
 The structure of a page is hierarchical and breaks down in to three sections. The first block contains metadata for the overall page. The metadata describes the page type and the source table it is showing data from. The next section; the layout, describes the visual parts on the page. The final section details the actions that are published on the page.
 
@@ -55,11 +54,7 @@ Which page type you choose depends on the application task that you want to supp
 |`ConfirmationDialog`|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|
 |`StandardDialog`|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
 |`NavigatePage`|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
-|`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.|
-
-<!--
-|`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.<br /><br />For more information, see [Creating a Role Center Headline](../create-role-center-headline.md)|
--->
+|`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center. For more information, see [Creating a Role Center Headline](devenv-create-role-center-headline.md)|
 
 > [!NOTE]  
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
@@ -76,7 +71,10 @@ You can choose between the following `area` categories:
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
 
 ### Adding, moving, and modifying
-In the `layout` section, you can use the following methods to place and move fields and groups on the page. Similarly, in the `actions` section, which is described [below](#page-actions), you use these methods to place actions in the ribbon. 
+In the `layout` section, you can use the following methods to place and move fields and groups on the page. 
+
+> [!TIP]  
+> Similarly, in the `actions` section, which is described [below](#page-actions), you use these methods to place actions in the ribbon. 
 
 |Method example         |Applies to |
 |-----------------------|-------------|
