@@ -3,7 +3,7 @@ title: "How to Unpublish and Uninstall an Extension v2.0"
 description: "Description of the process of upublishing and uinstalling an extension"
 author: jswymer
 ms.custom: na
-ms.date: 15/01/2018
+ms.date: 03/15/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,7 +41,7 @@ You can uninstall an extension by using the [!INCLUDE[nav_shell_md](includes/nav
 
 1. Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
 
-    For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). 
+    <!-- For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). -->
 2. To get a list of the extensions that are currently installed on a tenant, run the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo) with the `Tenant` parameter set.
 
     This cmdlet is useful because when you uninstall the extension, you will have to provide information about the extension, such as the its name, version, or path to the extension package file.
@@ -86,9 +86,9 @@ You unpublish an extension on a [!INCLUDE[d365_server_md](includes/d365_server_m
 
 1.  Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
 
-    For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). 
+    <!-- For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). -->
 
-2. To get a list of the extensions that are currently published on a tenant, run the [Get-NAVAppInfo cmdlet] (https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo) without the `Tenant` parameter.
+2. To get a list of the extensions that are currently published on a tenant, run the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo) without the `Tenant` parameter.
     
     This is useful because a server instance can have several published extensions, and unpublishing an extension requires that you provide specific information about the extension, like the name, version or path to extension package file. 
 
@@ -121,7 +121,7 @@ You unpublish an extension on a [!INCLUDE[d365_server_md](includes/d365_server_m
 
 1.  Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
 
-    For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). 
+    <!-- For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). -->
 2. Run the [Sync-NAVAPP](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet with the `-Mode`parameter set to `Clean`.
 
     ```
