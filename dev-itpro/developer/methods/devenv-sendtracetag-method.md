@@ -1,12 +1,12 @@
 ---
 title: "SENDTRACETAG Method"
 ms.custom: na
-ms.date: 27/01/2018
+ms.date: 03/15/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
@@ -49,7 +49,7 @@ Specifies a classification for the data in the telemetry trace event. The follow
 
 [!INCLUDE[data_classifications](../../includes/data_classifications.md)] 
 
-These values correspond to values of the [DataClassification property](devenv-dataclassification-property.md) on table objects and fields. Like the DataClassification property, you can use the `DataClassification` parameter to help comply with legislative requirements for collecting, storing, and using user personal information.
+These values correspond to values of the [DataClassification property](/properties/devenv-dataclassification-property.md) on table objects and fields. Like the DataClassification property, you can use the `DataClassification` parameter to help comply with legislative requirements for collecting, storing, and using user personal information.
 
 >[!IMPORTANT]
 >If you do not set the `DataClassification`, the telemetry trace event is automatically classified as `CustomerContent`.
@@ -73,7 +73,7 @@ A telemetry event is given one of the following event IDs, depending on the `DAT
 ||Warning|712 |
 
 
-For more information about instrumenting and monitoring telemetry, see [Instrumenting an Application for Telemetry](../../instrumenting-application-for-telemetry.md) and [Monitoring-Dynamics NAV Server Events](../../Monitoring-Microsoft-Dynamics-NAV-Server-Events.md). 
+<!-- For more information about instrumenting and monitoring telemetry, see [Instrumenting an Application for Telemetry](../../instrumenting-application-for-telemetry.md) and [Monitoring-Dynamics NAV Server Events](../../Monitoring-Microsoft-Dynamics-NAV-Server-Events.md). -->
 
 ## Example 
 The following code defines simple telemetry events for the five different severity levels. 
@@ -89,4 +89,5 @@ The events emitted by this code will have the events IDs (listed in the order th
 
 
 ## See Also  
-[Instrumenting an Application for Telemetry](../../instrumenting-application-for-telemetry.md)   
+[DataClassification property](/properties/devenv-dataclassification-property.md)  
+<!-- [Instrumenting an Application for Telemetry](../../instrumenting-application-for-telemetry.md)   -->

@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 
 
@@ -22,9 +22,9 @@ To explore and develop against APIs in [!INCLUDE[d365fin_long_md](includes/d365f
 When you have your tenant, you can sign into the UI to play with the product, as well as explore the APIs []()
 2. There are two different ways to connect to and authenticate against the APIs.  
     - Use Azure Active Directory (AAD) based authentication against the common API endpoint: https://api.businesscentral.dynamics.com/v1.0/api/beta
-    - Use basic authentication with username and password (a so-called web service access key) against the common API endpoint that includes the user domain, for example https://api.businesscentral.dynamics.com/v1.0/<tenant user domain URL>/api/beta.  
+    - Use basic authentication with username and password (a so-called web service access key) against the common API endpoint that includes the user domain, for example https://api.businesscentral.dynamics.com/v1.0/cronus.com/api/beta.  
         > [!IMPORTANT]  
-        > When going into production, you must use Azure Active Directory (AAD)/OAuth v2 authentication and the common endpoint https://api.businesscentral.dynamics.com/v1.0/api/beta. For exploring and initial development, you can use basic authentication. In the simple **Hello World** example, we are going to use basic authentication, as it is a bit faster to get up and running.
+        > When going into production, you must use Azure Active Directory (AAD)/OAuth v2 authentication and the common endpoint https://api.businesscentral.dynamics.com/v1.0/api/beta. For exploring and initial development, you can use basic authentication. In the simple **Hello World** example below, we are going to use basic authentication, as it is a bit faster to get up and running.
 
 3. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
 4. On the **Users** page, in the **Web Service Access Key** field, generate a key.  
@@ -65,7 +65,7 @@ Each resource is uniquely identified through an ID, see the following example of
 
 The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis () after the API endpoint. For example, to GET the “CRONUS USA, Inc.” company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
 
-All resources, such as customers, invoices etc, live in the context of a parent company or legal entity, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore it is a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the “CRONUS USA, Inc.” company, we must call a GET on the URL `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`.
+All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore, it is a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the “CRONUS USA, Inc.” company, we must call a GET on the URL `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`.
 
 ## See Also
 [Using Deltas With APIs](devenv-connect-apps-delta.md)  

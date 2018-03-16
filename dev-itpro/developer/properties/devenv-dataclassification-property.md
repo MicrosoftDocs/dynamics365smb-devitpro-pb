@@ -3,12 +3,12 @@ title: "DataClassification Property"
 description: Data classification property is used for security, compliance, privacy and process of collecting, storing and using user personal information. 
 ms.author: jswymer
 ms.custom: na
-ms.date: 02/01/2018
+ms.date: 03/15/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
@@ -37,5 +37,5 @@ FlowField and FlowFilter fields are automatically set to the **SystemMetadata** 
   
 ## See Also
 [Table Properties](devenv-table-properties.md)  
-[Classifying Data](../../classifying-data.md)  
-[View All Current Field Data Classifications](../../classifying-data.md#ViewDataClassifications)  
+<!-- [Classifying Data](../../classifying-data.md)  
+[View All Current Field Data Classifications](../../classifying-data.md#ViewDataClassifications)  -->

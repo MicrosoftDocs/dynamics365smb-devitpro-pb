@@ -198,6 +198,8 @@
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ## [Classifying Data](developer/devenv-classifying-data.md)
 ## [View Table Data](developer/devenv-view-table-data.md)
+## [Web Client URL](developer/devenv-web-client-urls.md)
+## [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## [AL Development Environment](developer/devenv-reference-overview.md)
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
@@ -366,7 +368,7 @@
 ## [Development Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools)
 -->
 <!-- preview of Graph API starts-->
-# [Preview of API Reference](fin-graph/index.md)
+# [Preview of Dynamics 365 Business Central API](fin-graph/index.md)
 ## [Enabling the APIs](fin-graph/enabling-apis-for-dynamics-nav.md)
 ## [Endpoints for the APIs](fin-graph/endpoints-apis-for-dynamics.md)
 ## [Error Codes](fin-graph/dynamics_error_codes.md)
