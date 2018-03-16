@@ -90,7 +90,7 @@ codeunit 70000001 MyExtensionUpgrade
 Press Ctrl+Shift+B to compile and build the extension complete with the application objects and upgrade codeunit.
 
 ## Run the upgrade
-The final task of the conversion is to publish the V2 extension, and run the data upgrade. The following steps use an example that upgrades a V1 extension that is called 'ProsewareStuff' and has the version '1.5.0.0.'. The V1 extension is published, installed, and populated with data. The V2 extension has the same name (and ID), but it has the version '1.5.1.0'. The [!INCLUDE[d365_server_md](includes/d365_server_md.md)] instance is called 'DynamicsNAV', and there is only one tenant.
+The final task of the conversion is to publish the V2 extension, and run the data upgrade. The following steps use an example that upgrades a V1 extension that is called 'ProsewareStuff' and has the version '1.5.0.0.'. The V1 extension is published, installed, and populated with data. The V2 extension has the same name (and ID), but it has the version '1.5.1.0'. The [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance is called 'DynamicsNAV', and there is only one tenant.
 
 The steps use the [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)]. 
 
