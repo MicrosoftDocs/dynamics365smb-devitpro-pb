@@ -1,7 +1,7 @@
 ---
 title: "GETFILTER Method (Query)"
 ms.custom: na
-ms.date: 07/13/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,7 +41,8 @@ Filter := Query.GETFILTER(Column)
  The **GETFILTER** method returns the filters that are currently set for a data column or filter row by the [SETFILTER Method \(Query\)](devenv-SETFILTER-Method-Query.md) method, [SETRANGE Method \(Query\)](devenv-SETRANGE-Method-Query.md) method, and the column's [ColumnFilter Property](../properties/devenv-ColumnFilter-Property.md) in Query Designer. The **GETFILTER** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](../properties/devenv-DataItemTable-Filter-Property.md) in Query Designer or global filters that are set by the **FILTERGROUP** method.  
   
 > [!NOTE]  
->  A filter row is row in Query Designer that is used to filter on a field that is not included in the resulting dataset. <!--Links For more information, see [Understanding Query Filters](Understanding-Query-Filters.md) and [How to: Set Up Filter Rows in Query Designer](How-to--Set-Up-Filter-Rows-in-Query-Designer.md).-->  
+>  A filter row is row in Query Designer that is used to filter on a field that is not included in the resulting dataset. 
+<!-- Links For more information, see [Understanding Query Filters](Understanding-Query-Filters.md) and [How to: Set Up Filter Rows in Query Designer](How-to-Set-Up-Filter-Rows-in-Query-Designer.md). -->  
   
  You can call the **GETFILTER** method multiple times and at any point in the code. If you call the **GETFILTER** method before the **SETFILTER** or **SETRANGE** method, then the **GETFILTER** method returns only filters on the column that are set by the column's ColumnFilter property.  
   

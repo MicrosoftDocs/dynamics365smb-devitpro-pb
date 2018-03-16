@@ -1,7 +1,7 @@
 ---
 title: "GetEnvironment Method"
 ms.custom: na
-ms.date: 06/05/2016
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,8 +22,8 @@ Gets information about the environment that the control add-in is using.
   
 |Member|Description|  
 |------------|-----------------|  
-|UserName|Type: String<br /><br /> The name of the user that is logged into the [!INCLUDE[d365_server_md](includes/d365_server_md.md)].|  
-|CompanyName|Type: String<br /><br /> The name of the company that the current user is using on the [!INCLUDE[d365_server_md](includes/d365_server_md.md)].|  
+|UserName|Type: String<br /><br /> The name of the user that is logged into the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)].|  
+|CompanyName|Type: String<br /><br /> The name of the company that the current user is using on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)].|  
 |DeviceCategory|Type: Integer<br /><br /> An integer indicating the type of device that the control add-in is being rendered on. Possible values:<br /><br /> 0 – Desktop client, either [!INCLUDE[nav_windows](../includes/nav_windows_md.md)] or [!INCLUDE[nav_web](../includes/nav_web_md.md)].<br /><br /> 1 – [!INCLUDE[nav_tablet](../includes/nav_tablet_md.md)].<br /><br /> 2 – [!INCLUDE[nav_phone](../includes/nav_phone_md.md)].|  
 |Busy|Type: Boolean<br /><br /> A boolean indicating whether the client is currently busy. The client could, for example, be busy performing an asynchronous call to the server.|  
 |OnBusyChanged|Type: Function<br /><br /> A function that is called when the **Busy** state of the client has changed.<br /><br /> **Function Syntax**<br /><br /> The syntax of the function is the following:<br /><br /> `function callback()`|  
