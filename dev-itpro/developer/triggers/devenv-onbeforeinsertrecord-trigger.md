@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+
 
 # OnBeforeInsertRecord Trigger
 Executed after a record has been loaded and before it is inserted into a database table.  
