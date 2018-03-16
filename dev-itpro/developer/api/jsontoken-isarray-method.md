@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # IsArray Property
 Indicates whether a [JsonToken](jsontoken-class.md) represents a JSON array.

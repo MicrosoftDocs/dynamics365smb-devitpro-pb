@@ -13,7 +13,7 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # WriteTo_Stream Method
 Serializes and writes the JSON data of the JsonArray to a given OutStream object.

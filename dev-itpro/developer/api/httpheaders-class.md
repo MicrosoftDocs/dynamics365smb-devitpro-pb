@@ -13,7 +13,7 @@ caps.latest.revision: 9
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # HttpHeaders Class
 The HttpHeaders' class contains a collection of headers and their values.
