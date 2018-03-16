@@ -31,7 +31,7 @@ Synchronizing an extension updates the database schema of the tenant database wi
 
 2.  To publish the extension, run the [Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079).
 
-    The cmdlet takes as parameters the [!INCLUDE[d365_server_md](includes/d365_server_md.md)] instance that you want to install to and the .app package file that contains the extension. The following example publishes the extension **MyExtension.app** to the **YourDynamicsNAVServer** instance.  
+    The cmdlet takes as parameters the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance that you want to install to and the .app package file that contains the extension. The following example publishes the extension **MyExtension.app** to the **YourDynamicsNAVServer** instance.  
 
     ```  
     Publish-NAVApp -ServerInstance YourDynamicsNAVServer -Path ".\MyExtension.app"
