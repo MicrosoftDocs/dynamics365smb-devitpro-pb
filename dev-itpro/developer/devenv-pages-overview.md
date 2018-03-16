@@ -1,7 +1,8 @@
 ---
 title: "Pages Overview"
+author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/07/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,13 +10,10 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 0ba68a20-d83a-4e4c-9938-dac7fa8f5461
 caps.latest.revision: 35
-manager: edupont
+ms.author: solsen
 ---
 
-
-
 # Pages Overview
-
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], pages are the main way to display and organize data. Pages are the primary object that a user will interact with and have a different behavior based on the type of page that you choose. Pages are designed independently of the device they are to be rendered on, and in this way the same page can be reused across phone, tablet, and web clients.
 
 A page is defined in code as an object composed of controls, properties, actions, and triggers. You can also use Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to create a page. For more information, see [Using Designer](devenv-inclient-designer.md).
@@ -27,7 +25,7 @@ The structure of a page is hierarchical and breaks down in to three sections. Th
 Furthermore, the page has properties. Properties work in the same way for pages as they do for other [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] objects. For more information, see [Page Properties](properties/devenv-page-property-overview.md).  
 
 ## Page Metadata
-For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object. 
+For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object. An simple example of a page declaration is shown below:
 
 ```
 page Id PageName
@@ -55,13 +53,28 @@ Which page type you choose depends on the application task that you want to supp
 |`ConfirmationDialog`|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|
 |`StandardDialog`|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
 |`NavigatePage`|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
-|`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.<br /><br />For more information, see [Creating a Role Center Headline](../create-role-center-headline.md)|
+|`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.<br /><br />For more information, see [Creating a Role Center Headline](devenv-create-role-center-headline.md)|
 
 > [!NOTE]
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
 
 ## Page Layout
 The page layout of the page object determines what the page will look like and is specified in the `layout` section. The `layout` contains one or more `area` sections that define a certain placement on the page. 
+
+```
+page 70000200 SimpleCustomerCard
+{
+    PageType = Card;
+    SourceTable = Customer;
+
+    layout
+    {
+        area(content)
+        {
+            group(General)
+            {
+                ...
+```
 
 You can choose between the following `area` categories:
 
@@ -70,6 +83,7 @@ You can choose between the following `area` categories:
 |`Content`|The content area displays the content of a RoleCenter or List page.|
 |`FactBoxes`|The factbox area is placed to the right-most side of a page. Displays content related to an item om the main content page.|
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
+
 
 ### Adding and moving
 In the `layout` section, you can use the following methods to place and move fields and groups on the page. Similarly, in the `actions` section, which is described [below](#page-actions), you use these methods to place actions in the ribbon. 
@@ -85,7 +99,34 @@ In the `layout` section, you can use the following methods to place and move fie
 |```moveafter(AddressDetails)``` |Fields and groups|
 |```movebefore(AddressDetails)```|Fields and groups|
 
-If you want to modify existing fields and groups on a page, you use the `modify` method. See the code example below for syntax.
+If you want to modify existing fields and groups on a page, you use the `modify` method. See the code snippet below for `addlast` and `modify` syntax.
+
+```
+pageextension 70000020 CustomerCardExtension extends "Customer Card"
+{
+    layout
+    {
+        addlast(General)
+        {
+            field("Shoe Size"; ShoeSize)
+            {
+                CaptionML = ENU='ShoeSize';
+
+                trigger OnValidate();
+                begin
+                    if ShoeSize < 10 then
+                        Error('Feet too small');
+                end;
+            }
+        }
+
+        modify("Address 2")
+        {
+            CaptionML = ENU='New Address 2';
+        }
+    }
+        ...
+```
 
 <!--
 ### Page controls  
@@ -108,7 +149,7 @@ You can add page controls to a page depending on the page type you have chosen.
 
   
 ## Page actions
-All pages contain menu items and navigation controls called actions. The ```actions``` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. Actions are added to the ribbon or as activity buttons/cues. The following example creates a new group in the ribbon and places it last in the General group.
+All pages contain menu items and navigation controls called actions. The ```actions``` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. Actions are added to the ribbon or as activity buttons/cues. The following example creates a new group in the ribbon and places it last in the **General** group.
 
 ```
 addlast(General)
@@ -141,4 +182,6 @@ We recommend that you simplify the user experience by reducing what users see by
 -   Use one to three FactBoxes on a page to provide supplementary information and a place for adding notes.  
   
 ## See Also  
-[Page Properties Overview](properties/devenv-page-property-overview.md)
+[Page Properties Overview](properties/devenv-page-property-overview.md)  
+[Page Object](devenv-page-object.md)  
+[Page Extension Object](devenv-page-ext-object.md)  
