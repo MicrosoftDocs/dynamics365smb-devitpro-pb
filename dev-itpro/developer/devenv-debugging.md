@@ -23,7 +23,7 @@ The process of finding and correcting errors is called *debugging*. With Visual 
 > To enable debugging the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**.
 This requires a server restart.
 
-For the preview, there are a number of limitations to be aware of:
+There are a number of limitations to be aware of:
 
 - "External code" can only be debugged if the code has the `ShowMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md). 
 - Not all AL types yet show helpful debugging.
