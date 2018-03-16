@@ -52,7 +52,7 @@ Ok := Record.WRITEPERMISSION
 ## Remarks  
  This method uses the filter that is currently applied to the *Record* to determine whether you have write permission. If no filter is applied, the method tests for full write permission. If a filter has been set, the method only tests for write permission within the range of the filter.  
   
- To determine whether the user has a partial read permission, because a security filter has been applied, view the **Permissions** page. <!--Links For more information, see [How to: Set Security Filters](How-to--Set-Security-Filters.md).-->  
+ To determine whether the user has a partial read permission, because a security filter has been applied, view the **Permissions** page. <!--Links For more information, see [How to: Set Security Filters](How-to-Set-Security-Filters.md).-->  
   
  If you do not have permission to write to a table and you attempt to write, a run-time error occurs. This method allows you to determine in advance if you have write permission. When the permissions are checked, the combination of permissions in the license file and the user's permissions in the Permission table is considered.  
   
