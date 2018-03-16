@@ -75,7 +75,7 @@ You can choose between the following `area` categories:
 |`FactBoxes`|The factbox area is placed to the right-most side of a page. Displays content related to an item om the main content page.|
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
 
-### Adding and moving
+### Adding, moving, and modifying
 In the `layout` section, you can use the following methods to place and move fields and groups on the page. Similarly, in the `actions` section, which is described [below](#page-actions), you use these methods to place actions in the ribbon. 
 
 |Method example         |Applies to |
@@ -89,28 +89,36 @@ In the `layout` section, you can use the following methods to place and move fie
 |```moveafter(AddressDetails)``` |Fields and groups|
 |```movebefore(AddressDetails)```|Fields and groups|
 
-If you want to modify existing fields and groups on a page, you use the `modify` method. See the code example below for syntax.
 
-<!--
-### Page controls  
-You can add page controls to a page depending on the page type you have chosen.
+If you want to modify existing fields and groups on a page, you use the `modify` method. See the code snippet below for `addlast` and `modify` syntax.
 
-|Page Control|Supported on Pages|
-|------------|------------|
-|`repeater`|List, Card|
-|`cuegroup`||
-|`part`||
-|`factbox`||
-|`fasttab`||
-|`homepart`||
-|`chartpart`||
-|`pagepart`||
-|`systempart`||
-|`ribbon`||
-|`filterpane`||
--->
+```
+pageextension 70000020 CustomerCardExtension extends "Customer Card"
+{
+    layout
+    {
+        addlast(General)
+        {
+            field("Shoe Size"; ShoeSize)
+            {
+                CaptionML = ENU='ShoeSize';
 
-  
+                trigger OnValidate();
+                begin
+                    if ShoeSize < 10 then
+                        Error('Feet too small');
+                end;
+            }
+        }
+
+        modify("Address 2")
+        {
+            CaptionML = ENU='New Address 2';
+        }
+    }
+        ...
+```
+ 
 ## Page actions
 All pages contain menu items and navigation controls called actions. The ```actions``` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. Actions are added to the ribbon or as activity buttons/cues. The following example creates a new group in the ribbon and places it last in the General group.
 
