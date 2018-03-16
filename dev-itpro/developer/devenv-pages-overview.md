@@ -127,27 +127,7 @@ pageextension 70000020 CustomerCardExtension extends "Customer Card"
     }
         ...
 ```
-
-<!--
-### Page controls  
-You can add page controls to a page depending on the page type you have chosen.
-
-|Page Control|Supported on Pages|
-|------------|------------|
-|`repeater`|List, Card|
-|`cuegroup`||
-|`part`||
-|`factbox`||
-|`fasttab`||
-|`homepart`||
-|`chartpart`||
-|`pagepart`||
-|`systempart`||
-|`ribbon`||
-|`filterpane`||
--->
-
-  
+ 
 ## Page actions
 All pages contain menu items and navigation controls called actions. The ```actions``` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. Actions are added to the ribbon or as activity buttons/cues. The following example creates a new group in the ribbon and places it last in the **General** group.
 
