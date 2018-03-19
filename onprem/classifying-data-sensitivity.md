@@ -44,7 +44,7 @@ For example, the Data Classification worksheet lets you do things like:
 * Investigate a field by viewing its contents.  
 
 > [!Tip]
-> We have defined sample sensitivity classifications for the tables and fields in the Cronus demonstration company. You can use those classifications as inspiration when you classify your own tables and fields.
+> We have defined sample sensitivity classifications for the tables and fields in the Cronus demonstration company. The data and classifications are provided for demonstration purposes only. Please do not use them in a live production environment. However, you can use the classifications as inspiration when you classify your own tables and fields.
 
 ## See Also
 [Classifying Data](classifying-data.md)
