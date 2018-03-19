@@ -36,7 +36,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "searchScope": ["BusinessCentral"],
+      "uhfHeaderId": "MSDocsHeader-Dynamics365",
+      "titleSuffix": "Business Central",
       "breadcrumb_path": "/business-central/dev-itpro/breadcrumb/toc.json",
+      "ms.service": "dynamics365-business-central",
       "extendBreadcrumb": true
     },
     "fileMetadata": {},
