@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Post Method
 Sends a POST request to the specified Uniform Resource Identifier (URI) as an asynchronous operation.

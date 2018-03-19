@@ -12,7 +12,6 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnModify Trigger
 Executed when a user modifies an existing record in a table.  

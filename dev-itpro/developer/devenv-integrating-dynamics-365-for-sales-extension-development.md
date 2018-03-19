@@ -13,7 +13,6 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # Integrating Dynamics 365 for Sales for Extension Development
 

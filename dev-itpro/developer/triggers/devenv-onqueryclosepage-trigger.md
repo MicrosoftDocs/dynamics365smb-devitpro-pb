@@ -12,7 +12,6 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnQueryClosePage Trigger
 Executed as a page closes and before the [OnClosePage Trigger](devenv-OnClosePage-Trigger.md) executes.  

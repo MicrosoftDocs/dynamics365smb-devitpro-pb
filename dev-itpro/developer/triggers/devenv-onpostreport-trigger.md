@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+
 
 # OnPostReport Trigger
 Executed after a report is run.  
@@ -38,7 +38,6 @@ MESSAGE(Text000, NumberOfErrors);
 
  Because this trigger is executed before the End Write Transaction, you can also give the user the opportunity to roll back changes to the database by leaving the report with the [QUIT Method \(Report, XMLport\)](../methods/devenv-quit-method-report-xmlport.md).  
 
-## See Also  
 ## See Also  
  [Triggers](devenv-triggers.md)  
  [QUIT Method (Report, XMLport)](../methods/devenv-quit-method-report-xmlport.md)  

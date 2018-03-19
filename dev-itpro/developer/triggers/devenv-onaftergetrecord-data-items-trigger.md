@@ -12,7 +12,6 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnAfterGetRecord (Data Items) Trigger
 Executed each time a record is retrieved from the data item.  

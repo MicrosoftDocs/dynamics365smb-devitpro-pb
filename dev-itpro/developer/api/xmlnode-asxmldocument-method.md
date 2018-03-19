@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # AsXmlDocument Method
 Converts the node to an XmlDocument node. The operation will fail if the node is not an XmlDocument.  

@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # WriteFrom Method
 Sets [HttpContent](httpcontent-class.md) content to the provided text or stream.

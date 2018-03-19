@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+
 
 # OnNewRecord Trigger
 Executed after a new record is initialized, but before users can make entries.  

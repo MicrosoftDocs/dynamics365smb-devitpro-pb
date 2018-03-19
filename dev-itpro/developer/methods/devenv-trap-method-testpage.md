@@ -1,7 +1,7 @@
 ---
 title: "TRAP Method (TestPage)"
 ms.custom: na
-ms.date: 07/13/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,8 +19,7 @@ Traps the next test page that is invoked and assigns it to the test page variabl
   
 ## Syntax  
   
-```  
-  
+```    
 TestPage.TRAP  
 ```  
   
@@ -31,7 +30,7 @@ TestPage.TRAP
  The test page variable that you use to refer to the test page.  
   
 ## Remarks  
- You can trap only nonmodal pages with the TRAP method. To trap modal pages that you invoke with the [RUNMODAL Method \(Page\)](devenv-RUNMODAL-Method-Page.md) or the [PAGE.RUNMODAL Method](devenv-PAGE-RUNMODAL-Method.md), you must use the **ModalFormHandler** method. <!--Links For more information, see [How to: Create Handler Methods](devenv-How-to--Create-Handler-Methods.md). --> 
+ You can trap only nonmodal pages with the TRAP method. To trap modal pages that you invoke with the [RUNMODAL Method \(Page\)](devenv-RUNMODAL-Method-Page.md) or the [PAGE.RUNMODAL Method](devenv-PAGE-RUNMODAL-Method.md), you must use the **ModalFormHandler** method. <!--Links For more information, see [How to: Create Handler Methods](devenv-How-to-Create-Handler-Methods.md). --> 
   
 ## Example  
  This example shows how to use the **TRAP** method to trap a call to open a test page so that the opened page is assigned to a variable.  

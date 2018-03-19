@@ -11,7 +11,6 @@ ms.assetid: 4b6df5e3-5346-4171-8113-54e098e4bc02
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnPreDataItem Trigger
 Executed before a data item is processed.  
