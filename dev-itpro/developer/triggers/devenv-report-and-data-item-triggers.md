@@ -11,7 +11,7 @@ ms.assetid: 7b87c648-7204-4513-babe-0a49d7996f19
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+
 
 # Report and Data Item Triggers
 In reports, triggers are typically used to perform calculations and verification. Triggers let you control how data is selected and retrieved in a more complex and effective way than you can achieve by using properties.  

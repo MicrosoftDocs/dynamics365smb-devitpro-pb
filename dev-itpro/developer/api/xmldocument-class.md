@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # XmlDocument Class
 Represents an XML document. This class can be used to load, validate, edit, add, and position XML in a document.

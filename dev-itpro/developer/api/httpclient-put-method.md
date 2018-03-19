@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Put Method
 Sends a PUT request to the specified Uniform Resource Identifier (URI) as an asynchronous operation.

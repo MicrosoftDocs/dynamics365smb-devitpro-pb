@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+
 
 # OnValidate (Page fields) Trigger
 Executed when a field loses focus after its value has been changed.  
@@ -20,7 +20,7 @@ Executed when a field loses focus after its value has been changed.
 ## Syntax  
   
 ```  
-  
+
 OnValidate()  
 ```  
   

@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # JsonValue Class
 JsonValue is a container for any well-formed fundamental JSON value. A default JsonValue is set to the JSON value of NULL.

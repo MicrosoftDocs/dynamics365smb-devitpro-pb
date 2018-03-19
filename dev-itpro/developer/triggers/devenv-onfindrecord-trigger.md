@@ -12,7 +12,6 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnFindRecord Trigger
 Overrides the default page behavior and enables you to specify which record you want to display when the page opens.  

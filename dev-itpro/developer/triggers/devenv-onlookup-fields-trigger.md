@@ -11,7 +11,6 @@ ms.assetid: b81542a2-308f-4ed4-b5c4-9484df43285c
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnLookup (Fields) Trigger
 Causes the system to display a lookup page.  
