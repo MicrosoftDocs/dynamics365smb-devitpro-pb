@@ -37,7 +37,7 @@ You can only base Cues on integer and decimal data types. Other data types are n
 ### FlowFields versus normal fields  
 A Cue can be based on a FlowField or Normal field. If you base the Cue on a FlowField, then you add the logic that calculates the data for the Cue to the [CalcFormula property](properties/devenv-calcformula-property.md) of the FlowField. If you use a Normal field, then you will typically add the logic that calculates the Cue data to a C/AL trigger or function. Unlike a FlowField, where data is extracted from tables, a Normal field enables you to extract data from other objects such as queries.  
   
-### Creating a Cue
+### <a name="CreateCue"></a>Creating a Cue
 The implementation of a Cue involves the following elements:
 
 -   A table object with a field that holds the data that is contained in the Cue at runtime.  

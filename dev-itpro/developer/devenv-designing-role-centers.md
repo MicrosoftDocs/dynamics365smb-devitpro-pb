@@ -18,7 +18,7 @@ ms.author: jswymer
 The Role Center is the user's entry point and home page for [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users. For example, you could have a Role Center for sales order processors, business managers, administrators and more. A Role Center should be designed to give users quick access to the information that is most important to them in their daily work.
 
 ## Overview
-A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation area and page parts area. The following figure illustrates the general layout and elements of a Role Center page.
+A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation area and content parts area. The following figure illustrates the general layout and elements of a Role Center page.
 
 ![Role Center overview](media/rolecenter-overview.png "Role Center overview")
 
@@ -42,7 +42,7 @@ The page part area specifies the content that appears on the Role Center. The pa
 |----|-------|-----------|----------------|
 |4|Headline|Displays a series of automatically changing headlines that provide users with up-to-date information and insight into the business and daily work. This is created by a `HeadlinePart` page type. |[Creating Role Center Headlines](devenv-create-role-center-headline.md)||
 |5|Wide cues | A set of cues for displaying large numbers, like monetary values. This is created by using a `cuegroup` control on a `CardPart` page type, where the [Layout property](properties/devenv-layout-property.md) is set to `wide`. |[Wide Cues](devenv-cues-action-tiles.md#CueWideLayout)|
-|6|Normal cues |Provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. These are created by using a `cuegroup` control on a `CardPart` page type. |[Designing Cues](devenv-cues-action-tiles.md#CueDesign)|
+|6|Normal cues |Provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. These are created by using a `cuegroup` control on a `CardPart` page type. |[Creating Cues](devenv-cues-action-tiles.md#CreateCue)|
 |7|Action tiles |Tiles that link to tasks or operations, like opening another page, starting a video, targeting another resource or URL, or running code. These are created by using a `cuegroup` control on a `CardPart` page type|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
 |8|Chart|A graphical representation of business data controlled by a the Business Chart control add-in on a page. ||
 |9|CardPart page|A `CardPart` page type that displays fields in a gridlayout.||
