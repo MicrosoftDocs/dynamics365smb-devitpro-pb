@@ -12,7 +12,6 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnBeforePassVariable Trigger
 Executed after the source expression has been formatted into a text variable and before the text variable is passed to the XML document.  

@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # XmlNodeList Class
 Represents an ordered collection of nodes.

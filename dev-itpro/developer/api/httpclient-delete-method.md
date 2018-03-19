@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Delete Method
 Sends a DELETE request to delete the resource identified by the request URL.

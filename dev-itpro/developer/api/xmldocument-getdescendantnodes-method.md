@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GetDescendantNodes Method
 Gets a list containing the descendant nodes for this document, in document order.  

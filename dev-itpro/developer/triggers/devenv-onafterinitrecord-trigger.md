@@ -12,7 +12,6 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnAfterInitRecord Trigger
 Executed after a record is loaded.  

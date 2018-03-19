@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # PushScope Method
 Pushes a namespace scope onto the stack.  

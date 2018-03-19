@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # JsonArray Class
 JsonArray is a container for any well-formed JSON array. A default JsonArray contains an empty JSON array.

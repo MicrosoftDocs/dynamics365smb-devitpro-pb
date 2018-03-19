@@ -12,7 +12,6 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnAssistEdit Trigger
 Executed in place of the [AssistEdit Property](../properties/devenv-assistedit-property.md) features that are provided in the application.  

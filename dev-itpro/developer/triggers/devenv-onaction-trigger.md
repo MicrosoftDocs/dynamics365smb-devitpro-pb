@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+
 
 # OnAction Trigger
 Executed when a user selects an action on a page.  

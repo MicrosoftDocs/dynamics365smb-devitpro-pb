@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Contains Method
 Verifies if a [JsonObject](jsonobject-class.md) contains a property with a given key.

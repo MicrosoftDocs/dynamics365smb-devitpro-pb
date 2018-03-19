@@ -12,7 +12,6 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnOpenPage Trigger
 Executed after a page is initialized and run.  

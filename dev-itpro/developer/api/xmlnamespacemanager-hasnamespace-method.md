@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # HasNamespace Method
 Gets a value indicating whether the supplied prefix has a namespace defined for the current pushed scope.  

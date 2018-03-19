@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # AsXmlDeclaration Method
 Converts the node to an XmlDeclaration node. The operation will fail if the node is not an XmlDeclaration.  
