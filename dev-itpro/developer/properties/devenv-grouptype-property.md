@@ -24,7 +24,7 @@ Sets the subtype for a group control on a page, which determines how fields in a
 
 |Value|[!INCLUDE[bp_tabledescription](../includes/bp_tabledescription_md.md)]|  
 |-----------|---------------------------------------| 
-|**Group**|If the control is a top level control that does not have a child group of the subtype **CueGroup**, **FixedLayout**, or **GridLayout**, then the **Group** setting creates a FastTab of fields; otherwise, it acts as a container for the child group.|[How to: Add FastTabs to a Customer Card Page](How-to-Add-FastTabs-to-a-Customer-Card-Page.md)|  
+|**Group**|If the control is a top level control that does not have a child group of the subtype **CueGroup**, **FixedLayout**, or **GridLayout**, then the **Group** setting creates a FastTab of fields; otherwise, it acts as a container for the child group.|  
 |**Repeater**|Arranges fields in a row and repeats the fields on subsequest lines in a table. This is used for displaying data in a list, such as Sales Orders or Customers.|  
 |**CueGroup**|Displays fields as a Cue on page. A Cue is a graphical representation of a total number of entities in a database table. This is typically only used on Role Center page types.| 
 |**FixedLayout**|Arranges fields in rows and columns.<br /><br /> This value is not fully supported by the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)]. You can experience misalignment of captions and fields in some setups.|  

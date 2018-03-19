@@ -1,7 +1,7 @@
 ---
 title: "GETLASTERRORCALLSTACK Method"
 ms.custom: na
-ms.date: 07/13/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,9 @@ String := GETLASTERRORCALLSTACK
  If no error has occurred, then the method returns an empty string.  
   
 ## Remarks  
- For some errors, such as divide by zero errors and overflow errors, **GETLASTERRORCALLSTACK** does not return every call in the stack. To get the complete call stack for these types of errors, use the debugger and specify that you want to break on errors. On the **Debugger** page, in the **Call Stack** FactBox, you can view all the method calls that led to the error. <!--Links For more information, see [How to: Break on Errors](How-to--Break-on-Errors.md). --> 
+ For some errors, such as divide by zero errors and overflow errors, **GETLASTERRORCALLSTACK** does not return every call in the stack. To get the complete call stack for these types of errors, use the debugger and specify that you want to break on errors. On the **Debugger** page, in the **Call Stack** FactBox, you can view all the method calls that led to the error. 
+ 
+ <!-- Links For more information, see [How to: Break on Errors](How-to-Break-on-Errors.md). --> 
   
 ## Example  
  In this example, an error occurs in codeunit 50003. The text of the MESSAGE includes a call to the GETLASTERRORCALLSTACK method.  

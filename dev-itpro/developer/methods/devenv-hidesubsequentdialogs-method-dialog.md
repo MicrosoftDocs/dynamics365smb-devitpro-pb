@@ -26,14 +26,14 @@ The Dialog variable that you want to open.
 
 Type: Boolean
 
-**true** hides any subsequent dialogs. **false** is default.
+**True** hides any subsequent dialogs. **false** is default.
 
 ## Return Value
 *IsHideSubsequentDialogs*
 
 Type: Boolean
 
-**true** if the HIDESUBSEQUENTDIALOGS set to **true**; otherwise, **false**.
+**True** if the HIDESUBSEQUENTDIALOGS set to **true**; otherwise, **false**.
 
 ## Remarks
 You must call the HIDESUBSEQUENTDIALOGS method on the dialog variable before the OPEN method. Until the OPEN method is called on this variable, calls on other dialog variables will behave as normal.
@@ -80,4 +80,4 @@ var
 [Dialog Data Type](../datatypes/devenv-dialog-data-type.md)  
 [OPEN Method](devenv-open-method-dialog.md)  
 [CLOSE Method](devenv-close-method-dialog.md)  
-[UPDATE Method](devenv-update-method-dialog.md)  
+<!-- [UPDATE Method](devenv-update-method-dialog.md) -->
