@@ -27,26 +27,27 @@ The navigation area appears at the top of the Role Center page, and provides lin
 
 |    |Area|Description|More information|
 |----|-------|-----------|----------------|
-|1|Top-level menu|This area is defined by an `area(sections)` control. Each top-level item in the menu is defined by a `group` control under the `area(sections)` control, and the submenu items are defined by `action` controls under the `group` control.|The top-level menu should provide access to most important enitity lists based on the major areas of business.|
-|2|Second level menu |These items are defined by an `area(embedding)` control. Each item is defined by a `action` control that targets a specific object. |You should use these items to open the entity lists most used by the users, regardless of the business area. |
-|3|Action menu|The action menu area is defined by three different `area`controls: `area(creation)`, `area(processing)`, and  `area(reporting)`. </br> </br> Actions in the `area(creation)` control will appear first in the action menu, and will have plus icon. </br></br> Actions in an an `area(processing)` control will appear after the `area(creation)` items. The actions can be groups are:</br> </br> Actions in the `area(reporting)` control, display last in the action menu, and appear with defult report icon. |The action menau area is desgined for specific tasks and operations. se actions should target card type pages that enable users to create new entities, such as customers, invoices, and sales orders.|
+|1|First-level|This area is defined by an `area(sections)` control. Each top-level item in the menu is defined by a `group` control under the `area(sections)` control, and the submenu items are defined by `action` controls under the `group` control.|The top-level navigation should provide access to most important enitity lists for the profile's areas of business. For example, typical lists for sales order processor could be customers, sales orders, quotes, and invoices.  |
+|2|Second-level|These items are defined by an `area(embedding)` control. Each item is defined by a `action` control that targets a specific object, like a page or report. |You should use these items to open the entity lists most used by the users, regardless of the business area. |
+|3|Action-level|This area is defined by three different `area`controls: `area(creation)`, `area(processing)`, and  `area(reporting)`. <ul><li>Actions in the `area(creation)` control will appear first in the action menu, and will have plus icon.</li><li>Actions in an an `area(processing)` control will appear after the `area(creation)` items.</li><li>Actions in the `area(reporting)` control display last in the action area, and appear with default report icon. |The action area is designed for specific tasks and operations. These actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders. |
 
 ### Behavior
+-   If the first part in the content area is a Headline part, then in the client, the action area will be positioned either to the right of the Headline part or after the Headline part, dending on the browser window size. Otherwise, the action area will appear at the bottom of the navigation area, and extend the width of the workspace. 
+
 
 ## Page part area
-The page part area specifies the content that appears on the Role Center. The page part area consists of one or more parts that are are associated with a :
-
+The page part area specifies the content that appears on the Role Center. The page part area consists of one or more parts that are are associated with a page. The following table described some of the most common parts for Role Centers.
 
 |    |Element|Description|More information|
 |----|-------|-----------|----------------|
-|4|Headline|Displays a series of automatically changing headlines to provide users with up-to-date information and insight into the business and daily work. Created by a `HeadlinePart` page type. |[Creating Role Center Headlines](devenv-create-role-center-headline.md)||
-|5|Wide cues | A set of cues for displaying large numbers, like monetary values. Created by using a `cuegroup` control on a `CardPart` page type. |[Designing Cues](devenv-cues-action-tiles.md#CueDesign)|
-|6|Normal cues |Provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. Created by using a `cuegroup` control on a `CardPart` page type. |[Designing Cues](devenv-cues-action-tiles.md#CueDesign)|
-|7|Action tiles |Action tiles act as links that perform a task or operation, like opening another page, starting a video, targeting an another resource or URL, or running code. Created by using a `cuegroup` control on a `CardPart` page type|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
+|4|Headline|Displays a series of automatically changing headlines that provide users with up-to-date information and insight into the business and daily work. This is created by a `HeadlinePart` page type. |[Creating Role Center Headlines](devenv-create-role-center-headline.md)||
+|5|Wide cues | A set of cues for displaying large numbers, like monetary values. This is created by using a `cuegroup` control on a `CardPart` page type, where the [Layout property](properties/devenv-layout-property) is set to `wide`. |[Designing Cues](devenv-cues-action-tiles.md#CueWideLayout)|
+|6|Normal cues |Provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. These are created by using a `cuegroup` control on a `CardPart` page type. |[Designing Cues](devenv-cues-action-tiles.md#CueDesign)|
+|7|Action tiles |Tiles that link to tasks or operations, like opening another page, starting a video, targeting an another resource or URL, or running code. These are created by using a `cuegroup` control on a `CardPart` page type|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
 |8|Chart|A graphical representation of business data controlled by a the Business Chart control add-in on a page. ||
 |9|CardPart page|A `CardPart` page type that displays fields in a gridlayout.||
 
-### Arranging
+### Behavior
 - In general, the parts will appear in the client according to the order in which they are defined in the RoleCenter page code.
 - However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues will appear under the **Activities** section, not matter where they are placed in the code. All other page parts under the **Business Assistance** section.  
  
