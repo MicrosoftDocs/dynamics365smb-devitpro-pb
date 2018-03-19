@@ -3,7 +3,7 @@ title: "Getting Started with AL"
 description: "Description of how to get started with the new development environment"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/08/2018
+ms.date: 03/19/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +13,6 @@ ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
 ---
-
-
 
 # Getting Started with AL
 To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you will need a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant, Visual Studio Code, and the AL Language extension. Visual Studio Code is a cross platform editor that you will use for coding and debugging.
@@ -39,6 +37,8 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 > If symbols are missing, you will be prompted to download them.
 
 As this feature is still in preview you might run into unrecoverable issues from time to time. In these cases, use [Reset Sandbox](https://portal.businesscentral.dynamics.com/reset?env=sandbox&redirectedFromSignup=false) to reset the sandbox and start from a clean environment.
+
+For information about which sandboxes you can choose, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
 
 <!--
 Interested in an on-premise version? It's just as easy. Just sign up by following these steps.
