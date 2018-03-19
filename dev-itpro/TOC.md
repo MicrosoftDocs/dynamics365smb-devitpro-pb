@@ -368,8 +368,10 @@
 ## [Development Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools)
 -->
 <!-- preview of Graph API starts-->
+
 <!-- 
-# [Preview of Dynamics 365 Business Central API](fin-graph/index.md)
+# [Preview of Dynamics 365 Business Central API](dynamics-nav/fin-graph/)
+
 ## [Enabling the APIs](fin-graph/enabling-apis-for-dynamics-nav.md)
 ## [Endpoints for the APIs](fin-graph/endpoints-apis-for-dynamics.md)
 ## [Error Codes](fin-graph/dynamics_error_codes.md)
