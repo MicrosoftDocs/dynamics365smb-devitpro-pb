@@ -28,6 +28,9 @@ The following table describes data sensitivity levels you can assign.
 |Confidential | Business data that you use for accounting or other business purposes, and do not want to expose to other entities. For example, this might include ledger entries.|
 |Normal | General data that does not belong to any other categories.|
 
+> [!Tip]
+> Typically, Confidential and Normal do not apply to any data that is related to a person. For personal data, consider using the Sensitive or Personal classifications. For example, this can also make it easier to respond when a data subject requests an action on their personal data because you can filter on the Sensitive or Personal classifications.
+
 ## How Do I Classify My Data?
 Classifying the sensitivity of a large number of fields one-by-one would take a long time. To help speed up the process, we provide tools that you can use to bulk classify the sensitivity of fields, and then fine-tune classifications for specific fields. You can find tools on the Data Classification worksheet, which is available on the Administration of users, user groups, and permissions Role Center. You must be a system administrator to use the worksheet.
 
