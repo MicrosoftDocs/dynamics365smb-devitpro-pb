@@ -8,13 +8,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Ready to Go
-The **Ready to Go** program contains a set of resources, services and tools which enables you to provide your offerings on Microsoft [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and Microsoft Appsource.     
+The **Ready to Go** program contains a set of resources, services and tools which enables you to provide your offerings on Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and Microsoft Appsource.     
 
 It holds the following three core elements:
 
@@ -23,12 +23,12 @@ It holds the following three core elements:
 3. The Ready to Go platform.
 
 ## The Ready to Go online learning
-An extensive resource library hosted on the **Dynamics Learning Portal**. It contains readiness information for marketers, business decision makers, Architects and developers. The content addresses the needs of both reselling partners of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] as App builders who want to provide Apps on Microsoft AppSource. 
+An extensive resource library hosted on the **Dynamics Learning Portal**. It contains readiness information for marketers, business decision makers, architects, and developers. The content addresses the needs of both reselling partners of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] as App builders who want to provide Apps on Microsoft AppSource. 
 
 You can find the **Ready to Go Online Training Catalog** at the Dynamics Learning Portal: http://aka.ms/ReadyToGoOnlineLearning. 
 
 ## The Ready to Go trainings and workshops provided by Development Centers and Master VARs
-The Microsoft Development Centers and Master VARs provide technical service offerings and have industry specific knowledge that you can contract and leverage when developing your App. These companies are independently owned and operated.  There is a worldwide presence of development centers and are therefore always within reach to assist you. Over time, they have built up a strong knowledge base and a set of highly developed best practices that you can lean on when developing your apps. When contracting a Development Center, you get solid and well-founded assistance in creating offerings for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and Microsoft AppSource.  
+The Microsoft Development Centers and Master VARs provide technical service offerings and have industry specific knowledge that you can contract and leverage when developing your App. These companies are independently owned and operated.  There is a worldwide presence of development centers and are therefore always within reach to assist you. Over time, they have built up a strong knowledge base and a set of highly developed best practices that you can lean on when developing your apps. When contracting an Development Center, you get solid and well-founded assistance in creating offerings for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and Microsoft AppSource.  
 
 Learn more about Development Centers [here](https://mbs2.microsoft.com/ecsts/login?signin=df674c6c7559ddc58e42ef30e355498e).
 
@@ -38,7 +38,7 @@ This workshop helps you in validating your complete offer, from a business, mark
 
 |Type|Company Name        |**Ready to Go** Validation Workshop|
 |----|--------------------|------------------|
-|Development Center       |1ClickFactory|[https://www.1clickfactory.com/ready-to-go/ready-to-go/](https://www.1clickfactory.com/ready-to-go/ready-to-go/)|
+|Development Center       |1ClickFactory|[https://www.1clickfactory.com/readytogo/](https://www.1clickfactory.com/readytogo/)|
 |    |Ciellos             | [http://www.ciellos.com/ready-to-go](http://www.ciellos.com/ready-to-go)   |  
 |    |Cloud Ready Software|[http://www.cloud-ready-software.com/readytogo](http://www.cloud-ready-software.com/readytogo)  |
 |    |Innova Consulting   |[http://www.innovaconsulting.es/en/readytogo/](http://www.innovaconsulting.es/en/readytogo/)   |
@@ -46,7 +46,7 @@ This workshop helps you in validating your complete offer, from a business, mark
 |    |Velosio             |[https://www.velosio.com/readytogo/](https://www.velosio.com/readytogo/)  |
 
 ## The Ready to Go platform
-A place where you can find current & upcoming builds of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] which helps you with your App development and testing. It also holds a way to provide feedback to the Microsoft engineers working on [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
+A place where you can find current & upcoming builds of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] which helps you with your App development and testing. It also holds a way to provide feedback to the Microsoft engineers working on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].
 
 To get access to the **Ready to Go** platform, you need to go through these steps: 
 
