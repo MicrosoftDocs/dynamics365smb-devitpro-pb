@@ -12,7 +12,7 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # OptionCaption Property
 Sets the text string options that are displayed to the user.  

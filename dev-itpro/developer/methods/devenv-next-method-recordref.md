@@ -11,7 +11,7 @@ ms.assetid: 29d765c2-ce4e-4bff-b263-6f9e19e09a7f
 caps.latest.revision: 10
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # NEXT Method (RecordRef)
 Steps through a specified number of records and retrieves a record.  

@@ -12,7 +12,7 @@ caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Temporary Property
 Sets whether a temporary table is created.  

@@ -12,7 +12,7 @@ caps.latest.revision: 9
 manager: 
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # RowSpan Property
 Sets the number of rows that a field spans in a GridLayout control.  

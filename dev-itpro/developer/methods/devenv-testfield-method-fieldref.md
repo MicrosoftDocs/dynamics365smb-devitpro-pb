@@ -11,7 +11,7 @@ ms.assetid: c9f012be-9066-45ba-b01b-d1bf61c75b97
 caps.latest.revision: 13
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # TESTFIELD Method (FieldRef)
 Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.  

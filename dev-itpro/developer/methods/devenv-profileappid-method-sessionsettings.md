@@ -10,7 +10,7 @@ ms.service: dynamics365-financials
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # PROFILEAPPID Method
 Gets or sets the ID of an extension, which provides a profile, in a SessionSettings object.  

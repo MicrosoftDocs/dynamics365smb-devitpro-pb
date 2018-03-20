@@ -12,7 +12,7 @@ caps.latest.revision: 22
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Width Property
 Sets the width of the control. Width is set as a number of characters and must be a fixed number when specified.  

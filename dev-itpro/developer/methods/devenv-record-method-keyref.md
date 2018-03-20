@@ -11,7 +11,7 @@ ms.assetid: b0b42069-8957-4169-9046-49b1172eb040
 caps.latest.revision: 8
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # RECORD Method (KeyRef)
 Returns a RecordRef for the current record referred to by the key.  

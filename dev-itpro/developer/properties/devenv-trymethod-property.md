@@ -12,7 +12,7 @@ caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # TryMethod Property
 Specifies the method to be try method, which can be used to catch and handle errors and exceptions that occur when code is run.  

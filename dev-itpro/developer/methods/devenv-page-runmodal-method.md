@@ -14,7 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # PAGE.RUNMODAL Method
 Creates, runs, and closes a specified page object. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.  

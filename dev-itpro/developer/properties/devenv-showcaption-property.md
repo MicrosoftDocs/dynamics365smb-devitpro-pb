@@ -11,7 +11,7 @@ ms.assetid: cca8c1e6-d788-429c-b572-784df23d514c
 caps.latest.revision: 6
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ShowCaption Property
 Sets whether the text that is specified by the [CaptionML Property](devenv-captionml-property.md) is displayed for the control.  

@@ -11,7 +11,7 @@ ms.assetid: 1a3b82b8-2f24-4fae-9a45-391cde2de600
 caps.latest.revision: 17
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # RUN Method (XMLport)
 Loads and executes the XMLport that you specify.  

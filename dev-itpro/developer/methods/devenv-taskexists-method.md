@@ -10,7 +10,7 @@ ms.service: dynamics365-financials
 author: jswymer
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # TASKEXISTS Method
 Checks whether a specific task exists and is waiting to be run by task scheduler.   

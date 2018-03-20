@@ -12,7 +12,7 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SourceTable Property
 Sets the ID of the table from which this page will display records.  

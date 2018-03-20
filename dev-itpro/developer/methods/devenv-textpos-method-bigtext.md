@@ -11,7 +11,7 @@ ms.assetid: 46b5a4a6-4c1e-472e-8092-e92032e521a9
 caps.latest.revision: 16
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # TEXTPOS Method (BigText)
 Gets the position at which a specific string first occurs in a BigText.  

@@ -11,7 +11,7 @@ ms.assetid: b453e896-1467-4123-ab2e-1bbce78ed7bd
 caps.latest.revision: 8
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # RunPageOnRec Property
 Sets the same record on the page you launch from this control as is already displayed on the current page.  

@@ -12,7 +12,7 @@ caps.latest.revision: 6
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # OPENVIEW Method (TestPage)
 Opens a test page in view mode.  

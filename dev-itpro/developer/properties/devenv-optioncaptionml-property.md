@@ -12,7 +12,7 @@ caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # OptionCaptionML Property
 Sets the strings that are displayed to the user for selecting an option. OptionCaptionML is only used if the field or variable has an [OptionString Property](devenv-optionstring-property.md). The OptionString property contains the set of values that are acceptable choices, and it is one of these values that is saved in the database or used in AL code.  
