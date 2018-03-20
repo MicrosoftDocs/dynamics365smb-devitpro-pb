@@ -14,7 +14,7 @@ ms.author: rweigel
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+[!INCLUDE[d365fin_dev_blog](../developer/includes/d365fin_dev_blog.md)]
 
 # Rules and Guidelines for AL Code
 This page defines the rules and guidelines to follow when writing AL code in an extension package for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. The rules and guidelines are grouped according to two importance levels: critical errors that must be resolved, and important errors that should be resolved. Errors that are not resolved must include an explanation and justification for the error.
