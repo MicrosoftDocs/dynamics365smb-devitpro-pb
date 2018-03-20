@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)] 
 
 # AL Methods    
 The AL methods in this section are grouped according to the data type that they support or according to a category. Each data type topic contains a description of the data type.  

@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-
+[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
 
 # Triggers
 Triggers are available for the different objects as described in the following sections:  

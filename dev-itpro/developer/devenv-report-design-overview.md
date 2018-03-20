@@ -13,6 +13,9 @@ ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
 ---
+
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 # Report Design Overview
 Designing a report is composed of the following items:  
 
