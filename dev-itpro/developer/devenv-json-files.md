@@ -14,6 +14,8 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 # JSON Files
 
 In an AL project there are two JSON files; the `app.json` file and the `launch.json` file. These files are generated automatically when you start a new project. The `app.json` file contains information about extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `launch.json` file contains information about the server that the extension launches on.

@@ -14,6 +14,8 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 # Ruleset for the Code Analysis Tool 
 In an AL project, you can use a custom ruleset file to specify how code analysis will report the issues it encounters. Different settings can affect how rules are applied and each ruleset file name must follow the pattern `<name>.ruleset.json` to benefit from IntelliSense in Visual Studio Code.
 

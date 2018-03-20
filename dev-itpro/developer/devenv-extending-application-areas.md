@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Extending Application Areas 
 Application area represents a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences.

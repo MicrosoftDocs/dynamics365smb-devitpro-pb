@@ -186,11 +186,11 @@
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
-### [Creating an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ### [Creating a Word Layout Report](developer/devenv-howto-report-layout.md)
+### [Creating an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ## Designing Role Centers
 ### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
-### [Headlines](developer/devenv-create-role-center-headline.md)
+### [Headlines](developer/devenv-create-role-center-headline.md) 
 ### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
 ### [Adding Pages and Reports to Search](developer/devenv-al-menusuite-functionality.md)
 ## [Multilanguage Development](developer/devenv-multilanguage-development.md)

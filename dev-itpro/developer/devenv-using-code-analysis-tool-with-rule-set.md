@@ -14,6 +14,8 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 # Using the Code Analysis Tools with the Ruleset
 This topic shows how you can use a custom ruleset to customize the severity of diagnostics produced by the code analysis tools that are part of the AL Language extension for Visual Studio Code.
 
