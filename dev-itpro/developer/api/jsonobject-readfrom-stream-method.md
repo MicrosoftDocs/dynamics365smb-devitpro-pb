@@ -28,7 +28,7 @@ Reads the JSON data from the stream into a [JsonObject](jsonobject-class.md) var
 &emsp;Type: [JsonObject](jsonobject-class.md)
 
 *InStream*  
-&emsp;Type: [InStream](/datatypes/devenv-instream-and-outstream-data-types.md)
+&emsp;Type: [InStream](../datatypes/devenv-instream-and-outstream-data-types.md)
 
 The InStream object from which the JSON data will be read.
 

@@ -31,7 +31,7 @@ Gets the values for the specified key.
 &emsp;Type: [Text](../datatypes/devenv-text-data-type.md)
 
 *Result*  
-&emsp;Type: Array of [Text](/datatypes/devenv-text-data-type.md)
+&emsp;Type: Array of [Text](../datatypes/devenv-text-data-type.md)
 
 ## Return Value
 *Ok*  

@@ -10,8 +10,6 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
-
 # SENDTRACETAG Method
 Sends a telemetry trace event to the event log.  
   
@@ -49,10 +47,10 @@ Specifies a classification for the data in the telemetry trace event. The follow
 
 [!INCLUDE[data_classifications](../../includes/data_classifications.md)] 
 
-These values correspond to values of the [DataClassification property](/properties/devenv-dataclassification-property.md) on table objects and fields. Like the DataClassification property, you can use the `DataClassification` parameter to help comply with legislative requirements for collecting, storing, and using user personal information.
+These values correspond to values of the [DataClassification property](../properties/devenv-dataclassification-property.md) on table objects and fields. Like the DataClassification property, you can use the `DataClassification` parameter to help comply with legislative requirements for collecting, storing, and using user personal information.
 
->[!IMPORTANT]
->If you do not set the `DataClassification`, the telemetry trace event is automatically classified as `CustomerContent`.
+> [!IMPORTANT]
+> If you do not set the `DataClassification`, the telemetry trace event is automatically classified as `CustomerContent`.
 
 ## Remarks 
 You use the SENDTRACETAG method for instrumenting the application for telemetry. When the SENDTRACETAG method called, a telemetry trace event is emitted. The event can then be recorded in the Windows event log or collected by other event trace collection tools, like PerfView, Logman, and Performance Monitor. 
