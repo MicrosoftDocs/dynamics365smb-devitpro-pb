@@ -17,18 +17,16 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to both the AL development environment and the C/SIDE development environment. 
 
 ## Decide on Azure-hosted or local-hosted environment
-When you set up the Container Sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites. The difference is:
+When you set up the Container Sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites, and use Docker to provide the infrastructure for the container-based apps. The difference is:
 
--   Azure hosting requires that you purchase ...
--   Local hosting requires that you install and configure Docker before you set up the sandbox.
+-  With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you purchase ...
+-  Local hosting requires that your computer is running Windows 10 or Windows Server 2016 and you install and configure Docker before setting up the container sandbox.
 
-    
-## Install and configure Docker
-Install Docker and configure it for Windows Containers. Please choose the version of Docker that is appropriate for the host operating system.
-- Use [Docker Community Edition](https://www.docker.com/community-edition) if the host operating system is Windows 10.  
-    For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10).
-- Use [Docker Enterprise Edition](https://www.docker.com/enterprise-edition) if the host operating system is Windows Server.  
-    For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server).
+    To install and configure Docker, choose the version of Docker that is appropriate for the host operating system.
+
+    For Windows 10, download from [Docker Community Edition](https://www.docker.com/community-edition). For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10).
+
+    For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition). For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
 
 ## Run the container-based image
