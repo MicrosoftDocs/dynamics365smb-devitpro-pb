@@ -14,6 +14,8 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 # Checklist for Submitting Your App
 
 The following is a checklist of all requirements that you **must meet before submitting** an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation. 
