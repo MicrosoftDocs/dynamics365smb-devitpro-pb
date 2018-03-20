@@ -19,29 +19,24 @@ To get started developing for [!INCLUDE[d365fin_long_md](includes/d365fin_long_m
 ## Sandbox Overview
 The following topic outlines the most important capabilities on the offered development sandbox environments for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
 
-|Capability |Sandbox |Docker Container|
+|Capability |Online Sandbox |Container Sandbox|
 |-----------|--------|----------------|
 |Deployment |Dynamics 365 Cloud Service managed by Microsoft|Azure VM or on-premises managed by ISV/VAR|
 |Production data|Manually uploaded using Rapid Start packages|Manually uploaded using Rapid Start packages|
 |Production extensions|Manually installed|Production installed extensions are automatically installed|
 |Production services|Manually configured|Not available|
-|Cost|Free|Free|
+|Cost|Free|Locally hosted - free, Azure-hosted - cost incurred|
 |Development|Designer functionality, such as: </br>Add/Remove components, </br>Move components, </br>Set/clear Freeze pane, </br>Edit captions |Full capabilities of the developer environment|
 |Tools|Visual Studio Code, Designer|Visual Studio Code, Designer, familiar tools such as SSMS and C/SIDE.|
 |Debugging|Enabled|Enabled|
-|Preview design|PC, tablet, and phone|PC|
-|Per user customization|Not available|Not available|
-|Per tenant customization|Available|Available|
 |Database access|No|Yes|
-|Creating .app files|Available|Available|
-|Testing|SaaS test environment for any .app file. Files will be uploaded into the sandbox using Visual Studio Code.|On-premises test environment|
-|Migration test|No|Yes|
+|Migration testing|No|Yes|
 
 ## Getting Started
 Based on the overview above and the requirements for your development environment, you can get started with a sandbox by following the links below:
 
-+ [Getting Started with AL](devenv-get-started.md)  
-<!-- + [Getting Started with Docker]() -->
++ [Online Sandbox](devenv-get-started.md)  
++ [Container Sandbox](devenv-get-started-container-sandbox.md)  
 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
