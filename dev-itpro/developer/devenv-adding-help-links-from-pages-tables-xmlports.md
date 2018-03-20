@@ -14,6 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Adding Help Links from Pages, Reports, and XMLports 
 When creating pages, reports, or XMLports, you can also specify the help link that will be used when a user selects the **Help** button in the UI of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].
