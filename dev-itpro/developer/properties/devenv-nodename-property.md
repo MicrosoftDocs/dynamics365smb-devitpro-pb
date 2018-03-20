@@ -27,4 +27,5 @@ Sets the name of a node in an XML document.
  You must enter node names in the order that they appear in the XML document. Parent elements must precede their child elements. Indent the node names of child elements under their parent elements using one indentation per level. List attributes under the elements that they define and indent them to the child level.  -->
   
 ## See Also  
- [NodeType Property](devenv-nodetype-Property.md)
+ [NodeType Property](devenv-nodetype-Property.md)  
+ [SourceType Property](devenv-sourcetype-property.md)  

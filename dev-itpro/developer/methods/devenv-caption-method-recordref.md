@@ -69,4 +69,5 @@ END;
  **Table No: 5   Caption: Finance Charge Terms**  
   
 ## See Also  
+ [CLOSE Method (RecordRef)](devenv-close-method-recordref.md)  
  [RecordRef Data Type](../datatypes/devenv-RecordRef-Data-Type.md)
