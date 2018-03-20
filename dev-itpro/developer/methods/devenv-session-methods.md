@@ -12,7 +12,7 @@ caps.latest.revision: 6
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Session Methods
 The following AL methods for managing [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] sessionsare available.  

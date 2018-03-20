@@ -12,7 +12,7 @@ caps.latest.revision: 8
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SLEEP Method
 Returns control to the operating system for a specified time.  

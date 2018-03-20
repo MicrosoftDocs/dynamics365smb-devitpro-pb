@@ -11,7 +11,7 @@ ms.assetid: 97ff7045-1350-4c96-8dd8-e9a6e1f9de7d
 caps.latest.revision: 4
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # REGISTERTABLECONNECTION Method (Database)
 Registers a table connection between [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] and an external database.  

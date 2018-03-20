@@ -12,7 +12,7 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # TestTableRelation Property
 Sets whether to include this field when evaluating field relations between primary and secondary indexes.  

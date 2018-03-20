@@ -10,7 +10,7 @@ author: SusanneWindfeldPedersen
 ms.service: dynamics365-financials
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # MESSAGE Method (Notification)
 Specifies the content of the notification.

@@ -11,7 +11,7 @@ ms.assetid: 53f7980f-1d26-44cf-9262-cb27006b5983
 caps.latest.revision: 14
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # READPERMISSION Method (Record)
 Determines whether a user is granted read permission to the table that contains a record. This method can test for both full read permission and partial read permission that has been granted with a security filter.  

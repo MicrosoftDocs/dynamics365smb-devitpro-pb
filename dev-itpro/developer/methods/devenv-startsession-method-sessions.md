@@ -12,7 +12,7 @@ caps.latest.revision: 13
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # STARTSESSION Method (Sessions)
 Starts a [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] session without a UI and runs the specified codeunit.  

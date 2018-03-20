@@ -12,7 +12,7 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # UseLax Property
 Specifies whether an XMLport uses LAX \(Lazy API for XML\) to process an XML file.  

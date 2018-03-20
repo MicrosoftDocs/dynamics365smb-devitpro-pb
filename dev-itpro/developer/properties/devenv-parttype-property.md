@@ -12,7 +12,7 @@ caps.latest.revision: 11
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # PartType Property
 Sets the content type that can display in a part FactBox.  

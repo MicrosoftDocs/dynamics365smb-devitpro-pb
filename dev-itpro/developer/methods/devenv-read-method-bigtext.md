@@ -11,7 +11,7 @@ ms.assetid: 4c804577-36eb-4386-9894-abe270d5df6a
 caps.latest.revision: 11
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # READ Method (BigText)
 Streams a BigText object that is stored as a BLOB in a table to a BigText variable.  

@@ -12,7 +12,7 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # PaperSourceFirstPage Property
 Specifies which paper source to use when printing page one of the report.  

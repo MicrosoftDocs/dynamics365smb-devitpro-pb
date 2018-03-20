@@ -12,7 +12,7 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SubType Property (BLOB)
 Sets additional information about what will be contained in the field.  

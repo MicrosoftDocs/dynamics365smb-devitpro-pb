@@ -12,7 +12,7 @@ caps.latest.revision: 11
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # LOCKTABLE Method (RecordRef)
 Locks a table to protect it from write transactions that conflict with each other.  

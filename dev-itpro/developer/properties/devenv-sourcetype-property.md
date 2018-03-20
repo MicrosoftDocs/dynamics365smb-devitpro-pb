@@ -12,7 +12,7 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SourceType Property
 Sets what a particular tag in the XMLport Designer corresponds to in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.  

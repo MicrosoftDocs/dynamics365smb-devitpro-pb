@@ -12,7 +12,7 @@ caps.latest.revision: 2
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # RunPageMode Property
 Sets the mode in which the page is run. Choose between View, Edit, or Create.  

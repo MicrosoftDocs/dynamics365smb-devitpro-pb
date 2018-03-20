@@ -11,7 +11,7 @@ ms.assetid: 950d7dac-a821-4f9f-873c-952b87857400
 caps.latest.revision: 14
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # READPERMISSION Method (RecordRef)
 Determines if you can read from a table.  

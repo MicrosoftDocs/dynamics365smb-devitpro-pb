@@ -12,7 +12,7 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Permissions Property
 Sets whether an object has additional permission required to perform some operations on one or more tables. The operations can be to read, insert, modify, and delete data.  
