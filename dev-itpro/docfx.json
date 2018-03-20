@@ -37,7 +37,6 @@
     "externalReference": [],
     "globalMetadata": {
       "ms.author": "solsen",	
-      "ms.date": "03/20/2018",
       "searchScope": ["BusinessCentral"],
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "titleSuffix": "Business Central",
@@ -45,7 +44,7 @@
       "ms.service": "dynamics365-business-central",
       "extendBreadcrumb": true
     },
-    "fileMetadata": {},
+    "fileMetadata":{},
     "template": [],
     "dest": "dev-itpro",
     "markdownEngineName": "markdig"
