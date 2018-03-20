@@ -27,7 +27,7 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |Switzerland|fr-CH</br>de-CH </br>it-CH|
 |Germany|de-DE|
 |Denmark|da-DK|
-|Netherlands|nl-BE|
+|Netherlands|nl-NL|
 |Spain|es-ES|
 |Finland|fi-FI|
 |France|fr-FR|
