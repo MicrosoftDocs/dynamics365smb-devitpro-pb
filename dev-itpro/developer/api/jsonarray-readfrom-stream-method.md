@@ -28,12 +28,12 @@ Reads the JSON data from the stream into a JsonArray variable.
 &emsp;Type: [JsonArray](jsonarray-class.md)
 
 *InStream*  
-&emsp;Type: [InStream](/datatypes/devenv-instream-and-outstream-data-types.md)
+&emsp;Type: [InStream](../datatypes/devenv-instream-and-outstream-data-types.md)
 
 The InStream object from which the JSON data will be read.
 
 ## Property Value/Return Value
-Type: [Boolean](/datatypes/devenv-text-data-type.md)
+Type: [Boolean](../datatypes/devenv-text-data-type.md)
 
 **True** if the read was successful; otherwise, **false**.
 
