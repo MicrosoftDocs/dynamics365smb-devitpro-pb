@@ -18,7 +18,7 @@ ms.author: jswymer
 The Role Center is the user's entry point and home page for [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users. For example, you could have a Role Center for sales order processors, business managers, administrators and more. A Role Center should be designed to give users quick access to the information that is most important to them in their daily work.
 
 ## Overview
-A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation area and content area. The following figure illustrates the general layout and elements of a Role Center page.
+A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation area and content area. The following figure illustrates the general layout and elements of a Role Center page.
 
 ![Role Center overview](media/rolecenter-overview.png "Role Center overview")
 
@@ -27,8 +27,8 @@ The navigation area appears at the top of the Role Center page, and provides lin
 
 |    |Area|Description|More information|
 |----|-------|-----------|----------------|
-|1|Top-level navigation|This area is defined by an `area(sections)` control. Each top-level item is defined by a `group` control under the `area(sections)` control, and the subitems are defined by `action` controls under the `group` control.|The top-level navigation should provide access to most important enitity lists for the profile's areas of business. For example, typical lists for sales order processor could be customers, sales orders, quotes, and invoices.  |
-|2|Second-level|These items are defined by an `area(embedding)` control. Each item is defined by a `action` control that targets a specific object, like a page or report. |You should use these items to open the entity lists most used by the users, regardless of the business area. |
+|1|Top-level navigation|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. This area is defined by an `area(sections)` control.<ul><li>Each root item is defined by a `group` control under the `area(sections)` control</li><li>Subitems are defined by `action` controls under the `group` control.</li></ul>|The top-level navigation should provide access to most important enitity lists for the profile's section of business. For example, typical lists for sales order processor could be customers, sales orders, quotes, and invoices. |
+|2|Second-level|The second-level area displays a flat list of links that target These items are defined by an `area(embedding)` control. Each item is defined by a `action` control that targets a specific object, like a page or report. |You should use these items to open the entity lists most used by the users, regardless of the business area. |
 |3|Action-level|This area is defined by three different `area`controls: `area(creation)`, `area(processing)`, and  `area(reporting)`. <ul><li>Actions in the `area(creation)` control will appear first in the action menu, and will have plus icon.</li><li>Actions in an an `area(processing)` control will appear after the `area(creation)` items.</li><li>Actions in the `area(reporting)` control display last in the action area, and appear with default report icon. |The action area is designed for specific tasks and operations. These actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders. |
 
 ### Behavioral considerations
