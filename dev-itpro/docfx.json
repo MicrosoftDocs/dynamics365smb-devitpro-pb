@@ -44,9 +44,7 @@
       "ms.service": "dynamics365-business-central",
       "extendBreadcrumb": true
     },
-    "fileMetadata": {
-      "ms.date": ["03/20/2018"]
-    },
+    "fileMetadata":{},
     "template": [],
     "dest": "dev-itpro",
     "markdownEngineName": "markdig"
