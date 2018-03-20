@@ -35,8 +35,8 @@ The following topic outlines the most important capabilities on the offered deve
 ## Getting Started
 Based on the overview above and the requirements for your development environment, you can get started with a sandbox by following the links below:
 
-+ [Getting Started with AL](devenv-get-started.md)  
-<!-- + [Getting Started with Docker]() -->
++ [Online Sandbox](devenv-get-started.md)  
++ [Container Sandbox](devenv-get-started-container-sandbox.md)  
 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
