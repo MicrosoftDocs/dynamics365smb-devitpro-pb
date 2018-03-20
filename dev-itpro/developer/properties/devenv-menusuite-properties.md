@@ -50,4 +50,5 @@ The following properties apply to Menus on MenuSuite objects.
 ## See Also  
 [Properties](devenv-properties.md)  
 [Table and Table Extension Properties](devenv-table-properties.md)  
-[Page and Page Extension Properties Overview](devenv-page-property-overview.md)
+[Page and Page Extension Properties Overview](devenv-page-property-overview.md)  
+[MenuItemType Property](devenv-menuitemtype-property.md)  
