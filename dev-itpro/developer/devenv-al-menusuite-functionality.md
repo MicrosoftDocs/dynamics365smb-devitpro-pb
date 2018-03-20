@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Adding Pages and Reports to Search
 AL provides navigational support for pages and reports in the client. You enable a page or report to be available through Search in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] using the **UsageCategory** setting. 

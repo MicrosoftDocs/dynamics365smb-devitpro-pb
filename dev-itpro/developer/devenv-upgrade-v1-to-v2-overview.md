@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Converting Extensions V1 to Extensions V2
 Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they are different or modify the behavior of the solution. This article explains the steps involved in converting V1 extensions, written in C/SIDE. to V2 extensions; written using the AL Language extension for Visual Studio Code. The overall steps for the conversion are:

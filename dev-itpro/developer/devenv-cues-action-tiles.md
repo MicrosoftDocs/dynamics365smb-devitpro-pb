@@ -10,6 +10,9 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Creating Cues and Action Tiles on Role Centers
+
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 This article provides an overview of Cues and Action tiles, and the tasks involved in creating and customizing them for displaying on Role Centers, as illustrated in the following figure:  
 
 ![Cues on the Role Center](media/Cue-overview-online-v2.png "Cues on the Role Center")  

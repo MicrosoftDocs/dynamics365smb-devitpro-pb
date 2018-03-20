@@ -10,6 +10,9 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
+
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 # Reports Overview
 You can use reports to print or display information from a database. Use reports to structure and summarize information to print documents, such as invoices. For example, create a report that lists all customers and orders that have been added by each customer. Also, create a report that is automatically filled with the relevant information for an invoice.  
 

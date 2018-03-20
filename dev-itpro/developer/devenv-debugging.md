@@ -13,6 +13,8 @@ ms.assetid: 9cfc02d2-2211-466f-b5e9-8178bdc79311
 ms.author: solsen
 ---
 
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 # Debugging
 The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the AL Language extension you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing F5.  
 
