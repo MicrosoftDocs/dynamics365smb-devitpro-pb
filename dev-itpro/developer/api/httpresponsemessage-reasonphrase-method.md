@@ -23,7 +23,7 @@ Gets the reason phrase which typically is sent by servers together with the stat
 HttpResponseMessage.ReasonPhrase
 ```
 ## Property Value
-Type: [Text](/datatypes/devenv-text-data-type.md)
+Type: [Text](../datatypes/devenv-text-data-type.md)
 
 
 ## See Also

@@ -12,7 +12,7 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Local Property
 Specifies if a method is local to the object on which the method is defined. A local method cannot be accessed from outside the object.  

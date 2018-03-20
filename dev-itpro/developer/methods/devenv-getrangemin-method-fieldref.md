@@ -11,7 +11,7 @@ ms.assetid: 7b17984e-546c-4a57-9c5d-5bc146ded1ef
 caps.latest.revision: 14
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETRANGEMIN Method (FieldRef)
 Gets the minimum value in a range for a field.  

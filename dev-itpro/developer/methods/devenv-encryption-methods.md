@@ -11,7 +11,7 @@ ms.assetid: b626234e-b39a-4100-9691-1bf3670db3be
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Encryption Methods
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] includes the following methods for managing data encryption:  

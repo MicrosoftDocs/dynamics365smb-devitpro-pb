@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CAPTION Method (RecordRef)
 Gets the caption of the table that is currently selected. Returns an error if no table is selected.  

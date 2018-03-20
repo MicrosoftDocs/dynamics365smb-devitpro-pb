@@ -12,7 +12,7 @@ caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # FreezeColumnID Property
 Specifies the columns in a list that remain in view on a page, even when you scroll right.  

@@ -12,7 +12,7 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CaptionClass Property
 Controls the caption that is used in the label of a field in a database table or in the label of a control on a page.  

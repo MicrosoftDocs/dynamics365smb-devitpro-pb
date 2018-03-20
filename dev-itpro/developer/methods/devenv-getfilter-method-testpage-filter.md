@@ -12,7 +12,7 @@ caps.latest.revision: 4
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETFILTER Method (TestPage Filter)
 Gets the filter that is applied to the specified field in a dataset that is displayed on a test page.  

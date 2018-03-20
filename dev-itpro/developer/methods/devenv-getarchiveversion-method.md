@@ -11,7 +11,7 @@ ms.assetid: 3e7f90bb-2758-494c-86b0-8a5e5c44cd00
 caps.latest.revision: 3
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETARCHIVEVERSION Method
 Returns the version of the [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] extension that the specified table is part of.  

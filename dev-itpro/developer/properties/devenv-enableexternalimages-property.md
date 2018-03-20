@@ -12,7 +12,7 @@ caps.latest.revision: 23
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # EnableExternalImages Property
 Sets whether external images are allowed on a report.  

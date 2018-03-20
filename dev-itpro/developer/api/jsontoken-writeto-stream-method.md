@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 
 # WriteTo_Stream Method
 
-Serializes and writes the JSON data of the [JsonToken](jsontoken-class.md) to a given [OutStream](/datatypes/devenv-instream-and-outstream-data-types.md) object.
+Serializes and writes the JSON data of the [JsonToken](jsontoken-class.md) to a given [OutStream](../datatypes/devenv-instream-and-outstream-data-types.md) object.
 
 ```
 [Ok := ] JsonToken.WriteTo(var OutStream)
@@ -29,7 +29,7 @@ Serializes and writes the JSON data of the [JsonToken](jsontoken-class.md) to a 
 &emsp;Type: [JsonToken](jsontoken-class.md)
 
 *OutStream*  
-&emsp;Type: [OutStream](/datatypes/devenv-instream-and-outstream-data-types.md)
+&emsp;Type: [OutStream](../datatypes/devenv-instream-and-outstream-data-types.md)
 
 The **OutStream** object to which the JSON data will be written.
 

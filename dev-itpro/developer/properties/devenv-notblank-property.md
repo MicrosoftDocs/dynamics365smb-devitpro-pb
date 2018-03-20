@@ -12,7 +12,7 @@ caps.latest.revision: 17
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # NotBlank Property
 Sets a value that specifies whether users must enter a value in the selected field or text box.  

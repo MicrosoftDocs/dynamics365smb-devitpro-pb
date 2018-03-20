@@ -14,8 +14,6 @@ manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # SetValueToUndefined Method
 
 Set the contents of the JsonValue variable to the JSON representation of UNDEFINED.
@@ -24,7 +22,7 @@ Set the contents of the JsonValue variable to the JSON representation of UNDEFIN
 JsonValue.SetValueToUndefined()
 ```
 
-# Remarks
+## Remarks
 The JsonValue will be disconnected from its current JSON tree and the data contained by the JsonValue will be replaced with the new value.
 
 ## See Also

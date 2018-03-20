@@ -11,7 +11,7 @@ ms.assetid: 18e6df94-639e-4c5f-99ed-5729037bb719
 caps.latest.revision: 13
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # AutoFormatExpression Property
 Sets an AL expression that specifies how to format data.  

@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CREATEINSTREAM Method (File)
 Creates an InStream object for a file. This enables you to import or read data from the file.  

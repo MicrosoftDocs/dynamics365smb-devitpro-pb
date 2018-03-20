@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Gets or sets the method type as defined in the HTTP standard.
 
 ## Property Value
-Type: [Text](/datatypes/devenv-text-data-type.md)
+Type: [Text](../datatypes/devenv-text-data-type.md)
 
 ## See Also
 [HttpRequestMessage](httprequestmessage-class.md)  

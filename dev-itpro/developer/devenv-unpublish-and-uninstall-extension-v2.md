@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-## Unpublishing and Uninstalling Extensions
+# Unpublishing and Uninstalling Extensions
 Similar to the process for making an extension available to tenant users, there are also three operations, or tasks, related to the removal of an extension: uninstalling, unpublishing, and synchronizing (in clean mode). Each operation provides a different level of removal:
 
 |Task|Description|

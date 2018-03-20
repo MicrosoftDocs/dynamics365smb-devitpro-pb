@@ -12,7 +12,7 @@ caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ID Property
 Sets a unique numeric ID for this codeunit, table, page, report, XMLport, or control.  

@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # AL Methods    
 The AL methods in this section are grouped according to the data type that they support or according to a category. Each data type topic contains a description of the data type.  

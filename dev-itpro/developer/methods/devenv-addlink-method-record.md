@@ -11,7 +11,7 @@ ms.assetid: 4b49e92d-b390-45cc-9fd2-4ae8e0d9758a
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ADDLINK Method (Record)
 Adds a link to a record.  

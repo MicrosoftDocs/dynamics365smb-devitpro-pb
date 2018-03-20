@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DELETE Method (Record)
 Deletes a record in a [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] table.  

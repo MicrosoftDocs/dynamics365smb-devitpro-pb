@@ -13,7 +13,7 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # EntityName Property
 Sets the singular entity name with which the page is exposed in the api endpoint.  

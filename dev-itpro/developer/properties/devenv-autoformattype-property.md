@@ -12,7 +12,7 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # AutoFormatType Property
 Sets a value that determines how data is formatted, together with the AL expression in the [AutoFormatExpresssion Property](devenv-autoformatexpr-property.md).  
