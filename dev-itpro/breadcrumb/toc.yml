@@ -6,8 +6,8 @@
     tocHref: /dynamics365/get-started/what-is/
     topicHref: /dynamics365/get-started/what-is/index
   - name: Business Central
-    tocHref: /dynamics365/financials/
-    topicHref: /dynamics365/financials/index
+    tocHref: /dynamics365/business-central/
+    topicHref: /dynamics365/business-central/index
   - name: Business Central Developer and IT-pro
     tocHref: /dynamics365/business-central/dev-itpro
     topicHref: /dynamics365/business-central/dev-itpro/index
