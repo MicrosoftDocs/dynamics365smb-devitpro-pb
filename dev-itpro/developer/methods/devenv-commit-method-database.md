@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # COMMIT Method (Database)
 Ends the current write transaction.  

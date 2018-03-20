@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DWY2DATE Method (Date)
 Gets a Date that is based on a week day, a week, and a year.  

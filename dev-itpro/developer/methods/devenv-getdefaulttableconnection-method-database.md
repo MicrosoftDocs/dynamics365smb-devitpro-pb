@@ -11,7 +11,7 @@ ms.assetid: 28b41eb4-c57d-498f-afdb-460002850de9
 caps.latest.revision: 4
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETDEFAULTTABLECONNECTION Method (Database)
 Gets the default table connection based on the specified connection type. You must already have registered a table connection of this type.  

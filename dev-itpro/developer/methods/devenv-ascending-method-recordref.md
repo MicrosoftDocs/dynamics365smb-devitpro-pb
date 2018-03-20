@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ASCENDING Method (RecordRef)
 Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed.  

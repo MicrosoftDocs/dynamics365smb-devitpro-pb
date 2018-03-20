@@ -12,7 +12,7 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # BitmapList Property
 Sets a list of bitmaps from which the correct bitmap to display is selected.  

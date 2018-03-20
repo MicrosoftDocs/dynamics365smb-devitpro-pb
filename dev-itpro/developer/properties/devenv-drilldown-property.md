@@ -12,7 +12,7 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DrillDown Property
 Sets a drill-down for a field on a page.  

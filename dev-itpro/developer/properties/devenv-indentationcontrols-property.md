@@ -12,7 +12,7 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # IndentationControls Property
 Sets which columns (controls) are indented in a list.  

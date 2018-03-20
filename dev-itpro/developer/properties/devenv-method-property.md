@@ -12,7 +12,7 @@ caps.latest.revision: 19
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Method Property
 Sets either a date method for retrieving the year, month, or day from a date field or a totals method for performing calculations on field values.  

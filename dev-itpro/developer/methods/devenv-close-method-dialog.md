@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CLOSE Method (Dialog)
 Closes a dialog window that has been opened by [OPEN Method \(Dialog\)](devenv-OPEN-Method-Dialog.md).  

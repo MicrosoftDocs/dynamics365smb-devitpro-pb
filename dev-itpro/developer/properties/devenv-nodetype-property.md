@@ -12,7 +12,7 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # NodeType Property
 Sets the value to specify whether an XML object is an element or an attribute.  

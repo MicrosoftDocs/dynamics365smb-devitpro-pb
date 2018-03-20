@@ -12,7 +12,7 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # LinkedObject Property
 Use this property to link to SQL Server objects.  

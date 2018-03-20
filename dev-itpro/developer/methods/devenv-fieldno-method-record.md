@@ -12,7 +12,7 @@ caps.latest.revision: 11
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # FIELDNO Method (Record)
 Gets the number assigned to a field in the table description.  

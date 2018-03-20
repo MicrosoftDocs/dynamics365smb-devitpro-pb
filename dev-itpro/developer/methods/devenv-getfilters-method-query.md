@@ -12,7 +12,7 @@ caps.latest.revision: 15
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETFILTERS Method (Query)
 Returns the filters that are applied to all columns in the query.  

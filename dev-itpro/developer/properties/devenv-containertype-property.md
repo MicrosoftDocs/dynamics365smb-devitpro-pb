@@ -12,7 +12,7 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ContainerType Property
 Sets the container type when you want to add one of the following controls to a page:  

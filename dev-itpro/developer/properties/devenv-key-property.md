@@ -12,7 +12,7 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Key Property
 Use this property to identify the field or fields that make up this key.  

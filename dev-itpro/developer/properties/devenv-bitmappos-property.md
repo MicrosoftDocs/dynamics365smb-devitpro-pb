@@ -12,7 +12,7 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # BitmapPos Property
 Sets the position of a bitmap.  

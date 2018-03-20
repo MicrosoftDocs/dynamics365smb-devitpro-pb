@@ -12,7 +12,7 @@ caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # InsertAllowed Property
 Sets a value to specify whether users can add records while using a page.  

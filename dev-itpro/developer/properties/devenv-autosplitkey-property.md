@@ -12,7 +12,7 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # AutoSplitKey Property
 Sets whether a key is automatically created for a new record placed between the current record and the previous record.  

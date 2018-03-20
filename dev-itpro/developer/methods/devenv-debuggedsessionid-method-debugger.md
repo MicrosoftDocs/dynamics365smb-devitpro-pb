@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DEBUGGEDSESSIONID Method (Debugger)
 Gets the ID of the previous session that the debugger was attached to.  

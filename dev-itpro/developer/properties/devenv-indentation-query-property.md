@@ -12,7 +12,7 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Indentation Property (Query)
 Sets the indentation level of a data item, column, or filter row in a query.  

@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # COPY Method (Record)
 Copies a specified record, filters, marks, and keys that are associated with the record from a table or creates a reference to a record.  

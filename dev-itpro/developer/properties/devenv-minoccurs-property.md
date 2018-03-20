@@ -12,7 +12,7 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # MinOccurs Property
 Sets the minimum number of times that an element can occur.  

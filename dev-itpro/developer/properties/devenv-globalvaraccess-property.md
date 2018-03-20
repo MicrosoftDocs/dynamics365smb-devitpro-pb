@@ -12,7 +12,7 @@ caps.latest.revision: 3
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GlobalVarAccess Property
 Specifies whether global variables in the object that contains the event publisher method are accessible to event subscriber methods that subscribe to the published event.  

@@ -11,7 +11,7 @@ ms.assetid: f7a4a790-11a9-4dc3-a258-d0bd5dc3b5f1
 caps.latest.revision: 9
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # EXPORT Method (XMLport)
 Creates an XML data stream \(XML document\) and sends it to a chosen destination.  

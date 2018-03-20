@@ -12,7 +12,7 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # AutoCalcField Property
 Sets whether FlowFields should be automatically calculated.  

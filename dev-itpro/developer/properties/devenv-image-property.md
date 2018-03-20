@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Image Property
 Specifies the icon that you want to associate with an action<!-- or an activity button-->. 
