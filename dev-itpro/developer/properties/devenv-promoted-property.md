@@ -30,3 +30,4 @@ Sets the value that indicates whether the selected action is promoted, which mea
   
 ## See Also  
  [PromotedIsBig Property](devenv-promotedisbig-property.md)   
+ [PromotedOnly Property](devenv-promotedonly-property.md)  

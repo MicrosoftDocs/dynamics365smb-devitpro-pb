@@ -87,5 +87,5 @@ The events emitted by this code will have the events IDs (listed in the order th
 
 
 ## See Also  
-[DataClassification property](/properties/devenv-dataclassification-property.md)  
+[DataClassification property](../properties/devenv-dataclassification-property.md)  
 <!-- [Instrumenting an Application for Telemetry](../../instrumenting-application-for-telemetry.md)   -->
