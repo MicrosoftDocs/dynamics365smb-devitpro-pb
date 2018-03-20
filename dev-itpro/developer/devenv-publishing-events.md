@@ -80,10 +80,7 @@ codeunit 70000001 MyPublishers
     begin
         
     end;
-    
 }
-}
-
 ```
 The next step would be to raise this event in the application. To see an example for how this event is raised, go to [Raising Event Example](devenv-raising-events.md#RaisingEventEx).
 

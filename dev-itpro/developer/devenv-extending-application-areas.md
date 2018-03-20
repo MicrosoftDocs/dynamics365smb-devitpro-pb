@@ -22,7 +22,7 @@ Application areas are mapped to controls to show or hide them on page objects to
 
 ## Extending application areas and the experience tier 
 In this example you will: 
-- Add a new application area in the **Application Area Setup** Table. 
+- Add a new application area in the **Application Area Setup** table. 
 - Enable the application Area in the **OnInstallAppPerCompany**.
 - Extend the experience tier in the **OnGetExperienceAppArea**.
 - Modify the experience tier (optional).
@@ -109,7 +109,7 @@ The registration of the application area inside an experience tier is made insid
 > This event is important because it is called every single time an experience tier is reset, which can happen because of many reasons. 
 
 Another thing that is possible inside these methods is to modify the experience tier. You can also modify other application areas, such as creating an extension that extends the Fixed Assets. 
-By subscribing to **OnValidateApplicationAreas** the application area inside an experience tier is validated. **OnValidateApplicationAreas** is guaranteed to be executed after the events in the OnGet*ExperienceAppArea family. The validation is necessary in the presence of extensions concurrently manipulating the same application areas.
+By subscribing to **OnValidateApplicationAreas**, the application area inside an experience tier is validated. **OnValidateApplicationAreas** is guaranteed to be executed after the events in the OnGet*ExperienceAppArea family. The validation is necessary in the presence of extensions concurrently manipulating the same application areas.
 
 In case a needed application area is not enabled, the suggested action is to show an error and disable the extension to avoid unintended behavior. However, if the functionality controlled by this application area is of secondary importance and its loss does not affect the rest of the extension, it is also appropriate to keep the extension enabled.
 
