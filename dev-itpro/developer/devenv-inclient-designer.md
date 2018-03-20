@@ -47,7 +47,7 @@ Here is a quick overview of **Designer** capabilities:
 
 ## Start designing
 
-You can start Designer by choosing ![Settings icon](media/settings_icon_small.png) > **Designer** in the top right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. You can also launch the browser, and enter Designer, using the F6 shortcut in Visual Studio Code. After making adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull that via the Ctrl+F7 shortcut. You can also uninstall the extension from the Extension Management page or even download source from there. 
+You can start Designer by choosing ![Settings icon](media/settings_icon_small.png) **Designer** in the top right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. You can also launch the browser, and enter Designer, using the F6 shortcut in Visual Studio Code. After making adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull that via the Ctrl+F7 shortcut. You can also uninstall the extension from the Extension Management page or even download source from there. 
 
 > [!NOTE]  
 > With this preview you can only add existing table fields. Adding pages, groups, parts, and actions is not yet supported.
