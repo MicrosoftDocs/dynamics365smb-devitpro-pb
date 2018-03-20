@@ -11,7 +11,7 @@ ms.assetid: ff8ed675-00d3-4d11-af67-3ffc0621d3a7
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CLOSINGDATE Method (Date)
 Gets the closing date for a [Date Data Type](../datatypes/devenv-Date-Data-Type.md).  

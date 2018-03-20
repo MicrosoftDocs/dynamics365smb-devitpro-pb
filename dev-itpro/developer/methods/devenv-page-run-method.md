@@ -12,7 +12,7 @@ caps.latest.revision: 13
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # PAGE.RUN Method
 Creates and launches a page object, which you specify.  

@@ -11,7 +11,7 @@ ms.assetid: 21a9ac9a-31a7-4b86-b2f0-bb0ea924c5ee
 caps.latest.revision: 17
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # OPEN Method (Dialog)
 Opens a dialog window.  

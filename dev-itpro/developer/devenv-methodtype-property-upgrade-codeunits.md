@@ -1,19 +1,19 @@
 ---
-title: "FunctionType Property (Upgrade Codeunits)"
+title: "MethodType Property (Upgrade Codeunits)"
 ms.custom: na
-ms.date: 06/07/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-financials"
+ms.service: "dynamics365-business-central"
 ms.assetid: 7a3eb65f-c670-4a2e-8c89-0df3c29aa37b
 caps.latest.revision: 6
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# FunctionType Property (Upgrade Codeunits)
+
+# MethodType Property (Upgrade Codeunits)
 Sets the type of method in an upgrade codeunit.  
 
 ## Applies To  
@@ -30,3 +30,4 @@ Sets the type of method in an upgrade codeunit.
 |**CheckPrecondition**|Provides logic that checks conditions that must be met in order for the data upgrade process to continue and start running the **Upgrade** methods.|  
 
 ## See Also  
+[SubType Property \(Codeunit\)](properties/devenv-subtype-property-codeunit.md)

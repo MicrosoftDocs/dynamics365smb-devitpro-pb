@@ -8,26 +8,26 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Integrate a 3rd Party Solution
-If you are an ISV with an existing service offering, then there are several reasons why you should choose to integrate your service with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]:
+If you are an ISV with an existing service offering, then there are several reasons why you should choose to integrate your service with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]:
 
-- [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] exposes many “ready-to-use” APIs for Connect apps to make a seamless integration between your service offering and [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] . 
+- [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] exposes many “ready-to-use” APIs for Connect apps to make a seamless integration between your service offering and [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
 
-- Bundle your services with a [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] offering and give your customers an integrated experience that increases the value for their investment. 
+- Bundle your services with a [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offering and give your customers an integrated experience that increases the value for their investment. 
 
-- Use Microsoft AppSource to promote your service offering and reach more customers together with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
+- Use Microsoft AppSource to promote your service offering and reach more customers together with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
 
-- Leverage and join the active community around [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] . 
+- Leverage and join the active community around [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
 
-With your existing service offering, you path forward with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] can be: 
+With your existing service offering, you path forward with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] can be: 
 
-1. You develop a **Connect app** in your preferred coding language, using the exposed APIs from [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. Read more [here](readiness-connect-apps.md).
-2. You develop an **Add-on app**, which enriches the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] experience. This type of app, which integrates into user experience of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], allows you to build an interface based on how you want your data to flow between [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and your service offering. Read more [here](readiness-add-on-apps.md).
+1. You develop a **Connect app** in your preferred coding language, using the exposed APIs from [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. Read more [here](readiness-connect-apps.md).
+2. You develop an **Add-on app**, which enriches the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] experience. This type of app, which integrates into user experience of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], allows you to build an interface based on how you want your data to flow between [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and your service offering. Read more [here](readiness-add-on-apps.md).
 
 Learn more details on how you can build a Business Central offering in the 
 **Ready to Go** program details. Read more [here](readiness-ready-to-go.md).
@@ -37,4 +37,5 @@ Learn more details on how you can build a Business Central offering in the
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  
+[Development of a Localization Solution](readiness-develop-localization.md)  
 [Resell Different Solutions](readiness-reseller.md)  

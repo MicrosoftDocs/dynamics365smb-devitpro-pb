@@ -11,7 +11,7 @@ ms.service: dynamics365-financials
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ADDACTION Method (Notification)
 Specifies an action for the notification.

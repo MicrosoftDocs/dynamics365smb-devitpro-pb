@@ -16,6 +16,9 @@ To classify the fields that hold sensitive or personal data, a Microsoft partner
 
 As a customer, you can add a second level of classification by specifying sensitivity levels for the data you store in standard and custom fields. Classifying data sensitivity helps ensure that you know where you keep personal data in your system, and makes it easier to respond to requests from data subjects. For example, if a contact or customer asks you to export their personal data.
 
+> [!Important]
+> Microsoft is providing this Data Sensitivity Classification feature as a matter of convenience only. It's your responsibility to classify the data appropriately and comply with any laws and regulations that are applicable to you. Microsoft disclaims all responsibility towards any claims related to your classification of the data.  
+
 The following table describes data sensitivity levels you can assign.
 
 |Sensitivity|Description|
@@ -24,6 +27,9 @@ The following table describes data sensitivity levels you can assign.
 |Personal | Information that can be used to identify a data subject, either directly or in combination with other data or information.|
 |Confidential | Business data that you use for accounting or other business purposes, and do not want to expose to other entities. For example, this might include ledger entries.|
 |Normal | General data that does not belong to any other categories.|
+
+> [!Tip]
+> Typically, Confidential and Normal do not apply to any data that is related to a person. For personal data, consider using the Sensitive or Personal classifications. For example, this can also make it easier to respond when a data subject requests an action on their personal data because you can filter on the Sensitive or Personal classifications.
 
 ## How Do I Classify My Data?
 Classifying the sensitivity of a large number of fields one-by-one would take a long time. To help speed up the process, we provide tools that you can use to bulk classify the sensitivity of fields, and then fine-tune classifications for specific fields. You can find tools on the Data Classification worksheet, which is available on the Administration of users, user groups, and permissions Role Center. You must be a system administrator to use the worksheet.
@@ -38,7 +44,7 @@ For example, the Data Classification worksheet lets you do things like:
 * Investigate a field by viewing its contents.  
 
 > [!Tip]
-> We have defined sample sensitivity classifications for the tables and fields in the Cronus demonstration company. You can use those classifications as inspiration when you classify your own tables and fields.
+> We have defined sample sensitivity classifications for the tables and fields in the Cronus demonstration company. The data and classifications are provided for demonstration purposes only. Please do not use them in a live production environment. However, you can use the classifications as inspiration when you classify your own tables and fields.
 
 ## See Also
 [Classifying Data](classifying-data.md)

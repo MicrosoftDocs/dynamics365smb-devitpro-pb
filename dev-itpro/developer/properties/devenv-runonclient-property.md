@@ -1,18 +1,18 @@
 ---
 title: "RunOnClient Property"
 ms.custom: na
-ms.date: 07/05/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: c75899f7-b01d-407a-9961-44648116a2c8
 caps.latest.revision: 6
 manager: edupont
 ---
 # RunOnClient Property
-Sets whether a .NET object that is defined by a variable is run on the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)] or [!INCLUDE[d365_server_md](includes/d365_server_md.md)].  
+Sets whether a .NET object that is defined by a variable is run on the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)] or [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)].  
 
 ## Applies To  
  Variables of the **DotNet** data type.  
@@ -31,5 +31,5 @@ Sets whether a .NET object that is defined by a variable is run on the [!INCLUDE
 <!--
 ## See Also  
  [Extending Microsoft Dynamics NAV Using Microsoft .NET Framework Interoperability](Extending-Microsoft-Dynamics-NAV-Using-Microsoft-.NET-Framework-Interoperability.md)   
- [How to: Call .NET Framework Types From AL Code](How-to--Call-.NET-Framework-Types-From-AL-Code.md)
+ [How to: Call .NET Framework Types From AL Code](How-to-Call-.NET-Framework-Types-From-AL-Code.md)
 -->

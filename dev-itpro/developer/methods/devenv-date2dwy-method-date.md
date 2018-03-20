@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DATE2DWY Method (Date)
 Gets the day of the week, week number, or year of a [Date Data Type](../datatypes/devenv-Date-Data-Type.md).  

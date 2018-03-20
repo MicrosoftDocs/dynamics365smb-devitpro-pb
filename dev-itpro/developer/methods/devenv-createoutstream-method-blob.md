@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CREATEOUTSTREAM Method (BLOB)
 Creates an OutStream object for a binary large object \(BLOB\). This enables you to write data to the BLOB.  

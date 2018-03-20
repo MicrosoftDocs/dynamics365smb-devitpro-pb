@@ -8,19 +8,19 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Customizing Tenants
-Every business is unique. Harness the power of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] to match how you work: your streamlined processes, your terminology, and how your employees or departments connect and collaborate.  
+Every business is unique. Harness the power of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to match how you work: your streamlined processes, your terminology, and how your employees or departments connect and collaborate.  
 
 Whilst there may already be Add-on apps available on AppSource that cover a customer’s need, we’ve also have the tools for you to build fully custom functionality or adapt what is already available out-of the box. 
  
-## Examples of custom changes to [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] 
+## Examples of custom changes to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] 
 
-- Capture industry specific information about the products you sell. 
+- Capture industry-specific information about the products you sell. 
 - Connect to other in-house data repositories or legacy systems to reduce duplicate data entry. 
 - Hide data fields that are rarely or never used. 
 - Add a printable report covering legally required declarations for your industry. 
@@ -36,7 +36,7 @@ You can start customizing in either the Designer or in Visual Studio Code. If yo
 The resulting AL code is compiled into an .app file, which can be deployed to production tenants. 
 
 ## How do I test my custom changes? 
-To ensure business continuity and protect the integrity of live customer data, you cannot customize [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] for an organization running in production. Instead, custom changes are tested on hosted sandbox environments or in Docker containers. Changes can be tested thoroughly in the browser until they are deemed fit to deploy into production where they are applied as an Extension 2.0 and can immediately be used by everyone in the organization. 
+To ensure business continuity and protect the integrity of live customer data, you cannot customize [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] for an organization running in production. Instead, custom changes are tested on hosted sandbox environments or in Docker containers. Changes can be tested thoroughly in the browser until they are deemed fit to deploy into production where they are applied as an Extension 2.0 and can immediately be used by everyone in the organization. 
 
 ## Where do I learn more? 
 To learn more about customization, select the following links:   
