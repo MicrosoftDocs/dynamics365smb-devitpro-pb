@@ -18,7 +18,7 @@ ms.author: jswymer
 The Role Center is the user's entry point and home page for [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users. For example, you could have a Role Center for sales order processors, business managers, administrators and more. A Role Center should be designed to give users quick access to the information that is most important to them in their daily work.
 
 ## Overview
-A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation area and content parts area. The following figure illustrates the general layout and elements of a Role Center page.
+A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation area and content area. The following figure illustrates the general layout and elements of a Role Center page.
 
 ![Role Center overview](media/rolecenter-overview.png "Role Center overview")
 
@@ -31,12 +31,14 @@ The navigation area appears at the top of the Role Center page, and provides lin
 |2|Second-level|These items are defined by an `area(embedding)` control. Each item is defined by a `action` control that targets a specific object, like a page or report. |You should use these items to open the entity lists most used by the users, regardless of the business area. |
 |3|Action-level|This area is defined by three different `area`controls: `area(creation)`, `area(processing)`, and  `area(reporting)`. <ul><li>Actions in the `area(creation)` control will appear first in the action menu, and will have plus icon.</li><li>Actions in an an `area(processing)` control will appear after the `area(creation)` items.</li><li>Actions in the `area(reporting)` control display last in the action area, and appear with default report icon. |The action area is designed for specific tasks and operations. These actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders. |
 
-### Behavior
--   If the first part in the content area is a Headline part, then in the client, the action area will be positioned either to the right of the Headline part or after the Headline part, dending on the browser window size. Otherwise, the action area will appear at the bottom of the navigation area, and extend the width of the workspace. 
+### Behavioral considerations
+If the first part in the content area is a Headline part, then in the client, the action area will be positioned either to the right of the Headline part or after the Headline part, dending on the browser window size. Otherwise, the action area will appear at the bottom of the navigation area, and extend the width of the workspace. 
 
 
-## Page part area
-The page part area specifies the content that appears on the Role Center. The page part area consists of one or more parts that are are associated with a page. The following table described some of the most common parts for Role Centers.
+## Content area
+The content area consists of one or more parts that display different content. There are three part types: Page, System, amd Chart. The page part type, which is the most typical part type, is associated with a separate underlying page. The System and Chart types are only supported in the Windows client.
+
+The following table described some of the most common parts for Role Centers, which are illustrated in the previous figure.
 
 |    |Element|Description|More information|
 |----|-------|-----------|----------------|
@@ -47,9 +49,10 @@ The page part area specifies the content that appears on the Role Center. The pa
 |8|Chart|A graphical representation of business data controlled by a the Business Chart control add-in on a page. ||
 |9|CardPart page|A `CardPart` page type that displays fields in a gridlayout.||
 
-### Behavior
-- In general, the parts will appear in the client according to the order in which they are defined in the RoleCenter page code.
-- However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues will appear under the **Activities** section, not matter where they are placed in the code. All other page parts under the **Business Assistance** section.  
+
+### Behavioral considerations
+- In general, the parts will appear in the client according to the order in which they are defined in code of the RoleCenter page.
+- However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues will appear under a common **Activities** section, not matter where they are placed in the code. All other page parts under the **Business Assistance** section.  
  
 
 ## See Also
