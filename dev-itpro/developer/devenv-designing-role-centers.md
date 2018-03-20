@@ -15,30 +15,31 @@ ms.author: jswymer
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Designing Role Centers
-The Role Center is the user's entry point and home page for [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users. For example, you could have a Role Center for sales order processors, business managers, administrators and more. A Role Center should be designed to give users quick access to the information that is most important to them in their daily work.
+The Role Center is the user's entry point and home page for [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users. For example, you could have a Role Center for sales order processors, business managers, administrators and more.
 
-## Overview
+You should develop your Role Centers based on a user-centric design model. A Role Center should give users quick access to the information that is most important to them in their daily work - displaying information that is pertinent to their role in the company and enabling them to easily navigate to relavant pages for viewing data and performing tasks.
+
+## Overview of the Role Center structure
 A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation area and content area. The following figure illustrates the general layout and elements of a Role Center page.
 
 ![Role Center overview](media/rolecenter-overview.png "Role Center overview")
 
 ## Navigation area
-The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codenits, and more. You define the navigation area by adding actions to the Role Center page. The navigation area is subdivided into smaller areas by using the `area()` control. The following table describes the elements in the navigation area:
+The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits, and more. You define the navigation area by adding actions to the Role Center page. The navigation area is subdivided into smaller areas by using the `area()` control. The following table describes the elements in the navigation area:
 
-|    |Area|Description|More information|
+|    |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
-|1|Top-level navigation|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. This area is defined by an `area(sections)` control.<ul><li>Each root item is defined by a `group` control under the `area(sections)` control</li><li>Subitems are defined by `action` controls under the `group` control.</li></ul>|The top-level navigation should provide access to most important enitity lists for the profile's section of business. For example, typical lists for sales order processor could be customers, sales orders, quotes, and invoices. |
-|2|Second-level|The second-level area displays a flat list of links that target These items are defined by an `area(embedding)` control. Each item is defined by a `action` control that targets a specific object, like a page or report. |You should use these items to open the entity lists most used by the users, regardless of the business area. |
-|3|Action-level|This area is defined by three different `area`controls: `area(creation)`, `area(processing)`, and  `area(reporting)`. <ul><li>Actions in the `area(creation)` control will appear first in the action menu, and will have plus icon.</li><li>Actions in an an `area(processing)` control will appear after the `area(creation)` items.</li><li>Actions in the `area(reporting)` control display last in the action area, and appear with default report icon. |The action area is designed for specific tasks and operations. These actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders. |
+|1|Top-level navigation|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. The pages targeted by the submenus will open in the content area of the Role Center. <br /><br />This area is defined by an `area(sections)` control in the page code.<ul><li>Each root item is defined by a `group` control under the `area(sections)` control</li><li>Subitems are defined by `action` controls under the `group` control.</li></ul>|The top-level navigation should provide access to relavant enitity lists for the role's business sections, ordered according to importance. For example, typical lists for sales order processor could be customers, sales orders, quotes, and invoices. |
+|2|Second-level|The second-level area displays a flat list of links to other pages. The pages targeted by the links will open in the content area of the Role Center.<br /><br />These items are defined in an `area(embedding)` control, where each individual item is specified by an `action` control within the `area(embedding)` control.|You should use these items to link to the user’s most useful entity lists, ordered according to the business process sequence. Try to limit the number of second-level items, and consider placing items in the top-level navigation instead if the number gets too large. |
+|3|Actions|The actions area can provide links pages, reports, and codeunits. The links can be displayed on the root-level, or grouped in a submenu. The objects targeted by these links will open in a separate window from Role Center page.<br /><br />The actions are defined by three different `area` controls: `area(creation)`, `area(processing)`, and  `area(reporting)`. <ul><li>Actions in the `area(creation)` control will appear first in the action area, and will display with a plus (+) icon.</li><li>Actions in an an `area(processing)` control will appear after the `area(creation)` items. These items can be grouped into submenus by using a `group` control.</li><li>Actions in the `area(reporting)` control target report object only and will appear last in the action area, and display with the default report icon. |The action area is designed for running the most important or typical tasks and operations required by the user. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or target reports. Place the most important action at the root-level, and group closely related action in a second-level, or submenu.|
 
-### Behavioral considerations
-If the first part in the content area is a Headline part, then in the client, the action area will be positioned either to the right of the Headline part or after the Headline part, dending on the browser window size. Otherwise, the action area will appear at the bottom of the navigation area, and extend the width of the workspace. 
-
+### Behavioral points of interest
+In page code, if the first part in the content area is a Headline part, then in the client, the action area will be automatically positioned either to the right of the Headline part or after the Headline part, depending on the browser window size. Otherwise, the action area will appear at the bottom of the navigation area, and extend the width of the workspace. 
 
 ## Content area
-The content area consists of one or more parts that display different content. There are three part types: Page, System, amd Chart. The page part type, which is the most typical part type, is associated with a separate underlying page. The System and Chart types are only supported in the Windows client.
+The content area consists of one or more parts that display different content. There are three part types: Page, System, amd Chart. The page part type, which is the most typical part type, displays a separate underlying page. The System and Chart types are only supported in the Windows client.
 
-The following table described some of the most common parts for Role Centers, which are illustrated in the previous figure.
+The following table described some of the most common parts for Role Centers, as illustrated in the previous figure.
 
 |    |Element|Description|More information|
 |----|-------|-----------|----------------|
@@ -50,9 +51,9 @@ The following table described some of the most common parts for Role Centers, wh
 |9|CardPart page|A `CardPart` page type that displays fields in a gridlayout.||
 
 
-### Behavioral considerations
+### Behavioral points of interest
 - In general, the parts will appear in the client according to the order in which they are defined in code of the RoleCenter page.
-- However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues will appear under a common **Activities** section, not matter where they are placed in the code. All other page parts under the **Business Assistance** section.  
+- However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues (`cuegroup` controls) will be automatically arranged under a common **Activities** section, no matter where they are placed in the code. All other page parts will appear under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will appear in the order in which they are defined in the page code. 
  
 
 ## See Also
