@@ -26,6 +26,9 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 5. If you chose **Host Locally**, save the **CreateBCSandbox.ps1** file to your computer.
 6. Open **CreateBCSandbox.ps1** file in Windows PowerShell ISE.
 7. 
+Note: You need to replace the path of the license file with the location of your partner license.
+The script will create a container, which is running Windows Authentication with your docker host. The container name is old and you will have a set of shortcuts on the desktop for launching Web Client, CSIDE, Windows Client etc.
+When starting the container of a given version the first time, new-navcontainer will export all objects of the base app in order to be able to create deltas. This will take some time, but is needed later in the process.
 
 ## <a name="AzureVsLocal"></a>Decide on Azure-hosted or local-hosted environment
 When you set up the Container Sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites, and use Docker to provide the infrastructure for the container-based apps. The difference is:
