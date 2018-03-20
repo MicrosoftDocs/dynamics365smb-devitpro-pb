@@ -16,11 +16,18 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Get started with the Container Sandbox Development Environment
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to both the AL development environment and the C/SIDE development environment. 
 
+## Steps to set up a container sandbox environment
 1. Sign up for a [Dynamics 365 Business Central tenant](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%3FredirectedFromSignup%3D1).
-2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], in the Search field enter SANDBOX ENVIRONMENT (CONTAINER)
-choose **Host in Azure** or **Host Locally**. For more information, see below
+2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and in the **Search** field, enter **SANDBOX ENVIRONMENT (CONTAINER)** and then select the relevant link.
+3. Read the page, and then choose **Host in Azure** or **Host Locally**.
 
-## Decide on Azure-hosted or local-hosted environment
+    For more information, see [Decide on Azure-hosted or local-hosted environment](#AzureVsLocal).
+4. If you chose **Host in Azure**, the Azure portal opens 
+5. If you chose **Host Locally**, save the **CreateBCSandbox.ps1** file to your computer.
+6. Open **CreateBCSandbox.ps1** file in Windows PowerShell ISE.
+7. 
+
+## <a name="AzureVsLocal"></a>Decide on Azure-hosted or local-hosted environment
 When you set up the Container Sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites, and use Docker to provide the infrastructure for the container-based apps. The difference is:
 
 -  With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you purchase ...
