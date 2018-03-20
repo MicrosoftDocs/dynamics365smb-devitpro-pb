@@ -12,7 +12,7 @@ caps.latest.revision: 25
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # TextEncoding Property (XMLports)
 Specifies the [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md) format to use when you use an XMLport to export or import data as text.  

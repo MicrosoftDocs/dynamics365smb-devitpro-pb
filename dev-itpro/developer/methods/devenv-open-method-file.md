@@ -11,7 +11,7 @@ ms.assetid: 963cd8f8-1a8e-4eda-9b8c-5b04f59af615
 caps.latest.revision: 19
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # OPEN Method (File)
 Opens an ASCII or binary file. This method does not create the file if it does not exist.  

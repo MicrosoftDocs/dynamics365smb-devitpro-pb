@@ -12,7 +12,7 @@ caps.latest.revision: 17
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ToolTipML Property
 Sets the text used for the tooltip of an action, a field, a factbox, or an activity button.  

@@ -11,7 +11,7 @@ ms.assetid: 0ca23c95-ae41-4a04-a90a-3f26b09355a9
 caps.latest.revision: 8
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # NAME Method (File)
 Gets the name of an ASCII or binary file.  

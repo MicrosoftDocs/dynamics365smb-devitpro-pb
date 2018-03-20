@@ -12,7 +12,7 @@ caps.latest.revision: 18
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # StyleExpr Property
 Specifies the format of text in a field. For fields in a **CueGroup** control, this property is used to configure the color of the color indicator on the cue. 

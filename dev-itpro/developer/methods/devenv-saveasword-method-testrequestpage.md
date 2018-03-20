@@ -12,7 +12,7 @@ caps.latest.revision: 7
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SAVEASWORD Method (TestRequestPage)
 Saves a report as a Microsoft Word \(.doc\) file.  

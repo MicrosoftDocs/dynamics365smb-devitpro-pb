@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # UsageCategory Property
 AL provides navigational support for pages and reports in the client. You enable a page or report to be available through Search in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] using the **UsageCategory** property. For more information about the Search functionality in AL, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md)

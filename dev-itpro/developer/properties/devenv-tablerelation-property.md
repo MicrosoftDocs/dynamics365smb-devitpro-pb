@@ -12,7 +12,7 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # TableRelation Property
 Sets relationships \(links\) to other tables. For example, if you want to provide a lookup into another table, enter the name of that table in this property.  

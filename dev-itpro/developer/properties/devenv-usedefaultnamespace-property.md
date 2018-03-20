@@ -12,7 +12,7 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # UseDefaultNamespace Property
 Specifies whether the value in default namespace should be used for both output and input XML documents.  

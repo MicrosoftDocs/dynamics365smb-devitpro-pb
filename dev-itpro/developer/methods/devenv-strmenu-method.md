@@ -12,7 +12,7 @@ caps.latest.revision: 7
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # STRMENU Method
 STRMENU creates and displays a dialog box with an option group and returns the selection that the user makes.  

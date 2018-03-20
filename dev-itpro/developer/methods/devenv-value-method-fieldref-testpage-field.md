@@ -11,7 +11,7 @@ ms.assetid: 20c42c77-b5e4-4c8c-bdf1-9d6c42d9f36b
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # VALUE Method (FieldRef, TestPage Field)
 Sets or gets the value of the field that is currently selected.  
