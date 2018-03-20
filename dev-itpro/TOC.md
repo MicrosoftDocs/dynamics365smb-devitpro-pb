@@ -153,6 +153,7 @@
 ### [Development Environment Commands](Development-Environment-Commands.md)-->
 # [Development in AL](developer/devenv-dev-overview.md)
 ## [Getting Started with AL](developer/devenv-get-started.md)
+### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)  
 ### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
