@@ -11,7 +11,7 @@ ms.assetid: 070eefff-a103-41f9-8e3f-f625de7ba048
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ENCRYPTIONENABLED Method
 Checks if the tenant is configured to allow encryption.  

@@ -12,7 +12,7 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Namespaces Property
 Specifies namespaces on the XMLport.  

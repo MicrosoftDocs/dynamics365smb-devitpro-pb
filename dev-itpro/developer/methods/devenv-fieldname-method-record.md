@@ -12,7 +12,7 @@ caps.latest.revision: 12
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # FIELDNAME Method (Record)
 Gets the name of a field as a string.  

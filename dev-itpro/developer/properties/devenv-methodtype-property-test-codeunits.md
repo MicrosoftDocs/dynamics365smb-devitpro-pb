@@ -12,7 +12,7 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # MethodType Property (Test Codeunits)
 Sets the type of method in a test codeunit.  

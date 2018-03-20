@@ -12,7 +12,7 @@ caps.latest.revision: 18
 ms.author: solsen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Editable Property
 Sets a value that indicates whether a field, page, or control can be edited through the UI.  

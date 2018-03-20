@@ -11,7 +11,7 @@ ms.assetid: fd9ff535-d12e-46d4-bda7-d120957e8b1c
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CLOSE Method (File)
 Closes a file that has been opened by the [OPEN Method \(File\)](devenv-OPEN-Method-File.md).  

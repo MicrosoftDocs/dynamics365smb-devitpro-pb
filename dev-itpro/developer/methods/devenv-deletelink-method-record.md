@@ -12,7 +12,7 @@ caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DELETELINK Method (Record)
 Deletes a specified link from a record in a table.  

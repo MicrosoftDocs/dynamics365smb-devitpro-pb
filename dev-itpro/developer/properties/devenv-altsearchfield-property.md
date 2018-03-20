@@ -12,7 +12,7 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # AltSearchField Property
 In earlier versions of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], set the [Name Property](devenv-name-property.md) of an alternative field used to perform lookups on the current field.  

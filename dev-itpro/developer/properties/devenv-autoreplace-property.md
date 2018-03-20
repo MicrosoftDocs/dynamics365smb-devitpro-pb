@@ -12,7 +12,7 @@ caps.latest.revision: 11
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # AutoReplace Property
 Sets whether imported records automatically replace existing records with the same primary key.  

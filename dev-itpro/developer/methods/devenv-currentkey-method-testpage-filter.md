@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CURRENTKEY Method (TestPage Filter)
 Gets the current key of a dataset that is displayed on a test page.  

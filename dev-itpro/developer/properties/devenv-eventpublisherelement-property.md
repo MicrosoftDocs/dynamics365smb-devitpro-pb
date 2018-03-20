@@ -12,7 +12,7 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # EventPublisherElement Property
 Specifies the table field that the trigger event pertains to.  

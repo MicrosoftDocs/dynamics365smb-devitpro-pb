@@ -12,7 +12,7 @@ caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # EventType Property
 Specifies the type of event that is published by the event publisher function.  

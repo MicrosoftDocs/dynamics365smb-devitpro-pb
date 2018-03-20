@@ -12,7 +12,7 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # IncludeSender Property
 Specifies whether global methods in the object that contains the event publisher method are exposed to event subscriber methods that subscribe to the event.  

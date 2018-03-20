@@ -11,7 +11,7 @@ ms.assetid: 507fd5c0-c6db-4ae0-b2b2-ff5039c6c9a6
 caps.latest.revision: 12
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETURL Method
 Generates a URL for the specified client target that is based on the configuration of the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] instance.  

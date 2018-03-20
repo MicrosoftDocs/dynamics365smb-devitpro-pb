@@ -12,7 +12,7 @@ caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # MultiLine Property
 Sets the value that indicates whether a field can display multiple lines of text.  

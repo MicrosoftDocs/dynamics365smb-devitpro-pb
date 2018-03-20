@@ -12,7 +12,7 @@ caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # EnableHyperlinks Property
 Sets whether hyperlinks to URLs are allowed on reports.  

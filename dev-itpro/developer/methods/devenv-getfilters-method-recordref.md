@@ -12,7 +12,7 @@ caps.latest.revision: 10
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETFILTERS Method (RecordRef)
 Determines which filters have been applied to the table referred to by the RecordRef.  

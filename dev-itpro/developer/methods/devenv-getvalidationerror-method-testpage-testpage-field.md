@@ -12,7 +12,7 @@ caps.latest.revision: 5
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETVALIDATIONERROR Method (TestPage, TestPage Field)
 Gets the validation error that occurred on a test page.  

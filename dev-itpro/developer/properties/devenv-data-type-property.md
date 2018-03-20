@@ -12,7 +12,7 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Data Type Property
 Sets the data type of a table field.  

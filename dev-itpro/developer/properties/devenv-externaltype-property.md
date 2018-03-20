@@ -13,7 +13,7 @@ caps.latest.revision: 2
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ExternalType Property
 Specifies the data type of the corresponding field data type in the external database table. For example, tables in Dynamics 365 for Sales database.

@@ -11,7 +11,7 @@ ms.assetid: cb44f98b-c4e6-44f0-a6af-030e7594cc8f
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CONFIRM Method (Dialog)
 Creates a dialog box that prompts the user for a **true** or **false** answer. The dialog box is centered on the screen.  

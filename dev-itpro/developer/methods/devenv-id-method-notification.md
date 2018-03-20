@@ -10,7 +10,7 @@ ms.author: SusanneWindfeldPedersen
 ms.service: dynamics365-financials
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ID Method (Notification)
 Specifies the identifier for a notification.

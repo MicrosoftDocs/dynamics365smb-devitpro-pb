@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ASCENDING Method (TestPage Filter)
 Gets or sets the order in which to search through a dataset on a test page.  

@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ApplicationArea Property
 Sets the application areas that apply to the control.  

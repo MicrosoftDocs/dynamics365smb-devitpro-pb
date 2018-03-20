@@ -12,7 +12,7 @@ caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DefaultNamespace Property
 Specifies the default namespace for both the [IMPORT Method (XMLport)](../methods/devenv-IMPORT-Method-XMLport.md) and [EXPORT Method (XMLport)](../methods/devenv-EXPORT-Method-XMLport.md) methods.  

@@ -12,7 +12,7 @@ caps.latest.revision: 14
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # FORMAT Method (Code, Text)
 Formats a value into a string.  

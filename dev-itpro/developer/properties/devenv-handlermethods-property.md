@@ -12,7 +12,7 @@ caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # HandlerMethods Property
 Specifies the handler methods that are used by the test method.  
