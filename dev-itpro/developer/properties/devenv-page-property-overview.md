@@ -14,6 +14,8 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
+[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
+
 # Page and Page Extension Properties Overview
 
 This topic lists properties that apply to the [Page Object](../devenv-page-object.md) and [Page Extension Object](../devenv-page-ext-object.md). 
