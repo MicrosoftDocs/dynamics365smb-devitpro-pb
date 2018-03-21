@@ -2,16 +2,18 @@
   tocHref: /dynamics365/
   topicHref: /dynamics365/index
   items:
-  - name: Introduction to Dynamics 365
-    tocHref: /dynamics365/get-started/what-is/
-    topicHref: /dynamics365/get-started/what-is/index
   - name: Business Central
     tocHref: /dynamics365/business-central/
     topicHref: /dynamics365/business-central/index
-  - name: Business Central Developer and IT-pro
-    tocHref: /dynamics365/business-central/dev-itpro
-    topicHref: /dynamics365/business-central/dev-itpro/index
-  - name: Accountant Hub
-    tocHref: /dynamics365/accountants/
-    topicHref: /dynamics365/accountants/index
-  
+    items:
+    - name: Business Central Developer and IT-pro
+      tocHref: /dynamics365/business-central/dev-itpro
+      topicHref: /dynamics365/business-central/dev-itpro/index
+      items:
+      - name: Preview of Dynamics 365 Business Central API
+        tocHref: /dynamics-nav/fin-graph/
+        topicHref: /dynamics-nav/fin-graph/index
+    - name: Accountant Hub
+      tocHref: /dynamics365/accountants/
+      topicHref: /dynamics365/accountants/index
+
