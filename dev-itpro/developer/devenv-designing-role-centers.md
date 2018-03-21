@@ -48,7 +48,7 @@ The navigation area appears at the top of the Role Center page, and provides lin
 -   In page code, if the first part in the content area is a Headline part, then in the client, the action area will be automatically positioned either to the right of the Headline part or after the Headline part, depending on the browser window size. Otherwise, the action area will appear at the bottom of the navigation area, and extend the width of the workspace. 
 
 ## Content area
-The content area consists of one or more parts that display different content. There are three part types: Page, System, amd Chart. The page part type, which is the most typical part type, displays a separate underlying page. The System and Chart types are only supported in the Windows client.
+The content area consists of one or more parts that display different content. The parts are added by including a `part` control in the `layout` control of the page code. There are three part types: `Page`, `System`, and `Chart`. The `System` and `Chart` types are not supported in the Web or mobile clients. The `Page` type displays the content of an seperate underlying page, typically a card or list.
 
 The following table described some of the most common parts for Role Centers, as illustrated in the previous figure.
 
@@ -66,6 +66,9 @@ The following table described some of the most common parts for Role Centers, as
 - In general, the parts will appear in the client according to the order in which they are defined in code of the RoleCenter page.
 - However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues (`cuegroup` controls) will be automatically arranged under a common **Activities** section, no matter where they are placed in the code. All other page parts will appear under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will appear in the order in which they are defined in the page code. 
  
+## Development consideration and best practices
+*To be determined*
+### Mobile apps
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
