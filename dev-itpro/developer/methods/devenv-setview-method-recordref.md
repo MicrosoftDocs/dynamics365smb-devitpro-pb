@@ -12,7 +12,7 @@ caps.latest.revision: 12
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SETVIEW Method (RecordRef)
 Sets the current sort order, key, and filters on a table.  

@@ -12,7 +12,7 @@ caps.latest.revision: 9
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # FINDLAST Method (Record)
 Finds the last record in a table based on the current key and filter.  

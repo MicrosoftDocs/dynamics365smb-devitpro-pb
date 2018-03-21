@@ -12,7 +12,7 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # MethodType Property
 Sets a date or totals type method on the query column. The method is applied by the [Method Property](devenv-method-property.md).  

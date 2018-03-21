@@ -12,7 +12,7 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # OrderBy Property
 Sorts rows in the resulting dataset of a query in ascending or descending order by a column or columns.  

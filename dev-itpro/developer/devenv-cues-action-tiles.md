@@ -10,6 +10,9 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Creating Cues and Action Tiles on Role Centers
+
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 This article provides an overview of Cues and Action tiles, and the tasks involved in creating and customizing them for displaying on Role Centers, as illustrated in the following figure:  
 
 ![Cues on the Role Center](media/Cue-overview-online-v2.png "Cues on the Role Center")  
@@ -67,7 +70,7 @@ The first thing that you must do is to create a table that contains fields that 
   
       If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [Calculation Formulas and the CalcFormula Property](properties/devenv-calculation-formulas-and-the-calcformula-property.md).  
   
-3.  Add a primary key field for FlowFields  
+3.  Add a primary key field for FlowFields.  
 
     A table must have at least one data field. Because a **FlowField** is based on a calculation, it not considered an actual data field. Therefore, if the Cue table only includes FlowFields, you must add "dummy" primary key field that does not yield any data.  
   
@@ -166,7 +169,7 @@ Action tiles promote an action or operation to the user on the Role Center. Acti
 
 Similar to Cues, Actions tile can be grouped together, under a common caption, by using the `cuegroup` control. The difference is that instead adding field controls under the `cuegroup` control, you create Action tiles by adding actions to the `cuegroup` control. 
 
-### Create an Action Tile
+### Create an Action tile
 1. Develop or locate the functionality that you want to Action tile to perform.
 
   For example, create the page object that you want the Action tile to open, add AL code that you want the Action tile to run, find the URL to the video.

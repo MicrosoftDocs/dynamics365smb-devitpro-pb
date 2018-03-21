@@ -12,7 +12,7 @@ caps.latest.revision: 20
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # HYPERLINK Method
 Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer.  

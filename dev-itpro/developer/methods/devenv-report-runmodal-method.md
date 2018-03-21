@@ -12,7 +12,7 @@ caps.latest.revision: 16
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # REPORT.RUNMODAL Method
 Loads and runs the report that you specify. The report is run modally.  

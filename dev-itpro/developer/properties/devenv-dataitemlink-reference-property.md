@@ -12,7 +12,7 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DataItemLinkReference Property
 Sets the parent data item to which a child (indented) data item is linked. After you specify the **DataItemLinkReference** value, use the [DataItemLink Property (Reports)](devenv-dataitemlink-reports-property.md) to specify a field from each data item on which to base the link.  

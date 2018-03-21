@@ -12,7 +12,7 @@ ms.assetid: d6bda43c-b5b4-4243-ac85-4b55cd2fe202
 caps.latest.revision: 9
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DateFormula Property
 Sets a date formula used to verify that the date the user enters is correct.  

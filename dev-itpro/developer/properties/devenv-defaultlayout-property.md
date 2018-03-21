@@ -12,7 +12,7 @@ caps.latest.revision: 3
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DefaultLayout Property
 Specifies whether the report uses the built-in RDLC or Word report layout by default.  

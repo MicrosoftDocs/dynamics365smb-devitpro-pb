@@ -11,7 +11,7 @@ ms.assetid: 423def02-ce02-460b-babe-4608b264c64c
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # WRITE Method (File)
 Writes to an MS-DOS encoded file or binary file.  

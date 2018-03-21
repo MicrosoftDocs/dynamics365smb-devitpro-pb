@@ -11,7 +11,7 @@ ms.assetid: 21df7251-85fd-4244-81ef-dda4bc7744db
 caps.latest.revision: 11
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # HASLINKS Method (RecordRef)
 Determines whether a record contains any links.  

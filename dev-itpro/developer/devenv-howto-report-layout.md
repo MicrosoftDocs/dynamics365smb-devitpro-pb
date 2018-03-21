@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Creating a Word Layout Report
 When you create a new report, there are two things you have to think about; defining the report dataset of data items and columns, and then designing the report layout. These steps will show how to create a very simple report based on a Word layout. For more information about the report object, see [Report Object](devenv-report-object.md).

@@ -12,7 +12,7 @@ caps.latest.revision: 19
 author: SusanneWindfeldPedersen
 ---
 
-
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Programming in AL
 AL is the programming language that is used for manipulating data (such as retrieving, inserting and modifying records) in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database, and controlling the execution of the various application objects, such as pages, reports, or codeunits.

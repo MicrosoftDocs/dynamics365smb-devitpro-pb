@@ -12,7 +12,7 @@ caps.latest.revision: 16
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # DrillDownPageID Property
 Sets the ID of the page to use as a drill-down.  

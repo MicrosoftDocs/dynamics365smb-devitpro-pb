@@ -12,7 +12,7 @@ caps.latest.revision: 5
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SAVEASXML Method (TestRequestPage)
 Saves a report dataset and the labels on a report as two XML \(.xml\) files.  

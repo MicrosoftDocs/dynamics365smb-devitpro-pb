@@ -12,7 +12,7 @@ caps.latest.revision: 7
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SAVEASPDF Method (TestRequestPage)
 Saves a report as an Adobe Acrobat \(.pdf\) file.  

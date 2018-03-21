@@ -12,7 +12,7 @@ caps.latest.revision: 30
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Format Property
 Sets the formats of the source expression for various data types.  

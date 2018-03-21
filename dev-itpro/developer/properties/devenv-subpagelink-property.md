@@ -11,7 +11,7 @@ ms.assetid: 94cd22c1-452e-44ec-96d0-5b5503f3982b
 caps.latest.revision: 7
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SubPageLink Property
 Sets a link to a Factbox from a page.  

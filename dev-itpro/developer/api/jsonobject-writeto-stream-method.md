@@ -28,7 +28,7 @@ Serializes and writes the JSON data of the JsonObject to a given OutStream objec
 &emsp;Type: [JsonObject](jsonobject-class.md)
 
 *OutStream*  
-&emsp;Type: [OutStream](/datatypes/devenv-instream-and-outstream-data-types.md)
+&emsp;Type: [OutStream](../datatypes/devenv-instream-and-outstream-data-types.md)
 
 The OutStream object to which the JSON data will be written.
 

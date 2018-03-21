@@ -12,7 +12,7 @@ caps.latest.revision: 3
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GOTORECORD Method (TestPage)
 Finds the specified record in a dataset on a test page.  

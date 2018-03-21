@@ -11,7 +11,7 @@ ms.assetid: e11c0fa0-0d61-43b9-8613-cb443588e790
 caps.latest.revision: 8
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ReqFilterHeading Property
 Sets a caption for the request page tab that is related to this data item. The value is taken from the [ReqFilterHeadingML Property](devenv-reqfilterheadingml-property.md) if this property is set.  

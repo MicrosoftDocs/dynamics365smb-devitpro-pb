@@ -11,7 +11,7 @@ ms.assetid: 65221170-c9fb-4563-984b-386229e38410
 caps.latest.revision: 15
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETFILTER Method (FieldRef)
 Gets the filter that is currently applied to the field referred to by FieldRef.  

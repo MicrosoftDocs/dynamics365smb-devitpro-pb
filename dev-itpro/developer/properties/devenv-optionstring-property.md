@@ -12,7 +12,7 @@ caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # OptionString Property
 Sets the option values for a field, text box, or variable. OptionString is multilanguage enabled.  

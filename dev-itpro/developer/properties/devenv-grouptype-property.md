@@ -11,7 +11,7 @@ ms.assetid: 349e71ab-2fe0-457a-84de-9281de73d070
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GroupType Property
 Sets the subtype for a group control on a page, which determines how fields in a group layout on a page.  

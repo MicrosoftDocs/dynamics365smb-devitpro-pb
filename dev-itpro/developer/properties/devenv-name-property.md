@@ -12,7 +12,7 @@ caps.latest.revision: 10
 ms.author: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Name Property
 Sets the name of the object. The name is used for internal identification of the objects, controls, and other elements in AL code and the development environment.  

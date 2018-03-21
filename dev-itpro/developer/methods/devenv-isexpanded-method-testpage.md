@@ -12,7 +12,7 @@ caps.latest.revision: 3
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ISEXPANDED Method (TestPage)
 Specifies if rows on a test page are expanded.  

@@ -11,7 +11,7 @@ ms.assetid: 58abfa67-013a-40d6-8e71-94dbb1ddd03d
 caps.latest.revision: 14
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETRECORD Method (RecordID)
 Gets a RecordRef that refers to the record identified by the RecordID.  

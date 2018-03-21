@@ -11,7 +11,7 @@ ms.assetid: 8e42682c-f78a-4b67-8d27-d4fcf0bfee7b
 caps.latest.revision: 12
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # FIELDINDEX Method (RecordRef)
 Gets the FieldRef of the field that has the specified index in the table that is referred to by the *RecordRef*.  

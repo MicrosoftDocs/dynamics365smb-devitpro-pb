@@ -12,7 +12,7 @@ caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Promoted Property
 Sets the value that indicates whether the selected action is promoted, which means that it appears on the Home tab as well as the tab where is it defined.  
@@ -30,3 +30,4 @@ Sets the value that indicates whether the selected action is promoted, which mea
   
 ## See Also  
  [PromotedIsBig Property](devenv-promotedisbig-property.md)   
+ [PromotedOnly Property](devenv-promotedonly-property.md)  

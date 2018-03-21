@@ -12,7 +12,7 @@ caps.latest.revision: 11
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ShowMandatory Property
 Sets a value that specifies whether users must enter a value in the selected field or text box. The field is marked on the page with a red asterisk and does not enforce any validation. Once the field is filled, the red asterisk disappears. The **ShowMandatory** property only controls the UI and overrides any asterisk marking of the [NotBlank Property](devenv-notblank-property.md).  

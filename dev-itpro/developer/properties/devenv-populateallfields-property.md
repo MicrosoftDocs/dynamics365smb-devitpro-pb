@@ -12,7 +12,7 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # PopulateAllFields Property
 Sets whether fields are filled out automatically with a single filter value when a new record is inserted in a table.  

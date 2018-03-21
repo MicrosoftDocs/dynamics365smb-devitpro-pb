@@ -12,7 +12,7 @@ caps.latest.revision: 17
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # REPORT.RUN Method
 Loads and runs the report that you specify.  

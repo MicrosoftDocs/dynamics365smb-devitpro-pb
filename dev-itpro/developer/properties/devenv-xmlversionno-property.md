@@ -12,7 +12,7 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # XMLVersionNo Property
 Set which version of XML the XML document conforms to. Two options are available: 1.0 \(the default\) and 1.1.  

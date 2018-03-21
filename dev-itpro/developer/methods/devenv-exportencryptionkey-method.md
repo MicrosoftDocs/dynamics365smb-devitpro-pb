@@ -12,7 +12,7 @@ caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # EXPORTENCRYPTIONKEY Method
 Returns a password protected temporary filepath containing the encryption key.  

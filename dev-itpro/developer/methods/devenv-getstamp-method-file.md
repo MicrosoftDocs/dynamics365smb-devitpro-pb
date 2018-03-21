@@ -12,7 +12,7 @@ caps.latest.revision: 14
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETSTAMP Method (File)
 Gets the exact time that a file was last written to.  

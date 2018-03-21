@@ -12,7 +12,7 @@ caps.latest.revision: 11
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SETRANGE Method (Record)
 Sets a simple filter, such as a single range or a single value, on a field.  

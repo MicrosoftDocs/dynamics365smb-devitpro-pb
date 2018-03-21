@@ -11,7 +11,7 @@ ms.assetid: f87172d4-6c05-48b5-b3f6-039e47534e2b
 caps.latest.revision: 7
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SubPageView Property
 Sets the table view for a subpage.  
@@ -28,3 +28,4 @@ Sets the table view for a subpage.
  ## See Also  
  [Properties](devenv-properties.md)  
  [SubPageLink Property](devenv-subpagelink-property.md)
+ 

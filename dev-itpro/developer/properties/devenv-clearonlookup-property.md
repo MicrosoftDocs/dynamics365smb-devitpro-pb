@@ -12,7 +12,7 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ClearOnLookup Property
 Sets a value that determines whether the current contents of the field are deleted before the value that is selected via the lookup is added.  

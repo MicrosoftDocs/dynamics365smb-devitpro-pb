@@ -18,7 +18,7 @@ Pages and code units that are designed to be exposed as Web services must not ge
 
 **SUMMARY AND INTENT**: When writing code for web services, you must not use end-user confirmation dialog boxes, message boxes, or any other page constructs in the code. Because a web service runs independently of a user interface, running this type of code causes the code to throw an exception. The exception can be caught and handled, but the Web service will not complete.
 
-**RESOURCES**: For more information, see [Microsoft Dynamics NAV Web Services](../Microsoft-Dynamics-NAV-Web-Services-Overview.md).
+**RESOURCES**: For more information, see [Microsoft Dynamics NAV Web Services](/dynamics-nav/Microsoft-Dynamics-NAV-Web-Services-Overview).
 
 **HOW TO COMPLY**: Ensure that code for pages and code units that are being exposed as Web services do not use any end-user confirmation dialog boxes or message boxes.
 

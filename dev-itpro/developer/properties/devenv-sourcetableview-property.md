@@ -12,7 +12,7 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SourceTableView Property
 Sets the key, sort order, and filter you want to use to determine the view of the source table presented to the user.  

@@ -12,7 +12,7 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # VariableName Properties
 Sets a variable name for the table that you have specified in the [SourceTable Property](devenv-sourcetable-property.md). It is also used to specify a variable name for a text that you have specified in the [SourceType Property](devenv-sourcetype-property.md).  
