@@ -104,6 +104,16 @@ We will be using the Application Test Toolkit to automate and run the tests that
 
 - Application objects for running application tests such as the **Test Tool** page. 
 
+In order to install the Application Test Toolkit:
+1. Open the Nav Container Helper prompt found on the Desktop. You will see a list of functions that you can run on the container.
+2. Run the `Import-TestToolkitToNavContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
+
+```
+Import-TestToolkitToNavContainer -containerName navserver
+```
+
+Alternatively, if you use the `New-NavContainer` function from the NavContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 
+
 #### Describing your tests 
 To help you design the relevant tests for your functionality, you can write scenarios that outline what you want to test, and you can write test criteria in the GIVEN-WHEN-THEN format. By adding comments based on feature, scenario, and GIVEN-WHEN-THEN, you add structure to your test code and make tests readable. 
 
