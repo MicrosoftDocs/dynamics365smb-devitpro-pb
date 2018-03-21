@@ -42,6 +42,39 @@ When you set up the Container Sandbox, you can choose to host the sandbox on Mic
 
     For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition). For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
+## Container sandbox
+
+Creating container MyBCapp2 from image navinsider.azurecr.io/dynamics-nav:11.0.21063.0-finus
+Waiting for container MyBCapp2 to be ready
+Initializing...
+Starting Container
+Hostname is MyBCapp2
+PublicDnsName is MyBCapp2
+Using Windows Authentication
+Starting Local SQL Server
+Starting Internet Information Server
+Modifying NAV Service Tier Config File with Instance Specific Settings
+Starting NAV Service Tier
+Creating DotNetCore NAV Web Server Instance
+Enabling Financials User Experience
+Creating http download site
+Creating Windows user jswymer
+Setting SA Password and enabling SA
+Creating NAV user
+Container IP Address: 172.22.147.63
+Container Hostname  : MyBCapp2
+Container Dns Name  : MyBCapp2
+Web Client          : http://MyBCapp2/NAV/
+Dev. Server         : http://MyBCapp2
+Dev. ServerInstance : NAV
+
+Files:
+http://MyBCapp2:8080/al-0.15.18566.vsix
+
+Initialization took 116 seconds
+Ready for connections!
+Reading CustomSettings.config from MyBCapp2
+Creating Desktop Shortcuts for MyBCapp2
 
 ## Run the container-based image
 Run the following command in a Command Prompt as Administrator to run a Docker image of Dynamics 365 Business Central:
