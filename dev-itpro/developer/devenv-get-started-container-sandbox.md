@@ -16,6 +16,8 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Get started with the Container Sandbox Development Environment
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to both the AL development environment and the C/SIDE development environment. 
 
+
+
 ## Steps to set up a container sandbox environment
 1. Sign up for a [Dynamics 365 Business Central tenant](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%3FredirectedFromSignup%3D1).
 2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and in the **Search** field, enter **SANDBOX ENVIRONMENT (CONTAINER)** and then select the relevant link.
@@ -42,8 +44,58 @@ When you set up the Container Sandbox, you can choose to host the sandbox on Mic
 
     For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition). For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
-## Container sandbox
+## Setting up a local-hosted container sandbox
 
+1. If not already done, install Docker.
+
+    To install and configure Docker, choose the version of Docker that is appropriate for the host operating system:
+
+    -   For Windows 10, download from [Docker Community Edition for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows).
+
+    -   For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition).
+
+2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Search for Page or Report](media/search-icon.png "Search for Page or Report icon") icon, enter enter **SANDBOX ENVIRONMENT (CONTAINER)** and then select the relevant link.
+3. Choose **Host Locally**.
+4. Save the **CreateBCSandbox.ps1** file to your computer.
+5. Run Windows PowerShell ISE as an administrator.
+6. Open the **CreateBCSandbox.ps1** file.
+7. Set the `$containername = ''` variable to the name that you want to give the container, for example `$containername = 'MyBizCentralApp'`.
+
+    This name is only used internally in your envirorment for identification purposes.
+8. Press F5 to run the script.
+
+The console pane will display the progress of the script. Whne the script has completed successfully, it will display information similar to the following:
+
+```
+Container IP Address: 172.22.147.63
+Container Hostname  : MyBizCentralApp
+Container Dns Name  : MyBizCentralApp
+Web Client          : http://MyBizCentralApp/NAV/
+Dev. Server         : http://MyBizCentralApp
+Dev. ServerInstance : NAV
+
+Files:
+http://MyBizCentralApp:8080/al-0.15.18566.vsix
+
+Initialization took 116 seconds
+Ready for connections!
+Reading CustomSettings.config from MyBizCentralApp
+Creating Desktop Shortcuts for MyBizCentralApp
+```
+
+In particular, you should make note the following parameters, because they will be useful when working in the container sandbox:
+
+|  Parameter  |  Description  |
+|-------------|---------------|
+|Dev. Server|This specifies the |
+|Dev. ServerInstance|This specifies the  |
+|Files||
+|||
+
+
+
+
+<!-- 
 Creating container MyBCapp2 from image navinsider.azurecr.io/dynamics-nav:11.0.21063.0-finus
 Waiting for container MyBCapp2 to be ready
 Initializing...
@@ -75,33 +127,8 @@ Initialization took 116 seconds
 Ready for connections!
 Reading CustomSettings.config from MyBCapp2
 Creating Desktop Shortcuts for MyBCapp2
+-->
 
-## Run the container-based image
-Run the following command in a Command Prompt as Administrator to run a Docker image of Dynamics 365 Business Central:
-
-```docker run -e accept_eula=Y -m 4G microsoft/dynamics-nav```
-
-> [!NOTE]  
-> When you run the Docker run command, it will start downloading the image if it does not already exist. A container consists of multiple layers, only the needed layers are downloaded.
-
-At this point, you can open your internet browser and type in the Web client URL. You will be prompted with a login dialog, where you can login with the NAV Admin Username/Password displayed.
-
-## The NavContainerHelper module
-To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `NavContainerHelper` to work with containers. On a Windows 10 or Windows Server 2016, start Powershell as an Administrator and type:
-
-```install-module navcontainerhelper -force```
-
-To see which functions are available in the NavContainerHelper module use the following command:
-
-```Write-NavContainerHelperWelcomeText```
-
-To get quickly get started, run the following command from the NavContainerHelper module:
-
-```new-navcontainer -accept_eula -containerName test -imageName microsoft/dynamics-nav:devpreview```
-
-The `NavContainerHelper` will create a folder on the C:\ drive called DEMO and will place all files underneath that folder. The DEMO folder will be shared to the container for transfer of files etc. If you do not specify a username and a password, it will ask for your password and use the current Windows username. If you specify your windows password, the container setup will use Windows Authentication integrated with the host. The `NavContainerHelper` will also create shortcuts on the desktop for the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Web client, a container prompt, and a container PowerShell prompt.
-
-The `navcontainerhelper` module also allows you to add the `-includeCSide` switch in order to add the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Windows client and C/SIDE to the desktop and export all objects to a folder underneath C:\DEMO\Extensions for the object handling functions from the module to work.
 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
