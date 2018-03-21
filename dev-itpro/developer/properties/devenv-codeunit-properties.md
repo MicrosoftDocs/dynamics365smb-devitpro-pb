@@ -12,6 +12,8 @@ caps.latest.revision: 16
 author: SusanneWindfeldPedersen
 ---
 
+[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
+
 # Codeunit Properties 
 This topic lists properties that apply to the Codeunit object, variables, text constants, methods, parameters, and return values. 
 
