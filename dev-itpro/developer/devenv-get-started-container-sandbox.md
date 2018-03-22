@@ -21,38 +21,13 @@ You set up a container sandbox running the **SANDBOX ENVIRONMENT (CONTAINER)** p
 > [!TIP]
 > [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] also offers an online sandbox. For more information, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
 
-<!-- 
-## Steps to set up a container sandbox environment
-1. Sign up for a [Dynamics 365 Business Central tenant](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%3FredirectedFromSignup%3D1).
-2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and in the **Search** field, enter **SANDBOX ENVIRONMENT (CONTAINER)** and then select the relevant link.
-3. Read the page, and then choose **Host in Azure** or **Host Locally**.
-
-    For more information, see [Decide on Azure-hosted or local-hosted environment](#AzureVsLocal).
-4. If you chose **Host in Azure**, the Azure portal opens 
-5. If you chose **Host Locally**, save the **CreateBCSandbox.ps1** file to your computer.
-6. Open **CreateBCSandbox.ps1** file in Windows PowerShell ISE.
-7. 
-Note: You need to replace the path of the license file with the location of your partner license.
-The script will create a container, which is running Windows Authentication with your docker host. The container name is old and you will have a set of shortcuts on the desktop for launching Web Client, CSIDE, Windows Client etc.
-When starting the container of a given version the first time, new-navcontainer will export all objects of the base app in order to be able to create deltas. This will take some time, but is needed later in the process.
--->
-
 ## <a name="AzureVsLocal"></a>Choosing an Azure-hosted or local-hosted container sandbox
 When you set up the container sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites and use Docker to provide the infrastructure for the container-based applicationn. The difference is:
 
 -  With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you sign-up for an Azure subscription, and additional costs may be incurred for each container sandbox. 
 -  Local hosting requires that your computer is running Windows 10 or Windows Server 2016, and you install and configure Docker before setting up the container sandbox.
 
-<!-- 
-    To install and configure Docker, choose the version of Docker that is appropriate for the host operating system.
-
-    For Windows 10, download from [Docker Community Edition](https://www.docker.com/community-edition). For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10).
-
-    For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition). For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server).
-
--->
-
-## Setting up an Azure-hosted container sandbox
+## Set up an Azure-hosted container sandbox
 1. If you you do not already have one, sign up for an Azure subscription.
 
     To get a free subscription and read more information, see [https://azure.microsoft.com](https://azure.microsoft.com).
@@ -63,9 +38,9 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
     The Azure portal opens to display a custom deployment form. 
 4. Fill out the required fields on the fom, and then select **Purchase**.
 
-    
+    The 
 
-## Setting up a local-hosted container sandbox
+## Set up a local-hosted container sandbox
 
 1. If not already done, install Docker.
 
@@ -106,7 +81,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
 9. Write down or copy the following parameter/values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need this information later to [set up Visual Studio Code for for extension development](#VSCode).
 
-You now have container sandbox set up on your computer. The following shortcuts have been added to your desktop:
+You now have a container sandbox set up on your computer. The following shortcuts have been added to your desktop:
 
 -   **\<Container name\> Windows Client** - opens the Windows client for your application in the container.
 -    **\<Container name\> Web Client** - opens the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for the your application in the container.
