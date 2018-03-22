@@ -65,7 +65,7 @@ The following table described some of the most common parts for Role Centers, as
 |5|Wide cues | A set of cues for displaying large numbers, like monetary values. This is created by using a `cuegroup` control on a `CardPart` page type, where the [Layout property](properties/devenv-layout-property.md) is set to `wide`. |[Wide Cues](devenv-cues-action-tiles.md#CueWideLayout)|
 |6|Normal cues |Provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. These are created by using a `cuegroup` control on a `CardPart` page type. |[Creating Cues](devenv-cues-action-tiles.md#CreateCue)|
 |7|Action tiles |Tiles that link to tasks or operations, like opening another page, starting a video, targeting another resource or URL, or running code. These are created by using a `cuegroup` control on a `CardPart` page type|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
-|8|Chart|A graphical representation of business data. This could come from a Business Chart control add-in that you develop or Power BI jejf coming from the page. ||
+|8|Chart|A graphical representation of business data. This could come from a Business Chart control add-in that you develop or Power BI from the page. ||
 |9|CardPart or ListPart page|A  page type that displays fields in a tabular format.|[Page Object](devenv-page-object.md)|
 |10|Control add-in|This could be a control add-in that you develop|[Control Add-in Object](devenv-control-addin-object.md)|
 
