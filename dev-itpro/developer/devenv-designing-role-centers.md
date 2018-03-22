@@ -15,7 +15,7 @@ ms.author: jswymer
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Designing Role Centers
-The Role Center is the user's entry point and home page for [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users. For example, you could have a Role Center for sales order processors, business managers, administrators and more.
+Users enjoy working with [!INCLUDE[d365fin_md](includes/d365fin_md.md)] because it provides a role-tailored experience that helps them focus on the work that is important to them. The Role Center is an important part of this. The Role Center is the user's entry point and home page for [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users. For example, you could have a Role Center for sales order processors, business managers, administrators and more.
 
 Role Centers are based on a user-centric design model. You should design a Role Center to give users quick access to the information that is most important to them in their daily work - displaying information that is pertinent to their role in the company and enabling them to easily navigate to relavant pages for viewing data and performing tasks.
 
@@ -51,9 +51,11 @@ For more information about navigation, see [Adding to Navigation](devenv-adding-
 -   In page code, if the first part in the content area is a Headline part, then in the client, the action area will be automatically positioned either to the right of the Headline part or after the Headline part, depending on the browser window size. Otherwise, the action area will appear at the bottom of the navigation area, and extend the width of the workspace. 
 
 ## Content area
-The content area consists of one or more parts that display different content. The parts are added by including a `part` control in the `layout` control of the page code.
+The content area consists of one or more parts that display different pages. Unlike the navigation and actions area that is completely defined in the Role Center page code, the content area consists of self-contained, re-usable parts that are outside of the Role Center page. The parts are added by including a `part` control in the `layout` control of the page code.
 
+<!-- 
 Remove:  There are three part types: `Page`, `System`, and `Chart`. The `System` and `Chart` types are not supported in the Web or mobile clients. The `Page` type displays the content of an seperate underlying page, typically a card or list. unlike the nav the ocmntent comnsistes of selfcontained reusable parts.
+-->
 
 The following table described some of the most common parts for Role Centers, as illustrated in the previous figure.
 
@@ -63,22 +65,23 @@ The following table described some of the most common parts for Role Centers, as
 |5|Wide cues | A set of cues for displaying large numbers, like monetary values. This is created by using a `cuegroup` control on a `CardPart` page type, where the [Layout property](properties/devenv-layout-property.md) is set to `wide`. |[Wide Cues](devenv-cues-action-tiles.md#CueWideLayout)|
 |6|Normal cues |Provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. These are created by using a `cuegroup` control on a `CardPart` page type. |[Creating Cues](devenv-cues-action-tiles.md#CreateCue)|
 |7|Action tiles |Tiles that link to tasks or operations, like opening another page, starting a video, targeting another resource or URL, or running code. These are created by using a `cuegroup` control on a `CardPart` page type|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
-|8|Chart|A graphical representation of business data. This could be a Business Chart control add-in on a page that you build or a PowerBi jejf coming from the page. ||
-|9|CardPart page|A `CardPart` page type that displays fields in a tabular format.||
-
-Control-addin 
-
+|8|Chart|A graphical representation of business data. This could come from a Business Chart control add-in that you develop or Power BI jejf coming from the page. ||
+|9|CardPart or ListPart page|A  page type that displays fields in a tabular format.|[Page Object](devenv-page-object.md)|
+|10|Control add-in|This could be a control add-in that you develop|[Control Add-in Object](devenv-control-addin-object)|
 
 
 ### Behavioral points of interest
 - In general, the parts will appear in the client according to the order in which they are defined in code of the Role Center page.
 - However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues (`cuegroup` controls) will be automatically arranged under a common **Activities** section, no matter where they are placed in the code. All other page parts will appear under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will appear in the order in which they are defined in the page code. 
- 
+
+<!-- 
 ## Development tips
 *To be determined*
 
 Cues are for operational purposes, shifting papers, while 
 ### Mobile apps
+
+-->
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
