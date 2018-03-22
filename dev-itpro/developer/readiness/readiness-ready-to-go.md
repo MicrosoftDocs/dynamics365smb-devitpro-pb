@@ -3,7 +3,7 @@ title: "Ready to Go"
 description: "The Ready to Go program contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/13/2018
+ms.date: 03/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

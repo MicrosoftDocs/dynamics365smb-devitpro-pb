@@ -3,7 +3,7 @@ title: "Develop a Horizontal Solution"
 description: "Enchance the capabilities that allows you to build an interface and control the data flow by developing an Horizontal service."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/13/2018
+ms.date: 03/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -12,6 +12,8 @@ caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
 
+[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
+
 # Query Properties
 This topic lists properties that apply to the query object.  
 
