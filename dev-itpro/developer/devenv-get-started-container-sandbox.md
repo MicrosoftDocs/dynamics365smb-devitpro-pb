@@ -59,7 +59,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
     -   For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition).
 
-2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Search for Page or Report](media/search-icon.png "Search for Page or Report icon") icon, enter enter **SANDBOX ENVIRONMENT (CONTAINER)** and then select the relevant link.
+2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Search for Page or Report](media/search-icon.png "Search for Page or Report icon") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
 3. Choose **Host Locally**.
 4. Save the **CreateBCSandbox.ps1** file to your computer.
 5. Run Windows PowerShell ISE as an administrator.
