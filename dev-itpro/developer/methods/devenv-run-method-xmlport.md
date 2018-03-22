@@ -1,7 +1,7 @@
 ---
 title: "RUN Method (XMLport)"
 ms.custom: na
-ms.date: 07/13/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.assetid: 1a3b82b8-2f24-4fae-9a45-391cde2de600
 caps.latest.revision: 17
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # RUN Method (XMLport)
 Loads and executes the XMLport that you specify.  
@@ -58,7 +58,7 @@ This parameter overrides the setting of the [UseRequestPage Property](../propert
  The record to use in the XMLport. The system will use any filters that are attached to the specified record.  
 
 ## Example  
- The following example creates a codeunit that runs the XMLport that has ID 50002, runs a request page that lets the user set filters, and exports data from the Customer table. On the request page, you can either open the file and view it or save it as an XML document on your computer. This example assumes that you have created an XMLport and saved it with ID 50002. <!--Links For more information about how to create an XMLport, see [How to: Create XMLports](How-to--Create-XMLports.md).--> This example requires that you create the following global variable.  
+ The following example creates a codeunit that runs the XMLport that has ID 50002, runs a request page that lets the user set filters, and exports data from the Customer table. On the request page, you can either open the file and view it or save it as an XML document on your computer. This example assumes that you have created an XMLport and saved it with ID 50002. <!--Links For more information about how to create an XMLport, see [How to: Create XMLports](How-to-Create-XMLports.md).--> This example requires that you create the following global variable.  
 
 |Variable name|DataType|Subtype|  
 |-------------------|--------------|-------------|  

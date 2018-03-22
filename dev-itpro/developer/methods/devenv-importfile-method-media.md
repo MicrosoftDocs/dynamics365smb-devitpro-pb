@@ -1,7 +1,7 @@
 ---
 title: "IMPORTFILE Method (Media)"
 ms.custom: na
-ms.date: 07/13/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.service: dynamics365-financials
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # IMPORTFILE Method (Media)
 Adds a media type, such as a JPEG image, from a file to a **Media** data type field of a record for displaying the media with the record in the client. The media file is imported to the application database, and a reference to the media is included in the **Media** data type field.
@@ -75,7 +75,7 @@ To support the example code that follows, create the following objects:
         This is the field on which you will import the media file.
     - A field group that has the name **Brick** and includes the **No.** and **Image** fields.
 
-        The field group is used to display the image on a page in the brick layout. <!--LinksFor more information, see [How to: Display Data as Bricks](How-to--Display-Data-as-Bricks.md).-->
+        The field group is used to display the image on a page in the brick layout. <!-- LinksFor more information, see [How to: Display Data as Bricks](How-to-Display-Data-as-Bricks.md). -->
 -   A page that is named **My Items** and has the following characteristics:
 
     -   List type page that uses the **My Items** table as its source.

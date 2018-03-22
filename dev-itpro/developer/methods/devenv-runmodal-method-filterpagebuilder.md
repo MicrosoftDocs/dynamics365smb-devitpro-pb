@@ -12,7 +12,7 @@ caps.latest.revision: 4
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # RUNMODAL Method (FilterPageBuilder)
 Builds and runs the filter page that includes the filter controls that are stored in FilterPageBuilder object instance.  

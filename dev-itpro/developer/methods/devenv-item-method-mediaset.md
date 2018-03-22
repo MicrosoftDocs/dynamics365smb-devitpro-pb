@@ -12,7 +12,7 @@ caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ITEM Method (MediaSet)
 Gets the unique identifier (GUID) of a media object that is assigned to a MediaSet on a record.

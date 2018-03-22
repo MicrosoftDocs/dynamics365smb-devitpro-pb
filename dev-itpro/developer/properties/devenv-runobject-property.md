@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: 779b813c-5f83-49bd-9dd9-ac79a0f7768f
 caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # RunObject Property
 Sets the object you want to run immediately when the action is activated.  

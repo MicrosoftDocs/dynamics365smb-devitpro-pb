@@ -11,7 +11,7 @@ ms.assetid: 31bc8a42-1b0b-44c0-9744-cbb517cc8ce8
 caps.latest.revision: 15
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # NUMBER Method (RecordRef)
 Gets the table ID \(number\) of the table that contains the record that was referred to by the RecordRef.  

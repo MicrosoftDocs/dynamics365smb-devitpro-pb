@@ -12,7 +12,7 @@ caps.latest.revision: 7
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # STRPOS Method (Code, Text)
 Searches for the first occurrence of substring inside a string.  

@@ -7,9 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-365-for-financials"
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
+
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 # Reports Overview
 You can use reports to print or display information from a database. Use reports to structure and summarize information to print documents, such as invoices. For example, create a report that lists all customers and orders that have been added by each customer. Also, create a report that is automatically filled with the relevant information for an invoice.  
 
@@ -32,14 +35,14 @@ Creating a report involves two primary tasks. First, you create a report object 
 |Learn the overview of the report design process|[Report Design Overview](devenv-report-design-overview.md)| 
 |Understand the report structure and designing the layout for a report.|[Report Object](devenv-report-object.md)|
 |Understanding the data model and dataset of a report|[Defining a Report Dataset](devenv-report-dataset.md)|    
-|Learn how to create a report using a word layout|[How to: Create a Word Layout Report](devenv-howto-report-layout.md)| 
-|Learn how to create a report using an RDL layout report.|[How to: Create an RDL Layout Report](devenv-howto-rdl-report-layout.md)|
+|Learn how to create a report using a word layout|[Creating a Word Layout Report](devenv-howto-report-layout.md)| 
+|Learn how to create a report using an RDL layout report.|[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)|
  
 
 ## See Also  
 [Report Object](devenv-report-object.md)   
-[How to: Create a Report](devenv-howto-report-layout.md)  
-[How to: Create an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
+[Creating a Report](devenv-howto-report-layout.md)  
+[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 
 
 

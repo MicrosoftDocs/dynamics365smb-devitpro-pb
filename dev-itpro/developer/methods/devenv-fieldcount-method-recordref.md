@@ -11,7 +11,7 @@ ms.assetid: 3d4fbd5d-52db-4acf-bb78-257e231874c6
 caps.latest.revision: 12
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # FIELDCOUNT Method (RecordRef)
 Gets the number of fields in the table that are currently selected or returns the number of fields that have been defined in a key. Returns an error if no table or no key is selected.  

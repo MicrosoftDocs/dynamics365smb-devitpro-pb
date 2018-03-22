@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: ed5475a6-86fe-4f63-b28b-fc7c6b800eda
 caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # LookupPageID Property
 Sets the ID of the page you want to use as a lookup.  

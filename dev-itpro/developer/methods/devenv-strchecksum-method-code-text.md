@@ -12,7 +12,7 @@ caps.latest.revision: 10
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # STRCHECKSUM Method (Code, Text)
 Calculates a checksum for a string that contains a number.  

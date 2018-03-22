@@ -12,7 +12,7 @@ caps.latest.revision: 12
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # POWER Method (Decimal, Integer, BigInteger)
 Raises a number to a power. For example, you can use this method to square the number 2 to get the result of 4.  

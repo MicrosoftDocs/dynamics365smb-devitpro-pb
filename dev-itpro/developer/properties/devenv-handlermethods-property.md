@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: f5d1b271-5b27-498b-9a0b-af0166f6412b
 caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # HandlerMethods Property
 Specifies the handler methods that are used by the test method.  

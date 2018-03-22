@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: 7ec7d029-d2d1-4407-ab6c-f872536d3881
 caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # AutoFormatType Property
 Sets a value that determines how data is formatted, together with the AL expression in the [AutoFormatExpresssion Property](devenv-autoformatexpr-property.md).  

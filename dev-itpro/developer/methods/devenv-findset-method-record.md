@@ -12,7 +12,7 @@ caps.latest.revision: 19
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # FINDSET Method (Record)
 Finds a set of records in a table based on the current key and filter.  

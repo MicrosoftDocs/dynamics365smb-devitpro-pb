@@ -1,16 +1,16 @@
 ---
 title: "HideSubsequentDialogs Function"
 ms.custom: na
-ms.date: 20/12/2017
+ms.date: 03/15/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2017"
+ms.service: "dynamics365-business-central"
 ---
 # HideSubsequentDialogs Function
-Specifies whether to hide other dialogs within the current scope that are not instantiated by this dialog variable. When this is set to **true**, any calls to dialog methods ([OPEN](devenv-open-method-dialog.md), [UPDATE](devenv-update-method-dialog.md), and [CLOSE](devenv-close-method-dialog.md)) on other dialog variables are ignored, and the dialogs will not appear in the user interface.
+Specifies whether to hide other dialogs within the current scope that are not instantiated by this dialog variable. When this is set to **true**, any calls to dialog methods ([OPEN](devenv-open-method-dialog.md), [UPDATE](), and [CLOSE](devenv-close-method-dialog.md)) on other dialog variables are ignored, and the dialogs will not appear in the user interface.
 
 ```
 [IsHideSubsequentDialogs := ]Dialog.HIDESUBSEQUENTDIALOGS([SetHideSubsequentDialogs])
@@ -26,14 +26,14 @@ The Dialog variable that you want to open.
 
 Type: Boolean
 
-**true** hides any subsequent dialogs. **false** is default.
+**True** hides any subsequent dialogs. **false** is default.
 
 ## Return Value
 *IsHideSubsequentDialogs*
 
 Type: Boolean
 
-**true** if the HIDESUBSEQUENTDIALOGS set to **true**; otherwise, **false**.
+**True** if the HIDESUBSEQUENTDIALOGS set to **true**; otherwise, **false**.
 
 ## Remarks
 You must call the HIDESUBSEQUENTDIALOGS method on the dialog variable before the OPEN method. Until the OPEN method is called on this variable, calls on other dialog variables will behave as normal.
@@ -80,4 +80,4 @@ var
 [Dialog Data Type](../datatypes/devenv-dialog-data-type.md)  
 [OPEN Method](devenv-open-method-dialog.md)  
 [CLOSE Method](devenv-close-method-dialog.md)  
-[UPDATE Method](devenv-update-method-dialog.md)  
+<!-- [UPDATE Method](devenv-update-method-dialog.md) -->

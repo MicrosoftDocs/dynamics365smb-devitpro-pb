@@ -12,7 +12,7 @@ caps.latest.revision: 14
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # TEXTMODE Method (File)
 Sets whether a file should be opened as an ASCII file or a binary file. Gets the current setting of this option for a file.  

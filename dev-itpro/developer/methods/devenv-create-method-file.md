@@ -11,7 +11,7 @@ ms.assetid: b37c1137-eab2-42f9-aedd-e3559b3b678d
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CREATE Method (File)
 Creates and opens an ASCII or binary file. If the file already exists, it will be truncated and then opened.  

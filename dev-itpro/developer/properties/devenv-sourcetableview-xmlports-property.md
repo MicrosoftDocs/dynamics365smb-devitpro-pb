@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: f49d8c45-f2e6-4c96-a53b-31ddd1883e3b
 caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SourceTableView Property (XMLports)
 Sets the key used to sort data in the source table for the XML item.  

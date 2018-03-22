@@ -12,7 +12,7 @@ caps.latest.revision: 10
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # GETRANGEMAX Method (Record)
 Gets the maximum value in a range for a field.  
