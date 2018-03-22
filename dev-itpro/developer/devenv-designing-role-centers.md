@@ -22,10 +22,10 @@ Role Centers are based on a user-centric design model. You should design a Role 
 ## Overview of the Role Center structure
 A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation area and content area. The following figure illustrates the general layout and elements of a Role Center page.
 
-![Role Center overview](media/rolecenter-overview.png "Role Center overview")
+![Role Center overview](media/rolecenter-overview-V2.png "Role Center overview")
 
 ## Navigation and Actions area
-The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits, and more. You define the navigation area by adding an `actions` control in the Role Center page code. The navigation area is subdivided into smaller areas by using different `area()` controls as described in the following table:
+The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits, and more. You define the navigation area by adding actions to the Role Center page code, under the `actions` control. The navigation area is subdivided into smaller areas by using different `area()` controls as described in the following table:
 
 <!--
 
@@ -63,16 +63,21 @@ The following table described some of the most common parts for Role Centers, as
 |5|Wide cues | A set of cues for displaying large numbers, like monetary values. This is created by using a `cuegroup` control on a `CardPart` page type, where the [Layout property](properties/devenv-layout-property.md) is set to `wide`. |[Wide Cues](devenv-cues-action-tiles.md#CueWideLayout)|
 |6|Normal cues |Provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. These are created by using a `cuegroup` control on a `CardPart` page type. |[Creating Cues](devenv-cues-action-tiles.md#CreateCue)|
 |7|Action tiles |Tiles that link to tasks or operations, like opening another page, starting a video, targeting another resource or URL, or running code. These are created by using a `cuegroup` control on a `CardPart` page type|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
-|8|Chart|A graphical representation of business data controlled by a the Business Chart control add-in on a page. ||
-|9|CardPart page|A `CardPart` page type that displays fields in a gridlayout.||
+|8|Chart|A graphical representation of business data. This could be a Business Chart control add-in on a page that you build or a PowerBi jejf coming from the page. ||
+|9|CardPart page|A `CardPart` page type that displays fields in a tabular format.||
+
+Control-addin 
+
 
 
 ### Behavioral points of interest
 - In general, the parts will appear in the client according to the order in which they are defined in code of the Role Center page.
 - However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues (`cuegroup` controls) will be automatically arranged under a common **Activities** section, no matter where they are placed in the code. All other page parts will appear under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will appear in the order in which they are defined in the page code. 
  
-## Development consideration and best practices
+## Development tips
 *To be determined*
+
+Cues are for operational purposes, shifting papers, while 
 ### Mobile apps
 
 ## See Also
