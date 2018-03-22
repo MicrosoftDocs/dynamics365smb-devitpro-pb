@@ -16,7 +16,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Get started with the Container Sandbox Development Environment
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to both the AL development environment and the C/SIDE development environment. 
 
-You set up a container sandbox running the **SANDBOX ENVIRONMENT (CONTAINER)** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will have to decide whetehr you want an Azure-hosted or locally hosted container sandbox.  
+You set up a container sandbox running the **SANDBOX ENVIRONMENT (CONTAINER)** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will have to decide whether you want an Azure-hosted or locally hosted container sandbox. 
 
 <!-- 
 ## Steps to set up a container sandbox environment
@@ -37,7 +37,7 @@ When starting the container of a given version the first time, new-navcontainer 
 ## <a name="AzureVsLocal"></a>Azure-hosted or local-hosted container sandbox
 When you set up the container sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites and use Docker to provide the infrastructure for the container-based applicationn. The difference is:
 
--  With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that sign-up for an Azure subscription, and additional costs may be incurred for each container sandbox. 
+-  With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you sign-up for an Azure subscription, and additional costs may be incurred for each container sandbox. 
 -  Local hosting requires that your computer is running Windows 10 or Windows Server 2016, and you install and configure Docker before setting up the container sandbox.
 
 <!-- 
@@ -69,7 +69,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
     This name is only used internally in your envirorment for identification purposes.
 8. Press F5 to run the script.
 
-    The console pane displays the progress of the script. When the script has completed successfully, information similar to the following will displays:
+    The console pane displays the progress of the script. When the script has completed successfully, information like the following will displays:
     ```
     ...
     Container IP Address: 172.22.147.63
@@ -92,14 +92,14 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
 You now have container sandbox set up on your computer. The following shortcuts have been added to your desktop:
 
--   **\<Container name\> Windows Client** - opens the Windows client for the your application in the container.
--    **\<Container name\>** Web Client - opens the Web client [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for the your application in the container.
+-   **\<Container name\> Windows Client** - opens the Windows client for your application in the container.
+-    **\<Container name\>** Web Client - opens the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for the your application in the container.
 -    **\<Container name\>** CSIDE - opens the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)] for developing your application using CSIDE.
 -    **\<Container name\>** PowerShell Prompt - opens a Windows PowerShell prompt in the container. This gives you access to the [[!INCLUDE[navnowg_md](includes/navnow_md.md)] (https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview), which you can run against the container sandbox environment. 
 -    **\<Container name\>** Command Prompt - opens a Windows command prompt in the container.
 
 ### <a name="VSCode"></a>Set up Visual Studio Code
-After the container sandbox is set up, you must set up Visual Studio Code for extension development. In order to do this, you need the values for `Dev. Server`,  `Dev. ServerInstance`, and `Files` parameters that you retrieved from the Windows PowerShell ISE console when you ran the **CreateBCSandbox.ps1** script to set up the container sandbox. 
+After the container sandbox is set up, you must set up Visual Studio Code for extension development. To do this, you need the values for `Dev. Server`,  `Dev. ServerInstance`, and `Files` parameters that you retrieved from the Windows PowerShell ISE console when you ran the **CreateBCSandbox.ps1** script to set up the container sandbox. 
 
 1. Open a browser to the path that is specified by the `Files` parameter, and save the .vsix file to your computer.
 2. In Visual Studio Code, go to **Extensions**, and then choose **Install from VSIX**.
