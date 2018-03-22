@@ -13,7 +13,7 @@ ms.assetid: dd8058d0-5b1e-4fd1-aeb1-7ef480fa581d
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # COPYCOMPANY Method (Database)
 Creates a new company and copies all data from an existing company in the same database.  

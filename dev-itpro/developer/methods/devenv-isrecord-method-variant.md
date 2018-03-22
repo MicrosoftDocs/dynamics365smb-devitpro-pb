@@ -11,7 +11,7 @@ ms.assetid: b7bdf284-f0a7-481b-b949-62bf215656e5
 caps.latest.revision: 10
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ISRECORD Method (Variant)
 Indicates whether an AL variant contains a Record variable.  

@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: ddde23c8-cc94-4b5b-a5d7-83595ea4943a
 caps.latest.revision: 2
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # ExternalAccess Property
 This property is specific to Dynamics 365 for Sales. The ExternalAccess property specifies the access to the underlying CRM entity when Dynamics 365 for Sales tables are generated using the cmdlet. 

@@ -6,13 +6,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-financials"
+ms.service: "dynamics365-business-central"
 ms.assetid: dbc4e207-632a-482b-9787-615eb1815571
 author: SusanneWindfeldPedersen
 manager: edupont
 ---
-
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnValidate (Fields) Trigger
 Executed when user input is validated.  

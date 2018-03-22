@@ -1,7 +1,7 @@
 ---
 title: "SAVEASCSV Method"
 ms.custom: na
-ms.date: 07/13/2017
+ms.date: 03/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ caps.latest.revision: 21
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SAVEASCSV Method
 Saves the resulting dataset of a query as a comma separated values \(CSV\) file.  
@@ -121,7 +121,7 @@ Query.READ;
 
  This example requires that you do the following:  
 
--   Create a query called **My Customer Query** that is based on table **18 Customer** and contains the **No**, **Name**, and **City** columns. <!--NAV For more information, see [How to: Create Queries](How-to--Create-Queries.md). -->  
+-   Create a query called **My Customer Query** that is based on table **18 Customer** and contains the **No**, **Name**, and **City** columns. <!--NAV For more information, see [How to: Create Queries](How-to-Create-Queries.md). -->  
 
 -   Create the following variables and text constant:  
 

@@ -12,7 +12,7 @@ caps.latest.revision: 13
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # SETPOSITION Method (RecordRef)
 Sets the fields in a primary key on a record to the values specified in the *String* parameter. The remaining fields are not changed.  

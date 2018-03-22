@@ -11,7 +11,7 @@ ms.assetid: 61f13caf-681c-4ec0-8f03-021074e7c4dc
 caps.latest.revision: 12
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # IMPORT Method (XMLport)
 Reads and parses an incoming XML data stream \(XML document\).  

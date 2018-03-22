@@ -6,10 +6,14 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+
 # Creating Cues and Action Tiles on Role Centers
+
 This article provides an overview of Cues and Action tiles, and the tasks involved in creating and customizing them for displaying on Role Centers, as illustrated in the following figure:  
 
 ![Cues on the Role Center](media/Cue-overview-online-v2.png "Cues on the Role Center")  
@@ -37,7 +41,7 @@ You can only base Cues on integer and decimal data types. Other data types are n
 ### FlowFields versus normal fields  
 A Cue can be based on a FlowField or Normal field. If you base the Cue on a FlowField, then you add the logic that calculates the data for the Cue to the [CalcFormula property](properties/devenv-calcformula-property.md) of the FlowField. If you use a Normal field, then you will typically add the logic that calculates the Cue data to a C/AL trigger or function. Unlike a FlowField, where data is extracted from tables, a Normal field enables you to extract data from other objects such as queries.  
   
-### Creating a Cue
+### <a name="CreateCue"></a>Creating a Cue
 The implementation of a Cue involves the following elements:
 
 -   A table object with a field that holds the data that is contained in the Cue at runtime.  
@@ -65,9 +69,9 @@ The first thing that you must do is to create a table that contains fields that 
 
     - Set the [FieldClass property](properties/devenv-fieldclass-property.md) to **FlowField** or **Normal**.  
   
-      If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see and [How to: Create, View, and Edit a Calculation Formula](How-to--Create--View--and-Edit-a-Calculation-Formula.md).  
+      If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [Calculation Formulas and the CalcFormula Property](properties/devenv-calculation-formulas-and-the-calcformula-property.md).  
   
-3.  Add a primary key field for FlowFields  
+3.  Add a primary key field for FlowFields.  
 
     A table must have at least one data field. Because a **FlowField** is based on a calculation, it not considered an actual data field. Therefore, if the Cue table only includes FlowFields, you must add "dummy" primary key field that does not yield any data.  
   
@@ -139,11 +143,11 @@ page 50105 SalesInvoiceCuePage
         {
             cuegroup(SalesCueContainer)
             {
-                CaptionML=ENU='Sales Invoices';
+                Caption='Sales Invoices';
                 // CuegroupLayout=Wide;
                 field(SalesCue; SalesInvoicesOpen)
                 {
-                    CaptionML=ENU='Open';
+                    Caption='Open';
                     DrillDownPageId="Sales Invoice List";
                 }
             }
@@ -161,12 +165,12 @@ page 50105 SalesInvoiceCuePage
 }
 ```
 
-## Designing Action tiles
+## <a name="ActionTiles"></a>Designing Action tiles
 Action tiles promote an action or operation to the user on the Role Center. Action tiles act as links that perform a task or operation, like opening another page, starting a video, targeting an another resource or URL, or running code. They will arrange on the workspace just like that use the normal layout.
 
 Similar to Cues, Actions tile can be grouped together, under a common caption, by using the `cuegroup` control. The difference is that instead adding field controls under the `cuegroup` control, you create Action tiles by adding actions to the `cuegroup` control. 
 
-### Create an Action Tile
+### Create an Action tile
 1. Develop or locate the functionality that you want to Action tile to perform.
 
   For example, create the page object that you want the Action tile to open, add AL code that you want the Action tile to run, find the URL to the video.

@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-financials"
+ms.service: "dynamics365-business-central"
 ms.assetid: 041b66f1-2210-4859-8b10-5ad69fcc5022
 author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
 
 # Triggers
 Triggers are available for the different objects as described in the following sections:  
