@@ -67,7 +67,7 @@ The following table described some of the most common parts for Role Centers, as
 |7|Action tiles |Tiles that link to tasks or operations, like opening another page, starting a video, targeting another resource or URL, or running code. These are created by using a `cuegroup` control on a `CardPart` page type|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
 |8|Chart|A graphical representation of business data. This could come from a Business Chart control add-in that you develop or Power BI jejf coming from the page. ||
 |9|CardPart or ListPart page|A  page type that displays fields in a tabular format.|[Page Object](devenv-page-object.md)|
-|10|Control add-in|This could be a control add-in that you develop|[Control Add-in Object](devenv-control-addin-object)|
+|10|Control add-in|This could be a control add-in that you develop|[Control Add-in Object](devenv-control-addin-object.md)|
 
 
 ### Behavioral points of interest
