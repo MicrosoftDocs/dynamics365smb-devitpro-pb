@@ -16,6 +16,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Get started with the Container Sandbox Development Environment
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to both the AL development environment and the C/SIDE development environment. 
 
+<!-- 
 ## Steps to set up a container sandbox environment
 1. Sign up for a [Dynamics 365 Business Central tenant](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%3FredirectedFromSignup%3D1).
 2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and in the **Search** field, enter **SANDBOX ENVIRONMENT (CONTAINER)** and then select the relevant link.
@@ -62,35 +63,53 @@ When you set up the Container Sandbox, you can choose to host the sandbox on Mic
     This name is only used internally in your envirorment for identification purposes.
 8. Press F5 to run the script.
 
-The console pane will display the progress of the script. Whne the script has completed successfully, it will display information similar to the following:
+    The console pane displays the progress of the script. When the script has completed successfully, information similar to the following will displays:
+    ```
+    ...
+    Container IP Address: 172.22.147.63
+    Container Hostname  : MyBizCentralApp
+    Container Dns Name  : MyBizCentralApp
+    Web Client          : http://MyBizCentralApp/NAV/
+    Dev. Server         : http://MyBizCentralApp
+    Dev. ServerInstance : NAV
 
-```
-Container IP Address: 172.22.147.63
-Container Hostname  : MyBizCentralApp
-Container Dns Name  : MyBizCentralApp
-Web Client          : http://MyBizCentralApp/NAV/
-Dev. Server         : http://MyBizCentralApp
-Dev. ServerInstance : NAV
+    Files:
+    http://MyBizCentralApp:8080/al-0.15.18566.vsix
 
-Files:
-http://MyBizCentralApp:8080/al-0.15.18566.vsix
+    Initialization took 116 seconds
+    Ready for connections!
+    Reading CustomSettings.config from MyBizCentralApp
+    Creating Desktop Shortcuts for MyBizCentralApp
+    ```
 
-Initialization took 116 seconds
-Ready for connections!
-Reading CustomSettings.config from MyBizCentralApp
-Creating Desktop Shortcuts for MyBizCentralApp
-```
+9. Write down or copy the values of these parameters from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need these values later to [set up Visual Studio Code for for extension development](#VSCode).
 
-In particular, you should make note the following parameters, because they will be useful when working in the container sandbox:
+You now have container sandbox set up on your computer. The following shortcuts have been added to your desktop:
 
-|  Parameter  |  Description  |
-|-------------|---------------|
-|Dev. Server|This specifies the |
-|Dev. ServerInstance|This specifies the  |
-|Files||
-|||
+-   **\<Container name\> Windows Client** - opens the Windows client for the your application in the container.
+-    **\<Container name\>** Web Client - opens the Web client [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for the your application in the container.
+-    **\<Container name\>** CSIDE - opens the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)] for developing your application using CSIDE.
+-    **\<Container name\>** PowerShell Prompt - opens a Windows PowerShell prompt in the container. This gives you access to the [[!INCLUDE[navnowg_md](includes/navnow_md.md)] (https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview), which you can run against the container sandbox. 
+-    **\<Container name\>** Command Prompt - opens a Windows command prompt in the container.
 
+### <a name="VSCode"></a>Set up Visual Studio Code
+After the container sandbox is set up, you must set up Visual Studio Code for extension development. In order to do this, you need the values for `Dev. Server`,  `Dev. ServerInstance`, and `Files` parameters that you retrieved from the Windows PowerShell ISE console when you ran the **CreateBCSandbox.ps1** script to set up the container sandbox. 
 
+1. Open a browser to the path that is specified by the `Files` parameter, and save the .vsix file to your computer.
+2. In Visual Studio Code, go to **Extensions**, and then choose **Install from VSIX**.
+    You now have the AL Language extension enabled.
+3. In Visual Studio Code, press Ctrl+Shift+P and then choose **AL Go!**.
+4. Choose where to create the project, and then choose the **Your own server** option.
+5. Open the generated `launch.json` file, update the `"server"` setting with the value of the `Dev. Server` parameter and the `"serverInstance"` setting with the value of the `Dev. ServerInstance` to reflect the container you just created. For example:
+
+    ```
+    "server": "http://MyBizCentralApp",
+    "serverInstance": "NAV",
+
+    ```
+6. Save the launch.json file.
+
+You have now set up Visual Studio Code with the AL Language extension
 
 
 <!-- 
