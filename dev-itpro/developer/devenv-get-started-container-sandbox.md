@@ -38,7 +38,6 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
     The Azure portal opens to display a custom deployment form. 
 4. Fill out the required fields on the fom, and then select **Purchase**.
 
-    The 
 
 ## Set up a local-hosted container sandbox
 
