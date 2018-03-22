@@ -3,7 +3,7 @@ title: "Add-on Apps"
 description: "An Add-on app extends the over-all experience and the existing functionality of Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/13/2018
+ms.date: 03/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,7 +40,7 @@ INSERT VIDEO:
 Objective: Setting up a Dynamics 365 Business Central Development Environment 
 New video that needs to be created -->
  
-Add-on apps are created using the AL language in Visual Studio Code, which needs to be installed locally or on a Virtual Machine. The source code for your Add-on app is file-based, and we recommend that you set up a repository in a source code management system like GitHub. For more information on getting started with AL, see COMING SOON.
+Add-on apps are created using the AL language in Visual Studio Code, which needs to be installed locally or on a Virtual Machine. The source code for your Add-on app is file-based, and we recommend that you set up a repository in a source code management system like GitHub. For more information on getting started with AL, see [Getting Started with AL](../devenv-get-started.md).
 
 To ease the development phase of Add-on aps we have created a video series to help you each step of the way. Learn more by consuming the content in the below video series: 
 
