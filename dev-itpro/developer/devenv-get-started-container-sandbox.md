@@ -63,6 +63,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
     The Azure portal opens to display a custom deployment form. 
 4. Fill out the required fields on the fom, and then select **Purchase**.
 
+    
 
 ## Setting up a local-hosted container sandbox
 
@@ -117,7 +118,7 @@ You now have container sandbox set up on your computer. The following shortcuts 
 For more information about working with a container sandbox, see [Running a Container-Based Development Environment](devenv-running-container-development.md).
 
 ### <a name="VSCode"></a>Set up Visual Studio Code
-After the container sandbox is set up, you must set up Visual Studio Code for extension development. To do this, you need the values for `Dev. Server`,  `Dev. ServerInstance`, and `Files` parameters that you retrieved from the Windows PowerShell ISE console when you ran the **CreateBCSandbox.ps1** script to set up the container sandbox. 
+After the container sandbox is set up, you must set up Visual Studio Code for extension development. To do this, you need the values for `Dev. Server`,  `Dev. ServerInstance`, and `Files` parameters that you retrieved from the Windows PowerShell ISE console when you ran the **CreateBCSandbox.ps1** script. 
 
 1. Open a browser to the path that is specified by the `Files` parameter, and save the .vsix file to your computer.
 2. In Visual Studio Code, go to **Extensions**, and then choose **Install from VSIX**.
