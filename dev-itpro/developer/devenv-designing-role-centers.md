@@ -24,7 +24,7 @@ A Role Center is defined by page that has the [PageType property](properties/dev
 
 ![Role Center overview](media/rolecenter-overview.png "Role Center overview")
 
-## Navigation area
+## Navigation and Actions area
 The navigation area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits, and more. You define the navigation area by adding an `actions` control in the Role Center page code. The navigation area is subdivided into smaller areas by using different `area()` controls as described in the following table:
 
 <!--
@@ -40,7 +40,7 @@ The navigation area appears at the top of the Role Center page, and provides lin
 |    |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
 |1|Top-level navigation|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. The pages targeted by the submenus will open in the content area of the Role Center. <br /><br />This area is defined by an `area(sections)` control in the page code.|The top-level navigation should provide access to relavant enitity lists for the role's business sections, ordered according to importance. For example, typical lists for sales order processor could be customers, sales orders, quotes, and invoices. |
-|2|Second-level|The second-level area displays a flat list of links to other pages. The pages targeted by the links will open in the content area of the Role Center.<br /><br />These items are defined in an `area(embedding)` control.|You should use these items to link to the user’s most useful entity lists, ordered according to the business process sequence. Try to limit the number of second-level items, and consider placing items in the top-level navigation instead if the number gets too large. |
+|2|Second-level navigation|The second-level area displays a flat list of links to other pages. The pages targeted by the links will open in the content area of the Role Center.<br /><br />These items are defined in an `area(embedding)` control.|You should use these items to link to the user’s most useful entity lists, ordered according to the business process sequence. Try to limit the number of second-level items, and consider placing items in the top-level navigation instead if the number gets too large. |
 |3|Actions|The actions area can provide links to pages, reports, and codeunits. The links can be displayed on the root-level, or grouped in a submenu. The objects targeted by these links will open in a separate window from Role Center page.<br /><br />The actions are defined by three different `area()` controls: `area(creation)`, `area(processing)`, and  `area(reporting)`. <ul><li>Actions in the `area(creation)` control will appear first in the action area, and will display with a plus (+) icon.</li><li>Actions in an an `area(processing)` control will appear after the `area(creation)` items. These items can be grouped into submenus by using a `group` control.</li><li>Actions in the `area(reporting)` control target report object only and will appear last in the action area, and display with the default report icon. |The action area is designed for running the most important or typical tasks and operations required by the user. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or target reports. Place the most important action at the root-level, and group closely related action in a second-level, or submenu.|
 
 For more information about navigation, see [Adding to Navigation](devenv-adding-menus-to-navigation-pane.md). 
@@ -51,7 +51,9 @@ For more information about navigation, see [Adding to Navigation](devenv-adding-
 -   In page code, if the first part in the content area is a Headline part, then in the client, the action area will be automatically positioned either to the right of the Headline part or after the Headline part, depending on the browser window size. Otherwise, the action area will appear at the bottom of the navigation area, and extend the width of the workspace. 
 
 ## Content area
-The content area consists of one or more parts that display different content. The parts are added by including a `part` control in the `layout` control of the page code. There are three part types: `Page`, `System`, and `Chart`. The `System` and `Chart` types are not supported in the Web or mobile clients. The `Page` type displays the content of an seperate underlying page, typically a card or list.
+The content area consists of one or more parts that display different content. The parts are added by including a `part` control in the `layout` control of the page code.
+
+Remove:  There are three part types: `Page`, `System`, and `Chart`. The `System` and `Chart` types are not supported in the Web or mobile clients. The `Page` type displays the content of an seperate underlying page, typically a card or list. unlike the nav the ocmntent comnsistes of selfcontained reusable parts.
 
 The following table described some of the most common parts for Role Centers, as illustrated in the previous figure.
 
