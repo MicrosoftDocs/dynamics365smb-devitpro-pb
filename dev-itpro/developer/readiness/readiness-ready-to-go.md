@@ -1,70 +1,66 @@
 ---
 title: "Ready to Go"
-description: ""
+description: "The Ready to Go program contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 03/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Ready to Go
-## What does the **Ready to Go** program offering entail  
-To support you in bringing your offerings (that being either services or apps) to Dynamics 365 Business Central and Microsoft AppSource, we have created a program called **Ready to Go**, which offers you different types of support material that you can mix and match as you see fit.  
+The **Ready to Go** program contains a set of resources, services and tools which enables you to provide your offerings on Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and Microsoft Appsource.     
 
-The **Ready to Go** program has three different types of offerings:  
-- You can service yourself by using the **Ready to Go** Documentation and Online Training Catalog. 
-- You can be guided by ISV Development Centers and Master ISVs by using the **Ready to Go** Trainings and Workshops. 
-- You can find the latest bits by using the **Ready to Go** platform (also called Microsoft Collaborate). 
+It holds the following three core elements:
+
+1. The Ready to Go online learning.
+2. The Ready to Go trainings and workshops provided by Development Centers and Master VARs.
+3. The Ready to Go platform.
+
+## The Ready to Go online learning
+An extensive resource library hosted on the **Dynamics Learning Portal**. It contains readiness information for marketers, business decision makers, architects, and developers. The content addresses the needs of both reselling partners of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] as App builders who want to provide Apps on Microsoft AppSource. 
+
+You can find the **Ready to Go Online Training Catalog** at the Dynamics Learning Portal: http://aka.ms/ReadyToGoOnlineLearning. 
+
+## The Ready to Go trainings and workshops provided by Development Centers and Master VARs
+The Microsoft Development Centers and Master VARs provide technical service offerings and have industry specific knowledge that you can contract and leverage when developing your App. These companies are independently owned and operated.  There is a worldwide presence of development centers and are therefore always within reach to assist you. Over time, they have built up a strong knowledge base and a set of highly developed best practices that you can lean on when developing your apps. When contracting an Development Center, you get solid and well-founded assistance in creating offerings for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and Microsoft AppSource.  
+
+Learn more about Development Centers [here](https://mbs2.microsoft.com/ecsts/login?signin=df674c6c7559ddc58e42ef30e355498e).
+
+Development Centers have strong ties with Microsoft’s R&D teams, as well as are an incremental part of our early Engagement programs. The **Ready to Go Validation Workshop** is a packaged offering, brought to market by all development centers and Master VARs and is co-developed with Microsoft. 
  
-## The "Ready to Go" documentation and Online Training Catalog 
-To help you bring your app to AppSource we have made different materials available for you to use. In the **Ready to Go** documentation you can find information on both, which offerings you can provide, descriptions of the different opportunities that you can choose from, both technical and business for resellers and app developers. The **Ready to Go** documentation also offers guidance on how to publish your apps.
+This workshop helps you in validating your complete offer, from a business, marketing and technical perspective. Learn more about the offerings of our Development Centers by following the links in the table below: 
 
-Before you drill into detailed learning material, we recommend that you familiarize yourself with this documentation first. You can find the **Ready to Go** documentation here: [http://aka.ms/BusinessCentralApps](http://aka.ms/BusinessCentralApps).  
- 
-The **Ready to Go** Online Training Catalog provides an extensive set of learning materials, both technical and business related, which is directed to respectivly App builders and resellers.     
-You can find the **Ready to Go Online Training Catalog** here: [http://aka.ms/ReadyToGoOnlineLearning](http://aka.ms/ReadyToGoOnlineLearning).  
-  
-## Ready to Go training and workshops provided by ISV Development Centers and Master VARs 
-The Microsoft ISV Development Centers (Dev Centers) provide technical service and have industry-specific knowledge that you can contract and leverage when developing your app. These companies are independently owned and operated, however, Microsoft focuses continuously on giving them expert level training, so that they always are up to date and ready to support respectively new technologies and new versions of Dynamics 365. 
+|Type|Company Name        |**Ready to Go** Validation Workshop|
+|----|--------------------|------------------|
+|Development Center       |1ClickFactory|[https://www.1clickfactory.com/readytogo/](https://www.1clickfactory.com/readytogo/)|
+|    |Ciellos             | [http://www.ciellos.com/ready-to-go](http://www.ciellos.com/ready-to-go)   |  
+|    |Cloud Ready Software|[http://www.cloud-ready-software.com/readytogo](http://www.cloud-ready-software.com/readytogo)  |
+|    |Innova Consulting   |[http://www.innovaconsulting.es/en/readytogo/](http://www.innovaconsulting.es/en/readytogo/)   |
+|Master VARs|QBS Group    |[https://www.qbsgroup.com/service/readytogo/](https://www.qbsgroup.com/service/readytogo/)  |
+|    |Velosio             |[https://www.velosio.com/readytogo/](https://www.velosio.com/readytogo/)  |
 
-Our Development Centers have strong ties with Microsoft’s R&D teams, as well as are an incremental part of our early engagement programs. For the very same reason they have built up a strong knowledge base and a set of highly developed best practices that you, as a partner, can lean on when developing your apps 
+## The Ready to Go platform
+A place where you can find current & upcoming builds of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] which helps you with your App development and testing. It also holds a way to provide feedback to the Microsoft engineers working on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].
 
-When contracting an ISV Development Center you get solid and well-founded assistance in creating offerings for Dynamics 365 Business Central and Microsoft AppSource.  
+To get access to the **Ready to Go** platform, you need to go through these steps: 
 
-Microsoft’s ISV Development Centers have worldwide presence, and are therefore always within reach, and ready to assist you.
+1. Register on [Microsoft Collaborate](http://aka.ms/Collaborate) using your AAD Global Admin account. 
+2. Contact us, once registered on Microsoft Collaborate. Your company’s Azure Active Directory (AAD) global administrator should [contact us](mailto:dyn365bep@microsoft.com) to complete the on-boarding. When contacting us, please provide following information:  
 
-Microsoft has worked together with ISV Dev Centers and Master VARs to build out **Ready to Go Validation Workshops** to guide you in bringing your offering into Appsource. Go to their websites to find out more.<!-- link? --> 
-  
-Here is a list of the ISV Development Centers and Master Var's who can help you create your offerings: 
+    |Publisher display name|Name|Email|Role |
+    |----------------------|----|-----|-----|
+    |Chosen during registration, should be the same for all users|User 1|Email 1|Power user (can access content and add new users to engagements)| 
+    ||User 2|Email 2 |Participant (can access content)| 
+    ||Etc.|Etc.|Power user| 
 
-|ISV Development Centers                           |Master VARs|
-|--------------------------------------------------|-----------|
-|ClickFactory</br>Contact: info@1clickfactory.com  |OBS          |
-|Ciellos</br>Contact: contactus@ciellos.com        |velosio      |
-|Cloud Ready Service</br>Contact: info@cloud-ready-software.com  |           |
-|Innova Consulting</br>Contact: isvdc@innovaconsulting.es        |           |
+3. The **Ready to Go** team will notify you and confirm your registration.
 
-Learn more about our ISV Dev Centers [here](https://mbs.microsoft.com/partnersource/northamerica/partner-essentials/ISVDevelopmentCenter).
- 
-## The Ready to Go platform 
-When building apps we advise you to build them on the latest or upcoming versions of the Dynamics 365 Business Central service. By joining the **Ready to Go** program engagement at [http://aka.ms/Collaborate](http://aka.ms/Collaborate) you get access to a preview environment. 
- 
-If you don’t have access to the **Ready to Go** program engagement, your company’s Azure Active Directory (AAD) global administrator can reach out to [Dyn365BEP@microsoft.com]() to get signed up.  
-When signing up, your AAD Admin needs to provide following information (see image below): 
-
-|Publisher display name|Name|Email|Role |
-|----------------------|----|-----|-----|
-|Chosen during registration, should be the same for all users|User 1|Email 1|Power user (can access content and add new users to engagements)| 
-||User 2|Email 2 |Participant (can access content)| 
-||Etc.|Etc.|Power user|
-
-Additionally, the **Ready to Go** program engagement also offers you a place to feedback and connect with Microsoft engineers, while being a source to learn more about the newest releases in the Dynamics 365 Business Central service. 
-
+If you have questions or feedback about the **Ready to Go** offering, you can [contact us](mailto:dyn365bep@microsoft.com). 
 
 

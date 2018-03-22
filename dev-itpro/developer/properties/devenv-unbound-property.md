@@ -6,12 +6,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: d0632b9c-70ba-4a30-8b4b-5283ebb11b90
 caps.latest.revision: 5
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Unbound Property
 Sets whether the element can be repeated an unknown number of times at runtime before the import or export moves on to the next element.  

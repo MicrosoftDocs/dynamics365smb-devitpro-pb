@@ -78,11 +78,19 @@ OBJECT Codeunit 5330 CRM Integration Management
       NotEnabledForCurrentUserMsg@1035 : TextConst '@@@="%1 = Current User Id %2 - product name";ENU=Dynamics CRM Integration is enabled.\However, because the %2 Users Must Map to Dynamics CRM Users field is set, Dynamics CRM integration is not enabled for %1.';
       CRMIntegrationEnabledLastError@1036 : Text;
       ImportSolutionConnectStringTok@1039 : TextConst '@@@={Locked};ENU=%1api%2/XRMServices/2011/Organization.svc';
+      UserDoesNotExistCRMTxt@1042 : TextConst '@@@="%1 = User email address";ENU=There is no user with email address %1 in Dynamics CRM. Enter a valid email address.';
+      RoleIdDoesNotExistCRMTxt@1043 : TextConst 'ENU=The Integration role does not exist in Dynamics CRM. \\Make sure the relevant customization is imported or check if the name of the role has changed.';
       EmailAndServerAddressEmptyErr@1046 : TextConst 'ENU=The Integration User Email and Server Address fields must not be empty.';
+      CRMSolutionFileNotFoundErr@1041 : TextConst 'ENU=A file for a CRM solution could not be found.';
+      MicrosoftDynamicsNavIntegrationTxt@1040 : TextConst '@@@={Locked};ENU=MicrosoftDynamicsNavIntegration';
+      AdminEmailPasswordWrongErr@1044 : TextConst 'ENU=Enter valid CRM administrator credentials.';
+      AdminUserDoesNotHavePriviligesErr@1045 : TextConst 'ENU=The specified CRM administrator does not have sufficient privileges to import a CRM solution.';
       InvalidUriErr@1050 : TextConst 'ENU=The value entered is not a valid URL.';
       MustUseHttpsErr@1049 : TextConst 'ENU=The application is set up to support secure connections (HTTPS) to Dynamics CRM only. You cannot use HTTP.';
       MustUseHttpOrHttpsErr@1048 : TextConst '@@@=%1 is a URI scheme, such as FTP, HTTP, chrome or file;ENU=%1 is not a valid URI scheme for Dynamics CRM connections. You can only use HTTPS or HTTP as the scheme in the URL.';
       ReplaceServerAddressQst@1047 : TextConst '@@@=%1 and %2 are URLs;ENU=The URL is not valid. Do you want to replace it with the URL suggested below?\\Entered URL: "%1".\Suggested URL: "%2".';
+      CRMConnectionURLWrongErr@1051 : TextConst 'ENU=The URL is incorrect. Enter the URL for the Dynamics CRM connection.';
+      UserHasNoSecurityRolesErr@1052 : TextConst '@@@="%1 = User email address";ENU=The user with email address %1 must have at least one security role in Dynamics CRM.';
 
     PROCEDURE IsCRMIntegrationEnabled@5() : Boolean;
     VAR
@@ -934,13 +942,87 @@ OBJECT Codeunit 5330 CRM Integration Management
     PROCEDURE ImportCRMSolution@34(ServerAddress@1006 : Text;IntegrationUserEmail@1017 : Text;AdminUserEmail@1000 : Text;AdminUserPassword@1001 : Text);
     VAR
       URI@1004 : DotNet "'System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Uri";
+      HomeRealmURI@1010 : DotNet "'System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Uri";
       ClientCredentials@1018 : DotNet "'System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.ServiceModel.Description.ClientCredentials";
+      OrganizationServiceProxy@1002 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy";
+      CRMHelper@1003 : DotNet "'Microsoft.Dynamics.Nav.CrmCustomizationHelper, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Dynamics.Nav.CrmCustomizationHelper.CrmHelper";
+      UserGUID@1005 : GUID;
+      IntegrationAdminRoleGUID@1013 : GUID;
+      IntegrationUserRoleGUID@1014 : GUID;
     BEGIN
       CheckConnectRequiredFields(ServerAddress,IntegrationUserEmail);
       URI := URI.Uri(ConstructConnectionStringForSolutionImport(ServerAddress));
       ClientCredentials := ClientCredentials.ClientCredentials;
       ClientCredentials.UserName.UserName := AdminUserEmail;
       ClientCredentials.UserName.Password := AdminUserPassword;
+      IF NOT InitializeCRMConnection(URI,HomeRealmURI,ClientCredentials,CRMHelper,OrganizationServiceProxy) THEN
+        ProcessConnectionFailures;
+
+      IF ISNULL(OrganizationServiceProxy.ServiceManagement.GetIdentityProvider(AdminUserEmail)) THEN
+        ERROR(AdminEmailPasswordWrongErr);
+
+      UserGUID := GetUserGUID(OrganizationServiceProxy,IntegrationUserEmail);
+      IF NOT CheckAnyRoleAssignedToUser(OrganizationServiceProxy,UserGUID) THEN
+        ERROR(STRSUBSTNO(UserHasNoSecurityRolesErr,IntegrationUserEmail));
+
+      IF NOT CheckSolutionPresence(OrganizationServiceProxy) THEN
+        IF NOT ImportDefaultCRMSolution(CRMHelper,OrganizationServiceProxy) THEN
+          ProcessConnectionFailures;
+
+      IntegrationAdminRoleGUID := GetRoleGUID(OrganizationServiceProxy,GetIntegrationAdminRoleID);
+      IntegrationUserRoleGUID := GetRoleGUID(OrganizationServiceProxy,GetIntegrationUserRoleID);
+
+      IF NOT CheckRoleAssignedToUser(OrganizationServiceProxy,UserGUID,IntegrationAdminRoleGUID) THEN
+        AssociateUserWithRole(UserGUID,IntegrationAdminRoleGUID,OrganizationServiceProxy);
+      IF NOT CheckRoleAssignedToUser(OrganizationServiceProxy,UserGUID,IntegrationUserRoleGUID) THEN
+        AssociateUserWithRole(UserGUID,IntegrationUserRoleGUID,OrganizationServiceProxy);
+    END;
+
+    [TryFunction]
+    LOCAL PROCEDURE ImportDefaultCRMSolution@45(CRMHelper@1001 : DotNet "'Microsoft.Dynamics.Nav.CrmCustomizationHelper, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Dynamics.Nav.CrmCustomizationHelper.CrmHelper";VAR OrganizationServiceProxy@1000 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy");
+    BEGIN
+      CRMHelper.ImportDefaultCrmSolution(OrganizationServiceProxy);
+    END;
+
+    LOCAL PROCEDURE AssociateUserWithRole@66(UserGUID@1000 : GUID;RoleGUID@1001 : GUID;VAR OrganizationServiceProxy@1014 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy");
+    VAR
+      AssociateRequest@1012 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Messages.AssociateRequest";
+    BEGIN
+      CreateAssociateRequest(UserGUID,RoleGUID,AssociateRequest);
+      OrganizationServiceProxy.Execute(AssociateRequest);
+    END;
+
+    LOCAL PROCEDURE GetQueryExpression@72(EntityName@1009 : Text;Column@1010 : Text;ConditionField@1011 : Text;ConditionFieldValue@1012 : Text;ErrorMsg@1005 : Text;VAR OrganizationServiceProxy@1006 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy") : GUID;
+    VAR
+      QueryExpression@1002 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.QueryExpression";
+      Entity@1007 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Entity";
+      EntityCollection@1013 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.EntityCollection";
+      LinkEntity@1014 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.LinkEntity";
+    BEGIN
+      CreateQueryExpression(EntityName,Column,ConditionField,ConditionFieldValue,LinkEntity,QueryExpression);
+      IF NOT ProcessQueryExpression(OrganizationServiceProxy,EntityCollection,QueryExpression) THEN BEGIN
+        OrganizationServiceProxy.Dispose();
+        ProcessConnectionFailures;
+      END;
+
+      IF EntityCollection.Entities.Count = 0 THEN
+        ERROR(STRSUBSTNO(ErrorMsg,ConditionFieldValue));
+      Entity := EntityCollection.Item(0);
+      EXIT(Entity.Id);
+    END;
+
+    LOCAL PROCEDURE GetUserGUID@41(VAR OrganizationServiceProxy@1001 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy";UserEmail@1000 : Text) : GUID;
+    BEGIN
+      EXIT(
+        GetQueryExpression(
+          'systemuser','systemuserid','internalemailaddress',UserEmail,UserDoesNotExistCRMTxt,OrganizationServiceProxy));
+    END;
+
+    LOCAL PROCEDURE GetRoleGUID@43(VAR OrganizationServiceProxy@1001 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy";RoleName@1000 : Text) : GUID;
+    BEGIN
+      EXIT(
+        GetQueryExpression(
+          'role','roleid','roleid',RoleName,RoleIdDoesNotExistCRMTxt,OrganizationServiceProxy));
     END;
 
     PROCEDURE CheckConnectRequiredFields@46(ServerAddress@1000 : Text;IntegrationUserEmail@1001 : Text);
@@ -949,24 +1031,92 @@ OBJECT Codeunit 5330 CRM Integration Management
         ERROR(EmailAndServerAddressEmptyErr);
     END;
 
-    PROCEDURE CreateAssociateRequest@44(UserGUID@1001 : GUID;RoleGUID@1000 : GUID);
+    PROCEDURE CreateAssociateRequest@44(UserGUID@1001 : GUID;RoleGUID@1000 : GUID;VAR AssociateRequest@1002 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Messages.AssociateRequest");
+    VAR
+      EntityReferenceCollection@1005 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.EntityReferenceCollection";
+      RelationShip@1004 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Relationship";
+      EntityReference@1003 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.EntityReference";
     BEGIN
+      EntityReferenceCollection := EntityReferenceCollection.EntityReferenceCollection;
+      EntityReferenceCollection.Add(EntityReference.EntityReference('role',RoleGUID));
+      RelationShip := RelationShip.Relationship('systemuserroles_association');
+      AssociateRequest := AssociateRequest.AssociateRequest;
+      AssociateRequest.Target(EntityReference.EntityReference('systemuser',UserGUID));
+      AssociateRequest.RelatedEntities(EntityReferenceCollection);
+      AssociateRequest.Relationship(RelationShip);
     END;
 
-    PROCEDURE CreateFilterExpression@64(AttributeName@1003 : Text;Value@1002 : Text);
+    PROCEDURE CreateFilterExpression@64(AttributeName@1003 : Text;Value@1002 : Text;VAR FilterExpression@1000 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.FilterExpression");
+    VAR
+      ConditionExpression@1001 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.ConditionExpression";
+      ConditionOperator@1004 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.ConditionOperator";
     BEGIN
+      ConditionExpression :=
+        ConditionExpression.ConditionExpression(AttributeName,ConditionOperator.Equal,Value);
+      FilterExpression := FilterExpression.FilterExpression;
+      FilterExpression.AddCondition(ConditionExpression);
     END;
 
-    PROCEDURE CreateLinkEntity@55(LinkFromEntityName@1000 : Text;LinkFromAttributeName@1002 : Text;LinkToEntityName@1003 : Text;LinkToAttributeName@1004 : Text);
+    PROCEDURE CreateLinkEntity@55(VAR LinkEntity@1001 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.LinkEntity";LinkFromEntityName@1000 : Text;LinkFromAttributeName@1002 : Text;LinkToEntityName@1003 : Text;LinkToAttributeName@1004 : Text);
+    VAR
+      JoinOperator@1005 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.JoinOperator";
     BEGIN
+      LinkEntity :=
+        LinkEntity.LinkEntity(
+          LinkFromEntityName,LinkToEntityName,LinkFromAttributeName,LinkToAttributeName,
+          JoinOperator.Inner);
     END;
 
-    PROCEDURE CreateRoleToUserIDQueryExpression@40(UserIDGUID@1003 : GUID;RoleIDGUID@1004 : GUID);
+    PROCEDURE CreateRoleToUserIDQueryExpression@40(UserIDGUID@1003 : GUID;RoleIDGUID@1004 : GUID;VAR QueryExpression@1000 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.QueryExpression");
+    VAR
+      LinkEntity1@1002 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.LinkEntity";
+      LinkEntity2@1001 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.LinkEntity";
+      FilterExpression@1005 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.FilterExpression";
     BEGIN
+      CreateLinkEntity(LinkEntity1,'systemuserroles','systemuserid','systemuser','systemuserid');
+
+      CreateFilterExpression('systemuserid',UserIDGUID,FilterExpression);
+      LinkEntity1.LinkCriteria(FilterExpression);
+
+      CreateLinkEntity(LinkEntity2,'role','roleid','systemuserroles','roleid');
+      LinkEntity2.LinkEntities.Add(LinkEntity1);
+
+      CreateQueryExpression('role','roleid','roleid',RoleIDGUID,LinkEntity2,QueryExpression);
     END;
 
-    PROCEDURE CreateAnyRoleToUserIDQueryExpression@54(UserIDGUID@1003 : GUID);
+    PROCEDURE CreateAnyRoleToUserIDQueryExpression@54(UserIDGUID@1003 : GUID;VAR QueryExpression@1000 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.QueryExpression");
+    VAR
+      LinkEntity1@1002 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.LinkEntity";
+      FilterExpression@1005 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.FilterExpression";
+      ColumnSet@1007 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.ColumnSet";
     BEGIN
+      CreateLinkEntity(LinkEntity1,'role','roleid','systemuserroles','roleid');
+
+      CreateFilterExpression('systemuserid',UserIDGUID,FilterExpression);
+      LinkEntity1.LinkCriteria(FilterExpression);
+
+      QueryExpression := QueryExpression.QueryExpression('role');
+      QueryExpression.ColumnSet(ColumnSet.ColumnSet);
+      QueryExpression.LinkEntities.Add(LinkEntity1);
+    END;
+
+    LOCAL PROCEDURE CheckSolutionPresence@42(VAR OrganizationServiceProxy@1000 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy") : Boolean;
+    VAR
+      ColumnSet@1001 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.ColumnSet";
+      QueryExpression@1002 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.QueryExpression";
+      ConditionExpression@1004 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.ConditionExpression";
+      ConditionOperator@1003 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.ConditionOperator";
+      EntityCollection@1005 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.EntityCollection";
+    BEGIN
+      QueryExpression := QueryExpression.QueryExpression('solution');
+      ColumnSet := ColumnSet.ColumnSet;
+      QueryExpression.ColumnSet(ColumnSet);
+      ConditionExpression :=
+        ConditionExpression.ConditionExpression('uniquename',ConditionOperator.Equal,MicrosoftDynamicsNavIntegrationTxt);
+      QueryExpression.Criteria.AddCondition(ConditionExpression);
+      IF NOT ProcessQueryExpression(OrganizationServiceProxy,EntityCollection,QueryExpression) THEN
+        ProcessConnectionFailures;
+      EXIT(EntityCollection.Entities.Count > 0);
     END;
 
     PROCEDURE CheckModifyCRMConnectionURL@37(VAR ServerAddress@1006 : Text[250]);
@@ -1002,8 +1152,42 @@ OBJECT Codeunit 5330 CRM Integration Management
       END;
     END;
 
-    PROCEDURE CreateQueryExpression@49(EntityName@1000 : Text;Column@1001 : Text;ConditionField@1006 : Text;ConditionFieldValue@1007 : Text);
+    PROCEDURE CreateQueryExpression@49(EntityName@1000 : Text;Column@1001 : Text;ConditionField@1006 : Text;ConditionFieldValue@1007 : Text;LinkEntity@1003 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.LinkEntity";VAR QueryExpression@1002 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.QueryExpression");
+    VAR
+      ColumnSet@1005 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.ColumnSet";
+      FilterExpression@1004 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.FilterExpression";
     BEGIN
+      ColumnSet := ColumnSet.ColumnSet;
+      IF Column <> '' THEN
+        ColumnSet.AddColumn(Column);
+      CreateFilterExpression(ConditionField,ConditionFieldValue,FilterExpression);
+      QueryExpression := QueryExpression.QueryExpression(EntityName);
+      QueryExpression.ColumnSet(ColumnSet);
+      IF NOT ISNULL(LinkEntity) THEN
+        QueryExpression.LinkEntities.Add(LinkEntity);
+      QueryExpression.Criteria(FilterExpression);
+    END;
+
+    LOCAL PROCEDURE CheckRoleAssignedToUser@59(VAR OrganizationServiceProxy@1001 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy";UserIDGUID@1000 : GUID;RoleIDGUID@1002 : GUID) : Boolean;
+    VAR
+      QueryExpression@1007 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.QueryExpression";
+      EntityCollection@1010 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.EntityCollection";
+    BEGIN
+      CreateRoleToUserIDQueryExpression(UserIDGUID,RoleIDGUID,QueryExpression);
+      IF NOT ProcessQueryExpression(OrganizationServiceProxy,EntityCollection,QueryExpression) THEN
+        ProcessConnectionFailures;
+      EXIT(EntityCollection.Entities.Count > 0);
+    END;
+
+    LOCAL PROCEDURE CheckAnyRoleAssignedToUser@63(VAR OrganizationServiceProxy@1001 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy";UserIDGUID@1000 : GUID) : Boolean;
+    VAR
+      QueryExpression@1007 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.QueryExpression";
+      EntityCollection@1010 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.EntityCollection";
+    BEGIN
+      CreateAnyRoleToUserIDQueryExpression(UserIDGUID,QueryExpression);
+      IF NOT ProcessQueryExpression(OrganizationServiceProxy,EntityCollection,QueryExpression) THEN
+        ProcessConnectionFailures;
+      EXIT(EntityCollection.Entities.Count > 0);
     END;
 
     PROCEDURE ConstructConnectionStringForSolutionImport@39(ServerAddress@1005 : Text) : Text;
@@ -1018,6 +1202,38 @@ OBJECT Codeunit 5330 CRM Integration Management
       EXIT(STRSUBSTNO(ImportSolutionConnectStringTok,FirstPart,SecondPart));
     END;
 
+    [TryFunction]
+    LOCAL PROCEDURE InitializeCRMConnection@47(URI@1004 : DotNet "'System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Uri";HomeRealmURI@1003 : DotNet "'System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Uri";ClientCredentials@1002 : DotNet "'System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.ServiceModel.Description.ClientCredentials";VAR CRMHelper@1005 : DotNet "'Microsoft.Dynamics.Nav.CrmCustomizationHelper, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Dynamics.Nav.CrmCustomizationHelper.CrmHelper";VAR OrganizationServiceProxy@1000 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy");
+    BEGIN
+      OrganizationServiceProxy := CRMHelper.InitializeServiceProxy(URI,HomeRealmURI,ClientCredentials);
+    END;
+
+    [TryFunction]
+    LOCAL PROCEDURE ProcessQueryExpression@58(VAR OrganizationServiceProxy@1000 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy";VAR EntityCollection@1002 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.EntityCollection";QueryExpression@1001 : DotNet "'Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Xrm.Sdk.Query.QueryExpression");
+    BEGIN
+      EntityCollection := OrganizationServiceProxy.RetrieveMultiple(QueryExpression);
+    END;
+
+    LOCAL PROCEDURE ProcessConnectionFailures@50();
+    VAR
+      DotNetExceptionHandler@1000 : Codeunit 1291;
+      FaultException@1001 : DotNet "'System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.ServiceModel.FaultException";
+      FileNotFoundException@1002 : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.IO.FileNotFoundException";
+      CRMHelper@1005 : DotNet "'Microsoft.Dynamics.Nav.CrmCustomizationHelper, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.Microsoft.Dynamics.Nav.CrmCustomizationHelper.CrmHelper";
+    BEGIN
+      DotNetExceptionHandler.Collect;
+
+      IF DotNetExceptionHandler.TryCastToType(GETDOTNETTYPE(FaultException)) THEN
+        ERROR(AdminEmailPasswordWrongErr);
+      IF DotNetExceptionHandler.TryCastToType(GETDOTNETTYPE(FileNotFoundException)) THEN
+        ERROR(CRMSolutionFileNotFoundErr);
+      IF DotNetExceptionHandler.TryCastToType(CRMHelper.OrganizationServiceFaultExceptionType) THEN
+        ERROR(AdminUserDoesNotHavePriviligesErr);
+      IF DotNetExceptionHandler.TryCastToType(CRMHelper.SystemNetWebException) THEN
+        ERROR(CRMConnectionURLWrongErr);
+      DotNetExceptionHandler.Rethrow;
+    END;
+
     PROCEDURE SetupItemAvailabilityService@100();
     VAR
       TenantWebService@1000 : Record 2000000168;
@@ -1025,6 +1241,16 @@ OBJECT Codeunit 5330 CRM Integration Management
     BEGIN
       WebServiceManagement.CreateTenantWebService(
         TenantWebService."Object Type"::Page,PAGE::"Product Item Availability",'ProductItemAvailability',TRUE);
+    END;
+
+    LOCAL PROCEDURE GetIntegrationAdminRoleID@29() : Text;
+    BEGIN
+      EXIT('8c8d4f51-a72b-e511-80d9-3863bb349780');
+    END;
+
+    LOCAL PROCEDURE GetIntegrationUserRoleID@53() : Text;
+    BEGIN
+      EXIT('6f960e32-a72b-e511-80d9-3863bb349780');
     END;
 
     BEGIN

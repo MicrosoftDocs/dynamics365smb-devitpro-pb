@@ -11,7 +11,7 @@ ms.assetid: 070737cc-4fda-4fa9-84c6-976473d7e2e0
 caps.latest.revision: 3
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # TENANTID Method (Database)
 Gets the ID of the tenant that has started the current session.  

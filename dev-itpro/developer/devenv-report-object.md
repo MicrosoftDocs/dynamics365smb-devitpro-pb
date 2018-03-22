@@ -8,13 +8,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Report Object
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.
@@ -32,7 +32,7 @@ You build the layout of a report by arranging data items and columns, and specif
 Typing the shortcut ```treport``` will create the basic layout for a report object when using the AL Extension in Visual Studio Code.
 
 ## Report example
-The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a report, see [How to: Create a Report](devenv-howto-report-layout.md).
+The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a report, see [Creating a Report](devenv-howto-report-layout.md).
 
 ```
 report 70010101 "Customer List"
@@ -224,8 +224,8 @@ report 70010101 "Customer List"
 ```
 
 ## See Also
-[How to: Create an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-[How to: Create a Word Layout Report](devenv-howto-report-layout.md)  
+[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
+[Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Page Extension Object](devenv-page-ext-object.md)   
 [Page Properties](properties/devenv-page-property-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  

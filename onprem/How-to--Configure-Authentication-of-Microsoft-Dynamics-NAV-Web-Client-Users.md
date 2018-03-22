@@ -118,6 +118,8 @@ You can configure the [!INCLUDE[navnow](includes/navnow_md.md)] installation to 
   
     > [!NOTE]  
     >  You can find the subject name by opening the certificate in the Certificates snap-in for Microsoft Management Console \(MMC\) on the computer that is running [!INCLUDE[nav_web](includes/nav_web_md.md)] and [!INCLUDE[nav_server](includes/nav_server_md.md)]. For more information, see [Walkthrough: Implementing Security Certificates in a Test Environment](Walkthrough--Implementing-Security-Certificates-in-a-Test-Environment.md) or [How to: Implement Security Certificates in a Production Environment](How-to--Implement-Security-Certificates-in-a-Production-Environment.md).  
+
+<!-- 
   
 6.  If you are configuring AccessControlService authentication, then find the `<add key="ACSUri" value=""/>` element, and set the `value` to the URI of the ACS or AAD authentication page.  
   
@@ -125,7 +127,9 @@ You can configure the [!INCLUDE[navnow](includes/navnow_md.md)] installation to 
     <add key="ACSUri" value=""/>  
     ```  
   
-     For more information, see [Authenticating Users with Microsoft Azure Access Control Service](Authenticating-Users-with-Microsoft-Azure-Access-Control-Service.md) and [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md).  
+     For more information, see [Authenticating Users with Microsoft Azure Access Control Service](Authenticating-Users-with-Microsoft-Azure-Access-Control-Service.md) and [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md). 
+
+--> 
   
 7.  Save the [!INCLUDE[web_server_settings_file_md.md](includes/web_server_settings_file_md.md)].  
   
@@ -141,9 +145,9 @@ You can configure the [!INCLUDE[navnow](includes/navnow_md.md)] installation to 
   
 4.  In the **Authentication** pane, enable the appropriate authentication based on the credential type.  
   
-    -   For the Windows credential type, enable **Windows authentication**.  
+    -   For the Windows credential type, enable **Windows authentication**. If you are using [!INCLUDE[navnow](includes/navnow_md.md)] apps, you must also enable **Anonymous authentication**. 
   
-    -   For the UserName and NavUserPassword credential types, enable both **Forms authentication** and **Anonymous authentication**.  
+    -   For the UserName, NavUserPassword, and AccessControlService credential types, enable both **Forms authentication** and **Anonymous authentication**.  
   
      To enable an authentication method, choose the authentication method from the list, and then choose **Enable** in the **Actions** pane.  
   

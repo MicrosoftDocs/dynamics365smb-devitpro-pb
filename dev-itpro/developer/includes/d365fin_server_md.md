@@ -1,1 +1,1 @@
-Dynamics 365 for Financials service
+Dynamics 365 Business Central service

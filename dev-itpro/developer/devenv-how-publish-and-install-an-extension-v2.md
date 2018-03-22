@@ -3,14 +3,16 @@ title: "How to: Publish and Install an Extension v2.0"
 description: "Description of the process of publishing and installing an extension"
 author: jswymer
 ms.custom: na
-ms.date: 02/01/2018
+ms.date: 03/15/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
+
+[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Publishing and Installing an Extension v2.0
 To make your extension available to tenant users requires three basic tasks: publish the extension package to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server instance, synchronize the extension with the tenant database, and install the extension on the tenant.
@@ -27,17 +29,17 @@ Synchronizing an extension updates the database schema of the tenant database wi
 
 1.  Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
 
-    For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). 
+    <!-- For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). -->
 
 2.  To publish the extension, run the [Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079).
 
-    The cmdlet takes as parameters the [!INCLUDE[d365_server_md](includes/d365_server_md.md)] instance that you want to install to and the .app package file that contains the extension. The following example publishes the extension **MyExtension.app** to the **YourDynamicsNAVServer** instance.  
+    The cmdlet takes as parameters the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance that you want to install to and the .app package file that contains the extension. The following example publishes the extension **MyExtension.app** to the **YourDynamicsNAVServer** instance.  
 
     ```  
     Publish-NAVApp -ServerInstance YourDynamicsNAVServer -Path ".\MyExtension.app"
     ```  
 
-3.  To synchronize the schema of a tenant database to the extension, run the [Sync-NavApp cmdlet]((https://go.microsoft.com/fwlink/?linkid=846311).
+3.  To synchronize the schema of a tenant database to the extension, run the [Sync-NavApp cmdlet](https://go.microsoft.com/fwlink/?linkid=846311).
 
     The following example synchronizes the extension **MyExtension** with the tenant: 
    
@@ -58,9 +60,9 @@ After you publish and synchronize an extension, you can install it on tenants to
 
 1.  Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
 
-    For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). 
+    <!-- For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). -->
 
-2. To install the extension on one or more tenants, use the `Install-NAVApp` cmdlet .
+2. To install the extension on one or more tenants, use the `Install-NAVApp` cmdlet.
 
     The following example installs the extension **My Extension** for Tenant1 and Tenant3. In single-tenant deployments, you either specify `default` as the tenant ID, or you omit the `–Tenant` parameter.  
 

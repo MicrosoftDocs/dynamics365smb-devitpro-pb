@@ -11,7 +11,7 @@ ms.assetid: 808e5173-2e31-4f8c-8b13-38c948b3690c
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # CLEARLASTERROR Method
 Removes the last error message from memory.  

@@ -7,11 +7,10 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
-ms.service: "dynamics365-financials"
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnBeforeTestRun Trigger
 Executed before a test  of a test codeunit is run.  

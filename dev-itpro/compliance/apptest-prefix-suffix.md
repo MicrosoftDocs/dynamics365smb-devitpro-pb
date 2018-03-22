@@ -3,12 +3,12 @@ title: "Prefix and suffix for naming in extensions"
 description: "Use a prefix or suffix for names in your extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/21/2017
+ms.date: 03/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.author: rweigel
 
 ---
@@ -73,3 +73,7 @@ There are 2 good reasons to why you may want to proactively use a prefix or suff
 - Salesperson_Code_FAB
 
 *Contact us at d365val@microsoft.com to reserve the prefix/suffix of your choosing*
+
+## See Also
+[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
+[Rules and Guidelines for AL Code](apptest-overview.md)  

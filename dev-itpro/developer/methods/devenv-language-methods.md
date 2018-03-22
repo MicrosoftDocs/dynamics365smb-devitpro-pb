@@ -12,7 +12,7 @@ caps.latest.revision: 4
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # Language Methods
 The following AL methods for langauge are available:  

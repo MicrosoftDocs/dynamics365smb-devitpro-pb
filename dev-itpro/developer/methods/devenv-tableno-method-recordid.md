@@ -12,7 +12,7 @@ caps.latest.revision: 15
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # TABLENO Method (RecordID)
 Gets the table number of the table that is identified by RecordID. This method returns an error if the record is blank.  

@@ -6,13 +6,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-financials"
+ms.service: "dynamics365-business-central"
 ms.assetid: 8b1ead83-80f1-42cc-b091-d0732efc156b
 author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnAssistEdit Trigger
 Executed in place of the [AssistEdit Property](../properties/devenv-assistedit-property.md) features that are provided in the application.  

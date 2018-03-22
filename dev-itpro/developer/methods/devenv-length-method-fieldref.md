@@ -11,7 +11,7 @@ ms.assetid: 214bc234-51a9-4ff0-8863-3beb36221e5e
 caps.latest.revision: 13
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # LENGTH Method (FieldRef)
 Gets the maximum size of the field \(the size specified in the **DataLength** property of the field\). This method is usually used for finding the defined length of code and text fields.  

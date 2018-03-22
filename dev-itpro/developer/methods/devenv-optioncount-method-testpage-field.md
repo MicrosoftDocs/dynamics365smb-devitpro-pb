@@ -12,7 +12,7 @@ caps.latest.revision: 4
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # OPTIONCOUNT Method (TestPage Field)
 Gets the number of options in a field on a test page.  

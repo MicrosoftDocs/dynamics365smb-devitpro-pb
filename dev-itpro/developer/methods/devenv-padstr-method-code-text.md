@@ -12,7 +12,7 @@ caps.latest.revision: 10
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # PADSTR Method (Code, Text)
 Changes the length of a string to a length that you define.  

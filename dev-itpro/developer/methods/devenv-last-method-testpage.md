@@ -12,7 +12,7 @@ caps.latest.revision: 5
 manager: edupont
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # LAST Method (TestPage)
 Sets the current row of the test page as the last row in the dataset.  

@@ -11,7 +11,7 @@ ms.assetid: 75e3d634-83fa-4f7f-b506-e18c675dac4f
 caps.latest.revision: 12
 ---
 
-[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
+ 
 
 # FIELDEXIST Method (RecordRef)
 Determines if the field that has the number *FieldNo* exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected.  
