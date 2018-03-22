@@ -148,5 +148,6 @@ Creating Desktop Shortcuts for MyBCapp2
 
 ## See Also
 [Running a Container-Based Development Environment](devenv-running-container-development.md)  
+[Troubleshooting the Container Sandbox](https://blogs.msdn.microsoft.com/freddyk/2017/10/29/troubleshooting-nav-on-docker/)  
 [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
