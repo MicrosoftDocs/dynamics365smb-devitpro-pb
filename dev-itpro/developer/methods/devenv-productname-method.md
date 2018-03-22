@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: dynamics365-financials
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # PRODUCTNAME Methods
 An application can have a full name, marketing name, and short name. The PRODUCTNAME methods in AL enable you to retrieve these name variations.

@@ -12,7 +12,7 @@ caps.latest.revision: 13
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # KEYINDEX Method (RecordRef)
 Gets the KeyRef of the key that has the index specified in the table that is currently selected. The key can be composed of fields of any supported data type. Data types that are not supported include BLOBs, FlowFilters, variables, and methods. If the sorting key is set to a field that is not part of a key, then the KEYINDEX is -1.  

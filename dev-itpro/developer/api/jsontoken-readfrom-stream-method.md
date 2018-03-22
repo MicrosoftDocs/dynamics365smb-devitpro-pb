@@ -7,14 +7,14 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 620f0e32-eadc-43e9-8f6e-8fc0b12c3aaf
 caps.latest.revision: 9
 manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ReadFrom_Stream Method
 
@@ -29,7 +29,7 @@ Reads the JSON data from the stream into a [JsonToken](jsontoken-class.md) varia
 &emsp;Type: [JsonToken](jsontoken-class.md)
 
 *InStream*  
-&emsp;Type: [InStream](../datatypes/devenv-instream-and-outstream-data-types.md)
+&emsp;Type: [InStream](/datatypes/devenv-instream-and-outstream-data-types.md)
 
 The InStream object from which the JSON data will be read.
 

@@ -7,14 +7,14 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 620f0e32-eadc-43e9-8f6e-8fc0b12c3aaf
 caps.latest.revision: 9
 manager: edupont
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GetValues Method
 Gets the values for the specified key.
@@ -31,7 +31,7 @@ Gets the values for the specified key.
 &emsp;Type: [Text](../datatypes/devenv-text-data-type.md)
 
 *Result*  
-&emsp;Type: Array of [Text](../datatypes/devenv-text-data-type.md)
+&emsp;Type: Array of [Text](/datatypes/devenv-text-data-type.md)
 
 ## Return Value
 *Ok*  

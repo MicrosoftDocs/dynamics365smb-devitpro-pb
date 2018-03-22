@@ -12,7 +12,7 @@ caps.latest.revision: 8
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISTRANSACTIONTYPE Method (Variant)
 Indicates whether an AL variant contains a Transaction\\Type variable.  

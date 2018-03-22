@@ -11,7 +11,7 @@ ms.assetid: d6d1630d-0969-4064-918d-0daff6ce23a0
 caps.latest.revision: 2
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISTEXTCONSTANT Method (Variant)
 Indicates whether an AL variant contains a text constant.  

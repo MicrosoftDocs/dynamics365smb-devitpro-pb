@@ -11,7 +11,7 @@ ms.assetid: 063d8512-1cb8-4b18-a8f4-90ffccf382dd
 caps.latest.revision: 10
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OutStream.WRITETEXT Method
 Writes text to an OutStream object.  

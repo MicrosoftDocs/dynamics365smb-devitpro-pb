@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # CURRENTKEY Method (RecordRef)
 Gets the current key of the table referred to by the RecordRef. The current key is returned as a string.  

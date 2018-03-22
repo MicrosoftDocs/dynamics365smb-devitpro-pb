@@ -12,7 +12,7 @@ caps.latest.revision: 9
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GLOBALLANGUAGE Method
 Gets and sets the current global language setting.  

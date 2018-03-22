@@ -6,12 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.service: "dynamics365-financials"
 ms.assetid: f3b559c5-98d1-4880-9c36-cbff899ff993
 author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnRename Trigger
 Executed when a user tries to rename a record.  

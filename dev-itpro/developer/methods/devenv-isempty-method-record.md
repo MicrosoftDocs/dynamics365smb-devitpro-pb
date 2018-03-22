@@ -11,7 +11,7 @@ ms.assetid: cec48300-a0c5-4e44-8792-f07dc4dc7e37
 caps.latest.revision: 14
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISEMPTY Method (Record)
 Determines whether a table or a filtered set of records is empty.  

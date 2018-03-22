@@ -12,7 +12,7 @@ caps.latest.revision: 14
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # MESSAGE Method (Dialog)
 Displays a text string in a message window.  

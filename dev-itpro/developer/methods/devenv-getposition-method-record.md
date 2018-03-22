@@ -12,7 +12,7 @@ caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GETPOSITION Method (Record)
 Gets a string that contains the primary key of the current record.  

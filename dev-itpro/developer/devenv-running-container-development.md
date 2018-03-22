@@ -8,28 +8,40 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-
+[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Running a Container-Based Development Environment
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is available as a container-based image, ready for running on a Windows system with Docker installed. The container-based approach is used when you need access to both the AL development environment and the C/SIDE development environment.
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is available as a container-based image, ready for running on a Windows system with Docker installed. The container-based approach is used when you need access to both the AL development environment and the C/SIDE development environment. <!-- More intro needed.-->
+
+## Prerequisites for running container-based development
+Complete the following steps to set up a machine that can run a container-based development environment.
+
+1.	Enable virtualization on the host machine that will be hosting the container.
+To check if this is already done, in **Task Manager**, go to the **Performance** tab.
+2.	Run the **Windows Features** window, and make sure that **Hyper-V** and **Containers** are enabled on the machine.
+3.	Install and configure Docker. See the section below.
+4.	Run ...
 
 ## Install and configure Docker
-Install Docker and configure it for Windows Containers. Please choose the version of Docker that is appropriate for the host operating system.
-- Use [Docker Community Edition](https://www.docker.com/community-edition) if the host operating system is Windows 10.  
-    For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10).
-- Use [Docker Enterprise Edition](https://www.docker.com/enterprise-edition) if the host operating system is Windows Server.  
-    For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server).
+The first step to installing Docker is choosing the version of Docker that is appropriate for the host operating system.
+- Use Docker for Windows if the host operating system is Windows 10 Professional edition.
+- Use Docker Enterprise Edition if the host operating system is Windows Server 2016.
 
+By default Docker is set to use Linux containers. Change this by pressing right-click on the Docker tray icon and then select **Switch to Windows Containers**. After you install Docker, you must log out of Windows, then log in again, and Docker will start running automatically.
 
 ## Run the container-based image
 Run the following command in a Command Prompt as Administrator to run a Docker image of Dynamics 365 Business Central:
 
 ```docker run -e accept_eula=Y -m 4G microsoft/dynamics-nav```
+
+You will get the W1 country version of the latest update of the latest version of Microsoft Dynamics NAV 2016 and 2017 running on your computer. You can also run any other cumulative update (of 2016 or 2017), by specifying the version, the CU, and the country version you want as a tag:
+
+```docker run -e accept_eula=Y -m 4G microsoft/dynamics-nav:2016-cu5-dk```
 
 > [!NOTE]  
 > When you run the Docker run command, it will start downloading the image if it does not already exist. A container consists of multiple layers, only the needed layers are downloaded.

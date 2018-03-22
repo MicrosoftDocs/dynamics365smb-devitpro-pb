@@ -6,12 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.service: "dynamics365-financials"
 ms.assetid: 5718e2d3-26af-437b-b96b-08b588c1eea1
 author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnLookup (Page fields) Trigger
 Executed in place of the normal lookup features for the current page.  

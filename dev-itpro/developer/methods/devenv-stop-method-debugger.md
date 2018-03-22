@@ -12,7 +12,7 @@ caps.latest.revision: 4
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # STOP Method (Debugger)
 Stops execution as if the code hits an error.  

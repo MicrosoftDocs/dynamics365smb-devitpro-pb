@@ -22,8 +22,7 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "**/*.jpg"
         ],
         "exclude": [
           "**/obj/**",
@@ -36,15 +35,10 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "ms.author": "solsen",	
-      "searchScope": ["BusinessCentral"],
-      "uhfHeaderId": "MSDocsHeader-Dynamics365",
-      "titleSuffix": "Business Central",
-      "breadcrumb_path": "/dynamics365/business-central/dev-itpro/breadcrumb/toc.json",
-      "ms.service": "dynamics365-business-central",
+      "breadcrumb_path": "/business-central/dev-itpro/breadcrumb/toc.json",
       "extendBreadcrumb": true
     },
-    "fileMetadata":{},
+    "fileMetadata": {},
     "template": [],
     "dest": "dev-itpro",
     "markdownEngineName": "markdig"

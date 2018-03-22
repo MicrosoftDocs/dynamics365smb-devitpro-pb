@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.service: "dynamics365-financials"
 ms.assetid: 680810f5-425f-483d-b574-4fe1db644b51
 author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnNewRecord Trigger
 Executed after a new record is initialized, but before users can make entries.  

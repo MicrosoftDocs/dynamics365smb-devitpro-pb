@@ -6,12 +6,9 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
-
 # Creating a Role Center Headline
 
 You can set up a Role Center to display a series of headlines, where headlines appear one at a time for a predefined period of time before displaying the next.

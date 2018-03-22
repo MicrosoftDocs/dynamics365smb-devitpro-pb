@@ -11,7 +11,7 @@ ms.assetid: 4addc78b-44ac-43ac-861e-d7e848b32414
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # CAPTION Method (FieldRef, TestPage Field)
 Gets the current caption of a field as a String.  

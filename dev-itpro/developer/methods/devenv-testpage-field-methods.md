@@ -12,7 +12,7 @@ caps.latest.revision: 7
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # TestPage Field Methods
 The field methods enable you to view or change the value of a field on a test page.  

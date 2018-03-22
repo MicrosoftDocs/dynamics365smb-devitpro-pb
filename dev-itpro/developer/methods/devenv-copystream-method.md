@@ -11,7 +11,7 @@ ms.assetid: e4fcfe56-27f2-4d8e-9bfa-798fe6a70c5e
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # COPYSTREAM Method
 Copies the information that is contained in an InStream to an OutStream.  

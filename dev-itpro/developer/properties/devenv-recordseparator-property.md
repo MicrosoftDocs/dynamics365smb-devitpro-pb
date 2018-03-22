@@ -6,12 +6,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 88f67ba0-2aa4-42c3-a6fb-f5546b31b22d
 caps.latest.revision: 10
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # RecordSeparator Property
 Sets the string that is to be used to separate records.  

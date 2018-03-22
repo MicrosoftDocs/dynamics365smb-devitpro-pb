@@ -6,12 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.service: "dynamics365-financials"
 ms.assetid: 85858ca9-8b42-4386-8e29-63da9a15a7c0
 author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnAfterGetField Trigger
 Executed after a field is passed to the XML document.  

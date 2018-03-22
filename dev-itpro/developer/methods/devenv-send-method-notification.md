@@ -10,7 +10,7 @@ author: SusanneWindfeldPedersen
 ms.service: dynamics365-financials
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SEND Method (Notification)
 Sends the notification to the client, where it will display in the UI.

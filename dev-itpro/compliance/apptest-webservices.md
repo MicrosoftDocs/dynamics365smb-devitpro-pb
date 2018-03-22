@@ -3,12 +3,12 @@ title: "Be careful about UI for web services"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 11/21/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.author: rweigel
 ---
 
@@ -18,7 +18,7 @@ Pages and code units that are designed to be exposed as Web services must not ge
 
 **SUMMARY AND INTENT**: When writing code for web services, you must not use end-user confirmation dialog boxes, message boxes, or any other page constructs in the code. Because a web service runs independently of a user interface, running this type of code causes the code to throw an exception. The exception can be caught and handled, but the Web service will not complete.
 
-**RESOURCES**: For more information, see [Microsoft Dynamics NAV Web Services](/dynamics-nav/Microsoft-Dynamics-NAV-Web-Services-Overview).
+**RESOURCES**: For more information, see [Microsoft Dynamics NAV Web Services](../Microsoft-Dynamics-NAV-Web-Services-Overview.md).
 
 **HOW TO COMPLY**: Ensure that code for pages and code units that are being exposed as Web services do not use any end-user confirmation dialog boxes or message boxes.
 
@@ -40,7 +40,3 @@ Pages and code units that are designed to be exposed as Web services must not ge
 Additionally, when running the page or code unit as a Web service, the following exception should never occur:
 
 *Microsoft.Dynamics.Nav.Types.Exceptions.NavNCLCallbackNotAllowedException: Callback functions are not allowed.*
-
-## See Also
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-[Rules and Guidelines for AL Code](apptest-overview.md)  

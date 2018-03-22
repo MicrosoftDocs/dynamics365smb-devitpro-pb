@@ -11,7 +11,7 @@ ms.assetid: 9b8a593c-0a96-4e09-97c6-00cb4311dbe6
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # CANLOADTYPE Method
 Tests if the specified .NET Framework type can be loaded by [!INCLUDE[d365fin_md](../includes/d365fin_md.md)].  

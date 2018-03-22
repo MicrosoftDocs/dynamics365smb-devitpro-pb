@@ -7,13 +7,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 620f0e32-eadc-43e9-8f6e-8fc0b12c3aaf
 caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # WriteTo_Stream Method
 Serializes and writes the JSON data of the JsonArray to a given OutStream object.
@@ -27,7 +27,7 @@ Serializes and writes the JSON data of the JsonArray to a given OutStream object
 &emsp;Type: [JsonArray](jsonarray-class.md)
 
 *OutStream*  
-&emsp;Type: [OutStream](../datatypes/devenv-instream-and-outstream-data-types.md)
+&emsp;Type: [OutStream](/datatypes/devenv-instream-and-outstream-data-types.md)
 
 The OutStream object to which the JSON data will be written.
 

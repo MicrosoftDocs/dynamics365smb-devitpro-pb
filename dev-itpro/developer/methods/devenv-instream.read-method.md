@@ -12,7 +12,7 @@ caps.latest.revision: 17
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # InStream.READ Method
 Reads a specified number of bytes from an InStream object. Data is read in binary format.  

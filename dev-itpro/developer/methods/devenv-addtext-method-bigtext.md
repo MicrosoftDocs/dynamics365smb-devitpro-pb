@@ -11,7 +11,7 @@ ms.assetid: 5106e410-d146-4cf1-a006-1670639a6631
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ADDTEXT Method (BigText)
 Adds a text string to a BigText variable.  

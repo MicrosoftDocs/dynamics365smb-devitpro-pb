@@ -12,7 +12,7 @@ caps.latest.revision: 14
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISNULLGUID Method (GUID)
 Indicates whether a value has been assigned to a GUID. A null GUID that consists only of zeros is valid but must never be used for references.  

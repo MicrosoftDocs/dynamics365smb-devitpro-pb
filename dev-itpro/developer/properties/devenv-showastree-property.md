@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 096dd046-161f-4d06-8212-0804f4271590
 caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ShowAsTree Property
 Sets the indentation of rows on a List Page to Tree View. If you enable this property, you can expand or collapse indented rows on a List Page.  

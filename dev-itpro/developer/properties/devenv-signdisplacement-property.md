@@ -6,12 +6,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 932a7c72-f9b4-42c0-914c-2ecea112e73f
 caps.latest.revision: 5
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SignDisplacement Property
 Sets a value to shift negative values to the right for display purposes only. You can shift negative values in increments of 1/100 of a millimeter.  

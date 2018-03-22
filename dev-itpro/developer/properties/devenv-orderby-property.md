@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 5e093f0e-7e9c-4bb0-af90-ec8dc9ea5595
 caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OrderBy Property
 Sorts rows in the resulting dataset of a query in ascending or descending order by a column or columns.  

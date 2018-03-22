@@ -12,7 +12,7 @@ caps.latest.revision: 15
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # FIELDCAPTION Method (Record)
 Gets the current caption of the specified field as a string.  

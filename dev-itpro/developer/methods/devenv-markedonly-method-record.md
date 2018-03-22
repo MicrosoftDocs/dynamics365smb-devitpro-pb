@@ -12,7 +12,7 @@ caps.latest.revision: 12
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # MARKEDONLY Method (Record)
 Activates a special filter. After you use this method, your view of the table includes only records marked by this method.  

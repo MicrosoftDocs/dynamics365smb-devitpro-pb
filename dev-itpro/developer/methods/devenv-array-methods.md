@@ -11,7 +11,7 @@ ms.assetid: c4141c46-ce87-480a-98eb-390a0fe0573b
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # Array Methods
 The following AL methods for arrays are available:  

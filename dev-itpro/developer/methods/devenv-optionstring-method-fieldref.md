@@ -12,7 +12,7 @@ caps.latest.revision: 12
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OPTIONSTRING Method (FieldRef)
 Gets the list of options that are available in the field that is currently selected.  

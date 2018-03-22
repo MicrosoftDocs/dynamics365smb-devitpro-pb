@@ -12,7 +12,7 @@ caps.latest.revision: 12
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # FILENAME Method (XMLport)
 Gets the current value of the [FileName Property](../properties/devenv-FileName-Property.md) of an XMLport and sets this property to a new value.  

@@ -11,7 +11,7 @@ ms.assetid: 1c8ce5d9-0ebc-4305-958e-26ee1de66925
 caps.latest.revision: 11
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # HASFILTER Method (Record)
 Determines whether a filter is attached to a record within the current filter group.  

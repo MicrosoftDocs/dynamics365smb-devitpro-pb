@@ -1,17 +1,18 @@
 ---
 title: "Page and Action Triggers"
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 06/19/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.service: "dynamics365-financials"
 ms.assetid: 1282d6c0-be0e-4399-b948-848d1f0c700e
 author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # Page and Action Triggers
 Page triggers allow you to use AL code to control the behavior of the system as a result of an event on the page, such as a page opening or a field changing its value. You typically use page triggers for advanced validation and logic.  

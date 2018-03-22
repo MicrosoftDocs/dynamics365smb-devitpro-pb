@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # CURRENTKEYINDEX Method (RecordRef)
 Gets or sets the current key of the table referred to by the *RecordRef*. The current key is set or returned as a number. This first key = 1, and so on.  

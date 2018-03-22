@@ -12,7 +12,7 @@ caps.latest.revision: 19
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # PREVIEW Method (Report)
 Indicates whether a report is being printed in preview mode.  

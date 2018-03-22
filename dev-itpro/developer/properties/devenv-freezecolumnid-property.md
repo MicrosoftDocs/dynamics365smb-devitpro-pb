@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 788e2437-c9be-4d57-8797-e6ea78d9bb4d
 caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # FreezeColumnID Property
 Specifies the columns in a list that remain in view on a page, even when you scroll right.  

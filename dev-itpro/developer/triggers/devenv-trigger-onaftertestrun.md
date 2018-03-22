@@ -9,9 +9,10 @@ ms.topic: article
 ms.author: SusanneWindfeldPedersen
 author: SusanneWindfeldPedersen
 manager: edupont
-ms.service: "dynamics365-business-central"
+ms.service: "dynamics365-financials"
 ---
 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnAfterTestRun Trigger
 Executed after a test  of a test codeunit has been run.

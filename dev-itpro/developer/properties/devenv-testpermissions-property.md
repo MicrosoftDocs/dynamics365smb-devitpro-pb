@@ -7,10 +7,10 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # TestPermissions Property
 Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test methods.

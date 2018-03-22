@@ -8,13 +8,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Defining a Report Dataset
 You use report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] to define the data model, or dataset, of a report. The dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. For more information, see [Report Object](devenv-report-object.md).
@@ -36,7 +36,7 @@ When a report is based on more than one table, you must set relations between th
 Typing the shortcut ```treport``` will create the basic layout for a report object when using the AL Extension in Visual Studio Code. 
 
 ### Example
-The following example adds the `Customer` table as the data item and the `CustomerName` and `CompanyName` as fields of a column to the report. For more information on creating a report, see [Creating a Report](devenv-howto-report-layout.md).
+The following example adds the `Customer` table as the data item and the `CustomerName` and `CompanyName` as fields of a column to the report. For more information on creating a report, see [How to: Create a Report](devenv-howto-report-layout.md).
 ```
   dataset
     {

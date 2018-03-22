@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: d19c51cd-2c65-4850-b0cb-97b999436187
 caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # Local Property
 Specifies if a method is local to the object on which the method is defined. A local method cannot be accessed from outside the object.  

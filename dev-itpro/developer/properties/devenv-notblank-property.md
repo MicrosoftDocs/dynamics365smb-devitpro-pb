@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: c33fa0c5-761f-4aba-a0af-00b2145c9be7
 caps.latest.revision: 17
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # NotBlank Property
 Sets a value that specifies whether users must enter a value in the selected field or text box.  

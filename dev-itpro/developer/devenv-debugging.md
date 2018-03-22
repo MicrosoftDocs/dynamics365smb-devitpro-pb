@@ -8,12 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 9cfc02d2-2211-466f-b5e9-8178bdc79311
 ms.author: solsen
 ---
-
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Debugging
 The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the AL Language extension you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing F5.  
@@ -25,7 +23,7 @@ The process of finding and correcting errors is called *debugging*. With Visual 
 > To enable debugging the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**.
 This requires a server restart.
 
-There are a number of limitations to be aware of:
+For the preview, there are a number of limitations to be aware of:
 
 - "External code" can only be debugged if the code has the `ShowMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md). 
 - Not all AL types yet show helpful debugging.

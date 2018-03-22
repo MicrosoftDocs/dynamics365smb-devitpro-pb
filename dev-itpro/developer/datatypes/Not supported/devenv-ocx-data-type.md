@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: ebeaf3bf-796a-4862-bd1f-f3c3c7ce97fe
 caps.latest.revision: 14
 manager: edupont

@@ -11,7 +11,7 @@ ms.assetid: 07c42afb-c018-46eb-8ab7-9db9785d78b5
 caps.latest.revision: 9
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # KEYCOUNT Method (RecordRef)
 Gets the number of keys that exist in the table that is referred to by the RecordRef. Returns an error if no table is selected.  

@@ -11,7 +11,7 @@ ms.assetid: 19dd10ea-7410-4e4c-82ae-fc03dcf70ccd
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # CHANGECOMPANY Method (RecordRef)
 Redirects references to table data from one company to another.  

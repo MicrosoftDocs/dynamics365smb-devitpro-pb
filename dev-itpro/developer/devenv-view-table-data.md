@@ -11,8 +11,6 @@ ms.topic: article
 ms.author: jswymer
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
-
 # Viewing Table Data
 For developers, administrators, and support personnel, it can be useful to inspect table data in the tenant database, particularly when debugging or troubleshooting. To support this need, you can view table objects in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].
 

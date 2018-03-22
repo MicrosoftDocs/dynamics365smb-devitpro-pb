@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # COPYFILTERS Method (Record)
 Copies all the filters set by the [SETFILTER Method \(Record\)](devenv-SETFILTER-Method-Record.md) or the [SETRANGE Method \(Record\)](devenv-SETRANGE-Method-Record.md) from one record to another.  

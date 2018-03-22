@@ -11,7 +11,7 @@ ms.assetid: 9b356763-1569-4c58-bd2e-1802158e6cf6
 caps.latest.revision: 11
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GETPOSITION Method (RecordRef)
 Gets a string that contains the primary key of the current record.  

@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # CURRENTEXECUTIONMODE Method (Sessions)
 Specifies the mode in which the session is running.  

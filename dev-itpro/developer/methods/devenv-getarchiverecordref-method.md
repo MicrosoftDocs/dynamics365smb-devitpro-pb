@@ -11,7 +11,7 @@ ms.assetid: c974ffb7-9d99-47d4-a16a-b29de54d071b
 caps.latest.revision: 3
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GETARCHIVERECORDREF Method
 Returns a RecordRef for the specified table.  

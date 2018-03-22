@@ -1,7 +1,7 @@
 ---
 title: "READPERMISSION Method (RecordRef)"
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 07/13/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.assetid: 950d7dac-a821-4f9f-873c-952b87857400
 caps.latest.revision: 14
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # READPERMISSION Method (RecordRef)
 Determines if you can read from a table.  
@@ -41,7 +41,7 @@ Ok := RecordRef.READPERMISSION
   
  This method uses the filter that is currently applied to the *RecordRef* to determine whether you have read permission. If no filter is applied, the method tests for full read permission. If a filter has been set, the method only tests for read permission in the range of the filter.  
   
- To determine whether the user has a partial read permission because a security filter has been applied, view the **Permissions** page. <!-- Links For more information, see [How to: Set Security Filters](How-to-Set-Security-Filters.md). -->  
+ To determine whether the user has a partial read permission because a security filter has been applied, view the **Permissions** page. <!--Links For more information, see [How to: Set Security Filters](How-to--Set-Security-Filters.md).-->  
   
  If you do not have permission to read from a table and you attempt to read, a run-time error occurs. This method lets you determine in advance if you have read permission. When the permissions are checked, the combination of the permissions in the license file and the user's permissions in the Permission table is considered.  
   

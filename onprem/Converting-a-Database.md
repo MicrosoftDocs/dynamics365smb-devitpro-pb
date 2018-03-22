@@ -99,16 +99,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[na
 
 #### To convert the database  
 
-1.  If the database is on Azure SQL Database, add your user account to the **dbmanager** database role on the master database.
-
-    This membership is only required for converting the database, and can be removed afterwards. 
-
-
-2.  Install [!INCLUDE[nav2018_md](includes/nav2018_md.md)].  
+1.  Install [!INCLUDE[nav2018_md](includes/nav2018_md.md)].  
 
      Run the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] Setup, and choose to install the **Developer** option.  
 
-3.  Run the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] development environment as an administrator.
+2.  Run the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] development environment as an administrator.
 
     -   If the [!INCLUDE[nav_dev_short_md](includes/nav_dev_short_md.md)] is already connected to the old database, a dialog box about converting the database appears. Go to the next step.
     
@@ -116,43 +111,42 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[na
     
         For more information, see [How to: Open Databases](How-to--Open-Databases.md).
 
-4.  In the dialog box that appears, read the instructions about converting the database carefully because this action cannot be reversed. When you are ready, choose the **OK** button, and then choose the **OK** button to confirm that you want to convert the database.  
+3.  In the dialog box that appears, read the instructions about converting the database carefully because this action cannot be reversed. When you are ready, choose the **OK** button, and then choose the **OK** button to confirm that you want to convert the database.  
 
      [!INCLUDE[navnow](includes/navnow_md.md)] will now convert the database. This includes an upgrade of system tables and reports.  
 
-5.  When you are notified that the conversion was successful, choose the **OK** button.
+4.  When you are notified that the conversion was successful, choose the **OK** button.
 
     > [!IMPORTANT]  
     >  Although the message indicates to do so, do not synchronize the table schemas at this point. 
 
-6.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[nav_server](includes/nav_server_md.md)] or [!INCLUDE[nav_windows](includes/nav_windows_md.md)] computers.  
+5.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[nav_server](includes/nav_server_md.md)] or [!INCLUDE[nav_windows](includes/nav_windows_md.md)] computers.  
 
      For the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], the default path is [!INCLUDE[navnow_x86install](includes/navnow_x86install_md.md)]\\RoleTailored Client\\Add-ins folder.  
 
      For [!INCLUDE[nav_server](includes/nav_server_md.md)], the default path is the [!INCLUDE[navnow_install](includes/navnow_install_md.md)]\\Service\\Add-ins folder.
 
 
-7.  Connect a [!INCLUDE[nav2018_md](includes/nav2018_md.md)] Server instance to the converted database.  
+6.  Connect a [!INCLUDE[nav2018_md](includes/nav2018_md.md)] Server instance to the converted database.  
 
      Use the [!INCLUDE[nav_admin](includes/nav_admin_md.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to the converted database.  
 
-    > [!IMPORTANT]  
-    > You must add the service account that is used by the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance as a member of the **db\_owner** role in the [!INCLUDE[navnow](includes/navnow_md.md)] database on SQL Server or Azure SQL Database.  
+     In addition, you must add the service account that is used by the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance as a member of the **db\_owner** role in the [!INCLUDE[navnow](includes/navnow_md.md)] database on SQL Server.  
 
      For more information, see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).  
      
-8.  Go to the [!INCLUDE[nav_dev_short_md](includes/nav_dev_short_md.md)], and set it to use the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance that connects to the database.  
+7.  Go to the [!INCLUDE[nav_dev_short_md](includes/nav_dev_short_md.md)], and set it to use the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance that connects to the database.  
 
      For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md).  
 
-9.  Compile all objects **without** synchronizing table schemas; you will do this later. 
+8.  Compile all objects **without** synchronizing table schemas; you will do this later. 
 
     For more information, see [Compiling Objects](compiling-objects.md). 
 
     > [!IMPORTANT]
     > When prompted about table synchronization, set the **Synchronize Schema** option to **Later**.
 
-10. Fix compilation errors.  
+9. Fix compilation errors.  
 
     If any errors occur, they are shown in the **Error List** window. For help on resolving the errors, see the following:
 
@@ -166,7 +160,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[na
 
     You can find all objects which did not compile in the **Object Designer** window, by setting a field filter on the **Compiled** field.  
 
-11. Recompile published extensions.
+10. Recompile published extensions.
 
     Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) of the [!INCLUDE[navnowlong_md](includes/navnowlong_md.md)] Administration Shell to compile the published extensions to make sure they are work with the new platform.
 
@@ -176,13 +170,13 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[na
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
     ```   
 
-12.  Run the schema synchronization with validation to complete the database conversion.  
+10.  Run the schema synchronization with validation to complete the database conversion.  
 
         For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).  
 
-13.  If you converted a [!INCLUDE[navcorfu_md](includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)]. For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
+11.  If you converted a [!INCLUDE[navcorfu_md](includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)]. For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
 
-14. Upload the customer license to the converted database.  
+12. Upload the customer license to the converted database.  
 
     For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
 

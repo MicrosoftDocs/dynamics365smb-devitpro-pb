@@ -12,7 +12,7 @@ caps.latest.revision: 12
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SETRANGE Method (Query)
 Sets a filter on a range of values on a column of a query dataset.  

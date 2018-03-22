@@ -11,7 +11,7 @@ ms.assetid: 4025dac3-569b-4e4c-983d-36e346079e79
 caps.latest.revision: 11
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISTEXT Method (Variant)
 Indicates whether an AL variant contains a Text variable.  

@@ -12,7 +12,7 @@ caps.latest.revision: 17
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # MODIFY Method (RecordRef)
 Modifies a record in a table.  

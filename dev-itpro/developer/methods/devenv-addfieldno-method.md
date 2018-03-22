@@ -11,7 +11,7 @@ ms.assetid: 6ba0a312-b6a5-429d-b8b9-c4d1b4830a82
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ADDFIELDNO Method
 Adds a table field to the filter control for a table on the filter page.  

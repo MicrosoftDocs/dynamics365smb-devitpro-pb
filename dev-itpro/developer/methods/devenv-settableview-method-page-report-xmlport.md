@@ -12,7 +12,7 @@ caps.latest.revision: 20
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SETTABLEVIEW Method (Page, Report, XMLport)
 Applies the table view on the current record as the table view for the page, report, or XMLport.  

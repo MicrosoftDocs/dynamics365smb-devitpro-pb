@@ -8,10 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ---
 
-
+[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Using Filtering
 
@@ -21,6 +21,5 @@ ms.service: "dynamics365-business-central"
 
 ## See Also
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
-[Using Deltas With APIs](devenv-connect-apps-delta.md)   
-[Tips for working with the APIs](devenv-connect-apps-tips.md)  
+[Using Deltas With APIs](devenv-connect-apps-delta.md)  
 

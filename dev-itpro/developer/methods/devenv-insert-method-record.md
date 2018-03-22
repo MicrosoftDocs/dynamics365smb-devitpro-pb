@@ -12,7 +12,7 @@ caps.latest.revision: 12
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # INSERT Method (Record)
 Inserts a record into a table.  

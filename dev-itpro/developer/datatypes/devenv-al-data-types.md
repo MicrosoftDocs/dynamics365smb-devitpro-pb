@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 976c36b9-f2bf-4cd5-8ad7-ff3b5eb0cf26
 caps.latest.revision: 44
 author: SusanneWindfeldPedersen

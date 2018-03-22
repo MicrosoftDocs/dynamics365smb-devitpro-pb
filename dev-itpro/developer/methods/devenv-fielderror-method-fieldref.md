@@ -11,7 +11,7 @@ ms.assetid: 7df700bf-2e1f-4b64-b37d-fe2da74b3479
 caps.latest.revision: 16
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # FIELDERROR Method (FieldRef)
 Stops the execution of the code, causing a run-time error, and creates an error message for a field.  

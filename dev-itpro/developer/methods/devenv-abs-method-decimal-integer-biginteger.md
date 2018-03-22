@@ -11,7 +11,7 @@ ms.assetid: 36cfc0e3-ee2b-45a9-a528-7ac6067fd146
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ABS Method (Decimal, Integer, BigInteger)
 Calculates the absolute value of a number \(Decimal, Integer or BigInteger\). ABS always returns a positive numeric value or zero.  

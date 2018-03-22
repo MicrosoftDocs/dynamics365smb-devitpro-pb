@@ -12,7 +12,7 @@ caps.latest.revision: 15
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GET, FIND, and NEXT Methods
 The following methods are used to search for records:  

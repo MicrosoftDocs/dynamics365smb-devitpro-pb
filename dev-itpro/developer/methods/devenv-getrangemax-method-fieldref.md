@@ -11,7 +11,7 @@ ms.assetid: 3f00ac16-e745-4d4a-9e20-17a09f015780
 caps.latest.revision: 15
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GETRANGEMAX Method (FieldRef)
 Gets the maximum value in a range for a field.  

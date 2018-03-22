@@ -11,7 +11,7 @@ ms.assetid: 5cfff72a-fbee-40e5-9e2b-c5f1f920e506
 caps.latest.revision: 13
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GETLASTERRORTEXT Method
 Gets the text that was included in the last error message that was generated.  

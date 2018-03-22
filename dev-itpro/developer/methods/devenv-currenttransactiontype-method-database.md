@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # CURRENTTRANSACTIONTYPE Method (Database)
 Gets the current transaction type and sets a new type to be assigned.  

@@ -11,7 +11,7 @@ ms.assetid: 8a6b28e2-b69a-4c2d-8d93-a632f064f0a5
 caps.latest.revision: 9
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # LENGTH Method (BigText)
 Retrieves the length of a BigText variable.  

@@ -11,7 +11,7 @@ ms.assetid: 17798d4c-d894-4d3b-9bb2-99e6d1ec5fff
 caps.latest.revision: 16
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # InStream.EOS Method
 Indicates whether an input stream has reached End of Stream \(EOS\).  
