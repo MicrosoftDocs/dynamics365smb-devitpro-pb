@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # VALIDATE Method (FieldRef)
 Use this method to enter a new value into a field and have the new value validated by the properties and code that have been defined for that field.  

@@ -11,7 +11,7 @@ ms.assetid: 95420b45-4c60-489b-b71e-f56e63a84cb3
 caps.latest.revision: 9
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISDATE Method (Variant)
 Indicates whether an AL variant contains a Date variable.  

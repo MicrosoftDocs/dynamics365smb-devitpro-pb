@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # COUNT Method (FilterPageBuilder)
 Gets the number of filter controls that are specified in the FilterPageBuilder object instance.  

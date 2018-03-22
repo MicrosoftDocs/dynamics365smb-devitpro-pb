@@ -2,16 +2,14 @@
 title: "Classifying Data in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]"
 ms.author: jswymer
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 01/05/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Classifying Data in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]
 [!INCLUDE[d365fin_md](includes/d365fin_md.md)] includes development features for tagging business data with specific classifications. Specifically, this includes data that is stored in table fields of the database and telemetry data that is emitted from the application.    
@@ -34,9 +32,6 @@ Table objects and field controls include the `DataClassification` property that 
 -   When you add a new field to a table, the field is assigned an initial value of **ToBeClassified**.
 -   FlowField and FlowFilter fields are automatically set to the **SystemMetadata** data classification. This cannot be changed.
 -   Existing tables and fields (except for FlowFields and FlowFilters) in an application that has been upgraded from a [!INCLUDE[d365fin_md](includes/d365fin_md.md)] version without the `DataClassification` property, will automatically be assigned the **CustomerContent** classification.
-
->[!IMPORTANT]
-> Microsoft is providing this `DataClassification` property as a matter of convenience only. It's your responsibility to classify the data appropriately and comply with any laws and regulations that are applicable to you. Microsoft disclaims all responsibility towards any claims related to your classification of the data.  
 
 For more information about this property, see [DataClassification Property](properties/devenv-dataclassification-property.md).
 
@@ -72,14 +67,11 @@ To view the data classification on all fields, you can do one of the following:
 ## Classifying data in custom telemetry trace events
 Custom telemetry trace events are defined by calls to the SENDTRACETAG function/method in the application code. The SENDTRACETAG function/method includes an optional parameter called `DataClassification` that you can use to tag the telemetry trace event with a data classification.
 
-For more information, see [SENDTRACETAG Method (AL)](methods/devenv-sendtracetag-method.md).
+For more information, see the following articles:
 
-<!-- For more information, see the following articles:
 -   [Instrumenting an Application for Telemetry](devenv-instrumenting-application-for-telemetry.md) 
 -   [SENDTRACETAG Method (AL)](methods/devenv-sendtracetag-method.md)
--->
+
 
 ## See Also
-[Data Classification](properties/devenv-dataclassification-property.md)  
-[Classifying Data Sensitivity](devenv-classifying-data-sensitivity.md)  
-
+[How to: Create a Page to View a Virtual Table](How-to--Create-a-Page-to-View-a-Virtual-Table.md)    

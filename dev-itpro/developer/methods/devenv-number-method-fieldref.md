@@ -11,7 +11,7 @@ ms.assetid: 4ec37d7b-bcef-4668-8349-9ff1bc00a966
 caps.latest.revision: 10
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # NUMBER Method (FieldRef)
 Gets the number of a field as a string.  

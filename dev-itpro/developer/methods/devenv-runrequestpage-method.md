@@ -12,7 +12,7 @@ caps.latest.revision: 7
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # RUNREQUESTPAGE Method
 Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page.  

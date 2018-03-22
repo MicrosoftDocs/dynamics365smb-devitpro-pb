@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # WORDLAYOUT Method
 Gets the Word report layout that is used on a report and returns it as a data stream.  

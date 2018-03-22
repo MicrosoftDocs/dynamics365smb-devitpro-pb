@@ -11,7 +11,7 @@ ms.assetid: f5c7657b-aaa5-4b2c-974d-ac2cd2fc3c9c
 caps.latest.revision: 10
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SKIP Method (Report, XMLport)
 Skips the current iteration of the current report or XMLport.  

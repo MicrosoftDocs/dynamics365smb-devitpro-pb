@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 6400d515-9f4e-4422-a89e-99100bf9110c
 caps.latest.revision: 18
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # StyleExpr Property
 Specifies the format of text in a field. For fields in a **CueGroup** control, this property is used to configure the color of the color indicator on the cue. 

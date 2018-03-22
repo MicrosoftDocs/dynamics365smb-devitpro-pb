@@ -133,9 +133,6 @@ Clear all [!INCLUDE[nav_server](includes/nav_server_md.md)] instance records fro
     ```
 
 ##  <a name="ConvertDb"></a> Task 8: Convert the old database to the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] format  
-
-If the database is on Azure SQL Database, you must first add your user account to the **dbmanager** database role on master database. This membership is only required for converting the database, and can be removed afterwards. 
-
 To convert the old database to the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] format, open the old database in the [!INCLUDE[nav2018_md](includes/nav2018_md.md)] [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], and follow the conversion instructions.
 
 > [!IMPORTANT]

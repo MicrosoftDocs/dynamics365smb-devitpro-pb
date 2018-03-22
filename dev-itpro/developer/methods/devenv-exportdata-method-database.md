@@ -13,7 +13,7 @@ ms.assetid: 90a14701-7468-4cc4-b01f-4859ae1be04b
 caps.latest.revision: 4
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # EXPORTDATA Method (Database)
 Exports data from the [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] database to a file. The data is not deleted from the database.  

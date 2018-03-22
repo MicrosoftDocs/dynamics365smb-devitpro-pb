@@ -13,7 +13,7 @@ ms.assetid: 1208c431-8d3d-4cc7-9696-98533d992ebb
 caps.latest.revision: 3
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # IMPORTDATA Method (Database)
 Imports data from a file that has been exported from a [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] database.  

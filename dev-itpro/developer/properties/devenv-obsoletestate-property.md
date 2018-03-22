@@ -3,12 +3,12 @@ title: "ObsoleteState Property"
 description: "Description of the ObsoleteState property"
 author: jswymer
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 10/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.author: jswymer
 ---
 
@@ -36,5 +36,5 @@ By coding against this property, you can use this property as a way to communica
 ## See Also  
  [ObsoleteReason Property](devenv-obsoletereason-property.md)  
  [Properties](devenv-properties.md)  
- [Upgrade Codeunits](../devenv-methodtype-property-upgrade-codeunits.md)  
+ [Upgrade Codeunits](../../upgrade-codeunits.md)  
 

@@ -12,7 +12,7 @@ caps.latest.revision: 5
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # FINDPREVIOUSFIELD Method (TestPage)
 Finds the previous field in the dataset that is displayed on a test page.  

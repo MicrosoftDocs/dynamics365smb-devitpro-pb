@@ -11,7 +11,7 @@ ms.assetid: 29e195c8-557d-43a7-b416-37c2ec246cfc
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ERASE Method (File)
 Deletes a file.  

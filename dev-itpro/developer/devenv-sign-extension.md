@@ -8,12 +8,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Signing an APP Package File
 Code signing is a common practice for many applications. It is the process of digitally signing a file to verify the author and that the file has not been tampered with since it was signed. The signature of the APP package file is verified during the publishing of the extension using the `Publish-NAVApp` cmdlet. 
@@ -30,7 +30,7 @@ The signing of an APP package file must be performed on a computer that has [!IN
 ## Steps for signing your .app file
 
 1. Prepare your computer for signing. 
-2. Make sure that you sign the .app file on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed.
+2. Make sure that you sign the .app file on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]) installed.
 3. Copy the certificate that you purchased from a third-party certificate authority to a folder on the computer. Optionally, create your own certificate for local test or development purposes using the [Self-signed certificate information](#self-signed-certificate). The file path for the sample command is `C:\Certificates\MyCert.pfx`.
 4. Install a signing tool such as [SignTool](https://docs.microsoft.com/en-us/dotnet/framework/tools/signtool-exe) or [SignCode](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537364(v=vs.85)) to the computer. The sample command will use SignTool.
 5. Copy your extensions .app file to the computer if it is not already on the computer. The file path for the sample command is `C:\NAV\Proseware.app`.

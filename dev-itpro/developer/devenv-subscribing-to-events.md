@@ -6,12 +6,9 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.service: "dynamics365-financials"
 author: SusanneWindfeldPedersen
 ---
-
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
-
 # Subscribing to Events
 To handle events, you design event subscribers. Event subscribers determine what actions to take in response to an event that has been raised. An event subscriber is a AL method that subscribes to, or listens for, a specific event that is declared by an event publisher method. The event subscriber includes code that defines the business logic to handle the event. When the published event is raised, the event subscriber is called and its code is run.  
 
@@ -86,7 +83,7 @@ codeunit 70000002 MySubscriber
 ```
 
 ## Example 2
-This example achieves the same as example 1, except it subscribes to the the page trigger event `OnBeforeValidateEvent` on the `Address` field instead. By using the page trigger, you avoid creating an event publisher and adding code to raise the event because this is done automatically by the system.
+This example achieves the same as example 1, except it subscribes to the the page trigger event `OnBeforeValidateEvent` on the `Address`field instead. Bu using the page trigger, you avoid creating an event publisher and adding code to raise the event because this is done automatically by the system.
 
 ```
 codeunit 70000002 MySubscriber

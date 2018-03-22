@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: d3797441-20f0-4463-aa6e-45d61fef1f89
 caps.latest.revision: 17
 authoer: SusanneWindfeldPedersen
 ---
 
-
+[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # System-Defined Variables
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically declares and initializes several variables that you can use when you develop applications. The following table describes the system-defined variables.  

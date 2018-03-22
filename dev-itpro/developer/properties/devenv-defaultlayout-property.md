@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: b2f560c0-bda3-467e-8e81-50cdf8e64ed5
 caps.latest.revision: 3
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # DefaultLayout Property
 Specifies whether the report uses the built-in RDLC or Word report layout by default.  

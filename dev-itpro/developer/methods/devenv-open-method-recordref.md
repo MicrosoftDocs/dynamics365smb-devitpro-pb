@@ -1,7 +1,7 @@
 ---
 title: "OPEN Method (RecordRef)"
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 02/05/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ caps.latest.revision: 10
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OPEN Method (RecordRef)
 Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.  
@@ -47,7 +47,7 @@ RecordRef.OPEN(No[, Temp][, CompanyName])
  If you use the *CompanyName* parameter, then this method works the same as the [CHANGECOMPANY Method \(Record\)](devenv-CHANGECOMPANY-Method-Record.md).  
 
 ## Limitations 
- In the development settings, you can specify the allowed target level when publishing the extension, which includes the following options; Internal, Extension, Solution, and Personalization. When you set the **target** as `Internal`, this allows you to access all the table data with no restrictions in [!INCLUDE[navnow_md](../includes/navnow_md.md)]. However, you cannot publish the extension to the AppSource. <!-- For more information, see [Development Settings](../../configuring-microsoft-dynamics-nav-server.md#development-settings). -->
+ In the development settings, you can specify the allowed target level when publishing the extension, which includes the following options; Internal, Extension, Solution, and Personalization. When you set the **target** as `Internal`, this allows you to access all the table data with no restrictions in [!INCLUDE[navnow_md](../includes/navnow_md.md)]. However, you cannot publish the extension to the AppSource. For more information, see [Development Settings](../../configuring-microsoft-dynamics-nav-server.md#development-settings). 
  
  For [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], you must set the **target** as `Extension` to publish your extension to the AppSource. However, when you use this setting with the RecordRef data type, some system and virtual tables are blocked with the ids that extend `2000000000+`. Therefore, you must declare the records explicitly as a record variable. For example: 
 ```

@@ -10,7 +10,7 @@ ms.service: dynamics365-financials
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # INIT Method
 Creates an instance of a SessionsSettings object that includes the client user's personalization settings that are currently stored in the database.

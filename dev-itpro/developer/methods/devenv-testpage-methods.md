@@ -12,7 +12,7 @@ caps.latest.revision: 3
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # TestPage Methods
 You can use the TestPage methods for the following purposes.  

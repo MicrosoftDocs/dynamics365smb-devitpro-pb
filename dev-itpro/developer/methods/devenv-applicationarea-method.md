@@ -11,7 +11,7 @@ ms.service: dynamics365-financials
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ApplicationArea Method
 Gets or sets the application areas for the current session.  

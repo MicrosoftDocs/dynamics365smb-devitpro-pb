@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.service: "dynamics365-financials"
 ms.assetid: 2e946369-2c8b-47f2-8f3e-0bd805f5c94a
 author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
-
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OnNextRecord Trigger
 Determines the next record to be displayed.  

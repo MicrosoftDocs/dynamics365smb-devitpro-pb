@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: c77df30b-332a-4d7f-9754-a8fa131a3f9e
 caps.latest.revision: 17
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # Properties of the Demo License
 The demo license is automatically installed when you install the Demo Option. The demo license works with the [!INCLUDE[demolong](../includes/demolong_md.md)], has serial number 000, and includes granule 540. The license allows access to the entire base application and limited access to the development system.  

@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: a2c73a08-58f9-48dd-860f-b898c56b6879
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # Format-Evaluate Property
 Sets the data that is being imported or exported as XML data types or as the standard AL data types.  

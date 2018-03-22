@@ -12,7 +12,7 @@ caps.latest.revision: 13
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SERIALNUMBER Method (Database)
 Gets a string that contains the serial number of the license file for your [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] system.  

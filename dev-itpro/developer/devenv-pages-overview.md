@@ -1,17 +1,18 @@
 ---
 title: "Pages Overview"
-author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 06/07/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 0ba68a20-d83a-4e4c-9938-dac7fa8f5461
 caps.latest.revision: 35
-ms.author: solsen
+manager: edupont
 ---
+
+[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Pages Overview
 
@@ -19,7 +20,7 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], pages are the main 
 
 A page is defined in code as an object composed of controls, properties, actions, and triggers. You can also use Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to create a page. For more information, see [Using Designer](devenv-inclient-designer.md).
 
-Whether you are creating a new page, or extending en existing page, you will add a new .al file to your project and describe the page object in code. The difference is basically that for a new page, you need to define the entire page, whereas when modifying an existing page, you only add the extra functionality or modify the existing. 
+Whether you're creating a new page, or extending en existing page, you will add a new .al file to your project and describe the page object in code. The difference is basically that for a new page, you need to define the entire page, whereas when modifying an existing page, you only add the extra functionality or modify the existing. 
 
 The structure of a page is hierarchical and breaks down in to three sections. The first block contains metadata for the overall page. The metadata describes the page type and the source table it is showing data from. The next section; the layout, describes the visual parts on the page. The final section details the actions that are published on the page.
 
@@ -54,9 +55,9 @@ Which page type you choose depends on the application task that you want to supp
 |`ConfirmationDialog`|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|
 |`StandardDialog`|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
 |`NavigatePage`|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
-|`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center. For more information, see [Creating a Role Center Headline](devenv-create-role-center-headline.md)|
+|`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.<br /><br />For more information, see [Creating a Role Center Headline](../create-role-center-headline.md)|
 
-> [!NOTE]  
+> [!NOTE]
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
 
 ## Page Layout
@@ -70,11 +71,8 @@ You can choose between the following `area` categories:
 |`FactBoxes`|The factbox area is placed to the right-most side of a page. Displays content related to an item om the main content page.|
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
 
-### Adding, moving, and modifying
-In the `layout` section, you can use the following methods to place and move fields and groups on the page. 
-
-> [!TIP]  
-> Similarly, in the `actions` section, which is described [below](#page-actions), you use these methods to place actions in the ribbon. 
+### Adding and moving
+In the `layout` section, you can use the following methods to place and move fields and groups on the page. Similarly, in the `actions` section, which is described [below](#page-actions), you use these methods to place actions in the ribbon. 
 
 |Method example         |Applies to |
 |-----------------------|-------------|
@@ -87,55 +85,48 @@ In the `layout` section, you can use the following methods to place and move fie
 |```moveafter(AddressDetails)``` |Fields and groups|
 |```movebefore(AddressDetails)```|Fields and groups|
 
+If you want to modify existing fields and groups on a page, you use the `modify` method. See the code example below for syntax.
 
-If you want to modify existing fields and groups on a page, you use the `modify` method. See the code snippet below for `addlast` and `modify` syntax.
+<!--
+### Page controls  
+You can add page controls to a page depending on the page type you have chosen.
 
-```
-pageextension 70000020 CustomerCardExtension extends "Customer Card"
-{
-    layout
-    {
-        addlast(General)
-        {
-            field("Shoe Size"; ShoeSize)
-            {
-                CaptionML = ENU='ShoeSize';
+|Page Control|Supported on Pages|
+|------------|------------|
+|`repeater`|List, Card|
+|`cuegroup`||
+|`part`||
+|`factbox`||
+|`fasttab`||
+|`homepart`||
+|`chartpart`||
+|`pagepart`||
+|`systempart`||
+|`ribbon`||
+|`filterpane`||
+-->
 
-                trigger OnValidate();
-                begin
-                    if ShoeSize < 10 then
-                        Error('Feet too small');
-                end;
-            }
-        }
-
-        modify("Address 2")
-        {
-            CaptionML = ENU='New Address 2';
-        }
-    }
-        ...
-```
- 
+  
 ## Page actions
 All pages contain menu items and navigation controls called actions. The ```actions``` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. Actions are added to the ribbon or as activity buttons/cues. The following example creates a new group in the ribbon and places it last in the General group.
 
 ```
 addlast(General)
-{
-    group(MyActionGroup)
-    {
-        Action(MyAction1)
         {
-            CaptionML = ENU='Hello!';
+            group(MyActionGroup)
+            {
+                Action(MyAction1)
+                {
+                    CaptionML = ENU='Hello!';
 
-            trigger OnAction();
-            begin
-                Message('My message');
-            end;
-        }
-    }
-}         
+                    trigger OnAction();
+                    begin
+                        Message('My message');
+                    end;
+                }
+             }
+         }   
+        ...
 ```
 
 For more information see, [Actions Overview](devenv-actions-overview.md).

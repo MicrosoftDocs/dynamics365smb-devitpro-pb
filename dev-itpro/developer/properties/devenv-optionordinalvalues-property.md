@@ -7,13 +7,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: c77a75d8-8bff-42fd-8b1a-4eaf745be70f
 caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # OptionOrdinalValues Property
 Specifies the list of ordinal values and the position of the option member values in the external database. You can set this property, if the **ExternalType property** is set to Picklist. 

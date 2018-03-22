@@ -12,7 +12,7 @@ caps.latest.revision: 7
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # QUIT Method (Report, XMLport)
 Aborts the processing of a report or XMLport.  

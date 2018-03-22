@@ -12,7 +12,7 @@ caps.latest.revision: 18
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SAVEASXML Method
 Saves the resulting dataset of a query as an .xml file.  

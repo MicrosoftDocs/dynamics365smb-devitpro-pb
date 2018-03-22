@@ -12,7 +12,7 @@ caps.latest.revision: 11
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # RESET Method (Record)
 Removes all filters, including any special filters set by **MARKEDONLY**, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables on the record.  

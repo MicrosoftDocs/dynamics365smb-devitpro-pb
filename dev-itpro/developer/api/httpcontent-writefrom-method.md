@@ -7,11 +7,14 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 620f0e32-eadc-43e9-8f6e-8fc0b12c3aaf
 caps.latest.revision: 9
+manager: edupont
 author: SusanneWindfeldPedersen
 ---
+
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # WriteFrom Method
 Sets [HttpContent](httpcontent-class.md) content to the provided text or stream.
@@ -25,7 +28,7 @@ HttpContent.WriteFrom(Value)
 &emsp;Type: [HttpContent](httpcontent-class.md)
 
 *Value*  
-&emsp;Type: [Text](../datatypes/devenv-text-data-type.md) or [InStream](../datatypes/devenv-instream-and-outstream-data-types.md)
+&emsp;Type: [Text](../datatypes/devenv-text-data-type.md) or [InStream](/datatypes/devenv-instream-and-outstream-data-types.md)
 
 A new HttpContent is constructed with this value and headers from before.
 

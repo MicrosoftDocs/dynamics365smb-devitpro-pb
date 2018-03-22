@@ -12,7 +12,7 @@ caps.latest.revision: 5
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # FINDNEXTFIELD Method (TestPage)
 Finds the next field in the dataset that is displayed on a test page.  

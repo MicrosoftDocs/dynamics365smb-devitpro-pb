@@ -12,7 +12,7 @@ caps.latest.revision: 3
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # NAME Method (FilterPageBuilder)
 Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control.  

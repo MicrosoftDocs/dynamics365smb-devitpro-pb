@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 38be0545-2499-46f6-bfec-77f218ba0045
 caps.latest.revision: 9
 author: SusanneWindfeldPedersen
@@ -19,7 +19,6 @@ A RecordRef object references a record in a table. Typically, you use a RecordRe
  If one RecordRef variable is assigned to another RecordRef variable, then they both refer to the same table instance.  
   
 ## See Also  
- [CLOSE Method (RecordRef)](../methods/devenv-close-method-recordref.md)  
  [FieldRef Data Type](devenv-fieldref-data-type.md)  
  [AL Data Types](devenv-al-data-types.md)  
  [AL Method Reference](../methods/devenv-al-method-reference.md)  

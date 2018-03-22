@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # APPLICATIONPATH Method
 Returns the path of the directory where the executable file for [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] is installed.  

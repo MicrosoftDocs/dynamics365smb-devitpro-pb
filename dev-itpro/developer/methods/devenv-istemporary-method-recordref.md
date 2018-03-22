@@ -11,7 +11,7 @@ ms.assetid: 7191542f-8764-4429-aabd-2118e181377c
 caps.latest.revision: 9
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISTEMPORARY Method (RecordRef)
 Determines whether a RecordRef refers to a temporary table.  

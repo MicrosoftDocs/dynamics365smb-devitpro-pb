@@ -12,7 +12,7 @@ caps.latest.revision: 21
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SAVEASPDF Method (Report)
 Saves a report as a .pdf file.  

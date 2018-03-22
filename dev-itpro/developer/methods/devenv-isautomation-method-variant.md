@@ -11,7 +11,7 @@ ms.assetid: 1b08e80f-22fd-499b-afea-02f9006c0f04
 caps.latest.revision: 11
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISAUTOMATION Method (Variant)
 Indicates whether an AL variant contains an Automation variable.  

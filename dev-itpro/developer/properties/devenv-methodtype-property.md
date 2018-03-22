@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 2173a1b2-c2aa-470d-a17f-13f71ece068c
 caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # MethodType Property
 Sets a date or totals type method on the query column. The method is applied by the [Method Property](devenv-method-property.md).  

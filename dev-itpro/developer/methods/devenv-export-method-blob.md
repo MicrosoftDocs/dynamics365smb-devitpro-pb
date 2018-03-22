@@ -12,7 +12,7 @@ caps.latest.revision: 11
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # EXPORT Method (BLOB)
 Exports a binary large object \(BLOB\).  

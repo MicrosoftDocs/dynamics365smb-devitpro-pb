@@ -12,7 +12,7 @@ caps.latest.revision: 10
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # LOWERCASE Method (Code, Text)
 Converts all letters in a string to lowercase.  

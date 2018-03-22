@@ -12,7 +12,7 @@ caps.latest.revision: 9
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # PRINTONLYIFDETAIL Method (Report)
 Gets or sets the current settings of the [PrintOnlyIfDetail Property](../properties/devenv-PrintOnlyIfDetail-Property.md).  

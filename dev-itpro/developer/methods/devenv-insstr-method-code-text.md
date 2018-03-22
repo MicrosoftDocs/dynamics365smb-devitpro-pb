@@ -12,7 +12,7 @@ caps.latest.revision: 10
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # INSSTR Method (Code, Text)
 Inserts a substring into a string.  

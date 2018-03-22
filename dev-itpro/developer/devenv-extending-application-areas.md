@@ -8,13 +8,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Extending Application Areas 
 Application area represents a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences.
@@ -22,14 +22,11 @@ Application areas are mapped to controls to show or hide them on page objects to
 
 ## Extending application areas and the experience tier 
 In this example you will: 
-- Add a new application area in the **Application Area Setup** table. 
+- Add a new application area in the **Application Area Setup** Table. 
 - Enable the application Area in the **OnInstallAppPerCompany**.
 - Extend the experience tier in the **OnGetExperienceAppArea**.
 - Modify the experience tier (optional).
 - Validate the application area in the **OnValidateApplicationAreas**.
-
-> [!IMPORTANT]
-> The code used in this example is still under active development and might be subject to change in the future. 
 
 
 The following example extends the **Customer List** page. The field **ExampleField** is added and it is followed by a series of properties. The **ApplicationArea** property sets the application areas that apply to the control and in this code, **ExampleAppArea** is assigned to it. 
@@ -112,7 +109,7 @@ The registration of the application area inside an experience tier is made insid
 > This event is important because it is called every single time an experience tier is reset, which can happen because of many reasons. 
 
 Another thing that is possible inside these methods is to modify the experience tier. You can also modify other application areas, such as creating an extension that extends the Fixed Assets. 
-By subscribing to **OnValidateApplicationAreas**, the application area inside an experience tier is validated. **OnValidateApplicationAreas** is guaranteed to be executed after the events in the OnGet*ExperienceAppArea family. The validation is necessary in the presence of extensions concurrently manipulating the same application areas.
+By subscribing to **OnValidateApplicationAreas** the application area inside an experience tier is validated. **OnValidateApplicationAreas** is guaranteed to be executed after the events in the OnGet*ExperienceAppArea family. The validation is necessary in the presence of extensions concurrently manipulating the same application areas.
 
 In case a needed application area is not enabled, the suggested action is to show an error and disable the extension to avoid unintended behavior. However, if the functionality controlled by this application area is of secondary importance and its loss does not affect the rest of the extension, it is also appropriate to keep the extension enabled.
 
@@ -153,7 +150,7 @@ codeunit 50100 "Enable Example Extension"
         ExperienceTierSetup: Record "Experience Tier Setup";
         ApplicationAreaMgmtFacade: Codeunit "Application Area Mgmt. Facade";
     begin
-        if ExperienceTierSetup.Get(CompanyName()) then; 
+        if ExperienceTierSetup.Get(CompanyName()) then; //CRONUS International Ltd. //TODO remove
         if not ExperienceTierSetup.Essential then
             exit;
 

@@ -11,7 +11,7 @@ ms.assetid: 4859d1f5-694a-400b-8831-29b38eb1ed20
 caps.latest.revision: 23
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GETSUBTEXT Method (BigText)
 Gets part of a BigText variable.  

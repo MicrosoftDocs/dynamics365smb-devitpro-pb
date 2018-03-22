@@ -10,7 +10,7 @@ ms.author: SusanneWindfeldPedersen
 ms.service: dynamics365-financials
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # IMPORTFILE Method (MediaSet)
 Adds a media, such as a JPEG image, to the **MediaSet** data type field of a record for displaying the media in the client. The media is imported to the database and included in a MediaSet for the record.  

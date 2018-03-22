@@ -1,5 +1,5 @@
 ---
-title: "Creating an RDL Layout Report"
+title: "How to: Create an RDL Layout Report"
 description: "Describes the steps involved in creating a report that uses an RDL layout."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -8,19 +8,21 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# Creating an RDL Layout Report
+# How to: Create an RDL Layout Report
 When you create a new report for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two things you have to think about; defining the report dataset of data items and columns, and then designing the report layout. These steps will show you how to create a very simple report based on an RDL layout. For more information about the report object, see [Report Object](devenv-report-object.md).
 
-## Create an RDL layout report
-To facilitate testing your report layout, the following example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
+## Creating an RDL layout report
+
+> [!NOTE]
+> To facilitate testing your report layout, the following example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
 
 1. Create a new extension to the Customer List page that contains code to run the report, as well as a simple report object by adding the following lines of code:
 
@@ -65,4 +67,4 @@ You will now see the generated report in preview mode.
 
 ## See Also
 [Report Object](devenv-report-object.md)  
-[Creating a Word Layout Report](devenv-howto-report-layout.md)  
+[How to: Create a Word Layout Report](devenv-howto-report-layout.md)  

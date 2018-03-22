@@ -11,7 +11,7 @@ ms.assetid: eddb80ee-90a1-4657-a55f-b531bc363270
 caps.latest.revision: 7
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # POS Method (File)
 Gets the current position of the file pointer in an ASCII or binary file.  

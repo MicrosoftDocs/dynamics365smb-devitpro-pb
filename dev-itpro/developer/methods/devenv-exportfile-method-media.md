@@ -11,7 +11,7 @@ ms.service: dynamics365-financials
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # EXPORTFILE Method (Media)
 Exports the media object \(such as an image\) that is currently used on record to a file on your computer or network. On the record, the media object is referenced in a **Media** data type field.  

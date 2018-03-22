@@ -11,7 +11,7 @@ ms.assetid: 291b58b6-54f2-425a-a40a-64b43f5d786a
 caps.latest.revision: 11
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SETTABLE Method (RecordRef)
 Sets the table to which a Record variable refers as the same table as a RecordRef variable.  

@@ -11,7 +11,7 @@ ms.assetid: 0cbf5999-d63e-49b1-91c3-ce22b194c497
 caps.latest.revision: 13
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # FIELD Method (RecordRef)
 Gets a FieldRef for the field that has the number *FieldNo* in the table that is currently selected. If no field has this number, the method returns an error.  

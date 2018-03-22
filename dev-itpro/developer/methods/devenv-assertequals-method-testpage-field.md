@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ASSERTEQUALS Method (TestPage Field)
 Asserts that the value in a field on a test page equals a specified value.  

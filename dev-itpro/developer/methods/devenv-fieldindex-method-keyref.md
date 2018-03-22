@@ -11,7 +11,7 @@ ms.assetid: 8f2e7e16-93ab-4924-9ed6-64c85d6177d5
 caps.latest.revision: 13
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # FIELDINDEX Method (KeyRef)
 Gets the FieldRef of the field that has this index in the key referred to by the *KeyRef* variable. Returns an error if no key is selected.  

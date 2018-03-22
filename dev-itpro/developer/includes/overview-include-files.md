@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: 0745a889-d9ba-4023-a4a8-dba74097ddd0
 caps.latest.revision: 15
 manager: edupont
@@ -28,7 +28,7 @@ This table contains the INCLUDE expressions associated with the content of the i
 |`[!INCLUDE[bp_tableoption_md](includes/bp_tableoption_md.md)]`|Option|
 |`[!INCLUDE[bp_windownoneditable_md](includes/bp_windownoneditable_md.md)]`|You cannot change the contents of this window.|
 |`[!INCLUDE[crm_md](includes/crm_md.md)]`|Microsoft Dynamics CRM|
-|`[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]`|Dynamics 365 Business Central|
+|`[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]`|Dynamics 365 for Financials|
 |`[!INCLUDE[d365fin_md](includes/d365fin_md.md)]`|Financials|
 |`[!INCLUDE[demo_md](includes/demo_md.md)]`|CRONUS|
 |`[!INCLUDE[demolong_md](includes/demolong_md.md)]`|CRONUS Danmark A/S demonstration database|

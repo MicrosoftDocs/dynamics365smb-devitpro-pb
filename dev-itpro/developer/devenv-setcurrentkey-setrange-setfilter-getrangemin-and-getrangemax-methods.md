@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.service: "dynamics365-financials"
 ms.assetid: 236dee86-1860-4d99-87dd-b30a30ae616e
 caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
-
+[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # SETCURRENTKEY, SETRANGE, SETFILTER, GETRANGEMIN, and GETRANGEMAX Methods
 The following methods are used to filter records in a table:  

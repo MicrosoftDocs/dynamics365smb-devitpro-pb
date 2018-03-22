@@ -1,7 +1,7 @@
 ---
 title: "EXPORT Method (XMLport)"
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 07/13/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.assetid: f7a4a790-11a9-4dc3-a258-d0bd5dc3b5f1
 caps.latest.revision: 9
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # EXPORT Method (XMLport)
 Creates an XML data stream \(XML document\) and sends it to a chosen destination.  
@@ -29,9 +29,7 @@ Creates an XML data stream \(XML document\) and sends it to a chosen destination
   
  The ID of the XMLport that you want to run.  
   
- Instead of the ID number, you can specify the name of the XMLport by using the following syntax: `XMLPORT.EXPORT(XMLPORT::CustomerXMLport, XmlStream)`. 
-
- <!--Links For more information, see [Walkthrough: Exporting Data from Tables to XML Documents](Walkthrough-Exporting-Data-from-Tables-to-XML-Documents.md). -->  
+ Instead of the ID number, you can specify the name of the XMLport by using the following syntax: `XMLPORT.EXPORT(XMLPORT::CustomerXMLport, XmlStream)`. <!--Links For more information, see [Walkthrough: Exporting Data from Tables to XML Documents](Walkthrough--Exporting-Data-from-Tables-to-XML-Documents.md).-->  
   
  *OutStream*  
  Type: ISequentialStream  

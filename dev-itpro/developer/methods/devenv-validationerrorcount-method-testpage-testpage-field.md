@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # VALIDATIONERRORCOUNT Method (TestPage, TestPage Field)
 Gets the number of validation errors that occurred on the test page.  

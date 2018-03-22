@@ -12,7 +12,7 @@ caps.latest.revision: 15
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # STRMENU Method (Dialog)
 Creates a menu window that displays a series of options.  

@@ -11,7 +11,7 @@ ms.assetid: 3b7b4cc8-77ac-4b41-9d6b-f88ee11bb4e7
 caps.latest.revision: 13
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # RELATION Method (FieldRef)
 Finds the table relationship of a given field.  

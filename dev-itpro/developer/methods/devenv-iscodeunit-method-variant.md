@@ -12,7 +12,7 @@ caps.latest.revision: 7
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISCODEUNIT Method (Variant)
 Indicates whether an AL variant contains a Codeunit variable.  

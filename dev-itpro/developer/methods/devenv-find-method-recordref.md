@@ -11,7 +11,7 @@ ms.assetid: 73ef42a1-f928-4093-b6f2-9144e822be2b
 caps.latest.revision: 17
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # FIND Method (RecordRef)
 Finds a record in a table based on the values stored in the key fields.  

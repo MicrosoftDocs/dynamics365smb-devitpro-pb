@@ -11,7 +11,7 @@ ms.assetid: d226598c-f73c-41f1-baa9-17a642483c35
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # CALCFIELD Method (FieldRef)
 Updates FlowFields in a record.  

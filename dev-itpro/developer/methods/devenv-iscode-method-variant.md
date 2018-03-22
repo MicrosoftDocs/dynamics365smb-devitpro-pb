@@ -11,7 +11,7 @@ ms.assetid: f6980d9b-7464-4c7e-8ae0-4681d3859aeb
 caps.latest.revision: 10
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISCODE Method (Variant)
 Indicates whether an AL variant contains a Code variable.  

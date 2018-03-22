@@ -12,7 +12,7 @@ caps.latest.revision: 15
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # RANDOMIZE Method (Integer)
 Generates a set of random numbers from which the [RANDOM Method \(Integer\)](devenv-RANDOM-Method-Integer.md) will select a random number.  

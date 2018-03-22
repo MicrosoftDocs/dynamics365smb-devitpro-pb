@@ -12,7 +12,7 @@ caps.latest.revision: 11
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # MARK Method (Record)
 Marks a record. You can also use this method to determine whether a record is marked.  

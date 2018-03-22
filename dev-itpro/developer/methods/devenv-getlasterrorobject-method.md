@@ -12,7 +12,7 @@ caps.latest.revision: 6
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GETLASTERROROBJECT Method
 Gets the last [System.Exception](http://go.microsoft.com/fwlink/?LinkID=396510) object that occurred.  

@@ -11,7 +11,7 @@ ms.assetid: 5825ae91-b25d-40e8-8ff3-9b4aca3317ac
 caps.latest.revision: 8
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # FILTERGROUP Method (RecordRef)
 Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.  

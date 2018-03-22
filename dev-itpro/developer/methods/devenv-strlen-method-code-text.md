@@ -11,7 +11,7 @@ ms.assetid: 00ec9a7c-9584-493b-b936-4669923e5d33
 caps.latest.revision: 11
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # STRLEN Method (Code, Text)
 Gets the length of a string you define.  

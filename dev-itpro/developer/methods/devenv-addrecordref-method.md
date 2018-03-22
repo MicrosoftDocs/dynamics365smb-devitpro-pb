@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ADDRECORDREF Method
 Adds filter control for a table to a filter page. The table is specified by a recordref variable that is passed to the method .  

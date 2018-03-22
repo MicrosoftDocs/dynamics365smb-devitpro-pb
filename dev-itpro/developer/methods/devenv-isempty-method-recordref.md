@@ -11,7 +11,7 @@ ms.assetid: b855236a-34f2-4c4f-9f0d-f8106f5bfd55
 caps.latest.revision: 9
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # ISEMPTY Method (RecordRef)
 Determines whether any records exist in a filtered set of records in a table.  

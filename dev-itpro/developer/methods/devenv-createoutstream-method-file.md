@@ -11,7 +11,7 @@ ms.assetid: ec9c0df4-30e3-4481-8710-6756178b4b19
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # CREATEOUTSTREAM Method (File)
 Creates an OutStream object for a file. This enables you to export or write data to the file.  

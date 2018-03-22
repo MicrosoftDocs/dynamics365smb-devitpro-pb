@@ -12,7 +12,7 @@ caps.latest.revision: 14
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # TOPNUMBEROFROWS Method
 Specifies the maximum number of rows to include in the resulting dataset of a query.  

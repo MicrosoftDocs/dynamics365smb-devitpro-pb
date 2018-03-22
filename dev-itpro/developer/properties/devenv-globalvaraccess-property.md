@@ -6,13 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
+ms.prod: "dynamics-nav-2018"
 ms.assetid: f8792ef2-9a9e-4be6-a6d1-d5fa8b5a5705
 caps.latest.revision: 3
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # GlobalVarAccess Property
 Specifies whether global variables in the object that contains the event publisher method are accessible to event subscriber methods that subscribe to the published event.  

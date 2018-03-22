@@ -10,7 +10,7 @@ ms.service: dynamics365-financials
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # COMPANY Method
 Gets or sets the company property in a SessionSettings object.  

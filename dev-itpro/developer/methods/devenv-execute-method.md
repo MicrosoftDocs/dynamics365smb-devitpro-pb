@@ -13,7 +13,7 @@ ms.assetid: f0268c2e-bbd6-493e-9ffd-08eac5df435d
 author: SusanneWindfeldPedersen
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # EXECUTE Method
 Runs a report in preview or processing-only mode without showing the request page in the client. The method gets the request page parameter values as an input parameter string from a [RUNREQUESTPAGE Method](devenv-RUNREQUESTPAGE-Method.md) call.  

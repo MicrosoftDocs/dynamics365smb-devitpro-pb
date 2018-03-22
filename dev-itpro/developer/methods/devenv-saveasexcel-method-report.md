@@ -11,7 +11,7 @@ ms.assetid: 536c0682-bf9e-4214-98b2-3db528aeeab1
 caps.latest.revision: 20
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SAVEASEXCEL Method (Report)
 Saves a report on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] as a Microsoft Excel \(.xls\) workbook.  

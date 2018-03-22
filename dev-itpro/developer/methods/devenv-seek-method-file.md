@@ -12,7 +12,7 @@ caps.latest.revision: 7
 manager: edupont
 ---
 
- 
+[!INCLUDE[newdev_dev_preview](../includes/newdev_dev_preview.md)]
 
 # SEEK Method (File)
 Sets a file pointer to a new position in an ASCII or binary file.  
