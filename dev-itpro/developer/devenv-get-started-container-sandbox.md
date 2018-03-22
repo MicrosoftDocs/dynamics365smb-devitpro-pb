@@ -16,6 +16,8 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Get started with the Container Sandbox Development Environment
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to both the AL development environment and the C/SIDE development environment. 
 
+You set up a container sandbox running the **SANDBOX ENVIRONMENT (CONTAINER)** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will have to decide whetehr you want an Azure-hosted or locally hosted container sandbox.  
+
 <!-- 
 ## Steps to set up a container sandbox environment
 1. Sign up for a [Dynamics 365 Business Central tenant](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%3FredirectedFromSignup%3D1).
@@ -30,18 +32,22 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 Note: You need to replace the path of the license file with the location of your partner license.
 The script will create a container, which is running Windows Authentication with your docker host. The container name is old and you will have a set of shortcuts on the desktop for launching Web Client, CSIDE, Windows Client etc.
 When starting the container of a given version the first time, new-navcontainer will export all objects of the base app in order to be able to create deltas. This will take some time, but is needed later in the process.
+-->
 
-## <a name="AzureVsLocal"></a>Decide on Azure-hosted or local-hosted environment
-When you set up the Container Sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites, and use Docker to provide the infrastructure for the container-based apps. The difference is:
+## <a name="AzureVsLocal"></a>Azure-hosted or local-hosted container sandbox
+When you set up the container sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites and use Docker to provide the infrastructure for the container-based applicationn. The difference is:
 
--  With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you purchase ...
--  Local hosting requires that your computer is running Windows 10 or Windows Server 2016 and you install and configure Docker before setting up the container sandbox.
+-  With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that sign-up for an Azure subscription, and additional costs may be incurred for each container sandbox. 
+-  Local hosting requires that your computer is running Windows 10 or Windows Server 2016, and you install and configure Docker before setting up the container sandbox.
 
+<!-- 
     To install and configure Docker, choose the version of Docker that is appropriate for the host operating system.
 
     For Windows 10, download from [Docker Community Edition](https://www.docker.com/community-edition). For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10).
 
     For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition). For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server).
+
+-->
 
 ## Setting up a local-hosted container sandbox
 
@@ -82,14 +88,14 @@ When you set up the Container Sandbox, you can choose to host the sandbox on Mic
     Creating Desktop Shortcuts for MyBizCentralApp
     ```
 
-9. Write down or copy the values of these parameters from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need these values later to [set up Visual Studio Code for for extension development](#VSCode).
+9. Write down or copy these parameters and values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need these values later to [set up Visual Studio Code for for extension development](#VSCode).
 
 You now have container sandbox set up on your computer. The following shortcuts have been added to your desktop:
 
 -   **\<Container name\> Windows Client** - opens the Windows client for the your application in the container.
 -    **\<Container name\>** Web Client - opens the Web client [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for the your application in the container.
 -    **\<Container name\>** CSIDE - opens the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)] for developing your application using CSIDE.
--    **\<Container name\>** PowerShell Prompt - opens a Windows PowerShell prompt in the container. This gives you access to the [[!INCLUDE[navnowg_md](includes/navnow_md.md)] (https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview), which you can run against the container sandbox. 
+-    **\<Container name\>** PowerShell Prompt - opens a Windows PowerShell prompt in the container. This gives you access to the [[!INCLUDE[navnowg_md](includes/navnow_md.md)] (https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview), which you can run against the container sandbox environment. 
 -    **\<Container name\>** Command Prompt - opens a Windows command prompt in the container.
 
 ### <a name="VSCode"></a>Set up Visual Studio Code
@@ -105,11 +111,10 @@ After the container sandbox is set up, you must set up Visual Studio Code for ex
     ```
     "server": "http://MyBizCentralApp",
     "serverInstance": "NAV",
-
     ```
 6. Save the launch.json file.
 
-You have now set up Visual Studio Code with the AL Language extension
+You have now set up Visual Studio Code with the AL Language extension.
 
 
 <!-- 
