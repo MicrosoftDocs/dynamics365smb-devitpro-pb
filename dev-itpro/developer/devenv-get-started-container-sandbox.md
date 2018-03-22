@@ -16,6 +16,9 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Get started with the Container Sandbox Development Environment
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to both the AL development environment and the C/SIDE development environment. 
 
+You set up a container sandbox running the **SANDBOX ENVIRONMENT (CONTAINER)** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will have to decide whether you want an Azure-hosted or locally hosted container sandbox. 
+
+<!-- 
 ## Steps to set up a container sandbox environment
 1. Sign up for a [Dynamics 365 Business Central tenant](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%3FredirectedFromSignup%3D1).
 2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and in the **Search** field, enter **SANDBOX ENVIRONMENT (CONTAINER)** and then select the relevant link.
@@ -29,21 +32,92 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 Note: You need to replace the path of the license file with the location of your partner license.
 The script will create a container, which is running Windows Authentication with your docker host. The container name is old and you will have a set of shortcuts on the desktop for launching Web Client, CSIDE, Windows Client etc.
 When starting the container of a given version the first time, new-navcontainer will export all objects of the base app in order to be able to create deltas. This will take some time, but is needed later in the process.
+-->
 
-## <a name="AzureVsLocal"></a>Decide on Azure-hosted or local-hosted environment
-When you set up the Container Sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites, and use Docker to provide the infrastructure for the container-based apps. The difference is:
+## <a name="AzureVsLocal"></a>Azure-hosted or local-hosted container sandbox
+When you set up the container sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites and use Docker to provide the infrastructure for the container-based applicationn. The difference is:
 
--  With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you purchase ...
--  Local hosting requires that your computer is running Windows 10 or Windows Server 2016 and you install and configure Docker before setting up the container sandbox.
+-  With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you sign-up for an Azure subscription, and additional costs may be incurred for each container sandbox. 
+-  Local hosting requires that your computer is running Windows 10 or Windows Server 2016, and you install and configure Docker before setting up the container sandbox.
 
+<!-- 
     To install and configure Docker, choose the version of Docker that is appropriate for the host operating system.
 
     For Windows 10, download from [Docker Community Edition](https://www.docker.com/community-edition). For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10).
 
     For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition). For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
-## Container sandbox
+-->
 
+## Setting up a local-hosted container sandbox
+
+1. If not already done, install Docker.
+
+    To install and configure Docker, choose the version of Docker that is appropriate for the host operating system:
+
+    -   For Windows 10, download from [Docker Community Edition for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows).
+
+    -   For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition).
+
+2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Search for Page or Report](media/search-icon.png "Search for Page or Report icon") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
+3. Choose **Host Locally**.
+4. Save the **CreateBCSandbox.ps1** file to your computer.
+5. Run Windows PowerShell ISE as an administrator.
+6. Open the **CreateBCSandbox.ps1** file.
+7. Set the `$containername = ''` variable to the name that you want to give the container, for example `$containername = 'MyBizCentralApp'`.
+
+    This name is only used internally in your envirorment for identification purposes.
+8. Press F5 to run the script.
+
+    The console pane displays the progress of the script. When the script has completed successfully, information like the following will displays:
+    ```
+    ...
+    Container IP Address: 172.22.147.63
+    Container Hostname  : MyBizCentralApp
+    Container Dns Name  : MyBizCentralApp
+    Web Client          : http://MyBizCentralApp/NAV/
+    Dev. Server         : http://MyBizCentralApp
+    Dev. ServerInstance : NAV
+
+    Files:
+    http://MyBizCentralApp:8080/al-0.15.18566.vsix
+
+    Initialization took 116 seconds
+    Ready for connections!
+    Reading CustomSettings.config from MyBizCentralApp
+    Creating Desktop Shortcuts for MyBizCentralApp
+    ```
+
+9. Write down or copy these parameters and values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need these values later to [set up Visual Studio Code for for extension development](#VSCode).
+
+You now have container sandbox set up on your computer. The following shortcuts have been added to your desktop:
+
+-   **\<Container name\> Windows Client** - opens the Windows client for your application in the container.
+-    **\<Container name\>** Web Client - opens the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for the your application in the container.
+-    **\<Container name\>** CSIDE - opens the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)] for developing your application using CSIDE.
+-    **\<Container name\>** PowerShell Prompt - opens a Windows PowerShell prompt in the container. This gives you access to the [[!INCLUDE[navnowg_md](includes/navnow_md.md)] (https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview), which you can run against the container sandbox environment. 
+-    **\<Container name\>** Command Prompt - opens a Windows command prompt in the container.
+
+### <a name="VSCode"></a>Set up Visual Studio Code
+After the container sandbox is set up, you must set up Visual Studio Code for extension development. To do this, you need the values for `Dev. Server`,  `Dev. ServerInstance`, and `Files` parameters that you retrieved from the Windows PowerShell ISE console when you ran the **CreateBCSandbox.ps1** script to set up the container sandbox. 
+
+1. Open a browser to the path that is specified by the `Files` parameter, and save the .vsix file to your computer.
+2. In Visual Studio Code, go to **Extensions**, and then choose **Install from VSIX**.
+    You now have the AL Language extension enabled.
+3. In Visual Studio Code, press Ctrl+Shift+P and then choose **AL Go!**.
+4. Choose where to create the project, and then choose the **Your own server** option.
+5. Open the generated `launch.json` file, update the `"server"` setting with the value of the `Dev. Server` parameter and the `"serverInstance"` setting with the value of the `Dev. ServerInstance` to reflect the container you just created. For example:
+
+    ```
+    "server": "http://MyBizCentralApp",
+    "serverInstance": "NAV",
+    ```
+6. Save the launch.json file.
+
+You have now set up Visual Studio Code with the AL Language extension.
+
+
+<!-- 
 Creating container MyBCapp2 from image navinsider.azurecr.io/dynamics-nav:11.0.21063.0-finus
 Waiting for container MyBCapp2 to be ready
 Initializing...
@@ -75,33 +149,8 @@ Initialization took 116 seconds
 Ready for connections!
 Reading CustomSettings.config from MyBCapp2
 Creating Desktop Shortcuts for MyBCapp2
+-->
 
-## Run the container-based image
-Run the following command in a Command Prompt as Administrator to run a Docker image of Dynamics 365 Business Central:
-
-```docker run -e accept_eula=Y -m 4G microsoft/dynamics-nav```
-
-> [!NOTE]  
-> When you run the Docker run command, it will start downloading the image if it does not already exist. A container consists of multiple layers, only the needed layers are downloaded.
-
-At this point, you can open your internet browser and type in the Web client URL. You will be prompted with a login dialog, where you can login with the NAV Admin Username/Password displayed.
-
-## The NavContainerHelper module
-To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `NavContainerHelper` to work with containers. On a Windows 10 or Windows Server 2016, start Powershell as an Administrator and type:
-
-```install-module navcontainerhelper -force```
-
-To see which functions are available in the NavContainerHelper module use the following command:
-
-```Write-NavContainerHelperWelcomeText```
-
-To get quickly get started, run the following command from the NavContainerHelper module:
-
-```new-navcontainer -accept_eula -containerName test -imageName microsoft/dynamics-nav:devpreview```
-
-The `NavContainerHelper` will create a folder on the C:\ drive called DEMO and will place all files underneath that folder. The DEMO folder will be shared to the container for transfer of files etc. If you do not specify a username and a password, it will ask for your password and use the current Windows username. If you specify your windows password, the container setup will use Windows Authentication integrated with the host. The `NavContainerHelper` will also create shortcuts on the desktop for the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Web client, a container prompt, and a container PowerShell prompt.
-
-The `navcontainerhelper` module also allows you to add the `-includeCSide` switch in order to add the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Windows client and C/SIDE to the desktop and export all objects to a folder underneath C:\DEMO\Extensions for the object handling functions from the module to work.
 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
