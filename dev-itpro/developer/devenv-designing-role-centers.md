@@ -58,12 +58,12 @@ The following table describes some of the most common parts for Role Centers, as
 |6|Data cues |Provide a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. These are created by using a `cuegroup` control on a `CardPart` page type. |[Creating Cues](devenv-cues-action-tiles.md#CreateCue)|
 |7|Action cues |Tiles that link to tasks or operations, like opening another page, starting a video, targeting another resource or URL, or running code. These are created by using a `cuegroup` control on a `CardPart` page type|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
 |8|Chart|A graphical and interactive representation of your business data that can be sourced from a custom business chart control add-in or an embedded Power BI report.||
-|9|CardPart or ListPart page|Displays data fields in form or tabular layout.|[Page Object](devenv-page-object.md)|
+|9|CardPart or ListPart page|Displays data fields in a form or tabular layout.|[Page Object](devenv-page-object.md)|
 |10|Control add-in|Displays custom content by using HTML-based control add-ins|[Control Add-in Object](devenv-control-addin-object.md)|
 
 
 ### Behavioral points of interest
-- In general, the parts will appear in the client according to the order in which they are defined in the Role Center page code - automatically rearranging horizontally and vertically to fill the available workspace.
+- In general, the parts will appear in the client according to the order in which they are defined in the Role Center page code and will automatically rearrange horizontally and vertically to fill the available workspace.
 - However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues are automatically grouped under a common **Activities** section, no matter where they are placed in the code. All other page parts are grouped under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will arrange according to the order in which they are defined in the page code.
 
 ## Development tips for overall page design
