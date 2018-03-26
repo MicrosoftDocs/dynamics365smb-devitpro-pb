@@ -11,6 +11,10 @@ author: jswymer
 ---
 
 # SENDTRACETAG Method
+
+>[!NOTE]
+> This  method is for internal use only, and is not available in AL.
+
 Sends a telemetry trace event to the event log.  
   
 ## Syntax  
