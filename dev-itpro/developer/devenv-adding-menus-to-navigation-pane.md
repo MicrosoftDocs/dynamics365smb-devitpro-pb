@@ -18,12 +18,12 @@ caps.latest.revision: 18
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Adding Menus to the Navigation Pane
-The Navigation Pane appears on the left side of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] window, and contains multiple sections that enable users to quickly navigate and perform actions in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A single section in the Navigation Pane can be defined as a menu group that contains multiple sub-menu items. 
+The navigation area appears at the top of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] window, and contains multiple sections that enable users to quickly navigate and perform actions in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A single section in the navigation Pane can be defined as a menu group that contains multiple sub-menu items. 
 
-The Navigation Pane displays the Home menu items by default; the other menu items can be accessed by clicking on the small drop-down arrow placed next to the *selected* menu category in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For users, the menu groups that display in the Navigation Pane could change depending on the Role Center page that they access. 
+The navigation area displays the Home menu items by default; the other menu items can be accessed by clicking on the small drop-down arrow placed next to the *selected* menu category in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For users, the menu groups that display in the navigation area could change depending on the Role Center page that they access. 
 
 ## Example
-The example below explains how to add the menu group called `My New Action Group` to the Navigation Pane. The sub-menu items for the `My Customers` contains the actions which are named as `Customer Bank Account List` and `Customer Ledger Entries`, each opening the equivalent page object. In this example, the `My Customers` will appear on the Navigation Pane for the **Sales Order Processor** Role Center. 
+The example below explains how to add the menu group called `My New Action Group` to the Navigation Pane. The sub-menu items for the `My Customers` contains the actions which are named as `Customer Bank Account List` and `Customer Ledger Entries`, each opening the equivalent page object. In this example, the `My Customers` will appear on the navigation area for the **Sales Order Processor** Role Center. 
 
 ```al
 pageextension 50120 ExtendNavigationPane extends "Order Processor Role Center"

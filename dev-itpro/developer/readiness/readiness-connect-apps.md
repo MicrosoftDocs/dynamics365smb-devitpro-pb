@@ -3,7 +3,7 @@ title: "Connect Apps"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/13/2018
+ms.date: 03/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ Below you can find some examples of online services, which could benefit from be
 
 ## How do I develop a Connect app?
 [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers many APIs that you can call from within your preferred coding language.
-To explore and develop against these APIs, you must sign up for a trial tenant. See the documentation for how you sign up and get started with a simple call to retrieve the list of customers in your trial tenant. COMING SOON.
+To explore and develop against these APIs, you must sign up for a trial tenant. See the [documentation](../devenv-develop-connect-apps.md) for how you sign up and get started with a simple call to retrieve the list of customers in your trial tenant.
 
 
 <!-- INSERT VIDEO: 
@@ -57,9 +57,9 @@ To ease your journey, from the initial idea submission to the final publication,
  
 ## Where do I learn more about Connect apps? 
 To learn more about how to develop Connect apps, select the following links:  
-1. COMING SOON - Documentation on REST APIs. <!--(https://docs.microsoft.com/en-us/rest/api/) -->
-2. COMING SOON - Getting started with Connect apps. <!--(https://docs.microsoft.com/en-us/dynamics-nav/developer/devenv-develop-connect-apps-for-fin) -->
-3. COMING SOON - Overview of connection endpoints and authentication options. <!--(https://docs.microsoft.com/en-us/dynamics-nav/endpoints-apis-for-dynamics) -->
+1. [Documentation on REST APIs](/dynamics-nav/fin-graph/)  
+2. [Getting started with Connect apps](../devenv-develop-connect-apps.md)  
+3. [Overview of connection endpoints and authentication options](/dynamics-nav/endpoints-apis-for-dynamics)
 4. If your Connect app requires a specific setup in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], then you have the opportunity to add objects. In this case, you will have to follow the guide on Add-on apps in combination with using the Connect API. Find the guide on how to develop Add-on apps [here](readiness-add-on-apps.md).  
 
 
