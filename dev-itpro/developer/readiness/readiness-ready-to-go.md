@@ -51,7 +51,7 @@ There is always a development center available in your region. Please find here 
 
 The **"Ready to Go" Validation Workshop** is a packaged offering, brought to market by all development centers and Master VARs and is co-developed with Microsoft.
 
-This workshop helps you in validating your complete offer, from a business, marketing and technical perspective. Learn more about the offerings of our Development Centers by following the links in the table below:
+This workshop helps you in validating your complete offer, from a business, marketing and technical perspective. Learn more about the offerings of our Development Centers by following the links in the table above.
 
 ## The "Ready to Go" platform
 To support you in App development, testing and learning scenario’s, the "Ready to Go" platform is a place where you can find current,upcoming and daily builds of [d365_bus_central_md](../includes/d365_bus_central_md.md). It also holds a way to provide feedback to the Microsoft engineers working on [d365_bus_central_md](../includes/d365_bus_central_md.md). These builds are made available to you on the Microsoft Collaborate platform. To get access to the **"Ready to Go"** platform, you need to go through these steps:
