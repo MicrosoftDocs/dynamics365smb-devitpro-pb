@@ -92,7 +92,7 @@ The following table describes some of the most common parts for Role Centers, as
 -   Role Centers can be highly specialized, in the fact that all navigation, actions, and content is optional. For example, you could have a single part that fills the entire workspace.
  
 ## Design for all display targets
--   Role Center pages are also the primary entry point on mobile devices. The mobile device display the same content as the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], but is presented in a different way to suit how users hold and interact with their mobile device.
+-   Role Center pages are also the primary entry point on mobile devices. Mobile devices will display the same content as the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], but is presented in a different way to suit how users hold and interact with their mobile device.
 -   You can preview how your Role Center will look on mobile devices directly in Designer.
 -   Some limitations on mobile devices include the following:
     -   On tablets, there is a limit on the number of cues that can be displayed.
