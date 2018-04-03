@@ -14,8 +14,6 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
- 
-
 # Best Practices for AL  
 This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additional to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object and method naming, as well as better readability of written code.
 
@@ -37,7 +35,7 @@ Use the listed abbreviations for each type of object in the file naming:
 
 |Object    |Abbreviation|
 |----------|---------------------------|
-|Page      |Pag|
+|Page      |Page|
 |Page Extension|PageExt|
 |Codeunit  |Cod|
 |Table     |Tab|
@@ -52,8 +50,8 @@ The following table illustrates how the file naming should look.
 |Object name|File name|
 |------|---------------------------|
 |codeunit 1000 "Job Calculate WIP"|Cod1000.JobCalculateWIP.al|
-|page 21 "Customer Card"|Pag21.CustomerCard.al|
-|page 1234 "MyPag" extends "Customer Card"|Pag21-Ext1234.MyPag.al|
+|page 21 "Customer Card"|Page21.CustomerCard.al|
+|page 1234 "MyPage" extends "Customer Card"|Page21-Ext1234.MyPage.al|
 
 
 ## Formatting
