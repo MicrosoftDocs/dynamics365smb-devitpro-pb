@@ -35,8 +35,8 @@ Use the listed abbreviations for each type of object in the file naming:
 
 |Object    |Abbreviation|
 |----------|---------------------------|
-|Page      |Page|
-|Page Extension|PageExt|
+|Page      |Pag|
+|Page Extension|PagExt|
 |Codeunit  |Cod|
 |Table     |Tab|
 |Table Extension|TabExt|
@@ -50,8 +50,8 @@ The following table illustrates how the file naming should look.
 |Object name|File name|
 |------|---------------------------|
 |codeunit 1000 "Job Calculate WIP"|Cod1000.JobCalculateWIP.al|
-|page 21 "Customer Card"|Page21.CustomerCard.al|
-|page 1234 "MyPage" extends "Customer Card"|Page21-Ext1234.MyPage.al|
+|page 21 "Customer Card"|Pag21.CustomerCard.al|
+|page 1234 "MyPag" extends "Customer Card"|Pag21-Ext1234.MyPag.al|
 
 
 ## Formatting
