@@ -36,7 +36,10 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 3. Choose **Host in Azure**. If prompted, enter the user name amd password of your Azure subscription. 
 
     The Azure portal opens to display a custom deployment form. 
-4. Fill out the required fields on the fom, and then select **Purchase**.
+4. Fill out the required fields on the form, and then select **Purchase**.
+
+> [!NOTE]  
+> You must set the **Accept Eula** setting to **Yes** in order to continue.
 
 
 ## Set up a local-hosted container sandbox
@@ -57,7 +60,8 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 7. Set the `$containername = ''` variable to the name that you want to give the container, for example `$containername = 'MyBizCentralApp'`.
 
     This name is only used internally in your envirorment for identification purposes.
-8. Press F5 to run the script.
+8. Set the `$accept_eula = ''` variable to `'$true'`.
+9. Press F5 to run the script.
 
     The console pane displays the progress of the script. When the script has completed successfully, information like the following will display:
     ```
@@ -78,7 +82,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
     Creating Desktop Shortcuts for MyBizCentralApp
     ```
 
-9. Write down or copy the following parameter/values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need this information later to [set up Visual Studio Code for for extension development](#VSCode).
+10. Write down or copy the following parameter/values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You will need this information later to [set up Visual Studio Code for for extension development](#VSCode).
 
 You now have a container sandbox set up on your computer. The following shortcuts have been added to your desktop:
 
