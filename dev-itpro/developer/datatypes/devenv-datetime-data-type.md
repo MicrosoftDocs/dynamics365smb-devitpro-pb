@@ -1,7 +1,7 @@
 ---
 title: "DateTime Data Type"
 ms.custom: na
-ms.date: 06/07/2017
+ms.date: 04/04/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,6 +29,11 @@ Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 3
   
  If you use a date that is outside the valid date range, a run-time error occurs.  
 
+## Syntax
+The syntax for defining DateTime format follows the [ISO standard](https://en.wikipedia.org/wiki/ISO_8601). 
+- The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 26th of March, 2018.
+- The syntax for defining Time format is `hhmmssT`, where `T` is the time designator. For example, `093125H`, read as 9:13:25.
+
 ## Methods
 The methods supported for the DateTime data type are:
 
@@ -42,13 +47,6 @@ The methods supported for the DateTime data type are:
  In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000. The latest permitted DateTime is December 31, 9999, 23:59:59.999.  
   
  If you store a date in the database that is outside the valid range for a SQL DATETIME, a run-time error run-time occurs.  
-  
-<!--
-## Changes from Previous Versions of Microsoft Dynamics NAV  
- In versions earlier than [!INCLUDE[nav_2009_long](includes/nav_2009_long_md.md)], the DateTime data type denotes DateTimes ranging from January 1, 0000, 00:00:00.000 to December 31, 9999, 23:59:59.999, and includes the undefined DateTime, 0DT. [!INCLUDE[navnowlong](includes/navnowlong_md.md)] supports DateTimes with date January 1, 0000 as a special case for compatibility with previous versions.  
-  
- This topic has been updated to specify the SQL Server requirement for the earliest DateTime rather than the internal [!INCLUDE[navnow](includes/navnow_md.md)] DateTime. In SQL Server, the earliest DateTime is January 1, 1753, 00:00:00.000. [!INCLUDE[navnow](includes/navnow_md.md)] can handle dates as early as January 3, 0001, but such dates cannot be stored in the database.  
-  -->
 
 ## See Also  
 [AL Data Types](devenv-al-data-types.md)  
