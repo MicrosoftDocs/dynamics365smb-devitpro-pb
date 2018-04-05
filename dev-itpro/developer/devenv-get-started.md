@@ -3,7 +3,7 @@ title: "Getting Started with AL"
 description: "Description of how to get started with the new development environment"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/19/2018
+ms.date: 03/26/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,15 +40,8 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 
 As this feature is still in preview you might run into unrecoverable issues from time to time. In these cases, use [Reset Sandbox](https://portal.businesscentral.dynamics.com/reset?env=sandbox&redirectedFromSignup=false) to reset the sandbox and start from a clean environment.
 
-For information about which sandboxes you can choose, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
-
-<!--
-Interested in an on-premise version? It's just as easy. Just sign up by following these steps.
-
-1) First, you will need an Azure subscription, sign up for a free subscription.  
-2) Go to the [Developer Preview](http://aka.ms/navdeveloperpreview).  
-3) When you have a virtual machine set up, you will see a welcome text and here you can choose to try out the developer preview following the instructions on the screen.  
--->
+> [!TIP]  
+> For information about which sandboxes you can choose, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
 
 > [!NOTE]  
 > Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
