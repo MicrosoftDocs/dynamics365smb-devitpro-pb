@@ -30,7 +30,7 @@ The following page customization example `MyCustomization` is intialized to perf
 
 
 ```
-pagecustomization 70000123 MyCustomization customizes "Customer List"
+pagecustomization MyCustomization customizes "Customer List"
 {
     actions
     {
