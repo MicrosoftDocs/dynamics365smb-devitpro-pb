@@ -1,5 +1,5 @@
 ---
-title: "Working [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL"
+title: "Web Client URL"
 ms.custom: na
 ms.date: 03/03/2018
 ms.reviewer: na
