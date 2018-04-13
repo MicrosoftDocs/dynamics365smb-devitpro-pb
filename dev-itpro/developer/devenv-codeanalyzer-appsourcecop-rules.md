@@ -40,6 +40,6 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 ## See Also 
 [CodeCop Analyzer Rules](devenv-codeanalyzer-codecop-rules.md)   
 [PerTenantExtensionCop Analyzer Rules](devenv-codeanalyzer-pertenantextensioncop-rules.md)  
-[Using the Code Analysis Tool](devenv-using-code-analysis-tool)  
-[Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools)  
-[Using the Code Analysis Tools with the Ruleset](devenv-using-code-analysis-tool-with-rule-set)
+[Using the Code Analysis Tool](devenv-using-code-analysis-tool.md)  
+[Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)  
+[Using the Code Analysis Tools with the Ruleset](devenv-using-code-analysis-tool-with-rule-set.md)
