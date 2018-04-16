@@ -35,11 +35,6 @@ Go through the following steps to set up a sandbox environment. With the preview
 
 You now have a HelloWorld sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **F5** to build and deploy the solution.
 
-> [!NOTE]  
-> If symbols are missing, you will be prompted to download them.
-
-As this feature is still in preview you might run into unrecoverable issues from time to time. In these cases, use [Reset Sandbox](https://portal.businesscentral.dynamics.com/reset?env=sandbox&redirectedFromSignup=false) to reset the sandbox and start from a clean environment.
-
 > [!TIP]  
 > For information about which sandboxes you can choose, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
 

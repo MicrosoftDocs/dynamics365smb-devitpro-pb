@@ -61,91 +61,48 @@ The following code adds a new table 50100 **Reward Level** for storing reward le
 
 ```
 table 50100 "Reward Level" 
-
 { 
-
     fields 
-
     { 
-
         field(1; Level; Text[20]) { } 
 
         field(2; "Minimum Reward Points"; Integer) 
-
         { 
-
             MinValue = 0; 
-
             NotBlank = true; 
 
- 
-
             trigger OnValidate(); 
-
             var 
-
                 tempPoints: Integer; 
-
                 RewardLevel: Record "Reward Level"; 
-
             begin 
-
                 tempPoints := "Minimum Reward Points"; 
-
- 
-
                 RewardLevel.SetRange("Minimum Reward Points", tempPoints); 
-
                 if RewardLevel.FindFirst then 
-
                     Error('Minimum Reward Points must be unique'); 
-
             end; 
-
         } 
-
     } 
-
- 
 
     keys 
-
     { 
-
         key(PK; Level) 
-
         { 
-
             Clustered = true; 
-
         } 
-
         key("Minimum Reward Points"; "Minimum Reward Points") { } 
-
     } 
 
- 
-
     trigger OnInsert(); 
-
     begin 
-
          
-
         Validate("Minimum Reward Points"); 
-
     end; 
-
- 
 
     trigger OnModify(); 
-
     begin 
-
         Validate("Minimum Reward Points"); 
-
     end; 
-
 } 
 ```
 
@@ -154,55 +111,32 @@ The following code adds a new table 50101 **Activation Code Information** for st
 
 ```
 table 50101 "Activation Code Information" 
-
 { 
-
     fields 
-
     { 
-
         field(1; ActivationCode; Text[14]) 
-
         { 
-
             Description = 'Activation code used to activate Customer Rewards'; 
-
         } 
 
         field(2; "Date Activated"; Date) 
-
         { 
-
             Description = 'Date Customer Rewards was activated'; 
-
         } 
 
         field(3; "Expiration Date"; Date) 
-
         { 
-
             Description = 'Date Customer Rewards activation expires'; 
-
         } 
-
     } 
-
- 
 
     keys 
-
     { 
-
         key(PK; ActivationCode) 
-
         { 
-
             Clustered = true; 
-
         } 
-
     } 
-
 } 
 
 ``` 
@@ -211,45 +145,26 @@ table 50101 "Activation Code Information"
 The following code adds a new table 50102 **Customer Rewards Mgt. Setup** for storing information about the codeunit that should be used to handle events in the extension. This enables us to mock events in our sample test. The table consists of two fields: **Primary Key** and **Customer Rewards Ext. Mgt. Codeunit ID**. 
 ```
 table 50102 "Customer Rewards Mgt. Setup" 
-
 { 
-
     fields 
-
     { 
-
         field(1; "Primary Key"; Code[10]) 
-
         { 
-
         } 
 
         field(2; "Customer Rewards Ext. Mgt. Codeunit ID"; Integer) 
-
         { 
-
             TableRelation = "CodeUnit Metadata".ID; 
-
         } 
-
     } 
-
- 
 
     keys 
-
     { 
-
         key(PK; "Primary Key") 
-
         { 
-
             Clustered = true; 
-
         } 
-
     } 
-
 } 
 ```
 
@@ -260,23 +175,14 @@ The **Customer** table, like many other tables, is part of the [!INCLUDE[d36
 
 ``` 
 tableextension 50100 "CustomerTable Ext." extends Customer 
-
 { 
-
     fields 
-
     { 
-
         field(10001; RewardPoints; Integer) 
-
         { 
-
             MinValue = 0; 
-
         } 
-
     } 
-
 } 
 ```
  
@@ -287,625 +193,324 @@ The following code adds the 50100 **Customer Rewards Wizard** page that enab
 
 ```
 page 50100 "Customer Rewards Wizard" 
-
 { 
-
     // Specifies that this page will be a navigate page. 
-
     PageType = NavigatePage; 
-
     Caption = 'Customer Rewards assisted setup guide'; 
 
     layout 
-
     { 
-
         area(content) 
-
         { 
-
             group(MediaStandard) 
-
             { 
-
                 Caption = ''; 
-
                 Editable = false; 
-
                 Visible = TopBannerVisible; 
 
                 field("MediaResourcesStandard.""Media Reference"""; MediaResourcesStandard."Media Reference") 
-
                 { 
-
                     ApplicationArea = All; 
-
                     Editable = false; 
-
                     ShowCaption = false; 
-
                 } 
-
             } 
 
- 
-
             group(FirstPage) 
-
             { 
-
                 Caption = ''; 
-
                 Visible = FirstPageVisible; 
 
                 group("Welcome") 
-
                 { 
-
                     Caption = 'Welcome'; 
-
                     Visible = FirstPageVisible; 
 
                     group(Introduction) 
-
                     { 
-
                         Caption = ''; 
-
                         InstructionalText = 'This Customer Rewards extension is a sample extension. It adds rewards tiers support for Customers.'; 
-
                         Visible = FirstPageVisible; 
 
- 
-
                         field(Spacer1; '') 
-
                         { 
-
                             ApplicationArea = All; 
-
                             ShowCaption = false; 
-
                             Editable = false; 
-
                             MultiLine = true; 
-
                         } 
-
                     } 
 
- 
-
                     group("Terms") 
-
                     { 
-
                         Caption = 'Terms of Use'; 
-
                         Visible = FirstPageVisible; 
 
                         group(Terms1) 
-
                         { 
-
                             Caption = ''; 
-
                             InstructionalText = 'By enabling the Customer Rewards extension...'; 
-
                             Visible = FirstPageVisible; 
-
                         } 
-
                     } 
 
                     group(Terms2) 
-
                     { 
-
                         Caption = ''; 
 
- 
-
                         field(EnableFeature; EnableCustomerRewards) 
-
                         { 
-
                             ApplicationArea = All; 
-
                             MultiLine = true; 
-
                             Editable = true; 
-
                             Caption = 'I understand and accept these terms.'; 
 
- 
-
                             trigger OnValidate(); 
-
                             begin 
-
                                 ShowFirstPage; 
-
                             end; 
-
                         } 
-
                     } 
-
                 } 
-
             } 
 
- 
-
             group(SecondPage) 
-
             { 
-
                 Caption = ''; 
-
                 Visible = SecondPageVisible; 
 
                 group("Activation") 
-
                 { 
-
                     Caption = 'Activation'; 
-
                     Visible = SecondPageVisible; 
 
                     field(Spacer2; '') 
-
                     { 
-
                         ApplicationArea = All; 
-
                         ShowCaption = false; 
-
                         Editable = false; 
-
                         MultiLine = true; 
-
                     } 
 
                     group(ActivationMessage) 
-
                     { 
-
                         Caption = ''; 
-
                         InstructionalText = 'Enter your 14 digit activation code to continue'; 
-
                         Visible = SecondPageVisible; 
 
- 
-
                         field(Activationcode; ActivationCode) 
-
                         { 
-
                             ApplicationArea = All; 
-
                             ShowCaption = false; 
-
                             Editable = true; 
-
                         } 
-
                     } 
-
                 } 
-
             } 
 
- 
-
             group(FinalPage) 
-
             { 
-
                 Caption = ''; 
-
                 Visible = FinalPageVisible; 
 
                 group("ActivationDone") 
-
                 { 
-
                     Caption = 'You''re done!'; 
-
                     Visible = FinalPageVisible; 
 
                     group(DoneMessage) 
-
                     { 
-
                         Caption = ''; 
-
                         InstructionalText = 'Click Finish to setup your rewards level and start using Customer Rewards.'; 
-
                         Visible = FinalPageVisible; 
-
                     } 
-
                 } 
-
             } 
-
         } 
-
     } 
 
- 
-
     actions 
-
     { 
-
         area(Processing) 
-
         { 
-
             action(ActionBack) 
-
             { 
-
                 ApplicationArea = All; 
-
                 Caption = 'Back'; 
-
                 Enabled = BackEnabled; 
-
                 Visible = BackEnabled; 
-
                 Image = PreviousRecord; 
-
                 InFooterBar = true; 
 
- 
-
                 trigger OnAction(); 
-
                 begin 
-
                     NextStep(true); 
-
                 end; 
-
             } 
 
             action(ActionNext) 
-
             { 
-
                 ApplicationArea = All; 
-
                 Caption = 'Next'; 
-
                 Enabled = NextEnabled; 
-
                 Visible = NextEnabled; 
-
                 Image = NextRecord; 
-
                 InFooterBar = true; 
 
- 
-
                 trigger OnAction(); 
-
                 begin 
-
                     NextStep(false); 
-
                 end; 
-
             } 
 
             action(ActionActivate) 
-
             { 
-
                 ApplicationArea = All; 
-
                 Caption = 'Activate'; 
-
                 Enabled = ActivateEnabled; 
-
                 Visible = ActivateEnabled; 
-
                 Image = NextRecord; 
-
                 InFooterBar = true; 
 
- 
-
                 trigger OnAction(); 
-
                 var 
-
                     CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
-
- 
-
                 begin 
-
                     if ActivationCode = '' then 
-
                         Error('Activation code cannot be blank.'); 
 
- 
-
                     if Text.StrLen(ActivationCode) <> 14 then 
-
                         Error('Activation code must have 14 digits.'); 
 
- 
-
                     if CustomerRewardsExtMgt.ActivateCustomerRewards(ActivationCode) then 
-
                         NextStep(false) 
-
                     else 
-
                         Error('Activation failed. Please check the activtion code you entered.'); 
-
                 end; 
-
             } 
-
- 
 
             action(ActionFinish) 
-
             { 
-
                 ApplicationArea = All; 
-
                 Caption = 'Finish'; 
-
                 Enabled = FinalPageVisible; 
-
                 Image = Approve; 
-
                 InFooterBar = true; 
 
- 
-
                 trigger OnAction(); 
-
                 begin 
-
                     FinishAndEnableCustomerRewards 
-
                 end; 
-
             } 
-
         } 
-
     } 
 
- 
-
     trigger OnInit(); 
-
     begin 
-
         LoadTopBanners; 
-
     end; 
-
- 
 
     trigger OnOpenPage(); 
-
     begin 
-
         Step := Step::First; 
-
         EnableControls; 
-
     end; 
-
- 
 
     local procedure EnableControls(); 
-
     begin 
-
         ResetControls; 
 
- 
-
         case Step of 
-
         Step::First : 
-
           ShowFirstPage; 
 
- 
-
         Step::Second : 
-
           ShowSecondPage; 
 
- 
-
         Step::Finish : 
-
           ShowFinalPage; 
-
         END; 
-
     end; 
-
- 
 
     local procedure NextStep(Backwards: Boolean); 
-
     begin 
-
- 
-
         if Backwards then 
-
             Step := Step - 1 
-
         ELSE 
-
             Step := Step + 1; 
-
- 
-
         EnableControls; 
-
     end; 
-
- 
 
     local procedure FinishAndEnableCustomerRewards(); 
-
     var 
-
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
-
     begin 
-
         CurrPage.Close; 
-
         CustomerRewardsExtMgt.OpenRewardsLevelPage; 
-
     end; 
-
- 
 
     local procedure ShowFirstPage(); 
-
     begin 
-
         FirstPageVisible := true; 
-
         SecondPageVisible := false; 
-
         FinishEnabled := false; 
-
         BackEnabled := false; 
-
         ActivateEnabled := false; 
-
         NextEnabled := EnableCustomerRewards; 
-
     end; 
-
- 
 
     local procedure ShowSecondPage(); 
-
     begin 
-
         FirstPageVisible := false; 
-
         SecondPageVisible := true; 
-
         FinishEnabled := false; 
-
         BackEnabled := true; 
-
         NextEnabled := false; 
-
         ActivateEnabled := true; 
-
     end; 
-
- 
 
     local procedure ShowFinalPage(); 
-
     begin 
-
         FinalPageVisible := true; 
-
         BackEnabled := true; 
-
         NextEnabled := false; 
-
         ActivateEnabled := false; 
-
     end; 
-
- 
 
     local procedure ResetControls(); 
-
     begin 
-
         FinishEnabled := true; 
-
         BackEnabled := true; 
-
         NextEnabled := true; 
-
         ActivateEnabled := true; 
-
- 
-
         FirstPageVisible := false; 
-
         SecondPageVisible := false; 
-
         FinalPageVisible := false; 
-
     end; 
-
- 
 
     local procedure LoadTopBanners(); 
-
     begin 
-
         if MediaRepositoryStandard.GET('AssistedSetup-NoText-400px.png', FORMAT(CURRENTCLIENTTYPE)) 
-
       then 
-
             if MediaResourcesStandard.GET(MediaRepositoryStandard."Media Resources Ref") 
-
         then 
-
                 TopBannerVisible := MediaResourcesStandard."Media Reference".HASVALUE; 
-
     end; 
 
- 
-
     var 
-
         MediaRepositoryStandard: Record 9400; 
-
         MediaResourcesStandard: Record 2000000182; 
-
         Step: Option First, Second, Finish; 
-
         ActivationCode: Text; 
-
         TopBannerVisible: Boolean; 
-
         FirstPageVisible: Boolean; 
-
         SecondPageVisible: Boolean; 
-
         FinalPageVisible: Boolean; 
-
         FinishEnabled: Boolean; 
-
         BackEnabled: Boolean; 
-
         NextEnabled: Boolean; 
-
         ActivateEnabled: Boolean; 
-
         EnableCustomerRewards: Boolean; 
-
 } 
 
 ``` 
@@ -915,73 +520,40 @@ The following code adds the 50101 **Rewards Level List** page that enables t
 
 ```
 page 50101 "Rewards Level List" 
-
 { 
-
     PageType = List; 
-
     SourceTable = "Reward Level"; 
-
     SourceTableView = sorting ("Minimum Reward Points") order(ascending); 
 
- 
-
     layout 
-
     { 
-
         area(content) 
-
         { 
-
             repeater(Group) 
-
             { 
-
                 field(Level; Level) 
-
                 { 
-
                     ApplicationArea = All; 
-
                 } 
 
                 field("Minimum Reward Points"; "Minimum Reward Points") 
-
                 { 
-
                     ApplicationArea = All; 
-
                 } 
-
             } 
-
         } 
-
     } 
 
- 
-
     trigger OnOpenPage(); 
-
     begin 
 
- 
-
         if(not CustomerRewardsExtMgt.IsCustomerRewardsActivated) then 
-
             Error(NotActivatedTxt); 
-
     end; 
 
- 
-
     var 
-
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
-
         NotActivatedTxt: Label 'Customer Rewards is not activated'; 
-
 } 
 ```
 
@@ -992,71 +564,39 @@ A page extension object can be used to add new functionality to pages that are p
 
 ```
 pageextension 50100 "Customer Card Ext." extends "Customer Card" 
-
 { 
-
     layout 
-
     { 
-
         addafter(Name) 
-
         { 
-
             field(RewardLevel; RewardLevel) 
-
             { 
-
                 ApplicationArea = All; 
-
                 Caption = 'Reward Level'; 
-
                 Description = 'Reward level of the customer.'; 
-
                 Editable = false; 
-
             } 
 
             field(RewardPoints; RewardPoints) 
-
             { 
-
                 ApplicationArea = All; 
-
                 Caption = 'Reward Points'; 
-
                 Description = 'Reward points accrued by customer'; 
-
                 Editable = false; 
-
             } 
-
         } 
-
     } 
 
- 
-
     trigger OnAfterGetRecord(); 
-
     var 
-
         CustomerRewardsMgtExt: Codeunit "Customer Rewards Ext. Mgt."; 
-
     begin 
-
         // Get the reward level associated with reward points 
-
         RewardLevel := CustomerRewardsMgtExt.GetRewardLevel(RewardPoints); 
-
     end; 
 
- 
-
     var 
-
         RewardLevel: Text; 
-
 } 
 ```
  
@@ -1065,59 +605,32 @@ A page extension object can be used to add new functionality to pages that are p
 
 ```
 pageextension 50101 "Customer List Ext." extends "Customer List" 
-
 { 
-
     actions 
-
     { 
-
         addfirst("&Customer") 
-
         { 
-
             action("Reward Levels") 
-
             { 
-
                 ApplicationArea = All; 
-
                 Image = CustomerRating; 
-
                 Promoted = true; 
-
                 PromotedCategory = Process; 
-
                 PromotedIsBig = true; 
 
- 
-
                 trigger OnAction(); 
-
                 begin 
-
                     if CustomerRewardsExtMgt.IsCustomerRewardsActivated then 
-
                         CustomerRewardsExtMgt.OpenRewardsLevelPage 
-
                     else 
-
                         CustomerRewardsExtMgt.OpenCustomerRewardsWizard; 
-
                 end; 
-
             } 
-
         } 
-
     } 
 
- 
-
     var 
-
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
-
 } 
 ```
  
@@ -1128,45 +641,25 @@ The following code adds the 50100 **Customer Rewards Install Logic** codeuni
 
 ```
 codeunit 50100 "Customer Rewards Install Logic" 
-
 { 
-
     // Customer Rewards Install Logic 
-
     Subtype = Install; 
 
- 
-
     trigger OnInstallAppPerCompany(); 
-
     begin 
-
         SetDefaultCustomerRewardsExtMgtCodeunit; 
-
     end; 
-
- 
 
     procedure SetDefaultCustomerRewardsExtMgtCodeunit(); 
-
     var 
-
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 
-
     begin 
-
         CustomerRewardsExtMgtSetup.DeleteAll; 
-
         CustomerRewardsExtMgtSetup.Init; 
-
         // Default Customer Rewards Ext. Mgt codeunit to use for handling events  
-
         CustomerRewardsExtMgtSetup."Customer Rewards Ext. Mgt. Codeunit ID" := Codeunit::"Customer Rewards Ext. Mgt."; 
-
         CustomerRewardsExtMgtSetup.Insert; 
-
     end; 
-
 } 
 ```
  
@@ -1175,123 +668,64 @@ The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the 
  
 ```
     // Activates Customer Rewards if activation code is validated successfully  
-
     procedure ActivateCustomerRewards(ActivationCode: Text): Boolean; 
-
     var 
-
         ActivationCodeInfo: Record "Activation Code Information"; 
-
     begin 
-
         // raise event 
-
         OnGetActivationCodeStatusFromServer(ActivationCode); 
-
         exit(ActivationCodeInfo.Get(ActivationCode)); 
-
     end; 
-
- 
 
     // publishes event 
-
     [IntegrationEvent(false, false)] 
-
     procedure OnGetActivationCodeStatusFromServer(ActivationCode: Text); 
-
     begin 
-
     end; 
 
- 
-
     // Subscribes to OnGetActivationCodeStatusFromServer event and handles it when the event is raised 
-
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Customer Rewards Ext. Mgt.", 'OnGetActivationCodeStatusFromServer', '', false, false)] 
-
     local procedure OnGetActivationCodeStatusFromServerSubscriber(ActivationCode: Text); 
-
     var 
-
         ActivationCodeInfo: Record "Activation Code Information"; 
-
         ResponseText: Text; 
-
         Result: JsonToken; 
-
         JsonRepsonse: JsonToken; 
 
     begin 
-
- 
-
         if not CanHandle then 
-
             exit; // use the mock 
-
- 
-
         // Get response from external service and update activation code information if successful 
-
         if(GetHttpResponse(ActivationCode, ResponseText)) then begin 
-
             JsonRepsonse.ReadFrom(ResponseText); 
-
- 
 
             if(JsonRepsonse.SelectToken('ActivationResponse', Result)) then begin 
 
                 if(Result.AsValue().AsText() = 'Success') then begin 
 
                     if(ActivationCodeInfo.FindFirst()) then 
-
                         ActivationCodeInfo.Delete; 
 
- 
-
                     ActivationCodeInfo.Init; 
-
                     ActivationCodeInfo.ActivationCode := ActivationCode; 
-
                     ActivationCodeInfo."Date Activated" := Today; 
-
                     ActivationCodeInfo."Expiration Date" := CALCDATE('<1Y>', Today); 
-
                     ActivationCodeInfo.Insert; 
-
- 
-
                 end; 
-
             end; 
-
         end; 
-
     end; 
 
- 
-
     // Helper method to make calls to a service to validate activation code 
-
     local procedure GetHttpResponse(ActivationCode: Text; var ResponseText: Text): Boolean; 
-
     begin 
-
         // You will typically make external calls / http requests to your service to validate the activation code 
-
         // here but for the sample extension we simply return a successful dummy response 
-
         if ActivationCode = '' then 
-
             exit(false); 
 
- 
-
         ResponseText := DummySuccessResponseTxt; 
-
         exit(true); 
-
     end; 
 ```
  
@@ -1305,305 +739,151 @@ Below is the full code for this codeunit.
 
 ```
 codeunit 50101 "Customer Rewards Ext. Mgt." 
-
 { 
-
     var 
-
         DummySuccessResponseTxt: Label '{"ActivationResponse": "Success"}', Locked = true; 
-
         NoRewardlevelTxt: TextConst ENU = 'NONE'; 
 
- 
-
     // Determines if the extension is activated 
-
     procedure IsCustomerRewardsActivated(): Boolean; 
-
     var 
-
         ActivationCodeInfo: Record "Activation Code Information"; 
-
     begin 
-
         if not ActivationCodeInfo.FindFirst then 
-
             exit(false); 
 
- 
-
         if(ActivationCodeInfo."Date Activated" <= Today) and(Today <= ActivationCodeInfo."Expiration Date") then 
-
             exit(true); 
-
- 
-
         exit(false); 
-
     end; 
-
- 
 
     // Opens the Customer Rewards Assisted Setup Guide 
-
     procedure OpenCustomerRewardsWizard(); 
-
     var 
-
         CustomerRewardsWizard: Page "Customer Rewards Wizard"; 
-
     begin 
-
         CustomerRewardsWizard.RunModal; 
-
     end; 
-
- 
 
     // Opens the Reward Level page 
-
     procedure OpenRewardsLevelPage(); 
-
     var 
-
         RewardsLevelPage: Page "Rewards Level List"; 
-
     begin 
-
         RewardsLevelPage.Run; 
-
     end; 
 
- 
-
     // Determines the correponding reward level and returns it 
-
     procedure GetRewardLevel(RewardPoints: Integer) RewardLevelTxt: Text; 
-
     var 
-
         RewardLevelRec: Record "Reward Level"; 
-
         MinRewardLevelPoints: Integer; 
-
     begin 
-
         RewardLevelTxt := NoRewardlevelTxt; 
 
- 
-
         if RewardLevelRec.IsEmpty then 
-
             exit; 
-
- 
-
         RewardLevelRec.SetRange("Minimum Reward Points", 0, RewardPoints); 
-
         RewardLevelRec.SetCurrentKey("Minimum Reward Points"); // sorted in ascending order 
 
         if not RewardLevelRec.FindFirst then 
-
             exit; 
-
- 
-
         MinRewardLevelPoints := RewardLevelRec."Minimum Reward Points"; 
 
- 
-
         if RewardPoints >= MinRewardLevelPoints then begin 
-
             RewardLevelRec.Reset; 
-
             RewardLevelRec.SetRange("Minimum Reward Points", MinRewardLevelPoints, RewardPoints); 
-
             RewardLevelRec.SetCurrentKey("Minimum Reward Points"); // sorted in ascending order 
-
             RewardLevelRec.FindLast; 
-
             RewardLevelTxt := RewardLevelRec.Level; 
-
         end; 
-
- 
-
     end; 
-
- 
 
     // Activates Customer Rewards if activation code is validated successfully  
-
     procedure ActivateCustomerRewards(ActivationCode: Text): Boolean; 
-
     var 
-
         ActivationCodeInfo: Record "Activation Code Information"; 
-
     begin 
-
         // raise event 
-
         OnGetActivationCodeStatusFromServer(ActivationCode); 
-
         exit(ActivationCodeInfo.Get(ActivationCode)); 
-
     end; 
-
- 
 
     // publishes event 
-
     [IntegrationEvent(false, false)] 
-
     procedure OnGetActivationCodeStatusFromServer(ActivationCode: Text); 
-
     begin 
-
     end; 
 
- 
-
     // Subscribes to OnGetActivationCodeStatusFromServer event and handles it when the event is raised 
-
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Customer Rewards Ext. Mgt.", 'OnGetActivationCodeStatusFromServer', '', false, false)] 
-
     local procedure OnGetActivationCodeStatusFromServerSubscriber(ActivationCode: Text); 
-
     var 
-
         ActivationCodeInfo: Record "Activation Code Information"; 
-
         ResponseText: Text; 
-
         Result: JsonToken; 
-
         JsonRepsonse: JsonToken; 
-
     begin 
-
- 
-
         if not CanHandle then 
-
             exit; // use the mock 
 
- 
-
         // Get response from external service and update activation code information if successful 
-
         if(GetHttpResponse(ActivationCode, ResponseText)) then begin 
-
             JsonRepsonse.ReadFrom(ResponseText); 
-
- 
 
             if(JsonRepsonse.SelectToken('ActivationResponse', Result)) then begin 
 
                 if(Result.AsValue().AsText() = 'Success') then begin 
 
                     if(ActivationCodeInfo.FindFirst()) then 
-
                         ActivationCodeInfo.Delete; 
 
- 
-
                     ActivationCodeInfo.Init; 
-
                     ActivationCodeInfo.ActivationCode := ActivationCode; 
-
                     ActivationCodeInfo."Date Activated" := Today; 
-
                     ActivationCodeInfo."Expiration Date" := CALCDATE('<1Y>', Today); 
-
                     ActivationCodeInfo.Insert; 
 
- 
-
                 end; 
-
             end; 
-
         end; 
-
     end; 
-
- 
 
     // Helper method to make calls to a service to validate activation code 
-
     local procedure GetHttpResponse(ActivationCode: Text; var ResponseText: Text): Boolean; 
-
     begin 
-
         // You will typically make external calls / http requests to your service to validate the activation code 
-
         // here but for the sample extension we simply return a successful dummy response 
-
         if ActivationCode = '' then 
-
             exit(false); 
 
- 
-
         ResponseText := DummySuccessResponseTxt; 
-
         exit(true); 
-
     end; 
-
- 
 
     // Subcribes to the OnAfterReleaseSalesDoc event and increases reward points for the sell to customer in posted sales order 
-
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Release Sales Document", 'OnAfterReleaseSalesDoc', '', false, false)] 
-
     local procedure OnAfterReleaseSalesDocSubscriber(VAR SalesHeader: Record "Sales Header"; PreviewMode: Boolean; LinesWereModified: Boolean); 
-
     var 
-
         Customer: Record Customer; 
-
     begin 
-
         if SalesHeader.Status <> SalesHeader.Status::Released then 
-
             exit; 
 
- 
-
         Customer.Get(SalesHeader."Sell-to Customer No."); 
-
         Customer.RewardPoints += 1; // Add a point for each new sales order 
-
         Customer.Modify; 
-
     end; 
-
- 
 
     // Checks if the current codeunit is allowed to handle Customer Rewards Activation requests rather than a mock. 
-
     local procedure CanHandle(): Boolean; 
-
     var 
-
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 
-
     begin 
-
         if CustomerRewardsExtMgtSetup.Get then 
-
             exit(CustomerRewardsExtMgtSetup."Customer Rewards Ext. Mgt. Codeunit ID" = CODEUNIT::"Customer Rewards Ext. Mgt."); 
-
- 
-
         exit(false); 
-
     end; 
-
- 
-
 } 
 ```
 
