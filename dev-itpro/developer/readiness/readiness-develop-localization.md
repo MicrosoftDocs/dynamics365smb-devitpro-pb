@@ -55,7 +55,7 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
  * [Tests for Local Regulatory Features](../../compliance/apptest-testingyourextension.md). 
  * [Upgrade code for localization app](../devenv-upgrading-extensions.md). 
  * Setup data, RapidStart package, for the localization app. 
- * [Translation of localization app to local language(s)](../devenv-work-with-translation-files) and base app if you are the first partner enabling localization for the country (Learn more about [Dynamics Translation Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/translation-service-overview)). 
+ * [Translation of localization app to local language(s)](../devenv-work-with-translation-files.md) and base app if you are the first partner enabling localization for the country (Learn more about [Dynamics Translation Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/translation-service-overview)). 
  * Translation of the localization app’s documentation. 
  * National Standard Features (local part) are recommended to be built as additional [addon apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app. 
  * Market Required and Local Competitive Features are recommended to be built as additional [addon apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
