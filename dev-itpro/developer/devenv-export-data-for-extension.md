@@ -26,9 +26,9 @@ The data must be exported from [!INCLUDE[navnow](includes/navnow_md.md)] into fi
 
 ## To export permission sets
 1.	Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)].
-2.	Export the relevant permission set using the `Export-NAVAppPermissionSet` cmdlet to export the permission set to a file:
+2.	Export the relevant permission set using the `Export-NAVAppPermissionSet` cmdlet to export the permission set to a file. The following command exports the BASIC permission set.
 
-    `Export-NAVAppPermissionSet -ServerInstance DynamicsNAVServer -Path '.\PermissionSet.xml' -PermissionSetId PSA-VIEW`
+    `Export-NAVAppPermissionSet -ServerInstance DynamicsNAV110 -Path '.\PermissionSet.xml' -PermissionSetId BASIC`
 
     > [!NOTE]  
     > Export each permission set to a separate XML file.
@@ -41,21 +41,22 @@ The data must be exported from [!INCLUDE[navnow](includes/navnow_md.md)] into fi
 ## To export web services
 
 1.	Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)].
-2.	Export the relevant web service using the `Export-NAVAppTenantWebService` cmdlet to export the web service to a file:
+2.	Export the relevant web service using the `Export-NAVAppTenantWebService` cmdlet to export the web service to a file. The following command exports the Customer Card page.
 
-    `Export-NAVAppTenantWebService -ServerInstance DynamicsNAVServer -Path TenantWebService.xml -ServiceName Customer -ObjectType Page -ObjectId 21`
+    `Export-NAVAppTenantWebService -ServerInstance DynamicsNAV110 -Path TenantWebService.xml -ServiceName Customer -ObjectType Page -ObjectId 21`
 
     > [!NOTE]  
     > Export each web service to a separate XML file.
 
 3.	Add the exported permission set files to the Visual Studio Code project that contains your extension.
 
-## To export table data
+## To export table data 
+<!-- does this work? -->
 
 1.	Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)].
-2.	Export the relevant data using the `Export-NAVAppTableData` cmdlet to export the data to a file. This includes setting the path to a folder where you want the .navxdata file created. A data file in the format of TAB<TABLEID>.navxdata will be created. (Example: TAB10000.navxdata)
+2.	Export the relevant data using the `Export-NAVAppTableData` cmdlet to export the data to a file. This includes setting the path to a folder where you want the .navxdata file created. A data file in the format of TAB<TABLEID>.navxdata will be created. (Example: TAB10000.navxdata). 
 
-    `Export-NAVAppTableData -ServerInstance DynamicsNAVServer -Path ‘C:\NAVAppTableData’ -TableId 10000`
+    `Export-NAVAppTableData -ServerInstance DynamicsNAV110 -Path ‘C:\NAVAppTableData’ -TableId 10000`
 
     > [!NOTE]  
     > Export the data for each table to a separate XML file.
@@ -70,7 +71,7 @@ The data must be exported from [!INCLUDE[navnow](includes/navnow_md.md)] into fi
 1.	Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)].
 2.	Export the relevant report layouts using the `Export-NAVAppReportLayout` cmdlet to export to a file:
 
-    `Export-NAVAppReportLayout -ServerInstance DynamicsNAV -Path .\ReportLayout.xml -LayoutId 1`
+    `Export-NAVAppReportLayout -ServerInstance DynamicsNAV110 -Path .\ReportLayout.xml -LayoutId 1`
 
     > [!NOTE]  
     > Export each custom report layout to a separate XML file.
