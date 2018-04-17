@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 157ad2f3-7b7e-4ff0-9ae1-47f031e9b442
 caps.latest.revision: 9
-manager: edupont
+ms.author: solsen
 ---
 
 
