@@ -45,7 +45,8 @@ page 70000200 SimpleCustomerCard
             {
                 field("No.";"No.")
                 {
-                    CaptionML = ENU='Hello'
+                    ApplicationArea = All;
+                    CaptionML = ENU='Hello';
 
                     trigger OnValidate()
                     begin
@@ -54,8 +55,12 @@ page 70000200 SimpleCustomerCard
                     end;
                 }
 
-                field(Name;Name) {}
-                field(Address;Address) {}
+                field(Name;Name) {
+                    ApplicationArea = All;
+                }
+                field(Address;Address) {
+                    ApplicationArea = All;
+                }
             }
         }
     }
@@ -65,6 +70,7 @@ page 70000200 SimpleCustomerCard
         {
             action(NewAction)
             {
+                ApplicationArea = All;
                 RunObject = codeunit "Document Totals";
             }         
         }
