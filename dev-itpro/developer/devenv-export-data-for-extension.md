@@ -22,7 +22,7 @@ For your extension to run properly, configuration and starting data such as perm
 - Starting table data
 - Custom report layouts
 
-The data must be exported from [!INCLUDE[navnow](includes/navnow_md.md)] into files to be included in the extension.
+The data must be exported into files to be included in the extension. To use the export functions you must use a container sandbox environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md).
 
 ## To export permission sets
 1.	Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)].
@@ -48,10 +48,9 @@ The data must be exported from [!INCLUDE[navnow](includes/navnow_md.md)] into fi
     > [!NOTE]  
     > Export each web service to a separate XML file.
 
-3.	Add the exported permission set files to the Visual Studio Code project that contains your extension.
+3.	Add the exported web services files to the Visual Studio Code project that contains your extension.
 
 ## To export table data 
-<!-- does this work? -->
 
 1.	Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)].
 2.	Export the relevant data using the `Export-NAVAppTableData` cmdlet to export the data to a file. This includes setting the path to a folder where you want the .navxdata file created. A data file in the format of TAB<TABLEID>.navxdata will be created. (Example: TAB10000.navxdata). 
@@ -61,7 +60,7 @@ The data must be exported from [!INCLUDE[navnow](includes/navnow_md.md)] into fi
     > [!NOTE]  
     > Export the data for each table to a separate XML file.
 
-3.	Add the exported permission set files to the Visual Studio Code project that contains your extension.
+3.	Add the exported table data files to the Visual Studio Code project that contains your extension.
 
     > [!WARNING]
     > An extension can only include table data for new tables that are added as part of the extension.
@@ -76,7 +75,7 @@ The data must be exported from [!INCLUDE[navnow](includes/navnow_md.md)] into fi
     > [!NOTE]  
     > Export each custom report layout to a separate XML file.
 
-3.	Add the exported permission set files to the Visual Studio Code project that contains your extension.
+3.	Add the exported custom report files to the Visual Studio Code project that contains your extension.
 
 
 ## See Also

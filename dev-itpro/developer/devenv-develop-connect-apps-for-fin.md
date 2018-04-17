@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 redirect_url: http://www.microsoft.com
 ---
 
-
+<!-- This topic is retired and redirects -->
 
 # Developing Connect Apps for Dynamics 365 Business Central
 A Connect app establishes a connection between two independent services using an API to interchange data. A typical example of a Connect app is a payroll solution. All work related to payroll is done within your payroll service and only as a last step is the financial data posted into [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] using the API. A Connect app is mainly created using common development tools and the REST APIs made available in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
