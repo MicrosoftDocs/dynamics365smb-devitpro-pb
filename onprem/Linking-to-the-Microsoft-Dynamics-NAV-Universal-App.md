@@ -1,29 +1,31 @@
 ---
 title: "Linking to the Microsoft Dynamics NAV Universal App"
 ms.custom: na
-ms.date: 06/05/2016
+ms.date: 17/04/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
-ms.assetid: d5d0499a-2770-4c7f-bbc8-ad2795656686
-caps.latest.revision: 17
+ms.service: "dynamics365-business-central"
+author: jswymer
+ms.author: jswymer
 ---
 # Linking to the Microsoft Dynamics NAV Universal App
 The protocol handler for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] lets you construct a URL for starting the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a device. You can then distribute this URL by e-mail or from a Web page to the users.  
   
- The *ms-dynamicsnav* scheme is registered automatically when the app is installed. From this point onward, invoking a URL based on this URI scheme will start the app with the provided parameters.  
+The *ms-dynamicsnav* scheme is registered automatically when the app is installed. From this point onward, invoking a URL based on this URI scheme will start the app with the provided parameters.  
   
 ## Constructing the URL  
- To enable starting the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] from a link, construct a URL with the *ms-dynamicsnav* scheme pointing to your [!INCLUDE[navnow](includes/navnow_md.md)] Web server.  
+To start the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] from a link, construct a URL with the *ms-dynamicsnav* scheme pointing to your [!INCLUDE[navnow](includes/navnow_md.md)] Web server.  
   
- The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)] and resembles this:  
-  
- `ms-dynamicsnav://<Server>:<Port>/<Instance>/[?tenant=<Tenant>&company=<Company>]/?profile=/?page=`  
+The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)] and resembles this:  
+
+<!--  
+`ms-dynamicsnav://<Server>:<Port>/<Instance>/[?tenant=<Tenant>&company=<Company>]/?profile=/?page=`  
+-->
 
 ```
- ms-dynamicsnav://<hostname>:[<port>][/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
+ms-dynamicsnav://<hostname>:[<port>][/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
 ```
 <!--  
 |Parameter|Description|  
@@ -38,9 +40,10 @@ The protocol handler for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]
 |Redirect|Optional. When users run the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] in a browser, they will be presented with an option to download the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] instead in order to improve the user experience. However, if this is not a wanted scenario, this experience can be manually overridden by adding the parameter ```?redirect=0``` to the URL.|  
 
 -->
+
 Parameters in `[]`are optional; all other parameters are required.
 
-### Parameters
+## Parameters
 The following table describes the parameters for the main part of the URL, which are the parameters up to and including `[/<instance>]/`. 
 
 |Parameter|Description| Example |
@@ -49,7 +52,7 @@ The following table describes the parameters for the main part of the URL, which
 |Port|The port number for your [!INCLUDE[nav_web](includes/nav_web_md.md)] server instance. If not provided, the standard SSL port \(443\) is used.| `8080` |
 |Instance|The [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance that you want to connect to.| `dynamicsnav110`|
 
-The following table describes the optional parameters that you can specify after `[/<instance>]/`, which are referred to as query parameters.
+The following table describes the optional parameters that you can specify after `[/<instance>]/`. These parameters are referred to as query parameters.
 
 |Parameter|Description| Example |
 |---------|-----------|---------|  
@@ -69,7 +72,7 @@ The first parameter is preceded by a ? symbol, any additional parameters are pre
 >
 > The URL `ms-dynamicsnav:///?page=21` will open the server that you last connected to on the specified page.  
   
-### URL Examples  
+## URL Examples  
  The following examples demonstrate how to use the parameters from the table earlier in this section:  
   
 -   *ms-dynamicsnav://myserver/myinstance/*  
@@ -83,8 +86,8 @@ The first parameter is preceded by a ? symbol, any additional parameters are pre
 > [!IMPORTANT]  
 >  The *ms-dynamicsnav* scheme only translates to a secure server connection. Therefore the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] must be exposed through an https connection. For more information, see [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md).  
   
-### Adding Username to the URL  
- The *ms-dynamicsnav* scheme also supports sending the user name in the URL for prefilling the user name. The password must be entered by the user. To send the user name, you must URL encode the value and prefix the server address by using *\<encoded username>@*. Examples are as follows:  
+## Adding a user name to the URL  
+ The *ms-dynamicsnav* scheme also supports sending the user name in the URL for pre-filling the user name. The password must be entered by the user. To send the user name, you must URL encode the value and prefix the server address by using *\<encoded username>@*. Examples are as follows:  
   
 -   *ms-dynamicsnav://demouser%40mycompany.com@myserver/myinstance/*  
   
