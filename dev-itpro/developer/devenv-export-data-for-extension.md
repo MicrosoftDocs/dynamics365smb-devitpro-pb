@@ -48,7 +48,7 @@ The data must be exported into files to be included in the extension. To use the
     > [!NOTE]  
     > Export each web service to a separate XML file.
 
-3.	Add the exported permission set files to the Visual Studio Code project that contains your extension.
+3.	Add the exported web services files to the Visual Studio Code project that contains your extension.
 
 ## To export table data 
 
@@ -60,7 +60,7 @@ The data must be exported into files to be included in the extension. To use the
     > [!NOTE]  
     > Export the data for each table to a separate XML file.
 
-3.	Add the exported permission set files to the Visual Studio Code project that contains your extension.
+3.	Add the exported table data files to the Visual Studio Code project that contains your extension.
 
     > [!WARNING]
     > An extension can only include table data for new tables that are added as part of the extension.
@@ -75,7 +75,7 @@ The data must be exported into files to be included in the extension. To use the
     > [!NOTE]  
     > Export each custom report layout to a separate XML file.
 
-3.	Add the exported permission set files to the Visual Studio Code project that contains your extension.
+3.	Add the exported custom report files to the Visual Studio Code project that contains your extension.
 
 
 ## See Also
