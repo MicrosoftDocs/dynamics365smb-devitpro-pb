@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 redirect_url: http://www.microsoft.com
 ---
 
-
+<!-- This topic is retired and redirects -->
 
 # Developing Apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
 Reach more customers by bringing apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] into Microsoft Appsource, the marketplace for Microsoft business apps. 
