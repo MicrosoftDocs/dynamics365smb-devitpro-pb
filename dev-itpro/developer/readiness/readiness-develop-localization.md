@@ -68,7 +68,7 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
  * Consider preparing local demo data RapidStart package for evaluation company and translate it to local language(s). 
  * Prepare setup guides (wizards) for areas that are complex to set up to help users enable, discover and have good first experience using your localization app. 
  * Fork the [Dynamics 365 Business Central documentation from public GitHub repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). Such approach to documentation can help when other partners or ISVs take dependency on your localization app. 
- * Consider converting field-based documentation to task-based documentation using tooltips and [Dynamics 365 Business Central documentation Github repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). [Rulesets](../devenv-rule-set-syntax-for-code-analysis-tools.md) can help you ensure, for example, that no fields or actions are missing tooltips. 
+ * Consider converting field-based documentation to task-based documentation using tooltips and [Dynamics 365 Business Central documentation Github repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). [Rulesets](../devenv-rule-set-syntax-for-code-analysis-tools.md) can help you ensure, for example, that no fields or actions are missing [tooltips](https://worldready.cloudapp.net/Styleguide/Read?id=2748&topicid=38066) (link requires PartnerSource account). 
 
 > [!NOTE]  
 > If you have questions for building localization apps please contact the [Microsoft localization team](mailto:d365bcloc@microsoft.com). 
