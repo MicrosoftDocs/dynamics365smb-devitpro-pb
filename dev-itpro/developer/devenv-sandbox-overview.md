@@ -25,7 +25,6 @@ The following topic outlines the most important capabilities on the offered deve
 |-----------|--------|----------------|
 |Deployment |Dynamics 365 Cloud Service managed by Microsoft|Azure VM or on-premises managed by ISV/VAR|
 |Production data|Manually uploaded using Rapid Start packages|Manually uploaded using Rapid Start packages|
-|Production extensions|Manually installed|Production installed extensions are automatically installed|
 |Production services|Manually configured|Not available|
 |Cost|Part of the Business Central subscription|Locally hosted - free, Azure-hosted - cost incurred|
 |Development|Full capabilities of the development environment. </br>Designer functionality, such as: </br>Add/Remove components, </br>Move components, </br>Set/clear Freeze pane, </br>Edit captions | Full capabilities of the development environment.</br>Designer functionality, such as: </br>Add/Remove components, </br>Move components, </br>Set/clear Freeze pane, </br>Edit captions |
