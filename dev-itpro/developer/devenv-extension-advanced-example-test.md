@@ -22,7 +22,7 @@ For information about submitting your app to AppSource, see [Checklist for Submi
 ### Identifying the areas of the extension that need to be tested 
 Before writing tests for your extension, you need to identify all the areas of the extension that need to be tested.  
 
-- Ensure that your tests cover all the setup and usage scenario steps found in the [Building an Advanced Sample Extension](devenv-extension-advanced-example.md) document. This includes Assisted Setup, pages, fields, actions, events, and other controls and objects used by your extension.  
+- Ensure that your tests cover all the setup and usage scenario steps found in the [user scenario document](../compliance/apptest-userscenario.md). This includes Assisted Setup, pages, fields, actions, events, and other controls and objects used by your extension.  
 - The CRONUS demo company will be used. If your app requires setup within the core product or any additional data, remember to include that in your tests. 
 - As part of your tests, remember to include tests that verify that the extension works as expected for **a user that does not have SUPER permissions**.  
 - Your tests **should not make any requests to an external service**. Mock your external calls to prevent this from happening. 
