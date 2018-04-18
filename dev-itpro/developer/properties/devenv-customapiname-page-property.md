@@ -1,5 +1,5 @@
 ---
-title: "CustomAPIName Property" (Page)
+title: "CustomAPIName Property (Page)"
 author: edupont04
 ms.custom: na
 ms.date: 04/16/2018
