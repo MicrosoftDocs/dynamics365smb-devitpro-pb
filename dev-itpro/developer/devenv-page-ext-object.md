@@ -41,6 +41,7 @@ pageextension 70000020 CustomerCardExtension extends "Customer Card"
         {
             field("Shoe Size"; ShoeSize)
             {
+                ApplicationArea = All;
                 CaptionML = ENU='ShoeSize';
 
                 trigger OnValidate();
@@ -65,6 +66,7 @@ pageextension 70000020 CustomerCardExtension extends "Customer Card"
             {
                 Action(MyAction1)
                 {
+                    ApplicationArea = All;
                     CaptionML = ENU='Hello!';
 
                     trigger OnAction();
@@ -75,6 +77,7 @@ pageextension 70000020 CustomerCardExtension extends "Customer Card"
 
                 Action(MyAction2)
                 {
+                    ApplicationArea = All;
                     RunObject = codeunit "Activities Mgt.";
                 }
             }
