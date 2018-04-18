@@ -10,9 +10,12 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 615d15ba-5d0e-4071-bfa2-c262c1dccbf4
 caps.latest.revision: 3
 author: SusanneWindfeldPedersen
+redirect_url: devenv-sqltimestamp-property
 ---
 
- 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-sqltimestamp-property.md
+-->   
 
 # SQL Timestamp Property
 Specifies a field to be a timestamp field.  

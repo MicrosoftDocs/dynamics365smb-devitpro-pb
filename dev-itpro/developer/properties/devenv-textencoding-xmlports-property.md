@@ -10,9 +10,12 @@ ms.service: "dynamics365-business-central"
 ms.assetid: cecfed61-dfea-4eb7-be2c-5b5091f765c5
 caps.latest.revision: 25
 author: SusanneWindfeldPedersen
+redirect_url: devenv-textencoding-property
 ---
 
- 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-textencoding-property.md
+-->  
 
 # TextEncoding Property (XMLports)
 Specifies the [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md) format to use when you use an XMLport to export or import data as text.  

@@ -37,7 +37,12 @@ To control that the sizing of the control add-in is always optimal, even on smal
 - [HorizontalStretch](properties/devenv-horizontalstretch-property.md)
 - [RequestedHeight](properties/devenv-requestedheight-property.md)
 - [RequestedWidth](properties/devenv-requestedwidth-property.md)
-
+- [Scripts](properties/devenv-scripts-property.md)
+- [StyleSheets](properties/devenv-stylesheets-property.md)
+- [Images](properties/devenv-images-property.md)
+- [StartupScript](properties/devenv-startupscript-property.md)
+- [RecreateScript](properties/devenv-recreatescript-property.md)
+- [RefreshScript](properties/devenv-refreshscript-property.md)
 
 
 ## Control add-in syntax example

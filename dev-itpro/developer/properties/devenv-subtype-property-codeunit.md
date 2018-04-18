@@ -10,9 +10,12 @@ ms.service: "dynamics365-business-central"
 ms.assetid: c31be95f-e083-4d87-84e4-27b2373349d6
 caps.latest.revision: 13
 author: SusanneWindfeldPedersen
+redirect_url: devenv-subtype-codeunit-property
 ---
 
- 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-subtype-codeunit-property.md
+-->   
 
 # SubType Property (Codeunit)
 Sets the codeunit to method as a normal, test, test runner, or upgrade codeunit.  
