@@ -18,8 +18,8 @@ A Connect app establishes a point-to-point connection between [!INCLUDE[d365fin_
 
 To explore and develop against APIs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you must first sign up for a trial tenant and then you have to connect and authenticate. To do that, follow the steps below.
 
-1. Sign up for [Dynamics 365 Business Central]().  
-When you have your tenant, you can sign into the UI to play with the product, as well as explore the APIs []()
+1. Sign up for [Dynamics 365 Business Central](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1).  
+When you have your tenant, you can sign into the UI to play with the product, as well as [explore the APIs](/dynamics-nav/fin-graph/)
 2. There are two different ways to connect to and authenticate against the APIs.  
     - Use Azure Active Directory (AAD) based authentication against the common API endpoint: https://api.businesscentral.dynamics.com/v1.0/api/beta
     - Use basic authentication with username and password (a so-called web service access key) against the common API endpoint that includes the user domain, for example https://api.businesscentral.dynamics.com/v1.0/cronus.com/api/beta.  
