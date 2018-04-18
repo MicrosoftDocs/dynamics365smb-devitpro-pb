@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 ---
  
 # XmlName Property
-Sets the name. 
+Sets a variable name for the table or the text that is the data source of the current element.
 
 ## Applies To  
 

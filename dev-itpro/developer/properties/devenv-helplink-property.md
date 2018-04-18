@@ -15,11 +15,14 @@ author: SusanneWindfeldPedersen
  
 
 # HelpLink Property
-Specifies the help link that will be used in the RequestPage. 
+Sets the link to be directed to when pressing the Help button in the user interface.
   
 ## Applies To  
- RequestPage 
+- RequestPage 
+
+- Page
   
 
 ## See Also  
+[Page Object](../devenv-page-object.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../devenv-adding-help-links-from-pages-tables-xmlports.md)
