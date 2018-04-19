@@ -13,7 +13,7 @@ ms.author: jswymer
 # Linking to the Microsoft Dynamics NAV Universal App
 The protocol handler for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] lets you construct a URL for starting the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a device. You can then distribute this URL by e-mail or from a Web page to the users.  
   
-The  [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] URL is based on the *ms-businesscentral<!-- ms-dynamicsnav-->* scheme, which is registered automatically when the app is installed. From this point onward, invoking a URL based on this URI scheme will start the app with the provided parameters.  
+The  [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] URL is based on the *ms-businesscentral<!-- ms-dynamicsnav-->* URI scheme, which is registered automatically when the app is installed. Invoking a URL based on this scheme will start the app with the provided parameters.  
   
 ## Constructing the URL  
 To start the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] from a link, construct a URL with the *ms-businesscentral<!-- ms-dynamicsnav-->* scheme pointing to your [!INCLUDE[navnow](includes/navnow_md.md)] Web server.  
