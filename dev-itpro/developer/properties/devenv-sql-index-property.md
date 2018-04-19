@@ -10,8 +10,12 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 58a94a2c-fbdd-404e-9760-9bfede48f36e
 caps.latest.revision: 5
 author: SusanneWindfeldPedersen
+redirect_url: devenv-sqlindex-property
 ---
 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-sqlindex-property.md
+-->  
  
 
 # SQLIndex Property

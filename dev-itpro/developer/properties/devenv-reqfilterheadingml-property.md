@@ -10,7 +10,13 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 2ee40a72-9b03-4ddf-878a-324921671ec9
 caps.latest.revision: 13
 author: SusanneWindfeldPedersen
+redirect_url: devenv-requestfilterheadingml-property
+
 ---
+
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-requestfilterheadingml-property.md
+--> 
 
 # ReqFilterHeadingML Property
 Sets the text used as a [ReqFilterHeading Property](devenv-reqfilterheading-property.md) for a request page tab.  

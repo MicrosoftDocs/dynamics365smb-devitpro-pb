@@ -10,9 +10,12 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 1ed10f7d-2c47-4b96-b064-d8f8479e6473
 caps.latest.revision: 8
 author: SusanneWindfeldPedersen
+redirect_url: devenv-dataitemtablefilter-property
 ---
 
- 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-dataitemtablefilter-property.md
+-->  
 
 # DataItemTableFilter Property
 Sets filters on fields of the underlying table of a query.  
