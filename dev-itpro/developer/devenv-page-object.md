@@ -32,7 +32,7 @@ Typing the shortcut ```tpage``` will create the basic layout for a page object w
 ## Page example
 
 ```
-page 70000200 SimpleCustomerCard
+page 50101 SimpleCustomerCard
 {
     PageType = Card;
     SourceTable = Customer;

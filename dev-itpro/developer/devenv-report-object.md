@@ -35,7 +35,7 @@ Typing the shortcut ```treport``` will create the basic layout for a report obje
 The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a report, see [Creating a Report](devenv-howto-report-layout.md).
 
 ```
-report 70010101 "Customer List"
+report 50103 "Customer List"
 {
   CaptionML=ENU='Customer List';
   RDLCLayout = 'Customer List Report.rdlc'; // if Word use WordLayout property
