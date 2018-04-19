@@ -1,5 +1,6 @@
 ---
 title: "AutoFormatType Property"
+ms.author: solsen
 ms.custom: na
 ms.date: 06/09/2017
 ms.reviewer: na
@@ -12,7 +13,6 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
- 
 
 # AutoFormatType Property
 Sets a value that determines how data is formatted, together with the AL expression in the [AutoFormatExpresssion Property](devenv-autoformatexpr-property.md).  
@@ -30,4 +30,4 @@ Sets a value that determines how data is formatted, together with the AL express
  These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios.  
     
 ## See Also  
- [AutoFormatExpression Property](devenv-autoformatexpr-property.md)
+ [AutoFormatExpression Property](devenv-autoformatexpression-property.md)

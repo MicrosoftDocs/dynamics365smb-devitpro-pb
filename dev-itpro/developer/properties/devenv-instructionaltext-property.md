@@ -18,11 +18,11 @@ Sets the text used for instructions in the UI.
   
 ## Applies To  
   
--   Page object.  
+-   Page object  
   
--   RequestPage.
+-   RequestPage
 
--   PageGroup.
+-   PageGroup
 
 ## See also
 [Page object](../devenv-page-object.md)  

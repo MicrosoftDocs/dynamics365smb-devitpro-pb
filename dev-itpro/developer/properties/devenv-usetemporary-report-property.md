@@ -1,6 +1,6 @@
 ---
 title: "UseTemporary Property (Report)"
-author: edupont04
+author: solsen
 ms.custom: na
 ms.date: 04/18/2018
 ms.reviewer: na

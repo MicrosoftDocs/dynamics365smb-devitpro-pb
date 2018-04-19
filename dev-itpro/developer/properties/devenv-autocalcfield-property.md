@@ -12,7 +12,6 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
- 
 
 # AutoCalcField Property
 Sets whether FlowFields should be automatically calculated.  
