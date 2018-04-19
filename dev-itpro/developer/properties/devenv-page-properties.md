@@ -1,6 +1,6 @@
 ---
 title: "Page Properties"
-author: edupont04
+author: solsen
 ms.custom: na
 ms.date: 06/15/2017
 ms.reviewer: na
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 5f4027ee-499a-4d18-a1a1-d289ecbad72e
-ms.author: edupont
+ms.author: solsen
 ---
 
  

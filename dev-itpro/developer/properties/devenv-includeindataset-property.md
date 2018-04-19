@@ -1,6 +1,6 @@
 ---
 title: "IncludeInDataSet Property"
-author: edupont04
+author: solsen
 ms.custom: na
 ms.date: 06/14/2017
 ms.reviewer: na
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 1f39b1b8-1eef-455a-878f-47f29d4ffe91
-ms.author: edupont
+ms.author: solsen
 ---
 
  
