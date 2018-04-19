@@ -10,8 +10,11 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 4bfc7edc-4561-4da4-b725-623d1c86be99
 caps.latest.revision: 7
 author: SusanneWindfeldPedersen
+redirect_url: devenv-maintainsiftindex-property
 ---
-
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-maintainsiftindex-property.md
+-->  
  
 
 # MaintainSIFTIndex Property

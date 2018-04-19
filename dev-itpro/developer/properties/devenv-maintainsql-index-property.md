@@ -10,8 +10,12 @@ ms.service: "dynamics365-business-central"
 ms.assetid: b9dfd30d-e935-477b-aba6-3cdf30cf0413
 caps.latest.revision: 5
 author: SusanneWindfeldPedersen
+redirect_url: devenv-maintainsqlindex-property
 ---
 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-maintainsqlindex-property.md
+-->  
  
 
 # MaintainSQLIndex Property

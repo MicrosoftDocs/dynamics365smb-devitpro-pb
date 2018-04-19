@@ -360,7 +360,7 @@ This topic lists properties that apply to the page object, controls, and actions
 
 -   [ID Property](devenv-id-property.md)  
 
--   IsHeader  
+-   [IsHeader](devenv-isheader-property.md)  
 
 ## See Also  
  [Properties](devenv-properties.md)
