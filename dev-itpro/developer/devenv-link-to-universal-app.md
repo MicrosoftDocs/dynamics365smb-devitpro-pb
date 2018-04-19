@@ -35,7 +35,7 @@ ms-businesscentral://[<hostname>:][<port>][/<instance>]/[?<parameter>=<value>[&<
 -->
 
 ```
-ms-businesscentral://[<hostname>:][<port>]/[?<parameter>=<value>[&<parameter>=<value>]]
+ms-businesscentral://[<hostname>][:<port>]/[?<parameter>=<value>[&<parameter>=<value>]]
 ```
 <!--  
 |Parameter|Description|  
@@ -51,7 +51,11 @@ ms-businesscentral://[<hostname>:][<port>]/[?<parameter>=<value>[&<parameter>=<v
 
 -->
 
-Parameters in `[]` are optional; all other parameters are required.
+`[]` indicates an optional parameter; all other parameters are required.
+
+`<>`indicate values that you must supply. Do not include the brackets in the address.
+
+
 
 ## Parameters
 The following table describes the parameters for the main part of the URL, which are the parameters up to and including `[/<port>]/` <!-- `[/<instance>]/`-->. These parameters are ony relavant for ISV Embed solutions.
