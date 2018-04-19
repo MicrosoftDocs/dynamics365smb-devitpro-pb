@@ -10,9 +10,12 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 830a7ad9-3712-4c6d-a724-59a351631502
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
+redirect_url: devenv-provider-property
 ---
 
- 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-provider-property.md
+-->    
 
 # Provider Property
 Sets the Provider for a FactBox.  

@@ -10,9 +10,12 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 5e251ec0-0bf2-4139-a8a2-cfaca5dae3ad
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
+redirect_url: devenv-pdffontembedding-property
 ---
 
- 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-pdffontembedding-property.md
+-->  
 
 # PDFFontEmbedding Property
 Specifies whether fonts are embedded in PDF files that are generated for reports.  

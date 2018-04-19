@@ -19,7 +19,7 @@ Specifies the table field that the trigger event pertains to.
 
 ## Applies to  
 
--   AL Methods.  
+-   AL methods  
 
      This property is only available on event subscriber methods that handle validation-type trigger events. The [Event Property](devenv-event-property.md) must be set to **Subscriber**, the [EventPublisherObject Property](devenv-eventpublisherobject-property.md) must be set to a table, and the [Eventmethod Property](devenv-eventmethod-property.md) must be set to a validate trigger event, such as **OnAfterValidateEvent**.  
 

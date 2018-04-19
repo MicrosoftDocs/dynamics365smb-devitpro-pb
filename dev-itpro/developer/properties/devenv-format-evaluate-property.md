@@ -10,9 +10,12 @@ ms.service: "dynamics365-business-central"
 ms.assetid: a2c73a08-58f9-48dd-860f-b898c56b6879
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
+redirect_url: devenv-formatevaluate-property
 ---
 
- 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-formatevaluate-property.md
+--> 
 
 # Format-Evaluate Property
 Sets the data that is being imported or exported as XML data types or as the standard AL data types.  

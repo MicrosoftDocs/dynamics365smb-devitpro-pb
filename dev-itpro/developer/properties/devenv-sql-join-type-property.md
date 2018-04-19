@@ -10,9 +10,12 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 87e3c92e-3651-45cb-9741-05ca8cde85bd
 caps.latest.revision: 7
 author: SusanneWindfeldPedersen
+redirect_url: devenv-sqljointype-property
 ---
 
- 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-sqljointype-property.md
+-->   
 
 # SQLJoinType Property
 Sets the data item link type between data items in a query to determine the records that are included in the resulting dataset.  

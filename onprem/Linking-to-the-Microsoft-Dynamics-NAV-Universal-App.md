@@ -11,21 +11,31 @@ author: jswymer
 ms.author: jswymer
 ---
 # Linking to the Microsoft Dynamics NAV Universal App
-The protocol handler for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] lets you construct a URL for starting the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a device. You can then distribute this URL by e-mail or from a Web page to the users.  
+The protocol handler for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] lets you construct a URL for starting the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a device, such as a phone or tablet. You can then distribute this URL by e-mail or from a Web page to the users.  
   
-The *ms-dynamicsnav* scheme is registered automatically when the app is installed. From this point onward, invoking a URL based on this URI scheme will start the app with the provided parameters.  
+The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] URL is based on the *ms-businesscentral<!-- ms-dynamicsnav-->* URI scheme, which is registered automatically when the app is installed. Invoking a URL based on this scheme will start the app with the provided parameters.  
   
 ## Constructing the URL  
-To start the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] from a link, construct a URL with the *ms-dynamicsnav* scheme pointing to your [!INCLUDE[navnow](includes/navnow_md.md)] Web server.  
-  
-The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)] and resembles this:  
+To construct a URL, start with *ms-businesscentral<!-- ms-dynamicsnav-->* scheme, and then add additional parameters as needed. Some parameters are required and others are optional. 
 
-<!--  
-`ms-dynamicsnav://<Server>:<Port>/<Instance>/[?tenant=<Tenant>&company=<Company>]/?profile=/?page=`  
+<!-- pointing to your [!INCLUDE[navnow](includes/navnow_md.md)] Web server.-->  
+  
+The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)], and has the following syntax:  
+
+<!--
+```
+ms-dynamicsnav://<hostname>:[<port>][/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
+```
+-->
+
+<!--
+```
+ms-businesscentral://[<hostname>:][<port>][/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
+```
 -->
 
 ```
-ms-dynamicsnav://<hostname>:[<port>][/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
+ms-businesscentral://[<hostname>:][<port>]/[?<parameter>=<value>[&<parameter>=<value>]]
 ```
 <!--  
 |Parameter|Description|  
@@ -41,40 +51,56 @@ ms-dynamicsnav://<hostname>:[<port>][/<instance>]/[?<parameter>=<value>[&<parame
 
 -->
 
-Parameters in `[]`are optional; all other parameters are required.
+Parameters in `[]` are optional; all other parameters are required.
 
 ## Parameters
-The following table describes the parameters for the main part of the URL, which are the parameters up to and including `[/<instance>]/`. 
+The following table describes the parameters for the main part of the URL, which are the parameters up to and including `[/<port>]/` <!-- `[/<instance>]/`-->. These parameters are ony relavant for ISV Embed solutions.
 
 |Parameter|Description| Example |
 |---------|-----------|---------|  
-|hostname|The hostname of the [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance. For example, this can be a URL or the name of the computer that hosts the [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance.| `www.financials.dynamics-smb.com`<br /><br />`mywebservercomputer`| 
-|Port|The port number for your [!INCLUDE[nav_web](includes/nav_web_md.md)] server instance. If not provided, the standard SSL port \(443\) is used.| `8080` |
+|hostname|The computer name, domain name, or IP address of the computer/server that hosts the [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance.| `businesscentral.mysolution.com`<br /><br />`mysolutionwebservercomputer`| 
+|port|The port number for your [!INCLUDE[nav_web](includes/nav_web_md.md)] server instance. If not provided, the standard SSL port \(443\) is used.| `8080` |
+
+<!--
 |Instance|The [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance that you want to connect to.| `dynamicsnav110`|
 
-The following table describes the optional parameters that you can specify after `[/<instance>]/`. These parameters are referred to as query parameters.
+-->
+The following table describes the optional parameters that you can specify<!-- after `[/<instance>]/`-->. These parameters are referred to as the *query parameters*.
 
 |Parameter|Description| Example |
 |---------|-----------|---------|  
-|page	|The ID of the page that you want to open directly.|`page=21`|
-|bookmark|	The bookmark of the record you want to open. The value of a bookmark is an alphanumeric string of characters, for example, `19%3bGwAAAAJ7BDEAMAAwADA%3d`.<br /><br /> For the page types Card, CardPart, and Document, the bookmark specifies the record that is shown in the page. For page types List, ListPart, and Worksheet, the bookmark specifies the record that is selected in the list on the page.<br /><br /> **Important:**  Bookmarks are generated automatically. You can only determine a value for the bookmark by displaying the page in the client and looking at its address. Therefore, a bookmark is only relevant when the address you are working with has been copied from another instance of the page.|`bookmark=19%3bGwAAAAJ7BDEAMAAwADA%3d`|
-|filter	|The filter you want to apply to the page.<br /><br />The filter parameter enables you to display only records from the underlying table of the page that have specific values for one or more fields.	For more information about filters, see [Filtering Data on the Page](devenv-web-client-urls.md#filtering).|`filter='No.'%20IS%20'1001'`<br /> <br />`filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'`|
-|profile|The name of the profile that you want to use in the client. This determines the Role Center that is opened. If not provided, the default profile is used. Business Manager	|`profile=BUSINESS%20%MANAGER`|
-|tenant	|The ID of the tenant that you want to connect to. If not provided, the default tenant is used.|`tenant=mytenant2-1`|
-|company|The company that you want to open in the client. If not provided, the default company is used. CRONUS%20International%20Ltd.|`company=CRONUS%20International%20Ltd.`|
-|mode|Whether the page opens in view, edit, or create mode. `view` only lets you see the data on the page, not modify data. `edit` lets you to modify data on the page. `create` lets you to modify data on the page and add new entities. |`mode=create`|
+|page	|The ID of the page that you want to open directly.|`ms-businesscentral:///?page=21`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page=21`|
+|bookmark|	The bookmark of the record you want to open. The value of a bookmark is an alphanumeric string of characters, for example, `19%3bGwAAAAJ7BDEAMAAwADA%3d`.<br /><br /> For the page types Card, CardPart, and Document, the bookmark specifies the record that is shown in the page. For page types List, ListPart, and Worksheet, the bookmark specifies the record that is selected in the list on the page.<br /><br /> **Important:**  Bookmarks are generated automatically. You can only determine a value for the bookmark by displaying the page in the client and looking at its address. Therefore, a bookmark is only relevant when the address you are working with has been copied from another instance of the page.|`ms-businesscentral:///?bookmark=19%3bGwAAAAJ7BDEAMAAwADA%3d`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?bookmark=19%3bGwAAAAJ7BDEAMAAwADA%3d`|
+|filter	|The filter you want to apply to the page.<br /><br />The filter parameter enables you to display only records from the underlying table of the page that have specific values for one or more fields.	For more information about filters, see [Filtering Data on the Page](devenv-web-client-urls.md#filtering).|`ms-businesscentral:///?page9305&filter='No.'%20IS%20'1001'`<br /><br />`ms-businesscentral:///?page9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page9305&filter='No.'%20IS%20'1001'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'`|
+|profile|The name of the profile that you want to use in the client. This determines the Role Center that is opened. If not provided, the default profile is used. Business Manager	|`ms-businesscentral:///?profile=BUSINESS%20%MANAGER`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?profile=BUSINESS%20%MANAGER`|
+|company|The company that you want to open in the client. If not provided, the default company is used. CRONUS%20International%20Ltd.|`ms-businesscentral:///?'company=CRONUS%20International%20Ltd.'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?'company=CRONUS%20International%20Ltd.'`|
+|mode|Whether the page opens in view, edit, or create mode. `view` only lets you see the data on the page, not modify data. `edit` lets you to modify data on the page. `create` lets you to modify data on the page and add new entities. |`ms-businesscentral:///?page=21&mode=create`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page=21&mode=create`|
+
+<!--
+|tenant	|The ID of the tenant that you want to connect to. If not provided, the default tenant is used.|`ms-businesscentral:///?tenant=mytenant2-1`|
+-->
 
 
-The first parameter is preceded by a ? symbol, any additional parameters are preceded by an & symbol.
+The parameters can be in any order. However, the first parameter must be preceded by the `?` symbol, and any additional parameters must be preceded by the `&` symbol.
 
 > [!NOTE]  
-> It is not possible to specify which client type to open up the URL in; the last used client will open up when clicking the URL.
->
-> The URL `ms-dynamicsnav:///?page=21` will open the server that you last connected to on the specified page.  
-  
+> It is not possible to specify which client/device type to open up the URL in; the last used client will open up when clicking the URL.
+
+<!-- add for onprem
+The URL `ms-businesscentral:///?page=21` or `ms-dynamicsnav:///?page=21` will open the server that you last connected to on the specified page.  -->
+
+<!-- 
 ## URL Examples  
  The following examples demonstrate how to use the parameters from the table earlier in this section:  
   
+-   *ms-businesscentral://myserver/myinstance/*  
+  
+-   *ms-businesscentral://myserver:440/myinstance/*  
+  
+-   *ms-businesscentral://myserver/myinstance/?company=MyOtherCompany*  
+  
+-   *ms-businesscentral://myserver/myinstance/?tenant=myTenant2&company=MyCompany2*  
+
 -   *ms-dynamicsnav://myserver/myinstance/*  
   
 -   *ms-dynamicsnav://myserver:440/myinstance/*  
@@ -83,15 +109,29 @@ The first parameter is preceded by a ? symbol, any additional parameters are pre
   
 -   *ms-dynamicsnav://myserver/myinstance/?tenant=myTenant2&company=MyCompany2*  
   
-> [!IMPORTANT]  
->  The *ms-dynamicsnav* scheme only translates to a secure server connection. Therefore the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] must be exposed through an https connection. For more information, see [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md).  
+-->
+
+<!-- Add this as note in onprem
+ 
+[!IMPORTANT]  
+The *ms-businesscentral or ms-dynamicsnav * scheme only translates to a secure server connection. Therefore the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] must be exposed through an https connection. For more information, see [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md). 
+-->
+
   
 ## Adding a user name to the URL  
- The *ms-dynamicsnav* scheme also supports sending the user name in the URL for pre-filling the user name. The password must be entered by the user. To send the user name, you must URL encode the value and prefix the server address by using *\<encoded username>@*. Examples are as follows:  
+ The *ms-businesscentral<!--dynamicsnav-->* scheme also supports sending the user name in the URL for pre-filling the user name. The password must be entered by the user. To send the user name, you must URL encode the value and prefix the server address by using *\<encoded username>@*. Examples are as follows:  
   
+-   *ms-businesscentral://demouser%40mycompany.com@myserver/myinstance/*  
+  
+-   *ms-businesscentral://user1:@myserver/myinstance/*  
+
+<!-- 
+
 -   *ms-dynamicsnav://demouser%40mycompany.com@myserver/myinstance/*  
   
 -   *ms-dynamicsnav://user1:@myserver/myinstance/*  
+
+-->  
   
 > [!IMPORTANT]  
 >  We recommend that you do not share a user name in the URL. This technique should only be used in demonstration scenarios and other instances where the accidental sharing of a URL will not compromise the system.  

@@ -9,8 +9,12 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: c90654ad-da85-496c-900a-1c2fc7dd2f2b
 caps.latest.revision: 13
+redirect_url: devenv-requestfilterfields-property
 ---
 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-requestfilterfields-property.md
+--> 
  
 
 # ReqFilterFields Property

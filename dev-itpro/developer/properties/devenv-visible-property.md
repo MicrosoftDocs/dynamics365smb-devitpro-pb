@@ -1,6 +1,6 @@
 ---
 title: "Visible Property"
-author: edupont04
+author: solsen
 ms.custom: na
 ms.date: 06/16/2017
 ms.reviewer: na

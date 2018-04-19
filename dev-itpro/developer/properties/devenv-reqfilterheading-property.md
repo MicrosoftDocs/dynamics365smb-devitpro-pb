@@ -9,9 +9,12 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: e11c0fa0-0d61-43b9-8613-cb443588e790
 caps.latest.revision: 8
+redirect_url: devenv-requestfilterheading-property
 ---
 
- 
+<!--
+IMPORTANT: DO NOT UPDATE THIS FILE, BUT devenv-requestfilterheading-property.md
+--> 
 
 # ReqFilterHeading Property
 Sets a caption for the request page tab that is related to this data item. The value is taken from the [ReqFilterHeadingML Property](devenv-reqfilterheadingml-property.md) if this property is set.  

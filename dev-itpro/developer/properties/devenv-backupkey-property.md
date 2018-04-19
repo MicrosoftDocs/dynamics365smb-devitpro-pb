@@ -1,6 +1,6 @@
 ---
 title: "BackupKey Property"
-author: edupont04
+author: solsen
 ms.custom: na
 ms.date: 06/09/2017
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 7ad43e31-536a-41d8-a234-7972afd18037
 caps.latest.revision: 5
-ms.author: edupont
+ms.author: solsen
 ---
 
  

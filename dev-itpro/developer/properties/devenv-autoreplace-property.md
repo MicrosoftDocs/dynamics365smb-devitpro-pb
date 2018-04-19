@@ -1,5 +1,6 @@
 ---
 title: "AutoReplace Property"
+ms.author: solsen
 ms.custom: na
 ms.date: 06/09/2017
 ms.reviewer: na
@@ -11,8 +12,6 @@ ms.assetid: 6a09a5b0-1106-45a4-83b5-367138884339
 caps.latest.revision: 11
 author: SusanneWindfeldPedersen
 ---
-
- 
 
 # AutoReplace Property
 Sets whether imported records automatically replace existing records with the same primary key.  

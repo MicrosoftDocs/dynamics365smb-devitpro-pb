@@ -19,7 +19,7 @@ Specifies the type of event that is published by the event publisher function.
   
 ## Applies to  
   
--   AL functions.  
+-   AL methods  
   
      This property is only available when the [Event Property](devenv-event-property.md) of a function is set to **Publisher**.  
   

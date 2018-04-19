@@ -1,7 +1,7 @@
 ---
 title: "DataItemLink Property (Query)"
 ms.custom: na
-ms.date: 06/02/2017
+ms.date: 04/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,9 +10,8 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 9a76b82f-c9fa-40a0-9f47-9bbb27deb809
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
----
 
- 
+---
 
 # DataItemLink Property (Query)
 Sets a reference between one or more fields of the data item table and data item or data items above it.  
