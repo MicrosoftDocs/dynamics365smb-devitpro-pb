@@ -43,22 +43,24 @@ page 70000200 SimpleCustomerCard
         {
             group(General)
             {
-                field("No.";"No.")
+                field("No."; "No.")
                 {
                     ApplicationArea = All;
-                    CaptionML = ENU='Hello';
+                    CaptionML = ENU = 'Hello';
 
                     trigger OnValidate()
                     begin
-                        if "No." < 20
+                        if "No." < '' then
                             Message('Number too small')
                     end;
                 }
 
-                field(Name;Name) {
+                field(Name; Name)
+                {
                     ApplicationArea = All;
                 }
-                field(Address;Address) {
+                field(Address; Address)
+                {
                     ApplicationArea = All;
                 }
             }
@@ -72,7 +74,7 @@ page 70000200 SimpleCustomerCard
             {
                 ApplicationArea = All;
                 RunObject = codeunit "Document Totals";
-            }         
+            }
         }
     }
 }
