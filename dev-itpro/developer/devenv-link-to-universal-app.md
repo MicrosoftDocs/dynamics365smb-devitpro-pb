@@ -36,9 +36,9 @@ The following table describes the parameters for the main part of the URL, which
 
 |Parameter|Description| Example |
 |---------|-----------|---------|  
-|hostname|The <!-- onprem computer name, -->domain name or IP address of the computer/server that hosts the [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance.| `ms-businesscentral://businesscentral.mysolution.com`<br /><br />`ms-businesscentral://192.168.0.254/`| 
-|port|The port number for your [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance. If not provided, the standard SSL port \(443\) is used.| `ms-businesscentral://businesscentral.mysolution.com:80/`<br /><br />`ms-businesscentral://192.168.0.254:80/`  |
-|instance|The [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance that you want to connect to.| `ms-businesscentral://businesscentral.mysolution.com:80/myserverinstance/`<br /><br />`ms-businesscentral://192.168.0.254:80/myserverinstance/`|
+|hostname|The <!-- onprem computer name, -->domain name or IP address of the computer/server that hosts the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution.| `ms-businesscentral://businesscentral.mysolution.com`<br /><br />`ms-businesscentral://192.168.0.254/`| 
+|port|The port number on which your <!-- [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance -->[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution runs. If not provided, the standard SSL port \(443\) is used.| `ms-businesscentral://businesscentral.mysolution.com:80/`<br /><br />`ms-businesscentral://192.168.0.254:80/`  |
+|instance|The <!-  [!INCLUDE[nav_web_server_instance_md](includes/dnav_web_server_instance_md.md)] instance --> [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] web server that you want to connect to.| `ms-businesscentral://businesscentral.mysolution.com:80/myserverinstance/`<br /><br />`ms-businesscentral://192.168.0.254:80/myserverinstance/`|
 
 
 <!--
