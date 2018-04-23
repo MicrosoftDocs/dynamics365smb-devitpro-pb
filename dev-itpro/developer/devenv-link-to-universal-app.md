@@ -13,49 +13,22 @@ ms.author: jswymer
 # Linking to the Microsoft Dynamics NAV Universal App
 The protocol handler for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] lets you construct a URL for starting the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a device, such as a phone or tablet. You can then distribute this URL by e-mail or from a Web page to the users.  
   
-The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] URL is based on the *ms-businesscentral<!-- ms-dynamicsnav-->* URI scheme, which is registered automatically when the app is installed. Invoking a URL based on this scheme will start the app with the provided parameters.  
+The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] URL is based on the *ms-businesscentral* URI scheme, which is registered automatically when the app is installed. Invoking a URL based on this scheme will start the app with the provided parameters.  
   
 ## Constructing the URL  
-To construct a URL, start with *ms-businesscentral<!-- ms-dynamicsnav-->* scheme, and then add additional parameters as needed. Some parameters are required and others are optional. 
+To construct a URL, start with *ms-businesscentral* scheme, and then add additional parameters as needed. Some parameters are required and others are optional. 
 
 <!-- pointing to your [!INCLUDE[navnow](includes/navnow_md.md)] Web server.-->  
   
 The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)], and has the following syntax:  
 
-<!--
-```
-ms-dynamicsnav://<hostname>:[<port>][/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
-```
--->
-
-<!--
-```
-ms-businesscentral://[<hostname>:][<port>][/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
-```
--->
-
 ```
 ms-businesscentral://[<hostname>][:<port>]/[?<parameter>=<value>[&<parameter>=<value>]]
 ```
-<!--  
-|Parameter|Description|  
-|---------------|-----------------|  
-|Server|Optional. The public address for your [!INCLUDE[nav_web](includes/nav_web_md.md)] server.|  
-|Port|Optional. The port number for your [!INCLUDE[nav_web](includes/nav_web_md.md)] server. If not provided, the standard SSL port \(443\) is used.|  
-|Instance|Optional. The [!INCLUDE[nav_web](includes/nav_web_md.md)] instance that you want to connect to.|  
-|Tenant|Optional. The tenant that you want to connect to. If not provided, the default tenant is used.|  
-|Company|Optional. The company that you want to connect to. If not provided, the default company is used.|  `
-|Profile|Optional. The profile that you want to connect with. If not provided, the default profile is used.|  
-
-|Redirect|Optional. When users run the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] in a browser, they will be presented with an option to download the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] instead in order to improve the user experience. However, if this is not a wanted scenario, this experience can be manually overridden by adding the parameter ```?redirect=0``` to the URL.|  
-
--->
 
 `[]` indicates an optional parameter; all other parameters are required.
 
 `<>`indicate values that you must supply. Do not include the brackets in the address.
-
-
 
 ## Parameters
 The following table describes the parameters for the main part of the URL, which are the parameters up to and including `[/<port>]/` <!-- `[/<instance>]/`-->. These parameters are ony relavant for ISV Embed solutions.
@@ -93,27 +66,6 @@ The parameters can be in any order. However, the first parameter must be precede
 <!-- add for onprem
 The URL `ms-businesscentral:///?page=21` or `ms-dynamicsnav:///?page=21` will open the server that you last connected to on the specified page.  -->
 
-<!-- 
-## URL Examples  
- The following examples demonstrate how to use the parameters from the table earlier in this section:  
-  
--   *ms-businesscentral://myserver/myinstance/*  
-  
--   *ms-businesscentral://myserver:440/myinstance/*  
-  
--   *ms-businesscentral://myserver/myinstance/?company=MyOtherCompany*  
-  
--   *ms-businesscentral://myserver/myinstance/?tenant=myTenant2&company=MyCompany2*  
-
--   *ms-dynamicsnav://myserver/myinstance/*  
-  
--   *ms-dynamicsnav://myserver:440/myinstance/*  
-  
--   *ms-dynamicsnav://myserver/myinstance/?company=MyOtherCompany*  
-  
--   *ms-dynamicsnav://myserver/myinstance/?tenant=myTenant2&company=MyCompany2*  
-  
--->
 
 <!-- Add this as note in onprem
  
@@ -127,7 +79,13 @@ The *ms-businesscentral or ms-dynamicsnav * scheme only translates to a secure s
   
 -   *ms-businesscentral://demouser%40mycompany.com@myserver/myinstance/*  
   
+-   *ms-businesscentral://user1:@myserver/myinstance/*
+
+  
+-   *ms-businesscentral://demouser%40mycompany.com@myserver/myinstance/*  
+  
 -   *ms-businesscentral://user1:@myserver/myinstance/*  
+  
 
 <!-- 
 
