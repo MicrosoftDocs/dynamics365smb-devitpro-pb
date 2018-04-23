@@ -73,30 +73,31 @@ The URL `ms-businesscentral:///?page=21` or `ms-dynamicsnav:///?page=21` will op
 The *ms-businesscentral or ms-dynamicsnav * scheme only translates to a secure server connection. Therefore the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] must be exposed through an https connection. For more information, see [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md). 
 -->
 
-  
+<!--   
 ## Adding a user name to the URL  
- The *ms-businesscentral<!--dynamicsnav-->* scheme also supports sending the user name in the URL for pre-filling the user name. The password must be entered by the user. To send the user name, you must URL encode the value and prefix the server address by using *\<encoded username>@*. Examples are as follows:  
-  
+ The *ms-businesscentral* scheme also supports sending the user name in the URL for pre-filling the user name. The password must be entered by the user. To send the user name, you must URL encode the value and prefix the server address by using *\<encoded username>@*. Examples are as follows:  
+
 -   *ms-businesscentral://demouser%40mycompany.com@myserver/myinstance/*  
   
 -   *ms-businesscentral://user1:@myserver/myinstance/*
+  
+*ms-businesscentral://demouser%40businesscentral.dynamics.com
 
-  
--   *ms-businesscentral://demouser%40mycompany.com@myserver/myinstance/*  
-  
--   *ms-businesscentral://user1:@myserver/myinstance/*  
+*ms-businesscentral://demouser%40businesscentral.mysolution.com@myserver/myinstance/* 
+
+*ms-businesscentral://user1:@myserver/myinstance/*  
   
 
-<!-- 
 
 -   *ms-dynamicsnav://demouser%40mycompany.com@myserver/myinstance/*  
   
 -   *ms-dynamicsnav://user1:@myserver/myinstance/*  
 
--->  
   
 > [!IMPORTANT]  
 >  We recommend that you do not share a user name in the URL. This technique should only be used in demonstration scenarios and other instances where the accidental sharing of a URL will not compromise the system.  
+
+-->
   
 ## See Also  
 [Web Client URL](devenv-web-client-urls.md)    
