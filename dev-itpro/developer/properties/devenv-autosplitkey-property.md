@@ -12,8 +12,6 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # AutoSplitKey Property
 Sets whether a key is automatically created for a new record placed between the current record and the previous record.  
   

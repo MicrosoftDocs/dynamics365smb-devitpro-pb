@@ -21,11 +21,10 @@ Sets the multilanguage value of the InstructionalText of the object. Use this pr
 > The support for using the ML properties, such as **CaptionML** and **TooltipML**, is being deprecated, so it is recommended to refactor your extension to use the corresponding **Caption** or **Tooltip** property, which is being picked up in the .xliff file. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
   
 ## Applies To  
- Pages including:  
+Pages including:  
   
-1.  Page properties  
-  
-2.  Group control  
+- Page properties  
+- Group controls  
   
 ## See Also  
  [Properties](devenv-properties.md)

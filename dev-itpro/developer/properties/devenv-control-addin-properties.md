@@ -1,7 +1,7 @@
 ---
 title: Control Add-In Properties
 description: This topic lists properties that apply to control add-in object.
-author: edupont04
+author: solsen
 ms.custom: na
 ms.date: 04/12/2018
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: cf65e1e0-f696-4aac-afbd-992cd82f98de
-ms.author: edupont
+ms.author: solsen
 ---
 
 [!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]

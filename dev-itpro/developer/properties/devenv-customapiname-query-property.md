@@ -1,6 +1,6 @@
 ---
 title: "CustomAPIName Property (Query)"
-author: edupont04
+author: solsen
 ms.custom: na
 ms.date: 04/16/2018
 ms.reviewer: na

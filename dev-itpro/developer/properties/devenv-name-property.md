@@ -9,10 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: ead6388f-9985-451d-91d5-6d1e42bb5620
 caps.latest.revision: 10
-ms.author: edupont
+ms.author: solsen
 ---
-
- 
 
 # Name Property
 Sets the name of the object. The name is used for internal identification of the objects, controls, and other elements in AL code and the development environment.  

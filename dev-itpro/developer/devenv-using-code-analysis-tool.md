@@ -22,7 +22,7 @@ This topic shows how you can use static code analysis tool on an AL project from
 ## Enabling code analysis
 First, create a simple project in AL. 
 1. Press **Alt + A, Alt + L** to create a new project.
-2. Open the Command Palette **Ctrl+Shift+B** and choose either User Settings or Workspace Settings.
+2. Open the Command Palette **Ctrl+Shift+P** and choose either User Settings or Workspace Settings.
 3. Copy the setting **al.enableCodeAnalysis** to the settings file and set it to `true`: **"al.enableCodeAnalysis": true**.
 
 At this point, the analyzers packaged with the AL Language extensions will be run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate a violation of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
@@ -63,7 +63,7 @@ The AL Language extension for Visual Studio Code contains three analyzers:
 ## Selecting code analyzers to run
 By default, all the analyzers that ship with the Visual Studio Code extension are enabled.
 To selectively enable code analyzers:
-1. Open the Command Palette using the **Ctrl+Shift+B** shortcut and choose either User Settings or Workspace Settings.
+1. Open the Command Palette using the **Ctrl+Shift+P** shortcut and choose either User Settings or Workspace Settings.
 2. Copy the setting **al.codeAnalyzers** to the settings file and set it to an empty array: **"al.codeAnalyzers": []**.
 3. Add to the array the paths to the code analyzer assemblies that you want to run.
 

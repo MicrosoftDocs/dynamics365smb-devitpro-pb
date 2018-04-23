@@ -1,5 +1,6 @@
 ---
 title: "AssistEdit Property"
+ms.author: solsen
 ms.custom: na
 ms.date: 06/09/2017
 ms.reviewer: na

@@ -1,7 +1,7 @@
 ---
 title: Table and Table Extension Properties
 description: This topic lists table properties that apply to feilds of a table object.
-author: edupont04
+author: solsen
 ms.custom: na
 ms.date: 03/14/2017
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: cf65e1e0-f696-4aac-afbd-992cd82f98de
-ms.author: edupont
+ms.author: solsen
 ---
 
 [!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
@@ -21,7 +21,7 @@ The following topic lists properties that apply to the [Table Object](../devenv-
 |Property Name|Table Extension Object|Applies to|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)||<ul><li>BLOB field</li><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>TableFilter field</li><li>Text field</li><li>Time field</li></ul>|
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
 |[AutoFormatType Property](devenv-autoformattype-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
 |[AutoIncrement Property](devenv-autoincrement-property.md)||<ul><li>BigInteger</li></ul>|
 |[BlankNumbers Property](devenv-blanknumbers-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>|
@@ -109,7 +109,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[AutoIncrement Property](devenv-autoincrement-property.md)|X||
 |[BlankNumbers Property](devenv-blanknumbers-property.md)|X||
@@ -139,7 +139,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[BlankNumbers Property](devenv-blanknumbers-property.md)|X||
 |[BlankZero Property](devenv-blankzero-property.md)|X||
@@ -166,7 +166,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X|| 
 |[CaptionClass Property](devenv-captionclass-property.md)|X|X|
 |[CaptionML Property](devenv-captionml-property.md)|X|X|
@@ -193,7 +193,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[BlankNumbers Property](devenv-blanknumbers-property.md)|X||
 |[CaptionClass Property](devenv-captionclass-property.md)|X|X|
@@ -220,7 +220,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||  
 |[CaptionClass Property](devenv-captionclass-property.md)|X|X|
 |[CaptionML Property](devenv-captionml-property.md)|X|X|
@@ -242,7 +242,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[BlankNumbers Property](devenv-blanknumbers-property.md)|X||
 |[CaptionClass Property](devenv-captionclass-property.md)|X|X|
@@ -268,7 +268,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[BlankNumbers Property](devenv-blanknumbers-property.md)|X||
 |[BlankZero Property](devenv-blankzero-property.md)|X||
@@ -296,7 +296,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[BlankNumbers Property](devenv-blanknumbers-property.md)|X||
 |[BlankZero Property](devenv-blankzero-property.md)|X||  
@@ -324,7 +324,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[CaptionClass Property](devenv-captionclass-property.md)|X|X|
 |[CaptionML Property](devenv-captionml-property.md)|X|X|
@@ -346,7 +346,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[BlankNumbers Property](devenv-blanknumbers-property.md)|X||
 |[BlankZero Property](devenv-blankzero-property.md)|X|| 
@@ -374,7 +374,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X|| 
 |[CaptionClass Property](devenv-captionclass-property.md)|X|X|
 |[CaptionML Property](devenv-captionml-property.md)|X|X|
@@ -401,7 +401,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[CaptionClass Property](devenv-captionclass-property.md)|X|X|
 |[CaptionML Property](devenv-captionml-property.md)|X|X|
@@ -427,7 +427,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[BlankNumbers Property](devenv-blanknumbers-property.md)|X||
 |[BlankZero Property](devenv-blankzero-property.md)|X||
@@ -456,7 +456,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[CaptionClass Property](devenv-captionclass-property.md)|X|X|
 |[CaptionML Property](devenv-captionml-property.md)|X|X|
@@ -488,7 +488,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[CaptionClass Property](devenv-captionclass-property.md)|X|X|
 |[CaptionML Property](devenv-captionml-property.md)|X|X|
@@ -514,7 +514,7 @@ The following topic lists properties that apply to the table object.
 |Property Name|Table Object|Table Extension Object|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
 |[BlankNumbers Property](devenv-blanknumbers-property.md)|X|| 
 |[CaptionClass Property](devenv-captionclass-property.md)|X|X|

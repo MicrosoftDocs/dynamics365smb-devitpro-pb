@@ -28,7 +28,7 @@ The following properties apply to the page object.
 |[AccessByPermission Property](devenv-accessbypermission-property.md)||<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
 |[ApplicationArea Property](devenv-applicationarea-property.md)|X|<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
 |[AssistEdit Property](devenv-assistedit-property.md)||<ul><li>Field control</li></ul>|
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)||<ul><li>Field control</li></ul>|
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)||<ul><li>Field control</li></ul>|
 |[AutoFormatType Property](devenv-autoformattype-property.md)||<ul><li>Field control</li></ul>|
 |[AutoSplitKey Property](devenv-autosplitkey-property.md)||<ul><li>Page object</li></ul>|
 |[BlankNumbers Property](devenv-blanknumbers-property.md)||<ul><li>Field control</li></ul>|
@@ -203,7 +203,7 @@ The following properties apply to Field controls on a page.
 |[Description Property](devenv-description-property.md)|X|X|
 |[CaptionML Property](devenv-captionml-property.md)|X|X|
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X||
-|[AutoFormatExpression Property](devenv-autoformatexpr-property.md)|X||
+|[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|X||
 |[BlankNumbers Property](devenv-blanknumbers-property.md)|X||
 |[BlankZero Property](devenv-blankzero-property.md)|X||
 |[SignDisplacement Property](devenv-signdisplacement-property.md)|X||
