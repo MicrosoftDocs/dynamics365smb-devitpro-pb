@@ -24,4 +24,6 @@ Sets the custom name of the API endpoint that the query is exposed in. The custo
 
 
 ## See Also  
- [Properties](devenv-properties.md)
+[Properties](devenv-properties.md)   
+[Query Object](../devenv-query-object.md)  
+[CustomAPIName Property (Page)](devenv-customapiname-page-property.md)

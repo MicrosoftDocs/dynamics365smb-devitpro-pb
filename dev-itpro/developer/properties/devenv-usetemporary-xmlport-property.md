@@ -2,7 +2,7 @@
 title: "UseTemporary Property (XMLPort)"
 author: solsen
 ms.custom: na
-ms.date: 04/18/2018
+ms.date: 04/23/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,5 +21,6 @@ Sets whether a temporary table is created to store the records imported using th
 
 ## See Also  
 [Properties](devenv-properties.md)   
-[XMLPort Object](../devenv-xmlport-object.md) 
+[XMLPort Object](../devenv-xmlport-object.md)   
+[UseTemporary Property (Report)](devenv-usetemporary-report-property.md)
 
