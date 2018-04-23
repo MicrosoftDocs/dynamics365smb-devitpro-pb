@@ -1,5 +1,6 @@
 ---
 title: "ApplicationArea Property"
+ms.author: solsen
 ms.custom: na
 ms.date: 11/20/2017
 ms.reviewer: na
@@ -9,8 +10,6 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
- 
 
 # ApplicationArea Property
 Sets the application areas that apply to the control.  

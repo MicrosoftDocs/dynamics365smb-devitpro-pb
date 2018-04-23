@@ -19,7 +19,7 @@ Specifies the object that contains the event publisher method that the event sub
   
 ## Applies to  
   
--   AL Methods.  
+-   AL methods  
   
 This property is only available when the [Event Property](devenv-event-property.md) is set to **Subscriber**.  
   

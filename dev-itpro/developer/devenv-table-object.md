@@ -31,7 +31,7 @@ Typing the shortcut ```ttable``` will create the basic layout for a table object
 This table stores address information and has four fields; Address, Locality, Town/City, and County.
 
 ```
-table 70000030 Address
+table 50104 Address
 {
     captionML = ENU='Sample table';
     DataPerCompany = true;

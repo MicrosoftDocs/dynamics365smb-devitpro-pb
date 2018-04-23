@@ -1,5 +1,6 @@
 ---
 title: "AutoIncrement Property"
+ms.author: solsen
 ms.custom: na
 ms.date: 06/09/2017
 ms.reviewer: na
@@ -11,8 +12,6 @@ ms.assetid: 7d9e7a7a-238f-4f7f-8934-aecef8a44c24
 caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
-
- 
 
 # AutoIncrement Property
 Sets whether the field value should be automatically incremented.  
