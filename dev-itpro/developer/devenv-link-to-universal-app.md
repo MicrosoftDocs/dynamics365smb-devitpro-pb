@@ -23,7 +23,8 @@ To construct a URL, start with *ms-businesscentral* scheme, and then add additio
 The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)], and has the following syntax:  
 
 ```
-ms-businesscentral://[<hostname>][:<port>]/[?<parameter>=<value>[&<parameter>=<value>]]
+ms-businesscentral://<hostname>[:<port>]
+[/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
 ```
 
 `[]` indicates an optional parameter; all other parameters are required.
@@ -31,12 +32,15 @@ ms-businesscentral://[<hostname>][:<port>]/[?<parameter>=<value>[&<parameter>=<v
 `<>`indicate values that you must supply. Do not include the brackets in the address.
 
 ## Parameters
-The following table describes the parameters for the main part of the URL, which are the parameters up to and including `[/<port>]/` <!-- `[/<instance>]/`-->. These parameters are ony relavant for ISV Embed solutions.
+The following table describes the parameters for the main part of the URL, which are the parameters up to and including  <!--`[/<port>]/`--> `[/<instance>]/`. These parameters are only relavant for ISV Embed solutions.
 
 |Parameter|Description| Example |
 |---------|-----------|---------|  
-|hostname|The computer name, domain name, or IP address of the computer/server that hosts the [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance.| `businesscentral.mysolution.com`<br /><br />`mysolutionwebservercomputer`| 
+|hostname|The computer name, domain name, or IP address of the computer/server that hosts the [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance.| `businesscentral.mysolution.com`<br /><br />`mysolutionwebservercomputer`<br /><br />`ms-dynamicsnav://192.168.0.254/`| 
+|port|The port number for your [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance. If not provided, the standard SSL port \(443\) is used.| `ms-dynamicsnav://mywebservercomputer:80/`<br /><br />`ms-dynamicsnav://businesscentral.mysolution.com:80/`<br /><br />`ms-dynamicsnav://192.168.0.254:80/`  |
 |port|The port number for your [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance. If not provided, the standard SSL port \(443\) is used.| `8080` |
+|instance|The [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance that you want to connect to.| `ms-dynamicsnav://mywebservercomputer:80/myserverinstance/`<br /><br />`ms-dynamicsnav://businesscentral.mysolution.com:80/myserverinstance/`<br /><br />`ms-dynamicsnav://192.168.0.254:80/myserverinstance/`|
+
 
 <!--
 |Instance|The [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance that you want to connect to.| `dynamicsnav110`|
