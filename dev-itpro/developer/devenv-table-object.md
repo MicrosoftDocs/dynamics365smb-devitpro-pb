@@ -33,26 +33,26 @@ This table stores address information and has four fields; Address, Locality, To
 ```
 table 50104 Address
 {
-    captionML = ENU='Sample table';
+    caption = 'Sample table';
     DataPerCompany = true;
 
     fields
     {
-        field(1;Address;Text[50])
+        field(1; Address; Text[50])
         {
-            Description='Address retrieved by Service';
+            Description = 'Address retrieved by Service';
         }
-        field(2;Locality;Text[30])
+        field(2; Locality; Text[30])
         {
-            Description='Locality retrieved by Service';
+            Description = 'Locality retrieved by Service';
         }
-        field(3;"Town/City";Text[30])
+        field(3; "Town/City"; Text[30])
         {
-            Description='Town/City retrieved by Service';
+            Description = 'Town/City retrieved by Service';
         }
-        field(4;County;Text[30])
+        field(4; County; Text[30])
         {
-            Description='County retrieved by Service';
+            Description = 'County retrieved by Service';
 
             trigger OnValidate();
             begin
@@ -63,14 +63,14 @@ table 50104 Address
     }
     keys
     {
-        key(PrimaryKey;Address)
+        key(PrimaryKey; Address)
         {
-            Clustered=TRUE;
+            Clustered = TRUE;
         }
     }
 
     var
-        Msg : TextConst ENU='Hello from my method';
+        Msg: TextConst = 'Hello from my method';
 
     trigger OnInsert();
     begin

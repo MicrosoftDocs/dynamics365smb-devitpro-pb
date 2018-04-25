@@ -42,7 +42,7 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
             field("Shoe Size"; ShoeSize)
             {
                 ApplicationArea = All;
-                CaptionML = ENU='ShoeSize';
+                Caption = 'ShoeSize';
 
                 trigger OnValidate();
                 begin
@@ -54,7 +54,7 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
 
         modify("Address 2")
         {
-            CaptionML = ENU='New Address 2';
+            Caption = 'New Address 2';
         }
     }
 
@@ -67,7 +67,7 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
                 Action(MyAction1)
                 {
                     ApplicationArea = All;
-                    CaptionML = ENU='Hello!';
+                    Caption = 'Hello!';
 
                     trigger OnAction();
                     begin
@@ -84,8 +84,8 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
         }
     }
 
-   var
-        Msg : TextConst ENU='Hello from my method';
+    var
+        Msg: TextConst = 'Hello from my method';
 
     trigger OnOpenPage();
     begin
@@ -97,7 +97,7 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
 You can reference Report and XMLPort objects and use these objects in the **RunObject** property, as well as, declare variables of the types **Report** and **XMLPort** and call AL methods on them. This page extension object extends the Customer List page object by adding two actions; the first action calls the **Customer - List** report, the second action calls the **Export Contact** xmlport.
 
 ```
-pageextension 70000030 AddCustomerReport extends "Customer List"
+pageextension 50114 AddCustomerReport extends "Customer List"
 {
     actions
     {
