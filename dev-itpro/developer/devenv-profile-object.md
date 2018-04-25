@@ -29,7 +29,7 @@ Typing the shortcut ```tprofile``` will create the basic layout for a profile ob
 The following profile object example performs a validation to check if the `Business Manager` page of type RoleCenter exists, and if `MyCustomization` exists, and if it is a page customization object. Then the page customization modifies the layout of the **Customer List** to make the `Name` field invisible using the `modify` method. 
 
 ```
-profile TheBoss 
+profile TheBoss
 {
     Description = 'The Boss';
     RoleCenter = "Business Manager";
@@ -40,7 +40,8 @@ pagecustomization MyCustomization customizes "Customer List"
 {
     layout
     {
-        modify(Name) {
+        modify(Name)
+        {
             Visible = false;
         }
     }
