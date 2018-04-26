@@ -2,7 +2,7 @@
 title: "CustomAPIName Property (Page)"
 author: solsen
 ms.custom: na
-ms.date: 04/16/2018
+ms.date: 04/23/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,4 +22,5 @@ Sets the custom name of the API endpoint that the page is exposed in. The custom
 
 ## See Also  
 [Properties](devenv-properties.md)    
-[Page Object](../devenv-page-object.md)
+[Page Object](../devenv-page-object.md)   
+[CustomAPIName Property (Query)](devenv-customapiname-query-property.md)   

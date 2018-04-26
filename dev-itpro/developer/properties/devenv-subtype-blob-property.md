@@ -29,4 +29,5 @@ Sets additional information about what will be contained in the field.
 |**User-Defined \(default\)**|For user defined information|  
   
 ## See Also  
- [Properties](devenv-properties.md)
+[Properties](devenv-properties.md)   
+[SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)   

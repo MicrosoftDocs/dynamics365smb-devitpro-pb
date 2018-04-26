@@ -26,14 +26,14 @@ Typing the shortcut ```tcodeunit``` will create the basic layout for a codeunit 
 This codeunit example checks whether a given customer has registered a shoesize. If not, the customer is assigned a shoesize of 42.
 
 ```
-codeunit 70000100 CreateCustomer
+codeunit 50113 CreateCustomer
 {
     trigger OnRun();
     var
-        r : record Customer;
+        r: record Customer;
     begin
         if not r.HasShoeSize() then
-            r.ShoeSize :=  42;  
+            r.ShoeSize := 42;
     end;
 }
 

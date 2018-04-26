@@ -1,7 +1,7 @@
 ---
 title: "DataItemLink Property (Query)"
 ms.custom: na
-ms.date: 04/16/2018
+ms.date: 04/23/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,7 +50,8 @@ Salesperson Code=Salesperson.Code
  For a detailed step-by-step example of the DataItemLink property, see [Walkthrough: Creating a Query to Link Two Tables](Walkthrough--Creating-a-Query-to-Link-Two-Tables.md). --> 
   
 ## See Also  
- [DataItemLinkType Property](devenv-dataitemlink-type-property.md)  
+[DataItemLinkType Property](devenv-dataitemlink-type-property.md)      
+[DataItemLink Property (Reports)](devenv-dataitemlink-reports-property.md)  
  <!--  [Understanding Data Item Links](Understanding-Data-Item-Links.md)  
  [How to: Create Queries](How-to--Create-Queries.md)
  -->

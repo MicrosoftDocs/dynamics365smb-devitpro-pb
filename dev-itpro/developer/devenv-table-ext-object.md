@@ -36,11 +36,11 @@ Using a table extension allows you to overwrite some properties on fields in the
 This table extension object extends the Customer table object by adding a field ```ShoeSize```, with ID 70000900 and the data type ```Integer```. It also contains a procedure to check if the ```ShoeSize``` field is filled in.
 
 ```
-tableextension 70000020 RetailWinterSportsStore extends Customer
+tableextension 50115 RetailWinterSportsStore extends Customer
 {
     fields
     {
-        field(70000900;ShoeSize;Integer)
+        field(50116;ShoeSize;Integer)
         {
             trigger OnValidate();
             begin

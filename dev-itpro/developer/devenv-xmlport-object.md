@@ -28,13 +28,16 @@ Typing the shortcut ```txmlport``` will create the basic layout for an XMLport o
 The following example shows a page extension of the **Permission Sets** page that adds an action to the specified page calling the XMLport **ExportPermissionSet**. The XMLport exports the permission set data to an XML file. 
 
 ```
-pageextension 70000987 PermissionSetExporter extends "Permission Sets"
+pageextension 50111 PermissionSetExporter extends "Permission Sets"
 {
-    actions{
-        addafter(Permissions){
-            action(ExportPermissionSet){
-                Promoted=true;
-                PromotedCategory=New;
+    actions
+    {
+        addafter(Permissions)
+        {
+            action(ExportPermissionSet)
+            {
+                Promoted = true;
+                PromotedCategory = New;
                 trigger OnAction();
                 begin
                     Xmlport.Run(70000124, false, false);
@@ -44,85 +47,98 @@ pageextension 70000987 PermissionSetExporter extends "Permission Sets"
     }
 }
 
-xmlport 70000124 ExportPermissionSet {
-    Format=xml;
+xmlport 50112 ExportPermissionSet
+{
+    Format = xml;
 
-    schema{
-        textelement(PermissionSets){
-            tableElement(PSet; "Aggregate Permission Set"){
-                SourceTableView=WHERE("App Name"=FILTER(<>''));
-                XmlName='PermissionSet';
-                fieldattribute(RoleID; pset."Role ID"){}
-                fieldattribute(RoleName; pset.Name){}
-                tableelement(P; "Tenant Permission"){
-                    XmlName='Permission';
-                    LinkTable=pset;
-                    LinkFields="Role ID"=FIELD("Role ID");
-                    
-                    textelement(ObjectType){
+    schema
+    {
+        textelement(PermissionSets)
+        {
+            tableElement(PSet; "Aggregate Permission Set")
+            {
+                SourceTableView = WHERE ("App Name" = FILTER (<> ''));
+                XmlName = 'PermissionSet';
+                fieldattribute(RoleID; pset."Role ID") { }
+                fieldattribute(RoleName; pset.Name) { }
+                tableelement(P; "Tenant Permission")
+                {
+                    XmlName = 'Permission';
+                    LinkTable = pset;
+                    LinkFields = "Role ID" = FIELD ("Role ID");
+
+                    textelement(ObjectType)
+                    {
                         trigger onbeforePassvariable();
                         var
-                            int : Integer;
+                            int: Integer;
                         begin
                             int := p."Object Type";
                             ObjectType := format(int);
                         end;
                     }
-                    textelement(ObjectID){
+                    textelement(ObjectID)
+                    {
                         trigger onbeforePassvariable();
                         var
-                            int : Integer;
+                            int: Integer;
                         begin
                             int := p."Object ID";
                             ObjectID := format(int);
                         end;
                     }
-                    textelement(ReadPermission){
+                    textelement(ReadPermission)
+                    {
                         trigger onbeforePassvariable();
                         var
-                            int : Integer;
+                            int: Integer;
                         begin
                             int := p."Read Permission";
                             ReadPermission := format(int);
                         end;
                     }
-                    textelement(InsertPermission){
+                    textelement(InsertPermission)
+                    {
                         trigger onbeforePassvariable();
                         var
-                            int : Integer;
+                            int: Integer;
                         begin
                             int := p."Insert Permission";
                             InsertPermission := format(int);
                         end;
                     }
-                    textelement(ModifyPermission){
+                    textelement(ModifyPermission)
+                    {
                         trigger onbeforePassvariable();
                         var
-                            int : Integer;
+                            int: Integer;
                         begin
                             int := p."Modify Permission";
                             ModifyPermission := format(int);
                         end;
                     }
-                    textelement(DeletePermission){
+                    textelement(DeletePermission)
+                    {
                         trigger onbeforePassvariable();
                         var
-                            int : Integer;
+                            int: Integer;
                         begin
                             int := p."Delete Permission";
                             DeletePermission := format(int);
                         end;
                     }
-                    textelement(ExecutePermission){
+                    textelement(ExecutePermission)
+                    {
                         trigger onbeforePassvariable();
                         var
-                            int : Integer;
+                            int: Integer;
                         begin
                             int := p."Execute Permission";
                             ExecutePermission := format(int);
                         end;
                     }
-                    textelement(SecurityFilter){
+                    textelement(SecurityFilter)
+                    {
                         trigger onbeforePassvariable();
                         begin
                             SecurityFilter := format(p."Security Filter");
