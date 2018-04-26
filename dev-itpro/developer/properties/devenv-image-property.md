@@ -25,11 +25,7 @@ Specifies the icon that you want to associate with an action or display on a Cue
     > [!NOTE]  
     > You can only use images on fields that have an integer data type.
 
-## Syntax
-```
-
-```
-  
+ 
 ## See Also  
  [Properties](devenv-properties.md)   
  <!--
