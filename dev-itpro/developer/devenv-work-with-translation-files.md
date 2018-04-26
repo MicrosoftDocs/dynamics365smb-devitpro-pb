@@ -91,4 +91,4 @@ In the generated .xlf file, you can see a `<source>` element for each label. For
 When the extension is built and published, you change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
 
 ## See Also
-[Multilanguage Development](devenv-multilanguage-development.md)  
+[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/da-dk/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)  
