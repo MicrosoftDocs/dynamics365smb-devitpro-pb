@@ -39,7 +39,7 @@ There are two layout options that influence how Cues appear in the client: *norm
 You can only base Cues on integer and decimal data types. Other data types are not supported and will not display in a Cue.  
   
 ### FlowFields versus normal fields  
-A Cue can be based on a FlowField or Normal field. If you base the Cue on a FlowField, then you add the logic that calculates the data for the Cue to the [CalcFormula property](properties/devenv-calcformula-property.md) of the FlowField. If you use a Normal field, then you will typically add the logic that calculates the Cue data to a C/AL trigger or function. Unlike a FlowField, where data is extracted from tables, a Normal field enables you to extract data from other objects such as queries.  
+A Cue can be based on a FlowField or Normal field. If you base the Cue on a FlowField, then you add the logic that calculates the data for the Cue to the [CalcFormula property](properties/devenv-calcformula-property.md) of the FlowField. If you use a Normal field, then you will typically add the logic that calculates the Cue data to an AL trigger or method. Unlike a FlowField, where data is extracted from tables, a Normal field enables you to extract data from other objects such as queries.  
   
 ### <a name="CreateCue"></a>Creating a Cue
 The implementation of a Cue involves the following elements:
@@ -189,7 +189,7 @@ The following code adds an Action tile that opens **Sales Invoice** page.
 ```
 cuegroup(SalesActionontainer)
 {
-    CaptionML=ENU='New Sales Invoice';
+    Caption='New Sales Invoice';
                 
     actions
     {
