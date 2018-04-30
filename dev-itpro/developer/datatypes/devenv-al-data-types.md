@@ -243,24 +243,18 @@ MAXSTRLEN(t); // Returns 6.
 
  AL is not object-oriented but object-based. This is an important difference. In an object-oriented language or environment, you can create new types of objects that are based on the ones already in the system. In AL, you have the following application objects:  
 
--   Tables  
-
--   Reports  
-
--   Codeunits  
-
--   XMLports  
-
--   MenuSuites  
-
--   Pages  
-
--   Queries  
+- Tables  
+- Table Extensions
+- Pages
+- Page Extensions
+- Page Customizations
+- Profiles
+- Codeunits
+- Reports
+- XMLPorts
+- Queries
 
  You cannot create any other objects.  
-
-#### Automation data type  
- <!-- For more information about the Automation data type, see [Extending Microsoft Dynamics NAV Using COM](Extending-Microsoft-Dynamics-NAV-Using-COM.md).  -->
 
 #### BigText data type  
  The BigText data type contains large text documents. Data of the BigText data type cannot be displayed in the debugger or in a message window. However, you can use the BigText methods to extract part of a big text and place it in a typical text string that can be displayed. The BigText methods are as follows:  
