@@ -216,6 +216,7 @@
 ## [Page Object](developer/devenv-page-object.md)
 ## [Page Extension Object](developer/devenv-page-ext-object.md)
 ## [Page Customization Object](developer/devenv-page-customization-object.md)
+## [Report Object](developer/devenv-report-object.md)
 ## [Profile Object](developer/devenv-profile-object.md)
 ## [Codeunit Object](developer/devenv-codeunit-object.md)
 ## [Query Object](developer/devenv-query-object.md)
