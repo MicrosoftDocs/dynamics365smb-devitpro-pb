@@ -3,7 +3,7 @@ title: "Signing an APP Package File"
 description: "How do you sign an extension developed in the AL language."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/23/2018
+ms.date: 04/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 
 # Signing an APP Package File
 Code signing is a common practice for many applications. It is the process of digitally signing a file to verify the author and that the file has not been tampered with since it was signed. The signature of the APP package file is verified during the publishing of the extension using the `Publish-NAVApp` cmdlet. 
-For more technical information on signing, see [Authenticode](https://msdn.microsoft.com/en-us/library/ms537359\(VS.85\).aspx) in the MSDN Library. 
+For more technical information on signing, see [Authenticode](https://msdn.microsoft.com/en-us/library/ms537359\(VS.85\).aspx). 
 
 > [!NOTE]   
 > If you want to publish an unsigned extension package in your on-premise environment, you need to explicitly state that by using the - *SkipVerification* parameter on the `Publish-NAVApp` cmdlet. An extension without a valid signature will not be published. 
