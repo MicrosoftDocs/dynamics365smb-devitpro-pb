@@ -51,14 +51,9 @@ You can start Designer by choosing ![Settings icon](media/settings_icon_small.pn
 > [!NOTE]  
 > With this preview you can only add existing table fields. Adding pages, groups, parts, and actions is not yet supported.
 
-<!--
 
-![Design](media/new-start-design.gif)
--->
+![Designer](/media/new-start-design.gif)
 
-<!--
-![Design](media/start-design.gif) 
--->
 
 ## Drag-and-drop components
 In Designer, you modify the current page; you can add existing table fields, move fields around, or remove fields from the page. You can make changes to display the information it needs, and where it needs by using drag-and-drop components. 
