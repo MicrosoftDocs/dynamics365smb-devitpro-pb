@@ -17,14 +17,15 @@ caps.latest.revision: 18
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Extending Application Areas 
-Application area represents a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences.
-Application areas are mapped to controls to show or hide them on page objects to enable more or less business scenarios.   
+Application areas represents a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences.
+
+Application areas are mapped to controls to show or hide them on page objects to enable more or fewer business scenarios.   
 
 ## Extending application areas and the experience tier 
 In this example you will: 
 - Add a new application area in the **Application Area Setup** table. 
-- Enable the application Area in the **OnInstallAppPerCompany**.
-- Extend the experience tier in the **OnGetExperienceAppArea**.
+- Enable the application area in the **OnInstallAppPerCompany** trigger.
+- Extend the experience tier in the **OnGetExperienceAppArea** event.
 - Modify the experience tier (optional).
 - Validate the application area in the **OnValidateApplicationAreas**.
 
@@ -105,27 +106,27 @@ codeunit 50101 "Install Example Extension"
 }
 ```
 
-The registration of the application area inside an experience tier is made inside the **OnGetEssentialExperienceAppArea**. There are different versions of this event, one for each experience tier and in this case, the Essential is chosen. This will make the extension visible inside the Essential experience and the event exposes an **Application Area Setup** temporary record, **TempApplicationAreaSetup**, to the **Application Area Setup** table. At this point, to enable the application area, this must be set to true.
+The registration of the application area inside an experience tier is made inside the **OnGetEssentialExperienceAppArea**. There are different versions of this event, one for each experience tier and in this case, Essential is chosen. This will make the extension visible inside the Essential experience and the event exposes an **Application Area Setup** temporary record; **TempApplicationAreaSetup**, to the **Application Area Setup** table. At this point, to enable the application area, this must be set to true.
 
 
 > [!NOTE]  
 > This event is important because it is called every single time an experience tier is reset, which can happen because of many reasons. 
 
-Another thing that is possible inside these methods is to modify the experience tier. You can also modify other application areas, such as creating an extension that extends the Fixed Assets. 
-By subscribing to **OnValidateApplicationAreas**, the application area inside an experience tier is validated. **OnValidateApplicationAreas** is guaranteed to be executed after the events in the OnGet*ExperienceAppArea family. The validation is necessary in the presence of extensions concurrently manipulating the same application areas.
+Another thing that is possible inside these methods is to modify the experience tier. You can also modify other application areas, such as creating an extension that extends the Fixed Assets functionality. 
+By subscribing to **OnValidateApplicationAreas**, the application area inside an experience tier is validated. **OnValidateApplicationAreas** is guaranteed to be executed after the events in the **OnGet*ExperienceAppArea** family. The validation is necessary in the presence of extensions concurrently manipulating the same application areas.
 
-In case a needed application area is not enabled, the suggested action is to show an error and disable the extension to avoid unintended behavior. However, if the functionality controlled by this application area is of secondary importance and its loss does not affect the rest of the extension, it is also appropriate to keep the extension enabled.
+In case a needed application area is not enabled, the suggested action is to show an error and turn off the extension to avoid unintended behavior. However, if the functionality controlled by this application area is of secondary importance and its loss does not affect the rest of the extension, it is also appropriate to keep the extension enabled.
 
 
 ```
 codeunit 50100 "Enable Example Extension"
 {
-    // Extend and Modify Essential Experience Tier with "Example App Area"
+    // Extend and modify Essential experience tier with "Example App Area"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt.", 'OnGetEssentialExperienceAppAreas', '', false, false)]
     local procedure RegisterExampleExtensionOnGetEssentialExperienceAppAreas(var TempApplicationAreaSetup: Record "Application Area Setup" temporary)
     begin
         TempApplicationAreaSetup."Example App Area" := true;
-        // Modify other application areas here...
+        // Modify other application areas here
     end;
 
     // Validate that application areas needed for the extension are enabled

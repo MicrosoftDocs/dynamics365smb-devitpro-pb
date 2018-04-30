@@ -3,7 +3,7 @@ title: "Deploying a Tenant Customization"
 description: "Overview of the how you deploy an .app package with a tenant customization to Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 04/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,10 +16,10 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Deploying a Tenant Customization
-When you have you have finished developing and testing your tenant customization, you must deploy the extension (.app file) containing the customization to your customer’s production tenant. 
+When you have finished developing and testing your tenant customization, you must deploy the extension (.app file) containing the customization to your customer’s production tenant. 
 You must be able to log into the customer’s tenant as a user with permissions to the **Extension Management** page to complete the deployment. 
 
-You will use the **Upload Extension** action to deploy the extension. The extension can be deployed for the current version or for the next version of the service. In most cases you will select the current version, unless you have developed the extension specifically for the next version. 
+Use the **Upload Extension** action to deploy the extension. The extension can be deployed for the current version or for the next version of the service. In most cases it is sufficient to select the current version, unless you have developed the extension specifically for the next version. 
 
 > [!NOTE]
 > When you deploy an .app file for the next version, the extension will be queued up to be deployed as part of the customer’s tenant being upgraded to the next version. You can typically use this in a situation where you have built an upgrade of the extension to work with the next version.  
