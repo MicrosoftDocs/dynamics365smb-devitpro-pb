@@ -28,7 +28,7 @@ The following topic outlines the most important capabilities on the offered deve
 |Production services|Manually configured|Not available|
 |Cost|Part of the Business Central subscription|Locally hosted - free, Azure-hosted - cost incurred|
 |Development|Full capabilities of the development environment. </br>Designer functionality, such as: </br>Add/Remove components, </br>Move components, </br>Set/clear Freeze pane, </br>Edit captions | Full capabilities of the development environment.</br>Designer functionality, such as: </br>Add/Remove components, </br>Move components, </br>Set/clear Freeze pane, </br>Edit captions |
-|Tools|Visual Studio Code, Designer|Visual Studio Code, Designer, on-premise tools such as SQL Server Management Studio and C/SIDE.|
+|Tools|Visual Studio Code, Designer|Visual Studio Code, Designer, on-premise tools such as SQL Server Management Studio, and C/SIDE.|
 |Debugging|Enabled|Enabled|
 |Database access|No|Yes|
 

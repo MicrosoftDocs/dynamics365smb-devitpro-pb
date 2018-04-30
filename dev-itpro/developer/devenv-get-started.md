@@ -26,7 +26,7 @@ Go through the following steps to set up a sandbox environment. With the preview
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
 3) Download the [AL Language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).  
 4) Press **Ctrl+,** to open the **user settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).  
-5) Press **Alt+A, Alt+L** to trigger the **Go!** command, and then choose **Cloud**.  
+5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, and then choose **Cloud**.  
 6) Enter the credentials you provided for the sign up, and then **Download symbols**.  
 7) Press **F5** to deploy and run the extension on your online sandbox tenant.  
 
