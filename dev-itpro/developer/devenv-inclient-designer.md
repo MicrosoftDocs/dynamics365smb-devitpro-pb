@@ -16,8 +16,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Using Designer
-
-Developing extensions using new development environment offers a wide range of possibilities. It is exceedingly important to pick suitable ways that servers a better development experience. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] truly complements Visual Studio Code, as it provides easy and convenient way of making immediate adjustments to your design by simply dragging and dropping the components around.  
+When developing extensions in the AL development environment you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code, as it provides easy and convenient way of making immediate adjustments to your design by simply dragging and dropping the components around.  
 
 Here is a quick overview of **Designer** capabilities: 
 

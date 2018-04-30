@@ -51,7 +51,7 @@ The extension enables the ability to assign one of three reward levels to custom
 ## Reward table object
 The following code adds a new table **50100 Reward** for storing the reward levels for customers. The table consists of three fields: **Reward ID**, **Description**, and **Discount Percentage**. For example, the **Description** field must contain a value of type text and it cannot exceed the limit of 250 characters. The second field contains three properties that are used to set the range of the discount percentage assigned to every customer. Properties can be created for every field, depending on the scope. 
 
->[!TIP]
+> [!TIP]
 > Type `ttable` followed by the Tab key. This snippet will create a basic layout for a table object.
 
 ```
