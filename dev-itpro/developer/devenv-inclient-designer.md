@@ -40,7 +40,7 @@ Here is a quick overview of **Designer** capabilities:
 
 - You cannot remove specific fields that are bound to a page, and not table variable of the page.
 
-- You can only add fields, columns or tiles to its applicable view from list, tall tiles, and wide tiles views. Adding certain components is not allowed using drag-and-drop when it is restricted to that view.
+- You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Adding certain components is not allowed using drag-and-drop when it is restricted to that view.
 
 - You can only add fields/columns, from a predefined list, which is based on the source table. You cannot create new ones.  
 
@@ -53,12 +53,14 @@ You can start Designer by choosing ![Settings icon](media/settings_icon_small.pn
 
 <!--
 
-![Design](media/start-design.gif) 
+![Design](media/new-start-design.gif)
+-->
 
+<!--
+![Design](media/start-design.gif) 
 -->
 
 ## Drag-and-drop components
-
 In Designer, you modify the current page; you can add existing table fields, move fields around, or remove fields from the page. You can make changes to display the information it needs, and where it needs by using drag-and-drop components. 
 
 ## How it works
