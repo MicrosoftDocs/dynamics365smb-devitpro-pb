@@ -34,11 +34,10 @@ The values for the UsageCategory property are listed below:
 - Administration
 
 ## Example
-The following example creates a ``SimpleCustomerCard`` page and sets a ``UsageCategory`` property to the page, so that the ``SimpleCustomerCard`` page is enabled in Search. 
-
+The following example creates a `SimpleCustomerCard` page and sets a `UsageCategory` property to the page, so that the `SimpleCustomerCard` page is enabled in Search. 
 
 ```
-page 70050088 SimpleCustomerCard 
+page 50210 SimpleCustomerCard 
 { 
     PageType = Card; 
     SourceTable = Customer; 
@@ -60,8 +59,8 @@ page 70050088 SimpleCustomerCard
 } 
 ```
 
-## Optional accessibility settings
-You can add a page or a report to Search. Additionally, control the accessibility of an object by providing **Read**, **Insert**, **Modify**, **Delete** and **Execute** (RIMDX) permissions by adding the [AccessByPermission property](properties/devenv-accessbypermission-property.md). Likewise, control the application area access on the specified object by adding the [ApplicationArea Property](properties/devenv-applicationarea-property.md). 
+## Optional settings
+You can add a page or a report to Search. Additionally, control the access of an object by providing **Read**, **Insert**, **Modify**, **Delete**, and **Execute** (RIMDX) permissions by adding the [AccessByPermission property](properties/devenv-accessbypermission-property.md). Likewise, control the application area access on the specified object by adding the [ApplicationArea Property](properties/devenv-applicationarea-property.md). 
 
 The **AccessByPermission** property and **ApplicationArea** property are the optional settings, which can be applied with the **UsageCategory** property. These settings are used to set restrictions on an object when you enable the Search functionality. 
 
