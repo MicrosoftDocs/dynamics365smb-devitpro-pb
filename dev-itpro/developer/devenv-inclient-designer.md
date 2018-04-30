@@ -51,10 +51,8 @@ You can start Designer by choosing ![Settings icon](media/settings_icon_small.pn
 > [!NOTE]  
 > With this preview you can only add existing table fields. Adding pages, groups, parts, and actions is not yet supported.
 
-<!--
 
-![Design](media/new-start-design.gif)
--->
+![Designer](media/new-start-design.gif)
 
 <!--
 ![Design](media/start-design.gif) 
