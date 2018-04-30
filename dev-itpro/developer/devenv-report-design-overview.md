@@ -17,32 +17,32 @@ caps.latest.revision: 18
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Report Design Overview
-Designing a report is composed of the following items:  
+A report is composed of the following items:  
 
--   Report object
+-   A report object
 
--   Report dataset
+-   A report dataset
 
--   Report layout
+-   A report layout
 
--   Request page
+-   A request page
 
--   Properties, triggers and code 
+-   Properties, triggers, and code 
 
 You design a report by first defining the dataset, and then designing the visual layout.  
 
 ## Report object  
 
-You create report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] to define the data model, or dataset of a report. You can structure and summarize information in a report and print documents, such as sales quotes and invoices. For more information, see [Report Object](devenv-report-object.md).  
+You create a report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] to define the data model, or dataset of a report. You can structure and summarize information in a report and print documents, such as sales quotes and invoices. For more information, see [Report Object](devenv-report-object.md).  
 
 ### Report dataset
 
 In order to define the underlying data model, you use the report dataset. A report dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fine_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. You build the report dataset by adding data items and columns. For more information, see [Report Dataset](devenv-report-dataset.md). 
 
 ## Report layouts  
-The visual layout determines the content and format of a report when it is viewed and printed. You build the layout of a report by arranging data items and columns and specifying the general format, such as text font and size. A report that is viewed, printed, or saved from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] client must have a report layout. There are two types of report layouts: client report definition \(RDL\) layouts and Word layouts.  
+The visual layout determines the content and format of a report when it is viewed and printed. You build the layout of a report by arranging data items and columns and specifying the general format, such as text font and size. A report that is viewed, printed, or saved from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] client must have a report layout. There are two types of report layouts: layouts using report definition language (RDL) and Word layouts.  
 
-### RDL report layout 
+### RDL layout 
 To create an RDL layout report, you use Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. For more information, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md).  
 
 ### Word report layout  

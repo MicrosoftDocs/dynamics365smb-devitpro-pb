@@ -51,7 +51,7 @@ To set up a task, you create a codeunit that contains the logic that you want to
 
 -   The company cannot be opened.  
 
--   An SQL connection or transient error occurred with the database.  
+-   A SQL connection or transient error occurred with the database.  
 
 -   The [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance restarted while the task was being run.  
 
