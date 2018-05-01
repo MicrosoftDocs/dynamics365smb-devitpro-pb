@@ -1,7 +1,7 @@
 ---
 title: "Working with AL Methods"
 ms.custom: na
-ms.date: 06/04/2016
+ms.date: 05/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ local procedure <method_name>(parameter list) <return_value_name> : <data_type>[
 ```
 
 ### Snippet support
-Typing the shortcut ```tprocedure``` will create the basic structure for a method when using the AL Extension in Visual Studio Code.
+Typing the shortcut `tprocedure` will create the basic structure for a method when using the AL Language extension in Visual Studio Code.
 
 ### Attributes (optional)
 An attribute is modifier on a method declaration that specifies information that controls the method's use and behavior. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
@@ -43,17 +43,15 @@ To declare a local method, start the declaration with `local`:
 ```
 local procedure MyMethod();
 ```
-To declare a global method, omit `local`:
+To declare a global method, **omit** `local`:
 
 ```
  procedure MyMethod();
 ```
 
 ### Parameters (optional)  
-A parameter is one or more variables or expressions that are sent to the method through
-the method call. The parameter provides information to the method, and the
-method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are
-separated by commas. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype.
+A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the
+method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are separated by commas. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype.
 
 For example, the the following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
 ```
