@@ -23,7 +23,7 @@ As a customer, you can add a second level of classification by specifying sensit
 |Confidential | Business data that you use for accounting or other business purposes, and do not want to expose to other entities. For example, this might include ledger entries.|
 |Normal | General data that does not belong to any other categories.|
 
-## How Do I Classify My Data?
+## How do I classify my data?
 Classifying data can be time consuming, especially if you are doing it for the first time. To make things a little easier, we have provided some tools that can help speed up the process. For example, the Data Classification worksheet lets you do things like:  
 
 * Choose a field, and then find fields that are similar, and are likely to contain data that belongs to the same classification as the field you based the search on.  

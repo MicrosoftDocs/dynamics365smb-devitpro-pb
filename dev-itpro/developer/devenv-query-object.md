@@ -26,7 +26,7 @@ When you have specified the dataitem and column elements, you create links betwe
 > Extension objects can have a name with a maximum length of 30 characters.      
 
 ## Snippet support
-Typing the shortcut ```tquery``` will create the basic layout for a Query object when using the AL Extension in Visual Studio Code.
+Typing the shortcut ```tquery``` will create the basic layout for a Query object when using the AL Language extension in Visual Studio Code.
 
 ## Query example
 The following example shows a query that displays a list of customers with sales and profit figures. The query primarily retrieves fields from the **Customer** table, but also displays fields from the **Salesperson Purchaser** and **Country Region** tables.
