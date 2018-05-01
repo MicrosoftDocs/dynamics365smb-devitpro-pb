@@ -27,7 +27,7 @@ When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_
 > Extension objects can have a name with a maximum length of 30 characters.      
 
 ## Snippet support
-Typing the shortcut ```ttableext``` will create the basic layout for a table extension object when using the AL Extension in Visual Studio Code.
+Typing the shortcut ```ttableext``` will create the basic layout for a table extension object when using the AL Language extension in Visual Studio Code.
 
 ## Properties
 Using a table extension allows you to overwrite some properties on fields in the base table. For a list of Table properties, see [Table and Table Extension Properties](properties/devenv-table-properties.md).
