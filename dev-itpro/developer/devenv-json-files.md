@@ -73,7 +73,7 @@ The following table describes the settings in the ```launch.json``` file. The `l
 |tenant|No|Specifies the tenant to which the package is deployed. If you specify multiple configurations, a drop-down of options will be available when you deploy.|
 
 ## The platform symbol file
-The platform symbol file contains all of the base app objects that your extension builds on. If the symbol file is not present, you will be prompted to download it. For more information about the platform symbol file, see [Symbols](devenv-symbols.md).
+The platform symbol file contains all of the base app objects that your extension builds on. If the AL Language extension in Visual Studio Code detects that the referenced symbols are not present on local disk, you will get a visual prompt in Visual Studio Code to download the symbols from one of the servers specified in the launch.json file. For more information about the platform symbol file, see [Symbols](devenv-symbols.md).
 
 ## See Also 
 [AL Development Environment](devenv-reference-overview.md)
