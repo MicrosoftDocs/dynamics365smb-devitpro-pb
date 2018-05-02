@@ -1,0 +1,1 @@
+[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]

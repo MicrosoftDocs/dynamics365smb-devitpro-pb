@@ -22,7 +22,7 @@ XMLports are used to export and import data between an external source and [!INC
 To use an XMLport to import or export data, you first create an XMLport object. You can run the XMLport from a page or codeunit object.
 
 ## Snippet support
-Typing the shortcut ```txmlport``` will create the basic layout for an XMLport object when using the AL Language extension in Visual Studio Code.
+Typing the shortcut ```txmlport``` will create the basic layout for an XMLport object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## XMLport example
 The following example shows a page extension of the **Permission Sets** page that adds an action to the specified page calling the XMLport **ExportPermissionSet**. The XMLport exports the permission set data to an XML file. 

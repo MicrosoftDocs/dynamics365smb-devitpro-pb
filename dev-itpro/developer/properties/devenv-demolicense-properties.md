@@ -28,7 +28,7 @@ The demo license is automatically installed when you install the Demo Option. Th
   
 -   Run in any supported language.  
   
--   Use all application functionality, including add-on products, locAL Language extensions and customizations in current and previous versions. This means that you can run, but not modify, all object types within the range 1 to 99,999,999.  
+-   Use all application functionality, including add-on products, loc[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s and customizations in current and previous versions. This means that you can run, but not modify, all object types within the range 1 to 99,999,999.  
   
 -   Run and modify table 18, pages 21 and 22, report 101, and XMLports 99,008,503 and 99,008,510.  
   

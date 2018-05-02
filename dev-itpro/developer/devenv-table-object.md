@@ -25,7 +25,7 @@ The structure of a table has four sections. The first block contains metadata fo
 > Extension objects can have a name with a maximum length of 30 characters.      
 
 ## Snippet support
-Typing the shortcut ```ttable``` will create the basic layout for a table object when using the AL Language extension in Visual Studio Code.
+Typing the shortcut ```ttable``` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Table example
 This table stores address information and has four fields; Address, Locality, Town/City, and County.

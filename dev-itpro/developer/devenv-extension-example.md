@@ -21,7 +21,7 @@ This walkthrough illustrates the following tasks:
 
 - Setting up a sandbox environment.
 
-- Downloading and installing Visual Studio Code and the AL Language extension for Visual Studio Code.
+- Downloading and installing Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
 
 - Developing a sample extension with a table, a card page, and a list page.
 
@@ -40,7 +40,7 @@ To complete this walkthrough, you will need:
 
 - Visual Studio Code.
 
-- The AL Language extension for Visual Studio Code.
+- The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
 
 For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting Started](devenv-get-started.md).
 
