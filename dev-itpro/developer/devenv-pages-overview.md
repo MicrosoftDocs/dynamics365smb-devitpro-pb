@@ -68,7 +68,7 @@ You can choose between the following `area` categories:
 |Area type|Placement on the page|
 |---------|-----------------|
 |`Content`|The content area displays the content of a RoleCenter or a List page.|
-|`FactBoxes`|The factbox area is placed to the right-most side of a page. Displays content related to an item on the main content page.|
+|`FactBoxes`|The factbox area is placed to the right-most side of a page. <br>Displays content related to an item on the main content page.</br>|
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
 <br></br>
 
@@ -82,7 +82,7 @@ Actions can be displayed in the ribbon of all pages and grouped together under t
 - Navigate
 - Report
 
-Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). <!-- The following example creates a new group in the ribbon and places it last in the General group. -->
+Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
 
 ## Adding, moving, and modifying
 You can use the following methods in the `Layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these methods to place actions in the ribbon. 
