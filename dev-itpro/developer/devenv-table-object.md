@@ -17,7 +17,7 @@ caps.latest.revision: 18
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Table Object
-Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Regardless of how data is inputted to the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
+Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Regardless of how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
 
 The structure of a table has four sections. The first block contains metadata for the overall table; the table type. The fields section describes the data elements that make up the table; their name and the type of data they can store. The keys section contains the definitions of the keys that the table needs to support. The final section details the triggers and code that can run on the table.
 
@@ -25,7 +25,7 @@ The structure of a table has four sections. The first block contains metadata fo
 > Extension objects can have a name with a maximum length of 30 characters.      
 
 ## Snippet support
-Typing the shortcut ```ttable``` will create the basic layout for a table object when using the AL Language extension in Visual Studio Code.
+Typing the shortcut `ttable` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Table example
 This table stores address information and has four fields; Address, Locality, Town/City, and County.
@@ -85,7 +85,8 @@ table 50104 Address
 ```
 
 ## See Also
-[Table Extension Object](devenv-table-ext-object.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[Table Overview](devenv-tables-overview.md)  
+[Table Extension Object](devenv-table-ext-object.md)  
 [Table Keys](devenv-table-keys.md)  
 [Table Properties](properties/devenv-table-properties.md)  

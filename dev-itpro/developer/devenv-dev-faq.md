@@ -23,15 +23,15 @@ For an overview of developing apps for [!INCLUDE[d365fin_long_md](includes/d365f
 
 Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the tools.
 
-## Which version of the AL Language extension should I use?
-1) For [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] cloud sandboxes you must use the AL Language extension available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
-2) For the latest Developer Preview releases you must use the AL Language extension that is available on the Docker images.
+## Which version of the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] should I use?
+1) For [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] cloud sandboxes you must use the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
+2) For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] that is available on the Docker images.
 
 ## How do I enable the debugger?
 To read about enabling the Visual Studio Code Debugger, see here [Debugging](devenv-debugging.md)
 
 ## Can I create something similar to Menusuites?
-In the AL Language extension, the concept of Menusuites is not supported. The two primary purposes of Menusuites are:
+In the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the concept of Menusuites is not supported. The two primary purposes of Menusuites are:
 
 - Making pages searchable
 - Making pages accessible through a navigation structure
@@ -50,7 +50,7 @@ Code that relies on temporary files must be rewritten to rely on `InStream` and 
 ## DotNet types are not available in Extensions V2. What now?
 For cloud solutions DotNet interop is not available due to safety issues in running arbitrary .NET code on cloud servers. 
 
-With the AL Language extension, you can find AL types that replace the most typical usages of .NET like HTTP, JSON, XML, StringBuilder, Dictionaries and Lists. Many .NET usages can be replaced directly by the AL types resulting in much cleaner code. For more information, see [HTTP, JSON, TextBuilder, and XML API Overview](devenv-restapi-overview.md).
+With the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you can find AL types that replace the most typical usages of .NET like HTTP, JSON, XML, StringBuilder, Dictionaries and Lists. Many .NET usages can be replaced directly by the AL types resulting in much cleaner code. For more information, see [HTTP, JSON, TextBuilder, and XML API Overview](devenv-restapi-overview.md).
 
 For things that are not possible to achieve in AL code, the recommendation is to use Azure Functions to host the DLL or C# code previously embedded and call that service from AL.
 

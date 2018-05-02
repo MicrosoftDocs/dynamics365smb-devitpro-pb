@@ -29,7 +29,7 @@ local procedure <method_name>(parameter list) <return_value_name> : <data_type>[
 ```
 
 ### Snippet support
-Typing the shortcut `tprocedure` will create the basic structure for a method when using the AL Language extension in Visual Studio Code.
+Typing the shortcut `tprocedure` will create the basic structure for a method when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ### Attributes (optional)
 An attribute is modifier on a method declaration that specifies information that controls the method's use and behavior. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.

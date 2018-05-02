@@ -20,7 +20,7 @@ caps.latest.revision: 18
 A codeunit is a container for AL code that you can use in many application objects. 
 
 ## Snippet support
-Typing the shortcut `tcodeunit` will create the basic layout for a codeunit object when using the AL Language extension in Visual Studio Code.
+Typing the shortcut `tcodeunit` will create the basic layout for a codeunit object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Codeunit example
 This codeunit example checks whether a given customer has registered a shoesize. If not, the customer is assigned a shoesize of 42.

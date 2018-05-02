@@ -23,7 +23,7 @@ The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_lon
 > Extension objects can have a name with a maximum length of 30 characters.     
 
 ## Snippet support
-Typing the shortcut ```tpagecust``` will create the basic layout for a page customization object when using the AL Language extension in Visual Studio Code.
+Typing the shortcut ```tpagecust``` will create the basic layout for a page customization object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Page customization example
 The following page customization example `MyCustomization` is intialized to perform changes to **Customer List**. By using the `moveafter` method, `Blanket Orders` is moved next to the `Aged Accounts Receivable` action item. And the `modify` method is used to hide the `NewSalesBlanketOrder` action item. 
