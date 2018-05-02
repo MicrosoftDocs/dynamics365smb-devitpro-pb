@@ -32,4 +32,3 @@ Triggers are available for the different objects as described in the following s
 ## See Also  
  [AL Method Reference](../methods/devenv-al-method-reference.md)   
  [Properties](../properties/devenv-properties.md)   
- [Triggers Overview](../devenv-triggers-overview.md)

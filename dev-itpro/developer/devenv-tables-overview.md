@@ -34,7 +34,7 @@ The following illustration shows that a table description contains properties, t
 The table description contains some properties that are related to the table, others that are related to the fields in the table, and other properties related to keys. You can also see that triggers are defined both for the table and for the fields in the table.  
 
 ## Creating tables  
-In AL code, you can create new tables or modify existing tables. The following table gives provides an overview of ...
+In AL code, you can create new tables or modify existing tables. Read more about creating and modifying tables in the following sections.
 
 |To  |See  |
 |----|-----|
@@ -44,7 +44,7 @@ In AL code, you can create new tables or modify existing tables. The following t
 |Apply table and field properties|[Table and Table Extension Properties](properties/devenv-table-properties.md)|
 |Set primary and secondary table keys|[Table Keys](devenv-table-keys.md)|
 
-## Using Triggers in Database Design  
+## Using triggers in database design
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports setting up actions to take place in response to specific events. These are known as triggers. The following topics help to explain how [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] implements this feature of database design.  
   
 |To|See|  
