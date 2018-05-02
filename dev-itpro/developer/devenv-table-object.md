@@ -86,7 +86,7 @@ table 50104 Address
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
-[Table Overview](devenv-table-overview.md)  
+[Table Overview](devenv-tables-overview.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
 [Table Keys](devenv-table-keys.md)  
 [Table Properties](properties/devenv-table-properties.md)  
