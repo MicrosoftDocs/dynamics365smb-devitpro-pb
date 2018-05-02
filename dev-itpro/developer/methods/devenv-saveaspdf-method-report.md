@@ -34,7 +34,7 @@ Saves a report as a .pdf file.
  *FileName*  
  Type: Text  
 
- The path and name of the file that you want to save the report as.  
+ The path and name of the file that you want to save the report as. This path can be a local drive or mapped network directory, such as `C:\MyReports\report206.pdf`. For a network directory, you can also use the Universal Naming Convention (UNC) path, like `\\servername\sharename\folder\filename`.    
 
  *Record*  
  Type: Record  
