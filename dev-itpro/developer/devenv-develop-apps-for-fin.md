@@ -39,7 +39,7 @@ It's easy to get started! Just spin up a developer sandbox environment by going 
 
 1) Sign up for a [Dynamics 365 Business Central sandbox](https://go.microsoft.com/fwlink/?linkid=847861).    
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
-3) Download the [AL Language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).  
+3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).  
 4) Press **Alt+A, Alt+L** to trigger the **Go!** command, and then choose **Cloud**.  
 5) Enter the credentials you provided for the sign up, and then **Download symbols**.  
 6) Press **F5** to deploy and run the extension on your online sandbox tenant.  

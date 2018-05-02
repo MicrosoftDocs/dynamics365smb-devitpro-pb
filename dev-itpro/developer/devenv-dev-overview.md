@@ -24,7 +24,7 @@ If you are new to building extensions, we recommend that you read this document 
 > If you are looking for the C/SIDE documentation, visit our [Dynamics NAV library](/dynamics-nav/development).
 
 ## Understanding objects in the development environment
-All functionality in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is coded in objects. The extension model is object-based; you create new objects, and extend existing objects depending on what you want your extension to do. Table objects define the table schema that holds data, page objects represent the pages seen in the user interface and codeunits contain code for logical calculations and for the application behavior. These objects are stored as code, known as AL code, and are saved in files with the ```.al``` file extension. The AL Language extension also supports the multi-root functionality which allows you to work with multiple AL folders within one workspace. 
+All functionality in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is coded in objects. The extension model is object-based; you create new objects, and extend existing objects depending on what you want your extension to do. Table objects define the table schema that holds data, page objects represent the pages seen in the user interface and codeunits contain code for logical calculations and for the application behavior. These objects are stored as code, known as AL code, and are saved in files with the ```.al``` file extension. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality which allows you to work with multiple AL folders within one workspace. 
 For more information on how to group a set of disparate project folders into one workspace, see [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md).
 
 
@@ -36,12 +36,12 @@ There are two other special objects which are specifically used for building ext
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
-You have several options for creating new objects with the AL Language extension for Visual Studio Code. For more information about the objects that you can create for your extension, see [AL Development Environment](devenv-reference-overview.md).
+You have several options for creating new objects with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code. For more information about the objects that you can create for your extension, see [AL Development Environment](devenv-reference-overview.md).
 
 ## Developing extensions in Visual Studio Code
-Using the AL Language extension for Visual Studio Code, you will get the benefits of a modern development environment along with seamless publishing and execution integration with your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. For more information on getting up and running, see [Getting Started with AL](devenv-get-started.md).
+Using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code, you will get the benefits of a modern development environment along with seamless publishing and execution integration with your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. For more information on getting up and running, see [Getting Started with AL](devenv-get-started.md).
 
-Visual Studio Code and the AL Language extension lets you do the following tasks:
+Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] lets you do the following tasks:
 
 - Create new files for your solution
 - Get assistance with creating the appropriate configuration and setting files

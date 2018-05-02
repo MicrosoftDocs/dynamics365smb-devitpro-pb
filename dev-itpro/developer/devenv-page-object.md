@@ -27,7 +27,7 @@ When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_
 > Extension objects can have a name with a maximum length of 30 characters.      
 
 ## Snippet support
-Typing the shortcut ```tpage``` will create the basic layout for a page object when using the AL Language extension in Visual Studio Code.
+Typing the shortcut ```tpage``` will create the basic layout for a page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Page example
 

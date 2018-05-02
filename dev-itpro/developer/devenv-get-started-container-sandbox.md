@@ -100,7 +100,7 @@ After the container sandbox is set up, you must set up Visual Studio Code for ex
 
 1. Open a browser to the path that is specified by the `Files` parameter, and save the .vsix file to your computer.
 2. In Visual Studio Code, go to **Extensions**, and then choose **Install from VSIX**.
-    You now have the AL Language extension enabled.
+    You now have the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] enabled.
 3. In Visual Studio Code, press Ctrl+Shift+P and then choose **AL Go!**.
 4. Choose where to create the project, and then choose the **Your own server** option.
 5. Open the generated `launch.json` file, update the `"server"` setting with the value of the `Dev. Server` parameter and the `"serverInstance"` setting with the value of the `Dev. ServerInstance` to reflect the container you just created. For example:
@@ -111,7 +111,7 @@ After the container sandbox is set up, you must set up Visual Studio Code for ex
     ```
 6. Save the launch.json file.
 
-You have now set up Visual Studio Code with the AL Language extension.
+You have now set up Visual Studio Code with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)].
 
 
 <!-- 
