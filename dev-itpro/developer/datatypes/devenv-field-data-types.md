@@ -11,6 +11,7 @@ ms.assetid: c365bf5b-559a-48dc-83da-159d046a784a
 caps.latest.revision: 22
 author: SusanneWindfeldPedersen
 ---
+
 # Field Data Types
 After you select an identification number and name for a field, you have to select an appropriate data type. Each of the different field types is designed to hold a specific kind of information, such as text, numbers, or dates. Each field type has a specific size.  
 

@@ -21,7 +21,7 @@ A table can be visualized as a two-dimensional matrix, consisting of columns and
   
 A table consists of two parts: the table data and a table description. The table data is the part users often think of as comprising the database, because it contains the actual records with their data fields. The layout and properties of those fields, however, are specified by the table description. The table description is not directly visible to the user. The following illustration shows how the table data and the table description together form a table.  
   
-![](media/NAV_ADG_6_Diag_1.png "NAV\_ADG\_6\_Diag\_1")  
+![](../media/NAV_ADG_6_Diag_1.png "NAV\_ADG\_6\_Diag\_1")  
   
 When you design a table, you assign a number of characteristics to it, such as a name, an ID number, and the fields it contains. You also assign a number of characteristics (such as name, ID number, data type, and initial value) to each field. When you design a new table, you also specify which keys you want the system to maintain. All these characteristics are stored in the table description when you save your table design.  
   
@@ -29,30 +29,28 @@ The information in the table description is used by SQL Server and occasionally 
   
 The following illustration shows that a table description contains properties, triggers, fields, and keys and shows how these are related.  
   
-![](media/NAV_ADG_Diag_2.png "NAV\_ADG\_Diag\_2")  
+![](../media/NAV_ADG_Diag_2.png "NAV\_ADG\_Diag\_2")  
   
 The table description contains some properties that are related to the table, others that are related to the fields in the table, and other properties related to keys. You can also see that triggers are defined both for the table and for the fields in the table.  
 
+## Creating tables  
+In AL code, you can create new tables or modify existing tables. The following table gives provides an overview of ...
 
+|To  |See  |
+|----|-----|
+|Create a new table object|[Table Object](devenv-table-object.md)|
+|Modify an existing table object|[Table Extension Object](devenv-table-ext-object.md)|
+|Decide which field data type you want to apply to your data|[Field Data Types](datatypes/devenv-field-data-types.md)|
+|Apply table and field properties|[Table and Table Extension Properties](properties/devenv-table-properties.md)|
+|Set primary and secondary table keys|[Table Keys](devenv-table-keys.md)|
 
-## Creating Tables  
-This section explains how to design tables to store your data and set up table descriptions that can ease sophisticated data manipulation.  
-  
-|To|See|  
-|--------|---------|  
-|Learn about the [!INCLUDE[navnow](includes/navnow_md.md)] approach to tables in database design.|[Overview of Tables](Overview-of-Tables.md)|  
-|Design and develop a basic table in [!INCLUDE[navnow](includes/navnow_md.md)].|[How to: Create a Table](How-to--Create-a-Table.md)|  
-|Decide which field data type to apply to your data.|[Field Data Types](Field-Data-Types.md) and [Data Format Considerations](Data-Format-Considerations.md)|  
-|Apply table and field properties and create effective table descriptions.|[How to: View or Modify Properties on a Table or Field](How-to--View-or-Modify-Properties-on-a-Table-or-Field.md)|  
-|Connect table data through primary and secondary keys.|[Table Keys](Table-Keys.md)|  
-|Learn about [!INCLUDE[navnow](includes/navnow_md.md)] features designed to speed up data manipulation and computation.|[Accessing Microsoft Dynamics NAV Tables with External Tools](Accessing-Microsoft-Dynamics-NAV-Tables-with-External-Tools.md)|  
-  
 ## Using Triggers in Database Design  
- [!INCLUDE[navnow](includes/navnow_md.md)] supports setting up actions to take place in response to specific events. These are known as triggers. The following topics help to explain how [!INCLUDE[navnow](includes/navnow_md.md)] implements this feature of database design.  
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports setting up actions to take place in response to specific events. These are known as triggers. The following topics help to explain how [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] implements this feature of database design.  
   
 |To|See|  
 |--------|---------|  
-|Learn about the set of triggers that [!INCLUDE[navnow](includes/navnow_md.md)] supports for tables and fields.|[Table and Field Triggers](Table-and-Field-Triggers.md)|  
+|Learn about the set of triggers that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports for tables and fields.|[Table and Field Triggers](triggers/devenv-triggers.md)|  
+<!-- 
 |Create a table trigger.|[How to: Define or Modify Table or Field Triggers](How-to--Define-or-Modify-Table-or-Field-Triggers.md)|  
 |See reference information about specific triggers.|[Triggers](Triggers.md)|  
   
@@ -72,6 +70,6 @@ This section explains how to design tables to store your data and set up table d
 |Learn about the **LinkedObject** table property.|[Creating Table Definitions from SQL Server Objects (Linked Objects)](Creating-Table-Definitions-from-SQL-Server-Objects--Linked-Objects-.md)|  
 |Work with other data sources, including Microsoft Excel and Oracle databases.|[Accessing Objects in Other Databases or on Linked Servers](Accessing-Objects-in-Other-Databases-or-on-Linked-Servers.md)|  
   
+  -->
 ## See Also  
- [Special Tables](Special-Tables.md)   
- [Development](Development.md)
+[Developing Extensions in AL](devenv-dev-overview.md)  
