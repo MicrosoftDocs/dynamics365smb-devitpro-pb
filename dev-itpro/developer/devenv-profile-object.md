@@ -23,7 +23,7 @@ The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] a
 > Extension objects can have a name with a maximum length of 30 characters.      
 
 ## Snippet support
-Typing the shortcut ```tprofile``` will create the basic layout for a profile object when using the AL Extension in Visual Studio Code.
+Typing the shortcut ```tprofile``` will create the basic layout for a profile object when using the AL Language extension in Visual Studio Code.
 
 ## Profile object example
 The following profile object example performs a validation to check if the `Business Manager` page of type RoleCenter exists, and if `MyCustomization` exists, and if it is a page customization object. Then the page customization modifies the layout of the **Customer List** to make the `Name` field invisible using the `modify` method. 
