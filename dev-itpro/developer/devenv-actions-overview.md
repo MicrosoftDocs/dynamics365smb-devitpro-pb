@@ -103,7 +103,7 @@ Pages can have the following actions.
  On the Sales Orders list page, Post is promoted to the ribbon, and included in the Process group. This helps the order processor in her work, because posting sales orders is one of her most important daily tasks.  
 
 ```
-page 50100 Sales Orders
+page 50100 "Sales Orders List"
 {
     PageType = Card;
  
@@ -113,11 +113,12 @@ page 50100 Sales Orders
         {
             action(Post)
             {
-            Promoted = true;
-            trigger OnAction()
-            begin
- 
-            end;
+                Promoted = true;
+                
+                trigger OnAction()
+                begin
+                    Message('My promoted action');
+                end;
             }
         }
     }
