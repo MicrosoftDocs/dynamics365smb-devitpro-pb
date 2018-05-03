@@ -66,13 +66,13 @@ The page layout of the page object determines what the page will look like and i
 You can choose between the following `area` categories:
 
 |Area type|Placement on the page|
-|---------|-----------------|
-|`Content`|The content area displays the content of a RoleCenter or a List page.|
-|`FactBoxes`|The factbox area is placed to the right-most side of a page. <br>Displays content related to an item on the main content page.</br>|
-|`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
-<br></br>
+|---------|---------------------|
+|```Content```|The content area displays the content of a RoleCenter or a List page.|
+|```FactBoxes```|The factbox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
+|```RoleCenter```|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
+  
+## Page Actions  
 
-## Page Actions
 All pages contain menu items and navigation controls called actions. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page in the ribbon or in the navigation pane. The `actions` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. 
 
 Actions can be displayed in the ribbon of all pages and grouped together under the following actions tabs: 
@@ -85,7 +85,7 @@ Actions can be displayed in the ribbon of all pages and grouped together under t
 Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
 
 ## Adding, moving, and modifying
-You can use the following methods in the `Layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these methods to place actions in the ribbon. 
+You can use the following methods in the `layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these methods to place actions in the ribbon. 
 
 |Method example         |Applies to |
 |-----------------------|-------------|
