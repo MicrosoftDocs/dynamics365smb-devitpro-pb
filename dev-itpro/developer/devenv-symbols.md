@@ -15,7 +15,7 @@ caps.latest.revision: 18
 ---
 
 # Symbol Files
-The following table lists object symbols contained in the platform symbol package file. If the AL Language extension in Visual Studio Code detects that the referenced symbols are not present on local disk, you will get a visual prompt in Visual Studio Code to download the symbols from one of the servers specified in the launch.json file. Symbols are a prerequisite for writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
+The following table lists object symbols contained in the platform symbol package file. If the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code detects that the referenced symbols are not present on local disk, you will get a visual prompt in Visual Studio Code to download the symbols from one of the servers specified in the launch.json file. Symbols are a prerequisite for writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
 ### System tables
 

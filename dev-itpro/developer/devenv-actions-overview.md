@@ -1,7 +1,7 @@
 ---
 title: "Actions Overview"
 ms.custom: na
-ms.date: 06/16/2017
+ms.date: 05/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,8 @@ Pages can have the following actions.
 |Reports|Role Center, list, card, and task pages|A list of available reports.|Customer Top 10 List|  
 |New|List, card, Role Center pages, and task pages|Actions that appear under the New group. Opens a new [!INCLUDE[d365fin_md](includes/d365fin_md.md)] document.|New sales invoice|  
 |Promoted Actions|List, card, Role Center pages, and task pages|Provide quick access to common tasks that appear under the Home tab.|Post and print a sales order|  
-|Home Items|Role Center pages|Menu items on the Role Center navigation pane.|Customers|  
-|Activity Buttons|Role Center pages|Menu buttons for a secondary activity, such as posted documents.|Posted sales invoices|  
+|Embedding|Role Center pages|Menu items on the Role Center navigation pane.|Customers|  
+|Sections|Role Center pages|Menu buttons for a secondary activity, such as posted documents.|Posted sales invoices|  
   
 > [!CAUTION]  
 >  If you change an object, for example, an action to an action container, you must also change the ID of the action. The ID serves as a reference, and must reflect the object.  
@@ -93,14 +93,37 @@ Pages can have the following actions.
 ## Promoted Actions  
  Promoted actions are actions that are set up on the Actions, Navigate, or Reports tabs in the ribbon, but are also configured to display on the Home tab. Although the actions are set up on the Actions, Navigate, or Reports tabs, you can choose to hide them on these tabs and only show them on the Home tab.  
   
- The Home tab is always displayed first so promoted actions provide quick access to common tasks, because users do not have to browse through a menu to access them. You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden.  
-  
+ The Home tab is always displayed first so promoted actions provide quick access to common tasks, because users do not have to browse through a menu to access them. You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. For more information, see [Promoted Property](properties/devenv-promoted-property.md).
+ 
  Promoted actions can be grouped. <!-- For more information, see [How to: Define Promoted Action Categories Captions for the Ribbon](How-to-Define-Promoted-Action-Categories-Captions-for-the-Ribbon.md).  -->
   
  Each promoted action has an icon associated with it. You can accept a default icon for your promoted action or decide to use a larger icon that makes it more prominent to the user. Use the Properties window in the Action Designer to set the size and location of an icon.  
   
- Example: On the Sales Orders list page, Post is promoted to the ribbon, and included in the Process group. This helps the order processor in her work, because posting sales orders is one of her most important daily tasks.  
-  
+ ### Example 
+ On the Sales Orders list page, Post is promoted to the ribbon, and included in the Process group. This helps the order processor in her work, because posting sales orders is one of her most important daily tasks.  
+
+```
+page 50100 "Sales Orders List"
+{
+    PageType = Card;
+ 
+    actions
+    {
+        area(Processing)
+        {
+            action(Post)
+            {
+                Promoted = true;
+                
+                trigger OnAction()
+                begin
+                    Message('My promoted action');
+                end;
+            }
+        }
+    }
+}
+```
 ## Actions at Runtime  
  An action can trigger code to run, such as posting a document or otherwise modifying a record in a table. When a user chooses an action, one of the following pieces of logic will happen in addition to the code that the action itself triggers:  
   

@@ -16,7 +16,7 @@ caps.latest.revision: 18
 
 # Running C/SIDE and AL Side-by-Side
 
-Dynamics NAV 2018 supports development using both C/SIDE and AL, as well as Designer side-by-side. When new objects are added or changed in C/SIDE these changes must be reflected in the symbol download in Visual Studio Code using the AL Language extension. To enable this reflection, a new command and argument has been added to finsql.exe called `generatesymbolreference`, run it as illustrated below.
+Dynamics NAV 2018 supports development using both C/SIDE and AL, as well as Designer side-by-side. When new objects are added or changed in C/SIDE these changes must be reflected in the symbol download in Visual Studio Code using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To enable this reflection, a new command and argument has been added to finsql.exe called `generatesymbolreference`, run it as illustrated below.
 
 ## Get started generating symbols and compiling all objects
 Use the `generatesymbolreference` command specified with the database and server name. This command will add symbol references to the **Object Metadata** table for the specified database. 
