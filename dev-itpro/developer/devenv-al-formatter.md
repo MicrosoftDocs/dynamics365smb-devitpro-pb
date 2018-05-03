@@ -3,7 +3,7 @@ title: "AL Formatter"
 description: "Document the AL Formatter."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 05/03/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
