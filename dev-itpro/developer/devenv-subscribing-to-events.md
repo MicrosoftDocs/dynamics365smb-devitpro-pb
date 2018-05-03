@@ -75,7 +75,7 @@ codeunit 70000002 MySubscriber
     begin
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, 70000004, 'OnAddressLineChanged','',true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged','',true, true)]
     procedure CheckAddressLine(line : Text[100]);
     begin
         if (STRPOS(line, '+') > 0) then begin
@@ -97,10 +97,10 @@ codeunit 70000002 MySubscriber
     begin
     end;
 
-    [EventSubscriber(ObjectType::Page, 21, 'OnBeforeValidateEvent','Address',true, true)]
-    procedure CheckAddressLine();
+    [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent','Address',true, true)]
+    local procedure CheckAddressLine(var Rec : Record Customer)
     begin
-        if (STRPOS('Address', '+') > 0) then begin
+        if (STRPOS('Rec.Address', '+') > 0) then begin
             MESSAGE('Cannot use a plus sign (+) in the address [' + 'Address' + ']');
         end;
     end;
