@@ -71,7 +71,7 @@ You can choose between the following `area` categories:
 |```FactBoxes```|The factbox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
 |```RoleCenter```|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
   
-## Page Actions  
+<h2> Page Actions </h2>
 
 All pages contain menu items and navigation controls called actions. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page in the ribbon or in the navigation pane. The `actions` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. 
 
