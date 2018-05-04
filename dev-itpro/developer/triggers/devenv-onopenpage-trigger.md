@@ -1,7 +1,8 @@
 ---
 title: "OnOpenPage Trigger"
+ms.author: solsen
 ms.custom: na
-ms.date: 06/19/2017
+ms.date: 05/04/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,22 +10,20 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: c6b911c1-55b2-4837-b1af-32dbe64f84e3
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnOpenPage Trigger
 Executed after a page is initialized and run.  
 
 ## Syntax  
-
 ```  
-
-OnOpenPage()  
+trigger OnOpenPage();
+begin
+    ...
+end;
 ```  
 
 ## Applies To  
-
 -   Pages  
 
 ## Remarks  

@@ -22,7 +22,7 @@ The following triggers apply to XMLports.
 |[OnAfterAssignField Trigger](devenv-onafterassignfield-trigger.md)|Executed after a field has been assigned a value and before it is validated and imported.<br /><br /> This trigger is only used to import data.|  
 |[OnAfterAssignVariable Trigger](devenv-onafterassignvariable-trigger.md)|Executed after the value defined in the XML document is assigned to the text variable.<br /><br /> This trigger is only used to import data.|  
 |[OnAfterGetField Trigger](devenv-onaftergetfield-trigger.md)|Executed after a field is passed to the XML document.<br /><br /> This trigger is only used to export data.|  
-|[OnAfterGetRecord \(XMLports\) Trigger](devenv-onaftergetrecord-xmlports-trigger.md)|Executed after a record is retrieved from a table and before it is exported to the XML document.<br /><br /> This trigger is only used to export data.|  
+|[OnAfterGetRecord (XMLports) Trigger](devenv-onaftergetrecord-xmlports-trigger.md)|Executed after a record is retrieved from a table and before it is exported to the XML document.<br /><br /> This trigger is only used to export data.|  
 |[OnAfterInitRecord Trigger](devenv-onafterinitrecord-trigger.md)|Executed after a record is loaded.<br /><br /> This trigger is only used to import data.|  
 |[OnAfterInsertRecord Trigger](devenv-onafterinsertrecord-trigger.md)|Executed after a record has been inserted into a database table.<br /><br /> This trigger is only used to import data.|  
 |[OnAfterModifyRecord Trigger](devenv-onaftermodifyrecord-trigger.md)|Executed after a record has been modified. <br /><br /> The trigger is used to import data.|

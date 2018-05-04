@@ -20,8 +20,6 @@ Sets the application areas that apply to the control.
   
 -   Report request page field controls  
   
--   MenuSuite items  
-  
 ## Property Values  
  A text string that contains a comma-separated list of application area tags.  
   
