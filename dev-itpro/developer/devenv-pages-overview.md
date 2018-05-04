@@ -3,7 +3,7 @@ title: "Pages Overview"
 description: Pages are the main way to display and organize data. Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/26/2018
+ms.date: 05/04/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Furthermore, the page has properties. Properties work in the same way for pages 
 For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object.  
 
 ```
-page Id PageName
+page 50102 PageName
 {
     PageType = List;
     SourceTable = TableName;
@@ -85,28 +85,29 @@ Actions can be displayed in the ribbon of all pages and grouped together under t
 Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
 
 ## Adding, moving, and modifying
-You can use the following methods in the `layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these methods to place actions in the ribbon. 
+You can use the following keywords in the `layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these keywords to place actions in the ribbon. 
 
-|Method example         |Applies to |
-|-----------------------|-------------|
-|```addfirst(General)```|Groups only|
-|```addlast(General)``` |Groups only|
-|```addafter(AddressDetails)``` |Fields and groups|
-|```addbefore(AddressDetails)```|Fields and groups|
-|```movefirst(General)```|Groups only|
-|```movelast(General)``` |Groups only|
-|```moveafter(AddressDetails)``` |Fields and groups|
-|```movebefore(AddressDetails)```|Fields and groups|
+|Keywords        |Syntax | Applies to |
+|-----------------------|-------|-------------|
+|```addfirst```|```addfirst(Anchor)```|**Anchor**: areas and groups|
+|```addlast``` |```addlast(Anchor)``` |**Anchor**: areas and groups|
+|```addafter``` |```addafter(Anchor)``` |**Anchor**: controls, actions and groups|
+|```addbefore```|```addbefore(Anchor)``` |**Anchor**: controls, actions and groups|
+|```movefirst```|```movefirst(Anchor; Target1, Target2)```|**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
+|```movelast``` |```movelast(Anchor; Target1, Target2)``` |**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
+|```moveafter``` |```moveafter(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
+|```movebefore```|```movebefore(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
 
 
 ### Example
-To modify the existing fields and groups on a page, you use the `modify` method. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, `action` creates a new group in the ribbon and places it last in the `Creation` group.  
+To modify the existing fields and groups on a page, you use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, `action` creates a new group in the ribbon and places it last in the `Creation` group.  
 
 ```
 pageextension 70000020 CustomerCardExtension extends "Customer Card"
 {
     layout
     {
+        // Adding a new control field 'ShoeSize' in the group 'General'
         addlast(General)
         {
             field("Shoe Size"; ShoeSize)
@@ -121,19 +122,24 @@ pageextension 70000020 CustomerCardExtension extends "Customer Card"
             }
         }
 
+        // Modifying the caption of the field 'Address 2'
         modify("Address 2")
         {
             Caption = 'New Address 2';
         }
+
+        // Moving the two fields 'CreditLimit' and 'CalcCreditLimitLCYExpendedPct'
+        // to be the first ones in the 'Balance' group.
+        movefirst(Balance; CreditLimit, CalcCreditLimitLCYExpendedPct)
     }
-    
-    actions      // adding actions 
+    actions
     {
+        // Adding a new action group 'MyNewActionGroup' in the 'Creation' area
         addlast(Creation)
         {
             group(MyNewActionGroup)
             {
-                Action(MyNewAction)
+                action(MyNewAction)
                 {
                     Caption = 'My New Action';
 
@@ -143,7 +149,7 @@ pageextension 70000020 CustomerCardExtension extends "Customer Card"
                     end;
                 }
             }
-        }  
+        }
     }
 }
 
@@ -151,6 +157,7 @@ tableextension 70000020 CustomerTableExtension extends Customer
 {
     fields
     {
+        // Adding a new table field in the 'Customer' table
         field(50100; ShoeSize; Integer) { }
     }
 }
@@ -166,4 +173,8 @@ We recommend that you simplify the user experience by reducing what users see by
 -   Use one to three FactBoxes on a page to provide supplementary information and a place for adding notes.  
   
 ## See Also  
-[Page Properties Overview](properties/devenv-page-property-overview.md)
+[Page Properties Overview](properties/devenv-page-property-overview.md)  
+[Actions Overview](devenv-actions-overview.md)  
+[Using Designer](devenv-inclient-designer.md)  
+[Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
+[Designing Role Centers](devenv-designing-role-centers.md)  
