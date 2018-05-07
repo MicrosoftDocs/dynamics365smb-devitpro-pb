@@ -29,9 +29,6 @@ Pages can have the following actions.
 |Embedding|Role Center pages|Menu items on the Role Center navigation pane.|Customers|  
 |Sections|Role Center pages|Menu buttons for a secondary activity, such as posted documents.|Posted sales invoices|  
   
-> [!CAUTION]  
->  If you change an object, for example, an action to an action container, you must also change the ID of the action. The ID serves as a reference, and must reflect the object.  
-  
  Each page has a different set of actions depending on the page type, and the processes that the page supports. In order to create the appropriate set of actions for a particular page, you should have a good understanding of your customer's business processes.  
   
  Each process in an organization has several actions associated with it. You should try to create a full set of actions that mirror all tasks and processes that are performed.  
