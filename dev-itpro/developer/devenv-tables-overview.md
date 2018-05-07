@@ -59,7 +59,9 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the primary way to 
   
 |To|See|  
 |--------|---------|  
-|Get a brief introduction to relational database design in [!INCLUDE[navnow](includes/navnow_md.md)].|[Setting Relationships Between Tables](Setting-Relationships-Between-Tables.md)|  
+|Get a brief introduction to relational database design in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|[Setting Relationships Between Tables](devenv-set-relationships-between-tables.md)|  
+
+<!--
 |Understand the extra steps SQL Server requires to use the **TableRelation** property.|[Maintaining Table Relationships on SQL Server](Maintaining-Table-Relationships-on-SQL-Server.md)|  
   
 ## Understanding SQL Server and Linked Objects  
