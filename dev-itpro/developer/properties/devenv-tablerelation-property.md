@@ -1,7 +1,8 @@
 ---
 title: "TableRelation Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 07/28/2017
+ms.date: 05/07/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,10 +13,8 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # TableRelation Property
-Sets relationships \(links\) to other tables. For example, if you want to provide a lookup into another table, enter the name of that table in this property.  
+Sets relationships (links) to other tables. For example, if you want to provide a lookup into another table, enter the name of that table in this property.  
   
 ## Applies To  
   
@@ -28,7 +27,7 @@ Sets relationships \(links\) to other tables. For example, if you want to provid
   
  This property is also used to define where to look to validate entries.  
   
- In addition, when you choose the option to test the relationships between primary and secondary indexes, this property defines what to test. This option is one of the **Database** options on the **File** menu.  
+ In addition, when you choose the option to test the relationships between primary and secondary indexes, this property defines what to test. 
   
 ## See Also  
  [ValidateTableRelation Property](devenv-validatetablerelation-property.md)   
