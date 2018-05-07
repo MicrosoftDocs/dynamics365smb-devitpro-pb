@@ -54,7 +54,7 @@ In AL code, you can create new tables or modify existing tables. Read more about
 |Create a table trigger.|[How to: Define or Modify Table or Field Triggers](How-to--Define-or-Modify-Table-or-Field-Triggers.md)|  
 |See reference information about specific triggers.|[Triggers](Triggers.md)|  -->
   
-## Designing Relationships Between Tables  
+## Creating relationships between tables  
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the primary way to establish a connection between tables is to use the **TableRelation** property. The following topics go into detail about how this works.  
   
 |To|See|  
