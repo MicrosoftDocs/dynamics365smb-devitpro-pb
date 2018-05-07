@@ -97,6 +97,7 @@ You can use the following keywords in the `layout` section to place and move fie
 |```movelast``` |```movelast(Anchor; Target1, Target2)``` |**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
 |```moveafter``` |```moveafter(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
 |```movebefore```|```movebefore(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
+|```modify```|```modify(Target)```|**Target**: controls, actions and groups|
 
 
 ### Example
