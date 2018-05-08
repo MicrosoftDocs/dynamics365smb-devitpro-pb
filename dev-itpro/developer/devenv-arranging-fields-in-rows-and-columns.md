@@ -27,7 +27,7 @@ By default, page fields are arranged automatically in two columns. For more info
 
 
 ## See Also   
-[Arranging Fields on a FastTab](devenv-arranging-fields-on-fasttabs.md)  
+[Arranging Fields on a FastTab](devenv-arranging-fields-on-fasttab.md)  
 [Pages Overview](devenv-pages-overview.md)  
 [GridLayout Property](properties/devenv-gridlayout-property.md)  
 
