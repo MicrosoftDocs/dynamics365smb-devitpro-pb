@@ -191,6 +191,7 @@
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
 ### [Adding a FactBox](developer/devenv-adding-a-factbox-to-page.md)
 ### [Actions](developer/devenv-actions-overview.md)
+### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fastatb.md)
 <!-- ### [Arranging Fields on FastTab](developer/devenv-field-arrangement-on-fasttabs.md) -->
 ### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
