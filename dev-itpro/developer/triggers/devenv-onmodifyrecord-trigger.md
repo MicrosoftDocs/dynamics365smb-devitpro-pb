@@ -19,7 +19,6 @@ Executed before a record is modified in the table.
 ## Syntax  
   
 ```  
-  
 [Ok]:= OnModifyRecord  
 ```  
   

@@ -1,7 +1,7 @@
 ---
 title: "Working with Translation Files"
 ms.custom: na
-ms.date: 02/01/2018
+ms.date: 04/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,7 +37,7 @@ Now, when you run the build command (Ctrl+Shift+B) in Visual Studio Code, a `\Tr
 > Make sure to rename the translated file to avoid that the file is overwritten next time the extension is built.
 
 ## Syntax
-As stated above, the ML properties (CaptionML, TooltipML etc.), the old report label syntax, and TextConst do not get included in the .xlf file and will not be translated. Make sure to update your code from the old ML syntax to the new label syntax described below. 
+As stated above, the ML properties (CaptionML, TooltipML etc.), the old report label syntax, and TextConst do not get included in the .xlf file for translation. Make sure to update your code from the old ML syntax to the new label syntax described below. 
 
 The label syntax is shown in the example below for the **Caption** property: 
 
@@ -51,9 +51,9 @@ Use the same syntax for report labels:
 
 ```
 labels
-  {
-    LabelName = 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
-  } 
+{
+  LabelName = 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
+} 
 ```
 
 And the following is the syntax for **Label** data types:
@@ -85,10 +85,10 @@ In the generated .xlf file, you can see a `<source>` element for each label. For
 </xliff>
 ```
 
-> [!NOTE]
+> [!NOTE]  
 > You can have only one .xlf file per language. If you translate your extension to multiple languages, you must have a translation file per language. There is no enforced naming on the file, but a suggested good practice is to name it `<extensionname>.<language>.xlf`.
 
 When the extension is built and published, you change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
 
 ## See Also
-[Multilanguage Development](devenv-multilanguage-development.md)  
+[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/da-dk/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)  

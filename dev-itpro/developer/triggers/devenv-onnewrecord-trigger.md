@@ -20,7 +20,6 @@ Executed after a new record is initialized, but before users can make entries.
 ## Syntax  
   
 ```  
-  
 OnNewRecord(BelowxRec)  
 ```  
   

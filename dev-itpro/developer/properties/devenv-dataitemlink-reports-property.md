@@ -1,7 +1,7 @@
 ---
 title: "DataItemLink Property (Reports)"
 ms.custom: na
-ms.date: 04/16/2018
+ms.date: 04/23/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,5 +46,6 @@ SETRANGE("Sell-to Customer No.",Customer."No.");
 ```  
   
 ## See Also  
- [OnPreDataItem Trigger](../triggers/devenv-onpredataitem-trigger.md)   
- [DataItemLinkReference Property](devenv-dataitemlink-reference-property.md)
+[OnPreDataItem Trigger](../triggers/devenv-onpredataitem-trigger.md)   
+[DataItemLinkReference Property](devenv-dataitemlink-reference-property.md)   
+[DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)

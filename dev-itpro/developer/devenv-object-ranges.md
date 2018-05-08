@@ -15,7 +15,7 @@ caps.latest.revision: 18
 ---
 
 # Object Ranges in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
-In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] running in the cloud, there are three different object ranges in terms of licensing. Developing for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is done using Visual Studio Code with the AL Language extension. All tenants in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are able to freely use objects in the following ranges:
+In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] running in the cloud, there are three different object ranges in terms of licensing. Developing for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is done using Visual Studio Code with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. All tenants in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are able to freely use objects in the following ranges:
 
 - 50.000-99.999
 - 1.000.000-60.000.000

@@ -26,7 +26,7 @@ When you have specified the dataitem and column elements, you create links betwe
 > Extension objects can have a name with a maximum length of 30 characters.      
 
 ## Snippet support
-Typing the shortcut ```tquery``` will create the basic layout for a Query object when using the AL Extension in Visual Studio Code.
+Typing the shortcut ```tquery``` will create the basic layout for a Query object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Query example
 The following example shows a query that displays a list of customers with sales and profit figures. The query primarily retrieves fields from the **Customer** table, but also displays fields from the **Salesperson Purchaser** and **Country Region** tables.
@@ -36,55 +36,55 @@ The query also uses the DataItemLink property to create a link between the **Cus
 ```
 query 50102 "Top Customer Overview"
 {
-  CaptionML=ENU='Top Customer Overview';
+    Caption = 'Top Customer Overview';
 
-  elements
-  {
-    dataitem(Customer;Customer)
+    elements
     {
-      column(Name;Name)
-      {
-      }
-      column(No;"No.")
-      {
-      }
-      column(Sales_LCY;"Sales (LCY)")
-      {
-      }
-      column(Profit_LCY;"Profit (LCY)")
-      {
-      }
-      column(Country_Region_Code;"Country/Region Code")
-      {
-      }
-      column(City;City)
-      {
-      }
-      column(Global_Dimension_1_Code;"Global Dimension 1 Code")
-      {
-      }
-      column(Global_Dimension_2_Code;"Global Dimension 2 Code")
-      {
-      }
-      column(Salesperson_Code;"Salesperson Code")
-      {
-      }
-      dataitem(Salesperson_Purchaser;"Salesperson/Purchaser")
-      {
-        DataItemLink=Code=Customer."Salesperson Code";
-        column(SalesPersonName;Name)
+        dataitem(Customer; Customer)
         {
+            column(Name; Name)
+            {
+            }
+            column(No; "No.")
+            {
+            }
+            column(Sales_LCY; "Sales (LCY)")
+            {
+            }
+            column(Profit_LCY; "Profit (LCY)")
+            {
+            }
+            column(Country_Region_Code; "Country/Region Code")
+            {
+            }
+            column(City; City)
+            {
+            }
+            column(Global_Dimension_1_Code; "Global Dimension 1 Code")
+            {
+            }
+            column(Global_Dimension_2_Code; "Global Dimension 2 Code")
+            {
+            }
+            column(Salesperson_Code; "Salesperson Code")
+            {
+            }
+            dataitem(Salesperson_Purchaser; "Salesperson/Purchaser")
+            {
+                DataItemLink = Code = Customer."Salesperson Code";
+                column(SalesPersonName; Name)
+                {
+                }
+                dataitem(Country_Region; "Country/Region")
+                {
+                    DataItemLink = Code = Customer."Country/Region Code";
+                    column(CountryRegionName; Name)
+                    {
+                    }
+                }
+            }
         }
-        dataitem(Country_Region;"Country/Region")
-        {
-          DataItemLink=Code=Customer."Country/Region Code";
-          column(CountryRegionName;Name)
-          {
-          }
-        }
-      }
     }
-  }
 }
 ```
 

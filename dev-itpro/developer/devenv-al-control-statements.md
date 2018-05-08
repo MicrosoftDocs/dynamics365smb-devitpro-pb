@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # AL Control Statements
-AL code consist of one or more statements, which are executed sequentially in top-down order. However, you will often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do this, you use control structures.  
+AL code consists of one or more statements, which are executed sequentially in top-down order. However, you will often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do this, you use control structures.  
 
 The control structures in AL are divided into the following main groups, as described in this article:  
 -   Compound Statements

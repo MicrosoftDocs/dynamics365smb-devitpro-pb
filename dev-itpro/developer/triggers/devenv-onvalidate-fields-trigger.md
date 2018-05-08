@@ -1,7 +1,7 @@
 ---
 title: "OnValidate (Fields) Trigger"
 ms.custom: na
-ms.date: 06/19/2017
+ms.date: 05/04/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,8 @@ Executed when user input is validated.
   
 ## Remarks  
  This trigger is executed after the default validation behavior. An error message displays if an error occurs in the trigger code. In case of an error, the user entry is not written to the database.  
+
+ The OnValidate trigger is also a field trigger at the page level. For more information, see [OnValidate (Page Fields) Trigger](devenv-onvalidate-page-fields-trigger.md). If both the table field and page field triggers are defined, then the OnValidate trigger on the table field is executed before the OnValidate trigger on the page field.  
   
 ## See Also  
  [Triggers](devenv-triggers.md)  

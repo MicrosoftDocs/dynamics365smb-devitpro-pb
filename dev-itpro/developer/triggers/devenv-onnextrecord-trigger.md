@@ -21,7 +21,7 @@ Determines the next record to be displayed.
 
 ```  
 
-[ActualSteps]:=OnNextRecord(Steps)  
+[ActualSteps]:= OnNextRecord(Steps)  
 ```  
 
 #### Parameters  

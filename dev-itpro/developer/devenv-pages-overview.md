@@ -1,8 +1,9 @@
 ---
 title: "Pages Overview"
+description: Pages are the main way to display and organize data. Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 05/04/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,19 +18,19 @@ ms.author: solsen
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], pages are the main way to display and organize data. Pages are the primary object that a user will interact with and have a different behavior based on the type of page that you choose. Pages are designed independently of the device they are to be rendered on, and in this way the same page can be reused across phone, tablet, and web clients.
 
-A page is defined in code as an object composed of controls, properties, actions, and triggers. You can also use Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to create a page. For more information, see [Using Designer](devenv-inclient-designer.md).
+A page is defined in code as an object composed of controls, properties, actions, and triggers. You can also use Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to create a page. For more information, see [Using Designer](devenv-inclient-designer.md). 
 
-Whether you are creating a new page, or extending en existing page, you will add a new .al file to your project and describe the page object in code. The difference is basically that for a new page, you need to define the entire page, whereas when modifying an existing page, you only add the extra functionality or modify the existing. 
+Whether you are creating a new page, or extending en existing page, you will add a new .al file to your project and describe the [page object](devenv-page-object.md) in code. The difference is basically that for a new page, you need to define the entire page, whereas when modifying an existing page, you only add the extra functionality or modify the existing. 
 
 The structure of a page is hierarchical and breaks down in to three sections. The first block contains metadata for the overall page. The metadata describes the page type and the source table it is showing data from. The next section; the layout, describes the visual parts on the page. The final section details the actions that are published on the page.
 
 Furthermore, the page has properties. Properties work in the same way for pages as they do for other [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] objects. For more information, see [Page Properties](properties/devenv-page-property-overview.md).  
 
 ## Page Metadata
-For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object. 
+For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object.  
 
 ```
-page Id PageName
+page 50102 PageName
 {
     PageType = List;
     SourceTable = TableName;
@@ -65,41 +66,53 @@ The page layout of the page object determines what the page will look like and i
 You can choose between the following `area` categories:
 
 |Area type|Placement on the page|
-|---------|-----------------|
-|`Content`|The content area displays the content of a RoleCenter or List page.|
-|`FactBoxes`|The factbox area is placed to the right-most side of a page. Displays content related to an item om the main content page.|
-|`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
+|---------|---------------------|
+|```Content```|The content area displays the content of a RoleCenter or a List page.|
+|```FactBoxes```|The factbox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
+|```RoleCenter```|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
+  
+<h2> Page Actions </h2>
 
-### Adding, moving, and modifying
-In the `layout` section, you can use the following methods to place and move fields and groups on the page. 
+All pages contain menu items and navigation controls called actions. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page in the ribbon or in the navigation pane. The `actions` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. 
 
-> [!TIP]  
-> Similarly, in the `actions` section, which is described [below](#page-actions), you use these methods to place actions in the ribbon. 
+Actions can be displayed in the ribbon of all pages and grouped together under the following actions tabs: 
 
-|Method example         |Applies to |
-|-----------------------|-------------|
-|```addfirst(General)```|Groups only|
-|```addlast(General)``` |Groups only|
-|```addafter(AddressDetails)``` |Fields and groups|
-|```addbefore(AddressDetails)```|Fields and groups|
-|```movefirst(General)```|Groups only|
-|```movelast(General)``` |Groups only|
-|```moveafter(AddressDetails)``` |Fields and groups|
-|```movebefore(AddressDetails)```|Fields and groups|
+- Home
+- Actions  
+- Navigate
+- Report
+
+Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
+
+## Adding, moving, and modifying
+You can use the following keywords in the `layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these keywords to place actions in the ribbon. 
+
+|Keywords        |Syntax | Applies to |
+|-----------------------|-------|-------------|
+|```addfirst```|```addfirst(Anchor)```|**Anchor**: areas and groups|
+|```addlast``` |```addlast(Anchor)``` |**Anchor**: areas and groups|
+|```addafter``` |```addafter(Anchor)``` |**Anchor**: controls, actions and groups|
+|```addbefore```|```addbefore(Anchor)``` |**Anchor**: controls, actions and groups|
+|```movefirst```|```movefirst(Anchor; Target1, Target2)```|**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
+|```movelast``` |```movelast(Anchor; Target1, Target2)``` |**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
+|```moveafter``` |```moveafter(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
+|```movebefore```|```movebefore(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
 
 
-If you want to modify existing fields and groups on a page, you use the `modify` method. See the code snippet below for `addlast` and `modify` syntax.
+### Example
+To modify the existing fields and groups on a page, you use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, `action` creates a new group in the ribbon and places it last in the `Creation` group.  
 
 ```
 pageextension 70000020 CustomerCardExtension extends "Customer Card"
 {
     layout
     {
+        // Adding a new control field 'ShoeSize' in the group 'General'
         addlast(General)
         {
             field("Shoe Size"; ShoeSize)
             {
-                CaptionML = ENU='ShoeSize';
+                Caption = 'Shoe size';
 
                 trigger OnValidate();
                 begin
@@ -109,36 +122,46 @@ pageextension 70000020 CustomerCardExtension extends "Customer Card"
             }
         }
 
+        // Modifying the caption of the field 'Address 2'
         modify("Address 2")
         {
-            CaptionML = ENU='New Address 2';
+            Caption = 'New Address 2';
         }
-    }
-        ...
-```
- 
-## Page actions
-All pages contain menu items and navigation controls called actions. The ```actions``` section of the page describes what the user is able to do on a page and must be designed with the user's need for process support in mind. Actions are added to the ribbon or as activity buttons/cues. The following example creates a new group in the ribbon and places it last in the General group.
 
-```
-addlast(General)
-{
-    group(MyActionGroup)
+        // Moving the two fields 'CreditLimit' and 'CalcCreditLimitLCYExpendedPct'
+        // to be the first ones in the 'Balance' group.
+        movefirst(Balance; CreditLimit, CalcCreditLimitLCYExpendedPct)
+    }
+    actions
     {
-        Action(MyAction1)
+        // Adding a new action group 'MyNewActionGroup' in the 'Creation' area
+        addlast(Creation)
         {
-            CaptionML = ENU='Hello!';
+            group(MyNewActionGroup)
+            {
+                action(MyNewAction)
+                {
+                    Caption = 'My New Action';
 
-            trigger OnAction();
-            begin
-                Message('My message');
-            end;
+                    trigger OnAction();
+                    begin
+                        Message('My message');
+                    end;
+                }
+            }
         }
     }
-}         
-```
+}
 
-For more information see, [Actions Overview](devenv-actions-overview.md).
+tableextension 70000020 CustomerTableExtension extends Customer
+{
+    fields
+    {
+        // Adding a new table field in the 'Customer' table
+        field(50100; ShoeSize; Integer) { }
+    }
+}
+```
   
 ## Best practices for designing pages  
 We recommend that you simplify the user experience by reducing what users see by default. You can promote the information that the users most frequently need to see and hide the less important information. For example:  
@@ -150,4 +173,8 @@ We recommend that you simplify the user experience by reducing what users see by
 -   Use one to three FactBoxes on a page to provide supplementary information and a place for adding notes.  
   
 ## See Also  
-[Page Properties Overview](properties/devenv-page-property-overview.md)
+[Page Properties Overview](properties/devenv-page-property-overview.md)  
+[Actions Overview](devenv-actions-overview.md)  
+[Using Designer](devenv-inclient-designer.md)  
+[Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
+[Designing Role Centers](devenv-designing-role-centers.md)  

@@ -2,7 +2,7 @@
 title: "APIVersion Property (Page)"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/18/2018
+ms.date: 04/23/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,5 +21,6 @@ Sets the version(s) of the API endpoint the page is exposed in.
 - Page object 
 
 ## See Also  
- [Properties](devenv-properties.md)   
- [Page Object](../devenv-page-object.md)
+[Properties](devenv-properties.md)   
+[Page Object](../devenv-page-object.md)  
+[APIVersion Property (Query)](devenv-apiversion-query-property.md) 

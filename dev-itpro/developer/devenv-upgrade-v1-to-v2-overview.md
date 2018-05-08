@@ -15,7 +15,7 @@ ms.author: jswymer
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Converting Extensions V1 to Extensions V2
-Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they are different or modify the behavior of the solution. This article explains the steps involved in converting V1 extensions, written in C/SIDE. to V2 extensions; written using the AL Language extension for Visual Studio Code. The overall steps for the conversion are:
+Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they are different or modify the behavior of the solution. This article explains the steps involved in converting V1 extensions, written in C/SIDE. to V2 extensions; written using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code. The overall steps for the conversion are:
 
 1.  Convert the source code from C/AL to the AL syntax.
 2.  Complete the development of the extension in AL syntax.
@@ -27,7 +27,7 @@ Extensions are a programming model where functionality is defined as an addition
 To convert the source code, you must use the Txt2Al conversion tool. The Txt2Al conversion tool allows you to take existing application objects that have been exported in .txt format and convert them into the new .al format. The .al format is used when developing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information about converting the source code, see [Txt2Al Conversion Tool](devenv-txt2al-tool.md). 
 
 ## Complete the development of the extension
-When the source code has been converted using the Txt2Al conversion tool, open the project folder in Visual Studio Code, and then modify or add code to the new version as needed. For more information about getting started with Visual Studio Code and the AL Language extension, see [Getting Started with AL](devenv-get-started.md).
+When the source code has been converted using the Txt2Al conversion tool, open the project folder in Visual Studio Code, and then modify or add code to the new version as needed. For more information about getting started with Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], see [Getting Started with AL](devenv-get-started.md).
 
 You might run into compilation errors, which can typically be caused by:
 
