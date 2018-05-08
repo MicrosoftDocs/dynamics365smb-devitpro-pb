@@ -37,11 +37,11 @@ NewString := DELCHR(String[, Where][, Which])
   
  You can include one or more of the following characters in the *Where* string:  
   
--   =   To delete any character in *String* that matches a character in *Which* \(default\)  
+-   `=`   To delete any character in *String* that matches a character in *Which* \(default\)  
   
--   \<   To delete any leading character in *String* that matches a character in *Which*  
+-   `<`   To delete any leading character in *String* that matches a character in *Which*  
   
--   >   To delete any trailing character in *String* that matches a character in *Which*  
+-   `>`   To delete any trailing character in *String* that matches a character in *Which*  
   
  *Which*  
  Type: Text or code  
