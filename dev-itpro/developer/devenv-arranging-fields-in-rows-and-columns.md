@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 # Arranging Fields in Multiple Rows and Columns
 By default, page fields are arranged automatically in two columns. For more information, see [Arranging Fields on FastTab](devenv-arranging-fields-on-fasttab.md). You can use a GridLayout control or a FixedLayout control to arrange fields in rows and columns on a page in a grid-like format. This topic outlines the differences between the two controls to help you determine which control to use.  
   
-## Comparing GridLayout and FixedLayout Controls  
+## Comparing GridLayout and FixedLayout controls  
  The GridLayout control is a new control and is the preferred method because it gives you more layout options and is generally easier to use. The following table outlines the GridLayout and FixedLayout control characteristics and their differences.  
   
 |Characteristics|GridLayout|FixedLayout|  
