@@ -15,7 +15,7 @@ Sets whether a `cuegroup` control displays in the wide layout.
   
 ## Applies To  
   
--   `cuegroup` control
+-   `cuegroup` controls
   
 ## Property Values  
 

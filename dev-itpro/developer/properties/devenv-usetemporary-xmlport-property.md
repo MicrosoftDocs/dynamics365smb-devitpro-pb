@@ -17,7 +17,7 @@ Sets whether a temporary table is created to store the records imported using th
 
 ## Applies To  
 
-- XmlPortTableElement
+- XMLport table elements
 
 ## See Also  
 [Properties](devenv-properties.md)   

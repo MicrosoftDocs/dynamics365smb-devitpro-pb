@@ -18,7 +18,7 @@ Specifies the columns in a list that remain in view on a page, even when you scr
   
 ## Applies To  
   
--   PageGroup  
+-   Page groups  
 
 
 ## See Also  

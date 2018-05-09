@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 Sets whether the first letter in each word the user types is capitalized.
   
 ## Applies To  
-- PageField
+- Page fields
   
   
 ## See Also  

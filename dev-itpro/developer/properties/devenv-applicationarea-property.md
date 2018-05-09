@@ -18,7 +18,7 @@ Sets the application areas that apply to the control.
   
 -   Page field, part, and action controls 
   
--   Report request page field controls  
+-   Report, request page, and field controls  
   
 ## Property Values  
  A text string that contains a comma-separated list of application area tags.  
