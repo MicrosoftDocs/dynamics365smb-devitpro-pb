@@ -62,14 +62,14 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the primary way to 
 |Get a brief introduction to relational database design in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|[Setting Relationships Between Tables](devenv-set-relationships-between-tables.md)|  
 
 <!--
-|Understand the extra steps SQL Server requires to use the **TableRelation** property.|[Maintaining Table Relationships on SQL Server](Maintaining-Table-Relationships-on-SQL-Server.md)|  
+|Understand the extra steps SQL Server requires to use the **TableRelation** property.|[Maintaining Table Relationships on SQL Server](Maintaining-Table-Relationships-on-SQL-Server.md)|  ???
   
 ## Understanding SQL Server and Linked Objects  
  [!INCLUDE[navnow](includes/navnow_md.md)] supports special handling for SQL Server Object tables. You can find help on linked objects in the following topics.  
   
 |To|See|  
 |--------|---------|  
-|Learn about the **LinkedObject** table property.|[Creating Table Definitions from SQL Server Objects (Linked Objects)](Creating-Table-Definitions-from-SQL-Server-Objects--Linked-Objects-.md)|  
+|Learn about the **LinkedObject** table property.|[Creating Table Definitions from SQL Server Objects (Linked Objects)](  Creating-Table-Definitions-from-SQL-Server-Objects--Linked-Objects-.md)|  
 |Work with other data sources, including Microsoft Excel and Oracle databases.|[Accessing Objects in Other Databases or on Linked Servers](Accessing-Objects-in-Other-Databases-or-on-Linked-Servers.md)|  
   
   -->
