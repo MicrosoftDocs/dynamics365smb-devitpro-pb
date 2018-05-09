@@ -15,7 +15,7 @@ ms.author: solsen
 # Adding a FactBox to a Page
 A FactBox is the area that is located on the right-most side of a page and it is divided into one or more parts that are arranged vertically. This area is used to display content including other pages, charts, and system parts such as Microsoft Outlook, Notes, and Record Links. Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list as shown below.  
 
-![Shows FactBox on a sales order](media/factboxes.png "FactBoxOverview")  
+![Shows FactBox on a sales order](media/factboxes.png)  
 
 The following list highlights a few categories of FactBoxes:
 
@@ -67,7 +67,7 @@ page 50100 "Simple Customercard Page"
 > [!TIP]  
 > When used on Lists, Factboxes can be used to show information about the entire list, or more contextually about the user’s current selection; the currently selected rows. You can control the filter which gets passed to the FactBox that determines its contextual contents. 
 
-## Filtering data that is Displayed on a Page in a FactBox
+## Filtering data that is displayed on a page in a FactBox
 In many cases, you want to change the content that is displayed on the page in the FactBox based on the content of the main page. For example, if the main page is a Customer List, you can have a FactBox that includes the Customer Details page that shows information about a customer. When a user selects a customer in the Customer List, the Customer Details page displays information about the selected customer. To implement this functionality, you set up a table filter that associates a field in the table that is used by the Customer Details page with a field in the table that is used by the Customer List page. You can also filter on a constant value or set of conditions. 
 
 ## See Also  
