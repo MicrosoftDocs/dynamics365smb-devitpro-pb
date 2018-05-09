@@ -33,7 +33,7 @@ Gets and sets the work date for the current session.
 ## Property Value/Return Value  
  Type: Date  
 
- The current work date.  
+ The new work date.  
 
 ## Remarks  
 <!--NAV
