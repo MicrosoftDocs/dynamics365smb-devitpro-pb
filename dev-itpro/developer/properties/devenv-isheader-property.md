@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 Specifies if the page action separator is a header.
   
 ## Applies To  
-- PageActionSeparator
+- Page action separators
   
 ## Property Type
 Boolean

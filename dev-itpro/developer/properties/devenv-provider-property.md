@@ -18,8 +18,8 @@ Sets the provider for a FactBox. This property enables you to create a link from
   
 ## Applies To  
   
-- PageSystemPart
-- PagePart
+- Page system parts
+- Page parts
 
 
 ## See Also  

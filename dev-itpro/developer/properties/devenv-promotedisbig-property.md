@@ -19,7 +19,7 @@ Sets a value that indicates whether the promoted action is displayed on the ribb
   
 ## Applies to  
   
--   Page Actions  
+-   Page actions  
   
 ## Remarks  
  Available options are **true**/**false**.  

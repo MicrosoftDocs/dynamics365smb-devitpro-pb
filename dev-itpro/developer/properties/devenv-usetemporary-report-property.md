@@ -17,7 +17,7 @@ Sets whether a temporary table is used to store the data set that is returned fo
 
 ## Applies To  
 
-- ReportDataItem
+- Report data items
 
 ## See Also  
 [Properties](devenv-properties.md)   
