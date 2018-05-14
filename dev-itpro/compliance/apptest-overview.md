@@ -19,15 +19,15 @@ caps.latest.revision: 18
 # Rules and Guidelines for AL Code
 This page defines the rules and guidelines to follow when writing AL code in an extension package for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. The rules and guidelines are grouped according to two importance levels: critical errors that must be resolved, and important errors that should be resolved. Errors that are not resolved must include an explanation and justification for the error.
 
-## Critical Errors
+## Critical errors
 
-- Code uses NAV encryption key functions such as IMPORTENCRYPTIONKEY, EXPORTENCRYPTIONKEY, CREATEENCRYPTIONKEY, and DELETEENCRYPTIONKEY. (It is fine to use the ENCRYPT and DECRYPT functions.)
+- Code uses encryption key functions such as IMPORTENCRYPTIONKEY, EXPORTENCRYPTIONKEY, CREATEENCRYPTIONKEY, and DELETEENCRYPTIONKEY. (It is fine to use the ENCRYPT and DECRYPT functions.)
 - Code uses ASSERTERROR.
 - External data connections do not properly handle sensitive data.
-- Code uses AutoIncrement=Yes for a table field that may be used in a Foreign Key relationship. Recommend code comment that the table field will not be used in a Foreign Key relationship to pass validation.
+- Code uses `AutoIncrement = Yes` for a table field that may be used in a Foreign Key relationship. Recommend code comment that the table field will not be used in a Foreign Key relationship to pass validation.
 - It does not encrypt sensitive table data. (i.e. credit card info, passwords, etc.).
 
-## Important Errors
+## Important errors
 
 - Temporary files are not cleaned up after use.
 - Code uses codeunits that require printers to be selected.
