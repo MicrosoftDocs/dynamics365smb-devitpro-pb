@@ -15,7 +15,7 @@ caps.latest.revision: 13
 Sets the type of query to create. 
 
 ## Applies To  
-- Query object
+- Queries
 
 
 ## See Also  

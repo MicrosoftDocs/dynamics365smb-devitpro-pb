@@ -18,7 +18,7 @@ Gets the list of options that are available in the field that is currently selec
   
 ## Applies To  
   
--   ReportColumn  
+-   Report columns  
 
 
 ## See Also  
