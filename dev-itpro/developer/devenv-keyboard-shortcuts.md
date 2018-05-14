@@ -18,7 +18,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Keyboard Shortcuts
 The following table provides an overview of some of the shortcut key combinations that you can use when you are working  in Visual Studio Code. For a complete overview, see [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/customization/keybindings).
 
-## Keyboard shortcuts for AL language extension in Visual Studio Code
+## General in Visual Studio Code
 |Keyboard Shortcut| Action|
 |-----------------|-------|
 |Ctrl+Shift+P|Show All Commands|

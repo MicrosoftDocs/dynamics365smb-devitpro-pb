@@ -1,7 +1,8 @@
 ---
 title: "XMLport Triggers"
+ms.author: solsen
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 02/05/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,21 +10,19 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: bc6beaeb-07bb-4a5e-b84a-3c48b17f3c54
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # XMLport Triggers
 The following triggers apply to XMLports.  
 
-## XMLport Triggers  
+## XMLport triggers  
 
 |XMLport trigger|Executed|  
 |---------------------|--------------|  
 |[OnAfterAssignField Trigger](devenv-onafterassignfield-trigger.md)|Executed after a field has been assigned a value and before it is validated and imported.<br /><br /> This trigger is only used to import data.|  
 |[OnAfterAssignVariable Trigger](devenv-onafterassignvariable-trigger.md)|Executed after the value defined in the XML document is assigned to the text variable.<br /><br /> This trigger is only used to import data.|  
 |[OnAfterGetField Trigger](devenv-onaftergetfield-trigger.md)|Executed after a field is passed to the XML document.<br /><br /> This trigger is only used to export data.|  
-|[OnAfterGetRecord \(XMLports\) Trigger](devenv-onaftergetrecord-xmlports-trigger.md)|Executed after a record is retrieved from a table and before it is exported to the XML document.<br /><br /> This trigger is only used to export data.|  
+|[OnAfterGetRecord (XMLports) Trigger](devenv-onaftergetrecord-xmlports-trigger.md)|Executed after a record is retrieved from a table and before it is exported to the XML document.<br /><br /> This trigger is only used to export data.|  
 |[OnAfterInitRecord Trigger](devenv-onafterinitrecord-trigger.md)|Executed after a record is loaded.<br /><br /> This trigger is only used to import data.|  
 |[OnAfterInsertRecord Trigger](devenv-onafterinsertrecord-trigger.md)|Executed after a record has been inserted into a database table.<br /><br /> This trigger is only used to import data.|  
 |[OnAfterModifyRecord Trigger](devenv-onaftermodifyrecord-trigger.md)|Executed after a record has been modified. <br /><br /> The trigger is used to import data.|
@@ -37,8 +36,6 @@ The following triggers apply to XMLports.
 |[OnPreXMLItem Trigger](devenv-onprexmlitem-trigger.md)|Executed after the table is initialized and before you start exporting data to an XML object. This trigger only applies to XMLport elements that have a source type of Table.<br /><br /> This trigger is only used to export data.|  
 
 ## See Also  
+[XMLPort Object](../devenv-xmlport-object.md)  
 [Triggers](devenv-triggers.md)  
-[XMLport Properties](../properties/devenv-xmlport-properties.md)  
-<!--
-[How to: Define or Modify Table or Field Triggers](How-to-define-or-modify-table-or-field-triggers.md)
--->
+[XMLPort Properties](../properties/devenv-xmlport-properties.md)  

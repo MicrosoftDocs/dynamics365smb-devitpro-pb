@@ -18,7 +18,7 @@ Sets a specific table view for the page that you launch from this control.
   
 ## Applies To  
   
--   Page Actions  
+-   Page actions  
   
 ## Remarks  
  The table view is the view of the table that you present to the user. You determine what records the user can see by setting filters, determining the sorting order, and selecting the keys.  

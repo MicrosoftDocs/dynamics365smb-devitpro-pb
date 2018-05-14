@@ -18,9 +18,9 @@ author: SusanneWindfeldPedersen
 Sets the link to be directed to when pressing the Help button in the user interface.
   
 ## Applies To  
-- RequestPage 
+- RequestPages 
 
-- Page
+- Pages
   
 
 ## See Also  

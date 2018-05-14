@@ -17,7 +17,7 @@ caps.latest.revision: 18
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Using the Code Analysis Tools with the Ruleset
-This topic shows how you can use a custom ruleset to customize the severity of diagnostics produced by the code analysis tools that are part of the AL Language extension for Visual Studio Code.
+This topic shows how you can use a custom ruleset to customize the severity of diagnostics produced by the code analysis tools that are part of the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
 
 ## Using rulesets with code analysis
 First, create a simple project in AL. 
@@ -25,7 +25,7 @@ First, create a simple project in AL.
 2. Open the Command Palette by using the **Ctrl+Shift+P** shortcut and choose either User Settings or Workspace Settings.
 3. Copy the setting **al.enableCodeAnalysis** to the settings.json file and set it to `true`: **"al.enableCodeAnalysis": true**.
 
-At this point, the analyzers packaged with the AL Language extensions will be run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate violations of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
+At this point, the analyzers packaged with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s will be run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate violations of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
 
 ## Add your own code to the project
 In the Visual Studio Code Explorer, open the `HelloWorld.al` file and replace the existing code with the following:
@@ -69,7 +69,7 @@ To create and customize a ruleset of your own, follow the next steps:
 4. In your project settings set **al.ruleSetPath** to the path to the `<name>.ruleset.json` file, relative to the project root. For more information about custom rules, see [ruleset for the Code Analysis tool](devenv-rule-set-syntax-for-code-analysis-tools.md).
 
 > [!NOTE]
-> Use the `truleset` and `trule` snippets provided by the AL Language extension to create your ruleset. The ruleset will be applied to all the analyzers enabled for the current project. For more information about selectively enabling analyzers, see [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md).
+> Use the `truleset` and `trule` snippets provided by the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] to create your ruleset. The ruleset will be applied to all the analyzers enabled for the current project. For more information about selectively enabling analyzers, see [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md).
 
 ## Running the code analysis
 The code analysis will run in the background and you will see the warning **"There must be exactly one space character on each side of '+'."** disappear from the **Problems** option in Visual Studio Code.
@@ -77,7 +77,7 @@ The code analysis will run in the background and you will see the warning **"The
 To trigger a new compilation manually, use the **Ctrl+Shift+B** shortcut to build your project. For more information about AL keyboard shortcuts, see [Keyboard shortcuts](devenv-keyboard-shortcuts.md).
 
 ## Limitations
-Changing the contents of the ruleset file will not be detected by the AL Language extension. To see the effects of changing the ruleset file, you can try any of the following:
+Changing the contents of the ruleset file will not be detected by the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To see the effects of changing the ruleset file, you can try any of the following:
 - Trigger a new compilation manually by using the **Ctrl+Shift+B** shortcut.
 - Reload the window.
 - In the project settings, change the **al.ruleSetPath** setting to an invalid path. Save the settings file, change back the setting, and save it.

@@ -62,14 +62,15 @@ The second-level navigation offers a flat list of links to other pages. These sh
 The following code adds a new link to the secondary-level navigation by defining this area with an `area(Embedding)` control in the page code. The object targeted in this case is the `Sales Cycles` page and it will appear as the last one. 
 
 ```
-        addlast(Embedding)
-        {
-            action("Sales Cycles")
-            {
-                RunObject = page "Sales Cycles";
-                ApplicationArea = All;
-            }
-        }
+...
+addlast(Embedding)
+{
+    action("Sales Cycles")
+    {
+        RunObject = page "Sales Cycles";
+        ApplicationArea = All;
+    }
+}
 ```
 
 ## Adding to actions 
@@ -81,16 +82,16 @@ The first action area that appears at the top of the Role Center page is `area(C
 ### Example
 
 ```
-        addlast(Creation)
-        {
-            action("Sales Journal")
-            {
-                ApplicationArea = All;
-                RunObject = page "Sales Journal";
-            }
-        }
+...
+addlast(Creation)
+{
+    action("Sales Journal")
+    {
+        ApplicationArea = All;
+        RunObject = page "Sales Journal";
+    }
+}
 ```
-
 
 The actions in the `area(Processing)` control appears after the `area(Creation)` items. 
 The example below shows how you can use the group control to organize similar actions under a common parent. The created group is placed at the end of this action area, and it targets pages needed for processing sales documents. 
@@ -98,22 +99,23 @@ The example below shows how you can use the group control to organize similar ac
 ### Example
 
 ```
-        addlast(Processing)
+...
+addlast(Processing)
+{
+    group(Documents)
+    {
+        action("Sales Document Entity")
         {
-            group(Documents)
-            {
-                action("Sales Document Entity")
-                {
-                    ApplicationArea = All;
-                    RunObject = page "Sales Document Entity";
-                }
-                action("Sales Document Line Entity")
-                {
-                    ApplicationArea = All;
-                    RunObject = page "Sales Document Line Entity";
-                }
-            }
+            ApplicationArea = All;
+            RunObject = page "Sales Document Entity";
         }
+        action("Sales Document Line Entity")
+        {
+            ApplicationArea = All;
+            RunObject = page "Sales Document Line Entity";
+        }
+    }
+}
 ```
 
 
@@ -122,14 +124,15 @@ The actions in the `area(Reporting)` control will appear last in the action area
 ### Example
 
 ```
-        addlast(Reporting)
-        {
-            action("Customer Statistics")
-            {
-                ApplicationArea = All;
-                RunObject = report "Customer Sales Statistics";
-            }
-        }
+...
+addlast(Reporting)
+{
+    action("Customer Statistics")
+    {
+        ApplicationArea = All;
+        RunObject = report "Customer Sales Statistics";
+    }
+}
 ```
   
 

@@ -92,7 +92,7 @@ page 123 PageName
 
 ```
 
-The AL Language extension offers users the option to automatically format their source code. For more information on how to use it, see [AL Formatter](../developer/devenv-al-formatter.md).
+The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to automatically format their source code. For more information on how to use it, see [AL Formatter](../developer/devenv-al-formatter.md).
 
 ## Line length
 In general there is no restriction on line length, but lengthy lines can make the the code unreadable. We recommend that you keep your code easily scannable and readable.
@@ -129,7 +129,7 @@ In AL, objects are referenced by their object name, not by their ID.
 Page.RunModal(Page::"Customer Card", ...)
  
 var
-Customer: Record Customer;
+    Customer: Record Customer;
 ```
 
 ## Variable naming 
@@ -145,7 +145,7 @@ Vendor: Record Vendor;
 To declare a method, follow the guidelines below: 
 
 - Include a space after a semicolon when declaring multiple arguments. 
-- Semicolons are used at the end of the signature/method header. If you use a snippet, the semicolons are automatically added.
+- Semicolons can be used at the end of the signature/method header. If you use a snippet,   the semicolons are not automatically added.
 - Methods are named as variables using Pascal case. However, this is not a mandatory rule. 
 - There must be a blank line between method declarations. If you format your code using the [AL Formatter](../developer/devenv-al-formatter.md) tool, the auto-formatter sets the blank line between procedures. 
 
@@ -154,11 +154,14 @@ To declare a method, follow the guidelines below:
 ```
 local procedure MyProcedure(Customer: Record Customer; Int: Integer)
 begin
-end
+end;
+
 // space
+
 local procedure MyProcedure2(Customer: Record Customer; Int: Integer)
 begin
-end
+end;
+
 ```
 
 ## Calling methods
@@ -176,7 +179,7 @@ When declaring a variable or a parameter, the name of that variable or parameter
 
 ```
 Var
-Number: Integer;
+    Number: Integer;
 
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
 ```

@@ -22,7 +22,7 @@ The following is a checklist of all requirements that you **must meet before sub
 
 |Requirement|Example/Guidance|
 |-----------|----------------|
-|Develop your extension in Visual Studio Code.|[Developing AL Language Extensions](devenv-dev-overview.md)|
+|Develop your extension in Visual Studio Code.|[Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)|
 |The app.json file has mandatory settings that you must include. Here you can also read more about dependency syntax and multiple countries per a single app syntax.|[Mandatory app.json settings](devenv-json-files.md)|
 |Coding of `Date` must follow a specific format (**no longer region specific**)|Use the format `yyyymmddD`. For example, `20170825D`.|
 |Remote services (including all Web services calls) can use either HTTP or HTTPS. However, HTTP calls are only possible by using the HttpRequest AL type.|[Guidance on HTTP use](devenv-restapi-overview.md)|
@@ -45,4 +45,4 @@ The following is a checklist of all requirements that you **must meet before sub
 -->
 
 ## See Also
-[Developing AL Language Extensions](devenv-dev-overview.md)  
+[Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)  

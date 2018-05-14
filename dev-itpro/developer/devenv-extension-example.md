@@ -21,7 +21,7 @@ This walkthrough illustrates the following tasks:
 
 - Setting up a sandbox environment.
 
-- Downloading and installing Visual Studio Code and the AL Language extension for Visual Studio Code.
+- Downloading and installing Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
 
 - Developing a sample extension with a table, a card page, and a list page.
 
@@ -40,7 +40,7 @@ To complete this walkthrough, you will need:
 
 - Visual Studio Code.
 
-- The AL Language extension for Visual Studio Code.
+- The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
 
 For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting Started](devenv-get-started.md).
 
@@ -51,7 +51,7 @@ The extension enables the ability to assign one of three reward levels to custom
 ## Reward table object
 The following code adds a new table **50100 Reward** for storing the reward levels for customers. The table consists of three fields: **Reward ID**, **Description**, and **Discount Percentage**. For example, the **Description** field must contain a value of type text and it cannot exceed the limit of 250 characters. The second field contains three properties that are used to set the range of the discount percentage assigned to every customer. Properties can be created for every field, depending on the scope. 
 
->[!TIP]
+> [!TIP]
 > Type `ttable` followed by the Tab key. This snippet will create a basic layout for a table object.
 
 ```

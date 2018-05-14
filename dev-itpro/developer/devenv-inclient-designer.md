@@ -16,8 +16,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Using Designer
-
-Developing extensions using new development environment offers a wide range of possibilities. It is exceedingly important to pick suitable ways that servers a better development experience. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] truly complements Visual Studio Code, as it provides easy and convenient way of making immediate adjustments to your design by simply dragging and dropping the components around.  
+When developing extensions in the AL development environment you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code, as it provides easy and convenient way of making immediate adjustments to your design by simply dragging and dropping the components around.  
 
 Here is a quick overview of **Designer** capabilities: 
 
@@ -41,25 +40,22 @@ Here is a quick overview of **Designer** capabilities:
 
 - You cannot remove specific fields that are bound to a page, and not table variable of the page.
 
-- You can only add fields, columns or tiles to its applicable view from list, tall tiles, and wide tiles views. Adding certain components is not allowed using drag-and-drop when it is restricted to that view.
+- You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Adding certain components is not allowed using drag-and-drop when it is restricted to that view.
 
 - You can only add fields/columns, from a predefined list, which is based on the source table. You cannot create new ones.  
 
 ## Start designing
 
-You can start Designer by choosing ![Settings icon](media/settings_icon_small.png) **Designer** in the top right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. You can also launch the browser, and enter Designer, using the F6 shortcut in Visual Studio Code. After making adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull that via the Ctrl+F7 shortcut. You can also uninstall the extension from the Extension Management page or even download source from there. 
+You can start Designer by choosing ![Settings icon](media/settings_icon_small.png) **Designer** in the top right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. You can also launch the browser, and enter Designer, using the F6 shortcut in Visual Studio Code. After making adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull that via the Ctrl+F7 shortcut. You can also uninstall the extension from the **Extension Management** page or even download source from there. 
 
 > [!NOTE]  
 > With this preview you can only add existing table fields. Adding pages, groups, parts, and actions is not yet supported.
 
-<!--
 
-![Design](media/start-design.gif) 
+![Designer](/media/new-start-design.gif)
 
--->
 
 ## Drag-and-drop components
-
 In Designer, you modify the current page; you can add existing table fields, move fields around, or remove fields from the page. You can make changes to display the information it needs, and where it needs by using drag-and-drop components. 
 
 ## How it works

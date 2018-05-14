@@ -39,7 +39,7 @@ The following properties are used for integrating with Microsoft Dynamics 365 fo
 Typically in Dynamics 365 for Sales, entities handle the internal processes. In order to access to the underlying CRM entity, you use the TableType property and select the value called **CRM**. This enables the table as an integration table for integrating [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] with Dynamics 365 for Sales. The table is mainly based on an entity in Dynamics 365 for Sales, such as the Accounts entity.
 
 ## Snippet support
-Typing the shortcut `ttable` will create the basic layout for a table object when using the AL Extension in Visual Studio Code. 
+Typing the shortcut `ttable` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
 
 ## Example 
 In the following example, the `SalesIntegration` table uses the TableType and ExternalName properties to link the underlying **CRM** entity for mapping the fields from the `Sales` table with the specified fields. 

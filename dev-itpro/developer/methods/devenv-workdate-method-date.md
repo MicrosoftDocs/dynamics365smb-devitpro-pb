@@ -33,7 +33,7 @@ Gets and sets the work date for the current session.
 ## Property Value/Return Value  
  Type: Date  
 
- The current work date.  
+ The new work date.  
 
 ## Remarks  
 <!--NAV
@@ -43,20 +43,25 @@ If you do not set a value for the *NewDate* parameter, then the method returns t
  To set the work date to follow the calendar day so that the work date is always the current date, set *NewDate* to `TODAY` or `0D`. If you explicitly set *NewDate* to the current date, then the work date will also follow the calendar day.  
 
 ## Example  
- This example shows how to use the WORKDATE method. This example requires that you create the following global text constant.  
+ This example shows how to use the WORKDATE method. This example requires that you create the following global variable and text constant.  
+
+|Variable|DataType|  
+|----------|----------------|  
+|NewDate|Date|  
 
 |Name|ConstValue|  
 |----------|----------------|  
-|Text000|The work date is: %1|  
+|Text000|The new work date is: %1|  
+  
 
 ```  
-WORKDATE(010114D);  
-MESSAGE(Text000, WORKDATE);  
+NewDate := WORKDATE(010118D);  
+MESSAGE(Text000, NewDate);  
 ```  
 
- The first line of code sets the work date to January 1, 2014. In the second line of code, the WORKDATE method returns the current work date. On a computer that has the regional format set to English \(United States\), the message window displays the following:  
+The code sets the work date to January 1, 2018, and returns the new date in a message. On a computer that has the regional format set to English \(United States\), the message window displays the following:  
 
- **The work date is: 01/01/14**  
+ **The work date is: 01/01/18**  
 
 ## See Also  
  [Date and Time Methods](devenv-Date-and-Time-Methods.md)
