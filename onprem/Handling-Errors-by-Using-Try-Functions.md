@@ -37,7 +37,7 @@ A function that is designated as a try function has a Boolean return value \(tru
 
 - If a try function call does not use the return value, the try function operates like an ordinary function and errors are exposed as usual.  
 
-- If a try function call uses the return value in an `OK:=` statement or a conditional statement such as `IF-THEN`, errors are caught.  
+- If a try function call uses the return value in an `OK:=` statement or a conditional statement such as `IF-THEN`, errors are caught. The try function returns `true` if no error occurs; `false` is an error occurs. 
 
 > [!NOTE]  
 >  The return value is not accessible within the try function itself.  
@@ -53,8 +53,81 @@ To create a try function, add a function in C/AL code of an object \(such as a c
 
 In test and upgrade codeunits, you can only use a try function on a normal function type, as defined by the [FunctionType Property \(Test Codeunits\)](FunctionType-Property--Test-Codeunits-.md) or [FunctionType Property \(Upgrade Codeunits\)](FunctionType-Property--Upgrade-Codeunits-.md).  
 
-### Example  
- The following example illustrates the use of a try function together with codeunit 1291 **DotNet Exception Handler** to handle .NET Framework Interoperability exceptions. The code is in text file format and has been simplified for illustration. The `CallTryPostingDotNet` function runs the try function `TryPostSomething` in a conditional statement to catch .NET Framework Interoperability exceptions. Errors other than `IndexOutOfRangeException` type are re-thrown.  
+## Example 1 
+The following simple example illustrates how the try function works. First, create a codeunit that has a local function `MyTryFunction`. Add the following code on the `OnRun` trigger and `MyTryFunction` function.
+
+**OnRun()**
+```
+MyTryFunction;
+MESSAGE('Everthing went well.');
+```
+
+**LOCAL MyTryFunction()**
+```
+ERROR('An error occurred during the operation.');
+```
+
+When you run this codeunit, the execution of the `OnRun` trigger, the calling function, stops and the error message `An error occurred during the operation.` is thrown in the client.
+
+
+Now, set the **TryFunction** property of the  `MyTryFunction` function to **Yes**. Then, add code to the `OnRun` trigger to handle the return value of the try function: 
+
+**OnRun()**
+```
+IF MyTryFunction THEN
+  MESSAGE('Everying went well.')
+ELSE
+  MESSAGE('Something went wrong.');
+```
+
+**LOCAL [TryFunction] MyTryFunction()**
+```
+ERROR('An error occurred during the operation.');
+```
+
+When you run the codeunit, instead of stopping the execution of the `OnRun`trigger when the error occurs, the error is caught and the message `Something went wrong.` is returned.
+
+## Example 2 
+The following example illustrates how to use a try function with .NET interoperabilty. The example uses the [System.Decimal.Divide method](https://msdn.microsoft.com/en-us/library/system.decimal.divide(v=vs.110).aspx) to divide two decimals. 
+
+First, create a codeunit that has a local function `MyTryFunction`, and add the following text constants and variables:
+
+|Text constant name|ConstValue|
+|----|----------|
+|Text000|	%1 divided by %2 equals %3.|
+|Text001|	You cannot divide by %1.|
+
+
+|Variable name|DataType|Subtype|
+|----|----------|----|----------|
+|divide|DotNet|System.Decimal.'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'|
+|d1|	Decimal||
+|d2|	Decimal| |
+|result|Decimal||
+
+Then, add the following code on the `OnRun` trigger and `MyTryFunction` function.
+
+**OnRun()**
+```
+IF MyTryFunction THEN
+  MESSAGE(Text000, d1, d2, result)
+ELSE
+  MESSAGE(Text001, d2);
+```
+
+**LOCAL MyTryFunction()**
+```
+d1 := 3;
+d2 := 0;
+result := divide.Divide(d1,d2);
+```
+
+When you run this codeunit, an error occurs because you are not allowed to divide by `0`. The message `You cannot divide by 0.` is displayed in the client. 
+
+
+
+<!-- 
+The following example illustrates the use of a try function together with codeunit 1291 **DotNet Exception Handler** to handle .NET Framework Interoperability exceptions. The code is in text file format and has been simplified for illustration. The `CallTryPostingDotNet` function runs the try function `TryPostSomething` in a conditional statement to catch .NET Framework Interoperability exceptions. Errors other than `IndexOutOfRangeException` type are re-thrown.  
 
 ```  
 [TryFunction]  
@@ -80,6 +153,9 @@ BEGIN
   END;  
 END;  
 ```  
+-->
+
 
 ## See Also  
  [C/AL Function Statements](C-AL-Function-Statements.md)
+
