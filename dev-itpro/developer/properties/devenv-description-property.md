@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Description Property
 Sets the description of the table, field, page, report, or control. This description is for internal use and does not appear to end users.  
 
-> ![NOTE]  
+> [!NOTE]  
 > For profile objects, the Description property sets the description of the profile to be displayed to end users. 
     
 ## Applies To  
