@@ -12,7 +12,7 @@ ms.assetid: cb249654-c9be-482b-9a25-c26d7f229fc2
 caps.latest.revision: 44
 author: SusanneWindfeldPedersen
 ---
-# Manually Arranging Rows and Columns Using Grid and Fixed Controls
+# Arranging Fields Using Grid and Fixed Controls
 By default, page fields are arranged automatically in two columns. For more information, see [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md). You can use a Grid control or a Fixed control to arrange fields in rows and columns on a page and design it to look like a grid-like format. This topic outlines the differences between the two controls to help you determine which control to use.  
   
 ## Comparing Grid and Fixed controls  

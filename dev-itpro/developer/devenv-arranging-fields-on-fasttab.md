@@ -29,10 +29,10 @@ Organizing data using FastTabs helps users to find key information quickly, whil
   
 ## Manually arranging fields in multiple rows and columns  
 
-Using the GridLayout or FixedLayout controls, you can arrange fields in multiple rows and columns in a grid-like format. For more information, see [Arranging Fields in Rows and Columns](devenv-arranging-fields-in-rows-and-columns.md).
+Using the GridLayout or FixedLayout controls, you can arrange fields in multiple rows and columns in a grid-like format. For more information, see [Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md).
 
 ## See Also
-[Arranging Fields in Multiple Rows and Columns](devenv-arranging-fields-using-grid-and-fixed-controls.md)  
+[Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md)  
 [Pages Overview](devenv-pages-overview.md)  
 [Using Designer](devenv-inclient-designer.md)  
 [Table in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]](devenv-tables-overview.md)  
