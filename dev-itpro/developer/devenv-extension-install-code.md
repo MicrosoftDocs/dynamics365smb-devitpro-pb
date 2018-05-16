@@ -39,12 +39,12 @@ codeunit [ID] [NAME]
 {
 	Subtype=Install;
 
-	procedure OnInstallAppPerCompany()
+	trigger OnInstallAppPerCompany()
 	begin
 		// Code for company related operations
 	end;
 
-	procedure OnInstallAppPerDatabase()
+	trigger OnInstallAppPerDatabase()
 	begin
 		// Code for database related operations
 	end;
