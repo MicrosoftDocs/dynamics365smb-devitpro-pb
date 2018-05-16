@@ -22,7 +22,14 @@ author: SusanneWindfeldPedersen
 > The support for using the ML properties, such as **CaptionML** and **TooltipML**, is being deprecated, so it is recommended to refactor your extension to use the corresponding property, such as **Caption** or **Tooltip**, which is being picked up in the .xlf file.
 
 > [!IMPORTANT]
-> You can use the .xlf translation files approach only for objects from your extension. For translating the base application you still need to use the TXT files approach. For more information about using TXT files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/da-dk/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
+> You can use the .xlf translation files approach only for objects from your extension. For translating the base application you still need to use the .txt files approach. To work on translation app, see the section below.
+
+## Translation apps
+If you are working on a translation app (for example for a [country/region localization](readiness/readiness-develop-localization.md)), you must take the .txt file containing the base application translation, and place the file in the root folder of your extension. When the extension is compiled, the .txt file is then packaged with the extension. 
+
+We recommend that you use only one .txt file per language. There is no enforced naming on the .txt files, but a suggested good practice is to name it <extensionname>.<language>.txt.  
+
+For more information about .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/da-dk/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
 
 ## Generating the XLIFF file
 To enable generation of the translation file, you must add a setting in the manifest. In the app.json file of your extension, add the following line:
