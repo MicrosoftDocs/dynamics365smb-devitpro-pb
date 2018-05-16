@@ -1,9 +1,9 @@
 ---
 title: "Development of a Localization Solution"
-description: "Comply with regulatory requirementsin Dynamics 365 Business Central."
+description: "Comply with regulatory requirements in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/16/2018
+ms.date: 05/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -69,6 +69,13 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
  * Prepare setup guides (wizards) for areas that are complex to set up to help users enable, discover and have a good first experience using your localization app. 
  * Fork the [Dynamics 365 Business Central documentation from public GitHub repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). Such an approach to documentation can help when other partners or ISVs take dependency on your localization app. 
  * Consider converting field-based documentation to task-based documentation using tooltips and [Dynamics 365 Business Central documentation Github repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). [Rulesets](../devenv-rule-set-syntax-for-code-analysis-tools.md) can help you ensure, for example, that no fields or actions are missing [tooltips](https://worldready.cloudapp.net/Styleguide/Read?id=2748&topicid=38066) (link requires PartnerSource account). 
+
+## Getting started with localization apps
+Choose add-on apps for localizations, when you are adding or changing functionality for the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] user. See the following whitepaper for [getting started with developing add-on apps](https://go.microsoft.com/fwlink/?linkid=869734). It contains information about object ranges and other details that are useful for getting started with development of your app.  
+
+> [!NOTE]  
+> You can also create Connect apps if you find it beneficial to have some functionality placed outside the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] environment and instead connect to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] using for example APIs or Web services. 
+
 
 > [!NOTE]  
 > If you have questions for building localization apps please contact the [Microsoft localization team](mailto:d365bcloc@microsoft.com). 
