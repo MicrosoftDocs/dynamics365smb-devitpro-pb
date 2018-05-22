@@ -24,10 +24,10 @@ Using the **Grid** control, you can arrange the fields manually in one or more r
 -   Show or hide field captions.  
   
 ## Setting-up fields in rows and columns in a FastTab  
-To add rows and columns of fields to a page, you set up a **Grid** control in a FastTab of the page. When you define the **Grid** control in the group, you specify whether fields are arranged in rows or columns. After you define the **Grid** control, you can add fields in rows and columns of fields by adding **Group** controls. Each **Group** control defines either a row or column, depending on how you structure the groups in the content area.  
+To set up a grid in row-by-row or column-by-column, you define a **Grid** control in a FastTab of a page. You must define the **Grid** control in a group and specify how you want to arrange the fields by using the **GridLayout** property. For more information, see [GridLayout Property](properties/devenv-gridlayout-property.md). 
 
 #### Example
-The following examples demonstrates how to structure in a grid-like format. 
+The following example demonstrates how to structure a page in a grid-like format. 
 
 ```
 page 50113 "Customers Page"
@@ -83,11 +83,7 @@ page 50113 "Customers Page"
 ```
 
 ## Setting fields to span multiple rows and columns  
-You can set a field to span multiple rows or columns. When you set a field to span multiple rows, the field occupies the cells in the rows below it, and existing fields in the occupied cells are moved to the right. 
-  
-When you set a field to span multiple columns, the field occupies the cells in the columns to the right, and existing fields in the occupied cells are moved to the right. 
-  
-You can also set a field to span multiple rows and columns. 
+You can set a field to span multiple rows or columns. When you set a field to span multiple rows, the field occupies the cells in the rows below it, and existing fields in the occupied cells are moved to the right. When you set a field to span multiple columns, the field occupies the cells in the columns to the right, and existing fields in the occupied cells are moved to the right. You can also set a field to span multiple rows and columns. 
 
 > [!IMPORTANT]  
 >  The [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] web client does not support row and column spanning for fields. If the page displays in the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] web client, the fields appear without spanning.  
@@ -96,13 +92,13 @@ You can also set a field to span multiple rows and columns.
   
 When you set the **Grid** control, the fields of that group can be set to span rows or columns.
   
--   To set a field to span one or more rows, set the value of the [RowSpan Property](properties/devenv-rowspan-property.md) to the number of rows.  
+-   To set a field to span one or more rows, set the value of the **RowSpan** property to the number of rows. For more information, see [RowSpan Property](properties/devenv-rowspan-property.md). 
   
--   To set a field to span one or more columns, set the value of the [ColumnSpan Property](properties/devenv-columnspan-property.md) to the number of columns.  
+-   To set a field to span one or more columns, set the value of the **ColumnSpan** property to the number of columns. For more information, see [ColumnSpan Property](properties/devenv-columnspan-property.md).  
   
 ##  <a name="position"></a> Hiding field captions  
   
-You can choose to hide a caption of a group or a field in a page. To hide a caption of a field, add the ShowCaption property and set the value to **false**. For more information, see [ShowCaption Property](devenv-showcaption-property.md).
+You can hide the caption of a group or a field. To hide the caption of a field, set the value of the **ShowCaption** property to **false**. For more information, see [ShowCaption Property](devenv-showcaption-property.md).
 
   
 ## See Also  
