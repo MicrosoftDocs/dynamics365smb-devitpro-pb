@@ -65,7 +65,7 @@ Use the following guidelines when you use **SetCurrentKey**:
   
     -   If the field that you specify is the first component of several keys, then the key that is selected is the first one that matches, which may not be the key that you expect.  
   
--   If no keys can be found that include the field\(s\) that you specify and sorting on a given field\(s\) cannot be set, then an runtime error occurs unless you test the Boolean value of **SetCurrentKey** in your code.  
+-   If no keys can be found that include the field\(s\) that you specify and sorting on a given field\(s\) cannot be set, then a runtime error occurs unless you test the Boolean value of **SetCurrentKey** in your code.  
   
 -   If you do test the return value, then you must decide what to do if the method returns **false**, because without a runtime error, the application continues to run even though no key was found and may fail later.  
   
