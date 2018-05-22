@@ -24,7 +24,7 @@ Using the **Grid** control, you can arrange the fields manually in one or more r
 -   Show or hide field captions.  
   
 ## Setting-up fields in rows and columns in a FastTab  
-To set up a grid in row-by-row or column-by-column, you define a **Grid** control in a FastTab of a page. You must define the **Grid** control in a group and specify how you want to arrange the fields by using the **GridLayout** property. For more information, see [GridLayout Property](properties/devenv-gridlayout-property.md). 
+To set up a grid in row-by-row or column-by-column format, you define the **Grid** control in a FastTab of a page. You must define the **Grid** control in a group and specify how you want to arrange the fields by using the **GridLayout** property. For more information, see [GridLayout Property](properties/devenv-gridlayout-property.md). 
 
 #### Example
 The following example demonstrates how to structure a page in a grid-like format. 
