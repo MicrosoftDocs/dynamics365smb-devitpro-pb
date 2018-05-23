@@ -1,7 +1,7 @@
 ---
 title: "Business Attribute"
 ms.custom: na
-ms.date: 06/13/2017
+ms.date: 05/23/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,13 +9,16 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-# Business Attribute
+# BusinessEvent Attribute
 Specifies the method to be business type event publisher.
+
+## Snippet support
+Typing the shortcut ```teventbus``` will create the basic BusinessEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Syntax  
   
 ```  
-[Business(IncludeSender : Boolean)] 
+[BusinessEvent(IncludeSender : Boolean)] 
 ```    
   
 #### Arguments  
@@ -38,12 +41,9 @@ For more information about the different event types, see [Event Types](../deven
 ## Example
 This example publishes a business type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender argument are set to **false**.
 ```
-[Business(false)]
-    PROCEDURE OnAddressLineChanged(line : Text[100]);
-    begin
-        
-    end;
-
+[Business(false)] procedure OnAddressLineChanged(line : Text[100]);
+begin    
+end;
 ```  
   
 ## See Also  

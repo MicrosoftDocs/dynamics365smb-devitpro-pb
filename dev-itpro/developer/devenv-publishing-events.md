@@ -1,7 +1,7 @@
 ---
 title: "Publishing Events"
 ms.custom: na
-ms.date: 06/27/2017
+ms.date: 05/23/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -73,15 +73,9 @@ This example creates the codeunit **7000001 MyPublisher** to publish an integrat
 ```
 codeunit 70000001 MyPublishers
 {
-    trigger OnRun();
-    begin
-    end;
-
     [Integration(false, false)]
     procedure OnAddressLineChanged(line : Text[100]);
-    
-    begin
-        
+    begin  
     end;
 }
 ```
@@ -90,4 +84,4 @@ The next step would be to raise this event in the application. To see an example
 ## See Also  
  [Raising Events](devenv-Raising-Events.md)   
  [Subscribing to Events](devenv-Subscribing-to-Events.md)   
-  [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   
+ [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   

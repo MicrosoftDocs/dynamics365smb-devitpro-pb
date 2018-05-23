@@ -1,5 +1,5 @@
 ---
-title: "Integration Attribute"
+title: "IntegrationEvent Attribute"
 ms.custom: na
 ms.date: 06/13/2017
 ms.reviewer: na
@@ -9,13 +9,16 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-# Integration Attribute
+# IntegrationEvent Attribute
 Specifies the method to be integration type event publisher.
+
+## Snippet support
+Typing the shortcut ```teventint``` will create the basic IntegrationEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Syntax  
   
 ```  
-[Integration(IncludeSender : Boolean, GlobalVarAccess : Boolean)] 
+[IntegrationEvent(IncludeSender : Boolean, GlobalVarAccess : Boolean)] 
 ```    
   
 #### Arguments  
@@ -47,12 +50,10 @@ For more information about the different event types, see [Event Types](../deven
 ## Example
 This example publishes an integration type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender and GlobalVarAccess arguments are set to **false**.
 ```
-[Integration(false, false)]
-    PROCEDURE OnAddressLineChanged(line : Text[100]);
-    begin
-        
-    end;
-
+[IntegrationEvent(false, false)]
+procedure OnAddressLineChanged(line : Text[100]);
+begin
+end;
 ``` 
 ## See Also  
  [Events in AL](../devenv-events-in-al.md)
