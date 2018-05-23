@@ -98,7 +98,7 @@ When you set the **Grid** control, the fields of that group can be set to span r
   
 ##  <a name="position"></a> Hiding field captions  
   
-You can hide the caption of a group or a field. To hide the caption of a field, set the value of the **ShowCaption** property to **false**. For more information, see [ShowCaption Property](devenv-showcaption-property.md).
+You can hide the caption of a group or a field. To hide the caption of a field, set the value of the **ShowCaption** property to **false**. For more information, see [ShowCaption Property](properties/devenv-showcaption-property.md).
 
   
 ## See Also  
