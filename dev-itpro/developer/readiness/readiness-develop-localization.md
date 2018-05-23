@@ -72,6 +72,7 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 
 ## Getting started with localization apps
 Choose add-on apps for localizations, when you are adding or changing functionality for the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] user. See the following whitepaper for [getting started with developing add-on apps](https://go.microsoft.com/fwlink/?linkid=869734). It contains information about object ranges and other details that are useful for getting started with development of your app. 
+For more information about localization apps, see [Translation and Localization apps](../devenv-work-with-translation-files.md#translation-and-localization-apps) 
 
 > [!NOTE]  
 > You can also create Connect apps if you find it beneficial to have some functionality placed outside the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] environment and instead connect to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] using for example APIs or Web services. 
