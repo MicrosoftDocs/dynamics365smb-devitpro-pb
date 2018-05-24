@@ -16,7 +16,8 @@ This simple data type denotes an option value. In the code snippet below, you ca
 
 ```
 procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
-    var OptionVariable : Option C, "or D";
+    var 
+        OptionVariable : Option C, "or D";
     begin
     end;
 ```
