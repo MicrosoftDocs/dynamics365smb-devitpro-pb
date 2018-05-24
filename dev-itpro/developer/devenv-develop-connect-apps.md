@@ -40,7 +40,7 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
 5. Again under **Settings**, now choose **Keys** and enter a **Description** for the new key, and then choose the expiration of the key. 
 6. Choose **Save**, and then copy the generated key from the **Value** field. You will need this key for authentication from Postman later.
 
-You have now set up the AAD based authentication. Next, you can go exploring the APIs, see the **Exploring the APIs with Postman** section below.
+You have now set up the AAD based authentication. Next, you can go exploring the APIs, see the [Exploring the APIs with Postman](devenv-develop-connect-apps#exploring-the-apis-with-postman) section below.
 
 ## Setting up basic authentication
 If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the AAD based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use AAD/Oauth v2 authentication, see the section above **Setting up Azure Active Directory (AAD) based authentication**.
@@ -49,7 +49,7 @@ If you prefer to set up an environment with basic authentication just to explore
 2. On the **Users** page, in the **Web Service Access Key** field, generate a key.  
 3. Copy the generated key and use it as the password for the username. 
 
-Now that we have the username and password, we can connect and authenticate. You can do this from code, or API explorers such as Postman or Fiddler. In the following section we will use Postman.
+Now that we have the username and password, we can connect and authenticate. You can do this from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman](devenv-develop-connect-apps#exploring-the-apis-with-postman) section we will use Postman.
 
 ## Exploring the APIs with Postman
 In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
