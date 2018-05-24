@@ -32,8 +32,8 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
 1. Follow the instructions in the [Integrating applications with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) article. Remember to copy the generated key, you will need this together with the Application ID for later registration in, for example, Postman. The next steps elaborate on some of the specific settings you must enable.
 2. During the registration of the app, make sure to go to **Settings**, and then under **API ACCESS**, choose **Required permissions**.
 3. Choose **Add**, and then under **Add API Access**, choose **Select an API** and search for the **Dynamics 365** option.  
-> [!NOTE]  
-> If **Dynamics 365** does not show up in search, it's because the tenant does not have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial]((https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] with a user from the directory. 
+    > [!NOTE]  
+    > If **Dynamics 365** does not show up in search, it's because the tenant does not have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] with a user from the directory. 
 4. Choose **Dynamics 365** and select **Delegated permissions**, and then choose the **Done** button.
 5. Again under **Settings**, now choose **Keys** and enter a **Description** for the new key, and then choose the expiration of the key. 
 6. Choose **Save**, and then copy the generated key from the **Value** field. You will need this key for authentication from Postman later.
@@ -50,7 +50,7 @@ If you prefer to set up an environment with basic authentication just to explore
 Now that we have the username and password, we can connect and authenticate. You can do this from code, or API explorers such as Postman or Fiddler. In the following section we will use Postman.
 
 ## Exploring the APIs with Postman
-In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. 
+In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
 
 1.	First, in Postman, set up a `GET` call to the base API URL.  
     - When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
