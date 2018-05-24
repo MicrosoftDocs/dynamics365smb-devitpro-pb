@@ -26,6 +26,8 @@ When you have your tenant, you can sign into the UI to play with the product, as
         > [!IMPORTANT]  
         > When going into production, you must use Azure Active Directory (AAD)/OAuth v2 authentication and the common endpoint https://api.businesscentral.dynamics.com/v1.0/api/beta. For exploring and initial development, you can use basic authentication. In the simple **Hello World** example below, we are going to use basic authentication, as it is a bit faster to get up and running.
 
+In the following sections you can read more about setting up the two types of authentication.
+
 ## Setting up Azure Active Directory (AAD) based authentication
 Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
