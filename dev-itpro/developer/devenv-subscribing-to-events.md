@@ -48,14 +48,10 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
     >[!TIP]  
     > Use the `teventsub` snippet to get started.  
 
-5.  If you are prompted whether to overwrite the edited methods signature, choose **Yes**.  
-
-     The method signature will automatically be updated to include any the parameters from the event publisher method settings.  
-
     > [!NOTE]  
     >  The parameter list is determined by the publisher method. With business events, you cannot deviate from the parameters that are defined in the publisher method. Integration events are not as restricted and you can deviate from the parameters that are defined in the publisher method.  
 
-6.  Add code to the method for handing the event.  
+5.  Add code to the method for handing the event.  
 
 
 ## <a name="SubEventEx">Example 1</a>
@@ -73,7 +69,7 @@ codeunit 70000002 MySubscriber
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 
     
-    'OnAddressLineChanged','',true, true)]
+    'OnAddressLineChanged', '', true, true)]
     procedure CheckAddressLine(line : Text[100]);
     begin
         if (STRPOS(line, '+') > 0) then begin
@@ -95,13 +91,14 @@ codeunit 70000002 MySubscriber
     begin
     end;
 
-    [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent','Address',true, true)]
+    [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
     local procedure CheckAddressLine(var Rec : Record Customer)
     begin
         if (STRPOS('Rec.Address', '+') > 0) then begin
             MESSAGE('Cannot use a plus sign (+) in the address [' + 'Address' + ']');
         end;
     end;
+}
 ```
 
 ## See Also  

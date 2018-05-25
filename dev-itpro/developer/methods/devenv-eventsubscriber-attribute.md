@@ -48,7 +48,7 @@ Type: Boolean
 
 Specifies what happens to the event subscriber method call when the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] license of the user account that is running the current session does not include the codeunit that contains the subscriber method.
 
-**true** will ignore the method call, and the code execution will continue to the next subscriber; **false** will throw an error and the code execution stops. **false** is the default value.
+**True** will ignore the method call, and the code execution will continue to the next subscriber; **false** will throw an error and the code execution stops. 
 
 *SkipOnMissingPermission*  
 Type: Boolean
@@ -61,12 +61,10 @@ Specifies what happens to the subscriber method call when the user account that 
 This example publishes an integration type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender and GlobalVarAccess arguments are set to **false**.
 
 ```
-[Integration(false, false)]
-    PROCEDURE OnAddressLineChanged(line : Text[100]);
-    begin
-        
-    end;
-
+[IntegrationEvent(false, false)]
+PROCEDURE OnAddressLineChanged(line : Text[100]);
+begin       
+end;
 ``` 
 ## See Also  
  [Events in AL](../devenv-events-in-al.md)  

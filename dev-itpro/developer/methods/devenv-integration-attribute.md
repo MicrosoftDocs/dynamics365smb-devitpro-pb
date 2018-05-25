@@ -1,7 +1,7 @@
 ---
 title: "IntegrationEvent Attribute"
 ms.custom: na
-ms.date: 06/13/2017
+ms.date: 05/24/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,7 +56,7 @@ begin
 end;
 ``` 
 ## See Also  
- [Events in AL](../devenv-events-in-al.md)
+ [Events in AL](../devenv-events-in-al.md)  
  [Publishing Events](../devenv-publishing-events.md)   
  [Raising Events](../devenv-raising-events.md)   
  [Subscribing to Events](../devenv-subscribing-to-events.md)   

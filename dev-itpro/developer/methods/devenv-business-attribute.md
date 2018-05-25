@@ -47,7 +47,7 @@ end;
 ```  
   
 ## See Also  
- [Events in aL](../devenv-events-in-al.md)
+ [Events in aL](../devenv-events-in-al.md)  
  [Publishing Events](../devenv-publishing-events.md)   
  [Raising Events](../devenv-raising-events.md)   
  [Subscribing to Events](../devenv-subscribing-to-events.md)   
