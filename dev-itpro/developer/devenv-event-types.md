@@ -33,7 +33,7 @@ author: SusanneWindfeldPedersen
   
  An integration event can be changed to a business event later. At which time, it must adhere to the same implied contract and commitment as any business event. It can also simply be designed-in hook points for external add-ons. To learn about the syntax and example on how to use the IntegrationEvent type, see [IntegrationEvent Attribute](methods/devenv-integration-attribute.md). 
   
-##  <a name="SystemEvents"></a> Global events  
+## Global events  
  Global events are predefined system events that are automatically raised by Codeunit 1 **ApplicationManagement**. Codeunit 1 includes several global method triggers, such as CompanyOpen, CompanyClose, and GetSystemIndicator. For most of these global method triggers, there are one or two global events: a before and after event. For example, there is an OnBeforeCompanyOpen event and an OnAfterCompanyOpen event. The global events are defined as integration events by local methods in codeunit 1.  
   
 ## Trigger events  

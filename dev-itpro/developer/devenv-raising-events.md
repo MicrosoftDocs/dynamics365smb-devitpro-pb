@@ -23,7 +23,7 @@ When the code that calls the event publisher method is run, all event subscriber
 If there are no subscribers to the published event, then the line of code that calls the event publisher method is ignored and not executed.  
 
 ## Snippet support
-Typing the shortcut ```teventsub``` will create the basic event subscriber syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code. 
+Typing the shortcut ```teventsub``` will create the basic event subscriber syntax when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
 
 > [!TIP]  
 > Typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
