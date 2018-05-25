@@ -24,9 +24,9 @@ When you have your tenant, you can sign into the UI to play with the product, as
     - Use Azure Active Directory (AAD) based authentication against the common API endpoint: https://api.businesscentral.dynamics.com/v1.0/api/beta
     - Use basic authentication with username and password (a so-called web service access key) against the common API endpoint that includes the user domain, for example https://api.businesscentral.dynamics.com/v1.0/cronus.com/api/beta.  
         > [!IMPORTANT]  
-        > When going into production, you must use Azure Active Directory (AAD)/OAuth v2 authentication and the common endpoint https://api.businesscentral.dynamics.com/v1.0/api/beta. For exploring and initial development, you can use basic authentication. In the simple **Hello World** example below, we are going to use basic authentication, as it is a bit faster to get up and running.
+        > When going into production, you must use Azure Active Directory (AAD)/OAuth v2 authentication and the common endpoint https://api.businesscentral.dynamics.com/v1.0/api/beta. For exploring and initial development, you can use basic authentication.
 
-In the following sections you can read more about setting up the two types of authentication.
+In the following sections you can read more about setting up the two types of authentication and using both authentication methods in Postman.
 
 ## Setting up Azure Active Directory (AAD) based authentication
 Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
@@ -37,10 +37,12 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
     > [!NOTE]  
     > If **Dynamics 365** does not show up in search, it's because the tenant does not have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] with a user from the directory. 
 4. Choose **Dynamics 365** and select **Delegated permissions**, and then choose the **Done** button.
-5. Again under **Settings**, now choose **Keys** and enter a **Description** for the new key, and then choose the expiration of the key. 
-6. Choose **Save**, and then copy the generated key from the **Value** field. You will need this key for authentication from Postman later.
+5. Again, under **Settings**, now choose **Keys** and enter a **Description** for the new key, and then choose the expiration of the key. 
+6. Choose **Save**, and then copy the generated key from the **Value** field.  
+    > [!NOTE]  
+    > Remember to copy the key, as it will only be visible once.
 
-You have now set up the AAD based authentication. Next, you can go exploring the APIs, see the **Exploring the APIs with Postman** section below.
+You have now set up the AAD based authentication. Next, you can go exploring the APIs, see the [Exploring the APIs with Postman and AAD authentication](#exploring-the-apis-with-postman-and-aad-authentication) section below.
 
 ## Setting up basic authentication
 If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the AAD based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use AAD/Oauth v2 authentication, see the section above **Setting up Azure Active Directory (AAD) based authentication**.
@@ -49,9 +51,9 @@ If you prefer to set up an environment with basic authentication just to explore
 2. On the **Users** page, in the **Web Service Access Key** field, generate a key.  
 3. Copy the generated key and use it as the password for the username. 
 
-Now that we have the username and password, we can connect and authenticate. You can do this from code, or API explorers such as Postman or Fiddler. In the following section we will use Postman.
+Now that we have the username and password, we can connect and authenticate. You can do this from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-the-apis-with-postman-and-basic-authentication) section we will use Postman.
 
-## Exploring the APIs with Postman
+## Exploring the APIs with Postman and basic authentication
 In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
 
 1.	First, in Postman, set up a `GET` call to the base API URL.  
@@ -62,6 +64,14 @@ In this `Hello World` example, we are going over the basic steps required to ret
 2. On the **Authorization** tab in Postman select **Basic Auth** in the **Type** and provide the Username and **Web Service Access Key** from above as password. 
 
 3. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
+
+## Exploring the APIs with Postman and AAD authentication
+In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with AAD authentication.
+
+1. First, in Postman, set up a `GET`call to the base API URL.
+
+
+
     
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
 
