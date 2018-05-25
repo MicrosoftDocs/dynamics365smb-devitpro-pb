@@ -1,5 +1,6 @@
 ---
 title: "Raising Events"
+description: This topic describes how to modify the application to raise an event in Dynamics 365 Business Central. 
 ms.custom: na
 ms.date: 05/23/2018
 ms.reviewer: na
@@ -17,12 +18,15 @@ After an event has been published by an event publisher method, you can modify t
 
 To raise an event, you add logic in AL code of the application to call the event publisher method that declares the event. The procedure for calling the event publisher method is the same as calling any other method in AL.  
 
-When the code that calls the event publisher method is run, all event subscriber methods that subscribe to the event are run. If there are multiple subscribers, then each event subscriber method is run one after another. The order in which the event subscribers run is random and it cannot be specified.  
+When the code that calls the event publisher method is run, all event subscriber methods that subscribe to the event are run. If there are multiple subscribers, the subscriber methods are run one at a time in random order. You cannot specify the order in which the subscriber methods are called.   
 
 If there are no subscribers to the published event, then the line of code that calls the event publisher method is ignored and not executed.  
 
 ## Snippet support
-Typing the shortcut ```teventsub``` will create the basic event subscriber syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code. The keyboard shortcuts `Ctrl + space` activates intellisense to help you fill in attribute arguments and to discover which events are available to use.
+Typing the shortcut ```teventsub``` will create the basic event subscriber syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code. 
+
+> [!TIP]  
+> Typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
 
 ## <a name="RaisingEventEx">Example</a> 
 This example uses a page extension object **70000002 MyCustomerExt** to modify the page **21 Customer Card** so that an event is raised when a user changes the **Address** field. This example assumes that the event has already been published by the event publisher method `OnAddressLineChanged` in a separate codeunit called **70000001 MyPublishers**.

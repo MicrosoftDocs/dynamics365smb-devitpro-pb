@@ -1,5 +1,6 @@
 ---
 title: "Subscribing to Events"
+description: This topic describes how to design event subscribers in Dynamics 365 Business Central. 
 ms.custom: na
 ms.date: 05/23/2018
 ms.reviewer: na
@@ -19,10 +20,7 @@ Subscribing to an event tells the runtime that the subscriber method must be cal
 
 There can be multiple subscribers to the same event from various locations in the application code. When an event is raised, the subscriber methods are run one at a time in random order. You cannot specify the order in which the subscriber methods are called.  
 
-Be aware that changing the state may not only impact the publishing code but other subscribers as well.  
-
-> [!NOTE]  
->  Subscriber methods cannot access the sender and or access global variables.  
+Be aware that changing the state may not only impact the publishing code but other subscribers as well.   
 
 ## Creating an event subscriber method  
 You create an event subscriber method just like other methods except that you specify properties that set up the subscription to an event publisher. The procedure is slightly different for database and page trigger events than business and integration events because business and integration events are raised by event publisher methods in application code. Trigger events are predefined system events that are raised automatically on tables and pages.  
@@ -46,10 +44,7 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
     [EventSubscriber(ObjectType::ObjectType, ObjectId, 'OnSomeEvent', 'ElementName', SkipOnMissingLicense, SkipOnMissingPermission)]
     ```    
     >[!TIP]  
-    > Use the `teventsub` snippet to get started.  
-
-    > [!NOTE]  
-    >  The parameter list is determined by the publisher method. With business events, you cannot deviate from the parameters that are defined in the publisher method. Integration events are not as restricted and you can deviate from the parameters that are defined in the publisher method.  
+    > Use the `teventsub` snippet to get started and typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill the attribute arguments and to discover which events are available to use.    
 
 5.  Add code to the method for handing the event.  
 
@@ -86,10 +81,6 @@ This example achieves the same as example 1, except it subscribes to the the pag
 codeunit 70000002 MySubscriber
 {
     EventSubscriberInstance = StaticAutomatic;
-    
-    trigger OnRun();
-    begin
-    end;
 
     [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
     local procedure CheckAddressLine(var Rec : Record Customer)
