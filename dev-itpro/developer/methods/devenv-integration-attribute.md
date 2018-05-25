@@ -15,6 +15,9 @@ Specifies the method to be integration type event publisher.
 ## Snippet support
 Typing the shortcut ```teventint``` will create the basic IntegrationEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
+> [!TIP]  
+> Typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
+
 ## Syntax  
   
 ```  
@@ -32,7 +35,25 @@ Specifies whether global methods in the object that contains the event publisher
 When you set the argument to **true**, the signature of event subscriber methods that subscribe to the published event automatically include a VAR parameter for the published event object, as shown in the following example:
 
 ```
- [EventSubscriber] CheckAddressLine(VAR Sender : Codeunit "My Publisher Object")
+codeunit 50102 MyPublishingCodeunit2
+{
+    [IntegrationEvent(true, true)]
+    procedure MyIntegrationEvent()
+    begin
+    end;
+
+    var
+        myGlobalVar: Integer;
+}
+
+codeunit 50103 MySubscribingCodeunit2
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::MyPublishingCodeunit2, 'MyIntegrationEvent', '', true, true)]
+    local procedure MySubscriber(sender: Codeunit MyPublishingCodeunit2; myGlobalVar: Integer)
+    begin
+        // My subscriber code
+    end;
+}
 ```
 
 *GlobalVarAccess*  
