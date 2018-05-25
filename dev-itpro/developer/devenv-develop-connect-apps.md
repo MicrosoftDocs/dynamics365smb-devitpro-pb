@@ -37,8 +37,10 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
     > [!NOTE]  
     > If **Dynamics 365** does not show up in search, it's because the tenant does not have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] with a user from the directory. 
 4. Choose **Dynamics 365** and select **Delegated permissions**, and then choose the **Done** button.
-5. Again under **Settings**, now choose **Keys** and enter a **Description** for the new key, and then choose the expiration of the key. 
-6. Choose **Save**, and then copy the generated key from the **Value** field. You will need this key for authentication from Postman later.
+5. Again, under **Settings**, now choose **Keys** and enter a **Description** for the new key, and then choose the expiration of the key. 
+6. Choose **Save**, and then copy the generated key from the **Value** field.  
+    > [!NOTE]  
+    > Remember to copy the key, as it will only be visible once.
 
 You have now set up the AAD based authentication. Next, you can go exploring the APIs, see the [Exploring the APIs with Postman](devenv-develop-connect-apps#exploring-the-apis-with-postman) section below.
 
