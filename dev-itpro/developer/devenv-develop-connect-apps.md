@@ -68,11 +68,23 @@ In this `Hello World` example, we are going over the basic steps required to ret
 ## Exploring the APIs with Postman and AAD authentication
 In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with AAD authentication.
 
-1. First, in Postman, set up a `GET`call to the base API URL.
+1. First, in Postman, set up a `GET`call to the base API URL. <!-- more here? -->
+2. On the **Authorization** tab in Postman select **OAuth 2.0** in the **Type** and then choose **Get New Access Token**. 
+3. In the **GET NEW ACCESS TOKEN** window, enter the following information as specified below:
+        - In the **Token name** field, choose a descriptive name.
+    - In the **Grant type** field, choose **Authorization Code**.
+    - In the **Callback URL** field, specify the URL specified as the sign-on URL/Reply URL in the Azure Portal. <!-- check -->
+    - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
+    - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
+    - In the **Client ID** field, enter the Application ID from the registered app in Azure Portal.
+    - In the **Client Secret** field, enter the key generated under **Keys** that you copied in a previous step.
+    - In the **Client Authentication** field, choose the **Send client credentials in body** option.
+4. Choose the **Request token** button. The first time you log in, you will get prompted for consent.
+5. Scroll down and choose **Use token** button.
 
+An Authorization request header is now added containing the Bearer token.
 
-
-    
+## Calling the API
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
 
     ``` 
