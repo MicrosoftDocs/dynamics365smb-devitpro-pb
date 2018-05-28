@@ -48,7 +48,7 @@ The following topic lists properties that apply to the [Table Object](../devenv-
 |[NotBlank Property](devenv-notblank-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>| 
 |[Numeric Property](devenv-numeric-property.md)||<ul><li>Code field</li><li>OemCode field</li><li>OemText field</li><li>Text field</li></ul>|
 |[OptionCaptionML Property](devenv-optioncaptionml-property.md)|X|<ul><li>Option field</li></ul>|
-|[OptionMembers Property](devenv-optionstring-property.md)||<ul><li>Option field</li></ul>|
+|[OptionMembers Property](devenv-optionmembers-property.md)||<ul><li>Option field</li></ul>|
 |[PasteIsValid Property](devenv-pasteisvalid-property.md)||<ul><li>Table object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)||<ul><li>Table object</li></ul>|
 |[SignDisplacement Property](devenv-signdisplacement-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>|
