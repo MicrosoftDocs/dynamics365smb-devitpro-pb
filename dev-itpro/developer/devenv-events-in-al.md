@@ -1,8 +1,9 @@
 ---
-title: "Events in Microsoft Dynamics 365 for Business Central"
+title: "Events in Microsoft Dynamics 365 Business Central"
+description: Events is a programming concept that can ease application upgrade and limit the code modifications in customized applications during platform changes. 
 ms.author: solsen
 ms.custom: na
-ms.date: 02/01/2018
+ms.date: 05/25/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +27,15 @@ You can use events to design the application to react to specific actions or beh
 
  Events can be used for different purposes, such as generating notifications when certain behavior occurs or the state of an entity changes, distributing information, and integrating with external systems and applications. For example, in the [!INCLUDE[demolong](includes/demolong_md.md)], events are used for extensively for workflow and Dynamics 365 for Sales integration.
 
- There are several different event types. The process for implementing these events is slightly different. To learn about the different types, see [Event Types](devenv-event-types.md).
+ The following lists all the different event types:
+ |Event types | Description | 
+ |------------|-------------|
+ |[BusinessEvent](methods/devenv-business-attribute.md) |Specifies the method to be business type event publisher.  |
+ |[IntegrationEvent](methods/devenv-integration-attribute.md) |Specifies the method to be integration type event publisher. |
+ |[Global](devenv-event-types.md#global-events) |Specifies whether global variables in the object that contains the event publisher method. |
+ |[Trigger](devenv-event-types.md#trigger-events) |Specifies trigger events raised by the system.  | 
+
+ The process for implementing these events is slightly different. To learn about the different types, see [Event Types](devenv-event-types.md).
 
 ## How events work  
  The basic principle is that you program events in the application to run customized behavior when they occur. Events in AL are modeled after Microsoft .NET Framework. There are three major participants involved in events: the *event*, a *publisher*, and a *subscriber*.  

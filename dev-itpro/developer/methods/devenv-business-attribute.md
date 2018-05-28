@@ -1,7 +1,7 @@
 ---
-title: "Business Attribute"
+title: "BusinessEvent Attribute"
 ms.custom: na
-ms.date: 06/13/2017
+ms.date: 05/23/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,16 +9,22 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-# Business Attribute
+# BusinessEvent Attribute
 Specifies the method to be business type event publisher.
+
+## Snippet support
+Typing the shortcut ```teventbus``` will create the basic BusinessEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.  
+
+> [!TIP]  
+> Typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
 
 ## Syntax  
   
 ```  
-[Business(IncludeSender : Boolean)] 
+[BusinessEvent(IncludeSender : Boolean)] 
 ```    
   
-#### Arguments  
+#### Arguments   
 *IncludeSender*  
 Type: Boolean  
   
@@ -29,7 +35,22 @@ Specifies whether global methods in the object that contains the event publisher
 When you set the argument to **true**, the signature of event subscriber methods that subscribe to the published event automatically include a VAR parameter for the published event object, as shown in the following example:
 
 ```
- [EventSubscriber] CheckAddressLine(VAR Sender : Codeunit "My Publisher Object")
+codeunit 50100 MyPublishingCodeunit
+{
+    [BusinessEvent(true)]
+    procedure MyBusinessEvent()
+    begin
+    end;
+}
+
+codeunit 50101 MySubscribingCodeunit
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::MyPublishingCodeunit, 'MyBusinessEvent', '', true, true)]
+    local procedure MySubscriber(sender: Codeunit MyPublishingCodeunit)
+    begin
+        // My subscriber code
+    end;
+}
 ```
   
 ## Remarks
@@ -37,17 +58,16 @@ For more information about the different event types, see [Event Types](../deven
 
 ## Example
 This example publishes a business type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender argument are set to **false**.
-```
-[Business(false)]
-    PROCEDURE OnAddressLineChanged(line : Text[100]);
-    begin
-        
-    end;
 
+```
+[BusinessEvent(false)] 
+procedure OnAddressLineChanged(line : Text[100]);
+begin    
+end;
 ```  
   
 ## See Also  
- [Events in aL](../devenv-events-in-al.md)
+ [Events in aL](../devenv-events-in-al.md)  
  [Publishing Events](../devenv-publishing-events.md)   
  [Raising Events](../devenv-raising-events.md)   
  [Subscribing to Events](../devenv-subscribing-to-events.md)   
