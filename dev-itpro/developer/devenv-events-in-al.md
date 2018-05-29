@@ -33,8 +33,8 @@ The following table describes all the different event types:
 |------------|-------------|
 |[BusinessEvent](methods/devenv-business-attribute.md) |Specifies the method to be business type event publisher.  |
 |[IntegrationEvent](methods/devenv-integration-attribute.md) |Specifies the method to be integration type event publisher. |
-|[Global](devenv-event-types.md#global-events) |Specifies whether global variables in the object that contains the event publisher method. |
-|[Trigger](devenv-event-types.md#trigger-events) |Specifies trigger events raised by the system.  | 
+|[Global](devenv-event-types.md#global-events) |Global events are predefined system events. |
+|[Trigger](devenv-event-types.md#trigger-events) |Trigger events are published by the runtime.  | 
 
 The process for implementing these events is slightly different. To learn about the different types, see [Event Types](devenv-event-types.md).
 
