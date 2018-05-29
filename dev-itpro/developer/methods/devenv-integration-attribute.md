@@ -15,9 +15,6 @@ Specifies the method to be integration type event publisher.
 ## Snippet support
 Typing the shortcut ```teventint``` will create the basic IntegrationEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-> [!TIP]  
-> Typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
-
 ## Syntax  
   
 ```  

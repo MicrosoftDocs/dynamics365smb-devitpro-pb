@@ -15,9 +15,6 @@ Specifies the method to be business type event publisher.
 ## Snippet support
 Typing the shortcut ```teventbus``` will create the basic BusinessEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.  
 
-> [!TIP]  
-> Typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
-
 ## Syntax  
   
 ```  
@@ -57,7 +54,7 @@ codeunit 50101 MySubscribingCodeunit
 For more information about the different event types, see [Event Types](../devenv-event-types.md).
 
 ## Example
-This example publishes a business type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender argument are set to **false**.
+This example publishes a business type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender argument is set to **false**.
 
 ```
 [BusinessEvent(false)] 
