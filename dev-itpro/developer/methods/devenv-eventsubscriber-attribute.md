@@ -58,7 +58,7 @@ Specifies what happens to the subscriber method call when the user account that 
 **True** will ignore the method call, and the code execution will continue to the next subscriber; **false** will throw an error and the code execution stops. **false** is the default value.
 
 ## Example
-This example publishes an integration type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender and GlobalVarAccess argument is set to **false**.
+This example publishes an integration type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender and GlobalVarAccess arguments are set to **false**.
 
 ```
 codeunit 50105 MyEventPublisher
