@@ -3,7 +3,7 @@ title: "Getting Started Developing Connect Apps for Dynamics 365 Business Centra
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 05/24/2018
+ms.date: 05/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -69,14 +69,14 @@ In this `Hello World` example, we are going over the basic steps required to ret
 In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with AAD authentication.
 
 1. First, in Postman, set up a `GET` call to the base API URL.
-    - When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation, for example, call `GET https://api.businesscentral.dynamics.com/v1.0/<your tenant URL>/api/beta`
+    - When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation, for example, call `GET https://api.businesscentral.dynamics.com/v1.0/<your tenant domain>/api/beta`
 2. On the **Authorization** tab in Postman select **OAuth 2.0** in the **Type** and then choose **Get New Access Token**. 
 3. In the **GET NEW ACCESS TOKEN** window, enter the following information as specified below:
     - In the **Token name** field, choose a descriptive name.
     - In the **Grant type** field, choose **Authorization Code**.
     - In the **Callback URL** field, specify the URL specified as the sign-on URL/Reply URL in the Azure Portal.
-    - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
-    - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
+    - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
+    - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
     - In the **Client ID** field, enter the Application ID from the registered app in Azure Portal.
     - In the **Client Secret** field, enter the key generated under **Keys** that you copied in step 6 in the [Setting up Azure Active Directory (AAD) based authentication](#setting-up-azure-active-directory-(aad)-based-authentication).
     - In the **Client Authentication** field, choose the **Send client credentials in body** option.
