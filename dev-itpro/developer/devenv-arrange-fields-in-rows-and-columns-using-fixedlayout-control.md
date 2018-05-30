@@ -20,7 +20,7 @@ By default, fields on a FastTab are arranged automatically in two columns based 
 
 You use the Fixed control to arrange page fields in rows and columns to form a matrix-like layout except that the Fixed control contains a specific number of fields, and a matrix can contain an unspecified number of fields. A Fixed group control is typically used to display statistical data. The following illustration shows an example of a page that uses a Fixed control to show sales totals for different time periods.   
 
-![Fixed control illustration on web client](media/BusWebClientFixedLayout.png "BusinessCentralFixedControl") 
+![Fixed control illustration on web client](media/BusWebClientFixedLayout.PNG "BusinessCentralFixedControl") 
 
 You can also use a Fixed control to display information in the details section of a Worksheet page. If you are using the [!INCLUDE[demolong](includes/demolong_md.md)], then you can see examples of these uses in page 151, Customer Statistics, and page 40, Item Journal.
   
