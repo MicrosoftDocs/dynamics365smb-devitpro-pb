@@ -83,7 +83,7 @@ In this `Hello World` example, we are going over the basic steps required to ret
 4. Choose the **Request token** button. The first time you log in, you will get prompted for consent.
 5. Scroll down and choose **Use token** button.  
 An Authorization request header is now added containing the Bearer token.
-6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should inclue a list of the APIs.
+6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
 
 ## Calling the API
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
