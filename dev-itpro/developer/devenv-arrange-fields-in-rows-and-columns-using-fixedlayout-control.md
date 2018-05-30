@@ -12,6 +12,7 @@ ms.assetid: cb249654-c9be-482b-9a25-c26d7f229fc2
 caps.latest.revision: 44
 author: SusanneWindfeldPedersen
 ---
+
 # Arranging Fields in Rows and Columns Using the Fixed Control
 By default, fields on a FastTab are arranged automatically in two columns based on the number of fields. For more information on how the fields are placed on a page, see [Field Arrangement on a Fasttab](devenv-arranging-fields-on-fasttab.md). To manually arrange fields, you can either use a Grid control to design the page to look like a grid-like format, or a Fixed control to design the page to look like a matrix-like format. To understand the differences between the two controls to help you determine which control to use, see [Comparing Grid and Fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md). 
 
@@ -96,7 +97,7 @@ You can also set up more than one Fixed control in a group control. The page are
 >  The fields in the Fixed controls in the illustration are not in a group control. If they were in a group control, then they would follow the same principle as described in the previous section about how to group fields. 
 
 > [!IMPORTANT]  
-> In previous versions, having a Fixed control directly under a content area was supported. However, in [!INCLUDE[d365fin_bus_md](includes/d365fin_bus_md-md)], you must make sure that the Fixed control is nested in a Group control. For more information, see [Supported Structure for Using the Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md#supported-structure-for-using-grid-and-fixed-controls).
+> In previous versions, having a Fixed control directly under a content area was supported. However, in [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)], you must make sure that the Fixed control is nested in a Group control. For more information, see [Supported Structure for Using the Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md#supported-structure-for-using-the-grid-and-fixed-controls).
 
 ## Editing fields in a Fixed control  
 Fields in a fixed layout are not editable even if the **Editable** property is set to **true**. However, if the field drills down to a page where the field source is defined, then you can modify the field. For more information, see [Editable Property](properties/devenv-editable-property.md).
