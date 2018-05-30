@@ -61,10 +61,21 @@ Specifies what happens to the subscriber method call when the user account that 
 This example publishes an integration type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender and GlobalVarAccess arguments are set to **false**.
 
 ```
-[IntegrationEvent(false, false)]
-PROCEDURE OnAddressLineChanged(line : Text[100]);
-begin       
-end;
+codeunit 50105 MyEventPublisher
+{
+    [IntegrationEvent(false, false)]
+    procedure OnAddressLineChanged(line : Text[100]);
+    begin
+    end;
+}
+
+codeunit 50106 MyEventSubscriber
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::MyEventPublisher, 'OnAddressLineChanged', '', true, true)]
+    local procedure MyProcedure(line: Text[100])
+    begin
+    end;
+}
 ``` 
 ## See Also  
  [Events in AL](../devenv-events-in-al.md)  
