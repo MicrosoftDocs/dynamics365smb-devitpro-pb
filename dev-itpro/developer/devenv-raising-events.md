@@ -1,7 +1,8 @@
 ---
 title: "Raising Events"
+description: This topic describes how to modify the application to raise an event in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 06/05/2016
+ms.date: 05/23/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,11 +18,17 @@ After an event has been published by an event publisher method, you can modify t
 
 To raise an event, you add logic in AL code of the application to call the event publisher method that declares the event. The procedure for calling the event publisher method is the same as calling any other method in AL.  
 
-When the code that calls the event publisher method is run, all event subscriber methods that subscribe to the event are run. If there are multiple subscribers, then each event subscriber method is run one after another. The order in which the event subscribers run is random and cannot it cannot be specified.  
+When the code that calls the event publisher method is run, all event subscriber methods that subscribe to the event are run. If there are multiple subscribers, the subscriber methods are run one at a time in random order. You cannot specify the order in which the subscriber methods are called.   
 
 If there are no subscribers to the published event, then the line of code that calls the event publisher method is ignored and not executed.  
 
-## <a name="RaisingEventEx">Example
+## Snippet support
+Typing the shortcut ```teventsub``` will create the basic event subscriber syntax when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
+
+> [!TIP]  
+> Typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
+
+## <a name="RaisingEventEx">Example</a> 
 This example uses a page extension object **70000002 MyCustomerExt** to modify the page **21 Customer Card** so that an event is raised when a user changes the **Address** field. This example assumes that the event has already been published by the event publisher method `OnAddressLineChanged` in a separate codeunit called **70000001 MyPublishers**.
 
 >[!NOTE]
@@ -37,21 +44,16 @@ pageextension 70000002 MyCustomerExt extends "Customer Card"
         modify(Address)
         {
             trigger OnBeforeValidate();
-                var
-                    Publisher : Codeunit 70000001;
-                begin
-                    Publisher.OnAddressLineChanged(Address);
-                end;
-                }
-            }
-
-    actions
-    {
-        // Add changes to page actions here
+            var
+                Publisher: Codeunit 70000001;
+            begin
+                Publisher.OnAddressLineChanged(Address);
+            end;
+        }
     }
-    
 }
 ```
+
 To learn about how the event used in this example is published, see [Publishing Events Example](devenv-publishing-events.md#PubEx). 
 
 The next step would be to subscribe to the event to handle to condition.  To see an example of how to subscribe to this event, see [Subscribing to Events Example](devenv-subscribing-to-events.md#SubEventEx).  

@@ -44,9 +44,33 @@ The Grid and the Fixed control must be placed in the `group` control in a `area(
 The Grid or Fixed control must have Group controls as direct children and Field controls as children of those Group controls.  
 
 
-<!--  
-For more information about grid control, see [Grid Control].
-For more information about fixed control, see [Fixed Control]. 
+### Supported control Types for a Grid control  
+The Grid control is supported on all page types and for a selected range of control types. The following table lists the types of controls that can be nested in a Grid control.  
+  
+> [!TIP]  
+>  Although nesting groups such as Group, Fixed, and Grid is possible, we do not recommend it because of lower UI performance and less optimal layout.  
+  
+|Control Type|Control Subtype|  
+|------------------|---------------------|  
+|Fields||  
+|Groups|Group|  
+||Repeater|  
+||CueGroups|  
+||Fixed|  
+||Grid|  
+|Part|Page|  
+  
+The following table lists the types of controls that are not supported in a Grid control.  
+  
+|Control Type|Control Subtype|  
+|------------------|---------------------|  
+|Add-Ins||  
+|Parts|Chart Parts|  
+||System Parts|  
+
+ 
+For more information on how to use the **Grid** control, see [Arrange Fields in Rows and Columns Using the Grid Control](devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md).
+<!--  For more information about fixed control, see [Fixed Control]. 
 -->
 
 ## See Also   
