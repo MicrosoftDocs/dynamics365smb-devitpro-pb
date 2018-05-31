@@ -12,7 +12,7 @@ ms.assetid: cb249654-c9be-482b-9a25-c26d7f229fc2
 caps.latest.revision: 44
 author: SusanneWindfeldPedersen
 ---
-# Arrange Fields in Rows and Columns Using the Grid Control
+# Arranging Fields in Rows and Columns Using the Grid Control
 By default, fields in a FastTab are arranged automatically in two columns that are based on the number of fields. For more information, see [Field Arrangement on a Fasttab](devenv-arranging-fields-on-fasttab.md). You can use a Grid control or a Fixed control to arrange fields in rows and columns on a page and design it to look like a grid-like format or a matrix-like format. To understand the differences between the two controls to help you determine which control to use, see [Comparing Grid and Fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md). 
 
 Using the **Grid** control, you can arrange the fields manually in one or more rows and columns. The **Grid** control gives you the following options:  
