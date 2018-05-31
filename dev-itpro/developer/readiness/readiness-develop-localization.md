@@ -36,6 +36,7 @@ An important part of your localization app will be setup data for the production
 
 ## Service availability in countries
 If you request [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] availability in a country in which Microsoft has not built a localization, you will get access to the international (W1) version of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of this version is by demand, so by requesting access as the first partner in a country there will be a lead time of minimum 3 months for Microsoft to: 
+
  * Make [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers available on the CSP pricelist for the country. 
  * Ensure datacenter operations. 
  * Build platform translation for language(s) for the desired country.
