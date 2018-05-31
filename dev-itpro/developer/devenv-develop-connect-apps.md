@@ -75,7 +75,7 @@ In this `Hello World` example, we are going over the basic steps required to ret
     - In the **Token name** field, choose a descriptive name.
     - In the **Grant type** field, choose **Authorization Code**.
     - In the **Callback URL** field, specify the URL specified as the sign-on URL/Reply URL in the Azure Portal.
-    - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
+    - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/token`.
     - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
     - In the **Client ID** field, enter the Application ID from the registered app in Azure Portal.
     - In the **Client Secret** field, enter the key generated under **Keys** that you copied in step 6 in the [Setting up Azure Active Directory (AAD) based authentication](#setting-up-azure-active-directory-(aad)-based-authentication).
