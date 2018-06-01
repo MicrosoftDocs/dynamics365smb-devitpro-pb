@@ -22,6 +22,7 @@ The **"Ready to Go"** program is designed to support you in bringing your Micros
 
 ## The "Ready to Go" online learning
 The "Ready to Go" online learning catalog is an extensive 
+library of training materials, hosted on the **Download Center** [here](https://go.microsoft.com/fwlink/?linkid=2002101).  
 
 This catalog contains readiness information for marketers, business decision makers, architects, and developers. The content addresses the needs of both reselling partners of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] as App builders who want to provide Apps on Microsoft AppSource.
 
