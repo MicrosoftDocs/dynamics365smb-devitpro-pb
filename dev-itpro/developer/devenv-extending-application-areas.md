@@ -171,14 +171,14 @@ codeunit 50100 "Enable Example Extension"
 
 ## Adding Advanced application area to the Essentials and Premium experiences using an extension
 
-If you are familiar with [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)] you will have noticed that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not exposing all the controls/actions that you find in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)]. These controls have been hidden so far by using the application area **Advanced**, which is not assigned to any experiences. For more information, see [Frequently Asked Questions](https://docs.microsoft.com/en-us/dynamics365/business-central/across-faq#why-are-some-ui-elements-that-i-used-in-dynamics-nav-not-visible-in-). 
+If you are familiar with [!INCLUDE[navnow_md](includes/navnow_md.md)] you will have noticed that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not exposing all the controls/actions that you find in [!INCLUDE[navnow_md](includes/navnow_md.md)]. These controls have been hidden so far by using the application area **Advanced**, which is not assigned to any experiences. For more information, see [Frequently Asked Questions](https://docs.microsoft.com/en-us/dynamics365/business-central/across-faq#why-are-some-ui-elements-that-i-used-in-dynamics-nav-not-visible-in-). 
 
-Most of these fields will become available/visible soon, but until then you will have to create a V2 extension to get (almost) the same experience as you have in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)]. See the [example](#how-to-enable-advanced-in-a-v2-extension) below.
+Most of these fields will become available/visible soon, but until then you will have to create a V2 extension to get (almost) the same experience as you have in [!INCLUDE[navnow_md](includes/navnow_md.md)]. See the [example](#to-enable-advanced-in-a-v2-extension) below.
 
 > [!IMPORTANT]  
-> Adding the application area **Advanced** to the experience will mean that you lose some of the simplification made to pages. For example, you will see more actions duplicated on many pages, compared to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] where the experience is intended to be simpler than in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)]. You must also consider that we plan to re-tag the **Advanced** actions/controls and add them to the **Essentials** and/or **Premium** experiences in a future release.
+> Adding the application area **Advanced** to the experience will mean that you lose some of the simplification made to pages. For example, you will see more actions duplicated on many pages, compared to [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] where the experience is intended to be simpler than in [!INCLUDE[navnow_md](includes/navnow_md.md)]. You must also consider that we plan to re-tag the **Advanced** actions/controls and add them to the **Essentials** and/or **Premium** experiences in a future release.
 
-### How to enable Advanced in a V2 extension
+### To enable Advanced in a V2 extension
 Depending on which experience you want to enable **Advanced** for you can subscribe to `OnGetEssentialExperienceAppAreas` or `OnGetPremiumExperienceAppAreas`. If you have defined your own experience you must subscribe to `OnSetExperienceTier`.
 
 The experiences are additive so you only need to subscribe to one of the events. For example, to enable **Essentials** and 
