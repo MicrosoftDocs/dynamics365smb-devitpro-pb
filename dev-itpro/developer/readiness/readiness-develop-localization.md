@@ -41,6 +41,9 @@ If you request [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md
  * Ensure datacenter operations. 
  * Build platform translation for language(s) for the desired country.
 
+## Monetization
+As a partner developing a localization app, you are free to decide how monetization of your apps should work. Localization apps are considered like any other apps and the market is open any partner and apps in a given country. It is up to you to build a monetization mechanism for your app - as well as mechanisms to control who uses your app. Please see this [whitepaper](https://mbspartner.microsoft.com/secure/coursematerials/D365/Standalone/Dynamics_365_Business_Central_App_Monetization_Demo_Guide.pdf) on app monetization to learn more.
+
 ## Submitting your localization app idea to AppSource 
 Apart from the regular app details you fill out when [submitting your app idea](https://go.microsoft.com/fwlink/?linkid=869733) there are a few things to emphasize in the app idea submission process for localization apps. Remember to be explicit about: 
  * Country/countries of usage. 
@@ -71,7 +74,7 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
  * Consider converting field-based documentation to task-based documentation using tooltips and [Dynamics 365 Business Central documentation Github repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). [Rulesets](../devenv-rule-set-syntax-for-code-analysis-tools.md) can help you ensure, for example, that no fields or actions are missing [tooltips](https://worldready.cloudapp.net/Styleguide/Read?id=2748&topicid=38066) (link requires PartnerSource account). 
 
 ## Getting started with localization apps
-Choose add-on apps for localizations, when you are adding or changing functionality for the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] user. See the following whitepaper for [getting started with developing add-on apps](https://go.microsoft.com/fwlink/?linkid=869734). It contains information about [object ranges](../devenv-object-ranges.md) and other details that are useful for getting started with development of your app. 
+Choose add-on apps for localizations, when you are adding or changing functionality for the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] user. See the following whitepaper for [getting started with developing add-on apps](https://go.microsoft.com/fwlink/?linkid=869734). It contains information about [object ranges](../devenv-object-ranges.md) and other details that are useful for getting started with development of your app. You can request your unique object range [here](https://mbs.microsoft.com/partnersource/global/partner-essentials/partner-strategy/365businesscentralrequestuniqueobjectrange).
 For more information about localization apps, see [Translation and Localization apps](../devenv-work-with-translation-files.md#translation-and-localization-apps) 
 
 > [!NOTE]  
