@@ -1,5 +1,5 @@
 ---
-title: "Linking to the Dynamics Business Central Universal App"
+title: "Linking to the Dynamics Business Central App"
 ms.custom: na
 ms.date: 06/06/2018
 ms.reviewer: na
@@ -10,15 +10,15 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ms.author: jswymer
 ---
-# Linking to the Business Central Universal App
-The protocol handler for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] lets you construct a URL for starting the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a device, such as a phone or tablet. You can then distribute this URL by e-mail or from a Web page to the users.  
+# Linking to the Business Central App
+The protocol handler for the [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] lets you construct a URL for starting the app on a device, such as a phone or tablet. You can then distribute this URL by e-mail or from a Web page to the users.  
   
-The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] URL is based on the *ms-businesscentral<!-- ms-dynamicsnav-->* URI scheme, which is registered automatically when the app is installed. Invoking a URL based on this scheme will start the app with the provided parameters.  
+The [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] URL is based on the *ms-businesscentral<!-- ms-dynamicsnav-->* URI scheme, which is registered automatically when the app is installed. Invoking a URL based on this scheme will start the app with the provided parameters.  
   
 ## Constructing the URL  
 To construct a URL, start with *ms-businesscentral<!-- ms-dynamicsnav-->* scheme, and then add additional parameters as needed. Some parameters are required and others are optional. 
 
-The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)], and has the following syntax: 
+The structure of a [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] link is very similar to links for the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], and has the following syntax: 
 
 ```
 ms-businesscentral://[<domain>][/sandbox]/?[company=<companyname>][&page =<ID>][&mode=<View|Edit|Create>][&profile=<profileID>][&bookmark=<bookmark>][&filter='<field>'-IS-'<value>'[-AND-'<field>'-IS-'<value>']]
@@ -48,7 +48,7 @@ The following table describes the parameters that you can specify<!-- after `[/<
 
 |Parameter|Description| Example |
 |---------|-----------|---------| 
-|Domian|Domain name for the solution. This is required for an ISV Embed solution. For Business Central, you can omit this parameter.| `ms-businesscentral://businesscentral.dynamics.com/`<br /><br />`ms-businesscentral:///`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/`| 
+|domain|Domain name for the solution. This is required for an ISV Embed solution. For Business Central, you can ise businesscentral.dynamics.com or omit this parameter.| `ms-businesscentral://businesscentral.dynamics.com/`<br /><br />`ms-businesscentral:///`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/`| 
 |sandbox|Specifies that the URL should target the the Dynamics 365 Business Central sandbox environment instead of a production environment.|`ms-businesscentral:/businesscentral.dynamics.com/sandbox/`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/sandbox/`|
 |company|The company that you want to open in the client. If not provided, the default company is used.|`ms-businesscentral:///?'company=CRONUS%20International%20Ltd.'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?'company=CRONUS%20International%20Ltd.'`|
 |page	|The ID of the page that you want to open directly.|`ms-businesscentral:///?page=21`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page=21`|
@@ -122,6 +122,6 @@ The *ms-businesscentral or ms-dynamicsnav * scheme only translates to a secure s
 >  We recommend that you do not share a user name in the URL. This technique should only be used in demonstration scenarios and other instances where the accidental sharing of a URL will not compromise the system.  
 -->  
 ## See Also  
- [Developing for the Microsoft Dynamics NAV Universal App](Developing-for-the-Microsoft-Dynamics-NAV-Universal-App.md)   
- [How to: Open the Microsoft Dynamics NAV Tablet or Phone Client from a Browser](How-to--Open-the-Microsoft-Dynamics-NAV-Tablet-or-Phone-Client-from-a-Browser.md)  
- [Web Client URLs](devenv-web-client-urls.md)  
+<!-- [Developing for the Microsoft Dynamics NAV Universal App](Developing-for-the-Microsoft-Dynamics-NAV-Universal-App.md) -->
+<!-- [How to: Open the Microsoft Dynamics NAV Tablet or Phone Client from a Browser](How-to--Open-the-Microsoft-Dynamics-NAV-Tablet-or-Phone-Client-from-a-Browser.md) -->  
+[Web Client URLs](devenv-web-client-urls.md)  
