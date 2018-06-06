@@ -18,40 +18,18 @@ The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] URL is based on the *ms-
 ## Constructing the URL  
 To construct a URL, start with *ms-businesscentral<!-- ms-dynamicsnav-->* scheme, and then add additional parameters as needed. Some parameters are required and others are optional. 
 
-<!-- pointing to your [!INCLUDE[navnow](includes/navnow_md.md)] Web server.-->  
-  
-The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)], and has the following syntax:  
+The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)], and has the following syntax: 
 
-<!--
-```
-ms-dynamicsnav://<hostname>:[<port>][/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
-```
--->
-
-<!--
-```
-ms-businesscentral://[<hostname>:][<port>][/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
-```
--->
+ 
 
 ```
-ms-businesscentral://[<hostname>:][<port>]/[?<parameter>=<value>[&<parameter>=<value>]]
+ms-businesscentral://[<hostname>:][<port>]/[sandbox/]?[company=<companyname>][&page =<ID>][&mode=<View|Edit|Create>][&profile=<profileID>][&bookmark=<bookmark>][&filter='<field>'-IS-'<value>'[-AND-'<field>'-IS-'<value>']]
+
 ```
-<!--  
-|Parameter|Description|  
-|---------------|-----------------|  
-|Server|Optional. The public address for your [!INCLUDE[nav_web](includes/nav_web_md.md)] server.|  
-|Port|Optional. The port number for your [!INCLUDE[nav_web](includes/nav_web_md.md)] server. If not provided, the standard SSL port \(443\) is used.|  
-|Instance|Optional. The [!INCLUDE[nav_web](includes/nav_web_md.md)] instance that you want to connect to.|  
-|Tenant|Optional. The tenant that you want to connect to. If not provided, the default tenant is used.|  
-|Company|Optional. The company that you want to connect to. If not provided, the default company is used.|  `
-|Profile|Optional. The profile that you want to connect with. If not provided, the default profile is used.|  
 
-|Redirect|Optional. When users run the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] in a browser, they will be presented with an option to download the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] instead in order to improve the user experience. However, if this is not a wanted scenario, this experience can be manually overridden by adding the parameter ```?redirect=0``` to the URL.|  
+Parameters in `[]` are optional; all other parameters are required. Do not include the brackets (`[` and `]`).
 
--->
-
-Parameters in `[]` are optional; all other parameters are required.
+`<>` indicates values that you provide. Do not include the `<` and `>`.
 
 ## Parameters
 The following table describes the parameters for the main part of the URL, which are the parameters up to and including `[/<port>]/` <!-- `[/<instance>]/`-->. These parameters are ony relavant for ISV Embed solutions.
@@ -69,12 +47,12 @@ The following table describes the optional parameters that you can specify<!-- a
 
 |Parameter|Description| Example |
 |---------|-----------|---------|  
+|company|The company that you want to open in the client. If not provided, the default company is used. CRONUS%20International%20Ltd.|`ms-businesscentral:///?'company=CRONUS%20International%20Ltd.'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?'company=CRONUS%20International%20Ltd.'`|
 |page	|The ID of the page that you want to open directly.|`ms-businesscentral:///?page=21`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page=21`|
+|mode|Whether the page opens in view, edit, or create mode. `view` only lets you see the data on the page, not modify data. `edit` lets you to modify data on the page. `create` lets you to modify data on the page and add new entities. |`ms-businesscentral:///?page=21&mode=create`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page=21&mode=create`|
+|profile|The name of the profile that you want to use in the client. This determines the Role Center that is opened. If not provided, the default profile is used. Business Manager	|`ms-businesscentral:///?profile=BUSINESS%20%MANAGER`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?profile=BUSINESS%20%MANAGER`|
 |bookmark|	The bookmark of the record you want to open. The value of a bookmark is an alphanumeric string of characters, for example, `19%3bGwAAAAJ7BDEAMAAwADA%3d`.<br /><br /> For the page types Card, CardPart, and Document, the bookmark specifies the record that is shown in the page. For page types List, ListPart, and Worksheet, the bookmark specifies the record that is selected in the list on the page.<br /><br /> **Important:**  Bookmarks are generated automatically. You can only determine a value for the bookmark by displaying the page in the client and looking at its address. Therefore, a bookmark is only relevant when the address you are working with has been copied from another instance of the page.|`ms-businesscentral:///?bookmark=19%3bGwAAAAJ7BDEAMAAwADA%3d`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?bookmark=19%3bGwAAAAJ7BDEAMAAwADA%3d`|
 |filter	|The filter you want to apply to the page.<br /><br />The filter parameter enables you to display only records from the underlying table of the page that have specific values for one or more fields.	For more information about filters, see [Filtering Data on the Page](devenv-web-client-urls.md#filtering).|`ms-businesscentral:///?page9305&filter='No.'%20IS%20'1001'`<br /><br />`ms-businesscentral:///?page9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page9305&filter='No.'%20IS%20'1001'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'`|
-|profile|The name of the profile that you want to use in the client. This determines the Role Center that is opened. If not provided, the default profile is used. Business Manager	|`ms-businesscentral:///?profile=BUSINESS%20%MANAGER`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?profile=BUSINESS%20%MANAGER`|
-|company|The company that you want to open in the client. If not provided, the default company is used. CRONUS%20International%20Ltd.|`ms-businesscentral:///?'company=CRONUS%20International%20Ltd.'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?'company=CRONUS%20International%20Ltd.'`|
-|mode|Whether the page opens in view, edit, or create mode. `view` only lets you see the data on the page, not modify data. `edit` lets you to modify data on the page. `create` lets you to modify data on the page and add new entities. |`ms-businesscentral:///?page=21&mode=create`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page=21&mode=create`|
 
 <!--
 |tenant	|The ID of the tenant that you want to connect to. If not provided, the default tenant is used.|`ms-businesscentral:///?tenant=mytenant2-1`|
