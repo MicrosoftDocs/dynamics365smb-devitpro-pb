@@ -48,7 +48,7 @@ The following table describes the parameters that you can specify<!-- after `[/<
 
 |Parameter|Description| Example |
 |---------|-----------|---------| 
-|domain|Domain name for the solution. This is required for an ISV Embed solution. For Business Central, you can ise businesscentral.dynamics.com or omit this parameter.| `ms-businesscentral://businesscentral.dynamics.com/`<br /><br />`ms-businesscentral:///`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/`| 
+|domain|Domain name for the solution. This is required for an ISV Embed solution. For Business Central, you use `businesscentral.dynamics.com` or you can omit this parameter.| `ms-businesscentral://businesscentral.dynamics.com/`<br /><br />`ms-businesscentral:///`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/`| 
 |sandbox|Specifies that the URL should target the the Dynamics 365 Business Central sandbox environment instead of a production environment.|`ms-businesscentral:/businesscentral.dynamics.com/sandbox/`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/sandbox/`|
 |company|The company that you want to open in the client. If not provided, the default company is used.|`ms-businesscentral:///?'company=CRONUS%20International%20Ltd.'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?'company=CRONUS%20International%20Ltd.'`|
 |page	|The ID of the page that you want to open directly.|`ms-businesscentral:///?page=21`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page=21`|
