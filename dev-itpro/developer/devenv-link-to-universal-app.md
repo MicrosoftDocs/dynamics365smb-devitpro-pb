@@ -21,7 +21,7 @@ To construct a URL, start with *ms-businesscentral<!-- ms-dynamicsnav-->* scheme
 The structure of a [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] link is very similar to links for the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], and has the following syntax: 
 
 ```
-ms-businesscentral://[<domain>][/sandbox]/?[company=<companyname>][&page =<ID>][&mode=<View|Edit|Create>][&profile=<profileID>][&bookmark=<bookmark>][&filter='<field>'-IS-'<value>'[-AND-'<field>'-IS-'<value>']]
+ms-businesscentral://[<domain>][/<aadtenantid>][/sandbox]/?[company=<companyname>][&page =<ID>][&mode=<View|Edit|Create>][&profile=<profileID>][&bookmark=<bookmark>][&filter='<field>'-IS-'<value>'[-AND-'<field>'-IS-'<value>']]
 ```
 <!--
 ```
@@ -48,6 +48,7 @@ The following table describes the parameters that you can specify<!-- after `[/<
 |Parameter|Description| Example |
 |---------|-----------|---------| 
 |domain|Domain name for the solution. This is required for an ISV Embed solution. For Business Central, you use `businesscentral.dynamics.com` or you can omit this parameter.| `ms-businesscentral://businesscentral.dynamics.com/`<br /><br />`ms-businesscentral:///`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/`| 
+|`aadtenantid`|The unique identifier for an Azure Active Directory (AAD) tenant. The value can be formatted as a GUID or domain name. This is useful to those who work across multiple AAD organizations, such as delegated administrators, support personnel or external accountants, because it allows explicitly targeting an AAD tenant. If this is omitted, you will be directed to the primary AAD tenant or the same AAD tenant that you are currently signed in to.|
 |sandbox|Specifies that the URL should target the the Dynamics 365 Business Central sandbox environment instead of a production environment.|`ms-businesscentral:/businesscentral.dynamics.com/sandbox/`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/sandbox/`|
 |company|The company that you want to open in the client. If not provided, the default company is used.|`ms-businesscentral:///?'company=CRONUS%20International%20Ltd.'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?'company=CRONUS%20International%20Ltd.'`|
 |page	|The ID of the page that you want to open directly.|`ms-businesscentral:///?page=21`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page=21`|
