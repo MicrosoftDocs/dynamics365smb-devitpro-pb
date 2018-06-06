@@ -42,7 +42,6 @@ The following table describes the parameters for the main part of the URL, which
 |port|The port number for your [!INCLUDE[nav_web](includes/nav_web_md.md)] server instance. If not provided, the standard SSL port \(443\) is used.| `8080` |
 
 |Instance|The [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance that you want to connect to.| `dynamicsnav110`|
-
 -->
 The following table describes the parameters that you can specify<!-- after `[/<instance>]/`-->. <!-- These parameters are referred to as the *query parameters*.-->
 
