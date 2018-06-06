@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # ReplicateData Property
+Indicates that the table data is replicated. The default value is `on` for all tables.
   
 ## Applies To  
  - Table fields
