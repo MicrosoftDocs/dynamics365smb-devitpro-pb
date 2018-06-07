@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # ReplicateData Property
-Indicates that the table data is replicated. The default value is `on` for all tables.
+Indicates that the table data is replicated to the cloud service. The default value is `true` for all tables.
   
 ## Applies To  
  - Table fields
