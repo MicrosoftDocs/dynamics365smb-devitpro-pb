@@ -19,7 +19,7 @@ Promoted actions are actions that are set up on the Actions, Navigate, or Report
 The following table describes where you can use promoted actions.
 
 |Action type|Used on|Description|Example|  
-|----------------|--|-------|-----------|-------| 
+|----------------|-------|-----------|-------| 
 |Promoted Actions|List, card, Role Center pages, and task pages|Provide quick access to common tasks that appear under the Home tab.|Post and print a sales order|
 
 You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. For more information, see [Promoted Property](properties/devenv-promoted-property.md).
