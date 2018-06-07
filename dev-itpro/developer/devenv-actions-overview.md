@@ -36,7 +36,7 @@ You can choose from the following action areas to place the actions:
 
 For more information about actions used on the role center page, see [Designing Role Centers](devenv-designing-role-centers.md).
  
-## Types of actions  
+## Types of Actions  
 Each page has a different set of actions depending on the page type, and the processes that the page supports. In order to create the appropriate set of actions for a particular page, you should have a good understanding of your customer's business processes.  
   
 Each process in an organization has several actions associated with it. You should try to create a full set of actions that mirror all tasks and processes that are performed.  
@@ -96,14 +96,14 @@ The Report tab is displayed after the Navigate tab in the ribbon. The Reports ta
   
  For more information, see [Creating Activity Buttons for the Navigation Pane](Creating-Activity-Buttons-for-the-Navigation-Pane.md)  -->
 
-## Promoted actions  
+## Promoted Actions  
 Promoted actions are actions that are set up on the Actions, Navigate, or Reports tabs in the ribbon, but are also configured to display on the Home tab. Although the actions are set up on the Actions, Navigate, or Report tabs, you can choose to hide them on these tabs and only show them on the Home tab. For more information on how to add promoted actions, promoted categories and example, see [Promoted Actions](devenv-promoted-actions.md). 
 
 ### Home menu 
 The Home tab is always displayed first so promoted actions provide quick access to common tasks, because users do not have to browse through a menu to access them. You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. For more information, see [Promoted Property](properties/devenv-promoted-property.md).
 
 
-## Actions at Runtime  
+## Actions at runtime  
  An action can trigger code to run, such as posting a document or otherwise modifying a record in a table. When a user chooses an action, one of the following pieces of logic will happen in addition to the code that the action itself triggers:  
   
 -   If the page is empty and no longer shows any records, the page is re-initialized with default values.  
