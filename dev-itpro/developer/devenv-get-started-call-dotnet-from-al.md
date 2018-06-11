@@ -50,7 +50,7 @@ By default, the compiler only knows about the location of the `mscorlib` assembl
 > [!NOTE]  
 > Any update to an assembly's code is not automatically detected by the compiler. If an assembly has changed, then you must restart your development environment.
 
-You continue by adding a reference to a type from the referenced assembly. In this example, we will use `System.DateTime` from `mscorlib` and we will give it the alias `MyDateTime`. The type must be referenced using it's fully-qualified name. The alias is used for referencing the .NET type from code. If an alias is not provided, the compiler will use the .NET type's name. A .NET assembly declaration can contain any number of type declarations. See the example below.
+You continue by adding a reference to a type from the referenced assembly. In this example, we will use `System.DateTime` from `mscorlib` and we will give it the alias `MyDateTime`. The type must be referenced using it's fully-qualified name. The alias is used for referencing the .NET type from code. If an alias is not provided, the compiler will use the .NET type name. A .NET assembly declaration can contain any number of type declarations. See the example below.
 
 ```
 dotnet
@@ -66,6 +66,14 @@ dotnet
 From this point on, we can reference the .NET type from AL code using its given alias, as shown in the example below.
 
 ```
+dotnet
+{
+    assembly(mscorlib)
+    {
+        type(System.DateTime; MyDateTime){}
+    }
+}
+
 pageextension 50100 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
@@ -85,4 +93,5 @@ When publishing, the server recompiles your code and tries to resolve all the re
 The server will search the global assembly cache (GAC), the **Add-ins** folder and the **Add-ins** table. You must manually install any custom assembly in one of these locations.
 
 ## See Also
+[Getting Started with AL](devenv-get-started.md)  
 
