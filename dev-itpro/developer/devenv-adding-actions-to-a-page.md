@@ -27,7 +27,7 @@ For more information, see [Actions Overview](devenv-actions-overview.md).
 ## To add Actions to a Page
 The page actions are displayed on the header section. There are multiple tabs to help navigate to the right item.   
   
-In order to add actions to the ribbon, you must use the keywords with Anchors or Targets. These keywords are used to place and move the actions around in the tab groups. For more information about placing and moving the actions, see [Adding, moving, and modifying actions](devenv-pages-overview.md#Adding-moving-and-modifying).
+In order to add actions to the ribbon, you must use the keywords with Anchors or Targets. These keywords are used to place and move the actions around in the tab groups. For more information about placing and moving the actions, see [Adding, moving, and modifying actions](devenv-pages-overview.md#"Adding,-moving,-and-modifying").
 
 > [!NOTE]  
 >  Actions can only be linked to a page, or to a group control. Actions cannot be linked to fields, or parts on a page. 
