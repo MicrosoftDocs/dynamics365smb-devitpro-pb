@@ -39,6 +39,7 @@ The following is a checklist of all requirements that you **must meet before sub
 |You must include all translations of countries your extension is supporting.|[Translating Your Extension](devenv-work-with-translation-files.md), [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md).|
 |You are required to prefix or suffix the **Name** property of your fields. This eliminates collision between apps.|[Prefix/Suffix Guidelines](../compliance/apptest-prefix-suffix.md)|
 |You are required to include a Visual Studio Code test package with your extension. The test package must include at least 90% code coverage.|[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)|
+|Apps that have the `DataClassification` property set to `ToBeClassified` will not be accepted.|[Classifying Data](https://docs.microsoft.com/en-us/dynamics-nav/classifying-data)|
 
 <!-- 
 |Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Packaging the Permission Set](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools/new-navapppackage?view=dynamicsnav-ps-2017)| [Managing Permission Sets](../Managing-Permissions-and-Permission-Sets.md), [How to: Export Permission Sets](../How-to-Import-Export-Permission-Sets-Permissions.md) |
