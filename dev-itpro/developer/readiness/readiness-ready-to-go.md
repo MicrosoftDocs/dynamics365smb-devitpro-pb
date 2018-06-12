@@ -22,15 +22,16 @@ The **"Ready to Go"** program is designed to support you in bringing your Micros
 
 ## The "Ready to Go" online learning
 The "Ready to Go" online learning catalog is an extensive 
-library of training materials, hosted on the **Download Center** [here](https://go.microsoft.com/fwlink/?linkid=2002101).  
+library of training resources for both app developers (ISVs) as well as resellers (VARs). It is a collection of materials for marketeers, business decision makers, sales and presales persons, architects, consultants, and developers. 
 
-This catalog contains readiness information for marketers, business decision makers, architects, and developers. The content addresses the needs of both reselling partners of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] as App builders who want to provide Apps on Microsoft AppSource.
+The materials of the "Ready to Go" online learning catalog are on the Dynamics Learning Portal and can be found [here](https://aka.ms/ReadyToGoOnlineLearning).
+If you want to take a sneak-peek on the materials you can find there, click [here](https://go.microsoft.com/fwlink/?linkid=2002101) to see a document of the latest listing.  
 
-> [!NOTE]
-> *We recommend you bookmark the "Ready to Go" online learning catalog. New materials will appear in the catalog on a weekly base.*
+> [!NOTE]  
+> *We recommend that you bookmark the "Ready to Go" online learning catalog. New materials will appear in the catalog on a weekly basis.*
 
 ## The "Ready to Go" coaching
-The "Ready to Go" coaching is executed by Microsoft Development Centers and Master VARs, which are independently owned and operated. They bring technical services and coaching to market and have industry specific knowledge that you can contract and leverage when developing your offerings. Over time they have developed lots of best practices by supporting multiple partners, they also have strong ties with Microsoft’s R&D teams and are always up to date on the latest strategy and product innovation.
+The "Ready to Go" coaching is run by Microsoft Development Centers and Master VARs, which are independently owned and operated. They bring technical services and coaching to market and have industry specific knowledge that you can contract and leverage when developing your offerings. Over time they have developed lots of best practices by supporting multiple partners, they also have strong ties with Microsoft’s R&D teams and are always up to date on the latest strategy and product innovation.
 
 The "Ready to Go" validation workshop is offered by all Development Centers and Master VARs at fixed price and is designed to coach you in bringing your [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offerings to market faster and with less friction by providing individual coaching. This 8-hour workshop helps partners make the right decisions and is based upon a unified checklist and set of training materials. The workshop validates and coaches the partner’s readiness on their go-to market business model, marketing plans, architectural plans, app Development and internal readiness.
 
