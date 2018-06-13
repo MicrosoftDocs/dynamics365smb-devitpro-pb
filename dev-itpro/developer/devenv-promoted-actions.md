@@ -65,12 +65,12 @@ For more information about these properties, see [PromotedCategory Property](pro
 Each promoted action has an icon associated with it. You can accept a default icon, or choose your own from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] image library by using the **Image** property, where each promoted action has an icon associated with it. Also, you can use a larger icon that makes it more prominent to the user by using the **PromotedIsBig** property. For more information, see [Image Property](properties/devenv-image-property.md) and [PromotedIsBig Property](properties/devenv-promotedisbig-property.md).
 
 ### Example 
-The following example shows how to use promoted actions on a Customers page using different properties.
-1. These actions are promoted to display in the **New Document**, **Request Approval** and **Customer** groups on the Home tab. 
-2. The actions including **Sales Quote** and **Sales Invoice** are promoted to the ribbon and grouped in a category called the **New Document**. 
-3. The `PromotedCategory` value; `Category5` corresponds the caption position in the `PromotedActionCateogories` value with the **New Document** caption. 
-4. Each promoted action in the example is assigned to a unique icon. Additionally, to display bigger icons, the **Sales Quote** and **Contact** actions are set with the `PromotedIsBig` property. 
-5. The **Sales Quote** and **Send Approval Request** actions are set to appear only on the Home tab.
+The example shows how to promote actions on a Customers page using different properties: 
+1. The actions in the example are promoted to display in the **New Document**, **Request Approval** and **Customer** groups on the Home tab. 
+1. The **Sales Quote** and **Sales Invoice** actions are promoted to the ribbon and grouped in a category called **New Document**. 
+2. The `PromotedCategory` value; `Category5` corresponds the caption position in the `PromotedActionCateogories` value with the **New Document** caption. 
+3. Each promoted action in the example is assigned to a unique icon. Additionally, to display bigger icons, the **Sales Quote** and **Contact** actions are set with the `PromotedIsBig` property. 
+4. The **Sales Quote** and **Send Approval Request** actions are set to appear only on the Home tab.
 
 ```
 page 50103 Customers
@@ -163,7 +163,7 @@ For more examples of how to use actions, see [Page Object](devenv-page-object.md
 
 ## See Also
 [Actions Overview](devenv-actions-overview.md)  
-[Adding actions to a Page](devenv-adding-actions-to-a-page.md)  
+[Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
 [Pages Overview](devenv-pages-overview.md)  
