@@ -34,7 +34,7 @@ Promoted actions can be grouped. You can add promoted actions by different group
 
 ![image text](media/Promoted-Category.png)
 
-You assign a promoted action to a category by setting the **PromotedCategory** property of the action. By default, these category names correspond to the captions that are displayed for the category on the page in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will typically want to change the captions, especially the Category4 through Category10 captions. See the table below for default **PromotedCategory** values. To change the default captions, set the **PromotedActionCategories** property. 
+You assign a promoted action to a category by setting the **PromotedCategory** property of the action. By default, these category names correspond to the captions that are displayed for the category on the page in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will typically want to change the captions, especially the Category4 through Category10 captions. See the table below for the default **PromotedCategory** values. To change the default captions, set the **PromotedActionCategories** property. 
 You type the values of the **PromotedActionCategories** where each caption is sperated with a comma as shown below: 
 
 ```
