@@ -33,7 +33,7 @@ In order to add actions to the ribbon, you must use the keywords with Anchors or
 >  Actions can only be linked to a page, or to a group control. Actions cannot be linked to fields, or parts on a page. 
 
 ## Set an Icon to an action
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes images that you can use on actions in command bar menus and promoted actions on the ribbon. To add an image to an action, you add the **Image** property and you must provide the name of the image you that want to use from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Action icon library. By default, the size of images is 16 pixels high by 16 pixels wide. For promoted actions, you can choose to display larger images that are 32 pixels high and 32 pixels wide. For more information, see [Image Property](devenv-image-property.md).
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes images that you can use on actions in command bar menus and promoted actions on the ribbon. To add an image to an action, you add the **Image** property and you must provide the name of the image you that want to use from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Action icon library. By default, the size of images is 16 pixels high by 16 pixels wide. For promoted actions, you can choose to display larger images that are 32 pixels high and 32 pixels wide. For more information, see [Image Property](properties/devenv-image-property.md).
 
 
 <!-- For information about adding actions to a CueGroup control, see [Creating a Cue Based on a FlowField](devenv-creating-a-cue-based-on-a-flowfield.md).  -->
