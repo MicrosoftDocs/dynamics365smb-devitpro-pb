@@ -21,7 +21,7 @@ The following table describes where you can use promoted actions.
 |----------------|-------|-----------|-------| 
 |Promoted Actions|List, card, Role Center pages, and task pages|Provide quick access to common tasks that appear under the Home tab.|Post and print a sales order|
 
-You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an additional step to set the **PromotedOnly** property to the action. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md).
+You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an additional step to set the **PromotedOnly** property. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md).
 
 ## Promote actions by category
 Promoted actions can be grouped. You can add promoted actions by different grouped categories. Typically, promoted actions are displayed in the ribbon of the role center client. You can organize promoted actions into different categories, where each category is indicated by a caption in the ribbon. You define up to 10 categories for a page. The following figure illustrates a page that has promoted actions under the following categories. 
@@ -41,7 +41,7 @@ You type the values of the **PromotedActionCategories** where each caption is sp
 PromotedActionCategories = 'New_caption,Process_caption,report_caption,category4_caption,category5_caption,category6_caption,category7_caption,category8_caption,category9_caption,category10_caption';
 ```
 
-The position of the caption in the list determines its corresponding category setting in the **PromotedCategory** property for actions as described in the table below.
+The position of the caption in the list determines its corresponding category setting in the **PromotedCategory** property for the actions as described in the table below.
 
 | PromotedActionCategories caption position|Default PromotedCategory values  |  Example |
 |--------------------| ----------------------|-----------|
