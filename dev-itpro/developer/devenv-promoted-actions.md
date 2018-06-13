@@ -1,7 +1,8 @@
 ---
-title: "Defining Promoted Actions"
+title: "Promoted Actions"
+description: Promoted actions are actions that are configured to display on the Home tab for accessing quick daily actions in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 06/06/2018
+ms.date: 06/13/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
