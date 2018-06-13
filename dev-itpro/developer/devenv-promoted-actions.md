@@ -36,7 +36,7 @@ Promoted actions can be grouped. You can add promoted actions by different group
 ![image text](media/Promoted-Category.png)
 
 You assign a promoted action to a category by setting the **PromotedCategory** property of the action. By default, these category names correspond to the captions that are displayed for the category on the page in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will typically want to change the captions, especially the Category4 through Category10 captions. See the table below for the default **PromotedCategory** values. To change the default captions, set the **PromotedActionCategories** property. 
-You type the values of the **PromotedActionCategories** where each caption is sperated with a comma as shown below: 
+You type the values of the **PromotedActionCategories** where each caption is separated with a comma as shown below: 
 
 ```
 PromotedActionCategories = 'New_caption,Process_caption,report_caption,category4_caption,category5_caption,category6_caption,category7_caption,category8_caption,category9_caption,category10_caption';
@@ -57,7 +57,7 @@ The position of the caption in the list determines its corresponding category se
 | Ninth |Category9  | *Category9_caption* |
 |Tenth|Category10  | *Category10_caption* |
 
-You change category captions on a page-by-page basis and for each [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Windows client language. 
+You can change category captions on a page-by-page basis and for each [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Windows client language. 
 
 For more information about these properties, see [PromotedCategory Property](properties/devenv-promotedcategory-property.md) and [PromotedActionCategories Property](properties/devenv-promotedactioncategories-property.md).
 
