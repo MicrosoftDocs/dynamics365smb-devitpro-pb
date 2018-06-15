@@ -58,9 +58,10 @@ The data must be exported into files to be included in the extension. To use the
     `Export-NAVAppTableData -ServerInstance DynamicsNAV110 -Path ‘C:\NAVAppTableData’ -TableId 10000`
 
     > [!NOTE]  
-    > Export the data for each table to a separate XML file.
+    > Export the data for each table to a separate XML file.   
 
 3.	Add the exported table data files to the Visual Studio Code project that contains your extension.
+4.  Call the procedure in a Codeunit with the SubType Install or Upgrade property and specify the table ID  in the `NavApp.LoadPackageData` procedure. 
 
     > [!WARNING]
     > An extension can only include table data for new tables that are added as part of the extension.
