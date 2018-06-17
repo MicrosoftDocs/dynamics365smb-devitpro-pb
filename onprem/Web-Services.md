@@ -20,7 +20,7 @@ The following sections provide an overview of the documentation for web services
   
 |To|See|  
 |--------|---------|  
-|Compare the features and constraints of SOAP and OData web services.|[Web Service Alternatives: SOAP and OData](Web-Service-Alternatives:-SOAP-and-OData.md)|  
+|Compare the features and constraints of SOAP and OData web services.|[Web Service Alternatives: SOAP and OData](Web-Service-Alternatives--SOAP-and-OData.md)|  
 |Create and publish a web service.|[How to: Publish a Web Service](How-to--Publish-a-Web-Service.md)|  
 |Avoid issues that may occur when [!INCLUDE[navnow](includes/navnow_md.md)] pages expect user interaction.|[Handling UI Interaction When Working with Web Services](Handling-UI-Interaction-When-Working-with-Web-Services.md)|  
 |Coordinate web service applications across multiple time zones.|[Managing Time Zones with Web Services](Managing-Time-Zones-with-Web-Services.md)|  
