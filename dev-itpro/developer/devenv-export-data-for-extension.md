@@ -3,7 +3,7 @@ title: "Exporting data for Extensions"
 description: "How you can export data such as permisisons, web services, and table data for an extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/17/2018
+ms.date: 06/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -61,7 +61,18 @@ The data must be exported into files to be included in the extension. To use the
     > Export the data for each table to a separate XML file.
 
 3.	Add the exported table data files to the Visual Studio Code project that contains your extension.
-4.  Call the procedure in a Codeunit with the SubType Install or Upgrade property and specify the table ID  in the `NavApp.LoadPackageData` procedure. 
+4.  Call the procedure in a Codeunit with the SubType property `Install` or `Upgrade` and specify the table ID  in the `NavApp.LoadPackageData` procedure as shown in the following example.
+
+    ```
+    codeunit 50100 MyExtensionUpgrade
+    {    
+    Subtype = Upgrade;
+    trigger OnUpgradePerDatabase()
+    begin
+        NavApp.LoadPackageData(50100); 
+    end;
+    }
+    ```
 
     > [!WARNING]
     > An extension can only include table data for new tables that are added as part of the extension.
@@ -81,4 +92,6 @@ The data must be exported into files to be included in the extension. To use the
 
 ## See Also
 [Developing Extensions in AL](devenv-dev-overview.md)  
+[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
+[Writing Extension Install Code](devenv-extension-install-code.md)  
 

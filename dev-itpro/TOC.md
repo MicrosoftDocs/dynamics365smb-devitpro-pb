@@ -308,7 +308,7 @@
 ### [Table and Table Extension Properties](developer/properties/devenv-table-properties.md)
 ### [Page and Page Extension Properties](developer/properties/devenv-page-property-overview.md)
 ### [Codeunit Properties](developer/properties/devenv-codeunit-properties.md)  
-### [MenuSuite Properties](developer/properties/devenv-menusuite-properties.md)  
+<!-- NOT SUPPORTED ### [MenuSuite Properties](developer/properties/devenv-menusuite-properties.md)  -->
 ### [Query Properties](developer/properties/devenv-query-properties.md)  
 ### [Report Properties](developer/properties/devenv-report-properties.md)  
 ### [XMLPort Properties](developer/properties/devenv-XMLPort-properties.md)  

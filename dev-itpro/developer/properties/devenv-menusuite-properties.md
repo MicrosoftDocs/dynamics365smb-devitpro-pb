@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 6364b2aa-2717-4f2a-9efe-d419435e9649
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
+redirect_url: devenv-properties.md
 ---
 
 [!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
