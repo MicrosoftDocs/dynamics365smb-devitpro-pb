@@ -1,5 +1,5 @@
 ---
-title: "Classifying Data in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]"
+title: "Classifying Data in Dynamics 365"
 ms.author: jswymer
 ms.custom: na
 ms.date: 03/16/2018
