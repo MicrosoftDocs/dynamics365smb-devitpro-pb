@@ -1,7 +1,7 @@
 ---
 title: "Actions Overview"
 ms.custom: na
-ms.date: 05/02/2018
+ms.date: 08/05/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,37 +12,43 @@ caps.latest.revision: 44
 author: SusanneWindfeldPedersen
 ---
 
-
-
 # Actions Overview
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page in the ribbon or in the navigation pane. In this topic, you learn about different types of actions, and how you can enable users to quickly locate the actions they want to use.  
   
-Pages can have the following actions.  
+The actions can be displayed in different tabs on the action ribbon. 
+
+You can choose from the following action areas to place the actions in the specified area.
   
-|Types of actions|Used on|Description|Example|  
-|----------------|-------|-----------|-------|  
-|Actions|Role Center, list, card, and task pages|User tasks|Post a sales order|  
-|Navigate|List, card, and task pages|Links to other pages in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|Prices|  
-|Reports|Role Center, list, card, and task pages|A list of available reports.|Customer Top 10 List|  
-|New|List, card, Role Center pages, and task pages|Actions that appear under the New group. Opens a new [!INCLUDE[d365fin_md](includes/d365fin_md.md)] document.|New sales invoice|  
-|Promoted Actions|List, card, Role Center pages, and task pages|Provide quick access to common tasks that appear under the Home tab.|Post and print a sales order|  
-|Embedding|Role Center pages|Menu items on the Role Center navigation pane.|Customers|  
-|Sections|Role Center pages|Menu buttons for a secondary activity, such as posted documents.|Posted sales invoices|  
+|Area |Syntax| Used on|Description|Example|  
+|---------------|--|-------|-----------|-------|  
+|Actions menu|``area(processing)``| Role Center, list, card, and task pages|User tasks|Post a sales order|
+|New document group in Actions menu|``area(creation)`` |List, card, Role Center pages, and task pages|Actions that appear under the New group. Opens a new [!INCLUDE[d365fin_md](includes/d365fin_md.md)] document.|New sales invoice|  
+|Navigate menu|``area(navigation)`` |List, card, and task pages|Links to other pages in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|Prices|  
+|Report menu|``area(reporting)`` |Role Center, list, card, and task pages|A list of available reports.|Customer Top 10 List| 
   
-> [!CAUTION]  
->  If you change an object, for example, an action to an action container, you must also change the ID of the action. The ID serves as a reference, and must reflect the object.  
+
+The following Actions are related to the Role Center page.
+
+|Area |Syntax |Used on |Description |Example |  
+|-----|----------------|-------|-----------|-------| 
+|Navigation menus|``area(sections)``|Role Center pages|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. |Posted sales invoices|  
+|Navigation bar|``area(embedding)``|Role Center pages|The second-level navigation displays a flat list of links to other pages.|Customers|  
+
+For more information about actions used on the role center page, see [Designing Role Centers](devenv-designing-role-centers.md).
+ 
+## Types of Actions  
+Each page has a different set of actions depending on the page type, and the processes that the page supports. In order to create the appropriate set of actions for a particular page, you should have a good understanding of your customer's business processes.  
   
- Each page has a different set of actions depending on the page type, and the processes that the page supports. In order to create the appropriate set of actions for a particular page, you should have a good understanding of your customer's business processes.  
+Each process in an organization has several actions associated with it. You should try to create a full set of actions that mirror all tasks and processes that are performed.  
   
- Each process in an organization has several actions associated with it. You should try to create a full set of actions that mirror all tasks and processes that are performed.  
+Example: The Sales Orders list page at CRONUS International contains all actions related to processing sales orders. During user configuration and personalization, some of these actions may be hidden or promoted to the ribbon. Therefore, you must create a full set of actions for the customer.  
+Pages can have the following actions as described in each section below.  
   
- Example: The Sales Orders list page at CRONUS International contains all actions related to processing sales orders. During user configuration and personalization, some of these actions may be hidden or promoted to the ribbon. Therefore, you must create a full set of actions for the customer.  
-  
-## Types of actions  
- The following sections describe actions available.  
-  
-### Actions  
- The Actions tab is displayed in the ribbon on all page types, and contains relevant tasks for the current page. Some examples from the Customer page are as follows:  
+## Actions menu
+Actions menu is a tab displayed in the ribbon on all page types, and contains relevant tasks for the current page. Typically, you add processing tasks and creation tasks in the Actions menu. To add processing actions such as posting a sale order, you must use the ``processing`` action area. They are regular daily tasks. Therefore, they must be on the Actions menu. 
+For examples on how to add actions to the Actions menu, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md). 
+
+Some examples from the Customer page are as follows:
   
 -   Sales Invoice  
   
@@ -57,30 +63,30 @@ Pages can have the following actions.
 -   Prices  
   
 -   Line Discounts  
-  
- They are regular daily tasks. Therefore, they must be on the Actions menu, and promoted to the ribbon.  
-  
- You can add actions to the Actions menu, group actions together under action submenus, or promote them to the ribbon. You cannot create submenus or promote actions on a Role Center page. For examples of how to use actions, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
-  
-### Navigate  
- The Navigate tab is displayed after Actions in the ribbon. Rather than providing tasks for the user, this tab provides additional information by taking the user to a specific page in [!INCLUDE[d365fin_md](includes/d365fin_md.md)].  
-  
-> [!NOTE]  
->  You should not add a Navigate action to a Role Center page.  
-  
-### Report  
- The Reports tab is displayed after the Navigate tab in the ribbon. The Reports tab lists the reports most relevant to a page. If a user does not require a Reports tab, then the tab is hidden. Sometimes it is relevant to promote the most important reports to the Home tab to save the user from too many clicks.  
+
+You can add actions to the Actions menu, group actions together under action submenus, or promote them to the ribbon. For examples of how to use actions, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
   
 ### New Document  
- The New action is often displayed both in the Home tab and in the Actions tab. You can use this action to open new documents within [!INCLUDE[d365fin_md](includes/d365fin_md.md)].
+The New Document action is often displayed both in the Home tab and in the Actions tab. You can use this action to open new documents within [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can add an action to create a new document such as creating a new sales invoice. This action displays in a seperate group called **New document** group in the Actions tab. To add to the New document group, you must use the ``creation`` action area.
   
- Example: On the Customers page, if the order processor wants to create a new invoice, she can open the New page directly from the Actions tab. This is useful as she creates new sales invoices daily.  
-  
-### Home Items  
+Example: On the Customers page, if the order processor wants to create a new invoice, she can open the New page directly from the Actions tab. This is useful as she creates new sales invoices daily. 
+
+
+<!-- ### Home Items  
  Home Items are actions that appear under the Home button, on the Role Center navigation pane. This navigation has a tree structure, and each node in the tree links to a list page.  
   
- The user Role Center is like a home page, and home items in the navigation pane are links to the user’s most useful list pages. <!-- For more information, see [Setting Up the Home Button and Home Items](Setting-Up-the-Home-Button-and-Home-Items.md)  -->
+ The user Role Center is like a home page, and home items in the navigation pane are links to the user’s most useful list pages. For more information, see [Setting Up the Home Button and Home Items](Setting-Up-the-Home-Button-and-Home-Items.md). -->
 
+## Navigate menu
+The Navigate tab is displayed after the Actions menu in the ribbon. Rather than providing tasks for the user, this tab provides additional information by taking the user to a specific page in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. To add a page link in the Navigate tab, you must use the ``navigation`` action area. These actions act like a bookmark to enable quick access to view a page. <!-- For examples on how to link pages in the Navigate tab, see [Adding Page Links to Navigate Menu](devenv-adding-page-links-to-navigate-menu.md). -->
+  
+> [!NOTE]  
+>  You should not add a Navigation action to a Role Center page.  
+  
+## Report menu
+The Report tab is displayed after the Navigate tab in the ribbon. The Reports tab lists the reports most relevant to a page. If a user does not require a Report tab, then the tab is hidden. Sometimes it is relevant to promote the most important reports to the Home tab to save the user from too many clicks. To create an action in the Report tab, you must use the ``reporting`` action area. 
+
+ <!--
 ### Activity Buttons  
  If there are too many Home items to fit on the Role Center without scrolling, then activity buttons can be used to group other important processes together.  
   
@@ -88,43 +94,16 @@ Pages can have the following actions.
   
  Each activity button has its own navigation pane, with links to list pages and can be configured just like the user Role Center.  
   
- <!-- For more information, see [Creating Activity Buttons for the Navigation Pane](Creating-Activity-Buttons-for-the-Navigation-Pane.md)  -->
-  
-## Promoted Actions  
- Promoted actions are actions that are set up on the Actions, Navigate, or Reports tabs in the ribbon, but are also configured to display on the Home tab. Although the actions are set up on the Actions, Navigate, or Reports tabs, you can choose to hide them on these tabs and only show them on the Home tab.  
-  
- The Home tab is always displayed first so promoted actions provide quick access to common tasks, because users do not have to browse through a menu to access them. You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. For more information, see [Promoted Property](properties/devenv-promoted-property.md).
- 
- Promoted actions can be grouped. <!-- For more information, see [How to: Define Promoted Action Categories Captions for the Ribbon](How-to-Define-Promoted-Action-Categories-Captions-for-the-Ribbon.md).  -->
-  
- Each promoted action has an icon associated with it. You can accept a default icon for your promoted action or decide to use a larger icon that makes it more prominent to the user. Use the Properties window in the Action Designer to set the size and location of an icon.  
-  
- ### Example 
- On the Sales Orders list page, Post is promoted to the ribbon, and included in the Process group. This helps the order processor in her work, because posting sales orders is one of her most important daily tasks.  
+ For more information, see [Creating Activity Buttons for the Navigation Pane](Creating-Activity-Buttons-for-the-Navigation-Pane.md)  -->
 
-```
-page 50100 "Sales Orders List"
-{
-    PageType = Card;
- 
-    actions
-    {
-        area(Processing)
-        {
-            action(Post)
-            {
-                Promoted = true;
-                
-                trigger OnAction()
-                begin
-                    Message('My promoted action');
-                end;
-            }
-        }
-    }
-}
-```
-## Actions at Runtime  
+## Promoted Actions  
+Promoted actions are actions that are set up on the Actions, Navigate, or Reports tabs in the ribbon, but are also configured to display on the Home tab. Although the actions are set up on the Actions, Navigate, or Report tabs, you can choose to hide them on these tabs and only show them on the Home tab. For more information on how to add promoted actions, promoted categories and example, see [Promoted Actions](devenv-promoted-actions.md). 
+
+### Home menu 
+The Home tab is always displayed first so promoted actions provide quick access to common tasks, because users do not have to browse through a menu to access them. You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. For more information, see [Promoted Property](properties/devenv-promoted-property.md).
+
+
+## Actions at runtime  
  An action can trigger code to run, such as posting a document or otherwise modifying a record in a table. When a user chooses an action, one of the following pieces of logic will happen in addition to the code that the action itself triggers:  
   
 -   If the page is empty and no longer shows any records, the page is re-initialized with default values.  
@@ -141,10 +120,10 @@ page 50100 "Sales Orders List"
 if confirm('Are you sure you want to call this codeunit?', true) then begin
     CurrPage.SetSelectionFilter(Rec);  
     codeunit.Run(50000, Rec);  
-end;        
-  
+end;         
 ```  
 
 ## See Also  
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
+[Pages Overview](devenv-pages-overview.md)  

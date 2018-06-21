@@ -52,22 +52,24 @@ In AL code, you can create new tables or modify existing tables. Read more about
 |Learn about the set of triggers that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports for tables and fields.|[Table and Field Triggers](triggers/devenv-triggers.md)|  
 <!-- 
 |Create a table trigger.|[How to: Define or Modify Table or Field Triggers](How-to--Define-or-Modify-Table-or-Field-Triggers.md)|  
-|See reference information about specific triggers.|[Triggers](Triggers.md)|  
+|See reference information about specific triggers.|[Triggers](Triggers.md)|  -->
   
-## Designing Relationships Between Tables  
- In [!INCLUDE[navnow](includes/navnow_md.md)], the primary way to establish a connection between tables is to use the **TableRelation** property. The following topics go into detail about how this works.  
+## Creating relationships between tables  
+In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the primary way to establish a connection between tables is to use the **TableRelation** property. The following topics go into detail about how this works.  
   
 |To|See|  
 |--------|---------|  
-|Get a brief introduction to relational database design in [!INCLUDE[navnow](includes/navnow_md.md)].|[Setting Relationships Between Tables](Setting-Relationships-Between-Tables.md)|  
-|Understand the extra steps SQL Server requires to use the **TableRelation** property.|[Maintaining Table Relationships on SQL Server](Maintaining-Table-Relationships-on-SQL-Server.md)|  
+|Get a brief introduction to relational database design in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|[Setting Relationships Between Tables](devenv-set-relationships-between-tables.md)|  
+
+<!--
+|Understand the extra steps SQL Server requires to use the **TableRelation** property.|[Maintaining Table Relationships on SQL Server](Maintaining-Table-Relationships-on-SQL-Server.md)|  ???
   
 ## Understanding SQL Server and Linked Objects  
  [!INCLUDE[navnow](includes/navnow_md.md)] supports special handling for SQL Server Object tables. You can find help on linked objects in the following topics.  
   
 |To|See|  
 |--------|---------|  
-|Learn about the **LinkedObject** table property.|[Creating Table Definitions from SQL Server Objects (Linked Objects)](Creating-Table-Definitions-from-SQL-Server-Objects--Linked-Objects-.md)|  
+|Learn about the **LinkedObject** table property.|[Creating Table Definitions from SQL Server Objects (Linked Objects)](  Creating-Table-Definitions-from-SQL-Server-Objects--Linked-Objects-.md)|  
 |Work with other data sources, including Microsoft Excel and Oracle databases.|[Accessing Objects in Other Databases or on Linked Servers](Accessing-Objects-in-Other-Databases-or-on-Linked-Servers.md)|  
   
   -->

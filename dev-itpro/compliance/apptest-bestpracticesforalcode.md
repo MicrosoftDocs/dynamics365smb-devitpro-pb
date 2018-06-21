@@ -15,7 +15,7 @@ caps.latest.revision: 18
 ---
 
 # Best Practices for AL  
-This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additional to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object and method naming, as well as better readability of written code.
+This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additional to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
 
 ## Extension structure 
 An extension is fully contained in a single folder. This folder often contains multiple files, such as app.json and launch.json files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.   
@@ -129,7 +129,7 @@ In AL, objects are referenced by their object name, not by their ID.
 Page.RunModal(Page::"Customer Card", ...)
  
 var
-Customer: Record Customer;
+    Customer: Record Customer;
 ```
 
 ## Variable naming 
@@ -145,7 +145,7 @@ Vendor: Record Vendor;
 To declare a method, follow the guidelines below: 
 
 - Include a space after a semicolon when declaring multiple arguments. 
-- Semicolons are used at the end of the signature/method header. If you use a snippet, the semicolons are automatically added.
+- Semicolons can be used at the end of the signature/method header. If you use a snippet,   the semicolons are not automatically added.
 - Methods are named as variables using Pascal case. However, this is not a mandatory rule. 
 - There must be a blank line between method declarations. If you format your code using the [AL Formatter](../developer/devenv-al-formatter.md) tool, the auto-formatter sets the blank line between procedures. 
 
@@ -154,11 +154,14 @@ To declare a method, follow the guidelines below:
 ```
 local procedure MyProcedure(Customer: Record Customer; Int: Integer)
 begin
-end
+end;
+
 // space
+
 local procedure MyProcedure2(Customer: Record Customer; Int: Integer)
 begin
-end
+end;
+
 ```
 
 ## Calling methods
@@ -176,7 +179,7 @@ When declaring a variable or a parameter, the name of that variable or parameter
 
 ```
 Var
-Number: Integer;
+    Number: Integer;
 
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
 ```

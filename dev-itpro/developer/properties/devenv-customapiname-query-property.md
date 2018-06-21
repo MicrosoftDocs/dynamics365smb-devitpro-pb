@@ -20,7 +20,7 @@ Sets the custom name of the API endpoint that the query is exposed in. The custo
 
 ## Applies To  
 
-- Query
+- Queries
 
 
 ## See Also  

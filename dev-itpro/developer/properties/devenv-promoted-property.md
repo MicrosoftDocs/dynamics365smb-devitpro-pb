@@ -19,7 +19,7 @@ Sets the value that indicates whether the selected action is promoted, which mea
   
 ## Applies To  
   
--   Page Actions  
+-   Page actions  
   
 ## Remarks  
  This feature allows you to make a copy of an action and place it on the Home tab so that it is easier to find.  

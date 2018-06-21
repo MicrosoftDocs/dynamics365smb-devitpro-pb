@@ -27,35 +27,29 @@ The following examples show how you can specify the HelpLink property from pages
 ``` 
 page 50100 MyPageWithHelp
 {
-         HelpLink = 'https://www.github.com/Microsoft/AL';
+    HelpLink = 'https://www.github.com/Microsoft/AL';
 }
 ```
-
-
 
 ``` 
 report 50100 MyReportWithHelp
 {
-        requestpage
-        {
-                HelpLink = 'https://www.github.com/Microsoft/AL';
-        }
+    requestpage
+    {
+        HelpLink = 'https://www.github.com/Microsoft/AL';
+    }
 }
 ```
 
 ```
 xmlport 50100 XmlPortWithHelp
 {
-    Caption = 'XmlPort With Help';
- 
-        requestpage
-        {
-             HelpLink = 'https://github.com/Microsoft/AL';
-        }
+    requestpage
+    {
+        HelpLink = 'https://github.com/Microsoft/AL';
+    }
 }
 ```
- 
-
 
 ## See Also
 [Table Object](devenv-table-object.md)  

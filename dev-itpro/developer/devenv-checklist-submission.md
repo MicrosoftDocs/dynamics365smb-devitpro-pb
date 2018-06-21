@@ -26,7 +26,7 @@ The following is a checklist of all requirements that you **must meet before sub
 |The app.json file has mandatory settings that you must include. Here you can also read more about dependency syntax and multiple countries per a single app syntax.|[Mandatory app.json settings](devenv-json-files.md)|
 |Coding of `Date` must follow a specific format (**no longer region specific**)|Use the format `yyyymmddD`. For example, `20170825D`.|
 |Remote services (including all Web services calls) can use either HTTP or HTTPS. However, HTTP calls are only possible by using the HttpRequest AL type.|[Guidance on HTTP use](devenv-restapi-overview.md)|
-|Only JavaScript based Web client add-ins are supported.The zipping process is handled automatically by the compiler. Simply include the new AL `controladdin` type, JavaScript sources, and build the app.|[Control Add-Ins](devenv-control-addin-object.md)|
+|Only JavaScript based Web client add-ins are supported. The zipping process is handled automatically by the compiler. Simply include the new AL `controladdin` type, JavaScript sources, and build the app.|[Control Add-Ins](devenv-control-addin-object.md)|
 |The .app file must be digitally signed.|[Signing an APP Package File](devenv-sign-extension.md)|
 |The user scenario document must contain detailed steps for all setup and user validation testing.|[User Scenario Documentation](../compliance/apptest-userscenario.md)|
 |Set the application areas that apply to your controls. Failure to do so will result in the control not appearing in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|[Application Area guidance](properties/devenv-applicationarea-property.md)|
@@ -39,6 +39,7 @@ The following is a checklist of all requirements that you **must meet before sub
 |You must include all translations of countries your extension is supporting.|[Translating Your Extension](devenv-work-with-translation-files.md), [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md).|
 |You are required to prefix or suffix the **Name** property of your fields. This eliminates collision between apps.|[Prefix/Suffix Guidelines](../compliance/apptest-prefix-suffix.md)|
 |You are required to include a Visual Studio Code test package with your extension. The test package must include at least 90% code coverage.|[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)|
+|Apps that have the `DataClassification` property set to `ToBeClassified` will not be accepted.|[Classifying Data](devenv-classifying-data.md)|
 
 <!-- 
 |Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Packaging the Permission Set](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools/new-navapppackage?view=dynamicsnav-ps-2017)| [Managing Permission Sets](../Managing-Permissions-and-Permission-Sets.md), [How to: Export Permission Sets](../How-to-Import-Export-Permission-Sets-Permissions.md) |

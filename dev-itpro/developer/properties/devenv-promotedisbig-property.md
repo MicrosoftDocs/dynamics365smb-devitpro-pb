@@ -19,11 +19,12 @@ Sets a value that indicates whether the promoted action is displayed on the ribb
   
 ## Applies to  
   
--   Page Actions  
+-   Page actions  
   
 ## Remarks  
  Available options are **true**/**false**.  
   
 ## See Also  
  [Promoted Property](devenv-promoted-property.md)   
+ [Promoted Actions](../devenv-promoted-actions.md)  
  

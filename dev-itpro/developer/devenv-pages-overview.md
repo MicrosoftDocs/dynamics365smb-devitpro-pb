@@ -84,7 +84,7 @@ Actions can be displayed in the ribbon of all pages and grouped together under t
 
 Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
 
-## Adding, moving, and modifying
+## Using Keywords to place Actions and Controls
 You can use the following keywords in the `layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these keywords to place actions in the ribbon. 
 
 |Keywords        |Syntax | Applies to |
@@ -97,6 +97,7 @@ You can use the following keywords in the `layout` section to place and move fie
 |```movelast``` |```movelast(Anchor; Target1, Target2)``` |**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
 |```moveafter``` |```moveafter(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
 |```movebefore```|```movebefore(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
+|```modify```|```modify(Target)```|**Target**: controls, actions and groups|
 
 
 ### Example
