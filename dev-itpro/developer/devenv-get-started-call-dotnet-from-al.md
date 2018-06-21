@@ -12,6 +12,8 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
+[!INCLUDE[vnext_preview](includes/vnext_preview.md)]
+
 # Getting started with Microsoft .NET Interoperability from AL
 You can call .NET type members, including methods, properties, and constructors, from AL code. In this article we will guide you through the process of creating an extension that uses .NET types.
 
