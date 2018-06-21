@@ -22,9 +22,16 @@ To construct a URL, start with *ms-businesscentral* scheme, and then add additio
   
 The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)], and has the following syntax:  
 
+<!-- 
+
 ```
 ms-businesscentral://<hostname>[:<port>]
 [/<instance>]/[?<parameter>=<value>[&<parameter>=<value>]]
+```
+-->
+
+```
+ms-businesscentral://[<hostname>][/<aadtenantid>][/sandbox]/[?<parameter>=<value>[&<parameter>=<value>]]
 ```
 
 `[]` indicates an optional parameter; all other parameters are required.
@@ -32,20 +39,23 @@ ms-businesscentral://<hostname>[:<port>]
 `<>`indicate values that you must supply. Do not include the brackets in the address.
 
 ## Parameters
-The following table describes the parameters for the main part of the URL, which are the parameters up to and including  <!--`[/<port>]/`--> `[/<instance>]/`. These parameters are only relavant for ISV Embed solutions.
+The following table describes the parameters for the main part of the URL, which are the parameters up to and including  <!--`[/<port>]/` `[/<instance>]/`--> `[/sandbox]/`.
 
 |Parameter|Description| Example |
-|---------|-----------|---------|  
-|hostname|The <!-- onprem computer name, -->domain name or IP address of the computer/server that hosts the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution.| `ms-businesscentral://businesscentral.mysolution.com`<br /><br />`ms-businesscentral://192.168.0.254/`| 
-|port|The port number on which your <!-- [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance -->[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution runs. If not provided, the standard SSL port \(443\) is used.| `ms-businesscentral://businesscentral.mysolution.com:80/`<br /><br />`ms-businesscentral://192.168.0.254:80/`  |
-|instance|The <!-  [!INCLUDE[nav_web_server_instance_md](includes/dnav_web_server_instance_md.md)] instance --> [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] web server that you want to connect to.| `ms-businesscentral://businesscentral.mysolution.com:80/myserverinstance/`<br /><br />`ms-businesscentral://192.168.0.254:80/myserverinstance/`|
+|---------|-----------|---------|
+|hostname|Domain name for the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution or IP address of the computer/server that hosts it. This is required for an ISV Embed solution. For standard Business Central, you use `businesscentral.dynamics.com` or you can omit this parameter.| `ms-businesscentral://businesscentral.dynamics.com/`<br /><br />`ms-businesscentral:///`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/`| 
+|aadtenantid|The unique identifier for an Azure Active Directory (AAD) tenant. The value can be formatted as a GUID or domain name. This is useful to those who work across multiple AAD organizations, such as delegated administrators, support personnel or external accountants, because it allows explicitly targeting an AAD tenant. If this is omitted, you will be directed to the primary AAD tenant or the same AAD tenant that you are currently signed in to.|`ms-businesscentral://businesscentral.mysolution.com/mysolutionaadtenant.onmicrosoft.com`|
+|sandbox|Specifies that the URL should target the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox environment instead of a production environment.|`ms-businesscentral:/businesscentral.dynamics.com/sandbox/`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/sandbox/`|  
 
 
-<!--
+<!-- 
+|hostname|The onprem computer name, domain name or IP address of the computer/server that hosts the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution.| `ms-businesscentral://businesscentral.mysolution.com`<br /><br />`ms-businesscentral://192.168.0.254/`| 
+|port|The port number on which your [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution runs. If not provided, the standard SSL port \(443\) is used.| `ms-businesscentral://businesscentral.mysolution.com:80/`<br /><br />`ms-businesscentral://192.168.0.254:80/`  |
+|instance|The <!-  [!INCLUDE[nav_web_server_instance_md](includes/dnav_web_server_instance_md.md)] instance [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] web server that you want to connect to.| `ms-businesscentral://businesscentral.mysolution.com:80/myserverinstance/`<br /><br />`ms-businesscentral://192.168.0.254:80/myserverinstance/`|
 |Instance|The [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance that you want to connect to.| `dynamicsnav110`|
 
 -->
-The following table describes the optional parameters that you can specify<!-- after `[/<instance>]/`-->. These parameters are referred to as the *query parameters*.
+The following table describes the optional parameters that are indicated by `[?<parameter>=<value>[&<parameter>=<value>]]` in the syntax. These parameters are referred to as the *query parameters*.
 
 |Parameter|Description| Example |
 |---------|-----------|---------|  
@@ -58,10 +68,12 @@ The following table describes the optional parameters that you can specify<!-- a
 |tenant	|The ID of the tenant that you want to connect to. If not provided, the default tenant is used.|`ms-businesscentral:///?tenant=mytenant2-1`|
 
 
-The parameters can be in any order. However, the first parameter must be preceded by the `?` symbol, and any additional parameters must be preceded by the `&` symbol.
+The query parameters can be in any order. However, the first parameter must be preceded by the `?` symbol, and any additional parameters must be preceded by the `&` symbol.
 
+<!-- 
 > [!NOTE]  
 > It is not possible to specify which client/device type to open up the URL in; the last used client will open up when clicking the URL.
+-->
 
 <!-- add for onprem
 The URL `ms-businesscentral:///?page=21` or `ms-dynamicsnav:///?page=21` will open the server that you last connected to on the specified page.  -->
