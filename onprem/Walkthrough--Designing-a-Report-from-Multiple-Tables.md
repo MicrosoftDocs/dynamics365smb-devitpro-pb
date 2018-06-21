@@ -204,7 +204,7 @@ A report object is composed of a report dataset and a visual layout. You design 
     |Currency Code|CurrencyCode\_CustLedgerEntry|  
     |Amount|Amount\_CustLedgerEntry|  
     |Original Amt \(LCY\)|OriginalAmtLCY\_CustLedgerEntry|  
-    |Remaining Amt. \(LCY\)|EntryType\_DetailedCustLedgEntry|  
+    |Remaining Amt. \(LCY\)|RemainingAmtLCY\_CustLedgEntry|  
 
 5.  Select the **Detailed Cust. Ledger Entry** data item and repeat steps 1 through 3 to add the fields. The following table shows the fields in Report Dataset Designer.  
 
