@@ -96,7 +96,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 The AL Language extension, including the AL compiler, and the server to which you publish your code are completely decoupled.
 When publishing, the server recompiles your code and tries to resolve all the references to external assemblies. In order for the compilation to succeed, the server must be able to locate and load all the referenced assemblies and types.
 
-The server will search the global assembly cache (GAC), the **Add-ins** folder and the **Add-ins** table. You must manually install any custom assembly in one of these locations.
+The server will search the global assembly cache (GAC), the **Add-ins** folder, and the **Add-in** table. You must manually install any custom assembly in one of these locations.
 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
