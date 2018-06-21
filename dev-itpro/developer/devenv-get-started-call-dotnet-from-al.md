@@ -21,7 +21,7 @@ You can call .NET type members, including methods, properties, and constructors,
 > [!IMPORTANT]  
 > .NET Interoperability is only available on-premise.
 
-### Enabling .NET Interoperability
+## Enabling .NET Interoperability
 .NET interoperability can only be used by applications that target on-premise deployments. See [JSON Files](devenv-json-files.md) for more information on how to set the correct compilation target.
 
 ## Declaring a .NET package
