@@ -61,16 +61,16 @@ The data must be exported into files to be included in the extension. To use the
     > Export the data for each table to a separate XML file.
 
 3.	Add the exported table data files to the Visual Studio Code project that contains your extension.
-4.  Call the procedure in a Codeunit with the SubType property `Install` or `Upgrade` and specify the table ID  in the `NavApp.LoadPackageData` procedure as shown in the following example.
+4.  Call the procedure in a Codeunit with the Subtype property `Install` or `Upgrade` and specify the table ID  in the `NavApp.LoadPackageData` procedure as shown in the following example.
 
     ```
     codeunit 50100 MyExtensionUpgrade
-    {    
-    Subtype = Upgrade;
-    trigger OnUpgradePerDatabase()
-    begin
-        NavApp.LoadPackageData(50100); 
-    end;
+    {
+        Subtype = Upgrade;
+        trigger OnUpgradePerDatabase()
+        begin
+            NavApp.LoadPackageData(50100);
+        end;
     }
     ```
 
