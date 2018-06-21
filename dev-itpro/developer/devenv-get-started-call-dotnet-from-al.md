@@ -3,7 +3,7 @@ title: "Getting started with Microsoft .NET Interoperability from AL"
 description: "Description of the process of referencing and using .NET types"
 author: solsen
 ms.custom: na
-ms.date: 06/11/2018
+ms.date: 06/21/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ You can call .NET type members, including methods, properties, and constructors,
 > .NET Interoperability is only available on-premise.
 
 ### Enabling .NET Interoperability
-.NET interoperability can only be used by applications that target on-premise deployments. See [JSON Files](devenv-json-files.md#app.json-file) for more information on how to set the correct compilation target.
+.NET interoperability can only be used by applications that target on-premise deployments. See [JSON Files](devenv-json-files.md) for more information on how to set the correct compilation target.
 
 ## Declaring a .NET package
 Using a .NET type in AL is a two-step process. First, you must declare the type in a **dotnet** package, and then reference it from code using the **DotNet** type.
