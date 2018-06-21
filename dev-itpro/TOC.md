@@ -308,7 +308,7 @@
 ### [Table and Table Extension Properties](developer/properties/devenv-table-properties.md)
 ### [Page and Page Extension Properties](developer/properties/devenv-page-property-overview.md)
 ### [Codeunit Properties](developer/properties/devenv-codeunit-properties.md)  
-### [MenuSuite Properties](developer/properties/devenv-menusuite-properties.md)  
+<!-- NOT SUPPORTED ### [MenuSuite Properties](developer/properties/devenv-menusuite-properties.md)  -->
 ### [Query Properties](developer/properties/devenv-query-properties.md)  
 ### [Report Properties](developer/properties/devenv-report-properties.md)  
 ### [XMLPort Properties](developer/properties/devenv-XMLPort-properties.md)  
@@ -330,6 +330,9 @@
 ## [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ## [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ## [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
+
+# Preview Features in AL
+## [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 <!-- end AL -->
 <!--
 # [Administration](Administration.md)
