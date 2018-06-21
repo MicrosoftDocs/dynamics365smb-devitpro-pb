@@ -20,7 +20,7 @@ To construct a URL, start with *ms-businesscentral* scheme, and then add additio
 
 <!-- pointing to your [!INCLUDE[navnow](includes/navnow_md.md)] Web server.-->  
   
-The structure of a [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)], and has the following syntax:  
+The structure of a [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] link is very similar to links for the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], and has the following syntax:  
 
 <!-- 
 
@@ -65,8 +65,11 @@ The following table describes the optional parameters that are indicated by `[?<
 |profile|The name of the profile that you want to use in the client. This determines the Role Center that is opened. If not provided, the default profile is used. Business Manager	|`ms-businesscentral:///?profile=BUSINESS%20%MANAGER`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?profile=BUSINESS%20%MANAGER`|
 |company|The company that you want to open in the client. If not provided, the default company is used. CRONUS%20International%20Ltd.|`ms-businesscentral:///?'company=CRONUS%20International%20Ltd.'`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?'company=CRONUS%20International%20Ltd.'`|
 |mode|Whether the page opens in view, edit, or create mode. `view` only lets you see the data on the page, not modify data. `edit` lets you to modify data on the page. `create` lets you to modify data on the page and add new entities. |`ms-businesscentral:///?page=21&mode=create`<br /><br />`ms-businesscentral://businesscentral.mysolution.com/?page=21&mode=create`|
-|tenant	|The ID of the tenant that you want to connect to. If not provided, the default tenant is used.|`ms-businesscentral:///?tenant=mytenant2-1`|
 
+
+<!-- 
+|tenant	|The ID of the tenant that you want to connect to. If not provided, the default tenant is used.|`ms-businesscentral:///?tenant=mytenant2-1`|
+-->
 
 The query parameters can be in any order. However, the first parameter must be preceded by the `?` symbol, and any additional parameters must be preceded by the `&` symbol.
 
