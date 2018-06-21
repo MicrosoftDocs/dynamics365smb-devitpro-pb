@@ -10,17 +10,17 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ms.author: jswymer
 ---
-# Linking to the Microsoft Dynamics NAV Universal App
-The protocol handler for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] lets you construct a URL for starting the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a device, such as a phone or tablet. You can then distribute this URL by e-mail or from a Web page to the users.  
+# Linking to the Dynamics 365 Business Central App
+The protocol handler for the [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] lets you construct a URL for starting the app on a device, such as a phone or tablet. You can then distribute this URL by e-mail or from a Web page to the users.  
   
-The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] URL is based on the *ms-businesscentral* URI scheme, which is registered automatically when the app is installed. Invoking a URL based on this scheme will start the app with the provided parameters.  
+The [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] URL is based on the *ms-businesscentral* URI scheme, which is registered automatically when the app is installed. Invoking a URL based on this scheme will start the app with the provided parameters.  
   
 ## Constructing the URL  
 To construct a URL, start with *ms-businesscentral* scheme, and then add additional parameters as needed. Some parameters are required and others are optional. 
 
 <!-- pointing to your [!INCLUDE[navnow](includes/navnow_md.md)] Web server.-->  
   
-The structure of a [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)], and has the following syntax:  
+The structure of a [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] link is very similar to links for the [!INCLUDE[nav_web](includes/nav_web_md.md)], and has the following syntax:  
 
 <!-- 
 
