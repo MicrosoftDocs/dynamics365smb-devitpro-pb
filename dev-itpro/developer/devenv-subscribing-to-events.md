@@ -46,7 +46,7 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
     >[!TIP]  
     > Use the `teventsub` snippet to get started and typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill the attribute arguments and to discover which events are available to use.    
 
-5.  Add code to the method for handing the event.  
+5.  Add code to the method for handling the event.  
 
 
 ## <a name="SubEventEx">Example 1</a>

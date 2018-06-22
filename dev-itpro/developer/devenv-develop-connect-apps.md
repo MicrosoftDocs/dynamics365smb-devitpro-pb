@@ -3,7 +3,7 @@ title: "Getting Started Developing Connect Apps for Dynamics 365 Business Centra
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 05/24/2018
+ms.date: 05/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,6 +28,15 @@ When you have your tenant, you can sign into the UI to play with the product, as
 
 In the following sections you can read more about setting up the two types of authentication and using both authentication methods in Postman.
 
+## Setting up basic authentication
+If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the AAD based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use AAD/Oauth v2 authentication, see the section [Setting up Azure Active Directory (AAD) based authentication](#setting-up-azure-active-directory-(aad)-based-authentication).
+
+1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
+2. On the **Users** page, in the **Web Service Access Key** field, generate a key.  
+3. Copy the generated key and use it as the password for the username. 
+
+Now that we have the username and password, we can connect and authenticate. You can do this from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-the-apis-with-postman-and-basic-authentication) section we will use Postman.
+
 ## Setting up Azure Active Directory (AAD) based authentication
 Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
@@ -44,22 +53,13 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
 
 You have now set up the AAD based authentication. Next, you can go exploring the APIs, see the [Exploring the APIs with Postman and AAD authentication](#exploring-the-apis-with-postman-and-aad-authentication) section below.
 
-## Setting up basic authentication
-If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the AAD based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use AAD/Oauth v2 authentication, see the section above **Setting up Azure Active Directory (AAD) based authentication**.
-
-1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
-2. On the **Users** page, in the **Web Service Access Key** field, generate a key.  
-3. Copy the generated key and use it as the password for the username. 
-
-Now that we have the username and password, we can connect and authenticate. You can do this from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-the-apis-with-postman-and-basic-authentication) section we will use Postman.
-
 ## Exploring the APIs with Postman and basic authentication
 In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
 
 1.	First, in Postman, set up a `GET` call to the base API URL.  
     - When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
 
-    - Since we are using basic authentication, we need to include the users domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v1.0/myusersdomain.com/api/beta`
+    - Since we are using basic authentication, we need to include the users domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v1.0/<your tenant domain>/api/beta`
     
 2. On the **Authorization** tab in Postman select **Basic Auth** in the **Type** and provide the Username and **Web Service Access Key** from above as password. 
 
@@ -68,21 +68,22 @@ In this `Hello World` example, we are going over the basic steps required to ret
 ## Exploring the APIs with Postman and AAD authentication
 In this `Hello World` example, we are going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with AAD authentication.
 
-1. First, in Postman, set up a `GET`call to the base API URL. <!-- more here? -->
+1. First, in Postman, set up a `GET` call to the base API URL.
+    - When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation, for example, call `GET https://api.businesscentral.dynamics.com/v1.0/api/beta`
 2. On the **Authorization** tab in Postman select **OAuth 2.0** in the **Type** and then choose **Get New Access Token**. 
 3. In the **GET NEW ACCESS TOKEN** window, enter the following information as specified below:
-        - In the **Token name** field, choose a descriptive name.
+    - In the **Token name** field, choose a descriptive name.
     - In the **Grant type** field, choose **Authorization Code**.
-    - In the **Callback URL** field, specify the URL specified as the sign-on URL/Reply URL in the Azure Portal. <!-- check -->
-    - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
-    - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
+    - In the **Callback URL** field, specify the URL specified as the sign-on URL/Reply URL in the Azure Portal.
+    - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
+    - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/token?resource=https://api.businesscentral.dynamics.com`.
     - In the **Client ID** field, enter the Application ID from the registered app in Azure Portal.
-    - In the **Client Secret** field, enter the key generated under **Keys** that you copied in a previous step.
+    - In the **Client Secret** field, enter the key generated under **Keys** that you copied in step 6 in the [Setting up Azure Active Directory (AAD) based authentication](#setting-up-azure-active-directory-(aad)-based-authentication).
     - In the **Client Authentication** field, choose the **Send client credentials in body** option.
 4. Choose the **Request token** button. The first time you log in, you will get prompted for consent.
-5. Scroll down and choose **Use token** button.
-
+5. Scroll down and choose **Use token** button.  
 An Authorization request header is now added containing the Bearer token.
+6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
 
 ## Calling the API
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  

@@ -34,7 +34,7 @@ This walkthrough demonstrates how to create a query that links two tables.
  The SQL query for the dataset that Viktor wants is the following:  
   
 ```sql  
-SELECT C.Name, C.No_, SL.Amount FROM [CRONUS International Ltd_$Customer] AS C, [CRONUS International Ltd_$Sales Line] AS SL WHERE C.No_ = SL.[Sell-to Customer No_]
+SELECT C.Name, C.No_, SL.Amount FROM [CRONUS International Ltd_$Customer] AS C, [CRONUS International Ltd_$Sales Line] AS SL WHERE C.No_ = SL.[Sell-to Customer No_] 
 ```  
   
 ## Creating a Query That Links Two Tables  

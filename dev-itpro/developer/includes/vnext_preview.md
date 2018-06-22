@@ -1,0 +1,1 @@
+This feature is in preview and currently only available through the Ready to Go program. Go to [aka.ms/ReadyToGo](https://aka.ms/readytogo) to read more and follow us on the [Dynamics NAV Team Blog](https://go.microsoft.com/fwlink/?linkid=834891) for announcements.

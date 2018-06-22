@@ -118,7 +118,7 @@ RootSite example:
 SubSite example:
 
     ```  
-    New-NAVWebServerInstance -WebServerInstance MyWebApp -Server NAVServer -ServerInstance NAVServerInstance -SiteDeploymentType Subsite -ContainerName MySiteContainer -Port 8081 -PublisherFolder "C:\WebClient\WebPublish"
+    New-NAVWebServerInstance -WebServerInstance MyWebApp -Server NAVServer -ServerInstance NAVServerInstance -SiteDeploymentType Subsite -ContainerName MySiteContainer -WebSitePort 8081 -PublisherFolder "C:\WebClient\WebPublish"
     ```  
 
 -  Susbtitute *MyWebClient* with the name that you want to give the web application in IIS for the web server instance. If you are creating a SubSite deployment type, this name will become part of the URL for opening the [!INCLUDE[nav_web](includes/nav_web_md.md)] application, for example, http://MyWebServer:8081/MyWebApp.  

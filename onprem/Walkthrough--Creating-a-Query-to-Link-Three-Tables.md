@@ -38,7 +38,7 @@ This walkthrough demonstrates how to create a query that links three tables. It 
  Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] He has been asked to create a query that displays the total number of items in each sales order for each salesperson. Viktor knows how to do this in SQL, but he wants to create a [!INCLUDE[navnow](includes/navnow_md.md)] query.  
   
  The SQL query for this dataset that Viktor wants is the following:  
-  
+<!-- 
 ```  
 SELECT SP.Name, SUM(SL.Quantity)  
 FROM "Salesperson/Purchaser" AS SP INNER JOIN "Sales Header" AS SH  
@@ -46,8 +46,17 @@ FROM "Salesperson/Purchaser" AS SP INNER JOIN "Sales Header" AS SH
   ON SL."Document No." = SH."No."   
 WHERE SL."Document Type" = 'Order' AND SL.Type = 'Item'  
 GROUP BY SP.Name  
-```  
+```
+-->
   
+```  
+SELECT SP.Name, SUM(SL.Quantity)  
+FROM [CRONUS International Ltd_$Salesperson_Purchaser] AS SP INNER JOIN [CRONUS International Ltd_$Sales Header] AS SH  
+  ON SP.Code = SH.[Salesperson Code] INNER JOIN [CRONUS International Ltd_$Sales Line] AS SL  
+  ON SL.[Document No_] = SH.[No_]   
+WHERE SL.[Document Type] = '1' AND SL.Type = '2'  
+GROUP BY SP.Name
+```  
 ## Creating the Query with Three Tables  
  Viktor must create a query with Query Designer. The salesperson name is stored in the **Salesperson/Purchaser** table. The salesperson code for sales orders is stored in the **Sales Header** table. The quantity of items in sales orders is stored in the **Sales Line** table. To create this query, Viktor must do the following:  
   

@@ -88,7 +88,7 @@ In a typical business scenario, developers create control add-ins using Microsof
             void LoadMap(double latitude, double longitude);
 
             [ApplicationVisible]
-            void ShowPusourhpin(string title, string imageName);
+            void ShowPushpin(string title, string imageName);
         }  
     }  
 

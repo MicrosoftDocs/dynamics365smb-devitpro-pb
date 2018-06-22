@@ -12,8 +12,11 @@ ms.assetid: cb249654-c9be-482b-9a25-c26d7f229fc2
 caps.latest.revision: 44
 author: SusanneWindfeldPedersen
 ---
-# Arrange Fields in Rows and Columns Using the Grid Control
+# Arranging Fields in Rows and Columns Using the Grid Control
 By default, fields in a FastTab are arranged automatically in two columns that are based on the number of fields. For more information, see [Field Arrangement on a Fasttab](devenv-arranging-fields-on-fasttab.md). You can use a Grid control or a Fixed control to arrange fields in rows and columns on a page and design it to look like a grid-like format or a matrix-like format. To understand the differences between the two controls to help you determine which control to use, see [Comparing Grid and Fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md). 
+
+> [!NOTE]  
+> Grid control for arranging page fields is partially supported. 
 
 Using the **Grid** control, you can arrange the fields manually in one or more rows and columns. The **Grid** control gives you the following options:  
   
@@ -94,7 +97,10 @@ When you set the **Grid** control, the fields of that group can be set to span r
   
 -   To set a field to span one or more rows, set the value of the **RowSpan** property to the number of rows. For more information, see [RowSpan Property](properties/devenv-rowspan-property.md). 
   
--   To set a field to span one or more columns, set the value of the **ColumnSpan** property to the number of columns. For more information, see [ColumnSpan Property](properties/devenv-columnspan-property.md).  
+-   To set a field to span one or more columns, set the value of the **ColumnSpan** property to the number of columns. For more information, see [ColumnSpan Property](properties/devenv-columnspan-property.md).   
+
+> [!NOTE]  
+> The **RowSpan** and **ColumnSpan** properties on fields in the grid layout are not supported in the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] web client. The **Rows** layout on the grid control itself is not supported.
   
 ##  <a name="position"></a> Hiding field captions  
   
@@ -103,4 +109,5 @@ You can hide the caption of a group or a field. To hide the caption of a field, 
   
 ## See Also  
  [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md)   
- [Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md)
+ [Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md)  
+ [Arranging Fields in Rows and Columns Using the Fixed Control](devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md).

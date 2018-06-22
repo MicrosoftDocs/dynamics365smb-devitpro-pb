@@ -24,4 +24,5 @@ Sets the calculation for FlowFields.
  You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and whether a record exists. Use the **AssistEdit** button to set up the calculation formula. The **AssistEdit** window lets you reverse the calculation, choose a table and fields, and create filters.  
   
 ## See Also  
- [FlowFields](../devenv-flowfields.md)
+[FlowFields](../devenv-flowfields.md)  
+[Calculation Formulas and the CalcFormula Property](devenv-calculation-formulas-and-the-calcformula-property.md)
