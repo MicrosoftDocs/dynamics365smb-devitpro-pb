@@ -60,6 +60,8 @@ The following table describes the settings in the ```launch.json``` file. The `l
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object. The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |schemaUpdateMode|No|Specifies the data synchronization mode when you publish an extension to the development server, for example: <br>`"schemaUpdateMode": "Synchronize Recreate"`</br> The default value is Synchronize. For more information, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  <br>[!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]  |
+|breakOnError | No |Specifies whether to break on errors when debugging. The default value is `true`. | 
+|breakOnRecordWrite | No |Specifies if the debugger breaks on record changes. The default value is `false`.| 
 
 ### Publish to cloud settings
 |Setting|Mandatory|Value|
