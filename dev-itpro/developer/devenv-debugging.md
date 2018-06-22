@@ -49,7 +49,7 @@ The basic concept in debugging is the *breakpoint*, which is a mark that you set
 |F10          |Step over|
 |F11          |Step into|
 |Shift+F11    |Step out|
-|F12          |Go to defination | 
+|F12          |Go To Definition| 
 
 For more shortcuts, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
 
