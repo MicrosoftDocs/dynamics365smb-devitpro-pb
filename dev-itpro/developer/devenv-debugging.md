@@ -27,7 +27,7 @@ This requires a server restart.
 
 There are a number of limitations to be aware of:
 
-- "External code" can only be debugged if the code has the `ShowMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md). 
+- "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md). 
 - Not all AL types yet show helpful debugging.
 - The debugger launches a new client instance each time you press F5. If you close the debugging session, and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.  
 - And finally, using the debugger with the online sandbox signup and AAD authentication method is not yet supported.
@@ -62,10 +62,10 @@ The Go To Definition feature navigates to the source of a type and opens the res
 ![F12](media/DebuggingAL.gif)
 
 ## Break on Errors
-You can specify if the debugger breaks on the next error by using the **breakOnError** property. If the debugger is set to break on errors, then it breaks execution both on errors that are handled in code and on unhandled errors. The default value of the **breakOnError** property is **true**, which means the debugger is set to break on errors by default. However, to skip error handling, you can set the **breakOnError** property to **false** in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).
+You can specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to break on errors, then it breaks execution both on errors that are handled in code and on unhandled errors. The default value of the `breakOnError` property is **true**, which means the debugger is set to break on errors by default. However, to skip error handling, you can set the `breakOnError` property to **false** in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).
 
 ## Break on Record changes
-You can specify if the debugger breaks on record changes by using the **breakOnRecordWrite** property. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the AL methods that cause each change.  
+You can specify if the debugger breaks on record changes by using the `breakOnRecordWrite` property. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the AL methods that cause each change.  
 
 |Record change|AL Methods|  
 |-------------------|---------------------|  
@@ -74,7 +74,7 @@ You can specify if the debugger breaks on record changes by using the **breakOnR
 |Delete an existing record|[DELETE Method \(Record\)](methods/devenv-delete-method-record.md), [DELETEALL Method \(Record\)](methods/devenv-deleteall-method-record.md)|  
 
 
-The default value of the **breakOnRecordWrite** property is **false**, which means the debugger is not set to break on record changes by default. To break on record changes, you can set the **breakOnRecordWrite** property to **true** in the `launch.json` file. 
+The default value of the `breakOnRecordWrite` property is **false**, which means the debugger is not set to break on record changes by default. To break on record changes, you can set the `breakOnRecordWrite` property to **true** in the `launch.json` file. 
 
 <!-- 
 To use the Go To Definition on local server, it requires that the AL symbols are rebuilt and downloaded from C/SIDE. The application symbols that were built with the previous version of C/SIDE would not make it possible to have Go To Definition work on base application methods. -->
