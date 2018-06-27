@@ -38,21 +38,21 @@ There are a number of limitations to be aware of:
 ## Breakpoints  
 The basic concept in debugging is the *breakpoint*, which is a mark that you set on a statement. When the program flow reaches the breakpoint, the debugger stops execution until you instruct it to continue. Without any breakpoints, the code runs without interruption when the debugger is active. You can set a breakpoint by using the Debug Menu in Visual Studio Code. For more information, see [Debugging Shortcuts](#debugging-shortcuts). 
  
-Set breakpoints on the external code that is not part of the project. You can step into the base application code by using the Go To Definition feature, and set breakpoints on the referenced code which is generally a `.dal` file. For example, you can set a breakpoint to break on error in the `Customer.dal` file from your AL project (see the video illustration below). 
+Set breakpoints on the external code that is not part of the project. You can step into the base application code by using the Go To Definition feature, and set breakpoints on the referenced code which is generally a `.dal` file. To set a breakpoint on the external code or base application code, you do the following: 
 
-To set a breakpoint on the external code or base application code, you do the following: 
-
-- Use the Go To Definition feature which opens the “external file” and then a breakpoint could be set.  
+- Use the Go To Definition feature which opens the “external file” and then set a breakpoint.  
 - Using the debugger, step into the code and set a breakpoint.
+
+In the following video illustration, the `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file from your AL project to break on the marked point. 
+
+![Debugger](media/DebuggingAL.gif)
 
 To learn more about the Go To Definition feature, see [AL Code Navigation](devenv-al-code-navigation.md). 
 
 ## Break on Errors
-Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to break on errors, then it breaks execution both on errors that are handled in code and on unhandled errors. See the following video illustration: 
+Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, then it stops execution both on errors that are handled in code and on unhandled errors. 
 
-![Debugger](media/DebuggingAL.gif)
-
-The default value of the `breakOnError` property is **true**, which means the debugger is set to break on errors by default. However, to skip error handling, you can set the `breakOnError` property to **false** in the `launch.json` file. 
+The default value of the `breakOnError` property is **true**, which means the debugger stops execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false** in the `launch.json` file. 
 
 > [!TIP]  
 > If the debugging session takes longer, you can refresh the session by pressing the Ctrl+Shift+P keys, and select the Reload Window.
