@@ -48,7 +48,7 @@ To set a breakpoint on the external code or base application code, you do the fo
 To learn more about the Go To Definition feature, see [AL Code Navigation](devenv-al-code-navigation.md). 
 
 ## Break on Errors
-You can specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to break on errors, then it breaks execution both on errors that are handled in code and on unhandled errors. See the following video illustration: 
+Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to break on errors, then it breaks execution both on errors that are handled in code and on unhandled errors. See the following video illustration: 
 
 ![Debugger](media/DebuggingAL.gif)
 
@@ -58,7 +58,7 @@ The default value of the `breakOnError` property is **true**, which means the de
 > If the debugging session takes longer, you can refresh the session by pressing the Ctrl+Shift+P keys, and select the Reload Window.
 
 ## Break on Record changes
-You can specify if the debugger breaks on record changes by using the `breakOnRecordWrite` property. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the AL methods that cause each change.  
+Specify if the debugger breaks on record changes by using the `breakOnRecordWrite` property. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the AL methods that cause each change.  
 
 |Record change|AL Methods|  
 |-------------------|---------------------|  
