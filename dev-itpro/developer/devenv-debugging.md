@@ -43,6 +43,9 @@ Set breakpoints on the external code that is not part of the project. You can st
 - Use the Go To Definition feature which opens the “external file” and then set a breakpoint.  
 - Using the debugger, step into the code and set a breakpoint.
 
+> [!NOTE]  
+> "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md).
+
 In the following video illustration, the `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file from your AL project to break on the marked point. 
 
 ![Debugger](media/DebuggingAL.gif)
