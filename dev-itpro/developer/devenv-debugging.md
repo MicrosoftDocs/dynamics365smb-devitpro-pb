@@ -36,24 +36,32 @@ There are a number of limitations to be aware of:
 > To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  
 
 ## Breakpoints  
-The basic concept in debugging is the *breakpoint*, which is a mark that you set on a statement. When the program flow reaches the breakpoint, the debugger stops execution until you instruct it to continue. Without any breakpoints, the code runs without interruption when the debugger is active. You can set a breakpoint by using the Debug Menu in Visual Studio Code. For more information, see [Debugging Shortcuts](#debugging-shortcuts).
+The basic concept in debugging is the *breakpoint*, which is a mark that you set on a statement. When the program flow reaches the breakpoint, the debugger stops execution until you instruct it to continue. Without any breakpoints, the code runs without interruption when the debugger is active. You can set a breakpoint by using the Debug Menu in Visual Studio Code. For more information, see [Debugging Shortcuts](#debugging-shortcuts). 
+ 
+Set breakpoints on the external code that is not part of the project. You can step into the base application code by using the Go To Definition feature, and set breakpoints on the referenced code which is generally a `.dal` file. To set a breakpoint on the external code or base application code, you do the following: 
 
-It is possible to set breakpoints on the base app code in AL project. You can jump to the base app code by using the Go To Definition feature and set breakpoints on the source code which is generally a `.dal` file. For example, you can set a breakpoint in the `Customer.dal` file (see the video illustration below). 
+- Use the Go To Definition feature which opens the “external file” and then set a breakpoint.  
+- Using the debugger, step into the code and set a breakpoint.
 
-For more information about the Go To Definition feature, see [AL Code Navigation](devenv-al-code-navigation.md). <!-- For example, in the following example, you set the breakpoint in the `Customer.dal` file. -->
+> [!NOTE]  
+> "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md).
 
-## Break on Errors
-You can specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to break on errors, then it breaks execution both on errors that are handled in code and on unhandled errors. See the following video illustration: 
+In the following video illustration, the `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file from your AL project to stop execution at the marked point. 
 
 ![Debugger](media/DebuggingAL.gif)
 
-The default value of the `breakOnError` property is **true**, which means the debugger is set to break on errors by default. However, to skip error handling, you can set the `breakOnError` property to **false** in the `launch.json` file. 
+For more information about the Go To Definition feature, see [AL Code Navigation](devenv-al-code-navigation.md). 
+
+## Break on Errors
+Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, then it stops execution both on errors that are handled in code and on unhandled errors. 
+
+The default value of the `breakOnError` property is **true**, which means the debugger stops execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false** in the `launch.json` file. 
 
 > [!TIP]  
 > If the debugging session takes longer, you can refresh the session by pressing the Ctrl+Shift+P keys, and select the Reload Window.
 
 ## Break on Record changes
-You can specify if the debugger breaks on record changes by using the `breakOnRecordWrite` property. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the AL methods that cause each change.  
+Specify if the debugger breaks on record changes by using the `breakOnRecordWrite` property. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the AL methods that cause each change.  
 
 |Record change|AL Methods|  
 |-------------------|---------------------|  
@@ -85,6 +93,4 @@ To use the Go To Definition on local server, it requires that the AL symbols are
 ## See Also  
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
-[AL Code Navigation](devenv-al-code-navigation.md)
-
-
+[AL Code Navigation](devenv-al-code-navigation.md)  
