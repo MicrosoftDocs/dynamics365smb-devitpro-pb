@@ -33,6 +33,9 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |France|fr-FR|
 |Italy|it-IT|
 |Sweden|sv-SE|
+|Australia|en-AU|
+|New Zealand|en-NZ|
+
 
 ## See Also
 [Rules and Guidelines for AL Code](apptest-overview.md)  
