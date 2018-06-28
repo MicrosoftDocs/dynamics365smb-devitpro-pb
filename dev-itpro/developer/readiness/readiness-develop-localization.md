@@ -42,7 +42,7 @@ In a country in which Microsoft has not built a localization, you will get acces
  * Partner Localization App(s) availability in AppSource
 
 All above points need to be in place to declare [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country. 
-Availability of new countries follows a quarterly cadence. For example countries requested and planned for in current quarter, will be made available if all above conditions are met, in next quarter.
+New countries will be available in quarterly cadences subject to the above mentioned lead time.
 
 ## Monetization
 As a partner developing a localization app, you are free to decide how monetization of your apps should work. Localization apps are considered like any other apps and the market is open any partner and apps in a given country. It is up to you to build a monetization mechanism for your app - as well as mechanisms to control who uses your app. Please see this [whitepaper](https://mbspartner.microsoft.com/secure/coursematerials/D365/Standalone/Dynamics_365_Business_Central_App_Monetization_Demo_Guide.pdf) on app monetization to learn more.
