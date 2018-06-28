@@ -26,13 +26,13 @@ If there are no subscribers to the published event, then the line of code that c
 Typing the shortcut ```teventsub``` will create the basic event subscriber syntax when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
 
 > [!TIP]  
-> Typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
+> Typing the keyboard shortcut `Ctrl + space` displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
 
-## <a name="RaisingEventEx">Example</a> 
+## Example
 This example uses a page extension object **70000002 MyCustomerExt** to modify the page **21 Customer Card** so that an event is raised when a user changes the **Address** field. This example assumes that the event has already been published by the event publisher method `OnAddressLineChanged` in a separate codeunit called **70000001 MyPublishers**.
 
->[!NOTE]
->This example is part of a larger, simple scenario where when users change the address of a customer on the page **21 Customer Card**, you want to check that the address does not include a plus sign (+). If it does, you want to display a message. To accomplish this, you will publish an event that is raised when the **Address** field on **Customer Card** is changed, and add an event subscriber method to that includes logic that checks the address value and returns a message to the user if it contains a plus sign.
+> [!NOTE]  
+> This example is part of a larger, simple scenario where when users change the address of a customer on the page **21 Customer Card**, you want to check that the address does not include a plus sign (+). If it does, you want to display a message. To accomplish this, you will publish an event that is raised when the **Address** field on **Customer Card** is changed, and add an event subscriber method to that includes logic that checks the address value and returns a message to the user if it contains a plus sign.
 
 In the code that follows, the page extension object modifies the `OnBeforeValidate` trigger of the **Customer Card** page to raise the event `OnAddressLineChanged` which includes the new value of the **Address** field.
 
@@ -54,11 +54,11 @@ pageextension 70000002 MyCustomerExt extends "Customer Card"
 }
 ```
 
-To learn about how the event used in this example is published, see [Publishing Events Example](devenv-publishing-events.md#PubEx). 
+To learn about how the event used in this example is published, see [Publishing Events Example](devenv-publishing-events.md#example). 
 
-The next step would be to subscribe to the event to handle to condition.  To see an example of how to subscribe to this event, see [Subscribing to Events Example](devenv-subscribing-to-events.md#SubEventEx).  
+The next step would be to subscribe to the event to handle to condition. To see an example of how to subscribe to this event, see [Subscribing to Events Example](devenv-subscribing-to-events.md#example-1).  
 
 ## See Also  
- [Publishing Events](devenv-Publishing-Events.md)   
- [Subscribing to Events](devenv-Subscribing-to-Events.md)   
+ [Publishing Events](devenv-publishing-events.md)   
+ [Subscribing to Events](devenv-subscribing-to-events.md)   
  [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   

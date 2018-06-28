@@ -15,7 +15,7 @@ manager: edupont
 This walkthrough uses a simple example scenario to demonstrate how to program events in the application.  
   
 ## About This Walkthrough  
- The walkthrough illustrates to the following tasks:  
+ The walkthrough illustrates the following tasks:  
   
 -   Creating an event publisher function to publish an event.  
   
@@ -144,7 +144,7 @@ This walkthrough uses a simple example scenario to demonstrate how to program ev
  The event can now be subscribed to and handled.  
   
 ## Subscribing to and Handling an Event  
- Once an event has been published you can add code to the application that subscribes to and handles the event when it is raised. For example, in this walkthrough, when a user changes the address of a customer \(the event\), you want code that checks that the value does not contain a plus sign. Subscribing to and handling an event is accomplished by creating a C/AL function that is set up as an event subscriber and subscribes to a specific event \(defined by an event publisher function\). The event subscription function contains the application logic for handling the raised event. For this walkthrough, you will create an event subscriber function that subscribes to the **OnAddressLineChanged** function in codeunit **50001 My Publishers**.  
+ Once an event has been published you can add code to the application that subscribes to and handles the event when it is raised. For example, in this walkthrough, when a user changes the address of a customer \(the event\), you want code that checks that the value does not contain a plus sign. Subscribing to and handling an event is accomplished by creating a C/AL function that is set up as an event subscriber and subscribes to a specific event \(defined by an event publisher function\). The event subscription function contains the application logic for handling the raised event. For this walkthrough, you will create an event subscriber function that subscribes to the **OnAddressLineChanged** function in codeunit **50000 My Publishers**.  
   
  Unlike an event publisher function, an event subscriber function can only reside in a codeunit object. This procedure will add the event subscriber function to a new codeunit, in which you can potentially add more event subscriber functions for other events later.  
   
@@ -187,7 +187,7 @@ This walkthrough uses a simple example scenario to demonstrate how to program ev
   
      The new function appears in the **C/AL Editor** with the following signature:  
   
-     `LOCAL [EventSubscriber] CheckAddressLine(line : Text[100])`  
+     `[EventSubscriber] CheckAddressLine(line : Text[100])`  
   
      You can now add code to handle the event.  
   

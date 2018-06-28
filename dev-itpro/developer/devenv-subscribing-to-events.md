@@ -2,7 +2,7 @@
 title: "Subscribing to Events"
 description: This topic describes how to design event subscribers in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 05/23/2018
+ms.date: 06/25/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Subscribing to Events
-To handle events, you design event subscribers. Event subscribers determine what actions to take in response to an event that has been raised. An event subscriber is a AL method that subscribes to, or listens for, a specific event that is declared by an event publisher method. The event subscriber includes code that defines the business logic to handle the event. When the published event is raised, the event subscriber is called and its code is run.  
+To handle events, you design event subscribers. Event subscribers determine what actions to take in response to an event that has been raised. An event subscriber is an AL method that subscribes to, or listens for, a specific event that is declared by an event publisher method. The event subscriber includes code that defines the business logic to handle the event. When the published event is raised, the event subscriber is called and its code is run.  
 
 Subscribing to an event tells the runtime that the subscriber method must be called whenever the publisher method is run, either by code (as with business and integration events) or by the system (as with trigger events). The runtime establishes the link between an event raised by the publisher and its subscribers by looking for event subscriber methods.  
 
@@ -34,7 +34,7 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
 
 2.  Set the **EventSubscriberInstance** property of the codeunit to specify how event subscriber methods in the codeunit are bound to codeunit instance. For more information, see [EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md).  
 
-3.  Add a AL method to the codeunit.  
+3.  Add an AL method to the codeunit.  
 
      We recommend that you give the method a name that indicates what the subscriber does, and has the format *[Action][Event]*. *[Action]* is text that describes what the method does and *[Event]* is the name of the event publisher method to which it subscribes. <!-- For more information about naming, see [Best Practices with Events](devenv-events-best-practices.md).  -->
 
@@ -43,17 +43,17 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
     ```  
     [EventSubscriber(ObjectType::ObjectType, ObjectId, 'OnSomeEvent', 'ElementName', SkipOnMissingLicense, SkipOnMissingPermission)]
     ```    
-    >[!TIP]  
-    > Use the `teventsub` snippet to get started and typing the keyboard shortcuts `Ctrl + space` displays IntelliSense to help you fill the attribute arguments and to discover which events are available to use.    
+    > [!TIP]  
+    > Use the `teventsub` snippet to get started and typing the keyboard shortcut `Ctrl + space` displays IntelliSense to help you fill the attribute arguments and to discover which events are available to use.    
 
 5.  Add code to the method for handling the event.  
 
 
-## <a name="SubEventEx">Example 1</a>
+## Example 1
 This example creates the codeunit **7000002 MySubscriber** to subscribe to an event that has been published by the event publisher method called `OnAddressLineChanged` in the codeunit **70000001 MyPublishers**. The event is raised by a change to the **Address** field on page **21 Customer Card**. This example assumes the following:
 
--   The codeunit **70000001 MyPublishers** with the event publisher method `OnAddressLineChanged` already exists. To see how to do this, see [Publishing Event Example](devenv-publishing-events.md#PubEx).
--   The code for raising the `OnAddressLineChanged` event has been added to the **Customer Card** page. To see how to do this, see [Raising Event Example](devenv-raising-events.md#RaisingEventEx).
+-   The codeunit **70000001 MyPublishers** with the event publisher method `OnAddressLineChanged` already exists. To see how to do this, see [Publishing Event Example](devenv-publishing-events.md#example).
+-   The code for raising the `OnAddressLineChanged` event has been added to the **Customer Card** page. To see how to do this, see [Raising Event Example](devenv-raising-events.md#example).
 
 The following code creates a codeunit called **70000002 MySubscriber** that includes an event subscriber method, called `CheckAddressLine`. The method includes code for handling the published event.
 
@@ -93,7 +93,7 @@ codeunit 70000002 MySubscriber
 ```
 
 ## See Also  
- [Publishing Events](devenv-Publishing-Events.md)   
- [Raising Events](devenv-Raising-Events.md)   
+ [Publishing Events](devenv-publishing-events.md)   
+ [Raising Events](devenv-raising-events.md)   
  [Event Types](devenv-event-types.md)   
  [Events in AL](devenv-events-in-al.md)
