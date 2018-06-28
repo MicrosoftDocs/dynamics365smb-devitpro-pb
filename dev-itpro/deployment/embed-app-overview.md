@@ -11,7 +11,6 @@ author: jswymer
 ---
 # What is an Embed App?  
  
-An  
 [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] is a term that defines an end-to-end solution meeting the specific needs of a vertical or micro-vertical industry.  
  
 [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] plays a vital role in the Embed App, as Dynamics 365 Business Central is embedded as an integral part of the overall solution.   
