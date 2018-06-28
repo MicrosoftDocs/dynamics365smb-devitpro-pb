@@ -3,7 +3,7 @@ title: "Development of a Localization Solution"
 description: "Comply with regulatory requirements in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/16/2018
+ms.date: 06/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,30 +26,34 @@ If you are planning to build localization apps, you should pay attention to the 
 Localization apps contain a set of functionalities addressing local requirements that fall within one of the categories below. Make sure to split up your localization apps at minimum according to these categories:  
 
  * **Regulatory requirements** - local functionality that helps businesses fulfill their legal requirements, such as tax reporting, local GAAP, and other regulatory requirements. 
- * **National standards requirement** – local functionality that address local standards, such as banking and payment formats, address formats, or local interpretations of global standards. 
+ * **National standards requirement** – local functionality that addresses local standards, such as banking and payment formats, address formats, or local interpretations of global standards. 
  * **Market requirements**   - nice-to-have, competitive requirements – local functionality beneficial to the productivity business processes in a country and thereby adding value to business but are not required from a regulatory perspective. 
 
 ## Documentation and adoption 
 Good and consistent tooltips and documentation will help users adopt your features fast and alleviate most of your support burden. 
 
-An important part of your localization app will be setup data for the production company that will help users get up and running quickly and with minimum effort. 
+An important part of your localization app will be setup data for the production company that will help users get up and running quickly and with minimum effort.
 
-## Service availability in countries
-If you request [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] availability in a country in which Microsoft has not built a localization, you will get access to the international (W1) version of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of this version is by demand, so by requesting access as the first partner in a country there will be a lead time of minimum 3 months for Microsoft to: 
+## Service availability in additional countries
+In countries, where Microsoft has not delivered a localization, you can apply for access to build a localization on top of the international (W1) version of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] for the specific country, after submission of localization app(s) for validation, may come with lead time of up to 3 months as it requires following:
+ * A business case and an agreement with local/regional Microsoft contacts to align on business and marketing activities related to making [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country
+ * Commercial availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers in CSP pricelist for the country
+ * Azure data centre operations capacity/availability and [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] platform translation to language(s) for the country
+ * Partner localization app(s) availability in AppSource
+ * Translated Help available from your own website, accessible from [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] in your country
 
- * Make [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers available on the CSP pricelist for the country. 
- * Ensure datacenter operations. 
- * Build platform translation for language(s) for the desired country.
+All above points need to be in place to declare [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country. 
+New countries will be available in quarterly cadences subject to the above mentioned lead time.
 
 ## Monetization
-As a partner developing a localization app, you are free to decide how monetization of your apps should work. Localization apps are considered like any other apps and the market is open any partner and apps in a given country. It is up to you to build a monetization mechanism for your app - as well as mechanisms to control who uses your app. Please see this [whitepaper](https://mbspartner.microsoft.com/secure/coursematerials/D365/Standalone/Dynamics_365_Business_Central_App_Monetization_Demo_Guide.pdf) on app monetization to learn more.
+As a partner developing a localization app, you are free to decide how monetization of your apps should work. Localization apps are considered like any other apps and the market is open any partner and apps in a given country. It is up to you to build a monetization mechanism for your app - as well as mechanisms to control who uses your app. Please see [this whitepaper](https://mbspartner.microsoft.com/secure/coursematerials/D365/Standalone/Dynamics_365_Business_Central_App_Monetization_Demo_Guide.pdf) on app monetization to learn more.
 
 ## Submitting your localization app idea to AppSource 
 Apart from the regular app details you fill out when [submitting your app idea](https://go.microsoft.com/fwlink/?linkid=869733) there are a few things to emphasize in the app idea submission process for localization apps. Remember to be explicit about: 
- * Country/countries of usage. 
- * Language(s) included in app. 
- * Describe and categorize each local regulatory functionality included in your localization app. 
- * (Optionally) Mark features to be considered part of global version. 
+ * Country/countries of usage 
+ * Language(s) included in the app  
+ * Describe and categorize each local regulatory feature included in your localization app 
+ * (Optionally) Mark features to be considered part of the global version 
 
 ## Product scope for localization apps
 Apart from [fulfilling the technical checklist for your app](../devenv-checklist-submission.md), the minimum viable product scope for localization app is: 
@@ -66,7 +70,7 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
  * It is recommended to logically break down the full local functionality set, at a minimum within the above categories. This approach provides optimal flexibility for customers to choose what they really need in terms of local functionality while making sure critical pieces of local functionality do not break upgrade processes nor are upgrade heavy. 
  * The majority of customers in the local market will need most of the local regulatory features. In the category of local regulatory features there will be some features that, even though they are legally required, apply to companies of a certain size, revenue threshold etc. Such situations are opportunities to further logically break down localization apps into smaller focused-functionality sets. 
  * Consider separating localization functionality by the frequency of changes to smaller localization apps. If, for example, your local feature contains one part that is stable and one part that is frequently changed based on regulation changes, make sure to keep the stable part as one app and the changing part a separate localization app. This approach ensures better test coverage, faster response to changes and fewer upgrade issues. 
- * Use worldwide frameworks available in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (W1) when building features for, for example, VAT Reports, banking formats, Data Exchange, and others where the majority of functionality is common to all countries but there are some local rules or business formats that are extensions of global frameworks or formats. Make sure to familiarize yourself with such frameworks to reduce effort, reuse code, and properly utilize extensibility points and integration events. If you notice opportunities for improvements in such frameworks or [missing extensibility points](https://github.com/Microsoft/AL/issues), make sure to [contact us](mailto:d365bcloc@microsoft.com) to work together in improving this. 
+ * Use worldwide frameworks available in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (W1) when building features for, such as VAT reports, banking formats, data exchange, and others where the majority of functionality is common to all countries but there are some local rules or business formats that are extensions of global frameworks or formats. Make sure to familiarize yourself with such frameworks to reduce effort, reuse code, and properly utilize extensibility points and integration events. If you notice opportunities for improvements in such frameworks or [missing extensibility points](https://github.com/Microsoft/AL/issues), make sure to [contact us](mailto:d365bcloc@microsoft.com) to work together in improving this. 
  * Prepare a setup data RapidStart package for the production company and translate to local language(s). 
  * Consider preparing a local demo data RapidStart package for the evaluation company and translate it to local language(s). 
  * Prepare setup guides (wizards) for areas that are complex to set up to help users enable, discover and have a good first experience using your localization app. 
