@@ -38,15 +38,15 @@ There are a number of limitations to be aware of:
 ## Breakpoints  
 The basic concept in debugging is the *breakpoint*, which is a mark that you set on a statement. When the program flow reaches the breakpoint, the debugger stops execution until you instruct it to continue. Without any breakpoints, the code runs without interruption when the debugger is active. You can set a breakpoint by using the Debug Menu in Visual Studio Code. For more information, see [Debugging Shortcuts](#debugging-shortcuts). 
  
-Set breakpoints on the external code that is not part of the project. You can step into the base application code by using the Go To Definition feature, and set breakpoints on the referenced code which is generally a `.dal` file. To set a breakpoint on the external code or base application code, you do the following: 
+Set breakpoints on the external code that is not part of your original project. You can step into the base application code by using the Go To Definition feature, and set breakpoints on the referenced code which is generally a `.dal` file. To set a breakpoint on the external code or base application code, you do the following: 
 
-- Use the Go To Definition feature which opens the “external file” and then set a breakpoint.  
+- Use the Go To Definition feature which opens the “external file” and then a breakpoint could be set.  
 - Using the debugger, step into the code and set a breakpoint.
 
 > [!NOTE]  
 > "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md).
 
-In the following video illustration, the `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file from your AL project to stop execution at the marked point. 
+In the following video illustration, the `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file which is referenced from your AL project to stop execution at the marked point. 
 
 ![Debugger](media/DebuggingAL.gif)
 
