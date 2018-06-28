@@ -17,7 +17,7 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are display
   
 The actions can be displayed in different tabs on the action ribbon. 
 
-You can choose from the following action areas to place the actions:
+You can choose from the following action areas to place the actions in the specified area.
   
 |Area |Syntax| Used on|Description|Example|  
 |---------------|--|-------|-----------|-------|  
@@ -27,7 +27,7 @@ You can choose from the following action areas to place the actions:
 |Report menu|``area(reporting)`` |Role Center, list, card, and task pages|A list of available reports.|Customer Top 10 List| 
   
 
-### Actions related to role center page
+The following Actions are related to the Role Center page.
 
 |Area |Syntax |Used on |Description |Example |  
 |-----|----------------|-------|-----------|-------| 
@@ -46,7 +46,7 @@ Pages can have the following actions as described in each section below.
   
 ## Actions menu
 Actions menu is a tab displayed in the ribbon on all page types, and contains relevant tasks for the current page. Typically, you add processing tasks and creation tasks in the Actions menu. To add processing actions such as posting a sale order, you must use the ``processing`` action area. They are regular daily tasks. Therefore, they must be on the Actions menu. 
-<!-- For examples on how to add actions to the Actions menu, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md). -->
+For examples on how to add actions to the Actions menu, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md). 
 
 Some examples from the Customer page are as follows:
   
