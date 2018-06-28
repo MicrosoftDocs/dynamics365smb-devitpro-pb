@@ -32,14 +32,17 @@ Localization apps contain a set of functionalities addressing local requirements
 ## Documentation and adoption 
 Good and consistent tooltips and documentation will help users adopt your features fast and alleviate most of your support burden. 
 
-An important part of your localization app will be setup data for the production company that will help users get up and running quickly and with minimum effort. 
+An important part of your localization app will be setup data for the production company that will help users get up and running quickly and with minimum effort.
 
 ## Service availability in countries
-If you request [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] availability in a country in which Microsoft has not built a localization, you will get access to the international (W1) version of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of this version is by demand, so by requesting access as the first partner in a country there will be a lead time of minimum 3 months for Microsoft to: 
+In a country in which Microsoft has not built a localization, you will get access to build a localization on top of the international (W1) version of[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] for specific country, after submission of localization app(s) for validation, may come with lead time of up to 3 months as it requires following:
+ * Business case and agreement with local/regional Microsoft contacts to align on business and marketing activities related to making [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country.
+ * Commercial availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers in CSP pricelist for the country.
+ * Azure data centre operations capacity/availability and [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] platform translation to language(s) for the country.
+ * Partner Localization App(s) availability in AppSource
 
- * Make [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers available on the CSP pricelist for the country. 
- * Ensure datacenter operations. 
- * Build platform translation for language(s) for the desired country.
+All above points need to be in place to declare [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country. 
+Availability of new countries follows a quarterly cadence. For example countries requested and planned for in current quarter, will be made available if all above conditions are met, in next quarter.
 
 ## Monetization
 As a partner developing a localization app, you are free to decide how monetization of your apps should work. Localization apps are considered like any other apps and the market is open any partner and apps in a given country. It is up to you to build a monetization mechanism for your app - as well as mechanisms to control who uses your app. Please see this [whitepaper](https://mbspartner.microsoft.com/secure/coursematerials/D365/Standalone/Dynamics_365_Business_Central_App_Monetization_Demo_Guide.pdf) on app monetization to learn more.
