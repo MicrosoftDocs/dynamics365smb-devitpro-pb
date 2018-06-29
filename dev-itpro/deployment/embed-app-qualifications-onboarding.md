@@ -24,7 +24,7 @@ When an [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_
     -   Client:  https://fabrikamapples.bc.dynamics.com 
     -   Web Services:  https://fabrikamapples.api.bc.dynamics.com  
 -   Entitlements for their ISV objects, per license type. See the Licensing section for more detail.  
-The rest of the information will be included with the [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] package that the partner deploys through LCS
+The rest of the information will be included with the [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] package that the partner deploys through LCS.
 
  
 ## See Also  

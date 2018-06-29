@@ -36,5 +36,5 @@ In the upcoming updates, we will keep introducing more features and services for
  
 ## See Also  
 [What is an Embed App](embed-app-overview.md)  
- [Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)  
+[Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)  
 

@@ -25,5 +25,8 @@ An [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_centr
  ![Embed App overview](../media/embed_app_overview.png "Embed App overview")  
 
 ## See Also  
- [Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)   
+[Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)   
+[Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
+[Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
+[Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md)  
 
