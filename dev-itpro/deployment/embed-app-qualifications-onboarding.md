@@ -1,5 +1,5 @@
 ---
-title: "[!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] Qualification and Onboarding of ISV partners"
+title: "Embed App Qualification and Onboarding of ISV partners"
 ms.custom: na
 ms.date: 28/01/2018
 ms.reviewer: na
