@@ -13,7 +13,7 @@ author: jswymer
  
 [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] is a term that defines an end-to-end solution meeting the specific needs of a vertical or micro-vertical industry.  
  
-[!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] plays a vital role in the Embed App, as [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] is embedded as an integral part of the overall solution.   
+[!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] plays a vital role in the Embed App, as [!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] is embedded as an integral part of the overall solution.   
  
 Some examples of an [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] include:  
 -   A Dentist solution  
@@ -29,9 +29,9 @@ An [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_centr
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
 [Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md)  
-[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Component](embed-app-components.md)   
-[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Platform](embed-app-platform.md)  
-[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Licensing](embed-app-licensing.md)  
+[[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Component](embed-app-components.md)   
+[[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Platform](embed-app-platform.md)  
+[[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Licensing](embed-app-licensing.md)  
 [Customer Signup](embed-app-customer-signup.md)  
 [Appsource](embed-app-appsource.md)  
 [Sandbox](embed-app-sandbox.md)  

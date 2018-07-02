@@ -10,7 +10,7 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Customer Signup to [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)]
-A customer can sign up for any number of [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)]s and for [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] application using the same Org ID. These apps will run side-by-side with each other, will use different URLs and will be displayed as separate tiles on the home.dynamics.com portal. 
+A customer can sign up for any number of [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)]s and for [!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] application using the same Org ID. These apps will run side-by-side with each other, will use different URLs and will be displayed as separate tiles on the home.dynamics.com portal. 
 There are two ways for a customer (tenant, organization) to subscribe to an [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)]: 
 -   Using the self-service IW signup – for acquiring a free evaluation version of the app.  
 -   Through the Microsoft Partner Center Cloud Solution Provider (CSP) program by contacting the partner - for acquiring a paid production version of the [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)].
@@ -35,7 +35,7 @@ To work with an [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d
 -   Client: `https://[application name].bc.dynamics.com` 
 -   Web Services: `https://[application name].api.bc.dynamics.com` 
 
-To work with [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)], they would use these URLs:
+To work with [!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)], they would use these URLs:
 
 -   Client: `https://businesscentral.dynamics.com` 
 -   Web Services: `https://api.businesscentral.dynamics.com`  
@@ -60,7 +60,7 @@ Example (not actual prices):
 |CSP |Essential|25|
 |CSP |Fabrikam Apples (Essential)|50| 
  
-### Option 3: [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] license + [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] self-monetization  
+### Option 3: [!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] license + [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] self-monetization  
 Example (not actual prices): 
 
 |     |Partner-to-Customer price|Price|
@@ -69,7 +69,7 @@ Example (not actual prices):
 |External (e.g. www.stripe.com) |Fabrikam Apples (Essential) |50|  
 
  
-In all three options, the ISV partner will be selling [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] licenses in CSP.  
+In all three options, the ISV partner will be selling [!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] licenses in CSP.  
 
  
 ## See Also  
@@ -78,9 +78,9 @@ In all three options, the ISV partner will be selling [!INCLUDE[d365_bus_cent_sh
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
 [Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md)  
-[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Component](embed-app-components.md)   
-[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Platform](embed-app-platform.md)  
-[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Licensing](embed-app-licensing.md)  
+[[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Component](embed-app-components.md)   
+[[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Platform](embed-app-platform.md)  
+[[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Licensing](embed-app-licensing.md)  
 [Appsource](embed-app-appsource.md)  
 [Sandbox](embed-app-sandbox.md)  
 [Ecosystem Features](embed-app-ecosystem.md) 
