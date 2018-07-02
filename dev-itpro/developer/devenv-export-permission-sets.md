@@ -15,6 +15,7 @@ ms.author: solsen
 ---
 
 # Exporting Permission Sets
+Permission sets that exist in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can be exported and packaged for your extension directly from the client, instead of defining XML by hand. 
 
 ## To export permission sets
 1. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], search for **Permission Sets**, and then choose the relevant link.
