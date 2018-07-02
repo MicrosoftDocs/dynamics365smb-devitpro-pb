@@ -91,7 +91,6 @@ Microsoft recommends all ISV’s to move towards a model where the code-customiz
 [[!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] Overview](embed-app-overview.md) 
 [Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)   
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
-[Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
 [Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md) 
 [[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Platform](embed-app-platform.md)  
 [[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Licensing](embed-app-licensing.md)  
@@ -99,9 +98,3 @@ Microsoft recommends all ISV’s to move towards a model where the code-customiz
 [Appsource](embed-app-appsource.md)  
 [Sandbox](embed-app-sandbox.md)  
 [Ecosystem Features](embed-app-ecosystem.md)  
-
-
-
-[Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)  
-[Qualifications and OnBoarding](embed-app-qualifiactions-onboarding.md)  
-
