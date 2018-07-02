@@ -32,5 +32,8 @@ This is the RSP range which partners that have an ISV solution for on-premise ha
 ## 70.000.000-74.999.999
 Partners can obtain ranges for extension development that runs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] in the cloud. This range is only available for extension development and only in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. These extensions are obtained as apps from [appsource.microsoft.com](http://appsource.microsoft.com).
 
+For more information, please see the [Ready To Go](https://aka.ms/readytogo) program.
+
 ## See Also
-[]()  
+[Ready To Go](https://aka.ms/readytogo)  
+
