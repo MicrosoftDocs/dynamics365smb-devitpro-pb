@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-# [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] Platform 
+# [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] Platform 
 When deploying an [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] to the [!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] service, the partner must ensure that it is compatible with a supported version of [!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] platform. 
 ## Minor updates
 Microsoft will ship minor platform updates monthly and major platform updates every six months. 
