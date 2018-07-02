@@ -79,7 +79,7 @@ page 123 PageName
     }
 
     var
-        TempCustomer: temporary Record Customer;
+        TempCustomer: Record Customer temporary;
 
     [EventSubscriber(ObjectType::Page, Page::"Item Card", 'OnAfterGetCurrRecordEvent', '', false, false)]
     local procedure OnOpenItemCard(var rec: Record Item)
