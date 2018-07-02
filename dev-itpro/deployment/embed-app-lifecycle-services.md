@@ -35,6 +35,16 @@ They can also observe service health metrics, the load on the service (user acti
 In the upcoming updates, we will keep introducing more features and services for the partner to manage their environment efficiently, as well as functionality for VARs who help ISVs manage their tenants.  
  
 ## See Also  
-[What is an Embed App](embed-app-overview.md)  
-[Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)  
+[[!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] Overview](embed-app-overview.md)   
+[Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)   
+[Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
+[Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
+[Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md)  
+[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Component](embed-app-components.md)   
+[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Platform](embed-app-platform.md)  
+[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Licensing](embed-app-licensing.md)  
+[Customer Signup](embed-app-customer-signup.md)  
+[Appsource](embed-app-appsource.md)  
+[Sandbox](embed-app-sandbox.md)  
+[Ecosystem Features](embed-app-ecosystem.md)  
 

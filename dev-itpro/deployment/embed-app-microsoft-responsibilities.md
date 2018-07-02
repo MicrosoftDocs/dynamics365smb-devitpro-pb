@@ -25,5 +25,14 @@ Microsoft responsibilities in the [!INCLUDE[d365_bus_central_md](../developer/in
 |Lifecyle Services portal|<ul><li>Development, deployment, and support of the portal functionality</li><li>High availability and disaster recovery</li><li>Monitoring, updating and patching</li><li>First line support for ISVs</li></ul>|  
  
 ## See Also  
-[What is an Embed App](embed-app-overview.md)    
-
+[[!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] Overview](embed-app-overview.md)   
+[Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
+[Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
+[Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md)  
+[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Component](embed-app-components.md)   
+[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Platform](embed-app-platform.md)  
+[[!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] Licensing](embed-app-licensing.md)  
+[Customer Signup](embed-app-customer-signup.md)  
+[Appsource](embed-app-appsource.md)  
+[Sandbox](embed-app-sandbox.md)  
+[Ecosystem Features](embed-app-ecosystem.md)  
