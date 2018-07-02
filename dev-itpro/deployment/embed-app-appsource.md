@@ -1,5 +1,5 @@
 ---
-title: "AppSource for [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)]"
+title: "AppSource for Embed App"
 ms.custom: na
 ms.date: 28/01/2018
 ms.reviewer: na

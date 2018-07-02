@@ -1,5 +1,5 @@
 ---
-title: "[!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] components"
+title: "Embed App Components"
 ms.custom: na
 ms.date: 28/01/2018
 ms.reviewer: na

@@ -1,5 +1,5 @@
 ---
-title: "[!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] Licensing"
+title: "Embed App Customer Sign-up"
 ms.custom: na
 ms.date: 28/01/2018
 ms.reviewer: na
@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-# Customer Signup to [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)]
+# [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)]Customer Signup 
 A customer can sign up for any number of [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)]s and for [!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] application using the same Org ID. These apps will run side-by-side with each other, will use different URLs and will be displayed as separate tiles on the home.dynamics.com portal. 
 There are two ways for a customer (tenant, organization) to subscribe to an [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)]: 
 -   Using the self-service IW signup – for acquiring a free evaluation version of the app.  

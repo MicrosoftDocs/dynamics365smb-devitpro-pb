@@ -1,5 +1,5 @@
 ---
-title: "[!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] Platform"
+title: "Dynamics 365 Business Central Platform"
 ms.custom: na
 ms.date: 28/01/2018
 ms.reviewer: na
