@@ -11,8 +11,6 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 
-
-
 # Using Delta Links With APIs
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
@@ -68,7 +66,7 @@ The response would return with the specified changes in the result, see the foll
 }
 ```
 
-#### Delta support limitations
+## Delta support limitations
 
 + The delta links apply to all entity APIs that include a persistent identifier, which is `"id"`, and the deltaLink will not apply to APIs that do not have the ID property. For example, the report APIs like balanceSheet.
 + If a deltaLink is no longer valid, the service will respond with `410 Gone`. The response should include a location header so that the client can use that to retrieve a new baseline set of results.
