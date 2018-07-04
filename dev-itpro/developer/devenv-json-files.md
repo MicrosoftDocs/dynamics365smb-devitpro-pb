@@ -60,6 +60,8 @@ The following table describes the settings in the ```launch.json``` file. The `l
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object. The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |schemaUpdateMode|No|Specifies the data synchronization mode when you publish an extension to the development server, for example: <br>`"schemaUpdateMode": "Synchronize Recreate"`</br> The default value is Synchronize. For more information, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  <br>[!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]  |
+|breakOnError | No |Specifies whether to break on errors when debugging. The default value is `true`. | 
+|breakOnRecordWrite | No |Specifies if the debugger breaks on record changes. The default value is `false`.| 
 
 ### Publish to cloud settings
 |Setting|Mandatory|Value|
@@ -75,4 +77,6 @@ The following table describes the settings in the ```launch.json``` file. The `l
 The platform symbol file contains all of the base app objects that your extension builds on. If the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code detects that the referenced symbols are not present on local disk, you will get a visual prompt in Visual Studio Code to download the symbols from one of the servers specified in the launch.json file. For more information about the platform symbol file, see [Symbols](devenv-symbols.md).
 
 ## See Also 
-[AL Development Environment](devenv-reference-overview.md)
+[AL Development Environment](devenv-reference-overview.md)  
+[Debugging in AL](devenv-debugging.md)  
+[Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md)

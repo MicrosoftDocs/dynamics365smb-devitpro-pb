@@ -1,7 +1,7 @@
 ---
 title: "ShowCaption Property"
 ms.custom: na
-ms.date: 06/16/2017
+ms.date: 06/26/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,13 +14,14 @@ caps.latest.revision: 6
  
 
 # ShowCaption Property
-Sets whether the text that is specified by the [CaptionML Property](devenv-captionml-property.md) is displayed for the control.  
+Sets whether the text that is specified by the [Caption Property](devenv-caption-property.md) is displayed for the control.  
 
 ## Applies To  
  Field controls on pages  
+ Group controls on pages
 
 ## Property Value  
  **True** if the caption is displayed; otherwise, **false**. The default is **true**.  
 
 ## See Also  
- [CaptionML Property](devenv-captionml-property.md)
+ [Caption Property](devenv-caption-property.md)

@@ -1,4 +1,5 @@
 # [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
+## [Frequently asked questions](faq.md)
 <!--
 ## [Getting Started](Getting-Started.md)
 ## [Touring the RoleTailored Client for Developers](Touring-the-RoleTailored-Client-for-Developers.md)
@@ -158,6 +159,7 @@
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
 ### [The AL Formatter](developer/devenv-al-formatter.md)
+### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ## [Object Ranges](developer/devenv-object-ranges.md)
 ## [JSON Files](developer/devenv-json-files.md)
@@ -198,7 +200,7 @@
 ### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
-#### [Headlines](developer/devenv-create-role-center-headline.md) 
+#### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Adding Pages and Reports to Search](developer/devenv-al-menusuite-functionality.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
