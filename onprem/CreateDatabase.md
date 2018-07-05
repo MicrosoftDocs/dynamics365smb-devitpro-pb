@@ -16,7 +16,7 @@ Creates a new database for [!INCLUDE[navnow](includes/navnow_md.md)] on an SQL s
 ## Syntax  
   
 ```  
-finsql.exe command=createdatabase, [servername=<server>,] [database=<database>,] [collationname=<collation>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
+finsql.exe command=createdatabase, [servername=<server>,] [database=<database>,] [collation=<collation>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
 ```  
   
 #### Parameters  
@@ -34,7 +34,7 @@ finsql.exe command=createdatabase, [servername=<server>,] [database=<database>,]
 > [!TIP]  
 >  To view the name of the current database, on the **File** menu, choose **Database**, and then choose **Information**. Use the value of the **Database Name** field for the *database* parameter.  
   
- *collationname*  
+ *collation*  
   
  The collation to use when you create a new database. The value must be one of the following:  
   
@@ -83,7 +83,7 @@ finsql.exe command=createdatabase, [servername=<server>,] [database=<database>,]
  This example creates a database on a SQL server that is named TestComputer01\\NAVDEMO. The new database is given the name NAV Danish Database and uses the collation da-DK.  
   
 ```  
-finsql.exe command=createdatabase, servername=TestComputer01\NAVDEMO, database="NAV Danish Database", collationname=da-dk  
+finsql.exe command=createdatabase, servername=TestComputer01\NAVDEMO, database="NAV Danish Database", collation=da-dk  
 ```  
   
 ## See Also  

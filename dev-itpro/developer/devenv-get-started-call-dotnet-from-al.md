@@ -21,7 +21,7 @@ You can call .NET type members, including methods, properties, and constructors,
 > [!IMPORTANT]  
 > .NET Interoperability is only available on-premise.
 
-### Enabling .NET Interoperability
+## Enabling .NET Interoperability
 .NET interoperability can only be used by applications that target on-premise deployments. See [JSON Files](devenv-json-files.md) for more information on how to set the correct compilation target.
 
 ## Declaring a .NET package
@@ -51,7 +51,7 @@ dotnet
 
 ```
 
-By default, the compiler only knows about the location of the `mscorlib` assembly. You can reference any compatible assembly by providing the compiler with a path to the assembly's containing folder. This can be achieved by adding the path to assembly's containing folder to the `"al.assemblyProbingPaths"` setting. For more information, see [](). <!-- (TODO: Add this to an article about settings)-->
+By default, the compiler only knows about the location of the `mscorlib` assembly. You can reference any compatible assembly by providing the compiler with a path to the assembly's containing folder. This can be achieved by adding the path to assembly's containing folder to the `"al.assemblyProbingPaths"` setting. <!-- For more information, see [](). (TODO: Add this to an article about settings)-->
 
 > [!NOTE]  
 > Any update to an assembly's code is not automatically detected by the compiler. If an assembly has changed, then you must restart your development environment.
@@ -96,7 +96,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 The AL Language extension, including the AL compiler, and the server to which you publish your code are completely decoupled.
 When publishing, the server recompiles your code and tries to resolve all the references to external assemblies. In order for the compilation to succeed, the server must be able to locate and load all the referenced assemblies and types.
 
-The server will search the global assembly cache (GAC), the **Add-ins** folder and the **Add-ins** table. You must manually install any custom assembly in one of these locations.
+The server will search the global assembly cache (GAC), the **Add-ins** folder, and the **Add-in** table. You must manually install any custom assembly in one of these locations.
 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
