@@ -1,7 +1,7 @@
 ---
 title: "HandlerMethods Property"
 ms.custom: na
-ms.date: 06/19/2017
+ms.date: 07/09/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ You use test codeunits and test methods to test your application. A handler meth
   
 The following is some important information about handler methods:  
   
--   To be a handler method, the [MethodType Property (Test Codeunits)](devenv-methodtype-property-test-codeunits.md) must set to one of the handler types: MessageHandler, ConfirmHandler, StrMenuHandler, PageHandler, ModalPageHandler, ReportHandler, RequestPageHandler, or FilterPageHandler.  
+-   To be a handler method, the [MethodType Property (Test Codeunits)](devenv-methodtype-property-test-codeunits.md) must set to one of the handler types: [MessageHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [ConfirmHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [StrMenuHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [PageHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [ModalPageHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [ReportHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [RequestPageHandler](), or [FilterPageHandler](devenv-methodtype-property-test-codeunits.md#Property-Value).  
   
 -   A test method can only call handler methods that are defined in the same test codeunit as the test method.  
   
