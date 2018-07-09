@@ -18,7 +18,8 @@ Sets whether user-specific control values are saved for this page.
   
 ## Applies To  
   
--   Pages  
+-   Pages
+-   Report request page  
   
 ## Property Value  
  **True** if user-defined control values are saved; otherwise, **false**. The default is **false**.  

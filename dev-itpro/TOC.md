@@ -1,4 +1,5 @@
 # [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
+## [Frequently asked questions](faq.md)
 <!--
 ## [Getting Started](Getting-Started.md)
 ## [Touring the RoleTailored Client for Developers](Touring-the-RoleTailored-Client-for-Developers.md)
@@ -199,7 +200,7 @@
 ### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
-#### [Headlines](developer/devenv-create-role-center-headline.md) 
+#### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Adding Pages and Reports to Search](developer/devenv-al-menusuite-functionality.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
@@ -213,7 +214,9 @@
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ## [Classifying Data](developer/devenv-classifying-data.md)
 ## [View Table Data](developer/devenv-view-table-data.md)
-## [Web Client URL](developer/devenv-web-client-urls.md)
+## Linking to the Web Client and App
+### [Web Client URL](developer/devenv-web-client-urls.md)
+### [Business Central App URL](developer/devenv-link-to-universal-app.md)
 ## [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 # [AL Development Environment](developer/devenv-reference-overview.md)
 ## [AL Programming Guide](developer/devenv-programming-in-al.md)
