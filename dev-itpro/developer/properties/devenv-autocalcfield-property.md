@@ -44,4 +44,4 @@ FlowFields has an effect if the associated data source is a calculated value of 
 [Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   
 [CalcFormula](devenv-calcformula-property.md)  
 [FlowFilter Overview](../devenv-flowfilter-overview.md)   
-[CalcFields Property](devenv-calcfields-proeprty.md)
+[CalcFields Property](devenv-calcfields-property.md)

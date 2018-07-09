@@ -31,7 +31,7 @@ You use test codeunits and test methods to test your application. A handler meth
   
 The following is some important information about handler methods:  
   
--   To be a handler method, the [MethodType Property (Test Codeunits)](devenv-methodtype-property-test-codeunits.md) must set to one of the handler types: [MessageHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [ConfirmHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [StrMenuHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [PageHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [ModalPageHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [ReportHandler](devenv-methodtype-property-test-codeunits.md#Property-Value), [RequestPageHandler](), or [FilterPageHandler](devenv-methodtype-property-test-codeunits.md#Property-Value).  
+-   To be a handler method, the [MethodType Property (Test Codeunits)](devenv-methodtype-property-test-codeunits.md) must set to one of the handler types: [MessageHandler](devenv-methodtype-property-test-codeunits.md), [ConfirmHandler](devenv-methodtype-property-test-codeunits.md), [StrMenuHandler](devenv-methodtype-property-test-codeunits.md), [PageHandler](devenv-methodtype-property-test-codeunits.md), [ModalPageHandler](devenv-methodtype-property-test-codeunits.md), [ReportHandler](devenv-methodtype-property-test-codeunits.md), [RequestPageHandler](devenv-methodtype-property-test-codeunits.md), or [FilterPageHandler](devenv-methodtype-property-test-codeunits.md).  
   
 -   A test method can only call handler methods that are defined in the same test codeunit as the test method.  
   

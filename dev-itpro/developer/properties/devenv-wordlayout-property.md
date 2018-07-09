@@ -49,5 +49,5 @@ report 50124 MyWordReport
 ## See Also  
 [Creating a Word Layout Report](../devenv-howto-report-layout.md)    
 [RDLCLayout Property](devenv-rdlclayout-property.md)  
-[Creating an RDL Layout Report](../devenv-howto-rdl-report-layout)  
+[Creating an RDL Layout Report](../devenv-howto-rdl-report-layout.md)  
  

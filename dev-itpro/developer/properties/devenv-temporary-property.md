@@ -24,7 +24,6 @@ Sets whether a temporary table is created.
 Changes made to a temporary table are not stored to a database.  
   
 ## See Also  
-[Properties](devenv-properties.md)  
-[Table and Table Extension Properties](devenv-table-property.md)  
+[Properties](devenv-properties.md)   
 [UseTemporary Property (Report)](devenv-usetemporary-report-property.md)   
 [UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md)
