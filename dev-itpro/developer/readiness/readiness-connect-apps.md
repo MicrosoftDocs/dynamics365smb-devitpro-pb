@@ -50,7 +50,7 @@ HDI – V6 – Use APIs from a Connect App -->
  
 <!--
 ## How do I get my Connect app published in AppSource?  
-To ease your journey, from the initial idea submission to the final publication, we have created a guide that you can lean on throughout the process of bringing your Connect app to Microsoft AppSource. The guide consists of 3 documents that outline all the steps that must be taken to get your app go live on the platform. You need to complete the steps in the given order to pass the different validation stages and getting your app published on AppSource: 
+To ease your journey, from the initial idea submission to the final publication, we have created a guide that you can lean on throughout the process of bringing your Connect app to Microsoft AppSource. The guide consists of 3 documents that outline all the steps that must be taken to get your app go live on the platform. You need to complete the steps in the given order to pass the different validation stages and get your app published on AppSource: 
 
 - [How do I develop and publish a Connect app]().-->
 
