@@ -17,10 +17,15 @@ caps.latest.revision: 17
 
 -   The [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] includes cmdlets for merging and modifying application object files. Also included are cmdlets for creating extension packages. The [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] is installed with the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)].  
 
- The cmdlets are implemented in [!INCLUDE[wps_2](includes/wps_2_md.md)] 3.0, which is included with Windows Server 2012 and Windows 8 and later. For other versions of Windows supported for [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can install it as part of the [Windows Management Framework 3.0](http://go.microsoft.com/fwlink/?LinkId=293806) on the Microsoft Download Center.  
+ The cmdlets are implemented in [!INCLUDE[wps_2](includes/wps_2_md.md)] 3.0, which is included with Windows Server 2012 and Windows 8 and later. For other versions of Windows supported for [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can install it as part of the [Windows Management Framework 3.0](http://go.microsoft.com/fwlink/?LinkId=293806) on the Microsoft Download Center. 
 
+> [!IMPORTANT]  
+>  Cmdlets can perform actions that can also be done from the client, such as creating and modifying entities like web services, companies, users, and more. Be aware that cmdlets do not execute code on application objects (such as tables or pages) that are associated with these entities. If you have added logic to these application objects, the logic will be ignored by the cmdlets. For example, if you added logic on table **9900  Web Service Aggregate** to control the creation of web services, although this logic will run from the client, it will be ignored when creating web services by using the New-NAVWebService cmdlet.  
+
+<!-- 
 > [!NOTE]  
->  Alternatively to running [!INCLUDE[nav_shell](includes/nav_shell_md.md)] and [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] from where they are installed, you can import the relevant module into the [!INCLUDE[wps_2](includes/wps_2_md.md)] Integrated Scripting Environment \(ISE\).  
+>  Alternatively to running [!INCLUDE[nav_shell](includes/nav_shell_md.md)] and [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] from where they are installed, you can import the relevant module into the [!INCLUDE[wps_2](includes/wps_2_md.md)] Integrated Scripting Environment \(ISE\).
+-->  
 
 ## <a name="StartAdminShell"></a>Starting a [!INCLUDE[nav_shell](includes/nav_shell_md.md)] Session  
  You must run the [!INCLUDE[nav_shell](includes/nav_shell_md.md)] as an Administrator. On the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)], choose **Start**, in the **Search** box, type **[!INCLUDE[nav_shell](includes/nav_shell_md.md)]**, right-click the related link, and then choose **Run as Administrator**.  
