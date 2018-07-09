@@ -24,10 +24,6 @@ Sets a list of FlowFields to automatically calculate.
 -   XMLports  
   
 ## Remarks  
-<!--
-Not existing anymore according to Niels-Henrik, Server Backend team 
-Use the **AssistEdit** button to select the FlowFields.  
--->
 The list of the FlowFields is the list of CalcFields that you can calculate. For that, [AutoCalcField property](devenv-autocalcfield-property.md) must be enabled. 
 <!--
 Notes from meeting: 
@@ -35,7 +31,7 @@ The list of FlowFields, what you describe here is just a list of fields that are
 --> 
   
 ## See Also  
-[AutoCalcField](devenv-autocaldfield-property.md)   
+[AutoCalcField](devenv-autocalcfield-property.md)   
 [FlowFields](../devenv-flowfields.md)   
 [Properties](devenv-properties.md)  
 [Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   
