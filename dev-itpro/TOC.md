@@ -214,7 +214,9 @@
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ## [Classifying Data](developer/devenv-classifying-data.md)
 ## [View Table Data](developer/devenv-view-table-data.md)
-## [Web Client URL](developer/devenv-web-client-urls.md)
+## Linking to the Web Client and App
+### [Web Client URL](developer/devenv-web-client-urls.md)
+### [Business Central App URL](developer/devenv-link-to-universal-app.md)
 ## [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 # [AL Development Environment](developer/devenv-reference-overview.md)
 ## [AL Programming Guide](developer/devenv-programming-in-al.md)
