@@ -15,12 +15,39 @@ author: SusanneWindfeldPedersen
  
 
 # WordLayout Property
-Sets the Word layout that is used on a report and returns it as a data stream.
+Sets the imported file name and the Word layout that is used on a report.
 
 
 > [!NOTE]
-> Reports do support both Word and RDLC layout.
+> Reports support both Word and RDLC layout.
+
+## Remarks
+The  Word file has to be in the same folder as the AL object. 
+
+## Example
+<!--
+Code taken from this file: devenv-howto-report-layout
+-->
+The following example shows how to use this property to generate the *MyWordReport.docx* file.
+
+```
+pageextension 50100 MyExtension extends "Customer List"
+{
+    trigger OnOpenPage();
+    begin
+        report.Run(Report::MyWordReport);
+    end;
+}
+
+report 50124 MyWordReport
+{
+    DefaultLayout = Word;
+    WordLayout = 'MyWordReport.docx';
+}
+```
 
 ## See Also  
-[Creating a Word Layout Report](../devenv-howto-report-layout.md)   
+[Creating a Word Layout Report](../devenv-howto-report-layout.md)    
+[RDLCLayout Property](devenv-rdlclayout-property.md)  
+[Creating an RDL Layout Report](../devenv-howto-rdl-report-layout)  
  
