@@ -23,8 +23,10 @@ Sets the type of text this element or attribute contains.
 ## Property Value  
  **BigText** if you want to display large text ; otherwise, **Text**. The default is **Text**.  
 
+<!--
 ## Example
 Niels said that he can provide me with that code. 
+-->
   
 ## See Also  
  [Properties](devenv-properties.md)

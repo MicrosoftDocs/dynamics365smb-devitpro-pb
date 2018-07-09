@@ -20,9 +20,11 @@ Sets a value that indicates whether the index is clustered.
 ## Applies To  
  Keys  
 
+<!--
 ## Remarks
 about how performance is affected - ask Kennie about this one, he is the SQL expert.  It has a high impact on performance
 I need to have some comments explaining how to use it 
+-->
 
 ## See Also  
  [Properties](devenv-properties.md)
