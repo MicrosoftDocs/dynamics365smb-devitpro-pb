@@ -75,15 +75,13 @@ We do this by adding a `test` setting to the app.json file with the minimum supp
 
 ```
 Machine generated alternative text:
-•screenshots": 
-"platform": "Il.e.ø.e", 
-"application" : 
-"ll.e.ø.e", 
-" "ll.ø.e.e" 
-test : 
-"idRange": { 
-"from": 581ee, 
-"to": se149 
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "test": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149}
 ```
 
 If the test symbol is not present, you will be prompted to download it. For more information, see [Symbols](devenv-symbols.md). 
