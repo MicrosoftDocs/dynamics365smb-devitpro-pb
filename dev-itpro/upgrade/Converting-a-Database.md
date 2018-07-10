@@ -171,13 +171,17 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[na
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
     ```   
 
-10.  Run the schema synchronization with validation to complete the database conversion.  
+11.  Run the schema synchronization with validation to complete the database conversion.  
 
         For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).  
 
-11.  If you converted a [!INCLUDE[navcorfu_md](includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)]. For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
+12.  If you converted a [!INCLUDE[navcorfu_md](includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)]. For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
 
-12. Upload the customer license to the converted database.  
+14. (optional) If you converted a [!INCLUDE[navnow_md](includes/navnow_md.md)] database, configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](developer/includes/d365fin_web_md.md)].
+
+    For more information, see [Making Pages and Reports in the MenuSuite Searchable in [!INCLUDE[d365fin_web_md.md](developer/includes/d365fin_web_md.md)]](upgrade-pages-report-for-search.md).
+
+15. Upload the customer license to the converted database.  
 
     For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
 
