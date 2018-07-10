@@ -31,9 +31,8 @@ In the following example, the specified changes have occurred since the initial 
 
 When the API consumer calls a GET using the `@odata.deltaLink`, as shown below:  
 
-```json
-GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=
-```
+```GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=```
+
 The response would return with the specified changes in the result, see the following example:  
 
 ```json
