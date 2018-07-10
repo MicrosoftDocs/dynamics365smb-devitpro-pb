@@ -1,30 +1,29 @@
 ---
 title: "Converting a Database - Technical Upgrade"
 ms.custom: na
-ms.date: 03/01/2018
+ms.date: 10/07/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics-nav-2018"
+ms.prod: "dynamics365-business-central"
 author: jswymer
 ---
 # Converting a Database - Technical Upgrade
 
-**Applies to:** [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]. [See [!INCLUDE[nav2017](../developer/includes/nav2017.md)] version](Converting-a-Database-2017.md).
-
-This article describes how to convert a  [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database from one of the following versions to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]:
+This article describes how to convert a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database from one of the following versions to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)]:
 
 -   [!INCLUDE[nav7long](../developer/includes/nav7long_md.md)]
 -   [!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]
 -   [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]
 -   [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]
 -   [!INCLUDE[nav2017](../developer/includes/nav2017.md)] 
--   [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] \(cumulative update\)
+-   [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]
+-   [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] \(cumulative update\)
 
 ## About database conversion
-Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
+Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [[!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
 
 <!--You typically convert a database, as described in this article, when you want to upgrade an existing [!INCLUDE[nav2017](../developer/includes/nav2017.md)] database to a new platform version that does not include application changes. A database conversion is typically what is required for a cumulative update.
 
@@ -36,10 +35,10 @@ Converting a database does not upgrade the application objects (like pages, repo
 -->
 
 ## Task 1: Preparing the Old Database  
-To convert the old database to a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database, the first task is to back up the old database and then prepare to convert it.
+To convert the old database to a [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] database, the first task is to back up the old database and then prepare to convert it.
 
 > [!NOTE]  
->  Do not perform this task if you are converting the database from one cumulative update of [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] to the next cumulative update. In this case, you only have to complete task 2.
+>  Do not perform this task if you are converting the database from one cumulative update of [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] to the next cumulative update. In this case, you only have to complete task 2.
 
 #### To prepare the old database  
 
@@ -61,7 +60,7 @@ To convert the old database to a [!INCLUDE[nav2018_md](../developer/includes/nav
 
 5.  If any errors occur, they are shown in the **Error List** window. Make sure that you address all compilation errors before you continue.  
 
-6.  Upload the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] Partner license to the database.  
+6.  Upload the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Partner license to the database.  
 
      For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
 
@@ -94,7 +93,7 @@ To convert the old database to a [!INCLUDE[nav2018_md](../developer/includes/nav
 10.  (Optional) Before you start the following procedure, you can uninstall the old version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]. When you uninstall [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], the database is still attached to the instance of SQL Server, which you can verify using SQL Server Management Studio.
 
 ## Task 2: Converting the Old Database  
-Next, you will convert the old database so that it can be used with [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].
+Next, you will convert the old database so that it can be used with [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].
 
 > [!TIP]  
 >  If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[nav_dev_shell](../developer/includes/nav_dev_shell_md.md)].  
@@ -105,9 +104,9 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[na
 
     This membership is only required for converting the database, and can be removed afterwards. 
 
-2. Install [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
+2. Install [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].  
 
-     Run the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] Setup, and choose to install the **Developer** option.  
+     Run the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup, and choose to install the **Developer** option.  
 
 2.  Run the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] development environment as an administrator.
 
