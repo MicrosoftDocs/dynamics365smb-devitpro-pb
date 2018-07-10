@@ -14,13 +14,13 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-# Making Pages and Reports in the MenuSuite Searchable in [!INCLUDE[d365fin_web_md.md](developer/includes/d365fin_web_md.md)]
+# Making Pages and Reports in the MenuSuite Searchable in [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
 
-In [!INCLUDE[navnow_md](developer/includes/navnow_md.md)], pages and reports were searchable in the [!INCLUDE[d365fin_web_md.md](developer/includes/d365fin_web_md.md)] only if they were included in the MenuSuite. In [!INCLUDE[d365fin_md](developer/includes/d365fin_md.md)], instead using the MenuSuite, pages and reports are made searchable by setting properties on the page and report objects themselves, specifically the [UsageCategory](../developer/properties/devenv-usagecategory-property.md) property, and optionally the [AccessByPermissions](../developer/properties/devenv-accessbypermission-property.md) and [ApplicationArea](../developer/properties/devenv-applicationarea-property.md) properties. The UsageCategory property corresponds to the DepartmentCategory property on MenuSuite items linked to page and report objects.
+In [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], pages and reports were searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] only if they were included in the MenuSuite. In [!INCLUDE[d365fin_md](../developer/includes/d365fin_md.md)], instead using the MenuSuite, pages and reports are made searchable by setting properties on the page and report objects themselves, specifically the [UsageCategory](../developer/properties/devenv-usagecategory-property.md) property, and optionally the [AccessByPermissions](../developer/properties/devenv-accessbypermission-property.md) and [ApplicationArea](../developer/properties/devenv-applicationarea-property.md) properties. The UsageCategory property corresponds to the DepartmentCategory property on MenuSuite items linked to page and report objects.
 
-This means that after an upgrade from [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[d365fin_md](developer/includes/d365fin_md.md)], pages and reports that were previously searchable in the client, will no longer be searchable unless you set the required object properties. 
+This means that after an upgrade from [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[d365fin_md](../developer/includes/d365fin_md.md)], pages and reports that were previously searchable in the client, will no longer be searchable unless you set the required object properties. 
 
-Instead of setting these properties manually, the [!INCLUDE[d365fin_md](developer/includes/d365fin_md.md)] installation media (DVD) includes a Windows PowerShell scripted module called **WebSearch.psm1**. This module includes a single cmdlet called **Set-PageAndReportPropertiesFromExistingMenuSuites**. This cmdlet creates modified copies of page and report objects that are linked to MenuSuite items, setting the UsageCategory, AccessByPermissions, and ApplicationArea properties according to the DepartmentCategory, AccessByPermissions, and ApplicationArea properties in the MenuSuite. The modified copies can then be imported into the database. 
+Instead of setting these properties manually, the [!INCLUDE[d365fin_md](../developer/includes/d365fin_md.md)] installation media (DVD) includes a Windows PowerShell scripted module called **WebSearch.psm1**. This module includes a single cmdlet called **Set-PageAndReportPropertiesFromExistingMenuSuites**. This cmdlet creates modified copies of page and report objects that are linked to MenuSuite items, setting the UsageCategory, AccessByPermissions, and ApplicationArea properties according to the DepartmentCategory, AccessByPermissions, and ApplicationArea properties in the MenuSuite. The modified copies can then be imported into the database. 
 
 ## Run the Set-PageAndReportPropertiesFromExistingMenuSuites cmdlet
 
@@ -49,7 +49,7 @@ Instead of setting these properties manually, the [!INCLUDE[d365fin_md](develope
     Dynamics NAV\130\RoleTailored Client" -DataBaseName "MySolutionDatabase" -OutPutFolder "C:\temp"
     ```
 
-    In this example, the [!INCLUDE[nav_dev_long_md.md](developer/includes/nav_dev_long_md.md)] (finsql.exe) installation path is `C:\Program Files (x86)\Microsoft
+    In this example, the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] (finsql.exe) installation path is `C:\Program Files (x86)\Microsoft
     Dynamics NAV\130\RoleTailored Client`, the database is named `MyDatabase` and modifed page and report objects are stored to the folder `C:\temp`.
 
  
@@ -59,8 +59,8 @@ Instead of setting these properties manually, the [!INCLUDE[d365fin_md](develope
 
 
 ## See Also
-[Adding Menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md)  
-[MenuSuite Properties](properties/devenv-menusuite-properties.md)   
-[Page Object](devenv-page-object.md)  
+[Adding Menus to the Navigation Pane](../developer/devenv-adding-menus-to-navigation-pane.md)  
+[MenuSuite Properties](../developer/properties/devenv-menusuite-properties.md)   
+[Page Object](../developer/devenv-page-object.md)  
 [Report Object](devenv-report-object.md)  
-[AL Development Environment](devenv-reference-overview.md)
+[AL Development Environment](../developer/devenv-reference-overview.md)
