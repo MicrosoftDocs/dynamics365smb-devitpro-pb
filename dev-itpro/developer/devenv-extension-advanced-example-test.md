@@ -3,7 +3,7 @@ author: solsen
 title: "Testing the Advanced Sample Extension"
 description: "Includes test code for the advanced example extension."
 ms.custom: na
-ms.date: 12/27/2017
+ms.date: 07/09/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -75,15 +75,13 @@ We do this by adding a `test` setting to the app.json file with the minimum supp
 
 ```
 Machine generated alternative text:
-•screenshots": 
-"platform": "Il.e.ø.e", 
-"application" : 
-"ll.e.ø.e", 
-" "ll.ø.e.e" 
-test : 
-"idRange": { 
-"from": 581ee, 
-"to": se149 
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "test": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149}
 ```
 
 If the test symbol is not present, you will be prompted to download it. For more information, see [Symbols](devenv-symbols.md). 
@@ -236,15 +234,15 @@ Test pages mimic actual pages, but do not present any UI on a client computer. T
 ##### UI handlers 
 To create tests that can be automated, you must handle cases when user interaction is requested by code that is being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a test method that has a ConfirmHandler handles CONFIRM method calls. If code that is being tested calls the CONFIRM method, then the ConfirmHandler method is called instead of the CONFIRM method. You write code in the ConfirmHandler method to verify that the expected question is displayed by the CONFIRM method and you write AL code to return the relevant reply. The following table describes the available UI handlers.  
 
-|Function Type|Purpose|
-|-------------|-------|
-|MessageHandler |Handles MESSAGE statements. |
-|ConfirmHandler |Handles CONFIRM statements. |
-|StrMenuHandler |Handles STRMENU statements. |
-|PageHandler |Handles specific pages that are not run modally.|
-|ModalPageHandler |Handles specific pages that are run modally. |
-|ReportHandler |Handles specific reports. |
-|RequestPageHandler |Handles the request page of a specific report. |
+|Function Type|Example|Purpose|
+|-------------|-------|-------|
+|MessageHandler |<br>`[MessageHandler]` </br> `PROCEDURE MessageHandler(Msg : Text[1024]);`|This handler is called when a message function is invoked in the code. The parameter type, **Text**,  contains the text of the function.
+|ConfirmHandler |<br>`[ConfirmHandler]` </br> `PROCEDURE ConfirmHandlerNo(Question : Text[1024];var Reply : Boolean);`|This handler is called when a confirm function is invoked in the code. The parameter type, **Text**,  contains the text of the function and the parameter **Reply** if the response to confirm is *yes* or *no*.|
+|StrMenuHandler |<br>`[StrMenuHandler]` </br> `PROCEDURE StrMenuHandler@57(Option@1000 : Text[1024];VAR Choice@1001 : Integer;Instruction@1002 : Text[1024]);`|This handler is called when a StrMenu function is invoked in code. The parameter type, **Text**,  contains the text of the function and **Choice** is the option chosen in the StrMenu. **Options** is the list of the different option values and **Instruction** is the leading text.| |
+|PageHandler |<br>`[PageHandler]` </br> `PROCEDURE MappingPageHandler@35(VAR MappingPage@1000 : TestPage 1214);`|This handler is called when a non-modal page is invoked in the code. **TestPage** is the specific page in this case.|
+|ModalPageHandler |<br>`[ModalPageHandler]` </br> `PROCEDURE DevSelectedObjectPageHandler@14(VAR DevSelectedObjects@1000 : TestPage 89015);`|This handler is called when a modal page is invoked in the code. **TestPage** is the specific page in this case.||
+|ReportHandler |<br>`[ReportHandler]` </br> `PROCEDURE VendorListReportHandler@3(VAR VendorList@1000 : Report 301);`|This handler is called when a report is invoked in the code. **Report** is the specific report in this case.| 
+|RequestPageHandler |<br>`[RequestPageHandler]` </br> `PROCEDURE SalesInvoiceReportRequestPageHandler(var SalesInvoice : TestRequestPage 206); `|This handler is called when a report is invoked in the code.  **TestRequestPage** refers to the specific report ID.| 
 
 You must create a specific handler for each page that you want to handle. Any unhandled UI in the test methods of the test codeunit causes a failure of the test.  
 

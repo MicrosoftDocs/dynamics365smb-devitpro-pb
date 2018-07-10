@@ -1,7 +1,7 @@
 ---
 title: "CalcFields Property"
 ms.custom: na
-ms.date: 06/07/2017
+ms.date: 05/31/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +24,16 @@ Sets a list of FlowFields to automatically calculate.
 -   XMLports  
   
 ## Remarks  
- Use the **AssistEdit** button to select the FlowFields.  
+The list of the FlowFields is the list of CalcFields that you can calculate. For that, [AutoCalcField property](devenv-autocalcfield-property.md) must be enabled. 
+<!--
+Notes from meeting: 
+The list of FlowFields, what you describe here is just a list of fields that are CalcFields that you want to have calculated if you have [AutoCalcField property](devenv-autocalcfield-property.md) enabled. 
+--> 
   
 ## See Also  
- [FlowFields](../devenv-flowfields.md)   
- [Properties](devenv-properties.md)
+[AutoCalcField](devenv-autocalcfield-property.md)   
+[FlowFields](../devenv-flowfields.md)   
+[Properties](devenv-properties.md)  
+[Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   
+[CalcFormula](devenv-calcformula-property.md)  
+[FlowFilter Overview](../devenv-flowfilter-overview.md)  

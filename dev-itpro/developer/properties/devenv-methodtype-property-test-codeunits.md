@@ -1,7 +1,7 @@
 ---
 title: "MethodType Property (Test Codeunits)"
 ms.custom: na
-ms.date: 06/19/2017
+ms.date: 07/09/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,19 +22,20 @@ Sets the type of method in a test codeunit.
   
 ## Property Value  
   
-|Value|Description|  
-|-----------|-----------------|  
-|**Normal**|Acts as normal method.|  
-|**Test**|Tests the application.|  
-|**MessageHandler**|Handles MESSAGE methods.|  
-|**ConfirmHandler**|Handles CONFIRM methods.|  
-|**StrMenuHandler**|Handles STRMENU methods.|  
-|**PageHandler**|Handles specific pages that are not run modally.|  
-|**ModalPageHandler**|Handles specific pages that are run modally.|  
-|**ReportHandler**|Handles specific reports.|  
-|**RequestPageHandler**|Handles specific report request pages.|  
-|**FilterPageHandler**|Handles specific filter pages for filtering tables.<br /><br /> <!--For more information, see [Creating Filter Pages for Filtering Tables](../devenv-creating-filter-pages-for-filtering-tables.md)-->|  
-|**HyperlinkHandler**|Handles specific hyperlinks.|  
+|Value|Example|Purpose|  
+|-----------|-----------------|--------|    
+|**MessageHandler**|<br>`[MessageHandler]` </br> `PROCEDURE MessageHandler(Msg : Text[1024]);`|This handler is called when a message function is invoked in the code. The parameter type, **Text**,  contains the text of the function.|  
+|**ConfirmHandler**|<br>`[ConfirmHandler]` </br> `PROCEDURE ConfirmHandlerNo(Question : Text[1024];var Reply : Boolean);`|This handler is called when a confirm function is invoked in the code. The parameter type, **Text**,  contains the text of the function and the parameter **Reply** if the response to confirm is *yes* or *no*.|  
+|**StrMenuHandler**|<br>`[StrMenuHandler]` </br> `PROCEDURE StrMenuHandler@57(Option@1000 : Text[1024];VAR Choice@1001 : Integer;Instruction@1002 : Text[1024]);`|This handler is called when a StrMenu function is invoked in code. The parameter type, **Text**,  contains the text of the function and **Choice** is the option chosen in the StrMenu. **Options** is the list of the different option values and **Instruction** is the leading text.|  
+|**PageHandler**|<br>`[PageHandler]` </br> `PROCEDURE MappingPageHandler@35(VAR MappingPage@1000 : TestPage 1214);`|This handler is called when a non-modal page is invoked in the code. **TestPage** is the specific page in this case.|
+|**ModalPageHandler**|<br>`[ModalPageHandler]` </br> `PROCEDURE DevSelectedObjectPageHandler@14(VAR DevSelectedObjects@1000 : TestPage 89015);`|This handler is called when a modal page is invoked in the code. **TestPage** is the specific page in this case.|  
+|**RequestPageHandler**|<br>`[RequestPageHandler]` </br> `PROCEDURE SalesInvoiceReportRequestPageHandler(var SalesInvoice : TestRequestPage 206); `|This handler is called when a report is invoked in the code.  **TestRequestPage** refers to the specific report ID.| 
+|**FilterPageHandler**|<br>`[FilterPageHandler]` </br> `PROCEDURE CustomerFilterHandler@8(VAR RecRef@1000 : RecordRef) : Boolean;`|This handler is called when a filter page is invoked in the code. **RecRef** holds the record of the filter page.| 
+|**ReportHandler**|<br>`[ReportHandler]` </br> `PROCEDURE VendorListReportHandler@3(VAR VendorList@1000 : Report 301);`|This handler is called when a report is invoked in the code. **Report** is the specific report in this case.|  
+|**HyperlinkHandler**|<br>`[HyperlinkHandler]` </br> `PROCEDURE HyperlinkHandler@110(MessageTxt@1000 : Text)`|This handler is called when a hyperlink is invoked in the code. **Text** contains the actual hyperlink.|  
+|**SendNotificationHandler**|<br>`[SendNotificationHandler]` </br> `PROCEDURE SendNotificationHandler@38(VAR Notification@1000 : Notification) : Boolean;`|This handler is called when a notification is raised from the code. **Notification** holds the actual notification.|
+|**RecallNotificationHandler**|<br>`[RecallNotificationHandler]` </br> `PROCEDURE RecallNotificationHandler@24(VAR Notification@1000 : Notification) : Boolean;`|This handler is called when a notification is recalled from the code. **Notification** holds the actual notification.|
+|**SessionSettingsHandler**|<br>`[SessionSettingsHandler]` </br> `PROCEDURE SessionSettingsHandler@41(VAR TestSessionSettings@1000 : SessionSettings) : Boolean;`|This handler is called when SessionSetting is updated.  The parameter type, **SessionSettings**, holds the new settings.|
   
 ## Remarks  
  You create test codeunits to test your application. A test codeunit can consist of one or more test methods, handler methods, and normal methods.  
@@ -51,6 +52,10 @@ Sets the type of method in a test codeunit.
      <!-- For more information, see [How to: Create Handler Methods](../devenv-how-to-create-handler-methods.md).  -->
   
 -   You use normal methods to structure the test code by using the same design practices and principles as methods in other codeunits of the application.  
+
+## See Also  
+[Properties](devenv-properties.md)  
+[AL Methods](../methods/devenv-al-method-reference.md)  
 
 <!--  
 ## See Also  
