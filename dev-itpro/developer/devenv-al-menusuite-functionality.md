@@ -65,7 +65,7 @@ You can add a page or a report to Search. Additionally, control the access of an
 The **AccessByPermission** property and **ApplicationArea** property are the optional settings, which can be applied with the **UsageCategory** property. These settings are used to set restrictions on an object when you enable the Search functionality.
 
 ## Working in the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)]
-If you are using the [nav_dev_long_md](includes/nav_dev_long_md.md)], you can also set UsageCategory, AccessByPermission, and ApplicationArea properties on pages and reports to control their search.
+If you are using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], you can also set UsageCategory, AccessByPermission, and ApplicationArea properties on pages and reports to control their search.
 
 After you change these properties, before the changes take effect in the client, you must run **Build Object Search Index** from the **Tools** menu.
 
