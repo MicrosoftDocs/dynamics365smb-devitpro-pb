@@ -1,7 +1,7 @@
 ---
 title: "AutoCalcField Property"
 ms.custom: na
-ms.date: 06/09/2017
+ms.date: 05/31/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,9 +12,16 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
+<!--
+Ask for the file Niels had prepared for the meeting. 
+-->
 
 # AutoCalcField Property
-Sets whether FlowFields should be automatically calculated.  
+Sets whether FlowFields should be automatically calculated. 
+
+<!--
+AutoCalcField is correlated with [CalcFields property](devenv-calcfields-proeprty.md) because CalcField is just a list of fields and these types that are calculated fields of FlowFields types. 
+-->
   
 ## Applies To  
   
@@ -24,6 +31,17 @@ Sets whether FlowFields should be automatically calculated.
   
 ## Property Value  
  **True** if the FlowField is automatically calculated; otherwise, **false**. The default is **true**.  
-  
+
+## Remarks
+FlowFields has an effect if the associated data source is a calculated value of the FlowFields.
+<!--  
+FlowFields has an effect if the associated data source is a calculated value of the FlowFields.
+-->
+
+
 ## See Also  
- [FlowFields](../devenv-flowfields.md)
+[FlowFields](../devenv-flowfields.md)   
+[Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   
+[CalcFormula](devenv-calcformula-property.md)  
+[FlowFilter Overview](../devenv-flowfilter-overview.md)   
+[CalcFields Property](devenv-calcfields-property.md)

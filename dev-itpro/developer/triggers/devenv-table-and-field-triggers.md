@@ -2,7 +2,7 @@
 title: "Table and Field Triggers"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/02/2018
+ms.date: 07/04/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ Fields have the following triggers.
 
 |Field trigger|Executes when|  
 |-------------------|-------------------|  
-|[OnValidate (Fields) Trigger](devenv-onvalidate-fields-trigger.md)|Data is entered in a field or when the [VALIDATE Record)](../methods/devenv-validate-method-record.md) is executed.|  
+|[OnValidate (Fields) Trigger](devenv-onvalidate-fields-trigger.md)|Data is entered in a field or when the [VALIDATE (Record)](../methods/devenv-validate-method-record.md) is executed.|  
 |[OnLookup (Fields) Trigger](devenv-onlookup-fields-trigger.md)|Lookup is activated.|  
 
 ## See Also  
