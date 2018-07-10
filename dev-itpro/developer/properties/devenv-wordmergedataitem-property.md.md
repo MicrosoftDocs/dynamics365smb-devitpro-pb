@@ -20,7 +20,7 @@ Specifies the name of the root-level **DataItem** that is used for generating se
   
 -   Reports  
 
-## WordMergeDataIten Data Type
+## WordMergeDataItem Data Type
 String
 
 
