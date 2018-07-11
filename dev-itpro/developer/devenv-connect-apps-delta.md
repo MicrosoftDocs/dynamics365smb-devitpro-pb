@@ -31,7 +31,7 @@ In the following example, the specified changes have occurred since the initial 
 
 When the API consumer calls a GET using the `@odata.deltaLink`, as shown below:  
 
-`GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=`
+`GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies`<br>`(2d117882-81a5-489e-b956-613205b06c72)/customers?`<br>`deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=`
 
 The response would return with the specified changes in the result, see the following example:  
 
@@ -76,5 +76,3 @@ The response would return with the specified changes in the result, see the foll
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
 [Tips for working with the APIs](devenv-connect-apps-tips.md)  
-
-
