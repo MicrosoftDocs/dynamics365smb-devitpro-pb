@@ -25,7 +25,7 @@ This article describes how to upgrade a [!INCLUDE[d365_bus_cent_short_md](../dev
 -   [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]
 
 ## About database conversion
-Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [[!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
+Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
 
 <!--You typically convert a database, as described in this article, when you want to upgrade an existing [!INCLUDE[nav2017](../developer/includes/nav2017.md)] database to a new platform version that does not include application changes. A database conversion is typically what is required for a cumulative update.
 
@@ -108,33 +108,37 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 2. Install [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].  
 
-     Run the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup, and choose to install the **Developer** option.  
+     Run the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup, and install the following components as a minimum:
+     -  Server
+     -  SQL Server Database Components
+     -  Administration Tool (include Shell)
+     -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]    
 
-2.  Run the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] development environment as an administrator.
+3.  Run the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] as an administrator.
 
-    -   If the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)] is already connected to the old database, a dialog box about converting the database appears. Go to the next step.
+    -   If the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is already connected to the old database, a dialog box about converting the database appears. Go to the next step.
     
     -   Otherwise, connect to the old database that you prepared in the previous task, and then go to the next step.
     
         For more information, see [How to: Open Databases](How-to--Open-Databases.md).
 
-3.  In the dialog box that appears, read the instructions about converting the database carefully because this action cannot be reversed. When you are ready, choose the **OK** button, and then choose the **OK** button to confirm that you want to convert the database.  
+4.  In the dialog box that appears, read the instructions about converting the database carefully because this action cannot be reversed. When you are ready, choose the **OK** button, and then choose the **OK** button to confirm that you want to convert the database.  
 
-     [!INCLUDE[navnow](../developer/includes/navnow_md.md)] will now convert the database. This includes an upgrade of system tables and reports.  
+    [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] will now convert the database. This includes an upgrade of system tables and reports.  
 
-4.  When you are notified that the conversion was successful, choose the **OK** button.
+5.  When you are notified that the conversion was successful, choose the **OK** button.
 
-5.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers.  
+6.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers.  
 
      For the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], the default path is [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]\\RoleTailored Client\\Add-ins folder.  
 
      For [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], the default path is the [!INCLUDE[navnow_install](../developer/includes/navnow_install_md.md)]\\Service\\Add-ins folder.
 
-6.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
+7.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
 
     For more information, see [Compiling Objects](compiling-objects.md).
 
-7. Fix compilation errors.  
+8. Fix compilation errors.  
 
     If any errors occur, they are shown in the **Error List** window. For help on resolving the errors, see the following:
 
@@ -151,7 +155,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
     You can find all objects which did not compile in the **Object Designer** window, by setting a field filter on the **Compiled** field.  
 
     
-8.  Connect a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] Server instance to the converted database.  
+9.  Connect a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] Server instance to the converted database.  
 
     Use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
 
@@ -160,11 +164,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
      For more information, see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).  
      
-9.  Go to the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)], and set it to use the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that connects to the database.  
+10.  Go to the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)], and set it to use the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that connects to the database.  
 
      For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md).  
 
-10. Recompile published extensions.
+11. Recompile published extensions.
 
     Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) of the [!INCLUDE[navnowlong_md](../developer/includes/navnowlong_md.md)] Administration Shell to compile the published extensions to make sure they are work with the new platform.
 
@@ -174,13 +178,13 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
     ```   
 
-11.  Run the schema synchronization with validation to complete the database conversion.  
+12.  Run the schema synchronization with validation to complete the database conversion.  
 
         For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).  
 
-12.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
+13.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
 
-14. (optional) If you converted a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database, configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)].
+14. If you converted a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database, configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)].
 
     For more information, see [Making Pages and Reports in the MenuSuite Searchable in [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]](upgrade-pages-report-for-search.md).
 
