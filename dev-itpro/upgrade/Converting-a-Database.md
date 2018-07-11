@@ -138,13 +138,15 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
     If any errors occur, they are shown in the **Error List** window. For help on resolving the errors, see the following:
 
-    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2013 Database](Compilation-Errors-When-Converting-a-Microsoft-Dynamics-NAV-2013-Database.md).  
+   <!--
+    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2013 Database](Compilation-Errors-When-Converting-a-Microsoft-Dynamics-NAV-2013-Database.md). 
+    --> 
 
     -   [Resolving Compilation Errors When Converting a Dynamics NAV 2015 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2015-Database.md). 
 
     -   [Resolving Compilation Errors When Converting a Dynamics NAV 2016 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2016-Database.md). 
 
-    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2017 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2017-Database.md).   
+    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2017 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2017-Database.md). 
 
     You can find all objects which did not compile in the **Object Designer** window, by setting a field filter on the **Compiled** field.  
 
