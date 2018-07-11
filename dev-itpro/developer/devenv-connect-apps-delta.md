@@ -22,7 +22,8 @@ On subsequent calls, the API consumer can use the deltaLink URL, which will prov
 + Any added or updated entries appear as regular JSON objects with their current properties
 + Any records that have been removed will include in the response but represented only by their `"id"` and a `@odata.context` URL followed by a `/$deletedEntity`
 
-## Example 
+## Example
+
 In the following example, the specified changes have occurred since the initial API was called.
 
 1. A customer name was changed to "Super Cloud"
@@ -32,7 +33,7 @@ In the following example, the specified changes have occurred since the initial 
 When the API consumer calls a GET using the `@odata.deltaLink`, as shown below:  
 
 `GET`<br>
-`https://api.businesscentral.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?`<br>`deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6M`<br>`jk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=`
+`https://api.businesscentral.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?`<br>`deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6M`<br>`jk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtN`<br>`DQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=`
 
 The response would return with the specified changes in the result, see the following example:  
 
