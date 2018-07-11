@@ -20,7 +20,7 @@ In [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], pages and reports 
 
 As a result of this change, after an upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)], pages and reports that were previously searchable in the client, will no longer be searchable unless you set the required object properties. 
 
-Instead of setting these properties manually, the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media (DVD) includes a Windows PowerShell scripted module called **WebSearch.psm1** that includes a single cmdlet called **Set-PageAndReportPropertiesFromExistingMenuSuites**. This cmdlet creates modified copies of page and report objects that are linked to MenuSuite items, setting the UsageCategory, AccessByPermissions, and ApplicationArea properties according to the DepartmentCategory, AccessByPermissions, and ApplicationArea properties in the MenuSuite. The modified copies can then be imported into the database. 
+You can set the properties of pages and reports manually (see [Adding Pages and Reports to Search](../developer/devenv-al-menusuite-functionality.md). Alternatively, the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media (DVD) includes a Windows PowerShell scripted module called **WebSearch.psm1** that includes a single cmdlet called **Set-PageAndReportPropertiesFromExistingMenuSuites**. The cmdlet saves each page and report that is linked in the MenuSuite as a text file in which the UsageCategory, AccessByPermissions, and ApplicationArea properties are set to match the DepartmentCategory, AccessByPermissions, and ApplicationArea properties in the MenuSuite. The modified objects can then be imported into the database. 
 
 ## Run the Set-PageAndReportPropertiesFromExistingMenuSuites cmdlet
 
@@ -35,7 +35,7 @@ Instead of setting these properties manually, the [!INCLUDE[d365_bus_cent_short_
     import-module -Name c:\dvd\WindowsPowerShellScripts\WebSearch\WebSearch.psm1
 
     ```
-3.  The `Set-PageAndReportPropertiesFromExistingMenuSuites` cmdlet has several parameters that you can set to change its behavior. To get help on this cmdlet, run the following command:`
+3.  The `Set-PageAndReportPropertiesFromExistingMenuSuites` cmdlet has several parameters that you can set to change its behavior. To get help on this cmdlet, run the following command:
 
     ```
     get-help Set-PageAndReportPropertiesFromExistingMenuSuites -full
@@ -53,14 +53,20 @@ Instead of setting these properties manually, the [!INCLUDE[d365_bus_cent_short_
     Dynamics NAV\130\RoleTailored Client`, the database is named `MyDatabase` and modifed page and report objects are stored to the folder `C:\temp`.
 
  
-4. If the cmdlet was not set up to import the modified page and report objects, import them from the output folder into the database. 
+4. If the cmdlet was not set up to import the modified page and report object text files, import them from the output folder into the database. 
+
+    See [How to: Import Objects](https://docs.microsoft.com/en-us/dynamics-nav/how-to--import-objects).
 
 5. Compile the imported objects.
 
+    See [Compiling Objects](https://docs.microsoft.com/en-us/dynamics-nav/compiling-objects).
+
+6. In the **Tools** menu of the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], select **Build Object Search Index**.
+
+    The pages and reports will not be searchable until you run **Build Object Search Index**. 
+
 
 ## See Also
-[Adding Menus to the Navigation Pane](../developer/devenv-adding-menus-to-navigation-pane.md)  
-[MenuSuite Properties](../developer/properties/devenv-menusuite-properties.md)   
-[Page Object](../developer/devenv-page-object.md)  
-[Report Object](devenv-report-object.md)  
-[AL Development Environment](../developer/devenv-reference-overview.md)
+[Converting a Database - Technical Upgrade](converting-a-database.md)  
+[Upgrading the Data](upgrading-the-data.md)  
+
