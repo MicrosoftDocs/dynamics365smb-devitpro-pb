@@ -455,7 +455,12 @@ For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modi
 
      For more information, see [How to: Export and Import Encryption Keys](How-to--Export-and-Import-Encryption-Keys.md).  -->
 
-##  <a name="DeleteUpgCodeunits"></a> Task 19: Delete the upgrade objects
+
+## Task 19: Configure pages and reports in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)].
+
+    For more information, see [Making Pages and Reports in the MenuSuite Searchable in [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]](upgrade-pages-report-for-search.md).
+
+##  <a name="DeleteUpgCodeunits"></a> Task 20: Delete the upgrade objects
 At this point, you have upgraded the database to [!INCLUDE[nav2018_md](includes/nav2018_md.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
 
 When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  
