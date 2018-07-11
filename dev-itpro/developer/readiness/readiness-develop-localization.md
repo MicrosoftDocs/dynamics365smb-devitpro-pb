@@ -44,6 +44,13 @@ In countries, where Microsoft has not delivered a localization, you can apply fo
 
 All above points need to be in place to declare [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country. 
 New countries will be available in quarterly cadences subject to the above mentioned lead time.
+To apply for access to build [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] localization, in countries, where Microsoft has not delivered a localization fill in [[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] Localization Request form](https://go.microsoft.com/fwlink/?linkid=2005218&clcid=English%20(United%20States)%20(0x409)).
+
+## Business Central companion/mobile apps availability
+Even though [Business Central companion/mobile apps](https://docs.microsoft.com/en-us/dynamics365/business-central/install-mobile-app) are globally available in Microsoft Store, Apple App Store or Google Play the respective store listing may appear in English. Once Business Central is made available in a given country, we will make sure to update the store listings using local language. 
+
+> [!NOTE]  
+> The companion apps are designed to work with every localized app even before we update the marketing part of the store listing.
 
 ## Monetization
 As a partner developing a localization app, you are free to decide how monetization of your apps should work. Localization apps are considered like any other apps and the market is open any partner and apps in a given country. It is up to you to build a monetization mechanism for your app - as well as mechanisms to control who uses your app. Please see [this whitepaper](https://mbspartner.microsoft.com/secure/coursematerials/D365/Standalone/Dynamics_365_Business_Central_App_Monetization_Demo_Guide.pdf) on app monetization to learn more.
