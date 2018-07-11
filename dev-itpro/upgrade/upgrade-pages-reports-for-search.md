@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-# Making Pages and Reports Searchable Again in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] After an Upgrade
+# Making Pages and Reports Searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] After an Upgrade
 
 In [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], pages and reports were searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] only if they were included in the MenuSuite. In [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)], instead using the MenuSuite, pages and reports are made searchable by setting properties on the page and report objects themselves, specifically the [UsageCategory](../developer/properties/devenv-usagecategory-property.md) property, and optionally the [AccessByPermissions](../developer/properties/devenv-accessbypermission-property.md) and [ApplicationArea](../developer/properties/devenv-applicationarea-property.md) properties. The UsageCategory property corresponds to the DepartmentCategory property on MenuSuite items linked to page and report objects.
 

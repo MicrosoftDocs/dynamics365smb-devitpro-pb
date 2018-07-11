@@ -456,9 +456,9 @@ For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modi
      For more information, see [How to: Export and Import Encryption Keys](How-to--Export-and-Import-Encryption-Keys.md).  -->
 
 
-## Task 19: Configure pages and reports in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
+## Task 19: Configure pages and reports linked to MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
 
-The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports in the MenuSuite Searchable in [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]](upgrade-pages-report-for-search.md).
+The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable in [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]](upgrade-pages-report-for-search.md) After an Upgrade.
 
 ##  <a name="DeleteUpgCodeunits"></a> Task 20: Delete the upgrade objects
 At this point, you have upgraded the database to [!INCLUDE[nav2018_md](includes/nav2018_md.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
