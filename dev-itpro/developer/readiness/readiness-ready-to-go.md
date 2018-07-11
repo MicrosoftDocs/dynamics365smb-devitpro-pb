@@ -43,7 +43,7 @@ The materials of the "Ready to Go" online learning catalog are on the [Dynamics 
 ## Support option 2: "Ready to Go" coaching
 "Ready to Go" coaching is run by Microsoft Development Centers and Master VARs, which are independently owned and operated. They bring technical services and coaching to market and have industry specific knowledge that you can contract and leverage when developing your offerings. Over time they have developed lots of best practices by supporting multiple partners, they also have strong ties with Microsoft’s R&D teams and are always up to date on the latest strategy and product innovation.
 
-The "Ready to Go" validation workshop is an 8h workshop offered by all Development Centers and Master VARs at fixed price. It is co-developed with Microsoft and designed to coach you in bringing in your first [d365_bus_central_md](../includes/d365_bus_central_md.md) customer or app into Microsoft AppSource. The validation workshop provides a packaged offering, which includes a common checklist and a set of training materials that are designed to validate your complete offer, from respectively a business, marketing and technical perspective. 
+The "Ready to Go" validation workshop is an 8h workshop offered by all Development Centers and Master VARs at fixed price. It is co-developed with Microsoft and designed to coach you in bringing in your first [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md) customer or app into Microsoft AppSource. The validation workshop provides a packaged offering, which includes a common checklist and a set of training materials that are designed to validate your complete offer, from respectively a business, marketing and technical perspective. 
 
 Please reference the table below to find the Development Centers and Master VARs in your region and explore which "Ready to Go" offerings they provide.
 
@@ -64,7 +64,7 @@ The **"Ready to Go" Validation Workshop** is a packaged offering, brought to mar
 This workshop helps you in validating your complete offer, from a business, marketing and technical perspective. Learn more about the offerings of our Development Centers by following the links in the table above.
 
 ## Support option 3: "Ready to Go" platform
-The "Ready to Go" platform is designed to support you in the actual app development, including testing and learning scenarios. The platform provides you with various builds of [d365_bus_central_md](../includes/d365_bus_central_md.md) (cf. both current, upcoming, and daily builds are available). Moreover, the platform also enables you to provide direct feedback to the Microsoft engineers who are working on [d365_bus_central_md](../includes/d365_bus_central_md.md). 
+The "Ready to Go" platform is designed to support you in the actual app development, including testing and learning scenarios. The platform provides you with various builds of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md) (cf. both current, upcoming, and daily builds are available). Moreover, the platform also enables you to provide direct feedback to the Microsoft engineers who are working on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md). 
 
 To get access to the available builds on the platform you need to register on Microsoft Collaborate. Please follow the steps to be onboarded correctly to the platform:
 
