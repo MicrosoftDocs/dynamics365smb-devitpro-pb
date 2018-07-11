@@ -14,7 +14,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Apps and services that you can provide in Microsoft Dynamics 365 Business Central
-[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md) is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions.  
+[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)  is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions.  
 As a partner there are multiple opportunities for you to provide apps or consulting services on Microsoft Appsource. You can:
 - Build Add-on apps: [https://aka.ms/BusinessCentralAddonApps](https://aka.ms/BusinessCentralAddonApps)
 - Build Embed apps: [https://aka.ms/BusinessCentralEmbedApps](https://aka.ms/BusinessCentralEmbedApps)
@@ -22,7 +22,7 @@ As a partner there are multiple opportunities for you to provide apps or consult
 - Build Localization apps: [https://aka.ms/BusinessCentralLocalizationApps](https://aka.ms/BusinessCentralLocalizationApps) 
 - Deliver consulting services as a VAR: [https://aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices)
 
-If you want to explore and learn more about these opportunities, please go here.
+If you want to explore and learn more about these opportunities, please go [here](http://aka.ms/BusinessCentralApps).
 
 ## Ready to Go
 The “Ready to Go” program is designed to support you in the journey of bringing your [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md) offers into Microsoft Appsource. The program encompasses the following three core support options that you can leverage:
