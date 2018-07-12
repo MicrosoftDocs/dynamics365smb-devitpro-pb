@@ -1,5 +1,5 @@
 ---
-title: "Converting a Database - Technical Upgrade"
+title: "Converting a Database to Dynamics 365 Business Central - Technical Upgrade"
 ms.custom: na
 ms.date: 10/07/2018
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.author: jswymer
 ms.prod: "dynamics365-business-central"
 author: jswymer
 ---
-# Converting a Database - Technical Upgrade
+# Converting a Database to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] - Technical Upgrade
 
 This article describes how to upgrade a [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] database to the latest platform \(cumulative update\) or convert a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database from one of the following versions to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)]:
 

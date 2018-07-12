@@ -1,6 +1,6 @@
 ---
 title: Upgrading the Database
-description: This article describes the tasks required for upgrading from the earlier versions of database to the Microsoft Dynamics NAV 2018.
+description: This article describes the tasks required for upgrading from the earlier versions of database to Dynamics 365 Business Central.
 ms.custom: na
 ms.date: 03/05/2018
 ms.reviewer: na
@@ -10,9 +10,7 @@ ms.topic: article
 ms.author: jswymer
 ms.prod: "dynamics-nav-2018"
 ---
-# Upgrading the Data to [!INCLUDE[nav2018_md](includes/nav2018_md.md)]
-
-**Applies to:** [!INCLUDE[nav2018_md](includes/nav2018_md.md)]. [See [!INCLUDE[nav2017](includes/nav2017.md)] version](Upgrading-the-Data-2017.md).
+# Upgrading the Data to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)]
 
 This topic describes the tasks required for upgrading the following database versions to [!INCLUDE[nav2018_md](includes/nav2018_md.md)]:
 
