@@ -48,7 +48,7 @@ To ease the development phase of Connect apps we have created a video series to 
 To ease your journey, from the initial listing to the final publication of your Connect app on AppSource, we have created two white papers that outline a step-by-step guideline that you need to follow to bring your [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers to AppSource smoothly. We recommend that you check off each of the 4 consecutive steps in the two white papers as you progress. We highly recommend that you lean on the guidelines in these white papers to support you throughout the process of publishing your app to AppSource:
 
 - [Getting you started with Microsoft Dynamics 365 Business Central Connect Apps](https://go.microsoft.com/fwlink/?linkid=2005501)
-- [Developing and publishing your Microsoft Dynamics 365 Business Central Connect App to AppSource](https://go.microsoft.com/fwlink/?linkid=2005501)
+- [Developing and publishing your Microsoft Dynamics 365 Business Central Connect App to AppSource](https://go.microsoft.com/fwlink/?linkid=2005402)
 
  
 ## Where do I learn more about Connect apps? 
