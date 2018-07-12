@@ -20,12 +20,12 @@ In [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], pages and reports 
 
 As a result of this change, after an upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)], pages and reports that were previously searchable in the client, will no longer be searchable unless you set the required object properties. 
 
-You can set the properties of pages and reports manually (see [Adding Pages and Reports to Search](../developer/devenv-al-menusuite-functionality.md). Alternatively, the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media (DVD) includes a Windows PowerShell scripted module called **WebSearch.psm1** that includes a single cmdlet called **Set-PageAndReportPropertiesFromExistingMenuSuites**. The cmdlet saves each page and report that is linked in the MenuSuite as a text file in which the UsageCategory, AccessByPermissions, and ApplicationArea properties are set to match the DepartmentCategory, AccessByPermissions, and ApplicationArea properties in the MenuSuite. The modified objects can then be imported into the database. 
+You can set the properties of pages and reports manually (see [Adding Pages and Reports to Search](../developer/devenv-al-menusuite-functionality.md)). Alternatively, the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media (DVD) includes a Windows PowerShell scripted module called **WebSearch.psm1** that includes the **Set-PageAndReportPropertiesFromExistingMenuSuites**. The cmdlet saves each page and report that is included in the MenuSuite as a modified text file in which the UsageCategory, AccessByPermissions, and ApplicationArea properties are set to match the DepartmentCategory, AccessByPermissions, and ApplicationArea properties in the MenuSuite. The modified objects can then be imported into the database. 
 
 ## Run the Set-PageAndReportPropertiesFromExistingMenuSuites cmdlet
 
 1. Run **Windows PowerShell** as an administrator.
-2. At the command prompt, import the WebSearch.psm1 module.
+2. At the command prompt, import the **WebSearch.psm1** module.
 
     On the installation media (DVD), the module is in the **WindowsPowerShellScripts\WebSearch** folder.
 
@@ -50,7 +50,7 @@ You can set the properties of pages and reports manually (see [Adding Pages and 
     ```
 
     In this example, the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] (finsql.exe) installation path is `C:\Program Files (x86)\Microsoft
-    Dynamics NAV\130\RoleTailored Client`, the database is named `MyDatabase` and modifed page and report objects are stored to the folder `C:\temp`.
+    Dynamics NAV\130\RoleTailored Client`, the database is named `MyDatabase` and modified page and report objects are stored to the folder `C:\temp`.
 
  
 4. If the cmdlet was not set up to import the modified page and report object text files, import them from the output folder into the database. 
@@ -61,7 +61,7 @@ You can set the properties of pages and reports manually (see [Adding Pages and 
 
     See [Compiling Objects](https://docs.microsoft.com/en-us/dynamics-nav/compiling-objects).
 
-6. In the **Tools** menu of the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], select **Build Object Search Index**.
+6. In the **Tools** menu of the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)], select **Build Object Search Index**.
 
     The pages and reports will not be searchable until you run **Build Object Search Index**. 
 
