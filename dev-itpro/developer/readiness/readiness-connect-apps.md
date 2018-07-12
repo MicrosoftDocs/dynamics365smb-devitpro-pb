@@ -16,7 +16,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Connect Apps 
 
 ## What is a Connect app?
-A Connect app can be used in the scenario where there needs to be established a point-to-point connection between [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and a 3rd party solution or service.
+A Connect app can be used in the scenario where there must be established a point-to-point connection between [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and a 3rd party solution or service.
 
 Online service offerings like payroll, expense management, web-shops, project planning etc. typically have many connection points. Connect apps allow you to make connections between these online service offerings and your business solution. This connection can be achieved on a data level without needing to do development. Therefore, by reusing these connection points Connect apps provides you with the opportunity to reuse your investments from REST integrations with other Cloud Services. 
 
