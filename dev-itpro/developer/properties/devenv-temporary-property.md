@@ -1,7 +1,7 @@
 ---
 title: "Temporary Property"
 ms.custom: na
-ms.date: 06/19/2017
+ms.date: 05/31/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,10 +18,12 @@ author: SusanneWindfeldPedersen
 Sets whether a temporary table is created.  
   
 ## Applies To  
- Record variables  
+- Record variables  
   
 ## Remarks  
- Changes made to a temporary table are not stored to a database.  
+Changes made to a temporary table are not stored to a database.  
   
 ## See Also  
- [Properties](devenv-properties.md)
+[Properties](devenv-properties.md)   
+[UseTemporary Property (Report)](devenv-usetemporary-report-property.md)   
+[UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md)
