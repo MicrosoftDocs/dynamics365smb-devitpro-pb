@@ -15,6 +15,9 @@ ms.author: solsen
 ---
 
 # Exporting Permission Sets
+> [!IMPORTANT]  
+> [!INCLUDE[vnext_preview](includes/vnext_preview.md)]
+
 Permission sets that exist in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can be exported and packaged for your extension directly from the client, instead of defining XML by hand. 
 
 ## To export permission sets from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
