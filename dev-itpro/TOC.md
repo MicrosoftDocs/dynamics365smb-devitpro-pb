@@ -337,6 +337,7 @@
 
 # Preview Features in AL
 ## [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 <!-- end AL -->
 <!--
 # [Administration](Administration.md)
