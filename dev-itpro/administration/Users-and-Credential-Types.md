@@ -12,7 +12,7 @@ ms.assetid: ec4b3a58-4834-41b5-a382-6d619fa12636
 caps.latest.revision: 32
 ---
 # Credential Types for Dynamics NAV Users
-[!INCLUDE[navnowlong](includes/navnowlong_md.md)] supports four credential authorization mechanisms for [!INCLUDE[navnow](includes/navnow_md.md)] users. When you create a user, you provide different information depending on the credential type that you are using in the current [!INCLUDE[nav_server](includes/nav_server_md.md)] instance.  
+[!INCLUDE[navnowlong](includes/navnowlong_md.md)] supports several credential authorization mechanisms for [!INCLUDE[navnow](includes/navnow_md.md)] users. When you create a user, you provide different information depending on the credential type that you are using in the current [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. 
   
 > [!IMPORTANT]  
 >  All users of a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance must be using the same credential type. You specify which credential type is used for a particular [!INCLUDE[nav_server](includes/nav_server_md.md)] instance in the [!INCLUDE[nav_admin](includes/nav_admin_md.md)].  
