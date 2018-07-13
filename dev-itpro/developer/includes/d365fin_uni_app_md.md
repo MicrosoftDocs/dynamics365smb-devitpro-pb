@@ -1,1 +1,1 @@
-Business Central Universal App
+Business Central App

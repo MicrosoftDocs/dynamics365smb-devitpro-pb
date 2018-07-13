@@ -26,4 +26,5 @@ Sets a value that indicates whether the promoted action is displayed on the ribb
   
 ## See Also  
  [Promoted Property](devenv-promoted-property.md)   
+ [Promoted Actions](../devenv-promoted-actions.md)  
  

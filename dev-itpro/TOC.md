@@ -1,4 +1,5 @@
 # [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
+## [Frequently asked questions](faq.md)
 <!--
 ## [Getting Started](Getting-Started.md)
 ## [Touring the RoleTailored Client for Developers](Touring-the-RoleTailored-Client-for-Developers.md)
@@ -158,6 +159,7 @@
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
 ### [The AL Formatter](developer/devenv-al-formatter.md)
+### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ## [Object Ranges](developer/devenv-object-ranges.md)
 ## [JSON Files](developer/devenv-json-files.md)
@@ -187,16 +189,21 @@
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
 ## [Pages](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
-### [Page Extension Object](developer/devenv-page-ext-object.md)
-### [Page Customization Object](developer/devenv-page-customization-object.md)
-### [Adding a FactBox](developer/devenv-adding-a-factbox-to-page.md)
+### Fields
+#### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
+#### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
+#### [Fixed Control](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
 ### [Actions](developer/devenv-actions-overview.md)
-### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
+#### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
+#### [Promoted Actions](developer/devenv-promoted-actions.md)
+### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 ### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
-#### [Headlines](developer/devenv-create-role-center-headline.md) 
+#### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Adding Pages and Reports to Search](developer/devenv-al-menusuite-functionality.md)
+### [Page Extension Object](developer/devenv-page-ext-object.md)
+### [Page Customization Object](developer/devenv-page-customization-object.md)
 ## [Reports](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
@@ -207,7 +214,9 @@
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ## [Classifying Data](developer/devenv-classifying-data.md)
 ## [View Table Data](developer/devenv-view-table-data.md)
-## [Web Client URL](developer/devenv-web-client-urls.md)
+## Linking to the Web Client and App
+### [Web Client URL](developer/devenv-web-client-urls.md)
+### [Business Central App URL](developer/devenv-link-to-universal-app.md)
 ## [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 # [AL Development Environment](developer/devenv-reference-overview.md)
 ## [AL Programming Guide](developer/devenv-programming-in-al.md)
@@ -303,7 +312,7 @@
 ### [Table and Table Extension Properties](developer/properties/devenv-table-properties.md)
 ### [Page and Page Extension Properties](developer/properties/devenv-page-property-overview.md)
 ### [Codeunit Properties](developer/properties/devenv-codeunit-properties.md)  
-### [MenuSuite Properties](developer/properties/devenv-menusuite-properties.md)  
+<!-- NOT SUPPORTED ### [MenuSuite Properties](developer/properties/devenv-menusuite-properties.md)  -->
 ### [Query Properties](developer/properties/devenv-query-properties.md)  
 ### [Report Properties](developer/properties/devenv-report-properties.md)  
 ### [XMLPort Properties](developer/properties/devenv-XMLPort-properties.md)  
@@ -325,6 +334,10 @@
 ## [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ## [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ## [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
+
+# Preview Features in AL
+## [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 <!-- end AL -->
 <!--
 # [Administration](Administration.md)

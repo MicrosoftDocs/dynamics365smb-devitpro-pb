@@ -25,8 +25,8 @@ By default, page fields are arranged automatically in two columns. For more info
 |Row and column spanning|Can span rows and columns.|Cannot span rows and columns.|  
 |Field appearance|Shaded with a border.|No shading or border.|  
   
-## Required structure for using a Grid or a Fixed control
-For both the Grid and the Fixed controls, the following table shows the sequential structure that is required to get the layout results that you expect. The page layout of the page object determines what the page will look like. You must specify the structure in the `layout` section.  
+## Supported structure for using the Grid and Fixed controls
+The following table shows the supported structure to get the layout results that you expect. The page layout of the page object determines what the page will look like. You must specify the structure in the `layout` section.  
 
 |Type| SubType |
 |----|---------|
@@ -44,10 +44,33 @@ The Grid and the Fixed control must be placed in the `group` control in a `area(
 The Grid or Fixed control must have Group controls as direct children and Field controls as children of those Group controls.  
 
 
-<!--  
-For more information about grid control, see [Grid Control].
-For more information about fixed control, see [Fixed Control]. 
--->
+### Supported control types for using a Grid control  
+The Grid control is supported on all page types and for a selected range of control types. The following table lists the types of controls that can be nested in a Grid control.  
+  
+> [!TIP]  
+>  Although nesting groups such as Group, Fixed, and Grid is possible, we do not recommend it because of lower UI performance and less optimal layout.  
+  
+|Control Type|Control Subtype|  
+|------------------|---------------------|  
+|Fields||  
+|Groups|Group|  
+||Repeater|  
+||CueGroups|  
+||Fixed|  
+||Grid|  
+|Part|Page|  
+  
+The following table lists the types of controls that are not supported in a Grid control.  
+  
+|Control Type|Control Subtype|  
+|------------------|---------------------|  
+|Add-Ins||  
+|Parts|Chart Parts|  
+||System Parts|  
+
+ 
+For more information on how to use the **Grid** control, see [Arranging Fields in Rows and Columns Using the Grid Control](devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md).
+For more information on how to use the **Fixed** control, see [Arranging Fields in Rows and Columns Using the Fixed Control](devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md).
 
 ## See Also   
 [Arranging Fields on a FastTab](devenv-arranging-fields-on-fasttab.md)  

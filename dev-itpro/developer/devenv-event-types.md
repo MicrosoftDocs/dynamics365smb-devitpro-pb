@@ -1,7 +1,8 @@
 ---
 title: "Event Types"
+description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global and trigger events. 
 ms.custom: na
-ms.date: 02/01/2018
+ms.date: 05/24/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,13 +16,13 @@ author: SusanneWindfeldPedersen
 ##  <a name="BusinessEvents"></a> Business events  
  A business event is a custom event that is raised by AL code. It defines a formal contract that carries an implicit promise not to change in future releases. It is the expectation that business events are published by solution ISVs, including Microsoft.  
   
- Business events can be compared with publicly released APIs on which 3rd party solution provider develop integrations and additions. Therefore, the downstream cost of making changes to a business event implementation can be considerable for those who use the event in their applications. There may be some cases where changes are required; however, you should keep these to an absolute minimum.  
+ Business events can be compared with publicly released APIs on which 3rd party solution provider develop integrations and additions. Therefore, the downstream cost of making changes to a business event implementation can be considerable for those who use the event in their applications. There may be some cases where changes are required; however, you should keep these to an absolute minimum. 
   
  **Development considerations**  
   
- A typical business event reflects changes in “state” with regards to a process. This makes them very well suited for workflow. An example of a business event could be when a sales order has been posted. It is important to note that business events should not be tied to the implementation-details, such as the tables or fields in which the data is stored. Preferably, the event publisher developer should be free to change the implementation, while still keeping the business event intact.  
+ A typical business event reflects changes in “state” with regards to a process. This makes them very well suited for workflow. An example of a business event could be when a sales order has been posted. It is important to note that business events should not be tied to the implementation-details, such as the tables or fields in which the data is stored. Preferably, the event publisher developer should be free to change the implementation, while still keeping the business event intact. To learn about the syntax and example on how to use the BusinessEvent type, see [BusinessEvent Attribute](methods/devenv-business-attribute.md). 
   
- Business events should be documented with the solution, including the before-state and after-state of the events.  
+ Business events should be documented with the solution, including the before-state and after-state of the events. 
   
 ##  <a name="IntegrationEvents"></a> Integration events  
  An integration event is also a custom event that is raised by AL code, like a business event, except that it does not carry the same promise of not changing, nor does it have the restriction not to expose implementation details.  
@@ -30,9 +31,9 @@ author: SusanneWindfeldPedersen
   
  **Development considerations**  
   
- An integration event can be changed to a business event later. At which time, it must adhere to the same implied contract and commitment as any business event. It can also simply be designed-in hook points for external add-ons.  
+ An integration event can be changed to a business event later. At which time, it must adhere to the same implied contract and commitment as any business event. It can also simply be designed-in hook points for external add-ons. To learn about the syntax and example on how to use the IntegrationEvent type, see [IntegrationEvent Attribute](methods/devenv-integration-attribute.md). 
   
-##  <a name="SystemEvents"></a> Global events  
+## Global events  
  Global events are predefined system events that are automatically raised by Codeunit 1 **ApplicationManagement**. Codeunit 1 includes several global method triggers, such as CompanyOpen, CompanyClose, and GetSystemIndicator. For most of these global method triggers, there are one or two global events: a before and after event. For example, there is an OnBeforeCompanyOpen event and an OnAfterCompanyOpen event. The global events are defined as integration events by local methods in codeunit 1.  
   
 ## Trigger events  
@@ -96,7 +97,7 @@ author: SusanneWindfeldPedersen
 |`OnAfterGetCurrRecordEvent(VAR Rec : Record)`|Executed after the [OnAfterGetCurrRecord Trigger](triggers/devenv-onaftergetcurrrecord-trigger.md), which is called after the current record is retrieved from the table.|  
 |`OnAfterGetRecordEvent(VAR Rec : Record)`|Executed after the [OnAfterGetCurrRecord Trigger](triggers/devenv-onaftergetcurrrecord-trigger.md), which is called after the record is retrieved from the table but before it is displayed to the user.|  
 |`OnBeforeValidateEvent(VAR Rec : Record, VAR xRec : Record)`|Executed before the [OnValidate \(Page fields\) Trigger](triggers/devenv-onvalidate-page-fields-trigger.md), which is called when a field loses focus after its value has been changed.|  
-|`OnAfterValidate(VAR Rec : Record, VAR xRec : Record)`|Executed after the [OnValidate \(Page fields\) Trigger](triggers/devenv-onvalidate-page-fields-trigger.md), which is called when a field loses focus after its value has been changed.|  
+|`OnAfterValidateEvent(VAR Rec : Record, VAR xRec : Record)`|Executed after the [OnValidate \(Page fields\) Trigger](triggers/devenv-onvalidate-page-fields-trigger.md), which is called when a field loses focus after its value has been changed.|  
 |`OnClosePageEvent(VAR Rec : Record)`|Executed after the [OnClosePage Trigger](triggers/devenv-onclosepage-trigger.md), which is called when page closes after the OnQueryClosePage trigger is executed.|  
 |`OnDeleteRecordEvent(VAR Rec : Record, VAR AllowDelete : Boolean)`|Executed after the [OnDeleteRecord Trigger](triggers/devenv-ondeleterecord-trigger.md), which is called before a record is deleted from a table.|  
 |`OnInsertRecordEvent(VAR Rec : Record, BelowxRec : Boolean, VAR xRec : Record, VAR AllowInsert : Boolean)`|Executed after the [OnInsertRecord Trigger](triggers/devenv-oninsertrecord-trigger.md), which is called before a record is inserted in a table.|  
