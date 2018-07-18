@@ -33,10 +33,10 @@ You can generate a permission set file which contains permissions to all the fil
 
 1. In Visual Studio Code, open your extension.
 2. Create extension with some objects like Page, Report, Table, Query, Codeunit, or XmlPort.  
-3. Open the command palette using the `Ctrl+Shift+P` keys and select **AL: Generate permission set containing current extension objects** command.  
+3. Open the command palette using the `Ctrl+Shift+P` keys and select the **AL: Generate permission set containing current extension objects** command.  
     > [!NOTE]  
     > If you do this repeatedly, Visual Studio Code will probe for overwriting the file, there is no support for merging manual corrections into newly generated content.
-4. Publish the App. 
+4. Publish the app. 
 
 Now, you have the XML file with default permissions to all your objects.
 
