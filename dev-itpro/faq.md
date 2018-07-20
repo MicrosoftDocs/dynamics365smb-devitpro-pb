@@ -15,6 +15,12 @@ This section contains answers to frequently asked questions about developing for
 > [!TIP]  
 > If you are looking for frequently asked questions about signing up for and using [!INCLUDE[d365fin_md](includes/d365fin_md.md)], see [Frequently Asked Questions](/dynamics365/business-central/across-faq).
 
+## Is [!INCLUDE[d365fin](includes/d365fin_md.md)] available in my country?
+[!INCLUDE[d365fin](includes/d365fin_md.md)] is available in a limited number of markets, but new countries are added through Microsoft-led localization or through partner-led localization on a quarterly basis. For more information, see [Countries and Translations Supported](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations).  
+
+## How often is [!INCLUDE[d365fin](includes/d365fin_md.md)] updated?
+This product is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). This means continuous service updates and a major update every 6 months. Stay tuned for more information.
+
 ## How often are production databases backed up?
 
 Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done hourly, and transaction log backups are done every five minutes. Automatic backups are retained for 14 days.
