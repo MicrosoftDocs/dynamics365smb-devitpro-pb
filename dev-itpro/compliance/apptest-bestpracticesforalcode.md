@@ -95,7 +95,7 @@ page 123 PageName
 The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to automatically format their source code. For more information on how to use it, see [AL Formatter](../developer/devenv-al-formatter.md).
 
 ## Line length
-In general there is no restriction on line length, but lengthy lines can make the the code unreadable. We recommend that you keep your code easily scannable and readable.
+In general, there is no restriction on line length, but lengthy lines can make the code unreadable. We recommend that you keep your code easily scannable and readable.
 
 ## Object naming
 Object names are prefixed. They start with the feature/group name, followed by the logical name as in these two examples: 
