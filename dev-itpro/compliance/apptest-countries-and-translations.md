@@ -35,7 +35,7 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |Sweden|sv-SE|
 
 ## Partner Supported Countries and Translations
-In countries, where Microsoft has not delivered a [localization](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization), partners build localizations using translation and localization apps published on AppSource. you can apply for access to build a localization on top of the international (W1) version of Dynamics 365 Business Central. This table provides the list of countries and translation supported through partners.
+In countries, where Microsoft has not delivered a [localization](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization), partners can build localizations using translation and localization apps that are published in AppSource. You can apply for access to build a localization on top of the international (W1) version of Dynamics 365 Business Central. The following table provides the list of countries and translation supported through partners.
 
 |Country|Language Code|
 |-------|-------------|
