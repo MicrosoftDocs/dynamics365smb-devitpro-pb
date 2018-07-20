@@ -17,7 +17,6 @@ caps.latest.revision: 18
 # Countries and Translations Supported
 This page lists the countries that are supported with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] together with the supported translations for each country version. If you are developing an extension, this table provides the guideline for the translations your extension must support.
 
-[!div class="mx-tableFixed"] 
 |Country|Language Code|
 |-------|-------------|
 |US|en-US|
@@ -41,7 +40,6 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 ## Partner Supported Countries and Translations
 In countries, where Microsoft has not delivered a [localization](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization), partners can build localizations using translation and localization apps that are published in AppSource. You can apply for access to build a localization on top of the international (W1) version of Dynamics 365 Business Central. The following table provides the list of countries and translation supported through partners.
 
-[!div class="mx-tableFixed"] 
 |Country|Language Code|
 |-------|-------------|
 |South Korea|ko-KR|
