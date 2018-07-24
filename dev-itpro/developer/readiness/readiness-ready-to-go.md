@@ -14,9 +14,9 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # The “Ready to Go” program
-[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md) is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions.  
+[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions.  
 
-The “Ready to Go” program is designed to support you in the journey of bringing your Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md) offers into Microsoft Appsource. The program contains the following three core elements that you can leverage:
+The “Ready to Go” program is designed to support you in the journey of bringing your Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers into Microsoft Appsource. The program contains the following three core elements that you can leverage:
 - Element 1: "Ready to Go" online learning
 - Element 2: "Ready to Go" coaching
 - Element 3: "Ready to Go" platform
@@ -42,7 +42,7 @@ If you want to have more in depth learning resources to get up to speed, then yo
 
 Microsoft Development Centers are independently owned companies which provide services to partners. Over time they have developed lots of best practices by supporting multiple partners, they also have strong ties with Microsoft’s R&D teams and are always up to date on the latest strategy and product innovation. 
 
-An example of one of the coaching sessions provided by the Development Centers and Master VARs are **the “Ready to Go” validation workshops**. The "Ready to Go" validation workshop is an 8h workshop at fixed price. It is co-developed with Microsoft and designed to coach you in bringing in your first [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md) customer or App into Microsoft AppSource.
+An example of one of the coaching sessions provided by the Development Centers and Master VARs are **the “Ready to Go” validation workshops**. The "Ready to Go" validation workshop is an 8h workshop at fixed price. It is co-developed with Microsoft and designed to coach you in bringing in your first [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] customer or App into Microsoft AppSource.
 
 Please find the Development Centers and Master VARs in your region and explore which "Ready to Go" offerings they provide.
 
@@ -60,7 +60,7 @@ Please find the Development Centers and Master VARs in your region and explore w
 |South America|Online|Online|Online|In Person & Online|-|-|
 
 ## Element 3: "Ready to Go" platform
-The "Ready to Go" platform is designed to support you in the actual App development, including testing and learning scenario’s. The platform provides you with various builds of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md) (cf. both current, upcoming and daily builds are available). Moreover, the platform also enables you to provide direct feedback to the Microsoft engineers who are working on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md). 
+The "Ready to Go" platform is designed to support you in the actual App development, including testing and learning scenario’s. The platform provides you with various builds of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (cf. both current, upcoming and daily builds are available). Moreover, the platform also enables you to provide direct feedback to the Microsoft engineers who are working on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
 
 To get access to the available builds on the platform you need to follow the instructions stipulated in the documentation on “[Getting you started with Add-on Apps](https://go.microsoft.com/fwlink/?linkid=869734)” and “[Getting you started with Connect Apps](https://go.microsoft.com/fwlink/?linkid=2005501)”. 
 
