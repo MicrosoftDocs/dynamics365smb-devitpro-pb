@@ -20,7 +20,7 @@ Adds a certificate to the HttpClient class.
 ```
  HttpClient.AddCertificate(Certificate: String, [Password: String])
 ```
-#### Parameters
+## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
 An instance of the [HttpClient](httpclient-data-type.md) data type.  

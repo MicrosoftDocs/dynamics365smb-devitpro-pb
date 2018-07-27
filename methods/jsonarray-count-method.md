@@ -23,12 +23,12 @@ Count :=   JsonArray.Count()
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
 
-#### Parameters
+## Parameters
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Count*  
 &emsp;Type: [Integer](integer-data-type.md)  
   

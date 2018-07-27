@@ -20,7 +20,7 @@ Inserts a string into this instance at the specified character position.
 ```
 [Ok := ]  TextBuilder.Insert(Position: Integer, Text: Text)
 ```
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
@@ -32,7 +32,7 @@ The position in this instance where insertion begins.
 The string to insert.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

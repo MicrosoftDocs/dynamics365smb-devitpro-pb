@@ -20,7 +20,7 @@ Appends a copy of the specified string followed by the default line terminator t
 ```
 [Ok := ]  TextBuilder.AppendLine([Text: Text])
 ```
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 The string to append.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

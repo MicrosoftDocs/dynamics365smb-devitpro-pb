@@ -22,7 +22,7 @@ Gets or sets the method type as defined in the HTTP standard.
 ```
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
-#### Parameters
+## Parameters
 *HttpRequestMessage*  
 &emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
 An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.  
@@ -31,7 +31,7 @@ An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data ty
   
 
 
-#### Return Value
+## Return Value
 *CurrentMethod*  
 &emsp;Type: [String](string-data-type.md)  
   

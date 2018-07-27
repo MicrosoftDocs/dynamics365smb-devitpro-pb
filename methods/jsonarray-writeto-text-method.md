@@ -20,7 +20,7 @@ Serializes and writes the JSON data of the JsonArray to a given Text object.
 ```
 [Ok := ]  JsonArray.WriteTo(var Data: Text)
 ```
-#### Parameters
+## Parameters
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
   
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

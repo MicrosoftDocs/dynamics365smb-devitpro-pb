@@ -21,12 +21,12 @@ Converts the value in a JsonValue to a Date data type.
 Result :=   JsonValue.AsDate()
 ```
 
-#### Parameters
+## Parameters
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Result*  
 &emsp;Type: [Date](date-data-type.md)  
   
@@ -35,7 +35,7 @@ An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-If the JsonValue does not contain a string of the format &quot;yyyy-MM-dd&quot; e.g. &quot;2017-01-17&quot; (2017-January-17), the operation will fail with a run-time error.
+If the JsonValue does not contain a string of the format &amp;quot;yyyy-MM-dd&amp;quot; e.g. &amp;quot;2017-01-17&amp;quot; (2017-January-17), the operation will fail with a run-time error.
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  

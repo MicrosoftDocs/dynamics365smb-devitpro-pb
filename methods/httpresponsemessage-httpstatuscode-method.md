@@ -23,12 +23,12 @@ StatusCode :=   HttpResponseMessage.HttpStatusCode()
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
 
-#### Parameters
+## Parameters
 *HttpResponseMessage*  
 &emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
 An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *StatusCode*  
 &emsp;Type: [Integer](integer-data-type.md)  
   

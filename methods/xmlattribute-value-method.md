@@ -22,7 +22,7 @@ Gets or sets the value of the attribute.
 ```
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
-#### Parameters
+## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
@@ -31,7 +31,7 @@ An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 The new value of the attribute.  
 
 
-#### Return Value
+## Return Value
 *Value*  
 &emsp;Type: [String](string-data-type.md)  
   

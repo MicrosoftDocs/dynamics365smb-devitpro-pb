@@ -20,7 +20,7 @@ Removes the token at the given index.
 ```
 [Ok := ]  JsonArray.RemoveAt(Index: Integer)
 ```
-#### Parameters
+## Parameters
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 The position of the element that will be removed.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

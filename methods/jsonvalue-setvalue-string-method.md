@@ -20,7 +20,7 @@ Set the contents of the JsonValue variable to the JSON representation of the giv
 ```
  JsonValue.SetValue(Value: String)
 ```
-#### Parameters
+## Parameters
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  

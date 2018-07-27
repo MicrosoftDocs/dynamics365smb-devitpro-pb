@@ -23,12 +23,12 @@ Path :=   JsonToken.Path()
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
 
-#### Parameters
+## Parameters
 *JsonToken*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
 An instance of the [JsonToken](jsontoken-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Path*  
 &emsp;Type: [String](string-data-type.md)  
   

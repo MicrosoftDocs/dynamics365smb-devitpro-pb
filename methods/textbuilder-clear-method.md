@@ -21,7 +21,7 @@ Removes all characters from the current TextBuilder instance.
  TextBuilder.Clear()
 ```
 
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  

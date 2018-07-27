@@ -20,7 +20,7 @@ Adds a new property to a JsonObject.
 ```
 [Ok := ]  JsonObject.Add(Key: String, Value: JsonObject)
 ```
-#### Parameters
+## Parameters
 *JsonObject*  
 &emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
@@ -32,7 +32,7 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
   
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

@@ -21,12 +21,12 @@ Converts the value of this instance or a substring of this instance to a Text.
 Result :=   TextBuilder.ToText()
 ```
 
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Result*  
 &emsp;Type: [Text](text-data-type.md)  
   

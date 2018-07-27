@@ -20,7 +20,7 @@ Serializes and saves the current node to the given variable.
 ```
 [Ok := ]  XmlAttribute.WriteTo(OutStream: OutStream)
 ```
-#### Parameters
+## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 The OutStream to which you want to save the serialized representation of the node.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

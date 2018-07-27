@@ -20,7 +20,7 @@ Sets HttpContent content to the provided text or stream.
 ```
  HttpContent.WriteFrom(Text: Text)
 ```
-#### Parameters
+## Parameters
 *HttpContent*  
 &emsp;Type: [HttpContent](httpcontent-data-type.md)  
 An instance of the [HttpContent](httpcontent-data-type.md) data type.  

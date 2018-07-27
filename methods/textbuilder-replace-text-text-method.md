@@ -20,7 +20,7 @@ Replaces all occurrences of a specified string in this instance with another spe
 ```
 [Ok := ]  TextBuilder.Replace(OldText: Text, NewText: Text)
 ```
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
@@ -32,7 +32,7 @@ The string to replace.
 The string that replaces OldText.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

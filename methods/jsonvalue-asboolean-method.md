@@ -21,12 +21,12 @@ Converts the value in a JsonValue to a Boolean data type.
 Result :=   JsonValue.AsBoolean()
 ```
 
-#### Parameters
+## Parameters
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Result*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
   
@@ -35,7 +35,7 @@ An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks 
-The operation will succeed if the value was created from a Boolean using SetValue or if the value was parsed from a string containing one of the values : &quot;true&quot; or &quot;false&quot;. The operation will fail with a run-time error otherwise.
+The operation will succeed if the value was created from a Boolean using SetValue or if the value was parsed from a string containing one of the values : &amp;quot;true&amp;quot; or &amp;quot;false&amp;quot;. The operation will fail with a run-time error otherwise.
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  

@@ -20,7 +20,7 @@ Add sets the provided value for the provided header name.
 ```
 [Ok := ]  HttpHeaders.Add(Key: String, Value: String)
 ```
-#### Parameters
+## Parameters
 *HttpHeaders*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
@@ -32,7 +32,7 @@ An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
   
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

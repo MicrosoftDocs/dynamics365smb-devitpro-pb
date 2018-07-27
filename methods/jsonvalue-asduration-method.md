@@ -21,12 +21,12 @@ Converts the value in a JsonValue to a Duration data type.
 Result :=   JsonValue.AsDuration()
 ```
 
-#### Parameters
+## Parameters
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Result*  
 &emsp;Type: [Duration](duration-data-type.md)  
   

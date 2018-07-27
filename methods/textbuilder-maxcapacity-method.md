@@ -23,12 +23,12 @@ MaxCapacity :=   TextBuilder.MaxCapacity()
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
 
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *MaxCapacity*  
 &emsp;Type: [Integer](integer-data-type.md)  
   

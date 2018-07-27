@@ -23,12 +23,12 @@ CurrentDefaultRequestHeaders :=   HttpClient.DefaultRequestHeaders()
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
 
-#### Parameters
+## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *CurrentDefaultRequestHeaders*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
   

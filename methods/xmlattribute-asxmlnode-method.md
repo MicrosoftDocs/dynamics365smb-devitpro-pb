@@ -21,12 +21,12 @@ Converts the node to an XmlNode.
 XmlNode :=   XmlAttribute.AsXmlNode()
 ```
 
-#### Parameters
+## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *XmlNode*  
 &emsp;Type: [XmlNode](xmlnode-data-type.md)  
   

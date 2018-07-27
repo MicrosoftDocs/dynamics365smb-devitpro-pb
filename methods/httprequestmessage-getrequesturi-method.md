@@ -23,12 +23,12 @@ RequestUri :=   HttpRequestMessage.GetRequestUri()
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
 
-#### Parameters
+## Parameters
 *HttpRequestMessage*  
 &emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
 An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *RequestUri*  
 &emsp;Type: [String](string-data-type.md)  
   

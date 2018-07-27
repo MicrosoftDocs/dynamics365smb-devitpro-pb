@@ -21,12 +21,12 @@ Converts the value in a JsonArray to a JsonToken data type.
 Token :=   JsonArray.AsToken()
 ```
 
-#### Parameters
+## Parameters
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Token*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
   

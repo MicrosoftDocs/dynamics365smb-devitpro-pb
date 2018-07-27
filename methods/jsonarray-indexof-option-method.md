@@ -20,7 +20,7 @@ Replaces the value at the given index with a new value.
 ```
 Index :=   JsonArray.IndexOf(Value: Option)
 ```
-#### Parameters
+## Parameters
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
   
 
 
-#### Return Value
+## Return Value
 *Index*  
 &emsp;Type: [Integer](integer-data-type.md)  
   

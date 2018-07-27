@@ -20,7 +20,7 @@ Removes the property with the given key from the object.
 ```
 [Ok := ]  JsonObject.Remove(Key: String)
 ```
-#### Parameters
+## Parameters
 *JsonObject*  
 &emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
   
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
   

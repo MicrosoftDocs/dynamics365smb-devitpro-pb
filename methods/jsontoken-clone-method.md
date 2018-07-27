@@ -21,12 +21,12 @@ Creates a deep-copy of the JsonToken value.
 Clone :=   JsonToken.Clone()
 ```
 
-#### Parameters
+## Parameters
 *JsonToken*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
 An instance of the [JsonToken](jsontoken-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Clone*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
   

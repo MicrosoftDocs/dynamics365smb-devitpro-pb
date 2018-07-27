@@ -21,12 +21,12 @@ Creates a deep-copy of the JsonArray value.
 Clone :=   JsonArray.Clone()
 ```
 
-#### Parameters
+## Parameters
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Clone*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
   

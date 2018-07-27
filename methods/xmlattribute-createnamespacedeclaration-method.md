@@ -20,7 +20,7 @@ Creates an attribute that represents a namespace declaration.
 ```
 XmlAttribute :=   XmlAttribute.CreateNamespaceDeclaration(Prefix: String, NamespaceUri: String)
 ```
-#### Parameters
+## Parameters
 *Prefix*  
 &emsp;Type: [String](string-data-type.md)  
 The prefix of the attribute (if any).  
@@ -29,7 +29,7 @@ The prefix of the attribute (if any).
 The URI of the attribute. If the prefix is xmlns, then this parameter must be http://www.w3.org/2000/xmlns/; otherwise an exception is thrown.  
 
 
-#### Return Value
+## Return Value
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
   

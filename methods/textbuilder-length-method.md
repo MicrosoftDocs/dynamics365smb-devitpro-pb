@@ -22,7 +22,7 @@ Gets or sets the length of the current TextBuilder object.
 ```
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
@@ -31,7 +31,7 @@ An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 The new length of this instance.  
 
 
-#### Return Value
+## Return Value
 *OldLength*  
 &emsp;Type: [Integer](integer-data-type.md)  
   

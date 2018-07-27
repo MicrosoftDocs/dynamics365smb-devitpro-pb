@@ -23,12 +23,12 @@ CurrentBaseAddress :=   HttpClient.GetBaseAddress()
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
 
-#### Parameters
+## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *CurrentBaseAddress*  
 &emsp;Type: [String](string-data-type.md)  
 The base address of URI of the Internet resource used when sending requests.  

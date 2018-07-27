@@ -20,7 +20,7 @@ Selects a JsonToken using a JPath expression.
 ```
 [Ok := ]  JsonObject.SelectToken(Path: String, var Result: JsonToken)
 ```
-#### Parameters
+## Parameters
 *JsonObject*  
 &emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
@@ -32,7 +32,7 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
   
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
@@ -50,16 +50,16 @@ The following example shows how to select a value from a complex JSON Object. We
 We assume that the company token contains JSON data similar to the one below.
 
 ```
-{ &quot;company&quot;: {
-    &quot;employees&quot;: [
-      { &quot;id&quot;: &quot;Marcy&quot;,
-        &quot;salary&quot;: 8.95
+{ &amp;quot;company&amp;quot;: {
+    &amp;quot;employees&amp;quot;: [
+      { &amp;quot;id&amp;quot;: &amp;quot;Marcy&amp;quot;,
+        &amp;quot;salary&amp;quot;: 8.95
       },
-      { &quot;id&quot;: &quot;John&quot;,
-        &quot;salary&quot;: 7
+      { &amp;quot;id&amp;quot;: &amp;quot;John&amp;quot;,
+        &amp;quot;salary&amp;quot;: 7
       },
-      { &quot;id&quot;: &quot;Diana&quot;,
-        &quot;salary&quot;: 10.95
+      { &amp;quot;id&amp;quot;: &amp;quot;Diana&amp;quot;,
+        &amp;quot;salary&amp;quot;: 10.95
       }
     ]
   }
@@ -72,7 +72,7 @@ var
     query : Text;
     salaryToken : JsonToken;
 begin
-    query := '$.company.employees[?(@.id==&quot;'+employeeId+'&quot;)].salary';
+    query := '$.company.employees[?(@.id==&amp;quot;'+employeeId+'&amp;quot;)].salary';
     companyData.SelectToken(query, salaryToken);
 
     salary := salaryToken.AsValue().AsDecimal();    

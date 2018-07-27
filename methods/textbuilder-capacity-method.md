@@ -22,7 +22,7 @@ Gets or sets the maximum number of characters that can be contained in the memor
 ```
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
@@ -31,7 +31,7 @@ An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 The maximum number of characters that can be contained in the memory allocated by the current instance. Its value can range from Length to MaxCapacity.  
 
 
-#### Return Value
+## Return Value
 *OldCapacity*  
 &emsp;Type: [Integer](integer-data-type.md)  
   

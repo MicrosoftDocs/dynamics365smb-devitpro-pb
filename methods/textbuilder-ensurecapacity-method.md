@@ -20,7 +20,7 @@ Ensures that the capacity of this instance of StringBuilder is at least the spec
 ```
 [Ok := ]  TextBuilder.EnsureCapacity(NewCapacity: Integer)
 ```
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 The minimum capacity to ensure.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

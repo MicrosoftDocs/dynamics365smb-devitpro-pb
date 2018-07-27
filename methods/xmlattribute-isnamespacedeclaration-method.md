@@ -23,12 +23,12 @@ IsNamespaceDeclaration :=   XmlAttribute.IsNamespaceDeclaration()
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
 
-#### Parameters
+## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *IsNamespaceDeclaration*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
   

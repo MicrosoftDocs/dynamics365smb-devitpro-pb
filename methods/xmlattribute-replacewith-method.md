@@ -20,7 +20,7 @@ Replaces this node with the specified content.
 ```
 [Ok := ]  XmlAttribute.ReplaceWith(Node: Any,...)
 ```
-#### Parameters
+## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 The content with which to replace the current node.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

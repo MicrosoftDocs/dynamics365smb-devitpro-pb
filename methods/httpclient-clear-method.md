@@ -21,7 +21,7 @@ Sets the HttpClient variable to the default value.
  HttpClient.Clear()
 ```
 
-#### Parameters
+## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
 An instance of the [HttpClient](httpclient-data-type.md) data type.  

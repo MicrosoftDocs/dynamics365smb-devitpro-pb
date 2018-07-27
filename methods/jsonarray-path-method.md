@@ -23,12 +23,12 @@ Path :=   JsonArray.Path()
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
 
-#### Parameters
+## Parameters
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Path*  
 &emsp;Type: [String](string-data-type.md)  
   

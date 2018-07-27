@@ -21,7 +21,7 @@ Sets the HttpHeaders variable to the default value.
  HttpHeaders.Clear()
 ```
 
-#### Parameters
+## Parameters
 *HttpHeaders*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  

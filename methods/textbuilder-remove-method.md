@@ -20,7 +20,7 @@ Removes the specified range of characters from this instance.
 ```
 [Ok := ]  TextBuilder.Remove(StartIndex: Integer, Count: Integer)
 ```
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
@@ -32,7 +32,7 @@ The one-based position in this instance where removal begins.
 The number of characters to remove.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

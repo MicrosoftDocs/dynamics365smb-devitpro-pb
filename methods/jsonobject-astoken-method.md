@@ -21,12 +21,12 @@ Converts the value in a JsonObject to a JsonToken data type.
 Token :=   JsonObject.AsToken()
 ```
 
-#### Parameters
+## Parameters
 *JsonObject*  
 &emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Token*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
   

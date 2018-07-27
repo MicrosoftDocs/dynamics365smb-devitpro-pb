@@ -20,7 +20,7 @@ Sets the URI used for the HTTP request.
 ```
 [Ok := ]  HttpRequestMessage.SetRequestUri(RequestUri: String)
 ```
-#### Parameters
+## Parameters
 *HttpRequestMessage*  
 &emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
 An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data ty
   
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

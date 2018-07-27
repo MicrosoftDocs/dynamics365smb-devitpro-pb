@@ -20,7 +20,7 @@ Reads the JSON data from the stream into a JsonToken variable.
 ```
 [Ok := ]  JsonToken.ReadFrom(Data: InStream)
 ```
-#### Parameters
+## Parameters
 *JsonToken*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
 An instance of the [JsonToken](jsontoken-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [JsonToken](jsontoken-data-type.md) data type.
   
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

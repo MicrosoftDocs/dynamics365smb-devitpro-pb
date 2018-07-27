@@ -21,7 +21,7 @@ Sets the HttpContent object to a default value. The content contains an empty st
  HttpContent.Clear()
 ```
 
-#### Parameters
+## Parameters
 *HttpContent*  
 &emsp;Type: [HttpContent](httpcontent-data-type.md)  
 An instance of the [HttpContent](httpcontent-data-type.md) data type.  

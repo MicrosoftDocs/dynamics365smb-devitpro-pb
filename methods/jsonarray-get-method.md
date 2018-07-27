@@ -20,7 +20,7 @@ Retrieves the value at the given index in the JsonArray.
 ```
 [Ok := ]  JsonArray.Get(Index: Integer, var Result: JsonToken)
 ```
-#### Parameters
+## Parameters
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
@@ -32,7 +32,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 A variable of type JsonToken that will contain the result if the operation is successful.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

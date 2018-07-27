@@ -21,12 +21,12 @@ Converts the value in a JsonValue to an BigInteger data type.
 Result :=   JsonValue.AsBigInteger()
 ```
 
-#### Parameters
+## Parameters
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Result*  
 &emsp;Type: [BigInteger](biginteger-data-type.md)  
   

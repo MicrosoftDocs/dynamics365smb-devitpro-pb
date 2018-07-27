@@ -21,12 +21,12 @@ Converts the value in a JsonValue to an Option data type.
 Result :=   JsonValue.AsOption()
 ```
 
-#### Parameters
+## Parameters
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *Result*  
 &emsp;Type: [Option](option-data-type.md)  
   

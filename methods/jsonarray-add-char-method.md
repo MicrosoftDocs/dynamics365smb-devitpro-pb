@@ -20,7 +20,7 @@ Adds a new value at the end of the JsonArray.
 ```
  JsonArray.Add(Value: Char)
 ```
-#### Parameters
+## Parameters
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  

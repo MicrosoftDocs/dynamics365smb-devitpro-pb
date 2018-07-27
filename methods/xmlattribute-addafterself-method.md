@@ -20,7 +20,7 @@ Adds the specified content immediately after this node.
 ```
 [Ok := ]  XmlAttribute.AddAfterSelf(Content: Any,...)
 ```
-#### Parameters
+## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 The content to add after this node.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

@@ -20,7 +20,7 @@ Checks if an HttpHeaders contains a property with a given key.
 ```
 Result :=   HttpHeaders.Contains(Key: String)
 ```
-#### Parameters
+## Parameters
 *HttpHeaders*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
   
 
 
-#### Return Value
+## Return Value
 *Result*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the object contains a property with the given key; otherwise, **false**.  

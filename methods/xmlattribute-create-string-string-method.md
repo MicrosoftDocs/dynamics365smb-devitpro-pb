@@ -20,7 +20,7 @@ Creates an XmlAttribute node.
 ```
 XmlAttribute :=   XmlAttribute.Create(Name: String, Value: String)
 ```
-#### Parameters
+## Parameters
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
 The qualified name of the attribute. If the name is of the form {{namespace}}localName, it will be qualified with the given namespace.  
@@ -29,7 +29,7 @@ The qualified name of the attribute. If the name is of the form {{namespace}}loc
 The value of the attribute.  
 
 
-#### Return Value
+## Return Value
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
   

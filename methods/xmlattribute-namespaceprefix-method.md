@@ -23,12 +23,12 @@ NamespacePrefix :=   XmlAttribute.NamespacePrefix()
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
 
-#### Parameters
+## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
 
-#### Return Value
+## Return Value
 *NamespacePrefix*  
 &emsp;Type: [String](string-data-type.md)  
   

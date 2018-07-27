@@ -20,7 +20,7 @@ Sets the base address of Uniform Resource Identifier (URI) of the Internet resou
 ```
 [Ok := ]  HttpClient.SetBaseAddress(NewBaseAddress: String)
 ```
-#### Parameters
+## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [HttpClient](httpclient-data-type.md) data type.
   
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

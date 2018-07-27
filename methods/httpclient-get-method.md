@@ -20,7 +20,7 @@ Sends a GET request to get the resource identified by the request URL.
 ```
 [Ok := ]  HttpClient.Get(Path: String, var Response: HttpResponseMessage)
 ```
-#### Parameters
+## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
@@ -32,7 +32,7 @@ An instance of the [HttpClient](httpclient-data-type.md) data type.
   
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  

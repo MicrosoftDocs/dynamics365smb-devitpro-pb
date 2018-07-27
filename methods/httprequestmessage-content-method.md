@@ -22,7 +22,7 @@ Gets or sets the contents of the HTTP message.
 ```
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
-#### Parameters
+## Parameters
 *HttpRequestMessage*  
 &emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
 An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.  
@@ -31,7 +31,7 @@ An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data ty
   
 
 
-#### Return Value
+## Return Value
 *CurrentContent*  
 &emsp;Type: [HttpContent](httpcontent-data-type.md)  
   

@@ -20,7 +20,7 @@ Converts the value of this instance or a substring of this instance to a Text.
 ```
 Result :=   TextBuilder.ToText(StartIndex: Integer, Count: Integer)
 ```
-#### Parameters
+## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
@@ -32,7 +32,7 @@ The starting position of the substring in this instance.
 The number of characters in the substring.  
 
 
-#### Return Value
+## Return Value
 *Result*  
 &emsp;Type: [Text](text-data-type.md)  
   

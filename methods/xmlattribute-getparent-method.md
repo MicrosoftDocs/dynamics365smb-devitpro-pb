@@ -20,7 +20,7 @@ Gets the parent XmlElement of this node.
 ```
 [Ok := ]  XmlAttribute.GetParent(var Parent: XmlElement)
 ```
-#### Parameters
+## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
@@ -29,7 +29,7 @@ An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 The parent XmlElement of this node.  
 
 
-#### Return Value
+## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
