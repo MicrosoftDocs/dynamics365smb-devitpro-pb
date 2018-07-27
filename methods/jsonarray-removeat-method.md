@@ -26,7 +26,7 @@ Removes the token at the given index.
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Index*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The position of the element that will be removed.
+The position of the element that will be removed.  
 
 
 #### Return Value

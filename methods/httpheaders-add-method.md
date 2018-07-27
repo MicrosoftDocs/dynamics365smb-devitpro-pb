@@ -2,7 +2,7 @@
 title: "Add Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/26/2018
+ms.date: 07/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,10 +26,10 @@ Add sets the provided value for the provided header name.
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
 *Key*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 *Value*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 
 
 #### Return Value

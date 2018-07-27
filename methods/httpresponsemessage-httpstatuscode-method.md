@@ -20,7 +20,7 @@ Gets the status code of the HTTP response.
 ```
 StatusCode :=   HttpResponseMessage.HttpStatusCode()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

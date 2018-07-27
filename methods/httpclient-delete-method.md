@@ -2,7 +2,7 @@
 title: "Delete Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/26/2018
+ms.date: 07/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,10 +26,10 @@ Sends a DELETE request to delete the resource identified by the request URL.
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 *Path*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 *Response*  
 &emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
-
+  
 
 
 #### Return Value

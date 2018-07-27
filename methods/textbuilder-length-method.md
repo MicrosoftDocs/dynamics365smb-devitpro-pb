@@ -20,7 +20,7 @@ Gets or sets the length of the current TextBuilder object.
 ```
 [OldLength := ]  TextBuilder.Length([NewLength: Integer])
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 #### Parameters
 *TextBuilder*  
@@ -28,7 +28,7 @@ Gets or sets the length of the current TextBuilder object.
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 *NewLength*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The new length of this instance.
+The new length of this instance.  
 
 
 #### Return Value

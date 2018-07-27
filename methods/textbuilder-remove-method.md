@@ -26,10 +26,10 @@ Removes the specified range of characters from this instance.
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 *StartIndex*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The one-based position in this instance where removal begins.
+The one-based position in this instance where removal begins.  
 *Count*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The number of characters to remove.
+The number of characters to remove.  
 
 
 #### Return Value

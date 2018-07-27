@@ -26,7 +26,7 @@ Serializes and writes the JSON data of the JsonArray to a given OutStream object
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Data*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
-
+  
 
 
 #### Return Value

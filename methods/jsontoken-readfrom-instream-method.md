@@ -26,7 +26,7 @@ Reads the JSON data from the stream into a JsonToken variable.
 An instance of the [JsonToken](jsontoken-data-type.md) data type.  
 *Data*  
 &emsp;Type: [InStream](instream-data-type.md)  
-
+  
 
 
 #### Return Value

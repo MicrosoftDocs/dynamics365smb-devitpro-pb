@@ -26,7 +26,7 @@ Index :=   JsonArray.IndexOf(Value: JsonToken)
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Value*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
-
+  
 
 
 #### Return Value

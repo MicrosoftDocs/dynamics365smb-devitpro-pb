@@ -2,7 +2,7 @@
 title: "HttpRequestMessage Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/26/2018
+ms.date: 07/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,8 +29,8 @@ The following methods are available on instances of the HttpRequestMessage data 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-> [!NOTE]  
-> For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data. 
+&gt; [!NOTE]  
+&gt; For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data. 
 
 ## See Also
 [Getting Started with AL](../devenv-get-started.md)  

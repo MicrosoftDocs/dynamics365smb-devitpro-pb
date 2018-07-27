@@ -26,7 +26,7 @@ Index :=   JsonArray.IndexOf(Value: BigInteger)
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Value*  
 &emsp;Type: [BigInteger](biginteger-data-type.md)  
-
+  
 
 
 #### Return Value

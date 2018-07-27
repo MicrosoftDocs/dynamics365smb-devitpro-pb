@@ -26,7 +26,7 @@ Appends a copy of the specified string to this instance.
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-The text to append.
+The text to append.  
 
 
 #### Return Value

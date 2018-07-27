@@ -20,7 +20,7 @@ author: solsen
 ```
 Values :=   JsonObject.Values()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

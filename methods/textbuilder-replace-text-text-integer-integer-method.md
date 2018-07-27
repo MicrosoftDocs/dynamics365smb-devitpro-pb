@@ -26,16 +26,16 @@ Replaces all occurrences of a specified string in this instance with another spe
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 *OldText*  
 &emsp;Type: [Text](text-data-type.md)  
-The string to replace.
+The string to replace.  
 *NewText*  
 &emsp;Type: [Text](text-data-type.md)  
-The string that replaces OldText.
+The string that replaces OldText.  
 *StartIndex*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The position in this instance where the substring begins.
+The position in this instance where the substring begins.  
 *Count*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The length of the substring.
+The length of the substring.  
 
 
 #### Return Value

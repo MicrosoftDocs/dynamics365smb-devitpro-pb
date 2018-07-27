@@ -20,7 +20,7 @@ Gets or sets the maximum number of characters that can be contained in the memor
 ```
 [OldCapacity := ]  TextBuilder.Capacity([NewCapacity: Integer])
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 #### Parameters
 *TextBuilder*  
@@ -28,7 +28,7 @@ Gets or sets the maximum number of characters that can be contained in the memor
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 *NewCapacity*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The maximum number of characters that can be contained in the memory allocated by the current instance. Its value can range from Length to MaxCapacity.
+The maximum number of characters that can be contained in the memory allocated by the current instance. Its value can range from Length to MaxCapacity.  
 
 
 #### Return Value

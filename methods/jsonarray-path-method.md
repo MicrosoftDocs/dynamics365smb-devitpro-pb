@@ -20,7 +20,7 @@ Retrieves the JSON path of the array relative to the root of its containing tree
 ```
 Path :=   JsonArray.Path()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

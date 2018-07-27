@@ -26,10 +26,10 @@ Selects a JsonToken using a JPath expression.
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Path*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 *Result*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
-
+  
 
 
 #### Return Value
@@ -51,16 +51,16 @@ The following example shows how to select a value from a complex JSON Object. We
 We assume that the company token contains JSON data similar to the one below.
 
 ```
-{ "company": {
-    "employees": [
-      { "id": "Marcy",
-        "salary": 8.95
+{ &quot;company&quot;: {
+    &quot;employees&quot;: [
+      { &quot;id&quot;: &quot;Marcy&quot;,
+        &quot;salary&quot;: 8.95
       },
-      { "id": "John",
-        "salary": 7
+      { &quot;id&quot;: &quot;John&quot;,
+        &quot;salary&quot;: 7
       },
-      { "id": "Diana",
-        "salary": 10.95
+      { &quot;id&quot;: &quot;Diana&quot;,
+        &quot;salary&quot;: 10.95
       }
     ]
   }
@@ -73,7 +73,7 @@ var
     query : Text;
     salaryToken : JsonToken;
 begin
-    query := '$.company.employees[?(@.id=="'+employeeId+'")].salary';
+    query := '$.company.employees[?(@.id==&quot;'+employeeId+'&quot;)].salary';
     companyData.SelectToken(query, salaryToken);
 
     salary := salaryToken.AsValue().AsDecimal();    

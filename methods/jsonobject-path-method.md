@@ -20,7 +20,7 @@ Retrieves the JSON path of the object relative to the root of its containing tre
 ```
 Path :=   JsonObject.Path()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

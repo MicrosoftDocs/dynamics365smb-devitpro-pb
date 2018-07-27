@@ -26,7 +26,7 @@ Reads the JSON data from the string into a JsonToken variable.
 An instance of the [JsonToken](jsontoken-data-type.md) data type.  
 *Data*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 
 
 #### Return Value

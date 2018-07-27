@@ -26,7 +26,7 @@ Reads the JSON data from the stream into a JsonObject variable.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 *Data*  
 &emsp;Type: [InStream](instream-data-type.md)  
-
+  
 
 
 #### Return Value

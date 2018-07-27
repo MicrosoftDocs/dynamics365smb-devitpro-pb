@@ -26,7 +26,7 @@ Index :=   JsonArray.IndexOf(Value: Date)
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Value*  
 &emsp;Type: [Date](date-data-type.md)  
-
+  
 
 
 #### Return Value

@@ -20,7 +20,7 @@ Retrieves the JSON path of the token relative to the root of its containing tree
 ```
 Path :=   JsonToken.Path()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

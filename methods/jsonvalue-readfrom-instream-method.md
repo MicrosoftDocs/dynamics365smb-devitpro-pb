@@ -26,7 +26,7 @@ Reads the JSON data into a JsonValue variable.
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 *Data*  
 &emsp;Type: [InStream](instream-data-type.md)  
-
+  
 
 
 #### Return Value

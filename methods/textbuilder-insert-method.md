@@ -26,10 +26,10 @@ Inserts a string into this instance at the specified character position.
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 *Position*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The position in this instance where insertion begins.
+The position in this instance where insertion begins.  
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-The string to insert.
+The string to insert.  
 
 
 #### Return Value

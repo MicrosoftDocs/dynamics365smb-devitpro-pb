@@ -26,10 +26,10 @@ Replaces the value at the given index with a new value.
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Index*  
 &emsp;Type: [Integer](integer-data-type.md)  
-
+  
 *Result*  
 &emsp;Type: [Date](date-data-type.md)  
-
+  
 
 
 #### Return Value

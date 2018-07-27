@@ -2,7 +2,7 @@
 title: "HttpContent Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/26/2018
+ms.date: 07/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ The following methods are available on instances of the HttpContent data type.
 |[WriteFrom(Text)](httpcontent-writefrom-text-method.md)|Sets HttpContent content to the provided text or stream.|
 |[WriteFrom(InStream)](httpcontent-writefrom-instream-method.md)|Sets HttpContent content to the provided text or stream.|
 |[GetHeaders(var HttpHeaders)](httpcontent-getheaders-method.md)|Gets the content's Http headers.|
-|[ReadAs(var Text)](httpcontent-readas-outputstring-method.md)|Reads the content into the provided text.|
+|[ReadAs(var Text)](httpcontent-readas-text-method.md)|Reads the content into the provided text.|
 |[ReadAs(var InStream)](httpcontent-readas-instream-method.md)|Reads the content into the provided text.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

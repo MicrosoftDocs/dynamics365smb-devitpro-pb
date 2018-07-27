@@ -20,7 +20,7 @@ Gets the maximum capacity of this instance.
 ```
 MaxCapacity :=   TextBuilder.MaxCapacity()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

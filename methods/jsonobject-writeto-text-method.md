@@ -26,7 +26,7 @@ Serializes and writes the JSON data of the JsonObject to a given Text object.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 *Data*  
 &emsp;Type: [Text](text-data-type.md)  
-
+  
 
 
 #### Return Value

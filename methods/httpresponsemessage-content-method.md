@@ -20,7 +20,7 @@ Gets the contents of the HTTP request.
 ```
 Content :=   HttpResponseMessage.Content()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

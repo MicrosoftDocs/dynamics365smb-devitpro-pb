@@ -26,10 +26,10 @@ Result :=   TextBuilder.ToText(StartIndex: Integer, Count: Integer)
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 *StartIndex*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The starting position of the substring in this instance.
+The starting position of the substring in this instance.  
 *Count*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The number of characters in the substring.
+The number of characters in the substring.  
 
 
 #### Return Value

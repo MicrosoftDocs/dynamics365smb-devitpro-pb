@@ -20,7 +20,7 @@ Indicates whether a JsonToken contains a JSON object.
 ```
 Ok :=   JsonToken.IsObject()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

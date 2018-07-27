@@ -20,7 +20,7 @@ Gets the number of elements in the JsonArray.
 ```
 Count :=   JsonArray.Count()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

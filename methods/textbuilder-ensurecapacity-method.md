@@ -26,7 +26,7 @@ Ensures that the capacity of this instance of StringBuilder is at least the spec
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 *NewCapacity*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The minimum capacity to ensure.
+The minimum capacity to ensure.  
 
 
 #### Return Value

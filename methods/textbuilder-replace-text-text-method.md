@@ -26,10 +26,10 @@ Replaces all occurrences of a specified string in this instance with another spe
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 *OldText*  
 &emsp;Type: [Text](text-data-type.md)  
-The string to replace.
+The string to replace.  
 *NewText*  
 &emsp;Type: [Text](text-data-type.md)  
-The string that replaces OldText.
+The string that replaces OldText.  
 
 
 #### Return Value

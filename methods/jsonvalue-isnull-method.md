@@ -20,7 +20,7 @@ Indicates whether the JsonValue contains the JSON value of NULL.
 ```
 Ok :=   JsonValue.IsNull()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

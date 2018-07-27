@@ -35,7 +35,7 @@ An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks 
-If the JsonValue does not contain a string of the format "o" as specified here the operation will fail with a run-time error.
+If the JsonValue does not contain a string of the format &quot;o&quot; as specified here the operation will fail with a run-time error.
 
 If there is no timezone specifier, the value will be treated as a UTC DateTime. If the timezone specifier is local, it will be treated as local to the server's timezone and converted to UTC. We recommend using UTC time to prevent unexpected behavior.
 

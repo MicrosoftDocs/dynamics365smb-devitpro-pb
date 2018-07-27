@@ -2,7 +2,7 @@
 title: "Content Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/26/2018
+ms.date: 07/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ Gets or sets the contents of the HTTP message.
 ```
 [CurrentContent := ]  HttpRequestMessage.Content([SetContent: HttpContent])
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 #### Parameters
 *HttpRequestMessage*  
@@ -28,7 +28,7 @@ Gets or sets the contents of the HTTP message.
 An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.  
 *SetContent*  
 &emsp;Type: [HttpContent](httpcontent-data-type.md)  
-
+  
 
 
 #### Return Value

@@ -26,7 +26,7 @@ author: solsen
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 *Data*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 
 
 #### Return Value

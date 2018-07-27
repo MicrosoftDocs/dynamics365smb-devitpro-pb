@@ -26,10 +26,10 @@ Retrieves the value at the given index in the JsonArray.
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Index*  
 &emsp;Type: [Integer](integer-data-type.md)  
-
+  
 *Result*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
-A variable of type JsonToken that will contain the result if the operation is successful.
+A variable of type JsonToken that will contain the result if the operation is successful.  
 
 
 #### Return Value

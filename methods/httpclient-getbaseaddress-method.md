@@ -2,7 +2,7 @@
 title: "GetBaseAddress Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/26/2018
+ms.date: 07/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ Gets the base address of Uniform Resource Identifier (URI) of the Internet resou
 ```
 CurrentBaseAddress :=   HttpClient.GetBaseAddress()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

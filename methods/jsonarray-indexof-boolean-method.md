@@ -26,7 +26,7 @@ Index :=   JsonArray.IndexOf(Value: Boolean)
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Value*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-
+  
 
 
 #### Return Value

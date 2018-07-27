@@ -26,7 +26,7 @@ Reads the JSON data from the stream into a JsonArray variable.
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Data*  
 &emsp;Type: [InStream](instream-data-type.md)  
-
+  
 
 
 #### Return Value

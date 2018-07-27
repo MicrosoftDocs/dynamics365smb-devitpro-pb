@@ -26,7 +26,7 @@ Serializes and writes the JSON data of the JsonValue to a given object.
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 *Data*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
-
+  
 
 
 #### Return Value

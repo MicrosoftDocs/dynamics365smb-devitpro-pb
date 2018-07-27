@@ -20,7 +20,7 @@ Retrieves the JSON path of the value relative to its containing tree.
 ```
 Path :=   JsonValue.Path()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

@@ -26,10 +26,10 @@ Adds a new property to a JsonObject.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 *Key*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 *Value*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 
 
 #### Return Value

@@ -26,10 +26,10 @@ author: solsen
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 *Path*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 *Result*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
-
+  
 
 
 #### Return Value

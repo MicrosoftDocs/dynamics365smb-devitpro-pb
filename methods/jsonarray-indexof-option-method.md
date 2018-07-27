@@ -26,7 +26,7 @@ Index :=   JsonArray.IndexOf(Value: Option)
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Value*  
 &emsp;Type: [Option](option-data-type.md)  
-
+  
 
 
 #### Return Value

@@ -26,7 +26,7 @@ Index :=   JsonArray.IndexOf(Value: Byte)
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 *Value*  
 &emsp;Type: [Byte](byte-data-type.md)  
-
+  
 
 
 #### Return Value

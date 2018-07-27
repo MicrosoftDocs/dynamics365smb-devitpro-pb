@@ -2,7 +2,7 @@
 title: "WriteFrom Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/26/2018
+ms.date: 07/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ Sets HttpContent content to the provided text or stream.
 An instance of the [HttpContent](httpcontent-data-type.md) data type.  
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-A new HttpContent is constructed with this value and headers from before.
+A new HttpContent is constructed with this value and headers from before.  
 
 
 

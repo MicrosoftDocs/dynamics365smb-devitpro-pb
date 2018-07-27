@@ -20,7 +20,7 @@ Gets the HTTP request's HTTP headers.
 ```
 Headers :=   HttpResponseMessage.Headers()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

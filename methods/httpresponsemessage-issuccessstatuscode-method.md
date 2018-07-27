@@ -20,7 +20,7 @@ Gets a value that indicates if the HTTP response was successful.
 ```
 IsSuccessStatusCode :=   HttpResponseMessage.IsSuccessStatusCode()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

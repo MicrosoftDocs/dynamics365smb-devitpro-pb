@@ -26,7 +26,7 @@ Appends a copy of the specified string followed by the default line terminator t
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-The string to append.
+The string to append.  
 
 
 #### Return Value

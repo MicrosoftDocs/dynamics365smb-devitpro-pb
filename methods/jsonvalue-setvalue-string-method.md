@@ -26,7 +26,7 @@ Set the contents of the JsonValue variable to the JSON representation of the giv
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 *Value*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 
 
 

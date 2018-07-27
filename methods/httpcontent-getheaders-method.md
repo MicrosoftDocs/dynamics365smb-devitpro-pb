@@ -2,7 +2,7 @@
 title: "GetHeaders Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/26/2018
+ms.date: 07/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ Gets the content's Http headers.
 An instance of the [HttpContent](httpcontent-data-type.md) data type.  
 *Headers*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
-
+  
 
 
 #### Return Value

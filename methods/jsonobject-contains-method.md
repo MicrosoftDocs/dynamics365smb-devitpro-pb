@@ -26,7 +26,7 @@ Ok :=   JsonObject.Contains(Key: String)
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 *Key*  
 &emsp;Type: [String](string-data-type.md)  
-
+  
 
 
 #### Return Value

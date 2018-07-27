@@ -20,7 +20,7 @@ Indicates whether a JsonToken represents a JSON array.
 ```
 Ok :=   JsonToken.IsArray()
 ```
-> [!NOTE]
+> [!NOTE]  
 > This method can be invoked using property access syntax.  
 
 #### Parameters

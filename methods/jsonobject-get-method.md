@@ -27,10 +27,10 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 *Key*  
 &emsp;Type: [String](string-data-type.md)  
 
-          
+            
 *Value*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
-
+  
 
 
 #### Return Value
