@@ -183,6 +183,22 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[na
 
      For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md).  
 
+10.  Run the schema synchronization with validation to complete the database conversion.  
+
+        For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).  
+
+
+11.  Upgrade the V1 extensions that you uninstalled previously by reinstalling them. For each V1 Extension, run this command:
+    
+        ```  
+        Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> –Tenant <TenantID>
+        ```
+    
+        Replace `<Name>` and `<N.N.N.N>` with the name and version of the Extension V1 as it appeared in the previous step. For `<TenantID>`, in single-tenant deployments, you either specify `default` or you omit the `–Tenant` parameter.
+        
+        This will upgrade the V1 extensions.        
+
+
 10. Recompile published extensions.
 
     Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) of the [!INCLUDE[navnowlong_md](includes/navnowlong_md.md)] Administration Shell to compile the published extensions to make sure they are work with the new platform.
@@ -192,11 +208,6 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[na
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
     ```   
-
-10.  Run the schema synchronization with validation to complete the database conversion.  
-
-        For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).  
-
 11.  If you converted a [!INCLUDE[navcorfu_md](includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)]. For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
 
 12. Upload the customer license to the converted database.  
