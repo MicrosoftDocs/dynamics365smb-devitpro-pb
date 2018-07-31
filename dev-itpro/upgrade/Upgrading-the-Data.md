@@ -89,7 +89,7 @@ Open the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)] that matches to old 
 1.  To get a list of the V1 extensions that are installed, run this command:
 
     ```
-    Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant <TenantID> |ft
+    Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant <TenantID>
     ```
     
     Replace `<ServerInstanceName>` with the name of the [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance that the database connects to. Replace `<TenantID>` with the tenant ID of the database. If you do not have a multitenant server instance, use `default`.

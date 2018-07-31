@@ -70,9 +70,31 @@ To convert the old database to a [!INCLUDE[nav2018_md](includes/nav2018_md.md)] 
 
 7.  Run the schema synchronization with validation to synchronize the database schema changes.  
 
-    For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).  
+    For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).
 
-8.  Stop the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](includes/nav_dev_short_md.md)].
+8. Uninstall all V1 extensions in old database
+
+    Open the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)] that matches to old database, and run these commands: 
+    1.  To get a list of the V1 extensions that are installed, run this command:
+
+        ```
+        Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant <TenantID>
+        ```
+    
+        Replace `<ServerInstanceName>` with the name of the [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance that the database connects to. Replace `<TenantID>` with the tenant ID of the database. If you do not have a multitenant server instance, use `default`.
+
+    <!-- In the table that appears, V1 extensions are indicated by `CSIDE` in the `Extension Type` column.-->
+
+        Make a note of the V1 extensions that you will uninstall because you will reinstall these later, after you upgrade the database.
+    2. For each Extension V1, run this command to uninstall it:
+
+        ```
+        Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
+        ```
+  
+         Replace `<Name>` and `<N.N.N.N>` with the name and version of the Extension V1 as it appeared in the previous step.  
+
+9.  Stop the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](includes/nav_dev_short_md.md)].
 
     You can use the [!INCLUDE[nav_admin](includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell](includes/nav_shell_md.md)].
 
@@ -82,7 +104,7 @@ To convert the old database to a [!INCLUDE[nav2018_md](includes/nav2018_md.md)] 
     ```
     Set-NAVServerInstance –ServerInstance <ServerInstanceName> -Stop
     ```
-9. Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old database in SQL Server.  
+10. Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old database in SQL Server.  
 
     Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
 
