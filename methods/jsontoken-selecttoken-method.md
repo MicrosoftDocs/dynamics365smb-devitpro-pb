@@ -54,16 +54,16 @@ The following example shows how to select a value from a complex JSON Object. We
 We assume that the company token contains JSON data similar to the one below.
 
 ```
-{ &amp;quot;company&amp;quot;: {
-    &amp;quot;employees&amp;quot;: [
-      { &amp;quot;id&amp;quot;: &amp;quot;Marcy&amp;quot;,
-        &amp;quot;salary&amp;quot;: 8.95
+{ "company": {
+    "employees": [
+      { "id": "Marcy",
+        "salary": 8.95
       },
-      { &amp;quot;id&amp;quot;: &amp;quot;John&amp;quot;,
-        &amp;quot;salary&amp;quot;: 7
+      { "id": "John",
+        "salary": 7
       },
-      { &amp;quot;id&amp;quot;: &amp;quot;Diana&amp;quot;,
-        &amp;quot;salary&amp;quot;: 10.95
+      { "id": "Diana",
+        "salary": 10.95
       }
     ]
   }
@@ -76,7 +76,7 @@ var
     query : Text;
     salaryToken : JsonToken;
 begin
-    query := '$.company.employees[?(@.id==&amp;quot;'+employeeId+'&amp;quot;)].salary';
+    query := '$.company.employees[?(@.id=="'+employeeId+'")].salary';
     companyData.SelectToken(query, salaryToken);
 
     salary := salaryToken.AsValue().AsDecimal();    

@@ -61,8 +61,8 @@ The following methods are available on instances of the JsonValue data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-&amp;gt; [!NOTE]  
-&amp;gt; For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data.
+> [!NOTE]  
+> For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data.
 
 ## See Also
 [Getting Started with AL](../devenv-get-started.md)  
