@@ -1,0 +1,68 @@
+---
+title: "Write Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 08/01/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+# Write Method
+Streams a BigText object to a BLOB field in a table.
+
+## Syntax
+```
+[Ok := ]  BigText.Write(OutStream: OutStream)
+```
+## Parameters
+*BigText*  
+&emsp;Type: [BigText](bigtext-data-type.md)  
+An instance of the [BigText](bigtext-data-type.md) data type.  
+*OutStream*  
+&emsp;Type: [OutStream](outstream-data-type.md)  
+The stream to which you write a BigText.  
+
+
+## Return Value
+*Ok*  
+&emsp;Type: [Boolean](boolean-data-type.md)  
+  
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ To delete the content in a BigText variable, use the CLEAR method.  
+  
+```  
+CLEAR(BigText)  
+```  
+  
+## Example  
+ This example shows how to stream a BigText to a BLOB field in a table.  
+  
+ This example requires that you define the following variables.  
+  
+|Variable name|DataType|Subtype|  
+|-------------------|--------------|-------------|  
+|Bstr|BigText|Not applicable|  
+|ItemRec|Record|Item|  
+|Ostream|OutStream|Not applicable|  
+  
+```  
+Bstr.ADDTEXT('This is the text string that we want to store in a BLOB field.');  
+ItemRec.Picture.CREATEOUTSTREAM(Ostream);  
+Bstr.WRITE(Ostream);  
+ItemRec.INSERT;  
+```  
+  
+## See Also
+[BigText Data Type](bigtext-data-type.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)
