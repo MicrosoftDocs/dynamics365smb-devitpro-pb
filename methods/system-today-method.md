@@ -2,7 +2,7 @@
 title: "Today Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/31/2018
+ms.date: 08/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,6 +33,26 @@ Date :=   System.Today()
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ You can only use the **TODAY** method to retrieve the current date from the operating system. You cannot use it to set the date in the operating system.  
+  
+## Example  
+ This example shows how to use the **TODAY** method. This example requires that you create the following global text constant.  
+  
+|Name|ConstValue|  
+|----------|----------------|  
+|Text000|The current date is: %1|  
+  
+```  
+MESSAGE(Text000, TODAY);  
+```  
+  
+ The message window could display the following:  
+  
+ **The current date is: 05/27/08**  
+  
+
 ## See Also
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

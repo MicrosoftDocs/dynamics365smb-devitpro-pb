@@ -2,7 +2,7 @@
 title: "Sleep Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/31/2018
+ms.date: 08/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,6 +30,14 @@ The number of milliseconds to return control to the operating system.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ When you use the SLEEP method, control is guaranteed to return to the operating system for at least *Duration* milliseconds.  
+  
+> [!NOTE]  
+>  The period may be longer than *Duration* milliseconds, depending on what the operating system is doing at the time that control is to return to the caller.  
+  
+  
 ## See Also
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

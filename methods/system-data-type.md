@@ -2,7 +2,7 @@
 title: "System Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/31/2018
+ms.date: 08/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -80,11 +80,7 @@ The following methods are available on the System data type.
 |[GetDotNetType(Any)](system-getdotnettype-method.md)|Gets the System.Type that corresponds to the given value.|
 |[CanLoadType(DotNet)](system-canloadtype-method.md)|Tests if the specified .NET Framework type can be loaded.|
 |[CaptionClassTranslate(String)](system-captionclasstranslate-method.md)|Returns a translated version of the caption string. The string is translated to the current local language.|
-|[GetUrl(ClientType, [String], [ObjectType], [Integer], [Table], [Boolean])](system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)|
-          Generates a URL for the specified client target that is based on the configuration of the server instance.
-
-          If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.
-        |
+|[GetUrl(ClientType, [String], [ObjectType], [Integer], [Table], [Boolean])](system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)| Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GetUrl(ClientType, String, ObjectType, Integer, RecordRef, [Boolean])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)|
           Generates a URL for the specified client target that is based on the configuration of the server instance.
 

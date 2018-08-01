@@ -2,7 +2,7 @@
 title: "Variant2Date Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/31/2018
+ms.date: 08/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,6 +35,22 @@ The input variant.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
+## Example  
+ This example requires that you create the following variables.  
+
+|Name|DataType|  
+|----------|--------------|  
+|TestDate|Date|  
+|variant1|Variant|  
+
+```  
+variant1 := TODAY;  
+TestDate := VARIANT2DATE(variant1);  
+```  
+
+
 ## See Also
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

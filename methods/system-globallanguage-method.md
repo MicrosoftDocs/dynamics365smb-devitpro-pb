@@ -2,7 +2,7 @@
 title: "GlobalLanguage Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/31/2018
+ms.date: 08/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,6 +37,12 @@ Gets and sets the current global language setting.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ The LanguageID is a standard Windows language ID. The Windows Language virtual table contains a list of these IDs and the corresponding names and short names.  
+  
+ For more information, see [Multilanguage Development](../devenv-multilanguage-development.md). 
+ 
 ## See Also
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

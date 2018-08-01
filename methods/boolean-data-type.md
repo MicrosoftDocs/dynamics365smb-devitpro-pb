@@ -1,5 +1,5 @@
 ---
-title: "CodeCoverageInclude Method"
+title: "Boolean Data Type"
 ms.author: solsen
 ms.custom: na
 ms.date: 08/01/2018
@@ -13,24 +13,17 @@ author: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
-# CodeCoverageInclude Method
-
-
-## Syntax
-```
- System.CodeCoverageInclude(var ObjectRecord: Table)
-```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
-## Parameters
-*ObjectRecord*  
-&emsp;Type: [Table](table-data-type.md)  
-  
+# Boolean Data Type
+Indicates true or false.
 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks 
+
+You can use the [FORMAT method (Code, Text)](../methods/devenv-format-method-code-text.md) to specify how Boolean values are shown.
+
 ## See Also
-[System Data Type](system-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Developing Extensions](../devenv-dev-overview.md)  

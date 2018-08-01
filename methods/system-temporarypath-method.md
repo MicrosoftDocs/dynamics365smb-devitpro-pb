@@ -2,7 +2,7 @@
 title: "TemporaryPath Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/31/2018
+ms.date: 08/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,6 +33,14 @@ String :=   System.TemporaryPath()
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ This method returns a string that contains the path of the directory where the temporary file for [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] is stored. This string ends with a backslash \('\\'\) and does not contain the name of the temp file.  
+  
+ The string cannot contain more than 255 characters.  
+  
+ If this method is called from an application that is running on a [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] Application Server, it returns the path of the directory where the [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] Application Server is installed. 
+
 ## See Also
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

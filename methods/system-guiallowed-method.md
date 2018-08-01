@@ -2,7 +2,7 @@
 title: "GuiAllowed Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/31/2018
+ms.date: 08/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,6 +33,33 @@ Ok :=   System.GuiAllowed()
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ User Portal Application Server accepts GUIALLOWED.  
+
+## Example  
+ This example shows how to use the GUIALLOWED method.  
+
+ This example requires that you create the following global text constant.  
+
+|Text constant|ENU value|  
+|-------------------|---------------|  
+|Text000|Code is running on a client.|  
+
+```  
+IF GUIALLOWED THEN  
+ MESSAGE(Text000);  
+```  
+
+ If the code runs on a client, which means that the user interface is available, a message box will appear with the following message.  
+
+ **Code is running on a client**  
+
+ If the code runs on Microsoft Dynamics NAV Application Server, then the message will not be displayed.  
+
+> [!NOTE]  
+>  If the [MESSAGE Method \(Dialog\)](devenv-MESSAGE-Method-Dialog.md) or the [ERROR Method \(Dialog\)](devenv-ERROR-Method-Dialog.md) is called when the code is running on Microsoft Dynamics NAV Application Server, then the message is written to the event log of the operating system. 
+
 ## See Also
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  
