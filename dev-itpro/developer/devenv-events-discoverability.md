@@ -1,6 +1,6 @@
 ---
 title: Events Discoverability
-description: Event recorder is used to record actions and methods that used for quick click. Or some date like that was specified to 
+description: Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario.
 ms.custom: na
 ms.date: 07/09/2018
 ms.reviewer: na
@@ -13,6 +13,9 @@ caps.latest.revision: 24
 author: SusanneWindfeldPedersen
 ---
 # Discoverability of Events 
+> [!IMPORTANT]  
+> [!INCLUDE[vnext_preview](includes/vnext_preview.md)]
+
 You subscribe to events to extend application and interact with the base application and other V2 extensions. This topic describes how to discover events that you can subscribe to without writing the code manually. Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario. For example, record the events raised when you post a purchase order and identify the events that you need for your extension. You can retrieve the events in the form of AL snippet code and use them in Visual Studio Code directly. 
 
 ## Using the Event Recorder
