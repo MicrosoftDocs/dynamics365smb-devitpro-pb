@@ -19,10 +19,10 @@ author: SusanneWindfeldPedersen
 You subscribe to events to extend application and interact with the base application and other V2 extensions. This topic describes how to discover events that you can subscribe to without writing the code manually. Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario. For example, record the events raised when you post a purchase order and identify the events that you need for your extension. You can retrieve the events in the form of AL snippet code and use them in Visual Studio Code directly. 
 
 ## Using the Event Recorder
-You can launch the Event Recorder session from Dynamics 365 Business Central. It can be accessed in the following two ways:
+You can launch the Event Recorder session from [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)]. It can be accessed in the following two ways:
 
-- In Dynamics 365 Business Central, search for **Event Recorder**.
-- In Visual Studio Code, use the `Ctrl+Shift+P` keys and select the **Open Event Recorder** command to open the Event Recorder page in the Dynamics 365 Business Central web client.
+- In [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)], search for **Event Recorder**.
+- In Visual Studio Code, use the `Ctrl+Shift+P` keys and select the **Open Event Recorder** command to open the Event Recorder page in the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] web client.
 
 ### How to record Events
 The following steps describe how to record events when you are on the Event Recorder page.
