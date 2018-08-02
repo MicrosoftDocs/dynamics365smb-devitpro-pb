@@ -50,6 +50,9 @@ All the recorded events display in the order they were called. The Event Recorde
 You can identify the Event types, additionally, you can discover which object types and methods raised the events with the details like calling methods, object types, and object names. For more information about Events, see [Events in AL](devenv-events-in-al.md).
   
 ## See Also
-[Events in AL](devenv-events.md)  
+[Events in AL](devenv-events-in-al.md)  
+[Publishing Events](devenv-publishing-events.md)  
+[Raising Events](devenv-raising-events.md)  
+[Subscribing to Events](devenv-subscribing-to-events.md)  
 [Debugging in AL](devenv-debugging.md)  
 [Developing Extensions](devenv-dev-overview.md)  
