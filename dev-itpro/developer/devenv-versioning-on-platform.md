@@ -27,7 +27,7 @@ In the runtime property, the **Latest** value is the default value. When you set
 ![Runtime Property](media/runtime.png)
 
 > [!NOTE]  
-> AL Language extension is not compatible with Dynamics NAV 2018 version backwards. For Dynamics NAV 2018 development, the traditional method should be used. You must install the Visual Studio Code extension from the `ALLanguage.vsix` file shipped on the DVD. 
+> AL Language extension is not compatible with [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] version backwards. For [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] development, the traditional method should be used. You must install the Visual Studio Code extension from the `ALLanguage.vsix` file shipped on the DVD. 
 
 ## Version compatibility
 **Scenario 1**: If the server receives an extension which is compiled with a higher runtime version than the one it supports, then an error will be thrown. For example, if you set the runtime value to '2.0', you get the following error message. 
