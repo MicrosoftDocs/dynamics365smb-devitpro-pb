@@ -72,6 +72,13 @@ The following methods are available on instances of the JsonObject data type.
 > [!NOTE]  
 > For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data.
 
+## Remarks 
+An unitialized variable of JsonObject type represents an empty JSON object. Given a value of JsonObject type, you can check if it is empty by checking that the number of keys in the object is 0.
+
+```
+jsonObject.Keys.Count =  0
+```
+
 ## See Also
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
