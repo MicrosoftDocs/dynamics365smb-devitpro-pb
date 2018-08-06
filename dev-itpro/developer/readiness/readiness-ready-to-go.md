@@ -70,7 +70,7 @@ To get access to the available builds on the platform you need to follow the ins
 Guidelines for developing and publishing Business Central apps:
 - [Add-on apps](https://aka.ms/BusinessCentralAddOnApps)
     - Whitepaper 1: [Getting you started with Dynamics 365 Business Central Add-on apps](https://go.microsoft.com/fwlink/?linkid=869734)
-    - Whitepaper 2: [Developing and publishing Dynamics 365 Business Central Add-on apps](https://go.microsoft.com/fwlink/?linkid=869734)
+    - Whitepaper 2: [Developing and publishing Dynamics 365 Business Central Add-on apps](https://go.microsoft.com/fwlink/?linkid=869733)
 - [Connect Apps](https://aka.ms/BusinessCentralConnectApps)
     - Whitepaper 1: [Getting you started with Dynamics 365 Business Central Connect apps](https://go.microsoft.com/fwlink/?linkid=2005501)
     - Whitepaper 2: [Developing and publishing Dynamics 365 Business Central Connect apps](https://go.microsoft.com/fwlink/?linkid=2005402)
