@@ -20,7 +20,7 @@ The time logged in long running SQL queries is the time spent on the called data
 The threshold of when a query is logged is controlled in the configuration value of the *SqlLongRunningThreshold* key. The default value is 1000 milliseconds (ms). For more information about *SqlLongRunningThreshold*, see [Configuring Microsoft Dynamics NAV Server](configuring-microsoft-dynamics-nav-server.md), database settings section. 
 
 ## Changing Configuration Values
-With [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], some of the configuration values for the server can be changed in the memory of the server, without doing a server restart. To change the threshold dynamically to 2000 ms, run the Dynamics NAV Administration Shell as Administrator and then type the following PowerShell cmdlet:
+With [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)], some of the configuration values for the server can be changed in the memory of the server, without doing a server restart. To change the threshold dynamically to 2000 ms, run the Dynamics NAV Administration Shell as Administrator and then type the following PowerShell cmdlet:
 
 ```
 Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLongRunningThreshold -KeyValue 2000 -ApplyTo Memory
