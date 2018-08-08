@@ -108,6 +108,6 @@ The resource ID must be provided in the URL when trying to read or modify a reso
 All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore, it is a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the “CRONUS USA, Inc.” company, we must call a GET on the URL `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`.
 
 ## See Also
-[Using Deltas With APIs](devenv-connect-apps-delta.md)  
+<!--[Using Deltas With APIs](devenv-connect-apps-delta.md)-->  
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
 [Tips for Working with APIs](devenv-connect-apps-tips.md)

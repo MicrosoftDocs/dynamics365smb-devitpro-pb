@@ -9,9 +9,14 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+redirect_url: /dynamics365/business-central/dev-itpro/developer/devenv-get-started
 ---
 
 # Using Delta Links With APIs
+
+> [!NOTE]
+> Unfortunately, delta links are currently not supported. They will be supported in an upcoming release.
+
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
 The user can obtain a delta link from each entity API in the library by including the `odata.track-changes` preference in the header of the request. The response to the GET request returns a deltaLink parameter, providing an opaque URL.
