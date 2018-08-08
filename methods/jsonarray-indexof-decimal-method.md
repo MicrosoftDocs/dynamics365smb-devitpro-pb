@@ -1,0 +1,42 @@
+---
+title: "IndexOf Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 07/27/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+# IndexOf Method
+Replaces the value at the given index with a new value.
+
+## Syntax
+```
+Index :=   JsonArray.IndexOf(Value: Decimal)
+```
+## Parameters
+*JsonArray*  
+&emsp;Type: [JsonArray](jsonarray-data-type.md)  
+An instance of the [JsonArray](jsonarray-data-type.md) data type.  
+*Value*  
+&emsp;Type: [Decimal](decimal-data-type.md)  
+  
+
+
+## Return Value
+*Index*  
+&emsp;Type: [Integer](integer-data-type.md)  
+  
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## See Also
+[JsonArray Data Type](jsonarray-data-type.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

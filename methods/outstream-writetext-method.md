@@ -1,0 +1,72 @@
+---
+title: "WriteText Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 08/07/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+# WriteText Method
+Writes text to an OutStream object.
+
+## Syntax
+```
+[Write := ]  OutStream.WriteText([Text: String], [Length: Integer])
+```
+## Parameters
+*OutStream*  
+&emsp;Type: [OutStream](outstream-data-type.md)  
+An instance of the [OutStream](outstream-data-type.md) data type.  
+*Text*  
+&emsp;Type: [String](string-data-type.md)  
+The text to write. If you do not specify this, a carriage return and a line feed are written.  
+*Length*  
+&emsp;Type: [Integer](integer-data-type.md)  
+The number of characters to be written.  
+
+
+## Return Value
+*Write*  
+&emsp;Type: [Integer](integer-data-type.md)  
+**True** if the operation was successful; otherwise, **false**.  
+  
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example  
+ This example requires that you create the following variables.  
+  
+|Variable name|DataType|  
+|-------------------|--------------|  
+|MyHTMLFile|File|  
+|TestOutStream|OutStream|  
+  
+ This example also requires that the c:\\TestFiles folder exists.  
+  
+```  
+MyHTMLFile.CREATE('c:\TestFiles\main.html');  
+MyHTMLFile.CREATEOUTSTREAM(TestOutStream);  
+TestOutStream.WRITETEXT('<html>');  
+TestOutStream.WRITETEXT;  
+TestOutStream.WRITETEXT('<head>');  
+TestOutStream.WRITETEXT('<title>My Page</title>');  
+TestOutStream.WRITETEXT('</head>');  
+TestOutStream.WRITETEXT;  
+TestOutStream.WRITETEXT('<P>Hello world!</p>');  
+TestOutStream.WRITETEXT;  
+TestOutStream.WRITETEXT('</html>');  
+FileMyHTML.CLOSE;  
+```  
+  
+## See Also
+[OutStream Data Type](outstream-data-type.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

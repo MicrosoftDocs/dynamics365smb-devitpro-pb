@@ -88,6 +88,7 @@ An Authorization request header is now added containing the Bearer token.
 ## Calling the API
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
 
+```json
     ``` 
     {
         "@odata.context": "<endpoint>/$metadata#companies",
@@ -102,7 +103,7 @@ Each resource is uniquely identified through an ID, see the following example of
         ]
     }
     ```
-
+```
 
 The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis () after the API endpoint. For example, to GET the “CRONUS USA, Inc.” company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
 
