@@ -340,6 +340,15 @@
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 <!-- end AL -->
+<!-- administration-->
+# Administration
+## [Configuring Microsoft Dynamics NAV Server](administration\Configuring-Microsoft-Dynamics-NAV-Server.md)
+<!-- end admin -->
+<!-- deployment-->
+# Deployment
+## [System requirements](deployment/system-requirement-business-central.md)
+## [Configuring the Location of Help](deployment/configure-help.md)
+<!-- end deployment -->
 <!--
 # [Administration](Administration.md)
 ## [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)
