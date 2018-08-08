@@ -12,14 +12,14 @@ author: jswymer
 ---
 # Converting a Database to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] - Technical Upgrade
 
-This article describes how to convert a [!INCLUDE[navnow](includes/navnow_md.md)] database from one of the following versions to [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]:
+This article describes how to convert a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database from one of the following versions to [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]:
 
--   [!INCLUDE[nav7long](includes/nav7long_md.md)]
--   [!INCLUDE[navsicily](includes/navsicily_md.md)]
--   [!INCLUDE[navcrete](includes/navcrete_md.md)]
--   [!INCLUDE[navcorfu](includes/navcorfu_md.md)]
--   [!INCLUDE[nav2017](includes/nav2017.md)] 
--   [!INCLUDE[nav2018_md](includes/nav2018_md.md)] 
+-   [!INCLUDE[nav7long](../developer/includes/nav7long_md.md)]
+-   [!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]
+-   [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]
+-   [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]
+-   [!INCLUDE[nav2017](../developer/includes/nav2017.md)] 
+-   [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] 
 
 This article can also be used to update you current [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database to the latest cumulative update. 
 
@@ -37,7 +37,7 @@ Converting a database does not upgrade the application objects (like pages, repo
 
 
 ## Task 1: Convert and Uninstall V1 Extensions
-[!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](includes/navnow_md.md)] database that includes V1 extensions, you will have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
+[!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions, you will have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
 
 ## Task 2: Preparing the Old Database  
 To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database, the first task is to back up the old database and then prepare to convert it.
@@ -82,9 +82,9 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 8. Uninstall all V1 extensions in old database.
 
-    You can do this from the client from the Extensions Manangement page or by using [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]
+    You can do this from the client from the Extensions Manangement page or by using [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)]
 
-     With the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)], open the version that matches to old database, and run these commands: 
+     With the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)], open the version that matches to old database, and run these commands: 
     1.  To get a list of the V1 extensions that are installed, run this command:
 
 <<<<<<< HEAD
@@ -94,7 +94,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
         Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant <TenantID>
         ```
     
-        Replace `<ServerInstanceName>` with the name of the [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance that the database connects to. Replace `<TenantID>` with the tenant ID of the database. If you do not have a multitenant server instance, use `default`.
+        Replace `<ServerInstanceName>` with the name of the [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance that the database connects to. Replace `<TenantID>` with the tenant ID of the database. If you do not have a multitenant server instance, use `default`.
 
         V1 extensions are indicated by the `ExtensionType : CSide`.
 
@@ -108,7 +108,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
   
         Replace `<Name>` and `<N.N.N.N>` with the name and version of the Extension V1 as it appeared in the previous step.  
 
-9.  Stop the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](includes/nav_dev_short_md.md)].
+9.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
 >>>>>>> fall2018
 
     You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].
@@ -179,7 +179,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 <<<<<<< HEAD
 6.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers.  
 =======
-5.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[nav_server](includes/nav_server_md.md)] or [!INCLUDE[nav_windows](includes/nav_windows_md.md)] computers.  
+5.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers.  
 >>>>>>> fall2018
 
      For the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], the default path is [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]\\RoleTailored Client\\Add-ins folder.  
@@ -265,7 +265,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
     The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable in [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] After an Upgrade](upgrade-pages-report-for-search.md).
 =======
-11.  If you converted a [!INCLUDE[navcorfu_md](includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)]. For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
+11.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
 >>>>>>> fall2018
 
 15. Upload the customer license to the converted database.  
@@ -278,10 +278,10 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 ## Database and Windows collations  
 Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](http://go.microsoft.com/fwlink/?LinkID=247971).  
 =======
- You have now completed the conversion of the database to be accessed from [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]. To test the converted database, you can connect it to the [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance that is used by [!INCLUDE[navnow](includes/navnow_md.md)] clients, and then open a client.  
+ You have now completed the conversion of the database to be accessed from [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]. To test the converted database, you can connect it to the [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.  
 
 ## Database and Windows collations  
-Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] from [!INCLUDE[nav_2009_long](includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](http://go.microsoft.com/fwlink/?LinkID=247971).  
+Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](http://go.microsoft.com/fwlink/?LinkID=247971).  
 >>>>>>> fall2018
 
 ## See Also  

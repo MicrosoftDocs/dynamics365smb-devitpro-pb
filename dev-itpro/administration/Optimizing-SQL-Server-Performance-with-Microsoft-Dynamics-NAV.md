@@ -12,7 +12,7 @@ caps.latest.revision: 3
 author: jswymer
 ---
 # Optimizing SQL Server Performance with Microsoft Dynamics NAV
-The following articles describe how to optimize performance in [!INCLUDE[navnowlong](includes/navnowlong_md.md)] when accessing data from the SQL Server database.  
+The following articles describe how to optimize performance in [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] when accessing data from the SQL Server database.  
 
 [Setting SQL Compatibility Level to Optimize Database Performance](optimize-sql-set-compatibility-level.md)
 

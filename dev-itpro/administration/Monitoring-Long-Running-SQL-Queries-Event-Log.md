@@ -13,14 +13,14 @@ ms.prod: "dynamics-nav-2018"
 
 <!-- This topic needs to be updated for the BC autumn release. -->
  
-[!INCLUDE[nav2017](includes/nav2017.md)] is the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long.
+[!INCLUDE[nav2017](../developer/includes/nav2017.md)] is the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long.
 
 ## Defining Long Running SQL Queries 
 The time logged in long running SQL queries is the time spent on the called database as seen from the server. There are multiple reasons that can cause this delay, such as the database waiting for a lock to be released, or the database executing an operation that perfoms badly due to missing indexes.
 The threshold of when a query is logged is controlled in the configuration value of the *SqlLongRunningThreshold* key. The default value is 1000 milliseconds (ms). For more information about *SqlLongRunningThreshold*, see [Configuring Microsoft Dynamics NAV Server](configuring-microsoft-dynamics-nav-server.md), database settings section. 
 
 ## Changing Configuration Values
-With [!INCLUDE[nav2018_md](includes/nav2018_md.md)], some of the configuration values for the server can be changed in the memory of the server, without doing a server restart. To change the threshold dynamically to 2000 ms, run the Dynamics NAV Administration Shell as Administrator and then type the following PowerShell cmdlet:
+With [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], some of the configuration values for the server can be changed in the memory of the server, without doing a server restart. To change the threshold dynamically to 2000 ms, run the Dynamics NAV Administration Shell as Administrator and then type the following PowerShell cmdlet:
 
 ```
 Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLongRunningThreshold -KeyValue 2000 -ApplyTo Memory
