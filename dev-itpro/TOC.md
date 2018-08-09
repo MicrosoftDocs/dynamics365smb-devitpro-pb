@@ -11,7 +11,6 @@
 ## [SQL Server Database Components](SQL-Server-Database-Components.md)
 ## [Microsoft Dynamics NAV Web Services Overview](Microsoft-Dynamics-NAV-Web-Services-Overview.md)
 ## [Development Environment (C/SIDE)](Development-Environment--C-SIDE-.md)
-## [Microsoft Dynamics NAV Help Server](Microsoft-Dynamics-NAV-Help-Server.md)
 ## [Additional Components](Additional-Components.md)
 ## [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md)
 ## [Accessibility](Accessibility.md)
@@ -348,8 +347,15 @@
 <!-- deployment-->
 # Deployment
 ## [System requirements](deployment/system-requirement-business-central.md)
-## [Configuring the Location of Help](deployment/configure-help.md)
+## [Configuring the Help Experience](deployment/configure-help.md)
 <!-- end deployment -->
+<!-- upgrade -->
+# Upgrade
+## [Converting a Database](upgrade/Converting-a-Database.md)
+<!--## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)-->
+## [Upgrading the Data](upgrade/Upgrading-the-Data.md)
+## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
+<!-- end upgrade -->
 <!--
 # [Administration](Administration.md)
 ## [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)
@@ -392,9 +398,6 @@
 ### [Deprecated Features in the Swedish Version](deprecated-features-se.md)
 ### [Deprecated Features in the Swiss Version](deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](deprecated-features-uk.md)
-## [Converting a Database](Converting-a-Database.md)
-## [Upgrading the Application Code](Upgrading-the-Application-Code.md)
-## [Upgrading the Data](Upgrading-the-Data.md)
 ## [Automating the Upgrade Process using Sample Windows PowerShell Scripts](Automating-the-Upgrade-Process-using-Sample-Windows-PowerShell-Scripts.md)
 # [Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)
 ## [Administration Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management)
@@ -1230,7 +1233,6 @@
 # [Configuring Automated Data Capture System](Configuring-Automated-Data-Capture-System.md)
 # [How to: Show the Last Error When Debugging Code](How-to--Show-the-Last-Error-When-Debugging-Code.md)
 # [READPERMISSION Function (RecordRef)](READPERMISSION-Function--RecordRef-.md)
-# [Configuring Microsoft Dynamics NAV Help Server](Configuring-Microsoft-Dynamics-NAV-Help-Server.md)
 # [SubPageLink Property](SubPageLink-Property.md)
 # [New Page](uiref/-$-S_11120-New-Page-$-.md)
 # [How to: Specify Rounding Precision](How-to--Specify-Rounding-Precision.md)
@@ -1273,7 +1275,6 @@
 # [Key Property](Key-Property.md)
 # [How to: Configure ADCS Options](How-to--Configure-ADCS-Options.md)
 # [LAST Function (TestPage)](LAST-Function--TestPage-.md)
-# [Upgrading Your Existing Help Content](Upgrading-Your-Existing-Help-Content.md)
 # [ACTIVE Function (FieldRef)](ACTIVE-Function--FieldRef-.md)
 # [How to: Use Option Strings in Multilanguage Implementations](How-to--Use-Option-Strings-in-Multilanguage-Implementations.md)
 # [Tables-duplicate 20](Tables.md)
@@ -1543,7 +1544,6 @@
 # [GETFILTER Function (FieldRef)](GETFILTER-Function--FieldRef-.md)
 # [ERROR Function (Dialog)](ERROR-Function--Dialog-.md)
 # [How to: Deploy Microsoft Dynamics NAV on Microsoft Azure by Using the Example Scripts](How-to--Deploy-Microsoft-Dynamics-NAV-on-Microsoft-Azure-by-Using-the-Example-Scripts.md)
-# [Help Table of Contents](Help-Table-of-Contents.md)
 # [Codeunit Metadata Virtual Table](Codeunit-Metadata-Virtual-Table.md)
 # [Deploying Microsoft Dynamics NAV on Cloud Services Other Than Microsoft Azure](Deploying-Microsoft-Dynamics-NAV-on-Cloud-Services-Other-Than-Microsoft-Azure.md)
 # [Accessibility Features of Microsoft Dynamics NAV Windows Client](Accessibility-Features-of-Microsoft-Dynamics-NAV-Windows-Client.md)

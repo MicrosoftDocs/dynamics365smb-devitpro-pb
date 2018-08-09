@@ -8,11 +8,11 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 08/08/2018
+ms.date: 08/09/2018
 ms.author: edupont
 ---
 
-# Configuring the Location of Help for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
+# Configuring the Help Experience for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
 The default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] comes with conceptual overviews and other articles that publish to the [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com/en-us/dynamics365/business-central/) site. This location is then accessible from the Help menu and through the Learn More links in all tooltips. Each extension that you add will include its own tooltips and links to Help. But what if you want to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] locally? Or if you have a vertical solution so that you want to refer your customers to your own website for Help? Or if you have a legacy Help collection based on the Dynamics NAV Help Server?  
 
@@ -88,7 +88,7 @@ For the Web client, which is accessed by users from a browser or from the mobile
 ```
                            "//HelpServer": [
                                                    "Name of the Microsoft Dynamics NAV Help Server to connect to."
-    					                   ],
+                                            ],
                            "HelpServer": "https://myserver.com",
                            "//HelpServerPort":  "The listening TCP port for the Microsoft Dynamics NAV Help Server. Valid range: 1-65535",
                            "HelpServerPort": "49000",
@@ -100,7 +100,15 @@ For users who use the legacy Windows client connected to [!INCLUDE[prodshort](..
     <add key="HelpServer" value="https://myserver.com" />
     <add key="HelpServerPort" value="49000" />
 ```
-In both examples, https://myserver.com represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server).
+In both examples, https://myserver.com represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server).  
+
+> [!IMPORTANT]
+> If you use Help Server, the functionality for providing context-sensitive links to Help article does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N.123.htm. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server).  
 
 ## See Also
+[Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server)  
+[Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server)  
+[Upgrade Dynamics NAV Help](../upgrade/migrate-help.md)  
+[Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
+[System Requirements](system-requirement-business-central.md)  
