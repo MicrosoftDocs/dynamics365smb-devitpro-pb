@@ -456,7 +456,7 @@ For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modi
 
 ## Task 19: Configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
 
-The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
+The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-reports-for-search.md).
 
 ##  <a name="DeleteUpgCodeunits"></a> Task 20: Delete the upgrade objects
 At this point, you have upgraded the database to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
