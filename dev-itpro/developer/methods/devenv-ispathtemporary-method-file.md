@@ -12,7 +12,7 @@ author: jswymer
 
 # ISPATHTEMPORARY Method (File)
 
-Validates whether the file is located within the current user's temporary folder in the current service.
+Validates whether the file is located in the current user's temporary folder for the current service.
 
 ## Syntax
 
@@ -45,13 +45,6 @@ The following code will return `false`:
 
 ```
 Ok := FILE.ISPATHTEMPORARY('c:\Temp\MyFile.txt');
-```
-
-## Example  
-
-```
-IF NOT FILE.ISPATHTEMPORARY(<bad path>) THEN
-  ERROR(<error message>);
 ```
 
 ## See Also  
