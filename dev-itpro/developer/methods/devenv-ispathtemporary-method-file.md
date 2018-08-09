@@ -33,7 +33,7 @@ Type: Boolean
 If you omit the return value, then a run-time error occurs if `false`. If you include a return value, then you must handle the error.
 
 ## Remarks  
-This method is primarily used for cloud installations where handling of local files is not allowed. The ISPATHTEMPORARY method returns `false` if the `FileName` parameter contains a file that includes a local or network folder path.
+This method is useful for cloud installations where handling of local files is not allowed. The ISPATHTEMPORARY method returns `false` if the `FileName` parameter contains a file that includes a local or network folder path.
 
 For example, the following code returns `true`: 
 
@@ -53,7 +53,6 @@ Ok := FILE.ISPATHTEMPORARY('c:\Temp\MyFile.txt');
 IF NOT FILE.ISPATHTEMPORARY(<bad path>) THEN
   ERROR(<error message>);
 ```
-
 
 ## See Also  
  [File Data Type](../datatypes/devenv-File-Data-Type.md)
