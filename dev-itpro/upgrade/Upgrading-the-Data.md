@@ -1,6 +1,6 @@
 ---
 title: Upgrading the Database
-description: This article describes the tasks required for upgrading from the earlier versions of database to the Microsoft Dynamics NAV 2018.
+description: This article describes the tasks required for upgrading from the earlier versions of database to Dynamics 365 Business Central.
 ms.custom: na
 ms.date: 03/05/2018
 ms.reviewer: na
@@ -10,9 +10,7 @@ ms.topic: article
 ms.author: jswymer
 ms.prod: "dynamics-nav-2018"
 ---
-# Upgrading the Data to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]
-
-**Applies to:** [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]. [See [!INCLUDE[nav2017](../developer/includes/nav2017.md)] version](Upgrading-the-Data-2017.md).
+# Upgrading the Data to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)]
 
 This topic describes the tasks required for upgrading the following database versions to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]:
 
@@ -455,7 +453,12 @@ For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modi
 
      For more information, see [How to: Export and Import Encryption Keys](How-to--Export-and-Import-Encryption-Keys.md).  -->
 
-##  <a name="DeleteUpgCodeunits"></a> Task 19: Delete the upgrade objects
+
+## Task 19: Configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
+
+The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
+
+##  <a name="DeleteUpgCodeunits"></a> Task 20: Delete the upgrade objects
 At this point, you have upgraded the database to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
 
 When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  
