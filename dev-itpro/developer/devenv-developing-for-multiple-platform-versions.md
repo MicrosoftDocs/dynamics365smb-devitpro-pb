@@ -1,5 +1,5 @@
 ---
-title: Versioning on Platform
+title: Developing for Multiple Platform Versions
 description: The AL language extension is compatible with multiple platform versions for developing solutions in marketplace. 
 ms.custom: na
 ms.date: 08/02/2018
@@ -13,7 +13,7 @@ caps.latest.revision: 24
 author: SusanneWindfeldPedersen
 ---
 
-# Versioning on Platform    
+# Developing for Multiple Platform Versions   
 
 > [!IMPORTANT]  
 > [!INCLUDE[vnext_preview](includes/vnext_preview.md)]
@@ -31,15 +31,19 @@ In the runtime property, the **Latest** value is the default value. When you set
 > AL Language extension is not compatible with [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] version backwards. For [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] development, the traditional method should be used. You must install the Visual Studio Code extension from the `ALLanguage.vsix` file shipped on the DVD. 
 
 ## Version compatibility
-**Scenario 1**: If the extension is compiled with a higher runtime version than the one it supports, then an error will be thrown. For example, if you set the runtime value to `2.0`, you get the following error message. 
+When publishing an extension, there are two things to compare:
+1. The runtime version in the extension manifest, which is defined in the app.json file. 
+2. The runtime version of the platform. 
+
+When you set the extension to a higher runtime version, the extension package may contain certain features that the platform may not support which would result in an error. Therefore, you must lower the extension runtime version to support the platform runtime version. Also, you must note that by lowering the extension runtime version, you may get warnings about the latest features not being supported by the earlier platform versions.
+
+**Scenario 1**: When publishing an extension which is compiled with a higher runtime version than the platform supports, an error will be thrown. For example, if you set the runtime value to `2.0`, you get the following error message. 
 
 ```
 The runtime version of the extension package is currently set to '2.0'. The runtime version must be set to '1.0' or earlier in the app.json file in order to install the extension package on this platform.
 ```
 
-When you set the extension to a higher runtime version, the extension package may contain certain features that the platform may not support which would result in an error. Therefore, you must lower the runtime version which is supported with your current platform version. Also, you must note that by lowering the runtime version, you may get warnings about the latest features not being supported by the earlier platform versions.
-
-**Scenario 2**: If the extension is compiled with a lower runtime version, a best-effort compilation is made. This is allowed in order to avoid recompilation of the extension packages when you upgrade the platform every time. 
+**Scenario 2**: When publishing an extension which is compiled with a lower runtime version than the platform supports, a best-effort compilation is made. This is allowed in order to avoid recompilation of the extension packages every time you upgrade the platform. 
 
 ## See Also
 [Debugging in AL](devenv-debugging.md)  
