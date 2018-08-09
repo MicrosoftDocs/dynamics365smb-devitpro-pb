@@ -3,7 +3,7 @@ title: System Requirements for Microsoft Dynamics NAV 2018
 description: This article provides the specifications of minimum hardware and software requirements to install and run Microsoft Dynamics NAV 'TENERIFE'.
 author: jswymer
 ms.custom: na
-ms.date: 11/30/2017
+ms.date: 08/08/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,7 +37,7 @@ us_cent_short_md.md
 |Additional information|<ul><li>[!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.</li></ul></li><li>The [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] is available in a 32-bit version and 64-bit version. On a 32-bit Windows operating system, the 32-bit version is run. On a 64-bit Windows operating system, the 64-bit version is run by default; however, you can also run the 32-bit version if it is required.</li><li>[!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup can only install the Excel Add-in if Excel is present on the target computer.</li><li>Outlook synchronization is not supported on 64-bit versions of Office.</li></ul>|  
 
 ###  <a name="DevEnv"></a> Dynamics NAV Development Environment Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)].  
+ The following table shows the minimum system requirements for the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
 
 |||  
 |-|-|  
@@ -45,7 +45,7 @@ us_cent_short_md.md
 |Hardware resources|<ul><li>Hard disk space: 200 MB.</li><li> Memory: 1 GB.</li></ul>|  
 |Reports|<ul><li>For creating and editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016, or</li><li>One of the following versions of Visual Studio:<ul><li>Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li><li>Visual Studio 2015 Professional or Enterprise edition with SQL Server Data Tools installed.<br />**Important:**  Before you install Visual Studio 2015, install Microsoft .NET Framework 4.7; otherwise, an error will occur when you compile or run RDLC reports. For more information, see [Report error "Visual Basic Command Line Compiler has stopped working"](http://go.microsoft.com/fwlink/?LinkID=722862).</li></ul></li></ul></ul><ul><li>For upgrading reports:<ul><li>Report Builder for SQL Server 2016</li></ul><li>For creating Word report layouts:<ul><li>Word 2013 or later</li></ul></li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li></ul>|  
-|Additional information|<ul><li>[!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.</li><li>SQL Server Native Client 11.0.</li><li>Report Builder for SQL Server 2016. This is not installed if a version of SQL Server Report Builder or Microsoft Visual Studio is already present on the target computer</li></ul></li><li>If the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] and [!INCLUDE[nav_server](includes/nav_server_md.md)] are on the same computer, then only a 64-bit operating system is supported.</li></ul>|  
+|Additional information|<ul><li>[!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.</li><li>SQL Server Native Client 11.0.</li><li>Report Builder for SQL Server 2016. This is not installed if a version of SQL Server Report Builder or Microsoft Visual Studio is already present on the target computer</li></ul></li><li>If the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] and [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] are on the same computer, then only a 64-bit operating system is supported.</li></ul>|  
 
 ###  <a name="WebClient"></a> Dynamics NAV Web Client Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Web client.  
@@ -58,10 +58,10 @@ us_cent_short_md.md
 |Editing in Excel using the Excel Add-in |<ul><li>Excel 2016.<br /><br />For more information, see [Setting up the Excel Add-In for Editing Dynamics NAV Data](configuring-dynamics-nav-excel-addin.md).</li></ul>|  
 |SharePoint Online links|<ul><li>Microsoft Office 2016, Microsoft Office 2013 SP1, Microsoft Office 2010 SP2, or Microsoft Office 365.</li></ul>|  
 |Printing reports to Excel or Word|<ul><li>Microsoft Office 2016, Microsoft Office 2013 SP1, Microsoft Office 2010 SP2, or Microsoft Office 365.</li></ul>|  
-|Additional information|If you experience problems using the [!INCLUDE[nav_web](includes/nav_web_md.md)], you can try to turn off browser tools, such as translator tools that may run in the background.|  
+|Additional information|If you experience problems using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], you can try to turn off browser tools, such as translator tools that may run in the background.|  
 
 ###  <a name="NavApps"></a> [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Tablet Client and Phone Client \(in a Browser\) Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] running in a browser when used for development and testing purposes.  
+ The following table shows the minimum system requirements for the [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)] running in a browser when used for development and testing purposes.  
 
 |||  
 |-|-|  
@@ -69,7 +69,7 @@ us_cent_short_md.md
 |Supported browsers|The following desktop browsers are supported:<ul><li> Microsoft Edge</li><li>Internet Explorer 11 \(build 11.0.9600.17239\) for Windows 10.</li><li>Google Chrome 61.0 for Windows.</li><li>Mozilla Firefox 55.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul>|  
 
 ###  <a name="DynNAVApp"></a> [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Universal App Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. For the latest information, see [Dynamics NAV for Windows](http://go.microsoft.com/fwlink/?LinkId=509974), [Dynamics NAV for iPad and iPhone](http://go.microsoft.com/fwlink/?LinkId=509975), and [Dynamics NAV for Android tablet and Android phone](http://go.microsoft.com/fwlink/?LinkId=509976).  
+ The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)]. For the latest information, see [Dynamics NAV for Windows](http://go.microsoft.com/fwlink/?LinkId=509974), [Dynamics NAV for iPad and iPhone](http://go.microsoft.com/fwlink/?LinkId=509975), and [Dynamics NAV for Android tablet and Android phone](http://go.microsoft.com/fwlink/?LinkId=509976).  
 
 |||  
 |-|-|  
@@ -80,13 +80,13 @@ us_cent_short_md.md
 
 ## Server Components
 ###  <a name="NavServerReqs"></a> [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Server Requirements  
- The following table shows the minimum system requirements for [!INCLUDE[nav_server](includes/nav_server_md.md)].  
+ The following table shows the minimum system requirements for [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
 
 |||  
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li><li>Windows Server 2012 Standard or Essentials \(64-bit edition\).|  
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>Memory: 2 GB.|  
-|[!INCLUDE[crm](includes/crm_md.md)] integration|<ul><li>Windows Identity Framework.<br />     For a list of supported [!INCLUDE[crm](includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](System-Requirements-for-Microsoft-Dynamics-NAV.md#CRM).|  
+|[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Framework.<br />     For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](System-Requirements-for-Microsoft-Dynamics-NAV.md#CRM).|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li><li>Windows PowerShell 3.0.|  
 |Additional information|<ul><li>[!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup installs the following software if it is not already present on the target computer:<ul><li>Microsoft .NET Framework 4.7.</li><li>Windows Identity Framework.</li></ul></li></ul>|  
 
@@ -131,18 +131,18 @@ us_cent_short_md.md
 |Additional information|<ul><li>HyperTerminal is no longer included with Windows. For more information, see [What happened to HyperTerminal?](http://go.microsoft.com/fwlink/?LinkId=222571) in the Windows Help.</li><li>VT100 Plug-in acts as a virtual Telnet server.</li></ul>|  
 
 ###  <a name="BusInboxOutlook"></a> Business Inbox in Microsoft Outlook Requirements  
-The following table shows the minimum system requirements for using [!INCLUDE[navnow_md](includes/navnow_md.md)] as your business inbox in Outlook.
+The following table shows the minimum system requirements for using [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] as your business inbox in Outlook.
 
 |||  
 |-|-|  
 |Supported Outlook Applications |<ul><li>Outlook 2013 or later</li><li>Outlook Web App</li><li>OWA for iPad</li><li>OWA for iPhone</li><li> OWA for Android.</li></ul>|
-|Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2016</li><li>Exchange Server 2013.<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[nav_server](includes/nav_server_md.md)].</li></ul>|
-|Supported Authentication|<ul><li>The [!INCLUDE[nav_server_md](includes/nav_server_md.md)] must be configured to run with NavUserPassword, ACS, or AAD Credentials Type.<br /> Also, the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] must be configured for Secure Sockets Layer (SSL).</li></ul>|
-|Supported Browsers|<ul><li>When using the Outlook Web App (OWA), your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] Requirements.</li></ul>|
-|Supported Operating Systems|<ul><li>When using OWA for iPad, OWA for iPad, or OWA for Android, your mobile device must use a supported Operating System listed in [!INCLUDE[nav_uni_app_md](includes/nav_uni_app_md.md)] Requirements.</li></ul>|  
+|Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2016</li><li>Exchange Server 2013.<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].</li></ul>|
+|Supported Authentication|<ul><li>The [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] must be configured to run with NavUserPassword, ACS, or AAD Credentials Type.<br /> Also, the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] must be configured for Secure Sockets Layer (SSL).</li></ul>|
+|Supported Browsers|<ul><li>When using the Outlook Web App (OWA), your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
+|Supported Operating Systems|<ul><li>When using OWA for iPad, OWA for iPad, or OWA for Android, your mobile device must use a supported Operating System listed in [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements.</li></ul>|  
 
 ###  <a name="Outlook"></a> Microsoft Outlook Add-In Requirements  
-The following table shows the minimum system requirements for the [!INCLUDE[navnow_md](includes/navnow_md.md)] Add-In for Outlook for synchronization with Outlook.
+The following table shows the minimum system requirements for the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Add-In for Outlook for synchronization with Outlook.
 
 |||  
 |-|-|  
@@ -151,12 +151,12 @@ The following table shows the minimum system requirements for the [!INCLUDE[navn
 
 
 ##  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
- The following table shows the system requirements for integrating [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] with [!INCLUDE[crm](includes/crm_md.md)].  
+ The following table shows the system requirements for integrating [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] with [!INCLUDE[crm](../developer/includes/crm_md.md)].  
 
 |||  
 |-|-|  
 |Microsoft Dynamics CRM versions|<ul><li>Microsoft Dynamics CRM 2015 or Microsoft Dynamics CRM 2016<BR />Note: AD, IFD and Claims authentication types are supported for above editions.</li><li>Microsoft Dynamics CRM Online 2015, Microsoft Dynamics CRM Online 2015 Update 1, or Microsoft Dynamics CRM Online 2016 Update 1 or Microsoft Dynamics 365<BR />Note: Oauth and Office365 authentication types are supported for these editions.</li></ul>For more details on authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/en-us/library/mt608573.aspx).|
-|[!INCLUDE[navnow_md](includes/navnow_md.md)] Integration Solution (.zip)|For Dynamics CRM 2015, Dynamics CRM Online 2015, and Dynamics CRM Online 2015 Update 1:<ul><li>Use the DynamicsNAVIntegrationSolution.zip file that is found on the Dynamics NAV 2016 installation media (DVD) to install the solution.</li><li>Item Availability is not supported on Dynamics CRM 2015, versions Update 1 and Online.</li></ul>For more information, see [How to: Prepare Dynamics 365 for Sales for Integration](How-to-prepare-Dynamics-CRM-for-Integration.md).      |  
+|[!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Integration Solution (.zip)|For Dynamics CRM 2015, Dynamics CRM Online 2015, and Dynamics CRM Online 2015 Update 1:<ul><li>Use the DynamicsNAVIntegrationSolution.zip file that is found on the Dynamics NAV 2016 installation media (DVD) to install the solution.</li><li>Item Availability is not supported on Dynamics CRM 2015, versions Update 1 and Online.</li></ul>For more information, see [How to: Prepare Dynamics 365 for Sales for Integration](How-to-prepare-Dynamics-CRM-for-Integration.md).      |  
 
 ###  <a name="SharePointApp"></a>[!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] as an App for SharePoint Requirements  
  The following table shows the minimum system requirements for [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] as an App for SharePoint.  
@@ -167,7 +167,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[navn
 |Additional software|<ul><li>SharePoint 2013 Service Pack 1.</li><li>SharePoint Online.</li></ul>|  
 
 ###  <a name="Azure"></a> Automated Deployment on Microsoft Azure Requirements  
- Automated deployment of [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] on Microsoft Azure by using the [!INCLUDE[nav_prov_short](includes/nav_prov_short_md.md)] is only supported on Azure virtual machines that are running Windows Server 2012. For additional requirements for specific [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] components, refer to the other sections in this topic.
+ Automated deployment of [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] on Microsoft Azure by using the [!INCLUDE[nav_prov_short](../developer/includes/nav_prov_short_md.md)] is only supported on Azure virtual machines that are running Windows Server 2012. For additional requirements for specific [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] components, refer to the other sections in this topic.
 
 ## See Also
 [Welcome to the Developer and IT-Pro Help for Microsoft Dynamics NAV](index.md)  
