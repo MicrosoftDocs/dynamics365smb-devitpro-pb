@@ -41,10 +41,17 @@ For example, the following code returns `true`:
 Ok := FILE.ISPATHTEMPORARY('MyFile.txt');
 ```
 
+The following code will return `false`:
+
+```
+Ok := FILE.ISPATHTEMPORARY('c:\Temp\MyFile.txt');
+```
+
 ## Example  
+
 ```
 IF NOT FILE.ISPATHTEMPORARY(<bad path>) THEN
-  ERROR(<error message>)
+  ERROR(<error message>);
 ```
 
 
