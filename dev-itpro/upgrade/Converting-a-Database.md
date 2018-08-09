@@ -19,7 +19,7 @@ This article describes how to convert a [!INCLUDE[navnow](../developer/includes/
 -   [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]
 -   [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]
 -   [!INCLUDE[nav2017](../developer/includes/nav2017.md)] 
--   [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] 
+-   Dynamics NAV 2018 
 
 This article can also be used to update you current [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database to the latest cumulative update. 
 
