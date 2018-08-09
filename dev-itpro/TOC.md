@@ -336,7 +336,7 @@
 
 # Preview Features in AL
 ## [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
-## [Versioning on Platform](developer/devenv-versioning-on-platform.md)
+## [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 <!-- end AL -->
