@@ -37,7 +37,7 @@ In the runtime property, the **Latest** value is the default value. When you set
 The runtime version of the extension package is currently set to '2.0'. The runtime version must be set to '1.0' or earlier in the app.json file in order to install the extension package on this platform.
 ```
 
-When you set the extension to a higher runtime version, the extension package may contain certain features that the service may not support which would result in an error. Therefore, you must lower the runtime version which is supported with your current platform version. Also, you must note that by lowering the runtime version, you may get warnings about the latest features not being supported by the previous platform versions.
+When you set the extension to a higher runtime version, the extension package may contain certain features that the platform may not support which would result in an error. Therefore, you must lower the runtime version which is supported with your current platform version. Also, you must note that by lowering the runtime version, you may get warnings about the latest features not being supported by the earlier platform versions.
 
 **Scenario 2**: If the extension is compiled with a lower runtime version, a best-effort compilation is made. This is allowed in order to avoid recompilation of the extension packages when you upgrade the platform every time. 
 
