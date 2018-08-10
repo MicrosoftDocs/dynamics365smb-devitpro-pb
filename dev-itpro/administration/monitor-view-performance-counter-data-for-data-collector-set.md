@@ -33,7 +33,7 @@ When you run a Data Collector Set, the data that is collected for performance co
   
 ## See Also  
  [Business Central Performance Counters](performance-counters.md)   
- [Working with Data Collector Sets](Working-with-Data-Collector-Sets.md)   
- [How to: Create a Data Collector for Microsoft Dynamics NAV Performance Counters](How-to--Create-a-Data-Collector-for-Microsoft-Dynamics-NAV-Performance-Counters.md)   
+ [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)   
+ [Create Data Collector for Microsoft Dynamics NAV Performance Counters](create-data-collector-performance-counters.md)   
  [Create a Data Collector Set From Template](How-to--Create-a-Data-Collector-Set-From-the-Microsoft-Dynamics-NAV-Template.md)   
  [Business Central Performance Counters](performance-counters.md)
