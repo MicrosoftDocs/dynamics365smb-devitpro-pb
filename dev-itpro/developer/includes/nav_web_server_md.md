@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Web Server components
+Business Central Web Server components

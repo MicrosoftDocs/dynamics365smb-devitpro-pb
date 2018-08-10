@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Server
+Business Central Server

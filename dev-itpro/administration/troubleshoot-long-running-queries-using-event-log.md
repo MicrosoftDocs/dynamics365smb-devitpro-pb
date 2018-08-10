@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Dynamics NAV"
+title: "Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Microsoft Dynamics 365 Business Central"
 description: This topic describes how to troubleshoot long running SQL queries that use the event viewer.
 ms.custom: na
 ms.date: 06/13/2018
@@ -12,7 +12,7 @@ ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 ---
 
 
-# Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Dynamics NAV
+# Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central
 
 This topic shows how you can use the Event Viewer to monitor long running SQL queries and decide which ones can be candidates for optimization. 
 

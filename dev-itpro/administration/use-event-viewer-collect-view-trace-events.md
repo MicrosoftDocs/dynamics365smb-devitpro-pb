@@ -10,9 +10,9 @@ ms.prod: "dynamics-nav-2018"
 ms.assetid: ddd157e5-069a-44c5-b25b-1e90cb0bf1d0
 caps.latest.revision: 4
 ---
-# How to: Enable Dynamics NAV Debug Logs in Event Viewer
+# Enable Business Central Debug Logs in Event Viewer
 
-Some [!INCLUDE[nav_server](includes/nav_server_md.md)] events are collected in the following **Debug** logs specific to Dynamics NAV in Event Viewer:
+Some [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events are collected in the following **Debug** logs specific to Dynamics NAV in Event Viewer:
 
 -   **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Server**
 
@@ -22,7 +22,7 @@ By default the **Debug** logs are disabled and may also be hidden in the Event V
   
 ### To enable Debug logs in Event Viewer  
   
-1.  On the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)], start Event Viewer.  
+1.  On the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], start Event Viewer.  
   
      For more information, see [How to Start Event Viewer](http://technet.microsoft.com/en-us/library/gg163894.aspx).  
   
@@ -35,7 +35,7 @@ By default the **Debug** logs are disabled and may also be hidden in the Event V
     > [!NOTE]  
     >  Depending on the number of events, you might have to increase the maximum size of the log. The default value is 1028 KB. For more information, see [Set Maximum Log Size](http://go.microsoft.com/fwlink/?LinkID=517563).  
   
- [!INCLUDE[nav_server](includes/nav_server_md.md)] trace events will now be recorded in the **Debug** log. For a list and description of trace events, see [Microsoft Dynamics NAV Server Trace Events](Microsoft-Dynamics-NAV-Server-Trace-Events.md).  
+ [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] trace events will now be recorded in the **Debug** log. For a list and description of trace events, see [Microsoft Dynamics NAV Server Trace Events](Microsoft-Dynamics-NAV-Server-Trace-Events.md).  
   
 ## See Also  
  [Monitoring Microsoft Dynamics NAV Server Events](Monitoring-Microsoft-Dynamics-NAV-Server-Events.md)   
