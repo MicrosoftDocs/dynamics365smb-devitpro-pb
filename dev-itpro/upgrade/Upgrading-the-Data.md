@@ -42,9 +42,10 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     |-----------|-------|-----------|
     |[!INCLUDE[nav7long](../developer/includes/nav7long_md.md)]|Upgrade7001100.FOB|This file can be found on the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] [Cumulative Update 2 installation media (DVD)](https://support.microsoft.com/en-us/help/4078580/cumulative-update-02-for-microsoft-dynamics-nav-2018-build-20348?preview). It is not available with later cumulative updates.|
     |[!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]|Upgrade7101100.FOB and Upgrade710HF1100.FOB|This file can be found on the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] [Cumulative Update 2 installation media (DVD)](https://support.microsoft.com/en-us/help/4078580/cumulative-update-02-for-microsoft-dynamics-nav-2018-build-20348?preview). It is not available with later cumulative updates.|
-    | [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]| Upgrade8001100.FOB||
-    | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade9001100.FOB||
-    |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade10001100.FOB||
+    | [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]| Upgrade8001300.FOB||
+    | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade9001300.FOB||
+    |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade10001300.FOB||
+    |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade11001300.FOB||
 
     For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade10001100.DK.fob** for Denmark or **Upgrade10001100.DE.fob** for Germany.  
 
@@ -82,9 +83,9 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
  For more information, see [Create a Full Database Backup \(SQL Server\)](http://msdn.microsoft.com/en-us/library/ms187510.aspx).  
 
-## Task 3 Uninstall all V1 extensions in old database
+## Task 3 Uninstall all extensions in old database
 Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that matches to old database, and run these commands: 
-1.  To get a list of the V1 extensions that are installed, run this command:
+1.  To get a list of the extensions that are installed, run this command:
 
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant <TenantID>
@@ -94,14 +95,22 @@ Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that ma
 
     <!-- In the table that appears, V1 extensions are indicated by `CSIDE` in the `Extension Type` column.-->
 
-    Make a note of the V1 extensions that you will uninstall because you will reinstall these later, after you upgrade the database.
-2. For each Extension V1, run this command to uninstall it:
+    <!-- V1 extensions have `ExtensionType` of `CSIDE`. Make a note of the V1 extensions that you will uninstall because you will reinstall these later, after you upgrade the database.-->
+2. For each extension, run this command to uninstall it:
 
     ```
     Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
     ```
-  
+    Replace `<ServerInstanceName>` with the name of the [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance that the database connects to.
+    
     Replace `<Name>` and `<N.N.N.N>` with the name and version of the Extension V1 as it appeared in the previous step.
+
+    Alternately, to remove them all at once, you can run this command:
+
+    ```
+    Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
+    ```
+
 
 <!-- 
     > [!IMPORTANT]
@@ -137,7 +146,7 @@ As a minimum, you must install the following [!INCLUDE[nav2018_md](../developer/
 ## Task 7: Clear Dynamics NAV Server instance and debugger breakpoint records from old database
 Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the database in SQL Server.  
 
-1.  If you did not uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], make sure that you stop the old [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
+1.  If you did not uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
 2.  Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
 
     ```
@@ -149,7 +158,7 @@ Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoin
 
 If the database is on Azure SQL Database, you must first add your user account to the **dbmanager** database role on master database. This membership is only required for converting the database, and can be removed afterwards. 
 
-To convert the old database to the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] format, open the old database in the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], and follow the conversion instructions.
+To convert the old database to the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] format, open the old database in the new [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], and follow the conversion instructions.
 
 > [!IMPORTANT]
 > Do not run schema synchronization at this time.
@@ -200,12 +209,12 @@ The service account that is used by the [!INCLUDE[nav_server](../developer/inclu
 
 For more information, see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).
 
-##  <a name="CompSysTables"></a> Task 11: Compile all objects that are not already compiled
+##  <a name="CompSysTables"></a> Task 11: Compile all objects
 1. In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], set it to use the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that connects to the database.
 
     For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md).  
 
-2. Use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or finsql.exe to compile all objects that are not already compiled. This includes the imported application objects, data tables, and system tables. 
+2. Use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or finsql.exe to compile all objects. This includes the imported application objects, data tables, and system tables. 
 
     > [!IMPORTANT]
     >Choose to run schema synchronization later. For example, in Object Designer, choose **Tools**, choose **Compile**, set the **Synchronize Schema** option to **Later**, and then choose **OK**. For more information, see [Compiling Objects](compiling-objects.md).

@@ -1,1 +1,1 @@
-Dynamics NAV Web Server
+Business Central Web Server

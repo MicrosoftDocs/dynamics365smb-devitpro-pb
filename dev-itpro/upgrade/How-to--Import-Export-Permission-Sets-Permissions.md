@@ -10,9 +10,9 @@ ms.author: jswymer
 manager: edupont
 ms.prod: "dynamics-nav-2018"
 ---
-# How to: Export and Import Permission Sets and Permissions
+# Export and Import Permission Sets and Permissions
 
-This articles describes how to import and export permission sets and permissions as XML files. This is useful when upgrading from one version of [!INCLUDE[navnow](includes/navnow_md.md)] to another.
+This articles describes how to import and export permission sets and permissions as XML files. This is useful when upgrading from one version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to another.
 
 ## <a name="ExportPerms"></a>Export permission sets and permissions  
 

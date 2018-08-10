@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Web client
+Business Central Web client

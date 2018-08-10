@@ -10,12 +10,12 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # How to: Use LogMan to Collect Event Trace Data
-This article describes how to use logman to collect event trace data for [!INCLUDE[nav_server](includes/nav_server_md.md)]. Logman (logman.exe) comes with the Windows Operating System. You can use it to create and manage event trace session and performance logs from the command prompt.
+This article describes how to use logman to collect event trace data for [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. Logman (logman.exe) comes with the Windows Operating System. You can use it to create and manage event trace session and performance logs from the command prompt.
 
-This article provides a brief introduction to using logman to collect trace event data for [!INCLUDE[nav_server](includes/nav_server_md.md)] and telemetry events. For more detailed information about logman, see [Logman](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
+This article provides a brief introduction to using logman to collect trace event data for [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] and telemetry events. For more detailed information about logman, see [Logman](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
   
 ## Collect event trace data  
-You can collect [!INCLUDE[nav_server](includes/nav_server_md.md)] trace event data from two different trace event providers: **Microsoft-DynamicsNAV-Server** and **Microsoft-DynamicsNAV-Common**. **Microsoft-DynamicsNAV-Server** is used for trace events like SQL traces, C/AL function traces, and session calls. **Microsoft-DynamicsNAV-Common** is used for telemetry events. 
+You can collect [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] trace event data from two different trace event providers: **Microsoft-DynamicsNAV-Server** and **Microsoft-DynamicsNAV-Common**. **Microsoft-DynamicsNAV-Server** is used for trace events like SQL traces, C/AL function traces, and session calls. **Microsoft-DynamicsNAV-Common** is used for telemetry events. 
 
 Data that is collected with logman is stored in a event trace log \(.etl\) file.  
 
@@ -75,9 +75,9 @@ For example, from the command line, you can use the
 tracerpt c:\perflogs\MyTelemetryTraceData_000001.etl -o c:\perflogs\MyTelemetry-dmp.xml -of XML -summary c:\perflogs\MyTelemetry-summary.txt -report c:\perflogs\MyTelemetry-rpt.xml
 ```
 
-You can also use PerView. For more information, see [How to: Use PerfView to View Event Trace Data](How-to--Use-PerfView-to-View-Event-Trace-Data.md).
+You can also use PerView. For more information, see [Use PerfView to View Event Trace Data]([Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).md).
   
 ## See Also  
- [Monitoring Microsoft Dynamics NAV Server Events](Monitoring-Microsoft-Dynamics-NAV-Server-Events.md)   
- [Microsoft Dynamics NAV Server Trace Events](Microsoft-Dynamics-NAV-Server-Trace-Events.md)  
+ [Monitoring Business Central Server Events](monitor-server-events.md)   
+ [Business Central Server Trace Events](server-trace-events.md)  
  [Instrumenting an Application for Telemetry](instrumenting-application-for-telemetry.md)  

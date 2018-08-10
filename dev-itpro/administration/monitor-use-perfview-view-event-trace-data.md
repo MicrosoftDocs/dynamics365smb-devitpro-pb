@@ -11,7 +11,7 @@ ms.assetid: 5523466a-5f72-4138-ad36-3b678c36724b
 caps.latest.revision: 3
 ---
 # How to: Use PerfView to View Event Trace Data
-This topic describes how to use PerfView to view [!INCLUDE[nav_server](includes/nav_server_md.md)] event trace data that is stored in an event trace log \(.etl\) file.  
+This topic describes how to use PerfView to view [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] event trace data that is stored in an event trace log \(.etl\) file.  
   
 ### To install PerfView  
   
@@ -36,8 +36,8 @@ This topic describes how to use PerfView to view [!INCLUDE[nav_server](includes/
 5.  To view details about a trace event, double-click the trace event.  
   
 ## See Also  
- [How to: Use PerfView to Collect Event Trace Data](How-to--Use-PerfView-to-Collect-Event-Trace-Data.md)   
- [How to: Use Performance Monitor to Collect Event Trace Data](How-to--Use-Performance-Monitor-to-Collect-Event-Trace-Data.md)   
- [Monitoring Microsoft Dynamics NAV Server Events](Monitoring-Microsoft-Dynamics-NAV-Server-Events.md)   
- [Microsoft Dynamics NAV Server Trace Events](Microsoft-Dynamics-NAV-Server-Trace-Events.md)  
+ [Use PerfView to Collect Event Trace Data](monitor-use-perfview-collect-event-trace-data.md)   
+ [Use Performance Monitor to Collect Event Trace Data](monitor-use-performance-monitor-collect-event-trace-data.md)   
+ [Monitoring Business Central Server Events](monitor-server-events.md)   
+ [Business Central Server Trace Events](server-trace-events.md)  
  [Instrumenting an Application for Telemetry](instrumenting-application-for-telemetry.md)]  

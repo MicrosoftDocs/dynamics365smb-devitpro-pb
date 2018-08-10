@@ -11,9 +11,9 @@ ms.assetid: 9981a5d5-10f1-4939-bfd8-050d4d667835
 caps.latest.revision: 14
 ---
 # How to: Use Performance Monitor to Collect Event Trace Data
-This topic describes how to use Windows Performance Monitor to collect event trace data for [!INCLUDE[nav_server](includes/nav_server_md.md)]. To collect trace event data, you create a Data Collector Set, and then start the Data Collector Set.  
+This topic describes how to use Windows Performance Monitor to collect event trace data for [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. To collect trace event data, you create a Data Collector Set, and then start the Data Collector Set.  
   
-### To create a Data Collector Set for collecting [!INCLUDE[navnow](includes/navnow_md.md)] trace event data  
+### To create a Data Collector Set for collecting [!INCLUDE[prodshort](../developer/includes/prodshort.md)] trace event data  
   
 1.  Start Windows Performance Monitor.  
   
@@ -33,7 +33,7 @@ This topic describes how to use Windows Performance Monitor to collect event tra
   
     1.  In the **Properties** list, select **Keywords \(Any\)**, and then choose the **Edit** button.  
   
-    2.  On the **Property** page, in the **Manual** box, type the keyword decimal value for the trace event. For a list of keyword values for trace events, see [Microsoft Dynamics NAV Server Trace Events](Microsoft-Dynamics-NAV-Server-Trace-Events.md).  
+    2.  On the **Property** page, in the **Manual** box, type the keyword decimal value for the trace event. For a list of keyword values for trace events, see [Business Central Server Trace Events](server-trace-events.md).  
   
          For example, if you want to collect data on service call trace events, then type **4**. If you want to collect data on more than one trace event, add the keyword values for each trace event and then use the sum in the **Manual** box. For example, if you want to collect data on service calls \(keyword decimal value = 4\) and C/AL functions \(keyword decimal value = 8\), then use the value **12**.  
   
@@ -78,9 +78,9 @@ This topic describes how to use Windows Performance Monitor to collect event tra
   
  For information about how to schedule a time to start and stop collecting data, see [Schedule Data Collection in Windows Performance Monitor](http://technet.microsoft.com/en-us/library/cc722312.aspx).  
   
- The collected event trace data is stored in an event trace log \(.etl\) file in the location that you specified. You can view the data in the log file by using various industry-standard tools, such as PerfView. For information about how to use PerfView to view the event trace data, see [How to: Use PerfView to View Event Trace Data](How-to--Use-PerfView-to-View-Event-Trace-Data.md).  
+ The collected event trace data is stored in an event trace log \(.etl\) file in the location that you specified. You can view the data in the log file by using various industry-standard tools, such as PerfView. For information about how to use PerfView to view the event trace data, see [Use PerfView to View Event Trace Data]([Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).md).  
   
 ## See Also  
- [Monitoring Microsoft Dynamics NAV Server Events](Monitoring-Microsoft-Dynamics-NAV-Server-Events.md)   
- [How to: Use PerfView to View Event Trace Data](How-to--Use-PerfView-to-View-Event-Trace-Data.md)  
+ [Monitoring Business Central Server Events](monitor-server-events.md)   
+ [Use PerfView to View Event Trace Data]([Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).md)  
  [Instrumenting an Application for Telemetry](instrumenting-application-for-telemetry.md)]

@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Dynamics NAV"
+title: "Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Microsoft Dynamics 365 Business Central"
 description: This topic describes how to troubleshoot long running SQL queries that use the event viewer.
 ms.custom: na
 ms.date: 06/13/2018
@@ -12,7 +12,7 @@ ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 ---
 
 
-# Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Dynamics NAV
+# Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central
 
 This topic shows how you can use the Event Viewer to monitor long running SQL queries and decide which ones can be candidates for optimization. 
 
@@ -23,7 +23,7 @@ Identifying long running SQL queries can be a good starting point when doing a p
 > [!NOTE]  
 > The SQL queries that exceed the set threshold will be displayed in the Application window of the Event Viewer as *Warning*. 
 
-If the value of the [SqlLongRunningThreshold](Configuring-Microsoft-Dynamics-NAV-Server.md) key was set to the default value of 1000 milliseconds, you will see the message: "*Action completed successfully, but it took longer than the given threshold.*" for actions that took longer than that. To meet your performance expections in production, you can set the threshold to a different value without doing a server restart. For more information on how you can do this, see [Monitoring Long Running SQL Queries using the Event Log](Monitoring-Long-Running-SQL-Queries-Event-Log.md). 
+If the value of the [SqlLongRunningThreshold](configure-server-instance.md) key was set to the default value of 1000 milliseconds, you will see the message: "*Action completed successfully, but it took longer than the given threshold.*" for actions that took longer than that. To meet your performance expections in production, you can set the threshold to a different value without doing a server restart. For more information on how you can do this, see [Monitoring Long Running SQL Queries using the Event Log](Monitoring-Long-Running-SQL-Queries-Event-Log.md). 
 
 
 ![Threshold exceeded](media/EventViewerExample1.png)

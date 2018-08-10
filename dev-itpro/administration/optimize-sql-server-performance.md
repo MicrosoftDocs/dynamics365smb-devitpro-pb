@@ -1,5 +1,5 @@
 ---
-title: "Optimizing SQL Server Performance with Microsoft Dynamics NAV"
+title: "Optimizing SQL Server Performance with Business Central"
 ms.custom: na
 ms.date: 06/05/2016
 ms.reviewer: na
@@ -11,7 +11,7 @@ ms.assetid: e4c70172-b5bb-4649-a5cb-27fe0afd988c
 caps.latest.revision: 3
 author: jswymer
 ---
-# Optimizing SQL Server Performance with Microsoft Dynamics NAV
+# Optimizing SQL Server Performance with Business Central
 The following articles describe how to optimize performance in [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] when accessing data from the SQL Server database.  
 
 [Setting SQL Compatibility Level to Optimize Database Performance](optimize-sql-set-compatibility-level.md)

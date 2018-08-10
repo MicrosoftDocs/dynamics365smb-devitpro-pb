@@ -1,0 +1,27 @@
+---
+title: Monitoring Business Central Server
+description: This topic provides a list of articles describing the features for monitoring and troubleshooting the Business Central Server.
+ms.custom: na
+ms.date: 06/05/2016
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.prod: "dynamics-nav-2018"
+---
+# Monitoring Business Central Server
+These articles describe the features for monitoring and troubleshooting [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
+
+[Tools for Monitoring Performance Counters and Events](Tools-for-Monitoring-Performance-Counters-and-Events.md)  
+
+[Monitoring Business Central Server Using Performance Counters](Monitoring-Microsoft-Dynamics-NAV-Server-Using-Performance-Counters.md)  
+
+[Monitoring Business Central Server Events](monitor-server-events.md)  
+
+[Monitoring SQL Database Deadlocks](monitor-database-deadlocks.md)
+
+[Troubleshooting: Using Query Store to Monitor Query Performance](troubleshoot-query-performance-using-query-store.md)
+
+## See Also
+[Monitoring SQL Database Locks](monitor-database-locks.md)  
+[Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)   
