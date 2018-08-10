@@ -20,7 +20,7 @@ You can monitor events on [!INCLUDE[nav_server](../developer/includes/nav_server
 
  For more general information about ETW and event channels, see [Event Tracing for Windows](http://go.microsoft.com/fwlink/?LinkID=313939) and [Event Logs and Channels in Windows Event Log](http://go.microsoft.com/fwlink/?LinkID=517298).  
 
-## Monitoring Microsoft Dynamics NAV Server Event Traces
+## Monitoring Business Central Server Event Traces
 Event tracing provides detailed information about what is occurring on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] and application when users work with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This can help you identify and analyze problems or conditions that affect performance. Event tracing enables you to dynamically monitor [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] without having to restart the server or [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients. By using industry-standard tools for event tracing, you can start and stop event tracing sessions, and then view the trace event data from a stored log file.  
   
 You can use event tracing to track the following operations on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances:  

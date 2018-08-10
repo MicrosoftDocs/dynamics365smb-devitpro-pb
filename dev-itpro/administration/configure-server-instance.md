@@ -31,7 +31,7 @@ After you install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]
 
 -   Using the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].
 
-    For more information, see [Settings in the Microsoft Dynamics NAV Administration Console](configure-server-instance.md#NavAdminSettings) and [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
+    For more information, see [Settings in the Microsoft Dynamics NAV Administration Console](configure-server-instance.md#NavAdminSettings) and [Business Central Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
 
 -   Using the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) that is available in the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].
 

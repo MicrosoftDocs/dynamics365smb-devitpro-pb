@@ -344,7 +344,7 @@
 # Administration
 ## [Configuring Business Central Server](administration/configure-server-instance.md)
 ## Monitoring Business Central Server
-### [Monitoring Performance Counters](administration/monitor-performance-counters.md)
+### [Monitoring Performance Counters](administration/performance-counters.md)
 ### [Monitoring Server Events](administration/monitor-server-events.md)
 #### [Trace Events List](administration/server-trace-events.md)
 #### [Admin and Operational Events List](administration/server-events.md)
