@@ -83,9 +83,9 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
  For more information, see [Create a Full Database Backup \(SQL Server\)](http://msdn.microsoft.com/en-us/library/ms187510.aspx).  
 
-## Task 3 Uninstall all V1 extensions in old database
+## Task 3 Uninstall all extensions in old database
 Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that matches to old database, and run these commands: 
-1.  To get a list of the V1 extensions that are installed, run this command:
+1.  To get a list of the extensions that are installed, run this command:
 
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant <TenantID>
@@ -95,19 +95,22 @@ Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that ma
 
     <!-- In the table that appears, V1 extensions are indicated by `CSIDE` in the `Extension Type` column.-->
 
-    V1 extensions have `ExtensionType` of `CSIDE`. <!-- Make a note of the V1 extensions that you will uninstall because you will reinstall these later, after you upgrade the database.-->
-2. For each Extension V1, run this command to uninstall it:
+    <!-- V1 extensions have `ExtensionType` of `CSIDE`. Make a note of the V1 extensions that you will uninstall because you will reinstall these later, after you upgrade the database.-->
+2. For each extension, run this command to uninstall it:
 
     ```
     Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
     ```
-  
-    or 
-
-    Get-NAVAppInfo -ServerInstance DynamicsNAV110 -Tenant default | ? ExtensionType -Match CSide | % { Uninst
-all-NAVApp -ServerInstance DynamicsNAV110 -Name $_.Name -Version $_.Version } 
-
+    Replace `<ServerInstanceName>` with the name of the [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance that the database connects to.
+    
     Replace `<Name>` and `<N.N.N.N>` with the name and version of the Extension V1 as it appeared in the previous step.
+
+    Alternately, to remove them all at once, you can run this command:
+
+    ```
+    Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
+    ```
+
 
 <!-- 
     > [!IMPORTANT]
