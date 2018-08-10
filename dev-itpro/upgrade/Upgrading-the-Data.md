@@ -206,12 +206,12 @@ The service account that is used by the [!INCLUDE[nav_server](../developer/inclu
 
 For more information, see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).
 
-##  <a name="CompSysTables"></a> Task 11: Compile all objects that are not already compiled
+##  <a name="CompSysTables"></a> Task 11: Compile all objects
 1. In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], set it to use the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that connects to the database.
 
     For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md).  
 
-2. Use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or finsql.exe to compile all objects that are not already compiled. This includes the imported application objects, data tables, and system tables. 
+2. Use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or finsql.exe to compile all objects. This includes the imported application objects, data tables, and system tables. 
 
     > [!IMPORTANT]
     >Choose to run schema synchronization later. For example, in Object Designer, choose **Tools**, choose **Compile**, set the **Synchronize Schema** option to **Later**, and then choose **OK**. For more information, see [Compiling Objects](compiling-objects.md).
