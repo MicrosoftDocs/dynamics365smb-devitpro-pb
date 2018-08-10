@@ -344,6 +344,16 @@
 # Administration
 ## [Configuring Microsoft Dynamics NAV Server](administration\Configuring-Microsoft-Dynamics-NAV-Server.md)
 ## Monitoring Business Central Server
+### [Monitoring Performance Counters](monitor-performance-counters.md)
+### [Monitoring Server Events](monitor-server-events.md)
+#### [Trace Events List](server-trace-events.md)
+#### [Admin and Operational Events List](server-events.md)
+#### [Using Event Viewer](monitor-server-events-windows-event-log.md)
+#### [Using Performance Monitor](monitor-use-performance-monitor-collect-event-trace-data.md)
+#### [Using PerView](monitor-use-perfview-collect-event-trace-data.md)
+#### [Using LogMan](monitor-use-logman-collect-event-trace-data.md)
+#### [Using PowerShell](monitor-server-events-with-powershell.md)
+
 
 <!-- end admin -->
 <!-- deployment-->
