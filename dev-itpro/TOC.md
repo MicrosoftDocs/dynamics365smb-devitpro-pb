@@ -342,19 +342,19 @@
 <!-- end AL -->
 <!-- administration-->
 # Administration
-## [Configuring Microsoft Dynamics NAV Server](administration\Configuring-Microsoft-Dynamics-NAV-Server.md)
+## [Configuring Business Central Server](administration/configure-server-instance.md)
 ## Monitoring Business Central Server
-### [Monitoring Performance Counters](monitor-performance-counters.md)
-### [Monitoring Server Events](monitor-server-events.md)
-#### [Trace Events List](server-trace-events.md)
-#### [Admin and Operational Events List](server-events.md)
-#### [Using Event Viewer](monitor-server-events-windows-event-log.md)
-#### [Using Performance Monitor](monitor-use-performance-monitor-collect-event-trace-data.md)
-#### [Using PerView](monitor-use-perfview-collect-event-trace-data.md)
-#### [Using LogMan](monitor-use-logman-collect-event-trace-data.md)
-#### [Using PowerShell](monitor-server-events-with-powershell.md)
-
-
+### [Monitoring Performance Counters](administration/monitor-performance-counters.md)
+### [Monitoring Server Events](administration/monitor-server-events.md)
+#### [Trace Events List](administration/server-trace-events.md)
+#### [Admin and Operational Events List](administration/server-events.md)
+#### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)
+#### [Using Performance Monitor](administration/monitor-use-performance-monitor-collect-event-trace-data.md)
+#### [Using PerView](administration/monitor-use-perfview-collect-event-trace-data.md)
+#### [Using LogMan](administration/monitor-use-logman-collect-event-trace-data.md)
+#### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
+#### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
+### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
 <!-- end admin -->
 <!-- deployment-->
 # Deployment
