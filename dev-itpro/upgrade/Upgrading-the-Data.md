@@ -42,9 +42,10 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     |-----------|-------|-----------|
     |[!INCLUDE[nav7long](../developer/includes/nav7long_md.md)]|Upgrade7001100.FOB|This file can be found on the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] [Cumulative Update 2 installation media (DVD)](https://support.microsoft.com/en-us/help/4078580/cumulative-update-02-for-microsoft-dynamics-nav-2018-build-20348?preview). It is not available with later cumulative updates.|
     |[!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]|Upgrade7101100.FOB and Upgrade710HF1100.FOB|This file can be found on the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] [Cumulative Update 2 installation media (DVD)](https://support.microsoft.com/en-us/help/4078580/cumulative-update-02-for-microsoft-dynamics-nav-2018-build-20348?preview). It is not available with later cumulative updates.|
-    | [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]| Upgrade8001100.FOB||
-    | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade9001100.FOB||
-    |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade10001100.FOB||
+    | [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]| Upgrade8001300.FOB||
+    | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade9001300.FOB||
+    |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade10001300.FOB||
+    |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade11001300.FOB||
 
     For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade10001100.DK.fob** for Denmark or **Upgrade10001100.DE.fob** for Germany.  
 
@@ -94,13 +95,18 @@ Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that ma
 
     <!-- In the table that appears, V1 extensions are indicated by `CSIDE` in the `Extension Type` column.-->
 
-    Make a note of the V1 extensions that you will uninstall because you will reinstall these later, after you upgrade the database.
+    V1 extensions have `ExtensionType` of `CSIDE`. <!-- Make a note of the V1 extensions that you will uninstall because you will reinstall these later, after you upgrade the database.-->
 2. For each Extension V1, run this command to uninstall it:
 
     ```
     Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
     ```
   
+    or 
+
+    Get-NAVAppInfo -ServerInstance DynamicsNAV110 -Tenant default | ? ExtensionType -Match CSide | % { Uninst
+all-NAVApp -ServerInstance DynamicsNAV110 -Name $_.Name -Version $_.Version } 
+
     Replace `<Name>` and `<N.N.N.N>` with the name and version of the Extension V1 as it appeared in the previous step.
 
 <!-- 
@@ -137,7 +143,7 @@ As a minimum, you must install the following [!INCLUDE[nav2018_md](../developer/
 ## Task 7: Clear Dynamics NAV Server instance and debugger breakpoint records from old database
 Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the database in SQL Server.  
 
-1.  If you did not uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], make sure that you stop the old [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
+1.  If you did not uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
 2.  Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
 
     ```
@@ -149,7 +155,7 @@ Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoin
 
 If the database is on Azure SQL Database, you must first add your user account to the **dbmanager** database role on master database. This membership is only required for converting the database, and can be removed afterwards. 
 
-To convert the old database to the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] format, open the old database in the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], and follow the conversion instructions.
+To convert the old database to the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] format, open the old database in the new [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], and follow the conversion instructions.
 
 > [!IMPORTANT]
 > Do not run schema synchronization at this time.
