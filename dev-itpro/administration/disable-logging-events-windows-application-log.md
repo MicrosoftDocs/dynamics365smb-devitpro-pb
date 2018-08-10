@@ -49,5 +49,5 @@ Because the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] insta
 3.  Save the file, and then restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.  
   
 ## See Also  
- [Monitoring Dynamics NAV Server Events Using Event Viewer](Monitoring-Microsoft-Dynamics-NAV-Server-Events-in-the-Windows-Event-Log.md)   
- [Monitoring Microsoft Dynamics NAV Server Events](Monitoring-Microsoft-Dynamics-NAV-Server-Events.md)
+ [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)   
+ [Monitoring Business Central Server Events](monitor-server-events.md) 

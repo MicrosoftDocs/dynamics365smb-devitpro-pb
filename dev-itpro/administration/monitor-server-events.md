@@ -45,10 +45,10 @@ There are various industry-standard tools that you can use to collect event trac
 |Review the list of trace events that are available for monitoring [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances.|[Microsoft Dynamics NAV Server Trace Events List](Microsoft-Dynamics-NAV-Server-Trace-Events.md)|  
 |Collect event trace data in an event trace log \(.etl\) file. Use the event trace monitoring tool to start an event trace session.|[How to: Use Performance Monitor to Collect Event Trace Data](How-to--Use-Performance-Monitor-to-Collect-Event-Trace-Data.md)<br /><br /> [How to: Use PerfView to Collect Event Trace Data](How-to--Use-PerfView-to-Collect-Event-Trace-Data.md)<br /><br />[How to: Use Logman to Collect Event Trace Data](How-to--Use-Logman-to-Collect-Event-Trace-Data.md)|  
 |View event trace data that is contained in an .etl file.|[How to: Use PerfView to View Event Trace Data](How-to--Use-PerfView-to-View-Event-Trace-Data.md)|  
-|Use Event Viewer to collect and view events |[Monitoring Dynamics NAV Server Events by Using Event Viewer](Monitoring-Microsoft-Dynamics-NAV-Server-Events-in-the-Windows-Event-Log.md) |  
+|Use Event Viewer to collect and view events |[Monitoring Dynamics NAV Server Events by Using Event Viewer](monitor-server-events-windows-event-log.md) |  
 |Use Windows PowerShell to view event trace data|[Monitoring Dynamics NAV Server Events by Using Windows PowerShell](Monitoring-Microsoft-Dynamics-NAV-Server-Events-with-PowerShell.md)|
 |Turn off or limit the amount of telemetry trace events emitted based on the severity level.|[Turn Off or Limit Telemetry Trace Events](disable-limit-telemetry-events.md)|   
   
 ## See Also    
 [Dynamics NAV Server Trace Events](Microsoft-Dynamics-NAV-Server-Trace-Events.md)  
-[Dynamics NAV Server Admin and Operational Events](Microsoft-Dynamics-NAV-Server-Events.md)  
+[Dynamics NAV Server Admin and Operational Events](server-events.md)  

@@ -67,6 +67,6 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[n
 For more information about how to use the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
 
 ## See Also  
- [Monitoring Dynamics NAV Server Events Using Event Viewer](Monitoring-Microsoft-Dynamics-NAV-Server-Events-in-the-Windows-Event-Log.md)   
- [Monitoring Microsoft Dynamics NAV Server Events](Monitoring-Microsoft-Dynamics-NAV-Server-Events.md)  
+ [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)   
+ [Monitoring Business Central Server Events](monitor-server-events.md)   
  [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md#General)  

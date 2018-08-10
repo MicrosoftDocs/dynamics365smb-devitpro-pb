@@ -38,6 +38,6 @@ By default the **Debug** logs are disabled and may also be hidden in the Event V
  [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] trace events will now be recorded in the **Debug** log. For a list and description of trace events, see [Microsoft Dynamics NAV Server Trace Events](Microsoft-Dynamics-NAV-Server-Trace-Events.md).  
   
 ## See Also  
- [Monitoring Microsoft Dynamics NAV Server Events](Monitoring-Microsoft-Dynamics-NAV-Server-Events.md)   
+ [Monitoring Business Central Server Events](monitor-server-events.md)    
  [Show or Hide Analytic and Debug](http://technet.microsoft.com/en-us/library/cc766275.aspx)   
  [Enable Analytic and Debug Logs](http://technet.microsoft.com/en-us/library/cc749492.aspx)

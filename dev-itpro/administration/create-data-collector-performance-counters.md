@@ -53,6 +53,6 @@ This topic describes how to create a Data Collector Set in Performance Monitor t
  For information about how to view the data that is collected by the Data Collector Set, see [How to: View Performance Counter Data for a Data Collector Set](How-to--View-Performance-Counter-Data-for-a-Data-Collector-Set.md).  
   
 ## See Also  
- [Working with Data Collector Sets](Working-with-Data-Collector-Sets.md)   
+ [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)   
  [How to: Create a Data Collector Set From the Microsoft Dynamics NAV Template](How-to--Create-a-Data-Collector-Set-From-the-Microsoft-Dynamics-NAV-Template.md)   
  [Microsoft Dynamics NAV Performance Counters](Microsoft-Dynamics-NAV-Performance-Counters.md)

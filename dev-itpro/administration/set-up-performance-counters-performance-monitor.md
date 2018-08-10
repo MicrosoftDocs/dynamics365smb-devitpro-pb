@@ -38,6 +38,6 @@ This topic describes how to use Windows Performance Monitor to collect and view 
  For more information about how to use Windows Performance Monitor, see [Windows Performance Monitor](http://go.microsoft.com/fwlink/?LinkId=259406).  
   
 ## See Also  
- [Microsoft Dynamics NAV Performance Counters](Microsoft-Dynamics-NAV-Performance-Counters.md)   
- [Monitoring Microsoft Dynamics NAV Server](Monitoring-Microsoft-Dynamics-NAV-Server.md)   
- [Working with Data Collector Sets](Working-with-Data-Collector-Sets.md)
+ [Business Central Performance Counters](performance-counters.md)   
+ [Monitoring Business Central Server](monitor-server.md)   
+ [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)

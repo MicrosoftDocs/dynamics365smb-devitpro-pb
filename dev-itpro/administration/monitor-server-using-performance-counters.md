@@ -17,10 +17,10 @@ Performance counters provide information about how well [!INCLUDE[nav_server](..
 
 ## In This Section  
 
--   [Microsoft Dynamics NAV Performance Counters](Microsoft-Dynamics-NAV-Performance-Counters.md)  
+-   [Business Central Performance Counters](performance-counters.md)  
 
 -   [How to: Set up Performance Counters in Windows Performance Monitor](How-to--Set-up-Performance-Counters-in-Windows-Performance-Monitor.md)  
 
--   [Working with Data Collector Sets](Working-with-Data-Collector-Sets.md)  
+-   [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)  
 
 <!-- remove temporarily until we determine support for this  For information about System Center Operations Manager, see [Microsoft Dynamics NAV  Management Pack for System Center Operations Manager](http://go.microsoft.com/fwlink/?LinkID=722863).-->
