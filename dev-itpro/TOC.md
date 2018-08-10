@@ -343,6 +343,8 @@
 <!-- administration-->
 # Administration
 ## [Configuring Microsoft Dynamics NAV Server](administration\Configuring-Microsoft-Dynamics-NAV-Server.md)
+## Monitoring Business Central Server
+
 <!-- end admin -->
 <!-- deployment-->
 # Deployment
