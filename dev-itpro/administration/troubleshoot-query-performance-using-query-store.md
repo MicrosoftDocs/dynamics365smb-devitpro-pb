@@ -1,5 +1,5 @@
 ---
-title: "How to use SQL Server Query Store to troubleshoot query performance in Dynamics NAV"
+title: "How to use SQL Server Query Store to troubleshoot query performance in Business Central"
 author: KennieNP
 ms.custom: na
 ms.date: 02/20/2017
@@ -8,12 +8,9 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: e28202de-a9d4-44db-b5b1-a9be8674a53d
-caps.latest.revision: 15
 ms.author: kepontop
-manager: edupont
 ---
-# Troubleshooting: Using Query Store to Monitor Query Performance in Dynamics NAV
+# Troubleshooting: Using Query Store to Monitor Query Performance in Business Central
 
 ## What is SQL Server Query Store?
 The SQL Server Query Store feature provides you with insight on database query plan choice and performance. It simplifies database performance troubleshooting by helping you quickly find performance differences caused by query plan changes. Query Store automatically captures a history of queries, plans, and runtime statistics, and retains these for your review.

@@ -43,7 +43,7 @@ This topic describes how to use PerfView to collect event trace data for [!INCLU
   
 8.  To stop recording data, choose the **Stop Collection** button.  
   
- The collected event trace data is stored in an event trace log \(.etl\) file in the location that you specified. You can view the data in the log file by using various industry-standard tools, such as PerfView. For information about how to use PerfView to view the event trace data, see [How to: Use PerfView to View Event Trace Data](How-to--Use-PerfView-to-View-Event-Trace-Data.md).  
+ The collected event trace data is stored in an event trace log \(.etl\) file in the location that you specified. You can view the data in the log file by using various industry-standard tools, such as PerfView. For information about how to use PerfView to view the event trace data, see [Use PerfView to View Event Trace Data]([Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).md).  
   
 ##  <a name="ViewDataPerfView"></a> To view event trace data from an event trace log file  
   
@@ -64,6 +64,6 @@ This topic describes how to use PerfView to collect event trace data for [!INCLU
 5.  To view details about a trace event, double-click the trace event.  
   
 ## See Also  
- [Monitoring Microsoft Dynamics NAV Server Events](Monitoring-Microsoft-Dynamics-NAV-Server-Events.md)   
- [Microsoft Dynamics NAV Server Trace Events](Microsoft-Dynamics-NAV-Server-Trace-Events.md)  
+ [Monitoring Business Central Server Events](monitor-server-events.md)   
+ [Business Central Server Trace Events](server-trace-events.md)  
  [Instrumenting an Application for Telemetry](instrumenting-application-for-telemetry.md)]

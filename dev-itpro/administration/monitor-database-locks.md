@@ -27,9 +27,9 @@ The **Database Locks** page displays all the active locks on tables in the [!INC
 |SQL Lock Resource Type|Specifies the database resource affected by the lock, such as DATABASE, FILE, OBJECT, PAGE, KEY, and more.|  
 |SQL Lock Request Mode|Specifies the lock mode that determines how concurrent transactions can access the resource. For more information, see [Lock Modes](https://aka.ms/sqldatabaselockmodes).|
 |SQL Lock Request Status|Specifies the current status of the lock, which can be one of the following:</br></br>**CNVRT** means that the lock is transitioning from another mode, but the conversion is blocked by another process that holds a lock with a conflicting mode.</br>**GRANT** means that the lock is active.</br>**WAIT** means that the lock is blocked by another process that holds a lock with a conflicting mode.|
-|Executing AL Object Type|Specifies the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] object in C/AL that is running the transaction, such as a page or report.|
+|Executing AL Object Type|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] object in C/AL that is running the transaction, such as a page or report.|
 |Executing AL Object Id|Specifies the ID of the object that is running.|
 |Executing AL Method|Specifies the C/AL function that is running the transaction that caused the lock.|
 
 ##  See Also
-[Monitoring SQL Database Deadlocks](Monitoring-Database-Deadlocks.md)  
+[Monitoring SQL Database Deadlocks](monitor-database-deadlocks.md)  

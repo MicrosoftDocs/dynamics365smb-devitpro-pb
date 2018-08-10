@@ -35,7 +35,7 @@ By default the **Debug** logs are disabled and may also be hidden in the Event V
     > [!NOTE]  
     >  Depending on the number of events, you might have to increase the maximum size of the log. The default value is 1028 KB. For more information, see [Set Maximum Log Size](http://go.microsoft.com/fwlink/?LinkID=517563).  
   
- [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] trace events will now be recorded in the **Debug** log. For a list and description of trace events, see [Microsoft Dynamics NAV Server Trace Events](Microsoft-Dynamics-NAV-Server-Trace-Events.md).  
+ [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] trace events will now be recorded in the **Debug** log. For a list and description of trace events, see [Business Central Server Trace Events](server-trace-events.md).  
   
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)    

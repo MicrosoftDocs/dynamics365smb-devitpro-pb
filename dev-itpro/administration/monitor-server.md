@@ -16,12 +16,12 @@ These articles describe the features for monitoring and troubleshooting [!INCLUD
 
 [Monitoring Microsoft Dynamics NAV Server Using Performance Counters](Monitoring-Microsoft-Dynamics-NAV-Server-Using-Performance-Counters.md)  
 
-[Monitoring Microsoft Dynamics NAV Server Events](Monitoring-Microsoft-Dynamics-NAV-Server-Events.md)  
+[Monitoring Business Central Server Events](monitor-server-events.md)  
 
-[Monitoring SQL Database Deadlocks](Monitoring-Database-Deadlocks.md)
+[Monitoring SQL Database Deadlocks](monitor-database-deadlocks.md)
 
 [Troubleshooting: Using Query Store to Monitor Query Performance in Dynamics NAV](troubleshooting-query-performance-using-query-store.md)
 
 ## See Also
-[Monitoring SQL Database Locks](Monitoring-Database-Locks.md)  
+[Monitoring SQL Database Locks](monitor-database-locks.md)  
 [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)   

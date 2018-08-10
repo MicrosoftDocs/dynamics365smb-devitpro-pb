@@ -69,4 +69,4 @@ For more information about how to use the [!INCLUDE[nav_shell](../developer/incl
 ## See Also  
  [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)   
  [Monitoring Business Central Server Events](monitor-server-events.md)   
- [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md#General)  
+ [Configuring Business Central Server](configure-server-instance.md#General)  

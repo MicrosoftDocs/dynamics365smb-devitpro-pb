@@ -12,9 +12,9 @@ ms.assetid: 2b2c8383-8e5a-47ea-bfd0-8621021a697a
 caps.latest.revision: 9
 ---
 # Creating a Data Collector for Business Central Performance Counters
-This topic describes how to create a Data Collector Set in Performance Monitor that contains [!INCLUDE[navnow](../developer/includes/navnow_md.md)] performance counters.  
+This topic describes how to create a Data Collector Set in Performance Monitor that contains [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters.  
   
-### To create a Data Collector Set for [!INCLUDE[navnow](../developer/includes/navnow_md.md)] performance counters  
+### To create a Data Collector Set for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters  
   
 1.  On the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], start Performance Monitor.  
   
@@ -28,7 +28,7 @@ This topic describes how to create a Data Collector Set in Performance Monitor t
   
 5.  In the **Add Counters** window, in the **Select counters from computer:** drop-down list, choose the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
   
-6.  In the **Available counters** list, expand **[!INCLUDE[navnow](../developer/includes/navnow_md.md)]**, and select one or more counters.  
+6.  In the **Available counters** list, expand **[!INCLUDE[prodshort](../developer/includes/prodshort.md)]**, and select one or more counters.  
   
 7.  In the **Instances of selected object** list, select **\<All instances>** to collect data for all [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances on the computer or individually select one or more instances from the list.  
   
@@ -50,9 +50,9 @@ This topic describes how to create a Data Collector Set in Performance Monitor t
   
  For information about how to schedule a time to start and stop collecting data, see [Schedule Data Collection in Windows Performance Monitor](http://technet.microsoft.com/en-us/library/cc722312.aspx).  
   
- For information about how to view the data that is collected by the Data Collector Set, see [How to: View Performance Counter Data for a Data Collector Set](How-to--View-Performance-Counter-Data-for-a-Data-Collector-Set.md).  
+ For information about how to view the data that is collected by the Data Collector Set, see [View Performance Counter Data for a Data Collector Set](monitor-view-performance-counter-data-for-data-collector-set.md).  
   
 ## See Also  
  [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)   
- [How to: Create a Data Collector Set From the Microsoft Dynamics NAV Template](How-to--Create-a-Data-Collector-Set-From-the-Microsoft-Dynamics-NAV-Template.md)   
- [Microsoft Dynamics NAV Performance Counters](Microsoft-Dynamics-NAV-Performance-Counters.md)
+ [Create a Data Collector Set From Template](monitor-create-data-collector-set-from-template.md)   
+ [Business Central Performance Counters](performance-counters.md)

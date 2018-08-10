@@ -11,9 +11,9 @@ ms.assetid: 73fa1a63-ca2f-4c50-a312-8297c18ca255
 caps.latest.revision: 9
 ---
 # Set up Performance Counters in Windows Performance Monitor
-This topic describes how to use Windows Performance Monitor to collect and view data from the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] performance counters. For a list of [!INCLUDE[navnow](../developer/includes/navnow_md.md)] performance counters, see [Microsoft Dynamics NAV Performance Counters](Microsoft-Dynamics-NAV-Performance-Counters.md).  
+This topic describes how to use Windows Performance Monitor to collect and view data from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters. For a list of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters, see [Business Central Performance Counters](performance-counters.md).  
   
-### To set up [!INCLUDE[navnow](../developer/includes/navnow_md.md)] performance counters  
+### To set up [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters  
   
 1.  Start Windows Performance Monitor.  
   
@@ -25,7 +25,7 @@ This topic describes how to use Windows Performance Monitor to collect and view 
   
 4.  In the **Add Counters** window, in the **Select counters from computer** drop-down list, choose the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
   
-5.  In the **Available counters** list, expand **[!INCLUDE[navnow](../developer/includes/navnow_md.md)]**, and select one or more counters.  
+5.  In the **Available counters** list, expand **[!INCLUDE[prodshort](../developer/includes/prodshort.md)]**, and select one or more counters.  
   
 6.  In the **Instances of selected object** list, select one or more [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances.  
   

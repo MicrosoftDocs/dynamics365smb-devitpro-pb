@@ -23,7 +23,7 @@ Identifying long running SQL queries can be a good starting point when doing a p
 > [!NOTE]  
 > The SQL queries that exceed the set threshold will be displayed in the Application window of the Event Viewer as *Warning*. 
 
-If the value of the [SqlLongRunningThreshold](Configuring-Microsoft-Dynamics-NAV-Server.md) key was set to the default value of 1000 milliseconds, you will see the message: "*Action completed successfully, but it took longer than the given threshold.*" for actions that took longer than that. To meet your performance expections in production, you can set the threshold to a different value without doing a server restart. For more information on how you can do this, see [Monitoring Long Running SQL Queries using the Event Log](Monitoring-Long-Running-SQL-Queries-Event-Log.md). 
+If the value of the [SqlLongRunningThreshold](configure-server-instance.md) key was set to the default value of 1000 milliseconds, you will see the message: "*Action completed successfully, but it took longer than the given threshold.*" for actions that took longer than that. To meet your performance expections in production, you can set the threshold to a different value without doing a server restart. For more information on how you can do this, see [Monitoring Long Running SQL Queries using the Event Log](Monitoring-Long-Running-SQL-Queries-Event-Log.md). 
 
 
 ![Threshold exceeded](media/EventViewerExample1.png)

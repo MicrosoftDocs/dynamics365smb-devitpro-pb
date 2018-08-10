@@ -12,15 +12,15 @@ ms.assetid: d1c5bdd0-a254-4cd9-8784-3590918398a3
 caps.latest.revision: 11
 ---
 # Creating a Data Collector Set From the Microsoft Dynamics NAV Template
-[!INCLUDE[navnow](includes/navnow_md.md)] provides a Data Collector Set template that includes the [!INCLUDE[navnow](includes/navnow_md.md)] performance counters and additional performance counters for monitoring components, such as memory, physical disks, and SQL Server. You use the template to create user-defined Data Collection Sets for monitoring all [!INCLUDE[nav_server](includes/nav_server_md.md)] instances on the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)].  
+[!INCLUDE[prodshort](includes/prodshort.md)] provides a Data Collector Set template that includes the [!INCLUDE[prodshort](includes/prodshort.md)] performance counters and additional performance counters for monitoring components, such as memory, physical disks, and SQL Server. You use the template to create user-defined Data Collection Sets for monitoring all [!INCLUDE[nav_server](includes/nav_server_md.md)] instances on the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)].  
   
- The [!INCLUDE[navnow](includes/navnow_md.md)] data collector set template is an XML file that has the name DataCollectorSet.xml and is installed with [!INCLUDE[nav_server](includes/nav_server_md.md)]. By default, the template is located in the [!INCLUDE[navnow_install](includes/navnow_install_md.md)]\\Service folder.  
+ The [!INCLUDE[prodshort](includes/prodshort.md)] data collector set template is an XML file that has the name DataCollectorSet.xml and is installed with [!INCLUDE[nav_server](includes/nav_server_md.md)]. By default, the template is located in the [!INCLUDE[navnow_install](includes/navnow_install_md.md)]\\Service folder.  
   
  Data that is collected by a data collector set is stored in a log file that you can view in Performance Monitor.  
   
  For more general information about Data Collector Sets, see [Creating Data Collector Sets](http://technet.microsoft.com/en-us/library/cc749337.aspx).  
   
-### To create a data collection set from the [!INCLUDE[navnow](includes/navnow_md.md)] template  
+### To create a data collection set from the [!INCLUDE[prodshort](includes/prodshort.md)] template  
   
 1.  On the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)], start Performance Monitor.  
   
@@ -42,6 +42,6 @@ caps.latest.revision: 11
   
 ## See Also  
  [Working with Data Collector Sets](Working-with-Data-Collector-Sets.md)   
- [Microsoft Dynamics NAV Performance Counters](Microsoft-Dynamics-NAV-Performance-Counters.md)   
- [How to: View Performance Counter Data for a Data Collector Set](How-to--View-Performance-Counter-Data-for-a-Data-Collector-Set.md)   
- [Microsoft Dynamics NAV Performance Counters](Microsoft-Dynamics-NAV-Performance-Counters.md)
+ [Business Central Performance Counters](performance-counters.md)   
+ [View Performance Counter Data for a Data Collector Set](monitor-view-performance-counter-data-for-data-collector-set.md)   
+ [Business Central Performance Counters](performance-counters.md)

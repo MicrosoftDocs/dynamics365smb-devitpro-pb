@@ -17,7 +17,7 @@ ms.prod: "dynamics-nav-2018"
 
 ## Defining Long Running SQL Queries 
 The time logged in long running SQL queries is the time spent on the called database as seen from the server. There are multiple reasons that can cause this delay, such as the database waiting for a lock to be released, or the database executing an operation that perfoms badly due to missing indexes.
-The threshold of when a query is logged is controlled in the configuration value of the *SqlLongRunningThreshold* key. The default value is 1000 milliseconds (ms). For more information about *SqlLongRunningThreshold*, see [Configuring Microsoft Dynamics NAV Server](configuring-microsoft-dynamics-nav-server.md), database settings section. 
+The threshold of when a query is logged is controlled in the configuration value of the *SqlLongRunningThreshold* key. The default value is 1000 milliseconds (ms). For more information about *SqlLongRunningThreshold*, see [Configuring Business Central Server](configure-server-instance.md), database settings section. 
 
 ## Changing Configuration Values
 With [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)], some of the configuration values for the server can be changed in the memory of the server, without doing a server restart. To change the threshold dynamically to 2000 ms, run the Dynamics NAV Administration Shell as Administrator and then type the following PowerShell cmdlet:
@@ -30,7 +30,7 @@ Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLong
 
 ## See Also
 
-[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Dynamics NAV](troubleshooting-long-running-queries-using-event-log.md)     
+[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshooting-long-running-queries-using-event-log.md)     
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
 [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)  
 [Set-NAVServerConfiguration](https://go.microsoft.com/fwlink/?linkid=401394)      
