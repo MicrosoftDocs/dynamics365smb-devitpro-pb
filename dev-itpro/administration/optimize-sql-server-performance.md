@@ -16,21 +16,21 @@ The following articles describe how to optimize performance in [!INCLUDE[navnowl
 
 [Setting SQL Compatibility Level to Optimize Database Performance](optimize-sql-set-compatibility-level.md)
 
-[Data Access](Data-Access.md)   
+[Data Access](optimize-sql-data-access.md)   
 
-[Table Keys and Performance](Table-Keys-and-Performance.md)   
+[Table Keys and Performance](optimize-sql-table-keys-and-Performance.md)  
 
-[Bulk Inserts](Bulk-Inserts.md)   
+[Bulk Inserts](optimize-sql-bulk-inserts.md)   
 
-[C/AL Database Functions and Performance on SQL Server](C-AL-Database-Functions-and-Performance-on-SQL-Server.md)   
+[AL Database Methods and Performance on SQL Server](optimize-sql-al-database-methods-and-performance-on-server.md)   
 
-[Query Objects and Performance](Query-Objects-and-Performance.md)  
+[Query Objects and Performance](optimize-sql-query-objects-and-performance.md)  
 
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)  
 
-[Troubleshooting: Using Query Store to Monitor Query Performance in Dynamics NAV](troubleshooting-query-performance-using-query-store.md)
+[Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshoot-query-performance-using-query-store.md)
 
-[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Dynamics NAV](troubleshooting-long-running-queries-using-event-log.md)
+[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Business Central](troubleshoot-long-running-queries-using-event-log.md)
 
 ## See Also  
  [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)   

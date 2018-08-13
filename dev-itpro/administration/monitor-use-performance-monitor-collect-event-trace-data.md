@@ -35,7 +35,7 @@ This topic describes how to use Windows Performance Monitor to collect event tra
   
     2.  On the **Property** page, in the **Manual** box, type the keyword decimal value for the trace event. For a list of keyword values for trace events, see [Business Central Server Trace Events](server-trace-events.md).  
   
-         For example, if you want to collect data on service call trace events, then type **4**. If you want to collect data on more than one trace event, add the keyword values for each trace event and then use the sum in the **Manual** box. For example, if you want to collect data on service calls \(keyword decimal value = 4\) and C/AL functions \(keyword decimal value = 8\), then use the value **12**.  
+         For example, if you want to collect data on service call trace events, then type **4**. If you want to collect data on more than one trace event, add the keyword values for each trace event and then use the sum in the **Manual** box. For example, if you want to collect data on service calls \(keyword decimal value = 4\) and AL functions \(keyword decimal value = 8\), then use the value **12**.  
   
         > [!NOTE]  
         >  Performance Monitor will automatically convert the value to hexadecimal, such as 0x4 or 0xC. You can also enter the keyword hexadecimal values directly.  

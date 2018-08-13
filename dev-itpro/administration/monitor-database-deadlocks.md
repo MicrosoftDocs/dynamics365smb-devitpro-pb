@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ---
 # Monitoring SQL Database Deadlocks
-You can set up the system to log deadlocks that occur in the SQL database. The deadlocks are recorded in the Windows Event Log of computer running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. The log entries provide information about the C/AL code that was run when the deadlock occurred, along with the deadlock report from SQL Server. This information can help you identify and resolve problem areas in the application design.
+You can set up the system to log deadlocks that occur in the SQL database. The deadlocks are recorded in the Windows Event Log of computer running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. The log entries provide information about the AL code that was run when the deadlock occurred, along with the deadlock report from SQL Server. This information can help you identify and resolve problem areas in the application design.
 
 ## About Deadlocks
 Deadlocks can prevent users from completing tasks in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. A deadlock occurs when two or more processes or transactions block each other from continuing because each has locked a database resource that the other transaction needs. SQL Server handles deadlocks by terminating and rolling back transactions that were started after the first transaction.
@@ -56,12 +56,12 @@ Deadlock event log entries have the event ID 705 and task category 33 (Telemetry
 |--------------|---------------|
 |serverInstanceName|Specifies the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance on which the event occurred.|
 |user|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account that ran the transaction that caused the event.|
-|AL ObjectType|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] object in C/AL that ran the transaction, such as a page or report.|
+|AL ObjectType|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] object in AL that ran the transaction, such as a page or report.|
 |AL ObjectNumber|Specifies the ID of the object that was run.|
-|AL ScopeName|Specifies the C/AL function that ran the transaction that caused the event.|
+|AL ScopeName|Specifies the AL function that ran the transaction that caused the event.|
 |SQL Server deadlock XML report|Includes the deadlock report that was recieved from SQL Server. For more information, see [Analyze Deadlocks](https://aka.ms/analyzedeadlocks).|
 
-**Note:**  The system cannot record information about C/AL code that was executed on a different  [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. Therefore, the three attributes *AL ObjectType*, *AL ObjectNumber* and *AL ScopeName* might be empty in a given event log entry.
+**Note:**  The system cannot record information about AL code that was executed on a different  [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. Therefore, the three attributes *AL ObjectType*, *AL ObjectNumber* and *AL ScopeName* might be empty in a given event log entry.
 
 ### View a graphical representation of the deadlock event
 To view a graphical representation of the deadlock, perform the following steps:
@@ -75,8 +75,8 @@ All deadlock events have the trace tag **00000DI**. If you only want to see dead
 
 ```
 <QueryList>
-  <Query Id="0" Path="Microsoft-DynamicsNAV-Server/Admin">
-    <Select Path="Microsoft-DynamicsNAV-Server/Admin">
+  <Query Id="0" Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">
+    <Select Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">
                  *[EventData[Data[@Name='tag'] and (Data='00000DI')]]
                </Select>
   </Query>

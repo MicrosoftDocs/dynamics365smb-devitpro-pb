@@ -19,9 +19,9 @@ Data that is needed in the client goes through the following path from the [!INC
     2. If the data does not reside in SQL Servers data cache, it is fetched from storage and returned.
 
 ## Dynamics NAV Server data caching
-In [!INCLUDE[navnow](includes/navnow_md.md)], the data cache is shared by all users who are connected to the same [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. This means that after one user has read a record, a second user who reads the same record gets it from the cache. In earlier versions of [!INCLUDE[navnow](includes/navnow_md.md)], the data cache was isolated for each user.  
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache is shared by all users who are connected to the same [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. This means that after one user has read a record, a second user who reads the same record gets it from the cache. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache was isolated for each user.  
 
-The following C/AL functions utilize the cache system:  
+The following AL functions utilize the cache system:  
 -   GET  
 -   FIND  
 -   FINDFIRST  
@@ -42,9 +42,9 @@ Results from query objects are not cached.
 
 For a call to any of the **FIND** functions, 1024 rows are cached. You can set the size of the cache by using the **Data Cache Size** setting in the [!INCLUDE[nav_server](includes/nav_server_md.md)] configuration file. The default size is 9, which approximates a cache size of 500 MB. If you increase this number by one, then the cache size doubles.  
 
-You can bypass the cache by using the [SELECTLATESTVERSION Function \(Database\)](SELECTLATESTVERSION-Function--Database-.md).  
+You can bypass the cache by using the [SELECTLATESTVERSION method \(Database\)](SELECTLATESTVERSION-method--Database-.md).  
 
-[!INCLUDE[navnow](includes/navnow_md.md)] synchronizes caching between [!INCLUDE[nav_server](includes/nav_server_md.md)] instances that are connected to the same database. By default, the synchronization occurs every 30 seconds.  
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] synchronizes caching between [!INCLUDE[nav_server](includes/nav_server_md.md)] instances that are connected to the same database. By default, the synchronization occurs every 30 seconds.  
 
 You can set the cache synchronization interval by using the *CacheSynchronizationPeriod* parameter in the CustomSettings.config file. This parameter is not included in the CustomSetting.config file by default, so you must add it manually using the following format:
 
@@ -56,18 +56,18 @@ For example, to set the interval to 50 seconds, set the `value` to `"00:00:50"`.
 ## [!INCLUDE[nav_server](includes/nav_server_md.md)] connections to SQL Server
 Starting from [!INCLUDE[nav7long_md](includes/nav7long_md.md)], the [!INCLUDE[nav_server](includes/nav_server_md.md)] uses ADO.NET to connect to the SQL Server database. Installations of [!INCLUDE[nav2009](includes/nav2009_md.md)] and earlier uses ODBC to connect to the SQL Server database.
 
-The ADO.NET interface is a managed data access layer that supports SQL Server connection pooling, which can dramatically decrease memory consumption by [!INCLUDE[nav_server](includes/nav_server_md.md)]. SQL Server connection pooling also simplifies deployment of the [!INCLUDE[navnow](includes/navnow_md.md)] three-tier architecture for deployments where the three tiers are installed on separate computers. Specifically, administrators are no longer required to manually create SPNs or to set up delegation when the client, [!INCLUDE[nav_server](includes/nav_server_md.md)], and SQL Server are on separate computers. For more information, see [Walkthrough: Installing the Three Tiers on Three Computers](Walkthrough--Installing-the-Three-Tiers-on-Three-Computers.md).  
+The ADO.NET interface is a managed data access layer that supports SQL Server connection pooling, which can dramatically decrease memory consumption by [!INCLUDE[nav_server](includes/nav_server_md.md)]. SQL Server connection pooling also simplifies deployment of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] three-tier architecture for deployments where the three tiers are installed on separate computers. Specifically, administrators are no longer required to manually create SPNs or to set up delegation when the client, [!INCLUDE[nav_server](includes/nav_server_md.md)], and SQL Server are on separate computers. For more information, see [Walkthrough: Installing the Three Tiers on Three Computers](Walkthrough--Installing-the-Three-Tiers-on-Three-Computers.md).  
 
-There is no longer a one-to-one correlation between the number of client connections and the number of SQL Server connections. In earlier versions of [!INCLUDE[navnow](includes/navnow_md.md)], each SQL Server connection could consume up to 40 MB of memory. Additionally, memory allocation is now in managed memory, which is generally more efficient than unmanaged memory.  
+There is no longer a one-to-one correlation between the number of client connections and the number of SQL Server connections. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], each SQL Server connection could consume up to 40 MB of memory. Additionally, memory allocation is now in managed memory, which is generally more efficient than unmanaged memory.  
 
- Records are retrieved using Multiple Active Result Sets \(MARS\). Functions such as NEXT, FIND\('-'\), FIND\('+'\), FIND\('>'\), and FIND\('\<'\) are generally faster with MARS than the server cursors that earlier versions of [!INCLUDE[navnow](includes/navnow_md.md)] used.  
+ Records are retrieved using Multiple Active Result Sets \(MARS\). methods such as NEXT, FIND\('-'\), FIND\('+'\), FIND\('>'\), and FIND\('\<'\) are generally faster with MARS than the server cursors that earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] used.  
 
 ## Data read/write performance  
-C/AL functions COUNT and AVERAGE formulas can use SIFT indexes. For more information, see [CALCSUMS Function \(Record\)](CALCSUMS-Function--Record-.md) and [CALCFIELDS Function \(Record\)](CALCFIELDS-Function--Record-.md). MIN and MAX formulas use SQL Server MIN and MAX functions exclusively.  
+AL functions COUNT and AVERAGE formulas can use SIFT indexes. For more information, see [CALCSUMS method \(Record\)](CALCSUMS-method--Record-.md) and [CALCFIELDS method \(Record\)](CALCFIELDS-method--Record-.md). MIN and MAX formulas use SQL Server MIN and MAX functions exclusively.  
 
- RecordIds and SQL Variant columns in a table do not prevent the use of BULK inserts. For more information, see [Bulk Inserts](Bulk-Inserts.md).  
+ RecordIds and SQL Variant columns in a table do not prevent the use of BULK inserts. For more information, see [Bulk Inserts](optimize-sql-bulk-inserts.md).  
 
-In most cases, filtering on FlowFields issues a single SQL statement. In earlier versions of [!INCLUDE[navnow](includes/navnow_md.md)], filtering on FlowFields issued an SQL statement for each filtered FlowField and for each record in the table in order to calculate the filtered FlowFields. The exceptions in [!INCLUDE[navnow](includes/navnow_md.md)] in which filtering on FlowFields does not issue a single SQL statement are as follows:  
+In most cases, filtering on FlowFields issues a single SQL statement. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], filtering on FlowFields issued an SQL statement for each filtered FlowField and for each record in the table in order to calculate the filtered FlowFields. The exceptions in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in which filtering on FlowFields does not issue a single SQL statement are as follows:  
 
 -   You use the ValueIsFilter option on a field and the field has a value. For more information about the ValueIsFilter option, see [How to: Create, View, and Edit a Calculation Formula](How-to--Create--View--and-Edit-a-Calculation-Formula.md).  
 
@@ -75,7 +75,7 @@ In most cases, filtering on FlowFields issues a single SQL statement. In earlier
 
 -   You specify **Validated** for the [SecurityFiltering Property](SecurityFiltering-Property.md) on a record. This value for the **SecurityFiltering** property means that each record that is part of the calculation must be verified for inclusion in the security filter.  
 
-In most cases, calling the FIND or NEXT functions after you have set the view to include only marked records issues a single SQL statement. In earlier versions of [!INCLUDE[navnow](includes/navnow_md.md)], calling FIND or NEXT functions that have marked records issued an SQL statement for each mark. There are some exceptions if many records are marked. For more information, see [MARKEDONLY Function \(Record\)](MARKEDONLY-Function--Record-.md).  
+In most cases, calling the FIND or NEXT functions after you have set the view to include only marked records issues a single SQL statement. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], calling FIND or NEXT functions that have marked records issued an SQL statement for each mark. There are some exceptions if many records are marked. For more information, see [MARKEDONLY method \(Record\)](MARKEDONLY-method--Record-.md).  
 
 ## Using SQL Server table partitioning
 As of [!INCLUDE[nav2018_md](includes/nav2018_md.md)], the use of SQL Server table and index partitioning is a supported configuration. The data of partitioned tables and indexes is divided into units that can be spread across more than one filegroup in a SQL Server database. All partitions of a single index or table must reside in the same database. The table or index is treated as a single logical entity when queries or updates are performed on the data. Prior to SQL Server 2016 SP1, partitioned tables and indexes were not available in every edition of SQL Server.
@@ -90,7 +90,7 @@ For more general information about partitioned tables and indexes in SQL Server,
 
 ### How Dynamics NAV supports partitioning
 
-If you have altered tables in a [!INCLUDE[navnow](includes/navnow_md.md)] database to make them partitioned tables, the synchronization engine, which is responsible for mapping the logical metamodel to physical tables, will respect this configuration during upgrades. After a schema upgrade, even if tables have been dropped and recreated, the partitioning strategy applied to the original tables will be added to the upgraded tables.
+If you have altered tables in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to make them partitioned tables, the synchronization engine, which is responsible for mapping the logical metamodel to physical tables, will respect this configuration during upgrades. After a schema upgrade, even if tables have been dropped and recreated, the partitioning strategy applied to the original tables will be added to the upgraded tables.
 You can create a partitioned table or index in SQL Server by using SQL Server Management Studio or Transact-SQL.
 
 > [!NOTE]  
@@ -102,7 +102,7 @@ This example uses Transact-SQL to change table **G_L Entry** to be partitioned o
 1. In SQL query editor, create a partition function that creates partitions that divide on year (this can be used for partitioning multiple tables):
 
     ```
-    CREATE PARTITION FUNCTION [DataHistoryPartitionFunction] (datetime)
+    CREATE PARTITION FUNCTION [DataHistoryPartitionmethod] (datetime)
     AS RANGE LEFT FOR VALUES (
     '20151231 23:59:59.997',
     '20161231 23:59:59.997',
@@ -115,7 +115,7 @@ This example uses Transact-SQL to change table **G_L Entry** to be partitioned o
 
     ```
     CREATE PARTITION SCHEME DataHistoryPartitionScheme
-    AS PARTITION DataHistoryPartitionFunction ALL TO ([PRIMARY])
+    AS PARTITION DataHistoryPartitionmethod ALL TO ([PRIMARY])
     GO
     ```
 
@@ -143,6 +143,6 @@ This example uses Transact-SQL to change table **G_L Entry** to be partitioned o
 > SQL Server Management Studio includes the **Create Partition Wizard** to help you create partitioning functions, partitioning schemes, as well as changing a table to be partitioned. For more information, see [Create Partitioned Tables and Indexes](https://docs.microsoft.com/en-us/sql/relational-databases/partitions/create-partitioned-tables-and-indexes).
 
 ## See Also  
- [Changes in C/AL Behavior and Support from Earlier Versions of Microsoft Dynamics NAV](Changes-in-C-AL-Behavior-and-Support-from-Earlier-Versions-of-Microsoft-Dynamics-NAV.md)   
+ [Changes in AL Behavior and Support from Earlier Versions of Microsoft Dynamics NAV](Changes-in-C-AL-Behavior-and-Support-from-Earlier-Versions-of-Microsoft-Dynamics-NAV.md)   
  [SumIndexField Technology \(SIFT\)](SumIndexField-Technology--SIFT-.md)   
- [Query Objects and Performance](Query-Objects-and-Performance.md)
+ [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)

@@ -17,6 +17,7 @@ The following table describes the performance counters that are available in [!I
 
 ##  Client session counters
 These counters pertain to sessions from the clients, NAS, and web services, to the server instance.
+
 |  Counter  |  [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]  |
 |-----------|-----------------------------------------------------------------------|
 |\# Active sessions|Number of active sessions on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> An active session is a connection to the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance from a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client, such as the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] or [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], and Web services (OData and SOAP).|
@@ -89,14 +90,14 @@ These counters pertain to the data caching on the server instance.
 
 |  Counter  |  [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]  |
 |-----------|-----------------------------------------------------------------------|
-|\# Calculated fields cache total requests|Count of the total number of requests to the calculated fields cache. The calculated fields cache contains the results of [CALCFIELDS Function \(Record\)](CALCFIELDS-Function--Record-.md) calls.|
+|\# Calculated fields cache total requests|Count of the total number of requests to the calculated fields cache. The calculated fields cache contains the results of [CALCFIELDS method \(Record\)](CALCFIELDS-method--Record-.md) calls.|
 |% Calculated fields cache hit rate|Percentage of hits in the calculated fields cache, compared to the total requests to the calculated fields cache.|
 |\# Command cache total requests|Count of the total number of requests to the command cache. The command cache contains the results of all SQL commands.|
 |% Command cache hit rate|Percentage of hits in the command cache, compared to the total requests to the command cache.|
 |\# Primary key cache total requests|Count of the total number of requests to the primary key cache. The primary key cache contains the results of requests to get a record by using its primary key.|
 |% Primary key cache hit rate|Percentage of hits in the primary key cache, compared to the total requests to the primary key cache.|  
 |\# Result set cache total requests|Count of the total number of requests to the result set cache. The result set cache contains result sets that are returned from SQL Server.|
-|% Result set cache hit rate|Percentage of hits in the result set cache, compared to the total requests to the result set cache.<BR /><BR />The value also depends on the usage pattern and which parts of the application are is used. For example, the [SELECTLATESTVERSION function](SELECTLATESTVERSION-Function--Database-.md) will clear the cache, which results in a lower hit rate.<BR /><BR />In general, reading frequently updated values will lower the hit rate because the cache synchronization across [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances will remove stale values, which causes re-reads.|
+|% Result set cache hit rate|Percentage of hits in the result set cache, compared to the total requests to the result set cache.<BR /><BR />The value also depends on the usage pattern and which parts of the application are is used. For example, the [SELECTLATESTVERSION function](SELECTLATESTVERSION-method--Database-.md) will clear the cache, which results in a lower hit rate.<BR /><BR />In general, reading frequently updated values will lower the hit rate because the cache synchronization across [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances will remove stale values, which causes re-reads.|
 |\# Rows in all temporary tables|Count of number of rows in all temporary tables.|
 
 ## Scheduled task counters
@@ -105,7 +106,7 @@ These pertain to tasks that are run by Task Scheduler.
 |  Counter  |  [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]  |
 |-----------|-----------------------------------------------------------------------|
 |# Available tasks|Remaining number of tasks that can potentially run simultaneously before the maximum number of tasks is reached. The value of this counter is the value the **Maximum # of tasks** counter minus the value of the **# Running tasks** counter.|
-|# of task errors/sec|Number of errors per second that are caused by running tasks. The task are causing errors in C/AL or exceptions on the server instance. If the value is greater than zero for an extended period of time, this typically indicates a failing task that keeps getting rescheduled.|
+|# of task errors/sec|Number of errors per second that are caused by running tasks. The task are causing errors in AL or exceptions on the server instance. If the value is greater than zero for an extended period of time, this typically indicates a failing task that keeps getting rescheduled.|
 |# Running tasks|Number of tasks that are currently running on the server instance. The  value is limited to the value of the **Maximum # of tasks** counter.|
 |Average task execution time|The average time (in ticks) that tasks have taken to complete.  Task execution time is counted regardless of whether the task completed successfully or raised an error. <br /><br />There is no general rule for what the normal operations level is. To analyze this counter, look for large spikes to identify long-running tasks.<br /><br />**Note:** A tick is the smallest unit that the your system uses for time measurements, and it is typically determined by the operating system. For example, in Windows, a single tick represents one hundred nanoseconds, which means that there are 10,000 ticks in a millisecond. Tick durations can differ bewteen systems, so be aware of this fact when comparing absolute values across systems.|
 |Maximum # of tasks|The maximum number of tasks that can run simultaneously. This value is defined by the **Maximum Concurrent Running Tasks** (TaskSchedulerMaxConcurrentRunningTasks) setting in the server instance configuration. Therefore, this  value is constant until the server instance setting is changed and the instance is restarted. |
@@ -127,5 +128,5 @@ For more information about task scheduler, see [Task Scheduler](task-scheduler.m
 ## See Also  
  [Set up Performance Counters in Windows Performance Monitor](set-up-performance-counters-performance-monitor.md)   
  [Create a Data Collector Set From Template](monitor-create-data-collector-set-from-template.md)   
- [Optimizing SQL Server Performance with Microsoft Dynamics NAV](Optimizing-SQL-Server-Performance-with-Microsoft-Dynamics-NAV.md)   
+ [Optimizing SQL Server Performance with Business Central](Optimize-SQL-Server-Performance.md)   
 <!-- temporatily removed until we determine our support for this [Microsoft Dynamics NAV Management Pack for System Center Operations Manager](http://go.microsoft.com/fwlink/?LinkID=722863) -->

@@ -1,6 +1,6 @@
 ---
 title: Table Keys and Performance
-description: C/AL code searches through a subset of the record in a table, consider what keys define the tables and write code that optimizes the keys.
+description: AL code searches through a subset of the record in a table, consider what keys define the tables and write code that optimizes the keys.
 ms.custom: na
 ms.date: 10/23/2017
 ms.reviewer: na
@@ -13,7 +13,7 @@ caps.latest.revision: 15
 manager: edupont
 ---
 # Table Keys and Performance in Dynamics NAV
-When you write C/AL code that searches through a subset of the records in a table, you must consider what keys are defined for the table and write code that optimizes for the keys. For example, the entries for a specific customer are usually a small subset of a table containing entries for all the customers.  
+When you write AL code that searches through a subset of the records in a table, you must consider what keys are defined for the table and write code that optimizes for the keys. For example, the entries for a specific customer are usually a small subset of a table containing entries for all the customers.  
 
 ## Defining Keys to Improve Performance  
  The time that it takes to complete a loop through a subset of records depends on the size of the subset. If a subset cannot be located and read efficiently, then performance deteriorates.  
@@ -37,7 +37,7 @@ REPEAT
 UNTIL NEXT = 0;  
 ```  
 
- SQL Server automatically chooses which index to use in order to retrieve data in the most efficient way. SQL Server calculates the cost of retrieving data using different indexes and then chooses the path that has the smallest cost. For [!INCLUDE[navnow](includes/navnow_md.md)], that calculation is based only on the statistical distribution of values in a column.  
+ SQL Server automatically chooses which index to use in order to retrieve data in the most efficient way. SQL Server calculates the cost of retrieving data using different indexes and then chooses the path that has the smallest cost. For [!INCLUDE[prodshort](../developer/includes/prodshort.md)], that calculation is based only on the statistical distribution of values in a column.  
 
  For example, if a table contains 1000 rows and a column in the table contains either the value 0 or the value 1, then that column is said to have a low selectivity. If instead a column contained the values ranging from 1 to 500 then the column is said to have a high selectivity. In the following code example, SQL Server chooses an index that contains the HighSelectivityColumn and then sorts the rows by the LowSelectivityColumn.  
 
@@ -50,7 +50,7 @@ FIND('-')
 ```  
 
 ## See Also  
- [Data Access](Data-Access.md)   
- [Bulk Inserts](Bulk-Inserts.md)   
- [C/AL Database Functions and Performance on SQL Server](C-AL-Database-Functions-and-Performance-on-SQL-Server.md)   
- [Query Objects and Performance](Query-Objects-and-Performance.md)
+ [Data Access](optimize-sql-data-access.md)   
+ [Bulk Inserts](optimize-sql-bulk-inserts.md)   
+ [AL Database Methods and Performance on SQL Server](optimize-sql-al-database-methods-and-performance-on-server.md)   
+ [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)

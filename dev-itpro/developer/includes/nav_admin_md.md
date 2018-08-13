@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Server Administration tool
+Business Central Server Administration tool

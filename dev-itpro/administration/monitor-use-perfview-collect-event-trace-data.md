@@ -35,7 +35,7 @@ This topic describes how to use PerfView to collect event trace data for [!INCLU
   
     -   If you want to filter on a specific trace event, include a colon after **Microsoft-DynamicsNav-Server**, followed by the hexadecimal keyword value for the trace event. For example, to collect trace events data on service call trace events only, then type  **Microsoft-DynamicsNav-Server:0x4**.  
   
-    -   If you want to collect data on more than one trace event, add the keyword values for each trace event and then use the sum in the field. For example, if you want to collect data on service calls \(keyword value = 0x4\) and C/AL function traces \(keyword value = 0x8\), then type **Microsoft-DynamicsNav-Server:0xC** in the field. In hexadecimal, the sum of 0x4 and 0x8 is 0xC.  
+    -   If you want to collect data on more than one trace event, add the keyword values for each trace event and then use the sum in the field. For example, if you want to collect data on service calls \(keyword value = 0x4\) and AL function traces \(keyword value = 0x8\), then type **Microsoft-DynamicsNav-Server:0xC** in the field. In hexadecimal, the sum of 0x4 and 0x8 is 0xC.  
   
 6.  Clear the check boxes above the **Additional providers** field for any providers that you do not want to collect data for.  
   

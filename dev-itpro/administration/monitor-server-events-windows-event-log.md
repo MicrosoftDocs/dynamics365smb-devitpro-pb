@@ -21,23 +21,23 @@ In the Event Viewer console tree, open **Applications and Services Logs** > **Mi
  
 ### Server folder
 
-The **Server** folder contains events from the event trace provider called **Microsoft-DynamicsNAV-Server**. The events are recorded in the following logs:  
+The **Server** folder contains events from the event trace provider called **Microsoft-Dynamics365BusinessCentral-Server**. The events are recorded in the following logs:  
   
 |Log|Description|  
 |---------|-----------------|  
-|Admin|Includes events that target end users and IT administrators. These events typically indicate a problem that requires action to resolve the problem. An example of an admin event is a tenant database failing to mount on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> For a list and description of these events, see [Dynamics NAV Server Admin and Operational Events](server-events.md).|  
-|Operational|Includes events that provide information about an operation that occurred on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances. These events are typically ordinary operating events that do not require any action but can be used to analyze and diagnose a problem. An example of an operational event is the shutting down of the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> For a list and description of these events, see [Dynamics NAV Server Admin and Operational Events](server-events.md).|  
-|Debug|Includes the trace event types: SQL (SQLTracing), service calls (ServiceCalls), and C/AL function calls (ALTracing).  For more information about the different trace events and others ways to monitor them, see [Business Central Server Trace Events](server-trace-events.md) and [Monitoring Business Central Server Events](monitor-server-events.md) .<br /><br /> **Note:** In Event Viewer, this log is hidden and disabled by default. For information about how to show and enable this log, see [How to: Enable Dynamics NAV Debug Logs in Event Viewer](How-to--Use-Event-Viewer-to-Collect-and-View-Trace-Events.md).|  
+|Admin|Includes events that target end users and IT administrators. These events typically indicate a problem that requires action to resolve the problem. An example of an admin event is a tenant database failing to mount on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> For a list and description of these events, see [Business Central Server Admin and Operational Events](server-events.md).|  
+|Operational|Includes events that provide information about an operation that occurred on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances. These events are typically ordinary operating events that do not require any action but can be used to analyze and diagnose a problem. An example of an operational event is the shutting down of the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> For a list and description of these events, see [Business Central Server Admin and Operational Events](server-events.md).|  
+|Debug|Includes the trace event types: SQL (SQLTracing), service calls (ServiceCalls), and AL function calls (ALTracing).  For more information about the different trace events and others ways to monitor them, see [Business Central Server Trace Events](server-trace-events.md) and [Monitoring Business Central Server Events](monitor-server-events.md) .<br /><br /> **Note:** In Event Viewer, this log is hidden and disabled by default. For information about how to show and enable this log, see [Enable Business Central Debug Logs in Event Viewer](use-Event-Viewer-Collect-View-Trace-Events.md).|  
 
 ### Common folder 
 
-The **Common** folder contains telemetry events from the event trace provider called **Microsoft-DynamicsNAV-Common**. This folder contains strictly telemetry events, which have IDs 700-707. The telemetry events are recorded in the following logs:  
+The **Common** folder contains telemetry events from the event trace provider called **Microsoft-Dynamics365BusinessCentral-Common**. This folder contains strictly telemetry events, which have IDs 700-707. The telemetry events are recorded in the following logs:  
       
 |Log|Description|  
 |---------|-----------------|  
 |Admin|Includes custom telemetry trace events that are emitted from the application. These are events that are sent by [SENDTRACETAG function](sendtracetag-function.md) calls from inside the application. <br /><br /> For more information, see [Instrumenting an Application for Telemetry](instrumenting-application-for-telemetry.md).<br /><br /> **Note** The [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](configure-server-instance.md#General).|  
 |Operational|Not applicable.|  
-|Debug|Includes system telemetry trace events that occur.<br /><br /> **Note:** In Event Viewer, this log is hidden and disabled by default. For information about how to show and enable this log, see [How to: Enable Dynamics NAV Debug Logs in Event Viewer](How-to--Use-Event-Viewer-to-Collect-and-View-Trace-Events.md).|  
+|Debug|Includes system telemetry trace events that occur.<br /><br /> **Note:** In Event Viewer, this log is hidden and disabled by default. For information about how to show and enable this log, see [Enable Business Central Debug Logs in Event Viewer](use-Event-Viewer-Collect-View-Trace-Events.md).|  
   
 ## Application log  
   
@@ -45,7 +45,7 @@ The Application log includes admin and operational type events \(errors, warning
   
 To view the **Application** log, in the console tree, choose **Windows Logs**, **Applications**.  
   
-The events in this log are the same events that are recorded in the **Admin** and **Operation** logs in the **DynamicsNAV** > **Server** channel. Therefore, you can consider the **Application** log to be a secondary log for these events. Unless you are using System Center Operations Manager to monitor [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events, you can disable logging [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events to the Windows Application log and rely on **Applications and Services Logs** instead. For more information, see [How to: Disable Logging Events to the Windows Application Log](How-to--Disable-Logging-Events-to-the-Windows-Application-Log.md).  
+The events in this log are the same events that are recorded in the **Admin** and **Operation** logs in the **DynamicsNAV** > **Server** channel. Therefore, you can consider the **Application** log to be a secondary log for these events. Unless you are using System Center Operations Manager to monitor [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events, you can disable logging [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events to the Windows Application log and rely on **Applications and Services Logs** instead. For more information, see [Disable Logging Events to the Windows Application Log](disable-Logging-Events-Windows-Application-Log.md).  
   
 > [!NOTE]  
 >  Trace events are not included in this log.  
@@ -77,18 +77,18 @@ By default, the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] l
   
     ```  
     <QueryList>  
-      <Query Id="0" Path="Microsoft-DynamicsNAV-Server/Admin">  
-        <Select Path="Microsoft-DynamicsNAV-Server/Admin">  
+      <Query Id="0" Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">  
+        <Select Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">  
           *[System[(Level=2) and TimeCreated[timediff(@SystemTime) <= 604800000]]]  
       </Query>  
     </QueryList>  
     ```  
   
-     `Microsoft-DynamicsNAV-Server` indicates that [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] is the provider of the events in the log.  
+     `Microsoft-Dynamics365BusinessCentral-Server` indicates that [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] is the provider of the events in the log.  
   
 7.  Select the **Edit** query manually check box, and then choose the **Yes** button.  
   
-8.  In the `<Select Path="Microsoft-DynamicsNAV-Server/Admin">` element, after `*[System[(Level=2) and TimeCreated[timediff(@SystemTime) <= 86400000]]]`, add the following lines:  
+8.  In the `<Select Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">` element, after `*[System[(Level=2) and TimeCreated[timediff(@SystemTime) <= 86400000]]]`, add the following lines:  
   
     ```  
     and  
@@ -102,8 +102,8 @@ By default, the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] l
   
     ```  
     <QueryList>  
-      <Query Id="0" Path="Microsoft-DynamicsNAV-Server/Admin">  
-        <Select Path="Microsoft-DynamicsNAV-Server/Admin">  
+      <Query Id="0" Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">  
+        <Select Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">  
           *[System[(Level=2) and TimeCreated[timediff(@SystemTime) <= 604800000]]]  
           and  
           *[EventData[Data[@Name='tenantId'] and Data  = 'MyTenant1']]  

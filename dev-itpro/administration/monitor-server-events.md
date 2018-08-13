@@ -29,7 +29,7 @@ You can use event tracing to track the following operations on [!INCLUDE[nav_ser
   
 -   Execution of SQL statements by [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
   
--   Execution of C/AL functions.  
+-   Execution of AL functions.  
 
 -   Telemetry. 
   
@@ -42,7 +42,7 @@ There are various industry-standard tools that you can use to collect event trac
   
 |Task|For more information, see|  
 |----------|-------------------------------|  
-|Review the list of trace events that are available for monitoring [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances.|[Microsoft Dynamics NAV Server Trace Events List](Microsoft-Dynamics-NAV-Server-Trace-Events.md)|  
+|Review the list of trace events that are available for monitoring [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances.|[Microsoft Dynamics NAV Server Trace Events List](server-trace-events.md)|  
 |Collect event trace data in an event trace log \(.etl\) file. Use the event trace monitoring tool to start an event trace session.|[Use Performance Monitor to Collect Event Trace Data](monitor-use-performance-monitor-collect-event-trace-data.md)<br /><br /> [Use PerfView to Collect Event Trace Data](monitor-use-perfview-collect-event-trace-data.md)<br /><br />[Use Logman to Collect Event Trace Data](monitor-use-logman-collect-event-trace-data.md)|  
 |View event trace data that is contained in an .etl file.|[Use PerfView to View Event Trace Data]([Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).md)|  
 |Use Event Viewer to collect and view events |[Monitoring Dynamics NAV Server Events by Using Event Viewer](monitor-server-events-windows-event-log.md) |  
@@ -50,5 +50,5 @@ There are various industry-standard tools that you can use to collect event trac
 |Turn off or limit the amount of telemetry trace events emitted based on the severity level.|[Turn Off or Limit Telemetry Trace Events](disable-limit-telemetry-events.md)|   
   
 ## See Also    
-[Dynamics NAV Server Trace Events](Microsoft-Dynamics-NAV-Server-Trace-Events.md)  
-[Dynamics NAV Server Admin and Operational Events](server-events.md)  
+[Business Central Server Trace Events](server-trace-events.md)  
+[Business Central Server Admin and Operational Events](server-events.md)  

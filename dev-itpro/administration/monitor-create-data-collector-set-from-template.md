@@ -11,7 +11,7 @@ ms.prod: "dynamics-nav-2018"
 ms.assetid: d1c5bdd0-a254-4cd9-8784-3590918398a3
 caps.latest.revision: 11
 ---
-# Creating a Data Collector Set From the Microsoft Dynamics NAV Template
+# Creating a Data Collector Set From the Template
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides a Data Collector Set template that includes the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters and additional performance counters for monitoring components, such as memory, physical disks, and SQL Server. You use the template to create user-defined Data Collection Sets for monitoring all [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances on the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
   
  The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data collector set template is an XML file that has the name DataCollectorSet.xml and is installed with [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. By default, the template is located in the [!INCLUDE[navnow_install](../developer/includes/navnow_install_md.md)]\\Service folder.  

@@ -1,6 +1,6 @@
 ---
-title: System Requirements for Microsoft Dynamics NAV 2018
-description: This article provides the specifications of minimum hardware and software requirements to install and run Microsoft Dynamics NAV 'TENERIFE'.
+title: System Requirements for Business Central 2018
+description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central.
 author: jswymer
 ms.custom: na
 ms.date: 08/08/2018
@@ -69,7 +69,7 @@ us_cent_short_md.md
 |Supported browsers|The following desktop browsers are supported:<ul><li> Microsoft Edge</li><li>Internet Explorer 11 \(build 11.0.9600.17239\) for Windows 10.</li><li>Google Chrome 61.0 for Windows.</li><li>Mozilla Firefox 55.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul>|  
 
 ###  <a name="DynNAVApp"></a> [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Universal App Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)]. For the latest information, see [Dynamics NAV for Windows](http://go.microsoft.com/fwlink/?LinkId=509974), [Dynamics NAV for iPad and iPhone](http://go.microsoft.com/fwlink/?LinkId=509975), and [Dynamics NAV for Android tablet and Android phone](http://go.microsoft.com/fwlink/?LinkId=509976).  
+ The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)]. For the latest information, see [Dynamics NAV for Windows](http://go.microsoft.com/fwlink/?LinkId=509974), [Business Central for iPad and iPhone](http://go.microsoft.com/fwlink/?LinkId=509975), and [Business Central for Android tablet and Android phone](http://go.microsoft.com/fwlink/?LinkId=509976).  
 
 |||  
 |-|-|  
@@ -170,7 +170,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[navn
  Automated deployment of [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] on Microsoft Azure by using the [!INCLUDE[nav_prov_short](../developer/includes/nav_prov_short_md.md)] is only supported on Azure virtual machines that are running Windows Server 2012. For additional requirements for specific [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] components, refer to the other sections in this topic.
 
 ## See Also
-[Welcome to the Developer and IT-Pro Help for Microsoft Dynamics NAV](index.md)  
+[Welcome to the Developer and IT-Pro Help for Business Central](index.md)  
 [Product and Architecture Overview](Product-and-Architecture-Overview.md)  
 [Installation Options](Installation-Options.md)  
 [Client Types](Client-Types.md)  

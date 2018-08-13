@@ -72,7 +72,7 @@ Get-WinEvent -LogName 'Microsoft-DynamicsNav-Server/Admin' -FilterXPath "*[Syste
   
 ### Example 2  
   
-The following is an example of a Windows PowerShell script that you can create and run to view trace events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Debug log. The script returns the start and stop C/AL function trace events that take more than four seconds to execute on the tenant *MyTenant1* of the server instance *MyNavServerInstance1*.  
+The following is an example of a Windows PowerShell script that you can create and run to view trace events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Debug log. The script returns the start and stop AL function trace events that take more than four seconds to execute on the tenant *MyTenant1* of the server instance *MyNavServerInstance1*.  
   
 ```  
 $maxAllowedSeconds = 4  

@@ -12,7 +12,7 @@ caps.latest.revision: 21
 manager: edupont
 ---
 # Bulk Inserts
-By default, [!INCLUDE[navnow](includes/navnow_md.md)] automatically buffers inserts in order to send them to Microsoft SQL Server at one time.  
+By default, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] automatically buffers inserts in order to send them to Microsoft SQL Server at one time.  
 
  By using bulk inserts, the number of server calls is reduced, thereby improving performance.  
 
@@ -82,7 +82,7 @@ COMMIT;
  Disabling bulk inserts can be helpful when you are troubleshooting failures that occur when inserting records. To disable bulk inserts, you set the *BufferedInsertEnabled* parameter in the CustomSettings.config file of the [!INCLUDE[nav_server](includes/nav_server_md.md)] to **FALSE**. For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).  
 
 ## See Also  
- [Data Access](Data-Access.md)   
- [Table Keys and Performance](Table-Keys-and-Performance.md)   
- [C/AL Database Functions and Performance on SQL Server](C-AL-Database-Functions-and-Performance-on-SQL-Server.md)   
- [Query Objects and Performance](Query-Objects-and-Performance.md)
+ [Data Access](optimize-sql-data-access.md)   
+ [Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
+ [AL Database Methods and Performance on SQL Server](optimize-sql-al-database-methods-and-performance-on-server.md)   
+ [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)

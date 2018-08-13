@@ -19,7 +19,7 @@ You can use event tracing to track the following operations on [!INCLUDE[nav_ser
   
 -   Execution of SQL statements by [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
   
--   Execution of C/AL functions.  
+-   Execution of AL functions.  
 
 -   Telemetry. 
   

@@ -69,6 +69,6 @@ CounterInformation:
 [Monitoring Long Running SQL Queries using the Event Log](Monitoring-Long-Running-SQL-Queries-Event-Log.md)  
 [Tools for Monitoring Performance Counters and Events](Tools-for-Monitoring-Performance-Counters-and-Events.md)  
 [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)  
-[Troubleshooting: Using Query Store to Monitor Query Performance in Dynamics NAV](troubleshooting-query-performance-using-query-store.md)  
+[Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshooting-query-performance-using-query-store.md)  
 [SQL Trace](https://docs.microsoft.com/en-us/sql/relational-databases/sql-trace/sql-trace)
 

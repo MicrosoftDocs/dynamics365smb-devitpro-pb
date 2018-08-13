@@ -10,7 +10,7 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Setting SQL Compatibility Level to Optimize Database Performance
-If your [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database is running on Azure SQL Database or SQL Server 2016 or later, set the database's compatibility level to match the database server. This will equip the database with the latest optimization features of Azure SQL Database or SQL Server. This is particularly relevant for demonstration databases that are installed by using the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Setup because the default compatibility level matches SQL Server 2014. 
+If your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database is running on Azure SQL Database or SQL Server 2016 or later, set the database's compatibility level to match the database server. This will equip the database with the latest optimization features of Azure SQL Database or SQL Server. This is particularly relevant for demonstration databases that are installed by using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup because the default compatibility level matches SQL Server 2014. 
 
 ## To change the compatibility level
 You change the compatibility level of the database by using SQL Server Management Studio. There are two ways to do this:
@@ -35,6 +35,6 @@ You change the compatibility level of the database by using SQL Server Managemen
 > The compatibility level for Azure SQL Database is subject to change. Refer to Azure SQL Database documentation for latest compatibility level.
 
 ## See Also  
-[Optimizing SQL Server Performance](Optimizing-SQL-Server-Performance-with-Microsoft-Dynamics-NAV.md)    
+[Optimizing SQL Server Performance](optimize-sql-server-performance.md)    
 [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)   
 [Microsoft SQL Server documentation](http://go.microsoft.com/fwlink/?LinkId=253107)

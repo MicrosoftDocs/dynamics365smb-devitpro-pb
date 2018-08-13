@@ -13,7 +13,7 @@ ms.assetid: 631bc980-4217-4dd6-bd62-de11685d2692
 # Security and Protection
 An enterprise business solution must have a built-in security system that helps protect your database and the information that it contains from unauthorized access. It must also allow you to specify what authorized users are allowed to do in the database, such as what data they can read and modify.  
 
- [!INCLUDE[navnowlong](includes/navnowlong_md.md)] provides a security system that allows administrators to manage user access to the objects and data in the [!INCLUDE[navnow](includes/navnow_md.md)] database. Because the [!INCLUDE[navnow](includes/navnow_md.md)] database is on SQL Server, the [!INCLUDE[navnow](includes/navnow_md.md)] security system and SQL Server security system work together to help ensure that only authorized users can gain access to the [!INCLUDE[navnow](includes/navnow_md.md)] database.  
+ [!INCLUDE[navnowlong](includes/navnowlong_md.md)] provides a security system that allows administrators to manage user access to the objects and data in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. Because the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database is on SQL Server, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] security system and SQL Server security system work together to help ensure that only authorized users can gain access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
 
  For more information, see the following topics:
 
