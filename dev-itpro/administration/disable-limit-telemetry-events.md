@@ -21,7 +21,7 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[n
 
 ## Use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)]   
   
-1.  To start the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], select **Start**, and in the **Search programs and files** box, type **Microsoft Dynamics NAV Administration**, and then choose the related link.  
+1.  To start the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], select **Start**, and in the **Search programs and files** box, type **Microsoft Dynamics365 Business Central Administration**, and then choose the related link.  
   
 2.  In the left pane, under **Console root**, select the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.  
   
@@ -37,9 +37,9 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[n
   
      You must restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance for the changes to take effect.  
   
-6.  To restart, the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, in the left pane, select the Microsoft Dynamics NAV computer.  
+6.  To restart, the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, in the left pane, select the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] computer.  
   
-     Unless you are administering a remote computer, this is Microsoft Dynamics NAV \(local\).  
+     Unless you are administering a remote computer, this is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] \(local\).  
   
 7.  In the center pane, right-click an instance, and then select **Restart**.  
   

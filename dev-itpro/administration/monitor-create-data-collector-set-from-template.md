@@ -1,6 +1,6 @@
 ---
 title: Create Data Collector Set Using Template
-description: Use the template to create user-defined Data collector Set for monitoring all Server instances on the computer that is running Dynamics NAV Server. 
+description: Use the template to create user-defined Data collector Set for monitoring all Server instances on the computer that is running Business Cenytral Server. 
 ms.custom: na
 ms.date: 11/27/2017
 ms.reviewer: na

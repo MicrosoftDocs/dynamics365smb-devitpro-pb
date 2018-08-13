@@ -18,7 +18,7 @@ Data that is needed in the client goes through the following path from the [!INC
     1. If the data resides in SQL Servers data cache, it is returned.
     2. If the data does not reside in SQL Servers data cache, it is fetched from storage and returned.
 
-## Dynamics NAV Server data caching
+## [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server data caching
 In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache is shared by all users who are connected to the same [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. This means that after one user has read a record, a second user who reads the same record gets it from the cache. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache was isolated for each user.  
 
 The following AL functions utilize the cache system:  
@@ -88,7 +88,7 @@ You can improve performance by enabling lock escalation at the partition level i
 
 For more general information about partitioned tables and indexes in SQL Server, see [Partitioned Tables and Indexes](https://docs.microsoft.com/en-us/sql/relational-databases/partitions/partitioned-tables-and-indexes).
 
-### How Dynamics NAV supports partitioning
+### How [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports partitioning
 
 If you have altered tables in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to make them partitioned tables, the synchronization engine, which is responsible for mapping the logical metamodel to physical tables, will respect this configuration during upgrades. After a schema upgrade, even if tables have been dropped and recreated, the partitioning strategy applied to the original tables will be added to the upgraded tables.
 You can create a partitioned table or index in SQL Server by using SQL Server Management Studio or Transact-SQL.

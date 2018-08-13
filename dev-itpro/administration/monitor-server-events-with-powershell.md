@@ -33,23 +33,23 @@ For more information about installing and getting started with Windows PowerShel
   
     |To view|Command|  
     |-------------|-------------|  
-    |Events in the all **Dynamics365BusinessCentral** > **Server** logs|`Get-WinEvent -ProviderName Microsoft-DynamicsNav-Server`|
+    |Events in the all **Dynamics365BusinessCentral** > **Server** logs|`Get-WinEvent -ProviderName Microsoft-Dynamics365BusinessCentral-Server`|
     |Events in the all **Dynamics365BusinessCentral** > **Common** logs|`Get-WinEvent -ProviderName Microsoft-DynamicsNav-Common`|  
-    |Events in the **Dynamics365BusinessCentral** > **Server** > **Admin** log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Server/Admin`|
+    |Events in the **Dynamics365BusinessCentral** > **Server** > **Admin** log|`Get-WinEvent -LogName Microsoft-Dynamics365BusinessCentral-Server/Admin`|
     |Events in the **Dynamics365BusinessCentral** > **Common** > **Admin** log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Common/Admin`|  
-    |Events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Operational log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Server/Operational`|  
-    |Trace events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Debug log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Server/Debug -Oldest`|  
+    |Events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Operational log|`Get-WinEvent -LogName Microsoft-Dynamics365BusinessCentral-Server/Operational`|  
+    |Trace events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Debug log|`Get-WinEvent -LogName Microsoft-Dynamics365BusinessCentral-Server/Debug -Oldest`|  
   
-##  <a name="EnableLog"></a> To enable the Dynamics NAV Debug Logs from Windows PowerShell 
+##  <a name="EnableLog"></a> To enable the Debug Logs from Windows PowerShell 
 
-There are two debug logs for Dynamics NAV: **Microsoft-DynamicsNav-Server/Debug** and **Microsoft-DynamicsNav-Common/Debug**.
+There are two debug logs for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]: **Microsoft-Dynamics365BusinessCentral-Server/Debug** and **Microsoft-DynamicsNav-Common/Debug**.
   
 1.  On the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], start Window PowerShell as an administrator.  
   
 2.  At the command prompt, run the following commands:  
   
     ```  
-    wevtutil.exe set-log "Microsoft-DynamicsNav-Server/<Debug>" /q:true /e:true  
+    wevtutil.exe set-log "Microsoft-Dynamics365BusinessCentral-Server/<Debug>" /q:true /e:true  
     ```  
 
     ```  
@@ -67,7 +67,7 @@ You can filter the events that you view in a [!INCLUDE[nav_server](../developer/
 The following example uses the Get-WinEvent cmdlet to view errors in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Admin log for the tenant *MyTenant1* on the server instance *MyNavServerInstance1*.  
   
 ```  
-Get-WinEvent -LogName 'Microsoft-DynamicsNav-Server/Admin' -FilterXPath "*[System[(Level=2)]] and *[EventData[Data[@Name='tenantId'] and (Data = 'MyTenant1')]] and *[EventData[Data[@Name='serverInstanceName'] and Data='MyNavServerInstance1']]" | Format-List -Property Message-  
+Get-WinEvent -LogName 'Microsoft-Dynamics365BusinessCentral-Server/Admin' -FilterXPath "*[System[(Level=2)]] and *[EventData[Data[@Name='tenantId'] and (Data = 'MyTenant1')]] and *[EventData[Data[@Name='serverInstanceName'] and Data='MyNavServerInstance1']]" | Format-List -Property Message-  
 ```  
   
 ### Example 2  
@@ -81,7 +81,7 @@ $xPath = "*[System[(EventID = 400 or EventID = 401)]] and " +
          "*[EventData[Data[@Name='tenantId'] and (Data  = 'MyTenant1')]] and " +  
          "*[EventData[Data[@Name='serverInstanceName'] and Data='MyNavServerInstance1']]"  
   
-$events = Get-WinEvent -LogName 'Microsoft-DynamicsNav-Server/Debug' -FilterXPath $xPath -Oldest -MaxEvents 10000  
+$events = Get-WinEvent -LogName 'Microsoft-Dynamics365BusinessCentral-Server/Debug' -FilterXPath $xPath -Oldest -MaxEvents 10000  
   
 Write-Host "List of AL functions that took more than $maxAllowedSeconds  seconds to execute :" -ForegroundColor DarkYellow  
   

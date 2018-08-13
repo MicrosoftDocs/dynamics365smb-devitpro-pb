@@ -1,6 +1,6 @@
 ---
 title: Microsoft Dynamics 365 Business Central Server Configuration
-description: Configure and modify settings in the Setup or Installed Microsoft Dynamics NAV Server using the Administration Console and PowerShell Cmdlets.
+description: Configure and modify settings in the Setup or Installed Business Central Server using the Administration Console and PowerShell Cmdlets.
 ms.date: 02/13/2018
 ms.tgt_pltfrm: na
 ms.topic: article

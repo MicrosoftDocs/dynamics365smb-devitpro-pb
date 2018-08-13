@@ -75,7 +75,7 @@ For example, from the command line, you can use the
 tracerpt c:\perflogs\MyTelemetryTraceData_000001.etl -o c:\perflogs\MyTelemetry-dmp.xml -of XML -summary c:\perflogs\MyTelemetry-summary.txt -report c:\perflogs\MyTelemetry-rpt.xml
 ```
 
-You can also use PerView. For more information, see [Use PerfView to View Event Trace Data]([Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).md).
+You can also use PerView. For more information, see [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).
   
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   

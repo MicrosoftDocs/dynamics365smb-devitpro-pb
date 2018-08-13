@@ -31,11 +31,11 @@ This topic describes how to use PerfView to collect event trace data for [!INCLU
   
      The upper part of the **Advanced options**area includes check boxes and fields that specify the providers from which to collect event trace data.  
   
-5.  In the **Additional providers** field, type **Microsoft-DynamicsNav-Server**.  
+5.  In the **Additional providers** field, type **Microsoft-Dynamics365BusinessCentral-Server**.  
   
-    -   If you want to filter on a specific trace event, include a colon after **Microsoft-DynamicsNav-Server**, followed by the hexadecimal keyword value for the trace event. For example, to collect trace events data on service call trace events only, then type  **Microsoft-DynamicsNav-Server:0x4**.  
+    -   If you want to filter on a specific trace event, include a colon after **Microsoft-Dynamics365BusinessCentral-Server**, followed by the hexadecimal keyword value for the trace event. For example, to collect trace events data on service call trace events only, then type  **Microsoft-Dynamics365BusinessCentral-Server:0x4**.  
   
-    -   If you want to collect data on more than one trace event, add the keyword values for each trace event and then use the sum in the field. For example, if you want to collect data on service calls \(keyword value = 0x4\) and AL function traces \(keyword value = 0x8\), then type **Microsoft-DynamicsNav-Server:0xC** in the field. In hexadecimal, the sum of 0x4 and 0x8 is 0xC.  
+    -   If you want to collect data on more than one trace event, add the keyword values for each trace event and then use the sum in the field. For example, if you want to collect data on service calls \(keyword value = 0x4\) and AL function traces \(keyword value = 0x8\), then type **Microsoft-Dynamics365BusinessCentral-Server:0xC** in the field. In hexadecimal, the sum of 0x4 and 0x8 is 0xC.  
   
 6.  Clear the check boxes above the **Additional providers** field for any providers that you do not want to collect data for.  
   
@@ -43,7 +43,7 @@ This topic describes how to use PerfView to collect event trace data for [!INCLU
   
 8.  To stop recording data, choose the **Stop Collection** button.  
   
- The collected event trace data is stored in an event trace log \(.etl\) file in the location that you specified. You can view the data in the log file by using various industry-standard tools, such as PerfView. For information about how to use PerfView to view the event trace data, see [Use PerfView to View Event Trace Data]([Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).md).  
+ The collected event trace data is stored in an event trace log \(.etl\) file in the location that you specified. You can view the data in the log file by using various industry-standard tools, such as PerfView. For information about how to use PerfView to view the event trace data, see [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).  
   
 ##  <a name="ViewDataPerfView"></a> To view event trace data from an event trace log file  
   

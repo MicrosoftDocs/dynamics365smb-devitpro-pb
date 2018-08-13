@@ -27,7 +27,7 @@ This topic describes how to use Windows Performance Monitor to collect event tra
   
 5.  On the **Which event trace providers would you like to enable** page, choose the **Add** button to add a provider.  
   
-6.  In the **Event Trace Providers** list, select **Microsoft-DynamicsNav-Server**, and then choose the **OK** button.  
+6.  In the **Event Trace Providers** list, select **Microsoft-Dynamics365BusinessCentral-Server**, and then choose the **OK** button.  
   
 7.  If you want to collect data for all trace events, choose the **Next** button. If you want to collect data on specific trace events, do the following:  
   
@@ -78,9 +78,9 @@ This topic describes how to use Windows Performance Monitor to collect event tra
   
  For information about how to schedule a time to start and stop collecting data, see [Schedule Data Collection in Windows Performance Monitor](http://technet.microsoft.com/en-us/library/cc722312.aspx).  
   
- The collected event trace data is stored in an event trace log \(.etl\) file in the location that you specified. You can view the data in the log file by using various industry-standard tools, such as PerfView. For information about how to use PerfView to view the event trace data, see [Use PerfView to View Event Trace Data]([Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).md).  
+ The collected event trace data is stored in an event trace log \(.etl\) file in the location that you specified. You can view the data in the log file by using various industry-standard tools, such as PerfView. For information about how to use PerfView to view the event trace data, see [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).  
   
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   
- [Use PerfView to View Event Trace Data]([Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).md)  
+ [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md)  
  [Instrumenting an Application for Telemetry](instrumenting-application-for-telemetry.md)]

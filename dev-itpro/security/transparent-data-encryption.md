@@ -18,7 +18,7 @@ You can use Transparent Data Encryption (TDE) to encrypt SQL Server and Azure SQ
 > [!CAUTION]
 Backup files of databases that have TDE enabled are also encrypted by using the database encryption key. As a result, when you restore these backups, the certificate protecting the database encryption key must be available. This means that in addition to backing up the database, you must make sure that you also maintain backups of the server certificates to prevent data loss. Data loss will result if the certificate is no longer available.
 
-For more information about TDE, see [Transparent Data Encryption (TDE)](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption)
+For more information about TDE, see [Transparent Data Encryption (TDE)](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption).
 
 ## See Also  
  [Classifying Data](classifying-data.md)   

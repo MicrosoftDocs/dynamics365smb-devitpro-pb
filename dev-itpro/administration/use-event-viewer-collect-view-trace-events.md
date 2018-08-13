@@ -12,7 +12,7 @@ caps.latest.revision: 4
 ---
 # Enable Business Central Debug Logs in Event Viewer
 
-Some [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events are collected in the following **Debug** logs specific to Dynamics NAV in Event Viewer:
+Some [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events are collected in the following **Debug** logs specific to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Event Viewer:
 
 -   **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Server**
 

@@ -1,5 +1,5 @@
 ---
-title: "Monitoring Microsoft Dynamics NAV Server Event Traces"
+title: "Monitoring Microsoft Dynamics365 Business Central NAV Server Event Traces"
 ms.custom: na
 ms.date: 06/05/2016
 ms.reviewer: na
@@ -34,7 +34,7 @@ There are various industry-standard tools that you can use to collect event trac
 |----------|-------------------------------|  
 |Review the list of trace events that are available for monitoring [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances.|[Business Central Server Trace Events](server-trace-events.md)|  
 |Collect event trace data in an event trace log \(.etl\) file. Use the event trace monitoring tool to start an event trace session.|[Use Performance Monitor to Collect Event Trace Data](monitor-use-performance-monitor-collect-event-trace-data.md)<br /><br /> [Use PerfView to Collect Event Trace Data](monitor-use-perfview-collect-event-trace-data.md)<br /><br />[Use Logman to Collect Event Trace Data](monitor-use-logman-collect-event-trace-data.md)|  
-|View event trace data that is contained in an .etl file.|[Use PerfView to View Event Trace Data]([Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).md)|  
+|View event trace data that is contained in an .etl file.|[Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md)|  
 |Use Event Viewer to collect and view events |[Monitor Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md) |  
 |Use Windows PowerShell to view event trace data|[View Business Central Server Events by Using Windows PowerShell](monitor-server-events-with-powershell.md)|  
   
