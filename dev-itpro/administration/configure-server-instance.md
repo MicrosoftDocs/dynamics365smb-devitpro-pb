@@ -8,7 +8,7 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Configuring Business Central Server
-When you run [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup and install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], you provide information that is then used as the configuration for the default [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. This information is stored in a configuration file for the server instance called CustomSetting.config. The default location of the CustomSettings.config file is *[!INCLUDE[navnow_install_md](../developer/includes/navnow_install_md.md)]\Service*. 
+When you run [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup and install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], you provide information that is then used as the configuration for the default [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. This information is stored in a configuration file for the server instance called CustomSetting.config. The default location of the CustomSettings.config file is *[!INCLUDE[prodintsallpath](../developer/includes/prodintsallpath.md)]\Service*. 
 
 After you install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], you can change any of the settings that you provided during Setup, plus several other settings that were not available to you in Setup.
 
@@ -18,13 +18,14 @@ After you install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]
 ## Configuring [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] in Setup 
 You configure the default instance of [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] by running [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup and selecting one of the following [Installation Options](Installation-Options.md): 
 
--   [Demo Option](Demo-Option.md)
--   [Server Option](Server-Option.md)
--   [Developer Option](Developer-Option.md)  
+-   Demo Option
+-   Server Option
+-   Developer Option
+-   Customize > Server 
 
-You can also customize your installation and the list of components to install. For more information, see [How to: Choose Components to Install](How-to--Choose-Components-to-Install.md).  
+<!--You can also customize your installation and the list of components to install. For more information, see [How to: Choose Components to Install](How-to--Choose-Components-to-Install.md).-->  
 
-After you specify an installation option or customize your component list, the **Specify parameters** pane is displayed in Setup. The list of parameters that you see in the **Specify parameters** pane depends on which components you have selected for configuration. Setup provides a short description for each parameter. For a description of the most important parameters for [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], see [Server Option](Server-Option.md). When you have finished entering values, choose the **Apply** button. 
+After you specify an installation option or customize your component list, the **Specify parameters** pane is displayed in Setup. The list of parameters that you see in the **Specify parameters** pane depends on which components you have selected for configuration. Setup provides a short description for each parameter. <!--For a description of the most important parameters for [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], see [Server Option](Server-Option.md). When you have finished entering values, choose the **Apply** button. -->
 
 ## Configuring [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] After Installation  
 After you install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], you can change the configuration settings in the CustomSettings.config file of a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance in the following ways:  
@@ -108,7 +109,7 @@ The following table describes fields on the **General** tab in the [!INCLUDE[nav
 |Enable Buffered Insert|BufferedInsertEnabled|Specifies whether to buffer rows that are being inserted into a SQL Server database table.<br /><br /> When this parameter is enabled, up to 5 rows will be buffered in the table queue before they are inserted into the table.<br /><br /> To optimize performance in a production environment, you should enable this parameter. In a test environment, you can disable this parameter to help debug failures that occur when you insert rows in an SQL database table. For more information, see [Bulk Inserts](optimize-sql-bulk-inserts.md).<br /><br /> Default: Enabled<br />Dynamically Updatable: No|  
 |Enable Encryption on SQL Server Connections|EnableSqlConnectionEncryption|Specifies whether the SQL connect string should request encryption when connecting to SQL Server services.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
 |Enable Trust of SQL Server Certificate|TrustSQLServerCertificate|Specifies whether [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] should trust the SQL Server certificate.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|
-|Search Timeout|SearchTimeout|Specifies the time (in seconds) that a search operation on lists in the client will continue until it is terminated. When the limit is reached, the following message displays in the client: **Searching for rows is taking too long. Try to search or filter using different criteria.**<br /><br /> Default: 10<br />Dynamically Updatable: Yes|
+|Search Timeout|SearchTimeout|Specifies the time (in seconds) that a search operation on lists in the client will continue until it is terminated. When the limit is reached, the following message displays in the client: **Searching for rows is taking too long. Try to search or filter using different criteria.**<br /><br />Time format: hh:mm:ss<br />Default: 00:00:10<br />Dynamically Updatable: Yes|
 |SQL Bulk Import Batch Size|SqlBulkImportBatchSize|Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance, but also lowers the amount of memory that the server instance consumes. If the database is on SQL Server 2016 or later, a low value can lead to large data files. If you do not want to use batching, specify 0.<br /><br /> Default: 448<br />Dynamically Updatable: No|    
 |SQL Command Timeout|SqlCommandTimeout|The contextual time-out for a SQL command.<br /><br /> Default: 0:30:00<br />Dynamically Updatable: No|  
 |SQL Connection Idle Timeout|SqlConnectionIdleTimeout|Specifies the time that a SQL connection can remain idle before being closed. The value has the format HH:MM:SS.<br /><br /> Default: 00:05:00<br />Dynamically Updatable: Yes|  
