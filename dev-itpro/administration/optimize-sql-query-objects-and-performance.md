@@ -12,7 +12,7 @@ caps.latest.revision: 6
 manager: edupont
 ---
 # Query Objects and Performance
-A *query* is a new object in [!INCLUDE[navnowlong](includes/navnowlong_md.md)] that you use to specify a set of data that you want to read from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. You can query the database to retrieve one or more fields from a single table or multiple tables. You can specify how to join the tables in the query. You can specify totaling methods on fields, such as sums and averages. This topic describes how to design queries and table keys in the most efficient way.  
+A *query* is a new object in [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] that you use to specify a set of data that you want to read from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. You can query the database to retrieve one or more fields from a single table or multiple tables. You can specify how to join the tables in the query. You can specify totaling methods on fields, such as sums and averages. This topic describes how to design queries and table keys in the most efficient way.  
   
 ## FlowFields in Queries  
  A sub-query is automatically added to the SQL statement to retrieve each FlowField in a query. This allows [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to retrieve all the data in one request.  
@@ -50,7 +50,7 @@ A *query* is a new object in [!INCLUDE[navnowlong](includes/navnowlong_md.md)] t
   
 -   If two DataItems are linked, then the field on the parent DataItem that links the two DataItems \(the **Reference Field** in the **DataItemLink** property\) must be part of the same [!INCLUDE[prodshort](../developer/includes/prodshort.md)] key as the columns in the child DataItem.  
   
- [!INCLUDE[nav_server](includes/nav_server_md.md)] automatically use a SIFT index for query objects whenever possible.  
+ [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] automatically use a SIFT index for query objects whenever possible.  
   
 ## Differences Between Query and Record Result Sets  
  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not do any caching for query result sets. When you run a query, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] always gets the data directly from SQL Server.  

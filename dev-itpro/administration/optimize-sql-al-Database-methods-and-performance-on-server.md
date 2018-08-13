@@ -17,7 +17,7 @@ This topic describes the relationship between basic database functions in AL and
 ## AL and SQL Statements  
   
 ### GET, FIND, and NEXT  
- The AL language offers several methods to retrieve record data. In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], records are retrieved using multiple active result sets (MARS). Generally, retrieving records with MARS is faster than with server-side cursors. Additionally, each function is optimized for a specific purpose. To achieve optimal performance you must use the method that is best suited for a given purpose.  
+ The AL language offers several methods to retrieve record data. In [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], records are retrieved using multiple active result sets (MARS). Generally, retrieving records with MARS is faster than with server-side cursors. Additionally, each function is optimized for a specific purpose. To achieve optimal performance you must use the method that is best suited for a given purpose.  
   
 -   **Record.GET** is optimized for getting a single record based on primary key values.  
   
@@ -31,7 +31,7 @@ This topic describes the relationship between basic database functions in AL and
   
     -   If you want to fulfill multiple outstanding orders from a recent purchase but you do not know how many orders are covered by the purchase.  
   
--   **Record.FINDSET(ForUpdate, UpdateKey)** is optimized for reading the complete set of records in the specified filter and range. The *UpdateKey* parameter does not influence the efficiency of this method in [!INCLUDE[navnowlong](includes/navnowlong_md.md)], such as it did in [!INCLUDE[nav2009](includes/nav2009_md.md)].  
+-   **Record.FINDSET(ForUpdate, UpdateKey)** is optimized for reading the complete set of records in the specified filter and range. The *UpdateKey* parameter does not influence the efficiency of this method in [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], such as it did in [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)].  
   
      FINDSET is not implemented by issuing a TOP X call.  
   
@@ -62,7 +62,7 @@ IF FINDSET THEN
   
  If neither of these requirements is fulfilled, then the sum will be calculated directly from the base table.  
   
- In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], SIFT indexes can be used to count records in a filter provided that a SIFT index exists that contains all filtered fields in the key fields that are defined for the SIFT index.  
+ In [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], SIFT indexes can be used to count records in a filter provided that a SIFT index exists that contains all filtered fields in the key fields that are defined for the SIFT index.  
   
 ### SETAUTOCALCFIELDS  
  It is a common task to retrieve data and request calculation of associated FlowFields. The following example traverses customer records, calculates the balance, and marks the customer as blocked if the customer exceeds the maximum credit limit. Note the Customer record and associated fields are imaginary.  
@@ -82,7 +82,7 @@ UNTIL Customer.NEXT = 0;
   
 ```  
   
- In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can do this much faster. First, we set a filter on the customer. This could also be done in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2009, but behind the scenes the same code as mentioned earlier would be executed. In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], setting a filter on a record is translated into a single SQL statement.  
+ In [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], you can do this much faster. First, we set a filter on the customer. This could also be done in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2009, but behind the scenes the same code as mentioned earlier would be executed. In [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], setting a filter on a record is translated into a single SQL statement.  
   
 ```  
 Customer.SETFILTER(Customer.Balance,’>%1’, LargeCredit);   
@@ -99,7 +99,7 @@ IF Customer.FINDSET() THEN REPEAT
 UNTIL Customer.NEXT = 0;   
 ```  
   
- In the previous example, an extra call to CALCFIELDS still must be issued for the code to be able to check the value of Customer.Balance. In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can optimize this further by using the new **SETAUTOCALCFIELDS** function.  
+ In the previous example, an extra call to CALCFIELDS still must be issued for the code to be able to check the value of Customer.Balance. In [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], you can optimize this further by using the new **SETAUTOCALCFIELDS** function.  
   
 ```  
 Customer.SETFILTER(Customer.Balance,’>%1’, LargeCredit);   

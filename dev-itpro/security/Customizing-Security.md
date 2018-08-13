@@ -12,7 +12,7 @@ caps.latest.revision: 13
 manager: edupont
 ---
 # Customizing Security
-[!INCLUDE[navnowlong](includes/navnowlong_md.md)] provides options for limiting and monitoring user access to the database.  
+[!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] provides options for limiting and monitoring user access to the database.  
   
 ## Security Customization Options  
  Use the following options to limit user access beyond the permission level:  
@@ -31,12 +31,12 @@ manager: edupont
 ### Registering User Time  
  You can specify that you want [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to register the amount of time that each user works with a company in the database.  
   
- To register user time, use the **User Setup** window. In the [!INCLUDE[rtc](includes/rtc_md.md)], search for or navigate to the **User Setup** page.  
+ To register user time, use the **User Setup** window. In the [!INCLUDE[rtc](../developer/includes/rtc_md.md)], search for or navigate to the **User Setup** page.  
   
  To see the time use that has been registered, search for or navigate to the **Time Registers** page.  
   
 ### Default and Fixed Printer Selections  
- You can specify which printer that each individual user can use. In the [!INCLUDE[rtc](includes/rtc_md.md)], search for or navigate to the **Printer Selections** page.  
+ You can specify which printer that each individual user can use. In the [!INCLUDE[rtc](../developer/includes/rtc_md.md)], search for or navigate to the **Printer Selections** page.  
   
 ## See Also  
  [How to: Set Up User Time Constraints](How-to--Set-Up-User-Time-Constraints.md)   
