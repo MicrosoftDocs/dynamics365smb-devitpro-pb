@@ -12,7 +12,7 @@ caps.latest.revision: 6
 manager: edupont
 ---
 # Query Objects and Performance
-A *query* is a new object in [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] that you use to specify a set of data that you want to read from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. You can query the database to retrieve one or more fields from a single table or multiple tables. You can specify how to join the tables in the query. You can specify totaling methods on fields, such as sums and averages. This topic describes how to design queries and table keys in the most efficient way.  
+A *query* is a new object in [!INCLUDE[prodlong](../developer/includes/prodlong.md)] that you use to specify a set of data that you want to read from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. You can query the database to retrieve one or more fields from a single table or multiple tables. You can specify how to join the tables in the query. You can specify totaling methods on fields, such as sums and averages. This topic describes how to design queries and table keys in the most efficient way.  
   
 ## FlowFields in Queries  
  A sub-query is automatically added to the SQL statement to retrieve each FlowField in a query. This allows [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to retrieve all the data in one request.  

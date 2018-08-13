@@ -11,7 +11,7 @@ ms.assetid: 95b2429f-6fb2-4257-9ed6-57ad6529b909
 caps.latest.revision: 29
 ---
 # Setting Database Owner and Security Administration Permissions
-Permissions are required in SQL Server to create and manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, for example by using [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!INCLUDE[nav_dev_short](..developer/includes/nav_dev_short_md.md)]. To grant these permissions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administrators, use [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms).  
+Permissions are required in SQL Server to create and manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, for example by using [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)]. To grant these permissions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administrators, use [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms).  
 
 <!--
 If you have installed SQL Server with the guidelines in [Installation Considerations for Microsoft SQL Server](Installation-Considerations-for-Microsoft-SQL-Server.md), then SQL Server Management Studio is already installed on your computer. Otherwise, update your SQL Server installation to include the **Management Tools - Complete option for SQL Server**.  
@@ -37,7 +37,7 @@ In the Object Explorer pane in SQL Server Management Studio, follow these steps 
   
 5.  Choose the **OK** button to close the **Login – New** dialog box.  
   
- When administrators create [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, the account running [!INCLUDE[nav_server](..developer/includes/nav_server_md.md)] is automatically granted the db\_owner database role for these databases.  
+ When administrators create [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, the account running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] is automatically granted the db\_owner database role for these databases.  
   
 ## Permissions for Managing Companies, Objects, and Licenses  
 Administrators who create [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases automatically have permission to manage companies, objects, and licenses in that database.  
