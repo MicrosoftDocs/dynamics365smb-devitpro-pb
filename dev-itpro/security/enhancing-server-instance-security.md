@@ -1,5 +1,5 @@
 ---
-title: "Enhancing Microsoft Dynamics NAV Server Security"
+title: "Enhancing Microsoft Dynamics 365 Business Central Server Security"
 ms.custom: na
 ms.date: 06/05/2016
 ms.reviewer: na
@@ -11,11 +11,14 @@ ms.assetid: c85fa3e9-db59-4e52-8b00-aa4b4378e147
 caps.latest.revision: 9
 manager: edupont
 ---
-# Enhancing Microsoft Dynamics NAV Server Security
-[!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] is a .NET-based Windows Service application that works exclusively with SQL Server databases. [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] provides an additional layer of security between clients and the database. It leverages the authentication features of the Windows Communications Framework to provide another layer of user authentication and uses impersonation to ensure that business logic is executed in a process that has been instantiated by the user who submitted the request. This means that authorization and logging of user requests are performed on a per-user basis.  
+# Enhancing Business Central Server Security
+[!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] is a .NET-based Windows Service application that works exclusively with SQL Server and Azure SQL Server databases. [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] provides an additional layer of security between clients and the database. It leverages the authentication features of the Windows Communications Framework to provide another layer of user authentication and uses impersonation to ensure that business logic is executed in a process that has been instantiated by the user who submitted the request. This means that authorization and logging of user requests are performed on a per-user basis.  
   
-## Login Account  
- After you install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], the default configuration is for the service to log on using the NT Authority\\Network Service account. If [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] and SQL Server are on different computers, then we recommend that you configure [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] to log on using a dedicated Windows domain user account instead. This account should not be an administrator either in the domain or on any local computer. A dedicated domain user account is considered more secure because no other services and therefore no other users have permissions for this account.  
+## Login Account
+
+The [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] is configured with a login account, which is referred to as the *service account*. The service account is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients to log on to the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. The [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] then uses the service account to log on to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.
+  
+The default configuration is for the service to log on using the NT Authority\\Network Service account. If [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] and SQL Server are on different computers, then we recommend that you configure [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] to log on using a dedicated Windows domain user account instead. This account should not be an administrator either in the domain or on any local computer. A dedicated domain user account is considered more secure because no other services and therefore no other users have permissions for this account.  
   
 ## Disk Quotas  
  Client users can send files to be stored on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], so we recommend that administrators set up disk quotas on all computers running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. This can prevent users from uploading too many files, which can make the server unstable. Disk quotas track and control disk space usage for NTFS volumes, which allows administrators to control the amount of data that each user can store on a specific NTFS volume. For more information about disk quotas, see the [Disk Quotas Technical Reference](http://go.microsoft.com/fwlink/?LinkId=119641) on Microsoft TechNet.  
