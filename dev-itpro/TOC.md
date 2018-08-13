@@ -368,6 +368,10 @@
 ## [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 <!-- end admin -->
 <!-- deployment-->
+# Security
+## [Data Security](security/data-security.md)
+## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
+
 # Deployment
 ## [System requirements](deployment/system-requirement-business-central.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
