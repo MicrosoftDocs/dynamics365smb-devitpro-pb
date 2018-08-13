@@ -14,9 +14,9 @@ caps.latest.revision: 4
 
 Some [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events are collected in the following **Debug** logs specific to Dynamics NAV in Event Viewer:
 
--   **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Server**
+-   **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Server**
 
-- **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Common**
+- **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Common**
 
 By default the **Debug** logs are disabled and may also be hidden in the Event Viewer. To collect trace event data, you must enable the **Debug** logs.  
   
@@ -26,7 +26,7 @@ By default the **Debug** logs are disabled and may also be hidden in the Event V
   
      For more information, see [How to Start Event Viewer](http://technet.microsoft.com/en-us/library/gg163894.aspx).  
   
-2.  In the console tree, choose **Applications and Services Logs**, **Microsoft**, **DynamicsNAV**, and then **Server** or **Common**.  
+2.  In the console tree, choose **Applications and Services Logs**, **Microsoft**, **Dynamics365BusinessCentral**, and then **Server** or **Common**.  
   
 3.  If the **Debug** log is not shown under **Server**, then on the **View** menu, select **Show Analytic and Debug Logs**.  
   

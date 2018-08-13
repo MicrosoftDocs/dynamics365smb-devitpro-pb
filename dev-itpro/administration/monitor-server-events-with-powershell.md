@@ -13,7 +13,7 @@ author: jswymer
 Events that occur on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances are recorded in event logs on the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. You can view the events by using Windows PowerShell as described in this article.  
 
 ##  <a name="ViewEventsWinPS"></a>PowerShell Get-WinEvent Cmdlet   
-You can use the Get-WinEvent cmdlet of Windows PowerShell to view [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance events and trace events in the event logs and event tracing log files on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] computer. The Get-WinEvent cmdlet retrieves the same events that can be viewed in Event Viewer under **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** (see [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)). 
+You can use the Get-WinEvent cmdlet of Windows PowerShell to view [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance events and trace events in the event logs and event tracing log files on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] computer. The Get-WinEvent cmdlet retrieves the same events that can be viewed in Event Viewer under **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** (see [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)). 
   
 The Get-WinEvent cmdlet includes several parameters that enable you to filter the events that you view and specify how the events are displayed. Windows PowerShell enables you can create scripts that perform complex operations for extracting and displaying specific event data. For more information about the Get-WinEvent cmdlet, see [Get-WinEvent](http://go.microsoft.com/fwlink/?LinkID=513535).  
   
@@ -33,10 +33,10 @@ For more information about installing and getting started with Windows PowerShel
   
     |To view|Command|  
     |-------------|-------------|  
-    |Events in the all **DynamicsNAV** > **Server** logs|`Get-WinEvent -ProviderName Microsoft-DynamicsNav-Server`|
-    |Events in the all **DynamicsNAV** > **Common** logs|`Get-WinEvent -ProviderName Microsoft-DynamicsNav-Common`|  
-    |Events in the **DynamicsNAV** > **Server** > **Admin** log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Server/Admin`|
-    |Events in the **DynamicsNAV** > **Common** > **Admin** log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Common/Admin`|  
+    |Events in the all **Dynamics365BusinessCentral** > **Server** logs|`Get-WinEvent -ProviderName Microsoft-DynamicsNav-Server`|
+    |Events in the all **Dynamics365BusinessCentral** > **Common** logs|`Get-WinEvent -ProviderName Microsoft-DynamicsNav-Common`|  
+    |Events in the **Dynamics365BusinessCentral** > **Server** > **Admin** log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Server/Admin`|
+    |Events in the **Dynamics365BusinessCentral** > **Common** > **Admin** log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Common/Admin`|  
     |Events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Operational log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Server/Operational`|  
     |Trace events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Debug log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Server/Debug -Oldest`|  
   

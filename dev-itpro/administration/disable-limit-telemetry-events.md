@@ -10,7 +10,7 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Turn Off or Limit Telemetry Trace Events
-The application and platform can emit many telemetry trace events, which can be collected using various event trace tools. For example, telemetry trace events are recorded in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] channel logs, which you can see in Event Viewer, under **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Common** > **Admin**. 
+The application and platform can emit many telemetry trace events, which can be collected using various event trace tools. For example, telemetry trace events are recorded in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] channel logs, which you can see in Event Viewer, under **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Common** > **Admin**. 
 
 The number of events can place a large demand on the logging resources on the computer running the [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance. To help eleviate this demand, the [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of customer telemetry trace events that are emitted from the application, or even turn off telemetry events altogether. Custom telemetry trace events have IDs from  700-712. 
   
@@ -60,9 +60,9 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[n
 2. At the command prompt, run the following command:
 
     ```
-    Set-NAVServerConfiguration -ServerInstance DynamicsNAV -KeyName TraceLevel -KeyValue level -ApplyTo All
+    Set-NAVServerConfiguration -ServerInstance MyServerInstance -KeyName TraceLevel -KeyValue level -ApplyTo All
     ```
-    Substitute `DynamicsNAV` with the name of the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance and `level` with either `Critical`, `Error`, `Warning`, `Normal`, `Verbose`, or `Off`.
+    Substitute `MyServerInstance` with the name of the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance and `level` with either `Critical`, `Error`, `Warning`, `Normal`, `Verbose`, or `Off`.
     
 For more information about how to use the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
 

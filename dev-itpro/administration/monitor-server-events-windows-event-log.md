@@ -17,7 +17,7 @@ Events that occur on the [!INCLUDE[nav_server](../developer/includes/nav_server_
 Events that occur on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances are recorded in the event channels specific to Dynamics NAV and also in the general Windows Application log. Event channels provide a way to collect and view events from a specific event trace provider. This differs from the Windows Application log which contains system-wide events from multiple publishers \(applications and components\).   
 
 ## Business Central channel logs
-In the Event Viewer console tree, open **Applications and Services Logs** > **Microsoft** > **DynamicsNAV**.
+In the Event Viewer console tree, open **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral**.
  
 ### Server folder
 
@@ -45,7 +45,7 @@ The Application log includes admin and operational type events \(errors, warning
   
 To view the **Application** log, in the console tree, choose **Windows Logs**, **Applications**.  
   
-The events in this log are the same events that are recorded in the **Admin** and **Operation** logs in the **DynamicsNAV** > **Server** channel. Therefore, you can consider the **Application** log to be a secondary log for these events. Unless you are using System Center Operations Manager to monitor [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events, you can disable logging [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events to the Windows Application log and rely on **Applications and Services Logs** instead. For more information, see [Disable Logging Events to the Windows Application Log](disable-Logging-Events-Windows-Application-Log.md).  
+The events in this log are the same events that are recorded in the **Admin** and **Operation** logs in the **Dynamics365BusinessCentral** > **Server** channel. Therefore, you can consider the **Application** log to be a secondary log for these events. Unless you are using System Center Operations Manager to monitor [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events, you can disable logging [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events to the Windows Application log and rely on **Applications and Services Logs** instead. For more information, see [Disable Logging Events to the Windows Application Log](disable-Logging-Events-Windows-Application-Log.md).  
   
 > [!NOTE]  
 >  Trace events are not included in this log.  
@@ -59,7 +59,7 @@ By default, the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] l
   
 ### To filter the event log  
   
-1.  For example, in the console tree of Event Viewer, choose **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Server**.  
+1.  For example, in the console tree of Event Viewer, choose **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Server**.  
   
 2.  Select the **Admin** log.  
   

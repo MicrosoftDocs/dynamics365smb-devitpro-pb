@@ -356,7 +356,7 @@
 #### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
 #### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
 ### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
-## [Optimizing SQL Server Performance](administration/optimize-sql-performance.md)
+## [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
 ### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
 ### [Data Access](administration/optimize-sql-data-access.md)
 ### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)

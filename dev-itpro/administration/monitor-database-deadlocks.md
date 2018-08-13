@@ -42,7 +42,7 @@ To log deadlocks, you must enable deadlock logging on the [!INCLUDE[nav_server](
 -   To enable logging by using the Set-NAVServerConfiguration cmdlet, include the *keyname EnableDeadlockMonitoring keyvalue true* parameters in the command, such as:
 
     ```
-    Set-NAVServerConfiguration -ServerInstance DynamicsNAV -KeyName EnableDeadlockMonitoring -KeyValue true
+    Set-NAVServerConfiguration -ServerInstance MyServerInstance -KeyName EnableDeadlockMonitoring -KeyValue true
     ```
     For more information about how to use the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
 

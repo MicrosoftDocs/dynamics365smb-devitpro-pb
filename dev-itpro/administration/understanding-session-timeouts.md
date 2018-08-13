@@ -12,7 +12,7 @@ ms.assetid: b741a2d9-1127-48b0-8fe7-50aa09655b34
 caps.latest.revision: 6
 manager: edupont
 ---
-# Session Timeout Settings and Configuration for Dynamics NAV
+# Session Timeout Settings and Configuration
 When you start a client, like the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], a connection is established with the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance and a corresponding session is added on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
 
  [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] includes several timeout settings that determine when a session closes as a result of inactivity over the client connection, lost client connection, or closing of the client. To help you configure the timeout settings, this document provides an overview of how the session timeouts work and answers some basic questions about session behavior.  
