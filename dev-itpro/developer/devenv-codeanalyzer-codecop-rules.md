@@ -3,7 +3,7 @@ title: "CodeCop Analyzer Rules"
 description: "List of rules for CodeCop analyzer."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/13/2018
+ms.date: 08/13/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
