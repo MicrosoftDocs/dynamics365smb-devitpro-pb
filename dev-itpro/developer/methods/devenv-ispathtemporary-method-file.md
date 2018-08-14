@@ -1,7 +1,7 @@
 ---
 title: "ISPATHTEMPORARY Method (File)"
 ms.custom: na
-ms.date: 06/08/2018
+ms.date: 14/08/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
