@@ -35,8 +35,9 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |AS0012|A suffix is required|A suffix is required|The identifier '{0}' must have the suffix '{1}'.|Extensibility|Error|true|
 |AS0013|The field identifier must be within the allowed range.|The field identifier must be within the allowed range.|The field identifier '{0}' is not valid. It must be within the allowed range '{1}' - '{2}'|Extensibility|Error|true|
 |AS0014|The project manifest must contain the allocated identifier range.|The project manifest must contain the allocated identifier range.|The project manifest must contain the allocated identifier range.|Extensibility|Error|true|
-|AS0015|Please enable the TranslationFile feature in the app.json file for your project.|Please enable the TranslationFile feature in the app.json file for your project.|Extensibility|Error|true|
-|AS0016|Fields of field class 'Normal' must use the DataClassification property and its value must be different from ToBeClassified. FlowFields and FlowFilter fields are automatically set to the SystemMetadata data classification.|Field with name '{0}' must use the DataClassification property and its value should be different from ToBeClassified.|Extensibility|Error|true|
+|AS0015|Please enable the TranslationFile feature in the app.json file for your project.|Please enable the TranslationFile feature in the app.json file for your project.|Please enable the TranslationFile feature in the app.json file for your project.|Extensibility|Error|true|
+|AS0016|Fields of field class 'Normal' must use the DataClassification property and its value should be different from ToBeClassified.|Fields of field class 'Normal' must use the DataClassification property and its value must be different from ToBeClassified. FlowFields and FlowFilter fields are automatically set to the SystemMetadata data classification.|Field with name '{0}' must use the DataClassification property and its value should be different from ToBeClassified.|Extensibility|Error|true|
+
 
 ## See Also 
 [CodeCop Analyzer Rules](devenv-codeanalyzer-codecop-rules.md)   
