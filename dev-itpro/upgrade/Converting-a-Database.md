@@ -37,7 +37,7 @@ Converting a database does not upgrade the application objects (like pages, repo
 
 
 ## Task 1: Convert V1 Extensions to V2 extensions
-[!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions ans you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
+[!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
 
 ## Task 2: Preparing the Old Database  
 To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database, the first task is to back up the old database and then prepare to convert it.
@@ -120,7 +120,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 10.  (Optional) Before you start the following procedure, you can uninstall the old version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]. When you uninstall [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], the database is still attached to the instance of SQL Server, which you can verify using SQL Server Management Studio.
 
-## Task 2: Converting the Old Database  
+## Task 3: Converting the Old Database  
 Next, you will convert the old database so that it can be used with [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].
 
 > [!TIP]  
@@ -138,7 +138,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
      -  Server
      -  SQL Server Database Components
      -  Administration Tool
-     -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]    
+     -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)
 
 3.  Run the newly installed [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] as an administrator.
 
