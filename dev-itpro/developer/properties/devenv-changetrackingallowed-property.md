@@ -22,3 +22,5 @@ Indicates whether change tracking is enabled for the entity exposed through the 
 **true** if the page is exposed as a service, otherwise **false**. The default is **false**.
  
 ## See Also  
+[Properties](devenv-properties.md)  
+
