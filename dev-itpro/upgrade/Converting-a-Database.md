@@ -182,9 +182,6 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
     If any errors occur, they are shown in the **Error List** window. For help on resolving the errors, see the following:
 
-   <!--
-    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2013 Database](Compilation-Errors-When-Converting-a-Microsoft-Dynamics-NAV-2013-Database.md). 
-    --> 
 
     -   [Resolving Compilation Errors When Converting a Dynamics NAV 2015 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2015-Database.md). 
 
@@ -192,13 +189,14 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
     -   [Resolving Compilation Errors When Converting a Dynamics NAV 2017 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2017-Database.md). 
 
+
     You can find all objects which did not compile in the **Object Designer** window, by setting a field filter on the **Compiled** field.  
 
 11.  Run the schema synchronization with validation to complete the database conversion.  
 
         For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).  
 
-12. Reompile and install the V2 extensions that you uninstalled previously.
+12. Recompile and install the V2 extensions that you uninstalled previously.
 
     1.  Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to compile the published extensions to make sure they are work with the new platform.
 
