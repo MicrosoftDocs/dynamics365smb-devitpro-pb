@@ -8,7 +8,7 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Configuring Business Central Server
-When you run [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup and install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], you provide information that is then used as the configuration for the default [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. This information is stored in a configuration file for the server instance called CustomSetting.config. The default location of the CustomSettings.config file is *[!INCLUDE[prodintsallpath](../developer/includes/prodinstallpath.md)]\Service*. 
+When you run [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup and install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], you provide information that is then used as the configuration for the default [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. This information is stored in a configuration file for the server instance called CustomSetting.config. The default location of the CustomSettings.config file is *[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service*. 
 
 After you install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], you can change any of the settings that you provided during Setup, plus several other settings that were not available to you in Setup.
 

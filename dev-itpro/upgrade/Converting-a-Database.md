@@ -157,11 +157,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 6.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers.  
 
 
-     For the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], the default path is [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]\\RoleTailored Client\\Add-ins folder.  
+     For the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], the default path is [!INCLUDE[prodx86installpath](../developer/includes/prodinstallpath.md)]\\RoleTailored Client\\Add-ins folder.  
 
      For [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], the default path is the [!INCLUDE[navnow_install](../developer/includes/navnow_install_md.md)]\\Service\\Add-ins folder.
 
-7.  Connect a [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance to the converted database. 
+7.  Connect a [!INCLUDE[serverinstance.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance to the converted database. 
 
     Use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
 
