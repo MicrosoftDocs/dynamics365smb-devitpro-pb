@@ -16,7 +16,7 @@ This topic describes how to create a Data Collector Set in Performance Monitor t
   
 ### To create a Data Collector Set for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters  
   
-1.  On the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], start Performance Monitor.  
+1.  On the computer that is running [!INCLUDE[server](../developer/includes/server.md)], start Performance Monitor.  
   
     -   Choose **Start**, in the **Search** box, type **perfmon**, and then choose the related link.  
   
@@ -26,11 +26,11 @@ This topic describes how to create a Data Collector Set in Performance Monitor t
   
 4.  On the **What type of data do you want to include** page, select the **Performance counter** check box, and then choose the **Next** button.  
   
-5.  In the **Add Counters** window, in the **Select counters from computer:** drop-down list, choose the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
+5.  In the **Add Counters** window, in the **Select counters from computer:** drop-down list, choose the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
   
 6.  In the **Available counters** list, expand **[!INCLUDE[prodshort](../developer/includes/prodshort.md)]**, and select one or more counters.  
   
-7.  In the **Instances of selected object** list, select **\<All instances>** to collect data for all [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances on the computer or individually select one or more instances from the list.  
+7.  In the **Instances of selected object** list, select **\<All instances>** to collect data for all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer or individually select one or more instances from the list.  
   
 8.  Choose the **Add** button, and then choose the **OK** button  
   

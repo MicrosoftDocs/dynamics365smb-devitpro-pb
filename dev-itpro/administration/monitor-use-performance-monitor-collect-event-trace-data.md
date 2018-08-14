@@ -11,7 +11,7 @@ ms.assetid: 9981a5d5-10f1-4939-bfd8-050d4d667835
 caps.latest.revision: 14
 ---
 # How to: Use Performance Monitor to Collect Event Trace Data
-This topic describes how to use Windows Performance Monitor to collect event trace data for [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. To collect trace event data, you create a Data Collector Set, and then start the Data Collector Set.  
+This topic describes how to use Windows Performance Monitor to collect event trace data for [!INCLUDE[server](../developer/includes/server.md)]. To collect trace event data, you create a Data Collector Set, and then start the Data Collector Set.  
   
 ### To create a Data Collector Set for collecting [!INCLUDE[prodshort](../developer/includes/prodshort.md)] trace event data  
   

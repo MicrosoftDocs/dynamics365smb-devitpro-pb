@@ -23,11 +23,11 @@ This topic describes how to use Windows Performance Monitor to collect and view 
   
 3.  In the console pane toolbar, choose the **Add** button.  
   
-4.  In the **Add Counters** window, in the **Select counters from computer** drop-down list, choose the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
+4.  In the **Add Counters** window, in the **Select counters from computer** drop-down list, choose the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
   
 5.  In the **Available counters** list, expand **[!INCLUDE[prodshort](../developer/includes/prodshort.md)]**, and select one or more counters.  
   
-6.  In the **Instances of selected object** list, select one or more [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances.  
+6.  In the **Instances of selected object** list, select one or more [!INCLUDE[server](../developer/includes/server.md)] instances.  
   
 7.  Choose the **Add** button, and then choose the **OK** button.  
   

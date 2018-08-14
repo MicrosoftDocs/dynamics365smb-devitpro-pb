@@ -11,7 +11,7 @@ ms.assetid: b6ca81a4-62f2-4806-b2d8-3c0a0e969a46
 caps.latest.revision: 6
 ---
 # Monitoring Business Central Server Using Performance Counters
-Performance counters provide information about how well [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] is operating. By using monitoring tools such as Windows Performance Monitor <!-- remove temporarily until we determine support for this and System Center Operations Manager,--> you can use the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters to collect data on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances, and then use the data to identify conditions that are affecting performance and make adjustments.  
+Performance counters provide information about how well [!INCLUDE[server](../developer/includes/server.md)] is operating. By using monitoring tools such as Windows Performance Monitor <!-- remove temporarily until we determine support for this and System Center Operations Manager,--> you can use the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters to collect data on [!INCLUDE[server](../developer/includes/server.md)] instances, and then use the data to identify conditions that are affecting performance and make adjustments.  
 
  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] also provides a Data Collector Set template that you can use to easily create Data Collector Sets that contain all the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters.  
 

@@ -12,14 +12,14 @@ caps.latest.revision: 19
 manager: edupont
 ---
 # Data Access
-Data that is needed in the client goes through the following path from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] to the SQL Server database:
-1.  If the data is cached in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] data cache, it is returned.
-2.  If the data is not cached in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] data cache, it is fetched from SQL Server over the network as follows:
+Data that is needed in the client goes through the following path from the [!INCLUDE[server](../developer/includes/server.md)] to the SQL Server database:
+1.  If the data is cached in the [!INCLUDE[server](../developer/includes/server.md)] data cache, it is returned.
+2.  If the data is not cached in the [!INCLUDE[server](../developer/includes/server.md)] data cache, it is fetched from SQL Server over the network as follows:
     1. If the data resides in SQL Servers data cache, it is returned.
     2. If the data does not reside in SQL Servers data cache, it is fetched from storage and returned.
 
 ## [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server data caching
-In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache is shared by all users who are connected to the same [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. This means that after one user has read a record, a second user who reads the same record gets it from the cache. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache was isolated for each user.  
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache is shared by all users who are connected to the same [!INCLUDE[server](../developer/includes/server.md)] instance. This means that after one user has read a record, a second user who reads the same record gets it from the cache. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache was isolated for each user.  
 
 The following AL functions utilize the cache system:  
 -   GET  
@@ -33,18 +33,18 @@ The following AL functions utilize the cache system:
 
 There are two types of caches, global and private:  
 
--   Global cache is for all users connected to a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.  
+-   Global cache is for all users connected to a [!INCLUDE[server](../developer/includes/server.md)] instance.  
 -   Private cache is per user, per company, in a transactional scope. Data in a private cache for a given table and company is flushed when a transaction ends.  
 
 The cache that is used is determined by the lock state of a table. If a table is not locked, then the global cache is queried for data; otherwise, the private cache is queried.  
 
 Results from query objects are not cached.  
 
-For a call to any of the **FIND** functions, 1024 rows are cached. You can set the size of the cache by using the **Data Cache Size** setting in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] configuration file. The default size is 9, which approximates a cache size of 500 MB. If you increase this number by one, then the cache size doubles.  
+For a call to any of the **FIND** functions, 1024 rows are cached. You can set the size of the cache by using the **Data Cache Size** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration file. The default size is 9, which approximates a cache size of 500 MB. If you increase this number by one, then the cache size doubles.  
 
 You can bypass the cache by using the [SELECTLATESTVERSION method \(Database\)](SELECTLATESTVERSION-method--Database-.md).  
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] synchronizes caching between [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances that are connected to the same database. By default, the synchronization occurs every 30 seconds.  
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] synchronizes caching between [!INCLUDE[server](../developer/includes/server.md)] instances that are connected to the same database. By default, the synchronization occurs every 30 seconds.  
 
 You can set the cache synchronization interval by using the *CacheSynchronizationPeriod* parameter in the CustomSettings.config file. This parameter is not included in the CustomSetting.config file by default, so you must add it manually using the following format:
 
@@ -53,10 +53,10 @@ You can set the cache synchronization interval by using the *CacheSynchronizatio
 ```
 For example, to set the interval to 50 seconds, set the `value` to `"00:00:50"`. For more information about the CustomSettings.config file, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).  
 
-## [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] connections to SQL Server
-Starting from [!INCLUDE[nav7long_md](../developer/includes/nav7long_md.md)], the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] uses ADO.NET to connect to the SQL Server database. Installations of [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)] and earlier uses ODBC to connect to the SQL Server database.
+## [!INCLUDE[server](../developer/includes/server.md)] connections to SQL Server
+Starting from [!INCLUDE[nav7long_md](../developer/includes/nav7long_md.md)], the [!INCLUDE[server](../developer/includes/server.md)] uses ADO.NET to connect to the SQL Server database. Installations of [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)] and earlier uses ODBC to connect to the SQL Server database.
 
-The ADO.NET interface is a managed data access layer that supports SQL Server connection pooling, which can dramatically decrease memory consumption by [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. SQL Server connection pooling also simplifies deployment of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] three-tier architecture for deployments where the three tiers are installed on separate computers. Specifically, administrators are no longer required to manually create SPNs or to set up delegation when the client, [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], and SQL Server are on separate computers. For more information, see [Walkthrough: Installing the Three Tiers on Three Computers](Walkthrough--Installing-the-Three-Tiers-on-Three-Computers.md).  
+The ADO.NET interface is a managed data access layer that supports SQL Server connection pooling, which can dramatically decrease memory consumption by [!INCLUDE[server](../developer/includes/server.md)]. SQL Server connection pooling also simplifies deployment of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] three-tier architecture for deployments where the three tiers are installed on separate computers. Specifically, administrators are no longer required to manually create SPNs or to set up delegation when the client, [!INCLUDE[server](../developer/includes/server.md)], and SQL Server are on separate computers. For more information, see [Walkthrough: Installing the Three Tiers on Three Computers](Walkthrough--Installing-the-Three-Tiers-on-Three-Computers.md).  
 
 There is no longer a one-to-one correlation between the number of client connections and the number of SQL Server connections. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], each SQL Server connection could consume up to 40 MB of memory. Additionally, memory allocation is now in managed memory, which is generally more efficient than unmanaged memory.  
 

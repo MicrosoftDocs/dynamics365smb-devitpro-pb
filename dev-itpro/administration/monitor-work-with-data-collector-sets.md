@@ -13,7 +13,7 @@ caps.latest.revision: 10
 # Working with Data Collector Sets
 A *Data Collector Set* organizes data collection points, such as performance counters and event trace data, into a single collection. Data Collector Sets enable you to schedule data collection, so that you can analyze the results and view reports later. Data that is collected for performance counters by a Data Collector Set is stored in log files, which you can open and view in Windows Performance Monitor. You can create your own Data Collection Set or you can use the Data Collection Set template that is included with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
   
- For more information about how to use Data Collector Sets to monitor [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], see the following topics:  
+ For more information about how to use Data Collector Sets to monitor [!INCLUDE[server](../developer/includes/server.md)], see the following topics:  
   
  [Create Data Collector for Microsoft Dynamics NAV Performance Counters](create-data-collector-performance-counters.md)  
   

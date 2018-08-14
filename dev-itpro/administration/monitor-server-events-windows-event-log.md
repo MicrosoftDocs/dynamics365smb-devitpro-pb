@@ -11,10 +11,10 @@ ms.assetid: da2944cc-063d-452d-968c-23b90c547600
 caps.latest.revision: 28
 ---
 # Monitoring Business Central Server Events Using Event Viewer
-Events that occur on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances can be recorded in event logs on the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. You can view the events by using Event Viewer.  
+Events that occur on the [!INCLUDE[server](../developer/includes/server.md)] instances can be recorded in event logs on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. You can view the events by using Event Viewer.  
   
 ##  <a name="ViewEventViewer"></a> About Business Central Server Events in Event Viewer  
-Events that occur on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances are recorded in the event channels specific to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and also in the general Windows Application log. Event channels provide a way to collect and view events from a specific event trace provider. This differs from the Windows Application log which contains system-wide events from multiple publishers \(applications and components\).   
+Events that occur on [!INCLUDE[server](../developer/includes/server.md)] instances are recorded in the event channels specific to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and also in the general Windows Application log. Event channels provide a way to collect and view events from a specific event trace provider. This differs from the Windows Application log which contains system-wide events from multiple publishers \(applications and components\).   
 
 ## Business Central channel logs
 In the Event Viewer console tree, open **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral**.
@@ -25,8 +25,8 @@ The **Server** folder contains events from the event trace provider called **Mic
   
 |Log|Description|  
 |---------|-----------------|  
-|Admin|Includes events that target end users and IT administrators. These events typically indicate a problem that requires action to resolve the problem. An example of an admin event is a tenant database failing to mount on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> For a list and description of these events, see [Business Central Server Admin and Operational Events](server-events.md).|  
-|Operational|Includes events that provide information about an operation that occurred on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances. These events are typically ordinary operating events that do not require any action but can be used to analyze and diagnose a problem. An example of an operational event is the shutting down of the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> For a list and description of these events, see [Business Central Server Admin and Operational Events](server-events.md).|  
+|Admin|Includes events that target end users and IT administrators. These events typically indicate a problem that requires action to resolve the problem. An example of an admin event is a tenant database failing to mount on the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br /> For a list and description of these events, see [Business Central Server Admin and Operational Events](server-events.md).|  
+|Operational|Includes events that provide information about an operation that occurred on [!INCLUDE[server](../developer/includes/server.md)] instances. These events are typically ordinary operating events that do not require any action but can be used to analyze and diagnose a problem. An example of an operational event is the shutting down of the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br /> For a list and description of these events, see [Business Central Server Admin and Operational Events](server-events.md).|  
 |Debug|Includes the trace event types: SQL (SQLTracing), service calls (ServiceCalls), and AL function calls (ALTracing).  For more information about the different trace events and others ways to monitor them, see [Business Central Server Trace Events](server-trace-events.md) and [Monitoring Business Central Server Events](monitor-server-events.md) .<br /><br /> **Note:** In Event Viewer, this log is hidden and disabled by default. For information about how to show and enable this log, see [Enable Business Central Debug Logs in Event Viewer](use-Event-Viewer-Collect-View-Trace-Events.md).|  
 
 ### Common folder 
@@ -41,21 +41,21 @@ The **Common** folder contains telemetry events from the event trace provider ca
   
 ## Application log  
   
-The Application log includes admin and operational type events \(errors, warnings, and information messages\) that occur on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.  
+The Application log includes admin and operational type events \(errors, warnings, and information messages\) that occur on the [!INCLUDE[server](../developer/includes/server.md)] instance.  
   
 To view the **Application** log, in the console tree, choose **Windows Logs**, **Applications**.  
   
-The events in this log are the same events that are recorded in the **Admin** and **Operation** logs in the **Dynamics365BusinessCentral** > **Server** channel. Therefore, you can consider the **Application** log to be a secondary log for these events. Unless you are using System Center Operations Manager to monitor [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events, you can disable logging [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events to the Windows Application log and rely on **Applications and Services Logs** instead. For more information, see [Disable Logging Events to the Windows Application Log](disable-Logging-Events-Windows-Application-Log.md).  
+The events in this log are the same events that are recorded in the **Admin** and **Operation** logs in the **Dynamics365BusinessCentral** > **Server** channel. Therefore, you can consider the **Application** log to be a secondary log for these events. Unless you are using System Center Operations Manager to monitor [!INCLUDE[server](../developer/includes/server.md)] events, you can disable logging [!INCLUDE[server](../developer/includes/server.md)] events to the Windows Application log and rely on **Applications and Services Logs** instead. For more information, see [Disable Logging Events to the Windows Application Log](disable-Logging-Events-Windows-Application-Log.md).  
   
 > [!NOTE]  
 >  Trace events are not included in this log.  
 
 ## Filtering Dynamics Server Events in Event Viewer  
-By default, the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] logs contain events of all levels \(error, warning, and information\) for all [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances. You can use the filtering functionality that is available in Event Viewer to display only [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance events that meet specific criteria. For example, if you have several [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances, you can filter logs to show only events from a specific [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. For more information, see the following example.  
+By default, the [!INCLUDE[server](../developer/includes/server.md)] logs contain events of all levels \(error, warning, and information\) for all [!INCLUDE[server](../developer/includes/server.md)] instances. You can use the filtering functionality that is available in Event Viewer to display only [!INCLUDE[server](../developer/includes/server.md)] instance events that meet specific criteria. For example, if you have several [!INCLUDE[server](../developer/includes/server.md)] instances, you can filter logs to show only events from a specific [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see the following example.  
   
  **Example**  
   
- Your [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] is running several instances that are configured with multiple tenants. In Event Viewer, you want to view only errors that occurred in the last 24 hours on the tenant *MyTenant1* of the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance *MyNavServerInstance1*.  
+ Your [!INCLUDE[server](../developer/includes/server.md)] is running several instances that are configured with multiple tenants. In Event Viewer, you want to view only errors that occurred in the last 24 hours on the tenant *MyTenant1* of the [!INCLUDE[server](../developer/includes/server.md)] instance *MyNavServerInstance1*.  
   
 ### To filter the event log  
   
@@ -84,7 +84,7 @@ By default, the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] l
     </QueryList>  
     ```  
   
-     `Microsoft-Dynamics365BusinessCentral-Server` indicates that [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] is the provider of the events in the log.  
+     `Microsoft-Dynamics365BusinessCentral-Server` indicates that [!INCLUDE[server](../developer/includes/server.md)] is the provider of the events in the log.  
   
 7.  Select the **Edit** query manually check box, and then choose the **Yes** button.  
   
@@ -116,7 +116,7 @@ By default, the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] l
   
 9. Choose the **OK** button.  
   
- The **Admin** log displays only errors that occurred in the last 24 hours on tenant *Tenant1* and [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance *MyNavServerInstance1*. The applied filter can be removed. Alternatively, you can save it as a custom view. For more information about filtering in Event Viewer, see [Filter Displayed Events](http://go.microsoft.com/fwlink/?LinkID=516925) and [Advanced XML filtering in the Windows Event Viewer](http://go.microsoft.com/fwlink/?LinkID=516924).  
+ The **Admin** log displays only errors that occurred in the last 24 hours on tenant *Tenant1* and [!INCLUDE[server](../developer/includes/server.md)] instance *MyNavServerInstance1*. The applied filter can be removed. Alternatively, you can save it as a custom view. For more information about filtering in Event Viewer, see [Filter Displayed Events](http://go.microsoft.com/fwlink/?LinkID=516925) and [Advanced XML filtering in the Windows Event Viewer](http://go.microsoft.com/fwlink/?LinkID=516924).  
   
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)    

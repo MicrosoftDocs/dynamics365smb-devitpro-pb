@@ -82,7 +82,7 @@ Query objects and Record objects, including both explicit record variables and i
 ##  <a name="PerformanceImpact"></a> Performance Impact of Security Filtering Mode  
 Security filters are handled by SQL Server just like other filters that are applied by the user. They do not adversely affect performance unless the security filtering mode is **Validated**.
 
-If security filters are set on a table, then setting the **SecurityFiltering** property to **Validated** on a record instance of that table causes a decrease in performance. The [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] must go through every record in the table to validate the record instead of adding the filters to the query that is sent to SQL Server.  
+If security filters are set on a table, then setting the **SecurityFiltering** property to **Validated** on a record instance of that table causes a decrease in performance. The [!INCLUDE[server](../developer/includes/server.md)] must go through every record in the table to validate the record instead of adding the filters to the query that is sent to SQL Server.  
 
 If security filters are not set, then setting the **SecurityFiltering** property to **Validated** has no performance impact.  
 

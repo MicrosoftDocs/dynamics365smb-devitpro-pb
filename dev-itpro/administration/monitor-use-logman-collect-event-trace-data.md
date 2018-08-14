@@ -10,12 +10,12 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # How to: Use LogMan to Collect Event Trace Data
-This article describes how to use logman to collect event trace data for [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. Logman (logman.exe) comes with the Windows Operating System. You can use it to create and manage event trace session and performance logs from the command prompt.
+This article describes how to use logman to collect event trace data for [!INCLUDE[server](../developer/includes/server.md)]. Logman (logman.exe) comes with the Windows Operating System. You can use it to create and manage event trace session and performance logs from the command prompt.
 
-This article provides a brief introduction to using logman to collect trace event data for [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] and telemetry events. For more detailed information about logman, see [Logman](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
+This article provides a brief introduction to using logman to collect trace event data for [!INCLUDE[server](../developer/includes/server.md)] and telemetry events. For more detailed information about logman, see [Logman](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
   
 ## Collect event trace data  
-You can collect [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] trace event data from two different trace event providers: **Microsoft-Dynamics365BusinessCentral-Server** and **Microsoft-Dynamics365BusinessCentral-Common**. **Microsoft-Dynamics365BusinessCentral-Server** is used for trace events like SQL traces, AL function traces, and session calls. **Microsoft-Dynamics365BusinessCentral-Common** is used for telemetry events. 
+You can collect [!INCLUDE[server](../developer/includes/server.md)] trace event data from two different trace event providers: **Microsoft-Dynamics365BusinessCentral-Server** and **Microsoft-Dynamics365BusinessCentral-Common**. **Microsoft-Dynamics365BusinessCentral-Server** is used for trace events like SQL traces, AL function traces, and session calls. **Microsoft-Dynamics365BusinessCentral-Common** is used for telemetry events. 
 
 Data that is collected with logman is stored in a event trace log \(.etl\) file.  
 

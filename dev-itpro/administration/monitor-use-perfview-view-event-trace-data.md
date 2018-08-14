@@ -11,7 +11,7 @@ ms.assetid: 5523466a-5f72-4138-ad36-3b678c36724b
 caps.latest.revision: 3
 ---
 # How to: Use PerfView to View Event Trace Data
-This topic describes how to use PerfView to view [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] event trace data that is stored in an event trace log \(.etl\) file.  
+This topic describes how to use PerfView to view [!INCLUDE[server](../developer/includes/server.md)] event trace data that is stored in an event trace log \(.etl\) file.  
   
 ### To install PerfView  
   

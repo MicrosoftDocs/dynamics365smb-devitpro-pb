@@ -37,7 +37,7 @@ In the Object Explorer pane in SQL Server Management Studio, follow these steps 
   
 5.  Choose the **OK** button to close the **Login – New** dialog box.  
   
- When administrators create [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, the account running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] is automatically granted the db\_owner database role for these databases.  
+ When administrators create [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, the account running [!INCLUDE[server](../developer/includes/server.md)] is automatically granted the db\_owner database role for these databases.  
   
 ## Permissions for Managing Companies, Objects, and Licenses  
 Administrators who create [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases automatically have permission to manage companies, objects, and licenses in that database.  

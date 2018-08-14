@@ -53,7 +53,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 2.  Uninstall all extensions.
 
-    You can do this from **Extension Management** page in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client or by using the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell.md)]. 
+    You can do this from **Extension Management** page in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client or by using the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. 
 
     To get a list of the extensions that are installed, run this command:
 
@@ -154,12 +154,12 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 5.  When you are notified that the conversion was successful, choose the **OK** button.
 
-6.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers.  
+6.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers.  
 
 
      For the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], the default path is [!INCLUDE[prodx86installpath](../developer/includes/prodinstallpath.md)]\\RoleTailored Client\\Add-ins folder.  
 
-     For [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], the default path is the [!INCLUDE[navnow_install](../developer/includes/navnow_install_md.md)]\\Service\\Add-ins folder.
+     For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[navnow_install](../developer/includes/navnow_install_md.md)]\\Service\\Add-ins folder.
 
 7.  Connect a [!INCLUDE[serverinstance.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance to the converted database. 
 

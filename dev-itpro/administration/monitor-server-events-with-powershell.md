@@ -10,10 +10,10 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Monitoring Business Central Server Events with PowerShell
-Events that occur on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances are recorded in event logs on the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. You can view the events by using Windows PowerShell as described in this article.  
+Events that occur on the [!INCLUDE[server](../developer/includes/server.md)] instances are recorded in event logs on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. You can view the events by using Windows PowerShell as described in this article.  
 
 ##  <a name="ViewEventsWinPS"></a>PowerShell Get-WinEvent Cmdlet   
-You can use the Get-WinEvent cmdlet of Windows PowerShell to view [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance events and trace events in the event logs and event tracing log files on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] computer. The Get-WinEvent cmdlet retrieves the same events that can be viewed in Event Viewer under **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** (see [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)). 
+You can use the Get-WinEvent cmdlet of Windows PowerShell to view [!INCLUDE[server](../developer/includes/server.md)] instance events and trace events in the event logs and event tracing log files on the [!INCLUDE[server](../developer/includes/server.md)] computer. The Get-WinEvent cmdlet retrieves the same events that can be viewed in Event Viewer under **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** (see [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)). 
   
 The Get-WinEvent cmdlet includes several parameters that enable you to filter the events that you view and specify how the events are displayed. Windows PowerShell enables you can create scripts that perform complex operations for extracting and displaying specific event data. For more information about the Get-WinEvent cmdlet, see [Get-WinEvent](http://go.microsoft.com/fwlink/?LinkID=513535).  
   
@@ -25,7 +25,7 @@ For more information about installing and getting started with Windows PowerShel
   
      For information, see [To enable the Microsoft Dynamics NAV Server Debug Log from Windows PowerShell](Monitoring-Microsoft-Dynamics-NAV-Server-Events-with-PowerShell.md#EnableLog).  
   
-2.  On the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], start Window PowerShell.  
+2.  On the computer that is running [!INCLUDE[server](../developer/includes/server.md)], start Window PowerShell.  
   
      For more information, see [Starting Windows PowerShell](http://go.microsoft.com/fwlink/?LinkID=513794).  
   
@@ -37,14 +37,14 @@ For more information about installing and getting started with Windows PowerShel
     |Events in the all **Dynamics365BusinessCentral** > **Common** logs|`Get-WinEvent -ProviderName Microsoft-DynamicsNav-Common`|  
     |Events in the **Dynamics365BusinessCentral** > **Server** > **Admin** log|`Get-WinEvent -LogName Microsoft-Dynamics365BusinessCentral-Server/Admin`|
     |Events in the **Dynamics365BusinessCentral** > **Common** > **Admin** log|`Get-WinEvent -LogName Microsoft-DynamicsNav-Common/Admin`|  
-    |Events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Operational log|`Get-WinEvent -LogName Microsoft-Dynamics365BusinessCentral-Server/Operational`|  
-    |Trace events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Debug log|`Get-WinEvent -LogName Microsoft-Dynamics365BusinessCentral-Server/Debug -Oldest`|  
+    |Events in the [!INCLUDE[server](../developer/includes/server.md)] Operational log|`Get-WinEvent -LogName Microsoft-Dynamics365BusinessCentral-Server/Operational`|  
+    |Trace events in the [!INCLUDE[server](../developer/includes/server.md)] Debug log|`Get-WinEvent -LogName Microsoft-Dynamics365BusinessCentral-Server/Debug -Oldest`|  
   
 ##  <a name="EnableLog"></a> To enable the Debug Logs from Windows PowerShell 
 
 There are two debug logs for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]: **Microsoft-Dynamics365BusinessCentral-Server/Debug** and **Microsoft-DynamicsNav-Common/Debug**.
   
-1.  On the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], start Window PowerShell as an administrator.  
+1.  On the computer that is running [!INCLUDE[server](../developer/includes/server.md)], start Window PowerShell as an administrator.  
   
 2.  At the command prompt, run the following commands:  
   
@@ -59,12 +59,12 @@ There are two debug logs for [!INCLUDE[prodshort](../developer/includes/prodshor
 > [!TIP]  
 >  You can also enable the Debug log from Event Viewer. For more information, see [Enable Analytic and Debug Logs](http://technet.microsoft.com/en-us/library/cc749492.aspx).  
   
-## Filtering [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Events  
-You can filter the events that you view in a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] log by setting the *FilterXpath* parameter of the Get-WinEvent cmdlet. The following examples illustrate how you can use the *FilterXpath* parameter to filter the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events.  
+## Filtering [!INCLUDE[server](../developer/includes/server.md)] Events  
+You can filter the events that you view in a [!INCLUDE[server](../developer/includes/server.md)] log by setting the *FilterXpath* parameter of the Get-WinEvent cmdlet. The following examples illustrate how you can use the *FilterXpath* parameter to filter the [!INCLUDE[server](../developer/includes/server.md)] events.  
   
 ### Example 1  
   
-The following example uses the Get-WinEvent cmdlet to view errors in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Admin log for the tenant *MyTenant1* on the server instance *MyNavServerInstance1*.  
+The following example uses the Get-WinEvent cmdlet to view errors in the [!INCLUDE[server](../developer/includes/server.md)] Admin log for the tenant *MyTenant1* on the server instance *MyNavServerInstance1*.  
   
 ```  
 Get-WinEvent -LogName 'Microsoft-Dynamics365BusinessCentral-Server/Admin' -FilterXPath "*[System[(Level=2)]] and *[EventData[Data[@Name='tenantId'] and (Data = 'MyTenant1')]] and *[EventData[Data[@Name='serverInstanceName'] and Data='MyNavServerInstance1']]" | Format-List -Property Message-  
@@ -72,7 +72,7 @@ Get-WinEvent -LogName 'Microsoft-Dynamics365BusinessCentral-Server/Admin' -Filte
   
 ### Example 2  
   
-The following is an example of a Windows PowerShell script that you can create and run to view trace events in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Debug log. The script returns the start and stop AL function trace events that take more than four seconds to execute on the tenant *MyTenant1* of the server instance *MyNavServerInstance1*.  
+The following is an example of a Windows PowerShell script that you can create and run to view trace events in the [!INCLUDE[server](../developer/includes/server.md)] Debug log. The script returns the start and stop AL function trace events that take more than four seconds to execute on the tenant *MyTenant1* of the server instance *MyNavServerInstance1*.  
   
 ```  
 $maxAllowedSeconds = 4  

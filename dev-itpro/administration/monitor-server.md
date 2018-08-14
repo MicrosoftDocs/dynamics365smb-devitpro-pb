@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ---
 # Monitoring Business Central Server
-These articles describe the features for monitoring and troubleshooting [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)].  
+These articles describe the features for monitoring and troubleshooting [!INCLUDE[server](../developer/includes/server.md)].  
 
 [Tools for Monitoring Performance Counters and Events](Tools-for-Monitoring-Performance-Counters-and-Events.md)  
 

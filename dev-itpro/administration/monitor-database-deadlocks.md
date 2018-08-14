@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ---
 # Monitoring SQL Database Deadlocks
-You can set up the system to log deadlocks that occur in the SQL database. The deadlocks are recorded in the Windows Event Log of computer running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. The log entries provide information about the AL code that was run when the deadlock occurred, along with the deadlock report from SQL Server. This information can help you identify and resolve problem areas in the application design.
+You can set up the system to log deadlocks that occur in the SQL database. The deadlocks are recorded in the Windows Event Log of computer running [!INCLUDE[server](../developer/includes/server.md)]. The log entries provide information about the AL code that was run when the deadlock occurred, along with the deadlock report from SQL Server. This information can help you identify and resolve problem areas in the application design.
 
 ## About Deadlocks
 Deadlocks can prevent users from completing tasks in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. A deadlock occurs when two or more processes or transactions block each other from continuing because each has locked a database resource that the other transaction needs. SQL Server handles deadlocks by terminating and rolling back transactions that were started after the first transaction.
@@ -17,12 +17,12 @@ Deadlocks can prevent users from completing tasks in the [!INCLUDE[prodshort](..
 For general information about deadlocks, see [Detecting and Ending Deadlocks](https://aka.ms/detectingendingdeadlocks).
 
 ## Setting Up Deadlock Logging
-Setting up deadlock logging requires you to configure the SQL Server instance and the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
+Setting up deadlock logging requires you to configure the SQL Server instance and the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
-**Note:**  If you installed the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] and database components by using the **Install Demo** option in the [!INCLUDE[nav_setup](../developer/includes/nav_setup_md.md)], then deadlock logging is set up by default.   
+**Note:**  If you installed the [!INCLUDE[server](../developer/includes/server.md)] and database components by using the **Install Demo** option in the [!INCLUDE[nav_setup](../developer/includes/nav_setup_md.md)], then deadlock logging is set up by default.   
 
 ### Configure the SQL Server instance
-To configure the SQL Server instance to log deadlocks, you must assign specific permissions to the database login for the service account that is used on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. You can do this using SQL Server Management Studio.
+To configure the SQL Server instance to log deadlocks, you must assign specific permissions to the database login for the service account that is used on the [!INCLUDE[server](../developer/includes/server.md)] instance. You can do this using SQL Server Management Studio.
 
 In SQL Server Management Studio, connect to the SQL server instance for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and then grant the following permissions:
 -   On the database level, grant the login the **View server state** permission.
@@ -32,8 +32,8 @@ For detailed steps on how to do this, see [Giving the account necessary database
 
 The next the a client session is established with the database, a session for monitoring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database appears under  **Management**, **Extended Events**.
 
-### Configure the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance
-To log deadlocks, you must enable deadlock logging on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. You can enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the Set-NAVServerConfiguration cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+### Configure the [!INCLUDE[server](../developer/includes/server.md)] instance
+To log deadlocks, you must enable deadlock logging on the [!INCLUDE[server](../developer/includes/server.md)] instance. You can enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the Set-NAVServerConfiguration cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 -   To enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], open the server instance for editing, and then select the **Enable Deadlock Monitoring** check box in the **Database** section.
 
@@ -47,21 +47,21 @@ To log deadlocks, you must enable deadlock logging on the [!INCLUDE[nav_server](
     For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
 
 ## Viewing Deadlocks in the Windows Event Log
-Similar to other errors and events in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can monitor deadlocks by using Event Viewer on the computer running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. Deadlocks are recorded as warnings in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]  **Admin** channel log in the **Applications and Services Logs**. For general information about how to view the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] logs, see [Monitor Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md).
+Similar to other errors and events in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can monitor deadlocks by using Event Viewer on the computer running [!INCLUDE[server](../developer/includes/server.md)]. Deadlocks are recorded as warnings in the [!INCLUDE[server](../developer/includes/server.md)]  **Admin** channel log in the **Applications and Services Logs**. For general information about how to view the [!INCLUDE[server](../developer/includes/server.md)] logs, see [Monitor Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md).
 
 ### Deadlock Event Overview
 Deadlock event log entries have the event ID 705 and task category 33 (TelemetryData). The following table describes some of important information that is included in deadlock log entry:
 
 |  Information |  Description  |
 |--------------|---------------|
-|serverInstanceName|Specifies the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance on which the event occurred.|
+|serverInstanceName|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance on which the event occurred.|
 |user|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account that ran the transaction that caused the event.|
 |AL ObjectType|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] object in AL that ran the transaction, such as a page or report.|
 |AL ObjectNumber|Specifies the ID of the object that was run.|
 |AL ScopeName|Specifies the AL function that ran the transaction that caused the event.|
 |SQL Server deadlock XML report|Includes the deadlock report that was recieved from SQL Server. For more information, see [Analyze Deadlocks](https://aka.ms/analyzedeadlocks).|
 
-**Note:**  The system cannot record information about AL code that was executed on a different  [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. Therefore, the three attributes *AL ObjectType*, *AL ObjectNumber* and *AL ScopeName* might be empty in a given event log entry.
+**Note:**  The system cannot record information about AL code that was executed on a different  [!INCLUDE[server](../developer/includes/server.md)]. Therefore, the three attributes *AL ObjectType*, *AL ObjectNumber* and *AL ScopeName* might be empty in a given event log entry.
 
 ### View a graphical representation of the deadlock event
 To view a graphical representation of the deadlock, perform the following steps:

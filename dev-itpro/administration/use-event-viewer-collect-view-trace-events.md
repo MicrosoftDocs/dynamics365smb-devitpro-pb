@@ -12,7 +12,7 @@ caps.latest.revision: 4
 ---
 # Enable Business Central Debug Logs in Event Viewer
 
-Some [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] events are collected in the following **Debug** logs specific to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Event Viewer:
+Some [!INCLUDE[server](../developer/includes/server.md)] events are collected in the following **Debug** logs specific to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Event Viewer:
 
 -   **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Server**
 
@@ -22,7 +22,7 @@ By default the **Debug** logs are disabled and may also be hidden in the Event V
   
 ### To enable Debug logs in Event Viewer  
   
-1.  On the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], start Event Viewer.  
+1.  On the computer that is running [!INCLUDE[server](../developer/includes/server.md)], start Event Viewer.  
   
      For more information, see [How to Start Event Viewer](http://technet.microsoft.com/en-us/library/gg163894.aspx).  
   
@@ -35,7 +35,7 @@ By default the **Debug** logs are disabled and may also be hidden in the Event V
     > [!NOTE]  
     >  Depending on the number of events, you might have to increase the maximum size of the log. The default value is 1028 KB. For more information, see [Set Maximum Log Size](http://go.microsoft.com/fwlink/?LinkID=517563).  
   
- [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] trace events will now be recorded in the **Debug** log. For a list and description of trace events, see [Business Central Server Trace Events](server-trace-events.md).  
+ [!INCLUDE[server](../developer/includes/server.md)] trace events will now be recorded in the **Debug** log. For a list and description of trace events, see [Business Central Server Trace Events](server-trace-events.md).  
   
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)    

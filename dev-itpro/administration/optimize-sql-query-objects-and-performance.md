@@ -50,7 +50,7 @@ A *query* is a new object in [!INCLUDE[prodlong](../developer/includes/prodlong.
   
 -   If two DataItems are linked, then the field on the parent DataItem that links the two DataItems \(the **Reference Field** in the **DataItemLink** property\) must be part of the same [!INCLUDE[prodshort](../developer/includes/prodshort.md)] key as the columns in the child DataItem.  
   
- [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] automatically use a SIFT index for query objects whenever possible.  
+ [!INCLUDE[server](../developer/includes/server.md)] automatically use a SIFT index for query objects whenever possible.  
   
 ## Differences Between Query and Record Result Sets  
  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not do any caching for query result sets. When you run a query, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] always gets the data directly from SQL Server.  

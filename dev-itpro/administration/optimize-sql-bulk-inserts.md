@@ -79,7 +79,7 @@ COMMIT;
 ```  
 
 ## Disabling Bulk Inserts  
- Disabling bulk inserts can be helpful when you are troubleshooting failures that occur when inserting records. To disable bulk inserts, you set the *BufferedInsertEnabled* parameter in the CustomSettings.config file of the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] to **FALSE**. For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).  
+ Disabling bulk inserts can be helpful when you are troubleshooting failures that occur when inserting records. To disable bulk inserts, you set the *BufferedInsertEnabled* parameter in the CustomSettings.config file of the [!INCLUDE[server](../developer/includes/server.md)] to **FALSE**. For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).  
 
 ## See Also  
  [Data Access](optimize-sql-data-access.md)   
