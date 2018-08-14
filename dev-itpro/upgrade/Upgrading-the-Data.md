@@ -255,12 +255,12 @@ efejfefjejf
 -->
 
 ##  <a name="RunSync1"></a> Task 12: Run the schema synchronization on the imported objects
-Synchronize the database schema with validation. You can run the schema synchronization from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].  
+Synchronize the database schema with validation. You can run the schema synchronization from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
 For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).
 
 ##  <a name="RunStartNavUpgrade"></a> Task 13: Run the data upgrade process  
-A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and upgrade tables, to migrate business data from the old table structure to the new table structure. You can start the data upgrade from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].  
+A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and upgrade tables, to migrate business data from the old table structure to the new table structure. You can start the data upgrade from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
 > [!NOTE]  
 >  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the Start-NavDataUpgrade cmdlet and set the *-SkipCompanyIntitialization* parameter.  
@@ -271,9 +271,9 @@ Open [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] as an 
 
 To view the progress of the data upgrade, on the **Tools** menu, choose **Data Upgrade**, and then choose **Show Progress**.  
 
-**From the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]:**  
+**From the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:**  
 
-Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an administrator, and then run Start-NavDataUpgrade cmdlet as follows:  
+Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run Start-NavDataUpgrade cmdlet as follows:  
 
 ```  
 Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -Force  
@@ -329,7 +329,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
   
 2. Publish the platform, test, and application symbols one file at a time to the Dynamics NAV server instance:
 
-    Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an administrator, and run the following command for each of the symbol files:
+    Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and run the following command for each of the symbol files:
 
     ```
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <SymbolFilePath> -PackageType SymbolsOnly
@@ -364,7 +364,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
 
 5. Publish all the extensions from the `\Extensions` folder of the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] installation media (DVD):
 
-    1. From the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)], run the following command for each extension.
+    1. From the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the following command for each extension.
 
         ```
         Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
@@ -381,7 +381,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
 
     For more information about publishing extensions, see [How to: Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md).
 
-6.  Upgrade the V1 extensions that you uninstalled previously in Task 3 by reinstalling them. From the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)], run the following commands: 
+6.  Upgrade the V1 extensions that you uninstalled previously in Task 3 by reinstalling them. From the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the following commands: 
 
     1. To get a list of the published extensions on the server instance, run this command:
     

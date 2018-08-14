@@ -33,7 +33,7 @@ For detailed steps on how to do this, see [Giving the account necessary database
 The next the a client session is established with the database, a session for monitoring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database appears under  **Management**, **Extended Events**.
 
 ### Configure the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance
-To log deadlocks, you must enable deadlock logging on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. You can enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the Set-NAVServerConfiguration cmdlet in the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].
+To log deadlocks, you must enable deadlock logging on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. You can enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the Set-NAVServerConfiguration cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 -   To enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], open the server instance for editing, and then select the **Enable Deadlock Monitoring** check box in the **Database** section.
 
@@ -44,7 +44,7 @@ To log deadlocks, you must enable deadlock logging on the [!INCLUDE[nav_server](
     ```
     Set-NAVServerConfiguration -ServerInstance MyServerInstance -KeyName EnableDeadlockMonitoring -KeyValue true
     ```
-    For more information about how to use the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
+    For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
 
 ## Viewing Deadlocks in the Windows Event Log
 Similar to other errors and events in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can monitor deadlocks by using Event Viewer on the computer running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. Deadlocks are recorded as warnings in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]  **Admin** channel log in the **Applications and Services Logs**. For general information about how to view the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] logs, see [Monitor Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md).

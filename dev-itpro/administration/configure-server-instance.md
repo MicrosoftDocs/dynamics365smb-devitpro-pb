@@ -34,7 +34,7 @@ After you install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]
 
     For more information, see [Settings in the Microsoft Dynamics NAV Administration Console](configure-server-instance.md#NavAdminSettings) and [Business Central Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
 
--   Using the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) that is available in the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].
+-   Using the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) that is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
     For more information, see [Using Administration Shell Cmdlets to Modify Settings](configure-server-instance.md#UsingPowerShell).  
 
@@ -261,8 +261,8 @@ The following table describes fields on the **Development** tab in the [!INCLUDE
 |Port|DeveloperServicesPort|The listening HTTP port for Microsoft Dynamics NAV Developer web services.<br /><br />Valid range: 1 - 65535<br />Default: 7049<br />Dynamically Updatable: No|
 
 
-##  <a name="UsingPowerShell"></a> Using [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] to Modify Server Instance Settings  
-The [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] includes several `Set-` cmdlets that enable you to create and modify [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances.
+##  <a name="UsingPowerShell"></a> Using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to Modify Server Instance Settings  
+The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] includes several `Set-` cmdlets that enable you to create and modify [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances.
 
 The main cmdlet for configuring a server instance is the Set-NAVServerConfiguration cmdlet. You can use this cmdlet to change any of the configuration settings that are listed in the previous sections. To change a configuration setting, you set `-KeyName` parameter to the **Key Name** that corresponds to the setting, and set the `-KeyValue`parameter to the new value. For example, you can change the value for `DatabaseServer` to `DatabaseServer.Domain.Com` for the server instance named `MyInstance` by executing this cmdlet:  
 
@@ -285,7 +285,7 @@ For example, the following command sets the value for the `MaxStreamReadSize` ke
 Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName MaxStreamReadSize -KeyValue 42424242 -ApplyTo Memory  
 ```
 
-For more information about running the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)  
+For more information about running the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)  
 
 ## See Also  
 [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)   
