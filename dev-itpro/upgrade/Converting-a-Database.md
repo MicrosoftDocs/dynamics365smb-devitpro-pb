@@ -101,7 +101,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 8.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
 
-    You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].
+    You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)].
 
     For information about the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], see [How to: Start, Stop, Restart, or Remove a Dynamics NAV Server Instance](How-to--Start--Stop--Restart--or-Remove-a-Microsoft-Dynamics-NAV-Server-Instance.md).
 
@@ -137,10 +137,10 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
      Run the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup, and install the following components as a minimum:
      -  Server
      -  SQL Server Database Components
-     -  Administration Tool (include Shell)
+     -  Administration Tool
      -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]    
 
-3.  Run the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] as an administrator.
+3.  Run the newly installed [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] as an administrator.
 
     -   If the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is already connected to the old database, a dialog box about converting the database appears. Go to the next step.
     
