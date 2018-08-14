@@ -1,1 +1,1 @@
-Business Central Server Administration tool
+Dynamics NAV Server Administration tool
