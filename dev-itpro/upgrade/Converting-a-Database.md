@@ -47,11 +47,15 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 #### To prepare the old database  
 
-1.  Make a copy of the old database or create full database backup.  
+1.  Make a copy of the old database or create full database backup. 
+
+    <!-- in multitnenta, both the application and tenant dbs>
 
      For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
 
 2.  Uninstall all extensions.
+
+    <!-- This tep is not required for multitenant -->
 
     You can do this from **Extension Management** page in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client or by using the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. 
 
@@ -73,7 +77,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
     ```  
 
-2.  Open the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old database.  
+2.  Open the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->database.  
 
      For more information, see [How to: Open Databases](How-to--Open-Databases.md).  
 
@@ -97,6 +101,8 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 7.  Run the schema synchronization with validation to synchronize the database schema changes.  
 
     For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).
+
+    <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?>
 
 
 8.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
@@ -142,9 +148,9 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 3.  Run the newly installed [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] as an administrator.
 
-    -   If the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is already connected to the old database, a dialog box about converting the database appears. Go to the next step.
+    -   If the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is already connected to the old <!-- for multitenancy, the old application db-->database, a dialog box about converting the database appears. Go to the next step.
     
-    -   Otherwise, connect to the old database that you prepared in the previous task, and then go to the next step.
+    -   Otherwise, connect to the old database<!-- for multitenancy, the old application db--> that you prepared in the previous task, and then go to the next step.
     
         For more information, see [How to: Open Databases](How-to--Open-Databases.md).
 
@@ -154,12 +160,13 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 5.  When you are notified that the conversion was successful, choose the **OK** button.
 
-6.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers.  
+6.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)] <!--or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers-->.  
 
+    <!-- 
+     For the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], the default path is [!INCLUDE[prodx86installpath](../developer/includes/prodinstallpath.md)]\\RoleTailored Client\\Add-ins folder.
+     -->  
 
-     For the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], the default path is [!INCLUDE[prodx86installpath](../developer/includes/prodinstallpath.md)]\\RoleTailored Client\\Add-ins folder.  
-
-     For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[navnow_install](../developer/includes/navnow_install_md.md)]\\Service\\Add-ins folder.
+     For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Add-ins folder.
 
 7.  Connect a [!INCLUDE[server.md](../developer/includes/server.md)] instance to the converted database. 
 
