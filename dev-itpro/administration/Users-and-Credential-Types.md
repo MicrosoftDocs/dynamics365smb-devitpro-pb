@@ -15,7 +15,7 @@ caps.latest.revision: 32
 [!INCLUDE[prodlong](../developer/includes/prodlong.md)] supports several credential authorization mechanisms for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] users. When you create a user, you provide different information depending on the credential type that you are using in the current [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. 
   
 > [!IMPORTANT]  
->  All users of a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance must be using the same credential type. You specify which credential type is used for a particular [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].  
+>  All users of a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance must be using the same credential type. You specify which credential type is used for a particular [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
   
  For more information about how to create users, see [How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md). Alternatively, you can create new users using the Windows PowerShell cmdlet, **New-NAVServerUser**. For more information, see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md).  
   
@@ -37,7 +37,7 @@ caps.latest.revision: 32
 ## Configuring the Credential Type  
  [!INCLUDE[rtc](../developer/includes/rtc_md.md)]s and [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] must be configured to use the same credential type.  
   
- To edit the configuration for the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, you can use either the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. In the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], you configure the credential type in the **Credential Type** field on the **General** tab. Alternatively, you can edit the CustomSettings.config file. For more information, see [Configuring Business Central Server](configure-server-instance.md).  
+ To edit the configuration for the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, you can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. In the [!INCLUDE[admintool](../developer/includes/admintool.md)], you configure the credential type in the **Credential Type** field on the **General** tab. Alternatively, you can edit the CustomSettings.config file. For more information, see [Configuring Business Central Server](configure-server-instance.md).  
   
 > [!IMPORTANT]  
 >  When [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] services are deployed on Azure, you must configure them on Azure. For more information, see [How to: Open Microsoft Dynamics NAV Clients that Connect to Microsoft Dynamics NAV on Microsoft Azure](How-to--Open-Microsoft-Dynamics-NAV-Clients-that-Connect-to-Microsoft-Dynamics-NAV-on-Microsoft-Azure.md).  

@@ -81,7 +81,7 @@ AND ISNULL("Sales (LCY)$Cust_ Ledger Entry"."Posting Date",@8)<=@18)
 In the SQL query, each section that starts with the keyword OUTER APPLY is responsible for a FlowField calculation, and the SmartSQL optimization adds this to the SQL query as an outer join. For each FlowField in the table, an OUTER APPLY clause is added to the SQL statement.
 
 ## How to isolate and test FlowField queries
-If you want to see the cost of each of these subqueries, you can disable the SmartSQL optimization. To do this, run the  [!INCLUDE[nav_admin_md](../developer/includes/nav_admin_md.md)], and select the **Disable SmartSQL** check box in the **Database** section.
+If you want to see the cost of each of these subqueries, you can disable the SmartSQL optimization. To do this, run the  [!INCLUDE[admintool](../developer/includes/admintool.md)], and select the **Disable SmartSQL** check box in the **Database** section.
 
 Now, when loading the page, each FlowField calculation is performed as a separate SQL statement, which can be found either in an SQL trace or by using the Query Store feature in SQL Server 2016 (or later).
 

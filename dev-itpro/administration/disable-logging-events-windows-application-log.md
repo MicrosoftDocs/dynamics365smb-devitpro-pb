@@ -16,11 +16,11 @@ Because the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] insta
 > [!IMPORTANT]  
 >  If you are using System Center Operations Manager to monitor [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances, do not disable logging to the Windows Application log. If you do, monitoring will not work.  
   
- To disable logging to the Window Applications Log, you can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or modify the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance configuration file \(CustomSettings.config\).  
+ To disable logging to the Window Applications Log, you can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or modify the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance configuration file \(CustomSettings.config\).  
   
-## To configure custome telemtery logging to the Windows Application log by using the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)]  
+## To configure custome telemtery logging to the Windows Application log by using the [!INCLUDE[admintool](../developer/includes/admintool.md)]  
   
-1.  To start the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], choose **Start**, and in the **Search programs and files** box, type **[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Administration**, and then choose the related link.  
+1.  To start the [!INCLUDE[admintool](../developer/includes/admintool.md)], choose **Start**, and in the **Search programs and files** box, type **[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Administration**, and then choose the related link.  
   
 2.  In the left pane, under **Console root**, select the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.  
   

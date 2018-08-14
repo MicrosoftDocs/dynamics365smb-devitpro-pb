@@ -1,1 +1,1 @@
-Business Central Administration Shell
+Dynamics NAV Administration Shell

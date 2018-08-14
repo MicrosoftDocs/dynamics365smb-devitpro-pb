@@ -30,7 +30,7 @@ After you specify an installation option or customize your component list, the *
 ## Configuring [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] After Installation  
 After you install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], you can change the configuration settings in the CustomSettings.config file of a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance in the following ways:  
 
--   Using the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].
+-   Using the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
     For more information, see [Settings in the Microsoft Dynamics NAV Administration Console](configure-server-instance.md#NavAdminSettings) and [Business Central Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
 
@@ -44,17 +44,17 @@ After you install [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]
 
 ### Restarting [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] after modifications
 
-If you use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or modify the CustomSettings.config file directly, you must restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance before any changes can take effect.
+If you use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or modify the CustomSettings.config file directly, you must restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance before any changes can take effect.
 
 If you use the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394), whether you need to restart the server instance will depend on the configuration setting that you change. There are several settings that are *dynamically updatable*, which means that a server instance restart is not necessariyl required after modification. For more information, see [Modifying dynamically updatable settings](configure-server-instance.md#DynamicSettings). In the tables that follow, these settings are indicated by the text **Dynamically Updatable: Yes**.
 
 ##  <a name="NavAdminSettings"></a>[!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] Instance Settings  
-This section describes all the configuration settings for a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. The settings are grouped according to the tabs under which they appear in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].
--   The **Setting** column displays the name of the setting as it appears in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].
+This section describes all the configuration settings for a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. The settings are grouped according to the tabs under which they appear in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+-   The **Setting** column displays the name of the setting as it appears in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 -   The **Key Name** column displays the name of the setting as it appears in the CustomSettings.config file, and is also the name to use for the setting when using the Set-NAVServerConfiguration cmdlet.
 
 ##  <a name="General"></a> General Settings  
-The following table describes fields on the **General** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].  
+The following table describes fields on the **General** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|
@@ -95,7 +95,7 @@ The following table describes fields on the **General** tab in the [!INCLUDE[nav
 <!-- |Send Feedback||When this setting is enabled, the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance collects basic information about your hardware configuration and about how you use [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)], and sends it to Microsoft. Microsoft uses this information to identify trends and usage patterns and to improve its software.<br /><br /> Default: Not enabled<br /><br /> This is the **EnableSoftwareQualityMetrics** setting in the CustomSettings.conig file.<br /><br /> For more information, see [Customer Experience Improvement Program and Microsoft Dynamics NAV Server](Customer-Experience-Improvement-Program-and-Microsoft-Dynamics-NAV-Server.md).|  -->
 
 ##  <a name="Database"></a> Database Settings  
- The following table describes fields on the **Database** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].  
+ The following table describes fields on the **Database** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 > [!NOTE]  
 >  If the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance is configured as a multitenant server instance, then except for the **Database Name**, **Database Instance**, and **Database Server** settings, the settings apply to both the application database and the tenant database.  
@@ -117,7 +117,7 @@ The following table describes fields on the **General** tab in the [!INCLUDE[nav
 |SQL Query Logging Threshold|SqlLongRunningThreshold|Specifies the amount of time (in milliseconds) that an SQL query can run before a warning event is recorded in the application log for the server instance. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.<br /><br /> Default: 1000<br />Dynamically Updatable: Yes|
 
 ##  <a name="ClientServices"></a> Client Services Settings  
- The following table describes fields on the **Client Services** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].  
+ The following table describes fields on the **Client Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|  
@@ -141,7 +141,7 @@ The following table describes fields on the **General** tab in the [!INCLUDE[nav
 |Windows Client Base URL|PublicWinBaseUrl|Specifies the root of the URLs that are used to open hyperlinks to pages and reports in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br />`DynamicsNAV://[hostname]:[port]/[instance]/`<br /><br /> This field maps to the `PublicWinBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> For more information, see [How to: Copy the URL to Open a Page or Report](How-to--Copy-the-URL-to-Open-a-Page-or-Report.md).<br /><br />Default: The URL of the Wndows client<br />Dynamically Updatable: No|  
 
 ##  <a name="SOAPServices"></a> SOAP Services Settings  
- The following table describes fields on the **SOAP Services** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].  
+ The following table describes fields on the **SOAP Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|  
@@ -152,7 +152,7 @@ The following table describes fields on the **General** tab in the [!INCLUDE[nav
 |SOAP Base URL|PublicSOAPBaseUrl|Specifies the root of the URLs that are used to access SOAP web services. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br /> http\[s\]://*hostname*:*port*/*instance*/WS/<br /><br /> This field maps to the `PublicSOAPBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> For more information, see [How to: Copy the URL to Open a Page or Report](How-to--Copy-the-URL-to-Open-a-Page-or-Report.md).<br /><br /> Default: The SOAP URL for the server instance<br />Dynamically Updatable: No|  
 
 ##  <a name="ODataServices"></a> OData Services Settings  
- The following table describes fields on the **OData Services** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].  
+ The following table describes fields on the **OData Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|  
@@ -171,7 +171,7 @@ The following table describes fields on the **General** tab in the [!INCLUDE[nav
 >  The maximum permitted size of an OData web services request is specified by the **Max Message Size** option on the **SOAP Services** tab.  
 
 ##  <a name="NASServices"></a> NAS Services Settings  
- The following table describes fields on the **NAS Services** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].  
+ The following table describes fields on the **NAS Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|  
@@ -184,15 +184,15 @@ The following table describes fields on the **General** tab in the [!INCLUDE[nav
 For more information, see [Configuring NAS Services](configuring-nas-services.md).
 
 ##  <a name="ManagementServices"></a> Management Services Settings  
- The following table describes fields on the **Management Services** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].  
+ The following table describes fields on the **Management Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|  
-|Enable Management Services|ManagementServicesEnabled|Specifies whether [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] is enabled for this [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|  
-|Port|ManagementServicesPort|The listening TCP port for the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].<br /><br /> Valid range: 1 - 65535<br /> Default: 7045<br />Dynamically Updatable: No|  
+|Enable Management Services|ManagementServicesEnabled|Specifies whether [!INCLUDE[admintool](../developer/includes/admintool.md)] is enabled for this [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|  
+|Port|ManagementServicesPort|The listening TCP port for the [!INCLUDE[admintool](../developer/includes/admintool.md)].<br /><br /> Valid range: 1 - 65535<br /> Default: 7045<br />Dynamically Updatable: No|  
 
 ## Azure Key Vault Encryption Provider Tab Settings
-The following table describes fields on the **Azure Key Vault Encryption Provider** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].  
+The following table describes fields on the **Azure Key Vault Encryption Provider** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 > [!NOTE]  
 >  These settings are used when you want to use Azure Key Vault to help encrypt data in the database. If you want to use Azure Key Vault to encrypt the connection between [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] and an Azure SQL database, you must store that key in the database.
@@ -206,7 +206,7 @@ The following table describes fields on the **Azure Key Vault Encryption Provide
 |  Key URI  | AzureKeyVaultKeyUri| Specifies the URI of the key in the Key Vault encryption provider setup. <br /><br />Default:  <br />Dynamically Updatable: No |
 
 ## <a name="AzureAd"></a>Azure Active Directory (Azure AD) Settings
-The following table describes fields on the **Azure Active Directory (Azure AD)** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].
+The following table describes fields on the **Azure Active Directory (Azure AD)** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
 The settings in this tab configure the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to use Azure AD authentication. The settings are only relevant when the server instance is configured Access Control Service, that is, when the **Credential Type** is set to **AccessControlService**. For more information about authenticating using Azure AD, see [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md).
 
@@ -224,7 +224,7 @@ The settings in this tab configure the [!INCLUDE[nav_server](../developer/includ
 |  WS-Federation Metadata Location  | ClientServicesFederationMetadataLocation| Specifies the URL for the federation metadata document that describes the configuration information for your Azure AD tenant. The federation metadata document is used to validate the security tokens that the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] receive, and to establish a trust relationship with between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and an application that you have added to Azure AD.<br /><br /> You must specify a URL in the following format:<br /><br />https://login.windows.net/[AADTENANTID]/FederationMetadata/2007-06/FederationMetadata.xml<br /><br />The placeholder [AADTENANTID] represents the GUID of your Azure AD tenant. If the server instance has to support multiple Azure AD tenants, then the Azure AD Tenant ID parameter that is specified when mounting a tenant replaces the placeholder. <br /><br /> This parameter is relevant only when **Credential Type**, on the **General** tab, is set to **AccessControlService**. For more information, see [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md).<br /><br />Default: <br />Dynamically Updatable: No|  
 
 ## Task Scheduler Settings
-The following table describes fields on the **Task Scheduler** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].
+The following table describes fields on the **Task Scheduler** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
 The task scheduler processes jobs and other processes on a scheduled basis. For more information about task scheduler, see [Task Scheduler](task-scheduler.md).
 
@@ -236,7 +236,7 @@ The task scheduler processes jobs and other processes on a scheduled basis. For 
 |  System Task End Time  | TaskSchedulerSystemTaskEndTime| Specifies the time of day after which system tasks cannot start. The time is based on the time zone of the computer that is running the server instance. <br /><br />The value has the format HH:MM:SS.<br /><br />Default: 23:59:59 <br />Dynamically Updatable: Yes|
 
 ## Reports Settings
-The following table describes fields on the **Reports** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].
+The following table describes fields on the **Reports** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
 |  Setting  |Key Name|  Description  |
 |-----------|--------|---------------|
@@ -248,7 +248,7 @@ The following table describes fields on the **Reports** tab in the [!INCLUDE[nav
 |*not available*|CalculateBestPaperSizeForReportPrinting|Determines the paper size to use when printing reports from the client.<br /><br />If set to `true`, the system calculates which of the available paper sizes on the printer is best suited for printing, and then uses that paper size.<br /><br /> If set to `false`, the printer's default paper size is used.<br /><br />Default: true|
 
 ## Development Settings
-The following table describes fields on the **Development** tab in the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].
+The following table describes fields on the **Development** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
 |  Setting  |Key Name|  Description  |
 |-----------|--------|---------------|

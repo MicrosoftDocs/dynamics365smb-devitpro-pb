@@ -33,11 +33,11 @@ For detailed steps on how to do this, see [Giving the account necessary database
 The next the a client session is established with the database, a session for monitoring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database appears under  **Management**, **Extended Events**.
 
 ### Configure the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance
-To log deadlocks, you must enable deadlock logging on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. You can enable deadlock logging by using the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or the Set-NAVServerConfiguration cmdlet in the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].
+To log deadlocks, you must enable deadlock logging on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. You can enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the Set-NAVServerConfiguration cmdlet in the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].
 
--   To enable deadlock logging by using the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], open the server instance for editing, and then select the **Enable Deadlock Monitoring** check box in the **Database** section.
+-   To enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], open the server instance for editing, and then select the **Enable Deadlock Monitoring** check box in the **Database** section.
 
-    For more information about how to use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], see [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).
+    For more information about how to use the [!INCLUDE[admintool](../developer/includes/admintool.md)], see [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).
 
 -   To enable logging by using the Set-NAVServerConfiguration cmdlet, include the *keyname EnableDeadlockMonitoring keyvalue true* parameters in the command, such as:
 

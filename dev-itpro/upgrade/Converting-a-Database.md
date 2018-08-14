@@ -36,11 +36,8 @@ Converting a database does not upgrade the application objects (like pages, repo
 -->
 
 
-## Task 1: Convert and Uninstall V1 Extensions
-[!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions, you will have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
-
-> [!IMPORTANT]  
->  You must uninstall all V1 extensions; otherwise the technical upgrade will fail.
+## Task 1: Convert V1 Extensions to V2 extensions
+[!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions ans you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
 
 ## Task 2: Preparing the Old Database  
 To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database, the first task is to back up the old database and then prepare to convert it.
@@ -52,7 +49,29 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 1.  Make a copy of the old database or create full database backup.  
 
-     For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).  
+     For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
+
+2.  Uninstall all extensions.
+
+    You can do this from **Extension Management** page in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client or by using the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell.md)]. 
+
+    To get a list of the extensions that are installed, run this command:
+
+    ```
+    Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant <TenantID>
+    ```
+
+    For each extension, run this command to uninstall it:
+
+    ```
+    Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
+    ```
+
+    Alternately, to remove them all at once, you can run this command:
+
+    ```
+    Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
+    ```  
 
 2.  Open the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old database.  
 
@@ -144,7 +163,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 7.  Connect a [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance to the converted database. 
 
-    Use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
+    Use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
 
     > [!IMPORTANT]
     > The service account that is used by the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database on SQL Server or Azure SQL Database.
