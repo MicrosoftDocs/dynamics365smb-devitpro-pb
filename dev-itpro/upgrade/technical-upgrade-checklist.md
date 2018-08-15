@@ -21,7 +21,7 @@ author: jswymer
 ||Backup the database.||
 ||Uninstall all extensions.||
 ||Ensure all objects are complied, unlocked, and the tenent is in sync.||
-||Upload [!INCLUDEprodshort_md](../developer/includes/prodshort.md)] license.||
+||Upload [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] license.||
 ||Clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in SQL Server.||
 
 
