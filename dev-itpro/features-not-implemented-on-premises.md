@@ -43,12 +43,12 @@ The following features are not intended for use in on-premises deployments. Ther
 | **Feature**                      |**Description**                                  |
 |----------------------------------|-------------------------------------------------|
 
-|Inviting the external accountant|Integration with [!INCLUDE[d365acc_long](includes/d365acc_long_md.md)] is not supported in [!INCLUDE[prodshort](includes/prodshort.md)].|
+|Inviting the external accountant|Integration with [!INCLUDE[d365acc_long](includes/d365acc_long_md.md)] is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].|
 |Bulk Invoicing from Microsoft Bookings|Integration with the Bookings app in Office Business Premium is not supported.|
 |Create Workflow from Flow|Microsoft Flow does not integrate with on-premises workflow functionality.|
 |Sandbox environments|The sandbox environment that you can use to develop extensions against for the new developer experience cannot connect to an on-premises deployment. For more information, see [Get started with the Container Sandbox Development Environment](/developer/devenv-get-started-container-sandbox.md).|
 
-
 ## See Also
-[Configuring Microsoft Dynamics NAV](Configuring-Microsoft-Dynamics-NAV.md)  
+
+[System Requirements](/deployment/system-requirement-business-central.md)  
 [How to: Create a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics-nav/toc.json)  
