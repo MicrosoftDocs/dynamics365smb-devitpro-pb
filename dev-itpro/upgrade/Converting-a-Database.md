@@ -51,11 +51,11 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 1.  Make a copy of the old database or create full database backup. 
 
-    <!-- in multitnenta, both the application and tenant dbs>
+    <!-- in multitnenta, both the application and tenant dbs>-->
 
      For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
 
-2.  Uninstall all extensions.
+2.  <a name="uninstallextensions"></a>Uninstall all extensions.
 
     <!-- This tep is not required for multitenant -->
 
