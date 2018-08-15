@@ -38,10 +38,7 @@ Converting a database does not upgrade the application objects (like pages, repo
 -->
 
 
-## <a name="convertv1extensions"></a>Task 1: Convert V1 Extensions to V2 extensions
-[!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
-
-## Task 2: Preparing the Old Database  
+## Task 1: Preparing the Old Database  
 To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database, the first task is to back up the old database and then prepare to convert it.
 
 > [!NOTE]  
@@ -49,13 +46,17 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 #### To prepare the old database  
 
-1.  Make a copy of the old database or create full database backup. 
+1. <a name="convertv1extensions"></a>Convert V1 Extensions to V2 extensions
+
+    [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
+
+2.  Make a copy of the old database or create full database backup. 
 
     <!-- in multitnenta, both the application and tenant dbs>-->
 
      For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
 
-2.  <a name="uninstallextensions"></a>Uninstall all extensions.
+3.  <a name="uninstallextensions"></a> (Single tenant only) Uninstall all extensions.
 
     <!-- This tep is not required for multitenant -->
 
@@ -79,36 +80,38 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
     ```  
 
-2.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->database.  
+4.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->database.  
 
      For more information, see [How to: Open Databases](How-to--Open-Databases.md).  
 
-3.  In Object Designer, verify that all objects are compiled and no objects are locked.  
+5.  In Object Designer, verify that all objects are compiled and no objects are locked.  
 
      For more information about compiling objects, see [Compiling Objects](compiling-objects.md).
 
      If one or more objects are locked, the conversion process cannot update the database version number. As a result, the conversion does not complete. For more information, see [Locking and Unlocking Objects](Locking-and-Unlocking-Objects.md).
 
-4.  On the **Tools** menu, choose **Build Server Application Objects**, and then choose the **Yes** button.  
+6.  On the **Tools** menu, choose **Build Server Application Objects**, and then choose the **Yes** button.  
 
-5.  If any errors occur, they are shown in the **Error List** window. Make sure that you address all compilation errors before you continue.  
+7.  If any errors occur, they are shown in the **Error List** window. Make sure that you address all compilation errors before you continue.  
 
-
-6.  Run the schema synchronization with validation to synchronize the database schema changes.  
+8.  Run the schema synchronization with validation to synchronize the database schema changes.  
 
     For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).
 
     <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?>
 
-7.  <a name="uploadlicense"></a>Upload the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Partner license to the database.  
+9.  <a name="uploadlicense"></a>Upload the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Partner license to the database.  
 
-     For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
+    For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
 
     > [!IMPORTANT]  
     >  The license that you upload must be a developer license. During the conversion, the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] will convert the report objects that are stored in the old database to the RDL format.  
 
+10. (Multitenant only) Dismount tenants.
 
-8.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
+    Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
+
+11.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
 
     You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)].
 
@@ -118,7 +121,8 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
     ```
     Set-NAVServerInstance –ServerInstance <ServerInstanceName> -Stop
     ```
-9. <a name="clearsql"></a>Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old database in SQL Server.  
+
+12. <a name="clearsql"></a>Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old application database in SQL Server.  
 
     Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
 
@@ -126,11 +130,10 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
     DELETE FROM [<My NAV Database Name>].[dbo].[Server Instance]
     DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
     ```
+<!-- 
+(Optional) Before you start the following procedure, you can uninstall the old version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]. When you uninstall [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], the database is still attached to the instance of SQL Server, which you can verify using SQL Server Management Studio.-->
 
-10.  (Optional) Before you start the following procedure, you can uninstall the old version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]. When you uninstall [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], the database is still attached to the instance of SQL Server, which you can verify using SQL Server Management Studio.
-
-<!-- for multitenancy, should you dismount tenants here?-->
-## Task 3: Converting the Old Database  
+## Task 2: Run Technical Upgrade on the Old Database  
 Next, you will convert the old database so that it can be used with [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].
 
 > [!TIP]  
@@ -150,13 +153,16 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
      -  Administration Tool
      -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)
 
-3.  Run the newly installed [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] as an administrator.
+    > [!IMPORTANT]  
+    > For a multitenant installation, configure the [!INCLUDE[server](../developer/includes/server.md)] instance to be a multitenant instance.
+ 
+3.  <a name="convertdb"></a>Run the newly installed [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] as an administrator.
 
-    -   If the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is already connected to the old <!-- for multitenancy, the old application db-->database, a dialog box about converting the database appears. Go to the next step.
+    -   If the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is already connected to the old application database, a dialog box about converting the database appears. Go to the next step.
     
-    -   Otherwise, connect to the old database<!-- for multitenancy, the old application db--> that you prepared in the previous task, and then go to the next step.
+    -   Otherwise, connect to the old application database that you prepared in the previous task, and then go to the next step.
     
-        For more information, see [How to: Open Databases](How-to--Open-Databases.md).
+    For more information, see [How to: Open Databases](How-to--Open-Databases.md).
 
 4.  In the dialog box that appears, read the instructions about converting the database carefully because this action cannot be reversed. When you are ready, choose the **OK** button, and then choose the **OK** button to confirm that you want to convert the database.  
 
@@ -164,7 +170,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 5.  When you are notified that the conversion was successful, choose the **OK** button.
 
-6.  If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)] <!--or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers-->.  
+6.  <a name="controladdins"></a>If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)] <!--or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers-->.  
 
     <!-- 
      For the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], the default path is [!INCLUDE[prodx86installpath](../developer/includes/prodinstallpath.md)]\\RoleTailored Client\\Add-ins folder.
@@ -172,14 +178,14 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
      For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Add-ins folder.
 
-7.  <!-- for multitenant, you have to configure the server for multitenancy first. Howvever, i ran the admin tool and the tenant automatically tried to mount. it failed. I could not sync. The only way was to dismount-navtenant using applicationdatabasename-->Connect a [!INCLUDE[server.md](../developer/includes/server.md)] instance to the converted database. 
+7.  <!-- for multitenant, you have to configure the server for multitenancy first. Howvever, i ran the admin tool and the tenant automatically tried to mount. it failed. I could not sync. The only way was to dismount-navtenant using applicationdatabasename--><a name="connectserver"></a>Connect a [!INCLUDE[server.md](../developer/includes/server.md)] instance to the converted database. 
 
     Use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
 
     > [!IMPORTANT]
     > The service account that is used by the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database on SQL Server or Azure SQL Database.
 
-     For more information, see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).  
+    For more information, see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).  
      
 8.  Go to the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)], and set it to use the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that connects to the database.  
 
@@ -189,7 +195,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
     For more information, see [Compiling Objects](compiling-objects.md).
 
-10. Fix compilation errors.  
+10. <a name="fixerrors"></a>Fix compilation errors.  
 
     If any errors occur, they are shown in the **Error List** window. For help on resolving the errors, see the following:
 
@@ -203,42 +209,52 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
     You can find all objects which did not compile in the **Object Designer** window, by setting a field filter on the **Compiled** field. 
 
-<!-- 10. With a multitenant server, mount the tenant: Mount-NAVTenant -ServerInstance dynamicsnav130 -Tenant MyTenant1 -DatabaseName "Demo Database NA
-V (11-0)"--> 
+11. Recompile V2 extensions that you uninstalled previously.
 
-11.  Run the schema synchronization with validation to complete the database conversion.  
+    Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to compile the published extensions to make sure they are work with the new platform.
+
+    For example, you can run the following command to recompile all extensions:
+
+    ```
+    Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
+    ``` 
+
+12. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
+
+    Use the [Install-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
+
+    For each V2 extension, run the following command to install it:
+
+    ```
+    Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> 
+    ```
+        
+13. <a name="mounttenant"></a>(Multitenant only) Mount the tenant.
+
+    Use the [Mount-NAVTenant cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
+
+    ```
+    Mount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID> -DatabaseName <tenantdatabasename>
+    ``` 
+
+14.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
 
         For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md). 
 
-        <!--> 
 
-12. <!-- for multitenancy, I had to do this before I could mount and sync tenant-->Recompile and install the V2 extensions that you uninstalled previously.
+15.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
-    1.  Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to compile the published extensions to make sure they are work with the new platform.
+    For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
 
-        For example, you can run the following command to recompile all extensions:
-
-        ```
-        Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
-        ```
-    2.  For each V2 extension, run the following command to install it:
-
-        ```
-        Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> 
-        ```
-        
-
-13.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
-
-14. If you converted a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database, configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)].
+16. If you converted a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database, configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)].
 
     The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable in [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] After an Upgrade](upgrade-pages-report-for-search.md).
 
-15. Upload the customer license to the converted database.  
+17. Upload the customer license to the converted database.  
 
     For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
 
-    You have now completed the conversion of the database to be accessed from [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]. To test the converted database, you can connect it to the [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.  
+You have now completed the conversion of the database to be accessed from [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]. To test the converted database, you can connect it to the [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.  
 
 ## Database and Windows collations  
 Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](http://go.microsoft.com/fwlink/?LinkID=247971).  
