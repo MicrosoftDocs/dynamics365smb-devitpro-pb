@@ -17,7 +17,7 @@ author: jswymer
 
 |Step|Description| More info |
 |----|-----------|--|
-||Convert V1 extensions to V2 extensions.|[...](converting-a-databse.mdconvertv1extensions)|
+||Convert V1 extensions to V2 extensions.|[See...](converting-a-databse.md#convertv1extensions)|
 ||Backup the database.||
 ||Uninstall all extensions.||
 ||Ensure all objects are complied, unlocked, and the tenent is in sync.||
