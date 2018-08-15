@@ -37,9 +37,7 @@ String := ENCRYPT(Str)
  The output string that is encrypted.  
 
 ## Exceptions  
- If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.  
-
-## Remarks  
+ If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.   
 
 ## Example  
  The code example requires that you create the following text constant in the **C/AL Globals** window.  

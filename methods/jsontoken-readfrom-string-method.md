@@ -1,0 +1,61 @@
+---
+title: "ReadFrom Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 07/27/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+# ReadFrom Method
+Reads the JSON data from the string into a JsonToken variable.
+
+## Syntax
+```
+[Ok := ]  JsonToken.ReadFrom(Data: String)
+```
+## Parameters
+*JsonToken*  
+&emsp;Type: [JsonToken](jsontoken-data-type.md)  
+An instance of the [JsonToken](jsontoken-data-type.md) data type.  
+*Data*  
+&emsp;Type: [String](string-data-type.md)  
+  
+
+
+## Return Value
+*Ok*  
+&emsp;Type: [Boolean](boolean-data-type.md)  
+**True** if the operation was successful; otherwise, **false**.  
+  
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+This method can fail if the JSON data is malformed..
+If the operation succeeds, the JsonToken will be disconnected from its current JSON tree and the data contained by the JsonToken will be replaced with the new value.
+To delete the contents in a JsonToken variable use the Clear function.
+
+```
+Clear(JsonToken)
+```
+
+## Example
+This example shows how to read JSON data from a string into a JsonToken variable.
+```
+local procedure ReadJson(data : Text) result : JsonToken;
+begin
+    result.ReadFrom(data);    
+end;
+```
+## See Also
+[JsonToken Data Type](jsontoken-data-type.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)
