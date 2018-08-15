@@ -1,5 +1,6 @@
 # [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
 ## [Frequently asked questions](faq.md)
+## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 <!--
 ## [Getting Started](Getting-Started.md)
 ## [Touring the RoleTailored Client for Developers](Touring-the-RoleTailored-Client-for-Developers.md)
@@ -366,6 +367,8 @@
 ### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 ### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ## [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
+## [Credential Types for Users](administration/Users-and-Credential-Types.md)
+<!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
 <!-- deployment-->
 # Security
@@ -381,6 +384,7 @@
 ## [Converting a Database](upgrade/Converting-a-Database.md)
 <!--## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)-->
 ## [Upgrading the Data](upgrade/Upgrading-the-Data.md)
+## [Technical Upgrade Quick Reference](technical-upgrade-checklist.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!--
@@ -411,8 +415,6 @@
 ## [Security Overview](Security-Overview.md)
 ## [Enhancing Microsoft Dynamics NAV Server Security](Enhancing-Microsoft-Dynamics-NAV-Server-Security.md)
 ## [Data Security](Data-Security.md)
-## [Configuring User Authentication](Configuring-Authentication.md)
-## [Business Areas and Functional Areas](Business-Areas-and-Functional-Areas.md)
 # [Upgrading to Microsoft Dynamics NAV 2018](Upgrading-to-Microsoft-Dynamics-NAV.md)
 ## [Upgrade Considerations](Upgrade-Considerations.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)
