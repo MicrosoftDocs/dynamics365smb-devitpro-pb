@@ -111,6 +111,10 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
     Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
 
+    ```
+    Dismount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID>
+    ```
+
 11.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
 
     You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)].
@@ -170,15 +174,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 5.  When you are notified that the conversion was successful, choose the **OK** button.
 
-6.  <a name="controladdins"></a>If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)] <!--or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] computers-->.  
-
-    <!-- 
-     For the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], the default path is [!INCLUDE[prodx86installpath](../developer/includes/prodinstallpath.md)]\\RoleTailored Client\\Add-ins folder.
-     -->  
+6.  <a name="controladdins"></a>If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)].   
 
      For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Add-ins folder.
 
-7.  <!-- for multitenant, you have to configure the server for multitenancy first. Howvever, i ran the admin tool and the tenant automatically tried to mount. it failed. I could not sync. The only way was to dismount-navtenant using applicationdatabasename--><a name="connectserver"></a>Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database. 
+7.  <a name="connectserver"></a>Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database. 
 
     Use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
 
@@ -239,11 +239,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 14.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
 
-    For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md). 
+        For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md). 
 
 15.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
-    For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
+        For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
 
 16. If you converted a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database, configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)].
 
