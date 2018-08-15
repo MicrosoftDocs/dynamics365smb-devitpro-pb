@@ -20,8 +20,8 @@ author: jswymer
 ||Convert V1 extensions to V2 extensions.|[See...](converting-a-database.md#convertv1extensions)|
 ||Backup the database.|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)|
 ||Uninstall all extensions.|[See...](converting-a-database.md#uninstallextensions)|
-||Ensure all objects are complied, unlocked, and the tenent is in sync.||
-||Upload [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] license.||
+||Ensure all objects are complied, unlocked, and the tenent is in sync.|[See...](converting-a-database.md#compilesync)|
+||Upload [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)]license.|[See...](converting-a-database.md#uploadlicense)|
 ||Clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in SQL Server.|[See...](converting-a-database.md#clearsql)|
 
 

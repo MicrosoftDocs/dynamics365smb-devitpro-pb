@@ -79,7 +79,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
     ```  
 
-2.  Open the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->database.  
+2.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->database.  
 
      For more information, see [How to: Open Databases](How-to--Open-Databases.md).  
 
@@ -93,18 +93,19 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 5.  If any errors occur, they are shown in the **Error List** window. Make sure that you address all compilation errors before you continue.  
 
-6.  Upload the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Partner license to the database.  
+
+6.  Run the schema synchronization with validation to synchronize the database schema changes.  
+
+    For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).
+
+    <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?>
+
+7.  <a name="uploadlicense"></a>Upload the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Partner license to the database.  
 
      For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
 
     > [!IMPORTANT]  
     >  The license that you upload must be a developer license. During the conversion, the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] will convert the report objects that are stored in the old database to the RDL format.  
-
-7.  Run the schema synchronization with validation to synchronize the database schema changes.  
-
-    For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).
-
-    <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?>
 
 
 8.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
@@ -117,7 +118,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
     ```
     Set-NAVServerInstance –ServerInstance <ServerInstanceName> -Stop
     ```
-9. Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old database in SQL Server.  
+9. <a name="clearsql"></a>Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old database in SQL Server.  
 
     Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
 
