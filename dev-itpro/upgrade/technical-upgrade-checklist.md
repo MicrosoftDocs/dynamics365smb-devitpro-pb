@@ -19,10 +19,10 @@ author: jswymer
 |----|-----------|--|
 ||Convert V1 extensions to V2 extensions.|[See...](converting-a-database.md#convertv1extensions)|
 ||Backup the database.|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)|
-||Uninstall all extensions.|(converting-a-database.md#uninstallextensions)|
+||Uninstall all extensions.|[See...](converting-a-database.md#uninstallextensions)|
 ||Ensure all objects are complied, unlocked, and the tenent is in sync.||
 ||Upload [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] license.||
-||Clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in SQL Server.||
+||Clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in SQL Server.|[See...](converting-a-database.md#clearsql)|
 
 
 ## Run the technical upgrade
@@ -34,9 +34,9 @@ author: jswymer
 ||Open and convert the application database using [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md).||
 ||Connect[!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to the application database and compile all objects.||
 ||Fix errors.||
-||(Multitenant only) Repair extensions.||
-||(Multitenant only) Mount the tenant database. ||
-||Synchronize tenant database (tables). ||
+||Repair extensions (multitenant only) .||
+|| Mount the tenant database (multitenant only). ||
+||Synchronize tenant database tables. ||
 
 
 ## See Also  
