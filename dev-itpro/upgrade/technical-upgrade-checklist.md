@@ -21,6 +21,7 @@ author: jswymer
 |(Single tenant only) Uninstall all extensions.|[See...](converting-a-database.md#uninstallextensions)||
 |Ensure all objects are complied, unlocked, and tables are synchronized.|[See...](converting-a-database.md#compilesync)||
 |Upload [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] license.|[See...](converting-a-database.md#uploadlicense)||
+|Dismount tenant|[See...](converting-a-database.md#dismounttenant)||
 |Clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in SQL Server.|[See...](converting-a-database.md#clearsql)||
 
 

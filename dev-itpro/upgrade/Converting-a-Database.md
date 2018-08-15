@@ -107,7 +107,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
     > [!IMPORTANT]  
     >  The license that you upload must be a developer license. During the conversion, the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] will convert the report objects that are stored in the old database to the RDL format.  
 
-10. (Multitenant only) Dismount tenants.
+10. <a name="dismounttenant"></a>(Multitenant only) Dismount tenants.
 
     Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
 
@@ -147,11 +147,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 2. Install [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].  
 
-     Run the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup, and install the following components as a minimum:
-     -  Server
-     -  SQL Server Database Components
-     -  Administration Tool
-     -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)
+    Run the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup, and install the following components as a minimum:
+    -  Server
+    -  SQL Server Database Components
+    -  Administration Tool
+    -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)
 
     > [!IMPORTANT]  
     > For a multitenant installation, configure the [!INCLUDE[server](../developer/includes/server.md)] instance to be a multitenant instance.
@@ -178,7 +178,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
      For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Add-ins folder.
 
-7.  <!-- for multitenant, you have to configure the server for multitenancy first. Howvever, i ran the admin tool and the tenant automatically tried to mount. it failed. I could not sync. The only way was to dismount-navtenant using applicationdatabasename--><a name="connectserver"></a>Connect a [!INCLUDE[server.md](../developer/includes/server.md)] instance to the converted database. 
+7.  <!-- for multitenant, you have to configure the server for multitenancy first. Howvever, i ran the admin tool and the tenant automatically tried to mount. it failed. I could not sync. The only way was to dismount-navtenant using applicationdatabasename--><a name="connectserver"></a>Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database. 
 
     Use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
 
@@ -239,8 +239,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 14.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
 
-        For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md). 
-
+    For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md). 
 
 15.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
@@ -254,7 +253,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
     For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
 
-You have now completed the conversion of the database to be accessed from [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]. To test the converted database, you can connect it to the [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.  
+    You have now completed the conversion of the database to be accessed from [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]. To test the converted database, you can connect it to the [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.  
 
 ## Database and Windows collations  
 Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](http://go.microsoft.com/fwlink/?LinkID=247971).  
