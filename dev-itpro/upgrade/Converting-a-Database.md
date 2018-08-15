@@ -126,6 +126,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 10.  (Optional) Before you start the following procedure, you can uninstall the old version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]. When you uninstall [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], the database is still attached to the instance of SQL Server, which you can verify using SQL Server Management Studio.
 
+<!-- for multitenancy, should you dismount tenants here?-->
 ## Task 3: Converting the Old Database  
 Next, you will convert the old database so that it can be used with [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].
 
@@ -168,7 +169,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
      For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Add-ins folder.
 
-7.  Connect a [!INCLUDE[server.md](../developer/includes/server.md)] instance to the converted database. 
+7.  <!-- for multitenant, you have to configure the server for multitenancy first-->Connect a [!INCLUDE[server.md](../developer/includes/server.md)] instance to the converted database. 
 
     Use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
 

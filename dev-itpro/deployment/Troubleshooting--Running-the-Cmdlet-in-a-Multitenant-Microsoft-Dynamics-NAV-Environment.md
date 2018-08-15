@@ -12,7 +12,7 @@ caps.latest.revision: 2
 manager: edupont
 ---
 # Troubleshooting: Running the Cmdlet in a Multitenant Microsoft Dynamics NAV Environment
-Only one tenant can be automatically configured at a time, so the [!INCLUDE[navnow](includes/navnow_md.md)] tenant name needs to be provided as the NavTenant parameter to the `Set-NavSingleSignOnWithOffice365` cmdlet.  
+Only one tenant can be automatically configured at a time, so the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant name needs to be provided as the NavTenant parameter to the `Set-NavSingleSignOnWithOffice365` cmdlet.  
   
 ## See Also  
  [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md)   
