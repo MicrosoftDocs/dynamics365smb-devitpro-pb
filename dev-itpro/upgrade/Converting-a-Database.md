@@ -12,6 +12,8 @@ author: jswymer
 ---
 # Converting a Database to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] - Technical Upgrade
 
+[See print-friendly quick reference](technical-upgrade-checklist.md)
+
 This article describes how to convert a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database from one of the following versions to [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]:
 
 -   [!INCLUDE[nav7long](../developer/includes/nav7long_md.md)]
@@ -22,8 +24,6 @@ This article describes how to convert a [!INCLUDE[navnow](../developer/includes/
 -   Dynamics NAV 2018 
 
 This article can also be used to update you current [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database to the latest cumulative update. 
-
-[See print-friendly quick reference](technical-upgrade-checklist.md)
 
 ## About database conversion
 Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
