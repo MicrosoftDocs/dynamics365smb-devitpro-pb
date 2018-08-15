@@ -15,7 +15,7 @@ author: jswymer
 
 ## Prepare the old application database
 
-|Step|Description| More info |
+|Done|Description| More info |
 |----|-----------|--|
 ||Convert V1 extensions to V2 extensions.|[See...](converting-a-databse.md#convertv1extensions)|
 ||Backup the database.||
@@ -27,7 +27,7 @@ author: jswymer
 
 ## Run the technical upgrade
 
-|Step|Description| More info |
+|Done|Description| More info |
 |----|-----------|--|
 ||(Azure SQL Database only) Add your user account to the **dbmanager** database role on the master database.||
 ||Install [!INCLUDEprodshort_md](../developer/includes/prodshort.md)] (Server, SQL Database Components, [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] minimum).||
