@@ -23,7 +23,7 @@ This article describes how to convert a [!INCLUDE[navnow](../developer/includes/
 
 This article can also be used to update you current [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database to the latest cumulative update. 
 
-[See quick reference](technical-upgrade-checklist.md)
+[See print-friendly quick reference](technical-upgrade-checklist.md)
 
 ## About database conversion
 Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
@@ -38,7 +38,7 @@ Converting a database does not upgrade the application objects (like pages, repo
 -->
 
 
-## Task 1: Convert V1 Extensions to V2 extensions
+## <a name="convertv1extensions"></a>Task 1: Convert V1 Extensions to V2 extensions
 [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
 
 ## Task 2: Preparing the Old Database  
