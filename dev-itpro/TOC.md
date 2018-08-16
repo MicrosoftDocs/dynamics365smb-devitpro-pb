@@ -384,7 +384,7 @@
 ## [Converting a Database](upgrade/Converting-a-Database.md)
 ## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
 ## [Upgrading the Data](upgrade/Upgrading-the-Data.md)
-## [Technical Upgrade Quick Reference](technical-upgrade-checklist.md)
+### [Technical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!--
