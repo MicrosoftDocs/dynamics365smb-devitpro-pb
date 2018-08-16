@@ -16,12 +16,31 @@ author: SusanneWindfeldPedersen
 
 # MaximumHeight Property
 
-Specifies the maximum height that the control add-in can be stretched to. This setting only applies if the [VerticalStretch](devenv-verticalstretch-property.md) setting is specified.
+Specifies the maximum size in pixels to which the control add-in can dynamically increase its height.
+
+## Applies to
+- Control add-in objects
   
 ## Value Type 
   
 -   Integer 
-  
+
+## Property Values
+The default is the integer’s maximum value. If [VerticalStretch](devenv-verticalstretch-property.md) is **true** but MaximumHeight is not set, the control add-in can expand indefinitely.
+
+## Dependent Property
+This setting only applies of [VerticalStretch](devenv-verticalstretch-property.md) is set to **true**.
+
+## Remarks
+Use this property when the visual content of the add-in is no longer usable or no longer visually appealing beyond a certain size.
+
+## Code Example
+```
+RequestedHeight = 300;
+VerticalStretch = true;
+MaximumHeight = 500;
+```
+
 
 ## See Also  
 [Control Add-In Object](../devenv-control-addin-object.md)   
