@@ -13,7 +13,7 @@ ms.prod: "dynamics-nav-2018"
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodslong.md)]
 
 
-This topic provides an overview of how to upgrade to [!INCLUDE[prodshort](../developer/includes/prodshortd.md)]. The upgrade process depends on different factors, such as the version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)] that you are upgrading from, and the degree to which your solution differs from the standard version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)]. The mains tasks range from converting the database to upgrading application code and data.
+This topic provides an overview of how to upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The upgrade process depends on different factors, such as the version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)] that you are upgrading from, and the degree to which your solution differs from the standard version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)]. The mains tasks range from converting the database to upgrading application code and data.
 
 Use the following table to determine the procedures that you must complete for your upgrade scenario.
 
