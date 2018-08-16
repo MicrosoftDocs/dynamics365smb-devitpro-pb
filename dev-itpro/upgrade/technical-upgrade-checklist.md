@@ -31,7 +31,7 @@ This article provides an overview of the technical upgrade process for Business 
 
 |Step|More info| Done |
 |----|-----------|--|
-|Install [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] (Server, SQL Database Components, [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] minimum)].||
+|Install [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] (Server, SQL Database Components, [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] minimum).||
 |Open and convert the application database using [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].|[See...](converting-a-database.md#convertdb)||
 |Add custom control add-ins to the server instance.|[See...](converting-a-database.md#controladdins)||
 |Connect [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to the application database and compile all objects. **Important:** Choose to synchronize schema later)|[See...](converting-a-database.md#connectserver)||
