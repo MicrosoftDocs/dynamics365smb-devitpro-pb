@@ -380,9 +380,9 @@
 ## [Configuring the Help Experience](deployment/configure-help.md)
 <!-- end deployment -->
 <!-- upgrade -->
-# Upgrade
+# [Upgrade](upgrade/upgrading-to-business-central.md)
 ## [Converting a Database](upgrade/Converting-a-Database.md)
-<!--## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)-->
+## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
 ## [Upgrading the Data](upgrade/Upgrading-the-Data.md)
 ## [Technical Upgrade Quick Reference](technical-upgrade-checklist.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
