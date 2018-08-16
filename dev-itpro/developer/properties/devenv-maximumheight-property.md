@@ -29,7 +29,7 @@ Specifies the maximum size in pixels to which the control add-in can dynamically
 The default is the integer’s maximum value. If [VerticalStretch](devenv-verticalstretch-property.md) is **true** but MaximumHeight is not set, the control add-in can expand indefinitely.
 
 ## Dependent Property
-This setting only applies of [VerticalStretch](devenv-verticalstretch-property.md) is set to **true**.
+This setting only applies if [VerticalStretch](devenv-verticalstretch-property.md) is set to **true**.
 
 ## Remarks
 Use this property when the visual content of the add-in is no longer usable or no longer visually appealing beyond a certain size.

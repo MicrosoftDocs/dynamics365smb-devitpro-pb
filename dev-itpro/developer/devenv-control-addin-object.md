@@ -16,7 +16,7 @@ caps.latest.revision: 18
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
-The control add-in object allows you to add custom functionality to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A control add-in is a custom control, or visual element, for displaying and modifying data on within an iframe or a page. For example, a control add-in can display the content of a webpage, visualize data as a chart or on a map, or host a custom web application. Control add-ins can exchange data with the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] server on various data types and can respond to user interaction to raise events that execute additional AL code.
+The control add-in object allows you to add custom functionality to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A control add-in is a custom control, or visual element, for displaying and modifying data within an iframe or a page. For example, a control add-in can display the content of a webpage, visualize data as a chart or on a map, or host a custom web application. Control add-ins can exchange data with the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] server on various data types and can respond to user interaction to raise events that execute additional AL code.
 
 ## Control add-in properties
 In the control add-in definition, you must set the `Scripts` property to include scripts in the control add-in. The scripts could be local files in the package or references to external files using the HTTP or the HTTPS protocol. With the `StartupScript` property, you can call a special script that runs when the page you have implemented the control add-in on, is loaded. These settings initialize the control add-in. With the `Images` and `StyleSheet` properties, you can specify additional styling to the control add-in. For more information about some of the control add-in properties, see:
@@ -34,7 +34,7 @@ In the control add-in definition, you must set the `Scripts` property to include
 -->
 
 ## Sizing of the control add-in
-Control add-ins can either have fixed dimensions or dynamically adapt to the available space on the screen. By controlling the sizing of an add-in, you can ensure that the add-in and the surrounding content on the page remains optimal on smaller display targets such as the phone or when users resize the browser. The following properties are available for you to specify how the sizing of the control add-in should behave.
+Control add-ins can either have fixed dimensions or dynamically adapt to the available space on the screen. By controlling the sizing of an add-in, you can ensure that the add-in and the surrounding content on the page remain optimal on smaller display targets such as the phone or when users resize the browser. The following properties are available for you to specify how the sizing of the control add-in should behave.
 <!--To control that the sizing of the control add-in is always optimal, even on smaller display targets, such as the phone, some settings are available when you write the control add-in. The settings make sure that resizing of the control add-in works on all client types. The properties that allow you to obtain this are the following: 
 
 
@@ -73,7 +73,7 @@ Designing control add-ins that provide the best possible experience can require 
 - Respond to touch events so that mobile users or those on devices supporting touch input can also use the add-in.
 - Design content that is responsive and is able to flow, resize, or reorganize naturally based on the available space.
 - Consider the accessibility needs of users, for example by implementing keyboard access and support for screen readers.
-- Use the Style guidelines to apply a choice of colors, typefaces, and font sizes that match that of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Control Add-in Style Guide](devenv-control-addin-style.md)
+- Use the Style guidelines to apply a choice of colors, typefaces, and font sizes that match that of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Control Add-in Style Guide](devenv-control-addin-style.md).
 - Provide language translation and other localizations that match the current user language in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
 

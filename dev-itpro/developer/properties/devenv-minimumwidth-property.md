@@ -29,7 +29,7 @@ Specifies the minimum size in pixels to which the control add-in can dynamically
 The default is 0. If [HorizontalShrink](devenv-horizontalshrink-property.md) is **true** but MinimumWidth is 0, the control add-in can shrink to nothing.
 
 ## Dependent Property
-This setting only applies of [HorizontalShrink](devenv-horizontalshrink-property.md) is set to **true**.
+This setting only applies if [HorizontalShrink](devenv-horizontalshrink-property.md) is set to **true**.
 
 ## Remarks 
 Use this property when the visual content of the add-in is no longer usable below a certain size.

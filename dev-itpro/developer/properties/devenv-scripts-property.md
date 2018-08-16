@@ -25,7 +25,7 @@ Specifies the list of scripts used by the control add-in.
 A list of comma-separated strings that represent paths to script files. The default is blank, with no images being used by the control add-in. 
 
 ## Remarks 
-Although this property is optional, the control add-in must either specify the StartupScript property or specify one or more scripts. Scripts can be either external resources referenced using a URL or can be embedded within the extension. Embedded script files must be added to the extension project folder in Visual Studio Code and referenced using a relative path. For security and usability reasons, it is recommended to reference any external scripts by using the https protocol. Scripts are loaded immediately when the control add-in is initialized. 
+Although this property is optional, the control add-in must either specify the StartupScript property or specify one or more scripts. Scripts can be either external resources referenced using a URL or can be embedded within the extension. Embedded script files must be added to the extension project folder in Visual Studio Code and referenced using a relative path. For security and usability reasons, it is recommended to reference any external scripts by using the HTTPS protocol. Scripts are loaded immediately when the control add-in is initialized. 
 
 ## Example
 ```

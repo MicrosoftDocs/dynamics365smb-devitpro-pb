@@ -21,7 +21,7 @@ Specifies whether the control add-in can dynamically decrease its height. This s
 > Use this property when the visual content of the add-in is designed to remain usable when height is restricted.
 
 ## Applies to
-VerticalShrink is only supported when the control add-in is displayed in a CardPart on Role Center pages or when it is the only content displayed in a Card page.
+VerticalShrink is only supported when the control add-in is displayed on a CardPart on Role Center pages or when it is the only content displayed on a Card page.
   
 ## Property Values 
 **True** if the control add-in is allowed to shrink vertically. The default value is **false**. 
