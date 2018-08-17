@@ -1,5 +1,6 @@
 ---
 title: Features not implemented in on-premises deployments
+description: Some features work differently or not at all, depending on whether your Business Central solution is in the cloud or on-premises.
 author: edupont04
 manager: edupont
 ms.author: edupont
@@ -9,7 +10,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 ---
 # Features not implemented in on-premises deployments of [!INCLUDE[prodlong](includes/prodlong.md)]
 

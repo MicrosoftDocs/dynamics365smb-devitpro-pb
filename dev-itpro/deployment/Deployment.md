@@ -1,0 +1,51 @@
+---
+title: Deployment overview for Business Central
+description: Get an overview of your options for deploying Dynamics 365 Business Central
+ms.custom: na
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+manager: edupont
+ms.date: 08/17/2018
+---
+# Deployment of [!INCLUDE[prodlong](includes/prodlong.md)]
+
+The topics in the Deployment section are intended to help an administrator configure a [!INCLUDE[prodshort](includes/prodshort.md)] solution online or on-premises.  
+
+## When to choose on-premises deployment
+
+There can be many reasons to prefer to deploy [!INCLUDE[prodshort](includes/prodshort.md)] on-premises rather than using the cloud solution.  
+
+### Key Features of Setup for On-Premises Deployments  
+
+With [!INCLUDE[prodshort](includes/prodshort.md)] Setup, you can:  
+
+-   Install different components on different computers.  
+
+-   Choose from a selection of predefined installation options, or create your own custom list of components and options to install.  
+
+-   Preconfigure components before installation.  
+
+-   Create, save, or load Setup configuration files that capture your selection of components and configuration information.  
+
+ You use Setup to install software and to create custom deployments that you can distribute to different users across a company.  
+
+### Installation Notes  
+
+-   Before installing [!INCLUDE[prodshort](includes/prodshort.md)] components on a computer, you must remove \(uninstall\) any previous versions.  
+
+-   All components must be from the same version and build of [!INCLUDE[navnow](includes/navnow_md.md)] for the software to run correctly.  
+
+-   If you have either SQL Server 2000 or Microsoft SQL Server Desktop Engine \(MSDE\) installed on a computer where you want to install [!INCLUDE[navnow](includes/navnow_md.md)], then you must remove it before you begin installing. The presence of either of these database products causes a Setup error.  
+
+## Configuring the Help Experience
+
+Part of your configuration is to specify where to look up the Help for the solution. For on-premises deployments, you can choose to install the legacy Help Server, for example. For more information, see [Configuring the Help Experience](configure-help.md).  
+
+## See Also  
+
+[Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)
+<!-- [Product and Architecture Overview](Product-and-Architecture-Overview.md) -->  
+[System Requirements](system-requirement-business-central.md)  

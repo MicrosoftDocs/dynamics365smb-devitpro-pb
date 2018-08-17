@@ -343,7 +343,7 @@
 ## [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 <!-- end AL -->
 <!-- administration-->
-# Administration
+# Administration(administration/Administration.md)
 ## [Configuring Business Central Server](administration/configure-server-instance.md)
 ## Monitoring Business Central Server
 ### [Monitoring Performance Counters](administration/performance-counters.md)
@@ -375,7 +375,7 @@
 ## [Data Security](security/data-security.md)
 ## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
 
-# Deployment
+# Deployment (deployment/deployment.md)
 ## [System requirements](deployment/system-requirement-business-central.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
 <!-- end deployment -->
