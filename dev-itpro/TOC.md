@@ -3,9 +3,10 @@
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 <!-- deployment-->
 # Deployment (deployment/deployment.md)
-## [System requirements](deployment/system-requirement-business-central.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
 ## On-Premise
+## [System requirements](deployment/system-requirement-business-central.md)
+## [Components and Topology](deployment/product-and-architecture-overview.md)
 <!-- end deployment -->
 <!--
 ## [Getting Started](Getting-Started.md)
