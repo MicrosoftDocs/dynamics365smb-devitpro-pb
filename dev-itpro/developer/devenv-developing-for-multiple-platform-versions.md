@@ -25,11 +25,6 @@ To set the platform version, add the **runtime** property in the `app.json` file
 
 <!-- For more information about bound actions, see [Bound Actions]().   -->
 
-<!-- In the runtime property, the **Latest** value is the default value. When you set the **Latest** as the `runtime` property value, you enable the newest available platform  version by default. For example, in the following image, the **Latest** runtime value represents the **2.0 Business Central Fall 2018** version. 
-
-![Runtime Property](media/runtime.png)
--->
-
 > [!NOTE]  
 > AL Language extension is not compatible with [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] version backwards. For [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] development, the traditional method should be used. You must install the Visual Studio Code extension from the `ALLanguage.vsix` file shipped on the DVD. 
 
@@ -49,8 +44,7 @@ Set the extension runtime version lower than the platform version. When you set 
     ```
 2. When you lower the extension runtime version, you may get warnings about the newest features not supported by the earlier versions of the platform.
 
-3. A best-effort compilation is made when you publish an extension complied with a lower runtime version
-. This is allowed in order to avoid recompilation of the extension packages every time you upgrade the platform. 
+3. A best-effort compilation is made when you publish an extension complied with a lower runtime version. This is allowed in order to avoid recompilation of the extension packages every time you upgrade the platform. 
 
 ## See Also
 [Debugging in AL](devenv-debugging.md)  
