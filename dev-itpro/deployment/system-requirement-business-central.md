@@ -81,7 +81,7 @@ The following sections list the minimum hardware and software requirements to in
 
 
 ## Server Components
-###  <a name="NavServerReqs"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)]Server Requirements  
+###  <a name="NavServerReqs"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Requirements  
  The following table shows the minimum system requirements for [!INCLUDE[server](../developer/includes/server.md)].  
 
 |||  
