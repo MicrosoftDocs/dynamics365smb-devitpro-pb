@@ -126,17 +126,17 @@ To export the application tables from an existing database to another database, 
     Set-NAVServerConfiguration –ServerInstance <server instance name> –element appSettings –KeyName 'DatabaseName' –KeyValue ''
     
     ```
-6. Restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance by using the [Start-NAVServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navserverinstance) cmdlet: 
+7. Restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance by using the [Start-NAVServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navserverinstance) cmdlet: 
 
     ```
     Start-NAVServerInstance –ServerInstance <server instance name>
     ```
-7. Mount the application database on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance by using the [Mount-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication) cmdlet:
+8. Mount the application database on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance by using the [Mount-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication) cmdlet:
 
     ```
     Mount-NAVApplication –ServerInstance <server instance name> –DatabaseServer <server name\instance name> –DatabaseName <application database name>
     ```
-8.  Mount the business data database on the server instance by using the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet: 
+9.  Mount the business data database on the server instance by using the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet: 
 
     ```
     Mount-NAVTenant –ServerInstance <server instance name> -Id <tenant name> –DatabaseServer <server name\instance name> -DatabaseName <business data database> -OverwriteTenantIdInDatabase  
