@@ -56,7 +56,7 @@ The following sections list the minimum hardware and software requirements to in
 
 |||  
 |-|-|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(32-bit and 64-bit editions\).<br />**Important:** Windows 10 S is not supported.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li><li>Windows Server 2012 Standard or Essentials \(64-bit edition\).</li></ul>|  
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(32-bit and 64-bit editions\).<br />**Important:** Windows 10 S is not supported.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>|  
 |Hardware resources|<ul><li>Hard disk space: 200 MB.</li><li>Memory: 1 GB.</li></ul>|  
 |Reports|<ul><li>For editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016 or Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul><li>For editing Word layouts:<ul><li>Microsoft Word 2013 or later</li></ul></ul>|  
 |Instant messaging and Telephony API|<ul><li>Microsoft Lync 2013 or Microsoft Lync 2010.</li></ul>|  
@@ -73,7 +73,7 @@ The following sections list the minimum hardware and software requirements to in
 
 |||  
 |-|-|  
-|Supported operating systems|<ul><li> Windows 10 Pro, Enterprise, or Education \(32-bit and 64-bit editions\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li><li>Windows Server 2012 Standard or Essentials \(64-bit edition\).</li></ul>|  
+|Supported operating systems|<ul><li> Windows 10 Pro, Enterprise, or Education \(32-bit and 64-bit editions\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>|  
 |Hardware resources|<ul><li>Hard disk space: 200 MB.</li><li> Memory: 1 GB.</li></ul>|  
 |Reports|<ul><li>For creating and editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016, or</li><li>One of the following versions of Visual Studio:<ul><li>Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li><li>Visual Studio 2015 Professional or Enterprise edition with SQL Server Data Tools installed.<br />**Important:**  Before you install Visual Studio 2015, install Microsoft .NET Framework 4.7; otherwise, an error will occur when you compile or run RDLC reports. For more information, see [Report error "Visual Basic Command Line Compiler has stopped working"](http://go.microsoft.com/fwlink/?LinkID=722862).</li></ul></li></ul></ul><ul><li>For upgrading reports:<ul><li>Report Builder for SQL Server 2016</li></ul><li>For creating Word report layouts:<ul><li>Word 2013 or later</li></ul></li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li></ul>|  
@@ -86,7 +86,7 @@ The following sections list the minimum hardware and software requirements to in
 
 |||  
 |-|-|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li><li>Windows Server 2012 Standard or Essentials \(64-bit edition\).|  
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>.|  
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>Memory: 2 GB.|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Framework.<br />     For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](system-requirements-for-business-central.md#CRM).|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li><li>Windows PowerShell 3.0.|  
@@ -96,7 +96,7 @@ The following sections list the minimum hardware and software requirements to in
 
 |||  
 |-|-|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li><li>Windows Server 2012 Standard or Essentials \(64-bit edition\).|  
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>.|  
 |Web server|<ul><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0.|   
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li><li>Windows PowerShell 3.0.|  
 |Additional information|<ul><li>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup installs the following software if it is not already present on the target computer.<ul><li>Microsoft .NET Core 1.0 Windows Server Hosting. This is installed by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup if not already present.</li><li>Microsoft .NET Framework 4.7.</li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0, depending in the operating system, with the required features enabled.</li></ul></li><li>For more information about installing IIS, see [How to: Install Internet Information Services for Microsoft Dynamics NAV Web Client](/dynamics-nav/how-to--install-and-configure-internet-information-services-for-microsoft-dynamics-nav-web-client) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].</li></ul>|  
@@ -106,22 +106,22 @@ The following sections list the minimum hardware and software requirements to in
 
 |||  
 |-|-|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li><li>Windows Server 2012 Standard or Essentials \(64-bit edition\). |  
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul> |  
 |Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server 2016](http://go.microsoft.com/fwlink/?LinkId=622999). From this page, you can also access requirements for other versions of SQL Server.|  
 |SQL Server|<ul><li>Microsoft SQL Server 2017 Express, Standard or Enterprise.</li> <li>Microsoft SQL Server 2016 Express, Standard or Enterprise.</li><li>Microsoft SQL Server 2014 Express, Standard or Enterprise.</li><li>Azure SQL Database V12 Standard and Premium service tiers.<br /><br />|  
 |Service Packs and Cumulative Updates| Unless explicitly stated, all released Service Packs and Cumulative Updates of the above Microsoft SQL Server versions are supported. It is recommended to always be on the latest released Service Pack and Cumulative Update.|
 |Additional information|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup installs the following software if it is not already present on the target computer:<ul><li>SQL Server 2016 Express \(64-bit edition\).<br>If the operating system on the target computer does not support SQL Server 2016 Express, Setup displays a pre-requisite warning. In this case you should exit Setup and then update the operating system on the computer to one that does support SQL Server 2016 Express. Then run Setup again.</li></ul>|  
 
-###  <a name="HelpServer"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)]Help Server Requirements  
+###  <a name="HelpServer"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server.  
 
 |||  
 |-|-|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit editions\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012.</li><li>Windows Server 2012 Essentials.</li></ul>|  
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit editions\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>|  
 |Hardware resource|<ul><li>Hard disk space: 500 MB.</li><li>Memory: 2 GB.</li></ul>|  
 |Web server|<ul><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0.</li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li></ul>|  
-|Additional information|<ul><li>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup installs the following software if it is not already present on the target computer.<ul><li>Microsoft .NET Framework 4.7.</li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0. depending on the operating system, with the required features enabled.</li></ul></li><li>Windows Search must be enabled on the computer that you install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server on. If you install on Windows Server 2012, and Windows Search is not enabled as a file service, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup adds the service. However, the changes do not take effect until the computer has restarted.</li></ul>|  
+|Additional information|<ul><li>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup installs the following software if it is not already present on the target computer.<ul><li>Microsoft .NET Framework 4.7.</li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0. depending on the operating system, with the required features enabled.</li></ul></li><li>Windows Search must be enabled on the computer that you install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server on. If you install on Windows Server 2012 R2, and Windows Search is not enabled as a file service, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup adds the service. However, the changes do not take effect until the computer has restarted.</li></ul>|  
 
 ## Additional Components and Features
 ###  <a name="ADCS"></a> Automated Data Capture System Requirements  
@@ -165,11 +165,14 @@ The following table shows the minimum system requirements for the [!INCLUDE[navn
 
 |||  
 |-|-|  
-|Supported operating systems|<ul><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Datacenter \(64-bit edition\).</li><li>Windows Server 2012 Standard or Datacenter \(64-bit edition\).</li></ul>|  
+|Supported operating systems|<ul><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Datacenter \(64-bit edition\).</li></ul>|  
 |Additional software|<ul><li>SharePoint 2013 Service Pack 1.</li><li>SharePoint Online.</li></ul>|  
 
+<!--
 ###  <a name="Azure"></a> Automated Deployment on Microsoft Azure Requirements  
- Automated deployment of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Microsoft Azure by using the [!INCLUDE[nav_prov_short](../developer/includes/nav_prov_short_md.md)] is only supported on Azure virtual machines that are running Windows Server 2012. For additional requirements for specific [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components, refer to the other sections in this topic.  
+ Automated deployment of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Microsoft Azure by using the [!INCLUDE[nav_prov_short](../developer/includes/nav_prov_short_md.md)] is only supported on Azure virtual machines that are running Windows Server 2012. For additional requirements for specific [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components, refer to the other sections in this topic. 
+
+--> 
 
 ## See Also
 [Welcome to the Developer and IT-Pro Help for Business Central](./index.md)  
