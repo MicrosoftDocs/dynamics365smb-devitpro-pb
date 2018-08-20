@@ -47,7 +47,7 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[a
   
 1.  Open the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance in a text editor, such as Notepad.  
   
-     By default, the file is located in the [!INCLUDE[navnow_install](../developer/includes/navnow_install_md.md)]\\Service folder or [!INCLUDE[navnow_install](../developer/includes/navnow_install_md.md)]\\Service\\Instances\\\<instancename> folder \(for multitenant installations\).  
+     By default, the file is located in the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service folder or [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Instances\\\<instancename> folder \(for multitenant installations\).  
   
 2.  Set the **TraceLevel** setting to **Critical**, **Error**, **Warning**, **Normal** (this corresponds to the **Information** level), **Verbose**, or **Off**.  
   

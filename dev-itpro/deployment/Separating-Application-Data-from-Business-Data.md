@@ -164,7 +164,6 @@ In the example, the commands stop the [!INCLUDE[nav_server](../developer/include
 >  For an example of how you can automate the process of transferring user accounts from the original database to the new application database, see the HowTo-ExportNAVApplicationDatabase.ps1 sample script. This and other sample scripts are in the **…\\Windows PowerShell\\Upgrade\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. The ExportNAVApplicationDatabase.ps1 sample script can be run in the context of the NAVUpgradeSamples.psm1 script module file. When you call a script such as this, it will export the application tables to a new application database and copy all accounts and SQL Server user roles to the application database. To only transfer the account that the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance uses, use the *–ServiceAccount* parameter for the **Export-NAVApplication** cmdlet. In the examples in this topic, this parameter has not been specified. As a result, the default account, NT AUTHORITY\\NETWORK SERVICE, is set up with the required user roles.  
 
 
-## See Also  
- [How to: Export the Application Tables to a Dedicated Database](How-to--Export-the-Application-Tables-to-a-Dedicated-Database.md)   
+## See Also    
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)
