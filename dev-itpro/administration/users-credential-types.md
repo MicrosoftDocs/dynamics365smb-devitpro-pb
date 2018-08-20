@@ -36,7 +36,7 @@ An on-premises deployment of [!INCLUDE[prodshort](../developer/includes/prodshor
 |**ExchangeIdentity and TaskScheduler**| For internal use only. Do not use.|
 
 > [!IMPORTANT]  
->  If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [Walkthrough: Configuring Web Services to Use SSL \(SOAP and OData\)](/dynamics-nav/Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData-.md) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] .  
+>  If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [Walkthrough: Configuring Web Services to Use SSL \(SOAP and OData\)](/dynamics-nav/Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData-.md) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 
 ### Configuring the Credential Type for Client and Server  
 For on-premises deployment, you must make sure that clients and [!INCLUDE[server](../developer/includes/server.md)] are configured to use the same credential type.  
@@ -48,17 +48,18 @@ When you change the credential type for a [!INCLUDE[server](../developer/include
 To edit the configuration for the [!INCLUDE[server](../developer/includes/server.md)] instance, you can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. In the [!INCLUDE[admintool](../developer/includes/admintool.md)], you configure the credential type in the **Credential Type** field on the **General** tab. Alternatively, you can edit the CustomSettings.config file. For more information, see [Configuring Business Central Server](configure-server-instance.md).  
 
 > [!IMPORTANT]  
->  When [!INCLUDE[server](../developer/includes/server.md)] services are deployed on Azure, you must configure them on Azure. For more information, see [How to: Open Microsoft Dynamics NAV Clients that Connect to Microsoft Dynamics NAV on Microsoft Azure](How-to--Open-Microsoft-Dynamics-NAV-Clients-that-Connect-to-Microsoft-Dynamics-NAV-on-Microsoft-Azure.md).  
+>  When [!INCLUDE[server](../developer/includes/server.md)] services are deployed on Azure but not as part of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you must configure them on Azure. For more information, see [How to: Open Microsoft Dynamics NAV Clients that Connect to Microsoft Dynamics NAV on Microsoft Azure](/dynamics-nav/How-to--Open-Microsoft-Dynamics-NAV-Clients-that-Connect-to-Microsoft-Dynamics-NAV-on-Microsoft-Azure) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 
 #### Client Configuration
 
 In the relevant configuration file, find the **ClientServicesCredentialType** parameter and change the value to one of the options listed earlier.  
 
-For the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] users, you must modify the [!INCLUDE[web_server_settings_file_md](../developer/includes/web_server_settings_file_md.md)] for the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)]. For information, see [Configuring Microsoft Dynamics NAV Web Client by Modifying the Web.config File](Configuring-Microsoft-Dynamics-NAV-Web-Client-by-Modifying-the-Web.config-File.md).  
+For the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] users, you must modify the *navsettings.json* for the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)]. The navsettings.json file is a Java Script Object Notification file type that is similar to files that use the XML file format. The file is stored in the physical path of the web server instance, which is by default is *c:\inetpub\\wwwroot\\[!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)]*. For more information, see [Settings in the navsettings.json](/dynamics-nav/configuring-microsoft-dynamics-nav-web-client-by-modifying-the-web.config-file?branch=master#Settings) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 
-For each [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] user, you must modify the ClientUserSettings.config file. The default location for this file is **C:\\Users\\\<username>\\AppData\\Roaming\\Microsoft\\Microsoft Dynamics NAV\\100**, where *\<username>* is the name of the user.
+For each [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] user, you must modify the ClientUserSettings.config file. The default location for this file is **C:\\Users\\\<username>\\AppData\\Roaming\\Microsoft\\Microsoft Dynamics NAV\\130**, where *\<username>* is the name of the user. For more information, see [Configuring the Microsoft Dynamics NAV Windows Client](/dynamics-nav/configuring-the-windows-client)in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 
 ## See Also  
+
 [Understanding Users, Profiles, and Role Centers](/dynamics365/business-central/admin-users-profiles-roles)  
-[Configuring Business Central Server](configure-server-instance.md)   
+[Configuring Business Central Server](configure-server-instance.md)  
 <!--[Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)-->  

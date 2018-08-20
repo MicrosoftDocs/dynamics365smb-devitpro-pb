@@ -350,7 +350,7 @@
 ## [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 <!-- end AL -->
 <!-- administration-->
-# Administration(administration/Administration.md)
+# [Administration](administration/administration.md)
 ## [Authentication and Credential Types](administration/users-credential-types.md)
 ## [Configuring Business Central Server](administration/configure-server-instance.md)
 ## Monitoring Business Central Server
