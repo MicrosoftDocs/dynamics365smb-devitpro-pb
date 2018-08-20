@@ -350,6 +350,7 @@
 <!-- end AL -->
 <!-- administration-->
 # Administration(administration/Administration.md)
+## [Authentication and Credential Types](administration/users-credential-types.md)
 ## [Configuring Business Central Server](administration/configure-server-instance.md)
 ## Monitoring Business Central Server
 ### [Monitoring Performance Counters](administration/performance-counters.md)
@@ -373,7 +374,6 @@
 ### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 ### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ## [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
-## [Credential Types for Users](administration/Users-and-Credential-Types.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
 # Security
