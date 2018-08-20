@@ -6,6 +6,17 @@
 ## [System requirements](deployment/system-requirement-business-central.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
 ## On-Premise
+## [Embed App](deployment/embed-app-overview.md)
+### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)   
+### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+### [Components](deployment/embed-app-components.md)
+### [Platform](deployment/embed-app-platform.md)
+### [Licensing](deployment/embed-app-licensing.md)  
+### [Customer Sign-up](deployment/embed-app-customer-signup.md)  
+### [AppSource](deployment/embed-app-appsource.md)  
+### [Sandbox](deployment/embed-app-sandbox.md)  
+### [Ecosystem Features](deployment/embed-app-ecosystem.md)  
 <!-- end deployment -->
 <!--
 ## [Getting Started](Getting-Started.md)
@@ -158,18 +169,7 @@
 #### [VariableName Properties](VariableName-Properties.md)
 #### [Key Properties](Key-Properties.md)
 ### [Development Environment Commands](Development-Environment-Commands.md)-->
-# Deployment
-## [Embed App](deployment/embed-app-overview.md)
-### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)   
-### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-### [Components](deployment/embed-app-components.md)
-### [Platform](deployment/embed-app-platform.md)
-### [Licensing](deployment/embed-app-licensing.md)  
-### [Customer Sign-up](deployment/embed-app-customer-signup.md)  
-### [AppSource](deployment/embed-app-appsource.md)  
-### [Sandbox](deployment/embed-app-sandbox.md)  
-### [Ecosystem Features](deployment/embed-app-ecosystem.md)  
+
 # [Development in AL](developer/devenv-dev-overview.md)
 ## [Getting Started with AL](developer/devenv-get-started.md)
 ### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)  
