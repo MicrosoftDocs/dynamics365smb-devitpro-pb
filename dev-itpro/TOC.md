@@ -1,6 +1,12 @@
 # [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
 ## [Frequently asked questions](faq.md)
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
+<!-- deployment-->
+# Deployment (deployment/deployment.md)
+## [System requirements](deployment/system-requirement-business-central.md)
+## [Configuring the Help Experience](deployment/configure-help.md)
+## On-Premise
+<!-- end deployment -->
 <!--
 ## [Getting Started](Getting-Started.md)
 ## [Touring the RoleTailored Client for Developers](Touring-the-RoleTailored-Client-for-Developers.md)
@@ -382,15 +388,9 @@
 ## [Credential Types for Users](administration/Users-and-Credential-Types.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
-<!-- deployment-->
 # Security
 ## [Data Security](security/data-security.md)
 ## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
-
-# Deployment (deployment/deployment.md)
-## [System requirements](deployment/system-requirement-business-central.md)
-## [Configuring the Help Experience](deployment/configure-help.md)
-<!-- end deployment -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
 ## [Converting a Database](upgrade/Converting-a-Database.md)
