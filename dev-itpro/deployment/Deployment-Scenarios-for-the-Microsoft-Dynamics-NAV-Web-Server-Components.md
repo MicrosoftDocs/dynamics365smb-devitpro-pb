@@ -11,7 +11,7 @@ ms.prod: "dynamics-nav-2018"
 ms.assetid: ae4ef9f5-f1bd-4792-a232-f8cab454f3c5
 caps.latest.revision: 16
 ---
-# Deployment Scenarios for the Microsoft Dynamics NAV Web Server Components
+# Deployment Topologies
 This section describes how to install and configure the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)] in different network topologies.  
   
  ![NAV Web Client network architecture](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
