@@ -34,7 +34,7 @@ The following two elements are compared when you publish an extension.
 1. The runtime version of the extension defined in the app.json file.
 2. The runtime version of the platform that the extension is targeting.
 
-Set the extension runtime version lower than the platform version. When you set the extension to a higher runtime version, the extension package may contain certain features that the platform may not support which would result in an error. Therefore, you must lower the extension runtime version than the one that platform supports in order to publish your extension.
+In the app.json file, set the extension **runtime** version lower than the platform version. When you set the extension to a higher **runtime** version, the extension package may contain certain features that the platform may not support which would result in an error. Therefore, you must lower the extension runtime version than the one that platform supports in order to publish your extension.
 
 ### Things to be aware of
 1. An error will be thrown when you publish an extension with a higher runtime version than the one that platform supports. For example, if you set the runtime value to `2.0`, you get the following error message. 
@@ -44,7 +44,7 @@ Set the extension runtime version lower than the platform version. When you set 
     ```
 2. When you lower the extension runtime version, you may get warnings about the newest features not supported by the earlier versions of the platform.
 
-3. A best-effort compilation is made when you publish an extension complied with a lower runtime version. This is allowed in order to avoid recompilation of the extension packages every time you upgrade the platform. 
+3. A best-effort compilation is made when you publish an extension complied with a lower runtime version. This is allowed in order to avoid recompilation of the extension package every time you upgrade the platform. 
 
 ## See Also
 [Debugging in AL](devenv-debugging.md)  
