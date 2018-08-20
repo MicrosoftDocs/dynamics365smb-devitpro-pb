@@ -88,7 +88,7 @@ An Authorization request header is now added containing the Bearer token.
 ## Calling the API
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
 
-    ``` 
+```json
     {
         "@odata.context": "<endpoint>/$metadata#companies",
         "value": [
@@ -101,14 +101,13 @@ Each resource is uniquely identified through an ID, see the following example of
             }
         ]
     }
-    ```
-
+```
 
 The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis () after the API endpoint. For example, to GET the “CRONUS USA, Inc.” company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
 
 All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore, it is a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the “CRONUS USA, Inc.” company, we must call a GET on the URL `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`.
 
 ## See Also
-[Using Deltas With APIs](devenv-connect-apps-delta.md)  
+<!--[Using Deltas With APIs](devenv-connect-apps-delta.md)-->  
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
 [Tips for Working with APIs](devenv-connect-apps-tips.md)

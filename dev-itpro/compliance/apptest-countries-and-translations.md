@@ -37,6 +37,15 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |New Zealand|en-NZ|
 
 
+## Partner Supported Countries and Translations
+In countries, where Microsoft has not delivered a [localization](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization), partners can build localizations using translation and localization apps that are published in AppSource. You can apply for access to build a localization on top of the international (W1) version of Dynamics 365 Business Central. The following table provides the list of countries and translation supported through partners.
+
+|Country|Language Code|
+|-------|-------------|
+|South Africa|en-ZA|
+|South Korea|ko-KR|
+|United Arab Emirates|en-US|
+
 ## See Also
 [Rules and Guidelines for AL Code](apptest-overview.md)  
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
