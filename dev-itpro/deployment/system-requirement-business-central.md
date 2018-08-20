@@ -48,7 +48,7 @@ The following sections list the minimum hardware and software requirements to in
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 S, Home, Pro, Enterprise, or Education \(32-bit and 64-bit editions\).</li><li>Android 5.0 or higher (tablet and phone).</li><li> iOS 10.0 or higher (iPad and iPhone).</li></ul>|  
 |Additional hardware|<ul><li>1 GB RAM for Android and Windows.</li></ul>|  
-|Additional software|<ul><li>A third-party telephony or VoIP app such as Skype or Lync is required for placing calls from [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].</li><li>A third-party email program such as Outlook is required for sending emails from [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].</li><li>Microsoft Office 2013 SP1 or Microsoft Office 365 is required for sending data to Microsoft Excel or to Microsoft Word.</li></ul>|  
+|Additional software|<ul><li>A third-party telephony or VoIP app such as Skype or Lync is required for placing calls from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>A third-party email program such as Outlook is required for sending emails from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>Microsoft Office 2013 SP1 or Microsoft Office 365 is required for sending data to Microsoft Excel or to Microsoft Word.</li></ul>|  
 |Additional information|<ul><li>Device diagonal screen size 7” for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4” for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>|  
 
 ###  <a name="WinClient"></a> Dynamics NAV Client Requirements  
