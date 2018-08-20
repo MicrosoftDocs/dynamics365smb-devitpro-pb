@@ -116,12 +116,16 @@ To export the application tables from an existing database to another database, 
     |Demo Database NAV \(11-0\)|Business data database|Contains the data from the original database.|  
     |Business Central App|Application database|Contains the tables that define the application.|  
 
-
     <!--
     You must take additional steps to get the final business data database operational. For an example of how you can write a script that runs the cmdlet for creating an application database, see the **…\\Windows PowerShell\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. For an example of how to write individual commands in Windows PowerShell, see the **Example** section.
     
     -->  
-
+6. Clear the old database setting from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance configuration file by using the [Set-NAVServerConfiguration](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet: 
+    
+    ```
+    Set-NAVServerConfiguration –ServerInstance <server instance name> –element appSettings –KeyName 'DatabaseName' –KeyValue ''
+    
+    ```
 6. Restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance by using the [Start-NAVServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navserverinstance) cmdlet: 
 
     ```
