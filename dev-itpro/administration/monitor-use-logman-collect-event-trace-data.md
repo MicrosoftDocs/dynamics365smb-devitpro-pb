@@ -80,4 +80,4 @@ You can also use PerView. For more information, see [Use PerfView to View Event 
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   
  [Business Central Server Trace Events](server-trace-events.md)  
- [Instrumenting an Application for Telemetry](instrumenting-application-for-telemetry.md)  
+ [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md)  

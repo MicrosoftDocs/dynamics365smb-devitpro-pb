@@ -83,4 +83,4 @@ This topic describes how to use Windows Performance Monitor to collect event tra
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   
  [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md)  
- [Instrumenting an Application for Telemetry](instrumenting-application-for-telemetry.md)]
+ [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md)]
