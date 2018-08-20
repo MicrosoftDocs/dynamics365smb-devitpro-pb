@@ -10,17 +10,17 @@ ms.service: "dynamics365-business-central"
 manager: edupont
 ms.date: 08/17/2018
 ---
-# Deployment of [!INCLUDE[prodlong](includes/prodlong.md)]
+# Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-The topics in the Deployment section are intended to help an administrator configure a [!INCLUDE[prodshort](includes/prodshort.md)] solution online or on-premises.  
+The topics in the Deployment section are intended to help an administrator configure a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution online or on-premises.  
 
 ## When to choose on-premises deployment
 
-There can be many reasons to prefer to deploy [!INCLUDE[prodshort](includes/prodshort.md)] on-premises rather than using the cloud solution.  
+There can be many reasons to prefer to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises rather than using the cloud solution.  
 
 ### Key Features of Setup for On-Premises Deployments  
 
-With [!INCLUDE[prodshort](includes/prodshort.md)] Setup, you can:  
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup, you can:  
 
 -   Install different components on different computers.  
 
@@ -34,11 +34,11 @@ With [!INCLUDE[prodshort](includes/prodshort.md)] Setup, you can:
 
 ### Installation Notes  
 
--   Before installing [!INCLUDE[prodshort](includes/prodshort.md)] components on a computer, you must remove \(uninstall\) any previous versions.  
+-   Before installing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components on a computer, you must remove \(uninstall\) any previous versions.  
 
--   All components must be from the same version and build of [!INCLUDE[navnow](includes/navnow_md.md)] for the software to run correctly.  
+-   All components must be from the same version and build of [!INCLUDE[navnow](../developer/includes/navnow_md.md)] for the software to run correctly.  
 
--   If you have either SQL Server 2000 or Microsoft SQL Server Desktop Engine \(MSDE\) installed on a computer where you want to install [!INCLUDE[navnow](includes/navnow_md.md)], then you must remove it before you begin installing. The presence of either of these database products causes a Setup error.  
+-   If you have either SQL Server 2000 or Microsoft SQL Server Desktop Engine \(MSDE\) installed on a computer where you want to install [!INCLUDE[navnow](../developer/includes/navnow_md.md)], then you must remove it before you begin installing. The presence of either of these database products causes a Setup error.  
 
 ## Configuring the Help Experience
 
