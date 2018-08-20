@@ -20,7 +20,7 @@ Use [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup to 
 ## Three-Tier System Topology  
 To understand the components is useful to first look at the base topology of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deloyment, as illustrated in the following diagram:
 
-![Architecture overview](media/architecture-overview.png "Architecture overview")  
+![Architecture overview](../media/architecture-overview.png "Architecture overview")  
 
 Every deployment must include the core components: Web server, Server, and SQL Database. 
 
