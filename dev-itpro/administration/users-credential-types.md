@@ -15,7 +15,7 @@ ms.date: 08/20/2018
 ---
 # Authentication and Credential Types for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]  
 
-In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, users are added through the Office 365 Admin Center. Once users are created in Office 365, they can be imported into the **Users** window in [!INCLUDE[d365fin]((../developer/includes/d365fin_md.md)]. For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content.  
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, users are added through the Office 365 Admin Center. Once users are created in Office 365, they can be imported into the **Users** window in [!INCLUDE[prodshort]((../developer/includes/prodshort.md)]. For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content.  
 
 ## Configuring Authentication for On-Premises Deployments
 An on-premises deployment of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports several credential authorization mechanisms for users. When you create a user, you provide different information depending on the credential type that you are using in the current [!INCLUDE[server](../developer/includes/server.md)] instance.
