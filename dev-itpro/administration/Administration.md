@@ -11,20 +11,20 @@ manager: edupont
 ms.date: 08/17/2018
 ---
 # Working with Administration Tools
-[!INCLUDE[prodshort](includes/prodshort.md)] provides different tools for different administration tasks.  
+[!INCLUDE[prodshort](../developer/includes//prodshort.md)] provides different tools for different administration tasks.  
   
 <!--
 |To|See|  
 |--------|---------|  
-|Learn about the [!INCLUDE[nav_server](includes/nav_server_md.md)] Administration Tool, a Microsoft Management Console snap-in that you use to create and manage [!INCLUDE[nav_server](includes/nav_server_md.md)] instances.|[Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)|  
-|Perform administration tasks with the [!INCLUDE[navnow](includes/navnow_md.md)] Windows PowerShell cmdlets.|[Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)|    
-|Use the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] to manage licenses, databases, and companies.|[Administration in the Development Environment](Administration-in-the-Development-Environment.md)|  
-|Optimize performance when accessing [!INCLUDE[navnow](includes/navnow_md.md)] data from SQL Server.|[Optimizing SQL Server Performance with Microsoft Dynamics NAV](Optimizing-SQL-Server-Performance-with-Microsoft-Dynamics-NAV.md)|  
-|Monitor your [!INCLUDE[nav_server](includes/nav_server_md.md)] instances.|[Monitoring Microsoft Dynamics NAV Server](Monitoring-Microsoft-Dynamics-NAV-Server.md)|  
-|Connect [!INCLUDE[nav_windows](includes/nav_windows_md.md)] to [!INCLUDE[nav_server](includes/nav_server_md.md)] over a wide area network.|[Connecting the Microsoft Dynamics NAV Clients over a Wide Area Network](Connecting-the-Microsoft-Dynamics-NAV-Clients-over-a-Wide-Area-Network.md)|  
+|Learn about the [!INCLUDE[nav_server](../developer/includes//nav_server_md.md)] Administration Tool, a Microsoft Management Console snap-in that you use to create and manage [!INCLUDE[nav_server](../developer/includes//nav_server_md.md)] instances.|[Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)|  
+|Perform administration tasks with the [!INCLUDE[navnow](../developer/includes//navnow_md.md)] Windows PowerShell cmdlets.|[Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)|  
+|Use the [!INCLUDE[nav_dev_long](../developer/includes//nav_dev_long_md.md)] to manage licenses, databases, and companies.|[Administration in the Development Environment](Administration-in-the-Development-Environment.md)|  
+|Optimize performance when accessing [!INCLUDE[navnow](../developer/includes//navnow_md.md)] data from SQL Server.|[Optimizing SQL Server Performance with Microsoft Dynamics NAV](Optimizing-SQL-Server-Performance-with-Microsoft-Dynamics-NAV.md)|  
+|Monitor your [!INCLUDE[nav_server](../developer/includes//nav_server_md.md)] instances.|[Monitoring Microsoft Dynamics NAV Server](Monitoring-Microsoft-Dynamics-NAV-Server.md)|  
+|Connect [!INCLUDE[nav_windows](../developer/includes//nav_windows_md.md)] to [!INCLUDE[nav_server](../developer/includes//nav_server_md.md)] over a wide area network.|[Connecting the Microsoft Dynamics NAV Clients over a Wide Area Network](Connecting-the-Microsoft-Dynamics-NAV-Clients-over-a-Wide-Area-Network.md)|  
 
 -->
   
 ## See Also  
 
-[Deployment](../deployment/Deployment.md)   
+[Deployment](../deployment/Deployment.md)  
