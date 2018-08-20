@@ -120,7 +120,7 @@ To export the application tables from an existing database to another database, 
     You must take additional steps to get the final business data database operational. For an example of how you can write a script that runs the cmdlet for creating an application database, see the **…\\Windows PowerShell\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. For an example of how to write individual commands in Windows PowerShell, see the **Example** section.
     
     -->  
-6. Clear the old database setting from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance configuration file by using the [Set-NAVServerConfiguration](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet: 
+6. Clear the `DatabaseName` setting in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance configuration file by using the [Set-NAVServerConfiguration](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet: 
     
     ```
     Set-NAVServerConfiguration –ServerInstance <server instance name> –element appSettings –KeyName 'DatabaseName' –KeyValue ''
