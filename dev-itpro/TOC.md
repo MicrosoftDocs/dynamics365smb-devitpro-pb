@@ -5,8 +5,8 @@
 # Deployment (deployment/deployment.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
 ## On-Premise
-## [System requirements](deployment/system-requirement-business-central.md)
-## [Components and Topology](deployment/product-and-architecture-overview.md)
+### [System requirements](deployment/system-requirement-business-central.md)
+### [Components and Topology](deployment/product-and-architecture-overview.md)
 <!-- end deployment -->
 <!--
 ## [Getting Started](Getting-Started.md)
