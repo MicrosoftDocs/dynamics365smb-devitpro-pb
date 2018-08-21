@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Windows client
+Dynamics NAV Client connected to Business Central
