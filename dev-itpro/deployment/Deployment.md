@@ -20,7 +20,7 @@ There can be many reasons to prefer to deploy [!INCLUDE[prodshort](../developer/
 
 ### Key Features of Setup for On-Premises Deployments  
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup, you can:  
+With [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] Setup, you can:  
 
 -   Install different components on different computers.  
 

@@ -10,8 +10,8 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-# Deploying the Microsoft Dynamics NAV Web Server Components in a Demonstration Environment
-In this scenario, you install the major components of the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] on a single computer. The scenario enables you to install [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)], and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] in an environment where you can test its features and behavior, compare it to the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], and start developing your own applications. The installation requires minimal hardware resources, preparation, and configuration.  
+# Deploying a Demonstration Environment
+In this scenario, you install the major components of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on a single computer. The scenario enables you to install [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)], and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] in an environment where you can test its features and behavior, compare it to the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], and start developing your own applications. The installation requires minimal hardware resources, preparation, and configuration.  
 
 > [!NOTE]  
 >  [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] is not required to run the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_phonet](../developer/includes/nav_phone_md.md)], and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)]]. In this scenario, [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] is installed for demonstration only.  
@@ -42,7 +42,7 @@ In this scenario, you install the major components of the [!INCLUDE[navnowlong](
      For information about what you can do with this license, see [Properties of the Demo License](Properties-of-the-Demo-License.md).  
 
 ### Configuration  
- This scenario uses the default setting of the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] Setup program, which includes the following:  
+ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] program, which includes the following:  
 
 -   Windows authentication is configured for authenticating users who try to open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
 
@@ -85,9 +85,9 @@ In this scenario, you install the major components of the [!INCLUDE[navnowlong](
 
 ### Run [!INCLUDE[navnow](../developer/includes/navnow_md.md)] Setup  
 
-1.  From the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] installation media, run the setup.exe file to start [!INCLUDE[navnow](../developer/includes/navnow_md.md)] Setup Wizard.  
+1.  From the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media, run the setup.exe file to start the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].  
 
-2.  On the **Welcome to [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup** page, choose the **Next** button, and then choose **I accept** to accept the license terms.  
+2.  On the **Welcome to [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] Setup** page, choose the **Next** button, and then choose **I accept** to accept the license terms.  
 
 3.  On the **Microsoft Dynamics NAV Setup** page, choose **Install Demo**.  
 
@@ -95,7 +95,7 @@ In this scenario, you install the major components of the [!INCLUDE[navnowlong](
 
 4.  When the installation is complete, choose the **Close** button.  
 
-5.  Run the setup.exe again to start the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] Setup Wizard.  
+5.  Run the setup.exe again to start  [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].  
 
 6.  On the **Maintenance** page, choose **Add or remove components**.  
 
@@ -122,7 +122,7 @@ In this scenario, you install the major components of the [!INCLUDE[navnowlong](
 
 ### Open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]  
 
--   To open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from the computer where you installed [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], on the **Start** menu, choose **All Programs**, and then choose **[!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Web Client**.  
+-   To open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)], on the **Start** menu, choose **All Programs**, and then choose **[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Client**.  
 
 -   To open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from other devices on the network, open an Internet browser, and type the following URL in the address box:  
 
