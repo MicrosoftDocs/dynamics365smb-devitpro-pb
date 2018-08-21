@@ -16,7 +16,7 @@ manager: edupont
 
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment comprises three core components for serving the application to users, plus various tools and components for managing, developing, extending, and testing the application.
 
-Use [!INCLUDE[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] Setup to install all components.  
+Use [!INCLUDE[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install all components.  
 
 ## Multi-Tier System Topology
  

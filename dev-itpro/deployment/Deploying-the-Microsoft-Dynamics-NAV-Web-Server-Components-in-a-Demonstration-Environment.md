@@ -87,9 +87,9 @@ In this scenario, you install the major components of the [!INCLUDE[prodshort](.
 
 1.  From the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media, run the setup.exe file to start the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].  
 
-2.  On the **Welcome to [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] Setup** page, choose the **Next** button, and then choose **I accept** to accept the license terms.  
+2.  On the **Welcome to [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)]** page, choose the **Next** button, and then choose **I accept** to accept the license terms.  
 
-3.  On the **Microsoft Dynamics NAV Setup** page, choose **Install Demo**.  
+3.  On the **[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)]** page, choose **Install Demo**.  
 
      The installation starts. This can take several minutes.  
 
