@@ -4,7 +4,7 @@
 <!-- deployment-->
 # Deployment (deployment/deployment.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
-## On-Premise
+## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
 ### [Components and Topology](deployment/product-and-architecture-overview.md)
 ## [Embed App](deployment/embed-app-overview.md)
@@ -363,30 +363,31 @@
 <!-- end AL -->
 <!-- administration-->
 # [Administration](administration/administration.md)
-## [Authentication and Credential Types](administration/users-credential-types.md)
-## [Configuring Business Central Server](administration/configure-server-instance.md)
-## Monitoring Business Central Server
-### [Monitoring Performance Counters](administration/performance-counters.md)
-### [Monitoring Server Events](administration/monitor-server-events.md)
-#### [Trace Events List](administration/server-trace-events.md)
-#### [Admin and Operational Events List](administration/server-events.md)
-#### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)
-#### [Using Performance Monitor](administration/monitor-use-performance-monitor-collect-event-trace-data.md)
-#### [Using PerView](administration/monitor-use-perfview-collect-event-trace-data.md)
-#### [Using LogMan](administration/monitor-use-logman-collect-event-trace-data.md)
-#### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
-#### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
-### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
-## [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
-### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
-### [Data Access](administration/optimize-sql-data-access.md)
-### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
-### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
-### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
-### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
-### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
-### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
-## [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
+## On-Premises
+### [Authentication and Credential Types](administration/users-credential-types.md)
+### [Configuring Business Central Server](administration/configure-server-instance.md)
+### Monitoring Business Central Server
+#### [Monitoring Performance Counters](administration/performance-counters.md)
+#### [Monitoring Server Events](administration/monitor-server-events.md)
+##### [Trace Events List](administration/server-trace-events.md)
+##### [Admin and Operational Events List](administration/server-events.md)
+##### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)
+##### [Using Performance Monitor](administration/monitor-use-performance-monitor-collect-event-trace-data.md)
+##### [Using PerView](administration/monitor-use-perfview-collect-event-trace-data.md)
+##### [Using LogMan](administration/monitor-use-logman-collect-event-trace-data.md)
+##### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
+##### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
+#### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
+### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
+#### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
+#### [Data Access](administration/optimize-sql-data-access.md)
+#### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
+#### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
+#### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
+#### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
+#### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
+#### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
+### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
 # Security
