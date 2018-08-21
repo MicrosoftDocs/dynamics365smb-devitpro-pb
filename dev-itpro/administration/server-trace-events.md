@@ -163,4 +163,4 @@ The following table lists the arguments that make up the data collected for trac
 
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   
- [Classifying Data](classifying-data.md)  
+ [Classifying Data](../developer/devenv-classifying-data.md)  
