@@ -12,15 +12,22 @@ ms.assetid: 275aad2c-ea2c-4291-8381-82b0b92dc1a0
 caps.latest.revision: 29
 manager: edupont
 ---
-# [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  Component and Sytem Topology
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deloyment comprises three core components for serving the application to users, plus various tools and components for managing, developing, extending, and testing the application.
+# [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Component and Sytem Topology
+
+The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment comprises three core components for serving the application to users, plus various tools and components for managing, developing, extending, and testing the application.
 
 Use [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup to install all components.  
 
-## Three-Tier System Topology  
+## Multi-Tier System Topology
+ 
 To understand the components is useful to first look at the base topology of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deloyment, as illustrated in the following diagram:
 
 ![Architecture overview](../media/architecture-overview.png "Architecture overview")  
+
+
+## Components
+
+### Main components
 
 Every deployment must include the core components: Web server, Server, and SQL Database. 
 
@@ -30,8 +37,31 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |Server|[!INCLUDE[server](../developer/includes/server.md)] is a .NET-based Windows Service application that uses Windows Communication Framework to handle communication between clients and databases. It controls authentication, event logging, scheduled tasks, reporting and more.||
 |Web Server|An Internet Information Server (IIS) web site, provisioned with the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], that enables access from the [!INCLUDE[webclient](../developer/includes/webclient.md)] and mobile apps.||
 
+### Development and administration components
 
+|Component|Description|   |
+|---------|-----------|---|
+|AL development environment|An AL language extension for Visual Studio Code for developing applications and extensions.||
+|[!INCLUDE[admintool](../developer/includes/admintool.md)]|A Microsoft Management Console (MMC) for creating and configuring [!INCLUDE[server](../developer/includes/server.md)] instances.||
+|[!INCLUDE[adminshell](../developer/includes/adminshell.md)]|Windows Powershell modules for managing the deployment, including tasks such adding and configuring [!INCLUDE[server](../developer/includes/server.md)] and Web server instances, databases, and users, and administering extension packages.||
+|Demo Database|A database that contains application objects and sample business data for demonstration purposes.||
 
+### Additional components
+
+|Component|Description|   |
+|---------|-----------|---|
+|Help Server|An IIS website that hosts help as HTML files that can be used as an alternative to online help.||
+|[!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md)]|The C/SIDE client that was available in [!INCLUDE[navnow_md](../developer/includes/navnow_md)] for developing applications using C/AL. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this is only required for performing upgrades.||
+|[!INCLUDE[devshell](../developer/includes/devshell.md)]|Windows Powershell modules for merging and modifying application object files and creating extension packages. Installed with the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md)].||
+|[!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]|Windows Desktop application for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)].||
+|Microsoft Outlook Integration|A [!INCLUDE[server](../developer/includes/server.md)] component for integrating with Microsoft Outlook.||
+|Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for testing pages.||
+|Microsoft Outlook Add-in| A component to synchronize data, such as to-dos, contacts, and tasks, between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Outlook. The Outlook Add-In uses [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services.||
+|Automated Data Capture System|A system that tracks the movement of items in a warehouse.||
+|ClickOnce Installer Tools|Tools for implementing ClickOnce installation for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].||
+|Microsoft Excel Add-in|A component that enables users to export data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to Excel.||
+
+<!--
 1.  The [!INCLUDE[rtc](../developer/includes/rtc_md.md)] is the *client tier*, which includes a [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] and a [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
 
      In addition to the [!INCLUDE[rtc](../developer/includes/rtc_md.md)], [!INCLUDE[prodshort](../developer/includes/prodshort.md)] also supports additional client types, including web service clients and a NAS services client for programmatic access. For details on the various client types, see [Client Types](Client-Types.md).  
@@ -41,7 +71,7 @@ Every deployment must include the core components: Web server, Server, and SQL D
 3.  SQL Server, augmented by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components, is the *data tier*.  
 
      If you deploy [!INCLUDE[navnow](../developer/includes/navnow_md.md)] in a multitenant deployment architecture, the data tier consists of an application database and one or more tenant databases.  
-
+-->
 <!-- 
 > [!IMPORTANT]  
 >  When you install [!INCLUDE[prodshort](../developer/includes/prodshort.md)], all components must be from the same version and build of [!INCLUDE[navnow](../developer/includes/navnow_md.md)] for the software to run correctly.
