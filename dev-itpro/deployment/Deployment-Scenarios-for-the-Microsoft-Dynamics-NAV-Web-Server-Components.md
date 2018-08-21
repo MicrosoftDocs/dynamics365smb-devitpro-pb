@@ -13,7 +13,7 @@ caps.latest.revision: 16
 ---
 # Deployment Topologies
 
-A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment consists of various components that support the production, development, and testing. These components can be installed on various computers. The deployment process varies depending on the topology that you implement. This articl provides an overview of the supported topologies. 
+A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment consists of various components that support the production, development, and testing. These components can be installed on various computers. The deployment process varies depending on the topology that you implement. This article provides an overview of the supported topologies. 
 
 <!-- 
 This section describes how to install and configure the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)] in different network topologies.  

@@ -51,8 +51,8 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |Component|Description|   |
 |---------|-----------|---|
 |Help Server|An IIS website that hosts help as HTML files that can be used as an alternative to online help.||
-|[!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md)]|The C/SIDE client that was available in [!INCLUDE[navnow_md](../developer/includes/navnow_md)] for developing applications using C/AL. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this is only required for performing upgrades.||
-|[!INCLUDE[devshell](../developer/includes/devshell.md)]|Windows Powershell modules for merging and modifying application object files and creating extension packages. Installed with the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md)].||
+|[!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]|The C/SIDE client that was available in [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] for developing applications using C/AL. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this is only required for performing upgrades.||
+|[!INCLUDE[devshell](../developer/includes/devshell.md)]|Windows Powershell modules for merging and modifying application object files and creating extension packages. Installed with the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].||
 |[!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]|Windows Desktop application for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)].||
 |Microsoft Outlook Integration|A [!INCLUDE[server](../developer/includes/server.md)] component for integrating with Microsoft Outlook.||
 |Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for testing pages.||
