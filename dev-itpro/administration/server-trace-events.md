@@ -116,7 +116,7 @@ Telemetry trace events can provide data about operations in the application and 
 |-------------|-------------|-------------------|-----------------------|  
 |Microsoft-Dynamics365BusinessCentral-Common|TelemetryTracing|32|0x20|  
 
-Custom telemetry trace events are emitted from the application. These are events that are sent by [SENDTRACETAG function](sendtracetag-function.md) calls from inside the application. For more information about custom telemetry trace events, see [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md).
+Custom telemetry trace events are emitted from the application. These are events that are sent by [SENDTRACETAG method](../developer/methods/devenv-sendtracetag-method.md) calls from inside the application. For more information about custom telemetry trace events, see [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md).
 
 Some of the important event data that is collected for both system and custom telemetry trace events includes: tag, category, message, dataclassification.  For more information about this data, see [Event Trace Data](server-trace-events.md#ArgRef). 
 
@@ -163,4 +163,4 @@ The following table lists the arguments that make up the data collected for trac
 
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   
- [Classifying Data](classifying-data.md)  
+ [Classifying Data](../developer/devenv-classifying-data.md)  
