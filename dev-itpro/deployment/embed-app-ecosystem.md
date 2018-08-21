@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-# [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] Ecosystem Features  
+# [!INCLUDE[embedapp](../developer/includes/embedapp.md)] Ecosystem Features  
  
-[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] application is running in a rich ecosystem of other Microsoft and 3rd party services, which [!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] can decide to take advantage of.  
+[!include[prodshort](../developer/includes/prodshort.md)] application is running in a rich ecosystem of other Microsoft and 3rd party services, which [!INCLUDE[embedapp](../developer/includes/embedapp.md)] can decide to take advantage of.  
  
-The following integration capabilities of the [!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] should be considered: 
+The following integration capabilities of the [!include[prodshort](../developer/includes/prodshort.md)] should be considered: 
  
 -   Microsoft Graph – [evaluating]  
 -   Dynamics 365 API endpoint (aka native API) – available if the base application objects are unchanged  
@@ -22,20 +22,20 @@ The following integration capabilities of the [!include[d365_bus_cent_short_md](
 -   Microsoft Flow – available (using customer own Flow license)  
 -   Microsoft PowerApps – available  
 -   WalkMe (UI walkthroughs) – not available  
--   Microsoft Apps included with [!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] (Yodlee, Quick Books, OCR, AMC...) - available, but the partner needs to setup his own agreement with these service providers (if needed)  
+-   Microsoft Apps included with [!include[prodshort](../developer/includes/prodshort.md)] (Yodlee, Quick Books, OCR, AMC...) - available, but the partner needs to setup his own agreement with these service providers (if needed)  
 -   Azure ML – available via partner's own Azure ML subscription  
 -   CDS/CRM integration (with Dynamics 365 for Sales) – pending CDS/CRM decision (Microsoft)  
 -   Accountant Hub - available (if shipped by Microsoft)  
  
 ## See Also 
-[[!INCLUDE[d365_bus_central_embed_app_md](../developer/includes/d365_bus_central_embed_app_md.md)] Overview](embed-app-overview.md)   
+[[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md)   
 [Microsoft Responsibilities](embed-app-microsoft-responsibilities.md)   
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
 [Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md)  
-[[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Component](embed-app-components.md)   
-[[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Platform](embed-app-platform.md)  
-[[!include[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Licensing](embed-app-licensing.md)  
+[[!include[prodshort](../developer/includes/prodshort.md)] Component](embed-app-components.md)   
+[[!include[prodshort](../developer/includes/prodshort.md)] Platform](embed-app-platform.md)  
+[[!include[prodshort](../developer/includes/prodshort.md)] Licensing](embed-app-licensing.md)  
 [Customer Signup](embed-app-customer-signup.md)  
 [Appsource](embed-app-appsource.md)  
 [Sandbox](embed-app-sandbox.md)  
