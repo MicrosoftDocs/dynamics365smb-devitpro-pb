@@ -18,14 +18,14 @@ The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment compris
 
 Use [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup to install all components.  
 
-## Three-Tier System Topology
+## Multi-Tier System Topology
  
 To understand the components is useful to first look at the base topology of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deloyment, as illustrated in the following diagram:
 
 ![Architecture overview](../media/architecture-overview.png "Architecture overview")  
 
 
-## Compomemts
+## Components
 
 ### Main components
 
@@ -56,14 +56,10 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |[!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]|Windows Desktop application for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)].||
 |Microsoft Outlook Integration|A [!INCLUDE[server](../developer/includes/server.md)] component for integrating with Microsoft Outlook.||
 |Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for testing pages.||
-|Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for running tests with test pages.||
-|Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for running tests with test pages.||
+|Microsoft Outlook Add-in| A component to synchronize data, such as to-dos, contacts, and tasks, between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Outlook. The Outlook Add-In uses [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services.||
 |Automated Data Capture System|A system that tracks the movement of items in a warehouse.||
 |ClickOnce Installer Tools|Tools for implementing ClickOnce installation for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].||
 |Microsoft Excel Add-in|A component that enables users to export data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to Excel.||
-
-
-
 
 <!--
 1.  The [!INCLUDE[rtc](../developer/includes/rtc_md.md)] is the *client tier*, which includes a [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] and a [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
