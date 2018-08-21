@@ -3,9 +3,9 @@
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 <!-- deployment-->
 # Deployment (deployment/deployment.md)
-## [System requirements](deployment/system-requirement-business-central.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
-## On-Premise
+## On-Premise### [System requirements](deployment/system-requirement-business-central.md)
+### [Components and Topology](deployment/product-and-architecture-overview.md)
 ## [Embed App](deployment/embed-app-overview.md)
 ### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)   
 ### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
@@ -361,7 +361,8 @@
 ## [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 <!-- end AL -->
 <!-- administration-->
-# Administration(administration/Administration.md)
+# [Administration](administration/administration.md)
+## [Authentication and Credential Types](administration/users-credential-types.md)
 ## [Configuring Business Central Server](administration/configure-server-instance.md)
 ## Monitoring Business Central Server
 ### [Monitoring Performance Counters](administration/performance-counters.md)
@@ -385,7 +386,6 @@
 ### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 ### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ## [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
-## [Credential Types for Users](administration/Users-and-Credential-Types.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
 # Security
