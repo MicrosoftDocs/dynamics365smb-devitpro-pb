@@ -44,14 +44,25 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |AL development environment|An AL language extension for Visual Studio Code for developing applications and extensions.||
 |[!INCLUDE[admintool](../developer/includes/admintool.md)]|A Microsoft Management Console (MMC) for creating and configuring [!INCLUDE[server](../developer/includes/server.md)] instances.||
 |[!INCLUDE[adminshell](../developer/includes/adminshell.md)]|Windows Powershell modules for managing the deployment, including tasks such adding and configuring [!INCLUDE[server](../developer/includes/server.md)] and Web server instances, databases, and users, and administering extension packages.||
+|Demo Database|A database that contains application objects and sample business data for demonstration purposes.||
 
 ### Additional components
 
 |Component|Description|   |
 |---------|-----------|---|
+|Help Server|An IIS website that hosts help as HTML files that can be used as an alternative to online help.||
 |[!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md)]|The C/SIDE client that was available in [!INCLUDE[navnow_md](../developer/includes/navnow_md)] for developing applications using C/AL. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this is only required for performing upgrades.||
 |[!INCLUDE[devshell](../developer/includes/devshell.md)]|Windows Powershell modules for merging and modifying application object files and creating extension packages. Installed with the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md)].||
 |[!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]|Windows Desktop application for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)].||
+|Microsoft Outlook Integration|A [!INCLUDE[server](../developer/includes/server.md)] component for integrating with Microsoft Outlook.||
+|Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for testing pages.||
+|Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for running tests with test pages.||
+|Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for running tests with test pages.||
+|Automated Data Capture System|A system that tracks the movement of items in a warehouse.||
+|ClickOnce Installer Tools|Tools for implementing ClickOnce installation for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].||
+|Microsoft Excel Add-in|A component that enables users to export data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to Excel.||
+
+
 
 
 <!--
