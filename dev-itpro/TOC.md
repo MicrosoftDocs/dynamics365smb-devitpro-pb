@@ -364,6 +364,7 @@
 <!-- administration-->
 # [Administration](administration/administration.md)
 ## On-Premises
+### [Administration and Setup for the Intelligent Edge](administration/about-intelligent-edge.md)
 ### [Authentication and Credential Types](administration/users-credential-types.md)
 ### [Configuring Business Central Server](administration/configure-server-instance.md)
 ### Monitoring Business Central Server
