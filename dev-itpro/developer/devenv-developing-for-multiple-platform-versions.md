@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 
 The AL language extension is compatible with multiple platform versions. You can install the AL Language extension from the Visual Studio Code marketplace and use it to develop solutions for [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)].
 
-## Defining the runtime version
+## Defining the platform version
 To set the platform version, add the **runtime** property in the `app.json` file. This attribute defines the platform version that the extension is targeting. Depending on the platform version, some features become available, while some features are not supported. For example, OData-bound actions can only be used when the platform version is 2.0 or higher. 
 
 <!-- For more information about bound actions, see [Bound Actions]().   -->
