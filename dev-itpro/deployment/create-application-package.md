@@ -1,5 +1,5 @@
 ---
-title: "Creating a deployable package for [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] online"
+title: "Creating a deployable package for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online"
 ms.custom: na
 ms.date: 28/01/2018
 ms.reviewer: na
@@ -9,17 +9,17 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-# Moving from Dynamics NAV On-premise to Online 
-This article describes you can move your on-premise [!INCLUDE[navnow](../developer/includes/navnow_md.md)] solution, including the application and its tenants, to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] online. 
+# Moving from Dynamics NAV On-premise to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online 
+This article describes you can move your on-premise [!INCLUDE[navnow](../developer/includes/navnow_md.md)] solution, including the application and its tenants, to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. 
 
 ## Prerequisites
 To complete the tasks in this article, you will need the following:
 
--   The installation media (DVD) for the latest [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] version. 
+-   The installation media (DVD) for the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version. 
 
     Download the version from [Microsoft Collaborate](https://developer.microsoft.com/en-us/dashboard/collaborate/packages).
 
--   A [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] license.
+-   A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.
 
 -   A working environment of your current [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application, including the following tools:
     -   [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]
@@ -35,18 +35,18 @@ To complete the tasks in this article, you will need the following:
     You will use LCS to upload your solution for deployment. To get a subscription, follow the step in [Sign up for a preview subscription](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 
 ## Upgrade your application
-1. Complete a technical upgrade of your current application to the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] version.
+1. Complete a technical upgrade of your current application to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version.
 
-    This will convert your application database so that is runs on the new [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] platform. For more information, see [Converting a Database - Technical Upgrade](https://docs.microsoft.com/en-us/dynamics-nav/converting-a-database).
+    This will convert your application database so that is runs on the new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform. For more information, see [Converting a Database - Technical Upgrade](https://docs.microsoft.com/en-us/dynamics-nav/converting-a-database).
 
     > [!IMPORTANT]  
-    >  Be sure to upload your [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] to converted database.
+    >  Be sure to upload your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to converted database.
     >
     > After the technical upgrade, make sure that all the components are compiled successfully.
 
-2. Optionally, upgrade your application to the new [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] application.
+2. Optionally, upgrade your application to the new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application.
 
-    You only have to complete this step if you want any new application features that are part of the latest [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] version.
+    You only have to complete this step if you want any new application features that are part of the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version.
     
     For more information, see [Upgrading the Application Code in Dynamics NAV](https://docs.microsoft.com/en-us/dynamics-nav/upgrading-the-application-code).
 
@@ -111,6 +111,7 @@ To complete the tasks in this article, you will need the following:
     ```
 
 ## Create the deployable package (.zip file)
+
 When you deploy your application online, you must provide a compressed .zip file that contains the application and tenant databases as data-tier application files, known as BACPAC (.bacpac) files. This article describes how you to create the BACPAC files and zip. You can do this using SQL Server Management Studio.
 
 1.	In SQL Server Management Studio, connect to the server instance that hosts the application and tenant databases.
@@ -131,14 +132,14 @@ To upload your deployable package, you will create a project in LCS.
 1. Sign-in to LCS from [https://lcs.dynamics.com/v2](https://lcs.dynamics.com/logon/index).
 2. On the **Getting Started** page, under Recent Projects or All Projects, select **+**.
 
-     ![Shows the Getting Started page in the LCS portal](media/LCSGettingStarted.png "Shows the Getting Started page in the LCS portal")  
+     ![Shows the Getting Started page in the LCS portal](../media/LCSGettingStarted.png "Shows the Getting Started page in the LCS portal")  
 3. In the **What is this project for?** box, select **Migrate, create solutions, and learn**.
 
 4. Enter a name and description for your project, and then the remaning fields accordingly:
 
     |  Field  |  Value  |
     |---------|---------|
-    |Product name|[!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)]|
+    |Product name|[!INCLUDE[prodshort](../developer/includes/prodshort.md)]|
     |Country|Set this to the country where your solution will be published.|
     |Import roles and users from existing LCS project|No|
 
@@ -149,22 +150,18 @@ To upload your deployable package, you will create a project in LCS.
 
 7. On the **Asset library** page, select select **Software deployable package**, and then select **+**.
 
-     ![Shows the Asset Library in the LCS portal](media/LCSAssetLibrary.png "Shows the Asset Library in the LCS portal")  
+     ![Shows the Asset Library in the LCS portal](../media/LCSAssetLibrary.png "Shows the Asset Library in the LCS portal")  
 8. In the **Upload Software deployable package file** box, enter a name, select **Add a file**.
 9. In the **Upload file asset** box, select **Browse** > *select your deployable package* > **Open** > **Upload**. 
 
-    When the file has been uploaded, go to the nect step to assign the project to a [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] user for processing.
+    When the file has been uploaded, go to the nect step to assign the project to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user for processing.
 
 10. Go back to you project home page, and select **Project users**.
 11. On the **Project user management** page, select **+**.
 
-     ![Shows the users assigned to a project in the LCS portal](media/LCSProjectUsers.png "Shows the users assigned to a project in the LCS portal")  
+     ![Shows the users assigned to a project in the LCS portal](../media/LCSProjectUsers.png "Shows the users assigned to a project in the LCS portal")  
 
-12. In the **Invite user** box, use the **User lookup** field to find the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] user or enter the email address directly in the **Email** field, and then select **Invite**.  
-
-
-
-
+12. In the **Invite user** box, use the **User lookup** field to find the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user or enter the email address directly in the **Email** field, and then select **Invite**.  
 
 ## See Also  
  [Configuring Database Components](Configuring-Database-Components.md)   
