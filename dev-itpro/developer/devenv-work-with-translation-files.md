@@ -29,7 +29,7 @@ The .xlf files approach cannot be used for translating the base application. If 
 
 We recommend that you use only one .txt file per language. There is no enforced naming on the .txt files, but a suggested good practice is to name it `<extensionname>.<language>.txt`.  
 
-For more information about importing and exporting .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/da-dk/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
+For more information about importing and exporting .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/en-us/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
 
 ## Generating the XLIFF file
 To enable generation of the translation file, you must add a setting in the manifest. In the app.json file of your extension, add the following line:
@@ -98,4 +98,4 @@ In the generated .xlf file, you can see a `<source>` element for each label. For
 When the extension is built and published, you change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
 
 ## See Also
-[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/da-dk/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)  
+[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)  
