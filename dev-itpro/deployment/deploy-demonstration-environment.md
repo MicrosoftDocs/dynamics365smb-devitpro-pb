@@ -73,7 +73,7 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
     For more information, see [System Requirements](system-requirements-business-central.md).  
 
 
-### Run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup  
+### Run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)]  
 
 1.  From the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media, run the setup.exe file to start the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].  
 

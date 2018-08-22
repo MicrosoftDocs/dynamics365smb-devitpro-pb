@@ -16,7 +16,7 @@ caps.latest.revision: 16
 A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment consists of various components that support the production, development, and testing. These components can be installed on various computers. The deployment process varies depending on the topology that you implement. This article provides an overview of the supported topologies. 
 
 <!-- 
-This section describes how to install and configure the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)] in different network topologies.  
+This section describes how to install and configure the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] in different network topologies.  
 
 -->
   
@@ -26,7 +26,7 @@ This section describes how to install and configure the [!INCLUDE[nav_web_server
   
 |Topology|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|More information|  
 |--------------|---------------------------------------|---|  
-|Demonstration|Installs an end-to-end environment, complete with the base application and demonstration data for a single company, on a single computer. The installation enables access to [!INCLUDE[prodshort](../developer/prodshort.md)] from the Web client and App, and development.<br /><br />The deployment requires minimal hardware resources, preparation, and configuration.| |  
+|Demonstration|Installs an end-to-end environment, complete with the base application and demonstration data for a single company, on a single computer. The installation enables access to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from the Web client and App, and development.<br /><br />The deployment requires minimal hardware resources, preparation, and configuration.| |  
 |Single-computer|Installs the [!INCLUDE[webserver](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on the same computer.| [Deploying the Microsoft Dynamics NAV Web Server Components in a Single Computer Environment](deploy-single-computer-environment.md)| 
 |Two-computer|Installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] one computer and the [!INCLUDE[server](../developer/includes/server.md)] and the SQL Server database components.|[Deploying the Microsoft Dynamics NAV Web Server Components in a Two Computer Environment](deploy-two-computer-environment.md)|  
 |Three-computer|Installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on separate computers.| [Deploying the Microsoft Dynamics NAV Web Server Components in a Three Computer Environment](deploy-three-computer-environment.md)| 
