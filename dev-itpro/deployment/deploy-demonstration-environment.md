@@ -64,7 +64,7 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 
 -   NETWORK SERVICE account is used as the service account for [!INCLUDE[server](../developer/includes/server.md)] and database.  
 
-### Prepare for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] installation  
+## Prepare for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] installation  
 
 1.  Get access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media. For example, this could be a DVD or network drive that contains the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation files.  
 
@@ -73,7 +73,7 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
     For more information, see [System Requirements](system-requirements-business-central.md).  
 
 
-### Run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)]  
+## Run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)]  
 
 1.  From the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media, run the setup.exe file to start the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].  
 
@@ -92,7 +92,7 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 8.  On the **Specify Parameters** page, under **Web Server Components**, set the **Port** parameter to the TCP/IP port to use for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] connection or use the default port 8080.  
 
 
-### Open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]  
+## Open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]  
 
 -   To open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)], on the **Start** menu, choose **All Programs**, and then choose **[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Client**.  
 
