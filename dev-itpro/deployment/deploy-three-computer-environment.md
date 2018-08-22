@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-# Deploying the Microsoft Dynamics NAV Web Server Components in a Three Computer Environment
+# Deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a Three-Computer Topology
 In this scenario, you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on separate computers.  
 
  ![NAV Web client installation on three computers](media/NAV_Web_Client_Install_Three_Computers.png "NAV\_Web\_Client\_Install\_Three\_Computers")  
