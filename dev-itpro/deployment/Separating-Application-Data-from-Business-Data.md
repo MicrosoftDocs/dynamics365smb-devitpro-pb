@@ -56,7 +56,7 @@ To export the application tables from an existing database to another database, 
 
 ### Export the application tables to a dedicated database  
 
-1.  Stop all [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] services that access the database that you are modifying.  
+1.  Stop all [!INCLUDE[server](../developer/includes/server.md)] services that access the database that you are modifying.  
 
 2.  Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].  
 
@@ -120,18 +120,18 @@ To export the application tables from an existing database to another database, 
     You must take additional steps to get the final business data database operational. For an example of how you can write a script that runs the cmdlet for creating an application database, see the **…\\Windows PowerShell\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. For an example of how to write individual commands in Windows PowerShell, see the **Example** section.
     
     -->  
-6. Clear the `DatabaseName` setting in the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance configuration file by using the [Set-NAVServerConfiguration](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet: 
+6. Clear the `DatabaseName` setting in the [!INCLUDE[server](../developer/includes/server.md)] instance configuration file by using the [Set-NAVServerConfiguration](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet: 
     
     ```
     Set-NAVServerConfiguration –ServerInstance <server instance name> –element appSettings –KeyName 'DatabaseName' –KeyValue ''
     
     ```
-7. Restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance by using the [Start-NAVServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navserverinstance) cmdlet: 
+7. Restart the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [Start-NAVServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navserverinstance) cmdlet: 
 
     ```
     Start-NAVServerInstance –ServerInstance <server instance name>
     ```
-8. Mount the application database on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance by using the [Mount-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication) cmdlet:
+8. Mount the application database on the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [Mount-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication) cmdlet:
 
     ```
     Mount-NAVApplication –ServerInstance <server instance name> –DatabaseServer <server name\instance name> –DatabaseName <application database name>
@@ -158,10 +158,10 @@ Mount-NAVApplication –ServerInstance 'nav_server_instance' –DatabaseServer '
 Mount-NAVTenant –ServerInstance 'nav_server_instance' -Id tenant1 –DatabaseServer 'MyServer\NAVDEMO' -DatabaseName 'Demo Database NAV (11-0)' -OverwriteTenantIdInDatabase  
 ```  
 
-In the example, the commands stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] service, creates the application database, clears the default database name in the server configuration, and then restarts the service. Then, the application database and the tenant database are mounted, and the configuration is saved in the Tenants.config file on the server. As a result, you have an application database and a single-tenant deployment. When you try to open the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], an error displays because you have not specified a tenant. So in the **Select Server** window, in the **Server Address** field, add the tenant ID to the address. In this example, the address is **localhost:7046/[!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)]/tenant1**.  
+In the example, the commands stop the [!INCLUDE[server](../developer/includes/server.md)] service, creates the application database, clears the default database name in the server configuration, and then restarts the service. Then, the application database and the tenant database are mounted, and the configuration is saved in the Tenants.config file on the server. As a result, you have an application database and a single-tenant deployment. When you try to open the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], an error displays because you have not specified a tenant. So in the **Select Server** window, in the **Server Address** field, add the tenant ID to the address. In this example, the address is **localhost:7046/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/tenant1**.  
 
 > [!TIP]  
->  For an example of how you can automate the process of transferring user accounts from the original database to the new application database, see the HowTo-ExportNAVApplicationDatabase.ps1 sample script. This and other sample scripts are in the **…\\Windows PowerShell\\Upgrade\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. The ExportNAVApplicationDatabase.ps1 sample script can be run in the context of the NAVUpgradeSamples.psm1 script module file. When you call a script such as this, it will export the application tables to a new application database and copy all accounts and SQL Server user roles to the application database. To only transfer the account that the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance uses, use the *–ServiceAccount* parameter for the **Export-NAVApplication** cmdlet. In the examples in this topic, this parameter has not been specified. As a result, the default account, NT AUTHORITY\\NETWORK SERVICE, is set up with the required user roles.  
+>  For an example of how you can automate the process of transferring user accounts from the original database to the new application database, see the HowTo-ExportNAVApplicationDatabase.ps1 sample script. This and other sample scripts are in the **…\\Windows PowerShell\\Upgrade\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. The ExportNAVApplicationDatabase.ps1 sample script can be run in the context of the NAVUpgradeSamples.psm1 script module file. When you call a script such as this, it will export the application tables to a new application database and copy all accounts and SQL Server user roles to the application database. To only transfer the account that the [!INCLUDE[server](../developer/includes/server.md)] instance uses, use the *–ServiceAccount* parameter for the **Export-NAVApplication** cmdlet. In the examples in this topic, this parameter has not been specified. As a result, the default account, NT AUTHORITY\\NETWORK SERVICE, is set up with the required user roles.  
 
 
 ## See Also    

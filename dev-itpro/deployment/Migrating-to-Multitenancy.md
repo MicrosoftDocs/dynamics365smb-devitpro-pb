@@ -23,7 +23,7 @@ You can choose to migrate your [!INCLUDE[prodshort](../developer/includes/prodsh
  Compare this to earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] where a database could contain several companies. These companies could be related or not, but they would all use the same application and write to the same database. Also, when you modified the application, it would affect all companies immediately. So if something went wrong, all companies would be affected.  
   
 > [!NOTE]  
->  The email logging functionality in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] service account to have access to the Exchange server. But in a multitenant deployment, this is not always possible.  
+>  The email logging functionality in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires the [!INCLUDE[server](../developer/includes/server.md)] service account to have access to the Exchange server. But in a multitenant deployment, this is not always possible.  
   
  In multitenant deployments of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], permission sets are stored centrally in the application database, so only the administrator of the central application can add, remove, or modify permission sets. Instead, the tenants can use user groups to manage permissions. For more information, see [Managing User Groups](managing-user-groups.md).  
   

@@ -1,0 +1,145 @@
+---
+title: Intelligent Edge for on-premises | Microsoft Docs
+description: Get a cloud copy of your data so you are connected to the intelligent cloud also when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL, or Dynamics NAV.
+author: edupont04
+manager: edupont
+
+ms.service: dynamics365-business-central
+ms.topic: article
+ms.devlang: na
+ms.tgt_pltfrm: na
+ms.workload: na
+ms. search.keywords: cloud, edge
+ms.date: 08/21/2018
+ms.author: bmeier
+
+---
+
+# Administration and Setup for the Intelligent Edge with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
+
+Customers running their workloads on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, Dynamics NAV, Dynamics GP, or Dynamics SL can get access to the Intelligent Cloud scenarios that customers using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online have. Each Dynamics NAV, Dynamics GP, or Dynamics SL tenant that enables the Intelligent Edge will have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant they can synchronize their data to. When they use this, we invoke our Intelligent Cloud scenarios of Machine Learning, Power BI, Flow, and others to drive suggested actions.  
+
+Dynamics GP and Dynamics SL will continue to receive product improvements and updates, but the most benefit to these customers comes from upgrading to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. There are migration tools available within  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and AppSource, and also partners that specialize in upgrading Dynamics GP and Dynamics SL customers to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+
+## Setting Up Your Intelligent Cloud
+
+This section provides the steps required to configure your Intelligent Cloud environment. This can simply be done by following the instructions in the **Setup Intelligent Cloud** assisted setup wizard.  
+
+There are a few key points that need to be understood before proceeding with the setup:
+
+- It is always a best practice to test this configuration in your Sandbox environment before making changes to a production tenant. See [fwdlink] on how to setup your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Sandbox tenant.
+- Any existing data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant will be overwritten with data from your on-premises solution, or source, once the data replication process is run. If you do not want data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant to be overwritten, do not configure the Intelligent Cloud environment.
+- All users that do not belong to the ‘SUPER’ user group will be automatically reassigned to the Intelligent Cloud user group. This will limit them to read only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
+- Several stored procedures will be added to the SQL server you define. These stored procedures are required to replicate date from your SQL server to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
+- With the initial release of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Intelligent cloud, the amount of data that can be replicated for any tenant will be limited to 150GB. If your database is larger than 150GB, try reducing the number of companies you are replicating data for. Additional options for databases exceeding 150GB will be available in future updates.  
+- Before setting up your Intelligent Cloud environment, ensure that at least 1 user in the system is assigned to the ‘SUPER’ user group and has SUPER permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
+- No changes will be made to users or data in your on-premises solution.
+
+To begin configuring your Intelligent Cloud environment, navigate to the assisted setup page and launch the **Set Up Intelligent Cloud** assisted setup wizard. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises) you may also launch the wizard from your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
+
+### Intelligent Cloud Assisted Setup
+
+The assisted setup guide consists of up to 6 pages that take you through the process of connecting your solution to the Intelligent Cloud.  
+
+1.   Welcome and Consent page
+
+     This page will provide an overview of what the wizard will do. You will be asked to agree to the displayed warning message before you can continue to the next step.
+
+2.   Product selection
+
+     On this page, specify your source, or on-premises, solution that you are replicating data from. All supported sources will appear in the this drop down. If you don’t see your product, navigate to the **Manage Extensions** page and verify the Intelligent Cloud extension for that product is installed.
+
+3.   SQL Connection
+     If the product you selected requires a SQL connection, this page will be presented. Other source applications may require different information to connect to them. This page will display the connection information based on the product that you specified in the previous page. This is defined from the installed extensions for the product you have selected.
+
+     *SQL Connection* There will be 2 options for SQL: SQL Server, which is your locally installed SQL Server instance or Azure SQL.
+
+     *SQL Connection string*: If you had chosen SQL Server for your SQL Connection, you will be required to enter the connection string to your SQL Server. This information can be found [fwdlink]. This is an example of what this connection string would look like:
+```
+     Server=tcp:{ServerName},1433;Initial Catalog={DatabaseName};Persist Security
+     Info=False;User
+     ID={UserName};Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection
+     Timeout=30;
+```
+     *Integration runtime name*: This is the service that will be used to
+     replicate the data from the defined source to your Business Central cloud
+     tenant.
+
+>    [!NOTE]  
+>    The Integration Runtime Service is not required if your data source is Azure SQL.
+
+>    If you are a hosting partner you may have multiple tenants running on the same Integration runtime service. Each tenant will be isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found on the Microsoft Integration Runtime Manager. To create a new runtime service, leave the field empty, and then choose the Next button. Once you choose Next, a new replication pipeline will be created in the Azure service. This should take less than a minute to complete.
+
+4.   Self-Hosted Integration Runtime (SHIR): This is the service will allow access to the Azure replication services to your on-premises SQL Database during the replication process. Follow the instructions on this page to install the Self Hosted Integration Service (SHIR) to a local machine.  
+5.   Company Selection:
+
+     You will be provided with a list of companies from your on-premises solution, or source. Select the companies you would like to replicate data for. If the company does not exist in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant, it will be created. This process may take several minutes depending on the number of companies that need to be created.
+
+6.   Enable & Scheduling Replication
+     The final page in the wizard allows you to enable the replication process and create a schedule for when the data replication should occur. These settings are also available within your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant on the **Intelligent Cloud Management** page. You have the option to schedule replication daily or weekly. We recommend that you schedule your data replication for off-peak business hours.
+
+> [!NOTE]  
+>   Depending on the amount of data and your connection speed, a full replication could take several hours to complete. Subsequent replications will complete more quickly as only changed data is replicating.  
+
+## Adding Tenant to an Exiting Runtime Service or Updating Companies
+
+There are some scenarios where it will be necessary for you to run the Intelligent Cloud assisted set up wizard more than once.  
+
+One example is if you want to change the companies you replicate data for. If the companies in your on-premises solution has changed; either added or deleted, or you want to change to the companies you, are replicating for, simply run the assisted setup wizard again.  
+
+Another example of why you would want to run the wizards again, is you may be a hosting partner and want to add tenants to your existing runtime service.  
+
+In both examples, you will be making updates to an existing runtime service. When you get to the point of the wizard where you can enter in an existing run time services name, open your Integration Runtime Service Manager application and key the value from the management page into the wizard field, you will not be allowed to copy/paste. The runtime service will identify that you are making updates to an existing service and will not create a new one.  
+
+Complete the steps in the wizard to update the runtime service. If the change were related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your replication schedule or regenerating an ADF key may be done using the **Intelligent Cloud Management** page in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant.  
+
+## User Groups and Permission Sets
+
+When running in an Intelligent Cloud state, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant
+will be, with very few exceptions, read-only. Because the on-premises solution is your primary application for running your business activities such as data entry, tax reporting, sending invoices, and so on, these tasks will need to be completed in the on-premises application. We limit the amount of data you can enter into your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to data that is not replicated, otherwise any data that was written to the tenant database would be continuously overwritten during the replication process.  
+
+To make setting up this ‘Read-Only’ tenant for efficient, we created a new *Intelligent Cloud* user group and an *Intelligent Cloud* permission set. Once the Intelligent Cloud environment is configured as described in [Administration and Setup for the Intelligent Cloud](/dynamics365/business-central/dev-itpro/administration/about-intelligent-edge), all users without the SUPER permission set will be automatically assigned the *Intelligent Cloud* user group. Only users with SUPER permissions will be allowed to make modifications to the system at this point.  
+
+> [!NOTE]  
+> Before configuring the Intelligent Cloud environment, make sure that at least 1 user in each company is assigned SUPER permissions.  
+
+Users that are reassigned to the Intelligent Cloud User Group will have access to read ALL data by default. If you need to further restrict what the data a user should be able to read, the SUPER user may create new User Groups and Permissions Sets and assign users accordingly. It is highly recommended to create any new permissions sets from a copy of the Intelligent Cloud permission set and then take away permissions you do not want users to have.  
+
+> [!WARNING]
+> If you grant insert, modify or delete permissions to any resource in the application that was set to read only, it could have a negative impact on the data in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. If this occurs, you may have to clear all your data and rerun a full replication to correct this.  
+
+## Managing your Intelligent Cloud environment
+
+This page will provide information regarding your data replication runs over the past 30 days as well as enable you to manage your replication services.
+
+### Viewing Replication History
+
+Provides a view of the status of all replications that happened in the past 30 days. You will be able to view the time the replication ran, the status of each replication and when your next replication is scheduled to run.  
+
+Replication Statistics - Tiles that will display the number of tables replicated and the number of tables that did not replicate due to errors that occurred during the replication process. You may select either tile to drill into additional details regarding the replication status of each table as well as any messaging to assist you in correcting any errors.
+
+Replication Schedule - Enables you to set the replication schedule without having to run the assisted setup wizard again.  
+
+Manually Running Data Migration – when selected, manually triggers data replication. Ideally, this would be used only when you received errors in the scheduled data replication, you corrected any errors, and want to push updated data to the cloud outside of a normally scheduled run.  
+
+Clearing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Tenant Tables – you may run into instances where you need to reset your cloud data. This option will clear all data in your cloud tenant and enable you to start over with data replication. If you need to clear data in your cloud tenant and are have connectivity issues that persist for more than 7 days, you will need to contact customer support. They will create a ticket to have your tenant data cleared.  
+
+Regenerating a Runtime Key – if at any time you feel that your Self Hosted Integration Runtime key is no longer secure, you may select this option to regenerate a new key. A new key will be generated for you and automatically be updated in the Self Host Integration Runtime service.  
+
+Moving to a Cloud only solution – this option will guide you through a checklist of instructions to make the full move to the cloud. Once this steps in this process are complete, data replication will be discontinued, and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will become your primary ERP solution.  
+
+### Extensions
+
+When an Intelligent Cloud environment is configured, it is highly recommended that you test the impact of any Extension in a Sandbox environment before having them installed in your production [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Intelligent Cloud tenant to help avoid any data failures or untended consequences.  
+
+### Troubleshooting Replications Errors
+
+Now that you have purchased your license, installed any necessary software, and have applies license files, it is time to configure your solutions for Intelligent Cloud.
+
+## System Requirements
+
+To connect to the Intelligent Cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md), the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also use either [!INCLUDE[prodshort](../developer/includes/prodshort.md) on-premises, or Dynamics GP 2018 R2.
+
+## See Also
+
+[Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)
