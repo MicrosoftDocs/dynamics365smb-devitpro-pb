@@ -7,6 +7,11 @@
 ## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
 ### [Components and Topology](deployment/product-and-architecture-overview.md)
+### [Deployment Topologies](deployment-scenarios.md])
+#### [Deploying Demonstration Environment](deploy-demonstration-environment.md)
+#### [Deploying in a Single Computer Topology](deploy-single-computer-environment.md)
+#### [Deploying in a Two-Computer Topology](deploy-two-computer-environment.md)
+#### [Deploying in a Three Computer Topology](deploy-three-computer-environment.md)
 ## [Embed App](deployment/embed-app-overview.md)
 ### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)   
 ### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)

@@ -16,7 +16,7 @@ author: jswymer
 
 Giving users the capability to access to data by using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)], [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)], and Outlook add-in requires a Internet Information Services (IIS) web site as part of your deployment. The website, which we refer to as [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance, hosts the files that provide content and services to client users over the Internet. This article highlights several factors to consider to help you set up [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances that suit your deployment requirements.
 
-If you just want to get started installing the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)], see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).
+If you just want to get started installing the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).
 
 ## ASP .NET Core on IIS
 
@@ -29,7 +29,7 @@ The following illustration shows the component infrastructure that supports [!IN
 
 Each [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance must connect to a [!INCLUDE[server](../developer/includes/server.md)], which in turn connects to the database that contains the application and business data. Multiple [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances can connect to the same [!INCLUDE[server](../developer/includes/server.md)]. You can deploy these components on one computer or on separate computers. For example, you can install the [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance on one computer and the [!INCLUDE[server](../developer/includes/server.md)] and SQL Server database on another computer. The topology that you choose depends on the network resources and the infrastructure of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components. The installation and configuration process is different for each scenario.
 
-For information about the common deployment scenarios, see [Deployment Scenarios for the Microsoft Dynamics NAV Web Server Components](Deployment-Scenarios-for-the-Microsoft-Dynamics-NAV-Web-Server-Components.md).  
+For information about the common deployment scenarios, see [Deployment Topologies](deployment-scenarios.md).  
 
 ##  Creating a [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance  
 
@@ -38,7 +38,7 @@ There are two ways to create a [!INCLUDE[nav_web_server_instance_md](../develope
 ### Using [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup
 [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup is the quickest way to get a web server instance up and running, and is typically how you install the first [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance in your deployment.
 
--   Setup installs the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)], which does the following:
+-   Setup installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], which does the following:
 
     -   Installs and configure IIS with the required prerequisites, including Microsoft .NET Core - Windows Server Hosting <!--[Microsoft .NET Core - Windows Server Hosting package](https://aka.ms/dotnetcore.2.0.0-windowshosting)-->
     -   Installs a web server instance on IIS.
@@ -47,7 +47,7 @@ There are two ways to create a [!INCLUDE[nav_web_server_instance_md](../develope
 -   You can only use Setup to install a single [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance.
 
 -   Setup does not let you choose the site deployment type for the web server instance. By default, it creates a SubSite instance. For more information, see [Site Deployment Types](How-to--Set-Up-Multiple-Web-Server-Instances-for-the-Microsoft-Dynamics-NAV-Web-Client.md#WebClientonIIS).    
-For information about how to install the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)], see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).
+For information about how to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).
 
 ### Using [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] PowerShell cmdlets
 There are several PowerShell cmdlets that enable you to create, configure, and remove [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances from a command line interface. To create a web server instance, you use the [New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/new-navwebserverinstance) cmdlet, which has the following advantages over Setup:
@@ -57,7 +57,7 @@ There are several PowerShell cmdlets that enable you to create, configure, and r
 -   You have more flexibility regarding the [site deployment type](How-to--Set-Up-Multiple-Web-Server-Instances-for-the-Microsoft-Dynamics-NAV-Web-Client.md#WebClientonIIS) of the [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances on IIS. For example, you can create a root-level website instance  or a subsite application instance under a container website.
 
 > [!IMPORTANT]
->Using  New-NAVWebServerInstance cmdlet requires that Microsoft .NET Core Windows Server Hosting is installed and IIS is installed and configured with the prerequisites. So unless you have previously installed the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)] by using Setup, you will have to install and configure the prerequisites manually. For more information about the prerequisites, see
+>Using  New-NAVWebServerInstance cmdlet requires that Microsoft .NET Core Windows Server Hosting is installed and IIS is installed and configured with the prerequisites. So unless you have previously installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] by using Setup, you will have to install and configure the prerequisites manually. For more information about the prerequisites, see
 [How to: Install and Configure Internet Information Services for Microsoft Dynamics NAV Web Client](How-to--Install-and-Configure-Internet-Information-Services-for-Microsoft-Dynamics-NAV-Web-Client.md).
 
 For information about how to create a [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance by using the New-NAVWebServerInstance cmdlet, see [Creating and Managing [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] Instances Using PowerShell](How-to--Set-Up-Multiple-Web-Server-Instances-for-the-Microsoft-Dynamics-NAV-Web-Client.md).
@@ -79,7 +79,7 @@ For information about how to create a [!INCLUDE[nav_web_server_instance_md](../d
  For more information, see [Provisioning the Microsoft Dynamics NAV Server Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md).  
 
 ### Securing the Connection to Microsoft Dynamics NAV Web Client With SSL  
- You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You can configure SSL when you install the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)] or after the installation.  
+ You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] or after the installation.  
 
  For more information, see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md) and [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md).  
 
