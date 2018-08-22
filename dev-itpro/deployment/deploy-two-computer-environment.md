@@ -9,18 +9,18 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-# Deploying the Microsoft Dynamics NAV Web Server Components in a Two Computer Environment
+# Deploying [!INCLUDE[prodsshort](../developer/includes/prodshort.md)] in a Two-Computer Topology
 In this scenario, you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] on a computer separate than [!INCLUDE[server](../developer/includes/server.md)] and the SQL Server database components.  
 
  ![NAV Web client installation on two computers](media/NAV_Web_Client_Install_Two_Computers.png "NAV\_Web\_Client\_Install\_Two\_Computers")  
 
-This article also applies to deploying the [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)] and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)].
-
+<!--
 > [!TIP]  
->  For a step-by-step example that describes how to deploy this scenario, see [Walkthrough: Installing the Microsoft Dynamics NAV Web Server Components on Two Computers](Walkthrough--Installing-the-Microsoft-Dynamics-NAV-Web-Server-Components-on-Two-Computers.md).  
+>  For a step-by-step example that describes how to deploy this scenario, see [Walkthrough: Installing the Microsoft Dynamics NAV Web Server Components on Two Computers](Walkthrough--Installing-the-Microsoft-Dynamics-NAV-Web-Server-Components-on-Two-Computers.md).
+--> 
 
 ## Pre-Installation Tasks  
- The following table includes tasks to perform before you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].  
+The following table includes tasks to perform before you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].  
 
 |Task|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|For more information, see|  
 |----------|---------------------------------------|-------------------------------|  
@@ -35,9 +35,9 @@ This article also applies to deploying the [!INCLUDE[nav_phone](../developer/inc
 
 |Task|Description|For more information, see|  
 |----------|-----------------|-------------------------------|  
-|Install [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components.|On the computer designated for the [!INCLUDE[server](../developer/includes/server.md)] and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)]. During Setup, choose the **Choose an installation option**,  and then choose the **Server** and the **SQL Server Database Components** options.|[How to: Run Setup](How-to--Run-Setup.md)|  
-|Install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].|On the web server computer, run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] and choose the **Web Server Components** option.|[How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)|  
-|Configure delegation from the web server to [!INCLUDE[server](../developer/includes/server.md)].|Because [!INCLUDE[server](../developer/includes/server.md)] is running on a different computer than the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], you must configure the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to delegate its access to [!INCLUDE[server](../developer/includes/server.md)] on behalf of the device trying to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].|[How to: Configure Delegation for Microsoft Dynamics NAV Web Client](How-to--Configure-Delegation-for-Microsoft-Dynamics-NAV-Web-Client.md)|  
+|On one computer. install [!INCLUDE[server](../developer/includes/server.md)] and SQL Server Database Components on one computer|Run the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] setup.exe file, choose **Advanced installation options** > **Choose an installation option** > **Custom**, and then choose the **Server** and **SQL Server Database Components** options.|[How to: Run Setup](How-to--Run-Setup.md)|  
+|On the other computer, install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].|Run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)], choose **Advanced installation options** > **Choose an installation option** > **Custom**, and then the **Web Server Components** option.|[How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)|  
+|Configure delegation from the web server to [!INCLUDE[server](../developer/includes/server.md)].|Because [!INCLUDE[server](../developer/includes/server.md)] is running on a different computer than the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], you must configure the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to delegate its access to [!INCLUDE[server](../developer/includes/server.md)] on behalf of the device trying to access from the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].|[How to: Configure Delegation for Microsoft Dynamics NAV Web Client](How-to--Configure-Delegation-for-Microsoft-Dynamics-NAV-Web-Client.md)|  
 
 ##  <a name="PostInstall"></a> Post-installation Tasks  
  The following table includes tasks to configure the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] after installation. These tasks are optional depending on your organizational and network requirements.  

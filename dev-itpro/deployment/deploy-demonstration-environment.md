@@ -19,7 +19,7 @@ This deployment scenario installs the major [!INCLUDE[prodshort](../developer/in
 ### Components  
  This scenario installs the following components:  
 
--   [!INCLUDE[webserver](../developer/includes/webservercomponents.md)]  
+-   [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)]  
 
 -   Internet Information Services
 
@@ -27,13 +27,12 @@ This deployment scenario installs the major [!INCLUDE[prodshort](../developer/in
 
 -    [!INCLUDE[server](../developer/includes/server.md)]  
 
--   SQL Server Database Components, including [!INCLUDE[demolong](../developer/includes/demolong_md.md)] and demo license.    
+-   SQL Server Database Components, including [!INCLUDE[demolong](../developer/includes/demolong_md.md)] and demo license.
 
--    [!INCLUDE[admintool](../developer/includes/admintool.md)](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)  
+    For information about what you can do with this license, see [Properties of the Demo License](Properties-of-the-Demo-License.md).      
 
--   [!INCLUDE[demolong](../developer/includes/demolong_md.md)], including a demo license.  
+-    [!INCLUDE[admintool](../developer/includes/admintool.md)] 
 
-     For information about what you can do with this license, see [Properties of the Demo License](Properties-of-the-Demo-License.md).  
 -    Al Development Environment
 
 ### Configuration  
@@ -80,17 +79,6 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 2. Follow the setup until you get to the **[!INCLUDE[prodlong](../developer/includes/prodlong.md)]** page, then choose **Advanced installation option** > **Install Demo**.  
 
     The installation starts. This can take several minutes.  
-
-4.  When the installation is complete, choose the **Close** button.  
-
-5.  Run the setup.exe again to start  [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].  
-
-6.  On the **Maintenance** page, choose **Add or remove components**.  
-
-7.  On the **Customize the Installation** page, choose the box next to **Web Server Components**, choose **Run from My Computer**, and then choose **Next**.  
-
-8.  On the **Specify Parameters** page, under **Web Server Components**, set the **Port** parameter to the TCP/IP port to use for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] connection or use the default port 8080.  
-
 
 ## Open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]  
 

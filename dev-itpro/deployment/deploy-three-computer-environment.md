@@ -16,8 +16,10 @@ In this scenario, you install the [!INCLUDE[webservercomponents](../developer/in
 
 This article also applies to deploying the [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)] and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)].
 
+<!-- 
 > [!TIP]  
->  For a step-by-step example that describes how to deploy this scenario, see [Walkthrough: Installing the Microsoft Dynamics NAV Web Server Components on Three Computers](Walkthrough--Installing-the-Microsoft-Dynamics-NAV-Web-Server-Components-on-Three-Computers.md).  
+>  For a step-by-step example that describes how to deploy this scenario, see [Walkthrough: Installing the Microsoft Dynamics NAV Web Server Components on Three Computers](Walkthrough--Installing-the-Microsoft-Dynamics-NAV-Web-Server-Components-on-Three-Computers.md).
+-->  
 
 ## Pre-Installation Tasks  
  The following table includes tasks to perform before you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].  
@@ -31,14 +33,14 @@ This article also applies to deploying the [!INCLUDE[nav_phone](../developer/inc
 |Obtain and install an SSL certificate.|Optional. If you want to configure SSL on the connection to [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], then complete the following procedures:<br /><br /> -   Obtain an SSL certificate.<br />-   Import the certificate into the local computer store of the computer on which you will install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].<br />-   Obtain the certificate's thumbprint.<br /><br />**Note:**  You can also configure SSL after you have installed the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. For more information, see [Post-installation Tasks](deploy-three-computer-environment.md#PostInstall).|[How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md)|  
 
 ## Installation Tasks  
- The following table includes tasks for installing the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
+The following table includes tasks for installing the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
 
 |Task|Description|For more information, see|  
 |----------|-----------------|-------------------------------|  
-|Install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components.|On the computer designated for SQL Server, run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] and choose the **SQL Server Database Components** option.|[How to: Run Setup](How-to--Run-Setup.md)|  
+|On the first computer, install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components.|Run the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] setup.exe file, choose **Advanced installation options** > **Choose an installation option** > **Custom**, and then choose the **SQL Server Database Components** option.|[How to: Run Setup](How-to--Run-Setup.md)|  
 |Start the SQL Server Browser Service on the SQL Server computer.|This task is only required if you are using a named database instance for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. By default, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses the database instance named NAVDEMO. The SQL Server Browser Service is required so that the database instance can be discovered by the [!INCLUDE[server](../developer/includes/server.md)] instance, which in this scenario, is another computer. To start the SQL Server, use SQL Server Configuration Manager.|[How to: Start SQL Browser Service](How-to--Start-SQL-Browser-Service.md)|  
-|Install [!INCLUDE[server](../developer/includes/server.md)].|On the computer designated for the [!INCLUDE[server](../developer/includes/server.md)], run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] and choose the **Server** option.|[How to: Run Setup](How-to--Run-Setup.md)|  
-|Install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].|On the web server computer, run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] and choose the **Web Server Components** option.|[How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)|  
+|On second computer, install [!INCLUDE[server](../developer/includes/server.md)].|Run the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] setup.exe file, choose **Advanced installation options** > **Choose an installation option** > **Custom**, and then choose the **Server** option.|[How to: Run Setup](How-to--Run-Setup.md)|  
+|On the third computer, install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].|Run the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] setup.exe file, choose **Advanced installation options** > **Choose an installation option** > **Custom**, and then choose **Web Server Components** option.|[How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)|  
 |Configure delegation from the web server to [!INCLUDE[server](../developer/includes/server.md)].|Because [!INCLUDE[server](../developer/includes/server.md)] is running on a different computer than the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], you must configure computer running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to delegate its access to [!INCLUDE[server](../developer/includes/server.md)] on behalf of the device trying to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].|[How to: Configure Delegation for Microsoft Dynamics NAV Web Client](How-to--Configure-Delegation-for-Microsoft-Dynamics-NAV-Web-Client.md)|  
 
 ##  <a name="PostInstall"></a> Post-installation Tasks  
