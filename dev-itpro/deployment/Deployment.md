@@ -36,9 +36,9 @@ With [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)], you can:
 
 -   Before installing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components on a computer, you must remove \(uninstall\) any previous versions.  
 
--   All components must be from the same version and build of [!INCLUDE[navnow](../developer/includes/navnow_md.md)] for the software to run correctly.  
+-   All components must be from the same version and build of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for the software to run correctly.  
 
--   If you have either SQL Server 2000 or Microsoft SQL Server Desktop Engine \(MSDE\) installed on a computer where you want to install [!INCLUDE[navnow](../developer/includes/navnow_md.md)], then you must remove it before you begin installing. The presence of either of these database products causes a Setup error.  
+-   If you have either SQL Server 2000 or Microsoft SQL Server Desktop Engine \(MSDE\) installed on a computer where you want to install [!INCLUDE[prodshort](../developer/includes/prodshort.md)], then you must remove it before you begin installing. The presence of either of these database products causes a Setup error.  
 
 ## Configuring the Help Experience
 

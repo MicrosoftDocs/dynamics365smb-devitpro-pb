@@ -10,7 +10,7 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Moving from Dynamics NAV On-premise to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online 
-This article describes you can move your on-premise [!INCLUDE[navnow](../developer/includes/navnow_md.md)] solution, including the application and its tenants, to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. 
+This article describes you can move your on-premise [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, including the application and its tenants, to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. 
 
 ## Prerequisites
 To complete the tasks in this article, you will need the following:
@@ -21,7 +21,7 @@ To complete the tasks in this article, you will need the following:
 
 -   A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.
 
--   A working environment of your current [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application, including the following tools:
+-   A working environment of your current [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, including the following tools:
     -   [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]
     -   [!INCLUDE[nav_dev_shell_md](../developer/includes/nav_dev_shell_md.md)]
     -   [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)]

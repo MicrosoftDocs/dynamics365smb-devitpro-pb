@@ -35,20 +35,18 @@ In this scenario, you install the major components of the [!INCLUDE[prodshort](.
 
 -   [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)  
 
--   [Development Environment (C/SIDE)](Development-Environment--C-SIDE-.md)  
-
 -   [!INCLUDE[demolong](../developer/includes/demolong_md.md)], including a demo license.  
 
      For information about what you can do with this license, see [Properties of the Demo License](Properties-of-the-Demo-License.md).  
 
 ### Configuration  
- This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] program, which includes the following:  
+This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)], which includes the following:  
 
 -   Windows authentication is configured for authenticating users who try to open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
 
--   [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] configuration:  
+-   [!INCLUDE[server](../developer/includes/server.md)] configuration:  
 
-    -   Service instance: [!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)]  
+    -   Service instance: [!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]  
 
     -   Client service port: 7046  
 
@@ -56,34 +54,34 @@ In this scenario, you install the major components of the [!INCLUDE[prodshort](.
 
     -   OData web services port: 7048  
 
--   [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database components configuration:  
+-   [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components configuration:  
 
     -   Service instance: NAVDEMO  
 
-    -   Database: Demo Database NAV \(11-0\)  
+    -   Database: Demo Database NAV \(13-0\)  
 
--   NETWORK SERVICE account is used as the service account for [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] and [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database.  
+-   NETWORK SERVICE account is used as the service account for [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
 
 ## Installing the Microsoft Dynamics NAV Web Server Components  
- To install the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] in this scenario, you will run [!INCLUDE[navnow](../developer/includes/navnow_md.md)] Setup two times. The first time, you will choose the **Install Demo** option, which installs the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], and the [!INCLUDE[demolong](../developer/includes/demolong_md.md)]. The second time that you run Setup, you will choose the **Web Server Components** option, which installs a website for [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] on the Internet Information Services.  
+ To install the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] in this scenario, you will run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup two times. The first time, you will choose the **Install Demo** option, which installs the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], and the [!INCLUDE[demolong](../developer/includes/demolong_md.md)]. The second time that you run Setup, you will choose the **Web Server Components** option, which installs a website for [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] on the Internet Information Services.  
 
 ### Prepare for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] installation  
 
-1.  Get access to the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] installation media. For example, this could be a DVD or network drive that contains the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] installation files.  
+1.  Get access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media. For example, this could be a DVD or network drive that contains the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation files.  
 
 2.  Make sure that the computer meets the hardware and software requirements.  
 
-     For more information, see [System Requirements for Microsoft Dynamics NAV](System-Requirements-for-Microsoft-Dynamics-NAV.md).  
+    For more information, see [System Requirements for Microsoft Dynamics NAV](System-Requirements-for-Microsoft-Dynamics-NAV.md).  
 
 
 4.  Determine which HTTP port to use for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] connections. 
 
-    -   [!INCLUDE[navnow](../developer/includes/navnow_md.md)] Setup will create a website on IIS for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. During Setup, you will have to choose the port to use for the site. The default port that is used in [!INCLUDE[navnow](../developer/includes/navnow_md.md)] Setup is port 8080. If you are not sure of which port to use, then use the default port. 
+    -   [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup will create a website on IIS for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. During Setup, you will have to choose the port to use for the site. The default port that is used in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup is port 8080. If you are not sure of which port to use, then use the default port. 
 
     -    With most of the supported Windows operating systems, an inbound rule will automatically be added in Windows Firewall to allow communication on the port. However, if your computer is running Windows 7, 8.0, or 8.1, then you have to manually create an inbound rule. For information about see [How to: Create an Inbound Rule in Windows Firewall for the Port of Microsoft Dynamics NAV Web Client](How-to--Create-an-Inbound-Rule-in-Windows-Firewall-for-the-Port-of-Microsoft-Dynamics-NAV-Web-Client.md).  
 
 
-### Run [!INCLUDE[navnow](../developer/includes/navnow_md.md)] Setup  
+### Run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup  
 
 1.  From the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media, run the setup.exe file to start the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].  
 
@@ -118,7 +116,7 @@ In this scenario, you install the major components of the [!INCLUDE[prodshort](.
 -   A web server instance for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] is installed on IIS. The web server instance consists of a web site that has the name **[!INCLUDE[navnowlong_md](../developer/includes/navnowlong_md.md)] Web Client**. The web site contains an application that has the name (and alias) **[!INCLUDE[nav_server_instance_md](../developer/includes/nav_server_instance_md.md)]**.  
 
     > [!NOTE]  
-    >  The **[!INCLUDE[nav_server_instance_md](../developer/includes/nav_server_instance_md.md)]** alias matches the name of the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that was also created.  
+    >  The **[!INCLUDE[nav_server_instance_md](../developer/includes/nav_server_instance_md.md)]** alias matches the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that was also created.  
 
 ### Open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]  
 
@@ -126,12 +124,12 @@ In this scenario, you install the major components of the [!INCLUDE[prodshort](.
 
 -   To open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from other devices on the network, open an Internet browser, and type the following URL in the address box:  
 
-    http://ComputerName:PortNumber/[!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)]  
+    http://ComputerName:PortNumber/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]  
     Or for [!INCLUDE[nav2017](../developer/includes/nav2017.md)]:
     
     http://ComputerName:PortNumber/dynamicsnav100/webclient
 
-    -   Substitute **ComputerName** with the name of the computer where you installed [!INCLUDE[navnow](../developer/includes/navnow_md.md)]. If you are working on the computer where you installed [!INCLUDE[navnow](../developer/includes/navnow_md.md)], then you can use **localhost**.  
+    -   Substitute **ComputerName** with the name of the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If you are working on the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)], then you can use **localhost**.  
 
     -   Substitute **PortNumber** with the port that you configured for the [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)] during Setup.  
 
