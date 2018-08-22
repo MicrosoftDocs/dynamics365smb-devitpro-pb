@@ -19,7 +19,7 @@ This deployment scenario installs the major [!INCLUDE[prodshort](../developer/in
 ### Components  
  This scenario installs the following components:  
 
--   [!INCLUDE[webserver](../developer/includes/webserver.md)]  
+-   [!INCLUDE[webserver](../developer/includes/webservercomponents.md)]  
 
 -   Internet Information Services
 
@@ -39,7 +39,7 @@ This deployment scenario installs the major [!INCLUDE[prodshort](../developer/in
 ### Configuration  
 This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)], which includes the following:  
 
--   [!INCLUDE[webserver](../developer/includes/webserver.md)]
+-   [!INCLUDE[webserver](../developer/includes/webservercomponents.md)]
  
     - Port: 8080 (inbound rule automatically added to Windows Firewall)
     - Protocol: HTTP
