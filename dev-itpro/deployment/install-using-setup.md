@@ -1,5 +1,5 @@
 ---
-title: "How to: Run Setup"
+title: "Install Business Central Using Setup"
 ms.custom: na
 ms.date: 06/05/2016
 ms.reviewer: na
@@ -10,22 +10,35 @@ ms.prod: "dynamics-nav-2018"
 ms.assetid: e4bd0a48-9e21-44e3-8a5d-858f02af5206
 caps.latest.revision: 24
 ---
-# How to: Run Setup
-You use [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup to install software or to capture a set of custom setup settings to save in a setup configuration file. In this procedure, you run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup without any customization or configuration. Opportunities for customization and configuration are described throughout the procedure.  
+# Installing Business Central Using Setup
+You use [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the different components that comprise a [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] production, demonstration, or development environment. For a list of components, see [Components and Topology](product-and-architecture-overview.md). 
+
+[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] leads you through installation process, where you can install individual components or select predefined options that install a logical collection of components.
+
+## Default configurations
+Throughout Setup, you are presented with various configuration  
+
+
+
+
+<!--
+ or to capture a set of custom setup settings to save in a setup configuration file. In this procedure, you run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] without any customization or configuration. Opportunities for customization and configuration are described throughout the procedure.
+-->  
 
 > [!NOTE]  
 >  You must be an administrator on the computer where you run Setup.  
 
 ## Running Setup to Install an Installation Option  
-
+<!-- 
 > [!NOTE]  
->  Before installing [!INCLUDE[navnowlong](includes/navnowlong_md.md)] on a computer, you must uninstall any other version of [!INCLUDE[navnow](includes/navnow_md.md)].  
+>  Before installing [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] on a computer, you must uninstall any other version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)].
+-->  
 
-#### To run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup  
+#### To run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)]  
 
 1.  Verify that the target computer meets the hardware and software requirements for the selected installation option. For more information, see [System Requirements for Microsoft Dynamics NAV](System-Requirements-for-Microsoft-Dynamics-NAV.md).  
 
-2.  Insert the [!INCLUDE[navnow](includes/navnow_md.md)] installation media or locate the [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup.exe file, and then double-click the Setup.exe file.  
+2.  Insert the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] installation media or locate the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].exe file, and then double-click the Setup.exe file.  
 
 3.  Choose **Next**.  
 
@@ -48,11 +61,11 @@ You use [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup to install softw
 9. When Setup is finished, choose **Close**.  
 
 ### Canceling Setup  
- Setup does not provide a **Cancel** button on all pages, but you can cancel an installation from any page by choosing the **Close** button in the upper-right corner. All [!INCLUDE[navnow](includes/navnow_md.md)] components are removed from the computer. The only software that Setup installs but cannot remove are:  
+ Setup does not provide a **Cancel** button on all pages, but you can cancel an installation from any page by choosing the **Close** button in the upper-right corner. All [!INCLUDE[navnow](../developer/includes/navnow_md.md)] components are removed from the computer. The only software that Setup installs but cannot remove are:  
 
 -   Database files, such as the Demo database.  
 
--   Prerequisites for [!INCLUDE[navnow](includes/navnow_md.md)] components that Setup can install, such as the .NET Framework.  
+-   Prerequisites for [!INCLUDE[navnow](../developer/includes/navnow_md.md)] components that Setup can install, such as the .NET Framework.  
 
 ## See Also  
  [How to: Choose Components to Install](How-to--Choose-Components-to-Install.md)   

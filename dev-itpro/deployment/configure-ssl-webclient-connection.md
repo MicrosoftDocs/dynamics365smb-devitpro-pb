@@ -31,7 +31,7 @@ To configure SSL, you must follow these steps.
 ##  <a name="Cert"></a> Obtaining and Installing an SSL Certificate  
 In a production environment, you should obtain an SSL certificate from a certification authority. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization. In a test environment or development environment, you can create your own self-signed certificate.  
   
-##  <a name="Binding"></a> Adding an HTTPS Binding That Uses the Certificate on the Microsoft Dynamics NAV Web Client Site  
+##  <a name="Binding"></a> Adding an HTTPS Binding That Uses the Certificate on the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Website  
  After you get the certificate, you add a binding to the https protocol on the website. When you add the binding, you associate it with the certificate.  
   
 ### Add an https binding with the certificate to the website  

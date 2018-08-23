@@ -24,7 +24,7 @@ To provision a [!INCLUDE[server](../developer/includes/server.md)] account, comp
 -   [Provisioning the Network Service Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#NSA)  
 
 ## Prerequisite
-Delete the **Microsoft Dynamics NAV** folder in the **ProgramData** folder of your system drive, for example, ```C:\ProgramData\Microsoft\Microsoft Dynamics NAV```. 
+Delete the **[!INCLUDE[prodslong](../developer/includes/prodlong.md)]** folder in the **ProgramData** folder of your system drive, for example, ```C:\ProgramData\Microsoft\Microsoft Dynamics 365 Business Central```. 
 
 The **ProgramData** is folder is typically hidden, so you might have to change the folder options for your system drive to show hidden files, folders, and drives.
 
@@ -42,7 +42,7 @@ If you are running the [!INCLUDE[server](../developer/includes/server.md)] under
 ### Enabling the account to log in as a service  
 Depending on various factors, the account may already have this ability to log in as a service. For example, if you have already installed SQL Server and configured it to run under the same account, SQL Server will have modified the account to log in as a service.
 
- When this permission is lacking, [!INCLUDE[server](../developer/includes/server.md) server instances may not be able to start.   
+ When this permission is lacking, [!INCLUDE[server](../developer/includes/server.md)] instances may not be able to start.   
 
 For instructions for enabling an account to log in as a service, see [Manage User Accounts in Windows Server](https://docs.microsoft.com/en-us/windows-server-essentials/manage/manage-user-accounts-in-windows-server-essentials).  
 
@@ -83,7 +83,10 @@ For more information, see [Service Principal Names](https://docs.microsoft.com/e
     The SID is an alphanumeric character string, such as S-1-5-20 or S-1-5-32-544. There are different ways to get the SID, such using Windows Management Instrumentation Control Command-line (WMIC) or the computer's registry.
     -   To use WMIC, open a command prompt, and run the following command:
     
-    ```wmic useraccount get name,sid```
+       ```
+        wmic useraccount get name,sid
+
+        ```
     
         This will display a list of user accounts and their SIDs. 
     
@@ -117,7 +120,7 @@ When you install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] d
 
 To verify server-level and database-level privileges on SQL Server after you create your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, use SQL Server Management Studio and, if necessary, modify privileges. If you have installed SQL Server with the guidelines in [Installation Considerations for Microsoft SQL Server](Installation-Considerations-for-Microsoft-SQL-Server.md), then SQL Server Management Studio is already installed on your computer. Otherwise, update your SQL Server installation to include the **Management Tools - Complete option for SQL Server** (for SQL Server 2012/2014.) For SQL Server 2016, SQL Server Management Studio can be downloaded and installed as a standalone application.  
 
-##### To assign necessary SQL Server privileges for the [!INCLUDE[server](../developer/includes/server.md)] account  
+#### Assign necessary SQL Server privileges for the [!INCLUDE[server](../developer/includes/server.md)] account  
 
 1.  Start SQL Server Management Studio and connect to the instance where the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database is installed.  
 

@@ -79,7 +79,7 @@ For information about how to create a [!INCLUDE[nav_web_server_instance_md](../d
 ### Securing the Connection to Microsoft Dynamics NAV Web Client With SSL  
  You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] or after the installation.  
 
- For more information, see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md) and [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection).  
+ For more information, see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md) and [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md).  
 
 ## See Also  
  [Dynamics NAV Web Client](Microsoft-Dynamics-NAV-Web-Client.md)   
