@@ -1,6 +1,6 @@
 ---
 title: User Authentication with Azure AD for Single Sign-on
-description: Associate an existing Microsoft account with Dynamics NAV user account to achieve single sign-on between the Web client and Office 365.
+description: Associate an existing Microsoft account with user account to achieve single sign-on between the Web client and Office 365.
 ms.custom: na
 ms.date: 10/17/2017
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-# Authenticating Dynamics NAV Users with Azure Active Directory
+# Authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Users with Azure Active Directory
 Azure Active Directory \(Azure AD\) is a cloud service that provides identity and access capabilities, such as for applications on Microsoft Azure, Microsoft Office 365, and for applications that install on-premises. If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured to use the AccessControlService credential type, you can associate the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user accounts with Azure AD accounts that users use to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], Office 365, and SharePoint.  
 
  For example, your users access a website, such as a SharePoint site. From there, they have single sign-on access to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] because you have configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure AD.  
@@ -67,7 +67,7 @@ In the overview page for the application, the **URL for Granting Access** field 
 
 ## Task 3: Configure [!INCLUDE[server](../developer/includes/server.md)] for Azure AD
 
-You can configure the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], modifying the CustomSettings.config file directly, or using the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)]. For more information, see [Configuring Server Instances](../administration/configure-server-instance.md).
+You can configure the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], modifying the CustomSettings.config file directly, or using the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)]. For more information, see [Configuring Server](../administration/configure-server-instance.md).
 
 1.	Configure the [!INCLUDE[server](../developer/includes/server.md)] instances that must support Azure AD to use `AccessControlService` as the credential type.
 
@@ -103,8 +103,6 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
     https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://CRONUSInternationLtd.onmicrosoft.com/Financials%26wreply=https://CRONUSInternationLtd.onmicrosoft.com/DynamicsNAV/SignIn.aspx
     ```
 
-    (For [!INCLUDE[nav2017](../developer/includes/nav2017.md)] and earlier versions, include `/WebClient` after `/DynamicsNAV`.)
-
 	**Parameter descriptions**:
 
 	`<AAD TENANT ID>` is the ID of the Azure AD tenant, for example `CRONUSInternationLtd.onmicrosoft.com`. To ensure that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] redirects to the right sign-in page, substitute `<AAD TENANT ID>` with a value according to the following:
@@ -119,12 +117,6 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 	
 	```
 	https://CRONUSInternationLtd.onmicrosoft.com/DynamicsNAV/SignIn.aspx
-	```
-	
-	Or for [!INCLUDE[nav2017](../developer/includes/nav2017.md)] and earlier versions:
-	 
-	```
-	https://CRONUSInternationLtd.onmicrosoft.com/DynamicsNAV/WebClient/SignIn.aspx
 	```
 	
 	The `wreply` parameter is optional. The wreply query parameter tells the Azure AD authentication service where to send the authentication token. If you do not specify the wreply parameter, it will be deducted from the URL in the browser.

@@ -41,9 +41,6 @@ IIS must have the following features enabled:
 -   Static Content  
 
 
-> [!IMPORTANT]
-> If you are hosting the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] on an IIS server farm that is using Application Request Routing (ARR), see [Configure Headers in Application Request Routing (ARR) Rules](How-to--Install-and-Configure-Internet-Information-Services-for-Microsoft-Dynamics-NAV-Web-Client.md#ARR).
-
 
 ## <a name="ARR"></a> Configure Headers in Application Request Routing (ARR) Rules
 
