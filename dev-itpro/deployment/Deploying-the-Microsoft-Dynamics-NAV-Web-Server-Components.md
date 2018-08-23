@@ -56,7 +56,7 @@ There are several PowerShell cmdlets that enable you to create, configure, and r
 
 > [!IMPORTANT]
 >Using  New-NAVWebServerInstance cmdlet requires that Microsoft .NET Core Windows Server Hosting is installed and IIS is installed and configured with the prerequisites. So unless you have previously installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] by using Setup, you will have to install and configure the prerequisites manually. For more information about the prerequisites, see
-[How to: Install and Configure Internet Information Services for Microsoft Dynamics NAV Web Client](How-to--Install-and-Configure-Internet-Information-Services-for-Microsoft-Dynamics-NAV-Web-Client.md).
+[Configure Internet Information Services](configure-iis.md).
 
 For information about how to create a [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance by using the New-NAVWebServerInstance cmdlet, see [Creating and Managing [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] Instances Using PowerShell](How-to--Set-Up-Multiple-Web-Server-Instances-for-the-Microsoft-Dynamics-NAV-Web-Client.md).
 
@@ -84,5 +84,5 @@ For information about how to create a [!INCLUDE[nav_web_server_instance_md](../d
 ## See Also  
  [Dynamics NAV Web Client](Microsoft-Dynamics-NAV-Web-Client.md)   
  [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)  
- [How to: Install and Configure Internet Information Services for Microsoft Dynamics NAV Web Client](How-to--Install-and-Configure-Internet-Information-Services-for-Microsoft-Dynamics-NAV-Web-Client.md)  
+ [Configure Internet Information Services](configure-iis.md)  
  [Configuring-the-Dynamics-NAV-Web-Server-and-Client.md](Configuring-the-Microsoft-Dynamics-NAV-Web-Server-and-Client.md)  
