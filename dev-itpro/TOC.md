@@ -1425,7 +1425,7 @@
 # [CLEARLASTERROR Function](CLEARLASTERROR-Function.md)
 # [Recommended Usage of GridLayout and FixedLayout](Recommended-Usage-of-GridLayout-and-FixedLayout.md)
 # [How to: Create a Microsoft Azure Virtual Machine Operating System Image for Microsoft Dynamics NAV](How-to--Create-a-Microsoft-Azure-Virtual-Machine-Operating-System-Image-for-Microsoft-Dynamics-NAV.md)
-# [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md)
+# [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection)
 # [File Virtual Table](File-Virtual-Table.md)
 # [GETACTION Function (TestPage)](GETACTION-Function--TestPage-.md)
 # [VALIDATE Function (Record)](VALIDATE-Function--Record-.md)
