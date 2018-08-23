@@ -41,7 +41,7 @@
 ## [License Types](License-Types.md)
 # [Deployment](Deployment.md)
 ## [Installation Options](Installation-Options.md)
-## [Provisioning the Microsoft Dynamics NAV Server Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md)
+## [Provisioning a Service Account](provision-server-account.md)
 ## [Installation Considerations for Microsoft SQL Server](Installation-Considerations-for-Microsoft-SQL-Server.md)
 ## [Working with Microsoft Dynamics NAV Setup](Working-with-Microsoft-Dynamics-NAV-Setup.md)
 ## [Deploying the Microsoft Dynamics NAV Web Server Components](Deploying-the-Microsoft-Dynamics-NAV-Web-Server-Components.md)

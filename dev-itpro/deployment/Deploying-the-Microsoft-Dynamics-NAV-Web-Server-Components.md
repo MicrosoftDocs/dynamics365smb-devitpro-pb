@@ -74,7 +74,7 @@ For information about how to create a [!INCLUDE[nav_web_server_instance_md](../d
 > [!TIP]  
 >  We recommend that you create and use a domain user account for running [!INCLUDE[server](../developer/includes/server.md)] and accessing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. The Network Service account is considered less secure because it is a shared account that can be used by other unrelated network services.  
 
- For more information, see [Provisioning the Microsoft Dynamics NAV Server Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md).  
+ For more information, see [Provisioning a Service Account](provision-server-account.md).  
 
 ### Securing the Connection to Microsoft Dynamics NAV Web Client With SSL  
  You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] or after the installation.  
