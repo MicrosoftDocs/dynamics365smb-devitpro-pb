@@ -11,38 +11,36 @@ ms.assetid: e4bd0a48-9e21-44e3-8a5d-858f02af5206
 caps.latest.revision: 24
 ---
 # Installing Business Central Using Setup
-You use [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the different components that comprise a [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] production, demonstration, or development environment. For a list of components, see [Components and Topology](product-and-architecture-overview.md). 
+You use [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the different components that comprise a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production, demonstration, or development environment. For a list of components, see [Components and Topology](product-and-architecture-overview.md).   
 
-[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] leads you through installation process, where you can install individual components or select predefined options that install a logical collection of components.
+## About Setup
+ 
+Setup is available on the installation media (DVD) in the setup.exe file. When run, Setup leads you through installation process, where you can install individual components or select predefined options that install a logical collection of components.
 
-## Default configurations
-Throughout Setup, you are presented with various configuration  
+### Configuration settings
 
+Throughout Setup, you are presented with various configuration settings that you can change. Some settings are required that you set them, and other settings have a default values. In many cases, the default value is sufficient for the initial installation. After you run Setup, you can change the configuration settings by using other tools such as the [!INCLUDE[admintool](../developer/includes/admin.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
+### Prerequisite Installations by Setup
 
+There are some components that require other software in order run, for example the database requires SQL Server and the Web client requires IIS. Setup will install several of these prerequisites, like installing SQL Server Express and enabling IIS. See the  
 
+## Before you run Setup
+
+1. Plan you deployment and identify the components that you want to install.
+2. Verify that the target computer meets the hardware and software requirements for the components that you want to install. For more information, see [System Requirements](system-requirement-business-central.md).
+3.  Make sure that you are an administrator on the computer where you run Setup.
+
+## Run Setup
 <!--
  or to capture a set of custom setup settings to save in a setup configuration file. In this procedure, you run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] without any customization or configuration. Opportunities for customization and configuration are described throughout the procedure.
 -->  
+1. In the installation media (DVD) folder, double-click the setup.exe.
+2. Follow Setup until you get to the **[prodlong](../developer/includes/prodlong.md)]** page
 
-> [!NOTE]  
->  You must be an administrator on the computer where you run Setup.  
+    ![Business Central Setup](../media/setup.png "Business Central Setup")
 
-## Running Setup to Install an Installation Option  
-<!-- 
-> [!NOTE]  
->  Before installing [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] on a computer, you must uninstall any other version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)].
--->  
-
-#### To run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)]  
-
-1.  Verify that the target computer meets the hardware and software requirements for the selected installation option. For more information, see [System Requirements for Microsoft Dynamics NAV](System-Requirements-for-Microsoft-Dynamics-NAV.md).  
-
-2.  Insert the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] installation media or locate the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].exe file, and then double-click the Setup.exe file.  
-
-3.  Choose **Next**.  
-
-4.  To accept the license terms, choose **I accept**.  
+    Choose 
 
 5.  Choose either **Install Demo** or **Choose an installation option**.  
 
@@ -52,20 +50,12 @@ Throughout Setup, you are presented with various configuration
 
      You can also choose **Customize** that appears below any of the three installation options to modify the list of components before you install. For more information, see [How to: Choose Components to Install](How-to--Choose-Components-to-Install.md).  
 
-7.  On the **Customize the Installation** page, choose **Next** to open the **Specify parameters** page. Any parameter that has an asterisk \(\*\) in front of the text box is a required parameter. Setup cannot complete unless you provide values for these parameters. In some cases, you may not know the correct value when you run Setup. You can add a temporary value. You can then modify the setting after you have finished running Setup by editing the appropriate configuration file. For more information, see [Configuring Microsoft Dynamics NAV](Configuring-Microsoft-Dynamics-NAV.md).  
-
-     For information about how to configure components in Setup, see [How to: Preconfigure Components](How-to--Preconfigure-Components.md).  
-
-8.  After you configure components, choose **Install** to start to install the software.  
-
-9. When Setup is finished, choose **Close**.  
-
-### Canceling Setup  
- Setup does not provide a **Cancel** button on all pages, but you can cancel an installation from any page by choosing the **Close** button in the upper-right corner. All [!INCLUDE[navnow](../developer/includes/navnow_md.md)] components are removed from the computer. The only software that Setup installs but cannot remove are:  
+## Cancel Setup  
+ Setup does not provide a **Cancel** button on all pages, but you can cancel an installation from any page by choosing the **Close** button in the upper-right corner. All [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components are removed from the computer. The only software that Setup installs but cannot remove are:  
 
 -   Database files, such as the Demo database.  
 
--   Prerequisites for [!INCLUDE[navnow](../developer/includes/navnow_md.md)] components that Setup can install, such as the .NET Framework.  
+-   Prerequisites for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components that Setup can install, such as the .NET Framework.  
 
 ## See Also  
  [How to: Choose Components to Install](How-to--Choose-Components-to-Install.md)   
