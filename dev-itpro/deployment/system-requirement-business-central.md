@@ -28,7 +28,7 @@ The following sections list the minimum hardware and software requirements to in
 |Supported browsers|<ul><li>Microsoft Edge.</li><li>Internet Explorer 11.</li><li>Google Chrome 61.0 for Windows.</li><li>Mozilla Firefox 55.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul><br><br>Cookies and JavaScript must be enabled in the browser.|  
 |Business inbox in Outlook|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
 |Sending data to Excel|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
-|Editing in Excel using the Excel Add-in |<ul><li>Excel 2016 or Excel Online.<br /><br />For more information, see [Setting up the Excel Add-In for Editing Dynamics NAV Data](/dynamics-nav/configuring-dynamics-nav-excel-addin).</li></ul>|  
+|Editing in Excel using the Excel Add-in |<ul><li>Excel 2016 or Excel Online.<br /><br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
 |SharePoint Online links|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
 |Printing reports to Excel or Word|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
 |Additional information|If you experience problems using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], you can try to turn off browser tools, such as translator tools that may run in the background.|  
@@ -61,7 +61,7 @@ The following sections list the minimum hardware and software requirements to in
 |Reports|<ul><li>For editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016 or Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul><li>For editing Word layouts:<ul><li>Microsoft Word 2016 or later</li></ul></ul>|  
 |Outlook client integration and mail merge|<ul><li>Microsoft Office 365, Microsoft Office 2016.</li></ul>|  
 |Import and export with Microsoft Excel and Office XML, and SharePoint links|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
-|Editing in Excel using the Excel Add-in |<ul><li>Excel 2016.<br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
+|Editing in Excel using the Excel Add-in |<ul><li>Excel 2016.<br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data). For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, see [Setting up the Excel Add-In for Editing Dynamics NAV Data](/dynamics-nav/configuring-dynamics-nav-excel-addin) since the same steps apply to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises.</li></ul>|  
 |OneNote integration|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|
 |Email logging|<ul><li>Active Directory and Microsoft Exchange Server 2013.</li><li>Microsoft Exchange Online, or Exchange Online as part of an Office 365 subscription.</li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li></ul>|  
