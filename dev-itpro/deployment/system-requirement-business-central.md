@@ -3,13 +3,13 @@ title: System Requirements for Business Central 2018
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central on-premises.
 author: jswymer
 ms.custom: na
-ms.reviewer: na
+ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 manager: edupont
-ms.date: 08/20/2018
+ms.date: 08/23/2018
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-premises
 
@@ -48,7 +48,7 @@ The following sections list the minimum hardware and software requirements to in
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 S, Home, Pro, Enterprise, or Education \(32-bit and 64-bit editions\).</li><li>Android 5.0 or higher (tablet and phone).</li><li> iOS 10.0 or higher (iPad and iPhone).</li></ul>|  
 |Additional hardware|<ul><li>1 GB RAM for Android and Windows.</li></ul>|  
-|Additional software|<ul><li>A third-party telephony or VoIP app such as Skype is required for placing calls from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>A third-party email program such as Outlook is required for sending emails from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>Microsoft Office 2013 SP1 or Microsoft Office 365 is required for sending data to Microsoft Excel or to Microsoft Word.</li></ul>|  
+|Additional software|<ul><li>A third-party telephony or VoIP app such as Skype is required for placing calls from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>A third-party email program such as Outlook is required for sending emails from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>Microsoft Office 2016 or Microsoft Office 365 is required for sending data to Microsoft Excel or to Microsoft Word.</li></ul>|  
 |Additional information|<ul><li>Device diagonal screen size 7” for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4” for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>|  
 
 ###  <a name="WinClient"></a> Dynamics NAV Client Requirements  
@@ -60,8 +60,8 @@ The following sections list the minimum hardware and software requirements to in
 |Hardware resources|<ul><li>Hard disk space: 200 MB.</li><li>Memory: 1 GB.</li></ul>|  
 |Reports|<ul><li>For editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016 or Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul><li>For editing Word layouts:<ul><li>Microsoft Word 2016 or later</li></ul></ul>|  
 |Outlook client integration and mail merge|<ul><li>Microsoft Office 365, Microsoft Office 2016.</li></ul>|  
-|Import and export with Microsoft Excel and Office XML, and SharePoint links|<ul><li>Microsoft Office 2016, Microsoft Office 2013 SP1, Microsoft Office 2010 SP2, or Microsoft Office 365.</li></ul>|  
-|Editing in Excel using the Excel Add-in |<ul><li>Excel 2016.<br />For more information, see [Setting up the Excel Add-In for Editing Dynamics NAV Data](configuring-dynamics-nav-excel-addin.md).</li></ul>|  
+|Import and export with Microsoft Excel and Office XML, and SharePoint links|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
+|Editing in Excel using the Excel Add-in |<ul><li>Excel 2016.<br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
 |OneNote integration|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|
 |Email logging|<ul><li>Active Directory and Microsoft Exchange Server 2013.</li><li>Microsoft Exchange Online, or Exchange Online as part of an Office 365 subscription.</li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li></ul>|  
@@ -74,7 +74,7 @@ The following sections list the minimum hardware and software requirements to in
 |-|-|  
 |Supported operating systems|<ul><li> Windows 10 Pro, Enterprise, or Education \(32-bit and 64-bit editions\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>|  
 |Hardware resources|<ul><li>Hard disk space: 200 MB.</li><li> Memory: 1 GB.</li></ul>|  
-|Reports|<ul><li>For creating and editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016, or</li><li>One of the following versions of Visual Studio:<ul><li>Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li><li>Visual Studio 2015 Professional or Enterprise edition with SQL Server Data Tools installed.<br />**Important:**  Before you install Visual Studio 2015, install Microsoft .NET Framework 4.7; otherwise, an error will occur when you compile or run RDLC reports. For more information, see [Report error "Visual Basic Command Line Compiler has stopped working"](http://go.microsoft.com/fwlink/?LinkID=722862).</li></ul></li></ul></ul><ul><li>For upgrading reports:<ul><li>Report Builder for SQL Server 2016</li></ul><li>For creating Word report layouts:<ul><li>Word 2013 or later</li></ul></li></ul>|  
+|Reports|<ul><li>For creating and editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016, or</li><li>One of the following versions of Visual Studio:<ul><li>Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li><li>Visual Studio 2015 Professional or Enterprise edition with SQL Server Data Tools installed.<br />**Important:**  Before you install Visual Studio 2015, install Microsoft .NET Framework 4.7; otherwise, an error will occur when you compile or run RDLC reports. For more information, see [Report error "Visual Basic Command Line Compiler has stopped working"](http://go.microsoft.com/fwlink/?LinkID=722862).</li></ul></li></ul></ul><ul><li>For upgrading reports:<ul><li>Report Builder for SQL Server 2016</li></ul><li>For creating Word report layouts:<ul><li>Word 2016 or later</li></ul></li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li></ul>|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.</li><li>SQL Server Native Client 11.0.</li><li>Report Builder for SQL Server 2016. This is not installed if a version of SQL Server Report Builder or Microsoft Visual Studio is already present on the target computer</li></ul></li><li>If the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] and [!INCLUDE[server](../developer/includes/server.md)] are on the same computer, then only a 64-bit operating system is supported.</li></ul>|  
 
@@ -143,7 +143,7 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 |Supported Operating Systems|<ul><li>When using OWA for iPad, OWA for iPad, or OWA for Android, your mobile device must use a supported Operating System listed in [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements.</li></ul>|  
 
 ###  <a name="Outlook"></a> Microsoft Outlook Add-In Requirements  
-The following table shows the minimum system requirements for the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Add-In for Outlook for synchronization with Outlook.
+The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Add-In for Outlook for synchronization with Outlook.
 
 |||  
 |-|-|  
