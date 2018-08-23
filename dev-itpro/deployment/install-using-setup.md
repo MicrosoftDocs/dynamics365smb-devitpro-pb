@@ -19,7 +19,7 @@ Setup is available on the installation media (DVD) in the setup.exe file. When r
 
 ### Configuration settings
 
-Throughout Setup, you are presented with various configuration settings that you can change. Some settings are required that you set them, and other settings have a default values. In many cases, the default value is sufficient for the initial installation. After you run Setup, you can change the configuration settings by using other tools such as the [!INCLUDE[admintool](../developer/includes/admin.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+Throughout Setup, you are presented with various configuration settings that you can change. Some settings are required that you set them, and other settings have a default values. In many cases, the default value is sufficient for the initial installation. After you run Setup, you can change the configuration settings by using other tools such as the [!INCLUDE[admintool](../developer/includes/admintool.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 ### Prerequisite Installations by Setup
 
