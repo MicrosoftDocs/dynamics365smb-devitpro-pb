@@ -2,7 +2,7 @@
 ## [Frequently asked questions](faq.md)
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 <!-- deployment-->
-# Deployment (deployment/deployment.md)
+# [Deployment](deployment/deployment.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
 ## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
