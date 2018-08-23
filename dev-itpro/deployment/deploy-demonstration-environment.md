@@ -1,5 +1,5 @@
 ---
-title: "Deploying the Microsoft Dynamics NAV Web Server Components in a Demonstration Environment"
+title: "Deploying Business Central a Demonstration Environment"
 author: edupont04
 ms.custom: na
 ms.date: 09/21/2017
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-# Deploying a Demonstration Environment
+# Deploying the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Demonstration Environment
 
 This deployment scenario installs the major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components on a single computer, complete with a base application and database with demonstration data. After the installation, you will have an end-to-end environment, where you can access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data from the Web client. The installation requires minimal hardware resources, preparation, and configuration.  
 
@@ -69,7 +69,7 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 
 2.  Make sure that the computer meets the hardware and software requirements.  
 
-    For more information, see [System Requirements](system-requirements-business-central.md).  
+    For more information, see [System Requirements](system-requirement-business-central.md).  
 
 
 ## Run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)]  

@@ -12,8 +12,6 @@ author: jswymer
 ---
 # Deploying the Microsoft Dynamics NAV Web and Mobile Clients
 
-**Applies to:** [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]. [See [!INCLUDE[nav2017](../developer/includes/nav2017.md)] version](Deploying-the-Microsoft-Dynamics-NAV-Web-Server-Components-2017.md).
-
 Giving users the capability to access to data by using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)], [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)], and Outlook add-in requires a Internet Information Services (IIS) web site as part of your deployment. The website, which we refer to as [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance, hosts the files that provide content and services to client users over the Internet. This article highlights several factors to consider to help you set up [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances that suit your deployment requirements.
 
 If you just want to get started installing the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).
@@ -58,7 +56,7 @@ There are several PowerShell cmdlets that enable you to create, configure, and r
 
 > [!IMPORTANT]
 >Using  New-NAVWebServerInstance cmdlet requires that Microsoft .NET Core Windows Server Hosting is installed and IIS is installed and configured with the prerequisites. So unless you have previously installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] by using Setup, you will have to install and configure the prerequisites manually. For more information about the prerequisites, see
-[How to: Install and Configure Internet Information Services for Microsoft Dynamics NAV Web Client](How-to--Install-and-Configure-Internet-Information-Services-for-Microsoft-Dynamics-NAV-Web-Client.md).
+[Configure Internet Information Services](configure-iis.md).
 
 For information about how to create a [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance by using the New-NAVWebServerInstance cmdlet, see [Creating and Managing [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] Instances Using PowerShell](How-to--Set-Up-Multiple-Web-Server-Instances-for-the-Microsoft-Dynamics-NAV-Web-Client.md).
 
@@ -76,15 +74,15 @@ For information about how to create a [!INCLUDE[nav_web_server_instance_md](../d
 > [!TIP]  
 >  We recommend that you create and use a domain user account for running [!INCLUDE[server](../developer/includes/server.md)] and accessing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. The Network Service account is considered less secure because it is a shared account that can be used by other unrelated network services.  
 
- For more information, see [Provisioning the Microsoft Dynamics NAV Server Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md).  
+ For more information, see [Provisioning a Service Account](provision-server-account.md).  
 
 ### Securing the Connection to Microsoft Dynamics NAV Web Client With SSL  
  You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] or after the installation.  
 
- For more information, see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md) and [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md).  
+ For more information, see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md) and [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md).  
 
 ## See Also  
  [Dynamics NAV Web Client](Microsoft-Dynamics-NAV-Web-Client.md)   
  [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)  
- [How to: Install and Configure Internet Information Services for Microsoft Dynamics NAV Web Client](How-to--Install-and-Configure-Internet-Information-Services-for-Microsoft-Dynamics-NAV-Web-Client.md)  
+ [Configure Internet Information Services](configure-iis.md)  
  [Configuring-the-Dynamics-NAV-Web-Server-and-Client.md](Configuring-the-Microsoft-Dynamics-NAV-Web-Server-and-Client.md)  
