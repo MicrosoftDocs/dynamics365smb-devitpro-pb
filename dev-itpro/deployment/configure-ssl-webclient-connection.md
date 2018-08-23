@@ -26,7 +26,7 @@ To configure SSL, you must follow these steps.
 -   [Redirecting HTTP to HTTPS (Optional)](configure-ssl-web-client-connection#Redirect)  
   
 > [!NOTE]  
->  You can configure SSL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)]. For more information, see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).  
+>  You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] using [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] .  
   
 ##  <a name="Cert"></a> Obtaining and Installing an SSL Certificate  
 In a production environment, you should obtain an SSL certificate from a certification authority. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization. In a test environment or development environment, you can create your own self-signed certificate.  
