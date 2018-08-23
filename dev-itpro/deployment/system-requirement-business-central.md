@@ -59,7 +59,6 @@ The following sections list the minimum hardware and software requirements to in
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(32-bit and 64-bit editions\).<br />**Important:** Windows 10 S is not supported.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>|  
 |Hardware resources|<ul><li>Hard disk space: 200 MB.</li><li>Memory: 1 GB.</li></ul>|  
 |Reports|<ul><li>For editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016 or Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul><li>For editing Word layouts:<ul><li>Microsoft Word 2016 or later</li></ul></ul>|  
-|Instant messaging and Telephony API|<ul><li>Skype for Business.</li></ul>|  
 |Outlook client integration and mail merge|<ul><li>Microsoft Office 365, Microsoft Office 2016.</li></ul>|  
 |Import and export with Microsoft Excel and Office XML, and SharePoint links|<ul><li>Microsoft Office 2016, Microsoft Office 2013 SP1, Microsoft Office 2010 SP2, or Microsoft Office 365.</li></ul>|  
 |Editing in Excel using the Excel Add-in |<ul><li>Excel 2016.<br />For more information, see [Setting up the Excel Add-In for Editing Dynamics NAV Data](configuring-dynamics-nav-excel-addin.md).</li></ul>|  
