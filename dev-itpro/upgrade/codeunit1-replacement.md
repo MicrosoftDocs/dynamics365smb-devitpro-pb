@@ -11,7 +11,7 @@ author: jswymer
 ---
 ## Replacement for Codeunit 1
 
-With [!INCLUDE[prodshort](includes/prodshort.md)], codeunit 1 Application Management is no longer used. For technical upgrades from [!INCLUDE[navnow_md](includes/navnow_md.md)], you must import the codeunit 1 that is provided in this article into your application database. 
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used. For technical upgrades from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you must import the codeunit 1 that is provided in this article into your application database. 
 
 
 ## Codeunit 1 Replacement

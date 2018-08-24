@@ -190,7 +190,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
      For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md). 
 
-9.    With [!INCLUDE[prodshort](includes/prodshort.md)], codeunit 1 Application Management is no longer used. For technical upgrades from [!INCLUDE[navnow_md](includes/navnow_md.md)], you must import the codeunit 1 that is provided in the following article into your application database: [Codeunit 1 Replacement](codeunit1-replacement.md).
+9.    With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used. For technical upgrades from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you must import the codeunit 1 that is provided in the following article into your application database: [Codeunit 1 Replacement](codeunit1-replacement.md).
 
 10.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
 
