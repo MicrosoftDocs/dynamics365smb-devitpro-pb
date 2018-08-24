@@ -28,11 +28,11 @@ The following figure illustrates the implementation:
 > [!IMPORTANT] 
 > It is important that code does not subscribe to the events in the new system codeunits 2000000001..2000000010 directly. Although this is not blocked, it will be in a future release.
 
-## Mapping Codeunit 1 triggers to System events
+## Mapping Codeunit 1 method triggers to events
 
-The following table lists the mappings between the codeunit 1 system trigger and the new events.
+The following table lists the mappings between the codeunit 1 method triggers and the new methods.
 
-|Codeunit 1 trigger|New object ID|New function name|
+|Codeunit 1 trigger|New object ID|New method|
 |------------------|-------------|-----------------|
 |CompanyOpen|40|CompanyOpen
 |GetSystemIndicator|40|GetSystemIndicator
