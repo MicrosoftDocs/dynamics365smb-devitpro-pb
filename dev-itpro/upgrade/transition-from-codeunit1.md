@@ -15,14 +15,6 @@ With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 **App
 
 However, this change will affect the upgrade process from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] and how you develop going forward.
 
-When you get the latest version of Business Central (it releases in October), you’ll notice that Codeunit 1 ApplicationManagement is missing. Not to worry, this is not a ‘bug’, it is by design.
-The old ApplicationManagement codeunit has been retired and new ‘system’ codeunits have been introduced in the 2 billion range.
-
-These special codeunits are created by C/SIDE when a database is created so you will always have them, compiled and ready to go. These new system codeunits do not contain code, all they contain are event publishers. The BC server will now call these event publishers instead of calling the respective functions in Codeunit 1 ApplicationManagement directly.
-
-We have added subscribers to these new business events in various places in the application code to ensure all the functionality still works as before, no functionality was removed. Most of the real business logic was already moved out of the ApplicationManagement codeunit so these subscribers were added where the business logic really resides. The integration events were also moved from Codeunit 1 to their respective new homes. 
-You can find a detailed mapping of where each function moved in this Excel : <link to xlsx>
-
 ## Overview
 
 The foundation of this change is events - publishers and subscribers. System codeunits do not contain code. They only contain event publishers. Instead of running codeunit 1 and calling respective functions, [!INCLUDE[server](../developer/includes/server.md)] runs system codeunits. The system codeunits will in turn raise published events. There are various codeunits that subscribe to these events. Like codeunit 1, these subscriber codeunits contain method triggers and integration event publishers, which means that they can call application functionality and raise events. The following figure illustrates the process:
@@ -30,10 +22,11 @@ The foundation of this change is events - publishers and subscribers. System cod
 ![System event publishers](../media/system-event-publishers.png "system event publishers")
 
 ### About system codeunits
--    They have IDs in the 2 billion range
--    You cannot modify them
--    Currently, we do not recommend that code subscribes to the events in the new system codeunits 2000000001..2000000010 directly. Although this is not blocked, it 
+-    They have IDs in the 2 billion range.
+-    You cannot modify them.
+-    Currently, we do not recommend that code subscribes to the events in the new system codeunits 2000000001..2000000010 directly. Although this is not blocked, it might be in a future release. Instead you should subscribe to one of the integration events which now reside next to the business logic.
 
+  
 ## Mapping Codeunit 1 method triggers to events
 
 The following table lists the mappings between the codeunit 1 method triggers and the new methods.
