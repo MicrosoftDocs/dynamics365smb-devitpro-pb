@@ -63,7 +63,7 @@ The following sections list the minimum hardware and software requirements to in
 |Import and export with Microsoft Excel and Office XML, and SharePoint links|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
 |Editing in Excel using the Excel Add-in |<ul><li>Excel 2016.<br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
 |OneNote integration|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|
-|Email logging|<ul><li>Active Directory and Microsoft Exchange Server 2013.</li><li>Microsoft Exchange Online, or Exchange Online as part of an Office 365 subscription.</li></ul>|  
+|Email logging|<ul><li>Active Directory and Microsoft Exchange Server 2016.</li><li>Microsoft Exchange Online, or Exchange Online as part of an Office 365 subscription.</li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li></ul>|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.</li></ul></li><li>The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is available in a 32-bit version and 64-bit version. On a 32-bit Windows operating system, the 32-bit version is run. On a 64-bit Windows operating system, the 64-bit version is run by default; however, you can also run the 32-bit version if it is required.</li><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] can only install the Excel Add-in if Excel is present on the target computer.</li><li>Outlook synchronization is not supported on 64-bit versions of Office.</li></ul>|  
 
@@ -137,7 +137,7 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 |||  
 |-|-|  
 |Supported Outlook Applications |<ul><li>Outlook 2016 or later</li><li>Outlook Web App</li><li>OWA for iPad</li><li>OWA for iPhone</li><li> OWA for Android.</li></ul>|
-|Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2016</li><li>Exchange Server 2013.<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
+|Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2016<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
 |Supported Authentication|<ul><li>The [!INCLUDE[server](../developer/includes/server.md)] must be configured to run with NavUserPassword, ACS, or AAD Credentials Type.<br /> Also, the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] must be configured for Secure Sockets Layer (SSL).</li></ul>|
 |Supported Browsers|<ul><li>When using the Outlook Web App (OWA), your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
 |Supported Operating Systems|<ul><li>When using OWA for iPad, OWA for iPad, or OWA for Android, your mobile device must use a supported Operating System listed in [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements.</li></ul>|  
@@ -148,7 +148,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |||  
 |-|-|  
 |Supported Outlook Applications |<ul><li>Outlook 2016</li></ul>|
-|Supported Exchange Servers|<ul><li>Exchange Server 2016</li><li>Exchange Server 2013</li><li>Exchange Online.</li></ul>|  
+|Supported Exchange Servers|<ul><li>Exchange Server 2016</li><li>Exchange Online.</li></ul>|  
 
 
 ##  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
