@@ -11,9 +11,9 @@ author: jswymer
 ---
 ## Transitioning from Codeunit 1
 
-With [!INCLUDE[prodshort](includes/prodshort.md)], codeunit 1 Application Management has been removed and replaced with new System codeunits. No functionality has been removed by this change. All system triggers triggers that were in codeunit 1 are now available through the system codeunits.
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management has been removed and replaced with new System codeunits. No functionality has been removed by this change. All system triggers triggers that were in codeunit 1 are now available through the system codeunits.
 
-However, this change will affect the upgrade process from [!INCLUDE[navnow_md](includes/navnow_md.md)] and how you develop going forward.
+However, this change will affect the upgrade process from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] and how you develop going forward.
 
 ## About the System Codeunits
 
@@ -31,8 +31,6 @@ The following figure illustrates the implementation:
 ## Mapping Codeunit 1 triggers to System events
 
 The following table lists the mappings between the codeunit 1 system trigger and the new events.
-
- 
 
 |Codeunit 1 trigger|New object ID|New function name|
 |------------------|-------------|-----------------|
