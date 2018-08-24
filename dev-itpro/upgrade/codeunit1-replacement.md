@@ -16,7 +16,7 @@ With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Appli
 
 ## Codeunit 1 Replacement
 
-Copy the code to a text editor, and save it as a .txt file type, then import it into the database.
+Copy the code to a text editor, and save it as a .txt file type. You will use this during a technical upgrade.
 
 ```
 OBJECT Codeunit 1 ApplicationManagement
