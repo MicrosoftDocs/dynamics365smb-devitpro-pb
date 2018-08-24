@@ -37,7 +37,6 @@ Converting a database does not upgrade the application objects (like pages, repo
 >  Before you start, make sure that you have applied the changes that are described in KB 2804640 [Code corrections for some Microsoft Dynamics NAV 2013 reports to prevent compilation errors with Report Viewer 2012 when upgrading to later versions of Microsoft Dynamics NAV](https://mbs.microsoft.com/knowledgebase/KBDisplay.aspx?scid=kb;EN-US;2804640).
 -->
 
-
 ## Task 1: Preparing the Old Database  
 To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database, the first task is to back up the old database and then prepare to convert it.
 
@@ -189,13 +188,15 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
      
 8.  Go to the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)], and set it to use the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that connects to the database.  
 
-     For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md).  
+     For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md). 
 
-9.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
+9.    With [!INCLUDE[prodshort](includes/prodshort.md)], codeunit 1 Application Management is no longer used. For technical upgrades from [!INCLUDE[navnow_md](includes/navnow_md.md)], you must import the codeunit 1 that is provided in the following article into your application database: [Codeunit 1 Replacement](codeunit1-replacement.md).
+
+10.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
 
     For more information, see [Compiling Objects](compiling-objects.md).
 
-10. <a name="fixerrors"></a>Fix compilation errors.  
+11. <a name="fixerrors"></a>Fix compilation errors.  
 
     If any errors occur, they are shown in the **Error List** window. For help on resolving the errors, see the following:
 
@@ -209,7 +210,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
     You can find all objects which did not compile in the **Object Designer** window, by setting a field filter on the **Compiled** field. 
 
-11. Recompile V2 extensions that you uninstalled previously.
+12. Recompile V2 extensions that you uninstalled previously.
 
     Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to compile the published extensions to make sure they are work with the new platform.
 
@@ -219,7 +220,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
     ``` 
 
-12. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
+13. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
 
     Use the [Install-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
 
@@ -229,7 +230,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
     Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> 
     ```
         
-13. <a name="mounttenant"></a>(Multitenant only) Mount the tenant.
+14. <a name="mounttenant"></a>(Multitenant only) Mount the tenant.
 
     Use the [Mount-NAVTenant cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
 
@@ -237,19 +238,19 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
     Mount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID> -DatabaseName <tenantdatabasename>
     ``` 
 
-14.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
+15.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
 
         For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md). 
 
-15.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
+16.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
         For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
 
-16. If you converted a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database, configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)].
+17. If you converted a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database, configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)].
 
     The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable in [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] After an Upgrade](upgrade-pages-report-for-search.md).
 
-17. Upload the customer license to the converted database.  
+18. Upload the customer license to the converted database.  
 
     For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
 

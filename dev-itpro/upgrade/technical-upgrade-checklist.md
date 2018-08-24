@@ -35,6 +35,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Open and convert the application database using [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].|[See...](converting-a-database.md#convertdb)||
 |Add custom control add-ins to the server instance.|[See...](converting-a-database.md#controladdins)||
 |Connect [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to the application database and compile all objects. **Important:** Choose to synchronize schema later)|[See...](converting-a-database.md#connectserver)||
+|Import codeunit 1 replacement|[See...](codeunit1-replacement.md)|
 |Fix errors.|[See...](converting-a-database.md#fixerrors)||
 |Repair V2 extensions.|[See...](converting-a-database.md#repairextensions)||
 |(Single tenant mode only) Install the V2 extensions previously uninstalled.|[See...](converting-a-database.md#installv2extensions)|
