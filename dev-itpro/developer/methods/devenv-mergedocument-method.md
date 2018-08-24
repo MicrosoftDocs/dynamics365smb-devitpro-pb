@@ -54,13 +54,13 @@ MergeDocument(ObjectType : 'Report'; ObjectID : Integer;ReportAction : 'SaveAsPd
  The path and the name of the report file that is returned by the report request page action or method calls **SaveAsWord**, **SaveAsPdf**, or **SaveAsExcel**. The parameter is empty for **Preview** and **Print** actions.  
 
 ## Applies To  
- Report layout implementation in codeunit 1 **ApplicationManagement**.  
+ Report layout implementation in codeunit 44.  
 
 ## Remarks  
  At report run time, this method is called if the [HasCustomLayout Method](devenv-HasCustomLayout-Method.md) determines that the report is currently set up to use a custom Word layout. The MergerDocument method is called after the [OnPostReport Trigger](../triggers/devenv-OnPostReport-Trigger.md) is invoked.  
 
 ## Example  
- The following example shows the default implementation on the method in codeunit 1. This example uses a variable **DocumentReportMgt** that has the data type **Codeunit** and subtype **Document Report Mgt.**.  
+ The following example shows the default implementation on the method in codeunit 44. This example uses a variable **DocumentReportMgt** that has the data type **Codeunit** and subtype **Document Report Mgt.**.  
 
 ```  
 IF ObjectType <> ObjectType::Report THEN  

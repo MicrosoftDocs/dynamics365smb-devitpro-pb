@@ -36,7 +36,7 @@ String := CAPTIONCLASSTRANSLATE(CaptionClassText)
  The caption string in the current local language of the client.  
   
 ## Remarks  
- You can use the [SELECTLATESTVERSION Method \(Database\)](devenv-selectlatestversion-method-database.md) to clear the current session's cache for the CaptionClassTranslate strings. The strings will then be reevaluated by the **CaptionClassTranslate** method trigger \(ID 15\) in codeunit 1.  
+ You can use the [SELECTLATESTVERSION Method \(Database\)](devenv-selectlatestversion-method-database.md) to clear the current session's cache for the CaptionClassTranslate strings. The strings will then be reevaluated by the **CaptionClassTranslate** method trigger \(ID 15\) in codeunit 42.  
 <!--  
 ## See Also  
  [CaptionClass Functionality](captionclass-functionality.md)
