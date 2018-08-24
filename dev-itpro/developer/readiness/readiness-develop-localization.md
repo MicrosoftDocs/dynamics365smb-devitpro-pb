@@ -35,7 +35,7 @@ Good and consistent tooltips and documentation will help users adopt your featur
 An important part of your localization app will be setup data for the production company that will help users get up and running quickly and with minimum effort.
 
 ## Service availability in additional countries
-In [countries](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations), where Microsoft has not delivered a localization, you can apply for access to build a localization on top of the international (W1) version of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] for the specific country, after submission of localization app(s) for validation, may come with a lead time of up to 3 months as it requires following:
+In [countries](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations), where Microsoft has not delivered a localization, you can apply for access to build a localization on top of the international (W1) version of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] for the specific country, after submission of localization app(s) for validation, is planned with the core Microsoft team as it requires following:
  * A business case and an agreement with local/regional Microsoft contacts to align on business and marketing activities related to making [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country
  * Commercial availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers in CSP pricelist for the country
  * Azure data centre operations capacity/availability and [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] platform translation to language(s) for the country
@@ -43,7 +43,6 @@ In [countries](https://docs.microsoft.com/en-us/dynamics365/business-central/dev
  * Translated Help available from your own website, accessible from [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] in your country
 
 All of the points listed above must be in place to declare [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country.
-New countries will be available in quarterly cadences subject to the above mentioned lead time.
 To apply for access to build [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] localization in countries, where Microsoft has not delivered a localization, fill in the  [[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] Localization Request form](https://go.microsoft.com/fwlink/?linkid=2005218).
 
 ## Business Central companion/mobile apps availability
