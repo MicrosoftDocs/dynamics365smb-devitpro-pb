@@ -12,29 +12,29 @@ author: jswymer
 ---
 # Deploying the Microsoft Dynamics NAV Web and Mobile Clients
 
-Giving users the capability to access to data by using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)], [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)], and Outlook add-in requires a Internet Information Services (IIS) web site as part of your deployment. The website, which we refer to as [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance, hosts the files that provide content and services to client users over the Internet. This article highlights several factors to consider to help you set up [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances that suit your deployment requirements.
+Giving users access to data by using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)], [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)], and Outlook add-in requires a Internet Information Services (IIS) web site as part of your deployment. The website, which we refer to as [!INCLUDE[webserver](../developer/includes/webserver.md)] instance, hosts the files that provide content and services to client users over the Internet. This article highlights several factors to consider to help you set up [!INCLUDE[webserver](../developer/includes/webserver.md)] instances that suit your deployment requirements.
 
 If you just want to get started installing the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).
 
 ## ASP .NET Core on IIS
 
-[!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances run on ASP.NET Core on IIS, which in part dictates the directory structure of the instances. For more information about ASP .NET Core, see [Introduction to ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/).
+[!INCLUDE[webserver](../developer/includes/webserver.md)] instances run on ASP.NET Core on IIS, which in part dictates the directory structure of the instances. For more information about ASP .NET Core, see [Introduction to ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/).
 
 ## Network Topology
-The following illustration shows the component infrastructure that supports [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances on your network.  
+The following illustration shows the component infrastructure that supports [!INCLUDE[webserver](../developer/includes/webserver.md)] instances on your network.  
 
 ![NAV Web Client network architecture](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
 
-Each [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance must connect to a [!INCLUDE[server](../developer/includes/server.md)], which in turn connects to the database that contains the application and business data. Multiple [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances can connect to the same [!INCLUDE[server](../developer/includes/server.md)]. You can deploy these components on one computer or on separate computers. For example, you can install the [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance on one computer and the [!INCLUDE[server](../developer/includes/server.md)] and SQL Server database on another computer. The topology that you choose depends on the network resources and the infrastructure of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components. The installation and configuration process is different for each scenario.
+Each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must connect to a [!INCLUDE[server](../developer/includes/server.md)], which in turn connects to the database that contains the application and business data. Multiple [!INCLUDE[webserver](../developer/includes/webserver.md)] instances can connect to the same [!INCLUDE[server](../developer/includes/server.md)]. You can deploy these components on one computer or on separate computers. For example, you can install the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance on one computer and the [!INCLUDE[server](../developer/includes/server.md)] and SQL Server database on another computer. The topology that you choose depends on the network resources and the infrastructure of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components. The installation and configuration process is different for each scenario.
 
 For information about the common deployment scenarios, see [Deployment Topologies](deployment-scenarios.md).  
 
-##  Creating a [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance  
+##  Creating a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance  
 
-There are two ways to create a [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance. You can use the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup or the [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] PowerShell cmdlets.
+There are two ways to create a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. You can use the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup or the [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets.
 
 ### Using [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup
-[!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup is the quickest way to get a web server instance up and running, and is typically how you install the first [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance in your deployment.
+[!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup is the quickest way to get a web server instance up and running, and is typically how you install the first [!INCLUDE[webserver](../developer/includes/webserver.md)] instance in your deployment.
 
 -   Setup installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], which does the following:
 
@@ -42,23 +42,23 @@ There are two ways to create a [!INCLUDE[nav_web_server_instance_md](../develope
     -   Installs a web server instance on IIS.
     -   Installs components and files in a **WebPublish** folder that enables you to add additional web server instances without having to use the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] installation media (DVD).
 
--   You can only use Setup to install a single [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance.
+-   You can only use Setup to install a single [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.
 
--   Setup does not let you choose the site deployment type for the web server instance. By default, it creates a SubSite instance. For more information, see [Site Deployment Types](How-to--Set-Up-Multiple-Web-Server-Instances-for-the-Microsoft-Dynamics-NAV-Web-Client.md#WebClientonIIS).    
+-   Setup does not let you choose the site deployment type for the web server instance. By default, it creates a SubSite instance. For more information, see [Site Deployment Types](configure-multiple-web-server-instances.md#WebClientonIIS).    
 For information about how to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).
 
-### Using [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] PowerShell cmdlets
-There are several PowerShell cmdlets that enable you to create, configure, and remove [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances from a command line interface. To create a web server instance, you use the [New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/new-navwebserverinstance) cmdlet, which has the following advantages over Setup:
+### Using [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets
+There are several PowerShell cmdlets that enable you to create, configure, and remove [!INCLUDE[webserver](../developer/includes/webserver.md)] instances from a command line interface. To create a web server instance, you use the [New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/new-navwebserverinstance) cmdlet, which has the following advantages over Setup:
 
 -   You can create multiple web server instances.
 
--   You have more flexibility regarding the [site deployment type](How-to--Set-Up-Multiple-Web-Server-Instances-for-the-Microsoft-Dynamics-NAV-Web-Client.md#WebClientonIIS) of the [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances on IIS. For example, you can create a root-level website instance  or a subsite application instance under a container website.
+-   You have more flexibility regarding the [site deployment type](configure-multiple-web-server-instances.md#WebClientonIIS) of the [!INCLUDE[webserver](../developer/includes/webserver.md)] instances on IIS. For example, you can create a root-level website instance  or a subsite application instance under a container website.
 
 > [!IMPORTANT]
 >Using  New-NAVWebServerInstance cmdlet requires that Microsoft .NET Core Windows Server Hosting is installed and IIS is installed and configured with the prerequisites. So unless you have previously installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] by using Setup, you will have to install and configure the prerequisites manually. For more information about the prerequisites, see
 [Configure Internet Information Services](configure-iis.md).
 
-For information about how to create a [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance by using the New-NAVWebServerInstance cmdlet, see [Creating and Managing [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] Instances Using PowerShell](How-to--Set-Up-Multiple-Web-Server-Instances-for-the-Microsoft-Dynamics-NAV-Web-Client.md).
+For information about how to create a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance by using the New-NAVWebServerInstance cmdlet, see [Creating and Managing [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell](../deployment/configure-multiple-web-server-instances.md).
 
 ## Deployment Phases  
  Typically, you will deploy the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] in phases, which can influence the network topology and security settings that you deploy. For example, in the development phase, you develop, test, and fine-tune the application. In this phase, you might consider deploying the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] in a single-computer scenario. When you move to the production phase, you deploy the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] in the full network infrastructure.  

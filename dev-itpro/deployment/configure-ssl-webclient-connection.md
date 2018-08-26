@@ -87,5 +87,5 @@ In a production environment, you should obtain an SSL certificate from a certifi
   
 ## See Also  
  [Microsoft Dynamics NAV Web Client](Microsoft-Dynamics-NAV-Web-Client.md)   
- [Deploying the Microsoft Dynamics NAV Web Server Components](Deploying-the-Microsoft-Dynamics-NAV-Web-Server-Components.md)   
+ [Business Central Web Server Overview](web-server-overview.md)   
  [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)

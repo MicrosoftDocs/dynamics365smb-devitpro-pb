@@ -51,7 +51,7 @@ You can set the cache synchronization interval by using the *CacheSynchronizatio
 ```
 <add key="CacheSynchronizationPeriod" value="hh:mm:ss" />
 ```
-For example, to set the interval to 50 seconds, set the `value` to `"00:00:50"`. For more information about the CustomSettings.config file, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).  
+For example, to set the interval to 50 seconds, set the `value` to `"00:00:50"`. For more information about the CustomSettings.config file, see [Configuring Business Central Server](configure-server-instance.md).  
 
 ## [!INCLUDE[server](../developer/includes/server.md)] connections to SQL Server
 Starting from [!INCLUDE[nav7long_md](../developer/includes/nav7long_md.md)], the [!INCLUDE[server](../developer/includes/server.md)] uses ADO.NET to connect to the SQL Server database. Installations of [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)] and earlier uses ODBC to connect to the SQL Server database.

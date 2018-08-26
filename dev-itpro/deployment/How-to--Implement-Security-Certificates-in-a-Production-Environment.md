@@ -66,7 +66,7 @@ After you have installed the root CA and the service certificate on the computer
   
 10. Stop the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
   
-11. Modify the following settings for the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).  
+11. Modify the following settings for the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).  
   
     |Key|New value|Description|  
     |---------|---------------|-----------------|  

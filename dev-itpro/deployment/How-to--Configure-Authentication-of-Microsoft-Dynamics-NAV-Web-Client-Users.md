@@ -66,7 +66,7 @@ You can configure the [!INCLUDE[navnow](includes/navnow_md.md)] installation to 
   
      In the [!INCLUDE[nav_admin](includes/nav_admin_md.md)], the parameter is named **Credential Type** and is on the **General** tab.  
   
-     For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).  
+     For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).  
   
 3.  Change the value to either **Windows**, **UserName**, **NavUserPassword**, or **AccessControlService**.  
   
@@ -168,7 +168,7 @@ You can configure the [!INCLUDE[navnow](includes/navnow_md.md)] installation to 
      In the **Connections** pane of IIS Manager, choose the root node for your computer, and then in the **Actions** pane, choose **Restart**.  
   
 ## See Also  
- [Deploying the Microsoft Dynamics NAV Web Server Components](Deploying-the-Microsoft-Dynamics-NAV-Web-Server-Components.md)   
+ [Business Central Web Server Overview](web-server-overview.md)   
  [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)   
  [Configuring Microsoft Dynamics NAV Web Client by Modifying the Web.config File](Configuring-Microsoft-Dynamics-NAV-Web-Client-by-Modifying-the-Web.config-File.md)   
  [How to: Specify When UI Elements Are Removed](How-to--Specify-When-UI-Elements-Are-Removed.md)

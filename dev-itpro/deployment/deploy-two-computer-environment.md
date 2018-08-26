@@ -1,5 +1,5 @@
 ---
-title: "Deploying the Microsoft Dynamics NAV Web Server Components in a Two Computer Environment"
+title: "Installing Business Central in a Two Computer Environment"
 ms.custom: na
 ms.date: 09/21/2017
 ms.reviewer: na
@@ -12,7 +12,7 @@ author: jswymer
 # Deploying [!INCLUDE[prodsshort](../developer/includes/prodshort.md)] in a Two-Computer Topology
 In this scenario, you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] on a computer separate than [!INCLUDE[server](../developer/includes/server.md)] and the SQL Server database components.  
 
- ![NAV Web client installation on two computers](media/NAV_Web_Client_Install_Two_Computers.png "NAV\_Web\_Client\_Install\_Two\_Computers")  
+ ![Installation on two computers](../media/two-computer-topology.png "Installation on two computers")  
 
 <!--
 > [!TIP]  
@@ -35,9 +35,9 @@ The following table includes tasks to perform before you install the [!INCLUDE[w
 
 |Task|Description|For more information, see|  
 |----------|-----------------|-------------------------------|  
-|On one computer. install [!INCLUDE[server](../developer/includes/server.md)] and SQL Server Database Components on one computer|Run the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] setup.exe file, choose **Advanced installation options** > **Choose an installation option** > **Custom**, and then choose the **Server** and **SQL Server Database Components** options.|[Install Business Central Using Setup](install-using-setup.md)|  
+|On one computer, install [!INCLUDE[server](../developer/includes/server.md)] and SQL Server Database Components on one computer|Run the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] setup.exe file, choose **Advanced installation options** > **Choose an installation option** > **Custom**, and then choose the **Server** and **SQL Server Database Components** options.|[Install Business Central Using Setup](install-using-setup.md)|  
 |On the other computer, install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].|Run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)], choose **Advanced installation options** > **Choose an installation option** > **Custom**, and then the **Web Server Components** option.|[How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)|  
-|Configure delegation from the web server to [!INCLUDE[server](../developer/includes/server.md)].|Because [!INCLUDE[server](../developer/includes/server.md)] is running on a different computer than the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], you must configure the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to delegate its access to [!INCLUDE[server](../developer/includes/server.md)] on behalf of the device trying to access from the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].|[How to: Configure Delegation for Microsoft Dynamics NAV Web Client](How-to--Configure-Delegation-for-Microsoft-Dynamics-NAV-Web-Client.md)|  
+|Configure delegation from the web server to [!INCLUDE[server](../developer/includes/server.md)].|Because [!INCLUDE[server](../developer/includes/server.md)] is running on a different computer than the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], you must configure the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to delegate its access to [!INCLUDE[server](../developer/includes/server.md)] on behalf of the device trying to access from the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].|[Configure Delegation for Business Central Web Server](configure-delegation-web-server.md)|  
 
 ##  <a name="PostInstall"></a> Post-installation Tasks  
  The following table includes tasks to configure the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] after installation. These tasks are optional depending on your organizational and network requirements.  
@@ -47,10 +47,10 @@ The following table includes tasks to perform before you install the [!INCLUDE[w
 |Change the user authentication method.|The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] supports the same authentication methods as the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], which include Windows, UserName, NavUserPassword, and AccessControlService. By default, the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] uses Windows authentication.|[How to: Configure Authentication of Microsoft Dynamics NAV Web Client Users](How-to--Configure-Authentication-of-Microsoft-Dynamics-NAV-Web-Client-Users.md)|  
 |Secure the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] with SSL.|You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].|[Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md)|  
 |Change the user authentication method.|The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] supports the same authentication methods as the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], which include Windows, UserName, NavUserPassword, and AccessControlService. By default, the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] uses Windows authentication.|[How to: Configure Authentication of Microsoft Dynamics NAV Web Client Users](How-to--Configure-Authentication-of-Microsoft-Dynamics-NAV-Web-Client-Users.md)|  
-|Set up multiple [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] applications on a website.|You can set up multiple web server instances for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] on the existing website. The web server instances will use the same address \(URL\) except with an alias that specifies the specific application.|[Creating and Managing [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] Instances Using PowerShell](How-to--Set-Up-Multiple-Web-Server-Instances-for-the-Microsoft-Dynamics-NAV-Web-Client.md)|  
+|Set up multiple [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] applications on a website.|You can set up multiple web server instances for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] on the existing website. The web server instances will use the same address \(URL\) except with an alias that specifies the specific application.|[Creating and Managing [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell](configure-multiple-web-server-instances.md)|  
 |Configure web browsers on devices.|The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] supports several different web browsers. To access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], the web browser must be enabled on a device with cookies and JavaScript.|[Web Client Requirements](system-requirment-business-central.md#WebClient)|  
 
 ## See Also  
- [Deploying the Microsoft Dynamics NAV Web Server Components](Deploying-the-Microsoft-Dynamics-NAV-Web-Server-Components.md)   
- [Deploying the Microsoft Dynamics NAV Web Server Components in a Single Computer Environment](deploy-single-computer-environment.md)   
- [Deploying the Microsoft Dynamics NAV Web Server Components in a Three Computer Environment](deploy-three-computer-environment.md)
+ [Business Central Web Server Overview](web-server-overview.md)   
+ [Installing Business Central in a Single Computer Environment](deploy-single-computer-environment.md)   
+ [Installing Business Central in a Three Computer Environment](deploy-three-computer-environment.md)
