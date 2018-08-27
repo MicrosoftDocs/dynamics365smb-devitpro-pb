@@ -1,0 +1,136 @@
+---
+title: "How to: Implement Security Certificates in Business Central"
+ms.custom: na
+ms.date: 06/05/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.prod: "dynamics-nav-2018"
+---
+# Using Security Certificates with Business Central On-Premises
+
+This article describes how to implement security certificates on your deployment environment, specifically the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and clients.
+
+## About Security Certificates
+You use certificates to help secure connections over a wide area network \(WAN\). A certificate is a file that [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] uses to prove its identity and establish a trusted connection with the client that is trying to connect. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can support the following configurations:  
+  
+-   *Chain trust*, which specifies that each certificate must belong to a hierarchy of certificates that ends in a root authority at the top of the chain.  
+  
+-   *Peer trust*, which specifies that both self-issued certificates and certificates in a trusted chain are accepted.  
+  
+ The implementation in this section describes the chain trust configuration, which is the more secure option.  
+  
+> [!NOTE]  
+>  This implementation does not use *Secure Sockets Layer \(SSL\)*. Although these implementations do use the public and private key infrastructure of SSL and SSL certificates, they use Windows Communication Foundation \(WCF\) transport-level security \(TLS\) over the TCP/IP protocol instead of https. This means that these are not strict SSL implementations.  
+  
+### Certificates for Production
+  
+In a production environment, you should obtain an certificate from a certification authority or trusted provider. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization. <!-- In a test environment, if you do not have certificate, then you can create your own self-signed certificate. For information about using self-signed certificates in a text environment, see [Walkthrough: Implementing Security Certificates in a Test Environment](Walkthrough--Implementing-Security-Certificates-in-a-Test-Environment.md). --> 
+  
+###  <a name="AboutProdCerts"></a> Obtaining Certificates
+ 
+In a production environment, you implement chain trust by obtaining X.509 service certificates from a trusted provider. These certificates and their root certification authority \(CA\) certificates must be installed in the certificates store on the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. The CA certificate must also be installed in the certificate store on computers that are running the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)] so that clients can validate the server.  
+  
+Most enterprises and hosting providers have their own infrastructure for issuing and managing certificates. You can also use these certificate infrastructures. The only requirement is that the service certificates must be set up for key exchange and therefore must contain both private and public keys. Additionally, the service certificates that are installed on [!INCLUDE[server](../developer/includes/server.md)] instances must have the Service Authentication and Client Authentication certificate purposes enabled.  
+  
+> [!NOTE]  
+>  An instance of [!INCLUDE[server](../developer/includes/server.md)] that has been configured for secure WAN communication always prompts users for authentication when they start the client, even when the client computer is in the same domain as [!INCLUDE[server](../developer/includes/server.md)].  
+  
+## Run the Certificates Snap-in for Microsoft Management Console
+  
+Some of the following procedures use the Certificates snap-in for Microsoft Management Console \(MMC\). If you do not already have this snap-in installed, you can add it to the MMC. For information see [Add the Certificates Snap-in to an MMC](http://go.microsoft.com/fwlink/?LinkID=699497).  
+  
+## Install and Configure the Certificates
+  
+You install the security certificates on the computers running [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. The root CA certificate and the service certificate are used in the configuration, but client certificates are not.  
+  
+1.  Follow the installation instructions that are available from your certificate provider to install the root CA and service certificates on the following computers:  
+  
+    -   Install the root CA on the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and all computers that are running [!INCLUDE[webserver](../developer/includes/webserver.md)] instances or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)].  
+  
+    -   Install the service certificate on the computer that is running [!INCLUDE[server](../developer/includes/server.md)] only.  
+  
+2.  Make sure that the **Server Authentication** and **Client Authentication** certificate purposes are enabled for the service certificate.  
+  
+    A certificate can be enabled for several different purposes. The **Server Authentication** and **Client Authentication** purposes must be enabled. You can enable or disable other purposes to suit your requirements.  
+  
+    You enable certificate purposes by using the Certificates Snap-in for MMC. For more information, see [Modify the Properties of a Certificate](http://go.microsoft.com/fwlink/?LinkID=699496).  
+  
+## Configure [!INCLUDE[server](../developer/includes/server.md)]
+  
+After you have installed the root CA and the service certificate on the computer running [!INCLUDE[server](../developer/includes/server.md)], you must grant access to the service account that is associated with the server so that the service account can access the service certificate’s private key. You must also change the configuration settings for [!INCLUDE[server](../developer/includes/server.md)] to enable remote logins.  
+  
+1.  In the left pane of MMC, expand the **Certificates \(Local Computer\)** node, expand the **Personal** node, and then select the **Certificates** subfolder.  
+  
+2.  In the right pane, right-click the certificate, select **All Tasks**, and then choose **Manage Private Keys**.  
+  
+3.  In the **Permissions** dialog box for the certificate, choose **Add**.  
+  
+4.  In the **Select Users, Computers, Service Accounts, or Groups** dialog box, enter the name of the dedicated domain user account that is associated with [!INCLUDE[server](../developer/includes/server.md)], and then choose the **OK** button.  
+  
+5.  In the **Full Control** field, select **Allow**, and then choose the **OK** button.  
+  
+6.  In the right pane, select the certificate.  
+  
+7.  In the **Certificate** dialog box, choose the **Details** tab, and then select the **Thumbprint** field.  
+  
+8.  Copy or note the value of the **Thumbprint** field.  
+  
+9. Stop the [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
+  
+10. Modify the following settings for the [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).  
+  
+    |Key|New value|Description|  
+    |---------|---------------|-----------------|  
+    |Credential Type|`NavUserPassword`, `Username`, or `AccessControlService`|The default value is `Windows`. When you change it to `NavUserPassword`, `Username`, or `AccessControlService`, client users who connect to the server are prompted for user name and password credentials.|  
+    |Certificate Thumbprint|Value of the **Thumbprint** field in the previous procedure.|This parameter is on the Client Services tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)]. Remove any leading or trailing spaces in the thumbprint.|  
+  
+12. Save and the new values for the server instance.  
+  
+13. Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.  
+  
+    If there is a problem, see Windows Event Viewer.  
+  
+## Configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]
+
+The chain trust configuration allows client users  to log on to one or more instances of [!INCLUDE[server](../developer/includes/server.md)] as long as their login credentials have been associated with user accounts in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]. The client validates that the server certificate is signed with the root CA.  
+  
+After you have installed the root CA on the computer running the [!INCLUDE[webserver](../developer/includes/webserver.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], you must modify the client configuration file as described here. 
+  
+### Modify the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] configuration file  
+  
+1.  On the computer that is installed the [!INCLUDE[webserver](../developer/includes/webserver.md)], open the [!INCLUDE[web_server_settings_file_md.md](../developer/includes/web_server_settings_file_md.md)] in a text editor, such as Notepad.
+  
+2. Change the following settings:  
+  
+    |Key|New value|Description|  
+    |---------|---------------|-----------------|  
+    |ClientServicesCredentialType|`NavUserPassword`, `Username`, or `AccessControlService`|The default value is `Windows`. When you change it to `NavUserPassword`, `Username`, or `AccessControlService`, client users who connect to the server are prompted for user name and password credentials.|  
+    |DnsIdentity|The subject name of the service certificate|The default value is \<identity>. Replace this with the subject name or common name \(CN\) of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|  
+  
+4.  Save the [!INCLUDE[web_server_settings_file_md.md](../developer/includes/web_server_settings_file_md.md)].  
+  
+For more information about configuring the credential type for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], see [Authentication and User Credential Type](users-credential-types.md).
+
+## Modify the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration file  
+  
+1.  Open the ClientUserSettings.config configuration file.  
+  
+     The location of this file is *Users\\\<*username*>\\AppData\\RoamingLocal\\Microsoft\\[!INCLUDE[prodlong](../developer/includes/prodlong.md)]\\<version>*.
+  
+     By default, this file is hidden. Therefore, you may have to change your folder options in Windows Explorer to view hidden files.  
+  
+    > [!NOTE]  
+    >  If you want to change default [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] settings for all future users, edit the default ClientUserSettings.config file — that is, the one in [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Be sure that you run your text editor with Administrator privileges when you do so.  
+  
+2.  Modify the following settings.  
+  
+    |Key|New value|Description|  
+    |---------|---------------|-----------------|  
+    |ClientServicesCredentialType|`NavUserPassword`, `Username`, or `AccessControlService`|The default value is `Windows`. When you change it to `NavUserPassword`, `Username`, or `AccessControlService`, client users are prompted for user name and password credentials. For more information on authentication mechanisms for [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], see [Users and Credential Types](Users-and-Credential-Types.md). For information on how to provision users with initial username and password values, see [How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md).|  
+    |DnsIdentity|The subject name of the service certificate.|The default value is \<identity>. Replace this with the subject name or common name \(CN\) of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|  
+  
+3.  Save and close the ClientUserSettings.config file.  
+  
+ When you starting the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], users are prompted for a valid user name and password.  
