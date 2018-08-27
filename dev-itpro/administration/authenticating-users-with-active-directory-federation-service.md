@@ -32,7 +32,7 @@ Your deployment must meet the following prerequisites:
         <!-- For more information, see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md) and [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md).-->
     -   [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (optional)
     -   [!INCLUDE[admintool](../developer/includes/admintool.md)] (optional)
-    -   Microsoft Dynamics NAV Administration Shell (optional)
+    -   [!INCLUDE[adminshell](../developer/includes/adminshell.md)] (optional)
 
 ## Configure AD FS to allow [!INCLUDE[prodshort](../developer/includes/prodshort.md)] authentication
 These steps are done by using the AD FS Management console on the server where AD FS is running.
@@ -42,7 +42,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
 
 1.  Open **Server Manager** on the computer that is running AD FS, and the choose **AD FS** to start **AD FS Management**.
 
-    ![AD FS Management](media/ADFS_Console.png "AD FS Management")
+    ![AD FS Management](../media/ADFS_Console.png "AD FS Management")
 2.  Right-click **Relying Party Trusts**, and then choose **Add Relying Party Trust**.
     The **Add Relying Party Trust Wizard** appears.
 3.  In the **Welcome** step, choose **Claims aware**, and then choose **Start**.
@@ -61,15 +61,15 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
 
     -    If you are setting up AD FS for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set this to the full URL for the Web client. The URL typically has the format:
 
-        ```
-        https://[web-server-computer]:[port]/[web-instance]
-        ```
+            ```
+            https://[web-server-computer]:[port]/[web-instance]
+            ```
 
-        For example:
+            For example:
 
-        ```
-        https://MyWebServer:8080/BC130
-        ```
+            ```
+            https://MyWebServer:8080/BC130
+            ```
 
     -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], use base URL for the Web client, which is the full URL without the ```/[web-instance]``` part. This typically has the format:
 
@@ -113,7 +113,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 ### Set up support for SAML 1.0 tokens
 1. In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
-    ![AD FS Edit Claims Rule](media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
+    ![AD FS Edit Claims Rule](../media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
 2. In the **Select Rule Template** step, choose **Transform an incoming Claim** template, and then choose **Next**.
 3. In the **Edit Rule** step, set the **Claim rule name** to ```name```, the **Incoming claim type** to ```UPN```, and the **Outgoing claim type** to ```Name```. Choose **OK** when done.
 4. Repeat steps 1 to 3 to add another rule, except this time, set the **Claim rule name** to ```objectidentifier```, the **Incoming claim type** to ```Primary SID```, and the **Outgoing claim type** to:
@@ -125,14 +125,14 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
     Choose **OK** when done.
 5. Close the **Edit Claim Rules** dialog box.
 
-    ![AD FS Edit Claims Rule Done](media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
+    ![AD FS Edit Claims Rule Done](../media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
 
 ### Set up support for JSON Web tokens (JWT)
 <!--JWT tokens are not supported by AD FS 2.0 or [!INCLUDE[navcrete_md](../developer/includes/navcrete_md.md)] (Cummulative Update 14 and earlier).-->
 
 1.  In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
-    ![AD FS Edit Claims Rule](media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
+    ![AD FS Edit Claims Rule](../media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
 2.  In the **Select Rule Template** step, choose **Send Claims Using a Custom Rule** template, and then choose **Next**.
 3. Set the **Claim rule name** to ```name```, and the  **Custom rule** to:
 
@@ -145,7 +145,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
     c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
 5.  Close the **Edit Claim Rules** dialog box.
-    ![AD FS Edit Claims Rule Done](media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
+    ![AD FS Edit Claims Rule Done](../media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
 6.  Start Window Powershell, and run the following command to define the token type for the relying party to be JWT:
 
     ```
@@ -196,9 +196,9 @@ You configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] by m
 
 Change the **ClientServicesCredentialType** setting to ```AccessControlService``` as shown:
 
-    ```
-    "ClientServicesCredentialType":  "AccessControlService",
-    ```
+```
+"ClientServicesCredentialType":  "AccessControlService",
+```
 
 The configuration changes are automatically picked up by the Internet Information Service (IIS).
 
