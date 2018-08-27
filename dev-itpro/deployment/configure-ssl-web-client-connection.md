@@ -17,13 +17,9 @@ We recommend that you secure [!INCLUDE[prodshort](../developer/includes/prodshor
   
 *SSL* is a web protocol that encrypts data that is transmitted over a network to make the data and the network more secure and reliable. A website that is enabled with SSL uses Hypertext Transfer Protocol Secure \(HTTPS\) instead of Hypertext Transfer Protocol \(HTTP\) as a communication protocol. Enabling SSL on a website requires that an SSL certificate is installed on the web server. An SSL certificate is a small file that the web server uses to prove its identity and establish a trusted connection with the browser that is trying to access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. When a browser connects to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], the web server replies by sending its certificate to the browser. This certificate contains the web server's public encryption key and the name of the authority that granted the certificate. The browser verifies the certificate using the authority's public key.  
   
-To configure SSL, you must follow these steps.  
+To configure SSL, you must follow the steps in this article.  
   
--   [Obtaining an SSL Certificate](configure-ssl-web-client-connection#Cert)  
-  
--   [Adding an HTTPS Binding That Uses the Certificate on the Web Server Instance](configure-ssl-web-client-connection#Binding)  
-  
--   [Redirecting HTTP to HTTPS (Optional)](configure-ssl-web-client-connection#Redirect)  
+
   
 > [!NOTE]  
 >  You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] using [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] .  
@@ -55,9 +51,9 @@ In a production environment, you should obtain an SSL certificate from a certifi
 7.  Choose the **OK** button, and then choose the **Close** button.  
   
 ##  <a name="Redirect"></a> Redirecting HTTP to HTTPS \(Optional\)  
- To ensure that users always access the site that is secured with SSL, you can automatically redirect HTTP requests to HTTPS. This means that users do not have to explicitly include https in the URL in the browser. For example, the nonsecure URL of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] could be http://MyWebclient:8080/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)] and the secure URL could be https://MyWebclient:443/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]. If a user types http://MyWebclient:8080/[!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)], the browser automatically redirects to **https://MyWebclient:443/[!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)]**.  
+ To ensure that users always access the site that is secured with SSL, you can automatically redirect HTTP requests to HTTPS. This means that users do not have to explicitly include https in the URL in the browser. For example, the nonsecure URL of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] could be `http://MyWebclient:8080/BC130` and the secure URL could be `https://MyWebclient:443/BC130`. If a user types `http://MyWebclient:8080/BC130`, the browser automatically redirects to `https://MyWebclient:443/BC130`.  
   
- There are different ways to redirect HTTP requests to HTTPS. The following procedure describes how to redirect HTTP requests to HTTPS by installing the Microsoft Application Request Routing for IIS 7 and modifying the [!INCLUDE[web_server_settings_file_md](../developer/includes/web_server_settings_file_md.md)] for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
+ There are different ways to redirect HTTP requests to HTTPS. The following procedure describes how to redirect HTTP requests to HTTPS by installing the Microsoft Application Request Routing for IIS 8 and modifying the [!INCLUDE[web_server_settings_file_md](../developer/includes/web_server_settings_file_md.md)].  
   
 ### Redirect HTTP to HTTPS  
   
