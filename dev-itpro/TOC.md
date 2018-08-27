@@ -402,7 +402,7 @@
 ## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
-## [Transitioning From Codeunit to System Codeunits](upgrade/transition-from-codeunit1.md)
+## [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
 ## [Converting a Database](upgrade/Converting-a-Database.md)
 ## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
 ## [Upgrading the Data](upgrade/Upgrading-the-Data.md)
