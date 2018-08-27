@@ -16,7 +16,7 @@
 ### [Installing Using Setup](deployment/install-using-setup.md)
 ### [Provisioning Servics Account](deployment/provision-server-account.md)
 ### [Business Central Web Server](deployment/web-server-overview.md)
-#### [Configure IIS](deployment/configure-multiple-web-server-instances.md)
+#### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-webclient-connection.md) 
 #### [Configure Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 #### [Configure Delegation](deployment/configure-delegation-web-server.md)
