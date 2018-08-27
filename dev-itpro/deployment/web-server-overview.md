@@ -1,6 +1,6 @@
 ---
 title: Deploy the Web Server Components
-description: Understand the network architecture, users, security, deployment phases for installing and configuring the Dynamics NAV Web Server Components.
+description: Understand the network architecture, users, security, deployment phases for installing and configuring the Business Central Web Server Components.
 ms.custom: na
 ms.date: 10/25/2017
 ms.reviewer: na
@@ -10,20 +10,19 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-# Deploying the Microsoft Dynamics NAV Web and Mobile Clients
+# [!INCLUDE[webserver](../developer/includes/webserver.md)] Overview
 
-Giving users access to data by using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)], [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)], and Outlook add-in requires a Internet Information Services (IIS) web site as part of your deployment. The website, which we refer to as [!INCLUDE[webserver](../developer/includes/webserver.md)] instance, hosts the files that provide content and services to client users over the Internet. This article highlights several factors to consider to help you set up [!INCLUDE[webserver](../developer/includes/webserver.md)] instances that suit your deployment requirements.
+Giving users access to data from the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], companion app, and Outlook add-in requires a Internet Information Services (IIS) website as part of your deployment. The website, which we refer to as [!INCLUDE[webserver](../developer/includes/webserver.md)] instance, hosts the files that provide content and services to client users over the Internet. This article highlights several factors to consider to help you set up [!INCLUDE[webserver](../developer/includes/webserver.md)] instances that suit your deployment requirements.
 
-If you just want to get started installing the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).
+If you just want to get started installing the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [Install Business Central Using Setup](install-using-setup.md).
 
 ## ASP .NET Core on IIS
-
 [!INCLUDE[webserver](../developer/includes/webserver.md)] instances run on ASP.NET Core on IIS, which in part dictates the directory structure of the instances. For more information about ASP .NET Core, see [Introduction to ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/).
 
 ## Network Topology
 The following illustration shows the component infrastructure that supports [!INCLUDE[webserver](../developer/includes/webserver.md)] instances on your network.  
 
-![NAV Web Client network architecture](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
+ ![Installation on one computer](../media/single-computer-topology.png "Installation on one computer")   
 
 Each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must connect to a [!INCLUDE[server](../developer/includes/server.md)], which in turn connects to the database that contains the application and business data. Multiple [!INCLUDE[webserver](../developer/includes/webserver.md)] instances can connect to the same [!INCLUDE[server](../developer/includes/server.md)]. You can deploy these components on one computer or on separate computers. For example, you can install the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance on one computer and the [!INCLUDE[server](../developer/includes/server.md)] and SQL Server database on another computer. The topology that you choose depends on the network resources and the infrastructure of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components. The installation and configuration process is different for each scenario.
 
@@ -31,16 +30,16 @@ For information about the common deployment scenarios, see [Deployment Topologie
 
 ##  Creating a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance  
 
-There are two ways to create a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. You can use the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup or the [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets.
+There are two ways to create a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. You can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] Setup or the [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets.
 
-### Using [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup
-[!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup is the quickest way to get a web server instance up and running, and is typically how you install the first [!INCLUDE[webserver](../developer/includes/webserver.md)] instance in your deployment.
+### Using [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] Setup
+Setup is the quickest way to get a web server instance up and running, and is typically how you install the first [!INCLUDE[webserver](../developer/includes/webserver.md)] instance in your deployment.
 
 -   Setup installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], which does the following:
 
     -   Installs and configure IIS with the required prerequisites, including Microsoft .NET Core - Windows Server Hosting <!--[Microsoft .NET Core - Windows Server Hosting package](https://aka.ms/dotnetcore.2.0.0-windowshosting)-->
     -   Installs a web server instance on IIS.
-    -   Installs components and files in a **WebPublish** folder that enables you to add additional web server instances without having to use the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] installation media (DVD).
+    -   Installs components and files in a **WebPublish** folder that enables you to add additional web server instances without having to use the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD).
 
 -   You can only use Setup to install a single [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.
 
@@ -69,20 +68,19 @@ For information about how to create a [!INCLUDE[webserver](../developer/includes
  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports four methods for authenticating users who try to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]: Windows, UserName, NavUserPassword, and AccessControlService. Windows authentication is configured by default. For more information, see [Users and Credential Types](Users-and-Credential-Types.md) and [Authentication and User Credential Type](users-credential-types.md).  
 
 ### Service Account for [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Database Access  
- When you install [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components, you must identify an Active Directory account to provide credentials for the servers. By default, [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] Setup runs [!INCLUDE[server](../developer/includes/server.md)] and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database under the Network Service account, a predefined local account that is used by the service control manager.  
+ When you install [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components, you must identify an Active Directory account to provide credentials for the servers. By default, Setup runs [!INCLUDE[server](../developer/includes/server.md)] and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database under the Network Service account, a predefined local account that is used by the service control manager.  
 
 > [!TIP]  
 >  We recommend that you create and use a domain user account for running [!INCLUDE[server](../developer/includes/server.md)] and accessing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. The Network Service account is considered less secure because it is a shared account that can be used by other unrelated network services.  
 
- For more information, see [Provisioning a Service Account](provision-server-account.md).  
+For more information, see [Provisioning a Service Account](provision-server-account.md).  
 
 ### Securing the Connection to Microsoft Dynamics NAV Web Client With SSL  
- You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] or after the installation.  
+You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] or after the installation.  
 
  For more information, see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md) and [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md).  
 
 ## See Also  
- [Dynamics NAV Web Client](Microsoft-Dynamics-NAV-Web-Client.md)   
- [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)  
+ [Dynamics NAV Web Client](Microsoft-Dynamics-NAV-Web-Client.md)
  [Configure Internet Information Services](configure-iis.md)  
  [Configuring-the-Dynamics-NAV-Web-Server-and-Client.md](Configuring-the-Microsoft-Dynamics-NAV-Web-Server-and-Client.md)  
