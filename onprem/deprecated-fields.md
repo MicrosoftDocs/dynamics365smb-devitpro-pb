@@ -52,6 +52,14 @@ The functionality for payments and reconciliation in the Danish version (FIK) ha
 ## Fields marked as ObsoleteState:Pending in [!INCLUDE[nav2018](includes/nav2018_md.md)]
 A number of fields are marked as ObsoleteState:Pending. There is no impact on code in this release.  
 
+### Iceland
+The following fields are mareded as ObsoleteState:Pending in the IS version.  
+
+|Table ID|Field ID|Comments|
+|--------|--------|--------|
+|21|10900|Will be removed in a later release.|
+|311|10900|Will be removed in a later release.|
+
 ### United Kingdom
 The following fields are marked as ObsoleteState:Pending in the UK version.  
 
