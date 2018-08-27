@@ -152,4 +152,4 @@ By default, Windows authentication on the [!INCLUDE[webserver](../developer/incl
 ## See Also  
  [Business Central Web Server Overview](web-server-overview.md)   
  [Installing Business Central in a Two Computer Environment](deploy-two-computer-environment.md)   
- [Installing Business Central in a Three Computer Environment](dpeloy-three-computer-environment.md)
+ [Installing Business Central in a Three Computer Environment](deploy-three-computer-environment.md)
