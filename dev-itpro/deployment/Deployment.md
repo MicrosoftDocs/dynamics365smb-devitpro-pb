@@ -1,18 +1,25 @@
 ---
 title: Deployment overview for Business Central
 description: Get an overview of your options for deploying Dynamics 365 Business Central
+author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-manager: edupont
-ms.date: 08/17/2018
+ms.author: edupont
+ms.date: 08/27/2018
 ---
 # Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
 The topics in the Deployment section are intended to help an administrator configure a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution online or on-premises.  
+
+## Take prospects and customers online
+
+You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer/includes/prodshort.md) by asking them to get a [free trial]((https://go.microsoft.com/fwlink/?linkid=847861)), and by showing them the apps in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=dynamics-365%3Bdynamics-365-business-central), for example. With [!INCLUDE[prodshort](../developer/includes/prodshort.md) online, data is stored in the Microsoft cloud, removing the need to install SQL Server locally, for example.  
+
+For more information about reseller readiness for [!INCLUDE[prodshort](../developer/includes/prodshort.md), see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md).  
 
 ## When to choose on-premises deployment
 
