@@ -13,7 +13,7 @@ ms.prod: "dynamics-nav-2018"
 This article describes how to implement security certificates on your deployment environment, specifically the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and clients.
 
 ## About Security Certificates
-You use certificates to help secure connections over a wide area network \(WAN\). A certificate is a file that [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] uses to prove its identity and establish a trusted connection with the client that is trying to connect. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can support the following configurations:  
+You use certificates to help secure connections over a wide area network \(WAN\). A certificate is a file that [!INCLUDE[server](../developer/includes/server.md)] uses to prove its identity and establish a trusted connection with the client that is trying to connect. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can support the following configurations:  
   
 -   *Chain trust*, which specifies that each certificate must belong to a hierarchy of certificates that ends in a root authority at the top of the chain.  
   
@@ -29,8 +29,8 @@ You use certificates to help secure connections over a wide area network \(WAN\)
 In a production environment, you should obtain an certificate from a certification authority or trusted provider. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization. <!-- In a test environment, if you do not have certificate, then you can create your own self-signed certificate. For information about using self-signed certificates in a text environment, see [Walkthrough: Implementing Security Certificates in a Test Environment](Walkthrough--Implementing-Security-Certificates-in-a-Test-Environment.md). --> 
   
 ###  <a name="AboutProdCerts"></a> Obtaining Certificates
- 
-In a production environment, you implement chain trust by obtaining X.509 service certificates from a trusted provider. These certificates and their root certification authority \(CA\) certificates must be installed in the certificates store on the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. The CA certificate must also be installed in the certificate store on computers that are running the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)] so that clients can validate the server.  
+
+You implement chain trust by obtaining X.509 service certificates from a trusted provider. These certificates and their root certification authority \(CA\) certificates must be installed in the certificates store on the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. The CA certificate must also be installed in the certificate store on computers that are running the [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] so that clients can validate the server.  
   
 Most enterprises and hosting providers have their own infrastructure for issuing and managing certificates. You can also use these certificate infrastructures. The only requirement is that the service certificates must be set up for key exchange and therefore must contain both private and public keys. Additionally, the service certificates that are installed on [!INCLUDE[server](../developer/includes/server.md)] instances must have the Service Authentication and Client Authentication certificate purposes enabled.  
   
@@ -92,9 +92,9 @@ After you have installed the root CA and the service certificate on the computer
   
     If there is a problem, see Windows Event Viewer.  
   
-## Configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]
+## Configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]
 
-The chain trust configuration allows client users  to log on to one or more instances of [!INCLUDE[server](../developer/includes/server.md)] as long as their login credentials have been associated with user accounts in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]. The client validates that the server certificate is signed with the root CA.  
+The chain trust configuration allows client users  to log on to one or more instances of [!INCLUDE[server](../developer/includes/server.md)] as long as their login credentials have been associated with user accounts in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The client validates that the server certificate is signed with the root CA.  
   
 After you have installed the root CA on the computer running the [!INCLUDE[webserver](../developer/includes/webserver.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], you must modify the client configuration file as described here. 
   
@@ -113,7 +113,7 @@ After you have installed the root CA on the computer running the [!INCLUDE[webse
   
 For more information about configuring the credential type for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], see [Authentication and User Credential Type](users-credential-types.md).
 
-## Modify the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration file  
+### Modify the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration file  
   
 1.  Open the ClientUserSettings.config configuration file.  
   
@@ -128,9 +128,12 @@ For more information about configuring the credential type for the [!INCLUDE[nav
   
     |Key|New value|Description|  
     |---------|---------------|-----------------|  
-    |ClientServicesCredentialType|`NavUserPassword`, `Username`, or `AccessControlService`|The default value is `Windows`. When you change it to `NavUserPassword`, `Username`, or `AccessControlService`, client users are prompted for user name and password credentials. For more information on authentication mechanisms for [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], see [Users and Credential Types](Users-and-Credential-Types.md). For information on how to provision users with initial username and password values, see [How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md).|  
+    |ClientServicesCredentialType|`NavUserPassword`, `Username`, or `AccessControlService`|The default value is `Windows`. When you change it to `NavUserPassword`, `Username`, or `AccessControlService`, client users are prompted for user name and password credentials.|  
     |DnsIdentity|The subject name of the service certificate.|The default value is \<identity>. Replace this with the subject name or common name \(CN\) of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|  
   
 3.  Save and close the ClientUserSettings.config file.  
   
- When you starting the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], users are prompted for a valid user name and password.  
+ When starting the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], users are prompted for a valid user name and password.
+
+## See Also
+[Authentication and User Credential Types](../administration/users-credential-types.md)   
