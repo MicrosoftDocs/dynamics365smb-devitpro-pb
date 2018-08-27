@@ -170,5 +170,5 @@ You can configure the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] ins
 ## See Also  
  [Business Central Web Server Overview](web-server-overview.md)   
  [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)   
- [Configuring Microsoft Dynamics NAV Web Client by Modifying the Web.config File](Configuring-Microsoft-Dynamics-NAV-Web-Client-by-Modifying-the-Web.config-File.md)   
+ [Configuring Web Server Instances](../administration/configure-web-server.md)   
  [How to: Specify When UI Elements Are Removed](How-to--Specify-When-UI-Elements-Are-Removed.md)

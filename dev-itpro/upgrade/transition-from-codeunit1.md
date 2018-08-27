@@ -33,9 +33,13 @@ The following table lists the mappings between the codeunit 1 method triggers an
 
 |Codeunit 1 trigger|New object ID|New method|
 |------------------|-------------|-----------------|
+|CompanyClose|40|CompanyClose
 |CompanyOpen|40|CompanyOpen
 |GetSystemIndicator|40|GetSystemIndicator
-|CompanyClose|40|CompanyClose
+|OnAfterCompanyClose|40|OnAfterCompanyClose
+|OnAfterCompanyOpen|40|OnAfterCompanyOpen
+|OnBeforeCompanyClose|40|OnBeforeCompanyClose
+|OnBeforeCompanyOpen|40|OnBeforeCompanyOpen
 |FindPrinter|44|GetPrinterName
 |ApplicationVersion|9015|ApplicationVersion
 |CustomApplicationVersion|N/A|N/A
@@ -83,11 +87,7 @@ The following table lists the mappings between the codeunit 1 method triggers an
 |ReportScheduler|44|ScheduleReport
 |OnBeforeOpenSettings|9170|OnBeforeOpenSettings
 |OnAfterGetApplicationVersion|9015|OnAfterGetApplicationVersion
-|OnBeforeCompanyOpen|40|OnBeforeCompanyOpen
-|OnAfterCompanyOpen|40|OnAfterCompanyOpen
 |OnRoleCenterOpen|9170|OnRoleCenterOpen
-|OnBeforeCompanyClose|40|OnBeforeCompanyClose
-|OnAfterCompanyClose|40|OnAfterCompanyClose
 |OnAfterGetSystemIndicator|79|OnAfterGetSystemIndicator
 |OnAfterFindPrinter|44|OnAfterGetPrinterName
 |OnAfterGetDefaultRoleCenter|9170|OnAfterGetDefaultRoleCenter

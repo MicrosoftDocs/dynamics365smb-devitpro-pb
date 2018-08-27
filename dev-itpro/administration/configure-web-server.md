@@ -16,7 +16,7 @@ Accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from the [!I
 ## <a name="WebClientSettingsFile"></a>About the configuration file
 The configuration file for the web server instances is a .json file type called **navsettings.json**. The navsettings.json file is a Java Script Object Notification file type that is similar to files that use the XML file format.
 
-After installation, you can change the configuration by modifying the [!INCLUDE[web_server_settings_file_md.md](../developer/includes/web_server_settings_file_md.md)]. There are two ways to modify this file: directly or using PowerShell.
+After installation, you can change the configuration by modifying the navsettings.json. There are two ways to modify this file: directly or using PowerShell.
 
 ### Where to find the navsettings.json or web.config file
 The navsettings.json file is stored in the physical path of the web server instance, which is by default is *%systemroot%\\inetpub\\wwwroot\\[WebServerInstanceName]*.
