@@ -10,7 +10,7 @@ ms.prod: "dynamics-nav-2018"
 ---
 # Using Security Certificates with Business Central On-Premises
 
-This article describes how to implement security certificates on your deployment environment, specifically the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and clients.
+This article describes how to implement security certificates on your deployment environment, which incudes modifications to the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and clients.
 
 ## About Security Certificates
 You use certificates to help secure connections over a wide area network \(WAN\). A certificate is a file that [!INCLUDE[server](../developer/includes/server.md)] uses to prove its identity and establish a trusted connection with the client that is trying to connect. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can support the following configurations:  
@@ -26,7 +26,9 @@ You use certificates to help secure connections over a wide area network \(WAN\)
   
 ### Certificates for Production
   
-In a production environment, you should obtain an certificate from a certification authority or trusted provider. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization. <!-- In a test environment, if you do not have certificate, then you can create your own self-signed certificate. For information about using self-signed certificates in a text environment, see [Walkthrough: Implementing Security Certificates in a Test Environment](Walkthrough--Implementing-Security-Certificates-in-a-Test-Environment.md). --> 
+In a production environment, you should obtain an certificate from a certification authority or trusted provider. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization.
+
+<!-- In a test environment, if you do not have certificate, then you can create your own self-signed certificate. For information about using self-signed certificates in a text environment, see [Walkthrough: Implementing Security Certificates in a Test Environment](Walkthrough--Implementing-Security-Certificates-in-a-Test-Environment.md). --> 
   
 ###  <a name="AboutProdCerts"></a> Obtaining Certificates
 
@@ -35,7 +37,7 @@ You implement chain trust by obtaining X.509 service certificates from a trusted
 Most enterprises and hosting providers have their own infrastructure for issuing and managing certificates. You can also use these certificate infrastructures. The only requirement is that the service certificates must be set up for key exchange and therefore must contain both private and public keys. Additionally, the service certificates that are installed on [!INCLUDE[server](../developer/includes/server.md)] instances must have the Service Authentication and Client Authentication certificate purposes enabled.  
   
 > [!NOTE]  
->  An instance of [!INCLUDE[server](../developer/includes/server.md)] that has been configured for secure WAN communication always prompts users for authentication when they start the client, even when the client computer is in the same domain as [!INCLUDE[server](../developer/includes/server.md)].  
+>  An instance of [!INCLUDE[server](../developer/includes/server.md)] that has been configured for secure WAN communication always prompts users for authentication when they start the client, even when the client computer is in the same domain as [!INCLUDE[server](../developer/includes/server.md)].
   
 ## Run the Certificates Snap-in for Microsoft Management Console
   
@@ -100,7 +102,7 @@ After you have installed the root CA on the computer running the [!INCLUDE[webse
   
 ### Modify the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] configuration file  
   
-1.  On the computer that is installed the [!INCLUDE[webserver](../developer/includes/webserver.md)], open the [!INCLUDE[web_server_settings_file_md.md](../developer/includes/web_server_settings_file_md.md)] in a text editor, such as Notepad.
+1.  On the computer that is installed the [!INCLUDE[webserver](../developer/includes/webserver.md)], open the [navsetting.json configuration file](../administration/configure-web-server.md#WebClientSettingsFile) in a text editor, such as Notepad.
   
 2. Change the following settings:  
   
@@ -109,9 +111,8 @@ After you have installed the root CA on the computer running the [!INCLUDE[webse
     |ClientServicesCredentialType|`NavUserPassword`, `Username`, or `AccessControlService`|The default value is `Windows`. When you change it to `NavUserPassword`, `Username`, or `AccessControlService`, client users who connect to the server are prompted for user name and password credentials.|  
     |DnsIdentity|The subject name of the service certificate|The default value is \<identity>. Replace this with the subject name or common name \(CN\) of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|  
   
-4.  Save the [!INCLUDE[web_server_settings_file_md.md](../developer/includes/web_server_settings_file_md.md)].  
+4.  Save the navsetting.json configuration file.  
   
-For more information about configuring the credential type for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], see [Authentication and User Credential Type](users-credential-types.md).
 
 ### Modify the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration file  
   
