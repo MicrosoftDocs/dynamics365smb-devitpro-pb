@@ -53,7 +53,7 @@ To create a new web server instance, you need access to the **WebPublish** folde
 
 - This folder is available on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\13x\Web Client\WebPublish". 
 
-- If you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], this folder has the path "[!INCLUDE[prodinstall_md](../developer/includes/prodinstall.md)]\Web Client\WebPublish".
+- If you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], this folder has the path "[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client\WebPublish".
 
 You can use either of these locations or you can copy the folder to more convenient location on your computer or network.
 
@@ -130,7 +130,7 @@ SubSite example:
 
 -  Susbtitute *8081* with the port number that you want to bind the instance to. If you do not specify a port number, then port 80 is used. 
     
--  Substitute *C:\WebClient\WebPublish* with the path to your WebPublish folder. By default, the cmdlet looks in the'[!INCLUDE[prodinstall](../developer/includes/prodinstall.md)]\Web Client' folder. So if you are working on a computer where the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] are installed, you do not have to set this parameter.
+-  Substitute *C:\WebClient\WebPublish* with the path to your WebPublish folder. By default, the cmdlet looks in the'[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client' folder. So if you are working on a computer where the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] are installed, you do not have to set this parameter.
 
 > [!NOTE]  
 >  This command only sets the required parameters of the NAVWebServerInstance cmdlet. The cmdlet has several other parameters that can use to configure the web server instance. For more information about the syntax and parameters, see [New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance).  
