@@ -101,5 +101,5 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 >  If you get an error and the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] does not open, then see [Troubleshooting Web Server and Web Client Installation](https://docs.microsoft.com/en-us/dynamics-nav/troubleshooting-the-microsoft-dynamics-nav-web-client-installation) in the Dev and IT Pro help for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to try to resolve the problem.  
 
 ## See Also  
- [Deploying the Microsoft Dynamics NAV Web Server Components](Deploying-the-Microsoft-Dynamics-NAV-Web-Server-Components.md)   
+ [Business Central Web Server Overview](web-server-overview.md)   
  [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)

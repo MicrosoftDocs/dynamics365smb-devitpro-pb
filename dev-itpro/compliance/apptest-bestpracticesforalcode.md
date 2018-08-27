@@ -37,6 +37,7 @@ Use the listed abbreviations for each type of object in the file naming:
 |----------|---------------------------|
 |Page      |Pag|
 |Page Extension|PagExt|
+|Page Customization|PagCust|
 |Codeunit  |Cod|
 |Table     |Tab|
 |Table Extension|TabExt|

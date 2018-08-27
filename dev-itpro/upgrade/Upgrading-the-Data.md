@@ -64,6 +64,10 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 > [!NOTE]
 >If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete.
 
+6. Prepare for codeunit 1 removal
+
+    With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, if you have any custom code in codeunit 1, export the existing codeunit 1 as a .fob or .txt file. 
+
 ## Task 1: Prepare the old database
 
 1. Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database to build all application objects.  
@@ -450,7 +454,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
 ## Task 18: Update the Dynamics NAV Web client configuration file (navsettings.json)
 If you have installed the [!INCLUDE[nav_web_server_md](../developer/includes/nav_web_server_md.md)], populate the navsettings.json file for the [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance with the settings of the old web.config file.
 
-For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modifying the NavSettings.json File](Configuring-Microsoft-Dynamics-NAV-Web-Client-by-Modifying-the-Web.config-File.md).  
+For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modifying the NavSettings.json File](configure-web-server.md.md).  
 
 <!-- deprecated ##  <a name="UploadEncryptionKeys"></a> Task 16: Import Payment Services and Data Encryption Key \(Optional\)  
 
@@ -467,7 +471,9 @@ For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modi
 
 The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-reports-for-search.md).
 
-##  <a name="DeleteUpgCodeunits"></a> Task 20: Delete the upgrade objects
+## Task 20. Transition the custom code in the old codeunit 1 to use the new system event implentation. 
+
+##  <a name="DeleteUpgCodeunits"></a> Task 21: Delete the upgrade objects
 At this point, you have upgraded the database to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
 
 When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  

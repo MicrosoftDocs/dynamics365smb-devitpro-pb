@@ -1,5 +1,5 @@
 ---
-title: "Deploying the Microsoft Dynamics NAV Web Server Components in a Single Computer Environment"
+title: "Installing Business Central in a Single Computer Environment"
 ms.custom: na
 ms.date: 09/21/2017
 ms.reviewer: na
@@ -12,10 +12,11 @@ author: jswymer
 # Deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a Single-Computer Topology
 In this scenario, you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on the same computer.  
 
- ![NAV Web Client installation on one computer](media/Nav_Web_Client_Install_Single_Computer.png "Nav\_Web\_Client\_Install\_Single\_Computer")  
-
+ ![Installation on one computer](../media/single-computer-topology.png "Installation on one computer")  
+<!--
 > [!TIP]  
 >  For a step-by-step example that describes how to deploy this scenario, see [Walkthrough: Installing the Microsoft Dynamics NAV Web Server Components on a Single Computer](Walkthrough--Installing-the-Microsoft-Dynamics-NAV-Web-Server-Components-on-a-Single-Computer.md).  
+-->
 
 ## Pre-Installation Tasks  
 The following table includes tasks to perform before you install.  
@@ -40,13 +41,13 @@ The following table includes tasks that configure the [!INCLUDE[webservercompone
 
 |Task|Description|For more information, see|  
 |----------|-----------------|-------------------------------|  
-|Change the user authentication method.|The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] supports the same authentication methods as the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], which include Windows, UserName, NavUserPassword, and AccessControlService. By default, Windows authentication is used.|[How to: Configure Authentication of Microsoft Dynamics NAV Web Client Users](How-to--Configure-Authentication-of-Microsoft-Dynamics-NAV-Web-Client-Users.md)|  
+|Change the user authentication method.|The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports the following authentication methods: Windows, UserName, NavUserPassword, and AccessControlService. By default, Windows authentication is used.|[Authentication and User Credential Type](users-credential-types.md)|  
 |Secure the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] with SSL.|You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].|[Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md)|  
-|Change the configuration of the [!INCLUDE[nav_web_server_instance](../developer/includes/nav_web_server_instance_md.md)].|There are several parameters in the [!INCLUDE[web_server_settings_file_md](../developer/includes/web_server_settings_file_md.md)] for the [!INCLUDE[nav_web_server_instance](../developer/includes/nav_web_server_instance_md.md)] that you can modify to change the behavior of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Some of the more common parameters include the [!INCLUDE[server](../developer/includes/server.md)] instance, company, language, time zone, regional settings, session time out, and online Help URL.|[Configuring Dynamics NAV Web Client by Modifying the Navsettings.json File](Configuring-Microsoft-Dynamics-NAV-Web-Client-by-Modifying-the-Web.config-File.md)|  
-|Set up multiple [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] applications.|You can set up multiple web server instances for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] on the existing website. The web server instances will use the same address \(URL\) except with an alias that specifies the specific application.|[Creating and Managing [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] Instances Using PowerShell](How-to--Set-Up-Multiple-Web-Server-Instances-for-the-Microsoft-Dynamics-NAV-Web-Client.md)|  
+|Change the configuration of the [!INCLUDE[nav_web_server_instance](../developer/includes/nav_web_server_instance_md.md)].|There are several parameters in the [!INCLUDE[web_server_settings_file_md](../developer/includes/web_server_settings_file_md.md)] for the [!INCLUDE[nav_web_server_instance](../developer/includes/nav_web_server_instance_md.md)] that you can modify to change the behavior of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Some of the more common parameters include the [!INCLUDE[server](../developer/includes/server.md)] instance, company, language, time zone, regional settings, session time out, and online Help URL.|[Configuring Dynamics NAV Web Client by Modifying the Navsettings.json File](configure-web-server.md.md)|  
+|Set up multiple [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] applications.|You can set up multiple web server instances for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] on the existing website. The web server instances will use the same address \(URL\) except with an alias that specifies the specific application.|[Creating and Managing [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell](configure-multiple-web-server-instances.md)|  
 |Configure web browsers on devices.|The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] supports several different web browsers. To access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], the web browser must be enabled on a device with cookies and JavaScript.|[Web Client Requirements](system-requirment-business-central.md#WebClient)|  
 
 ## See Also  
- [Deploying the Microsoft Dynamics NAV Web Server Components](Deploying-the-Microsoft-Dynamics-NAV-Web-Server-Components.md)   
- [Deploying the Microsoft Dynamics NAV Web Server Components in a Two Computer Environment](deploy-two-computer-environment.md)   
- [Deploying the Microsoft Dynamics NAV Web Server Components in a Three Computer Environment](deploy-three-computer-environment.md)
+ [Business Central Web Server Overview](web-server-overview.md)   
+ [Installing Business Central in a Two Computer Environment](deploy-two-computer-environment.md)   
+ [Installing Business Central in a Three Computer Environment](deploy-three-computer-environment.md)
