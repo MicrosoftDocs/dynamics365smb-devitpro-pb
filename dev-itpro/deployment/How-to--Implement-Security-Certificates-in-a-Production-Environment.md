@@ -119,4 +119,4 @@ After you have installed the root CA on the computer running the [!INCLUDE[nav_w
   
 4.  Save the [!INCLUDE[web_server_settings_file_md.md](../developer/includes/web_server_settings_file_md.md)].  
   
-     For more information about configuring the credential type for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], see [How to: Configure Authentication of Microsoft Dynamics NAV Web Client Users](How-to--Configure-Authentication-of-Microsoft-Dynamics-NAV-Web-Client-Users.md).
+     For more information about configuring the credential type for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], see [Authentication and User Credential Type](users-credential-types.md).

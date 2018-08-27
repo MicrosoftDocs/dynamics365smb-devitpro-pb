@@ -12,7 +12,7 @@ ms.assetid: 186b2dcd-97d5-499d-928e-15c069bb18f1
 caps.latest.revision: 13
 manager: edupont
 ---
-# Configuring Dynamics NAV Web Client Delegation
+# Configuring Delegation for Business Central Web Server
 When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)], and [!INCLUDE[server](../developer/includes/server.md)] are on separate computers, the client device interacts with [!INCLUDE[server](../developer/includes/server.md)] through the computer that is running [!INCLUDE[webserver](../developer/includes/webserver.md)]. [!INCLUDE[webserver](../developer/includes/webserver.md)] is performing actions on the client device's behalf. This process is known as *impersonation*. Impersonation cannot be used across multiple computers, so you must set up delegation from [!INCLUDE[webserver](../developer/includes/webserver.md)] to [!INCLUDE[server](../developer/includes/server.md)]. Delegation occurs when [!INCLUDE[webserver](../developer/includes/webserver.md)] forwards a request from a device request to the [!INCLUDE[server](../developer/includes/server.md)] service so that the [!INCLUDE[server](../developer/includes/server.md)] service can impersonate the device.  
   
 -   [Delegating Access from the Web Server to the Server Instance](configure-delegation-web-server.md#Delegate)  
@@ -44,7 +44,7 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
 5.  On the **Delegation** tab, choose **Trust this user for delegation to specified services only**, and then choose **Use Kerberos only**.  
   
     > [!NOTE]  
-    >  The **Use Kerberos Only** option does not work for some network configurations with [!INCLUDE[navnow](../developer/includes/prodshort.md)]. If you get a server error when you try open the [!INCLUDE[webserver](../developer/includes/webserver.md)], then disable the **Use Kerberos Only** option and see whether this fixes the error. For more information about this error, see [Troubleshooting: A server error occurred and the content cannot be displayed](Troubleshooting--A-server-error-occurred-and-the-content-cannot-be-displayed.md).  
+    >  The **Use Kerberos Only** option does not work for some network configurations with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If you get a server error when you try open the [!INCLUDE[webserver](../developer/includes/webserver.md)], then disable the **Use Kerberos Only** option and see whether this fixes the error. For more information about this error, see [Troubleshooting: A server error occurred and the content cannot be displayed](Troubleshooting--A-server-error-occurred-and-the-content-cannot-be-displayed.md).  
   
 6.  You must add the following service entries for the computer that is running [!INCLUDE[server](../developer/includes/server.md)], where **NAVSERVER** indicates the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
   
@@ -69,11 +69,11 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
   
 13. Choose the **OK** button to close the dialog box.  
   
-##  <a name="RegisterSPN"></a> Registering Service Principal Names for Microsoft Dynamics NAV Server  
+##  <a name="RegisterSPN"></a> Registering Service Principal Names for [!INCLUDE[server](../developer/includes/server.md)]  
  When [!INCLUDE[server](../developer/includes/server.md)] is using a dedicated domain user account as its logon account, then you must register service principal names \(SPN\) for the [!INCLUDE[server](../developer/includes/server.md)] on the domain user account to make delegation work. An SPN is the name by which a client uniquely identifies an instance of a service, using the account under which the service runs. To register SPNs, you used the setspn command-line tool that is available in Windows Server 2008 and Windows 7.  
   
 > [!NOTE]  
->  You do not have to perform this task if the domain user account has permissions to register SPNs. In this case, SPNs for [!INCLUDE[server](../developer/includes/server.md)] will be automatically registered when [!INCLUDE[server](../developer/includes/server.md)] instance starts and then unregistered when the [!INCLUDE[server](../developer/includes/server.md)] instance stops. For information about how to configure the service account to register SPNs, see [Provisioning the Microsoft Dynamics NAV Server Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md).  
+>  You do not have to perform this task if the domain user account has permissions to register SPNs. In this case, SPNs for [!INCLUDE[server](../developer/includes/server.md)] will be automatically registered when [!INCLUDE[server](../developer/includes/server.md)] instance starts and then unregistered when the [!INCLUDE[server](../developer/includes/server.md)] instance stops. For information about how to configure the service account to register SPNs, see [Provisioning the Service Account](provision-server-account.md).  
   
 #### To create a service principal name  
   
@@ -105,8 +105,8 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
     setspn -A BCSERVER/BC130.corp:7046 corp\bcdomainuser  
     ```  
   
-##  <a name="Kernel"></a> Configuring Kernel Mode Authentication on the Microsoft Dynamics NAV Web Client Website  
-By default, Windows authentication on the [!INCLUDE[webserver](../developer/includes/webserver.md)] site on IIS is set to use kernel mode authentication. Kernel-mode authentication improves authentication performance. However, when you are using delegation with Kerberos, you must either disable kernel mode or configure it to use the credentials of the application pool of [!INCLUDE[webserver](../developer/includes/webserver.md)]; otherwise, authentication will fail and [!INCLUDE[webserver](../developer/includes/webserver.md)] will not be able to connect to [!INCLUDE[server](../developer/includes/server.md)]. This is because kernel mode authentication runs under the machine account of the computer that is running IIS and the [!INCLUDE[!INCLUDE[webserver](../developer/includes/webserver.md)], while the [!INCLUDE[webserver](../developer/includes/webserver.md)] runs under the user account of the user trying to access [!INCLUDE[navnow](../developer/includes/prodshort.md)].  
+##  <a name="Kernel"></a> Configuring Kernel Mode Authentication on the [!INCLUDE[webserver](../developer/includes/webserver.md)]   
+By default, Windows authentication on the [!INCLUDE[webserver](../developer/includes/webserver.md)] site on IIS is set to use kernel mode authentication. Kernel-mode authentication improves authentication performance. However, when you are using delegation with Kerberos, you must either disable kernel mode or configure it to use the credentials of the application pool of [!INCLUDE[webserver](../developer/includes/webserver.md)]; otherwise, authentication will fail and [!INCLUDE[webserver](../developer/includes/webserver.md)] will not be able to connect to [!INCLUDE[server](../developer/includes/server.md)]. This is because kernel mode authentication runs under the machine account of the computer that is running IIS and the [!INCLUDE[!INCLUDE[webserver](../developer/includes/webserver.md)], while the [!INCLUDE[webserver](../developer/includes/webserver.md)] runs under the user account of the user trying to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
   
  As a best practice, you should configure kernel mode authentication to use the application pool credentials, as described in the following procedure.  
   

@@ -15,7 +15,7 @@ Although you can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md
 
 |Cmdlet|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|
 |------------|---------------------------------------|
-|[New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/new-navwebserverinstance)|Creates a new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance and binds this instance to a Dynamics NAV Server instance. |
+|[New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/new-navwebserverinstance)|Creates a new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance and binds this instance to a [!INCLUDE[server](../developer/includes/server.md)] instance. |
 |[Set-NAVWebServerInstanceConfiguration](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVWebServerInstanceConfiguration)|Specifies configuration values for a named [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.|
 |[Get-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Get-NAVWebServerInstance)|Gets the information about the [!INCLUDE[webserver](../developer/includes/webserver.md)] instances that are registered on a computer.|
 |[Remove-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Remove-NAVWebServerInstance)| Removes an existing [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.|  
@@ -41,7 +41,7 @@ There are different ways to launch this module and start using the cmdlets:
   ```  
   For example:
   ```
-  Import-Module -Name "C:\Program Files\Microsoft Dynamics NAV\130\Service\NAVWebClientManagement.psm1"
+  Import-Module -Name "C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\NAVWebClientManagement.psm1"
   ```
 
     For more information about starting Windows PowerShell, see [Starting Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/setup/starting-windows-powershell).
