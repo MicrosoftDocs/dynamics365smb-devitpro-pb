@@ -34,7 +34,7 @@ The following table includes tasks for installing the [!INCLUDE[prodshort](../de
 
 |Task|Description|For more information, see|  
 |----------|-----------------|-------------------------------|  
-|Install [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and SQL Server database components.|Run the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] setup.exe file, choose the **Advanced installation options** > **Choose an installation option** > **Custom**, and then choose the **Server**,  **SQL Server Database Components**, **Server**, and **Web Server Components** options.|[Install Business Central Using Setup](install-using-setup.md)<br /><br /> [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)|  
+|Install [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and SQL Server database components.|Run the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] setup.exe file, choose the **Advanced installation options** > **Choose an installation option** > **Custom**, and then choose the **Server**,  **SQL Server Database Components**, **Server**, and **Web Server Components** options.|[Install Business Central Using Setup](install-using-setup.md)|  
 
 ##  <a name="PostInstall"></a> Post-installation Tasks  
 The following table includes tasks that configure the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] after installation. These tasks are optional depending on your organizational and network requirements.  

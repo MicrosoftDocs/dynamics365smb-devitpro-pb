@@ -139,6 +139,5 @@ SubSite example:
 After you create the web server instance, if you want to change its configuration, you can use the Set-NAVWebServerInstanceConfiguration cmdlet. Or, you can modify the configuration file (navsettings.json) of the instance directly. For more information, see [Configuring Web Server Instances](../administration/configure-web-server.md).  
 
 ## See Also  
-[Business Central Web Server Overview](../deployment/web-server-overview.md)   
-[How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)   
+[Business Central Web Server Overview](../deployment/web-server-overview.md)     
 [Configuring Web Server Instances](../administration/configure-web-server.md)

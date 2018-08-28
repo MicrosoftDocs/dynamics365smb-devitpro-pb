@@ -53,4 +53,3 @@ On the server farm in IIS, add or edit a routing rule to include a server variab
 |`HTTP_X_FORWARED_PROTO`|`http` ot `https`|`true`|
 ## See Also  
  [Business Central Web Server Overview](web-server-overview.md)   
- [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)

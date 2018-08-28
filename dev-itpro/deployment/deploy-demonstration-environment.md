@@ -102,4 +102,4 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 
 ## See Also  
  [Business Central Web Server Overview](web-server-overview.md)   
- [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)
+ 

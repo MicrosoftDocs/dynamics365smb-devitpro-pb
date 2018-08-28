@@ -29,7 +29,6 @@ Your deployment must meet the following prerequisites:
     -   [!INCLUDE[server](../developer/includes/server.md)]
     -   [!INCLUDE[webserver](../developer/includes/webserver.md)] installed and configured to use SSL (https)
 
-        <!-- For more information, see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md) and [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md).-->
     -   [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (optional)
     -   [!INCLUDE[admintool](../developer/includes/admintool.md)] (optional)
     -   [!INCLUDE[adminshell](../developer/includes/adminshell.md)] (optional)

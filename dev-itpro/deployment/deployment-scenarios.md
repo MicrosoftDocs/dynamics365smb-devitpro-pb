@@ -32,4 +32,6 @@ This section describes how to install and configure the [!INCLUDE[webservercompo
 |Three-computer|Installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on separate computers.| [Deploying in a Three Computer Environment](deploy-three-computer-environment.md)| 
   
 ## See Also  
- [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)
+[Install Business Central Using Setup]  
+[Business Central Web Server Overview](web-server-overview.md)
+

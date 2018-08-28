@@ -168,7 +168,6 @@ You can configure the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] ins
      In the **Connections** pane of IIS Manager, choose the root node for your computer, and then in the **Actions** pane, choose **Restart**.  
   
 ## See Also  
- [Business Central Web Server Overview](web-server-overview.md)   
- [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md)   
+ [Business Central Web Server Overview](web-server-overview.md)     
  [Configuring Web Server Instances](../administration/configure-web-server.md)   
  [How to: Specify When UI Elements Are Removed](How-to--Specify-When-UI-Elements-Are-Removed.md)

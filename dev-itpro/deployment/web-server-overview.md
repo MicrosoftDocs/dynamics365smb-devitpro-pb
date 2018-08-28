@@ -44,7 +44,7 @@ Setup is the quickest way to get a web server instance up and running, and is ty
 -   You can only use Setup to install a single [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.
 
 -   Setup does not let you choose the site deployment type for the web server instance. By default, it creates a SubSite instance. For more information, see [Site Deployment Types](configure-multiple-web-server-instances.md#WebClientonIIS).    
-For information about how to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).
+For information about how to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [Install Business Central Using Setup](install-using-setup.md).
 
 ### Using [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets
 There are several PowerShell cmdlets that enable you to create, configure, and remove [!INCLUDE[webserver](../developer/includes/webserver.md)] instances from a command line interface. To create a web server instance, you use the [New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/new-navwebserverinstance) cmdlet, which has the following advantages over Setup:
@@ -78,7 +78,7 @@ For more information, see [Provisioning a Service Account](provision-server-acco
 ### Securing the Connection to Microsoft Dynamics NAV Web Client With SSL  
 You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] or after the installation.  
 
- For more information, see [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md) and [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md).  
+ For more information, see [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md).  
 
 ## See Also  
  [Dynamics NAV Web Client](Microsoft-Dynamics-NAV-Web-Client.md)

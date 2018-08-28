@@ -94,7 +94,7 @@ You can have multiple instances of any of the core components in a production en
 |Component|Purpose|  
 |---------------|-------------|  
 |[Microsoft Dynamics NAV Help Server](Microsoft-Dynamics-NAV-Help-Server.md)|A website with the Help content for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the languages that your version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes. You can deploy a single Help Server for all users, or customer-specific Help Servers, depending on your requirements.|  
-|Web Server Components. See [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).|The components that are needed to enable [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]s to connect with a browser.|  
+|Web Server Components. See install web client.|The components that are needed to enable [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]s to connect with a browser.|  
 |[Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)|A tool for configuring and managing [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] sites.|  
 |[Development Environment (C/SIDE)](Development-Environment--C-SIDE-.md)|The Development Environment for creating and modifying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] applications in C/AL.|  
 |[Microsoft Office Outlook Add-In](Microsoft-Office-Outlook-Add-In.md)|A component for synchronizing data, such as to-dos, contacts, and tasks, between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Outlook.|  
