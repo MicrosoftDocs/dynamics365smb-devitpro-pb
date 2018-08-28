@@ -37,7 +37,7 @@ To log deadlocks, you must enable deadlock logging on the [!INCLUDE[server](../d
 
 -   To enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], open the server instance for editing, and then select the **Enable Deadlock Monitoring** check box in the **Database** section.
 
-    For more information about how to use the [!INCLUDE[admintool](../developer/includes/admintool.md)], see [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).
+    For more information about how to use the [!INCLUDE[admintool](../developer/includes/admintool.md)], see [Business Central Server Administration Tool](administration-tool.md).
 
 -   To enable logging by using the Set-NAVServerConfiguration cmdlet, include the *keyname EnableDeadlockMonitoring keyvalue true* parameters in the command, such as:
 

@@ -90,7 +90,7 @@ Once the slow subquery has been identified, you can create an index to improve i
 As you can see, poor performance might not be caused by the SmartSQL optimization. However, the fact that SmartSQL queries are not cached will only amplify the issue. It won’t help to customize the page or change the visibility of the field either. If a FlowField is contained in the metadata of the page, it will be calculated.
 
 ## See Also
-[Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)  
+[Business Central Server Administration Tool](administration-tool.md)  
 [SQL Server Profiler](https://docs.microsoft.com/en-us/sql/tools/sql-server-profiler/sql-server-profiler)  
 [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshoot-query-performance-using-query-store.md)  
 [SQL Trace](https://docs.microsoft.com/en-us/sql/relational-databases/sql-trace/sql-trace)
