@@ -32,7 +32,7 @@ After you install [!INCLUDE[server](../developer/includes/server.md)], you can c
 
 -   Using the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
-    For more information, see [Settings in the Microsoft Dynamics NAV Administration Console](configure-server-instance.md#NavAdminSettings) and [Business Central Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
+    For more information, see [Settings in the Microsoft Dynamics NAV Administration Console](configure-server-instance.md#NavAdminSettings) and [Business Central Server Administration Tool](administration-tool.md).  
 
 -   Using the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) that is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 

@@ -126,7 +126,7 @@ UNTIL Customer.NEXT = 0;
  [Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
  [Bulk Inserts](optimize-sql-bulk-inserts.md)   
  [GET Method \(Record\)](../developer/methods/devenv-GET-Method-Record.md)   
- [FIND Method \(Record\)](../developer/methods/devenv-FIND-Method-Recordmethods/devenv-md)   
+ [FIND Method \(Record\)](../developer/methods/devenv-FIND-Method-Record.md)   
  [NEXT Method \(Record\)](../developer/methods/devenv-NEXT-Method-Record.md)   
  [FINDSET Method \(Record\)](../developer/methods/devenv-FINDSET-Method-Record.md)   
  [FINDFIRST Method \(Record\)](../developer/methods/devenv-FINDFIRST-Method-Record.md)   

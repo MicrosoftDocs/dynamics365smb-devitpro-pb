@@ -36,7 +36,7 @@ You can use event tracing to track the following operations on [!INCLUDE[server]
 -   Windows event log events.  
   
 ## Event Trace Monitoring Tools  
-There are various industry-standard tools that you can use to collect event trace data. The procedures in this section use Windows Performance Monitor, PerfView, Event Viewer, and Windows PowerShell to illustrate how you can collect and view event trace data. For details about how to use these tools and others, refer to the documentation available with the tool. For an overview of some of the tools, see [Tools for Monitoring Performance Counters and Events](Tools-for-Monitoring-Performance-Counters-and-Events.md). 
+There are various industry-standard tools that you can use to collect event trace data. The procedures in this section use Windows Performance Monitor, PerfView, Event Viewer, and Windows PowerShell to illustrate how you can collect and view event trace data. For details about how to use these tools and others, refer to the documentation available with the tool. For an overview of some of the tools, see [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md). 
   
 ## <a name="GetStartedEvents"></a>Get Started  
   
@@ -46,7 +46,7 @@ There are various industry-standard tools that you can use to collect event trac
 |Collect event trace data in an event trace log \(.etl\) file. Use the event trace monitoring tool to start an event trace session.|[Use Performance Monitor to Collect Event Trace Data](monitor-use-performance-monitor-collect-event-trace-data.md)<br /><br /> [Use PerfView to Collect Event Trace Data](monitor-use-perfview-collect-event-trace-data.md)<br /><br />[Use Logman to Collect Event Trace Data](monitor-use-logman-collect-event-trace-data.md)|  
 |View event trace data that is contained in an .etl file.|[Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md)|  
 |Use Event Viewer to collect and view events |[Monitoring Dynamics NAV Server Events by Using Event Viewer](monitor-server-events-windows-event-log.md) |  
-|Use Windows PowerShell to view event trace data|[Monitoring Dynamics NAV Server Events by Using Windows PowerShell](Monitoring-Microsoft-Dynamics-NAV-Server-Events-with-PowerShell.md)|
+|Use Windows PowerShell to view event trace data|[Monitoring Business Central Server Events by Using Windows PowerShell](monitor-server-events-with-powershell.md)|
 |Turn off or limit the amount of telemetry trace events emitted based on the severity level.|[Turn Off or Limit Telemetry Trace Events](disable-limit-telemetry-events.md)|   
   
 ## See Also    

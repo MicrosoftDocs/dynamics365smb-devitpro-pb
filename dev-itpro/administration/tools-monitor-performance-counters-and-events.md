@@ -26,7 +26,7 @@ This topic lists some of the tools that you can use to monitor [!INCLUDE[server]
 Logman (logman.exe) is a tool that comes with the Windows Operating System. You can use it to create and manage event trace session and performance logs from the command prompt. For more detailed information about logman, see [Logman](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
 
 ## Windows PowerShell  
- You can use the Get-WinEvent cmdlet of Windows PowerShell to view [!INCLUDE[server](../developer/includes/server.md)] instance events that are recorded in the Windows Event Logs. For more information, see [Monitoring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Events with PowerShell](Monitoring-Microsoft-Dynamics-NAV-Server-Events-with-PowerShell.md).  
+ You can use the Get-WinEvent cmdlet of Windows PowerShell to view [!INCLUDE[server](../developer/includes/server.md)] instance events that are recorded in the Windows Event Logs. For more information, see [Monitoring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Events with PowerShell](monitor-server-events-with-powershell.md).  
 
 ## Microsoft TraceEvent Library
 You can also log ETW events using the Microsoft TraceEvent Library, which includes classes for controlling providers and parsing events. For more information and downloading, see [Microsoft.Diagnostics.Tracing.TraceEvent](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent)

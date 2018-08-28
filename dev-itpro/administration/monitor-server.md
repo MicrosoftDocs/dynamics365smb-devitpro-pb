@@ -12,9 +12,9 @@ ms.prod: "dynamics-nav-2018"
 # Monitoring Business Central Server
 These articles describe the features for monitoring and troubleshooting [!INCLUDE[server](../developer/includes/server.md)].  
 
-[Tools for Monitoring Performance Counters and Events](Tools-for-Monitoring-Performance-Counters-and-Events.md)  
+[Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  
 
-[Monitoring Business Central Server Using Performance Counters](Monitoring-Microsoft-Dynamics-NAV-Server-Using-Performance-Counters.md)  
+[Monitoring Business Central Server Using Performance Counters](monitor-server-using-performance-counters.md)  
 
 [Monitoring Business Central Server Events](monitor-server-events.md)  
 
