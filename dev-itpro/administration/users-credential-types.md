@@ -65,5 +65,5 @@ With UserName, NavUserPassword, and AccessControlService credential types requir
 
 [Understanding Users, Profiles, and Role Centers](/dynamics365/business-central/admin-users-profiles-roles)  
 [Configuring Business Central Server](configure-server-instance.md)  
-<!--[Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)-->  
+<!--[Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview.md)-->  
 []

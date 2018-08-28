@@ -14,6 +14,9 @@ manager: edupont
 # [!INCLUDE[admintool](../developer/includes/admintool.md)]
 The [!INCLUDE[admintool](../developer/includes/admintool.md)] is a Microsoft Management Console \(MMC\) snap-in for creating and managing [!INCLUDE[server](../developer/includes/server.md)] instances. 
 
+> [!TIP]  
+>  You can also administrate your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment using [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Microsoft Dynamics 365 Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview).   
+
 ## Install the [!INCLUDE[admintool](../developer/includes/admintool.md)]
 
 To install [!INCLUDE[admintool](../developer/includes/admintool.md)], use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] and choose either **Server Option** or **Administration Tool** under the custom options page. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
@@ -30,10 +33,6 @@ mmc
 >  Only members of the Administrator group on the computer are able to use the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 >  
 > The [!INCLUDE[admintool](../developer/includes/admintool.md)] is not supported for multi-user environments.  
-  
- 
-> [!TIP]  
->  You can also administrate your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment using [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md).  
   
 ## Navigating the [!INCLUDE[admintool](../developer/includes/admintool.md)]
   
@@ -54,7 +53,7 @@ mmc
 -   The **right pane** displays available actions for the object that is selected in the left pane. These options differ depending on whether a [!INCLUDE[server](../developer/includes/server.md)] computer or a [!INCLUDE[server](../developer/includes/server.md)] instance is selected.  
   
 -   The **Windows PowerShell History** pane lists the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] commands that the equivalent of the tasks you perform in the [!INCLUDE[admintool](../developer/includes/admintool.md)]. You can access the Windows PowerShell History pane from the **Actions** menu and from the right pane. To run a command that is shown in the **Windows PowerShell History** pane, you can copy the command and paste it into the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)], for example.
-- 
+
 # Connect to remote computers and multiple server instances
 You can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to connect to other computers on your network where [!INCLUDE[server](../developer/includes/server.md)] instances are installed, and then manage those instances.
 
@@ -76,3 +75,6 @@ You can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to con
   
     > [!TIP]  
     >  When you close MMC, you are prompted to save your settings to a Microsoft Management Console \(.msc\) file. If you save your settings, then you can use this file to open MMC with your [!INCLUDE[server](../developer/includes/server.md)] computers already listed  
+
+## See Also
+[Configuring Business Central Server Instances](configure-server-instance.md)

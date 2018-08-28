@@ -37,6 +37,11 @@
 ## On-Premises
 ### [Administration and Setup for the Intelligent Edge](administration/about-intelligent-edge.md)
 ### [Server Administration Tool](administration/administration-tool.md)
+### [Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)
+#### [Administration Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management)
+#### [Administration Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management)
+#### [Development Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.model.tools)
+#### [Development Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### [Authentication and Credential Types](administration/users-credential-types.md)
 ### [Configuring Business Central Server](administration/configure-server-instance.md)
 ### Monitoring Business Central Server
