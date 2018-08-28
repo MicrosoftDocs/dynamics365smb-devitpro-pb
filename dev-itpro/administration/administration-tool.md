@@ -7,9 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 2d721218-fa9e-4140-bca3-c479438e8212
-caps.latest.revision: 30
-manager: edupont
 ---
 # [!INCLUDE[admintool](../developer/includes/admintool.md)]
 The [!INCLUDE[admintool](../developer/includes/admintool.md)] is a Microsoft Management Console \(MMC\) snap-in for creating and managing [!INCLUDE[server](../developer/includes/server.md)] instances. 
@@ -23,7 +20,7 @@ To install [!INCLUDE[admintool](../developer/includes/admintool.md)], use the [!
 
 
 ## Run the [!INCLUDE[admintool](../developer/includes/admintool.md)]  
-You typically run the [!INCLUDE[admintool](../developer/includes/admintool.md)] by choosing **Business Central Administration** from the Start menu. You can open the MMC first and then add the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] snap-in. In this case, choose **Run** from the Start menu and then specify the Microsoft Management Console:  
+You typically run the [!INCLUDE[admintool](../developer/includes/admintool.md)] by choosing **Business Central Administration** from the Start menu. Or, you can open the MMC first and then add the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] snap-in. In this case, choose **Run** from the Start menu and then specify the Microsoft Management Console:  
   
 ```  
 mmc  
