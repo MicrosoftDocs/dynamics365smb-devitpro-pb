@@ -66,8 +66,8 @@ You can use the following options with Setup.exe.
 |**/help**|Displays Help about Setup.exe options.|  
 |**/log \<log path>**|Specifies path and file name information for a Setup log file to be created by Setup. The file must not exist before you run Setup.|  
 |**/quiet**|Specifies that Setup does not display anything on the screen. All configuration information is taken from the specified configuration file.|  
-|**/repair**|Repairs the current installation of [!INCLUDE[prodshort](includes/prodshort.md)].|  
-|**/uninstall**|Removes the current installation [!INCLUDE[prodshort](includes/prodshort.md)].|
+|**/repair**|Repairs the current installation of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|  
+|**/uninstall**|Removes the current installation [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|
 
 ## Save, Edit, and Load a Setup Configuration File
 During Setup, you can save the configuration settings to a file before you finish and exit Setup. Then later, you can load use Setup to load the configuration file to make it faster to replicate the same configuration for another deployment. 
