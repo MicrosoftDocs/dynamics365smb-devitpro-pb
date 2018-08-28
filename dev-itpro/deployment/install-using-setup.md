@@ -93,12 +93,12 @@ You edit the file using an XML editor or text editor. Setup configuration files 
   
 #### Load a Setup configuration file
   
-The option to load a Setup configuration file is on the **Choose an installation option** page in [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)] Setup.  
+The option to load a Setup configuration file is on the **Choose an installation option** page in Setup.  
   
 > [!IMPORTANT]  
 >  A Setup configuration file contains information about which components to install and which settings to apply to each component. Therefore, you should not customize the list of components or configure components in Setup before you load a Setup configuration file because loading the configuration overwrites all prior customization and configuration.  
   
-1.  In the **Choose an installation option** page, choose **Load Configuration**.  
+1.  On the **Choose an installation option** page, choose **Load Configuration**.  
   
      This option is located under **Custom Components**.  
   
