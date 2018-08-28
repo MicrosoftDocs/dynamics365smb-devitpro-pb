@@ -53,15 +53,15 @@ In a production environment, you should obtain an SSL certificate from a certifi
 ##  <a name="Redirect"></a> Redirecting HTTP to HTTPS \(Optional\)  
  To ensure that users always access the site that is secured with SSL, you can automatically redirect HTTP requests to HTTPS. This means that users do not have to explicitly include https in the URL in the browser. For example, the nonsecure URL of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] could be `http://MyWebclient:8080/BC130` and the secure URL could be `https://MyWebclient:443/BC130`. If a user types `http://MyWebclient:8080/BC130`, the browser automatically redirects to `https://MyWebclient:443/BC130`.  
   
- There are different ways to redirect HTTP requests to HTTPS. The following procedure describes how to redirect HTTP requests to HTTPS by installing the Microsoft Application Request Routing for IIS 8 and modifying the [!INCLUDE[web_server_settings_file_md](../developer/includes/web_server_settings_file_md.md)].  
+ There are different ways to redirect HTTP requests to HTTPS. The following procedure describes how to redirect HTTP requests to HTTPS by installing the Microsoft Application Request Routing for IIS 8 and modifying the [configuration file](../administration/configure-web-server.md#WebClientSettingsFile) for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.  
   
 ### Redirect HTTP to HTTPS  
   
 1.  Download and install Microsoft Application Request Routing for IIS. For example, you can download from [Microsoft Application Request Routing](https://www.microsoft.com/en-us/download/details.aspx?id=47333).   
   
-2.  On the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], open the [!INCLUDE[web_server_settings_file_md](../developer/includes/web_server_settings_file_md.md)] for the [webserver](../developer/includes/webserver.md)] instance. Use a text editor, such as Notepad.  
+2.  On the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], open the navsettings.json file for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. Use a text editor, such as Notepad.  
   
-     The [!INCLUDE[web_server_settings_file_md](../developer/includes/web_server_settings_file_md.md)] is located in the physical path of the web application on IIS. By default, the path is %systemroot%\\inetpub\\wwwroot\\\[VirtualDirectoryName\]. For example, the folder for the default application is %systemroot%\\inetpub\\wwwroot\\[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)].  
+     The navsettings.json is located in the physical path of the web application on IIS. By default, the path is %systemroot%\\inetpub\\wwwroot\\\[VirtualDirectoryName\]. For example, the folder for the default application is %systemroot%\\inetpub\\wwwroot\\[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)].  
   
 3.  In the `<system.webServer>` element, add the following elements.  
   
@@ -79,7 +79,7 @@ In a production environment, you should obtain an SSL certificate from a certifi
     </rewrite>  
   
     ```  
-4.  Save the [!INCLUDE[web_server_settings_file_md](../developer/includes/web_server_settings_file_md.md)].  
+4.  Save the navsettings.json file.  
   
 ## See Also  
   [Business Central Web Server Overview](web-server-overview.md)
