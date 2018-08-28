@@ -48,7 +48,7 @@ For more information, see [Using Certificates to Secure Connections](../deployme
 |-----------------|---------------------------------|---------------------------------------|
 |Name|The name of your application as it will display to your users, such as **Financial App by Solutions**.|
 |Type|Choose **Web application and/or web app**.|
-|Sign-on URL (App URL)|The URI for signing on to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], such as `https://CRONUSInternationLtd.onmicrosoft.com/DynamicsNAV`.|
+|Sign-on URL (App URL)|The URI for signing on to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], such as `https://CRONUSInternationLtd.onmicrosoft.com/BC130`.|
 |App ID URI|The URI to a domain in your Azure AD tenant. By default, the application is assigned an App ID URI that has the format `https://[domain]/[guid]`, such as https://CRONUSInternationLtd.onmicrosoft.com/70b20a51-46b7-4290-8686-b79ec90379f6. You can keep this value or change the `[guid]` portion to suit, for example, `https://CRONUSInternationLtd.onmicrosoft.com/Financials`. <BR /><BR />**Important:**  The App ID URI must be unique within the Azure AD tenant. However, if you want to share your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with other Azure AD tenants, the App ID URI must be unique in Azure AD. <br /><br /> This URI is appended to the **WS-Federation Login Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and **ACSURI** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. Additionally, in the [!INCLUDE[server](../developer/includes/server.md)] configuration, it must be specified in the **Azure AD App ID URI** setting for SOAP and OData web services.|
 |Reply URL|Add a reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. The reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] is the same as the Sign-on URL. The reply URL for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] is the URL for opening the client, such as `https://dynamicsnavwinclient/`.|
 
@@ -100,7 +100,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 	For example:
 
 	```
-    https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://CRONUSInternationLtd.onmicrosoft.com/Financials%26wreply=https://CRONUSInternationLtd.onmicrosoft.com/DynamicsNAV/SignIn.aspx
+    https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://CRONUSInternationLtd.onmicrosoft.com/Financials%26wreply=https://CRONUSInternationLtd.onmicrosoft.com/BC130/SignInx
     ```
 
 	**Parameter descriptions**:
@@ -113,10 +113,10 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
 	`<APP ID URI>` is the ID that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in Azure AD, for example `https://localhost/` or `https://CRONUSInternationLtd.onmicrosoft.com/Financials`.
 
-	`<APP REPLY URL>` is the reply URL that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn.aspx page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], which in most cases, this is the same as the **Sign-On URL** for the application. For example:
+	`<APP REPLY URL>` is the reply URL that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], which in most cases, this is the same as the **Sign-On URL** for the application. For example:
 	
 	```
-	https://CRONUSInternationLtd.onmicrosoft.com/DynamicsNAV/SignIn.aspx
+	https://CRONUSInternationLtd.onmicrosoft.com/BC130/SignIn
 	```
 	
 	The `wreply` parameter is optional. The wreply query parameter tells the Azure AD authentication service where to send the authentication token. If you do not specify the wreply parameter, it will be deducted from the URL in the browser.
