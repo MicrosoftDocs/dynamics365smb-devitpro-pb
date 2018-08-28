@@ -56,7 +56,7 @@ mmc
 -   The **Windows PowerShell History** pane lists the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] commands that the equivalent of the tasks you perform in the [!INCLUDE[admintool](../developer/includes/admintool.md)]. You can access the Windows PowerShell History pane from the **Actions** menu and from the right pane. To run a command that is shown in the **Windows PowerShell History** pane, you can copy the command and paste it into the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)], for example.
 - 
 # Connect to remote computers and multiple server instances
-You can use the [!INCLUDE[nav_admin](includes/nav_admin_md.md)] to connect to other computers on your network where [!INCLUDE[server](includes/server.md)] instances are installed, and then manage those instances as well.
+You can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to connect to other computers on your network where [!INCLUDE[server](../developer/includes/server.md)] instances are installed, and then manage those instances as well.
 
 1. Configure the remote computers to receive Windows PowerShell remote commands by running the [Enable-PSRemoting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enable-psremoting) cmdlet on each computer.  
 2. Next, you can start the [!INCLUDE[admintool](../developer/includes/admintool.md)].
@@ -72,7 +72,7 @@ You can use the [!INCLUDE[nav_admin](includes/nav_admin_md.md)] to connect to ot
   
     6. Continue selecting [!INCLUDE[server](../developer/includes/server.md)] computers as needed. When you are finished selecting computers, choose **OK** to close the **Add or remove Snap-ins** dialog box.  
   
-     Now you see multiple [!INCLUDE[server](../developer/includes/server.md)] computers listed in the tree view pane of the [!INCLUDE[admintool](includes/tool.md)].  
+     Now you see multiple [!INCLUDE[server](../developer/includes/server.md)] computers listed in the tree view pane of the [!INCLUDE[admintool](../developer/includes/tool.md)].  
   
     > [!TIP]  
     >  When you close MMC, you are prompted to save your settings to a Microsoft Management Console \(.msc\) file. If you save your settings, then you can use this file to open MMC with your [!INCLUDE[server](../developer/includes/server.md)] computers already listed  
