@@ -235,4 +235,4 @@ When you initially set the **Authentication Email**, the **Authentication Status
 
 ## See Also  
 [Configuring Business Central Server](configure-server-instance.md)  
-[Authentication and Credential Types](Users-and-Credential-Types.md)  
+[Authentication and Credential Types](Users-Credential-Types.md)  

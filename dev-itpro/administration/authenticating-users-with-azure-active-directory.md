@@ -23,7 +23,7 @@ Azure Active Directory \(Azure AD\) is a cloud service that provides identity an
 ## Preparation
 Azure AD authentication requires the use of service certificates to help secure client connections over a wide area network (WAN). In a production environment, you should obtain a certificate from a certification authority or trusted provider. In a test environment, if you do not have certificate, then you can create your own self-signed certificate. The implementation of certificates involves installaion and configuration of the certificates on the [!INCLUDE[server](../developer/includes/server.md)] server and client computers.
 
-For more informnation, see [Using Certificates to Secure a Remote Client Connection](using-certificates-to-secure-a-remote-client-connection.md).
+For more information, see [Using Certificates to Secure Connections](../deployment/implement-security-certificates-production-environment.md).
 
 
 ## Task 1: Create an Azure AD Tenant  
@@ -135,7 +135,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 ## Task 4: Configure [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] for Azure AD  
  You must configure the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to use `AccessControlService` as the credential type.  
 
-For more information see, [Configure Authentication of Dynamics NAV Web Client Users](How-to--Configure-Authentication-of-Microsoft-Dynamics-NAV-Web-Client-Users.md).
+For more information see, [Configure Authentication](users-credential-types.md).
 
 ## Task 5: Configure [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] for Azure AD  
 The [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] must also be configured to use `AccessControlService` as the credential type in order to support Azure AD. In addition, the `ACSUri` setting for Azure AD authentication must be set. The value should be that same as the **WS-Federation Login Endpoint** setting of the [!INCLUDE[server](../developer/includes/server.md)] instances, except for the `<App REPLY URL>` parameter. The `ACSUri` setting has the following format:
@@ -151,10 +151,10 @@ For example:
 ```
 <add key="ACSUri" value="https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://CRONUSInternationLtd.onmicrosoft.com/Financials%26wreply=http://dynamicsnavwinclient/" />
 ```
-You configure the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file. For more information, see [Configuring the Dynamics NAV Windows Client](configuring-the-windows-client.md#afterset).
+You configure the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file. <!-- For more information, see [Configuring the Dynamics NAV Windows Client](configuring-the-windows-client.md#afterset).-->
 
 ## Task 6: Associate the Azure AD Accounts with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] User Accounts  
- Each user in your Azure AD tenant that will access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must be set up in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For example, create the users with Windows authentication or with user name/password authentication, depending on your deployment scenario. But you must also specify an authentication email address on the **Office 365 Authentication** FastTab in the **User Card** window. The authentication email address is the email account for that user in your Azure AD tenant. When you combine this with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from the SharePoint site, for example. For more information, see [How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md).  
+ Each user in your Azure AD tenant that will access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must be set up in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For example, create the users with Windows authentication or with user name/password authentication, depending on your deployment scenario. But you must also specify an authentication email address on the **Office 365 Authentication** FastTab in the **User Card** window. The authentication email address is the email account for that user in your Azure AD tenant. When you combine this with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from the SharePoint site, for example. 
 
 > [!IMPORTANT]  
 >  The single sign-on means that users are still signed in to Azure AD when they sign out from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], unless they close all browser windows. However, if a user selected the **Keep me signed in** field when they signed in, they are still signed in when they close the browser window. To fully sign out from Azure AD, the user must sign out from each application that uses Azure AD, including [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and SharePoint.  
@@ -162,11 +162,4 @@ You configure the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md
 >  We recommend that you provide guidance to your users for signing out of their account when they’re done, so that you can keep your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment more secure.  
 
 ## See Also  
- [Users and Credential Types](Users-and-Credential-Types.md)
-
- <!--    
- [How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md)  <!--  
- [How to: Sign Up for a Microsoft Account](How-to--Sign-Up-for-a-Microsoft-Account.md)   
- [How to: Sign Up for a Microsoft Azure Subscription](How-to--Sign-Up-for-a-Microsoft-Azure-Subscription.md) 
- [Configuring Dynamics NAV and the Excel Add-In](configuring-dynamics-nav-excel-addin.md)
- --> 
+ [Authentication and Credential Types](Users-Credential-Types.md)

@@ -49,9 +49,67 @@ There are some components that require other software in order run, for example 
 
 -   Database files, such as the Demo database.  
 
--   Prerequisites for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components that Setup can install, such as the .NET Framework.  
+-   Prerequisites for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components that Setup can install, such as the .NET Framework. 
+
+## Run Setup from a command prompt
+You can run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] from a command prompt, either by pointing to its location on the installation media, or after the initial installation, from the location where the Setup.exe is automatically stored on your computer. The default location is:  
+  
+```  
+C:\Program Files (x86)\Common Files\Microsoft Dynamics 365 Business Central\<Version number>\Setup  
+```  
+ 
+You can use the following options with Setup.exe.  
+  
+|Setup option|Description|  
+|------------------|-----------------|  
+|**/config \<Setup config file>**|Specifies path and file name information for a Setup configuration file to load.<br /><br /> This is the only required option.|  
+|**/help**|Displays Help about Setup.exe options.|  
+|**/log \<log path>**|Specifies path and file name information for a Setup log file to be created by Setup. The file must not exist before you run Setup.|  
+|**/quiet**|Specifies that Setup does not display anything on the screen. All configuration information is taken from the specified configuration file.|  
+|**/repair**|Repairs the current installation of [!INCLUDE[prodshort](includes/prodshort.md)].|  
+|**/uninstall**|Removes the current installation [!INCLUDE[prodshort](includes/prodshort.md)].|
+
+## Save, Edit, and Load a Setup Configuration File
+During Setup, you can save the configuration settings to a file before you finish and exit Setup. Then later, you can load use Setup to load the configuration file to make it faster to replicate the same configuration for another deployment. 
+  
+#### Save to a Setup configuration file
+
+1. Choose **Save** on the **Specify parameters** page in Setup. This page is available when you run Setup unless you select **Install Demo**, which skips all other Setup pages.  
+  
+2.  Type a file name for the configuration file. An .xml extension is added automatically.  
+  
+3.  Choose **Save**.  
+  
+     You now return to the **Specify parameters** page, where you can continue with installing software. You can also close Setup if you only have to create a Setup configuration file. 
+
+#### Edit a Setup configuration file
+You edit the file using an XML editor or text editor. Setup configuration files contain two types of settings.  
+  
+|Setting type|Purpose|  
+|------------------|-------------|  
+|Component|For each component, there are three separate values, all displayed on a single line:<br /><br /> -   **ShowOptionNode**<br />     Specifies whether the component should be displayed in Setup. For silent installs, this parameter is not relevant.<br />-   **State**<br />     There are two possible values: **Local**, indicates that the component is included in the install, and **Absent** indicates that the component is not included.<br />-   **Id**<br />     Identifies the component<br /><br /> You can change value for **State** or **ShowOptionNode**, but not for **Id**. Also, you cannot add or remove a component.|  
+|Parameter|These settings contain configuration information for components. As with Components, you can modify a parameter’s **Value**, but not its **Id**. |  
+
+  
+#### Load a Setup configuration file
+  
+The option to load a Setup configuration file is on the **Choose an installation option** page in [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)] Setup.  
+  
+> [!IMPORTANT]  
+>  A Setup configuration file contains information about which components to install and which settings to apply to each component. Therefore, you should not customize the list of components or configure components in Setup before you load a Setup configuration file because loading the configuration overwrites all prior customization and configuration.  
+  
+1.  In the **Choose an installation option** page, choose **Load Configuration**.  
+  
+     This option is located under **Custom Components**.  
+  
+2.  In the **Open** dialog box, select or browse to the Setup configuration file that you want to open, and then double-click the file.  
+  
+     Setup now shows the **Customize the installation** page that has been modified according to the component selection in the loaded Setup configuration file.  
+  
+3.  Modify the list of components to install or choose **Next** to proceed to the **Specify parameters** page, where settings from the Setup configuration file are shown.  
+  
+4.  Configure these settings or choose **Apply** to accept these values and continue. 
 
 ## See Also  
- [How to: Choose Components to Install](How-to--Choose-Components-to-Install.md)   
- [How to: Preconfigure Components](How-to--Preconfigure-Components.md)   
- [How to: Create or Load a Setup Configuration File](How-to--Create-or-Load-a-Setup-Configuration-File.md)
+ [Components](product-and-architecture-overview.md)   
+ [Deployment](deployment.md)   
