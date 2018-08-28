@@ -8,8 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-manager: edupont
-ms.date: 08/23/2018
+ms.date: 08/28/2018
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-premises
 
@@ -25,7 +24,7 @@ The following sections list the minimum hardware and software requirements to in
 
 |||  
 |-|-|  
-|Supported browsers|<ul><li>Microsoft Edge.</li><li>Internet Explorer 11.</li><li>Google Chrome 61.0 for Windows.</li><li>Mozilla Firefox 55.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul><br><br>Cookies and JavaScript must be enabled in the browser.|  
+|Supported browsers|<ul><li>Microsoft Edge.</li><li>Internet Explorer 11.</li><li>Google Chrome 69.0 for Windows.</li><li>Mozilla Firefox 62.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul><br><br>Cookies and JavaScript must be enabled in the browser.|  
 |Business inbox in Outlook|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
 |Sending data to Excel|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
 |Editing in Excel using the Excel Add-in |<ul><li>Excel 2016 or Excel Online.<br /><br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
@@ -42,7 +41,12 @@ The following sections list the minimum hardware and software requirements to in
 |Supported browsers|The following desktop browsers are supported:<ul><li> Microsoft Edge</li><li>Internet Explorer 11 \(build 11.0.9600.17239\) for Windows 10.</li><li>Google Chrome 61.0 for Windows.</li><li>Mozilla Firefox 55.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul><br><br>Cookies and JavaScript must be enabled in the browser. |  
 
 ###  <a name="DynNAVApp"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Universal App Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)]. For the latest information, see [Business Central for Windows](http://go.microsoft.com/fwlink/?LinkId=509974), [Business Central for iPad and iPhone](http://go.microsoft.com/fwlink/?LinkId=509975), and [Business Central for Android tablet and Android phone](http://go.microsoft.com/fwlink/?LinkId=509976).  
+ The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)].  
+
+For the latest information, see the app in the Windows Store, App Store, or Google Play.  
+[![Windows Store](./media/install-mobile-app/windowsstore.png)](http://go.microsoft.com/fwlink/?LinkId=734848)
+[![App Store](./media/install-mobile-app/appstore.png)](http://go.microsoft.com/fwlink/?LinkId=734847) [![Google Play](./media/install-mobile-app/googleplay.png)](http://go.microsoft.com/fwlink/?LinkId=734849)  
+
 
 |||  
 |-|-|  
@@ -65,7 +69,7 @@ The following sections list the minimum hardware and software requirements to in
 |OneNote integration|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|
 |Email logging|<ul><li>Active Directory and Microsoft Exchange Server 2016.</li><li>Microsoft Exchange Online, or Exchange Online as part of an Office 365 subscription.</li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li></ul>|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.</li></ul></li><li>The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is available in a 32-bit version and 64-bit version. On a 32-bit Windows operating system, the 32-bit version is run. On a 64-bit Windows operating system, the 64-bit version is run by default; however, you can also run the 32-bit version if it is required.</li><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] can only install the Excel Add-in if Excel is present on the target computer.</li><li>Outlook synchronization is not supported on 64-bit versions of Office.</li></ul>|  
+|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.</li></ul></li><li>The Dynamics NAV Client is available in a 32-bit version and 64-bit version. On a 32-bit Windows operating system, the 32-bit version is run. On a 64-bit Windows operating system, the 64-bit version is run by default; however, you can also run the 32-bit version if it is required.</li><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] can only install the Excel Add-in if Excel is present on the target computer.</li><li>Outlook synchronization is not supported on 64-bit versions of Office.</li></ul>|  
 
 ###  <a name="DevEnv"></a> Dynamics NAV Development Environment Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
@@ -98,7 +102,7 @@ The following sections list the minimum hardware and software requirements to in
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>.|  
 |Web server|<ul><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0.|   
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li><li>Windows PowerShell 3.0.|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present on the target computer.<ul><li>Microsoft .NET Core 1.0 Windows Server Hosting. This is installed by [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] if not already present.</li><li>Microsoft .NET Framework 4.7.</li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0, depending in the operating system, with the required features enabled.</li></ul></li><li>For more information about configuring IIS, see Configuring IIS](configure-iis.md)</li></ul>|  
+|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present on the target computer.<ul><li>Microsoft .NET Core 1.0 Windows Server Hosting. This is installed by [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] if not already present.</li><li>Microsoft .NET Framework 4.7.</li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0, depending in the operating system, with the required features enabled.</li></ul></li><li>For more information about configuring IIS, see [Configuring IIS](configure-iis.md)</li></ul>|  
 
 ###  <a name="SQLReq"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Database Components for SQL Server Requirements  
  The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components for SQL Server.  
