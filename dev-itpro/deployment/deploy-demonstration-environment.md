@@ -29,7 +29,7 @@ This deployment scenario installs the major [!INCLUDE[prodshort](../developer/in
 
 -   SQL Server Database Components, including [!INCLUDE[demolong](../developer/includes/demolong_md.md)] and demo license.
 
-    For information about what you can do with this license, see [Properties of the Demo License](Properties-of-the-Demo-License.md).      
+    For information about what you can do with this license, see [Properties of the Demo License](Demo-License.md).      
 
 -    [!INCLUDE[admintool](../developer/includes/admintool.md)] 
 
