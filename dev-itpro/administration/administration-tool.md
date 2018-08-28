@@ -56,12 +56,12 @@ mmc
 -   The **Windows PowerShell History** pane lists the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] commands that the equivalent of the tasks you perform in the [!INCLUDE[admintool](../developer/includes/admintool.md)]. You can access the Windows PowerShell History pane from the **Actions** menu and from the right pane. To run a command that is shown in the **Windows PowerShell History** pane, you can copy the command and paste it into the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)], for example.
 - 
 # Connect to remote computers and multiple server instances
-You can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to connect to other computers on your network where [!INCLUDE[server](../developer/includes/server.md)] instances are installed, and then manage those instances as well.
+You can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to connect to other computers on your network where [!INCLUDE[server](../developer/includes/server.md)] instances are installed, and then manage those instances.
 
 1. Configure the remote computers to receive Windows PowerShell remote commands by running the [Enable-PSRemoting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enable-psremoting) cmdlet on each computer.  
 2. Next, you can start the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 3. If you want to connect to a single remote computer, you can start the [!INCLUDE[admintool](../developer/includes/admintool.md)] from the Start menu of your computer.
-4. If you want to connect to multiple remote computers, you must start the [!INCLUDE[admintool](../developer/includes/admintool.md)] from **Run** program that you can access in the Start menu, 
+4. If you want to connect to multiple remote computers, you must start the [!INCLUDE[admintool](../developer/includes/admintool.md)] from the **Run** program that you can access in the Start menu, 
     1. Enter the command `mmc`.    
     2.  In the Management Console, on the **File** menu, choose **Add/Remove Snap-in** to open the **Add or remove Snap-ins** dialog box.   
     3.  In the **Available snap-ins** list, double-click **Microsoft Dynamics 365 Business Central**.   
@@ -72,7 +72,7 @@ You can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to con
   
     6. Continue selecting [!INCLUDE[server](../developer/includes/server.md)] computers as needed. When you are finished selecting computers, choose **OK** to close the **Add or remove Snap-ins** dialog box.  
   
-     Now you see multiple [!INCLUDE[server](../developer/includes/server.md)] computers listed in the tree view pane of the [!INCLUDE[admintool](../developer/includes/tool.md)].  
+     Now you see multiple [!INCLUDE[server](../developer/includes/server.md)] computers listed in the tree view pane of the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
   
     > [!TIP]  
     >  When you close MMC, you are prompted to save your settings to a Microsoft Management Console \(.msc\) file. If you save your settings, then you can use this file to open MMC with your [!INCLUDE[server](../developer/includes/server.md)] computers already listed  
