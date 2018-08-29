@@ -1,6 +1,6 @@
 ---
 title: OData Web Services Data Modification
-description: Write to the Dynamics NAV database using an OData web service that exposes a writable page and implement it in on Microsoft SharePoint Online.
+description: Write to the database using an OData web service that exposes a writable page and implement it in on Microsoft SharePoint Online.
 ms.custom: na
 ms.date: 10/20/2017
 ms.reviewer: na
@@ -23,7 +23,7 @@ You can write to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] d
   
  All calls fail if the user does not have the relevant permissions, and if the relevant property on the page, **InsertAllowed**, **ModifyAllowed**, or **DeleteAllowed**, is set to **No**.  
   
- You can use an OData web service in applications where you want users to be able to modify [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data without using the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] or the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. For example, you can show fields from the **Customer** table on a mobile device or in a browser so that a user can create, update, or delete customers in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+ You can use an OData web service in applications where you want users to be able to modify [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. For example, you can show fields from the **Customer** table on a mobile device or in a browser so that a user can create, update, or delete customers in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
   
 ### Company-Specific and Tenant-Specific OData Calls  
  In your implementation of the web service, you can specify which company in the database that a user can write to in the URIs that expose the web services. Similarly, you can specify the specific tenant that the change applies to if the database handles more than one tenant.  
@@ -42,5 +42,5 @@ You can write to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] d
   
 ## See Also  
  [OData Web Services](OData-Web-Services.md)   
- [How to: Use OData to Return-Obtain a JSON Document](How-to--Use-OData-to-Return-Obtain-a-JSON-Document.md)   
+ [Using OData to Return-Obtain a JSON Document](return-obtain-json-document.md)   
  [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData.md)

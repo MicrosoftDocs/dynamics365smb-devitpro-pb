@@ -19,11 +19,10 @@ Server-driven paging ensures that the quantity of data that is returned by an OD
   
  The **Max Page Size** setting specifies the maximum number of entities returned per page of OData results. The default value is 1000. You can consider a page to be a chunk of data. A large data feed is divided into chunks of data. Each chunk contains no more entities than the value of **Max Page Size**. An increase in the value of **Max Page Size** creates fewer chunks \(or pages\) per request, which in turn, decreases the processing time. However, an increase in the **Max Page Size** will increase the memory consumption on the [!INCLUDE[server](../developer/includes/server.md)] or client. If the value is too large, it can overload the memory on [!INCLUDE[server](../developer/includes/server.md)]. For performance reasons, you should try to set the value of the **Max Page Size** as large as possible without overloading [!INCLUDE[server](../developer/includes/server.md)]. If the computer that is running [!INCLUDE[server](../developer/includes/server.md)] is returning out of memory exceptions, then you should reduce the value of **Max Page Size** until the errors stop.  
   
- When using OData with queries that are set with a top number of rows by either the [TopNumberOfRows Property](../developer/properties/devenv-TopNumberOfRows-Property.md) and [TOPNUMBEROFROWS Method](../developer/methods/devenv-TOPNUMBEROFROWS-Method.md), you should set the **Max Page Size** value greater than the value of the **TopNumberOfRows** property and **TOPNUMBEROFROWS** method. For more information, see [Using OData with Queries That are Set with a Top Number of Rows](Using-OData-with-Queries-That-are-Set-with-a-Top-Number-of-Rows.md).  
+ When using OData with queries that are set with a top number of rows by either the [TopNumberOfRows Property](../developer/properties/devenv-TopNumberOfRows-Property.md) and [TOPNUMBEROFROWS Method](../developer/methods/devenv-TOPNUMBEROFROWS-Method.md), you should set the **Max Page Size** value greater than the value of the **TopNumberOfRows** property and **TOPNUMBEROFROWS** method. For more information, see [Using OData with Queries That are Set with a Top Number of Rows](use-odata-with-queries-set-with-top-number-of-rows.md).  
   
 > [!NOTE] 
 >  In the CustomSettings.config file for [!INCLUDE[server](../developer/includes/server.md)], the **Max Page Size** setting is called **ODataServicesPageMaxSize**.  
   
 ## See Also  
- [OData Web Services](OData-Web-Services.md)   
- [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md)
+ [OData Web Services](OData-Web-Services.md)  

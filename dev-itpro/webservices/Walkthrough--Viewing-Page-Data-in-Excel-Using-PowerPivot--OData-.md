@@ -49,7 +49,7 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
 #### To register and publish a page as a web service  
 
-1.  Open the [!INCLUDE[rtc](../developer/includes/rtc_md.md)] and connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
+1.  Open the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] and connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
 
 2.  In the **Search** box, enter **Web Services**, and then choose the related link.  
 
@@ -78,9 +78,9 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
     -   **WebServicePort** is the port that OData is running on. The default port is 7048.  
 
-    -   **ServiceInstance** is the name of the [!INCLUDE[server](../developer/includes/server.md)] instance for your solution. The default name is [!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)].  
+    -   **ServiceInstance** is the name of the [!INCLUDE[server](../developer/includes/server.md)] instance for your solution. The default name is [!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)].  
 
-     For example, if the [!INCLUDE[server](../developer/includes/server.md)] is running on the computer that you are working on, you can use: **http://localhost:7048/[!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)]/OData/**  
+     For example, if the [!INCLUDE[server](../developer/includes/server.md)] is running on the computer that you are working on, you can use: **http://localhost:7048/[!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)]/OData/**  
 
      The browser should now show the web service that you have published, as shown in the following illustration.  
 
@@ -112,11 +112,11 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
     3.  In the **UserID** field, type the user name for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account. For this walkthrough, use **NavTest**.  
 
-    4.  In the **Source** section, in the **Service Document URL** field, type the URL for the OData web service that you verified in the previous procedure,  for example, **http://localhost:7048/[!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)]/OData/**.  
+    4.  In the **Source** section, in the **Service Document URL** field, type the URL for the OData web service that you verified in the previous procedure,  for example, **http://localhost:7048/[!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)]/OData/**.  
 
     5.  Choose the **OK** button to return to the **Table Import Wizard**.  
 
-5.  In the **Connect to a Data Feed** page, in the **Data Feed Url** field, enter the OData URI that you verified in the previous procedure, for example **http://localhost:7048/[!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)]/OData/**. Choose the **Next** button.  
+5.  In the **Connect to a Data Feed** page, in the **Data Feed Url** field, enter the OData URI that you verified in the previous procedure, for example **http://localhost:7048/[!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)]/OData/**. Choose the **Next** button.  
 
     > [!IMPORTANT]  
     >  The URI must end with a slash \(/\) as shown in the example.  

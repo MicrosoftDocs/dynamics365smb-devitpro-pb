@@ -32,7 +32,7 @@ Web services provide easy communication and data exchange in a secured environme
   
 -   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
   
--   Visual Studio 2012 or Visual Studio 2010. You can use any edition of Visual Studio that supports adding web references. In this walkthrough, you will use Visual Studio 2012. You also have the option of using service references instead of web references, or of using the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
+-   Visual Studio. You can use any edition of Visual Studio that supports adding web references. You also have the option of using service references instead of web references, or of using the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
   
 ## Creating a Codeunit  
  In this procedure, you create a codeunit called `Letters` that takes a lowercase input string and returns an uppercase string.  
@@ -45,25 +45,25 @@ Web services provide easy communication and data exchange in a secured environme
   
 2.  In Object Designer, choose **Codeunit**, and then choose **New**  
   
-     The **C/AL Editor** opens.  
+     The **AL Editor** opens.  
   
-3.  On the **View** menu, choose **C/AL Globals**.  
+3.  On the **View** menu, choose **AL Globals**.  
   
-4.  In the **C/AL Globals** window, choose the **Functions** tab, and then enter **Capitalize** as the method name.  
+4.  In the **AL Globals** window, choose the **Functions** tab, and then enter **Capitalize** as the method name.  
   
 5.  Select the **Capitalize** method, in the **View** menu, choose **Properties**, and then set the **Local** property to **No**.  
   
      Setting this property makes the method accessible from the other objects. For more information about this property, see [Local Property](../developer/properties/devenv-Local-Property.md).  
   
-6.  In the **C/AL Globals** window, choose the **Locals** button.  
+6.  In the **AL Globals** window, choose the **Locals** button.  
   
 7.  On the **Parameters** tab, type **inputstring** in the **Name** field, and then select **Text** in the **DataType** field. Set the length to **250**.  
   
 8.  On the **Return Value** tab, enter **outputstring** in the **Name** field, and then select **Text** in the **Return Type** field. Set the length to **250**.  
   
-9. Close the **C/AL Locals** window, and then close the **C/AL Globals** window.  
+9. Close the **AL Locals** window, and then close the **AL Globals** window.  
   
-10. In the **C/AL Editor**, under `Capitalize`, add the following line of code:  
+10. In the **AL Editor**, under `Capitalize`, add the following line of code:  
   
     ```  
     outputstring := UPPERCASE(inputstring);  
@@ -74,11 +74,11 @@ Web services provide easy communication and data exchange in a secured environme
 12. When you are prompted, enter **50000** for the codeunit ID, then enter **Letters** for the name, make sure the compile check box is checked, and then choose **OK**.  
   
 ## Publishing the Web Service  
- After the codeunit is created and saved, you publish it using the [!INCLUDE[rtc](../developer/includes/rtc_md.md)].  
+ After the codeunit is created and saved, you publish it using the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].  
   
 #### To publish the web service  
   
-1.  Open the [!INCLUDE[rtc](../developer/includes/rtc_md.md)], and then connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
+1.  Open the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], and then connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
   
 2.  In the **Search** box, enter **Web Services**, and then press Return.  
   
@@ -109,7 +109,7 @@ Web services provide easy communication and data exchange in a secured environme
      The page should list the web service that you just published \(`Codeunit/Letters`\).  
   
 ## Using the Web Service  
- In this walkthrough we use Visual Studio 2012 to call and use the web service.  
+ In this walkthrough we use Visual Studio to call and use the web service.  
   
 #### To call the web service  
   
@@ -149,7 +149,7 @@ Web services provide easy communication and data exchange in a secured environme
                 // Uses default credentials for authenticating   
                 // with Microsoft Dynamics NAV.  
                 ws.UseDefaultCredentials = true;  
-                ws.Url = "http://localhost:7047/nav_server_instance/WS/CRONUS%20International%20Ltd./Codeunit/Letters";      
+                ws.Url = "http://localhost:7047/<server instance>/WS/CRONUS%20International%20Ltd./Codeunit/Letters";      
   
                 // Declares variables to work with.  
                 string inputstring, outputstring;     

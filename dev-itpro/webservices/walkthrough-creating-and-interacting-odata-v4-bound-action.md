@@ -114,7 +114,7 @@ After publishing a web service, verify that the port that web service applicatio
     - `<ServiceInstance>` is the name of the Microsoft Dynamics NAV Server instance for your solution. The default name is DynamicsNAV90.  
 
     Example if the default Microsoft Dynamics NAV Server is running on your local computer.
-    ```http://localhost:7047/DynamicsNAV/api/beta/companies(b9248a6e-966d-478c-a25d-d91d28610397)/salesInvoices(8cc52602-3aa4-4256-b2c7-fdfef5248cbf)/Microsoft.NAV.Copy) ```
+    ```http://localhost:7047/BC130/api/beta/companies(b9248a6e-966d-478c-a25d-d91d28610397)/salesInvoices(8cc52602-3aa4-4256-b2c7-fdfef5248cbf)/Microsoft.NAV.Copy) ```
 3. Postman should now show the web service function that you have published, and perform the action of copying an invoice. 
 
 ## Return a value

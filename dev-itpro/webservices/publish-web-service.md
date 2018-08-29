@@ -33,13 +33,11 @@ translation.priority.ht:
   - ru-ru
   - sv-se
 ---
-# How to: Publish a Web Service
+# Publishing a Web Service
 You can set up a web service in the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. You must then publish the web service so that it is available to service requests over the network. Users can discover web services by pointing a browser at the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and requesting a list of available services. When you publish a web service, it is immediately available over the network for authenticated users. All authorized users can access metadata for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services, but only users who have sufficient [!INCLUDE[prodshort](../developer/includes/prodshort.md)] permissions can access actual data.  
   
 ## Creating and Publishing a Web Service  
  The following steps explain how to create and publish a web service.  
-  
-#### To create and publish a web service  
   
 1.  Open the client.  
   
@@ -71,7 +69,7 @@ You can set up a web service in the [!INCLUDE[nav_web](../developer/includes/nav
   
  You can verify the availability of that web service by using a browser, or you can choose the link in the **OData URL** and **SOAP URL** fields in the **Web Services** window. The following procedure illustrates how you can verify the availability of the web service for later use.  
   
-#### To verify the availability of a web service  
+## Verify the availability of a web service  
   
 1.  In your browser, enter the relevant URL. The following table illustrates the types of URLs that you can enter. For SOAP web services, use the following format for your URI.  
   

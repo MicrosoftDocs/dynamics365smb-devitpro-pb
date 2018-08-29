@@ -285,7 +285,17 @@
 #### [ReadMultiple](webservices/ReadMultiple-operation.md)
 #### [Update](webservices/update-operation.md)
 #### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
-### [Using SystemService to Find Companies](webservices/use-systemservice-to-find-companies.md)
+### [Retrieving Companies](webservices/use-systemservice-to-find-companies.md)
+### [Indicating That a Value Exists in Field](webservices/use-properties-to-indicate-field-value.md)
+### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
+### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
+### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
+### [Using Filter Expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
+### [Using FlowFilters in OData URIs](webservices/use-flowfilters-in-odata-uri.md)
+### [Server-Driven Paging](webservices/server-driven-paging-in-odata-web-services.md)
+### [Containments and Associations](webservices/use-containments-associations.md)
+### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
+### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
 <!-- end web services -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)

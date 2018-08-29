@@ -93,7 +93,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
 #### To create a test SSL certificate using the makecert.exe tool  
   
-1.  On the computer that is installed with Microsoft Visual Studio 2012 or Windows SDK, create a folder called *My Certificates* for working with and storing certificates.  
+1.  On the computer that is installed with Microsoft Visual Studio or Windows SDK, create a folder called *My Certificates* for working with and storing certificates.  
   
      You can work on the same computer that is running [!INCLUDE[server](../developer/includes/server.md)] or a different computer.  
   
@@ -101,7 +101,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
     |If your computer is installed with|Then|  
     |----------------------------------------|----------|  
-    |Microsoft Visual Studio 2012|1.  Choose the **Start** button, choose **All Programs**.<br />2.  Choose **Microsoft Visual Studio**, choose **Visual Studio Tools**, and then right-click **Visual Studio Command Prompt** and choose **Run as Administrator**.|  
+    |Microsoft Visual Studio|1.  Choose the **Start** button, choose **All Programs**.<br />2.  Choose **Microsoft Visual Studio**, choose **Visual Studio Tools**, and then right-click **Visual Studio Command Prompt** and choose **Run as Administrator**.|  
     |Microsoft Windows SDK|1.  Choose the **Start** button, choose **All Programs**.<br />2.  Choose **Microsoft Windows SDK**, choose **Microsoft Windows SDK**, and then right-click **Windows SDK Command Prompt** and choose **Run as Administrator**.|  
   
 3.  At the command prompt, change to the folder that you created for the certificates. For example, type `cd\My Certificates`, and then press Enter.  
@@ -238,7 +238,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
      Each entry is listed by the `Reserved URL` field, which has the format `http://hostname:port`. `hostname` is the name of the computer running the service and `port` is the port number the service runs on. A '`+`' \(plus sign\) in the `Reserved URL` field represents localhost, which indicates the computer that you are working on.  
   
-     By default, SOAP and OData web services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] use ports 7047 and 7048, respectively, and connect to a [!INCLUDE[server](../developer/includes/server.md)] instance named[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]. The default reserved URL entries for these services are: `http://+:7047/nav_server_instance/` and `http://+:7048/nav_server_instance/`.  
+     By default, SOAP and OData web services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] use ports 7047 and 7048, respectively, and connect to a [!INCLUDE[server](../developer/includes/server.md)] instance named[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]. The default reserved URL entries for these services are: `http://+:7047/<server instance>/` and `http://+:7048/<server instance>/`.  
   
 4.  You must delete any entries that use the same port as the SOAP or OData web services.  
   
@@ -253,11 +253,11 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
      For example, to delete the default entries for SOAP and OData, use the following two commands:  
   
     ```  
-    netsh http delete urlacl url=http://+:7047/nav_server_instance/  
+    netsh http delete urlacl url=http://+:7047/<server instance>/  
     ```  
   
     ```  
-    netsh http delete urlacl url=http://+:7048/nav_server_instance/  
+    netsh http delete urlacl url=http://+:7048/<server instance>/  
     ```  
   
 5.  To register the ports for the SOAP and OData web service with https, type the following command for each service:  
@@ -278,13 +278,13 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
      For example, if the service account for [!INCLUDE[server](../developer/includes/server.md)] has the domain *ABC* and the user name *xyz*, and then the command for the SOAP web service is as follows:  
   
     ```  
-    netsh http add urlacl url=https://+:7047/nav_server_instance user="NT AUTHORITY\NETWORKSERVICE"  
+    netsh http add urlacl url=https://+:7047/<server instance> user="NT AUTHORITY\NETWORKSERVICE"  
     ```  
   
      If the service account for [!INCLUDE[server](../developer/includes/server.md)] is Network Service, then the command is as follows:  
   
     ```  
-    netsh http add urlacl url=https://+:7047/nav_server_instance user="NT AUTHORITY\NETWORKSERVICE"  
+    netsh http add urlacl url=https://+:7047/<server instance> user="NT AUTHORITY\NETWORKSERVICE"  
     ```  
   
 6.  To verify that your port has been registered, repeat step 3.  
@@ -348,7 +348,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
 ##  <a name="Verify"></a> Verifying the Configuration  
  You should now be able to use web services that are encrypted with SSL. To verify this, type the following URL in the address bar for your browser.  
   
- `https://localhost:7047/nav_server_instance/WS/services`  
+ `https://localhost:7047/<server instance>/WS/services`  
   
  The page lists any web services that have been published.  
   
