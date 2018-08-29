@@ -38,5 +38,5 @@ No, this is not currently supported.
 ## See Also
 
 [FAQ for Developing in AL](/developer/devenv-dev-faq.md)  
-[Welcome to [!INCLUDE[prodlong](includes/prodlong.md)](/dynamics365/business-central/)  
+[Welcome to [!INCLUDE[prodlong](includes/prodlong.md)]](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Documentation](/dynamics365/index)  
