@@ -1,24 +1,28 @@
 ---
 title: "FAQ about developer and IT-Pro experiences"
-description: Get answers to some of your questions
+description: Get answers to some of your questions about deploying or administering Business Central.
 author: edupont04
-ms.date: 08/14/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+ms.author: edupont
+ms.date: 08/29/2018
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
+
 This section contains answers to frequently asked questions about developing for and administering [!INCLUDE[prodlong](includes/prodlong.md)].  
 
 > [!TIP]  
 > If you are looking for frequently asked questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)], see [Frequently Asked Questions](/dynamics365/business-central/across-faq).
 
 ## Is [!INCLUDE[prodshort](includes/prodshort.md)] available in my country?
-[!INCLUDE[prodshort](includes/prodshort.md)] is available in a limited number of markets, but new countries are added through Microsoft-led localization or through partner-led localization on a quarterly basis. For more information, see [Countries and Translations Supported](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations).  
+
+[!INCLUDE[prodshort](includes/prodshort.md)] is available in a limited number of markets, but new countries are added through Microsoft-led localization or through partner-led localization on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations).  
 
 ## How often is [!INCLUDE[prodshort](includes/prodshort.md)] updated?
+
 This product is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). This means continuous service updates and a major update every 6 months. Stay tuned for more information.
 
 ## How often are production databases backed up?
