@@ -12,7 +12,7 @@ caps.latest.revision: 63
 manager: edupont
 ---
 # Walkthrough: Registering and Using a Page Web Service (SOAP)
-This walkthrough focuses on publishing a [!INCLUDE[prodshort](includes/prodshort.md)] page as a SOAP web service and then using it in a Visual Studio 2012 console application. When you publish a page as a web service, you expose a default set of operations for managing common record-handling tasks to developers. The walkthrough shows how to use some of these operations. Compare this walkthrough with [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData-.md).  
+This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page as a SOAP web service and then using it in a Visual Studio 2012 console application. When you publish a page as a web service, you expose a default set of operations for managing common record-handling tasks to developers. The walkthrough shows how to use some of these operations. Compare this walkthrough with [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData.md).  
 
 ## About This Walkthrough  
  This walkthrough provides an overview of how to publish a page as a web service and then interact with data from that page in a Visual Studio console application. This walkthrough uses a SOAP web service, although you can also create an OData web service to interact with page data. The walkthrough illustrates the following tasks:  
@@ -28,18 +28,18 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](includes/prodshort
 ### Prerequisites  
  To complete this walkthrough, you will need:  
 
--   [!INCLUDE[prodshort](includes/prodshort.md)] with a developer license.  
+-   [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with a developer license.  
 
--   [!INCLUDE[demolong](includes/demolong_md.md)].  
+-   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
 
 -   Visual Studio 2012, Visual Studio 2010, or Visual Studio 2008. You can use any edition of Visual Studio that supports adding web references. In this walkthrough, you will use Visual Studio 2012. You also have the option of using service references instead of web references, or of using the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
 
 ## Publishing a Page as a Web Service  
- You publish a web service using the [!INCLUDE[rtc](includes/rtc_md.md)].  
+ You publish a web service using the [!INCLUDE[rtc](../developer/includes/rtc_md.md)].  
 
 #### To publish a page as a web service  
 
-1.  Open the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], and then connect to the [!INCLUDE[demoname](includes/demoname_md.md)] company.  
+1.  Open the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], and then connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
 
 2.  In the **Search** box, enter **Web Services**, and then press Return.  
 
@@ -54,15 +54,15 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](includes/prodshort
 ## Verifying Web Services Availability  
 
 > [!NOTE] 
->  After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for SOAP-based web services is set to 7047. You can configure this value by using the [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
+>  After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for SOAP-based web services is set to 7047. You can configure this value by using the [Server Administration Tool](../administration/administration-tool.md).  
 
-#### To verify availability of a [!INCLUDE[prodshort](includes/prodshort.md)] web service  
+#### To verify availability of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web service  
 
 1.  Start Windows Internet Explorer.  
 
 2.  In the **Address** field, enter an address of the following type: **http://\<Server>:\<WebServicePort>/\<ServerInstance>/WS/\<CompanyName>/services**. For example:  
 
-     **http://localhost:7047/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]/WS/CRONUS%20International%20Ltd./services**  
+     **http://localhost:7047/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/WS/CRONUS%20International%20Ltd./services**  
 
     > [!NOTE] 
     >  The company name is case-sensitive.  
@@ -89,7 +89,7 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](includes/prodshort
 
 4.  In Solution Explorer, right-click **References** in the project, and then choose **Add Service Reference**.  
 
-5.  Choose the **Advanced** button, choose the **Add Web Reference** button, type or paste the URL that you used when you checked the WSDL, such as **http://localhost:7047/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]/WS/Services**, and then choose **Go**.  
+5.  Choose the **Advanced** button, choose the **Add Web Reference** button, type or paste the URL that you used when you checked the WSDL, such as **http://localhost:7047/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/WS/Services**, and then choose **Go**.  
 
 6.  When the **Customer** service is displayed, choose **View Service**, rename **localhost** to **WebService**, and then choose **Add Reference**.  
 
@@ -177,7 +177,7 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](includes/prodshort
     }  
     ```  
 
-8.  On the **Build** menu, select **Build Solution** to build your project and then, from the Debug menu, choose **Start Debugging** to run the application in debug mode. You should now see a console window that prints a list of customers from the [!INCLUDE[demoname](includes/demoname_md.md)] company. One customer in the list is created, then is modified, and is finally deleted.  
+8.  On the **Build** menu, select **Build Solution** to build your project and then, from the Debug menu, choose **Start Debugging** to run the application in debug mode. You should now see a console window that prints a list of customers from the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company. One customer in the list is created, then is modified, and is finally deleted.  
 
 ## See Also  
- [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData-.md)
+ [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData.md)

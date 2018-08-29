@@ -16,11 +16,11 @@ To have messages, including errors, display in the language of the user, you hav
   
 ### To specify the local language of ADCS messages  
   
-1.  Start the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)], and on the **Tools** menu, choose **Object Designer**.  
+1.  Start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and on the **Tools** menu, choose **Object Designer**.  
   
 2.  Choose **CodeUnit**, and from the list, select codeunit 7714. Choose the **Design** button. The C/AL Editor opens.  
   
-3.  In the **ProcessDocument** function, add a line of code as highlighted in the following code. The following example demonstrates setting the language code for German.  
+3.  In the **ProcessDocument** method, add a line of code as highlighted in the following code. The following example demonstrates setting the language code for German.  
   
     ```  
   

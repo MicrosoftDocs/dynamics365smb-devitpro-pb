@@ -12,12 +12,12 @@ caps.latest.revision: 90
 manager: edupont
 ---
 # Walkthrough: Creating and Using a Codeunit Web Service (SOAP)
-Web services provide easy communication and data exchange in a secured environment. In [!INCLUDE[prodshort](includes/prodshort.md)] , you can create, publish, and use web services. For example, you can publish a web service that lists all your customers and have that web service be immediately available for authorized requests over the network.  
+Web services provide easy communication and data exchange in a secured environment. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] , you can create, publish, and use web services. For example, you can publish a web service that lists all your customers and have that web service be immediately available for authorized requests over the network.  
   
 ## About This Walkthrough  
  This walkthrough provides an overview of how to create and use a simple SOAP web service. The walkthrough illustrates to the following tasks:  
   
--   Creating a codeunit in [!INCLUDE[prodshort](includes/prodshort.md)] .  
+-   Creating a codeunit in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] .  
   
 -   Publishing the codeunit as a web service.  
   
@@ -31,9 +31,9 @@ Web services provide easy communication and data exchange in a secured environme
 ### Prerequisites  
  To complete this walkthrough, you will need:  
   
--   [!INCLUDE[prodshort](includes/prodshort.md)] with a developer license.  
+-   [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with a developer license.  
   
--   [!INCLUDE[demolong](includes/demolong_md.md)].  
+-   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
   
 -   Visual Studio 2012 or Visual Studio 2010. You can use any edition of Visual Studio that supports adding web references. In this walkthrough, you will use Visual Studio 2012. You also have the option of using service references instead of web references, or of using the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
   
@@ -42,7 +42,7 @@ Web services provide easy communication and data exchange in a secured environme
   
 #### To create a codeunit  
   
-1.  Open the [!INCLUDE[prodshort](includes/prodshort.md)] development environment and then connect to the [!INCLUDE[demoname](includes/demoname_md.md)] company.  
+1.  Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] development environment and then connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
   
      Object Designer opens automatically in the development environment.  
   
@@ -52,11 +52,11 @@ Web services provide easy communication and data exchange in a secured environme
   
 3.  On the **View** menu, choose **C/AL Globals**.  
   
-4.  In the **C/AL Globals** window, choose the **Functions** tab, and then enter **Capitalize** as the function name.  
+4.  In the **C/AL Globals** window, choose the **Functions** tab, and then enter **Capitalize** as the method name.  
   
-5.  Select the **Capitalize** function, in the **View** menu, choose **Properties**, and then set the **Local** property to **No**.  
+5.  Select the **Capitalize** method, in the **View** menu, choose **Properties**, and then set the **Local** property to **No**.  
   
-     Setting this property makes the function accessible from the other objects. For more information about this property, see [Local Property](Local-Property.md).  
+     Setting this property makes the method accessible from the other objects. For more information about this property, see [Local Property](../developer/properties/devenv-Local-Property.md).  
   
 6.  In the **C/AL Globals** window, choose the **Locals** button.  
   
@@ -77,11 +77,11 @@ Web services provide easy communication and data exchange in a secured environme
 12. When you are prompted, enter **50000** for the codeunit ID, then enter **Letters** for the name, make sure the compile check box is checked, and then choose **OK**.  
   
 ## Publishing the Web Service  
- After the codeunit is created and saved, you publish it using the [!INCLUDE[rtc](includes/rtc_md.md)].  
+ After the codeunit is created and saved, you publish it using the [!INCLUDE[rtc](../developer/includes/rtc_md.md)].  
   
 #### To publish the web service  
   
-1.  Open the [!INCLUDE[rtc](includes/rtc_md.md)], and then connect to the [!INCLUDE[demoname](includes/demoname_md.md)] company.  
+1.  Open the [!INCLUDE[rtc](../developer/includes/rtc_md.md)], and then connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
   
 2.  In the **Search** box, enter **Web Services**, and then press Return.  
   
@@ -94,7 +94,7 @@ Web services provide easy communication and data exchange in a secured environme
 ## Verifying Web Service Availability  
   
 > [!NOTE] 
->  After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for SOAP-based web services is set to 7047. You can configure this value by using the [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
+>  After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for SOAP-based web services is set to 7047. You can configure this value by using the [Server Administration Tool](../administration/administration-tool.md).  
   
 #### To verify availability of the web service  
   
@@ -104,7 +104,7 @@ Web services provide easy communication and data exchange in a secured environme
   
      For example:  
   
-     **http://localhost:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd./services**  
+     **http://localhost:7047/BC130/WS/CRONUS%20International%20Ltd./services**  
   
     > [!NOTE] 
     >  The company name is case-sensitive.  
@@ -126,7 +126,7 @@ Web services provide easy communication and data exchange in a secured environme
   
 5.  In the **Add Service Reference** window, choose the **Advanced** button.  
   
-6.  In the **Service Reference Settings** window, choose the **Add Web Reference** button, type or paste the URL that you used when you checked the WSDL, such as **http://localhost:7047/DynamicsNAV/WS/Services**, and then choose **Go** \(the green button with the arrow\).  
+6.  In the **Service Reference Settings** window, choose the **Add Web Reference** button, type or paste the URL that you used when you checked the WSDL, such as **http://localhost:7047/BC130/WS/Services**, and then choose **Go** \(the green button with the arrow\).  
   
 7.  When the **Letters** service is displayed on the discovery Page, choose **View Service**, then in the **Web reference name** text box, rename **localhost** to **WebService**, and then choose **Add Reference**.  
   
@@ -176,12 +176,12 @@ Web services provide easy communication and data exchange in a secured environme
 10. Press Enter to close the application.  
   
 ## Next Steps  
- This walkthrough illustrated how you can publish a codeunit as a web service from [!INCLUDE[prodshort](includes/prodshort.md)] and write a program that uses the web service. The next step is to expose a page as a web service and then interact with data from that page. For details, see [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP-.md).  
+ This walkthrough illustrated how you can publish a codeunit as a web service from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and write a program that uses the web service. The next step is to expose a page as a web service and then interact with data from that page. For details, see [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP.md).  
   
 ## See Also  
  [Web Services](Web-Services.md)   
  [SOAP Web Services](SOAP-Web-Services.md)   
- [Microsoft Dynamics NAV Web Services Overview](Microsoft-Dynamics-NAV-Web-Services-Overview.md)   
- [How to: Publish a Web Service](How-to--Publish-a-Web-Service.md)   
- [Walkthrough: Configuring Web Services to Use SSL \(SOAP and OData\)](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData-.md)   
- [Web Service Alternatives: SOAP and OData](Web-Service-Alternatives:-SOAP-and-OData.md)
+ [Web Services Overview](web-services.md)   
+ [Publish a Web Service](publish-web-service.md)   
+ [Walkthrough: Configuring Web Services to Use SSL \(SOAP and OData\)](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData.md)   
+ [Web Services Overview](web-services.md)

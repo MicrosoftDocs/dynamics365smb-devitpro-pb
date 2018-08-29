@@ -384,7 +384,7 @@
 # [CREATEOUTSTREAM Function (File)](CREATEOUTSTREAM-Function--File-.md)
 # [How to: Set Up Filter Rows in Query Designer](How-to--Set-Up-Filter-Rows-in-Query-Designer.md)
 # [How to: Specify When UI Elements Are Removed](How-to--Specify-When-UI-Elements-Are-Removed.md)
-# [Users and Credential Types](Users-and-Credential-Types.md)
+# [Authentication and Credential Types](../administration/users-credential-types.md)
 # [Creating Table Definitions from SQL Server Objects (Linked Objects)](Creating-Table-Definitions-from-SQL-Server-Objects--Linked-Objects-.md)
 # [Find](uiref/-$-S_11001-Find-$-.md)
 # [Deploying Microsoft Dynamics NAV on Two Virtual Machines Using Example-2VM Script](Deploying-Microsoft-Dynamics-NAV-on-Two-Virtual-Machines-Using-Example-2VM-Script.md)

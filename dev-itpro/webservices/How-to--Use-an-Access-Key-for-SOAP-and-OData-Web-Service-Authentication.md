@@ -11,13 +11,13 @@ ms.assetid: c88c539c-d615-4cb2-b9c6-e7e976583bc2
 caps.latest.revision: 7
 ---
 # How to: Use an Access Key for SOAP and OData Web Service Authentication
-If your solution is configured for NavUserPassword or AccessControlService authentication, then you can configure [!INCLUDE[prodshort](includes/prodshort.md)] user accounts to include an access key that can be used instead of a password to authenticate SOAP and OData web service requests. A web service access key is a random 44 character string that is associated with the user account. Because it can only be used for SOAP and OData web services, it does not require the same level of protection as a password.  
+If your solution is configured for NavUserPassword or AccessControlService authentication, then you can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user accounts to include an access key that can be used instead of a password to authenticate SOAP and OData web service requests. A web service access key is a random 44 character string that is associated with the user account. Because it can only be used for SOAP and OData web services, it does not require the same level of protection as a password.  
   
 ## Generating a Web Service Access Key  
   
-#### To generate a web service access key for a [!INCLUDE[prodshort](includes/prodshort.md)] user  
+#### To generate a web service access key for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user  
   
-1.  In the [!INCLUDE[rtc](includes/rtc_md.md)] in the **Search** box, enter **Users**, and then choose the **Users** link in the Results list.  
+1.  In the [!INCLUDE[rtc](../developer/includes/rtc_md.md)] in the **Search** box, enter **Users**, and then choose the **Users** link in the Results list.  
   
      The **Users** page opens.  
   
@@ -49,12 +49,12 @@ If your solution is configured for NavUserPassword or AccessControlService authe
   
     |To|See|  
     |--------|---------|  
-    |Learn how to use the web access key in Excel PowerPivot|[Walkthrough: Viewing Page Data in Excel Using PowerPivot \(OData\)](Walkthrough--Viewing-Page-Data-in-Excel-Using-PowerPivot--OData-.md)|  
+    |Learn how to use the web access key in Excel PowerPivot|[Walkthrough: Viewing Page Data in Excel Using PowerPivot \(OData\)](Walkthrough--Viewing-Page-Data-in-Excel-Using-PowerPivot--OData.md)|  
     |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](http://go.microsoft.com/fwlink/?LinkID=259554)|  
   
 ## See Also  
  [Web Services Authentication](Web-Services-Authentication.md)   
- [Microsoft Dynamics NAV Web Services Overview](Microsoft-Dynamics-NAV-Web-Services-Overview.md)   
+ [Web Services Overview](web-services.md)   
  [SOAP Web Services](SOAP-Web-Services.md)   
  [OData Web Services](OData-Web-Services.md)   
  [How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md)

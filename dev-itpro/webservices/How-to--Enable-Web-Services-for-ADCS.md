@@ -16,7 +16,7 @@ To use Automated Data Capture System, you must enable the ADCS web service.
 
 ### To enable and publish the ADCS web service  
 
-1.  Start the [!INCLUDE[rtc](includes/rtc_md.md)].  
+1.  Start the [!INCLUDE[rtc](../developer/includes/rtc_md.md)].  
 
 2.  In the **Search** box, enter **Web Services**, and then choose the related link.  
 
@@ -24,7 +24,7 @@ To use Automated Data Capture System, you must enable the ADCS web service.
 
 4.  In the **Web Services** window, enter the following information on a new line:  
 
-    |[!INCLUDE[bp_tablefield](includes/bp_tablefield_md.md)]|Value|  
+    |[!INCLUDE[bp_tablefield](../developer/includes/bp_tablefield_md.md)]|Value|  
     |---------------------------------|-----------|  
     |**Object Type**|Codeunit|  
     |**Object ID**|7714|  

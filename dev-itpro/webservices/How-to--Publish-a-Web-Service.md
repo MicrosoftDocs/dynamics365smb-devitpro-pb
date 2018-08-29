@@ -37,16 +37,20 @@ translation.priority.ht:
   - sv-se
 ---
 # How to: Publish a Web Service
-You can set up a web service in the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. You must then publish the web service so that it is available to service requests over the network. Users can discover web services by pointing a browser at the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and requesting a list of available services. When you publish a web service, it is immediately available over the network for authenticated users. All authorized users can access metadata for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services, but only users who have sufficient [!INCLUDE[prodshort](../developer/includes/prodshort.md)] permissions can access actual data.  
+Web services are a lightweight way to make application functionality available to a variety of external systems and users. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] , you can expose pages, codeunits, and queries as web services. When you publish [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects as web services, they are immediately available on the network.  
+  
+ You can set up a web service in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] or the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You must then publish the web service so that it is available to service requests over the network. Users can discover web services by pointing a browser at the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and requesting a list of available services. When you publish a web service, it is immediately available over the network for authenticated users. All authorized users can access metadata for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services, but only users who have sufficient [!INCLUDE[prodshort](../developer/includes/prodshort.md)] permissions can access actual data.  
   
 ## Creating and Publishing a Web Service  
  The following steps explain how to create and publish a web service.  
   
 #### To create and publish a web service  
   
-1.  Open the client.  
+1.  Open the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] or the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
   
-2.  Choose the ![Search for Page or Report](../media/search_small.png "Search for Page or Report icon") icon, enter **Web Services**, and then choose the related link.   
+2.  In the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], in the **Search** box, enter **Web Services**, and then choose the related link.  
+  
+     In the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], choose the **Search for Page or Report** button, enter **Web Services**, and then choose the related link.  
   
 3.  In the **Web Services** page, choose **New**.  
   
@@ -61,10 +65,8 @@ You can set up a web service in the [!INCLUDE[nav_web](../developer/includes/nav
   
 6.  In the **Service Name** field, assign a name to the web service. For example, if you expose the customer card as a web service, enter **Customers**.  
   
-    -    **Codeunit** and **Page** are valid types for SOAP web services. **Page** and **Query** are valid types for OData web services.
-    - If the database contains multiple companies, you can choose an object ID that is specific to one of the companies.
-    - The service name is visible to consumers of your web service and is the basis for identifying and distinguishing web services, so you should make the name meaningful.
-    - If you are setting up integration with Microsoft Outlook using codeunit 5313, then you must use **DynamicsNAVsynchOutlook** as the service name.  
+    > [!NOTE] 
+    >  The service name is visible to consumers of your web service and is the basis for identifying and distinguishing web services, so you should make the name meaningful. If you are setting up integration with Microsoft Outlook using codeunit 5313, then you must use **DynamicsNAVsynchOutlook** as the service name.  
   
 7.  Select the check box in the **Published** column.  
   
@@ -90,11 +92,11 @@ You can set up a web service in the [!INCLUDE[nav_web](../developer/includes/nav
  When you access a web service, and you want to write data back to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] , you must specify the company name. You can specify the company as part of the URI as shown in the examples, or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service and are both valid URIs.  
   
 ```  
-https://localhost:7048/<serverinstance>/OData/Company('CRONUS International Ltd.')/Customer  
+https://localhost:7048/nav_server_instance/OData/Company('CRONUS International Ltd.')/Customer  
 ```  
   
 ```  
-https://localhost:7048/<serverinstance>/OData/Customer?company='CRONUS International Ltd.'  
+https://localhost:7048/nav_server_instance/OData/Customer?company='CRONUS International Ltd.'  
 ```  
   
 ## See Also  
