@@ -14,31 +14,31 @@ author: SusanneWindfeldPedersen
 ---
 
 # Walkthrough: Creating and Interacting With an OData V4 Bound Action
-This walkthrough illustrates how you can publish a [!INCLUDE[navnow](includes/navnow_md.md)] function as an OData V4 web service action. 
+This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] function as an OData V4 web service action. 
 
 ## About This Walkthrough  
 This walkthrough provides an overview of how to expose a function as a web service action and how to verify that the service is working as expected. The walkthrough illustrates the following tasks:
 
--   Publishing a [!INCLUDE[navnow](includes/navnow_md.md)] function as a web service.    
+-   Publishing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] function as a web service.    
 -   Verifying web service availability from a browser.
   
 ### Prerequisites  
 To complete this walkthrough, you will need:  
   
--   [!INCLUDE[navnowlong](includes/navnowlong_md.md)] CTP 10 with a developer license.  
+-   [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] CTP 10 with a developer license.  
   
--   [!INCLUDE[demolong](includes/demolong_md.md)].  
+-   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
   
 -   The **Postman** app for testing the web service URI.
   
 ## Publishing a Function as a Web Service   
-You publish a function as a Web service action by using the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] to create the function and the [!INCLUDE[navnow](includes/navnow_md.md)] Windows client or the [!INCLUDE[navnow](includes/navnow_md.md)] Web client for publishing the objects the function is for. The tutorial provides an example that will return a location header. A location header would be used to later issue a get request for the resulting object. Refer to the **Return a Value** section for an example that will return a value specified in your function.
+You publish a function as a Web service action by using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] to create the function and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows client or the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client for publishing the objects the function is for. The tutorial provides an example that will return a location header. A location header would be used to later issue a get request for the resulting object. Refer to the **Return a Value** section for an example that will return a value specified in your function.
   
 ### To create the function
 
 #### Create a Copy action on the Sales Invoice page.
 
-1.  Open the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] and then connect to the [!INCLUDE[demoname](includes/demoname_md.md)] company.  
+1.  Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] and then connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
   
      Object Designer opens automatically in the development environment.  
 
@@ -94,7 +94,7 @@ You publish a function as a Web service action by using the [!INCLUDE[nav_dev_lo
 
 ### To register and publish a page as a Web service
 
-1.	Open [!INCLUDE[navnow](includes/navnow_md.md)] and connect to the CRONUS International Ltd. company.
+1.	Open [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and connect to the CRONUS International Ltd. company.
 2.	In the **Search** box, enter **Web services**, and then choose the related link.
 3.	In the **Web Services** page, on the **Home** tab, choose **New**.
 4.	In the **Object Type** column, select **Page**. In the **Object ID** column, enter `43`, and in the **Service Name** column, enter `SalesInvoice`.
@@ -119,7 +119,7 @@ After publishing a web service, verify that the port that web service applicatio
 
 ## Return a value
 
-1.	Open the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] and connect to the application database.
+1.	Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] and connect to the application database.
 2.	Open page 43, **Sales Invoice**.
 3.	Create a new function called **Example**.
 4.	Open **Properties** for the function and set the properties to the following values.  
@@ -159,7 +159,7 @@ After publishing a web service, verify that the port that web service applicatio
     }
     ```
 
-You have now published a [!INCLUDE[navnow](includes/navnow_md.md)] function as an OData V4 web service action and verified that the service works as expected. To read more about web services, see the **See Also** section below.
+You have now published a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] function as an OData V4 web service action and verified that the service works as expected. To read more about web services, see the **See Also** section below.
   
 ## See Also  
  [Web Services](Web-Services.md)   

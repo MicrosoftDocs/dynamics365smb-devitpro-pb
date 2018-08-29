@@ -12,12 +12,12 @@ caps.latest.revision: 25
 manager: edupont
 ---
 # Walkthrough: Viewing Page Data in Excel Using PowerPivot (OData)
-This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlong](includes/navnowlong_md.md)] page as a web service and then analyze the page data using Microsoft PowerPivot for Excel 2013. Similar steps also apply to PowerPivot for Excel 2010. For information about PowerPivot, see [Microsoft PowerPivot](http://go.microsoft.com/fwlink/?LinkID=199906).  
+This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] page as a web service and then analyze the page data using Microsoft PowerPivot for Excel 2013. Similar steps also apply to PowerPivot for Excel 2010. For information about PowerPivot, see [Microsoft PowerPivot](http://go.microsoft.com/fwlink/?LinkID=199906).  
 
 ## About This Walkthrough  
  With OData and PowerPivot, you gain access to a powerful set of tools and technologies for data exchange and analysis. This walkthrough illustrates the following tasks:  
 
--   Publishing a [!INCLUDE[navnow](includes/navnow_md.md)] page as a web service.  
+-   Publishing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page as a web service.  
 
 -   Verifying web service availability from a browser.  
 
@@ -30,26 +30,26 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 ### Prerequisites  
  To complete this walkthrough, you will need:  
 
--   [!INCLUDE[navnowlong](includes/navnowlong_md.md)] with a developer license.  
+-   [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] with a developer license.  
 
--   [!INCLUDE[demolong](includes/demolong_md.md)].  
+-   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
 
 -   Excel 2013 with the PowerPivot add-in enabled. For more information, see [Download PowerPivot page](http://go.microsoft.com/fwlink/?LinkId=200002).  
 
--   Optionally, if you want to use a web service access key to authenticate access to the web service, [!INCLUDE[navnow](includes/navnow_md.md)] must meet the following requirements:  
+-   Optionally, if you want to use a web service access key to authenticate access to the web service, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must meet the following requirements:  
 
-    -   The [!INCLUDE[nav_server](includes/nav_server_md.md)] is configured to authenticate users by using the NavUserPassword credential type.  
+    -   The [!INCLUDE[server](../developer/includes/server.md)] is configured to authenticate users by using the NavUserPassword credential type.  
 
-    -   There is a [!INCLUDE[navnow](includes/navnow_md.md)] user account that has a web service access key. In this walkthrough, the user account has the user name NavTest.  
+    -   There is a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account that has a web service access key. In this walkthrough, the user account has the user name NavTest.  
 
      For more information, see [Users and Credential Types](Users-and-Credential-Types.md).  
 
 ## Publishing a Page as a Web Service  
- You can publish a web service by using the [!INCLUDE[nav_web](includes/nav_web_md.md)] or the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
+ You can publish a web service by using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] or the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)].  
 
 #### To register and publish a page as a web service  
 
-1.  Open the [!INCLUDE[rtc](includes/rtc_md.md)] and connect to the [!INCLUDE[demoname](includes/demoname_md.md)] company.  
+1.  Open the [!INCLUDE[rtc](../developer/includes/rtc_md.md)] and connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
 
 2.  In the **Search** box, enter **Web Services**, and then choose the related link.  
 
@@ -68,31 +68,31 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 > [!IMPORTANT]  
 >  After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for OData web services is 7048. You can configure this value by using the [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
 
-#### To verify availability of a [!INCLUDE[navnow](includes/navnow_md.md)] web service  
+#### To verify availability of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web service  
 
 1.  Start Windows Internet Explorer.  
 
 2.  In the **Address** field, enter a URI using the following format: **http://\<Server>:\<WebServicePort>/\<ServerInstance>/OData/**  
 
-    -   **Server** is the name of the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)].  
+    -   **Server** is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
 
     -   **WebServicePort** is the port that OData is running on. The default port is 7048.  
 
-    -   **ServiceInstance** is the name of the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance for your solution. The default name is [!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)].  
+    -   **ServiceInstance** is the name of the [!INCLUDE[server](../developer/includes/server.md)] instance for your solution. The default name is [!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)].  
 
-     For example, if the [!INCLUDE[nav_server](includes/nav_server_md.md)] is running on the computer that you are working on, you can use: **http://localhost:7048/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]/OData/**  
+     For example, if the [!INCLUDE[server](../developer/includes/server.md)] is running on the computer that you are working on, you can use: **http://localhost:7048/[!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)]/OData/**  
 
      The browser should now show the web service that you have published, as shown in the following illustration.  
 
      ![OData services listed in a browser](media/ODataservicesinbrowser.JPG "ODataservicesinbrowser")  
 
 > [!NOTE]  
->  If the browser cannot find the web service, it may indicate that the specified [!INCLUDE[nav_server](includes/nav_server_md.md)] instance is not running. For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
+>  If the browser cannot find the web service, it may indicate that the specified [!INCLUDE[server](../developer/includes/server.md)] instance is not running. For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
 
-## Importing [!INCLUDE[navnow](includes/navnow_md.md)] Data into Excel  
- In the following procedures, you use PowerPivot to import [!INCLUDE[navnow](includes/navnow_md.md)] data into Excel. If you will be using a web service access key for authentication, only perform the second procedure; otherwise, only perform the first procedure.  
+## Importing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Data into Excel  
+ In the following procedures, you use PowerPivot to import [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data into Excel. If you will be using a web service access key for authentication, only perform the second procedure; otherwise, only perform the first procedure.  
 
-#### To import [!INCLUDE[navnow](includes/navnow_md.md)] data into Excel  
+#### To import [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data into Excel  
 
 1.  Start Microsoft Excel.  
 
@@ -102,7 +102,7 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
      The **Table Import Wizard** opens.  
 
-4.  If your [!INCLUDE[navnow](includes/navnow_md.md)] implementation requires that you use a web service access key, you must specify the NavUserPassword credentials as described in the following steps:  
+4.  If your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] implementation requires that you use a web service access key, you must specify the NavUserPassword credentials as described in the following steps:  
 
     1.  In the **Advanced** dialog box, in the **Security** section, set the **Integrated Security** field to **Basic**.  
 
@@ -110,13 +110,13 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
     2.  In the **Password** field, type the web service access key.  
 
-    3.  In the **UserID** field, type the user name for the [!INCLUDE[navnow](includes/navnow_md.md)] user account. For this walkthrough, use **NavTest**.  
+    3.  In the **UserID** field, type the user name for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account. For this walkthrough, use **NavTest**.  
 
-    4.  In the **Source** section, in the **Service Document URL** field, type the URL for the OData web service that you verified in the previous procedure,  for example, **http://localhost:7048/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]/OData/**.  
+    4.  In the **Source** section, in the **Service Document URL** field, type the URL for the OData web service that you verified in the previous procedure,  for example, **http://localhost:7048/[!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)]/OData/**.  
 
     5.  Choose the **OK** button to return to the **Table Import Wizard**.  
 
-5.  In the **Connect to a Data Feed** page, in the **Data Feed Url** field, enter the OData URI that you verified in the previous procedure, for example **http://localhost:7048/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]/OData/**. Choose the **Next** button.  
+5.  In the **Connect to a Data Feed** page, in the **Data Feed Url** field, enter the OData URI that you verified in the previous procedure, for example **http://localhost:7048/[!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)]/OData/**. Choose the **Next** button.  
 
     > [!IMPORTANT]  
     >  The URI must end with a slash \(/\) as shown in the example.  
@@ -129,7 +129,7 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
  The data from the **Customer** OData web service displays, and you can use the data to build pivot-based views in the Excel workbook.  
 
-## Creating a PivotTable Containing Key [!INCLUDE[navnow](includes/navnow_md.md)] Data  
+## Creating a PivotTable Containing Key [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Data  
  In this procedure, you use the Excel workbook with data from the **Customer** web service to create a PivotTable from the worksheet. You select relevant fields and then organize and format the data to highlight strategic data. Building a pivot table is a way to select and arrange data so as to highlight and focus on key elements.  
 
 #### To create a PivotTable  
@@ -178,9 +178,9 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
 -   Enhance data presentation with a graph.  
 
--   Post the data in a Microsoft SharePoint environment with live data from [!INCLUDE[navnowlong](includes/navnowlong_md.md)].  
+-   Post the data in a Microsoft SharePoint environment with live data from [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)].  
 
- For more information about how to use [!INCLUDE[navnow](includes/navnow_md.md)] data with PowerPivot information, see [Walkthrough: Combining Data from Microsoft Dynamics NAV Queries and Pages with Data from Azure DataMarket \(OData\)](Walkthrough--Combining-Data-from-Microsoft-Dynamics-NAV-Queries-and-Pages-with-Data-from-Azure-DataMarket--OData-.md).  
+ For more information about how to use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data with PowerPivot information, see [Walkthrough: Combining Data from Microsoft Dynamics NAV Queries and Pages with Data from Azure DataMarket \(OData\)](Walkthrough--Combining-Data-from-Microsoft-Dynamics-NAV-Queries-and-Pages-with-Data-from-Azure-DataMarket--OData-.md).  
 
 ## See Also  
  [Web Service Walkthroughs](Web-Service-Walkthroughs.md)   

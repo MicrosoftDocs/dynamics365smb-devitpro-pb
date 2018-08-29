@@ -22,10 +22,10 @@ You can use filter expressions in OData URIs to limit the results that are retur
 http://localhost:7048/DynamicsNAV/OData/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
 ```  
 
- The following table shows the filters that are supported in [!INCLUDE[navnow](includes/navnow_md.md)] OData web services and the equivalent C/AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
+ The following table shows the filters that are supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData web services and the equivalent C/AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
 
 > [!NOTE]  
->  Filters that do not have equivalent C/AL expressions might take longer to process compared to filters that do have equivalent C/AL expressions. The reason is that filters that do not have equivalent C/AL expressions are processed on the [!INCLUDE[nav_server](includes/nav_server_md.md)] tier, while filters that do have equivalent C/AL expressions are processed on the [!INCLUDE[navnow](includes/navnow_md.md)] database tier.  
+>  Filters that do not have equivalent C/AL expressions might take longer to process compared to filters that do have equivalent C/AL expressions. The reason is that filters that do not have equivalent C/AL expressions are processed on the [!INCLUDE[server](../developer/includes/server.md)] tier, while filters that do have equivalent C/AL expressions are processed on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database tier.  
 
 |Definition|Example and explanation|Equivalent C/AL expression|  
 |----------------|-----------------------------|---------------------------------|  

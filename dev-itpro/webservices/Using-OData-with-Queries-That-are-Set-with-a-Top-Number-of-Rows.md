@@ -12,7 +12,7 @@ caps.latest.revision: 8
 manager: edupont
 ---
 # Using OData with Queries That are Set with a Top Number of Rows
-[!INCLUDE[navnow](includes/navnow_md.md)] queries include the [TopNumberOfRows Property](TopNumberOfRows-Property.md) and [TOPNUMBEROFROWS Function](TOPNUMBEROFROWS-Function.md) that can be used to specify the maximum number of rows to include in the resulting dataset. The OData configuration includes the **Max Page Size** setting that specifies the maximum number of entities returned per page of OData results. The default value is 1000.  
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] queries include the [TopNumberOfRows Property](TopNumberOfRows-Property.md) and [TOPNUMBEROFROWS Function](TOPNUMBEROFROWS-Function.md) that can be used to specify the maximum number of rows to include in the resulting dataset. The OData configuration includes the **Max Page Size** setting that specifies the maximum number of entities returned per page of OData results. The default value is 1000.  
   
  To ensure that the OData results include the correct number of entities when you are using a query that is set with a top number of rows, you should set the **Max Page Size** value greater than the value that is set by the **TopNumberOfRows**  property and **TOPNUMBEROFROWS**  function. Otherwise, the **TopNumberOfRows** property and **TOPNUMBEROFROWS** function are ignored and the query dataset will be returned in the OData results.  
   

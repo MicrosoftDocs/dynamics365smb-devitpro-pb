@@ -15,7 +15,7 @@ You can publish a page as a web service and consume it using JavaScript Object N
   
 ### To obtain a document based on JSON  
   
-1.  You can build applications that consume and display [!INCLUDE[navnow](includes/navnow_md.md)] data using JSON. This example assumes that you have registered and published a page web service in [!INCLUDE[navnow](includes/navnow_md.md)]. For more information, see [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData-.md).  
+1.  You can build applications that consume and display [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data using JSON. This example assumes that you have registered and published a page web service in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For more information, see [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData-.md).  
   
 2.  Start Windows Internet Explorer. In the **Address** field, enter a URI in this format:  
   
@@ -23,7 +23,7 @@ You can publish a page as a web service and consume it using JavaScript Object N
     http://<Server>:<WebServicePort>/<ServerInstance>/OData/<web service>?$format=json  
     ```  
   
-     If [!INCLUDE[nav_server](includes/nav_server_md.md)] is running on the local computer and is using the default [!INCLUDE[nav_server](includes/nav_server_md.md)] instance and OData port, and you have published a web service that is based on page 21 that is called **Customer**, then the address is:  
+     If [!INCLUDE[server](../developer/includes/server.md)] is running on the local computer and is using the default [!INCLUDE[server](../developer/includes/server.md)] instance and OData port, and you have published a web service that is based on page 21 that is called **Customer**, then the address is:  
   
     ```  
     http://localhost:7048/DynamicsNAV/OData/Customer?$format=json  
