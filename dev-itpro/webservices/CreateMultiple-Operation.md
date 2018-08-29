@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: dca6d1e6-d4e3-451a-981f-4cb6be073b01
-caps.latest.revision: 10
 ---
 # CreateMultiple Operation
 Creates a set of records. The supplied record object is overwritten with the version that is created by the page.  

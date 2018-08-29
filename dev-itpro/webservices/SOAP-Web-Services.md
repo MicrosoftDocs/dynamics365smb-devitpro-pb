@@ -7,9 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: b166d488-bb00-4abe-a86d-f9489022b3e4
-caps.latest.revision: 6
-manager: edupont
 ---
 # SOAP Web Services
 SOAP web services enable full flexibility for building operation-centric services. They provide industry-standard interoperability and channel and host pluggability.  

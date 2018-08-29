@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 25774773-f5ce-44f5-9bf3-07827d5996a7
-caps.latest.revision: 14
 ---
 # Web Services Authentication
 When users send a request for a web service, they are authenticated according to the credential type that is configured for [!INCLUDE[server](../developer/includes/server.md)]. To access a web service, users must provide valid credentials for the credential type being used. If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for Windows credential type, then users are automatically authenticated against the Windows account that their computer is running under, and they are not prompted for their credentials. For other credential types, users are prompted to enter a user name and password. 

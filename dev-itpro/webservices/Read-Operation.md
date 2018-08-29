@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 778a4a74-7751-4af4-8c02-b82171f46aea
-caps.latest.revision: 11
 ---
 # Read Operation
 Reads a single record.  

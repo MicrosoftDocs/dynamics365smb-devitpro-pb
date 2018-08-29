@@ -7,9 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: ebe86441-9836-4b91-9b45-1725d5385b35
-caps.latest.revision: 8
-manager: edupont
 ---
 # Managing Time Zones with Web Services
 [!INCLUDE[server](../developer/includes/server.md)] provides a **Services Default Time Zone** setting for defining the time zone in which web service calls run. This setting affects both SOAP and OData web services, in addition to NAS Services.  

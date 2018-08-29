@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 8b5cbbf3-a33b-49f0-a2da-e9e02246c1e8
-caps.latest.revision: 12
 ---
 # Delete_&lt;part&gt; Operation
 Deletes records on a subpage of the current page.  
@@ -17,7 +15,7 @@ Deletes records on a subpage of the current page.
   
  When you call this operation, you delete a record of the subpage. When you call Read on a page that has a subpage, you get the records of the top-level page and the corresponding records of the subpage. To modify them or add to them, you must modify the whole top-level record.  
   
- Executing the Delete\_\<part> operation in a web service first executes the [OnDeleteRecord Trigger](OnDeleteRecord-Trigger.md) on the designated record of the subpage. If application code in the OnDeleteRecord trigger for the record of the subpage returns **true**, then the [OnDelete Trigger](OnDelete-Trigger.md) for the corresponding table is executed. If no fault occurs, then the record of the subpage is deleted from the database.  
+ Executing the Delete\_\<part> operation in a web service first executes the [OnDeleteRecord Trigger](../developer/triggers/devenv-OnDeleteRecord-Trigger.md) on the designated record of the subpage. If application code in the OnDeleteRecord trigger for the record of the subpage returns **true**, then the [OnDelete Trigger](../developer/triggers/devenv-OnDelete-Trigger.md) for the corresponding table is executed. If no fault occurs, then the record of the subpage is deleted from the database.  
   
  If the application code in the trigger returns **false**, then the OnDelete trigger is not executed. This does not necessarily mean that the record of the subpage has not been deleted because it may have been deleted explicitly by the application code for the page's OnDeleteRecord trigger.  
   

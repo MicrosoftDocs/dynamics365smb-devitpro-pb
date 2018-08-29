@@ -7,9 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: e9c72d0e-24c9-4f8f-88ea-cc89b836954b
-caps.latest.revision: 67
-manager: edupont
 ---
 # Walkthrough: Creating a Web Service using Extension Codeunits (SOAP)
 This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page as a web service and how you can extend the [Basic Page Operations](Basic-Page-Operations.md).  

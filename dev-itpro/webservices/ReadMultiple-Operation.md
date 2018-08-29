@@ -7,9 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: d3d63384-570f-40ea-a00d-72cada0b4620
-caps.latest.revision: 10
-manager: edupont
 ---
 # ReadMultiple Operation
 Reads a filtered set of records. This operation returns an array of entities. The ReadMultiple operation allows the consumer of a web service to specify the number of records to be returned at one time. This can reduce load on the server.  
@@ -32,7 +29,7 @@ Reads a filtered set of records. This operation returns an array of entities. Th
   
 |Result name|Description|  
 |-----------------|-----------------|  
-|*entity\[\]*|Type: An array of Entities<br /><br /> An array of a specific object type that represents the page. Contains the latest values that are present on the page.<br /><br /> The server will return at most *setSize* records. If all records have been already returned, then subsequent calls will return no records \(a 0-element array in C\#\). You should keep calling the ReadMultiple function until no records are returned.|  
+|*entity\[\]*|Type: An array of Entities<br /><br /> An array of a specific object type that represents the page. Contains the latest values that are present on the page.<br /><br /> The server will return at most *setSize* records. If all records have been already returned, then subsequent calls will return no records \(a 0-element array in C\#\). You should keep calling the ReadMultiple method until no records are returned.|  
 |*entity.Key*|Type: String<br /><br /> The key of the last record read. In C\#, you can access it with `Entity[Entity.Length-1].Key`. Pass this as *bookmarkKey* for the next ReadMultiple call.|  
   
 ## Faults  
@@ -50,7 +47,7 @@ Reads a filtered set of records. This operation returns an array of entities. Th
   
 -   Field contains the name of the field that the filter is applied to. This name comes from the Entity\_Fields enum.  
   
--   Criteria is of type string and can contain any valid [!INCLUDE[navnow](includes/navnow_md.md)] style filter that is specified in a standard [!INCLUDE[navnow](includes/navnow_md.md)] filter format.  
+-   Criteria is of type string and can contain any valid [!INCLUDE[prodshort](includes/prodshort.md)] style filter that is specified in a standard [!INCLUDE[prodshort](includes/prodshort.md)] filter format.  
   
 ## Usage Examples  
  The following example returns the first 100 customer names that start with an S. For a detailed code example, see [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP-.md).  

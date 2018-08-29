@@ -7,9 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 66804c95-51af-4514-b969-c3b5bec826ae
-caps.latest.revision: 63
-manager: edupont
 ---
 # Walkthrough: Registering and Using a Page Web Service (SOAP)
 This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page as a SOAP web service and then using it in a Visual Studio 2012 console application. When you publish a page as a web service, you expose a default set of operations for managing common record-handling tasks to developers. The walkthrough shows how to use some of these operations. Compare this walkthrough with [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData.md).  

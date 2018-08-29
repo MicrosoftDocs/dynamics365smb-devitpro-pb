@@ -7,9 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 14bb9944-4e56-4d50-88e2-a9767e6705aa
-caps.latest.revision: 48
-manager: edupont
 ---
 # Basic Page Operations
 When you publish a page as a SOAP web service, it has a set of default operations that are exposed to consumers of the web service.  

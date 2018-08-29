@@ -7,9 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: f4e77ab1-7418-46c0-842f-e8b68d927106
-caps.latest.revision: 63
-manager: edupont
 ---
 # Walkthrough: Configuring Web Services to Use SSL (SOAP and OData)
 Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide security and data integrity for data communications over a network. By encrypting your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services using SSL, you make your data and the network more secure and more reliable.  

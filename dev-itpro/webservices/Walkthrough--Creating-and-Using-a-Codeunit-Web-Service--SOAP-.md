@@ -7,9 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: efcf5eaf-b129-469d-b4f7-b8681574483e
-caps.latest.revision: 90
-manager: edupont
 ---
 # Walkthrough: Creating and Using a Codeunit Web Service (SOAP)
 Web services provide easy communication and data exchange in a secured environment. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] , you can create, publish, and use web services. For example, you can publish a web service that lists all your customers and have that web service be immediately available for authorized requests over the network.  
