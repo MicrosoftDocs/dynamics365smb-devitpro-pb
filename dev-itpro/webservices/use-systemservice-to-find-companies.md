@@ -1,5 +1,5 @@
 ---
-title: "How to: Use SystemService to Find Companies"
+title: "Use SystemService to Find Companies"
 ms.custom: na
 ms.date: 06/05/2016
 ms.reviewer: na
@@ -7,15 +7,13 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 317e9a6d-581d-453a-b69b-70eba225df75
-caps.latest.revision: 30
 ---
-# How to: Use SystemService to Find Companies
-You can use the SystemService service in a SOAP web service application to retrieve a list of companies available in a specific database. A company name is typically part of the URI when you access a [!INCLUDE[navnow](includes/navnow_md.md)] web service, and the system service lets you retrieve names of available companies. If you do not specify a company name in a URI, then the default company is used.  
+# Using SystemService to Find Companies
+You can use the SystemService service in a SOAP web service application to retrieve a list of companies available in a specific database. A company name is typically part of the URI when you access a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web service, and the system service lets you retrieve names of available companies. If you do not specify a company name in a URI, then the default company is used.  
   
  In this procedure, you use the SystemService service to retrieve and print a list of companies. You must use Visual Studio 2012 or Visual Studio 2010.  
   
-### To use the SystemService service to find companies  
+### Use the SystemService service to find companies  
   
 1.  In Visual Studio, on the **File** menu, point to **New**, and then choose **Project**.  
   
@@ -28,7 +26,7 @@ You can use the SystemService service in a SOAP web service application to retri
   
 4.  In Solution Explorer, right-click the **References** node in the project, and then choose **Add Service Reference**.  
   
-5.  In the **Add Service Reference** dialog box, choose the **Advanced** button, choose the **Add Web Reference** button, type or paste the URL that you used when checking the WSDL, such as **http://localhost:7047/DynamicsNAV/WS/Services**, and then choose the green arrow to visit the URL.  
+5.  In the **Add Service Reference** dialog box, choose the **Advanced** button, choose the **Add Web Reference** button, type or paste the URL that you used when checking the WSDL, such as `http://localhost:7047/BC130/WS/Services`, and then choose the green arrow to visit the URL.  
   
 6.  When the **SystemService** service is displayed, choose **View Service**, wait for the service to be displayed, and then choose **Add Reference**. Rename the Web reference name from **localhost** to **NavSOAPService**.  
   
@@ -43,7 +41,7 @@ You can use the SystemService service in a SOAP web service application to retri
     namespace FindingCompanies  
     {  
         using System;  
-        using NavSOAPService;  
+        using BCSOAPService;  
   
         public class Program  
         {  

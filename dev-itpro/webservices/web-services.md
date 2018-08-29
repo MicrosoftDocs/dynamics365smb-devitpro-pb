@@ -82,7 +82,7 @@ For more information, see [Multitenant Deployment Architecture](../deployment/Mu
  [Publish a Web Service](publish-web-service.md)   
  [Web Services Overview](web-services.md)   
  [SOAP Web Service URIs](SOAP-Web-Service-URIs.md)   
- [How to: Use SystemService to Find Companies](How-to--Use-SystemService-to-Find-Companies.md)   
+ [Using SystemService to Find Companies](use-systemservice-to-find-companies.md)   
  [Basic Page Operations](Basic-Page-Operations.md)   
  [Web Services Best Practices](Web-Services-Best-Practices.md)   
  [Configuring Business Central Server](../administration/configure-server-instance.md)
