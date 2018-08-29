@@ -263,7 +263,7 @@
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 <!-- end AL -->
-<!-- upgrade -->
+<!-- web service -->
 # [Web Services](webservices/web-services.md)
 ## General
 ### [Publishing a Web Service](webservices/publish-web-service.md)
@@ -272,7 +272,20 @@
 ### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 ### [Authentication](webservices/web-services-authentication.md)
 ### [Best Practices](webservices/web-services-best-practices.md)
-
+## [SOAP]((webservices/soap-web-services.md)
+### [Basic Operations](webservices/basic-operations.md)
+#### [Create](webservices/create-operation.md)
+#### [CreateMultiple](webservices/create-operation.md)
+#### [Delete](webservices/create-operation.md)
+#### [Delete_<part>](webservices/Delete_-part--operation.md)
+#### [GetRecIdFromKey](webservices/GetRecIdFromKey-operation.md)
+#### [IsUpdated ](webservices/IsUpdated-operation.md)
+#### [Read](webservices/Read-operation.md)
+#### [ReadByRecId](webservices/ReadByRecId-operation.md)
+#### [ReadMultiple](webservices/ReadMultiple-operation.md)
+#### [Update](webservices/Update-operation.md)
+#### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
+<!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
 ## [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
 ## [Converting a Database](upgrade/Converting-a-Database.md)
