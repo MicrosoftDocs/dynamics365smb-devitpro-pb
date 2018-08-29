@@ -264,6 +264,15 @@
 ## [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 <!-- end AL -->
 <!-- upgrade -->
+# [Web Services](webservices/web-services.md)
+## General
+### [Publishing a Web Service](webservices/publish-web-service.md)
+### [Handling UI Interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
+### [Managing Timezones](webservices/managing-time-zones-with-web-services.md)
+### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
+### [Authentication](webservices/web-services-authentication.md)
+### [Best Practices](webservices/web-services-best-practices.md)
+
 # [Upgrade](upgrade/upgrading-to-business-central.md)
 ## [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
 ## [Converting a Database](upgrade/Converting-a-Database.md)
