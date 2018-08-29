@@ -13,9 +13,9 @@ caps.latest.revision: 19
 manager: edupont
 ---
 # Web Service Alternatives: SOAP and OData
-[!INCLUDE[navnow](includes/navnow_md.md)] supports OData web services in addition to the SOAP web services that have been available since [!INCLUDE[nav2009](includes/nav2009_md.md)]. Developers planning to create [!INCLUDE[dyn_nav](includes/dyn_nav_md.md)] web services may need to decide which type of web service is better suited to their needs. First, there are some absolute limitations:  
+[!INCLUDE[prodshort](includes/prodshort.md)] supports OData web services in addition to the SOAP web services that have been available since [!INCLUDE[nav2009](includes/nav2009_md.md)]. Developers planning to create [!INCLUDE[dyn_nav](includes/dyn_nav_md.md)] web services may need to decide which type of web service is better suited to their needs. First, there are some absolute limitations:  
   
--   It is not currently possible to access [!INCLUDE[navnow](includes/navnow_md.md)] query objects with SOAP web services. See [Queries](Queries.md) for information about [!INCLUDE[navnow](includes/navnow_md.md)] queries.  
+-   It is not currently possible to access [!INCLUDE[prodshort](includes/prodshort.md)] query objects with SOAP web services. See [Queries](Queries.md) for information about [!INCLUDE[prodshort](includes/prodshort.md)] queries.  
   
 -   It is not currently possible to access codeunits with OData web services.  
   
@@ -33,7 +33,7 @@ manager: edupont
   
  The extensions to the Atom Publishing Protocol defined in the AtomPub extensions to the OData protocol documentation \(which you can download [here](http://go.microsoft.com/fwlink/?LinkID=262184)\) describe how REST-based data services can enable resources, identified using URIs and defined in an abstract data model \(EDM\), to be published and edited by web clients within corporate networks and across the Internet using simple HTTP messages.  
   
- In addition to the AtomPub format, the OData implementation in [!INCLUDE[navnowlong](includes/navnowlong_md.md)] also supports the JSON format, a somewhat less verbose format that may perform better in low-bandwidth environments.  
+ In addition to the AtomPub format, the OData implementation in [!INCLUDE[prodshort](includes/prodshort.md)] also supports the JSON format, a somewhat less verbose format that may perform better in low-bandwidth environments.  
   
 ## See Also  
  [Microsoft Dynamics NAV Web Services Overview](Microsoft-Dynamics-NAV-Web-Services-Overview.md)   

@@ -14,8 +14,8 @@ manager: edupont
 # Server-Driven Paging in OData Web Services
 Server-driven paging ensures that the quantity of data that is returned by an OData URI does not overwhelm [!INCLUDE[nav_server](includes/nav_server_md.md)] or client program that you use to capture data, while optimizing performance.  
   
-> [!NOTE]  
->  The term *page* in this topic refers only to a page that contains OData results and is not related to [!INCLUDE[navnow](includes/navnow_md.md)] page objects.  
+> [!NOTE] 
+>  The term *page* in this topic refers only to a page that contains OData results and is not related to [!INCLUDE[prodshort](includes/prodshort.md)] page objects.  
   
 ## Configuring Server-Driven Paging  
  You configure server-driven paging with the **Max Page Size** setting in the configuration for the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance that you are using for OData services. To modify the setting, you can use [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md) or [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md). For more information about **Max Page Size** and other [!INCLUDE[nav_server](includes/nav_server_md.md)] parameters, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).  
@@ -24,7 +24,7 @@ Server-driven paging ensures that the quantity of data that is returned by an OD
   
  When using OData with queries that are set with a top number of rows by either the [TopNumberOfRows Property](TopNumberOfRows-Property.md) and [TOPNUMBEROFROWS Function](TOPNUMBEROFROWS-Function.md), you should set the **Max Page Size** value greater than the value of the **TopNumberOfRows** property and **TOPNUMBEROFROWS** function. For more information, see [Using OData with Queries That are Set with a Top Number of Rows](Using-OData-with-Queries-That-are-Set-with-a-Top-Number-of-Rows.md).  
   
-> [!NOTE]  
+> [!NOTE] 
 >  In the CustomSettings.config file for [!INCLUDE[nav_server](includes/nav_server_md.md)], the **Max Page Size** setting is called **ODataServicesPageMaxSize**.  
   
 ## See Also  

@@ -14,7 +14,7 @@ manager: edupont
 # OData Web Services
 The Open Data Protocol \(OData\) is a web protocol that is designed for querying tabular data and provides you with an alternative to SOAP-based web services. OData builds on web technologies such as HTTP, the Atom Publishing Protocol \(AtomPub\), and JavaScript Object Notation \(JSON\) to provide access to information from different applications, services, and stores. OData uses URIs for resource identification and commits to an HTTP-based, uniform interface for interacting with resources. This commitment to core Web principles allows for OData to enable a new level of data integration and interoperability across a broad range of clients, servers, services, and tools.  
   
- You can use OData web services to show [!INCLUDE[navnow](includes/navnow_md.md)] data, and you can update data in a [!INCLUDE[navnow](includes/navnow_md.md)] database using OData web services.  
+ You can use OData web services to show [!INCLUDE[prodshort](includes/prodshort.md)] data, and you can update data in a [!INCLUDE[prodshort](includes/prodshort.md)] database using OData web services.  
   
  OData can be found in other Microsoft products and technologies, including the following:  
   
@@ -24,7 +24,7 @@ The Open Data Protocol \(OData\) is a web protocol that is designed for querying
   
 -   Microsoft Azure Table Services are based on OData.  
   
- The topics in this section describe the key concepts and techniques for accessing [!INCLUDE[navnow](includes/navnow_md.md)] data from OData applications that are supported by [!INCLUDE[navnow](includes/navnow_md.md)].  
+ The topics in this section describe the key concepts and techniques for accessing [!INCLUDE[prodshort](includes/prodshort.md)] data from OData applications that are supported by [!INCLUDE[prodshort](includes/prodshort.md)] .  
   
 |To|See|  
 |--------|---------|  
@@ -38,7 +38,7 @@ The Open Data Protocol \(OData\) is a web protocol that is designed for querying
 |Write to the database through an OData web service that exposes a writable page.|[Using OData Web Services to Modify Data](Using-OData-Web-Services-to-Modify-Data.md)|  
   
 ## Known Limitations  
- You can specify filters in OData web services in general that are not supported in [!INCLUDE[navnow](includes/navnow_md.md)], such as using an OR operator to filter on two different fields. In those cases, you will see the following error:  
+ You can specify filters in OData web services in general that are not supported in [!INCLUDE[prodshort](includes/prodshort.md)] , such as using an OR operator to filter on two different fields. In those cases, you will see the following error:  
   
 ```  
 An error occurred while processing this request.   

@@ -11,17 +11,17 @@ ms.assetid: c88c539c-d615-4cb2-b9c6-e7e976583bc2
 caps.latest.revision: 7
 ---
 # How to: Use an Access Key for SOAP and OData Web Service Authentication
-If your solution is configured for NavUserPassword or AccessControlService authentication, then you can configure [!INCLUDE[navnow](includes/navnow_md.md)] user accounts to include an access key that can be used instead of a password to authenticate SOAP and OData web service requests. A web service access key is a random 44 character string that is associated with the user account. Because it can only be used for SOAP and OData web services, it does not require the same level of protection as a password.  
+If your solution is configured for NavUserPassword or AccessControlService authentication, then you can configure [!INCLUDE[prodshort](includes/prodshort.md)] user accounts to include an access key that can be used instead of a password to authenticate SOAP and OData web service requests. A web service access key is a random 44 character string that is associated with the user account. Because it can only be used for SOAP and OData web services, it does not require the same level of protection as a password.  
   
 ## Generating a Web Service Access Key  
   
-#### To generate a web service access key for a [!INCLUDE[navnow](includes/navnow_md.md)] user  
+#### To generate a web service access key for a [!INCLUDE[prodshort](includes/prodshort.md)] user  
   
 1.  In the [!INCLUDE[rtc](includes/rtc_md.md)] in the **Search** box, enter **Users**, and then choose the **Users** link in the Results list.  
   
      The **Users** page opens.  
   
-    > [!NOTE]  
+    > [!NOTE] 
     >  For more information about how to create a user, see [How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md).  
   
 2.  Select a user and choose **Edit** in the ribbon.  

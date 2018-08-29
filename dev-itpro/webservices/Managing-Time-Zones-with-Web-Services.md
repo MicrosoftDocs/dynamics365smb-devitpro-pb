@@ -23,12 +23,12 @@ manager: edupont
 |Server Time Zone|Specifies that services use the time zone of the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)].|  
 |*ID of any Windows time zone*|Specifies that services use a Windows time zone as defined in the system registry under HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Time Zones. For example, Romance Standard Time is a valid Windows time zone value.|  
   
- When a web service writes data back to [!INCLUDE[navnow](includes/navnow_md.md)], dates and times are based on the setting of the Services Default Time Zone setting. However, the web service consumer can override the setting and specify a different time zone.  
+ When a web service writes data back to [!INCLUDE[prodshort](includes/prodshort.md)] , dates and times are based on the setting of the Services Default Time Zone setting. However, the web service consumer can override the setting and specify a different time zone.  
   
-> [!NOTE]  
+> [!NOTE] 
 >  [!INCLUDE[nav_server](includes/nav_server_md.md)] stores dates and times as UTC. When a web service receives data from [!INCLUDE[nav_server](includes/nav_server_md.md)], the time zone is UTC even if the Services Default Time Zone setting is set to a different time zone.  
   
- For example, if the Services Default Time Zone setting is set to **UTC+3**, the following table describes two scenarios where a web service consumer modifies [!INCLUDE[navnow](includes/navnow_md.md)] data and sends this back to [!INCLUDE[nav_server](includes/nav_server_md.md)].  
+ For example, if the Services Default Time Zone setting is set to **UTC+3**, the following table describes two scenarios where a web service consumer modifies [!INCLUDE[prodshort](includes/prodshort.md)] data and sends this back to [!INCLUDE[nav_server](includes/nav_server_md.md)].  
   
 |Web service changes the DateTime field to|[!INCLUDE[nav_server](includes/nav_server_md.md)] interprets the DateTime value as|[!INCLUDE[nav_server](includes/nav_server_md.md)] saves the DateTime value as|  
 |-----------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|  

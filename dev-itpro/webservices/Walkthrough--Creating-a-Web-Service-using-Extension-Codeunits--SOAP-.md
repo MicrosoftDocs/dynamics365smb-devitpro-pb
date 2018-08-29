@@ -12,7 +12,7 @@ caps.latest.revision: 67
 manager: edupont
 ---
 # Walkthrough: Creating a Web Service using Extension Codeunits (SOAP)
-This walkthrough shows how to publish and consume a [!INCLUDE[navnow](includes/navnow_md.md)] page as a web service and how you can extend the [Basic Page Operations](Basic-Page-Operations.md).  
+This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](includes/prodshort.md)] page as a web service and how you can extend the [Basic Page Operations](Basic-Page-Operations.md).  
   
 ## About This Walkthrough  
  This walkthrough illustrates the following tasks:  
@@ -30,7 +30,7 @@ This walkthrough shows how to publish and consume a [!INCLUDE[navnow](includes/n
 ### Prerequisites  
  To complete this walkthrough, you need:  
   
--   [!INCLUDE[navnowlong](includes/navnowlong_md.md)] with a developer license.  
+-   [!INCLUDE[prodshort](includes/prodshort.md)] with a developer license.  
   
 -   [!INCLUDE[demolong](includes/demolong_md.md)].  
   
@@ -60,7 +60,7 @@ This walkthrough shows how to publish and consume a [!INCLUDE[navnow](includes/n
   
 #### To create an extension codeunit  
   
-1.  Open the [!INCLUDE[navnowlong](includes/navnowlong_md.md)] development environment, and then connect to the [!INCLUDE[demolong](includes/demolong_md.md)].  
+1.  Open the [!INCLUDE[prodshort](includes/prodshort.md)] development environment, and then connect to the [!INCLUDE[demolong](includes/demolong_md.md)].  
   
 2.  On the **Tools** menu, choose **Object Designer**.  
   
@@ -110,7 +110,7 @@ This walkthrough shows how to publish and consume a [!INCLUDE[navnow](includes/n
   
 ## Verifying Web Services Availability  
   
-> [!NOTE]  
+> [!NOTE] 
 >  When exposing a web service, you must open the port for other consumers of your web service to access it. You can have your system administrator add the port through Windows Firewall on the computer running [!INCLUDE[nav_server](includes/nav_server_md.md)]. The default port for SOAP web services is 7047. Use the [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md) to configure the port for the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance; the option is on the SOAP Web Services tab.  
   
 #### To verify availability of the web service  
@@ -123,7 +123,7 @@ This walkthrough shows how to publish and consume a [!INCLUDE[navnow](includes/n
   
      **http://localhost:7047/DynamicsNAV/WS/CRONUS-International-Ltd./services**  
   
-    > [!NOTE]  
+    > [!NOTE] 
     >  The company name is case-sensitive.  
   
      The page should list the page web service that you have published: `Page/PageWithCapitalization`.  
@@ -141,7 +141,7 @@ This walkthrough shows how to publish and consume a [!INCLUDE[navnow](includes/n
   
 3.  Enter the name **UsingExtensionCodeunit** for the application.  
   
-    > [!NOTE]  
+    > [!NOTE] 
     >  The sample code in this walkthrough expects this exact application name, so do not change it.  
   
 4.  Choose **OK** to close the **New Project** page.  

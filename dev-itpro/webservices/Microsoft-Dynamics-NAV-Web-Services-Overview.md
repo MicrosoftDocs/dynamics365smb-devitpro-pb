@@ -14,18 +14,18 @@ ms.assetid: 78068a59-b1a0-4a14-8f77-575bcbb557c8
 caps.latest.revision: 48
 ---
 # Microsoft Dynamics NAV Web Services Overview
-Web services are a lightweight, industry-standard way to make application functionality available to a variety of external systems and users. [!INCLUDE[navnowlong](includes/navnowlong_md.md)] supports creation and publishing of [!INCLUDE[navnow](includes/navnow_md.md)] functionality as web services. You can expose pages, codeunits, or queries as web services, and even enhance a page web service by using an extension codeunit. When you publish [!INCLUDE[navnow](includes/navnow_md.md)] objects as web services, they are immediately available on the network.  
+Web services are a lightweight, industry-standard way to make application functionality available to a variety of external systems and users. [!INCLUDE[prodshort](includes/prodshort.md)] supports creation and publishing of [!INCLUDE[prodshort](includes/prodshort.md)] functionality as web services. You can expose pages, codeunits, or queries as web services, and even enhance a page web service by using an extension codeunit. When you publish [!INCLUDE[prodshort](includes/prodshort.md)] objects as web services, they are immediately available on the network.  
 
- Developers can publish two types of web services from [!INCLUDE[navnow](includes/navnow_md.md)] objects:  
+ Developers can publish two types of web services from [!INCLUDE[prodshort](includes/prodshort.md)] objects:  
 
--   [SOAP Web Services](SOAP-Web-Services.md). You can publish either [!INCLUDE[navnow](includes/navnow_md.md)] pages or codeunits as SOAP services.  
+-   [SOAP Web Services](SOAP-Web-Services.md). You can publish either [!INCLUDE[prodshort](includes/prodshort.md)] pages or codeunits as SOAP services.  
 
 -   [OData Web Services](OData-Web-Services.md). You can publish either pages or queries as OData services.  
 
- [!INCLUDE[navnow](includes/navnow_md.md)] web services are stateless and do not preserve the values of global variables or single-instance codeunits between calls.  
+ [!INCLUDE[prodshort](includes/prodshort.md)] web services are stateless and do not preserve the values of global variables or single-instance codeunits between calls.  
 
 ## Web Service Protocols  
- The following table shows the types of web service applications that you can create for the web service protocols supported in [!INCLUDE[navnowlong](includes/navnowlong_md.md)].  
+ The following table shows the types of web service applications that you can create for the web service protocols supported in [!INCLUDE[prodshort](includes/prodshort.md)] .  
 
 ||SOAP web services|OData web services|  
 |-|-----------------------|------------------------|  
@@ -46,7 +46,7 @@ Web services are a lightweight, industry-standard way to make application functi
  For SOAP services only, codeunit web services provide you with the most control and flexibility. When a codeunit is exposed as a web service, all functions defined in the codeunit are exposed as operations.  
 
 ### Query Web Services  
- When you expose a [!INCLUDE[navnow](includes/navnow_md.md)] query as an OData web service, you can query that data to return a service metadata \(EDMX\) document or an AtomPub document. For more information about how to create and use [!INCLUDE[navnow](includes/navnow_md.md)] queries, see [Queries](Queries.md).  
+ When you expose a [!INCLUDE[prodshort](includes/prodshort.md)] query as an OData web service, you can query that data to return a service metadata \(EDMX\) document or an AtomPub document. For more information about how to create and use [!INCLUDE[prodshort](includes/prodshort.md)] queries, see [Queries](Queries.md).  
 
 ## Web Services and Regional Settings  
  Data is formatted according to the value of the **Services Language** setting for the relevant [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. The default value is **en-us**. This means that [!INCLUDE[nav_server](includes/nav_server_md.md)] interprets all incoming data as the specified culture, such as dates and amounts.  
@@ -55,11 +55,11 @@ Web services are a lightweight, industry-standard way to make application functi
 
  Similarly, you can use the **ServicesOptionFormat** setting to specify how [!INCLUDE[nav_server](includes/nav_server_md.md)] must understand option values. If you set the **ServicesOptionFormat** setting to *OptionString*, [!INCLUDE[nav_server](includes/nav_server_md.md)] understand option values as the *name* of the option value, which is always en\-us. If you set the setting to *OptionCaption*, web service data will be interpreted in the language specified by the **Services Language** setting.  
 
->    [!NOTE]  
->    In earlier versions of [!INCLUDE[navnow](includes/navnow_md.md)], you could enable **ServicesCultureDefaultUserPersonalization** on the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. This was deprecated in [!INCLUDE[navcorfu](includes/navcorfu_md.md)] in order to guarantee that web services have a consistent culture.  
+>    [!NOTE] 
+>    In earlier versions of [!INCLUDE[prodshort](includes/prodshort.md)] , you could enable **ServicesCultureDefaultUserPersonalization** on the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. This was deprecated in [!INCLUDE[navcorfu](includes/navcorfu_md.md)] in order to guarantee that web services have a consistent culture.  
 
 ## Web Services in Multitenant Deployments  
- If your [!INCLUDE[navnow](includes/navnow_md.md)] solution is used in a multitenant deployment architecture, you must make sure that any code that generates or consumes a web service specifies the relevant tenant. Web services are set up in the application, but typically you want to consume company-specific and tenant-specific data.  
+ If your [!INCLUDE[prodshort](includes/prodshort.md)] solution is used in a multitenant deployment architecture, you must make sure that any code that generates or consumes a web service specifies the relevant tenant. Web services are set up in the application, but typically you want to consume company-specific and tenant-specific data.  
 
  If you use the GETURL function, the generated URL will automatically apply to the user’s tenant ID. For more information, see [GETURL Function](GETURL-Function.md).  
 

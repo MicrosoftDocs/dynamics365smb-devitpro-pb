@@ -12,12 +12,12 @@ caps.latest.revision: 90
 manager: edupont
 ---
 # Walkthrough: Creating and Using a Codeunit Web Service (SOAP)
-Web services provide easy communication and data exchange in a secured environment. In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can create, publish, and use web services. For example, you can publish a web service that lists all your customers and have that web service be immediately available for authorized requests over the network.  
+Web services provide easy communication and data exchange in a secured environment. In [!INCLUDE[prodshort](includes/prodshort.md)] , you can create, publish, and use web services. For example, you can publish a web service that lists all your customers and have that web service be immediately available for authorized requests over the network.  
   
 ## About This Walkthrough  
  This walkthrough provides an overview of how to create and use a simple SOAP web service. The walkthrough illustrates to the following tasks:  
   
--   Creating a codeunit in [!INCLUDE[navnow](includes/navnow_md.md)].  
+-   Creating a codeunit in [!INCLUDE[prodshort](includes/prodshort.md)] .  
   
 -   Publishing the codeunit as a web service.  
   
@@ -25,13 +25,13 @@ Web services provide easy communication and data exchange in a secured environme
   
 -   Using the web service from a console application that you create in Visual Studio.  
   
-> [!NOTE]  
+> [!NOTE] 
 >  You can publish codeunits only as SOAP services, not as OData web services.  
   
 ### Prerequisites  
  To complete this walkthrough, you will need:  
   
--   [!INCLUDE[navnowlong](includes/navnowlong_md.md)] with a developer license.  
+-   [!INCLUDE[prodshort](includes/prodshort.md)] with a developer license.  
   
 -   [!INCLUDE[demolong](includes/demolong_md.md)].  
   
@@ -42,7 +42,7 @@ Web services provide easy communication and data exchange in a secured environme
   
 #### To create a codeunit  
   
-1.  Open the [!INCLUDE[navnow](includes/navnow_md.md)] development environment and then connect to the [!INCLUDE[demoname](includes/demoname_md.md)] company.  
+1.  Open the [!INCLUDE[prodshort](includes/prodshort.md)] development environment and then connect to the [!INCLUDE[demoname](includes/demoname_md.md)] company.  
   
      Object Designer opens automatically in the development environment.  
   
@@ -93,7 +93,7 @@ Web services provide easy communication and data exchange in a secured environme
   
 ## Verifying Web Service Availability  
   
-> [!NOTE]  
+> [!NOTE] 
 >  After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for SOAP-based web services is set to 7047. You can configure this value by using the [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
   
 #### To verify availability of the web service  
@@ -106,7 +106,7 @@ Web services provide easy communication and data exchange in a secured environme
   
      **http://localhost:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd./services**  
   
-    > [!NOTE]  
+    > [!NOTE] 
     >  The company name is case-sensitive.  
   
      The page should list the web service that you just published \(`Codeunit/Letters`\).  
@@ -176,7 +176,7 @@ Web services provide easy communication and data exchange in a secured environme
 10. Press Enter to close the application.  
   
 ## Next Steps  
- This walkthrough illustrated how you can publish a codeunit as a web service from [!INCLUDE[navnow](includes/navnow_md.md)] and write a program that uses the web service. The next step is to expose a page as a web service and then interact with data from that page. For details, see [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP-.md).  
+ This walkthrough illustrated how you can publish a codeunit as a web service from [!INCLUDE[prodshort](includes/prodshort.md)] and write a program that uses the web service. The next step is to expose a page as a web service and then interact with data from that page. For details, see [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP-.md).  
   
 ## See Also  
  [Web Services](Web-Services.md)   

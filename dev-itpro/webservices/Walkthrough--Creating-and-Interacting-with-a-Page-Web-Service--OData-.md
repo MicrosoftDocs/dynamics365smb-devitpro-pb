@@ -12,12 +12,12 @@ caps.latest.revision: 19
 manager: edupont
 ---
 # Walkthrough: Creating and Interacting with a Page Web Service (OData)
-This walkthrough illustrates how you can publish a [!INCLUDE[navnow](includes/navnow_md.md)] page as an OData web service, use it in a Visual Studio console application, and change data in [!INCLUDE[navnow](includes/navnow_md.md)] through the web service.  
+This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](includes/prodshort.md)] page as an OData web service, use it in a Visual Studio console application, and change data in [!INCLUDE[prodshort](includes/prodshort.md)] through the web service.  
   
 ## About This Walkthrough  
  This walkthrough provides an overview of how to expose a page as a web service and how to use the web service in a C\# console application. The walkthrough illustrates the following tasks:  
   
--   Publishing a [!INCLUDE[navnow](includes/navnow_md.md)] page as a web service.  
+-   Publishing a [!INCLUDE[prodshort](includes/prodshort.md)] page as a web service.  
   
 -   Verifying web service availability from a browser.  
   
@@ -28,7 +28,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[navnow](includes/na
 ### Prerequisites  
  To complete this walkthrough, you will need:  
   
--   [!INCLUDE[navnowlong](includes/navnowlong_md.md)] with a developer license.  
+-   [!INCLUDE[prodshort](includes/prodshort.md)] with a developer license.  
   
 -   [!INCLUDE[demolong](includes/demolong_md.md)].  
   
@@ -53,7 +53,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[navnow](includes/na
   
 ## Verifying Web Service Availability  
   
-> [!NOTE]  
+> [!NOTE] 
 >  After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for OData web services is 7048. You can configure this value by using the [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
   
 #### To verify availability of a [!INCLUDE[dyn_nav](includes/dyn_nav_md.md)] web service  
@@ -91,7 +91,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[navnow](includes/na
   
 5.  In the **Address** field, enter the URI for your OData web service, such as **http://localhost:7048/DynamicsNAV/OData/**.  
   
-    > [!IMPORTANT]  
+    > [!IMPORTANT] 
     >  In this example, we use the HTTP protocol to illustrate the use of OData web services. We recommend that you use the more secure HTTPS protocol when you consume web services.  
   
 6.  Choose **Go**, and then, in the **Services** field, choose **NAV**, and then choose the **OK** button.  
@@ -130,16 +130,16 @@ This walkthrough illustrates how you can publish a [!INCLUDE[navnow](includes/na
   
     ```  
   
-     The `PrintCustomersCalledCust` method reads the OData web service that you created, Customer, and creates a list of customers where the customer name begins with the letters **Cust**. Next, you add code to the Main method that uses the web service to write to [!INCLUDE[navnow](includes/navnow_md.md)].  
+     The `PrintCustomersCalledCust` method reads the OData web service that you created, Customer, and creates a list of customers where the customer name begins with the letters **Cust**. Next, you add code to the Main method that uses the web service to write to [!INCLUDE[prodshort](includes/prodshort.md)] .  
   
-3.  In the `Main` method, add the following code to establish the connection to [!INCLUDE[navnow](includes/navnow_md.md)] through the web service:  
+3.  In the `Main` method, add the following code to establish the connection to [!INCLUDE[prodshort](includes/prodshort.md)] through the web service:  
   
     ```  
     NAV nav = new NAV(new Uri("http://localhost:7048/DynamicsNAV/OData/Company('CRONUS-International-Ltd.')"));  
     nav.Credentials = CredentialCache.DefaultNetworkCredentials;  
     ```  
   
-     In the example, the name of the [!INCLUDE[navnow](includes/navnow_md.md)] company that you modify data for is [!INCLUDE[demoname](includes/demoname_md.md)]. You must replace this with the name of the company that you have access to. To find the correct URI, you can paste the following URI into your browser and then see the exact URI that you must use: `http://localhost:7048/DynamicsNAV/OData/Company`.  
+     In the example, the name of the [!INCLUDE[prodshort](includes/prodshort.md)] company that you modify data for is [!INCLUDE[demoname](includes/demoname_md.md)]. You must replace this with the name of the company that you have access to. To find the correct URI, you can paste the following URI into your browser and then see the exact URI that you must use: `http://localhost:7048/DynamicsNAV/OData/Company`.  
   
 4.  Add the following code to the method:  
   
@@ -169,7 +169,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[navnow](includes/na
   
 5.  Build and run the project.  
   
-#### To verify the inserted and modified data in [!INCLUDE[navnow](includes/navnow_md.md)]  
+#### To verify the inserted and modified data in [!INCLUDE[prodshort](includes/prodshort.md)]  
   
 1.  Open the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or the [!INCLUDE[nav_web](includes/nav_web_md.md)].  
   
@@ -178,7 +178,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[navnow](includes/na
      This is the customer that the console application created and modified.  
   
 ## Next Steps  
- You have built a console application that uses an OData web service to modify [!INCLUDE[navnow](includes/navnow_md.md)] data. You can use similar OData web services in other applications when you want to allow users to modify data outside [!INCLUDE[navnow](includes/navnow_md.md)].  
+ You have built a console application that uses an OData web service to modify [!INCLUDE[prodshort](includes/prodshort.md)] data. You can use similar OData web services in other applications when you want to allow users to modify data outside [!INCLUDE[prodshort](includes/prodshort.md)] .  
   
 ## See Also  
  [Microsoft Dynamics NAV Web Services Overview](Microsoft-Dynamics-NAV-Web-Services-Overview.md)   

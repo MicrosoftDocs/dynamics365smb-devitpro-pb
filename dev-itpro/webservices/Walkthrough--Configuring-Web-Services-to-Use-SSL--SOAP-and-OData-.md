@@ -12,10 +12,10 @@ caps.latest.revision: 63
 manager: edupont
 ---
 # Walkthrough: Configuring Web Services to Use SSL (SOAP and OData)
-Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide security and data integrity for data communications over a network. By encrypting your [!INCLUDE[navnow](includes/navnow_md.md)] web services using SSL, you make your data and the network more secure and more reliable.  
+Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide security and data integrity for data communications over a network. By encrypting your [!INCLUDE[prodshort](includes/prodshort.md)] web services using SSL, you make your data and the network more secure and more reliable.  
   
 ## Microsoft Dynamics NAV Web Services and SSL  
- [!INCLUDE[navnow](includes/navnow_md.md)] supports SSL authentication for SOAP and OData web services. The server authenticates itself to the client, but the client does not authenticate itself to the server. When the web service client connects to the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance, the server replies by sending its digital certificate to the client. This certificate contains the server's public encryption key and the name of the authority that granted the certificate. The client verifies the certificate using the authority's public key.  
+ [!INCLUDE[prodshort](includes/prodshort.md)] supports SSL authentication for SOAP and OData web services. The server authenticates itself to the client, but the client does not authenticate itself to the server. When the web service client connects to the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance, the server replies by sending its digital certificate to the client. This certificate contains the server's public encryption key and the name of the authority that granted the certificate. The client verifies the certificate using the authority's public key.  
   
 ## About This Walkthrough  
  This walkthrough illustrates the following tasks:  
@@ -39,20 +39,20 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
 ### Prerequisites  
  To complete this walkthrough, you will need:  
   
--   [!INCLUDE[navnowlong](includes/navnowlong_md.md)] with a developer license.  
+-   [!INCLUDE[prodshort](includes/prodshort.md)] with a developer license.  
   
 -   The makecert.exe tool \(Certificate Creation Tool\) for creating SSL certificates.  
   
      The makecert.exe generates certificates for testing purposes. It is available with Microsoft Visual Studio and Microsoft Windows SDK. For more information, see [Certificate Creation Tool \(Makecert.exe\)](http://go.microsoft.com/fwlink/?LinkId=202833) in the MSDN Library.  
   
-    > [!NOTE]  
+    > [!NOTE] 
     >  The makecert.exe tool is only required if you do not already have an SSL certificate and you want to create a certificate for test purposes.  
   
 ## Story  
- Victor, who is a business systems developer at [!INCLUDE[demoname](includes/demoname_md.md)], knows that his implementation of web services applications for [!INCLUDE[navnow](includes/navnow_md.md)] is unlikely to pass a company security audit unless he encrypts sensitive data that is transmitted over the company intranet. He decides to protect web services communication with SSL.  
+ Victor, who is a business systems developer at [!INCLUDE[demoname](includes/demoname_md.md)], knows that his implementation of web services applications for [!INCLUDE[prodshort](includes/prodshort.md)] is unlikely to pass a company security audit unless he encrypts sensitive data that is transmitted over the company intranet. He decides to protect web services communication with SSL.  
   
 ##  <a name="ConfigureSSL"></a> Configuring Microsoft Dynamics NAV Web Services to Use SSL  
- The first step is to prepare [!INCLUDE[navnow](includes/navnow_md.md)] to use SSL. This involves configuring the relevant [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to specify SSL.  
+ The first step is to prepare [!INCLUDE[prodshort](includes/prodshort.md)] to use SSL. This involves configuring the relevant [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to specify SSL.  
   
  You can configure [!INCLUDE[nav_server](includes/nav_server_md.md)] instances with the [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md) or [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md). For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
   
@@ -91,7 +91,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
  In the following procedure, you use the makecert.exe tool to create a test certificate file \(.cer\) with a private key file \(.pvk\), and then generate a personal information file \(.pfx\) from the two files. You will use the .pxf in the next procedure for importing the certificate on the computer running [!INCLUDE[nav_server](includes/nav_server_md.md)].  
   
-> [!NOTE]  
+> [!NOTE] 
 >  If you have a certificate, then you can skip this procedure and continue to [Importing the SSL Certificate into the Local Computer Store of the Microsoft Dynamics NAV Server computer](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData-.md#Importing).  
   
 #### To create a test SSL certificate using the makecert.exe tool  
@@ -117,7 +117,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
      A certificate file called NavTestCert.cer and a private key file called NavTestCert.pvk are created in the temporary folder.  
   
-    > [!TIP]  
+    > [!TIP] 
     >  If you are working on the computer running [!INCLUDE[nav_server](includes/nav_server_md.md)], you can use the following command to create and install the certificate, so you can skip the next procedure for importing the certificate.  
     >   
     >  `makecert -r -pe -n "CN=NavTestCert" -b 01/01/2015 -e 01/01/2016 -ss my -sr localmachine -sky exchange`  
@@ -132,7 +132,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
 6.  If you are not working on the computer running [!INCLUDE[nav_server](includes/nav_server_md.md)], then copy the .pfx to the [!INCLUDE[nav_server](includes/nav_server_md.md)] computer.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT] 
 >  To avoid validation errors, make sure that the certificate that you create and self-sign has the same name as the host name, which is accessed from all the remote machines. The machine name is specified in “**CN=\<machine name>**”. If you use the *http://hostname:Port/NAVserver/* link to access your Microsoft Dynamics NAV service, then you should specify the –n “CN=hostname” flag to the `makecert` command instead.  
   
 ##  <a name="Importing"></a> Importing the SSL Certificate into the Local Computer Store of the Microsoft Dynamics NAV Server computer  
@@ -144,7 +144,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
 2.  In the **Open** box, type **mmc**, and then choose **OK**.  
   
-    > [!NOTE]  
+    > [!NOTE] 
     >  This procedure assumes that you do not already have the Certificates snap-in installed in Microsoft Management Console. If the Certificates snap-in is already installed, skip steps 3 to 7 and go to step 8.  
   
 3.  On the **File** menu, choose **Add/Remove Snap-in**.  
@@ -178,7 +178,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
 ##  <a name="GrantingAccess"></a> Granting Permissions to the Certificate's Private Key to Microsoft Dynamics NAV Server  
  If the certificate has a private key, then you must give the service account of [!INCLUDE[nav_server](includes/nav_server_md.md)] access to the private key.  
   
-#### To grant access to the certificate’s private key to the service account for [!INCLUDE[nav_server](includes/nav_server_md.md)]  
+#### To grant access to the certificate’s private key to the service account for [!INCLUDE[nav_server](includes/nav_server_md.md)] 
   
 1.  In the left pane of MMC, expand the **Certificates \(Local Computer\)** node, expand the **Personal** node, and then choose the **Certificates** folder.  
   
@@ -216,7 +216,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
 ##  <a name="ACL"></a> Configuring the Access Control List and the Web Services Ports for SSL  
  An access control list \(ACL\) is part of the Windows security infrastructure and features. The ACL controls who can access resources on a computer. For more information, see [Access Control Lists](http://go.microsoft.com/fwlink/?LinkId=177398).  
   
-> [!NOTE]  
+> [!NOTE] 
 >  These procedures use the netsh tool \(netsh.exe\) for configuring the HTTP server. The netsh tool is supplied with Windows. By default the netsh tool is located in the c:\\Windows\\System32 folder.  
   
 #### To configure the ACL  
@@ -241,7 +241,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
      Each entry is listed by the `Reserved URL` field, which has the format `http://hostname:port`. `hostname` is the name of the computer running the service and `port` is the port number the service runs on. A '`+`' \(plus sign\) in the `Reserved URL` field represents localhost, which indicates the computer that you are working on.  
   
-     By default, SOAP and OData web services in [!INCLUDE[navnow](includes/navnow_md.md)] use ports 7047 and 7048, respectively, and connect to a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance named[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]. The default reserved URL entries for these services are: `http://+:7047/nav_server_instance/` and `http://+:7048/nav_server_instance/`.  
+     By default, SOAP and OData web services in [!INCLUDE[prodshort](includes/prodshort.md)] use ports 7047 and 7048, respectively, and connect to a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance named[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]. The default reserved URL entries for these services are: `http://+:7047/nav_server_instance/` and `http://+:7048/nav_server_instance/`.  
   
 4.  You must delete any entries that use the same port as the SOAP or OData web services.  
   
@@ -329,7 +329,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
     |`ipaddress`|The IP address that can use the web service. Use `0.0.0.0` to include all IP addresses.|  
     |`port`|The port that is used by the web service.|  
     |`thumbprint`|The certificate thumbprint that you pasted to NotePad previously.|  
-    |`id`|A 32-digit hexadecimal number that identifies the [!INCLUDE[navnow](includes/navnow_md.md)] application. The id must be in the format {NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN\). If you do not know the appid, then use any value, such as {00112233-4455-6677-8899-AABBCCDDEEFF}.|  
+    |`id`|A 32-digit hexadecimal number that identifies the [!INCLUDE[prodshort](includes/prodshort.md)] application. The id must be in the format {NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN\). If you do not know the appid, then use any value, such as {00112233-4455-6677-8899-AABBCCDDEEFF}.|  
   
      For example, the following command binds a certificate that has the thumbprint c0d0f27095b03d4317e219841024328cef248779 to port 7047 for all IP addresses:  
   
@@ -340,7 +340,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
 ##  <a name="Restart"></a> Restart the Microsoft Dynamics NAV Server Instance  
  You can use the Microsoft Dynamics NAV Server Administration Tool to restart the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance.  
   
-#### To restart [!INCLUDE[nav_server](includes/nav_server_md.md)]  
+#### To restart [!INCLUDE[nav_server](includes/nav_server_md.md)] 
   
 1.  In [!INCLUDE[nav_admin](includes/nav_admin_md.md)], in the left pane, under **Console Root**, choose the [!INCLUDE[nav_server](includes/nav_server_md.md)] computer.  
   

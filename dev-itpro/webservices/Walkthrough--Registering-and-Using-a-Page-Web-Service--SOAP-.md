@@ -12,7 +12,7 @@ caps.latest.revision: 63
 manager: edupont
 ---
 # Walkthrough: Registering and Using a Page Web Service (SOAP)
-This walkthrough focuses on publishing a [!INCLUDE[navnow](includes/navnow_md.md)] page as a SOAP web service and then using it in a Visual Studio 2012 console application. When you publish a page as a web service, you expose a default set of operations for managing common record-handling tasks to developers. The walkthrough shows how to use some of these operations. Compare this walkthrough with [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData-.md).  
+This walkthrough focuses on publishing a [!INCLUDE[prodshort](includes/prodshort.md)] page as a SOAP web service and then using it in a Visual Studio 2012 console application. When you publish a page as a web service, you expose a default set of operations for managing common record-handling tasks to developers. The walkthrough shows how to use some of these operations. Compare this walkthrough with [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData-.md).  
 
 ## About This Walkthrough  
  This walkthrough provides an overview of how to publish a page as a web service and then interact with data from that page in a Visual Studio console application. This walkthrough uses a SOAP web service, although you can also create an OData web service to interact with page data. The walkthrough illustrates the following tasks:  
@@ -28,7 +28,7 @@ This walkthrough focuses on publishing a [!INCLUDE[navnow](includes/navnow_md.md
 ### Prerequisites  
  To complete this walkthrough, you will need:  
 
--   [!INCLUDE[navnowlong](includes/navnowlong_md.md)] with a developer license.  
+-   [!INCLUDE[prodshort](includes/prodshort.md)] with a developer license.  
 
 -   [!INCLUDE[demolong](includes/demolong_md.md)].  
 
@@ -53,10 +53,10 @@ This walkthrough focuses on publishing a [!INCLUDE[navnow](includes/navnow_md.md
 
 ## Verifying Web Services Availability  
 
-> [!NOTE]  
+> [!NOTE] 
 >  After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for SOAP-based web services is set to 7047. You can configure this value by using the [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
 
-#### To verify availability of a [!INCLUDE[navnow](includes/navnow_md.md)] web service  
+#### To verify availability of a [!INCLUDE[prodshort](includes/prodshort.md)] web service  
 
 1.  Start Windows Internet Explorer.  
 
@@ -64,7 +64,7 @@ This walkthrough focuses on publishing a [!INCLUDE[navnow](includes/navnow_md.md
 
      **http://localhost:7047/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]/WS/CRONUS%20International%20Ltd./services**  
 
-    > [!NOTE]  
+    > [!NOTE] 
     >  The company name is case-sensitive.  
 
      The browser should now show the web service that you have published:  
@@ -82,7 +82,7 @@ This walkthrough focuses on publishing a [!INCLUDE[navnow](includes/navnow_md.md
 
 2.  Expand the **Visual C\#** node, select **Windows**, and then, under **Visual Studio installed templates**, select **Console Application**. Enter the name **PrintCustomerList** for the application.  
 
-    > [!IMPORTANT]  
+    > [!IMPORTANT] 
     >  The sample code in this walkthrough expects this exact application name, so you should not change it.  
 
 3.  Choose **OK** to close the **New Project** page.  

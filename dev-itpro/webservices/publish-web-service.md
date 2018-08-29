@@ -37,9 +37,9 @@ translation.priority.ht:
   - sv-se
 ---
 # How to: Publish a Web Service
-Web services are a lightweight way to make application functionality available to a variety of external systems and users. In [!INCLUDE[navnow](includes/navnow_md.md)], you can expose pages, codeunits, and queries as web services. When you publish [!INCLUDE[navnow](includes/navnow_md.md)] objects as web services, they are immediately available on the network.  
+Web services are a lightweight way to make application functionality available to a variety of external systems and users. In [!INCLUDE[prodshort](includes/prodshort.md)] , you can expose pages, codeunits, and queries as web services. When you publish [!INCLUDE[prodshort](includes/prodshort.md)] objects as web services, they are immediately available on the network.  
   
- You can set up a web service in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or the [!INCLUDE[nav_web](includes/nav_web_md.md)]. You must then publish the web service so that it is available to service requests over the network. Users can discover web services by pointing a browser at the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)] and requesting a list of available services. When you publish a web service, it is immediately available over the network for authenticated users. All authorized users can access metadata for [!INCLUDE[navnow](includes/navnow_md.md)] web services, but only users who have sufficient [!INCLUDE[navnow](includes/navnow_md.md)] permissions can access actual data.  
+ You can set up a web service in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or the [!INCLUDE[nav_web](includes/nav_web_md.md)]. You must then publish the web service so that it is available to service requests over the network. Users can discover web services by pointing a browser at the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)] and requesting a list of available services. When you publish a web service, it is immediately available over the network for authenticated users. All authorized users can access metadata for [!INCLUDE[prodshort](includes/prodshort.md)] web services, but only users who have sufficient [!INCLUDE[prodshort](includes/prodshort.md)] permissions can access actual data.  
   
 ## Creating and Publishing a Web Service  
  The following steps explain how to create and publish a web service.  
@@ -56,7 +56,7 @@ Web services are a lightweight way to make application functionality available t
   
 4.  In the **Object Type** column, select **Codeunit**, **Page**, or **Query**.  
   
-    > [!NOTE]  
+    > [!NOTE] 
     >  **Codeunit** and **Page** are valid types for SOAP web services. **Page** and **Query** are valid types for OData web services.  
   
 5.  In the **Object ID** column, select the object ID of the object that you want to expose. For example, to expose the customer card as a web service, enter **21**.  
@@ -65,7 +65,7 @@ Web services are a lightweight way to make application functionality available t
   
 6.  In the **Service Name** field, assign a name to the web service. For example, if you expose the customer card as a web service, enter **Customers**.  
   
-    > [!NOTE]  
+    > [!NOTE] 
     >  The service name is visible to consumers of your web service and is the basis for identifying and distinguishing web services, so you should make the name meaningful. If you are setting up integration with Microsoft Outlook using codeunit 5313, then you must use **DynamicsNAVsynchOutlook** as the service name.  
   
 7.  Select the check box in the **Published** column.  
@@ -89,7 +89,7 @@ Web services are a lightweight way to make application functionality available t
   
 2.  Review the information that is displayed in the browser. Verify that you can see the name of the web service that you have created.  
   
- When you access a web service, and you want to write data back to [!INCLUDE[navnow](includes/navnow_md.md)], you must specify the company name. You can specify the company as part of the URI as shown in the examples, or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service and are both valid URIs.  
+ When you access a web service, and you want to write data back to [!INCLUDE[prodshort](includes/prodshort.md)] , you must specify the company name. You can specify the company as part of the URI as shown in the examples, or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service and are both valid URIs.  
   
 ```  
 https://localhost:7048/nav_server_instance/OData/Company('CRONUS International Ltd.')/Customer  
