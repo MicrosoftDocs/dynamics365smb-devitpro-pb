@@ -295,6 +295,7 @@
 ### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
 ### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
 ### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
+### [Deprecated Features in the Island Version](upgrade/deprecated-features-is.md)
 ### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
 ### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
 ### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
