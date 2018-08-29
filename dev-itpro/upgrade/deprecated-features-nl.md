@@ -16,7 +16,7 @@ ms.author: bholtorf
 
 ---
 
-# Deprecated Features in the Dutch Version of [!INCLUDE[navnow](includes/navnow_md.md)]
+# Deprecated Features in the Dutch Version of [!INCLUDE[navnow](../developerincludes/navnow_md.md)]
 This topic lists and describes the local functionality for the Netherlands that has been removed from [!INCLUDE[navnow](../developer/includes/navnow_md.md)], made available from a new page or report, made available to one or more additional countries, or replaced by a new feature.
 
 ## Checking Totals for Purchase Invoices and Purchase Credit Memos
