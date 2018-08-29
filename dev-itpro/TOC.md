@@ -289,6 +289,17 @@
 <!-- end web services -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
+## [Upgrade Considerations](upgrade/Upgrade-Considerations.md)
+### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
+### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
+### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
+### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
+### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
+### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
+### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
+### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
+### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
+### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
 ## [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
 ## [Converting a Database](upgrade/Converting-a-Database.md)
 ## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
