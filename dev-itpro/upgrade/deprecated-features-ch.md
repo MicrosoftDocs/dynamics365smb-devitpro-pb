@@ -15,7 +15,7 @@ ms.author: SorenGP
 ---
 
 # Deprecated Features in the Swiss Version of Microsoft Dynamics NAV 2018
-This topic lists and describes the local functionality for Switzerland that has been removed from [!INCLUDE[navnow](developer/navnow_md.md)], made available from a new page or report, or replaced by a new feature.
+This topic lists and describes the local functionality for Switzerland that has been removed from [!INCLUDE[navnow](../developer/navnow_md.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Blanket Order Archiving and Document Line Tracking
 You can archive and delete blanket sales and purchase orders. You can view documents that are related to sales order lines and purchase order lines, including from archived order lines. Related documents that you can track include quotes, shipments, receipts, and blanket orders. This helps you to identify documents used to process orders.
@@ -28,4 +28,4 @@ You can archive and delete blanket sales and purchase orders. You can view docum
 [Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-microsoft-dynamics-nav.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
-[Switzerland Local Functionality in [!INCLUDE[navnow](developer/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Switzerland/switzerland-local-functionality)  
+[Switzerland Local Functionality in [!INCLUDE[navnow](../developer/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Switzerland/switzerland-local-functionality)  
