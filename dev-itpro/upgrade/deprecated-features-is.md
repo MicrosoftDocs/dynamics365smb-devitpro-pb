@@ -15,7 +15,7 @@ ms.author: bholtorf
 ---
 
 # Deprecated Features in the Icelandic Version of Microsoft Dynamics NAV 2018
-This topic lists and describes the local functionality for Iceland that has been removed from [!INCLUDE[navnow](developer/navnow_md.md)], made available from a new page or report, or replaced by a new feature.
+This topic lists and describes the local functionality for Iceland that has been removed from [!INCLUDE[navnow](developer/includes/navnow_md.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Icelandic Tax Regulations of Conditional Discounts
 The local tax regulation of conditional discounts feature enables you to issue a credit memo if a conditional discount is given to a customer. The payment for a conditional discount must be made within a specified period.
@@ -28,4 +28,4 @@ The local tax regulation of conditional discounts feature enables you to issue a
 [Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-microsoft-dynamics-nav.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
-[Iceland Local Functionality in [!INCLUDE[navnow](developer/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Iceland/iceland-local-functionality)  
+[Iceland Local Functionality in [!INCLUDE[navnow](developer/includes/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Iceland/iceland-local-functionality)  
