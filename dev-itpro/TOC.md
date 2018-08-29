@@ -273,6 +273,7 @@
 ### [Authentication](webservices/web-services-authentication.md)
 ### [Best Practices](webservices/web-services-best-practices.md)
 ## [SOAP]((webservices/soap-web-services.md)
+### [SOAP Services URIs](webservices/soap-web-service-uris.md)
 ### [Basic Operations](webservices/basic-operations.md)
 #### [Create](webservices/create-operation.md)
 #### [CreateMultiple](webservices/create-operation.md)

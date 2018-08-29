@@ -47,7 +47,7 @@ Reads a filtered set of records. This operation returns an array of entities. Th
   
 -   Field contains the name of the field that the filter is applied to. This name comes from the Entity\_Fields enum.  
   
--   Criteria is of type string and can contain any valid [!INCLUDE[prodshort](includes/prodshort.md)] style filter that is specified in a standard [!INCLUDE[prodshort](includes/prodshort.md)] filter format.  
+-   Criteria is of type string and can contain any valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] style filter that is specified in a standard [!INCLUDE[prodshort](../developer/includes/prodshort.md)] filter format.  
   
 ## Usage Examples  
  The following example returns the first 100 customer names that start with an S. For a detailed code example, see [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP-.md).  

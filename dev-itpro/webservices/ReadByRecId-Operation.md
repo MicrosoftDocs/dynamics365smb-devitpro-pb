@@ -16,13 +16,13 @@ Reads the record that is identified by the record ID.
   
 ## Parameters  
   
-|Parameter|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
+|Parameter|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |---------------|---------------------------------------|  
 |*formattedRecId*|Type: String<br /><br /> The RecId that is used to read the record.|  
   
 ## Results  
   
-|Result name|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
+|Result name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-----------------|---------------------------------------|  
 |*entity*|Type: Entity<br /><br /> A variable of a specific object type that represents the page. Contains the latest values that are present on the page.<br /><br /> If the record is not found, then the operation returns **null**.|  
   
