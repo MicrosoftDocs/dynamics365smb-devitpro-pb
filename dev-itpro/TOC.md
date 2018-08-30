@@ -35,7 +35,8 @@
 <!-- administration-->
 # [Administration](administration/administration.md)
 ## On-Premises
-### [Administration and Setup for the Intelligent Edge](administration/about-intelligent-edge.md)
+### [Connect to the Intelligent Cloud](administration/about-intelligent-edge.md)
+#### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
 ### [Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)
 #### [Administration Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management)
