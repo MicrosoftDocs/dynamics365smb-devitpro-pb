@@ -166,5 +166,5 @@ You have now published a [!INCLUDE[prodshort](../developer/includes/prodshort.md
  [SOAP Web Services](SOAP-Web-Services.md)   
  [Microsoft Dynamics NAV Web Services Overview](Microsoft-Dynamics-NAV-Web-Services-Overview.md)   
  [How to: Publish a Web Service](How-to--Publish-a-Web-Service.md)  
- [Configuring Web Services to Use SSL](configure-web-services-with-ssl.md)   
+ [Securing Web Service Connections Using Certificates](deployment/implement-security-certificates-production-environment)   
  [Web Service Alternatives: SOAP and OData](Web-Service-Alternatives:-SOAP-and-OData.md)
