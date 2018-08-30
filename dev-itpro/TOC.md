@@ -270,6 +270,7 @@
 ### [Managing Timezones](webservices/managing-time-zones-with-web-services.md)
 ### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 ### [Authentication](webservices/web-services-authentication.md)
+### [Securing Connection Using SSl](webservices/configure-web-services-with-ssl.md)
 ### [Best Practices](webservices/web-services-best-practices.md)
 ## [SOAP](webservices/soap-web-services.md)
 ### [SOAP Service URIs](webservices/soap-web-service-uris.md)

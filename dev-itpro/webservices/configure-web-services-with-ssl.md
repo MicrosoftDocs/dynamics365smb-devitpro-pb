@@ -84,22 +84,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
 >  To avoid validation errors, make sure that the certificate that you create and self-sign has the same name as the host name, which is accessed from all the remote machines. The machine name is specified in “**CN=\<machine name>**”. If you use the *http://hostname:Port/NAVserver/* link to access your Microsoft Dynamics NAV service, then you should specify the –n “CN=hostname” flag to the `makecert` command instead.  
 -->
     
-##  <a name="ConfigureSSL"></a> Enable SSL for web services in the [!INCLUDE[server](../developer/includes/server.md)] configuration
-  
-The first step is to prepare [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to use SSL. This involves configuring the relevant [!INCLUDE[server](../developer/includes/server.md)] instance to specify SSL.
 
-You can configure [!INCLUDE[server](../developer/includes/server.md)] instances with the [Server Administration Tool](../administration/administration-tool.md) or [Business Central Windows PowerShell Cmdlets]((https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview). For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
-
-   
-1.  Open the [!INCLUDE[admintool](../developer/includes/admintool.md)], select [!INCLUDE[server](../developer/includes/server.md)] that you want to modify.
-
-2. Under the **SOAP Web Services** and  **OData Web Services** tabs, set the **Enable SSL** option.
-
-3. Make a note the ports that are used by SOAP and OData and the service account that the server instance is using. 
-
-    You will need the information later. 
-  
-2.  In [!INCLUDE[admintool](../developer/includes/admintool.md)], in the left pane, under **Console Root**, expand the node for the [!INCLUDE[server](../developer/includes/server.md)] computer. This is typically named **[!INCLUDE[prodlong](../developer/includes/prodlong.md)] \(Local\)**, which is the local computer.  
 
 
 ##  <a name="Importing"></a> Import the SSL Certificate into the Local Computer Store of the !INCLUDE[server](../developer/includes/server.md)] computer  
@@ -144,10 +129,27 @@ Once you obtain a certificate, you must import it into the **Personal** local co
   
      For example, if the thumbprint is `c0 d0 f2 70 95 b0 3d 43 17 e2 19 84 10 24 32 8c ef 24 87 79`, then change it to `c0d0f27095b03d4317e219841024328cef248779`.
 
-    > [!IMPORTANT] 
-    >  Make sure that the copied thimprint does not contain any invisible extra characters; otherwise you will experience problems when using it later. For more information, see [Certificate thumbprint displayed in MMC certificate snap-in has extra invisible unicode character](https://support.microsoft.com/en-au/help/2023835/certificate-thumbprint-displayed-in-mmc-certificate-snap-in-has-extra)  
+    > [!TIP] 
+    >  It is important that the copied thumprint does not contain any invisible extra characters; otherwise you will experience problems when using it later. To avoid this, see [Certificate thumbprint displayed in MMC certificate snap-in has extra invisible unicode character](https://support.microsoft.com/en-au/help/2023835/certificate-thumbprint-displayed-in-mmc-certificate-snap-in-has-extra) 
+    
 
+##  <a name="ConfigureSSL"></a> Enable SSL for web services in the [!INCLUDE[server](../developer/includes/server.md)] configuration
   
+The first step is to prepare [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to use SSL. This involves configuring the relevant [!INCLUDE[server](../developer/includes/server.md)] instance to specify SSL.
+
+You can configure [!INCLUDE[server](../developer/includes/server.md)] instances with the [Server Administration Tool](../administration/administration-tool.md) or [Business Central Windows PowerShell Cmdlets]((https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview). For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
+
+   
+1.  Open the [!INCLUDE[admintool](../developer/includes/admintool.md)], select [!INCLUDE[server](../developer/includes/server.md)] that you want to modify.
+
+2. Under the **SOAP Web Services** and  **OData Web Services** tabs, set the **Enable SSL** option.
+
+3. Make a note the ports that are used by SOAP and OData and the service account that the server instance is using. 
+
+    You will need the information later. 
+  
+2.  In [!INCLUDE[admintool](../developer/includes/admintool.md)], in the left pane, under **Console Root**, expand the node for the [!INCLUDE[server](../developer/includes/server.md)] computer. This is typically named **[!INCLUDE[prodlong](../developer/includes/prodlong.md)] \(Local\)**, which is the local computer.  
+
 ##  <a name="ACL"></a> Configure the Access Control List and the Web Services Ports for SSL  
 
 An access control list \(ACL\) is part of the Windows security infrastructure and features. The ACL controls who can access resources on a computer. For more information, see [Access Control Lists](http://go.microsoft.com/fwlink/?LinkId=177398).  
