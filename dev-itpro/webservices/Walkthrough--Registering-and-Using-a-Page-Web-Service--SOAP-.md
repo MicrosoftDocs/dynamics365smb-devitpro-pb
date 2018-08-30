@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ---
 # Walkthrough: Registering and Using a Page Web Service (SOAP)
+
 This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page as a SOAP web service and then using it in a Visual Studio console application. When you publish a page as a web service, you expose a default set of operations for managing common record-handling tasks to developers. The walkthrough shows how to use some of these operations. Compare this walkthrough with [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData.md).  
 
 ## About This Walkthrough  
@@ -31,14 +32,12 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/inclu
 
 -   Visual Studio. You can use any edition of Visual Studio that supports adding web references. You also have the option of using service references instead of web references, or of using the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
 
-## Publishing a Page as a Web Service  
+## Publish a Page as a Web Service  
  You publish a web service using the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].  
 
-#### To publish a page as a web service  
-
-1.  Open the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], and then connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
-
-2.  In the **Search** box, enter **Web Services**, and then press Return.  
+1.  Open the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], and then connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
+  
+2.  Choose the ![Search for Page or Report](../media/search_small.png "Search for Page or Report icon") icon, enter **Web Services**, and then choose the related link.  
 
 3.  In the **Web Services** page, choose **New**.  
 
@@ -48,18 +47,24 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/inclu
 
 6.  Choose **OK** to close the **New - Web Services** page.  
 
-## Verifying Web Services Availability  
+## Verify Web Services Availability  
 
 > [!NOTE] 
 >  After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for SOAP-based web services is set to 7047. You can configure this value by using the [Server Administration Tool](../administration/administration-tool.md).  
 
-#### To verify availability of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web service  
 
-1.  Start Windows Internet Explorer.  
+1.  Open a browser.  
 
-2.  In the **Address** field, enter an address of the following type: **http://\<Server>:\<WebServicePort>/\<ServerInstance>/WS/\<CompanyName>/services**. For example:  
+2.  In the **Address** field, enter an address of the following type: 
 
-     **http://localhost:7047/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/WS/CRONUS%20International%20Ltd./services**  
+    ```
+    http://\<Server>:\<WebServicePort>/\<ServerInstance>/WS/\<CompanyName>/services
+    ```
+    For example:
+
+    ```     
+    http://localhost:7047/BC130/WS/CRONUS%20International%20Ltd./services
+    ```  
 
     > [!NOTE] 
     >  The company name is case-sensitive.  
@@ -67,7 +72,7 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/inclu
      The browser should now show the web service that you have published:  
 
     ```  
-    <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:7047/<server instance>/WS/CRONUS International Ltd/Page/Customer"/>  
+    <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:7047/BC130/WS/CRONUS International Ltd/Page/Customer"/>  
     ```  
 
 ## Calling the Web Service  
