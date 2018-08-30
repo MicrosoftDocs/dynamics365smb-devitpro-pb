@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ---
 # Walkthrough: Registering and Using a Page Web Service (SOAP)
-This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page as a SOAP web service and then using it in a Visual Studio 2012 console application. When you publish a page as a web service, you expose a default set of operations for managing common record-handling tasks to developers. The walkthrough shows how to use some of these operations. Compare this walkthrough with [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData.md).  
+This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page as a SOAP web service and then using it in a Visual Studio console application. When you publish a page as a web service, you expose a default set of operations for managing common record-handling tasks to developers. The walkthrough shows how to use some of these operations. Compare this walkthrough with [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData.md).  
 
 ## About This Walkthrough  
  This walkthrough provides an overview of how to publish a page as a web service and then interact with data from that page in a Visual Studio console application. This walkthrough uses a SOAP web service, although you can also create an OData web service to interact with page data. The walkthrough illustrates the following tasks:  
@@ -29,10 +29,10 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/inclu
 
 -   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
 
--   Visual Studio 2012, Visual Studio 2010, or Visual Studio 2008. You can use any edition of Visual Studio that supports adding web references. In this walkthrough, you will use Visual Studio 2012. You also have the option of using service references instead of web references, or of using the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
+-   Visual Studio. You can use any edition of Visual Studio that supports adding web references. You also have the option of using service references instead of web references, or of using the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
 
 ## Publishing a Page as a Web Service  
- You publish a web service using the [!INCLUDE[rtc](../developer/includes/rtc_md.md)].  
+ You publish a web service using the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].  
 
 #### To publish a page as a web service  
 
@@ -67,11 +67,11 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/inclu
      The browser should now show the web service that you have published:  
 
     ```  
-    <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:7047/nav_server_instance/WS/CRONUS International Ltd/Page/Customer"/>  
+    <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:7047/<server instance>/WS/CRONUS International Ltd/Page/Customer"/>  
     ```  
 
 ## Calling the Web Service  
- In this walkthrough we use Visual Studio 2012 to call and use the web service.  
+ In this walkthrough we use Visual Studio to call and use the web service.  
 
 #### To call the web service  
 

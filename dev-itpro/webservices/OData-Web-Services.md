@@ -25,14 +25,14 @@ The Open Data Protocol \(OData\) is a web protocol that is designed for querying
   
 |To|See|  
 |--------|---------|  
-|Use OData to obtain an AtomPub document.|[How to: Use OData to Return-Obtain an AtomPub Document](How-to--Use-OData-to-Return-Obtain-an-AtomPub-Document.md)|  
-|Use OData to obtain a service metadata \(EDMX\) document.|[How to: Use OData to Return-Obtain a Service Metadata \(EDMX\) Document](How-to--Use-OData-to-Return-Obtain-a-Service-Metadata--EDMX--Document.md)|  
-|Use OData to obtain a JavaScript Object Notation \(JSON\) document.|[How to: Use OData to Return-Obtain a JSON Document](How-to--Use-OData-to-Return-Obtain-a-JSON-Document.md)|  
-|Use filter expressions in OData URIs.|[Using Filter Expressions in OData URIs](Using-Filter-Expressions-in-OData-URIs.md)|  
-|Use FlowFilters in OData URIs.|[How to: Use FlowFilters in OData URIs](How-to--Use-FlowFilters-in-OData-URIs.md)|  
+|Use OData to obtain an AtomPub document.|[Using OData to Return or Obtain an AtomPub Document](Return-Obtain-an-AtomPub-Document.md)|  
+|Use OData to obtain a service metadata \(EDMX\) document.|[Using OData to Return or Obtain a Service Metadata \(EDMX\) Document](return-obtain-service-metadata-edmx-document.md)|  
+|Use OData to obtain a JavaScript Object Notation \(JSON\) document.|[Using OData to Return-Obtain a JSON Document](return-obtain-json-document.md)|  
+|Use filter expressions in OData URIs.|[Using Filter Expressions in OData URIs](Use-Filter-Expressions-in-OData-URIs.md)|  
+|Use FlowFilters in OData URIs.|[Using FlowFilters in OData URIs](use-flowfilters-in-odata-uri.md)|  
 |Use server-driven paging in OData URIs.|[Server-Driven Paging in OData Web Services](Server-Driven-Paging-in-OData-Web-Services.md)|  
-|Navigate in an OData web service application by using resource properties.|[Using Containments and Associations](Using-Containments-and-Associations.md)|  
-|Write to the database through an OData web service that exposes a writable page.|[Using OData Web Services to Modify Data](Using-OData-Web-Services-to-Modify-Data.md)|  
+|Navigate in an OData web service application by using resource properties.|[Using Containments and Associations](use-containments-associations.md)|  
+|Write to the database through an OData web service that exposes a writable page.|[Using OData Web Services to Modify Data](use-odata-to-modify-data.md)|  
   
 ## Known Limitations  
  You can specify filters in OData web services in general that are not supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] , such as using an OR operator to filter on two different fields. In those cases, you will see the following error:  

@@ -31,14 +31,14 @@ This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](../deve
   
 -   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
   
--   Visual Studio 2012 or Visual Studio 2010. You can use any edition of Visual Studio that supports adding web references. In this walkthrough, you will use Visual Studio 2012. You also have the option of using service references instead of web references, or of using the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
+-   Visual Studio. You can use any edition of Visual Studio that supports adding web references. In this walkthrough, you will use Visual Studio. You also have the option of using service references instead of web references, or of using the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
   
 ## Publishing a Page as a Web Service  
- You publish a web service using the [!INCLUDE[rtc](../developer/includes/rtc_md.md)].  
+ You publish a web service using the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].  
   
 #### To register and publish a page as a web service  
   
-1.  Open the [!INCLUDE[rtc](../developer/includes/rtc_md.md)], and then connect to the [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
+1.  Open the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], and then connect to the [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
   
 2.  In the **Search** box, enter **Web Services**, and then press Return.  
   
@@ -50,7 +50,7 @@ This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](../deve
   
 6.  Choose **OK** to close the **New - Web Services** page.  
   
-     Do not close the [!INCLUDE[rtc](../developer/includes/rtc_md.md)] or navigate away from the **Web Services** page.  
+     Do not close the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] or navigate away from the **Web Services** page.  
   
 ## Creating an Extension Codeunit  
  After you publish the page, you create a codeunit that extends its functionality. Follow the steps in this procedure to create a codeunit called **CapitalizeName**, which takes a customer name as input and outputs the same customer name capitalized. The codeunit must take the record type of the page as the first parameter.  
@@ -63,15 +63,15 @@ This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](../deve
   
 3.  In Object Designer, choose **Codeunit**, and then choose **New**.  
   
-4.  On the **View** menu, choose **C/AL Globals**.  
+4.  On the **View** menu, choose **AL Globals**.  
   
-5.  In the **C/AL Globals** window, choose the **Functions** tab, and then enter **CapitalizeName** in the name column.  
+5.  In the **AL Globals** window, choose the **Functions** tab, and then enter **CapitalizeName** in the name column.  
   
 6.  Select the **CapitalizeName** method, in the **View** menu, choose **Properties**, and then set the **Local** property to **No**.  
   
      Setting this property makes the method accessible from the other objects. For more information about this property, see [Local Property](../developer/properties/devenv-Local-Property.md).  
   
-7.  In the **C/AL Globals** window, choose the **Locals** button.  
+7.  In the **AL Globals** window, choose the **Locals** button.  
   
 8.  On the **Parameters** tab, enter **Cust** in the **Name** field, and then select **Record** in the **DataType** field.  
   
@@ -79,7 +79,7 @@ This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](../deve
   
 10. Choose **OK** to close the **Table list** window.  
   
-11. Close the **C/AL Locals** window, and then close the **C/AL Globals** window.  
+11. Close the **AL Locals** window, and then close the **AL Globals** window.  
   
 12. In the `CapitalizeName` method, insert the following lines of code:  
   
@@ -88,7 +88,7 @@ This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](../deve
     Cust.MODIFY(TRUE);  
     ```  
   
-13. Close the **C/AL Editor**.  
+13. Close the **AL Editor**.  
   
 14. When prompted, enter **50012** in the **ID** text box, enter **CapitalizeName** in the **Name** text box then select the **Compile** check box and then choose **OK**.  
   
@@ -97,7 +97,7 @@ This walkthrough shows how to publish and consume a [!INCLUDE[prodshort](../deve
   
 #### To connect the codeunit to the exposed page  
   
-1.  Navigate to the [!INCLUDE[rtc](../developer/includes/rtc_md.md)] again, and on the **Web Services** page, choose **New**.  
+1.  Navigate to the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] again, and on the **Web Services** page, choose **New**.  
   
 2.  In the **Object Type** field, select **Codeunit**, and then select object ID **50012**. In the **Service Name** field, enter **PageWithCapitalization**, which is the same name that you gave the page web service.  
   

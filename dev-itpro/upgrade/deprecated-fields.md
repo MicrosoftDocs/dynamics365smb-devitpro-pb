@@ -13,13 +13,13 @@ ms.author: edupont
 ---
 
 # Deprecated Fields, and Fields Marked as Obsolete
-In the [!INCLUDE[navnowlong](includes/navnowlong_md.md)], a number of fields have been deprecated in the current release or marked to be obsolete in a later release.  
+In the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], a number of fields have been deprecated in the current release or marked to be obsolete in a later release.  
 
 ## Definitions
 Deprecated fields fall into one of the following groups:
 1.	Fields moved to an extension by Microsoft  
 
-    Partner impact: Remember to install the extension when you upgrade an existing solution from an earlier version of [!INCLUDE[navnow](includes/navnow_md.md)].  
+    Partner impact: Remember to install the extension when you upgrade an existing solution from an earlier version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)].  
 2.	Fields marked as Obsolete:Pending  
 
     Partner impact: None in the current release, this is just a heads-up that a change is coming.  
@@ -27,11 +27,11 @@ Deprecated fields fall into one of the following groups:
 
     Partner impact: Refactor your code as soon as possible.  
 
-## Fields moved to an extension by Microsoft in [!INCLUDE[nav2018](includes/nav2018_md.md)]
+## Fields moved to an extension by Microsoft in [!INCLUDE[nav2018](../developer/includes/nav2018_md.md)]
 A number of fields have been moved from the base application to an extension.
 
 ### Denmark
-The functionality for payments and reconciliation in the Danish version (FIK) has been moved to the Payments and Reconciliations (DK) extension. For more information, see [The Payments and Reconciliations (DK) Extension](/dynamics365/financials/ui-extensions-payments-reconciliation-formats-dk) in the [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)] documentation.
+The functionality for payments and reconciliation in the Danish version (FIK) has been moved to the Payments and Reconciliations (DK) extension. For more information, see [The Payments and Reconciliations (DK) Extension](/dynamics365/financials/ui-extensions-payments-reconciliation-formats-dk) in the [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)] documentation.
 
 |Table ID|Table Name|Old Field ID|New Field ID|Old Field Name|New Field Name|
 |--------|--------|--------|--------|--------|--------|
@@ -49,7 +49,7 @@ The functionality for payments and reconciliation in the Danish version (FIK) ha
 |1250|Bank Statement Matching Buffer|13601|13652|Match Status|MatchStatus|
 |1250|Bank Statement Matching Buffer|13600|13653|Description|DescriptionBankStatement|
 
-## Fields marked as ObsoleteState:Pending in [!INCLUDE[nav2018](includes/nav2018_md.md)]
+## Fields marked as ObsoleteState:Pending in [!INCLUDE[nav2018](../developer/includes/nav2018_md.md)]
 A number of fields are marked as ObsoleteState:Pending. There is no impact on code in this release.  
 
 ### Iceland
@@ -169,8 +169,8 @@ The following fields are marked as ObsoleteState:Pending in the Danish version.
 |5995|13600|Will be removed in a later release.|
 
 
-## Fields no longer in use in Microsoft code in [!INCLUDE[nav2018](includes/nav2018_md.md)]
-A number of fields that are related to product groups are no longer in use, because the feature was replaced by item categories in [!INCLUDE[nav2017](includes/nav2017.md)]. The fields are marked as ObsoleteState:Pending.  
+## Fields no longer in use in Microsoft code in [!INCLUDE[nav2018](../developer/includes/nav2018_md.md)]
+A number of fields that are related to product groups are no longer in use, because the feature was replaced by item categories in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. The fields are marked as ObsoleteState:Pending.  
 
 |Table ID|Field ID|Comments|
 |--------|--------|--------|
@@ -197,7 +197,7 @@ A number of fields that are related to product groups are no longer in use, beca
 |6651|5712|Will be removed in a later release.|
 |6661|5712|Will be removed in a later release.|
 
-For more information about the impact, see [The new Item Categories feature replaced the Product Group feature in Dynamics NAV 2017](https://blogs.msdn.microsoft.com/nav/2017/03/30/the-new-item-categories-feature-replaced-the-product-group-feature-in-dynamics-nav-2017/) on the Dynamics NAV team blog. For more information about item categories, see [How to: Categorize Items](/dynamics365/financials/inventory-how-categorize-items) in the [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)] documentation.
+For more information about the impact, see [The new Item Categories feature replaced the Product Group feature in Dynamics NAV 2017](https://blogs.msdn.microsoft.com/nav/2017/03/30/the-new-item-categories-feature-replaced-the-product-group-feature-in-dynamics-nav-2017/) on the Dynamics NAV team blog. For more information about item categories, see [How to: Categorize Items](/dynamics365/financials/inventory-how-categorize-items) in the [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)] documentation.
 
 ## See Also
 [Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-microsoft-dynamics-nav.md)  

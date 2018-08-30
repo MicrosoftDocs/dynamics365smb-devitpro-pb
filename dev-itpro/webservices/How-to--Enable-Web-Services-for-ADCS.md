@@ -16,7 +16,7 @@ To use Automated Data Capture System, you must enable the ADCS web service.
 
 ### To enable and publish the ADCS web service  
 
-1.  Start the [!INCLUDE[rtc](../developer/includes/rtc_md.md)].  
+1.  Start the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].  
 
 2.  In the **Search** box, enter **Web Services**, and then choose the related link.  
 
@@ -39,19 +39,19 @@ To use Automated Data Capture System, you must enable the ADCS web service.
 1.  In a web browser window, enter a URL in the following format:  **http://\<web services path>/Services**. The following example demonstrates the results.  
 
     ```  
-    http://localhost:7047/nav_server_instance/WS/Services  
+    http://localhost:7047/<server instance>/WS/Services  
     ```  
 
      You see the following XML information if the ADCS web service is published.  
 
     ```  
-    <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:7047/nav_server_instance/WS/Codeunit/ADCS"/>  
+    <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:7047/<server instance>/WS/Codeunit/ADCS"/>  
     ```  
 
 2.  To verify that the codeunit is performing as expected, enter a URL in the following format: **http://\<web services path>/Codeunit/\<Service Name>**.  
 
     ```  
-    http://localhost:7047/nav_server_instance/WS/Codeunit/ADCS  
+    http://localhost:7047/<server instance>/WS/Codeunit/ADCS  
     ```  
 
      Information about the ADCS web service is displayed.  

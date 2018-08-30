@@ -13,21 +13,21 @@ ms.assetid: e594076a-21e3-4f4d-8760-581cb2b89b1f
 manager: edupont
 ---
 # Using Filter Expressions in OData URIs
-You can use filter expressions in OData URIs to limit the results that are returned in an AtomPub document. This topic identifies the filter expressions that you can use, describes the equivalent field or table filter that you can use in C/AL, and presents examples to show the syntax for using filter expressions in OData web service URIs and applications.  
+You can use filter expressions in OData URIs to limit the results that are returned in an AtomPub document. This topic identifies the filter expressions that you can use, describes the equivalent field or table filter that you can use in AL, and presents examples to show the syntax for using filter expressions in OData web service URIs and applications.  
 
 ## Filter Expressions  
  To add a filter to an OData URI, add `$filter=` to the end of the name of the published web service. For example, the following URI filters the **City** field in the **Customer** page to return all customers who are located in Miami:  
 
 ```  
-http://localhost:7048/DynamicsNAV/OData/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
+http://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
 ```  
 
- The following table shows the filters that are supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData web services and the equivalent C/AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
+ The following table shows the filters that are supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData web services and the equivalent AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
 
 > [!NOTE]  
->  Filters that do not have equivalent C/AL expressions might take longer to process compared to filters that do have equivalent C/AL expressions. The reason is that filters that do not have equivalent C/AL expressions are processed on the [!INCLUDE[server](../developer/includes/server.md)] tier, while filters that do have equivalent C/AL expressions are processed on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database tier.  
+>  Filters that do not have equivalent AL expressions might take longer to process compared to filters that do have equivalent AL expressions. The reason is that filters that do not have equivalent AL expressions are processed on the [!INCLUDE[server](../developer/includes/server.md)] tier, while filters that do have equivalent AL expressions are processed on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database tier.  
 
-|Definition|Example and explanation|Equivalent C/AL expression|  
+|Definition|Example and explanation|Equivalent AL expression|  
 |----------------|-----------------------------|---------------------------------|  
 |Select a range of values|`filter=Entry_No gt 610 and Entry_No lt 615`<br /><br /> Query on GLEntry service. Returns entry numbers 611 through 614.|..|  
 |And|`filter=Country_Region_Code eq 'ES' and Payment_Terms_Code eq '14 DAYS'`<br /><br /> Query on Customer service. Returns customers in Spain where Payment\_Terms\_Code=**14 DAYS**.|&|  

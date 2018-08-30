@@ -29,14 +29,14 @@ This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../devel
   
 -   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
   
--   Visual Studio 2012 or Visual Studio 2010. You can use any edition of Visual Studio that supports adding web references. In this walkthrough, you will use Visual Studio 2012. You also have the option to use service references instead of web references, or use the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
+-   Visual Studio. You can use any edition of Visual Studio that supports adding web references. You also have the option to use service references instead of web references, or use the web service proxy generating tools svcutil.exe and wsdl.exe, which are included in the Microsoft .NET Framework SDK.  
   
 ## Publishing a Page as a Web Service  
  You publish a web service by using the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] or the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
   
 #### To register and publish a page as a web service  
   
-1.  Open the [!INCLUDE[rtc](../developer/includes/rtc_md.md)] and connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
+1.  Open the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] and connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
   
 2.  In the **Search** box, enter **Web services**, and then choose the related link.  
   
@@ -74,7 +74,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../devel
      ![Basic AtomPub document for a page](../media/BasAtomPub.JPG "BasAtomPub")  
   
 ##  <a name="BKMK_CreateConsoleApp"></a> Creating the Console Application  
- Next, you create a C\# console application in Visual Studio 2012.  
+ Next, you create a C\# console application in Visual Studio.  
   
 #### To create the C\# project  
   
@@ -179,7 +179,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../devel
   
 ## See Also  
  [Web Services Overview](web-services.md)   
- [Using OData Web Services to Modify Data](Using-OData-Web-Services-to-Modify-Data.md)   
+ [Using OData Web Services to Modify Data](use-odata-to-modify-data.md)   
  [Web Service Walkthroughs](Web-Service-Walkthroughs.md)   
  [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP.md)   
  [Web Services Overview](web-services.md)

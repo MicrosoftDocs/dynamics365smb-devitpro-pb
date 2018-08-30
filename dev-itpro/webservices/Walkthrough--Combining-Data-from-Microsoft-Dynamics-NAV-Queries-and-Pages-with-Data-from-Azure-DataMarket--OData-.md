@@ -120,7 +120,7 @@ This walkthrough describes how you can use OData to combine data from [!INCLUDE[
 8.  Choose the **OK** button to exit the **New – Web Services** page.  
   
 ## Verifying Web Service Availability  
- You should verify that the web services that you just created are available over the Internet. When exposing a web service, you must open the port for consumers of your web service to access it. If necessary, have your system administrator add the port through Windows Firewall on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. The default port for OData web services is 7048 and can be configured by using [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)]. For more information, see [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
+ You should verify that the web services that you just created are available over the Internet. When exposing a web service, you must open the port for consumers of your web service to access it. If necessary, have your system administrator add the port through Windows Firewall on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. The default port for OData web services is 7048 and can be configured by using [!INCLUDE[admintool](../developer/includes/admintool.md)]. For more information, see [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
   
 #### To verify web service availability  
   
