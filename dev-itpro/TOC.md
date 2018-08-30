@@ -271,7 +271,7 @@
 ### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 ### [Authentication](webservices/web-services-authentication.md)
 ### [Best Practices](webservices/web-services-best-practices.md)
-## [SOAP]((webservices/soap-web-services.md)
+## [SOAP](webservices/soap-web-services.md)
 ### [SOAP Service URIs](webservices/soap-web-service-uris.md)
 ### [Basic Operations](webservices/basic-page-operations.md)
 #### [Create](webservices/create-operation.md)

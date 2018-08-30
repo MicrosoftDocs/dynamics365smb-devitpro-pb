@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Configuring Web Services to Use SSL (SOAP and OData)"
+title: "Configuring Dynamics 365 Business Central Web Services to Use SSL (SOAP and OData)"
 ms.custom: na
 ms.date: 06/05/2016
 ms.reviewer: na
@@ -8,31 +8,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ---
-# Walkthrough: Configuring Web Services to Use SSL (SOAP and OData)
+# Configuring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Services to Use SSL 
 Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide security and data integrity for data communications over a network. By encrypting your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services using SSL, you make your data and the network more secure and more reliable.  
   
-## Microsoft Dynamics NAV Web Services and SSL  
+## Web Services and SSL  
  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports SSL authentication for SOAP and OData web services. The server authenticates itself to the client, but the client does not authenticate itself to the server. When the web service client connects to the [!INCLUDE[server](../developer/includes/server.md)] instance, the server replies by sending its digital certificate to the client. This certificate contains the server's public encryption key and the name of the authority that granted the certificate. The client verifies the certificate using the authority's public key.  
   
-## About This Walkthrough  
- This walkthrough illustrates the following tasks:  
-  
--   [Configuring Microsoft Dynamics NAV Web Services to Use SSL](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData.md#ConfigureSSL)  
-  
--   [Obtaining an SSL Certificate](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData.md#ObtainCert)  
-  
--   [Importing the SSL Certificate into the Local Computer Store of the Microsoft Dynamics NAV Server computer](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData.md#Importing)  
-  
--   [Granting Permissions to the Certificate's Private Key to Microsoft Dynamics NAV Server](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData.md#GrantingAccess)  
-  
--   [Obtaining the Certificate's Thumbprint](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData.md#Thumbprint)  
-  
--   [Configuring the Access Control List and the Web Services Ports for SSL](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData.md#ACL)  
-  
--   [Verifying the Configuration](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData.md#Verify)  
-  
--   [Restart the Microsoft Dynamics NAV Server Instance](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData.md#Restart)  
-  
+<!--  
 ### Prerequisites  
  To complete this walkthrough, you will need:  
   
@@ -44,53 +26,22 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
     > [!NOTE] 
     >  The makecert.exe tool is only required if you do not already have an SSL certificate and you want to create a certificate for test purposes.  
-  
+
 ## Story  
  Victor, who is a business systems developer at [!INCLUDE[demoname](../developer/includes/demoname_md.md)], knows that his implementation of web services applications for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is unlikely to pass a company security audit unless he encrypts sensitive data that is transmitted over the company intranet. He decides to protect web services communication with SSL.  
+-->
+##  <a name="ObtainCert"></a> Obtain an SSL Certificate
   
-##  <a name="ConfigureSSL"></a> Configuring Microsoft Dynamics NAV Web Services to Use SSL  
- The first step is to prepare [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to use SSL. This involves configuring the relevant [!INCLUDE[server](../developer/includes/server.md)] instance to specify SSL.  
-  
- You can configure [!INCLUDE[server](../developer/includes/server.md)] instances with the [Server Administration Tool](../administration/administration-tool.md) or [Business Central Windows PowerShell Cmdlets]((https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview). For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
-  
- The following procedure uses [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] to configure the [!INCLUDE[server](../developer/includes/server.md)] instance.  
-  
-#### To configure the Microsoft Dynamics NAV Server instance to use SSL  
-  
-1.  Choose the **Start** button, and in the **Search programs and files** box, type **Microsoft Dynamics NAV Administration**, and then choose the related link.  
-  
-2.  In [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], in the left pane, under **Console Root**, expand the node for the [!INCLUDE[server](../developer/includes/server.md)] computer. This is typically named **Microsoft Dynamics NAV \(Local\)**, which is the local computer.  
-  
-     The [!INCLUDE[server](../developer/includes/server.md)] instances on the computer appear in the left pane and center panes.  
-  
-     ![Console root with two server instances](../media/ConsoleRootExp.png "ConsoleRootExp")  
-  
-3.  In the left pane, choose the relevant instance to display settings for that instance in the center pane.  
-  
-4.  At the bottom of the center pane, choose **Edit**.  
-  
-5.  To configure SOAP web services to use SSL, expand the **SOAP Web Services** tab, and then select the **Enable SSL** option.  
-  
-     Make a note of the port that is used by SOAP web services. You will need the port number later on in this walkthrough.  
-  
-6.  To configure OData web services to use SSL, expand the **OData Web Services** tab, and then select the **Enable SSL** option.  
-  
-     Make a note of the port that is used by OData web services. You will need the port number later on in this walkthrough.  
-  
-7.  Choose **Save** at the bottom of the center pane.  
-  
-8.  In the right pane, under **Actions**, choose **Login Account**.  
-  
-9. Make a note of the service account information. You will need this information later on in this walkthrough.  
-  
-##  <a name="ObtainCert"></a> Obtaining an SSL Certificate  
- The certificate is a file that [!INCLUDE[server](../developer/includes/server.md)] uses to prove its identity and establish a trusted connection with the client that is trying to connect. In a production environment, you obtain an SSL certificate from a certification authority. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization. In a test environment, if you do not have certificate, then you can create your own test certificate by using the makecert.exe tool as described in the following procedure.  
-  
+ The certificate is a file that [!INCLUDE[server](../developer/includes/server.md)] uses to prove its identity and establish a trusted connection with the client that is trying to connect. In a production environment, you obtain an SSL certificate from a certification authority. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization.
+
+ <!--In a test environment, if you do not have certificate, then you can create your own test certificate by using the makecert.exe tool as described in the following procedure.  
+ 
  In the following procedure, you use the makecert.exe tool to create a test certificate file \(.cer\) with a private key file \(.pvk\), and then generate a personal information file \(.pfx\) from the two files. You will use the .pxf in the next procedure for importing the certificate on the computer running [!INCLUDE[server](../developer/includes/server.md)].  
   
 > [!NOTE] 
 >  If you have a certificate, then you can skip this procedure and continue to [Importing the SSL Certificate into the Local Computer Store of the Microsoft Dynamics NAV Server computer](Walkthrough--Configuring-Web-Services-to-Use-SSL--SOAP-and-OData.md#Importing).  
-  
+
+ 
 #### To create a test SSL certificate using the makecert.exe tool  
   
 1.  On the computer that is installed with Microsoft Visual Studio or Windows SDK, create a folder called *My Certificates* for working with and storing certificates.  
@@ -131,55 +82,45 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
 > [!IMPORTANT] 
 >  To avoid validation errors, make sure that the certificate that you create and self-sign has the same name as the host name, which is accessed from all the remote machines. The machine name is specified in “**CN=\<machine name>**”. If you use the *http://hostname:Port/NAVserver/* link to access your Microsoft Dynamics NAV service, then you should specify the –n “CN=hostname” flag to the `makecert` command instead.  
+-->
+    
+##  <a name="ConfigureSSL"></a> Enable SSL for web services in the [!INCLUDE[server](../developer/includes/server.md)] configuration
   
-##  <a name="Importing"></a> Importing the SSL Certificate into the Local Computer Store of the Microsoft Dynamics NAV Server computer  
- Once you obtain a certificate, you must import it into the local computer store on the computer running [!INCLUDE[server](../developer/includes/server.md)]. The certificate file will have the extension .cer or .pfx.  
+The first step is to prepare [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to use SSL. This involves configuring the relevant [!INCLUDE[server](../developer/includes/server.md)] instance to specify SSL.
+
+You can configure [!INCLUDE[server](../developer/includes/server.md)] instances with the [Server Administration Tool](../administration/administration-tool.md) or [Business Central Windows PowerShell Cmdlets]((https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview). For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
+
+   
+1.  Open the [!INCLUDE[admintool](../developer/includes/admintool.md)], select [!INCLUDE[server](../developer/includes/server.md)] that you want to modify.
+
+2. Under the **SOAP Web Services** and  **OData Web Services** tabs, set the **Enable SSL** option.
+
+3. Make a note the ports that are used by SOAP and OData and the service account that the server instance is using. 
+
+    You will need the information later. 
   
-#### To import an SSL certificate into the local computer store  
+2.  In [!INCLUDE[admintool](../developer/includes/admintool.md)], in the left pane, under **Console Root**, expand the node for the [!INCLUDE[server](../developer/includes/server.md)] computer. This is typically named **[!INCLUDE[prodlong](../developer/includes/prodlong.md)] \(Local\)**, which is the local computer.  
+
+
+##  <a name="Importing"></a> Import the SSL Certificate into the Local Computer Store of the !INCLUDE[server](../developer/includes/server.md)] computer  
+
+Once you obtain a certificate, you must import it into the **Personal** local computer store on the computer running [!INCLUDE[server](../developer/includes/server.md)]. The certificate file will have the extension .cer or .pfx.  
   
-1.  On the computer running [!INCLUDE[server](../developer/includes/server.md)], choose **Start**, and then choose **Run**.  
+1.  On the computer running [!INCLUDE[server](../developer/includes/server.md)] instance, open Microsoft Management Console (mmc), and add the Certificates snap-in. 
+2.  In the left pane of the console, double-click and expand the **Certificates \(Local Computer\)**.  
+3. Right-click **Personal**, point to **All Tasks**, and then choose **Import**.  
+4. Follow the on-screen instructions. When you get to the **File to Import** page, choose **Browse**, locate your certificate file, for example MyBusinessCentralCert.pfx.  
   
-2.  In the **Open** box, type **mmc**, and then choose **OK**.  
+    If the certificate is in a personal information exchange file \(.pfx\), set the box next to **File name** to **Personal Information Exchange \(\*.pfx;\*.p12\)**, and then browse for the certificate file.  
+5. Select the certificate file, and then choose **Open**, and then choose **Next**.  
+6. If prompted for a password, type the password on the **Password** page, and then choose **Next**.  
+7. On the **Certificate Store** page, choose **Place all certificates in the following store**, and then choose **Next**, and then follow the on-screen instructions to finish the installation.
+
   
-    > [!NOTE] 
-    >  This procedure assumes that you do not already have the Certificates snap-in installed in Microsoft Management Console. If the Certificates snap-in is already installed, skip steps 3 to 7 and go to step 8.  
-  
-3.  On the **File** menu, choose **Add/Remove Snap-in**.  
-  
-4.  In the **Add/Remove Snap-in** dialog box, choose **Certificates**, and then choose **Add**.  
-  
-5.  In the **Certificates snap-in** dialog box, choose **Computer account**, and then choose **Next**.  
-  
-6.  In the **Select Computer** dialog box, choose **Local computer**, and then choose **Finish**.  
-  
-7.  In the **Add/Remove Snap-in** dialog box, choose **OK**.  
-  
-8.  In the left pane of the console, double-click and expand the **Certificates \(Local Computer\)**.  
-  
-9. Right-click **Personal**, point to **All Tasks**, and then choose **Import**.  
-  
-10. On the **Welcome to the Certificate Import Wizard** page, choose **Next**.  
-  
-11. On the **File to Import** page, choose **Browse**, locate your certificate file, for example NavTestCert.pfx.  
-  
-     If the certificate is in a personal information exchange file \(.pfx\), set the box next to **File name** to **Personal Information Exchange \(\*.pfx;\*.p12\)**, and then browse for the certificate file.  
-  
-12. Select the certificate file, and then choose **Open**, and then choose **Next**.  
-  
-13. If prompted for a password, type the password on the **Password** page, and then choose **Next**.  
-  
-14. On the **Certificate Store** page, choose **Place all certificates in the following store**, and then choose **Next**.  
-  
-15. Choose **Finish**, and then choose **OK** to confirm that the import was successful.  
-  
-##  <a name="GrantingAccess"></a> Granting Permissions to the Certificate's Private Key to Microsoft Dynamics NAV Server  
+##  <a name="GrantingAccess"></a> Grant Permissions to the Certificate's Private Key to [!INCLUDE[server](../developer/includes/server.md)]  
  If the certificate has a private key, then you must give the service account of [!INCLUDE[server](../developer/includes/server.md)] access to the private key.  
   
-#### To grant access to the certificate’s private key to the service account for [!INCLUDE[server](../developer/includes/server.md)] 
-  
-1.  In the left pane of MMC, expand the **Certificates \(Local Computer\)** node, expand the **Personal** node, and then choose the **Certificates** folder.  
-  
-2.  In the center pane, right-click the certificate that you imported, choose **All Tasks**, and then choose **Manage Private Keys**.  
+1.  In the MMC, right-click the certificate that you imported, choose **All Tasks**, and then choose **Manage Private Keys**.  
   
 3.  In the **Permissions for private keys** dialog box, choose **Add**.  
   
@@ -187,16 +128,11 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
 5.  On the **Security** tab, under **Allow**, select **Full Control** and **Read**, and then choose **OK**.  
   
-##  <a name="Thumbprint"></a> Obtaining the Certificate's Thumbprint  
- The thumbprint is a string of hexadecimal characters that identifies the certificate. You use the thumbprint when you configure the web service's port to use the certificate. To perform this task, you continue working in the Certificates snap-in in Microsoft Management Console.  
+##  <a name="Thumbprint"></a> Get the certificate's thumbprint  
+ The thumbprint is a string of hexadecimal characters that identifies the certificate. You use the thumbprint when you configure the web service's port to use the certificate.  
+ 
   
-#### To obtain the certificate's thumbprint  
-  
-1.  In the left pane under **Console Root**, expand the **Certificates \(Local Computer\)** node, expand the **Personal** folder, and then choose the **Certificates** folder  
-  
-     The center pane displays all the certificates.  
-  
-2.  Right-click the certificate that you imported, and then choose **Open**.  
+1.   In the MMC, right-click the certificate that you imported, and then choose **Open**.  
   
 3.  In the **Certificate** dialog box, choose the **Details** tab.  
   
@@ -206,17 +142,20 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
   
 6.  In the text editor, delete all spaces from the thumbprint string.  
   
-     For example, if the thumbprint is `c0 d0 f2 70 95 b0 3d 43 17 e2 19 84 10 24 32 8c ef 24 87 79`, then change it to `c0d0f27095b03d4317e219841024328cef248779`.  
+     For example, if the thumbprint is `c0 d0 f2 70 95 b0 3d 43 17 e2 19 84 10 24 32 8c ef 24 87 79`, then change it to `c0d0f27095b03d4317e219841024328cef248779`.
+
+    > [!IMPORTANT] 
+    >  Make sure that the copied thimprint does not contain any invisible extra characters; otherwise you will experience problems when using it later. For more information, see [Certificate thumbprint displayed in MMC certificate snap-in has extra invisible unicode character](https://support.microsoft.com/en-au/help/2023835/certificate-thumbprint-displayed-in-mmc-certificate-snap-in-has-extra)  
+
   
-7.  Keep the file open or save it. You will use the thumbprint later on.  
-  
-##  <a name="ACL"></a> Configuring the Access Control List and the Web Services Ports for SSL  
- An access control list \(ACL\) is part of the Windows security infrastructure and features. The ACL controls who can access resources on a computer. For more information, see [Access Control Lists](http://go.microsoft.com/fwlink/?LinkId=177398).  
+##  <a name="ACL"></a> Configure the Access Control List and the Web Services Ports for SSL  
+
+An access control list \(ACL\) is part of the Windows security infrastructure and features. The ACL controls who can access resources on a computer. For more information, see [Access Control Lists](http://go.microsoft.com/fwlink/?LinkId=177398).  
   
 > [!NOTE] 
 >  These procedures use the netsh tool \(netsh.exe\) for configuring the HTTP server. The netsh tool is supplied with Windows. By default the netsh tool is located in the c:\\Windows\\System32 folder.  
   
-#### To configure the ACL  
+### Configure the ACL  
   
 1.  On the computer running [!INCLUDE[server](../developer/includes/server.md)], open a command prompt as an administrator as follows:  
   
@@ -245,10 +184,10 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
      To delete an entry, type the following command:  
   
     ```  
-    netsh http delete urlacl url=http://hostname:Port/NAVserver/  
+    netsh http delete urlacl url=http://hostname:port/serverinstance/  
     ```  
   
-     Substitute `Port` with the port number of the SOAP or OData web service and `NAVserver` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance.  
+     Substitute `port` with the port number of the SOAP or OData web service and `serverinstance` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance.  
   
      For example, to delete the default entries for SOAP and OData, use the following two commands:  
   
@@ -263,7 +202,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
 5.  To register the ports for the SOAP and OData web service with https, type the following command for each service:  
   
     ```  
-    netsh http add urlacl url=https://hostname:port/navserver user=DOMAIN\user  
+    netsh http add urlacl url=https://hostname:port/serverinstance user=DOMAIN\user  
     ```  
   
      Substitute the following options with the proper values:  
@@ -272,24 +211,24 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
     |------------|-----------------|  
     |`hostname`|The name of the computer running [!INCLUDE[server](../developer/includes/server.md)]. Use `+` for localhost.|  
     |`port`|The port that is used by the web service.|  
-    |`navserver`|The name of the [!INCLUDE[server](../developer/includes/server.md)] instance to use with the web service. The default is [!INCLUDE[serverinstance](../developer/includes/serverinstance.md)].|  
+    |`serverinstance`|The name of the [!INCLUDE[server](../developer/includes/server.md)] instance to use with the web service. The default is [!INCLUDE[serverinstance](../developer/includes/serverinstance.md)].|  
     |`DOMAIN\username`|The domain and user name of the service account for [!INCLUDE[server](../developer/includes/server.md)]. If the service account for [!INCLUDE[server](../developer/includes/server.md)] is Network Service, then use "NT AUTHORITY\\NETWORKSERVICE".|  
   
-     For example, if the service account for [!INCLUDE[server](../developer/includes/server.md)] has the domain *ABC* and the user name *xyz*, and then the command for the SOAP web service is as follows:  
+     For example, if the service account for [!INCLUDE[server](../developer/includes/server.md)] instance **MyBCServer** has the domain **abc** and the user name **xyz** , and then the command for the SOAP web service is as follows:  
   
     ```  
-    netsh http add urlacl url=https://+:7047/<server instance> user="NT AUTHORITY\NETWORKSERVICE"  
+    netsh http add urlacl url=https://myservercomputer:7047/MyBCServer user="abc\xyz"  
     ```  
   
      If the service account for [!INCLUDE[server](../developer/includes/server.md)] is Network Service, then the command is as follows:  
   
     ```  
-    netsh http add urlacl url=https://+:7047/<server instance> user="NT AUTHORITY\NETWORKSERVICE"  
+    netsh http add urlacl url=https://myservercomputer:7047/MyBCServer user="NT AUTHORITY\NETWORKSERVICE"  
     ```  
   
 6.  To verify that your port has been registered, repeat step 3.  
   
-#### To configure the port to use the SSL certificate  
+### Configure the port to use the SSL certificate  
   
 1.  At the command prompt, type the following command to view the current port configurations:  
   
@@ -334,27 +273,12 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
     netsh http add sslcert ipport=0.0.0.0:7047 certhash=c0d0f27095b03d4317e219841024328cef248779 appid={00112233-4455-6677-8899-AABBCCDDEEFF}  
     ```  
   
-##  <a name="Restart"></a> Restart the Microsoft Dynamics NAV Server Instance  
+##  <a name="Restart"></a> Restart the [!INCLUDE[admintool](../developer/includes/admintool.md)] Server Instance  
  You can use the Microsoft Dynamics NAV Server Administration Tool to restart the [!INCLUDE[server](../developer/includes/server.md)] instance.  
-  
-#### To restart [!INCLUDE[server](../developer/includes/server.md)] 
-  
-1.  In [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], in the left pane, under **Console Root**, choose the [!INCLUDE[server](../developer/includes/server.md)] computer.  
-  
-2.  In the center pane, choose the [!INCLUDE[server](../developer/includes/server.md)] instance that you have configured, and then in the right pane under **Actions**, choose **Restart**.  
-  
-3.  After the instance restarts, close [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)].  
-  
-##  <a name="Verify"></a> Verifying the Configuration  
- You should now be able to use web services that are encrypted with SSL. To verify this, type the following URL in the address bar for your browser.  
-  
- `https://localhost:7047/<server instance>/WS/services`  
-  
- The page lists any web services that have been published.  
   
 ## Next Steps  
  You can now try out any other SOAP web service and OData walkthroughs with SSL. The only change that is required for using these walkthrough with SSL is that you use "https" instead of "http" in your URLs.  
   
 ## See Also  
- [Security and Protection](Security-and-Protection.md)   
+ [Security and Protection](../security/Security-and-Protection.md)   
  [Web Service Walkthroughs](Web-Service-Walkthroughs.md)
