@@ -288,7 +288,7 @@
 #### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
 ### [Retrieving Companies](webservices/use-systemservice-to-find-companies.md)
 ### [Indicating That a Value Exists in Field](webservices/use-properties-to-indicate-field-value.md)
-## [OData Web Services](webservices/odata-web-services.md)
+## [OData](webservices/odata-web-services.md)
 ### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
 ### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
 ### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
@@ -298,6 +298,7 @@
 ### [Containments and Associations](webservices/use-containments-associations.md)
 ### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
 ### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
+### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 <!-- end web services -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
