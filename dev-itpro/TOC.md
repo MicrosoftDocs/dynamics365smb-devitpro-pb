@@ -21,6 +21,8 @@
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md) 
 #### [Configure Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
+### Databases
+#### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### Database
 ### [Deploying to Azure SQL Database](/deployment/deploy-database-azure-sql-database.md)
 ## [Embed App](deployment/embed-app-overview.md)
@@ -48,6 +50,7 @@
 #### [Development Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### [Authentication and Credential Types](administration/users-credential-types.md)
 ### [Configuring Business Central Server](administration/configure-server-instance.md)
+### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### [Monitoring Server Events](administration/monitor-server-events.md)
