@@ -12,7 +12,7 @@ caps.latest.revision: 14
 manager: edupont
 ---
 # Compiling Objects
-Before you can run a [!INCLUDE[navnow](includes/navnow_md.md)] object, you must compile the object. To compile an object, do one of the following:  
+Before you can run a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] object, you must compile the object. To compile an object, do one of the following:  
 
 -   In Object Designer, choose **Tools**, and then choose **Compile**. Any syntax errors are displayed in a dialog box. Any errors or warnings about obsolete constructs in a three-tier environment are displayed in the **Error List** window.  
 
@@ -39,6 +39,6 @@ Before you can run a [!INCLUDE[navnow](includes/navnow_md.md)] object, you must 
  If you select an error in the **Error List** window and choose **Design**, then the C/AL Editor opens for the object to which the error or warning relates.  
 
 ## Multilanguage Captions  
- When you compile application objects, [!INCLUDE[navnow](includes/navnow_md.md)] stores the objects in Unicode encoding. If the application objects contain multilanguage captions, [!INCLUDE[navnow](includes/navnow_md.md)] uses the code page that is relevant for the languages that you have specified.  
+ When you compile application objects, [!INCLUDE[navnow](../developer/includes/navnow_md.md)] stores the objects in Unicode encoding. If the application objects contain multilanguage captions, [!INCLUDE[navnow](../developer/includes/navnow_md.md)] uses the code page that is relevant for the languages that you have specified.  
 
 

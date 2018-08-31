@@ -7,14 +7,11 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 0c1e0c2f-e8c1-412e-86a8-6a2ba944af24
-ms.author: kepontop
-manager: edupont
 ---
-# Installation Considerations for Microsoft SQL Server and Microsoft Dynamics NAV
-This topic describes the requirements for installing and configuring Microsoft SQL Server to work with [!INCLUDE[navnowlong](includes/navnowlong_md.md)].  
+# Installation Considerations for Microsoft SQL Server and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+This article describes the requirements for installing and configuring Microsoft SQL Server to work with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
-[!INCLUDE[navnow_md](includes/navnow_md.md)] can run on Microsoft SQL Server and Microsoft Azure SQL Database. For a list of supported editions of SQL Server, see [Microsoft Dynamics NAV Database Components for SQL Server Requirements](System-Requirements-for-Microsoft-Dynamics-NAV.md#SQLReq).  
+[!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] can run on Microsoft SQL Server and Microsoft Azure SQL Database. For a list of supported editions of SQL Server, see [SQL Server Requirements](system-requirement-business-central.md#SQLReq).  
 
 ## Using Microsoft SQL Server
 
@@ -34,13 +31,13 @@ To help you decide which kind of antivirus software to use on the computers that
 For optimal read performance, maximize the available memory on the server according to the version and edition of SQL Server used. Refer to the SQL Server documentation for maximum values.
 
 ### SQL Server Components  
-If you are installing Microsoft SQL Server for use with [!INCLUDE[navnow](includes/navnow_md.md)], then install the following components:  
+If you are installing Microsoft SQL Server for use with [!INCLUDE[prodshort](../developer/includes/prodshort.md)], then install the following components:  
 -   Database Engine Services  
 -   Client Tools Connectivity  
 -   Management Tools - Complete  
 
 ### Setup Options for Microsoft SQL Server  
-When you are running Microsoft SQL Server Setup, you must provide additional information. Your responses can affect how you use SQL Server with [!INCLUDE[navnow_md](includes/navnow_md.md)].  
+When you are running Microsoft SQL Server Setup, you must provide additional information. Your responses can affect how you use SQL Server with [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 #### TempDB database configuration
 For servers with less than 8 cores, create as many data files for the TempDB database as the number of cores. For servers with more than 8 cores, start with 8 data files, and increment with 4 files at a time, if needed.
@@ -64,7 +61,7 @@ Both advanced server configuration options and database scoped configurations ca
 >   If you are running SQL Server Enterprise Edition, index maintenance can be done in parallel. If you run maintenance jobs to do this work in off-peak hours, you might want to set `MAXDOP` back to 0 while running these jobs. On SQL Server 2016, it is possible to set MAXDOP directly in the Rebuild Index Task wizard.
 
 #### Instance Configuration  
- If you plan on installing the [!INCLUDE[navnow](includes/navnow_md.md)] Demo database, and you want [!INCLUDE[navnow](includes/navnow_md.md)] Setup to use an already installed version of SQL Server \(and not to install SQL Server Express\), you must create a SQL Server instance named **NAVDEMO** in SQL Server before you run Setup. Otherwise, Setup will install SQL Server Express automatically, even if there is a valid version of SQL Server already on the computer. If you do not plan to install the Demo database, or if you have no objection to using SQL Server Express, you are free to use the **default instance** and **Instance ID** on the **Instance Configuration** page, or to specify any instance name.  
+ If you plan on installing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Demo database, and you want [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup to use an already installed version of SQL Server \(and not to install SQL Server Express\), you must create a SQL Server instance named **NAVDEMO** in SQL Server before you run Setup. Otherwise, Setup will install SQL Server Express automatically, even if there is a valid version of SQL Server already on the computer. If you do not plan to install the Demo database, or if you have no objection to using SQL Server Express, you are free to use the **default instance** and **Instance ID** on the **Instance Configuration** page, or to specify any instance name.  
 
 ### Database Engine Service
 Each SQL Server instance is run by its own windows service. The following two things are important to configure for these services
@@ -75,19 +72,19 @@ Enable trace flags 1117 and 1118 as startup options for SQL Server 2014. For SQL
  Startup options can be set by using SQL Server Configuration Manager, see the SQL Server documentation for details.
 
 #### Service account
-We recommend that you use dedicated domain user accounts for the Windows services running your [!INCLUDE[nav_server](includes/nav_server_md.md)] instances and your SQL Server instances, instead of a Local System account or the Network Service account.  
+We recommend that you use dedicated domain user accounts for the Windows services running your [!INCLUDE[server](../developer/includes/server.md)] instances and your SQL Server instances, instead of a Local System account or the Network Service account.  
 
-The [!INCLUDE[nav_server](includes/nav_server_md.md)] account must have privileges on the SQL Server instances and on the Dynamics NAV database(s). See [Provisioning the Microsoft Dynamics NAV Server Account](Provisioning-the-microsoft-dynamics-nav-server-account.md) for details.
+The [!INCLUDE[server](../developer/includes/server.md)] account must have privileges on the SQL Server instances and on the Dynamics NAV database(s). See [Provisioning the Server Service Account](provision-server-account.md) for details.
 
 For installations on SQL Server 2014, consider adding the service account for then SQL Server engine to the **Perform Volume Maintenance Tasks** security policy. For SQL Server 2016, it is possible to do this from the installer.
 
 ### Database configurations
 After Dynamics NAV has been installed, it is important to check a few settings on the Dynamics NAV database(s). This is especially important for databases, which have been upgraded from previous versions of SQL Server.
 
-#### Statistics ####
-The databases used by Dynamics NAV should have set the options AUTO_CREATE_STATISTICS and AUTO_UPDATE_STATISTICS to the value ON (this is the default behavior and should not be changed)
+#### Statistics
+The databases used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] should have set the options AUTO_CREATE_STATISTICS and AUTO_UPDATE_STATISTICS to the value ON (this is the default behavior and should not be changed)
 
- SQL Server (2014 and earlier) uses a threshold based on the percent of rows changed before triggering an update of the statistics for a table regardless of the number of rows in the table. It is possible to change this behaviour by setting trace flag 2371 as a startup option for the instance. See Knowledge Base article ID 2754171, https://support.microsoft.com/en-gb/help/2754171/controlling-autostat-auto-update-statistics-behavior-in-sql-server for more information about when to set this trace flag.
+SQL Server (2014 and earlier) uses a threshold based on the percent of rows changed before triggering an update of the statistics for a table regardless of the number of rows in the table. It is possible to change this behaviour by setting trace flag 2371 as a startup option for the instance. See Knowledge Base article ID 2754171, https://support.microsoft.com/en-gb/help/2754171/controlling-autostat-auto-update-statistics-behavior-in-sql-server for more information about when to set this trace flag.
 
  SQL Server (starting with 2016 and under the compatibility level 130) uses a threshold that adjusts according to the number of rows in the table. With this change, statistics on large tables will be updated more often.
 
@@ -98,22 +95,22 @@ The databases used by Dynamics NAV should have set the options AUTO_CREATE_STATI
 
 
 ### Backup
-Do remember to setup backup of both system and user databases. Remember also to test restore procedures regularly.
+Remember to setup backup of both system and user databases. Remember also to test restore procedures regularly.
 
 ## Using Microsoft Azure SQL Database  
- You can deploy a [!INCLUDE[navnow](includes/navnow_md.md)] database to Azure SQL Database. Azure SQL Database is a cloud service that provides data storage as a part of the Azure Services Platform.  
+You can deploy a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to Azure SQL Database. Azure SQL Database is a cloud service that provides data storage as a part of the Azure Services Platform.  
 
- To optimize performance, we recommend that the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance that connects to the database is also deployed on a virtual machine in Azure. Additionally, the virtual machine and SQL Database must be in the same Azure region.  
+ To optimize performance, we recommend that the [!INCLUDE[server](../developer/includes/server.md)] instance that connects to the database is also deployed on a virtual machine in Azure. Additionally, the virtual machine and SQL Database must be in the same Azure region.  
 
- For development and maintenance work on [!INCLUDE[navnow](includes/navnow_md.md)] applications, if the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] is installed on the same virtual machine in Azure as the [!INCLUDE[nav_server](includes/nav_server_md.md)], then you can connect to the Azure SQL database from the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)].  
+ For development and maintenance work on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] applications, if the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] is installed on the same virtual machine in Azure as the [!INCLUDE[server](../developer/includes/server.md)], then you can connect to the Azure SQL database from the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].  
 
- For more information, see [How to: Deploy a Microsoft Dynamics NAV Database to Azure SQL Database](How-to--Deploy-a-Microsoft-Dynamics-NAV-Database-to-Azure-SQL-Database.md).  
+ For more information, see [Deploying a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md).  
 
-## Data Encryption Between [!INCLUDE[nav_server](includes/nav_server_md.md)] and SQL Server  
- When SQL Server and [!INCLUDE[nav_server](includes/nav_server_md.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](http://go.microsoft.com/fwlink/?LinkId=147732), which is part of SQL Server 2008 Books Online in MSDN library.  
+## Data Encryption Between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server  
+ When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](http://go.microsoft.com/fwlink/?LinkId=147732), which is part of SQL Server 2008 Books Online in MSDN library.  
 
 ## See Also  
- [Data Access](Data-Access.md)   
+ [Data Access](../administration/optimize-sql-data-access.md)    
  [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)   
  [Troubleshooting: SQL Server Connection Problems](Troubleshooting--SQL-Server-Connection-Problems.md)   
  [Deployment](Deployment.md)  

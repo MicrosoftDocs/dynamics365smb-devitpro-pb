@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 08/29/2018
+ms.date: 08/31/2018
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
@@ -34,6 +34,10 @@ For more information, see [Learn about automatic SQL Database backups](/azure/sq
 ## Can I request a copy of the backup of my production database?
 
 No, this is not currently supported.
+
+## Can I get training in Business Central?
+
+Yes, you can. As a partner you have access to the Dynamics Learning Portal, where you can find eLearning courses for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see the [Microsoft Dynamics 365 training page](/dynamics365/get-started/training/index#dynamics-365-partners).  
 
 ## See Also
 
