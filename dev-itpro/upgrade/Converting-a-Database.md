@@ -10,11 +10,11 @@ ms.author: jswymer
 ms.prod: "dynamics365-business-central"
 author: jswymer
 ---
-# Converting a Database to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] - Technical Upgrade
+# Converting a Database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] - Technical Upgrade
 
 [See print-friendly quick reference](technical-upgrade-checklist.md)
 
-This article describes how to convert a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database from one of the following versions to [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]:
+This article describes how to convert a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database from one of the following versions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
 
 -   [!INCLUDE[nav7long](../developer/includes/nav7long_md.md)]
 -   [!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]
@@ -23,10 +23,10 @@ This article describes how to convert a [!INCLUDE[navnow](../developer/includes/
 -   [!INCLUDE[nav2017](../developer/includes/nav2017.md)] 
 -   Dynamics NAV 2018 
 
-This article can also be used to update you current [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database to the latest cumulative update. 
+This article can also be used to update you current [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to the latest cumulative update. 
 
 ## About database conversion
-Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
+Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
 
 <!--You typically convert a database, as described in this article, when you want to upgrade an existing [!INCLUDE[nav2017](../developer/includes/nav2017.md)] database to a new platform version that does not include application changes. A database conversion is typically what is required for a cumulative update.
 
@@ -47,16 +47,16 @@ With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Appli
 2.    Go to [Codeunit 1 Replacement](codeunit1-replacement.md), and make a .txt file that includes the code for codeunit 1 replacement. You will use this file later.
 ## Task 1: Preparing the Old Database 
  
-To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] database, the first task is to back up the old database and then prepare to convert it.
+To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, the first task is to back up the old database and then prepare to convert it.
 
 > [!NOTE]  
->  Do not perform this task if you are converting the database from one cumulative update of [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] to the next cumulative update. In this case, you only have to complete task 2.
+>  Do not perform this task if you are converting the database from one cumulative update of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to the next cumulative update. In this case, you only have to complete task 2.
 
 #### To prepare the old database  
 
 1. <a name="convertv1extensions"></a>Convert V1 Extensions to V2 extensions
 
-    [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
+    [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
 
 2.  Make a copy of the old database or create full database backup. 
 
@@ -90,11 +90,11 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 4.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->database.  
 
-     For more information, see [How to: Open Databases](How-to--Open-Databases.md).  
+     For more information, see [Open Databases](../cside/open-database.md).  
 
 5.  In Object Designer, verify that all objects are compiled and no objects are locked.  
 
-     For more information about compiling objects, see [Compiling Objects](compiling-objects.md).
+     For more information about compiling objects, see [Compiling Objects](../cside/compiling-objects.md).
 
      If one or more objects are locked, the conversion process cannot update the database version number. As a result, the conversion does not complete. For more information, see [Locking and Unlocking Objects](Locking-and-Unlocking-Objects.md).
 
@@ -104,13 +104,13 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
 8.  Run the schema synchronization with validation to synchronize the database schema changes.  
 
-    For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).
+    For more information, see [Synchronizing the Tenant Database and Application Database](../adminsitration/synchronize-tenant-database-and application-database.md).
 
     <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?>
 
-9.  <a name="uploadlicense"></a>Upload the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Partner license to the database.  
+9.  <a name="uploadlicense"></a>Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Partner license to the database.  
 
-    For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
+    For more information, see [Uploading a License File for a Specific Database](../cside/upload-license-file.md#UploadtoDatabase).  
 
     > [!IMPORTANT]  
     >  The license that you upload must be a developer license. During the conversion, the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] will convert the report objects that are stored in the old database to the RDL format.  
@@ -127,7 +127,7 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 
     You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)].
 
-    For information about the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], see [How to: Start, Stop, Restart, or Remove a Dynamics NAV Server Instance](How-to--Start--Stop--Restart--or-Remove-a-Microsoft-Dynamics-NAV-Server-Instance.md).
+    For information about the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], see [How to: Start, Stop, Restart, or Remove a Dynamics NAV Server Instance](dynamics-nav/How-to--Start--Stop--Restart--or-Remove-a-Microsoft-Dynamics-NAV-Server-Instance.md) in the Dev/IT Pro Help for [!INCLUDE[navnow](../developer/includes/navnow_md.md)].
 
     To use the Set-NAVServerInstance cmdlet, run the following command:
     ```
@@ -146,10 +146,10 @@ To convert the old database to a [!INCLUDE[d365_bus_cent_short_md.md](../develop
 (Optional) Before you start the following procedure, you can uninstall the old version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]. When you uninstall [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], the database is still attached to the instance of SQL Server, which you can verify using SQL Server Management Studio.-->
 
 ## Task 2: Run Technical Upgrade on the Old Database  
-Next, you will convert the old database so that it can be used with [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].
+Next, you will convert the old database so that it can be used with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 > [!TIP]  
->  If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[nav_dev_shell](../developer/includes/nav_dev_shell_md.md)].  
+>  If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[devshell](../developer/includes/devshell.md)].  
 
 ### To convert the database  
 
@@ -157,9 +157,9 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
     This membership is only required for converting the database, and can be removed afterwards. 
 
-2. Install [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)].  
+2. Install [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
-    Run the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] Setup, and install the following components as a minimum:
+    Run the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup, and install the following components as a minimum:
     -  Server
     -  SQL Server Database Components
     -  Administration Tool
@@ -174,7 +174,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
     
     -   Otherwise, connect to the old application database that you prepared in the previous task, and then go to the next step.
     
-    For more information, see [How to: Open Databases](How-to--Open-Databases.md).
+    For more information, see [Open Databases](../cside/open-database.md).
 
 4.  In the dialog box that appears, read the instructions about converting the database carefully because this action cannot be reversed. When you are ready, choose the **OK** button, and then choose the **OK** button to confirm that you want to convert the database.  
 
@@ -182,27 +182,27 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 5.  When you are notified that the conversion was successful, choose the **OK** button.
 
-6.  <a name="controladdins"></a>If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)].   
+6.  <a name="controladdins"></a>If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)].   
 
      For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Add-ins folder.
 
 7.  <a name="connectserver"></a>Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database. 
 
-    Use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
+    Use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
 
     > [!IMPORTANT]
-    > The service account that is used by the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database on SQL Server or Azure SQL Database.
+    > The service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database on SQL Server or Azure SQL Database.
 
     For more information, see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).  
      
-8.  Go to the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)], and set it to use the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that connects to the database.  
+8.  Go to the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)], and set it to use the [!INCLUDE[server](../developer/includes/server.md)] instance that connects to the database.  
 
      For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md). 
 
 9.    Import the codeunit 1 replacement text file you created.
 10.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
 
-    For more information, see [Compiling Objects](compiling-objects.md).
+    For more information, see [Compiling Objects](../cside/compiling-objects.md).
 
 11. <a name="fixerrors"></a>Fix compilation errors.  
 
@@ -248,7 +248,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 15.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
 
-        For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md). 
+        For more information, see [Synchronizing the Tenant Database and Application Database](../adminsitration/synchronize-tenant-database-and application-database.md). 
 
 16.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
@@ -260,13 +260,13 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[d3
 
 18. Upload the customer license to the converted database.  
 
-    For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
+    For more information, see [Uploading a License File for a Specific Database](../cside/upload-license-file.md#UploadtoDatabase).  
 
-    You have now completed the conversion of the database to be accessed from [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)]. To test the converted database, you can connect it to the [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.
+    You have now completed the conversion of the database to be accessed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To test the converted database, you can connect it to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.
 19. Transition the custom code in the old codeunit 1 to use the new system event implentation.   
 
 ## Database and Windows collations  
-Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[d365_bus_cent_short_md.md](../developer/includes/d365_bus_cent_short_md.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](http://go.microsoft.com/fwlink/?LinkID=247971).  
+Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](http://go.microsoft.com/fwlink/?LinkID=247971).  
 
 ## See Also  
 [Upgrading the Application Code](Upgrading-the-Application-Code.md)   

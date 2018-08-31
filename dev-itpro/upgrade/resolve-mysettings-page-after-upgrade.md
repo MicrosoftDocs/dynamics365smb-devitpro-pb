@@ -7,17 +7,14 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 6ea75b39-cf7d-4c88-868b-86fa0be2426b
-caps.latest.revision: 4
-manager: edupont
 ---
 # Resolving My Settings Page Implementation After a Database Conversion
-When you convert a [!INCLUDE[navcorfu](includes/navcorfu_md.md)] database, the My Settings page in the  [!INCLUDE[nav_web_md](includes/nav_web_md.md)] will not work properly. This article explains how to resolve the problem.
+When you convert a [!INCLUDE[navcorfu](includes/navcorfu_md.md)] database, the My Settings page in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] will not work properly. This article explains how to resolve the problem.
 
 
-1.  Modify Codeunit 1 Application Management:
+1.  Modify Codeunit 40 LogInManagement:
 
-    1.  In the C/AL code, add a global function that has the following properties:
+    1.  In the AL code, add a global function that has the following properties:
 
         <table>
         <tr>
@@ -43,7 +40,7 @@ When you convert a [!INCLUDE[navcorfu](includes/navcorfu_md.md)] database, the M
         ```
 2. Modify page **9176 My Settings**:
 
-    In C/AL code, replace the code on the local function **GetTimeZone** with the following code.
+    In AL code, replace the code on the local function **GetTimeZone** with the following code.
     ```
     TimeZone.SETRANGE(ID,TimeZoneID);
     IF TimeZone.FINDFIRST THEN
