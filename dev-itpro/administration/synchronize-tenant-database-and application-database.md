@@ -9,31 +9,31 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ---
 # Synchronizing the Tenant Database with the Application Database
-This topic describes how to synchronize the business data \(tenant\) database schema with the application database in either a single tenant (non-multitenant) or multitenant deployment environment. You can synchronize the database from the [!INCLUDE[nav_dev_long](´../developer/includes/nav_dev_long_md.md)] or by using the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet in the Dynamics NAV Administration Shell.
+This topic describes how to synchronize the business data \(tenant\) database schema with the application database in either a single tenant (non-multitenant) or multitenant deployment environment. You can synchronize the database from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or by using the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet in the Dynamics NAV Administration Shell.
 
 ## Synchronize database from the development environment
 
-1.  Open [!INCLUDE[nav_dev_short](´../developer/includes/nav_dev_short_md.md)] as an administrator.
+1.  Open [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] as an administrator.
 
 2.  On the **Tools** menu, choose **Sync. Schema For All Tables**, and then choose **With Validation** and follow the schema synchronization instructions.
 
 ## Synchronize database with the Sync-NAVTenant cmdlet  
 
-1.  On the computer that is running the [!INCLUDE[server](´../developer/includes/server.md)], run **[!INCLUDE[adminshell](´../developer/includes/adminshell.md)] ** as an Administrator.  
+1.  On the computer that is running the [!INCLUDE[server](../developer/includes/server.md)], run **[!INCLUDE[adminshell](../developer/includes/adminshell.md)] ** as an Administrator.  
 
-    1.  Choose **Start**, in the **Search** box, type **[!INCLUDE[adminshell](´../developer/includes/adminshell.md)]**.  
+    1.  Choose **Start**, in the **Search** box, type **[!INCLUDE[adminshell](../developer/includes/adminshell.md)]**.  
 
     2.  Right-click the related link, and then choose **Run as Administrator**.  
 
 2.  At the command prompt, type one of the following commands:  
 
-    -   If the [!INCLUDE[server](´../developer/includes/server.md)] instance is not configured to be a multitenant instance:  
+    -   If the [!INCLUDE[server](../developer/includes/server.md)] instance is not configured to be a multitenant instance:  
 
         ```  
         Sync-NAVTenant –ServerInstance <ServerInstanceName>  
         ```  
 
-    -   If the [!INCLUDE[server](´../developer/includes/server.md)] instance is configured to be a multitenant instance:  
+    -   If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured to be a multitenant instance:  
 
         ```  
         Sync-NAVTenant –ServerInstance ServerInstanceName -Tenant TenantId  
@@ -44,11 +44,11 @@ This topic describes how to synchronize the business data \(tenant\) database sc
      <table>
      <tr>
      <th>Parameter</th>
-     <th>[!INCLUDE[bp_tabledescription](´../developer/includes/bp_tabledescription_md.md)]</th>
+     <th>[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]</th>
      </tr>
      <tr>
      <td>NAVServerInstance</td>
-     <td>Specifies the [!INCLUDE[server](´../developer/includes/server.md)] instance.</td>
+     <td>Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance.</td>
      </tr>
      <tr>
      <td>TenantId</td>
