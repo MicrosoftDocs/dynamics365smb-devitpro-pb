@@ -21,6 +21,8 @@
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md) 
 #### [Configure Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
+### Database
+### [Deploying to Azure SQL Database](/deployment/deploy-database-azure-sql-database.md)
 ## [Embed App](deployment/embed-app-overview.md)
 ### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)   
 ### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)

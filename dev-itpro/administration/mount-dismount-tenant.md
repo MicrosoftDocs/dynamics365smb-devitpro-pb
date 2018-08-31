@@ -1,6 +1,5 @@
 ---
 title: "How to: Mount or Dismount a Tenant on a Microsoft Dynamics Server Instance"
-author: edupont04
 ms.custom: na
 ms.date: 10/14/2016
 ms.reviewer: na
@@ -8,10 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 2d7c114d-381b-4270-9bed-9b1930627df4
-caps.latest.revision: 17
 ---
-# How to: Mount or Dismount a Tenant on a Microsoft Dynamics Server Instance
+# Mount or Dismount a Tenant on a Microsoft Dynamics Server Instance
 If a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance is configured for multitenancy, then you can mount and dismount tenant databases by using the [!INCLUDE[nav_admin](includes/nav_admin_md.md)] or **Mount-NAVTenant** or **Dismount-NAVTenant** cmdlets in [!INCLUDE[nav_shell](includes/nav_shell_md.md)].  
 
  Mounting a tenant by using the [!INCLUDE[nav_admin](includes/nav_admin_md.md)] requires that you have a running [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. This is not required when you use the [!INCLUDE[nav_shell](includes/nav_shell_md.md)]. With the **Mount-NAVTenant**, you can mount a tenant by either specifying the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance, if it is running, or the application database.  
