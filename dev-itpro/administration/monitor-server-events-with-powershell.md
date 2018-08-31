@@ -23,7 +23,7 @@ For more information about installing and getting started with Windows PowerShel
   
 1.  If you want to view events in a **Debug** log, ensure that the log is enabled. The **Admin** and **Operational** logs are enabled by default.  
   
-     For information, see [To enable the Microsoft Dynamics NAV Server Debug Log from Windows PowerShell](Monitoring-Microsoft-Dynamics-NAV-Server-Events-with-PowerShell.md#EnableLog).  
+     For information, see [To enable the Business Central Server Debug Log from Windows PowerShell](monitor-server-events-with-powershell.md#EnableLog).  
   
 2.  On the computer that is running [!INCLUDE[server](../developer/includes/server.md)], start Window PowerShell.  
   
@@ -102,5 +102,5 @@ for($i = 0; $i -lt  $events.Length; $i+=2)
  [Monitoring Business Central Server Events](monitor-server-events.md)    
  [Business Central Server Trace Events](server-trace-events.md)   
  [Monitoring Business Central Server](monitor-server.md)   
- [Monitoring Microsoft Dynamics NAV Server Using Performance Counters](Monitoring-Microsoft-Dynamics-NAV-Server-Using-Performance-Counters.md)  
+ [Monitoring Microsoft Dynamics NAV Server Using Performance Counters](monitor-server-using-performance-counters.md)  
  [Event Viewer](http://go.microsoft.com/fwlink/?LinkID=314067)

@@ -10,7 +10,7 @@ ms.topic: article
 ms.author: jswymer
 ms.prod: "dynamics-nav-2018"
 ---
-# Upgrading the Data to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)]
+# Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 This topic describes the tasks required for upgrading the following database versions to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]:
 
@@ -64,6 +64,10 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 > [!NOTE]
 >If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete.
 
+6. Prepare for codeunit 1 removal
+
+    With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, if you have any custom code in codeunit 1, export the existing codeunit 1 as a .fob or .txt file. 
+
 ## Task 1: Prepare the old database
 
 1. Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database to build all application objects.  
@@ -76,7 +80,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
 3.  Synchronize the database schema by using the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or Dynamics NAV Administration Shell that matches the old database.  
 
-    For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).
+    For more information, see [Synchronizing the Tenant Database and Application Database](../adminsitration/synchronize-tenant-database-and application-database.md).
 
 ##  <a name="SQLBackup"></a> Task 2: Create a full SQL backup of the old database on SQL Server  
  You must create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
@@ -131,7 +135,7 @@ Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that ma
 ##  <a name="UploadLicense"></a> Task 4: Upload the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] license to the old database  
 By using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database, upload the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] license to the database.
 
-For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
+For more information, see [[Uploading a License File for a Specific Database](../cside/upload-license-file.md#UploadtoDatabase).  
 
 ##  <a name="DeleteObjects"></a> Task 5: Delete all objects except tables from the old database   
 In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] version that matches the database, open the old database, open Object Designer, select all objects except tables, and then choose **Delete**.
@@ -217,7 +221,7 @@ For more information, see [How to: Connect a Microsoft Dynamics NAV Server Insta
 2. Use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or finsql.exe to compile all objects. This includes the imported application objects, data tables, and system tables. 
 
     > [!IMPORTANT]
-    >Choose to run schema synchronization later. For example, in Object Designer, choose **Tools**, choose **Compile**, set the **Synchronize Schema** option to **Later**, and then choose **OK**. For more information, see [Compiling Objects](compiling-objects.md).
+    >Choose to run schema synchronization later. For example, in Object Designer, choose **Tools**, choose **Compile**, set the **Synchronize Schema** option to **Later**, and then choose **OK**. For more information, see [Compiling Objects](../cside/compiling-objects.md).
 
 3. ([!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] and earlier only) If you get errors on the following table objects, use the Object Designer to delete the objects because they are no longer used.
 
@@ -257,7 +261,7 @@ efejfefjejf
 ##  <a name="RunSync1"></a> Task 12: Run the schema synchronization on the imported objects
 Synchronize the database schema with validation. You can run the schema synchronization from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
-For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).
+For more information, see [Synchronizing the Tenant Database and Application Database](../adminsitration/synchronize-tenant-database-and application-database.md).
 
 ##  <a name="RunStartNavUpgrade"></a> Task 13: Run the data upgrade process  
 A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and upgrade tables, to migrate business data from the old table structure to the new table structure. You can start the data upgrade from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
@@ -450,7 +454,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
 ## Task 18: Update the Dynamics NAV Web client configuration file (navsettings.json)
 If you have installed the [!INCLUDE[nav_web_server_md](../developer/includes/nav_web_server_md.md)], populate the navsettings.json file for the [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance with the settings of the old web.config file.
 
-For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modifying the NavSettings.json File](Configuring-Microsoft-Dynamics-NAV-Web-Client-by-Modifying-the-Web.config-File.md).  
+For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modifying the NavSettings.json File](configure-web-server.md.md).  
 
 <!-- deprecated ##  <a name="UploadEncryptionKeys"></a> Task 16: Import Payment Services and Data Encryption Key \(Optional\)  
 
@@ -467,7 +471,9 @@ For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modi
 
 The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-reports-for-search.md).
 
-##  <a name="DeleteUpgCodeunits"></a> Task 20: Delete the upgrade objects
+## Task 20. Transition the custom code in the old codeunit 1 to use the new system event implentation. 
+
+##  <a name="DeleteUpgCodeunits"></a> Task 21: Delete the upgrade objects
 At this point, you have upgraded the database to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
 
 When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  

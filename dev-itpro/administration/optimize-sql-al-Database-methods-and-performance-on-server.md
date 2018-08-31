@@ -99,7 +99,7 @@ IF Customer.FINDSET() THEN REPEAT
 UNTIL Customer.NEXT = 0;   
 ```  
   
- In the previous example, an extra call to CALCFIELDS still must be issued for the code to be able to check the value of Customer.Balance. In [!INCLUDE[prodlong](../developer/includes/prodlong.md)], you can optimize this further by using the new **SETAUTOCALCFIELDS** function.  
+ In the previous example, an extra call to CALCFIELDS still must be issued for the code to be able to check the value of Customer.Balance. In [!INCLUDE[prodlong](../developer/includes/prodlong.md)], you can optimize this further by using the new **SETAUTOCALCFIELDS** method.  
   
 ```  
 Customer.SETFILTER(Customer.Balance,’>%1’, LargeCredit);   
@@ -125,18 +125,18 @@ UNTIL Customer.NEXT = 0;
 ## See Also  
  [Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
  [Bulk Inserts](optimize-sql-bulk-inserts.md)   
- [GET Method \(Record\)](GET-Method--Record-.md)   
- [FIND Method \(Record\)](FIND-Method--Record-.md)   
- [NEXT Method \(Record\)](NEXT-Method--Record-.md)   
- [FINDSET Method \(Record\)](FINDSET-Method--Record-.md)   
- [FINDFIRST Method \(Record\)](FINDFIRST-Method--Record-.md)   
- [FINDLAST Method \(Record\)](FINDLAST-Method--Record-.md)   
- [CALCFIELDS Method \(Record\)](CALCFIELDS-Method--Record-.md)   
- [CALCFIELD Method \(FieldRef\)](CALCFIELD-Method--FieldRef-.md)   
- [CALCSUMS Method \(Record\)](CALCSUMS-Method--Record-.md)   
- [CALCSUM Method \(FieldRef\)](CALCSUM-Method--FieldRef-.md)   
- [SETAUTOCALCFIELDS Method \(Record\)](SETAUTOCALCFIELDS-Method--Record-.md)   
- [INSERT Method \(Record\)](INSERT-Method--Record-.md)   
- [MODIFY Method \(Record\)](MODIFY-Method--Record-.md)   
- [DELETE Method \(Record\)](DELETE-Method--Record-.md)   
- [LOCKTABLE Method \(Record\)](LOCKTABLE-Method--Record-.md)
+ [GET Method \(Record\)](../developer/methods/devenv-GET-Method-Record.md)   
+ [FIND Method \(Record\)](../developer/methods/devenv-FIND-Method-Record.md)   
+ [NEXT Method \(Record\)](../developer/methods/devenv-NEXT-Method-Record.md)   
+ [FINDSET Method \(Record\)](../developer/methods/devenv-FINDSET-Method-Record.md)   
+ [FINDFIRST Method \(Record\)](../developer/methods/devenv-FINDFIRST-Method-Record.md)   
+ [FINDLAST Method \(Record\)](../developer/methods/devenv-FINDLAST-Method-Record.md)   
+ [CALCFIELDS Method \(Record\)](../developer/methods/devenv-CALCFIELDS-Method-Record.md)   
+ [CALCFIELD Method \(FieldRef\)](../developer/methods/devenv-CALCFIELD-Method-FieldRef.md)   
+ [CALCSUMS Method \(Record\)](../developer/methods/devenv-CALCSUMS-Method-Record.md)   
+ [CALCSUM Method \(FieldRef\)](../developer/methods/devenv-CALCSUM-Method-FieldRef.md)   
+ [SETAUTOCALCFIELDS Method \(Record\)](../developer/methods/devenv-SETAUTOCALCFIELDS-Method-Record.md)   
+ [INSERT Method \(Record\)](../developer/methods/devenv-INSERT-Method-Record.md)   
+ [MODIFY Method \(Record\)](../developer/methods/devenv-MODIFY-Method-Record.md)   
+ [DELETE Method \(Record\)](../developer/methods/devenv-DELETE-Method-Record.md)   
+ [LOCKTABLE Method \(Record\)](../developer/methods/devenv-LOCKTABLE-Method-Record.md)

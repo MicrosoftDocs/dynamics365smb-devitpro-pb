@@ -58,7 +58,7 @@ The following topic lists properties that apply to the [Table Object](../devenv-
 |[Numeric Property](devenv-numeric-property.md)||<ul><li>Code field</li><li>OemCode field</li><li>OemText field</li><li>Text field</li></ul>|
 |[ObsoleteReason](devenv-obsoletereason-property.md)||<ul><li>Table object</li><li>Table keys</li><li>Text field</li></ul>|
 |[ObsoleteState](devenv-obsoletestate-property.md)||<ul><li>Table object</li><li>Table keys</li><li>Text field</li></ul>|
-|[OptionCaptionML Property](devenv-optioncaptionml-property.md)|X|<ul><li>Option field</li></ul>|
+|[OptionCaption Property](devenv-optioncaption-property.md)|X|<ul><li>Option field</li></ul>|
 |[OptionMembers Property](devenv-optionmembers-property.md)||<ul><li>Option field</li></ul>|
 |[PasteIsValid Property](devenv-pasteisvalid-property.md)||<ul><li>Table object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)||<ul><li>Table object</li></ul>|

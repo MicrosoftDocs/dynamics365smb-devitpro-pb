@@ -105,7 +105,7 @@ The following table lists the AL function tracing events.
 |ID|Event \(task/opcode\)|What is traced|  
 |--------|----------------------------|--------------------|  
 |400|ExecuteALFunction/Start|AL functions that are called.| |401|ExecuteALFunction/Stop|AL functions that are called.|  
-|402|ExecuteALFunctionFailed|Errors that occur when executing AL functions. The errors can be caused by exceptions or [ERROR Function \(Dialog\)](ERROR-Function--Dialog-.md) calls.|  
+|402|ExecuteALFunctionFailed|Errors that occur when executing AL functions. The errors can be caused by exceptions or [ERROR Function \(Dialog\)](../developer/methods/devenv-ERROR-method-Dialog.md) calls.|  
 |403|ExecuteALFunction|AL statements that are executed.<br /><br /> **Important:** This trace event is only traced when the [!INCLUDE[server](../developer/includes/server.md)] is configured to full AL function tracing.|  
 
 ## Telemetry Trace Events

@@ -60,7 +60,7 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |Automated Data Capture System|A system that tracks the movement of items in a warehouse.||
 |ClickOnce Installer Tools|Tools for implementing ClickOnce installation for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].||
 |Microsoft Excel Add-in|A component that enables users to export data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to Excel.||
-
+|NAS Service|A server component that executes business logic without a user interface or user interaction. NAS services in [!INCLUDE[server](../developer/includes/server.md)] support applications such as Microsoft Office Outlook Integration and the NAV Job Queue|Instead of using NAS services, we recommend that you use the Task Scheduler (see [Task Scheduler](../developer/devenv-task-scheduler.md). If you decide to use NAS, and want to read more about its configuration, see [Configuring NAS Services](dynamics-nav/configuring-nas-services.md) in the Dev and IT Pro Help for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]|
 <!--
 1.  The [!INCLUDE[rtc](../developer/includes/rtc_md.md)] is the *client tier*, which includes a [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] and a [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
 
@@ -94,8 +94,8 @@ You can have multiple instances of any of the core components in a production en
 |Component|Purpose|  
 |---------------|-------------|  
 |[Microsoft Dynamics NAV Help Server](Microsoft-Dynamics-NAV-Help-Server.md)|A website with the Help content for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the languages that your version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes. You can deploy a single Help Server for all users, or customer-specific Help Servers, depending on your requirements.|  
-|Web Server Components. See [How to: Install the Web Server Components](How-to--Install-the-Web-Server-Components.md).|The components that are needed to enable [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]s to connect with a browser.|  
-|[Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md)|A tool for configuring and managing [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] sites.|  
+|Web Server Components. See install web client.|The components that are needed to enable [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]s to connect with a browser.|  
+|[Microsoft Dynamics NAV Server Administration Tool]|A tool for configuring and managing [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] sites.|  
 |[Development Environment (C/SIDE)](Development-Environment--C-SIDE-.md)|The Development Environment for creating and modifying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] applications in C/AL.|  
 |[Microsoft Office Outlook Add-In](Microsoft-Office-Outlook-Add-In.md)|A component for synchronizing data, such as to-dos, contacts, and tasks, between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Outlook.|  
 |[Automated Data Capture System](Automated-Data-Capture-System.md)|A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tool for accurately capturing data for inbound, outbound, and internal documents, primarily in connection with warehouse activities. With ADCS, company employees use handheld devices and radio frequency technology to continuously validate warehouse inventories.|  

@@ -8,8 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-manager: edupont
-ms.date: 08/23/2018
+ms.date: 08/29/2018
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-premises
 
@@ -25,10 +24,10 @@ The following sections list the minimum hardware and software requirements to in
 
 |||  
 |-|-|  
-|Supported browsers|<ul><li>Microsoft Edge.</li><li>Internet Explorer 11.</li><li>Google Chrome 61.0 for Windows.</li><li>Mozilla Firefox 55.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul><br><br>Cookies and JavaScript must be enabled in the browser.|  
+|Supported browsers|<ul><li>Microsoft Edge.</li><li>Internet Explorer 11.</li><li>Google Chrome 69.0 for Windows.</li><li>Mozilla Firefox 62.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul><br><br>Cookies and JavaScript must be enabled in the browser.|  
 |Business inbox in Outlook|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
 |Sending data to Excel|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
-|Editing in Excel using the Excel Add-in |<ul><li>Excel 2016 or Excel Online.<br /><br />For more information, see [Setting up the Excel Add-In for Editing Dynamics NAV Data](/dynamics-nav/configuring-dynamics-nav-excel-addin).</li></ul>|  
+|Editing in Excel using the Excel Add-in |<ul><li>Excel 2016 or Excel Online.<br /><br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
 |SharePoint Online links|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
 |Printing reports to Excel or Word|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
 |Additional information|If you experience problems using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], you can try to turn off browser tools, such as translator tools that may run in the background.|  
@@ -42,7 +41,12 @@ The following sections list the minimum hardware and software requirements to in
 |Supported browsers|The following desktop browsers are supported:<ul><li> Microsoft Edge</li><li>Internet Explorer 11 \(build 11.0.9600.17239\) for Windows 10.</li><li>Google Chrome 61.0 for Windows.</li><li>Mozilla Firefox 55.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul><br><br>Cookies and JavaScript must be enabled in the browser. |  
 
 ###  <a name="DynNAVApp"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Universal App Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)]. For the latest information, see [Business Central for Windows](http://go.microsoft.com/fwlink/?LinkId=509974), [Business Central for iPad and iPhone](http://go.microsoft.com/fwlink/?LinkId=509975), and [Business Central for Android tablet and Android phone](http://go.microsoft.com/fwlink/?LinkId=509976).  
+ The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)].  
+
+For the latest information, see the app in the Windows Store, App Store, or Google Play.  
+[![Windows Store](../developer/media/install-mobile-app/windowsstore.png)](http://go.microsoft.com/fwlink/?LinkId=734848)
+[![App Store](../developer/media/install-mobile-app/appstore.png)](http://go.microsoft.com/fwlink/?LinkId=734847) [![Google Play](../developer/media/install-mobile-app/googleplay.png)](http://go.microsoft.com/fwlink/?LinkId=734849)  
+
 
 |||  
 |-|-|  
@@ -61,11 +65,11 @@ The following sections list the minimum hardware and software requirements to in
 |Reports|<ul><li>For editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016 or Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul><li>For editing Word layouts:<ul><li>Microsoft Word 2016 or later</li></ul></ul>|  
 |Outlook client integration and mail merge|<ul><li>Microsoft Office 365, Microsoft Office 2016.</li></ul>|  
 |Import and export with Microsoft Excel and Office XML, and SharePoint links|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|  
-|Editing in Excel using the Excel Add-in |<ul><li>Excel 2016.<br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  
+|Editing in Excel using the Excel Add-in |<ul><li>Excel 2016.<br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data). For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, see [Setting up the Excel Add-In for Editing Dynamics NAV Data](/dynamics-nav/configuring-dynamics-nav-excel-addin) since the same steps apply to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises.</li></ul>|  
 |OneNote integration|<ul><li>Microsoft Office 2016 or Microsoft Office 365.</li></ul>|
-|Email logging|<ul><li>Active Directory and Microsoft Exchange Server 2013.</li><li>Microsoft Exchange Online, or Exchange Online as part of an Office 365 subscription.</li></ul>|  
+|Email logging|<ul><li>Active Directory and Microsoft Exchange Server 2016.</li><li>Microsoft Exchange Online, or Exchange Online as part of an Office 365 subscription.</li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li></ul>|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.</li></ul></li><li>The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is available in a 32-bit version and 64-bit version. On a 32-bit Windows operating system, the 32-bit version is run. On a 64-bit Windows operating system, the 64-bit version is run by default; however, you can also run the 32-bit version if it is required.</li><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] can only install the Excel Add-in if Excel is present on the target computer.</li><li>Outlook synchronization is not supported on 64-bit versions of Office.</li></ul>|  
+|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.</li></ul></li><li>The Dynamics NAV Client is available in a 32-bit version and 64-bit version. On a 32-bit Windows operating system, the 32-bit version is run. On a 64-bit Windows operating system, the 64-bit version is run by default; however, you can also run the 32-bit version if it is required.</li><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] can only install the Excel Add-in if Excel is present on the target computer.</li><li>Outlook synchronization is not supported on 64-bit versions of Office.</li></ul>|  
 
 ###  <a name="DevEnv"></a> Dynamics NAV Development Environment Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
@@ -98,7 +102,7 @@ The following sections list the minimum hardware and software requirements to in
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>.|  
 |Web server|<ul><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0.|   
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li><li>Windows PowerShell 3.0.|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present on the target computer.<ul><li>Microsoft .NET Core 1.0 Windows Server Hosting. This is installed by [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] if not already present.</li><li>Microsoft .NET Framework 4.7.</li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0, depending in the operating system, with the required features enabled.</li></ul></li><li>For more information about configuring IIS, see Configuring IIS](configure-iis.md)</li></ul>|  
+|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present on the target computer.<ul><li>Microsoft .NET Core 1.0 Windows Server Hosting. This is installed by [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] if not already present.</li><li>Microsoft .NET Framework 4.7.</li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0, depending in the operating system, with the required features enabled.</li></ul></li><li>For more information about configuring IIS, see [Configuring IIS](configure-iis.md)</li></ul>|  
 
 ###  <a name="SQLReq"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Database Components for SQL Server Requirements  
  The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components for SQL Server.  
@@ -137,7 +141,7 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 |||  
 |-|-|  
 |Supported Outlook Applications |<ul><li>Outlook 2016 or later</li><li>Outlook Web App</li><li>OWA for iPad</li><li>OWA for iPhone</li><li> OWA for Android.</li></ul>|
-|Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2016</li><li>Exchange Server 2013.<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
+|Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2016<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
 |Supported Authentication|<ul><li>The [!INCLUDE[server](../developer/includes/server.md)] must be configured to run with NavUserPassword, ACS, or AAD Credentials Type.<br /> Also, the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] must be configured for Secure Sockets Layer (SSL).</li></ul>|
 |Supported Browsers|<ul><li>When using the Outlook Web App (OWA), your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
 |Supported Operating Systems|<ul><li>When using OWA for iPad, OWA for iPad, or OWA for Android, your mobile device must use a supported Operating System listed in [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements.</li></ul>|  
@@ -148,7 +152,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |||  
 |-|-|  
 |Supported Outlook Applications |<ul><li>Outlook 2016</li></ul>|
-|Supported Exchange Servers|<ul><li>Exchange Server 2016</li><li>Exchange Server 2013</li><li>Exchange Online.</li></ul>|  
+|Supported Exchange Servers|<ul><li>Exchange Server 2016</li><li>Exchange Online.</li></ul>|  
 
 
 ##  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
@@ -159,7 +163,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |Microsoft Dynamics CRM versions|<ul><li>Microsoft Dynamics CRM 2015 or Microsoft Dynamics CRM 2016<BR />Note: AD, IFD and Claims authentication types are supported for above editions.</li><li>Microsoft Dynamics CRM Online 2015, Microsoft Dynamics CRM Online 2015 Update 1, or Microsoft Dynamics CRM Online 2016 Update 1 or Microsoft Dynamics 365<BR />Note: Oauth and Office365 authentication types are supported for these editions.</li></ul>For more details on authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/en-us/library/mt608573.aspx).|
 |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Integration Solution (.zip)|For Dynamics CRM 2015, Dynamics CRM Online 2015, and Dynamics CRM Online 2015 Update 1:<ul><li>Use the DynamicsNAVIntegrationSolution.zip file that is found on the Dynamics NAV 2016 installation media (DVD) to install the solution.</li><li>Item Availability is not supported on Dynamics CRM 2015, versions Update 1 and Online.</li></ul>For more information, see [How to: Prepare Dynamics 365 for Sales for Integration](How-to-prepare-Dynamics-CRM-for-Integration.md).      |  
 
-###  <a name="SharePointApp"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)]as an App for SharePoint Requirements  
+###  <a name="SharePointApp"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint Requirements  
  The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint.  
 
 |||  

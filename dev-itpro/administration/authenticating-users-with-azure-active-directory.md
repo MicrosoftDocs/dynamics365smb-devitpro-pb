@@ -16,14 +16,14 @@ Azure Active Directory \(Azure AD\) is a cloud service that provides identity an
  For example, your users access a website, such as a SharePoint site. From there, they have single sign-on access to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] because you have configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure AD.  
 
 ## Azure AD and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  
- You can use the Azure AD service to associate your existing Microsoft account with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account and achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and Office 365. Also, if you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in an app for SharePoint, you can use Azure AD to achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and SharePoint. You can still host the [!INCLUDE[server](../developer/includes/server.md)] instance and [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)]on-premises. You do not have to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure to use Azure AD for user authentication.
+ You can use the Azure AD service to associate your existing Microsoft account with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account and achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and Office 365. Also, if you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in an app for SharePoint, you can use Azure AD to achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and SharePoint. You can still host the [!INCLUDE[server](../developer/includes/server.md)] instance and [!INCLUDE[webserver](../developer/includes/webserver.md)] on-premises. You do not have to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure to use Azure AD for user authentication.
 
  The following sections describe the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] users.
 
 ## Preparation
 Azure AD authentication requires the use of service certificates to help secure client connections over a wide area network (WAN). In a production environment, you should obtain a certificate from a certification authority or trusted provider. In a test environment, if you do not have certificate, then you can create your own self-signed certificate. The implementation of certificates involves installaion and configuration of the certificates on the [!INCLUDE[server](../developer/includes/server.md)] server and client computers.
 
-For more informnation, see [Using Certificates to Secure a Remote Client Connection](using-certificates-to-secure-a-remote-client-connection.md).
+For more information, see [Using Certificates to Secure Connections](../deployment/implement-security-certificates-production-environment.md).
 
 
 ## Task 1: Create an Azure AD Tenant  
@@ -48,7 +48,7 @@ For more informnation, see [Using Certificates to Secure a Remote Client Connect
 |-----------------|---------------------------------|---------------------------------------|
 |Name|The name of your application as it will display to your users, such as **Financial App by Solutions**.|
 |Type|Choose **Web application and/or web app**.|
-|Sign-on URL (App URL)|The URI for signing on to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], such as `https://CRONUSInternationLtd.onmicrosoft.com/DynamicsNAV`.|
+|Sign-on URL (App URL)|The URI for signing on to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], such as `https://CRONUSInternationLtd.onmicrosoft.com/BC130`.|
 |App ID URI|The URI to a domain in your Azure AD tenant. By default, the application is assigned an App ID URI that has the format `https://[domain]/[guid]`, such as https://CRONUSInternationLtd.onmicrosoft.com/70b20a51-46b7-4290-8686-b79ec90379f6. You can keep this value or change the `[guid]` portion to suit, for example, `https://CRONUSInternationLtd.onmicrosoft.com/Financials`. <BR /><BR />**Important:**  The App ID URI must be unique within the Azure AD tenant. However, if you want to share your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with other Azure AD tenants, the App ID URI must be unique in Azure AD. <br /><br /> This URI is appended to the **WS-Federation Login Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and **ACSURI** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. Additionally, in the [!INCLUDE[server](../developer/includes/server.md)] configuration, it must be specified in the **Azure AD App ID URI** setting for SOAP and OData web services.|
 |Reply URL|Add a reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. The reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] is the same as the Sign-on URL. The reply URL for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] is the URL for opening the client, such as `https://dynamicsnavwinclient/`.|
 
@@ -100,7 +100,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 	For example:
 
 	```
-    https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://CRONUSInternationLtd.onmicrosoft.com/Financials%26wreply=https://CRONUSInternationLtd.onmicrosoft.com/DynamicsNAV/SignIn.aspx
+    https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://CRONUSInternationLtd.onmicrosoft.com/Financials%26wreply=https://CRONUSInternationLtd.onmicrosoft.com/BC130/SignInx
     ```
 
 	**Parameter descriptions**:
@@ -113,10 +113,10 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
 	`<APP ID URI>` is the ID that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in Azure AD, for example `https://localhost/` or `https://CRONUSInternationLtd.onmicrosoft.com/Financials`.
 
-	`<APP REPLY URL>` is the reply URL that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn.aspx page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], which in most cases, this is the same as the **Sign-On URL** for the application. For example:
+	`<APP REPLY URL>` is the reply URL that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], which in most cases, this is the same as the **Sign-On URL** for the application. For example:
 	
 	```
-	https://CRONUSInternationLtd.onmicrosoft.com/DynamicsNAV/SignIn.aspx
+	https://CRONUSInternationLtd.onmicrosoft.com/BC130/SignIn
 	```
 	
 	The `wreply` parameter is optional. The wreply query parameter tells the Azure AD authentication service where to send the authentication token. If you do not specify the wreply parameter, it will be deducted from the URL in the browser.
@@ -135,7 +135,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 ## Task 4: Configure [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] for Azure AD  
  You must configure the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to use `AccessControlService` as the credential type.  
 
-For more information see, [Configure Authentication of Dynamics NAV Web Client Users](How-to--Configure-Authentication-of-Microsoft-Dynamics-NAV-Web-Client-Users.md).
+For more information see, [Configure Authentication](users-credential-types.md).
 
 ## Task 5: Configure [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] for Azure AD  
 The [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] must also be configured to use `AccessControlService` as the credential type in order to support Azure AD. In addition, the `ACSUri` setting for Azure AD authentication must be set. The value should be that same as the **WS-Federation Login Endpoint** setting of the [!INCLUDE[server](../developer/includes/server.md)] instances, except for the `<App REPLY URL>` parameter. The `ACSUri` setting has the following format:
@@ -151,10 +151,10 @@ For example:
 ```
 <add key="ACSUri" value="https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://CRONUSInternationLtd.onmicrosoft.com/Financials%26wreply=http://dynamicsnavwinclient/" />
 ```
-You configure the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file. For more information, see [Configuring the Dynamics NAV Windows Client](configuring-the-windows-client.md#afterset).
+You configure the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file. <!-- For more information, see [Configuring the Dynamics NAV Windows Client](configuring-the-windows-client.md#afterset).-->
 
 ## Task 6: Associate the Azure AD Accounts with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] User Accounts  
- Each user in your Azure AD tenant that will access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must be set up in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For example, create the users with Windows authentication or with user name/password authentication, depending on your deployment scenario. But you must also specify an authentication email address on the **Office 365 Authentication** FastTab in the **User Card** window. The authentication email address is the email account for that user in your Azure AD tenant. When you combine this with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from the SharePoint site, for example. For more information, see [How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md).  
+ Each user in your Azure AD tenant that will access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must be set up in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For example, create the users with Windows authentication or with user name/password authentication, depending on your deployment scenario. But you must also specify an authentication email address on the **Office 365 Authentication** FastTab in the **User Card** window. The authentication email address is the email account for that user in your Azure AD tenant. When you combine this with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from the SharePoint site, for example. 
 
 > [!IMPORTANT]  
 >  The single sign-on means that users are still signed in to Azure AD when they sign out from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], unless they close all browser windows. However, if a user selected the **Keep me signed in** field when they signed in, they are still signed in when they close the browser window. To fully sign out from Azure AD, the user must sign out from each application that uses Azure AD, including [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and SharePoint.  
@@ -162,11 +162,4 @@ You configure the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md
 >  We recommend that you provide guidance to your users for signing out of their account when they’re done, so that you can keep your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment more secure.  
 
 ## See Also  
- [Users and Credential Types](Users-and-Credential-Types.md)
-
- <!--    
- [How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md)  <!--  
- [How to: Sign Up for a Microsoft Account](How-to--Sign-Up-for-a-Microsoft-Account.md)   
- [How to: Sign Up for a Microsoft Azure Subscription](How-to--Sign-Up-for-a-Microsoft-Azure-Subscription.md) 
- [Configuring Dynamics NAV and the Excel Add-In](configuring-dynamics-nav-excel-addin.md)
- --> 
+ [Authentication and Credential Types](Users-Credential-Types.md)

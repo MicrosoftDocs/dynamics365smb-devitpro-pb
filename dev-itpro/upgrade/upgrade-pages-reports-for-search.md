@@ -16,36 +16,36 @@ caps.latest.revision: 18
 
 # Making Pages and Reports Searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] After an Upgrade
 
-In [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], pages and reports were searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] only if they were included in the MenuSuite. In [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)], instead using the MenuSuite, pages and reports are made searchable by setting properties on the page and report objects themselves, specifically the [UsageCategory](../developer/properties/devenv-usagecategory-property.md) property, and optionally the [AccessByPermissions](../developer/properties/devenv-accessbypermission-property.md) and [ApplicationArea](../developer/properties/devenv-applicationarea-property.md) properties. The UsageCategory property corresponds to the DepartmentCategory property on MenuSuite items linked to page and report objects.
+In [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], pages and reports were searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] only if they were included in the MenuSuite. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], instead using the MenuSuite, pages and reports are made searchable by setting properties on the page and report objects themselves, specifically the [UsageCategory](../developer/properties/devenv-usagecategory-property.md) property, and optionally the [AccessByPermissions](../developer/properties/devenv-accessbypermission-property.md) and [ApplicationArea](../developer/properties/devenv-applicationarea-property.md) properties. The UsageCategory property corresponds to the DepartmentCategory property on MenuSuite items linked to page and report objects.
 
-As a result of this change, after an upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)], pages and reports that were previously searchable in the client, will no longer be searchable unless you set the required object properties. 
+As a result of this change, after an upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], pages and reports that were previously searchable in the client, will no longer be searchable unless you set the required object properties. 
 
-You can set the properties of pages and reports manually (see [Adding Pages and Reports to Search](../developer/devenv-al-menusuite-functionality.md)). Alternatively, the [!INCLUDE[d365_bus_cent_short_md](../developer/includes/d365_bus_cent_short_md.md)] installation media (DVD) includes a Windows PowerShell scripted module called **WebSearch.psm1** that includes the **Set-PageAndReportPropertiesFromExistingMenuSuites**. The cmdlet saves each page and report included in the MenuSuite as a modified object text file that sets the UsageCategory, AccessByPermissions, and ApplicationArea properties to match the DepartmentCategory, AccessByPermissions, and ApplicationArea properties in the MenuSuite. The modified objects can then be imported into the database, either manually or automatically using the cmdlet. 
+You can set the properties of pages and reports manually (see [Adding Pages and Reports to Search](../developer/devenv-al-menusuite-functionality.md)). Alternatively, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes a Windows PowerShell scripted module called **TransitionMenuSuiteObjectsForSearch.psm1** that includes the **Set-ObjectPropertiesFromMenuSuite**. The cmdlet saves each page and report included in the MenuSuite as a modified object text file that sets the UsageCategory, AccessByPermissions, and ApplicationArea properties to match the DepartmentCategory, AccessByPermissions, and ApplicationArea properties in the MenuSuite. The modified objects can then be imported into the database, either manually or automatically using the cmdlet. 
 
-## Run the Set-PageAndReportPropertiesFromExistingMenuSuites cmdlet
+## Run the Set-ObjectPropertiesFromMenuSuite cmdlet
 
 1. Run **Windows PowerShell** as an administrator.
-2. At the command prompt, import the **WebSearch.psm1** module.
+2. At the command prompt, import the **TransitionMenuSuiteObjectsForSearch.psm1** module.
 
     On the installation media (DVD), the module is in the **WindowsPowerShellScripts\WebSearch** folder.
 
     For example, run the following command:
     
     ```
-    import-module -Name c:\dvd\WindowsPowerShellScripts\WebSearch\WebSearch.psm1
+    import-module -Name c:\dvd\WindowsPowerShellScripts\WebSearch\TransitionMenuSuiteObjectsForSearch.psm1
 
     ```
-3.  The `Set-PageAndReportPropertiesFromExistingMenuSuites` cmdlet has several parameters that you can set to change its behavior. To get help on this cmdlet, run the following command:
+3.  The `Set-ObjectPropertiesFromMenuSuite` cmdlet has several parameters that you can set to change its behavior. To get help on this cmdlet, run the following command:
 
     ```
-    get-help Set-PageAndReportPropertiesFromExistingMenuSuites -full
+    get-help Set-ObjectPropertiesFromMenuSuite -full
     ```
-3.  Run the `Set-PageAndReportPropertiesFromExistingMenuSuites` cmdlet.
+3.  Run the `Set-ObjectPropertiesFromMenuSuite` cmdlet.
 
     For example:
 
     ```
-    Set-PageAndReportPropertiesFromExistingMenuSuites -RoleTailoredClientFolder "C:\Program Files (x86)\Microsoft
+    Set-ObjectPropertiesFromMenuSuite -RoleTailoredClientFolder "C:\Program Files (x86)\Microsoft
     Dynamics NAV\130\RoleTailored Client" -DataBaseName "MySolutionDatabase" -OutPutFolder "C:\temp"
     ```
 

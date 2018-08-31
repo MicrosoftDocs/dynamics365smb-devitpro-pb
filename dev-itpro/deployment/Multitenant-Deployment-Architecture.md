@@ -79,5 +79,5 @@ http://mytenant.myservice.com:7048/DynamicsNAV/OData/Company('CRONUS-Internation
 ## See Also  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Upgrading to Microsoft Dynamics NAV 2017](Upgrading-to-Microsoft-Dynamics-NAV-2017.md)   
- [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)   
+ [Microsoft Dynamics 365 Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)   
  [How to: Mount or Dismount a Tenant on a Microsoft Dynamics Server Instance](How-to--Mount-or-Dismount-a-Tenant-on-a-Microsoft-Dynamics-Server-Instance.md)

@@ -3,7 +3,7 @@ title: "Differences in the Development Environments"
 description: "Describes the various differences between the old and the new development environment"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 09/19/2017
+ms.date: 08/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,8 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
-
-
 
 # Differences in the Development Environments
 Coming from the Dynamics NAV Development Environment and C/SIDE, there are some differences and optimizations that you should familiarize yourself with. The following sections go through these changes.  
@@ -47,7 +45,7 @@ Several properties have been renamed, to mention some:
 ## Multilanguage properties
 With the introduction of .xliff files, the ML properties, such as **CaptionML** and **TooltipML** will be deprecated in a later version. Use the equivalent properties instead, such as **Caption** and **Tooltip**, then make sure the manifest is set up to generate the `/Translations` folder and use the generated .xliff files for translations of the extension. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
 
-## Pages
+## <a name="Pages"></a> Pages 
 The ```ActionContainer``` elements in AL have been renamed; the following table lists the renamed elements:
 
 |C/SIDE|AL Language Development Environment|

@@ -149,7 +149,7 @@ After you have completed the merge, you import the new merged application object
 
 2.  Make sure the database includes a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.
 
-    For more information, see [How to: Upload the License File](how-to--upload-the-license-file.md)
+    For more information, see [Uploading a License File for a Specific Database](../cside/upload-license-file.md)
 
 3.  Import the new merged application object text files (.TXT) from the **Result** folder into the new database.
 
@@ -184,7 +184,7 @@ After you have completed the merge, you import the new merged application object
 
 6.  Compile all the newly imported objects.
 
-    You can use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or finsql.exe. For more information, see [Compiling Objects](compiling-objects.md).
+    You can use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or finsql.exe. For more information, see [Compiling Objects](../cside/compiling-objects.md).
 
     If you use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], you will first have to set it to use the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that connects to the database. For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md).  
 
