@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ---
 # Resolving My Settings Page Implementation After a Database Conversion
-When you convert a [!INCLUDE[navcorfu](includes/navcorfu_md.md)] database, the My Settings page in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] will not work properly. This article explains how to resolve the problem.
+When you convert a [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] database, the My Settings page in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] will not work properly. This article explains how to resolve the problem.
 
 
 1.  Modify Codeunit 40 LogInManagement:
