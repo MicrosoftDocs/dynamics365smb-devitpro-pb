@@ -100,7 +100,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 	For example:
 
 	```
-    https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://CRONUSInternationLtd.onmicrosoft.com/Financials%26wreply=https://CRONUSInternationLtd.onmicrosoft.com/BC130/SignInx
+    https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://CRONUSInternationLtd.onmicrosoft.com/Financials%26wreply=https://CRONUSInternationLtd.onmicrosoft.com/BC130/SignIn
     ```
 
 	**Parameter descriptions**:
