@@ -37,7 +37,7 @@ Sets a value for a table field or UI element that determines the permission mask
 
 
 > [!NOTE]  
->  For this property to take effect in the client, the **UI Elements Removal** setting of [!INCLUDE[server](includes/server.md)] configuration must be set to **LicenseFile** or **LicenseFileAndUserPermissions**. For more information, see [Hide UI Elements](../administration/hide-ui-elements.md).  
+>  For this property to take effect in the client, the **UI Elements Removal** setting of [!INCLUDE[server](../includes/server.md)] configuration must be set to **LicenseFile** or **LicenseFileAndUserPermissions**. For more information, see [Hide UI Elements](../../administration/hide-ui-elements.md).  
 
 ## Property Values  
 
