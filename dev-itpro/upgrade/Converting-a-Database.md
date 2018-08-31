@@ -28,23 +28,20 @@ This article can also be used to update you current [!INCLUDE[prodshort](../deve
 ## About database conversion
 Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
 
-<!--You typically convert a database, as described in this article, when you want to upgrade an existing [!INCLUDE[nav2017](../developer/includes/nav2017.md)] database to a new platform version that does not include application changes. A database conversion is typically what is required for a cumulative update.
+## Task 1: Preparation
 
-Converting a database does not upgrade the application objects (like pages, reports, and codeunits) or the business data to [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. Therefore, performing a database conversion alone is usually not sufficient when upgrading from an earlier version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)] to [!INCLUDE[nav2017](../developer/includes/nav2017.md)] or when upgrading an existing [!INCLUDE[nav2017](../developer/includes/nav2017.md)] installation to new platform and application versions. For these upgrade scenarios, you should perform a full upgrade by completing the tasks [Upgrading the Application Code](Upgrading-the-Application-Code.md) and [Upgrading the Data](Upgrading-the-Data.md), which will also cover the database conversion. You can choose to convert the old database and not upgrade your application. However, we recommend that you upgrade the application objects as well so that your solution includes important application fixes and new functionality that is introduced in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. Upgrading the application will also reduce the amount of merging required to upgrade to the next major version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)], bringing you to the latest version of the product faster.  
--->
-<!--
-> [!IMPORTANT]  
->  Before you start, make sure that you have applied the changes that are described in KB 2804640 [Code corrections for some Microsoft Dynamics NAV 2013 reports to prevent compilation errors with Report Viewer 2012 when upgrading to later versions of Microsoft Dynamics NAV](https://mbs.microsoft.com/knowledgebase/KBDisplay.aspx?scid=kb;EN-US;2804640).
--->
+1. Transition from the use of codeunit 1
 
-## Preparation
+    With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, do the following:
 
-### Transitioning from codeunit 1.
+        1.     If you have any custom code in codeunit 1, export the existing codeunit 1 as a .fob or .txt file. 
+        2.    Go to [Codeunit 1 Replacement](codeunit1-replacement.md), and make a .txt file that includes the replacement code for codeunit. You will use this file later.
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, do the following:
+2. <a name="convertv1extensions"></a>Convert V1 Extensions to V2 extensions
 
-1.    If you have any custom code in codeunit 1, export the existing codeunit 1 as a .fob or .txt file. 
-2.    Go to [Codeunit 1 Replacement](codeunit1-replacement.md), and make a .txt file that includes the code for codeunit 1 replacement. You will use this file later.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md). 
+
+
 ## Task 1: Preparing the Old Database 
  
 To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, the first task is to back up the old database and then prepare to convert it.
@@ -54,11 +51,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
 #### To prepare the old database  
 
-1. <a name="convertv1extensions"></a>Convert V1 Extensions to V2 extensions
-
-    [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrade-v1-to-v2-overview). 
-
-2.  Make a copy of the old database or create full database backup. 
+1.  Make a copy of the old database or create full database backup. 
 
     <!-- in multitnenta, both the application and tenant dbs>-->
 
@@ -88,13 +81,13 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
     ```  
 
-4.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->database.  
+4.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->application database.  
 
-     For more information, see [Open Databases](../cside/open-database.md).  
+     For more information, see [Open Databases](../cside/cside-open-database.md).  
 
 5.  In Object Designer, verify that all objects are compiled and no objects are locked.  
 
-     For more information about compiling objects, see [Compiling Objects](../cside/compiling-objects.md).
+     For more information about compiling objects, see [Compiling Objects](../cside/cside-compiling-objects.md).
 
      If one or more objects are locked, the conversion process cannot update the database version number. As a result, the conversion does not complete. For more information, see [Locking and Unlocking Objects](Locking-and-Unlocking-Objects.md).
 
@@ -110,7 +103,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
 9.  <a name="uploadlicense"></a>Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Partner license to the database.  
 
-    For more information, see [Uploading a License File for a Specific Database](../cside/upload-license-file.md#UploadtoDatabase).  
+    For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     > [!IMPORTANT]  
     >  The license that you upload must be a developer license. During the conversion, the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] will convert the report objects that are stored in the old database to the RDL format.  
@@ -127,8 +120,6 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
     You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)].
 
-    For information about the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)], see [How to: Start, Stop, Restart, or Remove a Dynamics NAV Server Instance](dynamics-nav/How-to--Start--Stop--Restart--or-Remove-a-Microsoft-Dynamics-NAV-Server-Instance.md) in the Dev/IT Pro Help for [!INCLUDE[navnow](../developer/includes/navnow_md.md)].
-
     To use the Set-NAVServerInstance cmdlet, run the following command:
     ```
     Set-NAVServerInstance –ServerInstance <ServerInstanceName> -Stop
@@ -142,8 +133,6 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     DELETE FROM [<My NAV Database Name>].[dbo].[Server Instance]
     DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
     ```
-<!-- 
-(Optional) Before you start the following procedure, you can uninstall the old version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]. When you uninstall [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], the database is still attached to the instance of SQL Server, which you can verify using SQL Server Management Studio.-->
 
 ## Task 2: Run Technical Upgrade on the Old Database  
 Next, you will convert the old database so that it can be used with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
@@ -159,7 +148,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 2. Install [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
-    Run the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup, and install the following components as a minimum:
+    Run the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)], and install the following components as a minimum:
     -  Server
     -  SQL Server Database Components
     -  Administration Tool
@@ -174,7 +163,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     
     -   Otherwise, connect to the old application database that you prepared in the previous task, and then go to the next step.
     
-    For more information, see [Open Databases](../cside/open-database.md).
+    For more information, see [Open Databases](../cside/cside-open-database.md).
 
 4.  In the dialog box that appears, read the instructions about converting the database carefully because this action cannot be reversed. When you are ready, choose the **OK** button, and then choose the **OK** button to confirm that you want to convert the database.  
 
@@ -202,7 +191,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 9.    Import the codeunit 1 replacement text file you created.
 10.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
 
-    For more information, see [Compiling Objects](../cside/compiling-objects.md).
+    For more information, see [Compiling Objects](../cside/cside-compiling-objects.md).
 
 11. <a name="fixerrors"></a>Fix compilation errors.  
 
@@ -260,7 +249,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 18. Upload the customer license to the converted database.  
 
-    For more information, see [Uploading a License File for a Specific Database](../cside/upload-license-file.md#UploadtoDatabase).  
+    For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     You have now completed the conversion of the database to be accessed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To test the converted database, you can connect it to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.
 19. Transition the custom code in the old codeunit 1 to use the new system event implentation.   
