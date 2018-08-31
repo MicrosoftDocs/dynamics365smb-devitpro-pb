@@ -20,7 +20,7 @@ This article provides an overview of the technical upgrade process for Business 
 |----|-----------|--|
 |Convert V1 extensions to V2 extensions.|[See...](converting-a-database.md#convertv1extensions)||
 |Backup the database(s).|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)|
-|(Single tenant mode only) Uninstall all extensions.|[See...](converting-a-database.md#uninstallextensions)||
+|(Single tenant only) Uninstall all extensions.|[See...](converting-a-database.md#uninstallextensions)||
 |Ensure all objects are complied, unlocked, and tables are synchronized.|[See...](converting-a-database.md#compilesync)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] license.|[See...](converting-a-database.md#uploadlicense)||
 |(Multitenant mode only) Dismount the tenant|[See...](converting-a-database.md#dismounttenant)||
@@ -31,8 +31,8 @@ This article provides an overview of the technical upgrade process for Business 
 
 |Step|More info| Done |
 |----|-----------|--|
-|Install [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] (Server, SQL Database Components, [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] minimum).||
-|Open and convert the application database using [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].|[See...](converting-a-database.md#convertdb)||
+|Install [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] (Server, SQL Database Components, [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] minimum).|[See...](../deployment/install-using-setup.md)|
+|Open and convert the application database using [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].|[See...](converting-a-database.md#convertdb)||
 |Add custom control add-ins to the server instance.|[See...](converting-a-database.md#controladdins)||
 |Connect [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to the application database and compile all objects. **Important:** Choose to synchronize schema later)|[See...](converting-a-database.md#connectserver)||
 |Import codeunit 1 replacement|[See...](codeunit1-replacement.md)|
