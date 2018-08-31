@@ -18,9 +18,9 @@ This article provides an overview of the technical upgrade process for Business 
 
 |Step|More info| Done |
 |----|-----------|--|
-|Convert V1 extensions to V2 extensions.|[See...](converting-a-database.md#convertv1extensions)||
+|Convert V1 extensions to V2 extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
 |Backup the database(s).|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)|
-|(Single tenant only) Uninstall all extensions.|[See...](converting-a-database.md#uninstallextensions)||
+|(Single tenant only) Uninstall all extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
 |Ensure all objects are complied, unlocked, and tables are synchronized.|[See...](converting-a-database.md#compilesync)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] license.|[See...](converting-a-database.md#uploadlicense)||
 |(Multitenant mode only) Dismount the tenant|[See...](converting-a-database.md#dismounttenant)||
