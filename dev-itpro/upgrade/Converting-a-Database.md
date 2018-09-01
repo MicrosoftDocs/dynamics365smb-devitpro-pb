@@ -34,12 +34,12 @@ Converting a database, which is often referred to as a *technical upgrade*, chan
 
     With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, do the following:
 
-        1.     If you have any custom code in codeunit 1, export the existing codeunit 1 as a .fob or .txt file. 
-        2.    Go to [Codeunit 1 Replacement](codeunit1-replacement.md), and make a .txt file that includes the replacement code for codeunit. You will use this file later.
+    1. If you have any custom code in codeunit 1, export the existing codeunit 1 as a .fob or .txt file.
+    2. Go to [Codeunit 1 Replacement](codeunit1-replacement.md), and make a .txt file that includes the replacement code for codeunit. You will use this file later.
 
 2. <a name="convertv1extensions"></a>Convert V1 Extensions to V2 extensions
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md). 
+    [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md). 
 
 
 ## Task 1: Preparing the Old Database 
@@ -89,7 +89,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
      For more information about compiling objects, see [Compiling Objects](../cside/cside-compiling-objects.md).
 
-     If one or more objects are locked, the conversion process cannot update the database version number. As a result, the conversion does not complete. For more information, see [Locking and Unlocking Objects](Locking-and-Unlocking-Objects.md).
+     If one or more objects are locked, the conversion process cannot update the database version number. As a result, the conversion does not complete. For more information, see [Locking and Unlocking Objects](../cside/cside-lock-unlock-objects.md).
 
 6.  On the **Tools** menu, choose **Build Server Application Objects**, and then choose the **Yes** button.  
 
@@ -182,11 +182,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     > [!IMPORTANT]
     > The service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database on SQL Server or Azure SQL Database.
 
-    For more information, see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).  
+    For more information, see [Connect a Server Instance to a Database](../administration/connect-server-to-database.md) and [Giving the account necessary database privileges in SQL Server](../deployment/provision-server-account.md#dbo).  
      
 8.  Go to the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)], and set it to use the [!INCLUDE[server](../developer/includes/server.md)] instance that connects to the database.  
 
-     For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md). 
+     For more information, see [Change the Server Instance](../cside/cside-change-server-instance.md). 
 
 9.    Import the codeunit 1 replacement text file you created.
 10.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
@@ -237,7 +237,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 15.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
 
-        For more information, see [Synchronizing the Tenant Database and Application Database](../adminsitration/synchronize-tenant-database-and application-database.md). 
+        For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md). 
 
 16.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 

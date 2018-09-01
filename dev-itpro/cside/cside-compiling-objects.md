@@ -39,6 +39,9 @@ Before you can run a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] obje
  If you select an error in the **Error List** window and choose **Design**, then the C/AL Editor opens for the object to which the error or warning relates.  
 
 ## Multilanguage Captions  
- When you compile application objects, [!INCLUDE[navnow](../developer/includes/navnow_md.md)] stores the objects in Unicode encoding. If the application objects contain multilanguage captions, [!INCLUDE[navnow](../developer/includes/navnow_md.md)] uses the code page that is relevant for the languages that you have specified.  
+ When you compile application objects, [!INCLUDE[navnow](../developer/includes/navnow_md.md)] stores the objects in Unicode encoding. If the application objects contain multilanguage captions, [!INCLUDE[navnow](../developer/includes/navnow_md.md)] uses the code page that is relevant for the languages that you have specified. 
+
+## See Also
+[Locking and Unlocking Objects](cside-lock-unlock-objects.md)
 
 
