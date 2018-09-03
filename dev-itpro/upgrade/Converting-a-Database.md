@@ -28,6 +28,8 @@ This article can also be used to update you current [!INCLUDE[prodshort](../deve
 ## About database conversion
 Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
 
+The process is slightly different when you have multitenant deployment compared to a single-tenant deployment. The steps that follow indicate the differences where applicable.
+
 ## Task 1: Preparation
 
 1. Transition from the use of codeunit 1
@@ -41,7 +43,9 @@ Converting a database, which is often referred to as a *technical upgrade*, chan
 
     [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes custom V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
 
-    V1 extensions produced by Microsoft are now available as V2 extensions on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD), so you do not have to convert these.   
+    V1 extensions that are produced by Microsoft are now available as V2 extensions on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD), so you do not have to convert these.
+
+    You will have to uninstall all V1 extension to successfully completes the technical upgrade.
 
 
 ## Task 1: Preparing the Old Database 
@@ -59,8 +63,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
      For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
 
-3.  <a name="uninstallextensions"></a> (Single tenant only) Uninstall all extensions.
-
+3.  <a name="uninstallextensions"></a> For single-tenant mode, uninstall all extensions. For multitenant mode, be sure to uninstall all V1 extensions.
     <!-- This tep is not required for multitenant -->
 
     You can do this from **Extension Management** page in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client or by using the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. 
@@ -218,7 +221,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
     ``` 
-
+    Ignore errors about V1 extensions. 
 13. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
 
     Use the [Install-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
