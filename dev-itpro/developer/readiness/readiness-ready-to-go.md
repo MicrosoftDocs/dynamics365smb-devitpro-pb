@@ -52,7 +52,7 @@ Please find the Development Centers and Master VARs in your region and explore w
 |“Ready to Go” page|[Link](https://www.1clickfactory.com/readytogo/) |[Link](http://www.ciellos.com/ready-to-go)|[Link](http://www.cloud-ready-software.com/readytogo)|[Link](http://www.innovaconsulting.es/en/readytogo/)|[Link](https://www.qbsgroup.com/service/app-pealing-workshop/)|[Link](https://www.velosio.com/readytogo/)|
 |Training calendar | ||||||
 |Contact information|[Contacts](https://www.1clickfactory.com/company-resources/company/contacts/)|[Contacts](http://www.ciellos.com/)|[Contacts](https://cloud-ready-software.com/connect/)|[Contacts](http://www.innovaconsulting.es/en/contact/)|[Contacts](https://www.qbsgroup.com/contact/)|[Contacts](https://www.velosio.com/contact-us/)|
-|Regional presence and availability|
+|**Regional presence and availability**|
 |Africa|In Person & Online|-|Online|-|-|-|
 |Asia |Online|Online|Online|-|-|-|
 |Europe|In Person & Online|Online|In Person & Online|In Person & Online|In Person & Online|-|
