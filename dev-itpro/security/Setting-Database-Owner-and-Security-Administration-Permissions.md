@@ -7,11 +7,9 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
-ms.assetid: 95b2429f-6fb2-4257-9ed6-57ad6529b909
-caps.latest.revision: 29
 ---
-# Setting Database Owner and Security Administration Permissions
-Permissions are required in SQL Server to create and manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, for example by using [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)]. To grant these permissions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administrators, use [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms).  
+# Granting Permissions to Manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Databases in SQL Server
+Special permissions are required in SQL Server to create and manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, for example by using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] or [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)]. To grant these permissions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administrators, use [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms).  
 
 <!--
 If you have installed SQL Server with the guidelines in [Installation Considerations for Microsoft SQL Server](Installation-Considerations-for-Microsoft-SQL-Server.md), then SQL Server Management Studio is already installed on your computer. Otherwise, update your SQL Server installation to include the **Management Tools - Complete option for SQL Server**.  
