@@ -19,11 +19,11 @@ caps.latest.revision: 18
 
 # Creating and Interacting with an OData V4 Bound Action
 
-This topic provides an overview of how to create and then expose a procedure as an OData V4 web service action. After you published the page, you will need to verify that the service is working as expected.
+This topic provides an overview on how to create and then expose a procedure as an OData V4 web service action. After you publish the page, you will need to verify that the service is working as expected.
 
 ## Declaring the OData bound action
 
-The following example shows you how you can declare an OData bound action on a page exposed as a web service. For that, you need to create a page extension for the `Sales Invoice` page and use the `[ServiceEnabled]` attribute and the `WebServiceActionContext` and `WebServiceActionResultCode` AL types. 
+The following example shows how to declare an OData bound action on a page exposed as a web service. For that, you need to create a page extension for the `Sales Invoice` page and use the `[ServiceEnabled]` attribute and the `WebServiceActionContext` and `WebServiceActionResultCode` AL types. 
 
 ```
 pageextension 50110 SalesInvoiceExtension extends "Sales Invoice"
@@ -91,6 +91,10 @@ http://<Server>:<WebServicePort>/<ServerInstance>/api/beta/companies(<companyid>
 You have now published a method as an OData V4 web service action and verified that the service works as expected.
 
 ## See Also
-[AL Development Environment](devenv-reference-overview.md)    
+[AL Development Environment](devenv-reference-overview.md)  
+[Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
+[Devoloping for Multiple Platform Versions](devenv-developing-for-multiple-platform-versions)  
+[Exporting Permission Sets](devenv-export-permission-sets)  
+[Discover Events Using the Event Recorder](devenv-events-discoverability)    
 
 
