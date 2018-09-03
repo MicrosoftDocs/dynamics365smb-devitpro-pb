@@ -39,7 +39,9 @@ Converting a database, which is often referred to as a *technical upgrade*, chan
 
 2. <a name="convertv1extensions"></a>Convert V1 Extensions to V2 extensions
 
-    [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md). 
+    [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes custom V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
+
+    V1 extensions produced by Microsoft are now available as V2 extensions on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD), so you do not have to convert these.   
 
 
 ## Task 1: Preparing the Old Database 
@@ -252,7 +254,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     You have now completed the conversion of the database to be accessed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To test the converted database, you can connect it to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.
-19. Transition the custom code in the old codeunit 1 to use the new system event implentation.   
+19. Transition the custom code in the old codeunit 1 to use the new system event implementation.   
 
 ## Database and Windows collations  
 Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](http://go.microsoft.com/fwlink/?LinkID=247971).  

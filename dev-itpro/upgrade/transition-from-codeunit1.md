@@ -127,6 +127,17 @@ The following table lists the mappings between the codeunit 1 method triggers an
 |OnValidateUpgradePerDatabase|9900|OnValidateUpgradePerDatabase
 |OnValidateUpgradePerCompany|9900|OnValidateUpgradePerCompany
 
+## What does this mean for upgrade?
+
+This depends on whether you perform a a technical upgrade (platform only) or a full upgrade (platform, application, and data).
+
+For a technical upgrade, after you convert your old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform, you have to do two things: 
+
+- Import and compile the replacement codunit 1 object from [Codeunit 1 Replacment](codeunit1-replacement.md).
+- Move any custom logic that was included in the old codeunit 1 into the new codeunits and methods described in the previous section.
+
+For a full upgrade, there is no additional work apart from the normal upgrade process. Standard and custom code in codeunit 1 will be automatically migrated to the new application codeunits. 
+
 
 ## See Also  
  [Converting a Database](Converting-a-Database.md)  

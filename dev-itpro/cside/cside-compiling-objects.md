@@ -16,7 +16,7 @@ Before you can run a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] obje
 
 -   In Object Designer, choose **Tools**, and then choose **Compile**. Any syntax errors are displayed in a dialog box. Any errors or warnings about obsolete constructs in a three-tier environment are displayed in the **Error List** window.  
 
--   Run finsql.exe with the CompileObjects command. Any errors or warnings are added to the log file. For more information, see [CompileObjects](CompileObjects.md).  
+-   Run finsql.exe with the CompileObjects command. Any errors or warnings are added to the log file. For more information, see [CompileObjects](dynamics-nav/compileobjects).  
 
 > [!NOTE]  
 >  To compile an object, you must have a developer license.  
