@@ -21,7 +21,7 @@ author: SusanneWindfeldPedersen
 A field group defines the fields to display in a drop-down control. The fieldgroups control allows you to add more fields to a drop down list. In order to add fields to a field group, you create a table extension and specify the fieldgroups control and the fields you want to append to the dropdown list.  
 
 > [!NOTE]  
-> You can only position the fields to the end of the fieldgroups list. 
+> You can only place the fields at the end of the dropdown list using the addlast keyword. 
 
 > [!WARNING]  
 > The server will remove the duplicates, if multiple extensions attempt to add the same field many times. A field can only be added to the field group once.
