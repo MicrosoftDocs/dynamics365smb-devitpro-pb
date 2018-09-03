@@ -48,8 +48,6 @@ This article provides an overview of the technical upgrade process for Business 
 |Repair installed V2 extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp)||
 |(Multitenant mode only) Mount the tenant database. |[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant)||
 |Synchronize the tenant/database. |[See...](../administration/synchronize-tenant-database-and-application-database.md)||
-|(Single tenant mode only) Install the V2 extensions previously uninstalled.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
-|Install the new Microsoft-provided V2 extensions that replace V1 extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
 |Upload customer license. |[See...](../cside/cside-upload-licence-file.md)||
 |Move custom code from old codeunit 1 to new codeunits.|[See...](transition-from-codeunit1.md)||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client |[See...](upgrade-pages-report-for-search.md) ||
@@ -63,9 +61,11 @@ This article provides an overview of the technical upgrade process for Business 
 |Synchronize the new V2 extensions with the database.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp)|
 |Run a data upgrade on each new V2 extension.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade)|
 
+<!-- 
 ## Perform Post-upgrade tasks 
 |Step|More info| Done |
 |----|-----------|--|
 |Upload customer license. |[See...](../cside/cside-upload-licence-file.md)||
 |Move custom code from old codeunit 1 to new codeunits.|[See...](transition-from-codeunit1.md)||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client |[See...](upgrade-pages-report-for-search.md) ||
+-->
