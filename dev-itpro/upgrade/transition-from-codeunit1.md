@@ -24,12 +24,12 @@ The foundation of this change is events - publishers and subscribers. System cod
 ### About system codeunits
 -    They have IDs in the 2 billion range.
 -    You cannot modify them.
--    Currently, we do not recommend that code subscribes to the events in the new system codeunits 2000000001..2000000010 directly. Although this is not blocked, it might be in a future release. Instead you should subscribe to one of the integration events which now reside next to the business logic.
+-    Currently, we do not recommend that code subscribes to the events in the new system codeunits 2000000001..2000000010 directly. Although this is not blocked, it might be in a future release. Instead, you should subscribe to one of the integration events which now reside next to the business logic.
 
   
 ## Mapping Codeunit 1 method triggers to events
 
-The following table lists the mappings between the codeunit 1 method triggers and the new methods.
+The following table lists the mappings between the codeunit 1 method triggers and the new event publisher methods.
 
 |Codeunit 1 trigger|New object ID|New method|
 |------------------|-------------|-----------------|
@@ -133,7 +133,7 @@ This depends on whether you perform a a technical upgrade (platform only) or a f
 
 For a technical upgrade, after you convert your old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform, you have to do two things: 
 
-- Import and compile the replacement codunit 1 object from [Codeunit 1 Replacment](codeunit1-replacement.md).
+- Import and compile the replacement codunit 1 object from [Codeunit 1 Replacement](codeunit1-replacement.md).
 - Move any custom logic that was included in the old codeunit 1 into the new codeunits and methods described in the previous section.
 
 For a full upgrade, there is no additional work apart from the normal upgrade process. Standard and custom code in codeunit 1 will be automatically migrated to the new application codeunits. 
