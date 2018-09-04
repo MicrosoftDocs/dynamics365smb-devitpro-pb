@@ -66,7 +66,7 @@ MESSAGE(FORMAT(Date1));
 ```  
   
 The message window displays the following:  
- **12/06/2018**  
+ **06/12/2018**  
 
 ## See Also  
 [AL Data types](devenv-al-data-types.md)  
