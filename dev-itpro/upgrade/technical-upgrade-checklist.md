@@ -37,30 +37,34 @@ This article provides an overview of the technical upgrade process for Business 
 
 |Step|More info| Done |
 |----|-----------|--|
-|Install [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] (Server, SQL Database Components, [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] minimum).|[See...](../deployment/install-using-setup.md)|
+|Install [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)]. |[See...](../deployment/install-using-setup.md)|
 |Open and convert the application database using [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].|[See...](../cside/cside-open-database.md)||
 |Add custom control add-ins to the server instance.|[See...](converting-a-database.md#controladdins)||
-|Connect converted database to a [!INCLUDE[server](../developer/includes/server.md)] instance|[See...](../administration/connect-server-to-database.md)||
+|Connect converted database to a [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](../administration/connect-server-to-database.md)||
 |Connect [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to the application database.|[See...](../cside/cside-change-server-instance.md)||
-|Import codeunit 1 replacement|[See...](codeunit1-replacement.md)||
+|Import codeunit 1 replacement.|[See...](codeunit1-replacement.md)||
 |Compile all objects. **Important:** Choose to synchronize schema **later**)|[See...](../cside/cside-compiling-objects.md)||
 |Fix compilation errors.|[See...](converting-a-database.md#fixerrors)||
 |Repair installed V2 extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp)||
 |(Multitenant mode only) Mount the tenant database. |[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant)||
 |Synchronize the tenant/database. |[See...](../administration/synchronize-tenant-database-and-application-database.md)||
 
+<!--
 ## Upgrade V2 Extensions on Tenant
 
 |Step|More info| Done |
 |----|-----------|--|
-|(Single tenant mode only) Install the V2 extensions previously uninstalled.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
+
 |Publish the new Microsoft-provided V2 extensions that replace V1 extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp)|
 |Synchronize the new V2 extensions with the database.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp)|
 |Run a data upgrade on each new V2 extension.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade)|
 
-## Perform Post-upgrade tasks 
+-->
+
+## Post-upgrade tasks 
 |Step|More info| Done |
 |----|-----------|--|
+|(Single tenant mode only) Install the V2 extensions previously uninstalled.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
 |Move custom code from old codeunit 1 to new codeunits.|[See...](transition-from-codeunit1.md)||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client |[See...](upgrade-pages-report-for-search.md) ||
 |Upload customer license. |[See...](../cside/cside-upload-licence-file.md)||
