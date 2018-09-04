@@ -321,10 +321,11 @@
 ### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
 ## [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
-## [Converting a Database](upgrade/Converting-a-Database.md)
+## [Technical Upgrade](upgrade/Converting-a-Database.md)
+### [Technical Upgrade Quick Reference]
 ## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
 ## [Upgrading the Data](upgrade/Upgrading-the-Data.md)
-### [Technical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
+(upgrade/technical-upgrade-checklist.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
