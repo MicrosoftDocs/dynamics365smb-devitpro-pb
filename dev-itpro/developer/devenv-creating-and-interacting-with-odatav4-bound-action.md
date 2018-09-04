@@ -91,8 +91,8 @@ You have now published a method as an OData V4 web service action and verified t
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
-[Devoloping for Multiple Platform Versions](devenv-developing-for-multiple-platform-versions)  
-[Exporting Permission Sets](devenv-export-permission-sets)  
-[Discover Events Using the Event Recorder](devenv-events-discoverability)    
+[Devoloping for Multiple Platform Versions](devenv-developing-for-multiple-platform-versions.md)  
+[Exporting Permission Sets](devenv-export-permission-sets.md)  
+[Discover Events Using the Event Recorder](devenv-events-discoverability.md)    
 
 
