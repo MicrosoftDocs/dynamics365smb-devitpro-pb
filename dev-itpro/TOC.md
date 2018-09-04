@@ -326,8 +326,7 @@
 ## [Technical Upgrade](upgrade/Converting-a-Database.md)
 ### [Technical Upgrade Quick Reference]
 ## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
-## [Upgrading the Data](upgrade/Upgrading-the-Data.md)
-(upgrade/technical-upgrade-checklist.md)
+## [Upgrading the Data](upgrade/Upgrading-the-Data.md)(upgrade/technical-upgrade-checklist.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
