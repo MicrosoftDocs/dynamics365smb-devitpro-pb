@@ -48,7 +48,7 @@ The process is slightly different when you have multitenant deployment compared 
     You will have to uninstall all V1 extension to successfully completes the technical upgrade.
 
 
-## Task 1: Preparing the Old Database 
+## Task 2: Preparing the Old Database 
  
 To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, the first task is to back up the old database and then prepare to convert it.
 
@@ -102,7 +102,8 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
 8.  Run the schema synchronization with validation to synchronize the database schema changes.  
 
-    For more information, see [Synchronizing the Tenant Database and Application Database](../adminsitration/synchronize-tenant-database-and application-database.md).
+    For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and application-database.md).
+
 
     <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?>
 
