@@ -142,12 +142,12 @@ In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] vers
 
 You can also use the [DeleteObjects](DeleteObjects.md) command of the finsql.exe.
 
-##  <a name="UninstallOldProduct"></a> Task 6: Uninstall (optional) the old product and install the new product
-Uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], and then install [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
+##  <a name="UninstallOldProduct"></a> Task 6:  Uninstall the old product (optional) and install the new product (already done for multtenant?)
+Uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], and then install [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
-As a minimum, you must install the following [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] components: Client (with the Development Environment), Modern Development Environment, Administration Tools, Server, and SQL Server Components. You can install these components by choosing the **Custom** option during Setup. For more information, see [Custom Option](Custom-option.md).
+As a minimum, you must install the following [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components: Client (with the Development Environment), Modern Development Environment, Administration Tools, Server, and SQL Server Components. You can install these components by choosing the **Custom** option during Setup. For more information, see [Custom Option](Custom-option.md).
 
-## Task 7: Clear Dynamics NAV Server instance and debugger breakpoint records from old database
+## Task 7: Clear Dynamics NAV Server instance and debugger breakpoint records from old database (single-tenant only)
 Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the database in SQL Server.  
 
 1.  If you did not uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].

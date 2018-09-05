@@ -49,7 +49,7 @@ VAT Audit reports let you generate VAT amounts for a specific period in response
 |||
 |----|----|
 |Moved, Removed, or Replaced?| Why?|
-|Replaced| The VAT Audit report is replaced. Now you can export data to Excel through the OData service. The VAT Entry Exception report is no longer specific to the UK. The documentation for these reports has moved to the [!INCLUDE[d365fin](includes/d365fin_md.md)] repository.|
+|Replaced| The VAT Audit report is replaced. Now you can export data to Excel through the OData service. The VAT Entry Exception report is no longer specific to the UK. The documentation for these reports has moved to the [!INCLUDE[d365fin](../developer/includes/d365fin_md.md)] repository.|
 -->
 
 ## Non-invoiced stock reports

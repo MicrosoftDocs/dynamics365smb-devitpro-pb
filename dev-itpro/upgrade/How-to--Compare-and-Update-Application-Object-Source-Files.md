@@ -12,17 +12,17 @@ ms.assetid: 464cf181-c272-42db-baa0-2c817aa66468
 caps.latest.revision: 3
 ---
 # Compare and Update Application Object Source Files
-You can use [!INCLUDE[wps_2](includes/wps_2_md.md)] cmdlets to compare different sets of [!INCLUDE[navnow](includes/navnow_md.md)] application objects to identify the differences. Then, you can choose to apply all or some of the differences to a target solution.  
+You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to compare different sets of [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application objects to identify the differences. Then, you can choose to apply all or some of the differences to a target solution.  
   
  We recommend that you use the Merge-NAVApplicationObject cmdlet because it is the faster and easier way to merge objects. However, you can choose to use the Compare-NAVApplicationObject cmdlet and Update-NAVApplicationObject cmdlet to identify the differences before you apply them. Or, for example, when you want to apply the same modifications to multiple applications or similar. The following procedures illustrate how you can use these two cmdlets in combination  
   
- The scenario is based on the following three versions of the [!INCLUDE[navnow](includes/navnow_md.md)] application:  
+ The scenario is based on the following three versions of the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application:  
   
-|Version label|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
+|Version label|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------------------|---------------------------------------|  
-|ORIGINAL|The Microsoft release of [!INCLUDE[navnow](includes/navnow_md.md)].|  
-|MODIFIED|The updated version of [!INCLUDE[navnow](includes/navnow_md.md)], such as Cumulative Update 1.|  
-|TARGET|Your solution that is based on [!INCLUDE[navnow](includes/navnow_md.md)], such as **MySolution**.|  
+|ORIGINAL|The Microsoft release of [!INCLUDE[navnow](../developer/includes/navnow_md.md)].|  
+|MODIFIED|The updated version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)], such as Cumulative Update 1.|  
+|TARGET|Your solution that is based on [!INCLUDE[navnow](../developer/includes/navnow_md.md)], such as **MySolution**.|  
   
  The steps in the following procedures compare the ORIGINAL version to the MODIFIED solution and apply the relevant changes to your TARGET solution. As a result, you have an application that contains your solution with the updates from the MODIFIED application. Alternatively, the MODIFIED solution can be your solution and the TARGET solution can be the new release from Microsoft. The actual versions that you use to set each cmdlet parameter depend on your concrete scenario. However, we recommend that MODIFIED contains the solution with the fewest changes compared to ORIGINAL. The Compare-NAVApplicationObject cmdlet compares two sets of application objects and stores the differences in DELTA files in the specified folder.  
   
@@ -30,7 +30,7 @@ You can use [!INCLUDE[wps_2](includes/wps_2_md.md)] cmdlets to compare different
   
 ### To compare two sets of application objects  
   
-1.  Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] in administrator mode.  
+1.  Open the [!INCLUDE[nav_dev_shell](../developer/includes/nav_dev_shell_md.md)] in administrator mode.  
   
 2.  Navigate to the location of your folders by typing a command such as the following:  
   
@@ -77,7 +77,7 @@ You can use [!INCLUDE[wps_2](includes/wps_2_md.md)] cmdlets to compare different
   
 ### To apply DELTA files to application objects  
   
-1.  Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] in administrator mode.  
+1.  Open the [!INCLUDE[nav_dev_shell](../developer/includes/nav_dev_shell_md.md)] in administrator mode.  
   
 2.  Navigate to the location of your folders by typing a command such as the following:  
   
@@ -95,7 +95,7 @@ You can use [!INCLUDE[wps_2](includes/wps_2_md.md)] cmdlets to compare different
   
      This merges the difference between ORIGINAL and MODIFIED with the target solution and puts the resulting solution in the RESULT folder.  
   
- You can now import the merged objects into a [!INCLUDE[navnow](includes/navnow_md.md)] database. For more information, see [How to: Merge Application Changes](How-to--Merge-Application-Changes.md).  
+ You can now import the merged objects into a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database. For more information, see [How to: Merge Application Changes](How-to--Merge-Application-Changes.md).  
   
 ## See Also  
  [How to: Merge Application Changes](How-to--Merge-Application-Changes.md)   
