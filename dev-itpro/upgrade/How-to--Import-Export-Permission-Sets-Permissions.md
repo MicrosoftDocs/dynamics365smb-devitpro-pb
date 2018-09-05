@@ -12,7 +12,7 @@ ms.prod: "dynamics-nav-2018"
 ---
 # Export and Import Permission Sets and Permissions
 
-This articles describes how to import and export permission sets and permissions as XML files. This is useful when upgrading from one version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to another.
+This articles describes how to import and export permission sets and permissions as XML files. This is useful when upgrading from [!INCLUDE[navnow](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] or from one version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to another.
 
 ## <a name="ExportPerms"></a>Export permission sets and permissions  
 
@@ -35,6 +35,5 @@ This articles describes how to import and export permission sets and permissions
      In the request page for the XMLport, in the **Direction** field, choose **Import**, choose the **OK** button, and then specify the permissions XML file.  
 
 ## See Also  
-[About Permissions](About-Permissions.md)  
-[How to: Create or Modify Permission Sets](How-to--Create-or-Modify-Permission-Sets.md)  
-[Upgrading to Microsoft Dynamics NAV](Upgrading-to-Microsoft-Dynamics-NAV-2017.md)  
+
+[Upgrading to Business Central](upgrading-to-business-central.md)  

@@ -26,17 +26,22 @@ The data upgrade process described in this article leads you through the databas
 
 ##  <a name="Prereqs"></a> Prerequisites  
 Before you start the upgrade tasks, make sure you meet the following prerequisites:
-1.  Your computer uses the same codepage as the data that will be upgraded.
 
-    If you use conflicting codepages, some characters will not display in captions, and you might not be able to access the upgraded database. This is because [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] must remove incorrect metadata characters to complete the data upgrade. In this case, after upgrade, you must open the database in the development environment on a computer with the relevant codepage and compile all objects. This adds the missing characters again.
+1.  A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation   with the upgraded application. 
 
-    Optionally, you can export the captions before the upgrade. For more information, see [How to: Add Translated Strings for Conflicting Text Encoding Formats](How-to--Add-Translated-Strings-for-Conflicting-Text-Encoding-Formats.md).
-
-2.  You have a FOB file(s) that contains the upgraded application code (single-tenant only) and upgrade toolkit. The upgrade toolkit includes upgrade codeunits for handling the data upgrade. The upgrade toolkit can be in the same FOB file as the application code or in a separate FOB file.  
+    - A [!INCLUDE[server](../developer/includes/server.md)] connected to the application database.
+    - [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+    - [!INCLUDE[admintool](../developer/includes/admintool.md)]
+    - [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].
 
     For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
 
-    For W1 versions, you can find the default upgrade toolkit objects in the  **UpgradeToolKit\Data Conversion Tools** folder on the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] installation media (DVD). Choose the FOB that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version from which you are upgrading:
+2. Upgrade toolkit for the application version.
+
+    The upgrade toolkit includes upgrade codeunits for handling the data upgrade.
+    For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
+
+    For W1 versions, you can find the default upgrade toolkit objects in the  **UpgradeToolKit\Data Conversion Tools** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD). Choose the FOB that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version from which you are upgrading:
 
     |  Version  |  FOB  |  Remarks  |
     |-----------|-------|-----------|
@@ -49,17 +54,23 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
     For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade11001300.DK.fob** for Denmark or **Upgrade11001300.DE.fob** for Germany.  
 
-3.  You have exported the permission sets (except SUPER) and permissions as XML files.
+3.  Exported the permission sets (except SUPER) and permissions from the old tenant database.
 
     To exclude the SUPER permission set when running XMLPort 9171, add the filter `Role ID is <>SUPER`. 
 
     For more information, see [Exporting and Importing Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ExportPerms).
 
-4. Custom V1 extensions have been converted to V2 extensions.
+4. Custom V1 extensions used in [!INCLUDE[navnow](../developer/includes/navnow_md.md)] have been converted to V2 extensions.
 
-5.   \(Optional\) Make a copy of the web.config file for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. With [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances run on Microsoft .NET Core. With this change, the instances now use a .json type file (called navsettings.json) instead of the web.config file.
+5. Your computer uses the same codepage as the data that will be upgraded.
 
-6.   \(Optional\) If the old application uses data encryption, you exported the encryption key file that it used for the data encryption.  
+    If you use conflicting codepages, some characters will not display in captions, and you might not be able to access the upgraded database. This is because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must remove incorrect metadata characters to complete the data upgrade. In this case, after upgrade, you must open the database in the development environment on a computer with the relevant codepage and compile all objects. This adds the missing characters again.
+
+    <!--Optionally, you can export the captions before the upgrade. For more information, see [How to: Add Translated Strings for Conflicting Text Encoding Formats](How-to--Add-Translated-Strings-for-Conflicting-Text-Encoding-Formats.md)-->.
+
+6.   \(Optional\) Make a copy of the web.config file for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. With [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances run on Microsoft .NET Core. With this change, the instances now use a .json type file (called navsettings.json) instead of the web.config file.
+
+7.   \(Optional\) If the old application uses data encryption, you exported the encryption key file that it used for the data encryption.  
 
     For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).  
 
@@ -69,30 +80,16 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, if you have any custom code in codeunit 1, export the existing codeunit 1 as a .fob or .txt file.
 -->
 > [!NOTE]
->If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete. 
+> If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete. 
 
-## Task 1: Prepare the old database
+##  <a name="SQLBackup"></a> Task 1: Create a full SQL backup of the old tenant database  
 
-1. Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database to build all application objects.  
+Create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
-    For more information, see [How to: Build Server Application Objects](How-to--Build-Server-Application-Objects.md).  
+ For more information, see [Create a Full Database Backup \(SQL Server\)](http://msdn.microsoft.com/en-us/library/ms187510.aspx).
 
-2.  Unlock all application objects.  
+## Task 2 Make sure all V1 extensions from the old tenant
 
-    For more information, see [How to: Unlock an Object](How-to--Unlock-an-Object.md).  
-
-3.  Synchronize the database schema by using the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or Dynamics NAV Administration Shell that matches the old database.  
-
-    For more information, see [Synchronizing the Tenant Database and Application Database](../adminsitration/synchronize-tenant-database-and application-database.md).
-
-4. (multitenant) Dismount tenant that you want to upgrade
-
-##  <a name="SQLBackup"></a> Task 2: Create a full SQL backup of the old database on SQL Server  
- You must create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
-
- For more information, see [Create a Full Database Backup \(SQL Server\)](http://msdn.microsoft.com/en-us/library/ms187510.aspx).  
-
-## Task 3 Uninstall all extensions in old database (single-tenant only) V1 for multinent
 Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that matches to old database, and run these commands: 
 1.  To get a list of the extensions that are installed, run this command:
 
@@ -100,136 +97,21 @@ Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that ma
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant <TenantID>
     ```
     
-    Replace `<ServerInstanceName>` with the name of the [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance that the database connects to. Replace `<TenantID>` with the tenant ID of the database. If you do not have a multitenant server instance, use `default`.
-
-    <!-- In the table that appears, V1 extensions are indicated by `CSIDE` in the `Extension Type` column.-->
-
-    <!-- V1 extensions have `ExtensionType` of `CSIDE`. Make a note of the V1 extensions that you will uninstall because you will reinstall these later, after you upgrade the database.-->
+    V1 extensions are indicated by `CSIDE` in the `Extension Type` column.
 2. For each extension, run this command to uninstall it:
 
     ```
     Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
     ```
-    Replace `<ServerInstanceName>` with the name of the [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance that the database connects to.
-    
-    Replace `<Name>` and `<N.N.N.N>` with the name and version of the Extension V1 as it appeared in the previous step.
-
-    Alternately, to remove them all at once, you can run this command:
-
-    ```
-    Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
-    ```
+## Task 3: Dismount the tenant
 
 
-<!-- 
-    > [!IMPORTANT]
-    > Do not uninstall V2 extensions (ModernDev type).
+##  <a name="ImportAppObj"></a> Task 4: Import the upgrade toolkit into the application database 
+Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for  [!INCLUDE[prodshort](../developer/includes/prodshort.md)], import the upgrade toolkit objects FOB file.
 
- 
-3. Unpublish the V1 extensions that have **Microsoft** as the publisher:
-
-    ```
-    Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
-    ```
-  
-    Replace `<Name>` and `<N.N.N.N>` with the name and version of the Extension V1 as it appeared in the previous step.
-
-    You will publish these again later.
--->
-
-##  <a name="UploadLicense"></a> Task 4: Upload the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] license to the old database  
-By using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database, upload the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] license to the database.
-
-For more information, see [[Uploading a License File for a Specific Database](../cside/upload-license-file.md#UploadtoDatabase).  
-
-##  <a name="DeleteObjects"></a> Task 5: Delete all objects except tables from the old database   
-In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] version that matches the database, open the old database, open Object Designer, select all objects except tables, and then choose **Delete**.
-
-You can also use the [DeleteObjects](DeleteObjects.md) command of the finsql.exe.
-
-##  <a name="UninstallOldProduct"></a> Task 6:  Uninstall the old product (optional) and install the new product (already done for multitenant?)
-Uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], and then install [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
-
-As a minimum, you must install the following [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components: [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], [!INCLUDE[admintool](../developer/includes/admintool.md)], Server, [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)]and SQL Server Components. You can install these components by choosing the **Custom** option during Setup. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setupn.md).
-
-## Task 7: Clear Dynamics NAV Server instance and debugger breakpoint records from old database (single-tenant only)
-Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the database in SQL Server.  
-
-1.  If you did not uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
-2.  Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
-
-    ```
-    DELETE FROM [<My NAV Database Name>].[dbo].[Server Instance]
-    DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
-    ```
-
-##  <a name="ConvertDb"></a> Task 8: Convert the old database to the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] format  (single tenant only)
-
-If the database is on Azure SQL Database, you must first add your user account to the **dbmanager** database role on master database. This membership is only required for converting the database, and can be removed afterwards. 
-
-To convert the old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] format, open the old database in the new [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and follow the conversion instructions.
-
-> [!IMPORTANT]
-> Do not run schema synchronization at this time. Choose to run it **later**.
+For more information, see [How to: Import Objects](how-to--import-objects.md).
 
 
-##  <a name="ImportAppObj"></a> Task 9: Import the upgraded application objects (single tenant only) and upgrade toolkit objects into the converted database  (or apllication database for multinent)
-Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for , import the application objects that you want in the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database. This includes the application objects FOB file (from the application code upgrade) and the upgrade toolkit objects FOB file.
-
-1. Import the application objects FOB file first, and then import the upgrade toolkit FOB file.
-
-    For more information, see [How to: Import Objects](how-to--import-objects.md).
-
-2. When you import the FOB file, if you experience metadata conflicts, the **Import Worksheet** windows appears.
-
-    Review the Worksheet page. For more information, see [Import Worksheet](Import-Worksheet.md).
-    
-    Choose **Replace All**, and then **OK** to continue.
-
-3. **IMPORTANT** When prompted about table synchronization, set the **Synchronize Schema** option to **Later**.  
-
-##  <a name="ConnectToServer"></a> Task 10: Connect a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] Server instance to the converted database
-You use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] or [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
-
-The service account that is used by the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database on SQL Server or Azure SQL Database.
-
-
-> [!IMPORTANT]  
->  When upgrading a large database, you should increase the **SQL Command Timeout** setting for the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, to avoid timeouts during schema synchronization. The default setting is 30 minutes.  
-
-For more information, see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).
-
-##  <a name="CompSysTables"></a> Task 11: Compile all objects
-1. In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], set it to use the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that connects to the database.
-
-    For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md).  
-
-2. Use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or finsql.exe to compile all objects. This includes the imported application objects, data tables, and system tables. 
-
-    > [!IMPORTANT]
-    >Choose to run schema synchronization later. For example, in Object Designer, choose **Tools**, choose **Compile**, set the **Synchronize Schema** option to **Later**, and then choose **OK**. For more information, see [Compiling Objects](../cside/compiling-objects.md).
-
-3. ([!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] and earlier only) If you get errors on the following table objects, use the Object Designer to delete the objects because they are no longer used.
-
-    -   Table 470 Job Queue (replaced by the [Task Scheduler](Task-Scheduler.md))
-    -   Table 824 DO Payment Connection Details
-    -   Table 825 DO Payment Connection Setup
-    -   Table 827 DO Payment Credit Card
-    -   Table 828 DO Payment Credit Card Number
-    -   Table 829 DO Payment Trans. Log Entry
-    -   Table 1510 Notification Template
-
-    
-    When you delete a table object, in the **Delete** confirmation dialog box that appears, set the **Synchronize Schema** option to **Force**.
-    
-    > [!IMPORTANT] 
-    > In this step, it is very important that you do not use the **Sync. Schema For All Tables** option from the **Tools** menu.
-      
-4.  ([!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] and earlier only) If the old database includes test runner codeunits, you will get errors on these codeunits that the OnBeforeTestRun and OnAfterTestRun trigger signatures are not valid. To fix these issues, you change the signature of the OnBeforeTestRun and OnAfterTestRun triggers to include the *TestPermission* parameter.
-
-    For more information, see [Resolving OnBeforeTestRun and OnAfterTestRun Trigger Errors When Converting a Database](Resolve-OnBeforeTestRun-OnAfterTestRun-Compile-Errors.md).
-
-    The triggers for codeunit **130400 CAL Test Runner** and **130402 CAL Command Line Test Runner** will be updated for you during the data upgrade.
 
 <!-- 
 ##  <a name="RunSync1"></a> Task 12: Recompile published extensions  
@@ -243,8 +125,25 @@ Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
 
 efejfefjejf   
 -->
+## Publish V2 extensions that you want to uses on the tenant
 
-##  <a name="RunSync1"></a> Task 12: Run the schema synchronization on the imported objects
+
+## Mount the on the server
+
+
+##  <a name="RunSync1"></a> Task 13: Run the schema synchronization on the imported objects (mount-tenant, then run sync)
+<!--
+1. Recompile published V1 extensions.
+
+    Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) of the [!INCLUDE[navnowlong_md](../developer/includes/navnowlong_md.md)] Administration Shell to compile the published extensions to make sure they are work with the new platform and application.
+
+    For example, you can run the following command to recompile all extensions:
+
+    ```
+    Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
+ 2. Mount-navtenant Mount-NAVTenant -ServerInstance DynamicsNAV130 -Tenant MyTenant1 -DatabaseName "Demo Database NA
+V (11-0)" -OverwriteTenantIdInDatabase
+-->
 Synchronize the database schema with validation. You can run the schema synchronization from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
 For more information, see [Synchronizing the Tenant Database and Application Database](../adminsitration/synchronize-tenant-database-and application-database.md).
