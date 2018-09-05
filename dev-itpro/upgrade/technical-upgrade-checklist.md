@@ -26,7 +26,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Step|More info| Done |
 |----|-----------|--|
 |Backup the database(s).|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
-|(Single tenant only) Uninstall all extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
+|(Single-tenant only) Uninstall all extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
 |Ensure all objects are complied, unlocked, and tables are synchronized.|[See...](../cside/cside-compiling-objects.md)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licence-file.md)||
 |(Multitenant mode only) Dismount the tenant|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant?view=dynamicsnav-ps-2018)||
@@ -64,7 +64,7 @@ This article provides an overview of the technical upgrade process for Business 
 ## Post-upgrade tasks 
 |Step|More info| Done |
 |----|-----------|--|
-|(Single tenant mode only) Install the V2 extensions previously uninstalled.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
+|(Single-tenant mode only) Install the V2 extensions previously uninstalled.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
 |Move custom code from old codeunit 1 to new codeunits.|[See...](transition-from-codeunit1.md)||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client |[See...](upgrade-pages-report-for-search.md) ||
 |Upload customer license. |[See...](../cside/cside-upload-licence-file.md)||
