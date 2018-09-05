@@ -38,6 +38,8 @@
 <!-- end deployment -->
 <!-- administration-->
 # [Administration](administration/administration.md)
+## [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
+## [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 ## On-Premises
 ### [Connect to the Intelligent Cloud](administration/about-intelligent-edge.md)
 #### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
