@@ -38,6 +38,7 @@
 <!-- end deployment -->
 <!-- administration-->
 # [Administration](administration/administration.md)
+## [Tenant administration center](administration/tenant-admin-center.md)
 ## Automation
 ### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 ### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
