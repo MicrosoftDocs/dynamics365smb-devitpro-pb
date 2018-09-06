@@ -125,8 +125,10 @@ Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
 
 efejfefjejf   
 -->
-## Publish V2 extensions that you want to uses on the tenant
 
+## Publish the system, test, and application symbols
+
+## Publish V2 extensions that you want to uses on the tenant
 
 ## Mount the on the server
 
