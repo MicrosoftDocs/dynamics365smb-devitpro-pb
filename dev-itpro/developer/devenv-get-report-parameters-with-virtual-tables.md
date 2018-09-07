@@ -1,5 +1,5 @@
 ---
-title: Field Groups
+title: Get Report Parameters using Virtual Tables
 description: A virtual table allows you to generate report parameters, XML string without invoking the report request page. 
 ms.custom: na
 ms.date: 09/03/2018
