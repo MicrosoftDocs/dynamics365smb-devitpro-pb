@@ -29,7 +29,7 @@ If a table fails to replicate, a blocker is placed on the Business Central cloud
 
 The initial data replication time can vary depending factors such as the amount of data to replicate, your SQL configuration or your connection speeds.  The initial replication will take the longest amount of time to complete because all data is replicating. After the initial replication, only changes in data will be replicated so they should run more quickly.
 
-**Replicaing Extensions Data**
+### Replicaing Extensions Data
 
 When an Intelligent Cloud environment is configured, it is highly recommended that you test the impact of any Extension in a Sandbox environment before having them installed in your product Business Central Intelligent Cloud tenant to help avoid any data failures or untended consequences.
 
@@ -41,6 +41,6 @@ In this scenario, we recommend to set the ‘ReplicateData’ property to ‘No�
 
 If your extension is referencing a base table, this could cause your base table to appear empty when viewing data in your Business Central cloud tenant. If that happens, unistall the extension from your Business Central cloud tenant and run the data replication process again.
 
-**Non Replicatated Data**
+### Non Replicatated Data
 
 During the data replication process, we do not replicate most system tables, users or permissions.
