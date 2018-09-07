@@ -291,20 +291,21 @@ You import the permission sets and permissions XML files.
  In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], choose **Tools**, choose **Language**, and then select the language of the original customer database.  
 
 ##  <a name="AddControlAddins"></a> Task 16: Register client control add-ins  
- The database is now fully upgraded and is ready for use. However, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes the following client control add-ins.
+  The database is now fully upgraded and is ready for use. However, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes the following client control add-ins.
 -   Microsoft.Dynamics.Nav.Client.BusinessChart  
 -   Microsoft.Dynamics.Nav.Client.DynamicsOnlineConnect
 -   Microsoft.Dynamics.Nav.Client.FlowIntegration
 -   Microsoft.Dynamics.Nav.Client.OAuthIntegration
 -   Microsoft.Dynamics.Nav.Client.PageReady  
 -   Microsoft.Dynamics.Nav.Client.PingPong  
+-   Microsoft.Dynamics.Nav.Client.PowerBIManagement
+-   Microsoft.Dynamics.Nav.Client.RoleCenterSelector
 -   Microsoft.Dynamics.Nav.Client.SocialListening  
 -   Microsoft.Dynamics.Nav.Client.TimelineVisualization
 -   Microsoft.Dynamics.Nav.Client.VideoPlayer  
 -   Microsoft.Dynamics.Nav.Client.WebPageViewer
 
-To use these add-ins, they must be registered in table **2000000069 Client Add-in**. Depending on the version that you upgraded from, all the add-ins might not be registered after the upgrade process. You can register missing control add-ins in the **Control Add-ins** page in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. The assemblies (.dlls) for these add-ins are in subfolders to the **Add-ins** folder of the Dynamics NAV Server installation, which by default is  [!INCLUDE[navnow_install_md](../developer/includes/navnow_install_md.md)]\Service\Add-ins. For more information, see [How to: Register a Windows Client Control Add-in](How-to--Register-a-Windows-Client-Control-Add-in.md).  
-
+To use these add-ins, they must be registered in table **2000000069 Client Add-in**. Depending on the version that you upgraded from, all the add-ins might not be registered after the upgrade process. You can register missing control add-ins in the **Control Add-ins** page in the client. The assemblies (.dlls) for these add-ins are in subfolders to the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation, which by default is [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service\Add-ins. For more information, see [How to: Register a Windows Client Control Add-in](How-to--Register-a-Windows-Client-Control-Add-in.md).
 
 ##  <a name="AddExtensions"></a> Task 17: Publish and install/upgrade extensions
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several extensions that you publish and install as part of the upgrade process. To enable these extensions, it is important that you follow the steps below.
@@ -325,7 +326,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
     For more information, see [Configuring Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).
 4. Generate the application symbol references for running Running C/SIDE and AL Side-by-Side:
 
-    1. Open a command prompt, change to the directory where the `finsql.exe` file has been installed as part of [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_longt_md.md)], and then run the following command:
+    1. Open a command prompt, change to the directory where the `finsql.exe` file has been installed as part of [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and then run the following command:
 
         ```
         finsql.exe Command=generatesymbolreference, Database=<MyDatabaseName>, ServerName=<DatabaseServerName>\<DatabaseInstance>
