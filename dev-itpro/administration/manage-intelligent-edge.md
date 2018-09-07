@@ -17,7 +17,7 @@ ms.author: bmeier
 
 # Managing your Intelligent Cloud Environment
 
-You can connect your on-premises solution to the Intelligent Cloud through a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. Once you have set up this connection, you have access to the **Intelligent Cloud Management** page in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, from where you can manage the connection.  
+You can connect your on-premises solution to the Intelligent Cloud through a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. Once you have set up this configuration, you have access to the **Intelligent Cloud Management** page in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, from where you can manage your Intelligent Cloud environment and data replication.  
 
 ## Intelligent Cloud Management
 
