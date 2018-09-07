@@ -143,7 +143,7 @@ Depending on the application that you are upgrading, you can choose to analyze a
 You can analyze the conflicts in any tool, make the relevant changes, and then run the merge operation again. For more information, see [Handling Merge Conflicts](Handling-Merge-Conflicts.md). Alternatively, you can go directly to task 5 to import the merged files into the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and resolve the conflicts there. 
 
 ## Task 5: Import and Compile Merged Objects in an Empty Database
-After you have completed the merge, you import the new merged application objects as text files into a new (empty) database, and then compile all objects. You must resolve any compilation errors before you can continue. The text files include successfully merged code, and code that is partially merged. You can import the partially merged objects into the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] development environment and resolve the conflicts there.
+After you have completed the merge, you import the new merged application objects as text files into a new (empty) [!INCLUDE[prodshort](../developer/includes/prodshort.md) database, and then compile all objects. You must resolve any compilation errors before you can continue. The text files include successfully merged code, and code that is partially merged. You can import the partially merged objects into the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] development environment and resolve the conflicts there.
 
 1.  Create a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database for the new upgraded application. The database should be empty, except for the system tables.
 
@@ -195,17 +195,16 @@ After you have completed the merge, you import the new merged application object
 
     When you compile the objects, an error is thrown for each code conflict, and you can use the tools that are available in the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to resolve the conflicts.
 
-You now have a new database with a fully upgraded application.
-
-## Task 6: Make sure the family and version settings of new application are compatible for the data upgrade
+## Task 6: Check/change the application family and version (multitenant only)
 
 The application and tenant databases are tagged with `Family` and `Version`. To perform the data upgrade, the `Family` on the application must match that tenant's `Family`. The `Version` of the application must be greater than or equal to the tenant's  `Version`. The easiest way to ensure that `Family` and `Version` of the upgraded application are compatible for data upgrade is to set `Family` to the same value as the old application, and set the `Version` to a higher value than the old application. 
 
-To get the `Family` and `Version`, use the [Get-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/get-navapplication) cmdlet. To set the `Family` and `Version`, use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet.  
+To get the `Family` and `Version`, use the [Get-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/get-navapplication) cmdlet. To set the `Family` and `Version`, use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet.
 
+You now have a new database with a fully upgraded application. For a multitenant deployment, you can start the data upgrade. For this you will use the new server instance that connects to the upgraded application database. See [Upgrading the Data](Upgrading-the-Data.md).    
 
-## Task 7: Export All Objects (single-tenant mode only) 
-Now, you must export all objects of the new database to an **objects.fob** file so that you can import them when performing the data upgrade. The export must include customized objects, upgraded reget-helpports, and all other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects.
+## Task 7: Export All Objects (single-tenant only) 
+With a single-tenant deployment, you export all objects of the new database to an **objects.fob** file so that you can import them when performing the data upgrade. The export must include customized objects, upgraded reget-helpports, and all other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects.
 
 As with exporting objects in Task 1, you can use either the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], finsql.exe, or [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
@@ -215,7 +214,7 @@ With the [!INCLUDE[devshell](../developer/includes/devshell.md)], you can run a 
 Export-NAVApplicationObject objects.fob -DatabaseName "My Upgraded App" -DatabaseServer [server_name]\[database_instance]
 ```  
 
-This completes the upgrade of the application code. Next, you must upgrade the data in the database. For more information, see [Upgrading the Data](Upgrading-the-Data.md).  
+This completes the upgrade of the application code for single-tenant deployment. Next, you must upgrade the data in the database. See [Upgrading the Data](Upgrading-the-Data.md).  
 
 
 
