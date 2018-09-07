@@ -147,10 +147,10 @@ After you have completed the merge, you import the new merged application object
 
 1.  Create a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database for the new upgraded application. The database should be empty, except for the system tables.
 
-    For example, give the database the name *My Upgraded App*. For more information, see [Creating Databases](../cside/cside-create-databases.md).
+    For example, give the database the name *My Upgraded App*. For more information, see [Creating and Altering Databases](../cside/cside-create-databases.md).
 
     >[!IMPORTANT]  
-    >Make sure to synchronize the schema for all tables of the new database.
+    > You must set the collation of the new database to match the collation of the old application database. To see the collation of the old database, open the database in [[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], then choose **File** > **Database** > **Alter** > **Collation**. 
 
 2.  Make sure the database includes a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.
 
@@ -197,7 +197,14 @@ After you have completed the merge, you import the new merged application object
 
 You now have a new database with a fully upgraded application.
 
-## Task 6: Export All Objects  
+## Task 6: Make sure the family and version settings of new application are compatible for the data upgrade
+
+The application and tenant databases are tagged with `Family` and `Version`. To perform the data upgrade, the `Family` on the application must match that tenant's `Family`. The `Version` of the application must be greater than or equal to the tenant's  `Version`. The easiest way to ensure that `Family` and `Version` of the upgraded application are compatible for data upgrade is to set `Family` to the same value as the old application, and set the `Version` to a higher value than the old application. 
+
+To get the `Family` and `Version`, use the [Get-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/get-navapplication) cmdlet. To set the `Family` and `Version`, use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet.  
+
+
+## Task 7: Export All Objects (single-tenant mode only) 
 Now, you must export all objects of the new database to an **objects.fob** file so that you can import them when performing the data upgrade. The export must include customized objects, upgraded reget-helpports, and all other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects.
 
 As with exporting objects in Task 1, you can use either the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], finsql.exe, or [!INCLUDE[devshell](../developer/includes/devshell.md)].
@@ -209,6 +216,8 @@ Export-NAVApplicationObject objects.fob -DatabaseName "My Upgraded App" -Databas
 ```  
 
 This completes the upgrade of the application code. Next, you must upgrade the data in the database. For more information, see [Upgrading the Data](Upgrading-the-Data.md).  
+
+
 
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
