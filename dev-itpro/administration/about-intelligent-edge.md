@@ -113,7 +113,7 @@ When an Intelligent Cloud environment is configured, it is highly recommended th
 
 ## System Requirements
 
-To connect to the Intelligent Cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md), the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also use either [!INCLUDE[prodshort](../developer/includes/prodshort.md) on-premises, or Dynamics GP 2018 R2.
+To connect to the Intelligent Cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md), the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also use either [!INCLUDE[prodshort](../developer/includes/prodshort.md) (on-premises) or Dynamics GP 2018 R2.
 
 ## See Also
 
