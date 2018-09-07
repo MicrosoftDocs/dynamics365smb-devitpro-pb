@@ -14,7 +14,7 @@ ms.date: 09/07/2018
 ms.author: bmeier
 
 ---
-Connect to the Intelligent Cloud with [!INCLUDEprodlong]
+# Frequently Asked Questions 
 
 This section contains answers to frequently asked question regarding Business Central Intelligent Cloud.
 
