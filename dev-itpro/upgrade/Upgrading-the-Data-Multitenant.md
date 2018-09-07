@@ -12,14 +12,9 @@ ms.prod: "dynamics-nav-2018"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-This topic describes the tasks required for upgrading the following database versions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
+This article describes the tasks required for upgrading to the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
--   [!INCLUDE[nav7long](../developer/includes/nav7long_md.md)]
--   [!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]
--   [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]
--   [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]
--   [!INCLUDE[nav2017](../developer/includes/nav2017.md)]
-- [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]
+## About Data Upgrade
 
 You use data conversion tools provided with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to convert the old data with the old version’s table and field structure, so that it functions together with the new version’s table and field structure. Mainly, only table objects and table data are modified during the data upgrade process. Other objects, such as pages, reports, codeunits, and XMLports are upgraded as part of the application code upgrade process.
 
@@ -76,11 +71,6 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
     For more information, see [Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).  
 
-<!-- 
-7. Prepare for codeunit 1 removal
-
-    With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, if you have any custom code in codeunit 1, export the existing codeunit 1 as a .fob or .txt file.
--->
 > [!NOTE]
 > If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete. 
 

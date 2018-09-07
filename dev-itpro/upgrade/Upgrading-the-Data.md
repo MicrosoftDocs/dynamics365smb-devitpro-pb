@@ -60,40 +60,19 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
 5.   \(Optional\) Make a copy of the web.config file for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. With [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances run on Microsoft .NET Core. With this change, the instances now use a .json type file (called navsettings.json) instead of the web.config file.
 
-6.   \(Optional\) If the old application uses data encryption, you exported the encryption key file that it used for the data encryption.  
+6.   If the old application uses data encryption, you exported the encryption key file that it used for the data encryption.  
 
     For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).  
 
-<!-- 
-7. Prepare for codeunit 1 removal
-
-    With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, if you have any custom code in codeunit 1, export the existing codeunit 1 as a .fob or .txt file.
--->
 > [!NOTE]
 >If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete. 
 
-## Task 1: Prepare the old database
-
-1. Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database to build all application objects.  
-
-    For more information, see [How to: Build Server Application Objects](How-to--Build-Server-Application-Objects.md).  
-
-2.  Unlock all application objects.  
-
-    For more information, see [How to: Unlock an Object](How-to--Unlock-an-Object.md).  
-
-3.  Synchronize the database schema by using the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or Dynamics NAV Administration Shell that matches the old database.  
-
-    For more information, see [Synchronizing the Tenant Database and Application Database](../adminsitration/synchronize-tenant-database-and application-database.md).
-
-4. (multitenant) Dismount tenant that you want to upgrade
-
-##  <a name="SQLBackup"></a> Task 2: Create a full SQL backup of the old database on SQL Server  
+##  <a name="SQLBackup"></a> Task 1: Create a full SQL backup of the old database on SQL Server  
  You must create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
  For more information, see [Create a Full Database Backup \(SQL Server\)](http://msdn.microsoft.com/en-us/library/ms187510.aspx).  
 
-## Task 3 Uninstall all extensions in old database (single-tenant only) V1 for multinent
+## Task 2 Uninstall all extensions in old database 
 Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that matches to old database, and run these commands: 
 1.  To get a list of the extensions that are installed, run this command:
 
@@ -121,23 +100,6 @@ Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that ma
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
     ```
 
-
-<!-- 
-    > [!IMPORTANT]
-    > Do not uninstall V2 extensions (ModernDev type).
-
- 
-3. Unpublish the V1 extensions that have **Microsoft** as the publisher:
-
-    ```
-    Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
-    ```
-  
-    Replace `<Name>` and `<N.N.N.N>` with the name and version of the Extension V1 as it appeared in the previous step.
-
-    You will publish these again later.
--->
-
 ##  <a name="UploadLicense"></a> Task 4: Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license to the old database  
 By using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database, upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license to the database.
 
@@ -148,15 +110,16 @@ In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] vers
 
 You can also use the [DeleteObjects](DeleteObjects.md) command of the finsql.exe.
 
-##  <a name="UninstallOldProduct"></a> Task 6:  Uninstall the old product (optional) and install the new product (already done for multitenant?)
-Uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], and then install [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+##  <a name="UninstallOldProduct"></a> Task 6:  Install the new product 
 
-As a minimum, you must install the following [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components: [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], [!INCLUDE[admintool](../developer/includes/admintool.md)], Server, [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)]and SQL Server Components. You can install these components by choosing the **Custom** option during Setup. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setupn.md).
+Install [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+
+As a minimum, you must install the following [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components: [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], [!INCLUDE[admintool](../developer/includes/admintool.md)], Server, [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] and SQL Server Components, and Al  You can install these components by choosing the **Custom** option during Setup. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setupn.md).
 
 ## Task 7: Clear Dynamics NAV Server instance and debugger breakpoint records from old database (single-tenant only)
 Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the database in SQL Server.  
 
-1.  If you did not uninstall the old [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
+1.  Make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
 2.  Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
 
     ```
@@ -174,7 +137,7 @@ To convert the old database to the [!INCLUDE[prodshort](../developer/includes/pr
 > Do not run schema synchronization at this time. Choose to run it **later**.
 
 
-##  <a name="ImportAppObj"></a> Task 9: Import the upgraded application objects (single tenant only) and upgrade toolkit objects into the converted database  (or apllication database for multinent)
+##  <a name="ImportAppObj"></a> Task 9: Import the upgraded application objects
 Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for , import the application objects that you want in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. This includes the application objects FOB file (from the application code upgrade) and the upgrade toolkit objects FOB file.
 
 1. Import the application objects FOB file first, and then import the upgrade toolkit FOB file.
@@ -193,7 +156,6 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
 You use the [!INCLUDE[admintool](../developer/includes/admintool.md)] for  or [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
 
 The service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database on SQL Server or Azure SQL Database.
-
 
 > [!IMPORTANT]  
 >  When upgrading a large database, you should increase the **SQL Command Timeout** setting for the [!INCLUDE[server](../developer/includes/server.md)] instance, to avoid timeouts during schema synchronization. The default setting is 30 minutes.  
@@ -232,8 +194,7 @@ For more information, see [Connecting a Server Instance to a Database](../admini
 
     The triggers for codeunit **130400 CAL Test Runner** and **130402 CAL Command Line Test Runner** will be updated for you during the data upgrade.
 
-<!-- 
-##  <a name="RunSync1"></a> Task 12: Recompile published extensions  
+##  <a name="RunSync1"></a> Task 12: Recompile/repair published extensions  
 Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) of the [!INCLUDE[navnowlong_md](../developer/includes/navnowlong_md.md)] Administration Shell to compile the published extensions to make sure they are work with the new platform and application.
 
 For example, you can run the following command to recompile all extensions:
@@ -242,11 +203,10 @@ For example, you can run the following command to recompile all extensions:
 Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
 ```
 
-efejfefjejf   
--->
-
 ##  <a name="RunSync1"></a> Task 12: Run the schema synchronization on the imported objects
-Synchronize the database schema with validation. You can run the schema synchronization from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
+Synchronize the database schema with validation.
+
+For example, run the [Sync-NAVTenant]([!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
 For more information, see [Synchronizing the Tenant Database and Application Database](../adminsitration/synchronize-tenant-database-and application-database.md).
 
@@ -256,13 +216,6 @@ A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and u
 > [!NOTE]  
 >  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the Start-NavDataUpgrade cmdlet and set the *-SkipCompanyIntitialization* parameter.  
 
-**From the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)]**:  
-
-Open [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] as an administrator. On the **Tools** menu, choose **Data Upgrade**, and then choose **Start** and follow the instructions.  
-
-To view the progress of the data upgrade, on the **Tools** menu, choose **Data Upgrade**, and then choose **Show Progress**.  
-
-**From the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:**  
 
 Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run Start-NavDataUpgrade cmdlet as follows:  
 
