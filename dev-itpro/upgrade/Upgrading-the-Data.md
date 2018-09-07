@@ -12,15 +12,16 @@ ms.prod: "dynamics-nav-2018"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-This topic describes the tasks required for upgrading the following database versions to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]:
+This topic describes the tasks required for upgrading the following database versions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
 
 -   [!INCLUDE[nav7long](../developer/includes/nav7long_md.md)]
 -   [!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]
 -   [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]
 -   [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]
 -   [!INCLUDE[nav2017](../developer/includes/nav2017.md)]
+- [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]
 
-You use data conversion tools provided with [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] to convert the old data with the old version’s table and field structure, so that it functions together with the new version’s table and field structure. Mainly, only table objects and table data are modified during the data upgrade process. Other objects, such as pages, reports, codeunits, and XMLports are upgraded as part of the application code upgrade process.
+You use data conversion tools provided with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to convert the old data with the old version’s table and field structure, so that it functions together with the new version’s table and field structure. Mainly, only table objects and table data are modified during the data upgrade process. Other objects, such as pages, reports, codeunits, and XMLports are upgraded as part of the application code upgrade process.
 
 The data upgrade process described in this article leads you through the database conversion (technical upgrade) and then the upgrade of the actual data, which is achieved by using the upgrade toolkit/upgrade codeunits.
 
@@ -36,7 +37,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
     For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
 
-    For W1 versions, you can find the default upgrade toolkit objects in the  **UpgradeToolKit\Data Conversion Tools** folder on the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] installation media (DVD). Choose the FOB that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version from which you are upgrading:
+    For W1 versions, you can find the default upgrade toolkit objects in the  **UpgradeToolKit\Data Conversion Tools** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD). Choose the FOB that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version from which you are upgrading:
 
     |  Version  |  FOB  |  Remarks  |
     |-----------|-------|-----------|
@@ -137,8 +138,8 @@ Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that ma
     You will publish these again later.
 -->
 
-##  <a name="UploadLicense"></a> Task 4: Upload the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] license to the old database  
-By using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database, upload the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] license to the database.
+##  <a name="UploadLicense"></a> Task 4: Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license to the old database  
+By using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database, upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license to the database.
 
 For more information, see [[Uploading a License File for a Specific Database](../cside/upload-license-file.md#UploadtoDatabase).  
 
@@ -163,7 +164,7 @@ Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoin
     DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
     ```
 
-##  <a name="ConvertDb"></a> Task 8: Convert the old database to the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] format  (single tenant only)
+##  <a name="ConvertDb"></a> Task 8: Convert the old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] format  (single tenant only)
 
 If the database is on Azure SQL Database, you must first add your user account to the **dbmanager** database role on master database. This membership is only required for converting the database, and can be removed afterwards. 
 
@@ -174,7 +175,7 @@ To convert the old database to the [!INCLUDE[prodshort](../developer/includes/pr
 
 
 ##  <a name="ImportAppObj"></a> Task 9: Import the upgraded application objects (single tenant only) and upgrade toolkit objects into the converted database  (or apllication database for multinent)
-Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for , import the application objects that you want in the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database. This includes the application objects FOB file (from the application code upgrade) and the upgrade toolkit objects FOB file.
+Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for , import the application objects that you want in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. This includes the application objects FOB file (from the application code upgrade) and the upgrade toolkit objects FOB file.
 
 1. Import the application objects FOB file first, and then import the upgrade toolkit FOB file.
 
@@ -188,23 +189,23 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
 
 3. **IMPORTANT** When prompted about table synchronization, set the **Synchronize Schema** option to **Later**.  
 
-##  <a name="ConnectToServer"></a> Task 10: Connect a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] Server instance to the converted database
-You use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] or [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to connect a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance to the converted database.  
+##  <a name="ConnectToServer"></a> Task 10: Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database
+You use the [!INCLUDE[admintool](../developer/includes/admintool.md)] for  or [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
 
-The service account that is used by the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database on SQL Server or Azure SQL Database.
+The service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database on SQL Server or Azure SQL Database.
 
 
 > [!IMPORTANT]  
->  When upgrading a large database, you should increase the **SQL Command Timeout** setting for the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, to avoid timeouts during schema synchronization. The default setting is 30 minutes.  
+>  When upgrading a large database, you should increase the **SQL Command Timeout** setting for the [!INCLUDE[server](../developer/includes/server.md)] instance, to avoid timeouts during schema synchronization. The default setting is 30 minutes.  
 
-For more information, see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).
+For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md) and [Giving the account necessary database privileges in SQL Server](../deployment/provision-server-account.md#dbo).
 
 ##  <a name="CompSysTables"></a> Task 11: Compile all objects
-1. In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], set it to use the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that connects to the database.
+1. In the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], set it to use the server instance that connects to the database.
 
-    For more information, see [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md) or [Database Information](uiref/-$-S_2349-Database-Information-$-.md).  
+    For more information, see [Changing the Server Instance](../cside/cside-change-server-instance.md).  
 
-2. Use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or finsql.exe to compile all objects. This includes the imported application objects, data tables, and system tables. 
+2. Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or finsql.exe to compile all objects. This includes the imported application objects, data tables, and system tables. 
 
     > [!IMPORTANT]
     >Choose to run schema synchronization later. For example, in Object Designer, choose **Tools**, choose **Compile**, set the **Synchronize Schema** option to **Later**, and then choose **OK**. For more information, see [Compiling Objects](../cside/compiling-objects.md).
@@ -269,7 +270,7 @@ Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an admin
 Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -Force  
 ```  
 
-Replace `<ServerInstanceName>` with the name of the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that is connected to the database.  
+Replace `<ServerInstanceName>` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that is connected to the database.  
 
 To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.  
 
@@ -290,7 +291,7 @@ You import the permission sets and permissions XML files.
  In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], choose **Tools**, choose **Language**, and then select the language of the original customer database.  
 
 ##  <a name="AddControlAddins"></a> Task 16: Register client control add-ins  
- The database is now fully upgraded and is ready for use. However, [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] includes the following client control add-ins.
+ The database is now fully upgraded and is ready for use. However, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes the following client control add-ins.
 -   Microsoft.Dynamics.Nav.Client.BusinessChart  
 -   Microsoft.Dynamics.Nav.Client.DynamicsOnlineConnect
 -   Microsoft.Dynamics.Nav.Client.FlowIntegration
@@ -306,16 +307,10 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
 
 
 ##  <a name="AddExtensions"></a> Task 17: Publish and install/upgrade extensions
-[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] includes several extensions that you publish and install as part of the upgrade process. To enable these extensions, it is important that you follow the steps below.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several extensions that you publish and install as part of the upgrade process. To enable these extensions, it is important that you follow the steps below.
 
 1. Download the system and test symbols file from the *ModernDev* folder on the DVD and the application symbols from [here](http://download.microsoft.com/download/C/7/9/C79AF269-A67E-4EEF-B9F2-52FAFA43E026/Microsoft_Application_11.0.19738.0.app). Make a note of the path where you store the files. 
 
-    <!-- CU6 remove the part about application symbol download>
-
-    > [!NOTE]  
-    > If you are upgrading to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] RTM, the symbols are not included on the DVD, and you must download them here: [system symbols](https://go.microsoft.com/fwlink/?linkid=864045), [test symbols](http://download.microsoft.com/download/C/7/9/C79AF269-A67E-4EEF-B9F2-52FAFA43E026/Microsoft_Test_11.0.19680.0.app), and [application symbols](http://download.microsoft.com/download/C/7/9/C79AF269-A67E-4EEF-B9F2-52FAFA43E026/Microsoft_Application_11.0.19738.0.app).  
-    If you are upgrading to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] CU1, or higher, please use the symbols that you find in the *ModernDev* folder on the cumulative update DVD. 
-    -->
   
 2. Publish the platform, test, and application symbols one file at a time to the Dynamics NAV server instance:
 
@@ -325,18 +320,12 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <SymbolFilePath> -PackageType SymbolsOnly
     ```
 
-   <!--  
-    > [!NOTE]  
-    > If you are upgrading to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] RTM, you must also publish the application symbol file.
-
-    -->
-
 3. Make sure that **Enable loading application symbol references at server startup** (EnableSymbolLoadingAtServerStartup) is set on the Dynamics NAV server instance.
 
     For more information, see [Configuring Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).
 4. Generate the application symbol references for running Running C/SIDE and AL Side-by-Side:
 
-    1. Open a command prompt, change to the directory where the `finsql.exe` file has been installed as part of [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], and then run the following command:
+    1. Open a command prompt, change to the directory where the `finsql.exe` file has been installed as part of [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_longt_md.md)], and then run the following command:
 
         ```
         finsql.exe Command=generatesymbolreference, Database=<MyDatabaseName>, ServerName=<DatabaseServerName>\<DatabaseInstance>
@@ -352,7 +341,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
             
     For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md).
 
-5. Publish all the extensions from the `\Extensions` folder of the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] installation media (DVD):
+5. Publish all the extensions from the `\Extensions` folder of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD):
 
     1. From the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the following command for each extension.
 
@@ -414,7 +403,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
         Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
 
-7. For the Denmark (DK) local version of [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], you must install the following new V2 extensions to get all the local functionality.
+7. For the Denmark (DK) local version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you must install the following new V2 extensions to get all the local functionality.
 
     |Name|Publisher|Version|
     |----|---------|-------|
@@ -460,7 +449,7 @@ The MenuSuite is no longer used to control whether a page or report can be found
 ## Task 20. Transition the custom code in the old codeunit 1 to use the new system event implentation. 
 
 ##  <a name="DeleteUpgCodeunits"></a> Task 21: Delete the upgrade objects
-At this point, you have upgraded the database to [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
+At this point, you have upgraded the database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
 
 When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  
 
