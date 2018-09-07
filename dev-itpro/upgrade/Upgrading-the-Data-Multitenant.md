@@ -84,8 +84,8 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 > [!NOTE]
 > If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete. 
 
-## Task 1: Publish the system, test, and application symbols  
-
+## Task 1: Publish the system, test, and generate the application symbols  
+The 
 System and test symbols
 ```
 Publish-NAVApp -ServerInstance dynamicsnav130 -PackageType SymbolsOnly -Path 'C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\130\AL Development Environment\system.app'
@@ -176,35 +176,6 @@ To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet 
 
 The data upgrade process runs `CheckPreconditions` and `Upgrade` functions in the upgrade codeunits. If any of the preconditions are not met or an upgrade function fails, you must correct the error and resume the data upgrade process. If CheckPreconditions and Upgrade functions are executed successfully, codeunit 2 is automatically run to initialize all companies in the database unless you set the `-SkipCompanyIntitialization` parameter.  
 
-##  <a name="ImportPerms"></a> Task 14: Import upgraded permission sets and permissions by using the Roles and Permissions XMLports  
-You import the permission sets and permissions XML files.
-
-1.  Delete all permission sets in the database except the SUPER permission set.  
-
-    In Object Designer, run page 9802 **Permission Sets**, and then delete the permission sets.  
-
-2.  Run XMLport 9171 and XMLport 9172 to import the permission sets and permission XML files.
-
-    For more information, see [How to: Export and Import Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ImportPerms).
-
-##  <a name="SetLang"></a> Task 15: Set the language of the customer database  
- In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], choose **Tools**, choose **Language**, and then select the language of the original customer database.  
-
-##  <a name="AddControlAddins"></a> Task 16: Register client control add-ins  
- The database is now fully upgraded and is ready for use. However, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes the following client control add-ins.
--   Microsoft.Dynamics.Nav.Client.BusinessChart  
--   Microsoft.Dynamics.Nav.Client.DynamicsOnlineConnect
--   Microsoft.Dynamics.Nav.Client.FlowIntegration
--   Microsoft.Dynamics.Nav.Client.OAuthIntegration
--   Microsoft.Dynamics.Nav.Client.PageReady  
--   Microsoft.Dynamics.Nav.Client.PingPong  
--   Microsoft.Dynamics.Nav.Client.SocialListening  
--   Microsoft.Dynamics.Nav.Client.TimelineVisualization
--   Microsoft.Dynamics.Nav.Client.VideoPlayer  
--   Microsoft.Dynamics.Nav.Client.WebPageViewer
-
-To use these add-ins, they must be registered in table **2000000069 Client Add-in**. Depending on the version that you upgraded from, all the add-ins might not be registered after the upgrade process. You can register missing control add-ins in the **Control Add-ins** page in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. The assemblies (.dlls) for these add-ins are in subfolders to the **Add-ins** folder of the Dynamics NAV Server installation, which by default is  [!INCLUDE[navnow_install_md](../developer/includes/navnow_install_md.md)]\Service\Add-ins. For more information, see [How to: Register a Windows Client Control Add-in](How-to--Register-a-Windows-Client-Control-Add-in.md).  
-
 
 ##  <a name="AddExtensions"></a> Task 17: Publish and install/upgrade extensions
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several extensions that you publish and install as part of the upgrade process. To enable these extensions, it is important that you follow the steps below.
@@ -260,48 +231,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
 
     For more information about publishing extensions, see [How to: Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md).
 
-6.  Upgrade the V1 extensions that you uninstalled previously in Task 3 by reinstalling them. From the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the following commands: 
 
-    1. To get a list of the published extensions on the server instance, run this command:
-    
-        ```
-        Get-NAVAppInfo -ServerInstance <ServerInstanceName>
-        ```
-
-    2. To determine which V1 extensions to install, inspect the list that appears, and compare it with the list that you gathered in Task 3. V1 extensions are indicated by `Extension Type : CSIDE`.
-    
-        -   If there is only one version of an extension, which matches the version in the old list, then go to step 6c to reinstall the version. 
-        -   If there is a newer version of an extension and its `Extension Type` is also `CSIDE`, then go to step 6c to install and upgrade to the newer V1 extension. 
-        -   If there is a newer version of an extension but its `Extension Type` is `ModernDev`, then go to step 6d to upgrade the old V1 extension to the V2 extension. 
-
-    3. For each V1 Extension that you want to reinstall or upgrade, run this command:
-    
-        ```  
-        Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> –Tenant <TenantID>
-        ```
-    
-        Replace `<Name>` and `<N.N.N.N>` with the name and version of the Extension V1 as it appeared in the previous step. For `<TenantID>`, in single-tenant deployments, you either specify `default` or you omit the `–Tenant` parameter.
-        
-        This will upgrade the V1 extensions.
-
-        Optionally, if you installed a newer version of an extension, unpublish the old version: 
-         
-        ```
-        Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
-        ```
-    4.  For each V1 Extension that you want to upgrade to a V2 Extension, run these commands:
-
-        ```
-        Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
-        Start-NAVAppDataUpgrade -ServerInstance DynamicsNAV -Name ProswareStuff -Version <N.N.N.N>
-        ``` 
-        This will upgrade the V2 extensions.
-
-        Optionally, unpublish the V1 extension.
-          
-        ```
-        Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
-        ```
 
 7. For the Denmark (DK) local version, you must install the following V2 extensions to get all the local functionality.
 
@@ -317,10 +247,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
     Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> 
     ```
 
-## Task 18: Update the Dynamics NAV Web client configuration file (navsettings.json)
-If you have installed the [!INCLUDE[nav_web_server_md](../developer/includes/nav_web_server_md.md)], populate the navsettings.json file for the [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance with the settings of the old web.config file.
-
-For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modifying the NavSettings.json File](configure-web-server.md.md).  
+## Task 20. Transition the custom code in the old codeunit 1 to use the new system event implenmentation
 
 ##  <a name="UploadEncryptionKeys"></a> Task 16: Import Data Encryption Key \(Optional\)  
 
@@ -328,12 +255,47 @@ If you want to use data encryption as before, you must import the data encryptio
 
 For more information, see [How to: Export and Import Encryption Keys](How-to--Export-and-Import-Encryption-Keys.md). 
 
+For more information, see [Configuring Business Central Web Server](../administration/configure-web-server.md). 
+
+##  <a name="ImportPerms"></a> Task 14: Import upgraded permission sets and permissions by using the Roles and Permissions XMLports  
+You import the permission sets and permissions XML files.
+
+1.  Delete all permission sets in the database except the SUPER permission set.  
+
+    In Object Designer, run page 9802 **Permission Sets**, and then delete the permission sets.  
+
+2.  Run XMLport 9171 and XMLport 9172 to import the permission sets and permission XML files.
+
+    For more information, see [How to: Export and Import Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ImportPerms).
+
 
 ## Task 19: Configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
 
 The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-reports-for-search.md).
 
-## Task 20. Transition the custom code in the old codeunit 1 to use the new system event implentation. 
+##  <a name="AddControlAddins"></a> Task 16: Register client control add-ins  
+ The database is now fully upgraded and is ready for use. However, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes the following client control add-ins.
+-   Microsoft.Dynamics.Nav.Client.BusinessChart  
+-   Microsoft.Dynamics.Nav.Client.DynamicsOnlineConnect
+-   Microsoft.Dynamics.Nav.Client.FlowIntegration
+-   Microsoft.Dynamics.Nav.Client.OAuthIntegration
+-   Microsoft.Dynamics.Nav.Client.PageReady  
+-   Microsoft.Dynamics.Nav.Client.PingPong  
+-   Microsoft.Dynamics.Nav.Client.PowerBIManagement
+-   Microsoft.Dynamics.Nav.Client.RoleCenterSelector
+-   Microsoft.Dynamics.Nav.Client.SocialListening  
+-   Microsoft.Dynamics.Nav.Client.TimelineVisualization
+-   Microsoft.Dynamics.Nav.Client.VideoPlayer  
+-   Microsoft.Dynamics.Nav.Client.WebPageViewer
+
+To use these add-ins, they must be registered in table **2000000069 Client Add-in**. Depending on the version that you upgraded from, all the add-ins might not be registered after the upgrade process. You can register missing control add-ins in the **Control Add-ins** page in the client. The assemblies (.dlls) for these add-ins are in subfolders to the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation, which by default is [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service\Add-ins. For more information, see [How to: Register a Windows Client Control Add-in](How-to--Register-a-Windows-Client-Control-Add-in.md).  
+
+ 
+## Task 18: Update the Dynamics NAV Web client configuration file (navsettings.json)
+If you have installed the [!INCLUDE[webserver](../developer/includes/webserver.md)], populate the navsettings.json file for the web server instance with the settings of the old web.config file or navsettings.json file.
+
+##  <a name="SetLang"></a> Task 15: Set the language of the customer database  
+ In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], choose **Tools**, choose **Language**, and then select the language of the original customer database.  
 
 ##  <a name="DeleteUpgCodeunits"></a> Task 21: Delete the upgrade objects
 At this point, you have upgraded the database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  

@@ -34,7 +34,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |Publish new V2 extensions and all versions that were published on the old server instance.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licence-file.md)||
 
-## Prepare the tenant database
+## Prepare the old tenant database
 
 |Step|More info| Done |
 |----|-----------|--|
@@ -42,7 +42,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |Uninstall all V1 extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
 |Dismount the tenant from the old server instance.|[See...](../cside/cside-compiling-objects.md)||
 
-## Run the data upgrade
+## Run the data upgrade on the old tenant
 
 |Step|More info| Done |
 |----|-----------|--|
@@ -50,13 +50,14 @@ This article provides an overview of the full upgrade process for Business Centr
 |Synchronize the tenant.|||
 |Synchronize all V2 extensions.|||
 |Run the data upgrade. Important: Use the `-FunctionExecutionMode Serial` parameter.  |||
-|Install the V2 extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
-
+|Install the new V2 extensions that were not installed in the old tenant.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
 
 
 ## Post-upgrade tasks 
 |Step|More info| Done |
 |----|-----------|--|
 |Move custom code that used codeunit 1 logic to use replacement codeunits.|[See...](transition-from-codeunit1.md)||
+|Import encryption keys|||
+|Import permissions and permission sets|||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client. |[See...](upgrade-pages-report-for-search.md) ||
 |Upload the customer license. |[See...](../cside/cside-upload-licence-file.md)||
