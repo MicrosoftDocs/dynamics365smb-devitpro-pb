@@ -341,6 +341,7 @@
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 ## [Field Groups](developer/devenv-field-groups.md)
+## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 <!-- end AL -->
 <!--
 # [Administration](Administration.md)
