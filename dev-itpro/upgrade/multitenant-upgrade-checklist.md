@@ -20,18 +20,20 @@ This article provides an overview of the full upgrade process for Business Centr
 |----|-----------|--|
 |In the old environment, convert custom V1 extensions to V2 extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
 |Export permissions and permission sets from the old environment.|||
+|Export encryption keys from the old environment.|||
+|Get the app packages for V2 extensions currently published on the old environment.|||
 |Install Business Central components.|||
 |Prepare for transitioning from codeunit 1.|[See...](transition-from-codeunit1.md)|
 
-## Upgrade the application 
+## Upgrade the application and prepare for data upgrade
 
 |Step|More info| Done |
 |----|-----------|--|
 |Upgrade the application code.|[See...](transition-from-codeunit1.md)|
 |Mount the upgraded application on the [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
-|Import upgrade toolkit (fob)|||
-|Publish system, test, and application symbols.|[See...](transition-from-codeunit1.md)|
-|Publish new V2 extensions and all versions that were published on the old server instance.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
+|Import upgrade toolkit (.fob)|||
+|Publish system and test symbols, generate application symbols.|[See...](transition-from-codeunit1.md)|
+|Publish new V2 extensions and the old versions that were published in the old environment.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licence-file.md)||
 
 ## Prepare the old tenant database
@@ -46,10 +48,10 @@ This article provides an overview of the full upgrade process for Business Centr
 
 |Step|More info| Done |
 |----|-----------|--|
-|Mount the tenant on the [!INCLUDE[server](../developer/includes/server.md)] instance. Important: Use the `-AllowAppDatabaseWrite` parameter.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)|
+|Mount the tenant on the [!INCLUDE[server](../developer/includes/server.md)] instance. **Important:** Use the `-AllowAppDatabaseWrite` parameter.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)|
 |Synchronize the tenant.|||
 |Synchronize all V2 extensions.|||
-|Run the data upgrade. Important: Use the `-FunctionExecutionMode Serial` parameter.  |||
+|Run the data upgrade. **Important:** Use the `-FunctionExecutionMode Serial` parameter.  |||
 |Install the new V2 extensions that were not installed in the old tenant.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
 
 
