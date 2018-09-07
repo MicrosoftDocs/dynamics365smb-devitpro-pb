@@ -90,6 +90,7 @@
 ### [The AL Formatter](developer/devenv-al-formatter.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
+### [Working with Translation Files](devenv-work-with-translation-files.md)
 ## [Object Ranges](developer/devenv-object-ranges.md)
 ## [JSON Files](developer/devenv-json-files.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
