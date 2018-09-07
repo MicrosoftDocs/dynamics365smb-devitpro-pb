@@ -1,9 +1,9 @@
 ---
 title: "Extensible Enums"
-description: "Document the extension of Application Areas."
+description: "Overview of the concept of extending enumerables "
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/21/2018
+ms.date: 09/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -57,9 +57,9 @@ Or, as a variable:
 ```
 var
 	LoyaltyLevel: enum Loyalty;
-``´
+```
 
-
+## Business Central On-Premises
 
 
 ## See Also
