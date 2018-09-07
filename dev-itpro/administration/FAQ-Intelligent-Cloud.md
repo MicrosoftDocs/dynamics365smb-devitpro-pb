@@ -4,7 +4,6 @@ description: Get a cloud copy of your data so you are connected to the intellige
 based on Business Central, Dynamics GP, Dynamics SL, or Dynamics NAV.
 author: edupont04
 manager: edupont
-
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
