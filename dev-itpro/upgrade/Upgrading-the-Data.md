@@ -12,14 +12,7 @@ ms.prod: "dynamics-nav-2018"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-This topic describes the tasks required for upgrading the following database versions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
-
--   [!INCLUDE[nav7long](../developer/includes/nav7long_md.md)]
--   [!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]
--   [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]
--   [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]
--   [!INCLUDE[nav2017](../developer/includes/nav2017.md)]
-- [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]
+This topic describes the tasks required for upgrading the following database versions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 You use data conversion tools provided with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to convert the old data with the old version’s table and field structure, so that it functions together with the new version’s table and field structure. Mainly, only table objects and table data are modified during the data upgrade process. Other objects, such as pages, reports, codeunits, and XMLports are upgraded as part of the application code upgrade process.
 
@@ -58,11 +51,23 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
 4. Custom V1 extensions have been converted to V2 extensions.
 
+5.  Install [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components: 
+
+    As a minimum, you must install the following components:
+    - Server
+    - SQL Server Components
+    -  [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)]
+    - [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]
+    - AL Development Environment
+    - (optionally) [!INCLUDE[admintool](../developer/includes/admintool.md)]
+
+    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setupn.md).
+
 5.   \(Optional\) Make a copy of the web.config file for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. With [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances run on Microsoft .NET Core. With this change, the instances now use a .json type file (called navsettings.json) instead of the web.config file.
 
 6.   If the old application uses data encryption, you exported the encryption key file that it used for the data encryption.  
 
-    For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).  
+        For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).  
 
 > [!NOTE]
 >If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete. 
@@ -110,11 +115,6 @@ In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] vers
 
 You can also use the [DeleteObjects](DeleteObjects.md) command of the finsql.exe.
 
-##  <a name="UninstallOldProduct"></a> Task 6:  Install the new product 
-
-Install [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
-
-As a minimum, you must install the following [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components: [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], [!INCLUDE[admintool](../developer/includes/admintool.md)], Server, [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] and SQL Server Components, and Al  You can install these components by choosing the **Custom** option during Setup. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setupn.md).
 
 ## Task 7: Clear Dynamics NAV Server instance and debugger breakpoint records from old database (single-tenant only)
 Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the database in SQL Server.  
@@ -144,13 +144,14 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
 
     For more information, see [How to: Import Objects](how-to--import-objects.md).
 
-2. When you import the FOB file, if you experience metadata conflicts, the **Import Worksheet** windows appears.
+2. **IMPORTANT** When prompted about table synchronization, set the **Synchronize Schema** option to **Later**.  
+
+3. When you import the FOB file, if you experience metadata conflicts, the **Import Worksheet** windows appears.
 
     Review the Worksheet page. For more information, see [Import Worksheet](Import-Worksheet.md).
     
     Choose **Replace All**, and then **OK** to continue.
 
-3. **IMPORTANT** When prompted about table synchronization, set the **Synchronize Schema** option to **Later**.  
 
 ##  <a name="ConnectToServer"></a> Task 10: Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database
 You use the [!INCLUDE[admintool](../developer/includes/admintool.md)] for  or [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  

@@ -19,9 +19,8 @@ This article provides an overview of the full upgrade process for Business Centr
 |Step|More info| Done |
 |----|-----------|--|
 |In the old environment, convert custom V1 extensions to V2 extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
-|Export permissions and permission sets from the old environment. **Important:** Make sure computer used same codepage as data.|||
+|Export permissions and permission sets from the old environment. **Important:** Make sure your computer uses the same codepage as the data.|||
 |Export encryption keys from the old environment.|||
-|Get the app packages for V2 extensions currently published on the old environment.|||
 |Prepare for transitioning from codeunit 1.|[See...](transition-from-codeunit1.md)|
 |Install Business Central components.|||
 
