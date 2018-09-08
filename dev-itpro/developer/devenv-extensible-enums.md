@@ -48,9 +48,11 @@ enumextension 50130 LoyaltyWithDiamonds extends Loyalty
 When referencing a defined enum from code, you use the following syntax:
 `enum Loyalty`
 
-If you want to define an enum as a table field type, 
-
-`field(50100; Loyal; enum Loyalty) {}`
+If you want to define an enum as a table field type, use the syntax below:
+ 
+```
+field(50100; Loyal; enum Loyalty) {}
+```
 
 Or, as a variable:
 
@@ -60,6 +62,16 @@ var
 ```
 
 ## Business Central On-Premises
+If you want to extend an existing [!INCLUDE[d365fin_md](includes/d365fin_md.md)] on-premises enum, it is possible to mark a table field in C/SIDE as extensible. To enable running C/SIDE and AL side-by-side, see [Running C/SIDE and AL Side-by-Side](devenv-running-cside-and-al-side-by-side.md).
 
+
+### Conversions
+Conversion to and from `enum` is more strict than for `Options` in C/SIDE. 
+- An enum can be assigned/compared to an enum of the same type. 
+- To be backwards compatible we support conversion to/from any `Option` for now.
+
+## Known limitations
+- There is no runtime check for collision of IDs.
+- Declaring C/SIDE enums with the same ID on multiple table option fields will break the symbol generation.
 
 ## See Also
