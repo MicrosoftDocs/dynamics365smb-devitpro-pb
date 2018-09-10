@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 > [!IMPORTANT]  
 > [!INCLUDE[vnext_preview](includes/vnext_preview.md)]
 
-Virtual tables in AL can dynamically generate report base and parameters using procedures in a codeunit. You can build report parameters, XML string without actually invoking the report request page in UI. For more information, see [ReportRequest Page](./methods/devenv-runrequestpage-method.md). 
+Virtual tables in AL can dynamically generate report base. You can build report parameters, XML string without actually invoking the report request page in UI. For more information, see [ReportRequest Page](./methods/devenv-runrequestpage-method.md). 
 
 The following two virtual tables can display more information about request pages and reports:
 
@@ -26,7 +26,7 @@ The following two virtual tables can display more information about request page
 - Report Data Items (ID 2000000203)
 
 ## All Control Fields 
-This table contains information about page controls on regular pages, as well as on request pages in reports and XMLports. The primary key is **Object Type**, **Object ID**, and **Control ID**, where **Object Type** could be a Report, an XMLport, or a Page.
+This table contains information about page controls on regular pages, as well as on request pages in reports and XMLports. The primary key is **Object Type**, **Object ID**, and **Control ID**, where **Object Type** can be a Report, an XMLport, or a Page.
 
 ## Report Data Items 
 This table reflects information about individual data items in a report, for example, **Indentation Level**, **Related Table ID**, **Request Filter Fields**, and more.
