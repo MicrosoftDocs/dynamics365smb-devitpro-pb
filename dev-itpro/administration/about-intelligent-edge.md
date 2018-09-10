@@ -1,7 +1,7 @@
 ---
 title: Intelligent Edge for on-premises | Microsoft Docs
 description: Get a cloud copy of your data so you are connected to the intelligent cloud also when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL, or Dynamics NAV.
-author: edupont04
+author: bmeier94
 manager: edupont
 
 ms.service: dynamics365-business-central
@@ -117,5 +117,6 @@ To connect to the Intelligent Cloud through [!INCLUDE[prodshort](../developer/in
 
 ## See Also
 
-[Managing your Intelligent Cloud Environment](administration-intelligent-edge.md)  
-[Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)
+[Managing your Intelligent Cloud Environment](manage-intelligent-edge.md)  
+[Frequently Asked Questions about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
+[Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)  

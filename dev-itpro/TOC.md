@@ -44,6 +44,7 @@
 ## On-Premises
 ### [Connect to the Intelligent Cloud](administration/about-intelligent-edge.md)
 #### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
+#### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
 ### [Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)
 #### [Administration Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management)
