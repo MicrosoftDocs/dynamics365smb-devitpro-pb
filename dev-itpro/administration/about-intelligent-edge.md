@@ -55,11 +55,13 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 
     *SQL Connection* There will be 2 options for SQL: SQL Server, which is your locally installed SQL Server instance or Azure SQL.
 
-    *SQL Connection string*: If you had chosen SQL Server for your SQL Connection, you will be required to enter the connection string to your SQL Server. This information can be found at on the [SQL Server blog](https://blogs.msdn.microsoft.com/sqlforum/2010/12/20/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string/). This is an example of what this connection string would look like:
-        ```
-        Server={ServerName};Initial Catalog={DatabaseName};UserID={SQL Authenticated UserName};Password={SQL Autheticated Password};
-        ````
-     *Integration runtime name*: This is the service that will be used to
+    *SQL Connection string*: If you had chosen SQL Server for your SQL Connection, you will be required to enter the connection string to your SQL Server. This information can be found at https://blogs.msdn.microsoft.com/sqlforum/2010/12/20/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string/. This is an example of what this connection string would look like:
+
+   Server={ServerName};Initial Catalog={DatabaseName};UserID={SQL Authenticated UserName};Password={SQL Autheticated Password};
+
+The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communication with your SQL Server instance during the data replication process.   
+
+    *Integration runtime name*: This is the service that will be used to
      replicate the data from the defined source to your Business Central cloud
      tenant.
 
@@ -82,7 +84,7 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 > [!NOTE]  
 > Depending on the amount of data, your SQL configuration and your connection speed, a full replication could take several hours to complete. Subsequent replications will complete more quickly as only changed data is replicating.  
 
-## Adding tenant to an existing runtime service or updating companies
+## Adding a tenant to an existing runtime service or updating companies
 
 There are some scenarios where it will be necessary for you to run the intelligent cloud assisted setup wizard more than once.  
 
@@ -92,7 +94,7 @@ Another example of why you would want to run the wizards again, is you may be a 
 
 In both examples, you will be making updates to an existing runtime service. When you get to the point of the wizard where you can enter in an existing run time services name, open the Microsoft Integration Runtime Service Manager and enter the runtime name into the wizard field, you will not be allowed to copy/paste. The runtime service will identify that you are making updates to an existing service and will not create a new one.  
 
-Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your replication schedule or regenerating an ADF key may be done using the **Intelligent Cloud Management** page in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. For more information, see [Managing your intelligent cloud environment](manage-intelligent-edge.md).  
+Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your replication schedule or regenerating an Azure Data Factory (ADF) key may be done using the **Intelligent Cloud Management** page in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. For more information, see [Managing your Intelligent Cloud environment](administration-intelligent-edge.md).  
 
 ## User groups and permission sets
 

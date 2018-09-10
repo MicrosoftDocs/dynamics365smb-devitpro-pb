@@ -12,6 +12,9 @@ ms.prod: "dynamics-nav-2018"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
+[See print-friendly quick reference](singletenant-upgrade-checklist.md)
+
+
 This topic describes the tasks required for upgrading the data of a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 ## About Data Upgrade
@@ -296,18 +299,22 @@ The MenuSuite is no longer used to control whether a page or report can be found
 
 For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).  
  
-## Task 19: Update the Dynamics NAV Web client configuration file (navsettings.json)
+## Task 18: Update the Dynamics NAV Web client configuration file (navsettings.json)
 If you have installed the [!INCLUDE[nav_web_server_md](../developer/includes/nav_web_server_md.md)], populate the navsettings.json file for the [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instance with the settings of the old web.config file.
 
 For more information, see [Configuring Microsoft Dynamics NAV Web Client by Modifying the NavSettings.json File](configure-web-server.md.md).
   
-##  <a name="DeleteUpgCodeunits"></a> Task 20: Delete the upgrade objects
+##  <a name="DeleteUpgCodeunits"></a> Task 19: Delete the upgrade objects
 At this point, you have upgraded the database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
 
 When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  
 
 ##  <a name="AddExtensions"></a> Task 21: Publish and install/upgrade extensions
-Complete this task if you are upgrading from a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] deployment that uses V2 extensions or a Denmark (DK) version of [!INCLUDE[nav2017](../developer/includes/nav2017.md)] or earlier. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new extension versions that you can upgrade to.
+Complete this task if you are upgrading from a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] deployment that uses V2 extensions or a Denmark (DK) version of [!INCLUDE[nav2017](../developer/includes/nav2017.md)] or earlier.
+
+The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (in other words, extensions that have **Microsoft** as the publisher). If you our old deployment uses these extensions, you have to upgrade the current versions to the new versions. 
+
+In addition, any other extensions used in the old deployment must be repaired to work on the new platform.
 
 > [!IMPORTANT]
 > If you are upgrading from a Denmark (DK) version of Dynamics NAV 2017 or earlier, you must publish and install the following extensions to get the local functionality:
@@ -318,11 +325,16 @@ Complete this task if you are upgrading from a [!INCLUDE[nav2018_md](../develope
 >|Payment and Reconciliation Formats (DK)|FIK.app |
 >|Tax File Formats (DK)| VATReportsDK.app|
 
-1. Publish the system.app and test.app symbol files. 
+1. To get list of the extensions currently published on the application, run the following command from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
 
-    If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise you can find the files in the **ModernDev** folder on the installation media. 
+    ```
+    Get-NAVAppinfo -ServerInstance <ServerInstanceName>
+    ```
+1. Publish the system.app and test.app symbol files.
 
-    To publish, open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and run the following command for each of the symbol files:
+    If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
+
+    To publish the symbols, open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and run the following command for each of the symbol files:
 
     ```
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <SymbolFilePath> -PackageType SymbolsOnly
@@ -333,7 +345,7 @@ Complete this task if you are upgrading from a [!INCLUDE[nav2018_md](../develope
     1. Make sure that **Enable loading application symbol references at server startup** (EnableSymbolLoadingAtServerStartup) is set on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
         For more information, see [Configuring Dynamics NAV Server](../administration/configure-server-instance.md).
-    2. Open a command prompt, change to the directory where the `finsql.exe` file has been installed as part of [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and then run the following command:
+    2. Open a command prompt as an administrator, change to the directory where the `finsql.exe` file has been installed as part of [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and then run the following command:
 
         ```
         finsql.exe Command=generatesymbolreference, Database="<MyDatabaseName>", ServerName=<DatabaseServerName>\<DatabaseInstance>
@@ -350,56 +362,57 @@ Complete this task if you are upgrading from a [!INCLUDE[nav2018_md](../develope
             
     For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md).
 
-5. Upgrade Microsoft extension versions that were installed in the old deployment to new versions.
+5. Upgrade the Microsoft extensions that were published in the old deployment to new versions.
 
-    The new versions are found in the the `\Extensions` folder of the installation media (DVD). To upgrade to a new extension version, follow these steps:
+    The new versions are found in the the `\Extensions` folder of the installation media (DVD). To upgrade to the new extension versions, follow these steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for each extension:
 
-    1. From the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the following command.
+    1. Publish the new extension version by running the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
 
         ```
         Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
         ```
            
-    2.  Run the following command to synchronize schema with the database:
+    2.  Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
         ```    
         Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
-    3. Run the following command to upgrade to :
+    3. Upgrade the data of the extensions by running the [Start-NAVAppDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
         ```
-        Start-NAVAppDataUpgrade -ServerInstance DynamicsNAV -Name ProswareStuff -Version <N.N.N.N>
+        Start-NAVAppDataUpgrade -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ``` 
+
+        Apart from upgrading the data, this command will install the new extension version.
     For more information about publishing extensions, see [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md).
 
 
-8. Repair and install published extension versions that have not been upgraded to new versions. 
+8. Repair, synchronize, and install published extension versions that have not been upgraded to new versions. 
 
-    For each extension that you want to use, do the following steps: 
+    For each extension that you want to use, complete the following steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]: 
 
-    1. Use the [Repair-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) to compile the extension to make it work with the new platform and application.
+    1. Compile the extension to make it work with the new platform by running the [Repair-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) cmdlet.
 
     ```
     Repair-NAVApp -ServerInstance <ServerInstanceName> -Name <Extension Name> -Version <N.N.N.N>
     ```
-   2. Synchronize the extension with the database:
-
+   2. Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
         ```    
         Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
 
-    3. Install the extension.
+    3. Install the extension by running the [Install-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
 
         ```    
         Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
    
-8. (Optional) Unpublish unused extension versions. 
+8. (Optional) Unpublish unused extension versions by running the [Unpublish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp): 
          
-        ```
-        Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
-        ```
+    ```
+    Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
+    ```
 
 ## See Also  
  [Upgrading the Application Code](Upgrading-the-Application-Code.md)   

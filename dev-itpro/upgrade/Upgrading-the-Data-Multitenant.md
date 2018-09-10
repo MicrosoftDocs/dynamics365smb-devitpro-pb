@@ -12,6 +12,8 @@ ms.prod: "dynamics-nav-2018"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
+[See print-friendly quick reference](multitenant-upgrade-checklist.md)
+
 This article describes the tasks required for upgrading data to the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] .
 
 ## About Data Upgrade
