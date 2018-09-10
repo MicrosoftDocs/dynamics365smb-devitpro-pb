@@ -54,6 +54,7 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
     *SQL Connection* There will be 2 options for SQL: SQL Server, which is your locally installed SQL Server instance or Azure SQL.
 
     *SQL Connection string*: If you had chosen SQL Server for your SQL Connection, you will be required to enter the connection string to your SQL Server. This information can be found at https://blogs.msdn.microsoft.com/sqlforum/2010/12/20/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string/. This is an example of what this connection string would look like:
+        
         ```
         Server={ServerName};Initial Catalog={DatabaseName};UserID={SQL Authenticated UserName};Password={SQL Autheticated Password};
         ````
