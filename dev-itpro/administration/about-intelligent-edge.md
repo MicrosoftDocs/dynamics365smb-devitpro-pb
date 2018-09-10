@@ -28,7 +28,7 @@ There are a few key points that need to be understood before proceeding with the
 - It is always a best practice to test this configuration in your Sandbox environment before making changes to a production tenant. For more information see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md).
 - Any existing data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant will be overwritten with data from your on-premises solution, or source, once the data replication process is run. If you do not want data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant to be overwritten, do not configure the Intelligent Cloud environment.
 - All users that do not have ‘SUPER’ permissions will be automatically reassigned to the Intelligent Cloud user group. This will limit them to read only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
-- If your data source is Businsess Central (on-premises), several stored procedures will be added to the SQL server you define. These stored procedures are required to replicate data from your SQL server to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
+- If your data source is Business Central (on-premises), several stored procedures will be added to the SQL server you define. These stored procedures are required to replicate data from your SQL server to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
 - With the initial release of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Intelligent cloud, the amount of data that can be replicated for any tenant will be limited to 150GB. If your database is larger than 150GB, try reducing the number of companies you are replicating data for. This can done using the company selection within the Wizard.  Additional options for databases exceeding 150GB will be available in future updates.  
 - Before setting up your Intelligent Cloud environment, ensure that at least 1 user in the system that has ‘SUPER’ permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
 - Configuring the Intelligent Cloud environment will have no impact on any users or data in your on-premises solution.
@@ -80,7 +80,7 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 > [!NOTE]  
 > Depending on the amount of data, your SQL configuration and your connection speed, a full replication could take several hours to complete. Subsequent replications will complete more quickly as only changed data is replicating.  
 
-## Adding tenant to an existing runtime service or updating companies
+## Adding a tenant to an existing runtime service or updating companies
 
 There are some scenarios where it will be necessary for you to run the Intelligent Cloud assisted set up wizard more than once.  
 
@@ -90,7 +90,7 @@ Another example of why you would want to run the wizards again, is you may be a 
 
 In both examples, you will be making updates to an existing runtime service. When you get to the point of the wizard where you can enter in an existing run time services name, open the Microsoft Integration Runtime Service Manager and enter the runtime name into the wizard field, you will not be allowed to copy/paste. The runtime service will identify that you are making updates to an existing service and will not create a new one.  
 
-Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your replication schedule or regenerating an ADF key may be done using the **Intelligent Cloud Management** page in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. For more information, see [Managing your Intelligent Cloud environment](administration-intelligent-edge.md).  
+Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your replication schedule or regenerating an Azure Data Factory (ADF) key may be done using the **Intelligent Cloud Management** page in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. For more information, see [Managing your Intelligent Cloud environment](administration-intelligent-edge.md).  
 
 ## User groups and permission sets
 
