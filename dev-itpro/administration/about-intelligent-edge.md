@@ -10,16 +10,16 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: cloud, edge
-ms.date: 08/30/2018
+ms.date: 09/10/2018
 ms.author: bmeier
 
 ---
 
-# Connect to the Intelligent Cloud with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
+# Connect to the intelligent cloud with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
 Customers running their workloads on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises) or Dynamics GP can get access to the same Intelligent Cloud scenarios that customers using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online have. Each Dynamics 365 Business Central (on-premises) and Dynamics GP application that enables the Intelligent Cloud fuctionality in their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will be able to replicate data from on-premises to the cloud tenant. When they use this, we invoke our Intelligent Cloud scenarios of Machine Learning, Power BI, Flow, and others to drive suggested actions.  
 
-## Setting Up Your Intelligent Cloud
+## Setting up your intelligent cloud
 
 This section provides the steps required to configure your Intelligent Cloud environment. This can simply be done by following the instructions in the **Setup Intelligent Cloud** assisted setup wizard within your Business Central cloud tenant.  
 
@@ -80,7 +80,7 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 > [!NOTE]  
 > Depending on the amount of data, your SQL configuration and your connection speed, a full replication could take several hours to complete. Subsequent replications will complete more quickly as only changed data is replicating.  
 
-## Adding Tenant to an Exiting Runtime Service or Updating Companies
+## Adding tenant to an existing runtime service or updating companies
 
 There are some scenarios where it will be necessary for you to run the Intelligent Cloud assisted set up wizard more than once.  
 
@@ -92,7 +92,7 @@ In both examples, you will be making updates to an existing runtime service. Whe
 
 Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your replication schedule or regenerating an ADF key may be done using the **Intelligent Cloud Management** page in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. For more information, see [Managing your Intelligent Cloud environment](administration-intelligent-edge.md).  
 
-## User Groups and Permission Sets
+## User groups and permission sets
 
 When running in an Intelligent Cloud state, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant
 will be, with very few exceptions, read-only. Because the on-premises solution is your primary application for running your business activities such as data entry, tax reporting, sending invoices, and so on, these tasks will need to be completed in the on-premises application. We limit the amount of data you can enter into your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to data that is not replicated, otherwise any data that was written to the tenant database would be continuously overwritten during the replication process.  
@@ -111,12 +111,13 @@ Users that are reassigned to the Intelligent Cloud User Group will have access t
 
 When an Intelligent Cloud environment is configured, it is highly recommended that you test the impact of any Extension in a Sandbox environment before having it installed in your production [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Intelligent Cloud tenant to help avoid any data failures or untended consequences.  
 
-## System Requirements
+## System requirements
 
-To connect to the Intelligent Cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md), the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also use either [!INCLUDE[prodshort](../developer/includes/prodshort.md) (on-premises) or Dynamics GP 2018 R2.
+To connect to the Intelligent Cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md), the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also use either [!INCLUDE[prodshort](../developer/includes/prodshort.md) (on-premises) or Dynamics GP 2018 R2. For more information, see [Which products and versions are supported for connecting to the intelligent cloud](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.
 
 ## See Also
 
 [Managing your Intelligent Cloud Environment](manage-intelligent-edge.md)  
+[Replicating on-premises data](data-replication-intelligent-cloud.md)  
 [Frequently Asked Questions about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
 [Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)  
