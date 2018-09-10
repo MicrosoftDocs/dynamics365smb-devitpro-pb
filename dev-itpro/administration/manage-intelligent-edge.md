@@ -15,11 +15,11 @@ ms.author: bmeier
 
 ---
 
-# Managing your Intelligent Cloud Environment
+# Managing your intelligent cloud environment
 
 You can connect your on-premises solution to the Intelligent Cloud through a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. Once you have set up this configuration, you have access to the **Intelligent Cloud Management** page in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, from where you can manage your Intelligent Cloud environment and data replication.  
 
-## Intelligent Cloud Management
+## Intelligent cloud management
 
 The **Intelligent Cloud Management** page provides information about your data replication runs over the past 30 days, and you can manage your replication services, for example, as described in the following table:  
 
@@ -34,8 +34,9 @@ The **Intelligent Cloud Management** page provides information about your data r
 |Get Runtime Key    |Returns the existing Runtime key.|
 |Disable Intelligent Cloud    |You can launch a guide that helps you through a checklist of instructions to disable the Intelligent Cloud configuration. Once this steps in this process are complete, data replication will be discontinued, and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant may become your primary solution.|
 
-## See Also
+## See also
 
 [Frequently Asked Questions about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
+[Replicating on-premises data](data-replication-intelligent-cloud.md)  
 [Connect to the Intelligent Cloud with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](about-intelligent-edge.md)  
 [Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)

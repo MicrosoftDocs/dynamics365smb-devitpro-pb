@@ -90,11 +90,9 @@ The extension should be created in the same manner as any other extension. For d
 
 ## How do I find my SQL connection string?
 
-A connection string to your SQL database can be found in SQL Management Studio or using Visual Studio. The user name and password defined in the connection requires a SQL Authenticated user name/password. Your connection string should look something like this: 
+A connection string to your SQL database can be found in SQL Management Studio or using Visual Studio. The user name and password defined in the connection requires a SQL Authenticated user name/password. Your connection string should look something like this:
 
-```
-Server=tcp:{ServerName},1433;Initial Catalog={DatabaseName};Persist Security Info=False; User ID={UserName};Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;
-```
+*Server=tcp:{ServerName},1433;Initial Catalog={DatabaseName};Persist Security Info=False; User ID={UserName};Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;*
 
 ## How do I find the Integration Runtime name?
 
@@ -106,6 +104,7 @@ No. Microsoft Invoicing currently does not support connecting to the intelligent
 
 ## See also
 
-[Connect to the Intelligent Cloud with Business Central](about-intelligent-edge.md)  
-[Managing your Intelligent Cloud Environment](manage-intelligent-edge.md)  
+[Connect to the intelligent cloud with Business Central](about-intelligent-edge.md)  
+[Managing your intelligent cloud environment](manage-intelligent-edge.md)  
+[Replicating on-premises data](data-replication-intelligent-cloud.md)  
 [ReplicateData Property](../developer/properties/devenv-replicatedata-property.md)  
