@@ -17,7 +17,7 @@ ms.author: bmeier
 
 # Connect to the intelligent cloud with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-Customers running their workloads on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises) or Dynamics GP can get access to the same Intelligent Cloud scenarios that customers using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online have. Each Dynamics 365 Business Central (on-premises) and Dynamics GP application that enables the Intelligent Cloud fuctionality in their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will be able to replicate data from on-premises to the cloud tenant. When they use this, we invoke our Intelligent Cloud scenarios of Machine Learning, Power BI, Flow, and others to drive suggested actions.  
+Customers running their workloads on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises) or Dynamics GP can get access to the same key Intelligent Cloud scenarios that customers using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online have. Each Dynamics 365 Business Central (on-premises) and Dynamics GP application that enables the Intelligent Cloud fuctionality in their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will be able to replicate data from on-premises to the cloud tenant. When they use this, we invoke our Intelligent Cloud scenarios of Machine Learning, Power BI, Flow, and others to drive suggested actions.  
 
 ## Setting up your intelligent cloud
 
@@ -57,7 +57,8 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
         ```
         Server={ServerName};Initial Catalog={DatabaseName};UserID={SQL Authenticated UserName};Password={SQL Autheticated Password};
         ````
-     *Integration runtime name*: This is the service that will be used to
+    
+    *Integration runtime name*: This is the service that will be used to
      replicate the data from the defined source to your Business Central cloud
      tenant.
 
