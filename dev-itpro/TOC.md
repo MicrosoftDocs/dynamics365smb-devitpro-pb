@@ -342,6 +342,7 @@
 ## [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 ## [Field Groups](developer/devenv-field-groups.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+## [Get Report Parameters using Virtual Tables](developer/devenv-get-report-parameters-with-virtual-tables.md)
 <!-- end AL -->
 <!--
 # [Administration](Administration.md)
