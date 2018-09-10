@@ -24,40 +24,41 @@ This article provides an overview of the full upgrade process for Business Centr
 |Prepare for transitioning from codeunit 1.|[See...](transition-from-codeunit1.md)|
 |Install Business Central components.|||
 
-## Upgrade the application and prepare for data upgrade
+## Prepare the database for data upgrade
 
 |Step|More info| Done |
 |----|-----------|--|
-|Upgrade the application code.|[See...](transition-from-codeunit1.md)|
-|Import upgrade toolkit (.fob)|||
-|Publish system and test symbols, generate application symbols.|[See...](transition-from-codeunit1.md)|
-|Publish new versions of V2 extensions and any old versions that were published in the old environment.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
+|Backup the database.|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
+|Uninstall all extensions.|[See...](transition-from-codeunit1.md)|
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licence-file.md)||
+|Delete all objects except tables from the old database|||
+|Clear Dynamics NAV Server instance and debugger breakpoint records from old database|||
 
-## Prepare the tenant database
-
-|Step|More info| Done |
-|----|-----------|--|
-|Backup the tenant database.|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
-|Uninstall all V1 extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
-|Dismount the tenant from the old server instance.|[See...](../cside/cside-compiling-objects.md)||
-
-## Run the data upgrade on the tenant
+## Run the data upgrade
 
 |Step|More info| Done |
 |----|-----------|--|
-|Mount the tenant on the [!INCLUDE[server](../developer/includes/server.md)] instance. **Important:** Use the `-AllowAppDatabaseWrite` parameter.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)|
-|Synchronize the tenant.|||
-|Synchronize all V2 extensions.|||
-|Run the data upgrade. **Important:** Use the `-FunctionExecutionMode Serial` parameter.  |||
-|Install the new V2 extensions that were not installed in the old tenant.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
+|Open and convert the database using [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] .|[See...](../cside/cside-open-database.md)|
+|Import upgraded application and upgrade toolkit objects (.fob files). **IMPORTANT** Select to synchroinize **later**.|||
+|Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted  database.|[See...](../administration/connect-server-to-database.md)||
+|Connect [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to the server instance.|[See...](../cside/cside-change-server-instance.md)||
+|Compile all objects. **Important:** Choose to synchronize schema **later**)|[See...](../cside/cside-compiling-objects.md)||
+|Synchronize the database.|||
+|Run the data upgrade.|||
 
-
-## Post-upgrade tasks 
-|Step|More info| Done |
-|----|-----------|--|
+## Post-upgrade tasks
 |Transition custom code that used codeunit 1 to use the management codeunits.|[See...](transition-from-codeunit1.md)||
 |Import encryption keys|||
 |Import permissions and permission sets|||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client. |[See...](upgrade-pages-report-for-search.md) ||
+|Add custom control add-ins to the server instance.|[See...](converting-a-database.md#controladdins)||
 |Upload the customer license. |[See...](../cside/cside-upload-licence-file.md)||
+
+## Publish and install/upgrade extensions
+|Publish system and test symbols, generate application symbols.|[See...](transition-from-codeunit1.md)|
+|Publish new versions of Microsoft extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
+|Publish new versions of Microsoft extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
+|Synchronize new extension versions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
+|Run the data upgrade on the new extension versions.|||
+|Repair custome extensions to work on new platform.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
+|Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licence-file.md)||
