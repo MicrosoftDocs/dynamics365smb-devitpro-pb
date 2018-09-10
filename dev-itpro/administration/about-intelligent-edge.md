@@ -23,19 +23,19 @@ For the list of currently supported on-premises solutions, see [Which products a
 
 ## Setting up your intelligent cloud
 
-This section provides the steps required to configure your intelligent cloud environment. This can simply be done by following the instructions in the **Set Up Intelligent Cloud** assisted setup wizard within your Business Central cloud tenant.  
+This section provides the steps required to configure your intelligent cloud environment. This can simply be done by following the instructions in the **Intelligent Cloud Set Up** assisted setup wizard within your Business Central cloud tenant.  
 
 There are a few key points that need to be understood before proceeding with the setup:
 
 - It is always a best practice to test this configuration in your Sandbox environment before making changes to a production tenant. For more information see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md).
 - Any existing data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant will be overwritten with data from your on-premises solution, or source, once the data replication process is run. If you do not want data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant to be overwritten, do not configure the intelligent cloud environment.
-- All users that do not have ‘SUPER’ permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
-- If your data source is[!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises), several stored procedures will be added to the SQL server you define. These stored procedures are required to replicate data from your SQL server to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
+- All users that do not have ‘SUPER’ permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
+- If your data source is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises), several stored procedures will be added to the SQL server you define. These stored procedures are required to replicate data from your SQL server to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
 - In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the amount of data that can be replicated for any tenant is limited to 150GB. If your database is larger than 150GB, try reducing the number of companies you are replicating data for. This can done using the company selection within the Wizard. Additional options for databases exceeding 150GB will be available in future updates.  
 - Before setting up your intelligent cloud environment, ensure that at least 1 user in the system that has ‘SUPER’ permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
 - Configuring the intelligent cloud environment will have no impact on any users or data in your on-premises solution.
 
-To begin configuring your intelligent cloud environment, navigate to the assisted setup page and launch the **Set Up Intelligent Cloud** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises) you may also launch the wizard from your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
+To begin configuring your intelligent cloud environment, navigate to the assisted setup page and launch the **Intelligent Cloud Set Up** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises) you may also launch the wizard from your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
 
 ### The assisted setup guide
 
@@ -103,12 +103,12 @@ When running in an intelligent cloud state, the [!INCLUDE[prodshort](../develope
 To make setting up this ‘Read-Only’ tenant more efficient, we created a new *Intelligent Cloud* user group and an *Intelligent Cloud* permission set. Once the intelligent cloud environment is configured, all users without SUPER permissions will be automatically assigned to the *Intelligent Cloud* user group. Only users with SUPER permissions will be allowed to make modifications to the system at this point.  
 
 > [!NOTE]  
-> Before configuring the intelligent cloud environment, make sure that at least 1 user in each company is assigned SUPER permissions.  
+> Before configuring the intelligent cloud environment ensure that at least 1 user in each company is assigned SUPER permissions.  
 
 Users that are reassigned to the Intelligent Cloud user group will have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user may create new user groups and permissions sets and assign users accordingly. It is highly recommended to create any new permissions sets from a copy of the Intelligent Cloud permission set and then take away permissions you do not want users to have.  
 
 > [!WARNING]
-> If you grant insert, modify or delete permissions to any resource in the application that was set to read only, it could have a negative impact on the data in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. If this occurs, you may have to clear all your data and rerun a full replication to correct this.  
+> If you grant insert, modify or delete permissions to any resource in the application that was set to read-only, it could have a negative impact on the data in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. If this occurs, you may have to clear all your data and rerun a full replication to correct this.  
 
 ### Extensions
 
