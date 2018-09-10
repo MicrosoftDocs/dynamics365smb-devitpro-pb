@@ -110,7 +110,7 @@ Users that are reassigned to the Intelligent Cloud User Group will have access t
 
 ### Extensions
 
-When an Intelligent Cloud environment is configured, it is highly recommended that you test the impact of any Extension in a Sandbox environment before having it installed in your production [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Intelligent Cloud tenant to help avoid any data failures or untended consequences.  
+When an Intelligent Cloud environment is configured, it is highly recommended that you test the impact of any Extension in a Sandbox environment before having it installed in your production [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Intelligent Cloud tenant to help avoid any data failures or unintended consequences.  
 
 ## System requirements
 
