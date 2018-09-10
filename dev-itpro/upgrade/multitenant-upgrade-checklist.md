@@ -18,10 +18,10 @@ This article provides an overview of the full upgrade process for Business Centr
  
 |Step|More info| Done |
 |----|-----------|--|
-|In the old environment, convert custom V1 extensions to V2 extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
-|Export permissions and permission sets from the old environment. **Important:** Make sure computer uses the same codepage as the data.|||
-|Export encryption keys from the old environment.|||
-|Get the app packages for V2 extensions currently published on the old environment.|||
+|In the old deployment, convert custom V1 extensions to V2 extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
+|Export permissions and permission sets from the old deployment. **Important:** Make sure computer uses the same codepage as the data.|||
+|Export encryption keys from the old deployment.|||
+|Get the app packages for V2 extension versions currently published on the old deployment.|||
 |Prepare for transitioning from codeunit 1.|[See...](transition-from-codeunit1.md)|
 |Install Business Central components.|||
 
@@ -29,8 +29,8 @@ This article provides an overview of the full upgrade process for Business Centr
 
 |Step|More info| Done |
 |----|-----------|--|
-|Upgrade the application code.|[See...](transition-from-codeunit1.md)|
-|Mount the upgraded application on the [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
+|Upgrade the application code.|[See...](upgrading-the-application-code.md)|
+|Mount the upgraded application on the [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication)||
 |Import upgrade toolkit (.fob)|||
 |Publish system and test symbols, generate application symbols.|[See...](transition-from-codeunit1.md)|
 |Publish new versions of V2 extensions and any old versions that were published in the old environment.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
