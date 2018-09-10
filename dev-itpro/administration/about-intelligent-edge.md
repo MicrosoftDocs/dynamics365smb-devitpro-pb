@@ -55,10 +55,10 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 
     *SQL Connection string*: If you had chosen SQL Server for your SQL Connection, you will be required to enter the connection string to your SQL Server. This information can be found at https://blogs.msdn.microsoft.com/sqlforum/2010/12/20/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string/. This is an example of what this connection string would look like:
         
-        ```
-        Server={ServerName};Initial Catalog={DatabaseName};UserID={SQL Authenticated UserName};Password={SQL Autheticated Password};
-        ````
-    
+   Server={ServerName};Initial Catalog={DatabaseName};UserID={SQL Authenticated UserName};Password={SQL Autheticated Password};
+       
+The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communication with your SQL Server instance during the data replication process.   
+
     *Integration runtime name*: This is the service that will be used to
      replicate the data from the defined source to your Business Central cloud
      tenant.
