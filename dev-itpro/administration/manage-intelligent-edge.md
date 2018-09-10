@@ -21,12 +21,12 @@ You can connect your on-premises solution to the Intelligent Cloud through a [!I
 
 ## Intelligent cloud management
 
-The **Intelligent Cloud Management** page provides information about your data replication runs over the past 30 days, and you can manage your replication services, for example, as described in the following table:  
+The **Intelligent Cloud Management** page provides information about your data replication runs as well as the ability to manage your replication services, for example, as described in the following table:  
 
 |Task   |Description|
 |---------|---------|
-|Viewing Replication History    |The page provides a view of the status of all replications that happened in the past 30 days. You will be able to view the time the replication ran, the status of each replication and when your next replication is scheduled to run.|
-|Replication Statistics    |Tiles that will display the number of tables replicated and the number of tables that did not replicate due to errors that occurred during the replication process. You may select either tile to drill into additional details regarding the replication status of each table as well as any messaging to assist you in correcting any errors.|
+|Viewing Replication History    |The page provides a view of the status of all replications. You will be able to view the time the replication ran, the status of each replication and when your next replication is scheduled to run.|
+|Replication Statistics    |Tiles that will display the number of tables replicated and the number of tables that did not replicate due to any errors that occurred during the replication process. You may select either tile to drill into additional details regarding the replication status of each table as well as any messaging to assist you in correcting any errors.|
 |Manage Schedule     |Enables you to set the replication schedule without having to run the assisted setup wizard again.|
 |Run Replication Now    |You can disable automatic data migration and trigger data replication manually. Ideally, this would be used only when you received errors in the scheduled data replication, you corrected any errors, and want to push updated data to the cloud outside of a normally scheduled run. |
 |Reset Cloud Data   |You may run into instances where you need to reset your cloud data. This option will clear all data in your cloud tenant and enable you to start over with data replication. If you need to clear data in your cloud tenant and are have connectivity issues that persist for more than 7 days, you will need to contact customer support. They will create a ticket to have your tenant data cleared. |
