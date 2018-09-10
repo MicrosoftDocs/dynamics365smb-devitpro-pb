@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Business Central Multitenant Full Upgrade Quick Reference 
 
-This article provides an overview of the full upgrade process for Business Central in a multitenant deployment. For more detailed steps, see [Upgrading the Data: Single-Tenant Mode](upgrading-the-data.md).
+This article provides an overview of the full upgrade process for Business Central in a single-tenant deployment. For more detailed steps, see [Upgrading the Data: Single-Tenant Mode](upgrading-the-data.md).
 
 ## Pre-upgrade tasks 
  
