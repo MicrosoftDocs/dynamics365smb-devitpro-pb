@@ -32,7 +32,7 @@ The **Intelligent Cloud Management** page provides information about your data r
 |Reset Cloud Data   |You may run into instances where you need to reset your cloud data. This option will clear all data in your cloud tenant and enable you to start over with data replication. If you need to clear data in your cloud tenant and are have connectivity issues that persist for more than 7 days, you will need to contact customer support. They will create a ticket to have your tenant data cleared. |
 |Reset Runtime Key    |If at any time you feel that your Self Hosted Integration Runtime key is no longer secure, you may select this option to regenerate a new key. A new key will be generated for you and automatically be updated in the Self Host Integration Runtime service.|
 |Get Runtime Key    |Returns the existing Runtime key.|
-|Disable Intelligent Cloud    |You can launch a guide that helps you through a checklist of instructions to disable the Intelligent Cloud configuration. Once this steps in this process are complete, data replication will be discontinued, and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant may become your primary solution.|
+|Disable Intelligent Cloud    |You can launch a guide that helps you through a checklist of instructions to disable the Intelligent Cloud configuration. Once the steps in this process are complete, data replication will be discontinued, and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant may become your primary solution.|
 
 ## See also
 
