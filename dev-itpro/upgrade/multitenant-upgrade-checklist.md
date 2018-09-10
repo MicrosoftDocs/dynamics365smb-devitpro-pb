@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Business Central Multitenant Full Upgrade Quick Reference 
 
-This article provides an overview of the full upgrade process for Business Central in a multitenant deployment. For more detailed steps, see [Converting a Database](Converting-a-database.md).
+This article provides an overview of the full upgrade process for Business Central in a multitenant deployment. For more detailed steps, see [Upgrading the Data: Multitenant Mode](upgrading-the-data-multitenant.md).
 
 ## Pre-upgrade tasks 
  
@@ -32,7 +32,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |Upgrade the application code.|[See...](upgrading-the-application-code.md)|
 |Mount the upgraded application on the [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication)||
 |Import upgrade toolkit (.fob)|||
-|Publish system and test symbols, generate application symbols.|[See...](transition-from-codeunit1.md)|
+|Publish system and test symbols from the installation media, and generate application symbols.|[See...](transition-from-codeunit1.md)|
 |Publish new versions of V2 extensions and any old versions that were published in the old environment.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licence-file.md)||
 

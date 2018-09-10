@@ -12,6 +12,9 @@ ms.prod: "dynamics-nav-2018"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
+[See print-friendly quick reference](singletenant-upgrade-checklist.md)
+
+
 This topic describes the tasks required for upgrading the data of a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 ## About Data Upgrade
