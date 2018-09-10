@@ -32,7 +32,7 @@ There are a few key points that need to be understood before proceeding with the
 - All users that do not have ‘SUPER’ permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
 - If your data source is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises), several stored procedures will be added to the SQL server you define. These stored procedures are required to replicate data from your SQL server to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
 - In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the amount of data that can be replicated for any tenant is limited to 150GB. If your database is larger than 150GB, try reducing the number of companies you are replicating data for. This can done using the company selection within the Wizard. Additional options for databases exceeding 150GB will be available in future updates.  
-- Before setting up your intelligent cloud environment, ensure that at least 1 user in the system that has ‘SUPER’ permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
+- Before setting up your intelligent cloud environment, ensure that at least one user in the system that has ‘SUPER’ permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
 - Configuring the intelligent cloud environment will have no impact on any users or data in your on-premises solution.
 
 To begin configuring your intelligent cloud environment, navigate to the assisted setup page and launch the **Intelligent Cloud Set Up** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises) you may also launch the wizard from your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
@@ -47,7 +47,7 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 
 2. Product selection
 
-    On this page, specify your source, or on-premises solution, that you are replicating data from. All supported sources will appear in the drop down list. If you don’t see your product, navigate to the **Manage Extensions** page and verify the intelligent cloud extension for that product is installed.
+    On this page, specify your source, or on-premises solution, that you are replicating data from. All supported sources will appear in the list. If you don’t see your product, navigate to the **Manage Extensions** page and verify the intelligent cloud extension for that product is installed.
 
 3. SQL Connection
 
@@ -59,7 +59,7 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 
         *Server={ServerName};Initial Catalog={DatabaseName};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};*
 
-        The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communication with your SQL Server instance during the data replication process.  
+        The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data replication process.  
 
     *Integration runtime name*: This is the service that will be used to
      replicate the data from the defined source to your Business Central cloud
@@ -71,7 +71,7 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 
 4. Self-Hosted Integration Runtime (SHIR)
 
-    This is the service will allow access to the Azure replication services to your on-premises SQL Database during the replication process. Follow the instructions on this page to install the Self Hosted Integration Service (SHIR) to a local machine.  
+    This is the service will allow access to the Azure replication services to your on-premises SQL Database during the replication process. Follow the instructions on this page to install the Self-Hosted Integration Service (SHIR) to a local machine.  
 
 5. Company Selection
 
@@ -84,26 +84,26 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 > [!NOTE]  
 > Depending on the amount of data, your SQL configuration and your connection speed, a full replication could take several hours to complete. Subsequent replications will complete more quickly as only changed data is replicating.  
 
-## Adding a tenant to an existing runtime service or updating companies
+## Adding a tenant to an existing runtime service, or updating companies
 
 There are some scenarios where it will be necessary for you to run the intelligent cloud assisted setup wizard more than once.  
 
-One example is if you want to change the companies you replicate data for. If the companies in your on-premises solution has changed; either added or deleted, or you want to change the companies you are replicating for, simply run the assisted setup wizard again.  
+One example is if you want to change the companies you replicate data for. If the companies in your on-premises solution have changed, either added or deleted, or you want to change the companies to replicate, simply run the assisted setup wizard again.  
 
-Another example of why you would want to run the wizards again, is you may be a hosting partner and want to add tenants to your existing runtime service.  
+Another example of why you would want to run the wizard again is you may be a hosting partner and want to add tenants to your existing runtime service.  
 
-In both examples, you will be making updates to an existing runtime service. When you get to the point of the wizard where you can enter in an existing run time services name, open the Microsoft Integration Runtime Service Manager and enter the runtime name into the wizard field, you will not be allowed to copy/paste. The runtime service will identify that you are making updates to an existing service and will not create a new one.  
+In both examples, you will be making updates to an existing runtime service. When you get to the point of the wizard where you can enter specify an existing run time services name, open the Microsoft Integration Runtime Service Manager and enter the runtime name into the wizard field; you will not be allowed to copy/paste. The runtime service will identify that you are making updates to an existing service and will not create a new one.  
 
 Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your replication schedule or regenerating an Azure Data Factory (ADF) key may be done using the **Intelligent Cloud Management** page in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. For more information, see [Managing your Intelligent Cloud environment](administration-intelligent-edge.md).  
 
 ## User groups and permission sets
 
-When running in an intelligent cloud state, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will be, with very few exceptions, read-only. Because the on-premises solution is your primary application for running your business activities such as data entry, tax reporting, sending invoices, and so on, these tasks will need to be completed in the on-premises application. We limit the amount of data you can enter into your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to data that is not replicated, otherwise any data that was written to the tenant database would be continuously overwritten during the replication process.  
+When running in an intelligent cloud state, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will be, with very few exceptions, read-only. Because the on-premises solution is your primary application for running your business activities such as data entry, tax reporting, and sending invoices, these tasks will need to be completed in the on-premises application. We limit the amount of data you can enter into your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to data that is not replicated, otherwise any data that was written to the tenant database would be continuously overwritten during the replication process.  
 
 To make setting up this ‘Read-Only’ tenant more efficient, we created a new *Intelligent Cloud* user group and an *Intelligent Cloud* permission set. Once the intelligent cloud environment is configured, all users without SUPER permissions will be automatically assigned to the *Intelligent Cloud* user group. Only users with SUPER permissions will be allowed to make modifications to the system at this point.  
 
 > [!NOTE]  
-> Before configuring the intelligent cloud environment ensure that at least 1 user in each company is assigned SUPER permissions.  
+> Before configuring the intelligent cloud environment ensure that at least one user in each company is assigned SUPER permissions.  
 
 Users that are reassigned to the Intelligent Cloud user group will have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user may create new user groups and permissions sets and assign users accordingly. It is highly recommended to create any new permissions sets from a copy of the Intelligent Cloud permission set and then take away permissions you do not want users to have.  
 
