@@ -84,7 +84,7 @@ Another example of why you would want to run the wizard again is you may be a ho
 
 In both examples, you will be making updates to an existing runtime service. When you get to the point of the wizard where you can enter specify an existing run time services name, open the Microsoft Integration Runtime Service Manager and enter the runtime name into the wizard field; you will not be allowed to copy/paste. The runtime service will identify that you are making updates to an existing service and will not create a new one.  
 
-Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your replication schedule or regenerating an Azure Data Factory (ADF) key may be done using the **Intelligent Cloud Management** page in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. For more information, see [Managing your Intelligent Cloud environment](administration-intelligent-edge.md).  
+Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your replication schedule or regenerating an Azure Data Factory (ADF) key may be done using the **Intelligent Cloud Management** page in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. For more information, see [Managing your Intelligent Cloud environment](manage-intelligent-edge.md).  
 
 ## User groups and permission sets
 
