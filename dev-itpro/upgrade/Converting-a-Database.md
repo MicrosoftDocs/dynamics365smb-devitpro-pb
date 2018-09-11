@@ -105,7 +105,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and application-database.md).
 
 
-    <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?>
+    <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?-->
 
 9.  <a name="uploadlicense"></a>Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Partner license to the database.  
 

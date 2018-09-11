@@ -12,7 +12,9 @@ ms.prod: "dynamics-nav-2018"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-This article describes the tasks required for upgrading to the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+[See print-friendly quick reference](multitenant-upgrade-checklist.md)
+
+This article describes the tasks required for upgrading data to the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] .
 
 ## About Data Upgrade
 
@@ -23,7 +25,7 @@ The data upgrade process described in this article leads you through the databas
 ##  <a name="Prereqs"></a> Prerequisites  
 Before you start the upgrade tasks, make sure you have the following prerequisites:
 
-1.  A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation with the upgraded application, including the following. 
+1.  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment is installed with the upgraded application, and includes the following: 
 
     - [!INCLUDE[server](../developer/includes/server.md)] instance connected to the application database.
     - [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
@@ -69,12 +71,18 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
 7.   If the old application uses data encryption, you have the encryption key file that it used for the data encryption.  
 
-    For more information, see [Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).  
+    For more information, see [Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md). 
+
+8. Prepare for transitioning from codeunit 1.
+
+    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).
 
 > [!NOTE]
 > If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete. 
 
 ## Task 1: Publish the system, test, and generate the application symbols  
+
+
 The 
 System and test symbols
 ```

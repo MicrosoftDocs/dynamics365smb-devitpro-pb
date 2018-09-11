@@ -181,13 +181,13 @@ After you have completed the merge, you import the new merged application object
         Import-NAVApplicationObject –DatabaseServer MyServer –DatabaseName "My Upgraded App" –Path C:\Upgrade\all-merged.txt  
         ```
 
-4.  Connect a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance to the database.  
+4.  Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the database.  
 
     You can do this with the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/nav_shell_md.md)]. In addition, you must add the service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance as a member of the **db\_owner** role in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database on SQL Server.  
 
     For more information about how to do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)], see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).  
 
-6.  Compile all the newly imported objects. For Multitenant, choose to synchronize later.
+6.  Compile all the newly imported objects. Choose to synchronize **later**.
 
     You can use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or finsql.exe. For more information, see [Compiling Objects](../cside/compiling-objects.md).
 
@@ -195,7 +195,7 @@ After you have completed the merge, you import the new merged application object
 
     When you compile the objects, an error is thrown for each code conflict, and you can use the tools that are available in the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to resolve the conflicts.
 
-## Task 6: Check/change the application family and version (multitenant only)
+## Task 6: Check/change the application family and version (multitenant mode only)
 
 The application and tenant databases are tagged with `Family` and `Version`. To perform the data upgrade, the `Family` on the application must match that tenant's `Family`. The `Version` of the application must be greater than or equal to the tenant's  `Version`. The easiest way to ensure that `Family` and `Version` of the upgraded application are compatible for data upgrade is to set `Family` to the same value as the old application, and set the `Version` to a higher value than the old application. 
 
@@ -203,8 +203,8 @@ To get the `Family` and `Version`, use the [Get-NAVApplication](https://docs.mic
 
 You now have a new database with a fully upgraded application. For a multitenant deployment, you can start the data upgrade. For this you will use the new server instance that connects to the upgraded application database. See [Upgrading the Data](Upgrading-the-Data.md).    
 
-## Task 7: Export All Objects (single-tenant only) 
-With a single-tenant deployment, you export all objects of the new database to an **objects.fob** file so that you can import them when performing the data upgrade. The export must include customized objects, upgraded reget-helpports, and all other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects.
+## Task 7: Export All Objects (single-tenant mode only) 
+With a single-tenant deployment, export all objects of the new database to a .fob type file, such as **objects.fob** file. You will use this .fob file as part of the data upgrade process. The export must include customized objects, upgraded reget-helpports, and all other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects.
 
 As with exporting objects in Task 1, you can use either the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], finsql.exe, or [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
@@ -215,8 +215,6 @@ Export-NAVApplicationObject objects.fob -DatabaseName "My Upgraded App" -Databas
 ```  
 
 This completes the upgrade of the application code for single-tenant deployment. Next, you must upgrade the data in the database. See [Upgrading the Data](Upgrading-the-Data.md).  
-
-
 
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
