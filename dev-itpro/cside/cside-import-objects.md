@@ -22,7 +22,7 @@ You can export and import application objects from and to the database from a fi
 
 ### <a name="ExportObjectsDevEnv"></a>To export objects by using the development environment UI  
 
-1.  In the [!INCLUDE[[nav_dev_long](../developer/includes/[nav_dev_long_md.md)], on the **Tools** menu, choose **Object Designer**.  
+1.  In the [!INCLUDE[[nav_dev_long](../developer/includes/nav_dev_long_md.md)], on the **Tools** menu, choose **Object Designer**.  
 
 2.  In Object Designer, select the object type that you want to export, or select **All** if you want to export different types of objects to the same file.  
 
