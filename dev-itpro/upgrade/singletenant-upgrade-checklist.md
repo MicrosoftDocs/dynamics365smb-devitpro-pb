@@ -10,7 +10,7 @@ ms.author: jswymer
 ms.prod: "dynamics365-business-central"
 author: jswymer
 ---
-# Business Central Multitenant Full Upgrade Quick Reference 
+# Business Central Single-Tenant Full Upgrade Quick Reference 
 
 This article provides an overview of the full upgrade process for Business Central in a single-tenant deployment. For more detailed steps, see [Upgrading the Data: Single-Tenant Mode](upgrading-the-data.md).
 
@@ -30,7 +30,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |----|-----------|--|
 |Backup the database.|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
 |Uninstall all extensions.|[See...](../developer/devenv-unpublish-and-uninstall-extension-v2.md)|
-|Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licencse-file.md)||
+|Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 |Delete all objects except tables from the old database|[See...](upgrading-the-data.md#DeleteObjects)||
 |Clear Dynamics NAV Server instance and debugger breakpoint records from old database.|[See...](upgrading-the-data.md#ClearServer)||
 
@@ -53,8 +53,8 @@ This article provides an overview of the full upgrade process for Business Centr
 |Import permissions and permission sets.|[See...](How-to--Import-Export-Permission-Sets-Permissions.md)||
 |Import encryption keys|[See...](how-to-export-and-import-encryption-keys.md)||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client. |[See...](upgrade-pages-report-for-search.md) ||
-|Add custom control add-ins to the server instance.|[See...](converting-a-database.md#controladdins)||
-|Upload the customer license. |[See...](../cside/cside-upload-licencse-file.md)||
+|Register custom control add-ins to the server instance.|[See...](upgrading-the-data.md)#AddControlAddins||
+|Upload the customer license. |[See...](../cside/cside-upload-license-file.md)||
 
 ## Publish, upgrade, and install extensions
 

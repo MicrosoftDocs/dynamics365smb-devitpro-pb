@@ -84,11 +84,11 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
 7.   If the old application uses data encryption, you have the encryption key file that it used for the data encryption.  
 
-    For more information, see [Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md). 
+       For more information, see [Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md). 
 
 8. Prepare for transitioning from codeunit 1.
 
-    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).
+   For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).
 
 > [!NOTE]
 > If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete. 
@@ -129,17 +129,17 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
     
         When the process ends, a file named **navcommandresult.txt** is saved to the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] installation folder. If the command succeeded, the file will contain text like `[0] [06/12/17 14:36:17] The command completed successfully in '177' seconds.` If the command failed, another file named **naverrorlog.txt** will be generated. This file contains details about the error(s) that occurred. 
             
-    For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md).
+    For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](../developer/devenv-running-cside-and-al-side-by-side.md).
 
  
-4. Publish the V2 extension versions that were published on the old environment
+4. <a name="PublishOld"></a>Publish the V2 extension versions that were published on the old environment
 
     For each extension version, run the the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
 
     ```
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
     ```
-5. Publish new versions of the Microsoft extensions
+5. <a name="PublishNew"></a>Publish new versions of the Microsoft extensions
 
     The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the old versions to the new versions.
 
@@ -162,7 +162,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
 6. Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license
 
-    For more information, see [Uploading a License](../cside/cside-upload-licencse-file.md).      
+    For more information, see [Uploading a License](../cside/cside-upload-license-file.md).      
 
 ## Prepare the tenant database for data upgrade
 
@@ -222,12 +222,12 @@ You perform these tasks on each tenant that you want to upgrade.
     Set-NAVTenant -ServerInstance <ServerInstanceName> -Tenant <TenantID>
     ```
 
-3. Synchronize all published extensions.
+3. Synchronize all published extensions with the tenant database.
     
     Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet for each extension version:
 
     ```    
-    Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
+    Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> -Tenant <TenantID>
     ```
 
 4. Run the data upgrade.

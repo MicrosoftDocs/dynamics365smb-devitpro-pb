@@ -33,9 +33,9 @@ This article provides an overview of the full upgrade process for Business Centr
 |Mount the upgraded application on the [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication)||
 |Import upgrade toolkit (.fob)|[See...](../cside/cside-import-objects.md)||
 |Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-data-multitenant.md#AddExtensions)|
-|Publish the same extension versions that were published on the old deployment|[See...](upgrading-the-data-multitenant.md#AddExtensions)||
-|Publish the new Microsoft extension versions from the installation media.|[See...](upgrading-the-data-multitenant.md#AddExtensions)||
-|Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licencse-file.md)||
+|Publish the same extension versions that were published on the old deployment|[See...](upgrading-the-data-multitenant.md#PublishOld)||
+|Publish the new Microsoft extension versions from the installation media.|[See...](upgrading-the-data-multitenant.md#PublishNew)||
+|Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 
 ## Prepare the tenant database for data upgrade
 
@@ -51,7 +51,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |----|-----------|--|
 |Mount the tenant on the [!INCLUDE[server](../developer/includes/server.md)] instance. **Important:** Use the `-AllowAppDatabaseWrite` parameter.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant)|
 |Synchronize the tenant.|[See...](../administration/synchronize-tenant-database-and-application-database.md)||
-|Synchronize all extensions.|||
+|Synchronize all extensions.|[See..](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp)||
 |Run the data upgrade. **Important:** Use the `-FunctionExecutionMode Serial` parameter.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade)||
 |Install the new V2 extensions that were not installed in the old tenant.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
 
@@ -63,4 +63,4 @@ This article provides an overview of the full upgrade process for Business Centr
 |Import permissions and permission sets.|[See...](How-to--Import-Export-Permission-Sets-Permissions.md)||
 |Import encryption keys|[See...](how-to-export-and-import-encryption-keys.md)||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client. |[See...](upgrade-pages-report-for-search.md) ||
-|Upload the customer license. |[See...](../cside/cside-upload-licencse-file.md)||
+|Upload the customer license. |[See...](../cside/cside-upload-license-file.md)||
