@@ -15,12 +15,12 @@ You can import application objects into the database from a file. The file must 
 
 -   Text format \(.txt\)  
 
- You can import objects either by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_.md)] or by running finsql.exe with the ImportObjects command.  
+ You can import objects either by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] or by running finsql.exe with the ImportObjects command.  
 
 > [!NOTE]  
 >  To import objects from .txt format, you must have a developer license. To import objects from .fob format, you can have either an end-user license or a developer license.  
 
-### <a name="ImportObjectsDevEnv"></a>To import objects by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_.md)]  
+### <a name="ImportObjectsDevEnv"></a>To import objects by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)]  
 
 1.  In the development environment, on the **Tools** menu, choose **Object Designer**.  
 
@@ -34,7 +34,7 @@ You can import application objects into the database from a file. The file must 
 
 ### <a name="ImportObjectsFinSQL"></a>To import objects by running finsql.exe with the ImportObjects command  
 
-1.  At a command prompt, move to the location of finsql.exe. The finsql.exe is located where the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_.md)] is installed.  
+1.  At a command prompt, move to the location of finsql.exe. The finsql.exe is located where the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] is installed.  
 
 2.  Run finsql.exe with the parameter "command=importobjects". You must specify the following parameters:  
 
