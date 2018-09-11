@@ -22,7 +22,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 
 ## Accessing the administration center
 
-The following users are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] :
+The following users are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]:
 
 - Internal tenant administrators
 - Delegated administrators, typically the partner associated with the tenant
@@ -30,12 +30,12 @@ The following users are authorized to access the [!INCLUDE[prodadmincenter](../d
 As a partner, you can access the center from the Partner Dashboard in the Microsoft Partner Center:
 
 1. Log into the [Partner Dashboard](https://partnercenter.microsoft.com/dashboard).
-2. Select the Customers link in the navigation pane.
-3. Select the customer tenant for which you want to perform administrative tasks.
-4. Select Service Management.
-5. Under the Administer Services heading, select [!INCLUDE[prodlong](../developer/includes/prodlong.md)].
+2. Select the **Customers** link in the navigation pane.
+3. Select the customer tenant that you want to perform administrative tasks for.
+4. Select **Service Management**.
+5. Under the **Administer Services** heading, select [!INCLUDE[prodlong](../developer/includes/prodlong.md)].
 
-The administration center can also be accessed by navigating directly to the URL of a tenant's instance. This is done with the URL below, replacing [TENANT_ID] with the tenant ID of the customer tenant.
+The administration center can also be accessed by navigating directly to the URL of a tenant's instance. This is done with the following URL, if you replace [TENANT_ID] with the tenant ID of the customer tenant.
 
 `https://businesscentral.dynamics.com/[TENANT_ID]/admin`
 
@@ -72,7 +72,7 @@ To create a sandbox environment:
     > [!NOTE]
     > The sandbox environment will not be accessible until the **State** shows *Active*.
 
-A sandbox environment can also be created from within a page within the production environment of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. For more information, see [Create a Sandbox Environment](across-how-create-sandbox-environment.md).
+A sandbox environment can also be created from within a page within the production environment of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. For more information, see [How to: Create a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/toc.json).
 
 To delete a sandbox environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then click **Delete Sandbox** on the action ribbon.
 
@@ -87,10 +87,10 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 To filter the telemetry for an environment:
 
 1. Select a base point in time for the timestamp of the telemetry messages.
-2. Enter a number of minutes prior to or following the base point in time to set a range of time for the timestamp. A negative number indicates a number of minutes prior to the base point in time, and a positive number indicates a number of minutes following the base point in time. For example, a number of -15 minutes will filter the telemetry messages to a timestamp range of 15 minutes prior to the base point in time up to the base point in time.
+2. Enter a number of minutes before or after the base point in time to set a range of time for the timestamp. A negative number indicates a number of minutes before the base point in time, and a positive number indicates a number of minutes following the base point in time. For example, a value of *-15* will filter the telemetry messages to a timestamp range of up to 15 minutes before the base point in time.
 3. Select the message type.
 4. Select the environment.
-5. Click Filter.
+5. Click **Filter**.
 
 ## See also
 
