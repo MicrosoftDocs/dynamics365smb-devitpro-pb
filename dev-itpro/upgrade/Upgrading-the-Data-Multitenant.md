@@ -162,7 +162,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
 6. Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license
 
-    For more information, see [Uploading a License](../cside/cside-upload-licencs-file.md).      
+    For more information, see [Uploading a License](../cside/cside-upload-licencse-file.md).      
 
 ## Prepare the tenant database for data upgrade
 
