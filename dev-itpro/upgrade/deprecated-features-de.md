@@ -25,7 +25,7 @@ You can archive and delete blanket sales and purchase orders. You can view docum
 |Moved| Blanket Order Archiving and Document Line Tracking features are no longer specific to Germany, so we have made them generally available in the standard product. |
 
 ## See Also
-[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-microsoft-dynamics-nav.md)  
+[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
 [Germany Local Functionality in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Germany/germany-local-functionality)  

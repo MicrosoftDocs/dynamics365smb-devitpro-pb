@@ -162,7 +162,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
 6. Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license
 
-    For more information, see [Uploading a License](../cside/cside-upload-licence-file.md).      
+    For more information, see [Uploading a License](../cside/cside-upload-licencs-file.md).      
 
 ## Prepare the tenant database for data upgrade
 
@@ -278,7 +278,7 @@ You perform these tasks on each tenant that you want to upgrade.
         For more information, see [How to: Export and Import Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ImportPerms).
 3. Import encryption keys.
 
-    For more information, see [Exporting and Importing Encryption Keys](How-to--Export-and-Import-Encryption-Keys.md).
+    For more information, see [Exporting and Importing Encryption Keys](how-to-export-and-import-encryption-keys.md).
 
 
 4. Configure pages and reports included in the MenuSuite to be searchable in the Web client.
@@ -292,4 +292,4 @@ You perform these tasks on each tenant that you want to upgrade.
 
 ## See Also  
  [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
- [Upgrading to Microsoft Dynamics NAV](Upgrading-to-Microsoft-Dynamics-NAV.md)
+ [Upgrading to Microsoft Dynamics NAV](upgrading-to-business-central.md)

@@ -25,7 +25,7 @@ When you create finance charge terms and reminder terms, for delayed payment pen
 |Moved| The Multiple Interest Rates feature is no longer specific to Sweden, so we have made it generally available in the standard product. |
 
 ## See Also
-[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-microsoft-dynamics-nav.md)  
+[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
 [Sweden Local Functionality in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Sweden/sweden-local-functionality)  

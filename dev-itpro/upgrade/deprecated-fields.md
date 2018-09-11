@@ -200,7 +200,7 @@ A number of fields that are related to product groups are no longer in use, beca
 For more information about the impact, see [The new Item Categories feature replaced the Product Group feature in Dynamics NAV 2017](https://blogs.msdn.microsoft.com/nav/2017/03/30/the-new-item-categories-feature-replaced-the-product-group-feature-in-dynamics-nav-2017/) on the Dynamics NAV team blog. For more information about item categories, see [How to: Categorize Items](/dynamics365/financials/inventory-how-categorize-items) in the [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)] documentation.
 
 ## See Also
-[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-microsoft-dynamics-nav.md)  
+[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Considerations for Upgrading Dynamics NAV](upgrade-considerations.md)  
 [Deprecated Features in the UK Version](deprecated-features-uk.md)  

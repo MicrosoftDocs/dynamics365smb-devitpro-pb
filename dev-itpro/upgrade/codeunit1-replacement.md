@@ -11,7 +11,8 @@ author: jswymer
 ---
 ## Codeunit 1 Replacement
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit **1 Application Management** has been removed and replaced with system codeunits and management codeunits. However, for technical upgrades from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you must import the replacement codeunit 1 that is provided in this article into your application database. 
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit **1 Application Management** has been removed and replaced with system codeunits and management codeunits. However, for technical upgrades from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you must import the replacement codeunit 1 that is provided in this article into your application database. For more information about the codeunit 1 removal and what it means, see [Transitioning From Codeunit 1](transition-from-codeunit1.md). 
+
 
 
 ## Codeunit 1 Replacement
@@ -1016,4 +1017,4 @@ OBJECT Codeunit 1 ApplicationManagement
 ## See Also  
  [Converting a Database](Converting-a-Database.md)  
  [Resolving Compilation Errors When Converting a Dynamics NAV 2016 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2016-Database.md)  
- [How to: Import-Objects](How-to--Import-Objects.md)
+ [Exporting and Importing Objects](../cside/cside-import-objects.md)

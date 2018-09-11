@@ -69,8 +69,8 @@ To complete the tasks in this article, you will use various tools and components
 
 There are three ways to export application objects to text files:
 
--   Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] version that matches the application database version. For more information see [To export objects by using the development environment UI](how-to--export-objects.md#ExportObjectsDevEnv).
--   Use the finsql.exe that matches the application database version to run the [ExportObjects](ExportObjects.md) command. For more information, see [To export objects by running finsql.exe with the ExportObjects command  ](how-to--export-objects.md#ExportObjectsFinSQL).
+-   Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] version that matches the application database version. For more information see [To export objects by using the development environment UI](cside-import-objects.md#ExportObjectsDevEnv).
+-   Use the finsql.exe that matches the application database version to run the [ExportObjects](ExportObjects.md) command. For more information, see [To export objects by running finsql.exe with the ExportObjects command  ](cside-import-objects.md#ExportObjectsFinSQL).
 -   Use the [!INCLUDE[nav_dev_shell_md](../developer/includes/nav_dev_shell_md.md)] or [!INCLUDE[devshell](../developer/includes/devshell.md)] version that matches the application database version. This is the way that is described in the tasks of this article. Note that the [!INCLUDE[nav_dev_shell_md](../developer/includes/nav_dev_shell_md.md)] is not available for [!INCLUDE[nav7long](../developer/includes/nav7long_md.md)] and [!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]. For these versions, you must use [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or finsql.exe.
 
 ### Create the application text files
@@ -162,14 +162,14 @@ After you have completed the merge, you import the new merged application object
 
     -   Use the [[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-        For more information see [To import objects by using the development environment UI](how-to--import-objects.md#ImportObjectsDevEnv).
-    -   Use the finsql.exe to run the [ImportObjects](ImportObjects.md) command.
+        For more information see [To import objects by using the development environment UI](../cside/cside-import-objects.md#ImportObjectsDevEnv).
+    -   Use the finsql.exe to run the [ImportObjects](https://docs.microsoft.com/en-us/dynamics-nav/importobjects) command.
 
-        For more information, see [To import objects by running finsql.exe with the ImportObjects command  ](how-to--import-objects.md#ImportObjectsFinSQL).
+        For more information, see [To import objects by running finsql.exe with the ImportObjects command  ](../cside/cside-import-objects.md#ImportObjectsFinSQL).
 
     -   Use the [!INCLUDE[devshell](../developer/includes/devshell.md)] (or Microsoft.Dynamics.NAV.Model.Tools.psd1 module).
 
-        The shell includes the **Join-NAVApplicationObjectFile** cmdlet and **Import-NAVApplicationObject** function. The **Join-NAVApplicationObjectFile** cmdlet combines multiple application object text files into one text file. The **Import-NAVApplicationObject** function runs the [ImportObjects](ImportObjects.md) command to import an object file.
+        The shell includes the **Join-NAVApplicationObjectFile** cmdlet and **Import-NAVApplicationObject** function. The **Join-NAVApplicationObjectFile** cmdlet combines multiple application object text files into one text file. The **Import-NAVApplicationObject** function runs the [ImportObjects](https://docs.microsoft.com/en-us/dynamics-nav/importobjects) command to import an object file.
 
         This means that you can run a command similar to following to create a single text file from the merge application text files in the **Result** folder:
 
