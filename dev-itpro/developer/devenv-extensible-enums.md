@@ -75,3 +75,4 @@ Conversion to and from `enum` is more strict than for `Options` in C/SIDE.
 - Declaring C/SIDE enums with the same ID on multiple table option fields will break the symbol generation.
 
 ## See Also
+[AL Data Types](datatypes/devenv-al-data-types.md)  
