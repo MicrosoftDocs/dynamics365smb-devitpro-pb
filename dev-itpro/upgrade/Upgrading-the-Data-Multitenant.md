@@ -162,7 +162,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
 6. Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license
 
-    For more information, see [Uploading a License](../cside/cside-upload-licence-file.md).      
+    For more information, see [Uploading a License](../cside/cside-upload-licencs-file.md).      
 
 ## Prepare the tenant database for data upgrade
 
@@ -292,4 +292,4 @@ You perform these tasks on each tenant that you want to upgrade.
 
 ## See Also  
  [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
- [Upgrading to Microsoft Dynamics NAV](Upgrading-to-Microsoft-Dynamics-NAV.md)
+ [Upgrading to Microsoft Dynamics NAV](upgrading-to-business-central.md)

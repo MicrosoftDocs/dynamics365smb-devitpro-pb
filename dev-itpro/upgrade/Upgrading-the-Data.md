@@ -425,4 +425,4 @@ In addition, other extensions used in the old deployment that you still want to 
 
 ## See Also  
  [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
- [Upgrading to Business Central](Upgrading-to-Microsoft-Dynamics-NAV.md)
+ [Upgrading to Business Central](upgrading-to-business-central.md)
