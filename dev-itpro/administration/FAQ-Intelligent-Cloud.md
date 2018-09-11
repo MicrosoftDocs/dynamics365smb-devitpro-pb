@@ -50,7 +50,7 @@ No, only tables that are available in both your on-premises solution and your [!
 
 ## Why are my Business Central tenant permissions restricted?
 
-Once your on-premises solution is connected to the intelligent cloud, all existing users without SUPER permission are automatically added to the *Intelligent Cloud* user group. In this configuration, your on-premises solution is the master where all business transactions take place. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant is read-only, and the data is used to generate business insights in the cloud for you. We restrict permissions to avoid users from accidentally entering transactions or updating master records only to have that information overwritten and lost when data replication takes place.  
+Once your on-premises solution is connected to the intelligent cloud, all existing users without SUPER permission are automatically added to the *Intelligent Cloud* user group. In this configuration, your on-premises solution is the master where all business transactions take place. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant is read-only, and the data is used to generate business insights in the cloud for you. We restrict permissions to prevent users from accidentally entering transactions or updating master records only to have that information overwritten and lost when data replication takes place.  
 
 ## Can I ‘turn off’ my intelligent cloud?
 
@@ -66,7 +66,7 @@ Yes, the **Intelligent Cloud Insights** page can be hosted within your on-premis
 
 ## Can you export to Excel, modify the contents, and import the data back in?
 
-You can export the list to Excel from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, but since the data is read only you cannot make changes and import it again.  
+You can export the list to Excel from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, but since the data is read-only you cannot make changes and import it again.  
 
 ## Is the data replication only one-way?
 
@@ -82,11 +82,11 @@ To keep the Role Center experience as clean as possible and avoid permission err
 
 ## Should I uninstall all my Business Central tenant extensions?
 
-Not necessarily, most Extensions will run without issues in the intelligent cloud environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It is a best practice to test any extension in a sandbox tenant configured for the intelligent cloud.  
+Not necessarily. Most extensions will run without issues in the intelligent cloud environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It is a best practice to test any extension in a sandbox tenant configured for the intelligent cloud.  
 
 ## How do I build an extension that enables data replication?
 
-The extension should be created in the same manner as any other extension. For data to replicate, you must add a **ReplicateData** property to your table and set the value to *Yes*. If your extension connects with an external service and you want to restrict any service calls from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, a good practice would be to store the connection information in a separate table and set the **ReplicateData** property to *No*. This would enable you to keep the extension installed but prevent it from making any type of service calls from the read-only [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Once the extension is installed in both on-premises and [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data will begin to replicate.  
+The extension should be created in the same manner as any other extension. For data to replicate, you must add a **ReplicateData** property to your table and set the value to *True*. If your extension connects with an external service and you want to restrict any service calls from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, a good practice would be to store the connection information in a separate table and set the **ReplicateData** property to *False*. This would enable you to keep the extension installed but prevent it from making any type of service calls from the read-only [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Once the extension is installed in both on-premises and [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data will begin to replicate.  
 
 ## How do I find my SQL connection string?
 
