@@ -278,7 +278,7 @@ You perform these tasks on each tenant that you want to upgrade.
         For more information, see [How to: Export and Import Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ImportPerms).
 3. Import encryption keys.
 
-    For more information, see [Exporting and Importing Encryption Keys](How-to--Export-and-Import-Encryption-Keys.md).
+    For more information, see [Exporting and Importing Encryption Keys](how-to-export-and-import-encryption-keys.md).
 
 
 4. Configure pages and reports included in the MenuSuite to be searchable in the Web client.

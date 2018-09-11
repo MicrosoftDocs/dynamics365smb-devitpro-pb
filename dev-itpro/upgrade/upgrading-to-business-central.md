@@ -24,13 +24,12 @@ Use the following table to determine the procedures that you must complete for y
 |Platform-only upgrade of [!INCLUDE[navnow](../developer/includes/navnow_md.md)] or [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to a new platform version, such as with a cummulative update|<ul><li>[Technical Upgrade](Converting-a-Database.md)</li></ul></br>You can also use this procedure to convert a database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] technical requirements, and then upgrade the application and data later.|  
 
 Before you begin the upgrade process, see [Upgrade Considerations](Upgrade-Considerations.md) for tips about things to consider when you prepare to upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
-
+<!--
 ## Automating the Upgrade Process using Sample Windows PowerShell Scripts
 You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] scripts to help you upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. You can use automation to upgrade a single [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database as well as multiple [!INCLUDE[navnow](../developer/includes/navnow_md.md)] databases that use the same application. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides sample scripts that you can adapt for your deployment architecture.
-For more information, see [Automating the Upgrade Process using Sample Windows PowerShell Scripts](Automating-the-Upgrade-Process-using-Sample-Windows-PowerShell-Scripts.md).  
+For more information, see[Automating the Upgrade Process using Sample Windows PowerShell Scripts]().-->  
 
 ## See Also  
-[Product and Architecture Overview](Product-and-Architecture-Overview.md)   
-[Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
+[Product and Architecture Overview](../deployment/Product-and-Architecture-Overview.md)   
+[Migrating to Multitenancy](../deployment/Migrating-to-Multitenancy.md)   
 [Deployment](Deployment.md)  
-[Transforming Forms to Pages](http://go.microsoft.com/fwlink/?LinkId=510383)

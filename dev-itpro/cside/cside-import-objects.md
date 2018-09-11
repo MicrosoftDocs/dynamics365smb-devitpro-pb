@@ -30,7 +30,7 @@ You can import application objects into the database from a file. The file must 
 
      If you import objects from a .txt file, then the objects in the file overwrite any objects that are already in the database. If you import objects from a .fob file and one or more objects in the file has the same ID as an object that are already in the database, then you receive a warning. You can choose to either cancel the import or open the Import Worksheet to resolve the conflicts.  
 
-4.  Use the Import Worksheet to specify how to resolve conflicts between objects in the import file and objects in the database. For more information, see [Import Worksheet](Import-Worksheet.md).  
+4.  Use the Import Worksheet to specify how to resolve conflicts between objects in the import file and objects in the database. For more information, see [Import Worksheet](../cside/cside-import-worksheet.md).  
 
 ### <a name="ImportObjectsFinSQL"></a>To import objects by running finsql.exe with the ImportObjects command  
 

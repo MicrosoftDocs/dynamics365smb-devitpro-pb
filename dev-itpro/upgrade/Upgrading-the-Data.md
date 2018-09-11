@@ -276,7 +276,7 @@ Import the permission sets and permissions XML files that you exported from the 
 
 If you want to use data encryption as before, you must import the data encryption key file that was exported previously.  
 
-For more information, see [Exporting and Importing Encryption Keys](How-to--Export-and-Import-Encryption-Keys.md). 
+For more information, see [Exporting and Importing Encryption Keys](how-to-export-and-import-encryption-keys.md). 
 
 ##  <a name="SetLang"></a> Task 16: Set the language of the customer database
 
