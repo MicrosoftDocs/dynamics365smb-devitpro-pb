@@ -208,7 +208,9 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
     -   [Resolving Compilation Errors When Converting a Dynamics NAV 2016 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2016-Database.md). 
 
-    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2017 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2017-Database.md). 
+    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2017 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2017-Database.md).
+
+    -    [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](resolve-compile-errors-when-converting-dynamics-nav-2018-Database.md)
 
 
     You can find all objects which did not compile in the **Object Designer** window, by setting a field filter on the **Compiled** field. 
