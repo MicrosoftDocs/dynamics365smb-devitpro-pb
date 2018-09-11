@@ -30,7 +30,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |----|-----------|--|
 |Backup the database.|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
 |Uninstall all extensions.|[See...](../developer/devenv-unpublish-and-uninstall-extension-v2.md)|
-|Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licencs-file.md)||
+|Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licencse-file.md)||
 |Delete all objects except tables from the old database|[See...](upgrading-the-data.md#DeleteObjects)||
 |Clear Dynamics NAV Server instance and debugger breakpoint records from old database.|[See...](upgrading-the-data.md#ClearServer)||
 
@@ -54,7 +54,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |Import encryption keys|[See...](how-to-export-and-import-encryption-keys.md)||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client. |[See...](upgrade-pages-report-for-search.md) ||
 |Add custom control add-ins to the server instance.|[See...](converting-a-database.md#controladdins)||
-|Upload the customer license. |[See...](../cside/cside-upload-licencs-file.md)||
+|Upload the customer license. |[See...](../cside/cside-upload-licencse-file.md)||
 
 ## Publish, upgrade, and install extensions
 
