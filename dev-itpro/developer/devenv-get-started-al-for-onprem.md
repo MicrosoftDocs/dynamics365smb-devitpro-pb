@@ -1,35 +1,26 @@
 ---
-title: "Getting Started with AL"
-description: "Description of how to get started with the new development environment"
+title: "Getting Started with C/SIDE and AL Side-By-Side for On-Premises"
+description: "Description of how to get started with the new development environment along with C/SIDE."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/26/2018
+ms.date: 09/11/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+# Getting Started with C/SIDE and AL for On-Premises
+To get started with a mixed development environment of C/SIDE and AL, you must follow the steps below. 
 
-# Getting Started with AL
-To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you will need a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross platform editor that you will use for coding and debugging.
+## Steps to install Business Central on-premises with C/SIDE and AL development environment
 
-## Steps to set up a sandbox environment and Visual Studio Code
-Go through the following steps to set up a sandbox environment. With this you get sample code that compiles and runs with just a few commands. 
-
-> [!NOTE]  
-> If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md).<!--  If you want to create an online sandbox with production data, see [](). -->
-
-1) Sign up for a [Dynamics 365 Business Central sandbox](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1). 
-2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
-3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).  
-4) Press **Ctrl+,** to open the **user settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).  
-5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, choose a project, and then choose **Microsoft cloud sandbox**.  
+1. Install [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises and make sure to include the **AL Development Environment**.
+2. Download [Visual Studio Code](https://code.visualstudio.com/Download).  
+3. Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).  
+4. Press **Alt+A, Alt+L** to trigger the **AL Go!** command, choose a project, and then choose **Your own server**.  
 6) Authenticate with the credentials you provided for the sign up.  
 7) Press **F5** to deploy and run the extension on your online sandbox tenant.  
 
