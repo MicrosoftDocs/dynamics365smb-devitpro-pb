@@ -2,15 +2,15 @@
 title: Intelligent Edge for on-premises | Microsoft Docs
 description: Get a cloud copy of your data so you are connected to the intelligent cloud also when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL, or Dynamics NAV.
 author: bmeier94
-manager: edupont
 
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
+ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 09/10/2018
+ms.date: 09/11/2018
 ms.author: bmeier
 
 ---
@@ -23,7 +23,7 @@ For the list of currently supported on-premises solutions, see [Which products a
 
 ## Setting up your intelligent cloud
 
-This section provides the steps required to configure your intelligent cloud environment. This can simply be done by following the instructions in the **Intelligent Cloud Set Up** assisted setup wizard within your Business Central cloud tenant.  
+This section provides the steps required to configure your intelligent cloud environment. This can simply be done by following the instructions in the **Intelligent Cloud Setup** assisted setup wizard within your Business Central cloud tenant.  
 
 There are a few key points that need to be understood before proceeding with the setup:
 
@@ -35,7 +35,7 @@ There are a few key points that need to be understood before proceeding with the
 - Before setting up your intelligent cloud environment, ensure that at least one user in the system that has ‘SUPER’ permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
 - Configuring the intelligent cloud environment will have no impact on any users or data in your on-premises solution.
 
-To begin configuring your intelligent cloud environment, navigate to the assisted setup page and launch the **Intelligent Cloud Set Up** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises) you may also launch the wizard from your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
+To begin configuring your intelligent cloud environment, navigate to the assisted setup page and launch the **Intelligent Cloud Setup** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises) you may also launch the wizard from your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
 
 ### The assisted setup guide
 
@@ -43,31 +43,21 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
 
 1. Welcome and Consent page
 
-    This page will provide an overview of what the wizard will do. You will be asked to agree to the displayed warning message before you can continue to the next step.
+    This page provides an overview of what the wizard will do. You must agree to the displayed warning message before you can continue to the next step.
 
 2. Product selection
 
-    On this page, specify your source, or on-premises solution, that you are replicating data from. All supported sources will appear in the list. If you don’t see your product, navigate to the **Manage Extensions** page and verify the intelligent cloud extension for that product is installed.
+    On this page, specify the on-premises solution that you want to replicate data from. All supported sources will appear in the list. If you don’t see your product, navigate to the **Manage Extensions** page, and then verify that the intelligent cloud extension for your on-premises solution is installed.
 
 3. SQL Connection
 
-    If the product you selected requires a SQL connection, this page will be presented. Other source applications may require different information to connect to them. This page will display the connection information based on the product that you specified in the previous page. This is defined from the installed extensions for the product you have selected.
+    If the product you selected requires a SQL connection, this page will be presented. Other source applications may require different information to connect to them. This page will display the connection information based on the product that you specified in the previous page. This is defined from the installed extensions for the product you have selected.  
 
-    *SQL Connection* There are two options for SQL: SQL Server, which is your locally installed SQL Server instance, or Azure SQL.
-
-    *SQL Connection string*: If you had chosen SQL Server for your SQL Connection, you will be required to enter the connection string to your SQL Server. This information can be found on [the SQL Server blog]( https://blogs.msdn.microsoft.com/sqlforum/2010/12/20/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string/). This is an example of what this connection string would look like:
-
-        *Server={ServerName};Initial Catalog={DatabaseName};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};*
-
-        The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data replication process.  
-
-    *Integration runtime name*: This is the service that will be used to
-     replicate the data from the defined source to your Business Central cloud
-     tenant.
-
-        > [!NOTE]  
-        > The Integration Runtime Service is not required if your data source is Azure SQL.
-        > If you are a hosting partner you may have multiple tenants running on the same Integration runtime service. Each tenant will be isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. To create a new runtime service, leave the field empty, and then choose the Next button. Once you choose Next, a new replication pipeline will be created in the Azure service. This should take less than a minute to complete.
+    |Field  |Description  |
+    |---------|---------|
+    |*SQL Connection* |**SQL Server**, which is your locally installed SQL Server instance, or **Azure SQL**.|
+    |*SQL Connection string*|If your SQL connection is **SQL Server**, you must specify the connection string to your SQL Server. For more information, see [the SQL Server blog](https://blogs.msdn.microsoft.com/sqlforum/2010/12/20/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string/). The following snippet illustrates what this connection string can look like: </br>  *Server={ServerName};Initial Catalog={DatabaseName};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};*</br></br>The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data replication process.|
+    |*Integration runtime name*|If your SQL connection is **SQL Server**, you must specify the runtime service that will be used to replicate the data from the defined source to your Business Central cloud tenant. </br></br>If you are a hosting partner, you may have multiple tenants running on the same Integration runtime service. Each tenant will be isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. To create a new runtime service, leave the field empty, and then choose the Next button. Once you choose Next, a new replication pipeline will be created in the Azure service. This should take less than a minute to complete.|
 
 4. Self-Hosted Integration Runtime (SHIR)
 
