@@ -38,7 +38,7 @@ Data replication for the initial release will have a limit of 150GB.  There are 
 
 ## Is my SQL connection string required to setup Intelligent Cloud?
 
-Yes. The SQL connection string is passed to Azure Data Factory where it is stored in a secure key vault. This information in required for the service to communicate with your SQL Server instance.
+Yes. The SQL connection string is passed to Azure Data Factory, where it is encrypted and delivered to your Self-Hosted Integration Runtime, and used to communication with your SQL Server instance during the data replication process.
 
 ## I am a hosting partner - do I need to configure the Self-Hosted Runtime Service for each tenant?
 
@@ -50,7 +50,7 @@ No, only tables that are available in both your on-premises solution and your [!
 
 ## Why are my Business Central tenant permissions restricted?
 
-Once your on-premises solution is connected to the intelligent cloud, all existing users without Super permission be automatically assigned to the *Intelligent Cloud* user group. In this configuration, your on-premises solution is the master where all business transactions take place. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant is read-only, and the data is used to generate business insights in the cloud for you. We restriction permissions to avoid users from accidentally entering transaction or updating master records only to have that information overwritten and lost when data replication takes place.  
+Once your on-premises solution is connected to the intelligent cloud, all existing users without Super permission be automatically assigned to the *Intelligent Cloud* user group. In this configuration, your on-premises solution is the master where all business transactions take place. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant is read-only, and the data is used to generate business insights in the cloud for you. We restrict permissions to avoid users from accidentally entering transactions or updating master records only to have that information overwritten and lost when data replication takes place.  
 
 ## Can I ‘turn off’ my intelligent cloud?
 
@@ -82,7 +82,7 @@ To keep the Role Center experience as clean as possible and avoid permission err
 
 ## Should I uninstall all my Business Central tenant extensions?
 
-Not necessarily. Most extensions will run without issues in the intelligent cloud environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It is a best practice to test any extension in a sandbox tenant configured for the intelligent cloud.  
+Not necessarily, most Extensions will run without issues in the intelligent cloud environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It is a best practice to test any extension in a sandbox tenant configured for the intelligent cloud.  
 
 ## How do I build an extension that enables data replication?
 

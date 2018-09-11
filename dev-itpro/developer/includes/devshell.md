@@ -1,1 +1,1 @@
-Business Central Development Shell
+Dynamic NAV Development Shell

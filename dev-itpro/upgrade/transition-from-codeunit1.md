@@ -11,13 +11,13 @@ author: jswymer
 ---
 # Transitioning from Codeunit 1 to System Codeunits
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 **Application Management** has been removed and replaced with new System codeunits. No functionality has been removed by this change. All system method triggers, event publishers, and their code have been moved to other codeunits.
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 **Application Management** has been removed and replaced with new System codeunits No functionality has been removed by this change. All system method triggers, event publishers, and their code have been moved to other codeunits.
 
 However, this change will affect the upgrade process from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] and how you develop going forward.
 
 ## Overview
 
-The foundation of this change is events - publishers and subscribers. System codeunits do not contain code. They only contain event publishers. Instead of running codeunit 1 and calling respective functions, [!INCLUDE[server](../developer/includes/server.md)] runs system codeunits. The system codeunits will in turn raise published events. There are various codeunits that subscribe to these events. Like codeunit 1, these subscriber codeunits contain method triggers and integration event publishers, which means that they can call application functionality and raise events. The following figure illustrates the process:
+The foundation of this change is events - publishers and subscribers. System codeunits do not contain code. They only contain event publishers. Instead of running codeunit 1 and calling respective functions, [!INCLUDE[server](../developer/includes/server.md)] runs system codeunits. The system codeunits will in turn raise published events. There are various management codeunits that subscribe to these events. Like codeunit 1, these subscriber codeunits contain method triggers and integration event publishers, which means that they can call application functionality and raise events. The following figure illustrates the process:
 
 ![System event publishers](../media/system-event-publishers.png "system event publishers")
 
@@ -29,9 +29,9 @@ The foundation of this change is events - publishers and subscribers. System cod
   
 ## Mapping Codeunit 1 method triggers to events
 
-The following table lists the mappings between the codeunit 1 method triggers and the new event publisher methods.
+The following table lists the mappings between the codeunit 1 triggers and event publishers and the new method trigger and publishers in the management codeunits.
 
-|Codeunit 1 trigger|New object ID|New method|
+|Codeunit 1 trigger|New Codeunit ID|New method|
 |------------------|-------------|-----------------|
 |CompanyClose|40|CompanyClose
 |CompanyOpen|40|CompanyOpen
@@ -129,15 +129,9 @@ The following table lists the mappings between the codeunit 1 method triggers an
 
 ## What does this mean for upgrade?
 
-This depends on whether you perform a a technical upgrade (platform only) or a full upgrade (platform, application, and data).
+You have move any custom logic that was included in the old codeunit 1 into the management codeunits and methods described in the previous section. Any custom code that called into codeunit 1 will also have to be changed to call or subscribe to the new methods. 
 
-For a technical upgrade, after you convert your old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform, you have to do two things: 
-
-- Import and compile the replacement codunit 1 object from [Codeunit 1 Replacement](codeunit1-replacement.md).
-- Move any custom logic that was included in the old codeunit 1 into the new codeunits and methods described in the previous section.
-
-For a full upgrade, there is no additional work apart from the normal upgrade process. Standard and custom code in codeunit 1 will be automatically migrated to the new application codeunits. 
-
+For a technical upgrade, after you convert your old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform, you must import and compile a replacement codunit 1 object, which you can get from [Codeunit 1 Replacement](codeunit1-replacement.md).
 
 ## See Also  
  [Converting a Database](Converting-a-Database.md)  

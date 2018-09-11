@@ -32,7 +32,7 @@ When printing Norwegian sales documents, you can set up different tray numbers a
 |Removed| The feature is not used. |
 
 ## See Also
-[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-microsoft-dynamics-nav.md)  
+[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
 [Norway Local Functionality in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Norway/norway-local-functionality)  
