@@ -11,7 +11,7 @@ ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 ## Resolving Codeunit 9010 Compilation Error 
-This article explains how to resolve the compilation error that you get for codeunit **9010 Azure AD User Management** when converting a [!INCLUDE[nav2018_md](includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](includes/prodshort.md)].
+This article explains how to resolve the compilation error that you get for codeunit **9010 Azure AD User Management** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prodshort.md)].
 
 ## Resolution
 
