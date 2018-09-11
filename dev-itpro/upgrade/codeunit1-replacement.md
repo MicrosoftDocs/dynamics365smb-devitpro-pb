@@ -9,9 +9,9 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
-## Replacement for Codeunit 1
+## Codeunit 1 Replacement
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used. For technical upgrades from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you must import the codeunit 1 that is provided in this article into your application database. 
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit **1 Application Management** has been removed and replaced with system codeunits and management codeunits. However, for technical upgrades from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you must import the replacement codeunit 1 that is provided in this article into your application database. 
 
 
 ## Codeunit 1 Replacement

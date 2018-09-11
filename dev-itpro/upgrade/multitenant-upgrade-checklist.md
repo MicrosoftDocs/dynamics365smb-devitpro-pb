@@ -14,7 +14,7 @@ author: jswymer
 
 This article provides an overview of the full upgrade process for Business Central in a multitenant deployment. For more detailed steps, see [Upgrading the Data: Multitenant Mode](upgrading-the-data-multitenant.md).
 
-## Pre-upgrade tasks 
+## Prerequisite tasks 
  
 |Step|More info| Done |
 |----|-----------|--|
@@ -25,7 +25,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |Prepare for transitioning from codeunit 1.|[See...](transition-from-codeunit1.md)|
 |Install Business Central components.|||
 
-## Upgrade the application and prepare for data upgrade
+## Upgrade the application and prepare it for data upgrade
 
 |Step|More info| Done |
 |----|-----------|--|
@@ -33,10 +33,11 @@ This article provides an overview of the full upgrade process for Business Centr
 |Mount the upgraded application on the [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication)||
 |Import upgrade toolkit (.fob)|||
 |Publish system and test symbols from the installation media, and generate application symbols.|[See...](transition-from-codeunit1.md)|
-|Publish new versions of V2 extensions and any old versions that were published in the old environment.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
+|Publish the same extension versions that were published on the old deployment|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
+|Publish the new Microsoft extension versions from the installation media.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-licence-file.md)||
 
-## Prepare the tenant database
+## Prepare the tenant database for data upgrade
 
 |Step|More info| Done |
 |----|-----------|--|

@@ -23,7 +23,8 @@ You use data conversion tools provided with [!INCLUDE[prodshort](../developer/in
 
 The data upgrade process described in this article leads you through the database conversion (technical upgrade) and then the upgrade of the actual data, which is achieved by using the upgrade toolkit/upgrade codeunits.
 
-##  <a name="Prereqs"></a> Prerequisites  
+##  <a name="Prereqs"></a> Prerequisites
+  
 Before you start the upgrade tasks, make sure you meet the following prerequisites:
 1.  Your computer uses the same codepage as the data that will be upgraded.
 
@@ -31,7 +32,11 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
     Optionally, you can export the captions before the upgrade. For more information, see [How to: Add Translated Strings for Conflicting Text Encoding Formats](How-to--Add-Translated-Strings-for-Conflicting-Text-Encoding-Formats.md).
 
-2.  You have FOB files that contain the upgraded application code and upgrade toolkit. The upgrade toolkit includes upgrade codeunits for handling the data upgrade. The upgrade toolkit can be in the same FOB file as the application code or in a separate FOB file.  
+2. Custom V1 extensions used in the old deployment have been converted to V2 extensions.
+
+    For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
+
+3.  You have FOB files that contain the upgraded application code and upgrade toolkit. The upgrade toolkit includes upgrade codeunits for handling the data upgrade. The upgrade toolkit can be in the same FOB file as the application code or in a separate FOB file.  
 
     For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
 
@@ -54,11 +59,14 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
     For more information, see [Exporting and Importing Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ExportPerms).
 
-4. Custom V1 extensions used in the old deployment have been converted to V2 extensions.
+4.   If the old deployment uses data encryption, you have exported the encryption key file that it used for the data encryption.  
 
-    For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
+        For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).
+5.   \(Optional\) Make a copy of the configuration file (web.config or navsettings.json) for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances in the old deployment. 
+6. Prepare for transitioning from codeunit 1.
 
-5.  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has need installed. 
+    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).
+7.  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has need installed. 
 
     As a minimum, you must install the following components:
     - Server
@@ -69,22 +77,14 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     - (optionally) [!INCLUDE[admintool](../developer/includes/admintool.md)]
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setupn.md).
-
-5.   \(Optional\) Make a copy of the configuration file (web.config or navsettings.json) for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances in the old deployment.
-
-6.   If the old deployment uses data encryption, you have exported the encryption key file that it used for the data encryption.  
-
-        For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md). 
-7. Prepare for transitioning from codeunit 1.
-
-    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). 
+ 
 
 > [!NOTE]
 >If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete. 
 
 ##  <a name="SQLBackup"></a> Task 1: Create a full SQL backup of the old database on SQL Server  
 
-You must create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
+Create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
 For more information, see [Create a Full Database Backup \(SQL Server\)](http://msdn.microsoft.com/en-us/library/ms187510.aspx).  
 
@@ -126,7 +126,7 @@ In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] vers
 You can also use the [DeleteObjects](https://docs.microsoft.com/en-us/dynamics-nav/deleteobjects
 ) command of the finsql.exe.
 
-## Task 7: Clear Dynamics NAV Server instance and debugger breakpoint records from old database
+## <a name="ClearServer"></a>Task 7: Clear Dynamics NAV Server instance and debugger breakpoint records from old database
 Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the database in SQL Server.  
 
 1.  Make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
@@ -154,7 +154,7 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
 
 1. Import the application objects FOB file first, and then import the upgrade toolkit FOB file.
 
-    For more information, see [How to: Import Objects](../cside/cside-import-objects.md).
+    For more information, see [Importing Objects](../cside/cside-import-objects.md).
 
 2. **IMPORTANT** When prompted about table synchronization, set the **Synchronize Schema** option to **Later**.  
 
@@ -345,7 +345,7 @@ In addition, other extensions used in the old deployment that you still want to 
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <SymbolFilePath> -PackageType SymbolsOnly
     ```
 
-4. Generate the application symbol references by using the finsql.exe file as follows:
+3. Generate the application symbol references by using the finsql.exe file as follows:
 
     1. Make sure that **Enable loading application symbol references at server startup** (EnableSymbolLoadingAtServerStartup) is set on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
@@ -361,13 +361,13 @@ In addition, other extensions used in the old deployment that you still want to 
         > [!NOTE]  
         >  This command does not generate a file. It populates the **Object Metadata** table in the database.
 
-    2. When you run the command, the console returns to an empty command prompt, and does not display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**. 
+    3. When you run the command, the console returns to an empty command prompt, and does not display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**. 
     
         When the process ends, a file named **navcommandresult.txt** is saved to the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] installation folder. If the command succeeded, the file will contain text like `[0] [06/12/17 14:36:17] The command completed successfully in '177' seconds.` If the command failed, another file named **naverrorlog.txt** will be generated. This file contains details about the error(s) that occurred. 
             
     For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md).
 
-5. Upgrade the Microsoft extensions that were published in the old deployment to new versions.
+4. Upgrade the Microsoft extensions that were published in the old deployment to new versions.
 
     The new versions are found in the the `\Extensions` folder of the installation media. To upgrade to the new extension versions, follow these steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for each extension:
 
@@ -392,7 +392,7 @@ In addition, other extensions used in the old deployment that you still want to 
     For more information about publishing extensions, see [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md).
 
 
-8. Repair, synchronize, and install other published extension versions that you still want to use, but have not been upgraded to new versions. 
+5. Repair, synchronize, and install other published extension versions that you still want to use, but have not been upgraded to new versions. 
 
     For each extension, complete the following steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]: 
 
@@ -413,7 +413,7 @@ In addition, other extensions used in the old deployment that you still want to 
         Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
    
-8. (Optional) Unpublish unused extension versions by running the [Unpublish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp): 
+6. (Optional) Unpublish unused extension versions by running the [Unpublish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp): 
          
     ```
     Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
