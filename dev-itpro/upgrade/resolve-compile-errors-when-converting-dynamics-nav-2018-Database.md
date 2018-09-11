@@ -26,7 +26,7 @@ The following table lists the compilation errors that might occur when you compi
 |Page|6400|Flow Selector|FlowAddin::ControlAddInReady|When the function is called, the minimum number of parameters should be used. For example: MyFunc( .. , .. , .. )|[Resolving Page 6400 and 6410 Compilation Errors](resolve-page-6400-6401-error-converting-database.md). |
 |Page|6401|Flow Template Selector|FlowAddin::ControlAddInReady|When the function is called, the minimum number of parameters should be used. For example: MyFunc( .. , .. , .. )|[Resolving Page 6400 and 6410 Compilation Errors](resolve-page-6400-6401-error-converting-database.md). |
 |Page|9624|Finish Design List Part|GetTaskDisplayName|You have specified an unknown variable. Display Name Define the variable under 'Global C/AL symbols'.|See [Resolving Codeunit 5330 CRM Integration Management Compilation Error](Resolve-Codunit-5330-Error-Converting-Database.md). |
-|Codeunit|1751|Data Classification Eval. Data|ClassifySession|This warning and can be ignored or to clear it, remove the procedure `LOCAL PROCEDURE ClassifySession@72();` and the reference to it.|
+|Codeunit|1751|Data Classification Eval. Data|ClassifySession|The 'Record2000000009' type is obsolete.|This warning and can be ignored or to clear it, remove the procedure `LOCAL PROCEDURE ClassifySession@72();` and the reference to it.|
 
 
 
