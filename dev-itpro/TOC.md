@@ -317,7 +317,7 @@
 <!-- end web services -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
-## [Upgrade Considerations](upgrade/Upgrade-Considerations.md)
+## [Before You Upgrade](upgrade/Upgrade-Considerations.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
