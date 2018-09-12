@@ -10,7 +10,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: cloud, edge
-ms.date: 09/10/2018
+ms.date: 09/110/2018
 ms.author: bmeier
 
 ---
@@ -30,19 +30,19 @@ Support for additional products will become available later.
 
 ## How is my on-premises data replicated to my [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant?
 
-Data is replicated using an Azure service called Azure Data Factory (ADF). The Azure Data Factory is a service that is always running within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud service manager. When the intelligent cloud is configured for your on-premises solution, a data pipeline is created within the ADF service that enable data to flow from your on-premises solution to your Business Central cloud tenant. If your data source is a local SQL Server instance, you will also be asked to configure a self-hosted integration runtime (SHIR). The runtime is installed locally and enables the communication between the cloud services and your on-premise data to communicate without opening any ports or firewalls.  
+Data is replicated using an Azure service called Azure Data Factory (ADF). The Azure Data Factory is a service that is always running within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud service manager. When the intelligent cloud is configured for your on-premises solution, a data pipeline is created within the ADF service that enables data to flow from your on-premises solution to your Business Central cloud tenant. If your data source is a local SQL Server instance, you will also be asked to configure a self-hosted integration runtime (SHIR). The runtime is installed locally and enables the communication between the cloud services and your on-premise data to communicate without opening any ports or firewalls.  
 
 ## Are there any limits on the amount or type of data will replicate?
 
 Data replication for the initial release will have a limit of 150GB.  There are no restrictions on the type of data that can be replicated.  
 
-## Is my SQL connection string required to setup Intelligent Cloud?
+## Is my SQL connection string required to set up intelligent cloud?
 
 Yes. The SQL connection string is passed to Azure Data Factory, where it is encrypted and delivered to your Self-Hosted Integration Runtime, and used to communication with your SQL Server instance during the data replication process.
 
 ## I am a hosting partner - do I need to configure the Self-Hosted Runtime Service for each tenant?
 
-No, there is no limit on the number for tenants that can be added to your Self-Hosted Integration Runtime. Each added tenant will have a dedicated pipeline created.
+No, there is no limit on the number of tenants that can be added to your Self-Hosted Integration Runtime. Each added tenant will have a dedicated pipeline created.
 
 ## Will data from tables with code customizations replicate?
 
@@ -50,11 +50,11 @@ No, only tables that are available in both your on-premises solution and your [!
 
 ## Why are my Business Central tenant permissions restricted?
 
-Once your on-premises solution is connected to the intelligent cloud, all existing users without Super permission be automatically assigned to the *Intelligent Cloud* user group. In this configuration, your on-premises solution is the master where all business transactions take place. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant is read-only, and the data is used to generate business insights in the cloud for you. We restrict permissions to avoid users from accidentally entering transactions or updating master records only to have that information overwritten and lost when data replication takes place.  
+Once your on-premises solution is connected to the intelligent cloud, all existing users without SUPER permission are automatically added to the *Intelligent Cloud* user group. In this configuration, your on-premises solution is the master where all business transactions take place. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant is read-only, and the data is used to generate business insights in the cloud for you. We restrict permissions to prevent users from accidentally entering transactions or updating master records only to have that information overwritten and lost when data replication takes place.  
 
 ## Can I ‘turn off’ my intelligent cloud?
 
-You can discontinue your intelligent cloud environment at any point. Once you disable your intelligent cloud configuration, your on-premises solution and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will become completely independent of one another. If you discontinued your intelligent cloud and want to use your[!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant as your primary solution to run and manage your business, you must  reassign permissions to provide read/write access to the relevant users.  
+You can discontinue your intelligent cloud environment at any point. Once you disable your intelligent cloud configuration, your on-premises solution and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will become completely independent of one another. If you discontinued your intelligent cloud and want to use your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant as your primary solution to run and manage your business, you must  reassign permissions to provide read/write access to the relevant users.  
 
 ## Will my on-premises users and permissions replicate?
 
@@ -66,7 +66,7 @@ Yes, the **Intelligent Cloud Insights** page can be hosted within your on-premis
 
 ## Can you export to Excel, modify the contents, and import the data back in?
 
-You can export the list to Excel from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, but since the data is read only you cannot make changes and import it again.  
+You can export the list to Excel from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, but since the data is read-only you cannot make changes and import it again.  
 
 ## Is the data replication only one-way?
 
@@ -82,11 +82,11 @@ To keep the Role Center experience as clean as possible and avoid permission err
 
 ## Should I uninstall all my Business Central tenant extensions?
 
-Not necessarily, most Extensions will run without issues in the intelligent cloud environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It is a best practice to test any extension in a sandbox tenant configured for the intelligent cloud.  
+Not necessarily. Most extensions will run without issues in the intelligent cloud environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It is a best practice to test any extension in a sandbox tenant configured for the intelligent cloud.  
 
 ## How do I build an extension that enables data replication?
 
-The extension should be created in the same manner as any other extension. For data to replicate, you must add a **ReplicateData** property to your table and set the value to *Yes*. If your extension connects with an external service and you want to restrict any service calls from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, a good practice would be to store the connection information in a separate table and set the **ReplicateData** property to *No*. This would enable you to keep the extension installed but prevent it from making any type of service calls from the read-only [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Once the extension is installed in both on-premises and [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data will begin to replicate.  
+The extension should be created in the same manner as any other extension. For data to replicate, you must add a **ReplicateData** property to your table and set the value to *True*. If your extension connects with an external service and you want to restrict any service calls from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, a good practice would be to store the connection information in a separate table and set the **ReplicateData** property to *False*. This would enable you to keep the extension installed but prevent it from making any type of service calls from the read-only [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Once the extension is installed in both on-premises and [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data will begin to replicate.  
 
 ## How do I find my SQL connection string?
 
