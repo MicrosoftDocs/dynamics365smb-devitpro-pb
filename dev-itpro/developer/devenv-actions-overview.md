@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Actions Overview
-In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page in the ribbon or in the navigation pane. In this topic, you learn about different types of actions, and how you can enable users to quickly locate the actions they want to use.  
+In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page. In this topic, you learn about different types of actions, and how you can enable users to quickly locate the actions they want to use.  
   
 The actions can be displayed in different tabs on the action ribbon. 
 

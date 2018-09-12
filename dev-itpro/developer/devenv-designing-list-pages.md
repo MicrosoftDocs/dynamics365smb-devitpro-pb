@@ -33,7 +33,7 @@ In the client, users can personalize list pages by rearranging or hiding records
 As a developer or administrator, you can use Designer to customize a Role Center the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the Role Center. For more information, see [Using Designer](devenv-inclient-designer.md). 
 
 ## List page structure
-A card page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
+A list page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. The list is divided into three main areas: action, list, and FactBox. The following figure illustrates the general layout and elements of a list page.
 
 ![Role Center overview](media/list-page-overview.png "Role Center overview")
 
