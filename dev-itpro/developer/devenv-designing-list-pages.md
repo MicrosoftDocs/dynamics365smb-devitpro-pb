@@ -1,5 +1,5 @@
 ---
-title: Designing Role Centers
+title: Designing List Pages for Business Central
 description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
@@ -14,22 +14,28 @@ ms.author: jswymer
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# Designing Role Centers
-The strength of [!INCLUDE[d365fin_md](includes/d365fin_md.md)] is its role-tailored experience that helps users focus on the work that is important to them. The Role Center is an integral part of the role-tailored experience. And as a developer, role-tailoring should be the foundation for your Role Center design. 
+# Designing List Pages for [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]
 
-## About the Role Center
-The Role Center is the user's entry point and home page for [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users. For example, you could have Role Centers that target the different levels within an organization, such business owners, department leads, and information workers. 
+The *list* page type displays records from an underlying table in rows and columns. 
 
-Role Centers are based on a user-centric design model. You should design a Role Center to give users quick access to the information that is most important to them in their daily work - displaying information that is pertinent to their role in the company and enabling them to easily navigate to relavant pages for viewing data and performing tasks.
+## About the list page
 
-### Customizing a Role Center from the client
-In the client, users who work across multiple roles can easily switch Role Centers to shift their focus to different tasks. Users can also personalize their Role Centers by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
+You design list place pages when you want to support users in getting an overview and finding entities or entries to work with, such as customer, vendors, or sales orders. A list page in-turn links to card pages, so that users can then view or modify a specific record in the list.
+
+When a list page is directly linked to an action on the Role Center page, it will open embedded in the content area of the Role Center page, where the Role Center's navigation bar is still present and accessible at the top of the page.
+
+When a list page is linked to from other another page or from  **Tell me what you want to do**, it will open in-front of the current page, in its own window.
+
+
+### Customizing a list pages from the client
+In the client, users can personalize list pages by rearranging or hiding records or FactBoxes as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
 
 As a developer or administrator, you can use Designer to customize a Role Center the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the Role Center. For more information, see [Using Designer](devenv-inclient-designer.md). 
-## Role Center structure
-A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
 
-![Role Center overview](media/rolecenter-overview-V3.png "Role Center overview")
+## List page structure
+A card page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
+
+![Role Center overview](media/list-page-overview.png "Role Center overview")
 
 ## Navigation and Actions area
 The navigation and actions area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits. You define the navigation area by adding actions to the Role Center page code, under the `actions` control in the page code. The navigation and actions area is subdivided into smaller areas by using different `area()` controls as described in the following table:
@@ -44,20 +50,6 @@ The navigation and actions area appears at the top of the Role Center page, and 
 |||`area(processing)` - Actions in this control will appear after the `area(creation)` items. You can group actions in submenus by using a `group` control.|Use this control to target pages that are associated with the work flow for processing documents, such as payments or sales orders. Use the `group` control to organize similar actions under a common parent.|
 |||`area(reporting)` - Actions in this control will appear last in the action area. They display with a default report icon. |Use this conteol to target report objects.|
 
-
-<!-- 
-
-
-|    |Area|Description|Usage Guidelines|
-|----|-------|-----------|----------------|
-|1|Top-level navigation|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. The pages targeted by the submenus will open in the content area of the Role Center. <br /><br />You define this area with an `area(sections)` control in the page code.|The top-level navigation should provide access to relavant enitity lists for the role's areas of business. For example, typical root items for a business manager could be finance, sales, and purchasing. You should place the root itens in order of importance, starting from the left.|
-|2|Second-level navigation|The second-level area displays a flat list of links to other pages. The pages targeted by the links will open in the content area of the Role Center.<br /><br />You define this area with an `area(embedding)` control in the page code.|You should use these items to link to users’ most useful entity lists in thier business process. For example, with a business manager, these could be links to customers, sales orders, and bank accounts. You should place items in the order that reflects the business process sequence. Try to limit the number of second-level items, and consider placing items in the top-level navigation instead, if the number gets too large. |
-|3|Actions|The actions area provides links to pages, reports, and codeunits. The links can be displayed on the root-level or grouped in a submenu. The objects targeted by these links will open in a separate window in front of the Role Center page.<br /><br />You can define the actions by using three different `area()` controls in the page code: <ul><li>Actions in the `area(creation)` control will appear first in the action area, and will display with a plus (+) icon.</li><li>Actions in an an `area(processing)` control will appear after the `area(creation)` items. You can group items in submenus by using a `group` control.</li><li>Actions in the `area(reporting)` control target report object only and will appear last in the action area. They display with the default report icon. |The action area is designed for running the most important or used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related action in a submenu.|
-|||Actions in the `area(creation)` control will appear first in the action area, and will display with a plus (+) icon. ||
-|||Actions in an an `area(processing)` control will appear after the `area(creation)` items. You can group items in submenus by using a `group` control.||
-|||Actions in the `area(reporting)` control target report object only and will appear last in the action area. They display with the default report icon. ||
-
--->
 For more information about navigation, see [Adding to Navigation](devenv-adding-menus-to-navigation-pane.md). 
 
 
@@ -86,18 +78,20 @@ The following table describes some of the most common parts for Role Centers, as
 - However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues are automatically grouped under a common **Activities** section, no matter where they are placed in the code. All other page parts are grouped under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will arrange according to the order in which they are defined in the page code.
 
 ## Development tips for overall page design
--   Do not apply grouping to parts in the content area because this prevents parts from flowing to fill the available space. This gives the best experience to users with different screen resolutions or those on mobile devices.
--   To achieve the best readability and discoverability, place Headlines first, followed by cues, and then the remaining parts.
--   You cannot add custom logic directly to a Role Center page code. Code is limited to defining navigation, actions, and parts. All other code is ignored.
--   Role Centers can be highly specialized, in the fact that all navigation, actions, and content is optional. For example, you could have a single part that fills the entire workspace.
- 
+
+From the user’s perspective, the following are qualities of a well-designed list page does the following:
+
+-  Displays a single collection of entities or entries that the user needs for their work.
+-  Includes  page title that clearly identifies the collection and any specific view that is in effect.
+-  Places the most important columns first or enables a freeze column, so scrolling is not typically necessary. 
+-  Accessible from relevant actions on the Role Center page.
+-  Includes one or two FactBoxes to give necessary statistics and quick access to related documents.
+- 
 ## Design for all display targets
--   Role Center pages are also the primary entry point on mobile devices. Mobile devices will display the same content as the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], but is presented in a different way to suit how users hold and interact with their mobile device.
+-   Mobile devices will display the same content as the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], but it is presented in different way to suit how users hold and interact with their mobile device.
 -   You can preview how your Role Center will look on mobile devices directly in Designer.
 -   Some limitations on mobile devices include the following:
-    -   On tablets, there is a limit on the number of cues that can be displayed.
-    -   On phones, there is a limit on the number of parts in the content area that can be displayed.
-    -   Role Center pages cannot be displayed when they are embedded in Outlook or SharePoint.
+    -   
  
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
