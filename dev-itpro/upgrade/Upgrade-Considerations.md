@@ -16,14 +16,14 @@ ms.author: jswymer
 
 Depending on which version you are upgrading from, and the degree to which your solution differs from the standard version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you may want to prepare your solution for the upgrade. This topic provides important information and tips for things to consider when you prepare to upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
-## Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] online
+## Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online
 
-You can upgrade to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] online from supported versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+You can upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online from supported versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 The process consists of two parts:
 
-- Upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] using the tools described in [Upgrading to Dynamics 365 Business Central](upgrading-to-business-central.md).
-- Enable replication to a cloud tenant as described in [Connect to the intelligent cloud](../administration/about-intelligent-edge.md), and then switch to use the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] online tenant going forward.
+- Upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using the tools described in [Upgrading to Dynamics 365 Business Central](upgrading-to-business-central.md).
+- Enable replication to a cloud tenant as described in [Connect to the intelligent cloud](../administration/about-intelligent-edge.md), and then switch to use the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant going forward.
 
 ## Codeunit 1 has been deprecated and replaced
 
