@@ -13,7 +13,10 @@ ms.prod: "dynamics-nav-2018"
 ---
 # Upgrading the Application Code in [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-Typically, customers want all the customizations that have been implemented in their existing databases to be migrated to their new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases. Depending on the version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that a database is being upgraded from, the amount of code changes between the two versions can vary. To upgrade the application code, you must merge code from different versions of the application. This merge process is known as a *code upgrade* or *application upgrade*. You must upgrade the application before you upgrade the data.  
+Typically, customers want all the customizations that have been implemented in their existing databases to be migrated to their new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases. Depending on the version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that a database is being upgraded from, the amount of code changes between the two versions can vary. To upgrade the application code, you must merge code from different versions of the application. This merge process is known as a *code upgrade* or *application upgrade*. You must upgrade the application before you upgrade the data.
+
+> [!IMPORTANT]  
+> Before you begin, read the article [Important Information and Considerations for Before Upgrading](upgrade-considerations.md). This article contains information about limitations and things that might require you to perform extra tasks before you upgrade, such as the use of extensions V1 and the deprecation of codeunit 1.
 
 ## Application Upgrade Overview  
 During an upgrade, you have to first identify which changes you have to make, and then you'll have to upgrade the application objects and the application code, and finally, you might have to upgrade data so that it fits the new database schema.
