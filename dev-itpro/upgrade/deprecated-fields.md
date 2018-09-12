@@ -13,7 +13,7 @@ ms.author: edupont
 ---
 
 # Deprecated Fields, and Fields Marked as Obsolete
-In the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)], a number of fields have been deprecated in the current release or marked to be obsolete in a later release.  
+In the [!INCLUDE[prodshort](../developer/includes/prodshort.md)], a number of fields have been deprecated in the current release or marked to be obsolete in a later release.  
 
 ## Definitions
 Deprecated fields fall into one of the following groups:

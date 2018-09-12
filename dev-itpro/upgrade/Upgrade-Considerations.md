@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Considerations for Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-Depending on which version you are upgrading from, and the degree to which your solution differs from the standard version of [!INCLUDE[navnow](../developer/includes/navnow_md.md)], you may want to prepare your solution for the upgrade. This topic provides tips for things to consider when you prepare to upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+Depending on which version you are upgrading from, and the degree to which your solution differs from the standard version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you may want to prepare your solution for the upgrade. This topic provides tips for things to consider when you prepare to upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
 ## Names of Variables  
  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] introduces new methods and statements. If your solution includes variables where the name is now used by a standard AL method or statement such as REGISTERTABLECONNECTION or FOREACH, you must change the variables before you upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Alternatively, you can enclose the variable names in quotation marks. If you do not, and you import an object that has this code in text format, you cannot compile the object. 
@@ -21,7 +21,7 @@ Depending on which version you are upgrading from, and the degree to which your 
  If you are upgrading a solution that depends on functionality that is deprecated or changed in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you must verify that the upgrade codeunits migrate data correctly. See the See Also section for links to descriptions of deprecated functionality.
 
 ## Upgrade Codeunits  
- When you introduce changes to the database schema, [!INCLUDE[navnow](../developer/includes/navnow_md.md)] will check if these changes are destructive or not. If the database check indicates that the change may lead to data deletion, such as if you are dropping a table column so that the contents of that column will be deleted, this is considered a destructive change. You will be prompted to handle the situation using upgrade codeunits. For more information, see [Upgrade Codeunits](Upgrade-Codeunits.md).  
+ When you introduce changes to the database schema, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will check if these changes are destructive or not. If the database check indicates that the change may lead to data deletion, such as if you are dropping a table column so that the contents of that column will be deleted, this is considered a destructive change. You will be prompted to handle the situation using upgrade codeunits. For more information, see [Upgrade Codeunits](Upgrade-Codeunits.md).  
 
 ## Company Names  
  If a company name includes a special character, an error may display during the upgrade. In this context, special characters include the following:   
