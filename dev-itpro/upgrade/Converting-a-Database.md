@@ -30,6 +30,9 @@ Converting a database, which is often referred to as a *technical upgrade*, chan
 
 The process is slightly different when you have multitenant deployment compared to a single-tenant deployment. The steps that follow indicate the differences where applicable.
 
+> [!IMPORTANT]  
+> Before you begin, read the article [Important Information and Considerations for Before Upgrading](upgrade-considerations.md). This article contains information about limitations in a technical upgrade, such as using V1 extensions or [!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration.
+
 ## Task 1: Preparation
 
 1. Transition from the use of codeunit 1

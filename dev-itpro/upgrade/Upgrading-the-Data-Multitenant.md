@@ -24,6 +24,8 @@ You use data conversion tools provided with [!INCLUDE[prodshort](../developer/in
 
 The data upgrade process described in this article leads you through the database conversion (technical upgrade) and then the upgrade of the actual data, which is achieved by using the upgrade toolkit/upgrade codeunits.
 
+> [!IMPORTANT]  
+> Before you begin, read the article [Important Information and Considerations for Before Upgrading](upgrade-considerations.md). This article contains information about limitations and things that might require you to perform extra tasks before you upgrade, such as the use of extensions V1 and the deprecation of codeunit 1. 
 
 ##  <a name="Prereqs"></a> Prerequisites  
 Before you start the upgrade tasks, make sure you have the following prerequisites:
