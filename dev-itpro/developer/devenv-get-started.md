@@ -24,10 +24,13 @@ Go through the following steps to set up a sandbox environment. With the preview
 
 1) Sign up for a [Dynamics 365 Business Central sandbox](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1). 
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
-3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).  
-4) Press **Ctrl+,** to open the **user settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).  
+3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al). 
+4) Press **Ctrl+,** to open the **user settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
 5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, and then choose **Cloud**.  
-6) Enter the credentials you provided for the sign up, and then **Download symbols**.  
+
+> [!NOTE]    
+> If you want to change your configuration at a later point in time, go to **Debug** on the left side, select **Add Configuration**, choose one of the available options, and remove the previous configuration from the `launch.json` file.  
+6) Enter the credentials you provided for the sign up, and then **Download symbols**. To manually download the symbols, press **Ctrl+Shift+P** and select **AL: Download symbols**. 
 7) Press **F5** to deploy and run the extension on your online sandbox tenant.  
 
 > [!NOTE]  
