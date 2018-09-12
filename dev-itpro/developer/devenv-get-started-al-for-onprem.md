@@ -25,7 +25,11 @@ To get started with a mixed development environment of C/SIDE and AL, you must f
 6. Authenticate with the credentials you use for signing into [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises.  
 7. In the launch.json file, update the `"server": "http://localhost"` setting with the URL for server running [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises and save the file.
 8. In the app.json file, add the `"target": "Internal"` setting.
-9. ...
+9. Now, use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings on the **Development** tab are set as follows: 
+    - **Allowed Extension Target Level** is set to **Internal**.
+    - **Enable Developer Service Endpoint** checkbox is selected. 
+    - **Enable Loading Application Symbol References at Server Startup** checkbox is selected.
+10. Make sure to read and ensure any additional settings here[Running C/SIDE and AL Side-by-Side](devenv-running-cside-and-al-side-by-side.md).
 
 > [!TIP]  
 > For information about which sandboxes you can choose, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
