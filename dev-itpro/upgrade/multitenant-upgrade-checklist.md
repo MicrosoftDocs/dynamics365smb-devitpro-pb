@@ -34,8 +34,6 @@ This article provides an overview of the full upgrade process for Business Centr
 |Import upgrade toolkit (.fob)|[See...](../cside/cside-import-objects.md)||
 |Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-data-multitenant.md#AddExtensions)|
 |Publish the same extension versions that were published on the old deployment|[See...](upgrading-the-data-multitenant.md#PublishOld)||
-|Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-data-multitenant.md#AddExtensions)|
-|Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-data-multitenant.md#AddExtensions)|
 |Publish the new Microsoft extension versions from the installation media.|[See...](upgrading-the-data-multitenant.md#PublishNew)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 

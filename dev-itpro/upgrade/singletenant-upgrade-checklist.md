@@ -41,7 +41,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |Open and convert the database using [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|[See...](../cside/cside-open-database.md)|
 |Import upgraded application and upgrade toolkit objects (.fob files). **Important:** Select to synchroinize **later**.|[See...](../cside/cside-import-objects.md)||
 |Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted  database.|[See...](../administration/connect-server-to-database.md)||
-|Compile all objects. **Important:** Choose to synchronize schema **later**)|[See...](../cside/cside-compiling-objects.md)||
+|Compile all objects. **Important:** Choose to synchronize schema **later**.|[See...](../cside/cside-compiling-objects.md)||
 |Increase the application version of the database.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication)|
 |Synchronize the database.|[See...](../administration/synchronize-tenant-database-and-application-database.md)||
 |Run the data upgrade.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade)||
@@ -53,7 +53,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |Import permissions and permission sets.|[See...](How-to--Import-Export-Permission-Sets-Permissions.md)||
 |Import encryption keys|[See...](how-to-export-and-import-encryption-keys.md)||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client. |[See...](upgrade-pages-report-for-search.md) ||
-|Register custom control add-ins to the server instance.|[See...](upgrading-the-data.md)#AddControlAddins||
+|Register custom control add-ins to the server instance.|[See...](upgrading-the-data.md#AddControlAddins)||
 |Upload the customer license. |[See...](../cside/cside-upload-license-file.md)||
 
 ## Publish, upgrade, and install extensions
