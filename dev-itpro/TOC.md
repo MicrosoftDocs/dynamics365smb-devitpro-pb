@@ -162,7 +162,7 @@
 ### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
 #### [Using the Code Analysis Tools with the Ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
-#### [AppSourceCop Analyzer Rules](developer/devenv-codeanalyzer-apprsourcecop-rules.md)
+#### [AppSourceCop Analyzer Rules](developer/devenv-codeanalyzer-appsourcecop-rules.md)
 #### [CodeCop Analyzer Rules](developer/devenv-codeanalyzer-codecop-rules.md)
 #### [PerTenantExtensionCop Analyzer Rules](developer/devenv-codeanalyzer-pertenantextensioncop-rules.md)
 #### [UICop Analyzer Rules](developer/devenv-codeanalyzer-uicop-rules.md)
