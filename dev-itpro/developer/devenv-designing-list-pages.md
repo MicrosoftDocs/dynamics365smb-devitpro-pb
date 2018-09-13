@@ -20,7 +20,7 @@ The *list* page type displays records from an underlying table in rows and colum
 
 ## About the list page
 
-You design list place pages when you want to support users in getting an overview and finding entities or entries to work with, such as customer, vendors, or sales orders. A list page in-turn links to card pages, so that users can then view or modify a specific record in the list.
+You design list pages when you want to support users in getting an overview and finding entities or entries to work with, such as customer, vendors, or sales orders. A list page in-turn links to card pages, so that users can then view or modify a specific record in the list.
 
 When a list page is directly linked to an action on the Role Center page, it will open embedded in the content area of the Role Center page, where the Role Center's navigation bar is still present and accessible at the top of the page.
 
@@ -35,17 +35,17 @@ As a developer or administrator, you can use Designer to customize a Role Center
 ## List page structure
 A list page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. The list is divided into three main areas: action, list, and FactBox. The following figure illustrates the general layout and elements of a list page.
 
-![Role Center overview](media/list-page-overview.png "Role Center overview")
+![List page overview](media/list-page-overview.png "List page overview")
 
-## Navigation and Actions area
-The navigation and actions area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits. You define the navigation area by adding actions to the Role Center page code, under the `actions` control in the page code. The navigation and actions area is subdivided into smaller areas by using different `area()` controls as described in the following table:
+## Action bar
+The action bar appears at the top of the list page, and provides links to other objects, such as pages, reports, and codeunits. You define the navigation area by adding actions to the Role Center page code, under the `actions` control in the page code. The navigation and actions area is subdivided into smaller areas by using different `area()` controls as described in the following table:
 
 
 |    |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
 |1|Navigation menus|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. The pages targeted by the submenus will open in the content area of the Role Center. <br /><br />You define this area with an `area(sections)` control in the page code.|The top-level navigation should provide access to relavant enitity lists for the role's areas of business. For example, typical root items for a business manager could be finance, sales, and purchasing. You should place the root items in order of importance, starting from the left.|
 |2|Navigation bar|The second-level navigation displays a flat list of links to other pages. The pages targeted by the links will open in the content area of the Role Center.<br /><br />You define this area with an `area(embedding)` control in the page code.|You should use these items to link to users’ most useful entity lists in thier business process. For example, with a business manager, these could be links to customers, sales orders, and bank accounts. You should place items in the order that reflects the business process sequence. Try to limit the number of second-level items, and consider placing items in the top-level navigation instead, if the number gets too large. |
-|3|Actions|The actions area provides links to pages, reports, and codeunits. The links can be displayed on the root-level or grouped in a submenu. The objects targeted by these links will open in a separate window in front of the Role Center page.<br /><br />You can define the actions by using the three different `area()` controls that are described below: |The action area is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a submenu.|
+|3|Action bar|The action bar area provides links to pages, reports, and codeunits. The links can be displayed on the root-level or grouped in a submenu. The objects targeted by these links will open in a separate window in front of the Role Center page.<br /><br />You can define the actions by using the three different `area()` controls that are described below: |The action area is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a submenu.|
 |||`area(creation)` - Actions in this control will appear first in the action area, and will display with a plus (+) icon. |Use this control to target pages that enable the user to create new entities.|
 |||`area(processing)` - Actions in this control will appear after the `area(creation)` items. You can group actions in submenus by using a `group` control.|Use this control to target pages that are associated with the work flow for processing documents, such as payments or sales orders. Use the `group` control to organize similar actions under a common parent.|
 |||`area(reporting)` - Actions in this control will appear last in the action area. They display with a default report icon. |Use this conteol to target report objects.|
