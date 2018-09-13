@@ -1,5 +1,5 @@
 ---
-title: UICop Analyzer Rules
+title: "UICop Analyzer Rules"
 description: "List of rules for UICop analyzer in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
