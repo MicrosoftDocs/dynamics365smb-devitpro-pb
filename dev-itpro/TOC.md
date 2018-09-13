@@ -93,8 +93,9 @@
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
-### [Getting Started with AL for On-Premises]()
-#### [Running C/SIDE and AL Side-By-Side](developer/devenv-running-cside-and-al-side-by-side.md)
+### Getting Started with AL for On-Premises
+#### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
+#### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Creating runtime packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
 ## [Object Ranges](developer/devenv-object-ranges.md)
 ## [JSON Files](developer/devenv-json-files.md)
