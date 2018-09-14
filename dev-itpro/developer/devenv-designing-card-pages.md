@@ -1,5 +1,5 @@
 ---
-title: Designing Role Centers
+title: Designing Card Pages
 description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
@@ -26,7 +26,6 @@ Card pages are linked from list pages that are associated with the underlying ta
 Fields can be organized into one or more sections, or FastTabs. In addition, you can add FactBoxes that displays additional information about the record in the page.
 
 
-
 ### Customizing a card pages from the client
 In the client, users can personalize their Role Centers by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
 
@@ -35,7 +34,7 @@ As a developer or administrator, you can use Designer to customize a Role Center
 ## Card page structure
 A card page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
 
-![Role Center overview](media/rolecenter-overview-V2.png "Role Center overview")
+![Card page overview](media/card-page-overview.png "Card page overview")
 
 ## Navigation and Actions area
 The navigation and actions area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits. You define the navigation area by adding actions to the Role Center page code, under the `actions` control in the page code. The navigation and actions area is subdivided into smaller areas by using different `area()` controls as described in the following table:

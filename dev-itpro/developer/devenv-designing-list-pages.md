@@ -1,6 +1,6 @@
 ---
 title: Designing List Pages for Business Central
-description: "Provides and overview of Role Center design"
+description: "Provides and overview of List page design"
 author: jswymer
 ms.custom: na
 ms.date: 01/19/2018
