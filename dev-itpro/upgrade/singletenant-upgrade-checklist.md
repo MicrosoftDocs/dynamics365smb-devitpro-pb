@@ -30,19 +30,21 @@ This article provides an overview of the full upgrade process for Business Centr
 |----|-----------|--|
 |Backup the database.|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
 |Uninstall all extensions.|[See...](../developer/devenv-unpublish-and-uninstall-extension-v2.md)|
+|Unpublish extensions versions that you do not want to use in the upgraded deployment.|[See...](../developer/devenv-unpublish-and-uninstall-extension-v2.md)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
-|Delete all objects except tables from the old database|[See...](upgrading-the-data.md#DeleteObjects)||
+|Delete all objects except tables from the old database. **Important** Do not synchronize schema at this point.|[See...](upgrading-the-data.md#DeleteObjects)||
 |Clear Dynamics NAV Server instance and debugger breakpoint records from old database.|[See...](upgrading-the-data.md#ClearServer)||
 
 ## Run the data upgrade
 
 |Step|More info| Done |
 |----|-----------|--|
-|Open and convert the database using [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|[See...](../cside/cside-open-database.md)|
-|Import upgraded application and upgrade toolkit objects (.fob files). **Important:** Select to synchroinize **later**.|[See...](../cside/cside-import-objects.md)||
+|Open [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an administrator and convert the database.|[See...](../cside/cside-open-database.md)|
+|Connect to and convert the database.|[See...](../cside/cside-open-database.md)|
+|Import upgraded application and upgrade toolkit objects (.fob files). **Important:** Select to synchronize **later**.|[See...](../cside/cside-import-objects.md)||
 |Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted  database.|[See...](../administration/connect-server-to-database.md)||
 |Compile all objects. **Important:** Choose to synchronize schema **later**.|[See...](../cside/cside-compiling-objects.md)||
-|Increase the application version of the database.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication)|
+|If upgrading from Dynamics NAV 2018, increase the application version of the database.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication)|
 |Synchronize the database.|[See...](../administration/synchronize-tenant-database-and-application-database.md)||
 |Run the data upgrade.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade)||
 
@@ -65,4 +67,4 @@ This article provides an overview of the full upgrade process for Business Centr
 |Repair, synchronize, and install old extension versions that were not upgraded in previous step.|''||
 |Run the data upgrade on the new extension versions.|''||
 |Repair custom extensions to work on new platform.|''||
-|Unpublish unwanted extensions versions.|''||
+
