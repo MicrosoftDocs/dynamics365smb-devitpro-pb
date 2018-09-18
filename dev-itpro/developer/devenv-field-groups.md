@@ -55,7 +55,7 @@ In order to add fields to a field group, you create a table extension and specif
 > [!WARNING]  
 > The server will remove the duplicates, if multiple extensions attempt to add the same field more than once. A field can only be added to the field group once.
 
-### Defining fields for a drop-down control
+### Define fields for a drop-down control
 
 You define a field to include in a drop-down control by using the `DropDown` field group name in the keyword.
 
@@ -77,7 +77,7 @@ tableextension 50100 CustomerExercise extends Customer
 ```
 ## Define fields to display in tile view
 
-To specify which fields are included in a tile for a record in a list page object, you use the `Brick` field group name. The following example defines the `Brick`field group that includes two fields of a table object: 
+To specify which fields are included in a tile for a record in a list page object, you use the `Brick` field group name. The following example defines the `Brick`field group that includes two fields of a table object:
 
 
 ```
