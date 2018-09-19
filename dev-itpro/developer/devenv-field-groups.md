@@ -39,7 +39,7 @@ fieldgroups
 }
 ```
 > [!NOTE]  
-> The `fieldgroups` control cannot be inserted before the `key` control.
+> The `fieldgroups` keyword cannot be inserted before the `key` control.
 
 
 In a table extension object, the `fieldgroups` control allows you to add more fields to a field group defined for the table object. This can be done by using the `addlast(<name>; <field>)` keyword.
@@ -77,7 +77,7 @@ tableextension 50100 CustomerExercise extends Customer
 ```
 ## Define fields to display in tile view
 
-To specify which fields are included in a tile for a record in a list page object, you use the `Brick` field group name. The following example defines the `Brick`field group that includes two fields of a table object:
+To specify which fields are included in a tile for a record in a list page object, you use the `Brick` field group name. The following example defines the `Brick` field group that includes two fields of a table object:
 
 
 ```
