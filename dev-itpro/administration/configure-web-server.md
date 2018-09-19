@@ -54,19 +54,19 @@ The navsettings.json file is stored in the physical path of the web server insta
     Include values in double quotes.
 2.  Find the configuration settings that you want to change, and then change the values.
 
-    See the [Settings](configure-web-server.md.md#Settings) section for a description of each setting.
+    See the [Settings](configure-web-server.md#Settings) section for a description of each setting.
 3.  When you are done making changes, save the file.
 4.  Restart the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance for the changes to take effect.
     
     For example, in IIS Manager, in the **Connections** pane, select website node for [!INCLUDE[webserver](../developer/includes/webserver.md)], and then in the **Actions** pane, choose **Restart**. Or, from your desktop, run `iisreset`. 
 
-## Modify the navsettings.json file by using the Set-NAVWebServerInstanceConfiguration PowerShell cmdlet
+## Modify the navsettings.json file by using the Set-NAVWebServerInstanceConfiguration cmdlet
 
 The PowerShell script module **NAVWebClientManagement.psm1** includes the [Set-NAVWebServerInstanceConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/Microsoft.Dynamics.Nav.Management/Set-NAVWebServerInstanceConfiguration) that enables you to configure a web server instance.
 
 1. Depending on your installation, run the [!INCLUDE[devshell](../developer/includes/devshell.md)] or Windows PowerShell as an administrator.
 
-    For more information, see [Get started with the [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets](configure-multiple-web-server-instances.md#GetStartedWebServerCmdlets).
+    For more information, see [Get started with the [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets](../deployment/configure-multiple-web-server-instances.md#GetStartedWebServerCmdlets).
 
 2. For each setting that you want to change, at the command prompt, run the following command:
 
@@ -90,7 +90,7 @@ The following table describes the settings that are available in the navsettings
 
 |Setting/KeyName|Description|  
 |-------------|-----------------|  
-|AllowedFrameAncestors|Specifies the host name of any web sites in which the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] or parts of are embedded. By default, the [!INCLUDE[webserver](../developer/includes/webserver.md)] will not allow a website to display it inside an iframe unless the website is hosted on the same web server. This value of this setting is a comma-separated list of host names (URIs). Wildcard names are accepted. For example: `https:mysite.sharepoint.com, https:*.myportal.com`<BR /><BR /> For more information, see [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md)|
+|AllowedFrameAncestors|Specifies the host name of any web sites in which the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] or parts of are embedded. By default, the [!INCLUDE[webserver](../developer/includes/webserver.md)] will not allow a website to display it inside an iframe unless the website is hosted on the same web server. This value of this setting is a comma-separated list of host names (URIs). Wildcard names are accepted. For example: `https:mysite.sharepoint.com, https:*.myportal.com`<BR /><BR /> <!--For more information, see [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md)-->|
 |GlobalEndPoints|Specifies the comma-separated list of global endpoints that are allowed to call this website. The values must include http scheme and fully qualifies omain name (FDQN), such as `https://financials.microsoft.com`.|
 |AllowNtlm|Specifies whether NT LAN Manager \(NTLM\) fallback is permitted for authentication.<br /><br /> To require Kerberos authentication, set this value to **false**.<br /><br /> Values: **true**, **false**<br /><br /> Default value: **true**|  
 |ClientServicesChunkSize|Sets the maximum size, in kilobytes, of a data chunk that is transmitted between [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[server](../developer/includes/server.md)]. Data that is transmitted between [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[server](../developer/includes/server.md)] is broken down into smaller units called chunks, and then reassembled when it reaches its destination.<br /><br /> Values: From 4 to 80.<br /><br /> Default value: 28|  
