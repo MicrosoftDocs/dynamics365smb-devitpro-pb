@@ -18,7 +18,7 @@ This procedure describes how to use the [!INCLUDE[admintool](../developer/includ
 
 1.  Start the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
-     For more information, see [Microsoft Dynamics NAV Server Administration Tool](Microsoft-Dynamics-NAV-Server-Administration-Tool.md).  
+     For more information, see [Business Central Server Administration Tool](Administration-Tool.md).  
 
 2.  Navigate to the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] server instance that you want to connect to the converted database, and then choose the **Edit** button.  
 

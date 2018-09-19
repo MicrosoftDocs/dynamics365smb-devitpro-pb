@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement Security Certificates in Business Central"
+title: "Using Security Certificates with Business Central On-Premises"
 ms.custom: na
 ms.date: 06/05/2018
 ms.reviewer: na

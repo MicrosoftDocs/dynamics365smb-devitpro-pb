@@ -29,7 +29,7 @@ Your deployment must meet the following prerequisites:
     For more information, see [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md).  
 -   OData enabled and uses Secure Sockets Layer (SSL) for authentication.
 
-    For more information, see [[Configuring Web Services to Use SSL](../webservices/configure-web-services-with-ssl.md).  
+    For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).  
 
 -   [!INCLUDE[webserver](../developer/includes/webserver.md)] installed and configured to use SSL (https).
 
