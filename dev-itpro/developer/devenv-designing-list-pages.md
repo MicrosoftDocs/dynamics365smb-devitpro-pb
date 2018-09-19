@@ -40,13 +40,15 @@ The following figure illustrates the general layout and elements of a list page.
 
 ![List page overview](media/list-page-overview.png "List page overview")
 
-## Action bar
-The action bar appears at the top of the list page, and provides links to other objects, such as pages, reports, and codeunits. You define the navigation area by adding actions to the Role Center page code, under the `actions` control in the page code. The navigation and actions area is subdivided into smaller areas by using different `area()` controls as described in the following table:
+The following table describes the elements of a typical list page.
 
 
 |    |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
-|1|Action bar|The action bar area provides links to pages, reports, and codeunits. The links can be displayed on the root-level or grouped in a submenu. The objects targeted by these links will open in a separate window.<br /><br />You can define the actions by using the three different `area()` controls that are described below: |The action area is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a submenu.|
+|1|Action bar|The action bar area provides links to pages, reports, and codeunits. The action bar is defined by an `actions` control in the page code, and individual actions by an `action` control.<br /><br /> Actions can be displayed on three standard menus in the action bar, **Actions**, **Navigate**, and **Report**, or in promoted action menus, which are custome menus that you define. The action can be displayed in the root-level of each menu or grouped in a submenu.<br /><br /> The objects targeted by these links will open in a separate window.<br /><br />For more information, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md)|The action bar is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a submenu.|
+||Promoted action menus|Promoted actions are actions that are set up on the **Actions**, **Navigate**, or **Report** menus in the action bar, but are also configured to display on a higher level, in a specific category (in other words, menu) that you define. You promote actions by setting various properties on `action` controls. For more information, see [Promoted Actions](devenv-promoted-actions.md) |Use promoted actions provide quick access to the most common tasks that would be performed by the user. Give categories a name that provides a good description of the included actions.|
+||Tile view|The tile view renders records in a list as tiles (or bricks). All lists can be displayed as tiles, however,  a list as a tile, you must specify the table fields in a category that you define. You promote actions by setting various properties on the `action` control. For more information, see [Promoted Actions](devenv-promoted-actions.md) |Use promoted actions provide quick access to the most common tasks that would be performed by the user. Give categories a name that provides a good description of the included actions.|
+
 
 
 <!--
@@ -58,13 +60,13 @@ The action bar appears at the top of the list page, and provides links to other 
 For more information about navigation, see [Adding to Navigation](devenv-adding-menus-to-navigation-pane.md). -->
 
 
-### Behavioral points of interest
+## Behavioral points of interest
 - List pages that are accessed from the Role Center page are open embedded within the Role Center framework. The pages are always opened in the read-only mode, regardless of the [Editable](properties/devenv-editable-property.md) property.
-- There are few system actions that are automatically added to the actions bar, such as **See Attached** and **Open in Excel**.
+- There are a few system actions that are automatically added to the actions bar, such as **See Attached** and **Open in Excel**.
 - The dynamic caption is automatically displayed  
 - 
 
-## Development tips for overall page design
+## Development tips for page design
 
 From the user’s perspective, the following are qualities of a well-designed list page does the following:
 
@@ -74,8 +76,9 @@ From the user’s perspective, the following are qualities of a well-designed li
 -  Accessible from relevant actions on the Role Center page.
 -  Includes one or two FactBoxes to give necessary statistics and quick access to related documents.
 - Promote actions that are ther most typical for users on the page.
-- 
+
 ## Design for all display targets
+
 -   Mobile devices will display the same content as the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], but it is presented in different way to suit how users hold and interact with their mobile device.
 -   You can preview how your Role Center will look on mobile devices directly in Designer.
 -   Some limitations on mobile devices include the following:

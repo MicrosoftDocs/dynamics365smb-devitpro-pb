@@ -15,7 +15,7 @@ ms.author: solsen
 # Adding Actions to a Page 
 This topic shows how to create new actions, how to add actions to a page, and how to preview them in the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] web client. In [!INCLUDE[d365fin_md](includes/d365fin_md.md)], actions can be displayed in the action bar of all pages and grouped together under the following actions menus: 
 
-- Promoted Action <!--Home-->
+- Promoted action categories <!--Home-->
 - Actions  
 - Navigate
 - Report
