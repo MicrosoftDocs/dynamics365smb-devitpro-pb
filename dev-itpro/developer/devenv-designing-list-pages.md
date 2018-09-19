@@ -14,7 +14,7 @@ ms.author: jswymer
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# Designing List Pages for [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]
+# Designing List Pages
 
 The *List* page type displays records from an underlying table in rows and columns. 
 
@@ -24,9 +24,15 @@ You design list pages when you want to provide users with a collection of data, 
 
 There are different ways to incorporate a list page into that application: 
 
-- Make the list page available from the navigation of a Role Center page. This gives users quick access to the page. With this implementation, the list page opens in the content area of the Role Center page, where the Role Center's navigation area is still present and accessible at the top of the page. For more information about Role Centers, see [Designing Role Centers](devenv-designing-role-centers.md).
-- Make the list available from an action on another page. With this implementation, the list page opens in a separate window in front of the current page.
-- Make the list page searchable in **Tell me what you want to do**. With this implementation, the list page also opens in a separate window. For more information, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).
+- Make the list page available from the navigation of a Role Center page.
+
+    This gives users quick access to the page. With this implementation, the list page opens in the content area of the Role Center page, where the Role Center's navigation area is still present and accessible at the top of the page. For more information about Role Centers, see [Designing Role Centers](devenv-designing-role-centers.md).
+- Make the list available from an action on another page.
+
+    With this implementation, the list page opens in a separate window in front of the current page.
+- Make the list page searchable in the **Tell me what you want to do** feature.
+
+    With this implementation, the list page also opens in a separate window. For more information, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).
 
 ### Customizing a list pages from the client
 In the client, users can personalize list pages by rearranging or hiding records or FactBoxes as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
@@ -40,7 +46,7 @@ A list page is defined by page that has the [PageType property](properties/deven
 
 A list page will typically be associated with a card page, which  enables users to view and modify records in the list or create a new record. You make this association by setting the [CardPageId](properties/devenv-cardpageid-property.md) property of the list page.
 
-For a simple code example of a list page, see [Simple List Page Example](devenv-simple-list-page-example.md) 
+For a simple code example of a list page, see [Simple List Page Example](devenv-simple-list-page-example.md). 
  
 ### Structure
 
