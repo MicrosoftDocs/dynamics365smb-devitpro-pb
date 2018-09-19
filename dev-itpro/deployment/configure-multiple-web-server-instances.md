@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Creating and Managing [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell

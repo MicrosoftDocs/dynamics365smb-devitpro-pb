@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 author: jswymer
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 

@@ -8,7 +8,7 @@ ms.date: 10/27/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 
 # Connecting a Microsoft Dynamics NAV Server Instance to a Database

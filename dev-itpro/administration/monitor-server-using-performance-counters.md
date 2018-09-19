@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: b6ca81a4-62f2-4806-b2d8-3c0a0e969a46
 caps.latest.revision: 6
 ---

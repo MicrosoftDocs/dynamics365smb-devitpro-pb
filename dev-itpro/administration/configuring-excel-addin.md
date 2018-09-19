@@ -9,7 +9,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Setting up the Excel Add-In for Editing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Data
 You can set up the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment to support an Excel add-in that enables users in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to work with data from list pages in Excel. Users can get fresh data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and update the data in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] based on their work in Excel.

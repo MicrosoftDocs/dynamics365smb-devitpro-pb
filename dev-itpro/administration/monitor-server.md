@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Monitoring Business Central Server
 These articles describe the features for monitoring and troubleshooting [!INCLUDE[server](../developer/includes/server.md)].  
@@ -24,4 +24,4 @@ These articles describe the features for monitoring and troubleshooting [!INCLUD
 
 ## See Also
 [Monitoring SQL Database Locks](monitor-database-locks.md)  
-[Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)   
+

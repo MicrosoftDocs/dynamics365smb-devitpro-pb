@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 manager: edupont
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Application Code in [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 

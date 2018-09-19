@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Basic Page Operations
 When you publish a page as a SOAP web service, it has a set of default operations that are exposed to consumers of the web service.  

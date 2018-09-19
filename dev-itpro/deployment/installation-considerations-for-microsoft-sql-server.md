@@ -1,13 +1,14 @@
 ---
-title: "Installation Considerations for Microsoft SQL Server and Microsoft Dynamics NAV"
+title: "Installation Considerations for Microsoft SQL Server and Business Central"
 ms.custom: na
 ms.date: 02/20/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
+
 # Installation Considerations for Microsoft SQL Server and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 This article describes the requirements for installing and configuring Microsoft SQL Server to work with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
@@ -111,6 +112,5 @@ You can deploy a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] datab
 
 ## See Also  
  [Data Access](../administration/optimize-sql-data-access.md)    
- [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)   
- [Troubleshooting: SQL Server Connection Problems](Troubleshooting--SQL-Server-Connection-Problems.md)   
+ [Troubleshooting: SQL Server Connection Problems](../administration/Troubleshooting-SQL-Server-Connection-Problems.md)   
  [Deployment](Deployment.md)  
