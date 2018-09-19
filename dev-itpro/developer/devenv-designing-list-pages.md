@@ -22,11 +22,11 @@ The *List* page type displays records from an underlying table in rows and colum
 
 You design list pages when you want to provide users with a collection of data, enabling them to get an overview of and find entities to work with, such as customer, vendors, or sales orders. Typically, a list page will in-turn link to an associated card page that lets users view or modify specific entities in the list.
 
-There are different ways to incorporate a list page into that application, depending on what you want to achieve: 
+There are different ways to incorporate a list page into that application: 
 
 - Make the list page available from the navigation of a Role Center page. This gives users quick access to the page. With this implementation, the list page opens in the content area of the Role Center page, where the Role Center's navigation area is still present and accessible at the top of the page. For more information about Role Centers, see [Designing Role Centers](devenv-designing-role-centers.md).
 - Make the list available from an action on another page. With this implementation, the list page opens in a separate window in front of the current page.
-- Make the list page searchable in **Tell me what you want to do**. With this implementation, the list page also opens in a separate window.
+- Make the list page searchable in **Tell me what you want to do**. With this implementation, the list page also opens in a separate window. For more information, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).
 
 ### Customizing a list pages from the client
 In the client, users can personalize list pages by rearranging or hiding records or FactBoxes as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
