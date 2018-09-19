@@ -20,7 +20,7 @@ The *List* page type displays records from an underlying table in rows and colum
 
 ## About the list page
 
-You design list pages when you want to provide users with a collection of data, enabling them to get an overview of and find entities to work with, such as customer, vendors, or sales orders. Typically, a list page will in-turn link to an associated card page that lets users view or modify specific entities in the list.
+You design list pages when you want to provide users with a collection of data, enabling them to get an overview of and find entities to work with, such as customers, vendors, or sales orders. Typically, a list page will link to an associated card page that lets users view or modify specific entities in the list.
 
 There are different ways to incorporate a list page into that application: 
 
@@ -30,12 +30,12 @@ There are different ways to incorporate a list page into that application:
 - Make the list available from an action on another page.
 
     With this implementation, the list page opens in a separate window in front of the current page.
-- Make the list page searchable in the **Tell me what you want to do** feature.
+- Make the list page searchable from the **Tell me what you want to do** feature.
 
     With this implementation, the list page also opens in a separate window. For more information, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).
 
 ### Customizing a list pages from the client
-In the client, users can personalize list pages by rearranging or hiding records or FactBoxes as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
+In the client, users can personalize list pages by rearranging or hiding records or FactBoxes as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user).
 
 As a developer or administrator, you can use Designer to customize list page the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the same profile. For more information, see [Using Designer](devenv-inclient-designer.md). 
 
@@ -59,9 +59,9 @@ The following table describes the elements of a typical list page.
 
 |    |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
-|1|List|Displays records of the source table as rows and columns, where each row is a record and the columns are the fields. You define the list by adding a `repeater` control in the page code, and then in the `repeater` control, you add `field` control for field that you wan tot display.||
+|1|List|Displays records of the source table as rows and columns, where each row is a record and the columns are the fields. You define the list by adding a `repeater` control in the page code, and then add `field` controls for field that you want to display.|Place |
 |2|Tile view|The tile view renders records in a list as tiles (or bricks). All lists can be displayed as tiles, however, if you want to give users the option of displaying a list as tiles, you must specify the table fields that you want to include in the tiles. You do this by adding a `fieldgroup(Brick; <Field>` keyword in the code of the source table.<br /><br /> For more information, see [Field Groups](devenv-field-groups.md).|The tile view is particularly beneficial for lists with records that include media or images, such a customers, contacts, and items lists. For more information about adding media to records, see [Working With Media on Records](devenv-working-with-media-on-records.md).|
-|3|Action bar|The action bar provides links to other pages, reports, and codeunits. The action bar is defined by an `actions` control in the page code, and individual actions are defined by an `action` control.<br /><br /> Actions can be displayed on three standard menus in the action bar, **Actions**, **Navigate**, and **Report**, or in promoted action menus, which are custom menus that you define. The action can be displayed in the root-level of each menu or grouped in a submenu.<br /><br /> The objects targeted by these links will open in a separate window.<br /><br />For more information, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md).|The action bar is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a sub-menu.|
+|3|Action bar|The action bar provides links to other pages, reports, and codeunits. The action bar is defined by an `actions` control in the page code, and individual actions are defined by an `action` control.<br /><br /> Actions can be displayed on three standard menus in the action bar, **Actions**, **Navigate**, and **Report**, or in promoted action menus, which are custom menus that you define. The action can be displayed in the root-level of each menu or grouped in a sub-menu.<br /><br /> The objects targeted by these links will open in a separate window.<br /><br />For more information, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md).|The action bar is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a sub-menu.|
 |4|Promoted action menus|Promoted actions are actions that are set up on the **Actions**, **Navigate**, or **Report** menus in the action bar, but are also configured to display on a higher level, in a specific category (menu) that you define. You promote actions by setting various properties on `action` controls.<br /><br /> For more information, see [Promoted Actions](devenv-promoted-actions.md). |Use promoted actions provide quick access to the most common tasks that would be performed by the user. Give categories a name that provides a good description of the included actions.|
 |5|FactBox|A FactBox is located on the right-most side of a page and it is divided into one or more parts that are arranged vertically. You use this area to display content including other pages, charts, and system parts such as Microsoft Outlook, Notes, and Record Links.<br /><br />  For more information, see [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md).|Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list.|
 
@@ -97,7 +97,10 @@ From the user’s perspective, the following are qualities of a well-designed li
 
 -   Mobile devices will display the same content as the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], but it is presented in different way to suit how users hold and interact with their mobile device.
 -   You can preview how your Role Center will look on mobile devices directly in Designer.
+
+<!-- 
 -  Some limitations on mobile devices include the following:
+-->
 
 
 ## See Also
