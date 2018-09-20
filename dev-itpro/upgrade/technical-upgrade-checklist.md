@@ -28,7 +28,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Step|More info| Done |
 |----|-----------|--|
 |Backup the database(s).|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
-|(Single-tenant mode only) Uninstall all extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
+|(Single-tenant mode only) Uninstall all extensions. (Multitenant mode) Unintsall all V1 extension.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
 |Ensure all objects are complied, unlocked, and tables are synchronized.|[See...](../cside/cside-compiling-objects.md)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 |(Multitenant mode only) Dismount the tenant|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant?view=dynamicsnav-ps-2018)||
