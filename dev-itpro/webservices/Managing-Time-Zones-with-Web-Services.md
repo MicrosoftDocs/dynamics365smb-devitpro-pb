@@ -33,6 +33,5 @@ ms.service: "dynamics365-business-central"
 |01/01/2014 17:00|01/01/2014 17:00 UTC+3|01/01/2014 14:00 UTC|  
   
 ## See Also  
- [Communicating with Microsoft Dynamics NAV Clients in Different Time Zones](Communicating-with-Microsoft-Dynamics-NAV-Clients-in-Different-Time-Zones.md)   
  [Server Administration Tool](../administration/administration-tool.md)   
  [Business Central Windows PowerShell Cmdlets]((https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)

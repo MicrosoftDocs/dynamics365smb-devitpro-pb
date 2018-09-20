@@ -45,4 +45,4 @@ Sets whether external images are allowed on a report.
 ## See Also  
  [Properties](devenv-properties.md)   
   <!--[Designing Reports](Designing-Reports.md)   
- [Configuring the Business Central Web Server](configure-web-server.md.md) -->
+ [Configuring the Business Central Web Server](configure-web-server.md) -->

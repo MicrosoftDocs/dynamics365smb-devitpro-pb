@@ -25,7 +25,7 @@ caps.latest.revision: 7
 
  The steps in the following procedures compare the ORIGINAL version to the MODIFIED solution and apply the relevant changes to your TARGET solution. As a result, you have an application that contains your solution with the updates from the MODIFIED application. Alternatively, the MODIFIED solution can be your solution and the TARGET solution can be the new release from Microsoft. The actual versions that you use to set each cmdlet parameter depend on your concrete scenario. However, we recommend that MODIFIED contains the solution with the fewest changes compared to ORIGINAL.  
 
- First, you prepare the application object files for the ORIGINAL version. You can do that by exporting the application object from the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], or by using the development environment command [ExportObjects](ExportObjects.md). The following procedure illustrates how to export the objects by calling finsql.exe file from a command prompt.  
+ First, you prepare the application object files for the ORIGINAL version. You can do that by exporting the application object from the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], or by using the development environment command [ExportObjects](/dynamics-nav/ExportObjects). The following procedure illustrates how to export the objects by calling finsql.exe file from a command prompt.  
 
 ### To prepare the application object files  
 
@@ -110,5 +110,4 @@ caps.latest.revision: 7
  [How to: Compare and Update Application Object Source Files](How-to--Compare-and-Update-Application-Object-Source-Files.md)   
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)   
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)   
- [ExportObjects](ExportObjects.md)   
  [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)

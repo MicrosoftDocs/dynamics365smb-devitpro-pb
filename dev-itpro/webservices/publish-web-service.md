@@ -92,5 +92,3 @@ https://localhost:7048/<serverinstance>/OData/Company('CRONUS International Ltd.
 https://localhost:7048/<serverinstance>/OData/Customer?company='CRONUS International Ltd.'  
 ```  
   
-## See Also  
-[Web Service Walkthroughs](Web-Service-Walkthroughs.md)

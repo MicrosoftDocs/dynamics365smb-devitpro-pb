@@ -270,7 +270,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
 4. Configure pages and reports included in the MenuSuite to be searchable in the Web client.
 
-    The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-reports-for-search.md).
+    The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md.
 5. Upload the customer license.
 
     For more information, see [Uploading the License File](../cside/cside-upload-license-file.md)

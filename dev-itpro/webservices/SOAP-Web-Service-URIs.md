@@ -43,5 +43,3 @@ You can also use a URI for a codeunit web service, as shown in the following exa
 http://localhost:7047/BC130/WS/CRONUS%20International%20Ltd/Codeunit/Letters  
 ```  
   
-## See Also  
- [Web Service Walkthroughs](Web-Service-Walkthroughs.md)

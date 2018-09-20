@@ -11,7 +11,7 @@ ms.assetid: 5f81cec5-34bc-4530-b1b3-6ae99b9d31ae
 caps.latest.revision: 14
 manager: edupont
 ---
-# How to: Enable Web Services for ADCS
+# Enabling Web Services for ADCS
 To use Automated Data Capture System, you must enable the ADCS web service.  
 
 ### To enable and publish the ADCS web service  
@@ -57,6 +57,4 @@ To use Automated Data Capture System, you must enable the ADCS web service.
      Information about the ADCS web service is displayed.  
 
 ## See Also  
- [Configuring Automated Data Capture System](Configuring-Automated-Data-Capture-System.md)   
- [How to: Configure ADCS Options](How-to--Configure-ADCS-Options.md)   
  [SOAP Web Services](SOAP-Web-Services.md)

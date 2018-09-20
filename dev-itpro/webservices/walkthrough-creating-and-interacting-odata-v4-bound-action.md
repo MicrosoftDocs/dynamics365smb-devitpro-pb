@@ -165,4 +165,4 @@ You have now published a [!INCLUDE[prodshort](../developer/includes/prodshort.md
  [Web Services](Web-Services.md)   
  [SOAP Web Services](SOAP-Web-Services.md)   
  [Publish a Web Service](Publish-Web-Service.md)  
- [Securing Web Service Connections Using Certificates](deployment/implement-security-certificates-production-environment)   
+ [Securing Web Service Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)   

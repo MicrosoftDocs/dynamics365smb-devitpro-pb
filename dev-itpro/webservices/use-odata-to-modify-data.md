@@ -43,4 +43,3 @@ You can write to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] d
 ## See Also  
  [OData Web Services](OData-Web-Services.md)   
  [Using OData to Return-Obtain a JSON Document](return-obtain-json-document.md)   
- [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData.md)

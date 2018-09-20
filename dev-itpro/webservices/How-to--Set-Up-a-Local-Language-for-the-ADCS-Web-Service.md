@@ -11,7 +11,7 @@ ms.assetid: a3b09603-96ac-409e-aafa-d676e19bab6e
 caps.latest.revision: 4
 manager: edupont
 ---
-# How to: Set Up a Local Language for the ADCS Web Service
+# Set Up a Local Language for the ADCS Web Service
 To have messages, including errors, display in the language of the user, you have to modify the ADCS web service codeunit to account for the language setting.  
   
 ### To specify the local language of ADCS messages  
@@ -33,4 +33,4 @@ To have messages, including errors, display in the language of the user, you hav
     ```  
   
 ## See Also  
- [Configuring Automated Data Capture System](Configuring-Automated-Data-Capture-System.md)
+ [Configuring Automated Data Capture System](/dynamics-nav/Configuring-Automated-Data-Capture-System)
