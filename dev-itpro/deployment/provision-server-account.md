@@ -17,11 +17,6 @@ The [!INCLUDE[server](../developer/includes/server.md)] account is used by [!INC
 > [!NOTE]  
 >  Because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup and the New-NavDatabase cmdlet configure the required permissions for the [!INCLUDE[server](../developer/includes/server.md)] account, you will typically use the procedures in this topic when you change the [!INCLUDE[server](../developer/includes/server.md)] account for an existing installation.  
 
-To provision a [!INCLUDE[server](../developer/includes/server.md)] account, complete the following procedures as described in this topic:  
-
--   [Provisioning a Domain User Account](#DUA)  
-
--   [Provisioning the Network Service Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#NSA)  
 
 ## Prerequisite
 Delete the **[!INCLUDE[prodslong](../developer/includes/prodlong.md)]** folder in the **ProgramData** folder of your system drive, for example, ```C:\ProgramData\Microsoft\Microsoft Dynamics 365 Business Central```. 

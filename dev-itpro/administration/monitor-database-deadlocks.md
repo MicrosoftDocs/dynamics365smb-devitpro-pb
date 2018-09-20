@@ -28,7 +28,7 @@ In SQL Server Management Studio, connect to the SQL server instance for [!INCLUD
 -   On the database level, grant the login the **View server state** permission.
 -   On the SQL server instance level, grant the login both **Alter any event session** and **View server state** permissions.
 
-For detailed steps on how to do this, see [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).
+For detailed steps on how to do this, see [Giving the account necessary database privileges in SQL Server](../deployment/provision-server-account.md#dbo).
 
 The next the a client session is established with the database, a session for monitoring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database appears under  **Management**, **Extended Events**.
 
