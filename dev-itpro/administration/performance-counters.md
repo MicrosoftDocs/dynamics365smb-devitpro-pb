@@ -83,7 +83,7 @@ The following figure shows an example of the **# Mounted Tenants** counter for a
 
 In this example, several server instances were unstable, which resulted in constant restarts. This is indicated by the erratic behavior in the chart. To resolve this issue, the density of the cluster was lowered by moving tenants from server instances represented by blue/green lines to the server instance represented by the orange lines.
 
-<br /><br />For more information about tenants, see [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md).-->
+<br /><br />For more information about tenants, see.-->
 
 ## Data and caching counters
 These counters pertain to the data caching on the server instance.

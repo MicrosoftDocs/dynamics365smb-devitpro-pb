@@ -13,7 +13,7 @@ When you import objects from a binary file \(.fob\), if there are conflicts with
   
  If you import objects from a .txt file, then the objects in the file overwrite any existing objects in the database.  
   
- You use the Import Worksheet when you import objects by using the UI in the development environment. For more information about how to import objects, see [How to: Import Objects](How-to--Import-Objects.md).  
+ You use the Import Worksheet when you import objects by using the UI in the development environment. For more information about how to import objects, see [Importing Objects](cside-import-objects.md).  
   
 ## Default Actions in the Import File  
  The value of the **Action** column for each object in the Import Worksheet can be saved in the .fob file with the objects by choosing the **Save As** button in the Import Worksheet. When you import a .fob file, in the dialog box, you can choose the **Yes** button to import all objects and use the actions that are saved in the .fob file, or choose the **No** button to open the Import Worksheet and revise the action for any object in the file.  

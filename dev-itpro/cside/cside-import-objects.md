@@ -15,7 +15,7 @@ You can export and import application objects from and to the database from a fi
 
 -   Text format \(.txt\)  
 
- You can export and import objects either by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] or by running finsql.exe with the [ImportObjects](\dynamics-nav\importobjects) command.  
+ You can export and import objects either by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] or by running finsql.exe with the [ImportObjects](/dynamics-nav/importobjects) command.  
 
 > [!NOTE]  
 >  To export or import objects from .txt format, you must have a developer license. To import objects from .fob format, you can have either an end-user license or a developer license.  

@@ -26,7 +26,7 @@ This topic describes how you can deploy a [!INCLUDE[prodshort](../developer/incl
 
         Make sure the database does not contain users with Windows credentials. Only users with SQL authentication are allowed.  
 
-        Also, you must have saved a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license file in the database before you upload it to Azure SQL Database. For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
+        Also, you must have saved a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license file in the database before you upload it to Azure SQL Database. For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     -   Access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media \(DVD\).  
 

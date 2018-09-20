@@ -23,7 +23,7 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
   
 -   [Configuring Kernel Mode Authentication on the Web Server](configure-delegation-web-server.md#Kernel)  
   
-##  <a name="Delegate"></a> Delegating Access from the Web Server to  [!INCLUDE[server](../developer/includes/server.md)]  
+##  <a name="Delegate"></a> Delegating Access from the Web Server to [!INCLUDE[server](../developer/includes/server.md)]  
  Configuring delegation means explicitly configuring the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to delegate its access to the [!INCLUDE[server](../developer/includes/server.md)] on behalf of the device that is trying to connect to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To make the access more secure, you specify delegation to a specific service on a specific server. This is known as *constrained delegation*.  
   
 > [!NOTE]  
@@ -44,22 +44,22 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
 5.  On the **Delegation** tab, choose **Trust this user for delegation to specified services only**, and then choose **Use Kerberos only**.  
   
     > [!NOTE]  
-    >  The **Use Kerberos Only** option does not work for some network configurations with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If you get a server error when you try open the [!INCLUDE[webserver](../developer/includes/webserver.md)], then disable the **Use Kerberos Only** option and see whether this fixes the error. For more information about this error, see [Troubleshooting: A server error occurred and the content cannot be displayed](Troubleshooting--A-server-error-occurred-and-the-content-cannot-be-displayed.md).  
+    >  The **Use Kerberos Only** option does not work for some network configurations with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If you get a server error when you try open the [!INCLUDE[webserver](../developer/includes/webserver.md)], then disable the **Use Kerberos Only** option and see whether this fixes the error. For more information about this error, see [Troubleshooting: A server error occurred and the content cannot be displayed](/dynamics-nav/Troubleshooting--A-server-error-occurred-and-the-content-cannot-be-displayed).  
   
-6.  You must add the following service entries for the computer that is running [!INCLUDE[server](../developer/includes/server.md)], where **NAVSERVER** indicates the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
+6.  You must add the following service entries for the computer that is running [!INCLUDE[server](../developer/includes/server.md)], where **BCSERVER** indicates the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
   
     |Service type|User or computer|Port|  
     |------------------|----------------------|----------|  
-    |DynamicsNAV|NAVSERVER|7046|  
-    |DynamicsNAV|NAVSERVER.corp|7046|  
-    |HOST|NAVSERVER||  
-    |HOST|NAVSERVER.corp||  
+    |DynamicsNAV|BCSERVER|7046|  
+    |DynamicsNAV|BCSERVER.corp|7046|  
+    |HOST|BCSERVER||  
+    |HOST|BCERVER.corp||  
   
 7.  To add the HOST service, select **Expanded**, and then choose **Add**.  
   
 8.  In the **Add Services** window, choose **Users or Computers**.  
   
-9. In the **Enter the object names to select** box, type the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)], in this case NAVSERVER, and then choose the **OK** button.  
+9. In the **Enter the object names to select** box, type the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)], in this case BCSERVER, and then choose the **OK** button.  
   
 10. In the list of available services, select **HOST**, and then choose the **OK** button.  
   

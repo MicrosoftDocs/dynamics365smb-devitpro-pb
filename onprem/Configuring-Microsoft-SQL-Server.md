@@ -21,5 +21,4 @@ The topics in this section describe actions that you can take after installing [
 -   [Troubleshooting: SQL Server Connection Problems](Troubleshooting--SQL-Server-Connection-Problems.md)  
   
 ## See Also  
- [Installation and Configuration Walkthroughs](Installation-and-Configuration-Walkthroughs.md)   
  [Installation Considerations for Microsoft SQL Server](Installation-Considerations-for-Microsoft-SQL-Server.md)

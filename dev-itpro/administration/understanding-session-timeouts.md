@@ -108,5 +108,3 @@ When you start a client, like the [!INCLUDE[nav_web](../developer/includes/nav_w
 
 3.  The session is closed, and then removed from the Active Session table.  
 
-## See Also  
- [Configuring Microsoft Dynamics NAV](Configuring-Microsoft-Dynamics-NAV.md)
