@@ -30,7 +30,7 @@ Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLong
 
 ## See Also
 
-[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshooting-long-running-queries-using-event-log.md)     
+[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md)     
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
 [Set-NAVServerConfiguration](https://go.microsoft.com/fwlink/?linkid=401394)      
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  

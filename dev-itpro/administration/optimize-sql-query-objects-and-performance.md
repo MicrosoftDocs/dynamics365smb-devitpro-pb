@@ -58,6 +58,5 @@ A *query* is a new object in [!INCLUDE[prodlong](../developer/includes/prodlong.
  Query result sets are not guaranteed to be dynamic, whereas record result sets are always dynamic. This means that if you insert or modify data in result set row that you have not yet looped through, then it is not guaranteed that the query result set includes those changes.  
   
 ## See Also  
- [Queries](Queries.md)   
- [SumIndexField Technology \(SIFT\)](SumIndexField-Technology--SIFT-.md)   
- [Optimizing SQL Server Performance with Microsoft Dynamics NAV](Optimizing-SQL-Server-Performance-with-Microsoft-Dynamics-NAV.md)
+ [Query Object](../developer/devenv-query-object.md)  
+ [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)

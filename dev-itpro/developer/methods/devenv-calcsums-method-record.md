@@ -71,5 +71,4 @@ WhseEntry.CALCSUMS("Qty. (Base)");
  The first three lines set filters on fields in the Warehouse Entry record so the total that is calculated in the last line of code uses records only in the specified range.  
 
 ## See Also  
- <!--[SumIndexField Technology \(SIFT\)](devenv-SumIndexField-Technology--SIFT.md) -->   
  [SumIndexFields Property](../properties/devenv-SumIndexFields-Property.md)

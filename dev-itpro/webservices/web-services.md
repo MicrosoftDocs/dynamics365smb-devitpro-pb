@@ -55,7 +55,7 @@ For SOAP services, you can also use extension codeunits to extend the default se
  For SOAP services only, codeunit web services provide you with the most control and flexibility. When a codeunit is exposed as a web service, all functions defined in the codeunit are exposed as operations.  
 
 ### Query Web Services  
- When you expose a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] query as an OData web service, you can query that data to return a service metadata \(EDMX\) document or an AtomPub document. For more information about how to create and use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] queries, see [Queries](Queries.md).  
+ When you expose a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] query as an OData web service, you can query that data to return a service metadata \(EDMX\) document or an AtomPub document. For more information about how to create and use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] queries, see [Query Object](../developer/devenv-query-object.md).  
 
 ### Web Services and Regional Settings  
  Data is formatted according to the value of the **Services Language** setting for the relevant [!INCLUDE[server](../developer/includes/server.md)] instance. The default value is **en-us**. This means that [!INCLUDE[server](../developer/includes/server.md)] interprets all incoming data as the specified culture, such as dates and amounts.  

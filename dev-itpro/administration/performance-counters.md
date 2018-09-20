@@ -114,19 +114,10 @@ These pertain to tasks that are run by Task Scheduler.
 |Total # Running tasks|Total number of tasks in the shared task list that are currently running by any server instance connected to this application database. |
 |Time (ms) since the list of running tasks last had capacity for new tasks|The time (ms) since the list of running tasks last had capacity for new tasks.|
 
-<!-- This infor is for SRE and should be added to the Runbooks
-###  <a name="TaskSchedulerMetrics"></a>Task scheduler metrics
-The task scheduler controls when certain operations or processes (tasks) are run. Tasks are run in a background session between the [!INCLUDE[server](../developer/includes/server.md)] instance and database.  Every two seconds, the task scheduler performs the following operations :
-*   Reads the list of tasks from the database (shared with other server tasks) and find all tasks running or ready to run (candidate tasks)
-*   Removes the completed tasks from the list of active tasks on this server instance
-*   Keeps the running tasks in the list of active tasks, and adds new tasks as they they are ready, until the maximum number of tasks is met.
-    *   New tasks are run using the specified user account.
-*   Updates all performance counters.-->
-
-For more information about task scheduler, see [Task Scheduler](task-scheduler.md).
+For more information about task scheduler, see [Task Scheduler](../developer/devenv-task-scheduler.md).
 
 ## See Also  
  [Set up Performance Counters in Windows Performance Monitor](set-up-performance-counters-performance-monitor.md)   
  [Create a Data Collector Set From Template](monitor-create-data-collector-set-from-template.md)   
  [Optimizing SQL Server Performance with Business Central](Optimize-SQL-Server-Performance.md)   
-<!-- temporatily removed until we determine our support for this [Microsoft Dynamics NAV Management Pack for System Center Operations Manager](http://go.microsoft.com/fwlink/?LinkID=722863) -->
+

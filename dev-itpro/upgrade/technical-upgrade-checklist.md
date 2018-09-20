@@ -47,7 +47,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Connect [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to the server instance.|[See...](../cside/cside-change-server-instance.md)||
 |Import codeunit 1 replacement.|[See...](codeunit1-replacement.md)||
 |Compile all objects. **Important:** Choose to synchronize schema **later**.|[See...](../cside/cside-compiling-objects.md)||
-|Fix compilation errors.|[See...](converting-a-database.md#fixerrors)||
+|Fix compilation errors.|[See...](resolve-compile-errors-when-converting-dynamics-nav-2018-database-md)||
 |Repair published V2 extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp)||
 |(Multitenant mode only) Mount the tenant database. |[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant)||
 |Synchronize the tenant/database. |[See...](../administration/synchronize-tenant-database-and-application-database.md)||
