@@ -15,7 +15,7 @@ ms.author: solsen
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # UICop Analyzer Rules 
-UICop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants.
+UserInterfaceCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants.
 
 ## Rules 
 

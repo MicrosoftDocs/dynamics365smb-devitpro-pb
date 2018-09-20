@@ -263,6 +263,7 @@
 ### [XmlText](developer/api/xmltext-class.md)
 ## [Methods](developer/methods/devenv-al-method-reference.md)
 ### [System Methods](developer/methods/devenv-system-methods.md)
+### [Array Methods](developer/methods/devenv-array-methods.md)
 ### [Procedure Overload](developer/methods/devenv-overload-method.md)
 ### [Method Attributes](developer/methods/devenv-method-attributes.md)
 ### [AL Data Types](developer/datatypes/devenv-al-data-types.md)
