@@ -15,7 +15,7 @@ You can use the following table as a checklist to help set up a more secure [!IN
   
 |To|See|  
 |--------|---------|  
-|Install [!INCLUDE[prodshort](../developer/includes/prodshort.md)] software.|You must make decisions about where you install [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components.<br /><br /> [Working with Microsoft Dynamics NAV Setup](Working-with-Microsoft-Dynamics-NAV-Setup.md)|  
+|Install [!INCLUDE[prodshort](../developer/includes/prodshort.md)] software.|You must make decisions about where you install [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components.<br /><br /> [Installing Business Central Using Setup](../deployment/install-using-setup.md)|  
 |Activate your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.|[How to: Upload the License File](How-to--Upload-the-License-File.md)|  
 |Create users.|[How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md)|  
 |Assign users to permission sets.|[How to: Define Permissions for Users](How-to--Define-Permissions-for-Users.md)|  

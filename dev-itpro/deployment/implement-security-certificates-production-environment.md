@@ -30,7 +30,6 @@ A certificate is a file that [!INCLUDE[server](../developer/includes/server.md)]
   
 In a production environment, you should obtain an certificate from a certification authority or trusted provider. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization.
 
-<!-- In a test environment, if you do not have certificate, then you can create your own self-signed certificate. For information about using self-signed certificates in a text environment, see [Walkthrough: Implementing Security Certificates in a Test Environment](Walkthrough--Implementing-Security-Certificates-in-a-Test-Environment.md). --> 
   
 ###  <a name="AboutProdCerts"></a> Obtaining Certificates
 

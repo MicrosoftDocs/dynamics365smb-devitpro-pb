@@ -25,12 +25,12 @@ You can choose to migrate your [!INCLUDE[prodshort](../developer/includes/prodsh
 > [!NOTE]  
 >  The email logging functionality in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires the [!INCLUDE[server](../developer/includes/server.md)] service account to have access to the Exchange server. But in a multitenant deployment, this is not always possible.  
   
- In multitenant deployments of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], permission sets are stored centrally in the application database, so only the administrator of the central application can add, remove, or modify permission sets. Instead, the tenants can use user groups to manage permissions. For more information, see [Managing User Groups](managing-user-groups.md).  
+ In multitenant deployments of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], permission sets are stored centrally in the application database, so only the administrator of the central application can add, remove, or modify permission sets. Instead, the tenants can use user groups to manage permissions.  
   
 ### Migration Process  
  If you decide to move to a multitenant architecture, you must complete the following steps:  
   
-1.  If your current solution is based on an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], upgrade the database to [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)]. For more information, see [Upgrading the Data](Upgrading-the-Data.md).  
+1.  If your current solution is based on an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], upgrade the database to [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)]. For more information, see [Upgrading the Data](../upgrade/Upgrading-the-Data.md).  
   
      After this step, you have a database that contains the application-wide tables and the same companies as before. But it has been upgraded to the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] database schema.  
   
@@ -47,7 +47,7 @@ You can choose to migrate your [!INCLUDE[prodshort](../developer/includes/prodsh
 ## See Also  
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
  [Creating Tenants from Companies](Creating-Tenants-from-Companies.md)   
- [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
- [Upgrading the Data](Upgrading-the-Data.md)   
- [Upgrading to Business Central](Upgrading-to-business-central,md)   
+ [Upgrading the Application Code](../upgrade/Upgrading-the-Application-Code.md)   
+ [Upgrading the Data](../upgrade/Upgrading-the-Data.md)   
+ [Upgrading to Business Central](../upgrade/Upgrading-to-business-central,md)   
  [Merging an Application Database with a Tenant Database](Merging-an-Application-Database-with-a-Tenant-Database.md)

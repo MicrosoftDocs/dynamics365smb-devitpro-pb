@@ -14,9 +14,6 @@ caps.latest.revision: 14
 # How to: Export the Application Tables to a Dedicated Database
 In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can export the tables that define the application to a dedicated database. To export the application tables from an existing database, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides a [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlet as part of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].  
 
-> [!IMPORTANT]  
->  Before you can run the script, you must upgrade to [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)]. For more information, see [Upgrading to Microsoft Dynamics NAV 2017](Upgrading-to-Microsoft-Dynamics-NAV-2017.md).  
-
  The following procedure illustrates how you can separate the application tables in an existing database into two databases: an application database and a business data database. You can automate this process and combine it with the use of other cmdlets. For more information, see the samples in the Windows PowerShell scripts in the **…\\WindowsPowerShellScripts\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media.  
 
 ### To export the application tables to a dedicated database  
@@ -107,7 +104,6 @@ Mount-NAVTenant –ServerInstance ‘nav_server_instance’ -Id tenant1 –Datab
 ## See Also  
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
- [Upgrading to Microsoft Dynamics NAV 2017](Upgrading-to-Microsoft-Dynamics-NAV-2017.md)   
  [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview.md)   
  [Creating Tenants from Companies](Creating-Tenants-from-Companies.md)   
  [Merging an Application Database with a Tenant Database](Merging-an-Application-Database-with-a-Tenant-Database.md)

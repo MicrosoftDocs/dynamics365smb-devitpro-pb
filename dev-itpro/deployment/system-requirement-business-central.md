@@ -91,7 +91,7 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>.|  
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>Memory: 2 GB.|  
-|[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Framework.<br />     For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](system-requirements-for-business-central.md#CRM).|  
+|[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Framework.<br />     For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](system-requirement-for-business-central.md#CRM).|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li><li>Windows PowerShell 3.0.|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present on the target computer:<ul><li>Microsoft .NET Framework 4.7.</li><li>Windows Identity Framework.</li></ul></li></ul>|  
 

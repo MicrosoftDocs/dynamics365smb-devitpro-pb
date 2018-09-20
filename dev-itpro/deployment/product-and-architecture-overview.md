@@ -66,5 +66,5 @@ Every deployment must include the core components: Web server, Server, and SQL D
 
 ## See Also  
  [Deployment](Deployment.md)   
- [Working with Microsoft Dynamics NAV Setup](Working-with-Microsoft-Dynamics-NAV-Setup.md)   
+ [Installing Business Central Using Setup](install-using-setup.md)   
  [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md)

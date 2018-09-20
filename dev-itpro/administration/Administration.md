@@ -21,7 +21,6 @@ ms.date: 08/17/2018
 |Use the [!INCLUDE[nav_dev_long](../developer/includes//nav_dev_long_md.md)] to manage licenses, databases, and companies.|[Administration in the Development Environment](Administration-in-the-Development-Environment.md)|  
 |Optimize performance when accessing [!INCLUDE[navnow](../developer/includes//navnow_md.md)] data from SQL Server.|(Optimizing-SQL-Server-Performance-with-Microsoft-Dynamics-NAV.md)|  
 |Monitor your [!INCLUDE[nav_server](../developer/includes//nav_server_md.md)] instances.|[Monitoring Microsoft Dynamics NAV Server](Monitoring-Microsoft-Dynamics-NAV-Server.md)|  
-|Connect [!INCLUDE[nav_windows](../developer/includes//nav_windows_md.md)] to [!INCLUDE[nav_server](../developer/includes//nav_server_md.md)] over a wide area network.|[Connecting the Microsoft Dynamics NAV Clients over a Wide Area Network](Connecting-the-Microsoft-Dynamics-NAV-Clients-over-a-Wide-Area-Network.md)|  
 
 -->
   

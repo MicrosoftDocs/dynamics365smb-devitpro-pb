@@ -56,12 +56,12 @@ To complete the tasks in this article, you will need the following:
 
         Import any client-side and server-side add-ins (such as control add-ins and .NET Framework Interoperability objects) which are not included by default into the old application database.
     
-        For more information, see [To import the control add-in to the database](how-to--install-a-windows-client-control-add-in-assembly.md#InstallOnDatabase).
+        For more information, see [To import the control add-in to the database](/dynamics-nav/how-to--install-a-windows-client-control-add-in-assembly#InstallOnDatabase).
 
     2. Import test automation objects.
     3. Publish and synchronize any new V2 extensions that you want in application that are not already published.
 
-        For more information, see [Publishing and Installing an Extension v2.0](devenv-how-publish-and-install-an-extension-v2).
+        For more information, see [Publishing and Installing an Extension v2.0](../developer/devenv-how-publish-and-install-an-extension-v2.md).
     
 4. Test and validate the upgraded application on-premise.
 
@@ -163,5 +163,3 @@ To upload your deployable package, you will create a project in LCS.
 
 12. In the **Invite user** box, use the **User lookup** field to find the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user or enter the email address directly in the **Email** field, and then select **Invite**.  
 
-## See Also  
- [Configuring Database Components](Configuring-Database-Components.md)   

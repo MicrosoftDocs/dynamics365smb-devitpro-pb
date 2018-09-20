@@ -94,5 +94,3 @@ This topic describes how you can deploy a [!INCLUDE[prodshort](../developer/incl
 
  The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database is now deployed and configured on Azure. For developing, you can connect to the database from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
 
-## See Also  
- [Configuring Database Components](Configuring-Database-Components.md)   
