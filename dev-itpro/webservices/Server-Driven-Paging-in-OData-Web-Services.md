@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Server-Driven Paging in OData Web Services
 Server-driven paging ensures that the quantity of data that is returned by an OData URI does not overwhelm [!INCLUDE[server](../developer/includes/server.md)] or client program that you use to capture data, while optimizing performance.  

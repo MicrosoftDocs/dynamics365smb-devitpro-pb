@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: e4c70172-b5bb-4649-a5cb-27fe0afd988c
 caps.latest.revision: 3
 author: jswymer
@@ -33,5 +33,4 @@ The following articles describe how to optimize performance in [!INCLUDE[prodlon
 [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Business Central](troubleshoot-long-running-queries-using-event-log.md)
 
 ## See Also  
- [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)   
  [Microsoft SQL Server documentation](http://go.microsoft.com/fwlink/?LinkId=253107)

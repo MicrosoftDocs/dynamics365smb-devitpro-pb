@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Deploy a Business Central Database to Azure SQL Database
 This topic describes how you can deploy a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to Microsoft Azure SQL Database.  
@@ -96,4 +96,3 @@ This topic describes how you can deploy a [!INCLUDE[prodshort](../developer/incl
 
 ## See Also  
  [Configuring Database Components](Configuring-Database-Components.md)   
- [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)

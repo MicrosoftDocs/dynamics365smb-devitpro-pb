@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Setting SQL Compatibility Level to Optimize Database Performance
@@ -36,5 +36,4 @@ You change the compatibility level of the database by using SQL Server Managemen
 
 ## See Also  
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)    
-[Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)   
 [Microsoft SQL Server documentation](http://go.microsoft.com/fwlink/?LinkId=253107)

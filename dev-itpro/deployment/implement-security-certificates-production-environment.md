@@ -1,12 +1,12 @@
 ---
-title: "How to: Implement Security Certificates in Business Central"
+title: "Using Security Certificates with Business Central On-Premises"
 ms.custom: na
 ms.date: 06/05/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Using Security Certificates with Business Central On-Premises
 

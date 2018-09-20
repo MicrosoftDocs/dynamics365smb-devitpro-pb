@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.author: kepontop
 ---
 # Troubleshooting: Using Query Store to Monitor Query Performance in Business Central
@@ -33,5 +33,4 @@ Please visit the SQL Server documentation for more information on setup, configu
 [Operating the Query Store in Azure SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-operate-query-store)
 
 ## See Also
-[Configuring Microsoft SQL Server](configuring-microsoft-sql-server.md)  
-[Installation Considerations for Microsoft SQL Server](Installation-Considerations-for-Microsoft-SQL-Server.md)  
+[Installation Considerations for Microsoft SQL Server](../deployment/Installation-Considerations-for-Microsoft-SQL-Server.md)  

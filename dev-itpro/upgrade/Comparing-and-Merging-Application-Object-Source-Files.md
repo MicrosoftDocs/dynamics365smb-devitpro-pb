@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: 532fb62f-c29c-46b1-8b4d-aad30e1d0f74
 caps.latest.revision: 13
 ---
@@ -82,4 +82,4 @@ When you create or modify application objects, you use the [!INCLUDE[nav_dev_lon
  [Handling Merge Conflicts](Handling-Merge-Conflicts.md)   
  [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md)   
  [Working with Application Objects as Text Files](Working-with-Application-Objects-as-Text-Files.md)   
- [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)
+ [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)

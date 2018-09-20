@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Monitoring Long Running SQL Queries using the Event Log
 
@@ -32,7 +32,6 @@ Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLong
 
 [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshooting-long-running-queries-using-event-log.md)     
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
-[Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)  
 [Set-NAVServerConfiguration](https://go.microsoft.com/fwlink/?linkid=401394)      
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  
 [Monitoring Microsoft Dynamics NAV Server Using Performance Counters](monitor-server-using-performance-counters.md)  

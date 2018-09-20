@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: c5a230a2-fce0-4563-ab10-ffc38e036203
 caps.latest.revision: 7
 ---
@@ -111,4 +111,4 @@ caps.latest.revision: 7
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)   
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)   
  [ExportObjects](ExportObjects.md)   
- [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)
+ [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)

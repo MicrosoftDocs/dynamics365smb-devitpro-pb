@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # ReadMultiple Operation
 Reads a filtered set of records. This operation returns an array of entities. The ReadMultiple operation allows the consumer of a web service to specify the number of records to be returned at one time. This can reduce load on the server.  

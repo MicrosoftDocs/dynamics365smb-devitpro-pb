@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Turn Off or Limit Telemetry Trace Events
@@ -64,7 +64,7 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[a
     ```
     Substitute `MyServerInstance` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance and `level` with either `Critical`, `Error`, `Warning`, `Normal`, `Verbose`, or `Off`.
     
-For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
+For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
 
 ## See Also  
  [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)   

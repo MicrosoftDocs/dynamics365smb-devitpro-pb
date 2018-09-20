@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Moving from Dynamics NAV On-premise to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online 
@@ -165,4 +165,3 @@ To upload your deployable package, you will create a project in LCS.
 
 ## See Also  
  [Configuring Database Components](Configuring-Database-Components.md)   
- [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)

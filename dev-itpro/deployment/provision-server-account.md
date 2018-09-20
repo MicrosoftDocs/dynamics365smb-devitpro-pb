@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Provisioning the [!INCLUDE[server](../developer/includes/server.md)] Service Account
 The [!INCLUDE[server](../developer/includes/server.md)] account is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients to log on to the [!INCLUDE[server](../developer/includes/server.md)] instance. The [!INCLUDE[server](../developer/includes/server.md)] then uses the service account to log on to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. When you install [!INCLUDE[server](../developer/includes/server.md)], you identify an Active Directory account to provide credentials for the server. By default, Setup runs [!INCLUDE[server](../developer/includes/server.md)] under the Network Service account, a predefined local account used by the service control manager. This account has minimum privileges on the local computer and acts as the computer on the network.  
@@ -17,11 +17,6 @@ The [!INCLUDE[server](../developer/includes/server.md)] account is used by [!INC
 > [!NOTE]  
 >  Because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup and the New-NavDatabase cmdlet configure the required permissions for the [!INCLUDE[server](../developer/includes/server.md)] account, you will typically use the procedures in this topic when you change the [!INCLUDE[server](../developer/includes/server.md)] account for an existing installation.  
 
-To provision a [!INCLUDE[server](../developer/includes/server.md)] account, complete the following procedures as described in this topic:  
-
--   [Provisioning a Domain User Account](#DUA)  
-
--   [Provisioning the Network Service Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#NSA)  
 
 ## Prerequisite
 Delete the **[!INCLUDE[prodslong](../developer/includes/prodlong.md)]** folder in the **ProgramData** folder of your system drive, for example, ```C:\ProgramData\Microsoft\Microsoft Dynamics 365 Business Central```. 

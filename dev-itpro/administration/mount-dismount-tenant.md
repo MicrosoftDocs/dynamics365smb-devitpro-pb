@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Mount or Dismount a Tenant on a Microsoft Dynamics Server Instance
 If a [!INCLUDE[server](../developer/includes/server.md)] instance is configured for multitenancy, then you can mount and dismount tenant databases by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or **Mount-NAVTenant** or **Dismount-NAVTenant** cmdlets in [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
