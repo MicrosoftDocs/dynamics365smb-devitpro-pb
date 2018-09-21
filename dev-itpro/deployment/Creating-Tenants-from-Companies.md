@@ -19,7 +19,7 @@ If your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution inclu
 >  Before you can create tenants from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] companies, you must have exported the application to a dedicated application database. For more information, see [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md).  
 
 ### Running a Windows PowerShell Script to Create Tenants from Companies  
- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes a sample [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] script and a sample SQL script, HowTo-MoveCompanyToTenant.ps1 and HowTo-MoveCompanyToTenant.sql. These scripts illustrate how you can move company-specific data to new business databases and mount them as new tenants. You can modify the scripts and then run them in the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. For more information, see [Sample Windows PowerShell Scripts for Microsoft Dynamics NAV](Sample-Windows-PowerShell-Scripts-for-Microsoft-Dynamics-NAV.md).  
+ [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes a sample [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] script and a sample SQL script, HowTo-MoveCompanyToTenant.ps1 and HowTo-MoveCompanyToTenant.sql. These scripts illustrate how you can move company-specific data to new business databases and mount them as new tenants. You can modify the scripts and then run them in the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].   
 
  The HowTo-MoveCompanyToTenant.ps1 script uses [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cmdlets and SQL commands to copy data from a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company in a business database to a new tenant database. It mounts the tenant database on a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and then deletes the data and the company from the original database. You can adapt the scripts to your solution and rename them so that they do not start with “HowTo-“. Then, you can run the MoveCompanyToTenant.ps1 script in Windows PowerShell with the relevant parameters as shown in the following example.  
 
@@ -45,4 +45,4 @@ MoveCompanyToTenant -ServerInstance ‘DynamicsNAV’ -FromDatabase 'Demo Databa
 ## See Also  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md)   
- [Sample Windows PowerShell Scripts for Microsoft Dynamics NAV](Sample-Windows-PowerShell-Scripts-for-Microsoft-Dynamics-NAV.md)
+
