@@ -88,7 +88,7 @@ Record-level security filters are handled by SQL Server just like other filters 
   
 ## See Also  
 
- [Users and Credential Types](Users-and-Credential-Types.md)   
+ [Users and Credential Types](../administration/users-credential-types.md)   
  [Database Logins](Database-Logins.md)    
  [Permissions on Database Objects](Permissions-on-Database-Objects.md)   
  [Security Considerations](Security-Considerations.md)

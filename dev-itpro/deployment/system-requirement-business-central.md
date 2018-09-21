@@ -178,6 +178,6 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 --> 
 
 ## See Also
-[Welcome to the Developer and IT-Pro Help for Business Central](./index.md)  
+[Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  
 [Deployment](Deployment.md)  
