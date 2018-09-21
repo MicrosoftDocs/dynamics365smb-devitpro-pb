@@ -1,1 +1,1 @@
-Microsoft Dynamics CRM
+Dynamics 365 for Sales
