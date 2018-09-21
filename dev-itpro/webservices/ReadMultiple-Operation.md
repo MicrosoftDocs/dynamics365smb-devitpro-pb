@@ -50,7 +50,7 @@ Reads a filtered set of records. This operation returns an array of entities. Th
 -   Criteria is of type string and can contain any valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] style filter that is specified in a standard [!INCLUDE[prodshort](../developer/includes/prodshort.md)] filter format.  
   
 ## Usage Examples  
- The following example returns the first 100 customer names that start with an S. For a detailed code example, see [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP-.md).  
+ The following example returns the first 100 customer names that start with an S.
   
 ```c#  
 List<Customer_Filter> filterArray = new List<Customer_Filter>();  

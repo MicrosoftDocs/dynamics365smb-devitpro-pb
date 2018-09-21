@@ -34,7 +34,3 @@ When you publish a page as a SOAP web service, it has a set of default operation
 |[ReadMultiple Operation](ReadMultiple-Operation.md)|Reads a filtered set of records, paged.<br /><br /> `Entity [] ReadMultiple(Entity_Filter[] filterArray, string bookmarkKey, int setSize)`|  
 |[Update Operation](Update-Operation.md)|Updates a single record.<br /><br /> `void Update(ref Entity entity)`|  
 |[UpdateMultiple Operation](UpdateMultiple-Operation.md)|Updates a set of records.<br /><br /> `void UpdateMultiple(ref Entity[] entity)`|  
-
-## See Also  
- [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP-.md)   
- [Walkthrough: Creating a Web Service using Extension Codeunits \(SOAP\)](Walkthrough--Creating-a-Web-Service-using-Extension-Codeunits--SOAP-.md)

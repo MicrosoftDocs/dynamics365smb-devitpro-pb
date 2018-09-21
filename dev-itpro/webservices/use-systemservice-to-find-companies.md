@@ -77,7 +77,5 @@ You can use the SystemService service in a SOAP web service application to retri
      A list of all companies in the current database is presented in a command session.  
   
 ## See Also  
- [Walkthrough: Creating a Web Service using Extension Codeunits \(SOAP\)](Walkthrough--Creating-a-Web-Service-using-Extension-Codeunits--SOAP-.md)   
- [Walkthrough: Creating and Using a Codeunit Web Service \(SOAP\)](Walkthrough--Creating-and-Using-a-Codeunit-Web-Service--SOAP-.md)   
- [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP-.md)   
+   
  [SOAP Web Services](SOAP-Web-Services.md)
