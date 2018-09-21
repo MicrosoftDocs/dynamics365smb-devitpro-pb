@@ -41,7 +41,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Step|More info| Done |
 |----|-----------|--|
 |Install [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)]. |[See...](../deployment/install-using-setup.md)|
-|Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] as an adminstrator.|)||
+|Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] as an adminstrator.|||
 |Connect to and convert the application database.|[See...](../cside/cside-open-database.md)||
 |Add custom control add-ins to the server instance.|[See...](converting-a-database.md#controladdins)||
 |Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted application database.|[See...](../administration/connect-server-to-database.md)||

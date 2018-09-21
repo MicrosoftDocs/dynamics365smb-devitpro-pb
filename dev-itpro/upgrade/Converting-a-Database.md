@@ -204,20 +204,13 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 9.    Import the codeunit 1 replacement text file you created.
 10.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
 
-    For more information, see [Compiling Objects](../cside/cside-compiling-objects.md).
+        For more information, see [Compiling Objects](../cside/cside-compiling-objects.md).
 
 11. <a name="fixerrors"></a>Fix compilation errors.  
 
     If any errors occur, they are shown in the **Error List** window. For help on resolving the errors, see the following:
 
-
-    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2015 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2015-Database.md). 
-
-    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2016 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2016-Database.md). 
-
-    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2017 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2017-Database.md).
-
-    -    [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](resolve-compile-errors-when-converting-dynamics-nav-2018-Database.md)
+    -    [Resolving Compilation Errors](resolve-compile-errors-when-converting-dynamics-nav-2018-Database.md)
 
 
     You can find all objects which did not compile in the **Object Designer** window, by setting a field filter on the **Compiled** field. 
