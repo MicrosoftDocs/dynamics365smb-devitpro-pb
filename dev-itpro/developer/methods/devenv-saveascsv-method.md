@@ -121,7 +121,7 @@ Query.READ;
 
  This example requires that you do the following:  
 
--   Create a query called **My Customer Query** that is based on table **18 Customer** and contains the **No**, **Name**, and **City** columns. <!--NAV For more information, see [How to: Create Queries](How-to-Create-Queries.md). -->  
+-   Create a query called **My Customer Query** that is based on table **18 Customer** and contains the **No**, **Name**, and **City** columns.   
 
 -   Create the following variables and text constant:  
 

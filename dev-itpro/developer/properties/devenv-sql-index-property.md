@@ -38,4 +38,4 @@ Sets the actual fields that are used in the corresponding index on SQL Server.
  If you use this property to define an index for the primary key, it must include all the fields defined in the primary key. You can add extra fields and you can rearrange the fields to suit your needs.  
  <!--  
 ## See Also  
- [How to: Define Primary and Secondary Keys](How-to--Define-Primary-and-Secondary-Keys.md) -->
+ [Table Keys](devenv-table-keys.md) -->

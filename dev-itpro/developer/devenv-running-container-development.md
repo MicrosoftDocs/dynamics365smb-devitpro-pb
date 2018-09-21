@@ -14,7 +14,6 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 
-
 # Running a Container-Based Development Environment
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is available as a container-based image, ready for running on a Windows system with Docker installed. The container-based approach is used when you need access to both the AL development environment and the C/SIDE development environment.
 

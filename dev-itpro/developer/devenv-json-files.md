@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the content of the JSON files."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/12/2018
+ms.date: 09/03/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ caps.latest.revision: 18
 
 In an AL project there are two JSON files; the `app.json` file and the `launch.json` file. These files are generated automatically when you start a new project. The `app.json` file contains information about extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `launch.json` file contains information about the server that the extension launches on.
 
-## App.json file
+## <a name="Appjson"></a>App.json file
 The following table describes the settings in the ```app.json``` file:
 
 |Setting|Mandatory|Value|
@@ -43,6 +43,8 @@ The following table describes the settings in the ```app.json``` file:
 |idRange|Yes|A range for application object IDs. For all objects outside the range, a compilation error will be raised. When you create new objects, an ID is automatically suggested.|
 |showMyCode|No|This is by default set to `false` and not visible in the manifest. To enable viewing the source code when debugging into an extension, add the following setting: `"showMyCode": true`|
 |target|No|By default this is `Extension`. For Dynamics NAV, you can set this to `Internal` to get access to otherwise restricted APIs. The Dynamics NAV Server setting must then also be set to `Internal`.<!-- For more information, see [Configuring Microsoft Dynamics NAV Server](../configuring-microsoft-dynamics-nav-server.md).-->|
+|helpBaseUrl|No|The URL for the website that displays help for the current extension. The default URL is `https://docs.microsoft.com/{0}/dynamics365/business-central`.|
+|supportedLocales|No|The list of locales that are supported for looking up help. The value on the list is inserted into the URL defined in the `helpBaseUrl` property. The first locale on the list is default. An example is `"supportedLocales": ["da-DK", "en-US"]`.|
 
 ## <a name="Launchjson"></a>Launch.json file
 
