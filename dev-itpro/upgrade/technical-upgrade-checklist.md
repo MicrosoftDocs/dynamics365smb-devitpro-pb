@@ -7,12 +7,12 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Business Central Technical Upgrade Quick Reference 
 
-This article provides an overview of the technical upgrade process for Business Central. For more detailed steps, see [Converting a Database](Converting-a-database.md).
+This article provides an overview of the technical upgrade process for Business Central. For more detailed steps, see [Technical Upgrade](Converting-a-database.md).
 
 
 
@@ -34,6 +34,7 @@ This article provides an overview of the technical upgrade process for Business 
 |(Multitenant mode only) Dismount the tenant|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant?view=dynamicsnav-ps-2018)||
 |Stop the Dynamics NAV Server Instance|||
 |Clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in SQL Server.|[See...](converting-a-database.md#clearsql)||
+|Close all connections to the database.|||
 
 ## Run the technical upgrade
 

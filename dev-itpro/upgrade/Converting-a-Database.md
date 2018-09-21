@@ -21,7 +21,7 @@ This article describes how to convert a [!INCLUDE[navnow](../developer/includes/
 -   [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]
 -   [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]
 -   [!INCLUDE[nav2017](../developer/includes/nav2017.md)] 
--   Dynamics NAV 2018 
+-   [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md) 
 
 This article can also be used to update you current [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to the latest cumulative update. 
 
@@ -120,7 +120,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
 10. <a name="dismounttenant"></a>(Multitenant only) Dismount tenants.
 
-    Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
+    Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
 
     ```
     Dismount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID>
@@ -143,8 +143,11 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     DELETE FROM [<My NAV Database Name>].[dbo].[Server Instance]
     DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
     ```
+13. Close all to connections to the database.
 
-## Task 2: Run Technical Upgrade on the Old Database  
+    This includes but is not limited to [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients tools and SQL Server Management Studio.
+ 
+## Task 3: Run Technical Upgrade on the Old Database  
 Next, you will convert the old database so that it can be used with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 > [!TIP]  

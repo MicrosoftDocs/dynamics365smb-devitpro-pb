@@ -37,7 +37,7 @@ With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], extensions V1 ar
 
 For information about how to convert to extensions V2, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
 
-## [!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration
+## <a name="CRM"></a>[!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration
 
 Because of changes in [!INCLUDE[crm_md](../developer/includes/crm_md.md)] and the  integration since pervious releases, if your application is integrating with [!INCLUDE[crm_md](../developer/includes/crm_md.md)], then you must perform a full upgrade instead of just a technical upgrade. 
 
