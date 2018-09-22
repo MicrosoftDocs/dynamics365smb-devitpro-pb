@@ -100,7 +100,7 @@ Query objects and record objects, including both explicit record variables and i
 |**New**|Validated|Filtered|Filtered|  
 
 > [!IMPORTANT]  
->  It is not supported to change the default **Filtered** value of the **SecurityFiltering** property on implicit records on pages.  
+> It is not supported to change the default **Filtered** value of the **SecurityFiltering** property on implicit records on pages.  
 
 > [!NOTE]  
 > For Query variables, the **Validated** value of the **SecurityFiltering** property is not allowed.  
@@ -109,7 +109,8 @@ Query objects and record objects, including both explicit record variables and i
   
  If you set a security filter on a table that is used in a FlowField calculation, then the calculated value of the FlowField is filtered, based on the security filter and the security filter mode of the record variable for the record in the table. For example, if you set a security filter so that a user can only view sales with a specific salesperson code, and if the security filter mode is **Filtered**, then when the user views a FlowField that calculates total sales, the user can see the total of only those sales that have the specific salesperson code. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the security filter mode value was **Validated** and in this example, the user received an error.  
 
-## Programming examples  
+## Programming examples
+  
  For these examples, you have a table that has 100 records. Each record has an ID field that is the primary key of the table. The values of the ID field that are currently in the database range from 1 to 100. In this example, you set a security filter on the table data for ID=1..50. Then, in a codeunit you create a record variable for the table.  
 
 |Security filter mode|Example|  
@@ -119,7 +120,8 @@ Query objects and record objects, including both explicit record variables and i
 |Ignored|If you set the **SecurityFiltering** property on the record variable to **Ignored**, then the code behaves as if all security filters that are set do not exist for that instance of the record. Any of the **FIND** functions find all 100 records. The **DELETEALL** function deletes all 100 records. You can insert and modify records in any range, regardless of security filters.|  
 |Disallowed|If you set the **SecurityFiltering** property on the record variable to **Disallowed**, then as long as a security filter is set on the record, any code that uses the record variable causes an error.|  
 
-##  <a name="PerformanceImpact"></a> Performance impact of security filtering Mode  
+##  <a name="PerformanceImpact"></a> Performance impact of security filtering Mode
+  
 Security filters are handled by SQL Server just like other filters that are applied by the user. They do not adversely affect performance unless the security filtering mode is **Validated**.
 
 If security filters are set on a table, then setting the **SecurityFiltering** property to **Validated** on a record instance of that table causes a decrease in performance. The [!INCLUDE[server](../developer/includes/server.md)] must go through every record in the table to validate the record instead of adding the filters to the query that is sent to SQL Server.  
@@ -127,7 +129,7 @@ If security filters are set on a table, then setting the **SecurityFiltering** p
 If security filters are not set, then setting the **SecurityFiltering** property to **Validated** has no performance impact.  
 
 > [!NOTE]  
->  We recommend that you change commonly used record variables from the default value of **Validated** to either **Filtered** or **Ignored** to improve performance.  
+> We recommend that you change commonly used record variables from the default value of **Validated** to either **Filtered** or **Ignored** to improve performance.  
 
 ## See Also  
  [Record-Level Security](data-security.md)   
