@@ -30,6 +30,6 @@ netsh firewall set portopening protocol=TCP port=7046 scope=subnet addresses=Loc
 ```  
   
 ## See Also  
- [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md)   
+ [Configuring Business Central Server](../administration/configure-server-instance.md)   
  [Security and Protection](security-and-protection.md)   
  [How to Use the Netsh.exe Tool and Command-Line Switches](http://go.microsoft.com/fwlink/?LinkId=166310)
