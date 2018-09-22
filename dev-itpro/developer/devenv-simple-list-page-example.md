@@ -26,20 +26,24 @@ page 50111 SampleCustomerList
 {
     PageType = List;
     ApplicationArea = All;
-    // Specifies the table that contains the records to display.
+
+    // Specifies the page to display records from the Customer table.
     SourceTable = Customer;
+
     // Makes the page searchable from the Tell me what you want to do feature. 
     UsageCategory = Lists;
-    // Specifies the card type page to use for modifying or creating new customer records.
+
+    // Specifies the card page Sample Customers to be uses for modifying or creating new customer records.
     CardPageId = 50112;
-    // Specifies the title of the page
+
+    // Sets the title of the page to Sample Customers.
     Caption = 'Sample Customers';
 
     layout
     {
         area(Content)
         {
-            // Defines the columns to display in the list.
+            // Sets the No., Name, Contact, and Phone No. fields in the Customer table to be displayed as columns in the list. 
             repeater(Group)
             {
                 field("No."; "No.")
@@ -82,6 +86,7 @@ page 50111 SampleCustomerList
                 end;
             }
         }
+
         // Promotes an action for creating a sales quote to promoted action menu called New.
         area(Creation)
         {
@@ -98,6 +103,7 @@ page 50111 SampleCustomerList
                 end;
             }
         }
+
         // Adds an action on the Report menu that opens the Top 10 List report.
         area(Reporting)
         {

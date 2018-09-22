@@ -21,7 +21,7 @@ manager: edupont
  You can specify that each individual user or group can only access specific entries in the database. For example, you can limit access to the entries that relate to a specific department or project. This level of access control is known as record level security.  
   
 ### Time-Limited Passwords  
- Passwords in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not have time limits, but you can put time limits on user IDs.  
+Passwords in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not have time limits, but you can put time limits on user IDs.  
   
  If you have the required permissions, then you can delete a user ID from the system or cancel all permissions. If deleting a user ID is too drastic a step to take, then you can specify a limited time period during which a particular user ID is allowed to post in the system. You set up this limitation in the **User Setup** window. For more information, see [How to: Set Up User Time Constraints](How-to--Set-Up-User-Time-Constraints.md).  
   

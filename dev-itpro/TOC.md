@@ -79,9 +79,13 @@
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
-# Security
+# [Security On-premises](security/security-and-protection.md)
+## [Consideration](security/security-considerations.md)
+## [User Security](security/user-security.md) 
 ## [Data Security](security/data-security.md)
 ## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
+## [Enhancing Server Security](security/enhancing-server-instance-security.md)
+## [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
 <!-- Development-->
 # [Development in AL](developer/devenv-dev-overview.md)
 ## [Getting Started with AL](developer/devenv-get-started.md)

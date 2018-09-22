@@ -9,17 +9,15 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 # Granting Permissions to Manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Databases in SQL Server
+
 Special permissions are required in SQL Server to create and manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, for example by using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] or [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)]. To grant these permissions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administrators, use [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms).  
 
-<!--
-If you have installed SQL Server with the guidelines in [Installation Considerations for Microsoft SQL Server](Installation-Considerations-for-Microsoft-SQL-Server.md), then SQL Server Management Studio is already installed on your computer. Otherwise, update your SQL Server installation to include the **Management Tools - Complete option for SQL Server**.  
--->
+## Permissions for using and creating databases
   
-## Permissions for Using and Creating Databases  
- The administrator who installs [!INCLUDE[prodshort](../developer/includes/prodshort.md)] automatically has access to the database. To give another user permission to create new databases, grant that user the **sysadmin** Server Role for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] SQL Server instance in SQL Server Management Studio.  
+The administrator who installs [!INCLUDE[prodshort](../developer/includes/prodshort.md)] automatically has access to the database. To give another user permission to create new databases, grant that user the **sysadmin** Server Role for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] SQL Server instance in SQL Server Management Studio.  
   
 > [!NOTE]  
->  The administrator must also have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] developer’s license to use the development environment, and be assigned the SUPER permission set.  
+> The administrator must also have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] developer’s license to use the development environment, and be assigned the SUPER permission set.  
   
 In the Object Explorer pane in SQL Server Management Studio, follow these steps after connecting to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] SQL Server instance:  
   
@@ -35,14 +33,15 @@ In the Object Explorer pane in SQL Server Management Studio, follow these steps 
   
 5.  Choose the **OK** button to close the **Login – New** dialog box.  
   
- When administrators create [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, the account running [!INCLUDE[server](../developer/includes/server.md)] is automatically granted the db\_owner database role for these databases.  
+When administrators create [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, the account running [!INCLUDE[server](../developer/includes/server.md)] is automatically granted the db\_owner database role for these databases.  
   
-## Permissions for Managing Companies, Objects, and Licenses  
+## Permissions for managing companies, objects, and licenses
+  
 Administrators who create [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases automatically have permission to manage companies, objects, and licenses in that database.  
   
 To grant permission to manage companies, objects, and licenses to additional administrators, assign those administrators the db\_owner database role for all relevant [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases.  
   
- To grant the db_owner role on a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server Management Studio, follow these steps:  
+To grant the db_owner role on a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server Management Studio, follow these steps:  
   
 1.  If the administrator is not already a SQL Server login, add the administrator as a login by following the first three steps in the procedure above.  
   
@@ -65,4 +64,5 @@ To grant permission to manage companies, objects, and licenses to additional adm
 8.  Choose the **OK** button to exit the **Database User – New** dialog box.  
   
 ## See Also  
-[Installation Considerations for Microsoft SQL Server](Installation-Considerations-for-Microsoft-SQL-Server.md)
+[Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
+[Security and Protection](security-and-protection.md)  
