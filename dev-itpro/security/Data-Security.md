@@ -72,7 +72,7 @@ Object-level security is the set of permissions on [!INCLUDE[prodshort](../devel
   
 The various permission sets that exist in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] determine the actions that you can perform on these objects. For more information about permissions, see [Permissions on Database Objects](../developer/devenv-permissions-on-database-objects.md).
 
-## <a name="RecordLevel"></a> [Record-level security](#tab/record-level)
+## [Record-level security](#tab/record-level)
 
 Record-level security lets you limit the access that a user has to the data in a table.  
   

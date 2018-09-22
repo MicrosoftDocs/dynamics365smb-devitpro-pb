@@ -130,5 +130,5 @@ If security filters are not set, then setting the **SecurityFiltering** property
 >  We recommend that you change commonly used record variables from the default value of **Validated** to either **Filtered** or **Ignored** to improve performance.  
 
 ## See Also  
- [Record-Level Security](data-security.md#RecordLevel)   
+ [Record-Level Security](data-security.md)   
  [SecurityFiltering Property](../developer/properties/devenv-SecurityFiltering-Property.md)  
