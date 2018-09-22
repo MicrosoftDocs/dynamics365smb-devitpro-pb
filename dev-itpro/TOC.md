@@ -85,7 +85,7 @@
 ## [Data Security](security/data-security.md)
 ## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
 ## [Enhancing Server Security](security/enhancing-server-instance-security.md)
-## [Using Security Certificates](../deployment/implement-security-certificates-production-environment.md)
+## [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
 ## [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
 <!-- Development-->
 # [Development in AL](developer/devenv-dev-overview.md)

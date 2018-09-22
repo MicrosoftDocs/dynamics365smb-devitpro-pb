@@ -76,22 +76,48 @@ The various permission sets that exist in [!INCLUDE[prodshort](../developer/incl
 
 Record-level security lets you limit the access that a user has to the data in a table.  
   
-You implement record-level security in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by creating security filters on table data. A security filter describes a set of records in a table that a user has permission to access. You can specify, for example, that a user can only read the records that contain information about a particular customer. This means that the user cannot access the records that contain information about other customers.  
-  
-### Setting security filtering modes
-  
-When you create security filters, you limit a user's access to data in a table. Therefore, code that requires access to all data in a table fails and the user receives an error message.  
-  
-You can resolve potential conflicts with security filters and specify the desired behavior by setting the security filtering mode on Record variables to determine how the security filters are applied. For more information, see [Security Filter Modes](Security-Filter-Modes.md).  
+You implement record-level security in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by creating security filters on table data. A security filter describes a set of records in a table that a user has permission to access. You can specify, for example, that a user can only read the records that contain information about a particular customer. This means that the user cannot access the records that contain information about other customers. For more information, see [Security Filter Modes](Security-Filters.md). 
   
 ### Performance
   
 Record-level security filters are handled by SQL Server just like other filters that are applied by the user. They do not adversely affect performance unless the security filtering mode is **Validated**. When the security filtering mode for a record is **Validated**, then [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must validate whether each record is in the filter expression.  
   
+
+## [Database logins)(#tab/databaselogins)
+
+Users are given a database login when they have their own user ID and password in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The user must enter the user ID and password to access the database.  
   
+> [!NOTE]  
+>  Database logins are only valid for connecting to the database from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+  
+## How Database Logins Work  
+ Users must also have a login on SQL Server. SQL Server has its own authentication of the user’s ID and password. SQL Server does this by checking whether a SQL Server login with this user’s ID and password has been created.  
+  
+ This login must first be created by a SQL Server administrator, with a SQL Server tool. If a SQL Server login has not been set up, authentication fails and the user receives an error. For more information, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
+  
+ The user is granted access to the server after his login has been authenticated. Database security then validates the user’s permissions by checking the database user accounts on the server. The permissions that the user has been granted to the various objects within the database, such as tables, are determined by the information contained in the user’s database user account. This account also contains information about any additional permissions that the user may have been granted to alter the database itself.
+
+# Permissions on Database Objects
+This section provides an overview of permissions and permission sets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  
+  
+## Permissions  
+ If you have been granted permission to read a page, then you can open the page and view the data that it displays. If, however, you do not have write permission, you are not allowed to enter data into this page.  
+  
+ Sometimes, when you open a page it displays information from several tables. To access this page, you must have permission to view all the data displayed by the page. You might not have permission to read directly from all the tables that the page uses. In this case, you must have indirect permission to read from the tables in question. Having indirect permission to a table means that you cannot open the table and read from it but can only view the data it contains indirectly through another object, such as a page or report, that you have direct permission to access.  
+  
+ [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has a number of standard predefined security permission sets. You can use these permission sets as defined or you can change a permission sets to suit your particular needs. You can also create your own permission sets and assign them the permissions that you want.  
+  
+### Permissions on Objects  
+  
+|Permission|Description|  
+|----------------|-----------------|  
+|Read|You can read this object.|  
+|Insert|You can insert data into this object.|  
+|Modify|You can modify data in this object.|  
+|Delete|You can delete data from this object.|  
+|Execute|You can run this object.|
+    
 ## See Also  
 
  [Users and Credential Types](../administration/users-credential-types.md)   
- [Database Logins](Database-Logins.md)    
- [Permissions on Database Objects](Permissions-on-Database-Objects.md)   
  [Security Considerations](Security-Considerations.md)

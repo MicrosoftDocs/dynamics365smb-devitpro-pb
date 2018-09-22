@@ -21,5 +21,5 @@ See the following articles for more information:
 
 [Data Security](Data-Security.md)  
 
-[Enhancing Microsoft Dynamics NAV Server Security](Enhancing-Microsoft-Dynamics-NAV-Server-Security.md)  
+[Enhancing Business Server Security](enhancing-server-instance-security.md)  
 [Granting Permissions to Manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Databases in SQL Server](Setting-Database-Owner-and-Security-Administration-Permissions.md)  
