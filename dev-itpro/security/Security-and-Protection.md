@@ -17,13 +17,9 @@ An enterprise business solution must have a built-in security system that helps 
 
  For more information, see the following topics:
 
--   [Managing Users](Managing-Users.md)  
+-   [Managing Users and Permissions]( https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)  
 
--   [About Permissions](About-Permissions.md).  
-
--   [Managing Permissions and Permission Sets](Managing-Permissions-and-Permission-Sets.md)  
-
--   [Profiles and Role Centers](Profiles-and-Role-Centers.md)  
+-   [Understanding Users, Profiles, and Role Centers](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-users-profiles-roles)  
 
 ## See Also  
 [Security Overview](Security-Overview.md)  

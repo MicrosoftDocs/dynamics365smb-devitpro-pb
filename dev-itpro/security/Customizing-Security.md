@@ -40,4 +40,4 @@ manager: edupont
   
 ## See Also  
  [How to: Set Up User Time Constraints](How-to--Set-Up-User-Time-Constraints.md)   
- [Managing Users](Managing-Users.md)
+ [Managing Users and Permissions]( https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)
