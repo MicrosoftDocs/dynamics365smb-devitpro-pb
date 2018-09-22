@@ -8,7 +8,7 @@
 ### [System requirements](deployment/system-requirement-business-central.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
-### [Deployment Topologies](deployment/deployment-scenarios.md])
+### [Deployment Topologies](deployment/deployment-scenarios.md)
 #### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
 #### [Deploying Single-Computer](deployment/deploy-single-computer-environment.md)
 #### [Deploying on Two-Computers](deployment/deploy-two-computer-environment.md)
@@ -85,6 +85,7 @@
 ## [Data Security](security/data-security.md)
 ## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
 ## [Enhancing Server Security](security/enhancing-server-instance-security.md)
+## [Using Security Certificates](../deployment/implement-security-certificates-production-environment.md)
 ## [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
 <!-- Development-->
 # [Development in AL](developer/devenv-dev-overview.md)
