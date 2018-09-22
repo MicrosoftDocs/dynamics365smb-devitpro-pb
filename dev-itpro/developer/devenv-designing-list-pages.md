@@ -18,7 +18,7 @@ ms.author: jswymer
 
 The *List* page type displays records from an underlying table, either as rows and columns or as individual tiles. 
 
-## About(#tab/about)
+## [About](#tab/about)
 
 You design list pages when you want to provide users with a collection of data, enabling them to get an overview of and find entities to work with, such as customers, vendors, or sales orders. Typically, a list page will link to an associated card page that lets users view or modify specific entities in the list.
 
@@ -39,7 +39,7 @@ In the client, users can personalize list pages by rearranging or hiding records
 
 As a developer or administrator, you can use Designer to customize list page the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the same profile. For more information, see [Using Designer](devenv-inclient-designer.md). 
 
-## Structure(#tab/about)
+## [Structure](#tab/about)
 
 ### General definition
 A list page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `List`, and [SourceTable property](properties/devenv-sourcetable-property.md) set to the table object that contains the records that you want to display.
@@ -78,13 +78,13 @@ The following table describes the elements of a typical list page.
 For more information about navigation, see [Adding to Navigation](devenv-adding-menus-to-navigation-pane.md). -->
 
 
-## Behavioral points of interest(#tab/behavior)
+## [Behavioral points of interest](#tab/behavior)
 - List pages that are accessed from the Role Center page are open embedded within the Role Center framework. The pages are always opened in the read-only mode, regardless of the [Editable](properties/devenv-editable-property.md) property.
 - There are a few system actions that are automatically added to the actions bar, such as **See Attached** and **Open in Excel**.
 - The dynamic caption is automatically displayed  
 - Media and image fields only display in tile view.  
 
-## Development tips for page design(#tab/tips)
+## [Development tips for page design](#tab/tips)
 
 From the user’s perspective, the following are qualities of a well-designed list page does the following:
 
@@ -95,7 +95,7 @@ From the user’s perspective, the following are qualities of a well-designed li
 -  Includes one or two FactBoxes to give necessary statistics and quick access to related documents.
 - The most typical actions for users of the page are promoted.
 
-## Design for all display targets(#tab/targets)
+## [Design for all display targets](#tab/targets)
 
 -   Mobile devices will display the same content as the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], but it is presented in different way to suit how users hold and interact with their mobile device.
 -   You can preview how your Role Center will look on mobile devices directly in Designer.
