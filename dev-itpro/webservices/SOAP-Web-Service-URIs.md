@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # SOAP Web Service URIs
 
@@ -43,5 +43,3 @@ You can also use a URI for a codeunit web service, as shown in the following exa
 http://localhost:7047/BC130/WS/CRONUS%20International%20Ltd/Codeunit/Letters  
 ```  
   
-## See Also  
- [Web Service Walkthroughs](Web-Service-Walkthroughs.md)

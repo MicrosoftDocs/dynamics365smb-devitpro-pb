@@ -11,12 +11,12 @@ ms.assetid: 39a81332-8db1-4e5d-acda-915bf9591880
 caps.latest.revision: 5
 ---
 # Merging an Application Database with a Tenant Database
-In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can separate the application data into a dedicated application database. However, if you want revert the separation of application data and business data, you can merge the two databases. [!INCLUDE[navnow](includes/navnow_md.md)] includes [!INCLUDE[wps_2](includes/wps_2_md.md)] cmdlets that can help you merge the databases, and you can use the cmdlets in a script that runs in [!INCLUDE[wps_2](includes/wps_2_md.md)]. This topic provides sample scripts that you can use.  
+In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can separate the application data into a dedicated application database. However, if you want revert the separation of application data and business data, you can merge the two databases. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that can help you merge the databases, and you can use the cmdlets in a script that runs in [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)]. This topic provides sample scripts that you can use.  
   
  When you merge the two databases, you migrate to single-tenancy. In a multitenant deployment, you can merge a single tenant with the application tables and leave the remaining tenants in the existing deployment. In that case, you add the application tables to the relevant tenant database and leave the original application database unchanged. If you have separated the application data into a dedicated database but you have not used it in a multitenant deployment, you can also use the cmdlet and a sample script to merge the two databases.  
   
 ## Migrating to Single-Tenancy  
- Before you can start the merge of the two databases, you must collect the relevant information. If you write a script, you must be able to provide values for the parameters that the [!INCLUDE[wps_2](includes/wps_2_md.md)] cmdlets require. The migration includes the following main steps:  
+ Before you can start the merge of the two databases, you must collect the relevant information. If you write a script, you must be able to provide values for the parameters that the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets require. The migration includes the following main steps:  
   
 1.  Gather the prerequisite information.  
   
@@ -35,7 +35,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can separate the appli
 ### Step 1: Gather the Prerequisite Information  
  The sample scripts require the following information:  
   
--   Identify the name of the [!INCLUDE[nav_server](includes/nav_server_md.md)] server instance that the tenant database is connected to. This value is used as the input for the *serverInstance* variable in the sample scripts.  
+-   Identify the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that the tenant database is connected to. This value is used as the input for the *serverInstance* variable in the sample scripts.  
   
 -   Identify the name of the application database that the tenant database is connected to. This value is used as the input for the *appDatabaseName* variable in the sample scripts.  
   
@@ -47,10 +47,10 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can separate the appli
   
 -   Make sure that you have the **db\_owner** role for both the application database and the tenant database.  
   
--   Make sure that you are a member of the **Administrators** security group on the server that runs the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance and where the [!INCLUDE[wps_2](includes/wps_2_md.md)] scripts run.  
+-   Make sure that you are a member of the **Administrators** security group on the server that runs the [!INCLUDE[server](../developer/includes/server.md)] instance and where the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] scripts run.  
   
 ### Step 2: Merge the Two Databases  
- To merge the application database and the tenant database, you must run the [!INCLUDE[nav_shell](includes/nav_shell_md.md)] as an administrator. Depending on your scenario, you can copy one of the sample scripts and update the variables based on the prerequisite information that you gathered in the previous section. This section includes two sample scripts that you can base your own script on.  
+ To merge the application database and the tenant database, you must run the [!INCLUDE[devshell](../developer/includes/devshell.md)] as an administrator. Depending on your scenario, you can copy one of the sample scripts and update the variables based on the prerequisite information that you gathered in the previous section. This section includes two sample scripts that you can base your own script on.  
   
  The first script merges an application database and a tenant database that is currently a tenant in a multitenant deployment.  
   
@@ -91,7 +91,7 @@ Write-Host "Operation complete." -foregroundcolor cyan
   
 ```  
   
- The second script merges an application database and a tenant database that has not been mounted on a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance as a tenant.  
+ The second script merges an application database and a tenant database that has not been mounted on a [!INCLUDE[server](../developer/includes/server.md)] instance as a tenant.  
   
 ```  
 # PURPOSE: This sample script merges an application database and a tenant database that are not part of a multitenant deployment.  
@@ -129,14 +129,14 @@ Write-Host "Operation complete." -foregroundcolor cyan
  In both scenarios, you can create scripts that are based on these samples, provide value for the variables, run the script, and the review the output to make sure that you achieved the expected result.  
   
 ### Step 3: Change the Client Connection Endpoints  
- The first sample script creates a new [!INCLUDE[nav_server](includes/nav_server_md.md)] instance with a name that is based on the specified tenant ID. The script only enables the management services endpoint in the [!INCLUDE[nav_server](includes/nav_server_md.md)] configuration settings. You must also configure the server instance to enable client services, SOAP web services, and OData web services. You must send the configuration changes to the users who access the reconfigured tenant. Otherwise, they are not able to connect to the database. For more information, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
+ The first sample script creates a new [!INCLUDE[server](../developer/includes/server.md)] instance with a name that is based on the specified tenant ID. The script only enables the management services endpoint in the [!INCLUDE[server](../developer/includes/server.md)] configuration settings. You must also configure the server instance to enable client services, SOAP web services, and OData web services. You must send the configuration changes to the users who access the reconfigured tenant. Otherwise, they are not able to connect to the database.  
   
  The second sample script illustrates a simpler scenario where you move the application tables to the only database that accessed the application database. As a result, all client endpoints continue as they did before, and you do not have to update any clients.  
   
 ### Step 4: Post-Migration Clean-Up  
- In the first scenario where you move a tenant from multitenancy to single-tenancy, you must update the [!INCLUDE[nav_server](includes/nav_server_md.md)] account and database permissions. Also, any tenant-specific files that have been saved to the original server location must be moved to the relevant location on the new server.  
+ In the first scenario where you move a tenant from multitenancy to single-tenancy, you must update the [!INCLUDE[server](../developer/includes/server.md)] account and database permissions. Also, any tenant-specific files that have been saved to the original server location must be moved to the relevant location on the new server.  
   
 ## See Also  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
- [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)
+[Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview.md)

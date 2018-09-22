@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: 386dbfff-1518-4731-a2b1-424b556ed42a
 caps.latest.revision: 14
 manager: edupont
@@ -16,7 +16,7 @@ Before you can run an object, you must compile the object. To compile an object,
 
 -   In Object Designer, choose **Tools**, and then choose **Compile**. Any syntax errors are displayed in a dialog box. Any errors or warnings about obsolete constructs in a three-tier environment are displayed in the **Error List** window.  
 
--   Run finsql.exe with the CompileObjects command. Any errors or warnings are added to the log file. For more information, see [CompileObjects](dynamics-nav/compileobjects).  
+-   Run finsql.exe with the CompileObjects command. Any errors or warnings are added to the log file. For more information, see [CompileObjects](/dynamics-nav/compileobjects).  
 
 > [!NOTE]  
 >  To compile an object, you must have a developer license.  

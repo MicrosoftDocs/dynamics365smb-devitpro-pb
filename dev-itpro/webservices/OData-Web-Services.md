@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # OData Web Services
 The Open Data Protocol \(OData\) is a web protocol that is designed for querying tabular data and provides you with an alternative to SOAP-based web services. OData builds on web technologies such as HTTP, the Atom Publishing Protocol \(AtomPub\), and JavaScript Object Notation \(JSON\) to provide access to information from different applications, services, and stores. OData uses URIs for resource identification and commits to an HTTP-based, uniform interface for interacting with resources. This commitment to core Web principles allows for OData to enable a new level of data integration and interoperability across a broad range of clients, servers, services, and tools.  
@@ -29,7 +29,7 @@ The Open Data Protocol \(OData\) is a web protocol that is designed for querying
 |Use OData to obtain a service metadata \(EDMX\) document.|[Using OData to Return or Obtain a Service Metadata \(EDMX\) Document](return-obtain-service-metadata-edmx-document.md)|  
 |Use OData to obtain a JavaScript Object Notation \(JSON\) document.|[Using OData to Return-Obtain a JSON Document](return-obtain-json-document.md)|  
 |Use filter expressions in OData URIs.|[Using Filter Expressions in OData URIs](Use-Filter-Expressions-in-OData-URIs.md)|  
-|Use FlowFilters in OData URIs.|[Using FlowFilters in OData URIs](use-flowfilters-in-odata-uri.md)|  
+|Use FlowFilters in OData URIs.|[Using FlowFilters in OData URIs](use-flowfilters-in-odata-uris.md)|  
 |Use server-driven paging in OData URIs.|[Server-Driven Paging in OData Web Services](Server-Driven-Paging-in-OData-Web-Services.md)|  
 |Navigate in an OData web service application by using resource properties.|[Using Containments and Associations](use-containments-associations.md)|  
 |Write to the database through an OData web service that exposes a writable page.|[Using OData Web Services to Modify Data](use-odata-to-modify-data.md)|  
@@ -43,6 +43,4 @@ An error occurred while processing this request.
 ```  
   
 ## See Also  
- [SOAP Web Services](SOAP-Web-Services.md)   
- [Web Service Alternatives: SOAP and OData](Web-Service-Alternatives--SOAP-and-OData.md)   
- [Web Service Walkthroughs](Web-Service-Walkthroughs.md)  
+ [SOAP Web Services](SOAP-Web-Services.md)

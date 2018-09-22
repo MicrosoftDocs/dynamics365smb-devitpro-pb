@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
@@ -51,15 +51,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
     
     For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
 
-4. Obtain the .app packages for V2 extension versions currently published on the old deployment.
-
-    To get a list of the extensions that are published, you can run the [Get-NAVAppInfo](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]:
-
-    ```
-    Get-NAVAppInfo -ServerInstance <ServerInstanceName> 
-    ```
-
-5. Get the upgrade toolkit for the application version.
+4. Get the upgrade toolkit for the application version.
 
     The upgrade toolkit includes upgrade codeunits for handling the data upgrade.
     For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
@@ -77,14 +69,14 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
     For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade11001300.DK.fob** for Denmark or **Upgrade11001300.DE.fob** for Germany. 
 
-6.  Permission sets (except SUPER) and permissions have been exported from the old tenant database.
+5.  Permission sets (except SUPER) and permissions have been exported from the old tenant database.
 
     To exclude the SUPER permission set when running XMLPort 9171, add the filter `Role ID is <>SUPER`. 
 
     For more information, see [Exporting and Importing Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ExportPerms).
 
 
-7.   If the old application uses data encryption, you have the encryption key file that it used for the data encryption.  
+6.   If the old application uses data encryption, you have the encryption key file that it used for the data encryption.  
 
        For more information, see [Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md). 
 
@@ -134,14 +126,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
     For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](../developer/devenv-running-cside-and-al-side-by-side.md).
 
  
-4. <a name="PublishOld"></a>Publish the V2 extension versions that were published on the old environment
-
-    For each extension version, run the the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
-
-    ```
-    Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
-    ```
-5. <a name="PublishNew"></a>Publish new versions of the Microsoft extensions
+4. <a name="PublishNew"></a>Publish new versions of the Microsoft extensions.
 
     The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the old versions to the new versions.
 
@@ -162,7 +147,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
     ```
 
-6. Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license
+5. Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license
 
     For more information, see [Uploading a License](../cside/cside-upload-license-file.md).      
 
@@ -285,7 +270,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
 4. Configure pages and reports included in the MenuSuite to be searchable in the Web client.
 
-    The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-reports-for-search.md).
+    The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md.
 5. Upload the customer license.
 
     For more information, see [Uploading the License File](../cside/cside-upload-license-file.md)

@@ -6,7 +6,7 @@ ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Exporting and Importing Objects
 You can export and import application objects from and to the database from a file. The file must be one of the following formats:  
@@ -15,7 +15,7 @@ You can export and import application objects from and to the database from a fi
 
 -   Text format \(.txt\)  
 
- You can export and import objects either by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] or by running finsql.exe with the [ImportObjects](\dynamics-nav\importobjects) command.  
+ You can export and import objects either by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] or by running finsql.exe with the [ImportObjects](/dynamics-nav/importobjects) command.  
 
 > [!NOTE]  
 >  To export or import objects from .txt format, you must have a developer license. To import objects from .fob format, you can have either an end-user license or a developer license.  

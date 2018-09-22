@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # [!INCLUDE[webserver](../developer/includes/webserver.md)] Overview
@@ -65,7 +65,7 @@ For information about how to create a [!INCLUDE[webserver](../developer/includes
 ## Security  
 
 ### User Authentication  
- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports four methods for authenticating users who try to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]: Windows, UserName, NavUserPassword, and AccessControlService. Windows authentication is configured by default. For more information, see [Users and Credential Types](Users-and-Credential-Types.md) and [Authentication and User Credential Type](../administration/users-credential-types.md).  
+ [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports four methods for authenticating users who try to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]: Windows, UserName, NavUserPassword, and AccessControlService. Windows authentication is configured by default. For more information, see [Users and Credential Types](../administration/users-credential-types.md) and [Authentication and User Credential Type](../administration/users-credential-types.md).  
 
 ### Service Account for [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Database Access  
  When you install [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components, you must identify an Active Directory account to provide credentials for the servers. By default, Setup runs [!INCLUDE[server](../developer/includes/server.md)] and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database under the Network Service account, a predefined local account that is used by the service control manager.  
@@ -81,6 +81,5 @@ You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] da
  For more information, see [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md).  
 
 ## See Also  
- [Dynamics NAV Web Client](Microsoft-Dynamics-NAV-Web-Client.md)
  [Configure Internet Information Services](configure-iis.md)  
- [Configuring-the-Dynamics-NAV-Web-Server-and-Client.md](Configuring-the-Microsoft-Dynamics-NAV-Web-Server-and-Client.md)  
+ [Configuring-the Business Central Web Server](../administration/configure-web-server.md)  

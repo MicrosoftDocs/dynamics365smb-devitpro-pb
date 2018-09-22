@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: efcf5eaf-b129-469d-b4f7-b8681574483e
 caps.latest.revision: 90
 author: SusanneWindfeldPedersen
@@ -165,4 +165,4 @@ You have now published a [!INCLUDE[prodshort](../developer/includes/prodshort.md
  [Web Services](Web-Services.md)   
  [SOAP Web Services](SOAP-Web-Services.md)   
  [Publish a Web Service](Publish-Web-Service.md)  
- [Securing Web Service Connections Using Certificates](deployment/implement-security-certificates-production-environment)   
+ [Securing Web Service Connections Using Certificates](../deployment/implement-security-certificates-production-environment.md)   

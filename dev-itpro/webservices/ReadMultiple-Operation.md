@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # ReadMultiple Operation
 Reads a filtered set of records. This operation returns an array of entities. The ReadMultiple operation allows the consumer of a web service to specify the number of records to be returned at one time. This can reduce load on the server.  
@@ -50,7 +50,7 @@ Reads a filtered set of records. This operation returns an array of entities. Th
 -   Criteria is of type string and can contain any valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] style filter that is specified in a standard [!INCLUDE[prodshort](../developer/includes/prodshort.md)] filter format.  
   
 ## Usage Examples  
- The following example returns the first 100 customer names that start with an S. For a detailed code example, see [Walkthrough: Registering and Using a Page Web Service \(SOAP\)](Walkthrough--Registering-and-Using-a-Page-Web-Service--SOAP-.md).  
+ The following example returns the first 100 customer names that start with an S.
   
 ```c#  
 List<Customer_Filter> filterArray = new List<Customer_Filter>();  

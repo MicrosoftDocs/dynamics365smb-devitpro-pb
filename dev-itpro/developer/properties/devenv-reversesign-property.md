@@ -32,6 +32,3 @@ Changes negative values into positive values and positive values into negative v
 ## See Also  
 [AL Data Types](../datatypes/devenv-al-data-types.md)
 [Properties](devenv-properties.md)  
-<!--  
-[How to: Create Queries](../devenv-How-to-Create-Queries.md) 
--->

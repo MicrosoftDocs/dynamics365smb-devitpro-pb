@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: f80ed2c6-b416-4e51-b770-0141505317bc
 caps.latest.revision: 17
 ---
@@ -15,12 +15,12 @@ You can use the following table as a checklist to help set up a more secure [!IN
   
 |To|See|  
 |--------|---------|  
-|Install [!INCLUDE[prodshort](../developer/includes/prodshort.md)] software.|You must make decisions about where you install [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components.<br /><br /> [Working with Microsoft Dynamics NAV Setup](Working-with-Microsoft-Dynamics-NAV-Setup.md)|  
+|Install [!INCLUDE[prodshort](../developer/includes/prodshort.md)] software.|You must make decisions about where you install [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components.<br /><br /> [Installing Business Central Using Setup](../deployment/install-using-setup.md)|  
 |Activate your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.|[How to: Upload the License File](How-to--Upload-the-License-File.md)|  
 |Create users.|[How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md)|  
 |Assign users to permission sets.|[How to: Define Permissions for Users](How-to--Define-Permissions-for-Users.md)|  
 |Configure Role Centers.|[Profiles and Role Centers](Profiles-and-Role-Centers.md)|  
-|Assign users to profiles.|[Managing Users](Managing-Users.md)|  
+|Assign users to profiles.|[Managing Users and Permissions]( https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)|  
   
 ## See Also  
  [Security and Protection](Security-and-Protection.md)   

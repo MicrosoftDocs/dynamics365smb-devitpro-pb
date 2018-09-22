@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: c85fa3e9-db59-4e52-8b00-aa4b4378e147
 caps.latest.revision: 9
 manager: edupont
@@ -31,7 +31,6 @@ netsh firewall set portopening protocol=TCP port=7046 scope=subnet addresses=Loc
 ```  
   
 ## See Also  
- [Walkthrough: Installing the Three Tiers on Three Computers](Walkthrough--Installing-the-Three-Tiers-on-Three-Computers.md)   
  [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md)   
  [Security Overview](Security-Overview.md)   
  [How to Use the Netsh.exe Tool and Command-Line Switches](http://go.microsoft.com/fwlink/?LinkId=166310)

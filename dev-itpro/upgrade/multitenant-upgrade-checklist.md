@@ -21,7 +21,6 @@ This article provides an overview of the full upgrade process for Business Centr
 |In the old deployment, convert custom V1 extensions to V2 extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
 |Export permissions and permission sets from the old deployment. **Important:** Make sure computer uses the same codepage as the data.|[See...](How-to--Import-Export-Permission-Sets-Permissions.md)||
 |Export encryption keys from the old deployment.|[See...](how-to-export-and-import-encryption-keys.md)||
-|Get the app packages for V2 extension versions currently published on the old deployment.|||
 |Prepare for transitioning from codeunit 1.|[See...](transition-from-codeunit1.md)|
 |Install Business Central components.|[See...](../deployment/install-using-setup.md)||
 
@@ -32,9 +31,6 @@ This article provides an overview of the full upgrade process for Business Centr
 |Upgrade the application code.|[See...](upgrading-the-application-code.md)|
 |Mount the upgraded application on the [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication)||
 |Import upgrade toolkit (.fob)|[See...](../cside/cside-import-objects.md)||
-|Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-data-multitenant.md#AddExtensions)|
-|Publish the same extension versions that were published on the old deployment|[See...](upgrading-the-data-multitenant.md#PublishOld)||
-|Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-data-multitenant.md#AddExtensions)|
 |Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-data-multitenant.md#AddExtensions)|
 |Publish the new Microsoft extension versions from the installation media.|[See...](upgrading-the-data-multitenant.md#PublishNew)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
@@ -54,7 +50,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |Mount the tenant on the [!INCLUDE[server](../developer/includes/server.md)] instance. **Important:** Use the `-AllowAppDatabaseWrite` parameter.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant)|
 |Synchronize the tenant.|[See...](../administration/synchronize-tenant-database-and-application-database.md)||
 |Synchronize all extensions.|[See..](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp)||
-|Run the data upgrade. **Important:** Use the `-FunctionExecutionMode Serial` parameter.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade)||
+|Run the data upgrade. **Important:** If there are V2 extensions, you must use  the `-FunctionExecutionMode Serial` parameter.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade)||
 |Install the new V2 extensions that were not installed in the old tenant.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
 
 

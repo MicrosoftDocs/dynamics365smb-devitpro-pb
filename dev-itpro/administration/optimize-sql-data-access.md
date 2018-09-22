@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: fd5a62ed-50c7-49ad-9610-f299e1961725
 caps.latest.revision: 19
 manager: edupont
@@ -56,7 +56,7 @@ For example, to set the interval to 50 seconds, set the `value` to `"00:00:50"`.
 ## [!INCLUDE[server](../developer/includes/server.md)] connections to SQL Server
 Starting from [!INCLUDE[nav7long_md](../developer/includes/nav7long_md.md)], the [!INCLUDE[server](../developer/includes/server.md)] uses ADO.NET to connect to the SQL Server database. Installations of [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)] and earlier uses ODBC to connect to the SQL Server database.
 
-The ADO.NET interface is a managed data access layer that supports SQL Server connection pooling, which can dramatically decrease memory consumption by [!INCLUDE[server](../developer/includes/server.md)]. SQL Server connection pooling also simplifies deployment of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] three-tier architecture for deployments where the three tiers are installed on separate computers. Specifically, administrators are no longer required to manually create SPNs or to set up delegation when the client, [!INCLUDE[server](../developer/includes/server.md)], and SQL Server are on separate computers. For more information, see [Walkthrough: Installing the Three Tiers on Three Computers](Walkthrough--Installing-the-Three-Tiers-on-Three-Computers.md).  
+The ADO.NET interface is a managed data access layer that supports SQL Server connection pooling, which can dramatically decrease memory consumption by [!INCLUDE[server](../developer/includes/server.md)]. SQL Server connection pooling also simplifies deployment of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] three-tier architecture for deployments where the three tiers are installed on separate computers. Specifically, administrators are no longer required to manually create SPNs or to set up delegation when the client, [!INCLUDE[server](../developer/includes/server.md)], and SQL Server are on separate computers.  
 
 There is no longer a one-to-one correlation between the number of client connections and the number of SQL Server connections. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], each SQL Server connection could consume up to 40 MB of memory. Additionally, memory allocation is now in managed memory, which is generally more efficient than unmanaged memory.  
 
@@ -69,7 +69,7 @@ AL functions COUNT and AVERAGE formulas can use SIFT indexes. For more informati
 
 In most cases, filtering on FlowFields issues a single SQL statement. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], filtering on FlowFields issued an SQL statement for each filtered FlowField and for each record in the table in order to calculate the filtered FlowFields. The exceptions in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in which filtering on FlowFields does not issue a single SQL statement are as follows:  
 
--   You use the ValueIsFilter option on a field and the field has a value. For more information about the ValueIsFilter option, see [How to: Create, View, and Edit a Calculation Formula](How-to--Create--View--and-Edit-a-Calculation-Formula.md).  
+-   You use the ValueIsFilter option on a field and the field has a value.  
 
 -   A second predicate is specified on a source field and the field that is used for the second predicate has a value. For example, when you specify the [CalcFormula Property](../developer/properties/devenv-CalcFormula-Property.md) for a FlowField, you can specify table filters in the **Calculation Formula** window. If you specify two or more filters on the same source field, then filtering does not issue a single SQL statement.  
 
@@ -121,7 +121,7 @@ This example uses Transact-SQL to change table **G_L Entry** to be partitioned o
 
 3. In the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)], add the **Posting Date** field to the primary key.
 
-    For more information, see [How to: Define Primary and Secondary Keys](How-to--Define-Primary-and-Secondary-Keys.md).
+    For more information, see [Table Keys](../developer/devenv-table-keys.md).
 
 4. In the Transact-SQL Editor, partition table **G_L Entry** by using the previously defined partition scheme:
 
@@ -143,6 +143,4 @@ This example uses Transact-SQL to change table **G_L Entry** to be partitioned o
 > SQL Server Management Studio includes the **Create Partition Wizard** to help you create partitioning functions, partitioning schemes, as well as changing a table to be partitioned. For more information, see [Create Partitioned Tables and Indexes](https://docs.microsoft.com/en-us/sql/relational-databases/partitions/create-partitioned-tables-and-indexes).
 
 ## See Also  
- [Changes in AL Behavior and Support from Earlier Versions of Microsoft Dynamics NAV](Changes-in-C-AL-Behavior-and-Support-from-Earlier-Versions-of-Microsoft-Dynamics-NAV.md)   
- [SumIndexField Technology \(SIFT\)](SumIndexField-Technology--SIFT.md)   
  [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)

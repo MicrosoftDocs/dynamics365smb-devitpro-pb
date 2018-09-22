@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Using OData to Return-Obtain an AtomPub Document
 When you register an OData web service, you expose an OData service that can be accessed from a uniform resource identifier \(URI\) by using a web browser or any other HTTP client. OData clients can use Atom Publishing Protocol \(AtomPub\) documents to interact with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data. AtomPub is a simple HTTP-based protocol for creating and updating web resources. It is related to the Atom Syndication Format, which is XML for web feeds. In these procedures, you obtain different kinds of AtomPub documents or feeds from a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData web service. AtomPub documents and feeds are XML.  
@@ -38,7 +38,7 @@ When you register an OData web service, you expose an OData service that can be 
   
      The browser should now show the web service that you have published in the format of an AtomPub document:  
   
-     ![Basic AtomPub document for a page](media/BasAtomPub.JPG "BasAtomPub")  
+     ![Basic AtomPub document for a page](../developer/media/BasAtomPub.JPG "BasAtomPub")  
   
 3.  If you have multiple companies, then you can modify your URI to return a feed that enumerates all available companies:  
   

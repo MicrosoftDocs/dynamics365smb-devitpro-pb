@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: b741a2d9-1127-48b0-8fe7-50aa09655b34
 caps.latest.revision: 6
 manager: edupont
@@ -108,5 +108,3 @@ When you start a client, like the [!INCLUDE[nav_web](../developer/includes/nav_w
 
 3.  The session is closed, and then removed from the Active Session table.  
 
-## See Also  
- [Configuring Microsoft Dynamics NAV](Configuring-Microsoft-Dynamics-NAV.md)

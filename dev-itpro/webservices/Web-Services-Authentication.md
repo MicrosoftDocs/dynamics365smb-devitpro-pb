@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Web Services Authentication
 When users send a request for a web service, they are authenticated according to the credential type that is configured for [!INCLUDE[server](../developer/includes/server.md)]. To access a web service, users must provide valid credentials for the credential type being used. If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for Windows credential type, then users are automatically authenticated against the Windows account that their computer is running under, and they are not prompted for their credentials. For other credential types, users are prompted to enter a user name and password. 
@@ -58,7 +58,6 @@ Typically, you would create a user account strictly for web services, and then u
   
     |To|See|  
     |--------|---------|  
-    |Learn how to use the web access key in Excel PowerPivot|[Walkthrough: Viewing Page Data in Excel Using PowerPivot \(OData\)](Walkthrough--Viewing-Page-Data-in-Excel-Using-PowerPivot--OData.md)|  
     |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](http://go.microsoft.com/fwlink/?LinkID=259554)|    
   
 ## See Also   

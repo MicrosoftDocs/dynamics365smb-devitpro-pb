@@ -1,1 +1,1 @@
-[configuration file](../configure-web-server.md.md#WebClientSettingsFile)
+[configuration file](../configure-web-server.md#WebClientSettingsFile)

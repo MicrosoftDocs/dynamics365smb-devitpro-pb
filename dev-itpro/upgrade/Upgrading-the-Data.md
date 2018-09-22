@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]: Single-Tenant Deployment
 
@@ -30,7 +30,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
     If you use conflicting codepages, some characters will not display in captions, and you might not be able to access the upgraded database. This is because [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] must remove incorrect metadata characters to complete the data upgrade. In this case, after upgrade, you must open the database in the development environment on a computer with the relevant codepage and compile all objects. This adds the missing characters again.
 
-    Optionally, you can export the captions before the upgrade. For more information, see [How to: Add Translated Strings for Conflicting Text Encoding Formats](How-to--Add-Translated-Strings-for-Conflicting-Text-Encoding-Formats.md).
+    Optionally, you can export the captions before the upgrade. For more information, see [How to: Add Translated Strings for Conflicting Text Encoding Formats](/dynamics-nav/How-to--Add-Translated-Strings-for-Conflicting-Text-Encoding-Formats).
 
 2. Custom V1 extensions used in the old deployment have been converted to V2 extensions.
 
@@ -76,7 +76,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     - AL Development Environment
     - (optionally) [!INCLUDE[admintool](../developer/includes/admintool.md)]
 
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setupn.md).
+    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
  
 
 > [!NOTE]
@@ -90,7 +90,8 @@ For more information, see [Create a Full Database Backup \(SQL Server\)](http://
 
 ## Task 2 Uninstall all extensions in old database
  
-Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that matches to old database, and run these commands: 
+Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that matches to old database, and run these commands:
+ 
 1.  To get a list of the extensions that are installed, run this command:
 
     ```
@@ -118,7 +119,7 @@ Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that ma
 ##  <a name="UploadLicense"></a> Task 3: Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license to the old database  
 By using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database, upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license to the database.
 
-For more information, see [[Uploading a License File for a Specific Database](../cside/upload-license-file.md#UploadtoDatabase).  
+For more information, see [[Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
 ##  <a name="DeleteObjects"></a> Task 5: Delete all objects except tables from the old database   
 In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] version that matches the database, open the old database, open Object Designer, select all objects except tables, and then choose **Delete**.
@@ -299,11 +300,11 @@ The database is now fully upgraded and is ready for use. However, [!INCLUDE[prod
 -   Microsoft.Dynamics.Nav.Client.VideoPlayer  
 -   Microsoft.Dynamics.Nav.Client.WebPageViewer
 
-To use these add-ins, they must be registered in table **2000000069 Client Add-in**. Depending on the version that you upgraded from, all the add-ins might not be registered after the upgrade process. You can register missing control add-ins in the **Control Add-ins** page in the client. The assemblies (.dlls) for these add-ins are in subfolders to the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation, which by default is [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service\Add-ins. For more information, see [How to: Register a Windows Client Control Add-in](How-to--Register-a-Windows-Client-Control-Add-in.md).
+To use these add-ins, they must be registered in table **2000000069 Client Add-in**. Depending on the version that you upgraded from, all the add-ins might not be registered after the upgrade process. You can register missing control add-ins in the **Control Add-ins** page in the client. The assemblies (.dlls) for these add-ins are in subfolders to the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation, which by default is [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service\Add-ins. For more information, see [How to: Register a Windows Client Control Add-in](/dynamics-nav/How-to--Register-a-Windows-Client-Control-Add-in).
 
 ## Task 19: Configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
 
-The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-reports-for-search.md).
+The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
 
 ## Task 20. Transition the custom code from old codeunit 1 to use the new implementation
 
@@ -312,7 +313,7 @@ For more information, see [Transitioning from Codeunit 1](transition-from-codeun
 ## Task 21: Update the Web Server instance configuration file (navsettings.json)
 If you have installed the [!INCLUDE[webserver](../developer/includes/webserver.md)], populate the navsettings.json file for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance with the settings of the old web.config file or navsettings.json.
 
-For more information, see [Configuring Business Central Web Server Instances](../administration/configure-web-server.md.md).
+For more information, see [Configuring Business Central Web Server Instances](../administration/configure-web-server.md).
   
 ##  <a name="DeleteUpgCodeunits"></a> Task 22: Delete the upgrade objects
 

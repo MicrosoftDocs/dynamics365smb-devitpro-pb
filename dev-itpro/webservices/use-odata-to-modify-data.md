@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Using OData Web Services to Modify Data
 You can write to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database using an OData web service that exposes a writable page. For example, you can expose a page as an OData web service and implement it in a portal that is based on Microsoft SharePoint Online. Users of the portal can then modify the data.  
@@ -43,4 +43,3 @@ You can write to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] d
 ## See Also  
  [OData Web Services](OData-Web-Services.md)   
  [Using OData to Return-Obtain a JSON Document](return-obtain-json-document.md)   
- [Walkthrough: Creating and Interacting with a Page Web Service \(OData\)](Walkthrough--Creating-and-Interacting-with-a-Page-Web-Service--OData.md)

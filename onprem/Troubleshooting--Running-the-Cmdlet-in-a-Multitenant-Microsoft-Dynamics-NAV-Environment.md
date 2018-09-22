@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: 230a974b-9d0f-419d-af08-387b06b368ef
 caps.latest.revision: 2
 manager: edupont
@@ -15,5 +15,5 @@ manager: edupont
 Only one tenant can be automatically configured at a time, so the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant name needs to be provided as the NavTenant parameter to the `Set-NavSingleSignOnWithOffice365` cmdlet.  
   
 ## See Also  
- [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md)   
+ [Authenticating Users with Azure Active Directory](../administration/Authenticating-Users-with-Azure-Active-Directory.md)   
  [How to: Set up Microsoft Dynamics NAV for Single Sign-on With Office 365 using Windows PowerShell](How-to--Set-up-Microsoft-Dynamics-NAV-for-Single-Sign-on-With-Office-365-using-Windows-PowerShell.md)

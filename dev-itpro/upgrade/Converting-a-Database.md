@@ -21,7 +21,7 @@ This article describes how to convert a [!INCLUDE[navnow](../developer/includes/
 -   [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]
 -   [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]
 -   [!INCLUDE[nav2017](../developer/includes/nav2017.md)] 
--   Dynamics NAV 2018 
+-   [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md) 
 
 This article can also be used to update you current [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to the latest cumulative update. 
 
@@ -88,8 +88,9 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
     ```  
+4. Unpublish extensions versions that you do not want to use in the upgraded database.
 
-4.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->application database.  
+5.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->application database.  
 
      For more information, see [Open Databases](../cside/cside-open-database.md).  
 
@@ -119,7 +120,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
 10. <a name="dismounttenant"></a>(Multitenant only) Dismount tenants.
 
-    Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
+    Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
 
     ```
     Dismount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID>
@@ -142,8 +143,11 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     DELETE FROM [<My NAV Database Name>].[dbo].[Server Instance]
     DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
     ```
+13. Close all to connections to the database.
 
-## Task 2: Run Technical Upgrade on the Old Database  
+    This includes but is not limited to [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients tools and SQL Server Management Studio.
+ 
+## Task 3: Run Technical Upgrade on the Old Database  
 Next, you will convert the old database so that it can be used with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 > [!TIP]  
@@ -200,20 +204,13 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 9.    Import the codeunit 1 replacement text file you created.
 10.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
 
-    For more information, see [Compiling Objects](../cside/cside-compiling-objects.md).
+        For more information, see [Compiling Objects](../cside/cside-compiling-objects.md).
 
 11. <a name="fixerrors"></a>Fix compilation errors.  
 
     If any errors occur, they are shown in the **Error List** window. For help on resolving the errors, see the following:
 
-
-    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2015 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2015-Database.md). 
-
-    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2016 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2016-Database.md). 
-
-    -   [Resolving Compilation Errors When Converting a Dynamics NAV 2017 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2017-Database.md).
-
-    -    [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](resolve-compile-errors-when-converting-dynamics-nav-2018-Database.md)
+    -    [Resolving Compilation Errors](resolve-compile-errors-when-converting-dynamics-nav-2018-Database.md)
 
 
     You can find all objects which did not compile in the **Object Designer** window, by setting a field filter on the **Compiled** field. 
@@ -227,7 +224,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
     ``` 
-    Ignore errors about V1 extensions. 
+publish system and test
+generate app symbols
+enable server for app symbols
+publish new Microsoft V2s
+   
 13. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
 
     Use the [Install-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
@@ -271,4 +272,4 @@ Starting from SQL Server 2008, SQL Server collations are fully aligned with the 
 ## See Also  
 [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
 [Upgrading the Data](Upgrading-the-Data.md)   
-[Upgrading to Business Central](Upgrading-to-business-central,md)   
+[Upgrading to Business Central](Upgrading-to-business-central.md)   

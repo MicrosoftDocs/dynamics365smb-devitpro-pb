@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 manager: edupont
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Application Code in [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -72,8 +72,8 @@ To complete the tasks in this article, you will use various tools and components
 
 There are three ways to export application objects to text files:
 
--   Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] version that matches the application database version. For more information see [To export objects by using the development environment UI](cside-import-objects.md#ExportObjectsDevEnv).
--   Use the finsql.exe that matches the application database version to run the [ExportObjects](ExportObjects.md) command. For more information, see [To export objects by running finsql.exe with the ExportObjects command  ](cside-import-objects.md#ExportObjectsFinSQL).
+-   Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] version that matches the application database version. For more information see [To export objects by using the development environment UI](../cside/cside-import-objects.md#ExportObjectsDevEnv).
+-   Use the finsql.exe that matches the application database version to run the ExportObjects command. For more information, see [To export objects by running finsql.exe with the ExportObjects command  ](../cside/cside-import-objects.md#ExportObjectsFinSQL).
 -   Use the [!INCLUDE[nav_dev_shell_md](../developer/includes/nav_dev_shell_md.md)] or [!INCLUDE[devshell](../developer/includes/devshell.md)] version that matches the application database version. This is the way that is described in the tasks of this article. Note that the [!INCLUDE[nav_dev_shell_md](../developer/includes/nav_dev_shell_md.md)] is not available for [!INCLUDE[nav7long](../developer/includes/nav7long_md.md)] and [!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]. For these versions, you must use [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] or finsql.exe.
 
 ### Create the application text files
@@ -157,7 +157,7 @@ After you have completed the merge, you import the new merged application object
 
 2.  Make sure the database includes a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.
 
-    For more information, see [Uploading a License File for a Specific Database](../cside/upload-license-file.md)
+    For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md)
 
 3.  Import the new merged application object text files (.TXT) from the **Result** folder into the new database.
 
@@ -188,11 +188,11 @@ After you have completed the merge, you import the new merged application object
 
     You can do this with the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/nav_shell_md.md)]. In addition, you must add the service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance as a member of the **db\_owner** role in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database on SQL Server.  
 
-    For more information about how to do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)], see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](How-to--Connect-a-Microsoft-Dynamics-NAV-Server-Instance-to-a-Database.md) and [Giving the account necessary database privileges in SQL Server](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md#dbo).  
+    For more information about how to do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)], see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](../administration/connect-server-to-database.md) and [Giving the account necessary database privileges in SQL Server](../deployment/provision-server-account.md#dbo).  
 
 6.  Compile all the newly imported objects. Choose to synchronize **later**.
 
-    You can use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or finsql.exe. For more information, see [Compiling Objects](../cside/compiling-objects.md).
+    You can use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or finsql.exe. For more information, see [Compiling Objects](../cside/cside-compiling-objects.md).
 
     If you use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], you will first have to set it to use the [!INCLUDE[server](../developer/includes/server.md)] instance that connects to the database. For more information, see [Change the Server Instance Used in C/SIDE](../cside/cside-change-server-instance.md).  
 

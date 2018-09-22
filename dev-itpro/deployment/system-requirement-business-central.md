@@ -91,7 +91,7 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>.|  
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>Memory: 2 GB.|  
-|[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Framework.<br />     For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](system-requirements-for-business-central.md#CRM).|  
+|[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Framework.<br />     For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](system-requirement-business-central.md#CRM).|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.</li><li>Windows PowerShell 3.0.|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present on the target computer:<ul><li>Microsoft .NET Framework 4.7.</li><li>Windows Identity Framework.</li></ul></li></ul>|  
 
@@ -161,10 +161,10 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |||  
 |-|-|  
 |Microsoft Dynamics CRM versions|<ul><li>Microsoft Dynamics CRM 2015 or Microsoft Dynamics CRM 2016<BR />Note: AD, IFD and Claims authentication types are supported for above editions.</li><li>Microsoft Dynamics CRM Online 2015, Microsoft Dynamics CRM Online 2015 Update 1, or Microsoft Dynamics CRM Online 2016 Update 1 or Microsoft Dynamics 365<BR />Note: Oauth and Office365 authentication types are supported for these editions.</li></ul>For more details on authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/en-us/library/mt608573.aspx).|
-|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Integration Solution (.zip)|For Dynamics CRM 2015, Dynamics CRM Online 2015, and Dynamics CRM Online 2015 Update 1:<ul><li>Use the DynamicsNAVIntegrationSolution.zip file that is found on the Dynamics NAV 2016 installation media (DVD) to install the solution.</li><li>Item Availability is not supported on Dynamics CRM 2015, versions Update 1 and Online.</li></ul>For more information, see [How to: Prepare Dynamics 365 for Sales for Integration](How-to-prepare-Dynamics-CRM-for-Integration.md).      |  
+|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Integration Solution (.zip)|For Dynamics CRM 2015, Dynamics CRM Online 2015, and Dynamics CRM Online 2015 Update 1:<ul><li>Use the DynamicsNAVIntegrationSolution.zip file that is found on the Dynamics NAV 2016 installation media (DVD) to install the solution.</li><li>Item Availability is not supported on Dynamics CRM 2015, versions Update 1 and Online.</li></ul>For more information, see [Preparing Dynamics 365 for Sales for Integration](../administration/prepare-dynamics-365-for-sales-for-integration.md).      |  
 
 ###  <a name="SharePointApp"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint Requirements  
- The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint.  
+The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint.  
 
 |||  
 |-|-|  
@@ -178,6 +178,6 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 --> 
 
 ## See Also
-[Welcome to the Developer and IT-Pro Help for Business Central](./index.md)  
+[Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  
 [Deployment](Deployment.md)  

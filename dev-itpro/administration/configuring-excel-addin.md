@@ -9,7 +9,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Setting up the Excel Add-In for Editing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Data
 You can set up the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment to support an Excel add-in that enables users in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to work with data from list pages in Excel. Users can get fresh data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and update the data in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] based on their work in Excel.
@@ -29,7 +29,7 @@ Your deployment must meet the following prerequisites:
     For more information, see [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md).  
 -   OData enabled and uses Secure Sockets Layer (SSL) for authentication.
 
-    For more information, see [[Configuring Web Services to Use SSL](../webservices/configure-web-services-with-ssl.md).  
+    For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).  
 
 -   [!INCLUDE[webserver](../developer/includes/webserver.md)] installed and configured to use SSL (https).
 

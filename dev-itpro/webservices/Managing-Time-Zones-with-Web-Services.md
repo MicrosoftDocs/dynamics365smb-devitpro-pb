@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Managing Time Zones with Web Services
 [!INCLUDE[server](../developer/includes/server.md)] provides a **Services Default Time Zone** setting for defining the time zone in which web service calls run. This setting affects both SOAP and OData web services, in addition to NAS Services.  
@@ -33,6 +33,5 @@ ms.prod: "dynamics-nav-2018"
 |01/01/2014 17:00|01/01/2014 17:00 UTC+3|01/01/2014 14:00 UTC|  
   
 ## See Also  
- [Communicating with Microsoft Dynamics NAV Clients in Different Time Zones](Communicating-with-Microsoft-Dynamics-NAV-Clients-in-Different-Time-Zones.md)   
  [Server Administration Tool](../administration/administration-tool.md)   
  [Business Central Windows PowerShell Cmdlets]((https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)

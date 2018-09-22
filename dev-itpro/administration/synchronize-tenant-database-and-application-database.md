@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Synchronizing the Tenant Database with the Application Database
 This topic describes how to synchronize the business data \(tenant\) database schema with the application database in either a single tenant (non-multitenant) or multitenant deployment environment. You can synchronize the database from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or by using the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet in the Dynamics NAV Administration Shell.

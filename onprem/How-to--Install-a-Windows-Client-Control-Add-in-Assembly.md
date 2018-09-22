@@ -89,7 +89,7 @@ manager: edupont
   
 6.  Choose the **OK** button to close the **Control Add-in** page.  
   
- For more information about registering a control add-in, see [How to: Register a Windows Client Control Add-in](How-to--Register-a-Windows-Client-Control-Add-in.md).  
+ For more information about registering a control add-in, see [How to: Register a Windows Client Control Add-in](/dynamics-nav/How-to--Register-a-Windows-Client-Control-Add-in.md).  
   
 > [!TIP]  
 >  You can also register the control add-in, import and manage the files by using the [New-NAVAddin cmdlet](http://go.microsoft.com/fwlink/?LinkID=521781), [Set-NAVAddin cmdlet](http://go.microsoft.com/fwlink/?LinkID=521784), [Get-NAVAddin](http://go.microsoft.com/fwlink/?LinkID=521782), or [Remove-NAVAddin](http://go.microsoft.com/fwlink/?LinkID=521783) cmdlets from the [!INCLUDE[nav_shell](includes/nav_shell_md.md)].  

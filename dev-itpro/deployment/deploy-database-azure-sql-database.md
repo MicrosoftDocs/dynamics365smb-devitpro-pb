@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Deploy a Business Central Database to Azure SQL Database
 This topic describes how you can deploy a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to Microsoft Azure SQL Database.  
@@ -26,7 +26,7 @@ This topic describes how you can deploy a [!INCLUDE[prodshort](../developer/incl
 
         Make sure the database does not contain users with Windows credentials. Only users with SQL authentication are allowed.  
 
-        Also, you must have saved a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license file in the database before you upload it to Azure SQL Database. For more information, see [Uploading a License File for a Specific Database](How-to--Upload-the-License-File.md#UploadtoDatabase).  
+        Also, you must have saved a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license file in the database before you upload it to Azure SQL Database. For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     -   Access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media \(DVD\).  
 
@@ -90,10 +90,7 @@ This topic describes how you can deploy a [!INCLUDE[prodshort](../developer/incl
 
     1.  After you install the [!INCLUDE[server](../developer/includes/server.md)], configure SQL Server Authentication on the [!INCLUDE[server](../developer/includes/server.md)] instance. For the database credentials, use the login name and password that you set up in step 2.  
 
-         For more information, see [How to: Configure SQL Server Authentication in Microsoft Dynamics NAV](How-to--Configure-SQL-Server-Authentication-in-Microsoft-Dynamics-NAV.md).  
+         For more information, see [Configuring SQL Server Authentication](../administration/configure-sql-server-authentication.md).  
 
  The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database is now deployed and configured on Azure. For developing, you can connect to the database from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
 
-## See Also  
- [Configuring Database Components](Configuring-Database-Components.md)   
- [Configuring Microsoft SQL Server](Configuring-Microsoft-SQL-Server.md)

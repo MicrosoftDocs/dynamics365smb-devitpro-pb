@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: 002ace19-dc33-432b-b74f-ac280a51fcd5
 caps.latest.revision: 8
 ---
@@ -35,5 +35,5 @@ When you run a Data Collector Set, the data that is collected for performance co
  [Business Central Performance Counters](performance-counters.md)   
  [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)   
  [Create Data Collector for Microsoft Dynamics NAV Performance Counters](create-data-collector-performance-counters.md)   
- [Create a Data Collector Set From Template](How-to--Create-a-Data-Collector-Set-From-the-Microsoft-Dynamics-NAV-Template.md)   
+ [Create a Data Collector Set From Template](monitor-create-data-collector-set-from-template.md)   
  [Business Central Performance Counters](performance-counters.md)

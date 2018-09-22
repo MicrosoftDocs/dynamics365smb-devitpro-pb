@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Services
 
@@ -49,13 +49,13 @@ When you expose a page as an OData web service, you can query that data to retur
 
 When you expose a page as a SOAP web service, you expose a default set of operations that you can use to manage common operations such as Create, Read, Update, and Delete. Page-based web services offer built-in optimistic concurrency management. Each operation call in a page-based web service is managed as a single transaction.  
 
-For SOAP services, you can also use extension codeunits to extend the default set of operations that are available on a page. Adding an extension codeunit to a page is useful if you want to perform operations other than the standard Create, Read, Update, and Delete operations. The benefit of adding an extension codeunit to a page is that you can make the web service complete by adding operations that are logical to that service. Those operations can use the same object identification principle as the basic page operations. For an example of how to implement an extension codeunit, see [Walkthrough: Creating a Web Service using Extension Codeunits \(SOAP\)](Walkthrough--Creating-a-Web-Service-using-Extension-Codeunits--SOAP.md).  
+For SOAP services, you can also use extension codeunits to extend the default set of operations that are available on a page. Adding an extension codeunit to a page is useful if you want to perform operations other than the standard Create, Read, Update, and Delete operations. The benefit of adding an extension codeunit to a page is that you can make the web service complete by adding operations that are logical to that service. Those operations can use the same object identification principle as the basic page operations.  
 
 ### Codeunit Web Services  
  For SOAP services only, codeunit web services provide you with the most control and flexibility. When a codeunit is exposed as a web service, all functions defined in the codeunit are exposed as operations.  
 
 ### Query Web Services  
- When you expose a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] query as an OData web service, you can query that data to return a service metadata \(EDMX\) document or an AtomPub document. For more information about how to create and use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] queries, see [Queries](Queries.md).  
+ When you expose a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] query as an OData web service, you can query that data to return a service metadata \(EDMX\) document or an AtomPub document. For more information about how to create and use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] queries, see [Query Object](../developer/devenv-query-object.md).  
 
 ### Web Services and Regional Settings  
  Data is formatted according to the value of the **Services Language** setting for the relevant [!INCLUDE[server](../developer/includes/server.md)] instance. The default value is **en-us**. This means that [!INCLUDE[server](../developer/includes/server.md)] interprets all incoming data as the specified culture, such as dates and amounts.  

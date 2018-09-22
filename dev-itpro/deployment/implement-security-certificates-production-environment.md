@@ -1,12 +1,12 @@
 ---
-title: "How to: Implement Security Certificates in Business Central"
+title: "Using Security Certificates with Business Central On-Premises"
 ms.custom: na
 ms.date: 06/05/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ---
 # Using Security Certificates with Business Central On-Premises
 
@@ -30,7 +30,6 @@ A certificate is a file that [!INCLUDE[server](../developer/includes/server.md)]
   
 In a production environment, you should obtain an certificate from a certification authority or trusted provider. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization.
 
-<!-- In a test environment, if you do not have certificate, then you can create your own self-signed certificate. For information about using self-signed certificates in a text environment, see [Walkthrough: Implementing Security Certificates in a Test Environment](Walkthrough--Implementing-Security-Certificates-in-a-Test-Environment.md). --> 
   
 ###  <a name="AboutProdCerts"></a> Obtaining Certificates
 

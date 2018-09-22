@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: a66261d0-f8b8-418d-a8e4-22152a91e4c7
 caps.latest.revision: 11
 ---
@@ -49,10 +49,7 @@ The application tables are system tables that define the application. Other syst
 ## Exporting the Application Tables to a Dedicated Application Database
 To export the application tables from an existing database to another database, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides a [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlet as part of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].  
 
-> [!IMPORTANT]  
->  Before you can run the script, you must upgrade to [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)]. For more information, see [Upgrading to Microsoft Dynamics NAV 2017](Upgrading-to-Microsoft-Dynamics-NAV-2017.md).  
-
- The following procedure illustrates how you can separate the application tables in an existing database into two databases: an application database and a business data database. You can automate this process and combine it with the use of other cmdlets. For more information, see the samples in the Windows PowerShell scripts in the **…\\WindowsPowerShellScripts\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media.  
+The following procedure illustrates how you can separate the application tables in an existing database into two databases: an application database and a business data database. You can automate this process and combine it with the use of other cmdlets. For more information, see the samples in the Windows PowerShell scripts in the **…\\WindowsPowerShellScripts\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media.  
 
 ### Export the application tables to a dedicated database  
 
