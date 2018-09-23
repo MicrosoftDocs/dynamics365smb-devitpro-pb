@@ -19,8 +19,8 @@ This page provides links to legal information for the Microsoft Dynamics NAV sof
 -	[Software License Terms](https://www.microsoft.com/en-us/download/details.aspx?id=54115)  
 -	[Third Party Notices](https://www.microsoft.com/en-us/download/details.aspx?id=54116)  
 -	[Privacy Statement](https://go.microsoft.com/fwlink/?linkid=825751)  
--   [Copyright and Trademarks](..\Copyright-and-Trademarks.md)
+-   [Copyright and Trademarks](../Copyright-and-Trademarks.md)
 
 ## See Also
-[Welcome to the Developer and IT-Pro Help for Microsoft Dynamics NAV](..\index.md)  
+[Welcome to the Developer and IT-Pro Help for Microsoft Dynamics NAV](../index.md)  
 [Legal Resources for Microsoft Dynamics NAV Universal Apps](legal-universal-app.md)  
