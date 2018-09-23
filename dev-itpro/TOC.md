@@ -80,7 +80,7 @@
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
 # [Security On-premises](security/security-and-protection.md)
-## [Consideration](security/security-considerations.md)
+## [Considerations](security/security-considerations.md)
 ## [User Security](security/user-security.md) 
 ## [Data Security](security/data-security.md)
 ## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
