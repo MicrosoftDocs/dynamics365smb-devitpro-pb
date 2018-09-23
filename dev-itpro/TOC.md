@@ -8,7 +8,7 @@
 ### [System requirements](deployment/system-requirement-business-central.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
-### [Deployment Topologies](deployment/deployment-scenarios.md])
+### [Deployment Topologies](deployment/deployment-scenarios.md)
 #### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
 #### [Deploying Single-Computer](deployment/deploy-single-computer-environment.md)
 #### [Deploying on Two-Computers](deployment/deploy-two-computer-environment.md)
@@ -79,9 +79,14 @@
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
-# Security
+# [Security On-premises](security/security-and-protection.md)
+## [Considerations](security/security-considerations.md)
+## [User Security](security/user-security.md) 
 ## [Data Security](security/data-security.md)
 ## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
+## [Enhancing Server Security](security/enhancing-server-instance-security.md)
+## [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
+## [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
 <!-- Development-->
 # [Development in AL](developer/devenv-dev-overview.md)
 ## [Getting Started with AL](developer/devenv-get-started.md)

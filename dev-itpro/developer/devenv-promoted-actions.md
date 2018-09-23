@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 --- 
 
 # Promoted Actions
-Promoted actions are actions that are set up on the Actions, Navigate, or Report tabs in the ribbon, but are also configured to display on the Home tab. Although the actions are set up on the Actions, Navigate, or Report tabs, you can choose to hide them on these tabs and only show them on the Home tab. 
+Promoted actions are actions that are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. Although the actions are set up on the Actions, Navigate, or Report tabs, you can choose to hide them on these menus and only show them on the Home tab. 
 
 The following table describes where you can use promoted actions.
 
@@ -27,13 +27,12 @@ You can promote any command from the existing actions menus to the ribbon. If th
 ## Promote actions by category
 Promoted actions can be grouped. You can add promoted actions by different grouped categories. Typically, promoted actions are displayed in the ribbon of the role center client. You can organize promoted actions into different categories, where each category is indicated by a caption in the ribbon. You define up to 10 categories for a page. The following figure illustrates a page that has promoted actions under the following categories. 
 
-- Manage 
 - New Document
 - Request Approval
 - Customer
-- Page 
 
-![image text](media/Promoted-Category.png)
+![image text](media/Promoted-Category-V2.png)
+
 
 You assign a promoted action to a category by setting the **PromotedCategory** property of the action. By default, these category names correspond to the captions that are displayed for the category on the page in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will typically want to change the captions, especially the Category4 through Category10 captions. See the table below for the default **PromotedCategory** values. To change the default captions, set the **PromotedActionCategories** property. 
 You type the values of the **PromotedActionCategories** where each caption is separated with a comma as shown below: 
