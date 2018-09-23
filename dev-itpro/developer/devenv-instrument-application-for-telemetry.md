@@ -55,7 +55,7 @@ Viewing and collecting telemetry data is done the same way as with other trace e
 
 -   In Event Viewer, telemetry trace events can be viewed from **Applications and Services Logs**, in the **Microsoft** > **Dynamics365BusinessCentral** > **Common** folder. The custom telemetry trace events are recorded in the **Admin**  folder. You should be aware that only events with severity level of Warning, Error, and Critical will appear.
 
-    For more information, see [Monitoring Business Central Server Events Using Event Viewer](../administration/monitor-server-events-in-windows-event-log.md).
+    For more information, see [Monitoring Business Central Server Events Using Event Viewer](../administration/monitor-server-events-windows-event-log.md).
 
 -   With other tools like Performance Monitor, PerfView, and logman, you can collect telemetry data by using **Microsoft-DynamicsNAV-Common** as the event trace provider.
 
@@ -65,4 +65,4 @@ Viewing and collecting telemetry data is done the same way as with other trace e
 >  The [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](../administration/configure-server-instance.md#General). 
 
 ## See Also
-[Monitoring Business Central Server Events](../administration/monitor-server-events.md.md)  
+[Monitoring Business Central Server Events](../administration/monitor-server-events.md)  

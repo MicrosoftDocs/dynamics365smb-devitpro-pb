@@ -32,7 +32,7 @@ There are different ways to incorporate a list page into that application:
     With this implementation, the list page opens in a separate window in front of the current page.
 - Make the list page searchable from the **Tell me what you want to do** feature.
 
-    With this implementation, the list page also opens in a separate window. For more information, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).
+    With this implementation, the list page also opens in a separate window. For more information, see [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md).
 
 ### Customizing a list pages from the client
 In the client, users can personalize list pages by rearranging or hiding records or FactBoxes as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user).
