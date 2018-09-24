@@ -104,7 +104,7 @@ Using the [Scope](properties/devenv-scope-property.md) property, configure actio
 
 ### Configure the gesture for actions
 
-Using the [Gesture](properties/devenv-getsure-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md).
+Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
 
 
 ## See Also
