@@ -156,7 +156,7 @@
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ## [Classifying Data](developer/devenv-classifying-data.md)
 ## [View Table Data](developer/devenv-view-table-data.md)
-## [Instrumenting for Telemtery](developer/devenv-instrument-application-for-telemetry.md)
+## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-universal-app.md)

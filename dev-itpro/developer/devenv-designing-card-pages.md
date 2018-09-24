@@ -34,6 +34,10 @@ As a developer or administrator, you can use Designer to customize a Role Center
 ## Card page structure
 A card page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
 
+Mention system actions at top
+importance in list part/show more.
+
+
 ![Card page overview](media/card-page-overview.png "Card page overview")
 
 ## Navigation and Actions area
