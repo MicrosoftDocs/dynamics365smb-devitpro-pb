@@ -174,6 +174,7 @@
 #### [PerTenantExtensionCop Analyzer Rules](developer/devenv-codeanalyzer-pertenantextensioncop-rules.md)
 #### [UICop Analyzer Rules](developer/devenv-codeanalyzer-uicop-rules.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### [Extensible Enums](developer/devenv-extensible-enums.md)
 ### [Table Object](developer/devenv-table-object.md)
 ### [Table Extension Object](developer/devenv-table-ext-object.md)
 ### [Page Object](developer/devenv-page-object.md)
