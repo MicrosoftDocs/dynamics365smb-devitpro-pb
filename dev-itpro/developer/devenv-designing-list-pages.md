@@ -44,7 +44,7 @@ As a developer or administrator, you can use Designer to customize the list page
 ### General definition
 A list page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `List` and [SourceTable property](properties/devenv-sourcetable-property.md) set to the table object that contains the records that you want to display.
 
-To asscoiate a list page with a card page, which enables users to view, edit, ore create records, you set the [CardPageId](properties/devenv-cardpageid-property.md) property of the list page.
+To associate a list page with a card page, which enables users to view, edit, ore create records, you set the [CardPageId](properties/devenv-cardpageid-property.md) property of the list page.
 
 For a simple code example of a list page, see [Simple List Page Example](devenv-simple-list-page-example.md). 
  

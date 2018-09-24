@@ -143,6 +143,7 @@
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 #### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Adding Pages and Reports to Search](developer/devenv-al-menusuite-functionality.md)
+### [Designing List Pages](developer/devenv-designing-list-pages.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
 ## [Reports](developer/devenv-reports.md)
