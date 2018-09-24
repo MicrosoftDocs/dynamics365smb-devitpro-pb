@@ -10,7 +10,7 @@ ms.prod: "dynamics-nav-2017"
 author: jswymer
 ---
 # Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database
-When you convert a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to a !INCLUDE[prodshort](../developer/includes/prodshort.md)] version, you will receive compilation errors in several standard [!INCLUDE[navnow](../developer/includes/navnow_md.md)] objects. This article describes how to resolve these errors.
+When you convert a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version, you will receive compilation errors in several standard [!INCLUDE[navnow](../developer/includes/navnow_md.md)] objects. This article describes how to resolve these errors.
 
 ## Compilation Errors
 The following table lists the compilation errors that might occur when you compile objects during the database conversion.
