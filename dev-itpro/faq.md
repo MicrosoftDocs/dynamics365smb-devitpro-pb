@@ -19,7 +19,7 @@ This section contains answers to frequently asked questions about developing for
 
 ## Is [!INCLUDE[prodshort](includes/prodshort.md)] available in my country?
 
-[!INCLUDE[prodshort](includes/prodshort.md)] is available in a limited number of markets, but new countries are added through Microsoft-led localization or through partner-led localization on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations).  
+[!INCLUDE[prodshort](includes/prodshort.md)] is available in a limited number of markets, but new countries are added through Microsoft-led localization or through partner-led localization on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations.md).  
 
 ## How often is [!INCLUDE[prodshort](includes/prodshort.md)] updated?
 

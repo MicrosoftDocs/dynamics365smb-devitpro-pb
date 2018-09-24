@@ -224,7 +224,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
     ``` 
-     
+publish system and test
+generate app symbols
+enable server for app symbols
+publish new Microsoft V2s
+   
 13. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
 
     Use the [Install-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
@@ -268,4 +272,4 @@ Starting from SQL Server 2008, SQL Server collations are fully aligned with the 
 ## See Also  
 [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
 [Upgrading the Data](Upgrading-the-Data.md)   
-[Upgrading to Business Central](Upgrading-to-business-central,md)   
+[Upgrading to Business Central](Upgrading-to-business-central.md)   

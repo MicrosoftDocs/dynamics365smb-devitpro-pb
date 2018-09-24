@@ -49,5 +49,4 @@ You can choose to migrate your [!INCLUDE[prodshort](../developer/includes/prodsh
  [Creating Tenants from Companies](Creating-Tenants-from-Companies.md)   
  [Upgrading the Application Code](../upgrade/Upgrading-the-Application-Code.md)   
  [Upgrading the Data](../upgrade/Upgrading-the-Data.md)   
- [Upgrading to Business Central](../upgrade/Upgrading-to-business-central,md)   
- [Merging an Application Database with a Tenant Database](Merging-an-Application-Database-with-a-Tenant-Database.md)
+ [Upgrading to Business Central](../upgrade/Upgrading-to-business-central.md)   

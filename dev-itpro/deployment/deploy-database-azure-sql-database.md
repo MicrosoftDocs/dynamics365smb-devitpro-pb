@@ -90,7 +90,7 @@ This topic describes how you can deploy a [!INCLUDE[prodshort](../developer/incl
 
     1.  After you install the [!INCLUDE[server](../developer/includes/server.md)], configure SQL Server Authentication on the [!INCLUDE[server](../developer/includes/server.md)] instance. For the database credentials, use the login name and password that you set up in step 2.  
 
-         For more information, see [How to: Configure SQL Server Authentication in Microsoft Dynamics NAV](How-to--Configure-SQL-Server-Authentication-in-Microsoft-Dynamics-NAV.md).  
+         For more information, see [Configuring SQL Server Authentication](../administration/configure-sql-server-authentication.md).  
 
  The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database is now deployed and configured on Azure. For developing, you can connect to the database from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
 

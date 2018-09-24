@@ -7,10 +7,9 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: b996870e-306e-4aec-9806-654334995d7f
-caps.latest.revision: 13
 ---
 # [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Data Security
+
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] security system allows you to control which objects or tables a user can access within each database. You can specify the type of access that each user has to these objects and tables, whether they are able to read, modify, or enter data.  
 
  You can specify which records are stored in the tables that each user is allowed to access. This means that permissions can be allocated at both the table level and the record level.  
@@ -31,31 +30,32 @@ The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] security system al
   
 Graphically, these can be represented as the layers, where the central layer is the records in the database. 
 
-## Database-Level Security
+## [Database-level security](#tab/database-level)
+
 The first layer of security when you open [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is database security.  
  
-After you start [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and attempt to open the database, your credentials are checked. <!-- If you have not been granted permission to open the database then the database is not listed in the [Available Databases](uiref/-$-S_2342-Available-Databases-$-.md) window.--> For more information about granting a user permission to create or work with a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
-  
-<!--For more information about how to open a database, see [How to: Open Databases](How-to--Open-Databases.md).-->
+After you start [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and attempt to open the database, your credentials are checked.  For more information about granting a user permission to create or work with a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
 
-## Company-Level Security
+## [Company-level security](#tab/company-level)
+
 After you have gained access to the database, you can open the company that you want to work with.  
 
-### Opening a Company  
+### Opening a company
+  
 In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can only open companies in the current database that you have been given permission to access. A database can contain several companies. Each company can use its own tables and can also share tables with other companies.  
 
-<!-- 
-Select the company that you want to open, choose **OK**, and the company opens. If there are companies in the database that you have not been given permissions to access, you will not be able to see them in this window.  -->
+### Managing user access to companies
+  
+Users' access to companies is controlled by permission sets. When you assign a permission set to a user, you can specify a company to restrict the user’s access for that permission set to that specific company. For more information, see [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions) in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application help .
 
-### Managing User Access to Companies  
-Users' access to companies is controlled by persmission sets. When you assign a permission set to a user, you can specify a company to restrict the user’s access for that permission set to that specific company. For more information, see [How to: Define Permissions for Users](How-to--Define-Permissions-for-Users.md).
+## [Object-level security](#tab/object-level)
 
-## Object-Level Security
 When you open a company in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], your ability to access information is determined by the security system.  
   
 Object-level security is the set of permissions on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects that constitute a permission set. Permission sets determine the access that users have and the tasks that users can perform on objects in the database.  
   
-### Security System Database Objects  
+### Security system database objects(#tab/security-system)
+  
  You can define permissions for all types of objects in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
   
 |Object Type|Description|  
@@ -72,23 +72,55 @@ Object-level security is the set of permissions on [!INCLUDE[prodshort](../devel
   
 The various permission sets that exist in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] determine the actions that you can perform on these objects. For more information about permissions, see [Permissions on Database Objects](../developer/devenv-permissions-on-database-objects.md).
 
-## <a name="RecordLevel"></a> Record-Level Security
+## [Record-level security](#tab/record-level)
+
 Record-level security lets you limit the access that a user has to the data in a table.  
   
-You implement record-level security in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by creating security filters on table data. A security filter describes a set of records in a table that a user has permission to access. You can specify, for example, that a user can only read the records that contain information about a particular customer. This means that the user cannot access the records that contain information about other customers.  
+You implement record-level security in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by creating security filters on table data. A security filter describes a set of records in a table that a user has permission to access. You can specify, for example, that a user can only read the records that contain information about a particular customer. This means that the user cannot access the records that contain information about other customers. For more information, see [Security Filter Modes](Security-Filters.md). 
   
-### Setting Security Filtering Modes  
- When you create security filters, you limit a user's access to data in a table. Therefore, code that requires access to all data in a table fails and the user receives an error message.  
+### Performance
   
- You can resolve potential conflicts with security filters and specify the desired behavior by setting the security filtering mode on Record variables to determine how the security filters are applied. For more information, see [Security Filter Modes](Security-Filter-Modes.md).  
-  
-### Performance  
 Record-level security filters are handled by SQL Server just like other filters that are applied by the user. They do not adversely affect performance unless the security filtering mode is **Validated**. When the security filtering mode for a record is **Validated**, then [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must validate whether each record is in the filter expression.  
   
+
+## [Database logins](#tab/databaselogins)
+
+Users are given a database login when they have their own user ID and password in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The user must enter the user ID and password to access the database.  
   
+> [!NOTE]  
+>  Database logins are only valid for connecting to the database from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+  
+### How database logins work
+  
+ Users must also have a login on SQL Server. SQL Server has its own authentication of the user’s ID and password. SQL Server does this by checking whether a SQL Server login with this user’s ID and password has been created.  
+  
+ This login must first be created by a SQL Server administrator, with a SQL Server tool. If a SQL Server login has not been set up, authentication fails and the user receives an error. For more information, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
+  
+ The user is granted access to the server after his login has been authenticated. Database security then validates the user’s permissions by checking the database user accounts on the server. The permissions that the user has been granted to the various objects within the database, such as tables, are determined by the information contained in the user’s database user account. This account also contains information about any additional permissions that the user may have been granted to alter the database itself.
+
+## [Permissions on database objects](#tab/permissions)
+
+This section provides an overview of permissions and permission sets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  
+  
+### Permissions
+ 
+ If you have been granted permission to read a page, then you can open the page and view the data that it displays. If, however, you do not have write permission, you are not allowed to enter data into this page.  
+  
+ Sometimes, when you open a page it displays information from several tables. To access this page, you must have permission to view all the data displayed by the page. You might not have permission to read directly from all the tables that the page uses. In this case, you must have indirect permission to read from the tables in question. Having indirect permission to a table means that you cannot open the table and read from it but can only view the data it contains indirectly through another object, such as a page or report, that you have direct permission to access.  
+  
+ [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has a number of standard predefined security permission sets. You can use these permission sets as defined or you can change a permission sets to suit your particular needs. You can also create your own permission sets and assign them the permissions that you want.  
+  
+### Permissions on objects  
+  
+|Permission|Description|  
+|----------------|-----------------|  
+|Read|You can read this object.|  
+|Insert|You can insert data into this object.|  
+|Modify|You can modify data in this object.|  
+|Delete|You can delete data from this object.|  
+|Execute|You can run this object.|
+    
 ## See Also  
 
- [Users and Credential Types](Users-and-Credential-Types.md)   
- [Database Logins](Database-Logins.md)    
- [Permissions on Database Objects](Permissions-on-Database-Objects.md)   
+ [Users and Credential Types](../administration/users-credential-types.md)   
  [Security Considerations](Security-Considerations.md)

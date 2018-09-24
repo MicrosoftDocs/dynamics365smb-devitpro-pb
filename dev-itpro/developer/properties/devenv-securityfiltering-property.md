@@ -43,9 +43,8 @@ RecordVar.SecurityFiltering := SecurityFilter::<Disallowed|Filtered|Ignored|Vali
   
  The value of the **SecurityFiltering** property on a record takes effect immediately and remains in effect through the lifetime of the variable, or until you change the value. 
 
- For more information, see [Security Filter Modes](../../security/Security-Filter-Modes.md). 
+ For more information, see [Security Filter Modes](../../security/Security-Filters.md). 
   
 ## See Also  
-[Record-Level Security](../../security/data-security.md#RecordLevel)   
-<!--[How to: Set Security Filters](../How-to-Set-Security-Filters.md)   
- -->
+[Record-Level Security](../../security/data-security.md)   
+[Using Security Filters](../../security/security-filters.md)   

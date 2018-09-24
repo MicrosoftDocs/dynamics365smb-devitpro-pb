@@ -1016,5 +1016,5 @@ OBJECT Codeunit 1 ApplicationManagement
 
 ## See Also  
  [Converting a Database](Converting-a-Database.md)  
- [Resolving Compilation Errors When Converting a Dynamics NAV 2016 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2016-Database.md)  
+ [Resolving Compilation Errors When Converting a Dynamics NAV  Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)  
  [Exporting and Importing Objects](../cside/cside-import-objects.md)

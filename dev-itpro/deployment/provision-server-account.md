@@ -130,7 +130,7 @@ To verify server-level and database-level privileges on SQL Server after you cre
     4.  Choose **OK** to exit the New Login dialog box.
 3.  (optional) Grant the login **Alter any event session** and **View server state** permissions.
 
-     This step is only required if you want to log SQL Server deadlocks in the Windows Event log for the [!INCLUDE[server](../developer/includes/server.md)] intance. For more information, see [Monitoring SQL Database Deadlocks](Monitoring-Database-Deadlocks.md).
+     This step is only required if you want to log SQL Server deadlocks in the Windows Event log for the [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see [Monitoring SQL Database Deadlocks](../administration/monitor-Database-Deadlocks.md).
     1.  Navigate the tree view: **Security**, **Logins**.
     2.  Right-click the login that you created, and then choose **Properties**.
     3.  Under **Select a page**, choose **Securables**.
