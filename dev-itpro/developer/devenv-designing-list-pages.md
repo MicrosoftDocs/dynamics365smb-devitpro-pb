@@ -18,7 +18,7 @@ ms.author: jswymer
 
 The *List* page type displays records from an underlying table, either as rows and columns or as individual tiles. 
 
-## [About](#tab/about)
+## [Overview](#tab/about)
 
 You design list pages when you want to provide users with a collection of data, enabling them to get an overview of and find entities to work with, such as customers, vendors, or sales orders. Typically, a list page will link to an associated card page that lets users view or modify specific entities in the list.
 
