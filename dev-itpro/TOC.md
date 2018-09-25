@@ -288,7 +288,7 @@
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
-## Preview Features in AL
+<!-- ## Preview Features in AL -->
 
 <!-- end AL -->
 <!-- web service -->
