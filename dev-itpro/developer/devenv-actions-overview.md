@@ -55,19 +55,19 @@ For examples on how to add actions to the Actions menu, see [Adding Actions to a
 
 Some examples from the Customer page are as follows:
   
--   Sales Invoice  
+- Sales Invoice  
   
--   Sales Quote  
+- Sales Quote  
   
--   Sales Credit Memo  
+- Sales Credit Memo  
   
--   Ledger Entries  
+- Ledger Entries  
   
--   Invoice Discounts  
+- Invoice Discounts  
   
--   Prices  
+- Prices  
   
--   Line Discounts  
+- Line Discounts  
 
 You can add actions to the Actions menu, group actions together under action submenus, or promote them to the ribbon. For examples of how to use actions, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
   
@@ -86,7 +86,7 @@ Example: On the Customers page, if the order processor wants to create a new inv
 The Navigate menu is displayed after the Actions menu in the action bar. Rather than providing tasks for the user, this menu provides additional information by taking the user to a specific page in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. To add a page link in the Navigate menu, you must use the ``navigation`` action area. These actions act like a bookmark to enable quick access to view a page. <!-- For examples on how to link pages in the Navigate menu, see [Adding Page Links to Navigate Menu](devenv-adding-page-links-to-navigate-menu.md). -->
   
 > [!NOTE]  
->  You should not add a Navigation action to a Role Center page.  
+> You should not add a Navigation action to a Role Center page.  
   
 ## Report menu
 The Report menu is displayed after the Navigate menu in the action bar. The Reports menu lists the reports most relevant to a page. If a user does not require a Report menu, then the menu is hidden. Sometimes it is relevant to promote the most important reports to the top-level in the action bar to save the user from too many clicks. To create an action in the Report menu, you must use the ``reporting`` action area. 
@@ -113,11 +113,11 @@ The Home menu is always displayed first so promoted actions provide quick access
 ## Actions at runtime  
  An action can trigger code to run, such as posting a document or otherwise modifying a record in a table. When a user chooses an action, one of the following pieces of logic will happen in addition to the code that the action itself triggers:  
   
--   If the page is empty and no longer shows any records, the page is re-initialized with default values.  
+- If the page is empty and no longer shows any records, the page is re-initialized with default values.  
   
--   If the page does show records, and the current state is within the page filters boundary, the **OnAfterGetRecord** trigger is executed on the page.  
+- If the page does show records, and the current state is within the page filters boundary, the **OnAfterGetRecord** trigger is executed on the page.  
   
--   If the current record that the page showed is now outside the filter but there are other records within the filter, the **OnFindRecord** trigger is called and the **OnAfterGetRecord** trigger is run on the next record with the given filters.  
+- If the current record that the page showed is now outside the filter but there are other records within the filter, the **OnFindRecord** trigger is called and the **OnAfterGetRecord** trigger is run on the next record with the given filters.  
   
  The logic runs in the transaction that the action triggered. This can cause the application code to result in users locking the whole table when they thought they were only modifying one record.  
   
