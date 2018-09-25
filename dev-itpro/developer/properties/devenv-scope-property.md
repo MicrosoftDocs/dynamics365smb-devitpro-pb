@@ -25,7 +25,7 @@ The **Scope** property is only used on pages that include a repeater control and
   
 -   On a [!INCLUDE[nav_phone](../includes/nav_phone_md.md)], if the **Scope** property is set to **Page**, the action will be shown in the page action menu. If the **Scope** property is set to **Repeater**, there are two scenarios:  
   
-    -   If the list **is** associated with a card page, the developer must make sure to add the action functionality to this card page.  
+    -   If the list **is** associated with a card page, then the action is not available on the list page anywhere, and you should add the action to the card page.  
   
     -   If the list **is not** associated with a card page, and the user taps a row in the list to view details, the action is available on the details page.  
     
