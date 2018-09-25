@@ -96,6 +96,7 @@
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
 ### [The AL Formatter](developer/devenv-al-formatter.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
+### [Object Ranges](developer/devenv-object-ranges.md)
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
@@ -103,9 +104,9 @@
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Creating runtime packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
-## [Object Ranges](developer/devenv-object-ranges.md)
 ## [JSON Files](developer/devenv-json-files.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
+### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
 ## [Debugging in AL](developer/devenv-debugging.md)
 ## [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ## Converting, Upgrading, and Installing Extensions V2
@@ -126,6 +127,7 @@
 ### [Publishing Events](developer/devenv-publishing-events.md)
 ### [Raising Events](developer/devenv-raising-events.md)
 ### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
+### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 ## [Notifications](developer/devenv-notifications-developing.md)
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
 ## [Pages](developer/devenv-pages-overview.md)
@@ -134,6 +136,7 @@
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
 #### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
 #### [Fixed Control](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
+#### [Field Groups](developer/devenv-field-groups.md)
 ### [Actions](developer/devenv-actions-overview.md)
 #### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 #### [Promoted Actions](developer/devenv-promoted-actions.md)
@@ -162,6 +165,9 @@
 ### [Business Central App URL](developer/devenv-link-to-universal-app.md)
 ## [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
+## [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
+## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## [AL Development Environment](developer/devenv-reference-overview.md)
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
@@ -283,12 +289,7 @@
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
 ## Preview Features in AL
-### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
-### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
-### [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
-### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
-### [Field Groups](developer/devenv-field-groups.md)
-### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+
 <!-- end AL -->
 <!-- web service -->
 # [Web Services](webservices/web-services.md)
