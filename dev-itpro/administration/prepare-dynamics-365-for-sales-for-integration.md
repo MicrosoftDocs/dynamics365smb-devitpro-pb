@@ -10,6 +10,7 @@ author: jswymer
 ms.prod: "dynamics-nav-2018"
 ---
 # Preparing  Dynamics 365 for Sales for Integration
+
 This article describes how to set up and configure [!INCLUDE[crm_md](../developer/includes/crm_md.md)] for integrating with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. You must complete the following tasks:  
 
 1.  Create a user for connecting to and synchronizing data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
@@ -22,7 +23,8 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
 > [!IMPORTANT]  
 >  To perform the tasks in this topic, you must have the System Administrator security role or equivalent privileges in [!INCLUDE[crm_md](../developer/includes/crm_md.md)].  
 
-##  <a name="createuser"></a> Create a Dynamics 365 for Sales User for Connecting to Business Central  
+##  <a name="createuser"></a> Create a Dynamics 365 for Sales User for Connecting to Business Central
+  
  As a minimum, this must be a non\-interactive user account that has the required privileges to write, read, modify, and delete data in the entities that will be integrated with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
  You will use this user account to set up the connection to [!INCLUDE[crm_md](../developer/includes/crm_md.md)] from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
@@ -34,7 +36,8 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
 
 -   For more information about how to create users in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [http://go.microsoft.com/fwlink/?LinkID=616518](http://go.microsoft.com/fwlink/?LinkID=616518).  
 
-##  <a name="InstallNavSolution"></a> Install the Business Central Integration Solution  
+##  <a name="InstallNavSolution"></a> Install the Business Central Integration Solution
+  
  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes a solution that enables users to access coupled records in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], such as customers and items, from records in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], such as accounts and products. The solution adds a link on the [!INCLUDE[crm_md](../developer/includes/crm_md.md)] record pages that opens the coupled [!INCLUDE[prodshort](../developer/includes/prodshort.md)] record. The solution is also used to display information from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a part on certain entity records in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], such as accounts. Installing this solution is optional.  
 
 
@@ -42,7 +45,7 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
 
      The DynamicsNAVIntegrationSolution.zip file is located in the **CrmCustomization** folder. This file is the solution package.   
 
-2.  In [!INCLUDE[crm_md](../developer/includes/crm_md.md)], import the DynamicsNAVIntegrationSolution.zip as a solution  
+2.  In [!INCLUDE[crm_md](../developer/includes/crm_md.md)], import the DynamicsNAVIntegrationSolution.zip as a solution.  
 
      This step adds the **Business Central Connection** entity and **Business Central Account Statistics** entity in the system and additional items such as Business Central integration security roles.  
 
@@ -50,11 +53,11 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
 
 3.  (Optional) Set up the **Business Central Connection** entity to display in the **Settings** area of [!INCLUDE[crm_md](../developer/includes/crm_md.md)].  
 
-     This enables [!INCLUDE[crm_md](../developer/includes/crm_md.md)] users who are assigned the **Dynamics NAV Admin** role to modify the entity in [!INCLUDE[crm_md](../developer/includes/crm_md.md)]. For more information about how to modify entities in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [http://go.microsoft.com/fwlink/?LinkID=616521](http://go.microsoft.com/fwlink/?LinkID=616521).  
+     This enables [!INCLUDE[crm_md](../developer/includes/crm_md.md)] users who are assigned the **Business Central Admin** role to modify the entity in [!INCLUDE[crm_md](../developer/includes/crm_md.md)]. For more information about how to modify entities in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [http://go.microsoft.com/fwlink/?LinkID=616521](http://go.microsoft.com/fwlink/?LinkID=616521).  
 
-4.  Assign the **Dynamics NAV Integration Administrator** role to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connection user.  
+4.  Assign the **Business Central Integration Administrator** role to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connection user.  
 
-5.  Assign the **Dynamics NAV Integration User** role to all users who require the use of the features provided by the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] integration solution.  
+5.  Assign the **Business Central Integration User** role to all users who require the use of the features provided by the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] integration solution.  
 
 If you install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] integration solution after you have set up the connection to [!INCLUDE[crm_md](../developer/includes/crm_md.md)] from in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you must modify the connection setup to point to the URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].<!-- For more information, see [How to: Set Up a Microsoft Dynamics 365 for Sales Connection]() --> 
 
