@@ -3,9 +3,24 @@
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 <!-- deployment-->
 # [Deployment](deployment/deployment.md)
-## [Configuring the Help Experience](deployment/configure-help.md)
+## Online
+### Onboarding your customer
+### Free trial
+### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)  
+### [Embed App](deployment/embed-app-overview.md)
+#### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)   
+#### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+#### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+#### [Components](deployment/embed-app-components.md)
+#### [Platform](deployment/embed-app-platform.md)
+#### [Licensing](deployment/embed-app-licensing.md)  
+#### [Customer Sign-up](deployment/embed-app-customer-signup.md)  
+#### [AppSource](deployment/embed-app-appsource.md)  
+#### [Sandbox](deployment/embed-app-sandbox.md)  
+#### [Ecosystem Features](deployment/embed-app-ecosystem.md)  
 ## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
+### [Running a Container-Based Development Environment](developer\devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
 ### [Deployment Topologies](deployment/deployment-scenarios.md)
@@ -19,22 +34,12 @@
 ### [Business Central Web Server](deployment/web-server-overview.md)
 #### [Configuring Web Server Instances](administration/configure-web-server.md)
 #### [Configure IIS](deployment/configure-iis.md)
-#### [Configure SSL](deployment/configure-ssl-web-client-connection.md) 
+#### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
 #### [Configure Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### Database
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
-## [Embed App](deployment/embed-app-overview.md)
-### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)   
-### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-### [Components](deployment/embed-app-components.md)
-### [Platform](deployment/embed-app-platform.md)
-### [Licensing](deployment/embed-app-licensing.md)  
-### [Customer Sign-up](deployment/embed-app-customer-signup.md)  
-### [AppSource](deployment/embed-app-appsource.md)  
-### [Sandbox](deployment/embed-app-sandbox.md)  
-### [Ecosystem Features](deployment/embed-app-ecosystem.md)  
+## [Configuring the Help Experience](deployment/configure-help.md)
 <!-- end deployment -->
 <!-- administration-->
 # [Administration](administration/administration.md)
@@ -81,7 +86,7 @@
 <!-- end admin -->
 # [Security On-premises](security/security-and-protection.md)
 ## [Considerations](security/security-considerations.md)
-## [User Security](security/user-security.md) 
+## [User Security](security/user-security.md)
 ## [Data Security](security/data-security.md)
 ## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
 ## [Enhancing Server Security](security/enhancing-server-instance-security.md)
@@ -356,5 +361,3 @@
 <!-- preview of Graph API starts-->
 # [Preview of Dynamics 365 Business Central API](/dynamics-nav/fin-graph/)
 <!-- preview of Graph API ends -->
-
-
