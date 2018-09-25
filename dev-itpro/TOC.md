@@ -20,7 +20,7 @@
 #### [Ecosystem Features](deployment/embed-app-ecosystem.md)  
 ## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
-### [Running a Container-Based Development Environment](developer\devenv-running-container-development.md)
+### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
 ### [Deployment Topologies](deployment/deployment-scenarios.md)
@@ -43,10 +43,11 @@
 <!-- end deployment -->
 <!-- administration-->
 # [Administration](administration/administration.md)
-## [Administration center](administration/tenant-admin-center.md)
-## Automation
-### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
-### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
+## Online
+### [Administration center](administration/tenant-admin-center.md)
+### Automation
+#### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
+#### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 ## On-Premises
 ### [Connect to the Intelligent Cloud](administration/about-intelligent-edge.md)
 #### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
@@ -84,14 +85,6 @@
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
-# [Security On-premises](security/security-and-protection.md)
-## [Considerations](security/security-considerations.md)
-## [User Security](security/user-security.md)
-## [Data Security](security/data-security.md)
-## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
-## [Enhancing Server Security](security/enhancing-server-instance-security.md)
-## [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
-## [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
 <!-- Development-->
 # [Development in AL](developer/devenv-dev-overview.md)
 ## [Getting Started with AL](developer/devenv-get-started.md)
@@ -334,6 +327,16 @@
 ### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
 ### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 <!-- end web services -->
+<!-- begin security -->
+# [Security](security/security-and-protection.md)
+## [Considerations](security/security-considerations.md)
+## [User Security](security/user-security.md)
+## [Data Security](security/data-security.md)
+## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
+## [Enhancing Server Security](security/enhancing-server-instance-security.md)
+## [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
+## [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
+<!-- end security -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
 ## [Before You Upgrade](upgrade/Upgrade-Considerations.md)
