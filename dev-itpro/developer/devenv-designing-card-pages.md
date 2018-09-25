@@ -14,46 +14,55 @@ ms.author: jswymer
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# Designing Card Pages
+# Designing Card and Document Pages
 
-The *card* page type displays selected fields from an underlying table.
+The *card* page type displays selected fields from an underlying table. The *document* page type is very similar except it 
 
-## About the card page 
+## [Overview](#tab/about)
+ 
 You design card pages when you want to enable user to view, create, and modify records (master and reference data) in a table, such as Customer, Vendor, and Item entities.
 
-Card pages are linked from list pages that are associated with the underlying table. From the list page, users can select a record and open it the card page for viewing and editing.
+Card pages are typically associated with list pages that use the same table as their source. From the list page, users can select a record and open it the card page for viewing and editing.
 
 Fields can be organized into one or more sections, or FastTabs. In addition, you can add FactBoxes that displays additional information about the record in the page.
 
 
 ### Customizing a card pages from the client
-In the client, users can personalize their Role Centers by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
 
-As a developer or administrator, you can use Designer to customize a Role Center the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the Role Center. For more information, see [Using Designer](devenv-inclient-designer.md). 
+In the client, users can personalize card pages by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
 
-## Card page structure
+As a developer or administrator, you can use Designer to customize a card page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users assigned to the assigned to the same profile. For more information, see [Using Designer](devenv-inclient-designer.md). 
+
+## [Structure](#tab/structure)
+
+### General definition
+
 A card page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
 
 Mention system actions at top
 importance in list part/show more.
 
+### Structure
+
+The following figure illustrates the general layout and elements of a list page.
 
 ![Card page overview](media/card-page-overview.png "Card page overview")
 
-## Navigation and Actions area
-The navigation and actions area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits. You define the navigation area by adding actions to the Role Center page code, under the `actions` control in the page code. The navigation and actions area is subdivided into smaller areas by using different `area()` controls as described in the following table:
+The following table describes the elements of a typical list page.
 
 
 |    |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
-|1|Navigation menus|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. The pages targeted by the submenus will open in the content area of the Role Center. <br /><br />You define this area with an `area(sections)` control in the page code.|The top-level navigation should provide access to relavant enitity lists for the role's areas of business. For example, typical root items for a business manager could be finance, sales, and purchasing. You should place the root items in order of importance, starting from the left.|
-|2|Navigation bar|The second-level navigation displays a flat list of links to other pages. The pages targeted by the links will open in the content area of the Role Center.<br /><br />You define this area with an `area(embedding)` control in the page code.|You should use these items to link to users’ most useful entity lists in thier business process. For example, with a business manager, these could be links to customers, sales orders, and bank accounts. You should place items in the order that reflects the business process sequence. Try to limit the number of second-level items, and consider placing items in the top-level navigation instead, if the number gets too large. |
-|3|Actions|The actions area provides links to pages, reports, and codeunits. The links can be displayed on the root-level or grouped in a submenu. The objects targeted by these links will open in a separate window in front of the Role Center page.<br /><br />You can define the actions by using the three different `area()` controls that are described below: |The action area is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a submenu.|
-|||`area(creation)` - Actions in this control will appear first in the action area, and will display with a plus (+) icon. |Use this control to target pages that enable the user to create new entities.|
-|||`area(processing)` - Actions in this control will appear after the `area(creation)` items. You can group actions in submenus by using a `group` control.|Use this control to target pages that are associated with the work flow for processing documents, such as payments or sales orders. Use the `group` control to organize similar actions under a common parent.|
-|||`area(reporting)` - Actions in this control will appear last in the action area. They display with a default report icon. |Use this conteol to target report objects.|
+|1|System actions|**Edit**, **Add**, and **Delete** actions. These actions appear on all pages; you cannot remove them or add other actions.<br /><br />The **Edit** and **Delete** actions are only active if the [Editable](properties/devenv-editable-property.md)] is set to `true`.<br /><br />The **Add** action is only active if the page contains either **RecordLinks** or **Notes** system part in a FactBox. If the page contains both parts, then the Add action pertains to the first part defined in the page code.||
+|2|Action bar|The action bar provides links to other pages, reports, and codeunits. The action bar is defined by an `actions` control in the page code, and individual actions are defined by an `action` control.<br /><br /> Actions can be displayed on three standard menus in the action bar, **Actions**, **Navigate**, and **Report**, or in promoted action menus, which are custom menus that you define. You can arrange actions on these menus in the root-level or grouped in a sub-menu.<br /><br /> The objects targeted by these links will open in a separate window.<br /><br />For more information, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md).|The action bar is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a sub-menu.|
+|4|Promoted actions|Promoted actions are actions that are defined in the `area` control like any other action in code, but are configured to display on a higher level in the action bar, in a specific category that you define. You promote actions by setting various properties on `action` controls.<br /><br /> For more information, see [Promoted Actions](devenv-promoted-actions.md). |Use promoted actions provide quick access to the most common tasks that would be performed by the user. Give categories a name that provides a good description of the included actions.|
+|5|FastTab|Displays records of the source table as rows and columns, where each row is a record and the columns are the fields. You define the list by adding a `repeater` control in the page code, and then add `field` controls for field that you want to display.|The order of the `field` controls determines the order they appear on the page.   |
+|6|Field|Renders records in a list as tiles (or bricks). Client users can toggle between the list and tile view.<br /><br /> As a developer, to enable a list to be displayed as tiles, you must specify the table fields that you want to include in the tiles. You do this by adding a `fieldgroup(Brick; <Field>` keyword in the code of the source table.<br /><br /> For more information, see [Field Groups](devenv-field-groups.md).|You can design any list page to display as tiles. The tile view is particularly beneficial for lists with records that include media or images, such a customers, contacts, and items lists. For more information about adding media to records, see [Working With Media on Records](devenv-working-with-media-on-records.md).|
+|7|Show more/less|Promoted actions are actions that are defined in the `area`control like any other action in code, but are configured to display on a higher level in the action bar, in a specific category that you define. You promote actions by setting various properties on `action` controls.<br /><br /> For more information, see [Promoted Actions](devenv-promoted-actions.md). |Use promoted actions provide quick access to the most common tasks that would be performed by the user. Give categories a name that provides a good description of the included actions.|
+|8|Promoted actions|Promoted actions are actions that are defined in the `area`control like any other action in code, but are configured to display on a higher level in the action bar, in a specific category that you define. You promote actions by setting various properties on `action` controls.<br /><br /> For more information, see [Promoted Actions](devenv-promoted-actions.md). |Use promoted actions provide quick access to the most common tasks that would be performed by the user. Give categories a name that provides a good description of the included actions.|
+|9|Line action|Promoted actions are actions that are defined in the `area`control like any other action in code, but are configured to display on a higher level in the action bar, in a specific category that you define. You promote actions by setting various properties on `action` controls.<br /><br /> For more information, see [Promoted Actions](devenv-promoted-actions.md). |Use promoted actions provide quick access to the most common tasks that would be performed by the user. Give categories a name that provides a good description of the included actions.|
+|10|FactBoxes|FactBoxes are located on the right-most side of a page and it is divided into one or more parts that are arranged vertically. Each part can display different content including other pages, charts, and system parts such as Microsoft Outlook, Notes, and Record Links.<br /><br />  For more information, see [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md).|Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list.|
 
-For more information about navigation, see [Adding to Navigation](devenv-adding-menus-to-navigation-pane.md). 
 
 
 ### Behavioral points of interest
