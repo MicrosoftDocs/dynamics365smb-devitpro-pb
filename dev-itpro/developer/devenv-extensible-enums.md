@@ -70,7 +70,7 @@ Conversion to and from `enum` is more strict than for `Options` in C/SIDE.
 - An enum can be assigned/compared to an enum of the same type. 
 - To be backwards compatible we support conversion to/from any `Option` for now.
 
-## Known limitations
+### Known limitations
 - There is no runtime check for collision of IDs.
 - Declaring C/SIDE enums with the same ID on multiple table option fields will break the symbol generation.
 
