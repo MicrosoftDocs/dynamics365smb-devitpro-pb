@@ -335,6 +335,7 @@
 ## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
 ## [Enhancing Server Security](security/enhancing-server-instance-security.md)
 ## [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
+## [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
 ## [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
 <!-- end security -->
 <!-- upgrade -->
