@@ -1,5 +1,5 @@
 ---
-title: Secure Web Client - SSL Configuration
+title: Configuring SSL to Secure the Web Client Connection
 description: Learn how to secure data that is transmitted over the internet by enabling Secure Sockets Layer on the connection to Web Client.
 ms.custom: na
 ms.date: 11/24/2017
@@ -13,6 +13,7 @@ caps.latest.revision: 23
 author: jswymer
 ---
 # Configuring SSL to Secure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Client Connection
+
 We recommend that you secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
   
 *SSL* is a web protocol that encrypts data that is transmitted over a network to make the data and the network more secure and reliable. A website that is enabled with SSL uses Hypertext Transfer Protocol Secure \(HTTPS\) instead of Hypertext Transfer Protocol \(HTTP\) as a communication protocol. Enabling SSL on a website requires that an SSL certificate is installed on the web server. An SSL certificate is a small file that the web server uses to prove its identity and establish a trusted connection with the browser that is trying to access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. When a browser connects to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], the web server replies by sending its certificate to the browser. This certificate contains the web server's public encryption key and the name of the authority that granted the certificate. The browser verifies the certificate using the authority's public key.  
