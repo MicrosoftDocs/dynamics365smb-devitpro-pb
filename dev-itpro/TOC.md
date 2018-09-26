@@ -128,6 +128,7 @@
 ### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 ## [Notifications](developer/devenv-notifications-developing.md)
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
+## [Tables](developer/devenv-tables-overview.md)
 ## [Pages](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
 ### Fields
@@ -181,6 +182,7 @@
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
 ### [Table Object](developer/devenv-table-object.md)
 ### [Table Extension Object](developer/devenv-table-ext-object.md)
+### [Table Keys](developer/devenv-table-keys.md)
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
