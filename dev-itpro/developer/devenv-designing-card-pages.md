@@ -76,19 +76,14 @@ The following table describes the elements of a typical list page.
 
 ## [Developer tips](#tab/tips)
 
-### Card pages
+From the user’s perspective, the following are qualities of a well-designed card and document page:
 
-From the user’s perspective, the following are qualities of a well-designed card page:
+### Card pages
 
 -    It is used only for data that represents master or reference data. 
 -    The page title clearly identifies the entity/entry represented in the page.
--    It is optimized for viewing by organizing data in FastTabs, and fields are either shown or hidden by default based on their importance.
--    The most important fields are placed in a the first FastTab (**General**) in the most natural order from the user's perspective.
--    It includes one or two FactBoxes to give necessary statistics and quick access to related documents.
 
 ### Document pages
-
-From the user’s perspective, the following are the qualities of a well-designed document page:
 
 - It Is used only for data that represents a transaction or other important event in the domain of business.
 - The page title clearly identifies the transaction/event represented in the page.
