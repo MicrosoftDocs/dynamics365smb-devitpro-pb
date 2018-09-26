@@ -16,33 +16,43 @@ ms.author: jswymer
 
 # Designing Card and Document Pages
 
-The *card* page type displays selected fields from an underlying table. The *document* page type is very similar except it 
+The *card* page type displays selected fields from an underlying table. The *document* page type is very similar in structure to the card page, but in addition to fields, it also includes a part that lists line items related to a transaction or event. 
+
 
 ## [Overview](#tab/about)
- 
+
+### Card pages
+
 You design card pages when you want to enable user to view, create, and modify records (master and reference data) in a table, such as a customer, vendor, or item.
 
-Card pages are typically associated with list pages that uses the same table as their source. From the list page, users can select a record and open it the card page for viewing and editing.
+### Document pages
 
-Fields can be organized into one or more section called FastTabs. In addition, you can add FactBoxes to display additional information about the record in the page.
+Design document pages when you want to represent a transaction or other important event in the domain of business. Document pages are the computerized counterpart to paper-based documents, such as quotes, invoices, orders, and so on. As such, document pages often have associated workflow or audit trail requirements.
 
-### Customizing a card pages from the client
+## General
+
+Both page type are typically associated with list pages (like the customers or sales orders list) that uses the same table as their source. From the list page, users can select a record and open it the card or document page for viewing and editing.
+
+### Customizing a card and document pages from the client
 
 In the client, users can personalize card pages by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
 
-As a developer or administrator, you can use Designer to customize a card page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users assigned to the assigned to the same profile. For more information, see [Using Designer](devenv-inclient-designer.md). 
+As a developer or administrator, you can use Designer to customize a card and document page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users assigned to the assigned to the same profile. For more information, see [Using Designer](devenv-inclient-designer.md). 
 
 ## [Structure](#tab/structure)
 
 ### General definition
 
-A card page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
+A card page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. 
 
+A document page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Document`. A document page is also includes a `part()` control that embeds another page into the document page. This is typically that displays line items from the associated transaction or event.
+
+The following figure illustrates the general layout and elements of a card page and document page.
 ### Structure
 
 The following figure illustrates the general layout and elements of a list page.
 
-![Card page overview](media/card-page-overview.png "Card page overview")
+![Card and document page overview](media/card-document-page-overview.png "Card page overview")
 
 The following table describes the elements of a typical list page.
 
@@ -52,31 +62,44 @@ The following table describes the elements of a typical list page.
 |1|System actions|The icons provide users the ability to edit the record, create a new record, and delete the current record.<br /><br />The actions are only active if the [Editable](properties/devenv-editable-property.md) property is set to `true`.|These actions appear on all pages; you cannot remove them or add other actions.<br /><br />|
 |2|Action bar|The action bar provides links to other pages, reports, and codeunits. The action bar is defined by an `actions` control in the page code, and individual actions are defined by an `action()` control.<br /><br /> Actions can be displayed on three standard menus in the action bar, **Actions**, **Navigate**, and **Report**, or in a promoted category. You can arrange actions on menus in the root-level or grouped in a sub-menu.<br /><br /> The objects targeted by these links will open in a separate window.<br /><br />For more information, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md).|The action bar is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a sub-menu.|
 |3|Promoted actions|Promoted actions are actions that are defined in the `area()` control like any other action in code, but they are configured to display on a higher level in the action bar, in a specific category that you define. You promote actions by setting various `Promoted`-related properties on `action()` controls.<br /><br /> For more information, see [Promoted Actions](devenv-promoted-actions.md). |Use promoted actions to provide quick access to the most common tasks that would be performed by the user. Give categories a name that provides a good description of the included actions.|
-|5|FastTab|A FastTab is group of fields under a common heading. A FastTab is defined by a `group()` control in the `area(content)`. You can have multiple FastTabs on the page. In the client, FastTabs appear in the same order as they are defined in the page code.|FastTabs allow users to find key information on a page by displaying the data in separate groups.<br /><br />By default, fields in a FastTab are automatically distributed between two columns. However, you can change how fields are arranged by using the `grid()` and `fixed()`  controls of a FastTab. For more information, see [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md).  |
-|6|Field|A field in the source table, You specify a field by adding a `field()` control. The order of the `field()` controls in code determine the order the display in the client.||
-|7|Show more/less|Enables users to toggle more or fewer  fields in the FastTab. You specify which fields are shown or hidden in the FastTab by default by setting the `Importance` property on the fields. You can also use the property to display fields in the FastTab header when the FastTab is collapsed.<br /><br /> For more information, see [Importance](properties/devenv-importance-property.md) property.|You use this property to control the amount of information that is visible on a page. It is useful on pages that have a large number of fields, where you can display the most important fields by default, but users have the option to show more as needed.|
-|9|Line action|Promoted actions are actions that are defined in the `area`control like any other action in code, but are configured to display on a higher level in the action bar, in a specific category that you define. You promote actions by setting various properties on `action` controls.<br /><br /> For more information, see [Promoted Actions](devenv-promoted-actions.md). |Use promoted actions provide quick access to the most common tasks that would be performed by the user. Give categories a name that provides a good description of the included actions.|
-|10|FactBoxes|FactBoxes are located on the right-most side of a page and it is divided into one or more parts that are arranged vertically. Each part can display different content including other pages, charts, and system parts such as Microsoft Outlook, Notes, and Record Links.<br /><br />  For more information, see [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md).|Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list.|
+|4|FastTab|A FastTab is group of fields under a common heading. A FastTab is defined by a `group()` control in the `area(content)`. You can have multiple FastTabs on the page. In the client, FastTabs appear in the same order as they are defined in the page code.|FastTabs allow users to find key information on a page by displaying the data in separate groups.<br /><br />By default, fields in a FastTab are automatically distributed between two columns. However, you can change how fields are arranged by using the `grid()` and `fixed()`  controls of a FastTab. For more information, see [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md).  |
+|5|Field|A field in the source table, You specify a field by adding a `field()` control. The order of the `field()` controls in code determine the order the display in the client.||
+|6|Show more/less|Enables users to toggle more or fewer  fields in the FastTab. You specify which fields are shown or hidden in the FastTab by default by setting the `Importance` property on the fields. You can also use the property to display fields in the FastTab header when the FastTab is collapsed.<br /><br /> For more information, see [Importance](properties/devenv-importance-property.md) property.|You use this property to control the amount of information that is visible on a page. It is useful on pages that have a large number of fields, where you can display the most important fields by default, but users have the option to show more as needed.|
+|7|Sub-page|Displays line items that are associated with the transaction. This area is defined by a `part(Name; Page)` control that identifies the page to display. In this case, the page is a `listpart` page that displays line items for the sales order. |
+|8|Action bar|Displays actions that are defined on the sub-page. These actions are defined the same way as those in the action bar of the main page. ||
+|9|FactBoxes|FactBoxes are located on the right-most side of a page and it is divided into one or more parts that are arranged vertically. Each part can display different content including other pages, charts, and system parts such as Microsoft Outlook, Notes, and Record Links.<br /><br />  For more information, see [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md).|Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list.|
 
 
 ## [Behavior points](#tab/behavior)
 
 - There are a few system actions that are automatically added to the actions bar, such as **Search**, **See Attached** and **Open in Excel**.
-- Media and image fields only display in tile view.  
 
 ## [Developer tips](#tab/tips)
 
-### General
+### Card pages
 
 From the user’s perspective, the following are qualities of a well-designed card page:
 
--    Use only for data that represents master or reference data
+-    It is used only for data that represents master or reference data. 
 -    The page title clearly identifies the entity/entry represented in the page.
--    Optimize for overview by organizing data in FastTabs and marking relevant fields as Promoted or Additional.
--    Place the most important fields first, in a the first FastTab on the page. 
--    Include one or two FactBoxes to give necessary statistics and quick access to related documents.
+-    It is optimized for viewing by organizing data in FastTabs, and fields are either shown or hidden by default based on their importance.
+-    The most important fields are placed in a the first FastTab (**General**) in the most natural order from the user's perspective.
+-    It includes one or two FactBoxes to give necessary statistics and quick access to related documents.
 
-### 
+### Document pages
+
+From the user’s perspective, the following are the qualities of a well-designed document page:
+
+- It Is used only for data that represents a transaction or other important event in the domain of business.
+- The page title clearly identifies the transaction/event represented in the page.
+
+## General
+
+- It is optimized for viewing by organizing data in FastTabs, and fields are either shown or hidden by default based on their importance.
+- The most important fields are placed in a the first FastTab (**General**) in the most natural order from the user's perspective.
+- It includes one or two FactBoxes to give necessary statistics and quick access to related documents.
+- Within a FastTab, you can also use `group()` controls to create sub-groups of fields to improve data organization.
+- You can use the [Visible](properties/devenv-visible-property.md) to dynamically show or hide fields based on a defined logic.
 
 ## [Designing for devices](#tab/targets)
 
@@ -86,6 +109,10 @@ You can preview how your page will look on mobile devices directly in Designer.
 
 ### Promote actions
 Only promoted actions will display on mobile devices, so make sure you promote the actions that are most useful to users. For more information, see [Promoted Actions](devenv-promoted-actions.md). 
+
+### Design the sub-page list for the tile view
+
+On mobile devices, line items are only displayed as tiles. By default, the first 5 fields defined on the page are used in the tiles. So it is important that you configure a `fieldgroup(Brick; <Field>` control in the table code to display the desired fields. For more information, see [Field Groups](devenv-field-groups.md).
 
 ### Configure actions to display in shortcut menu on rows
 
