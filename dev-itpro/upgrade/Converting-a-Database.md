@@ -90,35 +90,53 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     ```  
 4. Unpublish extensions versions that you do not want to use in the upgraded database.
 
-5.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->application database.  
+    ```
+    Unpublish-NAVApp -ServerInstance dynamicsnav110 -Name System -Version 11.0.12925.0 
+    ```
+
+5. Unpublish and published symbols in the database. 
+
+    1. To get a list of the publsihed symbols, run the Get-NAVAppInfo cmdlet: 
+    
+        ```
+        Get-NAVAppInfo -ServerInstance <ServerInstanceName> -SymbolsOnly
+        ```
+    2. To unpublish symbol, run the Unpublsih-NAVAPP cmldet:
+  
+        ```
+        Unpublish-NAVApp -ServerInstance dynamicsnav110 -Name System -Version 11.0.12925.0 
+        ```
+
+
+6.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->application database.  
 
      For more information, see [Open Databases](../cside/cside-open-database.md).  
 
-5.  In Object Designer, verify that all objects are compiled and no objects are locked.  
+7.  In Object Designer, verify that all objects are compiled and no objects are locked.  
 
      For more information about compiling objects, see [Compiling Objects](../cside/cside-compiling-objects.md).
 
      If one or more objects are locked, the conversion process cannot update the database version number. As a result, the conversion does not complete. For more information, see [Locking and Unlocking Objects](../cside/cside-lock-unlock-objects.md).
 
-6.  On the **Tools** menu, choose **Build Server Application Objects**, and then choose the **Yes** button.  
+8.  On the **Tools** menu, choose **Build Server Application Objects**, and then choose the **Yes** button.  
 
-7.  If any errors occur, they are shown in the **Error List** window. Make sure that you address all compilation errors before you continue.  
+9.  If any errors occur, they are shown in the **Error List** window. Make sure that you address all compilation errors before you continue.  
 
-8.  Run the schema synchronization with validation to synchronize the database schema changes.  
+10.  Run the schema synchronization with validation to synchronize the database schema changes.  
 
     For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and application-database.md).
 
 
     <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?-->
 
-9.  <a name="uploadlicense"></a>Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Partner license to the database.  
+11.  <a name="uploadlicense"></a>Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Partner license to the database.  
 
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     > [!IMPORTANT]  
     >  The license that you upload must be a developer license. During the conversion, the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] will convert the report objects that are stored in the old database to the RDL format.  
 
-10. <a name="dismounttenant"></a>(Multitenant only) Dismount tenants.
+12. <a name="dismounttenant"></a>(Multitenant only) Dismount tenants.
 
     Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
 
@@ -126,7 +144,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     Dismount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID>
     ```
 
-11.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
+13.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
 
     You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)].
 
@@ -135,7 +153,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     Set-NAVServerInstance –ServerInstance <ServerInstanceName> -Stop
     ```
 
-12. <a name="clearsql"></a>Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old application database in SQL Server.  
+14. <a name="clearsql"></a>Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old application database in SQL Server.  
 
     Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
 
@@ -143,11 +161,12 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     DELETE FROM [<My NAV Database Name>].[dbo].[Server Instance]
     DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
     ```
-13. Close all to connections to the database.
+15. Close all to connections to the database.
 
     This includes but is not limited to [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients tools and SQL Server Management Studio.
  
-## Task 3: Run Technical Upgrade on the Old Database  
+## Task 3: Run Technical Upgrade on the Old Database
+  
 Next, you will convert the old database so that it can be used with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 > [!TIP]  
@@ -224,7 +243,38 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
     ``` 
-publish system and test
+
+14. Publish system and test symbols and generate app symbols.
+
+    1. <a name="PublishSymbols"></a>Publish the system.app and test.app symbol files.
+
+        If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
+
+        To publish the symbols, open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and run the following command for each of the symbol files:
+
+        ```
+        Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <SymbolFilePath> -PackageType SymbolsOnly
+        ```
+    2. <a name="GenerateSymbols"></a>Generate the application symbol references by using the finsql.exe file as follows:
+
+        Open a command prompt as an administrator, change to the directory where the `finsql.exe` file has been installed as part of [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and then run the following command:
+
+        ```
+        finsql.exe Command=generatesymbolreference, Database="<MyDatabaseName>", ServerName=<DatabaseServerName>\<DatabaseInstance>
+        ```
+
+        Replace values for the `Database` and `ServerName` settings to suit.
+
+        > [!NOTE]  
+        >  This command does not generate a file. It populates the **Object Metadata** table in the database.
+
+        When you run the command, the console returns to an empty command prompt, and does not display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**. 
+    
+        When the process ends, a file named **navcommandresult.txt** is saved to the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] installation folder. If the command succeeded, the file will contain text like `[0] [06/12/17 14:36:17] The command completed successfully in '177' seconds.` If the command failed, another file named **naverrorlog.txt** will be generated. This file contains details about the error(s) that occurred. 
+            
+        For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](../developer/devenv-running-cside-and-al-side-by-side.md).
+
+
 generate app symbols
 enable server for app symbols
 publish new Microsoft V2s
