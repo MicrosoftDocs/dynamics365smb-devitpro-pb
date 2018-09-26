@@ -16,7 +16,7 @@ ms.author: jswymer
 
 # Designing Card and Document Pages
 
-The *card* page type displays selected fields from an underlying table. The *document* page type is very similar in structure to the card page, but in addition to fields, it also includes a part that lists line items related to a transaction or event. 
+The *card* page type displays selected fields from an underlying table. The *document* page type is very similar in structure to the card page, but in addition to fields, it also includes a part that includes another page, called a sub-page. 
 
 
 ## [Overview](#tab/about)
@@ -113,10 +113,6 @@ Only promoted actions will display on mobile devices, so make sure you promote t
 ### Design the sub-page list for the tile view
 
 On mobile devices, line items are only displayed as tiles. By default, the first 5 fields defined on the page are used in the tiles. So it is important that you configure a `fieldgroup(Brick; <Field>` control in the table code to display the desired fields. For more information, see [Field Groups](devenv-field-groups.md).
-
-### Configure actions to display in shortcut menu on rows
-
-Using the [Scope](properties/devenv-scope-property.md) property, configure actions to display in the shortcut menu that is available on each row. You typically do this for common actions that relate to records in the list, such as the **Line Comments** action. This gives users a more direct way to invoke actions that relate to the selected row or line.
 
  
 ## See Also
