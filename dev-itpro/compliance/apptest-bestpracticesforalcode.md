@@ -44,6 +44,8 @@ Use the listed abbreviations for each type of object in the file naming:
 |XML Port  |Xml|
 |Report    |Rep|
 |Query     |Que|
+|Enum      |Enu|
+|Enum Extension|EnuExt|
 
 ### Examples of file naming
 The following table illustrates how the file naming should look.
