@@ -91,6 +91,10 @@ For the most part, mobile devices will display the same content as the [!INCLUDE
 
 You can preview how your page will look on mobile devices directly in Designer.
 
+### Limit the columns
+
+Design list pages to avoid having important columns on the far right of the column list. Assume you have no control over how many columns are displayed and consider that only the first few columns will be made visible.
+
 ### Design for the tile view
 
 On mobile devices, records are only displayed as tiles. By default, the first 5 fields defined on the page are used in the tiles. So it is important that you configure a `fieldgroup(Brick; <Field>` control in the table code to display the desired fields. For more information, see [Field Groups](devenv-field-groups.md).
@@ -105,7 +109,6 @@ Using the [Scope](properties/devenv-scope-property.md) property, configure actio
 ### Configure the gesture for actions
 
 Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
-
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
