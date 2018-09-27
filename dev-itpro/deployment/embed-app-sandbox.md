@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+[!INCLUDE[embedapp_preview](../developer/includes/embedapp_preview.md)]
+
 # [!INCLUDE[embedapp](../developer/includes/embedapp.md)] Sandbox 
 [!INCLUDE[embedapp](../developer/includes/embedapp.md)] customers, just like [!include[prodshort](../developer/includes/prodshort.md)] customers, can choose to create a Sandbox environment in addition to their production environment and use it for developing and testing customizations, demos, trainings and similar non-production activities.
 

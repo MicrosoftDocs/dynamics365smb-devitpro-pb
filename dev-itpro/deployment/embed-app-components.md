@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+[!INCLUDE[embedapp_preview](../developer/includes/embedapp_preview.md)]
 
 # [!INCLUDE[embedapp](../developer/includes/embedapp.md)] Components and Capabilities
 Because an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] should provide end-to-end experience for the customers, the partner designing this experience, must be able to affect and control more parts of the [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] service experience.

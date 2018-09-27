@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+[!INCLUDE[embedapp_preview](../developer/includes/embedapp_preview.md)]
+
 # Microsoft Responsibilities when Running an Embed App  
 [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] is a cloud service for small to medium-sized businesses that is built on and for Microsoft Azure. It provides organizations with a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions and make better decisions.
 
