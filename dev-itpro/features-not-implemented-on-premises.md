@@ -2,15 +2,15 @@
 title: Features not implemented in on-premises deployments
 description: Some features work differently or not at all, depending on whether your Business Central solution is in the cloud or on-premises.
 author: edupont04
-manager: edupont
-ms.author: edupont
+
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 08/29/2018
+ms.author: edupont
+ms.date: 09/27/2018
 ---
 # Features not implemented in on-premises deployments of [!INCLUDE[prodlong](includes/prodlong.md)]
 
@@ -34,7 +34,6 @@ The following features are not available in all on-premises deployments because 
 |Built-in web services |A number pages and queries are exposed as web services. However, the default endpoint must be manually updated before the web services can be consumed. |
 |Outlook add-in  |The Outlook add-in requires Dynamics NAV User/Password or Azure Active Directory as the authentication mechanism. |
 |Standard REST API | [!INCLUDE[prodshort](includes/prodshort.md)] contains new standard REST APIs. However, on-premises deployments cannot be reached through Microsoft Graph or the common endpoint, `https://api.businesscentral.dynamics.com/v1.0/api/beta`. Instead, you must connect directly to the on-premises deployment, just as when you connect to web services. |
-|In-product search in Help |In online deployments of [!INCLUDE[prodshort](includes/prodshort.md)], you can extend an in-product search to also search in content on the docs.microsoft.com site, or another website that is specified in the configuration of the application by an extension. For on-premises deployments, this is only supported where the legacy Help Server is not enabled. |
 
 ## Features not intended for use in on-premises deployments
 
@@ -43,9 +42,11 @@ The following features are not intended for use in on-premises deployments. Ther
 |**Feature**  |**Description**  |
 |---------|---------|
 |Inviting the external accountant |Integration with [!INCLUDE[d365acc_long](includes/d365acc_long_md.md)] is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
+|Default Power BI reports |Automatic deployment and configuration of Power BI reports is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
 |Bulk Invoicing from Microsoft Bookings |Integration with the Bookings app in Office Business Premium is not supported.  |
-|Create Workflow from Flow |Microsoft Flow does not integrate with on-premises workflow functionality.  |
+|Create workflow from Flow |Microsoft Flow does not integrate with on-premises workflow functionality.  |
 |Sandbox environments  |The sandbox environment that you can use to develop extensions against for the new developer experience cannot connect to an on-premises deployment. For more information, see [Get started with the Container Sandbox Development Environment](/developer/devenv-get-started-container-sandbox.md). |
+|In-product search |In online deployments of [!INCLUDE[prodshort](includes/prodshort.md)], Tell Me, the in-product search, also searches in content on the docs.microsoft.com site. For on-premises deployments, this is not supported. |
 
 ## See Also
 
