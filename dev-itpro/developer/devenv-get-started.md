@@ -33,6 +33,7 @@ Go through the following steps to set up a sandbox environment. With this you ge
 
 > [!NOTE]    
 > If you want to change your configuration at a later point in time, go to **Debug** on the left side, select **Add Configuration**, choose one of the available options, and remove the previous configuration from the `launch.json` file.  
+
 6) Enter the credentials you provided for the sign up, and then **Download symbols**. To manually download the symbols, press **Ctrl+Shift+P** and select **AL: Download symbols**. 
 7) Press **F5** to deploy and run the extension on your online sandbox tenant.  
 
