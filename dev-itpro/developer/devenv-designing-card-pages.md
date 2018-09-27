@@ -29,9 +29,9 @@ You design card pages when you want to enable user to view, create, and modify r
 
 Design document pages when you want to represent a transaction or other important event in the domain of business. Document pages are the computerized counterpart to paper-based documents, such as quotes, invoices, orders, and so on. As such, document pages often have associated workflow or audit trail requirements.
 
-## General
+### Associate with a list page
 
-Both page type are typically associated with list pages (like the customers or sales orders list) that uses the same table as their source. From the list page, users can select a record and open it the card or document page for viewing and editing.
+Both page types are typically associated with list pages (like the customers or sales orders list) that uses the same table as their source. From the list page, users can select a record and open it the card or document page for viewing and editing.
 
 ### Customizing a card and document pages from the client
 
@@ -110,7 +110,7 @@ Only promoted actions will display on mobile devices, so make sure you promote t
 
 - Design for tile view
 
-    On mobile devices, line items are only displayed as tiles. By default, the first 5 fields defined on the page are used in the tiles. So it is important that you configure a `fieldgroup(Brick; <Field>` control in the table code to display the desired fields. For more information, see [Field Groups](devenv-field-groups.md).
+    On mobile devices, line items are only displayed as tiles. By default, the first 5 fields defined on the page are used in the tiles. So, it is important that you configure a `fieldgroup(Brick; <Field>` control in the table code to display the desired fields. For more information, see [Field Groups](devenv-field-groups.md).
 
 -    Configure actions to display in shortcut menu on line items
 
