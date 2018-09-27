@@ -2,7 +2,7 @@
 title: "CreateOutStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,12 +24,14 @@ Creates an OutStream object for a binary large object (BLOB). This enables you t
 *Blob*  
 &emsp;Type: [Blob](blob-data-type.md)  
 An instance of the [Blob](blob-data-type.md) data type.  
+
 *OutStream*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
-The OutStream object type that has been created.  
+The OutStream object type that has been created.
+        
 *Encoding*  
 &emsp;Type: [TextEncoding](textencoding-option.md)  
-  
+The encoding that will be used by the stream.  
 
 
 

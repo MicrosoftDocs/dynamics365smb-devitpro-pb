@@ -2,7 +2,7 @@
 title: "IsAttached Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Ok :=   Debugger.IsAttached()
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-**True** if the debugger is attached to a session; otherwise, **false**. 
+**true** if the debugger is attached to a session; otherwise, **false**. 
 
 ## See Also
 [Debugger Data Type](debugger-data-type.md)  

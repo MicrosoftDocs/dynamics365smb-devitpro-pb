@@ -2,7 +2,7 @@
 title: "Confirm Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,8 @@ Ok :=   Dialog.Confirm(String: String, [Default: Boolean], [Value1: Any,...])
 ## Parameters
 *String*  
 &emsp;Type: [String](string-data-type.md)  
-Specifies the string that is displayed in the dialog box. Use a backslash (\) to indicate a new line. The string can be a text constant that is enabled for multilanguage functionality.  
+Specifies the string that is displayed in the dialog box. Use a backslash (\) to indicate a new line. The string can be a text constant that is enabled for multilanguage functionality.
+        
 *Default*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 Specifies the default button. If you do not specify a default button, then No is used as the default button.  

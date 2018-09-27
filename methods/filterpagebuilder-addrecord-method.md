@@ -2,7 +2,7 @@
 title: "AddRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # AddRecord Method
-Adds a filter control for a table to a filter page. The table is specified by a record data type variable that is passed to the function.
+Adds a filter control for a table to a filter page. The table is specified by a record data type variable that is passed to the method.
 
 ## Syntax
 ```
@@ -24,9 +24,11 @@ Adds a filter control for a table to a filter page. The table is specified by a 
 *FilterPageBuilder*  
 &emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
+
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
-  
+Assigns a name to the filter control for the table. The text displays as the caption for the filter control on the rendered filter page in the client.
+        
 *Record*  
 &emsp;Type: [Table](table-data-type.md)  
 The record to use in the filter control.  
@@ -36,7 +38,8 @@ The record to use in the filter control.
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned.
+        
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

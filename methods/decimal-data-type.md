@@ -2,7 +2,7 @@
 title: "Decimal Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,22 +14,11 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # Decimal Data Type
-This simple data type denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99.
+Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99.
 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-## Methods
-The methods supported for the Decimal data type are:
-
-[BigInteger Data Type](devenv-biginteger-data-type.md)   
-[Integer Data Type](devenv-integer-data-type.md)   
-[ABS method (Decimal, Integer, BigInteger)](../methods/devenv-abs-method-decimal-integer-biginteger.md)   
-[POWER method (Decimal, Integer, BigInteger)](../methods/devenv-power-method-decimal-integer-biginteger.md)   
-[RANDOM method (Integer)](../methods/devenv-random-method-integer.md)   
-[RANDOMIZE method (Integer)](../methods/devenv-randomize-method-integer.md)   
-[ROUND method (Decimal)](../methods/devenv-round-method-decimal.md)
 
 ## Example  
  The following are examples of decimal values.  

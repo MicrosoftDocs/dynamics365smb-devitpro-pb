@@ -2,7 +2,7 @@
 title: "DateTime Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,14 +40,6 @@ The syntax for defining DateTime format follows the [ISO standard](https://en.wi
 - The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 26th of March, 2018.
 - The syntax for defining Time format is `hhmmssT`, where `T` is the time designator. For example, `093125H`, read as 9:13:25.
 
-## Methods
-The methods supported for the DateTime data type are:
-
-[CREATEDATETIME method (DateTime)](../methods/devenv-createdatetime-method-datetime.md)   
-[CURRENTDATETIME method (DateTime)](../methods/devenv-currentdatetime-method-datetime.md)   
-[DT2DATE method (DateTime)](../methods/devenv-dt2date-method-datetime.md)   
-[DT2TIME method (DateTime)](../methods/devenv-dt2time-method-datetime.md)   
-[ROUNDDATETIME method (DateTime)](../methods/devenv-rounddatetime-method-datetime.md)
 
 ## SQL Server  
  In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000. The latest permitted DateTime is December 31, 9999, 23:59:59.999.  

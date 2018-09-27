@@ -2,7 +2,7 @@
 title: "Date Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/05/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,20 +42,6 @@ The syntax for defining DateTime format follows the [ISO standard](https://en.wi
   
  If you store a date in the database that is outside the valid range for a SQL DATETIME, a run-time error occurs.  
 
-## Methods
-The methods supported for the Date data type are:
-
-[CALCDATE method (Date)](../methods/devenv-calcdate-method-date.md)   
-[CLOSINGDATE method (Date)](../methods/devenv-closingdate-method-date.md)   
-[DATE2DMY method (Date)](../methods/devenv-date2dmy-method-date.md)   
-[DATE2DWY method (Date)](../methods/devenv-date2dwy-method-date.md)   
-[DMY2DATE method (Date)](../methods/devenv-dmy2date-method-date.md)   
-[DWY2DATE method (Date)](../methods/devenv-dwy2date-method-date.md)   
-[NORMALDATE method (Date)](../methods/devenv-normaldate-method-date.md)   
-[TODAY method (Date)](../methods/devenv-today-method-date.md)   
-[VARIANT2DATE method](../methods/devenv-variant2date-method.md)   
-[WORKDATE method (Date)](../methods/devenv-workdate-method-date.md)
-<!--[DATI2VARIANT method](../articles/devenv-methods-not-supported/devenv-dati2variant-method.md)  --> 
 
 ## Example  
 This example shows a valid assignment of date. It requires that you define the following variable.  

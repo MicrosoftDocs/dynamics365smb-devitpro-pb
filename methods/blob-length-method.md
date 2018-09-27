@@ -2,7 +2,7 @@
 title: "Length Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ Returns the number of bytes in the binary large object (BLOB).
 
 ## Syntax
 ```
-HasValue :=   Blob.Length()
+Length :=   Blob.Length()
 ```
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
@@ -29,9 +29,9 @@ HasValue :=   Blob.Length()
 An instance of the [Blob](blob-data-type.md) data type.  
 
 ## Return Value
-*HasValue*  
+*Length*  
 &emsp;Type: [Integer](integer-data-type.md)  
-  
+The number of bytes in the binary large object (BLOB).  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

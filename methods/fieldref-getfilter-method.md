@@ -2,7 +2,7 @@
 title: "GetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 ## Remarks  
  See also [GETFILTERS Method \(RecordRef\)](devenv-GETFILTERS-Method-RecordRef.md), [SETFILTER Method \(FieldRef\)](devenv-SETFILTER-Method-FieldRef.md), and [SETRANGE Method \(FieldRef\)](devenv-SETRANGE-Method-FieldRef.md).  
   
- This method is like the [GETFILTER Method \(Record\)](devenv-GETFILTER-Method-Record.md)method.  
+ This method is like the [GETFILTER Method \(Record\)](devenv-GETFILTER-Method-Record.md) method.  
   
 ## Example  
  The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](devenv-FIELD-Method-RecordRef.md) creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The GETFILTER method retrieves the filters that are set on the No. field and stores the value in the Filters1 variable. The value of any filter that is set is displayed in a message box. The [SETFILTER Method \(FieldRef\)](devenv-SETFILTER-Method-FieldRef.md) sets the filter that selects records from 10000 to 40000 in the No. field. The GETFILTER method retrieves and stores the filter in the Filter2 variable and displays it in a message. The value in the Filter1 variable is blank because no filter is set. The value in Filter2 is 10000..40000 because of the filter that is set by the [SETFILTER Method \(FieldRef\)](devenv-SETFILTER-Method-FieldRef.md). This example requires that you create the following global variables and text constants.  

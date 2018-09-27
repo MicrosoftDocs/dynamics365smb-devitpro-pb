@@ -2,7 +2,7 @@
 title: "StrMenu Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,12 +25,12 @@ OptionNumber :=   Dialog.StrMenu(OptionMembers: String, [DefaultNumber: Integer]
 ## Parameters
 *OptionMembers*  
 &emsp;Type: [String](string-data-type.md)  
-A comma-separated string. Each substring in OptionString specifies an option on the menu. The string can be a text constant that is enabled for multilanguage functionality.  
+A comma-separated string. Each substring in OptionString specifies an option on the menu. The string can be a text constant that is enabled for multilanguage functionality.
+        
 *DefaultNumber*  
 &emsp;Type: [Integer](integer-data-type.md)  
-Use this optional parameter to determine a default option, which is highlighted. The options are numbered 1, 2, 3, 4, and so on.
-If you omit this optional parameter, the first option (1) is used as the default.
-            
+Use this optional parameter to determine a default option, which is highlighted. The options are numbered 1, 2, 3, 4, and so on. If you omit this optional parameter, the first option (1) is used as the default.
+          
 *Instruction*  
 &emsp;Type: [String](string-data-type.md)  
 Use this optional parameter to add a description to the option values.  
@@ -39,7 +39,7 @@ Use this optional parameter to add a description to the option values.
 ## Return Value
 *OptionNumber*  
 &emsp;Type: [Integer](integer-data-type.md)  
-  
+The number of the menu option that the user selected. If the user presses the Esc key to exit the menu, zero (0) is returned.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

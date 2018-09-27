@@ -2,7 +2,7 @@
 title: "Count Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ Gets the number of filter controls that are specified in the FilterPageBuilder o
 
 ## Syntax
 ```
-Ok :=   FilterPageBuilder.Count()
+Count :=   FilterPageBuilder.Count()
 ```
 > [!NOTE]  
 > This method can be invoked using property access syntax.  
@@ -29,9 +29,9 @@ Ok :=   FilterPageBuilder.Count()
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 ## Return Value
-*Ok*  
+*Count*  
 &emsp;Type: [Integer](integer-data-type.md)  
-  
+The number of filter controls in the current FilterPageBuilder object instance.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

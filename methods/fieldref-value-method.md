@@ -2,7 +2,7 @@
 title: "Value Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,7 @@ Sets or gets the value of the field that is currently selected. This function re
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
+
 *NewValue*  
 &emsp;Type: [Any](any-data-type.md)  
   

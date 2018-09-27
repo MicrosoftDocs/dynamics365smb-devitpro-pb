@@ -2,7 +2,7 @@
 title: "HasValue Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ An instance of the [Blob](blob-data-type.md) data type.
 ## Return Value
 *HasValue*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-  
+**true** if the BLOB has a value, otherwise **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

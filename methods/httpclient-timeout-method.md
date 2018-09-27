@@ -2,7 +2,7 @@
 title: "Timeout Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/31/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,15 +26,16 @@ Gets or sets the duration in seconds to wait before the request times out.
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
+
 *SetTimeout*  
 &emsp;Type: [Duration](duration-data-type.md)  
-  
+The duration in seconds to wait before the request times out.  
 
 
 ## Return Value
 *CurrentTimeout*  
 &emsp;Type: [Duration](duration-data-type.md)  
-  
+The duration in seconds to wait before the request times out.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
