@@ -20,7 +20,7 @@ The AL code in this article creates a simple card page that displays records fro
 
 ![Card page example](media/sample-card-page.png "[Card page example")
 
-For a more detailed explanation of the list page, see [Designing List Pages](devenv-designing-list-pages.md).
+For a more detailed explanation of the list page, see [Designing Card and Document Pages](devenv-designing-card-pages.md).
 
 
 ```
@@ -30,12 +30,15 @@ page 50112 SampleCustomerCard
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = Customer;
+
+    //Defines the names for promoted categories for actions.
     PromotedActionCategories = 'New,Process,Report,Manage,New Document,Request Approval,Customer';
 
     layout
     {
         area(Content)
         {
+            //Defines a FastTab that has the heading 'General'.
             group(General)
             {
                 field("No."; "No.")
@@ -49,7 +52,9 @@ page 50112 SampleCustomerCard
 
                 }
             }
-            group(Conact)
+
+            //Defines a FastTab that has the heading 'Contact'.
+            group(Contact)
             {
                 field(Name; Contact)
                 {
@@ -69,6 +74,8 @@ page 50112 SampleCustomerCard
     {
         area(Processing)
         {
+
+            //Defines action that display under the 'Actions' menu.
             action("New Sales Quote")
             {
                 ApplicationArea = All;
@@ -86,6 +93,8 @@ page 50112 SampleCustomerCard
                 ApplicationArea = All;
                 RunObject = page "Customer Bank Account List";
                 Promoted = true;
+
+                //Promotes the action to the category named 'Customer'.
                 PromotedCategory = Category7;
                 Image = BankAccount;
                 trigger OnAction();
@@ -97,6 +106,8 @@ page 50112 SampleCustomerCard
         }
         area(Reporting)
         {
+
+            //Defines action that display under the 'Report' menu.
             action("Statement")
             {
                 ApplicationArea = All;

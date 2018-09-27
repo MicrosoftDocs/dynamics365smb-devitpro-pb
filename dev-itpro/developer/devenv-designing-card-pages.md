@@ -44,6 +44,7 @@ As a developer or administrator, you can use Designer to customize a card and do
 ### General definition
 
 A card page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. 
+For a simple code example of a list page, see [Simple Card Page Example](devenv-simple-card-page-example.md).
 
 A document page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Document`. A document page is also includes a `part()` control that embeds another page into the document page. This is typically that displays line items from the associated transaction or event.
 
@@ -108,6 +109,14 @@ Only promoted actions will display on mobile devices, so make sure you promote t
 ### Design the sub-page list for the tile view
 
 On mobile devices, line items are only displayed as tiles. By default, the first 5 fields defined on the page are used in the tiles. So it is important that you configure a `fieldgroup(Brick; <Field>` control in the table code to display the desired fields. For more information, see [Field Groups](devenv-field-groups.md).
+
+### Configure actions to display in shortcut menu on line items
+
+Using the [Scope](properties/devenv-scope-property.md) property, configure actions to display in the shortcut menu that is available on line item. You typically do this for common actions that relate to records in the list, such as the **Line Comments** action. This gives users a more direct way to invoke actions that relate to the selected row or line.
+
+### Configure the gesture for actions
+
+Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
 
  
 ## See Also
