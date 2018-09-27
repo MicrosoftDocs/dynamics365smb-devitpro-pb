@@ -55,7 +55,7 @@ In order to add fields to a field group, you create a table extension and specif
 > [!WARNING]  
 > The server will remove the duplicates, if multiple extensions attempt to add the same field more than once. A field can only be added to the field group once.
 
-### Define fields for a drop-down control
+## Define fields for a drop-down control
 
 You define a field to include in a drop-down control by using the `DropDown` field group name in the keyword.
 

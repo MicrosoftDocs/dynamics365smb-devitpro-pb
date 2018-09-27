@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Tablet client
+Business Central Tablet client

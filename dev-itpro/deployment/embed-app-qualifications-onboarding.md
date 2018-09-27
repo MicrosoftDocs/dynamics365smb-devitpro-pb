@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+[!INCLUDE[embedapp_preview](../developer/includes/embedapp_preview.md)]
+
 # Qualification and Onboarding of ISV Partners to [!INCLUDE[embedapp](../developer/includes/embedapp.md)]
  
 [!INCLUDE[embedapp](../developer/includes/embedapp.md)] Qualification requirements are being finalized by the owners. The main criteria for [!INCLUDE[embedapp](../developer/includes/embedapp.md)] Onboarding at this point are: 

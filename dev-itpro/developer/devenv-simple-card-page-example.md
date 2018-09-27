@@ -14,55 +14,53 @@ ms.author: jswymer
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# Simple List Page Code Example
+# Simple Card Page Code Example
 
-The AL code in this article creates a simple list page that displays records from an existing table.
+The AL code in this article creates a simple card page that displays records from an existing table.
 
-![List page example](media/sample-list-page.png "[List page example")
+![Card page example](media/sample-card-page.png "[Card page example")
 
-For a more detailed explanation of the list page, see [Designing List Pages](devenv-designing-list-pages.md).
+For a more detailed explanation of the list page, see [Designing Card and Document Pages](devenv-designing-card-pages.md).
 
 
 ```
-page 50111 SampleCustomerList
+page 50112 SampleCustomerCard
 {
-    PageType = List;
+    PageType = Card;
     ApplicationArea = All;
-
-    // Specifies the page to display records from the Customer table.
+    UsageCategory = Administration;
     SourceTable = Customer;
 
-    // Makes the page searchable from the Tell me what you want to do feature. 
-    UsageCategory = Lists;
-
-    // Specifies the card page Sample Customers to be uses for modifying or creating new customer records.
-    CardPageId = 50112;
-
-    // Sets the title of the page to Sample Customers.
-    Caption = 'Sample Customers';
+    //Defines the names for promoted categories for actions.
+    PromotedActionCategories = 'New,Process,Report,Manage,New Document,Request Approval,Customer';
 
     layout
     {
         area(Content)
         {
-            // Sets the No., Name, Contact, and Phone No. fields in the Customer table to be displayed as columns in the list. 
-            repeater(Group)
+            //Defines a FastTab that has the heading 'General'.
+            group(General)
             {
                 field("No."; "No.")
                 {
                     ApplicationArea = All;
 
                 }
-                field(Name; Name)
+                field(Customer; Name)
                 {
                     ApplicationArea = All;
 
                 }
-                field(Contact; Contact)
+            }
+
+            //Defines a FastTab that has the heading 'Contact'.
+            group(Contact)
+            {
+                field(Name; Contact)
                 {
                     ApplicationArea = All;
-                }
 
+                }
                 field(Phone; "Phone No.")
                 {
                     ApplicationArea = All;
@@ -70,28 +68,14 @@ page 50111 SampleCustomerList
                 }
             }
         }
-    
     }
 
     actions
     {
-        // Adds an action on the Actions menu of the action bar that opens the page Customer Ledger Entries. 
         area(Processing)
         {
-            action("Ledger Entries")
-            {
-                ApplicationArea = All;
-                RunObject = page "Customer Ledger Entries";
-                trigger OnAction();
-                begin
 
-                end;
-            }
-        }
-
-        // Promotes an action for creating a sales quote to promoted action menu called New.
-        area(Creation)
-        {
+            //Defines action that display under the 'Actions' menu.
             action("New Sales Quote")
             {
                 ApplicationArea = All;
@@ -104,15 +88,30 @@ page 50111 SampleCustomerList
 
                 end;
             }
-        }
-
-        // Adds an action on the Report menu that opens the Top 10 List report.
-        area(Reporting)
-        {
-            action("Top 10 List")
+            action("Banks Account")
             {
                 ApplicationArea = All;
-                RunObject = report "Customer - Top 10 List";
+                RunObject = page "Customer Bank Account List";
+                Promoted = true;
+
+                //Promotes the action to the category named 'Customer'.
+                PromotedCategory = Category7;
+                Image = BankAccount;
+                trigger OnAction();
+                begin
+
+                end;
+            }
+
+        }
+        area(Reporting)
+        {
+
+            //Defines action that display under the 'Report' menu.
+            action("Statement")
+            {
+                ApplicationArea = All;
+                RunObject = codeunit "Customer Layout - Statement";
                 trigger OnAction();
                 begin
 
@@ -120,6 +119,8 @@ page 50111 SampleCustomerList
             }
         }
     }
+    var
+        myInt: Integer;
 }
 
 ```

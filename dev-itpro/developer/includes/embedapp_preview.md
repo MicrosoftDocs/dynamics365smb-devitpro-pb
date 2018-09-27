@@ -1,0 +1,1 @@
+> Embed App is in limited preview, and is still under development. We are currently not onboarding additional partners. This content is provided for informational purposes so you can learn more about Embed App offering. Stay tuned for upcoming announcements about Embed App availability in 2019.

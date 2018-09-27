@@ -14,87 +14,112 @@ ms.author: jswymer
 
 [!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
-# Designing Card Pages
+# Designing Card and Document Pages
 
-The *card* page type displays selected fields from an underlying table.
-
-## About the card page 
-You design card pages when you want to enable user to view, create, and modify records (master and reference data) in a table, such as Customer, Vendor, and Item entities.
-
-Card pages are linked from list pages that are associated with the underlying table. From the list page, users can select a record and open it the card page for viewing and editing.
-
-Fields can be organized into one or more sections, or FastTabs. In addition, you can add FactBoxes that displays additional information about the record in the page.
+The *card* page type displays selected fields from an underlying table. The *document* page type is very similar in structure to the card page, but in addition to fields, it also includes a part that includes another page, called a sub-page. 
 
 
-### Customizing a card pages from the client
-In the client, users can personalize their Role Centers by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
+## [Overview](#tab/about)
 
-As a developer or administrator, you can use Designer to customize a Role Center the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the Role Center. For more information, see [Using Designer](devenv-inclient-designer.md). 
+### Card pages
 
-## Card page structure
-A card page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
+You design card pages when you want to enable user to view, create, and modify records (master and reference data) in a table, such as a customer, vendor, or item.
 
-Mention system actions at top
-importance in list part/show more.
+### Document pages
 
+Design document pages when you want to represent a transaction or other important event in the domain of business. Document pages are the computerized counterpart to paper-based documents, such as quotes, invoices, orders, and so on. As such, document pages often have associated workflow or audit trail requirements.
 
-![Card page overview](media/card-page-overview.png "Card page overview")
+### Associate with a list page
 
-## Navigation and Actions area
-The navigation and actions area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits. You define the navigation area by adding actions to the Role Center page code, under the `actions` control in the page code. The navigation and actions area is subdivided into smaller areas by using different `area()` controls as described in the following table:
+Both page types are typically associated with list pages (like the customers or sales orders list) that uses the same table as their source. From the list page, users can select a record and open it the card or document page for viewing and editing.
+
+### Customizing a card and document pages from the client
+
+In the client, users can personalize card pages by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). 
+
+As a developer or administrator, you can use Designer to customize a card and document page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users assigned to the assigned to the same profile. For more information, see [Using Designer](devenv-inclient-designer.md). 
+
+## [Structure](#tab/structure)
+
+### General definition
+
+A card page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. 
+For a simple code example of a list page, see [Simple Card Page Example](devenv-simple-card-page-example.md).
+
+A document page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Document`. A document page is also includes a `part()` control that embeds another page into the document page. This is typically that displays line items from the associated transaction or event.
+
+The following figure illustrates the general layout and elements of a card page and document page.
+### Structure
+
+The following figure illustrates the general layout and elements of a list page.
+
+![Card and document page overview](media/card-document-page-overview.png "Card page overview")
+
+The following table describes the elements of a typical list page.
 
 
 |    |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
-|1|Navigation menus|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. The pages targeted by the submenus will open in the content area of the Role Center. <br /><br />You define this area with an `area(sections)` control in the page code.|The top-level navigation should provide access to relavant enitity lists for the role's areas of business. For example, typical root items for a business manager could be finance, sales, and purchasing. You should place the root items in order of importance, starting from the left.|
-|2|Navigation bar|The second-level navigation displays a flat list of links to other pages. The pages targeted by the links will open in the content area of the Role Center.<br /><br />You define this area with an `area(embedding)` control in the page code.|You should use these items to link to users’ most useful entity lists in thier business process. For example, with a business manager, these could be links to customers, sales orders, and bank accounts. You should place items in the order that reflects the business process sequence. Try to limit the number of second-level items, and consider placing items in the top-level navigation instead, if the number gets too large. |
-|3|Actions|The actions area provides links to pages, reports, and codeunits. The links can be displayed on the root-level or grouped in a submenu. The objects targeted by these links will open in a separate window in front of the Role Center page.<br /><br />You can define the actions by using the three different `area()` controls that are described below: |The action area is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a submenu.|
-|||`area(creation)` - Actions in this control will appear first in the action area, and will display with a plus (+) icon. |Use this control to target pages that enable the user to create new entities.|
-|||`area(processing)` - Actions in this control will appear after the `area(creation)` items. You can group actions in submenus by using a `group` control.|Use this control to target pages that are associated with the work flow for processing documents, such as payments or sales orders. Use the `group` control to organize similar actions under a common parent.|
-|||`area(reporting)` - Actions in this control will appear last in the action area. They display with a default report icon. |Use this conteol to target report objects.|
-
-For more information about navigation, see [Adding to Navigation](devenv-adding-menus-to-navigation-pane.md). 
-
-
-### Behavioral points of interest
--   The order of the `area()` controls in the page code is not important. However, the order of the individual actions and groups is important because they will appear in the order in which they appear in page code.  
--   In page code, if the first part in the content area is a Headline part, then in the client, the actions area will be automatically positioned either to the right of the Headline part or after the Headline part, depending on the browser window size. If the first part is not a Headline, the actions area will appear directly after the navigation area, and extend the width of the workspace. 
-
-## Content area
-The content area consists of one or more parts that display content from other pages. Unlike the navigation and actions area that is completely defined in the Role Center page code, the content area consists of self-contained, independent page part objects that can be used across Role Centers and in other pages. You define the content area by adding a `layout` control in the page code, and then a `part` control for each individual part to display.  
-
-The following table describes some of the most common parts for Role Centers, as illustrated in the previous figure.
-
-|    |Element|Description|More information|
-|----|-------|-----------|----------------|
-|4|Headline|Displays a series of automatically changing headlines that provide users with up-to-date information and insight into the business and daily work. This is created by a `HeadlinePart` page type. |[Creating Role Center Headlines](devenv-create-role-center-headline.md)||
-|5|Wide data cues | A set of cues for displaying large numbers, like monetary values. This is created by using a `cuegroup` control on a `CardPart` page type, where the [Layout property](properties/devenv-layout-property.md) is set to `wide`. |[Wide Cues](devenv-cues-action-tiles.md#CueWideLayout)|
-|6|Data cues |Provide a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. These are created by using a `cuegroup` control on a `CardPart` page type. |[Creating Cues](devenv-cues-action-tiles.md#CreateCue)|
-|7|Action cues |Tiles that link to tasks or operations, like opening another page, starting a video, targeting another URL, or running code. These are created by using a `cuegroup` control on a `CardPart` page type|[Action Tiles](devenv-cues-action-tiles.md#ActionTiles)|
-|8|Chart|A graphical and interactive representation of your business data that can be sourced by a custom business chart control add-in or an embedded Power BI report.||
-|9|CardPart or ListPart page|Displays data fields in a form or tabular layout.|[Page Object](devenv-page-object.md)|
-|10|Control add-in|Displays custom content by using HTML-based control add-in.|[Control Add-in Object](devenv-control-addin-object.md)|
+|1|System actions|The icons provide users the ability to edit the record, create a new record, and delete the current record.<br /><br />The actions are only active if the [Editable](properties/devenv-editable-property.md) property is set to `true`.|These actions appear on all pages; you cannot remove them or add other actions.<br /><br />|
+|2|Action bar|The action bar provides links to other pages, reports, and codeunits. The action bar is defined by an `actions` control in the page code, and individual actions are defined by an `action()` control.<br /><br /> Actions can be displayed on three standard menus in the action bar, **Actions**, **Navigate**, and **Report**, or in a promoted category. You can arrange actions on menus in the root-level or grouped in a sub-menu.<br /><br /> The objects targeted by these links will open in a separate window.<br /><br />For more information, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md).|The action bar is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a sub-menu.|
+|3|Promoted actions|Promoted actions are actions that are defined in the `area()` control like any other action in code, but they are configured to display on a higher level in the action bar, in a specific category that you define. You promote actions by setting various `Promoted`-related properties on `action()` controls.<br /><br /> For more information, see [Promoted Actions](devenv-promoted-actions.md). |Use promoted actions to provide quick access to the most common tasks that would be performed by the user. Give categories a name that provides a good description of the included actions.|
+|4|FastTab|A FastTab is group of fields under a common heading. A FastTab is defined by a `group()` control in the `area(content)`. You can have multiple FastTabs on the page. In the client, FastTabs appear in the same order as they are defined in the page code.|FastTabs allow users to find key information on a page by displaying the data in separate groups.<br /><br />By default, fields in a FastTab are automatically distributed between two columns. However, you can change how fields are arranged by using the `grid()` and `fixed()`  controls of a FastTab. For more information, see [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md).  |
+|5|Field|A field in the source table, You specify a field by adding a `field()` control. The order of the `field()` controls in code determine the order the display in the client.||
+|6|Show more/less|Enables users to toggle more or fewer  fields in the FastTab. You specify which fields are shown or hidden in the FastTab by default by setting the `Importance` property on the fields. You can also use the property to display fields in the FastTab header when the FastTab is collapsed.<br /><br /> For more information, see [Importance](properties/devenv-importance-property.md) property.|You use this property to control the amount of information that is visible on a page. It is useful on pages that have a large number of fields, where you can display the most important fields by default, but users have the option to show more as needed.|
+|7|Sub-page|Displays line items that are associated with the transaction. This area is defined by a `part(Name; Page)` control that identifies the page to display. In this case, the page is a `listpart` page that displays line items for the sales order. |
+|8|Action bar|Displays actions that are defined on the sub-page. These actions are defined the same way as those in the action bar of the main page. ||
+|9|FactBoxes|FactBoxes are located on the right-most side of a page and it is divided into one or more parts that are arranged vertically. Each part can display different content including other pages, charts, and system parts such as Microsoft Outlook, Notes, and Record Links.<br /><br />  For more information, see [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md).|Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list.|
 
 
-### Behavioral points of interest
-- In general, the parts will appear in the client according to the order in which they are defined in the Role Center page code and will automatically rearrange horizontally and vertically to fill the available workspace.
-- However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues are automatically grouped under a common **Activities** section, no matter where they are placed in the code. All other page parts are grouped under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will arrange according to the order in which they are defined in the page code.
+## [Behavior points](#tab/behavior)
 
-## Development tips for overall page design
+- There are a few system actions that are automatically added to the actions bar, such as **Search**, **See Attached** and **Open in Excel**.
 
-From the user’s perspective, the following are qualities of a well-designed card page:
+## [Developer tips](#tab/tips)
 
--    Use only for data that represents master or reference data
+From the user’s perspective, the following are qualities of a well-designed card and document page:
+
+### Card pages
+
+-    It is used only for data that represents master or reference data. 
 -    The page title clearly identifies the entity/entry represented in the page.
--    Optimize for overview by organizing data in FastTabs and marking relevant fields as Promoted or Additional.
--    Place the most important fields first, in a General FastTab. 
--    Include one or two FactBoxes to give necessary statistics and quick access to related documents.
- 
-## Design for all display targets
--   Mobile devices will display the same content as the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], but it is presented in different way to suit how users hold and interact with their mobile device.
--   You can preview how your Role Center will look on mobile devices directly in Designer.
--   Some limitations on mobile devices include the following:
-    -   
+
+### Document pages
+
+- It Is used only for data that represents a transaction or other important event in the domain of business.
+- The page title clearly identifies the transaction/event represented in the page.
+
+## General
+
+- It is optimized for viewing by organizing data in FastTabs, and fields are either shown or hidden by default based on their importance.
+- The most important fields are placed in a the first FastTab (**General**) in the most natural order from the user's perspective.
+- It includes one or two FactBoxes to give necessary statistics and quick access to related documents.
+- Within a FastTab, you can also use `group()` controls to create sub-groups of fields to improve data organization.
+- You can use the [Visible](properties/devenv-visible-property.md) to dynamically show or hide fields based on a defined logic.
+
+## [Designing for devices](#tab/targets)
+
+For the most part, mobile devices will display the same content as the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], but it is presented in different way to suit how users hold and interact with their mobile device.
+
+You can preview how your page will look on mobile devices directly in Designer.
+
+### Promote actions
+Only promoted actions will display on mobile devices, so make sure you promote the actions that are most useful to users. For more information, see [Promoted Actions](devenv-promoted-actions.md). 
+
+### Design of the sub-page lists
+
+- Design for tile view
+
+    On mobile devices, line items are only displayed as tiles. By default, the first 5 fields defined on the page are used in the tiles. So, it is important that you configure a `fieldgroup(Brick; <Field>` control in the table code to display the desired fields. For more information, see [Field Groups](devenv-field-groups.md).
+
+-    Configure actions to display in shortcut menu on line items
+
+        Using the [Scope](properties/devenv-scope-property.md) property, configure actions to display in the shortcut menu that is available on line item. You typically do this for common actions that relate to records in the list, such as the **Line Comments** action. This gives users a more direct way to invoke actions that relate to the selected row or line.
+
+-    Configure the gesture for actions
+
+        Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
+
  
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
