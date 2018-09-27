@@ -43,10 +43,10 @@ As a developer or administrator, you can use Designer to customize a card and do
 
 ### General definition
 
-A card page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. 
+A card page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Card`. 
 For a simple code example of a list page, see [Simple Card Page Example](devenv-simple-card-page-example.md).
 
-A document page is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Document`. A document page is also includes a `part()` control that embeds another page into the document page. This is typically that displays line items from the associated transaction or event.
+A document page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Document`. A document page is also includes a `part()` control that embeds another page into the document page. This is typically that displays line items from the associated transaction or event.
 
 The following figure illustrates the general layout and elements of a card page and document page.
 ### Structure
