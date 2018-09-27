@@ -1,6 +1,6 @@
 ---
 title: "Resolving Codeunit 6400 Compilation Error "
-description: "Explains how to resolve the compilation error that you get for Codeunit 6400 when converting a database from Dynamics NAV 2017 to 2018."
+description: "Explains how to resolve the compilation error that you get for Codeunit 6400 when converting a database from Dynamics NAV to Business Central."
 ms.custom: na
 ms.date: 27/11/2017
 ms.reviewer: na
