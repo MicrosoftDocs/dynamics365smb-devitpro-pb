@@ -46,7 +46,7 @@ The process is slightly different when you have multitenant deployment compared 
 
     [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes custom V1 extensions and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
 
-    V1 extensions that are produced by Microsoft are now available as V2 extensions on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD), so you do not have to convert these.
+    V1 extensions that are produced by Microsoft (first-party extensions, publisher=Microsoft) are now available as V2 extensions on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD), so you do not have to convert these. If you want to keep the functionality provided and data collected by these V1 extensions, you will have to publish the V2 versions as part of the technical upgrade. 
 
     You will have to uninstall all V1 extension to successfully completes the technical upgrade.
 
@@ -62,9 +62,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
 1.  Make a copy of the old database or create full database backup. 
 
-    <!-- in multitnenta, both the application and tenant dbs>-->
-
-     For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
+       For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
 
 3.  <a name="uninstallextensions"></a> For single-tenant mode, uninstall all extensions. For multitenant mode, be sure to uninstall all V1 extensions.
     <!-- This tep is not required for multitenant -->
@@ -94,21 +92,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     Unpublish-NAVApp -ServerInstance dynamicsnav110 -Name System -Version 11.0.12925.0 
     ```
 
-5. Unpublish and published symbols in the database. 
-
-    1. To get a list of the publsihed symbols, run the Get-NAVAppInfo cmdlet: 
-    
-        ```
-        Get-NAVAppInfo -ServerInstance <ServerInstanceName> -SymbolsOnly
-        ```
-    2. To unpublish symbol, run the Unpublsih-NAVAPP cmldet:
-  
-        ```
-        Unpublish-NAVApp -ServerInstance dynamicsnav110 -Name System -Version 11.0.12925.0 
-        ```
-
-
-6.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->application database.  
+5.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->application database.  
 
      For more information, see [Open Databases](../cside/cside-open-database.md).  
 
@@ -220,7 +204,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
      For more information, see [Change the Server Instance](../cside/cside-change-server-instance.md). 
 
-9.    Import the codeunit 1 replacement text file you created.
+9.   Import the codeunit 1 replacement text file you created.
 10.  Compile all objects without table schema synchronizing (**Synchronize Schema** set to **Later**); you will do this later.  
 
         For more information, see [Compiling Objects](../cside/cside-compiling-objects.md).
@@ -243,51 +227,6 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> | Repair-NAVApp
     ``` 
-
-14. Publish system and test symbols and generate app symbols.
-
-    1. <a name="PublishSymbols"></a>Publish the system.app and test.app symbol files.
-
-        If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
-
-        To publish the symbols, open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and run the following command for each of the symbol files:
-
-        ```
-        Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <SymbolFilePath> -PackageType SymbolsOnly
-        ```
-    2. <a name="GenerateSymbols"></a>Generate the application symbol references by using the finsql.exe file as follows:
-
-        Open a command prompt as an administrator, change to the directory where the `finsql.exe` file has been installed as part of [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and then run the following command:
-
-        ```
-        finsql.exe Command=generatesymbolreference, Database="<MyDatabaseName>", ServerName=<DatabaseServerName>\<DatabaseInstance>
-        ```
-
-        Replace values for the `Database` and `ServerName` settings to suit.
-
-        > [!NOTE]  
-        >  This command does not generate a file. It populates the **Object Metadata** table in the database.
-
-        When you run the command, the console returns to an empty command prompt, and does not display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**. 
-    
-        When the process ends, a file named **navcommandresult.txt** is saved to the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] installation folder. If the command succeeded, the file will contain text like `[0] [06/12/17 14:36:17] The command completed successfully in '177' seconds.` If the command failed, another file named **naverrorlog.txt** will be generated. This file contains details about the error(s) that occurred. 
-            
-        For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](../developer/devenv-running-cside-and-al-side-by-side.md).
-
-
-generate app symbols
-enable server for app symbols
-publish new Microsoft V2s
-   
-13. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
-
-    Use the [Install-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
-
-    For each V2 extension, run the following command to install it:
-
-    ```
-    Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> 
-    ```
         
 14. <a name="mounttenant"></a>(Multitenant only) Mount the tenant.
 
@@ -299,22 +238,95 @@ publish new Microsoft V2s
 
 15.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
 
-        For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md). 
+        For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
-16.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
+## <a name="extensions"></a>Task 4: Post-upgrade
 
-        For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
+1. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
 
-17. If you converted a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database, configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)].
+    Use the [Install-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) to compile the published extensions to make sure they are work with the new platform.
+
+    For each V2 extension, run the following command to install it:
+
+    ```
+    Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> 
+2. If the old database used first-party V1 extensions, publish and install the V2 extensions that replace them. 
+
+    1. Configure the **Enable loading application symbol references at server startup** (EnableSymbolLoadingAtServerStartup) setting on the [!INCLUDE[server](../developer/includes/server.md)] instance, and restart the instance.
+
+        For more information, see [Configuring Dynamics NAV Server](../administration/configure-server-instance.md). 
+    2. <a name="PublishSymbols"></a>Publish the system.app and test.app symbol files.
+
+        If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
+
+        To publish the symbols, open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and run the following command for each of the symbol files:
+
+        ```
+        Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <SymbolFilePath> -PackageType SymbolsOnly
+        ```
+    3. <a name="GenerateSymbols"></a>Generate the application symbol references by using the finsql.exe file.
+
+        Open a command prompt as an administrator, change to the directory where the `finsql.exe` file has been installed as part of [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and then run the following command:
+
+        ```
+        finsql.exe Command=generatesymbolreference,  ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>"
+        ```
+
+        Replace values for the `Database` and `ServerName` settings to suit.
+
+        If the application database contains test objects (ID 130000-139999), then make sure to exclude these objects when generating symbols. You can do this by using the `-Filter` parameter and running the command twice:
+
+        ```
+        finsql.exe command=compileobjects, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="ID=1..129999", generatesymbolreference=yes
+        ```
+
+        ```
+        finsql.exe command=compileobjects, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="ID=140000..1999999999", generatesymbolreference=yes
+        ```
+
+        > [!NOTE]  
+        >  This command does not generate a file. It populates the **Object Metadata** table in the database.
+
+        When you run the command, the console returns to an empty command prompt, and does not display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**. 
+    
+        When the process ends, a file named **navcommandresult.txt** is saved to the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] installation folder. If the command succeeded, the file will contain text like `[0] [06/12/17 14:36:17] The command completed successfully in '177' seconds.` If the command failed, another file named **naverrorlog.txt** will be generated. This file contains details about the error(s) that occurred. 
+            
+        For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](../developer/devenv-running-cside-and-al-side-by-side.md).
+
+    4. Publish the new V2 extension by running the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet for each extension: 
+
+        ```
+        Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
+        ```
+           
+    5.  Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet for each extension:
+
+        ```    
+        Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
+        ```
+    6. For each V2 extension, run the following command to install it:
+
+        ```
+        Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> 
+        ```
+3. Transition the custom code in the old codeunit 1 to use the new system event implementation.
+
+    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).
+
+4.  If you converted a [!INCLUDE[navcorfu_md](../developer/includes/navcorfu_md.md)], you will have to modify C/AL code to ensure that the **My Settings** page works properly in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
+
+    For more information, see [Resolving My Settings Page Implementation After a Database Conversion](Resolve-MySettings-Page-After-Upgrade.md).
+
+5. If you converted a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database, configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)].
 
     The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable in [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] After an Upgrade](upgrade-pages-report-for-search.md).
 
-18. Upload the customer license to the converted database.  
+6. Upload the customer license to the converted database.  
 
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     You have now completed the conversion of the database to be accessed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To test the converted database, you can connect it to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.
-19. Transition the custom code in the old codeunit 1 to use the new system event implementation.   
+
 
 ## Database and Windows collations  
 Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](http://go.microsoft.com/fwlink/?LinkID=247971).  
