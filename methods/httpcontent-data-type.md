@@ -2,7 +2,7 @@
 title: "HttpContent Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # HttpContent Data Type
-
+Represents an HTTP entity body and content headers.
 
 
 The following methods are available on instances of the HttpContent data type.
@@ -24,7 +24,7 @@ The following methods are available on instances of the HttpContent data type.
 |[Clear()](httpcontent-clear-method.md)|Sets the HttpContent object to a default value. The content contains an empty string and empty headers.|
 |[WriteFrom(Text)](httpcontent-writefrom-text-method.md)|Sets HttpContent content to the provided text or stream.|
 |[WriteFrom(InStream)](httpcontent-writefrom-instream-method.md)|Sets HttpContent content to the provided text or stream.|
-|[GetHeaders(var HttpHeaders)](httpcontent-getheaders-method.md)|Gets the content's Http headers.|
+|[GetHeaders(var HttpHeaders)](httpcontent-getheaders-method.md)|Gets the HTTP content headers as defined in RFC 2616.|
 |[ReadAs(var Text)](httpcontent-readas-text-method.md)|Reads the content into the provided text.|
 |[ReadAs(var InStream)](httpcontent-readas-instream-method.md)|Reads the content into the provided text.|
 

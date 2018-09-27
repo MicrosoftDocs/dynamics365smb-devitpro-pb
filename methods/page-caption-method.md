@@ -2,7 +2,7 @@
 title: "Caption Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,15 +26,16 @@ The caption shown in the title bar. For example, the default value in English (U
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.  
+
 *NewCaption*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The new caption text.  
 
 
 ## Return Value
 *Caption*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The text used for the caption.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

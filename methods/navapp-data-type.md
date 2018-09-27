@@ -2,7 +2,7 @@
 title: "NavApp Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # NavApp Data Type
-
+Information about a NavApp.
 
 The following methods are available on the NavApp data type.
 
@@ -26,9 +26,9 @@ The following methods are available on the NavApp data type.
 |[RestoreArchiveData(Integer, [Boolean])](navapp-restorearchivedata-method.md)|Restores archived data for a specified table of an extension during installation.|
 |[DeleteArchiveData(Integer)](navapp-deletearchivedata-method.md)|Deletes the archived data for a specified table of an extension during installation.|
 |[LoadPackageData(Integer)](navapp-loadpackagedata-method.md)|Loads default, or starting, table data into the specified table of an extension during installation.|
-|[IsInstalling()](navapp-isinstalling-method.md)||
-|[GetCurrentModuleInfo(var ModuleInfo)](navapp-getcurrentmoduleinfo-method.md)||
-|[GetModuleInfo(Guid, var ModuleInfo)](navapp-getmoduleinfo-method.md)||
+|[IsInstalling()](navapp-isinstalling-method.md)|Returns **true** if the application that contains the AL object that is currently running is being installed, otherwise it returns **false**.|
+|[GetCurrentModuleInfo(var ModuleInfo)](navapp-getcurrentmoduleinfo-method.md)|Gets information about the application that contains the AL object that is currently running.|
+|[GetModuleInfo(Guid, var ModuleInfo)](navapp-getmoduleinfo-method.md)|Gets information about the specified AL application.|
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

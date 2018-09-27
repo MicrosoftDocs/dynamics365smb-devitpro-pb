@@ -2,7 +2,7 @@
 title: "Content Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # Content Method
-Gets the contents of the HTTP request.
+Gets the contents of the HTTP response.
 
 ## Syntax
 ```
@@ -31,7 +31,7 @@ An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data 
 ## Return Value
 *Content*  
 &emsp;Type: [HttpContent](httpcontent-data-type.md)  
-  
+The contents of the HTTP response.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

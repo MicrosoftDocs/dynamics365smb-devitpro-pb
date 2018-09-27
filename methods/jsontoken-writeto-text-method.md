@@ -2,7 +2,7 @@
 title: "WriteTo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,22 +18,23 @@ Serializes and writes the JSON data of the JsonToken to a given Text object.
 
 ## Syntax
 ```
-[Ok := ]  JsonToken.WriteTo(var Data: Text)
+[Ok := ]  JsonToken.WriteTo(var String: Text)
 ```
 ## Parameters
 *JsonToken*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
 An instance of the [JsonToken](jsontoken-data-type.md) data type.  
-*Data*  
+
+*String*  
 &emsp;Type: [Text](text-data-type.md)  
-  
+The Text object to which the JSON data will be read.  
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** if the read was successful; otherwise, **false**  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

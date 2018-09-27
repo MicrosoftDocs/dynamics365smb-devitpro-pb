@@ -2,7 +2,7 @@
 title: "FieldCount Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ An instance of the [KeyRef](keyref-data-type.md) data type.
 ## Return Value
 *No*  
 &emsp;Type: [Integer](integer-data-type.md)  
-  
+The number of fields that have been defined in the key.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

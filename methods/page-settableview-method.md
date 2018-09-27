@@ -2,7 +2,7 @@
 title: "SetTableView Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Applies the table view on the current record as the table view for the page, rep
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.  
+
 *Record*  
 &emsp;Type: [Table](table-data-type.md)  
 The record that has a table view that you want to apply to the page or data item.  

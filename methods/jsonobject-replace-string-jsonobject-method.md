@@ -2,7 +2,7 @@
 title: "Replace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Replaces the value of the property with the given key with the new value.
 *JsonObject*  
 &emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
+
 *Key*  
 &emsp;Type: [String](string-data-type.md)  
   

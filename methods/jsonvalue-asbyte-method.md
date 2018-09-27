@@ -2,7 +2,7 @@
 title: "AsByte Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 ## Return Value
 *Result*  
 &emsp;Type: [Byte](byte-data-type.md)  
-  
+If the JsonValue does not contain a number which can be converted without loss of precision to a Byte, the operation will fail with a run-time error.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

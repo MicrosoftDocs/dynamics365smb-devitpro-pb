@@ -2,7 +2,7 @@
 title: "IndexOf Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Index :=   JsonArray.IndexOf(Value: Char)
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
+
 *Value*  
 &emsp;Type: [Char](char-data-type.md)  
   
@@ -32,7 +33,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 ## Return Value
 *Index*  
 &emsp;Type: [Integer](integer-data-type.md)  
-  
+The position of the value in the JsonArray. -1 will be returned if Value cannot be found in the array.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

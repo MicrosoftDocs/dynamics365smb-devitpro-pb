@@ -2,7 +2,7 @@
 title: "FieldIndex Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Field :=   KeyRef.FieldIndex(Index: Integer)
 *KeyRef*  
 &emsp;Type: [KeyRef](keyref-data-type.md)  
 An instance of the [KeyRef](keyref-data-type.md) data type.  
+
 *Index*  
 &emsp;Type: [Integer](integer-data-type.md)  
 The input index.  
@@ -32,7 +33,7 @@ The input index.
 ## Return Value
 *Field*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
-  
+The FieldRef that refers to the field with this index in the key.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

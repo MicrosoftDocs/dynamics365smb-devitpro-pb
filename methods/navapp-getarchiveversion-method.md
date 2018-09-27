@@ -2,7 +2,7 @@
 title: "GetArchiveVersion Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Version :=   NavApp.GetArchiveVersion()
 ## Return Value
 *Version*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The version  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

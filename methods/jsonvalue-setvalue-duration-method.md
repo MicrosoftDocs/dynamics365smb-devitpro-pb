@@ -2,7 +2,7 @@
 title: "SetValue Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Set the contents of the JsonValue variable to the JSON representation of the giv
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
+
 *Value*  
 &emsp;Type: [Duration](duration-data-type.md)  
   

@@ -2,7 +2,7 @@
 title: "GetArchiveRecordRef Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,20 +23,16 @@ Returns a RecordRef for the specified table.
 ## Parameters
 *TableNo*  
 &emsp;Type: [Integer](integer-data-type.md)  
-
-            Specifies the table ID.
-            
+Specifies the table ID.  
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-
-            Specifies the reference.
-            
+Specifies the reference.  
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-  
+**true**, if a record was found; other **false**  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

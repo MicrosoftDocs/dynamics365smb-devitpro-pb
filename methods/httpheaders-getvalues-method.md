@@ -2,7 +2,7 @@
 title: "GetValues Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,25 +18,27 @@ Gets the values for the specified key.
 
 ## Syntax
 ```
-[Ok := ]  HttpHeaders.GetValues(Key: String, ReturnValues: Array of [Text])
+[Ok := ]  HttpHeaders.GetValues(Key: String, Values: Array of [Text])
 ```
 ## Parameters
 *HttpHeaders*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
+
 *Key*  
 &emsp;Type: [String](string-data-type.md)  
-  
-*ReturnValues*  
+The specified header.
+        
+*Values*  
 &emsp;Type: [Text](text-data-type.md)  
-  
+The specified header values.  
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** is the specified header name and values are stored in the collection; otherwise **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

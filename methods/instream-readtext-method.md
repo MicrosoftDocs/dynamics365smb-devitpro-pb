@@ -2,7 +2,7 @@
 title: "ReadText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,25 +18,26 @@ Reads text from an InStream object.
 
 ## Syntax
 ```
-[Read := ]  InStream.ReadText(var Text: Text, [Length: Integer])
+[Read := ]  InStream.ReadText(var Variable: Text, [Length: Integer])
 ```
 ## Parameters
 *InStream*  
 &emsp;Type: [InStream](instream-data-type.md)  
 An instance of the [InStream](instream-data-type.md) data type.  
-*Text*  
+
+*Variable*  
 &emsp;Type: [Text](text-data-type.md)  
-  
+The variable that receives the characters that were read.  
 *Length*  
 &emsp;Type: [Integer](integer-data-type.md)  
-  
+The number of characters to be read. If you do not specify this parameter, the maximum length of the string is used.  
 
 
 ## Return Value
 *Read*  
 &emsp;Type: [Integer](integer-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+The number of characters that were read.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

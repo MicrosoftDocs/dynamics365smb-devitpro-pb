@@ -2,7 +2,7 @@
 title: "SaveAsXml Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,8 @@ Saves the resulting data set of a query as an .xml file.
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The ID of the query object that you want to save as an .xml file. If the query that you specify does not exist, then a run-time error occurs.  
+The ID of the query object that you want to save as an .xml file. If the query that you specify does not exist, then a run-time error occurs.
+        
 *OutStream*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
 The stream that you want to save the query as XML to.  

@@ -2,7 +2,7 @@
 title: "SetRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,12 +24,11 @@ Sets the current record for the page.
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.  
+
 *Record*  
 &emsp;Type: [Table](table-data-type.md)  
-
-The record to set as the current record.
-You cannot use a temporary record for the Record parameter.
-            
+The record to set as the current record. You cannot use a temporary record for the Record parameter.
+          
 
 
 
