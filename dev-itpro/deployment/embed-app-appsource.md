@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+[!INCLUDE[embedapp_preview](../developer/includes/embedapp_preview.md)]
+
 # AppSource for [!INCLUDE[embedapp](../developer/includes/embedapp.md)]
   
 AppSource is a Market place where [!INCLUDE[embedapp](../developer/includes/embedapp.md)] partners can provide marketing details (descriptions, whitepapers and videos) about their app.

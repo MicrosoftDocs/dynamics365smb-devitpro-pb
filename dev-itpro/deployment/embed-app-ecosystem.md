@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+[!INCLUDE[embedapp_preview](../developer/includes/embedapp_preview.md)]
+
 # [!INCLUDE[embedapp](../developer/includes/embedapp.md)] Ecosystem Features  
  
 [!include[prodshort](../developer/includes/prodshort.md)] application is running in a rich ecosystem of other Microsoft and 3rd party services, which [!INCLUDE[embedapp](../developer/includes/embedapp.md)] can decide to take advantage of.  

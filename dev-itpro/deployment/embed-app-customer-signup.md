@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+[!INCLUDE[embedapp_preview](../developer/includes/embedapp_preview.md)]
+
 # [!INCLUDE[embedapp](../developer/includes/embedapp.md)]Customer Signup 
 A customer can sign up for any number of [!INCLUDE[embedapp](../developer/includes/embedapp.md)]s and for [!include[prodshort](../developer/includes/prodshort.md)] application using the same Org ID. These apps will run side-by-side with each other, will use different URLs and will be displayed as separate tiles on the home.dynamics.com portal. 
 There are two ways for a customer (tenant, organization) to subscribe to an [!INCLUDE[embedapp](../developer/includes/embedapp.md)]: 

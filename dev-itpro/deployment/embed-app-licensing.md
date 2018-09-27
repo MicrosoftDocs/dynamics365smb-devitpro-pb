@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+[!INCLUDE[embedapp_preview](../developer/includes/embedapp_preview.md)]
+
 # [!INCLUDE[embedapp](../developer/includes/embedapp.md)] Licensing 
 [!INCLUDE[embedapp](../developer/includes/embedapp.md)]s licenses can only be purchased through CSP.Microsoft offers several types of paid licenses (users): 
 -   Essential 

@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+[!INCLUDE[embedapp_preview](../developer/includes/embedapp_preview.md)]
+
 # [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] Platform 
 When deploying an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] to the [!include[prodshort](../developer/includes/prodshort.md)] service, the partner must ensure that it is compatible with a supported version of [!include[prodshort](../developer/includes/prodshort.md)] platform. 
 ## Minor updates

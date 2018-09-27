@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+[!INCLUDE[embedapp_preview](../developer/includes/embedapp_preview.md)]
+
 # Managing an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services 
 Microsoft is going to provide essential functionality and relevant services within [Microsoft Lifecycle Services](https://lcs.dynamics.com/v2) collaboration portal (LCS) to support qualified ISVs and their VARs in managing the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] in Dynamics 365 Business Central service.  
  
