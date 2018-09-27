@@ -106,17 +106,19 @@ You can preview how your page will look on mobile devices directly in Designer.
 ### Promote actions
 Only promoted actions will display on mobile devices, so make sure you promote the actions that are most useful to users. For more information, see [Promoted Actions](devenv-promoted-actions.md). 
 
-### Design the sub-page list for the tile view
+### Design of the sub-page lists
 
-On mobile devices, line items are only displayed as tiles. By default, the first 5 fields defined on the page are used in the tiles. So it is important that you configure a `fieldgroup(Brick; <Field>` control in the table code to display the desired fields. For more information, see [Field Groups](devenv-field-groups.md).
+- Design for tile view
 
-### Configure actions to display in shortcut menu on line items
+    On mobile devices, line items are only displayed as tiles. By default, the first 5 fields defined on the page are used in the tiles. So it is important that you configure a `fieldgroup(Brick; <Field>` control in the table code to display the desired fields. For more information, see [Field Groups](devenv-field-groups.md).
 
-Using the [Scope](properties/devenv-scope-property.md) property, configure actions to display in the shortcut menu that is available on line item. You typically do this for common actions that relate to records in the list, such as the **Line Comments** action. This gives users a more direct way to invoke actions that relate to the selected row or line.
+-    Configure actions to display in shortcut menu on line items
 
-### Configure the gesture for actions
+        Using the [Scope](properties/devenv-scope-property.md) property, configure actions to display in the shortcut menu that is available on line item. You typically do this for common actions that relate to records in the list, such as the **Line Comments** action. This gives users a more direct way to invoke actions that relate to the selected row or line.
 
-Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
+-    Configure the gesture for actions
+
+        Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
 
  
 ## See Also
