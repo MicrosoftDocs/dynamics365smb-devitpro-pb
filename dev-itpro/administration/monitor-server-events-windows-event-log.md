@@ -122,5 +122,5 @@ By default, the [!INCLUDE[server](../developer/includes/server.md)] logs contain
  [Monitoring Business Central Server Events](monitor-server-events.md)    
  [Business Central Server Trace Events](server-trace-events.md)   
  [Monitoring Business Central Server](monitor-server.md)   
- [Monitoring Microsoft Dynamics NAV Server Using Performance Counters](monitor-server-using-performance-counters.md)  
+ [Monitoring Business Central Server Using Performance Counters](monitor-server-using-performance-counters.md)  
  [Windows Event Viewer](http://go.microsoft.com/fwlink/?LinkID=314067)  

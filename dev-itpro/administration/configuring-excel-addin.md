@@ -125,5 +125,5 @@ Your users can now use the Excel add-in. When a list page shows the **Edit in Ex
 >  The pages that your users want to work on in Excel must be published as web services. -->
 
 ## See Also
-[Configuring Microsoft Dynamics NAV Server](configure-server-instance.md)  
+[Configuring Business Central Server](configure-server-instance.md)  
 [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md)  

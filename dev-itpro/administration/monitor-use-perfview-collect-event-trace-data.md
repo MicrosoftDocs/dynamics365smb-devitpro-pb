@@ -66,4 +66,4 @@ This topic describes how to use PerfView to collect event trace data for [!INCLU
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   
  [Business Central Server Trace Events](server-trace-events.md)  
- [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md)]
+ [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md)  

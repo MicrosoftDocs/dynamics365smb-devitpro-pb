@@ -13,7 +13,7 @@ caps.latest.revision: 14
 # How to: Use Performance Monitor to Collect Event Trace Data
 This topic describes how to use Windows Performance Monitor to collect event trace data for [!INCLUDE[server](../developer/includes/server.md)]. To collect trace event data, you create a Data Collector Set, and then start the Data Collector Set.  
   
-### To create a Data Collector Set for collecting [!INCLUDE[prodshort](../developer/includes/prodshort.md)] trace event data  
+## Create a Data Collector Set for collecting [!INCLUDE[prodshort](../developer/includes/prodshort.md)] trace event data  
   
 1.  Start Windows Performance Monitor.  
   
@@ -50,7 +50,7 @@ This topic describes how to use Windows Performance Monitor to collect event tra
   
  Complete the next procedure to increase trace buffer settings to make sure that events are not dropped when collecting trace event data.  
   
-### To change the Data Collector Set trace buffers  
+## Change the Data Collector Set trace buffers  
   
 1.  In the navigation pane, select the new Data Collector Set.  
   
@@ -83,4 +83,4 @@ This topic describes how to use Windows Performance Monitor to collect event tra
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   
  [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md)  
- [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md)]
+ [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md)  

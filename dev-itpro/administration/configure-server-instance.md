@@ -30,7 +30,7 @@ After you install [!INCLUDE[server](../developer/includes/server.md)], you can c
 
 -   Using the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
-    For more information, see [Settings in the Microsoft Dynamics NAV Administration Console](configure-server-instance.md#NavAdminSettings) and [Business Central Server Administration Tool](Administration-Tool.md).  
+    For more information, see [Settings in the Business Central Server Administration Tool](configure-server-instance.md#NavAdminSettings) and [Business Central Server Administration Tool](Administration-Tool.md).  
 
 -   Using the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) that is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
@@ -90,7 +90,6 @@ The following table describes fields on the **General** tab in the [!INCLUDE[adm
 |UI Elements Removal|UIElementRemovalOption|Specifies whether UI elements are hidden when the related object is not accessible according to the license or according to user permissions or both. For more information, see [Hiding UI Elements](hide-ui-elements.md).<br /><br />Default: LicenseFileandUserPermissions<br />Dynamically Updatable: No| |Use NTLM Authentication|ServicesUseNTLMAuthentication|Specifies whether NTLM authentication is enabled for web services. To require Kerberos authentication, disable this option.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
 |*not available*|XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
 
-<!-- |Send Feedback||When this setting is enabled, the [!INCLUDE[server](../developer/includes/server.md)] instance collects basic information about your hardware configuration and about how you use [!INCLUDE[server](../developer/includes/server.md)], and sends it to Microsoft. Microsoft uses this information to identify trends and usage patterns and to improve its software.<br /><br /> Default: Not enabled<br /><br /> This is the **EnableSoftwareQualityMetrics** setting in the CustomSettings.conig file.<br /><br /> For more information, see [Customer Experience Improvement Program and Microsoft Dynamics NAV Server](Customer-Experience-Improvement-Program-and-Microsoft-Dynamics-NAV-Server.md).|  -->
 
 ##  <a name="Database"></a> Database Settings  
  The following table describes fields on the **Database** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
@@ -289,7 +288,7 @@ For more information about running the [!INCLUDE[adminshell](../developer/includ
 ## See Also  
 [Business Central Server Administration Tool](administration-tool.md)   
 [Enhancing Business Central Server Security](../security/enhancing-server-instance-security.md)   
-[Microsoft Dynamics NAV Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)   
+[Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)   
 [Configuring Help](../deployment/configure-help.md)   
 [Hiding UI Elements](hide-ui-elements.md)  
  
