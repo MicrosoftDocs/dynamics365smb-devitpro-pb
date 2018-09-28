@@ -108,7 +108,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
 8.  Run the schema synchronization with validation to synchronize the database schema changes.  
 
-    For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and application-database.md).
+    For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
 
     <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?-->
@@ -147,7 +147,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     ```
 15. Close all to connections to the database.
 
-    This includes but is not limited to [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients tools and SQL Server Management Studio.
+    This includes but is not limited to [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client tools and SQL Server Management Studio.
  
 ## Task 3: Run Technical Upgrade on the Old Database
   
@@ -257,7 +257,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
         For more information, see [Configuring Dynamics NAV Server](../administration/configure-server-instance.md). 
     2. <a name="PublishSymbols"></a>Publish the system.app and test.app symbol files.
 
-        If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
+        If you installed the **AL Development Environment**, you can find the symbol files where you installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
 
         To publish the symbols, open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and run the following command for each of the symbol files:
 
