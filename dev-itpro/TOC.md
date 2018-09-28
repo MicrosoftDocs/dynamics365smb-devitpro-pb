@@ -4,8 +4,8 @@
 <!-- deployment-->
 # [Deployment](deployment/deployment.md)
 ## Online
-### Onboarding your customer
-### Free trial
+<!-- ### Onboarding your customer -->
+<!-- ### Free trial -->
 ### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)  
 ### [Embed App](deployment/embed-app-overview.md)
 #### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)   
