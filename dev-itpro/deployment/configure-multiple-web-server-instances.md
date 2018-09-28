@@ -30,7 +30,7 @@ There are different ways to launch this module and start using the cmdlets:
 
 - If you are working on the computer where the [!INCLUDE[server](../developer/includes/server.md)] was installed, run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
-  For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview).
+  For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).
 
 - If you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], just start Windows PowerShell as an administrator.
 

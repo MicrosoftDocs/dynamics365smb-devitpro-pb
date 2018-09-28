@@ -284,12 +284,12 @@ For example, the following command sets the value for the `MaxStreamReadSize` ke
 Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName MaxStreamReadSize -KeyValue 42424242 -ApplyTo Memory  
 ```
 
-For more information about running the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview).  
+For more information about running the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).  
 
 ## See Also  
 [Business Central Server Administration Tool](administration-tool.md)   
 [Enhancing Business Central Server Security](../security/enhancing-server-instance-security.md)   
-[Microsoft Dynamics NAV Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview)   
+[Microsoft Dynamics NAV Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)   
 [Configuring Help](../deployment/configure-help.md)   
 [Hiding UI Elements](hide-ui-elements.md)  
  
