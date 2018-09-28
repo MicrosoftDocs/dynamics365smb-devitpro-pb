@@ -131,6 +131,8 @@
 ## [Tables](developer/devenv-tables-overview.md)
 ## [Pages](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
+### [Page Extension Object](developer/devenv-page-ext-object.md)
+### [Page Customization Object](developer/devenv-page-customization-object.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
 #### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
@@ -145,10 +147,9 @@
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 #### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Adding Pages and Reports to Search](developer/devenv-al-menusuite-functionality.md)
+### Designing Pages
 ### [Designing List Pages](developer/devenv-designing-list-pages.md)
 ### [Designing Card Pages](developer/devenv-designing-card-pages.md)
-### [Page Extension Object](developer/devenv-page-ext-object.md)
-### [Page Customization Object](developer/devenv-page-customization-object.md)
 ## [Reports](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
