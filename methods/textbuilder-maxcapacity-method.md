@@ -2,7 +2,7 @@
 title: "MaxCapacity Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # MaxCapacity Method
-Gets the maximum capacity of this instance.
+Gets the maximum capacity of this TextBuilder instance.
 
 ## Syntax
 ```
@@ -31,7 +31,7 @@ An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 ## Return Value
 *MaxCapacity*  
 &emsp;Type: [Integer](integer-data-type.md)  
-  
+The maximum capacity of this TextBuilder instance.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
