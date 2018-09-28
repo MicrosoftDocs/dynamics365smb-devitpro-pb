@@ -78,12 +78,11 @@ For more information, see [Service Principal Names](https://docs.microsoft.com/e
     The SID is an alphanumeric character string, such as S-1-5-20 or S-1-5-32-544. There are different ways to get the SID, such using Windows Management Instrumentation Control Command-line (WMIC) or the computer's registry.
     -   To use WMIC, open a command prompt, and run the following command:
     
-       ```
-        wmic useraccount get name,sid
-
-        ```
+           ```
+            wmic useraccount get name,sid
+           ```
     
-        This will display a list of user accounts and their SIDs. 
+          This will display a list of user accounts and their SIDs. 
     
     -   To use the registry, run regedit, and then go to the *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList* folder. This folder list the SIDs for each user account. To find the SID that corresponds to the user account that you want, look at the *ProfileImagePath* key data.
 
@@ -226,4 +225,4 @@ GRANT ALTER ANY EVENT SESSION TO [domain\accountname]
 ```  
 
 ##  <a name="NSA"></a> Provisioning the Network Service Account  
- The only circumstance where it is necessary to take any action with regard to the Network Service account is when change the [!INCLUDE[server](../developer/includes/server.md)] account on an existing installation from a domain account to the Network Service. In this situation you must verify that the account has the necessary database privileges in SQL Server, as per [Giving the account necessary database privileges in SQL Server](#dbo), above.
+ The only circumstance where it is necessary to take any action regarding the Network Service account is when change the [!INCLUDE[server](../developer/includes/server.md)] account on an existing installation from a domain account to the Network Service. In this situation you must verify that the account has the necessary database privileges in SQL Server, as per [Giving the account necessary database privileges in SQL Server](#dbo), above.

@@ -11,8 +11,8 @@ ms.tgt_pltfrm: na
 ms.service: "dynamics365-business-central"
 ---
 
-# Connecting a Microsoft Dynamics NAV Server Instance to a Database
-This procedure describes how to use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to change the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database to which a [!INCLUDE[server](../developer/includes/server.md)] instance connects.  
+# Connecting a Business Central Server Instance to a Database
+This procedure describes how to use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to change the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to which a [!INCLUDE[server](../developer/includes/server.md)] instance connects.  
 
 ### To connect a database to a [!INCLUDE[server](../developer/includes/server.md)] instance  
 

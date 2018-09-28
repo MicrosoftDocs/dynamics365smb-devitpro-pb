@@ -34,7 +34,7 @@ Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLong
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
 [Set-NAVServerConfiguration](https://go.microsoft.com/fwlink/?linkid=401394)      
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  
-[Monitoring Microsoft Dynamics NAV Server Using Performance Counters](monitor-server-using-performance-counters.md)  
+[Monitoring Business Central Server Using Performance Counters](monitor-server-using-performance-counters.md)  
 [Monitoring Business Central Server Events](monitor-server-events.md)     
 
 

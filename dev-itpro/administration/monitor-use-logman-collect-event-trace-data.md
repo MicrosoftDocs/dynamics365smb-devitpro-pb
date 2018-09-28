@@ -17,7 +17,7 @@ This article provides a brief introduction to using logman to collect trace even
 ## Collect event trace data  
 You can collect [!INCLUDE[server](../developer/includes/server.md)] trace event data from two different trace event providers: **Microsoft-Dynamics365BusinessCentral-Server** and **Microsoft-Dynamics365BusinessCentral-Common**. **Microsoft-Dynamics365BusinessCentral-Server** is used for trace events like SQL traces, AL function traces, and session calls. **Microsoft-Dynamics365BusinessCentral-Common** is used for telemetry events. 
 
-Data that is collected with logman is stored in a event trace log \(.etl\) file.  
+Data that is collected with logman is stored in an event trace log \(.etl\) file.  
 
 The following steps give you an example of how to use logman. 
   

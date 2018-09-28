@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Separating Application Data from Business Data
 
-[!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] separates tables that describe the application from the tables that contain business data. Depending on your deployment scenario, you can choose to store all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tables in one database, or you can export the application tables to a dedicated database. In multitenant deployments, the application must be stored in a dedicated database.  
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] separates tables that describe the application from the tables that contain business data. Depending on your deployment scenario, you can choose to store all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tables in one database, or you can export the application tables to a dedicated database. In multitenant deployments, the application must be stored in a dedicated database.  
   
 ## Application Database versus Business Data Databases  
  The application database contains tables that describe your application. This includes a description of the objects that your application consists of, and other data that is common to all tenants. The data that users enter in your application is stored in the business data database because this data is specific to their company. Optionally, you can create multiple business data databases, such as if you want to support your customers as tenants.  
