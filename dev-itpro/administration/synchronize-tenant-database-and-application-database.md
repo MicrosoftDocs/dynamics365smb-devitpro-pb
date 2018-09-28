@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 # Synchronizing the Tenant Database with the Application Database
-This topic describes how to synchronize the business data \(tenant\) database schema with the application database in either a single tenant (non-multitenant) or multitenant deployment environment. You can synchronize the database from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or by using the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet in the Dynamics NAV Administration Shell.
+This topic describes how to synchronize the business data \(tenant\) database schema with the application database in either a single tenant (non-multitenant) or multitenant deployment environment. You can synchronize the database from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or by using the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 ## Synchronize database from the development environment
 
@@ -19,7 +19,7 @@ This topic describes how to synchronize the business data \(tenant\) database sc
 
 ## Synchronize database with the Sync-NAVTenant cmdlet  
 
-1.  On the computer that is running the [!INCLUDE[server](../developer/includes/server.md)], run **[!INCLUDE[adminshell](../developer/includes/adminshell.md)] ** as an Administrator.  
+1.  On the computer that is running the [!INCLUDE[server](../developer/includes/server.md)], run **[!INCLUDE[adminshell](../developer/includes/adminshell.md)]** as an Administrator.  
 
     1.  Choose **Start**, in the **Search** box, type **[!INCLUDE[adminshell](../developer/includes/adminshell.md)]**.  
 

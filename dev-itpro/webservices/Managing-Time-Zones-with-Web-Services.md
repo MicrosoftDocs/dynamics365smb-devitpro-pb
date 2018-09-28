@@ -34,4 +34,4 @@ ms.service: "dynamics365-business-central"
   
 ## See Also  
  [Server Administration Tool](../administration/administration-tool.md)   
- [Business Central Windows PowerShell Cmdlets]((https://docs.microsoft.com/en-us/powershell/business-central/overview)
+ [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)

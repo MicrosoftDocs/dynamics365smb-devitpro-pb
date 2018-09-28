@@ -41,7 +41,7 @@ There are some components that require other software in order run, for example 
     ![Business Central Setup](../media/setup.png "Business Central Setup")
 
     - Choose **Get a free online trial to sign-up**  if you interested in hearing about and trying the cloud experience.
-    - Choose **Get the Business Central app from the Microsoft Store** to download a companion app that mimic that Web client but has the same look-and-feel as the mobile apps.
+    - Choose **Get the Business Central app from the Microsoft Store** to download a companion app that mimics that Web client but has the same look-and-feel as the mobile apps.
     - Choose **Advance installation options** to install a demonstration environment or one more components. Then, follow the on-screen instructions to complete the installation.
 
 ## Cancel Setup  

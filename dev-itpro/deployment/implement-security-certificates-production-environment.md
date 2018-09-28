@@ -28,7 +28,7 @@ A certificate is a file that [!INCLUDE[server](../developer/includes/server.md)]
   
 ### Certificates for Production
   
-In a production environment, you should obtain an certificate from a certification authority or trusted provider. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization.
+In a production environment, you should obtain a certificate from a certification authority or trusted provider. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization.
 
   
 ###  <a name="AboutProdCerts"></a> Obtaining Certificates

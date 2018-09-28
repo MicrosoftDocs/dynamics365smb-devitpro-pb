@@ -127,7 +127,7 @@ In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] vers
 You can also use the [DeleteObjects](https://docs.microsoft.com/en-us/dynamics-nav/deleteobjects
 ) command of the finsql.exe.
 
-## <a name="ClearServer"></a>Task 7: Clear Dynamics NAV Server instance and debugger breakpoint records from old database
+## <a name="ClearServer"></a>Task 7: Clear server instance and debugger breakpoint records from old database
 Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the database in SQL Server.  
 
 1.  Make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
@@ -356,7 +356,7 @@ In addition, other extensions used in the old deployment that you still want to 
 
     1. Make sure that **Enable loading application symbol references at server startup** (EnableSymbolLoadingAtServerStartup) is set on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
-        For more information, see [Configuring Dynamics NAV Server](../administration/configure-server-instance.md).
+        For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
     2. Open a command prompt as an administrator, change to the directory where the `finsql.exe` file has been installed as part of [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and then run the following command:
 
         ```

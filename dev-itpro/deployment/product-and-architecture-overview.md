@@ -35,6 +35,7 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |Server|[!INCLUDE[server](../developer/includes/server.md)] is a .NET-based Windows Service application that uses Windows Communication Framework to handle communication between clients and databases. It controls authentication, event logging, scheduled tasks, reporting and more.|[Configuring Business Central Server](../administration/configure-server-instance.md)|
 |Web Server|An Internet Information Server (IIS) web site, provisioned with the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], that enables access from the [!INCLUDE[webclient](../developer/includes/webclient.md)] and mobile apps.| [Business Central Web Server](web-server-overview.md)|
 |Business Central App|A desktop, phone, and tablet app for Business Central.|[Windows Store](http://go.microsoft.com/fwlink/?LinkId=734848)<br /><br />[App Store](http://go.microsoft.com/fwlink/?LinkId=734847)<br /><br />[Google Play](http://go.microsoft.com/fwlink/?LinkId=734849)|
+|Web services|SOAP and OData Web Services for exposing application functionality to external systems and users. Developers can create and publish functionality as web services, where they expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit.|[Web Services](../webservices/web-services.md)|
 
 ### Development and administration components
 
