@@ -2,7 +2,7 @@
 title: "BreakOnRecordChanges Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,10 +23,8 @@ Breaks execution before a change to a record occurs.
 ## Parameters
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-
-Specifies whether the debugger should break execution when a change to a record occurs.
-If Ok is true, then the debugger breaks before creating, updating, or deleting a record.
-            
+Specifies whether the debugger should break execution when a change to a record occurs. If Ok is true, then the debugger breaks before creating, updating, or deleting a record.
+        
 
 
 ## Return Value

@@ -2,7 +2,7 @@
 title: "HttpHeaders Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,17 +14,17 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # HttpHeaders Data Type
-
+A collection of headers and their values.
 
 
 The following methods are available on instances of the HttpHeaders data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Add(String, String)](httpheaders-add-method.md)|Add sets the provided value for the provided header name.|
-|[Contains(String)](httpheaders-contains-method.md)|Checks if an HttpHeaders contains a property with a given key.|
+|[Add(String, String)](httpheaders-add-method.md)|Adds the specified header and its value into the HttpHeaders collection.|
+|[Contains(String)](httpheaders-contains-method.md)|Checks if the specified header exists in the HttpHeaders collection.|
 |[Clear()](httpheaders-clear-method.md)|Sets the HttpHeaders variable to the default value.|
-|[Remove(String)](httpheaders-remove-method.md)|Removes the key and the related values from the HttpHeaders object.|
+|[Remove(String)](httpheaders-remove-method.md)|Removes the specified header from the HttpHeaders collection.|
 |[GetValues(String, Array of [Text])](httpheaders-getvalues-method.md)|Gets the values for the specified key.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

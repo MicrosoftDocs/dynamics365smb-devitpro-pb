@@ -2,7 +2,7 @@
 title: "Delete Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/31/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,19 +24,21 @@ Sends a DELETE request to delete the resource identified by the request URL.
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
+
 *Path*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The path the request is sent to.
+        
 *Response*  
 &emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
-  
+The response received from the remote endpoint.  
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error.  
+  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "Contains Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Ok :=   JsonObject.Contains(Key: String)
 *JsonObject*  
 &emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
+
 *Key*  
 &emsp;Type: [String](string-data-type.md)  
   
@@ -32,7 +33,7 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-  
+**true** if the object contains a property with the given key; otherwise, **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

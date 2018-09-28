@@ -2,7 +2,7 @@
 title: "Path Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 ## Return Value
 *Path*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The path of the array relative to its containing JSON tree. If the object is the root of the JSON tree, the path will be empty.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

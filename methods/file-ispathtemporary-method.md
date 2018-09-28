@@ -2,7 +2,7 @@
 title: "IsPathTemporary Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ The name of the file, including the path.
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-True if the name point to a location in the users temporary folder within the current service. False otherwise.  
+  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

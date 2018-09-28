@@ -2,7 +2,7 @@
 title: "Method Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,15 +26,16 @@ Gets or sets the method type as defined in the HTTP standard.
 *HttpRequestMessage*  
 &emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
 An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.  
+
 *NewMethod*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The HTTP method used by the request message.  
 
 
 ## Return Value
 *CurrentMethod*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The HTTP method used by the request message. The default is the GET method.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

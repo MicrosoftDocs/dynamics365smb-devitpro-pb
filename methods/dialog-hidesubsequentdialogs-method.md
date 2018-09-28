@@ -2,7 +2,7 @@
 title: "HideSubsequentDialogs Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,6 +28,7 @@ Specifies that subsequent child dialogs are not shown.
 *Dialog*  
 &emsp;Type: [Dialog](dialog-data-type.md)  
 An instance of the [Dialog](dialog-data-type.md) data type.  
+
 *HideSubsequentDialogs*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 A value specifying whether to hide subsequent dialogs.  
@@ -36,7 +37,7 @@ A value specifying whether to hide subsequent dialogs.
 ## Return Value
 *HideSubsequentDialogs*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-  
+**True** if HideSubsequentDialogs is set to true; otherwise, false.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

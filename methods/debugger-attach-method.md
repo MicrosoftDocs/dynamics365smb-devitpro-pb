@@ -2,7 +2,7 @@
 title: "Attach Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,21 +23,14 @@ Activates the debugger and attaches it to the specified session.
 ## Parameters
 *SessionID*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The ID of the session that you want to attach the debugger to.
-The session can be any of the following:
-
+The ID of the session that you want to attach the debugger to.The session can be any of the following:
 -   Windows client
-
 -   Web client
-
 -   NAS services session
-
 -   SOAP web services client session
-
 -   OData web services client session
-
 -   Background session
-            
+        
 
 
 ## Return Value

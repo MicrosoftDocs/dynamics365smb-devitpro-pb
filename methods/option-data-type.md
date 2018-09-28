@@ -2,7 +2,7 @@
 title: "Option Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # Option Data Type
-This simple data type denotes an option value. In the code snippet below, you can see how the Option data type is declared.
+Denotes an option value. In the code snippet below, you can see how the Option data type is declared.
 
 
 

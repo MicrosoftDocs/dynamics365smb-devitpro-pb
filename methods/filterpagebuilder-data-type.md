@@ -2,7 +2,7 @@
 title: "FilterPageBuilder Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # FilterPageBuilder Data Type
-
+Stores filter configurations for a filter page. A filter page is a dynamic page type that contains one or more filter controls that enables users to set filters on fields of the underlying tables.
 
 
 The following methods are available on instances of the FilterPageBuilder data type.
@@ -22,8 +22,8 @@ The following methods are available on instances of the FilterPageBuilder data t
 |Method name|Description|
 |-----------|-----------|
 |[AddTable(String, Integer)](filterpagebuilder-addtable-method.md)|Adds filter control for a table to a filter page.|
-|[AddRecord(String, Table)](filterpagebuilder-addrecord-method.md)|Adds a filter control for a table to a filter page. The table is specified by a record data type variable that is passed to the function.|
-|[AddRecordRef(String, RecordRef)](filterpagebuilder-addrecordref-method.md)|Adds filter control for a table to a filter page. The table is specified by a recordref variable that is passed to the function. This creates a filter control on the filter page, where users can set filter table data.|
+|[AddRecord(String, Table)](filterpagebuilder-addrecord-method.md)|Adds a filter control for a table to a filter page. The table is specified by a record data type variable that is passed to the method.|
+|[AddRecordRef(String, RecordRef)](filterpagebuilder-addrecordref-method.md)|Adds a filter control for a table to a filter page. The table is specified by a RecordRef variable that is passed to the method. This creates a filter control on the filter page, where users can set filter table data.|
 |[AddField(String, Any, [String])](filterpagebuilder-addfield-string-joker-string-method.md)|Adds a table field to the filter control for a table on filter page.|
 |[AddField(String, FieldRef, [String])](filterpagebuilder-addfield-string-fieldref-string-method.md)|Adds a table field to the filter control for a table on filter page.|
 |[AddFieldNo(String, Integer, [String])](filterpagebuilder-addfieldno-method.md)|Adds a table field to the filter control for a table on the filter page.|
@@ -32,7 +32,7 @@ The following methods are available on instances of the FilterPageBuilder data t
 |[RunModal()](filterpagebuilder-runmodal-method.md)|Builds and runs the filter page that includes the filter controls that are stored in FilterPageBuilder object instance.|
 |[Count()](filterpagebuilder-count-method.md)|Gets the number of filter controls that are specified in the FilterPageBuilder object instance.|
 |[Name(Integer)](filterpagebuilder-name-method.md)|Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control.|
-|[PageCaption([String])](filterpagebuilder-pagecaption-method.md)||
+|[PageCaption([String])](filterpagebuilder-pagecaption-method.md)| Gets or sets the FilterPageBuilder UI caption. Defaults to the resource text if not explicitly set.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also

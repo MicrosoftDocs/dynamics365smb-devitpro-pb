@@ -2,7 +2,7 @@
 title: "CreateOutStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,7 @@ Creates an OutStream object for a file. This enables you to export or write data
 *File*  
 &emsp;Type: [File](file-data-type.md)  
 An instance of the [File](file-data-type.md) data type.  
+
 *OutStream*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
   

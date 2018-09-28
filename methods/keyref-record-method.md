@@ -2,7 +2,7 @@
 title: "Record Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ An instance of the [KeyRef](keyref-data-type.md) data type.
 ## Return Value
 *Record*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-  
+The RecordRef of the record that is currently selected referenced by the key. If a key is not selected, an error is returned.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "Add Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Adds a new property to a JsonObject.
 *JsonObject*  
 &emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
+
 *Key*  
 &emsp;Type: [String](string-data-type.md)  
   
@@ -36,10 +37,14 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** if the operation was successful; otherwise, **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+The operation will fail if the object already contains a property with the given key.
+
 ## See Also
 [JsonObject Data Type](jsonobject-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

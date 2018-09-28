@@ -2,7 +2,7 @@
 title: "IsObject Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ An instance of the [JsonToken](jsontoken-data-type.md) data type.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-  
+**true** if the JsonToken represents a JSON object; otherwise, **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

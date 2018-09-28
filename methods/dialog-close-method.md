@@ -2,7 +2,7 @@
 title: "Close Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,6 +30,10 @@ An instance of the [Dialog](dialog-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ If CLOSE is used on a dialog window that is not open, a run-time error will occur.  The dialog windows of an object are automatically closed when the object terminates. 
+
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

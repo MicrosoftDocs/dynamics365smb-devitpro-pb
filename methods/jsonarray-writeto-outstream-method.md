@@ -2,7 +2,7 @@
 title: "WriteTo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,22 +18,23 @@ Serializes and writes the JSON data of the JsonArray to a given OutStream object
 
 ## Syntax
 ```
-[Ok := ]  JsonArray.WriteTo(Data: OutStream)
+[Ok := ]  JsonArray.WriteTo(OutStream: OutStream)
 ```
 ## Parameters
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
-*Data*  
+
+*OutStream*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
-  
+The OutStream object to which the JSON data will be written.  
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** if the read was successful; otherwise, **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "GetHeaders Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # GetHeaders Method
-
+Gets a reference to the collection of HTTP request headers.
 
 ## Syntax
 ```
@@ -24,16 +24,17 @@ author: solsen
 *HttpRequestMessage*  
 &emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
 An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.  
+
 *Headers*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
-  
+A variable that will contain a reference to the collection of HTTP request headers after the method completes successfully.  
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** if the operation was completed successfully, otherwise **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

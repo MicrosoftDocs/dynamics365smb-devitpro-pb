@@ -2,7 +2,7 @@
 title: "Upload Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,33 +25,24 @@ Sends a file from the client computer to the server computer. The client compute
 ## Parameters
 *DialogTitle*  
 &emsp;Type: [String](string-data-type.md)  
-
-The title that you want to display in the dialog box for uploading the file.
-This parameter is not supported by the web client. The title is determined by the end-user's browser.
-            
+The title that you want to display in the dialog box for uploading the file. This parameter is not supported by the web client. The title is determined by the end-user's browser.
+          
 *FromFolder*  
 &emsp;Type: [String](string-data-type.md)  
-
-The name of the folder that is displayed in the dialog box. This is the default value, and the user can change it.
-This parameter is not supported by the web client. The browser uses the folder that was last accessed.
-            
+The name of the folder that is displayed in the dialog box. This is the default value, and the user can change it. This parameter is not supported by the web client. The browser uses the folder that was last accessed.
+          
 *FromFilter*  
 &emsp;Type: [String](string-data-type.md)  
-The type of file that can be uploaded to the server. In the Windows client, the type is displayed in the upload dialog box, so that the user can only select files of the specified type. For the web client, a user can try to upload any file type but an error occurs if the file is not the specified type.  
+The type of file that can be uploaded to the server. In the Windows client, the type is displayed in the upload dialog box, so that the user can only select files of the specified type. For the web client, a user can try to upload any file type but an error occurs if the file is not the specified type.
+        
 *FromFile*  
 &emsp;Type: [String](string-data-type.md)  
-
-The default file that you want to upload to the service. The name displays in the dialog box for uploading the file. The user can change the file.
-This parameter is not supported by the web client.
-            
+The default file that you want to upload to the service. The name displays in the dialog box for uploading the file. The user can change the file. This parameter is not supported by the web client.
+          
 *ToFile*  
 &emsp;Type: [Text](text-data-type.md)  
-
-The path and file name to give the uploaded file.
-If you do not provide a path, or you upload the file that uses web client, then the file is uploaded to the following folder on the computer that is running the server:
-
-\\ProgramData\\Microsoft\\Microsoft Dynamics NAV\\110\\Server\\MicrosoftDynamicsNAVServer$DynamicsNAV110\\users\\ServiceAccount
-            
+The path and file name to give the uploaded file. If you do not provide a path, or you upload the file that uses web client, then the file is uploaded to the following folder on the computer that is running the server: \\ProgramData\\Microsoft\\Microsoft Dynamics NAV\\110\\Server\\MicrosoftDynamicsNAVServer$DynamicsNAV110\\users\\ServiceAccount
+          
 
 
 ## Return Value

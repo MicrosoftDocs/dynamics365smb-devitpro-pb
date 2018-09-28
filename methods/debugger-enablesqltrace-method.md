@@ -2,7 +2,7 @@
 title: "EnableSqlTrace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,18 +23,12 @@ Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server even
 ## Parameters
 *SessionID*  
 &emsp;Type: [Integer](integer-data-type.md)  
-
-The ID of the session for which you want to enable the SQL trace, or for which you want to verify if tracing is enabled.
-
-If you specify 0 and you specify the NewIsEnabled parameter, then tracing is enabled for all existing sessions and all new sessions on the current server instance. If you specify 0 and you omit the NewIsEnabled parameter, then the function returns true if tracing is enabled for new sessions on the current server instance.
-
-If the session ID that you specify does not exist and you specify the NewIsEnabled parameter, then a run-time error occurs. If the session ID that you specify does not exist and you do not specify the NewIsEnabled parameter, then the function returns false.
-            
+The ID of the session for which you want to enable the SQL trace, or for which you want to verify if tracing is enabled.If you specify 0 and you specify the NewIsEnabled parameter, then tracing is enabled for all existing sessions and all new sessions on the current server instance. If you specify 0 and you omit the NewIsEnabled parameter, then the function returns true if tracing is enabled for new sessions on the current server instance. If the session ID that you specify does not exist and you specify the NewIsEnabled parameter, then a run-time error occurs. If the session ID that you specify does not exist and you do not specify the NewIsEnabled parameter, then the function returns false.
+        
 *NewIsEnabled*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-
 If you specify the optional NewIsEnabled parameter, then the function sets whether tracing is enabled. true if you want to enable tracing for the specified session; false if you want to disable tracing. If you omit the NewIsEnabled parameter, then the function verifies if tracing is enabled.
-            
+        
 
 
 ## Return Value

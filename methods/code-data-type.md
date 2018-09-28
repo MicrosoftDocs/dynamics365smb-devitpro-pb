@@ -2,7 +2,7 @@
 title: "Code Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # Code Data Type
-This simple data type denotes a special type of string that is converted to uppercase and removes any trailing or leading spaces.
+Denotes a special type of string that is converted to uppercase and removes any trailing or leading spaces.
 
 
 
@@ -35,25 +35,6 @@ This simple data type denotes a special type of string that is converted to uppe
   
  You cannot assign a char to a position in the code variable greater than the current length of the variable +1. For more information, see [Char Data Type](devenv-char-data-type.md).  
   
-## Methods
-The methods supported for the Code data type are:
-
-[CONVERTSTR method (Code, Text)](../methods/devenv-convertstr-method-code-text.md)   
-[COPYSTR method (Code, Text)](../methods/devenv-copystr-method-code-text.md)   
-[DELCHR method (Code, Text)](../methods/devenv-delchr-method-code-text.md)   
-[DELSTR method (Code, Text)](../methods/devenv-delstr-method-code-text.md)   
-[FORMAT method (Code, Text)](../methods/devenv-format-method-code-text.md)   
-[INCSTR method (Code, Text)](../methods/devenv-incstr-method-code-text.md)   
-[INSSTR method (Code, Text)](../methods/devenv-insstr-method-code-text.md)   
-[LOWERCASE method (Code, Text)](../methods/devenv-lowercase-method-code-text.md)   
-[MAXSTRLEN method (Code, Text)](../methods/devenv-maxstrlen-method-code-text.md)   
-[PADSTR method (Code, Text)](../methods/devenv-padstr-method-code-text.md)   
-[SELECTSTR method (Code, Text)](../methods/devenv-selectstr-method-code-text.md)   
-[STRCHECKSUM method (Code, Text)](../methods/devenv-strchecksum-method-code-text.md)   
-[STRLEN method (Code, Text)](../methods/devenv-strlen-method-code-text.md)   
-[STRPOS method (Code, Text)](../methods/devenv-strpos-method-code-text.md)   
-[STRSUBSTNO method (Code, Text)](../methods/devenv-strsubstno-method-code-text.md)   
-[UPPERCASE method (Code, Text)](../methods/devenv-uppercase-method-code-text.md)
 
 ## Example  
  This example shows some typical examples of code string assignments. In these examples, assume that the variable c is a code variable with a maximum length of 4.  

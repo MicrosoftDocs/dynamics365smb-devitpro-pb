@@ -2,7 +2,7 @@
 title: "Get Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,26 +18,27 @@ Retrieves the value of a property with a given key from a JsonObject.
 
 ## Syntax
 ```
-[Ok := ]  JsonObject.Get(Key: String, var Value: JsonToken)
+[Ok := ]  JsonObject.Get(Key: String, var Result: JsonToken)
 ```
 ## Parameters
 *JsonObject*  
 &emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
+
 *Key*  
 &emsp;Type: [String](string-data-type.md)  
 
-            
-*Value*  
+        
+*Result*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
-  
+A variable of type JsonToken that will contain the result if the operation is successful.  
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** if the operation was successful; otherwise, **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

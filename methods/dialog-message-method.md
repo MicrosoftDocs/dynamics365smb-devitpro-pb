@@ -2,7 +2,7 @@
 title: "Message Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,8 @@ Displays a text string in a message window.
 ## Parameters
 *String*  
 &emsp;Type: [String](string-data-type.md)  
-This string contains the text you want the system to display in the message window. Use a backslash (\) to start a new line. Use percent signs (%) to insert variable values into the string. Place the percent where you want the system to substitute the variable value. The string can be a text constant that is enabled for multilanguage functionality.  
+This string contains the text you want the system to display in the message window. Use a backslash (\) to start a new line. Use percent signs (%) to insert variable values into the string. Place the percent where you want the system to substitute the variable value. The string can be a text constant that is enabled for multilanguage functionality.
+        
 *Value*  
 &emsp;Type: [Any](any-data-type.md)  
 Any type of AL variable you want to insert into String. You can insert up to 10 values.  

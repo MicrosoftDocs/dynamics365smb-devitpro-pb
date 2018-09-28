@@ -2,7 +2,7 @@
 title: "GetHeaders Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # GetHeaders Method
-Gets the content's Http headers.
+Gets the HTTP content headers as defined in RFC 2616.
 
 ## Syntax
 ```
@@ -24,16 +24,17 @@ Gets the content's Http headers.
 *HttpContent*  
 &emsp;Type: [HttpContent](httpcontent-data-type.md)  
 An instance of the [HttpContent](httpcontent-data-type.md) data type.  
+
 *Headers*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
-  
+The HTTP headers associated with the content.  
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error.  
+  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

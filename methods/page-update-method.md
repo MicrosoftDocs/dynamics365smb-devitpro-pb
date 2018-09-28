@@ -2,7 +2,7 @@
 title: "Update Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Saves the current record and then updates the controls on the page. If you set t
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.  
+
 *SaveRecord*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 Set this parameter to true if you want to save the current record. Set this parameter to false if you want to update without saving the current record.  

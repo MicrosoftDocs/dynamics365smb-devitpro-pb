@@ -2,7 +2,7 @@
 title: "Add Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Adds a new value at the end of the JsonArray.
 *JsonArray*  
 &emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
+
 *Value*  
 &emsp;Type: [Decimal](decimal-data-type.md)  
   
