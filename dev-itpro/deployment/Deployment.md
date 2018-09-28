@@ -17,9 +17,9 @@ The topics in the Deployment section are intended to help an administrator confi
 
 ## Take prospects and customers online
 
-You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer/includes/prodshort.md) by asking them to get a [free trial]((https://go.microsoft.com/fwlink/?linkid=847861)), and by showing them the apps in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=dynamics-365%3Bdynamics-365-business-central), for example. With [!INCLUDE[prodshort](../developer/includes/prodshort.md) online, data is stored in the Microsoft cloud, removing the need to install SQL Server locally, for example.  
+You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by asking them to get a [free trial]((https://go.microsoft.com/fwlink/?linkid=847861)), and by showing them the apps in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=dynamics-365%3Bdynamics-365-business-central), for example. With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, data is stored in the Microsoft cloud, removing the need to install SQL Server locally, for example.  
 
-For more information about reseller readiness for [!INCLUDE[prodshort](../developer/includes/prodshort.md), see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md).  
+For more information about reseller readiness for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md).  
 
 ## When to choose on-premises deployment
 
