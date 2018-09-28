@@ -41,8 +41,17 @@ In the client, tooltips appear when you point to caption of the control.
     >  ActionContainers tooltips are only shown in the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] for the subtype **HomeItems**.  
 
 ## Remarks  
- The default is an empty string, which means there will be no tooltip.  
+ The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prodshort](../includes/prodshort.md)], apps are expected to apply tooltips to controls on pages.  
+
+The following example illustrates how you can apply tooltips in an app:  
+
+```
+Caption = 'ENU=Second field';
+ToolTip = 'ENU=Shows the name of the entity based on the names in your list of contacts.';
+```
 
 ## See Also  
- [ToolTipML Property](devenv-tooltipml-property.md)   
+
+[Configuring the Help Experience](../../deployment/configure-help.md)  
+ [ToolTipML Property](devenv-tooltipml-property.md)  
  <!-- [Multilanguage Development](Multilanguage-Development.md)-->
