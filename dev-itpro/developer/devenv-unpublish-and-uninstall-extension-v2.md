@@ -41,7 +41,7 @@ You can uninstall an extension by using the [!INCLUDE[nav_shell_md](includes/nav
 
 1. Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
 
-    For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview).
+    For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).
 2. To get a list of the extensions that are currently installed on a tenant, run the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo) with the `Tenant` parameter set.
 
     This cmdlet is useful because when you uninstall the extension, you will have to provide information about the extension, such as the its name, version, or path to the extension package file.
@@ -86,7 +86,7 @@ You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_se
 
 1.  Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
 
-    For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview).
+    For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).
 
 2. To get a list of the extensions that are currently published on a tenant, run the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo) without the `Tenant` parameter.
     
@@ -121,7 +121,7 @@ You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_se
 
 1.  Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
 
-    For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview).
+    For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).
 2. Run the [Sync-NAVAPP](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet with the `-Mode`parameter set to `Clean`.
 
     ```
