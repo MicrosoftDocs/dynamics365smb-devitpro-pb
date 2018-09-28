@@ -2,7 +2,7 @@
 title: "DMY2Date Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,10 +25,12 @@ Date :=   System.DMY2Date(Day: Integer, [Month: Integer], [Year: Integer])
 ## Parameters
 *Day*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The number of the day in the month (1-31)  
+The number of the day in the month (1-31)
+        
 *Month*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The number of the month in the year (1-12). If you omit this optional parameter, the current month will be used as the default.  
+The number of the month in the year (1-12). If you omit this optional parameter, the current month will be used as the default.
+        
 *Year*  
 &emsp;Type: [Integer](integer-data-type.md)  
 The four-digit number of the year. If you omit this optional parameter, the current year is used as the default.  
