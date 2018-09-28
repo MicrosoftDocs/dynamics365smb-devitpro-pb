@@ -30,7 +30,6 @@ This article provides an overview of the technical upgrade process for Business 
 |Backup the database(s).|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
 |(Single-tenant mode only) Uninstall all extensions. (Multitenant mode) Unintsall all V1 extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
 |(Optional) Unpublish unwanted extension versions .|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp)||
-|Unpublish all symbols.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp)||
 |Ensure all objects are complied, unlocked, and tables are synchronized.|[See...](../cside/cside-compiling-objects.md)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 |(Multitenant mode only) Dismount the tenant|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant?view=dynamicsnav-ps-2018)||
@@ -70,7 +69,8 @@ This article provides an overview of the technical upgrade process for Business 
 ## Post-upgrade tasks 
 |Step|More info| Done |
 |----|-----------|--|
-|(Single-tenant mode only) Install the V2 extensions previously uninstalled.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
+|(Single-tenant mode only) Install the V2 extensions that were previously uninstalled.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
+|If the old database used first-party V1 extensions, publish and install the V2 extensions that replace them.|[See...](converting-a-database.md#extensions)||
 |Transition custom code from old codeunit 1 to management codeunits.|[See...](transition-from-codeunit1.md)||
 |Configure pages and reports included in the MenuSuite to be searchable in the Web client |[See...](upgrade-pages-report-for-search.md) ||
-|Upload customer license. |[See...](../cside/cside-upload-license-file.md)||
+|Upload the customer license. |[See...](../cside/cside-upload-license-file.md)||
