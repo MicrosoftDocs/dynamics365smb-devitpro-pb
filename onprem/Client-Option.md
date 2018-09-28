@@ -3,7 +3,7 @@ title: "Client Option"
 description: "Describing the different client options"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 15/09/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

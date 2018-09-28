@@ -10,7 +10,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: cloud, edge
-ms.date: 09/10/2018
+ms.date: 10/01/2018
 ms.author: bmeier
 
 ---

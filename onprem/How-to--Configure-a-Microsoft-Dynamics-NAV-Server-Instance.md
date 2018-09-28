@@ -2,7 +2,7 @@
 title: Configure Dynamics NAV Server Instance
 description: Configure Dynamics NAV Server instances by using the Server Administration tool. A list of Server instances are displayed in the left pane of the tool. 
 ms.custom: na
-ms.date: 11/22/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

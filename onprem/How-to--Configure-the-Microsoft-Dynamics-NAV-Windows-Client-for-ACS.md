@@ -3,7 +3,7 @@ title: Configure Windows Client for ACS
 description: To configure the Dynamics NAV Windows Client for Access Control Services, edit the client configuration file, named as ClientUserSetting.config file. 
 author: jswymer
 ms.custom: na
-ms.date: 11/27/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

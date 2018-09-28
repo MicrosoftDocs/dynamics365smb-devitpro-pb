@@ -3,7 +3,7 @@ title: "DataClassification Property"
 description: Data classification property is used for security, compliance, privacy and process of collecting, storing and using user personal information. 
 ms.author: jswymer
 ms.custom: na
-ms.date: 03/15/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

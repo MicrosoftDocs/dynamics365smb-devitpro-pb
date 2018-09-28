@@ -2,7 +2,7 @@
 title: Display Customer Data in FactBox 
 description: The FactBox types are page part, system part and chart part that displays additional information to the user which can be used with different page types. 
 ms.custom: na
-ms.date: 11/27/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

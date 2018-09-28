@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 08/09/2018
+ms.date: 10/01/2018
 ms.author: edupont
 ---
 

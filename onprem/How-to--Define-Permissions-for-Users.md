@@ -2,7 +2,7 @@
 title: Define User Permissions
 description: Dynamics NAV provides a standard permission sets. All users must be assigned one or more permission sets before they can access Dynamics NAV.
 ms.custom: na
-ms.date: 12/06/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,7 +1,7 @@
 ---
 title: "Opening a Report in the Microsoft Dynamics NAV Web Client by Using a URL"
 ms.custom: na
-ms.date: 12/22/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

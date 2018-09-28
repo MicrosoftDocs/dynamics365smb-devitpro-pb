@@ -2,7 +2,7 @@
 title: "Walkthrough: Creating and Using a Client Control Add-in"
 author: jswymer
 ms.custom: na
-ms.date: 12/12/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

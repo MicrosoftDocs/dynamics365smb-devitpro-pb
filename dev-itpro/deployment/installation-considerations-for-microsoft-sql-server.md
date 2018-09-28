@@ -1,7 +1,7 @@
 ---
 title: "Installation Considerations for Microsoft SQL Server and Business Central"
 ms.custom: na
-ms.date: 02/20/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

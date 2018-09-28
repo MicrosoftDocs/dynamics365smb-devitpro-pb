@@ -2,7 +2,7 @@
 title: Microsoft Dynamics NAV Web Client
 description: The web client gives users access to the Dynamics NAV data over a network, such as the internet by using a web browser.
 ms.custom: na
-ms.date: 10/18/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

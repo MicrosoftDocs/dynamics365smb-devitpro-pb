@@ -1,7 +1,7 @@
 ---
 title: "Converting a Database to Dynamics 365 Business Central - Technical Upgrade"
 ms.custom: na
-ms.date: 10/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

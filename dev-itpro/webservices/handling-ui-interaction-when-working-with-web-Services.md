@@ -1,7 +1,7 @@
 ---
 title: "Handling UI Interaction When Working with Web Services"
 ms.custom: na
-ms.date: 29/08/20168
+ms.date: 10/01/20188
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
