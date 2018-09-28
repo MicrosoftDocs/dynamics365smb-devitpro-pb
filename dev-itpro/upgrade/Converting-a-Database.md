@@ -64,7 +64,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 
        For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
 
-3.  <a name="uninstallextensions"></a> For single-tenant mode, uninstall all extensions. For multitenant mode, be sure to uninstall all V1 extensions.
+2.  <a name="uninstallextensions"></a> For single-tenant mode, uninstall all extensions. For multitenant mode, be sure to uninstall all V1 extensions.
     <!-- This tep is not required for multitenant -->
 
     You can do this from **Extension Management** page in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client or by using the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet of the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. 
@@ -86,41 +86,41 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
     ```  
-4. Unpublish extensions versions that you do not want to use in the upgraded database.
+3. Unpublish extensions versions that you do not want to use in the upgraded database.
 
     ```
     Unpublish-NAVApp -ServerInstance dynamicsnav110 -Name System -Version 11.0.12925.0 
     ```
 
-5.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->application database.  
+4.  <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version of the old database, and then connect to the old <!-- for multitenenat, this is the application database-->application database.  
 
      For more information, see [Open Databases](../cside/cside-open-database.md).  
 
-7.  In Object Designer, verify that all objects are compiled and no objects are locked.  
+5.  In Object Designer, verify that all objects are compiled and no objects are locked.  
 
      For more information about compiling objects, see [Compiling Objects](../cside/cside-compiling-objects.md).
 
      If one or more objects are locked, the conversion process cannot update the database version number. As a result, the conversion does not complete. For more information, see [Locking and Unlocking Objects](../cside/cside-lock-unlock-objects.md).
 
-8.  On the **Tools** menu, choose **Build Server Application Objects**, and then choose the **Yes** button.  
+6.  On the **Tools** menu, choose **Build Server Application Objects**, and then choose the **Yes** button.  
 
-9.  If any errors occur, they are shown in the **Error List** window. Make sure that you address all compilation errors before you continue.  
+7.  If any errors occur, they are shown in the **Error List** window. Make sure that you address all compilation errors before you continue.  
 
-10.  Run the schema synchronization with validation to synchronize the database schema changes.  
+8.  Run the schema synchronization with validation to synchronize the database schema changes.  
 
     For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and application-database.md).
 
 
     <!-- for multitenancy you cannot use the dev env, only admin tool or shell, but check. Do you have to sync all tenants?-->
 
-11.  <a name="uploadlicense"></a>Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Partner license to the database.  
+9.  <a name="uploadlicense"></a>Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Partner license to the database.  
 
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     > [!IMPORTANT]  
     >  The license that you upload must be a developer license. During the conversion, the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] will convert the report objects that are stored in the old database to the RDL format.  
 
-12. <a name="dismounttenant"></a>(Multitenant only) Dismount tenants.
+10. <a name="dismounttenant"></a>(Multitenant only) Dismount tenants.
 
     Use the  [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Dismount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] to dismount all tenants from the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
 
@@ -128,14 +128,14 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     Dismount-NAVTenant -ServerInstance <serverinstance> -Tenant <tenantID>
     ```
 
-13.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
+11.  Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
 
-    You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)].
+        You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)].
 
-    To use the Set-NAVServerInstance cmdlet, run the following command:
-    ```
-    Set-NAVServerInstance –ServerInstance <ServerInstanceName> -Stop
-    ```
+        To use the Set-NAVServerInstance cmdlet, run the following command:
+        ```
+        Set-NAVServerInstance –ServerInstance <ServerInstanceName> -Stop
+        ```
 
 14. <a name="clearsql"></a>Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old application database in SQL Server.  
 
