@@ -38,11 +38,64 @@ Apps and other extensions are expected to follow the same model by applying tool
 
 The context-sensitive links to Help are based on a UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are listed, and have a target Help article associated with each of them. This means that multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
 
-The table associates page IDs with target articles, but the URL to where to find the target article is specified at the application level that defaults to the [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com/en-us/dynamics365/business-central/) site. In an extension, you can overrule this URL so that all calls for Help go to your site instead, for example. Alternatively, you can specify help links at the object level. For more information, see [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md).  
+The table associates page IDs with target articles, but the URL to where to find the target article is specified at the application level that defaults to the [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com/en-us/dynamics365/business-central/) site. In an extension, you can overrule this URL so that all calls for Help go to your site instead, for example. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to that app provider's website.  
+
+At an app level, the properties in the app.json file can be set to take over the links to Help for specific languages as shown in the following example:
+
+```
+  "helpBaseUrl": "https://docs.microsoft.com/{0}/dynamics365/accountants",
+  "supportedLocales": [
+    "en-GB", "en-US"
+  ],
+```
+
+Alternatively, you can specify help links at the object level. For more information, see [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md).  
 
 ### Tooltips
 
 The base application has set the Tooltip property for all controls on (almost) all page objects. Most system actions also include tooltips so that users get a consistent experience. Your extensions are expected to also include tooltips for the same reason. For more information, see [ToolTip Property](../developer/properties/devenv-tooltip-property.md).  
+
+### Instructional text
+
+The base application has applied instructional text to setup guides and certain other types of page objects. Your extensions are expected to also include instructional text to setup guides for the same reason. For more information, see [InstructionalText Property](../developer/properties/devenv-instructionaltext-property.md).  
+
+### Example
+
+The following example shows how you can apply user assistance and link to Help in a page object:
+
+```
+page 50100 MyPage
+{
+    PageType = Card;
+    SourceTable = MyTable;
+    HelpLink = 'https://docs.microsoft.com/{0}/dynamics365/get-started/training/index';
+
+
+    layout
+    {
+        area(content)
+        {
+            group(Test)
+            {
+                InstructionalText = 'ENU=Add an entity from your list of contacts. The entity can be a person or a company.';
+                field(ID; ID)
+                {
+                    ApplicationArea = All;
+                    Caption = 'ENU=First field';
+                    ToolTip = 'ENU=Shows the ID of the entity. You must set the ID manually when you add an entity, and it can be a maximum of 10 characters long.';
+                }
+                field(Name; Name)
+                {
+                    ApplicationArea = All;
+                    Caption = 'ENU=Second field';
+                    ToolTip = 'ENU=Shows the name of the entity based on the names in your list of contacts.';
+                }
+            }
+        }
+    }
+}
+
+```
 
 ## On-premises deployments
 
