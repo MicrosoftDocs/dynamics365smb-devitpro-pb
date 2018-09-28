@@ -129,9 +129,9 @@ The following table lists the mappings between the codeunit 1 triggers and event
 
 ## What does this mean for upgrade?
 
-You have move any custom logic that was included in the old codeunit 1 into the management codeunits and methods described in the previous section. Any custom code that called into codeunit 1 will also have to be changed to call or subscribe to the new methods. 
+You have to move any custom logic that was included in the old codeunit 1 into the management codeunits and methods described in the previous section. Any custom code that called into codeunit 1 will also have to be changed to call or subscribe to the new methods. 
 
-For a technical upgrade, after you convert your old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform, you must import and compile a replacement codunit 1 object, which you can get from [Codeunit 1 Replacement](codeunit1-replacement.md).
+For a technical upgrade, after you convert your old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform, you must import and compile a replacement codeunit 1 object, which you can get from [Codeunit 1 Replacement](codeunit1-replacement.md).
 
 ## See Also  
  [Converting a Database](Converting-a-Database.md)  
