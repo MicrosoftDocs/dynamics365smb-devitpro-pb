@@ -2,7 +2,7 @@
 title: Microsoft.Dynamics.Nav.Client has stopped working
 description: The error indicates that the Windows client cannot start, and occurs when the development environment and Windows client are running on different versions.
 ms.custom: na
-ms.date: 10/26/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -2,7 +2,7 @@
 title: User Authentication with Azure AD for Single Sign-on
 description: Associate an existing Microsoft account with user account to achieve single sign-on between the Web client and Office 365.
 ms.custom: na
-ms.date: 10/17/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

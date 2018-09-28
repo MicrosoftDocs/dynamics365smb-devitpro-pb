@@ -2,7 +2,7 @@
 title: Add Labels to RDLC Report Layout
 description:  A Client report definition RDLC report layout in Visual Studio requires adding data items and columns from the report dataset to the layout.
 ms.custom: na
-ms.date: 11/08/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

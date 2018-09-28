@@ -2,7 +2,7 @@
 title: Add and Identify Hidden Report Fields
 description: Mark the hidden fields on a report, so they are easy to identify, and move them to a different location in the layout to avoid problems with formatting.
 ms.custom: na
-ms.date: 11/07/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

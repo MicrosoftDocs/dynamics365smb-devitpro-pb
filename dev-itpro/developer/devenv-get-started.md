@@ -3,7 +3,7 @@ title: "Getting Started with AL"
 description: "Description of how to get started with the new development environment"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/26/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

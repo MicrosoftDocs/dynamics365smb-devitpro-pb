@@ -2,7 +2,7 @@
 title: Add Translated Strings for Conflicting Text Encoding Formats
 description: Configure solution for users with different regional settings and formats by allowing access to the same Server but see UI strings in their local language.
 ms.custom: na
-ms.date: 11/08/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 08/20/2018
+ms.date: 10/01/2018
 
 ---
 # Authentication and Credential Types for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]  

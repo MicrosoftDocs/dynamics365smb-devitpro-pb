@@ -2,7 +2,7 @@
 title: Create a Report Dataset
 description: A dataset determines the data that displays on a generated report, built from data items and columns, where data item is a table and column is a field in the table.
 ms.custom: na
-ms.date: 11/28/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

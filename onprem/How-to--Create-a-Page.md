@@ -2,7 +2,7 @@
 title: Create a Page
 description: Pages are objects for viewing and editing data in the RoleTailored client. To create a page, consider page's business purpose and user tasks.
 ms.custom: na
-ms.date: 11/28/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

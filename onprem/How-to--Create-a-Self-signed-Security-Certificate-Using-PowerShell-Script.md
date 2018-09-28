@@ -2,7 +2,7 @@
 title: Self-signed Security Certificate
 description: Create a self-signed certificate using PowerShell cmdlet to help secure the communication between the Server and Web Client in Dynamics NAV.
 ms.custom: na
-ms.date: 11/28/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

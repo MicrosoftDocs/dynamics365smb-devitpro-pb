@@ -1,7 +1,7 @@
 ---
 title: Converting to Shared Schema
 description: Explains the shared schema data model and how to convert to it from the default separate schema data model.
-ms.date: 10/16/2017
+ms.date: 10/01/2018
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2017"

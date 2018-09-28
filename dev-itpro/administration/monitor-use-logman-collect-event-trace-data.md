@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Logman to Collect Event Trace Data"
 ms.custom: na
-ms.date: 22/01/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,7 +1,7 @@
 ---
 title: "Working With Media on Records"
 ms.custom: na
-ms.date: 12/01/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

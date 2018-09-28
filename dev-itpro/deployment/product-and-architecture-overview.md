@@ -2,7 +2,7 @@
 title: Product Architecture
 description: In Microsoft Dynamics NAV, the architecture comprises of three core components, and various additional tools and components.
 ms.custom: na
-ms.date: 10/17/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

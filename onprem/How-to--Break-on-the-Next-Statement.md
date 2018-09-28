@@ -2,7 +2,7 @@
 title: Break on the Next Statement
 description: If the debugger is attached to a session, then you can specify that the debugger breaks before the next C/AL statement is run in that session. 
 ms.custom: na
-ms.date: 11/09/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

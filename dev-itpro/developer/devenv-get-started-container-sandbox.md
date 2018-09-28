@@ -3,7 +3,7 @@ title: "Get started with the Container Sandbox Development Environment"
 description: "Overview of the getting started with the container-based development."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
