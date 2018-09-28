@@ -3,7 +3,7 @@ author: solsen
 title: "Testing the Advanced Sample Extension"
 description: "Includes test code for the advanced example extension."
 ms.custom: na
-ms.date: 07/09/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,13 @@ It is required to submit tests with your extension in order to pass validation. 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
 ## Developing the test for the sample Customer Rewards extension 
+
+### Prerequisites
+To complete this walkthrough, you will need:
+- Dynamics 365 Business Central Docker container-based development environment.
+For more information, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md) and [Running a Container-Based Development Environment](devenv-running-container-development.md).    
+- [Visual Studio Code](https://code.visualstudio.com/Download).   
+- The [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al) for Visual Studio Code.
 
 ### Identifying the areas of the extension that need to be tested 
 Before writing tests for your extension, you need to identify all the areas of the extension that need to be tested.  
@@ -100,7 +107,7 @@ In order to install the Application Test Toolkit:
 2. Run the `Import-TestToolkitToNavContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
 
 ```
-Import-TestToolkitToNavContainer -containerName navserver
+Import-TestToolkitToNavContainer -containerName <name-of-container> 
 ```
 
 Alternatively, if you use the `New-NavContainer` function from the NavContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 

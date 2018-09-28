@@ -1,7 +1,7 @@
 ---
 title: "CAPTIONCLASSTRANSLATE Method"
 ms.custom: na
-ms.date: 07/03/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ String := CAPTIONCLASSTRANSLATE(CaptionClassText)
  The caption string in the current local language of the client.  
   
 ## Remarks  
- You can use the [SELECTLATESTVERSION Method \(Database\)](devenv-selectlatestversion-method-database.md) to clear the current session's cache for the CaptionClassTranslate strings. The strings will then be reevaluated by the **CaptionClassTranslate** method trigger \(ID 15\) in codeunit 1.  
+ You can use the [SELECTLATESTVERSION Method \(Database\)](devenv-selectlatestversion-method-database.md) to clear the current session's cache for the CaptionClassTranslate strings. The strings will then be reevaluated by the **CaptionClassTranslate** method trigger \(ID 15\) in codeunit 42.  
 <!--  
 ## See Also  
  [CaptionClass Functionality](captionclass-functionality.md)

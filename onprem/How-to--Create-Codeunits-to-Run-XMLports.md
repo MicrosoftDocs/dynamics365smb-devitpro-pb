@@ -2,7 +2,7 @@
 title: Create Codeunits to Run XMLports
 description: This topic explains how to create codeunits to run XMLports. Before you create a codeunit, you must first design and save the XMLport. 
 ms.custom: na
-ms.date: 12/05/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

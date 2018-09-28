@@ -1,7 +1,7 @@
 ---
 title: "HasCustomLayout Method"
 ms.custom: na
-ms.date: 07/13/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,13 +47,13 @@ HasCustomLayout(ObjectType : 'Report'; ObjectID : Integer) : Integer
 |2|The report is currently set up to use a custom Word layout.|  
   
 ## Applies To  
- Report layout implementation in codeunit 1 **ApplicationManagement**.  
+ Report layout implementation in codeunit 44.  
   
 ## Remarks  
  This method is executed when a report is run from the client or by a call to the Run, SaveAsWord, SaveAsPdf, and SaveAsExcel methods. The HasCustomLayout method is executed at run time before the [OnPreReport Trigger](../triggers/devenv-OnPreReport-Trigger.md).  
   
 ## Example  
- The following example shows the default implementation on the method in codeunit 1. This example uses a variable **ReportLayout** that has the data type **Record** and subtype **Report Layout**.  
+ The following example shows the default implementation on the method in codeunit 44. This example uses a variable **ReportLayout** that has the data type **Record** and subtype **Report Layout**.  
   
 ```  
 IF ObjectType <> ObjectType::Report THEN  

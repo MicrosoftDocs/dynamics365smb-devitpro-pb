@@ -3,7 +3,7 @@ title: "Checklist for Submitting Your App"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/15/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ The following is a checklist of all requirements that you **must meet before sub
 |DataClassification is required for fields of all tables/table extensions. Property must be set to other than `ToBeClassified`.|[Classifying Data](devenv-classifying-data.md)|
 
 <!-- 
-|Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Packaging the Permission Set](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools/new-navapppackage?view=dynamicsnav-ps-2017)| [Managing Permission Sets](../Managing-Permissions-and-Permission-Sets.md), [How to: Export Permission Sets](../How-to-Import-Export-Permission-Sets-Permissions.md) |
+|Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Packaging the Permission Set](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools/new-navapppackage?view=dynamicsnav-ps-2017)| , [How to: Export Permission Sets](../How-to-Import-Export-Permission-Sets-Permissions.md) |
 -->
 
 ## See Also

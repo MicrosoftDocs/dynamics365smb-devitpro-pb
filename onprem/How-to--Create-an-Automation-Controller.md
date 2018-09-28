@@ -2,7 +2,7 @@
 title: Automation Controller
 description: By using variables that have Automation data type, an Automation controller implements and runs Automation objects from an Automation server.
 ms.custom: na
-ms.date: 11/28/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

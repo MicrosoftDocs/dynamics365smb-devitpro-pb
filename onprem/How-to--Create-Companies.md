@@ -2,7 +2,7 @@
 title: Create Companies
 description: You can create companies in the Dynamics NAV Windows client and Web client by using the New-NAVCompany windows PowerShell cmdlet.  
 ms.custom: na
-ms.date: 12/05/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

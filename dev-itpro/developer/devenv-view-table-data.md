@@ -3,7 +3,7 @@ title: "Viewing Table Data in Browser"
 description: "View tables in browser for troubleshooting"
 author: jswymer
 ms.custom: na
-ms.date: 03/01/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ For developers, administrators, and support personnel, it can be useful to inspe
 -   In a development environment, in addition to viewing a table directly from the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], developers can view a table automatically when they publish/debug an AL project from Visual Studio Code. 
 
 > [!NOTE]
-> The table appears as read-only in the client, so modifications, insertions and deletions cannot be made.
+> The table appears as read-only in the client, so modifications, insertions, and deletions cannot be made.
 
 > [!IMPORTANT]
 > Data in the tables can be sensitive. Be sure to follow your organization's guidelines for handling such data. 
@@ -29,8 +29,8 @@ For developers, administrators, and support personnel, it can be useful to inspe
 ## Required permissions
 Whether viewing the table directly from the client or from Visual Studio Code, your [!INCLUDE[d365fin_md](includes/d365fin_md.md)] user account must have the following permissions:
 
--   Read permission on the table that you want to view.
--   Execution permission (direct) on the System object **1350 Run table**.
+- Read permission on the table that you want to view.
+- Execution permission (direct) on the System object **1350 Run table**.
 
 Any end-user that is assigned these permissions will be able to view that table in the browser.
 

@@ -2,7 +2,7 @@
 title: Conditionally Display Filter Headers
 description: Conditionally display the filter header by adding a filter variable to the report dataset and create a conditional expression in the RDLC report layout.
 ms.custom: na
-ms.date: 11/22/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

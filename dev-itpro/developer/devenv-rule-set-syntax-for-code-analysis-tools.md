@@ -3,7 +3,7 @@ title: "Ruleset for the Code Analysis Tool"
 description: "Description of the custom ruleset for the Code Analysis Tool."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/20/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

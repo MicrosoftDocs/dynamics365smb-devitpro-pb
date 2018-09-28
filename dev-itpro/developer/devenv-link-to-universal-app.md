@@ -1,7 +1,7 @@
 ---
 title: "Linking to the Dynamics 365 Business Central Universal App"
 ms.custom: na
-ms.date: 17/04/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -85,7 +85,7 @@ The URL `ms-businesscentral:///?page=21` or `ms-dynamicsnav:///?page=21` will op
 <!-- Add this as note in onprem
  
 [!IMPORTANT]  
-The *ms-businesscentral or ms-dynamicsnav * scheme only translates to a secure server connection. Therefore the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] must be exposed through an https connection. For more information, see [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client](How-to--Configure-SSL-to-Secure-the-Connection-to-Microsoft-Dynamics-NAV-Web-Client.md). 
+The *ms-businesscentral or ms-dynamicsnav * scheme only translates to a secure server connection. Therefore the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] must be exposed through an https connection. For more information, see [How to: Configure SSL to Secure the Connection to Microsoft Dynamics NAV Web Client]. 
 -->
 
 <!--   

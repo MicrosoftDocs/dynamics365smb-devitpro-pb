@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Phone client
+Business Central Phone client

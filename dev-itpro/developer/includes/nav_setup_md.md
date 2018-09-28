@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV 2017 Setup
+Business Central Setup

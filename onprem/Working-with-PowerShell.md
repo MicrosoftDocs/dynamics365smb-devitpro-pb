@@ -2,7 +2,7 @@
 title: PowerShell Administration
 description: Windows PowerShell is a Windows command-line shell that is designed especially for system administrators.
 ms.custom: na
-ms.date: 10/18/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

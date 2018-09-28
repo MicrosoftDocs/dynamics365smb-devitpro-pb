@@ -2,7 +2,7 @@
 title: Run Reports
 description: Add a report to the Report tab of a page and preview the report from a client computer using the Report Viewer.
 ms.custom: na
-ms.date: 10/24/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

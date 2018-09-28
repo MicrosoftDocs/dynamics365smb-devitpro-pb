@@ -1,7 +1,7 @@
 ---
 title: "Method Attributes"
 ms.custom: na
-ms.date: 06/07/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

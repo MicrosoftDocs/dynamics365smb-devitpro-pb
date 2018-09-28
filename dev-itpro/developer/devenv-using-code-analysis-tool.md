@@ -3,7 +3,7 @@ title: "Using the Code Analysis Tool"
 description: "Using static code analysis tool on an AL project."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/13/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,7 +58,8 @@ A code analyzer is a library that builds on the compiler's functionality to offe
 The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code contains three analyzers:
 - **CodeCop** is an analyzer that enforces the official AL Coding Guidelines. For more information about the CodeCop rules, see [CodeCop Analyzer Rules](devenv-codeanalyzer-codecop-rules.md).
 - **PerTenantExtensionCop** is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants. For more information about the PerTenantExtensionCop rules, see [PerTenantExtensionCop Analyzer Rules](devenv-codeanalyzer-pertenantextensioncop-rules.md).
-- **AppSourceCop** is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource. For more information about the AppSourceCop rules, see [AppSourceCop Analyzer Rules](devenv-codeanalyzer-appsourcecop-rules.md)
+- **AppSourceCop** is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource. For more information about the AppSourceCop rules, see [AppSourceCop Analyzer Rules](devenv-codeanalyzer-appsourcecop-rules.md).
+- **UserInterfaceCop** is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants. For more information about the UserInterfaceCop rules, see [UserInterfaceCop Analyzer Rules](devenv-codeanalyzer-uicop-rules.md).
 
 ## Selecting code analyzers to run
 By default, all the analyzers that ship with the Visual Studio Code extension are enabled.
@@ -71,6 +72,7 @@ The analyzers that are shipped with the [!INCLUDE[d365al_ext_md](../includes/d36
 - `"${AppSourceCop}"`
 - `"${CodeCop}"`
 - `"${PerTenantExtensionCop}"`
+- `"${UserInterfaceCop}"`
 
 ## See also
 [Using the Code Analysis Tools with the Ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  

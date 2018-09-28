@@ -2,7 +2,7 @@
 title: Default Built-in Report Layout
 description: Specify whether a report uses a built-in RDLC or Word report layout as the default layout for viewing the reports in Microsoft Dynamics NAV. 
 ms.custom: na
-ms.date: 11/02/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

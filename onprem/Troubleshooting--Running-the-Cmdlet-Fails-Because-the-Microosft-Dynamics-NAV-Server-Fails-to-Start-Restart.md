@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting: Running the Cmdlet Fails Because the Microosft Dynamics NAV Server Fails to Start-Restart"
 ms.custom: na
-ms.date: 06/05/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,7 +1,7 @@
 ---
 title: "Developing Apps for Dynamics 365 Business Central"
 ms.custom: na
-ms.date: 03/05/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

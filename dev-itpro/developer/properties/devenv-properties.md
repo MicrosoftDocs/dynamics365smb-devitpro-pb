@@ -2,7 +2,7 @@
 title: "Properties"
 author: solsen
 ms.custom: na
-ms.date: 02/01/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,6 +36,3 @@ This section describes all properties that are available to developers in [!INCL
 [XMLPort Properties](devenv-xmlport-properties.md)  
 [AL Method Reference](../methods/devenv-al-method-reference.md)  
 [Triggers](../triggers/devenv-triggers.md)  
-<!-- //NAV[How to: View or Modify Properties on a Table or Field](How-to--View-or-Modify-Properties-on-a-Table-or-Field.md)  
- [Page Properties Not Supported by Microsoft Dynamics NAV Web Client](Page-Properties-Not-Supported-by-Microsoft-Dynamics-NAV-Web-Client.md)  
--->
