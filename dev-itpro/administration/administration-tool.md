@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 The [!INCLUDE[admintool](../developer/includes/admintool.md)] is a Microsoft Management Console \(MMC\) snap-in for creating and managing [!INCLUDE[server](../developer/includes/server.md)] instances. 
 
 > [!TIP]  
->  You can also administrate your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment using [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Microsoft Dynamics 365 Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/dynamics-nav/overview).   
+>  You can also administrate your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment using [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Microsoft Dynamics 365 Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).   
 
 ## Install the [!INCLUDE[admintool](../developer/includes/admintool.md)]
 

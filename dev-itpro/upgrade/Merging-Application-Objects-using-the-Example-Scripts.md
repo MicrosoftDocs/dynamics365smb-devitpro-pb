@@ -6,9 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
-ms.assetid: 8a8c8a05-5876-489f-9ecc-5922fbb23185
-caps.latest.revision: 4
+ms.service: "dynamics365-business-central"
 ---
 # Merging Application Objects using the Example Scripts
 The [!INCLUDE[navnow](includes/navnow_md.md)] product media includes a folder with examples of how you can use [!INCLUDE[wps_2](includes/wps_2_md.md)] cmdlets to compare and merge application objects. In the **WindowsPowerShellScripts** folder on the product media, the **ApplicationMergeUtilities** folder contains [!INCLUDE[wps_2](includes/wps_2_md.md)] sample scripts and folders that contain demonstration data.  
@@ -38,5 +36,5 @@ Get-Help "NAV"
   
 ## See Also  
  [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)   
- [How to: Merge Application Changes](How-to--Merge-Application-Changes.md)   
+ [Merge Application Changes](merge-application-changes.md)   
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)
