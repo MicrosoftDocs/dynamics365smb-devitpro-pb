@@ -1,6 +1,6 @@
 ---
 title: "Page 6400 and 6401 Errors "
-description: "Explains how to resolve the compilation errors that you get forPage 6400 and 6401 when converting a database from Dynamics NAV 2017 to 2018."
+description: "Explains how to resolve the compilation errors that you get forPage 6400 and 6401 when converting a database from Dynamics NAV to Business Central."
 ms.custom: na
 ms.date: 27/11/2017
 ms.reviewer: na

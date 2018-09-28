@@ -113,4 +113,4 @@ To connect to the intelligent cloud through [!INCLUDE[prodshort](../developer/in
 [Managing your intelligent cloud Environment](manage-intelligent-edge.md)  
 [Replicating on-premises data](data-replication-intelligent-cloud.md)  
 [Frequently Asked Questions about Connecting to the intelligent cloud](faq-intelligent-cloud.md)  
-[Your Access to the intelligent cloud](/dynamics365/business-central/about-intelligent-cloud)  
+[Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)  
