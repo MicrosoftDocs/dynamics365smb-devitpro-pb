@@ -32,6 +32,8 @@ The user assistance model is based on the following principles:
 
     The Help menu and the tooltips provide context-sensitive links to Help articles with more information.
 
+Apps and other extensions are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality.  
+
 ### Context-sensitive Help
 
 The context-sensitive links to Help are based on a UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are listed, and have a target Help article associated with each of them. This means that multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
@@ -40,28 +42,19 @@ The table associates page IDs with target articles, but the URL to where to find
 
 ### Tooltips
 
-The base application has set the TooltipML property for all controls on (almost) all page objects. Most system actions also include tooltips so that users get a consistent experience. Your extensions are expected to also include tooltips for the same reason.  
-
-
+The base application has set the Tooltip property for all controls on (almost) all page objects. Most system actions also include tooltips so that users get a consistent experience. Your extensions are expected to also include tooltips for the same reason. For more information, see [ToolTip Property](../developer/properties/devenv-tooltip-property.md).  
 
 ## On-premises deployments
 
 For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, you must choose between using the legacy Dynamics NAV Help Server or an online website. Help Server is a simple website that requires your Help to be in a specific format (HTML files), and the online website can host any content that you want to make available. Your choice depends on the concrete needs of your solution and your users.  
 
-### Online website
+### Online library
 
 If you want to use a website that is not based on Help Server, then you must specify the URL in the settings for the Web client and the Windows client, if your company uses this legacy client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it support.  
 
-For the Web client, which is accessed by users from a browser or from the mobile apps, the
- navsettings.json file must contain the following settings:
+For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
 ```
-                           "//HelpServer": [
-                                                   "Name of the Microsoft Dynamics NAV Help Server to connect to."
-                                            ],
-                           "HelpServer": "",
-                           "//HelpServerPort":  "The listening TCP port for the Microsoft Dynamics NAV Help Server. Valid range: 1-65535",
-                           "HelpServerPort": "49000",
                            "//BaseHelpUrl":  "The location of Help for this application."
                            "BaseHelpUrl": "https://docs.microsoft.com/{0}/dynamics365/business-central/",
                            "//BaseHelpSearchUrl":  "The URL to use if Help is included in the Search functionality in Business Central."
@@ -70,11 +63,9 @@ For the Web client, which is accessed by users from a browser or from the mobile
                            "DefaultRelativeHelpPath": "index",
 ```
 
-
 For users who use the legacy Windows client connected to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the ClientUserSettings.config file must contain the following settings:
 
 ```
-    <add key="HelpServer" value="" />
     <add key="BaseHelpUrl" value="https://docs.microsoft.com/{0}/dynamics365/business-central/" />
     <add key="DefaultRelativeHelpPath" value="index" />
 ```
@@ -84,17 +75,16 @@ For users who use the legacy Windows client connected to [!INCLUDE[prodshort](..
 
 ### Help Server
 
-If you want to use Help Server, then you must specify the server and port in the installation options. The Help Server website *
+If you want to use Help Server, then you must specify the server and port in the installation options. The Help Server website can also serve as a starting point for adding a library to your existing website, for example.  
 
-For the Web client, which is accessed by users from a browser or from the mobile apps, the 
- navsettings.json file must contain the following settings:
+For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
 ```
                            "//HelpServer": [
-                                                   "Name of the Microsoft Dynamics NAV Help Server to connect to."
+                                                   "Name of the Dynamics NAV Help Server to connect to."
                                             ],
                            "HelpServer": "https://myserver.com",
-                           "//HelpServerPort":  "The listening TCP port for the Microsoft Dynamics NAV Help Server. Valid range: 1-65535",
+                           "//HelpServerPort":  "The listening TCP port for the Dynamics NAV Help Server. Valid range: 1-65535",
                            "HelpServerPort": "49000",
 ```
 
