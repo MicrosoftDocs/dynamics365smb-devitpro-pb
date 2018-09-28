@@ -2,7 +2,7 @@
 title: Role Center Behaviors
 description: This article describes how the behavior has influence in the tablet client and phone client than the windows client and the web client.
 ms.custom: na
-ms.date: 10/23/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

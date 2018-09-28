@@ -2,7 +2,7 @@
 title: Configure Session Timeout
 description: When you start a Business Central client, a connection is established, and a corresponding session is added to the Business Central Server.
 ms.custom: na
-ms.date: 10/20/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -2,7 +2,7 @@
 title: "Classifying Data in Dynamics 365"
 ms.author: jswymer
 ms.custom: na
-ms.date: 03/16/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

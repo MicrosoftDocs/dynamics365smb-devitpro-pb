@@ -3,7 +3,7 @@ title: D Simple List Page Example
 description: "Provides AL code for a simple list type page"
 author: jswymer
 ms.custom: na
-ms.date: 01/19/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

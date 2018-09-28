@@ -2,7 +2,7 @@
 title: Create Dynamics NAV Users
 description: Create and modify users in Dynamics NAV to give access and modify users by using the Windows client, web client or Windows PowerShell cmtlets.
 ms.custom: na
-ms.date: 12/05/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

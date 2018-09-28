@@ -2,7 +2,7 @@
 title: Create Queries
 description: A query describes a dataset of Dynamics NAV data, it retrieves records from one or more tables and combines them into rows and columns in a single dataset.
 ms.custom: na
-ms.date: 12/05/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

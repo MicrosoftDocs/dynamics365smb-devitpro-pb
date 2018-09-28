@@ -3,7 +3,7 @@ title: Adding Actions to a Page
 description: Create and display actions in the ribbon of all pages and group them together under Actions, Navigate, Reports tabs and preview it in the Windows Client.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/08/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 manager: edupont
-ms.date: 08/17/2018
+ms.date: 10/01/2018
 ---
 # Planning Your [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Deployment
 

@@ -2,7 +2,7 @@
 title: Troubleshoot Web Client Installation
 description: This article contains troubleshooting topics to resolve problems with Microsoft Dynamics NAV Web client installation.
 ms.custom: na
-ms.date: 10/26/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

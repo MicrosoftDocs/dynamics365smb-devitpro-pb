@@ -1,7 +1,7 @@
 ---
 title: "How to: Publish and Install an Extension"
 author: edupont04
-ms.date: 27/07/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.tgt_pltfrm: na
 ms.topic: article

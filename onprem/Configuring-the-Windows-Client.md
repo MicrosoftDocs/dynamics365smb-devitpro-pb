@@ -2,7 +2,7 @@
 title: Windows Client Configuration
 description: This article explains how to configure and modify settings in the initial Setup and the Installed Microsoft Dynamics NAV Windows Client.
 ms.custom: na
-ms.date: 10/16/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

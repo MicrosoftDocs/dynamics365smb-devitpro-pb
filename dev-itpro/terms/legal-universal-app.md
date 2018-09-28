@@ -2,7 +2,7 @@
 title: "Legal Resources for Microsoft Dynamics NAV Universal Apps"
 author: tsiggaar
 ms.custom: na
-ms.date: 11/01/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

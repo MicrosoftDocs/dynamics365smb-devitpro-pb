@@ -2,7 +2,7 @@
 title: Accessibility Features of the Web Client
 description: This article provides information about the features of the Dynamics NAV web client content readily available to people with disabilities. 
 ms.custom: na
-ms.date: 10/18/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

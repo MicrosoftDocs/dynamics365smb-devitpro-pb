@@ -2,7 +2,7 @@
 title: Change Windows Client Department Icons
 description: Change the department icon in the Dynamics NAV Windows Client by configuring the MenuSuite objects using the development environment.  
 ms.custom: na
-ms.date: 11/21/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -2,7 +2,7 @@
 title: Create Server Instance
 description: A Server contains a single instance by default. To create additional instances, install Server on computers or create other instances on the original Server.
 ms.custom: na
-ms.date: 11/27/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

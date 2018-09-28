@@ -2,7 +2,7 @@
 title: Add Fields from Report Dataset to Word Report Layout
 description: A report dataset consist of fields that display labels, data and images. Learn how to add fields of a report dataset to an existing Word layout of a report.
 ms.custom: na
-ms.date: 11/07/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

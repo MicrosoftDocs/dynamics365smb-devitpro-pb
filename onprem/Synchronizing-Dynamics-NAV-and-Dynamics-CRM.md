@@ -2,7 +2,7 @@
 title: Synchronization and Data Integration
 description: The synchronization copies data between Microsoft Dynamics 365 for Sales entries and Dynamics NAV records, and keeps the data in both systems up-to-date.
 ms.custom: na
-ms.date: 10/19/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -2,7 +2,7 @@
 title: How to Choose Components to Install
 description: Run Dynamics NAV Setup and install a predefined component package known as installation options. These packages are modifiable and can installed from custom components. 
 ms.custom: na
-ms.date: 11/22/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

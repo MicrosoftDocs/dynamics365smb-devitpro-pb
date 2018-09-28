@@ -2,7 +2,7 @@
 title: Object Numbering Conventions in Dynamics NAV
 description: In Dynamics NAV development environment, the numbering scheme for each object and field is identified by a number stored in its ID Property.
 ms.custom: na
-ms.date: 10/18/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

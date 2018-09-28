@@ -2,7 +2,7 @@
 title: Arranging Fields in Multiple Rows and Columns
 description: Arrange fields in rows and columns in a gird-like format using the Grid and Fixed controls.
 ms.custom: na
-ms.date: 05/08/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

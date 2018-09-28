@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 09/11/2018
+ms.date: 10/01/2018
 ms.author: bmeier
 
 ---

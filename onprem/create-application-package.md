@@ -1,7 +1,7 @@
 ---
 title: "Creating a deployable package for [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] online"
 ms.custom: na
-ms.date: 28/01/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

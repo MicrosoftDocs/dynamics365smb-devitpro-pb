@@ -2,7 +2,7 @@
 title: "SetCurrentKey Method (Record)"
 description: "Document the SetCurrentKey Method (Record)."
 ms.custom: na
-ms.date: 01/31/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

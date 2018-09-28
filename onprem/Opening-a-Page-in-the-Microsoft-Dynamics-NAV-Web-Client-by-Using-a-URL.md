@@ -1,7 +1,7 @@
 ---
 title: "Opening a Page in the Microsoft Dynamics NAV Web Client by Using a URL"
 ms.custom: na
-ms.date: 05/29/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
