@@ -1,5 +1,5 @@
 ---
-title: "How to: Merge Application Changes"
+title: "Merge Application Changes"
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na
@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# How to: Merge Application Changes
+# Merge Application Changes
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that can help you apply changes to your application by comparing and merging application objects from different versions. For example, you can use the Merge-NAVApplicationObject cmdlet to update your solution when Microsoft releases an update.  
 
  The [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets compare two sets of application objects, calculate the difference, and apply as many of changes as possible to a third version. You can use the cmdlets from the [!INCLUDE[devshell](../developer/includes/devshell.md)] or from the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] Integrated Scripting Environment \(ISE\). The sections in this topic illustrate how you can use the Merge-NAVApplicationObject cmdlet to merge application changes into your solution. The sections are based on a scenario you want to apply changes from an update to your version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For more information, see [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md).  
