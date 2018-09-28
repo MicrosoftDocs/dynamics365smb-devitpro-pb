@@ -148,8 +148,8 @@
 #### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Adding Pages and Reports to Search](developer/devenv-al-menusuite-functionality.md)
 ### Designing Pages
-### [Designing List Pages](developer/devenv-designing-list-pages.md)
-### [Designing Card Pages](developer/devenv-designing-card-pages.md)
+#### [Designing List Pages](developer/devenv-designing-list-pages.md)
+#### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ## [Reports](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
