@@ -46,7 +46,7 @@ For more information, see [Provisioning the [!INCLUDE[server](../developer/inclu
  
 ## Enhancing Connection Security
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers features that help secure connections over a wide area network \(WAN\), such as connections from the [!INCLUDE[webserver](../developer/includes/webserver.md)], [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], and web services to the [!INCLUDE[server](../developer/includes/server.md)]. The implementation of these security features require thatobtain an certificate from a certification authority or trusted provider.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] offers features that help secure connections over a wide area network \(WAN\), such as connections from the [!INCLUDE[webserver](../developer/includes/webserver.md)], [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], and web services to the [!INCLUDE[server](../developer/includes/server.md)]. The implementation of these security features require that you obtain a certificate from a certification authority or trusted provider.
 
 For more information, see:
 

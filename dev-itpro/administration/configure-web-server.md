@@ -115,7 +115,7 @@ The following table describes the settings that are available in the navsettings
 |Community Link	|Specifies the URL to a community or resource for sharing information.|
 |Privacy Link	|Specifies the URL to the privacy information for the application. This link also appears in the sign-in page.|
 | Legal Link |Specifies the URL to the legal information about application. |
-|Sign In Help Link	|This link appears on the sign-in page. It specifies the URL to a resource that provides information to help the user sign in the Dynamics NAV application.| 
+|Sign In Help Link	|This link appears on the sign-in page. It specifies the URL to a resource that provides information to help the user sign in the application.| 
 
 ## See Also  
 [Setting up Multiple Business Central Web Server Instances](../deployment/configure-multiple-web-server-instances.md)   
