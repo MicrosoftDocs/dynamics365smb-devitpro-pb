@@ -2,7 +2,7 @@
 title: "Create Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,13 +23,16 @@ XmlDocumentType :=   XmlDocumentType.Create(Name: String, PublicId: String, Syst
 ## Parameters
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
-A string that contains the qualified name of the DTD, which is the same as the qualified name of the root element of the XML document.  
+A string that contains the qualified name of the DTD, which is the same as the qualified name of the root element of the XML document.
+        
 *PublicId*  
 &emsp;Type: [String](string-data-type.md)  
-A string that contains the public identifier of an external public DTD.  
+A string that contains the public identifier of an external public DTD.
+        
 *SystemId*  
 &emsp;Type: [String](string-data-type.md)  
-A string that contains the system identifier of an external private DTD.  
+A string that contains the system identifier of an external private DTD.
+        
 *InternalSubSet*  
 &emsp;Type: [String](string-data-type.md)  
 A string that contains the internal subset for an internal DTD.  
@@ -38,7 +41,7 @@ A string that contains the internal subset for an internal DTD.
 ## Return Value
 *XmlDocumentType*  
 &emsp;Type: [XmlDocumentType](xmldocumenttype-data-type.md)  
-  
+The created XmlDocumentType node.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

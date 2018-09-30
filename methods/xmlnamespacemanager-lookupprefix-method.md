@@ -2,7 +2,7 @@
 title: "LookupPrefix Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,11 @@ Finds the prefix declared for the given namespace URI.
 *XmlNamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
+
 *Uri*  
 &emsp;Type: [String](string-data-type.md)  
-The namespace to resolve for the prefix.  
+The namespace to resolve for the prefix.
+        
 *Result*  
 &emsp;Type: [Text](text-data-type.md)  
 The matching prefix. If there is no mapped prefix, the method returns an empty string.  

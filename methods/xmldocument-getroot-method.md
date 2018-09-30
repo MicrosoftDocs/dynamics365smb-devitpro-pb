@@ -2,7 +2,7 @@
 title: "GetRoot Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Gets the root element of the XML tree for this document.
 *XmlDocument*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 An instance of the [XmlDocument](xmldocument-data-type.md) data type.  
+
 *Result*  
 &emsp;Type: [XmlElement](xmlelement-data-type.md)  
 The root element of the XML tree for this document.  

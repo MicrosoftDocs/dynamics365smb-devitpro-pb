@@ -2,7 +2,7 @@
 title: "LookupNamespace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,11 @@ Gets the namespace URI for the specified prefix.
 *XmlNamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
+
 *Prefix*  
 &emsp;Type: [String](string-data-type.md)  
-The prefix whose namespace URI you want to resolve. To match the default namespace, pass an empty string.  
+The prefix whose namespace URI you want to resolve. To match the default namespace, pass an empty string.
+        
 *Result*  
 &emsp;Type: [Text](text-data-type.md)  
 The namespace URI for prefix.  

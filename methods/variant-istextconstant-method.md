@@ -2,7 +2,7 @@
 title: "IsTextConstant Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,6 +35,27 @@ An instance of the [Variant](variant-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example  
+ The following example determines whether an AL variant contains a text constant. The code assigns the Text000 text constant to the variant variable that is named MyVariant. The **ISTEXTCONSTANT** method determines whether the variant contains a text constant and stores the return value in the varResult variable. In this case, the variant contains a text constant so **Yes** is returned and displayed in a message box. This example requires that you create the following global variables and text constants.  
+  
+|Variable name|DataType|  
+|-------------------|--------------|  
+|MyVariant|Variant|  
+|varResult|Boolean|  
+  
+|Text constant name|Enu value|  
+|------------------------|---------------|  
+|Text000|This is some text.|  
+|Text001|Does the variant contain a text constant? %1.|  
+  
+```  
+MyVariant := Text000;  
+varResult := MyVariant.ISTEXTCONSTANT;  
+MESSAGE(Text001,MyVariant,varResult);  
+MESSAGE(Text001,varResult);  
+```  
+
 ## See Also
 [Variant Data Type](variant-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

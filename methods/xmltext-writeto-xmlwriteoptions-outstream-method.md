@@ -2,7 +2,7 @@
 title: "WriteTo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,11 @@ Serializes and saves the current node to the given variable.
 *XmlText*  
 &emsp;Type: [XmlText](xmltext-data-type.md)  
 An instance of the [XmlText](xmltext-data-type.md) data type.  
+
 *WriteOptions*  
 &emsp;Type: [XmlWriteOptions](xmlwriteoptions-data-type.md)  
-Specifies options for customizing how the node is serialized.  
+Specifies options for customizing how the node is serialized.
+        
 *OutStream*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
 The OutStream to which you want to save the serialized representation of the node.  

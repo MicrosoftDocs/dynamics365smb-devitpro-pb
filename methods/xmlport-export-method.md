@@ -1,0 +1,49 @@
+---
+title: "Export Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 09/30/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+# Export Method
+Creates an XML data stream (XML document) and sends it to a chosen destination.
+
+## Syntax
+```
+[Ok := ]  Xmlport.Export(Number: Integer, var OutStream: OutStream, [var Record: Table])
+```
+## Parameters
+*Number*  
+&emsp;Type: [Integer](integer-data-type.md)  
+The ID of the XmlPort that you want to run.
+        
+*OutStream*  
+&emsp;Type: [OutStream](outstream-data-type.md)  
+Where the XmlPort object will write the XML data stream.
+        
+*Record*  
+&emsp;Type: [Table](table-data-type.md)  
+The record to use in the XmlPort. Any filters attached to the record will be used. This parameter is optional. If this parameter is omitted, all records in the table are exported.
+          
+
+
+## Return Value
+*Ok*  
+&emsp;Type: [Boolean](boolean-data-type.md)  
+**True** if the operation was successful; otherwise, **false**.  
+  
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## See Also
+[Xmlport Data Type](xmlport-data-type.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

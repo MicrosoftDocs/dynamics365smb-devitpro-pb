@@ -2,7 +2,7 @@
 title: "GetDescendantNodes Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ An instance of the [XmlElement](xmlelement-data-type.md) data type.
 ## Return Value
 *DescendantNodes*  
 &emsp;Type: [XmlNodeList](xmlnodelist-data-type.md)  
-  
+A list containing the descendant nodes for this element, in document order.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

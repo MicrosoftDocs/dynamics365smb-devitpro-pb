@@ -2,7 +2,7 @@
 title: "GetChildElements Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,11 @@ ChildElements :=   XmlElement.GetChildElements(LocalName: String, NamespaceUri: 
 *XmlElement*  
 &emsp;Type: [XmlElement](xmlelement-data-type.md)  
 An instance of the [XmlElement](xmlelement-data-type.md) data type.  
+
 *LocalName*  
 &emsp;Type: [String](string-data-type.md)  
-The local name of the elements to retrieve.  
+The local name of the elements to retrieve.
+        
 *NamespaceUri*  
 &emsp;Type: [String](string-data-type.md)  
 The namespace URI of the elements to retrieve.  
@@ -35,7 +37,7 @@ The namespace URI of the elements to retrieve.
 ## Return Value
 *ChildElements*  
 &emsp;Type: [XmlNodeList](xmlnodelist-data-type.md)  
-  
+A list containing the child elements for this element, in document order.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

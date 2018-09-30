@@ -2,7 +2,7 @@
 title: "SetTarget Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Sets the target of the processing instruction.
 *XmlProcessingInstruction*  
 &emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)  
 An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.  
+
 *Value*  
 &emsp;Type: [String](string-data-type.md)  
 The new target of the processing instruction.  

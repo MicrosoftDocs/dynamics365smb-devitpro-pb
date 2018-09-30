@@ -2,7 +2,7 @@
 title: "ReadFrom Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,10 +23,12 @@ Read and parse the XML document from the given data source.
 ## Parameters
 *InStream*  
 &emsp;Type: [InStream](instream-data-type.md)  
-A stream containing an XML document.  
+A stream containing an XML document.
+        
 *ReadOptions*  
 &emsp;Type: [XmlReadOptions](xmlreadoptions-data-type.md)  
-Specifies options for customizing how the document is parsed.  
+Specifies options for customizing how the document is parsed.
+        
 *Result*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 The XmlDocument parsed from the given data source.  

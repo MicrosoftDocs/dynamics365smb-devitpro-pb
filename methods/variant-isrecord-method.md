@@ -2,7 +2,7 @@
 title: "IsRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,6 +35,30 @@ An instance of the [Variant](variant-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example  
+ The following example determines whether an AL variant contains a record variable. The GET method gets customer number 10000 from the **Customer** table. The record is stored in the MyRecord variable. The MyRecord variable is assigned to the variant variable that is named MyVariant. The **ISRECORD** method determines whether the variant contains a Record variable and stores the return value in the varResult variable. In this case, the variant contains a Record variable so **true** is returned and displayed in a message box. The [ISCODE Method (Variant)](devenv-ISCODE-Method-Variant.md)determines whether the variant contains a code variable. The return value is **false** because the variant does not contain a code. This example requires that you create the following global variables and text constants.  
+  
+|Variable name|DataType|Subtype|  
+|-------------------|--------------|-------------|  
+|MyRecord|Record|Customer|  
+|MyVariant|Variant|Not applicable|  
+|varResult|Boolean|Not applicable|  
+  
+|Text constant name|ConstValue|  
+|------------------------|----------------|  
+|Text000|Does the variant >%1\< contain a record variable? %2.|  
+|Text001|Does the variant >%1\< contain a code variable? %2.|  
+  
+```  
+MyRecord.GET('10000');  
+MyVariant := MyRecord;  
+varResult := MyVariant.ISRECORD;  
+MESSAGE(Text000,MyVariant,varResult);  
+varResult := MyVariant.ISCODE;  
+MESSAGE(Text001,MyVariant,varResult);  
+```  
+
 ## See Also
 [Variant Data Type](variant-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  
