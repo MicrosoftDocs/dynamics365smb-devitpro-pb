@@ -64,7 +64,7 @@ ItemRec.Picture.CREATEOUTSTREAM(Ostream);
 Bstr.WRITE(Ostream);  
 ItemRec.INSERT;  
 ```  
-  test
+  
 ## See Also
 [BigText Data Type](bigtext-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  
