@@ -58,7 +58,6 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
 > [!NOTE]  
 >  Do not perform this task if you are converting the database from one cumulative update of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to the next cumulative update. In this case, you only have to complete task 2.
 
-#### To prepare the old database  
 
 1.  Make a copy of the old database or create full database backup. 
 
@@ -137,7 +136,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
         Set-NAVServerInstance –ServerInstance <ServerInstanceName> -Stop
         ```
 
-14. <a name="clearsql"></a>Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old application database in SQL Server.  
+12. <a name="clearsql"></a>Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the old application database in SQL Server.  
 
     Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
 
@@ -145,7 +144,7 @@ To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prod
     DELETE FROM [<My NAV Database Name>].[dbo].[Server Instance]
     DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
     ```
-15. Close all to connections to the database.
+13. Close all to connections to the database.
 
     This includes but is not limited to [!INCLUDE[navnow](../developer/includes/navnow_md.md)] client tools and SQL Server Management Studio.
  
@@ -156,7 +155,6 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 > [!TIP]  
 >  If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[devshell](../developer/includes/devshell.md)].  
 
-### To convert the database  
 
 1.  If the database is on Azure SQL Database, add your user account to the **dbmanager** database role on the master database.
 
@@ -277,11 +275,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
         If the application database contains test objects (ID 130000-139999), then make sure to exclude these objects when generating symbols. You can do this by using the `-Filter` parameter and running the command twice:
 
         ```
-        finsql.exe command=compileobjects, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="ID=1..129999", generatesymbolreference=yes
+        finsql.exe command=generatesymbolreference, sServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=1..129999"
         ```
 
         ```
-        finsql.exe command=compileobjects, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="ID=140000..1999999999", generatesymbolreference=yes
+        finsql.exe command=generatesymbolreference, sServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=140000..1999999999"
         ```
 
         > [!NOTE]  
