@@ -2,7 +2,7 @@
 title: Configure Components on Dynamics NAV
 description: This article explains different Setup configuration options for installing individual components on Microsoft Dynamics NAV.
 ms.custom: na
-ms.date: 10/16/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "Signing an APP Package File"
 description: "How do you sign an extension developed in the AL language."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/30/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

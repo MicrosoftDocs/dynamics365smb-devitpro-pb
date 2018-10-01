@@ -2,7 +2,7 @@
 title: "Classifying Data in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]"
 ms.author: jswymer
 ms.custom: na
-ms.date: 01/05/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

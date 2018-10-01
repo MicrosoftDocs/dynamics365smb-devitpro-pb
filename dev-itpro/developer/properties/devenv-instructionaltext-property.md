@@ -1,7 +1,7 @@
 ---
 title: "InstructionalText Property"
 ms.custom: na
-ms.date: 04/18/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ caps.latest.revision: 13
  
 
 # InstructionalText Property
-Sets the text used for instructions in the UI. 
+Sets the text used for instructions in the UI.  
   
 ## Applies To  
   
@@ -24,5 +24,17 @@ Sets the text used for instructions in the UI.
 
 -   PageGroup
 
+## Remarks
+
+The default is an empty string, which means there will be no instructions. According to the user assistance model for [!INCLUDE[prodshort](../includes/prodshort.md)], apps are expected to apply instructional text to setup guides and similar pages.  
+
+The following example illustrates how you can apply instructional text in an app:  
+
+```
+InstructionalText = 'ENU=Add an entity from your list of contacts. The entity can be a person or a company.';
+```
+
 ## See also
+
+[Configuring the Help Experience](../../deployment/configure-help.md)  
 [Page object](../devenv-page-object.md)  

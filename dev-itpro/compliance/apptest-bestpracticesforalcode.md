@@ -3,7 +3,7 @@ title: "Best Practices for AL code"
 description: "Best Practices for writing AL code."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,12 +37,15 @@ Use the listed abbreviations for each type of object in the file naming:
 |----------|---------------------------|
 |Page      |Pag|
 |Page Extension|PagExt|
+|Page Customization|PagCust|
 |Codeunit  |Cod|
 |Table     |Tab|
 |Table Extension|TabExt|
 |XML Port  |Xml|
 |Report    |Rep|
 |Query     |Que|
+|Enum      |Enu|
+|Enum Extension|EnuExt|
 
 ### Examples of file naming
 The following table illustrates how the file naming should look.
@@ -95,7 +98,7 @@ page 123 PageName
 The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to automatically format their source code. For more information on how to use it, see [AL Formatter](../developer/devenv-al-formatter.md).
 
 ## Line length
-In general there is no restriction on line length, but lengthy lines can make the the code unreadable. We recommend that you keep your code easily scannable and readable.
+In general, there is no restriction on line length, but lengthy lines can make the code unreadable. We recommend that you keep your code easily scannable and readable.
 
 ## Object naming
 Object names are prefixed. They start with the feature/group name, followed by the logical name as in these two examples: 

@@ -2,7 +2,7 @@
 title: Apply Conditional Visibility Controls
 description: Print reports with conditional data by using an expression on the visibility property of the report item or table row in the RDLC report layout.  
 ms.custom: na
-ms.date: 11/09/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

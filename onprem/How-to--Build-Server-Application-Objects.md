@@ -2,7 +2,7 @@
 title: Build Server Application Objects
 description: Building server application objects recompiles the objects, regenerates the C\# and metadata information and updates record in the object metadata.
 ms.custom: na
-ms.date: 11/09/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

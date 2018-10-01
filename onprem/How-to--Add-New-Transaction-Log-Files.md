@@ -2,7 +2,7 @@
 title: Add New Transaction Log Files
 description: Expland a transaction log by creating a new log file in the database; it contains the changes made to the database and used for database recovery.
 ms.custom: na
-ms.date: 11/08/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

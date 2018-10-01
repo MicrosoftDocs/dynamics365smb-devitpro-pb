@@ -2,7 +2,7 @@
 title: "Microsoft Dynamics NAV Extension Packages"
 author: edupont04
 ms.custom: na
-ms.date: 09/16/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

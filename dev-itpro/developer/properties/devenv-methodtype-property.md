@@ -1,7 +1,7 @@
 ---
 title: "MethodType Property"
 ms.custom: na
-ms.date: 06/16/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,13 +33,8 @@ The **Date** method type can only be set in fields that have a data type of Date
   
 Except when the **Method** property is set to **Count**, the **Totals** method type can only be used on fields that have a numeric data type of **Decimal**, **Integer**, **BigInteger**, or **Duration**.  
   
-When you set the **MethodType** property of a column to **Totals**, the rows in the resulting dataset are automatically grouped by the other columns in the query as indicated by a check mark in the **Group By** column in Query Designer. When grouped in the resulting dataset, rows that have similar column values are combined into a single record. Setting the **MethodType** property to **Totals** corresponds to using the SQL aggregate functions SUM,AVG, MIN, MAX, and COUNT in SQL SELECT statements. <!-- For more information, see [Understanding Query Totals and Grouping](../devenv-Understanding-Query-Totals-and-Grouping.md).  -->
+When you set the **MethodType** property of a column to **Totals**, the rows in the resulting dataset are automatically grouped by the other columns in the query as indicated by a check mark in the **Group By** column in Query Designer. When grouped in the resulting dataset, rows that have similar column values are combined into a single record. Setting the **MethodType** property to **Totals** corresponds to using the SQL aggregate functions SUM,AVG, MIN, MAX, and COUNT in SQL SELECT statements.
   
 ## See Also  
 [Method Property](devenv-method-property.md)   
 [Properties](devenv-properties.md)  
-<!--
-[Using the Date Method to Retrieve Day, Month, and Year Data](../devenv-Using-the-Date-Method-to-Retrieve-Day--Month-and-Year-Data.md)   
-[Understanding Query Totals and Grouping](../devenv-Understanding-Query-Totals-and-Grouping.md)   
-[How to: Create Queries](../devenv-How-to-Create-Queries.md) 
--->

@@ -1,7 +1,7 @@
 ---
 title: "CREATEINSTREAM Method (BLOB)"
 ms.custom: na
-ms.date: 07/04/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,7 +41,7 @@ Blob.CreateInStream(Stream[,TextEncoding.value])
  Optionally, you can specify the encoding on the stream. By specifying the [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md), you ensure that all the language-specific characters are represented correctly in [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] when you read data and write data. The following example illustrates how you can set the encoding to Windows when you create a stream for a BLOB field.  
   
 ```  
-MyTable.MyBLOBfield.CREATEINSTREAM(MyStream, TextEncoding.WINDOWS)  
+MyTable.MyBLOBfield.CreateInStream(MyStream, TextEncoding::Windows); 
 ```  
   
  For more information, see [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md).  

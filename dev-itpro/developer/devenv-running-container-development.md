@@ -3,7 +3,7 @@ title: "Running a Container-Based Development Environment"
 description: "Overview of the running container-based development."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
-
 
 
 # Running a Container-Based Development Environment

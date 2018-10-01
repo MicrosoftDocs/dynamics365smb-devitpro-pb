@@ -3,7 +3,7 @@ title: "Walkthrough: Customizing Microsoft Dynamics 365 for Sales Integration in
 author: edupont04
 manager: edupont04
 ms.custom: na
-ms.date: 10/05/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

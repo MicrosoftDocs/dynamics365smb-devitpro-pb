@@ -1,7 +1,7 @@
 ---
 title: "Web Client URL"
 ms.custom: na
-ms.date: 03/03/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,7 +45,7 @@ This article describe how you can constuct URLs, which can be useful for includi
 The [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL has the following syntax:
 
 ```
-https://<hostname>[/<aadtenantid>][/sandbox]/?[company=<companyname>]&[page|report|table=<ID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[redirect<0|1>]
+https://<hostname>[/<aadtenantid>][/sandbox]/?[company=<companyname>]&[page|report|table=<ID>]&[tenant=<tenantID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[redirect<0|1>]
 ```
 
 <!-- onprem
@@ -102,6 +102,7 @@ Use the following guidelines to write URL syntax and create a URL:
 |`report`|Opens a report object.|
 |`table`|Opens a table object. This requires special permissions. For more information about opening a table, see [Viewing Table Data](devenv-view-table-data.md).|
 |`ID`|The ID of the page, report, or table to open. |
+|`tenant`|(on-premises only) Specifies the ID of the tenant to connect to. You must provide this parameter when [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] is deployed in multitenant architecture. The tenant that you specify must be mounted on the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance that the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] connects to. For more information, see [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md).|
 |`mode`|Specifies the mode in which to display the page.<br /><br />- `View`<br /> The page can only be viewed. The user cannot change data on the page. **Note:** Worksheet page types only display in the edit mode, even if the value is set to `View`.<br /><br />- `Edit`<br /> The user can change data on the page. **Note:** To use the edit mode, the [Editable Property](properties/devenv-editable-property.md) of the page in Page Designer must be set to **Yes**. This mode is not supported for pages of the type List, RoleCenter, and CardPart. If you set the value to `Edit`, pages of these types still display in the view mode. For List type pages, the user can modify the list by choosing **Edit List** on the page.<br /><br />-  `Create`<br />Opens a blank page that enables the user to create a new item.<br /><br />**Note:** The `Create` mode is not supported for pages of the type CardPart, List, ListPart, RoleCenter, and Worksheet. For pages of the type CardPart, List, and ListPart, the page displays in the view mode. Do not use this mode for Worksheet pages; otherwise you will get an error when you try to open the page.|
 |`profile`|Specifies the ID of the profile to open.|
 |`bookmark`|Specifies a record in the underlying table of the page. The value of a bookmark is an alphanumeric string of characters, for example, `27%3bEgAAAAJ7CDAAMQA5ADAANQA4ADkAMw%3d%3`.<br /><br /> For the page types Card, CardPart, and Document, the bookmark specifies the record that is shown in the page. For page types List, ListPart, and Worksheet, the bookmark specifies the record that is selected in the list on the page.<br /><br /> **Important:**  Bookmarks are generated automatically. You can only determine a value for the bookmark by displaying the page in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] and looking at its address. Therefore, a bookmark is only relevant when the address you are working with has been copied from another instance of the page in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].|
@@ -113,7 +114,7 @@ Use the following guidelines to write URL syntax and create a URL:
 |`extension`|Specifies the unique identifier (ID) of an extension that is deployed on the tenant. This parameter is mainly used during the development of the specified extension in a non-production environment. When this parameter is set, only the specifed extension is available in the client; all other extensions are ignored and not visible. This enables you to isolate and focus on the behavior of the specified extension only.<br /><br />An extension ID is a 32-digit GUID, such as `72CC5E27-BD97-4271-AF55-F77E4471E493`. You set this parameter using the format `extension={GUID}`, for example:<br /><br />`&extension={72CC5E27-BD97-4271-AF55-F77E4471E493}`<br /><br />You can determine an extension ID by opening the extension in Visual Studio Code and looking in the app.json file, or by running the [Get-NAVAppManifest cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools/Get-NAVAppManifest) on the extension package.|
 
 <!--
-|`tenant`|Specifies the ID of the tenant to connect to. You must provide this parameter when [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] is deployed in multitenant architecture. The tenant that you specify must be mounted on the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance that the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] connects to. For more information, see [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md).|
+|`tenant`|Specifies the ID of the tenant to connect to. You must provide this parameter when [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] is deployed in multitenant architecture. The tenant that you specify must be mounted on the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance that the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] connects to. For more information, see [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md).|
 -->
 
 <!-- For more information about framing the Web client, see [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md).-->
@@ -139,7 +140,7 @@ You can add the filter anywhere in the address after `/?`.
 
 <!-- 
 > [!TIP]
->  The filter syntax for a page in the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] is the same as a page in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], which you can see by choosing the **Copy Link to Page** action on the **Application** menu in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].
+>  The filter syntax for a page in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] is the same as a page in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], which you can see by choosing the **Copy Link to Page** action on the **Application** menu in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].
 -->
 
 ### Filter Parameters

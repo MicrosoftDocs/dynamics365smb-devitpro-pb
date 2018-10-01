@@ -2,7 +2,7 @@
 title: Configure and Personalize the Web Client
 description: Configure the page to display or hide the fields to role specific settings by using the personalization feature on the Dynamics NAV Web Client.
 ms.custom: na
-ms.date: 10/16/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,7 +1,7 @@
 ---
 title: "Method Property"
 ms.custom: na
-ms.date: 06/15/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,12 +47,7 @@ Sets either a date method for retrieving the year, month, or day from a date fie
  Except for the **Count** method, you can only use a totals method on a field that has a numeric data type of **Decimal**, **Integer**, **BigInteger**, or **Duration**. The totals method returns a decimal value that is calculated from values of all fields in a column.  
   
  **Count** is only associated with its parent **DataItem**, not a specific column. Therefore, when you set a column to **Count**, you leave the [DataSource Property](devenv-datasource-property.md) of the column blank. The **Count** method returns an integer value that corresponds to the number of rows that are returned from the table that is specified by the data item associated with the column.  
- <!-- 
- For more information, see [Understanding Query Totals and Grouping](Understanding-Query-Totals-and-Grouping.md).  -->
+
   
 ## See Also  
  [MethodType Property](devenv-methodtype-property.md)   
- <!--
- [Using the Date Method to Retrieve Day, Month, and Year Data](Using-the-Date-Method-to-Retrieve-Day--Month--and-Year-Data.md)  
- [Understanding Query Totals and Grouping](Understanding-Query-Totals-and-Grouping.md)   
- [How to: Create Queries](How-to--Create-Queries.md) -->

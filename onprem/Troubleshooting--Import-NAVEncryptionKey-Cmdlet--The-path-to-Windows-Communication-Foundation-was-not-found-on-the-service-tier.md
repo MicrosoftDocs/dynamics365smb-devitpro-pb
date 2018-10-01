@@ -2,7 +2,7 @@
 title: Import-NAVEncryptionKey Cmdlet Error
 description: The path to Windows Communication Foundation was not found on the service tier Error occurs if the Server instance is on Azure running Windows Server 2012 R2.
 ms.custom: na
-ms.date: 10/26/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

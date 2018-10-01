@@ -2,7 +2,7 @@
 title: Create a Progress Window
 description: Create a progress window for time-consuming applications by displaying a window with information of the progress that is being made. 
 ms.custom: na
-ms.date: 11/28/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

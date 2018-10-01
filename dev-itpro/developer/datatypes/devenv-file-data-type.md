@@ -1,7 +1,7 @@
 ---
 title: "File Data Type"
 ms.custom: na
-ms.date: 07/03/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,8 @@ The methods supported for the File data type are:
 [DOWNLOADFROMSTREAM method (File)](../methods/devenv-downloadfromstream-method-file.md)   
 [ERASE method (File)](../methods/devenv-erase-method-file.md)   
 [EXISTS method (File)](../methods/devenv-exists-method-file.md)   
-[GETSTAMP method (File)](../methods/devenv-getstamp-method-file.md)   
+[GETSTAMP method (File)](../methods/devenv-getstamp-method-file.md) 
+[ISPATHTEMPORARY method (File)](../methods/devenv-ispathtemporary-method-file.md)    
 [LEN method (File)](../methods/devenv-len-method-file.md)   
 [NAME method (File)](../methods/devenv-name-method-file.md)   
 [OPEN method (File)](../methods/devenv-open-method-file.md)   

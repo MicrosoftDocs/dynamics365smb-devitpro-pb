@@ -1,7 +1,7 @@
 ---
 title: "ReportGetCustomRdlc Method"
 ms.custom: na
-ms.date: 07/13/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,13 +41,13 @@ ReportGetCustomRdlc(ReportID : Integer) : Text
  The RDLC layout as text string.  
   
 ## Applies To  
- Report layout implementation in codeunit 1 **ApplicationManagement**.  
+ Report layout implementation in codeunit 44 **ApplicationManagement**.  
   
 ## Remarks  
  At report run time, this method is called if the [HasCustomLayout Method](devenv-HasCustomLayout-Method.md) determines that the report is currently set up to use a custom RDLC layout. The ReportGetCustomRdlc method is called after the [OnPreReport Trigger](../triggers/devenv-OnPreReport-Trigger.md) is invoked.  
   
 ## Example  
- The following example shows the default implementation on the method in codeunit 1. This example uses a variable **ReportLayout** that has the data type **Record** and subtype **Report Layout**.  
+ The following example shows the default implementation on the method in codeunit 44. This example uses a variable **ReportLayout** that has the data type **Record** and subtype **Report Layout**.  
   
 ```  
 EXIT(ReportLayout.GetCustomRdlc(ReportId));  

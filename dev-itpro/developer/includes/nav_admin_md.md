@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Server Administration tool
+Dynamics NAV Server Administration tool

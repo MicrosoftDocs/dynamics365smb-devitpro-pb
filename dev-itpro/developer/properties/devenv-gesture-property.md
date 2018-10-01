@@ -1,7 +1,7 @@
 ---
 title: "Gesture Property"
 ms.custom: na
-ms.date: 06/16/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +32,10 @@ The property has the following values:
 You typically use the Gesture property on list type pages for executing an action on items in a repeater control.
 
 In Action Designer, you can use the **Gesture** column to view the Gesture property value for all page actions. If the **Gesture** column is not visible, then on the **View** menu, choose **Show Column**, and then select **Gesture**.  
-<!--
+
 ## See Also
+[Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md)  
+<!--
 [Developing for the Microsoft Dynamics NAV Universal App](../devenv-Developing-for-the-Microsoft-Dynamics-NAV-Universal-App.md)  
 [Adding Actions to Pages](../devenv-Adding-Actions-to-Pages.md)
 -->

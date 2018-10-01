@@ -2,7 +2,7 @@
 title: Set Primary and Secondary Keys
 description: When you create a table in Table Designer, the field with the lowest field number sets the primary key. Use this procedure to define a different primary key.
 ms.custom: na 
-ms.date: 12/06/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

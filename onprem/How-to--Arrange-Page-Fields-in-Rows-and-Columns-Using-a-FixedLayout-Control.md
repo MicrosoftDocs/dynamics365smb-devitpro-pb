@@ -2,7 +2,7 @@
 title: Arrange Page Fields Using FixedLayout Control
 description: A FixedLayout group control is used to display statistical data. Learn how to use this control on a page to arrange page fields in rows and columns.
 ms.custom: na
-ms.date: 11/09/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
