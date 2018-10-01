@@ -3,7 +3,7 @@ title: Configure a Deployment for ACS
 description: Configure the Dynamics NAV deployment to use Azure Access Control Services ACS, the authentication requires a configuration in the Azure management portal. 
 author: jswymer
 ms.custom: na
-ms.date: 11/22/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

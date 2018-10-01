@@ -1,7 +1,7 @@
 ---
 title: "Indentation Property (Query)"
 ms.custom: na
-ms.date: 06/12/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,8 +29,3 @@ Sets the indentation level of a data item, column, or filter row in a query.
 ## See Also  
 [properties](devenv-properties.md)  
 [Indentation Property Reports](devenv-indentation-reports-property.md) 
-<!--
-[How to: Set Up Filter Rows in Query Designer](How-to--Set-Up-Filter-Rows-in-Query-Designer.md)   
-[Understanding Query Filters](Understanding-Query-Filters.md)   
-[Queries](Queries.md) 
--->

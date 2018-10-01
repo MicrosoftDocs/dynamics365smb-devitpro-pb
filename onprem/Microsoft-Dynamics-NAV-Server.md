@@ -2,7 +2,7 @@
 title: Microsoft Dynamics NAV Server
 description: Dynamics NAV Server is a .NET-based Windows Service application that manages communications between clients and databases in the SQL Server.
 ms.custom: na
-ms.date: 10/17/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

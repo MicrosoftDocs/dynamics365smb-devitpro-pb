@@ -2,7 +2,7 @@
 title: Web Server Components Deployment Scenarios
 description: This article describes how to install and configure the Dynamics NAV Web Server components in different network topologies and the deployment scenarios.
 ms.custom: na
-ms.date: 10/25/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

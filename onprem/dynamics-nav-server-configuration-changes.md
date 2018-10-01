@@ -1,6 +1,6 @@
 ---
 title: "Changes to Microsoft Dynamics NAV Server instance configuration"
-ms.date: 08/24/2017
+ms.date: 10/01/2018
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"

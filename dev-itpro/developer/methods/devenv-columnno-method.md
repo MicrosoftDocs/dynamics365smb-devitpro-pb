@@ -1,7 +1,7 @@
 ---
 title: "COLUMNNO Method"
 ms.custom: na
-ms.date: 07/04/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,7 +58,5 @@ Number := MyQuery.COLUMNNO("Customer_No");
 ```  
 
 ## See Also  
- <!--Links [How to: Create Queries](How-to--Create-Queries.md)    
- [How to: Set Up Filter Rows in Query Designer](How-to--Set-Up-Filter-Rows-in-Query-Designer.md)-->  
  [Query Object](../devenv-query-object.md)   
  [Record Data Type](../datatypes/devenv-Record-Data-Type.md)

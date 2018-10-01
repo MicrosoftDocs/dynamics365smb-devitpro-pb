@@ -2,7 +2,7 @@
 title: Create a Page to View Virtual Table
 description: To view a virtual table, you create a list page based on the virtual tables, since they are not stored in the database, you cannot view them directly. 
 ms.custom: na
-ms.date: 11/28/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

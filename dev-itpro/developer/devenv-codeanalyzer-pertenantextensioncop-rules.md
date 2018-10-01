@@ -3,7 +3,7 @@ title: "PerTenantExtensionCop Analyzer Rules"
 description: "List of rules for PerTenantExtensionCop analyzer."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/13/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,6 +29,7 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |PTE0006|Encryption key functions must not be invoked.|Encryption key functions must not be invoked.|Encryption key function '{0}' is not allowed.|PackageValidation|Error|true|
 |PTE0007|Test assertion functions are not allowed in a non-test context.|Test assertion functions are not allowed in a non-test context.|Assertion function '{0}' must not be invoked.|PackageValidation|Error|true|
 |PTE0008|Fields must use ApplicationArea property.|Fields must use ApplicationArea property.|Field with name '{0}' must have a value for the ApplicationArea property.|PackageValidation|Error|true|
+|PTE0009|This app.json property must not be used for per-tenant extensions.|The properties 'HelpBaseUrl' and 'SupportedLocales' are reserved for translation apps.|The app.json '{0}' property must not be used for per-tenant extensions.|PackageValidation|Error|true|
 
 
 ## See Also 

@@ -2,7 +2,7 @@
 title: Server Instance Management
 description: This article describes how to work with Server instances in the Server Administration tool and in the Services MMC snap-in.
 ms.custom: na
-ms.date: 10/25/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,7 +1,7 @@
 ---
 title: "EnableExternalImages Property"
 ms.custom: na
-ms.date: 06/13/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,4 +45,4 @@ Sets whether external images are allowed on a report.
 ## See Also  
  [Properties](devenv-properties.md)   
   <!--[Designing Reports](Designing-Reports.md)   
- [Configuring Microsoft Dynamics NAV Web Client by Modifying the Web.config File](Configuring-Microsoft-Dynamics-NAV-Web-Client-by-Modifying-the-Web.config-File.md) -->
+ [Configuring the Business Central Web Server](configure-web-server.md) -->

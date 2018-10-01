@@ -1,7 +1,7 @@
 ---
 title: "Working With Media on Records"
 ms.custom: na
-ms.date: 12/01/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -54,12 +54,14 @@ A MIME type is defined by two parts, the *type* and *subtype*, where the format 
 |image/jpeg|jpeg, jpg, jpe|
 |image/gif|gif|
 |application/msword|doc|
+|application/octet-stream|json|
 |application/vnd.openxmlformats-officedocument.wordprocessingml.document|docx|
 |application/vnd.ms-excel|xls|
 |application/vnd.openxmlformats-officedocument.spreadsheetml.sheet|xlsx|
 |application/vnd.ms-powerpoint|ppt|
 |application/vnd.openxmlformats-officedocument.presentationml.presentation|pptx|
 |application/pdf|pdf|
+|application/xml|xml|
 |audio/mpeg |mp3 |
 |audio/x-wav |wav |
 |video/mp4  |mp4|

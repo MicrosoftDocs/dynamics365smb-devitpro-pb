@@ -3,7 +3,7 @@ title: Table and Table Extension Properties
 description: This topic lists table properties that apply to feilds of a table object.
 author: solsen
 ms.custom: na
-ms.date: 03/14/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -62,6 +62,7 @@ The following topic lists properties that apply to the [Table Object](../devenv-
 |[OptionMembers Property](devenv-optionmembers-property.md)||<ul><li>Option field</li></ul>|
 |[PasteIsValid Property](devenv-pasteisvalid-property.md)||<ul><li>Table object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)||<ul><li>Table object</li></ul>|
+|[ReplicateData Property](devenv-replicatedata-property.md)|<ul><li>Table object</li></ul>|
 |[SignDisplacement Property](devenv-signdisplacement-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>|
 |[SQLDataType Property](devenv-sql-data-type-property.md)||<ul><li>Code field</li><li>OemCode field</li></ul>|
 |[SqlTimeStamp Property](devenv-sql-timestamp-property.md)||<ul><li>BigInteger</li></ul>|

@@ -1,12 +1,12 @@
 ---
 title: "Configuring Microsoft SQL Server"
 ms.custom: na
-ms.date: 06/05/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: "dynamics365-business-central"
 ms.assetid: b49fb4e0-bdc4-4844-b9b4-96f1b07161ac
 caps.latest.revision: 33
 manager: edupont
@@ -21,5 +21,4 @@ The topics in this section describe actions that you can take after installing [
 -   [Troubleshooting: SQL Server Connection Problems](Troubleshooting--SQL-Server-Connection-Problems.md)  
   
 ## See Also  
- [Installation and Configuration Walkthroughs](Installation-and-Configuration-Walkthroughs.md)   
  [Installation Considerations for Microsoft SQL Server](Installation-Considerations-for-Microsoft-SQL-Server.md)

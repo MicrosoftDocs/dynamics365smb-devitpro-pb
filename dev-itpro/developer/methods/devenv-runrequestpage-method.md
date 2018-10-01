@@ -1,7 +1,7 @@
 ---
 title: "RUNREQUESTPAGE Method"
 ms.custom: na
-ms.date: 07/13/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,6 @@ Runs the request page for a report without running the report. Returns an XML st
 ## Syntax  
 
 ```  
-
 Parameters := REPORT.RUNREQUESTPAGE(Number[, Parameters])  
 ```  
 
@@ -129,4 +128,5 @@ REPORT.PRINT(206,XmlParameters);
 
 ## See Also  
  [Report Object](../devenv-report-object.md)   
+ [Get Report Parameters using Virtual Tables](../devenv-get-report-parameters-with-virtual-tables.md)
  <!--Links [Request Pages](Request-Pages.md)-->

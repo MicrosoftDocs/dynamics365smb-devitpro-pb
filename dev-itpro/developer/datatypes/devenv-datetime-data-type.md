@@ -1,7 +1,7 @@
 ---
 title: "DateTime Data Type"
 ms.custom: na
-ms.date: 04/04/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

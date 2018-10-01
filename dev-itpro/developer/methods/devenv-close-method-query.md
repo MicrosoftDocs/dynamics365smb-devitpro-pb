@@ -1,7 +1,7 @@
 ---
 title: "CLOSE Method (Query)"
 ms.custom: na
-ms.date: 07/04/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -72,6 +72,4 @@ MyQuery.CLOSE;
 ```  
 
 ## See Also  
- <!--Links [How to: Create Queries](How-to--Create-Queries.md)   
- [Working with Queries in AL](Working-with-Queries-in-AL.md) -->    
  [Query Object](../devenv-query-object.md)

@@ -2,7 +2,7 @@
 title: Codeunits Functions and Variables
 description: A codeunit is a container for C/AL code used for application objects. Place the code in the objects that calls the functions for simple application.
 ms.custom: na
-ms.date: 10/20/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

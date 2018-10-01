@@ -2,7 +2,7 @@
 title: Debug a Background Session
 description: To debug a background session, verify that no breakpoints are enabled and then set a breakpoint in the codeunit that runs when the session is started.
 ms.custom: na
-ms.date: 12/05/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

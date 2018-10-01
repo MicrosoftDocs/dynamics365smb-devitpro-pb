@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting: Could not load type &#39;System.ServiceModel.Activation.HttpModule&#39; from assembly &#39;System.ServiceModel...&#39;"
 ms.custom: na
-ms.date: 06/05/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

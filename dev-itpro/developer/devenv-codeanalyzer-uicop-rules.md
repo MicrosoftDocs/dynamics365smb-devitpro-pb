@@ -1,9 +1,9 @@
 ---
-title: UICop Analyzer Rules
+title: "UICop Analyzer Rules"
 description: "List of rules for UICop analyzer in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/24/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,8 @@ ms.author: solsen
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # UICop Analyzer Rules 
-UICop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants.
+UserInterfaceCop is an analyzer that enforces the official AL Coding Guidelines.
+
 
 ## Rules 
 

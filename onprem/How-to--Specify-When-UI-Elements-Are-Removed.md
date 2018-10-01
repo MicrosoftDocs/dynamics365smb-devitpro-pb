@@ -1,7 +1,7 @@
 ---
 title: "How to: Specify When UI Elements Are Removed"
 author: edupont04
-ms.date: 07/07/2017
+ms.date: 10/01/2018
 
 ms.reviewer: na
 ms.suite: na

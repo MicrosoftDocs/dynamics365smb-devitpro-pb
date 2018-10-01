@@ -1,7 +1,7 @@
 ---
 title: "Arranging Fields in Rows and Columns Using a FixedLayout Control"
 ms.custom: na
-ms.date: 06/05/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
