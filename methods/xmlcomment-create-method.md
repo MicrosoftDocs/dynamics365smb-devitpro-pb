@@ -2,7 +2,7 @@
 title: "Create Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ A string that contains the contents of the new XmlComment node.
 ## Return Value
 *Comment*  
 &emsp;Type: [XmlComment](xmlcomment-data-type.md)  
-  
+The created XmlComment node.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

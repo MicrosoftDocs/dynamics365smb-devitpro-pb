@@ -2,7 +2,7 @@
 title: "ReplaceNodes Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Replaces the children nodes of this document with the specified content.
 *XmlDocument*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 An instance of the [XmlDocument](xmldocument-data-type.md) data type.  
+
 *Content*  
 &emsp;Type: [Any](any-data-type.md)  
 The content that replaces the children nodes.  

@@ -2,7 +2,7 @@
 title: "Evaluate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,10 +25,12 @@ Evaluates a string representation of a value into its typical representation. Th
 ## Parameters
 *Variable*  
 &emsp;Type: [Any](any-data-type.md)  
-The value of the string is assigned to the variable.  
+The value of the string is assigned to the variable.
+        
 *String*  
 &emsp;Type: [String](string-data-type.md)  
- A string that contains a value of any simple AL data type.  
+ A string that contains a value of any simple AL data type.
+        
 *Number*  
 &emsp;Type: [Integer](integer-data-type.md)  
 This optional value can be used when exporting data with an XmlPort. The only valid value is 9, which indicates that the data must be converted from XML format to C/SIDE format.  

@@ -2,7 +2,7 @@
 title: "Round Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,14 +31,14 @@ The number that you want to round.
 This optional parameter determines the precision used when rounding. If you do not specify a Precision parameter, then the following steps are used to specify the precision:
 1.  The function ReadRounding in Codeunit 1, Application Management, is called. ReadRounding returns a decimal value that is the precision. By default, the ReadRounding function returns the Amount Rounding Precision field from the GLSetup table.
 2.  If you have customized Codeunit 1 and it does not implement the ReadRounding function, then the precision is specified as 2 digits after the decimal.
-            
+          
 *Direction*  
 &emsp;Type: [String](string-data-type.md)  
 This optional parameter specifies how to round the Number parameter. The default rounding method is '='. The following are the options for rounding:
 -   '=' rounds up or down to the nearest value (default). Values of 5 or greater are rounded up. Values less than 5 are rounded down.
 -   '>' rounds up
 -   '<' rounds down
-            
+          
 
 
 ## Return Value

@@ -2,7 +2,7 @@
 title: "Create Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,8 @@ XmlElement :=   XmlElement.Create(Name: String, Content: Any,...)
 ## Parameters
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
-The fully qualified name of the element to create.  
+The fully qualified name of the element to create.
+        
 *Content*  
 &emsp;Type: [Any](any-data-type.md)  
 The content to add to the element to create.  
@@ -32,7 +33,7 @@ The content to add to the element to create.
 ## Return Value
 *XmlElement*  
 &emsp;Type: [XmlElement](xmlelement-data-type.md)  
-  
+The created XmlElement node.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

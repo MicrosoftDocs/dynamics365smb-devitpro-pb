@@ -2,7 +2,7 @@
 title: "Create Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,8 @@ XmlProcessingInstruction :=   XmlProcessingInstruction.Create(Target: String, Da
 ## Parameters
 *Target*  
 &emsp;Type: [String](string-data-type.md)  
-The target of the processing instruction.  
+The target of the processing instruction.
+        
 *Data*  
 &emsp;Type: [String](string-data-type.md)  
 The content of the processing instruction, excluding the target.  
@@ -32,7 +33,7 @@ The content of the processing instruction, excluding the target.
 ## Return Value
 *XmlProcessingInstruction*  
 &emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)  
-  
+The created XmlProcessingInstruction node.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

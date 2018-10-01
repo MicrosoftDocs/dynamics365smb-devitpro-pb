@@ -2,7 +2,7 @@
 title: "AsXmlComment Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ An instance of the [XmlNode](xmlnode-data-type.md) data type.
 ## Return Value
 *XmlComment*  
 &emsp;Type: [XmlComment](xmlcomment-data-type.md)  
-  
+An XmlComment value that references the current XmlNode.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

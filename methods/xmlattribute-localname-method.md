@@ -2,7 +2,7 @@
 title: "LocalName Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # LocalName Method
-The local name of the attribute.
+Gets the local name of the attribute.
 
 ## Syntax
 ```
@@ -31,7 +31,7 @@ An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 ## Return Value
 *LocalName*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The local name of the attribute.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

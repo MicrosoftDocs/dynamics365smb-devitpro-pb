@@ -2,7 +2,7 @@
 title: "RoundDateTime Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,15 +28,15 @@ NewDatetime :=   System.RoundDateTime(Datetime: DateTime, [Precision: BigInteger
   
 *Precision*  
 &emsp;Type: [BigInteger](biginteger-data-type.md)  
-This optional parameter determines the precision used when rounding. The default value is 1000, which rounds to the nearest second. You can only use positive BigIntegers.  
+This optional parameter determines the precision used when rounding. The default value is 1000, which rounds to the nearest second. You can only use positive BigIntegers.
+        
 *Direction*  
 &emsp;Type: [String](string-data-type.md)  
 This optional parameter specifies how to round the DateTime. The default rounding method is '='. You can change the method by using the following options:
 -   '=' rounds up or down to the nearest value (default). Values of 5 or greater are rounded up. Values less than 5 are rounded down.
-
 -   '>' rounds up
-
--   '<' rounds down  
+-   '<' rounds down
+          
 
 
 ## Return Value

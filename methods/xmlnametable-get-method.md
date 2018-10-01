@@ -2,7 +2,7 @@
 title: "Get Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,11 @@ Gets the atomized string with the specified value.
 *XmlNameTable*  
 &emsp;Type: [XmlNameTable](xmlnametable-data-type.md)  
 An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.  
+
 *Key*  
 &emsp;Type: [String](string-data-type.md)  
-The name to find.  
+The string to find.
+        
 *Result*  
 &emsp;Type: [Text](text-data-type.md)  
 The atomized string object if the string has been atomized.  
@@ -36,7 +38,7 @@ The atomized string object if the string has been atomized.
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** if the key exists, otherwise **false**.   
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

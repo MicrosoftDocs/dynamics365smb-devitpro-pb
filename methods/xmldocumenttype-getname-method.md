@@ -2,7 +2,7 @@
 title: "GetName Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Gets the name for this Document Type Definition (DTD).
 *XmlDocumentType*  
 &emsp;Type: [XmlDocumentType](xmldocumenttype-data-type.md)  
 An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.  
+
 *Result*  
 &emsp;Type: [Text](text-data-type.md)  
 A string that contains the name for this Document Type Definition (DTD).  
