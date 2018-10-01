@@ -2,7 +2,7 @@
 title: "Append Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # Append Method
-Appends a copy of the specified string to this instance.
+Appends a copy of the specified string to this TextBuilder instance.
 
 ## Syntax
 ```
@@ -24,6 +24,7 @@ Appends a copy of the specified string to this instance.
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
+
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
 The text to append.  
@@ -33,7 +34,7 @@ The text to append.
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** if the copy of the specified string succeeded, otherwise **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

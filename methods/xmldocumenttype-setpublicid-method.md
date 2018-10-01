@@ -2,7 +2,7 @@
 title: "SetPublicId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Sets the public identifier for this Document Type Definition (DTD).
 *XmlDocumentType*  
 &emsp;Type: [XmlDocumentType](xmldocumenttype-data-type.md)  
 An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.  
+
 *Value*  
 &emsp;Type: [String](string-data-type.md)  
 A string that contains the new public identifier for this Document Type Definition (DTD).  

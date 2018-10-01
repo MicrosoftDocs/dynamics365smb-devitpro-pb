@@ -2,7 +2,7 @@
 title: "RemoveNamespace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,11 @@ Removes the given namespace for the given prefix.
 *XmlNamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
+
 *Prefix*  
 &emsp;Type: [String](string-data-type.md)  
-The prefix for the namespace  
+The prefix for the namespace.
+        
 *Uri*  
 &emsp;Type: [String](string-data-type.md)  
 The namespace to remove for the given prefix. The namespace removed is from the current namespace scope. Namespaces outside the current scope are ignored.  

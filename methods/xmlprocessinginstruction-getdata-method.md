@@ -2,7 +2,7 @@
 title: "GetData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Gets the content of the processing instruction, excluding the target.
 *XmlProcessingInstruction*  
 &emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)  
 An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.  
+
 *Result*  
 &emsp;Type: [Text](text-data-type.md)  
 The content of the processing instruction, excluding the target.  

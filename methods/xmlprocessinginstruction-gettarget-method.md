@@ -2,7 +2,7 @@
 title: "GetTarget Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Gets the target of the processing instruction.
 *XmlProcessingInstruction*  
 &emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)  
 An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.  
+
 *Result*  
 &emsp;Type: [Text](text-data-type.md)  
 The target of the processing instruction.  

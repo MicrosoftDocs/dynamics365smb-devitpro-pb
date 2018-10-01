@@ -2,7 +2,7 @@
 title: "DWY2Date Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,10 +25,12 @@ Date :=   System.DWY2Date(WeekDay: Integer, [Week: Integer], [Year: Integer])
 ## Parameters
 *WeekDay*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The number of the day in the week (1-7). Monday is day number 1.  
+The number of the day in the week (1-7). Monday is day number 1.
+        
 *Week*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The number of the week. Week 1 is the first week of the year that has four or more days in the year. If you omit this optional parameter, the current week is used as the default.  
+The number of the week. Week 1 is the first week of the year that has four or more days in the year. If you omit this optional parameter, the current week is used as the default.
+        
 *Year*  
 &emsp;Type: [Integer](integer-data-type.md)  
 The four-digit number of the year. If you omit this optional parameter, the year of the current week is used as the default.  

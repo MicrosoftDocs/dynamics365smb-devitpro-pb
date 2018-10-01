@@ -2,7 +2,7 @@
 title: "Clear Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,17 +26,12 @@ Clears the value of a single variable. Also clears all the filters that were set
 *Variable*  
 &emsp;Type: [Any](any-data-type.md)  
 The identifier (variable) of any AL data type, including simple and composite data types. The following rules apply when you run the CLEAR function:
-
 -   A number variable is set to 0 (zero)
-
 -   A string variable is set to empty string
-
 -   A date variable is set to 0D (undefined date)
-
 -   A time variable is set to 0T (undefined time)
-
 -   A Boolean variable is set to FALSE
-            
+          
 
 
 

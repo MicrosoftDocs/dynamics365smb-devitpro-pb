@@ -2,7 +2,7 @@
 title: "Create Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ The content to add to this document.
 ## Return Value
 *XmlDocument*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  
-  
+The created XmlDocument node.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

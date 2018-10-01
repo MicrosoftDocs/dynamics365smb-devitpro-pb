@@ -2,7 +2,7 @@
 title: "GetPrefixOfNamespace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,11 @@ Gets the prefix associated with a namespace URI for this element.
 *XmlElement*  
 &emsp;Type: [XmlElement](xmlelement-data-type.md)  
 An instance of the [XmlElement](xmlelement-data-type.md) data type.  
+
 *Namespace*  
 &emsp;Type: [String](string-data-type.md)  
-A namespace URI to look up.  
+A namespace URI to look up.
+        
 *Result*  
 &emsp;Type: [Text](text-data-type.md)  
 A string that contains the namespace prefix.  

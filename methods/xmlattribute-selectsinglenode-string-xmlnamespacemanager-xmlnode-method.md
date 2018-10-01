@@ -2,7 +2,7 @@
 title: "SelectSingleNode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,12 +24,15 @@ Selects the first XmlNode that matches the XPath expression.
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
+
 *XPath*  
 &emsp;Type: [String](string-data-type.md)  
-The XPath expression.  
+The XPath expression.
+        
 *NamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
-An XmlNamespaceManager to use for resolving namespaces for prefixes in the XPath expression.  
+An XmlNamespaceManager to use for resolving namespaces for prefixes in the XPath expression.
+        
 *Node*  
 &emsp;Type: [XmlNode](xmlnode-data-type.md)  
 The first XmlNode that matches the XPath query.  

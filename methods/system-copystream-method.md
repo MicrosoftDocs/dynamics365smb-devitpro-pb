@@ -2,7 +2,7 @@
 title: "CopyStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,10 +25,12 @@ Copies the information that is contained in an InStream to an OutStream.
 ## Parameters
 *OutStream*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
-The OutStream object to which you will copy the information; the destination stream.  
+The OutStream object to which you will copy the information; the destination stream.
+        
 *InStream*  
 &emsp;Type: [InStream](instream-data-type.md)  
-The InStream object from which you want to copy; the source stream.  
+The InStream object from which you want to copy; the source stream.
+        
 *BytesToRead*  
 &emsp;Type: [Integer](integer-data-type.md)  
   

@@ -2,7 +2,7 @@
 title: "XmlElement Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # XmlElement Data Type
-
+Represents an XML element.
 
 The following methods are available on the XmlElement data type.
 
@@ -30,8 +30,8 @@ The following methods are available on instances of the XmlElement data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[HasAttributes()](xmlelement-hasattributes-method.md)|Gets a boolean value indicating whether the current node has any attributes.|
-|[HasElements()](xmlelement-haselements-method.md)|Gets a value indicating whether this element has at least one attribute.|
+|[HasAttributes()](xmlelement-hasattributes-method.md)|Gets a boolean value indicating whether this element has at least one attribute.|
+|[HasElements()](xmlelement-haselements-method.md)|Gets a value indicating whether this element has at least one child element.|
 |[IsEmpty()](xmlelement-isempty-method.md)|Gets a value indicating whether this element contains no content.|
 |[Name()](xmlelement-name-method.md)|Gets the fully qualified name of this element.|
 |[LocalName()](xmlelement-localname-method.md)|Gets the local name of this element.|

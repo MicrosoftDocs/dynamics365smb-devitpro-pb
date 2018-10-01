@@ -2,7 +2,7 @@
 title: "Name Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 ## Return Value
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The qualified name of the node.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

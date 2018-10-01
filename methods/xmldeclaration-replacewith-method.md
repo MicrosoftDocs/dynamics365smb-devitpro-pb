@@ -2,7 +2,7 @@
 title: "ReplaceWith Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Replaces this node with the specified content.
 *XmlDeclaration*  
 &emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)  
 An instance of the [XmlDeclaration](xmldeclaration-data-type.md) data type.  
+
 *Node*  
 &emsp;Type: [Any](any-data-type.md)  
 The content with which to replace the current node.  

@@ -2,7 +2,7 @@
 title: "Create Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ A string that contains the qualified name of the DTD, which is the same as the q
 ## Return Value
 *XmlDocumentType*  
 &emsp;Type: [XmlDocumentType](xmldocumenttype-data-type.md)  
-  
+The created XmlDocumentType node.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
