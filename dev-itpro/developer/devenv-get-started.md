@@ -35,8 +35,6 @@ Go through the following steps to set up a sandbox environment. With this you ge
 6) Enter the credentials you provided for the sign up, and then **Download symbols**. To manually download the symbols, press **Ctrl+Shift+P** and select **AL: Download symbols**. 
 7) Press **F5** to deploy and run the extension on your online sandbox tenant.  
 
-> [!NOTE]  
-> Use **Ctrl+Shift+P** to clear the credentials cache if you want to deploy against a different environment.
 
 You now have a HelloWorld sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **F5** to build and deploy the solution.
 
@@ -45,9 +43,9 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 + Always use the `.al` extension on new files.
 + Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by starting typing `t` and pick from the list.
 + Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
++ Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
++ Use **Ctrl+Shift+P** to clear the credentials cache if you want to deploy against a different environment.
 
-> [!NOTE]  
-> Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
 
 ## JSON file settings
 There are two JSON files in the project; the `app.json` file and the `launch.json` file. The files are automatically generated for your project. For more information, see [JSON files](devenv-json-files.md).
