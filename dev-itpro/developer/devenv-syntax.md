@@ -24,7 +24,7 @@ From code, you have access to various snippets that will give you a template for
 > [!NOTE]  
 > Use a code snippet from an .al file by start typing the snippet name.
 
-## Examples of snippets
+## <a name="ExamplesOfSnippets"></a> Examples of snippets
 The following is a non-comprehensive list of the snippets that you can use in the AL.
 
 |Type... | To get a... |

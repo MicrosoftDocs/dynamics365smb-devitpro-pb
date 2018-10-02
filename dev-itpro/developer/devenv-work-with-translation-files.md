@@ -70,7 +70,6 @@ var
     a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
 ```
 
-
 ## The XLIFF file
 In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. This is illustrated in the example below.
 
@@ -82,7 +81,7 @@ In the generated .xlf file, you can see a `<source>` element for each label. For
       <group id="body">
         <trans-unit id="PageExtension 1255613137 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Developer translation for %1</source>
-          <target>Udvikleroversættelse for %1</target>
+          &lt;target state="translated"&gt;Udvikleroversættelse for %1&lt;/target&gt;
           <note from="Developer" annotates="general" priority="2">%1 is extension name</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension - PageExtension</note>
         </trans-unit>
