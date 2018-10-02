@@ -69,7 +69,12 @@ The symbol file contains metadata of the application. This is what your extensio
 To make your extension available to users, the package must be published to a specific Microsoft Dynamics 365 Business Central Server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension V2](devenv-how-publish-and-install-an-extension-v2.md). 
 
 ## Controlling user access to publishing extensions
-The access to publishing extensions is controlled on a user or user group basis by the **D365 EXTENSION MGT** permission set. If a user is assigned this permission set, then the user can publish extensions. To prohibit a user from publishing, just remove the user from the **D365 EXTENSION MGT** permission set.
+The access to publishing extensions is controlled on a user or user group basis by the **D365 EXTENSION MGT** permission set. 
+
+> [!NOTE]  
+> If you add new permission sets and want to control the access to developing and publishing extensions, you must include indirect read and write permissions to the NavApp table (read – for downloading symbols, write – for publishing the app) in the permission set.
+
+To prohibit a user from publishing, just remove the user from the **D365 EXTENSION MGT** permission set.
 
 
 ## See Also 
