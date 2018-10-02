@@ -30,15 +30,8 @@ Go through the following steps to set up a sandbox environment. With this you ge
 3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al). 
 4) Press **Ctrl+,** to open the **user settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
 5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, and then choose **Cloud**.  
-
-## Tips and tricks
-+ Use **Ctrl+Space** to activate IntelliSense.
-+ Always the `.al` extension file name when you create new files.
-+ Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by starting typing `t` and pick from the list. ().
-+ Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
-
-> [!NOTE]  
-> If you want to change your configuration at a later point in time, go to **Debug** on the left side, select **Add Configuration**, choose one of the available options, and remove the previous configuration from the `launch.json` file.  
+    > [!NOTE]  
+    > If you want to change your configuration at a later point in time, go to **Debug** on the left side, select **Add Configuration**, choose one of the available options, and remove the previous configuration from the `launch.json` file.  
 6) Enter the credentials you provided for the sign up, and then **Download symbols**. To manually download the symbols, press **Ctrl+Shift+P** and select **AL: Download symbols**. 
 7) Press **F5** to deploy and run the extension on your online sandbox tenant.  
 
@@ -46,6 +39,12 @@ Go through the following steps to set up a sandbox environment. With this you ge
 > Use **Ctrl+Shift+P** to clear the credentials cache if you want to deploy against a different environment.
 
 You now have a HelloWorld sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **F5** to build and deploy the solution.
+
+## Tips and tricks
++ Use **Ctrl+Space** to activate IntelliSense.
++ Always the `.al` extension file name when you create new files.
++ Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by starting typing `t` and pick from the list.
++ Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
 
 > [!NOTE]  
 > Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
