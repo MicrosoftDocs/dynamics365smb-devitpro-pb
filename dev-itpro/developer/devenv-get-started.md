@@ -23,7 +23,7 @@ To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fi
 Go through the following steps to set up a sandbox environment. With this you get sample code that compiles and runs with just a few commands. 
 
 > [!NOTE]  
-> If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md).<!--  If you want to create an online sandbox with production data, see [](). -->
+> If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
 
 1) Sign up for a [Dynamics 365 Business Central sandbox](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1). 
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
@@ -31,7 +31,13 @@ Go through the following steps to set up a sandbox environment. With this you ge
 4) Press **Ctrl+,** to open the **user settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
 5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, and then choose **Cloud**.  
 
-> [!NOTE]    
+## Tips and tricks
++ Use **Ctrl+Space** to activate IntelliSense.
++ Always the `.al` extension file name when you create new files.
++ Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by starting typing `t` and pick from the list. ().
++ Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
+
+> [!NOTE]  
 > If you want to change your configuration at a later point in time, go to **Debug** on the left side, select **Add Configuration**, choose one of the available options, and remove the previous configuration from the `launch.json` file.  
 6) Enter the credentials you provided for the sign up, and then **Download symbols**. To manually download the symbols, press **Ctrl+Shift+P** and select **AL: Download symbols**. 
 7) Press **F5** to deploy and run the extension on your online sandbox tenant.  
@@ -40,9 +46,6 @@ Go through the following steps to set up a sandbox environment. With this you ge
 > Use **Ctrl+Shift+P** to clear the credentials cache if you want to deploy against a different environment.
 
 You now have a HelloWorld sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **F5** to build and deploy the solution.
-
-> [!TIP]  
-> For information about which sandboxes you can choose, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
 
 > [!NOTE]  
 > Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
@@ -76,7 +79,11 @@ The access to publishing extensions is controlled on a user or user group basis 
 
 To prohibit a user from publishing, just remove the user from the **D365 EXTENSION MGT** permission set.
 
+## Next steps
+Now that you have the tools and the HelloWorld example up and running, you might want to try to create a small sample app in AL. This walkthrough guides you through how to create a simple app adding objects, code, and publishing the app to your tenant. For more information, see [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md).
 
 ## See Also 
 [AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  
+[Syntax](devenv-syntax.md)  
+[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md)  
