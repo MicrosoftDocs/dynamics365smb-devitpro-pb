@@ -42,7 +42,7 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 
 ## Tips and tricks
 + Use **Ctrl+Space** to activate IntelliSense.
-+ Always the `.al` extension file name when you create new files.
++ Always use the `.al` extension on new files.
 + Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by starting typing `t` and pick from the list.
 + Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
 
