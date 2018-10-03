@@ -33,7 +33,31 @@ Run the following command in a Command Prompt as Administrator to run a Docker i
 > [!NOTE]  
 > When you run the Docker run command, it will start downloading the image if it does not already exist. A container consists of multiple layers, only the needed layers are downloaded.
 
-At this point, you can open your internet browser and type in the Web client URL. You will be prompted with a login dialog, where you can login with the NAV Admin Username/Password displayed.
+After starting the `docker run` command above, you will see log entries similar to the following:
+
+```
+Initializing...
+Starting Container
+Hostname is cdc633cdb0a2
+...
+Container IP Address: 172.20.203.209
+Container Hostname  : cdc633cdb0a2
+Container Dns Name  : cdc633cdb0a2
+Web Client          : https://cdc633cdb0a2/NAV/WebClient/
+NAV Admin Username  : admin
+NAV Admin Password  : Biba4071
+
+Files:
+http://cdc633cdb0a2:8080/certificate.cer
+
+Initialization took 83 seconds
+Ready for connections!
+```
+
+At this point, you can open your internet browser and type in the Web client URL from the log. You will be prompted with a login dialog, where you can login with the NAV Admin Username/Password displayed.
+
+> [!NOTE]  
+> The container image uses a so called self-signed certificate for https communication. Because of that, your browser might warn you that the page you are requesting is unsafe. In those specific circumstances and only for test and dev environments, it is safe to ignore this warning. If you want to solve this warning, you can install the certificate on your PC (see the link under "Files" in the log entries).
 
 ## The NavContainerHelper module
 To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `NavContainerHelper` to work with containers. On a Windows 10 or Windows Server 2016, start Powershell as an Administrator and type:
@@ -46,7 +70,7 @@ To see which functions are available in the NavContainerHelper module use the fo
 
 To get quickly get started, run the following command from the NavContainerHelper module:
 
-```new-navcontainer -accept_eula -containerName test -imageName microsoft/dynamics-nav:devpreview```
+```new-navcontainer -accept_eula -containerName test -imageName microsoft/bcsandbox```
 
 The `NavContainerHelper` will create a folder on the C:\ drive called DEMO and will place all files underneath that folder. The DEMO folder will be shared to the container for transfer of files etc. If you do not specify a username and a password, it will ask for your password and use the current Windows username. If you specify your windows password, the container setup will use Windows Authentication integrated with the host. The `NavContainerHelper` will also create shortcuts on the desktop for the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Web client, a container prompt, and a container PowerShell prompt.
 
