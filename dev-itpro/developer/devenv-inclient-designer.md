@@ -18,7 +18,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 # Using Designer
 When developing extensions in the AL development environment you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code, as it provides an easy and convenient way of making immediate adjustments to your design by simply dragging and dropping the components on the page.  
 
-Here is a quick overview of **Designer** capabilities: 
+Here is a quick overview of capabilities in **Designer**: 
 
 |Features                           |Applies to                       | 
 |-----------------------------------|---------------------------------|
@@ -52,7 +52,7 @@ You can start Designer by choosing ![Settings icon](media/settings_icon_small.pn
 > With this preview you can only add existing table fields. Adding pages, groups, parts, and actions is not yet supported.
 
 
-![Designer](/media/new-start-design.gif)
+![Designer](../media/new-start-design.gif)
 
 
 ## Drag-and-drop components
@@ -72,7 +72,8 @@ If you want to remove a field, column, part, or a cue, you must select the arrow
 The display type icons let you preview the changes you made on desktop, tablet, and phone clients. This way you can make sure that your design will work on the intended display target(s). You can flip to display tablet and phone designs in portrait and landscape orientation. 
 
 ## Controlling User Access to Designer
-Access to Designer is controlled on a user or user group basis by the **D365 EXTENSION MGT** permission set. If a user is assigned this permission set, then Designer is available for the user in the client. To prohibit a user from using Designer, just remove the user from the **D365 EXTENSION MGT** permission set.
+
+Accessing Designer is controlled on a user or user group basis by the **D365 EXTENSION MGT** permission set. If a user is assigned this permission set, then Designer is available for the user in the client. To prohibit a user from using Designer, just remove the user from the **D365 EXTENSION MGT** permission set.
 
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  
