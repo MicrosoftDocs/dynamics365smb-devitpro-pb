@@ -89,7 +89,7 @@ We recommend that you use dedicated domain user accounts for the Windows service
 
 The [!INCLUDE[server](../developer/includes/server.md)] account must have privileges on the SQL Server instances and on the Dynamics NAV database(s). See [Provisioning the Server Service Account](provision-server-account.md) for details.
 
-For installations on SQL Server 2014, consider adding the service account for then SQL Server engine to the **Perform Volume Maintenance Tasks** security policy. For SQL Server 2016, it is possible to do this from the installer.
+For installations on SQL Server 2014, consider adding the service account for the SQL Server engine to the **Perform Volume Maintenance Tasks** security policy. For SQL Server 2016, it is possible to do this from the installer.
 
 ### Database configurations
 
