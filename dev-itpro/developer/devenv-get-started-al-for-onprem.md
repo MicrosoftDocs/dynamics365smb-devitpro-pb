@@ -29,7 +29,7 @@ To get started with a mixed development environment of C/SIDE and AL, you must f
     - **Allowed Extension Target Level** is set to **Internal**.
     - **Enable Developer Service Endpoint** checkbox is selected. 
     - **Enable Loading Application Symbol References at Server Startup** checkbox is selected.
-10. Make sure to read and ensure any additional settings here[Running C/SIDE and AL Side-by-Side](devenv-running-cside-and-al-side-by-side.md).
+10. Make sure to read and ensure any additional settings here [Running C/SIDE and AL Side-by-Side](devenv-running-cside-and-al-side-by-side.md).
 
 > [!TIP]  
 > For information about which sandboxes you can choose, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
