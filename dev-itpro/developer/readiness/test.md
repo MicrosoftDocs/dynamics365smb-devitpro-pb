@@ -19,7 +19,7 @@ ms.author: solsen
             pharetra venenatis.</p>
             <li>
                 <ul id="cardtypes">
-                    <a href="">
+                    <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -39,7 +39,7 @@ ms.author: solsen
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -59,7 +59,7 @@ ms.author: solsen
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -79,7 +79,7 @@ ms.author: solsen
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
