@@ -1,5 +1,4 @@
 ---
-layout: HubPage
 title: "Build Your Business on Dynamics 365 Business Central"
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
