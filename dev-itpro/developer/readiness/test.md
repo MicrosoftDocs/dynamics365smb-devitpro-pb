@@ -1,10 +1,22 @@
+---
+layout: HubPage
+title: "Build Your Business on Dynamics 365 Business Central"
+description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
+author: SusanneWindfeldPedersen
+ms.custom: na
+ms.date: 10/01/2018
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+ms.author: solsen
+---
+
 <div id="main" class="v2">
     <div class="container">
         <h1>Docs.microsoft.com Card Type Gallery</h1>
         <p>Introductory text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices sollicitudin arcu, non consectetur
             massa vulputate sed. In nibh magna, efficitur vel luctus varius, cursus id neque. Nam rhoncus orci finibus lacus
             pharetra venenatis.</p>
-        <ul class="pivots">
             <li>
                 <ul id="cardtypes">
                     <a href="">
@@ -88,6 +100,4 @@
                             </li>
                         </ul>
                     </li>
-                    
-                        
 </div>
