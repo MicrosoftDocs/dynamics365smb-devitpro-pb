@@ -19,13 +19,13 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 Code signing is a common practice for many applications. It is the process of digitally signing a file to verify the author and that the file has not been tampered with since it was signed. The signature of the APP package file is verified during the publishing of the extension using the `Publish-NAVApp` cmdlet. 
 For more technical information on signing, see [Authenticode](https://msdn.microsoft.com/en-us/library/ms537359\(VS.85\).aspx). 
 
-> [!NOTE]   
+> [!NOTE]  
 > If you want to publish an unsigned extension package in your on-premise environment, you need to explicitly state that by using the - *SkipVerification* parameter on the `Publish-NAVApp` cmdlet. An extension without a valid signature will not be published. 
 
 The signing of an APP package file must be performed on a computer that has [!INCLUDE[navnow](includes/navnow_md.md)] 2018 or later (or the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]) installed. If you use a Docker image for your development environment, that environment will meet this requirement. You must also have the certificate that will be used for signing on the computer. The certificate must include code signing as the intended purpose. It is recommended that you use a certificate purchased from a third-party certificate authority. 
 
 > [!IMPORTANT]  
-> If you publish the extension as an app on AppSource, the APP package file must be signed using a certificate from a [Certification Authority](https://technet.microsoft.com/en-us/library/cc751157.aspx) that has its root certificates in Microsoft Windows.
+> If you publish the extension as an app on AppSource, the APP package file must be signed using a certificate from a [Certification Authority](https://technet.microsoft.com/en-us/library/cc751157.aspx) that has its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate provides, including but not limited to GoDaddy, DigiCert, and Symantec.
 
 ## Steps for signing your .app file
 
