@@ -13,7 +13,7 @@
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg" alt="" />
+                                                        <img src="../media/search-icon.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -33,7 +33,7 @@
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg" alt="" />
+                                                        <img src="../media/search-icon.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -53,7 +53,7 @@
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg" alt="" />
+                                                        <img src="../media/search-icon.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -73,7 +73,7 @@
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/azure/media/index/virtualmachine.svg" alt="" />
+                                                        <img src="../media/search-icon.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
