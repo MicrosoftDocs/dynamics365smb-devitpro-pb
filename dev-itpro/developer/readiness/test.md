@@ -13,16 +13,15 @@ ms.author: solsen
 
 <div id="main" class="v2">
     <div class="container">
-        <h1>Docs.microsoft.com Card Type Gallery</h1>
-        <p>Introductory text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices sollicitudin arcu, non consectetur
-            massa vulputate sed. In nibh magna, efficitur vel luctus varius, cursus id neque. Nam rhoncus orci finibus lacus
-            pharetra venenatis.</p>
+        <h1>The “Ready to Go” learning catalog</h1>
+        <p>This “Ready to Go” learning catalog provides Dynamics 365 Business Central partners a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develops apps for Microsoft AppSource. <br>The information in this document is being updated on a weekly basis.</p>
+        <ul class="pivots">
             <li>
                 <ul id="cardtypes">
                     <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
-                                            <div class="card">
+                                            <div class="cardsC">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
                                                         <img src="../media/search-icon.png" alt="" />
@@ -42,7 +41,7 @@ ms.author: solsen
                                 <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
-                                            <div class="card">
+                                            <div class="cardsC">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
                                                         <img src="../media/search-icon.png" alt="" />
@@ -62,7 +61,7 @@ ms.author: solsen
                                 <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
-                                            <div class="card">
+                                            <div class="cardsC">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
                                                         <img src="../media/search-icon.png" alt="" />
@@ -82,7 +81,7 @@ ms.author: solsen
                                 <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
-                                            <div class="card">
+                                            <div class="cardsC">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
                                                         <img src="../media/search-icon.png" alt="" />
