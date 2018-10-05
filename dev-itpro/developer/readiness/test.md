@@ -16,11 +16,11 @@ ms.author: solsen
         <p>This “Ready to Go” learning catalog provides Dynamics 365 Business Central partners a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develops apps for Microsoft AppSource. <br>The information in this document is being updated on a weekly basis.</p>
         <ul class="pivots">
             <li>
-                <ul id="cardtypes">
+                <ul id="cardtypes-Z" class="cardsZ">
                     <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
-                                            <div class="cardsC">
+                                            <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
                                                         <img src="../media/search-icon.png" alt="" />
@@ -40,7 +40,7 @@ ms.author: solsen
                                 <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
-                                            <div class="cardsC">
+                                            <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
                                                         <img src="../media/search-icon.png" alt="" />
@@ -60,7 +60,7 @@ ms.author: solsen
                                 <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
-                                            <div class="cardsC">
+                                            <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
                                                         <img src="../media/search-icon.png" alt="" />
@@ -80,7 +80,7 @@ ms.author: solsen
                                 <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
-                                            <div class="cardsC">
+                                            <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
                                                         <img src="../media/search-icon.png" alt="" />
