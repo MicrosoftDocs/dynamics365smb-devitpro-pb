@@ -94,3 +94,32 @@ If you select the secondary key for sorting, then the order is based on the cont
 - Number of records in your tables.  
 
 - Speed of your computer and its hard disk.  
+
+## Defining keys
+
+You define keys in the AL code of a table object. To define keys, add the `keys` keyword after the `fields{ }` definition, and then add `key` keyword for each key that you want to define:
+
+```
+keys
+{
+    key(Name; Field)
+    {
+
+    }
+    key(Name; Field)
+    {
+
+    }
+}
+```
+
+Replace `Name` with descriptive text that you want to use to identify the key. Replace `Field` with the name of a field that you want to use as the key. If you want to include multiple fields, separate each fields with a comma.
+
+The first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
+ 
+
+### Limitations
+
+- Keys cannot be added to table extension objects. 
+- Existing keys cannot be changed, removed, or reordered.
+- New keys that you want to add to an existing table object can only be added to the end of the key list.
