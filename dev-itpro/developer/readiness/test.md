@@ -1,4 +1,6 @@
 ---
+layout: HubPage
+hide_bc: true
 title: "Build Your Business on Dynamics 365 Business Central"
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
@@ -14,7 +16,8 @@ ms.author: solsen
     <div class="container">
         <h1>The “Ready to Go” learning catalog</h1>
         <p>This “Ready to Go” learning catalog provides Dynamics 365 Business Central partners a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develops apps for Microsoft AppSource. <br>The information in this document is being updated on a weekly basis.</p>
-        <ul id="cardtypes-Z" class="cardsZ">
+        <ul id="cardtypes-A" class="cardsA">
+                    <li>
                     <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
