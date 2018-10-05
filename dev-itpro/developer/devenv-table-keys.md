@@ -37,7 +37,7 @@ The fields that make up the secondary keys do not always contain unique data, an
 
 ### Unique Secondary Keys
 
-A key definition includes the [Unique](properties/devenv-unique.md) property that you use to create a unique index. A unique index ensures that records in a table do not have identical field values. With a unique index, when table is validated, values of the field that makes up the key are checked for uniqueness. If the table includes records with duplicate values for the field, the validation fails.
+A key definition includes the [Unique](properties/devenv-unique-property.md) property that you use to create a unique index. A unique index ensures that records in a table do not have identical field values. With a unique index, when table is validated, values of the field that makes up the key are checked for uniqueness. If the table includes records with duplicate values for the field, the validation fails.
 
 Like primary keys, you can create unique secondary keys that are comprised of multiple fields. In this case, it's the combination of the values in the secondary key that must be unique. For example, if you have a **Customer** table, you could create a unique key for the **Name**, **Address**, and **City** fields to make sure that there are no customers that have the same combination of values for these fields.
 
