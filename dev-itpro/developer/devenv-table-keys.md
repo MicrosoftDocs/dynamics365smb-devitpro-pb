@@ -12,9 +12,11 @@ author: SusanneWindfeldPedersen
 ---
 
 # Table Keys
+
 The database management system, which is SQL Server, keeps track of each field by using the field number and the record's primary key. The primary key is composed of up to 16 fields in a record. The combination of values in fields in the primary key makes it possible to uniquely identify each record.  
 
-## Primary keys  
+## Primary keys
+  
 The primary key determines the logical order in which records are stored, regardless of their physical placement.  
 
 Logically, records are stored sequentially in ascending order and are sorted by the primary key. Before adding a new record to a table, SQL Server checks if the information in the record's primary key fields is unique and only then inserts the record into the correct logical position. Records are sorted dynamically so the database is always structurally correct. This allows for fast data manipulation and retrieval.  
@@ -23,16 +25,24 @@ A table description contains a list of keys. A key is a sequence of one or more 
 
 The primary key is always active, and SQL Server keeps the table sorted in primary key order and rejects records with duplicate values in primary key fields. Therefore, the values in the primary key must always be unique. Note that it is not the value in each field in the primary key that must be unique, but it is the combination of values in all fields that make up the primary key.  
 
-## Secondary keys  
+## Secondary keys
+  
 A secondary key uses an additional structure that is called an *index*. This is like an index that is used in textbooks. A textbook index alphabetically lists important terms at the end of a book. Next to each term are page numbers. You can quickly search the index to find a list of page numbers (addresses), and you can locate the term by searching the specified pages. The index is an exact indicator that shows where each term occurs in the textbook.  
 
 When you define a secondary key and mark it as active, an index is automatically maintained and reflects the sorting order that is defined by the key. Several secondary keys can be active at the same time.  
 
 A secondary key can be changed into an inactive key, which does not occupy database space, and does not use time during updates to maintain its index. Inactive keys can be reactivated, although this can be time-consuming because SQL Server must scan the whole table to rebuild the index.  
 
-The fields that make up the secondary keys do not always contain unique data, and SQL Server does not reject records with duplicate data in secondary key fields. If two or more records contain identical information in the secondary key, then SQL Server uses the primary key for the table to resolve this conflict.  
+The fields that make up the secondary keys do not always contain unique data, and SQL Server does not reject records with duplicate data in secondary key fields. If two or more records contain identical information in the secondary key, then SQL Server uses the primary key for the table to resolve this conflict.
 
-## Sort Orders and Secondary Keys  
+### Unique Secondary Keys
+
+A key definition includes the [Unique](properties/devenv-unique.md) property that you use to create a unique index. A unique index ensures that records in a table do not have identical field values. With a unique index, when table is validated, values of the field that makes up the key are checked for uniqueness. If the table includes records with duplicate values for the field, the validation fails.
+
+Like primary keys, you can create unique secondary keys that are comprised of multiple fields. In this case, it's the combination of the values in the secondary key that must be unique. For example, if you have a **Customer** table, you could create a unique key for the **Name**, **Address**, and **City** fields to make sure that there are no customers that have the same combination of values for these fields.
+
+## Sort Orders and Secondary Keys
+  
 The following example shows how the primary key influences the sort order when a secondary key is active. The Customer table includes four entries (records), and the records in the Customer table have two fields: Customer Number and Customer Name.  
 
 The following is the key list for the Customer table.  

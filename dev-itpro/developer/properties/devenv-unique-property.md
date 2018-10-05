@@ -11,28 +11,44 @@ author: jswymer
 ---
 
 # Unique Property
-Sets whether a key is  should be automatically calculated. 
 
-<!--
-AutoCalcField is correlated with [CalcFields property](devenv-calcfields-proeprty.md) because CalcField is just a list of fields and these types that are calculated fields of FlowFields types. 
--->
+Sets whether the value of a key must be unique. 
+
   
 ## Applies To  
   
--   Report columns  
+Table keys
   
--   XMLports  
+## Property Value
   
-## Property Value  
- **True** if the FlowField is automatically calculated; otherwise, **false**. The default is **true**.  
+ **true** if the key value must be unique; otherwise, **false**. The default is **false**.  
 
 ## Remarks
-FlowFields has an effect if the associated data source is a calculated value of the FlowFields.
-<!--  
-FlowFields has an effect if the associated data source is a calculated value of the FlowFields.
--->
 
+In AL, keys cannot be changed, removed, or reordered. New keys can only be added to the end of the list.
 
+## Example
+
+The following example defines three keys. 
+
+```
+keys
+{
+    key(PrimaryKey; PKField)
+    {
+        Clustered = true;
+    }
+    key(Unique; UniqueField)
+    {
+        Unique = true;
+    }
+    key(Combined; UniqueField, NormaField)
+    {
+        Unique = true;
+    }
+}
+
+```
 ## See Also  
 [FlowFields](../devenv-flowfields.md)   
 [Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   
