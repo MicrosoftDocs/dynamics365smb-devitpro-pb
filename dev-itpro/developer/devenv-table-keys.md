@@ -154,9 +154,9 @@ keys
 
 For a more information about the different key properties, see [Key Properties](properties/devenv-key-properties.md).
 
-## Restrictions on adding or changing keys when creating a new extension version for publishing
+## Restrictions on key modifications
 
-When developing a new version of an extension in AL, follow these  restrictions to avoid schema synchronization errors when publishing the new version: 
+When developing a new version of an extension for publishing, follow these guidelines to avoid schema synchronization errors that prevent publishing the new version: 
 
 -  Do not modify or delete existing keys in a table object.
 
