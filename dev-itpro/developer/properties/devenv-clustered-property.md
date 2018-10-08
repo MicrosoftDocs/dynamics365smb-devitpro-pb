@@ -18,13 +18,17 @@ author: SusanneWindfeldPedersen
 Sets a value that indicates whether the index is clustered.  
   
 ## Applies To  
- Keys  
 
-<!--
+Table Keys  
+
+> [!NOTE]  
+> The `Clustered` property cannot be used in table extension objects.
+
 ## Remarks
-about how performance is affected - ask Kennie about this one, he is the SQL expert.  It has a high impact on performance
-I need to have some comments explaining how to use it 
--->
+
+A clustered index determines the physical order in which records are stored in the table. Using a clustered key can improve the time it takes to retrieve records. 
+
+There can be only one clustered key on a table.
 
 ## See Also  
  [Properties](devenv-properties.md)

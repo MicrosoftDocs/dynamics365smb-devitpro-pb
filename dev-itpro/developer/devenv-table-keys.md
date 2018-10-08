@@ -35,13 +35,25 @@ A secondary key can be changed into an inactive key, which does not occupy datab
 
 The fields that make up the secondary keys do not always contain unique data, and SQL Server does not reject records with duplicate data in secondary key fields. If two or more records contain identical information in the secondary key, then SQL Server uses the primary key for the table to resolve this conflict.
 
-### Unique Secondary Keys
+### Unique secondary keys
 
-A key definition includes the [Unique](properties/devenv-unique-property.md) property that you use to create a unique index. A unique index ensures that records in a table do not have identical field values. With a unique index, when table is validated, values of the field that makes up the key are checked for uniqueness. If the table includes records with duplicate values for the field, the validation fails.
+A key definition includes the [Unique](properties/devenv-unique-property.md) property that you use to create a unique index. A unique index ensures that records in a table do not have identical field values. With a unique index, when table is validated, value that makes up the key is checked for uniqueness. If the table includes records with duplicate values, the validation fails.
 
 Like primary keys, you can create unique secondary keys that are comprised of multiple fields. In this case, it's the combination of the values in the secondary key that must be unique. For example, if you have a **Customer** table, you could create a unique key for the **Name**, **Address**, and **City** fields to make sure that there are no customers that have the same combination of values for these fields.
 
-## Sort Orders and Secondary Keys
+> [!NOTE]  
+> The `Unique` property is not supported in table extension objects.
+
+## Clustered and non-clustered keys
+
+A key definition includes the [Unique](properties/devenv-clustered-property.md) property that you use to create a clustered index. A clustered index determines the physical order in which records are stored in the table. Based on the key value, records are sorted in ascending order. Using a clustered key can speed up the retrieval of records.
+
+There can be only one clustered index per table. By default the primary is configure as a clustered key.
+
+> [!NOTE]  
+> The `Clustered` property is not supported in table extension objects.
+
+## Sort orders and secondary keys
   
 The following example shows how the primary key influences the sort order when a secondary key is active. The Customer table includes four entries (records), and the records in the Customer table have two fields: Customer Number and Customer Name.  
 
@@ -61,7 +73,7 @@ When you sort by the primary key, the Customer table resembles the following tab
 |003|Customer B|  
 |004|Customer C|  
 
-If you select the secondary key for sorting, then the order is based on the contents of the Customer Name field. Because the contents of these fields are not unique, the records must be subsorted according to the primary key.  
+If you select the secondary key for sorting, then the order is based on the contents of the Customer Name field. Because the contents of these fields are not unique, the records must be sub-sorted according to the primary key.  
 
 |Customer Name|Customer Number|  
 |-------------------|---------------------|  
@@ -74,16 +86,17 @@ If you select the secondary key for sorting, then the order is based on the cont
 > The two records that have the same Customer Name value are sorted by Customer Number.  
 
 ## How keys affect performance
- Searching for specific data is easier if several keys have been defined and maintained for the table that holds the desired data. The indexes for each key provide specific views that enable quick, flexible searches. There are advantages and disadvantages to using many keys, as demonstrated in the following table.  
+
+Searching for specific data is easier if several keys have been defined and maintained for the table that holds the desired data. The indexes for each key provide specific views that enable quick, flexible searches. There are advantages and disadvantages to using many keys, as demonstrated in the following table.  
 
 |If you|Performance improves when you|Performance slows when you|  
 |------|-----------------------------|--------------------------|  
 |Increase the number of secondary keys that are marked as active.|Retrieve data in several different sorting sequences because the data is already sorted.|Enter data because indexes for each secondary key must be maintained.|  
 |Decide to use only a few keys.|Enter data because a minimal number of indexes are maintained.|Retrieve data. You may have to define or reactivate the secondary keys to get the appropriate sorting. Depending on the size of the database, this can take some time, because the index must be rebuilt.|  
 
- The decision whether to use a few or many keys is not easy. The choice of appropriate keys and the number of active keys to use should be the best compromise between maximizing the speed of data retrieval and maximizing the speed of data updates (operations that insert, delete, or modify data). In general, it may be worthwhile to deactivate complex keys if they are rarely used.  
+The decision whether to use a few or many keys is not easy. The choice of appropriate keys and the number of active keys to use should be the best compromise between maximizing the speed of data retrieval and maximizing the speed of data updates (operations that insert, delete, or modify data). In general, it may be worthwhile to deactivate complex keys if they are rarely used.  
 
- The overall speed depends on the following factors:  
+The overall speed depends on the following factors:  
 
 - Size of the database.  
 
@@ -95,13 +108,7 @@ If you select the secondary key for sorting, then the order is based on the cont
 
 - Speed of your computer and its hard disk.  
 
-## Clustered and non-clustered keys
-
-A key definition includes the [Unique](properties/devenv-clustered-property.md) property that you use to create a clustered index. A clustered index determines the physical order in which records are stored in the table. Based on the key value, records are sorted in ascending order. Using a clustered key can speed up the retrieval of records.
-
-There can be only one clustered index per table. By default the primary is configure as a clustered key.
- 
-## Define keys
+## Defining new keys
 
 You define keys in AL code of a table object. To define keys, add the `keys` keyword after the `fields` definition, and then add a `key` keyword for each key:
 
@@ -144,9 +151,14 @@ keys
     }
 }
 ```
+
 For a more information about the different key properties, see [Key Properties](properties/devenv-key-properties.md).
 
-## Change Keys
-- You cannot add keys in a table extension object.
-- If you are adding a new key to an existing table object, you must add the new key after the last key definition in the list. 
-- You cannot change, delete, or reordered existing keys. 
+## Restrictions on adding or changing keys when creating a new extension version for publishing
+
+When developing a new version of an extension in AL, follow these  restrictions to avoid schema synchronization errors when publishing the new version: 
+
+-  Do not modify or delete existing keys in a table object.
+
+    This includes adding or removing fields, changing the order of fields, and changing properties.
+-  Do not add unique keys to an existing table object.
