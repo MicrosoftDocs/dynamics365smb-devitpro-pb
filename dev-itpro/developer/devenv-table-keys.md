@@ -95,31 +95,58 @@ If you select the secondary key for sorting, then the order is based on the cont
 
 - Speed of your computer and its hard disk.  
 
-## Defining keys
+## Clustered and non-clustered keys
 
-You define keys in the AL code of a table object. To define keys, add the `keys` keyword after the `fields{ }` definition, and then add `key` keyword for each key that you want to define:
+A key definition includes the [Unique](properties/devenv-clustered-property.md) property that you use to create a clustered index. A clustered index determines the physical order in which records are stored in the table. Based on the key value, records are sorted in ascending order. Using a clustered key can speed up the retrieval of records.
+
+There can be only one clustered index per table. By default the primary is configure as a clustered key.
+ 
+## Define keys
+
+You define keys in AL code of a table object. To define keys, add the `keys` keyword after the `fields` definition, and then add a `key` keyword for each key:
 
 ```
 keys
 {
-    key(Name; Field)
+    key(Name; Fields)
     {
 
     }
-    key(Name; Field)
+    key(Name; Fields)
     {
 
     }
 }
 ```
 
-Replace `Name` with descriptive text that you want to use to identify the key. Replace `Field` with the name of a field that you want to use as the key. If you want to include multiple fields, separate each fields with a comma.
+Replace `Name` with descriptive text that you want to use to identify the key. Replace `Field` with the name of a field that you want to use as the key. If you want to include multiple fields in a single key, separate each fields with a comma.
 
 The first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
- 
 
-### Limitations
+### Key properties
 
-- Keys cannot be added to table extension objects. 
-- Existing keys cannot be changed, removed, or reordered.
-- New keys that you want to add to an existing table object can only be added to the end of the key list.
+There are several properties that configure the behavior of a key, such as the [Enabled](properties/devenv-enabled-property.md), [Clustered](properties/devenv-clustered-property.md), and [Unique](properties/devenv-unique-property.md) properties:
+
+```
+keys
+{
+    key(PrimaryKey; ID)
+    {
+        Clustered = true;
+    }
+    key(CustomerInfo; Name,Address,City)
+    {
+        Unique = true;
+    }
+   key(Currency; Currency Code)
+    {    
+        Enabled = false;
+    }
+}
+```
+For a more information about the different key properties, see [Key Properties](properties/devenv-key-properties.md).
+
+## Change Keys
+- You cannot add keys in a table extension object.
+- If you are adding a new key to an existing table object, you must add the new key after the last key definition in the list. 
+- You cannot change, delete, or reordered existing keys. 

@@ -29,29 +29,27 @@ In AL, keys cannot be changed, removed, or reordered. New keys can only be added
 
 ## Example
 
-The following example defines three keys. 
+The following example defines a primary key and two unique keys. 
 
 ```
 keys
 {
-    key(PrimaryKey; PKField)
+    key(PrimaryKey; ID)
     {
-        Clustered = true;
+
     }
-    key(Unique; UniqueField)
+    key(CustomerInfo; Name,Address,City)
     {
         Unique = true;
     }
-    key(Combined; UniqueField, NormaField)
-    {
+   key(Email; Email)
+    {    
         Unique = true;
     }
 }
 
 ```
-## See Also  
-[FlowFields](../devenv-flowfields.md)   
-[Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   
-[CalcFormula](devenv-calcformula-property.md)  
-[FlowFilter Overview](../devenv-flowfilter-overview.md)   
-[CalcFields Property](devenv-calcfields-property.md)
+
+## See Also
+ 
+[Table Keys](../devenv-table-keys.md)  
