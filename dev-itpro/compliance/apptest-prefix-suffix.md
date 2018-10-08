@@ -15,9 +15,9 @@ ms.author: rweigel
 
 # Benefits and Guidelines for using a Prefix or Suffix
 
-It is **required** to use a prefix or suffix for the name property of the fields in your extension. You would then use the Caption/CaptionML values for what to display to the user.
-
-You must use a prefix/suffix when naming all new objects. When you modify a core Dynamics 365 object using a Table Extension or Page Extension, the prefix must be defined at the control or field level.
+In your extension, the name of each new application object or any of its fields must contain a prefix or suffix. This rule applies to all AL objects and fields. 
+You can then use the [Caption](../developer/properties/devenv-caption-property.md)/[CaptionML](../developer/properties/devenv-captionml-property.md) values for what you decide to display to the user.
+When you modify a core Dynamics 365 object using a Table Extension or Page Extension, the prefix must be defined at the control or field level.
 
 Declare your objects with a prefix as shown in the following examples.
 
@@ -31,11 +31,6 @@ table 70000000 MyPrefix Salesperson
 page 70000000 MyPrefix Salesperson
 ```
 
-**Codeunit**  
-```
-codeunit 70000000 MyPrefix Salesperson
-```
-
 **Page Extension**  
 ```
 actions
@@ -44,6 +39,12 @@ actions
     {
         action(MyPrefix Vacation)
 ```
+
+**Codeunit**  
+```
+codeunit 70000000 MyPrefix Salesperson
+```
+
 
 ## Benefits
 
@@ -55,9 +56,9 @@ There are two good reasons to why you may want to proactively use a prefix or su
 
 ## General rules
 
-- Tag must be at least 3 characters
-- The object/field name must start or end with the tag
-- If a conflict arises, the one who registered the tag always wins
+- The prefix/suffix must be at least 3 characters
+- The object/field name must start or end with the prefix/suffix
+- If a conflict arises, the one who registered the prefix/suffix always wins
 
 ## Examples of acceptable prefix/suffix
 **No Delimiter**
