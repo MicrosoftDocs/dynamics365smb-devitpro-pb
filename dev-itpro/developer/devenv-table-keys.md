@@ -126,7 +126,7 @@ keys
 }
 ```
 
-Replace `Name` with descriptive text that you want to use to identify the key. Replace `Field` with the name of a field that you want to use as the key. If you want to include multiple fields in a single key, separate each fields with a comma.
+Replace `Name` with descriptive text that you want to use to identify the key. Replace `Field` with the name of a field that you want to use as the key. If you want to include multiple fields in a single key, separate each field with a comma.
 
 The first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
 
@@ -161,4 +161,4 @@ When developing a new version of an extension for publishing, follow these guide
 -  Do not modify or delete existing keys in a table object.
 
     This includes adding or removing fields, changing the order of fields, and changing properties.
--  Do not add unique keys to an existing table object.
+-  Do not add additional unique keys to an existing table object.
