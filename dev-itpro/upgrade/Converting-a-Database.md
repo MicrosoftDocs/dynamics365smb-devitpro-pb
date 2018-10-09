@@ -248,7 +248,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     2. Search for and open the **Control Add-ins** page.
     3. Choose **Import**.
     4. Locate and select the .zip file for the control add-in.
-        The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md) installation. There is a sub-folder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+        The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There is a sub-folder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
 
 1. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
 
