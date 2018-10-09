@@ -15,9 +15,10 @@ ms.author: rweigel
 
 # Benefits and Guidelines for using a Prefix or Suffix
 
-It is **required** to use a prefix or suffix for the name property of the fields in your extension. You would then use the Caption/CaptionML values for what to display to the user.
-
-You must use a prefix/suffix when naming all new objects. When you modify a core Dynamics 365 object using a Table Extension or Page Extension, the prefix must be defined at the control or field level.
+In your extension, the name of each new application object or any of its fields must contain a prefix or suffix. This rule applies to all AL objects and fields. 
+You can then use the [Caption](../developer/properties/devenv-caption-property.md)/[CaptionML](..developer/properties/devenv-captionml-property.md) values for what you decide to display to the user.
+  
+When you modify a core Dynamics 365 object using a Table Extension or Page Extension, the prefix must be defined at the control or field level.
 
 Declare your objects with a prefix as shown in the following examples.
 
