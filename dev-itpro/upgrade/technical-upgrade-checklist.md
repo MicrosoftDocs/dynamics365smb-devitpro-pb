@@ -42,7 +42,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Step|More info| Done |
 |----|-----------|--|
 |Install [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)]. |[See...](../deployment/install-using-setup.md)|
-|Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] as an adminstrator.|||
+|Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] as an administrator.|||
 |Connect to and convert the application database.|[See...](../cside/cside-open-database.md)||
 |Add custom control add-ins to the server instance.|[See...](converting-a-database.md#controladdins)||
 |Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted application database.|[See...](../administration/connect-server-to-database.md)||
@@ -69,6 +69,7 @@ This article provides an overview of the technical upgrade process for Business 
 ## Post-upgrade tasks 
 |Step|More info| Done |
 |----|-----------|--|
+|Upgrade Javascript-based control add-ins to new versions available on [!INCLUDE[server](../developer/includes/server.md)]. |[See...](converting-a-database.md#extensions)|
 |(Single-tenant mode only) Install the V2 extensions that were previously uninstalled.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
 |If the old database used first-party V1 extensions, publish and install the V2 extensions that replace them.|[See...](converting-a-database.md#extensions)||
 |Transition custom code from old codeunit 1 to management codeunits.|[See...](transition-from-codeunit1.md)||
