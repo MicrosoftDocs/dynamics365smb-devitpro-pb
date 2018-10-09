@@ -156,9 +156,10 @@ For a more information about the different key properties, see [Key Properties](
 
 ## Restrictions on key modifications
 
-When developing a new version of an extension for publishing, follow these guidelines to avoid schema synchronization errors that prevent publishing the new version: 
+When developing a new version of an extension, be aware of the following restrictions to avoid schema synchronization errors that prevent you from publishing the new version: 
 
 -  Do not modify or delete existing keys in a table object.
 
     This includes adding or removing fields, changing the order of fields, and changing properties.
 -  Do not add additional unique keys to an existing table object.
+
