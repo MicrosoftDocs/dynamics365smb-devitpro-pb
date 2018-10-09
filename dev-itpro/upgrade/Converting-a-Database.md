@@ -187,7 +187,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 6.  <a name="controladdins"></a>If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)].   
 
-     For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Add-ins folder.
+    For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Add-ins folder.
 
 7.  <a name="connectserver"></a>Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database. 
 
@@ -239,6 +239,16 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
         For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
 ## <a name="extensions"></a>Task 4: Post-upgrade
+
+1. Upgrade Javascript-based control add-ins to new versions.
+
+    The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of Microsoft-provided Javascript-based control add-ins, such as the Business Chart control add-in. If you application is using any of these add-ins, you must upgrade them to the new versions as follow:
+
+    1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+    2. Search for and open the **Control Add-ins** page.
+    3. Choose **Import**.
+    4. Locate and select the .zip file for the control add-in.
+        The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There is a sub-folder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
 
 1. <a name="installv2extensions"></a>(Single tenant only) Install the V2 extensions that you uninstalled previously.
 
