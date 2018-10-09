@@ -13,7 +13,6 @@ manager: SorenGP
 ---
 
 # ISOLATEDSTORAGE.DELETE Method
-?Body text?
 
 ISOLATEDSTORAGE.DELETE(KEY, [DATASCOPE]);
 
@@ -46,59 +45,13 @@ ISOLATEDSTORAGE.DELETE(KEY, [DATASCOPE]);
 </Method>
 ```  
 
-#### Parameters (REPLACE or DELETE)
- *File*  
- Type: File  
+#### Parameters
 
- Specifies the file to create.  
+## Property Value/Return Value
 
- *Name*  
- Type: Text or code  
+## Remarks
 
- The name of the file that include the path. The following rules apply:  
-
--   You can omit the drive designation if the file is located on the current drive.  
-
--   You can omit the full path if the file is located in the current directory.  
-
--   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.  
-
- *TextEncoding*  
- Value: **MsDos**, **UTF8**, **UTF16**, or **Windows**  
-
- Optionally, you can specify the encoding on the file. By specifying the [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md), you ensure that all the language-specific characters are represented correctly in [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] when you read data and write data.  
-
- For more information, see [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md).  
-
-## Property Value/Return Value (REPLACE or DELETE)
- Type: Boolean  
-
- Specifies whether the file was created.  
-
- **True** if the file was created; otherwise, **false**.  
-
-## Remarks (REPLACE or DELETE)
- If the [TEXTMODE Method \(File\)](devenv-TEXTMODE-Method-File.md) returns **true** and you read or write to the file, text is put in the buffer.  
-
- If the [TEXTMODE Method \(File\)](devenv-TEXTMODE-Method-File.md) method returns **false**, binary information is put in the buffer.  
-
- If you call CREATE on a File variable that refers to an open file, the method does not automatically close the existing file and create the new file. You must explicitly call the [CLOSE Method \(File\)](devenv-CLOSE-Method-File.md) to close the existing file. Otherwise, a run-time error occurs.  
-
-## Example (REPLACE or DELETE)
- The following example creates a file that is named TestFile.txt in the path C:\\TestFolder\\. The TestFile variable stores the file and path that is created. If the file is created, a message that states that the file is created is displayed. Otherwise, an error message is displayed. This example requires that you create the following global variable.  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|TestFile|File|  
-
-```  
-
-IF TestFile.CREATE('C:\TestFolder\TestFile.txt') THEN BEGIN  
-  MESSAGE('%1 is created', TestFile.NAME)  
-END  
-ELSE  
-ERROR('The file could not be created');  
-```  
+## Example
 
 ## See Also  
  [GUID Data Type](../datatypes/devenv-GUID-Data-Type.md)

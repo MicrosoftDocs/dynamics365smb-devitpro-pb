@@ -12,30 +12,28 @@ caps.latest.revision: 21
 author: SorenGP
 ---
 # DataScope Data Type
-The scope from which to remove the value with the given key.  
+Isolated Storage is a data storage that provides isolation between extensions, so that you can keep values in one extension from being accessed from other extensions. Data in the Isolated Storage is accessible through an API. The involved data type is DataScope.
+
+The following scopes with which to remove the value with the given key are supported.  
 
 ## DATASCOPE::Module
-
-Values are accessible within the extension across the companies and users on one tenant  
+Values are accessible within the extension across the companies and users in one tenant.  
 
 ## DATASCOPE::User
-
-Values are accessible within the extension for the specific user that sets the value, across the companies on one tenant  
+Values are accessible within the extension for the specific user that sets the value, across the companies in one tenant.  
 
 ## DATASCOPE::Company
-
-Values are accessible within the extension for the specific Company that sets the value, for all the users on one tenant  
+Values are accessible within the extension for the specific company that sets the value, for all the users in one tenant.  
 
 ## DATASCOPE::CompanyAndUser
-
-Values are accessible within the extension for the specific Company and specific User that sets the value, on one tenant   
+Values are accessible within the extension for the specific company and specific user that sets the value, in one tenant.   
 
 ## Methods  
 The methods supported for the DataScope data type are:
 
 [ISOLATEDSTORAGE.SET](../methods/devenv-isolated-storage-set.md)   
-[ISOLATEDSTORAGE.GET](../methods/devenv-isolated-storage-get.md)
-[ISOLATEDSTORAGE.CONTAINS](../methods/devenv-isolated-storage-contains.md)
+[ISOLATEDSTORAGE.GET](../methods/devenv-isolated-storage-get.md)  
+[ISOLATEDSTORAGE.CONTAINS](../methods/devenv-isolated-storage-contains.md)  
 [ISOLATEDSTORAGE.DELETE](../methods/devenv-isolated-storage-delete.md)  
 
 ## See Also  
