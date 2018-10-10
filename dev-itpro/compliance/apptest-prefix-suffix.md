@@ -20,7 +20,7 @@ You can then use the [Caption](../developer/properties/devenv-caption-property.m
   
 When you modify a core Dynamics 365 object using a Table Extension or Page Extension, the prefix must be defined at the control or field level.
 
-Declare your objects with a prefix as shown in the following examples.
+Declare your objects with a prefix as shown in the following examples.,
 
 **Table**  
 ```
