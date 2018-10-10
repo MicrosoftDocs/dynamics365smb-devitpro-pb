@@ -41,13 +41,13 @@ Sets the string that is used to identify a control or other object in the user i
 
  The CaptionML property has the following format.  
 
- `<Language ID>=<caption>`
+ `<Language ID>='<caption>'`
 
  `<Language ID>` is the standard Windows three-letter language ID, and `<caption>` is the caption text for this language. Use semicolons to separate entries.  
 
  The following example shows a CaptionML value.  
 
- `DAN=Navn;DEU=Name;ESP=Nombre;FRA=Nom`
+ `CaptionML = DAN='Navn',DEU='Name',ESP='Nombre',FRA='Nom';`
 
  In this example, values are set for Danish (DAN), German Standard (DEU), Spanish Traditional Sort (ESP), and French Standard (FRA).  
 
