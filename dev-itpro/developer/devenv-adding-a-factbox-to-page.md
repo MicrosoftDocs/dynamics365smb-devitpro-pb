@@ -55,11 +55,18 @@ page 50100 "Simple Customercard Page"
     {
         area(FactBoxes)
         {
-            part(MyPart; "Acc. Sched. KPI Web Srv. Lines")  { }
-
-            systempart(Links; Links)  { } 
-         
-            systempart(Notes; Notes)  { }         
+            part(MyPart; "Acc. Sched. KPI Web Srv. Lines")
+            {
+                ApplicationArea = All;
+            }
+            systempart(Links; Links)
+            {
+                ApplicationArea = All;
+            }         
+            systempart(Notes; Notes)
+            {
+                ApplicationArea = All;
+            }       
         }
     }
 }
