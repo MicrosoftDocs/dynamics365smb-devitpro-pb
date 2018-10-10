@@ -3,7 +3,7 @@ title: "Prefix and suffix for naming in extensions"
 description: "Use a prefix or suffix for names in your extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/10/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,15 +50,15 @@ actions
 
 There are two good reasons to why you may want to proactively use a prefix or suffix:
 
-1.  App A and App B both use the same field name (for a native Dynamics 365 table) of FAB Salesperson Code. The partner for App B already has the prefix/suffix reserved. A customer wants to install both apps but cannot due to collision of field name. App A will have to reserve a different unique prefix and submit an updated version of their app.  
+1. App A and App B both use the same field name (for a native Dynamics 365 table) of FAB Salesperson Code. The partner for App B already has the prefix/suffix reserved. A customer wants to install both apps but cannot due to collision of field name. App A will have to reserve a different unique prefix and submit an updated version of their app.  
 
 2. Dynamics 365 developers want to use the name of Salesperson Code. App A (published for months), already has that field name. Microsoft will require the app to prefix its field names by submitting an updated version of their app.  
 
 ## General rules
 
-- Tag must be at least 3 characters
-- The object/field name must start or end with the tag
-- If a conflict arises, the one who registered the tag always wins
+- The prefix/suffix must be at least 3 characters
+- The object/field name must start or end with the prefix/suffix
+- If a conflict arises, the one who registered the prefix/suffix always wins
 
 ## Examples of acceptable prefix/suffix
 **No Delimiter**
