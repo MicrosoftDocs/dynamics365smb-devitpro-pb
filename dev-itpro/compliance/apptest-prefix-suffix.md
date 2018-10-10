@@ -17,10 +17,9 @@ ms.author: rweigel
 
 In your extension, the name of each new application object or any of its fields must contain a prefix or suffix. This rule applies to all AL objects and fields. 
 You can then use the [Caption](../developer/properties/devenv-caption-property.md)/[CaptionML](../developer/properties/devenv-captionml-property.md) values for what you decide to display to the user.
-  
 When you modify a core Dynamics 365 object using a Table Extension or Page Extension, the prefix must be defined at the control or field level.
 
-Declare your objects with a prefix as shown in the following examples.,
+Declare your objects with a prefix as shown in the following examples.
 
 **Table**  
 ```
@@ -32,11 +31,6 @@ table 70000000 MyPrefix Salesperson
 page 70000000 MyPrefix Salesperson
 ```
 
-**Codeunit**  
-```
-codeunit 70000000 MyPrefix Salesperson
-```
-
 **Page Extension**  
 ```
 actions
@@ -45,6 +39,12 @@ actions
     {
         action(MyPrefix Vacation)
 ```
+
+**Codeunit**  
+```
+codeunit 70000000 MyPrefix Salesperson
+```
+
 
 ## Benefits
 
