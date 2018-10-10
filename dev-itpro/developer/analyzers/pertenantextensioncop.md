@@ -1,0 +1,36 @@
+---
+title: "PerTenantExtensionCop Analyzer"
+ms.author: solsen
+ms.custom: na
+ms.date: 10/10/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml or .resx files in the ModernDev repo.)
+# PerTenantExtensionCop Analyzer Rules
+PerTenantExtensionCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants.
+
+## Rules
+
+|Id|Title|Description|MessageFormat|Category|Default Severity|IsEnabledbyDefault|
+|--|-----|-----------|-------------|--------|----------------|------------------|
+|[PTE0001](pertenantextensioncop-pte0001-objectidmustbeinfreerange.md)|Object ID must be in free range.|Object ID must be in free range.|{0} '{1}' has an ID of [{2}]. It must be between {3} and {4}.|ObjectValidation|Error|true|
+|[PTE0002](pertenantextensioncop-pte0002-fieldidmustbeinfreerange.md)|Field ID must be in free range.|Field ID must be in free range.|Field '{0}' has an ID of [{1}]. It must be between {2} and {3}.|ObjectValidation|Error|true|
+|[PTE0003](pertenantextensioncop-pte0003-donotsubscribetooncompanyopenevents.md)|Functions must not subscribe to CompanyOpen events.|Functions must not subscribe to CompanyOpen events.|Function {0} subscribes to {1}.|ObjectValidation|Error|true|
+|[PTE0004](pertenantextensioncop-pte0004-tablesmusthavepermissionsetdefined.md)|Table definitions must have a matching permission set.|Table definitions must have a matching permission set.|Table '{0}' is missing a matching permission set.|ObjectValidation|Error|true|
+|[PTE0005](pertenantextensioncop-pte0005-manifesttargetmustnotbeinternal.md)|Property 'target' has invalid value.|'Internal' is a reserved usage for the 'target' property.|App.json 'target' property must not be set to 'Internal'.|PackageValidation|Error|true|
+|[PTE0006](pertenantextensioncop-pte0006-donotcallencryptionkeyfunctions.md)|Encryption key functions must not be invoked.|Encryption key functions must not be invoked.|Encryption key function '{0}' is not allowed.|PackageValidation|Error|true|
+|[PTE0007](pertenantextensioncop-pte0007-donotcallasserterror.md)|Test assertion functions are not allowed in a non-test context.|Test assertion functions are not allowed in a non-test context.|Assertion function '{0}' must not be invoked.|PackageValidation|Error|true|
+|[PTE0008](pertenantextensioncop-pte0008-useapplicationareaproperty.md)|Fields must use ApplicationArea property.|Fields must use ApplicationArea property.|Field with name '{0}' must have a value for the ApplicationArea property.|PackageValidation|Error|true|
+|[PTE0009](pertenantextensioncop-pte0009-donotusemanifesttranslationproperties.md)|This app.json property must not be used for per-tenant extensions.|The properties 'HelpBaseUrl' and 'SupportedLocales' are reserved for translation apps.|The app.json '{0}' property must not be used for per-tenant extensions.|PackageValidation|Error|true|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## See Also  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  
