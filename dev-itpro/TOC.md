@@ -231,6 +231,7 @@
 #### [Char Data Type](developer/datatypes/devenv-char-data-type.md)
 #### [Code Data Type](developer/datatypes/devenv-code-data-type.md)
 #### [Codeunit Data Type](developer/datatypes/devenv-codeunit-data-type.md)
+#### [DataScope Type](developer/datatypes/devenv-data-scope-type.md)
 #### [Date Data Type](developer/datatypes/devenv-date-data-type.md)
 #### [DateFormula Data Type](developer/datatypes/devenv-date-formula-data-type.md)
 #### [DateTime Data Type](developer/datatypes/devenv-datetime-data-type.md)
