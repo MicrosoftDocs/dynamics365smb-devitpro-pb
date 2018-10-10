@@ -60,5 +60,6 @@ The ```name```, ```publisher```, ```version``` properties are used for specifyin
 The ```mandatoryPrefix``` and ```mandatorySuffix``` properties specify strings that must be prepended/appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
+[Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
+[Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)  
