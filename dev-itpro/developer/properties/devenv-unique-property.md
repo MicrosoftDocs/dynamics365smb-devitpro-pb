@@ -33,7 +33,7 @@ A unique index ensures that records in a table do not have identical field value
 
 ## Example
 
-The following example defines a primary key and two unique keys. 
+The following example defines a primary key and two unique secondary keys. 
 
 ```
 keys

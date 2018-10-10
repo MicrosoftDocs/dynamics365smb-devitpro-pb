@@ -19,7 +19,7 @@ Sets a value that indicates whether the index is clustered.
   
 ## Applies To  
 
-Table Keys  
+Table keys  
 
 > [!NOTE]  
 > The `Clustered` property cannot be used in table extension objects.
@@ -30,5 +30,22 @@ A clustered index determines the physical order in which records are stored in t
 
 There can be only one clustered key on a table.
 
+## Example
+
+The following example defines a secondary key to be a clustered index. 
+```
+keys
+{
+    key(PrimaryKey; ID)
+    {
+        Clustered = false;
+    }
+    key(CustomerInfo; Name,Address,City)
+    {
+        Clustered = true;
+    }
+}
+
+```
 ## See Also  
- [Properties](devenv-properties.md)
+ [Table Key](devenv-key-properties.md)  

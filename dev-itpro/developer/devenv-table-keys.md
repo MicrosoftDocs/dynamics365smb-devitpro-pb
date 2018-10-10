@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 973de351-209a-44b7-b8f6-7218a1fa69e6
-author: SusanneWindfeldPedersen
+author: jswymer
 ---
 
 # Table Keys
@@ -29,9 +29,9 @@ The primary key is always active, and SQL Server keeps the table sorted in prima
   
 A secondary key uses an additional structure that is called an *index*. This is like an index that is used in textbooks. A textbook index alphabetically lists important terms at the end of a book. Next to each term are page numbers. You can quickly search the index to find a list of page numbers (addresses), and you can locate the term by searching the specified pages. The index is an exact indicator that shows where each term occurs in the textbook.  
 
-When you define a secondary key and mark it as active, an index is automatically maintained and reflects the sorting order that is defined by the key. Several secondary keys can be active at the same time.  
+When you define a secondary key and mark it as enabled, an index is automatically maintained and reflects the sorting order that is defined by the key. Several secondary keys can be active at the same time.  
 
-A secondary key can be changed into an inactive key, which does not occupy database space, and does not use time during updates to maintain its index. Inactive keys can be reactivated, although this can be time-consuming because SQL Server must scan the whole table to rebuild the index.  
+A secondary key can be changed to be disabled, which does not occupy database space, and does not use time during updates to maintain its index. Disabled keys can be re-enabled, although this can be time-consuming because SQL Server must scan the whole table to rebuild the index.  
 
 The fields that make up the secondary keys do not always contain unique data, and SQL Server does not reject records with duplicate data in secondary key fields. If two or more records contain identical information in the secondary key, then SQL Server uses the primary key for the table to resolve this conflict.
 
@@ -162,4 +162,6 @@ When developing a new version of an extension, be aware of the following restric
 - Do not add or remove fields, changing the order of fields, or change properties of existing keys.
 - Do not add additional unique keys.
 
+## See Also
 
+[Tables Overview](devenv-tables-overview.md)
