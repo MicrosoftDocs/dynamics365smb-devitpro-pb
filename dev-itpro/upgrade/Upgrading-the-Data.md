@@ -242,7 +242,7 @@ For example, run the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershel
 Set-NAVTenant -ServerInstance <ServerInstanceName>
 ```
  
-For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-andapplication-database.md).
+For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
 ##  <a name="RunStartNavUpgrade"></a> Task 12: Run the data upgrade process  
 A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and upgrade tables, to migrate business data from the old table structure to the new table structure. You can start the data upgrade from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
