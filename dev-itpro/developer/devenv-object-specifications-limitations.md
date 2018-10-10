@@ -68,6 +68,5 @@ The following characteristics are based on maximum capacity specifications for S
  <sup>2</sup>Each variable-length text field accounts for 26 bytes in the record. 
   
 ## See Also  
- [Objects](Objects.md)   
- [Field Data Types](Field-Data-Types.md)   
+ [Field Data Types](datatypes/devenv-field-data-types.md)   
  [Maximum Capacity Specifications for SQL Server](http://go.microsoft.com/fwlink/?LinkId=302003)
