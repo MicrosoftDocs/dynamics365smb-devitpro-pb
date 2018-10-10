@@ -95,6 +95,7 @@
 ### [The AL Formatter](developer/devenv-al-formatter.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
+### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
