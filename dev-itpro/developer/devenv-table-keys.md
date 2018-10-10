@@ -11,9 +11,7 @@ ms.assetid: 973de351-209a-44b7-b8f6-7218a1fa69e6
 author: jswymer
 ---
 
-# Table Keys
-
-The database management system, which is SQL Server, keeps track of each field by using the field number and the record's primary key. The primary key is composed of up to 16 fields in a record. The combination of values in fields in the primary key makes it possible to uniquely identify each record.  
+The database management system, which is SQL Server, keeps track of data in a table using a primary key. The primary key is composed of up to 16 fields in a record. The combination of values in fields in the primary key makes it possible to uniquely identify each record. 
 
 ## Primary keys
   
@@ -27,9 +25,9 @@ The primary key is always active, and SQL Server keeps the table sorted in prima
 
 ## Secondary keys
   
-A secondary key uses an additional structure that is called an *index*. This is like an index that is used in textbooks. A textbook index alphabetically lists important terms at the end of a book. Next to each term are page numbers. You can quickly search the index to find a list of page numbers (addresses), and you can locate the term by searching the specified pages. The index is an exact indicator that shows where each term occurs in the textbook.  
+A secondary key is implemented on SQL Server using an additional structure that is called an *index*. This is like an index that is used in textbooks. A textbook index alphabetically lists important terms at the end of a book. Next to each term are page numbers. You can quickly search the index to find a list of page numbers (addresses), and you can locate the term by searching the specified pages. The index is an exact indicator that shows where each term occurs in the textbook.  
 
-When you define a secondary key and mark it as enabled, an index is automatically maintained and reflects the sorting order that is defined by the key. Several secondary keys can be active at the same time.  
+When you define a secondary key and mark it as enabled, an index is automatically maintained on SQL Server. The index reflects the sorting order that is defined by the key. Several secondary keys can be active at the same time.  
 
 A secondary key can be changed to be disabled, which does not occupy database space, and does not use time during updates to maintain its index. Disabled keys can be re-enabled, although this can be time-consuming because SQL Server must scan the whole table to rebuild the index.  
 
@@ -37,18 +35,20 @@ The fields that make up the secondary keys do not always contain unique data, an
 
 ### Unique secondary keys
 
-A key definition includes the [Unique](properties/devenv-unique-property.md) property that you use to create a unique index. A unique index ensures that records in a table do not have identical field values. With a unique index, when table is validated, the key value is checked for uniqueness. If the table includes records with duplicate values, the validation fails. Another benefit of unique indexes is providing information to the query optimizer that helps produce more efficient execution plans.
+A key definition includes the [Unique](properties/devenv-unique-property.md) property that you can use to create a unique constraint on the table in SQL Server. A unique key ensures that records in a table do not have identical field values. With a unique key, when table is validated, the key value is checked for uniqueness. If the table includes records with duplicate values, the validation fails. Another benefit of unique indexes is providing information to the query optimizer that helps produce more efficient execution plans.
 
 Like primary keys, you can create unique secondary keys that are comprised of multiple fields. In this case, it's the combination of the values in the secondary key that must be unique. For example, if you have a **Customer** table, you could create a unique key for the **Name**, **Address**, and **City** fields to make sure that there are no customers that have the same combination of values for these fields.
+
+Unlike primary keys, it is possible to define multiple unique secondary keys on a table.  
 
 > [!NOTE]  
 > The `Unique` property is not supported in table extension objects.
 
 ## Clustered and non-clustered keys
 
-A key definition includes the [Unique](properties/devenv-clustered-property.md) property that you use to create a clustered index. A clustered index determines the physical order in which records are stored in the table. Based on the key value, records are sorted in ascending order. Using a clustered key can speed up the retrieval of records.
+A key definition includes the [Clustered](properties/devenv-clustered-property.md) property that you use to create a clustered index. A clustered index determines the physical order in which records are stored in the table. Based on the key value, records are sorted in ascending order. Using a clustered key can speed up the retrieval of records.
 
-There can be only one clustered index per table. By default the primary is configure as a clustered key.
+There can be only one clustered index per table. By default the primary is configured as a clustered key.
 
 > [!NOTE]  
 > The `Clustered` property is not supported in table extension objects.
