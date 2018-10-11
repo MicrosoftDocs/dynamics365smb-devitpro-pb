@@ -14,7 +14,7 @@ author: SorenGP
 # DataScope Data Type
 Isolated Storage is a data storage that provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions.
 
-DataScope determines the area that the values within the extension are accessible. The four areas are described below.  
+DataScope determines the area where the keys/values within the extension are accessible. The four areas are described below.  
 
 ## DATASCOPE::Module
 Values are accessible within the extension across the companies and users in one tenant.  

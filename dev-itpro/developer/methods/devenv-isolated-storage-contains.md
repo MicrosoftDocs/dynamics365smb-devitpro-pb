@@ -13,7 +13,7 @@ manager: SorenGP
 ---
 
 # ISOLATEDSTORAGE.CONTAINS Method
-Deletes the value with the specified key from the isolated storage.
+Determines whether the storage contains a value with the specified key.
 
 ## Syntax  
 [OK=:] ISOLATEDSTORAGE.CONTAINS(KEY, [DATASCOPE]);
