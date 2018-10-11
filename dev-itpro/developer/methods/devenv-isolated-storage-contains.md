@@ -1,7 +1,7 @@
 ---
 title: "ISOLATEDSTORAGE.CONTAINS Method"
 ms.custom: na
-ms.date: 10/10/2018
+ms.date: 10/11/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,47 +12,34 @@ caps.latest.revision: 14
 manager: SorenGP
 ---
 
-
 # ISOLATEDSTORAGE.CONTAINS Method
-
-ISOLATEDSTORAGE.CONTAINS(KEY, [DATASCOPE]);
+Deletes the value with the specified key from the isolated storage.
 
 ## Syntax  
-
-```  
-
-<Method Name="Contains" IsStatic="true" StaticClassName="ALIsolatedStorage" Compatibility="2.0">
-
-  <Documentation>Determines whether the storage contains a value with the specified key.</Documentation>
-
-  <Returns Name="HasValue" Type="Boolean">
-
-    <Documentation>**true** if a value with the specified key exists in the storage, otherwise **false**.</Documentation>
-
-  </Returns>
-
-  <Parameter Name="Key" Type="String">
-
-    <Documentation>The key to locate in the storage.</Documentation>
-
-  </Parameter>
-
-  <Parameter Name="DataScope" Type="DataScope" IsOptional="true">
-
-    <Documentation>The scope in which to check for the existence of a value with the given key. If a value is not passed in, the default value DataScope::Module will be used.</Documentation>
-
-  </Parameter>
-
-</Method>
-```  
+[OK=:] ISOLATEDSTORAGE.CONTAINS(KEY, [DATASCOPE]);
 
 #### Parameters
+*Key*
+Type: Text
+
+The key to locate in the storage.
+
+*Value*
+Type: Text
+
+The value that will be associated with the specified key.
+
+*DataScope*
+Type: Text
+
+The scope in which to check for the existence of a value with the given key. If a value is not passed in, the default value, DataScope::Module will be used. For more information, see [DataScope Data Type](../datatypes/devenv-data-scope-type.md).
 
 ## Property Value/Return Value
+Type: Boolean
 
-## Remarks
-
-## Example
+**true** if a value with the specified key exists in the storage, otherwise **false**.
 
 ## See Also  
- [GUID Data Type](../datatypes/devenv-GUID-Data-Type.md)
+[DataScope Data Type](../datatypes/devenv-data-scope-type.md)  
+[Isolated Storage](../triggers/devenv-isolated-storage.md)  
+[GUID Data Type](../datatypes/devenv-GUID-Data-Type.md)
