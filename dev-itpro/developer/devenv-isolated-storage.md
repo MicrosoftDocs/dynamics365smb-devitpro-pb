@@ -24,5 +24,4 @@ The methods supported for the DataScope data type are:
 |ISOLATEDSTORAGE.DELETE|Deletes the value with the specified key from the isolated storage.|[ISOLATEDSTORAGE.DELETE Method](methods/devenv-isolated-storage-delete.md)|  
 
 ## See Also  
-[DataScope Data Type](datatypes/devenv-data-scope-type.md)  
-[AL Data types](devenv-al-data-types.md)  
+[DataScope Data Type](datatypes/devenv-data-scope-type.md)

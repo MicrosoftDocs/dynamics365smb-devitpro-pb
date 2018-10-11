@@ -37,6 +37,6 @@ The methods supported for the DataScope data type are:
 [ISOLATEDSTORAGE.DELETE](../methods/devenv-isolated-storage-delete.md)  
 
 ## See Also  
-[Isolated Storage](../triggers/devenv-isolated-storage.md)  
+[Isolated Storage](../../developer/devenv-isolated-storage.md)  
 [AL Data types](devenv-al-data-types.md)  
 [AL Method Reference](../methods/devenv-al-method-reference.md)  
