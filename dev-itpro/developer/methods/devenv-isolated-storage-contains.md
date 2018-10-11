@@ -32,7 +32,7 @@ The value that will be associated with the specified key.
 *DataScope*
 Type: Text
 
-The scope in which to check for the existence of a value with the given key. If a value is not passed in, the default value, DataScope::Module will be used. For more information, see [DataScope Data Type](../datatypes/devenv-data-scope-type.md).
+The scope in which to check for the existence of a value with the given key. If a value is not passed in, the default value, DataScope::Module will be used. For more information, see [DataScope Data Type](datatypes/devenv-data-scope-type.md).
 
 ## Property Value/Return Value
 Type: Boolean
@@ -40,6 +40,5 @@ Type: Boolean
 **true** if a value with the specified key exists in the storage, otherwise **false**.
 
 ## See Also  
-[DataScope Data Type](../datatypes/devenv-data-scope-type.md)  
-[Isolated Storage](../triggers/devenv-isolated-storage.md)  
-[GUID Data Type](../datatypes/devenv-GUID-Data-Type.md)
+[DataScope Data Type](datatypes/devenv-data-scope-type.md)  
+[Isolated Storage](../developer/devenv-isolated-storage.md)

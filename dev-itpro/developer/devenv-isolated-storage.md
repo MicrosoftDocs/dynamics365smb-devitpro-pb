@@ -18,12 +18,11 @@ The methods supported for the DataScope data type are:
 
 |Method|Description|For more information, see|  
 |--------------|-----------------|-------------------------------|  
-|ISOLATEDSTORAGE.SET|Sets the value associated with the specified key.|[ISOLATEDSTORAGE.SET](../methods/devenv-isolated-storage-set.md)|  
-|ISOLATEDSTORAGE.GET|Gets the value associated with the specified key.|[ISOLATEDSTORAGE.GET](../methods/devenv-isolated-storage-get.md)|  
-|ISOLATEDSTORAGE.CONTAINS|Determines whether the storage contains a value with the specified key.|[ISOLATEDSTORAGE.CONTAINS](../methods/devenv-isolated-storage-contains.md)|  
-|CANCELTASK|Cancels a scheduled task.|[ISOLATEDSTORAGE.DELETE](../methods/devenv-isolated-storage-delete.md)|  
+|ISOLATEDSTORAGE.SET|Sets the value associated with the specified key.|[ISOLATEDSTORAGE.SET Method](methods/devenv-isolated-storage-set.md)|  
+|ISOLATEDSTORAGE.GET|Gets the value associated with the specified key.|[ISOLATEDSTORAGE.GET Method](methods/devenv-isolated-storage-get.md)|  
+|ISOLATEDSTORAGE.CONTAINS|Determines whether the storage contains a value with the specified key.|[ISOLATEDSTORAGE.CONTAINS Method](methods/devenv-isolated-storage-contains.md)|  
+|ISOLATEDSTORAGE.DELETE|Deletes the value with the specified key from the isolated storage.|[ISOLATEDSTORAGE.DELETE Method](methods/devenv-isolated-storage-delete.md)|  
 
 ## See Also  
-[DataScope Data Type](../datatypes/devenv-data-scope-type.md)  
+[DataScope Data Type](datatypes/devenv-data-scope-type.md)  
 [AL Data types](devenv-al-data-types.md)  
-[AL Method Reference](../methods/devenv-al-method-reference.md)  
