@@ -59,6 +59,40 @@ The ```name```, ```publisher```, ```version``` properties are used for specifyin
 
 The ```mandatoryPrefix``` and ```mandatorySuffix``` properties specify strings that must be prepended/appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
 
+## Example
+In the following example, we will configure AppSourceCop to validate that all new elements have a name that starts with a specified prefix.
+
+> NOTE
+> Make sure code analysis is enabled and ```${AppSourceCop}``` is in the list of enabled code analyzers.
+
+We start by creating the default "Hello world" extension.
+```
+pageextension 50100 CustomerListExt extends "Customer List"
+{
+    trigger OnOpenPage();
+    begin
+        begin
+            Message('App published: Hello world');
+        end;
+    end;
+}
+```
+
+We continue by adding the configuration file ```AppSourceCop.json``` in the project's root folder and setting its content to the following. 
+
+```
+{
+    "mandatoryPrefix": "Pre"
+}
+```
+
+You are immediately greeted by the following error message:
+```
+AS0011: The identifier 'CustomerListExt' must have the prefix 'Pre'.
+```
+
+Prepending **Pre** to the name of the page extension object will fix this error and prevent clashes between this page extension and page extensions added by other developers.
+
 ## See Also  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
