@@ -32,7 +32,7 @@ The value that will be associated with the specified key.
 *DataScope*
 Type: Text
 
-The scope of the data to retrieve. If a value is not passed in, the default value, DataScope::Module will be used. For more information, see [DataScope Data Type](datatypes/devenv-data-scope-type.md).
+The scope of the data to retrieve. If a value is not passed in, the default value, DataScope::Module will be used. For more information, see [DataScope Data Type](../datatypes/devenv-data-scope-type.md).
 
 ## Property Value/Return Value
 Type: Boolean
@@ -40,5 +40,5 @@ Type: Boolean
 **true** if the value was saved successfully, otherwise **false**.
 
 ## See Also  
-[DataScope Data Type](datatypes/devenv-data-scope-type.md)  
-[Isolated Storage](../developer/devenv-isolated-storage.md)
+[DataScope Data Type](../datatypes/devenv-data-scope-type.md)  
+[Isolated Storage](../../developer/devenv-isolated-storage.md)
