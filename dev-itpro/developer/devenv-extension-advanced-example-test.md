@@ -76,23 +76,6 @@ For more information, see [JSON Files](devenv-json-files.md).
 
 After setting the `dependencies` value, you will be prompted to download the symbols from the base project/package if they are not present.  
 
-
-+ Import symbols for the Test framework.  
-We do this by adding a `test` setting to the app.json file with the minimum supported value, for example: "test" : "11.0.0.0". 
-
-```
-Machine generated alternative text:
-  "screenshots": [],
-  "platform": "11.0.0.0",
-  "application": "11.0.0.0",
-  "test": "11.0.0.0",
-  "idRange": {
-    "from": 50100,
-    "to": 50149}
-```
-
-If the test symbol is not present, you will be prompted to download it. For more information, see [Symbols](devenv-symbols.md). 
-
 #### Application Test Toolkit 
 We will be using the Application Test Toolkit to automate and run the tests that we write. The toolkit includes: 
 

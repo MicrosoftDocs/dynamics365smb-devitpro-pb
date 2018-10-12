@@ -1,7 +1,7 @@
 ---
 title: "DateScope Data Type"
 ms.custom: na
-ms.date: 10/10/2018
+ms.date: 10/11/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,9 +12,9 @@ caps.latest.revision: 21
 author: SorenGP
 ---
 # DataScope Data Type
-Isolated Storage is a data storage that provides isolation between extensions, so that you can keep values in one extension from being accessed from other extensions. Data in the Isolated Storage is accessible through an API. The involved data type is DataScope.
+Isolated Storage is a data storage that provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions.
 
-The following scopes with which to remove the value with the given key are supported.  
+DataScope determines the area where the keys/values within the extension are accessible. The four areas are described below.  
 
 ## DATASCOPE::Module
 Values are accessible within the extension across the companies and users in one tenant.  
@@ -37,5 +37,6 @@ The methods supported for the DataScope data type are:
 [ISOLATEDSTORAGE.DELETE](../methods/devenv-isolated-storage-delete.md)  
 
 ## See Also  
+[Isolated Storage](../../developer/devenv-isolated-storage.md)  
 [AL Data types](devenv-al-data-types.md)  
 [AL Method Reference](../methods/devenv-al-method-reference.md)  
