@@ -78,7 +78,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 }
 ```
 
-We continue by adding the configuration file ```AppSourceCop.json``` to the root of the 
+We continue by adding the configuration file ```AppSourceCop.json``` in the project's root folder and setting its content to the following. 
 
 ```
 {
