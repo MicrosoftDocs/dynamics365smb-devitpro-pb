@@ -24,16 +24,19 @@ Along with defining other fields, the table extension is where you write trigger
 When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] , you will follow the code layout for a table extension as shown in the example below.
 
 > [!NOTE]  
-> Extension objects can have a name with a maximum length of 30 characters.      
+> Extension objects can have a name with a maximum length of 30 characters.
 
 ## Snippet support
+
 Typing the shortcut `ttableext` will create the basic layout for a table extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Properties
+
 Using a table extension allows you to overwrite some properties on fields in the base table. For a list of Table properties, see [Table and Table Extension Properties](properties/devenv-table-properties.md).
 
 ## Table extension example
-This table extension object extends the Customer table object by adding a field `ShoeSize`, with ID 70000900 and the data type `Integer`. It also contains a procedure to check if the `ShoeSize` field is filled in.
+
+This table extension object extends the Customer table object by adding a field `ShoeSize`, with ID 50116 and the data type `Integer`. It also contains a procedure to check if the `ShoeSize` field is filled in.
 
 ```
 tableextension 50115 RetailWinterSportsStore extends Customer
@@ -47,7 +50,7 @@ tableextension 50115 RetailWinterSportsStore extends Customer
                 if (rec.ShoeSize < 0) then
                 begin
                    message('Shoe size not valid: %1', rec.ShoeSize);
-                end;                    
+                end;
             end;
         }
     }
