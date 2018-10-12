@@ -4,7 +4,7 @@ hide_bc: true
 experimental: true
 experiment_id: "81ba5f65-59fb-4d"
 title: Business Applications Release Notes
-description: Find out what's new in Dynamics 365, Power BI, PowerApps, Microsoft Flow, Microsoft Stream, and more &mdash; including new features in sales, service, marketing, operations, finance, talent, and retail.
+description: 
 ms.topic: hub-page
 ms.date: 10/12/2018
 ms.service: "dynamics365-business-central"
@@ -25,7 +25,7 @@ The information in this document is being updated on a weekly base.
                     <a href="#products1" data-linktype="self-bookmark"></a>
                     <ul id="products1" class="cardsC cols cols3">
                         <li>
-                            <a href="" title="Materials for developers, architects, and engineers" data-linktype="absolute-path">
+                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for developers, architects, and engineers" data-linktype="absolute-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -44,7 +44,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li>
                         <li>
-                            <a href="" title="Materials for application consultants" data-linktype="absolute-path">
+                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for application consultants" data-linktype="absolute-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -63,7 +63,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li>
                         <li>
-                            <a href="" title="Materials for presales roles" data-linktype="absolute-path">
+                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for presales roles" data-linktype="absolute-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -82,7 +82,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li> 
                         <li>
-                            <a href="" title="Materials for sales roles" data-linktype="absolute-path">
+                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for sales roles" data-linktype="absolute-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -101,7 +101,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li> 
                         <li>
-                            <a href="" title="Materials for marketeers" data-linktype="absolute-path">
+                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for marketeers" data-linktype="absolute-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -120,7 +120,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li> 
                         <li>
-                            <a href="" title="Materials for business decision makers" data-linktype="absolute-path">
+                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for business decision makers" data-linktype="absolute-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
