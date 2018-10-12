@@ -25,7 +25,7 @@ The information in this document is being updated on a weekly base.
                     <a href="#products1" data-linktype="self-bookmark"></a>
                     <ul id="products1" class="cardsC cols cols3">
                         <li>
-                            <a href="October18/index" title="Materials for developers, architects and engineers" data-linktype="absolute-path">
+                            <a href="" title="Materials for developers, architects, and engineers" data-linktype="absolute-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -35,8 +35,8 @@ The information in this document is being updated on a weekly base.
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>October '18</h3>
-						    <p>Covers new features releasing from October 2018 through March 2019.</p>
+                                                <h3>Materials for developers, architects, and engineers</h3>
+						    <p>The “Ready to Go” Online learning for developers, architects, and engineers.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -44,7 +44,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li>
                         <li>
-                            <a href="April18/index" title="Materials for application consultants" data-linktype="absolute-path">
+                            <a href="" title="Materials for application consultants" data-linktype="absolute-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -54,15 +54,90 @@ The information in this document is being updated on a weekly base.
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Spring '18</h3>
-												<p>Platform advances, deeper integrations, more insights and intelligence &mdash; plus a host of new capabilities to help you transform your business.</p>
+                                                <h3>Materials for application consultants</h3>
+												<p>The “Ready to Go” Online learning for application consultants.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </li>
-                 
+                        <li>
+                            <a href="" title="Materials for presales roles" data-linktype="absolute-path">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img data-scaleimage="media/spring.png" src="media/spring.png" alt="" data-linktype="relative-path">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Materials for pre-sales roles</h3>
+												<p>The “Ready to Go” Online learning for pre-sales.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="" title="Materials for sales roles" data-linktype="absolute-path">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img data-scaleimage="media/spring.png" src="media/spring.png" alt="" data-linktype="relative-path">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Materials for sales roles</h3>
+												<p>The “Ready to Go” Online learning for sales.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="" title="Materials for marketeers" data-linktype="absolute-path">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img data-scaleimage="media/spring.png" src="media/spring.png" alt="" data-linktype="relative-path">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Materials for marketeers</h3>
+												<p>The “Ready to Go” Online learning for marketeers.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="" title="Materials for business decision makers" data-linktype="absolute-path">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img data-scaleimage="media/spring.png" src="media/spring.png" alt="" data-linktype="relative-path">
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Materials for business decision makers</h3>
+												<p>The “Ready to Go” Online learning for business decision makers.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li> 
                     </ul>
                 </li>
             </ul>
