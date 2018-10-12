@@ -20,11 +20,11 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |Country|Language Code|
 |-------|-------------|
 |US|en-US|
-|Canada|en-CA </br>fr-CA|
+|Canada|en-CA <br>fr-CA|
 |UK|en-GB|
 |Austria|de-AT|
-|Belgium|nl-BE</br>fr-BE|
-|Switzerland|fr-CH</br>de-CH </br>it-CH|
+|Belgium|nl-BE<br>fr-BE|
+|Switzerland|fr-CH<br>de-CH <br>it-CH|
 |Germany|de-DE|
 |Denmark|da-DK|
 |Netherlands|nl-NL|
