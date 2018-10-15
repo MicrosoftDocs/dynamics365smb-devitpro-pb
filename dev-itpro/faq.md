@@ -41,6 +41,6 @@ Yes, you can. As a partner you have access to the Dynamics Learning Portal, wher
 
 ## See Also
 
-[FAQ for Developing in AL](/developer/devenv-dev-faq.md)  
+[FAQ for Developing in AL](/dynamics365/business-central/developer/devenv-dev-faq.md)  
 [Welcome to [!INCLUDE[prodlong](includes/prodlong.md)]](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Documentation](/dynamics365/index)  
