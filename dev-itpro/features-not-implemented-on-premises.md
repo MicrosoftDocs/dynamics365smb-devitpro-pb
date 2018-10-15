@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/11/2018
+ms.date: 10/15/2018
 ---
 # Features not implemented in on-premises deployments of [!INCLUDE[prodlong](includes/prodlong.md)]
 
@@ -28,7 +28,7 @@ The following features are not available in all on-premises deployments because 
 |Excel financial reports | The Excel add-in that is used with the predefined Excel-based financial reports requires Azure Active Directory as the authentication mechanism.  |
 |Coversheets for contact management |The integration with Word to create the coversheets requires Azure Active Directory as the authentication mechanism. |
 |Built-in Power BI reports and charts |The integration with Power BI requires Azure Active Directory as the authentication mechanism. |
-|Built-in Microsoft Flow Management |The integration with Microsoft Flow requires Azure Active Directory as the authentication mechanism.  |
+|Built-in Microsoft Flow Management |You can use the built-in workflows in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)], provided that you connect to Microsoft Flow using Azure Active Directory as the authentication mechanism. |
 |Built-in web services |A number pages and queries are exposed as web services. However, the default endpoint must be manually updated before the web services can be consumed. |
 |Outlook add-in  |The Outlook add-in requires Dynamics NAV User/Password or Azure Active Directory as the authentication mechanism. |
 |Standard REST API | [!INCLUDE[prodshort](includes/prodshort.md)] contains new standard REST APIs. However, on-premises deployments cannot be reached through Microsoft Graph or the common endpoint, `https://api.businesscentral.dynamics.com/v1.0/api/beta`. Instead, you must connect directly to the on-premises deployment, just as when you connect to web services. |
@@ -45,7 +45,7 @@ The following features are not intended for use in on-premises deployments. Ther
 |Inviting the external accountant |Integration with [!INCLUDE[d365acc_long](includes/d365acc_long_md.md)] is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
 |Default Power BI reports |Automatic deployment and configuration of Power BI reports is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
 |Bulk Invoicing from Microsoft Bookings |Integration with the Bookings app in Office Business Premium is not supported.  |
-|Create workflow from Flow |Microsoft Flow does not integrate with on-premises workflow functionality.  |
+|Create workflow from Flow |Microsoft Flow does not integrate with on-premises workflow functionality. You cannot create new workflows based on existing Microsoft Flow templates in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)]. |
 |Sandbox environments  |The sandbox environment that you can use to develop extensions against for the new developer experience cannot connect to an on-premises deployment. For more information, see [Get started with the Container Sandbox Development Environment](/developer/devenv-get-started-container-sandbox.md). |
 |In-product search |In online deployments of [!INCLUDE[prodshort](includes/prodshort.md)], Tell Me, the in-product search, also searches in content on the docs.microsoft.com site. For on-premises deployments, this is not supported.  |
 |Late Payment Prediction|The Late Payment Prediction functionality is not supported in on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)].  |
