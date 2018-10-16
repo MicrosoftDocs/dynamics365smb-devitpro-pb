@@ -40,8 +40,8 @@ Type: Boolean
 **true** if the value was saved successfully, otherwise **false**.
 
 ## See Also  
-[ISOLATEDSTORAGE.SET Method](methods/devenv-isolated-storage-set.md)  
-[ISOLATEDSTORAGE.DELETE Method](methods/devenv-isolated-storage-delete.md)  
-[ISOLATEDSTORAGE.CONTAINS Method](methods/devenv-isolated-storage-contains.md)
+[ISOLATEDSTORAGE.SET Method](devenv-isolated-storage-set.md)  
+[ISOLATEDSTORAGE.DELETE Method](devenv-isolated-storage-delete.md)  
+[ISOLATEDSTORAGE.CONTAINS Method](devenv-isolated-storage-contains.md)
 [DataScope Data Type](../datatypes/devenv-data-scope-type.md)  
 [Isolated Storage](../../developer/devenv-isolated-storage.md)

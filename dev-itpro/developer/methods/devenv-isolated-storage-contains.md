@@ -40,8 +40,8 @@ Type: Boolean
 **true** if a value with the specified key exists in the storage, otherwise **false**.
 
 ## See Also  
-[ISOLATEDSTORAGE.SET Method](methods/devenv-isolated-storage-set.md)  
-[ISOLATEDSTORAGE.GET Method](methods/devenv-isolated-storage-get.md)  
-[ISOLATEDSTORAGE.DELETE Method](methods/devenv-isolated-storage-delete.md)  
+[ISOLATEDSTORAGE.SET Method](devenv-isolated-storage-set.md)  
+[ISOLATEDSTORAGE.GET Method](devenv-isolated-storage-get.md)  
+[ISOLATEDSTORAGE.DELETE Method](devenv-isolated-storage-delete.md)  
 [DataScope Data Type](../datatypes/devenv-data-scope-type.md)  
 [Isolated Storage](../../developer/devenv-isolated-storage.md)

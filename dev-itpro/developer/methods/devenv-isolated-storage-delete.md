@@ -40,8 +40,8 @@ Type: Boolean
 **true** if the value with the given key was successfully deleted from isolated storage, otherwise **false**.
 
 ## See Also  
-[ISOLATEDSTORAGE.SET Method](methods/devenv-isolated-storage-set.md)  
-[ISOLATEDSTORAGE.GET Method](methods/devenv-isolated-storage-get.md)  
-[ISOLATEDSTORAGE.CONTAINS Method](methods/devenv-isolated-storage-contains.md)  
+[ISOLATEDSTORAGE.SET Method](devenv-isolated-storage-set.md)  
+[ISOLATEDSTORAGE.GET Method](devenv-isolated-storage-get.md)  
+[ISOLATEDSTORAGE.CONTAINS Method](devenv-isolated-storage-contains.md)  
 [DataScope Data Type](../datatypes/devenv-data-scope-type.md)  
 [Isolated Storage](../../developer/devenv-isolated-storage.md)  
