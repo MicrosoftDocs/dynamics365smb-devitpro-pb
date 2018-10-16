@@ -1,7 +1,7 @@
 ---
 title: "ISOLATEDSTORAGE.DELETE Method"
 ms.custom: na
-ms.date: 10/11/2018
+ms.date: 10/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,5 +40,8 @@ Type: Boolean
 **true** if the value with the given key was successfully deleted from isolated storage, otherwise **false**.
 
 ## See Also  
+[ISOLATEDSTORAGE.SET Method](methods/devenv-isolated-storage-set.md)  
+[ISOLATEDSTORAGE.GET Method](methods/devenv-isolated-storage-get.md)  
+[ISOLATEDSTORAGE.CONTAINS Method](methods/devenv-isolated-storage-contains.md)  
 [DataScope Data Type](../datatypes/devenv-data-scope-type.md)  
 [Isolated Storage](../../developer/devenv-isolated-storage.md)  

@@ -1,7 +1,7 @@
 ---
 title: "ISOLATEDSTORAGE.GET Method"
 ms.custom: na
-ms.date: 10/11/2018
+ms.date: 10/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,5 +40,8 @@ Type: Boolean
 **true** if the value was saved successfully, otherwise **false**.
 
 ## See Also  
+[ISOLATEDSTORAGE.SET Method](methods/devenv-isolated-storage-set.md)  
+[ISOLATEDSTORAGE.DELETE Method](methods/devenv-isolated-storage-delete.md)  
+[ISOLATEDSTORAGE.CONTAINS Method](methods/devenv-isolated-storage-contains.md)
 [DataScope Data Type](../datatypes/devenv-data-scope-type.md)  
 [Isolated Storage](../../developer/devenv-isolated-storage.md)

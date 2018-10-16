@@ -1,7 +1,7 @@
 ---
 title: "ISOLATEDSTORAGE.CONTAINS Method"
 ms.custom: na
-ms.date: 10/11/2018
+ms.date: 10/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,5 +40,8 @@ Type: Boolean
 **true** if a value with the specified key exists in the storage, otherwise **false**.
 
 ## See Also  
+[ISOLATEDSTORAGE.SET Method](methods/devenv-isolated-storage-set.md)  
+[ISOLATEDSTORAGE.GET Method](methods/devenv-isolated-storage-get.md)  
+[ISOLATEDSTORAGE.DELETE Method](methods/devenv-isolated-storage-delete.md)  
 [DataScope Data Type](../datatypes/devenv-data-scope-type.md)  
 [Isolated Storage](../../developer/devenv-isolated-storage.md)
