@@ -3,7 +3,7 @@ title: "Ready to Go"
 description: "The Ready to Go program contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/16/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,14 +17,14 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 
 ![ReadyToGo Banner](../media/readytogo-banner.png)
 
-[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions. 
+[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions.  
 
-[!INCLUDE[prodshort](../../includes/prodshort.md)] creates multiple [opportunities for partners to provide apps or consulting services](https://aka.ms/businesscentralapps) on Microsoft AppSource.
+[!INCLUDE[prodshort](../includes/prodshort.md)] creates multiple [opportunities for partners to provide apps or consulting services](https://aka.ms/businesscentralapps) on Microsoft AppSource.
 
 The “Ready to Go” program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. Use the tabs below to read more about the elements of the "Ready to Go" program.
 
 # [Learning](#tab/learning)
-**The "Ready to Go" learning catalog** is an extensive collection of materials for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], including training resources, white papers, and tools for both app developers (ISVs) as well as resellers (VARs). It is designed for marketeers, business decision makers, sales and pre-sales roles, architects, consultants, and developers. [Access the "Ready to Go" online learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101).
+**The "Ready to Go" learning catalog** is an extensive collection of materials for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], including training resources, white papers, and tools for both app developers (ISVs) as well as resellers (VARs). It is designed for marketeers, business decision makers, sales and pre-sales roles, architects, consultants, and developers. [Access the "Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101).
 
 # [Coaching](#tab/coaching)
 Several Development Centers, Master VARs, and Training Centers provide **“Ready to Go” coaching**.
@@ -52,11 +52,14 @@ The platform also enables you to provide direct feedback to the Microsoft engine
 To get access to the available builds on the platform you need to follow the instructions stipulated in the documentation on [Getting you started with Add-on Apps](https://go.microsoft.com/fwlink/?linkid=869734) and [Getting you started with Connect Apps](https://go.microsoft.com/fwlink/?linkid=2005501).
 
 # [Resources](#tab/resources)
+### The “Dynamics 365 Business Central for Partners” blog
+The blog talks about opportunities, processes, programs, and tools for the Business Central partner community. Follow the blog here: [https://community.dynamics.com/business/b/businesscentraldevitpro](https://community.dynamics.com/business/b/businesscentraldevitpro)
+
 ### Monthly “Ready to Go” Office Hours call
 “Ready to Go” Office Hours is a monthly call that takes place the second Tuesday of every month. The call is structured as a FAQ session, where a team of our different experts will be present to answer any questions that you may have in relation to bringing your offerings into AppSource. Sign up here: [aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours).
 
 ### GitHub
-Use the GitHub forum to post questions about AL to the community and Microsoft experts here [http://github.com/microsoft/al/issues](http://github.com/microsoft/al/issues).
+Use the GitHub forum to post questions about AL to the community and Microsoft experts here: [http://github.com/microsoft/al/issues](http://github.com/microsoft/al/issues).
 
 ### Follow “Ready to Go” activity on social media
 Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prodshort.md)]. Follow us on [Twitter](https://twitter.com/search?q=%23ReadyToGo%20%23MSDYN365BC&src=typd) and [LinkedIn](https://www.linkedin.com/search/results/content/v2/?keywords=%23MSDYN365BC%20%23READYTOGO&origin=GLOBAL_SEARCH_HEADER).
