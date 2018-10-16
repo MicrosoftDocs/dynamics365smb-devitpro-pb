@@ -21,7 +21,10 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 
 [!INCLUDE[prodshort](../includes/prodshort.md)] creates multiple [opportunities for partners to provide apps or consulting services](https://aka.ms/businesscentralapps) on Microsoft AppSource.
 
-The “Ready to Go” program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. Use the tabs below to read more about the elements of the "Ready to Go" program.
+The “Ready to Go” program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. Use the tabs below to read more about the elements of the "Ready to Go" program.  
+
+> [!TIP]
+> Keep on top of tips, tools, and new capabilities by following us on the [Business Central for partners](https://community.dynamics.com/business/b/businesscentraldevitpro) blog.
 
 # [Learning](#tab/learning)
 **The "Ready to Go" learning catalog** is an extensive collection of materials for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], including training resources, white papers, and tools for both app developers (ISVs) as well as resellers (VARs). It is designed for marketeers, business decision makers, sales and pre-sales roles, architects, consultants, and developers. [Access the "Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101).
@@ -77,6 +80,6 @@ Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prod
 + [Whitepaper 1: Getting you started with Business Central Connect apps](https://go.microsoft.com/fwlink/?linkid=2005501)  
 + [Whitepaper 2: Developing and publishing Business Central Connect apps](https://go.microsoft.com/fwlink/?linkid=2005402)
 
-### Online learning catalog
-+ ["Ready to Go" online learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
+### Learning catalog
++ ["Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
 
