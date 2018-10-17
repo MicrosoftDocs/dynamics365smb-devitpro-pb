@@ -2,7 +2,7 @@
 title: "NewPagePerRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # NewPagePerRecord Method
 Gets or sets the current setting of the NewPagePerRecord property.
 
@@ -28,13 +28,13 @@ Gets or sets the current setting of the NewPagePerRecord property.
 An instance of the [Report](report-data-type.md) data type.  
 
 *SetNewPagePerRecord*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The new setting of the NewPagePerRecord property.  
 
 
 ## Return Value
 *IsNewPagePerRecord*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The setting of the NewPagePerRecord property.  
 
 

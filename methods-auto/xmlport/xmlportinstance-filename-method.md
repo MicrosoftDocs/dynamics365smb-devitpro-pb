@@ -2,7 +2,7 @@
 title: "Filename Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/30/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Filename Method
 Gets the current value of the FileName Property of an XmlPort and sets this property to a new value.
 
@@ -28,13 +28,13 @@ Gets the current value of the FileName Property of an XmlPort and sets this prop
 An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The new file name.  
 
 
 ## Return Value
 *FileName*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The current value of the FileName Property of an XmlPort.  
 
 

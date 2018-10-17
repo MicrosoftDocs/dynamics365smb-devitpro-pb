@@ -2,7 +2,7 @@
 title: "AsXmlDocument Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/30/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AsXmlDocument Method
 Converts the node to an XmlDocument node. The operation will fail if the node is not an XmlDocument.
 
@@ -28,7 +28,7 @@ An instance of the [XmlNode](xmlnode-data-type.md) data type.
 
 ## Return Value
 *XmlDocument*  
-&emsp;Type: [XmlDocument](xmldocument-data-type.md)  
+&emsp;Type: [XmlDocument](../xmldocument/xmldocument-data-type.md)  
 An XmlDocument value that references the current XmlNode.  
 
 

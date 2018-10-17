@@ -2,7 +2,7 @@
 title: "GetBaseAddress Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetBaseAddress Method
 Gets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.
 
@@ -30,7 +30,7 @@ An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 ## Return Value
 *CurrentBaseAddress*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The base address of URI of the Internet resource used when sending requests.  
 
 

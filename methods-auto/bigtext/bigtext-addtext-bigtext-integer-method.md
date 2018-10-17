@@ -2,7 +2,7 @@
 title: "AddText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AddText Method
 Adds a text string to a BigText variable.
 
@@ -30,7 +30,7 @@ An instance of the [BigText](bigtext-data-type.md) data type.
 The string that will be added to the BigText variable. If this parameter is empty, then the BigText variable is not modified.
         
 *Position*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 This is an optional parameter that defines the position in the BigText variable where the string is inserted. If this parameter is omitted, then the string is added at the end of the BigText variable. If this parameter is less than one, then a run-time error occurs. If this parameter is greater than the length of the BigText variable, then the string is added at the end of the BigText variable.  
 
 

@@ -2,7 +2,7 @@
 title: "RDLCLayout Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RDLCLayout Method
 Gets the RDLC layout that is used on a report and returns it as a data stream.The function has an instance call and a static call. The following code shows the syntax of the RDLC function. The first line of code is the syntax for an instance function call. The second line of code is the syntax for a static function call.
 
@@ -26,16 +26,15 @@ Gets the RDLC layout that is used on a report and returns it as a data stream.Th
 An instance of the [Report](report-data-type.md) data type.  
 
 *InStream*  
-&emsp;Type: [InStream](instream-data-type.md)  
+&emsp;Type: [InStream](../instream/instream-data-type.md)  
 The variable in which to return the RDLC layout.
           
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

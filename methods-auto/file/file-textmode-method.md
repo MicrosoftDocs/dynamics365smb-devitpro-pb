@@ -2,7 +2,7 @@
 title: "TextMode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TextMode Method
 Sets whether a file should be opened as an ASCII file or a binary file. Gets the current setting of this option for a file.
 
@@ -30,13 +30,13 @@ Sets whether a file should be opened as an ASCII file or a binary file. Gets the
 An instance of the [File](file-data-type.md) data type.  
 
 *Mode*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
 
 
 ## Return Value
 *Textmode*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
 
 

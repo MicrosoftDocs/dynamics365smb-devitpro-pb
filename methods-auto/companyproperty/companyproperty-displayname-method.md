@@ -2,7 +2,7 @@
 title: "DisplayName Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DisplayName Method
 Gets the current company display name.
 
@@ -24,7 +24,7 @@ DisplayName :=   CompanyProperty.DisplayName()
 
 ## Return Value
 *DisplayName*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The display name of the company as specified in the **Display Name** field in the **Company** table. If no display name is specified, the company name that is stored in the **Name** field is returned.   
 
 

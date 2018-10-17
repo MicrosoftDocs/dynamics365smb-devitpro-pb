@@ -2,7 +2,7 @@
 title: "GetPosition Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetPosition Method
 Gets a string that contains the primary key of the current record.
 
@@ -26,14 +26,14 @@ String :=   RecordRef.GetPosition([UseNames: Boolean])
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *UseNames*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Indicates whether a reference to the field caption or the field number should be returned. The UseCaptions parameter is optional. If it is set to true (default value) or if it is empty, then the returned string contains references to field captions in the table with which the record is associated. If the parameter is set to false, then field numbers are used instead.
           
 
 
 ## Return Value
 *String*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name or number of the field that contains the primary key.  
 
 

@@ -2,7 +2,7 @@
 title: "Ascending Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Ascending Method
 Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed.
 
@@ -28,13 +28,13 @@ Changes or checks the order in which a search through the table that is referred
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *SetAscending*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If this parameter is true, it will search in ascending order. If this parameter is false, it will search in descending order. If you do not specify this parameter, it will check the search order.  
 
 
 ## Return Value
 *IsAscending*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies the order in which a search will be performed.  
 
 

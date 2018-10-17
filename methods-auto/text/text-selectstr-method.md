@@ -2,7 +2,7 @@
 title: "SelectStr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SelectStr Method
 Retrieves a substring from a comma-separated string.
 
@@ -24,17 +24,17 @@ NewString :=   Text.SelectStr(Number: Integer, CommaString: String)
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Number*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies which substring to retrieve. The substrings in the comma-separated string are numbered 1, 2, 3, and so on. If Number is greater than the actual number of substrings, then a run-time error occurs.
         
 *CommaString*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 A string that contains substrings separated by commas. The maximum length of this string is 391 characters.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The substring from the comma-separated string at the index specified.  
 
 

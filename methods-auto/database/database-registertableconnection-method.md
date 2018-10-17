@@ -2,7 +2,7 @@
 title: "RegisterTableConnection Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RegisterTableConnection Method
 Registers a table connection to an external database.
 
@@ -24,15 +24,15 @@ Registers a table connection to an external database.
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Type*  
-&emsp;Type: [TableConnectionType](tableconnectiontype-option.md)  
+&emsp;Type: [TableConnectionType](../tableconnectiontype/tableconnectiontype-option.md)  
 Specifies the type of table connection as defined in the TableType property.
         
 *Name*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 Specifies the name of the connection in your code, or the name of the primary key field on the table.
         
 *Connection*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 Specifies the connection to the external database.  
 
 

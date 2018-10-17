@@ -2,7 +2,7 @@
 title: "Random Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Random Method
 Returns a pseudo-random number.
 
@@ -24,13 +24,13 @@ Number :=   System.Random(MaxNumber: Integer)
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *MaxNumber*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The largest acceptable number. In effect, you are setting a range from one (1) to the number that you specify with the MaxNumber parameter.  
 
 
 ## Return Value
 *Number*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
   
 
 

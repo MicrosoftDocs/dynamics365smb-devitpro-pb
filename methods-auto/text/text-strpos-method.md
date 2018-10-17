@@ -2,7 +2,7 @@
 title: "StrPos Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # StrPos Method
 Searches for the first occurrence of substring inside a string.
 
@@ -24,17 +24,17 @@ Position :=   Text.StrPos(String: String, SubString: String)
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *String*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The string in which you want to search.
         
 *SubString*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The substring for which you want to search.  
 
 
 ## Return Value
 *Position*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based index of the first occurence of the substring inside the string.  
 
 

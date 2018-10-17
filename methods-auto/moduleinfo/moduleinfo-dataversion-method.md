@@ -2,7 +2,7 @@
 title: "DataVersion Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DataVersion Method
 Gets the version of the specified application's data in the context of a given tenant. This indicates the last version that was installed or successfully upgraded to and will not match the application version if the tenant is in a data upgrade pending state.
 
@@ -30,7 +30,7 @@ An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.
 
 ## Return Value
 *DataVersion*  
-&emsp;Type: [Version](version-data-type.md)  
+&emsp;Type: [Version](../version/version-data-type.md)  
 The version  
 
 

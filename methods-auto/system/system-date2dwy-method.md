@@ -2,7 +2,7 @@
 title: "Date2DWY Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Date2DWY Method
 Gets the day of the week, week number, or year of a Date Data Type.
 
@@ -24,16 +24,16 @@ Number :=   System.Date2DWY(Date: Date, Value: Integer)
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Date*  
-&emsp;Type: [Date](date-data-type.md)  
+&emsp;Type: [Date](../date/date-data-type.md)  
 The input date.  
 *Value*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
   
 
 
 ## Return Value
 *Number*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
   
 
 

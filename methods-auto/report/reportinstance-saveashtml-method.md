@@ -2,7 +2,7 @@
 title: "SaveAsHtml Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SaveAsHtml Method
 Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. > This function is only supported when a report uses a Word report layout when it is run.
 
@@ -26,16 +26,15 @@ Saves a report as an HTML file. The file is saved on the computer where the serv
 An instance of the [Report](report-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The folder path and name of the file that you want to save the report as. The path must already exist and the service (login) account that is used by the server instance must have permission to write to the target folder. Otherwise, you will get errors.
           
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

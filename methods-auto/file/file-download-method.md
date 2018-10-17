@@ -2,7 +2,7 @@
 title: "Download Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Download Method
 Sends a file from a server computer to the client computer. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.
 
@@ -24,31 +24,30 @@ Sends a file from a server computer to the client computer. The client computer 
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *FromFile*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the file on the server computer that you want to download to the client computer.
         
 *DialogTitle*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The title that you want to display in the dialog box for downloading the file. This parameter is not supported by the web client. The title is determined by the end-user's browser.
           
 *ToFolder*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The default folder in which to save the file to be downloaded. The folder name is displayed in the dialog box for downloading the file. The folder can be changed by the user. This parameter is not supported by the web client. By default, the files are saved to the default download location that is configured in the end-user's browser.
           
 *ToFilter*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The type of file that can be downloaded to the client computer. The type is displayed in the dialog box for downloading the file. This parameter is not supported by the web client.
           
 *ToFile*  
-&emsp;Type: [Text](text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name to give the downloaded file. This is the default file name that is shown in the dialog box for downloading the file. This value can be changed by the user.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

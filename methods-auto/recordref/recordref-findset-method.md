@@ -2,7 +2,7 @@
 title: "FindSet Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FindSet Method
 Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.
 
@@ -26,20 +26,19 @@ Finds a set of records in a table based on the current key and filter. FINDSET c
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *ForUpdate*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Set this parameter to false if you do not want to modify any records in the set. Set this parameter to true if you want to modify records in the set. If you set this parameter to true, the LOCKTABLE function (RecordRef) is immediately performed on the table before the records are read.
           
 *UpdateKey*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 This parameter only applies if ForUpdate is true. If you are going to modify any field value within the current key, set this parameter to true.
           
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

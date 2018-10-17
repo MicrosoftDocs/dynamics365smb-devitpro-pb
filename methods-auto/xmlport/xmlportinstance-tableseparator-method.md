@@ -2,7 +2,7 @@
 title: "TableSeparator Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/30/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TableSeparator Method
 Gets and sets the TableSeparator used when running, importing or exporting the XmlPort.
 
@@ -28,13 +28,13 @@ Gets and sets the TableSeparator used when running, importing or exporting the X
 An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *Separator*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The new value of the TableSeparator.  
 
 
 ## Return Value
 *Separator*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The TableSeparator used when running, importing or exporting the XmlPort.  
 
 

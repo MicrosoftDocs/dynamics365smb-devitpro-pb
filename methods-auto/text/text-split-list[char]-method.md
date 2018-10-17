@@ -2,7 +2,7 @@
 title: "Split Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Split Method
 Splits a string into a maximum number of substrings based on a collection of separators.
 
@@ -28,13 +28,13 @@ Result :=   Text.Split(Separators: List of [Char])
 An instance of the [Text](text-data-type.md) data type.  
 
 *Separators*  
-&emsp;Type: [List of [Char]](list-data-type.md)  
+&emsp;Type: [List of [Char]](../list/list-data-type.md)  
 A collection of separators that delimit the substrings in this string.  
 
 
 ## Return Value
 *Result*  
-&emsp;Type: [List of [Text]](list-data-type.md)  
+&emsp;Type: [List of [Text]](../list/list-data-type.md)  
 The collection of substrings from the original string based on the collection of separators.  
 
 

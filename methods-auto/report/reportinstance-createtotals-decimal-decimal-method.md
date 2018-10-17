@@ -2,7 +2,7 @@
 title: "CreateTotals Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CreateTotals Method
 Maintains totals for a variable in AL.
 
@@ -26,11 +26,11 @@ Maintains totals for a variable in AL.
 An instance of the [Report](report-data-type.md) data type.  
 
 *Var1*  
-&emsp;Type: [Decimal](decimal-data-type.md)  
+&emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 Variable for which the system will maintain the total.
         
 *Var2*  
-&emsp;Type: [Decimal](decimal-data-type.md)  
+&emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 Variable for which the system will maintain the total.  
 
 

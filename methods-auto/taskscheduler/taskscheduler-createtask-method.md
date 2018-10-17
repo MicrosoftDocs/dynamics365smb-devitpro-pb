@@ -2,7 +2,7 @@
 title: "CreateTask Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CreateTask Method
 Adds a task to run a codeunit at a specific time.
 
@@ -22,34 +22,34 @@ Adds a task to run a codeunit at a specific time.
 ```
 ## Parameters
 *CodeunitId*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies the ID of the codeunit to run.
           
 *FailureCodeunitId*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
  Specifies the ID of the codeunit to run if the task fails. If you do not want to provide a failure codeunit, then use 0.
           
 *IsReady*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Sets the task to the ready state. A task cannot run unless it is ready.
           
 *Company*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 Specifies the company to run the task for. If you do not specify a company, the task will run in the user’s current company.
           
 *NotBefore*  
-&emsp;Type: [DateTime](datetime-data-type.md)  
+&emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
 Specifies the date and time that you want to run the task. When the task actually runs will depend on whether other tasks are running at the same time. The task will run the first opportunity on or after the date and time that you specify.
           
 *RecordID*  
-&emsp;Type: [RecordId](recordid-data-type.md)  
+&emsp;Type: [RecordId](../recordid/recordid-data-type.md)  
 Specifies the recordID of the record that you want to run the task on.
           
 
 
 ## Return Value
 *Task*  
-&emsp;Type: [Guid](guid-data-type.md)  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
   
 
 

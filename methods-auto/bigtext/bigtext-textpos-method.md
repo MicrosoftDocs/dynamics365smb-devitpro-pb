@@ -2,7 +2,7 @@
 title: "TextPos Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TextPos Method
 Gets the position at which a specific string first occurs in this BigText instance.
 
@@ -26,14 +26,14 @@ Position :=   BigText.TextPos(String: String)
 An instance of the [BigText](bigtext-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The text string to search for in the BigText variable. If this parameter is empty, then 0 is returned.
         
 
 
 ## Return Value
 *Position*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The position at which a specific string first occurs in this BigText instance.  
 
 

@@ -2,7 +2,7 @@
 title: "SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SetFilter Method
 Sets a filter on a column of a query to limit the records in the resulting data set of a query.
 
@@ -26,15 +26,15 @@ Sets a filter on a column of a query to limit the records in the resulting data 
 An instance of the [Query](query-data-type.md) data type.  
 
 *Column*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 The name of the column in the query that you want to filter. The name is defined by the column's Name Property.
         
 *String*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, >, \, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
         
 *Value*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 Replacement values to insert in replacement fields in the filter expression. The data type of Value must match the data type of field that is referred to by the ColumnName.  
 
 

@@ -2,7 +2,7 @@
 title: "DaTi2Variant Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DaTi2Variant Method
 Creates a variant that contains an encapsulation of a COM VT\_DATE.
 
@@ -24,17 +24,17 @@ Variant :=   System.DaTi2Variant(Date: Date, Time: Time)
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Date*  
-&emsp;Type: [Date](date-data-type.md)  
+&emsp;Type: [Date](../date/date-data-type.md)  
 The input date.
         
 *Time*  
-&emsp;Type: [Time](time-data-type.md)  
+&emsp;Type: [Time](../time/time-data-type.md)  
 The input time.  
 
 
 ## Return Value
 *Variant*  
-&emsp;Type: [Variant](variant-data-type.md)  
+&emsp;Type: [Variant](../variant/variant-data-type.md)  
   
 
 

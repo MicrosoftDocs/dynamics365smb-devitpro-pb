@@ -2,7 +2,7 @@
 title: "Clear Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Clear Method
 Clears the value of a single variable. Also clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.
 
@@ -24,7 +24,7 @@ Clears the value of a single variable. Also clears all the filters that were set
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Variable*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 The identifier (variable) of any AL data type, including simple and composite data types. The following rules apply when you run the CLEAR function:
 -   A number variable is set to 0 (zero)
 -   A string variable is set to empty string

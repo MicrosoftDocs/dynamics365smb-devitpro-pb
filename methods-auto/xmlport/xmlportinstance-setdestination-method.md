@@ -2,7 +2,7 @@
 title: "SetDestination Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/30/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SetDestination Method
 Sets the destination OutStream of the XmlPort.
 
@@ -28,7 +28,7 @@ Sets the destination OutStream of the XmlPort.
 An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *OutStream*  
-&emsp;Type: [OutStream](outstream-data-type.md)  
+&emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
 The new destination OutStream of the XmlPort.  
 
 

@@ -2,7 +2,7 @@
 title: "FieldCaption Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldCaption Method
 Gets the current caption of the specified field as a string.
 
@@ -26,14 +26,14 @@ Caption :=   Table.FieldCaption(Field: Any)
 An instance of the [Table](table-data-type.md) data type.  
 
 *Field*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 The field for which you want to retrieve the caption.
           
 
 
 ## Return Value
 *Caption*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
   
 
 

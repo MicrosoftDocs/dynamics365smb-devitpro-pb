@@ -2,7 +2,7 @@
 title: "CalcDate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CalcDate Method
 Calculates a new date that is based on a date expression and a reference date.
 
@@ -24,7 +24,7 @@ NewDate :=   System.CalcDate(DateExpression: String, [Date: Date])
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *DateExpression*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The date expression can be any length. The string is interpreted from left to right with one subexpression at a time. The following rules describe the valid syntax of date expressions:
 -   DateExpression = [<Subexpression>][<Subexpression>][<Subexpression>]
 -   <Subexpression> = [<Sign>] <Term>-   <Sign> = + | -
@@ -39,13 +39,13 @@ These production rules show that date expressions consist of zero, one, two, or 
 The internal calendar starts on Monday and ends on Sunday. This means that Monday is weekday 1 and Sunday is weekday 7. A run-time error occurs if the syntax of DateExpression is incorrect.
           
 *Date*  
-&emsp;Type: [Date](date-data-type.md)  
+&emsp;Type: [Date](../date/date-data-type.md)  
 Use this optional parameter to define a reference date. The default is the current system date. If you omit this optional value, the current system date is used.  
 
 
 ## Return Value
 *NewDate*  
-&emsp;Type: [Date](date-data-type.md)  
+&emsp;Type: [Date](../date/date-data-type.md)  
   
 
 

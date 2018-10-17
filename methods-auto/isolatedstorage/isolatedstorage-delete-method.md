@@ -2,7 +2,7 @@
 title: "Delete Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Delete Method
 Deletes the value with the specified key from the isolated storage.
 
@@ -22,19 +22,18 @@ Deletes the value with the specified key from the isolated storage.
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The key of the value to remove.
         
 *DataScope*  
-&emsp;Type: [DataScope](datascope-option.md)  
+&emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope from which to remove the value with the given key. If a value is not passed in, the default value DataScope::Module will be used.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-**true** if the value with the given key was successfully deleted from isolated storage, otherwise **false**.  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the value with the given key was successfully deleted from isolated storage, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

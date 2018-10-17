@@ -2,7 +2,7 @@
 title: "WordXmlPart Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # WordXmlPart Method
 Gets the report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
@@ -26,7 +26,7 @@ String :=   Report.WordXmlPart([ExtendedFormat: Boolean])
 An instance of the [Report](report-data-type.md) data type.  
 
 *ExtendedFormat*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If you set this variable to true, then XML elements will include the following attributes attributes:
 -   ElementType="Parameter|Column|DataItem". Specifies the element type as defined for the report in Report Designer. Parameter is typically used for elements, such as captions.
 -   ElementId="ID". Specifies the ID that is assigned to the element by its ID Property.
@@ -37,7 +37,7 @@ If you omit this parameter or set it to false, then the element attributes are n
 
 ## Return Value
 *String*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 A string representation of the report data structure as structured XML that is compatible with Microsoft Word custom XML parts.  
 
 

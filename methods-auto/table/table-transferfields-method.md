@@ -2,7 +2,7 @@
 title: "TransferFields Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TransferFields Method
 Copies all matching fields in one record to another record.
 
@@ -30,7 +30,7 @@ An instance of the [Table](table-data-type.md) data type.
 The record from which to copy.
           
 *InitPrimaryKeyFields*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Default: true
 If this parameter is true and the records are in the same table, both the timestamp and the Primary Key fields of the destination record will be changed.
 If this parameter is true and the records are not in the same table, then the Primary Key fields of the destination record will be changed but the timestamp of the destination record will not be changed.

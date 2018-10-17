@@ -2,7 +2,7 @@
 title: "CreateOutStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CreateOutStream Method
 Creates an OutStream object for a binary large object (BLOB). This enables you to write data to the BLOB.
 
@@ -26,11 +26,11 @@ Creates an OutStream object for a binary large object (BLOB). This enables you t
 An instance of the [Blob](blob-data-type.md) data type.  
 
 *OutStream*  
-&emsp;Type: [OutStream](outstream-data-type.md)  
+&emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
 The OutStream object type that has been created.
         
 *Encoding*  
-&emsp;Type: [TextEncoding](textencoding-option.md)  
+&emsp;Type: [TextEncoding](../textencoding/textencoding-option.md)  
 The encoding that will be used by the stream.  
 
 

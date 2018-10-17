@@ -2,7 +2,7 @@
 title: "SetStamp Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SetStamp Method
 Sets a timestamp for a file.
 
@@ -24,26 +24,25 @@ Sets a timestamp for a file.
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Name*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the file, including its path. When you enter the path, keep in mind these shortcuts:
 -   You can omit the drive designation, if the file is located on the current drive.
 -   You can omit the full path, if the file is located in the current directory.
 -   You can enter only the subdirectory name, if the file is located in a subdirectory of the current directory.
       
 *Date*  
-&emsp;Type: [Date](date-data-type.md)  
+&emsp;Type: [Date](../date/date-data-type.md)  
 The date that you want stamped on the file.
         
 *Time*  
-&emsp;Type: [Time](time-data-type.md)  
+&emsp;Type: [Time](../time/time-data-type.md)  
 The time that you want stamped on the file.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
