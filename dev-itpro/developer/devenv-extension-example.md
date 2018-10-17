@@ -256,7 +256,7 @@ The **Last Modified Date** field requires constant changes to remain accurate. T
     end;
 ```
 
-From this point, changes to the **Customer Card** page can be done either manually by adding the code below in Visual Studio Code or by using the Designer's functions. Both ways lead to the same results, but the Designer speeds up the process. 
+From this point, changes to the **Reward Card** page can be done either manually by adding the code below in Visual Studio Code or by using the Designer's functions. Both ways lead to the same results, but the Designer speeds up the process. 
 
 
 ```
@@ -277,7 +277,7 @@ Using the F6 key shortcut in Visual Studio Code launches the browser and enters 
 > Every time you start designing, you create a new extension and the changes you make in the Designer will apply to all users.
 
 
-To add the same fields and customize the **Customer Card** page, follow the next steps:
+To add the same fields and customize the **Reward Card** page, follow the next steps:
 - Choose the purple box to the right of the **Last Modified Date** field and select **Remove**. 
 - Navigate to the **Reward Card** page by choosing **+ new**.  
 - Select **More** from the Designer bar. 
