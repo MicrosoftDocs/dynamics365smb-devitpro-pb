@@ -2,7 +2,7 @@
 title: Synchronization and Data Integration
 description: The synchronization copies data between Microsoft Dynamics 365 for Sales entries and Dynamics NAV records, and keeps the data in both systems up-to-date.
 ms.custom: na
-ms.date: 10/19/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,10 +34,11 @@ Before you can start to synchronize data, you must enable the synchronization se
 |Salesperson\/Purchaser|User|From [!INCLUDE[crm_md](includes/crm_md.md)] to [!INCLUDE[navnow_md](includes/navnow_md.md)]|[!INCLUDE[crm_md](includes/crm_md.md)] contact filter: Status is **No**.|  
 |Customer|Account|From [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)] and from [!INCLUDE[crm_md](includes/crm_md.md)] to [!INCLUDE[navnow_md](includes/navnow_md.md)].|[!INCLUDE[crm_md](includes/crm_md.md)] account filter: Relationship type is **Customer** and status is **Active**.|  
 |Contact|Contact|From [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)] and from [!INCLUDE[crm_md](includes/crm_md.md)] to [!INCLUDE[navnow_md](includes/navnow_md.md)].|[!INCLUDE[navnow_md](includes/navnow_md.md)] contact filter: Type is **Person** and the contact is assigned to a company.<br /><br /> [!INCLUDE[crm_md](includes/crm_md.md)] contact filter: Contact is assigned to a company and the parent customer type is **Account**.|  
-|Transaction Currency|Currency|From [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)].||  
-|Unit Group|Unit of Measure|From [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)].||  
-|Product|Item|From [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)].||  
-||Resource|From [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)].||  
+| Currency|Transaction Currency|From [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)].||  
+|Unit of Measure|Unit Group|From [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)].||  
+|Item |Product|From [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)].||  
+|Resource||From [!INCLUDE[navnow_md](includes/navnow_md.md)] to [!INCLUDE[crm_md](includes/crm_md.md)].||  
+  
 
 The [!INCLUDE[crm_md](includes/crm_md.md)] entities and [!INCLUDE[navnow_md](includes/navnow_md.md)] tables that are synchronized are defined by table mapping entries are defined in table **5335 Integration Table Map**. You can view the mappings and set up filters from page **5335 Integration Table Map**. The mapping between the fields in [!INCLUDE[navnow_md](includes/navnow_md.md)] records and the fields in [!INCLUDE[crm_md](includes/crm_md.md)] entities are defined by field mapping entries in the table **5336 Integration Field Map** and additional mapping logic. For more information, see [Integration Table Mappings](Dynamics-CRM-Integration-Concepts-and-Terminology.md#IntegTblMappingsOverview) and [Integration Field Mappings](Dynamics-CRM-Integration-Concepts-and-Terminology.md#IntegFieldMappingsOverview).  
 

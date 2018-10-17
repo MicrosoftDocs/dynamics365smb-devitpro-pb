@@ -1,7 +1,7 @@
 ---
 title: "How to: Use a Timestamp Field"
 ms.custom: na
-ms.date: 07/20/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

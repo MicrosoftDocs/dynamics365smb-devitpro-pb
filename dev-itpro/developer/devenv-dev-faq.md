@@ -3,7 +3,7 @@ title: "FAQ for Developing in AL"
 description: "Overview of frequently asked questions for development using the AL language."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/09/2018
+ms.date: 10/09/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 This topic contains a number of frequently asked questions and answers to these questions. 
 
 ## How do I get started?
-For an overview of developing apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [aka.ms/GetStartedWithApps](devenv-develop-apps-for-fin.md)
+For an overview of developing apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [aka.ms/GetStartedWithApps](https://aka.ms/GetStartedWithApps)
 
 Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the tools.
 

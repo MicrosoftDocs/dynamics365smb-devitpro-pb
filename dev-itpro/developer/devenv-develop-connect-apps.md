@@ -3,7 +3,7 @@ title: "Getting Started Developing Connect Apps for Dynamics 365 Business Centra
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 05/30/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,7 +59,9 @@ In this `Hello World` example, we are going over the basic steps required to ret
 1.	First, in Postman, set up a `GET` call to the base API URL.  
     - When you call the base API URL, you will get a list of all the available APIs. You can append `$metadata` to the URL to also get information about the fields in the APIs. The list of supported APIs and fields information can also be found in the API documentation.
 
-    - Since we are using basic authentication, we need to include the users domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v1.0/<your tenant domain>/api/beta`
+    - Since we are using basic authentication, we need to include the users domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v1.0/<your tenant domain>/api/beta`.
+        > [!NOTE]  
+        > The parameter `<your tenant domain>` is your default Azure Active Directory GUID.>
     
 2. On the **Authorization** tab in Postman select **Basic Auth** in the **Type** and provide the Username and **Web Service Access Key** from above as password. 
 
@@ -89,7 +91,6 @@ An Authorization request header is now added containing the Bearer token.
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
 
 ```json
-    ``` 
     {
         "@odata.context": "<endpoint>/$metadata#companies",
         "value": [
@@ -102,7 +103,6 @@ Each resource is uniquely identified through an ID, see the following example of
             }
         ]
     }
-    ```
 ```
 
 The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis () after the API endpoint. For example, to GET the “CRONUS USA, Inc.” company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
@@ -110,6 +110,6 @@ The resource ID must be provided in the URL when trying to read or modify a reso
 All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore, it is a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the “CRONUS USA, Inc.” company, we must call a GET on the URL `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`.
 
 ## See Also
-[Using Deltas With APIs](devenv-connect-apps-delta.md)  
+<!--[Using Deltas With APIs](devenv-connect-apps-delta.md)-->  
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
 [Tips for Working with APIs](devenv-connect-apps-tips.md)

@@ -1,7 +1,7 @@
 ---
 title: "TENANTID Method (Database)"
 ms.custom: na
-ms.date: 07/13/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,6 +31,6 @@ ID := TENANTID
  The ID of the tenant that has started the current session.  
   
 ## See Also  
- <!--Links [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md)-->   
+ [Multitenant Deployment Architecture](../../deployment/Multitenant-Deployment-Architecture.md)   
  [COMPANYNAME Method \(Database\)](devenv-COMPANYNAME-Method-Database.md)   
  [Database Methods](devenv-database-methods.md)

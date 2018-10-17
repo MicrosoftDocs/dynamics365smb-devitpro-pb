@@ -2,7 +2,7 @@
 title: Development Environment Keyboard Shortcuts
 description: This topic provides an overview of shortcut key combinations in the Microsoft Dynamics NAV Development Environment.
 ms.custom: na
-ms.date: 10/25/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

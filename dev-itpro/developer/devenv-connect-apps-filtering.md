@@ -3,7 +3,7 @@ title: "Using Filtering with APIs"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 02/23/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,6 @@ ms.service: "dynamics365-business-central"
 
 ## See Also
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
-[Using Deltas With APIs](devenv-connect-apps-delta.md)   
+<!-- [Using Deltas With APIs](devenv-connect-apps-delta.md) -->  
 [Tips for working with the APIs](devenv-connect-apps-tips.md)  
 

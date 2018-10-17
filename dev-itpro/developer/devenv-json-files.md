@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the content of the JSON files."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/12/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ caps.latest.revision: 18
 
 In an AL project there are two JSON files; the `app.json` file and the `launch.json` file. These files are generated automatically when you start a new project. The `app.json` file contains information about extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `launch.json` file contains information about the server that the extension launches on.
 
-## App.json file
+## <a name="Appjson"></a>App.json file
 The following table describes the settings in the ```app.json``` file:
 
 |Setting|Mandatory|Value|
@@ -35,7 +35,7 @@ The following table describes the settings in the ```app.json``` file:
 |EULA|No, but required for AppSource submission|URL to the license terms for the extension.|
 |help|No, but required for AppSource submission|URL to the help for the extension.|
 |url|No|URL of the extension package.|
-|logo|No, but required for AppSource submission|URL to the logo for the extension package.|
+|logo|No, but required for AppSource submission|Relative path to the app package logo from the root of the package.|
 |dependencies|No|List of dependencies for the extension package. For example: `"dependencies": [ {  "appId": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"}],`|
 |screenshots|No|Relative paths to any screenshots that should be in the extension package.|
 |platform|Yes, if system tables are referenced in the extension|The minimum supported version of the platform symbol package file, for example: "11.0.0.0". See the [Symbols](devenv-symbols.md) for the list of object symbols contained in the platform symbol package file.|
@@ -43,6 +43,8 @@ The following table describes the settings in the ```app.json``` file:
 |idRange|Yes|A range for application object IDs. For all objects outside the range, a compilation error will be raised. When you create new objects, an ID is automatically suggested.|
 |showMyCode|No|This is by default set to `false` and not visible in the manifest. To enable viewing the source code when debugging into an extension, add the following setting: `"showMyCode": true`|
 |target|No|By default this is `Extension`. For Dynamics NAV, you can set this to `Internal` to get access to otherwise restricted APIs. The Dynamics NAV Server setting must then also be set to `Internal`.<!-- For more information, see [Configuring Microsoft Dynamics NAV Server](../configuring-microsoft-dynamics-nav-server.md).-->|
+|helpBaseUrl|No|The URL for the website that displays help for the current extension. The default URL is `https://docs.microsoft.com/{0}/dynamics365/business-central`.|
+|supportedLocales|No|The list of locales that are supported for looking up help. The value on the list is inserted into the URL defined in the `helpBaseUrl` property. The first locale on the list is default. An example is `"supportedLocales": ["da-DK", "en-US"]`.|
 
 ## <a name="Launchjson"></a>Launch.json file
 
@@ -55,8 +57,9 @@ The following table describes the settings in the ```launch.json``` file. The `l
 |type|Yes|Must be set to `".al"`. Required by Visual Studio Code.|
 |request|Yes|Request type of the configuration. Must be set to `"launch"`. Required by Visual Studio Code.|
 |server|Yes|The HTTP URL of your server, for example: `"http://localhost|serverInstance"`|
+|port|No|The port assigned to the development service.|
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
-|authentication|Yes|Specifies the server authentication method.|
+|authentication|Yes|Specifies the server authentication method. Currently, AAD authentication is supported only for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandboxes. AAD authentication cannot be used for on-premise servers.|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object. The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |schemaUpdateMode|No|Specifies the data synchronization mode when you publish an extension to the development server, for example: <br>`"schemaUpdateMode": "Synchronize Recreate"`</br> The default value is Synchronize. For more information, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  <br>[!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]  |

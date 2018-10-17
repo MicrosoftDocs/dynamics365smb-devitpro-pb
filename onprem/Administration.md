@@ -2,7 +2,7 @@
 title: Administration Tools
 description: This article provides an overview of different tools for different administrative tasks in Microsoft Dynamics NAV 'TENERIFE'.
 ms.custom: na
-ms.date: 06/05/2016
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

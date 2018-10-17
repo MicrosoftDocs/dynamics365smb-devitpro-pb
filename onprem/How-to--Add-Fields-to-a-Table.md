@@ -2,7 +2,7 @@
 title: Add Fields to a Table
 description: Designing a field consist of several characteristics that depend on usability. Tables and fields are identified by unique identification number or a name.
 ms.custom: na
-ms.date: 11/07/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

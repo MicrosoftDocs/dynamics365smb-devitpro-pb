@@ -3,7 +3,7 @@ title: "Profile Object"
 description: "Description of the page object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/01/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,10 +17,10 @@ caps.latest.revision: 18
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Profile Object
-The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to build an individual experience for each user profile. Profile object performs a validatation to check whether the specified role center page exists, and [page customization objects](devenv-page-customization-object.md) exists, when you define a new profile object. You can add changes to the page layout, and actions; but you cannot add variables, procedures, or triggers. 
+The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to build an individual experience for each user profile. Profile object performs a validation to check whether the specified role center page exists, and [page customization objects](devenv-page-customization-object.md) exists, when you define a new profile object. You can add changes to the page layout, and actions; but you cannot add variables, procedures, or triggers. 
 
 > [!NOTE]  
-> Extension objects can have a name with a maximum length of 30 characters.      
+> Extension objects can have a name with a maximum length of 30 characters.
 
 ## Snippet support
 Typing the shortcut ```tprofile``` will create the basic layout for a profile object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.

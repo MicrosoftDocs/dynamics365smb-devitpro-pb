@@ -2,7 +2,7 @@
 title: Activate Debugger from Development Environment
 description: This article explains how to activate the debugger from the development environment and attach it to a session in Microsoft Dynamics NAV.
 ms.custom: na
-ms.date: 11/02/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

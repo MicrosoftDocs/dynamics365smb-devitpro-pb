@@ -1,7 +1,7 @@
 ---
 title: "Configuring Microsoft Dynamics NAV Server"
 author: edupont04
-ms.date: 08/24/2017
+ms.date: 10/01/2018
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2017"

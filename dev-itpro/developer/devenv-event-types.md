@@ -2,7 +2,7 @@
 title: "Event Types"
 description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global and trigger events. 
 ms.custom: na
-ms.date: 05/24/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ author: SusanneWindfeldPedersen
  An integration event can be changed to a business event later. At which time, it must adhere to the same implied contract and commitment as any business event. It can also simply be designed-in hook points for external add-ons. To learn about the syntax and example on how to use the IntegrationEvent type, see [IntegrationEvent Attribute](methods/devenv-integration-attribute.md). 
   
 ## Global events  
- Global events are predefined system events that are automatically raised by Codeunit 1 **ApplicationManagement**. Codeunit 1 includes several global method triggers, such as CompanyOpen, CompanyClose, and GetSystemIndicator. For most of these global method triggers, there are one or two global events: a before and after event. For example, there is an OnBeforeCompanyOpen event and an OnAfterCompanyOpen event. The global events are defined as integration events by local methods in codeunit 1.  
+ Global events are predefined system events that are automatically raised by codeunit 40 **LoginManagement**. This codeunit includes several global method triggers, such as CompanyOpen, CompanyClose, and GetSystemIndicator. For most of these global method triggers, there are one or two global events: a before and after event. For example, there is an OnBeforeCompanyOpen event and an OnAfterCompanyOpen event. The global events are defined as integration event publishers by local methods in codeunit 40.  
   
 ## Trigger events  
  Unlike business and integration events which must be programmed, trigger events are predefined events. Trigger events are published by the runtime and they cannot be raised programmatically. There are two types of trigger events: database trigger events and page trigger events.  

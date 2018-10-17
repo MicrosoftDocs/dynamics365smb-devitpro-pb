@@ -3,7 +3,7 @@ title: "Page Extension Object"
 description: "Description of the page extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/01/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

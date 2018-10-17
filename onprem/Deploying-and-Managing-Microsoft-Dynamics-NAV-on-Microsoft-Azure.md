@@ -3,7 +3,7 @@ title: Manage Dynamics NAV on Azure
 description: Dynamics NAV includes Provisioning Tools for Microsoft Azure that enables you to deploy a Dynamics NAV environment on Microsoft Azure virtual machines.
 author: jswymer
 ms.custom: na
-ms.date: 10/25/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -7,7 +7,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms. search.keywords: deprecated, obsolete
-ms.date: 11/29/2017
+ms.date: 10/01/2018
 ms.author: edupont
 
 ---
@@ -51,6 +51,14 @@ The functionality for payments and reconciliation in the Danish version (FIK) ha
 
 ## Fields marked as ObsoleteState:Pending in [!INCLUDE[nav2018](includes/nav2018_md.md)]
 A number of fields are marked as ObsoleteState:Pending. There is no impact on code in this release.  
+
+### Iceland
+The following fields are mareded as ObsoleteState:Pending in the IS version.  
+
+|Table ID|Field ID|Comments|
+|--------|--------|--------|
+|21|10900|Will be removed in a later release.|
+|311|10900|Will be removed in a later release.|
 
 ### United Kingdom
 The following fields are marked as ObsoleteState:Pending in the UK version.  

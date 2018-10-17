@@ -2,7 +2,7 @@
 title: Create a Table
 description: When you create a table, you must choose what type of information you want to store in it, which is held in fields i.e. declared in data types.
 ms.custom: na
-ms.date: 11/28/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

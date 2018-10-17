@@ -1,7 +1,7 @@
 ---
 title: "DrillDown Property"
 ms.custom: na
-ms.date: 06/13/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,6 +34,3 @@ Sets a drill-down for a field on a page.
 ## See Also  
  [Pages Overview](../devenv-pages-overview.md)   
  [Page Properties](devenv-page-properties.md)   
- <!-- //NAV
- [Page Properties Not Supported by Microsoft Dynamics NAV Web Client](Page-Properties-Not-Supported-by-Microsoft-Dynamics-NAV-Web-Client.md)
- -->

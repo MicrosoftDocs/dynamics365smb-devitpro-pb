@@ -3,7 +3,7 @@ title: "Pages Overview"
 description: Pages are the main way to display and organize data. Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/04/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

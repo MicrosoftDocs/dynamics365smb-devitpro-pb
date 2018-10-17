@@ -2,7 +2,7 @@
 title: Add Global Variable to Codeunit
 decription: This article describes how to add a global variable to a codeunit. Start by selecting the C/AL Editor and then choose the C/AL Globals. 
 ms.custom: na
-ms.date: 11/02/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

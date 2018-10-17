@@ -2,7 +2,7 @@
 title: "ExternalType Property"
 description: Specifies the name of the orginal table in the external database. 
 ms.custom: na
-ms.date: 02/20/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

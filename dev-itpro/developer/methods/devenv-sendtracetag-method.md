@@ -1,7 +1,7 @@
 ---
 title: "SENDTRACETAG Method"
 ms.custom: na
-ms.date: 03/15/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -75,7 +75,7 @@ A telemetry event is given one of the following event IDs, depending on the `DAT
 ||Warning|712 |
 
 
-<!-- For more information about instrumenting and monitoring telemetry, see [Instrumenting an Application for Telemetry](../../instrumenting-application-for-telemetry.md) and [Monitoring-Dynamics NAV Server Events](../../Monitoring-Microsoft-Dynamics-NAV-Server-Events.md). -->
+For more information about instrumenting and monitoring telemetry, see [Instrumenting an Application for Telemetry](../devenv-instrument-application-for-telemetry.md) and [Monitoring-Dynamics NAV Server Events](../../administration/monitor-server-events.md).
 
 ## Example 
 The following code defines simple telemetry events for the five different severity levels. 
@@ -92,4 +92,4 @@ The events emitted by this code will have the events IDs (listed in the order th
 
 ## See Also  
 [DataClassification property](../properties/devenv-dataclassification-property.md)  
-<!-- [Instrumenting an Application for Telemetry](../../instrumenting-application-for-telemetry.md)   -->
+[Instrumenting an Application for Telemetry](../devenv-instrument-application-for-telemetry.md)  
