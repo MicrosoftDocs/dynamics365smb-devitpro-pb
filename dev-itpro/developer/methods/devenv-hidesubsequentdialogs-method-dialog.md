@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ms.service: "dynamics365-business-central"
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
 ---
 # HideSubsequentDialogs Function
 Specifies whether to hide other dialogs within the current scope that are not instantiated by this dialog variable. When this is set to **true**, any calls to dialog methods ([OPEN](devenv-open-method-dialog.md), [UPDATE](), and [CLOSE](devenv-close-method-dialog.md)) on other dialog variables are ignored, and the dialogs will not appear in the user interface.

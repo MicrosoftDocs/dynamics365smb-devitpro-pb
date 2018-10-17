@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: dynamics365-financials
 ms.assetid: dd8058d0-5b1e-4fd1-aeb1-7ef480fa581d
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
 ---
 
  

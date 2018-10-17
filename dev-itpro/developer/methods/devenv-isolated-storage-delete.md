@@ -10,6 +10,7 @@ ms.service: dynamics365-financials
 ms.assetid: e536abc9-b0bb-4010-bd77-22e537eb24ba
 caps.latest.revision: 14
 manager: SorenGP
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
 ---
 
 # ISOLATEDSTORAGE.DELETE Method
