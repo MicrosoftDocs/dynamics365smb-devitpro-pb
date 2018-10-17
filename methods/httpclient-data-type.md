@@ -2,7 +2,7 @@
 title: "HttpClient Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/31/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # HttpClient Data Type
-
+Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
 
 
 The following methods are available on instances of the HttpClient data type.

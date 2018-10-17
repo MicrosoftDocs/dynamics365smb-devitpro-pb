@@ -2,7 +2,7 @@
 title: "XmlAttribute Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # XmlAttribute Data Type
-
+Represents an XML attribute.
 
 The following methods are available on the XmlAttribute data type.
 
@@ -30,9 +30,9 @@ The following methods are available on instances of the XmlAttribute data type.
 |Method name|Description|
 |-----------|-----------|
 |[Name()](xmlattribute-name-method.md)|The qualified name of the attribute. |
-|[LocalName()](xmlattribute-localname-method.md)|The local name of the attribute.|
-|[NamespaceUri()](xmlattribute-namespaceuri-method.md)|The namespace URI of the attribute.|
-|[NamespacePrefix()](xmlattribute-namespaceprefix-method.md)|The prefix of the attribute (if any).|
+|[LocalName()](xmlattribute-localname-method.md)|Gets the local name of the attribute.|
+|[NamespaceUri()](xmlattribute-namespaceuri-method.md)|Gets the namespace URI of the attribute.|
+|[NamespacePrefix()](xmlattribute-namespaceprefix-method.md)|Gets the prefix of the attribute (if any).|
 |[IsNamespaceDeclaration()](xmlattribute-isnamespacedeclaration-method.md)|Determines if this attribute is a namespace declaration.|
 |[Value([String])](xmlattribute-value-method.md)|Gets or sets the value of the attribute.|
 |[AsXmlNode()](xmlattribute-asxmlnode-method.md)|Converts the node to an XmlNode.|

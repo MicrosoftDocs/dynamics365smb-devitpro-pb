@@ -2,7 +2,7 @@
 title: "Remove Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # Remove Method
-Removes the specified range of characters from this instance.
+Removes the specified range of characters from this TextBuilder instance.
 
 ## Syntax
 ```
@@ -24,9 +24,11 @@ Removes the specified range of characters from this instance.
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
+
 *StartIndex*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The one-based position in this instance where removal begins.  
+The one-based position in this TextBuilder instance where removal begins.
+        
 *Count*  
 &emsp;Type: [Integer](integer-data-type.md)  
 The number of characters to remove.  
@@ -36,7 +38,7 @@ The number of characters to remove.
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** if the specified range of characters was succesfully removed, otherwise **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

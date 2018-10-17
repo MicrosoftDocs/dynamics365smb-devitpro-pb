@@ -2,7 +2,7 @@
 title: "UrlName Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ UrlName :=   CompanyProperty.UrlName()
 ## Return Value
 *UrlName*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The company name in a URL.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

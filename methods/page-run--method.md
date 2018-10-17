@@ -2,7 +2,7 @@
 title: "Run Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,20 +30,16 @@ An instance of the [Page](page-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If, at design time, you know the specific page that you want to run, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [RUNMODAL Method \(Page\)](devenv-RUNMODAL-Method-Page.md) on the Page variable.  
-  
- If you do not know the page that you want to run, then use the [PAGE.RUN Method](devenv-PAGE-RUN-Method.md) or the [PAGE.RUNMODAL Method](devenv-PAGE-RUNMODAL-Method.md) and specify the page in the *Number* parameter.  
-  
- After you define the page variable, you can use it before you run the page. If you use the [RUNMODAL Method \(Page\)](devenv-RUNMODAL-Method-Page.md), you can use the variable before and after you run the page.  
-  
+ If, at design time, you do not know the specific page you want to run, then use this method or the [PAGE.RUNMODAL Method](devenv-PAGE-RUNMODAL-Method.md) and specify the page in the *Number* parameter.  
+
+ If you do know which page you want to run, then you can create a Page variable, set the subtype of the variable to a specific page, and then use the [RUN Method \(Page\)](devenv-RUN-Method-Page.md) or [RUNMODAL Method \(Page\)](devenv-RUNMODAL-Method-Page.md) on the Page variable.  
+
+ When you want to close the page, use CurrPage.CLOSE. CurrPage is a predefined system variable.  
+
 ## Example  
- This example shows how to use the **RUN** method. Assume the variable MyPage has been defined as Page 1.  
-  
+
 ```  
-MyPage.XXX; // any user-defined method  
-MyPage.SETTABLEVIEW(MyRecord);  
-MyPage.SETRECORD(MyRecord);  
-MyPage.RUN;  
+Page.RUN(4711)  
 ```  
   
 

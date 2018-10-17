@@ -1,0 +1,93 @@
+---
+title: "InsStr Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 09/28/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+# InsStr Method
+Inserts a substring into a string.
+
+## Syntax
+```
+NewString :=   Text.InsStr(String: String, SubString: String, Position: Integer)
+```
+> [!NOTE]  
+> This method can be invoked without specifying the data type name.  
+## Parameters
+*String*  
+&emsp;Type: [String](string-data-type.md)  
+The string into which you want to insert a substring.
+        
+*SubString*  
+&emsp;Type: [String](string-data-type.md)  
+The substring that you want to insert into String.
+        
+*Position*  
+&emsp;Type: [Integer](integer-data-type.md)  
+Specifies where to insert SubString. Position must be greater than or equal to 1. If Position is greater than the length of String, then the result is concatenated and copied to NewString.  
+
+
+## Return Value
+*NewString*  
+&emsp;Type: [String](string-data-type.md)  
+The input string including the specified substring  
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ If *SubString* is empty, then *String* is returned unchanged.  
+  
+ If *Position* is less than 1, an error is returned.  
+  
+ If *Position* is greater than the length of *String*, *SubString* is added at the end of *String*. For example, `INSSTR("Thomas","AAA",999)` returns 'ThomasAAA'.  
+  
+## Example  
+ This example requires that you create the following global variables and text constants.  
+  
+|Variable name|DataType|Subtype|  
+|-------------------|--------------|-------------|  
+|Str|Text|60|  
+|SubString|Text|60|  
+|NewString|Text|60|  
+  
+|Text constant|ENU value|  
+|-------------------|---------------|  
+|Text000|Press ENTER to continue.|  
+|Text001|or ESC|  
+|Text002|The test string before INSSTR is called:>%1\<|  
+|Text003|The resulting string after INSSTR is called:>%1\<|  
+  
+```  
+Str := Text000;  
+SubString := Text001;  
+MESSAGE(Text002, Str);  
+NewString := INSSTR(Str, SubString, 13);  
+MESSAGE(Text003, NewString);  
+```  
+  
+ The first message window displays the following:  
+  
+ **The test string before INSSTR is called:**  
+  
+ **>Press ENTER to continue.\<**  
+  
+ The second message window displays the following:  
+  
+ **The resulting string after INSSTR is called:**  
+  
+ **>Press ENTER or ESC to continue.\<**  
+
+## See Also
+[Text Data Type](text-data-type.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

@@ -2,7 +2,7 @@
 title: "Read Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,7 @@ Reads from an MS-DOS encoded file or binary file.
 *File*  
 &emsp;Type: [File](file-data-type.md)  
 An instance of the [File](file-data-type.md) data type.  
+
 *Read*  
 &emsp;Type: [Any](any-data-type.md)  
 Streams a BigText object that is stored as a BLOB in a table to a BigText variable.  

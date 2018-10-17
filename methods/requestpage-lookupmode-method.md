@@ -2,7 +2,7 @@
 title: "LookupMode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # LookupMode Method
-
+Gets or sets the default lookup mode for the page.
 
 ## Syntax
 ```
@@ -26,6 +26,7 @@ author: solsen
 *RequestPage*  
 &emsp;Type: [RequestPage](requestpage-data-type.md)  
 An instance of the [RequestPage](requestpage-data-type.md) data type.  
+
 *NewLookupMode*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
   

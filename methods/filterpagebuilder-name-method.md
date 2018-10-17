@@ -2,7 +2,7 @@
 title: "Name Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Name :=   FilterPageBuilder.Name(Index: Integer)
 *FilterPageBuilder*  
 &emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
+
 *Index*  
 &emsp;Type: [Integer](integer-data-type.md)  
 The index of a filter control. The value must be in the range 1 to N, where N is the number of filter controls on the filter page.  
@@ -32,7 +33,7 @@ The index of a filter control. The value must be in the range 1 to N, where N is
 ## Return Value
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The name of the filter control.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

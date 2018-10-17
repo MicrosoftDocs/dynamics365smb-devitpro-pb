@@ -2,7 +2,7 @@
 title: "BigInteger Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,15 +33,6 @@ BigIntegerVar := BigIntegerVar - 1;
 ```  
 
  If you try to indirectly assign a value that is smaller than -9,223,372,036,854,775,808, or larger than 9,223,372,036,854,775,807, then you get a run-time error.  
-
-## Methods
-The methods supported for the BigInteger data type are:
-
-[ABS method (Decimal, Integer, BigInteger)](../methods/devenv-abs-method-decimal-integer-biginteger.md)   
-[POWER method (Decimal, Integer, BigInteger)](../methods/devenv-power-method-decimal-integer-biginteger.md)   
-[RANDOM method (Integer)](../methods/devenv-random-method-integer.md)   
-[RANDOMIZE method (Integer)](../methods/devenv-randomize-method-integer.md)   
-[ROUND method (Decimal)](../methods/devenv-round-method-decimal.md)
 
 ## Example  
 

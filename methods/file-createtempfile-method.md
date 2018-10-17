@@ -2,7 +2,7 @@
 title: "CreateTempFile Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,7 @@ Creates a temporary file. This enables you to save data of any format to a tempo
 *File*  
 &emsp;Type: [File](file-data-type.md)  
 An instance of the [File](file-data-type.md) data type.  
+
 *Encoding*  
 &emsp;Type: [TextEncoding](textencoding-option.md)  
   

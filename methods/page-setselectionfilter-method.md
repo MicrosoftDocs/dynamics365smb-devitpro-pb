@@ -2,7 +2,7 @@
 title: "SetSelectionFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Notes the records that the user has selected on the page, marks those records in
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.  
+
 *Record*  
 &emsp;Type: [Table](table-data-type.md)  
   
@@ -38,19 +39,14 @@ An instance of the [Page](page-data-type.md) data type.
  If only the current record is selected on the page, then SetSelectionFilter does the following:  
   
 -   Sets the current filter group to 0 on the destination record  
-  
 -   Adds filters on the primary key fields that point to the current record of the page  
   
  If more than one record is selected on the page, then SetSelectionFilter does the following:  
   
 -   Copies the current key from the page source table to the destination record  
-  
 -   Copies the current sort order from the table to the destination record  
-  
 -   Copies the current filters that are set in all filter groups  
-  
 -   Copies the current filter group  
-  
 -   Marks the selected records and sets the "marked only" filter 
 
 ## See Also

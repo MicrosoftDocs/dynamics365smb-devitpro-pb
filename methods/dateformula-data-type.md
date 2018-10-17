@@ -2,7 +2,7 @@
 title: "DateFormula Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # DateFormula Data Type
-Use this data type to contain a date formula that has the same capabilities as an ordinary input string for the CALCDATE Method (Date). The DateFormula data type is used to provide multilanguage capabilities to the CALCDATE Method (Date).
+Represents a date formula that has the same capabilities as an ordinary input string for the CALCDATE Method (Date). The DateFormula data type is used to provide multilanguage capabilities to the CALCDATE Method (Date).
 
 
 
@@ -24,14 +24,7 @@ Use this data type to contain a date formula that has the same capabilities as a
  When a date calculation formula is stored in a DateFormula field, it is converted to a generic, non-language dependent format. When a date calculation formula is retrieved from a DateFormula field, it is converted to a valid date conversion string for the currently selected language.  
 
  To assign a value to a DateFormula data type, whether it is a field or a variable, you must use the [EVALUATE Method](../methods/devenv-evaluate-method.md).  
-
-## Methods
-The methods supported for the DateFormula data type are:
-
-[CALCDATE Method (Date)](../methods/devenv-calcdate-method-date.md)  
-[EVALUATE Method](../methods/devenv-evaluate-method.md)  
-[FORMAT Method (Code, Text)](../methods/devenv-format-method-code-text.md)  
-
+ 
 ## Example  
  This example requires that you create a DateFormulaVariable variable that is a DateFormula data type.  
 

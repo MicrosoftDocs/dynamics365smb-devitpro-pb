@@ -2,7 +2,7 @@
 title: "LoadPackageData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Loads default, or starting, table data into the specified table of an extension 
 ## Parameters
 *TableNo*  
 &emsp;Type: [Integer](integer-data-type.md)  
-  
+The ID of the table for which to load package data.  
 
 
 

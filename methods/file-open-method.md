@@ -2,7 +2,7 @@
 title: "Open Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,7 @@ Opens an ASCII or binary file. This function does not create the file if it does
 *File*  
 &emsp;Type: [File](file-data-type.md)  
 An instance of the [File](file-data-type.md) data type.  
+
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
   

@@ -2,7 +2,7 @@
 title: "AddRecordRef Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # AddRecordRef Method
-Adds filter control for a table to a filter page. The table is specified by a recordref variable that is passed to the function. This creates a filter control on the filter page, where users can set filter table data.
+Adds a filter control for a table to a filter page. The table is specified by a RecordRef variable that is passed to the method. This creates a filter control on the filter page, where users can set filter table data.
 
 ## Syntax
 ```
@@ -24,9 +24,11 @@ Adds filter control for a table to a filter page. The table is specified by a re
 *FilterPageBuilder*  
 &emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
+
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
-  
+Assigns a name to the filter control for the table. The text displays as the caption for the filter control on the rendered filter page in the client.
+        
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
 The record reference to use in the filter control.  
@@ -36,7 +38,8 @@ The record reference to use in the filter control.
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned.
+        
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

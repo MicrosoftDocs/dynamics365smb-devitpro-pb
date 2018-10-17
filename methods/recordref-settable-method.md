@@ -1,0 +1,62 @@
+---
+title: "SetTable Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 09/27/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+# SetTable Method
+Sets the table to which a Record variable refers as the same table as a RecordRef variable.
+
+## Syntax
+```
+ RecordRef.SetTable(Rec: Table)
+```
+## Parameters
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
+
+*Rec*  
+&emsp;Type: [Table](table-data-type.md)  
+The Record for which you want to specify a table.  
+
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ Any filters that are applied to the RecordRef are also applied to the Record. If you change the filter that is applied to the RecordRef, you must call SETTABLE again to apply the new filter to the Record.  
+
+## Example  
+ This example shows that if you have a RecordID data type, you can get a RecordRef for the table that the RecordID refers to. Then you can use the RecordRef to set the table to which a Record variable refers.  
+
+ This example requires that you create the following global or local variables.  
+
+|Variable name|DataType|Subtype|  
+|-------------------|--------------|-------------|  
+|InvtEventBuf|Record|Inventory Event Buffer|  
+|RecID|RecordID|Not applicable|  
+|RecRef|RecordRef|Not applicable|  
+|ProdOrderComp|Record|Prod. Order Component|  
+
+```  
+InvtEventBuf.FIND('-');  
+RecID := InvtEventBuf."Source Line ID";  
+RecRef := RecID.GETRECORD;  
+RecRef.SETTABLE(ProdOrderComp);  
+```  
+
+
+## See Also
+[RecordRef Data Type](recordref-data-type.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

@@ -2,7 +2,7 @@
 title: "DisplayName Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ DisplayName :=   CompanyProperty.DisplayName()
 ## Return Value
 *DisplayName*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The display name of the company as specified in the **Display Name** field in the **Company** table. If no display name is specified, the company name that is stored in the **Name** field is returned.   
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

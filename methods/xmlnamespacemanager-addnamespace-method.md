@@ -2,7 +2,7 @@
 title: "AddNamespace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,11 @@ Adds the given namespace to the collection.
 *XmlNamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
+
 *Prefix*  
 &emsp;Type: [String](string-data-type.md)  
-The prefix to associate with the namespace being added. Use an empty string to add a default namespace.  
+The prefix to associate with the namespace being added. Use an empty string to add a default namespace.
+        
 *Uri*  
 &emsp;Type: [String](string-data-type.md)  
 The namespace to add.  

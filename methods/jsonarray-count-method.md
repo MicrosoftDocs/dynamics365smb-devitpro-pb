@@ -2,7 +2,7 @@
 title: "Count Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 ## Return Value
 *Count*  
 &emsp;Type: [Integer](integer-data-type.md)  
-  
+The number of elements in the JsonArray.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

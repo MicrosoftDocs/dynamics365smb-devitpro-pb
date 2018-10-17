@@ -2,7 +2,7 @@
 title: "SkipSystemTriggers Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,9 +23,8 @@ Enables the debugger to skip code that is inside system triggers.
 ## Parameters
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-
 Specifies if the debugger should skip system triggers.
-            
+        
 
 
 ## Return Value

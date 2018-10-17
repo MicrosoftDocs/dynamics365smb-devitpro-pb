@@ -2,7 +2,7 @@
 title: "System Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -68,10 +68,10 @@ The following methods are available on the System data type.
 |[ClearLastError()](system-clearlasterror-method.md)|Removes the last error message from memory.|
 |[ApplicationPath()](system-applicationpath-method.md)|Returns the path of the directory where the executable file for the product is installed.|
 |[TemporaryPath()](system-temporarypath-method.md)|Gets the path of the directory where the temporary file is stored.|
-|[IsServiceTier()](system-isservicetier-method.md)||
-|[ExportObjects(String, var Table, [Integer])](system-exportobjects-method.md)||
-|[ImportObjects(String, [Integer])](system-importobjects-method.md)||
-|[IsNull(DotNet)](system-isnull-method.md)||
+|[IsServiceTier()](system-isservicetier-method.md)|Gets a value indicating whether the runtime is a service tier.|
+|[ExportObjects(String, var Table, [Integer])](system-exportobjects-method.md)|Export application objects to a file.|
+|[ImportObjects(String, [Integer])](system-importobjects-method.md)|Import application objects from a file.|
+|[IsNull(DotNet)](system-isnull-method.md)|Gets a value indicating whether a DotNet object has been created or not.|
 |[GetLastErrorCallStack()](system-getlasterrorcallstack-method.md)|Gets the call stack from where the last error occurred.|
 |[CodeCoverageLog([Boolean], [Boolean])](system-codecoveragelog-method.md)||
 |[CodeCoverageInclude(var Table)](system-codecoverageinclude-method.md)||
@@ -81,11 +81,7 @@ The following methods are available on the System data type.
 |[CanLoadType(DotNet)](system-canloadtype-method.md)|Tests if the specified .NET Framework type can be loaded.|
 |[CaptionClassTranslate(String)](system-captionclasstranslate-method.md)|Returns a translated version of the caption string. The string is translated to the current local language.|
 |[GetUrl(ClientType, [String], [ObjectType], [Integer], [Table], [Boolean])](system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)| Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
-|[GetUrl(ClientType, String, ObjectType, Integer, RecordRef, [Boolean])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)|
-          Generates a URL for the specified client target that is based on the configuration of the server instance.
-
-          If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.
-        |
+|[GetUrl(ClientType, String, ObjectType, Integer, RecordRef, [Boolean])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[Encrypt(String)](system-encrypt-method.md)|Takes a string as input and returns the encrypted value of the string.|
 |[Decrypt(String)](system-decrypt-method.md)|Takes a string as input and returns the decrypted value of the string.|
 |[ExportEncryptionKey(String)](system-exportencryptionkey-method.md)||
@@ -94,8 +90,8 @@ The following methods are available on the System data type.
 |[DeleteEncryptionKey()](system-deleteencryptionkey-method.md)|Creates an encryption key for the current tenant.|
 |[EncryptionKeyExists()](system-encryptionkeyexists-method.md)|Checks whether an encryption key for the current tenant is present on the server tenant.|
 |[EncryptionEnabled()](system-encryptionenabled-method.md)|Checks if the tenant is configured to allow encryption.|
-|[GetDocumentUrl(Guid)](system-getdocumenturl-method.md)||
-|[ImportStreamWithUrlAccess(InStream, String, [Integer])](system-importstreamwithurlaccess-method.md)||
+|[GetDocumentUrl(Guid)](system-getdocumenturl-method.md)|Gets the URL for the specified temporary media object ID.|
+|[ImportStreamWithUrlAccess(InStream, String, [Integer])](system-importstreamwithurlaccess-method.md)|Imports an object into a media container to be used in a temporary URL with a default expiration time.|
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

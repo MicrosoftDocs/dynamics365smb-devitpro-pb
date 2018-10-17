@@ -2,7 +2,7 @@
 title: "OutStream Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # OutStream Data Type
-
+Is a generic stream object that you can use to write to files and BLOBs.
 
 
 The following methods are available on instances of the OutStream data type.

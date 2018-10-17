@@ -2,7 +2,7 @@
 title: "AddField Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,12 +24,15 @@ Adds a table field to the filter control for a table on filter page.
 *FilterPageBuilder*  
 &emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
+
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The name that is assigned to the table in the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
+        
 *Field*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
-The name of the table field to add to the filter control for a table.  
+The name of the table field to add to the filter control for a table.
+        
 *Filter*  
 &emsp;Type: [String](string-data-type.md)  
 A default filter on the field that is specified by the Field parameter.  
@@ -39,7 +42,7 @@ A default filter on the field that is specified by the Field parameter.
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** if the field was added to the field list for the specified filter control, otherwise **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

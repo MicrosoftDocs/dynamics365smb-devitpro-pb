@@ -2,7 +2,7 @@
 title: "RunModal Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ An instance of the [Page](page-data-type.md) data type.
 ## Return Value
 *Action*  
 &emsp;Type: [Action](action-option.md)  
-  
+Specifies what action the user took on the page.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

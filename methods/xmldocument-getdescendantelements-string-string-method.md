@@ -2,7 +2,7 @@
 title: "GetDescendantElements Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,11 @@ DescendantElements :=   XmlDocument.GetDescendantElements(LocalName: String, Nam
 *XmlDocument*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 An instance of the [XmlDocument](xmldocument-data-type.md) data type.  
+
 *LocalName*  
 &emsp;Type: [String](string-data-type.md)  
-The local name of the elements to retrieve.  
+The local name of the elements to retrieve.
+        
 *NamespaceUri*  
 &emsp;Type: [String](string-data-type.md)  
 The namespace URI of the elements to retrieve.  
@@ -35,7 +37,7 @@ The namespace URI of the elements to retrieve.
 ## Return Value
 *DescendantElements*  
 &emsp;Type: [XmlNodeList](xmlnodelist-data-type.md)  
-  
+A list containing the descendant elements for this document, in document order.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

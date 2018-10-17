@@ -2,7 +2,7 @@
 title: "ReadFrom Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,8 @@ Read and parse the XML document from the given data source.
 ## Parameters
 *Text*  
 &emsp;Type: [String](string-data-type.md)  
-A string containing an XML document.  
+A string containing an XML document.
+        
 *Result*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 The XmlDocument parsed from the given data source.  

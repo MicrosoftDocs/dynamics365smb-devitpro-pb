@@ -2,7 +2,7 @@
 title: "GetView Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,18 +24,21 @@ View :=   FilterPageBuilder.GetView(Name: String, [UseNames: Boolean])
 *FilterPageBuilder*  
 &emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
+
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The name of the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
+        
 *UseNames*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-  
+Specifies whether a field caption or field number should be returned. This parameter is optional. If this parameter is **true** (default value) or if it is empty, then the returned string contains references to field captions in the table with which the record is associated. If this parameter is **false**, then the returned string contains references to field numbers.
+        
 
 
 ## Return Value
 *View*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The view that is configured for the filter control that is identified by Name.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

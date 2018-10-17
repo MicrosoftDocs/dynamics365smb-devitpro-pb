@@ -2,7 +2,7 @@
 title: "TextMode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,6 +28,7 @@ Sets whether a file should be opened as an ASCII file or a binary file. Gets the
 *File*  
 &emsp;Type: [File](file-data-type.md)  
 An instance of the [File](file-data-type.md) data type.  
+
 *Mode*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
   

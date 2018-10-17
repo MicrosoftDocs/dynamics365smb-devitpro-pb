@@ -2,7 +2,7 @@
 title: "Contains Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,25 +14,26 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # Contains Method
-Checks if an HttpHeaders contains a property with a given key.
+Checks if the specified header exists in the HttpHeaders collection.
 
 ## Syntax
 ```
-Result :=   HttpHeaders.Contains(Key: String)
+Result :=   HttpHeaders.Contains(Name: String)
 ```
 ## Parameters
 *HttpHeaders*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
-*Key*  
+
+*Name*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The specific header.  
 
 
 ## Return Value
 *Result*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the object contains a property with the given key; otherwise, **false**.  
+**true** is the specified header exists in the collection; otherwise **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

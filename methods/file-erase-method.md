@@ -2,7 +2,7 @@
 title: "Erase Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,15 +25,11 @@ Deletes a file.
 ## Parameters
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
-
 The name of the file that you want to delete, including the path. When you enter the path, consider these shortcuts:
-
 -   You can omit the drive designation if the file is located on the current drive.
-
 -   You can omit the full path if the file is located in the current directory.
-
--   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory
-            
+-   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.
+          
 
 
 ## Return Value

@@ -2,7 +2,7 @@
 title: "SetStamp Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,18 +25,15 @@ Sets a timestamp for a file.
 ## Parameters
 *Name*  
 &emsp;Type: [String](string-data-type.md)  
-
 The name of the file, including its path. When you enter the path, keep in mind these shortcuts:
-
 -   You can omit the drive designation, if the file is located on the current drive.
-
 -   You can omit the full path, if the file is located in the current directory.
-
 -   You can enter only the subdirectory name, if the file is located in a subdirectory of the current directory.
-            
+      
 *Date*  
 &emsp;Type: [Date](date-data-type.md)  
-The date that you want stamped on the file.  
+The date that you want stamped on the file.
+        
 *Time*  
 &emsp;Type: [Time](time-data-type.md)  
 The time that you want stamped on the file.  

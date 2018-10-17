@@ -2,7 +2,7 @@
 title: "WriteText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,22 +18,24 @@ Writes text to an OutStream object.
 
 ## Syntax
 ```
-[Write := ]  OutStream.WriteText([Text: String], [Length: Integer])
+[Written := ]  OutStream.WriteText([Text: String], [Length: Integer])
 ```
 ## Parameters
 *OutStream*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
 An instance of the [OutStream](outstream-data-type.md) data type.  
+
 *Text*  
 &emsp;Type: [String](string-data-type.md)  
-The text to write. If you do not specify this, a carriage return and a line feed are written.  
+The text to write. If you do not specify this, a carriage return and a line feed are written.
+        
 *Length*  
 &emsp;Type: [Integer](integer-data-type.md)  
 The number of characters to be written.  
 
 
 ## Return Value
-*Write*  
+*Written*  
 &emsp;Type: [Integer](integer-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
   

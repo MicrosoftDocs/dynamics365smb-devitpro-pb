@@ -2,7 +2,7 @@
 title: "NamespacePrefix Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # NamespacePrefix Method
-The prefix of the attribute (if any).
+Gets the prefix of the attribute (if any).
 
 ## Syntax
 ```
@@ -31,7 +31,7 @@ An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 ## Return Value
 *NamespacePrefix*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The prefix of the attribute (if any).  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

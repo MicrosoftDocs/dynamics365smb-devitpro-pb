@@ -2,7 +2,7 @@
 title: "Content Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,15 +26,16 @@ Gets or sets the contents of the HTTP message.
 *HttpRequestMessage*  
 &emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
 An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.  
+
 *SetContent*  
 &emsp;Type: [HttpContent](httpcontent-data-type.md)  
-  
+The contents of the HTTP message.  
 
 
 ## Return Value
 *CurrentContent*  
 &emsp;Type: [HttpContent](httpcontent-data-type.md)  
-  
+The contents of the HTTP message.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "AddText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,11 @@ Adds a text string to a BigText variable.
 *BigText*  
 &emsp;Type: [BigText](bigtext-data-type.md)  
 An instance of the [BigText](bigtext-data-type.md) data type.  
+
 *String*  
 &emsp;Type: [String](string-data-type.md)  
-The string that will be added to the BigText variable. If this parameter is empty, then the BigText variable is not modified.  
+The string that will be added to the BigText variable. If this parameter is empty, then the BigText variable is not modified.
+        
 *Position*  
 &emsp;Type: [Integer](integer-data-type.md)  
 This is an optional parameter that defines the position in the BigText variable where the string is inserted. If this parameter is omitted, then the string is added at the end of the BigText variable. If this parameter is less than one, then a run-time error occurs. If this parameter is greater than the length of the BigText variable, then the string is added at the end of the BigText variable.  

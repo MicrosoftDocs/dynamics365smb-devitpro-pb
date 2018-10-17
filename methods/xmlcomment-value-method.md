@@ -2,7 +2,7 @@
 title: "Value Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,7 @@ Gets or sets the string value of this comment.
 *XmlComment*  
 &emsp;Type: [XmlComment](xmlcomment-data-type.md)  
 An instance of the [XmlComment](xmlcomment-data-type.md) data type.  
+
 *NewValue*  
 &emsp;Type: [String](string-data-type.md)  
 The new value of this comment.  
@@ -34,7 +35,7 @@ The new value of this comment.
 ## Return Value
 *Value*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The new value of this comment.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

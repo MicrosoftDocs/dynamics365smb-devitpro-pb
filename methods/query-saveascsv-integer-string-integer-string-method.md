@@ -2,7 +2,7 @@
 title: "SaveAsCsv Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,19 +23,20 @@ Saves the resulting data set of a query as a comma separated values (CSV) file.
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](integer-data-type.md)  
-The ID of the query object. If the query that you specify does not exist, then a run-time error occurs.  
+The ID of the query object. If the query that you specify does not exist, then a run-time error occurs.
+        
 *FileName*  
 &emsp;Type: [String](string-data-type.md)  
-The path and name of the file that you want to save the query data set to.  
+The path and name of the file that you want to save the query data set to.
+        
 *Format*  
 &emsp;Type: [Integer](integer-data-type.md)  
-Specifies whether the columns of the resulting data set are at fixed positions in the CSV file or separated only by a delimiter.  
+Specifies whether the columns of the resulting data set are at fixed positions in the CSV file or separated only by a delimiter.
+        
 *FormatArgument*  
 &emsp;Type: [String](string-data-type.md)  
-
-You set the FormatArgument parameter based on the setting of the Format parameter.
-If the Format parameter is set to 0, then the FormatArgument parameter specifies the starting position of each column in the data set. The value is a comma separated string of integers that includes an integer for every column. In a CSV file, each line is evenly divided into positions for holding characters. The first integer corresponds to the starting position of the first column, the second integer corresponds to the starting position of the second column, and so on.
-            
+You set the FormatArgument parameter based on the setting of the Format parameter. If the Format parameter is set to 0, then the FormatArgument parameter specifies the starting position of each column in the data set. The value is a comma separated string of integers that includes an integer for every column. In a CSV file, each line is evenly divided into positions for holding characters. The first integer corresponds to the starting position of the first column, the second integer corresponds to the starting position of the second column, and so on.
+          
 
 
 ## Return Value

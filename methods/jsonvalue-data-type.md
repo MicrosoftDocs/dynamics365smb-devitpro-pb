@@ -2,7 +2,7 @@
 title: "JsonValue Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ The following methods are available on instances of the JsonValue data type.
 |-----------|-----------|
 |[Path()](jsonvalue-path-method.md)|Retrieves the JSON path of the value relative to its containing tree.|
 |[ReadFrom(String)](jsonvalue-readfrom-string-method.md)|Reads the JSON data into a JsonValue variable.|
-|[ReadFrom(InStream)](jsonvalue-readfrom-instream-method.md)|Reads the JSON data into a JsonValue variable.|
+|[ReadFrom(InStream)](jsonvalue-readfrom-instream-method.md)|Reads the JSON data from the stream into a JsonValue variable.|
 |[WriteTo(var Text)](jsonvalue-writeto-text-method.md)|Serializes and writes the JSON data of the JsonValue to a given object.|
 |[WriteTo(OutStream)](jsonvalue-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonValue to a given object.|
 |[SelectToken(String, var JsonToken)](jsonvalue-selecttoken-method.md)||

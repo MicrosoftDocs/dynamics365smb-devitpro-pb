@@ -2,7 +2,7 @@
 title: "ReadFrom Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,22 +18,23 @@ Reads the JSON data from the stream into a JsonToken variable.
 
 ## Syntax
 ```
-[Ok := ]  JsonToken.ReadFrom(Data: InStream)
+[Ok := ]  JsonToken.ReadFrom(InStream: InStream)
 ```
 ## Parameters
 *JsonToken*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
 An instance of the [JsonToken](jsontoken-data-type.md) data type.  
-*Data*  
+
+*InStream*  
 &emsp;Type: [InStream](instream-data-type.md)  
-  
+The InStream object from which the JSON data will be read.  
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
-  
+**true** if the read was successful; otherwise, **false**  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

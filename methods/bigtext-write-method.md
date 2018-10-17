@@ -2,7 +2,7 @@
 title: "Write Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,15 +24,18 @@ Streams a BigText object to a BLOB field in a table.
 *BigText*  
 &emsp;Type: [BigText](bigtext-data-type.md)  
 An instance of the [BigText](bigtext-data-type.md) data type.  
+
 *OutStream*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
-The stream to which you write a BigText.  
+The stream to which you write a BigText.
+        
 
 
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-  
+**true** if the write transaction was successful, otherwise **false**.
+        
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -61,7 +64,7 @@ ItemRec.Picture.CREATEOUTSTREAM(Ostream);
 Bstr.WRITE(Ostream);  
 ItemRec.INSERT;  
 ```  
-  
+  test
 ## See Also
 [BigText Data Type](bigtext-data-type.md)  
 [Getting Started with AL](../devenv-get-started.md)  

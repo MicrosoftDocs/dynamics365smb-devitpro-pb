@@ -2,7 +2,7 @@
 title: "WriteMode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,6 +28,7 @@ Use this function before you use OPEN function (File)] to set or test whether yo
 *File*  
 &emsp;Type: [File](file-data-type.md)  
 An instance of the [File](file-data-type.md) data type.  
+
 *Mode*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
   

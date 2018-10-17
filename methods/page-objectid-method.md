@@ -2,7 +2,7 @@
 title: "ObjectId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,15 +24,16 @@ String :=   Page.ObjectId([UseNames: Boolean])
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.  
+
 *UseNames*  
 &emsp;Type: [Boolean](boolean-data-type.md)  
-  
+If **true**, the page caption is returned, else the page ID as text.  
 
 
 ## Return Value
 *String*  
 &emsp;Type: [String](string-data-type.md)  
-  
+The text of the object  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

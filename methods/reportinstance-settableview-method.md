@@ -1,0 +1,65 @@
+---
+title: "SetTableView Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 09/27/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+# SetTableView Method
+Applies the table view on the current record as the table view for the page, report, or XmlPort.
+
+## Syntax
+```
+ Report.SetTableView(var Record: Table)
+```
+## Parameters
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
+An instance of the [Report](report-data-type.md) data type.  
+
+*Record*  
+&emsp;Type: [Table](table-data-type.md)  
+The record that has a table view that you want to apply to the page or data item.  
+
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ The table view is the view of the table that you present to the user. You determine what records that the user can see by setting filters, determining the sorting order, and selecting the keys.  
+  
+ This method only narrows the view of the table that was set through the [SourceTableView Property](../properties/devenv-SourceTableView-Property.md) of the page or through the [DataItemTableView Property](../properties/devenv-DataItemTableView-Property.md) of the data item.  
+  
+> [!IMPORTANT]  
+>  SETTABLEVIEW is not supported for setting views on subpages from code on table headers. For example, you cannot set a table view on the SalesOrder subpage from the SalesHeader.  
+  
+## Example  
+ This example is based on the Sales Header table and shows how SETTABLEVIEW is used for a page object. It requires that you create the following variables.  
+  
+|Variable name|DataType|Subtype|  
+|-------------------|--------------|-------------|  
+|SalesHeader|Record|Sales Header|  
+|SomePage|Page|Sales List|  
+  
+```  
+SalesHeader.SETCURRENTKEY("Document Type");  
+SalesHeader.SETRANGE("Document Type",SalesHeader."Document Type"::Order);  
+SomePage.SETTABLEVIEW(SalesHeader); // Only view sales orders.  
+SomePage.RUN  
+```  
+  
+ The page that is reference by the SomePage variable can be any page object that has Sales Header as the value of the [SourceTable Property](../properties/devenv-SourceTable-Property.md).  
+  
+
+## See Also
+[Report Data Type](report-data-type.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

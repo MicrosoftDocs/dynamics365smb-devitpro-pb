@@ -2,7 +2,7 @@
 title: "Create Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,10 +23,12 @@ XmlAttribute :=   XmlAttribute.Create(LocalName: String, NamespaceUri: String, V
 ## Parameters
 *LocalName*  
 &emsp;Type: [String](string-data-type.md)  
-The local name of the attribute.  
+The local name of the attribute.
+        
 *NamespaceUri*  
 &emsp;Type: [String](string-data-type.md)  
-The namespace URI of the attribute.  
+The namespace URI of the attribute.
+        
 *Value*  
 &emsp;Type: [String](string-data-type.md)  
 The value of the attribute.  
@@ -35,7 +37,7 @@ The value of the attribute.
 ## Return Value
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
-  
+The created XmlAttribute node.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

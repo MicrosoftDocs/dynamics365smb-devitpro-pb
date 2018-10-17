@@ -2,7 +2,7 @@
 title: "JsonToken Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
 # JsonToken Data Type
-
+A JsonToken object is a container for any well-formed JSON data. A default JsonToken object contains the JSON value of NULL.
 
 
 The following methods are available on instances of the JsonToken data type.

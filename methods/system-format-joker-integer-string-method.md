@@ -2,7 +2,7 @@
 title: "Format Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 08/01/2018
+ms.date: 09/28/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +25,12 @@ String :=   System.Format(Value: Any, Length: Integer, FormatString: String)
 ## Parameters
 *Value*  
 &emsp;Type: [Any](any-data-type.md)  
-
-This is an AL variable (expression) of any simple data type, such as Option, Integer, BigInteger, Decimal, Char, Text, Code, Date, Time, DateTime, Boolean, or GUID.
-If, when the system formats Value, the result is a value larger than the maximum length MAXSTRLEN function (Code, Text) of String, a run-time error occurs.
-            
+This is an AL variable (expression) of any simple data type, such as Option, Integer, BigInteger, Decimal, Char, Text, Code, Date, Time, DateTime, Boolean, or GUID. If, when the system formats Value, the result is a value larger than the maximum length MAXSTRLEN function (Code, Text) of String, a run-time error occurs.
+          
 *Length*  
 &emsp;Type: [Integer](integer-data-type.md)  
-This optional parameter specifies the length of String.  
+This optional parameter specifies the length of String.
+        
 *FormatString*  
 &emsp;Type: [String](string-data-type.md)  
 A literal string that defines a format as in the Format Property.  

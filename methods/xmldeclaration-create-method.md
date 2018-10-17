@@ -2,7 +2,7 @@
 title: "Create Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/30/2018
+ms.date: 09/30/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,19 +23,21 @@ XmlDeclaration :=   XmlDeclaration.Create(Version: String, Encoding: String, Sta
 ## Parameters
 *Version*  
 &emsp;Type: [String](string-data-type.md)  
-The version of the XML, usually &quot;1.0&quot;.  
+The version of the XML, usually "1.0".
+        
 *Encoding*  
 &emsp;Type: [String](string-data-type.md)  
-The encoding for the XML document.  
+The encoding for the XML document.
+        
 *Standalone*  
 &emsp;Type: [String](string-data-type.md)  
-A string containing &quot;yes&quot; or &quot;no&quot; that specifies whether the XML is standalone or requires external entities to be resolved.  
+A string containing "yes" or "no" that specifies whether the XML is standalone or requires external entities to be resolved.  
 
 
 ## Return Value
 *XmlDeclaration*  
 &emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)  
-  
+The created XmlDeclaration node.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
