@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
 ---
 # IntegrationEvent Attribute
 Specifies the method to be integration type event publisher.

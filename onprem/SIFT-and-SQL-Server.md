@@ -43,10 +43,9 @@ GLEntry$VSIFT$1(AccountNo, PostingDate)
 
 ```  
 GLEntry.SETCURRENTKEY("G/L Account No.","Posting Date");  
-GLEntry.SETRANGE(GLEntry."G/L Account No.",'1110');  
-GLEntry.SETRANGE(GLEntry."Posting  
-Date",DMY2DATE(1,1,2007),DMY2DATE(15,12,2007));  
-GLEntry.CALCSUMS(Amount);  
+GLEntry.SETRANGE("G/L Account No.",'1110');  
+GLEntry.SETRANGE("Posting Date",DMY2DATE(1,1,2007),DMY2DATE(15,12,2007));  
+GLEntry.CALCSUMS(Amount); 
 ```  
 
  The following code example shows how the same total is retrieved through an indexed view.  

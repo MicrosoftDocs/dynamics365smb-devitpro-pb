@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: dynamics365-financials
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
 ---
 
  
@@ -17,17 +18,17 @@ An application can have a full name, marketing name, and short name. The PRODUCT
 ```
 String := PRODUCTNAME.FULL
 ```
-*FULL* returns a text string that contains the application's full name, such as "[!INCLUDE[d365fin_long_md](../includes/d365fin_md.md)]".
+*FULL* returns a text string that contains the application's full name, such as "Microsoft [!INCLUDE[prodlong](../includes/prodlong.md)]".
 
 ```
 String := PRODUCTNAME.MARKETING
 ```
-*MARKETING* returns a text string that contains the application's marketing name, such as "[!INCLUDE[d365fin_long_md](../includes/d365fin_md.md)]".
+*MARKETING* returns a text string that contains the application's marketing name, such as "Microsoft [!INCLUDE[prodlong](../includes/prodlong.md)]".
 
 ```
 String := PRODUCTNAME.SHORT
 ```
-*SHORT* returns a text string that contains the application's short name, such as "[!INCLUDE[d365fin_md](../includes/d365fin_md.md)]".
+*SHORT* returns a text string that contains the application's short name, such as "[!INCLUDE[prodlong](../includes/prodlong.md)]".
 
 ## Return Value
 *String*

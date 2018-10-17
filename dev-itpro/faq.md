@@ -8,14 +8,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2018
+ms.date: 10/16/2018
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
 This section contains answers to frequently asked questions about developing for and administering [!INCLUDE[prodlong](includes/prodlong.md)].  
 
 > [!TIP]  
-> If you are looking for frequently asked questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)], see [Frequently Asked Questions](/dynamics365/business-central/across-faq).
+> If you are looking for frequently asked questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)], see [Frequently Asked Questions](/dynamics365/business-central/across-faq) in the business functionality content for [!INCLUDE[prodshort](includes/prodshort.md)].
 
 ## Is [!INCLUDE[prodshort](includes/prodshort.md)] available in my country?
 
@@ -41,6 +41,6 @@ Yes, you can. As a partner you have access to the Dynamics Learning Portal, wher
 
 ## See Also
 
-[FAQ for Developing in AL](/developer/devenv-dev-faq.md)  
+[FAQ for Developing in AL](developer/devenv-dev-faq.md)  
 [Welcome to [!INCLUDE[prodlong](includes/prodlong.md)]](/dynamics365/business-central/index)  
-[Microsoft Dynamics 365 Documentation](/dynamics365/index)  
+[Business Central blog for partners](https://community.dynamics.com/business/b/businesscentraldevitpro)  

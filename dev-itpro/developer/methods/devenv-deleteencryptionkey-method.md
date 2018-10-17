@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 7dea6cb3-a530-4918-8726-d3316cfc2be1
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
 ---
 
  
