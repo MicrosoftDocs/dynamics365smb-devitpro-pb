@@ -1,7 +1,7 @@
 ---
 title: "Browser Limitations with the Microsoft Dynamics NAV Web Client"
 ms.custom: na
-ms.date: 17/10/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

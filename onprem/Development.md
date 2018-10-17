@@ -3,7 +3,7 @@ title: Getting Started with C/AL Development
 description: Start learning about C/AL, build your C/AL knowledge, build an application, and the know earlier versions of Microsoft Dynamics NAV.
 author: jswymer
 ms.custom: na
-ms.date: 01/02/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

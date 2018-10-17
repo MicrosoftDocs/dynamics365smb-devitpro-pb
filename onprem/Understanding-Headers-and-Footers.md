@@ -2,7 +2,7 @@
 title: Header and Footer Report Layout
 description: This article explains the limitations of headers and footers in client report definition RDLC report layouts in Microsoft Dynamics NAV.
 ms.custom: na
-ms.date: 10/20/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

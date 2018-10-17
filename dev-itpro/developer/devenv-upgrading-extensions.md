@@ -3,7 +3,7 @@ author: jswymer
 title: "Upgrading an Extension V2 to a new version"
 description: "Describes how to add code to upgrade data in a new extension version."
 ms.custom: na
-ms.date: 11/10/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -73,7 +73,24 @@ codeunit [ID] [NAME]
 > Use the shortcuts `tcodunit` and `ttrigger` to create the basic structure for the codeunit and trigger.
 
 ### Get information about an extension
-Each extension version has a set of properties that contain information about the extension, including: AppVersion, DataVersion, Dependencies, Id, Name, and Publisher. This information can be useful when upgrading. For example, one of the more important properties is the `DataVersion` property, which tells you what version of data you are dealing with. These properties are encapsulated in a `ModuleInfo` data type. You can access these properties through the `NAVApp.GetCurrentModuleInfo()` and `NAVAPP.GetModuleInfo()` methods.
+Each extension version has a set of properties that contain information about the extension, including: `AppVersion`, `DataVersion`, `Dependencies`, `Id`, `Name`, and `Publisher`. This information can be useful when upgrading. 
+
+The `AppVersion` is one of the available properties and it's value differs depending on the context of the code being run:
+
+- Normal operation: `AppVersion` represents the value of the currently installed extension.
+- Installation code: `AppVersion` represents the version of the extension we are trying to install.
+- Upgrade code: `AppVersion` represents the version of the extension that we are upgrading to (e.g. ‘newer’ version).
+
+Another one of the more important properties is the `DataVersion` property, that represents the value of most recently installed/uninstalled/upgraded version of the extension, meaning that it reflects the most recent version of the data on the system, be that from the currently installed, or a previously uninstalled extension. The `DataVersion` property value differs depending on the context of the code being run:
+
+- Normal operation: `DataVersion` represents the version of the currently installed extension, in which case it is identical to the `AppVersion` property.
+- Installation code: 
+    - Reinstallation (applying the same version): `DataVersion` represents the version of the extension we are trying to install (identical to the `AppVersion` property).
+    - New installation: `DataVersion` represents the value of ‘0.0.0.0’ which is used to indicate that there is no data.
+- Upgrade code:
+    - The version of the extension we are upgrading from. Either what was last uninstalled, or what is currently installed.
+
+All of these properties are encapsulated in a `ModuleInfo` data type. You can access these properties through the `NAVApp.GetCurrentModuleInfo()` and `NAVApp.GetModuleInfo()` methods. 
 
 ### Upgrade codeunit example
 This example uses the `OnCheckPreconditionsPerDatabase()` trigger to check whether the data version of the previous extension version is compatible for the upgrade.

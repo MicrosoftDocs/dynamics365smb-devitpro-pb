@@ -2,7 +2,7 @@
 title: "Developer and IT-Pro Help for Business Central"
 description: Learn how to extend, manage, and customize Dynamics 365 Business Central
 author: solsen
-ms.date: 03/21/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,5 +16,5 @@ ms.service: "dynamics365-business-central"
 > If you are looking for the C/SIDE documentation, visit our [Dynamics NAV library](/dynamics-nav/development).
 
 ## See Also
-[Welcome to [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)]](/dynamics365/financials/)  
-[Microsoft Dynamics 365 Documentation](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_financials)    
+[Welcome to [!INCLUDE[d365fin_long](includes/d365fin_long_md.md)]](/dynamics365/business-central/)  
+[Microsoft Dynamics 365 Documentation](/dynamics365/#pivot=main&panel=apps)    

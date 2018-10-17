@@ -2,7 +2,7 @@
 title: MenuSuites Overview
 description: MenuSuite contain menus to navigate and perform actions on the Departments page in the Windows client which provides a basic modifiable MenuSuite.
 ms.custom: na
-ms.date: 10/25/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

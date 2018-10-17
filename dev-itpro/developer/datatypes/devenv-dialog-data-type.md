@@ -1,7 +1,7 @@
 ---
 title: "Dialog Data Type"
 ms.custom: na
-ms.date: 06/30/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ The methods supported for the Dialog data type are:
 [CLOSE method (Dialog)](../methods/devenv-close-method-dialog.md)  
 [CONFIRM method (Dialog)](../methods/devenv-confirm-method-dialog.md)  
 [ERROR method (Dialog)](../methods/devenv-error-method-dialog.md)  
-[HIDESUBSEQUENTDIALOGS Function (Dialog)](../methods/devenv-hidesubsequentdialogs-method-dialog.md)  
+[HIDESUBSEQUENTDIALOGS Method (Dialog)](../methods/devenv-hidesubsequentdialogs-method-dialog.md)  
 [MESSAGE method (Dialog)](../methods/devenv-message-method-dialog.md)  
 [OPEN method (Dialog)](../methods/devenv-open-method-dialog.md)  
 [STRMENU method (Dialog)](../methods/devenv-strmenu-method-dialog.md)  

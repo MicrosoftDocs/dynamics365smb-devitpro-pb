@@ -2,7 +2,7 @@
 title: Microsoft Dynamics NAV Help Server 
 description: The Help functionality deploys to a Dynamics NAV Help Server, which is a website that installs on the specified server.
 ms.custom: na
-ms.date: 10/18/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

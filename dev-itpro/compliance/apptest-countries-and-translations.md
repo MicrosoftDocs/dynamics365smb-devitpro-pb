@@ -3,7 +3,7 @@ title: "Countries and Translations supported"
 description: "Describing a matrix of supported countries with their translations."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 03/06/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,11 +20,11 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |Country|Language Code|
 |-------|-------------|
 |US|en-US|
-|Canada|en-CA </br>fr-CA|
+|Canada|en-CA <br>fr-CA|
 |UK|en-GB|
 |Austria|de-AT|
-|Belgium|nl-BE</br>fr-BE|
-|Switzerland|fr-CH</br>de-CH </br>it-CH|
+|Belgium|nl-BE<br>fr-BE|
+|Switzerland|fr-CH<br>de-CH <br>it-CH|
 |Germany|de-DE|
 |Denmark|da-DK|
 |Netherlands|nl-NL|
@@ -36,6 +36,15 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |Australia|en-AU|
 |New Zealand|en-NZ|
 
+
+## Partner Supported Countries and Translations
+In countries, where Microsoft has not delivered a [localization](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization), partners can build localizations using translation and localization apps that are published in AppSource. You can apply for access to build a localization on top of the international (W1) version of Dynamics 365 Business Central. The following table provides the list of countries and translation supported through partners.
+
+|Country|Language Code|
+|-------|-------------|
+|South Africa|en-ZA|
+|South Korea|ko-KR|
+|United Arab Emirates|en-US|
 
 ## See Also
 [Rules and Guidelines for AL Code](apptest-overview.md)  

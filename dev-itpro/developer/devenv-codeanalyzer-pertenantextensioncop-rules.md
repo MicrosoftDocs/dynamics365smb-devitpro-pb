@@ -3,13 +3,14 @@ title: "PerTenantExtensionCop Analyzer Rules"
 description: "List of rules for PerTenantExtensionCop analyzer."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/13/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
+redirect_url: analyzers/pertenantextensioncop
 ---
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
@@ -29,11 +30,13 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |PTE0006|Encryption key functions must not be invoked.|Encryption key functions must not be invoked.|Encryption key function '{0}' is not allowed.|PackageValidation|Error|true|
 |PTE0007|Test assertion functions are not allowed in a non-test context.|Test assertion functions are not allowed in a non-test context.|Assertion function '{0}' must not be invoked.|PackageValidation|Error|true|
 |PTE0008|Fields must use ApplicationArea property.|Fields must use ApplicationArea property.|Field with name '{0}' must have a value for the ApplicationArea property.|PackageValidation|Error|true|
+|PTE0009|This app.json property must not be used for per-tenant extensions.|The properties 'HelpBaseUrl' and 'SupportedLocales' are reserved for translation apps.|The app.json '{0}' property must not be used for per-tenant extensions.|PackageValidation|Error|true|
 
 
 ## See Also 
 [CodeCop Analyzer Rules](devenv-codeanalyzer-codecop-rules.md)   
 [AppSourceCop Analyzer Rules](devenv-codeanalyzer-appsourcecop-rules.md)   
+[UICop Analyzer Rules](devenv-codeanalyzer-uicop-rules.md)  
 [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](devenv-using-code-analysis-tool-with-rule-set.md)

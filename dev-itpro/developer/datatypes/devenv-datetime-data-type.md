@@ -1,7 +1,7 @@
 ---
 title: "DateTime Data Type"
 ms.custom: na
-ms.date: 04/04/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 3
 
 ## Syntax
 The syntax for defining DateTime format follows the [ISO standard](https://en.wikipedia.org/wiki/ISO_8601). 
-- The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 26th of March, 2018.
+- The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 25th of March, 2018.
 - The syntax for defining Time format is `hhmmssT`, where `T` is the time designator. For example, `093125H`, read as 9:13:25.
 
 ## Methods

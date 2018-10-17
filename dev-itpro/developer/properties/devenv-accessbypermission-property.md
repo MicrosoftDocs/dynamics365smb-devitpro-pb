@@ -1,7 +1,7 @@
 ---
 title: "AccessByPermission Property"
 ms.custom: na
-ms.date: 11/20/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,12 +35,9 @@ Sets a value for a table field or UI element that determines the permission mask
 
 -   Page parts, such as a **Lines** FastTab  
 
-<!--
-> [!NOTE]  
->  To use this property, the **UI Elements Removal** field in the [!INCLUDE[nav_admin](includes/nav_admin_md.md)] must be set to **LicenseFile** or **LicenseFileAndUserPermissions**. For more information, see [How to: Specify When UI Elements Are Removed](How-to--Specify-When-UI-Elements-Are-Removed.md).  
 
-When you choose the **AssistEdit** button, the **Access By Permission** window opens. Fill the fields as described in the following table.  
--->
+> [!NOTE]  
+>  For this property to take effect in the client, the **UI Elements Removal** setting of [!INCLUDE[server](../includes/server.md)] configuration must be set to **LicenseFile** or **LicenseFileAndUserPermissions**. For more information, see [Hide UI Elements](../../administration/hide-ui-elements.md).  
 
 ## Property Values  
 

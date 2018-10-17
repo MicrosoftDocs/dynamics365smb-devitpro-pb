@@ -1,14 +1,12 @@
 ---
 title: "Developing Apps for Dynamics 365 Business Central"
 ms.custom: na
-ms.date: 03/05/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 471299b6-82cd-41cc-b529-8b60ece530a5
-caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 redirect_url: http://www.microsoft.com
 ---

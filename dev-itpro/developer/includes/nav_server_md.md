@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Server
+Dynamics NAV Server

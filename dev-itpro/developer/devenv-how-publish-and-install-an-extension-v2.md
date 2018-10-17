@@ -3,7 +3,7 @@ title: "How to: Publish and Install an Extension v2.0"
 description: "Description of the process of publishing and installing an extension"
 author: jswymer
 ms.custom: na
-ms.date: 03/15/2018
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Synchronizing an extension updates the database schema of the tenant database wi
 
 1.  Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
 
-    <!-- For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). -->
+    <!-- For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview). -->
 
 2.  To publish the extension, run the [Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079).
 
@@ -60,7 +60,7 @@ After you publish and synchronize an extension, you can install it on tenants to
 
 1.  Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
 
-    <!-- For more information, see [Starting a Microsoft Dynamics NAV Administration Shell Session](../Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md#StartAdminShell). -->
+    <!-- For more information, see [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview). -->
 
 2. To install the extension on one or more tenants, use the `Install-NAVApp` cmdlet.
 

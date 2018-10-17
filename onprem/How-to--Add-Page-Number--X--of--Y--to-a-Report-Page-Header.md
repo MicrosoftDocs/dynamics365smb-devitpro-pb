@@ -2,7 +2,7 @@
 title: Add Page Number to Report Header
 description: Each page can have different page names, and page numbering can be reset between pages when you add page breaks to a report page in Dynamics NAV.
 ms.custom: na
-ms.date: 11/08/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

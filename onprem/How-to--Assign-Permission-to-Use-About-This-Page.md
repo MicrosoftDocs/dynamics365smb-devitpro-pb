@@ -2,7 +2,7 @@
 title: Assign Permission to Use About This Page
 description: Add permissions to run About This Report and view information for About This Page by adding the Zoom permission to permission set and assign users to it.
 ms.custom: na
-ms.date: 11/09/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

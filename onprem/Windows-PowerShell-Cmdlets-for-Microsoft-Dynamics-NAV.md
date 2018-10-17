@@ -2,7 +2,7 @@
 title: Windows PowerShell Cmdlets for Dynamics NAV
 description: Windows PowerShell cmdlets for Dynamics NAV includes administration, development, file management of application objects and extension packages.
 ms.custom: na
-ms.date: 10/18/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

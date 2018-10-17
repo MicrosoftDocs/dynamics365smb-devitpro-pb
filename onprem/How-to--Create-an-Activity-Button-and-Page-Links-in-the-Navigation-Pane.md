@@ -2,7 +2,7 @@
 title: Navigation Pane - Activity Button and Page Links
 description: Learn how to create activity buttons and page links for navigation pane with a menu of links by adding actions on the page that defines the Role Center.
 ms.custom: na
-ms.date: 11/28/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

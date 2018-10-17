@@ -2,7 +2,7 @@
 title: Add FastTabs to Customer Card Page
 description: FastTabs replace tabs and enable you to place data in groups on card or task pages. Learn how to add a FastTab control to a customer card page.
 ms.custom: na
-ms.date: 11/07/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

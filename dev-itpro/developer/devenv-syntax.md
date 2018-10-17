@@ -3,7 +3,7 @@ title: "Syntax"
 description: "Description of syntax."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/07/2017
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ From code, you have access to various snippets that will give you a template for
 > [!NOTE]  
 > Use a code snippet from an .al file by start typing the snippet name.
 
-## Examples of snippets
+## <a name="ExamplesOfSnippets"></a> Examples of snippets
 The following is a non-comprehensive list of the snippets that you can use in the AL.
 
 |Type... | To get a... |
