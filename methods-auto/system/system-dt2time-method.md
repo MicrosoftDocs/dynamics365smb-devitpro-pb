@@ -2,7 +2,7 @@
 title: "DT2Time Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DT2Time Method
 Gets the time part of a DateTime object.
 
@@ -24,13 +24,13 @@ Time :=   System.DT2Time(Datetime: DateTime)
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Datetime*  
-&emsp;Type: [DateTime](datetime-data-type.md)  
+&emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
 The DateTime of which to return the time part.  
 
 
 ## Return Value
 *Time*  
-&emsp;Type: [Time](time-data-type.md)  
+&emsp;Type: [Time](../time/time-data-type.md)  
   
 
 

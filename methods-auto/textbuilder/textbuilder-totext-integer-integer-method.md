@@ -2,7 +2,7 @@
 title: "ToText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ToText Method
 Converts the value of a substring of this TextBuilder instance to a Text.
 
@@ -26,17 +26,17 @@ Result :=   TextBuilder.ToText(StartIndex: Integer, Count: Integer)
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
 *StartIndex*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The starting position of the substring in this TextBuilder instance.
         
 *Count*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of characters in the substring.  
 
 
 ## Return Value
 *Result*  
-&emsp;Type: [Text](text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The result text substring.  
 
 

@@ -2,7 +2,7 @@
 title: "AsToken Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AsToken Method
 Converts the value in a JsonObject to a JsonToken data type.
 
@@ -28,7 +28,7 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 ## Return Value
 *Token*  
-&emsp;Type: [JsonToken](jsontoken-data-type.md)  
+&emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  
 The returned JsonToken contains the same data as the JsonObject, but allows for treating the data in a generic manner.  
 
 

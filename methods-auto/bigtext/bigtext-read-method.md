@@ -2,7 +2,7 @@
 title: "Read Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Read Method
 Streams a BigText object that is stored as a BLOB in a table to a BigText variable.
 
@@ -26,13 +26,13 @@ Streams a BigText object that is stored as a BLOB in a table to a BigText variab
 An instance of the [BigText](bigtext-data-type.md) data type.  
 
 *InStream*  
-&emsp;Type: [InStream](instream-data-type.md)  
+&emsp;Type: [InStream](../instream/instream-data-type.md)  
 The InStream object type that you use to stream a BLOB to a BigText variable.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the read transaction was successful, otherwise **false**.  
 
 

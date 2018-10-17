@@ -2,7 +2,7 @@
 title: "WordXmlPart Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # WordXmlPart Method
 Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts. The function has an instance call and a static call. The following code shows the syntax of the WORDXMLPART function. The first line of code is the syntax for an instance function call. The second line of code is the syntax for a static function call.
 
@@ -22,11 +22,11 @@ String :=   Report.WordXmlPart(Number: Integer, [ExtendedFormat: Boolean])
 ```
 ## Parameters
 *Number*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that you want to run. If the report you specify does not exist, then a run-time error occurs.
         
 *ExtendedFormat*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If you set this variable to true, then XML elements will include the following attributes attributes:
 -   ElementType="Parameter|Column|DataItem". Specifies the element type as defined for the report in Report Designer. Parameter is typically used for elements, such as captions.
 -   ElementId="ID". Specifies the ID that is assigned to the element by its ID Property.
@@ -39,7 +39,7 @@ The following example illustrates the same XML with the ExtendedFormat set to tr
 
 ## Return Value
 *String*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The report data structure as structured XML that is compatible with Microsoft Word custom XML parts.  
 
 

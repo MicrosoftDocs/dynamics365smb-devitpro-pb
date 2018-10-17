@@ -2,7 +2,7 @@
 title: "SecurityFiltering Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SecurityFiltering Method
 Gets or sets how security filters are applied to the RecordRef.
 
@@ -28,13 +28,13 @@ Gets or sets how security filters are applied to the RecordRef.
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *NewSecurityFiltering*  
-&emsp;Type: [SecurityFilter](securityfilter-option.md)  
+&emsp;Type: [SecurityFilter](../securityfilter/securityfilter-option.md)  
 The new security filter for the RecordRef.  
 
 
 ## Return Value
 *SecurityFiltering*  
-&emsp;Type: [SecurityFilter](securityfilter-option.md)  
+&emsp;Type: [SecurityFilter](../securityfilter/securityfilter-option.md)  
 The security filter applied to the RecordRef.  
 
 

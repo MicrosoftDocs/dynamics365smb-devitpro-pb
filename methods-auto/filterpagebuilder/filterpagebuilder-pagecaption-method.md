@@ -2,7 +2,7 @@
 title: "PageCaption Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PageCaption Method
  Gets or sets the FilterPageBuilder UI caption. Defaults to the resource text if not explicitly set.
 
@@ -28,13 +28,13 @@ author: solsen
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *PageCaption*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The value to set for the FilterPageBuilder UI caption.  
 
 
 ## Return Value
 *PageCaption*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The current value of the FilterPageBuilder UI caption.  
 
 

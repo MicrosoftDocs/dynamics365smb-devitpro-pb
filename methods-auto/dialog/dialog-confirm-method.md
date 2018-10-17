@@ -2,7 +2,7 @@
 title: "Confirm Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Confirm Method
 Creates a dialog box that prompts the user for a yes or no answer. The dialog box is centered on the screen.
 
@@ -24,20 +24,20 @@ Ok :=   Dialog.Confirm(String: String, [Default: Boolean], [Value1: Any,...])
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *String*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 Specifies the string that is displayed in the dialog box. Use a backslash (\) to indicate a new line. The string can be a text constant that is enabled for multilanguage functionality.
         
 *Default*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies the default button. If you do not specify a default button, then No is used as the default button.  
 *Value1*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
   
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
 
 

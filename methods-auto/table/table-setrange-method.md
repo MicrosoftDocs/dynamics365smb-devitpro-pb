@@ -2,7 +2,7 @@
 title: "SetRange Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SetRange Method
 Sets a simple filter, such as a single range or a single value, on a field.
 
@@ -26,15 +26,15 @@ Sets a simple filter, such as a single range or a single value, on a field.
 An instance of the [Table](table-data-type.md) data type.  
 
 *Field*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 The field that you want to filter.
           
 *FromValue*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 The lower limit of the range. The data type of this parameter must match the data type of Field.
           
 *ToValue*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 The upper limit of the range. If you omit this parameter, then the value that you specified for FromValue is used. The data type of this parameter must match the data type of Field.
           
 

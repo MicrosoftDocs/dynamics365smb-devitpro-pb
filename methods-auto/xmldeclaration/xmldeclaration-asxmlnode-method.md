@@ -2,7 +2,7 @@
 title: "AsXmlNode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/30/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AsXmlNode Method
 Converts the node to an XmlNode.
 
@@ -28,7 +28,7 @@ An instance of the [XmlDeclaration](xmldeclaration-data-type.md) data type.
 
 ## Return Value
 *XmlNode*  
-&emsp;Type: [XmlNode](xmlnode-data-type.md)  
+&emsp;Type: [XmlNode](../xmlnode/xmlnode-data-type.md)  
 An XmlNode value that references the current XmlDeclaration.  
 
 

@@ -2,7 +2,7 @@
 title: "Set Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Set Method
 Sets the element at the specified index.
 
@@ -26,7 +26,7 @@ Sets the element at the specified index.
 An instance of the [List](list-data-type.md) data type.  
 
 *Index*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based index of the element to set.  
 *NewValue*  
 &emsp;Type: [T](list-data-type.md)  
@@ -38,9 +38,8 @@ The value previously associated with the specified index.
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-**true** if the index was within the valid range, otherwise **false**.  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the index was within the valid range, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

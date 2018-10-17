@@ -2,7 +2,7 @@
 title: "SetSelectionFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SetSelectionFilter Method
 Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to "marked only".
 
@@ -26,7 +26,7 @@ Notes the records that the user has selected on the page, marks those records in
 An instance of the [Page](page-data-type.md) data type.  
 
 *Record*  
-&emsp;Type: [Table](table-data-type.md)  
+&emsp;Type: [Table](../table/table-data-type.md)  
   
 
 

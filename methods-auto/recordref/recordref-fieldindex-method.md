@@ -2,7 +2,7 @@
 title: "FieldIndex Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldIndex Method
 Gets the FieldRef of the field that has the specified index in the table that is referred to by the RecordRef.
 
@@ -26,13 +26,13 @@ Field :=   RecordRef.FieldIndex(Index: Integer)
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *Index*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The index of the field.  
 
 
 ## Return Value
 *Field*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
+&emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)  
 The FieldRef of the field that has the specified index.  
 
 

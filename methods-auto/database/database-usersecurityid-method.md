@@ -2,7 +2,7 @@
 title: "UserSecurityId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UserSecurityId Method
 Gets the unique identifier of the user that is logged on to the current session.
 
@@ -26,7 +26,7 @@ USID :=   Database.UserSecurityId()
 
 ## Return Value
 *USID*  
-&emsp;Type: [Guid](guid-data-type.md)  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The ID that is assigned to the user by the application. This is the value of the User Security ID field in table 2000000120, the User table, for the current user.  
 
 

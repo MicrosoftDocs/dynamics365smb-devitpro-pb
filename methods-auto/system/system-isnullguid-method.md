@@ -2,7 +2,7 @@
 title: "IsNullGuid Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IsNullGuid Method
 Indicates whether a value has been assigned to a GUID. A null GUID that consists only of zeros is valid but must never be used for references.
 
@@ -24,13 +24,13 @@ Ok :=   System.IsNullGuid(Guid: Guid)
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Guid*  
-&emsp;Type: [Guid](guid-data-type.md)  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The GUID that you want to check whether it is null.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
 
 

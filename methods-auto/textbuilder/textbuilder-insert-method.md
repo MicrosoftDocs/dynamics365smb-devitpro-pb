@@ -2,7 +2,7 @@
 title: "Insert Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Insert Method
 Inserts a string into this TextBuilder instance at the specified character position.
 
@@ -26,19 +26,18 @@ Inserts a string into this TextBuilder instance at the specified character posit
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
 *Position*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The position in this TextBuilder instance where insertion begins.
         
 *Text*  
-&emsp;Type: [Text](text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The string to insert.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-**true** if the insertion of the specified succeeded, otherwise **false**.  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the insertion of the specified succeeded, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

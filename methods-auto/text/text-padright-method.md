@@ -2,7 +2,7 @@
 title: "PadRight Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PadRight Method
 Returns a new string that left-aligns the characters in this string by padding them with spaces on the right, for a specified total length.
 
@@ -28,11 +28,11 @@ Result :=   Text.PadRight(Count: Integer, [Char: Char])
 An instance of the [Text](text-data-type.md) data type.  
 
 *Count*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of characters in the resulting string, equal to the number of original characters plus any additional padding characters.
         
 *Char*  
-&emsp;Type: [Char](char-data-type.md)  
+&emsp;Type: [Char](../char/char-data-type.md)  
 A padding character.  
 
 

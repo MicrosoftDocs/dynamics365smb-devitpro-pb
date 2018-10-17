@@ -2,7 +2,7 @@
 title: "SetRange Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SetRange Method
 Sets a simple filter on a field, such as a single range or a single value.
 
@@ -26,11 +26,11 @@ Sets a simple filter on a field, such as a single range or a single value.
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *FromValue*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 The lower limit of the range. The data type of FromValue must match the data type of the field referred to by FieldRef.
         
 *ToValue*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 The upper limit of the range. If you omit this parameter, the FromValue you specified is used. The data type of ToValue must match the data type of the field referred to by FieldRef.  
 
 

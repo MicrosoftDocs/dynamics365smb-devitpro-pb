@@ -2,7 +2,7 @@
 title: "Caption Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Caption Method
 Gets the caption of the table that is currently selected. Returns an error if no table is selected.
 
@@ -30,7 +30,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
 *Caption*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The caption of the table.  
 
 

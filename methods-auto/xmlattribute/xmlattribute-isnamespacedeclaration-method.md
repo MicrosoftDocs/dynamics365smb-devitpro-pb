@@ -2,7 +2,7 @@
 title: "IsNamespaceDeclaration Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/30/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IsNamespaceDeclaration Method
 Determines if this attribute is a namespace declaration.
 
@@ -30,7 +30,7 @@ An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 
 ## Return Value
 *IsNamespaceDeclaration*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the attribute represents a namespace declaration, otherwise **false**.  
 
 

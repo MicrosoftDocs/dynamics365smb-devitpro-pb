@@ -2,7 +2,7 @@
 title: "StartSession Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # StartSession Method
 Starts a session without a UI and runs the specified codeunit.
 
@@ -24,28 +24,27 @@ Starts a session without a UI and runs the specified codeunit.
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *SessionId*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the new session that is started. The ID is assigned to the SessionID variable after the session is started successfully. This parameter is passed by reference to the function.
           
 *CodeunitId*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the codeunit to run when the session is started.
         
 *Company*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The company in which to start the session. By default, the session is started in the same company as the calling session.
         
 *Record*  
-&emsp;Type: [Table](table-data-type.md)  
+&emsp;Type: [Table](../table/table-data-type.md)  
 A record that is passed to the OnRun trigger of the codeunit that runs when the session is started. This parameter is optional.
           
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

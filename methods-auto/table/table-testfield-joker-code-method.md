@@ -2,7 +2,7 @@
 title: "TestField Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestField Method
 Tests whether the contents of a field match a given value.
 
@@ -26,11 +26,11 @@ Tests whether the contents of a field match a given value.
 An instance of the [Table](table-data-type.md) data type.  
 
 *Field*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 The field that you want to test.
           
 *Value*  
-&emsp;Type: [Code](code-data-type.md)  
+&emsp;Type: [Code](../code/code-data-type.md)  
 The value that you want to compare to Field. The data type of this parameter must match the data type of Field. If you include this optional parameter and the contents of Field do not match, then an error message is displayed. If you omit this parameter and the contents of Field is zero or blank (empty string), then an error message is displayed.
           
 

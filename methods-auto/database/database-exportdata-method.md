@@ -2,7 +2,7 @@
 title: "ExportData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ExportData Method
 Exports data from the database to a file. The data is not deleted from the database.
 
@@ -24,39 +24,38 @@ Exports data from the database to a file. The data is not deleted from the datab
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *ShowDialog*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if you want to display a dialog box where the user can confirm the action.
         
 *FileName*  
-&emsp;Type: [Text](text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the name and location of the file that the data must be exported to. The file must have the .navdata extension.
         
 *Description*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 Specifies a description for the exported data.
         
 *IncludeApplication*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if you want to export the application objects. Create a variable of type Boolean to specify this parameter.
           
 *IncludeApplicationData*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if you want to export the data that defines the application in the database. This includes the permissions, permission sets, profiles, and style sheets. Create a variable of type Boolean to specify this parameter.
           
 *IncludeGlobalData*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if you want to export global, non-company specific data. Create a variable of type Boolean to specify this parameter.
           
 *CompanyRecord*  
-&emsp;Type: [Table](table-data-type.md)  
+&emsp;Type: [Table](../table/table-data-type.md)  
 Specifies the company or companies that must be imported.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "EnsureCapacity Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # EnsureCapacity Method
 Ensures that the capacity of this TextBuilder instance is at least the specified value.
 
@@ -26,15 +26,14 @@ Ensures that the capacity of this TextBuilder instance is at least the specified
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
 *NewCapacity*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The minimum capacity to ensure.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-**true** if the capacity of the TextBuilder is at least the specified value, otherwise **false**.  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the capacity of the TextBuilder is at least the specified value, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

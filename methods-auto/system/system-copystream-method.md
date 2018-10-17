@@ -2,7 +2,7 @@
 title: "CopyStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CopyStream Method
 Copies the information that is contained in an InStream to an OutStream.
 
@@ -24,23 +24,22 @@ Copies the information that is contained in an InStream to an OutStream.
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *OutStream*  
-&emsp;Type: [OutStream](outstream-data-type.md)  
+&emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
 The OutStream object to which you will copy the information; the destination stream.
         
 *InStream*  
-&emsp;Type: [InStream](instream-data-type.md)  
+&emsp;Type: [InStream](../instream/instream-data-type.md)  
 The InStream object from which you want to copy; the source stream.
         
 *BytesToRead*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
   
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

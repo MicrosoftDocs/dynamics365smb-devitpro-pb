@@ -2,7 +2,7 @@
 title: "Write Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Write Method
 Writes to an MS-DOS encoded file or binary file.
 
@@ -28,7 +28,7 @@ Writes to an MS-DOS encoded file or binary file.
 An instance of the [File](file-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [DateTime](datetime-data-type.md)  
+&emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
 The data that you want to write to the file.  
 
 

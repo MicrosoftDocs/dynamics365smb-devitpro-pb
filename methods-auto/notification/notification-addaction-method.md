@@ -2,7 +2,7 @@
 title: "AddAction Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AddAction Method
 Specifies an action for the notification.
 
@@ -26,15 +26,15 @@ Specifies an action for the notification.
 An instance of the [Notification](notification-data-type.md) data type.  
 
 *Caption*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The text string that appears as the caption of the action in the notification UI. The string can be a text constant that is enabled for multilanguage functionality.
         
 *CodeunitID*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the Codeunit to run when the action is initiated from the notification UI. The codeunit should contain at least one global function to be called by the notification action. The global function must have a Notification data type parameter for accepting the notification object.
         
 *MethodName*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the method in the Codeunit, which is specified by the CodeunitID parameter, that you want to run for the action.  
 
 
