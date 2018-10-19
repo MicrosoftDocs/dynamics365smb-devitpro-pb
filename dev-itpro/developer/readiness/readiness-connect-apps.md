@@ -3,7 +3,7 @@ title: "Connect Apps"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/18/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,16 +13,16 @@ ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-# Connect Apps 
+# Connect Apps
 
 ## What is a Connect app?
 A Connect app can be used in the scenario where there must be established a point-to-point connection between [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and a 3rd party solution or service.
 
-Online service offerings like payroll, expense management, web-shops, project planning etc. typically have many connection points. Connect apps allow you to make connections between these online service offerings and your business solution. This connection can be achieved on a data level without needing to do development. Therefore, by reusing these connection points Connect apps provides you with the opportunity to reuse your investments from REST integrations with other Cloud Services. 
+Online service offerings like payroll, expense management, web-shops, project planning etc. typically have many connection points. Connect apps allow you to make connections between these online service offerings and your business solution. This connection can be achieved on a data level without needing to do development. Therefore, by reusing these connection points Connect apps provides you with the opportunity to reuse your investments from REST integrations with other Cloud Services.  
 
 Optionally, you can add a custom interface in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], which determines how your data needs to flow between [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] and your online service offering. In this case we advise you to follow the guidance specified in the designated [Add-on apps page](readiness-add-on-apps.md).
 
-## Examples of some of the current Connect apps on AppSource 
+## Examples of some of the current Connect apps on AppSource
 
 - [Shopify Connector from Scapta](https://appsource.microsoft.com/en-us/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview)
     - This Connect app integrates [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to web shops, which is generally useful for companies selling items or services.
@@ -30,6 +30,10 @@ Optionally, you can add a custom interface in [!INCLUDE[d365_bus_central_md](../
 - [Expensify from Stoneridge Software LLC](https://appsource.microsoft.com/da/product/dynamics-365-business-central/PUBID.stoneridge-software%7CAID.aaa85e5d-7f2d-473b-9e9e-d924795fcef1%7CPAPPID.99c36e84-67a4-422a-b8d9-5297c6ebfca5)
     - This Connect app integrates [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to an accounting solution, which is generally useful for companies of all shapes that wants to save time with automated expense management.
     - Expensify is a complete accounting solution that allows companies to automate every step of the expense reporting process, from receipt scanning to flagging the receipts that need human attention and automatically submitting and approving everything else. With multi-level approval workflows, Expensify gives you complete control and visibility over company finances.
+- [ADP Workforce Now Outbound Integration](https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/TYPE.connect%7CPUBID.adp%7CAID.msd_365_financial_erp_outbound_integration_app%7CPAPPID.00000000-0000-0000-0000-000000000000?tab=Overview)
+
+    - This Connect app integrates [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to an HCM system, which allows for handling people data with business management processes real-time.
+    - ADP Workforce Now helps eliminate tedious administrative tasks and inefficiencies by incorporating people data and leveraging real time information that can help you manage finance issues.  Simplify and streamline the way you do business. Features include: General Ledger Data Integration, Employee Data Integration and more!
 
 ## How do I develop a Connect app?
 Connect apps are typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. Therefore, you can use your favorite REST API client to start exploring the APIs.
@@ -50,7 +54,6 @@ To ease your journey, from the initial listing to the final publication of your 
 - [Getting you started with Microsoft Dynamics 365 Business Central Connect Apps](https://go.microsoft.com/fwlink/?linkid=2005501)
 - [Developing and publishing your Microsoft Dynamics 365 Business Central Connect App to AppSource](https://go.microsoft.com/fwlink/?linkid=2005402)
 
- 
 ## Where do I learn more about Connect apps? 
 To learn more about how to develop Connect apps, select the following links:  
 
