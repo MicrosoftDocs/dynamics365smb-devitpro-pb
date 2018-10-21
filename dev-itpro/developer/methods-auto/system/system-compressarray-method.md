@@ -45,7 +45,7 @@ The string array that you want to compress.
   
  For example, "Redmond", "Copenhagen", "", "Fargo", "Paris" is changed to "Redmond", "Copenhagen", "Fargo", "Paris", "".  
   
- In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], it is not supported to use the **COMPRESSARRAY** method on multidimensional arrays. In earlier versions, **COMPRESSARRAY** works for arrays of arrays.  
+ In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], it is not supported to use the **COMPRESSARRAY** method on multidimensional arrays. In earlier versions, **COMPRESSARRAY** works for arrays of arrays.  
   
 ## Example  
  This example shows how to use the **COMPRESSARRAY** method. The input array has the following values.  

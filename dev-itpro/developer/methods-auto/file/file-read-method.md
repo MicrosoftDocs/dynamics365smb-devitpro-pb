@@ -45,11 +45,11 @@ If you omit this optional return value and the operation does not execute succes
  <!-- For more information, see [How to: Use Streams to Read from Text Files](How-to-Use-Streams-to-Read-from-Text-Files.md).  
  --> 
   
- MS-DOS encoding, which is also referred to as OEM encoding, is an older format than UTF-8 and UTF-16, but it is still widely supported. MS-DOS encoding was the only format that was supported by earlier versions of [!INCLUDE[d365fin_md](../includes/d365fin_md.md)].  
+ MS-DOS encoding, which is also referred to as OEM encoding, is an older format than UTF-8 and UTF-16, but it is still widely supported. MS-DOS encoding was the only format that was supported by earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)].  
   
  MS-DOS encoding requires a different character set for each language. MS-DOS text is encoded to the internal Unicode data type by using the system locale language of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. If you read a file that uses MS-DOS encoding, then you must set the system locale language of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to match the language of the data in the file that is being read. For example, if the file contains text in Danish, then you must set the system locale language of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to Danish before you call the **READ** method \(FILE\) or [WRITE Method \(File\)](../../methods/devenv-write-method-file.md).  
   
- We recommend that you use the File data type for files that were created in earlier versions of [!INCLUDE[d365fin_md](../includes/d365fin_md.md)].  
+ We recommend that you use the File data type for files that were created in earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)].  
   
  To read or write files in Unicode or in other formats, we recommend that you use .NET Framework interoperability and use the [System.IO Namespace](http://go.microsoft.com/fwlink/?LinkId=262250).  
   

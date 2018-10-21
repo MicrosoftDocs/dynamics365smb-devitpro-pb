@@ -46,7 +46,7 @@ Specifies whether to run the AL code in the OnModify Trigger. If this parameter 
   
  **Enter your changes again in the updated window, or start the interrupted activity again.**  
   
- In earlier versions of [!INCLUDE[d365fin_md](../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], we have restricted the **MODIFY** Method \(Record\), [RENAME Method \(Record\)](../../methods/devenv-rename-method-record.md), and [DELETE Method \(Record\)](../../methods/devenv-delete-method-record.md) so that the end-user receives the following run-time error in these certain situations:  
+ In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], we have restricted the **MODIFY** Method \(Record\), [RENAME Method \(Record\)](../../methods/devenv-rename-method-record.md), and [DELETE Method \(Record\)](../../methods/devenv-delete-method-record.md) so that the end-user receives the following run-time error in these certain situations:  
   
  **Unable to change an earlier version of the \<Table Name> record. The record should be read from the database again. This is a programming error.**  
   
@@ -96,7 +96,7 @@ MESSAGE(Text001 + '%2', CustomerRec."No.", CustomerRec.Name);
 |CustomerRec1|Record|Customer|  
 |CustomerRec2|Record|Customer|  
   
- In this example, you get a copy of a record from the Customer table and put it into the CustomerRec1 variable, then you modify the record. Next, you get a copy of the same record from the Customer table and put it into the CustomerRec2 variable. You modify the record and commit the changes to the database. Now the CustomerRec1 variable is out of date with the value in the database. If you were allowed to modify the database with the CustomerRec1 record, then the Phone No. field that you modified with CustomerRec2 would be overwritten by the old value of the Phone No. field that is in the CustomerRec1 variable. [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] does not allow you to modify the database with the old version of the record.  
+ In this example, you get a copy of a record from the Customer table and put it into the CustomerRec1 variable, then you modify the record. Next, you get a copy of the same record from the Customer table and put it into the CustomerRec2 variable. You modify the record and commit the changes to the database. Now the CustomerRec1 variable is out of date with the value in the database. If you were allowed to modify the database with the CustomerRec1 record, then the Phone No. field that you modified with CustomerRec2 would be overwritten by the old value of the Phone No. field that is in the CustomerRec1 variable. [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] does not allow you to modify the database with the old version of the record.  
   
 > [!NOTE]  
 >  If you do not call the COMMIT method in this example, then you do not receive an error.  

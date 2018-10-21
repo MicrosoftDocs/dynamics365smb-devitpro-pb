@@ -59,7 +59,7 @@ The path and name of the file that you want to save the query to.
  To resolve this issue, verify that the service account that is running the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance has write permissions on the path.  
 
 ## Example  
- This example shows how to use the SAVEASXML method to save a report as an .xml file on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a  computer that is running the [!INCLUDE[d365fin_md](../includes/d365fin_md.md)]. This example requires that you create the following variables.  
+ This example shows how to use the SAVEASXML method to save a report as an .xml file on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a  computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. This example requires that you create the following variables.  
 
 |Variable name|DataType|Length|  
 |-------------------|--------------|------------|  

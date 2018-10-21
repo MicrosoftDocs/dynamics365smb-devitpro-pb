@@ -44,7 +44,7 @@ An instance of the [Table](table-data-type.md) data type.
 ## Remarks  
  When you add a link to a page or a table, an entry is created in the **Record Link** system table. Each entry is given an ID.  
 
- The URL can be a link to a website, a file stored on the local computer or on a remote computer, or a link to a [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] page.  
+ The URL can be a link to a website, a file stored on the local computer or on a remote computer, or a link to a [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] page.  
 
 ## Example  
  In this example, you get the customer record that has a primary key number of 15000 and then add the specified URL to the **Record Link** table for that customer. You can then view the link in the **Links** FactBox on the Customer list or Customer card pages. This example requires that you create the following variables.  

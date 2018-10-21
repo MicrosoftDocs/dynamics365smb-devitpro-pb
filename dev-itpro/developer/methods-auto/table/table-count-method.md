@@ -44,7 +44,7 @@ An instance of the [Table](table-data-type.md) data type.
 >
 >  The **COUNT** method does not lock the table before retrieving the number of records in the table. This means that the method reads both uncommitted and committed data, which could cause the number of records that are returned to be inaccurate. To ensure that the count is accurate, use the [LOCKTABLE Method \(Record\)](../../methods/devenv-locktable-method-record.md) before you use the **COUNT** method.  
 
- In previous versions of [!INCLUDE[d365fin_md](../includes/d365fin_md.md)], the **COUNT** method ignored security filters and always returned the total number of records unless you called the **SETPERMISSIONFILTER** method to get a filtered count. In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], the **COUNT** method adheres to the [SecurityFiltering Property](../../properties/devenv-securityfiltering-property.md). <!--Links For more information, see [Security Filter Modes](Security-Filter-Modes.md)-->.  
+ In previous versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], the **COUNT** method ignored security filters and always returned the total number of records unless you called the **SETPERMISSIONFILTER** method to get a filtered count. In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], the **COUNT** method adheres to the [SecurityFiltering Property](../../properties/devenv-securityfiltering-property.md). <!--Links For more information, see [Security Filter Modes](Security-Filter-Modes.md)-->.  
 
 ## Example  
  This example requires that you create the following variables.  

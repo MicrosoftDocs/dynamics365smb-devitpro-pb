@@ -44,13 +44,13 @@ An instance of the [Table](table-data-type.md) data type.
 ## Remarks  
 **SetCurrentKey** is used to sort the contents of the table on the provided fields and select the key that contains the specified fields if possible. This key becomes the current key and is used by the [FIND Method \(Record\)](../../methods/devenv-find-method-record.md), the [NEXT Method \(Record\)](../../methods/devenv-next-method-record.md), and other methods until another key is selected. Until this method is called, the table's primary key is used as the current key.  
   
-In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], the [CALCFIELDS Method \(Record\)](../../methods/devenv-calcfields-method-record.md), [CALCSUMS Method \(Record\)](../../methods/devenv-calcsums-method-record.md) and [CALCSUM Method \(FieldRef\)](../../methods/devenv-calcsum-method-fieldref.md) do not require that a SIFT index is defined for the fields that are being calculated. Therefore, you do not need to define keys solely for SIFT indexes. Fewer SIFT indexes and fewer keys can improve performance. In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], an index is not required to support a certain sorting, but sorting without an index could lead to bad performance if a search returns a large result set, which would then have to be sorted before the first row is returned.  
+In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], the [CALCFIELDS Method \(Record\)](../../methods/devenv-calcfields-method-record.md), [CALCSUMS Method \(Record\)](../../methods/devenv-calcsums-method-record.md) and [CALCSUM Method \(FieldRef\)](../../methods/devenv-calcsum-method-fieldref.md) do not require that a SIFT index is defined for the fields that are being calculated. Therefore, you do not need to define keys solely for SIFT indexes. Fewer SIFT indexes and fewer keys can improve performance. In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], an index is not required to support a certain sorting, but sorting without an index could lead to bad performance if a search returns a large result set, which would then have to be sorted before the first row is returned.  
   
 Use the following guidelines when you use **SetCurrentKey**:  
   
 -   Inactive fields are ignored. Only active keys are scanned.  
   
--   When searching for a key, [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] selects the first occurrence of the specified field\(s\). This means the following:  
+-   When searching for a key, [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] selects the first occurrence of the specified field\(s\). This means the following:  
   
     -   If you specify only one field as a parameter when you call **SetCurrentKey**, then the key that is actually selected may consist of more than one field.  
   

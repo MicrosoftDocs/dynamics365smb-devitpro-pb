@@ -57,7 +57,7 @@ MESSAGE(Text000, SN);
  **W1-ZA-002-6R75A-7**  
   
 > [!NOTE]  
-> The serial number depends on your licensed version of [!INCLUDE[d365fin_md](../includes/d365fin_md.md)]. The serial number shown here is an example.
+> The serial number depends on your licensed version of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. The serial number shown here is an example.
 
 ## See Also
 [Database Data Type](database-data-type.md)  

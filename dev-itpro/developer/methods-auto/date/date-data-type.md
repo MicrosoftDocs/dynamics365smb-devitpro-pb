@@ -36,9 +36,9 @@ The syntax for defining DateTime format follows the [ISO standard](https://en.wi
  To assign a closing date to a variable, use the [CLOSINGDATE method (Date)](../../methods/devenv-closingdate-method-date.md).  
   
 ## Storing dates in the SQL server database  
- SQL Server stores information about both date and time in columns of the DATETIME types. For date fields, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] uses only the date and uses a constant value for the time. For a normal date, this constant value contains 00:00:00:000. For a closing date, it contains 23:59:59:000.  
+ SQL Server stores information about both date and time in columns of the DATETIME types. For date fields, [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] uses only the date and uses a constant value for the time. For a normal date, this constant value contains 00:00:00:000. For a closing date, it contains 23:59:59:000.  
   
- The [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] undefined date is represented by the earliest valid date in SQL Server. The earliest valid date in SQL Server for a DATETIME is 01-01-1753 00:00:00:000.  
+ The [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] undefined date is represented by the earliest valid date in SQL Server. The earliest valid date in SQL Server for a DATETIME is 01-01-1753 00:00:00:000.  
   
  If you store a date in the database that is outside the valid range for a SQL DATETIME, a run-time error occurs.  
 

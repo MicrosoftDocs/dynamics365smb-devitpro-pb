@@ -39,7 +39,7 @@ The length of the string.
 ## Remarks  
  The difference between the STRLEN method and the [MAXSTRLEN Method \(Code, Text\)](../../methods/devenv-maxstrlen-method-code-text.md) is that the STRLEN returns the actual number of characters in the input string, whereas MAXSTRLEN returns the maximum defined length of the input string.  
   
- In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], if you call STRLEN on a Variant, then you get an error that the contents of the parameter are not valid. In earlier versions of [!INCLUDE[d365fin_md](../includes/d365fin_md.md)], if you call STRLEN on a Variant, then 0 is returned.  
+ In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], if you call STRLEN on a Variant, then you get an error that the contents of the parameter are not valid. In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], if you call STRLEN on a Variant, then 0 is returned.  
   
 ## Example  
  This example shows the difference between the STRLEN and the MAXSTRLEN methods.  
