@@ -272,7 +272,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 -->
 ### [Methods](developer/methods-auto/library.md)
 #### [Action Option](developer/methods-auto/action/action-option.md)
-#### [Any Data Type(developer/methods-auto/any/any-data-type.md)
+#### [Any Data Type](developer/methods-auto/any/any-data-type.md)
 #### [BigInteger Data Type](developer/methods-auto/biginteger/biginteger-data-type.md)  
 #### [BigText Data Type](developer/methods-auto/bigtext/bigtext-data-type.md)     
 #### [Blob Data Type](developer/methods-auto/blob/blob-data-type.md)   
