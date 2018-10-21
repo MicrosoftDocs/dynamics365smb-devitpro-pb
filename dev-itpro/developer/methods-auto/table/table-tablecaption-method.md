@@ -37,7 +37,7 @@ An instance of the [Table](table-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- **TABLECAPTION** returns the caption of a table. **TABLECAPTION** first looks for a [CaptionML Property](../properties/devenv-CaptionML-Property.md). If it does not find one, it uses the [Name Property](../properties/devenv-Name-Property.md). This means that **TABLECAPTION** has multilanguage functionality.  
+ **TABLECAPTION** returns the caption of a table. **TABLECAPTION** first looks for a [CaptionML Property](../../properties/devenv-captionml-property.md). If it does not find one, it uses the [Name Property](../../properties/devenv-name-property.md). This means that **TABLECAPTION** has multilanguage functionality.  
   
 ## Example  
  The following example retrieves the caption of the **Customer** table by using the CustomerRec variable, a record from the **Customer** table. The value of the **Customer** table caption is stored in the TableCaption variable and displayed in a message box. The value that is displayed is Customer. This example requires that you create the following global variables.  

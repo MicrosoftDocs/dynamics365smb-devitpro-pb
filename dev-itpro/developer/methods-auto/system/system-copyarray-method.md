@@ -47,10 +47,10 @@ The number of array elements to copy. If you do not specify Length, all array el
 ## Remarks  
  You can only copy from one-dimensional arrays. Repeat the COPYARRAY method to copy two-dimensional and three-dimensional arrays.  
 
- You cannot copy an array if the data type of the array is a complex data type. For more information about complex data types, see [AL Data Types](../datatypes/devenv-al-data-types.md).  
+ You cannot copy an array if the data type of the array is a complex data type. For more information about complex data types, see [AL Data Types](../../datatypes/devenv-al-data-types.md).  
 
 ## Example  
- The following example assigns values to Array1 and copies values from Array1 to Array2. Array1 is an integer array with the [Dimensions Property](../properties/devenv-Dimensions-Property.md) set to 10. It contains integers from 1 to 10. The example code copies the numbers 6, 7, 8, 9, and 10 to Array2, an integer array with the **Dimensions** property set to 5. This example requires that you create the following global variables.  
+ The following example assigns values to Array1 and copies values from Array1 to Array2. Array1 is an integer array with the [Dimensions Property](../../properties/devenv-dimensions-property.md) set to 10. It contains integers from 1 to 10. The example code copies the numbers 6, 7, 8, 9, and 10 to Array2, an integer array with the **Dimensions** property set to 5. This example requires that you create the following global variables.  
 
 |Variable name|DataType|Dimension|  
 |-------------------|--------------|---------------|  

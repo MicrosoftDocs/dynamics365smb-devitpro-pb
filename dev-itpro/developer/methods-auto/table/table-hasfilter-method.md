@@ -37,7 +37,7 @@ An instance of the [Table](table-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example uses the **HASFILTER** method to determine whether the **Customer** table that contains the MyRecord record has a filter. The method returns **No** because the MyRecord record has no filters. The return value is displayed in a message box. The [SETFILTER Method \(Record\)](devenv-SETFILTER-Method-Record.md) is then used to set a filter for the table. This time, the return value is **Yes** because the table now has a filter. This example requires that you create the following global variables.  
+ The following example uses the **HASFILTER** method to determine whether the **Customer** table that contains the MyRecord record has a filter. The method returns **No** because the MyRecord record has no filters. The return value is displayed in a message box. The [SETFILTER Method \(Record\)](../../methods/devenv-setfilter-method-record.md) is then used to set a filter for the table. This time, the return value is **Yes** because the table now has a filter. This example requires that you create the following global variables.  
   
 |Variable name|DataType|Subtype|  
 |-------------------|--------------|-------------|  

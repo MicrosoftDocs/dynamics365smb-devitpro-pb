@@ -38,13 +38,13 @@ The identifier (variable) of any AL data type, including simple and composite da
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- Use the [CLEARALL Method](devenv-CLEARALL-Method.md) to clear all internal variables, keys, and filters in the object and in any associated objects such as reports, pages, and codeunits that contain AL code. Note, however, that **CLEARALL** does not affect or change values for variables in single instance codeunits.  
+ Use the [CLEARALL Method](../../methods/devenv-clearall-method.md) to clear all internal variables, keys, and filters in the object and in any associated objects such as reports, pages, and codeunits that contain AL code. Note, however, that **CLEARALL** does not affect or change values for variables in single instance codeunits.  
 
- For a composite data type, such as a record or an array, all elements are cleared. Furthermore, all fields in a record will be initialized with the [InitValue Property](../properties/devenv-InitValue-Property.md) of the field.  
+ For a composite data type, such as a record or an array, all elements are cleared. Furthermore, all fields in a record will be initialized with the [InitValue Property](../../properties/devenv-initvalue-property.md) of the field.  
 
- **CLEAR** can also be used on the [GUID Data Type](../datatypes/devenv-GUID-Data-Type.md). It converts the GUID to zeros. Use the [CREATEGUID Method \(GUID\)](devenv-CREATEGUID-Method-GUID.md) to create a new unique GUID.  
+ **CLEAR** can also be used on the [GUID Data Type](../../datatypes/devenv-guid-data-type.md). It converts the GUID to zeros. Use the [CREATEGUID Method \(GUID\)](../../methods/devenv-createguid-method-guid.md) to create a new unique GUID.  
 
- **CLEAR** can also be used to deselect a company. For more information, see [CHANGECOMPANY Method \(Record\)](devenv-CHANGECOMPANY-Method-Record.md).  
+ **CLEAR** can also be used to deselect a company. For more information, see [CHANGECOMPANY Method \(Record\)](../../methods/devenv-changecompany-method-record.md).  
 
 >!-- not relevant in web client/d365
 For an Automation object, **CLEAR** releases the Automation object and decreases the reference count. The Automation server determines if this should cause a shutdown. After **CLEAR**, you can use the [CREATE Method \(Automation\)](devenv-CREATE-Method-Automation.md) on the Automation variable to create a new instance of the object.  -->;

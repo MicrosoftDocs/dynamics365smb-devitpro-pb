@@ -42,7 +42,7 @@ The name of the company to which you want to change. If you omit this parameter,
 ## Remarks  
  When executing this method, the user's access rights are respected. For example, a user cannot access data in *CompanyName* unless he already has the necessary access rights.  
   
- The **CHANGECOMPANY** method is not affected by the [RESET Method \(Record\)](devenv-RESET-Method-Record.md). You can deselect a company by making a new call to **CHANGECOMPANY** or by using the [CLEAR Method](devenv-CLEAR-Method.md).  
+ The **CHANGECOMPANY** method is not affected by the [RESET Method \(Record\)](../../methods/devenv-reset-method-record.md). You can deselect a company by making a new call to **CHANGECOMPANY** or by using the [CLEAR Method](../../methods/devenv-clear-method.md).  
   
  Global filters always belong to a specific company. If you use the following code to select the company named NewCompany, any filters assigned to *Record* will be transferred to *Record* in the new company.  
   

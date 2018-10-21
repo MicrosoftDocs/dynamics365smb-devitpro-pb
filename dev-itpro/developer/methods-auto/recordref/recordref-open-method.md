@@ -42,7 +42,7 @@ The name of the company to which you want to change. If you omit this parameter,
 ## Remarks  
  When you use the RecordRef.OPEN method a new object is created. This object contains references to the open table, filters, and the record itself and all the fields it contains. You can open a table by using the table number or the name of the table that represents the table number. For example, you open the Customer table by using following syntax: `RecordRef.Open(18)` or `RecordRef.Open(DATABASE::Customer)`  
   
- If you use the *CompanyName* parameter, then this method works the same as the [CHANGECOMPANY Method \(Record\)](devenv-CHANGECOMPANY-Method-Record.md).  
+ If you use the *CompanyName* parameter, then this method works the same as the [CHANGECOMPANY Method \(Record\)](../../methods/devenv-changecompany-method-record.md).  
 
 ## Limitations 
  In the development settings, you can specify the allowed target level when publishing the extension, which includes the following options; Internal, Extension, Solution, and Personalization. When you set the **target** as `Internal`, this allows you to access all the table data with no restrictions in [!INCLUDE[navnow_md](../includes/navnow_md.md)]. However, you cannot publish the extension to the AppSource. <!-- For more information, see [Development Settings](../../configuring-microsoft-dynamics-nav-server.md#development-settings). -->
@@ -52,7 +52,7 @@ The name of the company to which you want to change. If you omit this parameter,
 var r : record 2000000006;
 ```
 ## Example  
- The following example uses the OPEN method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a message box. At the end of the display, the [CLOSE Method \(RecordRef\)](devenv-CLOSE-Method-RecordRef.md) closes the table. This example requires that you create the following global variable and text constants.  
+ The following example uses the OPEN method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a message box. At the end of the display, the [CLOSE Method \(RecordRef\)](../../methods/devenv-close-method-recordref.md) closes the table. This example requires that you create the following global variable and text constants.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

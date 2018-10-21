@@ -34,14 +34,14 @@ The value to insert in the field.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The VALIDATE method first checks any [TableRelation Property](../properties/devenv-TableRelation-Property.md), and then executes the [OnValidate \(Fields\) Trigger](../triggers/devenv-OnValidate-Fields-Trigger.md) of the field.  
+ The VALIDATE method first checks any [TableRelation Property](../../properties/devenv-tablerelation-property.md), and then executes the [OnValidate \(Fields\) Trigger](../../triggers/devenv-onvalidate-fields-trigger.md) of the field.  
 
  If you omit *NewValue*, the method validates the current value.  
 
- This method is like the [VALIDATE Method \(Record\)](devenv-VALIDATE-Method-Record.md).  
+ This method is like the [VALIDATE Method \(Record\)](../../methods/devenv-validate-method-record.md).  
 
 ## Example  
- The following example opens table 17 \(G/L Entry\) as a RecordRef that is named EntryRecref. The [FINDFIRST Method \(RecordRef\)](devenv-FINDFIRST-Method-RecordRef.md) searches for the first record in the table. The [FIELD Method \(RecordRef\)](devenv-FIELD-Method-RecordRef.md) sets the field to 3, which is the G/L Account No. field. The **VALIDATE** method validates and inserts the specified value \(1210\) into the field. The [MODIFY Method \(RecordRef\)](devenv-MODIFY-Method-RecordRef.md) modifies the table. A message that indicates the G/L Account No. field has changed is displayed. To show that the code in the **OnValidate** trigger is executed, design the **G/L Entry** table and add the following code to the **G/L Account No. – OnValidate** trigger: `MESSAGE('The OnValidate trigger is called.');`  
+ The following example opens table 17 \(G/L Entry\) as a RecordRef that is named EntryRecref. The [FINDFIRST Method \(RecordRef\)](../../methods/devenv-findfirst-method-recordref.md) searches for the first record in the table. The [FIELD Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) sets the field to 3, which is the G/L Account No. field. The **VALIDATE** method validates and inserts the specified value \(1210\) into the field. The [MODIFY Method \(RecordRef\)](../../methods/devenv-modify-method-recordref.md) modifies the table. A message that indicates the G/L Account No. field has changed is displayed. To show that the code in the **OnValidate** trigger is executed, design the **G/L Entry** table and add the following code to the **G/L Account No. – OnValidate** trigger: `MESSAGE('The OnValidate trigger is called.');`  
 
  This example requires that you create the following global variables and text constants.  
 

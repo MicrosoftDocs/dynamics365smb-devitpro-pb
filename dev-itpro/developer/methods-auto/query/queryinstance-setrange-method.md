@@ -45,7 +45,7 @@ he upper limit of the range. The data type of this parameter must match the data
 ## Remarks  
  SETRANGE is a quick way to set a simple filter on a field. The SETRANGE method is functionally equivalent to calling *Query*.SetFilter\(ColumnName, ‘FromValue..ToValue’\).  
   
- To apply filters to a dataset, the **SETRANGE** method must be called before the **OPEN**, **SAVEASXML**, and **SAVEASCSV** methods, as shown in the following example. To remove filters, you call the [CLEAR Method](devenv-CLEAR-Method.md) or **SETRANGE** without values for the *FromValue* and *ToValue* parameters.  
+ To apply filters to a dataset, the **SETRANGE** method must be called before the **OPEN**, **SAVEASXML**, and **SAVEASCSV** methods, as shown in the following example. To remove filters, you call the [CLEAR Method](../../methods/devenv-clear-method.md) or **SETRANGE** without values for the *FromValue* and *ToValue* parameters.  
   
 ```  
 Query.SETRANGE(Column1, FromValue, ToValue);  
@@ -63,7 +63,7 @@ Query.SETRANGE(Column1, FromValue, ToValue);
 Query.READ;  
 ```  
   
- In addition to the **SETRANGE** method, you can apply filters to a query using the **SETFILTER** method and the [DataItemTableFilter Property](../properties/devenv-DataItemTable-Filter-Property.md) and [ColumnFilter Property](../properties/devenv-ColumnFilter-Property.md) in Query Designer.  
+ In addition to the **SETRANGE** method, you can apply filters to a query using the **SETFILTER** method and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md) in Query Designer.  
   
 |If the **SETRANGE** method...|then...|  
 |-------------------------------------|-------------|  

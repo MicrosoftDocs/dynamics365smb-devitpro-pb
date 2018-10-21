@@ -33,15 +33,15 @@ An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 The method gets the data from the following fields in system table **2000000073 User Personalization**: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. In the SessionSettings object, the data is stored in properties that correspond to the fields of the system table.
 
 After you call the INIT method, you can change the values in the object by calling the following methods:
--   [COMPANY](devenv-company-method-sessionsettings.md)
--   [LANGUAGEID](devenv-languageid-method-sessionsettings.md)
--   [LOCALID method](devenv-localeid-method-sessionsettings.md)
--   [PROFILEAPPID](devenv-profileappid-method-sessionsettings.md)
--   [PROFILEID](devenv-profileid-method-sessionsettings.md)
--   [PROFILESYSTEMSCOPE](devenv-profilesystemscope-method-sessionsettings.md)
--   [TIMEZONE](devenv-timezone-method-sessionsettings.md)
+-   [COMPANY](../../methods/devenv-company-method-sessionsettings.md)
+-   [LANGUAGEID](../../methods/devenv-languageid-method-sessionsettings.md)
+-   [LOCALID method](../../methods/devenv-localeid-method-sessionsettings.md)
+-   [PROFILEAPPID](../../methods/devenv-profileappid-method-sessionsettings.md)
+-   [PROFILEID](../../methods/devenv-profileid-method-sessionsettings.md)
+-   [PROFILESYSTEMSCOPE](../../methods/devenv-profilesystemscope-method-sessionsettings.md)
+-   [TIMEZONE](../../methods/devenv-timezone-method-sessionsettings.md)
 
-The INIT method is useful before calling the [REQUESTSESSIONUPDATE](devenv-requestsessionupdate-method.md) method to ensure that all properties are initialized before sending the request to the server instance to start a new client session.
+The INIT method is useful before calling the [REQUESTSESSIONUPDATE](../../methods/devenv-requestsessionupdate-method.md) method to ensure that all properties are initialized before sending the request to the server instance to start a new client session.
 
 ## Example  
 This example uses the INIT method to create a SessionSettings object that includes the current client user's personalization settings from the database, and uses the COMPANY method to set the company to 'MyCompany'. Then, the REQUESTSESSIONUPDATE method sends a request to the client to abandon the current client session and start a new session that uses the personalization settings in the SessionSettings object.

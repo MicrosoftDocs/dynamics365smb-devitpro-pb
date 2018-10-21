@@ -56,7 +56,7 @@ Specifies the recordID of the record that you want to run the task on.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more information about tasks and task scheduler, see managing tasks [Task Scheduler](../devenv-task-scheduler.md).  
+ Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more information about tasks and task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
 
 ## Example  
  The following example schedules a task to run the **Job Queue Dispatcher** and uses codeunit **Job Queue Error Handler** as the failure codeunit. The code requires that you create the following AL variable.  

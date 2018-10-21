@@ -51,7 +51,7 @@ Customer.COPYFILTER("No.", Vendor."No.");
 Count := Vendor.COUNT;  
 ```  
   
- The filter set for Customer."No." is copied and applied to Vendor."No.". This affects the result of the [COUNT Method \(Record\)](devenv-COUNT-Method-Record.md), which counts how many vendors have a number less than 1000.  
+ The filter set for Customer."No." is copied and applied to Vendor."No.". This affects the result of the [COUNT Method \(Record\)](../../methods/devenv-count-method-record.md), which counts how many vendors have a number less than 1000.  
   
 
 ## See Also

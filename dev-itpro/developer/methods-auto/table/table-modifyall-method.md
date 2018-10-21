@@ -45,7 +45,7 @@ If this parameter is true, the code in the OnModify Trigger is executed. If this
 ## Remarks  
  If no filter is set, the field is modified in all records in the table. If a filter is set, the fields are modified only in the records which fall within the range specified by the filter.  
   
- The [OnValidate \(Fields\) Trigger](../triggers/devenv-OnValidate-Fields-Trigger.md) is never executed when MODIFYALL is used.  
+ The [OnValidate \(Fields\) Trigger](../../triggers/devenv-onvalidate-fields-trigger.md) is never executed when MODIFYALL is used.  
   
 ## Example  
  This example requires that you create the following global variable.  

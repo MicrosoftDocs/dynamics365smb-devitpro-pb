@@ -37,9 +37,9 @@ The codeunit that contains the event subscribers.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can only call this method on codeunits that have the [EventSubscriberInstance Property](../properties/devenv-EventSubscriberInstance-Property.md) set to **Manual**.  
+ You can only call this method on codeunits that have the [EventSubscriberInstance Property](../../properties/devenv-eventsubscriberinstance-property.md) set to **Manual**.  
   
- Calling this method on a codeunit that has not been bound \(by the [BINDSUBSCRIPTION Method](devenv-BINDSUBSCRIPTION-Method.md)\) will result in an error. If the call to this method is successfull, all bindings are removed.  
+ Calling this method on a codeunit that has not been bound \(by the [BINDSUBSCRIPTION Method](../../methods/devenv-bindsubscription-method.md)\) will result in an error. If the call to this method is successfull, all bindings are removed.  
   
  The codeunit instance that is unbound will be the same instance that previously was bound.  
   

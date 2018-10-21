@@ -28,7 +28,7 @@ Removes the last error message from memory.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use the [GETLASTERRORTEXT Method](devenv-GETLASTERRORTEXT-Method.md) to determine whether an error has occurred and to see the text in the last error message that was generated. You can then use the CLEARLASTERROR method to remove the last error message from memory. If you subsequently call the GETLASTERRORTEXT method, an empty string is returned. 
+ You can use the [GETLASTERRORTEXT Method](../../methods/devenv-getlasterrortext-method.md) to determine whether an error has occurred and to see the text in the last error message that was generated. You can then use the CLEARLASTERROR method to remove the last error message from memory. If you subsequently call the GETLASTERRORTEXT method, an empty string is returned. 
 
  
 ## See Also

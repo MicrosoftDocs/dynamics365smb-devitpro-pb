@@ -40,7 +40,7 @@ The name or number of the field that contains the primary key.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [GETPOSITION Method \(Record\)](devenv-GETPOSITION-Method-Record.md).  
+ This method works just like the [GETPOSITION Method \(Record\)](../../methods/devenv-getposition-method-record.md).  
   
 ## Example  
  The following example opens the Customer table as a RecodRef that is named RecRef. The RecordRef variable uses the GETPOSITION method to retrieve the position of the primary key. The *UseCaptions* parameter is set to **true** so the caption of the field that contains the primary key is returned. If you set *UseCaptions* to **false**, the number of the field is returned. This example requires that you create the following global variables.  

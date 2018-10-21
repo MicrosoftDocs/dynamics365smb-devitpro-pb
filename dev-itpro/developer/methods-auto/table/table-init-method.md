@@ -54,7 +54,7 @@ An instance of the [Table](table-data-type.md) data type.
   
  Primary key and timestamp fields are not initialized.  
   
- After the method executes, you can change the values in any of the fields before you call the [INSERT Method \(Record\)](devenv-INSERT-Method-Record.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique \(such as the record already exists\), then the record is rejected.  
+ After the method executes, you can change the values in any of the fields before you call the [INSERT Method \(Record\)](../../methods/devenv-insert-method-record.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique \(such as the record already exists\), then the record is rejected.  
   
 ## Example  
  In this example, assume that the primary key includes the "No." field. This example requires that you create a Record variable named CustomerRec for the **Customer** table.  

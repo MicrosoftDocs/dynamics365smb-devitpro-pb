@@ -37,7 +37,7 @@ Use this optional parameter to include the text of the error message. If this pa
 ## Remarks  
  Similar to a run-time error, this method causes any transaction to be aborted automatically.  
   
- This method is like the FIELDERROR Method for the Record data type. For examples, see [FIELDERROR Method \(Record\)](devenv-FIELDERROR-Method-Record.md).  
+ This method is like the FIELDERROR Method for the Record data type. For examples, see [FIELDERROR Method \(Record\)](../../methods/devenv-fielderror-method-record.md).  
   
 ## Example  
  The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The CustomerName variable is initialized with a blank text. `CustomerRecref.FIELD` creates a FieldRef that is named MyFieldRef for field1 \(No.\) and selects record 30000. Field 2 \(Name\) is then selected for record 30000. If the CustomerName variable is a blank text, then `MyFieldRef.FIELDERROR` is executed and an error message is displayed. The text in Text000 text constant is inserted into the error message that is displayed by [!INCLUDE[d365fin_md](../includes/d365fin_md.md)]. This example uses the default error message. This example requires that you create the following global variables and text constants.  
@@ -81,7 +81,7 @@ ELSE
   
 -   Use a text constant for the *Text* parameter.  
   
- For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Methods](../devenv-progress-windows-message-error-and-confirm-methods.md). 
+ For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md). 
 
  
 ## See Also

@@ -28,7 +28,7 @@ Creates an encryption key for the current tenant.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This code example checks if encryption is configured for the tenant using the [ENCRYPTIONENABLED](devenv-encryptionenabled-method.md) method and if so, it performs the deletion of the encryption key.  
+ This code example checks if encryption is configured for the tenant using the [ENCRYPTIONENABLED](../../methods/devenv-encryptionenabled-method.md) method and if so, it performs the deletion of the encryption key.  
 
 ```  
 IF NOT ENCRYPTIONENABLED THEN  

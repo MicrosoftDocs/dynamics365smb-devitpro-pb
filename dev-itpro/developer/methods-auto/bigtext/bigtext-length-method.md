@@ -37,7 +37,7 @@ The length of the text stored in this BigText instance.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- To delete the content in a BigText variable use the [CLEAR Method](devenv-CLEAR-Method.md). The syntax for the CLEAR method is shown in the following code snippet: `CLEAR(BigText)`.  
+ To delete the content in a BigText variable use the [CLEAR Method](../../methods/devenv-clear-method.md). The syntax for the CLEAR method is shown in the following code snippet: `CLEAR(BigText)`.  
   
 ## Example  
  The following example demonstrates how to retrieve the length of a BigText variable. This example requires that you create the following global variables and text constant.  

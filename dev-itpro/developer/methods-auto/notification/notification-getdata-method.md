@@ -41,7 +41,7 @@ The data retrieved
 ## Remarks
 You use the SETDATA and GETDATA methods for transferring data in a notification. The methods are typically needed for handling actions on the notification. The SETDATA method is called from the source of the notification, while the GETDATA method is called from the action code.
 
-For more information and a detailed example, see [Notifications](../devenv-notifications-developing.md).
+For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 
 ##  Example
 The following code sets the data for a notification:

@@ -42,7 +42,7 @@ Replacement values to insert in replacement fields in the filter expression. The
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- To apply filters to a dataset, the **SETFILTER** method must be called before the **OPEN**, **SAVEASXML**, and **SAVEASCSV** methods, as shown in the following example. To remove filters from query, you call the [CLEAR Method](devenv-CLEAR-Method.md).  
+ To apply filters to a dataset, the **SETFILTER** method must be called before the **OPEN**, **SAVEASXML**, and **SAVEASCSV** methods, as shown in the following example. To remove filters from query, you call the [CLEAR Method](../../methods/devenv-clear-method.md).  
   
 ```  
 Query.SETFILTER(Column1, String);  
@@ -62,7 +62,7 @@ Query.READ;
   
  You can have multiple calls to the **SETFILTER** method. If **SETFILTER** method calls set filters on different columns, then the filters are combined and applied to the dataset. If consecutive **SETFILTER** method calls set filters on the same column, then the last **SETFILTER** method call is applied to the column.  
   
- In addition to the **SETFILTER** method, you can apply filters to a query using the [SETRANGE Method \(Query\)](devenv-SETRANGE-Method-Query.md) method, the **FILTERGROUP** method, and the [DataItemTableFilter Property](../properties/devenv-DataItemTable-Filter-Property.md) and [ColumnFilter Property](../properties/devenv-ColumnFilter-Property.md) in Query Designer.  
+ In addition to the **SETFILTER** method, you can apply filters to a query using the [SETRANGE Method \(Query\)](../../methods/devenv-setrange-method-query.md) method, the **FILTERGROUP** method, and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md) in Query Designer.  
   
 |If the **SETFILTER** method...|then...|  
 |--------------------------------------|-------------|  

@@ -41,7 +41,7 @@ An instance of the [File](file-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use this method together with [NAME Method \(File\)](devenv-NAME-Method-File.md) and [CLOSE Method \(File\)](devenv-CLOSE-Method-File.md).  
+ You can use this method together with [NAME Method \(File\)](../../methods/devenv-name-method-file.md) and [CLOSE Method \(File\)](../../methods/devenv-close-method-file.md).  
   
 ## Example  
  This example creates a temporary file that has the text Hello and then deletes the file by using the File.CLOSE method. This example requires that you create the following variable.  

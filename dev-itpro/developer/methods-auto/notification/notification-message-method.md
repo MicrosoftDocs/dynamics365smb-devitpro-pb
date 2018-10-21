@@ -43,9 +43,9 @@ The message
 
 
 ## Remarks
-The MESSAGE method defines the notification. You use the [SEND Method](devenv-send-method-notification.md) to send the notification to the client, where it will be displayed.
+The MESSAGE method defines the notification. You use the [SEND Method](../../methods/devenv-send-method-notification.md) to send the notification to the client, where it will be displayed.
 
-For more information and a detailed example, see [Notifications](../devenv-notifications-developing.md).
+For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 
 ##  Example
 The following code creates a notification and sends it in the local scope.

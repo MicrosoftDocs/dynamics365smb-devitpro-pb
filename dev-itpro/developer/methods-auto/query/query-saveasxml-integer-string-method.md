@@ -61,7 +61,7 @@ Query.READ;
 ```  
 
 ## Example  
- The following example shows how to save a query with the name **My Customer Query** as an .xml file. The file is given the name **myquery.xml** and is saved on the c: drive of the computer running [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)].  
+ The following example shows how to save a query with the name **My Customer Query** as an .xml file. The file is given the name **myquery.xml** and is saved on the c: drive of the computer running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
 
  This example requires that you create the following variables and text constant.  
 

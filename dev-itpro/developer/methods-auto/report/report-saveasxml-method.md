@@ -55,14 +55,14 @@ Specifies which record to use in the report. Any filters that have been applied 
 
  **An I/O exception occurred during the operation.**  
 
- If the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] does not have permission to write to the file that you specify in *FileName*, then you get the following error:  
+ If the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] does not have permission to write to the file that you specify in *FileName*, then you get the following error:  
 
  **Either the caller does not have the required permission or the specified path is read-only.**  
 
- To resolve this issue, verify that the service account that is running the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] instance has write permissions on the path.  
+ To resolve this issue, verify that the service account that is running the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance has write permissions on the path.  
 
 ## Example  
- This example shows how to use the SAVEASXML method to save a report as an .xml file on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)], and then download the file to a  computer that is running the [!INCLUDE[d365fin_md](../includes/d365fin_md.md)]. This example requires that you create the following variables.  
+ This example shows how to use the SAVEASXML method to save a report as an .xml file on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a  computer that is running the [!INCLUDE[d365fin_md](../includes/d365fin_md.md)]. This example requires that you create the following variables.  
 
 |Variable name|DataType|Length|  
 |-------------------|--------------|------------|  

@@ -50,7 +50,7 @@ The length of the result text.
 ## Remarks  
  The first character in a BigText variable is position 1.  
   
- To delete the content in a BigText variable use the [CLEAR Method](devenv-CLEAR-Method.md). The following code snippet shows the syntax for the clear method. `CLEAR(BigText)`.  
+ To delete the content in a BigText variable use the [CLEAR Method](../../methods/devenv-clear-method.md). The following code snippet shows the syntax for the clear method. `CLEAR(BigText)`.  
   
 ## Example  
  The following examples demonstrate how to use the GETSUBTEXT method. This example requires that you create the following global variables and text constant.  

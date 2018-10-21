@@ -29,11 +29,11 @@ Denotes a special type of string that is converted to uppercase and removes any 
   
  The Code data type supports Unicode.  
   
- You can index any character position in a string, such as A[65]. The resulting value will be a [Char Data Type](devenv-char-data-type.md).  
+ You can index any character position in a string, such as A[65]. The resulting value will be a [Char Data Type](../../datatypes/devenv-char-data-type.md).  
   
- Fields that contain a date formula must not have data type Code. Instead, use the [DateFormula Data Type](devenv-date-formula-data-type.md). All fields that contain a date formula with data type Code must be converted into data type DateFormula.  
+ Fields that contain a date formula must not have data type Code. Instead, use the [DateFormula Data Type](../../datatypes/devenv-date-formula-data-type.md). All fields that contain a date formula with data type Code must be converted into data type DateFormula.  
   
- You cannot assign a char to a position in the code variable greater than the current length of the variable +1. For more information, see [Char Data Type](devenv-char-data-type.md).  
+ You cannot assign a char to a position in the code variable greater than the current length of the variable +1. For more information, see [Char Data Type](../../datatypes/devenv-char-data-type.md).  
   
 
 ## Example  

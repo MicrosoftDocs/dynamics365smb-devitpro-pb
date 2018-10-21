@@ -40,7 +40,7 @@ Specifies the unique identifier of the task. The unique identifier is returned b
 
  CANCELTASK can only cancel pending tasks. It cannot cancel a task that is in process. To see an example of CANCELTASK in use, refer to AL code of table **472 Job Queue Entry**.  
 
- For more information about tasks and TASKSCEDULER data type methods, see managing tasks [Task Scheduler](../devenv-task-scheduler.md).  
+ For more information about tasks and TASKSCEDULER data type methods, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
 
 ## See Also
 [TaskScheduler Data Type](taskscheduler-data-type.md)  

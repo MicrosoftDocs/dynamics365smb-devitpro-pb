@@ -35,10 +35,10 @@ The client type that is running in current session.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use CURRENTCLIENTTYPE as a parameter in [GETURL Method](devenv-GETURL-Method.md) to get the URL of the current client.  
+ You can use CURRENTCLIENTTYPE as a parameter in [GETURL Method](../../methods/devenv-geturl-method.md) to get the URL of the current client.  
 
 ## Example  
- In the following example, CURRENTCLIENTTYPE is used to get the client type for the session and return a message if the session uses the [!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)].  
+ In the following example, CURRENTCLIENTTYPE is used to get the client type for the session and return a message if the session uses the [!INCLUDE[d365fin_tablet_md](../../includes/d365fin_tablet_md.md)].  
 
 ```  
 IF CURRENTCLIENTTYPE = CLIENTTYPE::Tablet THEN  
@@ -46,7 +46,7 @@ IF CURRENTCLIENTTYPE = CLIENTTYPE::Tablet THEN
 ```  
 
 ## Example  
- In the following example, CURRENTCLIENTTYPE is used as a parameter of the [GETURL Method](devenv-GETURL-Method.md) to return the URL of the client that invokes the code.  
+ In the following example, CURRENTCLIENTTYPE is used as a parameter of the [GETURL Method](../../methods/devenv-geturl-method.md) to return the URL of the client that invokes the code.  
 
 ```  
 url := GETURL(CURRENTCLIENTTYPE);  

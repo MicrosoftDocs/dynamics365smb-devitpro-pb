@@ -35,7 +35,7 @@ String :=   System.GetLastErrorCode()
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You use the GETLASTERRORCODE method to identify the type of the last error that occurred. You use the [GETLASTERRORTEXT Method](devenv-GETLASTERRORTEXT-Method.md) to get the details of the last error.  
+ You use the GETLASTERRORCODE method to identify the type of the last error that occurred. You use the [GETLASTERRORTEXT Method](../../methods/devenv-getlasterrortext-method.md) to get the details of the last error.  
   
  The result of the GETLASTERRORCODE method is not translated into the local language. The result of the GETLASTERRORTEXT method is translated into the local language.  
   

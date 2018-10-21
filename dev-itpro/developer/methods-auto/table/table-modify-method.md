@@ -46,11 +46,11 @@ Specifies whether to run the AL code in the OnModify Trigger. If this parameter 
   
  **Enter your changes again in the updated window, or start the interrupted activity again.**  
   
- In earlier versions of [!INCLUDE[d365fin_md](../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], we have restricted the **MODIFY** Method \(Record\), [RENAME Method \(Record\)](devenv-RENAME-Method-Record.md), and [DELETE Method \(Record\)](devenv-DELETE-Method-Record.md) so that the end-user receives the following run-time error in these certain situations:  
+ In earlier versions of [!INCLUDE[d365fin_md](../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], we have restricted the **MODIFY** Method \(Record\), [RENAME Method \(Record\)](../../methods/devenv-rename-method-record.md), and [DELETE Method \(Record\)](../../methods/devenv-delete-method-record.md) so that the end-user receives the following run-time error in these certain situations:  
   
  **Unable to change an earlier version of the \<Table Name> record. The record should be read from the database again. This is a programming error.**  
   
- You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(Record\)](devenv-GET-Method-Record.md) to refresh the record with the latest version. The second example that is shown here illustrates this situation.  
+ You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(Record\)](../../methods/devenv-get-method-record.md) to refresh the record with the latest version. The second example that is shown here illustrates this situation.  
   
 ## Example  
  This example requires that you create the following global variables and text constants.  

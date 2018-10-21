@@ -39,7 +39,7 @@ The value to insert into Field.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- **VALIDATE** first checks any [TableRelation Property](../properties/devenv-TableRelation-Property.md) and then executes the [OnValidate \(Fields\) Trigger](../triggers/devenv-OnValidate-Fields-Trigger.md) of the field.  
+ **VALIDATE** first checks any [TableRelation Property](../../properties/devenv-tablerelation-property.md) and then executes the [OnValidate \(Fields\) Trigger](../../triggers/devenv-onvalidate-fields-trigger.md) of the field.  
   
  If you omit *NewValue*, then the method validates the current value.  
   

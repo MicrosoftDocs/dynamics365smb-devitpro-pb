@@ -30,7 +30,7 @@ An instance of the [Table](table-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- **RESET** does not reset filters in filter group 1. For more information about filter groups, see [FILTERGROUP Method \(Record\)](devenv-FILTERGROUP-Method-Record.md).  
+ **RESET** does not reset filters in filter group 1. For more information about filter groups, see [FILTERGROUP Method \(Record\)](../../methods/devenv-filtergroup-method-record.md).  
   
 ## Example  
  This example requires that you create the following global variables and text constants.  

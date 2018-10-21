@@ -37,7 +37,7 @@ A literal string that defines the caption.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use the [SELECTLATESTVERSION Method \(Database\)](devenv-selectlatestversion-method-database.md) to clear the current session's cache for the CaptionClassTranslate strings. The strings will then be reevaluated by the **CaptionClassTranslate** method trigger \(ID 15\) in codeunit 1.  
+ You can use the [SELECTLATESTVERSION Method \(Database\)](../../methods/devenv-selectlatestversion-method-database.md) to clear the current session's cache for the CaptionClassTranslate strings. The strings will then be reevaluated by the **CaptionClassTranslate** method trigger \(ID 15\) in codeunit 1.  
 
 
 ## See Also

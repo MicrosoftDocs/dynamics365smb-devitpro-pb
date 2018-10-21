@@ -22,23 +22,23 @@ Loads and executes the unit of C/AL code that you specify.
 ```
 ## Parameters
 *Codeunit*  
-&emsp;Type: [Codeunit](codeunit-data-type.md)  
-An instance of the [Codeunit](codeunit-data-type.md) data type.  
+&emsp;Type: [Codeunit](../codeunit/codeunit-data-type.md)  
+An instance of the [Codeunit](../codeunit/codeunit-data-type.md) data type.  
 
 *Record*  
-&emsp;Type: [Table](table-data-type.md)  
+&emsp;Type: [Table](../table/table-data-type.md)  
  A record from the table that is associated with the codeunit.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **True** if the operation was successful; otherwise, **false**.  
   
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[Codeunit Data Type](codeunit-data-type.md)  
+[Codeunit Data Type](../codeunit/codeunit-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

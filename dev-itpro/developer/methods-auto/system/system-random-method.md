@@ -42,7 +42,7 @@ The largest acceptable number. In effect, you are setting a range from one (1) t
   
  If *MaxNumber* is zero, this method always returns 1.  
   
- A number is always chosen from the same set of numbers. Use [RANDOMIZE Method \(Integer\)](devenv-RANDOMIZE-Method-Integer.md) to generate a new set of numbers.  
+ A number is always chosen from the same set of numbers. Use [RANDOMIZE Method \(Integer\)](../../methods/devenv-randomize-method-integer.md) to generate a new set of numbers.  
   
 ## Example  
  This example shows how to generate a pseudo-random number. This example requires that you create the following global variables and text constant. The value of the variable Number2 is positive though the value of *MaxNumber* is negative and the value of the variable Number3 is always 1 because *MaxNumber* is 0.  

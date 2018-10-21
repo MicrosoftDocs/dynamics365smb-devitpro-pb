@@ -73,7 +73,7 @@ An instance of the [Query](query-data-type.md) data type.
         Query.READ;  
         ```  
 
--   You are required to call the **OPEN** method before the [SAVEASXML Method](devenv-SAVEASXML-Method.md) or [SAVEASCSV Method](devenv-SAVEASCSV-Method.md). The **SAVEASXML** and **SAVEASCSV** methods automatically close the current query dataset and initialize a new instance of the query.  
+-   You are required to call the **OPEN** method before the [SAVEASXML Method](../../methods/devenv-saveasxml-method.md) or [SAVEASCSV Method](../../methods/devenv-saveascsv-method.md). The **SAVEASXML** and **SAVEASCSV** methods automatically close the current query dataset and initialize a new instance of the query.  
 
 ## Example  
  The following example demonstrates how to use the **OPEN** method on a query. The example code sets filters on the query, opens the query, and then reads the dataset. For each row in the dataset, a message box is displayed that contains the values of the columns in the row.  

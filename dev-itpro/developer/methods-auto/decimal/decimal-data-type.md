@@ -29,7 +29,7 @@ Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999
 ```  
 
 ## Example  
- The following is not a decimal, but rather an [Integer Data Type](devenv-integer-data-type.md).  
+ The following is not a decimal, but rather an [Integer Data Type](../../datatypes/devenv-integer-data-type.md).  
 
 ```  
 342  

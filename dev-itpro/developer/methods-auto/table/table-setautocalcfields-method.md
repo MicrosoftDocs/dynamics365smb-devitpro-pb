@@ -39,7 +39,7 @@ An instance of the [Table](table-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- FlowFields are virtual fields. The values in these fields are not saved in the table. This means that you must use either the [CALCFIELDS Method \(Record\)](devenv-CALCFIELDS-Method-Record.md)or the **SETAUTOCALCFIELDS** method to update them. For example, if you retrieve records using the [FIND Method \(Record\)](devenv-FIND-Method-Record.md) and [NEXT Method \(Record\)](devenv-NEXT-Method-Record.md), then the FlowFields in those records are set to zero \(0\). However, if you call **SETAUTOCALCFIELDS** before you retrieve the records, then when you call **FIND** and **NEXT**, the FlowFields values are automatically calculated.  
+ FlowFields are virtual fields. The values in these fields are not saved in the table. This means that you must use either the [CALCFIELDS Method \(Record\)](../../methods/devenv-calcfields-method-record.md)or the **SETAUTOCALCFIELDS** method to update them. For example, if you retrieve records using the [FIND Method \(Record\)](../../methods/devenv-find-method-record.md) and [NEXT Method \(Record\)](../../methods/devenv-next-method-record.md), then the FlowFields in those records are set to zero \(0\). However, if you call **SETAUTOCALCFIELDS** before you retrieve the records, then when you call **FIND** and **NEXT**, the FlowFields values are automatically calculated.  
   
  When a FlowField is a direct source expression on a page or a report, the calculation will be performed automatically.  
   
@@ -51,7 +51,7 @@ An instance of the [Table](table-data-type.md) data type.
   
  If you assign a record to another record variable, then the automatic calculation setting on FlowFields is not transferred with the record.  
   
- If you copy a record by using the [COPY Method \(Record\)](devenv-COPY-Method-Record.md), then the automatic calculation setting on FlowFields is copied with the record.  
+ If you copy a record by using the [COPY Method \(Record\)](../../methods/devenv-copy-method-record.md), then the automatic calculation setting on FlowFields is copied with the record.  
   
  The Rec and xRec system variables are set to always automatically calculate FlowFields. If you call the **NEXT** method on Rec or xRec, then FlowFields in the record are automatically calculated.  
   

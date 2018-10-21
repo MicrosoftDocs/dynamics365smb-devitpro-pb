@@ -40,7 +40,7 @@ Path :=   System.ExportEncryptionKey(Password: String)
  If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.  
 
 ## Example  
- This code example uses the EXPORTENCRYPTIONKEY method to return a password protected file that contains an encryption key. With the DOWNLOAD method the file is sent from the [!INCLUDE[d365fin_server](../includes/d365fin_server_md.md)] computer to the client computer.  
+ This code example uses the EXPORTENCRYPTIONKEY method to return a password protected file that contains an encryption key. With the DOWNLOAD method the file is sent from the [!INCLUDE[d365fin_server](../../includes/d365fin_server_md.md)] computer to the client computer.  
 
  This example requires that you create the following text constants: ExportFileName and ClientFileName.  
 

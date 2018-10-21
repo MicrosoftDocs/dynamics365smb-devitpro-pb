@@ -37,10 +37,10 @@ The caption of the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [TABLECAPTION Method \(Record\)](devenv-TABLECAPTION-Method-Record.md).  
+ This method works just like the [TABLECAPTION Method \(Record\)](../../methods/devenv-tablecaption-method-record.md).  
   
 ## Example  
- The following example selects tables 3 through 5 and opens each table as a RecordRef variable that is named MyRecordRef. The CAPTION method uses the RecorRef variable to retrieve the caption for each of the tables and displays the table number and the caption in a message box. The [CLOSE Method \(RecordRef\)](devenv-CLOSE-Method-RecordRef.md) closes the table. This example requires that you create the following global variables and text constant.  
+ The following example selects tables 3 through 5 and opens each table as a RecordRef variable that is named MyRecordRef. The CAPTION method uses the RecorRef variable to retrieve the caption for each of the tables and displays the table number and the caption in a message box. The [CLOSE Method \(RecordRef\)](../../methods/devenv-close-method-recordref.md) closes the table. This example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

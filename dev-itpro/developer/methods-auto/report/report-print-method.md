@@ -42,9 +42,9 @@ The RecordRef that refers to the table in which you want to find a record.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You typically use this method together with the [RUNREQUESTPAGE Method](devenv-RUNREQUESTPAGE-Method.md) method. The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the PRINT method to get the parameter string and print the report.  
+ You typically use this method together with the [RUNREQUESTPAGE Method](../../methods/devenv-runrequestpage-method.md) method. The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the PRINT method to get the parameter string and print the report.  
 
- For a simple example that illustrates how to use the PRINT method, see example in the [RUNREQUESTPAGE Method](devenv-RUNREQUESTPAGE-Method.md) method topic.  
+ For a simple example that illustrates how to use the PRINT method, see example in the [RUNREQUESTPAGE Method](../../methods/devenv-runrequestpage-method.md) method topic.  
 
 ## See Also
 [Report Data Type](report-data-type.md)  

@@ -43,7 +43,7 @@ author: solsen
  If the import key file cannot be imported, the following error will be displayed: **Import Failed. The provided encryption key file contains invalid data and could not be imported**.  
 
 ## Example  
- This code example uses the [ENCRYPTIONENABLED](devenv-encryptionenabled-method.md) and [ENCRYPTIONKEYEXISTS](devenv-ENCRYPTIONKEYEXISTS-method.md) methods to do a check before importing the encryption key.  
+ This code example uses the [ENCRYPTIONENABLED](../../methods/devenv-encryptionenabled-method.md) and [ENCRYPTIONKEYEXISTS](../../methods/devenv-encryptionkeyexists-method.md) methods to do a check before importing the encryption key.  
 
  This example requires that you create a text constant ServerFileName.  
 

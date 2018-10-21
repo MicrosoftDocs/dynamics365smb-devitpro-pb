@@ -30,7 +30,7 @@ An instance of the [Table](table-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- You can use this method to set a filter on a table before you run a report. Enter AL code similar to the following example in the [OnAction Trigger](../triggers/devenv-OnAction-Trigger.md) of an action on a page. When the code is triggered, the current key fields of the current record in the page will be used as a filter when the report is run.  
+ You can use this method to set a filter on a table before you run a report. Enter AL code similar to the following example in the [OnAction Trigger](../../triggers/devenv-onaction-trigger.md) of an action on a page. When the code is triggered, the current key fields of the current record in the page will be used as a filter when the report is run.  
   
  This example requires that you create the following global variable.  
   

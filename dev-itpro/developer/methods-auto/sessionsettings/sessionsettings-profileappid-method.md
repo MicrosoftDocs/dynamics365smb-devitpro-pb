@@ -43,7 +43,7 @@ The ID of the extension that is set in the SessionSettings object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-A profile can be included as part of an extension, instead of being defined as part of the base application. In order to properly identify a profile from an extension in the SessionSettings object, you must specify the extension ID, by using the PROFILEAPPID method, and the profile ID, by using [PROFILEID method](devenv-profileid-method-sessionsettings.md).
+A profile can be included as part of an extension, instead of being defined as part of the base application. In order to properly identify a profile from an extension in the SessionSettings object, you must specify the extension ID, by using the PROFILEAPPID method, and the profile ID, by using [PROFILEID method](../../methods/devenv-profileid-method-sessionsettings.md).
 
 The PROFILEAPPID property in a SessionSettings object corresponds to the **App ID** field in the in the system table **2000000073 User Personalization**
 

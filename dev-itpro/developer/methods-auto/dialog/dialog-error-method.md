@@ -50,7 +50,7 @@ Any variable or expression to be inserted in String. You can insert up to 10 val
 
 -   Use a text constant for the text of the message.  
 
- For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Methods](../devenv-progress-windows-message-error-and-confirm-methods.md).  
+ For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).  
 
 ## Example  
  This example shows how to use the ERROR method. The code example requires that you create the following global variables and text constants.  

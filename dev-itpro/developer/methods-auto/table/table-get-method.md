@@ -41,7 +41,7 @@ An instance of the [Table](table-data-type.md) data type.
 ## Remarks  
  This method always uses the primary key for the table. It ignores any filters that are set, except security filters. Security filters are applied or ignored based on the Security Filter Mode. The current key and filters are not changed after you call this method. <!--Links For more information, see [Security Filter Modes](Security-Filter-Modes.md)-->.  
 
- This method ignores any call to the [SETAUTOCALCFIELDS Method \(Record\)](devenv-SETAUTOCALCFIELDS-Method-Record.md). Therefore, a **GET** call on a record after a **SETAUTOCALCFIELDS** call does not automatically calculate FlowFields in the record.  
+ This method ignores any call to the [SETAUTOCALCFIELDS Method \(Record\)](../../methods/devenv-setautocalcfields-method-record.md). Therefore, a **GET** call on a record after a **SETAUTOCALCFIELDS** call does not automatically calculate FlowFields in the record.  
 
  > [!NOTE]  
 > You cannot use the GET method to retrieve a record in a table by its primary key value if the primary key field in the table has the data type RecordID. In this case, you can retrieve the record by using the Record.SETRANGE(FieldName, FieldValue) method.

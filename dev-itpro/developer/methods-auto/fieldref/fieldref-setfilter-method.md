@@ -52,10 +52,10 @@ Replacement values to insert in replacement fields in the filter expression. The
 |\*|Forms a part of value|  
 |@|Case-insensitive|  
   
- This method is like the [SETFILTER Method \(Record\)](devenv-SETFILTER-Method-Record.md) method.  
+ This method is like the [SETFILTER Method \(Record\)](../../methods/devenv-setfilter-method-record.md) method.  
   
 ## Example  
- The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](devenv-FIELD-Method-RecordRef.md) creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The [GETFILTER Method \(FieldRef\)](devenv-GETFILTER-Method-FieldRef.md) retrieves the filters that are set on the No. field and stores the value in the Filter1 variable. The value of any filter that is set is displayed in a message box. The SETFILTER method sets a filter that selects records from 10000 to 40000 in the No. field. The [GETFILTER Method \(FieldRef\)](devenv-GETFILTER-Method-FieldRef.md) retrieves and stores the new filter in the Filter2 variable and displays it in a message. The value in the Filter1 variable is blank because no filter is set. The value in Filter2 is 10000..40000 because of the filter that is set by the SETFILTER method. This example requires that you create the following global variables and text constants.  
+ The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The [GETFILTER Method \(FieldRef\)](../../methods/devenv-getfilter-method-fieldref.md) retrieves the filters that are set on the No. field and stores the value in the Filter1 variable. The value of any filter that is set is displayed in a message box. The SETFILTER method sets a filter that selects records from 10000 to 40000 in the No. field. The [GETFILTER Method \(FieldRef\)](../../methods/devenv-getfilter-method-fieldref.md) retrieves and stores the new filter in the Filter2 variable and displays it in a message. The value in the Filter1 variable is blank because no filter is set. The value in Filter2 is 10000..40000 because of the filter that is set by the SETFILTER method. This example requires that you create the following global variables and text constants.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

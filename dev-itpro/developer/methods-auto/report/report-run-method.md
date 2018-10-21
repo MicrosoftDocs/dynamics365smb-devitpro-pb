@@ -42,7 +42,7 @@ Specifies which record to use in the report. Any filters that are attached to th
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- Use this method or the [RUNMODAL Method \(Report\)](devenv-RUNMODAL-Method-Report.md) if you know at design time the exact report that you want to run. Otherwise, use the [REPORT.RUNMODAL Method](devenv-REPORT-RUNMODAL-Method.md) or [REPORT.RUN Method](devenv-REPORT-RUN-Method.md).  
+ Use this method or the [RUNMODAL Method \(Report\)](../../methods/devenv-runmodal-method-report.md) if you know at design time the exact report that you want to run. Otherwise, use the [REPORT.RUNMODAL Method](../../methods/devenv-report-runmodal-method.md) or [REPORT.RUN Method](../../methods/devenv-report-run-method.md).  
   
  If the report you specify does not exist, then a compile error occurs.  
   

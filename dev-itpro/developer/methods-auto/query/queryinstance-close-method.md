@@ -38,7 +38,7 @@ An instance of the [Query](query-data-type.md) data type.
 
 -   When the **OPEN** method is called on a dataset that is currently open.  
 
--   When the [SETFILTER Method \(Query\)](devenv-SETFILTER-Method-Query.md) or [SETRANGE Method \(Query\)](devenv-SETRANGE-Method-Query.md) are called on a dataset that is currently open.  
+-   When the [SETFILTER Method \(Query\)](../../methods/devenv-setfilter-method-query.md) or [SETRANGE Method \(Query\)](../../methods/devenv-setrange-method-query.md) are called on a dataset that is currently open.  
 
 ## Example  
  The following example demonstrates how to use the **CLOSE** method on a query. The example code sets filters on the query, opens the query, and then reads the dataset. For each row in the dataset, a message box is displayed that contains the values of the columns in the row.  

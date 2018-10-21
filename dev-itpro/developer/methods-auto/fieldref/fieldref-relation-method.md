@@ -40,10 +40,10 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 ## Remarks  
  You can use this method for several purposes such as to determine lookups or to check to see if you have permission to read from a table.  
   
- This method is similar to the [RELATION Method \(Record\)](devenv-RELATION-Method-Record.md) method.  
+ This method is similar to the [RELATION Method \(Record\)](../../methods/devenv-relation-method-record.md) method.  
   
 ## Example  
- The following example opens table 37, the Sales Line table, as a RecordRef variable and creates a reference to field 2 \(Sell-to Customer No.\). The [FieldRef Data Type](../datatypes/devenv-FieldRef-Data-Type.md) of field 2 is stored in the MyFieldRef variable. The RELATION method retrieves the number of the table that has a relation with the Sell-To-Customer field \(field 2\). The table number is stored the varRelation variable and displayed in the message box. This example requires that you create the following global variables and text constants.  
+ The following example opens table 37, the Sales Line table, as a RecordRef variable and creates a reference to field 2 \(Sell-to Customer No.\). The [FieldRef Data Type](../../datatypes/devenv-fieldref-data-type.md) of field 2 is stored in the MyFieldRef variable. The RELATION method retrieves the number of the table that has a relation with the Sell-To-Customer field \(field 2\). The table number is stored the varRelation variable and displayed in the message box. This example requires that you create the following global variables and text constants.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

@@ -45,7 +45,7 @@ Specifies if you have permission to write to the table
   
  If you do not have permission to write to a table and you attempt to write, a run-time error occurs. This method lets you determine in advance if you have write permission. When the permissions are checked, the combination of permissions in the license file and the user's permissions in the Permission table is considered.  
   
- This method works the same as the [WRITEPERMISSION Method \(Record\)](devenv-WRITEPERMISSION-Method-Record.md).  
+ This method works the same as the [WRITEPERMISSION Method \(Record\)](../../methods/devenv-writepermission-method-record.md).  
   
 ## Example  
  The following example opens table 18 \(Customer\) and creates a RecordRef variable that is named MyRecordRef for the table. The WRITEPERMISSION method determines whether the table has write permission and stores the return value in the varHasWritePerm variable. The Customer table has write permission, so the message displays **Yes**. You can initialize the varTableNo variable with any table number. This example requires that you create the following global variables and text constant.  

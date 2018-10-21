@@ -39,10 +39,10 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 ## Remarks  
 Each field in a record can be set as enabled or disabled in the table description.  You cannot use a disabled field because disabled fields cannot contain data.  
 
-This method is like the [FIELDACTIVE Method \(Record\)](devenv-FIELDACTIVE-Method-Record.md) method.  
+This method is like the [FIELDACTIVE Method \(Record\)](../../methods/devenv-fieldactive-method-record.md) method.  
 
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named Recref. The [FIELD Method \(RecordRef\)](devenv-FIELD-Method-RecordRef.md) uses Recref to create a FieldRef variable that is named MyFieldRef. MyFieldRef sets a reference to the first field \(field 1\) in the table. The [SETRANGE Method \(FieldRef\)](devenv-SETRANGE-Method-FieldRef.md) sets a filter that selects record 30000. The [FIND Method \(RecordRef\)](devenv-FIND-Method-RecordRef.md) selects the record and then loops through fields 1 through 6. For each field, the ACTIVE method determines whether the field is enabled. If the field is enabled, a message that states that the field is enabled is displayed. Otherwise, a message that states that the field is not enabled is displayed.  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named Recref. The [FIELD Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) uses Recref to create a FieldRef variable that is named MyFieldRef. MyFieldRef sets a reference to the first field \(field 1\) in the table. The [SETRANGE Method \(FieldRef\)](../../methods/devenv-setrange-method-fieldref.md) sets a filter that selects record 30000. The [FIND Method \(RecordRef\)](../../methods/devenv-find-method-recordref.md) selects the record and then loops through fields 1 through 6. For each field, the ACTIVE method determines whether the field is enabled. If the field is enabled, a message that states that the field is enabled is displayed. Otherwise, a message that states that the field is not enabled is displayed.  
 
 > [!NOTE]  
 >  You can use the name of the table instead of the table number to open the table by using the following syntax: 

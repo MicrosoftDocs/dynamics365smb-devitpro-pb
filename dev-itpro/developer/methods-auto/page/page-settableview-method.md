@@ -36,7 +36,7 @@ The record that has a table view that you want to apply to the page or data item
 ## Remarks  
  The table view is the view of the table that you present to the user. You determine what records that the user can see by setting filters, determining the sorting order, and selecting the keys.  
   
- This method only narrows the view of the table that was set through the [SourceTableView Property](../properties/devenv-SourceTableView-Property.md) of the page or through the [DataItemTableView Property](../properties/devenv-DataItemTableView-Property.md) of the data item.  
+ This method only narrows the view of the table that was set through the [SourceTableView Property](../../properties/devenv-sourcetableview-property.md) of the page or through the [DataItemTableView Property](../../properties/devenv-dataitemtableview-property.md) of the data item.  
   
 > [!IMPORTANT]  
 >  SETTABLEVIEW is not supported for setting views on subpages from code on table headers. For example, you cannot set a table view on the SalesOrder subpage from the SalesHeader.  
@@ -56,7 +56,7 @@ SomePage.SETTABLEVIEW(SalesHeader); // Only view sales orders.
 SomePage.RUN  
 ```  
   
- The page that is reference by the SomePage variable can be any page object that has Sales Header as the value of the [SourceTable Property](../properties/devenv-SourceTable-Property.md).  
+ The page that is reference by the SomePage variable can be any page object that has Sales Header as the value of the [SourceTable Property](../../properties/devenv-sourcetable-property.md).  
 
 ## See Also
 [Page Data Type](page-data-type.md)  

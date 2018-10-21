@@ -42,11 +42,11 @@ An instance of the [Table](table-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- FlowFields are virtual fields. The values in these fields are not saved in the table. This means that you must use either the **CALCFIELDS** method or the [SETAUTOCALCFIELDS Method \(Record\)](devenv-SETAUTOCALCFIELDS-Method-Record.md) to update them. For example, if you retrieve a record using the [FIND Method \(Record\)](devenv-FIND-Method-Record.md) and [NEXT Method \(Record\)](devenv-NEXT-Method-Record.md), the FlowFields in those records are set to zero \(0\). Then, when you call **CALCFIELDS**, their values are updated.  
+ FlowFields are virtual fields. The values in these fields are not saved in the table. This means that you must use either the **CALCFIELDS** method or the [SETAUTOCALCFIELDS Method \(Record\)](../../methods/devenv-setautocalcfields-method-record.md) to update them. For example, if you retrieve a record using the [FIND Method \(Record\)](../../methods/devenv-find-method-record.md) and [NEXT Method \(Record\)](../../methods/devenv-next-method-record.md), the FlowFields in those records are set to zero \(0\). Then, when you call **CALCFIELDS**, their values are updated.  
 
  When a FlowField is a direct source expression on a page or a report, the calculation is performed automatically.  
 
- You can also use the **CALCFIELDS** method to retrieve binary large objects \(BLOBs\). For more information, see [BLOB Data Type](../datatypes/devenv-BLOB-Data-Type.md).  
+ You can also use the **CALCFIELDS** method to retrieve binary large objects \(BLOBs\). For more information, see [BLOB Data Type](../../datatypes/devenv-blob-data-type.md).  
 
  If possible, the **CALCFIELDS** method uses SumIndexField Technology \(SIFT\). SIFT is used only if the following conditions are true:  
 
@@ -54,7 +54,7 @@ An instance of the [Table](table-data-type.md) data type.
 
 -   The SumIndexFields on the [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] key contain the fields that are provided as parameters for calculation.  
 
--   The [MaintainSIFTIndex Property](../properties/devenv-MaintainSIFT-Index-Property.md) is set to **true**.  
+-   The [MaintainSIFTIndex Property](../../properties/devenv-maintainsift-index-property.md) is set to **true**.  
 
     > [!NOTE]  
     >  By default this property is set to **true** for all keys.  

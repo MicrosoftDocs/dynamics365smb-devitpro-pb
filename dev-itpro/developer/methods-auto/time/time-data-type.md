@@ -54,10 +54,10 @@ MESSAGE(FORMAT(MyTime));
 ## Methods
 The following methods are supported for the Time data type:
 
-[TIME method (Time)](../methods/devenv-time-method-time.md)   
-[VARIANT2TIME method](../methods/devenv-variant2time-method.md)   
-[CREATEDATETIME method (DateTime)](../methods/devenv-createdatetime-method-datetime.md)   
-[DT2TIME method (DateTime)](../methods/devenv-dt2time-method-datetime.md)
+[TIME method (Time)](../../methods/devenv-time-method-time.md)   
+[VARIANT2TIME method](../../methods/devenv-variant2time-method.md)   
+[CREATEDATETIME method (DateTime)](../../methods/devenv-createdatetime-method-datetime.md)   
+[DT2TIME method (DateTime)](../../methods/devenv-dt2time-method-datetime.md)
 
 
 ## See Also

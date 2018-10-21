@@ -35,7 +35,7 @@ The RecordRef of the record that is currently selected referenced by the key. If
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The table with ID 18 \(the Customer table\) is open with a reference. The [KeyRef Data Type](../datatypes/devenv-KeyRef-Data-Type.md) for the record is retrieved by using the [KEYINDEX Method \(RecordRef\)](devenv-KEYINDEX-Method-RecordRef.md). The method retrieves the key that has an index of 1 in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the [RecordRef Data Type](../datatypes/devenv-RecordRef-Data-Type.md). This example requires that you create the following global variables.  
+ The table with ID 18 \(the Customer table\) is open with a reference. The [KeyRef Data Type](../../datatypes/devenv-keyref-data-type.md) for the record is retrieved by using the [KEYINDEX Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md). The method retrieves the key that has an index of 1 in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the [RecordRef Data Type](../../datatypes/devenv-recordref-data-type.md). This example requires that you create the following global variables.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

@@ -41,12 +41,12 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
  The number of filters that you have applied to the records affects the speed of the ISEMPTY method. The fewer the number of filters, the faster the operation is performed.  
 
- When you are using SQL Server, this method is faster than using the [COUNT Method \(Record\)](devenv-COUNT-Method-Record.md) and then testing the result for zero.  
+ When you are using SQL Server, this method is faster than using the [COUNT Method \(Record\)](../../methods/devenv-count-method-record.md) and then testing the result for zero.  
 
- This method works the same as the [ISEMPTY Method \(Record\)](devenv-ISEMPTY-Method-Record.md).  
+ This method works the same as the [ISEMPTY Method \(Record\)](../../methods/devenv-isempty-method-record.md).  
 
 ## Example  
- The following example opens table 18, the customer table as a RecordRef variable that is named. CustomerRecref. The [ISEMPTY Method \(RECORDREF\)](devenv-ISEMPTY-Method-RecordRef.md) determines whether the table is empty. The message box displays **No** because the Customer table is not empty. **No** represents **false**. This example requires that you create the following global variable and text constant.  
+ The following example opens table 18, the customer table as a RecordRef variable that is named. CustomerRecref. The [ISEMPTY Method \(RECORDREF\)](../../methods/devenv-isempty-method-recordref.md) determines whether the table is empty. The message box displays **No** because the Customer table is not empty. **No** represents **false**. This example requires that you create the following global variable and text constant.  
 
 |Variable name|DataType|  
 |-------------------|--------------|  

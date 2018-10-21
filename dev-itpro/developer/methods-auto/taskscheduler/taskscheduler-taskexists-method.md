@@ -38,7 +38,7 @@ The unique identifier of the task. The unique identifier is returned by the CREA
 ## Remarks  
  Scheduled tasks are recorded in table **2000000175 Scheduled Task**. To see an example of TASKEXISTS in use, refer to AL code of table **472 Job Queue Entry**.  
 
- For more information about tasks and TASKSCEDULER data type methods, see managing tasks [Task Scheduler](../devenv-task-scheduler.md). 
+ For more information about tasks and TASKSCEDULER data type methods, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md). 
 
 ## See Also
 [TaskScheduler Data Type](taskscheduler-data-type.md)  

@@ -41,7 +41,7 @@ An instance of the [Notification](notification-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-If left unassigned the notification will be assigned an ID when the SEND method is called. For more information, see [SEND Method (Notification)](devenv-send-method-notification.md).
+If left unassigned the notification will be assigned an ID when the SEND method is called. For more information, see [SEND Method (Notification)](../../methods/devenv-send-method-notification.md).
 
 ##  Example
 The following code creates a notification and sends it if NewBalance is greater than the credit limit. If it is lower than the credit limit, it recalls the notification.

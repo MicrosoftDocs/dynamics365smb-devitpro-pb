@@ -22,7 +22,7 @@ Indicates true or false.
 
 ## Remarks 
 
-You can use the [FORMAT method (Code, Text)](../methods/devenv-format-method-code-text.md) to specify how Boolean values are shown.
+You can use the [FORMAT method (Code, Text)](../../methods/devenv-format-method-code-text.md) to specify how Boolean values are shown.
 
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  

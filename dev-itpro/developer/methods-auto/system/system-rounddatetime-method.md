@@ -52,7 +52,7 @@ This optional parameter specifies how to round the DateTime. The default roundin
 
  If you use 1 for the *Precision* parameter, then the resulting DateTime is rounded to the nearest millisecond. If you use 1000 for the *Precision* parameter, which is the default value, then the resulting DateTime will be rounded to the nearest second.  
 
- We recommend that you do not use a value greater than 60\*60\*1000, which is the number of milliseconds in an hour, for the *Precision* parameter. The Regional and Language Options in Windows affect how the hour and date parts of a DateTime are rounded. To display a DateTime in a specific format, we recommend that you use the [FORMAT Method \(Code, Text\)](devenv-FORMAT-Method-Code-Text.md) instead of the ROUNDDATETIME method.  
+ We recommend that you do not use a value greater than 60\*60\*1000, which is the number of milliseconds in an hour, for the *Precision* parameter. The Regional and Language Options in Windows affect how the hour and date parts of a DateTime are rounded. To display a DateTime in a specific format, we recommend that you use the [FORMAT Method \(Code, Text\)](../../methods/devenv-format-method-code-text.md) instead of the ROUNDDATETIME method.  
 
 ## Example  
  This example shows how to use the ROUNDDATETIME method to round to the nearest second. This example requires that you create the following global text constant.  

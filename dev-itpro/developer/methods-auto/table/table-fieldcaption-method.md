@@ -40,7 +40,7 @@ The field for which you want to retrieve the caption.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The **FIELDCAPTION** method returns the caption of a specified field. **FIELDCAPTION** searches for a [CaptionML Property](../properties/devenv-CaptionML-Property.md). If none is found, the [Name Property](../properties/devenv-Name-Property.md) is used. This means that **FIELDCAPTION** has multilanguage functionality.  
+ The **FIELDCAPTION** method returns the caption of a specified field. **FIELDCAPTION** searches for a [CaptionML Property](../../properties/devenv-captionml-property.md). If none is found, the [Name Property](../../properties/devenv-name-property.md) is used. This means that **FIELDCAPTION** has multilanguage functionality.  
   
 ## Example  
  The following example uses the **FIELDCAPTION** method to retrieve the caption of the Address 2 field in the **Customer** table. The method stores the retrieved caption in the varFieldCaption variable and displays it in a message box. In this **Customer** table, the field name is the same as the caption so the value Address 2 is displayed for the caption. If you change the caption for Address 2 in the Address 2 property window, then the new caption will be displayed. This example requires that you create the following global variables.  

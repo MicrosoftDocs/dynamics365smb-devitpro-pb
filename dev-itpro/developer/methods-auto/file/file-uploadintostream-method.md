@@ -61,11 +61,11 @@ The default file to upload to the service. The name displays in the dialog box f
  The maximum size of the file to be uploaded is specified by the MaxUploadSize setting in the CustomSettings.config file. The setting is specified in megabytes. For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).  
 -->
 
-The business logic runs on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] and not on the client. Files are created on [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] and not locally on the client computer.  
+The business logic runs on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not locally on the client computer.  
 
- Use [UPLOAD Method \(File\)](devenv-UPLOAD-Method-File.md) and [UPLOADINTOSTREAM Method \(FILE\)](devenv-UPLOADINTOSTREAM-Method-File.md) to send a file from the client to the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)].  
+ Use [UPLOAD Method \(File\)](../../methods/devenv-upload-method-file.md) and [UPLOADINTOSTREAM Method \(FILE\)](../../methods/devenv-uploadintostream-method-file.md) to send a file from the client to the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
 
- Use [DOWNLOAD Method \(File\)](devenv-DOWNLOAD-Method-File.md) and [DOWNLOADFROMSTREAM Method \(File\)](devenv-DOWNLOADFROMSTREAM-Method-File.md) to send a file from the  [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] to the client.  
+ Use [DOWNLOAD Method \(File\)](../../methods/devenv-download-method-file.md) and [DOWNLOADFROMSTREAM Method \(File\)](../../methods/devenv-downloadfromstream-method-file.md) to send a file from the  [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to the client.  
 
  We recommend that you use the methods in codeunit 419, File Management, to upload and download files.  
 

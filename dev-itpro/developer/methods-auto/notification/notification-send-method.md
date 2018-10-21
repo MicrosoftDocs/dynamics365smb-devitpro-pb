@@ -35,9 +35,9 @@ An instance of the [Notification](notification-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The SEND method displays the content of the notification that is specified by the [MESSAGE Method](devenv-message-method-notification.md).
+The SEND method displays the content of the notification that is specified by the [MESSAGE Method](../../methods/devenv-message-method-notification.md).
 
-For more information and a detailed example, see [Notifications](../devenv-notifications-developing.md).
+For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 
 ##  Example
 The following code creates a notification and sends it to the client in the local scope.

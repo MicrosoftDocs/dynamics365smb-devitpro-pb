@@ -44,7 +44,7 @@ The name of the method in the Codeunit, which is specified by the CodeunitID par
 ## Remarks
 An action provides a way for you to add an interactive notification that enables users to respond to or take action on the notification. The method that is called by the action contains logic that you want to run for the action.
 
-For more information and a detailed example, see [Notifications](../devenv-notifications-developing.md).
+For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 
 ##  Example
 The following code creates two actions for a notification. The actions call the **RunAction1** and **RunAction2** methods in the codeunit **Action Handler**.

@@ -66,13 +66,13 @@ An instance of the [Table](table-data-type.md) data type.
   
      **Enter your changes again in the updated window, or start the interrupted activity again.**  
   
-     In earlier versions of [!INCLUDE[d365fin_md](../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], we have restricted the [MODIFY Method \(Record\)](devenv-MODIFY-Method-Record.md), **RENAME** Method \(Record\), and [DELETE Method \(Record\)](devenv-DELETE-Method-Record.md) so that the end-user retrieves the following run-time error in these certain situations:  
+     In earlier versions of [!INCLUDE[d365fin_md](../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], we have restricted the [MODIFY Method \(Record\)](../../methods/devenv-modify-method-record.md), **RENAME** Method \(Record\), and [DELETE Method \(Record\)](../../methods/devenv-delete-method-record.md) so that the end-user retrieves the following run-time error in these certain situations:  
   
      **Unable to change an earlier version of the \<Table Name> record. The record should be read from the database again. This is a programming error.**  
   
-     You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(Record\)](devenv-GET-Method-Record.md) to refresh the record with the latest version. The second example illustrates this situation.  
+     You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(Record\)](../../methods/devenv-get-method-record.md) to refresh the record with the latest version. The second example illustrates this situation.  
   
- When a record is renamed, the change is written and committed to the database without calling the [OnModify Trigger](../triggers/devenv-OnModify-Trigger.md). This is done because renaming a record changes the primary key and updates the primary key value in all related tables. Therefore, you should use the Rename method and Modify method on a record separately.  
+ When a record is renamed, the change is written and committed to the database without calling the [OnModify Trigger](../../triggers/devenv-onmodify-trigger.md). This is done because renaming a record changes the primary key and updates the primary key value in all related tables. Therefore, you should use the Rename method and Modify method on a record separately.  
   
 ## Example  
  This example requires that you create the following global variable.  

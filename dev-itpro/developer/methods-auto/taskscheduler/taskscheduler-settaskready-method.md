@@ -38,7 +38,7 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- For more information about tasks and **TASKSCEDULER** data type methods, see managing tasks [Task Scheduler](../devenv-task-scheduler.md).  
+ For more information about tasks and **TASKSCEDULER** data type methods, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
 
 ## Example  
  The following example creates a task, and then uses the SETTASKREADY method to set the task to ready.  

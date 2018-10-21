@@ -40,7 +40,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
  The link can be a link to a Web site, a file stored on the local computer or on a remote computer, or a link to a [!INCLUDE[d365fin_md](../includes/d365fin_md.md)] page.  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](devenv-FIELD-Method-RecordRef.md) creates a FieldRef variable for field 1 \(No.\) and stores the value in the MyFieldRef variable. The [VALUE Method \(FieldRef, TestPage Field\)](devenv-VALUE-Method-FieldRef-TestPage-Field.md) selects record number 20000. The HASLINKS method determines whether the selected record has any links. The method returns **No** because there are no links in the record. This example requires that you create the following global variables and text constant.  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) creates a FieldRef variable for field 1 \(No.\) and stores the value in the MyFieldRef variable. The [VALUE Method \(FieldRef, TestPage Field\)](../../methods/devenv-value-method-fieldref-testpage-field.md) selects record number 20000. The HASLINKS method determines whether the selected record has any links. The method returns **No** because there are no links in the record. This example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

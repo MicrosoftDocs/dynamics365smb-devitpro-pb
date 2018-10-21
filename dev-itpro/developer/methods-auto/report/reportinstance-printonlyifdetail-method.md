@@ -54,7 +54,7 @@ IF CurrReport.PRINTONLYIFDETAIL AND GLEntryPage.FIND('-') THEN
 ```  
   
 ## Example  
- The following example sets the value of the [PrintOnlyIfDetail Property](../properties/devenv-PrintOnlyIfDetail-Property.md) to true. It requires that you create a Report variable named Report111. The Subtype of the variable is report 111, Customer - Top 10 List.  
+ The following example sets the value of the [PrintOnlyIfDetail Property](../../properties/devenv-printonlyifdetail-property.md) to true. It requires that you create a Report variable named Report111. The Subtype of the variable is report 111, Customer - Top 10 List.  
   
 ```  
 IsPrintOnlyIfDetail := Report111.PRINTONLYIFDETAIL(true);  

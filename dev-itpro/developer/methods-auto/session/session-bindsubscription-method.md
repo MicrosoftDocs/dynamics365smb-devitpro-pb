@@ -37,7 +37,7 @@ The codeunit that contains the event subscribers.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can only call this method on codeunits that have the [EventSubscriberInstance Property](../properties/devenv-EventSubscriberInstance-Property.md) set to **Manual**.  
+ You can only call this method on codeunits that have the [EventSubscriberInstance Property](../../properties/devenv-eventsubscriberinstance-property.md) set to **Manual**.  
   
  The codeunit instance to which event subscribers bind will be this exact instance and events will be raised on this instance. You cannot bind the same instance more than once, but you can bind multiple instances of the same codeunit. This will result in an event subscriber call on each bound instance when a given event is raised.  
   

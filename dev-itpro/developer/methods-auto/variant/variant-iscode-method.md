@@ -37,7 +37,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a code variable. The code initializes the MyCode variable with a string value. The MyCode variable is assigned to the variant variable that is named MyVariant. The **ISCODE** method determines whether the variant contains a code variable and stores the return value in the varResult variable. In this case, the variant contains a code variable so **true** is returned and displayed in a message box. The [ISTEXT Method (Variant)](devenv-ISTEXT-Method-Variant.md) determines whether the variant contains a text variable. The return value is **false** because the variant does not contain a text. This example requires that you create the following global variables and text constants.  
+ The following example determines whether an AL variant contains a code variable. The code initializes the MyCode variable with a string value. The MyCode variable is assigned to the variant variable that is named MyVariant. The **ISCODE** method determines whether the variant contains a code variable and stores the return value in the varResult variable. In this case, the variant contains a code variable so **true** is returned and displayed in a message box. The [ISTEXT Method (Variant)](../../methods/devenv-istext-method-variant.md) determines whether the variant contains a text variable. The return value is **false** because the variant does not contain a text. This example requires that you create the following global variables and text constants.  
   
 |Variable name|DataType|Length|  
 |-------------------|--------------|------------|  

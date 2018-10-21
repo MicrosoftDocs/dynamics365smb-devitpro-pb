@@ -56,7 +56,7 @@ Customer2.COPYFILTERS(Customer1);
 Count := Customer2.COUNT;  
 ```  
   
- The filters defined for Customer1 are copied and applied to Customer2. This affects the result returned by the [COUNT Method \(Record\)](devenv-COUNT-Method-Record.md).  
+ The filters defined for Customer1 are copied and applied to Customer2. This affects the result returned by the [COUNT Method \(Record\)](../../methods/devenv-count-method-record.md).  
   
 
 ## See Also
