@@ -12,7 +12,7 @@ ms.assetid: 4b7765a4-2d90-4d2f-8a92-6d94d3b30209
 caps.latest.revision: 29
 manager: edupont
 author: SusanneWindfeldPedersen
-redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  

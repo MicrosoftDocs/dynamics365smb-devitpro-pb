@@ -10,7 +10,7 @@ ms.service: dynamics365-financials
 ms.assetid: b5cfa429-f702-4305-80c1-b6ba13c77d65
 caps.latest.revision: 8
 manager: edupont
-redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  

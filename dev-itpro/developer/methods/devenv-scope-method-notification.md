@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 author: SusanneWindfeldPedersen
 ms.service: dynamics365-financials
-redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  
