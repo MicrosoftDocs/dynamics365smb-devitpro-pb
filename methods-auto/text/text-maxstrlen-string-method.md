@@ -2,7 +2,7 @@
 title: "MaxStrLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MaxStrLen Method
 Gets the maximum defined length of a string variable.
 
@@ -24,13 +24,13 @@ MaxLength :=   Text.MaxStrLen(String: String)
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *String*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The string variable for which you want to find the maximum length.  
 
 
 ## Return Value
 *MaxLength*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The maximum length of the string variable.  
 
 

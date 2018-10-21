@@ -2,7 +2,7 @@
 title: "AsArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AsArray Method
 Converts the value in a JsonToken to a JsonArray data type.
 
@@ -28,7 +28,7 @@ An instance of the [JsonToken](jsontoken-data-type.md) data type.
 
 ## Return Value
 *Array*  
-&emsp;Type: [JsonArray](jsonarray-data-type.md)  
+&emsp;Type: [JsonArray](../jsonarray/jsonarray-data-type.md)  
 The returned JsonArray contains the same data as the JsonToken, but allows array-specific operations to be performed on it.  
 
 

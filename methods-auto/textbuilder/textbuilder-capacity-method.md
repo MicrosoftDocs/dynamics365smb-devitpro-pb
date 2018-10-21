@@ -2,7 +2,7 @@
 title: "Capacity Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Capacity Method
 Gets or sets the maximum number of characters that can be contained in the memory allocated by the current instance.
 
@@ -28,13 +28,13 @@ Gets or sets the maximum number of characters that can be contained in the memor
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
 *NewCapacity*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The maximum number of characters that can be contained in the memory allocated by the current instance. Its value can range from Length to MaxCapacity.  
 
 
 ## Return Value
 *OldCapacity*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The maximum number of characters that can be contained in the memory allocated by the current instance.  
 
 

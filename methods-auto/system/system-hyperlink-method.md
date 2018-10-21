@@ -2,7 +2,7 @@
 title: "Hyperlink Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Hyperlink Method
 Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer.
 
@@ -24,7 +24,7 @@ Passes a URL as an argument to an Internet browser, such as Windows Internet Exp
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *URL*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
  A URL that is passed to the Internet browser as an argument.  
 
 

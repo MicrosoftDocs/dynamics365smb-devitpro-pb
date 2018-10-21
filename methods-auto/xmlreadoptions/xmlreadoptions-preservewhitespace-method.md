@@ -2,7 +2,7 @@
 title: "PreserveWhitespace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/30/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PreserveWhitespace Method
 Gets or sets a value that indicates whether insignificant white space should be preserved during parsing.
 
@@ -28,13 +28,13 @@ Gets or sets a value that indicates whether insignificant white space should be 
 An instance of the [XmlReadOptions](xmlreadoptions-data-type.md) data type.  
 
 *NewValue*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The new value of the flag.  
 
 
 ## Return Value
 *Value*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if insignificant white spaces are preserved during parsing, otherwise **false**.  
 
 

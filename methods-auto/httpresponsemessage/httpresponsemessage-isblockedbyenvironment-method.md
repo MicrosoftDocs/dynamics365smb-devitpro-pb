@@ -2,7 +2,7 @@
 title: "IsBlockedByEnvironment Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IsBlockedByEnvironment Method
 Gets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request.
 
@@ -30,7 +30,7 @@ An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data 
 
 ## Return Value
 *IsBlockedByEnvironment*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the HTTP response is the result of the environment blocking an outgoing HTTP request, otherwise **false**.  
 
 

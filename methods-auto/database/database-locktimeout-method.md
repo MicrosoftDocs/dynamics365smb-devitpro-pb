@@ -2,7 +2,7 @@
 title: "LockTimeout Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # LockTimeout Method
 Determines whether the lock time-out setting is set to On. You can also use this function to override the default setting.
 
@@ -26,13 +26,13 @@ Determines whether the lock time-out setting is set to On. You can also use this
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *LockTimeout*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The new setting for whether the lock time-out is on.  
 
 
 ## Return Value
 *LockTimeout*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 This value shows whether to use a lock time-out.  
 
 

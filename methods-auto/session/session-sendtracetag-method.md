@@ -2,7 +2,7 @@
 title: "SendTraceTag Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SendTraceTag Method
 Send a trace tag to the telemetry service.
 
@@ -24,23 +24,23 @@ Send a trace tag to the telemetry service.
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Tag*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The tag.
         
 *Category*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The category.
         
 *Verbosity*  
-&emsp;Type: [Verbosity](verbosity-option.md)  
+&emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  
 The verbosity.
         
 *Message*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The message.
         
 *DataClassification*  
-&emsp;Type: [DataClassification](dataclassification-option.md)  
+&emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)  
 Classification of data in message.   
 
 

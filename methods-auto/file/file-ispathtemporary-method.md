@@ -2,7 +2,7 @@
 title: "IsPathTemporary Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IsPathTemporary Method
 Validates whether the given path is located in the current users temporary folder within the current service.
 
@@ -24,15 +24,14 @@ Validates whether the given path is located in the current users temporary folde
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Name*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the file, including the path.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-**true** if the name point to a location is the users temporary folder within the current service; **false** otherwise.  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the name point to a location is the users temporary folder within the current service; **false** otherwise.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

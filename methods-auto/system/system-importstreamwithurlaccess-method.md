@@ -2,7 +2,7 @@
 title: "ImportStreamWithUrlAccess Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ImportStreamWithUrlAccess Method
 Imports an object into a media container to be used in a temporary URL with a default expiration time.
 
@@ -24,21 +24,21 @@ ID :=   System.ImportStreamWithUrlAccess(InStream: InStream, Filename: String, [
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *InStream*  
-&emsp;Type: [InStream](instream-data-type.md)  
+&emsp;Type: [InStream](../instream/instream-data-type.md)  
 Input stream that contains the object to store as a media object.
         
 *Filename*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 File name to associate with the created media object.
         
 *MinutesToExpire*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 Number of minutes after which the object will expire.  
 
 
 ## Return Value
 *ID*  
-&emsp;Type: [Guid](guid-data-type.md)  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The ID of the media container, if the import is successful.  
 
 

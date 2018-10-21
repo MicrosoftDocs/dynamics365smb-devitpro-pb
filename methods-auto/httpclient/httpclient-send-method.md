@@ -2,7 +2,7 @@
 title: "Send Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Send Method
 Sends an HTTP request as an asynchronous operation.
 
@@ -26,19 +26,18 @@ Sends an HTTP request as an asynchronous operation.
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *Request*  
-&emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
+&emsp;Type: [HttpRequestMessage](../httprequestmessage/httprequestmessage-data-type.md)  
 The HTTP request message to send.
         
 *Response*  
-&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
+&emsp;Type: [HttpResponseMessage](../httpresponsemessage/httpresponsemessage-data-type.md)  
 The response received from the remote endpoint.  
 
 
 ## Return Value
 *Ok*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
-**True** if the operation was successful; otherwise, **false**.  
-Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error.  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

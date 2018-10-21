@@ -2,7 +2,7 @@
 title: "Update Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Update Method
 Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this function will not save the record before the page is updated.
 
@@ -26,7 +26,7 @@ Saves the current record and then updates the controls on the page. If you set t
 An instance of the [Page](page-data-type.md) data type.  
 
 *SaveRecord*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Set this parameter to true if you want to save the current record. Set this parameter to false if you want to update without saving the current record.  
 
 

@@ -2,7 +2,7 @@
 title: "Name Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Name Method
 Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control.
 
@@ -26,13 +26,13 @@ Name :=   FilterPageBuilder.Name(Index: Integer)
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Index*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The index of a filter control. The value must be in the range 1 to N, where N is the number of filter controls on the filter page.  
 
 
 ## Return Value
 *Name*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the filter control.  
 
 

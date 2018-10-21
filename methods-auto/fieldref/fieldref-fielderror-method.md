@@ -2,7 +2,7 @@
 title: "FieldError Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldError Method
 Stops the execution of the code, causing a run-time error, and creates an error message for a field.
 
@@ -26,7 +26,7 @@ Stops the execution of the code, causing a run-time error, and creates an error 
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *Text*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 Use this optional parameter to include the text of the error message. If this parameter is not present, default text will be used.  
 
 

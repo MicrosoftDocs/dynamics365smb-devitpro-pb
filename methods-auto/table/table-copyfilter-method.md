@@ -2,7 +2,7 @@
 title: "CopyFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CopyFilter Method
 Copies the filter that has been set for one field and applies it to another field.
 
@@ -26,11 +26,11 @@ Copies the filter that has been set for one field and applies it to another fiel
 An instance of the [Table](table-data-type.md) data type.  
 
 *FromField*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
 The field from which the filter will be copied.
           
 *Record.ToField*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
   
 
 

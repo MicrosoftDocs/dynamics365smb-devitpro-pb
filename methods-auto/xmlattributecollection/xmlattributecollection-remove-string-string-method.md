@@ -2,7 +2,7 @@
 title: "Remove Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/30/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Remove Method
 Removes the specified attribute from the collection.
 
@@ -26,11 +26,11 @@ Removes the specified attribute from the collection.
 An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.  
 
 *LocalName*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The local name of the attribute to remove.
         
 *NamespaceUri*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The namespace URI of the attribute to remove.  
 
 

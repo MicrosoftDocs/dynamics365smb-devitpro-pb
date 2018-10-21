@@ -2,7 +2,7 @@
 title: "Value Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Value Method
 Sets or gets the value of the field that is currently selected. This function returns an error if no field is selected.
 
@@ -28,13 +28,13 @@ Sets or gets the value of the field that is currently selected. This function re
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *NewValue*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
   
 
 
 ## Return Value
 *Value*  
-&emsp;Type: [Any](any-data-type.md)  
+&emsp;Type: [Any](../any/any-data-type.md)  
   
 
 

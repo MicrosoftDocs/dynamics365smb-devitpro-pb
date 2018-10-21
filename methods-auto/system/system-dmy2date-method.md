@@ -2,7 +2,7 @@
 title: "DMY2Date Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DMY2Date Method
 Gets a Date object based on a day, month, and year.
 
@@ -24,21 +24,21 @@ Date :=   System.DMY2Date(Day: Integer, [Month: Integer], [Year: Integer])
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Day*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the day in the month (1-31)
         
 *Month*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the month in the year (1-12). If you omit this optional parameter, the current month will be used as the default.
         
 *Year*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The four-digit number of the year. If you omit this optional parameter, the current year is used as the default.  
 
 
 ## Return Value
 *Date*  
-&emsp;Type: [Date](date-data-type.md)  
+&emsp;Type: [Date](../date/date-data-type.md)  
   
 
 

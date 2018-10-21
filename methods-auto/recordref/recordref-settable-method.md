@@ -2,7 +2,7 @@
 title: "SetTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SetTable Method
 Sets the table to which a Record variable refers as the same table as a RecordRef variable.
 
@@ -26,7 +26,7 @@ Sets the table to which a Record variable refers as the same table as a RecordRe
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *Rec*  
-&emsp;Type: [Table](table-data-type.md)  
+&emsp;Type: [Table](../table/table-data-type.md)  
 The Record for which you want to specify a table.  
 
 

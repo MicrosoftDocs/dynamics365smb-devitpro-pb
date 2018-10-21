@@ -2,7 +2,7 @@
 title: "FilterGroup Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FilterGroup Method
 Changes the filter group that is being applied to the table. You can also use this function to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.
 
@@ -28,13 +28,13 @@ Changes the filter group that is being applied to the table. You can also use th
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *NewGroup*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the new filter group.  
 
 
 ## Return Value
 *Group*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the filter group.  
 
 

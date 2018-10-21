@@ -2,7 +2,7 @@
 title: "GetSubstituteReportId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetSubstituteReportId Method
 Gets the ID of the report that will be run by the platform after considering any substitutions made by extensions.
 
@@ -22,13 +22,13 @@ NewReportId :=   Report.GetSubstituteReportId(ReportId: Integer)
 ```
 ## Parameters
 *ReportId*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report for which you want to retrieve the ID of the possible report substitute.  
 
 
 ## Return Value
 *NewReportId*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that will be run by the platform after considering any substitutions made by extensions.  
 
 

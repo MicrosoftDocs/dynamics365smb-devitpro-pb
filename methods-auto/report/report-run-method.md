@@ -2,7 +2,7 @@
 title: "Run Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Run Method
 Loads and executes the report that you specify.
 
@@ -22,19 +22,19 @@ Loads and executes the report that you specify.
 ```
 ## Parameters
 *Number*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that you want to run.
         
 *RequestWindow*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether the request window for the report will be displayed. The request window is part of the report object.
         
 *SystemPrinter*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether to use the default Windows printer or use table 78, Printer Selection, to find the correct printer for this report.
         
 *Record*  
-&emsp;Type: [Table](table-data-type.md)  
+&emsp;Type: [Table](../table/table-data-type.md)  
 Specifies which record to use in the report. Any filters that are attached to the record that you specify are used.  
 
 

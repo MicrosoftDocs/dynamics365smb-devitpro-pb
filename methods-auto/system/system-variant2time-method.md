@@ -2,7 +2,7 @@
 title: "Variant2Time Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Variant2Time Method
 Gets a time from a variant.
 
@@ -24,13 +24,13 @@ Time :=   System.Variant2Time(Variant: Variant)
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Variant*  
-&emsp;Type: [Variant](variant-data-type.md)  
+&emsp;Type: [Variant](../variant/variant-data-type.md)  
 The input variant.  
 
 
 ## Return Value
 *Time*  
-&emsp;Type: [Time](time-data-type.md)  
+&emsp;Type: [Time](../time/time-data-type.md)  
   
 
 

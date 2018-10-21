@@ -2,7 +2,7 @@
 title: "Next Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Next Method
 Steps through a specified number of records and retrieves a record.
 
@@ -26,14 +26,14 @@ Steps through a specified number of records and retrieves a record.
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *Steps*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 Defines the direction of the search and how many records to step include. If this parameter is greater than zero, the function will search the number of records specified in Steps forward in the table. If this parameter is less than zero, the function will search the number of records specified in Steps backward in the table. If this parameter is 0, no records are stepped over. If you do not specify this parameter, the function finds the next record.
           
 
 
 ## Return Value
 *Steps*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 Defines the direction of the search and how many records to include.  
 
 

@@ -2,7 +2,7 @@
 title: "IndexOfAny Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/28/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IndexOfAny Method
 Reports the one-based index of the first occurrence in this instance of any character in a specified array of Unicode characters. The search starts at a specified character position.
 
@@ -28,17 +28,17 @@ Index :=   Text.IndexOfAny(Values: List of [Char], [StartIndex: Integer])
 An instance of the [Text](text-data-type.md) data type.  
 
 *Values*  
-&emsp;Type: [List of [Char]](list-data-type.md)  
+&emsp;Type: [List of [Char]](../list/list-data-type.md)  
 The collection of characters to seek.
         
 *StartIndex*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based search starting position.  
 
 
 ## Return Value
 *Index*  
-&emsp;Type: [Integer](integer-data-type.md)  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based index of the first occurrence of the specified string in this instance. If the index returned is 0, the value is not present in the string.  
 
 

@@ -2,7 +2,7 @@
 title: "SetDefaultTableConnection Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2018
+ms.date: 10/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SetDefaultTableConnection Method
 Establishes a connection to an external database based on a previously registered connection of the specified type.
 
@@ -24,15 +24,15 @@ Establishes a connection to an external database based on a previously registere
 > This method can be invoked without specifying the data type name.  
 ## Parameters
 *Type*  
-&emsp;Type: [TableConnectionType](tableconnectiontype-option.md)  
+&emsp;Type: [TableConnectionType](../tableconnectiontype/tableconnectiontype-option.md)  
 The type of table connection as defined in the TableType property.
         
 *Name*  
-&emsp;Type: [String](string-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the external table connection. You must already have registered a table connection with this name.
         
 *Scoped*  
-&emsp;Type: [Boolean](boolean-data-type.md)  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If true, when the function ends where you have used SETDEFAULTTABLECONNECTION, the default table connection returns to the value it had before. Use the Scope parameter when you want to use a specific table connection for a specific task and then return to the normal configuration.  
 
 
