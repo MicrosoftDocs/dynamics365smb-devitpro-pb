@@ -37,7 +37,7 @@ A variable of the DotNet data type to represent the .NET Framework type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following code example is based on codeunit 5300 in the [!INCLUDE[demolong](../includes/demolong_md.md)]. This example requires that you create the following global variable and text constant.  
+ The following code example is based on codeunit 5300 in the [!INCLUDE[demolong](../../includes/demolong_md.md)]. This example requires that you create the following global variable and text constant.  
 
 |Variable name|DataType|Subtype|  
 |-------------------|--------------|-------------|  

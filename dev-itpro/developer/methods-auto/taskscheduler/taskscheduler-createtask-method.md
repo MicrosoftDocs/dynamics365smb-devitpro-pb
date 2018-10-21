@@ -69,7 +69,7 @@ Specifies the recordID of the record that you want to run the task on.
 TASKSCHEDULER.CREATETASK(CODEUNIT::"Job Queue Dispatcher", CODEUNIT::"Job Queue Error Handler", TRUE, COMPANYNAME, CURRENTDATETIME + 1000 + RANDOM(3000), JobQueueEntry.RECORDID);  
 ```  
 
- To see this code in use, you can look at the AL code in codeunit **448 Job Queue Dispatcher** in the [!INCLUDE[demolong](../includes/demolong_md.md)].  
+ To see this code in use, you can look at the AL code in codeunit **448 Job Queue Dispatcher** in the [!INCLUDE[demolong](../../includes/demolong_md.md)].  
 
 
 ## See Also
