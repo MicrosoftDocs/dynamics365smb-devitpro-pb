@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 4ce38f7b-bae2-427d-9db8-3e5014a48c6a
 caps.latest.revision: 11
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Option Data Type
 This simple data type denotes an option value. In the code snippet below, you can see how the Option data type is declared.

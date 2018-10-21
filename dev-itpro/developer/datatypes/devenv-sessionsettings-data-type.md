@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 2b9d7dad-f05c-4f93-a167-8a9fa036ed28
 caps.latest.revision: 2
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # SessionSettings Data Type
 The SessionSettings data type is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.

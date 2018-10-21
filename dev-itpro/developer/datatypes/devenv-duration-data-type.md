@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 4925b06d-1f96-4221-98b8-5bdd33b20b9e
 caps.latest.revision: 12
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Duration Data Type
 Represents the difference between two DateTimes. This value can be negative. It is stored as a 64-bit integer. The integer value is the number of milliseconds during the duration.  
