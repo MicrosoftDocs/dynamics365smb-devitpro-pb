@@ -37,5 +37,5 @@ The reason phrase sent by the server.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [HttpResponseMessage Data Type](httpresponsemessage-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

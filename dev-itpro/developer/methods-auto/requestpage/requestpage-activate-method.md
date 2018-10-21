@@ -39,5 +39,5 @@ If set to **true**, the data on the form will be refreshed.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [RequestPage Data Type](requestpage-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

@@ -48,5 +48,5 @@ The unique ID that is assigned to the MediaSet of the record.If you omit this op
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

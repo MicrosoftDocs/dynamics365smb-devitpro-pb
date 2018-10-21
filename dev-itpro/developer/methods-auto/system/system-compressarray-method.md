@@ -117,5 +117,5 @@ MESSAGE('After compression the address is: \%1\%2\%3\%4\%5\%6', CustomerData[1],
 
 ## See Also
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

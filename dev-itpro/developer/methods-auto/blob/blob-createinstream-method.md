@@ -46,5 +46,5 @@ MyTable.MyBLOBfield.CREATEINSTREAM(MyStream, TextEncoding.WINDOWS)
  For more information, see [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md).  
 ## See Also
 [Blob Data Type](blob-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

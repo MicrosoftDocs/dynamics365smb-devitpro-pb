@@ -39,5 +39,5 @@ The unique identifier (GUID) of the media object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

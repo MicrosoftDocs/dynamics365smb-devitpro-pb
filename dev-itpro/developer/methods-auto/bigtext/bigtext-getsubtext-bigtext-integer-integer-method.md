@@ -119,5 +119,5 @@ MESSAGE(Text000, VarSubText);
 
 ## See Also
 [BigText Data Type](bigtext-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

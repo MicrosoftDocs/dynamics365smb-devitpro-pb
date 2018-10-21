@@ -39,5 +39,5 @@ A variable that will contain a reference to the collection of HTTP request heade
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [HttpRequestMessage Data Type](httprequestmessage-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

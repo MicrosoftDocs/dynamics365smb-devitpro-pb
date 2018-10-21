@@ -38,5 +38,5 @@ The maximum length of a BigText variable is 2,147,483,647 characters and this co
 You can use the BigText methods to manipulate a BigText variable, for example to extract part of a BigText variable or to add a text string to a BigText variable.  
 The normal string methods cannot be used with a BigText variable.  
 ## See Also
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

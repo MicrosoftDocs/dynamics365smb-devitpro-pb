@@ -77,5 +77,5 @@ MESSAGE(TEXT000, Format(DateTimeToRound,0,FormatString), Precision, Format(Resul
 
 ## See Also
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

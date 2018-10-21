@@ -39,5 +39,5 @@ The content with which to replace the current node.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlDocumentType Data Type](xmldocumenttype-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

@@ -39,5 +39,5 @@ If the JsonValue does not contain a number or a string which can be converted wi
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

@@ -99,5 +99,5 @@ MESSAGE(Text005 + Text003 + Text004, Str1, Len1, Str2, Len2);
 
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

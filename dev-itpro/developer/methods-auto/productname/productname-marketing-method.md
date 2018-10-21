@@ -35,5 +35,5 @@ This method is useful when you have to include the application name in UI text. 
 
 ## See Also
 [ProductName Data Type](productname-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

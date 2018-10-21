@@ -65,5 +65,5 @@ FOR varIndex := 1 to varCount do
 
 ## See Also
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

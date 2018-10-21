@@ -56,5 +56,5 @@ MESSAGE('Is the key active =  %1 ', IsActive);
 
 ## See Also
 [KeyRef Data Type](keyref-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

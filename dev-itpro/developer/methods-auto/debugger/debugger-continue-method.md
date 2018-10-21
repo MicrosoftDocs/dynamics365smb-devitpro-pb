@@ -34,5 +34,5 @@ If you omit this optional return value and if the break is not set successfully,
 
 ## See Also
 [Debugger Data Type](debugger-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

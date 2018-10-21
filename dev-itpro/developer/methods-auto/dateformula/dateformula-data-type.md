@@ -36,5 +36,5 @@ IF FORMAT(DateFormulaVariable) = ' ' THEN
  You must use the [FORMAT Method (Code, Text)](../methods/devenv-format-method-code-text.md) to make a comparison with a text string. If you do not use this method, then the IF statement will fail because you cannot compare a DateFormula data type with a Text data type.  
 
 ## See Also
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

@@ -37,5 +37,5 @@ The GUID of the Media object in the database.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Media Data Type](media-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

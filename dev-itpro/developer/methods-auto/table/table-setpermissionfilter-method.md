@@ -30,5 +30,5 @@ An instance of the [Table](table-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Table Data Type](table-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

@@ -44,5 +44,5 @@ The application areas for the current session.
 
 ## See Also
 [Session Data Type](session-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

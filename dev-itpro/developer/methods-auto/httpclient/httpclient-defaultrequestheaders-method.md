@@ -42,5 +42,5 @@ The [HttpHeaders]((httpheaders-data-type.md)) variable is a reference type. When
 
 ## See Also
 [HttpClient Data Type](httpclient-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

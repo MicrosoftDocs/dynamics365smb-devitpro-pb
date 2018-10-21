@@ -53,5 +53,5 @@ This example shows how you can use the value of an option field as a constant in
 PurchHeaderRec."Document Type" := PurchHeaderRec."Document Type"::Invoice;   
 ```
 ## See Also
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

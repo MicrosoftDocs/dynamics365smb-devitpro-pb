@@ -44,5 +44,5 @@ Additional field that you want to set as the current key. This parameter is opti
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [TestFilter Data Type](testfilter-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

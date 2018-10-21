@@ -37,5 +37,5 @@ The base address of URI of the Internet resource used when sending requests.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [HttpClient Data Type](httpclient-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

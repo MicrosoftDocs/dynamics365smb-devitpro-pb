@@ -83,5 +83,5 @@ The events emitted by this code will have the events IDs (listed in the order th
 
 ## See Also
 [Session Data Type](session-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

@@ -39,5 +39,5 @@ If the JsonValue does not contain a string of the format "yyyy-MM-dd" e.g. "2017
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

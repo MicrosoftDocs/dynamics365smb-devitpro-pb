@@ -99,5 +99,5 @@ GLAccountRec.SETFILTER("No.", '100..200|300');
 
 ## See Also
 [Table Data Type](table-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

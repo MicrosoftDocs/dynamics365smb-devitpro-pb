@@ -222,5 +222,5 @@ MESSAGE(Text001, String,NewString);
 
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

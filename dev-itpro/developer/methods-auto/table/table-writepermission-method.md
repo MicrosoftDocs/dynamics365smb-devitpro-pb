@@ -61,5 +61,5 @@ MESSAGE('Table has Write permission? %1', varHasWrite);
 
 ## See Also
 [Table Data Type](table-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

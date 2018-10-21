@@ -56,5 +56,5 @@ MESSAGE('Value: ' + Text000);
 
 ## See Also
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

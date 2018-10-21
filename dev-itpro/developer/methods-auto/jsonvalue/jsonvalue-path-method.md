@@ -37,5 +37,5 @@ The path of the value relative to its containing JSON tree. If the object is the
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

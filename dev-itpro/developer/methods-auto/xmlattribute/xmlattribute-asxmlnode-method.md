@@ -35,5 +35,5 @@ An XmlNode value that references the current XmlAttribute.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlAttribute Data Type](xmlattribute-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

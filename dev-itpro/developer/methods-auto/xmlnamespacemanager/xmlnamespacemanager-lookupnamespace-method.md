@@ -43,5 +43,5 @@ The namespace URI for prefix.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlNamespaceManager Data Type](xmlnamespacemanager-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

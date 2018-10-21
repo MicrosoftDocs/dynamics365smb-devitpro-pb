@@ -47,5 +47,5 @@ The following methods are available on instances of the Blob data type.
  It is not supported for a page to access a BLOB field from a table other than the SourceTable of the page.  
 
 ## See Also
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

@@ -48,5 +48,5 @@ The unique ID that is assigned to the media object in the database. You can also
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Media Data Type](media-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

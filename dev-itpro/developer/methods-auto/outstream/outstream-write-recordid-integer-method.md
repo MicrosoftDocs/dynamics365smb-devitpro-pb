@@ -62,5 +62,5 @@ recBinaries.MODIFY();
   
 ## See Also
 [OutStream Data Type](outstream-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

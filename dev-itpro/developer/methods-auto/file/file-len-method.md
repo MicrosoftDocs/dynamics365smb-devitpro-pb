@@ -61,5 +61,5 @@ MESSAGE('The text is: %1. The length of the file is: %2', varString, varLength);
 
 ## See Also
 [File Data Type](file-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

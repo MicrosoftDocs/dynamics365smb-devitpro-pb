@@ -35,5 +35,5 @@ The ID of the report that will be run by the platform after considering any subs
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

@@ -37,5 +37,5 @@ The URI used for the HTTP request.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [HttpRequestMessage Data Type](httprequestmessage-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

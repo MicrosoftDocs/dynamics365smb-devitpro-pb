@@ -40,5 +40,5 @@ If true, when the function ends where you have used SETDEFAULTTABLECONNECTION, t
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Database Data Type](database-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

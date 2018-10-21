@@ -43,5 +43,5 @@ This value or expression can be any simple AL data type such as Boolean, Option,
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

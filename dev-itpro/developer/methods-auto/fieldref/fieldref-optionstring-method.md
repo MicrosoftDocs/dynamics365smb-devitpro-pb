@@ -63,5 +63,5 @@ MESSAGE(' %1', OptionString);
 
 ## See Also
 [FieldRef Data Type](fieldref-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

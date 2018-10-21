@@ -39,5 +39,5 @@ The number of the key you want to check.
  
 ## See Also
 [Database Data Type](database-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

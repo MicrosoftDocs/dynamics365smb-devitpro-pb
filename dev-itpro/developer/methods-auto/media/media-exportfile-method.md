@@ -39,5 +39,5 @@ Specifies the full path and name of the file to create for the exported media.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Media Data Type](media-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

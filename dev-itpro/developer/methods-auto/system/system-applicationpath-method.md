@@ -43,5 +43,5 @@ This method returns a string that contains the path of the directory where the e
 
 ## See Also
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

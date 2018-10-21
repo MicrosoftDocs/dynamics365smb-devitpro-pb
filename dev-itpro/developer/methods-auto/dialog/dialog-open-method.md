@@ -116,5 +116,5 @@ MyDialog.CLOSE()
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

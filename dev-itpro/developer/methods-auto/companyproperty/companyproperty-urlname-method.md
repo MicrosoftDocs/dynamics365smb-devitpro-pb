@@ -31,5 +31,5 @@ The company name in a URL.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [CompanyProperty Data Type](companyproperty-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

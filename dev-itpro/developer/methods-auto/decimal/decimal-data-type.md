@@ -36,5 +36,5 @@ Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999
 ```  
 
 ## See Also
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

@@ -37,5 +37,5 @@ The number of media objects that are included in the MediaSet of a record.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

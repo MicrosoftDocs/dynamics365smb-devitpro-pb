@@ -43,5 +43,5 @@ The GOTOKEY method loops over all records until it finds the identifies row.  Fo
 
 ## See Also
 [TestPage Data Type](testpage-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

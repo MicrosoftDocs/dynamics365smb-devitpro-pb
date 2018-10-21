@@ -35,5 +35,5 @@ This string contains the value of the User Name field in table 2000000120, the U
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Database Data Type](database-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

@@ -39,5 +39,5 @@ The position of the value in the JsonArray. -1 will be returned if Value cannot 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [JsonArray Data Type](jsonarray-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

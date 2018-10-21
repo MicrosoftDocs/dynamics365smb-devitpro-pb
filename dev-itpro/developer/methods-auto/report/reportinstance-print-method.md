@@ -48,5 +48,5 @@ The RecordRef that refers to the table in which you want to find a record.
  For a simple example that illustrates how to use the PRINT method, see example in the [RUNREQUESTPAGE Method](devenv-RUNREQUESTPAGE-Method.md) method topic.  
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

@@ -44,5 +44,5 @@ This value shows whether to use a lock time-out.
 When the AL code has finished running, the default setting is used again. This method does not change the duration of a lock time-out.  
 ## See Also
 [Database Data Type](database-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

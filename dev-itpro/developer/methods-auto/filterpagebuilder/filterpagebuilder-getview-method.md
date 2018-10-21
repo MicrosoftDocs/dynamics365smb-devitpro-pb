@@ -70,5 +70,5 @@ IF varFilterPageBuilder.RUNMODAL = TRUE THEN
 
 ## See Also
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

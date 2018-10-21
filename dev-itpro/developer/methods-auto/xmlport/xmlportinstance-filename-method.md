@@ -41,5 +41,5 @@ The current value of the FileName Property of an XmlPort.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Xmlport Data Type](xmlport-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

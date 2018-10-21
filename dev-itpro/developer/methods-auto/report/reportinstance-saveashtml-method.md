@@ -51,5 +51,5 @@ The folder path and name of the file that you want to save the report as. The pa
 
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

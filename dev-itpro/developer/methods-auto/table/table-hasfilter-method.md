@@ -54,5 +54,5 @@ MESSAGE('Does this record have a filter? %1', HasFilter);
 
 ## See Also
 [Table Data Type](table-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

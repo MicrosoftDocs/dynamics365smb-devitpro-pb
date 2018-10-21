@@ -51,5 +51,5 @@ MESSAGE(FORMAT(Duration));
  **124 days 4 hours 30 minutes 1 second**  
 
 ## See Also
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

@@ -34,5 +34,5 @@ The session ID that the debugger is currently attached to.
 
 ## See Also
 [Debugger Data Type](debugger-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

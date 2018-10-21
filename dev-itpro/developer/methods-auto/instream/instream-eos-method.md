@@ -63,5 +63,5 @@ MESSAGE('End of Stream');
 
 ## See Also
 [InStream Data Type](instream-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

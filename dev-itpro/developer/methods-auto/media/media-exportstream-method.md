@@ -39,5 +39,5 @@ The OutStream object that is created by the object that will receive the media c
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Media Data Type](media-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

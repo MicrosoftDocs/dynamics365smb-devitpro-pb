@@ -41,5 +41,5 @@ The current language setting for the report.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

@@ -47,5 +47,5 @@ You can call the **ATTACH** method to activate the debugger.
 
 ## See Also
 [Debugger Data Type](debugger-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)
