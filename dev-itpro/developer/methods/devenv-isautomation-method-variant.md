@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: dynamics365-financials
 ms.assetid: 1b08e80f-22fd-499b-afea-02f9006c0f04
 caps.latest.revision: 11
-redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  

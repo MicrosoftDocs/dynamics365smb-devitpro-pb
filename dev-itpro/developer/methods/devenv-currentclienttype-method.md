@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 1bba129e-f85c-4a1b-ba65-2b06c4f4a971
 author: SusanneWindfeldPedersen
 manager: edupont
-redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/al-method-reference
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  

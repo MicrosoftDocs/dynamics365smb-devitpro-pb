@@ -1,0 +1,63 @@
+---
+title: "Name Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 10/17/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# Name Method
+Gets the name of an ASCII or binary file.
+
+## Syntax
+```
+Name :=   File.Name()
+```
+> [!NOTE]  
+> This method can be invoked using property access syntax.  
+> [!NOTE]  
+> This method can be invoked without specifying the data type name.  
+
+## Parameters
+*File*  
+&emsp;Type: [File](file-data-type.md)  
+An instance of the [File](file-data-type.md) data type.  
+
+## Return Value
+*Name*  
+&emsp;Type: [String](../string/string-data-type.md)  
+  
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ You must use the [OPEN Method \(File\)](../../methods/devenv-open-method-file.md) to open the file before you can use this method.  
+  
+## Example  
+ The following example opens a text file that is named C:\\TestFolder\\TestFile.txt. The [NAME Method \(FILE\)](../../methods/devenv-name-method-file.md) retrieves the name and path of the text file and stores it in the varName variable. The value in the variable is displayed in a message box. This example assumes that you have created a text file named C:\\TestFolder\\TestFile.txt. This example requires that you create the following global variables.  
+  
+|Variable name|DataType|  
+|-------------------|--------------|  
+|TestFile|File|  
+|varName|Text|  
+  
+```  
+  
+TestFile.OPEN('C:\TestFolder\TestFile.txt');  
+varName := TestFile.NAME;  
+MESSAGE('The name of the file is: %1',varName);  
+```  
+  
+
+## See Also
+[File Data Type](file-data-type.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

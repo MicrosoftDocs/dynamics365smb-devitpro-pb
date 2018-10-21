@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: ede60a1a-e656-4135-9859-f264d0aa2a66
 caps.latest.revision: 8
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Integer Data Type
 This simple data type stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.  
