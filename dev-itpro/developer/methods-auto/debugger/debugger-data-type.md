@@ -1,0 +1,52 @@
+---
+title: "Debugger Data Type"
+ms.author: solsen
+ms.custom: na
+ms.date: 10/17/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# Debugger Data Type
+Enables communication with a debugger.
+
+The following methods are available on the Debugger data type.
+
+
+|Method name|Description|
+|-----------|-----------|
+|[Activate()](debugger-activate-method.md)|Activates the debugger and attaches the debugger to the next session that is started.|
+|[Deactivate()](debugger-deactivate-method.md)|Deactivates the debugger.|
+|[IsActive()](debugger-isactive-method.md)|Indicates whether the debugger is active.|
+|[Attach(Integer)](debugger-attach-method.md)|Activates the debugger and attaches it to the specified session.|
+|[IsAttached()](debugger-isattached-method.md)|Specifies if the debugger is attached to a session.|
+|[DebuggedSessionID()](debugger-debuggedsessionid-method.md)|Gets the ID of the previous session that the debugger was attached to.|
+|[IsBreakpointHit()](debugger-isbreakpointhit-method.md)|Specifies if a breakpoint is hit in a debugging session.|
+|[Break()](debugger-break-method.md)|Breaks code execution of a debugging session.|
+|[BreakOnError(Boolean)](debugger-breakonerror-method.md)|Sets whether the debugger breaks on errors.|
+|[BreakOnRecordChanges(Boolean)](debugger-breakonrecordchanges-method.md)|Breaks execution before a change to a record occurs.|
+|[SkipSystemTriggers(Boolean)](debugger-skipsystemtriggers-method.md)|Enables the debugger to skip code that is inside system triggers.|
+|[Continue()](debugger-continue-method.md)|Executes code until the next breakpoint or until execution ends.|
+|[StepInto()](debugger-stepinto-method.md)|Executes a function call and then stops at the first line of code inside the function.|
+|[StepOut()](debugger-stepout-method.md)|Enables debugging to return to the calling function after it steps into a function call.|
+|[StepOver()](debugger-stepover-method.md)|Executes a function call and then stops at the first line outside the function call.|
+|[Stop()](debugger-stop-method.md)|Stops execution as if the code hits an error.|
+|[DebuggingSessionID()](debugger-debuggingsessionid-method.md)|Gets the ID of the session that the debugger is currently attached to.|
+|[GetLastErrorText()](debugger-getlasterrortext-method.md)|Gets the last error that occurred in the debugger.|
+|[EnableSqlTrace(Integer, [Boolean])](debugger-enablesqltrace-method.md)|Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected.|
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+> [!NOTE]  
+> The Dynamics 365 Business Central Debugger is an example of a debugger application that is built using tables, pages, codeunits, and the AL debugger methods.
+
+## See Also
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

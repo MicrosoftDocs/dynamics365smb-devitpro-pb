@@ -1,0 +1,43 @@
+---
+title: "Activate Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 10/17/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# Activate Method
+Activates the current page on the client if possible. The data on the page will not be refreshed.
+
+## Syntax
+```
+[Ok := ]  Page.Activate([Refresh: Boolean])
+```
+## Parameters
+*Page*  
+&emsp;Type: [Page](page-data-type.md)  
+An instance of the [Page](page-data-type.md) data type.  
+
+*Refresh*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+If set to **true**, the data on the page will be refreshed.  
+
+
+## Return Value
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+  
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## See Also
+[Page Data Type](page-data-type.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

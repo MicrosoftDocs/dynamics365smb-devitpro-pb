@@ -1,0 +1,29 @@
+---
+title: "Boolean Data Type"
+ms.author: solsen
+ms.custom: na
+ms.date: 10/17/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# Boolean Data Type
+Indicates true or false.
+
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks 
+
+You can use the [FORMAT method (Code, Text)](../methods/devenv-format-method-code-text.md) to specify how Boolean values are shown.
+
+## See Also
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  
