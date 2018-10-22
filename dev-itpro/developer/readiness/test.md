@@ -31,7 +31,7 @@ The information in this document is being updated on a weekly base.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="media/win_try-windows.png" src="media/win_try-windows.png" alt="" data-linktype="relative-path">
+                                                    <img data-scaleimage="../media/win_try-windows.png" src="../media/win_try-windows.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -50,7 +50,7 @@ The information in this document is being updated on a weekly base.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="media/win_try-windows.png" src="media/win_try-windows.png" alt="" data-linktype="relative-path">
+                                                    <img data-scaleimage="../media/win_try-windows.png" src="../media/win_try-windows.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -69,7 +69,7 @@ The information in this document is being updated on a weekly base.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="media/win_try-windows.png" src="media/win_try-windows.png" alt="" data-linktype="relative-path">
+                                                    <img data-scaleimage="../media/win_try-windows.png" src="../media/win_try-windows.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -88,7 +88,7 @@ The information in this document is being updated on a weekly base.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="media/win_try-windows.png" src="media/win_try-windows.png" alt="" data-linktype="relative-path">
+                                                    <img data-scaleimage="../media/win_try-windows.png" src="../media/win_try-windows.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -107,7 +107,7 @@ The information in this document is being updated on a weekly base.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="media/win_try-windows.png" src="media/win_try-windows.png" alt="" data-linktype="relative-path">
+                                                    <img data-scaleimage="../media/win_try-windows.png" src="../media/win_try-windows.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -126,7 +126,7 @@ The information in this document is being updated on a weekly base.
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="media/win_try-windows.png" src="media/win_try-windows.png" alt="" data-linktype="relative-path">
+                                                    <img data-scaleimage="../media/win_try-windows.png" src="../media/win_try-windows.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
