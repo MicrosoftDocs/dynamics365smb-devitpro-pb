@@ -79,7 +79,7 @@ author: SusanneWindfeldPedersen
 |-----------|----------|-------------|  
 |1|Trigger event \(before\)|OnBeforeDeleteEvent|  
 |2|Table trigger|OnDelete|  
-|3|Global table trigger in codeunit 1|OnDatabaseDelete|  
+|3|Global table trigger in codeunit|OnDatabaseDelete|  
 |4|Database operations|Delete the record|  
 |5|Trigger event \(after\)|OnAfterDeleteEvent|  
   
