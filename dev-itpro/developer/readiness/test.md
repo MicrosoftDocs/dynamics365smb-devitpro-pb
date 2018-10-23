@@ -25,7 +25,7 @@ The information in this document is being updated on a weekly base.
                     <a href="#products1" data-linktype="self-bookmark"></a>
                     <ul id="products1" class="cardsC cols cols3">
                         <li>
-                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for developers, architects, and engineers" data-linktype="absolute-path">
+                            <a href="readiness-learning-dev-archs-engineers" title="Materials for developers, architects, and engineers" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
