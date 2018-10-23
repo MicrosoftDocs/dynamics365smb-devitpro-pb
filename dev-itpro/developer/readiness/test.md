@@ -19,10 +19,10 @@ The information in this document is being updated on a weekly base.
 </p>
     <ul class="pivots">
         <li>
-            <!--<a href="#products" data-linktype="self-bookmark"></a>-->
+            <a href="#products" data-linktype="self-bookmark"></a>
             <ul id="products">
                 <li>
-                    <!-- <a href="#products1" data-linktype="self-bookmark"></a> -->
+                    <a href="#products1" data-linktype="self-bookmark"></a>
                     <ul id="products1" class="cardsC cols cols3">
                         <li>
                             <a href="readiness-learning-dev-archs-engineers.md" title="Materials for developers, architects, and engineers" data-linktype="relative-path">
