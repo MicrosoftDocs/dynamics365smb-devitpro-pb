@@ -15,7 +15,7 @@ ms.author: solsen
 
 |Course description|Go to|
 |----|-----|
-|**Microsoft Dynamics 365 Business Central capabilities**<br>Learn more about the Microsoft Dynamics 365 Business Central capabilities.|[eLearning]()|
+|**Microsoft Dynamics 365 Business Central Capabilities**<br>Learn more about the Microsoft Dynamics 365 Business Central capabilities.|[eLearning]()|
 |**81241 Introduction to Microsoft Dynamics 365 Business Central**<br>This course examines the basic concepts of Microsoft Dynamics 365 Business Central, how to personalize the user interface and how to navigate. It also covers typical user tasks in common application areas, such as Finance, Inventory, Purchases, and Sale.|[]()|
 |**81229 Deploy and Configure Microsoft Dynamics 365 Business Central**<br>This course leads students through the deployment and configuration process of Microsoft Dynamics 365 Business Central. It explains how to get a subscription and how to set up a demo environment. The course also provides the knowledge to install the product on a mobile device, how to create a company with your own data and how to migrate data. It also explains how to set up users and email, how to assign permission sets, and how to set up important reporting functions, such as Power BI.|[]()|
 
