@@ -6,7 +6,7 @@ experiment_id: "81ba5f65-59fb-4d"
 title: Business Applications Release Notes
 description: 
 ms.topic: hub-page
-ms.date: 10/12/2018
+ms.date: 10/23/2018
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -19,10 +19,10 @@ The information in this document is being updated on a weekly base.
 </p>
     <ul class="pivots">
         <li>
-            <a href="#products" data-linktype="self-bookmark"></a>
+            <!--<a href="#products" data-linktype="self-bookmark"></a>-->
             <ul id="products">
                 <li>
-                    <a href="#products1" data-linktype="self-bookmark"></a>
+                    <!-- <a href="#products1" data-linktype="self-bookmark"></a> -->
                     <ul id="products1" class="cardsC cols cols3">
                         <li>
                             <a href="readiness-learning-dev-archs-engineers.md" title="Materials for developers, architects, and engineers" data-linktype="relative-path">
@@ -44,7 +44,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li>
                         <li>
-                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for application consultants" data-linktype="absolute-path">
+                            <a href="readiness-learning-app-consultants.md" title="Materials for application consultants" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -63,7 +63,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li>
                         <li>
-                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for presales roles" data-linktype="absolute-path">
+                            <a href="readiness-learning-presales.md" title="Materials for presales roles" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -82,7 +82,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li> 
                         <li>
-                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for sales roles" data-linktype="absolute-path">
+                            <a href="readiness-learning-sales.md" title="Materials for sales roles" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -101,7 +101,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li> 
                         <li>
-                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for marketeers" data-linktype="absolute-path">
+                            <a href="readiness-learning-marketeers.md" title="Materials for marketeers" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -120,7 +120,7 @@ The information in this document is being updated on a weekly base.
                             </a>
                         </li> 
                         <li>
-                            <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/" title="Materials for business decision makers" data-linktype="absolute-path">
+                            <a href="readiness-learning-bus-decision-makers.md" title="Materials for business decision makers" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
