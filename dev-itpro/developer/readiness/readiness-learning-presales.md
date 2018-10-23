@@ -1,52 +1,25 @@
 ---
-title: "Build Your Business on Dynamics 365 Business Central"
+title: "The “Ready to Go” Online learning for presales"
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/22/2018
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-# Build Your Business on Dynamics 365 Business Central
-Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions. [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is available in the cloud and to users across various multiple types of devices, which is always up-to-date. With this modern business platform you can easily and quickly tailor, extend, and build applications so they fit your specific needs — with little to no code development. <!-- Watch the short video below to get an overview of your opportunities. -->
+# The “Ready to Go” Online Learning for Presales
 
-<!-- Insert video:
-General introduction video (type of apps, introduction to Business Central and AppsSource, introduction of different swimming-lanes).
--->
+## Getting started
 
-## Go to market with Microsoft AppSource
-AppSource is the launch pad for joint go-to-market activities with Microsoft and a flywheel for business growth. Using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine. There are no fees for listing your offer in AppSource. Our goal is to connect Microsoft customers with solutions and services that our partner ecosystem offers.
-
-By listing your offer on AppSource you can get the following benefits:
-- Get started with confidence through a seamless onboarding experience.
-- Use Microsoft’s Go-To-Market Services.
-- Customize your app listing page.
-- Connect directly with decision-makers and reach more customers. 
-- Generate leads and sales opportunities.
-- Enhance business value and increase deal size with existing and new customers.
-- Get actionable insights on the performance of your listings via the Cloud Partner Portal or the Office app publishing process. 
- 
-You can bring two types of offerings to Microsoft AppSource:
-
-- Individual Apps – where you bring your industry expertise to market.
-- Packaged Consulting Services – where you bring ready-made packaged engagements to market.  
- 
-Find more information on which apps and Consulting Services that currently are available on Microsoft AppSource [here](https://appsource.microsoft.com/en-us/marketplace/consulting-services?country=US&page=1).
-
-## Getting started: find what is important to you 
-In order to inform you in the best possible way, we have organized the following content in categories based on what you want to bring to market.  
-
-|What do you want to achieve with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]?|
-|------------------------|
-|[**3rd party online services**](readiness-thirdparty-solution.md) </br>You have an online service that you want to connect and integrate with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].|
-|[**Development of a vertical solution**](readiness-develop-vertical.md) </br>Create an app that is specialized within a specific industry.|
-|[**Development of a horizontal solution**](readiness-develop-horizontal.md)</br>Extend the experience and capability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] by creating an Add-on app.|
-|[**Development of a localization solution**](readiness-develop-localization.md)</br>Comply with regulatory capabilities by developing for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].||
-|[**Dynamics 365 Reseller (VARs)**](readiness-reseller.md)</br>Resell and adjust [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to the individual needs of your customers.|
-
+|Course description|Go to|
+|----|-----|
+|**81241 Introduction to Microsoft Dynamics 365 Business Central**<br>This course examines the basic concepts of Microsoft Dynamics 365 Business Central, how to personalize the user interface and how to navigate. It also covers typical user tasks in common application areas, such as Finance, Inventory, Purchases, and Sales.|[eLearning]()|
+|**Compelling Prospect Conversations**<br>How to have compelling conversations with prospects on Microsoft Dynamics 365 Business Central.|[eLearning]()|
+|**Setting up your demo environment**<br>Get started enabling demos for Microsoft Dynamics 365 Business Central, including setting up a demo with a Business Central Trial.|[eLearning]()|
+|**The Partner Sales Playbook**<br>Twenty pre-configured, scripted demo scenes built around Business Central. Choose between full click-through assistance (download 1) and non-click-through assistance (download 2).|[eLearning]()|
+|**Microsoft Dynamics 365 Business Central capabilities**<br>Learn more about the Microsoft Dynamics 365 Business Central capabilities|[eLearning]()|
+|||
+|- **Demo: Drop Ship Sales Order**<br> [Watch on DLP]()<br>[Watch on YouTube]()<br>- **Demo: Enter a Sales Order from Mobile Device**<br>- **Demo: Intercompany Transactions**<br>- **Demo: Manage Existing Job**<br>- **Demo: Manage Inventory**<br>- **Demo: Multiple Company**<br>- **Demo: Opportunity to Quote**<br>- **Demo: Order to Cash from Business Central**<br>- **Demo: Order to Cash from Dynamics 365 Sales**<br>- **Demo: Procure to Pay**<br>- **Demo: Reconcile Bank**<br>- **Demo: Setting up a New Company**<br>- **Demo: The Accountant**<br>- **Demo: The Bookkeeper**<br>- **Demo: The External Accountant**<br>- **Demo: The Marketing Manager**<br>- **Demo: The Owner**<br>- **Demo: The Project Manager**<br>- **Demo: The Sales Manager**<br>- **Demo: The Sales Representative**<br>|
+|**Microsoft Dynamics 365 Blitz**<br>The pace of technological change makes it imperative to stay informed about the latest digital transformation innovations coming from Microsoft Dynamics 365 that benefit your customers. Review the Microsoft Dynamics Blitz sessions to hear product specialists share their knowledge about the latest Microsoft Dynamics 365 offers and learn about what’s new and what’s coming as well as the latest in industry, services and readiness enhancements. Continue your learning with the Blitz On-Demand sessions through the year. We’re excited to share these innovations with you! Please check back often to access the latest Microsoft Dynamics 365 Readiness New Release assets. Some highlighted sessions:<br>- Unifying Dynamics 365 Business Central and the One Microsoft Story<br>- Enabling Quote to Cash by Unifying Dynamics 365 Business Central with Dynamics 365 for Sales<br>- Building Business Process Flows in Dynamics 365 Business Central with Microsoft Flow and PowerApps<br>- Advanced Analytics and Intelligence with Power BI and Microsoft Flow.|[]()|

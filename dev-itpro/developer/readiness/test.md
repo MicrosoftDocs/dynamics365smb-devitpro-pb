@@ -14,7 +14,7 @@ ms.author: solsen
 <div id="main" class="v2">
 <div class="container">
     <h1>The “Ready to Go” learning catalog</h1>
-	<p>This “Ready to Go” learning catalog provides Dynamics 365 Business Central partners a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develops apps for Microsoft AppSource.
+	<p>This “Ready to Go” learning catalog provides Dynamics 365 Business Central partners a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develop apps for Microsoft AppSource.
 The information in this document is being updated on a weekly base.
 </p>
     <ul class="pivots">

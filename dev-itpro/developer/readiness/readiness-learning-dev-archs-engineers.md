@@ -9,7 +9,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# The “Ready to Go” Online learning for developers, architects and engineers
+# The “Ready to Go” Online Learning for Developers, Architects, and Engineers
 
 ## Getting started
 
