@@ -1,52 +1,34 @@
 ---
-title: "Build Your Business on Dynamics 365 Business Central"
+title: "The “Ready to Go” Online learning for business decision makers"
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/22/2018
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
-# Build Your Business on Dynamics 365 Business Central
-Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions. [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is available in the cloud and to users across various multiple types of devices, which is always up-to-date. With this modern business platform you can easily and quickly tailor, extend, and build applications so they fit your specific needs — with little to no code development. <!-- Watch the short video below to get an overview of your opportunities. -->
+# The “Ready to Go” Online Learning for Business Decision Makers
 
-<!-- Insert video:
-General introduction video (type of apps, introduction to Business Central and AppsSource, introduction of different swimming-lanes).
--->
+## Getting started
 
-## Go to market with Microsoft AppSource
-AppSource is the launch pad for joint go-to-market activities with Microsoft and a flywheel for business growth. Using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine. There are no fees for listing your offer in AppSource. Our goal is to connect Microsoft customers with solutions and services that our partner ecosystem offers.
-
-By listing your offer on AppSource you can get the following benefits:
-- Get started with confidence through a seamless onboarding experience.
-- Use Microsoft’s Go-To-Market Services.
-- Customize your app listing page.
-- Connect directly with decision-makers and reach more customers. 
-- Generate leads and sales opportunities.
-- Enhance business value and increase deal size with existing and new customers.
-- Get actionable insights on the performance of your listings via the Cloud Partner Portal or the Office app publishing process. 
- 
-You can bring two types of offerings to Microsoft AppSource:
-
-- Individual Apps – where you bring your industry expertise to market.
-- Packaged Consulting Services – where you bring ready-made packaged engagements to market.  
- 
-Find more information on which apps and Consulting Services that currently are available on Microsoft AppSource [here](https://appsource.microsoft.com/en-us/marketplace/consulting-services?country=US&page=1).
-
-## Getting started: find what is important to you 
-In order to inform you in the best possible way, we have organized the following content in categories based on what you want to bring to market.  
-
-|What do you want to achieve with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]?|
-|------------------------|
-|[**3rd party online services**](readiness-thirdparty-solution.md) </br>You have an online service that you want to connect and integrate with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].|
-|[**Development of a vertical solution**](readiness-develop-vertical.md) </br>Create an app that is specialized within a specific industry.|
-|[**Development of a horizontal solution**](readiness-develop-horizontal.md)</br>Extend the experience and capability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] by creating an Add-on app.|
-|[**Development of a localization solution**](readiness-develop-localization.md)</br>Comply with regulatory capabilities by developing for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].||
-|[**Dynamics 365 Reseller (VARs)**](readiness-reseller.md)</br>Resell and adjust [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to the individual needs of your customers.|
-
+|Course description|Go to|
+|----|-----|
+|**Overview of Dynamics 365 Business Central**<br>This recording outlines the value of Business Central. Business Central offers great value because it integrates with other Microsoft cloud services including Office 365 and can be customized or extended for specific industry needs with PowerApps, Microsoft Flow and Power BI.|[eLearning]()|
+|**Compelling Prospect Conversations**<br>How to have compelling conversations with prospects on Microsoft Dynamics 365 Business Central.|[Watch on DLP]()<br>[Watch on YouTube]()|
+|**Building a Profitable Cloud Practice**<br>Transitioning to a business model built on recurring revenue poses unique challenges for partners. This series of short videos provides insight to some of the financial impacts of moving to the cloud and instruction for using the associated tools to assess the right cloud solution offering to meet your business objectives.|[]()|
+|**Partner Profitability Model Whitepaper**<br>Model profitability opportunity with Dynamics 365 Business Central|[]()|
+|**An Introduction to Cloud SureStep for Microsoft Dynamics**<br>Cloud SureStep for Microsoft Dynamics is a partner enablement initiative designed to assist partners in building strong, repeatable practices and offerings for customers seeking cloud-based solutions. These videos provide insight to how customers engage in the cloud and compelling arguments for why a comprehensive solution from Microsoft will enable you to compete effectively in a cloud-first, mobile-first world.|[]()|
+|**10 steps to Launch Business Central**<br>Creating a new cloud solution is only one important aspect of bringing a new product to market. While your technical team is busy working, there are critical activities that marketing can begin months prior to release. This webinar identifies the 10 most critical marketing steps needed to successfully prepare for and launch your new Business Central solution.|[]()|
+|**Vertical Go-To-Market Strategy**<br>Business Central presents an incredible opportunity for you to bring a highly competitive vertical solution to market. In this session, you will learn the importance of a vertical go to market strategy and how taking a targeted and focused industry approach can help you differentiate your offerings, increase margins and acquire new long-term customer.|[]()|
+|**Increasing Digital Engagement**<br>Most partners have a 63% bounce rate on their home and landing pages. In this marketing session you will learn how to leverage the basic principles of neuromarketing to create new high-impact emotional content and messaging and convert reluctant website visitor.|[]()|
+|**Packaging & Pricing Strategies Business Central**<br>This session is designed to help your kick-start and/or, improve your cloud pricing and packaging process. Accelerating the acquisition or new cloud customers requires a shift away from traditional time and materials-based project pricing towards offering packaged solutions which include both subscription licenses and bundled services. In this webinar you will learn specific best practices and tactics to help you price your repeatable offerings and shorten the decision-making process.|[]()|
+|**Taking the Risk Out of Designing a New Cloud Solution**<br>Jumping into offering a new cloud solution can feel risky and expensive. This session walks you through a rapid minimum viable product design process which allows you to reduce risk, validate the market opportunity and get your initial cloud offering to market quickly.|[]()|
+|**Optimizing Business Central Cloud Sales Process Accelerated**<br>Please join Mark as he discusses how to partners can optimize their sales motions to align with Dynamics 365 Business Central value proposition.|[]()|
+|**Optimizing the Depth Sales Process for Business Central**<br>There are three primary Business Central buyer profiles, and each requires a unique repeatable sales approach. The four phase Depth sales approach supports the more complex Business Central opportunities that require on-site prospect engagement, and that inherently drive larger services projects. This webinar describes the differences between accelerated and a depth prospect profiles, as well as the primary strategy and supporting tactics that lead to high win-rates and low customer acquisition costs.|[]()|
+|**Sourcing, Hiring, and Onboarding Cloud Sales Professionals**<br>The sales skills required to sell traditional on-premise NAV projects are very different from those required to sell Business Central solutions in the cloud. Deal volume will increase, sales cycles will accelerate, and average deal size will decline. As a result, sales costs must come down. This webinar reviews the core competencies and skills to look in a cloud sales professional, how to test candidates during the selection process, and how to accelerate time-to-revenue once they join your team.|[]()|
+|**Supporting Materials for Your Business Central Go-To-Market Strategy**<br>- Microsoft Dynamics 365 Business Central Compensation Guide<br>- Microsoft Dynamics 365 Business Central Sales Professional Hiring Guide<br>- Dynamics 365 Business Central Sales Professional Onboarding Guide<br>- Dynamics 365 Business Central Accelerated Sales Process<br>-Business Central Accelerated Sales Guide<br>- Dynamics 365 Business Central Depth Sales Process<br>- Dynamics 365 Business Central Depth Sales Process Guide<br>-	Dynamics 365 Business Central Industry Insight Guide<br>-	Dynamics 365 Business Central Prospect Engagement Guide<br>- Dynamics 365 Business Central Emotional Discovery Guide<br>-	Business Central Engagement Plan<br>- Dynamics 365 Business Central Alignment E-mail Guide<br>- Dynamics 365 Business Central Demonstration Plan Guide<br>- Dynamics 365 Business Central Proposal Presentation Guide<br>- Dynamics 365 Business Central Proposal Presentation Example<br>- Dynamics 365 Business Central Solution Proposal Guide<br>-	Dynamics 365 Business Central Solution Proposal Template|[]()|
+|**Core Marketing Bill of Materials**<br>An extensive bill of material for Dynamics 365 Business Central<br>- Conversation guides<br>-	Pitch decks<br>- Messaging and positioning frameworks<br>- Capability guides<br>-	Demand generation toolkit<br>- A series of eBooks<br>- Infographics<br>- Branding guidelines<br>- Many more…|[]()|
+|**Search Customer Stories**<br>Find customer reference stories for Dynamics 365 Business Central on https://customers.microsoft.com.|[]()|
+|**Cloud Solution Provider Program**<br>Microsoft Dynamics 365 Business Central is only sold through the Cloud Solution Provider (CSP) program.|[]()|
