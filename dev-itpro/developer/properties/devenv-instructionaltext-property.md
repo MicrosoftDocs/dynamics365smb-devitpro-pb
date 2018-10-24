@@ -1,7 +1,7 @@
 ---
 title: "InstructionalText Property"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/24/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ The default is an empty string, which means there will be no instructions. Accor
 The following example illustrates how you can apply instructional text in an app:  
 
 ```
-InstructionalText = 'ENU=Add an entity from your list of contacts. The entity can be a person or a company.';
+InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.';
 ```
 
 ## See also

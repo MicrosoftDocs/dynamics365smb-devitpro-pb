@@ -75,18 +75,18 @@ page 50100 MyPage
         {
             group(Test)
             {
-                InstructionalText = 'ENU=Add an entity from your list of contacts. The entity can be a person or a company.';
+                InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.';
                 field(ID; ID)
                 {
                     ApplicationArea = All;
-                    Caption = 'ENU=First field';
-                    ToolTip = 'ENU=Shows the ID of the entity. You must set the ID manually when you add an entity, and it can be a maximum of 10 characters long.';
+                    Caption = 'First field';
+                    ToolTip = 'Shows the ID of the entity. You must set the ID manually when you add an entity, and it can be a maximum of 10 characters long.';
                 }
                 field(Name; Name)
                 {
                     ApplicationArea = All;
-                    Caption = 'ENU=Second field';
-                    ToolTip = 'ENU=Shows the name of the entity based on the names in your list of contacts.';
+                    Caption = 'Second field';
+                    ToolTip = 'Shows the name of the entity based on the names in your list of contacts.';
                 }
             }
         }
