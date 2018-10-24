@@ -103,7 +103,7 @@ The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] URL of a SubSite in
 
 `http://[WebserverComputerName]:[port]/[WebServerInstance]`
 
-For example: `http://localhost:8080/DynamicsNAVWebInstance1` and `http://localhost:8080/DynamicsNAVWebInstance2`. 
+For example: `http://localhost:8080/BusinessCentralWebInstance1` and `http://localhost:8080/BusinessCentralWebInstance2`. 
 
 ### Run the New-NAVWebServerInstance cmdlet
 
