@@ -1,14 +1,12 @@
 ---
-title: Help setup
+title: Configure the Help experience
 description: You can override the default location for Help to point at your own website.
 author: edupont04
 ms.custom: na
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2018
+ms.date: 10/24/2018
 ms.author: edupont
 ---
 
@@ -101,6 +99,9 @@ page 50100 MyPage
 
 For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, you must choose between using the legacy Dynamics NAV Help Server or an online website. Help Server is a simple website that requires your Help to be in a specific format (HTML files), and the online website can host any content that you want to make available. Your choice depends on the concrete needs of your solution and your users.  
 
+> [!IMPORTANT]
+> You can configure each client to use either an online library or Help Server. If you add configuration for an online library, you must remove the settings for Help Server.  
+
 ### Online library
 
 If you want to use a website that is not based on Help Server, then you must specify the URL in the settings for the Web client and the Windows client, if your company uses this legacy client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it support.  
@@ -108,11 +109,11 @@ If you want to use a website that is not based on Help Server, then you must spe
 For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
 ```
-                           "//BaseHelpUrl":  "The location of Help for this application."
+                           "//BaseHelpUrl":  "The location of Help for this application.",
                            "BaseHelpUrl": "https://docs.microsoft.com/{0}/dynamics365/business-central/",
-                           "//BaseHelpSearchUrl":  "The URL to use if Help is included in the Search functionality in Business Central."
+                           "//BaseHelpSearchUrl":  "The URL to use if Help is included in the Search functionality in Business Central.",
                            "BaseHelpSearchUrl": "https://docs.microsoft.com/{0}/search/index?search={1}&scope=BusinessCentral",
-                           "//DefaultRelativeHelpPath":  "The Help article to look up if no other article can be found."
+                           "//DefaultRelativeHelpPath":  "The Help article to look up if no other article can be found.",
                            "DefaultRelativeHelpPath": "index",
 ```
 
