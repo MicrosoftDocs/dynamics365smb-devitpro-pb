@@ -121,13 +121,13 @@ By using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] 
 
 For more information, see [[Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-##  <a name="DeleteObjects"></a> Task 5: Delete all objects except tables from the old database   
+##  <a name="DeleteObjects"></a> Task 4: Delete all objects except tables from the old database   
 In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] version that matches the database, open the old database, open Object Designer, select all objects except tables, and then choose **Delete**.
 
 You can also use the [DeleteObjects](https://docs.microsoft.com/en-us/dynamics-nav/deleteobjects
 ) command of the finsql.exe.
 
-## <a name="ClearServer"></a>Task 7: Clear server instance and debugger breakpoint records from old database
+## <a name="ClearServer"></a>Task 5: Clear server instance and debugger breakpoint records from old database
 Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the database in SQL Server.  
 
 1.  Make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
@@ -138,7 +138,7 @@ Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoin
     DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
     ```
 
-##  <a name="ConvertDb"></a> Task 8: Convert the old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] format
+##  <a name="ConvertDb"></a> Task 6: Convert the old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] format
 
 If the database is on Azure SQL Database, you must first add your user account to the **dbmanager** database role on master database. This membership is only required for converting the database, and can be removed afterwards. 
 
@@ -150,7 +150,7 @@ For more information about how to open a database, see [Open a Database](../csid
 > Do not run schema synchronization at this time. Choose to run it **later**.
 
 
-##  <a name="ImportAppObj"></a> Task 9: Import the upgraded application objects
+##  <a name="ImportAppObj"></a> Task 7: Import the upgraded application objects
 Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], import the application objects that you want in the database. This includes the application objects FOB file (from the application code upgrade) and the upgrade toolkit objects FOB file.
 
 1. Import the application objects FOB file first, and then import the upgrade toolkit FOB file.
@@ -166,7 +166,7 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
     Choose **Replace All**, and then **OK** to continue.
 
 
-##  <a name="ConnectToServer"></a> Task 10: Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database
+##  <a name="ConnectToServer"></a> Task 8: Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database
 
 You use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
 
@@ -178,7 +178,7 @@ For more information, see [Connecting a Server Instance to a Database](../admini
 >  When upgrading a large database, you should increase the **SQL Command Timeout** setting for the [!INCLUDE[server](../developer/includes/server.md)] instance, to avoid timeouts during schema synchronization. The default setting is 30 minutes.  
 
 
-##  <a name="CompSysTables"></a> Task 11: Compile all objects
+##  <a name="CompSysTables"></a> Task 9: Compile all objects
 
 1. In the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], set it to use the server instance that connects to the database.
 
@@ -211,7 +211,7 @@ For more information, see [Connecting a Server Instance to a Database](../admini
 
     The triggers for codeunit **130400 CAL Test Runner** and **130402 CAL Command Line Test Runner** will be updated for you during the data upgrade.
 
-## Task 12: Increase the application version of the database
+## Task 10: Increase the application version of the database
 
 If you are upgrading from [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], you must increase the application version that is assigned to the database.
 
@@ -232,7 +232,7 @@ Set-NAVApplication -ServerInstance <ServerInstanceName> -ApplicationVersion <N.N
 
 For example, if the old version was `11.0.24279.0`, then you could change the version to `13.0.24279.0`.
  
-##  <a name="RunSync1"></a> Task 13: Run the schema synchronization on the imported objects
+##  <a name="RunSync1"></a> Task 11: Run the schema synchronization on the imported objects
 
 Synchronize the database schema with validation.
 
@@ -242,9 +242,9 @@ For example, run the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershel
 Set-NAVTenant -ServerInstance <ServerInstanceName>
 ```
  
-For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and application-database.md).
+For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
-##  <a name="RunStartNavUpgrade"></a> Task 14: Run the data upgrade process  
+##  <a name="RunStartNavUpgrade"></a> Task 12: Run the data upgrade process  
 A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and upgrade tables, to migrate business data from the old table structure to the new table structure. You can start the data upgrade from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
 > [!NOTE]  
@@ -263,7 +263,7 @@ To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet 
 
 The data upgrade process runs `CheckPreconditions` and `Upgrade` functions in the upgrade codeunits. If any of the preconditions are not met or an upgrade function fails, you must correct the error and resume the data upgrade process. If CheckPreconditions and Upgrade functions are executed successfully, codeunit 2 is automatically run to initialize all companies in the database unless you set the `-SkipCompanyIntitialization` parameter.  
 
-##  <a name="ImportPerms"></a> Task 15: Import upgraded permission sets and permissions
+##  <a name="ImportPerms"></a> Task 13: Import upgraded permission sets and permissions
 
 Import the permission sets and permissions XML files that you exported from the old database as follows:
 
@@ -275,17 +275,17 @@ Import the permission sets and permissions XML files that you exported from the 
 
     For more information, see [How to: Export and Import Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ImportPerms).
 
-##  <a name="UploadEncryptionKeys"></a> Task 16: Import Data Encryption Key \(Optional\)  
+##  <a name="UploadEncryptionKeys"></a> Task 14: Import Data Encryption Key \(Optional\)  
 
 If you want to use data encryption as before, you must import the data encryption key file that was exported previously.  
 
 For more information, see [Exporting and Importing Encryption Keys](how-to-export-and-import-encryption-keys.md). 
 
-##  <a name="SetLang"></a> Task 17: Set the language of the customer database
+##  <a name="SetLang"></a> Task 15: Set the language of the customer database
 
 In the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)], choose **Tools**, choose **Language**, and then select the language of the original customer database.  
 
-##  <a name="AddControlAddins"></a> Task 18: Register client control add-ins  
+##  <a name="AddControlAddins"></a> Task 16: Register client control add-ins  
 The database is now fully upgraded and is ready for use. However, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes the following client control add-ins.
 -   Microsoft.Dynamics.Nav.Client.BusinessChart  
 -   Microsoft.Dynamics.Nav.Client.DynamicsOnlineConnect
@@ -302,26 +302,26 @@ The database is now fully upgraded and is ready for use. However, [!INCLUDE[prod
 
 To use these add-ins, they must be registered in table **2000000069 Client Add-in**. Depending on the version that you upgraded from, all the add-ins might not be registered after the upgrade process. You can register missing control add-ins in the **Control Add-ins** page in the client. The assemblies (.dlls) for these add-ins are in subfolders to the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation, which by default is [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service\Add-ins. For more information, see [How to: Register a Windows Client Control Add-in](/dynamics-nav/How-to--Register-a-Windows-Client-Control-Add-in).
 
-## Task 19: Configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
+## Task 17: Configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
 
 The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
 
-## Task 20. Transition the custom code from old codeunit 1 to use the new implementation
+## Task 18. Transition the custom code from old codeunit 1 to use the new implementation
 
 For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).  
  
-## Task 21: Update the Web Server instance configuration file (navsettings.json)
+## Task 19: Update the Web Server instance configuration file (navsettings.json)
 If you have installed the [!INCLUDE[webserver](../developer/includes/webserver.md)], populate the navsettings.json file for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance with the settings of the old web.config file or navsettings.json.
 
 For more information, see [Configuring Business Central Web Server Instances](../administration/configure-web-server.md).
   
-##  <a name="DeleteUpgCodeunits"></a> Task 22: Delete the upgrade objects
+##  <a name="DeleteUpgCodeunits"></a> Task 20: Delete the upgrade objects
 
 At this point, you have upgraded the database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
 
 When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  
 
-##  <a name="AddExtensions"></a> Task 23: Publish and install/upgrade extensions
+##  <a name="AddExtensions"></a> Task 21: Publish and install/upgrade extensions
 Complete this task if you are upgrading from a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] deployment that uses V2 extensions or a Denmark (DK) version of [!INCLUDE[nav2017](../developer/includes/nav2017.md)] or earlier.
 
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the current versions to the new versions.
