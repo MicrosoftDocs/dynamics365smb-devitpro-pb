@@ -11,7 +11,7 @@ author: jswymer
 ---
 # Authenticating Users with Active Directory Federation Services
 
-prodshort[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports Active Directory Federation Services (AD FS) authentication for authenticating users, without having to use the Access Control Service (ACS). This article walks you through the steps about how to set up AD FS authentication in AD FS Management console, and then how to configure it in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports Active Directory Federation Services (AD FS) authentication for authenticating users, without having to use the Access Control Service (ACS). This article walks you through the steps about how to set up AD FS authentication in AD FS Management console, and then how to configure it in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 ## Prerequisites
 Your deployment must meet the following prerequisites:
