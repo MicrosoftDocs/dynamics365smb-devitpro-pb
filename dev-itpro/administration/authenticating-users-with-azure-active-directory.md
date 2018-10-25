@@ -111,12 +111,12 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
     - If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured for multitenancy, and each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant corresponds to an Azure AD tenant that has a service principal, use `{AADTENANTID}` as the value. For example, `https://login.windows.net/{AADTENANTID}/wsfed?wa=wsignin1.0%26wtrealm=...%26wreply=...`. [!INCLUDE[server](../developer/includes/server.md)] will automatically replace `{AADTENANTID}` with the correct Azure AD tenant.
     - If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant instance and the corresponding [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure AD has external access and configured as a multitenant application, substitute [AAD TENANT ID] with `common`. Tenant ID parameter that is specified when mounting a tenant replaces the placeholder.
 
-	`<APP ID URI>` is the ID that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in Azure AD, for example `https://localhost/` or `https://CRONUSInternationLtd.onmicrosoft.com/Financials`.
+	`<APP ID URI>` is the ID that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in Azure AD, for example `https://localhost/` or `https://cronusinternationltd.onmicrosoft.com/Financials`.
 
 	`<APP REPLY URL>` is the reply URL that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], which in most cases, this is the same as the **Sign-On URL** for the application. For example:
 	
 	```
-	https://CRONUSInternationLtd.onmicrosoft.com/BC130/SignIn
+	https://cronusinternationltd.onmicrosoft.com/BC130/SignIn
 	```
 	
 	The `wreply` parameter is optional. The wreply query parameter tells the Azure AD authentication service where to send the authentication token. If you do not specify the wreply parameter, it will be deducted from the URL in the browser.
