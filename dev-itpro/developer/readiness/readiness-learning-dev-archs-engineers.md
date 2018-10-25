@@ -3,19 +3,21 @@ title: "The “Ready to Go” Online learning for developers, architects, and en
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/22/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # The “Ready to Go” Online Learning for Developers, Architects, and Engineers
+Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md).
 
 ## Getting started
 
 |Course description|Go to|
 |----|-----|
 |**81241 Introduction to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]**<br>This course examines the basic concepts of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], how to personalize the user interface and how to navigate. It also covers typical user tasks in common application areas, such as Finance, Inventory, Purchases, and Sales.|[eLearning](https://mbspartner.microsoft.com/D365/CourseOverview/1706)|
+|**How to publish a Dynamics 365 Business Central Connect app**<br>You have done the work to develop a new Connect App for Microsoft Dynamics 365 Business Central. You have created all the marketing material and tutorial videos. Learn what it takes to get your product and/or service published in Microsoft AppSource.|[Review](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-connect-apps)<br>[Watch on DLP](https://mbspartner.microsoft.com/D365/Videos/101875)<br>[Watch on YouTube](https://youtu.be/4v3Y8aH9ckY)|
 |**Introduction to the Dynamics 365 Business Central Partner Opportunity**<br>How does Business Central fit into the overall Dynamics 365 landscape? Whether you are an ISV partner or a VAR partner, you can use this rich ecosystem to bundle world-class products and services to your customers that offer a seamless integration with their business applications.|[Watch on DLP](https://mbspartner.microsoft.com/D365/Videos/101824)<br>[Watch on YouTube](https://youtu.be/-xhgpVBdyKs)|
 |**81221 Customization Foundation for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]**<br>This course provides information and demonstrations about the development environment and basic objects of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. Students will explore Visual Studio Code and the fundamentals of building Extensions in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The course starts with introducing essential knowledge about Visual Studio Code and continues with explaining the Table object and how to make Table Extensions. The course then continues with explaining the Page Object and how to make Page Extensions. This course is a starting point for students who want to learn how to customize [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].|[eLearning](https://mbspartner.microsoft.com/D365/CourseOverview/1712)|
 |**81222 Application Foundation for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]**<br>In this course we continue with exploring the development environment and language of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. To write code, we use Application Language as the programming language. This course will focus on the statements and functions, which allow you to read, write and change data. We will also discuss built-in and creating custom functions, variables, arrays, and lists. We will also look at another basic object in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], the CodeUnit. We will end this course discussing Events and the ability to use translation files.|[eLearning](https://mbspartner.microsoft.com/D365/CourseOverview/1754)|
@@ -38,6 +40,7 @@ ms.author: solsen
 |**Additional Resources for Publishing Add-on Apps**<br>- Getting started with Business Central add-on apps (Download P1).<br>- Technical Checklist for publishing your Add-on Apps (Review T.Checklist).<br>- Developing and publishing Business Central add-on apps including the marketing checklist for publishing your Add-on Apps (Download P2).|[Download P1](https://go.microsoft.com/fwlink/?linkid=869734)<br>[Review T.Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)<br>[Download P2](https://go.microsoft.com/fwlink/?linkid=869733)|
 |**Building Apps with Dynamics 365 Business Central**<br>The Building Apps with Dynamics 365 Business Central course is designed for helping solution architects and developers on designing and developing extensions for Dynamics 365 Business Central. Participants will get an overview and in-depth information about the technical aspects involved in designing a great app or extension.|[Workshop](https://mbspartner.microsoft.com/D365/WorkshopOffers/240)|
 |**An introduction to the Dynamics 365 Business Central Reselling Capabilities, Provisioning & Lifecycle Management for Business Central Tenants**<br>Build tailor-made offerings as part of the rich ecosystem of apps and services.|[Watch on DLP](https://mbspartner.microsoft.com/D365/Videos/101867)<br>[Watch on YouTube](https://youtu.be/mnSNZMSlw8g)|
+|**Tenant Specific Customizations for Dynamics 365 Business Central**<br>Setting up a sandbox environment for Microsoft Dynamics 365 Business Central is easy. Learn how to create a sandbox that is customized for specific client scenarios, by putting together and link the services that apply to that scenario.|[Watch on DLP](https://mbspartner.microsoft.com/D365/Videos/101792)<br>[Watch on YouTube](https://youtu.be/MHdKE191-TI)|
 
 ## For experts
 

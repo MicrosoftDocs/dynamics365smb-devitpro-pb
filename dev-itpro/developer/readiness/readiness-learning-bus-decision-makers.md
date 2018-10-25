@@ -3,13 +3,14 @@ title: "The “Ready to Go” Online learning for business decision makers"
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/22/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # The “Ready to Go” Online Learning for Business Decision Makers
+Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md).
 
 ## Getting started
 
@@ -31,4 +32,5 @@ ms.author: solsen
 |**Supporting Materials for Your Business Central Go-To-Market Strategy**<br>- Microsoft Dynamics 365 Business Central Compensation Guide<br>- Microsoft Dynamics 365 Business Central Sales Professional Hiring Guide<br>- Dynamics 365 Business Central Sales Professional Onboarding Guide<br>- Dynamics 365 Business Central Accelerated Sales Process<br>- Business Central Accelerated Sales Guide<br>- Dynamics 365 Business Central Depth Sales Process<br>- Dynamics 365 Business Central Depth Sales Process Guide<br>- Dynamics 365 Business Central Industry Insight Guide<br>-	Dynamics 365 Business Central Prospect Engagement Guide<br>- Dynamics 365 Business Central Emotional Discovery Guide<br>-	Business Central Engagement Plan<br>- Dynamics 365 Business Central Alignment E-mail Guide<br>- Dynamics 365 Business Central Demonstration Plan Guide<br>- Dynamics 365 Business Central Proposal Presentation Guide<br>- Dynamics 365 Business Central Proposal Presentation Example<br>- Dynamics 365 Business Central Solution Proposal Guide<br>- Dynamics 365 Business Central Solution Proposal Template|[Download](https://mbspartner.microsoft.com/BC/Topic/109)|
 |**Core Marketing Bill of Materials**<br>An extensive bill of material for Dynamics 365 Business Central<br>- Conversation guides<br>- Pitch decks<br>- Messaging and positioning frameworks<br>- Capability guides<br>-	Demand generation toolkit<br>- A series of eBooks<br>- Infographics<br>- Branding guidelines<br>- Many more…|[Review](https://mbs.microsoft.com/partnersource/northamerica/sales-marketing/product-strategy-direction/CoreMarketingBOM)|
 |**Search Customer Stories**<br>Find customer reference stories for Dynamics 365 Business Central on [https://customers.microsoft.com](https://customers.microsoft.com).|[Review](https://customers.microsoft.com/en-us/search?sq=%22Dynamics%20365%20Business%20Central%20%22&ff=&p=0&so=story_publish_date%20desc)|
+|**Microsoft Dynamics 365 Business Central Licensing topics**<br>Learn more about the Licensing and pricing of Microsoft Dynamics 365 Business Central.  The information on this page includes licensing decks, licensing guide, FAQs, transition guides, toolkits and many more.|[Review](https://mbs.microsoft.com/partnersource/northamerica/pricing-ordering/licensing-policies/Dyn365BusinessCentralPricingLicensing)<br>[Join the Conversation](https://www.yammer.com/cloudpartnercommunity/)|
 |**Cloud Solution Provider Program**<br>Microsoft Dynamics 365 Business Central is only sold through the Cloud Solution Provider (CSP) program.|[Homepage](https://partner.microsoft.com/en-US/cloud-solution-provider)<br>[Direct/indirect Model](https://docs.microsoft.com/en-us/partner-center/csp-overview)<br>[Support Options](https://partner.microsoft.com/en-US/support/partnersupport)|
