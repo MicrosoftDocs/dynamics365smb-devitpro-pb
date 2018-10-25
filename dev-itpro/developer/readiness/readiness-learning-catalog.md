@@ -34,7 +34,7 @@ ms.author: solsen
                                             </div>
                                             <div class="cardText">
                                                 <h3>Materials for developers, architects, and engineers</h3>
-						    <p>The “Ready to Go” Online learning for developers, architects, and engineers.</p>
+						    <p>The “Ready to Go” online learning for developers, architects, and engineers.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -53,7 +53,7 @@ ms.author: solsen
                                             </div>
                                             <div class="cardText">
                                                 <h3>Materials for application consultants</h3>
-												<p>The “Ready to Go” Online learning for application consultants.</p>
+												<p>The “Ready to Go” online learning for application consultants.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -72,7 +72,7 @@ ms.author: solsen
                                             </div>
                                             <div class="cardText">
                                                 <h3>Materials for pre-sales roles</h3>
-												<p>The “Ready to Go” Online learning for pre-sales.</p>
+												<p>The “Ready to Go” online learning for pre-sales.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -91,7 +91,7 @@ ms.author: solsen
                                             </div>
                                             <div class="cardText">
                                                 <h3>Materials for sales roles</h3>
-												<p>The “Ready to Go” Online learning for sales.</p>
+												<p>The “Ready to Go” online learning for sales.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@ ms.author: solsen
                                             </div>
                                             <div class="cardText">
                                                 <h3>Materials for marketeers</h3>
-												<p>The “Ready to Go” Online learning for marketeers.</p>
+												<p>The “Ready to Go” online learning for marketeers.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -129,7 +129,7 @@ ms.author: solsen
                                             </div>
                                             <div class="cardText">
                                                 <h3>Materials for business decision makers</h3>
-												<p>The “Ready to Go” Online learning for business decision makers.</p>
+												<p>The “Ready to Go” online learning for business decision makers.</p>
                                             </div>
                                         </div>
                                     </div>
