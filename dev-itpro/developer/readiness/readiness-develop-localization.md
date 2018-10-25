@@ -105,4 +105,4 @@ Also, consider joining the [Ready to Go](readiness-ready-to-go.md) program for a
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  
 [Resell Different Solutions](readiness-reseller.md)  
-[Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
+[Countries and Translations Supported](../../compliance/apptest-countries-and-translations.md)  
