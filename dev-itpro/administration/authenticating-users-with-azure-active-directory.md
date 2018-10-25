@@ -48,9 +48,9 @@ For more information, see [Using Certificates to Secure Connections](../deployme
 |-----------------|---------------------------------|---------------------------------------|
 |Name|The name of your application as it will display to your users, such as **Financial App by Solutions**.|
 |Type|Choose **Web application and/or web app**.|
-|Sign-on URL (App URL)|The URI for signing on to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], such as `https://CRONUSInternationLtd.onmicrosoft.com/BC130`.|
-|App ID URI|The URI to a domain in your Azure AD tenant. By default, the application is assigned an App ID URI that has the format `https://[domain]/[guid]`, such as https://CRONUSInternationLtd.onmicrosoft.com/70b20a51-46b7-4290-8686-b79ec90379f6. You can keep this value or change the `[guid]` portion to suit, for example, `https://CRONUSInternationLtd.onmicrosoft.com/Financials`. <BR /><BR />**Important:**  The App ID URI must be unique within the Azure AD tenant. However, if you want to share your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with other Azure AD tenants, the App ID URI must be unique in Azure AD. <br /><br /> This URI is appended to the **WS-Federation Login Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and **ACSURI** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. Additionally, in the [!INCLUDE[server](../developer/includes/server.md)] configuration, it must be specified in the **Azure AD App ID URI** setting for SOAP and OData web services.|
-|Reply URL|Add a reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. The reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] is the same as the Sign-on URL. The reply URL for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] is the URL for opening the client, such as `https://dynamicsnavwinclient/`.|
+|Sign-on URL (App URL)|The URI for signing on to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], such as `https://cronusinternationltd.onmicrosoft.com/BC130`.|
+|App ID URI|The URI to a domain in your Azure AD tenant. By default, the application is assigned an App ID URI that has the format `https://[domain]/[guid]`, such as https://CRONUSInternationLtd.onmicrosoft.com/70b20a51-46b7-4290-8686-b79ec90379f6. You can keep this value or change the `[guid]` portion to suit, for example, `https://cronusinternationltd.onmicrosoft.com/Financials`. <BR /><BR />**Important:**  The App ID URI must be unique within the Azure AD tenant. However, if you want to share your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with other Azure AD tenants, the App ID URI must be unique in Azure AD. <br /><br /> This URI is appended to the **WS-Federation Login Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and **ACSURI** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. Additionally, in the [!INCLUDE[server](../developer/includes/server.md)] configuration, it must be specified in the **Azure AD App ID URI** setting for SOAP and OData web services.|
+|Reply URL|Add a reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. <br /><br />The reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] is the same as the **Sign-on URL**, except it includes `/SignIn` at the end, such as `https://cronusinternationltd.onmicrosoft.com/BC130/SignIn`<br /><br /> The reply URL for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] is the URL for opening the client, such as `https://dynamicsnavwinclient/`.|
 
 <!-- removed from new portal
 |Directory Access|Choose **Single Sign-On**. Note: this was not an option when tested.|
@@ -80,13 +80,13 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 	Azure AD publishes federation metadata at:
 	
 	```
-	https://login.microsoftonline.com/<Azure AD TENANT ID>/FederationMetadata/2007-06/FederationMetadata.xml
+	https://login.windows.net/<Azure AD TENANT ID>/FederationMetadata/2007-06/FederationMetadata.xml
 	```
 
 	For example:
 
 	```
-	https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml
+	https://login.windows.net/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml
 	```  
 
 3.	Specify the WS-federation login endpoint.
@@ -100,7 +100,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 	For example:
 
 	```
-    https://login.windows.net/CRONUSInternationLtd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://CRONUSInternationLtd.onmicrosoft.com/Financials%26wreply=https://CRONUSInternationLtd.onmicrosoft.com/BC130/SignIn
+    https://login.windows.net/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/Financials%26wreply=https://cronusinternationltd.onmicrosoft.com/BC130/SignIn
     ```
 
 	**Parameter descriptions**:
