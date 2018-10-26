@@ -34,8 +34,6 @@ If the JsonValue does not contain a string of the format "HH:mm:ss.FFFFFFF" ( se
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks 
-If the JsonValue does not contain a string of the format "HH:mm:ss.FFFFFFF" ( see Custom Date and Time Format Strings) the operation will fail with a run-time error.
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  

@@ -34,8 +34,7 @@ If the JsonValue does not contain a number which can be converted without loss o
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks 
-If the JsonValue does not contain a number which can be converted without loss of precision to an Option, the operation will fail with a run-time error.
+
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  

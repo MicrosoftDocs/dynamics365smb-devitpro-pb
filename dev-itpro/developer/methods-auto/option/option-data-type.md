@@ -25,8 +25,14 @@ procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
     var 
         OptionVariable : Option C, "or D";
     begin
+        Message(OptionParameter::Alpha);
+        Message(OptionVariable::C);
     end;
 ```
+
+
+> [!NOTE]  
+> It is not possible to reference the members of the `OptionParameter` from outside the body of the procedure. 
   
 ## Remarks  
  In the [OptionString Property](../../properties/devenv-optionstring-property.md) of the field or variable, you can enter the option values as a comma-separated list. The Option type is a zero-based enumerator type, which means that the option values are assigned to sequential numbers, starting with 0. You can convert option data types to integers.  

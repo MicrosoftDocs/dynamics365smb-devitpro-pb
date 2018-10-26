@@ -34,8 +34,6 @@ If the JsonValue does not contain a number or a string which can be converted wi
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks 
-If the JsonValue does not contain a number or a string which can be converted without loss of precision to a Decimal, the operation will fail with a run-time error.
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  

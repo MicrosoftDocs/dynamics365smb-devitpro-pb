@@ -34,8 +34,7 @@ If the JsonValue does not contain a string of the format "yyyy-MM-dd" e.g. "2017
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks
-If the JsonValue does not contain a string of the format "yyyy-MM-dd" e.g. "2017-01-17" (2017-January-17), the operation will fail with a run-time error.
+
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  

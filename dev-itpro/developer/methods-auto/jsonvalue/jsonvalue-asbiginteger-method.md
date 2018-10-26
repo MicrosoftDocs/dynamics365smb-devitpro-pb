@@ -35,8 +35,6 @@ If the JsonValue does not contain number or a string which can be converted with
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Remarks 
-If the JsonValue does not contain number or a string which can be converted without loss of precision to an BigInteger, the operation will fail with a run-time error.
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  

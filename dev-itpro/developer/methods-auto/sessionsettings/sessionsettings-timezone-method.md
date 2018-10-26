@@ -44,6 +44,7 @@ The time zone set in the SessionSettings object.
 ## Example
 This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the TIMEZONE method to set the time zone to 'UTC' (Coordinated Universal Time). Finally, the REQUESTSESSIONUPDATE method sends a request to the client to abnandon the current session and start a new session that uses the new profile ID. This example requires a SessionSettings data type variable.
 
+```
 var
   MySessionSettings : SessionSettings;
   begin

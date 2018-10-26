@@ -46,8 +46,8 @@ The identifier (variable) of any AL data type, including simple and composite da
 
  **CLEAR** can also be used to deselect a company. For more information, see [CHANGECOMPANY Method \(Record\)](../../methods/devenv-changecompany-method-record.md).  
 
->!-- not relevant in web client/d365
-For an Automation object, **CLEAR** releases the Automation object and decreases the reference count. The Automation server determines if this should cause a shutdown. After **CLEAR**, you can use the [CREATE Method \(Automation\)](devenv-CREATE-Method-Automation.md) on the Automation variable to create a new instance of the object.  -->;
+<!-- not relevant in web client/d365
+For an Automation object, **CLEAR** releases the Automation object and decreases the reference count. The Automation server determines if this should cause a shutdown. After **CLEAR**, you can use the [CREATE Method \(Automation\)](devenv-CREATE-Method-Automation.md) on the Automation variable to create a new instance of the object.;  -->
 
  If you use **CLEAR** on a codeunit, only the reference to the codeunit is deleted and not the codeunit itself, as with Automation objects. This means that the content of the codeunit stays intact.  
 

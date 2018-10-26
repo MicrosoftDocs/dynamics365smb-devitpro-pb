@@ -34,8 +34,7 @@ The returned JsonToken contains the same data as the JsonValue, but allows for t
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks 
-The returned JsonToken contains the same data as the JsonValue, but allows for treating the data in a generic manner.
+
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  

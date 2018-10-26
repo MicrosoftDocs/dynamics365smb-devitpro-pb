@@ -34,8 +34,7 @@ The operation will succeed if the value was created from a Boolean using SetValu
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks 
-The operation will succeed if the value was created from a Boolean using SetValue or if the value was parsed from a string containing one of the values : "true" or "false". The operation will fail with a run-time error otherwise.
+
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  
