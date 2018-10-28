@@ -331,7 +331,7 @@ To use these add-ins, they must be registered in table **2000000069 Client Add-i
         V1 extensions have the file type `.navx`. V2 extensions have the file type `.app`. 
 
     2.  For each Extension V2, run the following command to synchronize its schema with the tenant database:
-    <!-- I got message that application and tenant database were not synched, so I had to sync to go futher-->
+    <!-- I got message that application and tenant database were not synched, so I had to sync to go further-->
 
         ```    
         Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
