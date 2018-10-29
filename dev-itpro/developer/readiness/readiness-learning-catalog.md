@@ -29,7 +29,7 @@ ms.author: solsen
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
+                                                    <img data-scaleimage="../media/PreviewImage_blue.png" src="../media/PreviewImage_blue.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -67,7 +67,7 @@ ms.author: solsen
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
+                                                    <img data-scaleimage="../media/PreviewImage_blue.png" src="../media/PreviewImage_blue.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -105,7 +105,7 @@ ms.author: solsen
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
+                                                    <img data-scaleimage="../media/PreviewImage_blue.png" src="../media/PreviewImage_blue.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
