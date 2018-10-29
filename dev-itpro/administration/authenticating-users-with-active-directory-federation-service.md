@@ -185,7 +185,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     >[!NOTE]
     >This URL must to be accessible from a browser on the computer running the [!INCLUDE[server](../developer/includes/server.md)].
 
-3.  To set up the [!INCLUDE[nav_web_md](includes/nav_web_md.md)], set the **WSFederationLoginEndpoint** (WSFederationLoginEndpoint) to point to the AD FS login page for authenticating users.
+3.  To set up the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set the **WSFederationLoginEndpoint** (WSFederationLoginEndpoint) to point to the AD FS login page for authenticating users.
 
     For example, the CustomSettings.config file should include the following key:
 
