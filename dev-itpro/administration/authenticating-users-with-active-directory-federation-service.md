@@ -61,7 +61,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
     -    If you are setting up AD FS for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set this to the full URL for the Web client. The URL typically has the format:
 
             ```
-            https://[web-server-computer]:[port]/[web-instance]
+            https://<web-server-computer>:<port>/<webserver-instance>
             ```
 
             For example:
@@ -70,10 +70,10 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
             https://MyWebServer:8080/BC130
             ```
 
-    -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], use base URL for the Web client, which is the full URL without the ```/[web-instance]``` part. This typically has the format:
+    -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], use base URL for the Web client, which is the full URL without the `/<webserver-instance>` part. This typically has the format:
 
         ```
-        https://[web-server-computer]:[port]/[web-instance]
+        https://[web-server-computer]:[port]
         ```
 
         For example:
@@ -159,12 +159,12 @@ To setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for ADFS auth
 The [!INCLUDE[server](../developer/includes/server.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], or by modifying the server instance's CustomSettings.config file directly.
 
 1.  Set the **Credential Type** (ClientServicesCredentialType) to ```NavUserPassword``` or ```AccessControlService```.
-    -   If you set this to ```NavUserPassword```, client users can use either NavUserPassword or claims based authentication to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The CustomSetting.config file should include the following line:
+    -   If you set this to ```NavUserPassword```, client users can use either NavUserPassword or claims based authentication to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The CustomSettings.config file should include the following line:
 
         ```
         <add key="ClientServicesCredentialType" value="NavUserPassword"/>
         ```
-    -   If you set this to ```AccessControlService```, only clients that use claims based authentication will be allowed to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The CustomSetting.config file should include the following line:
+    -   If you set this to `AccessControlService`, only clients that use claims based authentication will be allowed to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The CustomSettings.config file should include the following line:
 
         ```
         <add key="ClientServicesCredentialType" value="AccessControlService"/>
@@ -172,18 +172,31 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
 2.  Set the **WS-Federation Metadata Location** (ClientServicesFederationMetadataLocation) to the URL that defines the federation metadata XML document for your AD FS. The URL has the following format:
 
     ```
-    https://[Public URL for AD FS server]/federationmetadata/2007-06/federationmetadata.xml
+    https://<Public URL for AD FS server>/federationmetadata/2007-06/federationmetadata.xml
     ```
 
-    Replace ```[Public URL for AD FS server]``` with the URL for your installation.
+    Replace `<Public URL for AD FS server>` with the URL for your installation.
 
     When you are done, the CustomSettings.config file should include the following key:
 
     ```
-    <add key="ClientServicesFederationMetadataLocation" value="https://[Public URL for AD FS server]/federationmetadata/2007-06/federationmetadata.xml"/>
+    <add key="ClientServicesFederationMetadataLocation" value="https://<Public URL for AD FS server>/federationmetadata/2007-06/federationmetadata.xml"/>
     ```
     >[!NOTE]
     >This URL must to be accessible from a browser on the computer running the [!INCLUDE[server](../developer/includes/server.md)].
+
+3.  To set up the [!INCLUDE[nav_web_md](includes/nav_web_md.md)], set the **WSFederationLoginEndpoint** (WSFederationLoginEndpoint) to point to the AD FS login page for authenticating users.
+
+    For example, the CustomSettings.config file should include the following key:
+
+    ```
+    <add key="WSFederationLoginEndpoint" value="https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwebclient%26wreply=<Business Central Web Client URL>/SignUp" />
+    ```
+
+    Replace `<Public URL for AD FS server>` with the URL for your installation.
+
+    Replace `<Business Central Web Client URL>` with the full URL for your Web client, such as `https://MyWebServer:8080/BC130`. This is same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the client in AD FS.
+
 
 4.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
@@ -202,7 +215,7 @@ Change the **ClientServicesCredentialType** setting to ```AccessControlService``
 The configuration changes are automatically picked up by the Internet Information Service (IIS).
 
 >[!TIP]
->Instead of reconfiguring the existing web client, consider using the [New-NAVWebServerInstance cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to add an additional web server instance, and leave the existing instance running NavUserPassword authentication.
+>Instead of re-configuring the existing web client, consider using the [New-NAVWebServerInstance cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to add an additional web server instance, and leave the existing instance running NavUserPassword authentication.
 
 ### Dynamic NAV Windows client setup (optional)
 You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file for each client installation.
@@ -217,10 +230,10 @@ You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md
 2.  Set the **ACSUri** setting to the AD FS login page as shown:
 
     ```
-    <add key="ACSUri" value="https://[Public URL for ADFS server]/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwinclient%26wreply=[Web Client URL without /[Web server instance]]" />
+    <add key="ACSUri" value="https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwinclient%26wreply=<Business Central Web Client URL without Web server instance>" />
     ```
 
-    Replace ```[Dynamics NAV Web Client URL without /[Web server instance]]``` with the same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] in AD FS.
+    Replace `<Business Central Web Client URL without Web server instance>` with the same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] in AD FS.
 
 3. Restart the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].
 
