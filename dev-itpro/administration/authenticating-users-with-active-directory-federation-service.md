@@ -73,7 +73,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
     -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], use base URL for the Web client, which is the full URL without the `/<webserver-instance>` part. This typically has the format:
 
         ```
-        https://[web-server-computer]:[port]
+        https://<web-server-computer>:<port>
         ```
 
         For example:
@@ -244,6 +244,8 @@ You must map the user accounts in [!INCLUDE[prodshort](../developer/includes/pro
 You can do this by using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. Open the **User Card** page for a user, and then in the **Office 365 Authentication** section, set the **Authentication Email** field to the UPN of the AD FS user.
 
 When you initially set the **Authentication Email**, the **Authentication Status** will be **Inactive**. After the first time the user signs in to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by using AD FS, the status will be change to **Active**. This means that the Primary SID from AD FS has been registered on the user in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and all subsequent authentication mappings will be done on the Primary SID and not on the Authentication Email (UPN).
+
+For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
 ## See Also  
 [Configuring Business Central Server](configure-server-instance.md)  
