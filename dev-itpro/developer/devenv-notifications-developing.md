@@ -109,14 +109,16 @@ DataValue := MyNotification.GETDATA('Created');
 DataValue := MyNotification.GETDATA('ID');
 ```
 ## Example
-This simple example illustrates how notifications work and provides some insight into how you can use them. This example uses page **42 Sales Order** of the CRONUS International Ltd. demonstration database according to the following.
+This simple example illustrates how notifications work and provides some insight into how you can use them. This example extends page **42 Sales Order** of the CRONUS International Ltd. demonstration database according to the following:
 
 - The code compares a customer's balance with their credit limit. If the balance exceeds the credit limit, a notification is sent to the client.
 - The notification includes an action, which has the caption **Change credit limit**, that opens page **21 Customer Card**. This enables the user to increase the credit limit.
 
 To complete the example, follow these steps:
 
-1. In AL code for page **42 Sales Order**, add the following notification code on the **OnOpenPage** tigger.
+<!--
+
+1. In AL code for page **42 Sales Order**, add the following notification code on the **OnOpenPage** trigger.
 
     ```
     var
@@ -135,7 +137,7 @@ To complete the example, follow these steps:
           //Add a data property for the customer number
           CreditBalanceNotification.SETDATA('CustNumber', Customer."No.");
           //Add an action that calls the Action Handler codeunit, which you define in the next step.
-          CreditBalanceNotification.ADDACTION('Text004', CODEUNIT::"Action Handler", OpenCustomer);
+          CreditBalanceNotification.ADDACTION('Text004', CODEUNIT::"Action Handler", 'OpenCustomer');
           //Send the notification to the client.
           CreditBalanceNotification.SEND;
         end;        
@@ -162,7 +164,67 @@ To complete the example, follow these steps:
       end;   
     end;
     ```
+-->
 
+1. Create a page extension object that extends page **42 Sales Order**, and add the notification code on the **OnOpenPage** trigger.
+
+    ```
+    pageextension 50100 CreditBalanceNotification extends "Sales Order"
+    {
+    
+        trigger OnOpenPage()
+        var
+            Customer: Record Customer;
+            CreditBalanceNotification: Notification;
+            OpenCustomer: Text;
+            Text003: TextConst ENU = 'The current balance exceeds the credit limit.';
+            Text004: TextConst ENU = 'Change credit limit';
+        begin
+            Customer.GET("Sell-to Customer No.");
+            if Customer."Balance (LCY)" > Customer."Credit Limit (LCY)" then begin
+                //Create the notification
+                CreditBalanceNotification.MESSAGE(Text003);
+                CreditBalanceNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
+                //Add a data property for the customer number
+                CreditBalanceNotification.SETDATA('CustNumber', Customer."No.");
+                //Add an action that calls the ActionHandler codeunit, which you define in the next step.
+                CreditBalanceNotification.ADDACTION('Text004', CODEUNIT::"ActionHandler", 'OpenCustomer');
+                //Send the notification to the client.
+                CreditBalanceNotification.SEND;
+            end;
+        end;
+    }
+        ```
+    
+2. Create a codeunit called **ActionHandler** for handling the notification action. Add a global method called **OpenCustomer** that has a **Notification** data type parameter called **CreditBalanceNotification** for receiving the Notification object, and include the following code on the method:
+
+    ```
+    codeunit 50100 ActionHandler
+    {
+        trigger OnRun()
+        begin
+    
+        end;
+    
+        procedure OpenCustomer(CreditBalanceNotification: Notification)
+        var
+            CustNumber: Text;
+            CustNo: Text;
+            CustRec: Record Customer;
+            CustPage: Page "Customer Card";
+        begin
+            //Get the customer number data from the SETDATA call.
+            CustNo := CreditBalanceNotification.GETDATA(CustNumber);
+            // Open the Customer Card page for the customer.
+            if CustRec.GET(CustNo) then begin
+                CustPage.SETRECORD(CustRec);
+                CustPage.RUN;
+            end else begin
+                ERROR('Could not find Customer: ' + CustNo);
+            end;
+        end;
+    }
+    ```
 ## See Also  
 [Notification Data Type](datatypes/devenv-notification-data-type.md)  
 [Developing Extensions](devenv-dev-overview.md)  
