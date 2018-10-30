@@ -21,7 +21,7 @@ Azure Active Directory \(Azure AD\) is a cloud service that provides identity an
  The following sections describe the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] users.
 
 ## Preparation
-Azure AD authentication requires the use of service certificates to help secure client connections over a wide area network (WAN). In a production environment, you should obtain a certificate from a certification authority or trusted provider. In a test environment, if you do not have certificate, then you can create your own self-signed certificate. The implementation of certificates involves installation and configuration of the certificates on the [!INCLUDE[server](../developer/includes/server.md)] server and client computers.
+Azure AD authentication requires the use of service certificates to help secure client connections over a wide area network (WAN). In a production environment, you should obtain a certificate from a certification authority or trusted provider. In a test environment, if you do not have a certificate, then you can create your own self-signed certificate. The implementation of certificates involves installation and configuration of the certificates on the [!INCLUDE[server](../developer/includes/server.md)] server and client computers.
 
 For more information, see [Using Certificates to Secure Connections](../deployment/implement-security-certificates-production-environment.md).
 
