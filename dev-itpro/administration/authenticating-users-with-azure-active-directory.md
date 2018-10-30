@@ -48,13 +48,10 @@ For more information, see [Using Certificates to Secure Connections](../deployme
 |-----------------|---------------------------------|---------------------------------------|
 |Name|The name of your application as it will display to your users, such as **Business Central App by My Solutions**.|
 |Type|Choose **Web application and/or web app**.|
-|Sign-on URL (also referred to as App URL and Home page)|The URI for signing on to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], such as `https://cronusinternationltd.onmicrosoft.com/bc130`.|
-|App ID URI|The URI to a domain in your Azure AD tenant. By default, the application is assigned an App ID URI that has the format `https://[domain]/[guid]`, such as https://cronusinternationltd.onmicrosoft.com/70b20a51-46b7-4290-8686-b79ec90379f6. You can keep this value or change the `[guid]` portion to suit, for example, `https://cronusinternationltd.onmicrosoft.com/businesscentral`. <BR /><BR />**Important:**  The App ID URI must be unique within the Azure AD tenant. However, if you want to share your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with other Azure AD tenants, the App ID URI must be unique in Azure AD. <br /><br /> This URI is appended to the **WS-Federation Login Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and **ACSURI** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. Additionally, in the [!INCLUDE[server](../developer/includes/server.md)] configuration, it must be specified in the **Azure AD App ID URI** setting for SOAP and OData web services.|
-|Reply URL|Add a reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. <br /><br />The reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] is the same as the **Sign-on URL**, except it includes `/signin` at the end, such as `https://cronusinternationltd.onmicrosoft.com/bc130/signin`<br /><br /> The reply URL for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] is the URL for opening the client, such as `https://dynamicsnavwinclient`.|
+|Sign-on URL (also referred to as App URL and Home page)|The URI for signing on to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], which has the format `https://<domain or computer name>/<webserver-instance>`, such as `https://cronusinternationltd.onmicrosoft.com/BC130`.|
+|App ID URI|The URI to a domain in your Azure AD tenant. By default, the application is assigned an App ID URI that has the format `https://<domain>/<guid>`, such as https://cronusinternationltd.onmicrosoft.com/70b20a51-46b7-4290-8686-b79ec90379f6. You can keep this value or change the `<guid>` portion to suit, for example, `https://cronusinternationltd.onmicrosoft.com/businesscentral`. <BR /><BR />**Important:**  The App ID URI must be unique within the Azure AD tenant. However, if you want to share your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with other Azure AD tenants, the App ID URI must be unique in Azure AD. <br /><br /> This URI is appended to the **WS-Federation Login Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and **ACSURI** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. Additionally, in the [!INCLUDE[server](../developer/includes/server.md)] configuration, it must be specified in the **Azure AD App ID URI** setting for SOAP and OData web services.|
+|Reply URL|Add a reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. <br /><br />The reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] is the same as the **Sign-on URL**, except it includes `/SignIn` at the end, such as `https://cronusinternationltd.onmicrosoft.com/BC130/SignIn`. **Important** The portion of the reply URL after the domain name (in this case `BC130/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your installation. <br /><br /> The reply URL for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] is the URL for opening the client, such as `https://dynamicsnavwinclient`.|
 
-<!-- removed from new portal
-|Directory Access|Choose **Single Sign-On**. Note: this was not an option when tested.|
--->
 
 Your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution is now registered in your Azure AD tenant. You will need to provide the App ID URI and Reply URLs when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance for single sign-on. So, make a note of or copy the values for these settings for later use. You can view the settings in the Azure portal by selecting **Settings** for the registered application.   
 
@@ -100,7 +97,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 	For example:
 
 	```
-    https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/bc130/signin
+    https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC130/SignIn
     ```
 
 	**Parameter descriptions**:
@@ -109,26 +106,8 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
     |-|-|-|
     |`<AAD TENANT ID>`|The ID of the Azure AD tenant, for example `CRONUSInternationLtd.onmicrosoft.com`. To ensure that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] redirects to the right sign-in page, substitute `<AAD TENANT ID>` with a value according to the following:<ul><li>If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured for as a single tenant server instance, the value is typically the domain name for the Azure AD tenant, and the URL is similar to the example above.</li><li>If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured for multitenancy and each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant corresponds to an Azure AD tenant that has a service principal, use `{AADTENANTID}` as the value. For example, `https://login.microsoftonline.com/{AADTENANTID}/wsfed?wa=wsignin1.0%26wtrealm=...%26wreply=...`. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Azure AD tenant.</li><li>If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant instance and the corresponding [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure AD has external access and configured as a multitenant application, substitute [AAD TENANT ID] with `common`. Tenant ID parameter that is specified when mounting a tenant replaces the placeholder.</li>|
     |`<APP ID URI>`|The ID that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in Azure AD, for example `https://localhost/` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
-    |`<APP REPLY URL>`|The reply URL that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], which in most cases, this is the same as the **Sign-On URL** for the application. For example:<br /><br />`	https://cronusinternationltd.onmicrosoft.com/bc130/signin`<br /><br />The `wreply` parameter is optional. The wreply query parameter tells the Azure AD authentication service where to send the authentication token. If you do not specify the wreply parameter, it will be deducted from the URL in the browser.|
+    |`<APP REPLY URL>`|The reply URL that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Relpy URL** that was configured on the application in Azure AD.<br /><br />`	https://cronusinternationltd.onmicrosoft.com/BC130/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Azure AD authentication service where to send the authentication token. If you do not specify the `wreply` parameter, it will be deducted from the URL in the browser.|
 
-<!--   
-
-	`<AAD TENANT ID>` is the ID of the Azure AD tenant, for example `CRONUSInternationLtd.onmicrosoft.com`. To ensure that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] redirects to the right sign-in page, substitute `<AAD TENANT ID>` with a value according to the following:
-
-    - If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured for as a single tenant server instance, the value is typically the domain name for the Azure AD tenant, and the URL is similar to the example above.
-    - If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured for multitenancy, and each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant corresponds to an Azure AD tenant that has a service principal, use `{AADTENANTID}` as the value. For example, `https://login.microsoftonline.com/{AADTENANTID}/wsfed?wa=wsignin1.0%26wtrealm=...%26wreply=...`. [!INCLUDE[server](../developer/includes/server.md)] will automatically replace `{AADTENANTID}` with the correct Azure AD tenant.
-    - If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant instance and the corresponding [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure AD has external access and configured as a multitenant application, substitute [AAD TENANT ID] with `common`. Tenant ID parameter that is specified when mounting a tenant replaces the placeholder.
-
-	`<APP ID URI>` is the ID that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in Azure AD, for example `https://localhost/` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.
-
-	`<APP REPLY URL>` is the reply URL that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], which in most cases, this is the same as the **Sign-On URL** for the application. For example:
-	
-	```
-	https://cronusinternationltd.onmicrosoft.com/bc130/signin
-	```
-	
-	The `wreply` parameter is optional. The wreply query parameter tells the Azure AD authentication service where to send the authentication token. If you do not specify the wreply parameter, it will be deducted from the URL in the browser.
--->
 
    > [!IMPORTANT]
    >The query string parameter must be URI-encoded. This means, for example, use "%26" instead of "&".
@@ -153,7 +132,7 @@ The [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] must also b
 https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=[APP ID URI]%26wreply=[APP REPLY URL]
 ```
 
-The <APP REPLY URL> parameter in the URL must be equal to the sign in page for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], such as  `https://dynamicsnavwinclient`.  
+The `<APP REPLY URL>` parameter in the URL must be equal to the sign in page for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], such as  `https://dynamicsnavwinclient`.  
 
 For example:
 
