@@ -194,7 +194,7 @@ To complete the example, follow these steps:
             end;
         end;
     }
-        ```
+    ```
     
 2. Create a codeunit called **ActionHandler** for handling the notification action. Add a global method called **OpenCustomer** that has a **Notification** data type parameter called **CreditBalanceNotification** for receiving the Notification object, and include the following code on the method:
 
