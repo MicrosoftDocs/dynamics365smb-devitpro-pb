@@ -64,12 +64,12 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
             https://<web-server-computer>:<port>/<webserver-instance>
             ```
 
-            For example:
+           Replace `<webserver-instance>` with the instance name of the [!INCLUDE[webserverinstance](../developer/includes/webserverinstance.md)] as defined in IIS for your installation. Make sure that the case matches exactly. For example:
 
             ```
             https://MyWebServer:8080/BC130
             ```
-
+            Make 
     -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], use base URL for the Web client, which is the full URL without the `/<webserver-instance>` part. This typically has the format:
 
         ```
@@ -127,7 +127,6 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
     ![AD FS Edit Claims Rule Done](../media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
 
 ### Set up support for JSON Web tokens (JWT)
-<!--JWT tokens are not supported by AD FS 2.0 or [!INCLUDE[navcrete_md](../developer/includes/navcrete_md.md)] (Cummulative Update 14 and earlier).-->
 
 1.  In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
@@ -195,7 +194,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
 
     Replace `<Public URL for AD FS server>` with the URL for your installation.
 
-    Replace `<Business Central Web Client URL>` with the full URL for your Web client, such as `https://MyWebServer:8080/BC130`. This is same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the client in AD FS.
+    Replace `<Business Central Web Client URL>` with the full URL for your Web client, such as `https://MyWebServer:8080/BC130`. This is same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the client in AD FS. Make sure that the case matches exactly.
 
 
 4.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
@@ -206,7 +205,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
 ### [!INCLUDE[webserver](../developer/includes/webserver.md)] setup
 You configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] by modifying it's [navsettings.json configuration file](configure-web-server.md#WebClientSettingsFile).
 
-Change the **ClientServicesCredentialType** setting to ```AccessControlService``` as shown:
+Change the **ClientServicesCredentialType** setting to `AccessControlService` as shown:
 
 ```
 "ClientServicesCredentialType":  "AccessControlService",
@@ -220,7 +219,7 @@ The configuration changes are automatically picked up by the Internet Informatio
 ### Dynamic NAV Windows client setup (optional)
 You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file for each client installation.
 
-1.  Set the **ClientServicesCredentialType** to ```AccessControlService``` as shown:
+1.  Set the **ClientServicesCredentialType** to `AccessControlService` as shown:
 
     ```
     <add key="ClientServicesCredentialType" value="AccessControlService" />
