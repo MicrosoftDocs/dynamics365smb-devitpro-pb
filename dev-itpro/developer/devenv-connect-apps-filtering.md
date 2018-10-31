@@ -17,6 +17,8 @@ ms.service: "dynamics365-business-central"
 
 + You can include filters for the delta links; which are typically based on the GET query call. When calling the API with the deltaLink to get the changes, each entity that previously did not match the filter criteria, but matches it now, returns as an `"add"` entity. Each entity that previously matched the query but no longer does, either because the entity was deleted, or the properties of the entity have changed such that it no longer matches the query parameters. In this case, it returns as a `"removed"` entry.
 
+## $batch
+
 ## See Also
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 <!-- [Using Deltas With APIs](devenv-connect-apps-delta.md) -->  
