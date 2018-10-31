@@ -173,6 +173,7 @@
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## [AL Development Environment](developer/devenv-reference-overview.md)
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
+### [AL Simple Statements](developer/devenv-al-simple-statements.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
 ### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
