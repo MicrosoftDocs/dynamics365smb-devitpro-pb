@@ -60,6 +60,8 @@
 #### [Development Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### [Authentication and Credential Types](administration/users-credential-types.md)
 ### [Configuring Business Central Server](administration/configure-server-instance.md)
+### [Configuring Business Central Web Server](administration/configure-web-server.md)
+#### [Set Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
