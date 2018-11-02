@@ -35,7 +35,7 @@
 #### [Configuring Web Server Instances](administration/configure-web-server.md)
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
-#### [Configure Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
+#### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### Database
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
