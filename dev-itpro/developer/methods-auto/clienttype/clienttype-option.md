@@ -2,7 +2,7 @@
 title: "ClientType System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 10/29/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Represents the type of the client executing the operation.
 |Web|Microsoft Dynamics Business Central Web client.|
 |Windows|Microsoft Dynamics Business Central Windows client.|
 |Current|Microsoft Dynamics Business Central Windows client.|
-|Default||
+|Default|The default client.|
 |ODataV4|A ODataV4 client.|
 |Api|An API client.|
 

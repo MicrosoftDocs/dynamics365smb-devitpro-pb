@@ -2,7 +2,7 @@
 title: "SetRange Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The lower limit of the range. The data type of this parameter must match the dat
           
 *ToValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-he upper limit of the range. The data type of this parameter must match the data type of Column. If you omit the ToValue parameter, then the only the value that is specified for FromValue is used, which enables you to filter on a single column value instead of a range. If you omit both the FromValue and ToValue parameters, then the function removes all filters that are already set on the column.
+The upper limit of the range. The data type of this parameter must match the data type of Column. If you omit the ToValue parameter, then the only the value that is specified for FromValue is used, which enables you to filter on a single column value instead of a range. If you omit both the FromValue and ToValue parameters, then the function removes all filters that are already set on the column.
           
 
 

@@ -2,7 +2,7 @@
 title: "RequestPage Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RequestPage Data Type
-
+Is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for a report.
 
 
 The following methods are available on instances of the RequestPage data type.

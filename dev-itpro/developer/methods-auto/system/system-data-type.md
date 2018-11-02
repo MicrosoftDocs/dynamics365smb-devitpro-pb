@@ -2,7 +2,7 @@
 title: "System Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -73,10 +73,10 @@ The following methods are available on the System data type.
 |[ImportObjects(String, [Integer])](system-importobjects-method.md)|Import application objects from a file.|
 |[IsNull(DotNet)](system-isnull-method.md)|Gets a value indicating whether a DotNet object has been created or not.|
 |[GetLastErrorCallStack()](system-getlasterrorcallstack-method.md)|Gets the call stack from where the last error occurred.|
-|[CodeCoverageLog([Boolean], [Boolean])](system-codecoveragelog-method.md)||
-|[CodeCoverageInclude(var Table)](system-codecoverageinclude-method.md)||
-|[CodeCoverageRefresh()](system-codecoveragerefresh-method.md)||
-|[CodeCoverageLoad()](system-codecoverageload-method.md)||
+|[CodeCoverageLog([Boolean], [Boolean])](system-codecoveragelog-method.md)|Starts and stops the logging of code. You can also use this function to retrieve the current logging status.|
+|[CodeCoverageInclude(var Table)](system-codecoverageinclude-method.md)|Includes the code that has been logged.|
+|[CodeCoverageRefresh()](system-codecoveragerefresh-method.md)|Refreshes the code that has been logged.|
+|[CodeCoverageLoad()](system-codecoverageload-method.md)|Loads the code that has been logged.|
 |[GetDotNetType(Any)](system-getdotnettype-method.md)|Gets the System.Type that corresponds to the given value.|
 |[CanLoadType(DotNet)](system-canloadtype-method.md)|Tests if the specified .NET Framework type can be loaded.|
 |[CaptionClassTranslate(String)](system-captionclasstranslate-method.md)|Returns a translated version of the caption string. The string is translated to the current local language.|
@@ -84,8 +84,8 @@ The following methods are available on the System data type.
 |[GetUrl(ClientType, String, ObjectType, Integer, RecordRef, [Boolean])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[Encrypt(String)](system-encrypt-method.md)|Takes a string as input and returns the encrypted value of the string.|
 |[Decrypt(String)](system-decrypt-method.md)|Takes a string as input and returns the decrypted value of the string.|
-|[ExportEncryptionKey(String)](system-exportencryptionkey-method.md)||
-|[ImportEncryptionKey(String, String)](system-importencryptionkey-method.md)||
+|[ExportEncryptionKey(String)](system-exportencryptionkey-method.md)|Returns a password protected temporary filepath containing the encryption key. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant and every tenant will have a different key. Keys can be exported to a file which may be necessary in the case of upgrading or migrating a system from one set of hardware to another. The EXPORTENCRYPTIONKEY method allows an administrator to specify a destination file for the key and specify a password protection for the file.|
+|[ImportEncryptionKey(String, String)](system-importencryptionkey-method.md)|Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTENCRYPTIONKEY method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.|
 |[CreateEncryptionKey()](system-createencryptionkey-method.md)|Creates an encryption key for the current tenant.|
 |[DeleteEncryptionKey()](system-deleteencryptionkey-method.md)|Creates an encryption key for the current tenant.|
 |[EncryptionKeyExists()](system-encryptionkeyexists-method.md)|Checks whether an encryption key for the current tenant is present on the server tenant.|

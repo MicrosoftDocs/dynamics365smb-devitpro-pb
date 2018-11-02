@@ -2,7 +2,7 @@
 title: "XmlDocument Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,10 +21,10 @@ The following methods are available on the XmlDocument data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[ReadFrom(String, var XmlDocument)](xmldocument-readfrom-string-xmldocument-method.md)|Read and parse the XML document from the given data source.|
-|[ReadFrom(String, XmlReadOptions, var XmlDocument)](xmldocument-readfrom-string-xmlreadoptions-xmldocument-method.md)|Read and parse the XML document from the given data source.|
-|[ReadFrom(InStream, var XmlDocument)](xmldocument-readfrom-instream-xmldocument-method.md)|Read and parse the XML document from the given data source.|
-|[ReadFrom(InStream, XmlReadOptions, var XmlDocument)](xmldocument-readfrom-instream-xmlreadoptions-xmldocument-method.md)|Read and parse the XML document from the given data source.|
+|[ReadFrom(String, var XmlDocument)](xmldocument-readfrom-string-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
+|[ReadFrom(String, XmlReadOptions, var XmlDocument)](xmldocument-readfrom-string-xmlreadoptions-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
+|[ReadFrom(InStream, var XmlDocument)](xmldocument-readfrom-instream-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
+|[ReadFrom(InStream, XmlReadOptions, var XmlDocument)](xmldocument-readfrom-instream-xmlreadoptions-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
 |[Create()](xmldocument-create--method.md)|Creates an XmlDocument.|
 |[Create(Any,...)](xmldocument-create-joker-method.md)|Creates an XmlDocument.|
 

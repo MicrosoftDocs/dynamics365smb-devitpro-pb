@@ -2,7 +2,7 @@
 title: "Table Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ The following methods are available on instances of the Table data type.
 |[SetAutoCalcFields([Any,...])](table-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database.|
 |[Count()](table-count-method.md)|Counts the number of records in a table.|
 |[IsEmpty()](table-isempty-method.md)|Determines whether a table or a filtered set of records is empty.|
-|[CountApprox()](table-countapprox-method.md)||
+|[CountApprox()](table-countapprox-method.md)|Returns an approximate count of the number of records in the table, for example, for updating progress bars or displaying informational messages.|
 |[TableName()](table-tablename-method.md)|Gets the name of a table.|
 |[TableCaption()](table-tablecaption-method.md)|Gets the current caption of a table as a string.|
 |[ChangeCompany([String])](table-changecompany-method.md)|Redirects references to table data from one company to another.|
@@ -55,8 +55,8 @@ The following methods are available on instances of the Table data type.
 |[DeleteAll([Boolean])](table-deleteall-method.md)|Deletes all records in a table that fall within a specified range.|
 |[ReadPermission()](table-readpermission-method.md)|Determines whether a user is granted read permission to the table that contains a record. This function can test for both full read permission and partial read permission that has been granted with a security filter.|
 |[WritePermission()](table-writepermission-method.md)|Determines whether a user can write to a table. This function can test for both full write permission and partial write permission that has been granted with a security filter. A write permission consists of Insert, Delete, and Modify permissions.|
-|[ReadConsistency()](table-readconsistency-method.md)||
-|[RecordLevelLocking()](table-recordlevellocking-method.md)||
+|[ReadConsistency()](table-readconsistency-method.md)|Determines if the table supports read consistency.|
+|[RecordLevelLocking()](table-recordlevellocking-method.md)|Determines whether the table supports record-level locking.|
 |[Copy(var Table, [Boolean])](table-copy-method.md)|Copies a specified record, filters, marks, and keys that are associated with the record from a table or creates a reference to a record.|
 |[AddLink(String, [String])](table-addlink-method.md)|Adds a link to a record.|
 |[DeleteLink(Integer)](table-deletelink-method.md)|Deletes a specified link from a record in a table.|
@@ -76,7 +76,7 @@ The following methods are available on instances of the Table data type.
 |[HasFilter()](table-hasfilter-method.md)|Determines whether a filter is attached to a record within the current filter group.|
 |[SetRecFilter()](table-setrecfilter-method.md)|Sets the values in the current key of the current record as a record filter.|
 |[FilterGroup([Integer])](table-filtergroup-method.md)|Gets or sets the filter group that is applied to a table.|
-|[SetPermissionFilter()](table-setpermissionfilter-method.md)||
+|[SetPermissionFilter()](table-setpermissionfilter-method.md)|Applies the user's security filter.|
 |[Mark([Boolean])](table-mark-method.md)|Marks a record. You can also use this function to determine whether a record is marked.|
 |[ClearMarks()](table-clearmarks-method.md)|Removes all the marks from a record.|
 |[MarkedOnly([Boolean])](table-markedonly-method.md)|Activates a special filter. After you use this function, your view of the table includes only records marked by this function.|

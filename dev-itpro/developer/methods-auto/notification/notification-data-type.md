@@ -2,7 +2,7 @@
 title: "Notification Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Notification Data Type
-Notifications provide a programmatic way to send non-intrusive information to the user interface (UI) in the Dynamics NAV Web client.
+Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Dynamics NAV Web client.
 
 
 The following methods are available on instances of the Notification data type.
