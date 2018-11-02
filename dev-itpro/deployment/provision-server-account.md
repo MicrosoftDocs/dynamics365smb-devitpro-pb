@@ -212,6 +212,8 @@ CREATE LOGIN [domain\accountname] FROM WINDOWS
 CREATE USER [domain\accountname] FOR LOGIN [domain\accountname]   
 GRANT SELECT ON [master].[dbo].[$ndo$srvproperty] TO [domain\accountname]  
 ALTER SERVER ROLE [dbcreator] ADD MEMBER [domain\accountname]
+GRANT VIEW SERVER STATE TO [domain\accountname]
+GRANT ALTER ANY EVENT SESSION TO [domain\accountname]
 
 GO  
 USE [Microsoft Dynamics NAV Database]  
