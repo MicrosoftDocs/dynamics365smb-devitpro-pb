@@ -61,7 +61,7 @@ In this `Hello World` example, we are going over the basic steps required to ret
 
     - Since we are using basic authentication, we need to include the users domain in the URL, for example, call `GET https://api.businesscentral.dynamics.com/v1.0/<your tenant domain>/api/beta`.
         > [!NOTE]  
-        > The parameter `<your tenant domain>` is your default Azure Active Directory GUID.>
+        > The parameter `<your tenant domain>` is your default Azure Active Directory GUID.
     
 2. On the **Authorization** tab in Postman select **Basic Auth** in the **Type** and provide the Username and **Web Service Access Key** from above as password. 
 
