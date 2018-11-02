@@ -65,7 +65,7 @@ The following table describes the settings in the ```launch.json``` file. The `l
 |schemaUpdateMode|No|Specifies the data synchronization mode when you publish an extension to the development server, for example: <br>`"schemaUpdateMode": "Synchronize Recreate"`</br> The default value is Synchronize. For more information, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  <br>[!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]  |
 |breakOnError | No |Specifies whether to break on errors when debugging. The default value is `true`. | 
 |breakOnRecordWrite | No |Specifies if the debugger breaks on record changes. The default value is `false`.| 
-|launchBrowser|No|Specifies whether to open a new tab page in the browser when publishing the AL extension. The default value is `false`. If the value is not specified or set to true, the session is started. If the value is explicitly set to false, the session is not started unless you launch your extension in debugging mode.|
+|launchBrowser|No|Specifies whether to open a new tab page in the browser when publishing the AL extension (Ctrl+F5). The default value is `false`. If the value is not specified or set to true, the session is started. If the value is explicitly set to false, the session is not started unless you launch your extension in debugging mode.|
 
 ### Publish to cloud settings
 |Setting|Mandatory|Value|
