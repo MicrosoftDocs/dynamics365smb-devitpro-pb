@@ -206,7 +206,7 @@ You perform these tasks on each tenant that you want to upgrade.
     Synchronize the tenant database schema with validation by running the the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
 
     ```
-    Set-NAVTenant -ServerInstance <ServerInstanceName> -Tenant <TenantID>
+    Sync-NAVTenant -ServerInstance <ServerInstanceName> -Tenant <TenantID>
     ```
 
 3. Synchronize all published extensions with the tenant database.
