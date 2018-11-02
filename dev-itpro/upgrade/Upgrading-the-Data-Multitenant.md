@@ -10,7 +10,7 @@ ms.topic: article
 ms.author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+# Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]: Multitenant Deployment
 
 [See print-friendly quick reference](multitenant-upgrade-checklist.md)
 

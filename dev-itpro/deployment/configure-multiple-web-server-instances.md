@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Creating and Managing [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell
+# Setting Up Multiple [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell
 
 Although you can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] and create a single web server instance in IIS for client connection, there may be scenarios when you want to set up multiple instances. For example, you could set up a separate [!INCLUDE[webserver](../developer/includes/webserver.md)] instance for the different companies of a business. For this scenario, you can use the [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets, which are outlined in the following table.
 
