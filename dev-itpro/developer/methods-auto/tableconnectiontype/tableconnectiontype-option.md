@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TableConnectionType Option Type
-
+Use variables of this data type to specify the type of connection to an external database.
 
 ## Members
 |  Member  |  Description  |

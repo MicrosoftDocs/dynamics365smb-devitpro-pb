@@ -80,12 +80,12 @@ The following types are available as part of the AL Language Reference Library.
 |[Session](session/session-data-type.md)|Represents a Microsoft Dynamics Business Central session.|
 |[SessionSettings](sessionsettings/sessionsettings-data-type.md)|Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.|
 |[String](string/string-data-type.md)|Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value.|
-|[System](system/system-data-type.md)||
-|[Table](table/table-data-type.md)||
+|[System](system/system-data-type.md)|Is a complex data type.|
+|[Table](table/table-data-type.md)|Is a complex data type.|
 |[TaskScheduler](taskscheduler/taskscheduler-data-type.md)|Is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times.|
-|[TestAction](testaction/testaction-data-type.md)||
+|[TestAction](testaction/testaction-data-type.md)|Represents a test action on a page.|
 |[TestField](testfield/testfield-data-type.md)|Represents a testable field on a page.|
-|[TestFilter](testfilter/testfilter-data-type.md)||
+|[TestFilter](testfilter/testfilter-data-type.md)|Represents a test filter on a page.|
 |[TestFilterField](testfilterfield/testfilterfield-data-type.md)|Represents the type of a field filter in a test filter on a page or on a request page.|
 |[TestPage](testpage/testpage-data-type.md)|Represents a variable type that can be used to test Page Application Objects.|
 |[TestPart](testpart/testpart-data-type.md)|Represents a variable type that can be used to test Page Application Objects of type Part.|
@@ -117,7 +117,7 @@ The following types are available as part of the AL Language Reference Library.
 |[XmlWriteOptions](xmlwriteoptions/xmlwriteoptions-data-type.md)|Represents the options configuring how XML is saved.|
 |[Action](action/action-option.md)|Represents the action that the user took on the page.|
 |[ClientType](clienttype/clienttype-option.md)|Represents the type of the client executing the operation.|
-|[DataClassification](dataclassification/dataclassification-option.md)||
+|[DataClassification](dataclassification/dataclassification-option.md)|Sets the classification of the data in the table or field.|
 |[DataScope](datascope/datascope-option.md)|Identifies the scope of stored data in the isolated storage.|
 |[DefaultLayout](defaultlayout/defaultlayout-option.md)|The default layout to be used by a report.|
 |[ExecutionContext](executioncontext/executioncontext-option.md)|Represents the context in which a session is running. In certain scenarios, for example during upgrade, the system will run a session in a special context for a limited time.|
@@ -126,10 +126,10 @@ The following types are available as part of the AL Language Reference Library.
 |[FieldType](fieldtype/fieldtype-option.md)|Represents the type of a table field.|
 |[NotificationScope](notificationscope/notificationscope-option.md)|Specifies the context in which the notification appears in the client.|
 |[ObjectType](objecttype/objecttype-option.md)|The different types of objects.|
-|[ReportFormat](reportformat/reportformat-option.md)||
-|[SecurityFilter](securityfilter/securityfilter-option.md)||
-|[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)||
-|[TestPermissions](testpermissions/testpermissions-option.md)||
+|[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
+|[SecurityFilter](securityfilter/securityfilter-option.md)|Specifies how security filters are applied to the record.|
+|[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)|Use variables of this data type to specify the type of connection to an external database.|
+|[TestPermissions](testpermissions/testpermissions-option.md)|Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.|
 |[TextEncoding](textencoding/textencoding-option.md)|Represents a file encoding.|
 |[TransactionModel](transactionmodel/transactionmodel-option.md)|Represents a test transaction model.|
 |[TransactionType](transactiontype/transactiontype-option.md)|Represents a transaction type.|

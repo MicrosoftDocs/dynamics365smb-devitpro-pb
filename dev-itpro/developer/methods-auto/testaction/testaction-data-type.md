@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestAction Data Type
-
+Represents a test action on a page.
 
 
 The following methods are available on instances of the TestAction data type.

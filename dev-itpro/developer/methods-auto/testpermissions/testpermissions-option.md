@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestPermissions Option Type
-
+Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.
 
 ## Members
 |  Member  |  Description  |

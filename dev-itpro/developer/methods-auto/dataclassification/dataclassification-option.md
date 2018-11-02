@@ -2,7 +2,7 @@
 title: "DataClassification System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DataClassification Option Type
-
+Sets the classification of the data in the table or field.
 
 ## Members
 |  Member  |  Description  |
