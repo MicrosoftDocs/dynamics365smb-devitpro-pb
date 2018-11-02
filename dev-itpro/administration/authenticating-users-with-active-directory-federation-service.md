@@ -39,16 +39,17 @@ These steps are done by using the AD FS Management console on the server where A
 ### Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients
 You must complete these steps separately for [!INCLUDE[webserver](../developer/includes/webserver.md)] for the Web client and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].
 
-1.  Open **Server Manager** on the computer that is running AD FS, and the choose **AD FS** to start **AD FS Management**.
+1.  Open **Server Manager** on the computer that is running AD FS, choose **AD FS** > **Tools** > **AD FS Management**.
+2.  Right-click **Relying Party Trusts**, and then choose **Add Relying Party Trust**.
 
     ![AD FS Management](../media/ADFS_Console.png "AD FS Management")
-2.  Right-click **Relying Party Trusts**, and then choose **Add Relying Party Trust**.
+
     The **Add Relying Party Trust Wizard** appears.
 3.  In the **Welcome** step, choose **Claims aware**, and then choose **Start**.
 
     ![AD FS Relying Trust Wizard](../media/ADFS_Relying_Trust_Wizard.png "AD FS Relying Trust Wizard")
 4.  In the **Select Data Source** step, choose **Enter data about the relying party manually**, and then choose **Next**.
-5.  In the **Specify Display Name** step, give the relying party a name, such as ```Business Central Web Client``` or ```Dynamics NAV Windows Client```, and then choose **Next**.
+5.  In the **Specify Display Name** step, give the relying party a name, such as `Business Central Web Client` or `Dynamics NAV Windows Client`, and then choose **Next**.
 6.  In the **Configure Certificate** step, choose **Next** to skip specifying the token encryption certificate.
 
     This assumes that the [!INCLUDE[webserver](../developer/includes/webserver.md)] is running https.
