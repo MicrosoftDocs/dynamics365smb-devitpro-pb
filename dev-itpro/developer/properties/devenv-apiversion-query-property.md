@@ -14,7 +14,12 @@ author: SusanneWindfeldPedersen
 ---
  
 # APIVersion Property (Query)
-Sets the version(s) of the API endpoint the query is exposed in.
+Sets the version(s) of the API endpoint the query is exposed in.  The syntax for providing versions is illustrated in the example below:
+
+```
+APIVersion = 'beta', 'v1.0';
+```
+
 
 ## Applies To  
 

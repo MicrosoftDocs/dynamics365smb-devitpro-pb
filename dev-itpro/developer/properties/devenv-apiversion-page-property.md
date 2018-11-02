@@ -2,7 +2,7 @@
 title: "APIVersion Property (Page)"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,11 @@ author: SusanneWindfeldPedersen
 ---
  
 # APIVersion Property (Page)
-Sets the version(s) of the API endpoint the page is exposed in.
+Sets the version(s) of the API endpoint the page is exposed in. The syntax for providing versions is illustrated in the example below:
+
+```
+APIVersion = 'beta', 'v1.0';
+```
 
 ## Applies To  
 
