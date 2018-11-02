@@ -88,7 +88,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
     >[!Note]
     >This is the URL to which AD FS will be allowed to issue authentication tokens.
 
-8.  In the **Configure Identifiers** step, in the **Relying party trust identifier** field, remove the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] URL, and then add one of the following URL instead:
+8.  In the **Configure Identifiers** step, in the **Relying party trust identifier** field, remove the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] URL, and then add one of the following URLs instead:
 
     -   If you are setting up AD FS for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], add the URL:
         ```
@@ -108,24 +108,24 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
 10.  Review the configuration, and then choose **Next**.
 11. On the **Finish** step, select the **Configure claims issuance policy for the application** check box, and then choose **Next**.
 
-Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which are supported from AD FS 3.0 and later), you need to add different claims. Complete one of the following procedures for your token type.
+Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which are supported from AD FS 3.0 and later, you need to add different claims. Complete one of the following procedures for your token type.
 
 ### Set up support for SAML 1.0 tokens
-1. In the **Edit Claim Rules** dialog box, choose **Add Rule**.
+1. Choose the **Edit Claims Issuance Policy** action.
+2. In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
     ![AD FS Edit Claims Rule](../media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
-2. In the **Select Rule Template** step, choose **Transform an incoming Claim** template, and then choose **Next**.
-3. In the **Edit Rule** step, set the **Claim rule name** to ```name```, the **Incoming claim type** to ```UPN```, and the **Outgoing claim type** to ```Name```. Choose **OK** when done.
-4. Repeat steps 1 to 3 to add another rule, except this time, set the **Claim rule name** to ```objectidentifier```, the **Incoming claim type** to ```Primary SID```, and the **Outgoing claim type** to:
+3. In the **Select Rule Template** step, choose **Transform an incoming Claim** template, and then choose **Next**.
+4. In the **Configure Rule** step, set the **Claim rule name** to `name`, the **Incoming claim type** to `UPN`, and the **Outgoing claim type** to `Name`. Choose **Finish** when done.
+5. Repeat steps 2 to 4 to add another rule, except this time, set the **Claim rule name** to `objectidentifier`, the **Incoming claim type** to `Primary SID`, and the **Outgoing claim type** to:
 
     ```
     http://schemas.microsoft.com/identity/claims/objectidentifier
     ```
 
-    Choose **OK** when done.
-5. Close the **Edit Claim Rules** dialog box.
+    Choose **OK** when done to close the **Edit Claim Rules** dialog box.
 
-    ![AD FS Edit Claims Rule Done](../media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
+    ![AD FS Edit Claims Rule Done](../media/ADFS_EditClaimsRule3.png "AD FS Edit Claims Rule Done")
 
 ### Set up support for JSON Web tokens (JWT)
 
@@ -156,6 +156,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 To setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for ADFS authentication, you must modify the configuration of the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]s.
 
 ### [!INCLUDE[server](../developer/includes/server.md)] instance setup
+
 The [!INCLUDE[server](../developer/includes/server.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], or by modifying the server instance's CustomSettings.config file directly.
 
 1.  Set the **Credential Type** (ClientServicesCredentialType) to ```NavUserPassword``` or ```AccessControlService```.
