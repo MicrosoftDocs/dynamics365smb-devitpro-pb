@@ -20,9 +20,7 @@ Indicates true or false.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks 
 
-You can use the [FORMAT method (Code, Text)](../../methods/devenv-format-method-code-text.md) to specify how Boolean values are shown.
 
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  

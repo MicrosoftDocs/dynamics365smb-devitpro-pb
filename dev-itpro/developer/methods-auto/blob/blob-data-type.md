@@ -36,15 +36,16 @@ The following methods are available on instances of the Blob data type.
 > [!NOTE]  
 >  You cannot view text that is stored in BLOBs from the development environment.  
 
- You can read from and write to BLOBs by creating input and output streams, respectively. To do so, use [CREATEINSTREAM method (BLOB)](../../methods/devenv-createinstream-method-blob.md) and [CREATEOUTSTREAM method (BLOB)](../../methods/devenv-createoutstream-method-blob.md).  
+ You can read from and write to BLOBs by creating input and output streams, respectively. To do so, use [CREATEINSTREAM method (BLOB)](blob-createinstream-method.md) and [CREATEOUTSTREAM method (BLOB)](blob-createoutstream-method.md).  
 
- For more information, see [InStream and OutStream Data Types](../../datatypes/devenv-instream-and-outstream-data-types.md).  
-
- To optimize performance, when you access a record that has a BLOB field, the data in the BLOB is not always read into memory. You must call the [CALCFIELDS method (Record)](../../methods/devenv-calcfields-method-record.md) to read the BLOB into memory and calculate it. Then you can use the BLOB in AL code or display it in the application.  
+<!--
+To optimize performance, when you access a record that has a BLOB field, the data in the BLOB is not always read into memory. You must call the [CALCFIELDS method (Record)](../../methods/devenv-calcfields-method-record.md) to read the BLOB into memory and calculate it. Then you can use the BLOB in AL code or display it in the application.  
 
  It is not supported to insert a BLOB field into a Variant.  
 
  It is not supported for a page to access a BLOB field from a table other than the SourceTable of the page.  
+
+-->
 
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  

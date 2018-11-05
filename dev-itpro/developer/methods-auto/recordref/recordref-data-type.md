@@ -85,7 +85,7 @@ The following methods are available on instances of the RecordRef data type.
 
  
  
-The RecordRef object can refer to any table in the database. Use the [OPEN method (RecordRef)](../../methods/devenv-open-method-recordref.md) to use the table number to select the table that you want to access, or use the [GETTABLE method (RecordRef)](../../methods/devenv-gettable-method-recordref.md) to use another record variable to select the table that you want to access.  
+The RecordRef object can refer to any table in the database. Use the [OPEN method](recordref-open-method.md) to use the table number to select the table that you want to access, or use the [GETTABLE method](recordref-gettable-method.md) to use another record variable to select the table that you want to access.  
   
  If one RecordRef variable is assigned to another RecordRef variable, then they both refer to the same table instance. 
 

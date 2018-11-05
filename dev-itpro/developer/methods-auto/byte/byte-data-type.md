@@ -23,11 +23,7 @@ Stores a single, 8-bit character as a value in the range 0 to 255. You can easil
 ## Example  
  The following example assumes that you have a Byte variable named B and a Text variable named S.  
   
- You can assign a constant string of the length 1 to a Byte variable, as shown in the first line of the following code example.  
-  
- You can assign a single character in a Text or Code variable to a Byte variable, as shown in the second line of the following code example.  
-  
- You can assign a numeric value to a Byte variable, as shown in the third line of the following code example. This causes the Byte variable to contain the character from the ASCII character set that corresponds to the numeric ASCII code.  
+ You can assign a constant string of the length 1 to a Byte variable, as shown in the first line of the following code example. You can assign a single character in a Text or Code variable to a Byte variable, as shown in the second line of the following code example. You can assign a numeric value to a Byte variable, as shown in the third line of the following code example. This causes the Byte variable to contain the character from the ASCII character set that corresponds to the numeric ASCII code.  
   
 ```  
 B := 'A';  
