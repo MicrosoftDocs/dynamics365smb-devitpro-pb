@@ -113,7 +113,7 @@ The following table describes fields on the **General** tab in the [!INCLUDE[adm
 |SQL Query Logging Threshold|SqlLongRunningThreshold|Specifies the amount of time (in milliseconds) that an SQL query can run before a warning event is recorded in the application log for the server instance. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.<br /><br /> Default: 1000<br />Dynamically Updatable: Yes|
 
 ##  <a name="ClientServices"></a> Client Services Settings  
- The following table describes fields on the **Client Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
+The following table describes fields on the **Client Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|  
