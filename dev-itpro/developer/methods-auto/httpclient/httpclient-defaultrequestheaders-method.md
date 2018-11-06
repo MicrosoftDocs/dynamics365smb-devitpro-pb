@@ -37,7 +37,7 @@ The default request headers which should be sent with each request.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The [HttpHeaders]((httpheaders-data-type.md)) variable is a reference type. When you add a header to this variable, the default headers are changed. You cannot set another HttpHeaders object as a default header, you have to update the header fetched from [HttpClient](httpclient-data-type.md).
+The [HttpHeaders](httpheaders-data-type.md) variable is a reference type. When you add a header to this variable, the default headers are changed. You cannot set another HttpHeaders object as a default header, you have to update the header fetched from [HttpClient](httpclient-data-type.md).
 
 
 ## See Also
