@@ -84,7 +84,7 @@ The following characteristics are based on maximum capacity specifications for S
 
  <sup>2</sup>Each variable-length text field accounts for 26 bytes in the record. 
 
-<sup>3</sup> If no length is specified for text variables, then the length is unlimited.  
+<sup>3</sup> If no length is specified for text variables, the length is unlimited.  
   
 ## See Also  
  [Field Data Types](datatypes/devenv-field-data-types.md)   
