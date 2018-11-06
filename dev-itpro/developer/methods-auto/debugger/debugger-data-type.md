@@ -2,7 +2,7 @@
 title: "Debugger Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,9 +33,9 @@ The following methods are available on the Debugger data type.
 |[BreakOnRecordChanges(Boolean)](debugger-breakonrecordchanges-method.md)|Breaks execution before a change to a record occurs.|
 |[SkipSystemTriggers(Boolean)](debugger-skipsystemtriggers-method.md)|Enables the debugger to skip code that is inside system triggers.|
 |[Continue()](debugger-continue-method.md)|Executes code until the next breakpoint or until execution ends.|
-|[StepInto()](debugger-stepinto-method.md)|Executes a function call and then stops at the first line of code inside the function.|
-|[StepOut()](debugger-stepout-method.md)|Enables debugging to return to the calling function after it steps into a function call.|
-|[StepOver()](debugger-stepover-method.md)|Executes a function call and then stops at the first line outside the function call.|
+|[StepInto()](debugger-stepinto-method.md)|Executes a method call and then stops at the first line of code inside the method.|
+|[StepOut()](debugger-stepout-method.md)|Enables debugging to return to the calling method after it steps into a method call.|
+|[StepOver()](debugger-stepover-method.md)|Executes a method call and then stops at the first line outside the method call.|
 |[Stop()](debugger-stop-method.md)|Stops execution as if the code hits an error.|
 |[DebuggingSessionID()](debugger-debuggingsessionid-method.md)|Gets the ID of the session that the debugger is currently attached to.|
 |[GetLastErrorText()](debugger-getlasterrortext-method.md)|Gets the last error that occurred in the debugger.|

@@ -2,7 +2,7 @@
 title: "JsonValue Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # JsonValue Data Type
-
+Is a container for any well-formed fundamental JSON value. A default JsonValue is set to the JSON value of NULL.
 
 
 The following methods are available on instances of the JsonValue data type.
@@ -26,7 +26,7 @@ The following methods are available on instances of the JsonValue data type.
 |[ReadFrom(InStream)](jsonvalue-readfrom-instream-method.md)|Reads the JSON data from the stream into a JsonValue variable.|
 |[WriteTo(var Text)](jsonvalue-writeto-text-method.md)|Serializes and writes the JSON data of the JsonValue to a given object.|
 |[WriteTo(OutStream)](jsonvalue-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonValue to a given object.|
-|[SelectToken(String, var JsonToken)](jsonvalue-selecttoken-method.md)||
+|[SelectToken(String, var JsonToken)](jsonvalue-selecttoken-method.md)|Selects a JsonToken using a JPath expression.|
 |[Clone()](jsonvalue-clone-method.md)|Creates a deep-copy of the JsonToken value.|
 |[AsToken()](jsonvalue-astoken-method.md)|Converts the value in a JsonValue to a JsonToken data type.|
 |[IsNull()](jsonvalue-isnull-method.md)|Indicates whether the JsonValue contains the JSON value of NULL.|

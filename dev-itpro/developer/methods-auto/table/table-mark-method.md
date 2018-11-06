@@ -2,7 +2,7 @@
 title: "Mark Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Mark Method
-Marks a record. You can also use this function to determine whether a record is marked.
+Marks a record. You can also use this method to determine whether a record is marked.
 
 ## Syntax
 ```
@@ -27,7 +27,7 @@ An instance of the [Table](table-data-type.md) data type.
 
 *Mark*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Marks a record. You can also use this function to determine whether a record is marked.  
+Marks a record. You can also use this method to determine whether a record is marked.  
 
 
 ## Return Value

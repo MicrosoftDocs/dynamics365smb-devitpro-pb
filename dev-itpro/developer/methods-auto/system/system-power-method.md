@@ -2,7 +2,7 @@
 title: "Power Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Power Method
-Raises a number to a power. For example, you can use this function to square the number 2 to get the result of 4.
+Raises a number to a power. For example, you can use this method to square the number 2 to get the result of 4.
 
 ## Syntax
 ```
@@ -25,10 +25,10 @@ NewNumber :=   System.Power(Number: Decimal, Power: Decimal)
 ## Parameters
 *Number*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
-The number you want to raise exponentially. This number is the base in the exponential function.  
+The number you want to raise exponentially. This number is the base in the exponential method.  
 *Power*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
-The exponent in the exponential function.  
+The exponent in the exponential method.  
 
 
 ## Return Value

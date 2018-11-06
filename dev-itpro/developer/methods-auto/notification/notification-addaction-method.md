@@ -2,7 +2,7 @@
 title: "AddAction Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ The text string that appears as the caption of the action in the notification UI
         
 *CodeunitID*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the Codeunit to run when the action is initiated from the notification UI. The codeunit should contain at least one global function to be called by the notification action. The global function must have a Notification data type parameter for accepting the notification object.
+The ID of the Codeunit to run when the action is initiated from the notification UI. The codeunit should contain at least one global method to be called by the notification action. The global method must have a Notification data type parameter for accepting the notification object.
         
 *MethodName*  
 &emsp;Type: [String](../string/string-data-type.md)  

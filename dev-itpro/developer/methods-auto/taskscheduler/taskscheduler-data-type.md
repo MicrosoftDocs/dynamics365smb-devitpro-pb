@@ -2,7 +2,7 @@
 title: "TaskScheduler Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TaskScheduler Data Type
-The TaskScheduler data type is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times.
+Is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times.
 
 The following methods are available on the TaskScheduler data type.
 

@@ -2,7 +2,7 @@
 title: "ModuleDependencyInfo Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 10/29/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ModuleDependencyInfo Data Type
-Information about a dependent module.
+Provides information about a dependent module.
 
 
 The following methods are available on instances of the ModuleDependencyInfo data type.

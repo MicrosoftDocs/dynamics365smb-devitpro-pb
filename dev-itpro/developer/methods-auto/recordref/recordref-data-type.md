@@ -2,7 +2,7 @@
 title: "RecordRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef Data Type
-A RecordRef object references a record in a table.
+References a record in a table.
 
 
 The following methods are available on instances of the RecordRef data type.
@@ -34,7 +34,7 @@ The following methods are available on instances of the RecordRef data type.
 |[FindFirst()](recordref-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
 |[FindLast()](recordref-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
 |[FindSet([Boolean], [Boolean])](recordref-findset-method.md)|Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.|
-|[Reset()](recordref-reset-method.md)|Removes all filters, including any special filters set by the MARKEDONLY function (Record) and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables on the record.|
+|[Reset()](recordref-reset-method.md)|Removes all filters, including any special filters set by the MARKEDONLY method (Record) and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables on the record.|
 |[Ascending([Boolean])](recordref-ascending-method.md)|Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed.|
 |[LockTable([Boolean], [Boolean])](recordref-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
 |[Count()](recordref-count-method.md)|Counts the number of records that are in the filters that are currently applied to the table referred to by the RecordRef.|
@@ -66,7 +66,7 @@ The following methods are available on instances of the RecordRef data type.
 |[CopyLinks(Variant)](recordref-copylinks-variant-method.md)|Copies all the links from a particular record.|
 |[HasLinks()](recordref-haslinks-method.md)|Determines whether a record contains any links.|
 |[FieldCount()](recordref-fieldcount-method.md)|Gets the number of fields in the table that are currently selected or returns the number of fields that have been defined in a key. Returns an error if no table or no key is selected.|
-|[Field(Integer)](recordref-field-method.md)|Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the function returns an error.|
+|[Field(Integer)](recordref-field-method.md)|Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the method returns an error.|
 |[FieldExist(Integer)](recordref-fieldexist-method.md)|Determines if the field that has the number FieldNo exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected.|
 |[FieldIndex(Integer)](recordref-fieldindex-method.md)|Gets the FieldRef of the field that has the specified index in the table that is referred to by the RecordRef.|
 |[KeyCount()](recordref-keycount-method.md)|Gets the number of keys that exist in the table that is referred to by the RecordRef. Returns an error if no table is selected.|
@@ -76,7 +76,7 @@ The following methods are available on instances of the RecordRef data type.
 |[SetView(String)](recordref-setview-method.md)|Sets the current sort order, key, and filters on a table.|
 |[HasFilter()](recordref-hasfilter-method.md)|Determines whether a filter has been applied to the table that the RecordRef refers to.|
 |[SetRecFilter()](recordref-setrecfilter-method.md)|Sets a filter on a record that is referred to by a RecordRef.|
-|[FilterGroup([Integer])](recordref-filtergroup-method.md)|Changes the filter group that is being applied to the table. You can also use this function to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.|
+|[FilterGroup([Integer])](recordref-filtergroup-method.md)|Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.|
 |[SetPermissionFilter()](recordref-setpermissionfilter-method.md)|Applies the user's security filter to the referenced record. The security filter is combined with any other filters that are placed on the record with SetFilter or SetRange. The combined filter will not include any records outside the range of the security filter and this will prevent a runtime permission error from occuring when the record is read. If the permission filter is not set, an error can occur if you attempt to read a record that is outside the range of the user's security filter.|
 |[Rename(Any, [Any,...])](recordref-rename-method.md)|Changes the value of a primary key in a table.|
 |[SecurityFiltering([SecurityFilter])](recordref-securityfiltering-method.md)|Gets or sets how security filters are applied to the RecordRef.|
@@ -85,7 +85,7 @@ The following methods are available on instances of the RecordRef data type.
 
  
  
-The RecordRef object can refer to any table in the database. Use the [OPEN method (RecordRef)](../../methods/devenv-open-method-recordref.md) to use the table number to select the table that you want to access, or use the [GETTABLE method (RecordRef)](../../methods/devenv-gettable-method-recordref.md) to use another record variable to select the table that you want to access.  
+The RecordRef object can refer to any table in the database. Use the [OPEN method](recordref-open-method.md) to use the table number to select the table that you want to access, or use the [GETTABLE method](recordref-gettable-method.md) to use another record variable to select the table that you want to access.  
   
  If one RecordRef variable is assigned to another RecordRef variable, then they both refer to the same table instance. 
 

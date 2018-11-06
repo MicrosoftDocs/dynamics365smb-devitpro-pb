@@ -31,7 +31,7 @@ The displayed text format of a DateTime is determined by your Regional and Langu
   
  By default, DateTimes are displayed using the standard display format. When you use the standard display format, seconds and milliseconds are not displayed until you select the DateTime field. Furthermore, if you export your data using an XMLport or by writing it to a file, the seconds and milliseconds are not exported unless you specify that DateTime fields use another format and display this information. For more information about how DateTime objects are displayed and the formats that are available, see [Format Property](../../properties/devenv-format-property.md).  
   
- The only constant available when you use the DateTime data type is the undefined DateTime, 0DT. To assign a constant value to a DateTime variable you must use the [CREATEDATETIME method (DateTime)](../../methods/devenv-createdatetime-method-datetime.md).  
+ The only constant available when you use the DateTime data type is the undefined DateTime, 0DT. To assign a constant value to a DateTime variable you must use the [CREATEDATETIME method](../system/system-createdatetime-method.md).  
   
  If you use a date that is outside the valid date range, a run-time error occurs.  
 
@@ -42,9 +42,7 @@ The syntax for defining DateTime format follows the [ISO standard](https://en.wi
 
 
 ## SQL Server  
- In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000. The latest permitted DateTime is December 31, 9999, 23:59:59.999.  
-  
- If you store a date in the database that is outside the valid range for a SQL DATETIME, a run-time error run-time occurs.  
+ In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000. The latest permitted DateTime is December 31, 9999, 23:59:59.999. If you store a date in the database that is outside the valid range for a SQL DATETIME, a run-time error run-time occurs.  
 
 
 ## See Also

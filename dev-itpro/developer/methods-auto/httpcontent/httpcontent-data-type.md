@@ -29,6 +29,49 @@ The following methods are available on instances of the HttpContent data type.
 |[ReadAs(var InStream)](httpcontent-readas-instream-method.md)|Reads the content into the provided text.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+An instance of HttpContent encapsulates the body and the associated headers of an HTTP request that will be sent to a remote endpoint or that is being received from a remote endpoint.
+The HttpContent data type is a value type. This means that when assigning an instance of HttpContent to a variable, a copy will be created. 
+
+## Example
+The following example illustrates how to use the HttpContent type to send a simple POST request containing JSON data.
+
+```
+codeunit 50110 MyCodeunit
+{
+    procedure MakeRequest(uri: Text; payload: Text) responseText: Text;
+    var
+        client: HttpClient;
+        request: HttpRequestMessage;
+        response: HttpResponseMessage;
+        contentHeaders: HttpHeaders;
+        content: HttpContent;
+    begin
+        // Add the payload to the content
+        content.WriteFrom(payload);
+
+        // Retrieve the contentHeaders associated with the content
+        content.GetHeaders(contentHeaders);
+        contentHeaders.Clear();
+        contentHeaders.Add('Content-Type', 'application/json');
+
+        // Assigning content to request.Content will actually create a copy of the content and assign it.
+        // After this line, modifying the content variable or its associated headers will not reflect in 
+        // the content associated with the request message
+        request.Content := content;
+
+        request.SetRequestUri(uri);
+        request.Method := 'POST';
+
+        client.Send(request, response);
+
+        // Read the response content as json.
+        response.Content().ReadAs(responseText);
+    end;
+}
+
+```
+
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

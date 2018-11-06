@@ -2,7 +2,7 @@
 title: "StepOut Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # StepOut Method
-Enables debugging to return to the calling function after it steps into a function call.
+Enables debugging to return to the calling method after it steps into a method call.
 
 ## Syntax
 ```

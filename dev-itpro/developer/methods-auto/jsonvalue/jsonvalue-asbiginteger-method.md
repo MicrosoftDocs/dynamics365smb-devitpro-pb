@@ -2,7 +2,7 @@
 title: "AsBigInteger Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,8 +35,6 @@ If the JsonValue does not contain number or a string which can be converted with
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Remarks 
-If the JsonValue does not contain number or a string which can be converted without loss of precision to an BigInteger, the operation will fail with a run-time error.
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  

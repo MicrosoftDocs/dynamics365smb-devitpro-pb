@@ -2,7 +2,7 @@
 title: "Integer Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Integer Data Type
-This simple data type stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.
+Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.
 
 
 

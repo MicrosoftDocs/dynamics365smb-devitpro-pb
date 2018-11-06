@@ -2,7 +2,7 @@
 title: "TransactionModel System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Represents a test transaction model.
 |----------------|---------------|
 |AutoCommit|The transaction automatically commits after the Test method has run.|
 |AutoRollback|The transaction is automatically rolled back after the Test method has run.|
-|None|<br/>      No write-transaction is open in the test-method code, and writes will fail. <br/>      <br/>      The transaction model mirrors the model used by the "real" client. Every call from the TestPage to the "server" has it own transaction.<br/>    |
+|None|No write-transaction is open in the test-method code, and writes will fail. The transaction model mirrors the model used by the "real" client. Every call from the TestPage to the "server" has its own transaction.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

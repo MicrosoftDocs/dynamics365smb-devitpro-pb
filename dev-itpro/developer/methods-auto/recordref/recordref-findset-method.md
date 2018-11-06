@@ -2,7 +2,7 @@
 title: "FindSet Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *ForUpdate*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Set this parameter to false if you do not want to modify any records in the set. Set this parameter to true if you want to modify records in the set. If you set this parameter to true, the LOCKTABLE function (RecordRef) is immediately performed on the table before the records are read.
+Set this parameter to false if you do not want to modify any records in the set. Set this parameter to true if you want to modify records in the set. If you set this parameter to true, the LOCKTABLE method (RecordRef) is immediately performed on the table before the records are read.
           
 *UpdateKey*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  

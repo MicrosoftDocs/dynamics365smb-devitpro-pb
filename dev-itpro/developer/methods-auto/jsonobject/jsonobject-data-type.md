@@ -2,7 +2,7 @@
 title: "JsonObject Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # JsonObject Data Type
-A JsonObject object is a container for any well-formed JSON object. A default JsonObject contains an empty JSON object.
+Is a container for any well-formed JSON object. A default JsonasdasdaObject contains an empty JSON object.
 
 
 The following methods are available on instances of the JsonObject data type.
@@ -22,9 +22,9 @@ The following methods are available on instances of the JsonObject data type.
 |Method name|Description|
 |-----------|-----------|
 |[Path()](jsonobject-path-method.md)|Retrieves the JSON path of the object relative to the root of its containing tree.|
-|[Keys()](jsonobject-keys-method.md)||
-|[Values()](jsonobject-values-method.md)||
-|[ReadFrom(String)](jsonobject-readfrom-string-method.md)|	Reads the JSON data from the string into a JsonObject variable.|
+|[Keys()](jsonobject-keys-method.md)|Gets a set of keys of the JsonObject.|
+|[Values()](jsonobject-values-method.md)|Gets a set of values of the JsonObject.|
+|[ReadFrom(String)](jsonobject-readfrom-string-method.md)|Reads the JSON data from the string into a JsonObject variable.|
 |[ReadFrom(InStream)](jsonobject-readfrom-instream-method.md)|Reads the JSON data from the stream into a JsonObject variable.|
 |[WriteTo(var Text)](jsonobject-writeto-text-method.md)|Serializes and writes the JSON data of the JsonObject to a given Text object.|
 |[WriteTo(OutStream)](jsonobject-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonObject to a given OutStream object.|
