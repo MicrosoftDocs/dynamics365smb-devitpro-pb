@@ -126,14 +126,14 @@ You can filter the data that is displayed in the page by using the filter parame
  The following address displays data in page 9305 only for the customer who has the **Sell-to Customer No.**=10000 and the **Location Code**=Blue.
 
 ```
-https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'  
+https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to Customer No.' IS '10000' AND 'Location Code' IS 'BLUE'  
 ```
 
 ### Filter Syntax
 The filter has the following syntax.
 
 ```
-&filter='<field>'-IS-'<value>'[-AND-'<field>'-IS-'<value>']  
+&filter='<field>' IS '<value>'[ AND '<field>' IS '<value>']  
 ```
 
 You can add the filter anywhere in the address after `/?`.
