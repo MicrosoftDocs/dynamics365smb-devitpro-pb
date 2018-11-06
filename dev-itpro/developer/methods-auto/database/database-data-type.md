@@ -2,7 +2,7 @@
 title: "Database Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,12 +28,12 @@ The following methods are available on the Database data type.
 |[CheckLicenseFile(Integer)](database-checklicensefile-method.md)|Checks a key in the license file of the system.|
 |[SelectLatestVersion()](database-selectlatestversion-method.md)|Forces the latest version of the database to be used.|
 |[CurrentTransactionType([TransactionType])](database-currenttransactiontype-method.md)|Gets the current transaction type and sets a new type to be assigned.|
-|[LockTimeout([Boolean])](database-locktimeout-method.md)|Determines whether the lock time-out setting is set to On. You can also use this function to override the default setting.|
+|[LockTimeout([Boolean])](database-locktimeout-method.md)|Determines whether the lock time-out setting is set to On. You can also use this method to override the default setting.|
 |[SID([String])](database-sid-method.md)|Retrieves the security identifier (SID) of a Windows user account.|
 |[UserSecurityId()](database-usersecurityid-method.md)|Gets the unique identifier of the user that is logged on to the current session.|
 |[SetUserPassword(Guid, String)](database-setuserpassword-method.md)|Sets a password for the user iwith the given user security ID. If the given password is blank, an empty string will be stored instead of a password hash. This will prevent the user from logging in using a password. Only SUPER can call this method. Passwords cannot be set for the empty GUID or for the default Super ID.|
 |[ChangeUserPassword(String, String)](database-changeuserpassword-method.md)|Changes the password for the current user.|
-|[TenantId()](database-tenantid-method.md)|Gets the ID of the tenant that has started the current session. Use this function when your code must be specific about which tenant database to access in a multitenant deployment. For example, if your code imports data into a cache, you can make a cache tenant-specific by using the tenant ID as a key. Also, if you want to write code that saves documents, you can include the tenant ID in the file name or location, for example. In those cases, you can use the TENANTID function in combination with the COMPANYNAME function to identify the company and the tenant database.|
+|[TenantId()](database-tenantid-method.md)|Gets the ID of the tenant that has started the current session. Use this method when your code must be specific about which tenant database to access in a multitenant deployment. For example, if your code imports data into a cache, you can make a cache tenant-specific by using the tenant ID as a key. Also, if you want to write code that saves documents, you can include the tenant ID in the file name or location, for example. In those cases, you can use the TENANTID method in combination with the COMPANYNAME method to identify the company and the tenant database.|
 |[SessionId()](database-sessionid-method.md)|Gets the ID of the current session.|
 |[ServiceInstanceId()](database-serviceinstanceid-method.md)|Gets the ID of the service instance.|
 |[CopyCompany(String, String)](database-copycompany-method.md)|Creates a new company and copies all data from an existing company in the same database.|

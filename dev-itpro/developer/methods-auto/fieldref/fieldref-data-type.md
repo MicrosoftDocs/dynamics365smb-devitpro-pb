@@ -2,7 +2,7 @@
 title: "FieldRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,17 +25,17 @@ The following methods are available on instances of the FieldRef data type.
 |[Name()](fieldref-name-method.md)|Gets the name of a field as a string.|
 |[Caption()](fieldref-caption-method.md)|Gets the current caption of a field as a String.|
 |[Type()](fieldref-type-method.md)|Gets the data type of the field that is currently selected.|
-|[Class()](fieldref-class-method.md)|Gets the value of the FieldClass Property of the field that is currently selected. This function returns an error if no field is selected.|
+|[Class()](fieldref-class-method.md)|Gets the value of the FieldClass Property of the field that is currently selected. This method returns an error if no field is selected.|
 |[OptionMembers()](fieldref-optionmembers-method.md)|Gets the list of options that are available in the field that is currently selected.|
 |[OptionString()](fieldref-optionstring-method.md)|The 'OptionString' property has been deprecated and will be removed in the future. Use the 'OptionMembers' property instead.|
 |[OptionCaption()](fieldref-optioncaption-method.md)|Gets the option caption of the field that is currently selected.|
 |[Active()](fieldref-active-method.md)|Checks whether the field that is currently selected is enabled.|
-|[Record()](fieldref-record-method.md)|Gets the RecordRef of the field that is currently selected. This function returns an error if no field is selected.|
-|[Length()](fieldref-length-method.md)|Gets the maximum size of the field (the size specified in the DataLength property of the field). This function is usually used for finding the defined length of code and text fields.|
-|[Value([Any])](fieldref-value-method.md)|Sets or gets the value of the field that is currently selected. This function returns an error if no field is selected.|
+|[Record()](fieldref-record-method.md)|Gets the RecordRef of the field that is currently selected. This method returns an error if no field is selected.|
+|[Length()](fieldref-length-method.md)|Gets the maximum size of the field (the size specified in the DataLength property of the field). This method is usually used for finding the defined length of code and text fields.|
+|[Value([Any])](fieldref-value-method.md)|Sets or gets the value of the field that is currently selected. This method returns an error if no field is selected.|
 |[CalcField()](fieldref-calcfield-method.md)|Updates FlowFields in a record.|
 |[CalcSum()](fieldref-calcsum-method.md)|Calculates the total of all values of a SumIndexField in a table.|
-|[Validate([Any])](fieldref-validate-method.md)|Use this function to enter a new value into a field and have the new value validated by the properties and code that have been defined for that field.|
+|[Validate([Any])](fieldref-validate-method.md)|Use this method to enter a new value into a field and have the new value validated by the properties and code that have been defined for that field.|
 |[FieldError([String])](fieldref-fielderror-method.md)|Stops the execution of the code, causing a run-time error, and creates an error message for a field.|
 |[TestField()](fieldref-testfield--method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Byte)](fieldref-testfield-byte-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|

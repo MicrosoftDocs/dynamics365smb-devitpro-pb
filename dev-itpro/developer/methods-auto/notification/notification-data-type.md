@@ -2,7 +2,7 @@
 title: "Notification Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Notification Data Type
-Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Dynamics NAV Web client.
+Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client.
 
 
 The following methods are available on instances of the Notification data type.
@@ -23,7 +23,7 @@ The following methods are available on instances of the Notification data type.
 |-----------|-----------|
 |[Id([Guid])](notification-id-method.md)|Specifies the identifier for a notification.|
 |[AddAction(String, Integer, String)](notification-addaction-method.md)|Specifies an action for the notification.|
-|[GetData(String)](notification-getdata-method.md)|Retrieves data that was passed to a notification instance as specified by a SETDATA function call.|
+|[GetData(String)](notification-getdata-method.md)|Retrieves data that was passed to a notification instance as specified by a SETDATA method call.|
 |[Message([String])](notification-message-method.md)|Specifies the content of the notification.|
 |[Scope([NotificationScope])](notification-scope-method.md)|Specifies the context in which the notification appears in the client.|
 |[Send()](notification-send-method.md)|Sends the notification to the client, where it will display in the UI.|

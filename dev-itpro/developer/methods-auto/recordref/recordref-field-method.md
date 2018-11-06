@@ -2,7 +2,7 @@
 title: "Field Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Field Method
-Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the function returns an error.
+Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the method returns an error.
 
 ## Syntax
 ```

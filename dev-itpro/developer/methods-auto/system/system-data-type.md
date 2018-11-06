@@ -2,7 +2,7 @@
 title: "System Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,8 @@ The following methods are available on the System data type.
 |-----------|-----------|
 |[Round(Decimal, [Decimal], [String])](system-round-method.md)|Rounds the value of a numeric variable.|
 |[Abs(Decimal)](system-abs-method.md)|Calculates the absolute value of a number (Decimal, Integer or BigInteger). ABS always returns a positive numeric value or zero.|
-|[Power(Decimal, Decimal)](system-power-method.md)|Raises a number to a power. For example, you can use this function to square the number 2 to get the result of 4.|
-|[Randomize([Integer])](system-randomize-method.md)|Generates a set of random numbers from which the RANDOM function (Integer) will select a random number.|
+|[Power(Decimal, Decimal)](system-power-method.md)|Raises a number to a power. For example, you can use this method to square the number 2 to get the result of 4.|
+|[Randomize([Integer])](system-randomize-method.md)|Generates a set of random numbers from which the RANDOM method (Integer) will select a random number.|
 |[Random(Integer)](system-random-method.md)|Returns a pseudo-random number.|
 |[Today()](system-today-method.md)|Gets the current date set in the operating system.|
 |[Time()](system-time-method.md)|Gets the current time from the operating system.|
@@ -43,8 +43,8 @@ The following methods are available on the System data type.
 |[ArrayLen(Array of [Any], [Integer])](system-arraylen-method.md)|Returns the total number of elements in an array or the number of elements in a specific dimension.|
 |[CompressArray(Array of [String])](system-compressarray-method.md)|Moves all non-empty strings (text) in an array to the beginning of the array. The resulting StringArray has the same number of elements as the input array, but empty entries appear at the end of the array.|
 |[CopyArray(Array of [Any], Array of [Any], Integer, [Integer])](system-copyarray-method.md)|Copies one or more elements in an array to a new array.|
-|[Clear(var Array of [Any])](system-clear-joker-method.md)|Clears the value of a single variable. Also clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.|
-|[Clear(var Any)](system-clear-joker-method.md)|Clears the value of a single variable. Also clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.|
+|[Clear(var Array of [Any])](system-clear-joker-method.md)|Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.|
+|[Clear(var Any)](system-clear-joker-method.md)|Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.|
 |[ClearAll()](system-clearall-method.md)|Clears all internal variables (except REC variables), keys, and filters in the object and in any associated objects, such as reports, pages, codeunits, and so on that contain AL code.|
 |[Evaluate(var Any, String, [Integer])](system-evaluate-method.md)|Evaluates a string representation of a value into its typical representation. The result is assigned to a variable.|
 |[Format(Any, [Integer], [Integer])](system-format-joker-integer-integer-method.md)|Formats a value into a string.|
@@ -69,11 +69,11 @@ The following methods are available on the System data type.
 |[ApplicationPath()](system-applicationpath-method.md)|Returns the path of the directory where the executable file for the product is installed.|
 |[TemporaryPath()](system-temporarypath-method.md)|Gets the path of the directory where the temporary file is stored.|
 |[IsServiceTier()](system-isservicetier-method.md)|Gets a value indicating whether the runtime is a service tier.|
-|[ExportObjects(String, var Table, [Integer])](system-exportobjects-method.md)|Export application objects to a file.|
-|[ImportObjects(String, [Integer])](system-importobjects-method.md)|Import application objects from a file.|
+|[ExportObjects(String, var Table, [Integer])](system-exportobjects-method.md)|Exports application objects to a file.|
+|[ImportObjects(String, [Integer])](system-importobjects-method.md)|Imports application objects from a file.|
 |[IsNull(DotNet)](system-isnull-method.md)|Gets a value indicating whether a DotNet object has been created or not.|
 |[GetLastErrorCallStack()](system-getlasterrorcallstack-method.md)|Gets the call stack from where the last error occurred.|
-|[CodeCoverageLog([Boolean], [Boolean])](system-codecoveragelog-method.md)|Starts and stops the logging of code. You can also use this function to retrieve the current logging status.|
+|[CodeCoverageLog([Boolean], [Boolean])](system-codecoveragelog-method.md)|Starts and stops the logging of code. You can also use this method to retrieve the current logging status.|
 |[CodeCoverageInclude(var Table)](system-codecoverageinclude-method.md)|Includes the code that has been logged.|
 |[CodeCoverageRefresh()](system-codecoveragerefresh-method.md)|Refreshes the code that has been logged.|
 |[CodeCoverageLoad()](system-codecoverageload-method.md)|Loads the code that has been logged.|

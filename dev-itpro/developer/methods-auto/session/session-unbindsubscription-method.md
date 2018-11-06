@@ -2,7 +2,7 @@
 title: "UnbindSubscription Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UnbindSubscription Method
-Unbinds the event subscriber functions from in the codeunit instance. This essentially deactivates the subscriber functions for the codeunit instance.
+Unbinds the event subscriber methods from in the codeunit instance. This essentially deactivates the subscriber methods for the codeunit instance.
 
 ## Syntax
 ```
@@ -31,7 +31,7 @@ The codeunit that contains the event subscribers.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the event subscriber functions unbind successfully to the codeunit instance and no errors occurred, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the event subscriber methods unbind successfully to the codeunit instance and no errors occurred, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

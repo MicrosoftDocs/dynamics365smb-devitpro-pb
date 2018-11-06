@@ -2,7 +2,7 @@
 title: "Execute Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Execute Method
-Runs a report in preview or processing-only mode without showing the request page in the client. The function gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE function call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.
+Runs a report in preview or processing-only mode without showing the request page in the client. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.
 
 ## Syntax
 ```
@@ -27,7 +27,7 @@ The ID of the report that you want to run. If the report that you specify does n
           
 *Parameters*  
 &emsp;Type: [String](../string/string-data-type.md)  
-A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE function call.
+A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.
           
 *RecordRef*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  

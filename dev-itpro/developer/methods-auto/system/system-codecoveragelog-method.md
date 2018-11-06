@@ -2,7 +2,7 @@
 title: "CodeCoverageLog Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCoverageLog Method
-Starts and stops the logging of code. You can also use this function to retrieve the current logging status.
+Starts and stops the logging of code. You can also use this method to retrieve the current logging status.
 
 ## Syntax
 ```

@@ -2,7 +2,7 @@
 title: "SetDefaultTableConnection Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ The name of the external table connection. You must already have registered a ta
         
 *Scoped*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If true, when the function ends where you have used SETDEFAULTTABLECONNECTION, the default table connection returns to the value it had before. Use the Scope parameter when you want to use a specific table connection for a specific task and then return to the normal configuration.  
+If true, when the method ends where you have used SETDEFAULTTABLECONNECTION, the default table connection returns to the value it had before. Use the Scope parameter when you want to use a specific table connection for a specific task and then return to the normal configuration.  
 
 
 

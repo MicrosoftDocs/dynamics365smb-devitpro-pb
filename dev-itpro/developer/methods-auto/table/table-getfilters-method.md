@@ -2,7 +2,7 @@
 title: "GetFilters Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetFilters Method
-Gets a string that contains a list of the filters within the current filter group for all fields in a record. In addition, this function also returns the state of the MARKEDONLY function (Record).
+Gets a string that contains a list of the filters within the current filter group for all fields in a record. In addition, this method also returns the state of the MARKEDONLY method (Record).
 
 ## Syntax
 ```

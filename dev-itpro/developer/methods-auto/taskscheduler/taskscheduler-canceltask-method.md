@@ -2,7 +2,7 @@
 title: "CancelTask Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Cancels and deletes a scheduled task that runs a specific codeunit.
 ## Parameters
 *Task*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-Specifies the unique identifier of the task. The unique identifier is returned by the CREATETASK function.
+Specifies the unique identifier of the task. The unique identifier is returned by the CREATETASK method.
           
 
 

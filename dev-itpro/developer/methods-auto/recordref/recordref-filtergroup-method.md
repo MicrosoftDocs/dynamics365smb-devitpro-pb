@@ -2,7 +2,7 @@
 title: "FilterGroup Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FilterGroup Method
-Changes the filter group that is being applied to the table. You can also use this function to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.
+Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.
 
 ## Syntax
 ```

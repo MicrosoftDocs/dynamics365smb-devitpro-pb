@@ -2,7 +2,7 @@
 title: "Company Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *NewCompanyName*  
 &emsp;Type: [String](../string/string-data-type.md)  
-Specifies the name of the company in the SessionSettings object.The company must already exist in the database, otherwise you will get an error at runtime.
+Specifies the name of the company in the SessionSettings object. The company must already exist in the database, otherwise you will get an error at runtime.
         
 
 

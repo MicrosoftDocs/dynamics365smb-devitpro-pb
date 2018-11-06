@@ -2,7 +2,7 @@
 title: "ArrayLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ The array that you want to investigate.
         
 *Dimension*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-If you omit this optional argument, the function returns the total number of elements in the array. To get the number of elements in a specific dimension, use Dimension with a valid value. The valid values are determined by the number of dimensions of the input array. For example, the valid values for a three-dimensional array would be 1, 2, and 3.  
+If you omit this optional argument, the method returns the total number of elements in the array. To get the number of elements in a specific dimension, use Dimension with a valid value. The valid values are determined by the number of dimensions of the input array. For example, the valid values for a three-dimensional array would be 1, 2, and 3.  
 
 
 ## Return Value

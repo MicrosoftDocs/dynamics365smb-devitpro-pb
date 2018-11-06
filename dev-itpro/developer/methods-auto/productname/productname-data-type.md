@@ -2,7 +2,7 @@
 title: "ProductName Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,8 +22,8 @@ The following methods are available on the ProductName data type.
 |Method name|Description|
 |-----------|-----------|
 |[Full()](productname-full-method.md)|FULL returns a text string that contains the application's full name.|
-|[Short()](productname-short-method.md)|SHORT returns a text string that contains the application's short name|
-|[Marketing()](productname-marketing-method.md)|MARKETING returns a text string that contains the application's marketing name|
+|[Short()](productname-short-method.md)|SHORT returns a text string that contains the application's short name.|
+|[Marketing()](productname-marketing-method.md)|MARKETING returns a text string that contains the application's marketing name.|
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "CopyFilters Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CopyFilters Method
-Copies all the filters set by the SETFILTER function (Record) or the SETRANGE function (Record) from one record to another.
+Copies all the filters set by the SETFILTER method (Record) or the SETRANGE method (Record) from one record to another.
 
 ## Syntax
 ```

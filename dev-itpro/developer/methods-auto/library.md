@@ -2,7 +2,7 @@
 title: "AL Language Reference Library"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -65,7 +65,7 @@ The following types are available as part of the AL Language Reference Library.
 |[ModuleInfo](moduleinfo/moduleinfo-data-type.md)|Represents information about an application consumable from AL.|
 |[NavApp](navapp/navapp-data-type.md)|Provides information about a NavApp.|
 |[None](none/none-data-type.md)|Is used implicitly when a method does not return a value.|
-|[Notification](notification/notification-data-type.md)|Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Dynamics NAV Web client.|
+|[Notification](notification/notification-data-type.md)|Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client.|
 |[Option](option/option-data-type.md)|Denotes an option value. In the code snippet below, you can see how the Option data type is declared.|
 |[OutStream](outstream/outstream-data-type.md)|Is a generic stream object that you can use to write to files and BLOBs.|
 |[Page](page/page-data-type.md)|Contains a number of simpler elements called controls. Controls are used to display information to the user or receive information from the user.|
@@ -74,9 +74,9 @@ The following types are available as part of the AL Language Reference Library.
 |[QueryInstance](queryinstance/queryinstance-data-type.md)|Enables you to retrieve data from multiple tables and combine the data in single dataset.|
 |[RecordId](recordid/recordid-data-type.md)|Contains the table number and the primary key of a table.|
 |[RecordRef](recordref/recordref-data-type.md)|References a record in a table.|
-|[Report](report/report-data-type.md)|Is used to display, print or process information from a database.|
+|[Report](report/report-data-type.md)|Is used to display, print, or process information from a database.|
 |[ReportInstance](reportinstance/reportinstance-data-type.md)|Reports are used to display, print or process information from a database.|
-|[RequestPage](requestpage/requestpage-data-type.md)|Is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for a report.|
+|[RequestPage](requestpage/requestpage-data-type.md)|Is a page that is run before the report starts to execute. Request pages enable end-users to specify options and filters for a report.|
 |[Session](session/session-data-type.md)|Represents a Microsoft Dynamics Business Central session.|
 |[SessionSettings](sessionsettings/sessionsettings-data-type.md)|Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.|
 |[String](string/string-data-type.md)|Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value.|

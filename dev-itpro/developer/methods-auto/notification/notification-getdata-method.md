@@ -2,7 +2,7 @@
 title: "GetData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetData Method
-Retrieves data that was passed to a notification instance as specified by a SETDATA function call.
+Retrieves data that was passed to a notification instance as specified by a SETDATA method call.
 
 ## Syntax
 ```
@@ -27,7 +27,7 @@ An instance of the [Notification](notification-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The name of the data item that is specified by the SETDATA function call.  
+The name of the data item that is specified by the SETDATA method call.  
 
 
 ## Return Value

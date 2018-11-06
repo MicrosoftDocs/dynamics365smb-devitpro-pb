@@ -2,7 +2,7 @@
 title: "Record Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record Method
-Gets the RecordRef of the field that is currently selected. This function returns an error if no field is selected.
+Gets the RecordRef of the field that is currently selected. This method returns an error if no field is selected.
 
 ## Syntax
 ```

@@ -2,7 +2,7 @@
 title: "Table Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ The following methods are available on instances of the Table data type.
 |[Reset()](table-reset-method.md)|Removes all filters, including any special filters set by MARKEDONLY, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables on the record.|
 |[SetCurrentKey(Any, [Any,...])](table-setcurrentkey-method.md)|Selects a key for a table.|
 |[Ascending([Boolean])](table-ascending-method.md)|Gets or sets the order in which the system searches through a table.|
-|[SetAscending(Any, Boolean)](table-setascending-method.md)|Sets the sort order for the records returned. Use this function after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
+|[SetAscending(Any, Boolean)](table-setascending-method.md)|Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
 |[GetAscending(Any)](table-getascending-method.md)|Gets the sort order for the records returned. You can use GETASCENDING to identify the sort order of the specified field because fields can be sorted in ascending or descending order. For example, you can read data from an ODATA web service where the data is sorted in ascending order on the Name field but in descending order on the City field.|
 |[LockTable([Boolean], [Boolean])](table-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
 |[CalcFields(Any, [Any,...])](table-calcfields-method.md)|Calculates the FlowFields in a record. You specify which fields to calculate by using parameters.|
@@ -53,8 +53,8 @@ The following methods are available on instances of the Table data type.
 |[Rename(Any, [Any,...])](table-rename-method.md)|Changes the value of a primary key in a table.|
 |[ModifyAll(Any, Any, [Boolean])](table-modifyall-method.md)|Modifies a field in all records within a range that you specify.|
 |[DeleteAll([Boolean])](table-deleteall-method.md)|Deletes all records in a table that fall within a specified range.|
-|[ReadPermission()](table-readpermission-method.md)|Determines whether a user is granted read permission to the table that contains a record. This function can test for both full read permission and partial read permission that has been granted with a security filter.|
-|[WritePermission()](table-writepermission-method.md)|Determines whether a user can write to a table. This function can test for both full write permission and partial write permission that has been granted with a security filter. A write permission consists of Insert, Delete, and Modify permissions.|
+|[ReadPermission()](table-readpermission-method.md)|Determines whether a user is granted read permission to the table that contains a record. This method can test for both full read permission and partial read permission that has been granted with a security filter.|
+|[WritePermission()](table-writepermission-method.md)|Determines whether a user can write to a table. This method can test for both full write permission and partial write permission that has been granted with a security filter. A write permission consists of Insert, Delete, and Modify permissions.|
 |[ReadConsistency()](table-readconsistency-method.md)|Determines if the table supports read consistency.|
 |[RecordLevelLocking()](table-recordlevellocking-method.md)|Determines whether the table supports record-level locking.|
 |[Copy(var Table, [Boolean])](table-copy-method.md)|Copies a specified record, filters, marks, and keys that are associated with the record from a table or creates a reference to a record.|
@@ -66,18 +66,18 @@ The following methods are available on instances of the Table data type.
 |[SetRange(Any, [Any], [Any])](table-setrange-method.md)|Sets a simple filter, such as a single range or a single value, on a field.|
 |[SetFilter(Any, String, [Any,...])](table-setfilter-method.md)|Assigns a filter to a field that you specify.|
 |[GetFilter(Any)](table-getfilter-method.md)|Gets a list of the filters within the current filter group that are applied to a field.|
-|[GetFilters()](table-getfilters-method.md)|Gets a string that contains a list of the filters within the current filter group for all fields in a record. In addition, this function also returns the state of the MARKEDONLY function (Record).|
+|[GetFilters()](table-getfilters-method.md)|Gets a string that contains a list of the filters within the current filter group for all fields in a record. In addition, this method also returns the state of the MARKEDONLY method (Record).|
 |[GetView([Boolean])](table-getview-method.md)|Gets a string that describes the current sort order, key, and filters on a table.|
 |[SetView(String)](table-setview-method.md)|Sets the current sort order, key, and filters on a table.|
 |[GetRangeMin(Any)](table-getrangemin-method.md)|Gets the minimum value in a range for a field.|
 |[GetRangeMax(Any)](table-getrangemax-method.md)|Gets the maximum value in a range for a field.|
 |[CopyFilter(Any, Any)](table-copyfilter-method.md)|Copies the filter that has been set for one field and applies it to another field.|
-|[CopyFilters(var Table)](table-copyfilters-method.md)|Copies all the filters set by the SETFILTER function (Record) or the SETRANGE function (Record) from one record to another.|
+|[CopyFilters(var Table)](table-copyfilters-method.md)|Copies all the filters set by the SETFILTER method (Record) or the SETRANGE method (Record) from one record to another.|
 |[HasFilter()](table-hasfilter-method.md)|Determines whether a filter is attached to a record within the current filter group.|
 |[SetRecFilter()](table-setrecfilter-method.md)|Sets the values in the current key of the current record as a record filter.|
 |[FilterGroup([Integer])](table-filtergroup-method.md)|Gets or sets the filter group that is applied to a table.|
 |[SetPermissionFilter()](table-setpermissionfilter-method.md)|Applies the user's security filter.|
-|[Mark([Boolean])](table-mark-method.md)|Marks a record. You can also use this function to determine whether a record is marked.|
+|[Mark([Boolean])](table-mark-method.md)|Marks a record. You can also use this method to determine whether a record is marked.|
 |[ClearMarks()](table-clearmarks-method.md)|Removes all the marks from a record.|
 |[MarkedOnly([Boolean])](table-markedonly-method.md)|Activates a special filter. After you use this function, your view of the table includes only records marked by this function.|
 |[Validate(Any, [Any])](table-validate-method.md)|Calls the OnValidate trigger for the field that you specify.|
