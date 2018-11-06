@@ -10,9 +10,11 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Object Specifications and Limitations
+
 This article describes the specifications and limitations for the database and application objects.  
   
-## Specifications for the Database  
+## Specifications for the Database
+ 
 The following characteristics are based on maximum capacity specifications for SQL Server 2017. Please visit the link below to see specifications for previous versions of SQL Server.
 
 |Feature|Characteristic|  
@@ -23,7 +25,8 @@ The following characteristics are based on maximum capacity specifications for S
 |Maximum number of characters in application object names|30|  
 |Maximum number of characters in a Database Authentication password|80|  
 
-## Specifications for Tables  
+## Specifications for Tables
+  
 The following characteristics are based on maximum capacity specifications for SQL Server 2017. Please visit the link below to see specifications for previous versions of SQL Server.
 
 |Feature|Characteristic|  
@@ -40,7 +43,7 @@ The following characteristics are based on maximum capacity specifications for S
 |Maximum number of distinct fields per key|16|  
 |Maximum size of an (non-key) index|1700 bytes|  
 |Maximum number of SumIndexFields per key|20|  
-|Maximum number of characters in a text or code field|250|  
+|Maximum number of characters in a text or code field|2048|  
 |Maximum size of a BLOB field|2 GB|  
 |Maximum number of characters in a field name|30|  
   
@@ -62,10 +65,26 @@ The following characteristics are based on maximum capacity specifications for S
 |Maximum number of elements in an array variable|1,000,000|  
 |Maximum physical size of a codeunit|2 GB|  
 |Lower bound of index in an array|1|  
+
+  
+## Specifications for variables  
+  
+|Feature|Characteristic|  
+|-------------|--------------------|  
+|Maximum number of characters in text variables|2048<sup>3</sup>|   
+|Maximum number of characters in code variables|2048|  
+
+## Specifications for text constants  
+  
+|Feature|Characteristic|  
+|-------------|--------------------|  
+|Maximum number of characters in text variables|2048|   
   
  <sup>1</sup>All application objects are identified by an ID number. There are restrictions, however, on the numbers you can use when you create your own application objects. Review your Partner License Agreement for more information. 
 
  <sup>2</sup>Each variable-length text field accounts for 26 bytes in the record. 
+
+<sup>3</sup> If no length is specified for text variables, then the length is unlimited.  
   
 ## See Also  
  [Field Data Types](datatypes/devenv-field-data-types.md)   
