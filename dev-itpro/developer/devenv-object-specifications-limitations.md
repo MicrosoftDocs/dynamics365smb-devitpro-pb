@@ -67,8 +67,8 @@ The following characteristics are based on maximum capacity specifications for S
 |Lower bound of index in an array|1|  
 
   
-## Specifications for variables  
-  
+## Specifications for variables
+ 
 |Feature|Characteristic|  
 |-------------|--------------------|  
 |Maximum number of characters in text variables|2048<sup>3</sup>|   
@@ -78,7 +78,7 @@ The following characteristics are based on maximum capacity specifications for S
   
 |Feature|Characteristic|  
 |-------------|--------------------|  
-|Maximum number of characters in text variables|2048|   
+|Maximum number of characters|2048|   
   
 <sup>1</sup>All application objects are identified by an ID number. There are restrictions, however, on the numbers you can use when you create your own application objects. Review your Partner License Agreement for more information. 
 
