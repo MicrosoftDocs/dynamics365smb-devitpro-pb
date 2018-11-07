@@ -1,7 +1,7 @@
 ---
 title: "ToolTip Property"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/24/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,8 +46,8 @@ In the client, tooltips appear when you point to caption of the control.
 The following example illustrates how you can apply tooltips in an app:  
 
 ```
-Caption = 'ENU=Second field';
-ToolTip = 'ENU=Shows the name of the entity based on the names in your list of contacts.';
+Caption = 'Second field';
+ToolTip = 'Shows the name of the entity based on the names in your list of contacts.';
 ```
 
 ## See Also  

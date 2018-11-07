@@ -8,21 +8,21 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: eb1dd040-04fb-4178-bc07-79238fbc1695
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # EntitySetName Property
-Sets the plural entity name with which the page is exposed in the api endpoint.  
+Sets the plural entity name with which the page is exposed in the api endpoint. The following example illustrates the syntax:
+
+```
+EntitySetName = 'Customers';
+```
     
 ## Applies To  
   
--   Pages  
+- Pages  
   
--   Queries  
+- Queries  
   
 ## See Also  
  [EntityName Property](devenv-entityname-property.md)  

@@ -35,7 +35,7 @@
 #### [Configuring Web Server Instances](administration/configure-web-server.md)
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
-#### [Configure Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
+#### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### Database
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
@@ -60,6 +60,8 @@
 #### [Development Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### [Authentication and Credential Types](administration/users-credential-types.md)
 ### [Configuring Business Central Server](administration/configure-server-instance.md)
+### [Configuring Business Central Web Server](administration/configure-web-server.md)
+#### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
@@ -95,9 +97,11 @@
 ### [The AL Formatter](developer/devenv-al-formatter.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
+<!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
+#### [The “Ready to Go” Online Learning Catalog](developer/readiness/readiness-learning-catalog.md)
 ### Getting Started with AL for On-Premises
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
@@ -172,6 +176,7 @@
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## [AL Development Environment](developer/devenv-reference-overview.md)
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
+### [AL Simple Statements](developer/devenv-al-simple-statements.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
 ### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
