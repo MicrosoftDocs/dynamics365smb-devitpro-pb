@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Notification Data Type
 A complex type for publishing and consuming notifications in the application. Notifications provide a programmatic way to send non-intrusive information to the User Interface (UI).

@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: b179c72d-48ea-4015-bb76-c60a3b459c70
 caps.latest.revision: 21
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Date Data Type
 Denotes a date ranging from January 1, 1753 to December 31, 9999.  

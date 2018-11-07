@@ -9,6 +9,7 @@ ms.topic: article
 ms.author: SusanneWindfeldPedersen
 ms.service: dynamics365-financials
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  
