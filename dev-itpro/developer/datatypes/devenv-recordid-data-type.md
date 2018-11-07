@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 22b55f8c-90a1-47f7-a716-ff833ae33ccb
 caps.latest.revision: 4
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # RecordID Data Type
 This data type contains the table number and the primary key of a table.
