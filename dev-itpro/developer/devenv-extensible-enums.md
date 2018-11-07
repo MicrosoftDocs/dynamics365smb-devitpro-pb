@@ -45,10 +45,11 @@ enumextension 50130 LoyaltyWithDiamonds extends Loyalty
 ```
 
 ## Usage
-When referencing a defined enum from code, you use the following syntax:
+When referencing a defined enum from code, you use the syntax as illustrated below.
+
 `enum Loyalty`
 
-If you want to define an enum as a table field type, use the syntax below:
+If you want to define an enum as a table field type, use the syntax illustrated below:
  
 ```
 field(50100; Loyal; enum Loyalty) {}
@@ -59,6 +60,22 @@ Or, as a variable:
 ```
 var
 	LoyaltyLevel: enum Loyalty;
+```
+
+In code
+
+```
+codeunit 50140 EnumUsage
+{
+    procedure Foo(p: enum Loyalty)
+    var
+        LoyaltyLevel: enum Loyalty;
+    begin
+        if p = p::Gold then begin
+            LoyaltyLevel := p;
+        end;
+    end;
+}
 ```
 
 ## Business Central On-Premises
