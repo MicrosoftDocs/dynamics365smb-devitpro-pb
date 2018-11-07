@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Object Specifications and Limitations
+# Object Specifications and Limitations for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises
 
 This article describes the specifications and limitations for the database and application objects.  
   
@@ -35,7 +35,7 @@ The following characteristics are based on maximum capacity specifications for S
 |Maximum number of characters in a table name|30|  
 |Maximum table size|Depends on available storage|  
 |Maximum number of records in a table|Depends on available storage|  
-|Maximum record size|8060 bytes<sup>2</sup>|  
+|Maximum record size|8060 bytes|  
 |Maximum number of fields in a record|500|  
 |Range for field numbers|1 – 999,999,999|  
 |Maximum number of keys for a table|40|  
@@ -43,7 +43,7 @@ The following characteristics are based on maximum capacity specifications for S
 |Maximum number of distinct fields per key|16|  
 |Maximum size of an (non-key) index|1700 bytes|  
 |Maximum number of SumIndexFields per key|20|  
-|Maximum number of characters in a text or code field|2048|  
+|Maximum number of characters in a text or code field|250|  
 |Maximum size of a BLOB field|2 GB|  
 |Maximum number of characters in a field name|30|  
   
@@ -71,20 +71,18 @@ The following characteristics are based on maximum capacity specifications for S
   
 |Feature|Characteristic|  
 |-------------|--------------------|  
-|Maximum number of characters in text variables|2048<sup>3</sup>|   
-|Maximum number of characters in code variables|2048|  
+|Maximum number of characters in text variables|250<sup>2</sup>|   
+|Maximum number of characters in code variables|250|  
 
 ## Specifications for text constants  
   
 |Feature|Characteristic|  
 |-------------|--------------------|  
-|Maximum number of characters in text variables|2048|   
+|Maximum number of characters in text variables|250|   
   
- <sup>1</sup>All application objects are identified by an ID number. There are restrictions, however, on the numbers you can use when you create your own application objects. Review your Partner License Agreement for more information. 
+<sup>1</sup>All application objects are identified by an ID number. There are restrictions, however, on the numbers you can use when you create your own application objects. Review your Partner License Agreement for more information. 
 
- <sup>2</sup>Each variable-length text field accounts for 26 bytes in the record. 
-
-<sup>3</sup> If no length is specified for text variables, the length is unlimited.  
+<sup>2</sup> If no length is specified for text variables, the length is unlimited.  
   
 ## See Also  
  [Field Data Types](datatypes/devenv-field-data-types.md)   
