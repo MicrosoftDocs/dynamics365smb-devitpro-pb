@@ -15,7 +15,7 @@ ms.author: solsen
 # Extensible Enums
 An enumeration type, also known as an enum in programming, is a keyword used to declare a type that consists of a set of named constants. The list of named constants is called the enumeration list. Enums can be used as table fields, local and global variables, and parameters.
 
-To declare an `enum` in AL you must specify an ID and a name. The enumeration list consists of values and each of the values are declared with an ID and a value. The value ID is the ordinal value on the enumeration list and must be unique. The following example shows an enum, which can be extended, and has the four values; **None**, **Bronze**, **Silver**, and **Gold**. 
+To declare an `enum` in AL you must specify an ID and a name. The enumeration list consists of values and each of the values are declared with an ID and a value. The value ID is the ordinal value on the enumeration list and must be unique. The following example shows the declaration of an enum, which can be extended, and has the four values; **None**, **Bronze**, **Silver**, and **Gold**. 
 
 ```
 enum 50121 Loyalty
@@ -62,7 +62,7 @@ var
 	LoyaltyLevel: enum Loyalty;
 ```
 
-In code
+In code, you address a specific enum value like in the following example:
 
 ```
 codeunit 50140 EnumUsage
