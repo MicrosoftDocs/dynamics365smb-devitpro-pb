@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Object Specifications and Limitations for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises
+# Object Specifications and Limitations
 
 This article describes the specifications and limitations for the database and application objects.  
   
