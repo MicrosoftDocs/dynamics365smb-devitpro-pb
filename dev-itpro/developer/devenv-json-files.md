@@ -42,7 +42,7 @@ The following table describes the settings in the ```app.json``` file:
 |application|Yes, if base application objects are extended or referenced. The AL package will be compiled against the application that is present on the server that you connect to. This allows you to write a single [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for multiple country versions as long as you *do not* depend on country-specific code. If you *do* depend on country-specific code you should only try to compile your app against a server set up for that country.|The minimum supported version, for example: `"application": "11.0.0.0"`|
 |idRange|Yes|A range for application object IDs. For all objects outside the range, a compilation error will be raised. When you create new objects, an ID is automatically suggested.|
 |showMyCode|No|This is by default set to `false` and not visible in the manifest. To enable viewing the source code when debugging into an extension, add the following setting: `"showMyCode": true`|
-|target|No|By default this is `Extension`. For Dynamics NAV, you can set this to `Internal` to get access to otherwise restricted APIs. The Dynamics NAV Server setting must then also be set to `Internal`.<!-- For more information, see [Configuring Microsoft Dynamics NAV Server](../configuring-microsoft-dynamics-nav-server.md).-->|
+|target|No|By default this is `Extension`. For Dynamics NAV, you can set this to `Internal` to get access to otherwise restricted APIs and .NET Interop. The Dynamics NAV Server setting must then also be set to `Internal`.<!-- For more information, see [Configuring Microsoft Dynamics NAV Server](../configuring-microsoft-dynamics-nav-server.md).-->|
 |helpBaseUrl|No|The URL for the website that displays help for the current extension. The default URL is `https://docs.microsoft.com/{0}/dynamics365/business-central`.|
 |supportedLocales|No|The list of locales that are supported for looking up help. The value on the list is inserted into the URL defined in the `helpBaseUrl` property. The first locale on the list is default. An example is `"supportedLocales": ["da-DK", "en-US"]`.|
 
@@ -65,6 +65,7 @@ The following table describes the settings in the ```launch.json``` file. The `l
 |schemaUpdateMode|No|Specifies the data synchronization mode when you publish an extension to the development server, for example: <br>`"schemaUpdateMode": "Synchronize Recreate"`</br> The default value is Synchronize. For more information, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  <br>[!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]  |
 |breakOnError | No |Specifies whether to break on errors when debugging. The default value is `true`. | 
 |breakOnRecordWrite | No |Specifies if the debugger breaks on record changes. The default value is `false`.| 
+|launchBrowser|No|Specifies whether to open a new tab page in the browser when publishing the AL extension (Ctrl+F5). The default value is `false`. If the value is not specified or set to `true`, the session is started. If the value is explicitly set to `false`, the session is not started unless you launch your extension in debugging mode.|
 
 ### Publish to cloud settings
 |Setting|Mandatory|Value|

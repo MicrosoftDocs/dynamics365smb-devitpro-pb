@@ -3,14 +3,11 @@ title: "Development of a Localization Solution"
 description: "Comply with regulatory requirements in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 11/02/2018
+ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Development of a Localization Solution
@@ -45,6 +42,9 @@ In [countries](https://docs.microsoft.com/en-us/dynamics365/business-central/dev
 All of the points listed above must be in place to declare [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country.
 To apply for access to build [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] localization in countries, where Microsoft has not delivered a localization, fill in the  [[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] Localization Request form](https://go.microsoft.com/fwlink/?linkid=2005218).
 
+> [NOTE]
+> If your localization request is approved and the relevant localization app has passed all AppSource validation, you can expect a lead time of minimum 3 months for Business Central to become available in your country.
+
 ## Business Central companion/mobile apps availability
 Even though [Business Central companion/mobile apps](https://docs.microsoft.com/en-us/dynamics365/business-central/install-mobile-app) are globally available in Microsoft Store, Apple App Store, or Google Play the respective store listing may appear in English. Once Business Central is made available in a given country, we will make sure to update the store listings using local language.
 
@@ -54,37 +54,41 @@ Even though [Business Central companion/mobile apps](https://docs.microsoft.com/
 ## Monetization
 As a partner developing a localization app, you are free to decide how monetization of your apps should work. Localization apps are considered like any other apps and the market is open any partner and apps in a given country. It is up to you to build a monetization mechanism for your app - as well as mechanisms to control who uses your app. To learn more, please see [the Dynamics 365 Business Central App Monetization whitepaper](https://mbspartner.microsoft.com/secure/coursematerials/D365/Standalone/Dynamics_365_Business_Central_App_Monetization_Demo_Guide.pdf).
 
-## Submitting your localization app idea to AppSource
-Apart from the regular app details you fill out when [submitting your app idea](https://go.microsoft.com/fwlink/?linkid=869733) there are a few things to emphasize in the app idea submission process for localization apps. Remember to be explicit about:
- * Country/countries of usage
- * Language(s) included in the app  
- * Describe and categorize each local regulatory feature included in your localization app
- * (Optionally) Mark features to be considered part of the global version
+## Submitting your localization app to AppSource
+
+Apart from the regular app details you fill out when [submitting your app](https://go.microsoft.com/fwlink/?linkid=869733), there are a few things to emphasize in the app submission process for localization apps.  
+
+The following list describes the top things to be explicit about:
+
+- Country or group of countries that the app applies to  
+- Language or languages included in the app  
+- Describe and categorize each local regulatory feature included in your localization app  
+- (Optionally) Mark features to be considered part of the global version of [!INCLUDE[prodshort](../includes/prodshort.md)]  
 
 ## Product scope for localization apps
 Apart from [fulfilling the technical checklist for your app](../devenv-checklist-submission.md), the minimum viable product scope for localization app is:
 
- * Local Regulatory Features.
- * [Tests for Local Regulatory Features](../../compliance/apptest-testingyourextension.md).
- * [Upgrade code for localization apps](../devenv-upgrading-extensions.md).
- * Setup data RapidStart package for the localization app.
- * [Translation of a localization app to local language(s)](../devenv-work-with-translation-files.md) and base app if you are the first partner enabling localization for the country (Learn more about [Dynamics Translation Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/translation-service-overview)).
- * Translation of the localization app’s documentation.
- * National Standard Features (local part) are recommended to be built as additional [add-on apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
- * Market Required and Local Competitive Features are recommended to be built as additional [add-on apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
- * Using .NET assemblies in your localization app will fail in the technical validation of an app. Instead, contribute to [C/AL Open Library](https://github.com/Microsoft/cal-open-library) GitHub repository with requests you have for .NET.
- * It is recommended to logically break down the full local functionality set, at a minimum within the above categories. This approach provides optimal flexibility for customers to choose what they really need in terms of local functionality while making sure critical pieces of local functionality do not break upgrade processes nor are upgrade heavy.
- * The majority of customers in the local market will need most of the local regulatory features. In the category of local regulatory features there will be some features that, even though they are legally required, apply to companies of a certain size, revenue threshold etc. Such situations are opportunities to further logically break down localization apps into smaller focused-functionality sets.
- * Consider separating localization functionality by the frequency of changes to smaller localization apps. If, for example, your local feature contains one part that is stable and one part that is frequently changed based on regulation changes, make sure to keep the stable part as one app and the changing part a separate localization app. This approach ensures better test coverage, faster response to changes and fewer upgrade issues.
- * Use worldwide frameworks available in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (W1) when building features for, such as VAT reports, banking formats, data exchange, and others where the majority of functionality is common to all countries but there are some local rules or business formats that are extensions of global frameworks or formats. Make sure to familiarize yourself with such frameworks to reduce effort, reuse code, and properly utilize extensibility points and integration events. If you notice opportunities for improvements in such frameworks or [missing extensibility points](https://github.com/Microsoft/AL/issues), make sure to [contact us](mailto:d365bcloc@microsoft.com) to work together in improving this.
- * Consider rethinking local reports by categorizing those you want to include in your localization app(s) in following categories: reports printing lists could be converted to list pages and offer more functionality using [Excel addin](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data), reports providing insights or aggregating data could be converted to [Power BI reports and dashboards](https://docs.microsoft.com/en-us/dynamics365/business-central/across-how-use-financials-data-source-powerbi), frequently customized reports (usually local document reports like invoices, credit memos...) could utilize [Word document layouts](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-howto-report-layout) so customer's power users can easily customize them, for all others fall back to [RDLC reports](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-howto-rdl-report-layout)  
- * Prepare a setup data RapidStart package for the production company and translate to local language(s).
- * Consider preparing a local demo data RapidStart package for the evaluation company and translate it to local language(s).
- * Prepare setup guides (wizards) for areas that are complex to set up to help users enable, discover and have a good first experience using your localization app.
- * Fork the [Dynamics 365 Business Central documentation from public GitHub repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). Such an approach to documentation can help when other partners or ISVs take dependency on your localization app.
- * Consider converting field-based documentation to task-based documentation using tooltips and [Dynamics 365 Business Central documentation Github repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). [Rulesets](../devenv-rule-set-syntax-for-code-analysis-tools.md) can help you ensure, for example, that no fields or actions are missing [tooltips](https://worldready.cloudapp.net/Styleguide/Read?id=2748&topicid=38066) (link requires PartnerSource account).
- * If your localization app(s) are extending Business Central data model with new tables and/or fields, you must setthe  DataClassification property correctly. Localization apps with fields having the DataClassification property set to ToBeClassified will be rejected. Read more on [Classifying Data in Business Central here](../devenv-classifying-data.md).
- * If you're converting an existing localization (developed in C/AL) to localization apps (check this [video](https://mbspartner.microsoft.com/D365/Videos/101769)(requires PartnerSource access)), as described in technical checklist for your app, you'll need to set ApplicatoinArea property UI elements which you want to make visible in Business Central. To help you with that use [NAVApplicationAreaHelper powershell command let](https://blogs.msdn.microsoft.com/nav/2018/06/06/navapplicationareahelper/) to do this in bulk.  
+* Local Regulatory Features.
+* [Tests for Local Regulatory Features](../../compliance/apptest-testingyourextension.md).
+* [Upgrade code for localization apps](../devenv-upgrading-extensions.md).
+* Setup data RapidStart package for the localization app.
+* [Translation of a localization app to local language(s)](../devenv-work-with-translation-files.md) and base app if you are the first partner enabling localization for the country (Learn more about [Dynamics Translation Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/translation-service-overview)).
+* Translation of the localization app’s documentation.
+* National Standard Features (local part) are recommended to be built as additional [add-on apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
+* Market Required and Local Competitive Features are recommended to be built as additional [add-on apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
+* Using .NET assemblies in your localization app will fail in the technical validation of an app. Instead, contribute to [C/AL Open Library](https://github.com/Microsoft/cal-open-library) GitHub repository with requests you have for .NET.
+* It is recommended to logically break down the full local functionality set, at a minimum within the above categories. This approach provides optimal flexibility for customers to choose what they really need in terms of local functionality while making sure critical pieces of local functionality do not break upgrade processes nor are upgrade heavy.
+* The majority of customers in the local market will need most of the local regulatory features. In the category of local regulatory features there will be some features that, even though they are legally required, apply to companies of a certain size, revenue threshold etc. Such situations are opportunities to further logically break down localization apps into smaller focused-functionality sets.
+* Consider separating localization functionality by the frequency of changes to smaller localization apps. If, for example, your local feature contains one part that is stable and one part that is frequently changed based on regulation changes, make sure to keep the stable part as one app and the changing part a separate localization app. This approach ensures better test coverage, faster response to changes and fewer upgrade issues.
+* Use worldwide frameworks available in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (W1) when building features for, such as VAT reports, banking formats, data exchange, and others where the majority of functionality is common to all countries but there are some local rules or business formats that are extensions of global frameworks or formats. Make sure to familiarize yourself with such frameworks to reduce effort, reuse code, and properly utilize extensibility points and integration events. If you notice opportunities for improvements in such frameworks or [missing extensibility points](https://github.com/Microsoft/AL/issues), make sure to [contact us](mailto:d365bcloc@microsoft.com) to work together in improving this.
+* Consider rethinking local reports by categorizing those you want to include in your localization app(s) in following categories: reports printing lists could be converted to list pages and offer more functionality using [Excel addin](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data), reports providing insights or aggregating data could be converted to [Power BI reports and dashboards](https://docs.microsoft.com/en-us/dynamics365/business-central/across-how-use-financials-data-source-powerbi), frequently customized reports (usually local document reports like invoices, credit memos...) could utilize [Word document layouts](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-howto-report-layout) so customer's power users can easily customize them, for all others fall back to [RDLC reports](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-howto-rdl-report-layout)  
+* Prepare a setup data RapidStart package for the production company and translate to local language(s).
+* Consider preparing a local demo data RapidStart package for the evaluation company and translate it to local language(s).
+* Prepare setup guides (wizards) for areas that are complex to set up to help users enable, discover and have a good first experience using your localization app.
+* Fork the [Dynamics 365 Business Central documentation from public GitHub repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). Such an approach to documentation can help when other partners or ISVs take dependency on your localization app. For more information, see [Configuring the Help Experience](../../deployment/configure-help.md).
+* Consider converting field-based documentation to task-based documentation using tooltips and [Dynamics 365 Business Central documentation Github repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). [Rulesets](../devenv-rule-set-syntax-for-code-analysis-tools.md) can help you ensure, for example, that no fields or actions are missing [tooltips](https://worldready.cloudapp.net/Styleguide/Read?id=2748&topicid=38066) (link requires PartnerSource account).
+* If your localization app(s) are extending Business Central data model with new tables and/or fields, you must setthe  DataClassification property correctly. Localization apps with fields having the DataClassification property set to ToBeClassified will be rejected. Read more on [Classifying Data in Business Central here](../devenv-classifying-data.md).
+* If you're converting an existing localization (developed in C/AL) to localization apps (check this [video](https://mbspartner.microsoft.com/D365/Videos/101769)(requires PartnerSource access)), as described in technical checklist for your app, you'll need to set the ApplicationArea property on UI elements that you want to make visible in Business Central. To help you with that use [NAVApplicationAreaHelper powershell command let](https://blogs.msdn.microsoft.com/nav/2018/06/06/navapplicationareahelper/) to do this in bulk.  
 
 ## Getting started with localization apps
 Choose add-on apps for localizations, when you are adding or changing functionality for the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] user. See the following whitepaper for [getting started with developing add-on apps](https://go.microsoft.com/fwlink/?linkid=869734). It contains information about [object ranges](../devenv-object-ranges.md) and other details that are useful for getting started with development of your app. You can request your unique object range [here](https://mbs.microsoft.com/partnersource/global/partner-essentials/partner-strategy/365businesscentralrequestuniqueobjectrange) (requires PartnerSource access).
@@ -93,15 +97,16 @@ For more information about localization apps, see [Translation and Localization 
 > [!NOTE]  
 > You can also create Connect apps if you find it beneficial to have some functionality placed outside the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] environment and instead connect to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] using for example APIs or Web services.
 
-
 > [!NOTE]  
-> If you have questions for building localization apps please contact the [Microsoft localization team](mailto:d365bcloc@microsoft.com).
+> If you have questions for building localization apps, please contact the [Microsoft localization team](mailto:d365bcloc@microsoft.com).
 
 Also, consider joining the [Ready to Go](readiness-ready-to-go.md) program for assistance on bringing you localization apps to AppSource.
 
 ## See Also
+
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
 [Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
 [Development of a Vertical Solution](readiness-develop-vertical.md)  
 [Development of a Horizontal Solution](readiness-develop-horizontal.md)  
 [Resell Different Solutions](readiness-reseller.md)  
+[Countries and Translations Supported](../../compliance/apptest-countries-and-translations.md)  

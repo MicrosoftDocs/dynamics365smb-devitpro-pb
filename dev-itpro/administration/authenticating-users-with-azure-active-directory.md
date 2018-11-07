@@ -80,7 +80,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 	Azure AD publishes federation metadata at:
 	
 	```
-	https://login.microsoftonline.com<Azure AD TENANT ID>/FederationMetadata/2007-06/FederationMetadata.xml
+	https://login.microsoftonline.com/<Azure AD TENANT ID>/FederationMetadata/2007-06/FederationMetadata.xml
 	```
 
 	For example:

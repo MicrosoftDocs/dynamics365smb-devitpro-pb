@@ -79,7 +79,7 @@ author: SusanneWindfeldPedersen
 |-----------|----------|-------------|  
 |1|Trigger event \(before\)|OnBeforeDeleteEvent|  
 |2|Table trigger|OnDelete|  
-|3|Global table trigger in codeunit 1|OnDatabaseDelete|  
+|3|Global table trigger in codeunit|OnDatabaseDelete|  
 |4|Database operations|Delete the record|  
 |5|Trigger event \(after\)|OnAfterDeleteEvent|  
   
@@ -95,7 +95,7 @@ author: SusanneWindfeldPedersen
 |`OnBeforeActionEvent(VAR Rec : Record)`|Executed before the [OnAction Trigger](triggers/devenv-onaction-trigger.md), which is called when a user selects an action on the page.|  
 |`OnAfterActionEvent(VAR Rec : Record)`|Executed after the [OnAction Trigger](triggers/devenv-onaction-trigger.md), which is called when a user selects an action on the page.|  
 |`OnAfterGetCurrRecordEvent(VAR Rec : Record)`|Executed after the [OnAfterGetCurrRecord Trigger](triggers/devenv-onaftergetcurrrecord-trigger.md), which is called after the current record is retrieved from the table.|  
-|`OnAfterGetRecordEvent(VAR Rec : Record)`|Executed after the [OnAfterGetCurrRecord Trigger](triggers/devenv-onaftergetcurrrecord-trigger.md), which is called after the record is retrieved from the table but before it is displayed to the user.|  
+|`OnAfterGetRecordEvent(VAR Rec : Record)`|Executed after the [OnAfterGetRecord Trigger](triggers/devenv-onaftergetrecord-trigger.md), which is called after the record is retrieved from the table but before it is displayed to the user.|  
 |`OnBeforeValidateEvent(VAR Rec : Record, VAR xRec : Record)`|Executed before the [OnValidate \(Page fields\) Trigger](triggers/devenv-onvalidate-page-fields-trigger.md), which is called when a field loses focus after its value has been changed.|  
 |`OnAfterValidateEvent(VAR Rec : Record, VAR xRec : Record)`|Executed after the [OnValidate \(Page fields\) Trigger](triggers/devenv-onvalidate-page-fields-trigger.md), which is called when a field loses focus after its value has been changed.|  
 |`OnClosePageEvent(VAR Rec : Record)`|Executed after the [OnClosePage Trigger](triggers/devenv-onclosepage-trigger.md), which is called when page closes after the OnQueryClosePage trigger is executed.|  
