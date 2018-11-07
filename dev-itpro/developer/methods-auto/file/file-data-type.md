@@ -2,7 +2,7 @@
 title: "File Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ The following methods are available on the File data type.
 |-----------|-----------|
 |[Erase(String)](file-erase-method.md)|Deletes a file.|
 |[Rename(String, String)](file-rename-method.md)|Renames an ASCII or binary file.|
-|[Copy(String, String)](file-copy-method.md)|Use this function to copy a file.|
+|[Copy(String, String)](file-copy-method.md)|Copies a file.|
 |[GetStamp(String, var Date, [var Time])](file-getstamp-method.md)|Gets the exact time that a file was last written to.|
 |[SetStamp(String, Date, [Time])](file-setstamp-method.md)|Sets a timestamp for a file.|
 |[Exists(String)](file-exists-method.md)|Determines whether a file exists.|
@@ -37,9 +37,9 @@ The following methods are available on instances of the File data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Open(String, [TextEncoding])](file-open-method.md)|Opens an ASCII or binary file. This function does not create the file if it does not exist.|
+|[Open(String, [TextEncoding])](file-open-method.md)|Opens an ASCII or binary file. This method does not create the file if it does not exist.|
 |[Create(String, [TextEncoding])](file-create-method.md)|Creates an Automation object.|
-|[Close()](file-close-method.md)|Closes a file that has been opened by the OPEN function (File).|
+|[Close()](file-close-method.md)|Closes a file that has been opened by the OPEN method (File).|
 |[Name()](file-name-method.md)|Gets the name of an ASCII or binary file.|
 |[Pos()](file-pos-method.md)|Gets the current position of the file pointer in an ASCII or binary file.|
 |[Len()](file-len-method.md)|Gets the length of an ASCII or binary file.|
@@ -67,7 +67,7 @@ The following methods are available on instances of the File data type.
 |[Write(Any)](file-write-joker-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Seek(Integer)](file-seek-method.md)|Sets a file pointer to a new position in an ASCII or binary file.|
 |[Trunc()](file-trunc-method.md)|Truncate an ASCII or binary file to the current position of the file pointer.|
-|[WriteMode([Boolean])](file-writemode-method.md)|Use this function before you use OPEN function (File)] to set or test whether you can write to a file in later calls.|
+|[WriteMode([Boolean])](file-writemode-method.md)|Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls.|
 |[TextMode([Boolean])](file-textmode-method.md)|Sets whether a file should be opened as an ASCII file or a binary file. Gets the current setting of this option for a file.|
 |[CreateInStream(InStream)](file-createinstream-method.md)|Creates an InStream object for a file. This enables you to import or read data from the file.|
 |[CreateOutStream(OutStream)](file-createoutstream-method.md)|Creates an OutStream object for a file. This enables you to export or write data to the file.|

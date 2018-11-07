@@ -2,7 +2,7 @@
 title: "RDLCLayout Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RDLCLayout Method
-Gets the RDLC layout that is used on a report and returns it as a data stream.The function has an instance call and a static call. The following code shows the syntax of the RDLC function. The first line of code is the syntax for an instance function call. The second line of code is the syntax for a static function call.
+Gets the RDLC layout that is used on a report and returns it as a data stream.The method has an instance call and a static call. The following code shows the syntax of the RDLC method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
 
 ## Syntax
 ```

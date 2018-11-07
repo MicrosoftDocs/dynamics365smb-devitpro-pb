@@ -2,7 +2,7 @@
 title: "AsToken Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +34,7 @@ The returned JsonToken contains the same data as the JsonValue, but allows for t
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks 
-The returned JsonToken contains the same data as the JsonValue, but allows for treating the data in a generic manner.
+
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  

@@ -2,7 +2,7 @@
 title: "IsSessionActive Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,8 +39,8 @@ The ID of the session that you want to test if it is still active.
 ## Remarks
 Use this method to test if a session has completed or is still active, for example if you want to check that a session started with STARTSESSION is still running.  
 
->   [!NOTE]  
->    The method looks for sessions on the local machine.
+>[!NOTE]     
+>The method looks for sessions on the local machine.
 
 
 ## See Also

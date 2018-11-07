@@ -2,7 +2,7 @@
 title: "Session Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,8 @@ The following methods are available on the Session data type.
 |[StopSession(Integer, [String])](session-stopsession-method.md)|Stops a session.|
 |[CurrentClientType()](session-currentclienttype-method.md)|Gets the client type that is running in current session.|
 |[DefaultClientType()](session-defaultclienttype-method.md)|Gets the default client that is configured for the server instance that is used by the current session.|
-|[BindSubscription(Codeunit)](session-bindsubscription-method.md)|Binds the event subscriber functions in the codeunit to the current codeunit instance for handling the events that they subscribe to. This essentially activates the subscriber functions for the codeunit instance.|
-|[UnbindSubscription(Codeunit)](session-unbindsubscription-method.md)|Unbinds the event subscriber functions from in the codeunit instance. This essentially deactivates the subscriber functions for the codeunit instance.|
+|[BindSubscription(Codeunit)](session-bindsubscription-method.md)|Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to. This essentially activates the subscriber functions for the codeunit instance.|
+|[UnbindSubscription(Codeunit)](session-unbindsubscription-method.md)|Unbinds the event subscriber methods from in the codeunit instance. This essentially deactivates the subscriber methods for the codeunit instance.|
 |[ApplicationIdentifier()](session-applicationidentifier-method.md)|Gets the application ID associated with the current thread.|
 |[SendTraceTag(String, String, Verbosity, String, [DataClassification])](session-sendtracetag-method.md)|Send a trace tag to the telemetry service.|
 |[GetExecutionContext()](session-getexecutioncontext-method.md)|Gets the current session's execution context.|

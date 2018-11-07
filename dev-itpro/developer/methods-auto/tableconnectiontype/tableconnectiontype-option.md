@@ -2,7 +2,7 @@
 title: "TableConnectionType System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,15 +14,15 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TableConnectionType Option Type
-
+Use variables of this data type to specify the type of connection to an external database.
 
 ## Members
 |  Member  |  Description  |
 |----------------|---------------|
-|CRM||
-|ExternalSQL||
-|Exchange||
-|MicrosoftGraph||
+|CRM|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Dynamics 365 for Sales. The table is typically based on an entity in Dynamics 365 for Sales, such as the Accounts entity.|
+|ExternalSQL|Specifies the table as a table or view in SQL Server that is not in the Dynamics 365 Business Central database.|
+|Exchange|This is for internal use only.|
+|MicrosoftGraph|This is for internal use only.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

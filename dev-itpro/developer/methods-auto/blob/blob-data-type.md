@@ -2,7 +2,7 @@
 title: "Blob Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Blob Data Type
-A binary large object (BLOB) is a complex data type. Variables of this data type differ from normal numeric and string variables in that BLOBs have a variable length. The maximum size of a BLOB is 2 GB.
+Is a complex data type. Variables of this data type differ from normal numeric and string variables in that BLOBs have a variable length. The maximum size of a BLOB(binary large object) is 2 GB.
 
 
 The following methods are available on instances of the Blob data type.
@@ -36,15 +36,16 @@ The following methods are available on instances of the Blob data type.
 > [!NOTE]  
 >  You cannot view text that is stored in BLOBs from the development environment.  
 
- You can read from and write to BLOBs by creating input and output streams, respectively. To do so, use [CREATEINSTREAM method (BLOB)](../../methods/devenv-createinstream-method-blob.md) and [CREATEOUTSTREAM method (BLOB)](../../methods/devenv-createoutstream-method-blob.md).  
+ You can read from and write to BLOBs by creating input and output streams, respectively. To do so, use [CREATEINSTREAM method (BLOB)](blob-createinstream-method.md) and [CREATEOUTSTREAM method (BLOB)](blob-createoutstream-method.md).  
 
- For more information, see [InStream and OutStream Data Types](../../datatypes/devenv-instream-and-outstream-data-types.md).  
-
- To optimize performance, when you access a record that has a BLOB field, the data in the BLOB is not always read into memory. You must call the [CALCFIELDS method (Record)](../../methods/devenv-calcfields-method-record.md) to read the BLOB into memory and calculate it. Then you can use the BLOB in AL code or display it in the application.  
+<!--
+To optimize performance, when you access a record that has a BLOB field, the data in the BLOB is not always read into memory. You must call the [CALCFIELDS method (Record)](../../methods/devenv-calcfields-method-record.md) to read the BLOB into memory and calculate it. Then you can use the BLOB in AL code or display it in the application.  
 
  It is not supported to insert a BLOB field into a Variant.  
 
  It is not supported for a page to access a BLOB field from a table other than the SourceTable of the page.  
+
+-->
 
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  

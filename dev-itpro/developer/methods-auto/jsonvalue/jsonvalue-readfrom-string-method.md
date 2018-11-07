@@ -2,7 +2,7 @@
 title: "ReadFrom Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/02/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,7 @@ The String object from which the JSON data will be read.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks 
-This method can fail if the JSON data is malformed..
+This method can fail if the JSON data is malformed.
 If the operation succeeds, the JsonValue will be disconnected from its current JSON tree and the data contained by the JsonValue will be replaced with the new value.
 To delete the contents in a JsonValue variable use the Clear function.
 

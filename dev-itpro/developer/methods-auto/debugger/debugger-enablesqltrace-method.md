@@ -2,7 +2,7 @@
 title: "EnableSqlTrace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ The ID of the session for which you want to enable the SQL trace, or for which y
         
 *NewIsEnabled*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If you specify the optional NewIsEnabled parameter, then the function sets whether tracing is enabled. true if you want to enable tracing for the specified session; false if you want to disable tracing. If you omit the NewIsEnabled parameter, then the function verifies if tracing is enabled.
+If you specify the optional NewIsEnabled parameter, then the method sets whether tracing is enabled. true if you want to enable tracing for the specified session; false if you want to disable tracing. If you omit the NewIsEnabled parameter, then the function verifies if tracing is enabled.
         
 
 

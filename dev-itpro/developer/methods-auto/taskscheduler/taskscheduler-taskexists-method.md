@@ -2,7 +2,7 @@
 title: "TaskExists Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Exists :=   TaskScheduler.TaskExists(Task: Guid)
 ## Parameters
 *Task*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-The unique identifier of the task. The unique identifier is returned by the CREATETASK function.
+The unique identifier of the task. The unique identifier is returned by the CREATETASK method.
           
 
 

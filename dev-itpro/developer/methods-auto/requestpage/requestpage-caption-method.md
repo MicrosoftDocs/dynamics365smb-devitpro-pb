@@ -2,7 +2,7 @@
 title: "Caption Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 11/06/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Caption Method
-The caption shown in the title bar. For example, the default value in English (United States) is the same as the name of the page.
+Shows the caption in the title bar. For example, the default value in English (United States) is the same as the name of the page.
 
 ## Syntax
 ```

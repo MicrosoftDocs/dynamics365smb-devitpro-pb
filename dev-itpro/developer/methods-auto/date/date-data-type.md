@@ -32,8 +32,7 @@ The displayed text format of the date is determined by your Region and Language 
 The syntax for defining DateTime format follows the [ISO standard](https://en.wikipedia.org/wiki/ISO_8601). 
 - The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 26th of March, 2018.
 
- To assign a normal date to a variable, use the following format: `yyyymmddD`.
- To assign a closing date to a variable, use the [CLOSINGDATE method (Date)](../../methods/devenv-closingdate-method-date.md).  
+ To assign a normal date to a variable, use the following format: `yyyymmddD`. 
   
 ## Storing dates in the SQL server database  
  SQL Server stores information about both date and time in columns of the DATETIME types. For date fields, [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] uses only the date and uses a constant value for the time. For a normal date, this constant value contains 00:00:00:000. For a closing date, it contains 23:59:59:000.  

@@ -12,7 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
-redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
 
@@ -91,6 +90,5 @@ codeunit 10 StringifierWithOverloads
 
 ## See Also
 [AL Development Environment](../devenv-reference-overview.md)  
-[AL Data Types](../datatypes/devenv-al-data-types.md)   
-[Variant Data Type](../datatypes/devenv-variant-data-type.md)
+
 
