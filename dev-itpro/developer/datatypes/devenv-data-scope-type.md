@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: b179c72d-48ea-4015-bb76-c60a3b459c70
 caps.latest.revision: 21
 author: SorenGP
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # DataScope Data Type
 Isolated Storage is a data storage that provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions.

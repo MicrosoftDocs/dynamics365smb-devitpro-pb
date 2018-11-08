@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 96328bb5-ef6c-413f-9294-e18d6639d919
 caps.latest.revision: 12
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # ID Data Type
 Sets a unique numeric ID for this codeunit, table, page, report, XMLport, or control.  

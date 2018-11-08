@@ -48,14 +48,13 @@ For a simple code example of a list page, see [Simple Card Page Example](devenv-
 
 A document page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `Document`. A document page is also includes a `part()` control that embeds another page into the document page. This is typically that displays line items from the associated transaction or event.
 
-The following figure illustrates the general layout and elements of a card page and document page.
 ### Structure
 
-The following figure illustrates the general layout and elements of a list page.
+The following figure illustrates the general layout and elements of a card page and document page.
 
 ![Card and document page overview](media/card-document-page-overview.png "Card page overview")
 
-The following table describes the elements of a typical list page.
+The following table describes the elements.
 
 
 |    |Area|Description|Usage Guidelines|

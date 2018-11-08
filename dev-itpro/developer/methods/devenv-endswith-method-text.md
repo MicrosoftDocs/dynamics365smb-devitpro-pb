@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 620f0e32-eadc-43e9-8f6e-8fc0b12c3aaf
 manager: edupont
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
 # ENDSWITH Method

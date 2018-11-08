@@ -56,6 +56,7 @@ Which page type you choose depends on the application task that you want to supp
 |`StandardDialog`|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
 |`NavigatePage`|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
 |`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center. For more information, see [Creating a Role Center Headline](devenv-create-role-center-headline.md)|
+|`API`|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface.|
 
 > [!NOTE]  
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 

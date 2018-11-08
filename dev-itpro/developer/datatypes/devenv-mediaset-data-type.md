@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: f9d59da2-cc6c-43ae-8d67-3d0f123ab931
 caps.latest.revision: 4
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # MediaSet Data Type
 A complex type that encapsulates media, such as images, in application database tables. The **MediaSet** data type can be used as a table field data type, but cannot be used as variable or parameter.  
