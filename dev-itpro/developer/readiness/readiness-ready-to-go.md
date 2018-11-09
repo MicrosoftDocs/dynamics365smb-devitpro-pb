@@ -41,7 +41,7 @@ Please find the coaches in your region and explore which "Ready to Go" offerings
 |**Ciellos** <br>(Development Center)|Coaching and training services in person and online in Europe, North, and South America.|[ReadyToGo Contacts](http://www.ciellos.com/ready-to-go)|
 |**Cloud-Ready-Software**(Development Center)|Coaching and training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](http://cloud-ready-software.com/readytogo/)|
 |**Innova Consulting**<br>(Development Center)|Coaching and training services in person and online in Europe and South America.|[ReadyToGo Contacts](http://www.innovaconsulting.es/en/readytogo/)|
-|**QBS Group**<br>(MasterVAR)|Coaching and training services in person and online in Europe.|[ReadyToGo Contacts](https://www.qbsgroup.com/service/ready-to-go-for-dynamics-365-business-central/)|
+|**QBS Group**<br>(MasterVAR)|Coaching and training services in person and online in Europe, Middle East, and Africa.|[ReadyToGo Contacts](https://www.qbsgroup.com/service/ready-to-go-for-dynamics-365-business-central/)|
 |**Velosio**<br>(MasterVar)|Coaching and training services in person and online in North America.|[ReadyToGo Contacts](https://www.velosio.com/landing/readytogo/)|
 |**Plataan**<br>(Training Center)|Training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://plataan.tv/en)|
 

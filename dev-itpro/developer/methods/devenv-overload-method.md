@@ -90,6 +90,5 @@ codeunit 10 StringifierWithOverloads
 
 ## See Also
 [AL Development Environment](../devenv-reference-overview.md)  
-[AL Data Types](../datatypes/devenv-al-data-types.md)   
-[Variant Data Type](../datatypes/devenv-variant-data-type.md)
+
 
