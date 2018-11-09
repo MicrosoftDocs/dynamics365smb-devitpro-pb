@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 0b0cdfc3-6d6e-4580-9fa6-2e18d12bcec5
 caps.latest.revision: 11
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Time Data Type
 Denotes a time ranging from 00:00:00.000 to 23:59:59.999. An undefined or blank time is specified by 0T.  

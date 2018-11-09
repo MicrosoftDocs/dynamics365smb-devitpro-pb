@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 908a9650-99d8-41a4-a4e0-2eb0f718176a
 caps.latest.revision: 4
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # BigText Data Type
 This complex data type handles large text documents.  

@@ -10,6 +10,7 @@ ms.service: dynamics365-financials
 ms.assetid: 5a5f7b8b-d893-440d-bf2b-8d4e75d96b9c
 caps.latest.revision: 14
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  
