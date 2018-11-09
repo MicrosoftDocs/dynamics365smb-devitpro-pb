@@ -26,10 +26,18 @@ Your deployment must meet the following prerequisites:
     >The steps in this article are based on using the AD FS version on Windows Server 2016, but should also work with earlier versions of AD FS. Be aware that some dialog box references in the steps might be slightly different in earlier versions of AD FS.
 
 -  A working [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment that includes the following components:
-    -   [!INCLUDE[server](../developer/includes/server.md)]
-    -   [!INCLUDE[webserver](../developer/includes/webserver.md)] installed and configured to use SSL (https)
+    -   [!INCLUDE[server](../developer/includes/server.md)].
+        
+        The server must be configured with certificates. 
+    -   [!INCLUDE[webserver](../developer/includes/webserver.md)]
+
+        -    Installed and configured to use SSL (https)
+
+        -    Certificates
 
     -   [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (optional)
+
+        - Certificates 
     -   [!INCLUDE[admintool](../developer/includes/admintool.md)] (optional)
     -   [!INCLUDE[adminshell](../developer/includes/adminshell.md)] (optional)
 
@@ -64,23 +72,42 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
             ```
             https://<web-server-computer>:<port>/<webserver-instance>
             ```
+           or
+                
+            ```
+            https://<domain>/<webserver-instance>
+            ```
 
-           Replace `<webserver-instance>` with the instance name of the [!INCLUDE[webserverinstance](../developer/includes/webserverinstance.md)] as defined in IIS for your installation. Make sure that the case matches exactly. For example:
+            Replace `<webserver-instance>` with the instance name of the [!INCLUDE[webserverinstance](../developer/includes/webserverinstance.md)] as defined in IIS for your installation. Make sure that the case matches exactly. For example:
 
             ```
             https://MyWebServer:8080/BC130
             ```
-            Make 
+            or
+            ```
+            https://corp.sample.com/BC130
+            ```
+             
     -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], use base URL for the Web client, which is the full URL without the `/<webserver-instance>` part. This typically has the format:
 
         ```
         https://<web-server-computer>:<port>
         ```
-
+        
+        or
+                
+        ```
+        https://<domain>
+        ```
         For example:
 
         ```
         https://MyWebServer:8080
+        ```
+        or
+
+        ```
+        https://corp.sample.com/BC130
         ```
 
     Choose **Next** to continue.
@@ -88,13 +115,13 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
     >[!Note]
     >This is the URL to which AD FS will be allowed to issue authentication tokens.
 
-8.  In the **Configure Identifiers** step, in the **Relying party trust identifier** field, remove the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] URL, and then add one of the following URLs instead:
+8.  In the **Configure Identifiers** step, in the **Relying party trust identifier** field, remove the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] URL <!-- check-->, and then add a URL that identifies the client instead. You can use any value as long as it has the for https:\<name\>: 
 
-    -   If you are setting up AD FS for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], add the URL:
+    -   For example, if you are setting up AD FS for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], you could use the following URL:
         ```
-        https://dynamicsnavwebclient
+        https://bcwebclient
         ```
-    -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], add the URL:
+    -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], you could use add the URL:
         ```
         https://dynamicsnavwinclient
         ```
@@ -106,7 +133,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
 
 9.  In the **Choose Access Control Policy** step, setup multi-factor authentication if required, and then choose **Next**.
 10.  Review the configuration, and then choose **Next**.
-11. On the **Finish** step, select the **Configure claims issuance policy for the application** check box, and then choose **Next**.
+11. On the **Finish** step, select the **Configure claims issuance policy for the application** check box, and then choose **Close**.
 
 Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which are supported from AD FS 3.0 and later, you need to add different claims. Complete one of the following procedures for your token type.
 
@@ -159,8 +186,8 @@ To setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for ADFS auth
 
 The [!INCLUDE[server](../developer/includes/server.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], or by modifying the server instance's CustomSettings.config file directly.
 
-1.  Set the **Credential Type** (ClientServicesCredentialType) to ```NavUserPassword``` or ```AccessControlService```.
-    -   If you set this to ```NavUserPassword```, client users can use either NavUserPassword or claims based authentication to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The CustomSettings.config file should include the following line:
+1.  Set the **Credential Type** (ClientServicesCredentialType) to `NavUserPassword` or `AccessControlService`.
+    -   If you set this to `NavUserPassword`, client users can use either NavUserPassword or claims based authentication to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The CustomSettings.config file should include the following line:
 
         ```
         <add key="ClientServicesCredentialType" value="NavUserPassword"/>
@@ -170,41 +197,45 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
         ```
         <add key="ClientServicesCredentialType" value="AccessControlService"/>
         ```
-2.  Set the **WS-Federation Metadata Location** (ClientServicesFederationMetadataLocation) to the URL that defines the federation metadata XML document for your AD FS. The URL has the following format:
+2.  For the Web client only, set the **WS-Federation Metadata Location** (ClientServicesFederationMetadataLocation) to the URL that defines the federation metadata XML document for your AD FS. The URL has the following format:
 
     ```
     https://<Public URL for AD FS server>/federationmetadata/2007-06/federationmetadata.xml
     ```
 
-    Replace `<Public URL for AD FS server>` with the URL for your installation.
-
-    When you are done, the CustomSettings.config file should include the following key:
+    Replace `<Public URL for AD FS server>` with the URL for your installation. For example:
 
     ```
-    <add key="ClientServicesFederationMetadataLocation" value="https://<Public URL for AD FS server>/federationmetadata/2007-06/federationmetadata.xml"/>
+    https://corp.sample.com/federationmetadata/2007-06/federationmetadata.xml
     ```
+
     >[!NOTE]
     >This URL must to be accessible from a browser on the computer running the [!INCLUDE[server](../developer/includes/server.md)].
 
-3.  To set up the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set the **WSFederationLoginEndpoint** (WSFederationLoginEndpoint) to point to the AD FS login page for authenticating users.
-
-    For example, the CustomSettings.config file should include the following key:
+3.  For the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set the **WSFederationLoginEndpoint** (WSFederationLoginEndpoint) to point to the AD FS login page for authenticating users.
 
     ```
-    <add key="WSFederationLoginEndpoint" value="https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwebclient%26wreply=<Business Central Web Client URL>/SignUp" />
+    https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=<Relying party trust identifier>%26wreply=<Business Central Web Client URL>/SignUp" />
     ```
 
     Replace `<Public URL for AD FS server>` with the URL for your installation.
 
-    Replace `<Business Central Web Client URL>` with the full URL for your Web client, such as `https://MyWebServer:8080/BC130`. This is same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the client in AD FS. Make sure that the case matches exactly.
+    Replace `<Relying party trust identifier>` with the exact value that was specified as the  **Relying party trust identifier** in the previously.  
 
+    Replace `<Business Central Web Client URL>` with the exact value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the client in AD FS. Make sure that the case matches exactly.
+
+    For example:
+
+    ```
+    https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcvwebclient%26wreply=https://https://corp.sample.com/BC130/SignUp
+    ```
 
 4.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
     >[!TIP]
     >You can use the [Set-NAVServerInstance cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerInstance) to restart the service instance.
 
-### [!INCLUDE[webserver](../developer/includes/webserver.md)] setup
+### Set up the [!INCLUDE[webserver](../developer/includes/webserver.md)]
 You configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] by modifying it's [navsettings.json configuration file](configure-web-server.md#WebClientSettingsFile).
 
 Change the **ClientServicesCredentialType** setting to `AccessControlService` as shown:
@@ -218,7 +249,7 @@ The configuration changes are automatically picked up by the Internet Informatio
 >[!TIP]
 >Instead of re-configuring the existing web client, consider using the [New-NAVWebServerInstance cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to add an additional web server instance, and leave the existing instance running NavUserPassword authentication.
 
-### Dynamic NAV Windows client setup (optional)
+### Set up the Dynamic NAV Windows client (optional)
 You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file for each client installation.
 
 1.  Set the **ClientServicesCredentialType** to `AccessControlService` as shown:
@@ -235,6 +266,13 @@ You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md
     ```
 
     Replace `<Business Central Web Client URL without Web server instance>` with the same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] in AD FS.
+
+    For example:
+
+    ```
+    <add key="ACSUri" value="https://corp.sample/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwinclient%26wreply=<Business Central Web Client URL without Web server instance>" />
+    ```
+    <!-- Check whether you need the reply>
 
 3. Restart the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].
 
