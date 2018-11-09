@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Creating and Managing [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell
+# Setting Up Multiple [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell
 
 Although you can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] and create a single web server instance in IIS for client connection, there may be scenarios when you want to set up multiple instances. For example, you could set up a separate [!INCLUDE[webserver](../developer/includes/webserver.md)] instance for the different companies of a business. For this scenario, you can use the [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets, which are outlined in the following table.
 
 |Cmdlet|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|
 |------------|---------------------------------------|
-|[New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/new-navwebserverinstance)|Creates a new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance and binds this instance to a [!INCLUDE[server](../developer/includes/server.md)] instance. |
-|[Set-NAVWebServerInstanceConfiguration](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVWebServerInstanceConfiguration)|Specifies configuration values for a named [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.|
-|[Get-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Get-NAVWebServerInstance)|Gets the information about the [!INCLUDE[webserver](../developer/includes/webserver.md)] instances that are registered on a computer.|
-|[Remove-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Remove-NAVWebServerInstance)| Removes an existing [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.|  
+|[New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/navwebclientmanagement/New-NAVWebServerInstance)|Creates a new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance and binds this instance to a [!INCLUDE[server](../developer/includes/server.md)] instance. |
+|[Set-NAVWebServerInstanceConfiguration](https://docs.microsoft.com/en-us/powershell/module/navwebclientmanagement/Set-NAVWebServerInstanceConfiguration)|Specifies configuration values for a named [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.|
+|[Get-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/navwebclientmanagement/Get-NAVWebServerInstance)|Gets the information about the [!INCLUDE[webserver](../developer/includes/webserver.md)] instances that are registered on a computer.|
+|[Remove-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/navwebclientmanagement/Remove-NAVWebServerInstance)| Removes an existing [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.|  
 
 ## <a name="GetStartedWebServerCmdlets"></a>Get started with the [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets 
 
@@ -67,7 +67,7 @@ A *RootSite* instance is a root-level web site that is complete with content fil
 
 ```
 - Sites
-  - DynamicsNAVWebInstance (web site)
+  - BusunessCentralWebSite (web site)
     + nn-NN (language versions)
     + www (content)
     navsettings.json
@@ -103,7 +103,7 @@ The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] URL of a SubSite in
 
 `http://[WebserverComputerName]:[port]/[WebServerInstance]`
 
-For example: `http://localhost:8080/DynamicsNAVWebInstance1` and `http://localhost:8080/DynamicsNAVWebInstance2`. 
+For example: `http://localhost:8080/BusinessCentralWebInstance1` and `http://localhost:8080/BusinessCentralWebInstance2`. 
 
 ### Run the New-NAVWebServerInstance cmdlet
 
@@ -117,7 +117,7 @@ RootSite example:
 SubSite example:
 
     ```  
-    New-NAVWebServerInstance -WebServerInstance MyWebApp -Server MyBCServer -ServerInstance MyBCServerInstance -SiteDeploymentType Subsite -ContainerName MySiteContainer -WebSitePort 8081 -PublisherFolder "C:\WebClient\WebPublish"
+    New-NAVWebServerInstance -WebServerInstance MyWebApp -Server MyBCServer -ServerInstance MyBCServerInstance -SiteDeploymentType Subsite -ContainerSiteName MySiteContainer -WebSitePort 8081 -PublishFolder "C:\WebClient\WebPublish"
     ```  
 
 -  Susbtitute *MyBCWebsite* with the name that you want to give the web application in IIS for the web server instance. If you are creating a SubSite deployment type, this name will become part of the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] application, for example, http://MyWebServer:8081/MyWebApp.  
@@ -133,9 +133,10 @@ SubSite example:
 -  Substitute *C:\WebClient\WebPublish* with the path to your WebPublish folder. By default, the cmdlet looks in the'[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client' folder. So if you are working on a computer where the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] are installed, you do not have to set this parameter.
 
 > [!NOTE]  
->  This command only sets the required parameters of the NAVWebServerInstance cmdlet. The cmdlet has several other parameters that can use to configure the web server instance. For more information about the syntax and parameters, see [New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance).  
+>  This command only sets the required parameters of the NAVWebServerInstance cmdlet. The cmdlet has several other parameters that can use to configure the web server instance. For more information about the syntax and parameters, see [New-NAVWebServerInstance](https://docs.microsoft.com/en-us/powershell/module/navwebclientmanagement/New-NAVWebServerInstance).  
 
-## Modifying a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance  
+## Modifying a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance
+ 
 After you create the web server instance, if you want to change its configuration, you can use the Set-NAVWebServerInstanceConfiguration cmdlet. Or, you can modify the configuration file (navsettings.json) of the instance directly. For more information, see [Configuring Web Server Instances](../administration/configure-web-server.md).  
 
 ## See Also  

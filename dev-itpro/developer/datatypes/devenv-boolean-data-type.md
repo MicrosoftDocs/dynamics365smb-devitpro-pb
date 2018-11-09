@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 5ec790ef-91f3-403d-93d3-dd3cac2bb9fc
 caps.latest.revision: 8
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Boolean Data Type
 Indicates **true** or **false**.     

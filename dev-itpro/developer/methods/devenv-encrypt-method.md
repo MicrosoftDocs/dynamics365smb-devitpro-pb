@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: cf02c46d-2ee2-4d90-9331-518abac5d83a
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  
@@ -37,9 +38,7 @@ String := ENCRYPT(Str)
  The output string that is encrypted.  
 
 ## Exceptions  
- If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.  
-
-## Remarks  
+ If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.   
 
 ## Example  
  The code example requires that you create the following text constant in the **C/AL Globals** window.  
