@@ -158,24 +158,25 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 
 ### Set up support for JSON Web tokens (JWT)
 
-1.  In the **Edit Claim Rules** dialog box, choose **Add Rule**.
+1.  Choose the **Edit Claims Issuance Policy** action.
+2.  In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
     ![AD FS Edit Claims Rule](../media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
-2.  In the **Select Rule Template** step, choose **Send Claims Using a Custom Rule** template, and then choose **Next**.
-3. Set the **Claim rule name** to `name`, and the  **Custom rule** to:
+3.  In the **Select Rule Template** step, choose **Send Claims Using a Custom Rule** template, and then choose **Next**.
+4. Set the **Claim rule name** to `name`, and the  **Custom rule** to:
 
     ```
     c:[Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"] => issue(Type = "unique_name", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
-4. Repeat steps 1 to 3 to add another custom rule, and set the **Claim rule name** to ```objectidentifier```, and the **Custom rule** to:
+5. Repeat steps 1 to 3 to add another custom rule, and set the **Claim rule name** to `objectidentifier`, and the **Custom rule** to:
 
     ```
     c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
-5.  Close the **Edit Claim Rules** dialog box.
+6.  Close the **Edit Claim Rules** dialog box.
 
     ![AD FS Edit Claims Rule Done](../media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
-1.  Start Window Powershell, and run the following command to define the token type for the relying party to be JWT:
+7.  Start Window Powershell, and run the following command to define the token type for the relying party to be JWT:
 
     ```
     Set-ADFSRelyingPartyTrust –TargetIdentifier "Web Client URL" –EnableJWT $true
