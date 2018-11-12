@@ -28,23 +28,24 @@ Your deployment must meet the following prerequisites:
 -  A working [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment that includes the following components:
     -   [!INCLUDE[server](../developer/includes/server.md)].
         
-        The server must be configured with certificates. 
-    -   [!INCLUDE[webserver](../developer/includes/webserver.md)]
+    -   [!INCLUDE[webserver](../developer/includes/webserver.md)].
 
-        -    Installed and configured to use SSL (https)
-
-        -    Certificates
+        The web server instance must be configured to use SSL (https) for client connections. For more information, see [Configuring SSL to Secure the Business Central Web Client Connection](../deployment/configure-ssl-web-client-connection.md)
 
     -   [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (optional)
 
-        - Certificates 
     -   [!INCLUDE[admintool](../developer/includes/admintool.md)] (optional)
     -   [!INCLUDE[adminshell](../developer/includes/adminshell.md)] (optional)
 
+    >[!Important]
+    > The deployment must be configured with security certificates to secure remote connections. For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).
+
 ## Configure AD FS to allow [!INCLUDE[prodshort](../developer/includes/prodshort.md)] authentication
+
 These steps are done by using the AD FS Management console on the server where AD FS is running.
 
 ### Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients
+
 You must complete these steps separately for [!INCLUDE[webserver](../developer/includes/webserver.md)] for the Web client and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].
 
 1.  Open **Server Manager** on the computer that is running AD FS, choose **AD FS** > **Tools** > **AD FS Management**.
@@ -138,6 +139,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
 Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which are supported from AD FS 3.0 and later, you need to add different claims. Complete one of the following procedures for your token type.
 
 ### Set up support for SAML 1.0 tokens
+
 1. Choose the **Edit Claims Issuance Policy** action.
 2. In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
