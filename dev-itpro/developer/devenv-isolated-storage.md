@@ -24,4 +24,4 @@ The methods supported for the DataScope option type are:
 |Delete(String, [DataScope])|Deletes the value with the specified key from the isolated storage within the extension.|[ISOLATEDSTORAGE.DELETE Method](methods-auto/isolatedstorage/isolatedstorage-delete-method.md)|  
 
 ## See Also  
-[DataScope Data Type](methods-auto/datascope/datascope-option.md)
+[DataScope Option Type](methods-auto/datascope/datascope-option.md)
