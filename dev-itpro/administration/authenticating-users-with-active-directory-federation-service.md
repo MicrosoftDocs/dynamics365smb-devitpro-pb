@@ -115,7 +115,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
     >[!Note]
     >This is the URL to which AD FS will be allowed to issue authentication tokens.
 
-8.  In the **Configure Identifiers** step, in the **Relying party trust identifier** field, remove the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] URL <!-- check-->, and then add a URL that identifies the client instead. You can use any value as long as it has the for https:\<name\>: 
+8.  In the **Configure Identifiers** step, in the **Relying party trust identifier** field, remove the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] URL <!-- check-->, and then add a URL that identifies the client instead. You can use any value as long as it has the for format `https:<name>`: 
 
     -   For example, if you are setting up AD FS for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], you could use the following URL:
         ```
@@ -160,7 +160,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 
     ![AD FS Edit Claims Rule](../media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
 2.  In the **Select Rule Template** step, choose **Send Claims Using a Custom Rule** template, and then choose **Next**.
-3. Set the **Claim rule name** to ```name```, and the  **Custom rule** to:
+3. Set the **Claim rule name** to `name`, and the  **Custom rule** to:
 
     ```
     c:[Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"] => issue(Type = "unique_name", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
@@ -171,8 +171,9 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
     c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
 5.  Close the **Edit Claim Rules** dialog box.
+
     ![AD FS Edit Claims Rule Done](../media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
-6.  Start Window Powershell, and run the following command to define the token type for the relying party to be JWT:
+1.  Start Window Powershell, and run the following command to define the token type for the relying party to be JWT:
 
     ```
     Set-ADFSRelyingPartyTrust –TargetIdentifier "Web Client URL" –EnableJWT $true
@@ -186,7 +187,9 @@ To setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for ADFS auth
 
 The [!INCLUDE[server](../developer/includes/server.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], or by modifying the server instance's CustomSettings.config file directly.
 
-1.  Set the **Credential Type** (ClientServicesCredentialType) to `NavUserPassword` or `AccessControlService`.
+1. Clear the **Disable Token-Signing Certificate Validation** check box (In the CustomSettings.config file, you set the `DisableTokenSigningCertificateValidation` value to `true`.) 
+
+2.  Set the **Credential Type** (ClientServicesCredentialType) to `NavUserPassword` or `AccessControlService`.
     -   If you set this to `NavUserPassword`, client users can use either NavUserPassword or claims based authentication to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The CustomSettings.config file should include the following line:
 
         ```
@@ -197,7 +200,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
         ```
         <add key="ClientServicesCredentialType" value="AccessControlService"/>
         ```
-2.  For the Web client only, set the **WS-Federation Metadata Location** (ClientServicesFederationMetadataLocation) to the URL that defines the federation metadata XML document for your AD FS. The URL has the following format:
+3.  For the Web client only, set the **WS-Federation Metadata Location** (ClientServicesFederationMetadataLocation) to the URL that defines the federation metadata XML document for your AD FS. The URL has the following format:
 
     ```
     https://<Public URL for AD FS server>/federationmetadata/2007-06/federationmetadata.xml
@@ -212,7 +215,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     >[!NOTE]
     >This URL must to be accessible from a browser on the computer running the [!INCLUDE[server](../developer/includes/server.md)].
 
-3.  For the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set the **WSFederationLoginEndpoint** (WSFederationLoginEndpoint) to point to the AD FS login page for authenticating users.
+4.  For the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set the **WSFederationLoginEndpoint** (WSFederationLoginEndpoint) to point to the AD FS login page for authenticating users.
 
     ```
     https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=<Relying party trust identifier>%26wreply=<Business Central Web Client URL>/SignUp" />
@@ -229,8 +232,9 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     ```
     https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcvwebclient%26wreply=https://https://corp.sample.com/BC130/SignUp
     ```
+5. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the relying party trust identifier, for example `https://dynamicsnavwindows client`.
 
-4.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
+6.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
     >[!TIP]
     >You can use the [Set-NAVServerInstance cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerInstance) to restart the service instance.
@@ -270,7 +274,7 @@ You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md
     For example:
 
     ```
-    <add key="ACSUri" value="https://corp.sample/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwinclient%26wreply=<Business Central Web Client URL without Web server instance>" />
+    <add key="ACSUri" value="https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwinclient%26wreply=https://corp.sample.com" />
     ```
     <!-- Check whether you need the reply>
 
@@ -278,7 +282,7 @@ You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md
 
 
 ### [!INCLUDE[prodshort](../developer/includes/prodshort.md)] User setup
-You must map the user accounts in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to corresponding user accounts in AD FS. The mapping is based on the User Principal Name (UPN) that is assigned to the user in Active Directory. The UPN is the user's name in email address format, such as ```username@realm```.
+You must map the user accounts in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to corresponding user accounts in AD FS. The mapping is based on the User Principal Name (UPN) that is assigned to the user in Active Directory. The UPN is the user's name in email address format, such as `username@corp.sample.com`.
 
 You can do this by using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. Open the **User Card** page for a user, and then in the **Office 365 Authentication** section, set the **Authentication Email** field to the UPN of the AD FS user.
 
