@@ -12,16 +12,16 @@ caps.latest.revision: 21
 author: SorenGP
 ---
 # Isolated Storage
-Isolated Storage is a data storage that provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. Keys/values in the Isolated Storage are accessible through an API. The involved data type is DataScope.
+Isolated Storage is a data storage that provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. Keys/values in the Isolated Storage are accessible through an API. The involved option type is DataScope.
 
-The methods supported for the DataScope data type are:
+The methods supported for the DataScope option type are:
 
 |Method|Description|For more information, see|  
 |--------------|-----------------|-------------------------------|  
-|ISOLATEDSTORAGE.SET|Sets the value associated with the specified key within the extension.|[ISOLATEDSTORAGE.SET Method](methods/devenv-isolated-storage-set.md)|  
-|ISOLATEDSTORAGE.GET|Gets the value associated with the specified key within the extension.|[ISOLATEDSTORAGE.GET Method](methods/devenv-isolated-storage-get.md)|  
-|ISOLATEDSTORAGE.CONTAINS|Determines whether the storage contains a value with the specified key within the extension.|[ISOLATEDSTORAGE.CONTAINS Method](methods/devenv-isolated-storage-contains.md)|  
-|ISOLATEDSTORAGE.DELETE|Deletes the value with the specified key from the isolated storage within the extension.|[ISOLATEDSTORAGE.DELETE Method](methods/devenv-isolated-storage-delete.md)|  
+|Set(String, String, [DataScope])|Sets the value associated with the specified key within the extension.|[Set(String, String, [DataScope]) Method](methods-auto/isolatedstorage/isolatedstorage-set-method.md)|  
+|Get(String, [DataScope], var Text)|Gets the value associated with the specified key within the extension.|[Get(String, [DataScope], var Text) Method](methods-auto/isolatedstorage/isolatedstorage-get-string-datascope-text-method.md)|  
+|Contains(String, [DataScope])|Determines whether the storage contains a value with the specified key within the extension.|[Contains(String, [DataScope]) Method](methods-auto/isolatedstorage/isolatedstorage-contains-method.md)|  
+|Delete(String, [DataScope])|Deletes the value with the specified key from the isolated storage within the extension.|[ISOLATEDSTORAGE.DELETE Method](methods-auto/isolatedstorage/isolatedstorage-delete-method.md)|  
 
 ## See Also  
-[DataScope Data Type](datatypes/devenv-data-scope-type.md)
+[DataScope Data Type](methods-auto/datascope/datascope-option.md)
