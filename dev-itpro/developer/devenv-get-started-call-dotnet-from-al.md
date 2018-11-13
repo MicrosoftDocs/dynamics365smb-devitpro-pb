@@ -3,7 +3,7 @@ title: "Getting started with Microsoft .NET Interoperability from AL"
 description: "Description of the process of referencing and using .NET types"
 author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/13/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,13 +13,10 @@ ms.author: solsen
 ---
 
 # Getting started with Microsoft .NET Interoperability from AL
-> [!IMPORTANT]  
-> [!INCLUDE[vnext_preview](includes/vnext_preview.md)]
-
 You can call .NET type members, including methods, properties, and constructors, from AL code. In this article we will guide you through the process of creating an extension that uses .NET types.
 
 > [!IMPORTANT]  
-> .NET Interoperability is only available on-premise.
+> .NET Interoperability is only available on-premise. If you want to use this functionality, you must set the `"target": "Internal"` in the app.json file. For more information, see [JSON Files](devenv-json-files.md). 
 
 ## Enabling .NET Interoperability
 .NET interoperability can only be used by applications that target on-premise deployments. See [JSON Files](devenv-json-files.md) for more information on how to set the correct compilation target.

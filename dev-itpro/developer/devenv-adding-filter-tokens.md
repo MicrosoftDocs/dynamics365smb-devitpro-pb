@@ -23,12 +23,15 @@ You can add custom filter tokens and make these available in any language and ac
 To create the desired token word, start by defining a multi-language text string for your word. Subscribe to the `OnBeforeMakeTextFilter` or `OnAfterMakeTextFilter` events associated with the `MakeTextFilter` method from the `TextManagement` codeunit.  
 In the event subscriber, if the value of the `TextFilterText` parameter contains the token string proceed to process its value and construct the final filter string. If the filter string must contain multiple values, you must handle the operators that join them together, by inserting the `|` filter symbol (OR operation). Complete the operation by setting the value of the `TextFilterText` parameter to the value of the final filter string.
 
-> [!TIP]
-> Filter criteria will often contain symbols along with filter tokens. Modifying the rest of the text parameter could result in undesirable filter criteria.
+> [!TIP]  
+> Filter criteria will often contain symbols along with filter tokens. It is recommended that you only modify the filter token you have introduced and preserve the rest of the filter string. 
 
 ## Example 
 
-The following example shows how you can use the guidelines above to create the %MYTOKEN filter token. This will return a filter with the accounts marked as **favorite** by the user. 
+This example shows how you can use the guidelines above to create the **%MYTOKEN** filter token. This will return a filter with the accounts marked as favorite by the user. 
+
+> [!NOTE]  
+> To keep this sample short and simple, the entire filter string is overwritten.
 
 ```
 codeunit 50101 MyAccountFilterTokenSimple
@@ -60,7 +63,7 @@ codeunit 50101 MyAccountFilterTokenSimple
 }
 
 ```
-To try it out in the client, open the `Charts of Accounts` page, filter on No. field, and type in a substring that starts the same way with the chosen token word, like %MYTO.
+To try it out in the client, open the `Charts of Accounts` page, filter on No. field, and type in a substring that starts the same way with the chosen token word, like **%MYTO**.
 
 <!--
 ## Filter token example
