@@ -15,9 +15,6 @@ author: SusanneWindfeldPedersen
 
 # Field Groups
 
-> [!IMPORTANT]  
-> [!INCLUDE[vnext_preview](includes/vnext_preview.md)]
-
 A field group in table or table extension objects defines the fields to display in a drop-down control on pages that use the table and fields that display when these pages are shown in the tile view.
 
 In a table object, you define field groups by first adding a `fieldgroups` control, and then adding one or more `fieldgroup(<Name>; <Field>` keyword for each group, where:

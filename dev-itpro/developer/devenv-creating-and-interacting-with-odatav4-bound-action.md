@@ -14,9 +14,6 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-> [!IMPORTANT]  
-> [!INCLUDE[vnext_preview](includes/vnext_preview.md)]
-
 # Creating and Interacting with an OData V4 Bound Action
 
 This topic provides an overview of how to expose a procedure as an OData V4 web service action and how to verify that the service is working as expected.
