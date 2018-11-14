@@ -10,6 +10,7 @@ ms.service: dynamics365-financials
 ms.assetid: 8b0806a4-0972-483a-a356-7298708925e5
 author: SusanneWindfeldPedersen
 manager: edupont
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  

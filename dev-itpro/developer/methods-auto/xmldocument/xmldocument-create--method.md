@@ -1,0 +1,35 @@
+---
+title: "Create Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 11/02/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# Create Method
+Creates an XmlDocument.
+
+## Syntax
+```
+XmlDocument :=   XmlDocument.Create()
+```
+
+
+## Return Value
+*XmlDocument*  
+&emsp;Type: [XmlDocument](xmldocument-data-type.md)  
+The created XmlDocument node.  
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## See Also
+[XmlDocument Data Type](xmldocument-data-type.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

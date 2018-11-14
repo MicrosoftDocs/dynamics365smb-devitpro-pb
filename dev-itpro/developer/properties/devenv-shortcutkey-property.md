@@ -12,19 +12,18 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
- 
+ # ShortCutKey Property
+Sets a shortcut key for selecting an action.
+  
+  
+## Applies To
 
-# ShortCutKey Property
-Sets a shortcut key for selecting a menu item.  
-  
-## Applies To  
-  
--   Menu items  
-  
--   Pages  
-  
+-  Actions on pages.  
+
+This property only applies to the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. The property is ignored in the Web client.
+
 ## Remarks  
- Pressing the key you designate with this property provides the same result as clicking the item.  
+Pressing the key that you designate with this property provides the same result as selecting the action.  
   
 > [!NOTE]  
 >  Some shortcut keys have default assignments. Do not reuse shortcut keys that are already assigned.  

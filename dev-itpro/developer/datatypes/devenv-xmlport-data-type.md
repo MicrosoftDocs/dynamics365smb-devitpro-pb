@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 7ecd68ee-5574-40ee-8738-a05e2d1f6b24
 caps.latest.revision: 12
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # XMLport Data Type
 You use XMLports to import and export data in .xml, .csv, or .txt format. XMLports make the process of exchanging data in XML between systems more simple and streamlined. You only need a basic knowledge of XML and you do not have to create XML documents using external products.  

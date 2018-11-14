@@ -8,7 +8,9 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
+
 ---
+
 # BusinessEvent Attribute
 Specifies the method to be business type event publisher.
 

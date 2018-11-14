@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: dynamics365-financials
 ms.assetid: f7a4a790-11a9-4dc3-a258-d0bd5dc3b5f1
 caps.latest.revision: 9
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  

@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: c702a57a-726f-43ec-978f-cabd2131a0ea
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # TestPage Data Type
 Stores test pages. A test page is a logical representation of a page that does not display a user interface (UI). The subtype of a test page is the page that it is used to test.  

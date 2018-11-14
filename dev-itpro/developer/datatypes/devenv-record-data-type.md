@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 35134e00-91e7-4d0d-a64e-94dcc1cd5946
 caps.latest.revision: 5
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Record Data Type
 This complex data type corresponds to a row in a table. Each record consist of fields that form the columns of the table. A record is typically used to hold information about a fixed number of properties.  
