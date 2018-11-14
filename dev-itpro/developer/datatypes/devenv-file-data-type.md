@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: e69359b6-5b74-46c2-88ac-2d98f48a9d38
 caps.latest.revision: 12
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # File Data Type
 The File data type gives access to files. Files can be opened in text or binary mode. For more information, see [TEXTMODE method (File)](../methods/devenv-textmode-method-file.md).  

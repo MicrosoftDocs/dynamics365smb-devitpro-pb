@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 75b2a3a2-d2e6-4099-980c-1f4a343c79b6
 caps.latest.revision: 7
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Page Data Type
 This complex data type stores pages.  

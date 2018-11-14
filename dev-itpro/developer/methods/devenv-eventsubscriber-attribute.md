@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
+
 # EventSubscriber Attribute
 Specifies the method to be integration type event subscriber.
 

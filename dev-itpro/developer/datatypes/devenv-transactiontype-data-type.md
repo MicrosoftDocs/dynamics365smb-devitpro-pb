@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 077f3272-7f80-43a0-8437-6dda48f65f42
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # TransactionType Data Type
 Use variables of this complex data type to store the current transaction type. You can then use the value to set the transaction type. You can only change the transaction type when there is no current transaction (immediately after a commit).  

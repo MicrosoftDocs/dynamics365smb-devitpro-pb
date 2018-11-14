@@ -153,7 +153,7 @@ After you have completed the merge, you import the new merged application object
     For example, give the database the name *My Upgraded App*. For more information, see [Creating and Altering Databases](../cside/cside-create-databases.md).
 
     >[!IMPORTANT]  
-    > You must set the collation of the new database to match the collation of the old application database. To see the collation of the old database, open the database in [[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], then choose **File** > **Database** > **Alter** > **Collation**. 
+    > You must set the collation of the new database to match the collation of the old application database. To see the collation of the old database, open the database in the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], then choose **File** > **Database** > **Alter** > **Collation**. 
 
 2.  Make sure the database includes a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.
 
