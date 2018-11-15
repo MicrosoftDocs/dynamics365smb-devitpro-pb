@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: dynamics365-financials
+ms.service: dynamics365-business-central
 ms.assetid: eb1af7a5-2630-4bb2-b3b4-49898582e90f
 caps.latest.revision: 12
 manager: edupont

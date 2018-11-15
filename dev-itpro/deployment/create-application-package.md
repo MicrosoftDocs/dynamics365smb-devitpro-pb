@@ -1,21 +1,22 @@
 ---
-title: "Creating a deployable package for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online"
+title: "Creating a deployable package for Business Central online"
+description: You can move your on-premises deployment of Dynamics NAV or Business Central to the cloud.
+author: jswymer
+
 ms.custom: na
-ms.date: 10/01/2018
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
+ms.author: jswymer
+ms.date: 10/01/2018
 ---
-# Moving from Dynamics NAV On-premise to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online 
-This article describes you can move your on-premise [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, including the application and its tenants, to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. 
+# Moving from Dynamics NAV On-premises to Business Central Online
+This article describes you can move your on-premise [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, including the application and its tenants, to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online.
 
 ## Prerequisites
 To complete the tasks in this article, you will need the following:
 
--   The installation media (DVD) for the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version. 
+-   The installation media (DVD) for the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version.
 
     Download the version from [Microsoft Collaborate](https://developer.microsoft.com/en-us/dashboard/collaborate/packages).
 
@@ -47,34 +48,34 @@ To complete the tasks in this article, you will need the following:
 2. Optionally, upgrade your application to the new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application.
 
     You only have to complete this step if you want any new application features that are part of the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version.
-    
+
     For more information, see [Upgrading the Application Code in Dynamics NAV](https://docs.microsoft.com/en-us/dynamics-nav/upgrading-the-application-code).
 
 3. Complete the following steps as needed:
-    
-    1.  Import any new control add-ins that you want to use into the application database. 
+
+    1.  Import any new control add-ins that you want to use into the application database.
 
         Import any client-side and server-side add-ins (such as control add-ins and .NET Framework Interoperability objects) which are not included by default into the old application database.
-    
+
         For more information, see [To import the control add-in to the database](/dynamics-nav/how-to--install-a-windows-client-control-add-in-assembly#InstallOnDatabase).
 
     2. Import test automation objects.
     3. Publish and synchronize any new V2 extensions that you want in application that are not already published.
 
         For more information, see [Publishing and Installing an Extension v2.0](../developer/devenv-how-publish-and-install-an-extension-v2.md).
-    
+
 4. Test and validate the upgraded application on-premise.
 
 
 ## Prepare the application and tenant databases
 
-1. Separate the old database into two databases: the application database and the tenant database. 
+1. Separate the old database into two databases: the application database and the tenant database.
 
-    This step is only necessary if your database is not already separated into an application database and tenant database. 
-    
+    This step is only necessary if your database is not already separated into an application database and tenant database.
+
     You do this by using the [!INCLUDE[nav_dev_shell_md](../developer/includes/nav_dev_shell_md.md)]. For more information, see [How to: Export the Application Tables to a Dedicated Database](how-to--export-the-application-tables-to-a-dedicated-database.md).
 
-2.  For application and tenant database, remove all users except the default users like, dbo, guest, INFORMATION,SCHEMA, and sys. 
+2.  For application and tenant database, remove all users except the default users like, dbo, guest, INFORMATION,SCHEMA, and sys.
 
      Use SQL Server Management Studio to remove any previous database users that are assigned to these databases. This includes the service account that was used by the Microsoft Dynamics NAV Server to connect to the database (for example, the [NT AUTHORITY\NETWORK SERVICE] account).
 
@@ -101,7 +102,7 @@ To complete the tasks in this article, you will need the following:
     You can perform this work manually by using SQL Server Management Studio to connect to the databases and make the modifications directly. Or, you can use Windows PowerShell.
 
     To use Windows Powershell, you can run the following cmdlets:
- 
+
     ```
     $DBServerInstance = ‘[YOUR SQL SERVER INSTANCE NAME]’  
     $DatabaseName = ‘[YOUR DB NAME]’
@@ -118,7 +119,7 @@ When you deploy your application online, you must provide a compressed .zip file
 2.	In **Object Explorer**, right-click either the application or tenant database, choose **Task**, and then choose **xport Data-tier Application**.
 3.	Follow the steps in the **Export Data-tier Application** wizard to export the database to a .bacpac file on your computer or network.
 
-    You can use any name for the .bacpac file. 
+    You can use any name for the .bacpac file.
 4.  Repeat steps 2 and 3 for the other database.
 
     For more information about exporting databases to .bacpac format, see [Export a Data-tier Application](https://msdn.microsoft.com/en-us/library/Hh213241.aspx).
@@ -127,7 +128,7 @@ When you deploy your application online, you must provide a compressed .zip file
 
 ## Upload the deployable package to the Dynamics Lifecycle Services (LCS)
 
-To upload your deployable package, you will create a project in LCS. 
+To upload your deployable package, you will create a project in LCS.
 
 1. Sign-in to LCS from [https://lcs.dynamics.com/v2](https://lcs.dynamics.com/logon/index).
 2. On the **Getting Started** page, under Recent Projects or All Projects, select **+**.
@@ -143,7 +144,7 @@ To upload your deployable package, you will create a project in LCS.
     |Country|Set this to the country where your solution will be published.|
     |Import roles and users from existing LCS project|No|
 
-5. Select **Create**. 
+5. Select **Create**.
 
     Your project is created and its home page opens.
 6. Select **Asset Library**.
@@ -152,7 +153,7 @@ To upload your deployable package, you will create a project in LCS.
 
      ![Shows the Asset Library in the LCS portal](../media/LCSAssetLibrary.png "Shows the Asset Library in the LCS portal")  
 8. In the **Upload Software deployable package file** box, enter a name, select **Add a file**.
-9. In the **Upload file asset** box, select **Browse** > *select your deployable package* > **Open** > **Upload**. 
+9. In the **Upload file asset** box, select **Browse** > *select your deployable package* > **Open** > **Upload**.
 
     When the file has been uploaded, go to the nect step to assign the project to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user for processing.
 
@@ -162,4 +163,3 @@ To upload your deployable package, you will create a project in LCS.
      ![Shows the users assigned to a project in the LCS portal](../media/LCSProjectUsers.png "Shows the users assigned to a project in the LCS portal")  
 
 12. In the **Invite user** box, use the **User lookup** field to find the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user or enter the email address directly in the **Email** field, and then select **Invite**.  
-
