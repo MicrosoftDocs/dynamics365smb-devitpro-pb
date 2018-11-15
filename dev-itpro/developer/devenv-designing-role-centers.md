@@ -88,8 +88,7 @@ The following table describes some of the most common parts for Role Centers, as
 
 ## Using the Role Center in the client
 
-To view a new Role Center in the client, you must use the client to associate the Role Center page with a profile, and then change the client's Role Center setting under **My Settings**. For more information, see [Create Profile](/dynamics365/business-central/admin-users-profiles-roles#CreateProfile).
-
+To view a new Role Center in the client, you must first use the client to associate the Role Center page with a profile. Then, you go to **My Settings** and change the  **Role Center** to point to the new profile. For more information, see [Create Profile](/dynamics365/business-central/admin-users-profiles-roles#CreateProfile).
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
