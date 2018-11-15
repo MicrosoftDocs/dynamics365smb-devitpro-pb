@@ -40,7 +40,7 @@ The RecordRef that refers to a record in a table.
 
 ## Remarks  
 
-After the EXECUTE method is executed, the system does not automatically clear the variable. You must handle clearing the variable.
+After the EXECUTE method is executed, the system does not automatically clear the *Report* variable. You must handle clearing the variable.
 
 You typically use this method together with the [RUNREQUESTPAGE Method](report-runrequestpage-method.md). The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the EXECUTE method to get the parameter string and run the report.  
 
