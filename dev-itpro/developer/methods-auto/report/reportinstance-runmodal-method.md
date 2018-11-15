@@ -30,9 +30,9 @@ An instance of the [Report](report-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-After you define the *Report* variable, you can run this method or the [RUN Method \(Report\)](../../methods/devenv-run-method-report.md) method on the variable. As opposed to the RUN method, with the RUNMODAL method, the system does not automatically clear the variable after it executes this function. You must handle clearing the variable.
+After you define the *Report* variable, you can run this method or the [RUN Method \(Report\)]([REPORT.RUN Method](reportinstance-runmodal-method.md) method on the variable. As opposed to the RUN method, with the RUNMODAL method, the system does not automatically clear the variable after it executes this function. You must handle clearing the variable.
 
-Use the RUNMODAL method or the RUN method if you know at design time the exact report you want to run. Otherwise, use the [REPORT.RUNMODAL Method](../../methods/devenv-report-runmodal-method.md) or [REPORT.RUN Method](../../methods/devenv-report-run-method.md).  
+Use the RUNMODAL method or the RUN method if you know at design time the exact report you want to run. Otherwise, use the [REPORT.RUNMODAL Method](report-runmodal-method.md) or [REPORT.RUN Method](report-run-method.md).  
   
  If the report you specify does not exist, then a compile error occurs.  
   
