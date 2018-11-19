@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
-ms.service: dynamics365-financials
+ms.service: dynamics365-business-central
 redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 

@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: dynamics365-financials
+ms.service: dynamics365-business-central
 ms.assetid: 29e195c8-557d-43a7-b416-37c2ec246cfc
 author: SusanneWindfeldPedersen
 redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
