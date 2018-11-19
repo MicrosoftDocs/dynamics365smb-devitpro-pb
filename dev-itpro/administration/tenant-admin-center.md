@@ -76,12 +76,17 @@ A sandbox environment can also be created from within a page within the producti
 
 To delete a sandbox environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then click **Delete Sandbox** on the action ribbon.
 
-> [!IMPORTANT]  
-> If a sandbox is created with the production data option, a number of precautions are taken for that sandbox:      
-        - The job queue is automatically stopped.  
-        - Any base application integration settings are cleared.  
-        - Outbound HTTP calls from extensions are blocked by default and must be approved per extension.  
-        - Any GDPR action must be handled separately and repeated for the sandbox, there is no synchronization with the production environment after the sandbox has been created.  
+## Precautions for sandbox with production data
+
+If a sandbox is created with the production data option, a number of precautions are taken for that sandbox: 
+- The job queue is automatically stopped. 
+- Any base application integration settings are cleared.  
+- Outbound HTTP calls from extensions are blocked by default and must be approved per extension.  
+- Any GDPR action must be handled separately and repeated for the sandbox, there is no synchronization with the production environment after the sandbox has been created. 
+
+> [!NOTE]  
+> To enable outbound HTTP calls, go to the **Extensions Management** page and choose **Configure**. Then, on the **Extension Settings** page, make sure that the **Allow HttpClient Request** checkbox is selected. This setting must be enabled per extension. 
+ 
 
 ## Notification recipients
 

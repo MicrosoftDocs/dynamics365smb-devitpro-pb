@@ -38,6 +38,7 @@
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### Database
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
+#### [Creating and Altering Databases](cside/cside-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
 <!-- end deployment -->
