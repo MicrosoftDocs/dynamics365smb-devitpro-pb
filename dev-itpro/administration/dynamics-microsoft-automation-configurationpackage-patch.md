@@ -23,9 +23,7 @@ Uploads a RapidStart package to the configurationPackage object for [!INCLUDE[d3
 ```json
 PATCH /microsoft/automation/{apiVersion}/companies({companyId})/configurationPackages('{packageName}')/file('{packageName}')/content
 Content-type: application/octet-stream
-{
-    FILE
-}
+Body: binary content of the RapidStart package
 ```
 
 
@@ -37,7 +35,7 @@ Content-type: application/octet-stream
 |If-Match|Required. When this request header is included and the eTag provided does not match the current tag on the **configurationPackage**, the **configurationPackage** will not be updated. |
 
 ## Request body
-Content of the requestbody is a RapidStart package.
+Content of the requestbody is the binary stream containing the RapidStart package.
 
 ## Response
 If successful, this method returns a ```204 No Content```.
@@ -52,7 +50,7 @@ PATCH https://api.businesscentral.dynamics.com/v1.0/api/microsoft/automation/bet
 Authorization : Bearer {token}
 Content-type : application/octet-stream
 If-Match:*
-
+Body: binary stream
 ```
 
 ## See Also 
