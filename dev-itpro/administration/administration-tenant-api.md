@@ -29,7 +29,7 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register your client 
 3. During the registration of the app, make sure to go to **Settings**, and then under **API ACCESS**, choose **Required permissions**.
 4. Choose **Add**, and then under **Add API Access**, choose **Select an API** and search for the **Dynamics 365** option.  
     > [!NOTE]  
-    > If **Dynamics 365** does not show up in search, it's because the tenant does not have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] with a user from the directory. 
+    > If **Dynamics 365** does not show up in search, it's because the tenant does not have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] with a user from the directory. 
 5. Choose **Dynamics 365** and select **Delegated permissions**, and then choose the **Done** button.
 
 ## Getting an access token
