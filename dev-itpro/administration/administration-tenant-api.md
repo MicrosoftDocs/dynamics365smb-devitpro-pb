@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Learn about the administration API.
+description: Learn about the tenant administration API.
 author: edupont04
 
 ms.service: dynamics365-business-central
@@ -13,12 +13,12 @@ ms.reviewer: solsen
 ---
 
 # The Basics
-The base URL is: https://api.businesscentral.dynamics.com
+The base URL is: https://api.businesscentral.dynamics.com.
 
 ## Authentication
 Common native client AAD application:
  - Display name: Dynamics 365 Business Central Web Service Client
- - App Id: 966e61ab-3ffb-494a-8ea9-3293da2594ce
+ - App ID: 966e61ab-3ffb-494a-8ea9-3293da2594ce
  
  Powershell example without prompt:
  ```powershell
@@ -197,7 +197,7 @@ Note: The 'date' components of the values are ignored, only the time components 
 **cat**:  ( All or 0 ) // Category of telemetry to query  
 
 **Response:**  
-Returns the telemetry logs and with data column headers
+Returns the telemetry logs and with data column headers.
 ```
 {
   "queryColumns": [
@@ -217,7 +217,8 @@ Returns the telemetry logs and with data column headers
 ```[200] GET /v1.1/admin/settings/notification/recipients```
 
 **Response:**  
-Returns a wrapped array of recipients
+Returns a wrapped array of recipients.
+
 ```
 {
   "value": 
@@ -243,7 +244,7 @@ Returns a wrapped array of recipients
 ```
 
 **Response:**  
-Returns the newly created recipient
+Returns the newly created recipient.
 
 ```
 {
@@ -266,7 +267,7 @@ Returns the newly created recipient
 ```
 
 **Response:**  
-Returns the updated recipient
+Returns the updated recipient.
 
 ```
 {
@@ -283,7 +284,7 @@ Returns the updated recipient
 ```[200] GET /v1.1/admin/settings/notification```
 
 **Response:**  
-Returns the notification settings
+Returns the notification settings.
 ```
 {
   "aadTenantId": GUID, // AAD Tenant ID of the caller

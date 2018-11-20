@@ -46,6 +46,7 @@
 # [Administration](administration/administration.md)
 ## Online
 ### [Administration center](administration/tenant-admin-center.md)
+### [Tenant Administration API](administration/administration-tenant-api.md)
 ### Automation
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
