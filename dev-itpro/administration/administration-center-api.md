@@ -1,6 +1,6 @@
 ---
-title: Business Central Admin Center API | Microsoft Docs
-description: Learn about the tenant administration API.
+title: Business Central Administration Center API | Microsoft Docs
+description: Learn about the Business Central administration center API.
 author: edupont04
 
 ms.service: dynamics365-business-central
@@ -16,7 +16,7 @@ ms.date: 11/21/2018
 # The Business Central Administration Center API
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API enables administrators to programmatically perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Using the API, administrators can query and work with production and sandbox environments for the tenant, set up upgrade notifications, and view telemetry for events on the tenant. 
 
-See [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) for more details on administrative capabilities. This article describes the API contracts.
+See [Administration Center](administration-tool.md) for more details on administrative capabilities. This article describes the API contracts.
 
 ## Location
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: https://api.businesscentral.dynamics.com.
