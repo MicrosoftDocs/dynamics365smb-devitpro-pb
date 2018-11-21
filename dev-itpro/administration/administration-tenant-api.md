@@ -10,13 +10,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/20/2018
+ms.date: 11/21/2018
 ---
 
 # The Business Central Administration Center API
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API enables administrators to programmatically perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Using the API, administrators can query and work with production and sandbox environments for the tenant, set up upgrade notifications, and view telemetry for events on the tenant. 
 
-See (LINK TO Administration Center article) for more details on administrative capabilities. This article describes the API contracts.
+See [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) for more details on administrative capabilities. This article describes the API contracts.
 
 ## Location
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: https://api.businesscentral.dynamics.com.
@@ -179,7 +179,8 @@ Returns the environment's upgrade settings, or "null" if not exists
 }
 ```
 
-Note: The 'date' components of the values are ignored, only the time components are used
+> [!NOTE]  
+> The `date` components of the values are ignored, only the time components are used.
 
 ## Put Upgrade Settings
 ```[200] PUT v1.1/admin/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
@@ -202,7 +203,8 @@ Returns the updated settings
 }
 ```
 
-Note: The 'date' components of the values are ignored, only the time components are used
+> [!NOTE]  
+> The `date` components of the values are ignored, only the time components are used.
 
 ## Get Environment Telemetry
 ```[200] GET v1.1/admin/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}```
@@ -316,3 +318,4 @@ Returns the notification settings.
 ```
 
 ## See Also
+[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)    
