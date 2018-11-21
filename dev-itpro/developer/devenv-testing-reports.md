@@ -1,6 +1,6 @@
 ---
 title: Testing Reports
-description: [How to validate if a report produces correct data]
+description: How to validate if a report produces correct data
 author: ailie13
 ms.reviewer: solsen
 ms.topic: article

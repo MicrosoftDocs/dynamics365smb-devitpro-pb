@@ -20,6 +20,7 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |Austria|de-AT|
 |Belgium|nl-BE<br>fr-BE|
 |Canada|en-CA <br>fr-CA|
+|Czech Republic **(on-premises only)**|cs-CZ|
 |Denmark|da-DK|
 |Germany|de-DE|
 |Finland|fi-FI|
@@ -30,6 +31,7 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |Netherlands|nl-NL|
 |New Zealand|en-NZ|
 |Norway|nb-NO|
+|Russia **(on-premises only)**|ru-RU|
 |Spain|es-ES|
 |Sweden|sv-SE|
 |Switzerland|fr-CH<br>de-CH <br>it-CH|
