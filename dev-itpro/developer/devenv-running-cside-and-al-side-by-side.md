@@ -3,7 +3,7 @@ title: "Running C/SIDE and AL Side-by-Side"
 description: "Description of how you can run both development environments side-by-side."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/21/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,12 +13,15 @@ ms.author: solsen
 ---
 
 # Running C/SIDE and AL Side-by-Side
-[!INCLUDE[prodshort](../includes/prodshort.md)] on-premises supports development using both C/SIDE and AL, as well as Designer side-by-side. When new objects are added or changed in C/SIDE these changes must be reflected in the symbol download in Visual Studio Code using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To enable this reflection, a new command and argument called `generatesymbolreference` has been added to finsql.exe and you can run it as illustrated below. 
+[!INCLUDE[prodshort](../includes/prodshort.md)] on-premises supports development using both C/SIDE and AL, as well as Designer side-by-side. When new objects are added or changed in C/SIDE these changes must be reflected in the symbol download in Visual Studio Code using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To enable this reflection, a command and argument called `generatesymbolreference` has been added to finsql.exe and you can run it as illustrated below. 
+
+> [!NOTE]
+> If you experience problems with generating symbols, try to delete existing symbols first.
 
 ## Get started generating symbols and compiling all objects
 Use the `generatesymbolreference` command specified with the database and server name to add symbol references to the **Object Metadata** table for the specified database. 
 
-Given the `generatesymbolreference` command, C/SIDE will traverse all the objects in the database and generates symbols for them. This command should be run at least once to generate the initial set of symbols to which incremental updates can be applied.
+Given the `generatesymbolreference` command, C/SIDE will traverse all the objects in the database and generate symbols for them. This command should be run at least once to generate the initial set of symbols to which incremental updates can be applied.
 
 ### Syntax example
 ```
@@ -43,11 +46,11 @@ To update the symbols for a set of objects from the UI, start C/SIDE with the `g
 finsql.exe generatesymbolreference=yes
 ```
 
-This flag is also a part of the Compile-NavApplicationObject PowerShell command and you can use it to compile and generate symbols on a filtered set of application objects through PowerShell. This alternative should be considered if you do not work with the UI in C/SIDE. For more information about it, see [Compile-NavApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=dynamicsnav-ps-2018).
+This flag is also a part of the `Compile-NavApplicationObject` PowerShell command and you can use it to compile and generate symbols on a filtered set of application objects through PowerShell. This alternative should be considered if you do not work with the UI in C/SIDE. For more information about it, see [Compile-NavApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-ps).
 
 
 ## Business Central on-premises server setting
-In addition, you must enable the [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises server setting; **Enable Symbol Loading at Server Startup**. This setting must be enabled to allow any symbol generation. 
+In addition, you **must** enable the [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises server setting; **Enable loading application symbols at server startup**. This setting must be enabled to allow any symbol generation. 
 
 If the setting is not enabled, the `generatesymbolreference` setting does not have any effect.
 
