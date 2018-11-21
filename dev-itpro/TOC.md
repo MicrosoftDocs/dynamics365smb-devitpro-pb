@@ -461,7 +461,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 <!-- end web services -->
 <!-- begin security -->
 # [Security](security/security-and-protection.md)
-## Application
+## [Application](security/security-application.md)
 ## Online
 ## On-premises
 ### [Considerations](security/security-considerations.md)
