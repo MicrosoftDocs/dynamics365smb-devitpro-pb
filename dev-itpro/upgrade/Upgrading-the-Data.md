@@ -239,7 +239,7 @@ Synchronize the database schema with validation.
 For example, run the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
 
 ```
-Set-NAVTenant -ServerInstance <ServerInstanceName>
+Sync-NAVTenant -ServerInstance <ServerInstanceName>
 ```
  
 For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
