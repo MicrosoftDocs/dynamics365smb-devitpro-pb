@@ -5,7 +5,7 @@ author: ailie13
 ms.reviewer: solsen
 ms.topic: article
 ms.service: dynamics365-business-central
-ms.author: t-adilie
+ms.author: solsen
 ms.date: 11-21-2018
 
 ---
