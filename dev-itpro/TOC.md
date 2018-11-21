@@ -462,7 +462,12 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 <!-- begin security -->
 # [Security](security/security-and-protection.md)
 ## [Application](security/security-application.md)
+### Authentication and Authorization
+### Two-Factor Authentication
+### Data Security
 ## Online
+### Authentication and Authorization
+### Authentication and Authorization
 ## On-premises
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)

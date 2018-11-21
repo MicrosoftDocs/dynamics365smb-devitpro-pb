@@ -8,15 +8,18 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# Online Security in Business Central
+# On-premises Security in Business Central
 
-## Intro
-
-## Authentication
-only AAD
+## Intro - what is hardening
 
 ## Encryption 
 
+
+## TDE 
+
+
+
+  
 
 ## See Also  
 

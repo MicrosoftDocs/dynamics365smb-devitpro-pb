@@ -10,27 +10,44 @@ ms.service: "dynamics365-business-central"
 ---
 # Application Security in Business Central
 
-## Intro to Gold Standard
-
-## Authorization 
-
-For users to access the application, they must be have a valid user account in the application. Then, they must be granted permissions to the various areas of the application, based on their role. The management of user accounts and permissions is done from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. For more information, see the following articles in the Business Central application help:
-
--   [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)  
-
--   [Understanding Users, Profiles, and Role Centers](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-users-profiles-roles)
+[intro - gold standard]
 
 ## Authentication
-Before users can sign-in to the application, they must be authenticated as valid user in the system. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports several authentication methods. You configure the authentication method on the server-tiers of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-For more information, see [Authentication and Credential Types](../administration/users-credential-types.md).
+
+[Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)
+
+[User Authentication](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/user-security#user-authentication)  
+
+[Multi-factor Authentication]()
+ 
+Link to new page on Authentication types 
+
+## Authorization
+
+[New paragraph on layered auth system + picture]
+
+[User permissions in the application](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/user-security#user-permissions-in-the-application)
+
+[](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/data-security?tabs=database-level)
+
+[Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)
+
+[Removing Elements from the User Interface According to Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/hide-ui-elements)  
+
 
 ## Auditing
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides options for limiting and monitoring user access to the database. 
+[Authorization assessment](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
   
+[Data auditing](https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes)
+  
+[Security auditing](New page on how change log is always enabled for changes to security subsystem (users, permissions, …)
+
+[Data classification](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-classifying-data-sensitivity)
+  
+[Data encryption](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-manage-data-encryption)  
 
 ## See Also  
 
-[Security and Protection](security-and-protection.md)  
-[Data Security](data-security.md)  
+[Security Development Lifecycle](https://www.microsoft.com/en-us/sdl)  

@@ -15,16 +15,8 @@ An enterprise business solution must have a built-in security system that helps 
 
 See the following articles for more information:
 
-[Security Considerations](Security-Considerations.md)  
+[Application Security](security-application.md)  
 
-[User Security](user-security.md)  
+[Online Security](security-online.md)  
 
-[Data Security](Data-Security.md)  
-
-[Enhancing Business Server Security](enhancing-server-instance-security.md)
-
-[Using Security Certificates](../deployment/implement-security-certificates-production-environment.md)
-
-[Configuring SSL to Secure the Web Client Connection](../deployment/configure-ssl-web-client-connection.md)
-
-[Granting Permissions to Manage Databases in SQL Server](Setting-Database-Owner-and-Security-Administration-Permissions.md)  
+[On-premises Security](security-onpremises.md)  
