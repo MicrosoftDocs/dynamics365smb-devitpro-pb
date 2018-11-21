@@ -50,9 +50,14 @@ This flag is also a part of the `Compile-NavApplicationObject` PowerShell comman
 
 
 ## Business Central on-premises server setting
-In addition, you **must** enable the [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises server setting; **Enable loading application symbols at server startup**. This setting must be enabled to allow any symbol generation. 
+In addition to the symbol generation setting you have chosen above, you must enable the [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises server setting. 
 
-If the setting is not enabled, the `generatesymbolreference` setting does not have any effect.
+1. Go to **[!INCLUDE[prodshort](../includes/prodshort.md)] Administration**.
+2. Scroll to the **Development** tab and expand the tab.
+3. Choose the **Edit** button, and then select the **Enable loading application symbols at server startup** checkbox.
+
+> [!IMPORTANT]  
+> This setting must be enabled to allow any symbol generation. If the setting is not enabled, the `generatesymbolreference` setting does not have any effect.
 
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  
