@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: dynamics365-financials
+ms.service: dynamics365-business-central
 ms.assetid: 0da8d4ad-82cd-4906-9faa-e49e360262b9
 author: SusanneWindfeldPedersen
 manager: edupont

@@ -1,1 +1,1 @@
-Dynamic NAV Development Shell
+Dynamics NAV Development Shell

@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: dynamics365-financials
+ms.service: dynamics365-business-central
 ms.assetid: 0cbf5999-d63e-49b1-91c3-ce22b194c497
 caps.latest.revision: 13
 redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
