@@ -3,7 +3,7 @@ title: "Creating and Interacting with an OData V4 Bound Action"
 description: "Document how to create and interact with an OData V4 Bound Action in AL."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/15/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,6 +21,9 @@ This topic provides an overview of how to expose a procedure as an OData V4 web 
 ## Declaring the OData bound action
 
 The following example shows you how you can declare an OData bound action on a page exposed as a web service. For that, you need to add a procedure to the `SalesInvoiceCopy` page, expose the procedure using the `[ServiceEnabled]` attribute, and use the `WebServiceActionContext` and `WebServiceActionResultCode` AL types to set the result of the function.  
+
+> [!NOTE]   
+> Bound actions cannot be added by extending an existing page that has been exposed as a web service. 
 
 ```al
 page 50110 SalesInvoiceCopy
