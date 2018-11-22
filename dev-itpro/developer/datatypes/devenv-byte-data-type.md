@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 66cf2909-97b3-4cf5-a3c9-8b8c55db553d
 caps.latest.revision: 3
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Byte Data Type
 Use this simple data type to store a single, 8-bit character as a value in the range 0 to 255. You can easily convert this data type from a number to a character and vice versa. This means you can use mathematical operators on Byte variables.  

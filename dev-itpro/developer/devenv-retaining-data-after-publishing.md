@@ -31,7 +31,7 @@ The data synchronization between each publish is controlled by the `schemaUpdate
      "server": "http://localhost",
      "serverInstance": "Nav",
      "authentcation": "UserPassword", 
-     "startupobjectId": 22
+     "startupobjectId": 22,
      "schemaUpdateMode": "Recreate" 
  }
 ```
@@ -46,7 +46,7 @@ When you set the schema update mode to **Recreate**, all the tables and table ex
  
 - When you make changes to the data types, you can only enlarge the unit size, and not decrease the unit size. For example, you can set a text type from `Code[20]` to `Code[50]` or `Text[32]` to  `Text[87]`, and you cannot set a text type from `Code[50]` to `Code[30]` or `Text[87]` to `Text[40]`.  
 
-- Making major table structural changes could lead to compilation errors. For example, if you want to update a primary key. In this case, the table data cannot be synchronized, and if you want to publish the extension, you must change the `updateSchemaMode` to `Recreate` or write an upgrade codeunit. For more information, see [Upgrading Extensions](devenv-upgrading-extensions.md).  
+- Making major table structural changes could lead to compilation errors. For example, if you want to update a primary key. In this case, the table data cannot be synchronized, and if you want to publish the extension, you must change the `schemaUpdateMode` to `Recreate` or write an upgrade codeunit. For more information, see [Upgrading Extensions](devenv-upgrading-extensions.md).  
 
 
 ## See Also

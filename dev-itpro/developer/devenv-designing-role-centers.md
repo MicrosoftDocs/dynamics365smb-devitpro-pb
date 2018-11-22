@@ -45,19 +45,6 @@ The navigation and actions area appears at the top of the Role Center page, and 
 |||`area(reporting)` - Actions in this control will appear last in the action area. They display with a default report icon. |Use this control to target report objects.|
 
 
-<!-- 
-
-
-|    |Area|Description|Usage Guidelines|
-|----|-------|-----------|----------------|
-|1|Top-level navigation|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. The pages targeted by the submenus will open in the content area of the Role Center. <br /><br />You define this area with an `area(sections)` control in the page code.|The top-level navigation should provide access to relavant enitity lists for the role's areas of business. For example, typical root items for a business manager could be finance, sales, and purchasing. You should place the root itens in order of importance, starting from the left.|
-|2|Second-level navigation|The second-level area displays a flat list of links to other pages. The pages targeted by the links will open in the content area of the Role Center.<br /><br />You define this area with an `area(embedding)` control in the page code.|You should use these items to link to users’ most useful entity lists in thier business process. For example, with a business manager, these could be links to customers, sales orders, and bank accounts. You should place items in the order that reflects the business process sequence. Try to limit the number of second-level items, and consider placing items in the top-level navigation instead, if the number gets too large. |
-|3|Actions|The actions area provides links to pages, reports, and codeunits. The links can be displayed on the root-level or grouped in a submenu. The objects targeted by these links will open in a separate window in front of the Role Center page.<br /><br />You can define the actions by using three different `area()` controls in the page code: <ul><li>Actions in the `area(creation)` control will appear first in the action area, and will display with a plus (+) icon.</li><li>Actions in an an `area(processing)` control will appear after the `area(creation)` items. You can group items in submenus by using a `group` control.</li><li>Actions in the `area(reporting)` control target report object only and will appear last in the action area. They display with the default report icon. |The action area is designed for running the most important or used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related action in a submenu.|
-|||Actions in the `area(creation)` control will appear first in the action area, and will display with a plus (+) icon. ||
-|||Actions in an an `area(processing)` control will appear after the `area(creation)` items. You can group items in submenus by using a `group` control.||
-|||Actions in the `area(reporting)` control target report object only and will appear last in the action area. They display with the default report icon. ||
-
--->
 For more information about navigation, see [Adding to Navigation](devenv-adding-menus-to-navigation-pane.md). 
 
 
@@ -98,7 +85,11 @@ The following table describes some of the most common parts for Role Centers, as
     -   On tablets, there is a limit on the number of cues that can be displayed.
     -   On phones, there is a limit on the number of parts in the content area that can be displayed.
     -   Role Center pages cannot be displayed when they are embedded in Outlook or SharePoint.
- 
+
+## Using the Role Center in the client
+
+To view a new Role Center in the client, you must first use the client to associate the Role Center page with a profile. Then, you go to **My Settings** and change the  **Role Center** to point to the new profile. For more information, see [Create Profile](/dynamics365/business-central/admin-users-profiles-roles#CreateProfile).
+
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  

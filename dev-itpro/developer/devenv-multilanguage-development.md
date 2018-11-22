@@ -11,7 +11,7 @@ ms.assetid: 6e0ff568-9cad-4b0f-bd97-b8ac5690a470
 caps.latest.revision: 26
 ms.author: solsen
 author: SusanneWindfeldPedersen
-redirect_url: devenv-work-with-translation-files.md
+redirect_url: devenv-work-with-translation-files
 ---
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]

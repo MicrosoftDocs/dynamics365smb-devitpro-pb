@@ -56,7 +56,6 @@ The following figure illustrates the general layout and elements of a card page 
 
 The following table describes the elements of the page.
 
-
 |    |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
 |1|System actions|The icons provide users the ability to edit the record, create a new record, and delete the current record.<br /><br />The actions are only active if the [Editable](properties/devenv-editable-property.md) property is set to `true`.|These actions appear on all pages; you cannot remove them or add other actions.<br /><br />|

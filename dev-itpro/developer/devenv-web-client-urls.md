@@ -126,17 +126,17 @@ You can filter the data that is displayed in the page by using the filter parame
  The following address displays data in page 9305 only for the customer who has the **Sell-to Customer No.**=10000 and the **Location Code**=Blue.
 
 ```
-https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'  
+https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to Customer No.' IS '10000' AND 'Location Code' IS 'BLUE'  
 ```
 
 ### Filter Syntax
 The filter has the following syntax.
 
 ```
-&filter='<field>'-IS-'<value>'[-AND-'<field>'-IS-'<value>']  
+&filter='<field>' IS '<value>'[ AND '<field>' IS '<value>']  
 ```
 
-You can add the filter anywhere in the address after `/?`.
+You must include a space or `%20` before and after the `IS`and `AND` operators. You can add the filter anywhere in the address after `/?`.
 
 <!-- 
 > [!TIP]
@@ -149,9 +149,9 @@ The following table describes the filter parameters.
 |Parameter|Description|
 |---------------|-----------------|
 |`field`|The name of the table field on which to filter.|
-|`-IS-`|Specifies the equal operator.|  
+|` IS `|Specifies the equal operator.|  
 |`value`|The value of the table field on which to filter.|
-|`-AND-`|Use this parameter to specify more than one filter. It specifies an “and” operator for adding additional filters. Place `-AND-` between each additional filter.<br /><br /> To be included in the page data, the table record must match values for all fields in the filter.|
+|` AND `|Use this parameter to specify more than one filter. It specifies an “and” operator for adding additional filters. Place ` AND ` between each additional filter.<br /><br /> To be included in the page data, the table record must match values for all fields in the filter.|
 
 ## See Also
 [Viewing Table Data](devenv-view-table-data.md)  

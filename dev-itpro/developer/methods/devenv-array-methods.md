@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: dynamics365-financials
+ms.service: dynamics365-business-central
 ms.assetid: c4141c46-ce87-480a-98eb-390a0fe0573b
 author: SusanneWindfeldPedersen
 ---
@@ -56,13 +56,13 @@ ArrayOfDotNetVariables: Array [10] of DotNet String;
 ## Methods
 The following AL methods for arrays are available:  
 
-[ARRAYLEN Method](devenv-ARRAYLEN-Method.md)  
+[ARRAYLEN Method](../methods-auto/system/system-arraylen-method.md) 
 
-[COMPRESSARRAY Method](devenv-COMPRESSARRAY-Method.md)  
+[COMPRESSARRAY Method](../methods-auto/system/system-compressarray-method.md)
 
-[COPYARRAY Method](devenv-COPYARRAY-Method.md)
+[COPYARRAY Method](../methods-auto/system/system-copyarray-method.md)
 
 
 
 ## See Also  
- [AL Method Reference](devenv-al-method-reference.md)  
+[AL Method Reference](devenv-al-method-reference.md)  

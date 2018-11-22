@@ -6,12 +6,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: dynamics365-financials
+ms.service: dynamics365-business-central
 ms.assetid: 36cfc0e3-ee2b-45a9-a528-7ac6067fd146
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
- 
+<!-- IMPORTANT - This topic is deprecated and redirected to an auto-generated version, see the redirect_url tag -->
 
 # ABS Method (Decimal, Integer, BigInteger)
 Calculates the absolute value of a number \(Decimal, Integer or BigInteger\). ABS always returns a positive numeric value or zero.  
