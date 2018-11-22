@@ -19,7 +19,7 @@ This walkthrough will guide you through all the steps that you must follow to cr
 ## About this walkthrough
 This walkthrough illustrates the following tasks:
 
-- Setting up a sandbox environment.
+- Setting up a sandbox environment. For more information, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md),
 
 - Downloading and installing Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
 
