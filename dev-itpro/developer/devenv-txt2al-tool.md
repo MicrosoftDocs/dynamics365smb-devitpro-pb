@@ -25,7 +25,7 @@ The Txt2Al conversion tool allows you to take existing [!INCLUDE[navnow_md](incl
 ## To run the Txt2Al conversion tool
 To run the Txt2Al conversion tool, follow the steps outlined below.
 
-1. Start with a clean [navnow_md](includes/navnow_md.md)] database and compile the database.  
+1. Start with a clean [!INCLUDE[navnow_md](includes/navnow_md.md)] database and compile the database.  
 It is **very** important that you compile the database to get the right result in the next step.
 2. Make an export of **all the baseline objects** in the command line using the following syntax:
 ```finsql.exe Command=ExportToNewSyntax, File=<filename.txt>, Database="<databasename>", ServerName=<servername> ,Filter=Type=table;ID=<tableID>``` The following example exports the table **225** from the Demo Database NAV (13-0) database:  
