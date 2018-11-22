@@ -3,7 +3,7 @@ title: "XMLport Object"
 description: "Description of the xmlport object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,57 @@ To use an XMLport to import or export data, you first create an XMLport object. 
 
 ## Snippet support
 Typing the shortcut ```txmlport``` will create the basic layout for an XMLport object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+## XMLport syntax
+```
+xmlport Id MyXmlport
+{
+    schema
+    {
+        textelement(NodeName1)
+        {
+            tableelement(NodeName2; SourceTableName)
+            {
+                fieldattribute(NodeName3; NodeName2.SourceFieldName)
+                {
+                    
+                }
+            }
+        }
+    }
+    
+    requestpage
+    {
+        layout
+        {
+            area(content)
+            {
+                group(GroupName)
+                {
+                    field(Name; SourceExpression)
+                    {
+                        
+                    }
+                }
+            }
+        }
+    
+        actions
+        {
+            area(processing)
+            {
+                action(ActionName)
+                {
+                    
+                }
+            }
+        }
+    }
+    
+    var
+        myInt: Integer;
+}
+```
 
 ## XMLport example
 The following example shows a page extension of the **Permission Sets** page that adds an action to the specified page calling the XMLport **ExportPermissionSet**. The XMLport exports the permission set data to an XML file. 

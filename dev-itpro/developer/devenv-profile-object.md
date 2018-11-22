@@ -3,7 +3,7 @@ title: "Profile Object"
 description: "Description of the page object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,18 @@ The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] a
 ## Snippet support
 Typing the shortcut ```tprofile``` will create the basic layout for a profile object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-## Profile object example
+## Profile syntax
+
+```
+profile MyProfile 
+{
+    Description = 'My Description';
+    RoleCenter = RoleCenter;
+    Customizations = Customizations;
+}
+```
+
+## Profile example
 The following profile object example performs a validation to check if the `Business Manager` page of type RoleCenter exists, and if `MyCustomization` exists, and if it is a page customization object. Then the page customization modifies the layout of the **Customer List** to make the `Name` field invisible using the `modify` method. 
 
 ```

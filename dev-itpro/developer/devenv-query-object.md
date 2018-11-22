@@ -3,7 +3,7 @@ title: "Query Object"
 description: "Description of the query object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,6 +27,37 @@ When you have specified the dataitem and column elements, you create links betwe
 
 ## Snippet support
 Typing the shortcut ```tquery``` will create the basic layout for a Query object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+## Query syntax
+```
+query Id MyQuery
+{
+    QueryType = Normal;
+    
+    elements
+    {
+        dataitem(DataItemName; SourceTableName)
+        {
+            column(ColumnName; SourceFieldName)
+            {
+                
+            }
+            filter(FilterName; SourceFieldName)
+            {
+                
+            }
+        }
+    }
+    
+    var
+        myInt: Integer;
+    
+    trigger OnBeforeOpen()
+    begin
+        
+    end;
+}
+```
 
 ## Query example
 The following example shows a query that displays a list of customers with sales and profit figures. The query primarily retrieves fields from the **Customer** table, but also displays fields from the **Salesperson Purchaser** and **Country Region** tables.

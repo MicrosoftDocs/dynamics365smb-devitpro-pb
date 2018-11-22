@@ -3,7 +3,7 @@ title: "Page Extension Object"
 description: "Description of the page extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,6 +28,26 @@ For more information about the Page and Page Extension objects, see [Pages Overv
 
 ## Snippet support
 Typing the shortcut ```tpageext``` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+## Page extension syntax
+
+```
+pageextension Id MyExtension extends MyTargetPage
+{
+    layout
+    {
+        // Add changes to page layout here
+    }
+    
+    actions
+    {
+        // Add changes to page actions here
+    }
+    
+    var
+        myInt: Integer;
+}
+```
 
 ## Page extension examples
 The following page extension object extends the Customer Card page object by adding a field control ```ShoeSize``` to the ```General``` group on the page. The field control is added as the last control in the group using the ```addlast``` method. In the actions area, you can see what the syntax looks like for actions that execute triggers and actions that run objects.
