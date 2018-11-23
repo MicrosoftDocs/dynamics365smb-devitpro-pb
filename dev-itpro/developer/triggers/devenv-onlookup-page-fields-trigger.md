@@ -14,7 +14,7 @@ manager: edupont
 
 
 # OnLookup (Page fields) Trigger
-Executed in place of the normal lookup features for the current page.  
+Runs in place of the normal lookup features for the current page.  
 
 ## Syntax  
 
@@ -29,7 +29,7 @@ OnLookup(TextString)
  Text string entered into the text box and used as the lookup value.  
 
 ## Applies To  
- Fields on pages  
+- Fields on pages  
 
 ## Remarks  
  There are three lookup options:  

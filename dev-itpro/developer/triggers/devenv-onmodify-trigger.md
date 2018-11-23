@@ -14,13 +14,13 @@ manager: edupont
 
 
 # OnModify Trigger
-Executed when a user modifies an existing record in a table.  
+Runs when a user modifies an existing record in a table.  
   
 ## Applies To  
- Tables  
+- Tables  
   
 ## Remarks  
- This trigger is executed before the default modify behavior is executed. If an error occurs in the trigger code, the record changes are canceled.  
+ This trigger is run before the default modify behavior is run. If an error occurs in the trigger code, the record changes are canceled.  
   
  We recommend that you do not include code that can stop the user from recording a change in the OnModify trigger on a table. For example, do not include code for displaying error messages. If a user has previously changed the contents of some fields in a record, then these changes must always be accepted by the system.  
   

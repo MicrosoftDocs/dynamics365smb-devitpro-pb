@@ -14,10 +14,10 @@ manager: edupont
 
 
 # OnAfterGetRecord Trigger
-Executed after a record is retrieved from a table but before it is displayed to the user.  
+Runs after a record is retrieved from a table but before it is displayed to the user.  
   
 ## Applies To  
- Pages  
+- Pages  
   
 ## Remarks  
  Use this trigger to calculate variables that depend on the current record.  

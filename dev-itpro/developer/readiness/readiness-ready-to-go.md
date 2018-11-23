@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# The “Ready to Go” program
+# The “Ready to Go” Program
 
 ![ReadyToGo Banner](../media/readytogo-banner.png)
 

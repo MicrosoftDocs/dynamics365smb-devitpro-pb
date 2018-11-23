@@ -15,7 +15,7 @@ manager: edupont
 
 
 # OnBeforeOpen Trigger
-Executed before a query is run and the dataset is generated.  
+Runs before a query is run and the dataset is generated.  
 
 ## Syntax  
 
@@ -32,7 +32,7 @@ OnBeforeOpen()
 >  A query cannot be run from the OnBeforeOpen trigger. You cannot call methods from the triggers that run the query, such as OPEN, SAVEASXML, READ, or CLOSE methods.  
 
 ## Example  
- The following code applies a filter on the Quantity column of the query by calling the SETFILTER  on the OnBeforeOpen trigger of the query object.  
+ The following code applies a filter on the Quantity column of the query by calling the SETFILTER on the OnBeforeOpen trigger of the query object.  
 
 ```  
 currQuery.SETFILTER(Quantity, '>50');  

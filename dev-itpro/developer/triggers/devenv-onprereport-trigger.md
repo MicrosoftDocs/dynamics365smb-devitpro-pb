@@ -14,13 +14,13 @@ author: SusanneWindfeldPedersen
 
 
 # OnPreReport Trigger
-Executed before a report is run.  
+Runs before a report is run.  
   
 ## Applies To  
- Reports  
+- Reports  
   
 ## Remarks  
- This trigger executes after the request page is run. The table views and filters for the report data items are set while this trigger is executed. As this trigger is executed after the request page is processed, you have access to any filters the user has set. If you want to print the settings of these filters in the report, you can retrieve them using the following text string.  
+ This trigger runs after the request page is run. The table views and filters for the report data items are set while this trigger is run. As this trigger is run after the request page is processed, you have access to any filters the user has set. If you want to print the settings of these filters in the report, you can retrieve them using the following text string.  
   
 ```  
 ReportFilter := SomeRecord.GETFILTERS;  
@@ -30,5 +30,5 @@ ReportFilter := SomeRecord.GETFILTERS;
   
 ## See Also  
  [Triggers](devenv-triggers.md)  
- [GETFILTERS Method Record)](../methods/devenv-getfilters-method-record.md)  
+ [GETFILTERS Method Record](../methods/devenv-getfilters-method-record.md)  
  [Report and Data Item Triggers](devenv-report-and-data-item-triggers.md)  

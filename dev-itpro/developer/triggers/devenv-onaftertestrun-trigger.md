@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 
 # OnAfterTestRun Trigger
-Executed after a test  of a test codeunit has been run.  
+Runs after a test  of a test codeunit has been run.  
 
 ## Syntax  
 
@@ -47,28 +47,28 @@ Specifies the name of the test  that has run.
 
 Type: TestPermissions
 
-Specifies the permission set level to use on the test run. The value is retrieved from the [TestPermissions Property](../properties/devenv-testpermissions-property.md) of the test codeunit or test  that is run. The parameter accepts the following values:
+Specifies the permission set level to use on the test run. The value is retrieved from the [TestPermissions Property](../properties/devenv-testpermissions-property.md) of the test codeunit or test that is run. The parameter accepts the following values:
 
 *   **Disabled**
 *   **Restrictive**
 *   **NonRestrictive**
-*   **InheritFromTestCodunit** - Specifies that a test the  uses the **TestPermissions** property setting of the test codeunit to which it belongs.
+*   **InheritFromTestCodunit** - Specifies that a test uses the **TestPermissions** property setting of the test codeunit to which it belongs.
 
 <!-- For more information, see [Testing With Permission Sets](testing-permissionsets.md).-->
 
  *Success*  
  Type: Boolean  
 
- **True** indicates that the test  run succeeded; otherwise, **false** indicates that the test  run failed.  
+ **True** indicates that the test run succeeded; otherwise, **false** indicates that the test run failed.  
 
 ## Applies To  
  Test runner codeunits. Test runner codeunits have the [SubType Property (Codeunit)](../properties/devenv-subtype-property-codeunit.md) set to **TestRunner**.  
 
 > [!NOTE]  
->  This trigger is optional and not available on a test runner codeunit by default. To implement this trigger, you must manually add it as a .  
+>  This trigger is optional and not available on a test runner codeunit by default. To implement this trigger, you must manually add it.  
 
 ## Remarks  
- A test runner codeunit manages the execution of test codeunits that are run from its **OnRun** . When a test codeunit runs, it executes each test  one at a time in the codeunit. When implemented, the **OnAfterTestRun** trigger is called after each test  has run and after all of the test codeunit has run.
+ A test runner codeunit manages the execution of test codeunits that are run from its **OnRun** . When a test codeunit runs, it executes each test one at a time in the codeunit. When implemented, the **OnAfterTestRun** trigger is called after each test  has run and after all of the test codeunits have run.
 
 The **OnAfterTestRun** trigger suppresses the automatic display of the results message after the test codeunit runs.
 
@@ -105,7 +105,7 @@ END
 log.INSERT(true);  
 ```  
 
- The GETLASTERRORTEXT  returns the text that was contained in the last error message.  
+ The GETLASTERRORTEXT returns the text that was contained in the last error message.  
 
 ## See Also  
 [SubType Property (Codeunit)](../properties/devenv-subtype-property-codeunit.md)  

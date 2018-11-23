@@ -3,7 +3,7 @@ title: "Table Object"
 description: "Description of the table object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,55 @@ The structure of a table has four sections. The first block contains metadata fo
 
 ## Snippet support
 Typing the shortcut `ttable` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+## Table syntax
+```
+table id MyTable
+{
+    DataClassification = ToBeClassified;
+    
+    fields
+    {
+        field(1;MyField; Integer)
+        {
+            DataClassification = ToBeClassified;
+            
+        }
+    }
+    
+    keys
+    {
+        key(PK; MyField)
+        {
+            Clustered = true;
+        }
+    }
+    
+    var
+        myInt: Integer;
+    
+    trigger OnInsert()
+    begin
+        
+    end;
+    
+    trigger OnModify()
+    begin
+        
+    end;
+    
+    trigger OnDelete()
+    begin
+        
+    end;
+    
+    trigger OnRename()
+    begin
+        
+    end;
+    
+} 
+```
 
 ## Table example
 This table stores address information and has four fields; Address, Locality, Town/City, and County.
