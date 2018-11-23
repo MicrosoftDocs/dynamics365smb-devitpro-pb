@@ -27,7 +27,7 @@ For more information about the Page and Page Extension objects, see [Pages Overv
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!IMPORTANT]  
-> This API page type should not be extended by creating a page extension object. Instead, create a new API by adding a [page object](devenv-page-object.md).
+> The API page type should not be extended by creating a page extension object. Instead, create a new API by adding a [page object](devenv-page-object.md).
 
 ## Snippet support
 Typing the shortcut ```tpageext``` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -52,7 +52,7 @@ pageextension Id MyExtension extends MyTargetPage
 ```
 
 ## Page extension examples
-The following page extension object extends the Customer Card page object by adding a field control ```ShoeSize``` to the ```General``` group on the page. The field control is added as the last control in the group using the ```addlast``` method. In the actions area, you can see what the syntax looks like for actions that execute triggers and actions that run objects.
+The following page extension object extends the Customer Card page object by adding a field control `ShoeSize` to the `General` group on the page. The field control is added as the last control in the group using the `addlast` method. In the actions area, you can see what the syntax looks like for actions that execute triggers and actions that run objects.
 
 ```
 pageextension 50110 CustomerCardExtension extends "Customer Card"
