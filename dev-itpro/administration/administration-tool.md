@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 Business Central Server Administration Tool"
+title: "Microsoft Dynamics 365 Business Central Administration Center Tool"
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na
@@ -74,4 +74,5 @@ You can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to con
     >  When you close MMC, you are prompted to save your settings to a Microsoft Management Console \(.msc\) file. If you save your settings, then you can use this file to open MMC with your [!INCLUDE[server](../developer/includes/server.md)] computers already listed  
 
 ## See Also
-[Configuring Business Central Server Instances](configure-server-instance.md)
+[Configuring Business Central Server Instances](configure-server-instance.md)  
+[Administration Center API](administration-center-api.md)  
