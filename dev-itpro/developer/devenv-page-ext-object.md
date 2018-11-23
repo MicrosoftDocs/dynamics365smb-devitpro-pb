@@ -52,7 +52,7 @@ pageextension Id MyExtension extends MyTargetPage
 ```
 
 ## Page extension examples
-The following page extension object extends the Customer Card page object by adding a field control ```ShoeSize``` to the ```General``` group on the page. The field control is added as the last control in the group using the ```addlast``` method. In the actions area, you can see what the syntax looks like for actions that execute triggers and actions that run objects.
+The following page extension object extends the Customer Card page object by adding a field control `ShoeSize` to the `General` group on the page. The field control is added as the last control in the group using the `addlast` method. In the actions area, you can see what the syntax looks like for actions that execute triggers and actions that run objects.
 
 ```
 pageextension 50110 CustomerCardExtension extends "Customer Card"

@@ -68,9 +68,9 @@ You can choose between the following `area` categories:
 
 |Area type|Placement on the page|
 |---------|---------------------|
-|```Content```|The content area displays the content of a RoleCenter or a List page.|
-|```FactBoxes```|The factbox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
-|```RoleCenter```|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
+|`Content`|The content area displays the content of a RoleCenter or a List page.|
+|`FactBoxes`|The factbox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
+|`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
   
 <h2> Page Actions </h2>
 
@@ -90,15 +90,15 @@ You can use the following keywords in the `layout` section to place and move fie
 
 |Keywords        |Syntax | Applies to |
 |-----------------------|-------|-------------|
-|```addfirst```|```addfirst(Anchor)```|**Anchor**: areas and groups|
-|```addlast``` |```addlast(Anchor)``` |**Anchor**: areas and groups|
-|```addafter``` |```addafter(Anchor)``` |**Anchor**: controls, actions and groups|
-|```addbefore```|```addbefore(Anchor)``` |**Anchor**: controls, actions and groups|
-|```movefirst```|```movefirst(Anchor; Target1, Target2)```|**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
-|```movelast``` |```movelast(Anchor; Target1, Target2)``` |**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
-|```moveafter``` |```moveafter(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
-|```movebefore```|```movebefore(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
-|```modify```|```modify(Target)```|**Target**: controls, actions and groups|
+|`addfirst`|`addfirst(Anchor)`|**Anchor**: areas and groups|
+|`addlast` |`addlast(Anchor)` |**Anchor**: areas and groups|
+|`addafter` |`addafter(Anchor)` |**Anchor**: controls, actions and groups|
+|`addbefore`|`addbefore(Anchor)` |**Anchor**: controls, actions and groups|
+|`movefirst`|`movefirst(Anchor; Target1, Target2)`|**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
+|`movelast` |`movelast(Anchor; Target1, Target2)` |**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
+|`moveafter` |`moveafter(Anchor; Target1, Target2)`|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
+|`movebefore`|`movebefore(Anchor; Target1, Target2)`|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
+|`modify`|`modify(Target)`|**Target**: controls, actions and groups|
 
 
 ### Example
@@ -168,11 +168,11 @@ tableextension 70000020 CustomerTableExtension extends Customer
 ## Best practices for designing pages  
 We recommend that you simplify the user experience by reducing what users see by default. You can promote the information that the users most frequently need to see and hide the less important information. For example:  
   
--   Place common tasks in the ribbon  
+- Place common tasks in the ribbon  
   
--   Organize information pages under FastTabs and, by default, hide the FastTabs that are infrequently visited.  
+- Organize information pages under FastTabs and, by default, hide the FastTabs that are infrequently visited.  
   
--   Use one to three FactBoxes on a page to provide supplementary information and a place for adding notes.  
+- Use one to three FactBoxes on a page to provide supplementary information and a place for adding notes.  
   
 ## See Also  
 [Page Properties Overview](properties/devenv-page-property-overview.md)  
