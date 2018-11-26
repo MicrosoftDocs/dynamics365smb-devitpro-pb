@@ -14,7 +14,7 @@ manager: edupont
 
 
 # OnDeleteRecord Trigger
-Executed before a record is deleted from the table.  
+Runs before a record is deleted from the table.  
   
 ## Syntax  
   
