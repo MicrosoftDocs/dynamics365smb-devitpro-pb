@@ -22,7 +22,7 @@ Indicates whether the system displays zeros (0) and No.
 -   Page Fields  
   
 ## Property Value  
- **True** if zeros and No are displayed; otherwise, **false**. The default is **false**.  
+ **True** if zeros and No are not displayed; otherwise, **false**. The default is **false**.  
   
 ## See Also  
  [BlankNumbers Property](devenv-blanknumbers-property.md)

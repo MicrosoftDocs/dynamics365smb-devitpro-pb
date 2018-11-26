@@ -15,12 +15,11 @@ manager: edupont
 
 
 # OnAction Trigger
-Executed when a user selects an action on a page.  
+Runs when a user selects an action on a page.  
 
 ## Syntax  
 
 ```  
-
 OnAction()  
 ```  
 

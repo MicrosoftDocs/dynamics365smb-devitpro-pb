@@ -14,13 +14,13 @@ manager: edupont
 
 
 # OnPostXMLport Trigger
-Executed after the XMLPort is run.  
+Runs after the XMLPort is run.  
   
 ## Applies To  
- XMLPorts  
+- XMLPorts  
   
 ## Remarks  
- This trigger is executed after all data items are processed.  
+ This trigger is run after all data items are processed.  
   
 ## See Also  
  [Triggers](devenv-triggers.md)
