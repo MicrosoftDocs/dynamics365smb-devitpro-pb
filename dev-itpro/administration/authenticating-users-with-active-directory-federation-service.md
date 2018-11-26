@@ -190,9 +190,9 @@ To setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for ADFS auth
 
 The [!INCLUDE[server](../developer/includes/server.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], or by modifying the server instance's CustomSettings.config file directly.
 
-1. Clear the **Disable Token-Signing Certificate Validation** check box (In the CustomSettings.config file, you set the `DisableTokenSigningCertificateValidation` value to `true`.) 
+<!-- 1. Clear the **Disable Token-Signing Certificate Validation** check box (In the CustomSettings.config file, you set the `DisableTokenSigningCertificateValidation` value to `true`.) -->
 
-2.  Set the **Credential Type** (ClientServicesCredentialType) to `NavUserPassword` or `AccessControlService`.
+1.  Set the **Credential Type** (ClientServicesCredentialType) to `NavUserPassword` or `AccessControlService`.
     -   If you set this to `NavUserPassword`, client users can use either NavUserPassword or claims based authentication to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The CustomSettings.config file should include the following line:
 
         ```
@@ -203,7 +203,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
         ```
         <add key="ClientServicesCredentialType" value="AccessControlService"/>
         ```
-3.  For the Web client only, set the **WS-Federation Metadata Location** (ClientServicesFederationMetadataLocation) to the URL that defines the federation metadata XML document for your AD FS. The URL has the following format:
+2.  Set the **WS-Federation Metadata Location** (ClientServicesFederationMetadataLocation) to the URL that defines the federation metadata XML document for your AD FS. The URL has the following format:
 
     ```
     https://<Public URL for AD FS server>/federationmetadata/2007-06/federationmetadata.xml
@@ -218,7 +218,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     >[!NOTE]
     >This URL must to be accessible from a browser on the computer running the [!INCLUDE[server](../developer/includes/server.md)].
 
-4.  For the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set the **WSFederationLoginEndpoint** (WSFederationLoginEndpoint) to point to the AD FS login page for authenticating users.
+3.  For the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set the **WSFederationLoginEndpoint** (WSFederationLoginEndpoint) to point to the AD FS login page for authenticating users.
 
     ```
     https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=<Relying party trust identifier>%26wreply=<Business Central Web Client URL>/SignUp" />
@@ -235,9 +235,9 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     ```
     https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcvwebclient%26wreply=https://https://corp.sample.com/BC130/SignUp
     ```
-5. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the relying party trust identifier, for example `https://dynamicsnavwindows client`.
+4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the relying party trust identifier, for example `https://dynamicsnavwindows client`.
 
-6.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
+5.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
     >[!TIP]
     >You can use the [Set-NAVServerInstance cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerInstance) to restart the service instance.
