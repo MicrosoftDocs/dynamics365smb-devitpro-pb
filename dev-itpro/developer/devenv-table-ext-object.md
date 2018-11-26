@@ -3,7 +3,7 @@ title: "Table Extension Object"
 description: "Description of the table extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,12 +27,25 @@ When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_
 > Extension objects can have a name with a maximum length of 30 characters.
 
 ## Snippet support
-
 Typing the shortcut `ttableext` will create the basic layout for a table extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Properties
 
 Using a table extension allows you to overwrite some properties on fields in the base table. For a list of Table properties, see [Table and Table Extension Properties](properties/devenv-table-properties.md).
+
+## Table extension syntax
+```
+tableextension Id MyExtension extends MyTargetTable
+{
+    fields
+    {
+        // Add changes to table fields here
+    }
+    
+    var
+        myInt: Integer;
+}
+```
 
 ## Table extension example
 

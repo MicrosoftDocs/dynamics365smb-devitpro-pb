@@ -14,10 +14,10 @@ manager: edupont
 
 
 # OnPreXMLItem Trigger
-Executed after the table is initialized and before you start exporting data to an XML object. This trigger only applies to XMLPort elements that have a source type of **Table**.  
+Runs after the table is initialized and before you start exporting data to an XML object. This trigger only applies to XMLPort elements that have a source type of **Table**.  
   
 ## Applies To  
- XMLports  
+- XMLports  
   
 ## Remarks  
  This trigger is only used to export data. It is typically used to set filters on the data and to initialize variables before finding the first record.  

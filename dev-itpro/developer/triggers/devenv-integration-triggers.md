@@ -25,9 +25,9 @@ The following triggers have been added to support integration with Dynamics 365 
 -   **OnDatabaseDelete**  
 
 ## Applies To  
- Pages  
+- Pages  
 
- Tables  
+- Tables  
 
 ## Remarks  
  These triggers are called whenever a record changes through code or user interaction.  
