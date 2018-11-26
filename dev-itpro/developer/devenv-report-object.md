@@ -3,7 +3,7 @@ title: "Report Object"
 description: "Reports are used to print or display information from a database."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,6 +30,59 @@ You build the layout of a report by arranging data items and columns, and specif
 
 ## Snippet support
 Typing the shortcut ```treport``` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+## Report syntax
+```
+report Id MyReport
+{
+    UsageCategory = Administration;
+    ApplicationArea = All;
+    
+    dataset
+    {
+        dataitem(DataItemName; SourceTableName)
+        {
+            column(ColumnName; SourceFieldName)
+            {
+                
+            }
+        }
+    }
+    
+    requestpage
+    {
+        layout
+        {
+            area(Content)
+            {
+                group(GroupName)
+                {
+                    field(Name; SourceExpression)
+                    {
+                        ApplicationArea = All;
+                        
+                    }
+                }
+            }
+        }
+    
+        actions
+        {
+            area(processing)
+            {
+                action(ActionName)
+                {
+                    ApplicationArea = All;
+                    
+                }
+            }
+        }
+    }
+    
+    var
+        myInt: Integer;
+}
+```
 
 ## Report example
 The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a report, see [Creating a Report](devenv-howto-report-layout.md).
