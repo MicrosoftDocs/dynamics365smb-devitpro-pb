@@ -14,11 +14,10 @@ ms.service: "dynamics365-business-central"
 
 
 # OnBeforeTestRun Trigger
-Executed before a test  of a test codeunit is run.
+Runs before a test  of a test codeunit is run.
 
 ```
 OnBeforeTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[128]; TestPermissions : Text) Ok : Boolean)
-
 ```
 
 ## Parameters
@@ -47,7 +46,7 @@ Specifies the name of the test  to be run.
 
 Type: TestPermissions
 
-Specifies the permission set level to use on the test run. The value is retrieved from the [TestPermissions Property](../properties/devenv-testpermissions-property.md) of the test codeunit or test  that is run. The parameter accepts the following values:
+Specifies the permission set level to use on the test run. The value is retrieved from the [TestPermissions Property](../properties/devenv-testpermissions-property.md) of the test codeunit or test that is run. The parameter accepts the following values:
 
 *   **Disabled**
 *   **Restrictive**

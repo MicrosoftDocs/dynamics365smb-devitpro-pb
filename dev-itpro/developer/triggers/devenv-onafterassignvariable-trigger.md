@@ -14,10 +14,10 @@ manager: edupont
 
 
 # OnAfterAssignVariable Trigger
-Executed after the value defined in the XML document is assigned to the text variable.  
+Runs after the value defined in the XML document is assigned to the text variable.  
   
 ## Applies to  
- XMLports  
+- XMLports  
   
 ## Remarks  
  This trigger is only used to import data and gives you access to the imported value in text format.  

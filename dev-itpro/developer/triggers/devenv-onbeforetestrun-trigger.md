@@ -13,12 +13,11 @@ author: SusanneWindfeldPedersen
 
 
 # OnBeforeTestRun Trigger
-Executed before a test  of a test codeunit is run.  
+Runs before a test  of a test codeunit is run.  
 
 ## Syntax  
 
 ```  
-
 OnBeforeTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[128]) Ok : Boolean  
 ```  
 
@@ -61,10 +60,10 @@ Specifies the permission set level to use on the test run. The value is retrieve
  **True** to run the test ; otherwise, **false**. This value is checked after each  call.  
 
 ## Applies To  
- Test runner codeunits. Test runner codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **TestRunner**.  
+-  Test runner codeunits. Test runner codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **TestRunner**.  
 
 > [!NOTE]  
->  This trigger is optional and not available on a test runner codeunit by default. To implement this trigger, you must manually add it as a .  
+>  This trigger is optional and not available on a test runner codeunit by default. To implement this trigger, you must manually add it.  
 
 ## Remarks  
  A test runner codeunit manages the execution of test codeunits that are run from its **OnRun** . When a test codeunit runs, it executes each test  in the codeunit, one at a time. The **OnBeforeTestRun** trigger is called before the test codeunit, the **OnRun** , and each test .  
@@ -78,7 +77,7 @@ Specifies the permission set level to use on the test run. The value is retrieve
  <!-- For more information, see [Testing the Application](../devenv-testing-the-application.md) and [How to: Create a Test Runner Codeunit](../devenv-how-to-create-a-test-runner-codeunit.md).  -->
 
 ## Example  
- The following **OnBeforeTestRun** trigger code initializes a logging variable and returns **true** to indicate that the test  should execute. This example requires that you create the following global variable.  
+ The following **OnBeforeTestRun** trigger code initializes a logging variable and returns **true** to indicate that the test should execute. This example requires that you create the following global variable.  
 
 |Name|DataType|  
 |----------|--------------|  

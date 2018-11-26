@@ -14,7 +14,7 @@ manager: edupont
 
 
 # OnModifyRecord Trigger
-Executed before a record is modified in the table.  
+Runs before a record is modified in the table.  
   
 ## Syntax  
   
