@@ -26,5 +26,5 @@ Tables
 **True** if data is available only to this company; otherwise, **false**. The default value is **true**.  
   
 ## See Also  
- [Properties](devenv-properties.md)
- [DataSource Property](devenv-datasource-property.md)
+[Properties](devenv-properties.md)  
+[DataSource Property](devenv-datasource-property.md)  
