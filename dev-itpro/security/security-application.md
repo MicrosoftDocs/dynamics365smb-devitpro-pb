@@ -33,7 +33,7 @@ For more information, see Authentication and Credential Types.
 
 [User permissions in the application](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/user-security#user-permissions-in-the-application)
 
-[Database Level](data-security.md#tabs=database-level)
+[Database Level](data-security.md?tabs=database-level)
 
 [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)
 
