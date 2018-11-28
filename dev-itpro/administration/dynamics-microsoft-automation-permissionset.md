@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
@@ -26,11 +26,11 @@ Represents a permissionSet resource type in [!INCLUDE[d365fin_long_md](../develo
 
 | Property | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
-|scope               |string  |code of the userGroup.|
-|appID      |guid|Display of the useGroup.     |
-|id|string|Id of the defaultProfile.|
-|displayName|string|If true, all new users are assigned to userGroup|
-|extensionName|string|If true, all new users are assigned to userGroup|
+|scope     |string  |code of the userGroup.|
+|appID     |guid | Display of the useGroup.     |
+|id|string|ID of the defaultProfile.|
+|displayName|string|If true, all new users are assigned to userGroup.|
+|extensionName|string|If true, all new users are assigned to userGroup.|
 
 ## Relationships / Navigation properties
 
