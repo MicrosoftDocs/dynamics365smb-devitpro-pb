@@ -42,7 +42,7 @@ Represents a configurationPackage resource type in [!INCLUDE[d365fin_long_md](..
 |processingOrder|int|Specifies the order of processing.|
 |excludeConfigurationTables|boolean|Exclude configuration tables.|
 |numberOfTables|int|Number of tables.|
-|numberOfRecords|int|Numbe of records.|
+|numberOfRecords|int|Number of records.|
 |numberOfErrors|int|Number of errors.|
 |importStatus|string|Status of import.|
 |applyStatus|string|Status of configurationPackage apply.|

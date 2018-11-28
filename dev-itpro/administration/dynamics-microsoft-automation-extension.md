@@ -32,11 +32,11 @@ Represents an extension resource type in [!INCLUDE[d365fin_long_md](../developer
 
 | Property	      | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
-|packageId               |GUID  |The unique ID of the package. Read-Only.|
-|displayName             |string|Specifies the extension name.                  |
+|packageId        |GUID  |The unique ID of the package. Read-Only.|
+|displayName      |string|Specifies the extension name.                  |
 |publisher|string|Specifies the publisher of the extension.                  |
-|versionMajor      |int|Major version of the extension.     |
-|versionMinor      |int|Minor version of the extension.     |
+|versionMajor     |int|Major version of the extension.     |
+|versionMinor     |int|Minor version of the extension.     |
 |isInstalled|boolean|Specifies the installation status.|
 
 ## Relationships

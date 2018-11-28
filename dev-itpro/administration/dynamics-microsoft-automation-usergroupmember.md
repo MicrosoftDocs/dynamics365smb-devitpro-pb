@@ -27,8 +27,8 @@ Represents a userGroup resource type in [!INCLUDE[d365fin_long_md](../developer/
 
 | Property | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
-|code               |string  |code of the userGroup.|
-|userSecurityID      |Guid|SecurityId of the user.  |
+|code             |string  |code of the userGroup.|
+|userSecurityID   |Guid|SecurityId of the user.  |
 |companyName|string|Name of the company.|
 |displayName|string|Display name of the userGroup.|
 

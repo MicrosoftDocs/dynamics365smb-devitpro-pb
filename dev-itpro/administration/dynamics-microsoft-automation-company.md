@@ -30,7 +30,7 @@ Represents a user resource type in [!INCLUDE[d365fin_long_md](../developer/inclu
 |systemVersion    |string|The systemVersion.             |
 |displayName      |string|diplayName of the company.     |
 |name      |string|Name of the company.     |
-|businessProfileId|string|Id of the businessProfile.|
+|businessProfileId|string|ID of the businessProfile.|
 
 ## Relationships / Navigation properties
 | Navigation property	      | Type |Description                             |
