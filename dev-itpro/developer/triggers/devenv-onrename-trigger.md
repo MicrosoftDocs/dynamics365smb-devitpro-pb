@@ -14,13 +14,13 @@ manager: edupont
 
 
 # OnRename Trigger
-Executed when a user tries to rename a record.  
+Runs when a user tries to rename a record.  
   
 ## Applies to  
- Tables  
+- Tables  
   
 ## Remarks  
- When you rename a record in one location, it is updated in all other locations. The OnRename trigger executes before the rename occurs. The record is not renamed if an error occurs in the trigger code.  
+ When you rename a record in one location, it is updated in all other locations. The OnRename trigger runs before the rename occurs. The record is not renamed if an error occurs in the trigger code.  
   
 ## See Also  
  [Triggers](devenv-triggers.md)  

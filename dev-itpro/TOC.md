@@ -45,7 +45,8 @@
 <!-- administration-->
 # [Administration](administration/administration.md)
 ## Online
-### [Administration center](administration/tenant-admin-center.md)
+### [Administration Center](administration/tenant-admin-center.md)
+### [Administration Center API](administration/administration-center-api.md)
 ### Automation
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
@@ -160,6 +161,7 @@
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
+### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ## [Working with Translation Files](developer/devenv-work-with-translation-files.md)

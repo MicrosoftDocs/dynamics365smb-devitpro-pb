@@ -15,10 +15,10 @@ manager: edupont
 
 
 # OnInitXMLport Trigger
-Executed when the XMLport is loaded and before any table views and filters are set.  
+Runs when the XMLport is loaded and before any table views and filters are set.  
   
 ## Applies To  
- XMLports  
+- XMLports  
   
 ## See Also  
  [Triggers](devenv-triggers.md)  
