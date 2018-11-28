@@ -26,9 +26,9 @@ Represents a permissionSet resource type in [!INCLUDE[d365fin_long_md](../develo
 
 | Property | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
-|scope               |string  |code of the userGroup.|
-|appID      |guid|Display of the useGroup.     |
-|id|string|Id of the defaultProfile.|
+|scope     |string  |code of the userGroup.|
+|appID     |guid | Display of the useGroup.     |
+|id|string|ID of the defaultProfile.|
 |displayName|string|If true, all new users are assigned to userGroup.|
 |extensionName|string|If true, all new users are assigned to userGroup.|
 

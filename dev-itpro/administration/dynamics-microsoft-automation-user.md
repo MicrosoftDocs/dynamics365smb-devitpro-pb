@@ -28,7 +28,7 @@ Represents a user resource type in [!INCLUDE[d365fin_long_md](../developer/inclu
 |userSecurityId   |GUID  |The unique ID of the package. Read-Only.|
 |userName         |string|Specifies the extension name.           |
 |displayName      |string|Major version of the extension.     |
-|state      |string|Minor version of the extension.     |
+|state            |string|Minor version of the extension.     |
 |expiryDate|DateTimeOffset|Specifies the installation status.|
 
 ## Relationships / Navigation properties

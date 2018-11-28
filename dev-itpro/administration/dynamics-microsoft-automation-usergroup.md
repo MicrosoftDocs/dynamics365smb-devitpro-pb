@@ -27,7 +27,7 @@ Represents a userGroup resource type in [!INCLUDE[d365fin_long_md](../developer/
 |:----------------|:-----|:---------------------------------------|
 |code             |string  |code of the userGroup.|
 |displayName      |string  |Display of the useGroup.     |
-|defaultProfileID|string   |Id of the defaultProfile.|
+|defaultProfileID|string   |ID of the defaultProfile.|
 |assignToAllNewUsers|boolean|If true, all new users are assigned to userGroup.|
 
 ## Relationships / Navigation properties
