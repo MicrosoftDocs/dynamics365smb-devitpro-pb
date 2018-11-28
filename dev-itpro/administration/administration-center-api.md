@@ -16,7 +16,7 @@ ms.date: 11/21/2018
 # The Business Central Administration Center API
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API enables administrators to programmatically perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Using the API, administrators can query and work with production and sandbox environments for the tenant, set up upgrade notifications, and view telemetry for events on the tenant. 
 
-See [Administration Center](administration-tool.md) for more details on administrative capabilities. This article describes the API contracts.
+See [Administration Center](tenant-admin-center.md) for more details on administrative capabilities. This article describes the API contracts for these administrative capabilities.
 
 ## Location
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: https://api.businesscentral.dynamics.com.
@@ -54,8 +54,15 @@ Powershell example without prompt:
     $token = $ctx.AcquireTokenAsync("https://api.businesscentral.dynamics.com", <Application ID>, $redirectUri, $platformParameters).GetAwaiter().GetResult().AccessToken
  ```
 
-## Get environments and Get environments by application family
+## Environments
+Environments are the instances of the application that have been setup for the tenant. An instance can be of either a production type or a sandbox type. Currently, there can be one production environment and one sandbox environment per tenant. The environment APIs can be used to get information about the environments currently set up for the tenant, create a new sandbox environment using sample data or as a copy of the production environment, and delete the sandbox environment.
+
+### Get environments and Get environments by application family
+Returns a list of all the environments for the tenant. 
+
 ```[200] GET /v1.1/admin/environments```
+
+Returns a list of the environments for the specified application family.
 
 ```[200] GET /v1.1/admin/applications/{applicationFamily}/environments```
 
@@ -80,7 +87,8 @@ Returns a wrapped array of environments
 }
 ```
 
-## Get environment by application family and name
+### Get environment by application family and name
+Returns the properties for the provided environment name if it exists.
 
 ```[200] GET /v1.1/admin/applications/{applicationFamily}/environments/{environmentName}```
 
@@ -100,22 +108,9 @@ Returns a single environment if exists
 }
 ```
 
-## Delete environment
-```[202] DELETE /v1.1/admin/applications/{applicationFamily}/environments/{environmentName | "sandbox" or "production"}```
+### Create environment
+Creates a new sandbox environment with sample data.
 
-## Copy environment
-```[201] PUT /v1.1/admin/applications/{applicationFamily}/environments/{environmentName | "sandbox" or "production"}```
-
-**Body**
-
-```
-{
-  "copyFromEnvironmentName": "Production",
-  "type": "Sandbox"
-}
-```
-
-## Create environment
 ```[201] PUT /v1.1/admin/applications/{applicationFamily}/environments/{environmentName | "sandbox" or "production"}```
 
 **Body**
@@ -138,13 +133,13 @@ Returns newly created environment
   }
 ```
 
-### Path parameters
+#### Path parameters
 
 **- applicationFamily:** Family of the application as is.
 
 **- environmentName:** Free field; but, currently only "sandbox" is used. Stored case sensitive, indexed case insensitive.
 
-### Errors
+#### Errors
 
 ```
 {
@@ -168,8 +163,31 @@ Returns newly created environment
   }
 }
 ```
+### Copy environment
+Creates a new sandbox environment with a copy of the production environment's data.
 
-## Get Upgrade Settings
+```[201] PUT /v1.1/admin/applications/{applicationFamily}/environments/{environmentName | "sandbox" or "production"}```
+
+**Body**
+
+```
+{
+  "copyFromEnvironmentName": "Production",
+  "type": "Sandbox"
+}
+```
+
+### Delete environment
+Deletes the specified environment. Warning: A production environment should not be deleted.
+
+```[202] DELETE /v1.1/admin/applications/{applicationFamily}/environments/{environmentName | "sandbox" or "production"}```
+
+## Upgrades
+The upgrade settings allow you to specify an upgrade window for when during the day an upgrade can be performed on the tenant environment. The upgrade window must be a minimum of 6 hours. (i.e. 1:00 - 7:00)
+
+### Get Upgrade Settings
+Returns the upgrade settings for the environment. The upgrade settings currently available are the start and end times for the upgrade window.
+
 ```[200] GET v1.1/admin/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
 
 **Response:**  
@@ -184,7 +202,9 @@ Returns the environment's upgrade settings, or "null" if not exists
 > [!NOTE]  
 > The `date` components of the values are ignored, only the time components are used.
 
-## Put Upgrade Settings
+### Put Upgrade Settings
+Set the upgrade window start and end times.
+
 ```[200] PUT v1.1/admin/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
 
 **Body**
@@ -208,7 +228,12 @@ Returns the updated settings
 > [!NOTE]  
 > The `date` components of the values are ignored, only the time components are used.
 
-## Get Environment Telemetry
+## Telemetry
+Telemetry includes the logged events from the service. These events can provide necessary information and errors that can be used to troubleshoot issues happening in the tenant's environment. 
+
+### Get Environment Telemetry
+Returns the telemetry information for the provided environment and filters. It is recommended that you provide start and end time parameters in order to return a managable data set.
+
 ```[200] GET v1.1/admin/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}```
 
 **Query parameters:**
@@ -233,8 +258,12 @@ Returns the telemetry logs and with data column headers.
 }
 ```
 
+## Notifications
+Notifications are sent to the recipient email addresses set up for the tenant. The notifications sent to these recipients currently includes an email when the tenant's environment was successfully upgraded, but will be expanded to include many other upgrade, extension and other notifications in the future.   
 
-## Get Notification Recipients
+### Get Notification Recipients
+Returns a list of notification recipients.
+
 ```[200] GET /v1.1/admin/settings/notification/recipients```
 
 **Response:**  
@@ -253,7 +282,9 @@ Returns a wrapped array of recipients.
 }
 ```
 
-## Create Notification Recipient
+### Create Notification Recipient
+Create a new notification recipient.
+
 ```[200] PUT /v1.1/admin/settings/notification/recipients```
 
 **Body**
@@ -275,7 +306,9 @@ Returns the newly created recipient.
 }
 ```
 
-## Update Notification Recipient
+### Update Notification Recipient
+Modify an existing notification recipient.
+
 ```[200] PUT /v1.1/admin/settings/notification/recipients```
 
 **Body**
@@ -298,10 +331,14 @@ Returns the updated recipient.
 }
 ```
 
-## Delete Notification Recipient
+### Delete Notification Recipient
+Deletes an existing notification recipient.
+
 ```[200] DELETE /v1.1/admin/settings/notification/recipients/{id}```
 
-## Get Notification Settings
+### Get Notification Settings
+Returns the properties of the specified notification recipient.
+
 ```[200] GET /v1.1/admin/settings/notification```
 
 **Response:**  
