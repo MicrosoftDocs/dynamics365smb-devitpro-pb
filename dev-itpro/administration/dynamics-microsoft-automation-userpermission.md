@@ -19,18 +19,18 @@ Represents a userPermissions resource type in [!INCLUDE[d365fin_long_md](../deve
 ## Methods
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[GET userPermissions](dynamics-microsoft-automation-userpermission-get.md)|userPermission|Gets all userPermissions|
-|[POST userPermissions](dynamics-microsoft-automation-userpermission-post.md)|userGroup|Adds to userPermissions|
-|[DELETE userPermissions](dynamics-microsoft-automation-userpermission-delete.md)|userGroup|Removes from userPermissions|
+|[GET userPermissions](dynamics-microsoft-automation-userpermission-get.md)|userPermission|Gets all userPermissions.|
+|[POST userPermissions](dynamics-microsoft-automation-userpermission-post.md)|userGroup|Adds to userPermissions.|
+|[DELETE userPermissions](dynamics-microsoft-automation-userpermission-delete.md)|userGroup|Removes from userPermissions.|
 
 ## Properties
 
 | Property | Type |Description                             |
-|:----------------|:-----|:---------------------------------------|
+|:----------------|:-----|:--------------------------------|
 |code             |string  |code of the userGroup.|
-|displayName      |string|Display of the userGroup.     |
+|displayName      |string|Display of the userGroup.|
 |defaultProfileID|string|Id of the defaultProfile.|
-|assignToAllNewUsers|boolean|If true, all new users are assigned to userGroup|
+|assignToAllNewUsers|boolean|If true, all new users are assigned to userGroup.|
 
 ## Relationships / Navigation properties
 None
