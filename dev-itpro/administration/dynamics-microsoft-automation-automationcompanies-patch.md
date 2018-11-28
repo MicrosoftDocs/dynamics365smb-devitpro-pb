@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
@@ -26,7 +26,7 @@ PATCH /microsoft/automation/{apiVersion}/companies({{companyid}})/automationComp
 |Header       |Value                    |
 |-------------|-------------------------|
 |Authorization|Bearer {token}. Required.|
-|Content-Type |application/json         |
+|Content-Type |application/json.         |
 |If-Match     |Required. When this request header is included and the eTag provided does not match the current tag on the **automationCompany**, the **automationCompany** will not be updated. |
 
 ## Request body

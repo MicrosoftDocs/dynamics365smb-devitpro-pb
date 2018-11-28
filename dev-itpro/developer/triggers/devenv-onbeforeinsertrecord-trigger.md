@@ -15,10 +15,10 @@ manager: edupont
 
 
 # OnBeforeInsertRecord Trigger
-Executed after a record has been loaded and before it is inserted into a database table.  
+Runs after a record has been loaded and before it is inserted into a database table.  
   
 ## Applies To  
- XMLports  
+- XMLports  
   
 ## Remarks  
  This trigger is only used to import data. It is typically used for evaluation or calculations before the record is inserted into the database table.  

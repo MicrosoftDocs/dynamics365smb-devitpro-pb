@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Overrides the default drill-down behavior defined in the table definition for the FlowField.  
 
 ## Applies To  
- Fields on pages  
+- Fields on pages  
 
 > [!NOTE]  
 >  The OnDrillDown trigger is not invoked on fields in a Repeater control<!--NAV in the [!INCLUDE[nav_web](../includes/nav_web_md.md)]-->.  

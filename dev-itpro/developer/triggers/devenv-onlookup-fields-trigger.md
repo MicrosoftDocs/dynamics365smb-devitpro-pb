@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 Causes the system to display a lookup page.  
 
 ## Applies To  
- Fields  
+- Fields  
 
 ## Remarks  
  There are three lookup options:  

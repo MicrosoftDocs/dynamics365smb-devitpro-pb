@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
@@ -31,7 +31,7 @@ Body: binary content of the RapidStart package
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|Content-type|application/octet-stream|
+|Content-type|application/octet-stream.|
 |If-Match|Required. When this request header is included and the eTag provided does not match the current tag on the **configurationPackage**, the **configurationPackage** will not be updated. |
 
 ## Request body
