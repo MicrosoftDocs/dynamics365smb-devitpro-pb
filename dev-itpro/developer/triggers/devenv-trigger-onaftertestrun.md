@@ -14,7 +14,7 @@ ms.service: "dynamics365-business-central"
 
 
 # OnAfterTestRun Trigger
-Executed after a test  of a test codeunit has been run.
+Runs after a test  of a test codeunit has been run.
 
 ```
 OnAfterTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[128]; MethodTestPermissions : TestPermissions; Success : Boolean)
@@ -40,7 +40,7 @@ Type: Text
 The name of the test  that has run.
 
 > [!NOTE]  
->  This parameter is empty when the **OnAfterTestRun** trigger is called for the whole test codeunit. 
+> This parameter is empty when the **OnAfterTestRun** trigger is called for the whole test codeunit. 
 
 *Permissions*
 
@@ -101,7 +101,7 @@ END
 log.INSERT(true);
 ```
 
-The GETLASTERRORTEXT  returns the text that was contained in the last error message.
+The GETLASTERRORTEXT returns the text that was contained in the last error message.
 
 ## See Also  
 [TestPermissions Property](../properties/devenv-testpermissions-property.md)  

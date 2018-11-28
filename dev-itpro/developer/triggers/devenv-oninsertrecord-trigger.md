@@ -14,12 +14,11 @@ manager: edupont
 
 
 # OnInsertRecord Trigger
-Executed before a new record is inserted into the table.  
+Runs before a new record is inserted into the table.  
   
 ## Syntax  
   
-```  
-  
+```   
 [Ok]:= OnInsertRecord(BelowxRec)  
 ```  
   

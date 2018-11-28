@@ -14,7 +14,7 @@ manager: edupont
 
 
 # OnClosePage Trigger
-Executed as a page closes after the [OnQueryClosePage Trigger](devenv-onqueryclosepage-trigger.md) is executed.  
+Runs as a page closes after the [OnQueryClosePage Trigger](devenv-onqueryclosepage-trigger.md) is executed.  
 
 ## Syntax  
 
@@ -41,5 +41,5 @@ OnClosePage()
 
 ## See Also  
  [Triggers](devenv-triggers.md)  
- [OnQueryClosePage Trigger](devenv-onqueryclosepage-trigger.md)
+ [OnQueryClosePage Trigger](devenv-onqueryclosepage-trigger.md)  
  [Page and Action Triggers](devenv-page-and-action-triggers.md)  

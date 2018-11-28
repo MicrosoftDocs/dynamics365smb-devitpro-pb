@@ -15,10 +15,10 @@ manager: edupont
 
 
 # OnAfterGetCurrRecord Trigger
-Executed after the current record is retrieved from the table.  
+Runs after the current record is retrieved from the table.  
 
 ## Applies To  
- Pages  
+- Pages  
 
 ## Remarks  
  In a page with a repeater, the trigger is only called when the current record in the repeater is updated. OnAfterGetCurrRecord is called directly after all OnAfterGetRecord triggers are called for each row in a list.  

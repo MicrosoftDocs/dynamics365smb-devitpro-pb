@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
@@ -20,13 +20,13 @@ Represents a extensionDeploymentStatus resource type in [!INCLUDE[d365fin_long_m
 
 | Property	      | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
-|name             |string|Specifies the extension name.                  |
-|publisher|string|Specifies the publisher of the extension.                  |
+|name             |string|Specifies the extension name.           |
+|publisher|string|Specifies the publisher of the extension.       |
 |operationType      |string|Specifies the operation.     |
 |status      |string|Status of current extension installation process.     |
-|schedule|string|specifies the schedule for installation|
-|appVersion|string|Version of the extension|
-|startedOn|DateTimeOffset|Timestamp for the initialization of the operation|
+|schedule|string|specifies the schedule for installation.         |
+|appVersion|string|Version of the extension.                      |
+|startedOn|DateTimeOffset|Timestamp for the initialization of the operation.|
 
 ## Relationships
 None

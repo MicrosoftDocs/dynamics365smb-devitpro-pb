@@ -14,7 +14,7 @@ manager: edupont
 
 
 # OnQueryClosePage Trigger
-Executed as a page closes and before the [OnClosePage Trigger](devenv-OnClosePage-Trigger.md) executes.  
+Runs as a page closes and before the [OnClosePage Trigger](devenv-OnClosePage-Trigger.md) executes.  
 
 ## Syntax  
 
