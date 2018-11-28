@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
@@ -27,7 +27,7 @@ Represents a user resource type in [!INCLUDE[d365fin_long_md](../developer/inclu
 | Property | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
 |id               |GUID  |The unique ID of the company. Read-Only.|
-|systemVersion             |string|The systemVersion.                  |
+|systemVersion    |string|The systemVersion.             |
 |displayName      |string|diplayName of the company.     |
 |name      |string|Name of the company.     |
 |businessProfileId|string|Id of the businessProfile.|
@@ -35,12 +35,12 @@ Represents a user resource type in [!INCLUDE[d365fin_long_md](../developer/inclu
 ## Relationships / Navigation properties
 | Navigation property	      | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
-|[automationCompanies](dynamics-microsoft-automation-automationcompany.md)               | automationCompany|Gets the automationCompanies |
-|[extensions](dynamics-microsoft-automation-extension.md)             |extension|Gets published extensions.                  |
-|[userGroups](dynamics-microsoft-automation-usergroup.md)      |userGroup|Gets userGroups.     |
-|[users](dynamics-microsoft-automation-user.md)      |user|Gets the users.     |
+|[automationCompanies](dynamics-microsoft-automation-automationcompany.md)               | automationCompany|Gets the automationCompanies. |
+|[extensions](dynamics-microsoft-automation-extension.md)             |extension|Gets published extensions. |
+|[userGroups](dynamics-microsoft-automation-usergroup.md)      |userGroup|Gets userGroups. |
+|[users](dynamics-microsoft-automation-user.md)      |user|Gets the users. |
 |[userGroupMembers](dynamics-microsoft-automation-usergroupmember.md)|userGroupMember|Gets userGroupMembers.|
-|[userPermissions](dynamics-microsoft-automation-userpermission.md)|userPermission|Gets avaliable userPermissions.|
+|[userPermissions](dynamics-microsoft-automation-userpermission.md)|userPermission|Gets available userPermissions.|
 |[permissionSets](dynamics-microsoft-automation-permissionset.md)|permissionSet|Gets available permissionSets.|
 
 ## JSON representation

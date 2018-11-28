@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
@@ -19,10 +19,10 @@ Represents a configurationPackage resource type in [!INCLUDE[d365fin_long_md](..
 ## Methods
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[GET configurationPackages](dynamics-microsoft-automation-configurationpackage-get.md)|configurationPackage|Gets all configurationPackages|
-|[POST configurationPackages](dynamics-microsoft-automation-configurationpackage-post.md)|none|Inserts a new configuration package
-|[Patch configurationPackages](dynamics-microsoft-automation-configurationpackage-patch.md)|none|Upload a configurationPackage
-|[Delete configurationPackages](dynamics-microsoft-automation-configurationpackage-delete.md)|none|Delete a configurationPackage
+|[GET configurationPackages](dynamics-microsoft-automation-configurationpackage-get.md)|configurationPackage|Gets all configurationPackages.|
+|[POST configurationPackages](dynamics-microsoft-automation-configurationpackage-post.md)|none|Inserts a new configuration package.|
+|[Patch configurationPackages](dynamics-microsoft-automation-configurationpackage-patch.md)|none|Upload a configurationPackage.|
+|[Delete configurationPackages](dynamics-microsoft-automation-configurationpackage-delete.md)|none|Delete a configurationPackage.|
 
 ## Bound Actions
 
@@ -36,16 +36,16 @@ Represents a configurationPackage resource type in [!INCLUDE[d365fin_long_md](..
 | Property | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
 |code               |string  |code of the configurationPackage.|
-|packageName      |string|Name of the configurationPackage.     |
+|packageName      |string|Name of the configurationPackage.    |
 |languageId|int|Id of the language.|
 |productVersion|string|Product version.|
 |processingOrder|int|Specifies the order of processing.|
-|excludeConfigurationTables|boolean|Exclude configuration tables|
-|numberOfTables|int|Number of tables|
-|numberOfRecords|int|Numbe of records|
-|numberOfErrors|int|Number of errros|
-|importStatus|string|Status of import|
-|applyStatus|string|Status of configurationPackage apply|
+|excludeConfigurationTables|boolean|Exclude configuration tables.|
+|numberOfTables|int|Number of tables.|
+|numberOfRecords|int|Numbe of records.|
+|numberOfErrors|int|Number of errors.|
+|importStatus|string|Status of import.|
+|applyStatus|string|Status of configurationPackage apply.|
 
 
 ## Relationships / Navigation properties
