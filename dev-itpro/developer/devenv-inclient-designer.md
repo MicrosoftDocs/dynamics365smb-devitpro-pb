@@ -25,9 +25,10 @@ Here is a quick overview of capabilities in **Designer**:
 |Add components                     |fields and columns               |
 |Move components                    |fields, columns, cues, and parts |
 |Remove components                  |fields, columns, cues, and parts |
+|Set the [Importance property](properties/devenv-importance-property.md) to determine whether a field displays in the FastTab heading when the FastTab is collapsed or only when the users selects **Show more**.|fields|
 |Set freeze pane and clear freeze pane |columns                       |
 |Adjust column width |columns                       |
-|Edit caption                       |fasttab, cards, factbox          |
+|Edit caption                       |FastTab, cards, FactBox          |
 |Save extension/download code       |general                          |
 |Preview design                     |general                          |
 
