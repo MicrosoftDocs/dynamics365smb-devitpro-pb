@@ -156,7 +156,10 @@ Authorization: Bearer {token}
 
 ### Upload and install a per-tenant extension
 Issue a [PATCH](dynamics-microsoft-automation-extensionupload-patch.md) against the **extensionUpload** endpoint to upload and install the extension. 
-
+---
+**NOTE**
+Installing per-tenant extensions using Automation APIs, is only possible in SaaS.
+---
 Uninstalling the extension can be done through the bound action [Microsoft.NAV.uninstall](dynamics-microsoft-automation-extension-post.md), as with the add-on extensions.  
 
 ## See Also 
