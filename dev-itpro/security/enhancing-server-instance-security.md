@@ -28,7 +28,8 @@ The default configuration is for the service to log on using the NT Authority\\N
 ```  
 netsh firewall set portopening protocol=TCP port=7046 scope=subnet addresses=LocalSubnet  
 ```  
-  
+
+
 ## See Also  
  [Configuring Business Central Server](../administration/configure-server-instance.md)   
  [Security and Protection](security-and-protection.md)   
