@@ -3,7 +3,7 @@ title: "Introduction to automation APIs"
 description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
 author: henrikwh
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/29/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -156,6 +156,9 @@ Authorization: Bearer {token}
 
 ### Upload and install a per-tenant extension
 Issue a [PATCH](dynamics-microsoft-automation-extensionupload-patch.md) against the **extensionUpload** endpoint to upload and install the extension. 
+
+> [!NOTE]  
+> Installing per-tenant extensions using Automation APIs is only possible in SaaS.
 
 Uninstalling the extension can be done through the bound action [Microsoft.NAV.uninstall](dynamics-microsoft-automation-extension-post.md), as with the add-on extensions.  
 
