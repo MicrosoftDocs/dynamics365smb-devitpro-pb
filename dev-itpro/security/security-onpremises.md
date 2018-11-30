@@ -22,26 +22,33 @@ Link to new page on Authentication types
 ## Server Security
 
 [Server hardening](enhancing-server-instance-security.md)  
- 
+
 [Locking Down Server Communication settings](security-lock-down-server-communication.md)  
- 
- 
-Should link to https://docs.microsoft.com/en-us/dynamics-nav/configuring-microsoft-dynamics-nav-server  
-  
-New page Using multiple NSTs for stability 
- 
- 
- 
+
+[Using Multiple Business Central Servers for Stability](security-multiple-server-instances.md)  
+
 ## Client Security
 
-[https://docs.microsoft.com/en-us/dynamics-nav/How-to--Implement-Security-Certificates-in-a-Production-Environment#configuring-the-includenavwindowsincludesnavwindowsmdmd-or-includenavwebserverincludesnavwebservermdmd  
-Database security 
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-sql-server-authentication  
-Encrypt traffic -> https://docs.microsoft.com/en-us/dynamics-nav/enhancing-microsoft-dynamics-nav-server-security#data-encryption-between-includenavserverincludesnavservermdmd-and-sql-server  
-Upgrade to TLS 1.2 -> https://support.microsoft.com/en-us/help/3135244/tls-1-2-support-for-microsoft-sql-server  
-Transparent Data Encryption (TDE) -> https://review.docs.microsoft.com/en-us/dynamics-nav/transparent-data-encryption?branch=TFS267001-TDE  
-Minimum database user privileges -> new page 
-SQL Server hardening -> https://docs.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-2017  
+[Configuring SSL to Secure the Client Connections](../deployment/configure-ssl-web-client-connection.md)
+
+[Using Security Certificates with Business Central On-Premises](..deployment/implement-security-certificates-production-environment.md) 
+
+## Database Security
+
+[Configuring the Database](../administration/configure-sql-server-authentication.md)
+
+[Encrypt Traffic](enhancing-server-instance-security.md#data-encryption-between-includenavserverincludesnavservermdmd-and-sql-server)
+
+## Upgrade to TLS 1.2
+
+[TLS 1.2 support for Microsoft SQL Server](https://support.microsoft.com/en-us/help/3135244/tls-1-2-support-for-microsoft-sql-server)
+  
+[Transparent Data Encryption](transparent-data-encryption.md)
+
+[Minimum database user privileges](security-minimum-database-user-privileges.md)
+
+
+## SQL Server hardening -> https://docs.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-2017  
 SQL Server auditing -> https://docs.microsoft.com/en-us/sql/relational-databases/security/auditing/sql-server-audit-database-engine?view=sql-server-2017 
 Backup encryption -> https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/backup-encryption?view=sql-server-2017  
  
