@@ -17,7 +17,7 @@ This section helps you understand and improve the security of your Dynamics 365 
  
 Business Central online uses Azure Active Directory (Azure AD) as the authentication method.
 
-Link to new page on Authentication types # AAD 
+[Authentication and Credential Types](../administration/users-credential-types.md)
  
 ## Encryption 
 

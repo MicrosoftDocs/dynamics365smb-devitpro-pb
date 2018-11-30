@@ -465,7 +465,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 # [Security](security/security-and-protection.md)
 ## [Application](security/security-application.md)
 ## [Online](security/security-online.md)
-## [On-premises](security/security-onpremises.md)
+## [On-Premises](security/security-onpremises.md)
 <!--
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)
