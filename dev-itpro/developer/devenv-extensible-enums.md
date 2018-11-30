@@ -89,7 +89,7 @@ Table field options in C/SIDE have three properties to enable enum support:
 |EnumTypeId   | Integer |
 |EnumTypeName | Text    |
 
-Some table fields share options that semantically are identical options. In those cases the **EnumTypeId** and **EnumTypeName** must be the same across all the fields. There is no design or runtime check for collision of IDs, but loading generated symbols, see [Running C/SIDE and AL Side-by-Side](devenv-running-cside-and-al-side-by-side.md), into the compiler will show collision errors.
+Some table fields share options that are semantically identical. In those cases the **EnumTypeId** and **EnumTypeName** must be the same across all the fields. There is no design or runtime check for collision of IDs, but loading generated symbols, see [Running C/SIDE and AL Side-by-Side](devenv-running-cside-and-al-side-by-side.md), into the compiler will show collision errors.
 
 ### Conversions
 Conversion to and from `enum` is more strict than for `Options` in C/SIDE. 
