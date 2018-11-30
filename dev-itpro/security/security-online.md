@@ -10,15 +10,29 @@ ms.service: "dynamics365-business-central"
 ---
 # Online Security in Business Central
 
-## Intro
+This section helps you understand and improve the security of your Dynamics 365 Business Central tenant. In the links below you will find information, guidance and recommended practices related to authentication, data encryption and safely integrating with other services. You will also find information on Business Central’s certifications and regulatory compliance.
+
 
 ## Authentication
-only AAD
+ 
+Business Central online uses Azure Active Directory (Azure AD) as the authentication method.
 
+Link to new page on Authentication types # AAD 
+ 
 ## Encryption 
 
+[Paragraph on encryption in the service (Jonathan)]
+ 
+ 
+## Service integration
+
+Always use HTTPS to connect to PowerBI server and Business Central web services: 
+
+[Connect to Microsoft Dynamics NAV with Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav) 
+
+[Using Security Certificates with Business Central On-Premises](..deployment/implement-security-certificates-production-environment.md) 
 
 ## See Also  
 
-[Security and Protection](security-and-protection.md)  
-[Data Security](data-security.md)  
+[Microsoft Trust Center (what we do to make the service secure)](https://www.microsoft.com/en-us/trustcenter/security/default.aspx)  
+[Microsoft Dynamics 365 Cloud Services Compliance](https://aka.ms/d365-compliance-list)  
