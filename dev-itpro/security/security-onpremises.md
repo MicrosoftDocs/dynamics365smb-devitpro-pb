@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# On-premises Security in Business Central
+# On-Premises Security in Business Central
 
 This section helps you understand and improve the security of Business Central hosted on-premises. In the links below you will find information, hardening guidance and recommended best practices addressing client, database, server and network security.  
  
@@ -17,7 +17,6 @@ This section helps you understand and improve the security of Business Central h
 
 [Authentication and Credential Types](../administration/users-credential-types.md)
 
-Link to new page on Authentication types 
 
 ## Server Security
 
