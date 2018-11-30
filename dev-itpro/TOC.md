@@ -464,13 +464,9 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 <!-- begin security -->
 # [Security](security/security-and-protection.md)
 ## [Application](security/security-application.md)
-### Authentication and Authorization
-### Two-Factor Authentication
-### Data Security
-## Online
-### Authentication and Authorization
-### Authentication and Authorization
-## On-premises
+## [Online](security/security-online.md)
+## [On-premises](security/security-onpremises.md)
+<!--
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)
 ### [Data Security](security/data-security.md)
@@ -478,7 +474,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ### [Enhancing Server Security](security/enhancing-server-instance-security.md)
 ### [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
 ### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
-### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
+### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 <!-- end security -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
