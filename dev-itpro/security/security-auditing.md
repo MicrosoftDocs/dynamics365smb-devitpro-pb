@@ -13,9 +13,10 @@ ms.service: "dynamics365-business-central"
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes a change log that lets you track all direct modifications a user makes to data in the database. The change log can track changes to specific application tables. Plus, it always logs changes to various system tables, which enables you to track changes to security sub-systems like users and permissions.
 
-The change log can be turned on and off. However, it is turned on be default.
+> [!IMPORTANT]  
+> The change log is turned on by default. It can be turned off and on from the **Change Log Setup** page in the client. However, this action is always logged so you can see which user has made the change. 
 
-OnDatabaseInsert  
+> The change log code is called from the `OnDatabaseInsert` method in the system codeunit **49 GlobalTriggerManagemnet**. 
 
 [Logging Changes in Business Central](https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes)
 
