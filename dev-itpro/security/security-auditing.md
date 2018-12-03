@@ -32,11 +32,12 @@ Specifically, the change log tracks the following tables:
 - Table 404 Change Log Setup (Field)
 
 > [!IMPORTANT]  
-> The change log is turned on by default. It can be turned off and on from the **Change Log Setup** page in the client. However, this action is always logged so you can see which user has made the change.<br /><br />
+> The change log on the above tables is always turned on and cannot be turned off on the **Change Log Setup** page in the client. <br /><br />
 > The change log code is called from the `OnDatabaseInsert` method in the system codeunit **49 GlobalTriggerManagemnet**. 
 
 [Logging Changes in Business Central](https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes)
 
+<!-- change title to auditing data changes in bllal-->
 ## See Also  
 
 [Security Development Lifecycle](https://www.microsoft.com/en-us/sdl)  

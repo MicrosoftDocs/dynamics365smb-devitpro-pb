@@ -10,21 +10,23 @@ ms.service: "dynamics365-business-central"
 ---
 # On-Premises Security in Business Central
 
-This section helps you understand and improve the security of Business Central hosted on-premises. In the links below you will find information, hardening guidance and recommended best practices addressing client, database, server and network security.  
- 
- 
-## Authentication 
+This section helps you understand and improve the security of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] hosted on-premises. In the links below you will find information, hardening guidance and recommended best practices addressing client, database, server and network security.  
+
+## Authentication
+
+Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server-tiers of Business Central.
+
+For more information, see the following article:
 
 [Authentication and Credential Types](../administration/users-credential-types.md)
 
-
 ## Server Security
 
-[Server hardening](enhancing-server-instance-security.md)  
+[Hardening [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Security](enhancing-server-instance-security.md)  
 
 [Locking Down Server Communication settings](security-lock-down-server-communication.md)  
 
-[Using Multiple Business Central Servers for Stability](security-multiple-server-instances.md)  
+[Using Multiple Business Central Servers for Stability](security-multiple-server-instances.md) <!-- hide for now-->  
 
 ## Client Security
 
@@ -34,29 +36,32 @@ This section helps you understand and improve the security of Business Central h
 
 ## Database Security
 
+The following articles describe configurations that you can configure in bc server.
 [Configuring the Database](../administration/configure-sql-server-authentication.md)
 
 [Encrypt Traffic](enhancing-server-instance-security.md#data-encryption-between-includenavserverincludesnavservermdmd-and-sql-server)
 
+[Minimum database user privileges](security-minimum-database-user-privileges.md) <!-- hide -->
+
+The following are general articles about SQL Server security that can also help secure the database:
+
 [Upgrade to TLS 1.2](https://support.microsoft.com/en-us/help/3135244/tls-1-2-support-for-microsoft-sql-server)
   
 [Transparent Data Encryption](transparent-data-encryption.md)
-
-[Minimum database user privileges](security-minimum-database-user-privileges.md)
 
 [SQL Server Hardening](https://docs.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-2017)
   
 [SQL Server Auditing](https://docs.microsoft.com/en-us/sql/relational-databases/security/auditing/sql-server-audit-database-engine?view=sql-server-2017)
 
 [Backup Encryption](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/backup-encryption?view=sql-server-2017)
- 
+
 ## Network Security
 
 [Configuring SSL to Secure the Client Connections](../deployment/configure-ssl-web-client-connection.md)
 
 [Using Security Certificates with Business Central On-Premises](..deployment/implement-security-certificates-production-environment.md)
 
-Always use HTTPS to connect to PowerBI server -> https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav  
+Always use HTTPS to connect to PowerBI server <!-- copy from online article--> -> https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav  
 Always use HTTPS to connect to web services -> https://docs.microsoft.com/en-us/dynamics-nav/walkthrough--configuring-web-services-to-use-ssl--soap-and-odata-
 
 ## See Also  

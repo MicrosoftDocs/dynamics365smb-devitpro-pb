@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
+
 # Online Security in Business Central
 
 This section helps you understand and improve the security of your Dynamics 365 Business Central tenant. In the links below you will find information, guidance and recommended practices related to authentication, data encryption and safely integrating with other services. You will also find information on Business Central’s certifications and regulatory compliance.
@@ -17,16 +18,20 @@ This section helps you understand and improve the security of your Dynamics 365 
  
 Business Central online uses Azure Active Directory (Azure AD) as the authentication method.
 
-[Authentication and Credential Types](../administration/users-credential-types.md)
+[Authentication and Credential Types](../administration/users-credential-types.md) <!-- delete ->
  
 ## Encryption 
 
 [Paragraph on encryption in the service (Jonathan)]
+
+- Data is encrypted at rest by using tde and backup encryption
+- Data backups are always encrypted.
+- All network traffic inside the service is encrypted using state-of-the-art encryption protocols.  
  
  
 ## Service integration
 
-Always use HTTPS to connect to PowerBI server and Business Central web services: 
+Always use encrypted network protocols to connect to PowerBI server and Business Central web services: 
 
 [Connect to Microsoft Dynamics NAV with Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav) 
 

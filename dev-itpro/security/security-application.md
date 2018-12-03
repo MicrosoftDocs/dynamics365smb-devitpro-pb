@@ -28,15 +28,15 @@ Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prods
 
 [Multi-factor Authentication](../administration/nultifactor-authentication.md)
  
-[Authentication and Credential Types](../administration/users-credential-types.md)
+[Authentication and Credential Types](../administration/users-credential-types.md) <!-- remove link-->
 
 ## Authorization
 
-Authorization controls the access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. Authorization determines which areas that users the can access, such as the pages and reports that they can open, and the permissions that have on the associated data.
+Authorization determines which areas an authenticated user can access, such as the pages and reports that they can open, and the permissions that they have on associated data.
 
 [User permissions in the application](user-security.md#user-permissions-in-the-application)
 
-[Database Level](data-security.md?tabs=database-level)
+[Data Security](data-security.md?tabs=database-level)
 
 [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)
 
@@ -59,6 +59,11 @@ Authorization controls the access to the [!INCLUDE[prodshort](../developer/inclu
 You can encrypt data on the Business Central server by generating new or importing existing encryption keys that you enable on the Business Central server instance that connects to the database.
 
 [Data encryption](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-manage-data-encryption)  
+
+## Security Development Lifecycle
+
+Microsoft's Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. For more info, see 
+[Security Development Lifecycle](https://www.microsoft.com/en-us/sdl).  
 
 ## See Also  
 
