@@ -11,15 +11,15 @@ ms.service: "dynamics365-business-central"
 
 # Application Security in Business Central
 
-This section helps you understand and improve the security of your Business Central application regardless of where it is hosted.  In the articles listed below you will find guidance and recommended practices related to authentication, authorization and auditing, as well as data encryption and secure development practices that can be applied to any Business Central environment.
+This section helps you understand and improve the security of your Business Central application regardless of where it is hosted.  In the articles listed below you will find guidance and recommended practices related to authentication, authorization, and auditing, as well as data encryption and secure development practices that can be applied to any Business Central environment.
 
-The following diagram provides an overview of the application security.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses a layered approach to application security, as outlined in the following diagram.
 
 ![Security overview](../developer/media/security-overview.png "Security overview")
 
 ## Authentication
 
-Before users can sign-in to the application, they must be authenticated as valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server-tiers of Business Central. For more information, see the following articles:
+Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server-tiers of Business Central. For more information, see the following articles:
 
 
 [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)
@@ -32,7 +32,7 @@ Before users can sign-in to the application, they must be authenticated as valid
 
 ## Authorization
 
-[New paragraph on layered auth system + picture]
+Authorization controls the access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. Authorization determines which areas that users the can access, such as the pages and reports that they can open, and the permissions that have on the associated data.
 
 [User permissions in the application](user-security.md#user-permissions-in-the-application)
 
@@ -42,8 +42,9 @@ Before users can sign-in to the application, they must be authenticated as valid
 
 [Removing Elements from the User Interface According to Permissions](../administration/hide-ui-elements.md)  
 
-
 ## Auditing
+
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several auditing features that to help you meet local auditing, compliance, and security policies for data access and handling. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] lets you to easily see what permissions users have, track when they sign in and out of the application, and track changes that have been made to data.  
 
 [Authorization assessment](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
   
