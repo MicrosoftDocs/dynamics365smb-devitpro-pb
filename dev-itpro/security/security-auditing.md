@@ -11,7 +11,25 @@ ms.service: "dynamics365-business-central"
 
 # Security Auditing in Business Central
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes a change log that lets you track all direct modifications a user makes to data in the database. The change log can track changes to specific application tables. Plus, it always logs changes to various system tables, which enables you to track changes to security sub-systems like users and permissions.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes a change log that lets you track all direct modifications a user makes to data in the database. Plus, it always logs changes to various system tables, which enables you to track changes to security sub-systems like users and permissions.
+
+Specifically, the change log tracks the following tables:
+ 
+- Table 2000000053 Access Control
+
+- Table 2000000005 Permission
+
+- Table 2000000004 Permission Set
+
+- Table 2000000120 User
+
+- Table 2000000121 User Property
+
+- Table 402 Change Log Setup
+
+- Table 403 Change Log Setup
+
+- Table 404 Change Log Setup (Field)
 
 > [!IMPORTANT]  
 > The change log is turned on by default. It can be turned off and on from the **Change Log Setup** page in the client. However, this action is always logged so you can see which user has made the change.<br /><br />
