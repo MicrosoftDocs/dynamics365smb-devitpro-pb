@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 
 This section helps you understand and improve the security of your Business Central application regardless of where it is hosted.  In the articles listed below you will find guidance and recommended practices related to authentication, authorization and auditing, as well as data encryption and secure development practices that can be applied to any Business Central environment.
 
-The following diagram provides an overview of the application security. 
+The following diagram provides an overview of the application security.
 
 ![Security overview](../developer/media/security-overview.png "Security overview")
 
