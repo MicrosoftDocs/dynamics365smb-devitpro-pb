@@ -20,9 +20,11 @@ When writing control add-ins that work on all display targets, you have to consi
 
 
 <!--
-The InvokeExtensibilityMethod and GetImageResource methods are not auto-generated as they come from the .NET assemblies in the platform. When the old methods folder will be deprecated, remember to not remove these two methods. 
+The methods from the "See Also" section are not auto-generated as they come from the .NET assemblies in the platform. When the old methods folder will be deprecated, remember to not remove these methods. 
 -->
   
 ## See Also  
 [InvokeExtensibilityMethod Method](methods/devenv-invokeextensibility-method.md)   
 [GetImageResource Method](methods/devenv-getimageresource-method.md)
+[GetEnvironment Method](methods/devenv-getenvironment-method.md)  
+[OpenWindow Method](methods/devenv-openwindow-method.md)
