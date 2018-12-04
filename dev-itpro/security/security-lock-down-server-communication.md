@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Locking Down Server Communication
 
+
 recommended!
 table with settings and why lock down.
 

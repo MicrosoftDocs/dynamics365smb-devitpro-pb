@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# On-Premises Security in Business Central
+# Business Central On-Premises Security
 
 This section helps you understand and improve the security of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] hosted on-premises. In the links below you will find information, hardening guidance and recommended best practices addressing client, database, server and network security.  
 
@@ -16,17 +16,17 @@ This section helps you understand and improve the security of [!INCLUDE[prodshor
 
 Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server-tiers of Business Central.
 
-For more information, see the following article:
-
-[Authentication and Credential Types](../administration/users-credential-types.md)
+For more information, see [Authentication and Credential Types](../administration/users-credential-types.md).
 
 ## Server Security
+
+The following articles provide help about how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances. 
 
 [Hardening [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Security](enhancing-server-instance-security.md)  
 
 [Locking Down Server Communication settings](security-lock-down-server-communication.md)  
 
-[Using Multiple Business Central Servers for Stability](security-multiple-server-instances.md) <!-- hide for now-->  
+<!-- [Using Multiple Business Central Servers for Stability](security-multiple-server-instances.md) available soon-->  
 
 ## Client Security
 
@@ -36,7 +36,7 @@ For more information, see the following article:
 
 ## Database Security
 
-The following articles describe configurations that you can configure in bc server.
+The following articles describe configurations that you can configure in Business Central server.
 [Configuring the Database](../administration/configure-sql-server-authentication.md)
 
 [Encrypt Traffic](enhancing-server-instance-security.md#data-encryption-between-includenavserverincludesnavservermdmd-and-sql-server)
