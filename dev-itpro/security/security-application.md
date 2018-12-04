@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 
 # Application Security in Business Central
 
-This section helps you understand and improve the security of your Business Central application regardless of where it is hosted.  In the articles listed below you will find guidance and recommended practices related to authentication, authorization, and auditing, as well as data encryption and secure development practices that can be applied to any Business Central environment.
+This section helps you understand and improve the security of your Business Central application regardless of where it is hosted. In the articles listed below, you will find guidance and recommended practices related to authentication, authorization, and auditing, as well as data encryption and secure development practices that can be applied to any Business Central environment.
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses a layered approach to application security, as outlined in the following diagram.
 
@@ -19,8 +19,7 @@ This section helps you understand and improve the security of your Business Cent
 
 ## Authentication
 
-Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server-tiers of Business Central. For more information, see the following articles:
-
+Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central supports several authentication methods. For more information, see the following articles:
 
 [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)
 
@@ -28,11 +27,11 @@ Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prods
 
 [Multi-factor Authentication](../administration/nultifactor-authentication.md)
  
-[Authentication and Credential Types](../administration/users-credential-types.md) <!-- remove link-->
+<!-- Authentication and Credential Types](../administration/users-credential-types.md) removed per review link-->
 
 ## Authorization
 
-Authorization determines which areas an authenticated user can access, such as the pages and reports that they can open, and the permissions that they have on associated data.
+Authorization determines which areas an authenticated user can access, such as the pages and reports that they can open, and the permissions that they have on associated data. For more information, see the following articles:
 
 [User permissions in the application](user-security.md#user-permissions-in-the-application)
 
@@ -44,7 +43,7 @@ Authorization determines which areas an authenticated user can access, such as t
 
 ## Auditing
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several auditing features that to help you meet local auditing, compliance, and security policies for data access and handling. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] lets you to easily see what permissions users have, track when they sign in and out of the application, and track changes that have been made to data.  
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several auditing features that help you track information like who is signing-in, what permissions do they have, what data have they changed, and more.  For more information, see the following articles:
 
 [Authorization assessment](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
   
