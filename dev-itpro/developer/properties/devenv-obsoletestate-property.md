@@ -33,6 +33,9 @@ Marks whether the table, field, or key is or will become obsolete (deprecated).
 ## Remarks  
 By coding against this property, you can use this property as a way to communicate through code to other developers which tables and fields will become obsolete over time and those which are already obsolete, enabling them to adjust their application code accordingly.
 
+> [!NOTE]
+> When developing using [!INCLUDE[nav_dev_long_md](../includes/nav_dev_long_md.md)] (CSIDE), you do not get an error when you compile objects that reference table objects, fields, or keys that are marked as obsolete.
+
 ## See Also  
  [ObsoleteReason Property](devenv-obsoletereason-property.md)  
  [Properties](devenv-properties.md)  
