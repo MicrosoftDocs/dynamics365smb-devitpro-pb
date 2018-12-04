@@ -114,6 +114,7 @@
 ## [Debugging in AL](developer/devenv-debugging.md)
 ## [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ## Converting, Upgrading, and Installing Extensions V2
+### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
 ### [Generating Delta files](developer/devenv-generating-delta-files.md)
