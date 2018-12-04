@@ -24,7 +24,7 @@ PATCH /microsoft/automation/{apiVersion}/companies({companyid})/users({securityI
 |Header       |Value                    |
 |-------------|-------------------------|
 |Authorization|Bearer {token}. Required.|
-|Content-Type |application/json         |
+|Content-Type |application/json.        |
 |If-Match     |Required. When this request header is included and the eTag provided does not match the current tag on the **user**, the **user** will not be updated.|
 
 ## Request body

@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
@@ -20,15 +20,15 @@ Represents a user resource type in [!INCLUDE[d365fin_long_md](../developer/inclu
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
 |[GET user](dynamics-microsoft-automation-user-get.md)|user|Gets all users.|
-|[PATCH user](dynamics-microsoft-automation-user-patch.md)|user|Update user properties|
+|[PATCH user](dynamics-microsoft-automation-user-patch.md)|user|Update user properties.|
 
 ## Properties
 | Property	      | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
 |userSecurityId   |GUID  |The unique ID of the package. Read-Only.|
-|userName         |string|Specifies the extension name.                  |
+|userName         |string|Specifies the extension name.           |
 |displayName      |string|Major version of the extension.     |
-|state      |string|Minor version of the extension.     |
+|state            |string|Minor version of the extension.     |
 |expiryDate|DateTimeOffset|Specifies the installation status.|
 
 ## Relationships / Navigation properties
