@@ -30,7 +30,7 @@ Business Central Online uses encryption to help protect data:
 
 We recommend that you use encrypted network protocols to connect to the PowerBI server and Business Central web services. For more information, see the following articles:
 
-[Connect to Microsoft Dynamics NAV with Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav) 
+[Connect to Business Central with Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav) 
 
 [Using Security Certificates with Business Central On-Premises](..deployment/implement-security-certificates-production-environment.md) 
 

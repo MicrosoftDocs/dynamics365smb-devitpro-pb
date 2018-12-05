@@ -62,13 +62,15 @@ The following are general articles about SQL Server security that can also help 
 
 ## Network Security
 
+The following articles explain to secure client, web service, and PowerBI connections over a wide area network using HTTPS and security certificates. 
 
 [Configuring SSL to Secure the Client Connections](../deployment/configure-ssl-web-client-connection.md)
 
 [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md)
 
-Always use HTTPS to connect to PowerBI server <!-- copy from online article--> -> https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav  
-Always use HTTPS to connect to web services -> https://docs.microsoft.com/en-us/dynamics-nav/walkthrough--configuring-web-services-to-use-ssl--soap-and-odata-
+[Using Security Certificates with Business Central On-Premises](..deployment/implement-security-certificates-production-environment.md) 
+
+[Connect to Business Central with Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav)
 
 ## See Also  
 
