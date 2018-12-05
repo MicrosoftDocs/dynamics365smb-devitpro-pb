@@ -38,7 +38,7 @@ The following articles explain how to improve the security of connections from t
 
 ## Database Security
 
-The articles in this section explain how to improve database security in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases.
+The articles in this section explain how to improve database security in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 The following articles discuss configurations that you can perform on the Business Central Server:
 
