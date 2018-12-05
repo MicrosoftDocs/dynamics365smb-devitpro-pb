@@ -20,7 +20,7 @@ For more information, see [Authentication and Credential Types](../administratio
 
 ## Server Security
 
-The following articles provide help about how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances. 
+[!INCLUDE[server](../developer/includes/server.md)] handles communication between clients and databases, controlling authentication, event logging, scheduled tasks, reporting and more. The following articles explain how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances. 
 
 [Hardening [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Security](enhancing-server-instance-security.md)  
 
@@ -30,18 +30,20 @@ The following articles provide help about how to improve the security of [!INCLU
 
 ## Client Security
 
+The following articles explain how to improve the security of connections from the clients to the [!INCLUDE[server](../developer/includes/server.md)].  
+
 [Configuring SSL to Secure the Client Connections](../deployment/configure-ssl-web-client-connection.md)
 
 [Using Security Certificates with Business Central On-Premises](..deployment/implement-security-certificates-production-environment.md)
 
 ## Database Security
 
-The following articles describe configurations that you can configure in Business Central server.
+The following articles explain how to improve the security of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database configurations that you can configure in Business Central server.
 [Configuring the Database](../administration/configure-sql-server-authentication.md)
 
-[Encrypt Traffic](enhancing-server-instance-security.md#data-encryption-between-includenavserverincludesnavservermdmd-and-sql-server)
+[Encrypt Traffic](enhancing-server-instance-security.md#data-encryption)
 
-[Minimum database user privileges](security-minimum-database-user-privileges.md) <!-- hide -->
+<!-- coming soon [Minimum database user privileges](security-minimum-database-user-privileges.md)  -->
 
 The following are general articles about SQL Server security that can also help secure the database:
 
