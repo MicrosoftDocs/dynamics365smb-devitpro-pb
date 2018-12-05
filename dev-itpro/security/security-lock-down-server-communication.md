@@ -10,18 +10,18 @@ ms.service: "dynamics365-business-central"
 ---
 # Locking Down Server Communication
 
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance includes several configuration settings that you can use to help secure and limit communication with clients and the database. The configuration settings are listed below. For more detailed information about each setting, and additional settings, see [Configuring Business Central Server](../administration/configure-server-instance.md). 
+The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance includes several configuration settings that you can use to help secure and limit communication with clients and the database. The configuration settings are listed below. For more detailed information about each setting, and additional settings, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 |Setting|
 |-------|
 |ServicesCertificateValidationEnabled​|
 |ServicesUseNTLMAuthentication​|
 |EnableSqlConnectionEncryption​|
-|ODataServicesSSLEnabled​|false|
+|ODataServicesSSLEnabled​|
 |ClientServicesProtection|
 |ReportAppDomainIsolation​|
 |ClientServicesMaxUploadSize​|
-|RestrictedFileTypes​ (ClientServicesProhibitedFileTypes)|
+|ClientServicesProhibitedFileTypes|
 |EnableDataExportImport​|
 |EnableALServerFileAccess​|
 |DebuggingAllowed​|
