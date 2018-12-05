@@ -14,7 +14,7 @@ ms.service: "dynamics365-business-central"
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes a change log that lets you track all direct modifications that a user makes to data in the database. In addition, the change log always records changes to various system tables, which enables you to track changes to security sub-systems like users and permissions.
 
-Specifically, the change log tracks the following tables and fields:
+Some of the most important tables tracked include: 
  
 - Table 2000000053 Access Control
 

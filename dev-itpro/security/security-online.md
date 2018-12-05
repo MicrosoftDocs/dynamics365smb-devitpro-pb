@@ -22,9 +22,9 @@ Business Central Online uses Azure Active Directory (Azure AD) as the authentica
 
 Business Central Online uses encryption to help protect data:  
 
-- Data is encrypted at-rest by using tde and backup encryption
+- Data is encrypted at-rest by using Transparent Data Encryption (TDE) and backup encryption.
 - Data backups are always encrypted.
-- All network traffic inside the service is encrypted by using state-of-the-art encryption protocols.  
+- All network traffic inside the service is encrypted by using industry standard encryption protocols.  
 
 ## Service integration
 
