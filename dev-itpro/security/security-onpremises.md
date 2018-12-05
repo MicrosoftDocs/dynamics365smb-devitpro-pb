@@ -34,7 +34,7 @@ The following articles explain how to improve the security of connections from t
 
 [Configuring SSL to Secure the Client Connections](../deployment/configure-ssl-web-client-connection.md)
 
-[Using Security Certificates with Business Central On-Premises](..deployment/implement-security-certificates-production-environment.md)
+[Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md)
 
 ## Database Security
 
