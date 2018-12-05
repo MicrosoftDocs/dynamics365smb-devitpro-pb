@@ -20,25 +20,25 @@ This section helps you understand and improve the security of your Business Cent
 
 ## Authentication
 
-Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central supports several authentication methods. For more information, see the following articles:
+Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central On-Premises supports several authentication methods, such as Windows and Azure Active Directory. Business Central Online uses strictly Azure Active Directory (Azure AD).  For more information, see the following articles:
 
-[Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)
+[Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions) <!-- remove here and only have in authorization section -->
 
-[User Authentication](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/user-security#user-authentication)  
+[User Authentication](user-security.md#user-authentication)  <!-- link to auth topic-->
+
+<!-- Authentication and Credential Types](../administration/users-credential-types.md) removed per review link-->
 
 [Multi-factor Authentication](multifactor-authentication.md)
  
-<!-- Authentication and Credential Types](../administration/users-credential-types.md) removed per review link-->
-
 ## Authorization
 
-Authorization determines which areas an authenticated user can access, such as the pages and reports that they can open, and the permissions that they have on associated data. For more information, see the following articles:
+Once authenticated, authorization determines which areas a user can access, such as the pages and reports that they can open, and the permissions that they have on associated data. For more information, see the following articles:
 
-[User permissions in the application](user-security.md#user-permissions-in-the-application)
+[User Permissions in the Application](user-security.md#user-permissions-in-the-application) 
 
 [Data Security](data-security.md?tabs=database-level)
 
-[Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)
+<!--[Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions) redundant -->
 
 [Removing Elements from the User Interface According to Permissions](../administration/hide-ui-elements.md)  
 
@@ -56,14 +56,13 @@ Authorization determines which areas an authenticated user can access, such as t
   
 ## Data Encryption
 
-You can encrypt data on the Business Central server by generating new or importing existing encryption keys that you enable on the Business Central server instance that connects to the database.
+You can encrypt data on the Business Central server by generating new or importing existing encryption keys that you enable on the Business Central server instance that connects to the database. For more information, see [Encrypting Data in Dynamics 365 Business Central](../developer/devenv-encrypting-data.md).
 
-[Data encryption](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-manage-data-encryption)  
+<!-- [Data encryption](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-manage-data-encryption)-->  
 
 ## Security Development Lifecycle
 
-Microsoft's Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. For more info, see 
-[Security Development Lifecycle](https://www.microsoft.com/en-us/sdl).  
+Microsoft's Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. For more information, see [Security Development Lifecycle](https://www.microsoft.com/en-us/sdl).  
 
 ## See Also  
 
