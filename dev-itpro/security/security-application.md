@@ -66,4 +66,6 @@ Microsoft's Security Development Lifecycle (SDL) is a software development proce
 
 ## See Also  
 
-[Security Development Lifecycle](https://www.microsoft.com/en-us/sdl)  
+[Security and Protection](security-and-protection.md) 
+[Online Security](security-online.md)  
+[On-Premises Security](security-onpremises.md)  

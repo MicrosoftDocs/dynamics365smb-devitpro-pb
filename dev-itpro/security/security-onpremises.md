@@ -20,7 +20,7 @@ For more information, see [Authentication and Credential Types](../administratio
 
 ## Server Security
 
-[!INCLUDE[server](../developer/includes/server.md)] handles communication between clients and databases, controlling authentication, event logging, scheduled tasks, reporting and more. The following articles explain how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances. 
+[!INCLUDE[server](../developer/includes/server.md)] handles communication between clients and databases, controlling authentication, event logging, scheduled tasks, reporting and more. The following articles explain how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances.
 
 [Hardening [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Security](enhancing-server-instance-security.md)  
 
@@ -38,7 +38,10 @@ The following articles explain how to improve the security of connections from t
 
 ## Database Security
 
-The following articles explain how to improve the security of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database configurations that you can configure in Business Central server.
+The articles in this section explain how to improve the security of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases.
+
+The following articles discuss configurations that you can perform on the Business Central Server:
+
 [Configuring the Database](../administration/configure-sql-server-authentication.md)
 
 [Encrypt Traffic](enhancing-server-instance-security.md#data-encryption)
@@ -59,9 +62,10 @@ The following are general articles about SQL Server security that can also help 
 
 ## Network Security
 
+
 [Configuring SSL to Secure the Client Connections](../deployment/configure-ssl-web-client-connection.md)
 
-[Using Security Certificates with Business Central On-Premises](..deployment/implement-security-certificates-production-environment.md)
+[Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md)
 
 Always use HTTPS to connect to PowerBI server <!-- copy from online article--> -> https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav  
 Always use HTTPS to connect to web services -> https://docs.microsoft.com/en-us/dynamics-nav/walkthrough--configuring-web-services-to-use-ssl--soap-and-odata-

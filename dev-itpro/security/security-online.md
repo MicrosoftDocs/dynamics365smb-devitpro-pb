@@ -16,7 +16,7 @@ This section helps you understand and improve the security of your Dynamics 365 
 
 ## Authentication
  
-Business Central Online uses Azure Active Directory (Azure AD) as the authentication method.
+Business Central Online uses Azure Active Directory (Azure AD) as the authentication method, which is automatically set up and managed for you.
  
 ## Encryption 
 
@@ -25,11 +25,10 @@ Business Central Online uses encryption to help protect data:
 - Data is encrypted at-rest by using tde and backup encryption
 - Data backups are always encrypted.
 - All network traffic inside the service is encrypted by using state-of-the-art encryption protocols.  
- 
- 
+
 ## Service integration
 
-Always use encrypted network protocols to connect to PowerBI server and Business Central web services: 
+We recommend that you use encrypted network protocols to connect to the PowerBI server and Business Central web services. For more information, see the following articles:
 
 [Connect to Microsoft Dynamics NAV with Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav) 
 
@@ -39,3 +38,4 @@ Always use encrypted network protocols to connect to PowerBI server and Business
 
 [Microsoft Trust Center (what we do to make the service secure)](https://www.microsoft.com/en-us/trustcenter/security/default.aspx)  
 [Microsoft Dynamics 365 Cloud Services Compliance](https://aka.ms/d365-compliance-list)  
+[Security and Protection](security-and-protection.md)    
