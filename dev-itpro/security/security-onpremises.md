@@ -48,7 +48,7 @@ The following articles discuss configurations that you can perform on the Busine
 
 <!-- coming soon [Minimum database user privileges](security-minimum-database-user-privileges.md)  -->
 
-The following articles provide general articles about SQL Server security that can also help secure the database:
+The following are general articles about SQL Server security that can also help secure the database:
 
 [Upgrade to TLS 1.2](https://support.microsoft.com/en-us/help/3135244/tls-1-2-support-for-microsoft-sql-server)
   
