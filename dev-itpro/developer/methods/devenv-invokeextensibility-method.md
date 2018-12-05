@@ -2,7 +2,7 @@
 title: "InvokeExtensibilityMethod Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 12/04/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 263b313f-935b-4eb9-b0d6-171f3b08f9c1
 caps.latest.revision: 8
-redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
 # InvokeExtensibilityMethod Method
