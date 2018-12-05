@@ -22,11 +22,11 @@ This section helps you understand and improve the security of your Business Cent
 
 Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central On-Premises supports several authentication methods, such as Windows and Azure Active Directory. Business Central Online uses strictly Azure Active Directory (Azure AD).  For more information, see the following articles:
 
-[Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions) <!-- remove here and only have in authorization section -->
+<!-- [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions) -->
 
-[User Authentication](user-security.md#user-authentication)  <!-- link to auth topic-->
+<!-- [User Authentication](user-security.md#user-authentication)  -->
 
-<!-- Authentication and Credential Types](../administration/users-credential-types.md) removed per review link-->
+[Authentication and Credential Types](../administration/users-credential-types.md)
 
 [Multi-factor Authentication](multifactor-authentication.md)
  
@@ -44,7 +44,7 @@ Once authenticated, authorization determines which areas a user can access, such
 
 ## Auditing
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several auditing features that help you track information like who is signing-in, what permissions do they have, what data have they changed, and more.  For more information, see the following articles:
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several auditing features that help you track information about who is signing-in, what are their permissions, what data have they changed, and more.  For more information, see the following articles:
 
 [Authorization assessment](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
   

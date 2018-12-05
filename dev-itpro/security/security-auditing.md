@@ -36,7 +36,8 @@ Specifically, the change log tracks the following tables and fields:
 > The change log on the above tables is always turned on and cannot be turned off by using **Change Log Setup** page in the client. <br /><br />
 > The change log code is called from the `OnDatabaseInsert` method in the system codeunit **49 GlobalTriggerManagemnet**. 
 
-[Logging Changes in Business Central](https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes)
+
+For more information, see [Auditing Changes in Business Central](https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes).
 
 <!-- change title to auditing data changes -->
 ## See Also  
