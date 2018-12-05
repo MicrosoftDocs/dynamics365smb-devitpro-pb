@@ -16,9 +16,7 @@ This section helps you understand and improve the security of your Dynamics 365 
 
 ## Authentication
  
-Business Central online uses Azure Active Directory (Azure AD) as the authentication method.
-
-[Authentication and Credential Types](../administration/users-credential-types.md) <!-- delete ->
+Business Central Online uses Azure Active Directory (Azure AD) as the authentication method.
  
 ## Encryption 
 
@@ -26,7 +24,7 @@ Business Central Online uses encryption to help protect data:
 
 - Data is encrypted at-rest by using tde and backup encryption
 - Data backups are always encrypted.
-- All network traffic inside the service is encrypted using state-of-the-art encryption protocols.  
+- All network traffic inside the service is encrypted by using state-of-the-art encryption protocols.  
  
  
 ## Service integration
