@@ -1,5 +1,6 @@
 ---
-title: "User Security in Business Central"
+title: "Application Security in Business Central"
+description: Helps you understand and improve the security of your Business Central application regardless of where it is hosted.
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na
@@ -25,7 +26,7 @@ Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prods
 
 [User Authentication](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/user-security#user-authentication)  
 
-[Multi-factor Authentication](../administration/nultifactor-authentication.md)
+[Multi-factor Authentication](multifactor-authentication.md)
  
 <!-- Authentication and Credential Types](../administration/users-credential-types.md) removed per review link-->
 

@@ -1,6 +1,6 @@
 ---
 title: "Security and Protection"
-author: edupont04
+author: jswymer
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na
