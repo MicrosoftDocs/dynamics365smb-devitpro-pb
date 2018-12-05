@@ -114,6 +114,7 @@
 ## [Debugging in AL](developer/devenv-debugging.md)
 ## [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ## Converting, Upgrading, and Installing Extensions V2
+### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
 ### [Generating Delta files](developer/devenv-generating-delta-files.md)
@@ -463,14 +464,18 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 <!-- end web services -->
 <!-- begin security -->
 # [Security](security/security-and-protection.md)
-## [Considerations](security/security-considerations.md)
-## [User Security](security/user-security.md)
-## [Data Security](security/data-security.md)
-## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
-## [Enhancing Server Security](security/enhancing-server-instance-security.md)
-## [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
-## [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
-## [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
+## [Application](security/security-application.md)
+## [Online](security/security-online.md)
+## [On-Premises](security/security-onpremises.md)
+<!--
+### [Considerations](security/security-considerations.md)
+### [User Security](security/user-security.md)
+### [Data Security](security/data-security.md)
+### [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
+### [Enhancing Server Security](security/enhancing-server-instance-security.md)
+### [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
+### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
+### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 <!-- end security -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)

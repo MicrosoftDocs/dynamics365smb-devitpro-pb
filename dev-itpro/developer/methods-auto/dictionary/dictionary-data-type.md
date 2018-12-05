@@ -2,7 +2,7 @@
 title: "Dictionary Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 12/15/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,6 +33,31 @@ The following methods are available on instances of the Dictionary data type.
 |[Remove(TKey)](dictionary-remove-method.md)|Removes the value with the specified key from the Dictionary.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+Each addition to the dictionary consists of a value, and its associated key. Every key in a Dictionary must be unique. A key cannot be null, but a value can be, only when the value type is a reference type.
+
+## Example  
+In the following example, the variable `counter` represents the Dictionary data type to store a value representing the number of occurrences for each character in the `customerName`. Using the `Get` method, you get the number of occurrences for the character at position `i`. If `i` returns **false**, it means there is no value associated with that character, so you add the value 1. If `i` returns **true**, it means the value already exists, so you add `c + 1` to the value. The `Add` method adds the {key:value} pair to the Dictionary.
+
+```
+procedure CountCharactersInCustomerName(customerName: Text; var counter: Dictionary of [Char, Integer]);
+var
+    i : Integer;
+    c : Integer;
+begin
+
+    for i := 1 to StrLen(customerName) do 
+    begin
+        if counter.Get(customerName[i], c) then
+            counter.Set(customerName[i], c + 1) 
+        else 
+            counter.Add(customerName[i], 1);
+    end;
+end;
+
+```
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
