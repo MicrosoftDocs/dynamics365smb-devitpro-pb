@@ -44,15 +44,15 @@ Once authenticated, authorization determines which areas a user can access, such
 
 ## Auditing
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several auditing features that help you track information about who is signing-in, what are their permissions, what data have they changed, and more.  For more information, see the following articles:
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several auditing features that help you track information about who is signing-in, what their permissions are, what data have they changed, and more.  For more information, see the following articles:
 
-[Authorization assessment](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
+[Authorization Assessment](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
   
-[Data auditing](https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes)
+[Data Auditing](https://docs.microsoft.com/en-us/dynamics365/business-central/across-log-changes)
   
-[Security auditing](security-auditing.md)
+[Security Auditing](security-auditing.md)
 
-[Data classification](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-classifying-data-sensitivity)
+[Data Classification](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-classifying-data-sensitivity)
   
 ## Data Encryption
 
@@ -66,6 +66,6 @@ Microsoft's Security Development Lifecycle (SDL) is a software development proce
 
 ## See Also  
 
-[Security and Protection](security-and-protection.md) 
+[Security and Protection](security-and-protection.md)  
 [Online Security](security-online.md)  
 [On-Premises Security](security-onpremises.md)  

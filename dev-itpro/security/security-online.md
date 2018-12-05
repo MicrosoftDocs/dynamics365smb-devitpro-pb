@@ -38,4 +38,4 @@ We recommend that you use encrypted network protocols to connect to the PowerBI 
 
 [Microsoft Trust Center (what we do to make the service secure)](https://www.microsoft.com/en-us/trustcenter/security/default.aspx)  
 [Microsoft Dynamics 365 Cloud Services Compliance](https://aka.ms/d365-compliance-list)  
-[Security and Protection](security-and-protection.md)    
+[Security and Protection](security-and-protection.md)  
