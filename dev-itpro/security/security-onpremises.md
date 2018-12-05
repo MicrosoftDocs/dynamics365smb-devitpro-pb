@@ -68,8 +68,6 @@ The following articles explain to secure client, web service, and PowerBI connec
 
 [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md)
 
-[Using Security Certificates with Business Central On-Premises](..deployment/implement-security-certificates-production-environment.md) 
-
 [Connect to Business Central with Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav)
 
 ## See Also  

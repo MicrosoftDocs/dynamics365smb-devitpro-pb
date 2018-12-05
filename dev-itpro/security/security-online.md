@@ -32,7 +32,7 @@ We recommend that you use encrypted network protocols to connect to the PowerBI 
 
 [Connect to Business Central with Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav) 
 
-[Using Security Certificates with Business Central On-Premises](..deployment/implement-security-certificates-production-environment.md) 
+[Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md) 
 
 ## See Also  
 
