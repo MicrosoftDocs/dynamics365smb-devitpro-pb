@@ -10,13 +10,25 @@ ms.service: "dynamics365-business-central"
 ---
 # Locking Down Server Communication
 
+The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance includes several configuration settings that you can use to help secure and limit communication with clients and the database. The configuration settings are described in the following table. For more detailed information about each setting, and additional settings, see [Configuring Business Central Server](../administration/configure-server-instance.md). 
 
-recommended!
-table with settings and why lock down.
 
 |Setting|Recommended value|Why|
 |-------|-----------------|---|
-||||
+|ServicesCertificateValidationEnabled​|true|Validates security certificates.|
+|ServicesUseNTLMAuthentication​|true|Uses SPNEGO for SOAPServices or Windows for ODataServices|
+|EnableSqlConnectionEncryption​|true|Configures the server to request encryption on the SQL Connections used against the database.|
+|ODataServicesSSLEnabled​|false||
+|SOAPServicesSSLEnabled​|false||
+|ClientServicesProtection|EncryptAndSign|Protects the data stream between clients and [!INCLUDE[server](../developer/includes/server.md)] instance. For background information, see [Understanding Protection Level](https://docs.microsoft.com/en-us/dotnet/framework/wcf/understanding-protection-level)|
+|ReportAppDomainIsolation​|||
+|ClientServicesMaxUploadSize​|30MB|Helps to avoid out-of-memory errors.|
+|RestrictedFileTypes​ (ClientServicesProhibitedFileTypes)|ade;adp;app;asp;bas;bat;chm;cmd;com;cpl;<br />csh;exe;fxp;gadget;hlp;hta;inf;ins;isp;its;js;jse;<br />ksh;lnk;mad;maf;mag;mam;maq;mar;mas;mat;mau;<br />mav;maw;mda;mdb;mde;mdt;mdw;mdz;msc;msi;<br />msp;mst;ops;pcd;pif;prf;prg;pst;reg;scf;scr;<br />sct;shb;shs;url;vb;vbe;vbs;vsmacros;vss;<br />vst;vsw;ws;wsc;wsf;wsh<br />|Prevents specific file types from uploaded to the database from the client. |
+|EnableDataExportImport​||bfb|
+|EnableALServerFileAccess​|true|Specifies whether access to server files by C/AL file data type functions is allowed.|
+|DebuggingAllowed​|true|pecifies whether AL debugging is allowed for this [!INCLUDE[server](../developer/includes/server.md)] instance.|
+|EnableDebugging|false| With the EnableDebugging flag set to true the Microsoft Dynamics NAV Server will start with debugging mode enabled.  This mode has three main functions:1)Upon first connection by a RoleTailored Client all C# for that application will be generated. 2) C# files will be persisted between server restarts. 3)  Application Objects will be compiled with debug information.|
+
 ## See Also  
 
 [Security and Protection](security-and-protection.md)  
