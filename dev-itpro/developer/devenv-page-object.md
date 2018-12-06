@@ -3,7 +3,7 @@ title: "Page Object"
 description: "Description of the page object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,10 +24,100 @@ The structure of a page is hierarchical and breaks down in to three sections. Th
 When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you will follow the code layout for a page as shown in the page example below, but for more details on the individual controls and properties that are available, see [Page Property Overview](properties/devenv-page-property-overview.md).
 
 > [!NOTE]  
-> Extension objects can have a name with a maximum length of 30 characters.      
+> Extension objects can have a name with a maximum length of 30 characters.
 
 ## Snippet support
-Typing the shortcut ```tpage``` will create the basic layout for a page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `tpage` will create the basic layout for a page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+## Card page syntax
+```
+page Id MyPage
+{
+    PageType = Card;
+    ApplicationArea = All;
+    UsageCategory = Administration;
+    SourceTable = TableName;
+    
+    layout
+    {
+        area(Content)
+        {
+            group(GroupName)
+            {
+                field(Name; NameSource)
+                {
+                    ApplicationArea = All;
+                    
+                }
+            }
+        }
+    }
+    
+    actions
+    {
+        area(Processing)
+        {
+            action(ActionName)
+            {
+                ApplicationArea = All;
+                
+                trigger OnAction()
+                begin
+                    
+                end;
+            }
+        }
+    }
+    
+    var
+        myInt: Integer;
+}
+```
+
+## List page syntax
+```
+page Id PageName
+{
+    PageType = List;
+    ApplicationArea = All;
+    SourceTable = TableName;
+    
+    layout
+    {
+        area(Content)
+        {
+            repeater(Group)
+            {
+                field(Name; NameSource)
+                {
+                    ApplicationArea = All;
+                    
+                }
+            }
+        }
+        area(Factboxes)
+        {
+            
+        }
+    }
+    
+    actions
+    {
+        area(Processing)
+        {
+            action(ActionName)
+            {
+                ApplicationArea = All;
+                
+                trigger OnAction();
+                begin
+                    
+                end;
+            }
+        }
+    }
+}
+```
 
 ## Page example
 

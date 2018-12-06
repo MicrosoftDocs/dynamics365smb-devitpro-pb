@@ -15,10 +15,10 @@ manager: edupont
 
 
 # OnAfterModifyRecord Trigger
-Executed after a record has been modified.  
+Runs after a record has been modified.  
 
 ## Applies To  
- XMLports  
+- XMLports  
 
 ## Remarks  
  This trigger is used when you import data from an XMLport and then update an existing record in a table with the data from the XMLport.  

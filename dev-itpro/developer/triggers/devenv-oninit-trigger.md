@@ -17,10 +17,10 @@ manager: edupont
 Initializes the user-defined variables on the page.  
   
 ## Applies To  
- Pages  
+- Pages  
   
 ## Remarks  
- The AL code in this trigger is executed immediately after the variables are cleared and the page is loaded. This trigger cannot be used to access the controls on the page. You can change properties that are dynamic, including those properties that can only be changed when the page is opened.  
+ The AL code in this trigger is run immediately after the variables are cleared and the page is loaded. This trigger cannot be used to access the controls on the page. You can change properties that are dynamic, including those properties that can only be changed when the page is opened.  
   
  After this trigger is executed, the [OnOpenPage Trigger](devenv-onopenpage-trigger.md) for pages is called. If an error occurs in the trigger code, then the page is closed.  
   

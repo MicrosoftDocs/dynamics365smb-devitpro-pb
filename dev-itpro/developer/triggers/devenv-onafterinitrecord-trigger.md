@@ -14,10 +14,10 @@ manager: edupont
 
 
 # OnAfterInitRecord Trigger
-Executed after a record is loaded.  
+Runs after a record is loaded.  
   
 ## Applies To  
- XMLports  
+- XMLports  
   
 ## Remarks  
  This trigger is only used to import data. It is typically used to set up the preconditions for the record before it is inserted into the database table.  
