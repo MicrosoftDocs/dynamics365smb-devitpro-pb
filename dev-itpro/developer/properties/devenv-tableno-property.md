@@ -43,7 +43,7 @@ codeunit 50100 MyCodeunit
 
 The signature of the `OnRun` trigger is `OnRun(var Rec : Record Item)`. 
 
-If you specify a table number for this property, then you can use the CurrRec global variable in the codeunit and use the [Codeunit.RUN Method \(Codeunit\)](../methods/devenv-codeunit.RUN-method-codeunit.md) to execute the codeunit.  
+You can then use the `Rec` variable in the codeunit, and use the [Codeunit.RUN Method \(Codeunit\)](../methods/devenv-codeunit.RUN-method-codeunit.md) to execute the codeunit.  
   
 ## See Also  
  [Codeunit.RUN Method \(Codeunit\)](../methods/devenv-codeunit.RUN-method-codeunit.md)
