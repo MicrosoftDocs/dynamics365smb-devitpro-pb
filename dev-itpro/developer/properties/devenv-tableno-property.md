@@ -16,9 +16,9 @@ author: SusanneWindfeldPedersen
 
 # TableNo Property
 
-Sets the source table number, if any, for this codeunit. 
+<!-- Sets the source table number, if any, for this codeunit.--> 
 
-Specifies a table that is instantiated when the codeunit is run. 
+Sets a table as a record parameter by reference in the `OnRun` trigger of the codeunit.
   
 ## Applies To
 
@@ -26,7 +26,23 @@ Codeunits
   
 ## Remarks
 
-Setting the **TableNo** property changes the signature of the `OnRun` trigger of the codeunit to include a VAR parameter for the table, as shown in the following example for the Table.
+Although you do not see this in AL code, setting the **TableNo** property changes the signature of the `OnRun` trigger of the codeunit to include a `var` type record parameter with the name `Rec`. For example, the following code specifies the **TableNo** property in a codeunit
+
+```
+codeunit 50100 MyCodeunit
+{
+    TableNo = Item;
+
+    trigger OnRun()
+    begin
+
+    end;
+
+}
+
+OnRun(var Rec : Record Item)
+
+Tif you set the  VAR parameter for the table, as shown in the following example for the Table.
 
 
   
