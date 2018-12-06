@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 
 <!-- Sets the source table number, if any, for this codeunit.--> 
 
-Sets a table as a record parameter by reference in the `OnRun` trigger of the codeunit.
+Sets record parameter by reference to a table in the `OnRun` trigger. 
   
 ## Applies To
 
@@ -26,7 +26,7 @@ Codeunits
   
 ## Remarks
 
-Although you do not see this in AL code, setting the **TableNo** property changes the signature of the `OnRun` trigger of the codeunit to include a `var` type record parameter with the name `Rec`. For example, the following code specifies the **TableNo** property in a codeunit
+Although you do not see this in AL code, setting the **TableNo** property changes the signature of the `OnRun` trigger of the codeunit to include a variable `Record` data type parameter (named `Rec`) for the specified table. For example, the following code sets the **TableNo** property in a codeunit to the **Items** table.
 
 ```
 codeunit 50100 MyCodeunit
@@ -35,18 +35,15 @@ codeunit 50100 MyCodeunit
 
     trigger OnRun()
     begin
-
+        
     end;
 
 }
+```
 
-OnRun(var Rec : Record Item)
+The signature of the `OnRun` trigger is `OnRun(var Rec : Record Item)`. 
 
-Tif you set the  VAR parameter for the table, as shown in the following example for the Table.
-
-
-  
- If you specify a table number for this property, then you can use the CurrRec global variable in the codeunit and use the [Codeunit.RUN Method \(Codeunit\)](../methods/devenv-codeunit.RUN-method-codeunit.md) to execute the code unit  
+If you specify a table number for this property, then you can use the CurrRec global variable in the codeunit and use the [Codeunit.RUN Method \(Codeunit\)](../methods/devenv-codeunit.RUN-method-codeunit.md) to execute the codeunit.  
   
 ## See Also  
  [Codeunit.RUN Method \(Codeunit\)](../methods/devenv-codeunit.RUN-method-codeunit.md)
