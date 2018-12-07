@@ -16,9 +16,7 @@ author: SusanneWindfeldPedersen
 
 # TableNo Property
 
-<!-- Sets the source table number, if any, for this codeunit.--> 
-
-Sets record parameter by reference to a table on the `OnRun` trigger. 
+Sets a record parameter by reference to a table on the `OnRun` trigger. 
   
 ## Applies To
 
