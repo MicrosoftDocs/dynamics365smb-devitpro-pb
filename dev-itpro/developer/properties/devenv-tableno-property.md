@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 
 <!-- Sets the source table number, if any, for this codeunit.--> 
 
-Sets record parameter by reference to a table in the `OnRun` trigger. 
+Sets record parameter by reference to a table on the `OnRun` trigger. 
   
 ## Applies To
 
