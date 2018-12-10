@@ -13,7 +13,9 @@ ms.author: solsen
 # AL Outline View
 Working with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you have access to the **Outline** view. The **Outline** view is a separate section in the lower left corner, right under the **Explorer** view.
 
-The **Outline** view is enabled by default and shows the symbol tree of the currently active cursor, it also allows you to filter as you type. Double-clicking on any node makes your cursor jump to the selected definition or keyword.
+The **Outline** view is enabled by default and shows the symbol tree of the currently active cursor, it also allows you to filter as you type. Double-clicking on any node makes your cursor jump to the selected definition or keyword. The **Outline** view will also display any errors in your project for easy inspection.
+
+![Outline view](media/outlineview.png "Outline view in Visual Studio Code")
 
 You manage the look and feel of the **Outline** view by defining a number of settings, that are all enabled by default:
 
