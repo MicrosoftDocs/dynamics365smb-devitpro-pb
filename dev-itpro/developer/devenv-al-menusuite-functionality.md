@@ -72,7 +72,6 @@ After you change these properties, before the changes take effect in the client,
 
 ## See Also
 [Adding Menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md)  
-[MenuSuite Properties](properties/devenv-menusuite-properties.md)   
 [Page Object](devenv-page-object.md)  
 [Report Object](devenv-report-object.md)  
 [AL Development Environment](devenv-reference-overview.md)
