@@ -96,7 +96,8 @@
 ### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
-### [The AL Formatter](developer/devenv-al-formatter.md)
+### [AL Formatter](developer/devenv-al-formatter.md)
+### [AL Outline View](developer/devenv-al-outline-view.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
