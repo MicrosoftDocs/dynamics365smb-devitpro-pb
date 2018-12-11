@@ -25,9 +25,10 @@ Here is a quick overview of capabilities in **Designer**:
 |Add components                     |fields and columns               |
 |Move components                    |fields, columns, cues, and parts |
 |Remove components                  |fields, columns, cues, and parts |
+|Set the [Importance property](properties/devenv-importance-property.md) to determine whether a field displays in the FastTab heading when the FastTab is collapsed or only when the users selects **Show more**.|fields|
 |Set freeze pane and clear freeze pane |columns                       |
 |Adjust column width |columns                       |
-|Edit caption                       |fasttab, cards, factbox          |
+|Edit caption                       |FastTab, cards, FactBox          |
 |Save extension/download code       |general                          |
 |Preview design                     |general                          |
 
@@ -65,7 +66,20 @@ You can edit the caption of a FastTab, a card, FactBox by clicking the caption a
 
 If you want to remove a field, column, part, or a cue, you must select the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) placed on the component, and then choose **Remove**. 
 
+### Setting the freeze
+
 **Set freeze pane and clear freeze pane** locks one or more columns to the left, even when you scroll horizontally. You can set the freeze pane, by selecting the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) of the column that you want as the last column of the freeze pane, and then choose **Set Freeze Pane**. If you want to set the freeze pane back to its original designed location, select the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) for the current freeze pane column, and then choose **Clear Freeze Pane**.
+
+
+### Setting the Importance on Field
+
+Fields on non-list type pages, such as card and document type pages, include Designer options for setting the importance. The following table describes the options for setting the importance in Designer and how it corresponds to the Importance property in the page code.
+
+|Option|Description|Importance property value|
+|----|----|---|
+|**Show under "Show more"**|Sets the field so that only appears when the user selects **Show more**. |Additional|
+|**Show always**|Sets the field to always display on the page (regardless of whether the user selects **Show more** or **Show less**) but not in the FastTab heading if it is collapsed. <br /><br />If this option is available|Standard|
+|**Show when collapsed**|Sets the field to always display on the page (regardless of whether the user selects **Show more** or **Show less**) and also in the header of the FastTab when the FastTab is collapsed.|Promoted|
 
 ## Preview design
 
