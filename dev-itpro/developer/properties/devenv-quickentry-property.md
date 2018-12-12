@@ -26,18 +26,20 @@ Page fields
 <!-- onprem in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md-md)]-->.
 
 
-## Property Value  
- **true** specifies that the field has input focus when users move through fields by pressing Enter; **false** specifies the field to be skipped The default is **true** on pages. 
+## Property Value
+ 
+**true** specifies that the field has input focus when users move through fields by pressing Enter; **false** specifies the field to be skipped The default is **true** on pages.
+
+The property can be configured statically by setting the value to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”.  
 
 ## Remarks  
 
-This property helps accelerate data entry, when using the keyboard, by only focusing on those fields a user typically fills in; skipping those that are rarely filled in. The QuickEntry property is respected when users press the Enter key. This behavior differs from using the Tab key, which will sequentially give input focus to all page controls. By using this property you define a path for entering data, which is be beneficial for repetitive data entry tasks.  Because the default is **true**, setting  
-  
-The property can be configured statically by setting the value to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”. 
+This property helps accelerate data entry, when using the keyboard, by only focusing on those fields a user typically fills in; skipping those that are rarely filled in. The **QuickEntry** property is respected when users press the Enter key. This behavior differs from using the Tab key, which will sequentially give input focus to all page controls. By using this property you define a path for entering data, which is be beneficial for repetitive data entry tasks.
 
+  
 ## Example
 
-This example illustrates how to dynamically set the **QuickEntry** property by using a Boolean field. The code modifies the **Customer Card** page so that the **Credit Limit (LCY)** field is skipped if the **Allow Invoice Discount** field is not selected.
+This example illustrates how to dynamically set the **QuickEntry** property by using a Boolean field on the page. The code modifies the **Customer Card** page so that the **Credit Limit (LCY)** field is skipped if the **Allow Invoice Discount** field is not selected.
 
 ```
 pageextension 50100 CustomerCardExt extends "Customer Card"
