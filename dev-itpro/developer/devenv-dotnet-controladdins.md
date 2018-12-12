@@ -66,7 +66,7 @@ public class PingPongAddIn : WinFormsControlAddInBase
 } 
 ```
 
-The next piece of information that we need is the namespace-qualified name of the type annotated with the `ControlAddInExport` attribute. This is the type that provides the implementation of the control add-in and which exposes members annotated with the `ApplicationVisible` attribute to the AL runtime. In this example this is `Microsoft.Dynamics.Nav.Client.PingPong.PingPongAddIn`.
+The next needed piece of information is the namespace-qualified name of the type annotated with the `ControlAddInExport` attribute. This is the type that provides the implementation of the control add-in and which exposes members annotated with the `ApplicationVisible` attribute to the AL runtime. In this example this is `Microsoft.Dynamics.Nav.Client.PingPong.PingPongAddIn`.
 
 The `ControlAddInExport` attribute's constructor takes as an argument the name of the control add-in, as represented in the runtime, and in existing C/AL code. In this example, the name of the control add-in is `Microsoft.Dynamics.Nav.Client.PingPong`. This was the last component needed to construct a declaration for this .NET control add-in in AL. The name of the assembly is used in creating the `assembly` construct, the namespace-qualified name of the type is used as the first element in the `type` declaration, and the name of the control add-in is used as the alias of the type. We complete the declaration by setting the `IsControlAddIn` property to true. This property is used to tell the AL compiler to treat the given type declaration as a .NET control add-in declaration.
 
