@@ -25,13 +25,13 @@ Here is a quick overview of capabilities in **Designer**:
 |Add components                     |fields and columns               |
 |Move components                    |fields, columns, cues, and parts |
 |Remove components                  |fields, columns, cues, and parts |
-|Set the [Importance property](properties/devenv-importance-property.md) to determine whether a field displays in the FastTab heading when the FastTab is collapsed or only when the users selects **Show more**.|fields|
+|Change field importance, like showing in collapsed FastTab header or under **Show More**) |fields|
+|Exclude field from Quick Entry|fields| 
 |Set freeze pane and clear freeze pane |columns                       |
 |Adjust column width |columns                       |
 |Edit caption                       |FastTab, cards, FactBox          |
 |Save extension/download code       |general                          |
 |Preview design                     |general                          |
-
 
 ## Important points to note
 
@@ -43,7 +43,9 @@ Here is a quick overview of capabilities in **Designer**:
 
 - You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Some components cannot be moved using drag-and-drop and are restricted to the view that they are in.
 
-- You can only add fields/columns, from a predefined list, which is based on the source table. You cannot create new ones.  
+- You can only add fields/columns, from a predefined list, which is based on the source table. You cannot create new ones.
+
+- In the client, users can change the many of these settings for their workspace only by using personalization (see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user).  
 
 ## Start designing
 
@@ -73,13 +75,17 @@ If you want to remove a field, column, part, or a cue, you must select the arrow
 
 ### Setting the Importance on Field
 
-Fields on non-list type pages, such as card and document type pages, include Designer options for setting the importance. The following table describes the options for setting the importance in Designer and how it corresponds to the Importance property in the page code.
+Fields on non-list type pages, such as card and document type pages, include Designer options for setting the importance. The following table describes the options for setting the importance in Designer and how it corresponds to the  [Importance property](properties/devenv-importance-property.md) in the page code.
 
 |Option|Description|Importance property value|
 |----|----|---|
 |**Show under "Show more"**|Sets the field so that only appears when the user selects **Show more**. |Additional|
 |**Show always**|Sets the field to always display on the page (regardless of whether the user selects **Show more** or **Show less**) but not in the FastTab heading if it is collapsed. <br /><br />If this option is available|Standard|
 |**Show when collapsed**|Sets the field to always display on the page (regardless of whether the user selects **Show more** or **Show less**) and also in the header of the FastTab when the FastTab is collapsed.|Promoted|
+
+### Setting the Quick Entry on Fields
+
+You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The QuickEntry property determines whether the field is given input focus or skipped when users navigate through fields on a page by pressing the return key. It is used to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill-in. 
 
 ## Preview design
 
