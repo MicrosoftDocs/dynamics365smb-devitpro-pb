@@ -38,7 +38,7 @@ author: SusanneWindfeldPedersen
   
 ## Global events
   
- Global events are predefined system events that are automatically raised by codeunit 40 **LoginManagement**. This codeunit includes several global method triggers, such as CompanyOpen, CompanyClose, and GetSystemIndicator. For most of these global method triggers, there are one or two global events: a before and after event. For example, there is an OnBeforeCompanyOpen event and an OnAfterCompanyOpen event. The global events are defined as integration event publishers by local methods in codeunit 40.
+ Global events are predefined system events that are automatically raised by various base application codeunits. For example, codeunit 40 **LoginManagement** includes several global method triggers, such as CompanyOpen, CompanyClose, and GetSystemIndicator. For most of these global method triggers, there are one or two global events: a before and after event. For example, there is an OnBeforeCompanyOpen event and an OnAfterCompanyOpen event. The global events are defined as integration event publishers by local methods in the following codeunits.
 
 |Codeunit ID|Codeunit Name|Event|
 |-----------|-------------|-----|
@@ -60,7 +60,7 @@ author: SusanneWindfeldPedersen
 |45|AutoFormatManagement|OnAfterAutoFormatTranslate|
 |49|GlobalTriggerManagement|OnAfterGetGlobalTableTriggerMask|
 |||OnAfterOnGlobalInsert|
-||OnAfterOnGlobalModify|
+|||OnAfterOnGlobalModify|
 |||OnAfterOnGlobalDelete|
 |||OnAfterOnGlobalRename|
 |||OnAfterGetDatabaseTableTriggerSetup|
