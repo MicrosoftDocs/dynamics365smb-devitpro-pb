@@ -177,6 +177,7 @@
 ## [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
 ## [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## [AL Development Environment](developer/devenv-reference-overview.md)
