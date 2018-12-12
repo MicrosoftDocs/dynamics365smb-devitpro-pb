@@ -12,15 +12,15 @@ caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # QuickEntry Property
+
 Specifies if the page control should have input focus. The default value of the property is **true**. To specify that a control can be skipped, change this value to **false**.  
   
 > [!NOTE]  
 >  Specifying an expression as the value of the property is not supported.  
   
-## Applies To  
+## Applies To
+  
 Page fields  
 
 This property is ignored for fields in a list, such as on a **List** type page<!-- onprem in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md-md)]-->.
