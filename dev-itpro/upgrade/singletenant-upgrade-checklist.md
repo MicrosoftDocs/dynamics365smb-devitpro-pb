@@ -52,7 +52,6 @@ This article provides an overview of the full upgrade process for Business Centr
 ## Post-upgrade tasks
 |Step|More info| Done |
 |----|-----------|--|
-|Transition custom code that used codeunit 1 to use the management codeunits.|[See...](transition-from-codeunit1.md)||
 |Import permissions and permission sets.|[See...](How-to--Import-Export-Permission-Sets-Permissions.md)||
 |Import encryption keys|[See...](how-to-export-and-import-encryption-keys.md)||
 |Register custom control add-ins to the server instance.|[See...](upgrading-the-data.md#AddControlAddins)||
