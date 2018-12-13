@@ -27,7 +27,6 @@ Coming from the Dynamics NAV Development Environment and C/SIDE, there are some 
 |C/SIDE|AL Language Development Environment|
 |------|---------------------------|
 |The token for multilanguage comment is @@@.|A multilanguage comment is marked with Comment.|
-|Supports TryFunction on code developed in C/SIDE.|Supports calling referenced TryFunctions from W1.|  
 
 Several properties have been renamed, to mention some:
 
