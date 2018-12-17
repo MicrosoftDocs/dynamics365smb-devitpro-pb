@@ -65,6 +65,4 @@ pageextension 50101 CustomerListExt extends "Customer List"
 ## See Also  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)   
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)   
-[Handling Events with Microsoft .NET Framework Interoperability](https://docs.microsoft.com/en-us/dynamics-nav/handling-events-with-microsoft-.net-framework-interoperability)     
-[Calling .NET Framework Members from C/AL](https://docs.microsoft.com/en-us/dynamics-nav/calling-.net-framework-members-from-c-al)  
 [Method Attributes](methods/devenv-method-attributes.md)
