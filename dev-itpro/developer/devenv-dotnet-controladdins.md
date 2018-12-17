@@ -13,9 +13,7 @@ ms.author: solsen
 ---
 
 # .NET Control Add-Ins
-In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-premises you can use existing .NET and Javascript control add-ins from the AL Language through .NET interoperability. For more information about .NET and Javascript add-ins, see [Creating and Using a Windows Client Control Add-in](https://docs.microsoft.com/en-us/dynamics-nav/walkthrough--creating-and-using-a-client-control-add-in).
-
-It is recommended that you convert your existing .NET and Javascript add-ins to native AL control add-ins that are supported both on-premises and in the cloud. For more information about native AL control add-ins, see [Control Add-In Object](devenv-control-addin-object.md). 
+In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-premises you can use existing .NET and Javascript control add-ins from the AL Language through .NET interoperability. It is recommended that you convert your existing .NET and Javascript add-ins to native AL control add-ins that are supported both on-premises and in the cloud. For more information about native AL control add-ins, see [Control Add-In Object](devenv-control-addin-object.md). 
 
 To declare the usage of a .NET or Javascript add-in in AL, you need three critical pieces of information about the .NET type that represent the interface of the add-in. These are the name of the assembly containing the add-in, the name of the control add-in, and the name of the class that implements the control add-in. We will show how to retrieve this information for the `Microsoft.Dynamics.Nav.Client.PingPong` control add-in that ships with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
@@ -118,8 +116,7 @@ If within the same project you have a native AL control add-in and a .NET add-in
 ## See Also
 [Getting Started with AL](devenv-get-started.md)    
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)     
-[Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)         
-[Creating and Using a Windows Client Control Add-in](https://docs.microsoft.com/en-us/dynamics-nav/walkthrough--creating-and-using-a-client-control-add-in)   
+[Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)           
 [Control Add-In Object](devenv-control-addin-object.md)   
 [How to: Determine an Assembly's Fully Qualified Name](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name)
 
