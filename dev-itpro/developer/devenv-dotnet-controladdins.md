@@ -118,6 +118,7 @@ If within the same project you have a native AL control add-in and a .NET add-in
 ## See Also
 [Getting Started with AL](devenv-get-started.md)    
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)     
+[Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)         
 [Creating and Using a Windows Client Control Add-in](https://docs.microsoft.com/en-us/dynamics-nav/walkthrough--creating-and-using-a-client-control-add-in)   
 [Control Add-In Object](devenv-control-addin-object.md)   
 [How to: Determine an Assembly's Fully Qualified Name](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name)
