@@ -21,14 +21,10 @@ These and other scenarios are also supported in [!INCLUDE[prodshort](../develope
 The user assistance model is based on the following principles:
 
 - Get started
-
-    Default values and setup wizards makes it easy to start using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with your own data, in-product videos give new users a quick introduction to how the product works, and Home pages give easy access to key tasks so each user is more productive every day.
 - Get unblocked
-
-    Embedded user assistance implemented as tooltips answers most immediate questions about what fields and actions do.
 - Learn more
 
-    The Help menu and the tooltips provide context-sensitive links to Help articles with more information.
+For more information, see [User Assistance Model](../user-assistance.md).  
 
 Apps and other extensions are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality.  
 
