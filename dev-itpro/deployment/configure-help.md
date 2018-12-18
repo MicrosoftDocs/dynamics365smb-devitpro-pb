@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/24/2018
+ms.date: 12/18/2018
 ms.author: edupont
 ---
 
@@ -22,7 +22,7 @@ The user assistance model is based on the following principles:
 
 - Get started
 
-    Default values and setup wizards makes it easy to start using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with your own data, in-product videos give new users a quick introduction to how the product works, and Home pages give easy access to key tasks so each user is more productive.
+    Default values and setup wizards makes it easy to start using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with your own data, in-product videos give new users a quick introduction to how the product works, and Home pages give easy access to key tasks so each user is more productive every day.
 - Get unblocked
 
     Embedded user assistance implemented as tooltips answers most immediate questions about what fields and actions do.
@@ -70,7 +70,7 @@ page 50100 MyPage
 {
     PageType = Card;
     SourceTable = MyTable;
-    HelpLink = 'https://docs.microsoft.com/{0}/dynamics365/get-started/training/index';
+    HelpLink = 'https://mysite.com/{0}/mysolution/my-feature';
 
 
     layout
@@ -165,3 +165,8 @@ In both examples, https://myserver.com represents the URL to the Help Server ins
 [Upgrade Dynamics NAV Help](../upgrade/migrate-help.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [System Requirements](system-requirement-business-central.md)  
+[Resources for Help and Support](../help-and-support.md)  
+[Blog post: Extending and customizing the Help](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/11/extending-and-customizing-help)  
+[Blog post: Collaborate on content for Business Central](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/15/collaborate-on-content-for-business-central)  
+[Docs Contributor Guide](/contribute/)  
+[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  

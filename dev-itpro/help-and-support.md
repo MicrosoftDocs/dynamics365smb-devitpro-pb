@@ -33,11 +33,12 @@ As the administrator, you have access to the [!INCLUDE[prodshort](includes/prods
 
 You can learn about current and coming capabilities through a number of different resources as outlined in the following table.
 
-|Name  |Location  |Description|
-|---------|---------|---------|
-|Release notes |[https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes](https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes) |If you're wondering about upcoming or recently released capabilities in Business Central, use this link to learn more.|
-|Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central) |Use this library to learn how to make Business Central work for your business. |
-|Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
+> [!div class="mx-tdCol2BreakAll"]
+> |Name  |Location  |Description|
+> |---------|---------|---------|
+> |Release notes |[https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes](https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes) |If you're wondering about upcoming or recently released capabilities in Business Central, use this link to learn more.|
+> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central) |Use this library to learn how to make Business Central work for your business. |
+> |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
 
 ### Summary of where to file bugs and issues
 
@@ -55,12 +56,13 @@ Make sure to search through the list of submitted suggestions, as chances are th
 
 On the [Business Central Community site](https://community.dynamics.com/business), you have access to a number of different resources as outlined in the following table.
 
-|Name  |Location  |Description|
-|---------|---------|---------|
-|Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
-|Business Central blog |[https://community.dynamics.com/business/b/financials](https://community.dynamics.com/business/b/financials) | Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. |
-|Business Central Support blog |[https://community.dynamics.com/business/b/dynamics365financialssupport](https://community.dynamics.com/business/b/dynamics365financialssupport) |Use this blog for technical information from the Microsoft support team.|
-|Business Central for Partners blog |[https://community.dynamics.com/business/b/businesscentraldevitpro](https://community.dynamics.com/business/b/businesscentraldevitpro) | Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. |
+> [!div class="mx-tdCol2BreakAll"]
+> |Name  |Location  |Description|
+> |---------|---------|---------|
+> |Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
+> |Business Central blog |[https://community.dynamics.com/business/b/financials](https://community.dynamics.com/business/b/financials) | Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. |
+> |Business Central Support blog |[https://community.dynamics.com/business/b/dynamics365financialssupport](https://community.dynamics.com/business/b/dynamics365financialssupport) |Use this blog for technical information from the Microsoft support team.|
+> |Business Central for Partners blog |[https://community.dynamics.com/business/b/businesscentraldevitpro](https://community.dynamics.com/business/b/businesscentraldevitpro) | Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. |
 
 ## Trials
 
@@ -74,3 +76,4 @@ Giving prospects access to a preconfigured trial of [!INCLUDE[prodshort](include
 [Migrate Legacy Help](upgrade/migrate-help.md)  
 [The “Ready to Go” Program](developer/readiness/readiness-ready-to-go.md)  
 [The Business Central Administration Center](administration/tenant-admin-center.md)  
+[Blog post: Find the right resources and provide feedback](https://community.dynamics.com/business/b/financials/archive/2018/12/04/find-the-right-resources-and-provide-feedback)  
