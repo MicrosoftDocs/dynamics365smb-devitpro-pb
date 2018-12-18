@@ -1,5 +1,5 @@
 ---
-title: "FAQ about developer and IT-Pro experiences"
+title: "Resources for Help and Support"
 description: Learn about resources for support and product Help for Business Central.
 author: edupont04
 ms.reviewer: na
@@ -9,7 +9,7 @@ ms.author: edupont
 ms.date: 12/18/2018
 ---
 
-# Resources for Help and Support for Dynamics 365 Business Central
+# Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
 
 As a [!INCLUDE[prodshort](includes/prodshort.md)] partner, you have access to resources that can help you support your customers the users of [!INCLUDE[prodshort](includes/prodshort.md)], and you have access to resources that can help you be more productive as a partner.  
 
@@ -35,14 +35,14 @@ You can learn about current and coming capabilities through a number of differen
 
 |Name  |Location  |Description|
 |---------|---------|---------|
-|Release notes |https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes |If you're wondering about upcoming or recently released capabilities in Business Central, use this link to learn more.|
-|Business Central docs|https://docs.microsoft.com/dynamics365/business-central |Use this library to learn how to make Business Central work for your business. |
-|Business Central developer and ITpro docs|https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/|Use this content to learn how to extend, customize, and administrate Business Central.|
+|Release notes |[https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes](https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes) |If you're wondering about upcoming or recently released capabilities in Business Central, use this link to learn more.|
+|Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central) |Use this library to learn how to make Business Central work for your business. |
+|Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
 
 ### Summary of where to file bugs and issues
 
 - For collaboration in preview or beta versions of the AL language in Visual Studio Code, use [GitHub](https://github.com/microsoft/al)  
-- For Microsoft partners, for versions already in general availability and supported, file requests through [Microsoft Partnersource](https://mbs.microsoft.com/partnersource/)  
+- For Microsoft partners, for versions already in general availability and supported, file requests through [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/)  
 - For ISVs/VARs who have discovered a bug in a in preview or beta version, use [MS Collaborate](https://docs.microsoft.com/en-us/collaborate/)  
 
 ### Share an idea about a new feature you'd like to have
@@ -57,16 +57,16 @@ On the [Business Central Community site](https://community.dynamics.com/business
 
 |Name  |Location  |Description|
 |---------|---------|---------|
-|Business Central Forum |https://community.dynamics.com/business/f |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
-|Business functionality blog |https://community.dynamics.com/business/b/financials | Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. |
-|Business Central Support blog |https://community.dynamics.com/business/b/dynamics365financialssupport|Use this blog for technical information from the Microsoft support team.|
-|Business Central for Partners blog |https://community.dynamics.com/business/b/businesscentraldevitpro | Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. |
+|Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
+|Business Central blog |[https://community.dynamics.com/business/b/financials](https://community.dynamics.com/business/b/financials) | Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. |
+|Business Central Support blog |[https://community.dynamics.com/business/b/dynamics365financialssupport](https://community.dynamics.com/business/b/dynamics365financialssupport) |Use this blog for technical information from the Microsoft support team.|
+|Business Central for Partners blog |[https://community.dynamics.com/business/b/businesscentraldevitpro](https://community.dynamics.com/business/b/businesscentraldevitpro) | Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. |
 
 ## Trials
 
 Giving prospects access to a preconfigured trial of [!INCLUDE[prodshort](includes/prodshort.md)] is an elegant way to introduce them to [!INCLUDE[prodshort](includes/prodshort.md)]. You can use the standard trial provided by Microsoft, or you can prepare your own including relevant extensions.  
 
-BLAH
+<!-- TODO: Describe how to customize a trial -->
 
 ## See also
 
