@@ -10,13 +10,13 @@ ms.date: 12/18/2018
 ms.author: edupont
 ---
 
-# [!INCLUDE[prodlong](../developer/includes/prodlong.md)] User Assistance Model
+# [!INCLUDE[prodlong](developer/includes/prodlong.md)] User Assistance Model
 
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user assistance model is based on the following principles:
+The [!INCLUDE[prodshort](developer/includes/prodshort.md)] user assistance model is based on the following principles:
 
 - Get started
 
-    Default values and setup wizards makes it easy to start using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with your own data, in-product videos give new users a quick introduction to how the product works, and Home pages give easy access to key tasks so each user is more productive every day.
+    Default values and setup wizards makes it easy to start using [!INCLUDE[prodshort](developer/includes/prodshort.md)] with your own data, in-product videos give new users a quick introduction to how the product works, and Home pages give easy access to key tasks so each user is more productive every day.
 - Get unblocked
 
     Embedded user assistance implemented as tooltips answers most immediate questions about what fields and actions do.
@@ -32,9 +32,9 @@ In this article, we'll talk about the user assistance model itself and what it d
 
 ## Help users get started
 
-The user assistance concept of *Get Started* is not just about getting started with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on the first day. It’s also about getting started all the other days, and about getting started with infrequent and unfamiliar tasks.  
+The user assistance concept of *Get Started* is not just about getting started with [!INCLUDE[prodshort](developer/includes/prodshort.md)] on the first day. It’s also about getting started all the other days, and about getting started with infrequent and unfamiliar tasks.  
 
-Assistance in the shape of wizards is very helpful for setting things up, or filling in data for a complicated report, for example. Designing Home pages that are truly designed for that particular role or job is also very useful in helping users get started with their work every day – they can easily get to their most important tasks, and that means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] helps them get their work done more efficiently.  
+Assistance in the shape of wizards is very helpful for setting things up, or filling in data for a complicated report, for example. Designing Home pages that are truly designed for that particular role or job is also very useful in helping users get started with their work every day – they can easily get to their most important tasks, and that means that [!INCLUDE[prodshort](developer/includes/prodshort.md)] helps them get their work done more efficiently.  
 
 ## Help users get unblocked
 
@@ -46,7 +46,7 @@ The tooltips are there to help users unblock themselves by providing an answer t
 
 The content that we publish under the user assistance concept of *Learn more* is in part intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative, and so on.  
 
-The base version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) so that you can extend and customize it for your customers.  
+The base version of [!INCLUDE[prodshort](developer/includes/prodshort.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) so that you can extend and customize it for your customers.  
 
 There are different repos in GitHub for the source content and each of the languages that Microsoft translates to. The dynamics365smb-docs repo contains the content in English (US). If you want access to the content in other languages, navigate to the relevant repo. The names follow this pattern:  
 
