@@ -1,6 +1,7 @@
 # [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
 ## [Frequently asked questions](faq.md)
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
+## [Help and Support](help-and-support.md)
 <!-- deployment-->
 # [Deployment](deployment/deployment.md)
 ## Online
