@@ -29,4 +29,4 @@ One of the keys to a successful extension validation is a document that guides t
 
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
 [Rules and Guidelines for AL Code](apptest-overview.md)  
-[User assistance model](user-assistance.md)  
+[User assistance model](../user-assistance.md)  
