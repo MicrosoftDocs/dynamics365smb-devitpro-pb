@@ -50,11 +50,11 @@ The base version of [!INCLUDE[prodshort](developer/includes/prodshort.md)] uses 
 
 There are different repos in GitHub for the source content and each of the languages that Microsoft translates to. The dynamics365smb-docs repo contains the source content in English (US). If you want access to the content in other languages that are provided by Microsoft, navigate to the relevant repo. The names follow this pattern:  
 
-**dynamics365smb-docs-pr.<language>-<country>**
+**dynamics365smb-docs-pr.language-country**
 
 For example, the Danish translation of our content is in a repo with the name [dynamics365smb-docs-pr.da-DK](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-dk).  
 
-In the *dynamics365smb-docs* repo, the readme.md file contains tips and tricks to get started with contributions.  
+In the source repo, *dynamics365smb-docs*, the readme.md file contains tips and tricks to get started with contributions.  
 
 ### Feedback and contributions
 

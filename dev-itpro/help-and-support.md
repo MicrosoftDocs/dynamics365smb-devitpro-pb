@@ -17,11 +17,7 @@ This page outlines the resources available to you.
 
 ## Product Help
 
-When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.md)], they have access to user assistance according to the [!INCLUDE[prodshort](includes/prodshort.md)] user assistance model. If you customize [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [Configuring the Help Experience](deployment/configure-help.md).  
-
-### Give feedback about content
-
-On docs.microsoft.com, at the bottom of each article you'll find two buttons. The *Product feedback* button sends you to the Ideas site, and the *Content feedback* button lets you submit feedback about the content through GitHub.  
+When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.md)], they have access to user assistance according to the [!INCLUDE[prodshort](includes/prodshort.md)] user assistance model. If you customize [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User assistance model](user-assistance.md).  
 
 ## Support
 
