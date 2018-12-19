@@ -19,7 +19,10 @@ caps.latest.revision: 18
 # XMLport Object
 XMLports are used to export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Sharing data between different computer systems is seamless when it is shared in XML format. Working with XML files can be tedious so the details of how the XML file is handled are encapsulated in XMLports.
 
-To use an XMLport to import or export data, you first create an XMLport object. You can run the XMLport from a page or codeunit object.
+To use an XMLport to import or export data, you first create an XMLport object. You can run the XMLport from a page or codeunit object. 
+
+> [!NOTE]  
+> In the [!INCLUDE[prodlong](includes/prodlong.md)] Web client, Request pages are not supported. Request pages are dialog boxes that enables the user to set a filter on the data, sort the data, or choose whether to export or import the data. If you try to run an XMLport with a Request page from the Web client, you receive an error that the XMLport page type is not supported.
 
 ## Snippet support
 Typing the shortcut ```txmlport``` will create the basic layout for an XMLport object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
