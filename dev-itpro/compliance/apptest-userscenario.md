@@ -23,7 +23,7 @@ One of the keys to a successful extension validation is a document that guides t
 - Include the most important functionality scenarios of your extension. We are not looking to test your entire extension, but we do want to ensure we are validating the most used aspects of your app.
 
 > [!NOTE]
-> This is not the same as the requirement to include Help for your functionality. For more information about getting started with extending and customizing the Business Central user assistance, see [User assistance model](user-assistance.md).  
+> This is not the same as the requirement to include Help for your functionality. For more information about getting started with extending and customizing the Business Central user assistance, see [User assistance model](../user-assistance.md).  
 
 ## See Also
 
