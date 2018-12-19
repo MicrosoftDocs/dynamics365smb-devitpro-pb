@@ -157,7 +157,7 @@
 #### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 #### [Headlines](developer/devenv-create-role-center-headline.md)
-#### [Adding Pages and Reports to Search](developer/devenv-al-menusuite-functionality.md)
+#### [Adding Pages and Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Designing Pages
 #### [Designing List Pages](developer/devenv-designing-list-pages.md)
 #### [Designing Card Pages](developer/devenv-designing-card-pages.md)
