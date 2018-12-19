@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 12/18/2018
+ms.date: 12/19/2018
 ms.author: edupont
 ---
 
@@ -108,7 +108,7 @@ If you want to use a website that is not based on Help Server, then you must spe
 
 For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
-```
+```json
                            "//BaseHelpUrl":  "The location of Help for this application.",
                            "BaseHelpUrl": "https://docs.microsoft.com/{0}/dynamics365/business-central/",
                            "//BaseHelpSearchUrl":  "The URL to use if Help is included in the Search functionality in Business Central.",
@@ -133,7 +133,7 @@ If you want to use Help Server, then you must specify the server and port in the
 
 For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
-```
+```json
                            "//HelpServer": [
                                                    "Name of the Dynamics NAV Help Server to connect to."
                                             ],
@@ -155,6 +155,7 @@ In both examples, https://myserver.com represents the URL to the Help Server ins
 
 ## See Also
 
+[User Assistance Model](../user-assistance.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server)  
 [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server)  

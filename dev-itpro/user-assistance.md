@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 12/18/2018
+ms.date: 12/19/2018
 ms.author: edupont
 ---
 
@@ -16,7 +16,7 @@ The [!INCLUDE[prodshort](developer/includes/prodshort.md)] user assistance model
 
 - Get started
 
-    Default values and setup wizards makes it easy to start using [!INCLUDE[prodshort](developer/includes/prodshort.md)] with your own data, in-product videos give new users a quick introduction to how the product works, and Home pages give easy access to key tasks so each user is more productive every day.
+    Default values and setup wizards makes it easy to start using [!INCLUDE[prodshort](developer/includes/prodshort.md)] with your own data, in-product videos give new users a quick introduction to how the product works, and Home pages give easy access to key tasks so each user can easily get started with their work every day.
 - Get unblocked
 
     Embedded user assistance implemented as tooltips answers most immediate questions about what fields and actions do.
@@ -24,9 +24,7 @@ The [!INCLUDE[prodshort](developer/includes/prodshort.md)] user assistance model
 
     The Help menu and the tooltips provide context-sensitive links to Help articles with more information.
 
-Apps and other extensions are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality.  
-
-For more information about customizing and extending the user assistance, see [Configure the Help Experience](deployment/configure-help.md).  
+Apps, extensions, and customizations are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality. For more information about customizing and extending the user assistance, see [Configure the Help Experience](deployment/configure-help.md).  
 
 In this article, we'll talk about the user assistance model itself and what it does.  
 
@@ -36,34 +34,40 @@ The user assistance concept of *Get Started* is not just about getting started w
 
 Assistance in the shape of wizards is very helpful for setting things up, or filling in data for a complicated report, for example. Designing Home pages that are truly designed for that particular role or job is also very useful in helping users get started with their work every day – they can easily get to their most important tasks, and that means that [!INCLUDE[prodshort](developer/includes/prodshort.md)] helps them get their work done more efficiently.  
 
+<!-- TODO: Reference to UX guidelines -->
+
 ## Help users get unblocked
 
-Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why we have applied tooltips to all controls and actions in the base application. In combination with descriptive captions and instructional text, the tooltips are our current implementation of embedded user assistance, which is an important principle in today’s world of software design.  
+Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why the base application includes tooltips for all controls and actions. In combination with descriptive captions and instructional text, the tooltips are our current implementation of *embedded user assistance*, which is an important principle in today’s world of software design.  
 
-The tooltips are there to help users unblock themselves by providing an answer to the most likely questions the users might have, such as “What data can I input here?” or “What is the data used for?”. Keep that in mind when you develop the user interface of your solution.  
+The tooltips help users unblock themselves by providing an answer to the most likely questions the users might have, such as “What data can I input here?” or “What is the data used for?”. Keep that in mind when you develop the user interface of your solution.  
 
 ## Help users learn more
 
-The content that we publish under the user assistance concept of *Learn more* is in part intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative, and so on.  
+The content that Microsoft publishes under the user assistance concept of *Learn more* is in part intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative, and so on.  
 
 The base version of [!INCLUDE[prodshort](developer/includes/prodshort.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) so that you can extend and customize it for your customers.  
 
-There are different repos in GitHub for the source content and each of the languages that Microsoft translates to. The dynamics365smb-docs repo contains the content in English (US). If you want access to the content in other languages, navigate to the relevant repo. The names follow this pattern:  
+There are different repos in GitHub for the source content and each of the languages that Microsoft translates to. The dynamics365smb-docs repo contains the source content in English (US). If you want access to the content in other languages that are provided by Microsoft, navigate to the relevant repo. The names follow this pattern:  
 
-```
-dynamics365smb-docs-pr.<language>-<country>
-```
+**dynamics365smb-docs-pr.<language>-<country>**
 
-For example, the Danish translation of our content is in a repo with the name *dynamics365smb-docs-pr.da-DK*.  
+For example, the Danish translation of our content is in a repo with the name [dynamics365smb-docs-pr.da-DK](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-dk).  
 
-In parent repo, the readme.md file contains tips and tricks to get started with contributions.  
+In the *dynamics365smb-docs* repo, the readme.md file contains tips and tricks to get started with contributions.  
 
-### Feedback
+### Feedback and contributions
 
-On docs.microsoft.com, each article has two buttons at the end of the article. The *Product feedback* button sends you to the Ideas site, and the *Content feedback* button lets you submit feedback about the content through GitHub. We welcome your contributions, both as pull requests with suggestions or corrections, and as GitHub Issues with bugs or questions.  
+On docs.microsoft.com, each article has two buttons at the end of the article. The *Product feedback* button sends you to the Ideas site, and the *Sign in to give documentation feedback* button lets you submit feedback about the content through GitHub. In both cases, you must create an account if you do not already have one. For *product feedback*, you must sign in with your work or organizational email account. For *access to GitHub*, you can use any email address when you create an account.  
+
+We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. But please be mindful that feedback and contributions to the *dynamics365smb-docs* repo is about the content, not about the product.  
 
 > [!IMPORTANT]
 > Microsoft accepts pull requests to the *dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.  
+
+Microsoft also accepts contributions and feedback about the developer and ITpro content through the [dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb). This repo does not have translation repos associated with it, but other than that, the same rules apply as for the *dynamics365smb-docs* repo.  
+
+
 
 ## See Also
 
