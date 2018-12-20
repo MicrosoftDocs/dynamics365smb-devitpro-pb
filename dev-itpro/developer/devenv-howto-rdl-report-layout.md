@@ -3,7 +3,7 @@ title: "Creating an RDL Layout Report"
 description: "Describes the steps involved in creating a report that uses an RDL layout."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 12/17/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -54,7 +54,7 @@ To facilitate testing your report layout, the following example extends the Cust
     }   
 
     ```
-4. Build the extension (Ctrl+Shift+B).
+4. Build the extension (Ctrl+Shift+B). The file will be created in the root of the current project. 
 5. Open the generated report layout file in Microsoft SQL Server Report Builder.
 6. Edit the layout by inserting a table. 
 7. Add the **Name** column from the datasets folder into the table and save the file.
