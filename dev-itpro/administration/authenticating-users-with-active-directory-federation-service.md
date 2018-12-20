@@ -82,7 +82,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
             Replace `<webserver-instance>` with the instance name of the [!INCLUDE[webserverinstance](../developer/includes/webserverinstance.md)] as defined in IIS for your installation. Make sure that the case matches exactly. For example:
 
             ```
-            https://MyWebServer:8080/BC130
+            https://MyWebServer:443/BC130
             ```
             or
             ```
@@ -103,12 +103,12 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
         For example:
 
         ```
-        https://MyWebServer:8080
+        https://MyWebServer:443
         ```
         or
 
         ```
-        https://corp.sample.com/BC130
+        https://corp.sample.com
         ```
 
     Choose **Next** to continue.
@@ -179,7 +179,13 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 7.  Start Window Powershell, and run the following command to define the token type for the relying party to be JWT:
 
     ```
-    Set-ADFSRelyingPartyTrust –TargetIdentifier "Web Client URL" –EnableJWT $true
+    Set-ADFSRelyingPartyTrust –TargetIdentifier "[Relying party trust identifier]" –EnableJWT $true
+    ```
+    
+    Replace `[Relying party trust identifier]` with the relying party trust identifier that you added in AD FS for the client, for example:
+
+    ```
+    Set-ADFSRelyingPartyTrust –TargetIdentifier "https://bcwebclient" –EnableJWT $true
     ```
 
 ## Configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to use AD FS authentication
