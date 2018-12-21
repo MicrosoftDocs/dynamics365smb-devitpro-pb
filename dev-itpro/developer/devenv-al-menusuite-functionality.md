@@ -12,9 +12,7 @@ ms.author: solsen
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Adding Pages and Reports to Tell me
-When you have added a page or a report in your extension, you often want it to be discoverable. AL provides navigational support for pages and reports in the client. You enable a page or report to be available through Tell me in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] by setting the **UsageCategory** property in code. 
-
-The **UsageCategory** setting will make the page or report searchable, and the value chosen for the setting will further sub categorize the item.
+When you have added a page or a report in your extension, you most likely want it to be discoverable to the user. AL provides navigational support for pages and reports in the client. You enable a page or report to be available through **Tell me** in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] by setting the **UsageCategory** property in code. The **UsageCategory** setting will make the page or report searchable, and the value chosen for the setting will further sub categorize the item.
 
 ![TellMe](../media/tellme.jpg)
 
@@ -22,7 +20,7 @@ The **UsageCategory** setting will make the page or report searchable, and the v
 When you create a [Page](devenv-page-object.md) or a [Report](devenv-report-object.md), you add the [UsageCategory Property](properties/devenv-usagecategory-property.md). If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**, the page or report will not show up when you search in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
 
 ## UsageCategory property values
-The values for the UsageCategory property are listed below: 
+The values for the **UsageCategory** property are listed below. The sub category will help the user navigate through the search results and it is a best practice to be consistent when categorizing the pages and the reports that you add. A consistent approach will help guiding the user and improve productivity.
 
 |Value           |Description                                  |
 |----------------|---------------------------------------------|
