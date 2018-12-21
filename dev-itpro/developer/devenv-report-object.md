@@ -3,15 +3,13 @@ title: "Report Object"
 description: "Reports are used to print or display information from a database."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/22/2018
+ms.date: 12/21/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
@@ -26,7 +24,7 @@ For more information about defining database tables and fields, see [Defining a 
 You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are two types of report layouts; client report definition, also called RDL layouts and Word layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. 
 
 > [!NOTE]  
-> Extension objects can have a name with a maximum length of 30 characters.      
+> Extension objects can have a name with a maximum length of 30 characters. 
 
 ## Snippet support
 Typing the shortcut ```treport``` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -85,7 +83,7 @@ report Id MyReport
 ```
 
 ## Report example
-The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a report, see [Creating a Report](devenv-howto-report-layout.md).
+The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a Word Layout report, see [Creating a Report](devenv-howto-report-layout.md).
 
 ```
 report 50103 "Customer List"
