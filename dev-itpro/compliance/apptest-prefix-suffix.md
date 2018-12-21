@@ -3,7 +3,7 @@ title: "Prefix and suffix for naming in extensions"
 description: "Use a prefix or suffix for names in your extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/10/2018
+ms.date: 12/12/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ ms.author: rweigel
 ---
 
 # Benefits and Guidelines for using a Prefix or Suffix
-In your extension, the name of each new application object or any of its fields must contain a prefix or suffix. This rule applies to all AL objects and fields. You can then use the [Caption](../developer/properties/devenv-caption-property.md)/[CaptionML](../developer/properties/devenv-captionml-property.md) values for what you decide to display to the user. When you modify a core Dynamics 365 object using a Table Extension or Page Extension, the prefix must be defined at the control or field level.
+In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects. You can use the [Caption](../developer/properties/devenv-caption-property.md) values for what you decide to display to the user. When you modify a core Dynamics 365 object using a Table Extension or Page Extension, the prefix/suffix must be defined at the control/field/action/group level.
 
 Declare your objects with a prefix as shown in the following examples.
 

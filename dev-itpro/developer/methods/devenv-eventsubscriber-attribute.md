@@ -42,7 +42,7 @@ Specifies the name of method that publishes the event in the object that is spec
 *ElementName*  
 Type: Text
 
-Specifies the table field that the trigger event pertains to. This argument is only requires a value for database trigger events, that is, when the *ObjectType* is set to **table** and the *OnSomeEvent* argument is a validate trigger event, such as `OnAfterValidateEvent`.
+Specifies the table field that the trigger event pertains to. This argument only requires a value for database trigger events, that is, when the *ObjectType* is set to **table** and the *OnSomeEvent* argument is a validate trigger event, such as `OnAfterValidateEvent`.
 
 *SkipOnMissingLicense*  
 Type: Boolean
@@ -56,7 +56,7 @@ Type: Boolean
 
 Specifies what happens to the subscriber method call when the user account that is running the current session does not have permission to the codeunit that contains the event subscriber method. The permissions are defined by the permission sets on the user account in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
 
-**True** will ignore the method call, and the code execution will continue to the next subscriber; **false** will throw an error and the code execution stops. **false** is the default value.
+**True** will ignore the method call, and the code execution will continue to the next subscriber; **false** will throw an error and the code execution stops. **False** is the default value.
 
 ## Example
 This example publishes an integration type event by using the OnAddressLineChanged method. The method takes a single text data type parameter. The IncludeSender and GlobalVarAccess arguments are set to **false**.
@@ -78,9 +78,10 @@ codeunit 50106 MyEventSubscriber
     end;
 }
 ``` 
+
 ## See Also  
  [Events in AL](../devenv-events-in-al.md)  
  [Publishing Events](../devenv-publishing-events.md)   
  [Raising Events](../devenv-raising-events.md)   
  [Subscribing to Events](../devenv-subscribing-to-events.md)   
- [Method Attributes](devenv-method-attributes.md)
+[Method Attributes](devenv-method-attributes.md)
