@@ -26,7 +26,7 @@ Here is a quick overview of capabilities in **Designer**:
 |Move components                    |fields, columns, cues, and parts |
 |Remove components                  |fields, columns, cues, and parts |
 |Change field importance, like showing in collapsed FastTab header or under **Show More**) |fields|
-|Exclude field from Quick Entry|fields| 
+|Exclude field from Quick Entry|fields, columns| 
 |Set freeze pane and clear freeze pane |columns                       |
 |Adjust column width |columns                       |
 |Edit caption                       |FastTab, cards, FactBox          |
@@ -85,9 +85,9 @@ Fields on non-list type pages, such as card and document type pages, include Des
 
 ### Setting the Quick Entry on Fields
 
-You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The QuickEntry property determines whether the field is given input focus or skipped when users navigate through fields on a page by pressing the return key. You use it to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill-in.
+You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The QuickEntry property determines whether the field is given input focus or skipped when users navigate through fields on a page by pressing the Enter key. You use it to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill-in.
 
-To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (set the QuickEntry property to `true`) or **Exclude from Quick Entry** (sets the QuickEntry property to `false`).  
+To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the QuickEntry property to `true`) or **Exclude from Quick Entry** (sets the QuickEntry property to `false`).  
 
 ## Preview design
 
