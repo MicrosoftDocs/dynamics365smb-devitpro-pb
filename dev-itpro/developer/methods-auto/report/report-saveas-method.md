@@ -55,7 +55,6 @@ The RecordRef that refers to the table in which you want to find a record.
 
  For a simple example that illustrates how to use the SAVEAS method, see example in the [RUNREQUESTPAGE Method](../../methods/devenv-runrequestpage-method.md) method topic. 
 
-[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)] 
 
 > [!NOTE]  
 >  By default, when a report uses an RDLC report layout at runtime, fonts are embedded in the generated PDF. You can specify whether fonts are embedded in the PDF for RDLC reports by changing the **Report PDF Font Embedding** setting in the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance configuration or changing the **PDFFontEmbedding** property in report objects. <!--NAV For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md) and [PDFFontEmbedding Property](../properties/devenv-PDF-FontEmbedding-Property.md).-->  
