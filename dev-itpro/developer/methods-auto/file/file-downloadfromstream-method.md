@@ -67,7 +67,7 @@ The name to give the downloaded file. This is the default file name that is show
  We recommend that you use the methods in codeunit 419, File Management, to upload and download files.
 
 
-[!INCLUDE[multi_file_download_web_client](includes/multi_file_download_web_client.md)]   
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]   
 
 ## Example  
  This example requires that you create the following variables.  

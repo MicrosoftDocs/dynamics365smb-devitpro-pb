@@ -47,7 +47,7 @@ Use this method, or the [REPORT.RUNMODAL Method](report-runmodal-method.md), if 
   
 If the report you specify does not exist, then a compile error occurs.  
 
-[!INCLUDE[multi_file_download_web_client](includes/multi_file_download_web_client.md)]
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
   
 ## Example  
  This example shows how to run a report. This example displays the request window and sends the report to the printer that is selected in the Printer Selection table.  
