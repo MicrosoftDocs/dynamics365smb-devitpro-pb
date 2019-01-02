@@ -73,7 +73,7 @@ You use ASSERTERROR statements in test methods to test how your application beha
  **An error was expected inside an ASSERTERROR statement.**  
 
 ### Example  
- To create a test method to test the result of a failure of a CheckDate method that you have defined, you can use the following code. This example requires that you create a functmethodion called CheckDate to check whether the date is valid for the customized application.  
+To create a test method to test the result of a failure of a CheckDate method that you have defined, you can use the following code. This example requires that you create a method called `CheckDate` to check whether the date is valid for the customized application.  
 
 ```  
 InvalidDate := 010184D;  
