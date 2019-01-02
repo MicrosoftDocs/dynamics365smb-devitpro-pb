@@ -227,7 +227,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
 3.  For the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set the **WSFederationLoginEndpoint** (WSFederationLoginEndpoint) to point to the AD FS login page for authenticating users.
 
     ```
-    https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=<Relying party trust identifier>%26wreply=<Business Central Web Client URL>/SignUp" />
+    https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=<Relying party trust identifier>%26wreply=<Business Central Web Client URL>/SignIn" />
     ```
 
     Replace `<Public URL for AD FS server>` with the URL for your installation.
@@ -239,7 +239,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     For example:
 
     ```
-    https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcvwebclient%26wreply=https://https://corp.sample.com/BC130/SignUp
+    https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcvwebclient%26wreply=https://https://corp.sample.com/BC130/SignIn
     ```
 4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the relying party trust identifier, for example `https://dynamicsnavwindowsclient`.
 
