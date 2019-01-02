@@ -59,6 +59,8 @@ Specifies which record to use in the report. Any filters that have been applied 
 
  **Either the caller does not have the required permission or the specified path is read-only.**  
 
+[!INCLUDE[multi_file_download_web_client](includes/multi_file_download_web_client.md)]
+
 ## Example  
  This example shows how to use the SAVEASWORD method to save the Word document on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a different computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] application. It requires that you create the following variables.  
 

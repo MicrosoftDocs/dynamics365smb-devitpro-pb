@@ -45,7 +45,9 @@ Specifies which record to use in the report. Any filters that are attached to th
 
 Use this method, or the [REPORT.RUNMODAL Method](report-runmodal-method.md), if you do not know the specific report that you want to run when you are designing your application. If you do know the specific report that you want to run, then you can use the [RUN Method](reportinstance-run-method.md) or the [RUNMODAL Method](reportinstance-runmodal-method.md). 
   
- If the report you specify does not exist, then a compile error occurs.  
+If the report you specify does not exist, then a compile error occurs.  
+
+[!INCLUDE[multi_file_download_web_client](includes/multi_file_download_web_client.md)]
   
 ## Example  
  This example shows how to run a report. This example displays the request window and sends the report to the printer that is selected in the Printer Selection table.  
