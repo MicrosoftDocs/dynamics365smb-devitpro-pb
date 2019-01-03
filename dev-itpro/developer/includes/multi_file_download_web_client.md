@@ -1,2 +1,2 @@
 > [!NOTE]  
-> Internet browsers can only handle one file per request. Therefore, with the Web client, if this method is called in a repetitive statement (or loop) that generates multiple files, only the last file will be sent to the browser. Alternatively, when designing fir the Web client, you can bundle the files in an archive (.zip). 
+> Internet browsers can only handle one file per request. Therefore, with the Web client, if this method is called in a repetitive statement (or loop) that generates multiple files, only the last file will be sent to the browser. Alternatively, when designing for the Web client, you can bundle the files in an archive (.zip), for example, by using the methods found in codeunit **419 File Management**. 
