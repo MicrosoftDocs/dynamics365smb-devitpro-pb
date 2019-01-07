@@ -25,7 +25,7 @@ Here is a quick overview of capabilities in **Designer**:
 |Add components                     |fields and columns               |
 |Move components                    |fields, columns, cues, and parts |
 |Remove components                  |fields, columns, cues, and parts |
-|Change field importance, like showing in collapsed FastTab header or under **Show More**) |fields|
+|Change field importance, like showing in collapsed FastTab header or under **Show More** |fields|
 |Exclude field from Quick Entry|fields, columns| 
 |Set freeze pane and clear freeze pane |columns                       |
 |Adjust column width |columns                       |
