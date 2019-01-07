@@ -25,13 +25,13 @@ Here is a quick overview of capabilities in **Designer**:
 |Add components                     |fields and columns               |
 |Move components                    |fields, columns, cues, and parts |
 |Remove components                  |fields, columns, cues, and parts |
-|Set the [Importance property](properties/devenv-importance-property.md) to determine whether a field displays in the FastTab heading when the FastTab is collapsed or only when the users selects **Show more**.|fields|
+|Change field importance, like showing in collapsed FastTab header or under **Show More** |fields|
+|Exclude field from Quick Entry|fields, columns| 
 |Set freeze pane and clear freeze pane |columns                       |
 |Adjust column width |columns                       |
 |Edit caption                       |FastTab, cards, FactBox          |
 |Save extension/download code       |general                          |
 |Preview design                     |general                          |
-
 
 ## Important points to note
 
@@ -43,7 +43,9 @@ Here is a quick overview of capabilities in **Designer**:
 
 - You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Some components cannot be moved using drag-and-drop and are restricted to the view that they are in.
 
-- You can only add fields/columns, from a predefined list, which is based on the source table. You cannot create new ones.  
+- You can only add fields/columns, from a predefined list, which is based on the source table. You cannot create new ones.
+
+- In the client, users can change the many of these settings for their workspace only by using personalization (see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user).  
 
 ## Start designing
 
@@ -66,20 +68,26 @@ You can edit the caption of a FastTab, a card, FactBox by clicking the caption a
 
 If you want to remove a field, column, part, or a cue, you must select the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) placed on the component, and then choose **Remove**. 
 
-### Setting the freeze
+### Setting the freeze pane
 
 **Set freeze pane and clear freeze pane** locks one or more columns to the left, even when you scroll horizontally. You can set the freeze pane, by selecting the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) of the column that you want as the last column of the freeze pane, and then choose **Set Freeze Pane**. If you want to set the freeze pane back to its original designed location, select the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) for the current freeze pane column, and then choose **Clear Freeze Pane**.
 
 
 ### Setting the Importance on Field
 
-Fields on non-list type pages, such as card and document type pages, include Designer options for setting the importance. The following table describes the options for setting the importance in Designer and how it corresponds to the Importance property in the page code.
+Fields on non-list type pages, such as card and document type pages, include Designer options for setting the importance. The following table describes the options for setting the importance in Designer and how it corresponds to the  [Importance property](properties/devenv-importance-property.md) in the page code.
 
 |Option|Description|Importance property value|
 |----|----|---|
 |**Show under "Show more"**|Sets the field so that only appears when the user selects **Show more**. |Additional|
 |**Show always**|Sets the field to always display on the page (regardless of whether the user selects **Show more** or **Show less**) but not in the FastTab heading if it is collapsed. <br /><br />If this option is available|Standard|
 |**Show when collapsed**|Sets the field to always display on the page (regardless of whether the user selects **Show more** or **Show less**) and also in the header of the FastTab when the FastTab is collapsed.|Promoted|
+
+### Setting the Quick Entry on Fields
+
+You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is given input focus or skipped when users navigate through fields on a page by pressing the return key. You use it to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill-in.
+
+To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
 ## Preview design
 
