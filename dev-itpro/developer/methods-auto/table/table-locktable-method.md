@@ -37,7 +37,10 @@ An instance of the [Table](table-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- Because all write operations automatically lock the table that is being used, **LOCKTABLE** appears unnecessary. However, you could have a transaction in which an application wants to inspect data and then only possibly change it. You require a guarantee that the data being changed has not been modified by other applications since the read operation. The solution is to explicitly lock the table before the read operation. This guarantees that no other application makes changes between the read operation and the possible write operation.  
+ Because all write operations automatically lock the table that is being used, **LOCKTABLE** appears unnecessary. However, you could have a transaction in which an application wants to inspect data and then only possibly change it. You require a guarantee that the data being changed has not been modified by other applications since the read operation. The solution is to explicitly lock the table before the read operation. This guarantees that no other application makes changes between the read operation and the possible write operation. 
+
+ 
+The table lock is released (unlocked) when the transaction is committed. 
   
 ## Example  
  This example uses pseudo-language to show the scope of write locks. Both an explicit lock and an automatic lock are illustrated.  
