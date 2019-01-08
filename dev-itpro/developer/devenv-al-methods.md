@@ -1,7 +1,7 @@
 ---
 title: "Working with AL Methods"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 12/19/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,6 @@ There are two types of methods: system methods and user-defined (custom) methods
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and codeunits, together to form a unified whole. You can create special methods for use anywhere in the database.
 
 ## Declaring methods
-
 The method declaration defines the method and has the following syntax:
 
 ```
@@ -49,7 +48,7 @@ To declare a global method, **omit** `local`:
  procedure MyMethod();
 ```
 
-### Parameters (optional)  
+### Parameters (optional)
 A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the
 method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are separated by commas. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype.
 
@@ -59,28 +58,26 @@ For example, the the following method declaration includes two parameters: `MyCu
 ```
 
 ### Return values (optional)
-
 A method can return data that can be then coded against. A return value is a defined by a name, data type, and optional length depending on the data type (For example, if the return value is a Text DataType, the text might have a length of 50).
 
 ## <a name="CallMethod"></a>Calling methods
-You can execute, or call, a built-in or custom method by using its name in a method call statement. When a method is called the current application sequence is suspended and the code on the method is executed. When the method code is completed, the application code sequence returns to where the method was called from. How the method is called determines what happens when it returns.
+You can execute, or call, a built-in or a custom method by using its name in a method call statement. When a method is called the current application sequence is suspended and the code on the method is run. When the method code is completed, the application code sequence returns to where the method was called from. How the method is called determines what happens when it returns.
 
 A method can be used as part of an expression. For example, the following code uses a
 method named `CalculatePrice` as an expression:
+
 ```
 TotalCost := Quantity * CalculatePrice;
 ```
-In this case, the `CalculatePrice` method must return a value that is used in evaluating the
-expression. This return value is then multiplied by the Quantity variable and that
-result is assigned to the TotalCost variable.
+In this case, the `CalculatePrice` method must return a value that is used in evaluating the expression. This return value is then multiplied by the Quantity variable and that result is assigned to the TotalCost variable.
 
-A method can also be run by using a method call statement. This statement
-only calls the method and does not return any value. The following is an
-example of calling a method named `MyRunMethod`:
+A method can also be run by using a method call statement. This statement only calls the method and does not return any value. The following is an example of calling a method named `MyRunMethod`:
+
 ```
 IF Quantity > 5 THEN
 MyRunMethod;
 ```
+
 The `MyRunMethod` returns no data back to the calling code.
 
 ### <a name="Parameters"></a> parameters  
@@ -88,33 +85,30 @@ In a method call, the parameters are separated by commas, and the optional param
   
 You can specify that a parameter is passed to a method by value or by reference.  
   
--   If a parameter is passed by value, then a copy of the variable is passed to the method. Any changes that the method makes to the value of the variable are local changes that affect only the copy, not the variable itself.  
+- If a parameter is passed by value, then a copy of the variable is passed to the method. Any changes that the method makes to the value of the variable are local changes that affect only the copy, not the variable itself.  
   
--   If a parameter is passed by reference, then a reference to the variable is passed to the method. The method can change the value of the variable itself.  
-  
-<!--NAV For more information about how to specify that a parameter is passed by value or by reference, see [How to: Add a Method to a Codeunit](How-to--Add-a-Method-to-a-Codeunit.md).-->  
-  
+- If a parameter is passed by reference, then a reference to the variable is passed to the method. The method can change the value of the variable itself.  
+
 ## Example 1  
- The following shows the syntax for a method.  
-  
+The following shows the syntax for a method. The first example shows a method with two mandatory parameters.
+
+```
+METHOD(Parameter1, Parameter2)  
+```
+ 
+Some built-in methods have optional parameters, the syntax is shown below. The optional parameters may be omitted starting from the right.
+
 ```  
 METHOD([Optional1] [, Optional2] [, Optional3])  
 ```  
   
- The method that uses the syntax above can be called by using the following code.  
-  
+The method that uses the syntax above can be called by using the following code.  
 ```  
 METHOD(Optional1, Optional2)  
-```  
-  
- This method cannot be called by using the following code.  
-  
-```  
-FUNCTION(, Optional2, Optional3)  
-```  
+```
   
 ## Example 2  
- ABS is an example of an AL method that has a fixed number of parameters \(1\).  
+ABS is an example of an AL method that has a fixed number of parameters (1).  
   
 ```  
 Value := -1033; //A negative integer value  

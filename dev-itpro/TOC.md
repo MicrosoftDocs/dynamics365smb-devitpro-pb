@@ -1,6 +1,8 @@
 # [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
 ## [Frequently asked questions](faq.md)
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
+## [Help and Support](help-and-support.md)
+### [User assistance model](user-assistance.md)
 <!-- deployment-->
 # [Deployment](deployment/deployment.md)
 ## Online
@@ -96,7 +98,8 @@
 ### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
-### [The AL Formatter](developer/devenv-al-formatter.md)
+### [AL Formatter](developer/devenv-al-formatter.md)
+### [AL Outline View](developer/devenv-al-outline-view.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
@@ -114,6 +117,7 @@
 ## [Debugging in AL](developer/devenv-debugging.md)
 ## [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ## Converting, Upgrading, and Installing Extensions V2
+### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
 ### [Generating Delta files](developer/devenv-generating-delta-files.md)
@@ -153,7 +157,7 @@
 #### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 #### [Headlines](developer/devenv-create-role-center-headline.md)
-#### [Adding Pages and Reports to Search](developer/devenv-al-menusuite-functionality.md)
+#### [Adding Pages and Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Designing Pages
 #### [Designing List Pages](developer/devenv-designing-list-pages.md)
 #### [Designing Card Pages](developer/devenv-designing-card-pages.md)
@@ -175,6 +179,8 @@
 ## [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
 ## [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
+### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## [AL Development Environment](developer/devenv-reference-overview.md)
@@ -463,14 +469,18 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 <!-- end web services -->
 <!-- begin security -->
 # [Security](security/security-and-protection.md)
-## [Considerations](security/security-considerations.md)
-## [User Security](security/user-security.md)
-## [Data Security](security/data-security.md)
-## [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
-## [Enhancing Server Security](security/enhancing-server-instance-security.md)
-## [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
-## [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
-## [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
+## [Application](security/security-application.md)
+## [Online](security/security-online.md)
+## [On-Premises](security/security-onpremises.md)
+<!--
+### [Considerations](security/security-considerations.md)
+### [User Security](security/user-security.md)
+### [Data Security](security/data-security.md)
+### [Transparent Data Encryption (TDE)](security/transparent-data-encryption.md)
+### [Enhancing Server Security](security/enhancing-server-instance-security.md)
+### [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
+### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
+### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 <!-- end security -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
