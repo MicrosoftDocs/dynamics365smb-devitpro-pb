@@ -110,7 +110,7 @@ The following code example demonstrates a custom serialization object that imple
       }  
 
       // Remaining class implementation is irrelevant for the serialization process.  
-      // The SerializedStringField property is used by C/AL code to verify that the contained data is transferred between the server and client.  
+      // The SerializedStringField property is used by AL code to verify that the contained data is transferred between the server and client.  
       // SerializedStringField gets or sets the internal serialized string field.  
       public string SerializedStringField  
       {  
@@ -132,7 +132,7 @@ By default, the path of the [!INCLUDE[server](includes/server.md)] installation 
 <!--And here with: C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\Add-ins ? -->
 
 ##### To test the serialization object  
-1.  In the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)], add the following code.
+1.  In the AL Development Environment, add the following code.
 
 ```
 dotnet
