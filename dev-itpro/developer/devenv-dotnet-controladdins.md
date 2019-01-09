@@ -114,10 +114,11 @@ Only members of the .NET type implementing the control add-in that are annotated
 If within the same project you have a native AL control add-in and a .NET add-in with the same name, the .NET add-in will be the one used.  
 
 ## See Also
-[Getting Started with AL](devenv-get-started.md)    
+[Getting Started with AL](devenv-get-started.md)  
+[Control Add-In Object](devenv-control-addin-object.md)      
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)     
-[Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)           
-[Control Add-In Object](devenv-control-addin-object.md)   
+[Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)            
+[Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)   
 [How to: Determine an Assembly's Fully Qualified Name](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name)
 
 
