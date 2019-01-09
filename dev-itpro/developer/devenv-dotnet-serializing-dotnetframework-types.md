@@ -126,7 +126,7 @@ The following code example demonstrates a custom serialization object that imple
 4.  Copy the SerializationSample.dll to the **Add-ins** folder of the Business Central Windows client and [!INCLUDE[server](includes/server.md)] installation folders.  
 
 By default, the path of the Business Central Windows client installation folder is [!INCLUDE[navnow_x86install](includes/navnow_x86install_md.md)]\\RoleTailored Client\\Add-ins.  
-<!--Should I replace it with this path: C:\Program Files\Microsoft Dynamics 365 Business Central\130\Web Client ?-->
+<!--Replace it with this path: C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\130\RoleTailored Client\Add-ins ?-->
 
 By default, the path of the [!INCLUDE[server](includes/server.md)] installation folder is [!INCLUDE[navnow_install](includes/navnow_install_md.md)]\\Service\\Add-ins.  
 <!--And here with: C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\Add-ins ? -->
