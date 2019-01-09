@@ -16,7 +16,7 @@ ms.author: solsen
 
 # Serializing .NET Framework Types
 
-In Microsoft .NET Framework, serialization is the process of converting an object into a format that can be transmitted across a network connection. Microsoft [!INCLUDE[prodlong](includes/prodlong.md)] .NET Framework interoperability uses serialization for communication between client-side .NET Framework objects and server-side .NET Framework objects. When you configure DotNet variables in a [!INCLUDE[prodshort](includes/prodshort.md)] object, you can specify .NET Framework objects to target either the Business Central Windows client or [!INCLUDE[server](includes/server.md)]. In some cases, a client-side object and a server-side object must communicate and share data, such as return values and parameters. The serialization occurs when the following conditions are true:  
+In Microsoft .NET Framework, serialization is the process of converting an object into a format that can be transmitted across a network connection. Microsoft .NET Framework interoperability uses serialization for communication between client-side .NET Framework objects and server-side .NET Framework objects. When you configure DotNet variables in a [!INCLUDE[prodlong](includes/prodlong.md)] object, you can specify .NET Framework objects to target either the Business Central Windows client or [!INCLUDE[server](includes/server.md)]. In some cases, a client-side object and a server-side object must communicate and share data, such as return values and parameters. The serialization occurs when the following conditions are true:  
 
 - When a server-side object is assigned to a client-side object, and vice-versa.  
 
