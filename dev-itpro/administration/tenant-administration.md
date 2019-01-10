@@ -1,14 +1,14 @@
 ---
 title: Business Central Administration| Microsoft Docs
-description: Learn about how a VAR can manage online tenants of Dynamics 365 Business Central.  
-author: edupont
+description: Learn about how you as a reselling partner can manage online tenants of Dynamics 365 Business Central.  
+author: edupont04
 
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 12/03/2018
+ms.date: 01/10/2018
 ms.author: edupont
 
 ---
@@ -26,5 +26,6 @@ If the prospect wants to extend the trial further than those 30 days, you can ex
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [The Business Central Administration Center API](administration-center-api.md)  
+[Resources for Help and Support for Dynamics 365 Business Central](../help-and-support.md)  
 [Resell Different Solutions](../developer/readiness/readiness-reseller.md)  
 [Deliver consulting services as a VAR: https://aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices)  
