@@ -39,7 +39,7 @@ Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999
 
 The Decimal data type is mapped to the Microsoft .NET Framework common language runtime \(CLR\) Decimal data type, which controls and the precision and limits for variables.  
 
-The following table shows the limits for variables of type `Decimal` in [!INCLUDE[navnow](includes/navnow_md.md)].  
+The following table shows the limits for variables of type `Decimal`.  
 
 |Limit|Value|
 |-----------|------------------------------|  
