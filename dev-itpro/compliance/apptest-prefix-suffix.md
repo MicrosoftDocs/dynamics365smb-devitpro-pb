@@ -56,7 +56,7 @@ There are two good reasons to why you may want to proactively use a prefix or su
 - For your own pages/tables/codeunits, you must set the prefix/suffix at the top object level
 - For pages/tables in the base application of BC that you extend, you must set the prefix/suffix at the top object level
 - For pages/tables of BC in the base application that you extend, you must also set at the control/field/action level
-- Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop). The Rules section explains the different checks the cop will do. For prefix/suffix detection, refer to the Configuration section. It explains how to set your prefix in the AppSourceCop.json file.
+- Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks the cop will do. For prefix/suffix detection, refer to the Configuration section. It explains how to set your prefix in the AppSourceCop.json file.
 
 ## Examples of acceptable prefix/suffix
 
