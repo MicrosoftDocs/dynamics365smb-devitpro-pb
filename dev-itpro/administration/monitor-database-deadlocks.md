@@ -73,7 +73,7 @@ If your setup has a high volume of database traffic, you might have to change th
     ```
 3. Change the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database synonym `dbo.syn_deadlock_event_view` to point to the deadlock report event file view that you created.
 
-    This synonym is used by the [!INCLUDE[server](../developer/includes/server_md.md)] to query the deadlock data. To alter a synonym, you first drop it, and then create a new synonym that has the same name. For example:
+    This synonym is used by the [!INCLUDE[server](../developer/includes/server.md)] to query the deadlock data. To alter a synonym, you first drop it, and then create a new synonym that has the same name. For example:
     ```
     DROP SYNONYM [dbo].[syn_deadlock_event_view]
     GO
