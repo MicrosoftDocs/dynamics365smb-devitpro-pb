@@ -144,7 +144,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 2. In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
     ![AD FS Edit Claims Rule](../media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
-3. In the **Select Rule Template** step, choose **Transform an incoming Claim** template, and then choose **Next**.
+3. In the **Select Rule Template** step, choose **Transform an Incoming Claim** template, and then choose **Next**.
 4. In the **Configure Rule** step, set the **Claim rule name** to `name`, the **Incoming claim type** to `UPN`, and the **Outgoing claim type** to `Name`. Choose **Finish** when done.
 5. Repeat steps 2 to 4 to add another rule, except this time, set the **Claim rule name** to `objectidentifier`, the **Incoming claim type** to `Primary SID`, and the **Outgoing claim type** to:
 
