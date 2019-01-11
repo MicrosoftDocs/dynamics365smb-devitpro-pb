@@ -49,7 +49,7 @@ To help you save time, we‘re sharing a list of the top 15 common pitfalls that
     To support a specific country, you must include a translation file per for each language code. For example, to support Switzerland, you must provide fr-CH, de-CH, and it-CH.
 4. Missing permission sets
 
-    Your app must provide one or more permission sets so that users can use your app’s functionality. Your app must never require the SUPER permission set. <!--TODO: Add link>
+    Your app must provide one or more permission sets so that users can use your app’s functionality. Your app must never require the SUPER permission set. <!--TODO: Add link-->
 5. Permission errors
 
     For your app to be a good citizen in Business Central, permission errors must not appear unless it is a necessary reason for showing the error.  
