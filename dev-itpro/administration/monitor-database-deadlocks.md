@@ -32,6 +32,56 @@ For detailed steps on how to do this, see [Giving the account necessary database
 
 The next the a client session is established with the database, a session for monitoring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database appears under  **Management**, **Extended Events**.
 
+#### Store deadlock events to file
+
+If your setup has a high volume of database traffic, you might have to change the destination that SQL Server writes deadlock events to. By default SQL Server uses an in-memory data structure called a *ring buffer* target, which has size limitation of 5MB. If you have to store more data than that, then you can write the deadlock events to a file instead. This requires that you do the following:
+
+1. Modify the deadlock monitoring session to use a file-based target (known as an *event_file target*).
+
+    The event_file target writes event session output from a buffer to a disk file that you specify. There are two ways to do this:
+    - From Object Explorer, open the session's **Properties**, and then on the **Data Storage** page, add an **event_file** type target.  
+    - Using a query, run the [ALTER EVENT SESSION](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-event-session-transact-sql?view=sql-server-2017) transact-sql statement. For example:
+      ```
+      ALTER EVENT SESSION [Demo Database NAV_deadlock_monitor]
+          ON SERVER
+	        ADD Target package0.event_file
+          (
+            SET filename=N'C:\logging\mydeadlocks.xel',max_file_size=(10240)
+          )
+      ```
+    For more information see [Alter an Extended Events Session](https://docs.microsoft.com/en-us/sql/relational-databases/extended-events/alter-an-extended-events-session?view=sql-server-2017) and [Targets for Extended Events in SQL Server](https://docs.microsoft.com/en-us/sql/relational-databases/extended-events/targets-for-extended-events-in-sql-server?view=sql-server-2017#eventfile-target).
+    
+2. Create a view in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database that uses the new event_file target. 
+
+    You can create this view based on the default `dbo.deadlock_report_ring_buffer_view` view. To use the event_file target, you change `xt.target_name = N'ring_buffer'` to `xt.target_name = N'event_file'`. For example:
+    ```
+    USE [Demo Database NAV]
+    GO
+
+    SET ANSI_NULLS ON
+    GO
+
+    SET QUOTED_IDENTIFIER ON
+    GO
+
+    CREATE VIEW [dbo].[deadlock_report_event_file_view] AS
+        SELECT target_data AS event_raw_data
+        FROM sys.dm_xe_session_targets AS xt INNER JOIN sys.dm_xe_sessions AS xs
+        ON xs.address = xt.event_session_address
+        WHERE xs.name = N'Demo Database NAV_deadlock_monitor' AND xt.target_name = N'event_file'
+    GO
+    ```
+3. Change the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database synonym `dbo.syn_deadlock_event_view` to point to the deadlock report event file view that you created.
+
+    This synonym is used by the [!INCLUDE[server](../developer/includes/server_md.md)] to query the deadlock data. To alter a synonym, you first drop it, and then create a new synonym that has the same name. For example:
+    ```
+    DROP SYNONYM [dbo].[syn_deadlock_event_view]
+    GO
+    
+    CREATE SYNONYM [dbo].[syn_deadlock_event_view] FOR [dbo].[deadlock_report_event_file_view]
+    GO
+    ```
+
 ### Configure the [!INCLUDE[server](../developer/includes/server.md)] instance
 To log deadlocks, you must enable deadlock logging on the [!INCLUDE[server](../developer/includes/server.md)] instance. You can enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the Set-NAVServerConfiguration cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
