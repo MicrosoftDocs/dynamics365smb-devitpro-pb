@@ -25,7 +25,7 @@ Setting up deadlock logging requires you to configure the SQL Server instance an
 To configure the SQL Server instance to log deadlocks, you must assign specific permissions to the database login for the service account that is used on the [!INCLUDE[server](../developer/includes/server.md)] instance. You can do this using SQL Server Management Studio.
 
 In SQL Server Management Studio, connect to the SQL server instance for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and then grant the following permissions:
--   On the database level, grant the login the **View server state** permission.
+-   On the database level, grant the login the **View database state** permission.
 -   On the SQL server instance level, grant the login both **Alter any event session** and **View server state** permissions.
 
 For detailed steps on how to do this, see [Giving the account necessary database privileges in SQL Server](../deployment/provision-server-account.md#dbo).
