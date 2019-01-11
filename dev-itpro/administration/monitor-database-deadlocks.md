@@ -42,7 +42,7 @@ If your setup has a high volume of database traffic, you might have to change th
     - From Object Explorer, open the session's **Properties**, and then on the **Data Storage** page, add an **event_file** type target.  
     - Using a query, run the [ALTER EVENT SESSION](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-event-session-transact-sql?view=sql-server-2017) transact-sql statement. For example:
       ```
-      ALTER EVENT SESSION [Demo Database NAV_deadlock_monitor]
+      ALTER EVENT SESSION [Demo Database BC_deadlock_monitor]
           ON SERVER
 	        ADD Target package0.event_file
           (
@@ -55,7 +55,7 @@ If your setup has a high volume of database traffic, you might have to change th
 
     You can create this view based on the default `dbo.deadlock_report_ring_buffer_view` view. To use the event_file target, you change `xt.target_name = N'ring_buffer'` to `xt.target_name = N'event_file'`. For example:
     ```
-    USE [Demo Database NAV]
+    USE [Demo Database BC]
     GO
 
     SET ANSI_NULLS ON
@@ -68,7 +68,7 @@ If your setup has a high volume of database traffic, you might have to change th
         SELECT target_data AS event_raw_data
         FROM sys.dm_xe_session_targets AS xt INNER JOIN sys.dm_xe_sessions AS xs
         ON xs.address = xt.event_session_address
-        WHERE xs.name = N'Demo Database NAV_deadlock_monitor' AND xt.target_name = N'event_file'
+        WHERE xs.name = N'Demo Database BC_deadlock_monitor' AND xt.target_name = N'event_file'
     GO
     ```
 3. Change the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database synonym `dbo.syn_deadlock_event_view` to point to the deadlock report event file view that you created.
