@@ -1,0 +1,55 @@
+---
+title: "API Page Type"
+description: "Description of the API page type used for exposing web service endpoints."
+author: SusanneWindfeldPedersen
+ms.custom: na
+ms.date: 11/26/2018
+ms.topic: article
+ms.author: solsen
+---
+
+# API Page Type
+
+Pages of the type `API` are used to generate web service endpoints and this type of page cannot be displayed in the user interface. When creating this page type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tpage - Page of type API` to get the right template and the list of these properties automatically filled in. This page type cannot not be extended by creating a page extension object. Instead, you must create a new API by adding a page object.
+
+## Example of the API page type
+The following page example publishes an API available at:
+`../contoso/app1/v2.0/companies({id})/Customers`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
+
+```
+page 50120 MyCustomerApi
+{
+    PageType = API;
+    Caption = 'My Customer API';
+    APIPublisher = 'contoso';
+    APIGroup = 'app1';
+    APIVersion = 'v2.0';
+    EntityName = 'Customer';
+    EntitySetName = 'Customers';
+    SourceTable = Customer;
+    DelayedInsert = true;
+    
+    layout
+    {
+        area(Content)
+        {
+            repeater(GroupName)
+            {
+                field(Id; Id)
+                {
+                    Caption = 'ID';
+                }
+                field(Name; Name)
+                {
+                    Caption = 'Name';
+                }
+            }
+        }
+    }
+}
+```
+
+## See Also  
+[AL Development Environment](devenv-reference-overview.md)  
+[Page Extension Object](devenv-page-ext-object.md)  
+[Developing Extensions](devenv-dev-overview.md)  

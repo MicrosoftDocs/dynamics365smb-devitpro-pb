@@ -9,12 +9,12 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
 # Patch extensionUpload
-Uploads and install an per tenant extension for [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].
+Uploads and install a per tenant extension for [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].
 
 ## HTTP requests
 

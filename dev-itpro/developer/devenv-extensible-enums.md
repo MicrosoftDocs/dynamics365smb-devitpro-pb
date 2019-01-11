@@ -81,15 +81,20 @@ codeunit 50140 EnumUsage
 ## Business Central On-Premises
 If you want to extend an existing [!INCLUDE[d365fin_md](includes/d365fin_md.md)] on-premises enum, it is possible to mark a table field in C/SIDE as extensible. To enable running C/SIDE and AL side-by-side, see [Running C/SIDE and AL Side-by-Side](devenv-running-cside-and-al-side-by-side.md).
 
+Table field options in C/SIDE have three properties to enable enum support:
+
+|Property name|Data type|
+|-------------|---------|
+|Extensible   | Boolean, default value is **No**. |
+|EnumTypeId   | Integer |
+|EnumTypeName | Text    |
+
+Some table fields share options that are semantically identical. In those cases the **EnumTypeId** and **EnumTypeName** must be the same across all the fields. There is no design or runtime check for collision of IDs, but loading generated symbols, see [Running C/SIDE and AL Side-by-Side](devenv-running-cside-and-al-side-by-side.md), into the compiler will show collision errors.
 
 ### Conversions
 Conversion to and from `enum` is more strict than for `Options` in C/SIDE. 
 - An enum can be assigned/compared to an enum of the same type. 
 - To be backwards compatible we support conversion to/from any `Option` for now.
-
-### Known limitations
-- There is no runtime check for collision of IDs.
-- Declaring C/SIDE enums with the same ID on multiple table option fields will break the symbol generation.
 
 ## See Also
 [AL Data Types](datatypes/devenv-al-data-types.md)  

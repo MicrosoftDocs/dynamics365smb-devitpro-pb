@@ -35,6 +35,9 @@ The process is slightly different when you have multitenant deployment compared 
 
 ## Task 1: Preparation
 
+> [!NOTE]  
+>  Do not perform this task if you are converting the database from one cumulative update of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to the next cumulative update. In this case, you only have to complete tasks 2 and 3.
+
 1. Transition from the use of codeunit 1
 
     With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, do the following:
@@ -54,10 +57,6 @@ The process is slightly different when you have multitenant deployment compared 
 ## Task 2: Preparing the Old Database 
  
 To convert the old database to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, the first task is to back up the old database and then prepare to convert it.
-
-> [!NOTE]  
->  Do not perform this task if you are converting the database from one cumulative update of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to the next cumulative update. In this case, you only have to complete task 2.
-
 
 1.  Make a copy of the old database or create full database backup. 
 

@@ -1,40 +1,39 @@
 ---
-title: "Adding Pages and Reports to Search"
-description: "Description of how you use AL to add pages and reports to Search in the client."
+title: "Adding Pages and Reports to Tell me"
+description: "Description of how you use AL to add pages and reports so that they are discoverable through search in the client."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 12/17/2018
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
-# Adding Pages and Reports to Search
-AL provides navigational support for pages and reports in the client. You enable a page or report to be available through Search in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] using the **UsageCategory** setting. 
+# Adding Pages and Reports to Tell me
+When you have added a page or a report in your extension, you most likely want it to be discoverable to the user. AL provides navigational support for pages and reports in the client. You enable a page or report to be available through **Tell me** in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] by setting the **UsageCategory** property in code. The **UsageCategory** setting will make the page or report searchable, and the value chosen for the setting will further sub categorize the item.
 
-## Working with Search
-When you create a [Page](devenv-page-object.md) or a [Report](devenv-report-object.md), you add the [UsageCategory Property](properties/devenv-usagecategory-property.md). If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**, the page or report will not show up when you use the Search functionality in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
+![TellMe](../media/tellme.jpg)
+
+## Working with Tell me
+When you create a [Page](devenv-page-object.md) or a [Report](devenv-report-object.md), you add the [UsageCategory Property](properties/devenv-usagecategory-property.md). If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**, the page or report will not show up when you search in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
 
 ## UsageCategory property values
-The values for the UsageCategory property are listed below: 
+The values for the **UsageCategory** property are listed below. The sub category will help the user navigate through the search results and it is a best practice to be consistent when categorizing the pages and the reports that you add. A consistent approach will help guiding the user and improve productivity.
 
-- None
-- Lists
-- Tasks
-- ReportsAndAnalysis
-- Documents
-- History
-- Administration
+|Value           |Description                                  |
+|----------------|---------------------------------------------|
+|None            |The page or report is not included in search.|
+|Lists           |The page or report is listed as **Lists** under the **Pages and Tasks** category.|
+|Tasks           |The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
+|ReportsAndAnalysis |The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
+|Documents       |The page or report is listed as **Documents** under the **Reports and Analysis** category.|
+|History         |The page or report is listed as **Archive** under the **Reports and Analysis** category.|
+|Administration  |The page or report is listed as **Administration** under the **Pages and Tasks** category.|
 
 ## Example
-The following example creates a `SimpleCustomerCard` page and sets a `UsageCategory` property to the page, so that the `SimpleCustomerCard` page is enabled in Search. 
+The following example creates a `SimpleCustomerCard` page and sets a `UsageCategory` property to the page, so that the `SimpleCustomerCard` page is discoverable through search using the Tell me functionality. 
 
 ```
 page 50210 SimpleCustomerCard 
@@ -60,7 +59,7 @@ page 50210 SimpleCustomerCard
 ```
 
 ## Optional settings
-You can add a page or a report to Search. Additionally, control the access of an object by providing **Read**, **Insert**, **Modify**, **Delete**, and **Execute** (RIMDX) permissions by adding the [AccessByPermission property](properties/devenv-accessbypermission-property.md). Likewise, control the application area access on the specified object by adding the [ApplicationArea Property](properties/devenv-applicationarea-property.md). 
+In addition to making a page or report searchable, you can control the access of an object by providing **Read**, **Insert**, **Modify**, **Delete**, and **Execute** (RIMDX) permissions by adding the [AccessByPermission property](properties/devenv-accessbypermission-property.md). Likewise, control the application area access on the specified object by adding the [ApplicationArea Property](properties/devenv-applicationarea-property.md). 
 
 The **AccessByPermission** property and **ApplicationArea** property are the optional settings, which can be applied with the **UsageCategory** property. These settings are used to set restrictions on an object when you enable the Search functionality.
 
@@ -69,10 +68,9 @@ If you are using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], y
 
 After you change these properties, before the changes take effect in the client, you must run **Build Object Search Index** from the **Tools** menu.
 
-
 ## See Also
 [Adding Menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md)  
-[MenuSuite Properties](properties/devenv-menusuite-properties.md)   
+[UsageCategory Property](properties/devenv-usagecategory-property.md)  
 [Page Object](devenv-page-object.md)  
 [Report Object](devenv-report-object.md)  
 [AL Development Environment](devenv-reference-overview.md)

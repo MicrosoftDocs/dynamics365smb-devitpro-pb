@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
@@ -19,7 +19,7 @@ Represents a userGroup resource type in [!INCLUDE[d365fin_long_md](../developer/
 ## Methods
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[GET userGroups](dynamics-microsoft-automation-usergroup-get.md)|userGroup|Gets userGroups|
+|[GET userGroups](dynamics-microsoft-automation-usergroup-get.md)|userGroup|Gets userGroups.|
 
 ## Properties
 
@@ -27,8 +27,8 @@ Represents a userGroup resource type in [!INCLUDE[d365fin_long_md](../developer/
 |:----------------|:-----|:---------------------------------------|
 |code             |string  |code of the userGroup.|
 |displayName      |string  |Display of the useGroup.     |
-|defaultProfileID|string   |Id of the defaultProfile.|
-|assignToAllNewUsers|boolean|If true, all new users are assigned to userGroup|
+|defaultProfileID|string   |ID of the defaultProfile.|
+|assignToAllNewUsers|boolean|If true, all new users are assigned to userGroup.|
 
 ## Relationships / Navigation properties
 
