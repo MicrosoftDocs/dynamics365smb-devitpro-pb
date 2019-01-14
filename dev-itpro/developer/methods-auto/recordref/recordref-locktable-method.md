@@ -38,7 +38,10 @@ If this parameter is true, the version will be checked. If this parameter is fal
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- Because all write operations automatically lock the table that is being used, LOCKTABLE would appear unnecessary. However, you could have a transaction in which an application wants to inspect data before possibly changing it, with a guarantee that the data being changed has not been modified by other applications since the read operation. The solution is to explicitly lock the table before the read operation. This makes sure that no other application makes changes between the read operation and the possible write operation.  
+ Because all write operations automatically lock the table that is being used, LOCKTABLE would appear unnecessary. However, you could have a transaction in which an application wants to inspect data before possibly changing it, with a guarantee that the data being changed has not been modified by other applications since the read operation. The solution is to explicitly lock the table before the read operation. This makes sure that no other application makes changes between the read operation and the possible write operation. 
+
+ 
+The table lock is released (unlocked) when the transaction is committed. 
   
  This method works the same as the [LOCKTABLE Method \(Record\)](../../methods/devenv-locktable-method-record.md).  
   

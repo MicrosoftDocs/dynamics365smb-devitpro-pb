@@ -3,19 +3,15 @@ title: "Using Delta Links With APIs"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 01/04/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-redirect_url: /dynamics365/business-central/dev-itpro/developer/devenv-get-started
 ---
 
 # Using Delta Links With APIs
-
-> [!NOTE]
-> Unfortunately, delta links are currently not supported. They will be supported in an upcoming release.
 
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
