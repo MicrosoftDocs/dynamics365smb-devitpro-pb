@@ -32,9 +32,9 @@ For detailed steps on how to do this, see [Giving the account necessary database
 
 The next the a client session is established with the database, a session for monitoring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database appears under  **Management**, **Extended Events**.
 
-#### Store deadlock events to file
+#### Configure where to store deadlock events
 
-If your setup has a high volume of database traffic, you might have to change the destination that SQL Server writes deadlock events to. By default SQL Server uses an in-memory data structure called a *ring buffer* target, which has size limitation of 5MB. If you have to store more data than that, then you can write the deadlock events to a file instead. This requires that you do the following:
+By default, SQL Server uses an in-memory data structure called a *ring_buffer target* to store deadlock events. When the [!INCLUDE[server](../developer/includes/server.md)] is notified about the deadlock, it reads data from the target ring_buffer target. You have the option to also store the events to a file on the SQL Server, called an *event_file target*, and configure the [!INCLUDE[server](../developer/includes/server.md)] to read from this file instead of the ring_buffer target. An important difference between the ring_buffer target and event_file target is that the ring_buffer target has a storage size limitation of 5MB, while the event_file target provides a much greater storage capacity. Using the event_file target can eliminate potential overloads in high volume situations. So, if your setup has a high volume of database traffic, you might have to change the SQL Server to write deadlock events to an event_file target as described the the steps that follow. If you want to use the default ring_buffer target, then no further action is required.
 
 1. Modify the deadlock monitoring session to use a file-based target (known as an *event_file target*).
 
@@ -81,6 +81,8 @@ If your setup has a high volume of database traffic, you might have to change th
     CREATE SYNONYM [dbo].[syn_deadlock_event_view] FOR [dbo].[deadlock_report_event_file_view]
     GO
     ```
+> [!NOTE]
+> You can delete the ring_buffer target if you like. However, this is not required.
 
 ### Configure the [!INCLUDE[server](../developer/includes/server.md)] instance
 To log deadlocks, you must enable deadlock logging on the [!INCLUDE[server](../developer/includes/server.md)] instance. You can enable deadlock logging by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the Set-NAVServerConfiguration cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
