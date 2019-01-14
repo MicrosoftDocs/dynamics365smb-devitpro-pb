@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 12/18/2018
+ms.date: 01/09/2019
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -17,13 +17,31 @@ This page outlines the resources available to you.
 
 ## Product Help
 
-When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.md)], they have access to user assistance according to the [!INCLUDE[prodshort](includes/prodshort.md)] user assistance model. If you customize [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User assistance model](user-assistance.md).  
+The functionality in the default version of [!INCLUDE[prodshort](includes/prodshort.md)] is described on the Docs.microsoft.com site as described in the following table.  
+
+> [!div class="mx-tdCol2BreakAll"]
+> |Name  |Location  |Description|
+> |---------|---------|---------|
+> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central) |Use this library to learn about business functionality. |
+> |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prodshort](includes/prodshort.md)].|
+
+### Customize and extend the user assistance
+
+When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.md)], they have access to user assistance according to the [!INCLUDE[prodshort](includes/prodshort.md)] user assistance model. If you customize [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User Assistance Model](user-assistance.md) and [Configure the Help Experience](deployment/configure-help.md).  
 
 ## Support
 
 As a [!INCLUDE[prodshort](includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, and you are the first line of support.  
 
 As the administrator, you have access to the [!INCLUDE[prodshort](includes/prodshort.md)] Administration center, where you can create a sandbox environment that can help troubleshoot any issues reported by your customers. For more information, see [The Business Central Administration Center](administration/tenant-admin-center.md).  
+
+<!-- TODO: How to manage your customers' support issues -->
+
+### Get started with the "Ready to Go" program
+
+The “Ready to Go” program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [The “Ready to Go” Program](developer/readiness/readiness-ready-to-go.md).  
+
+Get an overview of role-specific training material from Microsoft in the [The "Ready to Go" learning catalog](developer/readiness/readiness-learning-catalog.md).  
 
 ### Learn about current or upcoming capabilities
 
@@ -32,15 +50,16 @@ You can learn about current and coming capabilities through a number of differen
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Release notes |[https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes](https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes) |If you're wondering about upcoming or recently released capabilities in Business Central, use this link to learn more.|
-> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central) |Use this library to learn how to make Business Central work for your business. |
+> |Release notes |[https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes](https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes) |Get an overview of upcoming and recently released capabilities in Business Central.|
+> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central) |Use this library to learn about business functionality. |
 > |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
+> |The "Ready to Go" learning catalog|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-learning-catalog](developer/readiness/readiness-learning-catalog.md)|Get an overview of role-specific training material from Microsoft.|
 
 ### Summary of where to file bugs and issues
 
 - For collaboration in preview or beta versions of the AL language in Visual Studio Code, use [GitHub](https://github.com/microsoft/al)  
 - For Microsoft partners, for versions already in general availability and supported, file requests through [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/)  
-- For ISVs/VARs who have discovered a bug in a in preview or beta version, use [MS Collaborate](https://docs.microsoft.com/en-us/collaborate/)  
+- For Microsoft partners who have discovered a bug in a in preview or beta version, use [MS Collaborate](https://docs.microsoft.com/en-us/collaborate/)  
 
 ### Share an idea about a new feature you'd like to have
 
