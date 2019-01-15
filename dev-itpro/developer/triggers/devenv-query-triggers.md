@@ -18,7 +18,7 @@ This topic describes the AL triggers that are available for queries. Triggers ar
 ## Query object triggers  
  The following table lists the triggers that apply to the query object.  
 
-|Trigger|Executes|  
+|Trigger|Runs|  
 |-------------|--------------|  
 |[OnBeforeOpen](devenv-onbeforeopen-trigger.md)|Before the query object is run and the dataset is generated. For example, you can use the **OnBeforeOpen** trigger to apply filters using the **SETFILTER** method.|  
 

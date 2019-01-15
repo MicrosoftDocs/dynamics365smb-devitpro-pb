@@ -14,10 +14,10 @@ manager: edupont
 
 
 # OnAfterGetRecord (Data Items) Trigger
-Executed each time a record is retrieved from the data item.  
+Runs each time a record is retrieved from the data item.  
 
 ## Applies To  
- Data items  
+- Data items  
 
 ## Remarks  
  Use this trigger to perform any processing that is needed, based on the values in the fields of the individual records of a data item.  

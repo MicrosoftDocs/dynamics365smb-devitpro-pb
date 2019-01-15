@@ -1,5 +1,5 @@
 ---
-title: "Enhancing Microsoft Dynamics 365 Business Central Server Security"
+title: "Hardening Microsoft Dynamics 365 Business Central Server Security"
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na
@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# Enhancing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Security
+# Hardening [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Security
 
 [!INCLUDE[server](../developer/includes/server.md)] is a .NET-based Windows Service application that works exclusively with SQL Server and Azure SQL Server databases. [!INCLUDE[server](../developer/includes/server.md)] provides an additional layer of security between clients and the database. It leverages the authentication features of the Windows Communications Framework to provide another layer of user authentication and uses impersonation to ensure that business logic is executed in a process that has been instantiated by the user who submitted the request. This means that authorization and logging of user requests are performed on a per-user basis.  
   
@@ -28,7 +28,13 @@ The default configuration is for the service to log on using the NT Authority\\N
 ```  
 netsh firewall set portopening protocol=TCP port=7046 scope=subnet addresses=LocalSubnet  
 ```  
-  
+
+## <a name="data-encryption"></a>Data Encryption Between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server  
+
+When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Enable Encrypted Connections to the Database Engine](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-2017). 
+
+
+
 ## See Also  
  [Configuring Business Central Server](../administration/configure-server-instance.md)   
  [Security and Protection](security-and-protection.md)   

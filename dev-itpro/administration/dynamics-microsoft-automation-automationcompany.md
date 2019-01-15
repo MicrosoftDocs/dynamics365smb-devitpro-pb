@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
@@ -21,8 +21,8 @@ Represents an automationCompany resource type in [!INCLUDE[d365fin_long_md](../d
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
 |[GET automationCompanies](dynamics-microsoft-automation-automationcompanies-get.md)|automationCompany|Gets all automationCompanies.|
-|[POST automationCompanies](dynamics-microsoft-automation-automationcompanies-post.md)|automationCompany|Creates a company. automationCompanies.|
-|[DELETE automationCompanies](dynamics-microsoft-automation-automationcompanies-delete.md)|none|Deletes a company. automationCompanies.|
+|[POST automationCompanies](dynamics-microsoft-automation-automationcompanies-post.md)|automationCompany|Creates a company, automationCompanies.|
+|[DELETE automationCompanies](dynamics-microsoft-automation-automationcompanies-delete.md)|none|Deletes a company, automationCompanies.|
 |[PATCH automationCompanies](dynamics-microsoft-automation-automationcompanies-patch.md)|automationCompany|Updates a company, automationCompanies.|
 
 

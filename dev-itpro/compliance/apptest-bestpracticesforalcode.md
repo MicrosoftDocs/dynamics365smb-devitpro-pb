@@ -140,7 +140,7 @@ All variables remain unchanged when they are named. This means that they can be 
 
 ### Example
 ```
-TempCustomer: temporary Record Customer;
+TempCustomer: Record Customer temporary;
 Vendor: Record Vendor; 
 ```
 

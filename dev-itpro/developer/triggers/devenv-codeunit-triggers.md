@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 # Codeunit Triggers
 The following triggers apply to codeunits.  
 
-|Codeunit trigger name|Executed|  
+|Codeunit trigger name|Runs|  
 |---------------------------|--------------|  
 |[OnBeforeTestRun Trigger](devenv-onbeforetestrun-trigger.md)|Before a test method of a test codeunit is run.|  
 |[OnAfterTestRun Trigger](devenv-onaftertestrun-trigger.md)|After a test method of a test codeunit is run.|  

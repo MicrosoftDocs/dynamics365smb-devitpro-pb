@@ -22,7 +22,7 @@ The triggers in a table can be divided into two categories:
 
 Tables have the following triggers.  
 
-|Table trigger|Executes when|  
+|Table trigger|Runs when|  
 |-------------------|-------------------|  
 |[OnInsert Trigger](devenv-oninsert-trigger.md)|A new record is inserted into the table.|  
 |[OnModify Trigger](devenv-onmodify-trigger.md)|A record in the table is modified.|  
@@ -31,7 +31,7 @@ Tables have the following triggers.
 
 Fields have the following triggers.  
 
-|Field trigger|Executes when|  
+|Field trigger|Runs when|  
 |-------------------|-------------------|  
 |[OnValidate (Fields) Trigger](devenv-onvalidate-fields-trigger.md)|Data is entered in a field or when the [VALIDATE (Record)](../methods/devenv-validate-method-record.md) is executed.|  
 |[OnLookup (Fields) Trigger](devenv-onlookup-fields-trigger.md)|Lookup is activated.|  

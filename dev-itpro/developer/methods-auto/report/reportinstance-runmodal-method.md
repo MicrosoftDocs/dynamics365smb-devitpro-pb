@@ -30,11 +30,16 @@ An instance of the [Report](report-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- Use this method or the [RUN Method \(Report\)](../../methods/devenv-run-method-report.md) if you know at design time the exact report you want to run. Otherwise, use the [REPORT.RUNMODAL Method](../../methods/devenv-report-runmodal-method.md) or [REPORT.RUN Method](../../methods/devenv-report-run-method.md).  
+After you define the *Report* variable, you can run this method or the [RUN Method \(Report\)](reportinstance-run-method.md) on the variable. As opposed to the RUN method, with the RUNMODAL method, the variable is not cleared after it executes this function. You must handle clearing the variable.
+
+Use the RUNMODAL method or the RUN method if you know at design time the exact report you want to run. Otherwise, use the [REPORT.RUNMODAL Method](report-runmodal-method.md) or [REPORT.RUN Method](report-run-method.md).  
   
  If the report you specify does not exist, then a compile error occurs.  
   
- The request page is run modally when you use this method.  
+ The request page is run modally when you use this method. 
+
+
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
   
 ## Example  
  This example requires that you create the following variables.  

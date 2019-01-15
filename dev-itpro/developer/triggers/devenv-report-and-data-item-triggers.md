@@ -19,7 +19,7 @@ In reports, triggers are typically used to perform calculations and verification
 ## Report Triggers  
  The following table lists triggers that apply to the report itself.  
 
-|Trigger|Executed|  
+|Trigger|Runs|  
 |-------------|--------------|  
 |[OnInitReport Trigger](devenv-oninitreport-trigger.md)|When the report is loaded.|  
 |[OnPreReport Trigger](devenv-onprereport-trigger.md)|Before the report is run, but after the **RequestPage** has been run.|  
@@ -28,7 +28,7 @@ In reports, triggers are typically used to perform calculations and verification
 ## Data Item Triggers  
  The following table lists triggers that apply to each data item on the report.  
 
-|Trigger|Executed|  
+|Trigger|Runs|  
 |-------------|--------------|  
 |[OnPreDataItem Trigger](devenv-onpredataitem-trigger.md)|Before the data item is processed, but after the associated variable has been initialized.|  
 |[OnAfterGetRecord (Data Items) Trigger](devenv-onaftergetrecord-data-items-trigger.md)|When a record has been retrieved from the table.|  

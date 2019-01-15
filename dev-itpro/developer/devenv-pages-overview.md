@@ -3,7 +3,7 @@ title: "Pages Overview"
 description: Pages are the main way to display and organize data. Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/22/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,7 +56,7 @@ Which page type you choose depends on the application task that you want to supp
 |`StandardDialog`|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
 |`NavigatePage`|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
 |`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center. For more information, see [Creating a Role Center Headline](devenv-create-role-center-headline.md)|
-|`API`|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface.|
+|`API`|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. This page type should not be extended by creating a page extension object. Instead, create a new API by adding a page object.|
 
 > [!NOTE]  
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
@@ -68,9 +68,9 @@ You can choose between the following `area` categories:
 
 |Area type|Placement on the page|
 |---------|---------------------|
-|```Content```|The content area displays the content of a RoleCenter or a List page.|
-|```FactBoxes```|The factbox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
-|```RoleCenter```|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
+|`Content`|The content area displays the content of a RoleCenter or a List page.|
+|`FactBoxes`|The factbox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
+|`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
   
 <h2> Page Actions </h2>
 
@@ -90,15 +90,15 @@ You can use the following keywords in the `layout` section to place and move fie
 
 |Keywords        |Syntax | Applies to |
 |-----------------------|-------|-------------|
-|```addfirst```|```addfirst(Anchor)```|**Anchor**: areas and groups|
-|```addlast``` |```addlast(Anchor)``` |**Anchor**: areas and groups|
-|```addafter``` |```addafter(Anchor)``` |**Anchor**: controls, actions and groups|
-|```addbefore```|```addbefore(Anchor)``` |**Anchor**: controls, actions and groups|
-|```movefirst```|```movefirst(Anchor; Target1, Target2)```|**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
-|```movelast``` |```movelast(Anchor; Target1, Target2)``` |**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
-|```moveafter``` |```moveafter(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
-|```movebefore```|```movebefore(Anchor; Target1, Target2)```|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
-|```modify```|```modify(Target)```|**Target**: controls, actions and groups|
+|`addfirst`|`addfirst(Anchor)`|**Anchor**: areas and groups|
+|`addlast` |`addlast(Anchor)` |**Anchor**: areas and groups|
+|`addafter` |`addafter(Anchor)` |**Anchor**: controls, actions and groups|
+|`addbefore`|`addbefore(Anchor)` |**Anchor**: controls, actions and groups|
+|`movefirst`|`movefirst(Anchor; Target1, Target2)`|**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
+|`movelast` |`movelast(Anchor; Target1, Target2)` |**Anchor**: area, group <br>**Target**: list of actions or list of controls</br>|
+|`moveafter` |`moveafter(Anchor; Target1, Target2)`|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
+|`movebefore`|`movebefore(Anchor; Target1, Target2)`|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls</br>|
+|`modify`|`modify(Target)`|**Target**: controls, actions and groups|
 
 
 ### Example
@@ -168,11 +168,11 @@ tableextension 70000020 CustomerTableExtension extends Customer
 ## Best practices for designing pages  
 We recommend that you simplify the user experience by reducing what users see by default. You can promote the information that the users most frequently need to see and hide the less important information. For example:  
   
--   Place common tasks in the ribbon  
+- Place common tasks in the ribbon  
   
--   Organize information pages under FastTabs and, by default, hide the FastTabs that are infrequently visited.  
+- Organize information pages under FastTabs and, by default, hide the FastTabs that are infrequently visited.  
   
--   Use one to three FactBoxes on a page to provide supplementary information and a place for adding notes.  
+- Use one to three FactBoxes on a page to provide supplementary information and a place for adding notes.  
   
 ## See Also  
 [Page Properties Overview](properties/devenv-page-property-overview.md)  

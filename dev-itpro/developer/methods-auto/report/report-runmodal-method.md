@@ -42,28 +42,33 @@ Specifies which record to use in the report. Any filters that are attached to th
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- Use this method or the [RUN Method \(Report\)](../../methods/devenv-run-method-report.md) if you know at design time the exact report you want to run. Otherwise, use the [REPORT.RUNMODAL Method](../../methods/devenv-report-runmodal-method.md) or [REPORT.RUN Method](../../methods/devenv-report-run-method.md).  
+## Remarks
   
- If the report you specify does not exist, then a compile error occurs.  
-  
- The request page is run modally when you use this method.  
-  
+Use this method, or the [REPORT.RUN Method](report-run-method.md), if you do not know the specific report that you want to run when you are designing your application. If you do know the specific report that you want to run, then you can use the [RUNMODAL Method](reportinstance-runmodal-method.md) or the [RUN Method](reportinstance-run-method.md).  
+
+ The request page is run modally when you use this method. However, when the user chooses **Preview** on the request page, the **Print Preview** page does not run modally. 
+
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
+
 ## Example  
- This example requires that you create the following variables.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|CustomerRec|Record|Customer|  
-|SomeReport|Report|Chart of Accounts|  
-  
+ This example shows how to run a report. This example displays the request window and sends the report to the printer selected through the Printer Selection table.  
+
 ```  
-…  
-CLEAR(CustomerRec);  
-CustomerRec.SETRECFILTER;  
-SomeReport.XXX; // Any user-defined method.  
-SomeReport.SETTABLEVIEW(CustomerRec);  
-SomeReport.RUNMODAL()  
+REPORT.RUNMODAL(1001);  
+```  
+
+## Example  
+ This example shows how to run a report. This example skips the request window, starts the report immediately, and sends the report to the printer that is selected in the Printer Selection table.  
+
+```  
+REPORT.RUNMODAL(1001, FALSE);  
+```  
+
+## Example  
+ This example shows how to run a report. This example skips the request window and starts the report immediately. It sends the report to the system printer instead of the printer that is selected in the Printer Selection table.  
+
+```  
+REPORT.RUNMODAL(1001, FALSE, TRUE);  
 ```  
 
 ## See Also

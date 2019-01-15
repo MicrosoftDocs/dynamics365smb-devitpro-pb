@@ -30,7 +30,7 @@ Page triggers allow you to use AL code to control the behavior of the system as 
 ## General Triggers  
  The following table lists triggers that apply to the entire page.  
 
-|Page trigger name|Executed|  
+|Page trigger name|Runs|  
 |-----------------------|--------------|  
 |[OnInit Trigger](devenv-oninit-trigger.md)|When the page is loaded, but before the controls are available.|  
 |[OnOpenPage Trigger](devenv-onopenpage-trigger.md)|When the page is initialized and the controls are available.|  
@@ -48,7 +48,7 @@ Page triggers allow you to use AL code to control the behavior of the system as 
 ## Field Triggers  
  The following table describes the triggers that are available on field controls.  
 
-|Control trigger|Executed|  
+|Control trigger|Runs|  
 |---------------------|--------------|  
 |[OnValidate (Page fields) Trigger](devenv-onvalidate-page-fields-trigger.md)|When the user changes the value in a field and then selects away from the field so that the field loses focus.|  
 |[OnLookup (Page fields) Trigger](devenv-onlookup-page-fields-trigger.md)|When the user requests a lookup by clicking a field's lookup button or pressing F4.|  
@@ -60,7 +60,7 @@ Page triggers allow you to use AL code to control the behavior of the system as 
 ## Action Triggers  
  The following table lists triggers that apply to actions on a page.  
 
-|Triggers|Executed|  
+|Triggers|Runs|  
 |--------------|--------------|  
 |[OnAction Trigger](devenv-onaction-trigger.md)|When an action is initiated on a page.|  
 

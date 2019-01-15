@@ -14,13 +14,13 @@ manager: edupont
 
 
 # OnDelete Trigger
-Executed when a user tries to delete a record.  
+Runs when a user tries to delete a record.  
   
 ## Applies To  
- Tables  
+- Tables  
   
 ## Remarks  
- This trigger executes before the default delete behavior. The record is not deleted if an error occurs in the trigger code.  
+ This trigger runs before the default delete behavior. The record is not deleted if an error occurs in the trigger code.  
   
 ## See Also  
  [Triggers](devenv-triggers.md)  

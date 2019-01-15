@@ -1,17 +1,15 @@
 ---
 title: "XMLport Object"
-description: "Description of the xmlport object."
+description: "Description of the XMLport object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 12/19/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
@@ -19,10 +17,64 @@ caps.latest.revision: 18
 # XMLport Object
 XMLports are used to export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Sharing data between different computer systems is seamless when it is shared in XML format. Working with XML files can be tedious so the details of how the XML file is handled are encapsulated in XMLports.
 
-To use an XMLport to import or export data, you first create an XMLport object. You can run the XMLport from a page or codeunit object.
+To use an XMLport to import or export data, you first create an XMLport object. You can run the XMLport from a page or codeunit object. 
+
+> [!NOTE]  
+> In the [!INCLUDE[prodlong](includes/prodlong.md)] Web client, Request pages are not supported. Request pages are dialog boxes that enables the user to set a filter on the data, sort the data, or choose whether to export or import the data. If you try to run an XMLport with a Request page from the Web client, you receive an error that the XMLport page type is not supported.
 
 ## Snippet support
 Typing the shortcut ```txmlport``` will create the basic layout for an XMLport object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+## XMLport syntax
+```
+xmlport Id MyXmlport
+{
+    schema
+    {
+        textelement(NodeName1)
+        {
+            tableelement(NodeName2; SourceTableName)
+            {
+                fieldattribute(NodeName3; NodeName2.SourceFieldName)
+                {
+                    
+                }
+            }
+        }
+    }
+    
+    requestpage
+    {
+        layout
+        {
+            area(content)
+            {
+                group(GroupName)
+                {
+                    field(Name; SourceExpression)
+                    {
+                        
+                    }
+                }
+            }
+        }
+    
+        actions
+        {
+            area(processing)
+            {
+                action(ActionName)
+                {
+                    
+                }
+            }
+        }
+    }
+    
+    var
+        myInt: Integer;
+}
+```
 
 ## XMLport example
 The following example shows a page extension of the **Permission Sets** page that adds an action to the specified page calling the XMLport **ExportPermissionSet**. The XMLport exports the permission set data to an XML file. 

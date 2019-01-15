@@ -14,10 +14,10 @@ manager: edupont
 
 
 # OnAssistEdit Trigger
-Executed in place of the [AssistEdit Property](../properties/devenv-assistedit-property.md) features that are provided in the application.  
+Runs in place of the [AssistEdit Property](../properties/devenv-assistedit-property.md) features that are provided in the application.  
 
 ## Applies To  
- Fields on pages  
+- Fields on pages  
 
 > [!NOTE]  
 >  The trigger is not invoked on a page that is in view mode<!--NAV in the [!INCLUDE[nav_web](../includes/nav_web_md.md)]-->.  
