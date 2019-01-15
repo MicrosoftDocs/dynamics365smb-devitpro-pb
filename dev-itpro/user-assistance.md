@@ -82,5 +82,5 @@ The user assistance in the shape of tooltips and other user interface text is tr
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
-[Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua)
+[Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua)  
 [Resources for Help and Support](help-and-support.md)  
