@@ -239,7 +239,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     For example:
 
     ```
-    https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcvwebclient%26wreply=https://https://corp.sample.com/BC130/SignIn
+    https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcwebclient%26wreply=https://https://corp.sample.com/BC130/SignIn
     ```
 4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the relying party trust identifier, for example `https://dynamicsnavwindowsclient`.
 
