@@ -12,11 +12,15 @@ ms.author: solsen
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Adding Pages and Reports to Tell me
-When you have added a page or a report in your extension, you most likely want it to be discoverable to the user. AL provides navigational support for pages and reports in the client. You enable a page or report to be available through **Tell me** in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] by setting the **UsageCategory** property in code. The **UsageCategory** setting will make the page or report searchable, and the value chosen for the setting will further sub categorize the item.
+
+The [!INCLUDE[prodshort](includes/prodshort.md)] client includes the **Tell me** feature that lets users find objects and help by entering a search terms. When you have added a page or a report in your extension, you most likely want it to be discoverable to users in **Tell me**. In AL, you make a page or report searchable from **Tell me** by setting the [UsageCategory property](properties/devenv-usagecategory-property.md) in code. The **UsageCategory** setting will make the page or report searchable, and the value chosen for the setting will further sub categorize the item.
 
 ![TellMe](../media/tellme.jpg)
 
-## Working with Tell me
+**Tell me** finds pages and reports by searching the captions that are specified on page and report objects by the [CaptionML property](properties/devenv-caption-property.md).
+
+## Working with the UsageCategory property
+
 When you create a [Page](devenv-page-object.md) or a [Report](devenv-report-object.md), you add the [UsageCategory Property](properties/devenv-usagecategory-property.md). If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**, the page or report will not show up when you search in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
 
 ## UsageCategory property values
@@ -32,16 +36,25 @@ The values for the **UsageCategory** property are listed below. The sub category
 |History         |The page or report is listed as **Archive** under the **Reports and Analysis** category.|
 |Administration  |The page or report is listed as **Administration** under the **Pages and Tasks** category.|
 
+## Adding additional search terms
+
+If the **UsageCategory** property is set a value other than `None`, you can use the [PageAdditionalSearchTerms] or [ReportAdditionalSearchTerms] properties to specify other words or phrases that can help users find a page or report. The search terms specified by theses properties are used in additional to the caption. The properties are useful when the caption does not always reflect what you expect users will look for. A good example of this in [!INCLUDE[prodshort](includes/prodshort.md)] is the term **item**, in which case users might use the the term **product** instead.  
+
+> [!NOTE]
+> For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the [!INCLUDE[webserverinstance](includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called UseAdditionalSearchTerms that enables or disables the use of additional search terms by the **Tell me**. For more information, see [](../administration/configure-web-server.md).
+
+
 ## Example
-The following example creates a `SimpleCustomerCard` page and sets a `UsageCategory` property to the page, so that the `SimpleCustomerCard` page is discoverable through search using the Tell me functionality. 
+The following example creates a `SimpleItemCard` page and sets a `UsageCategory` property to the page, so that the `SimpleCustomerCard` page is discoverable through search using the Tell me functionality. Also, the example sets the   `UsageCategory` property that adds two search terms. 
 
 ```
-page 50210 SimpleCustomerCard 
+page 50210 SimpleItemCard 
 { 
     PageType = Card; 
-    SourceTable = Customer; 
-    UsageCategory = Documents;  
-    AccessByPermission = page SimpleCustomerCard = X;
+    SourceTable = Item; 
+    UsageCategory = Documents;
+    UsageCategory = product,merchandise;     
+    AccessByPermission = page SimpleItemCard = X;
     ApplicationArea = All;
     layout 
     { 
@@ -51,7 +64,7 @@ page 50210 SimpleCustomerCard
             { 
                 field("No.";"No.") {} 
                 field(Name;Name) {} 
-                field(Address;Address) {} 
+                field(Description;Description) {} 
             } 
         } 
     } 
@@ -64,9 +77,10 @@ In addition to making a page or report searchable, you can control the access of
 The **AccessByPermission** property and **ApplicationArea** property are the optional settings, which can be applied with the **UsageCategory** property. These settings are used to set restrictions on an object when you enable the Search functionality.
 
 ## Working in the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)]
-If you are using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], you can also set UsageCategory, AccessByPermission, and ApplicationArea properties on pages and reports to control their search.
 
-After you change these properties, before the changes take effect in the client, you must run **Build Object Search Index** from the **Tools** menu.
+If you are using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], you can also set UsageCategory, AdditionalSearchTerms, AccessByPermission, and ApplicationArea properties on pages and reports to control their search.
+
+After you change these properties by using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], before the changes take effect in the client, you must run **Build Object Search Index** from the **Tools** menu.
 
 ## See Also
 [Adding Menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md)  
