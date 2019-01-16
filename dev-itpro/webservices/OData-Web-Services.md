@@ -38,7 +38,7 @@ The Open Data Protocol \(OData\) is a web protocol that is designed for querying
 
 ## Enabling and Configuring OData on the [!INCLUDE[server](../developer/includes/server.md)]
  
-The [!INCLUDE[server](../developer/includes/server.md)] instance has several configurations settings that enable and control OData services. For more information, see [O](../administration/configure-server-instance.md#ODataServices).
+The [!INCLUDE[server](../developer/includes/server.md)] instance has several configurations settings that enable and control OData services. For more information, see [OData Services Settings](../administration/configure-server-instance.md#ODataServices).
 
 ## Known Limitations
  
