@@ -48,6 +48,8 @@ Use this method, or the [REPORT.RUN Method](report-run-method.md), if you do not
 
  The request page is run modally when you use this method. However, when the user chooses **Preview** on the request page, the **Print Preview** page does not run modally. 
 
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
+
 ## Example  
  This example shows how to run a report. This example displays the request window and sends the report to the printer selected through the Printer Selection table.  
 
