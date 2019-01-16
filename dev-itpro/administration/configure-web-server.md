@@ -116,7 +116,7 @@ The following table describes the settings that are available in the navsettings
 |Privacy Link	|Specifies the URL to the privacy information for the application. This link also appears in the sign-in page.|
 | Legal Link |Specifies the URL to the legal information about application. |
 |Sign In Help Link	|This link appears on the sign-in page. It specifies the URL to a resource that provides information to help the user sign in the application.|
-|UseAdditionalSearchTerms|Specifies whether **Tell me** uses the additional search terms that are defined on pages and reports.<br /><br />The additinal search terms are specidied by the [)<br /><br /> If you set this to `false` the additional search terms are ignored.<br /><br /> Default value: true | 
+|UseAdditionalSearchTerms|Specifies whether **Tell me** uses the additional search terms that are defined on pages and reports.<br /><br />The additional search terms are specified by the [AdditionalSearchTerms](../developer/properties/devenv-additionalsearchterms-property.md) and [AdditionalSearchTermsML](../developer/properties/devenv-additionalsearchterms-property.md) properties.<br /><br /> If you set this to `false` the additional search terms are ignored.<br /><br /> Default value: true | 
 
 ## See Also  
 [Setting up Multiple Business Central Web Server Instances](../deployment/configure-multiple-web-server-instances.md)   

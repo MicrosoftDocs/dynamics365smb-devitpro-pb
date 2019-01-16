@@ -10,37 +10,37 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-# AdditionalSearchTerms Property
+# AdditionalSearchTermsML Property
 
-AL provides navigational support for pages and reports in the client. You enable a page or report to be discoverable through **Tell me** in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] by using the **UsageCategory** property. For more information, see [Adding Pages and Reports to Tell Me](../devenv-al-menusuite-functionality.md).
+Specifies search terms (words and phrases) for the page or report in different languages. In addition to the caption of the page or report, the terms are used by the search feature (**Tell me**) in the Web client and mobile apps.
 
-## Property Values
-The values for the **UsageCategory** property are listed below. The **UsageCategory** property makes the page or report searchable and further sub categorizes it in the list of search results when the user has used the **Tell me** functionality.
-
-|Value           |Description                                  |
-|----------------|---------------------------------------------|
-|None            |The page or report is not included in a search.|
-|Lists           |The page or report is listed as **Lists** under the **Pages and Tasks** category.|
-|Tasks           |The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
-|ReportsAndAnalysis |The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
-|Documents       |The page or report is listed as **Documents** under the **Reports and Analysis** category.|
-|History         |The page or report is listed as **Archive** under the **Reports and Analysis** category.|
-|Administration  |The page or report is listed as **Administration** under the **Pages and Tasks** category.|
-
-## Remarks
-If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**, the page or report will not show up when you use the search functionality. 
+> [!NOTE] 
+> The support for using the ML properties is being deprecated, so it is recommended to refactor your extension to use the corresponding [AdditionalSearchTerms property](devenv-additionalsearchterms-property.md), which is being picked up in the .xliff file. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
 ## Syntax
 
 ```
-UsageCategory = ReportsAndAnalysis;  
+AdditionalSearchTermsML = <language ID>='<term>,<term>', <Language ID>='<term>,<term>';
 ```
 
+## Applies to
+
+- Page objects
+- Report objects
+
+## Property Values
+
+|Value           |Description                                  |
+|----------------|---------------------------------------------|
+|`<language ID>`   |The standard Windows three-letter language ID, such as ENU or DAN.|
+|`<term>`  |The search word or phrase. Can consist of letters, numbers and special character.  |
+
+## Remarks
+For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the [!INCLUDE[webserverinstance](includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [](../../administration/configure-web-server.md).
+
 ## Dependent Properties
-The [AccessByPermission property](devenv-accessbypermission-property.md) and [ApplicationArea Property](devenv-applicationarea-property.md) are optional properties, which can be applied to set restrictions on an object accessibility, when you add the **UsageCategory** property. 
+[UsageCategory property](devenv-ussagecategory-property.md) 
 
 ## See Also
-[Adding Pages and Reports to Tell me](../devenv-al-menusuite-functionality.md)  
-[Properties](devenv-properties.md)   
 [Page Object](../devenv-page-object.md)  
 [Report Object](../devenv-report-object.md)  
