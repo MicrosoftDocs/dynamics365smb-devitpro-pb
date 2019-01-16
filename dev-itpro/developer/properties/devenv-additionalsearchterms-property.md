@@ -32,7 +32,7 @@ AdditionalSearchTermsML = '<term>,<term>';
 |`<term>`  |The search word or phrase, which can consist of letters, numbers and special characters. Separate each term by a comma.  |
 
 ## Remarks
-For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the [!INCLUDE[webserverinstance](includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [](../../administration/configure-web-server.md).
+For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the [!INCLUDE[webserverinstance](../includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [](../../administration/configure-web-server.md).
 
 ## Dependent Properties
 
