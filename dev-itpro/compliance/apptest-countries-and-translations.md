@@ -3,7 +3,7 @@ title: "Countries and Translations supported"
 description: "Describing a matrix of supported countries with their translations."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 10/24/2018
+ms.date: 11/02/2018
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -20,6 +20,7 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |Austria|de-AT|
 |Belgium|nl-BE<br>fr-BE|
 |Canada|en-CA <br>fr-CA|
+|Czech Republic **(on-premises only)**|cs-CZ|
 |Denmark|da-DK|
 |Germany|de-DE|
 |Finland|fi-FI|
@@ -30,11 +31,12 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |Netherlands|nl-NL|
 |New Zealand|en-NZ|
 |Norway|nb-NO|
+|Russia **(on-premises only)**|ru-RU|
 |Spain|es-ES|
 |Sweden|sv-SE|
 |Switzerland|fr-CH<br>de-CH <br>it-CH|
-|UK|en-GB|
-|US|en-US|
+|United Kingdom|en-GB|
+|United States|en-US|
 
 ## Partner Supported Countries and Translations
 
@@ -42,8 +44,15 @@ In countries, where Microsoft has not delivered a localization, partners can bui
 
 |Country|Language Code|
 |-------|-------------|
+|Estonia|et-EE|
+|Hong Kong|zh-HK|
+|Japan|ja-JP|
+|Malaysia|en-US|
+|Serbia|rs-latn-RS|
+|Singapore|en-US|
 |South Africa|en-ZA|
 |South Korea|ko-KR|
+|Taiwan|zh-TW|
 |United Arab Emirates|en-US|
 
 ## See Also

@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: cc227051-69f0-453e-ad20-fe7b6eb1f582
 caps.latest.revision: 5
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # System
 This section contains the following topics:  

@@ -1,0 +1,77 @@
+---
+title: "Copy Method"
+ms.author: solsen
+ms.custom: na
+ms.date: 11/06/2018
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: solsen
+---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# Copy Method
+Copies a file.
+
+## Syntax
+```
+[Ok := ]  File.Copy(FromName: String, ToName: String)
+```
+> [!NOTE]  
+> This method can be invoked without specifying the data type name.  
+## Parameters
+*FromName*  
+&emsp;Type: [String](../string/string-data-type.md)  
+The name of the file that you want to make a copy of, including its path. When you enter the path, consider these shortcuts:
+-   You can omit the drive designation if the file is located on the current drive.
+-   You can omit the full path if the file is located in the current directory.
+-   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.
+          
+*ToName*  
+&emsp;Type: [String](../string/string-data-type.md)  
+The name that you want to assign to the copy that includes its path. When you enter the path, consider these shortcuts:
+-   You can omit the drive designation if the file is located on the current drive.
+-   You can omit the full path if the file is located in the current directory.
+-   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.
+          
+
+
+## Return Value
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ If you do not use the return value and the file cannot be copied, a run-time error will occur. If you do include the return value in your code, you must handle any errors yourself.  
+  
+## Example  
+ The following example copies a file that is named OldFile from a folder that is named Old on drive C to a folder that is named New. If the file is copied, a message is displayed and the program continues. Otherwise, an error occurs. This example requires that you create the following global variables. This example assumes that you have created the following file 'c:\\Old\\' OldFile.  
+  
+|Variable name|DataType|  
+|-------------------|--------------|  
+|OldFile|Text|  
+|NewFile|Text|  
+  
+```  
+  
+OldFile := 'old.txt';  
+NewFile := 'new.txt';  
+IF FILE.COPY('c:\Old\' + OldFile, 'c:\New\' + NewFile) THEN  
+  // Continue your program.  
+  MESSAGE('The file was copied.')  
+ELSE  
+  // Handle the error.  
+  MESSAGE('The file was not copied.')  
+```  
+  
+
+## See Also
+[File Data Type](file-data-type.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

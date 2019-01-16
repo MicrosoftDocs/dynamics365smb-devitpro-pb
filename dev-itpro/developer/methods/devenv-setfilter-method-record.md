@@ -6,10 +6,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: dynamics365-financials
+ms.service: dynamics365-business-central
 ms.assetid: 1e0892e3-e0b7-441f-97fa-1217092bc093
 caps.latest.revision: 12
 manager: edupont
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
  
@@ -58,9 +59,9 @@ Record.SETFILTER(Field, String, [Value],...)
   
 -   \<=   Less than or equal to  
   
--   >   Greater than  
+-   \>   Greater than  
   
--   >=   Greater than or equal to  
+-   \>=   Greater than or equal to  
   
 -   \<>   Different from  
   

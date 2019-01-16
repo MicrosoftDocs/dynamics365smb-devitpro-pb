@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: c365bf5b-559a-48dc-83da-159d046a784a
 caps.latest.revision: 22
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 
 # Field Data Types

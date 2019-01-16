@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: c6e2d272-c3d4-42dd-ad4d-bebc293d3a98
 caps.latest.revision: 4
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Media Data Type
 A complex type that encapsulates media files, such as image .jpg and .png files, in application database tables. The Media data type can be used as a table field data type, but cannot be used as a variable or parameter.  

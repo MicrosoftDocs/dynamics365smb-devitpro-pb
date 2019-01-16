@@ -18,6 +18,7 @@ This article provides an overview of the full upgrade process for Business Centr
  
 |Step|More info| Done |
 |----|-----------|--|
+|Upgrade application code.|[See...](transition-from-codeunit1.md)||
 |In the old deployment, convert custom V1 extensions to V2 extensions.|[See...](../developer/devenv-upgrade-v1-to-v2-overview.md)||
 |Export permissions and permission sets from the old deployment. **Important:** Make sure your computer uses the same codepage as the data.|[See...](How-to--Import-Export-Permission-Sets-Permissions.md)||
 |Export encryption keys from the old deployment.|[See...](how-to-export-and-import-encryption-keys.md)||
@@ -51,10 +52,8 @@ This article provides an overview of the full upgrade process for Business Centr
 ## Post-upgrade tasks
 |Step|More info| Done |
 |----|-----------|--|
-|Transition custom code that used codeunit 1 to use the management codeunits.|[See...](transition-from-codeunit1.md)||
 |Import permissions and permission sets.|[See...](How-to--Import-Export-Permission-Sets-Permissions.md)||
 |Import encryption keys|[See...](how-to-export-and-import-encryption-keys.md)||
-|Configure pages and reports included in the MenuSuite to be searchable in the Web client. |[See...](upgrade-pages-report-for-search.md) ||
 |Register custom control add-ins to the server instance.|[See...](upgrading-the-data.md#AddControlAddins)||
 |Upload the customer license. |[See...](../cside/cside-upload-license-file.md)||
 

@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2018
+ms.date: 11/28/2018
 ms.author: solsen
 ---
 
@@ -25,18 +25,18 @@ Represents an extension resource type in [!INCLUDE[d365fin_long_md](../developer
 
 | Actions         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Microsoft.NAV.install](dynamics-microsoft-automation-extension-post.md)|none|Installs an published extension.|
-|[Microsoft.NAV.uninstall](dynamics-microsoft-automation-extension-post.md)|none|Uninstalls an extension extensions.|
+|[Microsoft.NAV.install](dynamics-microsoft-automation-extension-post.md)|none|Installs a published extension.|
+|[Microsoft.NAV.uninstall](dynamics-microsoft-automation-extension-post.md)|none|Uninstalls an extension.|
 
 ## Properties
 
 | Property	      | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
-|packageId               |GUID  |The unique ID of the package. Read-Only.|
-|displayName             |string|Specifies the extension name.                  |
+|packageId        |GUID  |The unique ID of the package. Read-Only.|
+|displayName      |string|Specifies the extension name.                  |
 |publisher|string|Specifies the publisher of the extension.                  |
-|versionMajor      |int|Major version of the extension.     |
-|versionMinor      |int|Minor version of the extension.     |
+|versionMajor     |int|Major version of the extension.     |
+|versionMinor     |int|Minor version of the extension.     |
 |isInstalled|boolean|Specifies the installation status.|
 
 ## Relationships

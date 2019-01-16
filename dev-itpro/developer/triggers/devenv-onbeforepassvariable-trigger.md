@@ -14,10 +14,10 @@ manager: edupont
 
 
 # OnBeforePassVariable Trigger
-Executed after the source expression has been formatted into a text variable and before the text variable is passed to the XML document.  
+Runs after the source expression has been formatted into a text variable and before the text variable is passed to the XML document.  
   
 ## Applies To  
- XMLports  
+- XMLports  
   
 ## Remarks  
  This trigger is only used to export data and is typically used to manipulate the text variable.  

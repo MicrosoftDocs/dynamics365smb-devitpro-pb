@@ -14,13 +14,13 @@ author: SusanneWindfeldPedersen
 
 
 # OnInitReport Trigger
-Executed when the report is loaded.  
+Runs when the report is loaded.  
   
 ## Applies To  
- Reports  
+- Reports  
   
 ## Remarks  
- This trigger is executed before the request page is run and before any table views or filters are set. This trigger performs any processing that is required before the report is run, such as initializing global variables. It can also stop the report.  
+ This trigger is run before the request page is run and before any table views or filters are set. This trigger performs any processing that is required before the report is run, such as initializing global variables. It can also stop the report.  
   
 ## See Also  
  [Triggers](devenv-triggers.md)  

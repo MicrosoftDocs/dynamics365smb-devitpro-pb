@@ -14,10 +14,10 @@ manager: edupont
 
 
 # OnAfterInsertRecord Trigger
-Executed after a record has been inserted into a database table.  
+Runs after a record has been inserted into a database table.  
   
 ## Applies To  
- XMLports.  
+- XMLports.  
   
 ## Remarks  
  This trigger is only used to import data and can be used to move data from temporary tables to real tables.  

@@ -25,6 +25,8 @@ A certificate is a file that [!INCLUDE[server](../developer/includes/server.md)]
 > [!NOTE]  
 >  This implementation does not use *Secure Sockets Layer \(SSL\)*. Although these implementations do use the public and private key infrastructure of SSL and SSL certificates, they use Windows Communication Foundation \(WCF\) transport-level security \(TLS\) over the TCP/IP protocol instead of https. This means that these are not strict SSL implementations.
 -->  
+> [!NOTE]  
+>  An instance of [!INCLUDE[server](../developer/includes/server.md)] that has been configured for secure WAN communication always prompts users for authentication when they start the client, even when the client computer is in the same domain as [!INCLUDE[server](../developer/includes/server.md)].
   
 ### Certificates for Production
   
@@ -36,9 +38,10 @@ In a production environment, you should obtain a certificate from a certificatio
 You implement chain trust by obtaining X.509 service certificates from a trusted provider. These certificates and their root certification authority \(CA\) certificates must be installed in the certificates store on the computer that is running [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)]. The CA certificate must also be installed in the certificate store on computers that are running the [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] so that clients can validate the server.  
   
 Most enterprises and hosting providers have their own infrastructure for issuing and managing certificates. You can also use these certificate infrastructures. The only requirement is that the service certificates must be set up for key exchange and therefore must contain both private and public keys. Additionally, the service certificates that are installed on [!INCLUDE[server](../developer/includes/server.md)] instances must have the Service Authentication and Client Authentication certificate purposes enabled.  
+
+> [!IMPORTANT]
+> Microsoft recommends against using wildcard SSL certificates in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installations. Wildcard certificates pose security risks because if one server or sub-domain is compromised, all sub-domains may be compromised. Wildcard certificates also introduce a new style of impersonation attack. In this attack, the victim is lured to a fraudulent resource in the certified domain through phishing. Conventional certificates detect this attack, because the user’s browser checks that the private key is hosted on a server whose name matches the one displayed in the browser’s address window. 
   
-> [!NOTE]  
->  An instance of [!INCLUDE[server](../developer/includes/server.md)] that has been configured for secure WAN communication always prompts users for authentication when they start the client, even when the client computer is in the same domain as [!INCLUDE[server](../developer/includes/server.md)].
   
 ## Run the Certificates Snap-in for Microsoft Management Console
   

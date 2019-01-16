@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 976c36b9-f2bf-4cd5-8ad7-ff3b5eb0cf26
 caps.latest.revision: 44
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # AL Data Types
 AL uses variables to store data of various types. By declaring variables of the correct type, you do the following:  

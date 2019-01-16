@@ -10,7 +10,7 @@ ms.topic: article
 ms.author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+# Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]: Multitenant Deployment
 
 [See print-friendly quick reference](multitenant-upgrade-checklist.md)
 
@@ -206,7 +206,7 @@ You perform these tasks on each tenant that you want to upgrade.
     Synchronize the tenant database schema with validation by running the the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
 
     ```
-    Set-NAVTenant -ServerInstance <ServerInstanceName> -Tenant <TenantID>
+    Sync-NAVTenant -ServerInstance <ServerInstanceName> -Tenant <TenantID>
     ```
 
 3. Synchronize all published extensions with the tenant database.
@@ -248,11 +248,12 @@ You perform these tasks on each tenant that you want to upgrade.
 
 ## Post-upgrade tasks
 
+<!--
 1. Transition custom code that used codeunit 1 to use the management codeunits.
 
-    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).
+    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).-->
 
-2. Import permissions and permission sets.
+1. Import permissions and permission sets.
 
     Import the permission sets and permissions XML files that you exported from the old database as follows:
 
@@ -263,19 +264,17 @@ You perform these tasks on each tenant that you want to upgrade.
     2.  Run XMLport 9171 and XMLport 9172 to import the permission sets and permission XML files.
 
         For more information, see [How to: Export and Import Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ImportPerms).
-3. Import encryption keys.
+2. Import encryption keys.
 
     For more information, see [Exporting and Importing Encryption Keys](how-to-export-and-import-encryption-keys.md).
 
-
+<!--
 4. Configure pages and reports included in the MenuSuite to be searchable in the Web client.
 
-    The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md.
-5. Upload the customer license.
+    The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md.-->
+3. Upload the customer license.
 
     For more information, see [Uploading the License File](../cside/cside-upload-license-file.md)
-
-
 
 ## See Also  
  [Upgrading the Application Code](Upgrading-the-Application-Code.md)   

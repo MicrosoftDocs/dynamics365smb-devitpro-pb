@@ -1,17 +1,13 @@
 ---
 title: "Using the Code Analysis Tool"
 description: "Using static code analysis tool on an AL project."
+
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
@@ -26,7 +22,6 @@ First, create a simple project in AL.
 3. Copy the setting **al.enableCodeAnalysis** to the settings file and set it to `true`: **"al.enableCodeAnalysis": true**.
 
 At this point, the analyzers packaged with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s will be run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate a violation of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
-
 
 ## Adding your own code to the project
 In the Visual Studio Code Explorer, open the `HelloWorld.al` file and replace the existing code with the following:
@@ -55,11 +50,11 @@ Using the **Ctrl+Shift+B** shortcut to build your project will run the code anal
 
 ## Code analyzers
 A code analyzer is a library that builds on the compiler's functionality to offer enhanced analysis of the syntax and semantics of your code at build time.
-The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code contains three analyzers:
-- **CodeCop** is an analyzer that enforces the official AL Coding Guidelines. For more information about the CodeCop rules, see [CodeCop Analyzer Rules](devenv-codeanalyzer-codecop-rules.md).
-- **PerTenantExtensionCop** is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants. For more information about the PerTenantExtensionCop rules, see [PerTenantExtensionCop Analyzer Rules](devenv-codeanalyzer-pertenantextensioncop-rules.md).
-- **AppSourceCop** is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource. For more information about the AppSourceCop rules, see [AppSourceCop Analyzer Rules](devenv-codeanalyzer-appsourcecop-rules.md).
-- **UserInterfaceCop** is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants. For more information about the UserInterfaceCop rules, see [UserInterfaceCop Analyzer Rules](devenv-codeanalyzer-uicop-rules.md).
+The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code contains four analyzers:
+- **CodeCop** is an analyzer that enforces the official AL Coding Guidelines. For more information about the CodeCop rules, see [CodeCop Analyzer Rules](analyzers/codecop.md).
+- **PerTenantExtensionCop** is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants. For more information about the PerTenantExtensionCop rules, see [PerTenantExtensionCop Analyzer Rules](analyzers/pertenantextensioncop.md).
+- **AppSourceCop** is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource. For more information about the AppSourceCop rules, see [AppSourceCop Analyzer Rules](analyzers/appsourcecop.md).
+- **UserInterfaceCop** is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants. For more information about the UserInterfaceCop rules, see [UICop Analyzer Rules](analyzers/uicop.md).
 
 ## Selecting code analyzers to run
 By default, all the analyzers that ship with the Visual Studio Code extension are enabled.
@@ -72,7 +67,7 @@ The analyzers that are shipped with the [!INCLUDE[d365al_ext_md](../includes/d36
 - `"${AppSourceCop}"`
 - `"${CodeCop}"`
 - `"${PerTenantExtensionCop}"`
-- `"${UserInterfaceCop}"`
+- `"${UICop}"`
 
 ## See also
 [Using the Code Analysis Tools with the Ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  
