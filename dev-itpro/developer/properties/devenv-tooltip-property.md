@@ -49,7 +49,7 @@ ToolTip = 'Shows the name of the entity based on the names in your list of conta
 ## See Also  
 
 [User Assistance Model](../../user-assistance.md)  
-[Guidelines for tooltip text](../../userassistance.md#guidelines-for-tooltip-text)
+[Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  
 [Configuring the Help Experience](../../deployment/configure-help.md)  
 [ToolTipML Property](devenv-tooltipml-property.md)  
  <!-- [Multilanguage Development](Multilanguage-Development.md)-->
