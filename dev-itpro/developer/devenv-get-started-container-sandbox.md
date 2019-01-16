@@ -22,10 +22,10 @@ You set up a container sandbox by running the **SANDBOX ENVIRONMENT (CONTAINER)*
 > [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] also offers an online sandbox. For more information, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
 
 ## <a name="AzureVsLocal"></a>Choosing an Azure-hosted or local-hosted container sandbox
-When you set up the container sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilites and use Docker to provide the infrastructure for the container-based applicationn. The difference is:
+When you set up the container sandbox, you can choose to host the sandbox on Microsoft Azure or on a local computer. Both environments offer the same capabilities and use Docker to provide the infrastructure for the container-based applicationn. The difference is:
 
--  With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you sign-up for an Azure subscription, and additional costs may be incurred for each container sandbox. 
--  Local hosting requires that your computer is running Windows 10 or Windows Server 2016, and you install and configure Docker before setting up the container sandbox.
+- With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you sign-up for an Azure subscription, and additional costs may be incurred for each container sandbox. 
+- Local hosting requires that your computer is running Windows 10 or Windows Server 2016, and you install and configure Docker before setting up the container sandbox.
 
 ## Set up an Azure-hosted container sandbox
 1. If you you do not already have one, sign up for an Azure subscription.
@@ -48,9 +48,9 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
     To install and configure Docker, choose the version of Docker that is appropriate for the host operating system:
 
-    -   For Windows 10, download from [Docker Community Edition for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows).
+    - For Windows 10, download from [Docker Community Edition for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows).
 
-    -   For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition).
+    - For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition).
 
 2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Search for Page or Report](media/search-icon.png "Search for Page or Report icon") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
 3. Choose **Host Locally**.
@@ -108,6 +108,7 @@ After the container sandbox is set up, you must set up Visual Studio Code for ex
     ```
     "server": "http://MyBizCentralApp",
     "serverInstance": "NAV",
+    "authentication": Windows,
     ```
 6. Save the launch.json file.
 

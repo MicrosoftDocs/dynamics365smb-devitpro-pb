@@ -36,6 +36,9 @@ After you define the *Report* variable, you can run this method or the [RUNMODAL
 Use RUN method or the RUNMODAL method if you know at design time the exact report that you want to run. Otherwise, use the [REPORT.RUN Method](report-run-method.md) or [REPORT.RUNMODAL Method](report-runmodal-method.md).  
   
 If the report you specify does not exist, then a compile error occurs.  
+
+
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
   
 ## Example  
  This example requires that you create the following variables.  
