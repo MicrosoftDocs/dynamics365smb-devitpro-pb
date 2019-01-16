@@ -50,7 +50,7 @@ The Microsoft user assistance model requires a tooltip for all controls of type 
 - If an action, begin with a verb in the imperative form , such as *Calculate* or *View*
 - Include the most valuable information that users need to perform the task(s) that the field or action supports
 - Ensure relevance  
-    For example, for the Post action, do not write *Post the document.*. Write, for example, *Update ledgers with the amounts and quantities on the document or journal lines.*.  
+    For example, for the Post action, do not write *Post the document.* Write, for example, *Update ledgers with the amounts and quantities on the document or journal lines.*  
 - Do not exceed 200 characters including spaces  
     Try to hit a length between 100 and 140.
 
