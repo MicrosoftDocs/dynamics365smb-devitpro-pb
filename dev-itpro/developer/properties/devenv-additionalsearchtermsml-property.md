@@ -20,7 +20,7 @@ Specifies search terms (words and phrases) for the page or report in different l
 ## Syntax
 
 ```
-AdditionalSearchTermsML = <language ID> = '<term>,<term>', <Language ID> = '<term>,<term>';
+AdditionalSearchTermsML = <language ID> = '<term>[,<term>]'[, <language ID> = '<term>[,<term>]'];
 ```
 
 ## Applies to

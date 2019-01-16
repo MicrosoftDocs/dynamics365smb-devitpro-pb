@@ -17,7 +17,7 @@ Specifies search terms (words and phrases) for the page or report. In addition t
 ## Syntax
 
 ```
-AdditionalSearchTermsML = '<term>,<term>';
+AdditionalSearchTermsML = '<term>[,<term>]';
 ```
 
 ## Applies to
