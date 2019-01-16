@@ -32,14 +32,18 @@ AdditionalSearchTermsML = <language ID>='<term>,<term>', <Language ID>='<term>,<
 
 |Value           |Description                                  |
 |----------------|---------------------------------------------|
-|`<language ID>`   |The standard Windows three-letter language ID, such as ENU or DAN.|
-|`<term>`  |The search word or phrase. Can consist of letters, numbers and special character.  |
+|`<language ID>`   |The standard Windows three-letter language ID, such as ENU or DAN. Separate each language by a comma.|
+|`<term>`  |The search word or phrase, which can consist of letters, numbers and special characters. Separate each term by a comma.|
 
 ## Remarks
 For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the [!INCLUDE[webserverinstance](includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [](../../administration/configure-web-server.md).
 
 ## Dependent Properties
 [UsageCategory property](devenv-ussagecategory-property.md) 
+
+## Example
+
+
 
 ## See Also
 [Page Object](../devenv-page-object.md)  
