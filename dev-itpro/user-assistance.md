@@ -42,6 +42,25 @@ Even the best designed user interface can still be confusing to some. It can be 
 
 The tooltips help users unblock themselves by providing an answer to the most likely questions the users might have, such as “What data can I input here?” or “What is the data used for?”. Keep that in mind when you develop the user interface of your solution.  
 
+### Guidelines for tooltip text
+
+The Microsoft user assistance model requires a tooltip for all controls of type Action and Field that exist on page objects. Follow these guidelines:
+
+- If a field, begin with the verb *Specifies*
+- If an action, begin with a verb in the imperative form , such as *Calculate* or *View*
+- Include the most valuable information that users need to perform the task(s) that the field or action supports
+- Ensure relevance  
+    For example, for the Post action, do not write *Post the document.*. Write, for example, *Update ledgers with the amounts and quantities on the document or journal lines.*.  
+- Do not exceed 200 characters including spaces  
+    Try to hit a length between 100 and 140.
+
+The following table illustrates these guidelines:
+
+|Control Name  |Tooltip  |
+|---------|---------|
+|**Password** field |Specifies your company’s password to the service that converts bank data. The password that you enter in this field must be the same as on the service provider’s sign-on page. </br>(175 characters including spaces) |
+|**Entries** action |View the history of transactions that have been posted for the customer.</br> (72 characters including spaces)|
+
 ## Help users learn more
 
 The content that Microsoft publishes under the user assistance concept of *Learn more* is in part intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative, and so on.  
