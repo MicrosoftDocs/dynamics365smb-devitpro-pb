@@ -3,7 +3,7 @@ title: "Development of a Localization Solution"
 description: "Comply with regulatory requirements in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 01/15/2019
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -11,6 +11,7 @@ ms.author: solsen
 ---
 
 # Development of a Localization Solution
+
 If you want to bring the capabilities of the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] Core to your local market, then there are several reasons why you would want to choose [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]:
 
 - Easy to translate and strong base capabilities ready for localization.
@@ -42,7 +43,7 @@ In [countries](https://docs.microsoft.com/en-us/dynamics365/business-central/dev
 All of the points listed above must be in place to declare [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country.
 To apply for access to build [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] localization in countries, where Microsoft has not delivered a localization, fill in the  [[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] Localization Request form](https://go.microsoft.com/fwlink/?linkid=2005218).
 
-> [NOTE]
+> [!NOTE]
 > If your localization request is approved and the relevant localization app has passed all AppSource validation, you can expect a lead time of minimum 3 months for Business Central to become available in your country.
 
 ## Business Central companion/mobile apps availability
@@ -73,7 +74,7 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 * [Upgrade code for localization apps](../devenv-upgrading-extensions.md).
 * Setup data RapidStart package for the localization app.
 * [Translation of a localization app to local language(s)](../devenv-work-with-translation-files.md) and base app if you are the first partner enabling localization for the country (Learn more about [Dynamics Translation Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/translation-service-overview)).
-* Translation of the localization app’s documentation.
+* Translation of the localization app’s documentation. For more information, see [Translate the Help](../../user-assistance.md#translate-the-help) and [Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua).
 * National Standard Features (local part) are recommended to be built as additional [add-on apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
 * Market Required and Local Competitive Features are recommended to be built as additional [add-on apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
 * Using .NET assemblies in your localization app will fail in the technical validation of an app. Instead, contribute to [C/AL Open Library](https://github.com/Microsoft/cal-open-library) GitHub repository with requests you have for .NET.
