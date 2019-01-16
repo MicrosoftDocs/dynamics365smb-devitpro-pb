@@ -41,7 +41,7 @@ For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the [!INCLUDE[w
 
 ## Dependent Properties
 
-The [UsageCategory property](devenv-usagecategory-property.md) must be set to a value other than `None` in order for the page to searchable by **Tell me**. 
+The [UsageCategory property](devenv-usagecategory-property.md) must be set to a value other than `None` in order for the page to be searchable by **Tell me**. 
 
 ## Example
 
@@ -62,5 +62,7 @@ page 50101 SearchTestML
 
 ## See Also
 
+[Adding Pages and Reports to Tell me](../devenv-al-menusuite-functionality.md)  
+[Properties](devenv-properties.md)  
 [Page Object](../devenv-page-object.md)  
 [Report Object](../devenv-report-object.md)  

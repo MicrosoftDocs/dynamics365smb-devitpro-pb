@@ -36,7 +36,7 @@ For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the [!INCLUDE[w
 
 ## Dependent Properties
 
-The [UsageCategory property](devenv-usagecategory-property.md) must be set to a value other than `None` in order for the page to searchable by **Tell me**.
+The [UsageCategory property](devenv-usagecategory-property.md) must be set to a value other than `None` in order for the page to be searchable by **Tell me**.
 
 ## Example
 
