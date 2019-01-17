@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 2b9d7dad-f05c-4f93-a167-8a9fa036ed28
 caps.latest.revision: 2
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # TaskScheduler Data Type
 The TaskScheduler data type is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times.  

@@ -36,7 +36,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
     For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
 
-3.  You have FOB files that contain the upgraded application code and upgrade toolkit. The upgrade toolkit includes upgrade codeunits for handling the data upgrade. The upgrade toolkit can be in the same FOB file as the application code or in a separate FOB file.  
+3.  You have upgraded the application code, and have the FOB files that contain the upgraded application code and upgrade toolkit. The upgrade toolkit includes upgrade codeunits for handling the data upgrade. The upgrade toolkit can be in the same FOB file as the application code or in a separate FOB file.  
 
     For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
 
@@ -63,10 +63,12 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
         For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).
 5.   \(Optional\) Make a copy of the configuration file (web.config or navsettings.json) for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances in the old deployment. 
+
+<!--
 6. Prepare for transitioning from codeunit 1.
 
-    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).
-7.  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has need installed. 
+    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).-->
+6.  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has need installed. 
 
     As a minimum, you must install the following components:
     - Server
@@ -239,7 +241,7 @@ Synchronize the database schema with validation.
 For example, run the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
 
 ```
-Set-NAVTenant -ServerInstance <ServerInstanceName>
+Sync-NAVTenant -ServerInstance <ServerInstanceName>
 ```
  
 For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
@@ -302,26 +304,27 @@ The database is now fully upgraded and is ready for use. However, [!INCLUDE[prod
 
 To use these add-ins, they must be registered in table **2000000069 Client Add-in**. Depending on the version that you upgraded from, all the add-ins might not be registered after the upgrade process. You can register missing control add-ins in the **Control Add-ins** page in the client. The assemblies (.dlls) for these add-ins are in subfolders to the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation, which by default is [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service\Add-ins. For more information, see [How to: Register a Windows Client Control Add-in](/dynamics-nav/How-to--Register-a-Windows-Client-Control-Add-in).
 
+<!--
 ## Task 17: Configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
 
 The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
 
 ## Task 18. Transition the custom code from old codeunit 1 to use the new implementation
 
-For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).  
+For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).  -->
  
-## Task 19: Update the Web Server instance configuration file (navsettings.json)
+## Task 17: Update the Web Server instance configuration file (navsettings.json)
 If you have installed the [!INCLUDE[webserver](../developer/includes/webserver.md)], populate the navsettings.json file for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance with the settings of the old web.config file or navsettings.json.
 
 For more information, see [Configuring Business Central Web Server Instances](../administration/configure-web-server.md).
   
-##  <a name="DeleteUpgCodeunits"></a> Task 20: Delete the upgrade objects
+##  <a name="DeleteUpgCodeunits"></a> Task 18: Delete the upgrade objects
 
 At this point, you have upgraded the database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
 
 When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  
 
-##  <a name="AddExtensions"></a> Task 21: Publish and install/upgrade extensions
+##  <a name="AddExtensions"></a> Task 19: Publish and install/upgrade extensions
 Complete this task if you are upgrading from a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] deployment that uses V2 extensions or a Denmark (DK) version of [!INCLUDE[nav2017](../developer/includes/nav2017.md)] or earlier.
 
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the current versions to the new versions.

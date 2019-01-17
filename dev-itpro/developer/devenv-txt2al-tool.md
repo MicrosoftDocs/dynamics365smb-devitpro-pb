@@ -25,19 +25,20 @@ The Txt2Al conversion tool allows you to take existing [!INCLUDE[navnow_md](incl
 ## To run the Txt2Al conversion tool
 To run the Txt2Al conversion tool, follow the steps outlined below.
 
-1. Start with a clean Dynamics NAV database and compile the database.  
+1. Start with a clean [!INCLUDE[navnow_md](includes/navnow_md.md)] database and compile the database.  
 It is **very** important that you compile the database to get the right result in the next step.
 2. Make an export of **all the baseline objects** in the command line using the following syntax:
-```finsql.exe Command=ExportToNewSyntax, File=<filename.txt>, Database="<databasename>", ServerName=<servername> ,Filter=Type=table;ID=<tableID>``` The following example exports the table **225** from the Demo Database NAV 11-0 database:  
-  ```finsql.exe Command=ExportToNewSyntax, File=exportedBaselineObjects.txt, Database="Demo Database NAV (11-0)", ServerName=.\NAVDEMO ,Filter=Type=table;ID=225```
+```finsql.exe Command=ExportToNewSyntax, File=<filename.txt>, Database="<databasename>", ServerName=<servername> ,Filter=Type=table;ID=<tableID>``` The following example exports the table **225** from the Demo Database NAV (13-0) database:  
+  ```finsql.exe Command=ExportToNewSyntax, File=exportedBaselineObjects.txt, Database="Demo Database NAV (13-0)", ServerName=.\NAVDEMO ,Filter=Type=table;ID=225```
 3. Import your solution using the import option in C/SIDE and compile the database.  
 It is **very** important that you compile the database to get the right result in the next step.
 4. Export all **new and/or modified** objects using the following syntax:
-```finsql.exe Command=ExportToNewSyntax, File=<filename.txt>, Database="<databasename>", ServerName=<servername> ,Filter=Type=table;ID=<tableID>``` The following example exports the table **231** from the Demo Database NAV 11-0 database:  
-  ```finsql.exe Command=ExportToNewSyntax, File=exportedNewModifiedObjects.txt, Database="Demo Database NAV (11-0)", ServerName=.\NAVDEMO ,Filter=Type=table;ID=231```
+```finsql.exe Command=ExportToNewSyntax, File=<filename.txt>, Database="<databasename>", ServerName=<servername> ,Filter=Type=table;ID=<tableID>``` The following example exports the table **231** from the Demo Database NAV (13-0) database:  
+  ```finsql.exe Command=ExportToNewSyntax, File=exportedNewModifiedObjects.txt, Database="Demo Database NAV (13-0)", ServerName=.\NAVDEMO ,Filter=Type=table;ID=231```
 5. Create .delta files using the Compare-NAVApplicationObject powershell script. For more information, see [Generating DELTA Files](devenv-generating-delta-files.md).
-6. Go to the *\Program Files(x86)\DynamicsNAV\110\RoleTailored Client* folder and locate the **txt2al.exe** converter tool. 
-7. Run the tool from the command line using the following syntax:  
+6. Run the Set-ObjectPropertiesFromMenuSuite cmdlet which will convert MenuSuite information on pages and reports in the generated AL objects to enable them for search. For more information, see [Making Pages and Reports Searchable in the Web client](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrade-pages-report-for-search)
+7. Go to the *\Program Files(x86)\Microsoft Dynamics 365 Business Central\130\RoleTailored Client* folder and locate the **txt2al.exe** converter tool. 
+8. Run the tool from the command line using the following syntax:  
 ```txt2al --source --target --rename --type --extensionStartId```
 
 |Parameter   |Description|
@@ -49,7 +50,7 @@ It is **very** important that you compile the database to get the right result i
 |--extensionStartId |The starting numeric ID of the extension objects (Default: 70000000). It will be incremented by 1 for each extension object.|
 |--help |Show help screen.|
 
-> [!NOTE]   
+> [!NOTE]  
 > It is recommended to only use the conversion tool for export. Importing objects that have been exported can damage your application.
 
 > [!TIP]  

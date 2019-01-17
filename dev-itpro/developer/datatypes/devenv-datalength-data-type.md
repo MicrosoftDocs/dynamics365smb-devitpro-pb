@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 5aeb3c81-dca9-4df6-98dc-322153eca056
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # DataLength Data Type
 Sets the maximum length of data stored in this field.  

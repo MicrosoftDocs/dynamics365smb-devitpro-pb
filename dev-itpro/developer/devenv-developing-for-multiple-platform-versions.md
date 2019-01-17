@@ -15,9 +15,6 @@ author: SusanneWindfeldPedersen
 
 # Developing for Multiple Platform Versions   
 
-> [!IMPORTANT]  
-> [!INCLUDE[vnext_preview](includes/vnext_preview.md)]
-
 The AL language extension is compatible with multiple platform versions. You can install the AL Language extension from the Visual Studio Code marketplace and use it to develop solutions for [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)].
 
 ## Defining the platform version

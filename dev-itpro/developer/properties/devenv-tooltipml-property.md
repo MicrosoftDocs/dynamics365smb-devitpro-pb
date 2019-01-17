@@ -1,18 +1,14 @@
 ---
 title: "ToolTipML Property"
 ms.custom: na
-ms.date: 10/01/2018
-ms.reviewer: na
+ms.date: 01/16/2019
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: cd79bfbf-483c-43b0-b884-6230aac3ec5c
-caps.latest.revision: 17
 author: SusanneWindfeldPedersen
 ---
-
- 
 
 # ToolTipML Property
 Sets the text used for the tooltip of an action, a field, a factbox, or an activity button.  
@@ -61,4 +57,5 @@ DAN=Dette felt indeholder kundens navn;ENG=This field contains the customer name
 ```  
 
 ## See Also  
- [ToolTip Property](devenv-tooltip-property.md)
+ [ToolTip Property](devenv-tooltip-property.md)  
+[Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  

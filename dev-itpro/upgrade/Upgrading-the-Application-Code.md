@@ -153,7 +153,7 @@ After you have completed the merge, you import the new merged application object
     For example, give the database the name *My Upgraded App*. For more information, see [Creating and Altering Databases](../cside/cside-create-databases.md).
 
     >[!IMPORTANT]  
-    > You must set the collation of the new database to match the collation of the old application database. To see the collation of the old database, open the database in [[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], then choose **File** > **Database** > **Alter** > **Collation**. 
+    > You must set the collation of the new database to match the collation of the old application database. To see the collation of the old database, open the database in the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], then choose **File** > **Database** > **Alter** > **Collation**. 
 
 2.  Make sure the database includes a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.
 
@@ -204,9 +204,20 @@ The application and tenant databases are tagged with `Family` and `Version`. To 
 
 To get the `Family` and `Version`, use the [Get-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/get-navapplication) cmdlet. To set the `Family` and `Version`, use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet.
 
-You now have a new database with a fully upgraded application. For a multitenant deployment, you can start the data upgrade. For this you will use the new server instance that connects to the upgraded application database. See [Upgrading the Data](Upgrading-the-Data.md).    
+You now have a new database with a fully upgraded application. For a multitenant deployment, you can start the data upgrade. For this you will use the new server instance that connects to the upgraded application database. See [Upgrading the Data](Upgrading-the-Data.md).
 
-## Task 7: Export All Objects (single-tenant mode only) 
+## Task 7: Configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
+
+The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects. This task is not required at this point, and can be done after the data upgrade as well.
+
+For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
+
+## Task 8. Transition the custom code from old codeunit 1 to use the new implementation
+
+Because codeunit 1 has been deprecated in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you must move any custom logic that was included in the old codeunit 1 into the management codeunits and methods described in the article [Transitioning from Codeunit 1](transition-from-codeunit1.md).
+
+## Task 9: Export All Objects (single-tenant mode only)
+
 With a single-tenant deployment, export all objects of the new database to a .fob type file, such as **objects.fob** file. You will use this .fob file as part of the data upgrade process. The export must include customized objects, upgraded reget-helpports, and all other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects.
 
 As with exporting objects in Task 1, you can use either the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], finsql.exe, or [!INCLUDE[devshell](../developer/includes/devshell.md)].

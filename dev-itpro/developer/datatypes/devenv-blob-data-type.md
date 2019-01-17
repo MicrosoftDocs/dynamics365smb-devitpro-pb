@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 09f7efd9-541f-4eae-b6e3-70576bfa0ca1
 caps.latest.revision: 15
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # BLOB Data Type
 A binary large object (BLOB) is a complex data type. Variables of this data type differ from normal numeric and string variables in that BLOBs have a variable length.  

@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/24/2018
+ms.date: 01/15/2019
 ms.author: edupont
 ---
 
@@ -21,14 +21,10 @@ These and other scenarios are also supported in [!INCLUDE[prodshort](../develope
 The user assistance model is based on the following principles:
 
 - Get started
-
-    Default values and setup wizards makes it easy to start using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with your own data, and in-product videos give new users a quick introduction to how the product works.
 - Get unblocked
-
-    Embedded user assistance implemented as tooltips answers most immediate questions about what fields and actions do.
 - Learn more
 
-    The Help menu and the tooltips provide context-sensitive links to Help articles with more information.
+For more information, see [User Assistance Model](../user-assistance.md).  
 
 Apps and other extensions are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality.  
 
@@ -40,16 +36,20 @@ The table associates page IDs with target articles, but the URL to where to find
 
 At an app level, the properties in the app.json file can be set to take over the links to Help for specific languages as shown in the following example:
 
-```
-  "helpBaseUrl": "https://docs.microsoft.com/{0}/dynamics365/accountants",
+```json
+  "helpBaseUrl": "https://mysite.com/{0}/mysolution",
   "supportedLocales": [
-    "en-GB", "en-US"
+    "en-GB", "en-IE
   ],
 ```
+
+In this example, the *helpBaseUrl* and *supportedLocales* properties specify that the links to the Help must go to the *mysite.com* site when the user is using the product in either English (Ireland) or English (United Kingdom). If the user switches the application language to English (US), then the Help calls will go to the default location on the *docs.microsoft.com* site. In contrast, the *help* property specifies the link that describes the app or solution itself and is used in AppSource.
 
 Alternatively, you can specify help links at the object level. For more information, see [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md).  
 
 ### Tooltips
+
+In combination with descriptive captions and instructional text, tooltips are our current implementation of *embedded user assistance*, which is an important principle in today’s world of software design. The tooltips are there to help users unblock themselves by providing an answer to the most likely questions the users might have, such as “What data can I input here?” or “What is the data used for?”.  
 
 The base application has set the Tooltip property for all controls on (almost) all page objects. Most system actions also include tooltips so that users get a consistent experience. Your extensions are expected to also include tooltips for the same reason. For more information, see [ToolTip Property](../developer/properties/devenv-tooltip-property.md).  
 
@@ -66,7 +66,7 @@ page 50100 MyPage
 {
     PageType = Card;
     SourceTable = MyTable;
-    HelpLink = 'https://docs.microsoft.com/{0}/dynamics365/get-started/training/index';
+    HelpLink = 'https://mysite.com/{0}/mysolution/my-feature';
 
 
     layout
@@ -108,7 +108,7 @@ If you want to use a website that is not based on Help Server, then you must spe
 
 For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
-```
+```json
                            "//BaseHelpUrl":  "The location of Help for this application.",
                            "BaseHelpUrl": "https://docs.microsoft.com/{0}/dynamics365/business-central/",
                            "//BaseHelpSearchUrl":  "The URL to use if Help is included in the Search functionality in Business Central.",
@@ -133,7 +133,7 @@ If you want to use Help Server, then you must specify the server and port in the
 
 For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
-```
+```json
                            "//HelpServer": [
                                                    "Name of the Dynamics NAV Help Server to connect to."
                                             ],
@@ -155,9 +155,15 @@ In both examples, https://myserver.com represents the URL to the Help Server ins
 
 ## See Also
 
+[User Assistance Model](../user-assistance.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server)  
 [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server)  
 [Upgrade Dynamics NAV Help](../upgrade/migrate-help.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [System Requirements](system-requirement-business-central.md)  
+[Resources for Help and Support](../help-and-support.md)  
+[Blog post: Extending and customizing the Help](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/11/extending-and-customizing-help)  
+[Blog post: Collaborate on content for Business Central](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/15/collaborate-on-content-for-business-central)  
+[Docs Contributor Guide](/contribute/)  
+[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  

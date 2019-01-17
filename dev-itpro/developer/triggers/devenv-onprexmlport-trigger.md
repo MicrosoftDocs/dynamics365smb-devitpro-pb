@@ -14,10 +14,10 @@ manager: edupont
 
 
 # OnPreXMLport Trigger
-Executed after the table views and filters are set and before the XMLport is run.  
+Runs after the table views and filters are set and before the XMLport is run.  
   
 ## Applies To  
- XMLports  
+- XMLports  
   
 ## See Also  
  [Triggers](devenv-triggers.md)  

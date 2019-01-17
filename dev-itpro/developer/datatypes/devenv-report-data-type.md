@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 3db4a1d0-3356-426d-ab49-c8e65a4b7186
 caps.latest.revision: 9
 author: SusanneWindfeldPedersen
+redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
 # Report Data Type
 This complex data type stores reports.  

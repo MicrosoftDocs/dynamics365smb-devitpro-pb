@@ -1,7 +1,7 @@
 ---
 title: "ReplicateData Property"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 11/29/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,10 +13,10 @@ author: SusanneWindfeldPedersen
 ---
 
 # ReplicateData Property
-Indicates that the table data is replicated to the cloud service. The default value is `true` for all tables.
+Indicates that the table data is replicated to the cloud service. The default value is `true` for all tables. For more information, see [Frequently Asked Questions about Connecting to the Intelligent Cloud](../../administration/FAQ-Intelligent-Cloud.md).
   
 ## Applies To  
- - Table fields
+- Table fields
  
 ## See Also  
 [Table Properties](devenv-table-properties.md)  
