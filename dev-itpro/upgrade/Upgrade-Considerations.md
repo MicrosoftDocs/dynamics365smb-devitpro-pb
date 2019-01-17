@@ -18,7 +18,7 @@ Depending on which version you are upgrading from, and the degree to which your 
 
 ## Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online
 
-You can upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online from supported versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+You can upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online from supported versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 The process consists of two parts:
 
@@ -33,9 +33,13 @@ For information, see [Transitioning from Codeunit 1 to System Codeunits](transit
 
 ## V1 Extensions have been discontinued
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], extensions V1 are no longer supported for on-premise installations. As a result, any custom extensions V1 must be converted to extensions V2 in the old environment before before upgrading to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], extensions V1 are no longer supported for on-premise installations. As a result, any custom extensions V1 must be converted to extensions V2 in the old environment before upgrading to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 For information about how to convert to extensions V2, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
+
+## MenuSuite not used for page and report search 
+
+The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects. As part of the application code upgrade process, you change these properties on existing pages and reports used by the MenuSuite to ensure that they are still searchable from the Web client. For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
 
 ## <a name="CRM"></a>[!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration
 

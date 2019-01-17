@@ -29,7 +29,7 @@ The following table describes the property values.
 |---------|---------------|  
 |**No**|Not obsolete. This is the normal/default setting.|  
 |**Pending**|Will be obsolete in a future release. This setting has no effect on the current use of the table, field, or key in code. |  
-|**Removed**|Is obsolete. The element is not deleted from the database; however, references to the the element in code are only allowed in upgrade codeunits. References from other objects will result in a runtime error.|   
+|**Removed**|Is obsolete. The element is not deleted from the database; however, references to the element in code are only allowed in upgrade codeunits. References from other objects will result in a runtime error.|   
 
 ## Remarks
   
