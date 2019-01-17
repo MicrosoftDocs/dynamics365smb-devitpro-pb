@@ -109,7 +109,7 @@ Using this method provides better protection against leaving the database in an 
 -   The advantage of setting the `-CommitPerTable` parameter is that it will decrease the time that is required to complete the synchronization process and consume less computer resources, which can be useful for large databases when performance is a concern. However, when you set this parameter, committed changes are not rolled back if the synchronization process is terminated before it is completed. This can result in a partial synchronization of the database, which might leave the database inoperable. We recommend that you make a backup of the database before you run the Sync-NAVTenant cmdlet. Also, tables are not always locked during synchronization. Therefore, you should prohibit users from connecting to the database during synchronization.
 
 ### Example
-This example mounts the database **NAVTenantDatabase** as a tenant database on a server instance. The database is assigned the ID **MyTenantDatabse**. The Sync-NAVTenantDatabase cmdlet synchronizes the tenant database schema with the application database that is mounted on the server instance. 
+This example mounts the database **NAVTenantDatabase** as a tenant database on a server instance. The database is assigned the ID **MyTenantDatabase**. The Sync-NAVTenantDatabase cmdlet synchronizes the tenant database schema with the application database that is mounted on the server instance. 
 
 ```
 Mount-NAVTenantDatabase -ServerInstance 'DynamicsNAV' -Id 'MyTenantDatabase1' -DatabaseName 'NAVTenantDatabase' -DatabaseServer localhost\NAVDEMO
