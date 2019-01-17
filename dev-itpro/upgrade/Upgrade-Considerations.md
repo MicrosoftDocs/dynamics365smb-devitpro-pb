@@ -18,7 +18,7 @@ Depending on which version you are upgrading from, and the degree to which your 
 
 ## Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online
 
-You can upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online from supported versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+You can upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online from supported versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 The process consists of two parts:
 
