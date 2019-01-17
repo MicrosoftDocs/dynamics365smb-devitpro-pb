@@ -80,7 +80,7 @@ To complete the tasks in this article, you will need the following:
 
 3.  Clean up the system tables in the application and tenant databases.
 
-    You must clean up certain system tables in these databases to ensure that that do not contain any records that are related to the previous deployment environment or activities.
+    You must clean up certain system tables in these databases to ensure they do not contain any records that are related to the previous deployment environment or activities.
 
     The following table lists the system tables in the application and tenant databases from which you must clear data.
 

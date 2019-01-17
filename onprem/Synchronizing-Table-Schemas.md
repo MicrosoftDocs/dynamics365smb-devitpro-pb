@@ -40,7 +40,7 @@ When you design a table in [!INCLUDE[navnow](includes/navnow_md.md)], you define
 -   Delete \(This also pertains when you select multiple tables for deleting from Object Designer\).  
 
 > [!IMPORTANT]  
->  Before you can perform table schema synchronization from the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], you must make sure that that you have a working connection to a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. You can see the currently connected  [!INCLUDE[nav_server](includes/nav_server_md.md)] instance and change as required in the **Database Information** window. For more information, see [Database Information](uiref/-$-S_2349-Database-Information-$-.md) or [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md).  
+>  Before you can perform table schema synchronization from the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], you must make sure that you have a working connection to a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. You can see the currently connected  [!INCLUDE[nav_server](includes/nav_server_md.md)] instance and change as required in the **Database Information** window. For more information, see [Database Information](uiref/-$-S_2349-Database-Information-$-.md) or [How to: Change the Microsoft Dynamics NAV Server Instance](How-to--Change-the-Microsoft-Dynamics-NAV-Server-Instance.md).  
 
  **Schema Synchronization Options**  
 
