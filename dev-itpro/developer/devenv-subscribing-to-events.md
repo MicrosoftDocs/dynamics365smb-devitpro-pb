@@ -75,7 +75,7 @@ codeunit 70000002 MySubscriber
 ```
 
 ## Example 2
-This example achieves the same as example 1, except it subscribes to the the page trigger event `OnBeforeValidateEvent` on the `Address` field instead. By using the page trigger, you avoid creating an event publisher and adding code to raise the event because this is done automatically by the system.
+This example achieves the same as example 1, except it subscribes to the page trigger event `OnBeforeValidateEvent` on the `Address` field instead. By using the page trigger, you avoid creating an event publisher and adding code to raise the event because this is done automatically by the system.
 
 ```
 codeunit 70000002 MySubscriber

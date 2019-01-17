@@ -45,7 +45,7 @@ This section outlines the basic steps for getting a tenant database and tenant u
 
     Use the Mount-NAVApplication database to connect the server instance to Dynamics NAV application database. The application database contains tables that make up the application, as defined by its schema. The application database is assigned a version number.
 
-2. Mount the tenant database to the the server instance.
+2. Mount the tenant database to the server instance.
 
     Use the Mount-NavTenantDatabase cmdlet to mount a tenant database on the same server instance as the application database.
 
