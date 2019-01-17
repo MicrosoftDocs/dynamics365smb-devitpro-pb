@@ -8,9 +8,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: b741a2d9-1127-48b0-8fe7-50aa09655b34
-caps.latest.revision: 6
-manager: edupont
+author: jswymer
+
 ---
 # Session Timeout Settings and Configuration
 When you start a client, like the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], a connection is established with the [!INCLUDE[server](../developer/includes/server.md)] instance and a corresponding session is added on [!INCLUDE[server](../developer/includes/server.md)].  
