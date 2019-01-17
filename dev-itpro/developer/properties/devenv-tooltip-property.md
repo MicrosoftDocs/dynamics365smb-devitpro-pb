@@ -1,18 +1,14 @@
 ---
 title: "ToolTip Property"
 ms.custom: na
-ms.date: 10/24/2018
-ms.reviewer: na
+ms.date: 01/16/2019
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 0745a889-d9ba-4023-a4a8-dba74097ddd0
-caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
-
- 
 
 # ToolTip Property
 Sets whether tooltips are provided for the given control, such as a field or action. The tooltip value is taken from the [ToolTipML Property](devenv-tooltipml-property.md) if this property is set.
@@ -52,6 +48,8 @@ ToolTip = 'Shows the name of the entity based on the names in your list of conta
 
 ## See Also  
 
+[User Assistance Model](../../user-assistance.md)  
+[Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  
 [Configuring the Help Experience](../../deployment/configure-help.md)  
- [ToolTipML Property](devenv-tooltipml-property.md)  
+[ToolTipML Property](devenv-tooltipml-property.md)  
  <!-- [Multilanguage Development](Multilanguage-Development.md)-->

@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/09/2019
+ms.date: 01/15/2019
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -51,7 +51,7 @@ You can learn about current and coming capabilities through a number of differen
 > |Name  |Location  |Description|
 > |---------|---------|---------|
 > |Release notes |[https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes](https://dynamics.microsoft.com/en-us/business-applications/release/#release-notes) |Get an overview of upcoming and recently released capabilities in Business Central.|
-> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central) |Use this library to learn about business functionality. |
+> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central) |Use this library to learn about business functionality. |
 > |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
 > |The "Ready to Go" learning catalog|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-learning-catalog](developer/readiness/readiness-learning-catalog.md)|Get an overview of role-specific training material from Microsoft.|
 
@@ -82,6 +82,8 @@ On the [Business Central Community site](https://community.dynamics.com/business
 ## Trials
 
 Giving prospects access to a preconfigured trial of [!INCLUDE[prodshort](includes/prodshort.md)] is an elegant way to introduce them to [!INCLUDE[prodshort](includes/prodshort.md)]. You can use the standard trial provided by Microsoft, or you can prepare your own including relevant extensions.  
+
+For more information, see [Take prospects and customers online](deployment/deployment.md#take-prospects-and-customers-online).  
 
 <!-- TODO: Describe how to customize a trial -->
 
