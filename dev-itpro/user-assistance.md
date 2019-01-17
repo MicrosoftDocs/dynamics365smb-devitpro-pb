@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 01/16/2019
+ms.date: 01/17/2019
 ms.author: edupont
 ---
 
@@ -52,7 +52,11 @@ The Microsoft user assistance model requires a tooltip for all controls of type 
 - Ensure relevance  
     For example, for the Post action, do not write *Post the document.* Write, for example, *Update ledgers with the amounts and quantities on the document or journal lines.*  
 - Do not exceed 200 characters including spaces  
-    Try to hit a length between 100 and 140.
+    Try to hit a length between 100 and 140. This makes the tooltip easier to scan so the user can get unblocked. However, the UI will render longer tooltip text as well if you want to provide more detailed user assistance.  
+- Describe complex options in tooltips for option fields
+    Use a colon to call out the option and its description.
+- Do not make line breaks in the tooltip text
+    The UI cannot render formatting or line breaks in tooltips.
 
 The following table illustrates these guidelines:
 
@@ -60,6 +64,7 @@ The following table illustrates these guidelines:
 |---------|---------|
 |**Password** field |Specifies your company’s password to the service that converts bank data. The password that you enter in this field must be the same as on the service provider’s sign-on page. </br>(175 characters including spaces) |
 |**Entries** action |View the history of transactions that have been posted for the customer.</br> (72 characters including spaces)|
+|**Account Type** field|Specifies the purpose of the account. Total: Used to total a series of balances on accounts from many different account groupings. To use Total, leave this field blank. Begin-Total: A marker for the beginning of a series of accounts to be totaled that ends with an End-Total account. End-Total: A total of a series of accounts that starts with the preceding Begin-Total account. The total is defined in the Totaling field. </br>(522 characters including spaces)|
 
 ## Help users learn more
 
@@ -86,6 +91,14 @@ We welcome your contributions, both as pull requests with suggestions or correct
 
 Microsoft also accepts contributions and feedback about the developer and ITpro content through the [dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb). This repo does not have translation repos associated with it, but other than that, the same rules apply as for the *dynamics365smb-docs* repo.  
 
+### Working in MarkDown
+
+If you fork one of our repos, you will be authoring in something called MarkDown. We recommend that you learn the basics by referring to the Docs contributor guide. For more information, see [How to use Markdown for writing Docs](https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown).  
+
+The team that built the Docs.microsoft.com site have also developed an extension for Visual Studio Code that helps with MarkDown validation, for example. For more information, see [Docs Authoring Pack for VS Code](https://docs.microsoft.com/en-us/contribute/how-to-write-docs-auth-pack). However, you can also use other text editors.  
+
+For other tips and tricks, see [Blog post: Collaborate on content for Business Central](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/15/collaborate-on-content-for-business-central).  
+
 ## Translate the Help
 
 If you want to deliver a [localization app](developer/readiness/readiness-develop-localization.md), or if you want to deliver your functionality in more than one country, you will want to translate the Help. To help you do that, we suggest that you take a look at the [Microsoft Dynamics 365 Translation Service](/dynamics365/unified-operations/dev-itpro/lifecycle-services/translation-service-overview), which is available as preview in the Microsoft Dynamics Life Cycle Services. For more information, see [Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua).  
@@ -98,8 +111,11 @@ The user assistance in the shape of tooltips and other user interface text is tr
 [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [ToolTip Property](developer/properties/devenv-tooltip-property.md)  
 [InstructionalText Property](developer/properties/devenv-instructionaltext-property.md)  
-[Docs Contributor Guide](/contribute/)  
-[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)  
 [Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua)  
 [Resources for Help and Support](help-and-support.md)  
+[Blog post: Extending and customizing the Help](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/11/extending-and-customizing-help)  
+[Blog post: Collaborate on content for Business Central](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/15/collaborate-on-content-for-business-central)  
+[Docs Contributor Guide](/contribute/)  
+[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
+[Style Guide for Microsoft Dynamics NAV (requires login)](https://worldready.cloudapp.net/Styleguide/Read?id=2748&topicid=38066)  
