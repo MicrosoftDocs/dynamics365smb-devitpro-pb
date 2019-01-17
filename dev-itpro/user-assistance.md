@@ -53,9 +53,9 @@ The Microsoft user assistance model requires a tooltip for all controls of type 
     For example, for the Post action, do not write *Post the document.* Write, for example, *Update ledgers with the amounts and quantities on the document or journal lines.*  
 - Do not exceed 200 characters including spaces  
     Try to hit a length between 100 and 140. This makes the tooltip easier to scan so the user can get unblocked. However, the UI will render longer tooltip text as well if you want to provide more detailed user assistance.  
-- Describe complex options in tooltips for option fields
+- Describe complex options in tooltips for option fields  
     Use a colon to call out the option and its description.
-- Do not make line breaks in the tooltip text
+- Do not make line breaks in the tooltip text  
     The UI cannot render formatting or line breaks in tooltips.
 
 The following table illustrates these guidelines:
