@@ -64,11 +64,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
         For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).
 5.   \(Optional\) Make a copy of the configuration file (web.config or navsettings.json) for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances in the old deployment. 
 
-<!--
-6. Prepare for transitioning from codeunit 1.
-
-    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).-->
-6.  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has need installed. 
+6.  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has been installed. 
 
     As a minimum, you must install the following components:
     - Server
@@ -379,7 +375,7 @@ In addition, other extensions used in the old deployment that you still want to 
 
 4. Upgrade the Microsoft extensions that were published in the old deployment to new versions.
 
-    The new versions are found in the the `\Extensions` folder of the installation media. To upgrade to the new extension versions, follow these steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for each extension:
+    The new versions are found in the `\Extensions` folder of the installation media. To upgrade to the new extension versions, follow these steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for each extension:
 
     1. Publish the new extension version by running the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
 

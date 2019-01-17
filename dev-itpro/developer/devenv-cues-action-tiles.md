@@ -213,7 +213,7 @@ You can use the [Image property](properties/devenv-image-property.md) on an `act
 
 -   A value that has the format `Tile[color]` will set the Action tile to use the circle icon and a background that is specified by `[color]`. For example, `TileBlue` will display a circle icon in a blue background.
 
--   A value that has the format `Tile[picture]` will set the Action tile to use an icon that that is specified by `[picture]` and a neutral background color. For example, `TileCamera` will display a camera icon on the neutral background.  
+-   A value that has the format `Tile[picture]` will set the Action tile to use an icon that is specified by `[picture]` and a neutral background color. For example, `TileCamera` will display a camera icon on the neutral background.  
 
 > [!NOTE]
 > If you use a value that is not valid or recognized, the Action tile will default to display the circle icon on the neutral background. 
