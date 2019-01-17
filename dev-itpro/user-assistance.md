@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 01/16/2019
+ms.date: 01/17/2019
 ms.author: edupont
 ---
 
@@ -52,7 +52,11 @@ The Microsoft user assistance model requires a tooltip for all controls of type 
 - Ensure relevance  
     For example, for the Post action, do not write *Post the document.* Write, for example, *Update ledgers with the amounts and quantities on the document or journal lines.*  
 - Do not exceed 200 characters including spaces  
-    Try to hit a length between 100 and 140.
+    Try to hit a length between 100 and 140. This makes the tooltip easier to scan so the user can get unblocked. However, the UI will render longer tooltip text as well if you want to provide more detailed user assistance.  
+- Describe complex options in tooltips for option fields
+    Use a colon to call out the option and its description.
+- Do not make line breaks in the tooltip text
+    The UI cannot render formatting or line breaks in tooltips.
 
 The following table illustrates these guidelines:
 
@@ -60,6 +64,7 @@ The following table illustrates these guidelines:
 |---------|---------|
 |**Password** field |Specifies your company’s password to the service that converts bank data. The password that you enter in this field must be the same as on the service provider’s sign-on page. </br>(175 characters including spaces) |
 |**Entries** action |View the history of transactions that have been posted for the customer.</br> (72 characters including spaces)|
+|**Account Type** field|Specifies the purpose of the account. Total: Used to total a series of balances on accounts from many different account groupings. To use Total, leave this field blank. Begin-Total: A marker for the beginning of a series of accounts to be totaled that ends with an End-Total account. End-Total: A total of a series of accounts that starts with the preceding Begin-Total account. The total is defined in the Totaling field. </br>(522 characters including spaces)|
 
 ## Help users learn more
 
@@ -113,4 +118,4 @@ The user assistance in the shape of tooltips and other user interface text is tr
 [Blog post: Collaborate on content for Business Central](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/15/collaborate-on-content-for-business-central)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
-
+[Style Guide for Microsoft Dynamics NAV (requires login)](https://worldready.cloudapp.net/Styleguide/Read?id=2748&topicid=38066)  
