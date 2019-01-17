@@ -379,7 +379,7 @@ In addition, other extensions used in the old deployment that you still want to 
 
 4. Upgrade the Microsoft extensions that were published in the old deployment to new versions.
 
-    The new versions are found in the the `\Extensions` folder of the installation media. To upgrade to the new extension versions, follow these steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for each extension:
+    The new versions are found in the `\Extensions` folder of the installation media. To upgrade to the new extension versions, follow these steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for each extension:
 
     1. Publish the new extension version by running the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
 
