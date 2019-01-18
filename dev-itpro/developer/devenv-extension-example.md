@@ -248,7 +248,7 @@ The **Last Modified Date** field requires constant changes to remain accurate. T
         SetLastModifiedDate();
     end;
 
-    // On the current record, the the value of the "Last Modified Date" field to the current 
+    // On the current record, the value of the "Last Modified Date" field to the current 
     // date.
     local procedure SetLastModifiedDate();
     begin

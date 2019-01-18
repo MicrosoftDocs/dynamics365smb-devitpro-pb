@@ -64,7 +64,10 @@ The name to give the downloaded file. This is the default file name that is show
 
  Use [DOWNLOAD Method \(File\)](../../methods/devenv-download-method-file.md) and [DOWNLOADFROMSTREAM Method \(FILE\)](../../methods/devenv-downloadfromstream-method-file.md) to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance to a client.  
 
- We recommend that you use the methods in codeunit 419, File Management, to upload and download files.  
+ We recommend that you use the methods in codeunit **419 File Management** to upload and download files.
+
+
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]   
 
 ## Example  
  This example requires that you create the following variables.  
