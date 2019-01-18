@@ -26,6 +26,10 @@ When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
+> [!IMPORTANT]  
+> System and virtual tables cannot be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object Ranges](devenv-object-ranges.md).
+
+
 ## Snippet support
 Typing the shortcut `ttableext` will create the basic layout for a table extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
