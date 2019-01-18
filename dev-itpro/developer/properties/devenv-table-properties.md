@@ -16,9 +16,9 @@ ms.author: solsen
 [!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
 
 # Table and Table Extension Properties
-The following topic lists properties that apply to the [Table Object](../devenv-table-object.md) and, in some cases, to the [Table Extension Object](../devenv-table-ext-object.md).  
+The following topic lists properties that apply to the [Table Object](../devenv-table-object.md) and, in some cases, to the [Table Extension Object](../devenv-table-ext-object.md) as specified below.
 
-|Property Name|Table Extension Object|Applies to|
+|Property Name|Available for Table Extension Object|Applies to|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)||<ul><li>BLOB field</li><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>TableFilter field</li><li>Text field</li><li>Time field</li></ul>|
 |[AutoFormatExpression Property](devenv-autoformatexpression-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|

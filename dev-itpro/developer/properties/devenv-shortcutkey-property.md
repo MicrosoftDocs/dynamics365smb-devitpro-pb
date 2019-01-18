@@ -24,9 +24,8 @@ This property only applies to the [!INCLUDE[nav_windows_md](../includes/nav_wind
 
 ## Remarks  
 Pressing the key that you designate with this property provides the same result as selecting the action.  
-  
-> [!NOTE]  
->  Some shortcut keys have default assignments. Do not reuse shortcut keys that are already assigned.  
+
+Some shortcut keys have default assignments. Do not reuse shortcut keys that are already assigned. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics NAV Windows Client](https://docs.microsoft.com/en-us/dynamics-nav-app/keyboard-shortcuts-windows-client). 
   
 ## See Also  
  [Properties](devenv-properties.md)
