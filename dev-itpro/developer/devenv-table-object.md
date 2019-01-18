@@ -22,7 +22,7 @@ The structure of a table has four sections. The first block contains metadata fo
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > System and virtual tables cannot be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object Ranges](devenv-object-ranges.md).
 
 ## Snippet support
