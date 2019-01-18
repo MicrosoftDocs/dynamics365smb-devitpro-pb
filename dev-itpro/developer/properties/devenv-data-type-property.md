@@ -15,10 +15,11 @@ author: SusanneWindfeldPedersen
  
 
 # Data Type Property
-Sets the data type of a table field.  
+Sets the data type of a table field or the variables it applies to.  
   
 ## Applies To  
- Table Fields  
+Table Fields  
+
   
 ## See Also  
  [Properties](devenv-properties.md)
