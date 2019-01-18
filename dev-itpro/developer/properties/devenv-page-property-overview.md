@@ -21,9 +21,9 @@ caps.latest.revision: 18
 This topic lists properties that apply to the [Page Object](../devenv-page-object.md) and [Page Extension Object](../devenv-page-ext-object.md). 
 
 ## Page object properties
-The following properties apply to the page object.
+The following properties all apply to the page object, only some of these properties can be set for a page extension object as specified below.
 
-|Property Name|Page Extension Object|Applies to|
+|Property Name|Available for Page Extension Object|Applies to|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)||<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
 |[ApplicationArea Property](devenv-applicationarea-property.md)|X|<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|

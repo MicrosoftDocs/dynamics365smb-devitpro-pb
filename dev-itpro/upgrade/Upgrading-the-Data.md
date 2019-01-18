@@ -64,11 +64,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
         For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).
 5.   \(Optional\) Make a copy of the configuration file (web.config or navsettings.json) for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances in the old deployment. 
 
-<!--
-6. Prepare for transitioning from codeunit 1.
-
-    For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).-->
-6.  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has need installed. 
+6.  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has been installed. 
 
     As a minimum, you must install the following components:
     - Server
