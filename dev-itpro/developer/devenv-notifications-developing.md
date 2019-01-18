@@ -50,7 +50,7 @@ The **SEND** method call should be the last statement in the notification code, 
 
 ## Defining the notification scope
 
-The scope determines where the notification appears in the client. There are two different scopes: *LocalScope* and *GlobalScope*.
+The scope determines where the notification is broadcast in the client. There are two different scopes: *LocalScope* and *GlobalScope*.
 
 *   A *LocalScope* notification appears in context of the user's current task, that is, on the page the user is currently working on. *LocalScope* is the default.
 
