@@ -2,7 +2,7 @@
 title: "Enabling Sales Tables for Extension Development"
 description: "This topic explains how to enable Dynamics 365 for Sales tables for the extension development process."
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 01/21/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,13 +59,13 @@ table 50100 SalesIntegration
         {
             ExternalName = 'ActualSale';
             ExternalAccess = Full;
-            ExternalType = 'String';                        
+            ExternalType = 'String';
         }
 
         field(2; SalesCategories; Option)
         {
             ExternalName='SalesCategory';
-            ExternalAccess = Read;                        
+            ExternalAccess = Read;
             ExternalType = 'Picklist';
             OptionMembers = Manufacturing, Marketing, Support;
             OptionOrdinalValues = -1, 1, 2;
