@@ -121,7 +121,7 @@ The Home menu is always displayed first so promoted actions provide quick access
   
  The logic runs in the transaction that the action triggered. This can cause the application code to result in users locking the whole table when they thought they were only modifying one record.  
   
- To avoid users accidentally locking tables, you can use the [SetSelectionFilter](methods/devenv-setselectionfilter-method.md) method before your code passes the record variable to the processing codeunit, for example. The following code example illustrates the code on the [OnAction](triggers/devenv-onaction-trigger.md) trigger on an action on a page.  
+ To avoid users accidentally locking tables, you can use the [SetSelectionFilter](methods-auto/page/page-setselectionfilter-method.md) method before your code passes the record variable to the processing codeunit, for example. The following code example illustrates the code on the [OnAction](triggers/devenv-onaction-trigger.md) trigger on an action on a page.  
   
 ```
 if confirm('Are you sure you want to call this codeunit?', true) then begin
