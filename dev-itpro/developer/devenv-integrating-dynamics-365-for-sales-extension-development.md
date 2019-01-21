@@ -22,6 +22,9 @@ Develop extensions and streamline the workflow by synchronizing the Sales data f
 For developing extensions to integrate with sales data, you simply enable the tables used in Dynamics 365 for Sales. The extension development process includes the following set of properties to enable field mapping.
 You can enable the field mapping by using the following properties. 
 
+> [!IMPORTANT]  
+> Extending tables from Dynamics 365 for Sales is currently not supported.
+
 ## Associated table and field properties
 
 The following properties are used for integrating with Microsoft Dynamics 365 for Sales:
