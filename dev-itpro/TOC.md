@@ -141,6 +141,9 @@
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
 ## [Isolated Storage](developer/devenv-isolated-storage.md)
 ## [Tables](developer/devenv-tables-overview.md)
+### [View Table Data](developer/devenv-view-table-data.md)
+### [Classifying Data](developer/devenv-classifying-data.md)
+### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ## [Pages](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
@@ -172,8 +175,6 @@
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ## [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
-## [Classifying Data](developer/devenv-classifying-data.md)
-## [View Table Data](developer/devenv-view-table-data.md)
 ## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
