@@ -21,13 +21,13 @@ In AL code, you create and manage tasks by using the AL methods that are availab
 
 |Method|Description|For more information, see|  
 |--------------|-----------------|-------------------------------|  
-|CREATETASK|Adds a task to run a codeunit at a specified date and time.|[CREATETASK Method](methods/devenv-CREATETASK-Method.md)|  
-|SETTASKREADY|Sets a task to the **Ready** state. A task cannot run until it is **Ready**.|[SETTASKREADY Method](methods/devenv-SETTASKREADY-Method.md)|  
-|TASKEXISTS|Checks whether a specific task exists.|[TASKEXISTS Method](methods/devenv-TASKEXISTS-Method.md)|  
-|CANCELTASK|Cancels a scheduled task.|[CANCELTASK Method](methods/devenv-CANCELTASK-Method.md)|  
+|CreateTask|Adds a task to run a codeunit at a specified date and time.|[CreateTask Method](methods-auto/taskscheduler/taskscheduler-createtask-method.md)|  
+|SetTaskReady|Sets a task to the **Ready** state. A task cannot run until it is **Ready**.|[SetTaskReady Method](methods-auto/taskscheduler/taskscheduler-settaskready-method.md)|  
+|TaskExists|Checks whether a specific task exists.|[TaskExists Method](methods-auto/taskscheduler/taskscheduler-taskexists-method.md)|  
+|CancelTask|Cancels a scheduled task.|[CancelTask Method](methods-auto/taskscheduler/taskscheduler-canceltask-method.md)|  
 
 ## How task scheduler works  
-To set up a task, you create a codeunit that contains the logic that you want to run at a scheduled time. Optionally, you can create a second codeunit that contains the logic to handle the task if an error occurs for any reason. This codeunit is referred to as a *failure codeunit*. Once you have the codeunits, you can add AL code to the application that calls the CREATETASK method to schedule a task to run the codeunits. The CREATETASK method can also specify the earliest date to run the task, and whether the task is in the ready state.  
+To set up a task, you create a codeunit that contains the logic that you want to run at a scheduled time. Optionally, you can create a second codeunit that contains the logic to handle the task if an error occurs for any reason. This codeunit is referred to as a *failure codeunit*. Once you have the codeunits, you can add AL code to the application that calls the CREATETASK method to schedule a task to run the codeunits. The [CreateTask](methods-auto/taskscheduler/taskscheduler-createtask-method.md) method can also specify the earliest date to run the task, and whether the task is in the ready state.  
 
 ### Task flow  
  Here is an overview of the process that a task goes through:  
@@ -66,11 +66,11 @@ When an error occurs, unless the task is interrupted by the failure codeunit, th
 3.  Fifteen minutes after the third failure and any subsequent failures up to a maximum of 10 times, after which the task is canceled.  
 
 ## About task sessions and permissions  
- The task runs in a background session, which means that there is no user interface. The behavior is similar to that of the STARTSESSION method, where any dialog boxes that would normally appear are suppressed. For more information about specific dialog boxes, see [STARTSESSION Method (Sessions)](methods/devenv-STARTSESSION-Method-Sessions.md).  
+ The task runs in a background session, which means that there is no user interface. The behavior is similar to that of the STARTSESSION method, where any dialog boxes that would normally appear are suppressed. For more information about specific dialog boxes, see [StartSession](methods-auto/session/session-startsession-method.md) method.  
 
  The session runs by using the same user/credentials that are used when calling AL code. The user must have appropriate permissions to the codeunit and any other objects that are associated with the operation of the codeunit.
 
 ## See Also
-[Task Scheduler Data Type](datatypes/devenv-taskscheduler-data-type.md)   
+[Task Scheduler Data Type](methods-auto/taskscheduler/taskscheduler-data-type.md)   
 [Developing Extensions](devenv-dev-overview.md)  
 [Getting Started with AL](devenv-get-started.md) 
