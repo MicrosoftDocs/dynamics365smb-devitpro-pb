@@ -1,6 +1,6 @@
 ---
 title: Add Dynamics NAV Database
-description: Add a new Dynamics NAV databse instance to SQL Server from a database backup file .bak by using the New-NAVDatabase cmdlet of the Administration Shell.
+description: Add a new Dynamics NAV database instance to SQL Server from a database backup file .bak by using the New-NAVDatabase cmdlet of the Administration Shell.
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na

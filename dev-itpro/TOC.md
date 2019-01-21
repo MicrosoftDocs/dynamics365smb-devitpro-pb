@@ -39,6 +39,7 @@
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### Database
+#### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating and Altering Databases](cside/cside-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
@@ -144,6 +145,7 @@
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
+### [API Page Type](developer/devenv-api-pagetype.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
 #### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)

@@ -20,7 +20,7 @@ author: jswymer
 Classifying data serves different purposes. It can make data easier and more efficient to locate and retrieve, and also help to add another layer of protection and security for handling private and sensitive data. It can supplement your process for making the application compliant with legislative and regulatory requirements for collecting, storing, and using personal information. 
 
 >[!IMPORTANT]
-> You should consider the data classification features offered in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] as the first layer of classification - done by developers ([!INCLUDE[d365fin_md](includes/d365fin_md.md)  and partners) on customizations, add-ons, and extensions. The second layer is to classify the sensitivity of the data itself. For more information, see [Classifying Data Sensitivity](devenv-classifying-data-sensitivity.md). It's also important to consider end-users, and how they handle data they provide and that is made available to them.
+> You should consider the data classification features offered in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] as the first layer of classification - done by developers ([!INCLUDE[d365fin_md](includes/d365fin_md.md)  and partners) on customizations, add-ons, and extensions. The second layer is to classify the sensitivity of the data itself. For more information, see [Classifying Data Sensitivity](devenv-classifying-data-sensitivity.md). It is also important to consider end-users, and how they handle data they provide and that is made available to them.
 
 ## <a name="DataClassifications"></a>What are the different data classifications?
 The following table describes the different classifications that you can apply to data:
@@ -36,7 +36,7 @@ Table objects and field controls include the `DataClassification` property that 
 -   Existing tables and fields (except for FlowFields and FlowFilters) in an application that has been upgraded from a [!INCLUDE[d365fin_md](includes/d365fin_md.md)] version without the `DataClassification` property, will automatically be assigned the **CustomerContent** classification.
 
 >[!IMPORTANT]
-> Microsoft is providing this `DataClassification` property as a matter of convenience only. It's your responsibility to classify the data appropriately and comply with any laws and regulations that are applicable to you. Microsoft disclaims all responsibility towards any claims related to your classification of the data.  
+> Microsoft is providing this `DataClassification` property as a matter of convenience only. It is your responsibility to classify the data appropriately and comply with any laws and regulations that are applicable to you. Microsoft disclaims all responsibility towards any claims related to your classification of the data.  
 
 For more information about this property, see [DataClassification Property](properties/devenv-dataclassification-property.md).
 
@@ -81,7 +81,7 @@ To view the data classification on all fields, you can do one of the following:
 ## Classifying data in custom telemetry trace events
 Custom telemetry trace events are defined by calls to the SENDTRACETAG function/method in the application code. The SENDTRACETAG function/method includes an optional parameter called `DataClassification` that you can use to tag the telemetry trace event with a data classification.
 
-For more information, see [SENDTRACETAG Method (AL)](methods/devenv-sendtracetag-method.md) and 
+For more information, see [SendTraceTag](methods-auto/session/session-sendtracetag-method.md) and 
 [Instrumenting an Application for Telemetry](devenv-instrument-application-for-telemetry.md). 
 
 ## See Also
