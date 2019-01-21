@@ -1,5 +1,5 @@
 ---
-title: "UseRequestPage Method"
+title: "ShowOutput Method"
 ms.author: solsen
 ms.custom: na
 ms.date: 01/21/2019
@@ -13,33 +13,27 @@ author: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UseRequestPage Method
-Gets or sets whether a request page is presented to the user.
+# ShowOutput Method
+Returns the current setting of whether a section should be printed, and changes this setting.
 
 ## Syntax
 ```
-[IsUseRequestPage := ]  Report.UseRequestPage([SetUseRequestPage: Boolean])
+Show :=   Report.ShowOutput()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.  
 
-*SetUseRequestPage*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if a request page will be presented to the user, otherwise **false**.  
-
-
 ## Return Value
-*IsUseRequestPage*  
+*Show*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if a request page is presented to the user, otherwise **false**.  
+**true** if the section is printed, otherwise **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)
