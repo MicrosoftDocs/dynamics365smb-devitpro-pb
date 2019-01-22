@@ -31,9 +31,9 @@ The following table describes the different classifications that you can apply t
 Table objects and field controls include the `DataClassification` property that you can use to tag data with one of the classifications previously described.
 
 [!INCLUDE[d365fin_md](includes/d365fin_md.md) operates with some standard rules for classification:
--   When you add a new field to a table, the field is assigned an initial value of **ToBeClassified**.
--   FlowField and FlowFilter fields are automatically set to the **SystemMetadata** data classification. This cannot be changed.
--   Existing tables and fields (except for FlowFields and FlowFilters) in an application that has been upgraded from a [!INCLUDE[d365fin_md](includes/d365fin_md.md)] version without the `DataClassification` property, will automatically be assigned the **CustomerContent** classification.
+- When you add a new field to a table, the field is assigned an initial value of **ToBeClassified**.
+- FlowField and FlowFilter fields are automatically set to the **SystemMetadata** data classification. This cannot be changed.
+- Existing tables and fields (except for FlowFields and FlowFilters) in an application that has been upgraded from a [!INCLUDE[d365fin_md](includes/d365fin_md.md)] version without the `DataClassification` property, will automatically be assigned the **CustomerContent** classification.
 
 >[!IMPORTANT]
 > Microsoft is providing this `DataClassification` property as a matter of convenience only. It is your responsibility to classify the data appropriately and comply with any laws and regulations that are applicable to you. Microsoft disclaims all responsibility towards any claims related to your classification of the data.  
@@ -70,9 +70,9 @@ Set-FieldDataClassificationFromExcelFile -ExcelFilePath "C:\NAV\W1 Fields (Main)
 ## <a name="ViewDataClassifications"></a>Viewing current field classifications
 To view the data classification on all fields, you can do one of the following:
 
--   From [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], in the **Tools** menu, select **Show Field Data Classification**. 
--   From the client, search for and open the **Field Data Classification** page. 
--   Create a page that has the virtual table **Field** (ID 2000000041) as its source, and open the page in the client.
+- From [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], in the **Tools** menu, select **Show Field Data Classification**. 
+- From the client, search for and open the **Field Data Classification** page. 
+- Create a page that has the virtual table **Field** (ID 2000000041) as its source, and open the page in the client.
 
 <!-- To view the data classification on all tables, create a page that has the virtual table **Table Metadata** (ID 2000000136)  as its source, and open the page in the client.
 -->
