@@ -41,10 +41,11 @@ Use the following table to determine the procedures that you must complete for y
 
 |  Scenario  |  Procedures  |
 |------------|--------------|
-|Set up a company based on questionnaires|Use RapidStart Services. For more information, see [Setting Up a Company With RapidStart Services](/dynamics365/business-central/admin-set-up-a-company-with-rapidstart?toc=/dynamics365/business-central/dev-itpro/toc.json).|
-|Import data from any system|Use Excel or configuration packages to import data. For more information, see [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json).|
-|Import data from Dynamics GP|Use the data migration wizard to import master data. For more information, see [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json).|
-|Import data from Intuit QuickBooks|Use the data migration wizard to import master data. For more information, see [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json).|
+|Upgrade from [!INCLUDE[navnow](../developer/includes/navnow_md.md)]|Upgrade the code as described in [Upgrading to Business Central on-premises](#upgrading-to--on-premises) and then move to an online tenant. </br>For more information, see [Upgrading from Dynamics NAV to Business Central online](upgrade-considerations.md#upgrading-from--to--online).|
+|Set up a company based on questionnaires|Use RapidStart Services. </br>For more information, see [Setting Up a Company With RapidStart Services](/dynamics365/business-central/admin-set-up-a-company-with-rapidstart?toc=/dynamics365/business-central/dev-itpro/toc.json).|
+|Import data from any system|Use Excel or configuration packages to import data. </br>For more information, see [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json).|
+|Import data from Dynamics GP|Use the data migration wizard to import master data. </br>For more information, see [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json).|
+|Import data from Intuit QuickBooks|Use the data migration wizard to import master data. </br>For more information, see [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json).|
 
 ## See Also
 
