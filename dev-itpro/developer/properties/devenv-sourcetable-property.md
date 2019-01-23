@@ -22,7 +22,8 @@ Sets the ID of the table from which this page will display records.
 -   Pages  
   
 ## Remarks  
- Use the up arrow to select the table you want.  
+ Use the up arrow to select the table you want. There are some page types that do not support having a source table. 
+ The SourceTable defines the structure of the record that you want to show on the page. 
   
 ## See Also  
  [Page Property Overview](devenv-page-property-overview.md)

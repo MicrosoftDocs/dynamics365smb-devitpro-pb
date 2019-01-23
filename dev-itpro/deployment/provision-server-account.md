@@ -221,9 +221,6 @@ GO
 CREATE USER [domain\accountname] FOR LOGIN [domain\accountname]  
 ALTER ROLE [db_owner] ADD MEMBER [domain\accountname]  
 GRANT VIEW DATABASE STATE TO [domain\accountname]  
-
-GRANT VIEW SERVER STATE TO [domain\accountname]
-GRANT ALTER ANY EVENT SESSION TO [domain\accountname]
 ```  
 
 ##  <a name="NSA"></a> Provisioning the Network Service Account  

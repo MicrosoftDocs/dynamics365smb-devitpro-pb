@@ -3,15 +3,11 @@ title: "Table Extension Object"
 description: "Description of the table extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/22/2018
+ms.date: 01/21/2019
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
@@ -25,6 +21,13 @@ When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
+
+> [!IMPORTANT]  
+> System and virtual tables cannot be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object Ranges](devenv-object-ranges.md).
+
+> [!IMPORTANT]  
+> Extending tables from Dynamics 365 for Sales is currently not supported.
+
 
 ## Snippet support
 Typing the shortcut `ttableext` will create the basic layout for a table extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.

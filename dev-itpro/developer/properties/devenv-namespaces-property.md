@@ -32,7 +32,7 @@ Specifies namespaces on the XMLport.
   
  To specify a default namespace, leave the **Prefix** field blank. You can also specify the default namespace by specifying the namespace in the [DefaultNamespace Property](devenv-defaultnamespace-property.md) and setting the [UseDefaultNamespace Property](devenv-usedefaultnamespace-property.md) to **true**. However, there can only be one default namespace. So if you want to specify a default namespace in the **Namespace** property, you must set the **UseDefaultNamespace** Property to **false**.  
 <!--
- For more information about namespaces with XMLports, see see [Using Namespaces with XMLports](Using-Namespaces-with-XMLports.md).  
+ For more information about namespaces with XMLports, see [Using Namespaces with XMLports](Using-Namespaces-with-XMLports.md).  
   
 ## See Also  
  [Designing XMLports](Designing-XMLports.md)   

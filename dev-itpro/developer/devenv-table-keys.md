@@ -84,3 +84,7 @@ If you select the secondary key for sorting, then the order is based on the cont
 - Number of records in your tables.  
 
 - Speed of your computer and its hard disk.  
+
+## See also
+[Table Object](devenv-table-object.md)  
+[Table Extension Object](devenv-table-ext-object.md)  

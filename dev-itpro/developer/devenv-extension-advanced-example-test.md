@@ -3,7 +3,7 @@ author: solsen
 title: "Testing the Advanced Sample Extension"
 description: "Includes test code for the advanced example extension."
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 01/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -60,7 +60,13 @@ Before we can start writing the tests for the extension, we need to do the follo
 + Specify the dependencies between the extension (CustomerRewards) and the test (CustomerRewardsTest) projects.  
 Our CustomerRewardsTest project will be referencing objects from the CustomerRewards project and so we will need to specify this in the `dependencies` setting in the CustomerRewardsTest project's app.json file. The `dependencies` setting takes a list of dependencies, where each dependency specifies the `appId`, `name`, `publisher`, and `version` of the base project/package that the current project/package will depend on.  
 
+
+> [!NOTE]   
+>  Another prerequisite is to update the app.json with a dependency to the test toolkit.
+
  ```
+ {
+  ...  
   "dependencies": [ 
     { 
       "appId": "c228bdcf-7112-480b-a832-da81971b6feb", 
@@ -68,9 +74,11 @@ Our CustomerRewardsTest project will be referencing objects from the CustomerRew
       "publisher": "Microsoft", 
       "version": "1.0.0.0" 
     } 
-  ] 
+  ], 
+  "test": "13.0.0.0"
+   ...
+}
 ```
- 
 
 For more information, see [JSON Files](devenv-json-files.md). 
 
@@ -336,7 +344,7 @@ codeunit 50103 "Customer Rewards Test"
         // [Given] The Customer Rewards Wizard 
         Initialize; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
 
         // [When] The Wizard is opnened 
@@ -369,7 +377,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
 
@@ -396,7 +404,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
 
@@ -422,7 +430,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
 
@@ -448,7 +456,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
         MockCustomerRewardsExtMgt.MockActivationResponse(false); 
@@ -470,12 +478,12 @@ codeunit 50103 "Customer Rewards Test"
         CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard"; 
 
     begin 
-        // [Scenario] Customer Rewards is activate when user enters valid activation code. 
+        // [Scenario] Customer Rewards is activated when user enters valid activation code. 
         // [Given] The Customer Rewards Wizard 
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
         MockCustomerRewardsExtMgt.MockActivationResponse(true); 
@@ -502,7 +510,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
 
@@ -524,7 +532,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
         ActivateCustomerRewards; 
@@ -546,7 +554,7 @@ codeunit 50103 "Customer Rewards Test"
 
         CustomerListTestPage.OpenView; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
 
         // [Then] Reward levels action exists on custome list page 
@@ -568,7 +576,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
 
@@ -593,7 +601,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         Assert.IsFalse(CustomerRewardsExtMgt.IsCustomerRewardsActivated, NotActivatedTxt); 
         ActivateCustomerRewards; 
@@ -616,7 +624,7 @@ codeunit 50103 "Customer Rewards Test"
         // [Scenario] Customer Card Page Has Reward Fields When Opened 
         // [Given] Customer Card Page 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
 
         // [When] Customer card page is opened 
@@ -642,7 +650,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         ActivateCustomerRewards; 
  
@@ -671,7 +679,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         ActivateCustomerRewards; 
 
@@ -704,7 +712,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         ActivateCustomerRewards; 
         AddRewardLevel(BronzeLevelTxt, 2); // 2 points required for BRONZE level 
@@ -741,7 +749,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         ActivateCustomerRewards; 
         AddRewardLevel(BronzeLevelTxt, 2); // 2 points required for BRONZE level 
@@ -774,7 +782,7 @@ codeunit 50103 "Customer Rewards Test"
         Initialize; 
         Commit; 
 
-        // Using permissions that do not inlcude SUPER 
+        // Using permissions that do not include SUPER 
         LibraryLowerPermissions.SetO365BusFull; 
         ActivateCustomerRewards; 
         AddRewardLevel(BronzeLevelTxt, 2); // 2 points required for BRONZE level 
