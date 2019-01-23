@@ -159,7 +159,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
     ```
     c:[Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"] => issue(Type = "unique_name", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
-5. Repeat steps 1 to 3 to add another custom rule, and set the **Claim rule name** to `objectidentifier`, and the **Custom rule** to:
+5. Repeat steps 2 and 3 to add another custom rule, except for this rule, set the **Claim rule name** to `objectidentifier`, and the **Custom rule** to:
 
     ```
     c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
@@ -237,7 +237,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     ```
     https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcwebclient%26wreply=https://https://corp.sample.com/BC130/SignIn
     ```
-4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients**) for example:
+4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients**). For example:
     ```
     https://dynamicsnavwindowsclient
     ```
