@@ -103,7 +103,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
         For example:
 
         ```
-        https://MyWebServer:443
+        https://MyWebServer
         ```
         or
 
