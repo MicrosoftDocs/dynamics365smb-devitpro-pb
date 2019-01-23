@@ -46,7 +46,7 @@ These steps are done by using the AD FS Management console on the server where A
 
 ### Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients
 
-You must complete these steps separately for [!INCLUDE[webserver](../developer/includes/webserver.md)] for the Web client and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].
+You must complete these steps separately for [!INCLUDE[webserver](../developer/includes/webserver.md)] for the Web client and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]. 
 
 1.  Open **Server Manager** on the computer that is running AD FS, choose **AD FS** > **Tools** > **AD FS Management**.
 2.  Right-click **Relying Party Trusts**, and then choose **Add Relying Party Trust**.
@@ -89,32 +89,23 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
             https://corp.sample.com/BC130
             ```
              
-    -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], use base URL for the Web client, which is the full URL without the `/<webserver-instance>` part. This typically has the format:
-
-        ```
-        https://<web-server-computer>:<port>
-        ```
-        
-        or
-                
-        ```
-        https://<domain>
-        ```
-        For example:
-
-        ```
-        https://MyWebServer
-        ```
-        or
+    -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], you can use any URL as long as it is in the form of a trusted URL, such as `https://mynavwinclient` or `https://www.cronus. com`. The URL does not have to point to a valid target, it is only used by AD FS to validate the client. For example, you could just use the domain name of your site or the name of the computer that is running the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]:
 
         ```
         https://corp.sample.com
+
+        ```
+        
+        or
+
+        ```
+        https://MyComputerName
         ```
 
     Choose **Next** to continue.
 
     >[!Note]
-    >This is the URL to which AD FS will be allowed to issue authentication tokens.
+    >This is the URL to which AD FS will be allowed to issue authentication tokens. The URLs that you specify will be used later on when you configure the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].
 
 8.  In the **Configure Identifiers** step, in the **Relying party trust identifier** field, remove the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] URL <!-- check-->, and then add a URL that identifies the client instead. You can use any value as long as it has the for format `https:<name>`: 
 
@@ -188,6 +179,11 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
     Set-ADFSRelyingPartyTrust –TargetIdentifier "https://bcwebclient" –EnableJWT $true
     ```
 
+    or
+    ```
+    Set-ADFSRelyingPartyTrust –TargetIdentifier "https://dynamicsnavwinclient" –EnableJWT $true
+    ```
+
 ## Configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to use AD FS authentication
 
 To setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for ADFS authentication, you must modify the configuration of the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]s.
@@ -232,7 +228,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
 
     Replace `<Public URL for AD FS server>` with the URL for your installation.
 
-    Replace `<Relying party trust identifier>` with the exact value that was specified as the  **Relying party trust identifier** in the previously.  
+    Replace `<Relying party trust identifier>` with the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients**).  
 
     Replace `<Business Central Web Client URL>` with the exact value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the client in AD FS. Make sure that the case matches exactly.
 
@@ -241,8 +237,10 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     ```
     https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcwebclient%26wreply=https://https://corp.sample.com/BC130/SignIn
     ```
-4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the relying party trust identifier, for example `https://dynamicsnavwindowsclient`.
-
+4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients**) for example:
+    ```
+    https://dynamicsnavwindowsclient
+    ```
 5.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
     >[!TIP]
@@ -275,10 +273,10 @@ You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md
 2.  Set the **ACSUri** setting to the AD FS login page as shown:
 
     ```
-    <add key="ACSUri" value="https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwinclient%26wreply=<Business Central Web Client URL without Web server instance>" />
+    <add key="ACSUri" value="https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwinclient%26wreply=<Relying Party Trust Endpoint>" />
     ```
 
-    Replace `<Business Central Web Client URL without Web server instance>` with the same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] in AD FS.
+    Replace `<Relying Party Trust Endpoint>` with the same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] in AD FS.
 
     For example:
 
