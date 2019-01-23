@@ -139,7 +139,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
     >|Payment and Reconciliation Formats (DK)|FIK.app |
     >|Tax File Formats (DK)| VATReportsDK.app|
 
-    The new versions are found in the the `\Extensions` folder of the installation media.
+    The new versions are found in the `\Extensions` folder of the installation media.
 
     To publish the new extension version, run the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
 
@@ -203,7 +203,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
 2. Synchronize the tenant.
  
-    Synchronize the tenant database schema with validation by running the the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
+    Synchronize the tenant database schema with validation by running the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
 
     ```
     Sync-NAVTenant -ServerInstance <ServerInstanceName> -Tenant <TenantID>

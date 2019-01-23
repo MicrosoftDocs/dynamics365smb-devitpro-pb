@@ -39,6 +39,7 @@
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### Database
+#### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating and Altering Databases](cside/cside-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
@@ -140,10 +141,16 @@
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
 ## [Isolated Storage](developer/devenv-isolated-storage.md)
 ## [Tables](developer/devenv-tables-overview.md)
+### [Table Object](developer/devenv-table-object.md)
+### [Table Extension Object](developer/devenv-table-ext-object.md)
+### [View Table Data](developer/devenv-view-table-data.md)
+### [Classifying Data](developer/devenv-classifying-data.md)
+### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ## [Pages](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
+### [API Page Type](developer/devenv-api-pagetype.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
 #### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
@@ -170,8 +177,6 @@
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ## [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
-## [Classifying Data](developer/devenv-classifying-data.md)
-## [View Table Data](developer/devenv-view-table-data.md)
 ## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
