@@ -213,6 +213,12 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
 
     Replace `<Public URL for AD FS server>` with the URL for your installation. For example:
 
+
+    ```
+    https://MyADFSServer/federationmetadata/2007-06/federationmetadata.xml"/>
+    ```
+
+    or
     ```
     https://corp.sample.com/federationmetadata/2007-06/federationmetadata.xml
     ```
@@ -235,7 +241,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     For example:
 
     ```
-    https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcwebclient%26wreply=https://https://corp.sample.com/BC130/SignIn
+    https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcwebclient%26wreply=https://corp.sample.com/BC130/SignIn
     ```
 4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients**). For example:
     ```
