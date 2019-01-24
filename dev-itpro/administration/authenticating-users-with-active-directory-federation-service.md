@@ -89,17 +89,11 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
             https://corp.sample.com/BC130
             ```
              
-    -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], you can use any URL as long as it is in the form of a trusted URL, such as `https://mynavwinclient` or `https://www.cronus. com`. The URL does not have to point to a valid target, it is only used by AD FS to validate the client. For example, you could just use the domain name of your site or the name of the computer that is running the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]:
+    -   If you are setting up AD FS for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], you can use any URL as long as it is in the form of a trusted URL `https://<name>`, such as `https://mynavwinclient` or `https://www.cronus.com`. The URL does not have to point to a valid target, it is only used by AD FS to validate the client. For example, you could just use the domain name of your site:
 
         ```
         https://corp.sample.com
 
-        ```
-        
-        or
-
-        ```
-        https://MyComputerName
         ```
 
     Choose **Next** to continue.
@@ -289,8 +283,6 @@ You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md
     ```
     <add key="ACSUri" value="https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwinclient%26wreply=https://corp.sample.com" />
     ```
-    <!-- Check whether you need the reply>
-
 3. Restart the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].
 
 
