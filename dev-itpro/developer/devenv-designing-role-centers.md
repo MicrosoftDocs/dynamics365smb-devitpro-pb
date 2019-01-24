@@ -3,7 +3,7 @@ title: Designing Role Centers
 description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 01/24/2010
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -87,8 +87,7 @@ The following table describes some of the most common parts for Role Centers, as
     -   Role Center pages cannot be displayed when they are embedded in Outlook or SharePoint.
 
 ## Using the Role Center in the client
-
-To view a new Role Center in the client, you must first use the client to associate the Role Center page with a profile. Then, you go to **My Settings** and change the  **Role Center** to point to the new profile. For more information, see [Create Profile](/dynamics365/business-central/admin-users-profiles-roles#CreateProfile).
+To use or test the new Role Center in the client, you must first associate the Role Center page with a profile. Profiles define user roles and each profile is associated with a single Role Center page. Create a new [profile object](devenv-profile-object.md) that references your page. Then, go to **My Settings** and select the new profile.
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
