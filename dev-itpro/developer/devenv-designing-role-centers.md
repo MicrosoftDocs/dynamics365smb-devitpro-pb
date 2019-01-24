@@ -3,7 +3,7 @@ title: Designing Role Centers
 description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
-ms.date: 01/24/2010
+ms.date: 01/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
