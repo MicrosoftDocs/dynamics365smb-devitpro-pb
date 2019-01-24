@@ -235,6 +235,12 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     For example:
 
     ```
+    https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcwebclient%26wreply=https://MyWebServer:443/BC130/SignIn
+    ```
+
+    or
+
+    ```
     https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcwebclient%26wreply=https://corp.sample.com/BC130/SignIn
     ```
 4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients**). For example:
@@ -273,8 +279,11 @@ You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md
 2.  Set the **ACSUri** setting to the AD FS login page as shown:
 
     ```
-    <add key="ACSUri" value="https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=https://dynamicsnavwinclient%26wreply=<Relying Party Trust Endpoint>" />
+    <add key="ACSUri" value="https://<Public URL for ADFS server>/adfs/ls/?wa=wsignin1.0%26wtrealm=<https://dynamicsnavwinclient%26wreply=<Relying Party Trust Endpoint>" />
     ```
+    Replace `<Public URL for AD FS server>` with the URL for your installation.
+
+    Replace `<Relying party trust identifier>` with the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients**).  
 
     Replace `<Relying Party Trust Endpoint>` with the same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] in AD FS.
 
