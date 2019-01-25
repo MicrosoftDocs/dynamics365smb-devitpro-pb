@@ -11,7 +11,7 @@ author: jswymer
 ---
 # Configuring Query Hints for Optimizing SQL Server Performance with Business Central
 
-On its own, SQL Server query optimizer will try to select the best execution plan for SELECT, INSERT, UPDATE, and DELETE statements. Most of the time, query optimizer makes the right choice. *Query hints* are strategies that can be enforced by the SQL Server query processor to override any execution plan that the query optimizer might select for a query. The [!INCLUDE[server](../developer/includes/server.md)] instance includes configuration settings that let you enable or disable the use of the following hints on queries in the database:
+On its own, SQL Server query optimizer will try to select the best execution plan for SELECT, INSERT, UPDATE, and DELETE statements. Most of the time, query optimizer makes the right choice. [Query hints](https://docs.microsoft.com/en-us/sql/t-sql/queries/hints-transact-sql-query?view=sql-server-2017) are strategies that can be enforced by the SQL Server query processor to override any execution plan that the query optimizer might select for a query. The [!INCLUDE[server](../developer/includes/server.md)] instance includes configuration settings that let you enable or disable the use of the following hints on queries in the database:
 
 |  Hint  |  Description  | Used by default |
 |--------|---------------|--|
@@ -19,12 +19,10 @@ On its own, SQL Server query optimizer will try to select the best execution pla
 |LOOP JOIN|Instructs the query optimizer to use LOOP JOIN for all join operations in the whole query.|No|
 |OPTIMIZE FOR UNKNOWN|Instructs the query optimizer to use statistical data instead of the initial values for all local variables when the query is compiled and optimized, including parameters created with forced parameterization.<br /><br />If you clear the check box (`false`), the OPTIMIZE FOR UNKNOWN hint is used in queries.|Yes|
 
-For more information about these hints, see [Hints (Transact-SQL) - Query](https://docs.microsoft.com/en-us/sql/t-sql/queries/hints-transact-sql-query?view=sql-server-2017).
+For more information about configuring the [!INCLUDE[server](../developer/includes/server.md)] instance, see [Configuring Business Central Server](configure-server-instance.md#Database).
 
-## Enable and disable query hints
-You enable and disable these query hints by configuring the [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see [](configure-server-instance.md#Database).
+## Guidelines
 
- 
 ## See Also
   
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  
