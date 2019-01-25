@@ -26,5 +26,4 @@ For more information about configuring the [!INCLUDE[server](../developer/includ
 ## See Also
   
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  
-[Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)   
-[Microsoft SQL Server documentation](http://go.microsoft.com/fwlink/?LinkId=253107)
+[Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  [Microsoft SQL Server documentation](http://go.microsoft.com/fwlink/?LinkId=253107)
