@@ -61,7 +61,7 @@ The following procedure provides an outline of the tasks that are involved in cr
 
      You can include as many parameters of any type as necessary.  
 
-     Make sure to expose enough information as parameters to enable subscriber methods to add value to the application. On the other hand, especially with business events, do not expose unnecessary parameters that may constrain you from changing or extending methodally in the future.  
+     Make sure to expose enough information as parameters to enable subscriber methods to add value to the application. On the other hand, especially with business events, do not expose unnecessary parameters that may constrain you from changing or extending methodically in the future.  
 
  You can now add code to the application that raises the event by calling the event publisher method. You can also create subscriber methods that handle the event when it is raised. 
 

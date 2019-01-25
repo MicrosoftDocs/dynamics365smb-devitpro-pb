@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/01/2018
+ms.date: 01/23/2019
 ms.author: jaredha
 
 ---
@@ -35,7 +35,7 @@ As a partner, you can access the center from the Partner Dashboard in the Micros
 4. Select **Service Management**.
 5. Under the **Administer Services** heading, select [!INCLUDE[prodlong](../developer/includes/prodlong.md)].
 
-The administration center can also be accessed by navigating directly to the URL of a tenant's instance. This is done with the following URL, if you replace [TENANT_ID] with the tenant ID of the customer tenant.
+You can also get to the administration center by navigating directly to the URL of a tenant's instance. This is done with the following URL, if you replace *[TENANT_ID]* with the tenant ID of the tenant.
 
 `https://businesscentral.dynamics.com/[TENANT_ID]/admin`
 
@@ -45,7 +45,7 @@ The **Environments** tab of the center allows you to view information about the 
 
 ### Set the upgrade window
 
-The upgrade window for an environment defines a window of time during the day in which the environment is allowed to be upgraded. When major and minor updates are rolled out to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants, the update will only be applied to an environment within the time frame defined for the upgrade window, helping ensure that updates are applied outside of the customer's business hours.
+The upgrade window for an environment defines a window of time during the day in which the environment can be upgraded. When an update is rolling out to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, regardless of whether it's the monthly service update or a major update, the update will be applied to an environment within the time frame that the upgrade window defines. This helps ensure that updates are applied outside of the customer's normal business hours, for example.
 
 > [!NOTE]
 > The upgrade window must be a minimum of six hours.
@@ -76,21 +76,21 @@ A sandbox environment can also be created from within a page within the producti
 
 To delete a sandbox environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then click **Delete Sandbox** on the action ribbon.
 
-## Precautions for sandbox with production data
+### Precautions for sandbox with production data
 
-If a sandbox is created with the production data option, a number of precautions are taken for that sandbox: 
-- The job queue is automatically stopped. 
+If a sandbox is created with the production data option, a number of precautions are taken for that sandbox:
+
+- The job queue is automatically stopped.  
 - Any base application integration settings are cleared.  
 - Outbound HTTP calls from extensions are blocked by default and must be approved per extension.  
-- Any GDPR action must be handled separately and repeated for the sandbox, there is no synchronization with the production environment after the sandbox has been created. 
+- Any GDPR action must be handled separately and repeated for the sandbox, there is no synchronization with the production environment after the sandbox has been created.  
 
 > [!NOTE]  
-> To enable outbound HTTP calls, go to the **Extensions Management** page and choose **Configure**. Then, on the **Extension Settings** page, make sure that the **Allow HttpClient Request** checkbox is selected. This setting must be enabled per extension. 
- 
+> To enable outbound HTTP calls, go to the **Extensions Management** page and choose **Configure**. Then, on the **Extension Settings** page, make sure that the **Allow HttpClient Request** checkbox is selected. This setting must be enabled per extension.  
 
 ## Notification recipients
 
-When either a major or minor update of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has been applied to an environment, an email notification is sent to notify recipients that the upgrade has completed successfully. The notification is sent to all email addresses listed in the **Notification recipients** list of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. The list is managed manually by adding and removing recipients to ensure the right individuals are notified of the event.
+When an update of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has been applied to an environment, an email notification is sent to the specified recipients that the upgrade has completed successfully. The notification is sent to all email addresses that are listed in the **Notification recipients** list of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. The list is managed manually by adding and removing recipients to ensure the right individuals are notified of the event.
 
 ## Telemetry
 
@@ -107,6 +107,10 @@ To filter the telemetry for an environment:
 ## See also
 
 [Working with Administration Tools](administration.md)  
-[Business Central Data Security](../security/data-security.md)
+[Business Central Data Security](../security/data-security.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
-[Microsoft Partner Dashboard](https://partnercenter.microsoft.com/dashboard)
+[Microsoft Partner Dashboard](https://partnercenter.microsoft.com/dashboard)  
+[Add a new customer in the Partner Center](/partner-center/add-a-new-customer)  
+[Assign licenses to users in the Partner Center](/partner-center/assign-licenses-to-users)  
+[Create new subscriptions in the Partner Center](/partner-center/create-a-new-subscription)  
+[Cloud Solution Provider program - selling in-demand cloud solutions](/partner-center/csp-overview)  
