@@ -1,7 +1,7 @@
 ---
 title: "FieldSeparator Property"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 01/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,12 +24,12 @@ Sets the string that is to be used to separate fields.
   
 |**Value**|**Description**|  
 |---------------|---------------------|  
-|**<None>**|There is no field separator.|  
-|**<NewLine>**|Any combination of CR and LF characters.|  
-|**<CR/LF>**|CR followed by LF.|  
-|**<CR>**|CR alone.|  
-|**<LF>**|LF alone.|  
-|**<TAB>**|Tabulator alone.|  
+|<**None**>|There is no field separator.|  
+|<**NewLine**>|Any combination of CR and LF characters.|  
+|<**CR/LF**>|CR followed by LF.|  
+|<**CR**>|CR alone.|  
+|<**LF**>|LF alone.|  
+|<**TAB**>|Tabulator alone.|  
 |**Other strings**|The literal string entered.|  
   
 ## Remarks  
@@ -43,7 +43,7 @@ Sets the string that is to be used to separate fields.
   
  **FieldSeparator** is only used if the Format property is set to **Variable Text**. Otherwise, the setting is ignored.  
   
- You can set the field separator in AL code so that the XMLport can import and export records with different separators. For example, if your XMLport must import from a file or stream where one record uses commas and another uses TAB, you can change the field seperator property at run time.  
+ You can set the field separator in AL code so that the XMLport can import and export records with different separators. For example, if your XMLport must import from a file or stream where one record uses commas and another uses TAB, you can change the field separator property at run time.  
   
 ## See Also  
  [Properties](devenv-properties.md)   
