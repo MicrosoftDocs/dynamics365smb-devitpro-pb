@@ -19,6 +19,15 @@ Denotes a string constant that can be optionally translated into multiple langua
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
+| Attribute   | Description|                      
+|------|--------------|
+|**Comment**|It is used for general comments about the label, specifically about the placeholders in that label.|
+|**Locked**|When Locked is set to **true**, the label should not be translated.|
+|**MaxLength**|It determines how much of the label is used.</br>`Label 'ALLOWED POSTING DATE', Comment='{MaxLength=30}';`<br>|
+
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
