@@ -81,7 +81,7 @@ In the generated .xlf file, you can see a `<source>` element for each label. For
       <group id="body">
         <trans-unit id="PageExtension 1255613137 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
           <source>Developer translation for %1</source>
-          &lt;target state="translated"&gt;Udvikleroversættelse for %1&lt;/target&gt;
+          <target state="translated">Udvikleroversættelse for %1</target>
           <note from="Developer" annotates="general" priority="2">%1 is extension name</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension - PageExtension</note>
         </trans-unit>
