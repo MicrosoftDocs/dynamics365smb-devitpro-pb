@@ -3,7 +3,7 @@ title: "User Scenario Documentation"
 description: "Describing how to generate the required scenario document to get your app approved for AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/10/2019
+ms.date: 01/22/2019
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ One of the keys to a successful extension validation is a document that guides t
   - If your app has a dependency on non-standard settings in the core default version of Business Central, include those details. The Microsoft-provided demo data might not have everything that your app needs to work properly.
 
 - Include the most important functionality scenarios of your extension. We are not looking to test your entire extension, but we do want to ensure we are validating the most used aspects of your app.  
-  - Don’t give a summary as to what these scenarios do. List step by step details instead. Again, the tester doing the validation might not have the same product knowledge as you do.
+  - Do not give a summary as to what these scenarios do. List step by step details instead. Again, the tester doing the validation might not have the same product knowledge as you do.
 
 > [!NOTE]
 > This is not the same as the requirement to include Help for your functionality. For more information about getting started with extending and customizing the Business Central user assistance, see [User assistance model](../user-assistance.md).  
@@ -38,7 +38,7 @@ We recommend that you use Docker as a guide for writing your user scenario docum
 
 - Do not base your user document on an on-premises environment. Business Central on-premises deployments can have different windows, data, and so on. As a result, your document can lead to confusion and differences in our results.  
 - Use the correct Business Central version. If you are basing your document on a build that is months old, many things could now be different in the latest production environment. This also can lead to much confusion. For more information, see [Current Build - Developing for Dynamics 365 Business Central](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/4756) on the Collaborate site.
-- Use the correct data for your document. Don’t submit a document based on custom data that our testers will not have access to. You should always base your documents on the base demo CRONUS data and then include Rapid Start packages with any additional data.
+- Use the correct data for your document. Do not submit a document based on custom data that our testers will not have access to. You should always base your documents on the base demo CRONUS data and then include Rapid Start packages with any additional data.
 - If your app's functionality is different per country, provide that important information. Some of the steps might be different (for your app) between US and DK. If that is the case, mention that in the document.  
 
 ### Example
