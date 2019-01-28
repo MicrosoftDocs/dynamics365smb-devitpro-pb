@@ -3,44 +3,56 @@ title: "API Query Type"
 description: "Description of the API query type used for exposing and viewing web service endpoints."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/18/2019
+ms.date: 01/28/2019
 ms.topic: article
 ms.author: solsen
 ---
 
 # API Query Type
-Queries of the type `API` are used to generate web service endpoints that j and this type of page cannot be displayed in the user interface. When creating this page type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tpage - Page of type API` to get the right template and the list of these properties automatically filled in. This page type cannot not be extended by creating a page extension object. Instead, you must create a new API by adding a page object.
+Queries of the type `API` are used to generate web service endpoints and this type of page cannot be displayed in the user interface. A query of the API type can be used to join data from different data sources. The data can only be viewed. When creating this query type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tquery - Query of type API` to get the right template and the list of these properties automatically filled in.
 
-## Example of the API page type
-The following page example publishes an API available at:
-`../contoso/app1/v2.0/companies({id})/Customers`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
+## Example of the API query type
+The following query example publishes an API available at:
+`../v1.0/companies({id})/CustomerSales`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
 
 ```
-page 50120 MyCustomerApi
+query 20000 "APIV1 - Customer Sales"
 {
-    PageType = API;
-    Caption = 'My Customer API';
-    APIPublisher = 'contoso';
-    APIGroup = 'app1';
-    APIVersion = 'v2.0';
-    EntityName = 'Customer';
-    EntitySetName = 'Customers';
-    SourceTable = Customer;
-    DelayedInsert = true;
-    
-    layout
+    APIVersion = 'v1.0';
+    Caption = 'customerSales', Locked = true;
+    EntityName = 'customerSale';
+    EntitySetName = 'customerSales';
+    QueryType = API;
+
+    elements
     {
-        area(Content)
+        dataitem(QueryElement1; Customer)
         {
-            repeater(GroupName)
+            column(customerId; Id)
             {
-                field(Id; Id)
+                Caption = 'Id', Locked = true;
+            }
+            column(customerNumber; "No.")
+            {
+                Caption = 'No', Locked = true;
+            }
+            column(name; Name)
+            {
+                Caption = 'Name', Locked = true;
+            }
+            dataitem(QueryElement10; "Cust. Ledger Entry")
+            {
+                DataItemLink = "Customer No." = QueryElement1."No.";
+                SqlJoinType = LeftOuterJoin;
+                DataItemTableFilter = "Document Type" = FILTER (Invoice | "Credit Memo");
+                column(totalSalesAmount; "Sales (LCY)")
                 {
-                    Caption = 'ID';
+                    Caption = 'TotalSalesAmount', Locked = true;
+                    Method = Sum;
                 }
-                field(Name; Name)
+                filter(dateFilter; "Posting Date")
                 {
-                    Caption = 'Name';
+                    Caption = 'DateFilter', Locked = true;
                 }
             }
         }
@@ -48,7 +60,7 @@ page 50120 MyCustomerApi
 }
 ```
 
-## See Also  
+## See Also
 [AL Development Environment](devenv-reference-overview.md)  
 [Query Object](devenv-query-object.md)  
 [Developing Extensions](devenv-dev-overview.md)  
