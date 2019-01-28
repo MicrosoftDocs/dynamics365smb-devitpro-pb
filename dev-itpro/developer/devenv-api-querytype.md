@@ -13,16 +13,19 @@ Queries of the type `API` are used to generate web service endpoints and this ty
 
 ## Example of the API query type
 The following query example publishes an API available at:
-`../v1.0/companies({id})/CustomerSales`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
+`../contoso/app1/v1.0/companies({id})/customerSales`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
 
 ```
 query 20000 "APIV1 - Customer Sales"
 {
+    QueryType = API;
+    APIPublisher = 'contoso';
+    APIGroup = 'app1';
     APIVersion = 'v1.0';
     Caption = 'customerSales', Locked = true;
     EntityName = 'customerSale';
     EntitySetName = 'customerSales';
-    QueryType = API;
+    
 
     elements
     {
