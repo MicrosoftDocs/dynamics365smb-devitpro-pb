@@ -52,5 +52,5 @@ The following features are not intended for use in on-premises deployments. Ther
 
 ## See Also
 
-[System Requirements](/deployment/system-requirement-business-central.md)  
+[System Requirements](deployment/system-requirement-business-central.md)  
 [How to: Create a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/toc.json)  
