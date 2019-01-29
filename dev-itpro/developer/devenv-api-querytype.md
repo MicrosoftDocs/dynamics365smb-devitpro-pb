@@ -25,7 +25,6 @@ query 20000 "APIV1 - Customer Sales"
     Caption = 'customerSales', Locked = true;
     EntityName = 'customerSale';
     EntitySetName = 'customerSales';
-    
 
     elements
     {
