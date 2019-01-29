@@ -474,7 +474,7 @@ Imports objects from a file to the specified database.
 ### Syntax  
   
 ```  
-finsql.exe command=importobjects, file=<importfile>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [importaction=<default|overwrite|skip|0|1|2>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [tenant=<tenant ID>]  
+finsql.exe command=importobjects, file=<importfile>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [importaction=<default|overwrite|skip|0|1|2>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [suppressbuildsearchindex=<yes|no|1|0>,] [tenant=<tenant ID>]  
 ```
 
 ### Parameters  
@@ -496,20 +496,29 @@ finsql.exe command=importobjects, file=<importfile>, [servername=<server>,] [dat
 >  If you import from a .txt file and there is a conflict, then the objects in the import file overwrite the existing objects in the database.  
   
 > [!NOTE]  
->  After you import an object from a .txt file, you must compile the object before you use it. If you import an object from a .fob file, then the object is compiled automatically after it is imported.  
+>  After you import an object from a .txt file, you must compile the object before you use it. If you import an object from a .fob file, then the object is compiled automatically after it is imported. 
+
+*suppressbuildsearchindex*
+When importing objects from a .fob file, specifies whether the command will also build the object search index. The parameter has the following values:
+
+-   **no** or **0** \(default\) - the search index in not built.
+-   **yes** or **1** – the search index in not built..
+
+ Building the search index makes sure that pages and reports, which are properly configured for search, can be found by the **Tell Me** feature in the client (for more information, see [Adding Pages and Reports to Tell Me](../developer/devenv-al-menusuite-functionality.md). Building the search index will add time to the import operation.
+ 
+This can be useful if you are importing several .fob files. In which case, for example, you could use `suppressbuildsearchindex=yes` parameter on all `import` commands except the last one. Or, you can skip the search index from the command, and run it afterward from the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] by selecting **Tools** > **Build Object Search Index**.
   
  ### Remarks  
  You use the **ImportObjects** command with the finsql.exe from a command prompt. finsql.exe is the executable file that runs the development environment. By default, finsql.exe is located at [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]\\RoleTailored Client\\.  
   
  To import objects from a .txt file, you must have a developer license. To import objects from a .fob file, you can have either an end-user license or a developer license.  
-  
- You can specify parameters in any order.  
-  
+ 
+
 ### Example  
  This example shows how to run a command to import the objects from a .fob file into [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If any of the objects to import already exist in the database, then overwrite them with the objects from the import file.  
   
 ```  
-finsql.exe command=importobjects, file=C:\NewObjects.fob, servername=TestComputer01, database="Demo Database NAV (9-0)", ImportAction=overwrite  
+finsql.exe command=importobjects, file=C:\NewObjects.fob, servername=TestComputer01, database="Demo Database BC", ImportAction=overwrite  
 ```  
 ## <a name="ImportTranslate"></a>ImportTranslate
 Imports UI text strings for objects from a text file to a specified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
