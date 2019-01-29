@@ -36,13 +36,13 @@ You can export and import application objects from and to the database from a fi
 
 1.  At a command prompt, move to the location of finsql.exe. The finsql.exe is located where the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] is installed.  
 
-2.  Run finsql.exe with the parameter "command=exportobjects". You must specify the following parameters:  
+2.  Run finsql.exe with the parameter `command=exportobjects`. You must specify the following parameters:  
 
-    -   file  
+    -   `file`  
 
-    -   servername  
+    -   `servername`  
 
-    -   database  
+    -   `database`  
 
      All other parameters are optional.  
 
@@ -65,15 +65,18 @@ You can export and import application objects from and to the database from a fi
 
 1.  At a command prompt, move to the location of finsql.exe. The finsql.exe is located where the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] is installed.  
 
-2.  Run finsql.exe with the parameter "command=importobjects". You must specify the following parameters:  
+2.  Run finsql.exe with the parameter `command=importobjects`. You must specify the following parameters:  
 
-    -   file  
+    -   `file`  
 
-    -   servername  
+    -   `servername`  
 
-    -   database  
+    -   `database`  
 
-     All other parameters are optional.  
+     All other parameters are optional.
+
+    > [!TIP]  
+    > By default, for each .fob file that you import, the object search index is built. Building the search index makes sure that designated pages and reports are searchable from the **Tell Me** the client (for more information, see [Adding Pages and Reports to Tell Me](../developer/devenv-al-menusuite-functionality.md). Building the search index will add time to the import operation. If you do not want to build the search index, use the `suppressbuildsearchindex=yes` parameter. This can be useful if you are importing several files, in which case, you could use `suppressbuildsearchindex=yes` parameter on all `import` commands except the last, or you can use it on all `import` commands and then run **Tools** > **Build Object Search Index** from the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)].
 
      For more information about the ImportObjects command, see [ImportObjects](https://docs.microsoft.com/en-us/dynamics-nav/importobjects).  
 
