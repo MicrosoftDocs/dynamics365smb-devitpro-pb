@@ -30,15 +30,15 @@ You can choose to migrate your [!INCLUDE[prodshort](../developer/includes/prodsh
 ### Migration Process  
  If you decide to move to a multitenant architecture, you must complete the following steps:  
   
-1.  If your current solution is based on an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], upgrade the database to [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)]. For more information, see [Upgrading the Data](../upgrade/Upgrading-the-Data.md).  
+<!-- 1.  If your current solution is based on an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], upgrade the database to [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)]. For more information, see [Upgrading the Data](../upgrade/Upgrading-the-Data.md).  
   
-     After this step, you have a database that contains the application-wide tables and the same companies as before. But it has been upgraded to the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] database schema.  
+     After this step, you have a database that contains the application-wide tables and the same companies as before. But it has been upgraded to the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] database schema.-->  
   
-2.  Move the tables that describe the application to a separate database. For more information, see [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md).  
+1.  Move the tables that describe the application to a separate database. For more information, see [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md).  
   
      After this step, you have two databases: an application database and a business data database.  
   
-3.  Split the business data database into one for each company. For more information, see [Creating Tenants from Companies](Creating-Tenants-from-Companies.md).  
+2.  Split the business data database into one for each company. For more information, see [Creating Tenants from Companies](Creating-Tenants-from-Companies.md).  
   
      After this step, you have an application database and a business data database for each company in the original database. The company-specific business data databases are tenants, and your solution is multitenant.  
   
