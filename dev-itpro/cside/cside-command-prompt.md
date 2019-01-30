@@ -498,7 +498,7 @@ finsql.exe command=importobjects, file=<importfile>, [servername=<server>,] [dat
 > [!NOTE]  
 >  After you import an object from a .txt file, you must compile the object before you use it. If you import an object from a .fob file, then the object is compiled automatically after it is imported. 
 
-*suppressbuildsearchindex*
+*suppressbuildsearchindex*  
 
 When importing objects from a .fob file, specifies whether the command will also build the object search index. The parameter has the following values:
 
