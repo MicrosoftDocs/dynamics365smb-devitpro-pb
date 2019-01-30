@@ -58,7 +58,7 @@ finsql.exe [command=<command> | designobject=<object type> <object ID>,] [server
 ```  
 -->
 ```  
-finsql.exe [command=<command> | designobject=<object type> <object ID>,] [servername=<server>,] [collation=<collation>,] [database=<database>,] [file=<file>,] [filter=<filter>,] [generatesymbolreference=<yes|no>,] [importaction=<default|overwrite|skip|0|1|2>,] [langid=<ID>,] [logfile=<logfile>,] [navservername=<name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [ntauthentication=<yes|no|0|1>,] [objectcache=<cache>,] [password=<password>,] [showalldesignercolumns=<yes|no|0|1>,] [suppressbuildsearchindex=<yes|no>,] [synchronizeschemachanges=<yes|no|force>,] [temppath=<path>,] [tenant=<tenant ID>,] [unicode=<yes|no|0|1>,] [useoldeditor=<yes|no>,] [username=<user name>,]
+finsql.exe [command=<command> | designobject=<object type> <object ID>,] [servername=<server>,] [collation=<collation>,] [database=<database>,] [file=<file>,] [filter=<filter>,] [generatesymbolreference=<yes|no>,] [importaction=<default|overwrite|skip|0|1|2>,] [langid=<ID>,] [logfile=<logfile>,] [navservername=<name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [ntauthentication=<yes|no|0|1>,] [objectcache=<cache>,] [password=<password>,] [showalldesignercolumns=<yes|no|0|1>,] [suppressbuildsearchindex=<yes|no|0|1>,] [synchronizeschemachanges=<yes|no|force>,] [temppath=<path>,] [tenant=<tenant ID>,] [unicode=<yes|no|0|1>,] [useoldeditor=<yes|no>,] [username=<user name>,]
 ``` 
 
 ### Syntax Key  
@@ -448,7 +448,7 @@ Imports a language module from a file to the specified [!INCLUDE[prodshort](../d
 ### Syntax  
 
 ```  
-finsql.exe command=importlangmodule, file=<importfile>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>,] [suppressbuildsearchindex=<yes|no>,]  
+finsql.exe command=importlangmodule, file=<importfile>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>] 
 ```  
 
 ### Parameters  
@@ -499,6 +499,7 @@ finsql.exe command=importobjects, file=<importfile>, [servername=<server>,] [dat
 >  After you import an object from a .txt file, you must compile the object before you use it. If you import an object from a .fob file, then the object is compiled automatically after it is imported. 
 
 *suppressbuildsearchindex*
+
 When importing objects from a .fob file, specifies whether the command will also build the object search index. The parameter has the following values:
 
 -   **no** or **0** \(default\) - the search index in not built.
@@ -506,7 +507,7 @@ When importing objects from a .fob file, specifies whether the command will also
 
  Building the search index makes sure that pages and reports, which are properly configured for search, can be found by the **Tell Me** feature in the client (for more information, see [Adding Pages and Reports to Tell Me](../developer/devenv-al-menusuite-functionality.md). Building the search index will add time to the import operation.
  
-This can be useful if you are importing several .fob files. In which case, for example, you could use `suppressbuildsearchindex=yes` parameter on all `import` commands except the last one. Or, you can skip the search index from the command, and run it afterward from the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] by selecting **Tools** > **Build Object Search Index**.
+Setting `suppressbuildsearchindex=yes` can be useful if you are importing several .fob files. In which case, for example, you could use `suppressbuildsearchindex=yes` parameter on all `import` commands except the last one. Or, you can skip the search index from the command, and run it afterward from the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] by selecting **Tools** > **Build Object Search Index**.
   
  ### Remarks  
  You use the **ImportObjects** command with the finsql.exe from a command prompt. finsql.exe is the executable file that runs the development environment. By default, finsql.exe is located at [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]\\RoleTailored Client\\.  
