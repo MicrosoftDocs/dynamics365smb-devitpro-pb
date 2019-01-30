@@ -22,7 +22,7 @@ On its own, SQL Server query optimizer will try to select the best execution pla
 For more information about configuring the [!INCLUDE[server](../developer/includes/server.md)] instance, see [Configuring Business Central Server](configure-server-instance.md#Database).
 
 > [!IMPORTANT]
-> We recommend that you do not change from the query hint settings unless you are certain that the change will better suit your scenario.
+> We recommend that you do not change the query hint settings from the default values unless you are certain that the change will better suit your scenario.
 
 ## See Also
   
