@@ -382,7 +382,7 @@ finsql.exe command=exporttranslate, file=<exportfile>, [servername=<server>,] [d
  Specifies the path and name of the text file in which to export the text strings, for example *C:\\translatestrings.txt*. This parameter is required.  
 
 ### Remarks  
- You can use this command for translating text strings in multilanguage setup of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This command exports all text strings that are associated with objects, which includes text strings that are defined by for properties of the objects in all languages. <!--For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files](How-to--Add-Translated-Strings-By-Importing-and-Exporting-Multilanguage-Files.md) and [Multilanguage Development](Multilanguage-Development.md). --> 
+ You can use this command for translating text strings in multilanguage setup of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This command exports all text strings that are associated with objects, which includes text strings that are defined by for properties of the objects in all languages. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files). 
 
 ### Example  
  This example shows how to run the ExportTranslate command to export text strings from the *Demo Database BC* database to a .txt type file that has the path and file name *C:\\bctextstrings.txt*.  
@@ -536,7 +536,7 @@ finsql.exe command=importtranslate, file=<importfile>, [servername=<server>,] [d
  Specifies the path and name of the text file that contains the text strings to import, for example *C:\\translatestrings.txt*. This parameter is required.  
 
 ### Remarks  
- You can use this command for translating text strings in multilanguage setup of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The contents of the text file must be compatible with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Therefore, the text file will typically have originated from a text file that was previously exported from the database, and then modified. <!-- For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files](How-to--Add-Translated-Strings-By-Importing-and-Exporting-Multilanguage-Files.md) and [Multilanguage Development](Multilanguage-Development.md).  -->
+ You can use this command for translating text strings in multilanguage setup of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The contents of the text file must be compatible with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Therefore, the text file will typically have originated from a text file that was previously exported from the database, and then modified. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
 
 ### Example  
  This example shows how to run the ImportTranslate command to import text strings from a text file to the *Demo Database NAV \(10-0\)* database. The text file that has the path and file name *C:\\bctextstrings.txt*.  
