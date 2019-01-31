@@ -4,7 +4,7 @@ description: "Overview of the getting started with the container-based developme
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 01/31/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
@@ -24,12 +24,15 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 - With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you sign up for an Azure subscription, and additional costs may be incurred for each container sandbox.
 - Local hosting requires that your computer is running Windows 10 or Windows Server 2016, and you install and configure Docker before setting up the container sandbox.
 
+## Sandboxes
+
+
 ## Set up an Azure-hosted container sandbox
 1. If you you do not already have one, sign up for an Azure subscription.
 
     To get a free subscription and read more information, see [https://azure.microsoft.com](https://azure.microsoft.com).
 
-2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Tell Me](media/search-icon.png "Tell Me icon") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
+2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Tell me what you want to do") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
 3. Choose **Host in Azure**. If prompted, enter the user name amd password of your Azure subscription. 
 
     The Azure portal opens to display a custom deployment form. 
@@ -49,7 +52,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
     - For Windows Server 2016, download from [Docker Enterprise Edition](https://www.docker.com/enterprise-edition).
 
-2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Tell Me](media/search-icon.png "Tell Me icon") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
+2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Tell me what you want to do") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
 3. Choose **Host Locally**.
 4. Save the **CreateBCSandbox.ps1** file to your computer.
 5. Run Windows PowerShell ISE as an administrator.
