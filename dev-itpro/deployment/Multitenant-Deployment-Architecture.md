@@ -10,7 +10,8 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 5867a0fe-a7c2-4be6-a94d-7d2056d28189
 caps.latest.revision: 13
 ---
-# Multitenant Deployment Architecture
+# Multitenant Deployment Architecture in Business Central
+
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports deployments where several different companies access a centrally maintained [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. By using this *multitenancy* support, you can add new customers to your solution easily, and you can roll out updates quickly with limited downtime for your customers.  
   
 > [!NOTE]  
@@ -25,7 +26,7 @@ caps.latest.revision: 13
 ## Tenants, Companies, and Databases  
  A tenant is an entity that uses your solution and stores data in a business database. This is often either a business or a group of legal entities whose data can be stored in one database. In practical terms, a tenant is a database that stores business data for one or more [!INCLUDE[prodshort](../developer/includes/prodshort.md)] companies. Each tenant is connected to a [!INCLUDE[server](../developer/includes/server.md)] instance, but the [!INCLUDE[server](../developer/includes/server.md)] instance can support multiple tenants.  
   
- When you deploy and maintain a [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] solution, you must activate the relationship between the [!INCLUDE[server](../developer/includes/server.md)] instance by mounting the tenant to the [!INCLUDE[server](../developer/includes/server.md)] instance. You can do this by using the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or by running the **Mount-NAVTenant** and **Sync-NAVTenant** cmdlets from the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)]. Similarly, to disconnect a tenant, you can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or run the **Dismount-NAVTenant** cmdlet. For more information, see [How to: Mount or Dismount a Tenant on a Microsoft Dynamics Server Instance](../administration/mount-dismount-tenant.md).  
+ When you deploy and maintain a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, you must activate the relationship between the [!INCLUDE[server](../developer/includes/server.md)] instance by mounting the tenant to the [!INCLUDE[server](../developer/includes/server.md)] instance. You can do this by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or by running the **Mount-NAVTenant** and **Sync-NAVTenant** cmdlets from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. Similarly, to disconnect a tenant, you can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or run the **Dismount-NAVTenant** cmdlet. For more information, see [How to: Mount or Dismount a Tenant on a Microsoft Dynamics Server Instance](../administration/mount-dismount-tenant.md).  
   
  When tenants are mounted, the tenant configurations are stored in the **dbo.$ndo$tenants** table of the application database that is connected to the [!INCLUDE[server](../developer/includes/server.md)] instance. If you connect additional [!INCLUDE[server](../developer/includes/server.md)] instances to the same application database, the added server instances will automatically inherit the tenant configurations from the application database. This means that existing tenants will be automatically mounted to the new server instance. In addition, if you must mount or dismount a tenant, you only have to perform the operation on one of the [!INCLUDE[server](../developer/includes/server.md)] instances. The other server instances will automatically detect and update to the changes.  
   
@@ -39,7 +40,7 @@ caps.latest.revision: 13
   
  For example, if you want to modify a report, and your solution is used by 25 customers, you modify the report in the application database. When each customer then accesses the report, they see the modified report.  
   
-### Deployment Scenarios Supported in [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)]  
+### Deployment Scenarios Supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  
  The following table compares deployment scenarios.  
   
 |Includes application database|No. of business databases per application database|No. of companies in business database|Multitenant deployment|  
@@ -67,13 +68,13 @@ caps.latest.revision: 13
  The URL can specify the tenant ID or the tenant host name if you specify host names as alternative IDs for tenants. For example, the following URL consumes the **Customer** ODATA web service for a specific tenant:  
   
 ```  
-http://localhost:7048/DynamicsNAV/OData/Company('CRONUS-International-Ltd.')/Customer?Tenant=Tenant1  
+http://localhost:7048/BC/OData/Company('CRONUS-International-Ltd.')/Customer?Tenant=Tenant1  
 ```  
   
  If the *mytenant.myservice.com* host name has been specified as an alternative ID for the tenant Tenant1, then the following URL returns the same ODATA web service:  
   
 ```  
-http://mytenant.myservice.com:7048/DynamicsNAV/OData/Company('CRONUS-International-Ltd.')/Customer  
+http://mytenant.myservice.com:7048/BC/OData/Company('CRONUS-International-Ltd.')/Customer  
 ```  
   
 ## See Also  

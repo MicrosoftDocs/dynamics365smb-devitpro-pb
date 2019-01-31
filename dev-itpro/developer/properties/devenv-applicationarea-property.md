@@ -2,7 +2,7 @@
 title: "ApplicationArea Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2018
+ms.date: 01/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,6 +42,6 @@ ApplicationArea = All;
 The **UsageCategory** property is a required setting used together with the **ApplicationArea** property. This enables a page or a report to be avaiable in Search for the navigation support. For more information about navigation support, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).  
    
 ## See Also  
- [APPLICATIONAREA Method](../methods/devenv-applicationarea-method.md)  
+ [ApplicationArea Method](../methods-auto/session/session-applicationarea-method.md)  
  [AccessByPermission Property](devenv-accessbypermission-property.md)  
  [Properties](devenv-properties.md)

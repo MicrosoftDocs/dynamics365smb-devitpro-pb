@@ -24,6 +24,9 @@ A table description contains a list of keys. A key is a sequence of one or more 
 
 The primary key is always active, and SQL Server keeps the table sorted in primary key order and rejects records with duplicate values in primary key fields. Therefore, the values in the primary key must always be unique. Note that it is not the value in each field in the primary key that must be unique, but it is the combination of values in all fields that make up the primary key.  
 
+> [!NOTE]  
+> In the development environment, it is technically possible to create a primary key based on up to 20 fields. However, because of SQL Server limitations, only the first 16 are used.
+
 ## Secondary keys
   
 A secondary key is implemented on SQL Server using an additional structure that is called an *index*. This is like an index that is used in textbooks. A textbook index alphabetically lists important terms at the end of a book. Next to each term are page numbers. You can quickly search the index to find a list of page numbers (addresses), and you can locate the term by searching the specified pages. The index is an exact indicator that shows where each term occurs in the textbook.  
