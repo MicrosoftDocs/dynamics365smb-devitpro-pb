@@ -24,9 +24,6 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 - With Azure hosting, Docker is installed and configured for you. However, Azure hosting requires that you sign up for an Azure subscription, and additional costs may be incurred for each container sandbox.
 - Local hosting requires that your computer is running Windows 10 or Windows Server 2016, and you install and configure Docker before setting up the container sandbox.
 
-## Sandboxes
-
-
 ## Set up an Azure-hosted container sandbox
 1. If you you do not already have one, sign up for an Azure subscription.
 
