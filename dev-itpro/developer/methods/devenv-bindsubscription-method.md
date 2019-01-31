@@ -57,7 +57,7 @@ BEGIN
   BINDSUBSCRIPTION(SubscriberCodeunit5000);  
   DoSomething(…);  // After binding, all subscriptions on SubscriberCodeunit5000 are “active”.  
   
-END; // Notice, that when SubScriberCodeunit888 goes out of scope, all bindings are removed.  
+END; // Notice, that when SubScriberCodeunit5000 goes out of scope, all bindings are removed.  
   
 ```  
   
