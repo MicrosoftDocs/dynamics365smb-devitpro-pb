@@ -77,6 +77,7 @@ The `navcontainerhelper` module also allows you to add the `-includeCSide` switc
 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
-[Keyboard Shortcuts](devenv-keyboard-shortcuts.md)    
+[Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md)  
+[Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  
