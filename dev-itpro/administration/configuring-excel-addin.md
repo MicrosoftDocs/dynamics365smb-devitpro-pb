@@ -17,7 +17,7 @@ You can set up the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] dep
 Without this add-in, users can open a list page in Excel from the **Open in Excel** action on the page, which does not allow them to push changed data back to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When this add-in is set up, the **Open in Excel** action is replaced by the **Edit in Excel** action.
 
 >[!NOTE]
->This Excel add-in is different than the Microsoft Office Excel Add-in that can be installed with  the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client by using the the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].
+>This Excel add-in is different than the Microsoft Office Excel Add-in that can be installed with  the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client by using the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].
 
 ## Prerequisites
 Your deployment must meet the following prerequisites:

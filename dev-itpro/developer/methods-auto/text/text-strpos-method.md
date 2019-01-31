@@ -2,7 +2,7 @@
 title: "StrPos Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 01/21/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The substring for which you want to search.
 ## Return Value
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based index of the first occurence of the substring inside the string.  
+The one-based index of the first occurrence of the substring inside the string.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

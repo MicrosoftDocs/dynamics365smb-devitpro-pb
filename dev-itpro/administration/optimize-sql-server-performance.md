@@ -33,4 +33,5 @@ The following articles describe how to optimize performance in [!INCLUDE[prodlon
 [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Business Central](troubleshoot-long-running-queries-using-event-log.md)
 
 ## See Also  
- [Microsoft SQL Server documentation](http://go.microsoft.com/fwlink/?LinkId=253107)
+[Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)   
+[Microsoft SQL Server documentation](http://go.microsoft.com/fwlink/?LinkId=253107)

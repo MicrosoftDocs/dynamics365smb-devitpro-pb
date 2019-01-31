@@ -32,7 +32,7 @@ Trigger events are system events that are automatically declared and published i
 *ObjectId*  
 Type: Integer  
 
-Specifies the ID of the object that that publishes the event to subscribe to.
+Specifies the ID of the object that publishes the event to subscribe to.
 
 *OnSomeEvent*  
 Type: Text  

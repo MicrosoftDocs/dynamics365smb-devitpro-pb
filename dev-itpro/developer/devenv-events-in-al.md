@@ -25,7 +25,7 @@ You can use events to design the application to react to specific actions or beh
 
 -   Changes to the original application code can be made with minimal impact on the customizations.  
 
-Events can be used for different purposes, such as generating notifications when certain behavior occurs or the state of an entity changes, distributing information, and integrating with external systems and applications. For example, in the [!INCLUDE[demolong](includes/demolong_md.md)], events are used for extensively for workflow and Dynamics 365 for Sales integration.
+Events can be used for different purposes, such as generating notifications when certain behavior occurs or the state of an entity changes, distributing information, and integrating with external systems and applications. For example, in the [!INCLUDE[demolong](includes/demolong_md.md)], events are used extensively for workflow and Dynamics 365 for Sales integration.
 
 The following table describes all the different event types:  
 

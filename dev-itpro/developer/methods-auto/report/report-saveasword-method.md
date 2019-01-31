@@ -2,7 +2,7 @@
 title: "SaveAsWord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 01/21/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -57,7 +57,7 @@ Specifies which record to use in the report. Any filters that have been applied 
 
  If the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] process does not have permission to write to the file that you specify in *FileName*, then you get the following error:  
 
- **Either the caller does not have the required permission or the specified path is read-only.**  
+ **Either the caller does not have the required permission or the specified path is read-only.** 
 
 ## Example  
  This example shows how to use the SAVEASWORD method to save the Word document on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a different computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] application. It requires that you create the following variables.  

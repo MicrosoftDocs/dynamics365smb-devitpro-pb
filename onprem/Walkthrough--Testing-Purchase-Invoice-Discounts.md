@@ -163,6 +163,79 @@ Before you release a customized [!INCLUDE[navnowlong](includes/navnowlong_md.md)
 -   Create additional test functions to test different aspects of vendor discounts. These test functions should include negative tests that validate that the code being tested works as intended under failing conditions.  
   
 -   Run the test codeunit in the **Test Tool** page.  
-  
+
+
+## Code
+
+```
+codeunit 50111 "ERM Vendor Discount"
+{
+    // Specifies the codeunit to be a test codeunit
+    Subtype = Test;
+
+    trigger OnRun()
+    begin
+
+    end;
+
+    // Creates the test function
+    procedure PurchInvDiscCalculationPInvAbove()
+
+    var
+        PurchLine: Record "Purchase Line";
+        MinAmount: Decimal;
+        DocAmount: Decimal;
+        DiscountPct: Decimal;
+        PurchCalcDisc: Codeunit "Purch.-Calc.Discount";
+
+    begin
+        // [SCENARIO] "Inv. Discount Amount" should be calculated on Purchase Invoice (in LCY), where Invoice amount is
+        // above the minimal amount required for invoice discount calculation.
+        // [GIVEN] Vendor with invoice discount percentage "D" for minimal amount "A" in LCY
+        // [GIVEN] Create purchase invoice with one line and amount >"A"
+        DiscountPct := RandomNumberGenerator.RandDec(100, 5);
+        MinAmount := RandomNumberGenerator.RandDec(1000, 2);
+        DocAmount := MinAmount + RandomNumberGenerator.RandDec(100, 2);
+        CreatePurchDocument(PurchLine, PurchLine."Document Type"::Invoice, DocAmount, MinAmount, DiscountPct);
+        // [WHEN] Calculate invoice discount for purchase document (line)
+        PurchCalcDisc.RUN(PurchLine);
+        // [THEN] "Inv. Discount Amount" = Amount "A" * discount "D" / 100
+        PurchLine.FIND;
+        Assert.AreEqual(ROUND(PurchLine."Line Amount" * DiscountPct / 100), PurchLine."Inv. Discount Amount", PurchInvDiscErr);
+    end;
+
+    local procedure CreatePurchDocument(var PurchLine: Record "Purchase Line"; DocumentType: Option; DocAmount: Decimal; MinAmount: Decimal; DiscountPct: Decimal)
+
+    var
+        VendorInvoiceDisc: Record "Vendor Invoice Disc.";
+        PurchaseHeader: Record "Purchase Header";
+        VendorNo: Code[30];
+
+    begin
+        // Create vendor
+        VendorNo := LibraryPurchase.CreateVendorNo;
+        // Create vendor invoice discount
+        VendorInvoiceDisc.INIT;
+        VendorInvoiceDisc.Code := VendorNo;
+        VendorInvoiceDisc.VALIDATE("Currency Code", '');
+        VendorInvoiceDisc.VALIDATE("Minimum Amount", MinAmount);
+        VendorInvoiceDisc.VALIDATE("Discount %", DiscountPct);
+        VendorInvoiceDisc.INSERT(TRUE);
+        // Create purchase line
+        LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader, Purchline, DocumentType, VendorNo, '', 1, '', 0D);
+        PurchLine.VALIDATE("Direct Unit Cost", DocAmount);
+        PurchLine.MODIFY(TRUE);
+    end;
+
+    var
+        RandomNumberGenerator: Codeunit "Library - Random";
+        LibraryPurchase: Codeunit "Library - Purchase";
+        Assert: Codeunit Assert;
+        myInt: Integer;
+        PurchInvDiscErr: TextConst ENU = 'The Purchase Invoice Discount Amount was not calculated correctly.';
+
+}
+```
+
 ## See Also  
  [Testing the Application](Testing-the-Application.md)
