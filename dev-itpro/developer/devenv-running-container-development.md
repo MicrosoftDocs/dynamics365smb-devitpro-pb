@@ -56,10 +56,10 @@ Ready for connections!
 At this point, you can open your internet browser and type in the Web client URL from the log. You will be prompted with a login dialog, where you can login with the NAV Admin Username/Password displayed.
 
 > [!NOTE]  
-> The container image uses a so called self-signed certificate for https communication. Because of that, your browser might warn you that the page you are requesting is unsafe. In those specific circumstances and only for test and dev environments, it is safe to ignore this warning. If you want to solve this warning, you can install the certificate on your PC (see the link under "Files" in the log entries).
+> The container image uses a so called self-signed certificate for https communication. Because of that, your browser might warn you that the page you are requesting is unsafe. In those specific circumstances and only for test and development environments, it is safe to ignore this warning. If you want to solve this warning, you can install the certificate on your PC (see the link under "Files" in the log entries).
 
 ## The NavContainerHelper module
-To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `NavContainerHelper` to work with containers. On a Windows 10 or Windows Server 2016, start Powershell as an Administrator and type:
+To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `NavContainerHelper` to work with containers. On a Windows 10 or Windows Server 2016 machine, start Powershell as an Administrator and type:
 
 ```install-module navcontainerhelper -force```
 
