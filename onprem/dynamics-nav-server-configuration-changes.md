@@ -26,7 +26,7 @@ This article lists new or removed configuration settings for [!INCLUDE[nav_serve
 ## <a name="AzureAd"></a>Azure Active Directory (Azure AD) settings
 |  Setting  |  Description  |
 |-----------|---------------|  
-|  Valid Audiences |  Specifies the allowed audiences for Azure AD authentication. This setting is used to authenticate other Azure AD applications that will communicate with the server instance.<BR /><BR />The value is a semicolon-separated list of audiences. You specify an audience by using the the App URI ID or App ID that is assigned to the application in Azure AD.|
+|  Valid Audiences |  Specifies the allowed audiences for Azure AD authentication. This setting is used to authenticate other Azure AD applications that will communicate with the server instance.<BR /><BR />The value is a semicolon-separated list of audiences. You specify an audience by using the App URI ID or App ID that is assigned to the application in Azure AD.|
 
 ## <a name=""></a>Task Scheduler settings
 |  Setting  |  Description  |

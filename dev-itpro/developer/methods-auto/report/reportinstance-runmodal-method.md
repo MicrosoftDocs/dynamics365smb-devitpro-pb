@@ -2,7 +2,7 @@
 title: "RunModal Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 01/21/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,10 @@ Use the RUNMODAL method or the RUN method if you know at design time the exact r
   
  If the report you specify does not exist, then a compile error occurs.  
   
- The request page is run modally when you use this method.  
+ The request page is run modally when you use this method. 
+
+
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
   
 ## Example  
  This example requires that you create the following variables.  

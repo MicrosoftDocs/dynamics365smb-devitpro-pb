@@ -1,3 +1,4 @@
+
 ---
 title: "Working With Media on Records"
 ms.custom: na
@@ -119,7 +120,7 @@ The following table provides an overview of the C/AL functions that are related 
 When a table record that contains a media object is deleted, the OnDelete trigger gets the media or media set's ID, and uses the ID to look for other references to the media object from the same field index in the same table. If no other references are found, the media object is assumed to be unreferenced and it is deleted. The runtime will not look in all tables in the database to see if a media object is referenced elsewhere, because doing this would decrease performance and result in costly SQL table scans. If media objects are to be shared between tables, they should be shared through a reference table or by sharing the media set field content as described in the next section. 
 
 ## Sharing Media Objects Between Different Tables 
-To maintain data integrity related to media object, it’s important to notice that the Media and MediaSet data types are complex data types that are referenced by an ID. The ID is stored in the record field that contains the media object. If a simple copy operation is performed to copy the media object from one media set field to to another, the ID is copied to the new field. However, the application does not know that the media object is referenced in two different fields, which causes issues when a row that contains the media ID is deleted.  
+To maintain data integrity related to media object, it’s important to notice that the Media and MediaSet data types are complex data types that are referenced by an ID. The ID is stored in the record field that contains the media object. If a simple copy operation is performed to copy the media object from one media set field to another, the ID is copied to the new field. However, the application does not know that the media object is referenced in two different fields, which causes issues when a row that contains the media ID is deleted.  
 
 To avoid unintentionally deleting referenced media objects, media sharing should be done by using the [INSERT function](insert-function--mediaset-.md) function to insert the media (by its ID) into the new media set field. This will create the correct (new) MediaSet records in the system tables, which means that the media object in one field will not be deleted if media object in the other field is deleted. 
 

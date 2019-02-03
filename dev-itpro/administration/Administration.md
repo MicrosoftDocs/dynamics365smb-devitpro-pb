@@ -12,8 +12,13 @@ ms.date: 10/01/2018
 ---
 # Working with Administration Tools
 [!INCLUDE[prodshort](../developer/includes//prodshort.md)] provides different tools for different administration tasks.  
-  
+
+## Online
+
+You must enroll in the Cloud Solution Provider program in order to service Business Central online. In the Microsoft Partner Center documentation, you can learn how to [add a customer](/partner-center/add-a-new-customer), [assign licenses to users](/partner-center/assign-licenses-to-users), and [create new subscriptions](/partner-center/create-a-new-subscription). [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is one of the subscriptions that you can create, and there are [!INCLUDE[prodshort](../developer/includes/prodshort.md)]-specific license types that you can assign to users.  
+
 <!--
+## On-premises
 |To|See|  
 |--------|---------|  
 |Learn about the [!INCLUDE[nav_server](../developer/includes//nav_server_md.md)] Administration Tool, a Microsoft Management Console snap-in that you use to create and manage [!INCLUDE[nav_server](../developer/includes//nav_server_md.md)] instances.|[Business Central Server Administration Tool](administration-tool.md)|  
@@ -25,5 +30,6 @@ ms.date: 10/01/2018
 -->
   
 ## See Also  
-
+[Cloud Solution Provider program - selling in-demand cloud solutions](/partner-center/csp-overview)  
+[The Business Central Administration Center](tenant-admin-center.md)  
 [Deployment](../deployment/Deployment.md)  

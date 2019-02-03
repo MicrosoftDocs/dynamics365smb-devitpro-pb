@@ -46,9 +46,11 @@ In countries, where Microsoft has not delivered a localization, partners can bui
 |-------|-------------|
 |Estonia|et-EE|
 |Hong Kong|zh-HK|
+|Indonesia|en-US|
 |Japan|ja-JP|
 |Malaysia|en-US|
 |Serbia|rs-latn-RS|
+|Singapore|en-US|
 |South Africa|en-ZA|
 |South Korea|ko-KR|
 |Taiwan|zh-TW|
