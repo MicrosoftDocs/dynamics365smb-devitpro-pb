@@ -40,7 +40,7 @@ The following procedure provides an outline of the tasks that are involved in cr
 
 2.  Add an AL method to the object.
 
-    If you do not want to be raised from other objects than the one defining the event publisher, make it a local method by affixing it with `local`. The event still remains available to event subscribers from other objects.   
+    If you do not want the event publisher to be raised from other objects than the one defining it, make it a local method by affixing it with `local`. The event still remains available to event subscribers from other objects.   
 
      You should give the method a name that has the format *On\[Event\]*, where *\[Event\]* is text that indicates what occurred, such as `OnAddressLineChanged`.  
 
