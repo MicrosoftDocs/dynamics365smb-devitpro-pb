@@ -22,6 +22,7 @@
 #### [Ecosystem Features](deployment/embed-app-ecosystem.md)  
 ## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
+### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
