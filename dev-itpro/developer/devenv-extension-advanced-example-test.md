@@ -13,11 +13,10 @@ ms.author: SusanneWindfeldPedersen
 ---
 
 # Testing the Advanced Sample Extension
-It is required to submit tests with your extension in order to pass validation. This walkthrough builds on the advanced sample extension which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you are new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md).
+It is required to submit tests with your extension in order to pass validation. This walkthrough builds on the advanced sample extension which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you are new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample Customer Rewards extension.
 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
-## Developing the test for the sample Customer Rewards extension 
 
 ## Prerequisites
 To complete this walkthrough, you will need:
@@ -52,7 +51,7 @@ In the sample test we will consider the following:
 
 - Each test will also verify that the extension works for a user that does not have SUPER permissions. 
 
-### Writing the tests 
+## Writing the tests 
 We will first create a new project (CustomerRewardsTest) for the tests. You are required to separate the extension and the tests into separate projects.  
 
 Before we can start writing the tests for the extension, we need to do the following: 
@@ -84,7 +83,7 @@ For more information, see [JSON Files](devenv-json-files.md).
 
 After setting the `dependencies` value, you will be prompted to download the symbols from the base project/package if they are not present.  
 
-### Application Test Toolkit 
+## Application Test Toolkit 
 We will be using the Application Test Toolkit to automate and run the tests that we write. The toolkit includes: 
 
 - Codeunits with test functions to test various application areas. 
@@ -103,12 +102,12 @@ Import-TestToolkitToNavContainer -containerName <name-of-container>
 
 Alternatively, if you use the `New-NavContainer` function from the NavContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 
 
-### Describing your tests 
+## Describing your tests 
 To help you design the relevant tests for your functionality, you can write scenarios that outline what you want to test, and you can write test criteria in the GIVEN-WHEN-THEN format. By adding comments based on feature, scenario, and GIVEN-WHEN-THEN, you add structure to your test code and make tests readable. 
 
 The following sections provide an overview of the tags that we recommend you to use. 
 
-#### FEATURE Tag 
+### FEATURE Tag 
 
 ```
 // [FEATURE] [<FeatureTag1>] [<FeatureTagN>]
@@ -116,7 +115,7 @@ The following sections provide an overview of the tags that we recommend you to 
 
 `FeatureTag` represents the name of the feature, application area, functional area, or another aspect of the application. This list of tags must point to an area of your solution that is touched by the test. Order tags in descending importance. Start with the most important tags referring to the WHEN or THEN steps. The `[FEATURE]` tag can be set for the whole test codeunit. This means all tests in this codeunit will inherit the list of tags set there. If a test is supposed to have the same list of tags as the codeunit has, you do not have to add the `[FEATURE]` tag for this test. Add the tags only if the test has something specific to say. 
  
-#### SCENARIO Tag 
+### SCENARIO Tag 
 
 ```
 // [SCENARIO <ScenarioID>] <TestDescription>` 
@@ -126,7 +125,7 @@ The following sections provide an overview of the tags that we recommend you to 
 
 TestDescription represents a short description of the purpose of the test, such as  *Annie can apply a deferral template to a purchase order*. 
 
-#### GIVEN-WHEN-THEN Tags 
+### GIVEN-WHEN-THEN Tags 
 
 The `GIVEN-WHEN-THEN` tags provide a framework for the specific test criteria. 
 
@@ -221,15 +220,15 @@ codeunit 50102 MockCustomerRewardsExtMgt
 } 
 ```
 
-### Customer Rewards Test codeunit object 
+## Customer Rewards Test codeunit object 
 A test codeunit must have its **Subtype** property set to **Test** and the test methods must be decorated with the `[Test]` attribute. When a test codeunit runs, it executes the **OnRun** trigger, and then executes each test method in the codeunit. By default, each test function runs in a separate database transaction, but you can use the **TransactionModel** attribute on test methods to control the transactional behavior. The outcome of a test method is either SUCCESS or FAILURE. If any error is raised by either the code that is being tested or the test code, then the outcome is FAILURE and the error is included in the results log file. Even if the outcome of one test method is FAILURE, the next test methods are still executed. 
 
 In addition to the Application Test Toolkit, the following features are available to help you test your extension: 
 
-#### Test pages 
+### Test pages 
 Test pages mimic actual pages, but do not present any UI on a client computer. Test pages let you test the code on a page by using AL to simulate user interaction with the page. You can access the fields on a page and the properties of a page or a field by using the dot notation. You can open and close test pages, perform actions on the test page, and navigate around the test page by using AL methods. 
 
-#### UI handlers 
+### UI handlers 
 To create tests that can be automated, you must handle cases when user interaction is requested by code that is being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a test method that has a ConfirmHandler handles CONFIRM method calls. If code that is being tested calls the CONFIRM method, then the ConfirmHandler method is called instead of the CONFIRM method. You write code in the ConfirmHandler method to verify that the expected question is displayed by the CONFIRM method and you write AL code to return the relevant reply. The following table describes the available UI handlers.  
 
 |Function Type|Syntax example|Purpose|
@@ -244,7 +243,7 @@ To create tests that can be automated, you must handle cases when user interacti
 
 You must create a specific handler for each page that you want to handle. Any unhandled UI in the test methods of the test codeunit causes a failure of the test.  
 
-#### ASSERTERROR statement 
+### ASSERTERROR statement 
 When you test your extension, you should test that your code performs as expected under both successful and failing conditions. These are called positive and negative tests. To test how your extension performs under failing conditions, you can use the ASSERTERROR keyword. The ASSERTERROR keyword specifies that an error is expected at run time in the statement that follows the ASSERTERROR keyword. If a simple or compound statement that follows the ASSERTERROR keyword causes an error, then execution successfully continues to the next statement in the test function. If a statement that follows the ASSERTERROR keyword does not cause an error, then the ASSERTERROR statement itself fails with an error, and the test function that is running produces a FAILURE result. 
 
 The 50103 **Customer Rewards Test** codeunit contains all the tests for the Customer Rewards extension. For each test method, we follow the following pattern: 
