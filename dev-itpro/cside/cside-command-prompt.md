@@ -502,8 +502,8 @@ finsql.exe command=importobjects, file=<importfile>, [servername=<server>,] [dat
 
 When importing objects from a .fob file, specifies whether the command will also build the object search index. The parameter has the following values:
 
--   **no** or **0** \(default\) - the search index in not built.
--   **yes** or **1** – the search index in not built..
+-   **no** or **0** \(default\) - the search index is not built.
+-   **yes** or **1** – the search index is not built.
 
  Building the search index makes sure that pages and reports, which are properly configured for search, can be found by the **Tell Me** feature in the client (for more information, see [Adding Pages and Reports to Tell Me](../developer/devenv-al-menusuite-functionality.md). Building the search index will add time to the import operation.
  
