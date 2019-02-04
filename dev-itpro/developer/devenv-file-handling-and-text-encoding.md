@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
+
 # File Handling and Text Encoding
 There are several AL methods that you can use to open files, import and export files to and from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and more. For a list of methods, see [File Data Type](datatypes/devenv-file-data-type.md).
 
 The following are recommended best practices for working with files:
 
--   Use fully qualified paths to eliminate ambiguity.
+- Use fully qualified paths to eliminate ambiguity.
 
--   Be aware of operating system file access restrictions when designing applications that use files. Consider which users have access to files and directories and what Access Control List (ACL) that you need to apply to file directories. 
+- Be aware of operating system file access restrictions when designing applications that use files. Consider which users have access to files and directories and what Access Control List (ACL) that you need to apply to file directories. 
 
 ## Text encoding 
 Text encoding is the process of transforming bytes of data into readable characters for users of a system or program. When you import a file as text or as a stream, the text encoding format ensures that all the language-specific characters are represented correctly in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. When you export a file as text or as a stream, the text encoding format ensures that all the language-specific characters are represented correctly in the system or program that will read the exported file.  
@@ -34,9 +35,9 @@ There are several industry text encoding formats and different systems support d
 
 Data is imported and exported as follows:  
   
--   When data is imported from an external file, it is read using the format that is specified by the **TextEncoding** property or parameter, and then converted to Unicode in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].  
+- When data is imported from an external file, it is read using the format that is specified by the **TextEncoding** property or parameter, and then converted to Unicode in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].  
   
--   When data is exported to an external file, it is converted from Unicode in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and then written to the file in the format that is specified by the **TextEncoding** property or parameter.  
+- When data is exported to an external file, it is converted from Unicode in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and then written to the file in the format that is specified by the **TextEncoding** property or parameter.  
   
 You should set the text encoding to the encoding format that is compatible with the system or program that you will be exporting to or importing from. The following sections describe the available text encoding formats.  
   
@@ -61,10 +62,10 @@ You should set the text encoding to the encoding format that is compatible with 
   
  UTF-16 includes two encoding schemes which mandate the byte order: UTF-16LE and UTF-16BE. The schemas are supported as follows:  
   
--   When exporting, the file is written using UTF-16LE encoding.  
+- When exporting, the file is written using UTF-16LE encoding.  
   
--   When importing, the file is read using the UTF-16, UTF-16LE, or UTF-16BE, depending on encoding scheme of the file itself.  
-  /
+- When importing, the file is read using the UTF-16, UTF-16LE, or UTF-16BE, depending on encoding scheme of the file itself.  
+  
 A UTF-16 encoded file will typically be larger than the same file encoded with UTF-8, except for Eastern language character sets, which will typically be smaller.  
   
 UTF-16 is incompatible with ASCII so that it will not understand files written in ASCII format.  
@@ -77,5 +78,5 @@ For example, if an XMLport can import bank files from a foreign bank in addition
 Windows encoding is compatible with ASCII so that it will understand files written in ASCII format.  
   
 ## See Also  
- [TextEncoding Property \(XMLports\)](properties/devenv-TextEncoding-xmlports-Property.md)  
- [File Data Type](datatypes/devenv-file-data-type.md)
+[TextEncoding Property (XMLports)](properties/devenv-TextEncoding-xmlports-Property.md)  
+[File Data Type](datatypes/devenv-file-data-type.md)
