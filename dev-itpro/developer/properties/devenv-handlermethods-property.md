@@ -1,5 +1,5 @@
 ---
-title: "HandlerMethods Property"
+title: "HandlerFunctions Property"
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na
@@ -12,16 +12,14 @@ caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
 
- 
-
-# HandlerMethods Property
+ # HandlerFunctions Property
 Specifies the handler methods that are used by the test method.  
   
 ## Applies To  
 AL test methods on test codeunits. A test method is a method that has the [MethodType Property (Test Codeunits)](devenv-methodtype-property-test-codeunits.md) set to **Test**.  
    
 ## Property Value  
-The handler method name as specified on the **Methods** tab of **the AL Global** window for the test codeunit.  
+The handler method name.  
   
 > [!NOTE]  
 >  If the test method uses more than one handler method, then you should separate the handler method names by a comma.  
@@ -37,7 +35,7 @@ The following is some important information about handler methods:
   
 -   A test method can call MessageHandler, ConfirmHandler, and StrMenuHandler type handlers only once. It can call PageHandler, ModalPageHandler, ReportHandler, RequestPageHandler, or FilterPageHandler type handlers multiple times but only once per application object ID.  
   
--   Every handler method that you enter in the **HandlerMethods** property must be called at least once in the test method. If you execute a test method that has a handler method listed that is not called, then the test fails.  
+-   Every handler method that you enter in the **HandlerFunctions** property must be called at least once in the test method. If you execute a test method that has a handler method listed that is not called, then the test fails.  
   
 <!-- For more information, see [Testing the Application](Testing-the-Application.md) and [How to: Create Handler Methods](../methods/devenv-How-to-Create-Handler-Methods.md).  
 -->
