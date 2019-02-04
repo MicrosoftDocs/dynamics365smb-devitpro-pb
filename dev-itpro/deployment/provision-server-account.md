@@ -88,14 +88,14 @@ For more information, see [Service Principal Names](https://docs.microsoft.com/e
 
 2. Using a text editor, open the SMSvcHost.exe.config file.
 
-    You will find the SMSvcHost.exe.config file in the installation folder for the latest :NET Framework version on the [!INCLUDE[server](../developer/includes/server.md)] computer; for example, ```C:\Windows\Microsoft.NET\Framework\v4.0.30319```.
+    You will find the SMSvcHost.exe.config file in the installation folder for the latest :NET Framework version on the [!INCLUDE[server](../developer/includes/server.md)] computer; for example, `C:\Windows\Microsoft.NET\Framework64\v4.0.30319`.
 3. Add the SID to the <allowAccounts> element as follows, and then save the file: 
 
     ```
     <system.serviceModel.activation>
         <net.tcp listenBacklog="10" maxPendingConnections="100" maxPendingAccepts="2" receiveTimeout="00:00:10" teredoEnabled="false">
             <allowAccounts>
-                // Your NAV Server account
+                <!-- Your NAV Server account -->
                 <add securityIdentifier="N-N-N-N"/>
             </allowAccounts>
         </net.tcp>
