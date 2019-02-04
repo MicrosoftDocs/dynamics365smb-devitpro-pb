@@ -23,7 +23,7 @@ The *card* page type displays selected fields from an underlying table. The *doc
 
 ### Card pages
 
-You design card pages when you want to enable user to view, create, and modify records (master and reference data) in a table, such as a customer, vendor, or item.
+You design card pages when you want to enable users to view, create, and modify records (master and reference data) in a table, such as a customer, vendor, or item.
 
 ### Document pages
 

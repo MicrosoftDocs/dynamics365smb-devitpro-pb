@@ -153,5 +153,6 @@ To configure a SQL Server Authentication on a [!INCLUDE[server](../developer/inc
      Use the *DatabaseCredentials* parameter to provide the login credentials of the database user that you want to use to access the tenant database.  
   
 ## See Also  
+[Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
 [Deployment](../deployment/deployment.md)  
 [Installing Business Central Using Setup](../deployment/install-using-setup.md)  

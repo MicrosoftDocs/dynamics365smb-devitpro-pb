@@ -57,8 +57,6 @@ This article provides an overview of the full upgrade process for Business Centr
 ## Post-upgrade tasks 
 |Step|More info| Done |
 |----|-----------|--|
-|Transition custom code that used codeunit 1 to use the management codeunits.|[See...](transition-from-codeunit1.md)||
 |Import permissions and permission sets.|[See...](How-to--Import-Export-Permission-Sets-Permissions.md)||
 |Import encryption keys|[See...](how-to-export-and-import-encryption-keys.md)||
-|Configure pages and reports included in the MenuSuite to be searchable in the Web client. |[See...](upgrade-pages-report-for-search.md) ||
 |Upload the customer license. |[See...](../cside/cside-upload-license-file.md)||

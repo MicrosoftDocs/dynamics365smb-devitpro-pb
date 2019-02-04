@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 12/19/2018
+ms.date: 01/15/2019
 ms.author: edupont
 ---
 

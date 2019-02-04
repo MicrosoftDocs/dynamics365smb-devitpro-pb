@@ -2,7 +2,7 @@
 title: "RunModal Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 01/21/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,6 +47,8 @@ Specifies which record to use in the report. Any filters that are attached to th
 Use this method, or the [REPORT.RUN Method](report-run-method.md), if you do not know the specific report that you want to run when you are designing your application. If you do know the specific report that you want to run, then you can use the [RUNMODAL Method](reportinstance-runmodal-method.md) or the [RUN Method](reportinstance-run-method.md).  
 
  The request page is run modally when you use this method. However, when the user chooses **Preview** on the request page, the **Print Preview** page does not run modally. 
+
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
 
 ## Example  
  This example shows how to run a report. This example displays the request window and sends the report to the printer selected through the Printer Selection table.  

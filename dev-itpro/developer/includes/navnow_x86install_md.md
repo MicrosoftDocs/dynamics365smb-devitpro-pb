@@ -1,1 +1,1 @@
-C:\\Program Files \(x86\)\\Microsoft Dynamics NAV\\130
+C:\\Program Files \(x86\)\\Microsoft Dynamics 365 Business Central\\130

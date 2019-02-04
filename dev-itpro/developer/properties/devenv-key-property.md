@@ -21,7 +21,11 @@ Use this property to identify the field or fields that make up this key.
  Keys  
   
 ## Remarks  
- You can select up to 20 fields for each key and you can have up to 40 keys for each table. The combination of the data in the fields that you select for the key must be unique. The first key that you create is the primary key for the table. If the key consists of more than one field, separate the fields with commas. For more information, see [Table Keys](../devenv-table-keys.md).  
+ You can select up to 20 fields for each key and you can have up to 40 keys for each table. The combination of the data in the fields that you select for the key must be unique. The first key that you create is the primary key for the table. If the key consists of more than one field, separate the fields with commas. For more information, see [Table Keys](../devenv-table-keys.md).
+
+> [!NOTE]  
+> In the development environment, it is technically possible to create a primary key based on up to 20 fields. However, because of SQL Server limitations, only the first 16 are used.
+
   
  Searching for specific data is usually easier if several keys are defined and maintained for the table. The indexes for each of the keys provide specific views that let the system quickly perform flexible searches. There are advantages and disadvantages to creating a large number of keys. For examples, see the following table.  
   

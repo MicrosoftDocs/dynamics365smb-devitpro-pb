@@ -41,9 +41,11 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes a solution that enables users to access coupled records in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], such as customers and items, from records in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], such as accounts and products. The solution adds a link on the [!INCLUDE[crm_md](../developer/includes/crm_md.md)] record pages that opens the coupled [!INCLUDE[prodshort](../developer/includes/prodshort.md)] record. The solution is also used to display information from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a part on certain entity records in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], such as accounts. Installing this solution is optional.  
 
 
-1.  From [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media \(DVD\), copy the DynamicsNAVIntegrationSolution.zip file to your computer.  
+1.  From [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media \(DVD\), copy either the  DynamicsNAVIntegrationSolution_v8.zip or DynamicsNAVIntegrationSolution_v9.zip file to your computer.  
 
-     The DynamicsNAVIntegrationSolution.zip file is located in the **CrmCustomization** folder. This file is the solution package.   
+    These files are located in the **CrmCustomization** folder. This file is the solution package.
+
+    Use the zip version that matches the [!INCLUDE[crm_md](../developer/includes/crm_md.md)] SDK version. Use DynamicsNAVIntegrationSolution_v8.zip for legacy services running CRM or [!INCLUDE[crm_md](../developer/includes/crm_md.md)] version 8.x and earlier. Use DynamicsNAVIntegrationSolution_v9.zip for [!INCLUDE[crm_md](../developer/includes/crm_md.md)] versions 9.0 and later. 
 
 2.  In [!INCLUDE[crm_md](../developer/includes/crm_md.md)], import the DynamicsNAVIntegrationSolution.zip as a solution.  
 
