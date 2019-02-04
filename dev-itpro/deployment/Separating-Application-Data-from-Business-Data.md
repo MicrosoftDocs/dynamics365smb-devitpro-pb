@@ -19,7 +19,7 @@ ms.service: "dynamics365-business-central"
   
  For example, if you want to modify a report, you modify the report object in the application database. Then, when you deploy the updated application to your production environment, when a user accesses the report, they see the modified report.  
   
- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that help you export application tables to a dedicated database, and other cmdlets to help you maintain a multitenant deployment. For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview.md).  
+ [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that help you export application tables to a dedicated database, and other cmdlets to help you maintain a multitenant deployment. For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).  
   
 ### Distribution of the System Tables in Each Database
   
@@ -60,7 +60,7 @@ The following procedure illustrates how you can separate the application tables 
     > [!IMPORTANT]  
     >  You must run the program as administrator. Also, you must ensure that scripting is enabled on the computer.  
 
-     For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview.md).  
+     For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).  
 
 3.  For an overview of the cmdlet, type the following command:  
 
@@ -77,12 +77,12 @@ The following procedure illustrates how you can separate the application tables 
      For example, to run the cmdlet against the [!INCLUDE[demolong](../developer/includes/demolong_md.md)], type the following command:  
 
     ```  
-    Export-NAVApplication –DatabaseServer 'MyServer' –DatabaseInstance 'NavDemo' –DatabaseName 'Demo Database NAV (13-0)' –DestinationDatabaseName 'Business Central App'  
+    Export-NAVApplication –DatabaseServer 'MyServer' –DatabaseInstance 'BCDemo' –DatabaseName 'Demo Database BC' –DestinationDatabaseName 'Business Central App'  
     ```  
 
-     In the example, the database server name is **MyServer** , and the SQL Server instance is **NavDemo**. The name of the new application database can be anything. You can specify a name that reflects your application.  
+     In the example, the database server name is **MyServer** , and the SQL Server instance is **BCDemo**. The name of the new application database can be anything. You can specify a name that reflects your application.  
 
-     The application database is created on the same SQL Server instance as the original database. In the example, if you connect to the **NavDemo** instance using SQL Server Management Studio you will see two databases: the original database, **Demo Database NAV \(13-0\)**, and the new application database, **Business Central**.  
+     The application database is created on the same SQL Server instance as the original database. In the example, if you connect to the **BCDemo** instance using SQL Server Management Studio you will see two databases: the original database, **Demo Database BC**, and the new application database, **Business Central**.  
 
     At this stage, the original database still contains the application tables, and you can still access it using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]. Next, you must remove the application tables from the original database to make it a tenant database.  
 
@@ -98,7 +98,7 @@ The following procedure illustrates how you can separate the application tables 
     For example, to run the cmdlet against the [!INCLUDE[demolong](../developer/includes/demolong_md.md)] where you have exported the application tables, type the following command:  
 
     ```  
-    Remove-NAVApplication –DatabaseServer 'MyServer' –DatabaseInstance 'NavDemo' –DatabaseName 'Demo Database NAV (13-0)'  
+    Remove-NAVApplication –DatabaseServer 'MyServer' –DatabaseInstance 'BCDEMO' –DatabaseName 'Demo Database BC'  
     ```  
 
     You will be asked to confirm that you want to remove the tables.  
@@ -139,7 +139,7 @@ The following procedure illustrates how you can separate the application tables 
     Mount-NAVTenant –ServerInstance <server instance name> -Id <tenant name> –DatabaseServer <server name\instance name> -DatabaseName <business data database> -OverwriteTenantIdInDatabase  
     ```
 
-For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview.md).  
+For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).  
 
 ## Example  
  The following code example illustrates how you can manually write commands in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration shell. The commands create an application database based on an existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
@@ -148,11 +148,11 @@ For more information, see [Business Central Windows PowerShell Cmdlets](https://
 
 ```  
 Stop-NAVServerInstance –ServerInstance 'businesscentral_server_instance' 
-Export-NAVApplication –DatabaseServer 'MyServer' –DatabaseInstance 'NAVDEMO' –DatabaseName 'Demo Database NAV (13-0)' –DestinationDatabaseName 'Business Central App'| Remove-NAVApplication –DatabaseName 'Demo Database NAV (13-0)' -Force
+Export-NAVApplication –DatabaseServer 'MyServer' –DatabaseInstance 'BCDEMO' –DatabaseName 'Demo Database BC' –DestinationDatabaseName 'Business Central App'| Remove-NAVApplication –DatabaseName 'Demo Database BC' -Force
 Set-NAVServerConfiguration –ServerInstance 'businesscentral_server_instance' –element appSettings –KeyName 'DatabaseName' –KeyValue ''
 Start-NAVServerInstance –ServerInstance 'businesscentral_server_instance'
-Mount-NAVApplication –ServerInstance 'businesscentral_server_instance' –DatabaseServer 'MyServer\NAVDEMO' –DatabaseName 'Business Central App'
-Mount-NAVTenant –ServerInstance 'businesscentral_server_instance' -Id tenant1 –DatabaseServer 'MyServer\NAVDEMO' -DatabaseName 'Demo Database NAV (13-0)' -OverwriteTenantIdInDatabase  
+Mount-NAVApplication –ServerInstance 'businesscentral_server_instance' –DatabaseServer 'MyServer\BCDEMO' –DatabaseName 'Business Central App'
+Mount-NAVTenant –ServerInstance 'businesscentral_server_instance' -Id tenant1 –DatabaseServer 'MyServer\BCDEMO' -DatabaseName 'Demo Database BC' -OverwriteTenantIdInDatabase  
 ```  
 
 In the example, the commands stop the [!INCLUDE[server](../developer/includes/server.md)] service, creates the application database, clears the default database name in the server configuration, and then restarts the service. Then, the application database and the tenant database are mounted, and the configuration is saved in the Tenants.config file on the server. As a result, you have an application database and a single-tenant deployment. When you try to open the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], an error displays because you have not specified a tenant. So in the **Select Server** window, in the **Server Address** field, add the tenant ID to the address. In this example, the address is **localhost:7046/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/tenant1**.  
@@ -163,4 +163,4 @@ In the example, the commands stop the [!INCLUDE[server](../developer/includes/se
 
 ## See Also    
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
- [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview.md)
+ [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)

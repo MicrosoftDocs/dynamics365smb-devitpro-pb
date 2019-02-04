@@ -47,7 +47,7 @@ Sets the type of method in a test codeunit.
     > [!NOTE]  
     >  The parameters of the methods that are being handled are passed as parameters to the handler methods. The value of the parameter can be changed by the handler method.  
   
-     To set up handler method for use by a test method, you assign the handler method to the [HandlerMethods Property](devenv-handlermethods-property.md) of the test method.  
+     To set up handler method for use by a test method, you assign the handler method to the [HandlerFunctions Property](devenv-handlermethods-property.md) of the test method.  
   
      <!-- For more information, see [How to: Create Handler Methods](../devenv-how-to-create-handler-methods.md).  -->
   
