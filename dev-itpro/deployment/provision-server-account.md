@@ -19,7 +19,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] account is used by [!INC
 
 
 ## Prerequisite
-Delete the **[!INCLUDE[prodslong](../developer/includes/prodlong.md)]** folder in the **ProgramData** folder of your system drive, for example, ```C:\ProgramData\Microsoft\Microsoft Dynamics 365 Business Central```. 
+Delete the **[!INCLUDE[prodslong](../developer/includes/prodlong.md)]** folder in the **ProgramData** folder of your system drive, for example, <!--`C:\ProgramData\Microsoft\Microsoft Dynamics 365 Business Central`--> `C:\ProgramData\Microsoft\Microsoft Dynamics NAV\` or `C:\ProgramData\Microsoft\Microsoft Dynamics 365 Business Central`. 
 
 The **ProgramData** is folder is typically hidden, so you might have to change the folder options for your system drive to show hidden files, folders, and drives.
 
@@ -37,7 +37,7 @@ If you are running the [!INCLUDE[server](../developer/includes/server.md)] under
 ### Enabling the account to log in as a service  
 Depending on various factors, the account may already have this ability to log in as a service. For example, if you have already installed SQL Server and configured it to run under the same account, SQL Server will have modified the account to log in as a service.
 
- When this permission is lacking, [!INCLUDE[server](../developer/includes/server.md)] instances may not be able to start.   
+When this permission is lacking, [!INCLUDE[server](../developer/includes/server.md)] instances may not be able to start. 
 
 For instructions for enabling an account to log in as a service, see [Manage User Accounts in Windows Server](https://docs.microsoft.com/en-us/windows-server-essentials/manage/manage-user-accounts-in-windows-server-essentials).  
 
@@ -88,14 +88,14 @@ For more information, see [Service Principal Names](https://docs.microsoft.com/e
 
 2. Using a text editor, open the SMSvcHost.exe.config file.
 
-    You will find the SMSvcHost.exe.config file in the installation folder for the latest :NET Framework version on the [!INCLUDE[server](../developer/includes/server.md)] computer; for example, ```C:\Windows\Microsoft.NET\Framework\v4.0.30319```.
+    You will find the SMSvcHost.exe.config file in the installation folder for the latest :NET Framework version on the [!INCLUDE[server](../developer/includes/server.md)] computer; for example, `C:\Windows\Microsoft.NET\Framework64\v4.0.30319`.
 3. Add the SID to the <allowAccounts> element as follows, and then save the file: 
 
     ```
     <system.serviceModel.activation>
         <net.tcp listenBacklog="10" maxPendingConnections="100" maxPendingAccepts="2" receiveTimeout="00:00:10" teredoEnabled="false">
             <allowAccounts>
-                // Your NAV Server account
+                <!-- Your NAV Server account -->
                 <add securityIdentifier="N-N-N-N"/>
             </allowAccounts>
         </net.tcp>

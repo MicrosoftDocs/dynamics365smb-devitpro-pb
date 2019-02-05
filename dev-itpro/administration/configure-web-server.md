@@ -116,6 +116,7 @@ The following table describes the settings that are available in the navsettings
 |Privacy Link	|Specifies the URL to the privacy information for the application. This link also appears in the sign-in page.|
 | Legal Link |Specifies the URL to the legal information about application. |
 |Sign In Help Link	|This link appears on the sign-in page. It specifies the URL to a resource that provides information to help the user sign in the application.| 
+|PersonalizationEnabled|Specifies whether personalization is enabled in the [!INCLUDE[webclient](../developer/includes/webclient.md)]. Set to `true` to enable personalization.<br /><br />For more information, see [Managing Personalization](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage).|
 
 ## See Also  
 [Setting up Multiple Business Central Web Server Instances](../deployment/configure-multiple-web-server-instances.md)   
