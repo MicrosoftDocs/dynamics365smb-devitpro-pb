@@ -30,8 +30,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0008](appsourcecop-as0008-keynamechangenotallowed.md)|Keys cannot change name.|Keys cannot change name.|Key '{0}' has changed name to '{1}'. Name changes are not allowed.|Upgrade|Error|true|
 |[AS0009](appsourcecop-as0009-keyfieldschangenotallowed.md)|Key fields cannot be changed.|Key fields cannot be changed.|Key '{0}' has changed the key fields. Changes to the field list are not allowed.|Upgrade|Error|true|
 |[AS0010](appsourcecop-as0010-keydeletenotallowed.md)|Keys cannot be deleted.|Keys cannot be deleted.|Key '{0}' has been deleted. Key deletions is not allowed.|Upgrade|Error|true|
-|[AS0011](appsourcecop-as0011-identifiersmusthaveprefix.md)|A prefix is required.|A prefix is required.|The identifier '{0}' must have the prefix '{1}'.|Extensibility|Error|true|
-|[AS0012](appsourcecop-as0012-identifiersmusthavesuffix.md)|A suffix is required.|A suffix is required.|The identifier '{0}' must have the suffix '{1}'.|Extensibility|Error|true|
+|[AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md)|An affix is required.|An affix is required.|The identifier '{0}' must have at least one of the mandatory affixes '{1}'.|Extensibility|Error|true|
 |[AS0013](appsourcecop-as0013-fieldidmustbewithinallocatedrange.md)|The field identifier must be within the allowed range.|The field identifier must be within the allowed range.|The field identifier '{0}' is not valid. It must be within the allowed range '{1}' - '{2}'.|Extensibility|Error|true|
 |[AS0014](appsourcecop-as0014-projectmanifestmustspecifyidrange.md)|The project manifest must contain the allocated identifier range.|The project manifest must contain the allocated identifier range.|The project manifest must contain the allocated identifier range.|Extensibility|Error|true|
 |[AS0015](appsourcecop-as0015-translationsmustbeenabled.md)|Please enable the TranslationFile feature in the app.json file for your project.|Please enable the TranslationFile feature in the app.json file for your project.|Please enable the TranslationFile feature in the app.json file for your project.|Extensibility|Error|true|
@@ -52,17 +51,16 @@ The following table describes the settings in the ```AppSourceCop.json``` file:
 |name|No|The name of a previous version of this package with which you want to compare the current package for breaking changes.|
 |publisher|No|The publisher of a previous version of this package with which you want to compare the current package for breaking changes.|
 |version|Yes|The version of a previous version of this package with which you want to compare the current package for breaking changes.|
-|mandatoryPrefix|No|Prefix that must be prepended to the name of all new application objects, extension objects, and fields|
-|mandatorySuffix|No|Suffix that must be appended to the name of all new application objects, extension objects, and fields.|
+|mandatoryAffixes|No|Affixes that must be prepended or appended to the name of all new application objects, extension objects, and fields.|
 
 The ```name```, ```publisher```, ```version``` properties are used for specifying a previous version of the current package. AppSourceCop will use this information to download the specified package from the server and compare the current package with it. AppSourceCop will report any breaking changes introduced by the current package.
 
-The ```mandatoryPrefix``` and ```mandatorySuffix``` properties specify strings that must be prepended/appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
+The ```mandatoryAffixes``` property specifies strings that must be prepended or appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
 
 ## Example
-In the following example, we will configure AppSourceCop to validate that all new elements have a name that starts with a specified prefix.
+In the following example, we will configure AppSourceCop to validate that all new elements have a name that contains one of the specified affixes.
 
-> NOTE
+> [!NOTE]  
 > Make sure code analysis is enabled and ```${AppSourceCop}``` is in the list of enabled code analyzers.
 
 We start by creating the default "Hello world" extension.
@@ -82,16 +80,19 @@ We continue by adding the configuration file ```AppSourceCop.json``` in the proj
 
 ```
 {
-    "mandatoryPrefix": "Pre"
+    "mandatoryAffixes": [ "Foo", "Bar" ]
 }
 ```
 
 You are immediately greeted by the following error message:
 ```
-AS0011: The identifier 'CustomerListExt' must have the prefix 'Pre'.
+AS0011: The identifier 'CustomerListExt' must have at least one of the mandatory affixes 'Foo, Bar'.
 ```
 
-Prepending **Pre** to the name of the page extension object will fix this error and prevent clashes between this page extension and page extensions added by other developers.
+Prepending **Foo** to the name of the page extension object will fix this error and prevent clashes between this page extension and page extensions added by other developers.
+
+> [!NOTE]  
+> It is still possible to use the ```mandatoryPrefix``` and ```mandatorySuffix``` properties in the ```AppSourceCop.json```, for more information see [AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md).
 
 ## See Also  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
