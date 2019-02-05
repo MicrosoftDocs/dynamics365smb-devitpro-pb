@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 01/15/2019
+ms.date: 02/04/2019
 ms.author: edupont
 ---
 
@@ -151,7 +151,7 @@ For users who use the legacy Windows client connected to [!INCLUDE[prodshort](..
 In both examples, https://myserver.com represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server).  
 
 > [!IMPORTANT]
-> If you use Help Server, the functionality for providing context-sensitive links to Help article does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N.123.htm. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server).  
+> If you use Help Server, the UI-to-Help mapping functionality that was described above does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server).  
 
 ## See Also
 
