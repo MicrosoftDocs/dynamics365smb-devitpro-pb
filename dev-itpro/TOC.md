@@ -117,7 +117,6 @@
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
 ### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
 ## [Debugging in AL](developer/devenv-debugging.md)
-## [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ## Converting, Upgrading, and Installing Extensions V2
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
@@ -146,6 +145,7 @@
 ### [Table Extension Object](developer/devenv-table-ext-object.md)
 ### [Setting Relationships Between Tables](developer/devenv-set-relationships-between-tables.md)
 ### [View Table Data](developer/devenv-view-table-data.md)
+### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ## [Pages](developer/devenv-pages-overview.md)
