@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Germany, local functionality
-ms.date: 12/12/2018
+ms.date: 02/06/2019
 ms.author: SorenGP
 
 ---
@@ -22,7 +22,7 @@ You can take inventory of your items by using the **Physical Inventory Order** a
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Moved| The Physical Inventory Order feature is no longer specific to Germany, so we have made them generally available in the standard product. |
+|Moved| The Physical Inventory Order feature is no longer specific to Germany, so we have made it generally available in the standard product. |
 
 ## Blanket Order Archiving and Document Line Tracking
 You can archive and delete blanket sales and purchase orders. You can view documents that are related to sales order lines and purchase order lines, including from archived order lines. Related documents that you can track include quotes, shipments, receipts, and blanket orders. This helps you to identify documents used to process orders.
