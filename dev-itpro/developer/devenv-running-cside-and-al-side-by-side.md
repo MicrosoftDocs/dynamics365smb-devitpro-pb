@@ -17,6 +17,9 @@ ms.author: solsen
 
 > [!NOTE]
 > If you experience problems with generating symbols, try to delete existing symbols first.
+<!-- 
+> [!NOTE]
+> The symbol references are stored in the **Symbol Reference** column of the **Object Metadata** table of the database. For on-premises installations, if you experience problems with generating symbols, try to setting the values in the **Symbol Reference** column to NULL by using an SQL query, then gnerate the symbols again.-->
 
 ## Get started generating symbols and compiling all objects
 Use the `generatesymbolreference` command specified with the database and server name to add symbol references to the **Object Metadata** table for the specified database. 
