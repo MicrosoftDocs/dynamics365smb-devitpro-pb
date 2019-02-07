@@ -11,24 +11,21 @@ ms.assetid: 7e8b10a5-5769-437c-ac27-a3d5400f3199
 caps.latest.revision: 20
 manager: edupont
 ---
-# Walkthrough: Testing Purchase Invoice Discounts
+# Application Testing Example: Testing Purchase Invoice Discounts
 Before you release a customized [!INCLUDE[navnowlong](includes/navnowlong_md.md)] application to a production environment, you must test the application. This walkthrough demonstrates how to use the test codeunits and test libraries to test an application.  
   
-## About This Walkthrough  
- This walkthrough illustrates the following tasks:  
+## About This Example  
+You have modified codeunit 70, Purch-Calc.Discount, which is a codeunit in the [!INCLUDE[demoname](includes/demoname_md.md)] database. You want to test the functionality of the customized codeunit before you offer the customized application for sale. You create a new test codeunit with new test functions to test the Purch-Calc.Discount codeunit. During development, You use the application test libraries to help write a test with fewer lines of code.  
   
--   Creating a test codeunit.  
-  
-### Prerequisites  
- To complete this walkthrough, you will need:  
+## Prerequisites  
+To complete this example, you will need:  
   
 -   [!INCLUDE[navnowlong](includes/navnowlong_md.md)] with a developer license.  
   
 -   The CRONUS International Ltd. demo data company.  
-  
-## Story  
- Isaac is a business application developer working for CRONUS International Ltd. He has modified codeunit 70, Purch-Calc.Discount, which is a codeunit in the [!INCLUDE[demoname](includes/demoname_md.md)] database. Isaac wants to test the functionality of his customized codeunit before he offers the customized application for sale. He creates a new test codeunit with new test functions to test the Purch-Calc.Discount codeunit. During development, Isaac uses the application test libraries to help him write a test with fewer lines of code.  
-  
+
+-   Imported the Test Toolkit.
+ 
 ## Creating a Test Codeunit and Test Function  
  Isaac creates a new codeunit and specifies that it is a test codeunit. He defines the scenario that he wants to verify, adds a test function to tests the Purch-Calc.Discount functionality, and adds a helper function that can be reused if he decides to extend test coverage.  
   
@@ -164,6 +161,30 @@ Before you release a customized [!INCLUDE[navnowlong](includes/navnowlong_md.md)
   
 -   Run the test codeunit in the **Test Tool** page.  
 
+
+## Task 1: Create the test codeunit and function
+
+Create a new codeunit and specifies that it is a test codeunit. Define the scenario that you want to verify, add a test function to test the Purch-Calc.Discount functionality, and add a helper function that can be reused if you decide to extend test coverage.  
+
+### Guidelines
+-  In this example, the name of the test function consists of the tested functionality, Purchase Invoice Discount Calculation, and relevant parameters that affect the test result. We recommend that you follow this naming pattern for your test functions also. In our example, the following parameters are introduced:  
+  
+  -  `PInv` for the document that is tested, purchase invoices. You can apply the same test to purchase orders or purchase credit memos. Also, we recommend that you have mirrored sets of tests for the sales area.  
+  
+  -  `Above`. It is a good practice to have tests for positive and negative scenarios. In this test, Isaac wants to check that discount come into effect when the document amount is above a minimum amount. But the amount in the document can be also less than or equal to the minimum amount.  
+
+-  Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation. Finally, he adds the C/AL code.The code in this test function prepares the test data by setting a random discount percent, a minimum amount, and a document amount. Then, it creates a purchase document with a line and runs the Purch-Calc.Discount codeunit, which contains the code that is being tested. Finally, it verifies the results of running the Purch-Calc.Discount codeunit and raises an error if the results are not as expected.  
+ 
+## Task 2: Create a helper function
+Tne next task is to create a helper function that generates data for the test.  
+
+### Guidelines
+Isaac can now create additional test functions in this test codeunit to test other aspects of vendor discounts. These test functions should include negative tests, which validate that the code being tested works as intended under failing conditions.  
+
+-  The code in this helper function prepares data for the test by creating a new vendor, setting up the invoice discount, and creating a purchase document with an item. Because this helper function is not specific to the test itself, Isaac can reuse it for similar tests. For example, he can call it with other parameters and create a purchase credit memo, or set up 0% discount, or create a document where the total amount is less than the minimum amount that is specified in **Vendor Invoice Disc.** table.  
+  
+> [!NOTE]  
+>  This test code does not guarantee that the state of the database after you run the test is the same as the state of the database before you run the test.  
 
 ## Code
 
