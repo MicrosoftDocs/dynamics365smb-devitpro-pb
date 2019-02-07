@@ -38,7 +38,7 @@ A RAD file will be deleted as a result of a successful publishing.
 > If RAD publishing fails, then you must do a full publishing before performing another RAD publishing. The final state of an application must be built using full publishing, and never with Rad publishing.
 
 ## RAD shortcuts
-There are two commands for starting a RAD-based action.
+There are two commands for starting a RAD-based action. <!-- Might change, and debugging may not be supported for spring 2019 -->
 
 |Shortcut     |Description|
 |-------------|-----------|
