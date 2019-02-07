@@ -21,7 +21,7 @@ Sets the calculation for FlowFields.
  Table Fields  
   
 ## Remarks  
- You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and whether a record exists. Use the **AssistEdit** button to set up the calculation formula. The **AssistEdit** window lets you reverse the calculation, choose a table and fields, and create filters.  
+ You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and whether a record exists.  
   
 ## See Also  
 [FlowFields](../devenv-flowfields.md)  
