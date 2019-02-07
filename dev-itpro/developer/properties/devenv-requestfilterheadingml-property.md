@@ -35,7 +35,5 @@ Sets the text used as a [RequestFilterHeading Property](devenv-requestfilterhead
   
 -   If you enter a **RequestFilterHeadingML**, this value will be inserted in **RequestFilterHeadingML** as the value for the language that is currently selected. If the language is set to Danish when a value is entered in **RequestFilterHeadingML**, **RequestFilterHeadingML** will be updated with a DAN=<*value*> string. You have to use the abbreviated name (DAN for Danish, for example) of the languages.  
   
--   When you choose the **AssistEdit** button in the **RequestFilterHeadingML** field, the **Multilanguage Editor** window opens. This window has two columns: **Language** and **Value**. The **Language** column is populated with all languages defined by Windows. For your convenience, the full names of the languages are displayed. The **RequestFilterHeadingML** value for a language is added by entering a value in the **Value** field for that language. To save the values that you set, you must close this window by choosing the **OK** button. If you close it by pressing the Esc key, then the **RequestFilterHeadingML** field is not updated.  
-  
 ## See Also  
  [Multilanguage Development](../devenv-multilanguage-development.md)

@@ -25,11 +25,11 @@ This section describes all methods, data types, properties, and triggers in [!IN
 
 ## In this section  
 
--   [AL Method Reference](methods/devenv-al-method-reference.md)  
+- [AL Methods](methods/devenv-al-method-reference.md)  
 
--   [Properties](properties/devenv-properties.md)  
+- [Properties](properties/devenv-properties.md)  
 
--   [Triggers](triggers/devenv-triggers.md)  
+- [Triggers](triggers/devenv-triggers.md)  
 
 ## See Also  
  [AL Development Environment](devenv-reference-overview.md)
