@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 02/04/2019
+ms.date: 02/07/2019
 ms.author: edupont
 ---
 
@@ -152,6 +152,8 @@ In both examples, https://myserver.com represents the URL to the Help Server ins
 
 > [!IMPORTANT]
 > If you use Help Server, the UI-to-Help mapping functionality that was described above does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server).  
+
+For guidance about how to generate HTML files, see the [Readme.md in the public repo for the business functionality content](https://github.com/MicrosoftDocs/dynamics365smb-docs#building-html-files). Optionally, you can choose to reuse the HTML and .HTM files that you used for Dynamics NAV in your online library or Help Server deployment.  
 
 ## See Also
 
