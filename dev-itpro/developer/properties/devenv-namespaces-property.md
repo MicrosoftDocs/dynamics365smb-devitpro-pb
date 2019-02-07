@@ -22,7 +22,7 @@ Specifies namespaces on the XMLport.
 -   XMLports that have the [Format Property (XMLports)](devenv-format-xmlports-property.md) set to **Xml**.  
   
 ## Remarks  
- You can use this property to declare one or more namespaces on the XMLport. To add a namespace, you can choose the **AssistEdit** button or enter the namespaces directly in the field.  
+ You can use this property to declare one or more namespaces on the XMLport.  
   
  A namespace declaration consists of prefix and the namespace name, which has the format *prefix*=*namespace*. Separate multiple namespaces with a comma.  
   
