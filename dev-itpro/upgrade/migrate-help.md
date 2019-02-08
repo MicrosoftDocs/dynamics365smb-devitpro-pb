@@ -1,5 +1,5 @@
 ---
-title: Upgrade Dynamics NAV Help
+title: Upgrade Legacy Help
 description: Reuse your Help from Dynamics NAV for your Business Central solution.
 author: edupont04
 ms.custom: na
@@ -54,6 +54,6 @@ If you do not yet have a website that you publish content to, then there are sev
 ## See Also
 
 [Configuring the Help Experience](../deployment/configure-help.md)  
-[User Assistance Model](../user-assistance.md)
+[User Assistance Model](../user-assistance.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [System Requirements](../deployment/system-requirement-business-central.md)  
