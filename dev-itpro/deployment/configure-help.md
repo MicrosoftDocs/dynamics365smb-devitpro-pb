@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 02/07/2019
+ms.date: 02/08/2019
 ms.author: edupont
 ---
 
@@ -148,12 +148,13 @@ For users who use the legacy Windows client connected to [!INCLUDE[prodshort](..
     <add key="HelpServer" value="https://myserver.com" />
     <add key="HelpServerPort" value="49000" />
 ```
-In both examples, https://myserver.com represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server).  
+
+In both examples, https://myserver.com represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server?target=_blank) in the developer and ITpro content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!IMPORTANT]
-> If you use Help Server, the UI-to-Help mapping functionality that was described above does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server).  
+> If you use Help Server, the UI-to-Help mapping functionality that was described above does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server?target=_blank).  
 
-For guidance about how to generate HTML files, see the [Readme.md in the public repo for the business functionality content](https://github.com/MicrosoftDocs/dynamics365smb-docs#building-html-files). Optionally, you can choose to reuse the HTML and .HTM files that you used for Dynamics NAV in your online library or Help Server deployment.  
+For guidance about how to generate HTML files, see the [Readme.md in the public repo for the business functionality content](https://github.com/MicrosoftDocs/dynamics365smb-docs?target=_blank#building-html-files). Optionally, you can choose to reuse the HTML and .HTM files that you used for Dynamics NAV in your online library or Help Server deployment.  
 
 ## See Also
 
