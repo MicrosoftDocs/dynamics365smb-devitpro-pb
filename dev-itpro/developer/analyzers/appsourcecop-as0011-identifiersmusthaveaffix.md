@@ -2,7 +2,7 @@
 title: "An affix is required."
 ms.author: qutreson
 ms.custom: na
-ms.date: 28/12/2018
+ms.date: 02/08/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,9 @@ In order to avoid name clashes for objects added by your extension and objects a
 ### Using the property mandatoryAffixes
 
 The rule validates that at least one of the affixes specified in the ```mandatoryAffixes``` property of the ```AppSourceCop.json``` is used either at prefix or at suffix on identifier names of new elements. 
+
+> [!NOTE]  
+> This feature is currently only available in Developer Preview, but will be applied with the next major release. You can use the properties `mandatoryPrefix` and `mandatorySuffix` if the `mandatoryAffixes`property is not available to you.
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|

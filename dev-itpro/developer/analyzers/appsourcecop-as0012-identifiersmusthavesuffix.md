@@ -2,7 +2,7 @@
 title: "A suffix is required."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/10/2018
+ms.date: 02/08/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ A suffix is required.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-This rule has been removed in favor of [AS0011 - Identifiers must have an affix](appsourcecop-as0011-identifiersmusthaveaffix.md).
+> [!NOTE]
+> With the next major release this rule will be removed in favor of [AS0011 - Identifiers must have an affix](appsourcecop-as0011-identifiersmusthaveaffix.md).
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
