@@ -49,6 +49,7 @@ In countries, where Microsoft has not delivered a localization, partners can bui
 |Indonesia|en-US|
 |Japan|ja-JP|
 |Malaysia|en-US|
+|Poland|pl-PL|
 |Serbia|rs-latn-RS|
 |Singapore|en-US|
 |South Africa|en-ZA|
