@@ -15,9 +15,11 @@ ms.author: solsen
 # Running C/SIDE and AL Side-by-Side
 [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises supports development using both C/SIDE and AL, as well as Designer side-by-side. When new objects are added or changed in C/SIDE these changes must be reflected in the symbol download in Visual Studio Code using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To enable this reflection, a command and argument called `generatesymbolreference` has been added to finsql.exe and you can run it as illustrated below. 
 
+
+<!-- 
 > [!NOTE]
 > If you experience problems with generating symbols, try to delete existing symbols first.
-<!-- 
+
 > [!NOTE]
 > The symbol references are stored in the **Symbol Reference** column of the **Object Metadata** table of the database. For on-premises installations, if you experience problems with generating symbols, try to setting the values in the **Symbol Reference** column to NULL by using an SQL query, then gnerate the symbols again.-->
 
@@ -31,8 +33,12 @@ Given the `generatesymbolreference` command, C/SIDE will traverse all the object
 finsql.exe Command=generatesymbolreference, Database="Demo Database NAV (11-0)", ServerName=.\NAVDEMO
 ```
 
-> [!NOTE]  
-> This is a lengthy operation.
+This is a lengthy operation.  When you run the command, the console returns to an empty command prompt, and does not display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**.
+    
+When the process ends, a file named **navcommandresult.txt** is saved to the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] installation folder. If the command succeeded, the file will contain text like `[0] [06/12/17 14:36:17] The command completed successfully in '177' seconds.` If the command failed, another file named **naverrorlog.txt** will be generated. This file contains details about the error(s) that occurred.
+
+> [!NOTE]
+> The symbol references are stored in the **Symbol Reference** column of the **Object Metadata** table of the database. For on-premises installations, if you experience problems with generating symbols, and the information in the naverrorlog.txt did not help, try changing the values in the **Symbol Reference** column to NULL by using an SQL query, then generate the symbols again 
 
 ## Continuously generate symbols each time you compile objects in C/SIDE
 The `generatesymbolreference` flag enables incremental symbol generation through the UI or through the compile command passed on the command line.
