@@ -170,6 +170,7 @@
 ### Designing Pages
 #### [Designing List Pages](developer/devenv-designing-list-pages.md)
 #### [Designing Card Pages](developer/devenv-designing-card-pages.md)
+### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 ## [Reports](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
