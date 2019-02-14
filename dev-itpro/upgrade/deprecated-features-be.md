@@ -22,7 +22,7 @@ The possibility to integrate to upload and download bank files through ISABEL.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Removed| Since Dynamics 365 Business Central does not support .NET libraries we previously disabled this functionality. It has now been removed. Integration to ISABEL can be made by partners that want to offer this functionality to their customers.
+|Removed| This feature uses an Automation that is not supported by the Dynamics 365 Business Central compiler and blocks the C/AL to AL conversion. We previously disabled this functionality. It has now been removed. Integration to ISABEL can be made by partners that want to offer this functionality to their customers.
 
 ## See Also
 [Upgrading to Microsoft Dynamics 365 Business Central](upgrading-to-business-central.md)  
