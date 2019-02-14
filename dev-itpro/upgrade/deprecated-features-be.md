@@ -15,7 +15,7 @@ ms.author: soalex
 ---
 
 # Deprecated Features in the Belgian Version of Microsoft Dynamics 365 Business Central
-This topic lists and describes the local functionality for Belgium that has been removed from [!INCLUDE[navnow](../developer/includes/navnow_md.md)], made available from a new page or report, or replaced by a new feature.
+This topic lists and describes the local functionality for Belgium that has been removed from Dynamics 365 Business Central, made available from a new page or report, or replaced by a new feature.
 
 ## ISABEL integration
 The possibility to integrate to upload and download bank files through ISABEL.
