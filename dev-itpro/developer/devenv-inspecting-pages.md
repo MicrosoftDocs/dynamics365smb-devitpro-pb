@@ -98,7 +98,7 @@ If the page is associated with a source table, the **Table** field displays info
 If a page has a source table, the **View table** link is available. This  link will open the table in a separate browser window, allowing you to see all records and fields in the table.
 
 > [!NOTE]
-> To view a table, you must read permission on the table and direct execute permission on the system object **1350 Run table**. This is granted by in permission set on your user account. For more information, see [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions) 
+> To view a table, you must read permission on the table and direct execute permission on the system object **1350 Run table**. This is granted by in permission set on your user account. For more information, see [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions). 
 
 ### [Table Fields](#tab/tablefields)
 
