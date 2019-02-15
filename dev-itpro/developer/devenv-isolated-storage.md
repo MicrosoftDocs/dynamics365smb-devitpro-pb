@@ -1,7 +1,7 @@
 ---
 title: "Isolated Storage"
 ms.custom: na
-ms.date: 11/12/2018
+ms.date: 02/15/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SorenGP
 # Isolated Storage
 Isolated Storage is a data storage that provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. Keys/values in the Isolated Storage are accessible through an API. The involved option type is DataScope.
 
-The methods supported for the DataScope option type are:
+The methods supported for IsolatedStorage are:
 
 |Method|Description|For more information, see|  
 |--------------|-----------------|-------------------------------|  
