@@ -21,8 +21,9 @@ The [!INCLUDE[webclient](includes/webclient.md)] includes a page inspection feat
 - Learn the data model behind a page.
 - Discover pages and parts that can be reused in you application design.
 - Troubleshoot data issues without having to perform tasks like copying the production database, viewing the entire source table, or digging into SQL.
-- Debug the application.
+- Debug the application, complementing [Designer](devenv-inclient-designer.md).
 
+<!--
 To inspect a page, open the [!INCLUDE[webclient](includes/webclient.md)], and in the top right corner, choose ![Settings icon](media/settings_icon_small.png), then choose **Inspect**. Or, you can use the keyboard shortcut Crtl+Alt+F1.
 
 For more information about inspecting a page, see [Inspecting Pages in Business Central](https://docs.microsoft.com/dynamics365/business-central/across-inspect-page) in the Business Central Application help.
@@ -43,7 +44,7 @@ Page inspection is especially designed for administrators, power users, support 
 
 - Debug the application, complementing [Designer](devenv-inclient-designer.md).
 
-
+-->
 ## Working with Page Inspection
 
 To inspect a page, in the top right corner, choose ![Settings icon](media/settings_icon_small.png), then choose **Inspect**. Or, you can use the keyboard shortcut **Ctrl+Alt+F1**.
