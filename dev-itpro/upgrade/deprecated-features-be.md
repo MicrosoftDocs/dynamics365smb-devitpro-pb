@@ -28,4 +28,4 @@ The possibility to integrate to upload and download bank files through ISABEL.
 [Upgrading to Microsoft Dynamics 365 Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
-[Belgium Local Functionality in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Austria/austria-local-functionality)  
+[Belgium Local Functionality in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Belgium/belgium-local-functionality)  
