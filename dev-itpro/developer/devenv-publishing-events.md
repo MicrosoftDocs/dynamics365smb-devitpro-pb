@@ -21,7 +21,7 @@ The first phase of implementing an event is publishing the event. Publishing an 
 - Trigger events, on the other hand, do not require that you create publisher methods. Trigger events are predefined event publisher methods that are called automatically at runtime. This means that trigger events are readily available to subscribers by default.  
 
 ## Creating an event publisher method to publish business and integration events  
-You create an event publisher method the same way you create any method in AL, except that there are specific properties that you set to make it an event publisher. Additionally, an event publisher method has the following requirements and restrictions that you must follow, otherwise you will not be able to compile your code changes:  
+You create an event publisher method the same way you create any method in AL, except that there are specific attributes that you set to make it an event publisher. Additionally, an event publisher method has the following requirements and restrictions that you must follow, otherwise you will not be able to compile your code changes:  
 
 - An event publisher method cannot include any code except comments.  
 
@@ -33,14 +33,14 @@ The following procedure provides an outline of the tasks that are involved in cr
 
 1.  Decide where you want to include the event publisher method.  
 
-    You can include an event publisher method in the AL code of any object type, such as codeunit, page, or table. You can create a new object or use and existing object.  
+    You can include an event publisher method in the AL code of any object type, such as codeunit, page, or table. You can create a new object or use an existing object.  
 
     > [!IMPORTANT]  
     > If you include the event publisher method in a page object, the page must have a source table. Otherwise, you cannot successfully create an event subscriber method to subscribe to the event.
 
 2.  Add an AL method to the object.
 
-    If you do not want to make the event available to event subscribers, make it a local method by affixing it with `local`.    
+    If you do not want the event publisher to be raised from other objects than the one defining it, make it a local method by affixing it with `local`. The event still remains available to event subscribers from other objects.   
 
      You should give the method a name that has the format *On\[Event\]*, where *\[Event\]* is text that indicates what occurred, such as `OnAddressLineChanged`.  
 

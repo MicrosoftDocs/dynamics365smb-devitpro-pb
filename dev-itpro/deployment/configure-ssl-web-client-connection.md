@@ -60,9 +60,9 @@ In a production environment, you should obtain an SSL certificate from a certifi
   
 1.  Download and install Microsoft Application Request Routing for IIS. For example, you can download from [Microsoft Application Request Routing](https://www.microsoft.com/en-us/download/details.aspx?id=47333).   
   
-2.  On the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], open the navsettings.json file for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. Use a text editor, such as Notepad.  
+2.  On the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], open the web.config file for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. Use a text editor, such as Notepad.  
   
-     The navsettings.json is located in the physical path of the web application on IIS. By default, the path is %systemroot%\\inetpub\\wwwroot\\\[VirtualDirectoryName\]. For example, the folder for the default application is %systemroot%\\inetpub\\wwwroot\\[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)].  
+     The web.config file is located in the physical path of the web application on IIS. By default, the path is %systemroot%\\inetpub\\wwwroot\\\[VirtualDirectoryName\]. For example, the folder for the default application is %systemroot%\\inetpub\\wwwroot\\[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)].  
   
 3.  In the `<system.webServer>` element, add the following elements.  
   

@@ -1,18 +1,14 @@
 ---
 title: "System-Defined Variables"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 02/15/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: d3797441-20f0-4463-aa6e-45d61fef1f89
-caps.latest.revision: 17
-authoer: SusanneWindfeldPedersen
+author: SusanneWindfeldPedersen
 ---
-
-
 
 # System-Defined Variables
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically declares and initializes several variables that you can use when you develop applications. The following table describes the system-defined variables.  
@@ -24,7 +20,7 @@ authoer: SusanneWindfeldPedersen
 |CurrPage|This variable specifies the current page. You can access the controls of the page through this variable and set the dynamic properties of the page and its controls.<br /><br /> The CurrPage.Editable variable reflects the run-time value of the editable property, which can be changed at design time, programmatically, or by the user when switching view modes on a page.<br /><br /> The CurrPage.Update([SaveRecord]) variable can be used to save the current record and then update the controls in the page.<br /><br /> When the View mode on a page is **false**, then the Edit, New, and Delete modes are **true**.|  
 |CurrReport|This variable specifies the current report.|  
 |RequestOptionsPage|This variable specifies the request options page for the current report.|  
-|CurrFieldNo|This variable specifies the field number of the current field in the current page. Retained for compatibility reasons.| 
+|CurrFieldNo|This variable specifies the field number of the current field in the current table. Retained for compatibility reasons.| 
 
 ## Example  
  The following example shows how to use the Rec and xRec pair of records.  
@@ -35,9 +31,9 @@ authoer: SusanneWindfeldPedersen
 
  You could use the Rec and xRec variables to design your application in the following way:  
 
--   When validating the customer number field, check whether the order has shipped.  
+- When validating the customer number field, check whether the order has shipped.  
 
--   If the order has shipped, compare the customer number fields in the Rec and xRec records. If they differ, reject the change.  
+- If the order has shipped, compare the customer number fields in the Rec and xRec records. If they differ, reject the change.  
 
 ## See Also  
  [AL Method Reference](methods/devenv-al-method-reference.md)   

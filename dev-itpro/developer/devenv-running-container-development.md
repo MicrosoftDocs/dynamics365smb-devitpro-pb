@@ -3,7 +3,7 @@ title: "Running a Container-Based Development Environment"
 description: "Overview of the running container-based development."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/05/2018
+ms.date: 01/31/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -56,10 +56,10 @@ Ready for connections!
 At this point, you can open your internet browser and type in the Web client URL from the log. You will be prompted with a login dialog, where you can login with the NAV Admin Username/Password displayed.
 
 > [!NOTE]  
-> The container image uses a so called self-signed certificate for https communication. Because of that, your browser might warn you that the page you are requesting is unsafe. In those specific circumstances and only for test and dev environments, it is safe to ignore this warning. If you want to solve this warning, you can install the certificate on your PC (see the link under "Files" in the log entries).
+> The container image uses a so called self-signed certificate for https communication. Because of that, your browser might warn you that the page you are requesting is unsafe. In those specific circumstances and only for test and development environments, it is safe to ignore this warning. If you want to solve this warning, you can install the certificate on your PC (see the link under "Files" in the log entries).
 
 ## The NavContainerHelper module
-To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `NavContainerHelper` to work with containers. On a Windows 10 or Windows Server 2016, start Powershell as an Administrator and type:
+To support the use of containers, optional PowerShell scripts are available, which support setup of development environments. Use the `NavContainerHelper` to work with containers. On a Windows 10 or Windows Server 2016 machine, start Powershell as an Administrator and type:
 
 ```install-module navcontainerhelper -force```
 
@@ -77,6 +77,7 @@ The `navcontainerhelper` module also allows you to add the `-includeCSide` switc
 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
-[Keyboard Shortcuts](devenv-keyboard-shortcuts.md)    
+[Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md)  
+[Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  
