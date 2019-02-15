@@ -12,23 +12,54 @@ caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # QuickEntry Property
-Specifies if the page control should have input focus. The default value of the property is **true**. To specify that a control can be skipped, change this value to **false**.  
+
+Specifies whether the page field control has input focus when users navigate through fields by pressing the Enter key. 
+
+
+<!-- 
   
 > [!NOTE]  
->  Specifying an expression as the value of the property is not supported.  
+>  Specifying an expression as the value of the property is not supported.  -->
   
-## Applies To  
+## Applies To
+  
 Page fields  
 
-This property is ignored for fields in a list, such as on a **List** type page<!-- onprem in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md-md)]-->.
+<!-- onprem in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md-md)]-->
+
+
+## Property Value
+ 
+**true** specifies that the field has input focus when users move through fields by pressing Enter; **false** specifies the field to be skipped. The default is **true**.
+
+The property can be also be configured dynamically by using a Boolean variable or a Boolean type field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”.  
 
 ## Remarks  
- Apply this property setting to page controls that can be skipped for a faster entry of data. The **QuickEntry** property is respected when you use the Enter key. Tabbing through a page will sequentially give input focus to all page controls.  
+
+This property helps accelerate data entry, when using the keyboard, by only focusing on those fields a user typically fills in; skipping those that are rarely filled in. The **QuickEntry** property is respected when users press the Enter key. This behavior differs from using the Tab key, which will sequentially give input focus to all page controls. By using this property, you define a path for entering data, which is beneficial for repetitive data entry tasks.
+
+As a developer, the **QuickEntry** property can also be set also by using Designer (see [Using Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user)).
+
+## Example
+
+This example illustrates how to dynamically set the **QuickEntry** property by using a Boolean field on the page. The code modifies the **Customer Card** page so that the **Credit Limit (LCY)** field is skipped if the **Allow Invoice Discount** field is not selected.
+
+```
+pageextension 50100 CustomerCardExt extends "Customer Card"
+{
+    layout
+    {
+        modify("Credit Limit (LCY)")
+        {
+            QuickEntry = "Allow Line Disc.";
+        }
+
+    }
+```
+
+Now, when a user enables **Allow Invoice Disc.** on the customer card, the **Credit Limit (LCY)** field receives focus when the user presses Enter to move focus to the field. Otherwise, focus skips over the field when the user presses Enter.
+
+## See Also
   
- On pages, you use the **QuickEntry** property for groups, parts, fields, and action controls. You can enable or disable them either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”.  
-    
-## See Also  
  [Properties](devenv-properties.md)
