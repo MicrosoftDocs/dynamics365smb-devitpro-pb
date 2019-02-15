@@ -26,6 +26,8 @@ The following articles describe how to optimize performance in [!INCLUDE[prodlon
 
 [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)  
 
+[Configuring Query Hints for Optimizing SQL Server Performance with Business Central](sql-server-query-hints.md)
+
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)  
 
 [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshoot-query-performance-using-query-store.md)
