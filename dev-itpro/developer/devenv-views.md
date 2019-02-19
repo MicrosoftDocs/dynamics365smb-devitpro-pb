@@ -35,6 +35,14 @@ The following is an example of the syntax:
 OrderBy = ascending ("Balance (LCY)", Name);
 ```
 
+> [!NOTE]
+> All filters are applied to the table field(s), not the page field(s), which allows filtering on a table field not shown on the page.
+
+## Limitations
+In general, views can in several ways be compared to page customizations. These are the limitations of views:
+
+- 
+
 ## View example
 
 ```
