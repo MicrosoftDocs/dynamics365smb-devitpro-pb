@@ -29,7 +29,7 @@ You can filter on the data in a view by using the Filter <!--[Filter](properties
 ```
 Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*'));
 ```
-You can sort on the data in a view by using the [OrderBy](properties/devenv-orderby-property) property.
+You can sort on the data in a view by using the [OrderBy](properties/devenv-orderby-property.md) property.
 The following is an example of the syntax:
 ```
 OrderBy = ascending ("Balance (LCY)", Name);
