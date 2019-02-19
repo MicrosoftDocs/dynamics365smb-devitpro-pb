@@ -11,7 +11,7 @@ ms.author: solsen
 ---
 
 # Views
-Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-cust-object.md). Views are defined on page extension objects to provide an alternative view of data and/or layout on an existing page, and in views on page customization objects, they can be used to provide an alternative view for a certain profile.
+Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). Views are defined on page extension objects to provide an alternative view of data and/or layout on an existing page, and in views on page customization objects, they can be used to provide an alternative view for a certain profile.
 
 A view offers:
 
