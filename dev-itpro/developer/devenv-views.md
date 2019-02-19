@@ -46,4 +46,4 @@ OrderBy = ascending ("Balance (LCY)", Name);
 [Developing Extensions](devenv-dev-overview.md)  
 [Page Object](devenv-page-object.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
-[Page Customization Object](devenv-page-cust-object.md)  
+[Page Customization Object](devenv-page-customization-object.md)  
