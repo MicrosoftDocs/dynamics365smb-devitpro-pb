@@ -16,14 +16,17 @@ Sets the filter that you want to use to define the view of the source table pres
 - Views  
 
 ## Example
+<!-- example to be updated with views example -->
 
 ```
 page 50101 MyCustomers
 {
     PageType = List;
     SourceTable = Customer;
-    SourceTableView = sorting (Name) order(descending)
- where ("Balance (LCY)" = filter (>= 50000), "Sales (LCY)" = filter (<> 0));
+
+
+    Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*'));
+
     layout
     {
         area(Content)
