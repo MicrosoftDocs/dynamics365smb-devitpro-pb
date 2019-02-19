@@ -25,11 +25,11 @@ Views are defined directly in code, on the list page that they modify. The defin
 Typing the shortcut `tview` will create the basic layout for a view when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Filtering and sorting
-You can filter on the data in a view by using the [Filter]() property. The following is an example of the syntax:
+You can filter on the data in a view by using the Filter <!--[Filter](properties/devenv-filter-property.md) --> property. The following is an example of the syntax:
 ```
 Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*'));
 ```
-You can sort on the data in a view by using the [OrderBy]() property.
+You can sort on the data in a view by using the [OrderBy](properties/devenv-orderby-property) property.
 The following is an example of the syntax:
 ```
 OrderBy = ascending ("Balance (LCY)", Name);

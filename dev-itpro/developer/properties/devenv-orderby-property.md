@@ -12,8 +12,8 @@ author: SusanneWindfeldPedersen
 Sorts rows in the resulting dataset of a query in ascending or descending order by a column or columns.  
   
 ## Applies to  
-- [Query](devenv-query-object.md) objects
-- [Views](devenv-views.md)
+- [Query](../devenv-query-object.md) objects
+- [Views](../devenv-views.md)
   
 ## Property Value  
  *Column*=**Ascending**&#124;**Descending**  
