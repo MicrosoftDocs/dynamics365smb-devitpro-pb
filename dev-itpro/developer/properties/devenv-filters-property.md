@@ -1,23 +1,19 @@
 ---
-title: "SourceTableView Property"
+title: "Filters Property"
+
 ms.custom: na
-ms.date: 01/25/2019
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 02/19/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 3b99a282-bc11-471c-928c-3b305d94a900
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-# SourceTableView Property
-Sets the key, sort order, and filter you want to use to determine the view of the source table presented to the user.  
+# Filters Property
+Sets the filter that you want to use to define the view of the source table presented to the user. This property can be set on [views](../devenv-views.md).
   
 ## Applies To  
   
--   Pages  
+- Views  
 
 ## Example
 
@@ -46,4 +42,4 @@ page 50101 MyCustomers
 For more information on how you can scan, find, and limit records in a list, see [Sorting, Searching, and Filtering Lists](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-enter-criteria-filters). 
   
 ## See Also  
- [Properties](devenv-properties.md)
+[Properties](devenv-properties.md)
