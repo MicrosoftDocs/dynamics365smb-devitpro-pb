@@ -1,5 +1,5 @@
 ---
-title: "Getting Onboarded through Ready to Go"
+title: "Getting Started with AppSource - Overview"
 description: ""
 author: 
 ms.custom: na
@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Getting Onboarded through Ready to Go
+# Onboarding thru Ready To Go Resources
 
-## See Also 
+## More content...
+
