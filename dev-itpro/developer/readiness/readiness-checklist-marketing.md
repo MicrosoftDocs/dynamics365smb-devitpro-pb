@@ -19,25 +19,25 @@ We have created a checklists with guidelines that will help you to create a comp
 |REQUIREMENTS - Click on each link below for more info|
 |----------|
 |General Best Practices including Language and Branding|
-|Offer Name|[]()|
-|Offer Summary|[]()|
-|Description|[]()|
-|Keywords|[]()|
-|Premium SKU Listing|[]()|
-|Package and App Type|[]()|
-|Supported Countries|[]()|
-|Help Link|[]()|
-|Privacy Policy Link|[]()|
-|License Agreeement|[]()|
-|Support Link|[]()|
-|Screenshots|[]()|
-|Documents|[]()|
-|Videos|[]()|
+|Offer Name|
+|Offer Summary|
+|Description|
+|Keywords|
+|Premium SKU Listing|
+|Package and App Type|
+|Supported Countries|
+|Help Link|
+|Privacy Policy Link|
+|License Agreeement|
+|Support Link|
+|Screenshots|
+|Documents|
+|Videos|
 
 |Special Rules for Localization and Connect Apps|
 |----------|
-|Localization|[]()|
-|Connect Apps|[]()|
+|Localization|
+|Connect Apps|
 
 
 ### Language & Branding Requirements 
