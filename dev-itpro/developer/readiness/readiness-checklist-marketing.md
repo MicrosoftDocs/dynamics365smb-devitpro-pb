@@ -22,22 +22,22 @@ We have created a checklists with guidelines that will help you to create a comp
 |[Offer Name](readiness-checklist-marketing.md#OfferSummary)|
 |[Offer Summary](readiness-checklist-marketing.md#OfferSummary)|
 |[Description](readiness-checklist-marketing.md#OfferDescription)|
-|[Keywords]()|
-|[Premium SKU Listing]()|
-|[Package and App Type]()|
+|[Keywords](readiness-checklist-marketing.md#SupportedProd)|
+|[Premium SKU Listing](readiness-checklist-marketing.md#)|
+|[Package and App Type](readiness-checklist-marketing.md#)|
 |[Supported Countries](readiness-checklist-marketing.md#CountriesLanguagesApp)|
-|[Help Link]()|
+|[Help Link](readiness-checklist-marketing.md#HelpSupport)|
 |[Privacy Policy Link](readiness-checklist-marketing.md#Privacy)|
-|[License Agreeement]()|
-|[Support Link]()|
-|[Screenshots]()|
+|[License Agreeement](readiness-checklist-marketing.md#Privacy)|
+|[Support Link](readiness-checklist-marketing.md#HelpSupport)|
+|[Screenshots](readiness-checklist-marketing.md#Marketing)|
 |[Documents](readiness-checklist-marketing.md#Marketing)|
 |[Videos](readiness-checklist-marketing.md#Marketing)|
 
 |Special Rules for Localization and Connect Apps|
 |----------|
-|[Localization]()|
-|[Connect Apps]()|
+|[Localization](readiness-checklist-marketing.md#)|
+|[Connect Apps](readiness-checklist-marketing.md#)|
 
 
 ### <a name="LanguageBranding"></a>Language & Branding Requirements 
