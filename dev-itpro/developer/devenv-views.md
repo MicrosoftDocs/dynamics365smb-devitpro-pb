@@ -4,7 +4,7 @@ description: "Description of what views are and how they are defined in Business
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/19/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -29,24 +29,63 @@ You can filter on the data in a view by using the Filter <!--[Filter](properties
 ```
 Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*'));
 ```
-You can sort on the data in a view by using the [OrderBy](properties/devenv-orderby-property.md) property.
-The following is an example of the syntax:
+For more information, see [Filters]().
+
+You can sort on the data in a view by using the `OrderBy` property. The following is an example of the syntax:
 ```
 OrderBy = ascending ("Balance (LCY)", Name);
 ```
+For more information, see [OrderBy](properties/devenv-orderby-property.md).
 
 > [!NOTE]
 > All filters are applied to the table field(s), not the page field(s), which allows filtering on a table field not shown on the page.
 
 ## Limitations
-In general, views can in several ways be compared to page customizations. These are the limitations of views:
+In general, views can in several ways be compared to page customizations. These are the limitations of views: <!-- check -->
 
+- For views you can modify the same control properties as for page customization objects independently of where the view has been defined (page, page extension or page customization level). This is validated by the compiler. 
 - 
+- It is not possible to use variables or methods in a view. When writing client side expression for properties like **Visibility**, it will only be possible to use constant values or table field references. This is validated by the compiler.
+
+- It is not possible to create new controls for a page from a view.
 
 ## View example
+The following example shows a page customization of the **Customer List** page, which is available for a specific role center only. The definition of the view adds a caption which is displayed on the left side in the UI. The view sorts the customer balance in ascending mode and the view modifies the layout by moving the customer balance first and adding a freeze column after it.
 
 ```
+profile MyProfile
+{
+    Description = 'My Role Center';
+    RoleCenter = "Order Processor Role Center";
+    Customizations = MyCustomization;
+}
 
+pagecustomization MyCustomization customizes "Customer List"
+{
+    views
+    {
+        addfirst
+        {
+            view(BalanceLCY)
+            {
+                Caption = 'Ordered Balance LCY';
+                OrderBy = ascending ("Balance (LCY)");
+
+
+                layout
+                {
+                    movefirst(Control1; "Balance (LCY)")
+
+                    modify(Control1)
+                    {
+                        FreezeColumn = "Balance (LCY)";
+
+                    }
+                }
+            }
+        }
+    }
+}
 ```
 
 ## See Also  
