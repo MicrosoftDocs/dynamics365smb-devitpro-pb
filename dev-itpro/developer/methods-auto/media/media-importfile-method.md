@@ -2,7 +2,7 @@
 title: "ImportFile Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ImportFile Method
 Adds a media type, such as a JPEG image, from a file to a Media data type field of a record for displaying the media with the record in the client. The media file is imported to the application database, and a reference to the media is included in the Media data type field.
+
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```

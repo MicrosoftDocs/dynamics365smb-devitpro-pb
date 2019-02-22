@@ -2,7 +2,7 @@
 title: "Run Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # Run Method
 Loads and executes the unit of C/AL code that you specify.
 
+
 ## Syntax
 ```
-[Ok := ]  Codeunit.Run(var Record: Table)
+[Ok := ]  Codeunit.Run(var Record: Record)
 ```
 ## Parameters
 *Codeunit*  
@@ -26,7 +27,7 @@ Loads and executes the unit of C/AL code that you specify.
 An instance of the [Codeunit](codeunit-data-type.md) data type.  
 
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 A record from the table that is associated with the codeunit.  
 
 
