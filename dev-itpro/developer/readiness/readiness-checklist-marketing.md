@@ -18,31 +18,32 @@ We have created a checklists with guidelines that will help you to create a comp
 
 |REQUIREMENTS - Click on each link below for more info|
 |----------|
-|General Best Practices including Language and Branding|
-|Offer Name|
-|Offer Summary|
-|Description|
-|Keywords|
-|Premium SKU Listing|
-|Package and App Type|
-|Supported Countries|
-|Help Link|
-|Privacy Policy Link|
-|License Agreeement|
-|Support Link|
-|Screenshots|
-|Documents|
-|Videos|
+|[General Best Practices including Language and Branding](readiness-checklist-marketing.md#LanguageBranding)|
+|[Offer Name](readiness-checklist-marketing.md#OfferSummary)|
+|[Offer Summary](readiness-checklist-marketing.md#OfferSummary)|
+|[Description](readiness-checklist-marketing.md#OfferDescription)|
+|[Keywords]()|
+|[Premium SKU Listing]()|
+|[Package and App Type]()|
+|[Supported Countries](readiness-checklist-marketing.md#CountriesLanguagesApp)|
+|[Help Link]()|
+|[Privacy Policy Link](readiness-checklist-marketing.md#Privacy)|
+|[License Agreeement]()|
+|[Support Link]()|
+|[Screenshots]()|
+|[Documents](readiness-checklist-marketing.md#Marketing)|
+|[Videos](readiness-checklist-marketing.md#Marketing)|
 
 |Special Rules for Localization and Connect Apps|
 |----------|
-|Localization|
-|Connect Apps|
+|[Localization]()|
+|[Connect Apps]()|
 
 
-### Language & Branding Requirements 
+### <a name="LanguageBranding"></a>Language & Branding Requirements 
 
-> [!NOTE]  Your App must be in English.
+> [!NOTE]  
+> Your App must be in English.
 
 LANGUAGE 
 - English is the de facto language that is used on AppSource to ease the validation process and create a uniform user experience.
@@ -51,20 +52,24 @@ LANGUAGE
 BRANDING
 - Be consistent with the branding throughout your communication. Based on the new branding guidelines, product name needs to be listed by the full name **Microsoft Dynamics 365 Business Central** at first mention on the page and at all prominent locations such as titles, headings, etc. - Subsequent mentions can drop Microsoft and simply just reference **Dynamics 365 Business Central**. 
 
-> [!NOTE] All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted ~~BC~~, ~~Business Central~~, ~~D365~~ or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. 
+> [!NOTE]  
+> All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted ~~BC~~, ~~Business Central~~, ~~D365~~ or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. 
  
-### Offer Name and Offer Summary
+
+### <a name="OfferSummary"></a>Offer Name and Offer Summary
 
 - **Offer Name** There are many things to consider when creating a relavant and enticing name for your offer. Ideally, your app name should communicate the core value customers will receive and it should not be tied to a specific product. Click on the tab below for more details around Offer Name.
 
 - **Offer Summary** This is the first paragraph that the prospect reads, as it will appear on your app's search page. Hence, make sure that it is clear and concise. Click on the tab below for more details around Offer Summary.
 
-### Offer Description 
+### <a name="OfferDescription"></a>Offer Description 
+
 - **Offer Description** This description will appear on AppSource, just below your Offer Summary. When describing your solution, do not focus on the underlying technology or operational features. Prospects can learn about the details later. Your primary objective is conversion, which means motivating prospects into action. The optimal approach is to remind them of the pain they are likely experiencing and reference the benefits they will experience once they start using your solution. Clearly articulate a compelling desired outcome and result. We recommend you to add a link to your app landing page at the end of your description. Maximum allowed is 1300 characters.
 
 - Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central App. It's required and strongly recommended to have the following 6 paragraphs to showcase your App in the best light posssible. 
 
 How to structure the paragraphs in your description:
+
 - Introduction paragraph
 - Pain based paragraph
 - Benefit based paragraph
@@ -72,13 +77,15 @@ How to structure the paragraphs in your description:
 - Supported Editions paragraph
 - Supported Countries paragraph
 
-> [!TIP] By including all of these paragraphs you will provide prospects with a compelling offer that explains to them WHY they need to take action and use it. 
+> [!TIP]  
+> By including all of these paragraphs you will provide prospects with a compelling offer that explains to them WHY they need to take action and use it. 
 
 How to format your description in the Cloud Partner Portal?
 
 The right formatting enables prospects to get a quick overview of the value that your offer can give them. Making the description compelling and nice to look at is therefore of key importance. 
 
-When formatting the description of your offer please consider the following: 
+When formatting the description of your offer please consider the following:  
+
 - The description can max. be 3000 characters incl. spaces.
 - Use simple html tags when formatting your description to create structured sections that are easy to get an overview of. 
 - The following html tags are allowed: 
@@ -89,33 +96,34 @@ p, em, ul, li, ol and header tags
 
 **Introduction Paragraph** To capture (and keep) the interest of the prospects you need to create interest and positive mental acknowledgement from the start. This can be achieved by asking relevant provocative questions that prospects either do not know the answer to or can relate to in the introduction paragraph.
 
-__How to structure the content in this paragraph?__
+**How to structure the content in this paragraph?**
 - Make a section where you ask proactive questions. 
 - Speak to a core pain they are likely experiencing that has a negative measurable impact.
 - The question should stimulate a strong emotional response.  
-__How to format this paragraph?__
+**How to format this paragraph?**
 - Format this section as *a headline in itallic*. 
-- Use these html tags: <h2><em> section with provocative questions </em></h2> 
+- Use these html tags: `<h2><em>` section with provocative questions `</em></h2>` 
 
-> [!Example] Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets? 
+Example: Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets? 
 
 **Pain Paragraph** Pain is the most compelling motivator of driving prospects to take action. Therefore, it is of the upmost importance that you communicate WHY your prospects need your product through a “pain-based” paragraph that call out the fears that they are facing. 
 
-__How to structure the content in this paragraph?__
+**How to structure the content in this paragraph?**
 - Use this paragraph to clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems. 
 - Describe the business challenges they are facing now (pain) and the ways their revenue growth, margins, productivity (desire), and so on are being negatively impacted by not taking action now.   
 - Most importantly, call out the fears that are likely holding them back.
 - Remind them of the cost (higher risk, lower margins, lost sales) they are experiencing by putting off a decision. In so doing you have a bigger likelyhood of getting the messages through to them and enticing them to take action. 
 
-__How to format this paragraph__
+**How to format this paragraph**
 - Format this section as a paragraph 
-- Use these html tags: <p> pain paragraph</p> 
+- Use these html tags: `<p>` pain paragraph`</p>` 
 
-> [!Example] Managing inventory is a delicate balancing act. Carry too little and you lose orders (and customers). Carry too much and you tie up much needed working capital. Carry far too much and you end up discounting, or worse, writing off obsolete products.  
+Example: Managing inventory is a delicate balancing act. Carry too little and you lose orders (and customers). Carry too much and you tie up much needed working capital. Carry far too much and you end up discounting, or worse, writing off obsolete products.  
 
 **Benefit Paragraph** Likewise, you should also make a paragraph that describes the most important benefits and rewards that your prospects will realize by using your offer.  
 
-__How to structure the content in this paragraph?__
+**How to structure the content in this paragraph?**
+
 - Tell them what they will gain by using your offer  
 - You do not need to tell them how you do it, just what they will gain.
 - When describing the potential value in specific, measurable business terms ayou will appeal to both their desire and greed. 
@@ -124,13 +132,15 @@ __How to structure the content in this paragraph?__
 - Avoid the temptation of simply listing features and app functionality. 
 - If you make strong claims in the benefit paragraph, make sure you support them with proof.  
 
-__How to format this paragraph__
+**How to format this paragraph**
+
 - Format this section as a paragraph 
 - Use these html tags: 
-<p> 1st benefit paragraph</p> 
-<p> 2nd benefit paragraph</p> 
+`<p>` 1st benefit paragraph`</p>` 
+`<p>` 2nd benefit paragraph`</p>` 
 
-> [!Example] Our app uses Cortana Intelligence to analyze historical data to predict future demand, so you can base procurement decisions on accurate and reliable forecasts, and help your company avoid lost revenue, optimize shipping costs, discover trends and boost your brand reputation by always delivering on orders. 
+> [!EXAMPLE]  
+Our app uses Cortana Intelligence to analyze historical data to predict future demand, so you can base procurement decisions on accurate and reliable forecasts, and help your company avoid lost revenue, optimize shipping costs, discover trends and boost your brand reputation by always delivering on orders. 
 
 Stop relying on basic spreadsheets that take hours of valuable time to complete. Turn anxiety into proactive control and manage this critical business process in minutes by using Microsoft’s Sales and Inventory Forecast extension. 
 
@@ -140,36 +150,37 @@ Stop relying on basic spreadsheets that take hours of valuable time to complete.
 - Calls to actions are active directions to your offer’s Landing page, a link to a button at the storefront details and/or a “learn more” document.
 - We recommend that you link to both a button and your offer’s unique app landing page in the closing call to action. 
 
-__How to structure the content in this paragraph?__
+**How to structure the content in this paragraph?**
 - We recommend that this paragraph is less than 200 words or 1,200 characters. 
 - Insert your chosen call to action(s). 
 - Highlight the action that you want users to take by formatting the wanted action in bold as well as linking to your app’s unique landing page (either through hyperlinking the landing page or including a sentence on “Learn more about us here  _www._
 
-__How to format this paragraph__
+**How to format this paragraph**
 - Format this section as a paragraph 
 - Use these html tags: 
-<p>Click the <strong>Get it now</strong> button –  then insert your closing call to action paragraph here</p> 
+`<p>`Click the `<strong>`Get it now`</strong>` button –  then insert your closing call to action paragraph here`</p>` 
 
-> [!Example] Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.  
+> [!Example]  
+Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.  
 
 **Supported Editions** Finally, insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). 
 
-__How to structure the content in this paragraph?__
+**How to structure the content in this paragraph?**
 - Create a header 3 in the html tags and make it bold.  
 - Call the header “Supported editions”. 
 - Include a sentence that lists the edition(s) that your app supports. 
 
-__How to format this paragraph__
+**How to format this paragraph**
 -Format headline in bold 
 - Use these html tags: 
-<h3><strong>Supported editions:</strong></h3> 
+`<h3><strong>`Supported editions:`</strong></h3>` 
 - Format the paragraph 
 - Use these html tags: 
-<p>This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.</p> 
-<p> 
+`<p>`This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.`</p>` 
+`<p>` 
 
-> [!Example] **Supported editions: **
-This app supports both the Essential and Premium edition of Microsoft Dynamics 365 Business Central. 
+> [!Example]  
+> **Supported editions: ** This app supports both the Essential and Premium edition of Microsoft Dynamics 365 Business Central. 
 
 **Supported Countries** Finally, insert a section in the bottom of your description that clearly states which countries your app is available in based on the current list of Microsoft Dynamics 365 Business Central Supported Countries found here and listed below https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations 
 
@@ -180,29 +191,33 @@ This app supports both the Essential and Premium edition of Microsoft Dynamics 3
 - LATAM (1) MX 
 - APAC (2): AU, NZ 
 
-__How to structure the content in this paragraph?__
+**How to structure the content in this paragraph?**
 - Create a header 3 in the html tags and make it bold.  
 - Call the header “Supported countries”. 
 - Include a sentence that lists the countries that your app is available in. 
 
-> [!Example] **Supported Countries: **
-This app is available in: Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway, Spain, Sweden, Switzerland, United Kingdom and United States. 
+> [!Example] 
+> **Supported Countries: ** This app is available in: Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway, Spain, Sweden, Switzerland, United Kingdom and United States. 
 
-> [!NOTE] High fail rate on listing **Supported Editions** and **Supported Countries** at the end of the description which will potentially cause you to fail in 4 segments of the Marketing Validation process. This is an example of best practice. 
+> [!NOTE]  
+> High fail rate on listing **Supported Editions** and **Supported Countries** at the end of the description which will potentially cause you to fail in 4 segments of the Marketing Validation process. This is an example of best practice. 
 
+```
 	<h2>Supported Editions</h2>
 	<p>This app supports the Essential and Premium editions of Dynamics 365 Business Central</p>
 	 
 	<h2>Supported Countries</h2>
 	<p>List supported countries here, for example ‘Canada, Denmark, and France’</p>
+```
 
-### Supported Countries, Languages, App Version, App Release Date 
+### <a name="CountriesLanguagesApp"></a>Supported Countries, Languages, App Version, App Release Date 
 SUPPORTED COUNTRIES
 - Refer to the most current version on our docs page listing the supported countries that Dynamics 365 Business Central supports and check all that apply. https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations 
 
 SUPPORTED LANGUAGES
 - Check the box with all the languages that your app supports. 
-> [!NOTE] It's mandatory to support English. 
+> [!NOTE]  
+> It's mandatory to support English. 
 
 APP VERSION
 - Enter the latest version number of your offer. 
@@ -210,7 +225,7 @@ APP VERSION
 APP RELEASE DATE
 - Enter the date (dd/mm/yyyy) when you expect your app to be released or leave this field blank. 
 
-### Marketing Artifacts - Logo, Videos, Screenshots, Documents 
+### <a name="Marketing"></a>Marketing Artifacts - Logo, Videos, Screenshots, Documents 
 
 LOGO
 Formatting 
@@ -232,11 +247,17 @@ Pictures tell more than a 100 words – make sure to leverage this when promotin
 - Formatting and General requirements to keep in mind when creating videos: 
 - A minimum of one video is recommended (up to a maximum of 5 are permitted). 
 - Language in videos can be either local or English 
-> [!NOTE] Videos made in local language must have subtitles in English. 
+
+> [!NOTE]  
+> Videos made in local language must have subtitles in English. 
+
 - Make the right references from the get go: 
 - Only include screenshots & demo of the newest UI. 
 - Reference Microsoft’s brand names correctly: 
-> [!NOTE] Only refer to the product as Microsoft Dynamics 365 Busienss Central or Dynamics 365 Business Central. 
+
+> [!NOTE]  
+> Only refer to the product as Microsoft Dynamics 365 Busienss Central or Dynamics 365 Business Central. 
+
 - Don’t make references to acronyms, old Dynamics 365 brand names/logos or demo old UIs. 
 - Don’t include logos or trademarks in your video.
 Large amounts of information are easier to take in when visualized. Using videos that demo your offer are therefore ideal to create intertest and enable prospects to learn more about your offer quickly. On AppSource videos will play when customers select the associated video thumbnail on your app's details page. 
@@ -261,11 +282,12 @@ How to upload video(s) to the Cloud Partner Portal?When uploading a video in the
 - Upload only a .png image with resolution 1280x720. 
 - Don't add a 'Play' icon to the thumbnail; this will be added automatically in AppSource.  
 
-> [!NOTE] On AppSource videos will play when customers select the associated video thumbnail on your app's details page. 
+> [!NOTE]  
+> On AppSource videos will play when customers select the associated video thumbnail on your app's details page. 
 
 > [!Example] How Cortana helps manage inventory in Dynamics 365 Business Central  https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s 
 
-### Industries, Categories, App Type
+### <a name="Industries"></a>Industries, Categories, App Type
 
 INDUSTRIES
 - Choose the industries that your offer is best aligned to. If your offer relates to multiple industries you can choose a maximum of 2.
@@ -280,7 +302,7 @@ APP TYPE
 - Free - Means your offer is free 
 - Trial - Means that your customers can try your offer for a short period of time on AppSource 
 
-### Supported Products, Keywords, Hide Key
+### <a name="SupportedProd"></a>Supported Products, Keywords, Hide Key
 
 SUPPORTED PRODUCTS - You do not have to select anything – this field is completed automatically because you are developing an app for Dynamics 365 Business Central. 
 > [!Example] Dynamics 365 Business Central 
@@ -290,11 +312,12 @@ SEARCH KEYWORDS - Enter a search keyword for your app (max. 3)
 
 HIDE KEY - Enter a secret key that you'll use to preview your offer in AppSource before going live. 
 
-> [!NOTE] This isn't a password and can only contain alphanumeric characters. 
+> [!NOTE]  
+> This isn't a password and can only contain alphanumeric characters. 
 
 > [!Example] SalesInventoryKey 
 
-### Help & Customer Support 
+### <a name="HelpSupport"></a>Help & Customer Support 
 
 HELP URL - You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. 
 
@@ -309,6 +332,7 @@ Structure
 - Instructions on set up/how to get started 
 - Links to existing videos and documentation 
 - Links to the most frequently asked questions
+- 
 > [!Example] Open Door Technology’s help page  http://odtrentals365help.opendoorrentalsoftware.com/ 
 
 SUPPORT URL 
@@ -333,7 +357,7 @@ How to upload your support page to the Cloud Partner Portal?
 Sana Commerce’s support page  
 https://www.sana-commerce.com/contact/ 
 
-### Privacy Policy, Terms of Use 
+### <a name="Privacy"></a>Privacy Policy, Terms of Use 
 PRIVACY POLICY
 
 Formatting 
