@@ -29,7 +29,7 @@ Sorts rows in the resulting dataset of a query in ascending or descending order 
   
 ## Remarks
   
- In the OrderBy property, you add a column by name and set its direction to ascending or descending. To sort on multiple columns, separate each column with a comma, like `Name=Ascending,Quantity=Descending`.
+ In the OrderBy property, you add a column by name and set its direction to ascending or descending. To sort on multiple columns, separate each column with a comma, like `OrderBy = ascending (Name), descending (Quantity)`.
   
 > [!NOTE]  
 > You cannot sort on the same column more than once.  
@@ -37,7 +37,7 @@ Sorts rows in the resulting dataset of a query in ascending or descending order 
 > [!NOTE]
 > For views you can only use one direction; either **Ascending** or **Descending**.
   
- The **OrderBy** property corresponds to the Order By clause in SQL select statements.  
+The **OrderBy** property corresponds to the Order By clause in SQL select statements.  
   
 ## Example  
  This following table shows the results of a query that retrieves the quantity of items in every open sales order for each customer.  
@@ -60,7 +60,7 @@ Sorts rows in the resulting dataset of a query in ascending or descending order 
 |Selangerian Ltd.|20|  
 |The Cannon Group|50|  
   
- The following is the Order By clause in SQL that corresponds to the OrderBy property in this example.  
+The following is the Order By clause in SQL that corresponds to the OrderBy property in this example.  
   
 ```  
 OrderBy Name,Quantity  
