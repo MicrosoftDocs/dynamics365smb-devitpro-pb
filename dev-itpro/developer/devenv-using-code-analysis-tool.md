@@ -19,7 +19,7 @@ This topic shows how you can use static code analysis tool on an AL project from
 First, create a simple project in AL. 
 1. Press **Alt + A, Alt + L** to create a new project.
 2. Open the Command Palette **Ctrl+Shift+P** and choose either User Settings or Workspace Settings.
-3. Copy the setting **al.enableCodeAnalysis** to the settings file and set it to `true`: **"al.enableCodeAnalysis": true**.
+3. Copy the setting `al.enableCodeAnalysis` to the settings file and set it to `true`: `"al.enableCodeAnalysis": true`.
 
 At this point, the analyzers packaged with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s will be run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate a violation of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
 
