@@ -270,6 +270,15 @@ The following table describes fields on the **Development** tab in the [!INCLUDE
 |HttpClient AL Function Response Size|NavHttpClientMaxResponseContentSize|Specifies the maximum size in megabytes of a response buffer used by the HttpClient AL function.<br /><br />The maximum allowed extension size can be adjusted based on the HttpClient AL Function Maximum Timeout setting.<br /><br />Default: 15<br />Dynamically Updatable: Yes|
 |Port|DeveloperServicesPort|The listening HTTP port for Microsoft Dynamics NAV Developer web services.<br /><br />Valid range: 1 - 65535<br />Default: 7049<br />Dynamically Updatable: No|
 
+## Compatibility Settings
+
+The following table describes settings that you can adjust for compatibility with other systems. In most cases, we do not recommend that you change these settings from their default values.
+
+|  Setting  |Key Name|  Description  |
+|-----------|--------|---------------|
+|Security Protocol|SecurityProtocol|Specifies the default security protocol level for the server instance.<br /><br />Values: **Ssl3**, **Tls**, **Tls11**, **Tls12**, **SystemDefault**. For more information about these values, see [SecurityProtocolType Enum](https://docs.microsoft.com/en-us/dotnet/api/system.net.securityprotocoltype)<br /><br />Default: **Tls12**<br />Dynamically Updatable: No|
+|Use Client Timestamp For Report Execution Timestamp|ReplaceReportExecutionTimeWithClientTime|Specifies whether to replace the report execution timestamp with the client timestamp instead of the server instance timestamp.<br /><br /> Default: Enabled (check box is selected)<br />Dynamically Updatable: No|
+|Use FIND('-') to Populate Pages Instead of FIND('=><')|UseFindMinusWhenPopulatingPage|Specifies whether pages are initially populated by using FIND('-') instead of FIND('=><'). This setting is relevant to pages that display lists in descending order. Enabling this setting ensures that the first record, instead of the last record, is in focus when the page opens. Pages that use the OnFindRecord trigger will ignore this setting and always use FIND('=><').<br /><br /> Default: Enabled (check box is selected)<br />Dynamically Updatable: No|
 
 ##  <a name="UsingPowerShell"></a> Using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to Modify Server Instance Settings  
 The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] includes several `Set-` cmdlets that enable you to create and modify [!INCLUDE[server](../developer/includes/server.md)] instances.
