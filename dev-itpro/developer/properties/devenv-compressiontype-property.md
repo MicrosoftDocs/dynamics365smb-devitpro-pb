@@ -32,7 +32,7 @@ Specifies whether data compression is used on the table, and if so, what type of
 
 ## Remarks
 
-With `None`, `Page`, and `Row`, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table synchronization process will make changes to table in SQL Server. `Unspecified` lets you control data compression directly on SQL Server.
+With `None`, `Page`, and `Row`, the [!INCLUDE[prodshort](../includes/prodshort.md)] table synchronization process will make changes to table in SQL Server. `Unspecified` lets you control data compression directly on SQL Server.
 
 For information about table compression in SQL Server, see [Data Compression](https://docs.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression)
 
