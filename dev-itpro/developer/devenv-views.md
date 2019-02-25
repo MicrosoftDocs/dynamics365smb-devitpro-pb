@@ -40,15 +40,6 @@ For more information, see [OrderBy](properties/devenv-orderby-property.md).
 > [!NOTE]
 > All filters are applied to the table field(s), not the page field(s), which allows filtering on a table field not shown on the page.
 
-## Limitations
-In general, views can in several ways be compared to page customizations. These are the limitations of views: <!-- check -->
-
-- For views you can modify the same control properties as for page customization objects independently of where the view has been defined (page, page extension or page customization level). This is validated by the compiler. 
-- 
-- It is not possible to use variables or methods in a view. When writing client side expression for properties like **Visibility**, it will only be possible to use constant values or table field references. This is validated by the compiler.
-
-- It is not possible to create new controls for a page from a view.
-
 ## View example
 The following example shows a page customization of the **Customer List** page, which is available for a specific role center only. The definition of the view adds a caption which is displayed on the left side in the UI. The view sorts the customer balance in ascending mode and the view modifies the layout by moving the customer balance first and adding a freeze column after it.
 
@@ -87,6 +78,15 @@ pagecustomization MyCustomization customizes "Customer List"
     }
 }
 ```
+
+## Limitations
+In general, views can in several ways be compared to page customizations. These are the limitations of views: <!-- check -->
+
+- For views you can modify the same control properties as for page customization objects independently of where the view has been defined (page, page extension, or page customization level). This is validated by the compiler. 
+- 
+- It is not possible to use variables or methods in a view. When writing client side expression for properties like **Visibility**, it will only be possible to use constant values or table field references. This is validated by the compiler.
+
+- It is not possible to create new controls for a page from a view.
 
 ## See Also  
 [AL Development Environment](devenv-reference-overview.md)  

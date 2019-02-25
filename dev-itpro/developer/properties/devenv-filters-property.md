@@ -1,6 +1,7 @@
 ---
 title: "Filters Property"
 
+ms.author: solsen
 ms.custom: na
 ms.date: 02/19/2019
 ms.topic: article
@@ -16,30 +17,24 @@ Sets the filter that you want to use to define the view of the source table pres
 - Views  
 
 ## Example
-<!-- example to be updated with views example -->
 
 ```
-page 50101 MyCustomers
+pagecustomization MyCustomization customizes "Customer List"
 {
-    PageType = List;
-    SourceTable = Customer;
-
-
-    Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*'));
-
-    layout
+    views
     {
-        area(Content)
+        addfirst
         {
-            repeater(MyRepeater)
+            view(BalanceLCY)
             {
-                field(Name; Name) { }
-                field(Address; Address) { }
-                field("Balance (LCY)"; "Balance (LCY)") { }
+                Caption = 'Ordered Balance LCY';
+                OrderBy = ascending ("Balance (LCY)");
+                Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*'));
             }
         }
     }
 }
+
 ```
 
 For more information on how you can scan, find, and limit records in a list, see [Sorting, Searching, and Filtering Lists](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-enter-criteria-filters). 
