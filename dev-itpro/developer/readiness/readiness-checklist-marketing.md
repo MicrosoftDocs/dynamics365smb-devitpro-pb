@@ -1,9 +1,16 @@
 ---
 title: Marketing Checklist for Showcasing Your App
+description: "The marketing checklist for Business Central apps"
+author: SusanneWindfeldPedersen
+ms.custom: na
+ms.date: 02/25/2019
+ms.reviewer: solsen
+ms.topic: article
+ms.service: "dynamics365-business-central"
+ms.author: solsen
 ---
 
-Why marketing validation is mandatory
--------------------------------------
+# Why marketing validation is mandatory
 
 The marketing validation is in place to make sure that the customer journey on
 AppSource is a uniform experience, where customers quickly and easily can get an
@@ -17,8 +24,7 @@ are live, if some of the content in their storefront details needs to be edited
 Consequently, to be published on AppSource all listings need to pass the
 marketing validation.
 
-Marketing Checklist for Showcasing Your App
-===========================================
+## Marketing Checklist for Showcasing Your App
 
 We have created a checklists with guidelines that will help you to create a
 compelling storefront on AppSource. In these guidelines, you will find an
@@ -33,40 +39,40 @@ developing your offer, likely leaving the prospect confused or looking
 elsewhere. Accordingly, we recommend you put in the time, effort and due
 diligence when developing this content.
 
-Marketing Validation Checklist
+## Marketing Validation Checklist
 ------------------------------
 
-| REQUIREMENTS - Click on each link below for more info                                                       |
-|-------------------------------------------------------------------------------------------------------------|
+| REQUIREMENTS - Click on each link below for more info|
+|------------------------------------------------------|
 | [General Best Practices including Language and Branding](readiness-checklist-marketing.md#LanguageBranding) |
-| [Offer Name](readiness-checklist-marketing.md#OfferSummary)                                                 |
-| [Offer Summary](readiness-checklist-marketing.md#OfferSummary)                                              |
-| [Description](readiness-checklist-marketing.md#OfferDescription)                                            |
-| [Keywords](readiness-checklist-marketing.md#SupportedProd)                                                  |
-| [Premium SKU Listing](readiness-checklist-marketing.md)                                                     |
-| [Package and App Type](readiness-checklist-marketing.md)                                                    |
-| [Supported Countries](readiness-checklist-marketing.md#CountriesLanguagesApp)                               |
-| [Help Link](readiness-checklist-marketing.md#HelpSupport)                                                   |
-| [Privacy Policy Link](readiness-checklist-marketing.md#Privacy)                                             |
-| [License Agreeement](readiness-checklist-marketing.md#Privacy)                                              |
-| [Support Link](readiness-checklist-marketing.md#HelpSupport)                                                |
-| [Screenshots](readiness-checklist-marketing.md#Marketing)                                                   |
-| [Documents](readiness-checklist-marketing.md#Marketing)                                                     |
-| [Videos](readiness-checklist-marketing.md#Marketing)                                                        |
-| Special Rules for Localization and Connect Apps                                                             |
-| [Localization](readiness-checklist-marketing.md)                                                            |
-| [Connect Apps](readiness-checklist-marketing.md)                                                            |
+| [Offer Name](readiness-checklist-marketing.md#OfferSummary)|
+| [Offer Summary](readiness-checklist-marketing.md#OfferSummary)|
+| [Description](readiness-checklist-marketing.md#OfferDescription)|
+| [Keywords](readiness-checklist-marketing.md#SupportedProd)|
+| [Premium SKU Listing](readiness-checklist-marketing.md)|
+| [Package and App Type](readiness-checklist-marketing.md)|
+| [Supported Countries](readiness-checklist-marketing.md#CountriesLanguagesApp)|
+| [Help Link](readiness-checklist-marketing.md#HelpSupport)|
+| [Privacy Policy Link](readiness-checklist-marketing.md#Privacy)|
+| [License Agreeement](readiness-checklist-marketing.md#Privacy)|
+| [Support Link](readiness-checklist-marketing.md#HelpSupport)|
+| [Screenshots](readiness-checklist-marketing.md#Marketing)|
+| [Documents](readiness-checklist-marketing.md#Marketing)|
+| [Videos](readiness-checklist-marketing.md#Marketing)|
+| Special Rules for Localization and Connect Apps|
+| [Localization](readiness-checklist-marketing.md)|
+| [Connect Apps](readiness-checklist-marketing.md)|
 
-### Language & Branding Requirements
+### <a name="LanguageBranding"></a>Language & Branding Requirements 
 
 | General requirements      | Description                 | Requirements |
 |---------------------------|-----------------------------|--------------|
 | 0.A Language requirements | Your app must be in English | Required     |
 
--   English is the de facto language that is used on AppSource to ease the
+- English is the de facto language that is used on AppSource to ease the
     validation process and create a uniform user experience.
 
--   For you, this means that both the storefront details of your app, and
+- For you, this means that both the storefront details of your app, and
     everything that is accessible through it must be in English too.
 
 >   o This includes: your app’s landing page, videos, documentation – such as
@@ -76,15 +82,15 @@ Marketing Validation Checklist
 >   If your app caters to a local language that isn’t English, you can improve
 >   the user experience by:
 
--   Creating a website that has two landing pages (i.e. two language buttons –
+- Creating a website that has two landing pages (i.e. two language buttons –
     cf. one in English and one in the given local language). In so doing your
     customers can switch to the language they master and thus easily be able to
     find the right docs and contact info.
 
--   However, this set up implies that you need to *make two versions of all your
+- However, this set up implies that you need to *make two versions of all your
     docs,* support options *and landing pages.*
 
--   Note, as mentioned above, everything that is accessible through the Cloud
+- Note, as mentioned above, everything that is accessible through the Cloud
     Partner Portal needs to be in English.
 
 >   Get inspiration on how to create a user-friendly landing page and (cf. see
@@ -149,7 +155,7 @@ Marketing Validation Checklist
 >   **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business
 >   Central**.
 
-### Offer Name and Offer Summary
+### <a name="OfferSummary"></a>Offer Name and Offer Summary
 
 | General requirements | Description                     | Requirements                                                                                                                                                                                                                                                                                  |             |
 |----------------------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
@@ -241,7 +247,7 @@ Is it too much like another product and will it cause market confusion?
 >   *Use reliable forecasting to help ensure that you always have the items your
 >   customers want.*
 
-### Offer Description
+### <a name="OfferDescription"></a>Offer Description 
 
 | Offer Details                                  | Description                                                                                                                                                                                                                                                                                       | Requirements |
 |------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -497,11 +503,10 @@ details” section of the Cloud partner portal
 Below is an enlarged picture of the entire offer description (cf. point 2.A-G)
 and the html tags used:
 
-| \<h2\>\<em\>Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?\</em\>\</h2\> \<p\>Managing inventory is a delicate balancing act. Carry too little and you lose orders (and customers). Carry too much and you tie up much needed working capital. Carry far too much and you end up discounting, or worse, writing off obsolete products.\</p\> \<p\>Our app uses Cortana Intelligence to analyze historical data to predict future demand, so you can base procurement decisions on accurate and reliable forecasts, and help your company avoid lost revenue, optimize shipping costs, discover trends and boost your brand reputation by always delivering on orders.\</p\> \<p\>Stop relying on basic spreadsheets that take hours of valuable time to complete. Turn anxiety into proactive control and manage this critical business process in minutes by using Microsoft Sales and Inventory Forecast app.\</p\> \<h3\>\<strong\>Features and benefits of using this app\</strong\>\</h3\> \<ul\> \<li\>Free up cash\</li\> \<li\>Know exactly when to replenish stock\</li\> \<li\>Always have inventory on hand to satisfy every customer order\</li\> \</ul\> \<p\>\&nbsp;\</p\> \<p\>Click the \<strong\>Get it now\</strong\> button and start aligning your inventory replenishment with your customer demand. Your customers and sales team will love you for it.\</p\> \<h3\>\<strong\>Supported editions:\</strong\>\</h3\> \<p\>This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.\</p\> \<p\> \<h3\>\<strong\>Supported countries:\</strong\>\</h3\> \<p\>Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Italy, Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States\</p\> \</p\> |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+ \<h2\>\<em\>Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?\</em\>\</h2\> \<p\>Managing inventory is a delicate balancing act. Carry too little and you lose orders (and customers). Carry too much and you tie up much needed working capital. Carry far too much and you end up discounting, or worse, writing off obsolete products.\</p\> \<p\>Our app uses Cortana Intelligence to analyze historical data to predict future demand, so you can base procurement decisions on accurate and reliable forecasts, and help your company avoid lost revenue, optimize shipping costs, discover trends and boost your brand reputation by always delivering on orders.\</p\> \<p\>Stop relying on basic spreadsheets that take hours of valuable time to complete. Turn anxiety into proactive control and manage this critical business process in minutes by using Microsoft Sales and Inventory Forecast app.\</p\> \<h3\>\<strong\>Features and benefits of using this app\</strong\>\</h3\> \<ul\> \<li\>Free up cash\</li\> \<li\>Know exactly when to replenish stock\</li\> \<li\>Always have inventory on hand to satisfy every customer order\</li\> \</ul\> \<p\>\&nbsp;\</p\> \<p\>Click the \<strong\>Get it now\</strong\> button and start aligning your inventory replenishment with your customer demand. Your customers and sales team will love you for it.\</p\> \<h3\>\<strong\>Supported editions:\</strong\>\</h3\> \<p\>This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.\</p\> \<p\> \<h3\>\<strong\>Supported countries:\</strong\>\</h3\> \<p\>Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Italy, Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States\</p\> \</p\>
 
 
-### Supported Countries, Languages, App Version, App Release Date
+### <a name="CountriesLanguagesApp"></a>Supported Countries, Languages, App Version, App Release Date
 
 | Listing details                | Description                                              | Requirements |
 |--------------------------------|----------------------------------------------------------|--------------|
@@ -567,7 +572,7 @@ details” section of the Cloud partner portal:
 |----------------------|------------------------------------------------------------------------------------------------|--------------|
 | 10. App release date | Enter the date (dd/mm/yyyy) when you expect your app to be released or leave this field blank. | Recommended  |
 
-### Marketing Artifacts - Logo, Videos, Screenshots, Documents
+### <a name="Marketing"></a>Marketing Artifacts - Logo, Videos, Screenshots, Documents
 
 | Marketing artifacts                                                | Description                                | Requirements |
 |--------------------------------------------------------------------|--------------------------------------------|--------------|
@@ -815,7 +820,7 @@ distracting, irrelevant content.
 Example of the completed screenshot fields (cf. point 17) in the “Marketing
 artifacts” section of the Cloud partner portal:
 
-### Industries, Categories, App Type
+### <a name="Industries"></a>Industries, Categories, App Type
 
 | Listing details | Description                                                                                                                                                                                                          | Requirements |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -858,7 +863,7 @@ button will appear in the storefront
 Example of the completed industries-, categories and app type fields (cf. point
 3,4 and 5) in the “Listing details” section of the Cloud partner portal:
 
-### Supported Products, Keywords, Hide Key
+### <a name="SupportedProd"></a>Supported Products, Keywords, Hide Key
 
 | Listing details                  | Description                                                                                                                                     | Requirements |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -885,7 +890,7 @@ Example of the completed app release date-, products your app works with-,
 search keywords and hide key fields (cf. point 10,11,12 and 13) in the “Listing
 details” section of the Cloud partner portal:
 
-### Help & Customer Support
+### <a name="HelpSupport"></a>Help & Customer Support
 
 | Listing details                | Description                                                                                                                                                                                        | Requirements |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -981,7 +986,7 @@ details” section of the Cloud partner portal:
 Example of the completed screenshot fields (cf. point 20) in the “Customer
 Support” section of the Cloud partner portal:
 
-### Privacy Policy, Terms of Use
+### <a name="Privacy"></a>Privacy Policy, Terms of Use
 
 | Legal                                | Description | Requirements |
 |--------------------------------------|-------------|--------------|
@@ -1040,19 +1045,18 @@ section of the Cloud partner portal)
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 21. Lead destination | Select the system (from the dropdown menu) where your leads will be stored. Learn how to [connect your CRM system here.](https://cloudpartner.azure.com/#documentation/get-customer-leads/how-to-connect-your-crm-system-with-the-cloud-partner-portal) | Recommended  |
 
->   Choose which contact options that you want to include
+Choose which contact options that you want to include
 
--   None
+- None
 
--   Azure table
+- Azure table
 
--   Dynamics CRM Online
+- Dynamics CRM Online
 
--   HTTPS Endpoint
+- HTTPS Endpoint
 
--   Marketo
+- Marketo
 
--   SalesForce
+- SalesForce
 
-Example of the completed screenshot fields (cf. point 21) in the “Customer
-Support” section of the Cloud partner portal:
+Example of the completed screenshot fields (cf. point 21) in the “Customer Support” section of the Cloud partner portal:
