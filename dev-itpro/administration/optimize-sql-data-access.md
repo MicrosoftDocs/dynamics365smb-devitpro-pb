@@ -144,20 +144,21 @@ This example uses Transact-SQL to change table **G_L Entry** to be partitioned o
 > SQL Server Management Studio includes the **Create Partition Wizard** to help you create partitioning functions, partitioning schemes, as well as changing a table to be partitioned. For more information, see [Create Partitioned Tables and Indexes](https://docs.microsoft.com/en-us/sql/relational-databases/partitions/create-partitioned-tables-and-indexes).
 
 ## Using SQL Server data compression
- 
-As of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019, the use of SQL Server data compression is a supported configuration. You can use data compression to help reduce the size of selected tables in the database. In addition to saving space, data compression can help improve performance of I/O intensive workloads because the data is stored in fewer pages and queries need to read fewer pages from disk. This is especially useful if your storage system is based on disks and not SSD.
+
+As of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019, it is possible to configure data compression directly on tables in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. Previously, this could only be done in SQL Server. You use data compression to help reduce the size of selected tables in the database. In addition to saving space, data compression can help improve performance of I/O-intensive workloads because the data is stored in fewer pages and queries will read fewer pages from disk. This is especially useful if your storage system is based on disks and not SSD.
 
 However, extra CPU resources are required on the database server to compress and decompress the data while data is exchanged with the [!INCLUDE[server](../developer/includes/server.md)].
 
 You can either configure compression in metadata for a table and let the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table synchronization process handle the changes to SQL Server tables, or you can choose to control data compression directly on SQL Server. In the latter case, configure the table to not let table synchronization process deal with data compression.
 
-In SQL Server, you can use the stored procedure sp_estimate_data_compression_savings to evaluate if a table is a good candidate to compress. For more information, see [sp_estimate_data_compression_savings (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql). Because SQL Server supports data compression on the partition level, you can combine
-SQL Server data compression with table partitioning (see above) to achieve flexible data archiving on historical parts of a large table without having the CPU overhead on the active part of the table.
+In SQL Server, you can use the stored procedure `sp_estimate_data_compression_savings` to evaluate whether a table is a good candidate to compress. For more information, see [sp_estimate_data_compression_savings (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql). Because SQL Server supports data compression on the partition level, you can combine
+SQL Server data compression with table partitioning (see the previous section) to achieve flexible data archiving on historical parts of a large table, without having the CPU overhead on the active part of the table.
 
 > [!NOTE]
 > Prior to SQL Server 2016 SP1, compression was not available in every edition of SQL Server.
 
 For more general information about table compression in SQL Server, see [Data Compression](https://docs.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning and Best Practices](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/dd894051(v=sql.100)
 
-## See Also  
- [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)
+## See Also
+
+[Query Objects and Performance](optimize-sql-query-objects-and-performance.md)  
