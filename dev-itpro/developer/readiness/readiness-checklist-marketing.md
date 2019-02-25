@@ -93,15 +93,11 @@ diligence when developing this content.
 - Note, as mentioned above, everything that is accessible through the Cloud
     Partner Portal needs to be in English.
 
->   Get inspiration on how to create a user-friendly landing page and (cf. see
->   *“Checklist C”*) how Deex Korea Co Ltd has set up their apps landing page to
->   accommodate two languages, and everything that this entails. You can find
->   their landing pages here: o [Deex Korea Co Ltd (English
->   version)](http://www.deex.co.kr/index_en) o [Deex Korea Co Ltd (Korean
->   version)](http://www.deex.co.kr/)
+Get inspiration on how to create a user-friendly landing page and (cf. see *“Checklist C”*) how Deex Korea Co Ltd has set up their apps landing page to accommodate two languages, and everything that this entails. You can find their landing pages here:  
+    - [Deex Korea Co Ltd (English version)](http://www.deex.co.kr/index_en)  
+    - [Deex Korea Co Ltd (Korean version)](http://www.deex.co.kr/)
 
->   *Example of a user friendly landing page that has two language options and
->   is set up in accordance with our best practices:*
+*Example of a user friendly landing page that has two language options and is set up in accordance with our best practices:*
 
 | General requirements                                          | Description                                                     | Requirements |
 |---------------------------------------------------------------|-----------------------------------------------------------------|--------------|
@@ -145,15 +141,8 @@ diligence when developing this content.
 >   Referencing above acronyms, old brand names and old UIs will make your app
 >   fail marketing validation promptly.
 
->   [!NOTE]  
->   All content, videos, screenshots etc. must list the product name as
->   **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business
->   Central**. These are the ONLY options. Don't use acroynms, shorten the name
->   or abbreviate it or use old product names. Always use the most current
->   version of Dynamics 365 Business Central in screenshots, videos etc. Not
->   permitted BC, Business Central, D365 or any other variation that is NOT
->   **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business
->   Central**.
+> [!NOTE]  
+> All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, Business Central, D365 or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.
 
 ### <a name="OfferSummary"></a>Offer Name and Offer Summary
 
