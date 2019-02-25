@@ -1,6 +1,8 @@
 ---
 title: "OrderBy Property"
 description: "Description of the OrderBy property for Business Central."
+
+ms.author: solsen
 ms.custom: na
 ms.date: 02/19/2019
 ms.topic: article
@@ -28,8 +30,16 @@ Sorts rows in the resulting dataset of a query in ascending or descending order 
 > Separate multiple columns with a comma.  
   
 ## Remarks
-  
- In the OrderBy property, you add a column by name and set its direction to ascending or descending. To sort on multiple columns, separate each column with a comma, like `OrderBy = ascending (Name), descending (Quantity)`.
+In the OrderBy property, you add a column by name and set its direction to ascending or descending:
+
+```
+view(MyFirstView)
+{
+    Caption = 'This is my first view!';
+    OrderBy = Ascending (Address);
+}
+```
+To sort on multiple columns, separate each column with a comma, like `OrderBy = ascending (Name), descending (Quantity)`.
   
 > [!NOTE]  
 > You cannot sort on the same column more than once.  
