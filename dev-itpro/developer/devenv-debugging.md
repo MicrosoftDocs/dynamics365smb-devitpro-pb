@@ -94,8 +94,7 @@ To use the Go To Definition on local server, it requires that the AL symbols are
 
 Traditionally, debugging AL has been about examining behavior of the language runtime, for example, looking into the content of local variables at a breakpoint.  As of [!INCLUDE[prodshort](includes/prodshort.md)] April 2019, the AL debugger also offers the capability to examine the impact that your AL code has on the [!INCLUDE[prodshort](includes/prodshort.md)] database.
 
-In the variables box of the debugger, expand the <Database statistics> node to get insights, 
-such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prodshort](includes/prodshort.md)] database, the total number of SQL statements executed, and the total number of rows read, as well as insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
+In the variables box of the debugger, expand the <Database statistics> node to get insights such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prodshort](includes/prodshort.md)] database, the total number of SQL statements executed, and the total number of rows read, as well as insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
 
 |       |       |
 |-------|-------|
