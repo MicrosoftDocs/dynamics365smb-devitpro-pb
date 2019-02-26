@@ -63,311 +63,187 @@ diligence when developing this content.
 | [Localization](readiness-checklist-marketing.md)|
 | [Connect Apps](readiness-checklist-marketing.md)|
 
+> [!IMPORTANT] Use this Key to develop your app page according to the in depth information shared below:   SALES & INVENTORY FORECAST  image014.jpg 
+
 ### <a name="LanguageBranding"></a>Language & Branding Requirements 
 
 | General requirements      | Description                 | Requirements |
 |---------------------------|-----------------------------|--------------|
 | 0.A Language requirements | Your app must be in English | Required     |
+| | English is the de facto language that is used on AppSource to ease the validation process and create a uniform user experience. | 
+| | For you, this means that both the storefront details of your app, and everything that is accessible through it must be in English too. | 
+| | This includes: your app’s landing page, videos, documentation – such as “Learn more” documents, factsheets, set up instructions, privacy policies, SLAs etc. – as well as help, support- and contact options. | 
+| | If your app caters to a local language that isn’t English, you can improve the user experience by: | 
+| | Creating a website that has two landing pages (i.e. two language buttons – cf. one in English and one in the given local language). In so doing your customers can switch to the language they master and thus easily be able to find the right docs and contact info.
+| | However, this set up implies that you need to *make two versions of all your docs, support options and landing pages.* | 
+| | Note, as mentioned above, everything that is accessible through the Cloud Partner Portal needs to be in English. | 
+| | Get inspiration on how to create a user-friendly landing page and (cf. see *“Checklist C”*) how Deex Korea Co Ltd has set up their apps landing page to accommodate two languages, and everything that this entails. You can find their landing pages here: | 
+| | [Deex Korea Co Ltd (English version)](http://www.deex.co.kr/index_en)  
+| | [Deex Korea Co Ltd (Korean version)](http://www.deex.co.kr/)
 
-- English is the de facto language that is used on AppSource to ease the
-    validation process and create a uniform user experience.
-
-- For you, this means that both the storefront details of your app, and
-    everything that is accessible through it must be in English too.
-
->   o This includes: your app’s landing page, videos, documentation – such as
->   “Learn more” documents, factsheets, set up instructions, privacy policies,
->   SLAs etc. – as well as help, support- and contact options.
-
->   If your app caters to a local language that isn’t English, you can improve
->   the user experience by:
-
-- Creating a website that has two landing pages (i.e. two language buttons –
-    cf. one in English and one in the given local language). In so doing your
-    customers can switch to the language they master and thus easily be able to
-    find the right docs and contact info.
-
-- However, this set up implies that you need to *make two versions of all your
-    docs,* support options *and landing pages.*
-
-- Note, as mentioned above, everything that is accessible through the Cloud
-    Partner Portal needs to be in English.
-
-Get inspiration on how to create a user-friendly landing page and (cf. see *“Checklist C”*) how Deex Korea Co Ltd has set up their apps landing page to accommodate two languages, and everything that this entails. You can find their landing pages here:  
-    - [Deex Korea Co Ltd (English version)](http://www.deex.co.kr/index_en)  
-    - [Deex Korea Co Ltd (Korean version)](http://www.deex.co.kr/)
-
-*Example of a user friendly landing page that has two language options and is set up in accordance with our best practices:*
+> [!Tip]  Example of a user friendly landing page that has two language options and is set up in accordance with our best practices:*
 
 | General requirements                                          | Description                                                     | Requirements |
 |---------------------------------------------------------------|-----------------------------------------------------------------|--------------|
 | 0.B Branding (How to reference the Microsoft brand correctly) | Be consistent with the branding throughout your communications: | Required     |
+| | Throughout all your sales-, communication- and marketing materials, all references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct   branding and UI, cf. either Microsoft Dynamics 365 Business Central or Dynamics 365 Business Central. 
+| | Make sure to make the right reference throughout your content:
+| | Based on the new Microsoft Dynamics 365 Business Central branding guidelines, the full name, Microsoft Dynamics 365 Business Central, must be used in its entirety at first mention at a page, and at all prominent locations such as titles, headings etc.
+| | Subsequent mentions can drop "Microsoft" and simply just reference Dynamics 365 Business Central. Please reference [Microsoft Dynamics 365 branding rules documentation](https://mbs.microsoft.com/Files/partner/365/Training/PartnerGuidelinesforusingtheMicrosoftDynamics365Brand.pdf) on Microsoft Collaborate.
+| | Don’t include Microsoft names, logos or trademarks in your offer
+| | Don’t use Dynamics 365 names, logos or trademarks in your offering’s: name, URL, your company name, your social media account names or any other names you might use.
+| | Don’t make references to acronyms, old brand names or demo old UIs
+| | Don’t make any references in any text, screenshots, title bars, Webclient, spoken language in videos, documentation, app landing pages etc. to:
+| | - Acronyms: “NAV”, “FOBE” or “D365” 
+| | - Old brands: “for financials”, “for Finance & Operations” 
+| | - Screenshots and demos of old Dynamics 365 UIs
+| | Referencing above acronyms, old brand names and old UIs will make your app fail marketing validation promptly.
 
--   Throughout all your sales-, communication- and marketing materials, all
-    references (spoken and written in videos, docs, app landing page,
-    screenshots, title bars etc.) must refer to the correct branding and UI, cf.
-    either Microsoft Dynamics 365 Business Central or Dynamics 365 Business
-    Central.
-
->   Make sure to make the right reference throughout your content:
-
--   Based on the new Microsoft Dynamics 365 Business Central branding
-    guidelines, the full name, Microsoft Dynamics 365 Business Central, must be
-    used in its entirety at first mention at a page, and at all prominent
-    locations such as titles, headings etc.
-
--   Subsequent mentions can drop "Microsoft" and simply just reference Dynamics
-    365 Business Central. Please reference [Microsoft Dynamics 365 branding
-    rules
-    documentation](https://mbs.microsoft.com/Files/partner/365/Training/PartnerGuidelinesforusingtheMicrosoftDynamics365Brand.pdf)
-    on Microsoft Collaborate.
-
->   Don’t include Microsoft names, logos or trademarks in your offer
-
--   Don’t use Dynamics 365 names, logos or trademarks in your offering’s: name,
-    URL, your company name, your social media account names or any other names
-    you might use.
-
->   Don’t make references to acronyms, old brand names or demo old UIs
-
--   *Don’t* make any references in any text, screenshots, title bars, Webclient,
-    spoken language in videos, documentation, app landing pages etc. to:
-
->   o Acronyms: “NAV”, “FOBE” or “D365” o Old brands: “for financials”, “for
->   Finance &
-
->   Operations” o Screenshots and demos of old Dynamics 365 UIs
-
->   Referencing above acronyms, old brand names and old UIs will make your app
->   fail marketing validation promptly.
-
-> [!NOTE]  
-> All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, Business Central, D365 or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.
+> [!NOTE]  All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, Business Central, D365 or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.
 
 ### <a name="OfferSummary"></a>Offer Name and Offer Summary
 
-| General requirements | Description                     | Requirements                                                                                                                                                                                                                                                                                  |             |
+| General requirements          | Description                      |Requirements                                                                                                                                                                                                                                                                                  |             |
 |----------------------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| 0.C                  | *Your offers name on AppSource* | Required                                                                                                                                                                                                                                                                                      |             |
-| 0.D                  | There are                       | many things to consider when creating a relevant and enticing name for your offer. *How to create a strong app name for your offer (Do’s and don’ts)?* Do’s o Ideally, your app name should communicate the core value customers will receive and it should not be tied to a specific product | Recommended |
+| 0.C                  | Your offers name on AppSource | Required      |
+| Offer Name Structure | The offer name must be the same as the name you specified in the app manifest. | 
+| (What your offer name will look like on AppSource) | Applicable naming structures | | 
+| | When creating a name for your offer, you can use the following two naming structures:
+| | Name 1: (Your offer name) for Microsoft Dynamics 365 *Example: Sales & Inventory Forecast for Microsoft Dynamics 365* 
+| | Name 2: Your offer name only *Example: Sales & Inventory Forecast* | 
 
->   Offer Name
 
->   Structure
-
->   (What your offer name will look like on
-
->   AppSource)
-
--   The offer name must be the same as the name you specified in the app
-    manifest.
-
->   *Applicable naming structures*
-
--   When creating a name for your offer, you can use the following two naming
-    structures:
-
->   o Name 1: (Your offer name) for Microsoft Dynamics 365 *Example: Sales &
->   Inventory Forecast for Microsoft*
-
->   *Dynamics 365* o Name 2: Your offer name only
-
-*Example: Sales & Inventory Forecast*
-
->   Offer Name
-
->   (How to create a good offer name)
-
--   Benefit-based names are always more effective than descriptive names.
-
--   Use industry specific vocabulary or benefit-based references in your product
-    name if possible – this will increase relevance and conversion rates.
-
-Don’ts o Don’t use technology specific messaging as your core product name
-component.
-
--   Avoid using acronyms that are emotionally meaningless.
-
--   Don’t include Microsoft names and/or trademarks, such as Dynamics or
-    Dynamics 365 in your offering names, URLs, company names, social media
-    account names or any other names you might use.
-
-*Key questions to ask yourself when choosing a name for your offer:* Does my
-product name convey anything to my prospect? Does it capture the essence of the
-product and the value it delivers?
-
-Is it appropriate and appealing to our target audience? Is it short?
-
-Does the name connect with what our business is about?
-
-Is it interesting and memorable?
-
-Does it limit us in any way? How easily will it translate into other
-languages/cultures?
-
-Is it too much like another product and will it cause market confusion?
+| General requirements | Description | Requirements | 
+|----------------------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 0.D                  | There are many things to consider when creating a relevant and enticing name for your offer.  | Recommended |
+|Offer Name | How to create a strong app name for your offer (Do’s and don’ts)? | |
+|(How to create a good offer name) | **Do’s**
+| | Ideally, your app name should communicate the core value customers will receive and it should not be tied to a specific product 
+|  | Benefit-based names are always more effective than descriptive names. | 
+|  | Use industry specific vocabulary or benefit-based references in your product name if possible – this will increase relevance and conversion rates.
+|  | **Don't**
+|  | Don’t use technology specific messaging as your core product name component.
+|  | Avoid using acronyms that are emotionally meaningless.
+|  | Don’t include Microsoft names and/or trademarks, such as Dynamics or Dynamics 365 in your offering names, URLs, company names, social media account names or any other names you might use.
+|  | *Key questions to ask yourself when choosing a name for your offer:* 
+|  | Does my product name convey anything to my prospect? 
+|  | Does it capture the essence of the product and the value it delivers?
+|  | Is it appropriate and appealing to our target audience? Is it short?
+|  | Does the name connect with what our business is about?
+|  | Is it interesting and memorable?
+|  | Does it limit us in any way? How easily will it translate into other languages/cultures?
+|  | Is it too much like another product and will it cause market confusion?
 
 #### Offer details
 
 | Offer Details                                                  | Description                                                                                                                                             | Requirements |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 1. Offer Summary (How to create a good summary for your offer) | The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Hence, make sure that it is clear and concise. | Required     |
+| 1. Offer Summary  | The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Hence, make sure that it is clear and concise. | Required     |
+| (How to create a good summary for your offer) | **How to structure your summary?**
+| | The summary should be max. 25 words or 100 characters including spaces, or less.
+| | The summary should summarize the value proposition of your offer in one short and concise sentence.
+| | The value proposition is a statement of the unique benefits your product delivers to the customer. 
+| | If you need help formulating a positioning statement, try the value proposition generator located [here.](http://neuralimpact.ca/valueproposition)
+| | Consider whether or not is relevant (or valuable) to include your offer name in the summary 
+| | Don’t just state the offer name as an attempt to make it more memorable (names rarely give away any clues to the prospect about the value they will receive by starting to use your offer).
 
->   *How to structure your summary?*
-
--   The summary should be max. 25 words or 100 characters including spaces, or
-    less.
-
--   The summary should summarize the value proposition of your offer in one
-    short and concise sentence.
-
->   o The value proposition is a statement of the unique benefits your product
->   delivers to the customer. o If you need help formulating a positioning
->   statement, try the value proposition generator located
->   [here.](http://neuralimpact.ca/valueproposition)
-
--   Consider whether or not is relevant (or valuable) to include your offer name
-    in the summary o Don’t just state the offer name as an attempt to make it
-    more memorable (names rarely give away any clues to the prospect about the
-    value they will receive by starting to use your offer).
-
->   *Example:*
-
->   *Use reliable forecasting to help ensure that you always have the items your
->   customers want.*
+> [!Tip]  *Example:* *Use reliable forecasting to help ensure that you always have the items your
+customers want.*
 
 ### <a name="OfferDescription"></a>Offer Description 
 
 | Offer Details                                  | Description                                                                                                                                                                                                                                                                                       | Requirements |
 |------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 2.A Offer Description (Introduction Paragraph) | To capture (and keep) the interest of the prospects you need to create interest and positive mental acknowledgement from the start. This can be achieved by asking relevant provocative questions that prospects either do not know the answer to or can relate to in the introduction paragraph. | Recommended  |
+| 2. Offer Description **(How to format and structure paragraphs in your offer description)** | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central app. | 	Required | 
+| | How to structure the paragraphs in your description? | 	
+| | Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. To do so, your description should consist of 6 paragraphs (in the following order):
+| | -- Introduction paragraph (point 3.A)
+| | -- Pain based paragraph (point 3.B)
+| | -- Benefit based paragraph (point 3.C)
+| | -- Benefits in bullet points paragraph (3.D)
+| | -- Closing Call to action paragraph (point 3.E)
+| | -- Supported editions paragraph (point 3.F)
+| | -- Supported countries paragraph (point 3.G)
+| | -- By including all of these paragraphs you will provide prospects with a compelling offer that explains them WHY they need to start using it.
+| | How to format your description in the Cloud Partner Portal? The right formatting enables prospects to get a quick overview of the value that your offer can give them. Making the description compelling and nice to look at is therefore of key importance. When formatting the description of your offer please consider the following:
+| | The description can max. be 3000 characters incl. spaces
+| | Use simple html tags when formatting your description to create structured sections that are easy to get an overview of. The following html tags are allowed:
+| | -- p, em, ul, li, ol and header tags.
+| | Structure your description as small “easily readable” sections with headlines
+| | List vital benefits as bullet points
+| | Engage prospects by speaking directly to them using second person “you” language.
 
->   *How to structure the content in this paragraph?*
+| Offer Details                                  | Description                                                                                                                                                                                                                                                                                       | Requirements |
+|------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 2.A Offer Description **(Introduction Paragraph)** | To capture (and keep) the interest of the prospects you need to create interest and positive mental acknowledgement from the start. This can be achieved by asking relevant provocative questions that prospects either do not know the answer to or can relate to in the introduction paragraph. | Recommended  |
+| | How to structure the content in this paragraph?| 
+| | Make a section where you ask provocative questions. 
+| | Speak to a core pain they are likely experiencing that has a negative measurable impact
+| | The question should stimulate a strong emotional response.
+| | How to format this paragraph?
+| | Format this section as a headline *in itallic.*
+| | Use these html tags:
+| | \<h2\>\<em\> section with provocative questions
+| | \</em\>\</h2\>
 
--   Make a section where you ask provocative questions. o Speak to a core pain
-    they are likely experiencing that has a negative measurable impact
-
->   o The question should stimulate a strong emotional response.
-
->   *How to format this paragraph?*
-
--   Format this section as a headline *in itallic.*
-
--   Use these html tags:
-
->   \<h2\>\<em\> section with provocative questions
-
->   \</em\>\</h2\>
-
->   *Example:*
-
->   *Do you have the right stock on your shelves? Are stock outs costing you
->   customers? And are your procurement decisions relying on basic
->   spreadsheets?*
+> [!Tip]  *Example:* *Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?*
 
 | Offer Details                          | Description                                                                                                                                                                                                                                                   | Requirements |
 |----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 2.B Offer Description (Pain paragraph) | Pain is the most compelling motivator of driving prospects to take action. Therefore, it is of the upmost importance that you communicate WHY your prospects need your product through a “pain-based” paragraph that call out the fears that they are facing. | Recommended  |
+| 2.B Offer Description **(Pain paragraph)** | Pain is the most compelling motivator of driving prospects to take action. Therefore, it is of the upmost importance that you communicate WHY your prospects need your product through a “pain-based” paragraph that call out the fears that they are facing. | Recommended  |
+| | How to structure the content in this paragraph?
+| | Use this paragraph to clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.
+| | Describe the business challenges they are facing now (pain) and the ways their revenue growth, margins, productivity (desire), and so on are being negatively impacted by not taking action now.
+| | Most importantly, call out the fears that are likely holding them back.
+| | Remind them of the cost (higher risk, lower margins, lost sales) they are experiencing by putting off a decision. In so doing you have a bigger likelihood of getting the messages through to them and enticing them to take action.
+| | How to format this paragraph?
+| | Format this section as a paragraph o Use these html tags:
+| | \<p\> pain paragraph\</p\> *Example:*
 
->   *How to structure the content in this paragraph?*
-
--   Use this paragraph to clearly demonstrate to your prospects that you
-    genuinely understand their industry and unique business problems.
-
--   Describe the business challenges they are facing now (pain) and the ways
-    their revenue growth, margins, productivity (desire), and so on are being
-    negatively impacted by not taking action now.
-
--   Most importantly, call out the fears that are likely holding them back.
-
--   Remind them of the cost (higher risk, lower margins, lost sales) they are
-    experiencing by putting off a decision. In so doing you have a bigger
-    likelihood of getting the messages through to them and enticing them to take
-    action.
-
->   *How to format this paragraph?*
-
--   Format this section as a paragraph o Use these html tags:
-
->   \<p\> pain paragraph\</p\> *Example:*
-
->   *Managing inventory is a delicate balancing act. Carry too little and you
->   lose orders (and customers). Carry too much and you tie up much needed
->   working capital. Carry far too much and you end up discounting, or worse,
->   writing off obsolete products.*
+> [!Tip]  *Example:* *Managing inventory is a delicate balancing act. Carry too little and you
+lose orders (and customers). Carry too much and you tie up much needed working capital. Carry far too much and you end up discounting, or worse, writing off obsolete products.*
 
 | Offer Details                             | Description                                                                                                                                             | Requirements |
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 2.C Offer Description (Benefit paragraph) | Likewise, you should also make a paragraph that describes the most important benefits and rewards that your prospects will realize by using your offer. | Recommended  |
+| 2.C Offer Description **(Benefit paragraph)** | Likewise, you should also make a paragraph that describes the most important benefits and rewards that your prospects will realize by using your offer. | Recommended  |
+| | How to structure the content in this paragraph?
+| | Tell them what they will gain by using your offer 
+| | You do not need to tell them how you do it, just what they will gain.
+| | When describing the potential value in specific, measurable business terms, you will appeal to both their desire and greed.
+| | Quantify impacts and gains. o The more specific and concrete your promise of value is, the better. Abstract concepts such as “more efficiency, more productivity, transform your business” are not emotionally impactful or convincing, and they do not compel a prospect to act. Paint a picture of a possible experience that the prospect will immediately desire.
+| | Avoid the temptation of simply listing features and app functionality.
+| | If you make strong claims in the benefit paragraph, make sure you support them with proof.
+| | How to format this paragraph?*
+| | Format this section as a paragraph o Use these html tags:
+| | \<p\> 1st benefit paragraph\</p\>
+| | \<p\> 2nd benefit paragraph\</p\>
 
->   *How to structure the content in this paragraph?*
-
--   Tell them what they will gain by using your offer o You do not need to tell
-    them how you do it, just what they will gain.
-
--   When describing the potential value in specific, measurable business terms,
-    you will appeal to both their desire and greed.
-
--   Quantify impacts and gains. o The more specific and concrete your promise of
-    value is, the better. Abstract concepts such as “more efficiency, more
-    productivity, transform your business” are not emotionally impactful or
-    convincing, and they do not compel a prospect to act. Paint a picture of a
-    possible experience that the prospect will immediately desire.
-
--   Avoid the temptation of simply listing features and app functionality.
-
--   If you make strong claims in the benefit paragraph, make sure you support
-    them with proof.
-
->   *How to format this paragraph?*
-
--   Format this section as a paragraph o Use these html tags:
-
->   \<p\> 1st benefit paragraph\</p\>
-
->   \<p\> 2nd benefit paragraph\</p\>
-
->   *Example:*
-
->   *Our app uses Cortana Intelligence to analyze historical data to predict
->   future demand, so you can base procurement decisions on accurate and
->   reliable forecasts, and help your company avoid lost revenue, optimize
->   shipping costs, discover trends and boost your brand reputation by always
->   delivering on orders.*
-
->   *Stop relying on basic spreadsheets that take hours of valuable time to
->   complete. Turn anxiety into proactive control and manage this critical
->   business process in minutes by using Microsoft’s Sales and Inventory
->   Forecast extension.*
+> [!Tip]  *Example:* *Our app uses Cortana Intelligence to analyze historical data to predict
+future demand, so you can base procurement decisions on accurate and
+reliable forecasts, and help your company avoid lost revenue, optimize
+shipping costs, discover trends and boost your brand reputation by always
+delivering on orders.*
+*Stop relying on basic spreadsheets that take hours of valuable time to
+complete. Turn anxiety into proactive control and manage this critical
+business process in minutes by using Microsoft’s Sales and Inventory
+Forecast extension.*
 
 | Offer Details                                               | Description                                       | Requirements |
 |-------------------------------------------------------------|---------------------------------------------------|--------------|
-| 2.D Offer Description (Benefits as pullet points paragraph) | *How to structure the content in this paragraph?* | Recommended  |
+| 2.D Offer Description **(Benefits as bullet points paragraph)** | *How to structure the content in this paragraph?* | Recommended  |
+| | Highlight your offers benefits by listing them as bullet points.
+| | How to format this paragraph?* • Format headline in bold 
+| | Use these html tags:
+| | \<h3\>\<strong\> Features and benefits
+| | \</strong\>\<h3\>
+| | Format bullet points as: o Use these html tags:
+| | \<ul\>
+| | \<li\>1st Bullet point \</li\>
+| | \<li\>2nd Bullet point \</li\>
+| | \<li\>3rd Bullet point \</li\>
+| |  \</ul\>
 
->   Highlight your offers benefits by listing them as bullet points.
-
->   *How to format this paragraph?* • Format headline in bold o Use these html
->   tags:
-
->   \<h3\>\<strong\> Features and benefits
-
->   \</strong\>\<h3\>
-
--   Format bullet points as: o Use these html tags:
-
->   \<ul\>
-
->   \<li\>1st Bullet point \</li\>
-
->   \<li\>2nd Bullet point \</li\>
-
->   \<li\>3rd Bullet point \</li\>
-
->   \</ul\>
-
->   *Example:*
-
->   *Features and benefits of using this extension*
+> [!Tip]  *Example:* *Features and benefits of using this extension*
 
 -   *Free up cash*
 
@@ -377,117 +253,57 @@ Is it too much like another product and will it cause market confusion?
 
 | Offer Details                                            | Description                                                                                                                                                | Requirements |
 |----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 2.E Offer Description (Closing Call to action paragraph) | Round off your description with a strong “Closing Call to action” paragraph that urges customers to take action in order to realize your offer’s benefits. | Recommended  |
+| 2.E Offer Description **(Closing Call to action paragraph)** | Round off your description with a strong “Closing Call to action” paragraph that urges customers to take action in order to realize your offer’s benefits. | Recommended  |
+| | Choose the type of Call to action that you want to include:
+| | Calls to actions are active directions to your offer’s: Landing page, a link to a button at the storefront details and/or a “learn more” document
+| | We recommend that you link to both a button and your offer’s unique app landing page in the closing call to action.
+| | How to structure the content in this paragraph?
+| | We recommend that this paragraph is less than 200 words or 1,200 characters.
+| | Insert your chosen call to action(s).
+| | Highlight the action that you want users to take by formatting the wanted action in bold as well as linking to your app’s unique landing page (either through hyperlinking the landing page or including a sentence on “Learn more" about us here [www.xxxyyyzzz.com”](http://www.xxxyyyzzz.com/)).
+| | How to format this paragraph?
+| | Format this section as a paragraph o Use these html tags:
+| | \<p\>Click the \<strong\>Get it now\</strong\> button – then insert your closing call to action paragraph here\</p\>
 
->   Choose the type of Call to action that you want to include • Calls to
->   actions are active directions to your offer’s: Landing page, a link to a
->   button at the storefront details and/or a “learn more” document
-
--   We recommend that you link to both a button and your offer’s unique app
-    landing page in the closing call to action.
-
->   *How to structure the content in this paragraph?*
-
--   We recommend that this paragraph is less than 200 words or 1,200 characters.
-
--   Insert your chosen call to action(s).
-
--   Highlight the action that you want users to take by formatting the wanted
-    action in bold as well as linking to your app’s unique landing page (either
-    through hyperlinking the landing page or including a sentence on “Learn more
-    about us here [www.xxxyyyzzz.com”](http://www.xxxyyyzzz.com/)).
-
->   *How to format this paragraph?*
-
--   Format this section as a paragraph o Use these html tags:
-
->   \<p\>Click the \<strong\>Get it now\</strong\> button – then insert your
->   closing call to action paragraph here\</p\>
-
->   *Example:*
-
->   *Click Get it now and start aligning your inventory replenishment with your
->   customer demand like a pro. Your customers and sales team will love you for
->   it.*
+> [!Tip]  *Example:* *Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.*
 
 | Offer Details                                        | Description                                                                                                                                           | Requirements |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 2.F Offer Description (Supported editions paragraph) | Finally, insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
+| | How to structure the content in this paragraph?*
+| | Create a header 3 in the html tags and make it bold.
+| | Call the header “Supported editions”.
+| | Include a sentence that lists the edition(s) that your app supports.
+| | How to format this paragraph?
+| | Format headline in bold 
+| | Use these html tags:
+| | \<h3\>\<strong\>Supported editions:\</strong\>\</h3\>
+| | Format the paragraph o Use these html tags:
+| | \<p\>This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.\</p\>\<p\>
 
->   *How to structure the content in this paragraph?*
-
--   Create a header 3 in the html tags and make it bold.
-
--   Call the header “Supported editions”.
-
--   Include a sentence that lists the edition(s) that your app supports.
-
->   *How to format this paragraph?* • Format headline in bold o Use these html
->   tags:
-
->   \<h3\>\<strong\>Supported editions:\</strong\>\</h3\>
-
--   Format the paragraph o Use these html tags:
-
->   \<p\>This app supports both the Essential and
-
->   Premium editions of Microsoft Dynamics 365
-
->   Business Central.\</p\>
-
->   \<p\>
-
->   *Example:*
-
->   *Supported editions:*
-
->   *This app supports both the Essential and Premium edition of Microsoft
->   Dynamics 365 Business Central.*
+> [!Tip]  *Example:* *Supported editions:* *This app supports both the Essential and Premium edition of Microsoft Dynamics 365 Business Central.*
 
 | Offer Details                                         | Description                                                                                                               | Requirements |
 |-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------|
-| 2.G Offer Description (Supported countries paragraph) | Finally, insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
+| 2.G Offer Description **(Supported countries paragraph)** | Finally, insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
+| | Current availability of Dynamics 365 Business Central
+| | Available in 19 countries: 
+| | -- EMEA (14): AT, BE, CH, DE, DK, ES, FI, FR, IS, IT, NL, NO, SE, UK 
+| | -- NA (2): CA, US 
+| | -- LATAM (1) MX 
+| | -- APAC (2): AU, NZ
+| | How to structure the content in this paragraph?
+| | Create a header 3 in the html tags and make it bold.
+| | Call the header “Supported countries”.
+| | Include a sentence that lists the countries that your app is available in.
+| | How to format this paragraph?
+| | Format headline in bold o Use these html tags: \<h3\>\<strong\>Supported countries:\</strong\>\<h3\>
+| | Format the paragraph o Use these html tags: \<p\>Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Iceland, Italy, Mexico,Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States\</p\> \</p\>
 
->   Current availability of Dynamics 365 Business Central
+> [!Tip]  *Example:* *Supported countries:* *This app is available in: Australia, Austria, Belgium, Canada,* *Denmark, Finland, France, Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway, Spain, Sweden, Switzerland, United Kingdom and United States.*
 
--   Available in 19 countries: o EMEA (14): AT, BE, CH, DE, DK, ES, FI, FR, IS,
-    IT, NL,
-
->   NO, SE, UK o NA (2): CA, US o LATAM (1) MX o APAC (2): AU, NZ
-
->   How to structure the content in this paragraph?
-
--   Create a header 3 in the html tags and make it bold.
-
--   Call the header “Supported countries”.
-
--   Include a sentence that lists the countries that your app is available in.
-
->   *How to format this paragraph?* • Format headline in bold o Use these html
->   tags: \<h3\>\<strong\>Supported countries:\</strong\>\</h3\>
-
--   Format the paragraph o Use these html tags:
-
-\<p\>Australia, Austria, Belgium, Canada, Denmark,
-
->   Finland, France, Germany, Iceland, Italy, Mexico,
-
->   Netherlands, New Zealand, Spain, Sweden,
-
->   Switzerland, United Kingdom and United States\</p\> \</p\>
-
->   *Example:*
-
->   *Supported countries:*
-
->   *This app is available in: Australia, Austria, Belgium, Canada,*
-
->   *Denmark, Finland, France, Germany, Iceland, Italy, Mexico, Netherlands, New
->   Zealand, Norway, Spain, Sweden, Switzerland, United Kingdom and United
->   States.*
-
-Example of a completed offer summary and offer description in the “Offer
-details” section of the Cloud partner portal
+> [!Tip]  Example of a completed offer summary and offer description in the “Offer
+details” section of the Cloud Partner Portal.
 
 Below is an enlarged picture of the entire offer description (cf. point 2.A-G)
 and the html tags used:
@@ -499,66 +315,9 @@ and the html tags used:
 
 | Listing details                | Description                                              | Requirements |
 |--------------------------------|----------------------------------------------------------|--------------|
-| 7. Supported countries/regions | Choose which countries your offer supports.              | Recommended  |
-| 8. Supported languages         | Choose which languages your offer supports.              | Recommended  |
-| 9. App version                 | Enter the latest version number of your offer *Example:* | Recommended  |
-|                                |                                                          |              |
-
->   Formatting
-
--   It is a requirement that the help page is written in English.
-
--   It is a requirement that all docs at the help page are written in English
-    and are formatted as PDF-files.
-
--   There needs to be a clear distinction between the support and the help site.
-    We require two separate pages (i.e. the *link to the support and the help
-    page cannot be the same*).
-
->   Structure
-
--   Provide an URL for a distinct help page, where prospects can find different
-    types of online product help.
-
--   The help page needs to include online documentation that can be used as
-    help.
-
->   o Types of online help that you can include on your help page are:
-
--   Instructions on set up/how to get started
-
--   Links to existing videos and documentation ▪ Links to the most frequently
-    asked questions
-
->   *Example of a help site that is set up according to our best practices:*
->   [Open Door Technology’s help
->   page](http://odtrentals365help.opendoorrentalsoftware.com/)
-
->   Use the dropdown box to choose which countries your offer supports.
-
->   *Example:*
-
->   *Australia, Austria, Belgium, Canada, Denmark, Finland, France,*
-
->   *Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway,*
-
->   *Spain, Sweden, Switzerland, United Kingdom and United States.*
-
->   Check the box with all the languages that your app supports. Note, it is
->   mandatory for your offer to support English.
-
->   *Example:*
-
->   *English*
-
->   *2.0.22794.0*
-
-Example of the completed help link-, supported countries/regions-, supported
-languages and app version fields (cf. point 6,7,8 and 9) in the “Listing
-details” section of the Cloud partner portal:
-
-| Listing details      | Description                                                                                    | Requirements |
-|----------------------|------------------------------------------------------------------------------------------------|--------------|
+| 7. Supported countries/regions | Choose which countries your offer supports. https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations               | Recommended  |
+| 8. Supported languages         | Choose which languages your offer supports.  *Example:* *English*            | Recommended  | 
+| 9. App version                 | Enter the latest version number of your offer *Example:* *2.0.22794.0*  | Recommended  |
 | 10. App release date | Enter the date (dd/mm/yyyy) when you expect your app to be released or leave this field blank. | Recommended  |
 
 ### <a name="Marketing"></a>Marketing Artifacts - Logo, Videos, Screenshots, Documents
