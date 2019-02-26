@@ -159,7 +159,7 @@ SQL Server data compression with table partitioning (see the previous section) t
 > [!NOTE]
 > Prior to SQL Server 2016 SP1, compression was not available in every edition of SQL Server.
 
-For more general information about table compression in SQL Server, see [Data Compression](https://docs.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning and Best Practices](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/dd894051(v=sql.100))
+For more general information about table compression in SQL Server, see [Data Compression](https://docs.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning and Best Practices](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/dd894051(v=sql.100)).
 
 ## See Also
 
