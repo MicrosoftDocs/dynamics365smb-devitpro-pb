@@ -145,19 +145,21 @@ This example uses Transact-SQL to change table **G_L Entry** to be partitioned o
 
 ## <a name="Compression"></a>Using SQL Server data compression
 
-As of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019, it is possible to configure data compression directly in table metadata by using the [CompressionType property](properties/devenv-compressiontype-property.md) in AL or CSIDE. Previously, compression could only be configured in SQL Server. You use data compression to help reduce the size of selected tables in the database. In addition to saving space, data compression can help improve performance of I/O-intensive workloads because the data is stored in fewer pages and queries will read fewer pages from disk. This is especially useful if your storage system is based on disks and not SSD.
+As of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019, it is possible to configure data compression directly in table metadata by using the [CompressionType property](../developer/properties/devenv-compressiontype-property.md) in AL or CSIDE. Previously, compression could only be configured in SQL Server. You use data compression to help reduce the size of selected tables in the database. In addition to saving space, data compression can help improve performance of I/O-intensive workloads because the data is stored in fewer pages and queries will read fewer pages from disk. This is especially useful if your storage system is based on disks and not SSD.
 
 However, extra CPU resources are required on the database server to compress and decompress the data while data is exchanged with the [!INCLUDE[server](../developer/includes/server.md)].
 
-With the **CompressionType** property can configure row or page type compression or configure the table not to use compression. With yhese compression settings, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table synchronization process will make changes to the SQL Server table, overwriting the current compression type, if any. You can choose to control data compression directly on SQL Server by setting the **CompressionType** property to **Unspecified**, in which case table synchronization process will not control the data compression.
+With the **CompressionType** property, you can configure row or page type compression or configure the table not to use compression. With yhese compression settings, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table synchronization process will make changes to the SQL Server table, overwriting the current compression type, if any. You can choose to control data compression directly on SQL Server by setting the **CompressionType** property to **Unspecified**, in which case table synchronization process will not control the data compression.
 
-To evaluate whether a table is a good candidate to compress, you can use the stored procedure `sp_estimate_data_compression_savings` in SQL Server. For more information, see [sp_estimate_data_compression_savings (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql). Because SQL Server supports data compression on the partition level, you can combine
+To evaluate whether a table is a good candidate to compress, you can use the stored procedure `sp_estimate_data_compression_savings` in SQL Server. For more information, see [sp_estimate_data_compression_savings (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql).
+
+Because SQL Server supports data compression on the partition level, you can combine
 SQL Server data compression with table partitioning (see the previous section) to achieve flexible data archiving on historical parts of a large table, without having the CPU overhead on the active part of the table.
 
 > [!NOTE]
 > Prior to SQL Server 2016 SP1, compression was not available in every edition of SQL Server.
 
-For more general information about table compression in SQL Server, see [Data Compression](https://docs.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning and Best Practices](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/dd894051(v=sql.100)
+For more general information about table compression in SQL Server, see [Data Compression](https://docs.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning and Best Practices](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/dd894051(v=sql.100))
 
 ## See Also
 

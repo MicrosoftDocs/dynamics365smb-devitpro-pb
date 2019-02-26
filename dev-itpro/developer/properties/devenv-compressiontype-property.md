@@ -34,10 +34,7 @@ Specifies whether data compression is used on the table, and if so, what type of
 
 With `None`, `Page`, and `Row`, the [!INCLUDE[prodshort](../includes/prodshort.md)] table synchronization process will make changes to table in SQL Server, overwriting the current compression setting in SQL Server, if any. `Unspecified` lets you control data compression directly on SQL Server. For more information  
 
-For information about compression, see [Data Compression](../../administration/optimize-sql-data-access.md#Compression)
-
-> [!NOTE]  
->  If you set multiple permissions, then one or the other applies. 
+For information about compression types, see [Data Compression](../../administration/optimize-sql-data-access.md#Compression).
 
 ## Syntax
 ```
