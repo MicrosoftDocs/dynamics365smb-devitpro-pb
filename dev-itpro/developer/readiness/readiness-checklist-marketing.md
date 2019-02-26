@@ -78,7 +78,7 @@ The image below is an example of what an offering looks like on AppSource, when 
 
 | General requirements      | Description                 | Requirements |
 |---------------------------|-----------------------------|--------------|
-| 0.A Language requirements | Your app must be in English | Required     |
+| 0.A **Language requirements** | Your app must be in English | Required     |
 | | English is the de facto language that is used on AppSource to ease the validation process and create a uniform user experience. | 
 | | For you, this means that both the storefront details of your app, and everything that is accessible through it must be in English too. | 
 | | This includes: your app’s landing page, videos, documentation – such as “Learn more” documents, factsheets, set up instructions, privacy policies, SLAs etc. – as well as help, support- and contact options. | 
@@ -93,7 +93,7 @@ The image below is an example of what an offering looks like on AppSource, when 
 
 | General requirements                                          | Description                                                     | Requirements |
 |---------------------------------------------------------------|-----------------------------------------------------------------|--------------|
-| 0.B Branding (How to reference the Microsoft brand correctly) | Be consistent with the branding throughout your communications: | Required     |
+| 0.B **Branding** (How to reference the Microsoft brand correctly) | Be consistent with the branding throughout your communications: | Required     |
 | | Throughout all your sales-, communication- and marketing materials, all references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct   branding and UI, cf. either Microsoft Dynamics 365 Business Central or Dynamics 365 Business Central. 
 | | Make sure to make the right reference throughout your content:
 | | Based on the new Microsoft Dynamics 365 Business Central branding guidelines, the full name, Microsoft Dynamics 365 Business Central, must be used in its entirety at first mention at a page, and at all prominent locations such as titles, headings etc.
@@ -115,7 +115,7 @@ The image below is an example of what an offering looks like on AppSource, when 
 | General requirements | Description |Requirements |
 |----------------------|-------------|-------------|
 | 0.C                  | Your offers name on AppSource | Required      |
-| Offer Name Structure | The offer name must be the same as the name you specified in the app manifest. | 
+| **Offer Name** | The offer name must be the same as the name you specified in the app manifest. | 
 | (What your offer name will look like on AppSource) | Applicable naming structures | | 
 | | When creating a name for your offer, you can use the following two naming structures:
 | | Name 1: (Your offer name) for Microsoft Dynamics 365 *Example: Sales & Inventory Forecast for Microsoft Dynamics 365* 
@@ -125,7 +125,7 @@ The image below is an example of what an offering looks like on AppSource, when 
 | General requirements | Description | Requirements | 
 |----------------------|-------------|--------------|
 | 0.D                  | There are many things to consider when creating a relevant and enticing name for your offer.  | Recommended |
-|Offer Name | How to create a strong app name for your offer (Do’s and don’ts)? | |
+|**Offer Name** | How to create a strong app name for your offer (Do’s and don’ts)? | |
 |(How to create a good offer name) | **Do’s**
 | | Ideally, your app name should communicate the core value customers will receive and it should not be tied to a specific product 
 |  | Benefit-based names are always more effective than descriptive names. | 
@@ -147,7 +147,7 @@ The image below is an example of what an offering looks like on AppSource, when 
 
 | Offer Details  | Description | Requirements |
 |----------------|-------------|--------------|
-| 1. Offer Summary  | The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Hence, make sure that it is clear and concise. | Required     |
+| 1. **Offer Summary**  | The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Hence, make sure that it is clear and concise. | Required     |
 | (How to create a good summary for your offer) | **How to structure your summary?**
 | | The summary should be max. 25 words or 100 characters including spaces, or less.
 | | The summary should summarize the value proposition of your offer in one short and concise sentence.
@@ -164,7 +164,7 @@ customers want.*
 
 | Offer Details  | Description| Requirements |
 |----------------|------------|--------------|
-| 2. Offer Description **(How to format and structure paragraphs in your offer description)** | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central app. | 	Required | 
+| 2. **Offer Description** (How to format and structure paragraphs in your offer description) | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central app. | 	Required | 
 | | How to structure the paragraphs in your description? | 	
 | | Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. To do so, your description should consist of 6 paragraphs (in the following order):
 | | ▪ Introduction paragraph (point 3.A)
@@ -302,6 +302,7 @@ Forecast extension.*
 | | ▪ NA (2): CA, US 
 | | ▪ LATAM (1) MX 
 | | ▪ APAC (2): AU, NZ
+| | Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations 
 | | How to structure the content in this paragraph?
 | | Create a header 3 in the html tags and make it bold.
 | | Call the header “Supported countries”.
@@ -327,10 +328,12 @@ and the html tags used:
 
 | Listing details                | Description                                              | Requirements |
 |--------------------------------|----------------------------------------------------------|--------------|
-| 7. Supported countries/regions | Choose which countries your offer supports. https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations               | Recommended  |
-| 8. Supported languages         | Choose which languages your offer supports.  *Example:* *English*            | Recommended  | 
-| 9. App version                 | Enter the latest version number of your offer *Example:* *2.0.22794.0*  | Recommended  |
-| 10. App release date | Enter the date (dd/mm/yyyy) when you expect your app to be released or leave this field blank. | Recommended  |
+| 7. **Supported countries/regions** | Choose which countries your offer supports. https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations               | Recommended  |
+| | *Example:* *Australia, Austria, Belgium, Canada, Denmark, Finland, France,* *Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway,* *Spain, Sweden, Switzerland, United Kingdom and United States.*  
+| 8. **Supported languages**         | Choose which languages your offer supports.  *Example:* *English*            | Recommended  | 
+| | Check the box with all the languages that your app supports. Note, it is mandatory for your offer to support English.
+| 9. **App version**                 | Enter the latest version number of your offer *Example:* *2.0.22794.0*  | Recommended  |
+| 10. **App release date** | Enter the date (dd/mm/yyyy) when you expect your app to be released or leave this field blank. | Recommended  |
 
 ### <a name="Marketing"></a>Marketing Artifacts - Logo, Videos, Screenshots, Documents
 
@@ -357,7 +360,7 @@ and the html tags used:
 |---------------------|---------------------------------------------------------------------------------------------|--------------|
 | 15. **Videos**          | Pictures tell more than a 100 words – make sure to leverage this when promoting your offer. | Recommended  |
 | | Large amounts of information are easier to take in when visualized. Using videos that demo your offer are therefore ideal to create intertest and enable prospects to learn more about your offer quickly. On AppSource videos will play when customers select the associated video thumbnail on your app's details page.
-| | **Formatting and General requirements (cf. section 0.A-D)** to keep in mind when creating videos:
+| | Formatting and General requirements (cf. section 0.A-D) to keep in mind when creating videos:
 | | A minimum of one video is recommended (up to a maximum of 5 are permitted).
 | | Language in videos can be either local or English
 | | ▪  Note, videos made in local language must have subtitles in English.
@@ -367,7 +370,7 @@ and the html tags used:
 | | ▪  Only refer to Microsoft Dynamics 365 Business Central or Dynamics 365 Business Central.
 | | Don’t make references to acronyms, old Dynamics 365 brand names/logos or demo old UIs.
 | | Don’t include logos or trademarks in your video.
-| | **Structure**
+| | Structure
 | | Choose the type of videos that you want to include 
 | | You can create 4 different types of marketing videos:
 | | ▪  “Why” videos
@@ -507,19 +510,9 @@ details” section of the Cloud partner portal:
 languages and app version fields (cf. point 6,7,8 and 9) in the “Listing
 details” section of the Cloud partner portal:
 
-| Listing details | Description | Requirements |
-|-----------------|-------------|--------------|
-| 7. **Supported countries/regions** | Choose which countries your offer supports.                                                                                                                                                        | Recommended  |
-| | *Example:* *Australia, Austria, Belgium, Canada, Denmark, Finland, France,* *Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway,* *Spain, Sweden, Switzerland, United Kingdom and United States.*
-| 8. **Supported languages**         | Choose which languages your offer supports.                                                                                                                                                   | Recommended  |
-| | Check the box with all the languages that your app supports. Note, it is mandatory for your offer to support English.
-| | *Example:* *English*
-| 9. **App version**                 | Enter the latest version number of your offer *Example:*                                                                                                                                           | Recommended  |
-| | *Example:* *2.0.22794.0*
-
 | Customer support | Description | Requirements |
 |------------------|-------------|--------------|
-| 20. Support URL  | Formatting  *It is a requirement that the support page is written in English.* | Required     |
+| 20. **Support URL**  | Formatting  *It is a requirement that the support page is written in English.* | Required     |
 | | It is a requirement that you provide different (i.e. more than two) contact options on your app landing page.
 | | There needs to be a clear distinction between the support and the help site. We require two separate pages (i.e. the *link to the support and the help page cannot be the same*).
 | | Structure
@@ -544,8 +537,8 @@ Support” section of the Cloud partner portal:
 
 | Legal                                | Description | Requirements |
 |--------------------------------------|-------------|--------------|
-| 18. Privacy policy URL               | Formatting  | Required     |
-| 19. Terms of use (license agreement) | Formatting  | Required     |
+| 18. **Privacy policy URL**               | Formatting  | Required     |
+| 19. **Terms of use (license agreement)** | Formatting  | Required     |
 | | It is a requirement that the privacy policy page is written in English.
 | | Structure
 | | You need to provide an URL for your app’s privacy policy page where prospects can find information on how you handle their data.
@@ -572,7 +565,7 @@ Support” section of the Cloud partner portal:
 
 | Lead Management      | Description  | Requirements |
 |----------------------|--------------|--------------|
-| 21. Lead destination | Select the system (from the dropdown menu) where your leads will be stored. Learn how to [connect your CRM system here.](https://cloudpartner.azure.com/#documentation/get-customer-leads/how-to-connect-your-crm-system-with-the-cloud-partner-portal) | Recommended  |
+| 21. **Lead destination** | Select the system (from the dropdown menu) where your leads will be stored. Learn how to [connect your CRM system here.](https://cloudpartner.azure.com/#documentation/get-customer-leads/how-to-connect-your-crm-system-with-the-cloud-partner-portal) | Recommended  |
 | | Choose which contact options that you want to include
 | | ▪ None
 | | ▪ Azure table
