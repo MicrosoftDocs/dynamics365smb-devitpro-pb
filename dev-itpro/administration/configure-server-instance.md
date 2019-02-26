@@ -8,6 +8,7 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Configuring Business Central Server
+
 When you run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup and install [!INCLUDE[server](../developer/includes/server.md)], you provide information that is then used as the configuration for the default [!INCLUDE[server](../developer/includes/server.md)] instance. This information is stored in a configuration file for the server instance called CustomSetting.config. The default location of the CustomSettings.config file is *[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service*. 
 
 After you install [!INCLUDE[server](../developer/includes/server.md)], you can change any of the settings that you provided during Setup, plus several other settings that were not available to you in Setup.
@@ -15,7 +16,8 @@ After you install [!INCLUDE[server](../developer/includes/server.md)], you can c
 > [!NOTE]  
 >  Each [!INCLUDE[server](../developer/includes/server.md)] instance has its own CustomSettings.config file.  
 
-## Configuring [!INCLUDE[server](../developer/includes/server.md)] in Setup 
+## Configuring [!INCLUDE[server](../developer/includes/server.md)] in Setup
+ 
 You configure the default instance of [!INCLUDE[server](../developer/includes/server.md)] by running [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] and selecting one of the following: 
 
 -   Demo Option
@@ -25,7 +27,8 @@ You configure the default instance of [!INCLUDE[server](../developer/includes/se
 
 After you specify an installation option or customize your component list, the **Specify parameters** pane is displayed in Setup. The list of parameters that you see in the **Specify parameters** pane depends on which components you have selected for configuration. Setup provides a short description for each parameter. 
 
-## Configuring [!INCLUDE[server](../developer/includes/server.md)] After Installation  
+## Configuring [!INCLUDE[server](../developer/includes/server.md)] After Installation
+  
 After you install [!INCLUDE[server](../developer/includes/server.md)], you can change the configuration settings in the CustomSettings.config file of a [!INCLUDE[server](../developer/includes/server.md)] instance in the following ways:  
 
 -   Using the [!INCLUDE[admintool](../developer/includes/admintool.md)].
@@ -46,12 +49,14 @@ If you use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or modi
 
 If you use the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394), whether you need to restart the server instance will depend on the configuration setting that you change. There are several settings that are *dynamically updatable*, which means that a server instance restart is not necessarily required after modification. For more information, see [Modifying dynamically updatable settings](configure-server-instance.md#DynamicSettings). In the tables that follow, these settings are indicated by the text **Dynamically Updatable: Yes**.
 
-##  <a name="NavAdminSettings"></a>[!INCLUDE[server](../developer/includes/server.md)] Instance Settings  
+##  <a name="NavAdminSettings"></a>[!INCLUDE[server](../developer/includes/server.md)] Instance Settings
+  
 This section describes all the configuration settings for a [!INCLUDE[server](../developer/includes/server.md)] instance. The settings are grouped according to the tabs under which they appear in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 -   The **Setting** column displays the name of the setting as it appears in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 -   The **Key Name** column displays the name of the setting as it appears in the CustomSettings.config file, and is also the name to use for the setting when using the Set-NAVServerConfiguration cmdlet.
 
-##  <a name="General"></a> General Settings  
+##  <a name="General"></a> General Settings
+  
 The following table describes fields on the **General** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
@@ -62,7 +67,6 @@ The following table describes fields on the **General** tab in the [!INCLUDE[adm
 |Compile and Load Business Application|CompileBusinessApplicationAtStartup|Specifies whether the [!INCLUDE[server](../developer/includes/server.md)] instance compiles all the business application assemblies and loads them to cache memory when the server instance is started. The assemblies are then retrieved from memory when requested by a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.<br /><br /> Enabling this setting will reduce the time it takes for the server instance to load application objects the first time they are requested by a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client after the server instance started. However, it will also slightly increase the memory usage by the server instance.<br /><br />If you enable this setting, when the server instance starts for the first time, the business application assemblies will be compiled and loaded to the cache memory of the computer that is running the server instance. The assemblies, along with metadata such object timestamp information, are also stored to a temporary folder on the computer's file system. Whenever the server instance is restarted, it will compare the assemblies that are stored in memory with corresponding objects in the connected database to determine whether the assemblies in memory can be reused. An assembly will be reused if the following conditions are met:<br /><br />- The connected database is the same as before, based on the *databasemagic* field in the dbproperty table.<br /><br />- The object time stamp that is recorded on the compiled assembly matches the object timestamp in metadata of the connected database.<br /><br />If the conditions are not met for an assembly or an assembly for an object in the database is not found in the memory, then a new assembly is built and stored for reuse to cache memory and the file system of the server instance compute for reuse.<br /><br />If you disable this setting, individual assemblies will be compiled on-demand as application objects are requested by the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. The compiled assemblies will not be reused on subsequent server instance restarts.<br /><br />Notes:<ul><li>This setting does not apply to query objects.</li><li>Assembly compilation happens asynchronously.</li><li>On average, all application objects will be loaded within the first few minutes that the server instance operates.</li></ul><br />Default: Enabled<br />Dynamically Updatable: No|  
 |Credential Type|ClientServicesCredentialType|Specifies the authentication mechanism for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] users of this [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br /> The options are **Windows**, **Username**, **NavUserPassword**, **AccessControlService**, and **None**. For more information, see [Authentication and User Credential Types](Users-Credential-Types.md).<br /><br /> If you choose **AccessControlService**, you must specify a federation metadata location for use with Azure AD. If you choose **NavUserPassword**, and you specify a token signing key, you can use both NavUserPassword and AccessControlService for this server instance.<br /><br />Notes:<ul><li>**None** is for internal use on system sessions and typically should not be used. If you choose **None**, then the [!INCLUDE[server](../developer/includes/server.md)] instance cannot start.</li><li>**ExchangeIdentity** and **TaskScheduler** are for internal use only, and should not be used.</li></ul><br />Default: Windows<br />Dynamically Updatable: No|
 |Data Cache Size|DataCacheSize|The contextual size of the data cache. The value must be in the range 1-20.<br /><br /> Default: 9<br />Dynamically Updatable: Yes|  
-|Debugging Allowed|DebuggingAllowed|Specifies whether AL debugging is allowed for this [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|  
 |Default Client|DefaultClient|Specifies the client type that is used to generate URLs when the client type is set to Default.<br /><br /> The options are **Current**, **Windows**, **Web**, **SOAP**, and **OData**.<br /><br /> Default: Current<br />Dynamically Updatable: No|  
 |Default Language|DefaultLanguage|Specifies which of the installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)] languages on the server instance will be used as the default language in the clients. Set the value to a valid language culture name, such en-US or da-DK.<br /><br /> In the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web and Tablet clients, the **Default Language** setting determines the language that is used if the web browser's language setting does not match any installed language or a language in the **Supported Languages** setting, if used. In the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows client, this is the language that is used if the language setting of the computer does not have a match.<br /><br />If there are application-specific configuration settings, this setting will be overridden by the default language setting that is specified in application-specific configuration file. For more information, see [Set-NAVServerAppConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=827798).<br /><br /> Default: en-US<br />Dynamically Updatable: No|
 |  Diagnostic Trace Level  |TraceLevel|  Specifies the lowest severity level of custom telemetry events to be emitted and recorded in the event log for the [!INCLUDE[server](../developer/includes/server.md)] instance. This includes system telemetry trace events and custom telemetry events. Telemetry events have IDs from  700-706. <br /><br />The setting has the following values, which correspond to the event severity levels (listed from highest to lowest level): **Critical**, **Error**, **Warning**, **Normal** (this corresponds to the **Information** level), **Verbose**, and **Off**.<br /><br />You use this setting to filter out lower-level events from the log. For example, if you set this setting to **Error**, only **Error** and **Critical** events will be logged.<br /><br />Set to **Off** if you do not want to record telemetry events. When set to **Off**, events are not emitted.<br /><br />**Note:** Telemetry trace events are recorded in the [!INCLUDE[server](../developer/includes/server.md)] channel logs, which you can see in Event Viewer, under **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Common** > **Admin**.<br /><br />Default: Normal<br />Dynamically Updatable: Yes|  
@@ -93,9 +97,9 @@ The following table describes fields on the **General** tab in the [!INCLUDE[adm
 |UI Elements Removal|UIElementRemovalOption|Specifies whether UI elements are hidden when the related object is not accessible according to the license or according to user permissions or both. For more information, see [Hiding UI Elements](hide-ui-elements.md).<br /><br />Default: LicenseFileandUserPermissions<br />Dynamically Updatable: No| |Use NTLM Authentication|ServicesUseNTLMAuthentication|Specifies whether NTLM authentication is enabled for web services. To require Kerberos authentication, disable this option.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|  
 |*not available*|XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
 
-
-##  <a name="Database"></a> Database Settings  
- The following table describes fields on the **Database** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
+##  <a name="Database"></a> Database Settings
+  
+The following table describes fields on the **Database** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 > [!NOTE]  
 >  If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant server instance, then except for the **Database Name**, **Database Instance**, and **Database Server** settings, the settings apply to both the application database and the tenant database.  
@@ -120,7 +124,8 @@ The following table describes fields on the **General** tab in the [!INCLUDE[adm
 |Enable SQL Parameters by Ordinal|SqlParametersByOrdinal|Specifies whether parameters in SQL statements are referenced by their ordinal number.<br /><br /> Enabling this setting improves performance when using buffered inserts.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|
 |SQL Query Logging Threshold|SqlLongRunningThreshold|Specifies the amount of time (in milliseconds) that an SQL query can run before a warning event is recorded in the application log for the server instance. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.<br /><br /> Default: 1000<br />Dynamically Updatable: Yes|
 
-##  <a name="ClientServices"></a> Client Services Settings  
+##  <a name="ClientServices"></a> Client Services Settings
+  
 The following table describes fields on the **Client Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
@@ -146,7 +151,8 @@ The following table describes fields on the **Client Services** tab in the [!INC
 |Web Client Base URL|PublicWebBaseUrl|Specifies the root of the URLs that are used to open hyperlinks to pages and reports in the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br />`http[s]://[hostname]:[port]/[webserverinstance]`<br /><br />This field maps to the `PublicWebBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The URL of the Web client<br />Dynamically Updatable: No|  
 |Windows Client Base URL|PublicWinBaseUrl|Specifies the root of the URLs that are used to open hyperlinks to pages and reports in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br />`DynamicsNAV://[hostname]:[port]/[instance]/`<br /><br /> This field maps to the `PublicWinBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The URL of the Wndows client<br />Dynamically Updatable: No|  
 
-##  <a name="SOAPServices"></a> SOAP Services Settings  
+##  <a name="SOAPServices"></a> SOAP Services Settings
+  
  The following table describes fields on the **SOAP Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
@@ -157,7 +163,8 @@ The following table describes fields on the **Client Services** tab in the [!INC
 |Port|SOAPServicesPort|The listening HTTP port for SOAP web services.<br /><br /> Valid range: 1 - 65535<br /> Default: 7047<br />Dynamically Updatable: No|  
 |SOAP Base URL|PublicSOAPBaseUrl|Specifies the root of the URLs that are used to access SOAP web services. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br /> http\[s\]://*hostname*:*port*/*instance*/WS/<br /><br /> This field maps to the `PublicSOAPBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The SOAP URL for the server instance<br />Dynamically Updatable: No|  
 
-##  <a name="ODataServices"></a> OData Services Settings  
+##  <a name="ODataServices"></a> OData Services Settings
+  
  The following table describes fields on the **OData Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
@@ -178,8 +185,9 @@ The following table describes fields on the **Client Services** tab in the [!INC
 > [!IMPORTANT]  
 >  The maximum permitted size of an OData web services request is specified by the **Max Message Size** option on the **SOAP Services** tab.  
 
-##  <a name="NASServices"></a> NAS Services Settings  
- The following table describes fields on the **NAS Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+##  <a name="NASServices"></a> NAS Services Settings
+  
+The following table describes fields on the **NAS Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
 > [!NOTE]  
 >  Instead of using NAS services, we recommend that you use the Task Scheduler (see [Task Scheduler](../developer/devenv-task-scheduler.md). If you decide to use NAS, and want to read more about its configuration, see [Configuring NAS Services](/dynamics-nav/configuring-nas-services) in the Dev and IT Pro Help for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
@@ -193,8 +201,9 @@ The following table describes fields on the **Client Services** tab in the [!INC
 |Startup Method|NASServicesStartupMethod|Specifies the method that will be called in the **NASStartupCodeunit**.<br /><br /> Example values:<br /><br />                      **""**<br /> If no start method is specified \(null string\), the OnRun trigger is called.<br /><br />**StartNAS**<br /> NAS services runs the StartNAS method in the NAS Startup Codeunit.<br /><br /> Default: <br />Dynamically Updatable: No|  
 
 
-##  <a name="ManagementServices"></a> Management Services Settings  
- The following table describes fields on the **Management Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
+##  <a name="ManagementServices"></a> Management Services Settings
+  
+The following table describes fields on the **Management Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|  
@@ -202,6 +211,7 @@ The following table describes fields on the **Client Services** tab in the [!INC
 |Port|ManagementServicesPort|The listening TCP port for the [!INCLUDE[admintool](../developer/includes/admintool.md)].<br /><br /> Valid range: 1 - 65535<br /> Default: 7045<br />Dynamically Updatable: No|  
 
 ## Azure Key Vault Encryption Provider Tab Settings
+
 The following table describes fields on the **Azure Key Vault Encryption Provider** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
 > [!NOTE]  
@@ -216,6 +226,7 @@ The following table describes fields on the **Azure Key Vault Encryption Provide
 |  Key URI  | AzureKeyVaultKeyUri| Specifies the URI of the key in the Key Vault encryption provider setup. <br /><br />Default:  <br />Dynamically Updatable: No |
 
 ## <a name="AzureAd"></a>Azure Active Directory (Azure AD) Settings
+
 The following table describes fields on the **Azure Active Directory (Azure AD)** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
 The settings in this tab configure the [!INCLUDE[server](../developer/includes/server.md)] instance to use Azure AD authentication. The settings are only relevant when the server instance is configured Access Control Service, that is, when the **Credential Type** is set to **AccessControlService**. For more information about authenticating using Azure AD, see [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md).
@@ -234,6 +245,7 @@ The settings in this tab configure the [!INCLUDE[server](../developer/includes/s
 |  WS-Federation Metadata Location  | ClientServicesFederationMetadataLocation| Specifies the URL for the federation metadata document that describes the configuration information for your Azure AD tenant. The federation metadata document is used to validate the security tokens that the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] receive, and to establish a trust relationship with between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and an application that you have added to Azure AD.<br /><br /> You must specify a URL in the following format:<br /><br />`https://login.windows.net/[AADTENANTID]/FederationMetadata/2007-06/FederationMetadata.xml`<br /><br />The placeholder [AADTENANTID] represents the GUID of your Azure AD tenant. If the server instance has to support multiple Azure AD tenants, then the Azure AD Tenant ID parameter that is specified when mounting a tenant replaces the placeholder. <br /><br /> This parameter is relevant only when **Credential Type**, on the **General** tab, is set to **AccessControlService**. For more information, see [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md).<br /><br />Default: <br />Dynamically Updatable: No|  
 
 ## Task Scheduler Settings
+
 The following table describes fields on the **Task Scheduler** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
 The task scheduler processes jobs and other processes on a scheduled basis. For more information about task scheduler, see [Task Scheduler](../developer/devenv-task-scheduler.md).
@@ -246,6 +258,7 @@ The task scheduler processes jobs and other processes on a scheduled basis. For 
 |  System Task End Time  | TaskSchedulerSystemTaskEndTime| Specifies the time of day after which system tasks cannot start. The time is based on the time zone of the computer that is running the server instance. <br /><br />The value has the format HH:MM:SS.<br /><br />Default: 23:59:59 <br />Dynamically Updatable: Yes|
 
 ## Reports Settings
+
 The following table describes fields on the **Reports** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
 |  Setting  |Key Name|  Description  |
@@ -257,12 +270,19 @@ The following table describes fields on the **Reports** tab in the [!INCLUDE[adm
 | Report PDF Font Embedding  |ReportPDFFontEmbedding|  Specifies whether fonts are embedded in PDF files that are generated for reports when the report uses an RDLC report layout at runtime. This setting applies when reports are run and saved as PDF files on the client (from the report request page or print preview window) or on the server instance (by the [SAVEAS function](../developer/methods/devenv-SAVEAS-method.md) or [SAVEASPDF function](../developer/methods/devenv-SAVEASPDF-method-Report.md) in AL code).<br /><br />**Note:** This setting does not apply when a report uses a Word report layout at runtime.<br/><br/>Embedding fonts in a PDF of a report makes sure that the PDF will use the same fonts as the original file, regardless of where the PDF is opened and which fonts are installed on the computer. However, embedding fonts can significantly increase the size of the PDF files. By disabling font embedding, you can decrease the size of the report PDF files.<br /><br />**Note:** This is a global setting for font embedding in report PDF files. You can override this setting on a report basis by the specifying the [PDFFontEmbedding property](../developer/properties/devenv-PDFFontEmbedding-Property.md).<br /><br />Default: Enabled<br />Dynamically Updatable: No| 
 |*not available*|CalculateBestPaperSizeForReportPrinting|Determines the paper size to use when printing reports from the client.<br /><br />If set to `true`, the system calculates which of the available paper sizes on the printer is best suited for printing, and then uses that paper size.<br /><br /> If set to `false`, the printer's default paper size is used.<br /><br />Default: true|
 
-## Development Settings
+## <a name="Development"></a>Development Settings
+
 The following table describes fields on the **Development** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
 |  Setting  |Key Name|  Description  |
 |-----------|--------|---------------|
 |Allowed Extension Target Level|ExtensionAllowedTargetLevel| Specifies the allowed target level when publishing extensions. The options are **Internal**, **Extension**, **Solution**, and **Personalization**. <br /> <br />- If you specify the  **Internal** option, the allowed compilation target is set to everything on-premises. The **Internal** setting allows using all restricted APIs. The `target` setting in the `app.json` file must also be set to **Internal**. For more information, see [JSON Files](../developer/devenv-json-files.md).<br /><br />- If you specify the **Extension** option, the allowed extension target level is set to SaaS. <br /><br />- By adding the setting ``"target":"Extension"`` in the manifest enables you to submit the extension to AppSource. <br /><br /> The **Personalization** and **Solution** settings are currently for internal use only. <br /><br />**Note:** It is recommended to use either **Internal** or **Extension** options to set Allowed Extension Target Level. <br /><br />Default: Internal<br />Dynamically Updatable: No|
+|Debugger – Long Running SQL Statements Threshold|LongRunningSqlStatementsInDebuggerThreshold|Specifies the amount of time (in milliseconds) that an SQL query can run before it is logged in debugger telemetry.<br /><br /> Default: Enabled<br />Dynamically Updatable: Yes|
+|Debugger - Number of SQL Statements to Show|AmountOfSqlStatementsInDebugger|Specifies the amount of SQL statements used in the debugger; the higher number you choose, the more data will be sent to the debugger.<br /><br /> Default: Enabled<br />Dynamically Updatable: Yes|
+|Debugger - Show Long Running SQL Statements|EnableLongRunningSqlStatementsInDebugger|Specifies whether long running SQL statements will be shown in the debugger.<br /><br /> Default: Enabled<br />Dynamically Updatable: Yes|
+|Debugger - Show SQL Statements|EnableSqlInformationDebugger|Specifies whether the debugger should collect the last used SQL statements and show them in the debugger.<br /><br /> Default: Enabled<br />Dynamically Updatable: Yes|
+|Debugging Allowed|DebuggingAllowed|Specifies whether AL debugging is allowed for this [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|
+|Enable Debugging|EnableDebugging|Specifies whether the [!INCLUDE[server](../developer/includes/server.md)] instance starts with debugging enabled.<br /><br /> If this option is enabled, the following occurs:<br /><br /> When the client first connects, all C\# files for the application are generated. C\# files persist between [!INCLUDE[server](../developer/includes/server.md)] restarts. Application objects are compiled with debug information.<br /><br /> Default: Not enabled<br />Dynamically Updatable: No|
 |Enable Developer Service Endpoint|DeveloperServicesEnabled|Specifies whether the Developer service endpoint is enabled. This setting must be enabled to publish extensions and download symbols.<br /><br />- If the check box is selected, the extension can be published to the allowed extension target level. <br /><br />- If the check box is not selected, the extension cannot be published.<br /><br />- This setting can also be controlled from the .xml file.<br /><br /> Default: Not enabled (check box is cleared)<br />Dynamically Updatable: No|
 |Enable Loading Application Symbol References at Server Startup|EnableSymbolLoadingAtServerStartup|Specifies whether application symbol references should be loaded at server startup. This setting must be enabled to allow any symbol generation. If the setting is not enabled, the **generatesymbolreference** setting does not have any effect. For more information, see [Running C/SIDE and AL Side-by-Side](../developer/devenv-running-cside-and-al-side-by-side.md).<br /><br />Default: Not enabled (check box is cleared)<br />Dynamically Updatable: No|
 |Enable SSL|DeveloperServicesSSLEnabled|Specifies whether SSL (HTTPS) is enabled for the developer web service port. <br /><br />SSL (Secure Sockets Layer) secures the connection for the web services. <br /><br />- If the check box is selected, then SSL is enabled. <br /><br />- If the check box is not selected, the developer web service port cannot establish a secure connection. <br /><br />Default: Not enabled (check box is cleared)<br />Dynamically Updatable: No|
@@ -280,7 +300,8 @@ The following table describes settings that you can adjust for compatibility wit
 |Use Client Timestamp For Report Execution Timestamp|ReplaceReportExecutionTimeWithClientTime|Specifies whether to replace the report execution timestamp with the client timestamp instead of the server instance timestamp.<br /><br /> Default: Enabled (check box is selected)<br />Dynamically Updatable: No|
 |Use FIND('-') to Populate Pages Instead of FIND('=><')|UseFindMinusWhenPopulatingPage|Specifies whether pages are initially populated by using FIND('-') instead of FIND('=><'). This setting is relevant to pages that display lists in descending order. Enabling this setting ensures that the first record, instead of the last record, is in focus when the page opens. Pages that use the OnFindRecord trigger will ignore this setting and always use FIND('=><').<br /><br /> Default: Enabled (check box is selected)<br />Dynamically Updatable: No|
 
-##  <a name="UsingPowerShell"></a> Using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to Modify Server Instance Settings  
+##  <a name="UsingPowerShell"></a> Using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to Modify Server Instance Settings
+  
 The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] includes several `Set-` cmdlets that enable you to create and modify [!INCLUDE[server](../developer/includes/server.md)] instances.
 
 The main cmdlet for configuring a server instance is the Set-NAVServerConfiguration cmdlet. You can use this cmdlet to change any of the configuration settings that are listed in the previous sections. To change a configuration setting, you set `-KeyName` parameter to the **Key Name** that corresponds to the setting, and set the `-KeyValue`parameter to the new value. For example, you can change the value for `DatabaseServer` to `DatabaseServer.Domain.Com` for the server instance named `MyInstance` by executing this cmdlet:  
@@ -290,6 +311,7 @@ Set-NAVServerConfiguration -ServerInstance "MyInstance" -KeyName "DatabaseServer
 ```  
 
 ## <a name="DynamicSettings"></a>Modifying dynamically updatable settings
+
 For dynamically updatable settings, use the `-ApplyTo` parameter to specify how to apply the change. The change can be written directly to the configuration file (CustomSettings.config) and/or applied to the current server instance state. The option you choose will determine whether a server instance restart is required for the change to take effect. The parameter has three options, as described in the following table:
 
 |  Option |Description  |
@@ -306,7 +328,8 @@ Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName MaxStreamReadSize 
 
 For more information about running the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).  
 
-## See Also  
+## See Also
+  
 [Business Central Server Administration Tool](administration-tool.md)   
 [Enhancing Business Central Server Security](../security/enhancing-server-instance-security.md)   
 [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)   

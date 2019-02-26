@@ -14,7 +14,8 @@ ms.author: solsen
 
 # Debugging
 
-The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing F5.  
+The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing F5.
+
 
 > [!TIP]  
 > For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging).
@@ -112,6 +113,10 @@ Database insights also give you the possibility to peek into the most recent and
 |Approx. Rows Read | This number shows the approximate number of rows read from the [!INCLUDE[prodshort](includes/prodshort.md)] database by the SQL statement. You can use this to analyze if you are missing filters.|
 
 The number of SQL statements tracked by the debugger can be configured in the [!INCLUDE[server](includes/server.md)]. The default value is 10.
+
+## Configuring Debugger in [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises
+
+The [!INCLUDE[server](../includes/server.md)] instance has several configuration settings that control whether the debugger is enabled and the issights it provides. For more information about these settings, see [Configuring Business Central Server](../administration/configure-server.instance.md#Developer).
 
 ## See Also
   
