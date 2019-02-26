@@ -110,7 +110,7 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
 #### [The “Ready to Go” Online Learning Catalog](developer/readiness/readiness-learning-catalog.md)
-#### [The Marketing Checklist](developer/readiness/readiness-checklist-marketing.md)
+#### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 ### Getting Started with AL for On-Premises
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)

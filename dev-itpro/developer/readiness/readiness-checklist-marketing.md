@@ -1,5 +1,5 @@
 ---
-title: Marketing Checklist for Showcasing Your App
+title: "Marketing Validation Checklist"
 description: "The marketing checklist for Business Central apps"
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -40,7 +40,6 @@ elsewhere. Accordingly, we recommend you put in the time, effort and due
 diligence when developing this content.
 
 ## Marketing Validation Checklist
-------------------------------
 
 | REQUIREMENTS - Click on each link below for more info|
 |------------------------------------------------------|
@@ -63,7 +62,17 @@ diligence when developing this content.
 | [Localization](readiness-checklist-marketing.md)|
 | [Connect Apps](readiness-checklist-marketing.md)|
 
-> [!IMPORTANT] Use this Key to develop your app page according to the in depth information shared below:   SALES & INVENTORY FORECAST  image014.jpg 
+
+> [!IMPORTANT]  
+> Use this Key to develop your app page according to the in depth information shared below: SALES & INVENTORY FORECAST
+
+
+To ease your experience with developing the store front details of your listing, we have numerated the core elements, as they appear when you upload it in “Storefront Details” tab at the Cloud Partner Portal.  
+
+The image below is an example of what an offering looks like on AppSource, when the storefront details are completed according to best practices. We highly recommend that you review these guidelines.  
+
+![StoreFront Details](../media/storefront.jpg)
+
 
 ### <a name="LanguageBranding"></a>Language & Branding Requirements 
 
@@ -77,11 +86,10 @@ diligence when developing this content.
 | | Creating a website that has two landing pages (i.e. two language buttons – cf. one in English and one in the given local language). In so doing your customers can switch to the language they master and thus easily be able to find the right docs and contact info.
 | | However, this set up implies that you need to *make two versions of all your docs, support options and landing pages.* | 
 | | Note, as mentioned above, everything that is accessible through the Cloud Partner Portal needs to be in English. | 
-| | Get inspiration on how to create a user-friendly landing page and (cf. see *“Checklist C”*) how Deex Korea Co Ltd has set up their apps landing page to accommodate two languages, and everything that this entails. You can find their landing pages here: | 
-| | [Deex Korea Co Ltd (English version)](http://www.deex.co.kr/index_en)  
-| | [Deex Korea Co Ltd (Korean version)](http://www.deex.co.kr/)
+| | Get inspiration on how to create a user-friendly landing page and (cf. see *“Checklist C”*) how Deex Korea Co Ltd has set up their apps landing page to accommodate two languages, and everything that this entails. You can find their landing pages here: <br>- [Deex Korea Co Ltd (English version)](http://www.deex.co.kr/index_en)<br> -[Deex Korea Co Ltd (Korean version)](http://www.deex.co.kr/)
 
-> [!Tip]  Example of a user friendly landing page that has two language options and is set up in accordance with our best practices:*
+> [!Tip]  
+> Example of a user friendly landing page that has two language options and is set up in accordance with our best practices:*
 
 | General requirements                                          | Description                                                     | Requirements |
 |---------------------------------------------------------------|-----------------------------------------------------------------|--------------|
@@ -99,7 +107,8 @@ diligence when developing this content.
 | | - Screenshots and demos of old Dynamics 365 UIs
 | | Referencing above acronyms, old brand names and old UIs will make your app fail marketing validation promptly.
 
-> [!NOTE]  All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, Business Central, D365 or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.
+> [!NOTE]  
+> All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, Business Central, D365 or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.
 
 ### <a name="OfferSummary"></a>Offer Name and Offer Summary
 
@@ -186,7 +195,8 @@ customers want.*
 | | \<h2\>\<em\> section with provocative questions
 | | \</em\>\</h2\>
 
-> [!Tip]  *Example:* *Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?*
+> [!TIP]  
+> *Example:* *Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?*
 
 | Offer Details                          | Description                                                                                                                                                                                                                                                   | Requirements |
 |----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -200,7 +210,8 @@ customers want.*
 | | Format this section as a paragraph o Use these html tags:
 | | \<p\> pain paragraph\</p\> *Example:*
 
-> [!Tip]  *Example:* *Managing inventory is a delicate balancing act. Carry too little and you
+> [!TIP]  
+> *Example:* *Managing inventory is a delicate balancing act. Carry too little and you
 lose orders (and customers). Carry too much and you tie up much needed working capital. Carry far too much and you end up discounting, or worse, writing off obsolete products.*
 
 | Offer Details                             | Description                                                                                                                                             | Requirements |
@@ -218,7 +229,8 @@ lose orders (and customers). Carry too much and you tie up much needed working c
 | | \<p\> 1st benefit paragraph\</p\>
 | | \<p\> 2nd benefit paragraph\</p\>
 
-> [!Tip]  *Example:* *Our app uses Cortana Intelligence to analyze historical data to predict
+> [!TIP]  
+> *Example:* *Our app uses Cortana Intelligence to analyze historical data to predict
 future demand, so you can base procurement decisions on accurate and
 reliable forecasts, and help your company avoid lost revenue, optimize
 shipping costs, discover trends and boost your brand reputation by always
@@ -243,7 +255,8 @@ Forecast extension.*
 | | \<li\>3rd Bullet point \</li\>
 | |  \</ul\>
 
-> [!Tip]  *Example:* *Features and benefits of using this extension*
+> [!TIP]  
+> *Example:* *Features and benefits of using this extension*
 
 -   *Free up cash*
 
@@ -265,7 +278,8 @@ Forecast extension.*
 | | Format this section as a paragraph o Use these html tags:
 | | \<p\>Click the \<strong\>Get it now\</strong\> button – then insert your closing call to action paragraph here\</p\>
 
-> [!Tip]  *Example:* *Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.*
+> [!TIP]  
+> *Example:* *Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.*
 
 | Offer Details                                        | Description                                                                                                                                           | Requirements |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -281,7 +295,8 @@ Forecast extension.*
 | | Format the paragraph o Use these html tags:
 | | \<p\>This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.\</p\>\<p\>
 
-> [!Tip]  *Example:* *Supported editions:* *This app supports both the Essential and Premium edition of Microsoft Dynamics 365 Business Central.*
+> [!TIP]  
+> *Example:* *Supported editions:* *This app supports both the Essential and Premium edition of Microsoft Dynamics 365 Business Central.*
 
 | Offer Details                                         | Description                                                                                                               | Requirements |
 |-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -300,9 +315,11 @@ Forecast extension.*
 | | Format headline in bold o Use these html tags: \<h3\>\<strong\>Supported countries:\</strong\>\<h3\>
 | | Format the paragraph o Use these html tags: \<p\>Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Iceland, Italy, Mexico,Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States\</p\> \</p\>
 
-> [!Tip]  *Example:* *Supported countries:* *This app is available in: Australia, Austria, Belgium, Canada,* *Denmark, Finland, France, Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway, Spain, Sweden, Switzerland, United Kingdom and United States.*
+> [!TIP]  
+> *Example:* *Supported countries:* *This app is available in: Australia, Austria, Belgium, Canada,* *Denmark, Finland, France, Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway, Spain, Sweden, Switzerland, United Kingdom and United States.*
 
-> [!Tip]  Example of a completed offer summary and offer description in the “Offer
+> [!TIP]  
+> Example of a completed offer summary and offer description in the “Offer
 details” section of the Cloud Partner Portal.
 
 Below is an enlarged picture of the entire offer description (cf. point 2.A-G)
@@ -331,11 +348,11 @@ and the html tags used:
 -   You are required to provide two offer logos on AppSource: o one in 48x48
     pixels resolution
 
-▪ for your app’s search page
+▪ for your app’s search page:
 
 -   one in 216x216 pixels resolution
 
-▪ for your app’s details page
+▪ for your app’s details page:
 
 -   Both logos needs to be uploaded as .png images
 
@@ -357,7 +374,7 @@ and the html tags used:
     a four-color process CMYK (cyan, magenta, yellow, black) in high resolution
     of at least 300 dpi.
 
->   1 offer logo for your app’s search page:
+> 1 offer logo for your app’s search page:
 
 -   48x48 pixels resolution
 
@@ -419,8 +436,7 @@ Microsoft Dynamics 365 Business Central.
 
 >   *Example of a video that is set up according to our best practices:*
 
->   [A “How and What product video” from Open Door
->   Technology](https://vimeo.com/260138342)
+>   [A “How and What product video” from Open Door Technology](https://vimeo.com/260138342)
 
 | Marketing artifacts | Description                                         | Requirements |
 |---------------------|-----------------------------------------------------|--------------|
@@ -447,11 +463,9 @@ Microsoft Dynamics 365 Business Central.
 
 >   *URL to YouTube video Thumbnail image*
 
->   [How Cortana helps manage inventory
->   in](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
+>   [How Cortana helps manage inventory in](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
 
->   [Dynamics 365 Business
->   Central](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
+>   [Dynamics 365 Business Central](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
 
 | Marketing artifacts                  | Description                                                                                                                                            | Requirements |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
