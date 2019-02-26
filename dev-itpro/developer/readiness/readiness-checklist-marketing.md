@@ -102,9 +102,9 @@ The image below is an example of what an offering looks like on AppSource, when 
 | | Don’t use Dynamics 365 names, logos or trademarks in your offering’s: name, URL, your company name, your social media account names or any other names you might use.
 | | Don’t make references to acronyms, old brand names or demo old UIs
 | | Don’t make any references in any text, screenshots, title bars, Webclient, spoken language in videos, documentation, app landing pages etc. to:
-| | - Acronyms: “NAV”, “FOBE” or “D365” 
-| | - Old brands: “for financials”, “for Finance & Operations” 
-| | - Screenshots and demos of old Dynamics 365 UIs
+| | ▪ Acronyms: “NAV”, “FOBE” or “D365” 
+| | ▪ Old brands: “for financials”, “for Finance & Operations” 
+| | ▪ Screenshots and demos of old Dynamics 365 UIs
 | | Referencing above acronyms, old brand names and old UIs will make your app fail marketing validation promptly.
 
 > [!NOTE]  
@@ -167,18 +167,18 @@ customers want.*
 | 2. Offer Description **(How to format and structure paragraphs in your offer description)** | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central app. | 	Required | 
 | | How to structure the paragraphs in your description? | 	
 | | Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. To do so, your description should consist of 6 paragraphs (in the following order):
-| | -- Introduction paragraph (point 3.A)
-| | -- Pain based paragraph (point 3.B)
-| | -- Benefit based paragraph (point 3.C)
-| | -- Benefits in bullet points paragraph (3.D)
-| | -- Closing Call to action paragraph (point 3.E)
-| | -- Supported editions paragraph (point 3.F)
-| | -- Supported countries paragraph (point 3.G)
-| | -- By including all of these paragraphs you will provide prospects with a compelling offer that explains them WHY they need to start using it.
+| | ▪ Introduction paragraph (point 3.A)
+| | ▪ Pain based paragraph (point 3.B)
+| | ▪ Benefit based paragraph (point 3.C)
+| | ▪ Benefits in bullet points paragraph (3.D)
+| | ▪ Closing Call to action paragraph (point 3.E)
+| | ▪ Supported editions paragraph (point 3.F)
+| | ▪ Supported countries paragraph (point 3.G)
+| | ▪ By including all of these paragraphs you will provide prospects with a compelling offer that explains them WHY they need to start using it.
 | | How to format your description in the Cloud Partner Portal? The right formatting enables prospects to get a quick overview of the value that your offer can give them. Making the description compelling and nice to look at is therefore of key importance. When formatting the description of your offer please consider the following:
 | | The description can max. be 3000 characters incl. spaces
 | | Use simple html tags when formatting your description to create structured sections that are easy to get an overview of. The following html tags are allowed:
-| | -- p, em, ul, li, ol and header tags.
+| | ▪ p, em, ul, li, ol and header tags.
 | | Structure your description as small “easily readable” sections with headlines
 | | List vital benefits as bullet points
 | | Engage prospects by speaking directly to them using second person “you” language.
@@ -257,13 +257,7 @@ Forecast extension.*
 | |  \</ul\>
 
 > [!TIP]  
-> *Example:* *Features and benefits of using this extension*
-
--   *Free up cash*
-
--   *Know exactly when to replenish stock*
-
--   *Always have inventory on hand to satisfy every customer order*
+> *Example:* *Features and benefits of using this extension* *Free up cash* *Know exactly when to replenish stock* *Always have inventory on hand to satisfy every customer order*
 
 | Offer Details                                            | Description                                                                                                                                                | Requirements |
 |----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -284,7 +278,7 @@ Forecast extension.*
 
 | Offer Details                                        | Description                                                                                                                                           | Requirements |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 2.F Offer Description (Supported editions paragraph) | Finally, insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
+| 2.F Offer Description **(Supported editions paragraph)** | Finally, insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
 | | How to structure the content in this paragraph?*
 | | Create a header 3 in the html tags and make it bold.
 | | Call the header “Supported editions”.
@@ -304,10 +298,10 @@ Forecast extension.*
 | 2.G Offer Description **(Supported countries paragraph)** | Finally, insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
 | | Current availability of Dynamics 365 Business Central
 | | Available in 19 countries: 
-| | -- EMEA (14): AT, BE, CH, DE, DK, ES, FI, FR, IS, IT, NL, NO, SE, UK 
-| | -- NA (2): CA, US 
-| | -- LATAM (1) MX 
-| | -- APAC (2): AU, NZ
+| | ▪ EMEA (14): AT, BE, CH, DE, DK, ES, FI, FR, IS, IT, NL, NO, SE, UK 
+| | ▪ NA (2): CA, US 
+| | ▪ LATAM (1) MX 
+| | ▪ APAC (2): AU, NZ
 | | How to structure the content in this paragraph?
 | | Create a header 3 in the html tags and make it bold.
 | | Call the header “Supported countries”.
@@ -342,313 +336,150 @@ and the html tags used:
 
 | Marketing artifacts                                                | Description                                | Requirements |
 |--------------------------------------------------------------------|--------------------------------------------|--------------|
-| 14. Offer logo                                                     | Formatting                                 | Required     |
-| 14.A Offer logo for your app’s search page (.png, 48x48 pixels)    | [./media/image17.jpg](./media/image17.jpg) | Required     |
-| 14.B Offer logo for your app’s details page (.png, 216x216 pixels) | [./media/image17.jpg](./media/image17.jpg) | Required     |
+| 14. **Offer logo**                                                     | Formatting                                 | Required     |
+| 14.A Offer logo for your app’s search page (.png, 48x48 pixels)    | 1 offer logo for your app’s search page: 48x48 pixels resolution .png image [./media/image17.jpg](./media/image17.jpg) | Required     |
+| 14.B Offer logo for your app’s details page (.png, 216x216 pixels) | 1 offer logo for your app’s details page: 216x216 pixels resolution .png image [./media/image17.jpg](./media/image17.jpg) | Required     |
+| | You are required to provide two offer logos on AppSource:
+| | one in 48x48 pixels resolution for your app’s search page:
+| | one in 216x216 pixels resolution for your app’s details page:
+| | Both logos needs to be uploaded as .png images
+| | Structure
+| | Your logo should be designed and optimized for a digital medium, not a traditional print based logo.
+| | Monitors emit light and paper absorbs light.
+| | Make sure you change the format, as you don’t want to end up with weird, inaccurate color representation.
+| | Color calibration across devices can affect the look and feel of your app:
+| | All colors can be achieved by merging RGB (red, green, and blue) light, but monitors display only a limited range of the visible spectrum at a lowmedium resolution, usually 72-75 dots per inch. 
+| | Print production usually requires a four-color process CMYK (cyan, magenta, yellow, black) in high resolution of at least 300 dpi.
+| | 
 
--   You are required to provide two offer logos on AppSource: o one in 48x48
-    pixels resolution
 
-▪ for your app’s search page:
-
--   one in 216x216 pixels resolution
-
-▪ for your app’s details page:
-
--   Both logos needs to be uploaded as .png images
-
->   Structure
-
--   Your logo should be designed and optimized for a digital medium, not a
-    traditional print based logo.
-
--   Monitors emit light and paper absorbs light.
-
--   Make sure you change the format, as you don’t want to end up with weird,
-    inaccurate color representation.
-
--   Color calibration across devices can affect the look and feel of your app:
-
--   All colors can be achieved by merging RGB (red, green, and blue) light, but
-    monitors display only a limited range of the visible spectrum at a lowmedium
-    resolution, usually 72-75 dots per inch. o Print production usually requires
-    a four-color process CMYK (cyan, magenta, yellow, black) in high resolution
-    of at least 300 dpi.
-
-> 1 offer logo for your app’s search page:
-
--   48x48 pixels resolution
-
--   .png image
-
->   1 offer logo for your app’s details page:
-
--   216x216 pixels resolution
-
--   .png image
-
-| Marketing artifacts | Description                                                                                 | Requirements |
+| Marketing artifacts                  | Description                                                                                 | Requirements |
 |---------------------|---------------------------------------------------------------------------------------------|--------------|
-| 15. Videos          | Pictures tell more than a 100 words – make sure to leverage this when promoting your offer. | Recommended  |
+| 15. **Videos**          | Pictures tell more than a 100 words – make sure to leverage this when promoting your offer. | Recommended  |
+| | Large amounts of information are easier to take in when visualized. Using videos that demo your offer are therefore ideal to create intertest and enable prospects to learn more about your offer quickly. On AppSource videos will play when customers select the associated video thumbnail on your app's details page.
+| | **Formatting and General requirements (cf. section 0.A-D)** to keep in mind when creating videos:
+| | A minimum of one video is recommended (up to a maximum of 5 are permitted).
+| | Language in videos can be either local or English
+| | ▪  Note, videos made in local language must have subtitles in English.
+| | Make the right references from the get go: 
+| | Only include screenshots & demo of the newest UI.
+| | Reference Microsoft’s brand names correctly:
+| | ▪  Only refer to Microsoft Dynamics 365 Business Central or Dynamics 365 Business Central.
+| | Don’t make references to acronyms, old Dynamics 365 brand names/logos or demo old UIs.
+| | Don’t include logos or trademarks in your video.
+| | **Structure**
+| | Choose the type of videos that you want to include 
+| | You can create 4 different types of marketing videos:
+| | ▪  “Why” videos
+| | ▪  “How & What” videos
+| | ▪  “Getting Started” videos
+| | ▪ "Customer Testimony” videos 
+| | See guidelines on how to best structure the 4 above mentioned videos (and why it is crucial to incorporate them) in *”Checklist D”.*
 
->   Large amounts of information are easier to take in when visualized. Using
->   videos that demo your offer are therefore ideal to create intertest and
->   enable prospects to learn more about your offer quickly. On AppSource videos
->   will play when customers select the associated video thumbnail on your app's
->   details page.
-
->   Formatting and *General requirements (cf. section 0.A-D)* to keep in mind
->   when creating videos:
-
--   A minimum of one video is recommended (up to a maximum of 5 are permitted).
-
--   Language in videos can be either local or English
-
--   Note, videos made in local language must have subtitles in English.
-
--   Make the right references from the get go: o Only include screenshots & demo
-    of the newest UI.
-
--   Reference Microsoft’s brand names correctly:
-
-▪ Only refer to Microsoft Dynamics 365 or
-
-Microsoft Dynamics 365 Business Central.
-
--   Don’t make references to acronyms, old Dynamics 365 brand names/logos or
-    demo old UIs.
-
--   Don’t include logos or trademarks in your video.
-
->   Structure
-
--   Choose the type of videos that you want to include o You can create 4
-    different types of marketing videos:
-
--   “Why” videos
-
--   “How & What” videos
-
--   “Getting Started” videos
-
--   Customer testimony” videos o See guidelines on how to best structure the 4
-    above mentioned videos (and why it is crucial to incorporate them) in
-    *”Checklist D”.*
-
+> [!TIP]
 >   *Example of a video that is set up according to our best practices:*
-
 >   [A “How and What product video” from Open Door Technology](https://vimeo.com/260138342)
 
 | Marketing artifacts | Description                                         | Requirements |
 |---------------------|-----------------------------------------------------|--------------|
-| 15. Videos          | How to upload video(s) to the Cloud Partner Portal? | Recommended  |
+| 15. **Videos**          | How to upload video(s) to the Cloud Partner Portal? | Recommended  |
+| | When uploading a video in the in the Cloud Partner Portal you need to provide the following:
+| | A name for your video (cf. customers will see this name on your app's details page)
+| | An URL to a YouTube or Vimeo video 
+| | The video URL must be either a YouTube or Vimeo link that is able to be played using an embedded experience.
+| | A thumbnail image o Upload only a .png image with resolution 1280x720.
+| | Don't add a 'Play' icon to the thumbnail; this will be added automatically in AppSource.
+| | Note, on AppSource videos will play when customers select the associated video thumbnail on your app's details page.
 
->   When uploading a video in the in the Cloud Partner Portal you need to
->   provide the following:
-
--   A name for your video (cf. customers will see this name on your app's
-    details page)
-
--   An URL to a YouTube or Vimeo video o The video URL must be either a YouTube
-    or Vimeo link that is able to be played using an embedded experience.
-
--   A thumbnail image o Upload only a .png image with resolution 1280x720.
-
--   Don't add a 'Play' icon to the thumbnail; this will be added automatically
-    in AppSource.
-
--   Note, on AppSource videos will play when customers select the associated
-    video thumbnail on your app's details page.
-
->   *Example:*
-
->   *URL to YouTube video Thumbnail image*
-
->   [How Cortana helps manage inventory in](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
-
->   [Dynamics 365 Business Central](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
+> [!TIP]
+>   *Example:* *URL to YouTube video Thumbnail image*
+>   [How Cortana helps manage inventory in](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s) [Dynamics 365 Business Central](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
 
 | Marketing artifacts                  | Description                                                                                                                                            | Requirements |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 16. Documents (Learn more documents) | Enable prospects to learn more about your offer by adding supporting sales and marketing assets in the “learn more” section of the storefront details. | Required     |
-
->   Formatting
-
--   A minimum of one document is required (up to a maximum of 3 are permitted).
-
--   It is a requirement that all docs are written in English and are formatted
-    as PDF-files.
-
--   We recommend you to add the link to your app landing page to all your
-    documents.
-
->   Structure
-
--   Think wisely about what content you include in the learn more section. Don’t
-    sell, educate the prospect:
-
--   Don’t just include a description of your offer here – the prospect has
-    already read the description in the store front details in AppSource and has
-    shown an interest in your offering by clicking on the learn more item –
-    don’t discourage this interest by repeating something that they already
-    know. o Instead, use this opportunity to show them something new that
-    entices their interest to start using your offer even more.
-
--   Examples of Sales and marketing docs you can include as your “Learn more”
-    assets are:
-
--   Set up instructions, customer reviews, marketing materials, white papers,
-    brochures, check lists, PowerPoints etc.
-
--   A unique offer landing page
-
->   When uploading a document in the in the Cloud Partner Portal you need to
->   provide the following:
-
--   A name for your document (cf. customers will see this name on your app's
-    details page)
-
--   Upload the doc you want to include in your storefront details
-
-Example of the completed offer logo-, videos and documents fields (cf. point
-14,15 and 16) in the “Marketing artifacts” section of the Cloud partner portal:
+| 16. **Documents** (Learn more documents) | Enable prospects to learn more about your offer by adding supporting sales and marketing assets in the “learn more” section of the storefront details. | Required     |
+| | Formatting
+| | A minimum of one document is required (up to a maximum of 3 are permitted).
+| | It is a requirement that all docs are written in English and are formatted as PDF-files.
+| | We recommend you to add the link to your app landing page to all your documents.
+| | Structure
+| | Think wisely about what content you include in the learn more section. Don’t sell, educate the prospect:
+| | ▪  Don’t just include a description of your offer here – the prospect has already read the description in the store front details in AppSource and has shown an interest in your offering by clicking on the learn more item – don’t discourage this interest by repeating something that they already know. 
+| | ▪  Instead, use this opportunity to show them something new that entices their interest to start using your offer even more.
+| | Examples of Sales and marketing docs you can include as your “Learn more” assets are:
+| | ▪  Set up instructions, customer reviews, marketing materials, white papers, brochures, check lists, PowerPoints etc.
+| | ▪  A unique offer landing page
+| | When uploading a document in the in the Cloud Partner Portal you need to provide the following:
+| | ▪ A name for your document (cf. customers will see this name on your app's details page) 
+| | ▪  Upload the doc you want to include in your storefront details
 
 | Marketing artifacts | Description | Requirements |
 |---------------------|-------------|--------------|
-| 17. Screenshots     | Pictures speak more directly to our brain than words. Your screenshots should therefore clearly demonstrate the claims you make and the functionality of your offer. | Required| 
+| 17. **Screenshots**     | Pictures speak more directly to our brain than words. Your screenshots should therefore clearly demonstrate the claims you make and the functionality of your offer. | Required| 
+| | Formatting
+| | A minimum of 3 screenshots are required (up to a maximum of 5 are permitted).
+| | Use images that demos your offer in Dynamics 365 Business Central and if possible, what problem your offer is solving.
+| | Choose the proper image format to use: o Screen portraits
+| | ▪ Can be more effective than screenshots because you can design annotations in them.
+| | Screenshots
+| | ▪ Require super-imposing, which can be clumsy and confusing. Also, screenshots lose readability when reduced in size
+| | Structure
+| | Upload only .png images with a resolution on 1280 x 720 px.
+| | Example of different types of images that you can include to visually demonstrate claims made are: Infographics, tables, charts, dashboards etc.
+| | Use screenshots that includes realistic demo data and tell a compelling story 
+| | Use visual images that highlights and demonstrates the key competitive differential between your product and others.
+| | Our brains love contrast, so use comparisons if you can (i.e. screenshots of “before” and “after” using your offer).
+| | Choose key visual elements to highlight rather than including a full screen of distracting, irrelevant content.
+| | ▪ Graphic dashboards are optimal.
+| | ▪ Zoom in on differentiation aspects.
+| | *Don’t use small fonts*, as small fonts that require squinting.
+| | *Don’t include screenshots from the Winclient* – only use screenshots from the Webclient and the Dynamics 365 Business Central UI.
+| | When uploading a screenshot in the in the Cloud Partner Portal you need to provide the following: 
+| | A name for your screenshot (Customers will see this name on your app's details page)
+| | An URL to a YouTube or Vimeo video o The video URL must be either a YouTube or Vimeo link that is able to be played using an embedded experience.
+| | Upload only a .png image with resolution 1280 x 720.
 
->   Formatting
+> [!TIP]
+>   *Example:* *Dashboard* *Set up instructions*
 
--   A minimum of 3 screenshots are required (up to a maximum of 5 are
-    permitted).
-
--   Use images that demos your offer in Dynamics 365 Business Central and if
-    possible, what problem your offer is solving.
-
--   Choose the proper image format to use: o Screen portraits
-
->   ▪ Can be more effective than screenshots because you can design annotations
->   in them.
-
--   Screenshots
-
->   ▪ Require super-imposing, which can be clumsy and confusing. Also,
->   screenshots lose readability when reduced in size
-
->   Structure
-
--   Upload only .png images with a resolution on 1280 x 720 px.
-
--   Examples of different types of images that you can include to visually
-    demonstrate claims made are:
-
--   Infographics, tables, charts, dashboards etc.
-
-Use screenshots that includes realistic demo data and tell a compelling story o
-Use visual images that highlights and demonstrates the key competitive
-differential between your product and others.
-
--   Our brains love contrast, so use comparisons if you can (i.e.
-
->   screenshots of “before” and “after” using your offer).
-
-Choose key visual elements to highlight rather than including a full screen of
-distracting, irrelevant content.
-
--   Graphic dashboards are optimal.
-
--   Zoom in on differentiation aspects.
-
--   *Don’t use small fonts*, as small fonts that require squinting.
-
--   *Don’t include screenshots from the Winclient* – only use screenshots from
-    the Webclient and the Dynamics 365 Business Central UI.
-
-| Marketing artifacts | Description                                                                                       | Requirements |
-|---------------------|---------------------------------------------------------------------------------------------------|--------------|
-| 17. Screenshots     | When uploading a screenshot in the in the Cloud Partner Portal you need to provide the following: | Required     |
-
--   A name for your screenshot (Customers will see this name on your app's
-    details page)
-
--   An URL to a YouTube or Vimeo video o The video URL must be either a YouTube
-    or Vimeo link that is able to be played using an embedded experience.
-
--   Upload only a .png image with resolution 1280 x 720.
-
->   *Example:*
-
->   *Dashboard Set up instructions*
-
-Example of the completed screenshot fields (cf. point 17) in the “Marketing
+> [!TIP]
+>   *Example:* of the completed screenshot fields (cf. point 17) in the “Marketing
 artifacts” section of the Cloud partner portal:
 
 ### <a name="Industries"></a>Industries, Categories, App Type
 
 | Listing details | Description | Requirements |
 |-----------------|--------------|-------------|
-| 3. Industries   | Choose the industries that your offer is best aligned to. If your offer relates to multiple industries you can choose a maximum of 2.                                                                                | Recommended  |
-| 4. Categories   | Choose the categories that your offer caters to (max 3)                                                                                                                                                              | Required     |
-| 5. App type     | Choose which app type your offer is. In the Cloud Partner Portal, you can choose between the options: Free and Trial. Each of these options will convert to different buttons in the storefront details of your app. | Required     |
+| 3. **Industries**   | Choose the industries that your offer is best aligned to. If your offer relates to multiple industries you can choose a maximum of 2.                                                                                | Recommended  |
+| | *Example:* Industries *Distribution, Professional services*
+| 4. **Categories**   | Choose the categories that your offer caters to (max 3)                                                                                                                                                              | Required     |
+| | *Example:* Categories *Operations Supply Chain, Sales*
+| 5. **App type**     | Choose which app type your offer is. In the Cloud Partner Portal, you can choose between the options: Free and Trial. Each of these options will convert to different buttons in the storefront details of your app. | Required     |
+| | Options, meaning and button layout in your storefront details:
+| | Free
+| | ▪ Means your offer is free
+| | ▪ A *Get It Now* button will appear in the storefront
+| | Trial 
+| | ▪ Means that your customers can try your offer for a short period of time on AppSource
+| | ▪ A *Free Trial* button will appear in the storefront
 
->   *Example:*
-
->   *Distribution, Professional services*
-
->   *Example:*
-
->   *Operations Supply Chain, Sales*
-
->   Options, meaning and button layout in your storefront details:
-
--   Free
-
--   Means your offer is free
-
--   A
-
-button will appear in the storefront
-
--   Trial o Means that your customers can try your offer for a short period of
-    time on AppSource
-
--   A
-
-button will appear in the storefront
-
->   Note, we recommend that you link to both this button and your offer’s unique
->   app landing page in the “Closing call to action” (cf.
-
->   point 3.E) of your app description.
-
->   *Example: Free*
-
-Example of the completed industries-, categories and app type fields (cf. point
-3,4 and 5) in the “Listing details” section of the Cloud partner portal:
+> [!NOTE] 
+>   We recommend that you link to both this button and your offer’s unique app landing page in the “Closing call to action” (cf. point 3.E) of your app description. *Example: Free*
 
 ### <a name="SupportedProd"></a>Supported Products, Keywords, Hide Key
 
 | Listing details   | Description | Requirements |
 |-------------------|-------------|--------------|
-| 11. Products your app works with | You do not have to select anything – this field is completed automatically because you are developing an app for Dynamics 365 Business Central. | Automatic    |
-| 12. Search keywords              | Enter a search keyword for your app (max. 3)                                                                                                    | Recommended  |
-| 13. Hide key                     | Enter a secret key that you'll use to preview your offer in AppSource before going live.                                                        | Required     |
+| 11. **Products your app works with** | You do not have to select anything – this field is completed automatically because you are developing an app for Dynamics 365 Business Central. | Automatic    |
+| | *Example:* *Dynamics 365 Business Central*
+| 12. **Search keywords**              | Enter a search keyword for your app (max. 3)                                                                                                   | Recommended  |
+| | *Example of 3 keywords:* *Forecasting, Sales, Inventory*
+| 13. **Hide key**                     | Enter a secret key that you'll use to preview your offer in AppSource before going live.                                                        | Required     |
+| | Note, this isn't a password and can only contain alphanumeric characters.
+| | *Example:* *SalesInventoryKey*
 
->   *Example:*
-
->   *Dynamics 365 Business Central*
-
->   *Example of 3 keywords:*
-
->   *Forecasting, Sales, Inventory*
-
->   Note, this isn't a password and can only contain alphanumeric characters.
-
->   *Example:*
-
->   *SalesInventoryKey*
-
-Example of the completed app release date-, products your app works with-,
+> [!TIP]
+>   *Example:* of the completed app release date-, products your app works with-,
 search keywords and hide key fields (cf. point 10,11,12 and 13) in the “Listing
 details” section of the Cloud partner portal:
 
@@ -656,96 +487,57 @@ details” section of the Cloud partner portal:
 
 | Listing details | Description | Requirements |
 |-----------------|-------------|--------------|
-| 6. Help URL                    | You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. | Required     |
-| 7. Supported countries/regions | Choose which countries your offer supports.                                                                                                                                                        | Recommended  |
-| 8. Supported languages         | Choose which languages your offer supports.                                                                                                                                                        | Recommended  |
-| 9. App version                 | Enter the latest version number of your offer *Example:*                                                                                                                                           | Recommended  |
+| 6. **Help URL**                    | You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. | Required     |
+| | Formatting
+| | It is a requirement that the help page is written in English.
+| | It is a requirement that all docs at the help page are written in English and are formatted as PDF-files.
+| | There needs to be a clear distinction between the support and the help site. We require two separate pages (i.e. the *link to the support and the help page cannot be the same*).
+| | Structure
+| | Provide an URL for a distinct help page, where prospects can find different types of online product help.
+| | The help page needs to include online documentation that can be used as help.
+| | ▪ Types of online help that you can include on your help page are:
+| | ▪ Instructions on set up/how to get started
+| | ▪ Links to existing videos and documentation 
+| | ▪ Links to the most frequently asked questions
+| | *Example of a help site that is set up according to our best practices:* [Open Door Technology’s help page](http://odtrentals365help.opendoorrentalsoftware.com/)
+| | Use the dropdown box to choose which countries your offer supports.
 
->   Formatting
-
--   It is a requirement that the help page is written in English.
-
--   It is a requirement that all docs at the help page are written in English
-    and are formatted as PDF-files.
-
--   There needs to be a clear distinction between the support and the help site.
-    We require two separate pages (i.e. the *link to the support and the help
-    page cannot be the same*).
-
->   Structure
-
--   Provide an URL for a distinct help page, where prospects can find different
-    types of online product help.
-
--   The help page needs to include online documentation that can be used as
-    help.
-
->   o Types of online help that you can include on your help page are:
-
--   Instructions on set up/how to get started
-
--   Links to existing videos and documentation ▪ Links to the most frequently
-    asked questions
-
->   *Example of a help site that is set up according to our best practices:*
->   [Open Door Technology’s help
->   page](http://odtrentals365help.opendoorrentalsoftware.com/)
-
->   Use the dropdown box to choose which countries your offer supports.
-
->   *Example:*
-
->   *Australia, Austria, Belgium, Canada, Denmark, Finland, France,*
-
->   *Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway,*
-
->   *Spain, Sweden, Switzerland, United Kingdom and United States.*
-
->   Check the box with all the languages that your app supports. Note, it is
->   mandatory for your offer to support English.
-
->   *Example:*
-
->   *English*
-
->   *2.0.22794.0*
-
-Example of the completed help link-, supported countries/regions-, supported
+> [!TIP]
+>   *Example:* of the completed help link-, supported countries/regions-, supported
 languages and app version fields (cf. point 6,7,8 and 9) in the “Listing
 details” section of the Cloud partner portal:
 
+| Listing details | Description | Requirements |
+|-----------------|-------------|--------------|
+| 7. **Supported countries/regions** | Choose which countries your offer supports.                                                                                                                                                        | Recommended  |
+| | *Example:* *Australia, Austria, Belgium, Canada, Denmark, Finland, France,* *Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway,* *Spain, Sweden, Switzerland, United Kingdom and United States.*
+| 8. **Supported languages**         | Choose which languages your offer supports.                                                                                                                                                   | Recommended  |
+| | Check the box with all the languages that your app supports. Note, it is mandatory for your offer to support English.
+| | *Example:* *English*
+| 9. **App version**                 | Enter the latest version number of your offer *Example:*                                                                                                                                           | Recommended  |
+| | *Example:* *2.0.22794.0*
+
 | Customer support | Description | Requirements |
 |------------------|-------------|--------------|
-| 20. Support URL  | Formatting  | Required     |
+| 20. Support URL  | Formatting  *It is a requirement that the support page is written in English.* | Required     |
+| | It is a requirement that you provide different (i.e. more than two) contact options on your app landing page.
+| | There needs to be a clear distinction between the support and the help site. We require two separate pages (i.e. the *link to the support and the help page cannot be the same*).
+| | Structure
+| | You need to provide an URL for a distinct support page where prospects can find different contact options.
+| | The support page needs to include the following contact options and docs: 
+| | ▪ Email 
+| | ▪ Phone number
+| | ▪ Live-chat (if possible) 
+| | ▪ Address 
+| | ▪ Defined service level agreements (SLAs).
+| | How to upload your support page to the Cloud Partner Portal?
+| | Enter the URL to your app's support page.
 
--   It is a requirement that the support page is written in English.
+> [!TIP]
+>   *Example:* of a support site that is set up according to our best practices:* [Sana Commerce’s support page](https://www.sana-commerce.com/contact/)
 
--   It is a requirement that you provide different (i.e. more than two) contact
-    options on your app landing page.
-
--   There needs to be a clear distinction between the support and the help site.
-    We require two separate pages (i.e. the *link to the support and the help
-    page cannot be the same*).
-
->   Structure
-
--   You need to provide an URL for a distinct support page where prospects can
-    find different contact options.
-
--   The support page needs to include the following contact options and docs: o
-    Email o Phone number
-
->   o Live-chat (if possible) o Address o Defined service level agreements
->   (SLAs).
-
->   How to upload your support page to the Cloud Partner Portal?
-
--   Enter the URL to your app's support page.
-
->   *Example of a support site that is set up according to our best practices:*
->   [Sana Commerce’s support page](https://www.sana-commerce.com/contact/)
-
-Example of the completed screenshot fields (cf. point 20) in the “Customer
+> [!TIP]
+>   *Example:* of the completed screenshot fields (cf. point 20) in the “Customer
 Support” section of the Cloud partner portal:
 
 ### <a name="Privacy"></a>Privacy Policy, Terms of Use
@@ -754,69 +546,40 @@ Support” section of the Cloud partner portal:
 |--------------------------------------|-------------|--------------|
 | 18. Privacy policy URL               | Formatting  | Required     |
 | 19. Terms of use (license agreement) | Formatting  | Required     |
+| | It is a requirement that the privacy policy page is written in English.
+| | Structure
+| | You need to provide an URL for your app’s privacy policy page where prospects can find information on how you handle their data.
+| | How to upload your privacy policy to the Cloud Partner Portal?
+| | Enter the URL to your app's privacy policy page.
+| | *Examples of policies that are set up according to our best practices:* [Plumbline Consulting’s privacy policy](http://progressussoftware.com/privacy-policy/) [EOS Solutions’ privacy policy](https://www.eos-solutions.it/en/privacy.html)
+| | It is a requirement that your license agreement and terms of use are written in English.
+| | Structure
+| | You need to provide an URL for a distinct page with your license agreement, where prospects can find information on the terms of use of your app.
+| | AppSource customers are required to accept these terms before they can try your app.
+| | How to upload your terms of use to the Cloud Partner Portal?
+| | You can upload your terms of use in two different ways: 
+| | ▪ provide an URL
+| | ▪ enter the terms of use in directly in the designated field (note, you can copy/paste directly from a doc) though you need to apply html tags
 
--   It is a requirement that the privacy policy page is written in English.
+> [!TIP]
+>   *Example:* of a license agreement that is set up according to our best
+>   practices):* [Plumbline Consulting’s license agreement](http://progressussoftware.com/user-agreement/)
 
->   Structure
-
--   You need to provide an URL for your app’s privacy policy page where
-    prospects can find information on how you handle their data.
-
->   How to upload your privacy policy to the Cloud Partner Portal?
-
--   Enter the URL to your app's privacy policy page.
-
->   *Examples of policies that are set up according to our best practices:*
-
->   [Plumbline Consulting’s privacy
->   policy](http://progressussoftware.com/privacy-policy/)
-
->   [EOS Solutions’ privacy
->   policy](https://www.eos-solutions.it/en/privacy.html)
-
--   It is a requirement that your license agreement and terms of use are written
-    in English.
-
->   Structure
-
--   You need to provide an URL for a distinct page with your license agreement,
-    where prospects can find information on the terms of use of your app.
-
--   AppSource customers are required to accept these terms before they can try
-    your app.
-
->   How to upload your terms of use to the Cloud Partner Portal?
-
--   You can upload your terms of use in two different ways: o provide an URL
-
->   o enter the terms of use in directly in the designated field (note, you can
->   copy/paste directly from a doc) though you need to apply html tags
-
->   *Example of a license agreement that is set up according to our best
->   practices):*
-
->   [Plumbline Consulting’s license agreement](http://progressussoftware.com/user-agreement/)
-
-Example of the completed screenshot fields (cf. point 18 and 19) in the “Legal” section of the Cloud partner portal)
+> [!TIP]
+>   *Example:* of the completed screenshot fields (cf. point 18 and 19) in the “Legal” section of the Cloud partner portal)
 
 ### Lead Management
 
 | Lead Management      | Description  | Requirements |
 |----------------------|--------------|--------------|
 | 21. Lead destination | Select the system (from the dropdown menu) where your leads will be stored. Learn how to [connect your CRM system here.](https://cloudpartner.azure.com/#documentation/get-customer-leads/how-to-connect-your-crm-system-with-the-cloud-partner-portal) | Recommended  |
+| | Choose which contact options that you want to include
+| | ▪ None
+| | ▪ Azure table
+| | ▪ Dynamics CRM Online
+| | ▪ HTTPS Endpoint
+| | ▪ Marketo
+| | ▪ SalesForce
 
-Choose which contact options that you want to include
-
-- None
-
-- Azure table
-
-- Dynamics CRM Online
-
-- HTTPS Endpoint
-
-- Marketo
-
-- SalesForce
-
-Example of the completed screenshot fields (cf. point 21) in the “Customer Support” section of the Cloud partner portal:
+> [!TIP]
+>   *Example:* of the completed screenshot fields (cf. point 21) in the “Customer Support” section of the Cloud partner portal:
