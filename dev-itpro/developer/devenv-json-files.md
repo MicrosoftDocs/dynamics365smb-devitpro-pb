@@ -46,6 +46,7 @@ The following table describes the settings in the ```app.json``` file:
 |target|No|By default this is `Extension`. For Dynamics NAV, you can set this to `Internal` to get access to otherwise restricted APIs and .NET Interop. The Dynamics NAV Server setting must then also be set to `Internal`.|
 |helpBaseUrl|No|The URL for the website that displays help for the current extension. The default URL is `https://docs.microsoft.com/{0}/dynamics365/business-central`.|
 |supportedLocales|No|The list of locales that are supported for looking up help. The value on the list is inserted into the URL defined in the `helpBaseUrl` property. The first locale on the list is default. An example is `"supportedLocales": ["da-DK", "en-US"]`.|
+|runtime|Yes|The version of the runtime that the project is targeting. The project can be published to the server with an earlier or the same runtime version. The available options are: `1.0` - Business Central Spring 2018 release, `2.2` - Business Central Fall 2018 release CU 2, and `3.0` - Business Central Spring 2019 release.|
 
 ## <a name="Launchjson"></a>Launch.json file
 
