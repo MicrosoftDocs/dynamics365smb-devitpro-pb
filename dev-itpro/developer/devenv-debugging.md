@@ -116,7 +116,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 ## Configuring Debugger in [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises
 
-The [!INCLUDE[server](../includes/server.md)] instance has several configuration settings that control whether the debugger is enabled and the issights it provides. For more information about these settings, see [Configuring Business Central Server](../administration/configure-server.instance.md#Developer).
+The [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control whether the debugger is enabled and the issights it provides. For more information about these settings, see [Configuring Business Central Server](../administration/configure-server-instance.md#Developer).
 
 ## See Also
   
