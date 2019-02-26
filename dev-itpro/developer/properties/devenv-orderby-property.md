@@ -32,12 +32,9 @@ Sorts rows in the resulting dataset of a query in ascending or descending order 
 > [!NOTE]  
 >  Separate multiple columns with a comma.  
   
-## Remarks  
- To access the **OrderBy** property, in Query Designer, select the first blank line, and then, on the **View** menu, choose **Properties**.  
+## Remarks
   
- To modify the **OrderBy** property, you can choose the **AssistEdit** button next to the property. In the **Order By** window, you add a column and set its direction to ascending or descending. You can sort on multiple columns by adding additional columns to the **Order By** window. The query will sort the results by the first column in the **Order By** window, then the second column, and so on.  
-  
- You can also type values directly in the **Value** column of the **OrderBy** property in the **Properties** window. To sort on multiple columns, separate each column with a comma.  
+ In the OrderBy property, you add a column by name and set its direction to ascending or descending. To sort on multiple columns, separate each column with a comma, like `Name=Ascending,Quantity=Descending`.
   
 > [!NOTE]  
 >  You cannot sort on the same column more than once.  
