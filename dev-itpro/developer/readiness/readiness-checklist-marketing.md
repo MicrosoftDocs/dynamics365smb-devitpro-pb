@@ -112,8 +112,8 @@ The image below is an example of what an offering looks like on AppSource, when 
 
 ### <a name="OfferSummary"></a>Offer Name and Offer Summary
 
-| General requirements          | Description                      |Requirements                                                                                                                                                                                                                                                                                  |             |
-|----------------------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| General requirements | Description |Requirements |
+|----------------------|-------------|-------------|
 | 0.C                  | Your offers name on AppSource | Required      |
 | Offer Name Structure | The offer name must be the same as the name you specified in the app manifest. | 
 | (What your offer name will look like on AppSource) | Applicable naming structures | | 
@@ -123,7 +123,7 @@ The image below is an example of what an offering looks like on AppSource, when 
 
 
 | General requirements | Description | Requirements | 
-|----------------------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+|----------------------|-------------|--------------|
 | 0.D                  | There are many things to consider when creating a relevant and enticing name for your offer.  | Recommended |
 |Offer Name | How to create a strong app name for your offer (Do’s and don’ts)? | |
 |(How to create a good offer name) | **Do’s**
@@ -145,8 +145,8 @@ The image below is an example of what an offering looks like on AppSource, when 
 
 #### Offer details
 
-| Offer Details                                                  | Description                                                                                                                                             | Requirements |
-|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Offer Details  | Description | Requirements |
+|----------------|-------------|--------------|
 | 1. Offer Summary  | The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Hence, make sure that it is clear and concise. | Required     |
 | (How to create a good summary for your offer) | **How to structure your summary?**
 | | The summary should be max. 25 words or 100 characters including spaces, or less.
@@ -156,13 +156,14 @@ The image below is an example of what an offering looks like on AppSource, when 
 | | Consider whether or not is relevant (or valuable) to include your offer name in the summary 
 | | Don’t just state the offer name as an attempt to make it more memorable (names rarely give away any clues to the prospect about the value they will receive by starting to use your offer).
 
-> [!Tip]  *Example:* *Use reliable forecasting to help ensure that you always have the items your
+> [!Tip]  
+> *Example:* *Use reliable forecasting to help ensure that you always have the items your
 customers want.*
 
 ### <a name="OfferDescription"></a>Offer Description 
 
-| Offer Details                                  | Description                                                                                                                                                                                                                                                                                       | Requirements |
-|------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Offer Details  | Description| Requirements |
+|----------------|------------|--------------|
 | 2. Offer Description **(How to format and structure paragraphs in your offer description)** | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central app. | 	Required | 
 | | How to structure the paragraphs in your description? | 	
 | | Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. To do so, your description should consist of 6 paragraphs (in the following order):
@@ -182,8 +183,8 @@ customers want.*
 | | List vital benefits as bullet points
 | | Engage prospects by speaking directly to them using second person “you” language.
 
-| Offer Details                                  | Description                                                                                                                                                                                                                                                                                       | Requirements |
-|------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Offer Details  | Description | Requirements |
+|----------------|-------------|--------------|
 | 2.A Offer Description **(Introduction Paragraph)** | To capture (and keep) the interest of the prospects you need to create interest and positive mental acknowledgement from the start. This can be achieved by asking relevant provocative questions that prospects either do not know the answer to or can relate to in the introduction paragraph. | Recommended  |
 | | How to structure the content in this paragraph?| 
 | | Make a section where you ask provocative questions. 
@@ -198,8 +199,8 @@ customers want.*
 > [!TIP]  
 > *Example:* *Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?*
 
-| Offer Details                          | Description                                                                                                                                                                                                                                                   | Requirements |
-|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Offer Details | Description | Requirements |
+|---------------|-------------|--------------|
 | 2.B Offer Description **(Pain paragraph)** | Pain is the most compelling motivator of driving prospects to take action. Therefore, it is of the upmost importance that you communicate WHY your prospects need your product through a “pain-based” paragraph that call out the fears that they are facing. | Recommended  |
 | | How to structure the content in this paragraph?
 | | Use this paragraph to clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.
@@ -214,8 +215,8 @@ customers want.*
 > *Example:* *Managing inventory is a delicate balancing act. Carry too little and you
 lose orders (and customers). Carry too much and you tie up much needed working capital. Carry far too much and you end up discounting, or worse, writing off obsolete products.*
 
-| Offer Details                             | Description                                                                                                                                             | Requirements |
-|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Offer Details  | Description | Requirements |
+|----------------|-------------|--------------|
 | 2.C Offer Description **(Benefit paragraph)** | Likewise, you should also make a paragraph that describes the most important benefits and rewards that your prospects will realize by using your offer. | Recommended  |
 | | How to structure the content in this paragraph?
 | | Tell them what they will gain by using your offer 
@@ -512,9 +513,9 @@ Microsoft Dynamics 365 Business Central.
 Example of the completed offer logo-, videos and documents fields (cf. point
 14,15 and 16) in the “Marketing artifacts” section of the Cloud partner portal:
 
-| Marketing artifacts | Description                                                                                                                                                          | Requirements |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 17. Screenshots     | Pictures speak more directly to our brain than words. Your screenshots should therefore clearly demonstrate the claims you make and the functionality of your offer. | Required     |
+| Marketing artifacts | Description | Requirements |
+|---------------------|-------------|--------------|
+| 17. Screenshots     | Pictures speak more directly to our brain than words. Your screenshots should therefore clearly demonstrate the claims you make and the functionality of your offer. | Required| 
 
 >   Formatting
 
@@ -584,8 +585,8 @@ artifacts” section of the Cloud partner portal:
 
 ### <a name="Industries"></a>Industries, Categories, App Type
 
-| Listing details | Description                                                                                                                                                                                                          | Requirements |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Listing details | Description | Requirements |
+|-----------------|--------------|-------------|
 | 3. Industries   | Choose the industries that your offer is best aligned to. If your offer relates to multiple industries you can choose a maximum of 2.                                                                                | Recommended  |
 | 4. Categories   | Choose the categories that your offer caters to (max 3)                                                                                                                                                              | Required     |
 | 5. App type     | Choose which app type your offer is. In the Cloud Partner Portal, you can choose between the options: Free and Trial. Each of these options will convert to different buttons in the storefront details of your app. | Required     |
@@ -627,9 +628,8 @@ Example of the completed industries-, categories and app type fields (cf. point
 
 ### <a name="SupportedProd"></a>Supported Products, Keywords, Hide Key
 
-| Listing details                  | Description                                                                                                                                     | Requirements |
-|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-|                                  |                                                                                                                                                 |              |
+| Listing details   | Description | Requirements |
+|-------------------|-------------|--------------|
 | 11. Products your app works with | You do not have to select anything – this field is completed automatically because you are developing an app for Dynamics 365 Business Central. | Automatic    |
 | 12. Search keywords              | Enter a search keyword for your app (max. 3)                                                                                                    | Recommended  |
 | 13. Hide key                     | Enter a secret key that you'll use to preview your offer in AppSource before going live.                                                        | Required     |
@@ -654,8 +654,8 @@ details” section of the Cloud partner portal:
 
 ### <a name="HelpSupport"></a>Help & Customer Support
 
-| Listing details                | Description                                                                                                                                                                                        | Requirements |
-|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Listing details | Description | Requirements |
+|-----------------|-------------|--------------|
 | 6. Help URL                    | You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. | Required     |
 | 7. Supported countries/regions | Choose which countries your offer supports.                                                                                                                                                        | Recommended  |
 | 8. Supported languages         | Choose which languages your offer supports.                                                                                                                                                        | Recommended  |
@@ -795,16 +795,14 @@ Support” section of the Cloud partner portal:
 >   *Example of a license agreement that is set up according to our best
 >   practices):*
 
->   [Plumbline Consulting’s license
->   agreement](http://progressussoftware.com/user-agreement/)
+>   [Plumbline Consulting’s license agreement](http://progressussoftware.com/user-agreement/)
 
-Example of the completed screenshot fields (cf. point 18 and 19) in the “Legal”
-section of the Cloud partner portal)
+Example of the completed screenshot fields (cf. point 18 and 19) in the “Legal” section of the Cloud partner portal)
 
 ### Lead Management
 
-| Lead Management      | Description                                                                                                                                                                                                                                             | Requirements |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Lead Management      | Description  | Requirements |
+|----------------------|--------------|--------------|
 | 21. Lead destination | Select the system (from the dropdown menu) where your leads will be stored. Learn how to [connect your CRM system here.](https://cloudpartner.azure.com/#documentation/get-customer-leads/how-to-connect-your-crm-system-with-the-cloud-partner-portal) | Recommended  |
 
 Choose which contact options that you want to include
