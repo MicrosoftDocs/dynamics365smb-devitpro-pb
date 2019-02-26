@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 02/26/2019
+ms.date: 02/04/2019
 
 ---
 
@@ -32,12 +32,10 @@ Critical fixes and non-critical updates are handled in the following way:
 
 |Release                                     |Version           |Build number  |Availability  |Expiration date|Product life|
 |--------------------------------------------|------------------|--------------|--------------|---------------|------------|
-|Dynamics 365 Business Central (on-premises) |October'18 Update|24630 |November 2018 |April 2020   |December 2025|
-|Dynamics 365 Business Central (on-premises) |April '19 Update ||April 2019  |To be announced\*|December 2025|
+|Dynamics 365 Business Central (on-premises) | October'18 Update|24630 |November 2018 |April 2020   |December 2025|
+|Dynamics 365 Business Central (on-premises) |April '19 Update |123456|April 2019  |To be announced*|December 2025|
 
-\* Indicates that the expiration date will be added on this page when the next version is released.
-
-The build number for the versions not yet available will be updated once the version is released.
+* Indicates that the expiration date will be added on this page when the next version is released.
 
 ## See Also
 
