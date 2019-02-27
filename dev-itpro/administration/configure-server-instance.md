@@ -335,4 +335,5 @@ w
 [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)   
 [Configuring Help](../deployment/configure-help.md)   
 [Hiding UI Elements](hide-ui-elements.md)  
+[Debugging](../developer/devenv-debugging.md)
  
