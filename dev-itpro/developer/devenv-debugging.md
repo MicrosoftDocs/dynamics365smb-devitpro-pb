@@ -118,7 +118,7 @@ The database insights also let you peek into the most recent and the latest long
 The number of SQL statements tracked by the debugger can be configured in the [!INCLUDE[server](includes/server.md)]. The default value is 10.
 
 > [!NOTE]
-> For [!INCLUDE[prodshort](includes/prodshort.md) on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights as expected in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Developer).
+> For [!INCLUDE[prodshort](includes/prodshort.md) on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights as expected in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
 ## See Also
   
