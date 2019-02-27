@@ -83,9 +83,7 @@ pagecustomization MyCustomization customizes "Customer List"
 In general, views can in several ways be compared to page customizations. These are the limitations of views: <!-- check -->
 
 - For views you can modify the same control properties as for page customization objects independently of where the view has been defined (page, page extension, or page customization level). This is validated by the compiler. 
-- 
 - It is not possible to use variables or methods in a view. When writing client side expression for properties like **Visibility**, it will only be possible to use constant values or table field references. This is validated by the compiler.
-
 - It is not possible to create new controls for a page from a view.
 
 ## See Also  
