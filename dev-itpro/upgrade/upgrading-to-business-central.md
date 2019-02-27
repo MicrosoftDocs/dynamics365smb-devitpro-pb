@@ -8,7 +8,7 @@ ms.topic: article
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
-ms.date: 01/23/2019
+ms.date: 02/27/2019
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -35,13 +35,13 @@ For more information, see[Automating the Upgrade Process using Sample Windows Po
 
 ## Moving to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online
 
-If you want to move your current solution to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, the path depends on your current solution. In all cases, it's a mater of migration rather than upgrade due to the nature of online services. The core scenario is to import existing data to an empty company in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. For more information, see [Take prospects and customers online](../deployment/deployment.md#take-prospects-and-customers-online).  
+If you want to move your current solution to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, the path depends on your current solution. In all cases, it's a matter of migration rather than upgrade due to the nature of online services. The core scenario is to import existing data to an empty company in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. For more information, see [Take prospects and customers online](../deployment/deployment.md#take-prospects-and-customers-online).  
 
 Use the following table to determine the procedures that you must complete for your migration scenario:
 
 |  Scenario  |  Procedures  |
 |------------|--------------|
-|Upgrade from [!INCLUDE[navnow](../developer/includes/navnow_md.md)]|Upgrade the code as described in [Upgrading to Business Central on-premises](#upgrading-to--on-premises) and then move to an online tenant. </br>For more information, see [Upgrading from Dynamics NAV to Business Central online](upgrade-considerations.md#upgrading-from--to--online).|
+|Upgrade from [!INCLUDE[navnow](../developer/includes/navnow_md.md)]|Upgrade the code as described in [Upgrading to Business Central on-premises](#upgrading-to--on-premises), and then, if possible, move to an online tenant. </br>For more information, see [Upgrading from Dynamics NAV to Business Central online](upgrade-considerations.md#upgrading-from--to--online).|
 |Set up a company based on questionnaires|Use RapidStart Services. </br>For more information, see [Setting Up a Company With RapidStart Services](/dynamics365/business-central/admin-set-up-a-company-with-rapidstart?toc=/dynamics365/business-central/dev-itpro/toc.json).|
 |Import data from any system|Use Excel or configuration packages to import data. </br>For more information, see [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json).|
 |Import data from Dynamics GP|Use the data migration wizard to import master data. </br>For more information, see [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json).|
