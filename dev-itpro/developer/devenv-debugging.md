@@ -90,19 +90,23 @@ For more shortcuts, see [Debugging](https://code.visualstudio.com/docs/editor/de
 <!-- 
 To use the Go To Definition on local server, it requires that the AL symbols are rebuilt and downloaded from C/SIDE. The application symbols that were built with the previous version of C/SIDE would not make it possible to have Go To Definition work on base application methods. -->
 
-## Debugging SQL behavior
+## <a name="DebugSQL"></a>Debugging SQL behavior
 
 Traditionally, debugging AL has been about examining behavior of the language runtime, for example, looking into the content of local variables at a breakpoint.  As of [!INCLUDE[prodshort](includes/prodshort.md)] April 2019, the AL debugger also offers the capability to examine the impact that your AL code has on the [!INCLUDE[prodshort](includes/prodshort.md)] database.
+
+### View database statistics
 
 In Debugger, open **Variables**, and then expand the **<Database statistics>** node to get insights such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prodshort](includes/prodshort.md)] database, the total number of SQL statements executed, and the total number of rows read, as well as insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
 
 |       |       |
 |-------|-------|
-|Current SQL latency (ms) | When the debugger hits a breakpoint, the server will send a short SQL statement to the database and measure how long time it takes. The value is shown is in milliseconds.| 
+|Current SQL latency (ms) | When the debugger hits a breakpoint, the [!INCLUDE[server](includes/server.md)] will send a short SQL statement to the database and measure how long time it takes. The value is shown is in milliseconds.| 
 |Number of SQL Executes | This number shows the total number of SQL statements executed in the debugging session since the debugger was started.|
 |Number of SQL Rows Reads | This number shows the total number of rows read from the [!INCLUDE[prodshort](includes/prodshort.md)] database in the debugging session since the debugger was started.|
 
-Database insights also give you the possibility to peek into the most recent and the latest long running SQL statements executed by the server. Expand either the **\<Last Executed SQL Statements\>** or the **\<Last Long Running SQL Statements\>** node to get a list of these. The following insights are part of the SQL statement statistics:
+### View SQL statement statistics
+
+The database insights also let you peek into the most recent and the latest long running SQL statements executed by the server. To view a list if these, expand either the **\<Last Executed SQL Statements\>** or the **\<Last Long Running SQL Statements\>** node. The following insights are part of the SQL statement statistics:
 
 |       |       |
 |-------|-------|
@@ -113,9 +117,8 @@ Database insights also give you the possibility to peek into the most recent and
 
 The number of SQL statements tracked by the debugger can be configured in the [!INCLUDE[server](includes/server.md)]. The default value is 10.
 
-## Configuring Debugger in [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises
-
-The [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control whether the debugger is enabled and the issights it provides. For more information about these settings, see [Configuring Business Central Server](../administration/configure-server-instance.md#Developer).
+> [!NOTE]
+> For [!INCLUDE[prodshort](includes/prodshort.md) on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights as expected in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Developer).
 
 ## See Also
   
