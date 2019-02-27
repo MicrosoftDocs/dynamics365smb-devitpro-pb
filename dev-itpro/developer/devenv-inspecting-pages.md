@@ -3,7 +3,7 @@ title: Inspecting Pages
 description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 02/27/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,28 +23,6 @@ The [!INCLUDE[webclient](includes/webclient.md)] includes a page inspection feat
 - Troubleshoot data issues without having to perform tasks like copying the production database, viewing the entire source table, or digging into SQL.
 - Debug the application, complementing [Designer](devenv-inclient-designer.md).
 
-<!--
-To inspect a page, open the [!INCLUDE[webclient](includes/webclient.md)], and in the top right corner, choose ![Settings icon](media/settings_icon_small.png), then choose **Inspect**. Or, you can use the keyboard shortcut Crtl+Alt+F1.
-
-For more information about inspecting a page, see [Inspecting Pages in Business Central](https://docs.microsoft.com/dynamics365/business-central/across-inspect-page) in the Business Central Application help.
-
-
-
-
-
-The page inspection feature enables you to get details about a page, providing insight into the page design, the different elements that comprise the page, and the source behind the data it displays.
-
-Page inspection is especially designed for administrators, power users, support personnel, and developers. Page inspection helps you:
-
-- Learn the data model behind a page.
-
-- Discover pages and parts that can be reused in your application design.
-
-- Troubleshoot data issues without having to perform tasks like copying the production database, viewing the entire source table, or digging into SQL.
-
-- Debug the application, complementing [Designer](devenv-inclient-designer.md).
-
--->
 ## Working with Page Inspection
 
 To inspect a page, in the top right corner, choose ![Settings icon](media/settings_icon_small.png), then choose **Inspect**. Or, you can use the keyboard shortcut **Ctrl+Alt+F1**.
