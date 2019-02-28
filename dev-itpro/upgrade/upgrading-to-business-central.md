@@ -17,14 +17,14 @@ This section provides an overview of how to upgrade to [!INCLUDE[prodshort](../d
 > [!TIP]
 > Before you decide how to upgrade your solution, make sure that you read the upgrade considerations at [Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](Upgrade-Considerations.md).  
 
-Depending on your decision to upgrade to either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online or on-premises, different scenarios are supported. Read the upgrade considerations, and then revise the supported scenarios in the respective sections. If you cannot find guidance for your migration scenario, you can check at the Ideas site if someone else has already suggested the same idea. For more information, see [https://aka.ms/businesscentralideas](https://aka.ms/businesscentralideas).  
+Depending on your decision to upgrade to either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online or on-premises, different scenarios are supported. Read the upgrade considerations, and then revise the supported scenarios in the respective sections. If you cannot find guidance for your migration scenario, you can check at the Ideas site if someone else has already suggested support for the same migration path. For more information, see [https://aka.ms/businesscentralideas](https://aka.ms/businesscentralideas).  
 
 ## See Also
 
-[Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Online](upgrade/upgrading-to-business-central-online.md)  
-[Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-Premises](upgrade/upgrading-to-business-central-on-premises.md)  
-[Before You Upgrade](upgrade/Upgrade-Considerations.md)  
-[Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)  
+[Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Online](upgrading-to-business-central-online.md)  
+[Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-Premises](upgrading-to-business-central-on-premises.md)  
+[Before You Upgrade](Upgrade-Considerations.md)  
+[Migrate Legacy Help to the Business Central Format](migrate-help.md)  
 [Product and Architecture Overview](../deployment/Product-and-Architecture-Overview.md)  
 [Migrating to Multitenancy](../deployment/Migrating-to-Multitenancy.md)  
 [Deployment](../deployment/Deployment.md)  
