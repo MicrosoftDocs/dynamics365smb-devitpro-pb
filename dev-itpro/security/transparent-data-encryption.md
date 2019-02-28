@@ -1,7 +1,7 @@
 ---
-title: "Transparent Data Encryption (TDE)"
+title: "Data Encryption at Rest, Transparent Data Encryption (TDE) and BitLocker"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 28/02/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,18 +9,19 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: kepontop
 ---
-# Data encryption at rest
 
-When thinking about data encryption, you should mainly consider three scenarios: 
+# Data Encryption at Rest
 
-- Encrypting your data at rest, which means encrypting it while it is stored on whatever file storage you use
-- Encrypting your data in transit, which means encryptig it while it travels through private or public network communication channels
-- Encrypting your data in use, which means encrypting it while it is actively used in RAM or CPU caches and registers
+When thinking about data encryption, you should mainly consider three scenarios:
 
-This page will show you the alternatives for encrypting data at rest. In a scenario where the physical media (such as drives or backup tapes) or the database files are stolen, a malicious party can just restore or attach the database and browse the data, if you don't encrypt it. The following mechanisms give you different possibilities to prevent that.
+- Encrypting your data at rest, which means encrypting it while it is stored on whatever file storage you use.
+- Encrypting your data in transit, which means encrypting data while it travels through private or public network communication channels.
+- Encrypting your data in use, which means encrypting it while it is actively used in RAM or CPU caches and registers.
+
+This article will show you the alternatives for encrypting data at rest. In a scenario where the physical media (such as drives or backup tapes) or the database files are stolen, a malicious party can just restore or attach the database and browse the data, if you don't encrypt it. The following mechanisms give you different possibilities to help prevent this.
 
 > [!IMPORTANT]
-> Data encryption at rest does not provide encryption across communication channels. For more information about how to encrypt data across the communication channel between the database and the [!INCLUDE[server](../developer/includes/server.md)], see [Enhancing Business Server Security](enhancing-server-instance-security.md). It also doesn't provide encryption while the data is in use. SQL Server offers the [Always Encrypted](https://docs.microsoft.com/de-de/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sqlallproducts-allversions) feature for this, but it is not supported for Dynamics 365 Business Central
+> Data encryption at rest does not provide encryption across communication channels. For more information about how to encrypt data across the communication channel between the database and the [!INCLUDE[server](../developer/includes/server.md)], see [Enhancing Business Server Security](enhancing-server-instance-security.md). It also doesn't provide encryption while the data is in use. SQL Server offers the [Always Encrypted](https://docs.microsoft.com/de-de/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sqlallproducts-allversions) feature for this, but it is not supported for [!INCLUDE[prodshort](../developer/includes/prodshort.md).
 
 ## Transparent Data Encryption (TDE)
 
@@ -52,6 +53,7 @@ BitLocker Drive Encryption has a single-digit percentage performance impact as e
 
 
 ## See Also  
+
  [Classifying Data](../developer/devenv-classifying-data.md)   
  [Data Security](data-security.md)  
  [Enhancing Business Server Security](enhancing-server-instance-security.md)   
