@@ -23,8 +23,8 @@ Depending on your decision to upgrade to either [!INCLUDE [prodshort](../develop
 
 [Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Online](upgrading-to-business-central-online.md)  
 [Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-Premises](upgrading-to-business-central-on-premises.md)  
-[Before You Upgrade](upgrade/Upgrade-Considerations.md)  
-[Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)  
+[Before You Upgrade](Upgrade-Considerations.md)  
+[Migrate Legacy Help to the Business Central Format](migrate-help.md)  
 [Product and Architecture Overview](../deployment/Product-and-Architecture-Overview.md)  
 [Migrating to Multitenancy](../deployment/Migrating-to-Multitenancy.md)  
 [Deployment](../deployment/Deployment.md)  
