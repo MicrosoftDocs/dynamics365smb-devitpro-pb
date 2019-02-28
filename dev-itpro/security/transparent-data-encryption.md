@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: kepontop
 ---
+
 # Data Encryption at Rest
 
 When thinking about data encryption, you should mainly consider three scenarios:
@@ -38,19 +39,20 @@ BitLocker is a volume encryption feature included in Windows Server. It protects
 > [!CAUTION]
 > Be aware that detaching or backing up a database to a different volume that is not protected by BitLocker causes any protection the file currently has to be lost.
 
-For more information about BitLocker, see [BitLocker overview](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview) and how it applies to [Windows Server 2012 and later](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server). 
+For more information about BitLocker, see [the overview](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview) and how it applies to [Windows Server 2012 and later](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) 
 
 ## Defense in depth with BitLocker Drive Encryption and Transparent Data Encryption (TDE) combined
 
-Bitlocker encrypts the drive and does so transparently. The effect is that if the drive gets stolen, nobody can use the data. But if someone gained access to the drive from Windows, Network Share, and so on, he could copy the file, and on the new drive the file is not encrypted any more. TDE, on the other hand, encrypts the database file itself (and also the backup). So if either file is copied or stolen, the attacker cannot read it. But if the attacker gains access to the whole drive including SQL Server, he can start SQL Server and read the data from there. So both technologies complement each other, and it is recommended that you use BitLocker together with TDE for a more in-depth defense.
+Bitlocker encrypts the drive and does so transparently. The effect is that if the drive gets stolen, nobody can use the data. But if someone gained access to the drive via Windows, Network Share etc., he could copy the file and on the new drive the file is not encrypted any more. TDE on the other hand encrypts the database file itself (and also backup). So if either file is copied/stolen, the attacker cannot read it. But if the attacker gains access to the whole drive including SQL Server, he can start SQL Server and read the data from there. So both technologies complement each other, and it is recommended that you use BitLocker together with TDE for defense in depth.
 
 ## Performance impact
 
-TDE has an estimated performance impact around 3-5% and can be much lower if most of the data accessed is stored in memory. The impact will mainly be on the CPU, I/O will have a smaller impact. See the [SQL Server documentation on this topic](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/cc278098(v=sql.100)#_Toc189384687).
+TDE has an estimated performance impact around 3-5% and can be much lower if most of the data accessed is stored in memory. The impact will mainly be on the CPU, I/O will have a smaller impact. See the [SQL documentation on this topic](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/cc278098(v=sql.100)#_Toc189384687) for more details.
 
 BitLocker Drive Encryption has a single-digit percentage performance impact as explained [here](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq#is-there-a-noticeable-performance-impact-when-bitlocker-is-enabled-on-a-computer).
 
-## See Also
+
+## See Also  
 
  [Classifying Data](../developer/devenv-classifying-data.md)   
  [Data Security](data-security.md)  
