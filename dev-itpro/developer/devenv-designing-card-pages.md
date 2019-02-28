@@ -54,8 +54,7 @@ The following figure illustrates the general layout and elements of a card page 
 
 ![Card and document page overview](media/card-document-page-overview.png "Card page overview")
 
-The following table describes the elements.
-
+The following table describes the elements of the page.
 
 |    |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
