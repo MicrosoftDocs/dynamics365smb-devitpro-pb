@@ -497,6 +497,16 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 <!-- end security -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
+## [Online]((upgrade/upgrading-to-business-central-online.md))
+## [On-Premises](upgrade/upgrading-to-business-central-on-premises.md)
+### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
+### [Technical Upgrade](upgrade/Converting-a-Database.md)
+#### [Quick Reference](upgrade/technical-upgrade-checklist.md)
+### [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
+### [Upgrading the Data: Single-Tenant Mode](upgrade/Upgrading-the-Data.md)
+#### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
+### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
+#### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
 ## [Before You Upgrade](upgrade/Upgrade-Considerations.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
@@ -509,14 +519,6 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
 ### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
-## [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
-## [Technical Upgrade](upgrade/Converting-a-Database.md)
-### [Quick Reference](upgrade/technical-upgrade-checklist.md)
-## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
-## [Upgrading the Data: Single-Tenant Mode](upgrade/Upgrading-the-Data.md)
-### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
-## [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
-### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
