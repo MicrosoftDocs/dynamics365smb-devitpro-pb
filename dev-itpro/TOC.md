@@ -497,7 +497,10 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 <!-- end security -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
-## [Online]((upgrade/upgrading-to-business-central-online.md))
+## [Online](upgrade/upgrading-to-business-central-online.md)
+### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## [On-Premises](upgrade/upgrading-to-business-central-on-premises.md)
 ### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
 ### [Technical Upgrade](upgrade/Converting-a-Database.md)

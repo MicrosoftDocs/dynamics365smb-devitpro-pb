@@ -27,7 +27,8 @@ Use the following table to determine the procedures that you must complete for y
 ## See Also
 
 [Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](upgrading-to-business-central.md)  
-[Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-Premises](upgrading-to-business-central-on-premises.md)
+[Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-Premises](upgrading-to-business-central-on-premises.md)  
+[The Lifecycle of Apps and Extensions for Business Central](../developer/devenv-app-life-cycle.md)  
+[Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
 [Product and Architecture Overview](../deployment/Product-and-Architecture-Overview.md)  
-[Migrating to Multitenancy](../deployment/Migrating-to-Multitenancy.md)  
 [Deployment](../deployment/Deployment.md)  
