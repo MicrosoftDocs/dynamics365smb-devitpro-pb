@@ -223,7 +223,7 @@ The following is CSS code for styling the controls, including padding, backgroun
      border-color: #00B7C3; /* Sets the border color to "Primary" */
 }
 
-.addin .control. .caption {
+.addin .control .caption {
     color: #00B7C3; /* Sets the captions to "Primary" */
 
     /* Segoe UI Light, small */
@@ -231,7 +231,7 @@ The following is CSS code for styling the controls, including padding, backgroun
     font-size: 10.5pt;
 }
 
-.addin .control. .value {
+.addin .control .value {
     color: #008089; /* Tertiary shade 2 */
 
     /* Segoe UI, medium */
