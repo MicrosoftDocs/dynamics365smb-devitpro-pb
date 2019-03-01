@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with AL"
-description: "Description of how to get started with the new development environment"
+description: "Description of how to get started with the development environment"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2018
@@ -29,10 +29,10 @@ Go through the following steps to set up a sandbox environment. With this you ge
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
 3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al). 
 4) Press **Ctrl+,** to open the **user settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
-5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, and then choose **Cloud**.  
+5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, and then choose **Microsoft cloud sandbox**.  
     > [!NOTE]  
-    > If you want to change your configuration at a later point in time, go to **Debug** on the left side, select **Add Configuration**, choose one of the available options, and remove the previous configuration from the `launch.json` file.  
-6) Enter the credentials you provided for the sign up, and then **Download symbols**. To manually download the symbols, press **Ctrl+Shift+P** and select **AL: Download symbols**. 
+    > If you want to change your configuration at a later point in time, choose **Add Configuration** on the right side, and then choose one of the available options.  
+6) Enter the credentials you provided for the signup, and then symbols will automatically start downloading. To manually download the symbols, press **Ctrl+Shift+P** and select **AL: Download symbols**. 
 7) Press **F5** to deploy and run the extension on your online sandbox tenant.  
 
 
