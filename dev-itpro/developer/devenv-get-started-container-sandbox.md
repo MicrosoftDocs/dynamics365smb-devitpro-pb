@@ -83,11 +83,11 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
 You now have a container sandbox set up on your computer. The following shortcuts have been added to your desktop:
 
--   **\<Container name\> Windows Client** - opens the Windows client for your application in the container.
--    **\<Container name\> Web Client** - opens the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for the your application in the container.
--    **\<Container name\> CSIDE** - opens the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)] for developing your application using CSIDE.
--    **\<Container name\> PowerShell Prompt** - opens a Windows PowerShell prompt in the container. This gives you access to the [!INCLUDE[navnowg_md](includes/navnow_md.md)] (https://docs.microsoft.com/en-us/powershell/business-central/overview), which you can run against the container sandbox environment. 
--    **\<Container name\>Command Prompt**  - opens a Windows command prompt in the container.
+- **\<Container name\> Windows Client** - opens the Windows client for your application in the container.
+- **\<Container name\> Web Client** - opens the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for the your application in the container.
+- **\<Container name\> CSIDE** - opens the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)] for developing your application using CSIDE.
+- **\<Container name\> PowerShell Prompt** - opens a Windows PowerShell prompt in the container. This gives you access to the [!INCLUDE[navnowg_md](includes/navnow_md.md)] (https://docs.microsoft.com/en-us/powershell/business-central/overview), which you can run against the container sandbox environment. 
+- **\<Container name\>Command Prompt**  - opens a Windows command prompt in the container.
 
 
 For more information about working with a container sandbox, see [Running a Container-Based Development Environment](devenv-running-container-development.md).
