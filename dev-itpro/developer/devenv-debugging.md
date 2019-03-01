@@ -3,7 +3,7 @@ title: "Debugging"
 description: "Overview of debugging in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/17/2019
+ms.date: 03/01/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -22,6 +22,9 @@ The process of finding and correcting errors is called *debugging*. With Visual 
 
 > [!IMPORTANT]  
 > To enable debugging the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
+
+> [!IMPORTANT]  
+> To use the development environment and debugger, you must make sure that port 7049 is available.
 
 There are a number of limitations to be aware of:
 
