@@ -33,6 +33,7 @@ The following methods are available on instances of the Notification data type.
 |[HasData(String)](notification-hasdata-method.md)|Checks if data was passed to a notification instance as specified by a SETDATA method call.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## See Also
+[Notifications](../../devenv-notifications-developing.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

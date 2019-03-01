@@ -3,7 +3,7 @@ title: "Extensible Enums"
 description: "Overview of the concept of extending enumerables "
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 03/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -75,6 +75,56 @@ codeunit 50140 EnumUsage
             LoyaltyLevel := p;
         end;
     end;
+}
+```
+
+## Example
+The following example illustrates how to define an enum extension of `TypeEnum`, using this in a table extension `TableWithRelationExt` and displaying this as a control on a new page.
+
+```
+enumextension 50133 TypeEnumExt extends TypeEnum
+{
+    value(10; Resource) { }
+}
+
+tableextension 50135 TableWithRelationExt extends TableWithRelation
+{
+    fields
+    {
+        modify(Relation)
+        {
+            TableRelation = if (Type = const (Resource)) Resource;
+        }
+    }
+}
+
+page 50133 PageOnRelationTable
+{
+    SourceTable = TableWithRelation;
+    SourceTableView = where (Type = const (Resource));
+    PageType = List;
+
+    layout
+    {
+        area(Content)
+        {
+            repeater(MyRep)
+            {
+                field(Id; Id)
+                {
+                    ApplicationArea = All;
+                }
+                field(Type; Type)
+                {
+                    ApplicationArea = All;
+                }
+                field(Relation; Relation)
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
+    }
 }
 ```
 
