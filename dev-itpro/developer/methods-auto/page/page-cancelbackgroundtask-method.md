@@ -42,5 +42,5 @@ Specifies the ID of the page background task to cancel. The ID is assigned to th
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Page Data Type](page-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

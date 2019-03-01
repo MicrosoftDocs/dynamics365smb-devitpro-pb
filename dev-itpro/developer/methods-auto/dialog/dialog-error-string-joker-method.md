@@ -38,5 +38,5 @@ Any variable or expression to be inserted in String. You can insert up to 10 val
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

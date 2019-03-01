@@ -43,5 +43,5 @@ The number of bytes that were written.If you omit this optional return value and
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [OutStream Data Type](outstream-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

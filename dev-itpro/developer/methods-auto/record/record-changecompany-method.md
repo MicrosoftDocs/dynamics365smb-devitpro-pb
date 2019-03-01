@@ -41,5 +41,5 @@ The name of the company to which you want to change. If you omit this parameter,
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

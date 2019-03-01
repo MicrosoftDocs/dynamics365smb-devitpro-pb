@@ -34,5 +34,5 @@ The input parameters of the page background task.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Page Data Type](page-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

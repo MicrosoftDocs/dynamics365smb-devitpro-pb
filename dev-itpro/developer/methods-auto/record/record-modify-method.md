@@ -41,5 +41,5 @@ Specifies whether to run the AL code in the OnModify Trigger. If this parameter 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

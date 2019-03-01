@@ -39,5 +39,5 @@ The field from which the filter will be copied.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)
