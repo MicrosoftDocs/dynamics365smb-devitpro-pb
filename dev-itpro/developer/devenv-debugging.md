@@ -22,6 +22,7 @@ The process of finding and correcting errors is called *debugging*. With Visual 
 > To enable debugging the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
 
 > [!IMPORTANT]  
+> To use the development environment and debugger, you must make sure that port 7049 is available.
 
 There are a number of limitations to be aware of:
 
