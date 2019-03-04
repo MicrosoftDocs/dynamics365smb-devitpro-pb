@@ -30,7 +30,7 @@ These methods are some of the most frequently used AL methods.
 Some of these methods return an optional Boolean value that indicates whether the method succeeded. If you do not handle the return value in your code, a run-time error occurs when a method returns FALSE. If you handle the return value by testing its value in an IF statement, no error will occur, and you must take corrective action in the code.  
 
 ## INSERT method  
-INSERT inserts a record in a table. For more information, see [Insert Method](methods-auto/table/table-insert-method.md).
+INSERT inserts a record in a table. For more information, see [Insert Method](methods-auto/record/record-insert-method.md).
 INSERT has the following syntax.
 
 ```  
@@ -53,7 +53,7 @@ Customer.INSERT;
 ```  
 
 ## MODIFY method  
-MODIFY modifies a record that already exists. For more information, see [Modify Method](methods-auto/table/table-modify-method.md).
+MODIFY modifies a record that already exists. For more information, see [Modify Method](methods-auto/record/record-modify-method.md).
 MODIFY has the following syntax.  
 
 ```  
@@ -75,7 +75,7 @@ Customer.MODIFY;
 ```  
 
 ## MODIFYALL method  
-MODIFYALL performs a bulk update of records. For more information, see [ModifyAll Method](methods-auto/table/table-modifyall-method.md). 
+MODIFYALL performs a bulk update of records. For more information, see [ModifyAll Method](methods-auto/record/record-modifyall-method.md). 
 
 MODIFYALL has the following syntax.  
 
@@ -97,7 +97,7 @@ Customer.MODIFYALL("Salesperson Code",'JR');
 ```  
 
 ## DELETE method  
-DELETE deletes a record from the database. For more information, see [Delete Method](methods-auto/table/table-delete-method.md) 
+DELETE deletes a record from the database. For more information, see [Delete Method](methods-auto/record/record-delete-method.md) 
 DELETE has the following syntax.  
 
 ```  
@@ -127,10 +127,10 @@ When you are developing your own applications, you should consider the following
 
 3. If step 2 indicated that you should delete the record, then delete it.  
 
-This can cause problems in a multi-user environment. Another user can modify or delete the same record between your performing steps 2 and 3. If the record is modified, then perhaps the new contents of the record would have changed your decision to delete it. If it has been deleted by the other user, you can get a run-time error if you have just verified that the record existed (in step 1). If the design of your application indicates that you can encounter this problem, you should consider using the LOCKTABLE method. LOCKTABLE should be used sparingly because this method degrades performance. For more information about the LOCKTABLE method, see [LOCKTABLE Method](methods-auto/table/table-locktable-method.md).  
+This can cause problems in a multi-user environment. Another user can modify or delete the same record between your performing steps 2 and 3. If the record is modified, then perhaps the new contents of the record would have changed your decision to delete it. If it has been deleted by the other user, you can get a run-time error if you have just verified that the record existed (in step 1). If the design of your application indicates that you can encounter this problem, you should consider using the LOCKTABLE method. LOCKTABLE should be used sparingly because this method degrades performance. For more information about the LOCKTABLE method, see [LOCKTABLE Method](methods-auto/record/record-locktable-method.md).  
 
 ## DELETEALL method  
-DELETEALL deletes all the records that are specified by the filter settings. If no filters are applied, it deletes all the records in the table. For more information, see [DeleteAll Method](methods-auto/table/table-deleteall-method.md) 
+DELETEALL deletes all the records that are specified by the filter settings. If no filters are applied, it deletes all the records in the table. For more information, see [DeleteAll Method](methods-auto/record/record-deleteall-method.md) 
 
 DELETEALL has the following syntax.  
 
