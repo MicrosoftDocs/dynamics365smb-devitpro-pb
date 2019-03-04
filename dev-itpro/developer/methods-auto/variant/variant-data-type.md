@@ -2,7 +2,7 @@
 title: "Variant Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Variant Data Type
 Represents an AL variable object. The AL variant data type can contain many AL data types.
+
 
 
 The following methods are available on instances of the Variant data type.

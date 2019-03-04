@@ -2,7 +2,7 @@
 title: "FieldError Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldError Method
 Stops the execution of the code, causing a run-time error, and creates an error message for a field.
+
 
 ## Syntax
 ```

@@ -2,7 +2,7 @@
 title: "AL Language Reference Library"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,6 +39,7 @@ The following types are available as part of the AL Language Reference Library.
 |[Dictionary](dictionary/dictionary-data-type.md)|Represents a collection of keys and values.|
 |[DotNet](dotnet/dotnet-data-type.md)|Represents an unspecified .NET type.|
 |[Duration](duration/duration-data-type.md)|Represents the difference between two DateTimes. This value can be negative. It is stored as a 64-bit integer. The integer value is the number of milliseconds during the duration.|
+|[ErrorInfo](errorinfo/errorinfo-data-type.md)|Provides a structure for grouping information about an error.|
 |[FieldRef](fieldref/fieldref-data-type.md)|Identifies a field in a table and gives you access to this field.|
 |[File](file/file-data-type.md)|Represents a file.|
 |[FilterPageBuilder](filterpagebuilder/filterpagebuilder-data-type.md)|Stores filter configurations for a filter page. A filter page is a dynamic page type that contains one or more filter controls that enables users to set filters on fields of the underlying tables.|
@@ -81,7 +82,7 @@ The following types are available as part of the AL Language Reference Library.
 |[SessionSettings](sessionsettings/sessionsettings-data-type.md)|Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.|
 |[String](string/string-data-type.md)|Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value.|
 |[System](system/system-data-type.md)|Is a complex data type.|
-|[Table](table/table-data-type.md)|Is a complex data type.|
+|[Record](record/record-data-type.md)|Is a complex data type.|
 |[TaskScheduler](taskscheduler/taskscheduler-data-type.md)|Is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times.|
 |[TestAction](testaction/testaction-data-type.md)|Represents a test action on a page.|
 |[TestField](testfield/testfield-data-type.md)|Represents a testable field on a page.|
@@ -120,6 +121,7 @@ The following types are available as part of the AL Language Reference Library.
 |[DataClassification](dataclassification/dataclassification-option.md)|Sets the classification of the data in the table or field.|
 |[DataScope](datascope/datascope-option.md)|Identifies the scope of stored data in the isolated storage.|
 |[DefaultLayout](defaultlayout/defaultlayout-option.md)|The default layout to be used by a report.|
+|[ErrorType](errortype/errortype-option.md)|Represents the type of error.|
 |[ExecutionContext](executioncontext/executioncontext-option.md)|Represents the context in which a session is running. In certain scenarios, for example during upgrade, the system will run a session in a special context for a limited time.|
 |[ExecutionMode](executionmode/executionmode-option.md)|The execution mode of the current session.|
 |[FieldClass](fieldclass/fieldclass-option.md)|Represents the type of a field class.|
@@ -138,5 +140,5 @@ The following types are available as part of the AL Language Reference Library.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

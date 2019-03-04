@@ -2,7 +2,7 @@
 title: "SetSelectionFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # SetSelectionFilter Method
 
 
+
 ## Syntax
 ```
- RequestPage.SetSelectionFilter(var Record: Table)
+ RequestPage.SetSelectionFilter(var Record: Record)
 ```
 ## Parameters
 *RequestPage*  
@@ -26,7 +27,7 @@ author: solsen
 An instance of the [RequestPage](requestpage-data-type.md) data type.  
 
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
   
 
 

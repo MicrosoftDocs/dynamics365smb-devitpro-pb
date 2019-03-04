@@ -2,7 +2,7 @@
 title: "ClientType System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

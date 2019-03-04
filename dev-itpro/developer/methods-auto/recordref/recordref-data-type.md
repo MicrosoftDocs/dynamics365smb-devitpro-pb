@@ -2,7 +2,7 @@
 title: "RecordRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,14 +17,15 @@ author: solsen
 References a record in a table.
 
 
+
 The following methods are available on instances of the RecordRef data type.
 
 |Method name|Description|
 |-----------|-----------|
 |[Open(Integer, [Boolean], [String])](recordref-open-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
 |[Close()](recordref-close-method.md)|Closes the current page or table.|
-|[GetTable(Table)](recordref-gettable-method.md)|Gets the table of a Record variable and causes the RecordRef to refer to the same table.|
-|[SetTable(Table)](recordref-settable-method.md)|Sets the table to which a Record variable refers as the same table as a RecordRef variable.|
+|[GetTable(Record)](recordref-gettable-method.md)|Gets the table of a Record variable and causes the RecordRef to refer to the same table.|
+|[SetTable(Record)](recordref-settable-method.md)|Sets the table to which a Record variable refers as the same table as a RecordRef variable.|
 |[Duplicate()](recordref-duplicate-method.md)|Duplicates the table that contains the RecordRef.|
 |[IsTemporary()](recordref-istemporary-method.md)|Determines whether a RecordRef refers to a temporary table.|
 |[CurrentCompany()](recordref-currentcompany-method.md)|Gets the current company of a database table referred to by a RecordRef.|
@@ -61,7 +62,7 @@ The following methods are available on instances of the RecordRef data type.
 |[AddLink(String, [String])](recordref-addlink-method.md)|Adds a link to a record in a table.|
 |[DeleteLink(Integer)](recordref-deletelink-method.md)|Deletes a specified link from a record in a table.|
 |[DeleteLinks()](recordref-deletelinks-method.md)|Deletes all of the links that have been added to a record.|
-|[CopyLinks(Table)](recordref-copylinks-table-method.md)|Copies all the links from a particular record.|
+|[CopyLinks(Record)](recordref-copylinks-table-method.md)|Copies all the links from a particular record.|
 |[CopyLinks(RecordRef)](recordref-copylinks-recordref-method.md)|Copies all the links from a particular record.|
 |[CopyLinks(Variant)](recordref-copylinks-variant-method.md)|Copies all the links from a particular record.|
 |[HasLinks()](recordref-haslinks-method.md)|Determines whether a record contains any links.|

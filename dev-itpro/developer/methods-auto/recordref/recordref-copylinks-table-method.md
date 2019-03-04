@@ -2,7 +2,7 @@
 title: "CopyLinks Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # CopyLinks Method
 Copies all the links from a particular record.
 
+
 ## Syntax
 ```
- RecordRef.CopyLinks(FromRecord: Table)
+ RecordRef.CopyLinks(FromRecord: Record)
 ```
 ## Parameters
 *RecordRef*  
@@ -26,7 +27,7 @@ Copies all the links from a particular record.
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *FromRecord*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 Specifies the record from which you want to copy links.  
 
 

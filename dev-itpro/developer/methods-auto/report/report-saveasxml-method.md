@@ -2,7 +2,7 @@
 title: "SaveAsXml Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,12 @@ author: solsen
 # SaveAsXml Method
 Saves the resulting data set of a query as an .xml file. The following code shows the syntax of the SAVEASXML function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
 
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
+
 ## Syntax
 ```
-[Ok := ]  Report.SaveAsXml(Number: Integer, FileName: String, [var Record: Table])
+[Ok := ]  Report.SaveAsXml(Number: Integer, FileName: String, [var Record: Record])
 ```
 ## Parameters
 *Number*  
@@ -30,7 +33,7 @@ The ID of the query object that you want to save as an .xml file.  If the query 
 The path and name of the file that you want to save the query to.
         
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 Specifies which record to use in the report. Any filters that have been applied to the record that you specify will be used.  
 
 
