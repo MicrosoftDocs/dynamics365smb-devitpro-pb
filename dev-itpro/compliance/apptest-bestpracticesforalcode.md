@@ -1,17 +1,14 @@
 ---
 title: "Best Practices for AL code"
 description: "Best Practices for writing AL code."
+
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 03/04/2019
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 # Best Practices for AL  
@@ -136,7 +133,11 @@ var
 ```
 
 ## Variable naming 
-All variables remain unchanged when they are named. This means that they can be named using Pascal case, temporary variables have the `Temp` prefix, and objects must include the object name in the name. 
+
+For variables they must:
+- Be named using PascalCase.
+- Have the `Temp` prefix if they are temporary variables.
+- Include the object name in the name (for objects).
 
 ### Example
 ```
