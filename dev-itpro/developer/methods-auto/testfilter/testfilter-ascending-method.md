@@ -2,7 +2,7 @@
 title: "Ascending Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # Ascending Method
 Gets or sets the order in which to search through a data set on a test page.
 
+
 ## Syntax
 ```
-Ascending :=   TestFilter.Ascending([Value: Boolean])
+[Ascending := ]  TestFilter.Ascending([Value: Boolean])
 ```
 > [!NOTE]  
 > This method can be invoked using property access syntax.  

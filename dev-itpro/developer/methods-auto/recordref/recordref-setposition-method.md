@@ -2,7 +2,7 @@
 title: "SetPosition Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SetPosition Method
 Sets the fields in a primary key on a record to the values specified in the String parameter. The remaining fields are not changed.
+
 
 ## Syntax
 ```

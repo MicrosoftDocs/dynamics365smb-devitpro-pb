@@ -2,7 +2,7 @@
 title: "RequestPage Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,7 @@ author: solsen
 Is a page that is run before the report starts to execute. Request pages enable end-users to specify options and filters for a report.
 
 
+
 The following methods are available on instances of the RequestPage data type.
 
 |Method name|Description|
@@ -27,7 +28,7 @@ The following methods are available on instances of the RequestPage data type.
 |[ObjectId([Boolean])](requestpage-objectid-method.md)|Returns a string in the "Page xxx" format, where xxx is the caption or ID of the application object.|
 |[SaveRecord()](requestpage-saverecord-method.md)|Saves the current record as if performed by the client. If the record does not exist it is inserted, otherwise it is modified.|
 |[Update([Boolean])](requestpage-update-method.md)|Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated.|
-|[SetSelectionFilter(var Table)](requestpage-setselectionfilter-method.md)||
+|[SetSelectionFilter(var Record)](requestpage-setselectionfilter-method.md)||
 |[Activate([Boolean])](requestpage-activate-method.md)|Activates the current page on the client if possible. The data on the page will not be refreshed.|
 |[Close()](requestpage-close-method.md)|Closes the current page.|
 

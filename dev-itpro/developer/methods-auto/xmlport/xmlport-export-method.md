@@ -2,7 +2,7 @@
 title: "Export Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # Export Method
 Creates an XML data stream (XML document) and sends it to a chosen destination.
 
+
 ## Syntax
 ```
-[Ok := ]  Xmlport.Export(Number: Integer, var OutStream: OutStream, [var Record: Table])
+[Ok := ]  Xmlport.Export(Number: Integer, var OutStream: OutStream, [var Record: Record])
 ```
 ## Parameters
 *Number*  
@@ -30,7 +31,7 @@ The ID of the XmlPort that you want to run.
 Where the XmlPort object will write the XML data stream.
         
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The record to use in the XmlPort. Any filters attached to the record will be used. This parameter is optional. If this parameter is omitted, all records in the table are exported.
           
 

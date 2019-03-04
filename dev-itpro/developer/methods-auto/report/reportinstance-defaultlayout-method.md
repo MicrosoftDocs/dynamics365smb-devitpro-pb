@@ -2,7 +2,7 @@
 title: "DefaultLayout Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DefaultLayout Method
 Gets the default built-in layout type that is used on a specified report.
+
 
 ## Syntax
 ```
