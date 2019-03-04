@@ -2,7 +2,7 @@
 title: "XmlNode Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # XmlNode Data Type
 Represents a XML node which can either be for instance an XML attribute, an XML element or a XML document.
+
 
 
 The following methods are available on instances of the XmlNode data type.

@@ -2,7 +2,7 @@
 title: "DataFileInformation Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,12 @@ author: solsen
 # DataFileInformation Method
 Specifies data from a file that has been exported from a database.
 
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
+
 ## Syntax
 ```
-[Ok := ]  Database.DataFileInformation(ShowDialog: Boolean, var FileName: Text, var Description: Text, var HasApplication: Boolean, var HasApplicationData: Boolean, var HasGlobalData: Boolean, var tenantId: Text, var exportDate: DateTime, var CompanyRecord: Table)
+[Ok := ]  Database.DataFileInformation(ShowDialog: Boolean, var FileName: Text, var Description: Text, var HasApplication: Boolean, var HasApplicationData: Boolean, var HasGlobalData: Boolean, var tenantId: Text, var exportDate: DateTime, var CompanyRecord: Record)
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  
@@ -55,7 +58,7 @@ Specifies the tenant ID of the database that the data was exported from. Create 
 Specifies the date and time when the data was exported. Create a variable of type DateTime to specify this parameter.
           
 *CompanyRecord*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 Specifies the company or companies in the file.  
 
 

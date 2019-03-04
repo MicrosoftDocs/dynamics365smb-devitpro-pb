@@ -2,7 +2,7 @@
 title: "HttpClient Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpClient Data Type
 Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
+
 
 
 The following methods are available on instances of the HttpClient data type.
@@ -32,6 +33,8 @@ The following methods are available on instances of the HttpClient data type.
 |[Put(String, HttpContent, var HttpResponseMessage)](httpclient-put-method.md)|Sends a PUT request to the specified URI as an asynchronous operation.|
 |[Send(HttpRequestMessage, var HttpResponseMessage)](httpclient-send-method.md)|Sends an HTTP request as an asynchronous operation.|
 |[AddCertificate(String, [String])](httpclient-addcertificate-method.md)|Adds a certificate to the HttpClient class.|
+|[UseDefaultNetworkWindowsAuthentication()](httpclient-usedefaultnetworkwindowsauthentication-method.md)|Sets the HttpClient credentials to use the default network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
+|[UseWindowsAuthentication(String, String, [String])](httpclient-usewindowsauthentication-method.md)|Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also

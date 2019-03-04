@@ -2,7 +2,7 @@
 title: "RunModal Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # RunModal Method
 Loads and executes the report that you specify.
 
+
 ## Syntax
 ```
- Report.RunModal(Number: Integer, [RequestWindow: Boolean], [SystemPrinter: Boolean], [var Record: Table])
+ Report.RunModal(Number: Integer, [RequestWindow: Boolean], [SystemPrinter: Boolean], [var Record: Record])
 ```
 ## Parameters
 *Number*  
@@ -34,7 +35,7 @@ Specifies whether the request window for the report will be displayed. The reque
 Specifies whether to use the default Windows printer or use table 78, Printer Selection, to find the correct printer for this report.
         
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 Specifies which record to use in the report. Any filters that are attached to the record that you specify are used.
         
 
