@@ -2,7 +2,7 @@
 title: "Write Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Write Method
 Writes to an MS-DOS encoded file or binary file.
+
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```

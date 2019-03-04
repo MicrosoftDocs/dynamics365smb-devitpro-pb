@@ -2,7 +2,7 @@
 title: "IndexOf Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IndexOf Method
 Searches for the specified value and returns the one-based index of the first occurrence within the entire List.
+
 
 ## Syntax
 ```

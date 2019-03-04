@@ -2,7 +2,7 @@
 title: "StrSubstNo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # StrSubstNo Method
 Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you provide as optional parameters.
+
 
 ## Syntax
 ```

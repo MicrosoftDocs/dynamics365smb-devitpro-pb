@@ -2,7 +2,7 @@
 title: "Run Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # Run Method
 Creates and launches a page that you specify. You can use CLEAR method to remove the page.
 
+
 ## Syntax
 ```
- Page.Run(Number: Integer, Record: Table, FieldNo: Integer)
+ Page.Run(Number: Integer, Record: Record, FieldNo: Integer)
 ```
 ## Parameters
 *Number*  
@@ -26,7 +27,7 @@ Creates and launches a page that you specify. You can use CLEAR method to remove
 The number of the page that you want to run. If you enter zero (0), the system displays the default lookup window for the current page. If the page you specify does not exist, a run-time error occurs.
           
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The record last displayed on the page. For each object, the system stores information about the most recently displayed record and the attached key and filters. Use this optional parameter to select a specific record to display on the page. The record must be of the same type as the table attached to the window. When the record is displayed, the key and filters attached to the record are used.
           
 *FieldNo*  

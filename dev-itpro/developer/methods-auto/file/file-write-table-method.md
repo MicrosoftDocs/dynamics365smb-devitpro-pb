@@ -2,7 +2,7 @@
 title: "Write Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,12 @@ author: solsen
 # Write Method
 Writes to an MS-DOS encoded file or binary file.
 
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
+
 ## Syntax
 ```
- File.Write(Value: Table)
+ File.Write(Value: Record)
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  
@@ -28,7 +31,7 @@ Writes to an MS-DOS encoded file or binary file.
 An instance of the [File](file-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The data that you want to write to the file.  
 
 

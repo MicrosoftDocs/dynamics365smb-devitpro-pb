@@ -2,7 +2,7 @@
 title: "GetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,8 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetFilter Method
-Returns the filters that are set on the field of a specified column in the query. The following code shows the syntax of the GETFILTER function. Query is a variable of the Query data type that specifies the query object.
+Returns the filters that are set on the field of a specified column in the query. The following code shows the syntax of the GETFILTER method. Query is a variable of the Query data type that specifies the query object.
+
 
 ## Syntax
 ```

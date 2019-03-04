@@ -2,7 +2,7 @@
 title: "StartSession Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # StartSession Method
 Starts a session without a UI and runs the specified codeunit.
 
+
 ## Syntax
 ```
-[Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer, [Company: String], [var Record: Table])
+[Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer, [Company: String], [var Record: Record])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  
@@ -36,7 +37,7 @@ The ID of the codeunit to run when the session is started.
 The company in which to start the session. By default, the session is started in the same company as the calling session.
         
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 A record that is passed to the OnRun trigger of the codeunit that runs when the session is started. This parameter is optional.
           
 
