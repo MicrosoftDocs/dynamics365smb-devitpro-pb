@@ -21,13 +21,13 @@ You use a report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_lon
 
 You build the report dataset from data items and columns. A data item is a table. A column can be: 
 
--   A field in a table 
+- A field in a table 
 
--   A variable
+- A variable
 
--   An expression 
+- An expression 
 
--   A text constant
+- A text constant
 
 Typically, data items and columns correspond to fields in a table. When the report is run, each data item is iterated for all records in the underlying table. Filters are applied and the dataset is created. 
 When a report is based on more than one table, you must set relations between the data items so that you can retrieve and organize the data. 
