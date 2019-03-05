@@ -13,7 +13,7 @@ ms.date: 11/28/2018
 ms.author: solsen
 ---
 
-# permissionSet Resource Rype
+# permissionSet Resource Type
 Represents a permissionSet resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].
 
 ## Methods
