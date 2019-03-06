@@ -10,9 +10,9 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Transitioning to Microsoft Dynamics 365 Business Central from NAV or GP
+# Transitioning to Microsoft Dynamics 365 Business Central from Dynamics NAV or Dynamics GP
 
-> [!NOTE] 
+> [!NOTE]  
 > Here are the links to the assets in the Transition Playbook. Please refer to the [**Transition Playbook**](https://mbs2.microsoft.com/AADSignup/Home/Index) for more information and prescriptive guidance.  
 
 This playbook resource guide is intended for Microsoft Partners. Please do not share. 
@@ -20,7 +20,7 @@ This playbook resource guide is intended for Microsoft Partners. Please do not s
 | **Learn** | **Engage** | **Close** | 
 |---------------------------|-----------------------------|--------------|
 | *Educate yourself about CSP* | *Offer 3 options* | *Secure your base*
-| [Ready-To-Go](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go?tabs=learning) | Cloud | Lock your BREP revenue today | 
+| [Ready To Go](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go?tabs=learning) | Cloud | Lock your BREP revenue today | 
 | [Dynamics Learning Portal](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmbspartner.microsoft.com%2FBC%2FTopic%2F109&data=02%7C01%7CArvind.Dutta%40microsoft.com%7Ca270ee000f9e4bf2ebb408d691490314%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636856140098808763&sdata=7bnqYv%2F7B6oBMn91AuL8Fni8c7ZN4Pp8yLxNdy3zPGg%3D&reserved=0) | Cloud sync | Migrate early adopters now | 
 | [Microsoft Partner Center](https://docs.microsoft.com/en-us/partner-center/) | On-Premises | Create a migration pipeline for next 1-3 years | 
 | [Dynamics 365 Business Central Transition Sales Play](https://microsoft.sharepoint.com/sites/Infopedia_G01/Pages/businessapplications.aspx) | | |
