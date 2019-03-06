@@ -15,8 +15,6 @@ ms.author: solsen
 > [!NOTE]  
 > Here are the links to the assets in the Transition Playbook. Please refer to the [**Transition Playbook**](https://mbs2.microsoft.com/AADSignup/Home/Index) for more information and prescriptive guidance.  
 
-This playbook resource guide is intended for Microsoft Partners. Please do not share. 
-
 | **Learn** | **Engage** | **Close** | 
 |---------------------------|-----------------------------|--------------|
 | *Educate yourself about CSP* | *Offer 3 options* | *Secure your base*
