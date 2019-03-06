@@ -3,7 +3,7 @@ title: "The “Ready to Go” Online learning for business decision makers"
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/25/2018
+ms.date: 03/06/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -34,3 +34,4 @@ Get an overview of the entire "Ready to Go" online learning catalog [here](readi
 |**Search Customer Stories**<br>Find customer reference stories for Dynamics 365 Business Central on [https://customers.microsoft.com](https://customers.microsoft.com).|[Review](https://customers.microsoft.com/en-us/search?sq=%22Dynamics%20365%20Business%20Central%20%22&ff=&p=0&so=story_publish_date%20desc)|
 |**Microsoft Dynamics 365 Business Central Licensing topics**<br>Learn more about the Licensing and pricing of Microsoft Dynamics 365 Business Central.  The information on this page includes licensing decks, licensing guide, FAQs, transition guides, toolkits and many more.|[Review](https://mbs.microsoft.com/partnersource/northamerica/pricing-ordering/licensing-policies/Dyn365BusinessCentralPricingLicensing)<br>[Join the Conversation](https://www.yammer.com/cloudpartnercommunity/)|
 |**Cloud Solution Provider Program**<br>Microsoft Dynamics 365 Business Central is only sold through the Cloud Solution Provider (CSP) program.|[Homepage](https://partner.microsoft.com/en-US/cloud-solution-provider)<br>[Direct/indirect Model](https://docs.microsoft.com/en-us/partner-center/csp-overview)<br>[Support Options](https://partner.microsoft.com/en-US/support/partnersupport)|
+|**Dynamics 365 Business Central Transition Playbook**<br>This playbook resource guide is intended for Microsoft Partner who are looking to transition customers from NAV & GP to Microsoft Dynamics 365 Business Central. |[Dynamics 365 Business Central Transition Playbook](readiness-transition-business-central.md)|

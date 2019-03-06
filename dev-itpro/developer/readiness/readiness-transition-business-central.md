@@ -1,9 +1,9 @@
 ---
-title: "Step 4 - How to Get Your App Published"
+title: "Transitioning to Dynamics 365 Business Central"
 description: ""
 author: 
 ms.custom: na
-ms.date: 02/08/2019
+ms.date: 03/06/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -41,8 +41,6 @@ This playbook resource guide is intended for Microsoft Partners. Please do not s
 
 ## Dynamics 365 Business Central Transitoin Playbook Resources
 
-
-
 | **Asset** | **Description** |  
 |---------------------------|-----------------------------|
 | Dynamics 365 Business Central Customer Transition Pitch decks – [NAV](https://mbs.microsoft.com/Files/partner/365/SalesMarketing/NAV_ShortPitchdeckcustomer.pptx) & [GP](https://mbs.microsoft.com/Files/partner/365/SalesMarketing/GP_ShortPitchdeckcustomer.pptx) |**Start here.** Become familiar with the three options for your existing customers. Use this pitch deck when you want to present a succinct pitch to the business decision makers in your customers’ organizations. This pitch will inform your customers about Microsoft’s Cloud vision in the age of digital transformation and what’s next for their ERP system. 
@@ -60,11 +58,3 @@ This playbook resource guide is intended for Microsoft Partners. Please do not s
 | Dynamics 365 Business Central Transition [Promotional Offers sheet](https://mbs.microsoft.com/Files/partner/365/SalesMarketing/QualifiedoffersheettoBC.pdf) | Learn about our attractive promotional transition offers your customers can take advantage of, whether they are in-between BREP or at the end of their BREP term. |
 | Dynamics 365 Business Central [Transition Tools Roadmap](https://mbs.microsoft.com/Files/partner/365/SalesMarketing/Migrationtoolsroadmap.pdf) | Learn about available transition tools and what’s coming to help transition your customers from on-premises to Dynamics 365 Business Central. | 
 | [Customer evidence nomination form](https://mbs.microsoft.com/Files/partner/365/SalesMarketing/TransitionConversationRecording/TransitionConversationRecording.mp4) | Nominate your customers to be featured in Microsoft video, web or social platforms, creating valuable social buzz. | 
-
-
-
-
-
-
-
-
