@@ -3,7 +3,7 @@ title: "The “Ready to Go” Online learning for sales"
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/25/2018
+ms.date: 03/06/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -25,6 +25,7 @@ Get an overview of the entire "Ready to Go" online learning catalog [here](readi
 |**Cloud Solution Provider Program**<br>[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is only sold through the Cloud Solution Provider (CSP) program.|[Homepage](https://partner.microsoft.com/en-US/cloud-solution-provider)<br>[Direct/indirect Model](https://docs.microsoft.com/en-us/partner-center/csp-overview)<br>[Support Options](https://partner.microsoft.com/en-US/support/partnersupport)|
 |**Microsoft Dynamics 365 Business Central Licensing topics**<br>Learn more about the Licensing and pricing of Microsoft Dynamics 365 Business Central.  The information on this page includes licensing decks, licensing guide, FAQs, transition guides, toolkits and many more.|[Review](https://mbs.microsoft.com/partnersource/northamerica/pricing-ordering/licensing-policies/Dyn365BusinessCentralPricingLicensing)<br>[Join the Conversation](https://www.yammer.com/cloudpartnercommunity/)|
 |**Cloud SureStep Accelerated Selling**<br>The Cloud SureStep Accelerated Sales Process is built around the needs of the modern buyer and endeavors to trigger an emotional, experience-driven Strategic Tipping Point early in the selling process. This series of videos and resources explain a prescriptive selling process that is specifically designed to counter the traditional resource intensive, “demo-oriented” solution sales approach that typically leads to highly customized product demonstrations, complex sales cycles and long implementation projects. The library of resources includes a number of customizable templates so you may create your own set of sales assets to support accelerated selling.|[Review](https://mbspartner.microsoft.com/OSS/Topic/20)|
+|**Dynamics 365 Business Central Transition Playbook**<br>This playbook resource guide is intended for Microsoft Partner who are looking to transition customers from NAV & GP to Microsoft Dynamics 365 Business Central. |[Dynamics 365 Business Central Transition Playbook](readiness-transition-business-central.md)|
 
 ## Proficient knowledge
 
