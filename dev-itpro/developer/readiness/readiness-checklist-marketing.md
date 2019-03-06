@@ -24,7 +24,7 @@ are live, if some of the content in their storefront details needs to be edited
 Consequently, to be published on AppSource all listings need to pass the
 marketing validation.
 
-> [!VIDEO https://www.youtube.com/watch?v=Z9rRz0l0Guc]
+> [!VIDEO https://www.youtube.com/embed/Z9rRz0l0Guc]
 
 ## Marketing Checklist for Showcasing Your App
 
