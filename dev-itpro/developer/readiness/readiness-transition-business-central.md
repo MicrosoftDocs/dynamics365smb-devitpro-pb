@@ -39,7 +39,7 @@ This playbook resource guide is intended for Microsoft Partners. Please do not s
 |
 |
 
-## Dynamics 365 Business Central Transitoin Playbook Resources
+## Dynamics 365 Business Central Transition Playbook Resources
 
 | **Asset** | **Description** |  
 |---------------------------|-----------------------------|
