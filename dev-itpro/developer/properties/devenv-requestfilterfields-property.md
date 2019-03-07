@@ -32,4 +32,4 @@ If you do not want users to add filters on fields, then use one of the following
 - Remove the request page by using the [UseRequestPage Property](devenv-userequestpage-property.md) of the report.  
 
 ## See Also
-[Request Pages](../devenv-request-page.md)  
+[Request Pages](../devenv-request-pages.md)  
