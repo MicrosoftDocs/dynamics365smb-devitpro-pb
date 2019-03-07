@@ -356,5 +356,67 @@ Returns the notification settings.
 }
 ```
 
+## Application Access Management
+It is a possibile for Delegated Tenant Admin to manage seaparately each application access.
+
+### Get List Of Manageable Applications
+Returns a list of manageable applications.
+
+```[200] GET https://api.businesscentral.dynamics.com/v1.2/admin/managableapplications```
+
+**Response:**  
+Returns a wrapped array of applications.
+
+```
+{
+    "value":  [
+                  {
+                      "applicationFamily":  "Accountant",
+                      "access":  true
+                  },
+                  {
+                      "applicationFamily":  "BusinessCentral",
+                      "access":  true
+                  }
+              ]
+}
+```
+
+### Control the access to Applications
+Pass application family name in the url and a boolean in the body - True - enables the access, False - disables the access.
+
+```[200] PUT https://api.businesscentral.dynamics.com/v1.2/admin/managableapplications/BusinessCentral```
+
+**Body**
+```
+{
+  boolean  // Desiread acces state
+}
+```
+
+### Get List Of Accessible Applications
+Tenant Admin can obtain a list of accessible applications.
+
+```[200] GET https://api.businesscentral.dynamics.com/v1.2/admin/accessibleapplications```
+
+**Response:**  
+Returns a wrapped array of applications.
+
+```
+{
+    "value":  [
+                  {
+                      "applicationFamily":  "Accountant",
+                      "access":  true
+                  },
+                  {
+                      "applicationFamily":  "BusinessCentral",
+                      "access":  true
+                  }
+              ]
+}
+```
+
+
 ## See Also
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)    
