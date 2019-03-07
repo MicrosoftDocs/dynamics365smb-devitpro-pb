@@ -2,7 +2,7 @@
 title: "SessionSettings Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SessionSettings Data Type
 Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.
+
 
 
 The following methods are available on instances of the SessionSettings data type.

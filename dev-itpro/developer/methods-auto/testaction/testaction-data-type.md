@@ -2,7 +2,7 @@
 title: "TestAction Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestAction Data Type
 Represents a test action on a page.
+
 
 
 The following methods are available on instances of the TestAction data type.

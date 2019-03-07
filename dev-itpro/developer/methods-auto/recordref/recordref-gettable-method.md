@@ -2,7 +2,7 @@
 title: "GetTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # GetTable Method
 Gets the table of a Record variable and causes the RecordRef to refer to the same table.
 
+
 ## Syntax
 ```
- RecordRef.GetTable(Rec: Table)
+ RecordRef.GetTable(Rec: Record)
 ```
 ## Parameters
 *RecordRef*  
@@ -26,7 +27,7 @@ Gets the table of a Record variable and causes the RecordRef to refer to the sam
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *Rec*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 Use this record variable to specify the table to which the RecordRefVar refers.  
 
 

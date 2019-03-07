@@ -11,7 +11,6 @@ ms.author: kepontop
 ---
 
 # Data Encryption at Rest
-
 When thinking about data encryption, you should mainly consider three scenarios:
 
 - Encrypting your data at rest, which means encrypting it while it is stored on whatever file storage you use.
@@ -39,6 +38,7 @@ BitLocker is a volume encryption feature included in Windows Server. It protects
 > [!CAUTION]
 > Be aware that detaching or backing up a database to a different volume that is not protected by BitLocker causes any protection the file currently has to be lost.
 
+
 For more information about BitLocker, see [the overview](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview) and how it applies to [Windows Server 2012 and later](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) 
 
 ## Defense in depth with BitLocker Drive Encryption and Transparent Data Encryption (TDE) combined
@@ -51,9 +51,7 @@ TDE has an estimated performance impact around 3-5% and can be much lower if mos
 
 BitLocker Drive Encryption has a single-digit percentage performance impact as explained [here](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq#is-there-a-noticeable-performance-impact-when-bitlocker-is-enabled-on-a-computer).
 
-
 ## See Also  
-
  [Classifying Data](../developer/devenv-classifying-data.md)   
  [Data Security](data-security.md)  
  [Enhancing Business Server Security](enhancing-server-instance-security.md)   

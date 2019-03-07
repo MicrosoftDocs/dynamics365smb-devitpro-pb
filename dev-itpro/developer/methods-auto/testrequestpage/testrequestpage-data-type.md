@@ -2,7 +2,7 @@
 title: "TestRequestPage Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestRequestPage Data Type
 Stores test request pages. A test request page part is a logical representation of a request page on a report. A test request page does not display a user interface (UI). The subtype of a test request page is the report whose request page you want to test.
+
 
 
 The following methods are available on instances of the TestRequestPage data type.
@@ -31,7 +32,7 @@ The following methods are available on instances of the TestRequestPage data typ
 |[Last()](testrequestpage-last-method.md)|Sets the current row of the test page as the last row in the data set.|
 |[IsExpanded()](testrequestpage-isexpanded-method.md)|Specifies if rows on a test page are expanded.|
 |[Expand(Boolean)](testrequestpage-expand-method.md)|Expands rows on a test page.|
-|[GoToRecord(Table)](testrequestpage-gotorecord-method.md)|Finds the specified record in a data set on a test page. The record is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset.|
+|[GoToRecord(Record)](testrequestpage-gotorecord-method.md)|Finds the specified record in a data set on a test page. The record is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset.|
 |[GoToKey([Any,...])](testrequestpage-gotokey-method.md)|Finds the row in a data set on the test page that is identified by the specified values. The key is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset.|
 |[FindFirstField(TestField, Any)](testrequestpage-findfirstfield-method.md)|Finds the first field in the data set that is displayed on a test page. The row is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset.|
 |[FindNextField(TestField, Any)](testrequestpage-findnextfield-method.md)|Finds the next field in the data set that is displayed on a test page.The row is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset.|

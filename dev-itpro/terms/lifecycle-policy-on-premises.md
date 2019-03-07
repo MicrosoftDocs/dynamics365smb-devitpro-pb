@@ -1,18 +1,19 @@
 ---
-title: "Software lifecycle policy and on-premises releases"
+title: "Software lifecycle policy and on-premises updates"
+description: "Learn about the lifecycle and product life of Dynamics 365 Business Central versions for on-premises deployments."
 author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 02/26/2019
+ms.date: 03/01/2019
 
 ---
 
-# Software lifecycle policy and on-premises releases for Dynamics 365 Business Central
+# Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates
 
-This topic outlines the lifecycle and support policies for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] on-premises.
+This topic outlines the lifecycle and support policies for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] on-premises updates.
 
 ## Fixed Lifecycle Policy
 
@@ -33,7 +34,7 @@ Critical fixes and non-critical updates are handled in the following way:
 |Release                                     |Version           |Build number  |Availability  |Expiration date|Product life|
 |--------------------------------------------|------------------|--------------|--------------|---------------|------------|
 |Dynamics 365 Business Central (on-premises) | October'18 Update|24630 |November 2018 |April 2020   |December 2025|
-|Dynamics 365 Business Central (on-premises) |April '19 Update |       |April 2019  |To be announced\*|December 2025|
+|Dynamics 365 Business Central (on-premises) | April '19 Update |       |April 2019  |To be announced\*|December 2025|
 
 \* Indicates that the expiration date will be added on this page when the next version is released.
 

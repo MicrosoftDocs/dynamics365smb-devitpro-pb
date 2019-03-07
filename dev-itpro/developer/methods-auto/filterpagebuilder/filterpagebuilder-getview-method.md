@@ -2,7 +2,7 @@
 title: "GetView Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetView Method
 Gets the filter view (which defines the sort order, key, and filters) for the record in the specified filter control of a filter page. The view contains all fields in the filter control that have a default filter value.
+
 
 ## Syntax
 ```

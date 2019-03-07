@@ -2,7 +2,7 @@
 title: "SetTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # SetTable Method
 Sets the table to which a Record variable refers as the same table as a RecordRef variable.
 
+
 ## Syntax
 ```
- RecordRef.SetTable(Rec: Table)
+ RecordRef.SetTable(Rec: Record)
 ```
 ## Parameters
 *RecordRef*  
@@ -26,7 +27,7 @@ Sets the table to which a Record variable refers as the same table as a RecordRe
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *Rec*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The Record for which you want to specify a table.  
 
 

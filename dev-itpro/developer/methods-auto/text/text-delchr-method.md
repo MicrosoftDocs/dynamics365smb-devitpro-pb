@@ -2,7 +2,7 @@
 title: "DelChr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DelChr Method
 Deletes chars contained in the which parameter in a string based on the contents on the where parameter. If the where parameter contains an equal-sign, then all occurrences of characters in which is deleted from the current value. If the where parameter contains a less-than, then the characters are only deleted when they are first in the string. If the where parameter contains a greater-than, then the characters are only deleted when they are the last in the string. If the where parameter contains any other char, an exception is thrown. If the where parameter or the which parameter is empty, the source is returned unmodified. The which parameter is to be considered as an array of chars to delete where the order does not matter.
+
 
 ## Syntax
 ```

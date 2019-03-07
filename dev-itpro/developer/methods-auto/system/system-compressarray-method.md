@@ -2,7 +2,7 @@
 title: "CompressArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CompressArray Method
 Moves all non-empty strings (text) in an array to the beginning of the array. The resulting StringArray has the same number of elements as the input array, but empty entries appear at the end of the array.
+
 
 ## Syntax
 ```

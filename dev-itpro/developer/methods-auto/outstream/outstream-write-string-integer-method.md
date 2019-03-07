@@ -2,7 +2,7 @@
 title: "Write Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,6 +16,7 @@ author: solsen
 # Write Method
 Writes a specified number of bytes to the stream. Data is written in binary format.
 
+
 ## Syntax
 ```
 [Written := ]  OutStream.Write(Value: String, [Length: Integer])
@@ -27,8 +28,7 @@ An instance of the [OutStream](outstream-data-type.md) data type.
 
 *Value*  
 &emsp;Type: [String](../string/string-data-type.md)  
-Contains the data to be written.
-        
+Contains the data to be written.  
 *Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of bytes to be written. In the case of data types other than string, code, and binary, if you specify a length that differs from the size of the variable, an error message is displayed.  

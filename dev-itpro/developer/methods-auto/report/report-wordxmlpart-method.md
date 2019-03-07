@@ -2,7 +2,7 @@
 title: "WordXmlPart Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # WordXmlPart Method
 Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts. The method has an instance call and a static call. The following code shows the syntax of the WORDXMLPART function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
+
 
 ## Syntax
 ```

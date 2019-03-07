@@ -2,7 +2,7 @@
 title: "GoToRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # GoToRecord Method
 Finds the specified record in a data set on a test page. The record is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset.
 
+
 ## Syntax
 ```
-[Ok := ]  TestRequestPage.GoToRecord(Rec: Table)
+[Ok := ]  TestRequestPage.GoToRecord(Rec: Record)
 ```
 ## Parameters
 *TestRequestPage*  
@@ -26,7 +27,7 @@ Finds the specified record in a data set on a test page. The record is searched 
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
 
 *Rec*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The record to find.  
 
 

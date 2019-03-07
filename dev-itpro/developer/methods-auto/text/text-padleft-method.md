@@ -2,7 +2,7 @@
 title: "PadLeft Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PadLeft Method
 Returns a new Text that right-aligns the characters in this instance by padding them on the left, for a specified total length.
+
 
 ## Syntax
 ```
