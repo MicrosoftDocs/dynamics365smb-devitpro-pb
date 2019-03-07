@@ -18,7 +18,7 @@ You can use reports to print or display information from a database. Use reports
 
 Reports can also be used to process data without printing or displaying content. For example, use a report to automate updating all prices in an item list. It can be easier to create a report to process data instead of a codeunit to do the same processing because you can use:  
 
--   Request page functionality to select options and filters for data items, which are available in a report but are difficult to add to a codeunit.  
+- Request page functionality to select options and filters for data items, which are available in a report but are difficult to add to a codeunit. For more information, see [Request Pages](devenv-request-page.md). 
 
 -   Report data items instead of writing code to open tables and retrieve records.  
 

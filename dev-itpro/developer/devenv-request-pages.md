@@ -1,6 +1,6 @@
 ---
 title: "Request Pages"
-description: ""
+description: "Introducing request pages in Business Central."
 author: SusanneWindfeldPedersen
 
 ms.custom: na
@@ -14,7 +14,7 @@ ms.author: solsen
 # Request Pages
 A request page is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for a report.
 
-You design the **Options** FastTab of a request page by using ...... Request Options Page Designer in the development environment. To access Request Options Page Designer, open Report Dataset Designer, choose View, and then choose Request Page.
+You design the **Options** FastTab of a request page by using ...... <!-- Request Options Page Designer in the development environment. To access Request Options Page Designer, open Report Dataset Designer, choose View, and then choose Request Page. -->
 
 You design the filters on request pages by using the following report properties:
 
