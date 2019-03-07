@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: kepontop
 ---
+
 # Data Encryption at Rest
 
 When thinking about data encryption, you should mainly consider three scenarios:
@@ -51,7 +52,6 @@ TDE has an estimated performance impact around 3-5% and can be much lower if mos
 BitLocker Drive Encryption has a single-digit percentage performance impact as explained [here](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq#is-there-a-noticeable-performance-impact-when-bitlocker-is-enabled-on-a-computer).
 
 ## See Also
-
  [Classifying Data](../developer/devenv-classifying-data.md)   
  [Data Security](data-security.md)  
  [Enhancing Business Server Security](enhancing-server-instance-security.md)   
