@@ -10,7 +10,7 @@ ms.date: 03/08/2019
 ms.author: edupont
 ---
 
-# Extend, Customize, and Collaborate on the Help for [!INCLUDE[prodlong](developer/includes/prodlong.md)]
+# Extend, Customize, and Collaborate on the Help for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
 The Help for the base application is available in a public GitHub repo so that you can easily extend and customize for your customers. In this section, you can learn about working with the GitHub repos and MarkDown files.  
 
