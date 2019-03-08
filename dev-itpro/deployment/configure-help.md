@@ -1,12 +1,12 @@
 ---
 title: Configure the Help experience
-description: You can override the default location for Help to point at your own website.
+description: Learn how to give your customers access to the right Help content.
 author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 02/11/2019
+ms.date: 03/08/2019
 ms.author: edupont
 ---
 
@@ -16,36 +16,57 @@ The default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 These and other scenarios are also supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. But the options and possibilities are different, depending on your deployment scenario.  
 
-## User assistance for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+## Apps for online tenants
 
-The user assistance model is based on the following principles:
-
-- Get started
-- Get unblocked
-- Learn more
+When you build an app for in[!INCLUDE [prodshort](../developer/includes/prodshort.md)] using the AL developer experience, you are expected to comply with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user assistance model. This includes tooltips and context-sensitive links to Help.  
 
 For more information, see [User Assistance Model](../user-assistance.md).  
 
-Apps and other extensions are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality.  
-
 ### Context-sensitive Help
 
-The context-sensitive links to Help are based on a UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are listed, and have a target Help article associated with each of them. This means that multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
+A key pillar of helping users help themselves is to give them access to Help for the particular corner of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] that they are working in.  
 
-The table associates page IDs with target articles, but the URL to where to find the target article is specified at the application level that defaults to the [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com/en-us/dynamics365/business-central/) site. In an extension, you can overrule this URL so that all calls for Help go to your site instead, for example. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to that app provider's website.  
-
-At an app level, the properties in the app.json file can be set to take over the links to Help for specific languages as shown in the following example:
+At an app level, you can specify where the Help for your functionality is published in the app.json file. For example, if you publish your content to `https://mysite.com/en-us/mysolution`, then you would specify that in the *contextSensitiveHelpUrl* property as shown in the following example:
 
 ```json
-  "helpBaseUrl": "https://mysite.com/{0}/mysolution",
+  "contextSensitiveHelpUrl": "https://mysite.com/documentation",
+
+```
+
+In this example, the *contextSensitiveHelpUrl* property specifies that the links to the Help must go to the *mysite.com* site when the user is using your app's functionality across all locales. When the user is using functionality from the base application, then the Help calls will go to the default location on the *docs.microsoft.com* site.  
+
+If your app only supports a limited number of locales, you can specify that as well as shown in the following example:
+
+```json
+  "contextSensitiveHelpUrl": "https://mysite.com/{0}/documentation",
   "supportedLocales": [
-    "en-GB", "en-IE
+    "en-GB"
   ],
 ```
 
-In this example, the *helpBaseUrl* and *supportedLocales* properties specify that the links to the Help must go to the *mysite.com* site when the user is using the product in either English (Ireland) or English (United Kingdom). If the user switches the application language to English (US), then the Help calls will go to the default location on the *docs.microsoft.com* site. In contrast, the *help* property specifies the link that describes the app or solution itself and is used in AppSource.
+Your target website is expected to have a default page that will display if nothing else is specified. But for each page or page extension, and for each field or field group on those pages, you can then specify the exact Help page that describes this page or field. You can do that using the *ContextSensitiveHelpPage* property as shown in the following example:
 
-Alternatively, you can specify help links at the object level. For more information, see [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md).  
+```
+page 50101 "Reward Card"
+{
+    PageType = Card;
+    SourceTable = Reward;
+    ContextSensitiveHelpPage = 'sales-rewards';
+
+}
+```
+
+In this example, the app contains a page object that is mapped to the *sales-rewards* Help file on the website that the app.json specifies. As a result, the *Learn more* link in the tooltips for this page will go to the equivalent of *https://mysite.com/en-GB/documentation/sales-rewards*.
+
+You can set the *ContextSensitiveHelpPage* property on all pages, or only on those that you don't want to get the default Help page for your website. For page extensions, the value of the *ContextSensitiveHelpPage* property will apply only to the 
+
+In contrast, the app.json file also contains a *help* property, but this specifies the link that describes the app or solution itself and is used by AppSource.  
+
+#### How it works for the base application
+
+In the current version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the context-sensitive links to Help for the base application works in a different way that is based on a UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are listed, and have a target Help article associated with each of them. This means that multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
+
+The table associates page IDs with target articles, but the URL to where to find the target article is specified at the application level that defaults to the [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com/en-us/dynamics365/business-central/) site. In an extension, you can overrule this URL so that all calls for Help go to your site instead, for example. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to that app provider's website.  
 
 ### Tooltips
 
@@ -62,38 +83,54 @@ The base application has applied instructional text to setup guides and certain 
 The following example shows how you can apply user assistance and link to Help in a page object:
 
 ```
-page 50100 MyPage
+page 50101 "Reward Card"
 {
     PageType = Card;
-    SourceTable = MyTable;
-    HelpLink = 'https://mysite.com/{0}/mysolution/my-feature';
-
+    SourceTable = Reward;
+    ContextSensitiveHelpPage = 'sales-rewards';
 
     layout
     {
         area(content)
         {
-            group(Test)
+            group(Reward)
             {
-                InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.';
-                field(ID; ID)
+                InstructionalText = 'Fill in the fields so that you can reward customers with discounts.';
+                field("Reward Id"; "Reward ID")
                 {
                     ApplicationArea = All;
-                    Caption = 'First field';
-                    ToolTip = 'Shows the ID of the entity. You must set the ID manually when you add an entity, and it can be a maximum of 10 characters long.';
+                    ToolTip = 'Specifies the unique ID of the reward.';
                 }
-                field(Name; Name)
+
+                field(Description; Description)
                 {
                     ApplicationArea = All;
-                    Caption = 'Second field';
-                    ToolTip = 'Shows the name of the entity based on the names in your list of contacts.';
+                    ToolTip = 'Specifies what this type of reward is used for.';
+                }
+
+                field("Discount Percentage"; "Discount Percentage")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the impact of the reward on the customer''s price.';
                 }
             }
         }
     }
 }
-
 ```
+
+### Localization apps
+
+Specifically for localization apps that bring [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to new markets, the properties in the app.json file can be set to take over the links to Help for specific languages as shown in the following example:
+
+```json
+  "helpBaseUrl": "https://mysite.com/{0}/documentation",
+  "supportedLocales": [
+    "en-GB", "en-IE
+  ],
+```
+
+In this example, the *helpBaseUrl* and *supportedLocales* properties specify that the links to the Help must go to the *mysite.com* site when the user is using the product in either English (Ireland) or English (United Kingdom). If the user switches the application language to English (US), then the Help calls will go to the default location on the *docs.microsoft.com* site.  
 
 ## On-premises deployments
 
@@ -110,7 +147,7 @@ For the Web client, which is accessed by users from a browser or from the mobile
 
 ```json
                            "//BaseHelpUrl":  "The location of Help for this application.",
-                           "BaseHelpUrl": "https://docs.microsoft.com/{0}/dynamics365/business-central/",
+                           "BaseHelpUrl": "https://mysite.com/{0}/documentation/",
                            "//BaseHelpSearchUrl":  "The URL to use if Help is included in the Search functionality in Business Central.",
                            "BaseHelpSearchUrl": "https://docs.microsoft.com/{0}/search/index?search={1}&scope=BusinessCentral",
                            "//DefaultRelativeHelpPath":  "The Help article to look up if no other article can be found.",
@@ -120,12 +157,12 @@ For the Web client, which is accessed by users from a browser or from the mobile
 For users who use the legacy Windows client connected to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the ClientUserSettings.config file must contain the following settings:
 
 ```
-    <add key="BaseHelpUrl" value="https://docs.microsoft.com/{0}/dynamics365/business-central/" />
+    <add key="BaseHelpUrl" value="https://mysite.com/{0}/documentation/" />
     <add key="DefaultRelativeHelpPath" value="index" />
 ```
 
 > [!NOTE]
-> Replace the value of the BaseHelpUrl key with the URL for your own website, such as ```https://mycompany.com/{0}/documentation/```. The parameter, {0}, represents the locale of the browser that the user is using, such as en-us or da-dk, and is set automatically at runtime.
+> Replace the value of the BaseHelpUrl key with the URL for your own website, such as ```https://mysite.com/{0}/documentation/```. The parameter, {0}, represents the locale of the browser that the user is using, such as en-us or da-dk, and is set automatically at runtime.
 
 ### Help Server
 
@@ -149,10 +186,10 @@ For users who use the legacy Windows client connected to [!INCLUDE[prodshort](..
     <add key="HelpServerPort" value="49000" />
 ```
 
-In both examples, https://myserver.com represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server?target=_blank) in the developer and ITpro content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+In both examples, *https://myserver.com* represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and ITpro content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!IMPORTANT]
-> If you use Help Server, the UI-to-Help mapping functionality that was described above does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server?target=_blank).  
+> If you use Help Server, the UI-to-Help mapping functionality that was described in the [Context-sensitive Help](#context-sensitive-help) section does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server?target=_blank).  
 
 For guidance about how to generate HTML files, see the [Readme.md in the public source repo for the business functionality content](https://github.com/MicrosoftDocs/dynamics365smb-docs?target=_blank#building-html-files). Optionally, you can choose to reuse the HTML and .HTM files that you used for Dynamics NAV in your online library or Help Server deployment.  
 
