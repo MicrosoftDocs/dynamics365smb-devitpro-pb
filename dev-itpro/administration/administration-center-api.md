@@ -357,7 +357,7 @@ Returns the notification settings.
 ```
 
 ## Application Access Management
-It is a possibile for Delegated Tenant Admin to manage seaparately each application access.
+It is a possibile for **Delegated Tenant Admin** to manage seaparately each application access.
 
 ### Get List Of Manageable Applications
 Returns a list of manageable applications.
@@ -392,8 +392,11 @@ Pass application family name in the url and a boolean in the body
 }
 ```
 
+> [!NOTE]  
+> It is only possibly to disable the access to application for the AAD tenant if it does not have **application tenant** yet.
+
 ### Get List Of Accessible Applications
-Tenant Admin can obtain a list of accessible applications.
+**Tenant Admin** can obtain a list of accessible applications.
 
 ```[200] GET /v1.2/admin/accessibleapplications```
 
