@@ -13,7 +13,7 @@ ms.date: 11/28/2018
 ms.author: solsen
 ---
 
-# permissionSet Resource Rype
+# permissionSet Resource Type
 Represents a permissionSet resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].
 
 ## Methods
@@ -27,7 +27,7 @@ Represents a permissionSet resource type in [!INCLUDE[d365fin_long_md](../develo
 | Property | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
 |scope     |string  |code of the userGroup.|
-|appID     |guid | Display of the useGroup.     |
+|appID     |guid | Display of the userGroup.     |
 |id|string|ID of the defaultProfile.|
 |displayName|string|If true, all new users are assigned to userGroup.|
 |extensionName|string|If true, all new users are assigned to userGroup.|
