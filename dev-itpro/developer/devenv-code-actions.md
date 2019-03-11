@@ -21,7 +21,7 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] two code actions are 
 ## To enable Code Actions
 1. Open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings** depending on which scope you want the code actions to apply to.
 2. Enter the setting `al.enableCodeActions` to the settings file and set it to `true`: `"al.enableCodeActions": true`
-3. Save the settings file.
+3. Save the settings file. You have now enabled code actions on your project.
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
