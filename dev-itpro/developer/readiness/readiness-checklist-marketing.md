@@ -1,13 +1,13 @@
 ---
 title: "Marketing Validation Checklist"
 description: "The marketing checklist for Business Central apps"
-author: SusanneWindfeldPedersen
+author: v-liober
 ms.custom: na
 ms.date: 02/27/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: v-liober
 ---
 
 # Why marketing validation is mandatory
