@@ -37,12 +37,12 @@ A RAD file will be deleted as a result of a successful publishing.
 > If RAD publishing fails, then you must do a full publishing before performing another RAD publishing. The final state of an application must be built using full publishing, and never with Rad publishing.
 
 ## RAD shortcuts
-There are two commands for starting a RAD-based action. <!-- Might change, and debugging may not be supported for spring 2019 -->
+There are two commands for starting a RAD-based action. 
 
 |Shortcut     |Description|
 |-------------|-----------|
-|Alt+Shift+F5 |Start RAD publishing.|
-|Alt+F5       |Start RAD debugging.|
+|Ctrl+Alt+F5  |Start RAD debugging without publishing.|
+|Alt+F5       |Start RAD publishing.|
 
 ## See also
 [Developing Extensions in AL](devenv-dev-overview.md)  
