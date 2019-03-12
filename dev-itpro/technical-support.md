@@ -9,13 +9,13 @@ ms.author: edupont
 ms.date: 03/12/2019
 ---
 
-# Configuring Technical Support for [!INCLUDE[prodlong](includes/prodlong.md)]
+# Configuring Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]
 
-As a [!INCLUDE[prodshort](includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, and you are the first line of support.  
+As a [!INCLUDE[prodshort](developer/includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants, and you are the first line of support.  
 
 ## Configuring the support experience
 
-In your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, the **Help and Support** page gives them access to resources that can help unblock them. You can customize the page to include the email address that your customers must use to contact you.
+In your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants, the **Help and Support** page gives them access to resources that can help unblock them. You can customize the page to include the email address that your customers must use to contact you.
 
 <!--Temporary setup-->
 To set up this support email address, run page *9165* in your customer's tenant, and then choose if you want to use the email that you are logged in with, or if you want to specify a different contact email address. For more information on how to run a page, see [Web Client URL](developer/devenv-web-client-urls.md).  
@@ -23,7 +23,7 @@ To set up this support email address, run page *9165* in your customer's tenant,
 
 ### On-premises deployments
 
-In on-premises deployments of [!INCLUDE[prodshort](includes/prodshort.md)], the **Help and Support** page does not contain the section for contacting technical support. Instead, you can enter an agreement with your customer's administrator about how and when to contact you.  
+In on-premises deployments of [!INCLUDE[prodshort](developer/includes/prodshort.md)], the **Help and Support** page does not contain the section for contacting technical support. Instead, you can enter an agreement with your customer's administrator about how and when to contact you.  
 
 There are two other links in the **Help and Support** page that you can customize:
 
@@ -34,7 +34,7 @@ There are two other links in the **Help and Support** page that you can customiz
 
 If you choose to not modify these settings, then the links go to Microsoft's blog and release notes.
 
-For more information, see [Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances](administration/configure-web-server.md).
+For more information, see [Configuring [!INCLUDE[webserver](developer/includes/webserver.md)] Instances](administration/configure-web-server.md).
 
 > [!NOTE]
 > The **Help and Support** page is available only in the browser.  
