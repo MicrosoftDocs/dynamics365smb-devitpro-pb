@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/15/2019
+ms.date: 03/12/2019
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -33,9 +33,7 @@ When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.
 
 As a [!INCLUDE[prodshort](includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, and you are the first line of support.  
 
-As the administrator, you have access to the [!INCLUDE[prodshort](includes/prodshort.md)] Administration center, where you can create a sandbox environment that can help troubleshoot any issues reported by your customers. For more information, see [The Business Central Administration Center](administration/tenant-admin-center.md).  
-
-<!-- TODO: How to manage your customers' support issues -->
+For more information, see [Technical Support](technical-support.md).  
 
 ### Get started with the "Ready to Go" program
 

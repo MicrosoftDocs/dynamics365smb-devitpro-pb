@@ -2,6 +2,7 @@
 ## [Frequently asked questions](faq.md)
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ## [Help and Support](help-and-support.md)
+### [Configuring technical support](technical-support.md)
 ### [User assistance model](user-assistance.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
 <!-- deployment-->
