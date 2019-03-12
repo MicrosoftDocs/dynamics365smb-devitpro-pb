@@ -131,7 +131,6 @@
 ### [Publish and Install an Extension V2](developer/devenv-how-publish-and-install-an-extension-v2.md)
 ## [Signing an App Package File](developer/devenv-sign-extension.md)
 ## [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-<!--## [Checklist for Submitting Your App](developer/devenv-checklist-submission.md)-->
 ## Extending the Base Application
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
