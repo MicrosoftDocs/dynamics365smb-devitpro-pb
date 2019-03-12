@@ -31,7 +31,7 @@ When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.
 
 ## Support
 
-As a [!INCLUDE[prodshort](includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, and you are the first line of support.  
+As a [!INCLUDE[prodshort](includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, and you are the first line of support. You can customize the support experience, and you have access to information that can help you troubleshoot any issues that your customers report.  
 
 For more information, see [Technical Support](technical-support.md).  
 
@@ -87,6 +87,7 @@ For more information, see [Take prospects and customers online](deployment/deplo
 
 ## See also
 
+[Technical Support](technical-support.md)  
 [Configuring the Help Experience](deployment/configure-help.md)  
 [Migrate Legacy Help](upgrade/migrate-help.md)  
 [The “Ready to Go” Program](developer/readiness/readiness-ready-to-go.md)  
