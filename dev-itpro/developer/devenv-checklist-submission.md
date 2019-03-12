@@ -9,7 +9,6 @@ ms.suite: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: rweigel
-redirect_url: readiness/readiness-checklist-technical
 ---
 
 # Technical Validation Checklist
