@@ -111,6 +111,7 @@
 ### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
 #### [The “Ready to Go” Online Learning Catalog](developer/readiness/readiness-learning-catalog.md)
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+#### [Technical Validation Checklist](developer/readiness/readiness-checklist-technical.md)
 ### Getting Started with AL for On-Premises
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
@@ -130,7 +131,7 @@
 ### [Publish and Install an Extension V2](developer/devenv-how-publish-and-install-an-extension-v2.md)
 ## [Signing an App Package File](developer/devenv-sign-extension.md)
 ## [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-## [Checklist for Submitting Your App](developer/devenv-checklist-submission.md)
+<!--## [Checklist for Submitting Your App](developer/devenv-checklist-submission.md)-->
 ## Extending the Base Application
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)

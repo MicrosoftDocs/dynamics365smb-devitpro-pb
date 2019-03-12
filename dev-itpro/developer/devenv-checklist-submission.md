@@ -3,12 +3,13 @@ title: "Checklist for Submitting Your App"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/05/2019
-ms.reviewer: na
+ms.date: 03/12/2019
+ms.reviewer: solsen
 ms.suite: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: rweigel
+redirect_url: readiness/readiness-checklist-technical
 ---
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
