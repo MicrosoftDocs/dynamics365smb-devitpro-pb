@@ -16,7 +16,7 @@ When developing an extension, you debug several times using the F5 shortcut key,
 ## How data synchronization works
 The data synchronization between each publish is controlled by the `schemaUpdateMode` setting, which is specified in the `launch.json` file. This setting consists of three options; **Synchronize**, **Recreate**, and **ForceSync**. 
 
-The default value for `schemaUpdateMode` is set to the **Synchronize** mode, which means that every time you publish an extension to the development server, the data you entered previously stays. If you do not want to synchronize the sample data with each publish, you can change the `schemaUpdateMode` setting from `Synchronize` to `Recreate` with the syntax shown in the example below.
+The default value for `schemaUpdateMode` is set to the **Synchronize** mode, which means that every time you publish an extension to the development server, the data you entered previously stays. If you do not want to synchronize the sample data with each publish, you can change the `schemaUpdateMode` setting from `Synchronize` to, for example, `Recreate` with the syntax shown in the example below.
 
 
 ```json
@@ -38,12 +38,13 @@ When you set the schema update mode to **Recreate**, all the tables and table ex
 ## ForceSync mode
 ForceSync is similar to the existing Synchronize schema update mode, but contains more freedom to make schema changes while retaining data. To enable this mode, set `schemaUpdateMode` to `"ForceSync"`and then set the `"version"` parameter in the app.json file to a fixed number. Data will be preserved in almost all cases with the exception of changing the main table's primary key, in which case the data from the extension tables will be lost. Field renames are allowed and supported in this mode, but the data can only be preserved if you maintain the same ID for the field. If you change both the name and the ID of the field then the data will be lost.
 
-> [!NOTE]
+> [!NOTE]  
 > This schema update mode is only meant for testing and development and should never be used in production.
 
 In addition to the `launch.json` file setting, the **ForceSync** switch is available through the PowerShell cmdlet `Sync-NavApp –Mode ForceSync`.
 
 ## Things to be aware of
+
 **Synchronize** is the default schema update mode for syncing the database and the extension. There are some key factors to consider when you work with the **Synchronize** mode.  
 
 - After publishing, the field data and the primary key information synchronizes with all the tables and the table extensions. This means that you can do additions easily, but not deletions. Breaking changes are never supported in synchronize mode. For example, you can add a field and sync that with the extension just by pressing the F5 shortcut key, but if a field is removed then the table data cannot be synchronized.
