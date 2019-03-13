@@ -107,6 +107,7 @@
 ### [AL Formatter](developer/devenv-al-formatter.md)
 ### [AL Outline View](developer/devenv-al-outline-view.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
+### [AL Code Actions](developer/devenv-code-actions.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
