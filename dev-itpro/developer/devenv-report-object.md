@@ -247,6 +247,7 @@ report 50103 "Customer List"
 
   labels
   {
+    LabelName = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
   }
 
   trigger OnPreReport();
