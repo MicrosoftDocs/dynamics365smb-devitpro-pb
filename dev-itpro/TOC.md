@@ -421,7 +421,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Report Properties](developer/properties/devenv-report-properties.md)  
 #### [XMLPort Properties](developer/properties/devenv-XMLPort-properties.md)  
 #### [Control Add-In Properties](developer/properties/devenv-control-addin-properties.md)
-#### [View Properties](developer/properties/devenv-filters-properties.md)
+#### [View Properties](developer/properties/devenv-views-properties.md)
 #### [Integrating with Dynamics 365 for Sales](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)  
 ### [Triggers](developer/triggers/devenv-triggers.md)
 #### [Table and Field Triggers](developer/triggers/devenv-table-and-field-triggers.md)
