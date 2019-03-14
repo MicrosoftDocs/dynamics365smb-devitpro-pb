@@ -159,6 +159,7 @@
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
+### [Views](developer/devenv-views.md)
 ### [API Page Type](developer/devenv-api-pagetype.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
@@ -427,6 +428,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Report Properties](developer/properties/devenv-report-properties.md)  
 #### [XMLPort Properties](developer/properties/devenv-XMLPort-properties.md)  
 #### [Control Add-In Properties](developer/properties/devenv-control-addin-properties.md)
+#### [View Properties](developer/properties/devenv-view-properties.md)
 #### [Integrating with Dynamics 365 for Sales](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)  
 ### [Triggers](developer/triggers/devenv-triggers.md)
 #### [Table and Field Triggers](developer/triggers/devenv-table-and-field-triggers.md)
