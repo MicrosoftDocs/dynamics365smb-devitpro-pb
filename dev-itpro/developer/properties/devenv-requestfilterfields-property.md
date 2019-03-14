@@ -1,7 +1,7 @@
 ---
 title: "RequestFilterFields Property"
 ms.custom: na
-ms.date: 03/04/2019
+ms.date: 03/14/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,12 +15,18 @@ Specifies which fields are automatically included on the tab of the request page
   
 ## Applies to  
   
-- Data items on reports.  
+- Data items on reports  
   
-- Table elements on XMLports.  
+- Table elements on XMLports
   
 ## Property Value
 A comma-separated list of field names.  
+
+## Example
+
+```
+RequestFilterFields="No.","Search Name","Customer Posting Group";
+```
   
 ## Remarks  
 A user can add other fields to the request page and set filters on these fields. We recommend that you use this property for common filter fields. If the source table of a report has many fields, then it is time-consuming for a user to add fields to the request page.  

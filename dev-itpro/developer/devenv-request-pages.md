@@ -34,6 +34,7 @@ The fields that you define as `RequestFilterFields` are shown on the request pag
 ```
 RequestFilterFields="No.","Search Name","Customer Posting Group";
 ```
+Set the `SaveValues` property to `true` in order to save the values that the end user enters 
 
 > [!NOTE]  
 > We recommend that you add fields that the end users of the report will frequently set filters on.
