@@ -29,11 +29,23 @@ In addition to specifying options and filters, users can choose from the followi
 
 ## Filtering on request pages
 
-The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end user can add more fields on which to filter to the request page. Defining the `RequestFilterFields` property in code is done as illustrated in the example below:
+The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end user can add more fields on which to filter to the request page. Defining the `RequestFilterFields` property in `dataitem()` part of the report code is done as illustrated in the example below:
 
 ```
-RequestFilterFields="No.","Search Name","Customer Posting Group";
+report 50103 "Customer List"
+{
+    CaptionML = ENU = 'Customer List';
+    RDLCLayout = 'Customer List Report.rdlc'; // if Word use WordLayout property
+    dataset
+    {
+        dataitem(Customer; Customer)
+        {
+            RequestFilterFields = "No.", "Search Name", "Customer Posting Group";
+...
 ```
+For more information about the report object, see [Report Object](devenv-report-object.md).
+
+Set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end user enters on the request page.
 
 > [!NOTE]  
 > We recommend that you add fields that the end users of the report will frequently set filters on.
