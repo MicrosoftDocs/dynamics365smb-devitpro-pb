@@ -43,9 +43,9 @@ report 50103 "Customer List"
             RequestFilterFields = "No.", "Search Name", "Customer Posting Group";
 ...
 ```
-For more information about the report object, see [Report Object](../devenv-report-object.md).
+For more information about the report object, see [Report Object](devenv-report-object.md).
 
-Set the [SaveValues](devenv-savevalues-property.md) property to `true` in order to save the values that the end user enters on the request page.
+Set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end user enters on the request page.
 
 > [!NOTE]  
 > We recommend that you add fields that the end users of the report will frequently set filters on.
