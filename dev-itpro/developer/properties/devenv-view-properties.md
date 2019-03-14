@@ -1,0 +1,29 @@
+---
+title: "View Properties"
+description: "This topic lists properties that apply to views."
+
+author: solsen
+ms.custom: na
+ms.date: 03/14/2019
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+ms.author: solsen
+---
+
+# Control Add-In Properties
+The following topic lists properties that apply to [Views](../devenv-views.md).
+
+- [Filters](devenv-filters-property.md)  
+- [OrderBy](devenv-orderby-property.md)
+
+## See also
+[Codeunit Properties](devenv-codeunit-properties.md)  
+[MenuSuite Properties](devenv-menusuite-properties.md)  
+[Page Properties](devenv-page-property-overview.md)  
+[Query Properties](devenv-query-properties.md)  
+[Report Properties](devenv-report-properties.md)  
+[Table Properties](devenv-table-properties.md)  
+[XMLPort Properties](devenv-xmlport-properties.md) 
