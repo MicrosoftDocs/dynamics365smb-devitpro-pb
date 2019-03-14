@@ -1,10 +1,10 @@
 ---
 title: "Request Pages"
-description: "Introducing request pages in Business Central."
+description: "Introducing how to work with request pages in Business Central."
 author: SusanneWindfeldPedersen
 
 ms.custom: na
-ms.date: 03/04/2019
+ms.date: 03/14/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -12,11 +12,7 @@ ms.author: solsen
 ---
 
 # Request Pages
-A request page is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for a report.
-
-You design the **Options** FastTab of a request page by using ...... <!-- Request Options Page Designer in the development environment. To access Request Options Page Designer, open Report Dataset Designer, choose View, and then choose Request Page. -->
-
-You design the filters on request pages by using the following report properties:
+A request page is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for a report. Request pages are defined as part of designing a [report object](devenv-report-object.md). The syntax is shown further down in this topic. You design the filters on request pages by using the following report properties:
 
 |Property|Description|
 |--------|-----------|
@@ -33,7 +29,7 @@ In addition to specifying options and filters, users can choose from the followi
 
 ## Filtering on request pages
 
-The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end user can add more fields on which to filter to the request page. For example:
+The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end user can add more fields on which to filter to the request page. Defining the `RequestFilterFields` property in code is done as illustrated in the example below:
 
 ```
 RequestFilterFields="No.","Search Name","Customer Posting Group";
@@ -54,3 +50,7 @@ In a complex report that uses data from several tables, the functionality may de
 [Report Object](devenv-report-object.md)  
 [Reports Overview](devenv-reports.md)  
 [Report Design Overview](devenv-report-design-overview.md)  
+[RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)|  
+[RequestFilterHeadingML Property](properties/devenv-requestfilterheadingml-property.md)  
+[RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)  
+[DataItemTableView](properties/devenv-dataitemtableview-property.md)  
