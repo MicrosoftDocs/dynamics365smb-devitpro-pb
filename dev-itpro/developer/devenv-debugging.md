@@ -74,7 +74,7 @@ The default value of the `breakOnRecordWrite` property is **false**, which means
 |F5           |Start debugging|
 |Ctrl+F5      |Start without debugging|
 |Shift+F5     |Stop debugging|
-|Ctrl+Shift+F5|Start debugging without publishing. Note that using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method “foo”, add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint will not be hit, or if it is hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
+|Ctrl+Shift+F5|Start debugging without publishing. Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method “foo”, add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint will not be hit, or if it is hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
 |F10          |Step over|
 |F11          |Step into|
 |Shift+F11    |Step out|
