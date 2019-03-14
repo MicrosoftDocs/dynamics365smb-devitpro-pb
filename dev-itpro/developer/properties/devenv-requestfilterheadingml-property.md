@@ -1,7 +1,7 @@
 ---
 title: "RequestFilterHeadingML Property"
 ms.custom: na
-ms.date:03/14/2019
+ms.date: 03/14/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,6 +22,11 @@ Sets the text used as a heading for a request page tab. If this property is set,
 - Data items on reports
 - Table elements on XMLports
   
+## Example
+```
+RequestFilterHeadingML = DAN='Kundeliste'; // Customer list
+```
+
 ## Remarks
 
 **RequestFilterHeadingML** is multilanguage-enabled. This means that it can contain a list of text in different languages. The text that is used will be selected according to the current language setting of the user. The **RequestFilterHeadingML** property has the following format.  
@@ -29,7 +34,7 @@ Sets the text used as a heading for a request page tab. If this property is set,
 <*Language ID*>=<*ReqFilterHeading*>  
   
 <*Language ID*> is a Windows standard three-letter language ID and <*ReqFilterHeading*> is the caption text for this language. Semicolons separate entries.  
-  
+
 You can enter values for the **RequestFilterHeadingML** property in the following ways:  
   
 - If you enter a **RequestFilterHeadingML**, this value will be inserted in **RequestFilterHeadingML** as the value for the language that is currently selected. If the language is set to Danish when a value is entered in **RequestFilterHeadingML**, **RequestFilterHeadingML** will be updated with a DAN=<*value*> string. You have to use the abbreviated name (DAN for Danish, for example) of the languages.  
