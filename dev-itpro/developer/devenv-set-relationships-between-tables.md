@@ -55,6 +55,25 @@ Advanced table relations are typically prefixed with a conditional statement and
    <DstFieldName>=CONST(<FieldConst>) |  
    <DstFieldName>=FILTER(<Filter>)  
 ```  
+
+For example:
+```
+table 50120 TableWithRelation
+{
+  fields
+  {
+    field(1; Id; Integer) { }
+    field(2; Type; enum TypeEnum) { }
+    field(3; Relation; Code[20])
+    {
+      TableRelation =
+        if (Type = const (Customer)) Customer
+        else if (Type = const (Item)) Item;
+    }
+  }
+}
+```
+
   
 The following table describes each of the symbols.  
   
