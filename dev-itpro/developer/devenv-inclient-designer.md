@@ -55,9 +55,9 @@ After you are done with the adjustments, finish up your design by choosing **Sto
 
 > [!NOTE]  
 > With this preview you can only add existing table fields. Adding pages, groups, parts, and actions is not yet supported.
-<!-- 
+
 ![Designer](../media/new-start-design.gif)
--->
+
 ## Drag-and-drop components
 
 In Designer, you design and modify the current page; you can add existing table fields, move fields around, or remove fields from the page. You can make changes to display the information by using drag-and-drop components. 
