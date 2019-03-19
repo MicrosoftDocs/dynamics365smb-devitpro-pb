@@ -328,7 +328,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
     The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable in [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] After an Upgrade](upgrade-pages-report-for-search.md).
 
-6. Upload the customer license to the converted database.  
+6. Build the object search index to make objects able to be searched from **Tell Me** in the client. If you completed step 5, you can skip this step.
+
+    In the **Tools** menu of the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)], select **Build Object Search Index**.
+
+7. Upload the customer license to the converted database.  
 
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
