@@ -362,7 +362,7 @@ It is a possibile for **Delegated Tenant Admin** to manage seaparately each appl
 ### Get List Of Manageable Applications
 Returns a list of manageable applications.
 
-```[200] GET /v1.2/admin/managableapplications```
+```[200] GET /v1.2/admin/manageableapplications```
 
 **Response:**  
 Returns a wrapped array of applications.
@@ -383,7 +383,7 @@ Pass application family name in the url and a boolean in the body
 - True - enables the access;
 - False - disables the access.
 
-```[200] PUT /v1.2/admin/managableapplications/{applicationFamily}```
+```[200] PUT /v1.2/admin/manageableapplications/{applicationFamily}```
 
 **Body**
 ```
