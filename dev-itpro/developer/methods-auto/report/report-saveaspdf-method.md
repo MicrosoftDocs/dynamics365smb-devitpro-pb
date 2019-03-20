@@ -2,7 +2,7 @@
 title: "SaveAsPdf Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,12 @@ author: solsen
 # SaveAsPdf Method
 Saves a report as a .pdf file.
 
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
+
 ## Syntax
 ```
-[Ok := ]  Report.SaveAsPdf(Number: Integer, FileName: String, [var Record: Table])
+[Ok := ]  Report.SaveAsPdf(Number: Integer, FileName: String, [var Record: Record])
 ```
 ## Parameters
 *Number*  
@@ -30,7 +33,7 @@ The ID of the report that you want to run.
 The path and name of the file that you want to save the report as.
         
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 Specifies which record to use in the report. Any filters that have been applied to the record that you specify will be used.  
 
 

@@ -10,7 +10,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
@@ -26,8 +25,8 @@ Here is a quick overview of capabilities in **Designer**:
 |Move components                    |fields, columns, cues, and parts |
 |Remove components                  |fields, columns, cues, and parts |
 |Set freeze pane and clear freeze pane |columns                       |
-|Adjust column width |columns                       |
-|Edit caption                       |fasttab, cards, factbox          |
+|Adjust column width                |columns                          |
+|Edit caption                       |fasttabs                         |
 |Save extension/download code       |general                          |
 |Preview design                     |general                          |
 

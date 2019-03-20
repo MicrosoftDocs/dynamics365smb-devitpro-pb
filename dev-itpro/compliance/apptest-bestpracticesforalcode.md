@@ -1,21 +1,21 @@
 ---
 title: "Best Practices for AL code"
 description: "Best Practices for writing AL code."
+
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 03/04/2019
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 # Best Practices for AL  
 This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additional to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
+
+> [!NOTE]  
+> If a best practice is not mentioned here, the PreCal rules listed [here](https://community.dynamics.com/nav/w/designpatterns/156.3-cal-coding-guidelines) apply.
 
 ## Extension structure 
 An extension is fully contained in a single folder. This folder often contains multiple files, such as app.json and launch.json files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.   
@@ -136,7 +136,10 @@ var
 ```
 
 ## Variable naming 
-All variables remain unchanged when they are named. This means that they can be named using Pascal case, temporary variables have the `Temp` prefix, and objects must include the object name in the name. 
+For variables they must:
+- Be named using PascalCase.
+- Have the `Temp` prefix if they are temporary variables.
+- Include the object name in the name (for objects).
 
 ### Example
 ```

@@ -3,7 +3,7 @@ title: "Debugging"
 description: "Overview of debugging in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/17/2019
+ms.date: 03/01/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -19,8 +19,10 @@ The process of finding and correcting errors is called *debugging*. With Visual 
 > For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging).
 
 > [!IMPORTANT]  
-> To enable debugging the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**.
-This requires a server restart.
+> To enable debugging the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
+
+> [!IMPORTANT]  
+> To use the development environment and debugger, you must make sure that port 7049 is available.
 
 There are a number of limitations to be aware of:
 
@@ -32,12 +34,12 @@ There are a number of limitations to be aware of:
 > To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  
 
 ## Breakpoints  
-The basic concept in debugging is the *breakpoint*, which is a mark that you set on a statement. When the program flow reaches the breakpoint, the debugger stops execution until you instruct it to continue. Without any breakpoints, the code runs without interruption when the debugger is active. You can set a breakpoint by using the Debug Menu in Visual Studio Code. For more information, see [Debugging Shortcuts](#debugging-shortcuts). 
+The basic concept in debugging is the *breakpoint*, which is a mark that you set on a statement. When the program flow reaches the breakpoint, the debugger stops execution until you instruct it to continue. Without any breakpoints, the code runs without interruption when the debugger is active. You can set a breakpoint by using the **Debug Menu** in Visual Studio Code. For more information, see [Debugging Shortcuts](#debugging-shortcuts). 
  
-Set breakpoints on the external code that is not part of your original project. You can step into the base application code by using the Go To Definition feature, and set breakpoints on the referenced code which is generally a `.dal` file. To set a breakpoint on the external code or base application code, you do the following: 
+Set breakpoints on the external code that is not part of your original project. You can step into the base application code by using the **Go To Definition** feature, and set breakpoints on the referenced code which is generally a `.dal` file. To set a breakpoint on the external code or base application code, you do the following: 
 
-- Use the Go To Definition feature which opens the “external file” and then a breakpoint could be set.  
-- Using the debugger, step into the code and set a breakpoint.
+- Use **Go To Definition** which opens the “external file” and then a breakpoint can be set.  
+- Using the debugger, step into the code, and then set a breakpoint.
 
 > [!NOTE]  
 > "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md).
@@ -46,7 +48,7 @@ In the following video illustration, the `Customer.dal` is an external file. A b
 
 ![Debugger](media/DebuggingAL.gif)
 
-For more information about the Go To Definition feature, see [AL Code Navigation](devenv-al-code-navigation.md). 
+For more information about **Go To Definition**, see [AL Code Navigation](devenv-al-code-navigation.md). 
 
 ## Break on Errors
 Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, then it stops execution both on errors that are handled in code and on unhandled errors. 
@@ -61,9 +63,9 @@ Specify if the debugger breaks on record changes by using the `breakOnRecordWrit
 
 |Record change|AL Methods|  
 |-------------------|---------------------|  
-|Create a new record|[INSERT Method \(Record\)](methods/devenv-insert-method-record.md)|  
-|Update an existing record|[MODIFY Method \(Record\)](methods/devenv-modify-method-record.md), [MODIFYALL Method \(Record\)](methods/devenv-modifyall-method-record.md), [RENAME Method \(Record\)](methods/devenv-rename-method-record.md)|  
-|Delete an existing record|[DELETE Method \(Record\)](methods/devenv-delete-method-record.md), [DELETEALL Method \(Record\)](methods/devenv-deleteall-method-record.md)|  
+|Create a new record|[INSERT Method (Record)](methods/devenv-insert-method-record.md)|  
+|Update an existing record|[MODIFY Method (Record)](methods/devenv-modify-method-record.md), [MODIFYALL Method (Record)](methods/devenv-modifyall-method-record.md), [RENAME Method (Record)](methods/devenv-rename-method-record.md)|  
+|Delete an existing record|[DELETE Method (Record)](methods/devenv-delete-method-record.md), [DELETEALL Method (Record)](methods/devenv-deleteall-method-record.md)|  
 
 
 The default value of the `breakOnRecordWrite` property is **false**, which means the debugger is not set to break on record changes by default. To break on record changes, you can set the `breakOnRecordWrite` property to **true** in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).

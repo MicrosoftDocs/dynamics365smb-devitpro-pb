@@ -46,6 +46,7 @@ The following table describes the settings in the ```app.json``` file:
 |target|No|By default this is `Extension`. For Dynamics NAV, you can set this to `Internal` to get access to otherwise restricted APIs and .NET Interop. The Dynamics NAV Server setting must then also be set to `Internal`.|
 |helpBaseUrl|No|The URL for the website that displays help for the current extension. The default URL is `https://docs.microsoft.com/{0}/dynamics365/business-central`.|
 |supportedLocales|No|The list of locales that are supported for looking up help. The value on the list is inserted into the URL defined in the `helpBaseUrl` property. The first locale on the list is default. An example is `"supportedLocales": ["da-DK", "en-US"]`.|
+|runtime|Yes|The version of the runtime that the project is targeting. The project can be published to the server with an earlier or the same runtime version. The available options are: `1.0` - Business Central Spring 2018 release, `2.2` - Business Central Fall 2018 release CU 2, and `3.0` - Business Central Spring 2019 release.|
 
 ## <a name="Launchjson"></a>Launch.json file
 
@@ -60,7 +61,7 @@ The following table describes the settings in the ```launch.json``` file. The `l
 |server|Yes|The HTTP URL of your server, for example: `"http://localhost|serverInstance"`|
 |port|No|The port assigned to the development service.|
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
-|authentication|Yes|Specifies the server authentication method. Currently, AAD authentication is supported only for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandboxes. AAD authentication cannot be used for on-premise servers.|
+|authentication|Yes|Specifies the server authentication method and can be set to `"UserPassword"`, `"Windows"`, or `"AAD"`. Currently, AAD authentication is supported only for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandboxes. AAD authentication cannot be used for on-premise servers.|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object. The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |schemaUpdateMode|No|Specifies the data synchronization mode when you publish an extension to the development server, for example: <br>`"schemaUpdateMode": "Synchronize Recreate"`</br> The default value is Synchronize. For more information, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  <br>[!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]  |

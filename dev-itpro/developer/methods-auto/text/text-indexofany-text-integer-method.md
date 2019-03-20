@@ -2,7 +2,7 @@
 title: "IndexOfAny Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IndexOfAny Method
 Reports the one-based index of the first occurrence of the specified string in this instance. The search starts at a specified character position.
+
 
 ## Syntax
 ```

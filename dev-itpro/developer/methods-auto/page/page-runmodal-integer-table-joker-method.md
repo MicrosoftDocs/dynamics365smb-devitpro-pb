@@ -2,7 +2,7 @@
 title: "RunModal Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # RunModal Method
 Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.
 
+
 ## Syntax
 ```
-[Action := ]  Page.RunModal(Number: Integer, [Record: Table], [Field: Any])
+[Action := ]  Page.RunModal(Number: Integer, [Record: Record], [Field: Any])
 ```
 ## Parameters
 *Number*  
@@ -26,7 +27,7 @@ Creates, opens, and closes a page that you specify. When a page is run modally, 
 The number of the page that you want to run.
         
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 By default, this method shows the record that was last displayed on the page. For each object, information is stored about the most recently shown record and the attached key and filters. Use this optional parameter to select a specific record to display on the page. The record must be of the same type as the table that is attached to the page. When the record is displayed, the key and filters that are attached to the record are used.
         
 *Field*  

@@ -2,7 +2,7 @@
 title: "Run Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # Run Method
 Loads and executes the XmlPort that you specify.
 
+
 ## Syntax
 ```
- Xmlport.Run(Number: Integer, [RequestWindow: Boolean], [Import: Boolean], [var Record: Table])
+ Xmlport.Run(Number: Integer, [RequestWindow: Boolean], [Import: Boolean], [var Record: Record])
 ```
 ## Parameters
 *Number*  
@@ -34,7 +35,7 @@ Specify true to show request page; specify false to run the report and skip the 
 Specifies whether the XMLPort imports or exports data. Specify true to run the XmlPort and import data; specify false to export data.This parameter is most relevant when the XmlPort does not use a request page and the Direction Property of the XmlPort is set to Both. In this instance, you use the parameter to specify the direction of the data. If the XmlPort uses a request page, then a direction option appears on the request page that enables the user can choose to import or export data. The Import parameter specifies the default value in the direction on option on the request page. If the Direction property is set to Import or Export, then you must set this parameter to match the direction that is set by the Direction property; otherwise, you will get an error at runtime. The default is true.
           
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The record to use in the XmlPort. The system will use any filters that are attached to the specified record.
           
 

@@ -1,19 +1,17 @@
 ---
-title: "Checklist for Submitting Your App"
+title: "Technical Validation Checklist"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/05/2019
-ms.reviewer: na
+ms.date: 03/12/2019
+ms.reviewer: solsen
 ms.suite: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: rweigel
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
-
-# Checklist for Submitting Your App
+# Technical Validation Checklist
 
 The following is a checklist of all requirements that you **must meet before submitting** an extension for validation. If you do not meet these mandatory requirements, your extension will fail validation. 
 

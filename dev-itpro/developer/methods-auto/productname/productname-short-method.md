@@ -2,7 +2,7 @@
 title: "Short Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 02/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Short Method
 SHORT returns a text string that contains the application's short name.
+
 
 ## Syntax
 ```

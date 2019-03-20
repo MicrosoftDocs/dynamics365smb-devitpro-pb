@@ -22,6 +22,7 @@
 #### [Ecosystem Features](deployment/embed-app-ecosystem.md)  
 ## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
+### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -51,6 +52,7 @@
 ## Online
 ### [Administration Center](administration/tenant-admin-center.md)
 ### [Administration Center API](administration/administration-center-api.md)
+### [Tenant Administration](administration/tenant-administration.md)
 ### Automation
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
@@ -109,6 +111,8 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
 #### [The “Ready to Go” Online Learning Catalog](developer/readiness/readiness-learning-catalog.md)
+#### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+#### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 ### Getting Started with AL for On-Premises
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
@@ -128,7 +132,6 @@
 ### [Publish and Install an Extension V2](developer/devenv-how-publish-and-install-an-extension-v2.md)
 ## [Signing an App Package File](developer/devenv-sign-extension.md)
 ## [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-## [Checklist for Submitting Your App](developer/devenv-checklist-submission.md)
 ## Extending the Base Application
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
@@ -145,6 +148,7 @@
 ### [Table Extension Object](developer/devenv-table-ext-object.md)
 ### [Setting Relationships Between Tables](developer/devenv-set-relationships-between-tables.md)
 ### [View Table Data](developer/devenv-view-table-data.md)
+### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
@@ -361,6 +365,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Page Data Type](developer/methods-auto/page/page-data-type.md)
 #### [ProductName Data Type](developer/methods-auto/productname/productname-data-type.md)
 #### [Query Data Type](developer/methods-auto/query/query-data-type.md)
+#### [Record Data Type](developer/methods-auto/record/record-data-type.md)
 #### [RecordID Data Type](developer/methods-auto/recordid/recordid-data-type.md)
 #### [RecordRef Data Type](developer/methods-auto/recordref/recordref-data-type.md)
 #### [Report Data Type](developer/methods-auto/report/report-data-type.md)
@@ -371,7 +376,6 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [SessionSettings Data Type](developer/methods-auto/sessionsettings/sessionsettings-data-type.md)
 #### [String Data Type](developer/methods-auto/string/string-data-type.md)
 #### [System Data Type](developer/methods-auto/system/system-data-type.md)
-#### [Table Data Type](developer/methods-auto/table/table-data-type.md)
 #### [TableConnectionType Option Type](developer/methods-auto/tableconnectiontype/tableconnectiontype-option.md)
 #### [TaskScheduler Data Type](developer/methods-auto/taskscheduler/taskscheduler-data-type.md)
 #### [TestAction Data Type](developer/methods-auto/testaction/testaction-data-type.md)
@@ -494,6 +498,19 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 <!-- end security -->
 <!-- upgrade -->
 # [Upgrade](upgrade/upgrading-to-business-central.md)
+## [Online](upgrade/upgrading-to-business-central-online.md)
+### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## [On-Premises](upgrade/upgrading-to-business-central-on-premises.md)
+### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
+### [Technical Upgrade](upgrade/Converting-a-Database.md)
+#### [Quick Reference](upgrade/technical-upgrade-checklist.md)
+### [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
+### [Upgrading the Data: Single-Tenant Mode](upgrade/Upgrading-the-Data.md)
+#### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
+### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
+#### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
 ## [Before You Upgrade](upgrade/Upgrade-Considerations.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
@@ -506,14 +523,6 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
 ### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
-## [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
-## [Technical Upgrade](upgrade/Converting-a-Database.md)
-### [Quick Reference](upgrade/technical-upgrade-checklist.md)
-## [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
-## [Upgrading the Data: Single-Tenant Mode](upgrade/Upgrading-the-Data.md)
-### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
-## [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
-### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
