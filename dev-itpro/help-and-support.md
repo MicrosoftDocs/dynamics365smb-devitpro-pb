@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/15/2019
+ms.date: 03/12/2019
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -31,11 +31,9 @@ When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.
 
 ## Support
 
-As a [!INCLUDE[prodshort](includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, and you are the first line of support.  
+As a [!INCLUDE[prodshort](includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, and you are the first line of support. You can customize the support experience, and you have access to information that can help you troubleshoot any issues that your customers report.  
 
-As the administrator, you have access to the [!INCLUDE[prodshort](includes/prodshort.md)] Administration center, where you can create a sandbox environment that can help troubleshoot any issues reported by your customers. For more information, see [The Business Central Administration Center](administration/tenant-admin-center.md).  
-
-<!-- TODO: How to manage your customers' support issues -->
+For more information, see [Technical Support](technical-support.md).  
 
 ### Get started with the "Ready to Go" program
 
@@ -89,6 +87,7 @@ For more information, see [Take prospects and customers online](deployment/deplo
 
 ## See also
 
+[Technical Support](technical-support.md)  
 [Configuring the Help Experience](deployment/configure-help.md)  
 [Migrate Legacy Help](upgrade/migrate-help.md)  
 [The “Ready to Go” Program](developer/readiness/readiness-ready-to-go.md)  

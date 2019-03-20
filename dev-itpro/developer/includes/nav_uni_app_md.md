@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Universal App
+Business Central Universal App

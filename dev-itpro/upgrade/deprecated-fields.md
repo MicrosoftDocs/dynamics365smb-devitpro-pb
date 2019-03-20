@@ -27,6 +27,201 @@ Deprecated fields fall into one of the following groups:
 
     Partner impact: Refactor your code as soon as possible.  
 
+## Fields marked as ObsoleteState:Pending in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+A number of fields are marked as ObsoleteState:Pending. There is no impact on code in this release.  
+
+### Austria
+The following fields are marked as ObsoleteState:Pending in the AT version.
+
+|Table ID|Table Name|Field ID|Field Name|Comments|
+|--------|--------|--------|--------|--------|
+|98|General Ledger Setup|11011|Sales VAT Advance Notif. Nos.|Will be removed in a later release.|
+|242|Source Code Setup|5005350|Phys. Invt. Order|Will be removed in a later release.|
+|257|VAT Statement Name|11000|Sales VAT Adv. Notification|Will be removed in a later release.|
+|313|Inventory Setup|5005350|Phys. Inv. Order Nos.|Will be removed in a later release.|
+|313|Inventory Setup|5005352|Posted Phys. Inv. Order Nos.|Will be removed in a later release.|
+|11011|Sales VAT Advance Notification|All|All|Will be removed in a later release.|
+|11012|Transmission Log Entry|All|All|Will be removed in a later release.|
+|11013|Electronic VAT Decl. Setup|All|All|Will be removed in a later release.|
+|11014|Certificate|All|All|Will be removed in a later release.|
+|5005350|Phys. Inventory Order Header|All|All|Will be removed in a later release.|
+|5005351|Phys. Inventory Order Line|All|All|Will be removed in a later release.|
+|5005352|Phys. Invt. Recording Header|All|All|Will be removed in a later release.|
+|5005353|Phys. Invt. Recording Line|All|All|Will be removed in a later release.|
+|5005354|Post. Phys. Invt. Order Header|All|All|Will be removed in a later release.|
+|5005355|Posted Phys. Invt. Order Line|All|All|Will be removed in a later release.|
+|5005356|Posted Phys. Invt. Rec. Header|All|All|Will be removed in a later release.|
+|5005357|Posted Phys. Invt. Rec. Line|All|All|Will be removed in a later release.|
+|5005358|Phys. Inventory Comment Line|All|All|Will be removed in a later release.|
+|5005359|Posted Phys. Invt. Track. Line|All|All|Will be removed in a later release.|
+|5005360|Phys. Invt. Tracking Buffer|All|All|Will be removed in a later release.|
+|5005361|Expect. Phys. Inv. Track. Line|All|All|Will be removed in a later release.|
+|5005362|Post. Exp. Ph. In. Track. Line|All|All|Will be removed in a later release.|
+
+### Belgium
+The following fields are marked as ObsoleteState:Pending in the BE version.
+
+|Table ID|Table Name|Field ID|Field Name|Comments|
+|--------|--------|--------|--------|--------|
+|4|Currency|2000000|ISO Currency Code|Will be removed in a later release.|
+|9|Country/Region|2000000|ISO Country/Region Code|Will be removed in a later release.|
+|11306|Electronic Banking Setup|22|Notification E-mail address|Will be removed in a later release.|
+|11306|Electronic Banking Setup|23|Language|Will be removed in a later release.|
+|11306|Electronic Banking Setup|31|IBS Service Version|Will be removed in a later release.|
+|11306|Electronic Banking Setup|21|IBS Version|Will be removed in a later release.|
+|11306|Electronic Banking Setup|24|Upload Integration Mode|Will be removed in a later release.|
+|11306|Electronic Banking Setup|29|IBS Log Download Nos.|Will be removed in a later release.|
+|11306|Electronic Banking Setup|40|Test Environment|Will be removed in a later release.|
+|11306|Electronic Banking Setup|30|IBS Request ID|Will be removed in a later release.|
+|11306|Electronic Banking Setup|28|IBS Log Upload Nos.|Will be removed in a later release.|
+|11306|Electronic Banking Setup|25|Upload Path|Will be removed in a later release.|
+|11306|Electronic Banking Setup|26|Download Integration Mode|Will be removed in a later release.|
+|11306|Electronic Banking Setup|27|Download Path|Will be removed in a later release.|
+|2000010|IBS Log|All|All|Will be removed in a later release.|
+|2000011|IBS Contract|All|All|Will be removed in a later release.|
+|2000012|IBS Account|All|All|Will be removed in a later release.|
+|2000013|IBS Account Conflict|All|All|Will be removed in a later release.|
+
+### Canada
+The following fields are marked as ObsoleteState:Pending in the CA version.
+
+|Table ID|Table Name|Field ID|Field Name|Comments|
+|--------|--------|--------|--------|--------|
+|98|General Ledger Setup|10004|SAT Certificate Thumbprint|Will be removed in a later release.|
+|10000|PAC Web Service|22|Certificate Thumbprint|Will be removed in a later release.|
+
+### Germany
+The following fields are marked as ObsoleteState:Pending in the DE version.
+
+|Table ID|Table Name|Field ID|Field Name|Comments|
+|--------|--------|--------|--------|--------|
+|98|General Ledger Setup|11011|Sales VAT Advance Notif. Nos.|Will be removed in a later release.|
+|242|Source Code Setup|5005350|Phys. Invt. Order|Will be removed in a later release.|
+|257|VAT Statement Name|11000|Sales VAT Adv. Notification|Will be removed in a later release.|
+|313|Inventory Setup|5005352|Posted Phys. Inv. Order Nos.|Will be removed in a later release.|
+|313|Inventory Setup|5005350|Phys. Inv. Order Nos.|Will be removed in a later release.|
+|11011|Sales VAT Advance Notification|All|All|Will be removed in a later release.|
+|11012|Transmission Log Entry|All|All|Will be removed in a later release.|
+|11013|Electronic VAT Decl. Setup|All|All|Will be removed in a later release.|
+|11014|Certificate|All|All|Will be removed in a later release.|
+|5005350|Phys. Inventory Order Header|All|All|Will be removed in a later release.|
+|5005351|Phys. Inventory Order Line|All|All|Will be removed in a later release.|
+|5005352|Phys. Invt. Recording Header|All|All|Will be removed in a later release.|
+|5005353|Phys. Invt. Recording Line|All|All|Will be removed in a later release.|
+|5005354|Post. Phys. Invt. Order Header|All|All|Will be removed in a later release.|
+|5005355|Posted Phys. Invt. Order Line|All|All|Will be removed in a later release.|
+|5005356|Posted Phys. Invt. Rec. Header|All|All|Will be removed in a later release.|
+|5005357|Posted Phys. Invt. Rec. Line|All|All|Will be removed in a later release.|
+|5005358|Phys. Inventory Comment Line|All|All|Will be removed in a later release.|
+|5005359|Posted Phys. Invt. Track. Line|All|All|Will be removed in a later release.|
+|5005360|Phys. Invt. Tracking Buffer|All|All|Will be removed in a later release.|
+|5005361|Expect. Phys. Inv. Track. Line|All|All|Will be removed in a later release.|
+|5005362|Post. Exp. Ph. In. Track. Line|All|All|Will be removed in a later release.|
+
+### Mexico
+The following fields are marked as ObsoleteState:Pending in the MX version.
+
+|Table ID|Table Name|Field ID|Field Name|Comments|
+|--------|--------|--------|--------|--------|
+|98|General Ledger Setup|10004|SAT Certificate Thumbprint|Will be removed in a later release.|
+|10000|PAC Web Service|22|Certificate Thumbprint|Will be removed in a later release.|
+
+### Netherlands
+The following fields are marked as ObsoleteState:Pending in the NL version.
+
+|Table ID|Table Name|Field ID|Field Name|Comments|
+|--------|--------|--------|--------|--------|
+|312|Purchases & Payables Setup|11312|Show Totals on Purch. Inv./CM.|Will be removed in a later release.|
+
+### Spain
+The following fields are marked as ObsoleteState:Pending in the ES version.
+
+|Table ID|Table Name|Field ID|Field Name|Comments|
+|--------|--------|--------|--------|--------|
+|10751|SII Setup|9|IntracommunityEndpointUrl|Will be removed in a later release.|
+
+### Switzerland
+The following fields are marked as ObsoleteState:Pending in the CH version.
+
+|Table ID|Table Name|Field ID|Field Name|Comments|
+|--------|--------|--------|--------|--------|
+|4|Currency|3010541|ISO Currency Code|Will be removed in a later release.|
+|98|General Ledger Setup|11011|Sales VAT Advance Notif. Nos.|Will be removed in a later release.|
+|98|General Ledger Setup|11011|Sales VAT Advance Notif. Nos.|Will be removed in a later release.|
+|98|General Ledger Setup|11004|Post Pmt.Disc Tol. to Pmt.Disc|Will be removed in a later release.|
+|242|Source Code Setup|5005350|Phys. Invt. Order|Will be removed in a later release.|
+|257|VAT Statement Name|11000|Sales VAT Adv. Notification|Will be removed in a later release.|
+|311|Sales & Receivables Setup|11501|Line Amt. Round LCY|Will be removed in a later release.|
+|313|Inventory Setup|5005350|Phys. Inv. Order Nos.|Will be removed in a later release.|
+|313|Inventory Setup|5005352|Posted Phys. Inv. Order Nos.|Will be removed in a later release.|
+|11011|Sales VAT Advance Notification|All|All|Will be removed in a later release.|
+|11012|Transmission Log Entry|All|All|Will be removed in a later release.|
+|11013|Electronic VAT Decl. Setup|All|All|Will be removed in a later release.|
+|11014|Certificate|All|All|Will be removed in a later release.|
+|5005350|Phys. Inventory Order Header|All|All|Will be removed in a later release.|
+|5005351|Phys. Inventory Order Line|All|All|Will be removed in a later release.|
+|5005352|Phys. Invt. Recording Header|All|All|Will be removed in a later release.|
+|5005353|Phys. Invt. Recording Line|All|All|Will be removed in a later release.|
+|5005354|Post. Phys. Invt. Order Header|All|All|Will be removed in a later release.|
+|5005355|Posted Phys. Invt. Order Line|All|All|Will be removed in a later release.|
+|5005356|Posted Phys. Invt. Rec. Header|All|All|Will be removed in a later release.|
+|5005357|Posted Phys. Invt. Rec. Line|All|All|Will be removed in a later release.|
+|5005358|Phys. Inventory Comment Line|All|All|Will be removed in a later release.|
+|5005359|Posted Phys. Invt. Track. Line|All|All|Will be removed in a later release.|
+|5005360|Phys. Invt. Tracking Buffer|All|All|Will be removed in a later release.|
+|5005361|Expect. Phys. Inv. Track. Line|All|All|Will be removed in a later release.|
+|5005362|Post. Exp. Ph. In. Track. Line|All|All|Will be removed in a later release.|
+
+### United Kingdom
+The following fields are marked as ObsoleteState:Pending in the GB version.
+
+|Table ID|Table Name|Field ID|Field Name|Comments|
+|--------|--------|--------|--------|--------|
+|10533|MTD-Liability|All|All|Will be removed in a later release.|
+|10534|MTD-Payment|All|All|Will be removed in a later release.|
+|10535|MTD-Return Details|All|All|Will be removed in a later release.|
+
+### United States
+The following fields are marked as ObsoleteState:Pending in the US version.
+
+|Table ID|Table Name|Field ID|Field Name|Comments|
+|--------|--------|--------|--------|--------|
+|98|General Ledger Setup|10004|SAT Certificate Thumbprint|Will be removed in a later release.|
+|10000|PAC Web Service|22|Certificate Thumbprint|Will be removed in a later release.|
+
+## Fields no longer in use in Microsoft code in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+A number of fields that are related to pictures are no longer in use, because the pictures are now stored in Image fields that are of Media type, in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The fields are marked as ObsoleteState:Pending.  
+
+|Table ID|Field ID|Comments|
+|--------|--------|--------|
+|18|Customer|89|Picture|Will be removed in a later release.|
+|23|Vendor|89|Picture|Will be removed in a later release.|
+|130|Incoming Document|20|URL2|Will be removed in a later release.|
+|130|Incoming Document|21|URL3|Will be removed in a later release.|
+|130|Incoming Document|22|URL4|Will be removed in a later release.|
+|156|Resource|52|Picture|Will be removed in a later release.|
+|167|Job|57|Picture|Will be removed in a later release.|
+|270|Bank Account|89|Picture|Will be removed in a later release.|
+|5050|Contact|89|Picture|Will be removed in a later release.|
+|5200|Employee|19|Picture|Will be removed in a later release.|
+|5600|Fixed Asset|22|Picture|Will be removed in a later release.|
+
+For more information about Media Data Type, see [Media Data Type](/dev-itpro/developer/methods-auto/media/media-data-type.md) documentation.
+
+A field that is related to VAT Registration Number validation is no longer in use, because the feature was replaced EU VAT Registration No. Validation Service Setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The field is marked as ObsoleteState:Pending. 
+
+|Table ID|Field ID|Comments|
+|--------|--------|--------|
+|98|General Ledger Setup|161|VAT Reg. No. Validation URL|Will be removed in a later release.|
+
+For more information about validation of VAT Registration Numbers, see [Setting Up Calculations and Posting Methods for Value-Added Tax ](/dynamics365/business-central/finance-setup-vat#to-verify-vat-registration-numbers) documentation. 
+
+A flow field that was used to calculate Balance in My Account page is no longer in use in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and has been replaced with Account Balance field to improve performance. The field is marked as ObsoleteState:Pending. 
+
+|Table ID|Field ID|Comments|
+|--------|--------|--------|
+|9153|My Account|4|Balance|Will be removed in a later release.|
+
 ## Fields moved to an extension by Microsoft in [!INCLUDE[nav2018](../developer/includes/nav2018_md.md)]
 A number of fields have been moved from the base application to an extension.
 

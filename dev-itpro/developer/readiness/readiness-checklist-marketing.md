@@ -1,13 +1,13 @@
 ---
 title: "Marketing Validation Checklist"
 description: "The marketing checklist for Business Central apps"
-author: SusanneWindfeldPedersen
+author: v-liober
 ms.custom: na
 ms.date: 02/27/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: v-liober
 ---
 
 # Why marketing validation is mandatory
@@ -23,6 +23,8 @@ are live, if some of the content in their storefront details needs to be edited
 – in this case they need to be resubmitted for marketing validation as well.
 Consequently, to be published on AppSource all listings need to pass the
 marketing validation.
+
+> [!VIDEO https://www.youtube.com/embed/Z9rRz0l0Guc]
 
 ## Marketing Checklist for Showcasing Your App
 
@@ -74,7 +76,7 @@ The image below is an example of what an offering looks like on AppSource, when 
 ![StoreFront Details](../media/storefront.jpg)
 
 
-### <a name="LanguageBranding"></a>Language & Branding Requirements 
+## <a name="LanguageBranding"></a>Language & Branding Requirements 
 
 | General requirements      | Description                 | Requirements |
 |---------------------------|-----------------------------|--------------|
@@ -110,7 +112,7 @@ The image below is an example of what an offering looks like on AppSource, when 
 > [!NOTE]  
 > All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, Business Central, D365 or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.
 
-### <a name="OfferSummary"></a>Offer Name and Offer Summary
+## <a name="OfferSummary"></a>Offer Name and Offer Summary
 
 | General requirements | Description |Requirements |
 |----------------------|-------------|-------------|
@@ -143,7 +145,7 @@ The image below is an example of what an offering looks like on AppSource, when 
 |  | Does it limit us in any way? How easily will it translate into other languages/cultures?
 |  | Is it too much like another product and will it cause market confusion?
 
-#### Offer details
+## Offer details
 
 | Offer Details  | Description | Requirements |
 |----------------|-------------|--------------|
@@ -160,7 +162,7 @@ The image below is an example of what an offering looks like on AppSource, when 
 > *Example:* *Use reliable forecasting to help ensure that you always have the items your
 customers want.*
 
-### <a name="OfferDescription"></a>Offer Description 
+## <a name="OfferDescription"></a>Offer Description 
 
 | Offer Details  | Description| Requirements |
 |----------------|------------|--------------|
@@ -324,7 +326,7 @@ and the html tags used:
  \<h2\>\<em\>Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?\</em\>\</h2\> \<p\>Managing inventory is a delicate balancing act. Carry too little and you lose orders (and customers). Carry too much and you tie up much needed working capital. Carry far too much and you end up discounting, or worse, writing off obsolete products.\</p\> \<p\>Our app uses Cortana Intelligence to analyze historical data to predict future demand, so you can base procurement decisions on accurate and reliable forecasts, and help your company avoid lost revenue, optimize shipping costs, discover trends and boost your brand reputation by always delivering on orders.\</p\> \<p\>Stop relying on basic spreadsheets that take hours of valuable time to complete. Turn anxiety into proactive control and manage this critical business process in minutes by using Microsoft Sales and Inventory Forecast app.\</p\> \<h3\>\<strong\>Features and benefits of using this app\</strong\>\</h3\> \<ul\> \<li\>Free up cash\</li\> \<li\>Know exactly when to replenish stock\</li\> \<li\>Always have inventory on hand to satisfy every customer order\</li\> \</ul\> \<p\>\&nbsp;\</p\> \<p\>Click the \<strong\>Get it now\</strong\> button and start aligning your inventory replenishment with your customer demand. Your customers and sales team will love you for it.\</p\> \<h3\>\<strong\>Supported editions:\</strong\>\</h3\> \<p\>This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.\</p\> \<p\> \<h3\>\<strong\>Supported countries:\</strong\>\</h3\> \<p\>Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Italy, Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States\</p\> \</p\>
 
 
-### <a name="CountriesLanguagesApp"></a>Supported Countries, Languages, App Version, App Release Date
+## <a name="CountriesLanguagesApp"></a>Supported Countries, Languages, App Version, App Release Date
 
 | Listing details                | Description                                              | Requirements |
 |--------------------------------|----------------------------------------------------------|--------------|
@@ -335,7 +337,7 @@ and the html tags used:
 | 9. **App version**                 | Enter the latest version number of your offer *Example:* *2.0.22794.0*  | Recommended  |
 | 10. **App release date** | Enter the date (dd/mm/yyyy) when you expect your app to be released or leave this field blank. | Recommended  |
 
-### <a name="Marketing"></a>Marketing Artifacts - Logo, Videos, Screenshots, Documents
+## <a name="Marketing"></a>Marketing Artifacts - Logo, Videos, Screenshots, Documents
 
 | Marketing artifacts                                                | Description                                | Requirements |
 |--------------------------------------------------------------------|--------------------------------------------|--------------|
@@ -449,7 +451,7 @@ and the html tags used:
 >   *Example:* of the completed screenshot fields (cf. point 17) in the “Marketing
 artifacts” section of the Cloud partner portal:
 
-### <a name="Industries"></a>Industries, Categories, App Type
+## <a name="Industries"></a>Industries, Categories, App Type
 
 | Listing details | Description | Requirements |
 |-----------------|--------------|-------------|
@@ -469,7 +471,7 @@ artifacts” section of the Cloud partner portal:
 > [!NOTE] 
 >   We recommend that you link to both this button and your offer’s unique app landing page in the “Closing call to action” (cf. point 3.E) of your app description. *Example: Free*
 
-### <a name="SupportedProd"></a>Supported Products, Keywords, Hide Key
+## <a name="SupportedProd"></a>Supported Products, Keywords, Hide Key
 
 | Listing details   | Description | Requirements |
 |-------------------|-------------|--------------|
@@ -486,7 +488,7 @@ artifacts” section of the Cloud partner portal:
 search keywords and hide key fields (cf. point 10,11,12 and 13) in the “Listing
 details” section of the Cloud partner portal:
 
-### <a name="HelpSupport"></a>Help & Customer Support
+## <a name="HelpSupport"></a>Help & Customer Support
 
 | Listing details | Description | Requirements |
 |-----------------|-------------|--------------|
@@ -533,7 +535,7 @@ details” section of the Cloud partner portal:
 >   *Example:* of the completed screenshot fields (cf. point 20) in the “Customer
 Support” section of the Cloud partner portal:
 
-### <a name="Privacy"></a>Privacy Policy, Terms of Use
+## <a name="Privacy"></a>Privacy Policy, Terms of Use
 
 | Legal                                | Description | Requirements |
 |--------------------------------------|-------------|--------------|
@@ -561,7 +563,7 @@ Support” section of the Cloud partner portal:
 > [!TIP]
 >   *Example:* of the completed screenshot fields (cf. point 18 and 19) in the “Legal” section of the Cloud partner portal)
 
-### Lead Management
+## Lead Management
 
 | Lead Management      | Description  | Requirements |
 |----------------------|--------------|--------------|
