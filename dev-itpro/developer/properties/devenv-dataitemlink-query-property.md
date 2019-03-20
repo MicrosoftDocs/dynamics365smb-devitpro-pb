@@ -18,22 +18,22 @@ Sets a reference between one or more fields of the data item table and data item
   
 ## Applies To  
   
--   Query data items  
+- Query data items  
   
 ## Property Value  
  **Field**=**Table**.**ReferenceField**  
   
--   **Field** is the name of the field in the table of the lower data item.  
+- **Field** is the name of the field in the table of the lower data item.  
   
--   **Table** is the name of the table of the upper data item.  
+- **Table** is the name of the table of the upper data item.  
   
--   **ReferenceField** is the name of the field in the table of the upper data item.  
+- **ReferenceField** is the name of the field in the table of the upper data item.  
   
 > [!NOTE]  
->  You can link to more than one column. Separate multiple column links with a comma.  
+> You can link to more than one column. Separate multiple column links with a comma.
   
 ## Remarks  
- The DataItemLink property works together with the DataItemLinkType property to combine records from tables into a dataset. The DataItemLink property sets up "equal to" (=) comparison between two fields of the data item tables. When the query is run, the query compares each row of the two data items to find records that having matching values for the fields. Records that have a matching field values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the [DataItemLinkType Property](devenv-dataitemlink-type-property.md) to include records that do not have matching values. <!-- For more information about data item links, see [Understanding Data Item Links](Understanding-Data-Item-Links.md).  -->
+The DataItemLink property works together with the DataItemLinkType property to combine records from tables into a dataset. The DataItemLink property sets up "equal to" (=) comparison between two fields of the data item tables. When the query is run, the query compares each row of the two data items to find records that having matching values for the fields. Records that have a matching field values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the [DataItemLinkType Property](devenv-dataitemlink-type-property.md) to include records that do not have matching values. <!-- For more information about data item links, see [Understanding Data Item Links](Understanding-Data-Item-Links.md).  -->
   
  When setting up a data item link between two data items, you always set up the DataItemLinkType property on the lower data item in Query Designer. To set the DataItemLink property, you can choose the **AssistButton** to select the fields from field name lookups to data item tables or you can type the syntax directly in the **Value** column.  
   

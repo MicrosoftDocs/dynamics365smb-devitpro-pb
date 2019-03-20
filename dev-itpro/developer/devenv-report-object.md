@@ -224,11 +224,7 @@ report 50103 "Customer List"
           CustAddr,Name,"Name 2",'',Address,"Address 2",
           City,"Post Code",County,"Country/Region Code");
       end;
-
-      trigger OnPreDataItem();
-      begin
-        CurrReport.CREATETOTALS("Balance (LCY)");
-      end;
+     
     }
   }
 
@@ -247,7 +243,7 @@ report 50103 "Customer List"
 
   labels
   {
-    LabelName = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
+      LabelName = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
   }
 
   trigger OnPreReport();

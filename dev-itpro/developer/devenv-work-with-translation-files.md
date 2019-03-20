@@ -9,13 +9,11 @@ ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
-
 # Working with Translation Files
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multilanguage enabled, which means that you can display the user interface (UI) in different languages. To add a new language to the extension you have built, you must first enable the generation of XLIFF files. The XLIFF file extension is .xlf. The generated XLIFF file contains the strings that are specified in properties such as **Caption** and **Tooltip**.
 
-> [!NOTE] 
-> The support for using the ML properties, such as **CaptionML** and **TooltipML**, is being deprecated, so it is recommended to refactor your extension to use the corresponding property, such as **Caption** or **Tooltip**, which is being picked up in the .xlf file.
+> [!NOTE]  
+> To submit an app to AppSource, you must use .xliff translation files.
 
 > [!IMPORTANT]
 > You can use the .xlf translation files approach only for objects from your extension. For translating the base application you still need to use the .txt files approach. For more information, see the **Translation and Localization apps** section below.

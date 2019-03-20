@@ -9,9 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 [!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
@@ -19,15 +17,15 @@ caps.latest.revision: 18
 # Report Design Overview
 A report is composed of the following items:  
 
--   A report object
+- A report object
 
--   A report dataset
+- A report dataset
 
--   A report layout
+- A report layout
 
--   A request page
+- A request page
 
--   Properties, triggers, and code 
+- Properties, triggers, and code 
 
 You design a report by first defining the dataset, and then designing the visual layout.  
 
