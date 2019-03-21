@@ -13,6 +13,7 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
+<!--This topic is deprected, see redirection URL-->
 
 # ReadAs Method
 Reads the content into the provided text.
