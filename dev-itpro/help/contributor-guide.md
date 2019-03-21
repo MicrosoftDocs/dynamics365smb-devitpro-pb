@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 03/08/2019
+ms.date: 03/21/2019
 ms.author: edupont
 ---
 
@@ -25,29 +25,35 @@ For guidance about extending and customizing the Microsoft-provided content for 
 
 ### Get started with GitHub
 
-1. Fork this repo
+1. Fork the right repo
 
-    You cannot work directly in the dynamics365smb-docs repo, so the first thing you need to do is create a fork of the repo under your GitHub account. A fork basically is copy of this repo that lets you work freely on the content without affecting the dynamics365smb-docs repo. For more information, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
+    You cannot work directly in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo, so the first thing you need to do is create a fork of the repo under your GitHub account. A fork basically is copy of this repo that lets you work freely on the content without affecting the dynamics365smb-docs repo. For more information, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
-2.  Install GitHub Desktop (optional) and clone your forked repo.
+2. Install GitHub Desktop (optional) and clone your forked repo.
 
-    GitHub Desktop makes is easy to work and collaborate with repos locally from your own desktop. For more information, see [GitHub Desktop](https://desktop.github.com/).   
+    GitHub Desktop makes is easy to work and collaborate with repos locally from your own desktop. For more information, see [GitHub Desktop](https://desktop.github.com/).  
 
-2. Get hold of your favorite MarkDown editor, and start making changes.
+3. Get hold of your favorite MarkDown editor, and start making changes.
 
-    The help content is stored in the articles folder of the repo. Articles use a syntax for formatting text called GitHub Flavored Markdown. To learn more about working with markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
+    The help content is stored in the *business-central* folder of the repo. Articles use a syntax for formatting text called GitHub Flavored Markdown, which is widely popular in the MarkDown community. To learn more about working with markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
 
 You can also find guidance for how to get started with MarkDown in the [Docs Contributor Guide](https://docs.microsoft.com/en-us/contribute/), which is published by the team that built the Docs.microsoft.com site where the Business Central team publishes their docs.
 
+### Get updates from Microsoft
+
+Microsoft makes frequent changes to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content, and those changes show up in the public GitHub repos. The base repo, dynamics365smb-docs, is updated weekly, and the translations are updated monthly. But you can choose to get updates monthly, twice a year, or once a year, for example. That is entirely up to you.  
+
+When you decide it is time to get the latest version of the content from Microsoft, you can do that using GitBash or GitHub Desktop. In the Help for GitHub, you can see [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork), but in GitHub Desktop, you simply use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
+
 ### Contributing
 
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the dynamics365smb-docs repo. For example, you might have a new article that you think would be beneficial or you might have a correction to an existing article. If you would like to contribute to the dynamics365smb-docs repo, you create what is called a *pull request* from your repo to the dynamics365smb-docs repo. The Microsoft team will then review the request and include the changes as appropriate.
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the dynamics365smb-docs repo. For example, you might have a new article that you think would be beneficial or you might have a correction to an existing article. If you would like to contribute to the MicrosoftDocs/dynamics365smb-docs repo, you create what is called a *pull request* from your repo to the MicrosoftDocs/dynamics365smb-docs repo. The Microsoft team will then review the request and include the changes as appropriate.
 
-For example, to create a pull request to the dynamics365smb-docs repo by using GitHub Desktop, do the following:
+For example, to create a pull request to the MicrosoftDocs/dynamics365smb-docs repo by using GitHub Desktop, do the following:
 
-1.  Commit the changes to your repo that you want to include in the pull request.
-2.  Choose **Sync** to push the changes up to your repo on GitHub.
-3.  When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *live* branch, and then choose send **Pull Request**.
+1. Commit the changes to your repo that you want to include in the pull request.
+2. Choose **Sync** to push the changes up to your repo on GitHub.
+3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *live* branch, and then choose send **Pull Request**.
 
 ## Building HTML files
 For publishing to your own website, you can use tools such as [DocFx](https://dotnet.github.io/docfx/). For example, if you want to preview your content locally, or if you want to publish to the legacy Microsoft Dynamics NAV Help Server. DocFX is an open source tool for converting markdown files. This section provides some guidance on how you can use DocFX to publish HTML files for the Dynamics NAV Hep Server.
