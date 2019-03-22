@@ -193,14 +193,9 @@ In both examples, *https://myserver.com* represents the URL to the Help Server i
 
 For guidance about how to generate HTML files, see the [Readme.md in the public source repo for the business functionality content](https://github.com/MicrosoftDocs/dynamics365smb-docs?target=_blank#building-html-files). Optionally, you can choose to reuse the HTML and .HTM files that you used for Dynamics NAV in your online library or Help Server deployment.  
 
-## Fork the Microsoft repo
+## Fork the Microsoft repos
 
-If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the related repos with translations into the supported languages. The readme.md file in the source repo provides tips and tricks for working with the Microsoft GitHub repos and MarkDown.  
-
-When Microsoft publishes an update to the content, the *live* branch in the corresponding GitHub repo is updated. The source repo is updated monthly, and the related language-specific repos are updated less frequently as new translations are made available. You can choose to update your fork with updates from the Microsoft repo on a monthly or less frequent basis depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Fork a repo](https://help.github.com/articles/fork-a-repo/).  
-
-> [!TIP]
-> You are not required to make your GitHub repos public. When you fork a public repo, you can specify in the settings for the new repo if the repo is public, private, or available only to specific GitHub accounts.
+If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the related repos with translations into the supported languages. For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md).  
 
 ## See Also
 
