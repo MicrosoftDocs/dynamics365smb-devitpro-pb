@@ -36,7 +36,7 @@ Amount := 2 * Price;
 ```  
 
 ### Example  
-The following example assigns the return value of the [Open Method (File)](methods-auto/file-open-method.md) to a Boolean variable that you have defined.  
+The following example assigns the return value of the [Open Method (File)](methods-auto/file/file-open-method.md) to a Boolean variable that you have defined.  
 
 ```  
 OK := TestFile.Open('C:\temp\simple.xml');  
