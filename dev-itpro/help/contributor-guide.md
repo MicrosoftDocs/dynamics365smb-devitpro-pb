@@ -88,6 +88,14 @@ A benefit of GitHub is the ability for you to contribute to the core content tha
 For example, to create a pull request to the MicrosoftDocs/dynamics365smb-docs repo by using GitHub Desktop, do the following:
 
 1. Commit the changes to your repo that you want to include in the pull request.
+   Here is the command for Git Shell:
+
+   ```powershell
+   git add -u
+   git commit -m "update doc"
+   git push
+   ```
+
 2. Choose **Sync** to push the changes up to your repo on GitHub.
 3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *live* branch, and then choose send **Pull Request**.
 
@@ -103,7 +111,7 @@ For publishing to your own website, you can use tools such as [DocFx](https://do
 
     By default the files will be saved in the folder *c:/output*. The output folder is set in the NAVdocfx.json file. If you want to change this folder, do the following:
 
-    a. In the folder where your local clone is, such as *C:\GitHub\dynamics365smb-docs\business-central*, open the NAVdocfx.json file in your preferred editor.  
+    a. In the folder where your local clone is, such as *C:\GitHub\MSFT\dynamics365smb-docs\business-central*, open the NAVdocfx.json file in your preferred editor.  
     b.  Set the **"dest:"** parameter to your output folder, and save the changes.  
 
 3. Go to your desktop and open a command prompt.
@@ -113,7 +121,7 @@ For publishing to your own website, you can use tools such as [DocFx](https://do
 5. Run the following command:
 
     ```powershell
-    docfx "c:\GitHub\dynamics365smb-docs\business-central\NAVdocfx.json"
+    docfx "c:\GitHub\MSFT\dynamics365smb-docs\business-central\NAVdocfx.json"
     ```
 
 The files are generated as .html files and stored in the specified output.
@@ -335,6 +343,88 @@ For more information, see [Dynamics 365 Business Central User Assistance Model](
 ### Country-specific content
 
 To simplify content localization and translation, country-specific articles live in country-specific folders. The TOC entries live under the "Local Functionality" parent node.
+
+<!--INTERNAL
+## Getting started with Open Publishing
+
+Unless you are an UA writer, you do not have write access to the master repo MicrosoftDocs/dynamics365smb-docs-pr. Any changes that you make must go through UA first. This means that to make changes, you must commit the changes, and then create a pull request to include the changes. A writer (UA) will then review the pull request and pull the content into the master repo.
+
+Start contributing to the repo docs using the following steps:
+
+## Set up your account
+1. Get a GitHub account
+2. Link it to your work account at https://repos.opensource.microsoft.com/
+3. Join the MicrosoftDocs org at https://repos.opensource.microsoft.com/MicrosoftDocs
+4. Join the Everyone team here: https://repos.opensource.microsoft.com/microsoftdocs/teams/everyone
+
+For more information, see [Open Source at Microsoft docs](https://docs.opensource.microsoft.com/github/).
+There are a few ways to work with the repo:
+- You can edit directly in the MicrosoftDocs/dynamics365smb-docs-pr repo on GitHub.com.
+
+    This is the quickest way and is good for tech-review and small edits.
+- You can fork the repo and then work in the fork.
+
+    When you are done in the fork you commit your changes and make a pull request to the master repo. UA will then pick up the changes as needed. This method is good for making changes to existing articles or creating new articles when you cannot get your changes done right away and you want to save them as a work in progress.
+- Work locally by downloading the GitHub Desktop application from here: [https://desktop.github.com/](https://desktop.github.com/).
+
+    This lets you clone the repo on your machine. You can then make changes, sync with the master repo on GitHub, and create a Pull Request. This is useful for working on new content that stretches over a few sessions. This is how UA works.
+
+The general flow is as follows:
+
+1. Make changes to an existing file or add a new one.
+2. Commit proposed changes.
+3. Create Pull Request to have the changes included in the master repo.
+
+1. Fork the repo using a browser window or Git Shell. Here is the address of the repo: https://github.com/MicrosoftDocs/dynamics365smb-docs-pr
+2. Clone your fork so you have a local copy, and then edit the Markdown files using your favorite Markdown editor, such as Atom.io or Visual Studio Code.
+3. Commit and push your changes using GitHub Desktop or Git Shell. Here is the command for Git Shell:
+   ```
+   git add -u
+   git commit -m "update doc"
+   git push
+   ```
+
+4. Wait for a moment and your changes will be automatically published to staging.
+
+If you don't have the permission to push to this repo, fork it to your own account and use pull request to submit your changes back.
+
+### Using GitHub Desktop
+The new version of GitHub Desktop is optimized for cloning master branches directly and instead of creating pull requests, just keep syncing the branch upwards. We work through forks. A fork is needed, when you do not have permissions to sync directly to upstream master, but have to go through a pull request. We like to use the pull requests because they also give an overview of what needs to be reviewed and they can, if necessary, be closed or reverted. This means that the new process of working is a bit more manual than before. Below the necessary steps are described.
+
+**Installing and setting up GitHub Desktop**
+
+1.	The new GitHub Desktop can be fetched and downloaded from https://desktop.github.com/.
+2.	In GitHub Desktop, choose File, clone repository and then choose the needed repositories:
+a.	dynamics365smb-devitpro (current developer repo for business-central)
+b.	navdevitpro-content-pr (old developer repo, still used for on-prem NAV)
+c.	dynamics365smb-docs-pr (current application repo for business-central)
+
+**Push changes to MicrosoftDocs\master**
+1.	Commit changes that are in the local changelist (this is committed to your local master)
+2.	Push to origin (button - this pushes the change to your fork)
+3.	Under Branch, choose Create Pull Request to push your fork changes to the MicrosoftDocs\master. This opens in GitHub.
+4.	In GitHub compare the changes, you are pushing from your head fork to the base fork. If it looks okay, choose Create Pull Request.
+5.	In the Open a Pull Request window, choose Create Pull Request.
+6.	Validation happens as usual. Pull Request will be merged after being reviewed by someone from UA as usual.
+
+**Pull changes from MicrosoftDocs\master to get other peoples change and keep the fork up-to-date – remote syncing**
+1.	Under Branch, choose Merge into current branch
+2.	Make sure the default branch shows as your working branch in your fork, such as master
+3.	Choose the branch in the parent repo that you want to get updates from, such as Upstream\master or Upstream\mybranch
+4.	On the History tab, you should now be able to see all the changes that were done
+5.	The button now changes to Push to origin (your master branch on the fork), push to update and everything is up-to-date
+
+
+## Validation and Preview
+
+You can build and preview your content in local to discover and fix problems early, before pushing your changes to the GitHub repo:
+
+1. To validate your changes, just run `..openpublishing.build.ps1` under the root of the repo.
+2. To preview your changes:
+   * Run `..openpublishing.build.ps1 -parameters:targets=serve` under the root of the repo.
+   * Open `http://localhost:8080` in your browser.
+
+-->
 
 ## See also
 
