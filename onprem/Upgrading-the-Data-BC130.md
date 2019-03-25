@@ -2,7 +2,7 @@
 title: Upgrading the Database
 description: This article describes the tasks required for upgrading from the earlier versions of database to Dynamics 365 Business Central.
 ms.custom: na
-ms.date: 03/20/2019
+ms.date: 10/01/2018
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,9 +15,7 @@ ms.service: "dynamics365-business-central"
 [See print-friendly quick reference](singletenant-upgrade-checklist.md)
 
 
-This article describes the tasks required for upgrading the data of a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] or [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] major version or cumulative update.
-
-This article pertains to a single-tenant deployment. For upgrade instructions for a multitenant deployment, see [Upgrading the Data: Multitenant Deployment](Upgrading-the-Data-Multitenant.md).
+This topic describes the tasks required for upgrading the data of a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a single-tenant deployment. 
 
 ## About Data Upgrade
 
@@ -34,51 +32,39 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
     Optionally, you can export the captions before the upgrade. For more information, see [How to: Add Translated Strings for Conflicting Text Encoding Formats](/dynamics-nav/How-to--Add-Translated-Strings-for-Conflicting-Text-Encoding-Formats).
 
-2. (Upgrading from [!INCLUDE[navnow](../developer/includes/navnow_md.md)] only) Custom V1 extensions used in the old deployment have been converted to V2 extensions.
+2. Custom V1 extensions used in the old deployment have been converted to V2 extensions.
 
     For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
 
-3. You have upgraded the application code, and have the FOB files that contain the upgraded application code.
+3.  You have upgraded the application code, and have the FOB files that contain the upgraded application code and upgrade toolkit. The upgrade toolkit includes upgrade codeunits for handling the data upgrade. The upgrade toolkit can be in the same FOB file as the application code or in a separate FOB file.  
 
     For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
 
-4. You have the upgrade toolkit FOB files for the version that you are upgrading from. 
-
-    The upgrade toolkit includes upgrade codeunits for handling the data upgrade. The upgrade toolkit can be in the same FOB file as the application code or in a separate FOB file.
-
     For W1 versions, you can find the default upgrade toolkit objects in the  **UpgradeToolKit\Data Conversion Tools** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD). Choose the FOB that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version from which you are upgrading:
 
-    |  From  |  To Business Central April 2019  |  To Business Central October 2018   |
+    |  Version  |  FOB  |  Remarks  |
     |-----------|-------|-----------|
-    | [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]| Upgrade80014x.FOB |Upgrade800130.FOB|
-    | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade90014x.FOB| Upgrade900130.FOB|
-    |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade100014x.FOB| Upgrade1000130.FOB|
-    |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade110014x.FOB|Upgrade1100130.FOB|
-    |[!INCLUDE[prodshort](../developer/includes/prodshort.md) Fall 2018]| Upgrade13x14x.FOB|Not applicable|
+    |[!INCLUDE[nav7long](../developer/includes/nav7long_md.md)]|Upgrade7001100.FOB|This file can be found on the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] [Cumulative Update 2 installation media (DVD)](https://support.microsoft.com/en-us/help/4078580/cumulative-update-02-for-microsoft-dynamics-nav-2018-build-20348?preview). It is not available with later cumulative updates.|
+    |[!INCLUDE[navsicily](../developer/includes/navsicily_md.md)]|Upgrade7101100.FOB and Upgrade710HF1100.FOB|This file can be found on the [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] [Cumulative Update 2 installation media (DVD)](https://support.microsoft.com/en-us/help/4078580/cumulative-update-02-for-microsoft-dynamics-nav-2018-build-20348?preview). It is not available with later cumulative updates.|
+    | [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]| Upgrade8001300.FOB||
+    | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade9001300.FOB||
+    |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade10001300.FOB||
+    |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade11001300.FOB||
 
-   For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark or **Upgrade110014x.DE.fob** for Germany.
+    For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade11001300.DK.fob** for Denmark or **Upgrade11001300.DE.fob** for Germany.  
 
-5. You have exported the customized permission sets (except SUPER) and permissions from the old database that you want to reuse in the upgraded database.
+3.  You have exported the permission sets (except SUPER) and permissions as XML files from the old database.
 
-    - When upgrading from [!INCLUDE[navnow](../developer/includes/navnow_md.md)]
+    To exclude the SUPER permission set when running XMLPort 9171, add the filter `Role ID is <>SUPER`. 
 
-      To export permission sets and permissions, you run running XMLPort 9171 and 9172.
+    For more information, see [Exporting and Importing Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ExportPerms).
 
-      It is important that you exclude the SUPER permission set when running XMLPort 9171. You can do this by adding the filter `Role ID is <>SUPER`.
+4.   If the old deployment uses data encryption, you have exported the encryption key file that it used for the data encryption.  
 
-      For more information, see [Exporting and Importing Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ExportPerms).
+        For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).
+5.   \(Optional\) Make a copy of the configuration file (web.config or navsettings.json) for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances in the old deployment. 
 
-    - When upgrading from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
-
-        In the client, search for and open the Permission Sets page, select the user-defined permission sets that you want to keep, and then choose **Export Permission Sets**.
-
-6. If the old deployment uses data encryption, you have exported the encryption key file that it used for the data encryption.  
-
-    For more information, see [How to: Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md).
-
-7. \(Optional\) Make a copy of the configuration file (web.config or navsettings.json) for all [!INCLUDE[nav_web_server_instance_md](../developer/includes/nav_web_server_instance_md.md)] instances in the old deployment. 
-
-8. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has been installed. 
+6.  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has been installed. 
 
     As a minimum, you must install the following components:
     - Server
@@ -89,27 +75,29 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     - (optionally) [!INCLUDE[admintool](../developer/includes/admintool.md)]
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+ 
 
 > [!NOTE]
->If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete.
+>If the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] application uses Payment Services for Microsoft Dynamics ERP, be aware that this was discontinued in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. This means that most of the objects that are associated with this feature will be deleted during the upgrade. Some objects you will have to manually delete. 
 
-## <a name="SQLBackup"></a> Task 1: Create full SQL backup of old database  
+##  <a name="SQLBackup"></a> Task 1: Create a full SQL backup of the old database on SQL Server  
 
 Create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
 For more information, see [Create a Full Database Backup \(SQL Server\)](http://msdn.microsoft.com/en-us/library/ms187510.aspx).  
 
 ## Task 2 Uninstall all extensions in old database
-
-Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!INCLUDE[admishell](../developer/includes/adminshell.md) that matches to old database, and run these commands:
-
-1. To get a list of the extensions that are installed, run this command:
+ 
+Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] that matches to old database, and run these commands:
+ 
+1.  To get a list of the extensions that are installed, run this command:
 
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default
     ```
     
     Replace `<ServerInstanceName>` with the name of the [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance that the database connects to.
+
 
 2. For each extension, run this command to uninstall it:
 
@@ -126,32 +114,29 @@ Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!IN
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
     ```
 
-## <a name="UploadLicense"></a> Task 3: Upload [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license to old database  
-
+##  <a name="UploadLicense"></a> Task 3: Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license to the old database  
 By using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database, upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license to the database.
 
 For more information, see [[Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## <a name="DeleteObjects"></a> Task 4: Delete all objects except tables in old database
-
+##  <a name="DeleteObjects"></a> Task 4: Delete all objects except tables from the old database   
 In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] version that matches the database, open the old database, open Object Designer, select all objects except tables, and then choose **Delete**.
 
 You can also use the [DeleteObjects](https://docs.microsoft.com/en-us/dynamics-nav/deleteobjects
 ) command of the finsql.exe.
 
-## <a name="ClearServer"></a>Task 5: Clear server instance and debugger breakpoint records in old database
-
+## <a name="ClearServer"></a>Task 5: Clear server instance and debugger breakpoint records from old database
 Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in the database in SQL Server.  
 
-1. Make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
-2. Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
+1.  Make sure that you stop the old server instance, and close any tools that connect to the database, such as the Dynamics NAV Administration Tool and [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].
+2.  Using SQL Server Management Studio, open and clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables of the old database. For example, you can run the following SQL query:
 
     ```
     DELETE FROM [<My NAV Database Name>].[dbo].[Server Instance]
     DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
     ```
 
-## <a name="ConvertDb"></a> Task 6: Convert old database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+##  <a name="ConvertDb"></a> Task 6: Convert the old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] format
 
 If the database is on Azure SQL Database, you must first add your user account to the **dbmanager** database role on master database. This membership is only required for converting the database, and can be removed afterwards. 
 
@@ -162,8 +147,8 @@ For more information about how to open a database, see [Open a Database](../csid
 > [!IMPORTANT]
 > Do not run schema synchronization at this time. Choose to run it **later**.
 
-## <a name="ImportAppObj"></a> Task 7: Import upgraded application objects to converted database
 
+##  <a name="ImportAppObj"></a> Task 7: Import the upgraded application objects
 Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], import the application objects that you want in the database. This includes the application objects FOB file (from the application code upgrade) and the upgrade toolkit objects FOB file.
 
 1. Import the application objects FOB file first, and then import the upgrade toolkit FOB file.
@@ -178,7 +163,8 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
     
     Choose **Replace All**, and then **OK** to continue.
 
-## <a name="ConnectToServer"></a> Task 8: Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to converted database
+
+##  <a name="ConnectToServer"></a> Task 8: Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database
 
 You use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
 
@@ -189,7 +175,8 @@ For more information, see [Connecting a Server Instance to a Database](../admini
 > [!IMPORTANT]  
 >  When upgrading a large database, you should increase the **SQL Command Timeout** setting for the [!INCLUDE[server](../developer/includes/server.md)] instance, to avoid timeouts during schema synchronization. The default setting is 30 minutes.  
 
-## <a name="CompSysTables"></a> Task 9: Compile all objects in converted database
+
+##  <a name="CompSysTables"></a> Task 9: Compile all objects
 
 1. In the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], set it to use the server instance that connects to the database.
 
@@ -200,54 +187,50 @@ For more information, see [Connecting a Server Instance to a Database](../admini
     > [!IMPORTANT]
     >Choose to run schema synchronization later. For example, in Object Designer, choose **Tools**, choose **Compile**, set the **Synchronize Schema** option to **Later**, and then choose **OK**. For more information, see [Compiling Objects](../cside/cside-compiling-objects.md).
 
-3. (Upgrade from [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] and earlier only) If you get errors on the following table objects, use the Object Designer to delete the objects because they are no longer used.
+3. ([!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] and earlier only) If you get errors on the following table objects, use the Object Designer to delete the objects because they are no longer used.
 
-    - Table 470 Job Queue (replaced by the [Task Scheduler](../developer/devenv-Task-Scheduler.md))
-    - Table 824 DO Payment Connection Details
-    - Table 825 DO Payment Connection Setup
-    - Table 827 DO Payment Credit Card
-    - Table 828 DO Payment Credit Card Number
-    - Table 829 DO Payment Trans. Log Entry
-    - Table 1510 Notification Template
+    -   Table 470 Job Queue (replaced by the [Task Scheduler](../developer/devenv-Task-Scheduler.md))
+    -   Table 824 DO Payment Connection Details
+    -   Table 825 DO Payment Connection Setup
+    -   Table 827 DO Payment Credit Card
+    -   Table 828 DO Payment Credit Card Number
+    -   Table 829 DO Payment Trans. Log Entry
+    -   Table 1510 Notification Template
 
+    
     When you delete a table object, in the **Delete** confirmation dialog box that appears, set the **Synchronize Schema** option to **Force**.
-
-    > [!IMPORTANT]
+    
+    > [!IMPORTANT] 
     > In this step, it is very important that you do not use the **Sync. Schema For All Tables** option from the **Tools** menu.
-
-4. (Upgrade from [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] and earlier only) If the old database includes test runner codeunits, you will get errors on these codeunits that the OnBeforeTestRun and OnAfterTestRun trigger signatures are not valid. To fix these issues, you change the signature of the OnBeforeTestRun and OnAfterTestRun triggers to include the *TestPermission* parameter.
+      
+4.  ([!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] and earlier only) If the old database includes test runner codeunits, you will get errors on these codeunits that the OnBeforeTestRun and OnAfterTestRun trigger signatures are not valid. To fix these issues, you change the signature of the OnBeforeTestRun and OnAfterTestRun triggers to include the *TestPermission* parameter.
 
     For more information, see [Resolving OnBeforeTestRun and OnAfterTestRun Trigger Errors When Converting a Database](Resolve-OnBeforeTestRun-OnAfterTestRun-Compile-Errors.md).
 
     The triggers for codeunit **130400 CAL Test Runner** and **130402 CAL Command Line Test Runner** will be updated for you during the data upgrade.
 
-## Task 10: (Upgrade from [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] only) Increase the application version of converted database
+## Task 10: Increase the application version of the database
 
-You must increase the application version that is assigned to the database.
+If you are upgrading from [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], you must increase the application version that is assigned to the database.
 
 Use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to increase the application version number of the database from its current version.
 
 To see the current version, use the following command:
 
 ```
-Get-NAVApplication -ServerInstance <ServerInstanceName>
-```
-
-To increase the version by 1, run the following command:
+Get-NAVApplication -ServerInstance <ServerInstanceName> 
 
 ```
-Set-NAVApplication -ServerInstance <ServerInstanceName> -IncrementApplicationVersion
-```
 
-Or, to specify change to another version, run the following command:
+To change the version, use the following command:
 
 ```
 Set-NAVApplication -ServerInstance <ServerInstanceName> -ApplicationVersion <N.N.N.N> -Force
 ```
 
-For example, if the old version was `11.0.24279.0`, then you could change the version to `14.0.24279.0`.
-
-## <a name="RunSync1"></a> Task 11: Run the schema synchronization on converted database
+For example, if the old version was `11.0.24279.0`, then you could change the version to `13.0.24279.0`.
+ 
+##  <a name="RunSync1"></a> Task 11: Run the schema synchronization on the imported objects
 
 Synchronize the database schema with validation.
 
@@ -256,18 +239,15 @@ For example, run the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershel
 ```
 Sync-NAVTenant -ServerInstance <ServerInstanceName>
 ```
-
-When completed, the tenant (database) should have the status **OperationalDataUpgradePending**. To verify this, run the following cmdlet:
-
-```
-Get-NAVTenant -ServerInstance <ServerInstanceName> -tenant default
-```
-
+ 
 For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
-## <a name="RunStartNavUpgrade"></a>Task 12: Run data upgrade on converted database
-  
+##  <a name="RunStartNavUpgrade"></a> Task 12: Run the data upgrade process  
 A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and upgrade tables, to migrate business data from the old table structure to the new table structure. You can start the data upgrade from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
+
+> [!NOTE]  
+>  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the Start-NavDataUpgrade cmdlet and set the *-SkipCompanyIntitialization* parameter.  
+
 
 Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:  
 
@@ -275,34 +255,35 @@ Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an admin
 Start-NavDataUpgrade -ServerInstance <ServerInstanceName>  
 ```  
 
-Replace `<ServerInstanceName>` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that is connected to the database.
-
-> [!NOTE]  
->  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the `Start-NavDataUpgrade` with the `-SkipCompanyIntitialization` parameter. 
+Replace `<ServerInstanceName>` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that is connected to the database.  
 
 To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.  
 
-The data upgrade process runs `CheckPreconditions` and `Upgrade` functions in the upgrade codeunits. If any of the preconditions are not met or an upgrade function fails, you must correct the error and resume the data upgrade process. If CheckPreconditions and Upgrade functions are executed successfully, codeunit 2 is automatically run to initialize all companies in the database unless you set the `-SkipCompanyIntitialization` parameter.
+The data upgrade process runs `CheckPreconditions` and `Upgrade` functions in the upgrade codeunits. If any of the preconditions are not met or an upgrade function fails, you must correct the error and resume the data upgrade process. If CheckPreconditions and Upgrade functions are executed successfully, codeunit 2 is automatically run to initialize all companies in the database unless you set the `-SkipCompanyIntitialization` parameter.  
 
-## <a name="JSaddins"></a>Task 13: Upgrade Javascript-based control add-ins to new versions
+##  <a name="ImportPerms"></a> Task 13: Import upgraded permission sets and permissions
 
-The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of Microsoft-provided Javascript-based control add-ins, such as the Business Chart control add-in. If you application is using any of these add-ins, you must upgrade them to the new versions as follow:
+Import the permission sets and permissions XML files that you exported from the old database as follows:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1.  Delete all permission sets in the database except the SUPER permission set.  
 
-    If the application uses the Business Chart control add-in, you will get an error about **High Charts**. Upgrading the Business Chart control add-in will clear this error. 
-2. Search for and open the **Control Add-ins** page.
+    In Object Designer, run page 9802 **Permission Sets**, and then delete the permission sets except SUPER.  
 
-    The page lists all the registered control add-ins.
-3. Choose **Actions** > **Control Add-in Resource** > **Import**.
-4. Locate and select the .zip file for the control add-in and choose **Open**.
+2.  Run XMLport 9171 and XMLport 9172 to import the permission sets and permission XML files.
 
-    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There is a sub-folder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\140\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
-5. After you have imported all the new control add-in versions, restart Web Server instance.
+    For more information, see [How to: Export and Import Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ImportPerms).
 
-<!--
-##  <a name="AddControlAddins"></a> Task 16: Register client control add-ins
- 
+##  <a name="UploadEncryptionKeys"></a> Task 14: Import Data Encryption Key \(Optional\)  
+
+If you want to use data encryption as before, you must import the data encryption key file that was exported previously.  
+
+For more information, see [Exporting and Importing Encryption Keys](how-to-export-and-import-encryption-keys.md). 
+
+##  <a name="SetLang"></a> Task 15: Set the language of the customer database
+
+In the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)], choose **Tools**, choose **Language**, and then select the language of the original customer database.  
+
+##  <a name="AddControlAddins"></a> Task 16: Register client control add-ins  
 The database is now fully upgraded and is ready for use. However, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes the following client control add-ins.
 -   Microsoft.Dynamics.Nav.Client.BusinessChart  
 -   Microsoft.Dynamics.Nav.Client.DynamicsOnlineConnect
@@ -316,13 +297,30 @@ The database is now fully upgraded and is ready for use. However, [!INCLUDE[prod
 -   Microsoft.Dynamics.Nav.Client.TimelineVisualization
 -   Microsoft.Dynamics.Nav.Client.VideoPlayer  
 -   Microsoft.Dynamics.Nav.Client.WebPageViewer
--   Microsoft.Dynamics.Nav.Client.WelcomeWizard
 
 To use these add-ins, they must be registered in table **2000000069 Client Add-in**. Depending on the version that you upgraded from, all the add-ins might not be registered after the upgrade process. You can register missing control add-ins in the **Control Add-ins** page in the client. The assemblies (.dlls) for these add-ins are in subfolders to the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation, which by default is [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Service\Add-ins. For more information, see [How to: Register a Windows Client Control Add-in](/dynamics-nav/How-to--Register-a-Windows-Client-Control-Add-in).
--->
 
-##  <a name="AddExtensions"></a> Task 14: Publish and install/upgrade extensions
+<!--
+## Task 17: Configure pages and reports included in the MenuSuite to be searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)]
 
+The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects.  For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
+
+## Task 18. Transition the custom code from old codeunit 1 to use the new implementation
+
+For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).  -->
+ 
+## Task 17: Update the Web Server instance configuration file (navsettings.json)
+If you have installed the [!INCLUDE[webserver](../developer/includes/webserver.md)], populate the navsettings.json file for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance with the settings of the old web.config file or navsettings.json.
+
+For more information, see [Configuring Business Central Web Server Instances](../administration/configure-web-server.md).
+  
+##  <a name="DeleteUpgCodeunits"></a> Task 18: Delete the upgrade objects
+
+At this point, you have upgraded the database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
+
+When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  
+
+##  <a name="AddExtensions"></a> Task 19: Publish and install/upgrade extensions
 Complete this task if you are upgrading from a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] deployment that uses V2 extensions or a Denmark (DK) version of [!INCLUDE[nav2017](../developer/includes/nav2017.md)] or earlier.
 
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the current versions to the new versions.
@@ -330,8 +328,6 @@ The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media
 In addition, other extensions used in the old deployment that you still want to use must be repaired to work on the new platform.
 
 > [!IMPORTANT]
-> For Denmark (DK) and German (DE) versions. Some of the local functionality has been moved from the base application to extensions.
->
 > If you are upgrading from a Denmark (DK) version of Dynamics NAV 2017 or earlier, you must publish and install the following extensions to get the local functionality:
 >
 >|Name|Extension package|
@@ -339,12 +335,6 @@ In addition, other extensions used in the old deployment that you still want to 
 >|Payroll Data Import Definitions (DK)| ImportDKPayroll.app| 
 >|Payment and Reconciliation Formats (DK)|FIK.app |
 >|Tax File Formats (DK)| VATReportsDK.app|
->
-> If you are upgrading from a German (DE) version of Dynamics NAV or [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 (Cumulative Update 2 or earlier), you must publish and install the following extensions to get the local functionality:
->
->|Name|Extension package|
->|----|---------|
->|ELSTER VAT Localization for Germany| Elster.app|
 
 1. To get list of the extensions currently published on the application, run the following command from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
 
@@ -383,10 +373,9 @@ In addition, other extensions used in the old deployment that you still want to 
             
     For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](../developer/devenv-running-cside-and-al-side-by-side.md).
 
-    4. Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
-4. Upgrade the Microsoft extensions that were published in the old deployment to new versions. For Denmark (DK) and German (DE), you must also complete this step to install the local functionality extensions mentioned at the start of this task. 
+4. Upgrade the Microsoft extensions that were published in the old deployment to new versions.
 
-    The new extension versions are found in the `\Extensions` folder of the installation media (DVD). Follow these steps for each extension by using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
+    The new versions are found in the `\Extensions` folder of the installation media. To upgrade to the new extension versions, follow these steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for each extension:
 
     1. Publish the new extension version by running the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
 
@@ -399,24 +388,17 @@ In addition, other extensions used in the old deployment that you still want to 
         ```    
         Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
-    3. Upgrade the data of the extensions. This step is not required for the newly published local functionality extensions.
-
-        To run the data upgrade, run the [Start-NAVAppDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
+    3. Upgrade the data of the extensions by running the [Start-NAVAppDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
         ```
         Start-NAVAppDataUpgrade -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ``` 
 
         Apart from upgrading the data, this command will install the new extension version.
-
-    3. Install the newly published local functionality extensions by running the [Install-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
-
-        ```    
-        Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
-        ```
     For more information about publishing extensions, see [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md).
 
-5. Repair, synchronize, and install other currently published extension versions that you still want to use, but have not been upgraded to new versions. 
+
+5. Repair, synchronize, and install other published extension versions that you still want to use, but have not been upgraded to new versions. 
 
     For each extension, complete the following steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]: 
 
@@ -430,6 +412,7 @@ In addition, other extensions used in the old deployment that you still want to 
         ```    
         Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
+
     3. Install the extension by running the [Install-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
 
         ```    
@@ -441,48 +424,6 @@ In addition, other extensions used in the old deployment that you still want to 
     ```
     Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
     ```
-
-## <a name="ImportPerms"></a> Task 15: Import permission sets and permissions
-
-Import the permission sets and permissions XML files that you exported from the old database as follows:
-
-- Upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]:
-
-    1. Open table **2000000004 Permission Sets** in the client, and delete all permission sets except SUPER.
-
-        > [!NOTE]
-        > You are only required to delete those permission sets that also included in the permission sets XML file that you will import. Because if you try to import a permission set with the same name as on already in the database, you will get an error. 
-    2. Run XMLport **9171** and XMLport **9172** to import the permission sets and permission XML files.
-
-        For more information, see [How to: Export and Import Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ImportPerms).
-
-- Upgrade from an earlier [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version:
-
-    1. In the client, search for and open the **Permission Sets** page.
-    2. Delete all user-defined permissions.
-    3. Choose **Import Permission Sets**, then select the permissions set file that you exported previously.
-
-## <a name="UploadEncryptionKeys"></a>Task 16: \(Optional\) Import data encryption key
-
-If you want to use data encryption as before, you must import the data encryption key file that was exported previously.  
-
-For more information, see [Exporting and Importing Encryption Keys](how-to-export-and-import-encryption-keys.md).
-
-## <a name="SetLang"></a>Task 17: Set the language of customer database
-
-In the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)], choose **Tools**, choose **Language**, and then select the language of the original customer database.  
- 
-## Task 18: (Optional) Update Web Server instance configuration file
-
-If you have installed the [!INCLUDE[webserver](../developer/includes/webserver.md)], populate the navsettings.json file for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance with the settings of the old web.config file or navsettings.json.
-
-For more information, see [Configuring Business Central Web Server Instances](../administration/configure-web-server.md).
-  
-## <a name="DeleteUpgCodeunits"></a>(Optional) Task 19: Delete upgrade objects
-
-At this point, you have upgraded the database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Now, you can delete the upgrade codeunits and upgrade table objects that you imported in task 9. This task is recommended but not required.  
-
-When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  
 
 ## See Also  
  [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
