@@ -16,7 +16,7 @@ Specifies the method to be integration type event subscriber.
 ## Syntax  
   
 ```  
-[EventSubscriber(ObjectType::ObjectType, ObjectId, 'EventName', 'ElementName', SkipOnMissingLicense, SkipOnMissingPermission)]
+[EventSubscriber(ObjectType::ObjectType, ObjectId, 'OnSomeEvent', 'ElementName', SkipOnMissingLicense, SkipOnMissingPermission)]
 ```    
   
 #### Arguments  
