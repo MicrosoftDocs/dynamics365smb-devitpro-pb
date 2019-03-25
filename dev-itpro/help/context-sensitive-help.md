@@ -75,5 +75,11 @@ The table associates page IDs with target articles, but the URL to where to find
 ## See also
 
 [User Assistance Model](../user-assistance.md)  
-[Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]](../help-and-support.md)  
+[Resources for Help and Support for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../help-and-support.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
+[Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
+[Blog post: Extending and customizing the Help](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/11/extending-and-customizing-help)  
+[Blog post: Collaborate on content for Business Central](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/15/collaborate-on-content-for-business-central)  
+[Docs Contributor Guide](/contribute/)  
+[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  

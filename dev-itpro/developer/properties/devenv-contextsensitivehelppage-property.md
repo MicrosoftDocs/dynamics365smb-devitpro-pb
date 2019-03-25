@@ -35,5 +35,5 @@ The value of this property forms the second half of the URL to context-sensitive
 [Configure Context-Sensitive Help](../../help/context-sensitive-help.md)  
 [User Assistance Model](../../user-assistance.md)  
 [Configuring the Help Experience](../../deployment/configure-help.md)  
-[Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[Adding Help Links from Pages, Reports, and XMLports](../devenv-adding-help-links-from-pages-tables-xmlports.md)
 [Properties](devenv-properties.md)  
