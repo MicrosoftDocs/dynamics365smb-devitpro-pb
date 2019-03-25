@@ -16,10 +16,10 @@ Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on li
 A view offers:
 
 - Filtering on multiple table fields on the source table defined for the page.
-- Sorting of the data on multiple table fields, but only in one direction; either ascending or descending.
+- Sorting of the data on multiple table fields, but only in one direction; either *ascending* or *descending*.
 - Layout changes, modifying page columns, moving them, etc. 
 
-Views are defined directly in code, on the list page that they modify. The defined view or views are available to the user in **Filter Pane** on a page and appear in the sequence that they are defined in code.
+Views are defined directly in code, on the list page that they modify. The defined view or views are available to the user through **Filter Pane** on a page and appear in the sequence that they are defined in code.
 
 ## Snippet support
 Typing the shortcut `tview` will create the basic layout for a view when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -80,7 +80,7 @@ pagecustomization MyCustomization customizes "Customer List"
 ```
 
 ## Limitations
-In general, views can in several ways be compared to page customizations. These are the limitations of views: <!-- check -->
+In general, views can in several ways be compared to page customizations. These are the limitations of views:
 
 - For views you can modify the same control properties as for page customization objects independently of where the view has been defined (page, page extension, or page customization level). This is validated by the compiler. 
 - It is not possible to use variables or methods in a view. When writing client side expression for properties like **Visibility**, it will only be possible to use constant values or table field references. This is validated by the compiler.

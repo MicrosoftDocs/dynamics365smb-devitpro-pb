@@ -37,6 +37,3 @@ The limitation of runtime packages is that they only work for on-premise install
 ## See also
 [Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079)   
 [Install-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=618056)  
-
-
-

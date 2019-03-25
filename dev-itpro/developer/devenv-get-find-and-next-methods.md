@@ -1,5 +1,6 @@
 ---
-title: "GET, FIND, and NEXT methods"
+title: "Get, Find, and Next Methods"
+ms.author: solsen
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na
@@ -10,92 +11,93 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# GET, FIND, and NEXT Methods
+# Get, Find, and Next Methods
 The following methods are used to search for records:  
   
--   GET  
+- Get
+- Find  
+- Next  
   
--   FIND  
+These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between Get and Find and to know how to use Find and Next in conjunction.  
   
--   NEXT  
+## Get method  
+The [Get Method (Record)](methods-auto/record/record-get-method.md) retrieves one record based on values of the primary key fields.  
   
- These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between GET and FIND and to know how to use FIND and NEXT in conjunction.  
-  
-## GET methods  
- The [GET methods \(Record\)](methods/devenv-GET-method-Record.md) retrieves one record based on values of the primary key fields.  
-  
- GET has the following syntax.  
+Get has the following syntax.  
   
 ```  
-[Ok :=] Record.GET([Value],...)  
+[Ok :=] Record.Get([Value],...)  
 ```  
   
- For example, if the **No.** field is the primary key of the **Customer** table and if you have created a record variable called **CustomerRec** that has a subtype of Customer, then you can use GET in the following way.  
+For example, if the **No.** field is the primary key of the **Customer** table and if you have created a record variable called **CustomerRec** that has a subtype of Customer, then you can use Get in the following way.  
   
 ```  
-CustomerRec.GET('4711');  
+CustomerRec.Get('4711');  
 ```  
   
- The result is that the record of customer 4711 is retrieved.  
+The result is that the record of customer 4711 is retrieved.  
   
- GET produces a run-time error if it fails and the return value is not checked by the code. In the previous example, the actual code that you write should resemble the following.  
+Get produces a run-time error if it fails and the return value is not checked by the code. In the previous example, the actual code that you write should resemble the following.  
   
 ```  
-IF CustomerRec.GET('4711') THEN  
+if CustomerRec.GET('4711') then
 .... // Do some processing.  
-ELSE  
+else  
 .... // Do some error processing.  
 ```  
   
- GET searches for the records, regardless of the current filters, and it does not change any filters. GET always searches through all the records in a table.  
+Get searches for the records, regardless of the current filters, and it does not change any filters. Get always searches through all the records in a table.  
   
-## FIND methods  
- The [FIND methods \(Record\)](methods/devenv-FIND-method-Record.md) locates a record in a table that is based on the values stored in the keys.  
+## Find methods  
+The [Find Method (Record)](methods-auto/record/record-find-method.md) locates a record in a table that is based on the values stored in the keys.  
   
- FIND has the following syntax.  
-  
-```  
-Ok := Record.FIND([Which])  
-```  
-  
- The *Which* parameter specifies how to perform the search. You can search for values that are greater than, less than, or equal to the key value, or for the first or last record in a table.  
-  
- The important differences between GET and FIND are as follows:  
-  
--   FIND uses the current filters.  
-  
--   FIND can look for records where the key value is equal to, greater than, or smaller than the search string.  
-  
--   FIND can find the first or the last record, depending on the sort order defined by the current key.  
-  
- When you are developing applications in a relational database, there are often one-to-many relationships defined between tables. An example could be the relationship between an **Item** table, which registers items, and a **Sales Line** table, which registers the detailed lines from sales orders. One record in the **Sales Line** table can only be related to one item, but each item can be related to any number of sales line records. You would not want an item record to be deleted as long as there are still open sales orders that include the item. You can use FIND to check for open sales orders.  
-  
- The OnDelete trigger of the **Item** table includes the following code that illustrates using FIND.  
+Find has the following syntax.  
   
 ```  
-SalesOrderLine.SETCURRENTKEY(Type,"No.");  
-SalesOrderLine.SETRANGE(Type,SalesOrderLine.Type::Item);  
-SalesOrderLine.SETRANGE("No.","No.");  
-IF SalesOrderLine.FIND('-') THEN  
-ERROR(Text001,TABLECAPTION,"No.",SalesOrderLine."Document Type");  
+Ok := Record.Find([Which])  
 ```  
   
- If you want to find the first record in a table or set, then use the [FINDFIRST methods \(Record\)](methods/devenv-FINDFIRST-method-Record.md). If you want to find the last record in a table or set, then use the [FINDLAST methods \(Record\)](methods/devenv-FINDLAST-method-Record.md).  
+The *Which* parameter specifies how to perform the search. You can search for values that are greater than, less than, or equal to the key value, or for the first or last record in a table.  
   
-## NEXT methods  
- The [NEXT methods \(Record\)](methods/devenv-NEXT-method-Record.md) is often used with FIND to step through the records of a table.  
+The important differences between Get and Find are as follows:  
   
- NEXT has the following syntax.  
+- Find uses the current filters.  
+  
+- Find can look for records where the key value is equal to, greater than, or smaller than the search string.  
+  
+- Find can find the first or the last record, depending on the sort order defined by the current key.  
+  
+When you are developing applications in a relational database, there are often one-to-many relationships defined between tables. An example could be the relationship between an **Item** table, which registers items, and a **Sales Line** table, which registers the detailed lines from sales orders. One record in the **Sales Line** table can only be related to one item, but each item can be related to any number of sales line records. You would not want an item record to be deleted as long as there are still open sales orders that include the item. You can use Find to check for open sales orders.  
+  
+The OnDelete trigger of the **Item** table includes the following code that illustrates using Find.  
   
 ```  
-Steps := Record.NEXT([Steps])  
+SalesOrderLine.SetCurrentKey(Type,"No.");  
+SalesOrderLine.SetRange(Type,SalesOrderLine.Type::Item);  
+SalesOrderLine.SetRange("No.","No.");  
+IF SalesOrderLine.Find('-') THEN  
+ERROR(Text001,TableCaption,"No.",SalesOrderLine."Document Type");  
 ```  
   
- In the following example, FIND is used to go to the first record of the table. NEXT is used to step through every record, until there are no more. When there are no more records, NEXT returns 0 \(zero\).  
+If you want to find the first record in a table or set, then use the [FindFirst Method (Record)](methods-auto/record/record-findfirst-method.md). If you want to find the last record in a table or set, then use the [FindLast Method (Record)](methods-auto/record/record-findlast-method.md).  
+  
+## Next method  
+The [Next Method (Record)](methods-auto/record/record-next-method.md) is often used with FIND to step through the records of a table.  
+  
+Next has the following syntax.  
   
 ```  
-IF (Rec.FINDSET) THEN  
-REPEAT  
+Steps := Record.Next([Steps])  
+```  
+  
+In the following example, Find is used to go to the first record of the table. Next is used to step through every record, until there are no more. When there are no more records, Next returns 0 (zero).  
+  
+```  
+if (Rec.FindSet) then
+repeat
   // process record  
-UNTIL (Rec.NEXT = 0);  
+until (Rec.Next = 0);  
 ```
+
+## See Also
+[AL Methods](methods-auto/library.md)  
