@@ -3,7 +3,7 @@ title: "Report Object"
 description: "Reports are used to print or display information from a database."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/21/2018
+ms.date: 03/25/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,6 +49,7 @@ report Id MyReport
     
     requestpage
     {
+        ContextSensitiveHelpPage = 'my-feature';
         layout
         {
             area(Content)
@@ -231,7 +232,7 @@ report 50103 "Customer List"
   requestpage
   {
     SaveValues=true;
-
+    ContextSensitiveHelpPage = 'my-feature';
     layout
     {
     }
@@ -272,9 +273,11 @@ report 50103 "Customer List"
 ```
 
 ## See Also
+
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
-[Page Extension Object](devenv-page-ext-object.md)   
+[Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[Page Extension Object](devenv-page-ext-object.md)  
 [Page Properties](properties/devenv-page-property-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

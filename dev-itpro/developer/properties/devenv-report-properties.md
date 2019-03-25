@@ -2,14 +2,13 @@
 title: Report Properties
 description: This topic lists report properties that apply to controls of a report object.
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 03/25/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: a9518144-46ef-4cd9-b260-1d232895f2d2
-caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
 
@@ -28,6 +27,7 @@ This topic lists properties of the report object.
 |[Caption Property](devenv-caption-property.md)|<ul><li>Report Object</li><li>Report Labels</li></ul>|
 |[CaptionML Property](devenv-captionml-property.md)|<ul><li>Report Object</li><li>Report Labels</li></ul>|
 |[CalcFields Property](devenv-calcfields-property.md)|<ul><li>DataItem control</li></ul>|
+|[ContextSensitiveHelpPage Property](devenv-contextsensitivehelppage-property.md)|<ul><li>Report Object</li></ul>|
 |[DataItemLink Property \(Reports\)](devenv-dataitemlink-reports-property.md)|<ul><li>DataItem controls</li></ul>|
 |[DataItemLinkReference Property](devenv-dataitemlink-reference-property.md)|<ul><li>DataItem controls</li></ul>|
 |[DataItemTable Property](devenv-dataitemtable-property.md)|<ul><li>DataItem controls</li></ul>|
