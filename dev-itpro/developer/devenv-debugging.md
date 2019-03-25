@@ -10,26 +10,19 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
- 
-
 # Debugging
 
-The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing F5.
-
-
-> [!TIP]  
-> For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging).
+The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing F5. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging).
 
 > [!IMPORTANT]  
 > To enable debugging the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
 
 > [!IMPORTANT]  
-> To use the development environment and debugger, you must make sure that port 7049 is available.
+> To use the development environment and debugger, you must make sure that port `7049` is available.
 
 There are a number of limitations to be aware of:
 
 - "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md). 
-- Not all AL types yet show helpful debugging.
 - The debugger launches a new client instance each time you press F5. If you close the debugging session, and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
 
 > [!TIP]  
@@ -43,9 +36,6 @@ Set breakpoints on the external code that is not part of your original project. 
 
 - Use **Go To Definition** which opens the “external file” and then a breakpoint can be set.  
 - Using the debugger, step into the code, and then set a breakpoint.
-
-> [!NOTE]  
-> "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md).
 
 In the following video illustration, the `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file which is referenced from your AL project to stop execution at the marked point. 
 
@@ -124,7 +114,6 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 > For [!INCLUDE[prodshort](includes/prodshort.md) on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights as expected in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
 ## See Also
-  
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [AL Code Navigation](devenv-al-code-navigation.md)  
