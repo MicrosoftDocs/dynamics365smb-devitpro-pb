@@ -49,6 +49,7 @@ report Id MyReport
     
     requestpage
     {
+        ContextSensitiveHelpPage = 'my-feature';
         layout
         {
             area(Content)
@@ -231,7 +232,7 @@ report 50103 "Customer List"
   requestpage
   {
     SaveValues=true;
-
+    ContextSensitiveHelpPage = 'my-feature';
     layout
     {
     }

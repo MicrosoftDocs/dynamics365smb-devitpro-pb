@@ -58,6 +58,7 @@ In all three examples, the *ContextSensitiveHelpPage* property is set to point a
 
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
 [Translating Base App Help](devenv-translate-base-app-help.md)  
-[Table Object](devenv-table-object.md)  
 [Page Object](devenv-page-object.md)  
+[Report Object](devenv-report-object.md)  
 [XMLport Object](devenv-xmlport-object.md)  
+[Table Object](devenv-table-object.md)  

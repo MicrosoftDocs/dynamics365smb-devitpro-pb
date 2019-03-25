@@ -245,3 +245,4 @@ We recommend that you simplify the user experience by reducing what users see by
 [Using Designer](devenv-inclient-designer.md)  
 [Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
+[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
