@@ -33,7 +33,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Ensure all objects are complied, unlocked, and tables are synchronized.|[See...](../cside/cside-compiling-objects.md)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 |(Multitenant mode only) Dismount the tenant|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant?view=dynamicsnav-ps-2018)||
-|Stop the Dynamics NAV Server Instance|||
+|Stop the Dynamics NAV or old Business Central Server Instance|||
 |Clear the **dbo.Server Instance** and  **dbo.Debugger Breakpoint** tables in SQL Server.|[See...](converting-a-database.md#clearsql)||
 |Close all connections to the database.|||
 
@@ -72,6 +72,7 @@ This article provides an overview of the technical upgrade process for Business 
 |Upgrade Javascript-based control add-ins to new versions available on [!INCLUDE[server](../developer/includes/server.md)]. |[See...](converting-a-database.md#extensions)|
 |(Single-tenant mode only) Install the V2 extensions that were previously uninstalled.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
 |If the old database used first-party V1 extensions, publish and install the V2 extensions that replace them.|[See...](converting-a-database.md#extensions)||
-|Transition custom code from old codeunit 1 to management codeunits.|[See...](transition-from-codeunit1.md)||
-|Configure pages and reports included in the MenuSuite to be searchable in the Web client |[See...](upgrade-pages-report-for-search.md) ||
+|Transition custom code from old codeunit 1 to management codeunits. (Dynamics NAV 2018 and earlier)|[See...](transition-from-codeunit1.md)||
+|Configure pages and reports included in the MenuSuite to be searchable in the Web client  (Dynamics NAV 2018 and earlier)|[See...](upgrade-pages-report-for-search.md) ||
+|Build object search index. |||
 |Upload the customer license. |[See...](../cside/cside-upload-license-file.md)||

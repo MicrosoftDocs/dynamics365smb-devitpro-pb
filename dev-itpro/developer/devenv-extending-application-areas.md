@@ -13,7 +13,7 @@ ms.author: solsen
 ms.date: 02/12/2019
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Extending Application Areas
 
