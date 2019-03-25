@@ -32,4 +32,6 @@ To format a range, in an already opened project, open the document that you want
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
-[AL Outline View](devenv-al-outline-view.md)
+[AL Outline View](devenv-al-outline-view.md)  
+[AL Code Actions](devenv-code-actions.md)  
+
