@@ -14,6 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
+<!--This topic is deprected, see redirection URL-->
 
 # TextBuilder Class
 TextBuilder can performantly concatenate multiple bigger strings together. The following methods are available on the TextBuilder class.  

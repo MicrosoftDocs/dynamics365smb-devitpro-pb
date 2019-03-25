@@ -14,6 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
+<!--This topic is deprected, see redirection URL-->
 
 # Replace Method
 Replaces all occurrences of a specified string in this instance with another specified string.  

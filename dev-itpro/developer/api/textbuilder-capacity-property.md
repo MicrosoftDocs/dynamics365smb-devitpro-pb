@@ -14,6 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
+<!--This topic is deprected, see redirection URL-->
 
 # Capacity Property
 Gets or sets the maximum number of characters that can be contained in the memory allocated by the current instance.  
