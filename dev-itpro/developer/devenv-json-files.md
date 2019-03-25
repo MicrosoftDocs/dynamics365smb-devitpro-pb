@@ -86,5 +86,5 @@ The platform symbol file contains all of the base app objects that your extensio
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Debugging in AL](devenv-debugging.md)  
-[Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md)
+[Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
