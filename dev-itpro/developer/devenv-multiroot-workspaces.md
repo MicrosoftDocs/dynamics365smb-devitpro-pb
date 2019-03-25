@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Working with multiple AL project folders within one workspace
 Visual Studio Code offers the multi-root workspace feature which enables grouping different project folders into one workspace. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality and allows you to work with multiple AL folders including roots and projects within one workspace. 
