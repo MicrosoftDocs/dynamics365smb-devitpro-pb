@@ -11,16 +11,16 @@ author: SusanneWindfeldPedersen
 # Working With Media on Records
 This topic describes how you can upload media, such as an image, to the database for displaying with records in the client. There are two ways that you can do this:  
 
--   Use a BLOB data type  
+- Use a BLOB data type  
 
-     You add media to a BLOB data type field on the record.  For more information, see [BLOB Data Type](datatypes/devenv-BLOB-Data-Type.md).
+You add media to a BLOB data type field on the record. For more information, see [BLOB Data Type](datatypes/devenv-BLOB-Data-Type.md).
 
--   Use a Media or MediaSet data type  
+- Use a Media or MediaSet data type  
 
-    This way enables you to store media in system tables of the database, and then reference the media from application records. <!--NAV For applications that are developed for the [!INCLUDE[nav_web](includes/nav_web_md.md)] and [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)], y--> For example, you can: 
-    -   Display media with records in list type pages, when the page is viewed in the Brick layout.  
-    -   Display media on a card type page for a record.
-    -   Display media in a report.
+This way enables you to store media in system tables of the database, and then reference the media from application records. <!--NAV For applications that are developed for the [!INCLUDE[nav_web](includes/nav_web_md.md)] and [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)], y--> For example, you can: 
+- Display media with records in list type pages, when the page is viewed in the Brick layout.
+- Display media on a card type page for a record.
+- Display media in a report.
 
 Using the Media or MediaSet data type provides better performance than using a BLOB data type and is more flexible in its design. With a BLOB data type, each time the media is rendered in the client, it is retrieved from the SQL database server, which requires extra bandwidth and affects performance. With the Media and MediaSet data types, the client uses media ID to cache the media data, which in turn improves the response time for rendering the media in the user interface.  
 

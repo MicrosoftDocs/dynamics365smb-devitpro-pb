@@ -10,8 +10,6 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
- 
-
 # Using the Code Analysis Tool
 This topic shows how you can use static code analysis tool on an AL project from within Visual Studio Code.
 
