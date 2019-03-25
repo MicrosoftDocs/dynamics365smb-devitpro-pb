@@ -29,7 +29,7 @@ If your app only supports a limited number of locales, you can specify that as w
 ```json
   "contextSensitiveHelpUrl": "https://mysite.com/{0}/documentation",
   "supportedLocales": [
-    "en-GB"
+    "en-GB", "en-IE
   ],
 ```
 
@@ -40,7 +40,7 @@ Specifically for localization apps that bring [!INCLUDE [prodshort](../developer
 ```json
   "helpBaseUrl": "https://mysite.com/{0}/documentation",
   "supportedLocales": [
-    "en-GB", "en-IE
+    "ca-es"
   ],
 ```
 
