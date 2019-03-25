@@ -86,7 +86,7 @@ FieldError has the following syntax.
 Record.FieldError(Field, [Text])  
 ```  
 
-This method is very similar to the ERROR method. However, in the FieldError method, if the name of a field is changed, for example, translated to another language, in the Table Designer, the message from the FieldError method will reflect the current name of the field.  
+This method is very similar to the Error method. However, in the FieldError method, if the name of a field is changed, for example, translated to another language, in the Table Designer, the message from the FieldError method will reflect the current name of the field.  
 
 The following examples show how to use the FieldError method. These examples require that you create the following variable.  
 
@@ -204,5 +204,5 @@ The Validate method is useful for centralizing processing, which makes your appl
 
 For example, if the OnValidate trigger of the Total Amount field performs a calculation that uses values from three other fields as operands, the calculation must be performed again if the contents of any one of these fields changes. You should avoid entering the calculation formula in the OnValidate triggers of each field because this can create errors if the calculation formula has to be changed later and you have to update the code in all the triggers. Instead, you should enter the calculation formula in the OnValidate trigger of only one of the fields and call this trigger code from the OnValidate triggers of the other fields.
 
+## See Also
 [AL Methods](methods-auto/library.md)  
-
