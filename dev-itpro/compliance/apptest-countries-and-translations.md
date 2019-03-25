@@ -10,17 +10,17 @@ ms.service: "dynamics365-business-central"
 ms.author: soalex
 ---
 
-# Countries and Translations Supported
+# Countries/Regions and Translations Supported
 
-This page lists the countries that are supported with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and the supported languages for each country version. If you are developing an extension, this table provides the guideline for the translations your extension must support.
+This page lists the countries/regions that are supported with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and the supported languages for each country/region version. If you are developing an extension, this table provides the guideline for the translations your extension must support.
 
-|Country|Language Code|
+|Country/Region|Language Code|
 |-------|-------------|
 |Australia|en-AU|
 |Austria|de-AT|
 |Belgium|nl-BE<br>fr-BE|
 |Canada|en-CA <br>fr-CA|
-|Czech Republic **(on-premises only)**|cs-CZ|
+|Czechia **(on-premises only)**|cs-CZ|
 |Denmark|da-DK|
 |Germany|de-DE|
 |Finland|fi-FI|
@@ -38,14 +38,14 @@ This page lists the countries that are supported with [!INCLUDE[d365fin_long_md]
 |United Kingdom|en-GB|
 |United States|en-US|
 
-## Partner Supported Countries and Translations
+## Partner Supported Countries/Regions and Translations
 
-In countries, where Microsoft has not delivered a localization, partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. You can apply for access to build a localization on top of the international (W1) version of Dynamics 365 Business Central. The following table provides the list of countries and translations supported through partners.
+In countries, where Microsoft has not delivered a localization, partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. You can apply for access to build a localization on top of the international (W1) version of Dynamics 365 Business Central. The following table provides the list of countries/regions and translations supported through partners.
 
-|Country|Language Code|
+|Country/Region|Language Code|
 |-------|-------------|
 |Estonia|et-EE|
-|Hong Kong|zh-HK|
+|Hong Kong SAR|zh-HK|
 |Indonesia|en-US|
 |Japan|ja-JP|
 |Malaysia|en-US|
@@ -55,6 +55,7 @@ In countries, where Microsoft has not delivered a localization, partners can bui
 |South Africa|en-ZA|
 |South Korea|ko-KR|
 |Taiwan|zh-TW|
+|Thailand|en-US|
 |United Arab Emirates|en-US|
 
 ## See Also
