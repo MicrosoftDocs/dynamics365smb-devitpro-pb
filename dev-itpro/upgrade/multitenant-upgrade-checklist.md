@@ -31,8 +31,8 @@ This article provides an overview of the full upgrade process for Business Centr
 |Upgrade the application code.|[See...](upgrading-the-application-code.md)|
 |Mount the upgraded application on the [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication)||
 |Import upgrade toolkit (.fob)|[See...](../cside/cside-import-objects.md)||
-|Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-data-multitenant.md#AddExtensions)|
-|Publish the new Microsoft extension versions from the installation media.|[See...](upgrading-the-data-multitenant.md#PublishNew)||
+|Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-application-code.md#AddExtensions)|
+|Publish the new Microsoft extension versions from the installation media.|[See...](upgrading-the-application-code.md#PublishNew)||
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 
 ## Prepare the tenant database for data upgrade
