@@ -23,7 +23,7 @@ You can choose from the following action menus to place the actions in the speci
   
 |Area |Syntax| Used on|Description|Example|  
 |---------------|--|-------|-----------|-------|  
-|Actions menu|``area(processing)``| Role Center, list, card, and task pages|User tasks|Post a sales order|
+|Actions menu|`area(processing)`| Role Center, list, card, and task pages|User tasks|Post a sales order|
 |New document group in Actions menu|``area(creation)`` |List, card, Role Center pages, and task pages|Actions that appear under the New group. Opens a new [!INCLUDE[d365fin_md](includes/d365fin_md.md)] document.|New sales invoice|  
 |Navigate menu|``area(navigation)`` |List, card, and task pages|Links to other pages in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|Prices|  
 |Report menu|``area(reporting)`` |Role Center, list, card, and task pages|A list of available reports.|Customer Top 10 List| 
@@ -32,8 +32,8 @@ The following Actions are related to the Role Center page.
 
 |Area |Syntax |Used on |Description |Example |  
 |-----|----------------|-------|-----------|-------| 
-|Navigation menus|``area(sections)``|Role Center pages|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. |Posted sales invoices|  
-|Navigation bar|``area(embedding)``|Role Center pages|The second-level navigation displays a flat list of links to other pages.|Customers|  
+|Navigation menus|`area(sections)`|Role Center pages|The top-level navigation consists of one or more root items that expand to display a submenu of links to other pages. |Posted sales invoices|  
+|Navigation bar|`area(embedding)`|Role Center pages|The second-level navigation displays a flat list of links to other pages.|Customers|  
 
 For more information about actions used on the role center page, see [Designing Role Centers](devenv-designing-role-centers.md).
  
@@ -50,8 +50,7 @@ Example: The Sales Orders list page at CRONUS International contains all actions
 Pages can have the following actions as described in each section below.  
   
 ## Actions menu
-The Actions menu is a displayed in the action bar on all page types, and contains relevant tasks for the current page. Typically, you add processing tasks and creation tasks in the Actions menu. To add processing actions such as posting a sale order, you must use the ``processing`` action area. They are regular daily tasks. Therefore, they must be on the Actions menu. 
-For examples on how to add actions to the Actions menu, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md). 
+The Actions menu is a displayed in the action bar on all page types, and contains relevant tasks for the current page. Typically, you add processing tasks and creation tasks in the Actions menu. To add processing actions such as posting a sale order, you must use the ``processing`` action area. They are regular daily tasks. Therefore, they must be on the Actions menu. For examples on how to add actions to the Actions menu, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md). 
 
 Some examples from the Customer page are as follows:
   
@@ -69,10 +68,10 @@ Some examples from the Customer page are as follows:
   
 - Line Discounts  
 
-You can add actions to the Actions menu, group actions together under action submenus, or promote them to the ribbon. For examples of how to use actions, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
+You can add actions to the Actions menu, group actions together under action sub menus, or promote them to the ribbon. For examples of how to use actions, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
   
 ### New Document menu
-The New Document menu is often displayed both as a top-level menu in the actions bar and as a submenu in the Actions menu. You can use this menu to open new documents within [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can add an action to create a new document such as creating a new sales invoice. This action displays in a separate menu called **New document** in the Actions menu. To add to the New document menu, you must use the ``creation`` action area.
+The New Document menu is often displayed both as a top-level menu in the actions bar and as a sub menu in the Actions menu. You can use this menu to open new documents within [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can add an action to create a new document such as creating a new sales invoice. This action displays in a separate menu called **New document** in the Actions menu. To add to the New document menu, you must use the ``creation`` action area.
   
 Example: On the Customers page, if the order processor wants to create a new invoice, she can open the new page directly from the Actions menu. This is useful as she creates new sales invoices daily. 
 
