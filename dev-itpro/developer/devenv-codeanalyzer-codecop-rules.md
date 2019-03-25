@@ -15,7 +15,7 @@ redirect_url: analyzers/codecop
 
 <!-- This topic is redirected because it has been automated -->
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # CodeCop Analyzer Rules 
 CodeCop is an analyzer that enforces the official AL Coding Guidelines.
