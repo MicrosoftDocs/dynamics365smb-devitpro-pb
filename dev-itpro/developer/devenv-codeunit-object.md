@@ -15,13 +15,13 @@ caps.latest.revision: 18
 ---
 
 # Codeunit Object
-A codeunit is a container for AL code that you can use in many application objects. 
+A codeunit is a container for AL code that you can use in many application objects. You typically implement business logic in codeunits and call the codeunit from the object that needs to perform that specific logic.
 
 ## Snippet support
 Typing the shortcut `tcodeunit` will create the basic layout for a codeunit object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Codeunit example
-This codeunit example checks whether a given customer has registered a shoesize. If not, the customer is assigned a shoesize of 42.
+This codeunit example checks whether a given customer has registered a shoe size. If not, the customer is assigned a shoe size of 42.
 
 ```
 codeunit 50113 CreateCustomer

@@ -13,8 +13,6 @@ ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
- 
-
 # Deploying a Tenant Customization
 
 When you have finished developing and testing your tenant customization, you must deploy the extension (.app file) containing the customization to your customer’s production tenant. You must be able to log into the customer’s tenant as a user with permissions to the **Extension Management** page to complete the deployment. 
@@ -35,16 +33,16 @@ The extension you are deploying could be the initial release of the customizatio
  
 ## Steps for deploying your .app file
 
-1.	Log into your customer’s Dynamics 365 Business Central tenant.
-2.	Open the **Extension Management** page.
-3.	Choose the **Upload Extension** action.
-4.	Select the browse button to select the .app file to upload. Browse to and select the extension’s .app file.
-5.	Select if you want to deploy for the current version (most common) or next version. Select the language for the deployment.
-6.	Choose the **Deploy** button. 
-7.	The extension will be deployed in the background.  
+1. Log into your customer’s Dynamics 365 Business Central tenant.
+2. Open the **Extension Management** page.
+3. Choose the **Upload Extension** action.
+4. Select the browse button to select the .app file to upload. Browse to and select the extension’s .app file.
+5. Select if you want to deploy for the current version (most common) or next version. Select the language for the deployment.
+6. Choose the **Deploy** button. 
+7. The extension will be deployed in the background.  
     To check the status of the deployment, choose **Deployment Status** and then view the status of the extension deployment. Select the row to see additional details.  
     In the deployment status details there is a **Refresh** button in the actions you must press to retrieve the most recent status and details.
-9.	When the extension has been successfully deployed, choose the **Refresh** button to see the new extension in the list of installed extensions.
+8. When the extension has been successfully deployed, choose the **Refresh** button to see the new extension in the list of installed extensions.
 
 
 ## See Also
