@@ -5,6 +5,7 @@
 ### [Configuring technical support](technical-support.md)
 ### [User assistance model](user-assistance.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
+#### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 <!-- deployment-->
 # [Deployment](deployment/deployment.md)
 ## Online
