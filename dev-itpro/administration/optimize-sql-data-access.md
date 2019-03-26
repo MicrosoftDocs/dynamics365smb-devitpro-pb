@@ -42,7 +42,7 @@ Results from query objects are not cached.
 
 For a call to any of the **FIND** functions, 1024 rows are cached. You can set the size of the cache by using the **Data Cache Size** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration file. The default size is 9, which approximates a cache size of 500 MB. If you increase this number by one, then the cache size doubles.  
 
-You can bypass the cache by using the [SELECTLATESTVERSION method \(Database\)](../developer/methods-auto/database/devenv-SELECTLATESTVERSION-method.md).  
+You can bypass the cache by using the [SELECTLATESTVERSION method \(Database\)](../developer/methods-auto/database/database-SELECTLATESTVERSION-method.md).  
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] synchronizes caching between [!INCLUDE[server](../developer/includes/server.md)] instances that are connected to the same database. By default, the synchronization occurs every 30 seconds.  
 
