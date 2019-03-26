@@ -538,5 +538,5 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
-# [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/)
+# [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
 <!-- preview of Graph API ends -->
