@@ -16,7 +16,8 @@ ms.service: "dynamics365-business-central"
 [!INCLUDE[nav2017](../developer/includes/nav2017.md)] is the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long.
 
 ## Defining Long Running SQL Queries 
-The time logged in long running SQL queries is the time spent on the called database as seen from the server. There are multiple reasons that can cause this delay, such as the database waiting for a lock to be released, or the database executing an operation that perfoms badly due to missing indexes.
+The time logged in long running SQL queries is the time spent on the called database as seen from the server. There are multiple reasons that can cause this delay, such as the database waiting for a lock to be released, or the database executing an operation that performs badly due to missing indexes.
+
 The threshold of when a query is logged is controlled in the configuration value of the *SqlLongRunningThreshold* key. The default value is 1000 milliseconds (ms). For more information about *SqlLongRunningThreshold*, see [Configuring Business Central Server](configure-server-instance.md), database settings section. 
 
 ## Changing Configuration Values
