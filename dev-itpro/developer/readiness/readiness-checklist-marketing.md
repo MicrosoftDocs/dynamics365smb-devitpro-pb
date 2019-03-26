@@ -46,23 +46,24 @@ diligence when developing this content.
 | REQUIREMENTS - Click on each link below for more info|
 |------------------------------------------------------|
 | [General Best Practices including Language and Branding](readiness-checklist-marketing.md#LanguageBranding) |
-| [Offer Name](readiness-checklist-marketing.md#OfferSummary)|
+| [Offer Name](readiness-checklist-marketing.md#OfferName)|
 | [Offer Summary](readiness-checklist-marketing.md#OfferSummary)|
 | [Description](readiness-checklist-marketing.md#OfferDescription)|
 | [Keywords](readiness-checklist-marketing.md#SupportedProd)|
-| [Premium SKU Listing](readiness-checklist-marketing.md)|
-| [Package and App Type](readiness-checklist-marketing.md)|
+| [Premium SKU Listing](readiness-checklist-marketing.md#SupportedEditions)|
+| [Package and App Type](readiness-checklist-marketing.md#Industries)|
 | [Supported Countries](readiness-checklist-marketing.md#CountriesLanguagesApp)|
-| [Help Link](readiness-checklist-marketing.md#HelpSupport)|
-| [Privacy Policy Link](readiness-checklist-marketing.md#Privacy)|
-| [License Agreeement](readiness-checklist-marketing.md#Privacy)|
-| [Support Link](readiness-checklist-marketing.md#HelpSupport)|
-| [Screenshots](readiness-checklist-marketing.md#Marketing)|
-| [Documents](readiness-checklist-marketing.md#Marketing)|
-| [Videos](readiness-checklist-marketing.md#Marketing)|
-| Special Rules for Localization and Connect Apps|
-| [Localization](readiness-checklist-marketing.md)|
-| [Connect Apps](readiness-checklist-marketing.md)|
+| [Help Link](readiness-checklist-marketing.md#Help)|
+| [Privacy Policy Link](readiness-checklist-marketing.md#PrivacyLicense)|
+| [License Agreeement](readiness-checklist-marketing.md#PrivacyLicense)
+| [Support Link](readiness-checklist-marketing.md#Support)|
+| [Screenshots](readiness-checklist-marketing.md#Screenshots)|
+| [Documents](readiness-checklist-marketing.md#Documents)|
+| [Videos](readiness-checklist-marketing.md#Videos)|
+| Special Rules for Localization, Connect & Consulting Services Apps|
+| [Localization Apps](readiness-checklist-marketing.md#Localization)|
+| [Connect Apps](readiness-checklist-marketing.md#Connect)|
+| [Consulting Services](readiness-checklist-marketing.md#ConsultingServices)|
 
 
 > [!IMPORTANT]  
@@ -73,7 +74,7 @@ To ease your experience with developing the store front details of your listing,
 
 The image below is an example of what an offering looks like on AppSource, when the storefront details are completed according to best practices. We highly recommend that you review these guidelines.  
 
-![StoreFront Details](../media/storefront.jpg)
+![StoreFront Details](../media/Storefront.png)
 
 
 ## <a name="LanguageBranding"></a>Language & Branding Requirements 
@@ -90,20 +91,16 @@ NOTE: If your app caters to a local language that isn’t English, you can impro
 - However, this set up implies that you need to *make two versions of all your docs, support options and landing pages.*  
 - Note, as mentioned above, everything that is accessible through the Cloud Partner Portal needs to be in English. 
 
-> [!Tip]  
-> Example of a user friendly landing page that has two language options and is set up in accordance with our best practices:
-Get inspiration on how to create a user-friendly landing page and (cf. see *“Checklist C”*) how Deex Korea Co Ltd has set up their apps landing page to accommodate two languages, and everything that this entails. You can find their landing pages here: <br>- [Deex Korea Co Ltd (English version)](http://www.deex.co.kr/index_en)<br> -[Deex Korea Co Ltd (Korean version)](http://www.deex.co.kr/)
-
 | General requirements                                          | Description                                                     | Requirements |
 |---------------------------------------------------------------|-----------------------------------------------------------------|--------------|
-| 0.B **Branding** (How to reference the Microsoft brand correctly) | Be consistent with the branding throughout your communications: | Required     |
-- Throughout all your sales, communication and marketing materials, all references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct branding and UI, cf. either **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. 
+| 0.B **Branding** (How to reference the Microsoft brand correctly) | Be consistent with the branding throughout your communications: Throughout all your sales, communication and marketing materials, all references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct branding and UI, cf. either **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.  | Required     |
+
 
 Make sure to make the right reference throughout your content:
 - Based on the new branding guidelines, the full name, **Microsoft Dynamics 365 Business Central**, must be used in its entirety at first mention on the page, and at all prominent locations such as titles, headings etc.
 - Subsequent mentions can drop "Microsoft" and simply just reference **Dynamics 365 Business Central**. 
 
-Please reference [Microsoft Dynamics 365 branding rules documentation](https://mbs.microsoft.com/Files/partner/365/Training/PartnerGuidelinesforusingtheMicrosoftDynamics365Brand.pdf) on Microsoft Collaborate.
+Please reference [Microsoft Dynamics 365 branding rules documentation](https://worldready.cloudapp.net/Styleguide/Read?id=2858&topicid=44517 ).
 - Don’t include Microsoft names, logos or trademarks in your offer
 - Don’t use Dynamics 365 names, logos or trademarks in your offering’s: name, URL, your company name, your social media account names or any other names you might use.
 - Don’t make references to acronyms, old brand names or demo old UIs
@@ -116,9 +113,9 @@ Don’t make any references in any text, screenshots, title bars, Webclient, spo
 Referencing above acronyms, old brand names and old UIs will make your app fail marketing validation promptly.
 
 > [!NOTE]  
-> All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, Business Central, D365 or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.
+> All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, D365 or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.
 
-## <a name="OfferSummary"></a>Offer Name and Offer Summary
+## <a name="OfferSummary"></a>Offer Name 
 
 | General requirements | Description |Requirements |
 |----------------------|-------------|-------------|
@@ -157,7 +154,9 @@ How to create a good offer name
 - Does it limit us in any way? How easily will it translate into other languages/cultures?
 - Is it too much like another product and will it cause market confusion?
 
-## Offer Details
+![StoreFront Details](../media/Storefront.png)
+
+## <a name="OfferSummary"></a>Offer Summary
 
 | Offer Details  | Description | Requirements |
 |----------------|-------------|--------------|
@@ -316,6 +315,7 @@ How to format this paragraph? Format this section as a paragraph
 > [!TIP]  
 > *Example:* *Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.*
 
+## <a name="SupportedEditions"></a>Supported Editions - Premium SKU 
 | Offer Details                                        | Description                                                                                                                                           | Requirements |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 2.F Offer Description **(Supported editions paragraph)** | Finally, insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
@@ -383,7 +383,7 @@ and the html tags used:
 | 9. **App version**                 | Enter the latest version number of your offer *Example:* *2.0.22794.0*  | Recommended  |
 | 10. **App release date** | Enter the date (dd/mm/yyyy) when you expect your app to be released or leave this field blank. | Recommended  |
 
-## <a name="Marketing"></a>Marketing Artifacts - Logo, Videos, Screenshots, Documents
+## <a name="OfferLogo"></a>Marketing Artifacts - Offer Logo
 
 | Marketing artifacts                                                | Description                                | Requirements |
 |--------------------------------------------------------------------|--------------------------------------------|--------------|
@@ -404,7 +404,7 @@ Structure
 - All colors can be achieved by merging RGB (red, green, and blue) light, but monitors display only a limited range of the visible spectrum at a lowmedium resolution, usually 72-75 dots per inch. 
 - Print production usually requires a four-color process CMYK (cyan, magenta, yellow, black) in high resolution of at least 300 dpi.
 
-
+## <a name="Videos"></a>Marketing Artifacts - Videos
 | Marketing artifacts                  | Description                                                                                 | Requirements |
 |---------------------|---------------------------------------------------------------------------------------------|--------------|
 | 15. **Videos**          | Pictures tell more than a 100 words – make sure to leverage this when promoting your offer. | Recommended  |
@@ -450,6 +450,7 @@ Note: On AppSource videos will play when customers select the associated video t
 >   *Example:* *URL to YouTube video Thumbnail image*
 >   [How Cortana helps manage inventory in](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s) [Dynamics 365 Business Central](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
 
+## <a name="Documents"></a>Marketing Artifacts - Documents
 | Marketing artifacts                  | Description                                                                                                                                            | Requirements |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 16. **Documents** (Learn more documents) | Enable prospects to learn more about your offer by adding supporting sales and marketing assets in the “learn more” section of the storefront details. | Required     |
@@ -471,6 +472,7 @@ When uploading a document in the in the Cloud Partner Portal you need to provide
 - A name for your document (cf. customers will see this name on your app's details page) 
 - Upload the doc you want to include in your storefront details
 
+## <a name="Screenshots"></a>Marketing Artifacts - Screenshots
 | Marketing artifacts | Description | Requirements |
 |---------------------|-------------|--------------|
 | 17. **Screenshots**     | Pictures speak more directly to our brain than words. Your screenshots should therefore clearly demonstrate the claims you make and the functionality of your offer. | Required| 
@@ -544,7 +546,7 @@ Note, this isn't a password and can only contain alphanumeric characters. *Examp
 search keywords and hide key fields (cf. point 10,11,12 and 13) in the “Listing
 details” section of the Cloud partner portal:
 
-## <a name="HelpSupport"></a>Help & Customer Support
+## <a name="Help"></a>Help URL
 
 | Listing details | Description | Requirements |
 |-----------------|-------------|--------------|
@@ -573,6 +575,7 @@ The help page needs to include online documentation that can be used as help.
 languages and app version fields (cf. point 6,7,8 and 9) in the “Listing
 details” section of the Cloud partner portal:
 
+## <a name="Support"></a>Support URL
 | Customer support | Description | Requirements |
 |------------------|-------------|--------------|
 | 20. **Support URL**  | Formatting  *It is a requirement that the support page is written in English.* It is a requirement that you provide different (i.e. more than two) contact options on your app landing page. | Required     |
@@ -598,7 +601,7 @@ How to upload your support page to the Cloud Partner Portal?
 >   *Example:* of the completed screenshot fields (cf. point 20) in the “Customer
 Support” section of the Cloud partner portal:
 
-## <a name="Privacy"></a>Privacy Policy, Terms of Use
+## <a name="PrivacyLicense"></a>Privacy Policy & Terms of Use
 
 | Legal                                | Description | Requirements |
 |--------------------------------------|-------------|--------------|
@@ -631,3 +634,18 @@ Choose which contact options that you want to include
 
 > [!TIP]
 >   *Example:* of the completed screenshot fields (cf. point 21) in the “Customer Support” section of the Cloud partner portal:
+
+## <a name="Localization"></a>Localization Apps
+
+> [!TIP]
+Learn how [Development of a Localization Solution.](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization)
+
+## <a name="Connect"></a>Connect Apps
+
+> [!TIP]
+Learn how [Developing Connect Apps for Dynamics 365 Business Central.](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps) 
+
+## <a name="ConsultingServicees"></a>Consulting Services App
+
+> [!TIP]
+Learn how [AppSource Consulting Services.](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-consulting) 
