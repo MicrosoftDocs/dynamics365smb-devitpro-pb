@@ -154,7 +154,7 @@ How to create a good offer name
 - Does it limit us in any way? How easily will it translate into other languages/cultures?
 - Is it too much like another product and will it cause market confusion?
 
-![StoreFront Details](../media/Storefront.png)
+![Storefront Detail - Offer Name](../media/OfferName.png)
 
 ## <a name="OfferSummary"></a>Offer Summary
 
@@ -174,6 +174,8 @@ If you need help formulating a positioning statement, try the value proposition 
 > [!Tip]  
 > *Example:* *Use reliable forecasting to help ensure that you always have the items your
 customers want.*
+
+![Storefront Detail - Offer Summary](../media/OfferSummary.png)
 
 ## <a name="OfferDescription"></a>Offer Description 
 
@@ -373,6 +375,7 @@ and the html tags used:
 
  \<h2\>\<em\>Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?\</em\>\</h2\> \<p\>Managing inventory is a delicate balancing act. Carry too little and you lose orders (and customers). Carry too much and you tie up much needed working capital. Carry far too much and you end up discounting, or worse, writing off obsolete products.\</p\> \<p\>Our app uses Cortana Intelligence to analyze historical data to predict future demand, so you can base procurement decisions on accurate and reliable forecasts, and help your company avoid lost revenue, optimize shipping costs, discover trends and boost your brand reputation by always delivering on orders.\</p\> \<p\>Stop relying on basic spreadsheets that take hours of valuable time to complete. Turn anxiety into proactive control and manage this critical business process in minutes by using Microsoft Sales and Inventory Forecast app.\</p\> \<h3\>\<strong\>Features and benefits of using this app\</strong\>\</h3\> \<ul\> \<li\>Free up cash\</li\> \<li\>Know exactly when to replenish stock\</li\> \<li\>Always have inventory on hand to satisfy every customer order\</li\> \</ul\> \<p\>\&nbsp;\</p\> \<p\>Click the \<strong\>Get it now\</strong\> button and start aligning your inventory replenishment with your customer demand. Your customers and sales team will love you for it.\</p\> \<h3\>\<strong\>Supported editions:\</strong\>\</h3\> \<p\>This app supports both the Essential and Premium editions of Microsoft Dynamics 365 Business Central.\</p\> \<p\> \<h3\>\<strong\>Supported countries:\</strong\>\</h3\> \<p\>Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Italy, Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States\</p\> \</p\>
 
+![Storefront Detail - Offer Description](../media/Description.png)
 
 ## <a name="CountriesLanguagesApp"></a>Supported Countries, Languages, App Version, App Release Date
 
@@ -396,6 +399,8 @@ You are required to provide two offer logos on AppSource:
 - one in 216x216 pixels resolution for your app’s details page:
 - Both logos needs to be uploaded as .png images
 
+![Storefront Detail - Offer Logo](../media/OfferLogo.png)
+
 Structure
 - Your logo should be designed and optimized for a digital medium, not a traditional print based logo.
 - Monitors emit light and paper absorbs light.
@@ -403,6 +408,8 @@ Structure
 - Color calibration across devices can affect the look and feel of your app:
 - All colors can be achieved by merging RGB (red, green, and blue) light, but monitors display only a limited range of the visible spectrum at a lowmedium resolution, usually 72-75 dots per inch. 
 - Print production usually requires a four-color process CMYK (cyan, magenta, yellow, black) in high resolution of at least 300 dpi.
+
+![Storefront Detail - Logo](../media/Logo.png)
 
 ## <a name="Videos"></a>Marketing Artifacts - Videos
 | Marketing artifacts                  | Description                                                                                 | Requirements |
@@ -450,6 +457,8 @@ Note: On AppSource videos will play when customers select the associated video t
 >   *Example:* *URL to YouTube video Thumbnail image*
 >   [How Cortana helps manage inventory in](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s) [Dynamics 365 Business Central](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
 
+![Storefront Detail - Videos](../media/Videos.png)
+
 ## <a name="Documents"></a>Marketing Artifacts - Documents
 | Marketing artifacts                  | Description                                                                                                                                            | Requirements |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -471,6 +480,8 @@ Examples of Sales and marketing docs you can include as your “Learn more” as
 When uploading a document in the in the Cloud Partner Portal you need to provide the following:
 - A name for your document (cf. customers will see this name on your app's details page) 
 - Upload the doc you want to include in your storefront details
+
+![Storefront Detail - Documents](../media/Documents.png)
 
 ## <a name="Screenshots"></a>Marketing Artifacts - Screenshots
 | Marketing artifacts | Description | Requirements |
@@ -512,6 +523,8 @@ When uploading a screenshot in the in the Cloud Partner Portal you need to provi
 > [!TIP]
 >   *Example:* of the completed screenshot fields (cf. point 17) in the “Marketing
 artifacts” section of the Cloud partner portal:
+
+![Storefront Detail - Screenshots](../media/Screenshots.png)
 
 ## <a name="Industries"></a>Industries, Categories, App Type
 
@@ -575,6 +588,8 @@ The help page needs to include online documentation that can be used as help.
 languages and app version fields (cf. point 6,7,8 and 9) in the “Listing
 details” section of the Cloud partner portal:
 
+![Storefront Detail - Support & Help Links](../media/SupportHelp.png)
+
 ## <a name="Support"></a>Support URL
 | Customer support | Description | Requirements |
 |------------------|-------------|--------------|
@@ -617,6 +632,8 @@ Support” section of the Cloud partner portal:
 
 > [!TIP]
 >   *Example:* of the completed screenshot fields (cf. point 18 and 19) in the “Legal” section of the Cloud partner portal)
+
+![Storefront Detail - Privacy Policy & License Agreement](../media/PrivacyLicense.png)
 
 ## Lead Management
 
