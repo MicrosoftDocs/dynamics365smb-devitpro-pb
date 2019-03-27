@@ -12,11 +12,9 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
- 
-
 # Using Designer
 
-When developing extensions in the AL development environment you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code, as it provides an easy and convenient way of making immediate adjustments to your design by simply dragging and dropping the components on the page.  
+When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code, as it provides an easy and convenient way of making immediate adjustments to your design by simply dragging and dropping the components on the page.  
 
 Here is a quick overview of capabilities in **Designer**: 
 
@@ -51,16 +49,13 @@ Here is a quick overview of capabilities in **Designer**:
 
 In the [!INCLUDE[prodshort](includes/prodshort.md)] client, you start Designer by choosing ![Settings icon](media/settings_icon_small.png) **Designer** in the top right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut, which launches a browser that opens the [!INCLUDE[prodshort](includes/prodshort.md)] client in Designer.
 
-After you are done with the adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the code using the **Ctrl+F7** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there. 
-
-> [!NOTE]  
-> With this preview you can only add existing table fields. Adding pages, groups, parts, and actions is not yet supported.
+After you are done with the adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the code using the **Ctrl+F7** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there.
 
 ![Designer](media/usingDesigner.gif)
 
 ## Drag-and-drop components
 
-In Designer, you design and modify the current page; you can add existing table fields, move fields around, or remove fields from the page. You can make changes to display the information by using drag-and-drop components. 
+In Designer, you design and modify the current page; you can add existing table fields, move fields around, remove fields from the page, hide and move actions, and more. You can make changes to display the information by using drag-and-drop components. 
 
 ## Working with fields
 
@@ -76,17 +71,17 @@ You can edit the caption of a FastTab for a group of fields by selecting the cap
 
 ## Setting the Importance on Field
 
-Fields on non-list type pages, such as card and document type pages, include Designer options for setting the importance. The following table describes the options for setting the importance in Designer and how it corresponds to the  [Importance property](properties/devenv-importance-property.md) in the page code.
+Fields on non-list type pages, such as card and document type pages, include Designer options for setting the importance. The following table describes the options for setting the importance in Designer and how it corresponds to the [Importance property](properties/devenv-importance-property.md) in the page code.
 
 |Option|Description|Importance property value|
 |----|----|---|
-|**Show under "Show more"**|Sets the field so that only appears when the user selects **Show more**. |Additional|
-|**Show always**|Sets the field to always display on the page (regardless of whether the user selects **Show more** or **Show less**) but not in the FastTab heading if it is collapsed. <br /><br />If this option is available|Standard|
+|**Show under "Show more"**|Sets the field so that appears only when the user selects **Show more**. |Additional|
+|**Show always**|Sets the field to always display on the page (regardless of whether the user selects **Show more** or **Show less**) but not in the FastTab heading if it is collapsed.|Standard|
 |**Show when collapsed**|Sets the field to always display on the page (regardless of whether the user selects **Show more** or **Show less**) and also in the header of the FastTab when the FastTab is collapsed.|Promoted|
 
 ## Setting the Quick Entry on Fields
 
-You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is given input focus or skipped when users navigate through fields on a page by pressing the return key. You use it to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill-in.
+You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is given input focus or skipped when users navigate through fields on a page by pressing the ENTER (return) key. You use Quick Entry to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill-in.
 
 To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
