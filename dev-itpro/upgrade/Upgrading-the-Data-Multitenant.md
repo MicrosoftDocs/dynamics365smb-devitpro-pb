@@ -278,4 +278,4 @@ You perform these tasks on each tenant that you want to upgrade.
 
 ## See Also  
  [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
- [Upgrading to Microsoft Dynamics NAV](upgrading-to-business-central.md)
+ [Upgrading to Business Central](upgrading-to-business-central.md)

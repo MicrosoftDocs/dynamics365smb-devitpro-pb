@@ -50,9 +50,12 @@
 <!-- administration-->
 # [Administration](administration/administration.md)
 ## Online
+### [Administration of Business Central Online](administration/tenant-administration.md)
 ### [Administration Center](administration/tenant-admin-center.md)
-### [Administration Center API](administration/administration-center-api.md)
-### [Tenant Administration](administration/tenant-administration.md)
+#### [Managing Environments](administration/tenant-admin-center-environments.md)
+#### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
+#### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
+#### [Administration Center API](administration/administration-center-api.md)
 ### Automation
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
@@ -514,6 +517,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ## [Before You Upgrade](upgrade/Upgrade-Considerations.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
+### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
 ### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
 ### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
 ### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)

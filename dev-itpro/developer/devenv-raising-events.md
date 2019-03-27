@@ -18,7 +18,7 @@ After an event has been published by an event publisher method, you can modify t
 
 To raise an event, you add logic in AL code of the application to call the event publisher method that declares the event. The procedure for calling the event publisher method is the same as calling any other method in AL.  
 
-When the code that calls the event publisher method is run, all event subscriber methods that subscribe to the event are run. If there are multiple subscribers, the subscriber methods are run one at a time in random order. You cannot specify the order in which the subscriber methods are called.   
+When the code that calls the event publisher method is run, all event subscriber methods that subscribe to the event are run. If there are multiple subscribers, the subscriber methods are run one at a time in no particular order. You cannot specify the order in which the subscriber methods are called.   
 
 If there are no subscribers to the published event, then the line of code that calls the event publisher method is ignored and not executed.  
 

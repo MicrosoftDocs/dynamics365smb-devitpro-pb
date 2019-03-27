@@ -42,7 +42,7 @@ Results from query objects are not cached.
 
 For a call to any of the **FIND** functions, 1024 rows are cached. You can set the size of the cache by using the **Data Cache Size** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration file. The default size is 9, which approximates a cache size of 500 MB. If you increase this number by one, then the cache size doubles.  
 
-You can bypass the cache by using the [SELECTLATESTVERSION method \(Database\)](../developer/methods/devenv-SELECTLATESTVERSION-method-Database.md).  
+You can bypass the cache by using the [SELECTLATESTVERSION method \(Database\)](../developer/methods-auto/database/database-SELECTLATESTVERSION-method.md).  
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] synchronizes caching between [!INCLUDE[server](../developer/includes/server.md)] instances that are connected to the same database. By default, the synchronization occurs every 30 seconds.  
 
@@ -63,7 +63,7 @@ There is no longer a one-to-one correlation between the number of client connect
  Records are retrieved using Multiple Active Result Sets \(MARS\). methods such as NEXT, FIND\('-'\), FIND\('+'\), FIND\('>'\), and FIND\('\<'\) are generally faster with MARS than the server cursors that earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] used.  
 
 ## Data read/write performance  
-AL functions COUNT and AVERAGE formulas can use SIFT indexes. For more information, see [CALCSUMS method \(Record\)](../developer/methods/devenv-CALCSUMS-method-Record.md) and [CALCFIELDS method \(Record\)](../developer/methods/devenv-CALCFIELDS-method-Record.md). MIN and MAX formulas use SQL Server MIN and MAX functions exclusively.  
+AL functions COUNT and AVERAGE formulas can use SIFT indexes. For more information, see [CALCSUMS method \(Record\)](../developer/methods-auto/record/record-CALCSUMS-method.md) and [CALCFIELDS method \(Record\)](../developer/methods-auto/record/record-CALCFIELDS-method.md). MIN and MAX formulas use SQL Server MIN and MAX functions exclusively.  
 
  RecordIds and SQL Variant columns in a table do not prevent the use of BULK inserts. For more information, see [Bulk Inserts](optimize-sql-bulk-inserts.md).  
 
@@ -75,7 +75,7 @@ In most cases, filtering on FlowFields issues a single SQL statement. In earlier
 
 -   You specify **Validated** for the [SecurityFiltering Property](../developer/properties/devenv-SecurityFiltering-Property.md) on a record. This value for the **SecurityFiltering** property means that each record that is part of the calculation must be verified for inclusion in the security filter.  
 
-In most cases, calling the FIND or NEXT functions after you have set the view to include only marked records issues a single SQL statement. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], calling FIND or NEXT functions that have marked records issued an SQL statement for each mark. There are some exceptions if many records are marked. For more information, see [MARKEDONLY method \(Record\)](../developer/methods/devenv-MARKEDONLY-method-Record.md).  
+In most cases, calling the FIND or NEXT functions after you have set the view to include only marked records issues a single SQL statement. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], calling FIND or NEXT functions that have marked records issued an SQL statement for each mark. There are some exceptions if many records are marked. For more information, see [MARKEDONLY method \(Record\)](../developer/methods-auto/record/record-MARKEDONLY-method.md).  
 
 ## Using SQL Server table partitioning
 As of [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], the use of SQL Server table and index partitioning is a supported configuration. The data of partitioned tables and indexes is divided into units that can be spread across more than one filegroup in a SQL Server database. All partitions of a single index or table must reside in the same database. The table or index is treated as a single logical entity when queries or updates are performed on the data. Prior to SQL Server 2016 SP1, partitioned tables and indexes were not available in every edition of SQL Server.

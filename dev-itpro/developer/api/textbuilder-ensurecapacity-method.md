@@ -14,6 +14,7 @@ manager: edupont
 author: SusanneWindfeldPedersen
 redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
+<!--This topic is deprected, see redirection URL-->
 
 # EnsureCapacity Method
 Ensures that the capacity of this instance of StringBuilder is at least the specified value.  
