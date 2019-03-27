@@ -56,7 +56,7 @@ After you are done with the adjustments, finish up your design by choosing **Sto
 > [!NOTE]  
 > With this preview you can only add existing table fields. Adding pages, groups, parts, and actions is not yet supported.
 
-![Designer](../media/new-start-design.gif)
+![Designer](media/usingDesigner.gif)
 
 ## Drag-and-drop components
 
