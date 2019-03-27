@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # The AL Formatter
 The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to automatically format their source code. This capability increases the usability of the editor by allowing developers to instantly fix the indentation and formatting of their code. 
@@ -32,4 +32,6 @@ To format a range, in an already opened project, open the document that you want
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
-[AL Outline View](devenv-al-outline-view.md)
+[AL Outline View](devenv-al-outline-view.md)  
+[AL Code Actions](devenv-code-actions.md)  
+

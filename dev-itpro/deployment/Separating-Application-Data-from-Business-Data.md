@@ -12,7 +12,8 @@ ms.service: "dynamics365-business-central"
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] separates tables that describe the application from the tables that contain business data. Depending on your deployment scenario, you can choose to store all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tables in one database, or you can export the application tables to a dedicated database. In multitenant deployments, the application must be stored in a dedicated database.  
   
-## Application Database versus Business Data Databases  
+## Application Database versus Business Data Databases
+
  The application database contains tables that describe your application. This includes a description of the objects that your application consists of, and other data that is common to all tenants. The data that users enter in your application is stored in the business data database because this data is specific to their company. Optionally, you can create multiple business data databases, such as if you want to support your customers as tenants.  
   
  When you have exported the application tables to a separate database, you can no longer access the business database from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]. This is because the metadata for the tables in the business database is stored in the application database and modified in that database.  
@@ -47,28 +48,29 @@ The application tables are system tables that define the application. Other syst
 ||**User Property**|  
 
 ## Exporting the Application Tables to a Dedicated Application Database
+
 To export the application tables from an existing database to another database, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides a [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlet as part of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
 The following procedure illustrates how you can separate the application tables in an existing database into two databases: an application database and a business data database. You can automate this process and combine it with the use of other cmdlets. For more information, see the samples in the Windows PowerShell scripts in the **…\\WindowsPowerShellScripts\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media.  
 
 ### Export the application tables to a dedicated database  
 
-1.  Stop all [!INCLUDE[server](../developer/includes/server.md)] services that access the database that you are modifying.  
+1. Stop all [!INCLUDE[server](../developer/includes/server.md)] services that access the database that you are modifying. This includes the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
-2.  Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
+2. Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
     > [!IMPORTANT]  
     >  You must run the program as administrator. Also, you must ensure that scripting is enabled on the computer.  
 
      For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).  
 
-3.  For an overview of the cmdlet, type the following command:  
+3. For an overview of the cmdlet, type the following command:  
 
     ```  
     get-help Export-NAVApplication  
     ```  
 
-4.  To export the application tables, type the following command:  
+4. To export the application tables, type the following command:  
 
     ```  
     Export-NAVApplication –DatabaseServer <server name> -DatabaseInstance <instance name> –DatabaseName <name of original database> –DestinationDatabaseName <name of new application database> -ServiceAccount <the account used by server instance if not NT AUTHORITY\NETWORK SERVICE>  
@@ -89,7 +91,7 @@ The following procedure illustrates how you can separate the application tables 
     > [!TIP]  
     >  Optionally, you can combine the Export-NAVApplication and Remove-NAVApplication cmdlets. For an example of how you can combine the two cmdlets, see the **Example** section.  
 
-5.  To remove the application tables from the original database, run the [Remove-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/remove-navapplication) cmdlet as follows:  
+5. To remove the application tables from the original database, run the [Remove-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/remove-navapplication) cmdlet as follows:  
 
     ```  
     Remove-NAVApplication –DatabaseServer <server name> -DatabaseInstance <instance name> –DatabaseName <name of the original database>  
@@ -110,7 +112,7 @@ The following procedure illustrates how you can separate the application tables 
 
     |Database name|Database type|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
     |-------------------|-------------------|---------------------------------------|  
-    |Demo Database NAV \(13-0\)|Business data database|Contains the data from the original database.|  
+    |Demo Database BC|Business data database|Contains the data from the original database.|  
     |Business Central App|Application database|Contains the tables that define the application.|  
 
     <!--
@@ -123,7 +125,7 @@ The following procedure illustrates how you can separate the application tables 
     Set-NAVServerConfiguration –ServerInstance <server instance name> –element appSettings –KeyName 'DatabaseName' –KeyValue ''
     
     ```
-7. Restart the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [Start-NAVServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navserverinstance) cmdlet: 
+7. Start the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [Start-NAVServerInstance](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navserverinstance) cmdlet: 
 
     ```
     Start-NAVServerInstance –ServerInstance <server instance name>
@@ -133,7 +135,7 @@ The following procedure illustrates how you can separate the application tables 
     ```
     Mount-NAVApplication –ServerInstance <server instance name> –DatabaseServer <server name\instance name> –DatabaseName <application database name>
     ```
-9.  Mount the business data database on the server instance by using the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet: 
+9.  Mount the business data database (tenant) on the server instance by using the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet: 
 
     ```
     Mount-NAVTenant –ServerInstance <server instance name> -Id <tenant name> –DatabaseServer <server name\instance name> -DatabaseName <business data database> -OverwriteTenantIdInDatabase  
@@ -141,7 +143,8 @@ The following procedure illustrates how you can separate the application tables 
 
 For more information, see [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).  
 
-## Example  
+## Example
+  
  The following code example illustrates how you can manually write commands in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration shell. The commands create an application database based on an existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
 
  The sample commands are assumed to run in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration shell based on the [!INCLUDE[demolong](../developer/includes/demolong_md.md)] on a local computer.  
@@ -160,7 +163,7 @@ In the example, the commands stop the [!INCLUDE[server](../developer/includes/se
 > [!TIP]  
 >  For an example of how you can automate the process of transferring user accounts from the original database to the new application database, see the HowTo-ExportNAVApplicationDatabase.ps1 sample script. This and other sample scripts are in the **…\\Windows PowerShell\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. The ExportNAVApplicationDatabase.ps1 sample script can be run in the context of the NAVUpgradeSamples.psm1 script module file. When you call a script such as this, it will export the application tables to a new application database and copy all accounts and SQL Server user roles to the application database. To only transfer the account that the [!INCLUDE[server](../developer/includes/server.md)] instance uses, use the *–ServiceAccount* parameter for the **Export-NAVApplication** cmdlet. In the examples in this topic, this parameter has not been specified. As a result, the default account, NT AUTHORITY\\NETWORK SERVICE, is set up with the required user roles.  
 
+## See Also
 
-## See Also    
- [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
+ [Migrating to Multitenancy](Migrating-to-Multitenancy.md)  
  [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)

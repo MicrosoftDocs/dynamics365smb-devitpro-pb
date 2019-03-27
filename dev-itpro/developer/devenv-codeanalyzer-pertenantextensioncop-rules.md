@@ -15,7 +15,7 @@ redirect_url: analyzers/pertenantextensioncop
 
 <!-- This topic is redirected because it has been automated -->
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # PerTenantExtensionCop Analyzer Rules 
 PerTenantExtensionCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants.

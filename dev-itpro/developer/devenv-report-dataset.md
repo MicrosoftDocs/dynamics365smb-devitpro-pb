@@ -14,20 +14,20 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Defining a Report Dataset
 You use a report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] to define the data model, or dataset, of a report. The dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. For more information, see [Report Object](devenv-report-object.md).
 
 You build the report dataset from data items and columns. A data item is a table. A column can be: 
 
--   A field in a table 
+- A field in a table 
 
--   A variable
+- A variable
 
--   An expression 
+- An expression 
 
--   A text constant
+- A text constant
 
 Typically, data items and columns correspond to fields in a table. When the report is run, each data item is iterated for all records in the underlying table. Filters are applied and the dataset is created. 
 When a report is based on more than one table, you must set relations between the data items so that you can retrieve and organize the data. 
