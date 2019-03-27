@@ -292,6 +292,32 @@ You perform these tasks on each tenant that you want to upgrade.
 
     For more information, see [Exporting and Importing Encryption Keys](how-to-export-and-import-encryption-keys.md).
 
+3.  (Optional) Update Web Server instance configuration file
+
+    If you have installed the [!INCLUDE[webserver](../developer/includes/webserver.md)], populate the navsettings.json file for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance with the settings of the old web.config file or navsettings.json.
+    
+    - If the old deployment used a web.config file, then you have to manually change the settings in the navsetting.json file that is used on the new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.
+    
+    - If you upgraded from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018, you can replace the navsettings.json file on the new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance with the old file. However, as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019, the following  settings are now configured under a root element called `ApplicationIdSettings` instead of the root element `NAVWebSettings`.
+    
+        - `AndroidPrivacy`
+        - `AndroidSoftwareLicenseTerms`
+        - `AndroidThirdPartyNotice`
+        - `BaseHelpUrl`
+        - `BaseSettingsSectionName`
+        - `CommunityLink`
+        - `FeedbackLink`
+        - `IosPrivacy`
+        - `IosSoftwareLicenseTerms`
+        - `IosThirdPartyNotice`
+        - `KeyboardShortcutsLink`
+        - `PrivacyLink`
+        - `LegalLink`
+        - `SignInHelpLink`
+
+        If the old navsettings.json file uses any of these settings, then you will have to move them from the `NAVWebSettings` element to the `ApplicationIdSettings` element.
+
+    For more information about the navsettings.json file, see [Configuring Business Central Web Server Instances](../administration/configure-web-server.md).
 3. Upload the customer license.
 
     For more information, see [Uploading the License File](../cside/cside-upload-license-file.md)
