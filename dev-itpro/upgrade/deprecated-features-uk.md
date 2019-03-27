@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, United Kingdom, local functionality
-ms.date: 10/01/2018
+ms.date: 02/18/2019
 ms.author: bholtorf
 
 ---
@@ -19,6 +19,7 @@ This topic lists and describes the local functionality for the United Kingdom th
 
 ## Accounting periods and system calendar
 If your fiscal year is different than the calendar, you can measure your fiscal period in other units of time, such as months or quarters. To do this, you set up system calendars and accounting periods.
+  
 |Moved, Removed, or Replaced?| Why?|
 |----|----|
 | Removed | Lack of use. Additionally, there are standard features for accounting periods that provide most of the same functionality as the UK accounting periods. |

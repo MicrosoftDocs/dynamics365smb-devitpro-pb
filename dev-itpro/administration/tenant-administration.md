@@ -10,11 +10,14 @@ ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 02/18/2018
 ms.author: edupont
-
 ---
-# Tenant Administration for Business Central
+# Administration of Business Central Online
 
 As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you are the administrator of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants of your customers. You have access to the administration tools of their Office 365 account and their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration center where you can specify upgrade windows, for example.  
+
+## Get started with the Cloud Solution provider program
+
+You must enroll in the Cloud Solution Provider program in order to service Business Central online. In the Microsoft Partner Center documentation, you can learn how to [add a customer](/partner-center/add-a-new-customer?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml), [assign licenses to users](/partner-center/assign-licenses-to-users?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml), and [create new subscriptions](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml). [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is one of the subscriptions that you can create, and there are [!INCLUDE[prodshort](../developer/includes/prodshort.md)]-specific license types that you can assign to users.  
 
 ## Extending trials
 

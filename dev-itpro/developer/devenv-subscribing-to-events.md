@@ -18,7 +18,7 @@ To handle events, you design event subscribers. Event subscribers determine what
 
 Subscribing to an event tells the runtime that the subscriber method must be called whenever the publisher method is run, either by code (as with business and integration events) or by the system (as with trigger events). The runtime establishes the link between an event raised by the publisher and its subscribers by looking for event subscriber methods.  
 
-There can be multiple subscribers to the same event from various locations in the application code. When an event is raised, the subscriber methods are run one at a time in random order. You cannot specify the order in which the subscriber methods are called.  
+There can be multiple subscribers to the same event from various locations in the application code. When an event is raised, the subscriber methods are run one at a time in no particular order. You cannot specify the order in which the subscriber methods are called.  
 
 Be aware that changing the state may not only impact the publishing code but other subscribers as well.   
 
@@ -97,3 +97,7 @@ codeunit 70000002 MySubscriber
  [Raising Events](devenv-raising-events.md)   
  [Event Types](devenv-event-types.md)   
  [Events in AL](devenv-events-in-al.md)
+ [EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md)
+ [EventSubscriber Attribute](devenv-eventsubscriber-attribute.md)
+
+
