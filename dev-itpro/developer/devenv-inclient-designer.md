@@ -85,9 +85,11 @@ You can use Designer to set the [QuickEntry property](properties/devenv-quickent
 
 To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
+For more information about Quick Entry, from a user perspective, see [Accelerating Data Entry Using Quick Entry](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-enter-data?branch=master#QuickEntry) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+
 ## Working with Actions
 
-Designer lets you make adjustments to the actions that are defined in action bar of a page. You can move, remove, hide, and show individual actions or action groups.  
+Designer lets you make adjustments to the actions that are defined in the action bar of a page. You can move, remove, hide, and show individual actions or action groups.  
 
 ![Designer action bar](media/designer-action-bar.png "Designer action bar")
 
@@ -97,19 +99,19 @@ Actions and actions groups that are already hidden appear dimmed. To change the 
 
 |Option|What it does|
 |------|------------
-|**Remove**|This option is available for the actions that are shown in a promoted category alone or actions that are shown in both a promoted category and another action menu.<br /><br /> Choosing **Remove** deletes the action from the selected location so that it no longer appears.<br /><br /> If the action is only shown in the promoted category, it will automatically be shown in the action menu where it is originally defined.|
+|**Remove**|This option is available for the actions that are shown in a only a promoted category alone or actions that are shown in both a promoted category and another action menu.<br /><br /> Choosing **Remove** deletes the action from the selected location so that it no longer appears.<br /><br /> If the action is only shown in the promoted category, it will automatically be shown in the action menu where it is originally defined.|
 |**Hide**|This option is available for actions or action groups that currently are shown only in an action menu (not in a promoted category). Like **Remove**, choosing **Hide** will make the action or action group disappear from the action bar in the client. However, in Designer, the action or action group appears dimmed.|
 |**Show**|This option appears if the action or action group has been previously hidden (dimmed). Choosing this option will make the action or action group appear in the action bar.|
 
 ### Move actions and action groups
 
-Designer lets you move actions within the action bar. For example, you can move an action from an action menu to a promoted category or from one promoted category to another, move an action within an action group or to a different group.  
+Designer lets you move actions within the action bar. For example, you can move an action from an action menu to a promoted category or from one promoted category to another, move an action within an action group or to a different action group.  
 
 To move an action or action group, drag and drop it to the desired location, just like with fields and columns.  
 
 - You can move individual actions into the promoted categories, but you cannot change the order of the actions in the category.
 - You cannot move an action group into a promoted category.
-- To move an action or action group into another action group that is empty, drag the action or action group to the new group and drop it in the **Drop an action here** box.
+- To move an action or action group into an empty action group, drag the action or action group to the target group and drop it in the **Drop an action here** box.
 
 ## Preview design on different display targets
 
