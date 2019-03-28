@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Page Object
 Pages are the main way to display and organize visual data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. They are the primary object that a user will interact with and have a different behavior based on the type that you choose. Pages are designed independently of the device they are to be rendered on, and in this way the same page can be reused across phone, tablet, and web clients.
@@ -37,7 +37,8 @@ page Id MyPage
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = TableName;
-    
+    ContextSensitiveHelpPage = 'my-feature';
+
     layout
     {
         area(Content)
@@ -126,6 +127,7 @@ page 50101 SimpleCustomerCard
 {
     PageType = Card;
     SourceTable = Customer;
+    ContextSensitiveHelpPage = 'my-feature';
 
     layout
     {
@@ -170,8 +172,12 @@ page 50101 SimpleCustomerCard
 }
 ```
 
-## See Also  
+## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
+[Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
-[Page Extension Properties](properties/devenv-page-property-overview.md)   
+[Page and Page Extension Properties Overview](properties/devenv-page-property-overview.md)  
+[Page Properties](properties/devenv-page-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
+[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  

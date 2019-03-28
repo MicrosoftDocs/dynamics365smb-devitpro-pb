@@ -34,15 +34,7 @@ The navsettings.json file is stored in the physical path of the web server insta
         ```
         "keyname": "keyvalue",
         ```
-
-    -   In the web.config file, a setting has the format:
-
-        ```
-        <add key="keyname" value="keyvalue"/>
-        ```
-
-    
-    
+   
     The `keyname` is the name of the configuration setting and the `keyvalue` is the value.
     
     For example, the configuration setting that specifies the Windows credential type for authenticating users is:
@@ -71,52 +63,102 @@ The PowerShell script module **NAVWebClientManagement.psm1** includes the [Set-N
 2. For each setting that you want to change, at the command prompt, run the following command:
 
     ```
-    Set-NAVWebServerInstanceConfiguration -Server [MyComputer] -ServerInstance [ServerInstanceName] -WebServerInstance [MyNavWebServerInstance] -KeyName [Setting] -KeyValue [Value]
+    Set-NAVWebServerInstanceConfiguration -Server [MyComputer] -ServerInstance [ServerInstanceName] -WebServerInstance [MyBCWebServerInstance] -KeyName [Setting] -KeyValue [Value]
     ```
 
     Replace:
     -   `[MyComputer]` with the name of the computer that is running the [!INCLUDE[server](../developer/includes/server.md)]
     -   `[ServerInstanceName]` with the name of the server instance, such as **[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]**.
-    -   `[MyNavWebServerInstance]`with the name of the web server instance for the [!INCLUDE[webserver](../developer/includes/webserver.md)].
+    -   `[MyBCWebServerInstance]`with the name of the web server instance for the [!INCLUDE[webserver](../developer/includes/webserver.md)].
     -   `[KeyName]` with the name of the setting. Refer to the next section in this article.
     -   `[KeyValue]` with the new value of the setting.
 
 
-## <a name="Settings"></a>Settings in the navsettings.json  
-The following table describes the settings that are available in the navsettings.json.
+## <a name="Settings"></a>Settings in the navsettings.json
+
+The navsettings.json has the following structure, where settings are included under one of two root elements: `NAVWebSettings` and `ApplicationIdSettings`:
+
+```
+{
+  "NAVWebSettings": {
+     "//ServerInstance":  "Name of the Business Central Server instance to connect to (for client) or listen on (for server).",
+     "ServerInstance":  "BC140",
+      [...more keys]
+ },
+  "ApplicationIdSettings": {
+      "BlogLink": "https://myBCBlog.com",
+      [...more keys]
+  }
+}
+```
+
+`//` indicates a comment that provides help for the setting, and has no affect on the Web Server instance.
+
+The following table describes the settings that are available in the navsettings.json for each root element. If you do not see a setting in the file, this is because some settings are not automatically included as a key in the file. For these settings, you can add the key manually. If you do not add the key, the default value of the setting is used.  
 
 > [!IMPORTANT]  
 >  If modifying the file directly, place values in double quotes `""`.
 
+### `NAVWebSettings` element settings
+
 |Setting/KeyName|Description|  
 |-------------|-----------------|  
 |AllowedFrameAncestors|Specifies the host name of any web sites in which the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] or parts of are embedded. By default, the [!INCLUDE[webserver](../developer/includes/webserver.md)] will not allow a website to display it inside an iframe unless the website is hosted on the same web server. This value of this setting is a comma-separated list of host names (URIs). Wildcard names are accepted. For example: `https:mysite.sharepoint.com, https:*.myportal.com`<BR /><BR /> <!--For more information, see [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md)-->|
-|GlobalEndPoints|Specifies the comma-separated list of global endpoints that are allowed to call this website. The values must include http scheme and fully qualifies omain name (FDQN), such as `https://financials.microsoft.com`.|
-|AllowNtlm|Specifies whether NT LAN Manager \(NTLM\) fallback is permitted for authentication.<br /><br /> To require Kerberos authentication, set this value to **false**.<br /><br /> Values: **true**, **false**<br /><br /> Default value: **true**|  
+|GlobalEndPoints|Specifies the comma-separated list of global endpoints that are allowed to call this website. The values must include http scheme and fully qualified domain name (FDQN), such as `https://financials.microsoft.com`.<br /><br /> Default value: none|
+|LoadScriptsFromCdn|Specifies whether to load scripts from Content Distribution Networks (CDNs). This only applies to scripts that are available from a CDN, like jQuery.<br /><br />If set to `false`, scripts will be loaded from the Web server, which is useful in, for example, an intranet scenario where there is no internet access.<br />Default value: `true`|
+|AllowNtlm|Specifies whether NT LAN Manager \(NTLM\) fallback is permitted for authentication.<br /><br /> To require Kerberos authentication, set this value to `false`.<br /><br /> Values: `true`, `false`<br /><br /> Default value: `true`|  
 |ClientServicesChunkSize|Sets the maximum size, in kilobytes, of a data chunk that is transmitted between [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[server](../developer/includes/server.md)]. Data that is transmitted between [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[server](../developer/includes/server.md)] is broken down into smaller units called chunks, and then reassembled when it reaches its destination.<br /><br /> Values: From 4 to 80.<br /><br /> Default value: 28|  
 |ClientServicesCompressionThreshold|Sets the threshold in memory consumption at which [!INCLUDE[webserver](../developer/includes/webserver.md)] starts compressing data sets. This limits amount of consumed memory. The value is in kilobytes.<br /><br /> Default value: 64|  
 |ClientServicesProtectionLevel|Specifies the security services used to protect the data stream between the [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[server](../developer/includes/server.md)]. This value must match the value that is specified in the [!INCLUDE[server](../developer/includes/server.md)] configuration file. For more information, see [Configuring Business Central Server](configure-server-instance.md).<br /><br /> Values: EncryptAndSign, Sign, None<br /><br /> Default value: EncryptAndSign|  
 |Server|Specifies the name of the computer that is running the [!INCLUDE[server](../developer/includes/server.md)].<br /><br /> Default value: localhost|  
 |ServerInstance|Specifies the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that the [!INCLUDE[webserver](../developer/includes/webserver.md)] connects to.<br /><br /> Default value: [!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]|  
 |ClientServicesCredentialType|Specifies the authorization mechanism that is used to authenticate users who try to connect to the [!INCLUDE[webserver](../developer/includes/webserver.md)]. For more information, see [Authentication and User Credential Type](../administration/users-credential-types.md).<br /><br /> The credential type must match the credential type configured for the [!INCLUDE[server](../developer/includes/server.md)] instance that the [!INCLUDE[webserver](../developer/includes/webserver.md)] connects to. For information about how to set up the credential type on [!INCLUDE[server](../developer/includes/server.md)], see [Configuring Business Central Server](configure-server-instance.md).<br /><br /> Values: Windows, UserName, NavUserPassword, AccessControlService<br /><br /> Default value: Windows|  
-|ClientServicesPort|Specifies the TCP port for the [!INCLUDE[server](../developer/includes/server.md)]. This is part of the [!INCLUDE[server](../developer/includes/server.md)]’s URL.<br /><br /> Values: 1-65535<br /><br /> Default value: 7046|  
-|ServicePrincipalNameRequired|If this parameter is set to **true**, then the [!INCLUDE[webserver](../developer/includes/webserver.md)] can only connect to a [!INCLUDE[server](../developer/includes/server.md)] instance that has been associated with a service principal name \(SPN\).<br /><br /> If this parameter is set to **false**, then the [!INCLUDE[webserver](../developer/includes/webserver.md)] attempts to connect to the configured [!INCLUDE[server](../developer/includes/server.md)] service, regardless of whether that service is associated with an SPN.<br /><br /> For more information about SPNs, see [Configure Delegation](../deployment/configure-delegation-web-server.md).<br /><br /> Default: **false**|  
-|SessionTimeout|Specifies the maximum time that a connection between the [!INCLUDE[webserver](../developer/includes/webserver.md)] and the [!INCLUDE[server](../developer/includes/server.md)] can remain idle before the session is stopped.<br /><br /> In the [!INCLUDE[webserver](../developer/includes/webserver.md)], this setting determines how long an open [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page or report can remain inactive before it closes. For example, when the SessionTimeout is set to 20 minutes, if a user does not take any action on a page within 20 minutes, then the page closes and it is replaced with the following message: **The page has expired and the content cannot be displayed.**<br /><br /> The time span has the format \[dd.\]hh:mm:ss\[.ff\]:<br /><br /> -   dd is the number of days<br />-   hh is the number of hours<br />-   mm is the number of minutes<br />-   ss is the number of seconds<br />-   ff  is fractions of a second<br /><br /> Default value: 00:20:00|  
-|ShowPageSearch|Specifies whether to show the **Tell me what you want to do** icon in the Role Center. The **Tell me what you want to do** lets users find [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects, such as pages, reports, and actions. <br /><br /> If you do not want to the **Tell me what you want to do** icon available in the [!INCLUDE[webserver](../developer/includes/webserver.md)], then set the parameter to **false**.<br /><br /> Default value: **true**|  
-|UnknownSpnHint|Specifies whether to use a server principal name when establishing the connection between the [!INCLUDE[webserver](../developer/includes/webserver.md)] server and [!INCLUDE[server](../developer/includes/server.md)]. This setting is used to authenticate the [!INCLUDE[server](../developer/includes/server.md)], and it prevents the [!INCLUDE[webserver](../developer/includes/webserver.md)] server from restarting when it connects to [!INCLUDE[server](../developer/includes/server.md)] for the first time. You set values that are based on the value of the ServicePrincipalNameRequired key.<br /><br /> Value: The value has the following format.<br /><br /> \(net.tcp://NavServer:Port/ServerInstance/Service\)=NoSpn&#124;SPN<br /><br /> -   NavServer is the name of the computer that is running the [!INCLUDE[server](../developer/includes/server.md)].<br />-   Port is the port number on which the [!INCLUDE[server](../developer/includes/server.md)] is running.<br />-   ServerInstance is the name of the [!INCLUDE[server](../developer/includes/server.md)] instance.<br />-   NoSpn&#124;SPN specifies whether to use an SPN. If the ServicePrincipalNameRequired key is set to **false**, then set this value to NoSpn. If the ServicePrincipalNameRequired key is set to **true**, then set this value to Spn.<br /><br /> Default value: \(net.tcp://localhost:7046/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/Service\)=NoSpn<br /><br /> If you set this key to the incorrect value, then during startup, the [!INCLUDE[webserver](../developer/includes/webserver.md)] will automatically determine a correct value. This will cause the [!INCLUDE[webserver](../developer/includes/webserver.md)] to restart. **Note:**  For most installations, you do not have to change this value. Unlike the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], this setting is not updated automatically. If you want to change the default value, then you must change it manually.|  
-|DnsIdentity|Specifies the subject name or common name of the service certificate for [!INCLUDE[server](../developer/includes/server.md)].<br /><br /> This parameter is only relevant when the ClientServicesCredentialType is set to UserName, NavUserPassword, or AccessControlService, which requires that security certificates are used on the [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[server](../developer/includes/server.md)] to protect communication. **Note:**  You can find the subject name by opening the certificate in the Certificates snap-in for Microsoft Management Console \(MMC\) on the computer that is running [!INCLUDE[webserver](../developer/includes/webserver.md)] or [!INCLUDE[server](../developer/includes/server.md)]. <br /><br /> For more information, see [Authentication and User Credential Type](../administration/users-credential-types.md).<br /><br /> Value: The subject name of the certificate.<br /><br /> Default value: none|   
-|SigninHelpLink|Specifies the URL to open if the user selects help on the sign in dialog.<br /><br /> Default value: none|  
-|HelpServer|Specifies the name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server if the deployment uses Help Server. If the deployment uses an online library, remove this setting.<br /><br /> Default value: none|  
+|ClientServicesPort|Specifies the TCP port for the [!INCLUDE[server](../developer/includes/server.md)]. This is part of the [!INCLUDE[server](../developer/includes/server.md)]’s URL.<br /><br /> Values: 1-65535<br /><br /> Default value: 7046|
+|ManagementServicesPort|The listening TCP port for the Business Central management endpoint. <br /><br />Valid range: 1-65535<br />Default value: 7045|
+|ServicePrincipalNameRequired|If this parameter is set to `true`, then the [!INCLUDE[webserver](../developer/includes/webserver.md)] can only connect to a [!INCLUDE[server](../developer/includes/server.md)] instance that has been associated with a service principal name \(SPN\).<br /><br /> If this parameter is set to `false`, then the [!INCLUDE[webserver](../developer/includes/webserver.md)] attempts to connect to the configured [!INCLUDE[server](../developer/includes/server.md)] service, regardless of whether that service is associated with an SPN.<br /><br /> For more information about SPNs, see [Configure Delegation](../deployment/configure-delegation-web-server.md).<br /><br /> Default: `false`|
+|SessionTimeout|Specifies the maximum time that a connection between the [!INCLUDE[webserver](../developer/includes/webserver.md)] and the [!INCLUDE[server](../developer/includes/server.md)] can remain idle before the session is stopped.<br /><br /> In the [!INCLUDE[webserver](../developer/includes/webserver.md)], this setting determines how long an open [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page or report can remain inactive before it closes. For example, when the SessionTimeout is set to 20 minutes, if a user does not take any action on a page within 20 minutes, then the page closes and it is replaced with the following message: **The page has expired and the content cannot be displayed.**<br /><br /> The time span has the format \[dd.\]hh:mm:ss\[.ff\]:<br /><br /> -   dd is the number of days<br />-   hh is the number of hours<br />-   mm is the number of minutes<br />-   ss is the number of seconds<br />-   ff  is fractions of a second<br /><br /> Default value: 00:20:00|
+|RequireSsl|Specifies whether SSL (https) is required. If the value is set to `true` all cookies will be marked with a `\u0027secure\u0027` attribute. If SSl is enable on the Web server, you should set this to `true`.<br /><br /> Values: `true`, `false`<br /> Default value: `false`|  
+|ShowPageSearch|Specifies whether to show the **Tell me what you want to do** icon in the Role Center. The **Tell me what you want to do** lets users find [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects, such as pages, reports, and actions. <br /><br /> If you do not want to the **Tell me what you want to do** icon available in the [!INCLUDE[webserver](../developer/includes/webserver.md)], then set the parameter to `false`.<br /><br /> Default value: `true`|  
+|UnknownSpnHint|Specifies whether to use a server principal name when establishing the connection between the [!INCLUDE[webserver](../developer/includes/webserver.md)] server and [!INCLUDE[server](../developer/includes/server.md)]. This setting is used to authenticate the [!INCLUDE[server](../developer/includes/server.md)], and it prevents the [!INCLUDE[webserver](../developer/includes/webserver.md)] server from restarting when it connects to [!INCLUDE[server](../developer/includes/server.md)] for the first time. You set values that are based on the value of the ServicePrincipalNameRequired key.<br /><br /> Value: The value has the following format.<br /><br /> \(net.tcp://BCServer:Port/ServerInstance/Service\)=NoSpn&#124;SPN<br /><br /> -   BCServer is the name of the computer that is running the [!INCLUDE[server](../developer/includes/server.md)].<br />-   Port is the port number on which the [!INCLUDE[server](../developer/includes/server.md)] is running.<br />-   ServerInstance is the name of the [!INCLUDE[server](../developer/includes/server.md)] instance.<br />-   NoSpn&#124;SPN specifies whether to use an SPN. If the ServicePrincipalNameRequired key is set to `false`, then set this value to NoSpn. If the ServicePrincipalNameRequired key is set to `true`, then set this value to Spn.<br /><br /> Default value: \(net.tcp://localhost:7046/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/Service\)=NoSpn<br /><br /> If you set this key to the incorrect value, then during startup, the [!INCLUDE[webserver](../developer/includes/webserver.md)] will automatically determine a correct value. This will cause the [!INCLUDE[webserver](../developer/includes/webserver.md)] to restart. **Note:**  For most installations, you do not have to change this value. Unlike the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], this setting is not updated automatically. If you want to change the default value, then you must change it manually.|  
+|DnsIdentity|Specifies the subject name or common name of the service certificate for [!INCLUDE[server](../developer/includes/server.md)].<br /><br /> This parameter is only relevant when the ClientServicesCredentialType is set to UserName, NavUserPassword, or AccessControlService, which requires that security certificates are used on the [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[server](../developer/includes/server.md)] to protect communication. **Note:**  You can find the subject name by opening the certificate in the Certificates snap-in for Microsoft Management Console \(MMC\) on the computer that is running [!INCLUDE[webserver](../developer/includes/webserver.md)] or [!INCLUDE[server](../developer/includes/server.md)]. <br /><br /> For more information, see [Authentication and User Credential Type](../administration/users-credential-types.md).<br /><br /> Value: The subject name of the certificate.<br /><br /> Default value: none|
+|AuthenticateServer |Specifies whether to authenticate the server by enabling service identity checks on protocol between the Web server and the Business Central Server instance.<br /><br /> Values: `true`, `false`<br /> Default value: `true`|
+|HelpServer|Specifies the name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server if the deployment uses Help Server. If the deployment uses an online library, remove this setting.<br /><br /> Default value: none| 
 |HelpServerPort|Specifies the TCP port on the specified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server if the deployment uses Help Server. If the deployment uses an online library, remove this setting.<br /><br /> Default value: none|
-|BaseHelpUrl|Specifies the link to the online Help library that the deployment uses, such as *https://mysite.com/{0}/mylibrary/*.<br /><br /> Default value: none|
-|BaseHelpSearchUrl|Specifies the link to search API for the online Help library that the deployment uses, such as *https://mysite.com/{0}/search/index?search={1}&scope=BusinessCentral*.<br /><br /> Default value: none|
+|OfficeSuiteShellServiceClientTimeout |Defines the time Business Central will wait for the Office Suite Shell Service to respond.<br /><br />**Important:** This setting has been deprecated in Business Central, and it has no effect on the Web Server instance. <br /><br /> Default value: 10|
+|UseAdditionalSearchTerms|Specifies whether **Tell me** uses the additional search terms that are defined on pages and reports.<br /><br />The additional search terms are specified by the [AdditionalSearchTerms](../developer/properties/devenv-additionalsearchterms-property.md) and [AdditionalSearchTermsML](../developer/properties/devenv-additionalsearchtermsml-property.md) properties.<br /><br /> If you set this to `false` the additional search terms are ignored.<br /><br /> Default value: true |
 |DefaultRelativeHelpPath|Specifies the default Help article to open if no other context-sensitive link is specified.<br /><br /> Default value: none|
-| Feedback Link  |Specifies the URL to a feedback system for gathering end-user feedback about the application. |
-|Community Link	|Specifies the URL to a community or resource for sharing information.|
-|Privacy Link	|Specifies the URL to the privacy information for the application. This link also appears in the sign-in page.|
-| Legal Link |Specifies the URL to the legal information about application. |
-|Sign In Help Link	|This link appears on the sign-in page. It specifies the URL to a resource that provides information to help the user sign in the application.| 
 |PersonalizationEnabled|Specifies whether personalization is enabled in the [!INCLUDE[webclient](../developer/includes/webclient.md)]. Set to `true` to enable personalization.<br /><br />For more information, see [Managing Personalization](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage).|
+
+<!-- Hidden from file and help
+|BaseHelpSearchUrl|Specifies the link to search API for the online Help library that the deployment uses, such as *https://mysite.com/{0}/search/index?search={1}&scope=BusinessCentral*.<br /><br /> Default value: none|
+
+-->
+
+### `ApplicationIdSettings` element settings
+
+|Setting/KeyName|Description|  
+|-------------|-----------------|  
+|BlogLink|Specifies the target of the **blog** link on the **Help & Support** page. Use this link to give users access to your end-user blog. <br /><br />Value: a valid URL<br />Default value: https://go.microsoft.com/fwlink/?linkid=2076643|
+|ComingSoonLink|Specifies the target of **coming soon** link on the **Help & Support** page. Use this link to give users access to information about your roadmap or any upcoming features and fixes.<br /><br />Value: A valid URL.<br /> Default value: [https://go.microsoft.com/fwlink/?linkid=2047422](https://go.microsoft.com/fwlink/?linkid=2047422)|
+|CommunityLink|Specifies the URL to a community or resource for sharing information. <br /><br />Value: a valid URL <br />Default value: http://go.microsoft.com/fwlink/?LinkId=287089|
+|ContactSalesLink|Specifies the target of the contact sales link on the **Help & Support** page. Use this link to give users access to your sales-focused web page where users can engage with your sales process. **Note** This setting and link are not used for Business Central on-premises.|
+|SigninHelpLink|Specifies the URL to open if the user selects help on the sign in page box. <br /><br />Value: a valid URL<br />Default value: none|
+
+
+<!--
+|AndroidPrivacy||
+|AndroidSoftwareLicenseTerms||
+|AndroidThirdPartyNotice||
+|BaseHelpUrl|Specifies the link to the online Help library that the deployment uses, such as *https://mysite.com/{0}/mylibrary/*.<br /><br /> Default value: none|
+|IosPrivacy||
+|IosSoftwareLicenseTerms||
+|IosThirdPartyNotice||
+|FeedbackLink|Specifies the URL to a feedback system for gathering end-user feedback about the application. |
+|KeyboardShortcutsLink|Specifies the URL to an article that describes the keyboard shortcuts for the application.<br /><br />Default value: https://go.microsoft.com/fwlink/?linkid=2064754|
+|LegalLink|Specifies the URL to the legal information about application. <br /><br />Default value: http://go.microsoft.com/fwlink/?LinkId=843026|
+|PrivacyLink|Specifies the URL to the privacy information for the application. This link also appears in the sign-in page.<br /><br />Default value: http://go.microsoft.com/fwlink/?LinkId=837448|
+
+-->
 
 ## See Also  
 [Setting up Multiple Business Central Web Server Instances](../deployment/configure-multiple-web-server-instances.md)   

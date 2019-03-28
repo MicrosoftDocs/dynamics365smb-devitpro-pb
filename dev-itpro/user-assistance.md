@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 01/23/2019
+ms.date: 03/22/2019
 ms.author: edupont
 ---
 
@@ -68,13 +68,7 @@ The content that Microsoft publishes under the user assistance concept of *Learn
 
 The base version of [!INCLUDE[prodshort](developer/includes/prodshort.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) so that you can extend and customize it for your customers.  
 
-There are different repos in GitHub for the source content and each of the languages that Microsoft translates to. The dynamics365smb-docs repo contains the source content in English (US). If you want access to the content in other languages that are provided by Microsoft, navigate to the relevant repo. The names follow this pattern:  
-
-```dynamics365smb-docs-pr.language-country```
-
-For example, the Danish translation of our content is in a repo with the name [dynamics365smb-docs-pr.da-DK](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-dk).  
-
-In the source repo, [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), the readme.md file contains tips and tricks to get started with contributions.  
+There are different repos in GitHub for the source content and each of the languages that Microsoft translates to. For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
 
 ### Feedback and contributions
 
@@ -86,6 +80,8 @@ We welcome your contributions, both as pull requests with suggestions or correct
 > Microsoft accepts pull requests to the *dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.  
 
 Microsoft also accepts contributions and feedback about the developer and ITpro content through the [dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb). This repo does not have translation repos associated with it, but other than that, the same rules apply as for the *dynamics365smb-docs* repo.  
+
+For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
 
 ### Working in MarkDown
 

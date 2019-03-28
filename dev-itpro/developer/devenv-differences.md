@@ -18,7 +18,7 @@ Coming from the Dynamics NAV Development Environment and C/SIDE, there are some 
 ## Data types
 |C/SIDE|AL Language Development Environment|
 |------|---------------------------|
-|Dates are parsed based on culture settings.| Locale independent and supports only: ```yyyy-mm-ddD```.|
+|Dates are parsed based on culture settings.| Locale independent and supports only: `yyyy-mm-ddD`.|
 |Boolean values could be expressed as **yes**/**no**.| Boolean values are expressed as **true**/**false**.|
 |For tables, integers could allow decimal values. For example, 5.0 converts to an integer, 5.4 throws an error at runtime.| For tables, Min, Max, InitValue numbers with a fraction are expressed as `decimal`, thus they are not a valid integer data type.|
 |The largest constant integer could be `999999999999999`. | Transforms to `999'999'999'999'999.0`, a decimal value. In AL, this can be expressed as `999999999999999.0` or `999999999999999L`.|
@@ -55,15 +55,15 @@ The ```ActionContainer``` elements in AL have been renamed; the following table 
 |RelatedInformation| Navigation    |
 |Reports           | Reporting     |
 
-For instance, ```area(Sections)``` can be defined inside the ```actions``` section of the page.
+For instance, `area(Sections)` can be defined inside the `actions` section of the page.
 
-Likewise, ```Container``` and ```ContainerType``` elements in C/SIDE have been renamed to ```area(Content|FactBoxes|RoleCenter)``` and can be defined inside the ```layout``` section of the page.
+Likewise, `Container` and `ContainerType` elements in C/SIDE have been renamed to `area(Content|FactBoxes|RoleCenter)` and can be defined inside the `layout` section of the page.
 
 > [!NOTE]
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
 
 
-For syntax examples, see [Page Object](devenv-page-object.md).
+For syntax examples, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
 
 ## Naming
 Controls, actions, and methods names must be unique on pages. In C/SIDE, you could create a Part control with the same name as a method, which would give you an error at runtime. This is now prevented, by disallowing duplicates. Similarly, trigger and trigger event names are disallowed on matching application object types. Likewise, actions and fields could have same names before, but that would have prevented page testability access, and will now throw a compilation error. 
@@ -73,7 +73,7 @@ Controls, actions, and methods names must be unique on pages. In C/SIDE, you cou
 > Name on Controls and Actions on Pages is now mandatory. 
 
 ## Property dependencies
-Some properties require that you set another property. An example is ```PromotedCategory```, which requires that you have enabled the property ```Promoted```. The following table lists some of the properties that have this dependency.
+Some properties require that you set another property. An example is `PromotedCategory`, which requires that you have enabled the property `Promoted`. The following table lists some of the properties that have this dependency.
 
 |Property|Depends on the property...|
 |--------|-------------|
@@ -85,8 +85,8 @@ Some properties require that you set another property. An example is ```Promoted
 
 ## Limited functionality 
 
-The ```InitValue``` property of type ```Duration``` is not allowed in new development environment.   
-The ```InitValue``` of type ```DateTime``` only allows for the value ```0DT```.  
+The `InitValue` property of type `Duration` is not allowed in new development environment.   
+The `InitValue` of type `DateTime` only allows for the value `0DT`.  
 
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  

@@ -1,6 +1,6 @@
 ---
-title: Developing for Multiple Platform Versions
-description: The AL language extension is compatible with multiple platform versions for developing solutions in marketplace. 
+title: "Developing for Multiple Platform Versions"
+description: "The AL language extension is compatible with multiple platform versions for developing solutions in marketplace." 
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na
@@ -19,8 +19,6 @@ The AL language extension is compatible with multiple platform versions. You can
 
 ## Defining the platform version
 To set the platform version, add the **runtime** property in the `app.json` file. This attribute defines the platform version that the extension is targeting. Depending on the platform version, some features become available, while some features are not supported. For example, OData-bound actions can only be used when the platform version is 2.0 or higher. 
-
-<!-- For more information about bound actions, see [Bound Actions]().   -->
 
 > [!NOTE]  
 > AL Language extension is not compatible with [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] version backwards. For [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] development, the traditional method should be used. You must install the Visual Studio Code extension from the `ALLanguage.vsix` file shipped on the DVD. 
