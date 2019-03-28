@@ -61,7 +61,7 @@ The relevant contract can be requested through your local Regional Operations Ce
 
 ## Object Ranges
 
-When you develop a Microsoft Dynamics 365 Business Central App for Microsoft AppSource, you will need to request access to an object range which holds a certain number of objects with which you can build your solution.   In order to avoid overlap between objects used in different solution,each partner is assigned a number of objects in a unique object range. For example, a partner could get assigned the object range 70,001,000 – 70,002,000 which will give them 1000 numbered objects which they can use to develop Microsoft Dynamics 365 Business Central solutions.
+When you develop a Microsoft Dynamics 365 Business Central App for Microsoft AppSource, you will need to request access to an object range which holds a certain number of objects with which you can build your solution.   In order to avoid overlap between objects used in different solution,each partner is assigned a number of objects in a unique object range. For example, a partner could get assigned the object range 70,001,000 – 70,001,999 which will give them 1000 numbered objects which they can use to develop Microsoft Dynamics 365 Business Central solutions.
 
 *Requesting the correct license file and object range*
 
