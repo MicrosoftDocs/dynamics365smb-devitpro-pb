@@ -1,14 +1,13 @@
 ---
 title: "XMLport Properties"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 03/25/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 1c8d76d0-27e6-409a-b7ec-057763c9d2c7
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 
@@ -25,6 +24,7 @@ This topic lists properties of the XMLport object, element, and attribute.
 |[CalcFields Property](devenv-calcfields-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
 |[Caption Property](devenv-caption-property.md)|<ul><li>XMLport object</li></ul>|
 |[CaptionML Property](devenv-captionml-property.md)|<ul><li>XMLport object</li></ul>|
+|[ContextSensitiveHelpPage Property](devenv-contextsensitivehelppage-property.md)|<ul><li>Report Object</li></ul>|
 |[CurrentPath Property](devenv-currentpath-property.md)|<ul><li>XMLport object</li></ul>|
 |[DefaultFieldsValidation Property](devenv-defaultfieldsvalidation-property.md)|<ul><li>XMLport object</li></ul>|
 |[DefaultNamespace Property](devenv-defaultnamespace-property.md)|<ul><li>XMLport object</li></ul>|

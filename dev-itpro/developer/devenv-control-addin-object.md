@@ -16,7 +16,7 @@ caps.latest.revision: 18
 
 # Control Add-In Object
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 The control add-in object allows you to add custom functionality to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A control add-in is a custom control, or visual element, for displaying and modifying data within an iframe or a page. For example, a control add-in can display the content of a webpage, visualize data as a chart or on a map, or host a custom web application. Control add-ins can exchange data with the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] server on various data types and can respond to user interaction to raise events that execute additional AL code.
 
