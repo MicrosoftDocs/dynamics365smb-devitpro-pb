@@ -36,12 +36,12 @@ If you want to use a website that is not based on Help Server, then you must spe
 For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
 ```json
-                           "//BaseHelpUrl":  "The location of Help for this application.",
-                           "BaseHelpUrl": "https://mysite.com/{0}/documentation/",
-                           "//BaseHelpSearchUrl":  "The URL to use if Help is included in the Search functionality in Business Central.",
-                           "BaseHelpSearchUrl": "https://docs.microsoft.com/{0}/search/index?search={1}&scope=BusinessCentral",
-                           "//DefaultRelativeHelpPath":  "The Help article to look up if no other article can be found.",
-                           "DefaultRelativeHelpPath": "index",
+    "//BaseHelpUrl":  "The location of Help for this application.",
+    "BaseHelpUrl": "https://mysite.com/{0}/documentation/",
+    "//BaseHelpSearchUrl":  "The URL to use if Help is included in the Search functionality in Business Central.",
+    "BaseHelpSearchUrl": "https://docs.microsoft.com/{0}/search/index?search={1}&scope=BusinessCentral",
+    "//DefaultRelativeHelpPath":  "The Help article to look up if no other article can be found.",
+    "DefaultRelativeHelpPath": "index",
 ```
 
 For users who use the legacy Windows client connected to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the ClientUserSettings.config file must contain the following settings:
@@ -52,7 +52,7 @@ For users who use the legacy Windows client connected to [!INCLUDE[prodshort](..
 ```
 
 > [!NOTE]
-> Replace the value of the BaseHelpUrl key with the URL for your own website, such as ```https://mysite.com/{0}/documentation/```. The parameter, {0}, represents the locale of the browser that the user is using, such as en-us or da-dk, and is set automatically at runtime.
+> Replace the value of the BaseHelpUrl key with the URL for your own website, such as `https://mysite.com/{0}/documentation/`. The parameter, {0}, represents the locale of the browser that the user is using, such as en-us or da-dk, and is set automatically at runtime.
 
 ### Help Server
 
@@ -61,12 +61,12 @@ If you want to use Help Server, then you must specify the server and port in the
 For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
 ```json
-                           "//HelpServer": [
-                                                   "Name of the Dynamics NAV Help Server to connect to."
-                                            ],
-                           "HelpServer": "https://myserver.com",
-                           "//HelpServerPort":  "The listening TCP port for the Dynamics NAV Help Server. Valid range: 1-65535",
-                           "HelpServerPort": "49000",
+    "//HelpServer": [
+        "Name of the Dynamics NAV Help Server to connect to."
+        ],
+    "HelpServer": "https://myserver.com",
+    "//HelpServerPort":  "The listening TCP port for the Dynamics NAV Help Server. Valid range: 1-65535",
+    "HelpServerPort": "49000",
 ```
 
 For users who use the legacy Windows client connected to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the ClientUserSettings.config file must contain the following settings:
