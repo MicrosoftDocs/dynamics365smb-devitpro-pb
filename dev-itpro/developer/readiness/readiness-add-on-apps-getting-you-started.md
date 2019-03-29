@@ -114,7 +114,7 @@ In order to be set up as a publisher and access the Cloud Partner Portal, you ne
 ### Create your sandbox environment
 
 You have 3 options to work develop against the current version of Microsoft Dynamics 365 Business Central.
-- [If your add-on is lightweight, it might be sufficient to use a sandbox environment](https://docs.microsoft.com/en-gb/dynamics-nav/developer/devenv-get-started) 
+- [If your add-on is lightweight, it might be sufficient to use a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-get-started) 
 - [If you want to setup a docker based development environment on Azure, you can use:](http://aka.ms/BCSandboxAzure) 
 - [If you want to setup a local docker based developer environment, you can download a
 PowerShell script available at](http://aka.ms/BCSandboxLocal) 
