@@ -61,9 +61,9 @@ The name to give the downloaded file. This is the default file name that is show
 
  The business logic runs on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on a [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] service and not locally on the client computer. When you write code, you must consider where files are created.  
 
- Use [UPLOAD Method \(File\)](../../methods/devenv-upload-method-file.md) and [UPLOADINTOSTREAM Method \(File\)](../../methods/devenv-uploadintostream-method-file.md) to send a file from a client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
+ Use [UPLOAD Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UPLOADINTOSTREAM Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) to send a file from a client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
 
- Use [DOWNLOAD Method \(File\)](../../methods/devenv-download-method-file.md) and [DOWNLOADFROMSTREAM Method \(FILE\)](../../methods/devenv-downloadfromstream-method-file.md) to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance to a client.  
+ Use [DOWNLOAD Method \(File\)](../../methods-auto/file/file-download-method.md) and [DOWNLOADFROMSTREAM Method \(FILE\)](../../methods-auto/file/file-downloadfromstream-method.md) to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance to a client.  
 
  We recommend that you use the methods in codeunit **419 File Management** to upload and download files.
 
