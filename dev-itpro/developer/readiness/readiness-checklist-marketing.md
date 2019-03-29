@@ -115,7 +115,7 @@ Referencing above acronyms, old brand names and old UIs will make your app fail 
 > [!NOTE]  
 > All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, D365 or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.
 
-## <a name="OfferSummary"></a>Offer Name 
+## <a name="OfferName"></a>Offer Name 
 
 | General requirements | Description |Requirements |
 |----------------------|-------------|-------------|
@@ -662,7 +662,7 @@ Learn how [Development of a Localization Solution.](https://docs.microsoft.com/e
 > [!TIP]
 Learn how [Developing Connect Apps for Dynamics 365 Business Central.](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps) 
 
-## <a name="ConsultingServicees"></a>Consulting Services App
+## <a name="ConsultingServices"></a>Consulting Services App
 
 > [!TIP]
 Learn how [AppSource Consulting Services.](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-consulting) 
