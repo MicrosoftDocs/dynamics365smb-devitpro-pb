@@ -33,7 +33,7 @@ It is **very** important that you compile the database to get the right result i
 6. Create .delta files using the Compare-NAVApplicationObject powershell script. For more information, see [Generating DELTA Files](devenv-generating-delta-files.md).
 7. Go to the *\Program Files(x86)\Microsoft Dynamics 365 Business Central\130\RoleTailored Client* folder and locate the **txt2al.exe** converter tool. 
 8. Run the tool from the command line using the following syntax:  
-```txt2al --source --target --rename --type --extensionStartId```
+```txt2al --source --target --rename --type --extensionStartId --injectDotNetAddIns --dotNetAddInsPackage --dotNetTypePrefix --translationFormat --addLegacyTranslationInfo```
 
 |Parameter   |Description|
 |------------|-----------|
@@ -43,6 +43,11 @@ It is **very** important that you compile the database to get the right result i
 |--type=ObjectType |The type of object to convert. Allowed values: Codeunit, Table, Page, Report, Query, XmlPort|
 |--extensionStartId |The starting numeric ID of the extension objects (Default: 70000000). It will be incremented by 1 for each extension object.|
 |--help |Show help screen.|
+|--injectDotNetAddIns|Inject the definition of standard .NET add-ins in the resulting .NET package. The standard .NET add-ins are a set of add-ins that are embedded into the platform.|
+|--dotNetAddInsPackage=Path |Specify the path to an AL file containing a definition for a .NET package containing .NET type declarations that should be included in the .NET package definition produced by the conversion. This should be used to inject a custom set of .NET control add-in declarations. The file should contain something similar to the example shown below.|
+|--dotNetTypePrefix |Specify a prefix to be used for all .NET type aliases created during the conversion.|
+|--translationFormat=ObjectType |Specify the format to use when generating translation files. The allowed values are: Xliff, Lcg.|
+|--addLegacyTranslationInfo |Add information to the translation file that can be used to migrate existing translations/translated resources. During conversion, XLIFF files from all the ML properties in the app are extracted. If this switch is set, a comment is added in the generated XLIFF that specifies what the ID of the translation item would be in C/SIDE. This acts as a mapping that allows you to convert existing translation resources for your app.|
 
 > [!NOTE]  
 > It is recommended to only use the conversion tool for export. Importing objects that have been exported can damage your application.
