@@ -60,11 +60,11 @@ Environments are the instances of the application that have been setup for the t
 ### Get environments and Get environments by application family
 Returns a list of all the environments for the tenant. 
 
-```[200] GET /v1.1/admin/environments```
+```[200] GET /v1.2/admin/environments```
 
 Returns a list of the environments for the specified application family.
 
-```[200] GET /v1.1/admin/applications/{applicationFamily}/environments```
+```[200] GET /v1.2/admin/applications/{applicationFamily}/environments```
 
 **Response:**  
 Returns a wrapped array of environments
@@ -90,7 +90,7 @@ Returns a wrapped array of environments
 ### Get environment by application family and name
 Returns the properties for the provided environment name if it exists.
 
-```[200] GET /v1.1/admin/applications/{applicationFamily}/environments/{environmentName}```
+```[200] GET /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}```
 
 **Response:**  
 Returns a single environment if exists
@@ -111,7 +111,12 @@ Returns a single environment if exists
 ### Create environment
 Creates a new sandbox environment with sample data.
 
-```[201] PUT /v1.1/admin/applications/{applicationFamily}/environments/{environmentName | "sandbox" or "production"}```
+```[201] PUT /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}```
+
+or
+
+```[201] PUT /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/{applicationVersion}/{ringName | "PROD" or "PREVIEW"}```
+  * See the section below about Available Versions for information about versions currently supported
 
 **Body**
 
@@ -166,7 +171,7 @@ Returns newly created environment
 ### Copy environment
 Creates a new sandbox environment with a copy of the production environment's data.
 
-```[201] PUT /v1.1/admin/applications/{applicationFamily}/environments/{environmentName | "sandbox" or "production"}```
+```[201] PUT /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}```
 
 **Body**
 
@@ -180,7 +185,7 @@ Creates a new sandbox environment with a copy of the production environment's da
 ### Delete environment
 Deletes the specified environment. Warning: A production environment should not be deleted.
 
-```[202] DELETE /v1.1/admin/applications/{applicationFamily}/environments/{environmentName | "sandbox" or "production"}```
+```[202] DELETE /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}```
 
 ## Upgrades
 The upgrade settings allow you to specify an upgrade window for when during the day an upgrade can be performed on the tenant environment. The upgrade window must be a minimum of 6 hours. (i.e. 1:00 - 7:00)
@@ -188,7 +193,7 @@ The upgrade settings allow you to specify an upgrade window for when during the 
 ### Get Upgrade Settings
 Returns the upgrade settings for the environment. The upgrade settings currently available are the start and end times for the upgrade window.
 
-```[200] GET v1.1/admin/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
+```[200] GET v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
 
 **Response:**  
 Returns the environment's upgrade settings, or "null" if not exists
@@ -205,7 +210,7 @@ Returns the environment's upgrade settings, or "null" if not exists
 ### Put Upgrade Settings
 Set the upgrade window start and end times.
 
-```[200] PUT v1.1/admin/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
+```[200] PUT v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
 
 **Body**
 
@@ -234,7 +239,7 @@ Telemetry includes the logged events from the service. These events can provide 
 ### Get Environment Telemetry
 Returns the telemetry information for the provided environment and filters. It is recommended that you provide start and end time parameters in order to return a managable data set.
 
-```[200] GET v1.1/admin/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}```
+```[200] GET v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}```
 
 **Query parameters:**
 
@@ -264,7 +269,7 @@ Notifications are sent to the recipient email addresses set up for the tenant. T
 ### Get Notification Recipients
 Returns a list of notification recipients.
 
-```[200] GET /v1.1/admin/settings/notification/recipients```
+```[200] GET /v1.2/admin/settings/notification/recipients```
 
 **Response:**  
 Returns a wrapped array of recipients.
@@ -285,7 +290,7 @@ Returns a wrapped array of recipients.
 ### Create Notification Recipient
 Create a new notification recipient.
 
-```[200] PUT /v1.1/admin/settings/notification/recipients```
+```[200] PUT /v1.2/admin/settings/notification/recipients```
 
 **Body**
 ```
@@ -309,7 +314,7 @@ Returns the newly created recipient.
 ### Update Notification Recipient
 Modify an existing notification recipient.
 
-```[200] PUT /v1.1/admin/settings/notification/recipients```
+```[200] PUT /v1.2/admin/settings/notification/recipients```
 
 **Body**
 ```
@@ -334,12 +339,12 @@ Returns the updated recipient.
 ### Delete Notification Recipient
 Deletes an existing notification recipient.
 
-```[200] DELETE /v1.1/admin/settings/notification/recipients/{id}```
+```[200] DELETE /v1.2/admin/settings/notification/recipients/{id}```
 
 ### Get Notification Settings
 Returns the properties of the specified notification recipient.
 
-```[200] GET /v1.1/admin/settings/notification```
+```[200] GET /v1.2/admin/settings/notification```
 
 **Response:**  
 Returns the notification settings.
@@ -357,7 +362,7 @@ Returns the notification settings.
 ```
 
 ## Application Access Management
-It is a possibile for **Delegated Tenant Admin** to manage seaparately each application access.
+It is possibile for a **Delegated Tenant Admin** to manage seaparately each application access.
 
 ### Get List Of Manageable Applications
 Returns a list of manageable applications.
@@ -369,12 +374,12 @@ Returns a wrapped array of applications.
 
 ```
 {
-    "value":  [
-                  {
-                      "applicationFamily":  string,
-                      "access":  boolean
-                  }
-              ]
+  "value": [
+    {
+      "applicationFamily":  string,
+      "access":  boolean
+    }
+  ]
 }
 ```
 
@@ -405,15 +410,87 @@ Returns a wrapped array of applications.
 
 ```
 {
-    "value":  [
-                  {
-                      "applicationFamily":  string,
-                      "access":  boolean
-                  }
-              ]
+  "value": [
+    {
+      "applicationFamily":  string,
+      "access":  boolean
+    }
+  ]
 }
 ```
 
+## Reschedule Upgrades
+Some environment upgrades are allowed to be rescheduled.
+
+### Get Scheduled Upgrade
+Get information about the already scheduled upgrade for a specific environment.
+
+```[200] GET /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/upgrade```
+
+**Response:**  
+Information about the upgrade job for that environment
+
+```
+{
+  "jobId": int,
+  "jobEntryId": int,
+  "sourceVersion": string,
+  "targetVersion": string,
+  "canTenantSelectDate": boolean,
+  "didTenantSelectDate": boolean,
+  "earliestSelectableUpgradeDate": datetime,
+  "latestSelectableUpgradeDate": datetime,
+  "upgadeDate": datetime,
+  "upgradeStatus": string (enum | "Scheduled" or "Running"),
+  "ignoreUpgradeWindow": boolean,
+  "isActive": boolean
+}
+```
+
+### Reschedule Upgrade
+Reschedule an upgrade, if able.
+
+```[200] PUT /v1.2/admin/applications/{applicationFamily}/upgrade```
+
+**Body**
+
+```
+{
+  "jobId": int,
+  "jobEntryId": int,
+  "runOn": datetime,
+  "ignoreUpgradeWindow": boolean
+}
+```
+
+> [!NOTE]  
+> All datetime values are in UTC
+
+## Available Versions
+Get information about the currently supported versions.
+
+### Versions and Corresponding Rings
+
+```[200] GET /v1.2/admin/applications/{applicationFamily}/rings```
+
+**Response:**  
+
+```
+{
+  "value": [
+    {
+      "applicationVersion": {
+        "major": int,
+        "minor": int,
+        "build": int,
+        "revision": int
+      },
+      "ringName": string,
+      "ringFriendlyName": string
+    }
+  ]
+}
+```
 
 ## See Also
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)    
