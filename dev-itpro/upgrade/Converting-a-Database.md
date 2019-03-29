@@ -33,6 +33,8 @@ The process is slightly different when you have multitenant deployment compared 
 
 > [!IMPORTANT]  
 > Before you begin, read the article [Important Information and Considerations for Before Upgrading](upgrade-considerations.md). This article contains information about limitations in a technical upgrade, such as using V1 extensions or [!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration.
+>
+> If you are upgrading a single-tenant database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Cumulative Update 02, 03, 04, or 05, read [Tenant synchronization issue with technical upgrade to Business Central Cumulative Updates 02–05](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2019/03/29/technical-upgrade-to-business-central-cumulative-updates-02-05-tenant-synchronization-issue) on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Partners blog before starting the upgrade.  
 
 ## Tools
 To complete the steps in the article, you will use the following tools:
@@ -66,7 +68,7 @@ Before you convert the old database to [!INCLUDE[prodshort](../developer/include
 
 1. Make a copy of the old database or create full database backup. 
 
-       For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
+    For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).
 
 2. <a name="uninstallextensions"></a> For single-tenant mode, uninstall all extensions. For multitenant mode, uninstall all V1 extensions.
 
@@ -246,7 +248,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 ## <a name="extensions"></a>Task 4: Post-upgrade
 
-1. <a name="JSaddins">Upgrade Javascript-based control add-ins to new versions.
+1. <a name="JSaddins"></a>Upgrade Javascript-based control add-ins to new versions.
 
     The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of Microsoft-provided Javascript-based control add-ins, such as the Business Chart control add-in. If you application is using any of these add-ins, you must upgrade them to the new versions as follow:
 
@@ -293,11 +295,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
         If the application database contains test objects (ID 130000-139999), then make sure to exclude these objects when generating symbols. You can do this by using the `-Filter` parameter and running the command twice:
 
         ```
-        finsql.exe command=generatesymbolreference, sServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=1..129999"
+        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=1..129999"
         ```
 
         ```
-        finsql.exe command=generatesymbolreference, sServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=140000..1999999999"
+        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=140000..1999999999"
         ```
 
         > [!NOTE]  
@@ -331,7 +333,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
         Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N> 
         ```
 
-4. Transition the custom code in the old codeunit 1 to use the new system event implementation.
+4. (Dynamics NAV upgrade only) Transition the custom code in the old codeunit 1 to use the new system event implementation.
 
     For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md).
 
