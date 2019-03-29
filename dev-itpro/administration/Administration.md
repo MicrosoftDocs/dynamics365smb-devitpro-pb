@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 manager: edupont
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ---
 # Working with Administration Tools
 [!INCLUDE[prodshort](../developer/includes//prodshort.md)] provides different tools for different administration tasks.  

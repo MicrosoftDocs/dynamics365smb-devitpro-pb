@@ -3,7 +3,7 @@ title: "UsageCategory Property"
 description: "Description of how you use AL to add pages and reports to Tell me in the client using the UsageCategory property."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/21/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
