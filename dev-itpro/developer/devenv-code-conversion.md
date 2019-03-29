@@ -1,5 +1,5 @@
 ---
-title: "Code Conversion"
+title: "Code Conversion from C/AL to AL"
 description: "Description of the conversion process from C/AL to AL."
 
 author: SusanneWindfeldPedersen
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Code Conversion
+# Code Conversion from C/AL to AL
 
 > [!IMPORTANT]  
 > Please note that this topic and process is in preview.
@@ -20,7 +20,7 @@ With the recent preview release of the base application converted to AL, you can
 > [!NOTE]  
 > Moving on-premise C/AL code customizations to [!INCLUDE[d365fin_md](includes/d365fin_md.md)] online, requires converting these to AL extensions. This could include converting the C/AL deltas to AL extension code as a starting point, as outlined in [The Txt2Al Conversion Tool](devenv-txt2al-tool.md). 
 
-## To run a code conversion
+## To run a code conversion from C/AL to AL
 
 ### 1. Compile all the objects in your C/AL solution
 Compiling all the objects is a prerequisite for a successful and complete export. To compile objects, you can use:  
@@ -33,8 +33,7 @@ Once the application compiles, you must export all C/AL application objects to t
 ### 3. Convert the C/AL TXT files to AL
 With C/AL exported to the new TXT format, you now convert the code to AL using the [The Txt2Al Conversion Tool](devenv-txt2al-tool.md). 
 
-> [!NOTE]  
-> If your solution contains .NET interoperability code, the following Txt2Al command line parameters should be used to achieve a conversion that requires less manual intervention:  
+**Note** that if your solution contains .NET interoperability code, the following Txt2Al command line parameters should be used to achieve a conversion that requires less manual intervention:  
 
 - ```--dotNetAddInsPackage``` should be used to point the conversion tool to an AL file containing declarations for the .NET types that represent .NET control addins. The file should be similar to: 
 
@@ -124,9 +123,9 @@ We recently released a Docker AL Preview image as part of the Insider program, c
 
 3. Publish your extension: 
 
-- Using the PowerShell cmdlets as described in [Publishing and Installing an Extension v2.0](devenv-how-publish-and-install-an-extension-v2.md). 
+    - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension v2.0](devenv-how-publish-and-install-an-extension-v2.md). 
 
-- Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**. 
+    - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**. 
 
 ## See Also
 [The Txt2Al Conversion Tool](devenv-txt2al-tool.md)  
