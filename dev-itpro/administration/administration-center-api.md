@@ -55,7 +55,7 @@ Powershell example without prompt:
  ```
 
 ## Environments
-Environments are the instances of the application that have been setup for the tenant. An instance can be of either a production type or a sandbox type. Currently, there can be one production environment and one sandbox environment per tenant. The environment APIs can be used to get information about the environments currently set up for the tenant, create a new sandbox environment using sample data or as a copy of the production environment, and delete the sandbox environment.
+Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. Currently, there can be one production environment and up to three sandbox environments per tenant. The environment APIs can be used to get information about the environments currently set up for the tenant, create a new sandbox environment using sample data or as a copy of the production environment, and delete the sandbox environment.
 
 ### Get environments and Get environments by application family
 Returns a list of all the environments for the tenant. 
@@ -188,7 +188,7 @@ Deletes the specified environment. Warning: A production environment should not 
 ```[202] DELETE /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}```
 
 ## Upgrades
-The upgrade settings allow you to specify an upgrade window for when during the day an upgrade can be performed on the tenant environment. The upgrade window must be a minimum of 6 hours. (i.e. 1:00 - 7:00)
+The upgrade settings allow you to specify an upgrade window for when during the day an upgrade can be performed on the tenant environment. The upgrade window must be a minimum of six hours. (e.g. 1:00 - 7:00)
 
 ### Get Upgrade Settings
 Returns the upgrade settings for the environment. The upgrade settings currently available are the start and end times for the upgrade window.
