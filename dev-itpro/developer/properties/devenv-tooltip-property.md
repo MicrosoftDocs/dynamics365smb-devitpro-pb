@@ -1,7 +1,7 @@
 ---
 title: "ToolTip Property"
 ms.custom: na
-ms.date: 01/16/2019
+ms.date: 04/01/2019
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

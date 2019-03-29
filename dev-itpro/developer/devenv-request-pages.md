@@ -4,7 +4,7 @@ description: "Introducing how to work with request pages in Business Central."
 author: SusanneWindfeldPedersen
 
 ms.custom: na
-ms.date: 03/14/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"

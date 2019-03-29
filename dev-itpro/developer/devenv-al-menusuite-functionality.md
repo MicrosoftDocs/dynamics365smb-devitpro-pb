@@ -3,7 +3,7 @@ title: "Adding Pages and Reports to Tell me"
 description: "Description of how you use AL to add pages and reports so that they are discoverable through search in the client."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/17/2018
+ms.date: 04/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen

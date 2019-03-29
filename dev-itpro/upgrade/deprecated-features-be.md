@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Belgium, local functionality
-ms.date: 02/14/2019
+ms.date: 04/01/2019
 ms.author: soalex
 
 ---
