@@ -119,8 +119,10 @@ Referencing above acronyms, old brand names and old UIs will make your app fail 
 
 | General requirements | Description |Requirements |
 |----------------------|-------------|-------------|
-| 0.C **Offer Name**                   | Your offers name on AppSource | Required      |
-NOTE: The offer name must be the same as the name you specified in the app manifest.
+| 0.C **Offer Name**   | Your offers name on AppSource | Required      |
+
+> [!NOTE]  
+> The offer name must be the same as the name you specified in the app manifest.
 
 **What your offer name will look like on AppSource** (Applicable naming structures) 
 When creating a name for your offer, you can use the following two naming structures:
@@ -131,8 +133,8 @@ When creating a name for your offer, you can use the following two naming struct
 | General requirements | Description | Requirements | 
 |----------------------|-------------|--------------|
 | 0.D **Offer Name** | There are many things to consider when creating a relevant and enticing name for your offer.  | Recommended |
-**How to create a strong app name for your offer** (Do’s and don’ts)? 
 
+**How to create a strong app name for your offer** (Do’s and don’ts)?
 How to create a good offer name
 
 **Do’s**
@@ -160,8 +162,9 @@ How to create a good offer name
 
 | Offer Details  | Description | Requirements |
 |----------------|-------------|--------------|
-| 1. **Offer Summary**  | The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Hence, make sure that it is clear and concise. | Required   
-How to create a good summary for your offer 
+| 1. **Offer Summary**  | The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Hence, make sure that it is clear and concise. | Required |
+
+How to create a good summary for your offer? 
 **How to structure your summary?**
 - The summary should be max. 25 words or 100 characters including spaces, or less.
 - The summary should summarize the value proposition of your offer in one short and concise sentence.
@@ -211,6 +214,7 @@ The following html tags are allowed:
 | Offer Details  | Description | Requirements |
 |----------------|-------------|--------------|
 | 2.A Offer Description **(Introduction Paragraph)** | To capture (and keep) the interest of the prospects you need to create interest and positive mental acknowledgement from the start. This can be achieved by asking relevant provocative questions that prospects either do not know the answer to or can relate to in the introduction paragraph. | Recommended  |
+
 How to structure the content in this paragraph?
 - Make a section where you ask provocative questions. 
 - Speak to a core pain they are likely experiencing that has a negative measurable impact
@@ -297,8 +301,8 @@ Use these html tags:
 > [!TIP]  
 > *Example:* *Features and benefits of using this extension* *Free up cash* *Know exactly when to replenish stock* *Always have inventory on hand to satisfy every customer order*
 
-| Offer Details                                            | Description                                                                                                                                                | Requirements |
-|----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Offer Details  | Description | Requirements |
+|----------------|------------|--------------|
 | 2.E Offer Description **(Closing Call to action paragraph)** | Round off your description with a strong “Closing Call to action” paragraph that urges customers to take action in order to realize your offer’s benefits. | Recommended  |
 
 Choose the type of Call to action that you want to include:
@@ -460,9 +464,10 @@ Note: On AppSource videos will play when customers select the associated video t
 ![Storefront Detail - Videos](../../media/Videos.png)
 
 ## <a name="Documents"></a>Marketing Artifacts - Documents
-| Marketing artifacts                  | Description                                                                                                                                            | Requirements |
-|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 16. **Documents** (Learn more documents) | Enable prospects to learn more about your offer by adding supporting sales and marketing assets in the “learn more” section of the storefront details. | Required     |
+| Marketing artifacts  | Description | Requirements |
+|----------------------|------------|--------------|
+| 16. **Documents** (Learn more documents) | Enable prospects to learn more about your offer by adding supporting sales and marketing assets in the “learn more” section of the storefront details. | Required |
+
 Formatting
 - A minimum of one document is required (up to a maximum of 3 are permitted).
 - It is a requirement that all docs are written in English and are formatted as PDF-files.
@@ -518,11 +523,10 @@ When uploading a screenshot in the in the Cloud Partner Portal you need to provi
 - Upload only a .png image with resolution 1280 x 720.
 
 > [!TIP]
->   *Example:* *Dashboard* *Set up instructions*
+> *Example:* *Dashboard* *Set up instructions*
 
 > [!TIP]
->   *Example:* of the completed screenshot fields (cf. point 17) in the “Marketing
-artifacts” section of the Cloud partner portal:
+> *Example:* of the completed screenshot fields (cf. point 17) in the “Marketing artifacts” section of the Cloud partner portal:
 
 ![Storefront Detail - Screenshots](../../media/Screenshots.png)
 
@@ -593,7 +597,8 @@ details” section of the Cloud partner portal:
 ## <a name="Support"></a>Support URL
 | Customer support | Description | Requirements |
 |------------------|-------------|--------------|
-| 20. **Support URL**  | Formatting  *It is a requirement that the support page is written in English.* It is a requirement that you provide different (i.e. more than two) contact options on your app landing page. | Required     |
+| 20. **Support URL**  | Formatting  *It is a requirement that the support page is written in English.* It is a requirement that you provide different (i.e. more than two) contact options on your app landing page. | Required |
+
 There needs to be a clear distinction between the support and the help site. We require two separate pages (i.e. the *link to the support and the help page cannot be the same*).
 
 Structure
