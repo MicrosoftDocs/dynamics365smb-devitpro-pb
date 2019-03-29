@@ -52,9 +52,9 @@ The RecordRef that refers to the table in which you want to find a record.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You typically use this method together with the [RUNREQUESTPAGE Method](../../methods/devenv-runrequestpage-method.md) method. The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the SAVEAS method to get the parameter string and save the report to a file of the specified format.  
+ You typically use this method together with the [RUNREQUESTPAGE Method](../../methods-auto/report/report-runrequestpage-method.md) method. The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the SAVEAS method to get the parameter string and save the report to a file of the specified format.  
 
- For a simple example that illustrates how to use the SAVEAS method, see example in the [RUNREQUESTPAGE Method](../../methods/devenv-runrequestpage-method.md) method topic. 
+ For a simple example that illustrates how to use the SAVEAS method, see example in the [RUNREQUESTPAGE Method](../../methods-auto/report/report-runrequestpage-method.md) method topic. 
 
 
 > [!NOTE]  
