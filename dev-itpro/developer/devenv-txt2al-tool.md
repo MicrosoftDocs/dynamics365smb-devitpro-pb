@@ -16,7 +16,7 @@ The Txt2Al conversion tool allows you to take existing [!INCLUDE[navnow_md](incl
 1. Exporting the objects from C/SIDE in a cleaned format.
 2. Converting the objects to the new syntax.
 
-## To run the Txt2Al conversion tool
+## Using the Txt2Al conversion tool
 To run the Txt2Al conversion tool, follow the steps outlined below.
 
 1. Start with a clean [!INCLUDE[navnow_md](includes/navnow_md.md)] database and compile the database.  
@@ -34,6 +34,8 @@ It is **very** important that you compile the database to get the right result i
 7. Go to the *\Program Files(x86)\Microsoft Dynamics 365 Business Central\130\RoleTailored Client* folder and locate the **txt2al.exe** converter tool. 
 8. Run the tool from the command line using the following syntax:  
 ```txt2al --source --target --rename --type --extensionStartId --injectDotNetAddIns --dotNetAddInsPackage --dotNetTypePrefix --translationFormat --addLegacyTranslationInfo```
+
+## Parameters
 
 |Parameter   |Description|
 |------------|-----------|
