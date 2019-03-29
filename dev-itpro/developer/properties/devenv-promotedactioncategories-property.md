@@ -20,7 +20,7 @@ Sets a category for a promoted action.
 - Pages
   
 ## Remarks  
-Promoted actions appear in the ribbon on a page. You promote an action by setting the [Promoted Property](devenv-promoted-property.md). Categories allow you to group similar actions under a common caption. You can choose between 10 categories: New, Process, Report, and Category4 through Category10. By default, the category names are used as the captions in the ribbon. 
+Promoted actions appear in the action bar on a page. You promote an action by setting the [Promoted Property](devenv-promoted-property.md). Categories allow you to group similar actions under a common caption. You can choose between 10 categories: New, Process, Report, and Category4 through Category10. By default, the category names are used as the captions in the ribbon. 
 
 ## See Also  
 [Promoted Property](devenv-promoted-property.md)  

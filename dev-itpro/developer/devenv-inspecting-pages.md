@@ -12,14 +12,12 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
-
 # Inspecting and Troubleshooting Pages
 
 The [!INCLUDE[webclient](includes/webclient.md)] includes a page inspection feature that lets you get details about a page, providing insight into the page design, the different elements that comprise the page, and the source behind the data it displays. Page inspection helps you:
 
 - Learn the data model behind a page.
-- Discover pages and parts that can be reused in you application design.
+- Discover pages and parts that can be reused in your application design.
 - Troubleshoot data issues without having to perform tasks like copying the production database, viewing the entire source table, or digging into SQL.
 - Debug the application, complementing [Designer](devenv-inclient-designer.md).
 
@@ -33,7 +31,7 @@ The **Page inspection** pane opens on the side. The following figure illustrates
 
 When the **Page Inspection** pane first opens, it shows information that pertains to the main page object.
 
-Use the keyboard or pointing device to move focus to different elements on the page. When you select a FactBox or a part on the main page, the bounding area is highlighted by an orange border, and the **Page Inspection** pane shows information about the selected element. For example, the previous figure shows information about the list part in the **Sales Order** page.
+Use the keyboard or pointing device to move focus to different elements on the page. When you select a FactBox or a part on the main page, the bounding area is highlighted by a border, and the **Page Inspection** pane shows information about the selected element. For example, the previous figure shows information about the list part in the **Sales Order** page.
 
 As you navigate to other pages in the application, the **Page Inspection** pane will automatically update with page information as you move along.
 
@@ -76,7 +74,7 @@ If the page is associated with a source table, the **Table** field displays info
 If a page has a source table, the **View table** link is available. This  link will open the table in a separate browser window, allowing you to see all records and fields in the table.
 
 > [!NOTE]
-> To view a table, you must read permission on the table and direct execute permission on the system object **1350 Run table**. This is granted by in permission set on your user account. For more information, see [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions). 
+> To view a table, you must have read permission on the table and direct execute permission on the system object **1350 Run table**. This is granted by a permission set on your user account. For more information, see [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions).
 
 ### [Table Fields](#tab/tablefields)
 
@@ -94,7 +92,7 @@ Each field is shown with the following information:
 
 #### What field information is not shown
 
-- Page fields that are not bound to the source table by the [SourceExp property](properties/devenv-sourceexpr-property.md)
+- Page fields that are not bound to the source table by the [SourceExp property](properties/devenv-sourceexpr-property.md).
 - Fields in temporary tables.
 - The value of fields that have a data type of blob, byte, media, or mediaset.
 
@@ -104,18 +102,18 @@ The **Extensions** tab displays extensions that are installed on the tenant and 
 
 ![Page Inspection](media/page-inspection-extensions.png)
 
-Except for the type, the data that is shown is defined in the extension's app.json file during development. For more information, see [App.json](devenv-json-files.md#Appjson).
+Except for the type, the data that is shown is defined in the extension's app.json file, which you configure during development. For more information, see [App.json](devenv-json-files.md#Appjson).
 
-There are four different types:
+There are four different extension types:
 
 - **Adds page** indicates that the extensions adds the page object.
-- **Extends page** indicates that the extension modifies the page, like adding a field, and action, or code. In AL, this is specified by a page extension object.
+- **Extends page** indicates that the extension modifies the page, like adding a field, action, or code. In AL, this is specified by a page extension object.
 - **Adds table** indicates that the extensions adds the table object.
 - **Extends table** indicates that the extension modifies the source table, like adding a field or code. In AL, this is specified by a table extension object.  
 
 ## [Page Filters](#tab/pagefilters)
 
-The **Page Filters** tab displays the current filters used on the current page. This includes filters that are set by code, list Views, or defined by the user in the Filter pane of the page.
+The **Page Filters** tab displays the current filters used on the current page. This includes filters that are set by code, list views, or defined by the user in the filter pane of the page.
 
 ![Page Inspection](media/page-inspection-page-filters.png)
 
@@ -123,10 +121,10 @@ The following table describes the different filter types.
 
 |Type|Description|
 |----|-----------|
-|UserFilters|Filter that is defined by the client user via the Filter pane (see [Filtering](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-enter-criteria-filters#Filtering)) or defined in code using filter methods like [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md).|
-|TableViewFilter|Filters that is defined on the page by the [SourceTableView property](properties/devenv-sourcetableview-property.md)|
-|SubFormLinkFilters|Filter that is defined by the [SubPageLink property](properties/devenv-subpagelink-property.md) on the `part` control that contains the sub-page.|
-|FormViewFilters|Filter that is defined by [RunPageView property](properties/devenv-runpageview-property.md) of the action that opens the page.|
+|UserFilters|Filter that is defined by the client user, by using the Filter pane (see [Filtering](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-enter-criteria-filters#Filtering)), or defined in code by using filter methods like [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md).|
+|TableViewFilter|Filter that is defined on the page by the [SourceTableView property](properties/devenv-sourcetableview-property.md)|
+|SubFormLinkFilters|Filter that is defined by the [SubPageLink property](properties/devenv-subpagelink-property.md) on a `part` control that contains the sub-page.|
+|FormViewFilters|Filter that is defined by the [RunPageView property](properties/devenv-runpageview-property.md) of the action that opens the page.|
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  

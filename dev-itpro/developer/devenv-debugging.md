@@ -15,7 +15,7 @@ ms.author: solsen
 The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing F5. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging).
 
 > [!IMPORTANT]  
-> To enable debugging the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
+> To enable debugging in versions before [!INCLUDE[prodshort](../includes/prodshort.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
 
 > [!IMPORTANT]  
 > To use the development environment and debugger, you must make sure that port `7049` is available.
@@ -93,25 +93,25 @@ In the **VARIABLES** pane in debugger, expand the **<Database statistics>** node
 
 |       |       |
 |-------|-------|
-|Current SQL latency (ms) | When the debugger hits a breakpoint, the [!INCLUDE[server](includes/server.md)] will send a short SQL statement to the database and measure how long time it takes. The value is shown is in milliseconds.| 
+|Current SQL latency (ms) | When the debugger hits a breakpoint, the [!INCLUDE[server](includes/server.md)] will send a short SQL statement to the database and measure how long time it takes. The value is in milliseconds.| 
 |Number of SQL Executes | This number shows the total number of SQL statements executed in the debugging session since the debugger was started.|
 |Number of SQL Rows Reads | This number shows the total number of rows read from the [!INCLUDE[prodshort](includes/prodshort.md)] database in the debugging session since the debugger was started.|
 
 ### View SQL statement statistics
 
-The database insights also let you peek into the most recent and the latest long running SQL statements executed by the server. To view a list if these, expand either the **\<Last Executed SQL Statements\>** or the **\<Last Long Running SQL Statements\>** node. The following insights are part of the SQL statement statistics:
+The database insights also let you peek into the most recent and the latest long running SQL statements executed by the server. To view a list if these, expand either the **\<Last Executed SQL Statements\>** or **\<Last Long Running SQL Statements\>** node. The following insights are part of the SQL statement statistics:
 
 |       |       |
 |-------|-------|
-|Statement | The SQL statement that the AL server sent to the [!INCLUDE[prodshort](includes/prodshort.md)] database. You can copy this into other database tools such as SQL Server Management Studio for further analysis.| 
+|Statement | The SQL statement that the AL server sent to the [!INCLUDE[prodshort](includes/prodshort.md)] database. You can copy this into other database tools, such as SQL Server Management Studio, for further analysis.| 
 |Execution time (UTC) | The timestamp (in UTC) of when the SQL statement was executed. You can use this to infer whether the SQL statement was part of the AL code between current and last breakpoint (if set).
-|Duration (ms) | The duration in milliseconds of the total execution time of the SQL statement measured inside the [!INCLUDE[server](includes/server.md)]. You can use this to analyze whether you are missing indexes ([!INCLUDE[prodshort](includes/prodshort.md)] keys) or to experiment with performance of database partitioning and/or compression.|
+|Duration (ms) | The duration in milliseconds of the total execution time of the SQL statement measured inside the [!INCLUDE[server](includes/server.md)]. You can use this to analyze whether you are missing indexes ([!INCLUDE[prodshort](includes/prodshort.md)] keys), or to experiment with performance of database partitioning and/or compression.|
 |Approx. Rows Read | This number shows the approximate number of rows read from the [!INCLUDE[prodshort](includes/prodshort.md)] database by the SQL statement. You can use this to analyze whether you are missing filters.|
 
 The number of SQL statements tracked by the debugger can be configured in the [!INCLUDE[server](includes/server.md)]. The default value is 10.
 
 > [!NOTE]
-> For [!INCLUDE[prodshort](includes/prodshort.md) on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights as expected in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
+> For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights that you expect to see in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  

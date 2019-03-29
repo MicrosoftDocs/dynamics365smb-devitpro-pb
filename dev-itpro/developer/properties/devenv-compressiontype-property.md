@@ -19,7 +19,9 @@ Specifies whether data compression is used on the table, and if so, what type of
   
 ## Applies To  
   
--   Table objects. The [TableType](devenv-tabletype-property.md) must be `Normal`. This property cannot be used on table extension objects.
+-   Table objects.
+
+    The [TableType property](devenv-tabletype-property.md) must be `Normal`. This property cannot be used on table extension objects.
 
 ## Property Values  
 
@@ -32,7 +34,7 @@ Specifies whether data compression is used on the table, and if so, what type of
 
 ## Remarks
 
-With `None`, `Page`, and `Row`, the [!INCLUDE[prodshort](../includes/prodshort.md)] table synchronization process will make changes to table in SQL Server, overwriting the current compression setting in SQL Server, if any. `Unspecified` lets you control data compression directly on SQL Server. For more information  
+With `None`, `Page`, and `Row`, the [!INCLUDE[prodshort](../includes/prodshort.md)] table synchronization process will make changes to table in SQL Server, overwriting the current compression setting in SQL Server, if any. `Unspecified` lets you control data compression directly on SQL Server.  
 
 For information about compression types, see [Data Compression](../../administration/optimize-sql-data-access.md#Compression).
 
