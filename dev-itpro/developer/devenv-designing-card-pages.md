@@ -11,9 +11,6 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
-
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
-
 # Designing Card and Document Pages
 
 The *card* page type displays selected fields from an underlying table. The *document* page type is very similar in structure to the card page, but in addition to fields, it also includes a part that includes another page, called a sub-page. 

@@ -13,50 +13,12 @@ ms.author: jswymer
 # Using the Development Environment from the Command Prompt
 You can start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] by running finsql.exe at the command prompt. You can also use the finsql.exe command to perform the several development tasks without using the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] client.  
 
-<!--
-- Create databases  
-
-- Upgrade databases  
-
-- Compile objects  
-
-- Delete objects  
-
-- Export objects  
-
-- Import objects  
-
-- Export language modules  
-
-- Import language modules  
-
-- Export text strings for translation  
-
-- Import translated text strings  
-
-- Build metadata for application objects.  
-
-- Set the object cache.  
-
-- Set the temporary file location.  
-
-- Enable Unicode for the development environment  
-
-- Set the path and file name of the ZUP file for storing setup parameters.  
-
-- Get the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] build version.  
-- Generate application object symbol references for AL development. generatesymbolreference
--->
   By default, finsql.exe is located at [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]\\RoleTailored Client\\.  
 
 ## finsql.exe Command Syntax  
 
 The finsql.exe has the following syntax.  
-<!--
-```  
-finsql.exe [command=<command> | designobject=<object type> <object ID>,] [servername=<server>,] [database=<database>,] [collation=<collation>,] [file=<file>,] [filter=<filter>], [importaction=<default|overwrite|skip|0|1|2>,] [langid=<ID>,] [logfile=<logfile>,] [navservername=<name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [ntauthentication=<yes|no|0|1>,] [objectcache=<cache>,] [password=<password>,] [temppath=<path>,] [tenant=<tenant ID>,] [username=<user name>,] [synchronizeschemachanges=<yes|no|force>,] [useoldeditor=<yes|no>,] [showalldesignercolumns=<yes|no|0|1>,] [suppressbuildsearchindex=<yes|no>,]  
-```  
--->
+
 ```  
 finsql.exe [command=<command> | designobject=<object type> <object ID>,] [servername=<server>,] [collation=<collation>,] [database=<database>,] [file=<file>,] [filter=<filter>,] [generatesymbolreference=<yes|no>,] [importaction=<default|overwrite|skip|0|1|2>,] [langid=<ID>,] [logfile=<logfile>,] [navservername=<name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [ntauthentication=<yes|no|0|1>,] [objectcache=<cache>,] [password=<password>,] [showalldesignercolumns=<yes|no|0|1>,] [suppressbuildsearchindex=<yes|no|0|1>,] [synchronizeschemachanges=<yes|no|force>,] [temppath=<path>,] [tenant=<tenant ID>,] [unicode=<yes|no|0|1>,] [useoldeditor=<yes|no>,] [username=<user name>,]
 ``` 
@@ -87,7 +49,7 @@ The following table describes the notation that is used to indicate syntax.
 |collation|The collation to use when you create a new database. The value must be one of the following:<br /><br /> \*  A full language culture name. For example, da-DK for Danish or hu-HU for Hungarian.<br /><br /> \*  A SQL Server collation name without case or accent. For example, Latin1\_General\_100.<br /><br /> \*  A SQL Server collation name with case and accent. For example, Danish\_Greenlandic\_100\_CS\_AI.<br /><br /> Use this optional parameter when you create a database with the *command=createdatabase* parameter.|[CreateDatabase](#CreateDatabase)|  
 |command|The development command that you want to run. The possible values are as follows:<br /><br /> [BuildVirtualMetadata](#BuildVirtualMetadata)<br />[CreateDatabase](#CreateDatabase)<br />[UpgradeDatabase](#UpgradeDatabase)<br /> [CompileObjects](#CompileObjects)<br />[DeleteObjects](#DeleteObjects)<br />[ExportObjects](#ExportObjects)<br />[ImportObjects](#ImportObjects)<br />[ExportLangModule](#ExportLangModule)<br />[ImportLangModule](#ImportLangModule)<br />[ExportTranslate](#ExportTranslate)<br />[ImportTranslate](#ImportTranslate)<br />[ExportToNewSyntax](#ExportToNewSyntax)<br />[GetBuildVersion](#GetBuildVersion)<br /> [GenerateSymbolReference](#GenerateSymbolReference)|Not applicable|  
 |database|If you use the *command=CreateDatabase* parameter, then the *database* parameter specifies the name of the new database that you want to create. In this case, the *database* parameter is required.<br /><br /> For all other commands, the *database* parameter specifies the database that you want to open.<br /><br /> If you do not specify both the *servername* and the *database* parameter, then the database server and database that are stored in the .zup file are used. If you do not specify the *database* parameter but you do specify the *servername* parameter, then the **Open Database** window opens so that you can specify the database name.<br /><br /> For more information, see [Saving Setup Parameters in the Zup File](https://docs.microsoft.com/en-us/dynamics-nav/saving-setup-parameters-in-the-zup-file).|All|  
-|designobject|See [DesignObject](#DesignObject.md)|Not applicable|  
+|designobject|See [DesignObject](#DesignObject)|Not applicable|  
 |file|The path and file name of the file that is used for exporting data to or importing data from. The file type depends on the command.|[CreateDatabase](#CreateDatabase)<br /><br /> [ExportObjects](#ExportObjects)<br /><br /> [ImportObjects](#ImportObjects)<br /><br /> [ExportLangModule](#ExportLangModule)<br /><br /> [ImportLangModule](#ImportLangModule)<br /><br /> [ExportTranslate](#ExportTranslate)<br /><br /> [ImportTranslate](#ImportTranslate)|  
 |filter|A filter on the **Object** table.<br /><br /> Use this parameter to specify which objects the command applies to.|[CompileObjects](#CompileObjects)<br /><br /> [CreateLanguage](#CreateLanguage)<br /><br /> [ExportObjects](#ExportObjects)<br /><br /> [ExportTranslate](#ExportTranslate)|  
 |id|Specifies the path and file name of the .zup file for storing setup parameters. By default, the setup parameters are stored in and retrieved from the fin.zup file. If you specify the *id* parameter, then the setup parameters are stored in and retrieved from a file that is named \<*id*>.zup.<br /><br /> By default, the fin.zup file is located at C:\\users\\*\<user name>*\\AppData\\Roaming\\. To change the location of the .zup file, specify the path and ID in the *id* parameter.<br /><br /> For example, the following command sets the path and file name of the .zup file to C:\\mynavfin.zup:<br /><br /> `finsql.exe id="C:\mynavfin.zup"`<br /><br /> For more information, see [Saving Setup Parameters in the Zup File](https://docs.microsoft.com/en-us/dynamics-nav/saving-setup-parameters-in-the-zup-file).|None. You use this as a stand-alone parameter with the finslg.exe.|  
@@ -391,7 +353,7 @@ finsql.exe command=exporttranslate, file=<exportfile>, [servername=<server>,] [d
 finsql.exe command=exporttranslate, file=C:\bctextstrings.txt, servername=TestComputer01\BCDEMO, database="Demo Database BC"  
 ```  
 
-## <a name="Generatesymbolreference"></a>Generatesymbolreference
+## <a name="GenerateSymbolReference"></a>Generatesymbolreference
  
 Generates object symbols for developing against the objects in the AL Development Environment. 
 

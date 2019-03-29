@@ -26,13 +26,11 @@ Table keys
  **true** if the key value must be unique; otherwise, **false**. The default is **false**.  
 
 ## Remarks
-A unique index ensures that records in a table do not have identical field values. With a unique index, when table is validated, values of the field that makes up the key are checked for uniqueness. If the table includes records with duplicate values for the field, the validation fails.
-
-
+A unique index ensures that records in a table do not have identical field values. With a unique index, when a table is validated, values of the field that makes up the key are checked for uniqueness. If the table includes records with duplicate values for the field, the validation fails.
 
 ## Example
 
-The following example defines a primary key and two unique secondary keys. 
+The following example defines a primary key and two unique secondary keys.
 
 ```
 keys
@@ -54,5 +52,5 @@ keys
 ```
 
 ## See Also
- 
+
 [Table Keys](../devenv-table-keys.md)  

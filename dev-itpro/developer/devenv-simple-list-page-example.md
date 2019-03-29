@@ -12,8 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
-
 # Simple List Page Code Example
 
 The AL code in this article creates a simple list page that displays records from an existing table.

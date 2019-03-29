@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Promoted Property
-Sets the value that indicates whether the selected action is promoted, which means that it appears on the Home tab as well as the tab where is it defined.  
+Sets the value that indicates whether the selected action is promoted, which means that it is elevated to a promoted category in the action bar, as well as the group where is it defined.  
   
 ## Applies To  
   
@@ -41,8 +41,9 @@ page 50110 PageName
 ...
 ```
 
-## Remarks  
-This feature allows you to make a copy of an action and place it on the Home tab so that it is easier to find.  
+## Remarks
+
+This feature allows you to make a copy of an action and place it on the on the action bar where it is easier to find.  
   
 Available options are **true**/**false**.  
   
