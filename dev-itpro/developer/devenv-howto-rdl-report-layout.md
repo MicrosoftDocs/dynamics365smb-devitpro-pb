@@ -15,9 +15,11 @@ caps.latest.revision: 18
 ---
 
  
-
 # Creating an RDL Layout Report
 When you create a new report for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two things you have to think about; defining the report dataset of data items and columns, and then designing the report layout. These steps will show you how to create a very simple report based on an RDL layout. For more information about the report object, see [Report Object](devenv-report-object.md).
+
+> [!IMPORTANT]
+> RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example. like sending emails) compared to Word layouts. When developing layouts for document reports, we recommend that you design Word layouts instead of RDL. With Word layouts, reports are not impacted by the security constraints on sandbox appdomains like they are with RDL layouts. From a service perspective, RDL layouts are not trusted, so they will run in a sandbox appdomain that only lives for the current report invocation.
 
 ## Create an RDL layout report
 To facilitate testing your report layout, the following example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
