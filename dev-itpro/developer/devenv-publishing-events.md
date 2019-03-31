@@ -2,7 +2,7 @@
 title: "Publishing Events"
 description: This topic describes how to create an event publisher method to publish business and integration events.
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Publishing Events
 The first phase of implementing an event is publishing the event. Publishing an event exposes it in the application. This provides hook up points for subscribers to register to the event, and eventually handle the event if it is raised. An event is published by adding an AL method that is specifically set up as an event publisher.  

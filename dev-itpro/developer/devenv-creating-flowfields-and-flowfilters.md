@@ -1,7 +1,7 @@
 ---
 title: Create FlowFields and FlowFilters
 description: FlowFields and FlowFilters are used to display the result of the calculation described in the CalcFormula property. 
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.assetid: 2f6560a1-33a5-4fee-beac-fa6a3100c85a
 caps.latest.revision: 11
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Create FlowFields and FlowFilters
 This topic describes the procedure and the properties used to create FlowFields and FlowFilters. 

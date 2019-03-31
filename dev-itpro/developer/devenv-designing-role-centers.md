@@ -3,7 +3,7 @@ title: Designing Role Centers
 description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
-ms.date: 01/24/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ As a developer or administrator, you can use Designer to customize a Role Center
 ## Role Center structure
 A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
 
-![Role Center overview](media/rolecenter-overview-V3.png "Role Center overview")
+![Role Center overview](media/rolecenter-overviewApril19.png "Role Center overview")
 
 ## Navigation and Actions area
 The navigation and actions area appears at the top of the Role Center page, and provides links to other objects, such as pages, reports, and codeunits. You define the navigation area by adding actions to the Role Center page code, under the `actions` control in the page code. The navigation and actions area is subdivided into smaller areas by using different `area()` controls as described in the following table:

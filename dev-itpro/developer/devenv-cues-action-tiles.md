@@ -1,7 +1,7 @@
 ---
 title: "Creating and Customizing Cues"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Creating Cues and Action Tiles on Role Centers
 
@@ -26,12 +26,12 @@ A Cue provides a visual representation of aggregated business data, such as the 
 
 There are two layout options that influence how Cues appear in the client: *normal* and *wide*. 
 
--   The *normal* layout displays Cues as tiles. With this layout, Cue groups are automatically arranged to fill in the width of the workspace, which means there can be more than one group horizontally across the workspace.
+- The *normal* layout displays Cues as tiles. With this layout, Cue groups are automatically arranged to fill in the width of the workspace, which means there can be more than one group horizontally across the workspace.
 
--   The *wide* layout is designed to display large values, such as monetary values. The wide layout gives you a way emphasize a group of Cues. Wide and normal Cue groups can be interleaved. However, wide groups that precede all normal groups will appear in their own section of the workspace, spanning the entire width - providing space for the large values. Wide groups that are placed after normal groups will behave just like the normal layout groups. With this in mind, it is good practice to place Cue groups that use the wide layout, above those that use the normal layout. The wide layout is specified by setting the [CuegroupLayout property](properties/devenv-cuegrouplayout-property.md) to `wide`. 
+- The *wide* layout is designed to display large values, such as monetary values. The wide layout gives you a way emphasize a group of Cues. Wide and normal Cue groups can be interleaved. However, wide groups that precede all normal groups will appear in their own section of the workspace, spanning the entire width - providing space for the large values. Wide groups that are placed after normal groups will behave just like the normal layout groups. With this in mind, it is good practice to place Cue groups that use the wide layout, above those that use the normal layout. The wide layout is specified by setting the [CuegroupLayout property](properties/devenv-cuegrouplayout-property.md) to `wide`. 
 
 > [!NOTE]  
->  The wide layout is only supported in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].
+> The wide layout is only supported in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].
 >
 > The [Caption](properties/devenv-caption-property.md) and [CaptionML](properties/devenv-captionml-property.md) properties of the `cuegroup` control are ignored when the layout is wide.
 
@@ -44,14 +44,13 @@ A Cue can be based on a FlowField or Normal field. If you base the Cue on a Flow
 ### <a name="CreateCue"></a>Creating a Cue
 The implementation of a Cue involves the following elements:
 
--   A table object with a field that holds the data that is contained in the Cue at runtime.  
+- A table object with a field that holds the data that is contained in the Cue at runtime.  
   
--   A page object that contains the table field and displays the Cue in the client.  
+- A page object that contains the table field and displays the Cue in the client.  
   
--   Logic that calculates the data to display in the Cue at runtime.  
+- Logic that calculates the data to display in the Cue at runtime.  
   
-    The logic can consist of a combination of AL code and objects, such as tables, queries, and codeunits. How and where you implement the logic will depend on whether the Cue is based on a FlowField or Normal field and what you want to achieve.
-
+The logic can consist of a combination of AL code and objects, such as tables, queries, and codeunits. How and where you implement the logic will depend on whether the Cue is based on a FlowField or Normal field and what you want to achieve.
 
 > [!NOTE]
 > The examples in this section will set up a Cue that extracts the number of open sales invoices from the **Sales Header** table. 
@@ -59,9 +58,9 @@ The implementation of a Cue involves the following elements:
 ###  <a name="CreateTable"></a> Create a table for Cue data  
 The first thing that you must do is to create a table that contains fields that will hold the calculated data to display in the Cues at runtime.  
   
-1.  Create a table object or use an existing one.  
+1. Create a table object or use an existing one.  
 
-2.  Add fields for the Cue data.  
+2. Add fields for the Cue data.  
 
     For each Cue that you want to display on the page, you must add a **Field** control in the table object. When you add the **Field** control, specify the following properties:  
   
@@ -71,13 +70,13 @@ The first thing that you must do is to create a table that contains fields that 
   
       If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [Calculation Formulas and the CalcFormula Property](properties/devenv-calculation-formulas-and-the-calcformula-property.md).  
   
-3.  Add a primary key field for FlowFields.  
+3. Add a primary key field for FlowFields.  
 
     A table must have at least one data field. Because a **FlowField** is based on a calculation, it not considered an actual data field. Therefore, if the Cue table only includes FlowFields, you must add "dummy" primary key field that does not yield any data.  
   
     To add primary key, for example, add a field with the name **Primary Key**, and then set its data type to **Code**.  
 
-#### Example:
+#### Example
 
 ```
 table 50100 SalesInvoiceCueTable

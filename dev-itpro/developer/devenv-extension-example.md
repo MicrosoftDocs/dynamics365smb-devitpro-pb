@@ -3,7 +3,7 @@ author: jswymer
 title: "Building your first sample extension that uses new objects and extension objects"
 description: "Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code."
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code
 This walkthrough will guide you through all the steps that you must follow to create a sample extension in AL. New objects and extension objects will be added to the base application for a simple reward feature for customers. Every section of this exercise includes code that serves for installing, customizing, or upgrading this sample extension. The final result can be published and installed on your tenants.
@@ -285,7 +285,7 @@ To add the same fields and customize the **Reward Card** page, follow the next s
 - Drag the **Minimum Purchase** and **Last Modified Date** fields from the list onto the page in the **General group**. 
 - Choose the **General** in the group caption to enable the value to be edited. Change the caption to **Info** and press **Enter**.
 
-After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the Ctrl+F7 shortcut from Visual Studio Code. You can also uninstall the extension by opening the **Extension Management** page.  
+After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the F7 key shortcut from Visual Studio Code. You can also uninstall the extension by opening the **Extension Management** page.  
 For more information about Designer, see [Designer](devenv-inclient-designer.md). 
 
 ## Customer table extension object

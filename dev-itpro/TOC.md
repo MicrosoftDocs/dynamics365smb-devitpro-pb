@@ -1,8 +1,11 @@
-# [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
+﻿# [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
 ## [Frequently asked questions](faq.md)
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ## [Help and Support](help-and-support.md)
+### [Configuring technical support](technical-support.md)
 ### [User assistance model](user-assistance.md)
+#### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
+#### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 <!-- deployment-->
 # [Deployment](deployment/deployment.md)
 ## Online
@@ -108,6 +111,7 @@
 ### [AL Formatter](developer/devenv-al-formatter.md)
 ### [AL Outline View](developer/devenv-al-outline-view.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
+### [AL Code Actions](developer/devenv-code-actions.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
@@ -124,6 +128,7 @@
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
 ### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
 ## [Debugging in AL](developer/devenv-debugging.md)
+## [RAD publishing in AL](developer/devenv-rad-publishing.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
@@ -139,6 +144,7 @@
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
 ## [Events](developer/devenv-events-in-al.md)
+### [Event Types](developer/devenv-event-types.md)
 ### [Publishing Events](developer/devenv-publishing-events.md)
 ### [Raising Events](developer/devenv-raising-events.md)
 ### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
@@ -152,6 +158,7 @@
 ### [Setting Relationships Between Tables](developer/devenv-set-relationships-between-tables.md)
 ### [View Table Data](developer/devenv-view-table-data.md)
 ### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
+### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
 ### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
@@ -159,12 +166,14 @@
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
+### [Views](developer/devenv-views.md)
 ### [API Page Type](developer/devenv-api-pagetype.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
 #### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
 #### [Fixed Control](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
 #### [Field Groups](developer/devenv-field-groups.md)
+#### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
 ### [Actions](developer/devenv-actions-overview.md)
 #### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 #### [Promoted Actions](developer/devenv-promoted-actions.md)
@@ -177,10 +186,12 @@
 ### Designing Pages
 #### [Designing List Pages](developer/devenv-designing-list-pages.md)
 #### [Designing Card Pages](developer/devenv-designing-card-pages.md)
+### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 ## [Reports](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
+### [Request Pages](developer/devenv-request-pages.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
@@ -426,6 +437,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Report Properties](developer/properties/devenv-report-properties.md)  
 #### [XMLPort Properties](developer/properties/devenv-XMLPort-properties.md)  
 #### [Control Add-In Properties](developer/properties/devenv-control-addin-properties.md)
+#### [View Properties](developer/properties/devenv-view-properties.md)
 #### [Integrating with Dynamics 365 for Sales](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)  
 ### [Triggers](developer/triggers/devenv-triggers.md)
 #### [Table and Field Triggers](developer/triggers/devenv-table-and-field-triggers.md)
@@ -530,5 +542,5 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
-# [Preview of Dynamics 365 Business Central API](/dynamics-nav/fin-graph/)
+# [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v1.0/index)
 <!-- preview of Graph API ends -->

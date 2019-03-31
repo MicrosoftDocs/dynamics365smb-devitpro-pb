@@ -3,7 +3,7 @@ title: "Using the Code Analysis Tools with the Ruleset"
 description: "Configuring and using a custom ruleset on an AL project."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +13,6 @@ ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
 ---
-
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Using the Code Analysis Tools with the Ruleset
 This topic shows how you can use a custom ruleset to customize the severity of diagnostics produced by the code analysis tools that are part of the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.

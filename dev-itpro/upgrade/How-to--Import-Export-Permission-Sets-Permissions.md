@@ -1,7 +1,7 @@
 ---
 title: "How to: Export and Import Permission Sets and Permissions"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,11 +15,11 @@ This articles describes how to import and export permission sets and permissions
 
 ## <a name="ExportPerms"></a>Export permission sets and permissions  
 
-1.  To export the permission sets' XML file, run XMLport 9171 **Import/Export Permission Sets** ,  
+1.  To export the permission sets' XML file, run XMLport 9171 **Import/Export Permission Sets**.   
 
      In the request page for the XMLport, in the **Direction** field, choose **export**, choose the **OK** button, and then specify the name and location of the permission sets XML file.  
 
-3.  Run XMLport 9172 **Import/Export Permissions** to import the permission XML file.  
+2.  To export permissions, run XMLport 9172 **Import/Export Permissions**.  
 
      In the request page for the XMLport, in the **Direction** field, choose **Export**, choose the **OK** button, and then specify name and location of the permissions XML file.
 

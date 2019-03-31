@@ -1,7 +1,7 @@
 ---
 title: "FlowFilter Overview"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,3 +29,4 @@ A user may want to limit calculations to include only those values in a column t
 
 ## See Also
 [Create FlowFields and FlowFilters](devenv-creating-flowfields-and-flowfilters.md)  
+[Flowfields](devenv-flowfields.md)  

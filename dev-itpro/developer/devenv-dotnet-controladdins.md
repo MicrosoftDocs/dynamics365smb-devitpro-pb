@@ -3,7 +3,7 @@ title: ".NET Control Add-Ins"
 description: "Description of the process of declaring the usage of a .NET or Javascript add-ins in AL"
 author: solsen
 ms.custom: na
-ms.date: 12/12/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

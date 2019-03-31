@@ -3,7 +3,7 @@ title: "Query Object"
 description: "Description of the query object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/22/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ ms.author: solsen
 caps.latest.revision: 18
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Query Object
 

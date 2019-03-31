@@ -3,14 +3,13 @@ title: "Pages Overview"
 description: Pages are the main way to display and organize data. Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/22/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 0ba68a20-d83a-4e4c-9938-dac7fa8f5461
-caps.latest.revision: 35
 ms.author: solsen
 ---
 
@@ -35,6 +34,7 @@ page 50102 PageName
     PageType = List;
     SourceTable = TableName;
     Editable = true;
+    ContextSensitiveHelpPage = 'feature-overview';
     ...
 }
 ```
@@ -164,19 +164,85 @@ tableextension 70000020 CustomerTableExtension extends Customer
     }
 }
 ```
-  
-## Best practices for designing pages  
+
+## Adding Help to the page objects
+
+The [!INCLUDE [prodshort](includes/prodshort.md)] user assistance model expects your solution to include tooltips and links to context-sensitive Help. For more information, see [User Assistance Model](../user-assistance.md).  
+
+### Context-sensitive Help
+
+To apply context-sensitive Help to your app, you specify a URL to your Help library in the app.json file, and you then set the relevant target Help files as property values for each of your page objects and page extension objects. Between them, these two settings then give users access to context-sensitive Help for the features in your app at runtime. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
+
+### Tooltips
+
+In combination with descriptive captions and instructional text, tooltips are our current implementation of *embedded user assistance*, which is an important principle in today’s world of software design. The tooltips are there to help users unblock themselves by providing an answer to the most likely questions the users might have, such as “What data can I input here?” or “What is the data used for?”.  
+
+The base application has set the Tooltip property for all controls on (almost) all page objects. Most system actions also include tooltips so that users get a consistent experience. Your extensions are expected to also include tooltips for the same reason. For more information, see [ToolTip Property](../developer/properties/devenv-tooltip-property.md).  
+
+### Instructional text
+
+The base application has applied instructional text to setup guides and certain other types of page objects. Your extensions are expected to also include instructional text to setup guides for the same reason. For more information, see [InstructionalText Property](../developer/properties/devenv-instructionaltext-property.md).  
+
+### Example
+
+The following example shows how you can apply user assistance and link to Help in a page object:
+
+```
+page 50101 "Reward Card"
+{
+    PageType = Card;
+    SourceTable = Reward;
+    ContextSensitiveHelpPage = 'sales-rewards';
+
+    layout
+    {
+        area(content)
+        {
+            group(Reward)
+            {
+                InstructionalText = 'Fill in the fields so that you can reward customers with discounts.';
+                field("Reward Id"; "Reward ID")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the unique ID of the reward.';
+                }
+
+                field(Description; Description)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies what this type of reward is used for.';
+                }
+
+                field("Discount Percentage"; "Discount Percentage")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the impact of the reward on the customer''s price.';
+                }
+            }
+        }
+    }
+}
+```
+
+In this example, the app.json file has specified a link to where the *sales-rewards* target file is published, such as `"contextSensitiveHelpUrl": "https://mysite.com/documentation"`.
+
+## Best practices for designing pages
+
 We recommend that you simplify the user experience by reducing what users see by default. You can promote the information that the users most frequently need to see and hide the less important information. For example:  
   
 - Place common tasks in the ribbon  
   
 - Organize information pages under FastTabs and, by default, hide the FastTabs that are infrequently visited.  
   
-- Use one to three FactBoxes on a page to provide supplementary information and a place for adding notes.  
-  
-## See Also  
+- Use one to three FactBoxes on a page to provide supplementary information and a place for adding notes  
+
+- Add a target Help file for context-sensitive Help for the feature that the page object supports
+
+## See Also
+
 [Page Properties Overview](properties/devenv-page-property-overview.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Using Designer](devenv-inclient-designer.md)  
 [Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
+[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  

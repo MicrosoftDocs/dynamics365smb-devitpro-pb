@@ -1,7 +1,7 @@
 ---
 title: "Control Add-in Style Guide"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Control Add-in Style Guide
 This article offers a variety of stylistic definitions that are used throughout [!INCLUDE[d365fin_md](includes/d365fin_md.md)], which you can apply to your control add-ins to create an experience that complements [!INCLUDE[d365fin_md](includes/d365fin_md.md)].

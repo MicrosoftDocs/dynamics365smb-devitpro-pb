@@ -2,7 +2,7 @@
 title: "Arranging Fields in Rows and Columns Using a Fixed Control"
 description: A Fixed control is used to arrange page fields in rows and columns, similar to a matrix-like format which is typically used to display statistical data.
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -94,7 +94,7 @@ You can also set up more than one Fixed control in a group control. The page are
 ![Multiple Fixed controls in a single group](media/BusRTCFixedLayoutMultiple.png "FixedControlMultiple") 
 
 > [!NOTE]  
->  The fields in the Fixed controls in the illustration are not in a group control. If they were in a group control, then they would follow the same principle as described in the previous section about how to group fields. 
+> The fields in the Fixed controls in the illustration are not in a group control. If they were in a group control, then they would follow the same principle as described in the previous section about how to group fields. 
 
 > [!IMPORTANT]  
 > In previous versions, having a Fixed control directly under a content area was supported. However, in [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)], you must make sure that the Fixed control is nested in a Group control. For more information, see [Supported Structure for Using the Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md#supported-structure-for-using-the-grid-and-fixed-controls).

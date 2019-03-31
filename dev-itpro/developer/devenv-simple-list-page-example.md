@@ -3,7 +3,7 @@ title: D Simple List Page Example
 description: "Provides AL code for a simple list type page"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,8 +11,6 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
-
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
 
 # Simple List Page Code Example
 

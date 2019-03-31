@@ -9,7 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: dynamics365-business-central
-ms.date: 02/27/2019
+ms.date: 04/01/2019
 ms.author: jswymer
 ---
 # Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
@@ -31,7 +31,7 @@ The process consists of two parts:
 
 ## Codeunit 1 has been deprecated and replaced
 
-Codeunit **1 ApplicationManagement** codeunit has been retired, and new ‘system’ codeunits have been introduced in the 2 billion range.
+[!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] included codeunit **1 ApplicationManagement**. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this codeunit has been retired, and new ‘system’ codeunits have been introduced in the 2 billion range.
 
 For information, see [Transitioning from Codeunit 1 to System Codeunits](transition-from-codeunit1.md).
 
@@ -43,7 +43,7 @@ For information about how to convert to extensions V2, see [Converting Extension
 
 ## MenuSuite not used for page and report search 
 
-The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects. As part of the application code upgrade process, you change these properties on existing pages and reports used by the MenuSuite to ensure that they are still searchable from the Web client. For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects. As part of the application code upgrade process, you change these properties on existing pages and reports used by the MenuSuite to ensure that they are still searchable from the Web client. For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
 
 ## <a name="CRM"></a>[!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration
 

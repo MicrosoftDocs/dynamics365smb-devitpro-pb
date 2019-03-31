@@ -9,13 +9,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Austria, local functionality
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.author: SorenGP
 
 ---
 
 # Deprecated Features in the Austrian Version of Microsoft Dynamics NAV 2018
 This topic lists and describes the local functionality for Austria that has been removed from [!INCLUDE[navnow](../developer/includes/navnow_md.md)], made available from a new page or report, or replaced by a new feature.
+
+## Physical Inventory Order
+You can take inventory of your items by using the **Physical Inventory Order** and **Physical Inventory Recording** pages. The physical inventory order contains data for planning, realizing, and analyzing physical inventory. The physical inventory recording contains the items and quantities to be counted and forms the basis of the print-out to be used in the warehouse.
+
+|Moved, Removed, or Replaced?|Why?|
+|----|----|
+|Moved| The Physical Inventory Order feature is no longer specific to Austria, so we have made it generally available in the standard product. |
 
 ## Blanket Order Archiving and Document Line Tracking
 You can archive and delete blanket sales and purchase orders. You can view documents that are related to sales order lines and purchase order lines, including from archived order lines. Related documents that you can track include quotes, shipments, receipts, and blanket orders. This helps you to identify documents used to process orders.

@@ -1,7 +1,7 @@
 ---
 title: "Web Client URL"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Web Client URL
 There are several parameters that you can add to the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL to manipulate what is displayed in the client, such as opening a specific company, or targeting a specific page, report, or table. For example, the following URL displays page **9305 Sales Order List** for the [!INCLUDE[demoname](includes/demoname_md.md)] company:

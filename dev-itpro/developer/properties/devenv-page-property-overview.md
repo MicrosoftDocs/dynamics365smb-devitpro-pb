@@ -3,7 +3,7 @@ title: "Page and Page Extension Properties Overview"
 description: "Description of the available properties on page extensions."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,6 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 [!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
@@ -38,6 +37,7 @@ The following properties all apply to the page object, only some of these proper
 |[CharAllowed Property](devenv-charallowed-property.md)||<ul><li>Field control</li></ul>|
 |[ClosingDates Property](devenv-closingdates-property.md)|X|<ul><li>Field control</li></ul>|
 |[ColumnSpan Property](devenv-columnspan-property.md)||<ul><li>Field control</li></ul>|
+|[ContextSensitiveHelpPage Property](devenv-contextsensitivehelppage-property.md)|X|<ul><li>Page object</li></ul>|
 |[ContainerType Property](devenv-containertype-property.md)|X|<ul><li>Container control</li></ul>|
 |[DataCaptionExpression Property](devenv-datacaptionexpr-property.md)|X|<ul><li>Page object</li></ul>|
 |[DateFormula Property](devenv-dateformula-property.md)||<ul><li>Field control</li></ul>|
