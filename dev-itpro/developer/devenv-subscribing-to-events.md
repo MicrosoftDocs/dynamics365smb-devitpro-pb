@@ -98,6 +98,6 @@ codeunit 70000002 MySubscriber
  [Event Types](devenv-event-types.md)   
  [Events in AL](devenv-events-in-al.md)
  [EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md)
- [EventSubscriber Attribute](devenv-eventsubscriber-attribute.md)
+ [EventSubscriber Attribute](methods/devenv-eventsubscriber-attribute.md)
 
 
