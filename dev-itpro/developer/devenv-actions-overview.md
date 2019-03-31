@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Actions Overview
+
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page, referred to as the action bar. In this topic, you learn about different types of actions, and how you can enable users to quickly locate the actions they want to use.  
   
 The actions can be displayed in different menus on the action bar.
@@ -24,7 +25,7 @@ You can choose from the following action menus to place the actions in the speci
 |Area |Syntax| Used on|Description|Example|  
 |---------------|--|-------|-----------|-------|  
 |Actions menu|`area(processing)`| Role Center, list, card, and task pages|User tasks|Post a sales order|
-|New document group in Actions menu|``area(creation)`` |List, card, Role Center pages, and task pages|Actions that appear under the New group. Opens a new [!INCLUDE[d365fin_md](includes/d365fin_md.md)] document.|New sales invoice|  
+|New document group in Actions menu|`area(creation)` |List, card, Role Center pages, and task pages|Actions that appear under the New group. Opens a new [!INCLUDE[d365fin_md](includes/d365fin_md.md)] document.|New sales invoice|  
 |Navigate menu|``area(navigation)`` |List, card, and task pages|Links to other pages in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|Prices|  
 |Report menu|``area(reporting)`` |Role Center, list, card, and task pages|A list of available reports.|Customer Top 10 List| 
   
