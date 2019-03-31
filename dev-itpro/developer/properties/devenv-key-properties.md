@@ -1,7 +1,7 @@
 ---
 title: "Key Properties"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,8 @@ The keys associated with a table have properties that describe their behavior, j
 |[MaintainSIFTIndex Property](devenv-maintainsift-index-property.md)|Determines whether SIFT structures should be created in SQL Server to support the corresponding SumIndexFields for the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] key.|  
 |[Clustered Property](devenv-clustered-property.md)|Sets a value that indicates whether the index is clustered.|  
 |[SQLIndex Property](devenv-sql-index-property.md)|Sets the actual fields that are used in the corresponding index on SQL Server.|  
+|[Unique Property](devenv-unique-property.md)|Sets whether the value of a key must be unique.| 
 
 ## See Also  
- <!-- [How to: View or Modify Properties on a Key](How-to--View-or-Modify-Properties-on-a-Key.md)   -->
+
  [Table Keys](../devenv-table-keys.md)

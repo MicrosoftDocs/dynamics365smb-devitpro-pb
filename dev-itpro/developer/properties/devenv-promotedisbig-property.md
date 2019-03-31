@@ -1,7 +1,7 @@
 ---
 title: "PromotedIsBig Property"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,19 +12,17 @@ caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # PromotedIsBig Property
 Sets a value that indicates whether the promoted action is displayed on the ribbon with a large icon.  
   
 ## Applies to  
   
--   Page actions  
+- Page actions  
   
 ## Remarks  
- Available options are **true**/**false**.  
+Available options are **true**/**false**.  
   
 ## See Also  
- [Promoted Property](devenv-promoted-property.md)   
- [Promoted Actions](../devenv-promoted-actions.md)  
- 
+[Promoted Property](devenv-promoted-property.md)   
+[Promoted Actions](../devenv-promoted-actions.md)  
+[Actions Overview](../devenv-actions-overview.md)  

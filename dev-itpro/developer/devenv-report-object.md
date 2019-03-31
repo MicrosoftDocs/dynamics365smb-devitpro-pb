@@ -3,7 +3,7 @@ title: "Report Object"
 description: "Reports are used to print or display information from a database."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/21/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Report Object
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.
@@ -49,6 +49,7 @@ report Id MyReport
     
     requestpage
     {
+        ContextSensitiveHelpPage = 'my-feature';
         layout
         {
             area(Content)
@@ -224,18 +225,14 @@ report 50103 "Customer List"
           CustAddr,Name,"Name 2",'',Address,"Address 2",
           City,"Post Code",County,"Country/Region Code");
       end;
-
-      trigger OnPreDataItem();
-      begin
-        CurrReport.CREATETOTALS("Balance (LCY)");
-      end;
+     
     }
   }
 
   requestpage
   {
     SaveValues=true;
-
+    ContextSensitiveHelpPage = 'my-feature';
     layout
     {
     }
@@ -247,6 +244,7 @@ report 50103 "Customer List"
 
   labels
   {
+      LabelName = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
   }
 
   trigger OnPreReport();
@@ -275,9 +273,11 @@ report 50103 "Customer List"
 ```
 
 ## See Also
+
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
-[Page Extension Object](devenv-page-ext-object.md)   
+[Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[Page Extension Object](devenv-page-ext-object.md)  
 [Page Properties](properties/devenv-page-property-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

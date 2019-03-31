@@ -1,7 +1,7 @@
 ---
 title: "ConstValueML Property"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,8 +16,8 @@ caps.latest.revision: 6
 # ConstValueML Property
 Sets the values of a AL text constant for the different languages that are available in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].  
 
-> [!NOTE] 
-> The support for using the ML properties, such as **CaptionML** and **TooltipML**, is being deprecated, so it is recommended to refactor your extension to use the corresponding **Caption** or **Tooltip** property, which is being picked up in the .xliff file. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
+> [!NOTE]  
+> To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
   
 ## Applies To  
  **Local** and **global** text constants in the AL code of objects.  

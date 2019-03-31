@@ -4,13 +4,11 @@ description: "Description of the converter tool."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/29/2019
+ms.date: 04/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
-
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # The Txt2Al Conversion Tool
 The Txt2Al conversion tool allows you to take existing [!INCLUDE[navnow_md](includes/navnow_md.md)] objects that have been exported in .txt format and convert them into the new .al format. The .al format is used when developing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Converting the objects consists of following two steps:
@@ -18,7 +16,7 @@ The Txt2Al conversion tool allows you to take existing [!INCLUDE[navnow_md](incl
 1. Exporting the objects from C/SIDE in a cleaned format.
 2. Converting the objects to the new syntax.
 
-## To run the Txt2Al conversion tool
+## Using the Txt2Al conversion tool
 To run the Txt2Al conversion tool, follow the steps outlined below.
 
 1. Start with a clean [!INCLUDE[navnow_md](includes/navnow_md.md)] database and compile the database.  
@@ -35,7 +33,9 @@ It is **very** important that you compile the database to get the right result i
 6. Create .delta files using the Compare-NAVApplicationObject powershell script. For more information, see [Generating DELTA Files](devenv-generating-delta-files.md).
 7. Go to the *\Program Files(x86)\Microsoft Dynamics 365 Business Central\130\RoleTailored Client* folder and locate the **txt2al.exe** converter tool. 
 8. Run the tool from the command line using the following syntax:  
-```txt2al --source --target --rename --type --extensionStartId```
+```txt2al --source --target --rename --type --extensionStartId --injectDotNetAddIns --dotNetAddInsPackage --dotNetTypePrefix --translationFormat --addLegacyTranslationInfo```
+
+## Parameters
 
 |Parameter   |Description|
 |------------|-----------|
@@ -45,6 +45,11 @@ It is **very** important that you compile the database to get the right result i
 |--type=ObjectType |The type of object to convert. Allowed values: Codeunit, Table, Page, Report, Query, XmlPort|
 |--extensionStartId |The starting numeric ID of the extension objects (Default: 70000000). It will be incremented by 1 for each extension object.|
 |--help |Show help screen.|
+|--injectDotNetAddIns|Inject the definition of standard .NET add-ins in the resulting .NET package. The standard .NET add-ins are a set of add-ins that are embedded into the platform.|
+|--dotNetAddInsPackage=Path |Specify the path to an AL file containing a definition for a .NET package containing .NET type declarations that should be included in the .NET package definition produced by the conversion. This should be used to inject a custom set of .NET control add-in declarations. The file should contain something similar to the example shown below.|
+|--dotNetTypePrefix |Specify a prefix to be used for all .NET type aliases created during the conversion.|
+|--translationFormat=ObjectType |Specify the format to use when generating translation files. The allowed values are: Xliff, Lcg.|
+|--addLegacyTranslationInfo |Add information to the translation file that can be used to migrate existing translations/translated resources. During conversion, XLIFF files from all the ML properties in the app are extracted. If this switch is set, a comment is added in the generated XLIFF that specifies what the ID of the translation item would be in C/SIDE. This acts as a mapping that allows you to convert existing translation resources for your app.|
 
 > [!NOTE]  
 > It is recommended to only use the conversion tool for export. Importing objects that have been exported can damage your application.

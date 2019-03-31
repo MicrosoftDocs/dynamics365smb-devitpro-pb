@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 01/23/2019
+ms.date: 04/01/2019
 ms.author: jaredha
 
 ---

@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/16/2018
+ms.date: 04/01/2019
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
@@ -38,6 +38,10 @@ No, this is not currently supported.
 ## Can I get training in Business Central?
 
 Yes, you can. As a partner you have access to the Dynamics Learning Portal, where you can find eLearning courses for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see the [Microsoft Dynamics 365 training page](/dynamics365/get-started/training/index#dynamics-365-partners).  
+
+## How can I troubleshoot my customers' online tenants?
+
+You can use the **Help and Support** page in your customers' tenants to find technical information, and they can use that page to contact you. For more information, see [Configuring Technical Support for [!INCLUDE[prodlong](includes/prodlong.md)]](technical-support.md).  
 
 ## See Also
 

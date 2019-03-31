@@ -3,7 +3,7 @@ title: "Table Object"
 description: "Description of the table object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/18/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Table Object
 Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Regardless of how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 

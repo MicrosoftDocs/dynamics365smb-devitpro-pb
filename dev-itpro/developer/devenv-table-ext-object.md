@@ -3,14 +3,14 @@ title: "Table Extension Object"
 description: "Description of the table extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Table Extension Object
 The table extension object allows you to add additional fields or to change some properties on a table provided by the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service. In this way, you can add data to the same table and treat it as a single table. For example, you may want to create a table extension for a retail winter sports store. In your solution you want to have `ShoeSize` as an additional field on the customer table. Adding this as an extension allows you to write code for the customer record and also include values for the `ShoeSize`.

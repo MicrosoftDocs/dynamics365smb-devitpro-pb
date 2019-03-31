@@ -4,7 +4,7 @@ author: SusanneWindfeldPedersen
 
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,11 +20,6 @@ A Connect app establishes a connection between two independent services using an
 
 ## Want to try it out?
 With this preview, you can get started exploring the APIs that we offer for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. We do not yet support submission to AppSource for Connect apps, so for now, we encourage you to get familiar with the structure and possibilities of the API.
-
-<!--
-> [!NOTE]  
-> For information about enabling the APIs on [!INCLUDE[navnow_md](includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
--->
 
 It's easy to get started. Just spin up a tenant by going through these steps.
 
@@ -70,7 +65,7 @@ It's easy to get started. Just spin up a tenant by going through these steps.
 
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
-> [!Note]  
+> [!NOTE]  
 > Delta token support is available only in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and not available in Dynamics NAV.
 
 The user can obtain a delta link from each entity API in the library by including the `odata.track-changes` preference in the header of the request. The response to the GET request returns a deltaLink parameter, providing an opaque URL.
@@ -139,4 +134,4 @@ The response would return with the specified changes in the result, see the foll
 
 + You can include filters for the delta links; which are typically based on the GET query call. When calling the API with the deltaLink to get the changes, each entity that previously did not match the filter criteria, but matches it now, returns as an `"add"` entity. Each entity that previously matched the query but no longer does, either because the entity was deleted, or the properties of the entity have changed such that it no longer matches the query parameters. In this case, it returns as a `"removed"` entry.
 
-
+## See Also

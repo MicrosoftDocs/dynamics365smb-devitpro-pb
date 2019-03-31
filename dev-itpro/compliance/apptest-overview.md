@@ -3,7 +3,7 @@ title: "Rules and Guidelines for AL Code"
 description: "Describing the steps you must go through to successfully submit your Dynamics 365 Business Central app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/11/2018
+ms.date: 04/01/2019
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -78,7 +78,7 @@ To help you save time, we‘re sharing a list of the top 15 common pitfalls that
     Make sure that your app is properly tested on the correct version. For more information, see [Current Build - Developing for Dynamics 365 Business Central](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/4756) on the Collaborate site.
 13. You tested using SUPER permissions
 
-    You tested your app, but your user had SUPER permissions. This can hide critical errors. You must test with a user that doesn’t have the SUPER permissions. The user must have the ESSENTIAL user license type. For more information, see [Testing your Extension](apptest-testingyourextension.md).  
+    You tested your app, but your user had SUPER permissions. This can hide critical errors. You must test with a user that doesn’t have the SUPER permissions. The user must have the ESSENTIAL license. For more information, see [Testing your Extension](apptest-testingyourextension.md).  
 14. User scenario document unclear
 
     Our validation team is testing your app functionality manually, so we need to be able to understand the core functionality of your app. If your user scenario document is missing important details that are needed for us to properly walk through your app’s setup and usage scenarios, we cannot validate your app successfully. For more information, see [User Scenario Documentation](apptest-userscenario.md).

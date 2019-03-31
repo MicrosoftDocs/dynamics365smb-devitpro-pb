@@ -3,7 +3,7 @@ title: "Converting Extensions V1 to V2 Overview"
 description: "Overview of the converting of extensions."
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Converting Extensions V1 to Extensions V2
 Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they are different or modify the behavior of the solution. This article explains the steps involved in converting V1 extensions, written in C/SIDE. to V2 extensions; written using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code. The overall steps for the conversion are:
