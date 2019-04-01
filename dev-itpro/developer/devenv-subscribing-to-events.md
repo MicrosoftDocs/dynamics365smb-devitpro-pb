@@ -2,7 +2,7 @@
 title: "Subscribing to Events"
 description: This topic describes how to design event subscribers in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -98,6 +98,6 @@ codeunit 70000002 MySubscriber
  [Event Types](devenv-event-types.md)   
  [Events in AL](devenv-events-in-al.md)
  [EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md)
- [EventSubscriber Attribute](devenv-eventsubscriber-attribute.md)
+ [EventSubscriber Attribute](methods/devenv-eventsubscriber-attribute.md)
 
 

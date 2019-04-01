@@ -2,7 +2,7 @@
 title: Upgrading the Database
 description: This article describes the tasks required for upgrading from the earlier versions of database to Dynamics 365 Business Central.
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
     For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
 
-3. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has been installed with the upgraded application.
+3. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has been installed with the upgraded application and upgrade toolkit.
 
     As a minimum, you must install the following components:
     - [!INCLUDE[server](../developer/includes/server.md)] instance connected to the application database.
@@ -52,24 +52,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
     
     For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
 
-4. Get the upgrade toolkit for the application version.
-
-    The upgrade toolkit includes upgrade codeunits for handling the data upgrade.
-    For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
-
-    For W1 versions, you can find the default upgrade toolkit objects in the  **UpgradeToolKit\Data Conversion Tools** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD). Choose the FOB that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version from which you are upgrading:
-    
-    |  From  |  To Business Central April 2019  |  To Business Central October 2018   |
-    |-----------|-------|-----------|
-    | [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]| Upgrade80014x.FOB |Upgrade800130.FOB|
-    | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade90014x.FOB| Upgrade900130.FOB|
-    |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade100014x.FOB| Upgrade1000130.FOB|
-    |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade110014x.FOB|Upgrade1100130.FOB|
-    |[!INCLUDE[prodshort](../developer/includes/prodshort.md) Fall 2018]| Upgrade13x14x.FOB|Not applicable|
-
-   For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark or **Upgrade110014x.DE.fob** for Germany.
-
-5. Permission sets (except SUPER) and permissions have been exported from the old tenant database.
+4. Permission sets (except SUPER) and permissions have been exported from the old tenant database.
 
     - When upgrading from [!INCLUDE[navnow](../developer/includes/navnow_md.md)]
 
@@ -83,7 +66,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
         In the client, search for and open the **Permission Sets** page, select the user-defined permission sets that you want to keep, and then choose **Export Permission Sets**.
 
-6. If the old application uses data encryption, you have the encryption key file that it used for the data encryption.  
+5. If the old application uses data encryption, you have the encryption key file that it used for the data encryption.  
 
     For more information, see [Export and Import Encryption Keys](how-to-export-and-import-encryption-keys.md). 
 
@@ -201,11 +184,15 @@ You perform these tasks on each tenant that you want to upgrade.
 
 1. Mount the tenant.
 
-    Mount the tenant on the new [!INCLUDE[server](../developer/includes/server.md)] instance that connects to the application database. To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
+    Mount the tenant on the new [!INCLUDE[server](../developer/includes/server.md)] instance that connects to the newly application database. To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
 
     ```
     Mount-NAVTenant -ServerInstance <ServerInstanceName> -DatabaseName <Database name> -DatabaseServer <server\instance> -Tenant <TenantID> -AllowAppDatabaseWrite
     ```
+    
+    > [!IMPORTANT]
+    > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you will get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
+    
     > [!NOTE]  
     > For upgrade, we recommend that you use the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
 
@@ -248,7 +235,7 @@ You perform these tasks on each tenant that you want to upgrade.
     Start-NavDataUpgrade -ServerInstance <ServerInstanceName>
     ```  
 
-     **Important:** If you have extensions, then you must run the data upgrade so that it executes functions in the serial mode.
+     **Important:** If you have extensions, then you must run the data upgrade so that it executes functions in the serial mode as follows.
 
     ```  
     Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -Tenant <tenantID> -FunctionExecutionMode Serial

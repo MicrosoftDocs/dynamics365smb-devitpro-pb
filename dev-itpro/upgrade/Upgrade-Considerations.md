@@ -9,7 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: dynamics365-business-central
-ms.date: 02/27/2019
+ms.date: 04/01/2019
 ms.author: jswymer
 ---
 # Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
