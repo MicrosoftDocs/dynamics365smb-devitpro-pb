@@ -37,7 +37,7 @@ Creates an encryption key for the current tenant.
  If a key already exists, the following error will be displayed: **Unable to create a new encryption key. An encryption key already exists**.  
 
 ## Example  
- This code example creates an encryption key for the current tenant. It uses the [ENCRYPTIONENABLED](../../methods/devenv-encryptionenabled-method.md) method to perform a check.  
+ This code example creates an encryption key for the current tenant. It uses the [ENCRYPTIONENABLED](../../methods-auto/system/system-encryptionenabled-method.md) method to perform a check.  
 
 ```  
 IF NOT ENCRYPTIONENABLED THEN  
