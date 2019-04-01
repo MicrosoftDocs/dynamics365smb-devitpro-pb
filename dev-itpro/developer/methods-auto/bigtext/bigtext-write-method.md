@@ -42,7 +42,7 @@ The stream to which you write a BigText.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- To delete the content in a BigText variable, use the CLEAR method.  
+ To delete the content in a BigText variable, use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md).  
   
 ```  
 CLEAR(BigText)  
