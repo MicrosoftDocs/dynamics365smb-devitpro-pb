@@ -111,7 +111,7 @@ Returns a single environment if exists.
 ### Create environment
 Creates a new sandbox environment with sample data.
 
-```[201] PUT /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}```
+```[201] PUT /v1.2/admin/applications/{applicationFamily}/environments/{environmentName | "Sandbox" or "Production"}```
 
 or
 
@@ -186,6 +186,32 @@ Creates a new sandbox environment with a copy of the production environment's da
 Deletes the specified environment. Warning: A production environment should not be deleted.
 
 ```[202] DELETE /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}```
+
+## Available Versions
+Get information about the currently supported versions.
+
+### Versions and Corresponding Rings
+
+```[200] GET /v1.2/admin/applications/{applicationFamily}/rings```
+
+**Response:**  
+
+```
+{
+  "value": [
+    {
+      "applicationVersion": {
+        "major": int,
+        "minor": int,
+        "build": int,
+        "revision": int
+      },
+      "ringName": string,
+      "ringFriendlyName": string
+    }
+  ]
+}
+```
 
 ## Upgrades
 The upgrade settings allow you to specify an upgrade window for the time of day an upgrade can be performed on the tenant environment. The upgrade window must be a minimum of six hours. (e.g. 1:00 - 7:00)
@@ -430,7 +456,7 @@ Get information about upgrades that have already been scheduled for a specific e
 ```[200] GET /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/upgrade```
 
 **Response:**  
-Information about the upgrade job for that environment.
+Returns information about the upgrade job for that environment.
 
 ```
 {
@@ -467,32 +493,6 @@ Reschedule an upgrade, if able.
 
 > [!NOTE]  
 > All datetime values are in UTC
-
-## Available Versions
-Get information about the currently supported versions.
-
-### Versions and Corresponding Rings
-
-```[200] GET /v1.2/admin/applications/{applicationFamily}/rings```
-
-**Response:**  
-
-```
-{
-  "value": [
-    {
-      "applicationVersion": {
-        "major": int,
-        "minor": int,
-        "build": int,
-        "revision": int
-      },
-      "ringName": string,
-      "ringFriendlyName": string
-    }
-  ]
-}
-```
 
 ## See Also
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)    
