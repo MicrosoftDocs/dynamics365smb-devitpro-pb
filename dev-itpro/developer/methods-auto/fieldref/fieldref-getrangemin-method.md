@@ -38,10 +38,10 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method is like the [GETRANGEMIN Method \(Record\)](../../methods/devenv-getrangemin-method-record.md) method.  
+ This method is like the [GETRANGEMIN Method \(Record\)](../../methods-auto/record/record-getrangemin-method.md) method.  
   
 ## Example  
- The following example opens the Customer table as RecordRef variable, creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The [SETFILTER Method \(FieldRef\)](../../methods/devenv-setfilter-method-fieldref.md) sets a filter that selects records in the range 10000 to 40000 from the No. field. The GETRANGEMIN method retrieves and stores the minimum value that is set in the filter, stores the value in the varMin variable and displays it in a message box. The varMin variable contains 10000 which is the minimum value that is set in the filter. This example requires that you create the following global variables and text constants.  
+ The following example opens the Customer table as RecordRef variable, creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The [SETFILTER Method \(FieldRef\)](../../methods-auto/fieldref/fieldref-setfilter-method.md) sets a filter that selects records in the range 10000 to 40000 from the No. field. The GETRANGEMIN method retrieves and stores the minimum value that is set in the filter, stores the value in the varMin variable and displays it in a message box. The varMin variable contains 10000 which is the minimum value that is set in the filter. This example requires that you create the following global variables and text constants.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  
