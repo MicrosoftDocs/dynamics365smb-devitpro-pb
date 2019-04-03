@@ -1,5 +1,5 @@
 ---
-title: D Simple List Page Example
+title: Simple List Page Example
 description: "Provides AL code for a simple list type page"
 author: jswymer
 ms.custom: na
