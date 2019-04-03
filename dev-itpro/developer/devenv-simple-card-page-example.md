@@ -1,6 +1,6 @@
 ---
-title: D Simple List Page Example
-description: "Provides AL code for a simple list type page"
+title: Simple Card Page Example
+description: "Provides AL code for a simple card type page"
 author: jswymer
 ms.custom: na
 ms.date: 04/01/2019
@@ -19,7 +19,6 @@ The AL code in this article creates a simple card page that displays records fro
 ![Card page example](media/sample-card-page.png "[Card page example")
 
 For a more detailed explanation of the list page, see [Designing Card and Document Pages](devenv-designing-card-pages.md).
-
 
 ```
 page 50112 SampleCustomerCard
