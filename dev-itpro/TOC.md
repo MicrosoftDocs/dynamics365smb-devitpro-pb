@@ -186,7 +186,9 @@
 #### [Adding Pages and Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Designing Pages
 #### [Designing List Pages](developer/devenv-designing-list-pages.md)
+##### [Sample List Page](developer/devenv-simple-list-page-example.md)
 #### [Designing Card Pages](developer/devenv-designing-card-pages.md)
+##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
 ### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 ## [Reports](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
