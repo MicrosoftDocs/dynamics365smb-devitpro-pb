@@ -38,7 +38,7 @@ Now that we have the username and password, we can connect and authenticate. You
 ## Setting up Azure Active Directory (AAD) based authentication
 Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
-1. Follow the instructions in the [Integrating applications with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) article. The next steps elaborate on some of the specific settings you must enable.
+1. Follow the instructions in the [Integrating applications with Azure Active Directory](https://docs.microsoft.com/da-dk/azure/active-directory/develop/quickstart-register-app) article. The next steps elaborate on some of the specific settings you must enable.
 2. During the registration of the app, make sure to go to **Settings**, and then under **API ACCESS**, choose **Required permissions**.
 3. Choose **Add**, and then under **Add API Access**, choose **Select an API** and search for the **Dynamics 365** option.  
     > [!NOTE]  
