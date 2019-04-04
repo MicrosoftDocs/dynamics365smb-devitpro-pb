@@ -39,12 +39,15 @@ As you navigate to other pages in the application, the **Page Inspection** pane 
 
 In short, the page inspection pane shows the information for the main page or sub-page in a part, the page's source table (if any) and fields, extensions that affect the page, and current filters applied to the page. The following sections describe details about what is shown.
 
+> [!NOTE]
+> If you do not see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](https://docs.microsoft.com/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
+
 ### [Page](#tab/page)
 
 The **Page** field shows information about the main page or a selected (highlighted) sub-page in a part. The field shows the following information:
 
-- The name, as specifed by its [Name property](properties/devenv-name-property.md)
-- The ID as specifed by the [ID property](properties/devenv-id-property.md).
+- The name, as specified by its [Name property](properties/devenv-name-property.md)
+- The ID as specified by the [ID property](properties/devenv-id-property.md).
 - The type, as specified by the [PageType property](properties/devenv-pagetype-property.md).
 
 
@@ -65,9 +68,8 @@ The **Page** field shows information about the main page or a selected (highligh
 
 If the page is associated with a source table, the **Table** field displays information about the source table of the main page or the selected page in a part, as specified by the page's [SourceTable property](properties/devenv-sourcetable-property.md). The **Table** field shows the following information:
 
-- The name, as specifed by its [Name property](properties/devenv-name-property.md)
-- The ID as specifed by the [ID property](properties/devenv-id-property.md).
-
+- The name, as specified by its [Name property](properties/devenv-name-property.md)
+- The ID as specified by the [ID property](properties/devenv-id-property.md).
 
 #### View Table
 
