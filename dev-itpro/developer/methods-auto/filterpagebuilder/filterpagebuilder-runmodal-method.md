@@ -38,10 +38,10 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 ## Remarks  
  The page is run modally and includes an **OK** and **Cancel** button for closing to modal popup.  
   
- You can call the [GETVIEW method \(FilterPageBuilder\)](../../methods/devenv-getview-method-filterpagebuilder.md) method to retrieve the current filter view that is configured on the filter control and apply to the record.  
+ You can call the [GETVIEW Method](../../methods-auto/filterpagebuilder/filterpagebuilder-getview-method.md) method to retrieve the current filter view that is configured on the filter control and apply to the record.  
   
 ## Example  
- The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view. The GETVIEW method is used to capture that filter view from the FilterPageBuilder object, and then apply it to the record.  
+ The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view. The [GETVIEW Method](../../methods-auto/filterpagebuilder/filterpagebuilder-getview-method.md) is used to capture that filter view from the FilterPageBuilder object, and then apply it to the record.  
   
  This example requires that you create the following global variables.  
   

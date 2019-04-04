@@ -47,11 +47,11 @@ An instance of the [File](file-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If the [TEXTMODE Method \(File\)](../../methods/devenv-textmode-method-file.md) returns **true** and you read or write to the file, text is put in the buffer.  
+ If the [TEXTMODE Method \(File\)](../../methods-auto/file/file-textmode-method.md) returns **true** and you read or write to the file, text is put in the buffer.  
   
- If the [TEXTMODE Method \(File\)](../../methods/devenv-textmode-method-file.md) method returns **false**, binary information is put in the buffer.  
+ If the [TEXTMODE Method \(File\)](../../methods-auto/file/file-textmode-method.md) method returns **false**, binary information is put in the buffer.  
   
- If you call CREATE on a File variable that refers to an open file, the method does not automatically close the existing file and create the new file. You must explicitly call the [CLOSE Method \(File\)](../../methods/devenv-close-method-file.md) to close the existing file. Otherwise, a run-time error occurs.  
+ If you call CREATE on a File variable that refers to an open file, the method does not automatically close the existing file and create the new file. You must explicitly call the [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) to close the existing file. Otherwise, a run-time error occurs.  
   
 ## Example  
  The following example creates a file that is named TestFile.txt in the path C:\\TestFolder\\. The TestFile variable stores the file and path that is created. If the file is created, a message that states that the file is created is displayed. Otherwise, an error message is displayed. This example requires that you create the following global variable.  

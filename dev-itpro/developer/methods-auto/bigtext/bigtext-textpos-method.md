@@ -44,7 +44,7 @@ The position at which a specific string first occurs in this BigText instance.
  The first character in a *BigText* variable is position 1.  
   
 ## Example  
- The following examples show how to use the TEXTPOS method. These examples require that you create the following global variables and text constant.  
+ The following examples show how to use the [TEXTPOS Method](../../methods-auto/bigtext/bigtext-textpos-method.md). These examples require that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

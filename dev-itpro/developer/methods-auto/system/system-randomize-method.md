@@ -33,12 +33,12 @@ A number used to create a unique set of numbers.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If you use the same number as *Seed*, the same set of numbers is generated. If you omit this optional parameter, **RANDOMIZE** uses the current system time \(total number of milliseconds since midnight\). Calling the **RANDOMIZE** method before the **RANDOM** method makes the random numbers more unpredictable.  
+ If you use the same number as *Seed*, the same set of numbers is generated. If you omit this optional parameter, **RANDOMIZE** uses the current system time \(total number of milliseconds since midnight\). Calling the **RANDOMIZE** method before the [RANDOM Method](../../methods-auto/system/system-random-method.md) makes the random numbers more unpredictable.  
   
- Furthermore, the random generator is specific to each connection so the sequence of numbers that is returned when you call the **RANDOM** method will be the same after each call to **RANDOMIZE** with a specific seed.  
+ Furthermore, the random generator is specific to each connection so the sequence of numbers that is returned when you call the [RANDOM Method](../../methods-auto/system/system-random-method.md) will be the same after each call to **RANDOMIZE** with a specific seed.  
   
 ## Example  
- The following example generates random numbers between 1 and 5 by using the *Seed* from the **RANDOMIZE** method to initialize the random number generator in the **RANDOM** method. The **RANDOMIZE** method uses the data from system clock as the *Seed* value.  
+ The following example generates random numbers between 1 and 5 by using the *Seed* from the **RANDOMIZE** method to initialize the random number generator in the [RANDOM Method](../../methods-auto/system/system-random-method.md). The **RANDOMIZE** method uses the data from system clock as the *Seed* value.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  
