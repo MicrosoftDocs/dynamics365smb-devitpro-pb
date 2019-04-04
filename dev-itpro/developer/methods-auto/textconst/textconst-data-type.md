@@ -25,6 +25,7 @@ Denotes a multi-language string constant.
 The TextConst data type is typically used for UI messages; process or error messages. Keeping the `TextConst` data type in global scope, makes it easier to reuse the same message for several situations. 
 
 > [!IMPORTANT]  
+> The `TextConst` data type is not included in the .xlf files for translation. Make sure to use the [Label Data Type](../label/label-data-type.md) instead.
 
 The data type can be declared with the syntax as shown below:
 
