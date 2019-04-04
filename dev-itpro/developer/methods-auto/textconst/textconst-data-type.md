@@ -22,7 +22,11 @@ Denotes a multi-language string constant.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The TextConst data type is typically used for UI messages; process or error messages. Keeping the `TextConst` data type in global scope, makes it easier to reuse the same message for several situations. The data type can be declared with the syntax as shown below:
+The TextConst data type is typically used for UI messages; process or error messages. Keeping the `TextConst` data type in global scope, makes it easier to reuse the same message for several situations. 
+
+> [!IMPORTANT]  
+
+The data type can be declared with the syntax as shown below:
 
 ```
 codeunit 50100 MyCodeunit
