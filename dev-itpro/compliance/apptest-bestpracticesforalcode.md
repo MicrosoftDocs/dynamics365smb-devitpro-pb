@@ -46,6 +46,7 @@ Use the listed abbreviations for each type of object in the file naming:
 |Query     |Que|
 |Enum      |Enu|
 |Enum Extension|EnuExt|
+|Control Add-ins|ConAddin|
 
 ### Examples of file naming
 The following table illustrates how the file naming should look.
