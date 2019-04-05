@@ -48,7 +48,7 @@ A default filter on the field that is specified by the Field parameter.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If the filter page implementation will call a SETVIEW method, then the SETVIEW method must be called before the ADDFIELDNO method call, otherwise the default filter that is specified by the *Filter* parameter for field, if any, will be cleared by SETVIEW.  
+ If the filter page implementation will call a [SETVIEW Method](../../methods-auto/filterpagebuilder/filterpagebuilder-setview-method.md), then the [SETVIEW Method](../../methods-auto/filterpagebuilder/filterpagebuilder-setview-method.md) must be called before the ADDFIELDNO method call, otherwise the default filter that is specified by the *Filter* parameter for field, if any, will be cleared by [SETVIEW Method](../../methods-auto/filterpagebuilder/filterpagebuilder-setview-method.md).  
 
  The filter that is specified by the *Filter* parameter will overwrite any previously defined filters for the field which were set by ADDVIEW method or read from the record or recordRef instance that defined the filter control.  
 

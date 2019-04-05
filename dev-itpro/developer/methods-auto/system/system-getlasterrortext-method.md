@@ -38,7 +38,7 @@ String :=   System.GetLastErrorText()
 ## Remarks  
  If you call the GETLASTERRORTEXT method immediately after you call the CLEARLASTERROR method, then an empty string is returned.  
 
- The result of the [GETLASTERRORCODE Method](../../methods/devenv-getlasterrorcode-method.md)is not translated into the local language. The result of the GETLASTERRORTEXT method is translated into the local language.  
+ The result of the [GETLASTERRORCODE Method](../../methods-auto/system/system-getlasterrorcode-method.md) is not translated into the local language. The result of the GETLASTERRORTEXT method is translated into the local language.  
 
 ## Example  
  If you call the Codeunit.RUN method to run a codeunit and an error occurs in the codeunit, then  the error is displayed. However, if you also use the return value of the Codeunit.RUN method, then the error is not displayed. In this case, you can use the GETLASTERRORTEXT method to determine whether an error has occurred and to see the text of the last error message that was generated. This example shows how to use the GETLASTERRORTEXT method. This example requires that you create two codeunits. Codeunit 50001 generates an error. Codeunit 50002 runs codeunit 50001 and if an error occurs, then it displays the text of the error.  
