@@ -1,5 +1,5 @@
 ---
-title: System Requirements for Business Central 2018
+title: System Requirements for Business Central
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central on-premises.
 author: jswymer
 ms.custom: na
@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2019
+ms.date: 04/05/2019
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-premises
 
