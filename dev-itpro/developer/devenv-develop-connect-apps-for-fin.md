@@ -25,11 +25,11 @@ It's easy to get started. Just spin up a tenant by going through these steps.
 
 1) Sign up for [[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]](https://go.microsoft.com/fwlink/?linkid=847861).    
 2) To connect to your tenant via APIs, you can use your tenant URL and basic authentication.  
-    + The tenant's API endpoint is the tenant's base URL (up until .com) followed by `:7048/MS/api/beta/`, for example, `https://cronus.businesscentral.dynamics.com:7048/MS/api/beta/`.    
+    + The tenant's API endpoint is the tenant's base URL (up until .com) followed by `:7048/MS/api/v1.0/`, for example, `https://cronus.businesscentral.dynamics.com:7048/MS/api/v1.0/`.    
     + To set up basic authentication, create a Web Service Access key in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. On the **Users** page, in the **Web Service Access Key** field, generate a key.
 
    > [!NOTE]
-   > For production, you should use Azure Active Directory (AAD) for authentication and the common service endpoint `https://api.businesscentral.dynamics.com/v1.0/api/beta`. However, for exploring and prototyping with the APIs, using basic authentication and the tenant URL as described will be faster.
+   > For production, you should use Azure Active Directory (AAD) for authentication and the common service endpoint `https://api.businesscentral.dynamics.com/v1.0/api/v1.0`. However, for exploring and prototyping with the APIs, using basic authentication and the tenant URL as described will be faster.
 
 3) Go to the documentation on the APIs, you can get our published preview [here](https://docs.microsoft.com/en-gb/dynamics-nav/fin-graph/).  
 4) Download an API explorer, such as [Postman](https://www.getpostman.com/) or [Fiddler](http://www.telerik.com/fiddler) to connect to and explore the API.
@@ -87,13 +87,13 @@ In the following example, the specified changes have occurred since the initial 
 When the API consumer calls a GET using the `@odata.deltaLink`, as shown below:  
 
 ```json
-GET https://api.businesscentral.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=
+GET https://api.businesscentral.dynamics.com/v1.0/api/v1.0/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=
 ```
 The response would return with the specified changes in the result, see the following example:  
 
 ```json
 {
-    "@odata.context": "https://api.businesscentral.dynamics.com/v1.0/api/beta/$metadata#companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=",
+    "@odata.context": "https://api.businesscentral.dynamics.com/v1.0/api/v1.0/$metadata#companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ=",
     "value": [
         {
             "@odata.etag": "W/\"JzI4O0VnQUFBQUo3QlRVQU1BQXdBREFBTUFBQUFBQUE0OzQzMDgwOyc=\"",
@@ -104,7 +104,7 @@ The response would return with the specified changes in the result, see the foll
             "balance": 8836.8
         },
         {
-            “@odata.context”: “https://api.businesscentral.dynamics.com/v1.0/api/beta/$metadata#companies(2d117882-81a5-489e-b956-613205b06c72)/customers/$deletedEntity”,
+            “@odata.context”: “https://api.businesscentral.dynamics.com/v1.0/api/v1.0/$metadata#companies(2d117882-81a5-489e-b956-613205b06c72)/customers/$deletedEntity”,
             "id": "e6b1c1f2-0694-46c0-96ec-6283627b1251",
             “reason": “changed”
         },
@@ -117,7 +117,7 @@ The response would return with the specified changes in the result, see the foll
             "balance": 4316.92
         }
     ],
-     "@odata.deltaLink": "https://api.businesscentral.dynamics.com/v1.0/api/beta/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ="
+     "@odata.deltaLink": "https://api.businesscentral.dynamics.com/v1.0/api/v1.0/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ="
 }
 ```
 
