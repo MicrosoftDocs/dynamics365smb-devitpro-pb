@@ -166,16 +166,14 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 
 ||||||  
 |-|-|-|-|-|
-|Sales/Dynamics NAV/Business Central|2015/Update 1/online|2016/Update 1/online|Sales Enterprise (v8.x)|Sales Enterprise (v9.x)|
-|Dynamics NAV 2016|+***|+***|+***|+***|
-|Dynamics NAV 2017|+**|+*|+*|+*|
-|Dynamics NAV 2018|+**|+*|+*|+*|
-|Business Central (online)|-onpremises/-** online|-onpremises/-** online|+*|+*|
-|Business Central (on-premises)|+**|+*|+*|+*|  
+|Sales/Dynamics NAV/Business Central|2015/Update 1/online|2016/Update 1/online|Sales Enterprise (v8.x)|Sales Enterprise and Sales Professional (v9.x)|
+|Dynamics NAV 2016|Supported *** |Supported *** |Supported *** |Supported *** |
+|Dynamics NAV 2017|Supported **|Supported *|Supported *|Supported *|
+|Dynamics NAV 2018|Supported **|Supported *|Supported *|Supported *|
+|Business Central (online)|Not supported **|Not supported **|Supported *|Supported *|
+|Business Central (on-premises)|Supported **|Supported *|Supported *|Supported *|  
 
 Legend:  
-* "+" integration is supported.  
-* "-" integration is not supported.  
 * "*" item availability capability is supported.  
 * "**" integration solution can be installed from the Dynamics NAV 2016 DVD, but viewing item availability is not supported.  
 * "***" viewing item availability is not supported  
