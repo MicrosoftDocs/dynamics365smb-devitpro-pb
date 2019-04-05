@@ -16,9 +16,9 @@ ms.author: bmeier
 
 This section contains answers to frequently asked questions about connecting on-premises solutions to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online.  
 
-## Which products and versions are supported for connecting to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online?
+## Which products and versions are supported for this connection?
 
-The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online can connect the following products in order to provide intelligent insights:
+The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can connect the following products in order to provide intelligent insights:
 
 - Dynamics GP 2018 R2
 - [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises
@@ -63,7 +63,7 @@ For more information, see [Managing Users and Permissions](/dynamics365/business
 
 ## Can I view insights from cloud services in my on-premises solution?
 
-Yes, the **Intelligent Cloud Insights** page can be hosted within your on-premises solution if that is one of [the currently supported solutions](#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud). Each user will need to have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license to view the data.  
+Yes, the **Intelligent Cloud Insights** page can be hosted within your on-premises solution if that is one of [the currently supported solutions](#which-products-and-versions-are-supported-for-this-connection). Each user will need to have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license to view the data.  
 
 ## Can you export to Excel, modify the contents, and import the data back in?
 
