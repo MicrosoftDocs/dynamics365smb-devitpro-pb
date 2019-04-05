@@ -155,7 +155,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |Supported Exchange Servers|<ul><li>Exchange Server 2016</li><li>Exchange Online.</li></ul>|  
 
 
-##  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
+###  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
  The following table shows the product version requirements for integrating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with [!INCLUDE[crm](../developer/includes/crm_md.md)], and the versions in which users can view the availability of items in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from [!INCLUDE[crm](../developer/includes/crm_md.md)].  
 
 <!--
