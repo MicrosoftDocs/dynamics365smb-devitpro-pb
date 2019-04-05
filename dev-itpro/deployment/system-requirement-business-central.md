@@ -174,11 +174,11 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |Business Central (on-premises)|+**|+*|+*|+*|  
 
 Legend:  
-"+" integration is supported.  
-"-" integration is not supported.  
-"*" item availability capability is supported.  
-"**" integration solution can be installed from the Dynamics NAV 2016 DVD, but the item availability feature is not supported.  
-"***" item availability capability is not supported  
+* "+" integration is supported.  
+* "-" integration is not supported.  
+* "*" item availability capability is supported.  
+* "**" integration solution can be installed from the Dynamics NAV 2016 DVD, but viewing item availability is not supported.  
+* "***" viewing item availability is not supported  
 
 > [!Note] 
 > AD, IFD and Claims authentication types are supported for the 2015 and 2016 on-premises versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. OAuth and Office 365 authentication are supported for the 2015, 2015 Update 1, and 2016 Update 1 online versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. For more details on authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/en-us/library/mt608573.aspx).
