@@ -44,10 +44,10 @@ The SETRANGE method provides a quick way to set a simple filter on a field.  If 
   
 If you omit all of the optional parameters, all filters set for that field are removed. The SETRANGE method fails if no field is selected.  
   
- This method is like the [SETRANGE Method \(Record\)](../../methods/devenv-setrange-method-record.md) method.  
+ This method is like the [SETRANGE Method \(Record\)](../../methods-auto/record/record-setrange-method.md) method.  
   
 ## Example  
- The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SETRANGE method sets a filter that selects all records from 10000 to 40000 in the No. field. The [FIND Method \(RecordRef\)](../../methods/devenv-find-method-recordref.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The number of records that are found in the range is stored in the Count variable and displayed in a message box. This example requires that you create the following global variabless.  
+ The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SETRANGE method sets a filter that selects all records from 10000 to 40000 in the No. field. The [FIND Method \(RecordRef\)](../../methods-auto/recordref/recordref-find-method.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The number of records that are found in the range is stored in the Count variable and displayed in a message box. This example requires that you create the following global variabless.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

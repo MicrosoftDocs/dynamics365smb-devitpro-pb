@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Close Method
-Closes a dialog window that has been opened by the OPEN method.
+Closes a dialog window that has been opened by the [OPEN Method](../../methods-auto/dialog/dialog-open-method.md).
 
 
 ## Syntax

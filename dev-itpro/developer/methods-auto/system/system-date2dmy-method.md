@@ -42,7 +42,7 @@ The input date.
 
 
 ## Example  
- This example shows how to use the DATE2DMY method. This code example requires that you create the following global variables and text constants.  
+ This example shows how to use the **DATE2DMY** method. This code example requires that you create the following global variables and text constants.  
   
 |Name|DataType|  
 |----------|--------------|  

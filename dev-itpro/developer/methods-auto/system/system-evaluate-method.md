@@ -46,7 +46,7 @@ This optional value can be used when exporting data with an XmlPort. The only va
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example shows how to use the EVALUATE method when it is called with four different types of variables.  
+ This example shows how to use the **EVALUATE** method when it is called with four different types of variables.  
   
  This example requires that you create the following global variables and text constants.  
   

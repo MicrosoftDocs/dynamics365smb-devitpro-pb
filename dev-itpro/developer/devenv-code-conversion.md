@@ -10,10 +10,10 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Code Conversion from C/AL to AL
+# Code Conversion from C/AL to AL (Draft)
 
 > [!IMPORTANT]  
-> Please note that this topic and process is in preview.
+> Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 
 With the recent preview release of the base application converted to AL, you can now preview converting your existing C/AL code-customized on-prem solution to an AL code-customized on-prem solution as well. Below outlines the steps involved to do so. Please notice that this is just to test out the conversion; running a modified base application on AL in production is not yet supported. Before venturing into this, we recommend getting familiar with the basics of setting up and developing in Visual Studio Code and AL, see [Developing Extensions in AL](devenv-dev-overview.md). 
 

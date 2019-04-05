@@ -41,7 +41,7 @@ PlainTextString :=   System.Decrypt(EncryptedString: String)
  If encryption is not enabled or the encryption key does not exist, the following error will be displayed: **An encryption key is required to complete the request**. If decryption failed because input data could not be decrypted, the following error will be displayed: **Unable to decrypt data. The data was encrypted using a different key**.  
 
 ## Example  
- This code example checks whether the tenant is configured to allow encryption using the [ENCRYPTIONENABLED](../../methods/devenv-encryptionenabled-method.md) method, and then it decrypts an encrypted text string.  
+ This code example checks whether the tenant is configured to allow encryption using the [ENCRYPTIONENABLED](../../methods-auto/system/system-encryptionenabled-method.md) method, and then it decrypts an encrypted text string.  
 
  This example requires that you create the following text constants: EncryptedText and PlainText.  
 
