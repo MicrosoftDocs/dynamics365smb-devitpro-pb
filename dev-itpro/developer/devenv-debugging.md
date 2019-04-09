@@ -113,6 +113,10 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 > [!NOTE]
 > For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights that you expect to see in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
+## NonDebuggable Attribute
+
+To restrict the ability to debug certain methods and/or variables, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
+
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
