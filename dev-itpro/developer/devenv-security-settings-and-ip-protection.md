@@ -9,12 +9,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
-
-
 
 # Security Setting and IP Protection
 When developing an extension, your code is by default protected against downloading or debugging. Read below about the security setting and adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the V2 extensions.
@@ -26,6 +22,9 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 > [!NOTE]  
 > The `showMyCode` setting is not visible in the `app.json` file when it is generated.
+
+> [!NOTE]  
+> Even though `showMyCode` is set to **false**, you will still be able to view that code if an extension is deployed through Visual Studio Code, as opposed to deploying using a cmdlet or via AppSource.
 
 ## Changing the IP protection setting
 If you want to allow debugging into an extension to view the source code, you can add the `showMyCode` property in the `app.json` file and set the property value to **true**. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `ShowMyCode` flag is set to **true** in the app.json for extension A as shown in the example below:
