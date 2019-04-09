@@ -81,22 +81,22 @@ The following methods are available on instances of the JsonArray data type.
 |[Add(Time)](jsonarray-add-time-method.md)|Adds a new value at the end of the JsonArray.|
 |[Add(DateTime)](jsonarray-add-datetime-method.md)|Adds a new value at the end of the JsonArray.|
 |[Add(String)](jsonarray-add-string-method.md)|Adds a new value at the end of the JsonArray.|
-|[IndexOf(JsonToken)](jsonarray-indexof-jsontoken-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(JsonArray)](jsonarray-indexof-jsonarray-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(JsonObject)](jsonarray-indexof-jsonobject-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(JsonValue)](jsonarray-indexof-jsonvalue-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Boolean)](jsonarray-indexof-boolean-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Char)](jsonarray-indexof-char-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Byte)](jsonarray-indexof-byte-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Option)](jsonarray-indexof-option-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Integer)](jsonarray-indexof-integer-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(BigInteger)](jsonarray-indexof-biginteger-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Decimal)](jsonarray-indexof-decimal-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Duration)](jsonarray-indexof-duration-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Date)](jsonarray-indexof-date-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Time)](jsonarray-indexof-time-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(DateTime)](jsonarray-indexof-datetime-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(String)](jsonarray-indexof-string-method.md)|Replaces the value at the given index with a new value.|
+|[IndexOf(JsonToken)](jsonarray-indexof-jsontoken-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(JsonArray)](jsonarray-indexof-jsonarray-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(JsonObject)](jsonarray-indexof-jsonobject-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(JsonValue)](jsonarray-indexof-jsonvalue-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(Boolean)](jsonarray-indexof-boolean-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(Char)](jsonarray-indexof-char-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(Byte)](jsonarray-indexof-byte-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(Option)](jsonarray-indexof-option-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(Integer)](jsonarray-indexof-integer-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(BigInteger)](jsonarray-indexof-biginteger-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(Decimal)](jsonarray-indexof-decimal-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(Duration)](jsonarray-indexof-duration-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(Date)](jsonarray-indexof-date-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(Time)](jsonarray-indexof-time-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(DateTime)](jsonarray-indexof-datetime-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
+|[IndexOf(String)](jsonarray-indexof-string-method.md)|Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
