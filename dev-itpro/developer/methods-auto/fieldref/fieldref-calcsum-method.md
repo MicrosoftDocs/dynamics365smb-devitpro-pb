@@ -83,4 +83,6 @@ MESSAGE('After CALCSUM, Sales (LCY) is %1.', MyFieldRef.VALUE);
 ## See Also
 [FieldRef Data Type](fieldref-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
+ [CALCSUM Method (Record)](../record/record-calcsums-method.md)  
+[AL Database Methods and Performance on SQL Server](../../../administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
