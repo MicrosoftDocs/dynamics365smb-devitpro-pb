@@ -2,7 +2,7 @@
 title: "OutStream Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # OutStream Data Type
 Is a generic stream object that you can use to write to files and BLOBs.
+
 
 
 The following methods are available on instances of the OutStream data type.
@@ -31,6 +32,8 @@ The following methods are available on instances of the OutStream data type.
 |[Write(Guid, [Integer])](outstream-write-guid-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Text, [Integer])](outstream-write-text-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Code, [Integer])](outstream-write-code-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
+|[Write(Label, [Integer])](outstream-write-label-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
+|[Write(TextConst, [Integer])](outstream-write-textconst-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(BigText, [Integer])](outstream-write-bigtext-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Date, [Integer])](outstream-write-date-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Time, [Integer])](outstream-write-time-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
@@ -38,7 +41,7 @@ The following methods are available on instances of the OutStream data type.
 |[Write(DateFormula, [Integer])](outstream-write-dateformula-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Duration, [Integer])](outstream-write-duration-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Option, [Integer])](outstream-write-option-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
-|[Write(Table, [Integer])](outstream-write-table-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
+|[Write(Record, [Integer])](outstream-write-table-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(RecordId, [Integer])](outstream-write-recordid-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(String, [Integer])](outstream-write-string-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Any, [Integer])](outstream-write-joker-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|

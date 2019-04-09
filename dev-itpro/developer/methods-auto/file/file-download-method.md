@@ -2,7 +2,7 @@
 title: "Download Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Download Method
 Sends a file from a server computer to the client computer. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.
+
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```
@@ -63,9 +66,9 @@ Files are saved to the default download location that is configured in the end-u
 
 The business logic is run on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not locally on the client computer.  
 
- [UPLOAD Method \(File\)](../../methods/devenv-upload-method-file.md) and [UPLOADINTOSTREAM Method \(File\)](../../methods/devenv-uploadintostream-method-file.md) are used to send a file from the client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
+ [UPLOAD Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UPLOADINTOSTREAM Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) are used to send a file from the client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
 
- [DOWNLOAD Method \(FILE\)](../../methods/devenv-download-method-file.md) and [DOWNLOADFROMSTREAM Method \(File\)](../../methods/devenv-downloadfromstream-method-file.md) are used to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance to the client.  
+ [DOWNLOAD Method \(FILE\)](../../methods-auto/file/file-download-method.md) and [DOWNLOADFROMSTREAM Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) are used to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance to the client.  
 
  We recommend that you use the methods in codeunit **419 File Management** to upload and download files. 
 

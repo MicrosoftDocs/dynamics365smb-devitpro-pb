@@ -2,7 +2,7 @@
 title: "DateFormula Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,8 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DateFormula Data Type
-Represents a date formula that has the same capabilities as an ordinary input string for the CALCDATE Method (Date). The DateFormula data type is used to provide multilanguage capabilities to the CALCDATE Method (Date).
+Represents a date formula that has the same capabilities as an ordinary input string for the [CALCDATE Method (Date)](../../methods-auto/system/system-calcdate-string-date-method.md). The DateFormula data type is used to provide multilanguage capabilities to the [CALCDATE Method (Date)](../../methods-auto/system/system-calcdate-dateformula-date-method.md).
+
 
 
 

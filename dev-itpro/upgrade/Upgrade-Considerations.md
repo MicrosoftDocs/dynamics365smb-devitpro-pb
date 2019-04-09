@@ -9,7 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: dynamics365-business-central
-ms.date: 01/23/2019
+ms.date: 04/01/2019
 ms.author: jswymer
 ---
 # Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
@@ -20,31 +20,48 @@ Depending on which version you are upgrading from, and the degree to which your 
 
 You can upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online from supported versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
+> [!IMPORTANT]
+> Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online is only partially supported. In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], when you connect your on-premises solution to the intelligent cloud, the on-premises deployment remains the primary application, and the cloud tenant is, with very few exceptions, read-only. For more information, see [Connect to the intelligent cloud](../administration/about-intelligent-edge.md).
+
 The process consists of two parts:
 
-- Upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using the tools described in [Upgrading to Business Central on-premises](upgrading-to-business-central.md#upgrading-to--on-premises).
+- Upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using the tools described in [Upgrading to Business Central on-premises](upgrading-to-business-central-on-premises.md).
 - Convert non-standard functionality and customizations to apps and per-tenant extensions. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).
 - Enable replication to a cloud tenant as described in [Connect to the intelligent cloud](../administration/about-intelligent-edge.md), and then switch to use the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant going forward.
 
-## Codeunit 1 has been deprecated and replaced
+## Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]
 
-Codeunit **1 ApplicationManagement** codeunit has been retired, and new ‘system’ codeunits have been introduced in the 2 billion range.
+### Codeunit 1 has been deprecated and replaced
+
+[!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] included codeunit **1 ApplicationManagement**. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this codeunit has been retired, and new ‘system’ codeunits have been introduced in the 2 billion range.
 
 For information, see [Transitioning from Codeunit 1 to System Codeunits](transition-from-codeunit1.md).
 
-## V1 Extensions have been discontinued
+### V1 Extensions have been discontinued
 
 With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], extensions V1 are no longer supported for on-premise installations. As a result, any custom extensions V1 must be converted to extensions V2 in the old environment before upgrading to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 For information about how to convert to extensions V2, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
 
-## MenuSuite not used for page and report search 
+### MenuSuite not used for page and report search 
 
-The MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects. As part of the application code upgrade process, you change these properties on existing pages and reports used by the MenuSuite to ensure that they are still searchable from the Web client. For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects. As part of the application code upgrade process, you change these properties on existing pages and reports used by the MenuSuite to ensure that they are still searchable from the Web client. For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
 
 ## <a name="CRM"></a>[!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration
 
-Because of changes in [!INCLUDE[crm_md](../developer/includes/crm_md.md)] and the  integration since pervious releases, if your application is integrating with [!INCLUDE[crm_md](../developer/includes/crm_md.md)], then you must perform a full upgrade instead of just a technical upgrade. 
+Because of changes in [!INCLUDE[crm_md](../developer/includes/crm_md.md)] and the  integration since pervious releases, if your application is integrating with [!INCLUDE[crm_md](../developer/includes/crm_md.md)], then you must perform a full upgrade instead of just a technical upgrade.
+
+## New and changed application features
+
+There a several new and changed application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central April '19 release](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-business-central).
+
+To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
+
+### Changes to profiles in the [!INCLUDE[demolong_md](../developer/includes/demolong_md.md)] and promoted actions
+
+With the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 release, profiles that are part of the [!INCLUDE[demolong_md](../developer/includes/demolong_md.md)], such as the **Sales Order Processor** profile, customize fewer pages compared to earlier releases. For customers that rely on these profiles, their users might experience slight differences in the layout of actions in the action bar on pages. Additionally, the layout of promoted actions on over 380 core application pages has been fine-tuned.
+
+To ensure that users are not disrupted by these changes, we recommend that administrators and partners who are upgrading a customer to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019, review the layout of promoted actions when combined with their own code and profile customization.
 
 ## Names of variables
   

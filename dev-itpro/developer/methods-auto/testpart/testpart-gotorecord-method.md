@@ -2,7 +2,7 @@
 title: "GoToRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # GoToRecord Method
 Finds the specified record in a data set on a test page.
 
+
 ## Syntax
 ```
-[Ok := ]  TestPart.GoToRecord(Rec: Table)
+[Ok := ]  TestPart.GoToRecord(Rec: Record)
 ```
 ## Parameters
 *TestPart*  
@@ -26,7 +27,7 @@ Finds the specified record in a data set on a test page.
 An instance of the [TestPart](testpart-data-type.md) data type.  
 
 *Rec*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The record to find.  
 
 

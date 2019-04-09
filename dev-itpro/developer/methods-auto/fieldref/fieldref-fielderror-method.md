@@ -2,7 +2,7 @@
 title: "FieldError Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldError Method
 Stops the execution of the code, causing a run-time error, and creates an error message for a field.
+
 
 ## Syntax
 ```
@@ -37,7 +38,7 @@ Use this optional parameter to include the text of the error message. If this pa
 ## Remarks  
  Similar to a run-time error, this method causes any transaction to be aborted automatically.  
   
- This method is like the FIELDERROR Method for the Record data type. For examples, see [FIELDERROR Method \(Record\)](../../methods/devenv-fielderror-method-record.md).  
+ This method is like the FIELDERROR Method for the Record data type. For examples, see [FIELDERROR Method \(Record\)](../../methods-auto/record/record-fielderror-method.md).  
   
 ## Example  
  The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The CustomerName variable is initialized with a blank text. `CustomerRecref.FIELD` creates a FieldRef that is named MyFieldRef for field1 \(No.\) and selects record 30000. Field 2 \(Name\) is then selected for record 30000. If the CustomerName variable is a blank text, then `MyFieldRef.FIELDERROR` is executed and an error message is displayed. The text in Text000 text constant is inserted into the error message that is displayed by [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. This example uses the default error message. This example requires that you create the following global variables and text constants.  

@@ -2,7 +2,7 @@
 title: "Date2DMY Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Date2DMY Method
 Gets the day, month, or year of a Date Data Type.
+
 
 ## Syntax
 ```
@@ -41,7 +42,7 @@ The input date.
 
 
 ## Example  
- This example shows how to use the DATE2DMY method. This code example requires that you create the following global variables and text constants.  
+ This example shows how to use the **DATE2DMY** method. This code example requires that you create the following global variables and text constants.  
   
 |Name|DataType|  
 |----------|--------------|  

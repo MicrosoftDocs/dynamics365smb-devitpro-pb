@@ -2,7 +2,7 @@
 title: "TestField Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestField Method
 Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.
+
 
 ## Syntax
 ```
@@ -30,7 +31,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method is like the [TESTFIELD Method \(Record\)](../../methods/devenv-testfield-method-record.md) method.  
+ This method is like the [TESTFIELD Method \(Record\)](../../methods-auto/record/record-testfield-joker-method.md) method.  
   
 ## Example  
  The following example opens the Customer table as a RecordRef variable that is named CustomerRecref, created a reference to the first field \(No\) and stores the reference in the MyFieldRef variable. The [VALUE Method \(FieldRef, TestPage Field\)](../../methods/devenv-value-method-fieldref-testpage-field.md) sets the No. field to a blank text. The TESTFIELD method determines whether the contents of the field match 10000, the specified value. In this case, the content does not match so the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] throws an exception. If the there is a match, no exception is thrown. This example requires that you create the following global variables.  

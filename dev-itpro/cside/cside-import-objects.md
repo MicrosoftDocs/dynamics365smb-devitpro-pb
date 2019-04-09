@@ -1,7 +1,7 @@
 ---
 title: "How to: Import Objects"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,13 +36,13 @@ You can export and import application objects from and to the database from a fi
 
 1.  At a command prompt, move to the location of finsql.exe. The finsql.exe is located where the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] is installed.  
 
-2.  Run finsql.exe with the parameter "command=exportobjects". You must specify the following parameters:  
+2.  Run finsql.exe with the parameter `command=exportobjects`. You must specify the following parameters:  
 
-    -   file  
+    -   `file`  
 
-    -   servername  
+    -   `servername`  
 
-    -   database  
+    -   `database`  
 
      All other parameters are optional.  
 
@@ -65,15 +65,26 @@ You can export and import application objects from and to the database from a fi
 
 1.  At a command prompt, move to the location of finsql.exe. The finsql.exe is located where the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] is installed.  
 
-2.  Run finsql.exe with the parameter "command=importobjects". You must specify the following parameters:  
+2.  Run finsql.exe with the parameter `command=importobjects`. You must specify the following parameters:  
 
-    -   file  
+    -   `file`  
 
-    -   servername  
+    -   `servername`  
 
-    -   database  
+    -   `database` 
 
-     All other parameters are optional.  
+    For example: 
 
-     For more information about the ImportObjects command, see [ImportObjects](https://docs.microsoft.com/en-us/dynamics-nav/importobjects).  
+	```    
+    finsql.exe command=importobjects, file=C:\NewObjects.fob, servername=TestComputer01, database="Demo Database BC"
+	```  
+    
+    All other parameters are optional.
+
+    > [!TIP]  
+    > By default, when importing objects from a .fob file, the command will also build the object search index. To save time, if you do not to build the search index, use the `suppressbuildsearchindex=yes` parameter with the command, for example:
+    >
+    > `finsql.exe command=importobjects, file=C:\NewObjects.fob, servername=TestComputer01, database="Demo Database BC", suppressbuildsearchindex=yes`
+    
+    For more information about the ImportObjects command, see [ImportObjects](cside-command-prompt.md#ImportObjects).  
 

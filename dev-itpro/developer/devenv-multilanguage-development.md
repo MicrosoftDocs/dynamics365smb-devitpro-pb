@@ -1,7 +1,7 @@
 ---
 title: "Multilanguage Development"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 redirect_url: devenv-work-with-translation-files
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Multilanguage Development
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are multilanguage enabled, which means that you can display the user interface (UI) in different languages.  

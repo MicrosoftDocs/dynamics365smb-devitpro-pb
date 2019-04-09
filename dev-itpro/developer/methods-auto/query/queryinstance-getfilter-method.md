@@ -2,7 +2,7 @@
 title: "GetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,8 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetFilter Method
-Returns the filters that are set on the field of a specified column in the query. The following code shows the syntax of the GETFILTER function. Query is a variable of the Query data type that specifies the query object.
+Returns the filters that are set on the field of a specified column in the query. The following code shows the syntax of the GETFILTER method. Query is a variable of the Query data type that specifies the query object.
+
 
 ## Syntax
 ```
@@ -39,7 +40,7 @@ The filters of the column.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The **GETFILTER** method returns the filters that are currently set for a data column or filter row by the [SETFILTER Method \(Query\)](../../methods/devenv-setfilter-method-query.md) method, [SETRANGE Method \(Query\)](../../methods/devenv-setrange-method-query.md) method, and the column's [ColumnFilter Property](../../properties/devenv-columnfilter-property.md) in Query Designer. The **GETFILTER** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) in Query Designer or global filters that are set by the **FILTERGROUP** method.  
+ The **GETFILTER** method returns the filters that are currently set for a data column or filter row by the [SETFILTER Method \(Query\)](../../methods-auto/query/queryinstance-setfilter-method.md) method, [SETRANGE Method \(Query\)](../../methods-auto/query/queryinstance-setrange-method.md) method, and the column's [ColumnFilter Property](../../properties/devenv-columnfilter-property.md) in Query Designer. The **GETFILTER** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) in Query Designer or global filters that are set by the **FILTERGROUP** method.  
   
 > [!NOTE]  
 >  A filter row is row in Query Designer that is used to filter on a field that is not included in the resulting dataset. 

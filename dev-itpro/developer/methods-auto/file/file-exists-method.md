@@ -2,7 +2,7 @@
 title: "Exists Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Exists Method
 Determines whether a file exists.
+
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```
@@ -41,7 +44,7 @@ The name of the file that you want to check. This includes the path. When you en
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example uses the EXISTS method to determine whether the specified file exists. If the file exists, then the [WRITEMODE Method \(File\)](../../methods/devenv-writemode-method-file.md) allows the file to be open for writing. The [OPEN Method \(File\)](../../methods/devenv-open-method-file.md) opens the file, the [WRITE Method \(File\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file, and then the [CLOSE Method \(File\)](../../methods/devenv-close-method-file.md) method closes the file. If the file does not exist, an error message is displayed. This example requires that you create the following global variables. This example assumes that you have created the following file C:\\TestFolder\\TestFile2.txt.  
+ The following example uses the EXISTS method to determine whether the specified file exists. If the file exists, then the [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [WRITE Method \(File\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file, and then the [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) method closes the file. If the file does not exist, an error message is displayed. This example requires that you create the following global variables. This example assumes that you have created the following file C:\\TestFolder\\TestFile2.txt.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

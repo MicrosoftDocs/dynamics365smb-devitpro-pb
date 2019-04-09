@@ -2,7 +2,7 @@
 title: "SelectStr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SelectStr Method
 Retrieves a substring from a comma-separated string.
+
 
 ## Syntax
 ```

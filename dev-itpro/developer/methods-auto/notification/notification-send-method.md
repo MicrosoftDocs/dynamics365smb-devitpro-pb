@@ -2,7 +2,7 @@
 title: "Send Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Send Method
 Sends the notification to the client, where it will display in the UI.
+
 
 ## Syntax
 ```
@@ -35,7 +36,7 @@ An instance of the [Notification](notification-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The SEND method displays the content of the notification that is specified by the [MESSAGE Method](../../methods/devenv-message-method-notification.md).
+The SEND method displays the content of the notification that is specified by the [MESSAGE Method](../../methods-auto/notification/notification-message-method.md).
 
 For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 

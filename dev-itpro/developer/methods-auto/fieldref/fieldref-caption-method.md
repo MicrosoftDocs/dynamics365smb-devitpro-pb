@@ -2,7 +2,7 @@
 title: "Caption Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Caption Method
 Gets the current caption of a field as a String.
+
 
 ## Syntax
 ```
@@ -39,10 +40,10 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 ## Remarks  
 CAPTION returns the caption of a field. CAPTION first looks for a [CaptionML Property](../../properties/devenv-captionml-property.md).  If it does not find one, it will use the [Name Property](../../properties/devenv-name-property.md). This means that CAPTION is enabled for multilanguage functionality.  
   
- This method is similar to the [FIELDCAPTION Method \(Record\)](../../methods/devenv-fieldcaption-method-record.md) method.  
+ This method is similar to the [FIELDCAPTION Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The code uses the [FIELD Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) to loop through field 1 through 9 and creates a FieldRef variable that is named MyFieldRef. For each field, the CAPTION method retrieves the caption of the field, stores it in the varCaption variable and displays it in a message box. This example requires that you create the following global variables and text constant.  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The code uses the [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) to loop through field 1 through 9 and creates a FieldRef variable that is named MyFieldRef. For each field, the CAPTION method retrieves the caption of the field, stores it in the varCaption variable and displays it in a message box. This example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

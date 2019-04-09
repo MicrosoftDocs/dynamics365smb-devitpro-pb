@@ -2,7 +2,7 @@
 title: "FilterPageBuilder Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,12 +17,13 @@ author: solsen
 Stores filter configurations for a filter page. A filter page is a dynamic page type that contains one or more filter controls that enables users to set filters on fields of the underlying tables.
 
 
+
 The following methods are available on instances of the FilterPageBuilder data type.
 
 |Method name|Description|
 |-----------|-----------|
 |[AddTable(String, Integer)](filterpagebuilder-addtable-method.md)|Adds filter control for a table to a filter page.|
-|[AddRecord(String, Table)](filterpagebuilder-addrecord-method.md)|Adds a filter control for a table to a filter page. The table is specified by a record data type variable that is passed to the method.|
+|[AddRecord(String, Record)](filterpagebuilder-addrecord-method.md)|Adds a filter control for a table to a filter page. The table is specified by a record data type variable that is passed to the method.|
 |[AddRecordRef(String, RecordRef)](filterpagebuilder-addrecordref-method.md)|Adds a filter control for a table to a filter page. The table is specified by a RecordRef variable that is passed to the method. This creates a filter control on the filter page, where users can set filter table data.|
 |[AddField(String, Any, [String])](filterpagebuilder-addfield-string-joker-string-method.md)|Adds a table field to the filter control for a table on filter page.|
 |[AddField(String, FieldRef, [String])](filterpagebuilder-addfield-string-fieldref-string-method.md)|Adds a table field to the filter control for a table on filter page.|

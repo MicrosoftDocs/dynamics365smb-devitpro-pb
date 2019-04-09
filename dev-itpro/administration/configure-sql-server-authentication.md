@@ -2,7 +2,7 @@
 title: Configure SQL Server Authentication
 description: This topic describes how to configure SQL Server Authentication between the Dynamics Business Central instance and a Dynamics NAV database. 
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -60,8 +60,7 @@ On the computer running the [!INCLUDE[server](../developer/includes/server.md)] 
 ### Configure SQL Authentication on a server instance using [!INCLUDE[admintool](../developer/includes/admintool.md)]  
   
 1.  Open the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
-  
-  
+   
 2.  In the console tree, which is the left pane, expand the node for the computer that contains the [!INCLUDE[server](../developer/includes/server.md)] instance, and then select the [!INCLUDE[server](../developer/includes/server.md)] instance.   
 3.  In the **Actions** pane, choose **Database Credentials**.  
   

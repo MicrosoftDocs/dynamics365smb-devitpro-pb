@@ -2,7 +2,7 @@
 title: "WriteFrom Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,6 +13,7 @@ caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 redirect_url: /dynamics365/business-central/dev-itpro/developer/methods-auto/library
 ---
+<!--This topic is deprected, see redirection URL-->
 
 # WriteFrom Method
 Sets [HttpContent](httpcontent-class.md) content to the provided text or stream.

@@ -2,7 +2,7 @@
 title: "Page Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,15 +16,19 @@ author: solsen
 # Page Data Type
 Contains a number of simpler elements called controls. Controls are used to display information to the user or receive information from the user.
 
+
 The following methods are available on the Page data type.
 
 
 |Method name|Description|
 |-----------|-----------|
-|[RunModal(Integer, [Table], [Any])](page-runmodal-integer-table-joker-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
-|[RunModal(Integer, Table, Integer)](page-runmodal-integer-table-integer-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
-|[Run(Integer, [Table], [Any])](page-run-integer-table-joker-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
-|[Run(Integer, Table, Integer)](page-run-integer-table-integer-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
+|[RunModal(Integer, [Record], [Any])](page-runmodal-integer-table-joker-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
+|[RunModal(Integer, Record, Integer)](page-runmodal-integer-table-integer-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
+|[RunModal(Integer, Record, FieldRef)](page-runmodal-integer-table-fieldref-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
+|[Run(Integer, [Record], [Any])](page-run-integer-table-joker-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
+|[Run(Integer, Record, Integer)](page-run-integer-table-integer-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
+|[SetBackgroundTaskResult(Dictionary of [Text, Text])](page-setbackgroundtaskresult-method.md)|Sets the page background task result as a dictionary. When the task is completed, the OnPageBackgroundCompleted trigger will be invoked on the page with this result dictionary.|
+|[GetBackgroundParameters()](page-getbackgroundparameters-method.md)|Gets the page background task input parameters.|
 
 The following methods are available on instances of the Page data type.
 
@@ -36,14 +40,16 @@ The following methods are available on instances of the Page data type.
 |[ObjectId([Boolean])](page-objectid-method.md)|Returns a string in the "Page xxx" format, where xxx is the caption or ID of the application object.|
 |[SaveRecord()](page-saverecord-method.md)|Saves the current record as if performed by the client. If the record does not exist it is inserted, otherwise it is modified.|
 |[Update([Boolean])](page-update-method.md)|Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated.|
-|[GetRecord(var Table)](page-getrecord-method.md)|Gets the current record of the page.|
-|[SetRecord(var Table)](page-setrecord-method.md)|Sets the current record for the page.|
-|[SetTableView(var Table)](page-settableview-method.md)|Applies the table view on the current record as the table view for the page, report, or XmlPort.|
-|[SetSelectionFilter(var Table)](page-setselectionfilter-method.md)|Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to "marked only".|
+|[GetRecord(var Record)](page-getrecord-method.md)|Gets the current record of the page.|
+|[SetRecord(var Record)](page-setrecord-method.md)|Sets the current record for the page.|
+|[SetTableView(var Record)](page-settableview-method.md)|Applies the table view on the current record as the table view for the page, report, or XmlPort.|
+|[SetSelectionFilter(var Record)](page-setselectionfilter-method.md)|Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to "marked only".|
 |[Activate([Boolean])](page-activate-method.md)|Activates the current page on the client if possible. The data on the page will not be refreshed.|
 |[Close()](page-close-method.md)|Closes the current page.|
 |[RunModal()](page-runmodal--method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[Run()](page-run--method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
+|[EnqueueBackgroundTask(var Integer, Integer, [var Dictionary of [Text, Text]], [Boolean], [Integer])](page-enqueuebackgroundtask-method.md)|Creates and queues a background task that runs the specified codeunit (without a UI) in a child session of the page session. If the task completes successfully, the **OnPageBackgroundTaskCompleted** trigger is invoked. If an error occurs, the **OnPageBackgroundTaskError** trigger is invoked. If the page is closed before the task completes, the task is cancelled.|
+|[CancelBackgroundTask(Integer)](page-cancelbackgroundtask-method.md)|Attempt to cancel a page background task.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also

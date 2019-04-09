@@ -2,7 +2,7 @@
 title: "Open Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Open Method
 Opens an ASCII or binary file. This method does not create the file if it does not exist.
+
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```
@@ -44,7 +47,7 @@ An instance of the [File](file-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If you call OPEN on a file variable that refers to an open file, then the method does not automatically close the existing file and open the new file. You must explicitly call the [CLOSE Method \(File\)](../../methods/devenv-close-method-file.md) to close the existing file. If you call OPEN on a file that is already open, then a run-time error occurs.  
+ If you call OPEN on a file variable that refers to an open file, then the method does not automatically close the existing file and open the new file. You must explicitly call the [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) to close the existing file. If you call OPEN on a file that is already open, then a run-time error occurs.  
   
 ## Example  
  This example shows how to open an .xml file for reading in text mode. To use this example, you must create the simple.xml file at C:\\temp and create the following variable.  

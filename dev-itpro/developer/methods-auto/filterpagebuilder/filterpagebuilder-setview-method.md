@@ -2,7 +2,7 @@
 title: "SetView Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SetView Method
 Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page. The view contains all fields that have default filters, but does not contain fields without filters.
+
 
 ## Syntax
 ```
@@ -46,7 +47,7 @@ The filter view to apply. This can be the output of the GetView method invoked o
  The SETVIEW method will overwrite any previously defined filters for the fields that are also included in the view.  
   
 ## Example  
- The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view from the GETVIEW method.  
+ The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view from the [GETVIEW Method](../../methods-auto/filterpagebuilder/filterpagebuilder-getview-method.md).  
   
  This example requires that you create the following global variables.  
   

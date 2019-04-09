@@ -2,7 +2,7 @@
 title: "Length Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Length Method
 Retrieves the length of the text stored in this BigText instance.
+
 
 ## Syntax
 ```
@@ -37,7 +38,7 @@ The length of the text stored in this BigText instance.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- To delete the content in a BigText variable use the [CLEAR Method](../../methods/devenv-clear-method.md). The syntax for the CLEAR method is shown in the following code snippet: `CLEAR(BigText)`.  
+ To delete the content in a BigText variable use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md). The syntax for the CLEAR method is shown in the following code snippet: `CLEAR(BigText)`.  
   
 ## Example  
  The following example demonstrates how to retrieve the length of a BigText variable. This example requires that you create the following global variables and text constant.  

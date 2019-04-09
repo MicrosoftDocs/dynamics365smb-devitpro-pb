@@ -3,7 +3,7 @@ title: "Connect Apps"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/18/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -57,7 +57,7 @@ To ease your journey, from the initial listing to the final publication of your 
 ## Where do I learn more about Connect apps? 
 To learn more about how to develop Connect apps, select the following links:  
 
-1. [Documentation on REST APIs](/dynamics-nav/fin-graph/)  
+1. [Documentation on REST APIs](/dynamics-nav/api-reference/v1.0/)  
 2. [Getting started with Connect apps](../devenv-develop-connect-apps.md)  
 3. [Overview of connection endpoints and authentication options](/dynamics-nav/endpoints-apis-for-dynamics)
 4. If your Connect app requires a specific setup in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], then you have the opportunity to add objects. In this case, you will have to follow the guide on Add-on apps in combination with using the Connect API. Find the guide on how to develop Add-on apps [here](readiness-add-on-apps.md).

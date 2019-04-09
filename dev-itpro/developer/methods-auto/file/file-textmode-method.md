@@ -2,7 +2,7 @@
 title: "TextMode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TextMode Method
 Sets whether a file should be opened as an ASCII file or a binary file. Gets the current setting of this option for a file.
+
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```
@@ -46,7 +49,7 @@ An instance of the [File](file-data-type.md) data type.
  This method should be used before File.OPEN is used to open the file. If you use this method on a file that is already open, then an error occurs.  
   
 ## Example  
- The following example sets the TEXTMODE to **true** when the file is open for writing. This means the file contents will be written to a text file that is named 'C:\\TestFolder\\TestFile.txt' by using ASCII characters. The [WRITEMODE Method \(File\)](../../methods/devenv-writemode-method-file.md) and the [OPEN Method \(File\)](../../methods/devenv-open-method-file.md) open the file for writing and the text ‘Hello World’ is written. The [CLOSE Method \(File\)](../../methods/devenv-close-method-file.md) closes the file after the file is written to. This example requires that you create the following global variable. This example assumes that you have created a text file that is named C:\\TestFolder\\TestFile.txt.  
+ The following example sets the TEXTMODE to **true** when the file is open for writing. This means the file contents will be written to a text file that is named 'C:\\TestFolder\\TestFile.txt' by using ASCII characters. The [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) and the [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) open the file for writing and the text ‘Hello World’ is written. The [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file after the file is written to. This example requires that you create the following global variable. This example assumes that you have created a text file that is named C:\\TestFolder\\TestFile.txt.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

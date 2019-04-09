@@ -2,7 +2,7 @@
 title: "Message Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Message Method
 Specifies the content of the notification.
+
 
 ## Syntax
 ```
@@ -43,7 +44,7 @@ The message
 
 
 ## Remarks
-The MESSAGE method defines the notification. You use the [SEND Method](../../methods/devenv-send-method-notification.md) to send the notification to the client, where it will be displayed.
+The MESSAGE method defines the notification. You use the [SEND Method (Notification)](../../methods-auto/notification/notification-send-method.md) to send the notification to the client, where it will be displayed.
 
 For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 

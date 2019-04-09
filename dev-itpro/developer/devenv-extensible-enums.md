@@ -3,10 +3,9 @@ title: "Extensible Enums"
 description: "Overview of the concept of extending enumerables "
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -78,6 +77,59 @@ codeunit 50140 EnumUsage
 }
 ```
 
+## Example
+The following example illustrates how to define an enum extension of `TypeEnum`, using this in a table extension `TableWithRelationExt` and displaying this as a control on a new page.
+
+```
+enumextension 50133 TypeEnumExt extends TypeEnum
+{
+    value(10; Resource) { }
+}
+
+tableextension 50135 TableWithRelationExt extends TableWithRelation
+{
+    fields
+    {
+        modify(Relation)
+        {
+            TableRelation = if (Type = const (Resource)) Resource;
+        }
+    }
+}
+
+page 50133 PageOnRelationTable
+{
+    SourceTable = TableWithRelation;
+    SourceTableView = where (Type = const (Resource));
+    PageType = List;
+
+    layout
+    {
+        area(Content)
+        {
+            repeater(MyRep)
+            {
+                field(Id; Id)
+                {
+                    ApplicationArea = All;
+                }
+                field(Type; Type)
+                {
+                    ApplicationArea = All;
+                }
+                field(Relation; Relation)
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
+    }
+}
+```
+
+> [!TIP]  
+> For another example of how to extend the usage of the `TableRelation` property in connection with enums, see [TableRelation Property](properties/devenv-tablerelation-property.md).
+
 ## Business Central On-Premises
 If you want to extend an existing [!INCLUDE[d365fin_md](includes/d365fin_md.md)] on-premises enum, it is possible to mark a table field in C/SIDE as extensible. To enable running C/SIDE and AL side-by-side, see [Running C/SIDE and AL Side-by-Side](devenv-running-cside-and-al-side-by-side.md).
 
@@ -98,3 +150,5 @@ Conversion to and from `enum` is more strict than for `Options` in C/SIDE.
 
 ## See Also
 [AL Data Types](datatypes/devenv-al-data-types.md)  
+[TableRelation Property](properties/devenv-tablerelation-property.md)  
+

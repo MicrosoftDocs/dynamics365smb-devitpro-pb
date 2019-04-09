@@ -2,7 +2,7 @@
 title: "HasValue Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HasValue Method
 Checks whether a Media data type field in a record has been initialized with a media object and that the specified media object exists in the database.
+
 
 ## Syntax
 ```

@@ -2,7 +2,7 @@
 title: "CaptionClassTranslate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CaptionClassTranslate Method
 Returns a translated version of the caption string. The string is translated to the current local language.
+
 
 ## Syntax
 ```
@@ -37,7 +38,7 @@ A literal string that defines the caption.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use the [SELECTLATESTVERSION Method \(Database\)](../../methods/devenv-selectlatestversion-method-database.md) to clear the current session's cache for the CaptionClassTranslate strings. The strings will then be reevaluated by the **CaptionClassTranslate** method trigger \(ID 15\) in codeunit 1.  
+ You can use the [SELECTLATESTVERSION Method \(Database\)](../../methods-auto/database/database-selectlatestversion-method.md) to clear the current session's cache for the CaptionClassTranslate strings. The strings will then be reevaluated by the **CaptionClassTranslate** method trigger \(ID 15\) in codeunit 1.  
 
 
 ## See Also

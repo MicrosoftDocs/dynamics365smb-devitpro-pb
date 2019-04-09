@@ -2,7 +2,7 @@
 title: "GuiAllowed Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GuiAllowed Method
 Checks whether the AL code can show any information on the screen.
+
 
 ## Syntax
 ```
@@ -58,7 +59,7 @@ IF GUIALLOWED THEN
  If the code runs on Microsoft Dynamics NAV Application Server, then the message will not be displayed.  
 
 > [!NOTE]  
->  If the [MESSAGE Method \(Dialog\)](../../methods/devenv-message-method-dialog.md) or the [ERROR Method \(Dialog\)](../../methods/devenv-error-method-dialog.md) is called when the code is running on Microsoft Dynamics NAV Application Server, then the message is written to the event log of the operating system. 
+>  If the [MESSAGE Method \(Dialog\)](../../methods-auto/dialog/dialog-message-method.md) or the [ERROR Method \(Dialog\)](../../methods-auto/dialog/dialog-error-method.md) is called when the code is running on Microsoft Dynamics NAV Application Server, then the message is written to the event log of the operating system. 
 
 ## See Also
 [System Data Type](system-data-type.md)  

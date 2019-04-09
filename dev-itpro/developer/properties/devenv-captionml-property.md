@@ -1,7 +1,7 @@
 ---
 title: "CaptionML Property"
 ms.custom: na
-ms.date: 10/24/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,31 +15,31 @@ author: SusanneWindfeldPedersen
 # CaptionML Property
 Sets the string that is used to identify a control or other object in the user interface.  
 
-> [!NOTE] 
-> The support for using the ML properties, such as **CaptionML** and **TooltipML**, is being deprecated, so it is recommended to refactor your extension to use the corresponding **Caption** or **Tooltip** property, which is being picked up in the .xliff file. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
+> [!NOTE]  
+> To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
 ## Applies To  
 
--   Codeunit objects  
+- Codeunit objects  
 
--   XMLport objects  
+- XMLport objects  
 
--   Menu objects, menu buttons, menu groups, and menu items  
+- Menu objects, menu buttons, menu groups, and menu items  
 
--   Pages, including general page properties and Group, Part, and Field controls.  
+- Pages, including general page properties and Group, Part, and Field controls.  
 
--   Query objects and query columns  
+- Query objects and query columns  
 
--   Report objects  
+- Report objects  
 
--   Table objects and table fields  
+- Table objects and table fields  
 
--   XMLport objects  
+- XMLport objects  
 
 ## Remarks  
- The CaptionML property is multilanguage enabled, so it can contain a list of text strings in different languages. The string that is used is selected according to the user's language settings. For more information, see [Multilanguage Development](../devenv-multilanguage-development.md).  
+The CaptionML property is multilanguage enabled, so it can contain a list of text strings in different languages. The string that is used is selected according to the user's language settings. For more information, see [Multilanguage Development](../devenv-multilanguage-development.md).  
 
- The CaptionML property has the following format.  
+The CaptionML property has the following format.  
 
  `<Language ID>='<caption>'`
 

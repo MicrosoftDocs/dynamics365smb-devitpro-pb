@@ -2,7 +2,7 @@
 title: "GetSubText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetSubText Method
 Gets part of a BigText variable.
+
 
 ## Syntax
 ```
@@ -51,7 +52,7 @@ The length of the result text.
 ## Remarks  
  The first character in a BigText variable is position 1.  
   
- To delete the content in a BigText variable use the [CLEAR Method](../../methods/devenv-clear-method.md). The following code snippet shows the syntax for the clear method. `CLEAR(BigText)`.  
+ To delete the content in a BigText variable use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md). The following code snippet shows the syntax for the clear method. `CLEAR(BigText)`.  
   
 ## Example  
  The following examples demonstrate how to use the GETSUBTEXT method. This example requires that you create the following global variables and text constant.  

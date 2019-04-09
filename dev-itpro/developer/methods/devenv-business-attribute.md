@@ -1,7 +1,7 @@
 ---
 title: "BusinessEvent Attribute"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -66,7 +66,7 @@ end;
 ```  
   
 ## See Also  
- [Events in aL](../devenv-events-in-al.md)  
+ [Events in AL](../devenv-events-in-al.md)  
  [Publishing Events](../devenv-publishing-events.md)   
  [Raising Events](../devenv-raising-events.md)   
  [Subscribing to Events](../devenv-subscribing-to-events.md)   

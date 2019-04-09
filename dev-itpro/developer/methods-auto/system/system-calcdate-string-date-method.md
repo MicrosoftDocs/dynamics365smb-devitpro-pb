@@ -2,7 +2,7 @@
 title: "CalcDate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CalcDate Method
 Calculates a new date that is based on a date expression and a reference date.
+
 
 ## Syntax
 ```
@@ -52,7 +53,7 @@ Use this optional parameter to define a reference date. The default is the curre
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- DateExpression can be a field or variable of type Text or Code, and it can be a field or variable of type [DATEFORMULA](../../datatypes/devenv-date-formula-data-type.md). The benefit of using a DateFormula field or variable is that the date formula becomes language independent.  
+ DateExpression can be a field or variable of type Text or Code, and it can be a field or variable of type [DATEFORMULA](../../methods-auto/dateformula/dateformula-data-type.md). The benefit of using a DateFormula field or variable is that the date formula becomes language independent.  
 
  The user can enter formulas in the currently selected language. The formula is stored in a generic format in a field or variable. When the formula must be displayed, the actual string that is displayed is converted to the currently selected language.  
 

@@ -2,7 +2,7 @@
 title: "CreateTempFile Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CreateTempFile Method
 Creates a temporary file. This enables you to save data of any format to a temporary file. This file has a unique name and will be stored in a temporary file folder.
+
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```
@@ -41,7 +44,7 @@ An instance of the [File](file-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use this method together with [NAME Method \(File\)](../../methods/devenv-name-method-file.md) and [CLOSE Method \(File\)](../../methods/devenv-close-method-file.md).  
+ You can use this method together with [NAME Method \(File\)](../../methods-auto/file/file-name-method.md) and [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md).  
   
 ## Example  
  This example creates a temporary file that has the text Hello and then deletes the file by using the File.CLOSE method. This example requires that you create the following variable.  

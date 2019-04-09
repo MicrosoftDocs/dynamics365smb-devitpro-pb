@@ -2,7 +2,7 @@
 title: "Id Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Id Method
 Specifies the identifier for a notification.
+
 
 ## Syntax
 ```
@@ -41,7 +42,7 @@ An instance of the [Notification](notification-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-If left unassigned the notification will be assigned an ID when the SEND method is called. For more information, see [SEND Method (Notification)](../../methods/devenv-send-method-notification.md).
+If left unassigned the notification will be assigned an ID when the SEND method is called. For more information, see [SEND Method (Notification)](../../methods-auto/notification/notification-send-method.md).
 
 ##  Example
 The following code creates a notification and sends it if NewBalance is greater than the credit limit. If it is lower than the credit limit, it recalls the notification.

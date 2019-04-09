@@ -2,7 +2,7 @@
 title: "TestField Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,7 @@ author: solsen
 Represents a testable field on a page.
 
 
+
 The following methods are available on instances of the TestField data type.
 
 |Method name|Description|
@@ -26,7 +27,7 @@ The following methods are available on instances of the TestField data type.
 |[Drilldown()](testfield-drilldown-method.md)|Applies drill-down capability for a field on a test page.|
 |[AssertEquals(Any)](testfield-assertequals-method.md)|Asserts that the value in a field on a test page equals a specified value.|
 |[SetValue(Any)](testfield-setvalue-method.md)|Sets a value for a field on a test page.|
-|[Invoke()](testfield-invoke-method.md)|Invokes a field on a test page.|
+|[Invoke()](testfield-invoke-method.md)|Invokes the default action on the field.|
 |[Activate()](testfield-activate-method.md)|Activates a field on a test page.|
 |[AsInteger()](testfield-asinteger-method.md)|Converts the value of the field on a test page to an Integer data type.|
 |[AsBoolean()](testfield-asboolean-method.md)|Converts the value in a field on a test page to a Boolean data type.|

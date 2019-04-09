@@ -2,7 +2,7 @@
 title: "Read Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Read Method
 Streams a BigText object that is stored as a BLOB in a table to a BigText variable.
+
 
 ## Syntax
 ```
@@ -39,7 +40,7 @@ The InStream object type that you use to stream a BLOB to a BigText variable.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- To delete the content in a BigText variable, use the CLEAR method.  
+ To delete the content in a BigText variable, use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md).  
   
 ```  
 CLEAR(BigText)  
@@ -63,7 +64,7 @@ EmployeeRec.Picture.CREATEINSTREAM(Istream);
 Bstr.READ(Istream);  
 ```  
   
- Use the [CALCFIELDS Method \(Record\)](../../methods/devenv-calcfields-method-record.md) to calculate the BlobField. A BlobField is a binary large object \(maximum size 2 GB\) and must be calculated if you want to use it in AL or display it in the application.  
+ Use the [CALCFIELDS Method \(Record\)](../../methods-auto/record/record-calcfields-method.md) to calculate the BlobField. A BlobField is a binary large object \(maximum size 2 GB\) and must be calculated if you want to use it in AL or display it in the application.  
 
 ## See Also
 [BigText Data Type](bigtext-data-type.md)  

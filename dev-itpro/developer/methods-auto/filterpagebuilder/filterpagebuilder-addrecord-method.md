@@ -2,7 +2,7 @@
 title: "AddRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # AddRecord Method
 Adds a filter control for a table to a filter page. The table is specified by a record data type variable that is passed to the method.
 
+
 ## Syntax
 ```
-[Name := ]  FilterPageBuilder.AddRecord(Name: String, Record: Table)
+[Name := ]  FilterPageBuilder.AddRecord(Name: String, Record: Record)
 ```
 ## Parameters
 *FilterPageBuilder*  
@@ -30,7 +31,7 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 Assigns a name to the filter control for the table. The text displays as the caption for the filter control on the rendered filter page in the client.
         
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The record to use in the filter control.  
 
 

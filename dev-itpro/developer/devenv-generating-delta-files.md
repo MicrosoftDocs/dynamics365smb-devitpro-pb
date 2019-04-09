@@ -3,7 +3,7 @@ title: "Generating Delta files"
 description: "Description of how to generate delta files with the ExportToNewSyntax flag."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +13,6 @@ ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
 ---
-
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # Generating Delta files
 You can use the `Compare-NAVApplicationObject` powershell cmdlet to generate .delta files from two versions of a set of application objects. 

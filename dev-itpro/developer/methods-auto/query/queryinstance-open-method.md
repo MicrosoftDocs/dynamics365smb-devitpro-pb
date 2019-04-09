@@ -2,7 +2,7 @@
 title: "Open Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,8 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Open Method
-Runs a query object and generates a data set that can be read. The following code shows the syntax of the OPEN function. Query is a variable of the Query data type that specifies the query object.
+Runs a query object and generates a data set that can be read. The following code shows the syntax of the OPEN method. Query is a variable of the Query data type that specifies the query object.
+
 
 ## Syntax
 ```

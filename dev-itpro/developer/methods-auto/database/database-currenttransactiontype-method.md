@@ -2,7 +2,7 @@
 title: "CurrentTransactionType Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CurrentTransactionType Method
 Gets the current transaction type and sets a new type to be assigned.
+
 
 ## Syntax
 ```
@@ -93,7 +94,7 @@ CURRENTTRANSACTIONTYPE := TRANSACTIONTYPE::Browse;
 ```  
   
 ## Example  
- In Example 5, the initial transaction type is UpdateNoLocks. This is usually the default transaction type for a trigger. When you try to change the transaction type from UpdateNoLocks to Browse, which is a less isolated transaction type, the method call is ignored. The current transaction type remains UpdateNoLocks. After the first Table.GET line, again, when you try to change the transaction type from UpdateNoLocks to Browse, the method call is ignored. The current transaction type remains UpdateNoLocks. Next, when you try to change the transaction type from UpdateNoLocks to Update, which is a more isolated transaction type, the method call causes an error message to be generated. The current transaction type remains UpdateNoLocks. After the COMMIT, you can set a new transaction type and change it again if it is required. After the second Table.GET line, the CURRENTTRANSACTIONTYPE call is ignored. The transaction type remains Update.  
+ In Example 5, the initial transaction type is UpdateNoLocks. This is usually the default transaction type for a trigger. When you try to change the transaction type from UpdateNoLocks to Browse, which is a less isolated transaction type, the method call is ignored. The current transaction type remains UpdateNoLocks. After the first Table.GET line, again, when you try to change the transaction type from UpdateNoLocks to Browse, the method call is ignored. The current transaction type remains UpdateNoLocks. Next, when you try to change the transaction type from UpdateNoLocks to Update, which is a more isolated transaction type, the method call causes an error message to be generated. The current transaction type remains UpdateNoLocks. After the [COMMIT Method](../../methods-auto/database/database-commit-method.md), you can set a new transaction type and change it again if it is required. After the second Table.GET line, the CURRENTTRANSACTIONTYPE method call is ignored. The transaction type remains Update.  
   
 ```  
 //Example 5  

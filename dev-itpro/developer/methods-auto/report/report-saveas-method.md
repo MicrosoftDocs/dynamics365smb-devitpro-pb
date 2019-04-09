@@ -2,7 +2,7 @@
 title: "SaveAs Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SaveAs Method
 Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RUNREQUESTPAGE method call.
+
 
 ## Syntax
 ```
@@ -51,9 +52,9 @@ The RecordRef that refers to the table in which you want to find a record.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You typically use this method together with the [RUNREQUESTPAGE Method](../../methods/devenv-runrequestpage-method.md) method. The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the SAVEAS method to get the parameter string and save the report to a file of the specified format.  
+ You typically use this method together with the [RUNREQUESTPAGE Method](../../methods-auto/report/report-runrequestpage-method.md) method. The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the SAVEAS method to get the parameter string and save the report to a file of the specified format.  
 
- For a simple example that illustrates how to use the SAVEAS method, see example in the [RUNREQUESTPAGE Method](../../methods/devenv-runrequestpage-method.md) method topic. 
+ For a simple example that illustrates how to use the SAVEAS method, see example in the [RUNREQUESTPAGE Method](../../methods-auto/report/report-runrequestpage-method.md) method topic. 
 
 
 > [!NOTE]  

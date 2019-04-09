@@ -3,7 +3,7 @@ title: "Using Filter Expressions in OData URIs"
 author: edupont04
 ms.author: edupont
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ http://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer?
  The following table shows the filters that are supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData web services and the equivalent AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
 
 > [!NOTE]  
->  Filters that do not have equivalent AL expressions might take longer to process compared to filters that do have equivalent AL expressions. The reason is that filters that do not have equivalent AL expressions are processed on the [!INCLUDE[server](../developer/includes/server.md)] tier, while filters that do have equivalent AL expressions are processed on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database tier.  
+> Filters that do not have equivalent AL expressions might take longer to process compared to filters that do have equivalent AL expressions. The reason is that filters that do not have equivalent AL expressions are processed on the [!INCLUDE[server](../developer/includes/server.md)] tier, while filters that do have equivalent AL expressions are processed on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database tier.  
 
 |Definition|Example and explanation|Equivalent AL expression|  
 |----------------|-----------------------------|---------------------------------|  
@@ -54,9 +54,9 @@ http://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer?
 ## Referencing Different Data Types in Filter Expressions  
  You must use the appropriate notation for different data types with filter expressions.  
 
--   String values must be delimited by single quotation marks.  
+- String values must be delimited by single quotation marks.  
 
--   Numeric values require no delimiters.  
+- Numeric values require no delimiters.  
 
 For more information about data types and other information about conventions and standards for OData URIs, see [Atom Publishing Protocol: URI Conventions](http://go.microsoft.com/fwlink/?LinkId=214635). Conventions for data types are addressed in section 2.2.2, "Abstract Type System."  
 

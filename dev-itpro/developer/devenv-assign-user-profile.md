@@ -4,7 +4,7 @@ description: Use the User Personalization page to assign a user to a profile, an
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 10/11/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,13 +17,13 @@ When you have created a profile, you can use the **User Personalization** page t
   
 ## Assigning a user to a profile  
 
-1. In the Search box, enter **User Personalization**, and then choose the related link.  
+1. In the **Tell Me** box, enter **User Personalization**, and then choose the related link.  
 2. Choose **New** to open.
 3. In the **User Personalization** window, fill in the fields described in the following table.  
   
 |Field    |Description|  
 |---------|---------------------------------------|  
-|**User ID**|Choose the **AssistEdit** button to view all available user logins, select the relevant user, and then choose the **OK** button.<br /><br /> For more information, see [How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md).|  
+|**User ID**|Choose the **AssistEdit** button to view all available user logins, select the relevant user, and then choose the **OK** button.<br /><br /> For more information, see [Managing Users and Permissions](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions).|  
 |**Profile ID**|Select a profile ID that you have already created. Choose the **AssistEdit** button to view all available profiles.|  
 |**Language ID**|Select the appropriate language ID, or leave this field blank.|  
 |**Company**|Select a company from the **Companies** window.|  
@@ -33,4 +33,4 @@ When you have created a profile, you can use the **User Personalization** page t
   
 ## See Also  
 [Profile Object](devenv-profile-object.md)  
-[How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md)
+[Managing Users and Permissions](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)  

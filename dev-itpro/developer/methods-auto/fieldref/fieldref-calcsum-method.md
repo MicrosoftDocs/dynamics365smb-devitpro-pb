@@ -2,7 +2,7 @@
 title: "CalcSum Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CalcSum Method
 Calculates the total of all values of a SumIndexField in a table.
+
 
 ## Syntax
 ```
@@ -35,7 +36,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method is like the [CALCSUMS Method \(Record\)](../../methods/devenv-calcsums-method-record.md) method. This method operates only on records that meet the conditions of any filters associated with the record.  
+ This method is like the [CALCSUMS Method \(Record\)](../../methods-auto/record/record-calcsums-method.md) method. This method operates only on records that meet the conditions of any filters associated with the record.  
 
  If possible, the CALCSUM method uses SumIndexField Technology \(SIFT\). SIFT is used only if the following conditions are true:  
 

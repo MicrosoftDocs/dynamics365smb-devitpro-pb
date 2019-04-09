@@ -2,7 +2,7 @@
 title: "ProductName Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ProductName Data Type
 An application can have a full name, marketing name, and short name. The PRODUCTNAME functions enable you to retrieve these name variations.
+
 
 The following methods are available on the ProductName data type.
 

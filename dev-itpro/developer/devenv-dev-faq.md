@@ -3,7 +3,7 @@ title: "FAQ for Developing in AL"
 description: "Overview of frequently asked questions for development using the AL language."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/09/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,8 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
-
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
 
 # FAQ for Developing in AL
 This topic contains a number of frequently asked questions and answers to these questions. 
@@ -48,7 +46,7 @@ For information on upgrading, see the following topics:
 Code that relies on temporary files must be rewritten to rely on `InStream` and `OutStream` types. Code that relies on permanent files must be rewritten to use another form of permanent storage.
 
 ## DotNet types are not available in Extensions V2. What now?
-For cloud solutions DotNet interop is not available due to safety issues in running arbitrary .NET code on cloud servers. 
+For cloud solutions .NET interop is not available due to safety issues in running arbitrary .NET code on cloud servers. 
 
 With the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you can find AL types that replace the most typical usages of .NET like HTTP, JSON, XML, StringBuilder, Dictionaries and Lists. Many .NET usages can be replaced directly by the AL types resulting in much cleaner code. For more information, see [HTTP, JSON, TextBuilder, and XML API Overview](devenv-restapi-overview.md).
 

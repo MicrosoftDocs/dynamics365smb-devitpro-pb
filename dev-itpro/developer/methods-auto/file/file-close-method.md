@@ -2,7 +2,7 @@
 title: "Close Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Close Method
 Closes a file that has been opened by the OPEN method (File).
+
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```
@@ -35,7 +38,7 @@ An instance of the [File](file-data-type.md) data type.
  If the file is not open, a run-time error will occur.  
   
 ## Example  
- The following example determines whether the specified file exists. If it exists, the [WRITEMODE Method \(File\)](../../methods/devenv-writemode-method-file.md) allows the file to be open for writing. The [OPEN Method \(File\)](../../methods/devenv-open-method-file.md) opens the file, the [WRITE Method \(File\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file, and then the CLOSE method closes the file. If the file does not exist, an error message is displayed. This example requires that you create the following global variables. This example assumes that you have created the following file C:\\TestFolder\\TestFile2.txt.  
+ The following example determines whether the specified file exists. If it exists, the [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [WRITE Method \(File\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file, and then the CLOSE method closes the file. If the file does not exist, an error message is displayed. This example requires that you create the following global variables. This example assumes that you have created the following file C:\\TestFolder\\TestFile2.txt.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

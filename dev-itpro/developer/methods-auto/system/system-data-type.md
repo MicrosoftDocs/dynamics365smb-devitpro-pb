@@ -2,7 +2,7 @@
 title: "System Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System Data Type
 Is a complex data type.
+
 
 The following methods are available on the System data type.
 
@@ -69,18 +70,18 @@ The following methods are available on the System data type.
 |[ApplicationPath()](system-applicationpath-method.md)|Returns the path of the directory where the executable file for the product is installed.|
 |[TemporaryPath()](system-temporarypath-method.md)|Gets the path of the directory where the temporary file is stored.|
 |[IsServiceTier()](system-isservicetier-method.md)|Gets a value indicating whether the runtime is a service tier.|
-|[ExportObjects(String, var Table, [Integer])](system-exportobjects-method.md)|Exports application objects to a file.|
+|[ExportObjects(String, var Record, [Integer])](system-exportobjects-method.md)|Exports application objects to a file.|
 |[ImportObjects(String, [Integer])](system-importobjects-method.md)|Imports application objects from a file.|
 |[IsNull(DotNet)](system-isnull-method.md)|Gets a value indicating whether a DotNet object has been created or not.|
 |[GetLastErrorCallStack()](system-getlasterrorcallstack-method.md)|Gets the call stack from where the last error occurred.|
 |[CodeCoverageLog([Boolean], [Boolean])](system-codecoveragelog-method.md)|Starts and stops the logging of code. You can also use this method to retrieve the current logging status.|
-|[CodeCoverageInclude(var Table)](system-codecoverageinclude-method.md)|Includes the code that has been logged.|
+|[CodeCoverageInclude(var Record)](system-codecoverageinclude-method.md)|Includes the code that has been logged.|
 |[CodeCoverageRefresh()](system-codecoveragerefresh-method.md)|Refreshes the code that has been logged.|
 |[CodeCoverageLoad()](system-codecoverageload-method.md)|Loads the code that has been logged.|
 |[GetDotNetType(Any)](system-getdotnettype-method.md)|Gets the System.Type that corresponds to the given value.|
 |[CanLoadType(DotNet)](system-canloadtype-method.md)|Tests if the specified .NET Framework type can be loaded.|
 |[CaptionClassTranslate(String)](system-captionclasstranslate-method.md)|Returns a translated version of the caption string. The string is translated to the current local language.|
-|[GetUrl(ClientType, [String], [ObjectType], [Integer], [Table], [Boolean])](system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)| Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
+|[GetUrl(ClientType, [String], [ObjectType], [Integer], [Record], [Boolean])](system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)| Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GetUrl(ClientType, String, ObjectType, Integer, RecordRef, [Boolean])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[Encrypt(String)](system-encrypt-method.md)|Takes a string as input and returns the encrypted value of the string.|
 |[Decrypt(String)](system-decrypt-method.md)|Takes a string as input and returns the decrypted value of the string.|

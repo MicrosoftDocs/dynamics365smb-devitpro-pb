@@ -2,7 +2,7 @@
 title: "Decrypt Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Decrypt Method
 Takes a string as input and returns the decrypted value of the string.
+
 
 ## Syntax
 ```
@@ -40,7 +41,7 @@ PlainTextString :=   System.Decrypt(EncryptedString: String)
  If encryption is not enabled or the encryption key does not exist, the following error will be displayed: **An encryption key is required to complete the request**. If decryption failed because input data could not be decrypted, the following error will be displayed: **Unable to decrypt data. The data was encrypted using a different key**.  
 
 ## Example  
- This code example checks whether the tenant is configured to allow encryption using the [ENCRYPTIONENABLED](../../methods/devenv-encryptionenabled-method.md) method, and then it decrypts an encrypted text string.  
+ This code example checks whether the tenant is configured to allow encryption using the [ENCRYPTIONENABLED](../../methods-auto/system/system-encryptionenabled-method.md) method, and then it decrypts an encrypted text string.  
 
  This example requires that you create the following text constants: EncryptedText and PlainText.  
 

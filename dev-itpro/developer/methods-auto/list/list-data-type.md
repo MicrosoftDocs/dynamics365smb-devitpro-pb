@@ -2,7 +2,7 @@
 title: "List Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # List Data Type
 Represents a strongly typed list of objects that can be accessed by index.
+
 
 
 The following methods are available on instances of the List data type.

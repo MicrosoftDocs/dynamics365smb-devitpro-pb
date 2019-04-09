@@ -2,7 +2,7 @@
 title: "File Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # File Data Type
 Represents a file.
+
 
 The following methods are available on the File data type.
 
@@ -61,7 +62,7 @@ The following methods are available on instances of the File data type.
 |[Write(DateFormula)](file-write-dateformula-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(Duration)](file-write-duration-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(Option)](file-write-option-method.md)|Writes to an MS-DOS encoded file or binary file.|
-|[Write(Table)](file-write-table-method.md)|Writes to an MS-DOS encoded file or binary file.|
+|[Write(Record)](file-write-table-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(RecordId)](file-write-recordid-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(String)](file-write-string-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(Any)](file-write-joker-method.md)|Writes to an MS-DOS encoded file or binary file.|

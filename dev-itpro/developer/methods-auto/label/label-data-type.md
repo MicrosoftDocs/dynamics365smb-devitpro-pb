@@ -2,7 +2,7 @@
 title: "Label Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,27 @@ Denotes a string constant that can be optionally translated into multiple langua
 
 
 
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Parameters
+All of the parameters below are optional and the order is not enforced.
 
-| Attribute   | Description|                      
-|------|--------------|
-|**Comment**|It is used for general comments about the label, specifically about the placeholders in that label.|
-|**Locked**|When Locked is set to **true**, the label should not be translated.|
-|**MaxLength**|It determines how much of the label is used.</br>`Label 'ALLOWED POSTING DATE', Comment='{MaxLength=30}';`<br>|
+| Attribute   | Description|
+|-------------|--------------|
+|**Comment**  | It is used for general comments about the label, specifically about the placeholders in that label.|
+|**Locked**   | When Locked is set to **true**, the label should not be translated.|
+|**MaxLength**| It determines how much of the label is used.</br>`Label 'ALLOWED POSTING DATE', Comment='{MaxLength=30}';`<br>|
 
+## Syntax example
+
+```
+var
+    a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
+```
+
+## Remarks
+The `Label` data type is used in .xlf files for translations. For more information, see [Working with Translation Files](../../devenv-work-with-translation-files.md).
 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  

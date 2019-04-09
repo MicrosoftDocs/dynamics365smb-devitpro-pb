@@ -2,7 +2,7 @@
 title: "CurrentKey Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,10 +16,13 @@ author: solsen
 # CurrentKey Method
 Gets the current key of a data set that is displayed on a test page.
 
+
 ## Syntax
 ```
 CurrentKey :=   TestFilter.CurrentKey()
 ```
+> [!NOTE]  
+> This method can be invoked using property access syntax.  
 
 ## Parameters
 *TestFilter*  

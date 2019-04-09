@@ -2,7 +2,7 @@
 title: "Import Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # Import Method
 Reads and parses an incoming XML data stream (XML document).
 
+
 ## Syntax
 ```
-[Ok := ]  Xmlport.Import(Number: Integer, var InStream: InStream, [var Record: Table])
+[Ok := ]  Xmlport.Import(Number: Integer, var InStream: InStream, [var Record: Record])
 ```
 ## Parameters
 *Number*  
@@ -30,7 +31,7 @@ The ID of the XmlPort that you want to run. If the XmlPort that you specify does
 The source from which the import XmlPort object will read the XML data stream.
           
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The record to use in the XmlPort. Any filters that are attached to the record will be used. This parameter is optional. If this parameter is omitted, all records in the table are imported. For example, you can use this parameter to change the values of properties such as FieldSeparator or TextEncoding, depending on each record that is imported.
           
 

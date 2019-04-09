@@ -2,7 +2,7 @@
 title: "GetUrl Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # GetUrl Method
  Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.
 
+
 ## Syntax
 ```
-String :=   System.GetUrl(ClientType: ClientType, [Company: String], [ObjectType: ObjectType], [ObjectId: Integer], [Record: Table], [UseFilters: Boolean])
+String :=   System.GetUrl(ClientType: ClientType, [Company: String], [ObjectType: ObjectType], [ObjectId: Integer], [Record: Record], [UseFilters: Boolean])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  
@@ -40,7 +41,7 @@ Value: Table, Page, Report, Codeunit, Query, or XmlPort. Specifies the object ty
 Specifies the ID of the specified object type that the URL must open.
         
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
   
 *UseFilters*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  

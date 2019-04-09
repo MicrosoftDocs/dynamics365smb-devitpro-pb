@@ -2,7 +2,7 @@
 title: "Xmlport Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,14 +16,15 @@ author: solsen
 # Xmlport Data Type
 XmlPorts are used to export or import data between an external source and a Microsoft Dynamics Business Central database.
 
+
 The following methods are available on the Xmlport data type.
 
 
 |Method name|Description|
 |-----------|-----------|
-|[Import(Integer, var InStream, [var Table])](xmlport-import-method.md)|Reads and parses an incoming XML data stream (XML document).|
-|[Export(Integer, var OutStream, [var Table])](xmlport-export-method.md)|Creates an XML data stream (XML document) and sends it to a chosen destination.|
-|[Run(Integer, [Boolean], [Boolean], [var Table])](xmlport-run-method.md)|Loads and executes the XmlPort that you specify.|
+|[Import(Integer, var InStream, [var Record])](xmlport-import-method.md)|Reads and parses an incoming XML data stream (XML document).|
+|[Export(Integer, var OutStream, [var Record])](xmlport-export-method.md)|Creates an XML data stream (XML document) and sends it to a chosen destination.|
+|[Run(Integer, [Boolean], [Boolean], [var Record])](xmlport-run-method.md)|Loads and executes the XmlPort that you specify.|
 
 The following methods are available on instances of the Xmlport data type.
 
@@ -42,7 +43,7 @@ The following methods are available on instances of the Xmlport data type.
 |[SetSource(var InStream)](xmlportinstance-setsource-method.md)|Sets the source InStream of the XmlPort.|
 |[SetDestination(var OutStream)](xmlportinstance-setdestination-method.md)|Sets the destination OutStream of the XmlPort.|
 |[ImportFile([Boolean])](xmlportinstance-importfile-method.md)|Gets or sets the ImportFile property.|
-|[SetTableView(var Table)](xmlportinstance-settableview-method.md)|Applies the table view on the current record as the table view for the page, report, or XmlPort.|
+|[SetTableView(var Record)](xmlportinstance-settableview-method.md)|Applies the table view on the current record as the table view for the page, report, or XmlPort.|
 |[Break()](xmlportinstance-break-method.md)|Exits from a loop or a trigger in a data item trigger of a report or XmlPort.|
 |[BreakUnbound()](xmlportinstance-breakunbound-method.md)|Exits from a loop on records in an XmlPort trigger.|
 |[Skip()](xmlportinstance-skip-method.md)|Skips the current iteration of the current report or XmlPort.|

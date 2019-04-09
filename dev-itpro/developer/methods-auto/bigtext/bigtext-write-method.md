@@ -2,7 +2,7 @@
 title: "Write Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Write Method
 Streams a BigText object to a BLOB field in a table.
+
 
 ## Syntax
 ```
@@ -41,7 +42,7 @@ The stream to which you write a BigText.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- To delete the content in a BigText variable, use the CLEAR method.  
+ To delete the content in a BigText variable, use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md).  
   
 ```  
 CLEAR(BigText)  

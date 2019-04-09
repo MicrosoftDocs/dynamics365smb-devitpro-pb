@@ -3,7 +3,7 @@ title: "Testing your Extension"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/11/2018
+ms.date: 04/01/2019
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -28,8 +28,7 @@ Use Docker for your development and testing. At least, run your full test in Bus
 
 If you test in an on-premises deployment, you might miss errors that would be seen online.
 
-And with this, make sure you are using the correct Docker image tag to set up the correct Business Central version number. If you want your app to go live as soon as possible with the current production version at the time you submit your app, you must use the image tag mentioned at [Current Build - Developing for Dynamics 365 Business Central](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/4756) on the Collaborate site. The image tag never changes and when we roll out a new version to production, the build underneath the image tag automatically changes for you. This means that you are always testing on current production.  
-If you test on a build older or much newer, your app will most likely fail validation.
+And with this, make sure you are using the correct Docker image tag to set up the correct Business Central version number. If you want your app to go live as soon as possible with the current production version at the time you submit your app, you must use the image tag mentioned on the Collaborate site. To do so, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the build named **Current Build - Developing for Dynamics 365 Business Central**. The image tag never changes and when we roll out a new version to production, the build underneath the image tag automatically changes for you. This means that you are always testing on current production. If you test on a build older or much newer, your app will most likely fail validation.
 
 Use the image tag from the current build link above and make sure you refresh the docker instance each time you want to submit. If you haven’t run your docker script to refresh for months, then you are on a much older build.
 
@@ -67,9 +66,9 @@ Now it is time to test your app. The following are all things you must do as par
 
 Although we do regular testing of your app when we prepare a new version of Business Central, we expect you to do the same on your end. You have access to the same builds that we do  through the Collaborate program. You can do more thorough testing than we can because you know your app the best. By doing this testing, you can catch future Business Central changes that may impact or break your app. Catching these changes in advance leaves less risk for customers to run into them.
 
-You should be doing regular testing against our release branch that ports into our monthly service updates. To test against these builds, see [Daily Builds - Maintaining an app in AppSource for Dynamics 365 Business Central](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/4754) on the Collaborate site.
+You should be doing regular testing against our release branch that ports into our monthly service updates. To test against these builds, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the build named **Daily Builds - Maintaining an app in AppSource for Dynamics 365 Business Central**.
 
-We also recommend that you do regular testing against our release branch that eventually becomes our major release in April or October. For more information, see [Daily Builds - Developing for a future release of Dynamics 365 Business Central](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/4755).
+We also recommend that you do regular testing against our release branch that eventually becomes our major release in April or October. For more information, see **Daily Builds - Developing for a future release of Dynamics 365 Business Central** on [aka.ms/collaborate](https://aka.ms/collaborate).
 
 ## See Also
 

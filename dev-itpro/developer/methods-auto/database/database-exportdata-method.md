@@ -2,7 +2,7 @@
 title: "ExportData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,12 @@ author: solsen
 # ExportData Method
 Exports data from the database to a file. The data is not deleted from the database.
 
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
+
 ## Syntax
 ```
-[Ok := ]  Database.ExportData(ShowDialog: Boolean, var FileName: Text, [Description: String], [IncludeApplication: Boolean], [IncludeApplicationData: Boolean], [IncludeGlobalData: Boolean], [CompanyRecord: Table])
+[Ok := ]  Database.ExportData(ShowDialog: Boolean, var FileName: Text, [Description: String], [IncludeApplication: Boolean], [IncludeApplicationData: Boolean], [IncludeGlobalData: Boolean], [CompanyRecord: Record])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  
@@ -48,7 +51,7 @@ Specifies if you want to export the data that defines the application in the dat
 Specifies if you want to export global, non-company specific data. Create a variable of type Boolean to specify this parameter.
           
 *CompanyRecord*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 Specifies the company or companies that must be imported.  
 
 

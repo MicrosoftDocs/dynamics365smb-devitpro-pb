@@ -2,7 +2,7 @@
 title: "TextPos Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TextPos Method
 Gets the position at which a specific string first occurs in this BigText instance.
+
 
 ## Syntax
 ```
@@ -43,7 +44,7 @@ The position at which a specific string first occurs in this BigText instance.
  The first character in a *BigText* variable is position 1.  
   
 ## Example  
- The following examples show how to use the TEXTPOS method. These examples require that you create the following global variables and text constant.  
+ The following examples show how to use the [TEXTPOS Method](../../methods-auto/bigtext/bigtext-textpos-method.md). These examples require that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

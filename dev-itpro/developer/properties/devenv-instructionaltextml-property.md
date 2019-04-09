@@ -1,7 +1,7 @@
 ---
 title: "InstructionalTextML Property"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,13 +12,11 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # InstructionalTextML Property
 Sets the multilanguage value of the InstructionalText of the object. Use this property as a label.  
 
-> [!NOTE] 
-> The support for using the ML properties, such as **CaptionML** and **TooltipML**, is being deprecated, so it is recommended to refactor your extension to use the corresponding **Caption** or **Tooltip** property, which is being picked up in the .xliff file. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
+> [!NOTE]  
+> To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
   
 ## Applies To  
 Pages including:  

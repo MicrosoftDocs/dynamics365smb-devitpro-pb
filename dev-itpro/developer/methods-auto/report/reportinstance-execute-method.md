@@ -2,7 +2,7 @@
 title: "Execute Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Execute Method
 Runs a report in preview or processing-only mode without showing the request page in the client. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.
+
 
 ## Syntax
 ```
@@ -42,9 +43,9 @@ The RecordRef that refers to a record in a table.
 
 After the EXECUTE method is executed, the system does not automatically clear the *Report* variable. You must handle clearing the variable.
 
-You typically use this method together with the [RUNREQUESTPAGE Method](report-runrequestpage-method.md). The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the EXECUTE method to get the parameter string and run the report.  
+You typically use this method together with the [RUNREQUESTPAGE Method](../../methods-auto/report/report-runrequestpage-method.md). The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the EXECUTE method to get the parameter string and run the report.  
 
- For a simple example that illustrates how to use the EXECUTE method, see example in the [RUNREQUESTPAGE Method](report-runrequestpage-method.md) topic.  
+ For a simple example that illustrates how to use the EXECUTE method, see example in the [RUNREQUESTPAGE Method](../../methods-auto/report/report-runrequestpage-method.md) topic.  
 
 ## See Also
 [Report Data Type](report-data-type.md)  

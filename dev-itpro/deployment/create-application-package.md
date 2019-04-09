@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ---
 # Moving from Dynamics NAV On-premises to Business Central Online
 This article describes you can move your on-premise [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, including the application and its tenants, to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online.
@@ -116,7 +116,7 @@ To complete the tasks in this article, you will need the following:
 When you deploy your application online, you must provide a compressed .zip file that contains the application and tenant databases as data-tier application files, known as BACPAC (.bacpac) files. This article describes how you to create the BACPAC files and zip. You can do this using SQL Server Management Studio.
 
 1.	In SQL Server Management Studio, connect to the server instance that hosts the application and tenant databases.
-2.	In **Object Explorer**, right-click either the application or tenant database, choose **Task**, and then choose **xport Data-tier Application**.
+2.	In **Object Explorer**, right-click either the application or tenant database, choose **Task**, and then choose **Export Data-tier Application**.
 3.	Follow the steps in the **Export Data-tier Application** wizard to export the database to a .bacpac file on your computer or network.
 
     You can use any name for the .bacpac file.

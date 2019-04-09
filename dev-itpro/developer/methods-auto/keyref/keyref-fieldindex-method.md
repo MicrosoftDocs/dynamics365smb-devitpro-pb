@@ -2,7 +2,7 @@
 title: "FieldIndex Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldIndex Method
 Gets the FieldRef of the field that has this index in the key referred to by the KeyRef variable. Returns an error if no key is selected.
+
 
 ## Syntax
 ```

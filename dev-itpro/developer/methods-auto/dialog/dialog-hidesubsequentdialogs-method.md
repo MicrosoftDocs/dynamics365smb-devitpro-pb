@@ -2,7 +2,7 @@
 title: "HideSubsequentDialogs Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HideSubsequentDialogs Method
 Specifies that subsequent child dialogs are not shown.
+
 
 ## Syntax
 ```
@@ -43,7 +44,7 @@ A value specifying whether to hide subsequent dialogs.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-You must call the HIDESUBSEQUENTDIALOGS method on the dialog variable before the OPEN method. Until the OPEN method is called on this variable, calls on other dialog variables will behave as normal.
+You must call the HIDESUBSEQUENTDIALOGS method on the dialog variable before the [OPEN Method](../../methods-auto/dialog/dialog-open-method.md). Until the [OPEN Method](../../methods-auto/dialog/dialog-open-method.md) is called on this variable, calls on other dialog variables will behave as normal.
 
 ##  Example
 The following code illustrates how the HIDESUBSEQUENTDIALOGS method works with two dialog variables.

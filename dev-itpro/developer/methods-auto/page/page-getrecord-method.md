@@ -2,7 +2,7 @@
 title: "GetRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # GetRecord Method
 Gets the current record of the page.
 
+
 ## Syntax
 ```
- Page.GetRecord(var Record: Table)
+ Page.GetRecord(var Record: Record)
 ```
 ## Parameters
 *Page*  
@@ -26,7 +27,7 @@ Gets the current record of the page.
 An instance of the [Page](page-data-type.md) data type.  
 
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The Record variable that will contain the current record associated with the page.  
 
 

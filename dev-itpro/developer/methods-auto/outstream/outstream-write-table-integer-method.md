@@ -2,7 +2,7 @@
 title: "Write Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # Write Method
 Writes a specified number of bytes to the stream. Data is written in binary format.
 
+
 ## Syntax
 ```
-[Written := ]  OutStream.Write(Value: Table, [Length: Integer])
+[Written := ]  OutStream.Write(Value: Record, [Length: Integer])
 ```
 ## Parameters
 *OutStream*  
@@ -26,7 +27,7 @@ Writes a specified number of bytes to the stream. Data is written in binary form
 An instance of the [OutStream](outstream-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 Contains the data to be written.
         
 *Length*  

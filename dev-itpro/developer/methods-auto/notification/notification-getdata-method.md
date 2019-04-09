@@ -2,7 +2,7 @@
 title: "GetData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetData Method
 Retrieves data that was passed to a notification instance as specified by a SETDATA method call.
+
 
 ## Syntax
 ```
@@ -39,7 +40,7 @@ The data retrieved
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-You use the SETDATA and GETDATA methods for transferring data in a notification. The methods are typically needed for handling actions on the notification. The SETDATA method is called from the source of the notification, while the GETDATA method is called from the action code.
+You use the [SETDATA Method (Notification)](../../methods-auto/notification/notification-setdata-method.md) and GETDATA methods for transferring data in a notification. The methods are typically needed for handling actions on the notification. The [SETDATA Method (Notification)](../../methods-auto/notification/notification-setdata-method.md) method is called from the source of the notification, while the GETDATA method is called from the action code.
 
 For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 

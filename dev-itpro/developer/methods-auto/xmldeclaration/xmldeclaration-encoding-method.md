@@ -2,7 +2,7 @@
 title: "Encoding Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/17/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Encoding Method
 Gets or sets the encoding of the XML document.
+
 
 ## Syntax
 ```

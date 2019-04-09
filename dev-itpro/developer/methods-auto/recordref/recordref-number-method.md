@@ -2,7 +2,7 @@
 title: "Number Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Number Method
 Gets the table ID (number) of the table that contains the record that was referred to by the RecordRef.
+
 
 ## Syntax
 ```

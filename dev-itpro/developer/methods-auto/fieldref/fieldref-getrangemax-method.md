@@ -2,7 +2,7 @@
 title: "GetRangeMax Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GetRangeMax Method
 Gets the maximum value in a range for a field.
+
 
 ## Syntax
 ```
@@ -37,10 +38,10 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method is like the [GETRANGEMAX Method \(Record\)](../../methods/devenv-getrangemax-method-record.md) method.  
+ This method is like the [GETRANGEMAX Method \(Record\)](../../methods-auto/record/record-getrangemax-method.md) method.  
   
 ## Example  
- The following example opens the Customer table as RecordRef variable, creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The [SETFILTER Method \(FieldRef\)](../../methods/devenv-setfilter-method-fieldref.md) sets a filter that selects records in the range 10000 to 40000 from the No. field. The GETRANGEMAX method retrieves and stores the maximum value that was set in the filter, stores the value in the varMax variable and displays it in a message box. The varMax variable contains 40000 which is the maximum value that is set in the filter. This example requires that you create the following global variables and text constants.  
+ The following example opens the Customer table as RecordRef variable, creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The [SETFILTER Method \(FieldRef\)](../../methods-auto/fieldref/fieldref-setfilter-method.md) sets a filter that selects records in the range 10000 to 40000 from the No. field. The GETRANGEMAX method retrieves and stores the maximum value that was set in the filter, stores the value in the varMax variable and displays it in a message box. The varMax variable contains 40000 which is the maximum value that is set in the filter. This example requires that you create the following global variables and text constants.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

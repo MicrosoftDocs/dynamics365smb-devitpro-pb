@@ -2,7 +2,7 @@
 title: "Message Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Message Method
 Displays a text string in a message window.
+
 
 ## Syntax
 ```
@@ -40,7 +41,7 @@ Any type of AL variable you want to insert into String. You can insert up to 10 
   
  The window is automatically sized to hold the longest line of text and the total number of lines.  
   
- For NAS sessions or [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] sessions \(including NAS\) that are started by the [STARTSESSION Method \(Sessions\)](../../methods/devenv-startsession-method-sessions.md), messages are recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The message entries have the ID 100 and type Information.  
+ For NAS sessions or [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] sessions \(including NAS\) that are started by the [STARTSESSION Method \(Sessions\)](../../methods-auto/session/session-startsession-method.md), messages are recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The message entries have the ID 100 and type Information.  
   
 ## Programming Guidelines  
  We recommend the following guidelines for messages:  

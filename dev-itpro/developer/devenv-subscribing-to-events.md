@@ -2,7 +2,7 @@
 title: "Subscribing to Events"
 description: This topic describes how to design event subscribers in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,14 +11,14 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Subscribing to Events
 To handle events, you design event subscribers. Event subscribers determine what actions to take in response to an event that has been raised. An event subscriber is an AL method that subscribes to, or listens for, a specific event that is declared by an event publisher method. The event subscriber includes code that defines the business logic to handle the event. When the published event is raised, the event subscriber is called and its code is run.  
 
 Subscribing to an event tells the runtime that the subscriber method must be called whenever the publisher method is run, either by code (as with business and integration events) or by the system (as with trigger events). The runtime establishes the link between an event raised by the publisher and its subscribers by looking for event subscriber methods.  
 
-There can be multiple subscribers to the same event from various locations in the application code. When an event is raised, the subscriber methods are run one at a time in random order. You cannot specify the order in which the subscriber methods are called.  
+There can be multiple subscribers to the same event from various locations in the application code. When an event is raised, the subscriber methods are run one at a time in no particular order. You cannot specify the order in which the subscriber methods are called.  
 
 Be aware that changing the state may not only impact the publishing code but other subscribers as well.   
 
@@ -97,3 +97,7 @@ codeunit 70000002 MySubscriber
  [Raising Events](devenv-raising-events.md)   
  [Event Types](devenv-event-types.md)   
  [Events in AL](devenv-events-in-al.md)
+ [EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md)
+ [EventSubscriber Attribute](methods/devenv-eventsubscriber-attribute.md)
+
+

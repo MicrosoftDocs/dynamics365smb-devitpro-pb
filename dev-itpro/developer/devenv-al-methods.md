@@ -1,7 +1,7 @@
 ---
 title: "Working with AL Methods"
 ms.custom: na
-ms.date: 12/19/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ Like other languages, AL methods are a fundamental programming element. A method
 
 There are two types of methods: system methods and user-defined (custom) methods.
 
-- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL Method Reference](methods/devenv-al-method-reference.md) and [Essential AL Methods](devenv-essential-al-methods.md).
+- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL Method Reference](methods-auto/library.md) and [Essential AL Methods](devenv-essential-al-methods.md).
 
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and codeunits, together to form a unified whole. You can create special methods for use anywhere in the database.
 

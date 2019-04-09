@@ -2,7 +2,7 @@
 title: "SetTableView Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: solsen
 # SetTableView Method
 Applies the table view on the current record as the table view for the page, report, or XmlPort.
 
+
 ## Syntax
 ```
- Report.SetTableView(var Record: Table)
+ Report.SetTableView(var Record: Record)
 ```
 ## Parameters
 *Report*  
@@ -26,7 +27,7 @@ Applies the table view on the current record as the table view for the page, rep
 An instance of the [Report](report-data-type.md) data type.  
 
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 The record that has a table view that you want to apply to the page or data item.  
 
 

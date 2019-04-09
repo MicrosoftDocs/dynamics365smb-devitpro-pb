@@ -2,7 +2,7 @@
 title: "UnbindSubscription Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UnbindSubscription Method
 Unbinds the event subscriber methods from in the codeunit instance. This essentially deactivates the subscriber methods for the codeunit instance.
+
 
 ## Syntax
 ```
@@ -39,7 +40,7 @@ The codeunit that contains the event subscribers.
 ## Remarks  
  You can only call this method on codeunits that have the [EventSubscriberInstance Property](../../properties/devenv-eventsubscriberinstance-property.md) set to **Manual**.  
   
- Calling this method on a codeunit that has not been bound \(by the [BINDSUBSCRIPTION Method](../../methods/devenv-bindsubscription-method.md)\) will result in an error. If the call to this method is successfull, all bindings are removed.  
+ Calling this method on a codeunit that has not been bound \(by the [BINDSUBSCRIPTION Method](../../methods-auto/session/session-bindsubscription-method.md)\) will result in an error. If the call to this method is successfull, all bindings are removed.  
   
  The codeunit instance that is unbound will be the same instance that previously was bound.  
   

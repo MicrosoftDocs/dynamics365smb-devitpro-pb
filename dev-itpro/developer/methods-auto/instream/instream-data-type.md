@@ -2,7 +2,7 @@
 title: "InStream Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,6 +16,7 @@ author: solsen
 # InStream Data Type
 Is a generic stream object that you can use to read from or write to files and BLOBs. You can define the internal structure of a stream as a flat stream of bytes. You can assign one stream to another. Reading from and writing to a stream occurs sequentially.
   
+
 
 
 The following methods are available on instances of the InStream data type.

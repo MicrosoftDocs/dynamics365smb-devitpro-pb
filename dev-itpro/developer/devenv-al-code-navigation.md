@@ -1,9 +1,9 @@
 ---
-title: AL Code Navigation
-description: This topic describes how to use the Go To Definition feature when debugging the AL code in Dynamics 365 Business Central. 
+title: "AL Code Navigation"
+description: "This topic describes how to use the Go To Definition feature when debugging the AL code in Dynamics 365 Business Central." 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,5 +35,4 @@ To use the Go To Definition on local server, it requires that the AL symbols are
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [Debugging in AL](devenv-debugging.md)  
-
-
+[AL Code Actions](devenv-code-actions.md)  

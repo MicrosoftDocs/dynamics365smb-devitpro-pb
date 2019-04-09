@@ -1,7 +1,7 @@
 ---
 title: "User Security in Business Central"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,7 +52,7 @@ The following are general articles about SQL Server security that can also help 
 
 [Upgrade to TLS 1.2](https://support.microsoft.com/en-us/help/3135244/tls-1-2-support-for-microsoft-sql-server)
   
-[Transparent Data Encryption](transparent-data-encryption.md)
+[Data Encryption at Rest](transparent-data-encryption.md)
 
 [SQL Server Hardening](https://docs.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-2017)
   

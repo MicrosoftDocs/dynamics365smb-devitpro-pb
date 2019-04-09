@@ -2,7 +2,7 @@
 title: "SaveAsExcel Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,12 @@ author: solsen
 # SaveAsExcel Method
 Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook.
 
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
+
 ## Syntax
 ```
-[Ok := ]  Report.SaveAsExcel(Number: Integer, FileName: String, [var Record: Table])
+[Ok := ]  Report.SaveAsExcel(Number: Integer, FileName: String, [var Record: Record])
 ```
 ## Parameters
 *Number*  
@@ -30,7 +33,7 @@ The ID of the report that you want to run. If the report you specify does not ex
 The path and the name of the file that you want to save the report as. The path must exist, the file must not be used, and the server process must have permission to write to the file. Otherwise, you will get errors.
         
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
 Specifies which record to use in the report. Any filters that have been applied to the record that you specify will be used.  
 
 

@@ -4,7 +4,7 @@ description: Create and display actions in the ribbon of all pages and group the
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/29/2019
+ms.date: 04/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -21,7 +21,11 @@ This topic shows how to create new actions, how to add actions to a page, and ho
 
 Before putting an action on a page you should think about the business processes that the action supports. For example, on page 42, the Sales Orders list page, the Actions button contains actions for all tasks related to processing sales orders. Creating these actions can make it easier for the order processor to perform their daily tasks, such as posting sales orders and creating new customer orders.  
 
-For more information about different types of actions and where to use them, see [Actions Overview](devenv-actions-overview.md).  
+For more information about different types of actions and where to use them, see [Actions Overview](devenv-actions-overview.md).
+
+> [!TIP]
+> After you have added actions to a page, you can use Designer to alter the actions, like moving an action to or from a promoted category, hiding and action or action group, and more. For more information, see [Using Designer](devenv-inclient-designer.md).
+
 
 ## To add Actions to a Page
 

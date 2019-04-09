@@ -2,7 +2,7 @@
 title: "Classifying Data in Dynamics 365"
 ms.author: jswymer
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
-[!INCLUDE[d365fin_dev_blog](includes/d365fin_dev_blog.md)]
+ 
 
 # Classifying Data in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]
 [!INCLUDE[d365fin_md](includes/d365fin_md.md)] includes development features for tagging business data with specific classifications. Specifically, this includes data that is stored in table fields of the database and telemetry data that is emitted from the application.    

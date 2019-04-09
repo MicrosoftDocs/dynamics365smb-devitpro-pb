@@ -2,7 +2,7 @@
 title: "Print Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/21/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ author: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Print Method
 Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.
+
 
 ## Syntax
 ```
@@ -42,9 +43,9 @@ The RecordRef that refers to the table in which you want to find a record.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You typically use this method together with the [RUNREQUESTPAGE Method](../../methods/devenv-runrequestpage-method.md) method. The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the PRINT method to get the parameter string and print the report.  
+ You typically use this method together with the [RUNREQUESTPAGE Method](../../methods-auto/report/report-runrequestpage-method.md). The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the PRINT method to get the parameter string and print the report.  
 
- For a simple example that illustrates how to use the PRINT method, see example in the [RUNREQUESTPAGE Method](../../methods/devenv-runrequestpage-method.md) method topic.  
+ For a simple example that illustrates how to use the PRINT method, see example in the [RUNREQUESTPAGE Method](../../methods-auto/report/report-runrequestpage-method.md) topic.  
 
 ## See Also
 [Report Data Type](report-data-type.md)  

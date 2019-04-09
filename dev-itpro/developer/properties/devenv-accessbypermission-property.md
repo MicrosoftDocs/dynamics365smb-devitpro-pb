@@ -1,7 +1,7 @@
 ---
 title: "AccessByPermission Property"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,6 +29,9 @@ Sets a value for a table field or UI element that determines the permission mask
 
 -   Fields on pages  
 
+    > [!IMPORTANT]  
+    >  If the page field is from a virtual table, this property is ignored. This means that users will see this field on the page in the client even if they do not have the permissions that are required by this property.
+   
 -   Actions on pages  
 
 -   MenuSuite items  

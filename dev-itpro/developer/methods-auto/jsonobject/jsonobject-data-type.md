@@ -2,7 +2,7 @@
 title: "JsonObject Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,8 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # JsonObject Data Type
-Is a container for any well-formed JSON object. A default JsonasdasdaObject contains an empty JSON object.
+Is a container for any well-formed JSON object. A default JsonObject contains an empty JSON object.
+
 
 
 The following methods are available on instances of the JsonObject data type.

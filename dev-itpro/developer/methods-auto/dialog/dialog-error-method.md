@@ -2,7 +2,7 @@
 title: "Error Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/06/2018
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -76,7 +76,7 @@ MESSAGE(Text001); // This line is not executed.
 
  **Finance Account 1230  must not be blocked.**  
 
- The ERROR method causes execution of AL code to stop. The MESSAGE method is never executed.  
+ The ERROR method causes execution of AL code to stop. [MESSAGE Method](../../methods-auto/dialog/dialog-message-method.md) is never executed.  
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  
