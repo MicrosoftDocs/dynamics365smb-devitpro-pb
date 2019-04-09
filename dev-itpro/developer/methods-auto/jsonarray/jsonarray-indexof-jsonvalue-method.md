@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IndexOf Method
-Searches for the specified value and returns the position of the first occurrence within the entire JsonArray.
+Replaces the value at the given index with a new value.
 
 
 ## Syntax
