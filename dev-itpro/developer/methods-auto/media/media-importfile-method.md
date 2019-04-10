@@ -40,12 +40,10 @@ Specifies text that can be used in the client to describe the media.
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the media content type. MIME type is used by browsers, and is an Internet standard to describe the contents of a file. The MimeType value must be a two-part string that consists of a type and subtype, such as image/jpeg or image/gif. If this parameter is not specified, the function will deduct the MIME type from the file extension. For example the MIME type for a .jpg file is image/jpeg.  
 
-
 ## Return Value
 *ID*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
-
+The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
