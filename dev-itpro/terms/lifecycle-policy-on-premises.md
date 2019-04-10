@@ -44,7 +44,8 @@ The build number for the versions that are not yet available will be updated whe
 
 ## See Also
 
-[Microsoft Lifecycle Policy for Business Central on-premises)](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on)  
+[Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on)  
+[Configuring Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](../technical-support.md)
 [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](../index.md)  
 [Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../upgrade/upgrading-to-business-central.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
