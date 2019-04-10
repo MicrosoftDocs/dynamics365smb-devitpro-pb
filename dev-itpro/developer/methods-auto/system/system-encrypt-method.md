@@ -2,7 +2,7 @@
 title: "Encrypt Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 04/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,13 +26,13 @@ EncryptedString :=   System.Encrypt(PlainTextString: String)
 ## Parameters
 *PlainTextString*  
 &emsp;Type: [String](../string/string-data-type.md)  
-  
+The input string that will be encrypted. The input string cannot exceed a length of 215 plain characters. If the input string includes special characters the length is even more reduced.  
 
 
 ## Return Value
 *EncryptedString*  
 &emsp;Type: [String](../string/string-data-type.md)  
-  
+The output string that is encrypted.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "CodeCoverageLog Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 04/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,8 @@ Starts and stops the logging of code. You can also use this method to retrieve t
 ## Parameters
 *NewIsActive*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+**true** starts code logging;**false** stops code logging.
+        
 *MultiSession*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
@@ -35,7 +36,8 @@ Starts and stops the logging of code. You can also use this method to retrieve t
 ## Return Value
 *IsActive*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+**true** is code logging is active;**false** otherwise.
+        
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

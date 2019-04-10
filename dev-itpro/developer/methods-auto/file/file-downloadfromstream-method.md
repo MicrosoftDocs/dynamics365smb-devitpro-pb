@@ -2,7 +2,7 @@
 title: "DownloadFromStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 04/10/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,8 @@ Sends a file from server computer to the client computer. The client computer is
 ## Parameters
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
-  
+An InStream that you want to use to send the data in a file on Business Central Server to a file on the client computer.
+        
 *DialogTitle*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The title that you want to display in the dialog box for downloading the file. This parameter is not supported by the web client. The title is determined by the end-user's browser.
