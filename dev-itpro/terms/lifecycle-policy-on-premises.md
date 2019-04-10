@@ -23,7 +23,7 @@ Licensed customers must stay current with updates to the [!INCLUDE[prodlong](../
 
 ## On-premises software update policies
 
-The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) software through December 31, 2025, at a minimum, but only if the customer keeps the deployed software current according to this policy.  
+The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) software as indicated on the [Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on) page, but only if the customer keeps the deployed software current according to this policy.  
 
 Critical fixes and non-critical updates are handled in the following way:
 
@@ -45,7 +45,7 @@ The build number for the versions that are not yet available will be updated whe
 ## See Also
 
 [Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on)  
-[Configuring Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](../technical-support.md)
+[Configuring Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](../technical-support.md)  
 [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](../index.md)  
 [Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../upgrade/upgrading-to-business-central.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  

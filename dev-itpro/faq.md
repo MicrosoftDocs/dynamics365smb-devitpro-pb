@@ -23,7 +23,9 @@ This section contains answers to frequently asked questions about developing for
 
 ## How often is [!INCLUDE[prodshort](includes/prodshort.md)] updated?
 
-This product is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). This means continuous service updates and a major update every 6 months. Stay tuned for more information. For information about lifecycle support for [!INCLUDE [prodshort](includes/prodshort.md)] on-premises, see [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md).  
+[!INCLUDE [prodshort](developer/includes/prodshort.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). This means continuous service updates and a major update every 6 months. Stay tuned for more information.  
+
+For information about lifecycle support for [!INCLUDE [prodshort](includes/prodshort.md)] on-premises, see [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md).  
 
 ## How often are production databases backed up?
 
