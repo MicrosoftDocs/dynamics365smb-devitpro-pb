@@ -43,7 +43,12 @@ For more information about BitLocker, see [the overview](https://docs.microsoft.
 
 ## Defense in depth with BitLocker Drive Encryption and Transparent Data Encryption (TDE) combined
 
-Bitlocker encrypts the drive and does so transparently. The effect is that if the drive gets stolen, nobody can use the data. But if someone gained access to the drive via Windows, Network Share etc., he could copy the file and on the new drive the file is not encrypted any more. TDE on the other hand encrypts the database file itself (and also backup). So if either file is copied/stolen, the attacker cannot read it. But if the attacker gains access to the whole drive including SQL Server, he can start SQL Server and read the data from there. So both technologies complement each other, and it is recommended that you use BitLocker together with TDE for defense in depth.
+Bitlocker encrypts the entire drive and is integrated in the OS. The effect is that a user process, like SQL Server, running on the machine can access data on the drive as if it were not encrypted at all. But if the drive gets stolen, nobody can use the data without access to the key.
+
+On the other hand, if someone gained access to the drive via a network a share or other services that share data from the drive, he could copy data (for example, an SQL Server backup file) or a database file unless it is locked from doing so by the running SQL Server process. The copy of this file on the new drive is then not encrypted anymore.
+
+With TDE alone, the database files themselves are encrypted (as well as backup files of the TDE-encrypted databases). Therefore, if either file is copied or stolen via a network, as in the above example, the attacker cannot read it. But if the attacker gains access to the whole drive, including SQL Server, he can start SQL Server and read the data using SQL, because SQL Server is doing the decryption for him. Now if both BitLocker and TDE are used concurrently, both data theft vectors are mitigated.
+Both technologies complement each other, and it is recommended that you use BitLocker together with TDE for defense in depth.
 
 ## Performance impact
 
