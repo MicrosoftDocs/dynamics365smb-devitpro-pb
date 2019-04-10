@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2019
+ms.date: 04/10/2019
 
 ---
 
@@ -31,18 +31,20 @@ Critical fixes and non-critical updates are handled in the following way:
 
 - **Non-critical updates** – Customers must update to the most current Dynamics 365 Business Central to deploy non-critical updates.
 
-|Release                                     |Version           |Build number  |Availability  |Expiration date|Product life|
-|--------------------------------------------|------------------|--------------|--------------|---------------|------------|
-|Dynamics 365 Business Central (on-premises) | October'18 Update|24630 |November 2018 |April 2020   |December 2025|
-|Dynamics 365 Business Central (on-premises) | April '19 Update |       |April 2019  |To be announced\*|December 2025|
+|Release                                     |Version           |Build number  |Availability    |Mainstream support ends|
+|--------------------------------------------|------------------|--------------|----------------|-----------------------|
+|Dynamics 365 Business Central (on-premises) | October'18 Update|24630         |November 1, 2018|\*\*|
+|Dynamics 365 Business Central (on-premises) | April '19 Update |29537         |April 1, 2019   |October 10, 2023|
+|Dynamics 365 Business Central (on-premises) | October'19 Update|              |                |\*|
 
-\* Indicates that the expiration date will be added on this page when the next version is released.
+\* Indicates that the expiration date will be added on this page when the next version is released.  
+\*\* Indicates that the version is considered a service pack with a support end date of April 14, 2020.  
 
 The build number for the versions that are not yet available will be updated when the version is released.
 
 ## See Also
 
-[Microsoft Lifecycle Policy](https://support.microsoft.com/en-us/hub/4095338/microsoft-lifecycle-policy)  
+[Microsoft Lifecycle Policy for Business Central on-premises)](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on)  
 [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](../index.md)  
 [Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../upgrade/upgrading-to-business-central.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
