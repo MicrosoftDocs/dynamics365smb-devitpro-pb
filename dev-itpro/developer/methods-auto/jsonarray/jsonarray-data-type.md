@@ -2,7 +2,7 @@
 title: "JsonArray Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 04/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -81,22 +81,22 @@ The following methods are available on instances of the JsonArray data type.
 |[Add(Time)](jsonarray-add-time-method.md)|Adds a new value at the end of the JsonArray.|
 |[Add(DateTime)](jsonarray-add-datetime-method.md)|Adds a new value at the end of the JsonArray.|
 |[Add(String)](jsonarray-add-string-method.md)|Adds a new value at the end of the JsonArray.|
-|[IndexOf(JsonToken)](jsonarray-indexof-jsontoken-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(JsonArray)](jsonarray-indexof-jsonarray-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(JsonObject)](jsonarray-indexof-jsonobject-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(JsonValue)](jsonarray-indexof-jsonvalue-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Boolean)](jsonarray-indexof-boolean-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Char)](jsonarray-indexof-char-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Byte)](jsonarray-indexof-byte-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Option)](jsonarray-indexof-option-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Integer)](jsonarray-indexof-integer-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(BigInteger)](jsonarray-indexof-biginteger-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Decimal)](jsonarray-indexof-decimal-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Duration)](jsonarray-indexof-duration-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Date)](jsonarray-indexof-date-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(Time)](jsonarray-indexof-time-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(DateTime)](jsonarray-indexof-datetime-method.md)|Replaces the value at the given index with a new value.|
-|[IndexOf(String)](jsonarray-indexof-string-method.md)|Replaces the value at the given index with a new value.|
+|[IndexOf(JsonToken)](jsonarray-indexof-jsontoken-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(JsonArray)](jsonarray-indexof-jsonarray-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(JsonObject)](jsonarray-indexof-jsonobject-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(JsonValue)](jsonarray-indexof-jsonvalue-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(Boolean)](jsonarray-indexof-boolean-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(Char)](jsonarray-indexof-char-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(Byte)](jsonarray-indexof-byte-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(Option)](jsonarray-indexof-option-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(Integer)](jsonarray-indexof-integer-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(BigInteger)](jsonarray-indexof-biginteger-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(Decimal)](jsonarray-indexof-decimal-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(Duration)](jsonarray-indexof-duration-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(Date)](jsonarray-indexof-date-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(Time)](jsonarray-indexof-time-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(DateTime)](jsonarray-indexof-datetime-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(String)](jsonarray-indexof-string-method.md)|Determines the index of a specific value in the JsonArray.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2019
+ms.date: 04/10/2019
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
@@ -23,7 +23,9 @@ This section contains answers to frequently asked questions about developing for
 
 ## How often is [!INCLUDE[prodshort](includes/prodshort.md)] updated?
 
-This product is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). This means continuous service updates and a major update every 6 months. Stay tuned for more information.
+[!INCLUDE [prodshort](developer/includes/prodshort.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). This means continuous service updates and a major update every 6 months. Stay tuned for more information.  
+
+For information about lifecycle support for [!INCLUDE [prodshort](includes/prodshort.md)] on-premises, see [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md).  
 
 ## How often are production databases backed up?
 
@@ -46,5 +48,6 @@ You can use the **Help and Support** page in your customers' tenants to find tec
 ## See Also
 
 [FAQ for Developing in AL](developer/devenv-dev-faq.md)  
+[Features not implemented in on-premises deployments of [!INCLUDE[prodlong](includes/prodlong.md)]](features-not-implemented-on-premises.md)  
+[Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md)  
 [Welcome to [!INCLUDE[prodlong](includes/prodlong.md)]](/dynamics365/business-central/index)  
-[Business Central blog for partners](https://community.dynamics.com/business/b/businesscentraldevitpro)  

@@ -48,57 +48,6 @@ Here are some important notes when creating the Azure SQL Database:
     For information, see [How to: Configure Firewall Settings \(Azure SQL Database\)](https://azure.microsoft.com/en-us/documentation/articles/sql-database-configure-firewall-settings/).
 
 
-<!--
-
-3.  Deploy the existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to an Azure SQL database.  
-
-    In SQL Server Manager, use the **Deploy Database to SQL Azure** Wizard to deploy the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database from an instance of the Database Engine to the Azure SQL Database server you created in the previous step. The wizard deploys the database by first exporting the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database as a . bacpac file and then importing .bacbac file to the specified Azure SQL Database.  
-
-    1.  Specify the server name as *SQLDatabaseServerName.database.windows.net*, where SQLDatabaseServerName is the name of Azure SQL Database server.  
-
-    2.  Set the authentication to **SQL Server Authentication**, and provide the login name and password \(from step 2\) for accessing the Azure SQL Database server.  
-
-    3.  Set the maximum database size to at least 10 GB.  
-
-    4.  Make a note of the database name because you will need it later.  
-
-     When completed successfully, you can connect to the database in Azure SQL from the SQL Server Manager or from the Azure Management Portal.  
- 
-
-4.  Create and configure an Azure Virtual Machine for [!INCLUDE[server](../developer/includes/server.md)].  
-
-     In the Azure Management Portal, create a virtual machine on which you will later install the [!INCLUDE[server](../developer/includes/server.md)].  
-
-    1.  Choose an image for an operating system that is supported by the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Business Central Server Requirements](system-Requirement-business-central.md#NavServerReqs).  
-
-    2.  Make a note of the Cloud Service DNS Name and the user name and password that you specified because you will need this later.  
-
-         The user name and password will be used for logging on the Azure SQL database.  
-
-    3.  Set up endpoints for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client services, Remote Desktop PowerShell.  
-
-         You must set up an endpoint for the TCP port that clients will use to communicate with the . The default is port in the  configuration is 7046.  
-
-         Remote Desktop and PowerShell ports are set up automatically.[!INCLUDE[server](../developer/includes/server.md)][!INCLUDE[server](../developer/includes/server.md)][!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
-
-     For more information, see [How to create a custom virtual machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-create-custom/)  
-
-5.  Configure the Azure SQL Database Server firewall to allow the [!INCLUDE[server](../developer/includes/server.md)] virtual machine to connect to the database server.  
-
-     In the Azure Management Portal, you must add a rule to the firewall that allows the public virtual IP address of the [!INCLUDE[server](../developer/includes/server.md)] virtual machine. For more information, see [How to: Configure Firewall Settings \(Azure SQL Database\)](https://azure.microsoft.com/en-us/documentation/articles/sql-database-configure-firewall-settings/).  
-
-    > [!NOTE]  
-    >  You can identify the IP address by viewing the Dashboard of the virtual machine in the Azure Management Portal.  
-
-6.  Install and configure a [!INCLUDE[server](../developer/includes/server.md)] instance on the virtual machine.  
-
-     From the Azure Management Portal, connect to the virtual machine. Run the setup.exe file that is available on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media \(DVD\) to install the [!INCLUDE[server](../developer/includes/server.md)].  
-
-    1.  After you install the [!INCLUDE[server](../developer/includes/server.md)], configure SQL Server Authentication on the [!INCLUDE[server](../developer/includes/server.md)] instance. For the database credentials, use the login name and password that you set up in step 2.  
-
-         For more information, see [Configuring SQL Server Authentication](../administration/configure-sql-server-authentication.md). 
-
--->
 ## Prepare the [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  Database
 
 Make sure the database meets these requirements:
@@ -165,7 +114,7 @@ If you want to use a different login account for the database, to the following:
   
      For more information, see [Create a Login](http://msdn.microsoft.com/en-us/library/aa337562.aspx).  
   
-2.  Map the login to a user in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and add the user to the **db\_owner** role of the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+2.  Map the login to a user in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and add the user to the **db\_owner** role of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
   
      For more information, see [Create a Database User](http://msdn.microsoft.com/en-us/library/aa337545.aspx).  
 

@@ -35,14 +35,14 @@ An instance of the [Page](page-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If all records are selected, marks will not be used.  
+If all records are selected, marks will not be used.  
   
- If only the current record is selected on the page, then SetSelectionFilter does the following:  
+If only the current record is selected on the page, then SetSelectionFilter does the following:  
   
 -   Sets the current filter group to 0 on the destination record  
 -   Adds filters on the primary key fields that point to the current record of the page  
   
- If more than one record is selected on the page, then SetSelectionFilter does the following:  
+If more than one record is selected on the page, then SetSelectionFilter does the following:  
   
 -   Copies the current key from the page source table to the destination record  
 -   Copies the current sort order from the table to the destination record  

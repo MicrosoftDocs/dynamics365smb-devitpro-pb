@@ -2,7 +2,7 @@
 title: "GetUrl Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 04/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,8 @@ Specifies the ID of the specified object type that the URL must open.
         
 *Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-  
+Specifies the Record variable that specifies which record to open.
+        
 *UseFilters*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether to include filters that are defined on the object as a text string in the URL.
