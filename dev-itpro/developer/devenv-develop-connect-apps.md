@@ -38,16 +38,21 @@ Now that we have the username and password, we can connect and authenticate. You
 ## Setting up Azure Active Directory (AAD) based authentication
 Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
-1. Follow the instructions in the [Integrating applications with Azure Active Directory](https://docs.microsoft.com/da-dk/azure/active-directory/develop/quickstart-register-app) article. The next steps elaborate on some of the specific settings you must enable.
-2. During the registration of the app, make sure to go to **Settings**, and then under **API ACCESS**, choose **Required permissions**.
-3. Choose **Add**, and then under **Add API Access**, choose **Select an API** and search for the **Dynamics 365** option.  
+1. Follow the instructions in the [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) article. The next steps elaborate on some of the specific settings you must enable.
+2. On the **API permissions** page for your app, click the **Add a permission** button. 
+3. Make sure the **Microsoft APIs** tab is selected. In the *Commonly used Microsoft APIs* section, click on the **Dynamics 365 Business Central** and select **Delegated permissions**.  
+1. Ensure that the right permission is checked: **user_impersonation**. Use the search box if necessary.
+1. Click the **Add permissions** button.
     > [!NOTE]  
     > If **Dynamics 365** does not show up in search, it's because the tenant does not have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] with a user from the directory. 
-4. Choose **Dynamics 365** and select **Delegated permissions**, and then choose the **Done** button.
-5. Again, under **Settings**, now choose **Keys** and enter a **Description** for the new key, and then choose the expiration of the key. 
-6. Choose **Save**, and then copy the generated key from the **Value** field.  
+
+1. From the **Certificates & secrets** page, in the **Client secrets** section, choose **New client secret**:
+    - Type a key description (of instance app secret),
+    - Select a key duration of either In 1 year, In 2 years, or Never Expires.
+    - When you press the Add button, the key value will be displayed, copy, and save the value in a safe location.
+
     > [!NOTE]  
-    > Remember to copy the key, as it will only be visible once.
+    > You'll need this key later to configure the project in Visual Studio. This key value will not be displayed again, nor retrievable by any other means, so record it as soon as it is visible from the Azure portal.
 
 You have now set up the AAD based authentication. Next, you can go exploring the APIs, see the [Exploring the APIs with Postman and AAD authentication](#exploring-the-apis-with-postman-and-aad-authentication) section below.
 

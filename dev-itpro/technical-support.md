@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2019
+ms.date: 04/10/2019
 ---
 
 # Configuring Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]
@@ -62,15 +62,15 @@ You can use the information about which version the tenant is on to help you tro
 
 |Version  |Example      |Description                                 |
 |---------|-------------|--------------------------------------------|
-|Platform \<major>.\<minor>.\<build>.\<revision>|14.0.29374.0  | Specifies the full platform version, which includes client and server components. |
-|Application \<build> (\<country> \<name> \<major>.\<minor>)|29374 (US Dynamics NAV 14.0)| Specifies the build number for the application, including the major version number. |
+|Platform \<major>.\<minor>.\<build>.\<revision>|14.0.29537.0  | Specifies the full platform version, which includes client and server components. |
+|Application \<build> (\<country> \<name> \<major>.\<minor>)|29537 (US Dynamics NAV 14.0)| Specifies the build number for the application, including the major version number. |
 
 However, if you use the online administration center, the version information is rendered differently:
 
 |Version  |Example      |Description                                 |
 |---------|-------------|--------------------------------------------|
 |Platform |14.0 | Specifies the platform version, which includes client and server components. |
-|Application \<major>.\<minor>.\<build>.\<revision>|14.0.29374.0 | Specifies the full version number for the application. |
+|Application \<major>.\<minor>.\<build>.\<revision>|14.0.29537.0 | Specifies the full version number for the application. |
 
 The numbers are updated based on Microsoft's builds. In the default version of [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, platform and application have the same major version number but different build numbers. If you perform a technical upgrade of [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, then platform and application will have different versions. The October'18 update was major update 13, and the April'19 update is major version 14.  
 

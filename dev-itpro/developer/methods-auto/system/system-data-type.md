@@ -2,7 +2,7 @@
 title: "System Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 04/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -88,7 +88,7 @@ The following methods are available on the System data type.
 |[ExportEncryptionKey(String)](system-exportencryptionkey-method.md)|Returns a password protected temporary filepath containing the encryption key. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant and every tenant will have a different key. Keys can be exported to a file which may be necessary in the case of upgrading or migrating a system from one set of hardware to another. The EXPORTENCRYPTIONKEY method allows an administrator to specify a destination file for the key and specify a password protection for the file.|
 |[ImportEncryptionKey(String, String)](system-importencryptionkey-method.md)|Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTENCRYPTIONKEY method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.|
 |[CreateEncryptionKey()](system-createencryptionkey-method.md)|Creates an encryption key for the current tenant.|
-|[DeleteEncryptionKey()](system-deleteencryptionkey-method.md)|Creates an encryption key for the current tenant.|
+|[DeleteEncryptionKey()](system-deleteencryptionkey-method.md)|Deletes an encryption key for the current tenant.|
 |[EncryptionKeyExists()](system-encryptionkeyexists-method.md)|Checks whether an encryption key for the current tenant is present on the server tenant.|
 |[EncryptionEnabled()](system-encryptionenabled-method.md)|Checks if the tenant is configured to allow encryption.|
 |[GetDocumentUrl(Guid)](system-getdocumenturl-method.md)|Gets the URL for the specified temporary media object ID.|
