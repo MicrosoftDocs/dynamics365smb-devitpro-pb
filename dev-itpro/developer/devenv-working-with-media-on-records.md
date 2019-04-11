@@ -95,23 +95,23 @@ The following table provides an overview of the methods that are related to the 
 
 |  Method  |  Description  |
 |------------|--------------|
-|[IMPORTFILE Method (Media)](methods/devenv-IMPORTFILE-Method-media.md)|Adds media from a file to a record. The imported media object is stored in the application database.|
-|[IMPORTSTREAM Method (Media)](methods/devenv-IMPORTSTREAM-Method-media.md)|Adds a media from an InStream object to a record. The imported media object is stored in the application database.|  
-|[HASVALUE Method (Media)](methods/devenv-HASVALUE-Method-media.md)|Detects whether a record has a media object in the **Media** data type field.|
-|[MEDIAID Method (Media)](methods/devenv-MEDIAID-Method-media.md)|Gets the unique identifier (GUID) that is assigned to the media object in the application database.|  
-|[EXPORTFILE Method (Media)](methods/devenv-EXPORTFILE-Method-media.md)|Exports a media object from a record to a file.|  
-|[EXPORTSTREAM Method (Media)](methods/devenv-EXPORTSTREAM-Method-media.md)|Exports a media object from a record to an OutStream object.|  
+|[IMPORTFILE Method (Media)](methods-auto/media/media-importfile-method.md)|Adds media from a file to a record. The imported media object is stored in the application database.|
+|[IMPORTSTREAM Method (Media)](methods-auto/media/media-importstream-text-text-method.md)|Adds a media from an InStream object to a record. The imported media object is stored in the application database.|  
+|[HASVALUE Method (Media)](methods-auto/media/media-hasvalue-method.md)|Detects whether a record has a media object in the **Media** data type field.|
+|[MEDIAID Method (Media)](methods-auto/media/media-mediaid-method.md)|Gets the unique identifier (GUID) that is assigned to the media object in the application database.|  
+|[EXPORTFILE Method (Media)](methods-auto/media/media-exportfile-method.md)|Exports a media object from a record to a file.|  
+|[EXPORTSTREAM Method (Media)](methods-auto/media/media-exportfile-method.md)|Exports a media object from a record to an OutStream object.|  
 
 **MediaSet data type**
 
 |  Method  |  Description |
 |----------|--------------|
-|[EXPORTFILE Method (MediaSet)](methods/devenv-EXPORTFILE-Method-MediaSet.md)|Exports the media objects that included in a media set to individual files.|
-|[IMPORTFILE Method (MediaSet)](methods/devenv-IMPORTFILE-method-mediaset.md)|Adds media from a file to a record, and assigns the imported media object to a media set. The media object is stored in the application database.|  
-|[IMPORTSTREAM Method (MediaSet)](methods/devenv-IMPORTSTREAM-method-mediaset.md)|Adds media from an InStream object to a record. The imported media object is stored in the application database.|  
-|[INSERT Method (MediaSet)](methods/devenv-insert-method-mediaset.md)|Adds a media object that already exists in the database to a MediaSet of a record.|
-|[MEDIAID Method (MediaSet)](methods/devenv-MEDIAID-method-mediaset.md)|Gets the unique identifier (GUID) that is assigned to the media set on a record.|
-|[COUNT Method (MediaSet)](methods/devenv-COUNT-method-mediaset.md)|Gets the total number of media objects that are included in the media set on a record.|  
+|[EXPORTFILE Method (MediaSet)](methods-auto/mediaset/mediaset-exportfile-method.md)|Exports the media objects that included in a media set to individual files.|
+|[IMPORTFILE Method (MediaSet)](methods-auto/mediaset/mediaset-importfile-method.md)|Adds media from a file to a record, and assigns the imported media object to a media set. The media object is stored in the application database.|  
+|[IMPORTSTREAM Method (MediaSet)](methods-auto/mediaset/mediaset-importstream-method.md)|Adds media from an InStream object to a record. The imported media object is stored in the application database.|  
+|[INSERT Method (MediaSet)](methods-auto/mediaset/mediaset-insert-method.md)|Adds a media object that already exists in the database to a MediaSet of a record.|
+|[MEDIAID Method (MediaSet)](methods-auto/mediaset/mediaset-mediaid-method.md)|Gets the unique identifier (GUID) that is assigned to the media set on a record.|
+|[COUNT Method (MediaSet)](methods-auto/mediaset/mediaset-count-method.md)|Gets the total number of media objects that are included in the media set on a record.|  
 
 ## Automatic deletion of unused Media objects 
 When a table record that contains a media object is deleted, the OnDelete trigger gets the media or media set's ID, and uses the ID to look for other references to the media object from the same field index in the same table. If no other references are found, the media object is assumed to be unreferenced and it is deleted. The runtime will not look in all tables in the database to see if a media object is referenced elsewhere, because doing this would decrease performance and result in costly SQL table scans. If media objects are to be shared between tables, they should be shared through a reference table or by sharing the media set field content as described in the next section. 
