@@ -3,12 +3,15 @@ title: "Development of a Localization Solution"
 description: "Comply with regulatory requirements in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 04/11/2019
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
+
+> [!Note]
+> We are not planning to release [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] in more countries before October 2019. In order to provide a first class customer and partner experience we are focusing on optimizing parts of the Business Central service and management tools. This will allow for better scalability which is necessary for the success of further geo expansion. We will begin planning for more countries after the October 2019 release. Please reach out to your local Microsoft contact for more information on what this means for localization in your country.
 
 # Development of a Localization Solution
 
@@ -33,7 +36,7 @@ Good and consistent tooltips and documentation will help users adopt your featur
 An important part of your localization app will be setup data for the production company that will help users get up and running quickly and with minimum effort.
 
 ## Service availability in additional countries
-In [countries](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations), where Microsoft has not delivered a localization, you can apply for access to build a localization on top of the international (W1) version of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] for the specific country, after submission of localization app(s) for validation, is planned with the core Microsoft team as it requires following:
+In [countries](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations), where Microsoft has not delivered a localization, you can apply for access to build a localization on top of the international (W1) version of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] for the specific country, after submission of localization app(s) for validation, is planned with the core Microsoft team as it requires following:
  * A business case and an agreement with local/regional Microsoft contacts to align on business and marketing activities related to making [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country
  * Commercial availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers in CSP pricelist for the country
  * Azure data centre operations capacity/availability and [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] platform translation to language(s) for the country
