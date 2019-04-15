@@ -189,13 +189,13 @@ customers want.*
 How to structure the paragraphs in your description? Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. 
 
 To do so, your description should consist of 6 paragraphs (in the following order):
-- Introduction paragraph (point 3.A)
-- Pain based paragraph (point 3.B)
-- Benefit based paragraph (point 3.C)
-- Benefits in bullet points paragraph (3.D)
-- Closing Call to action paragraph (point 3.E)
-- Supported editions paragraph (point 3.F)
-- Supported countries paragraph (point 3.G)
+- Introduction paragraph (point 2.A)
+- Pain based paragraph (point 2.B)
+- Benefit based paragraph (point 2.C)
+- Benefits in bullet points paragraph (2.D)
+- Closing Call to action paragraph (point 2.E)
+- Supported editions paragraph (point 2.F)
+- Supported countries paragraph (point 2.G)
 
 By including all of these paragraphs you will provide prospects with a compelling offer that explains them WHY they need to start using it.
 
@@ -321,7 +321,7 @@ How to format this paragraph? Format this section as a paragraph
 > [!TIP]  
 > *Example:* *Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.*
 
-## <a name="SupportedEditions"></a>Supported Editions - Premium SKU 
+## <a name="SupportedEditions"></a>Supported Editions Supported Countries Premium SKU 
 | Offer Details                                        | Description                                                                                                                                           | Requirements |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 2.F Offer Description **(Supported editions paragraph)** | Finally, insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
@@ -342,6 +342,7 @@ Format the paragraph
 > [!TIP]  
 > *Example:* *Supported editions:* *This app supports both the Essential and Premium edition of Microsoft Dynamics 365 Business Central.*
 
+## Supported Countries
 | Offer Details                                         | Description                                                                                                               | Requirements |
 |-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------|
 | 2.G Offer Description **(Supported countries paragraph)** | Finally, insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
