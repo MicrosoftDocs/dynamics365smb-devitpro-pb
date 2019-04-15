@@ -102,7 +102,8 @@
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
 <!-- Development-->
-# [Development in AL](developer/devenv-dev-overview.md)
+# Development
+## [Development in AL](developer/devenv-dev-overview.md)
 ## Getting Started
 ### [Getting Started with AL](developer/devenv-get-started.md)
 ### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
@@ -215,19 +216,21 @@
 ### [Business Central App URL](developer/devenv-link-to-universal-app.md)
 ## [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
-## [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+## .NET in AL
+### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 ### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-## AL Reference
+## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
-### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
+### Code Analysis
+#### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
 #### [Using the Code Analysis Tools with the Ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
 #### [AppSourceCop Analyzer Rules](developer/analyzers/appsourcecop.md)
@@ -236,7 +239,7 @@
 #### [UICop Analyzer Rules](developer/analyzers/uicop.md)
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
-#### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
 ### [Table Object](developer/devenv-table-object.md)
 ### [Table Extension Object](developer/devenv-table-ext-object.md)
@@ -459,7 +462,8 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Report and Data Item Triggers](developer/triggers/devenv-report-and-data-item-triggers.md)
 #### [XMLPort Triggers](developer/triggers/devenv-xmlport-triggers.md)
 #### [Query Triggers](developer/triggers/devenv-query-triggers.md)
-## [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
+## Rules and Guidelines
+### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
 ### [Benefits and Guidelines for using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
 ### [Testing your Extension](compliance/apptest-testingyourextension.md)
