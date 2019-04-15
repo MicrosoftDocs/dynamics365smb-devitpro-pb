@@ -133,8 +133,9 @@
 ### [JSON Files](developer/devenv-json-files.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
 ### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
-## [Debugging in AL](developer/devenv-debugging.md)
-## [RAD publishing in AL](developer/devenv-rad-publishing.md)
+## Debugging
+### [Debugging in AL](developer/devenv-debugging.md)
+### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
@@ -328,7 +329,8 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Variant Data Type](developer/datatypes/devenv-variant-data-type.md)
 #### [XMLPort Data Type](developer/datatypes/devenv-xmlport-data-type.md) 
 -->
-### [Methods](developer/methods-auto/library.md)
+### Methods
+#### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
@@ -445,7 +447,8 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [XmlReadOptions Data Type](developer/methods-auto/xmlreadoptions/xmlreadoptions-data-type.md)
 #### [XmlText Data Type](developer/methods-auto/xmltext/xmltext-data-type.md)
 #### [XmlWriteOptions Data Type](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-data-type.md)
-### [Properties](developer/properties/devenv-properties.md)
+### Properties
+#### [Properties Overview](developer/properties/devenv-properties.md)
 #### [Table and Table Extension Properties](developer/properties/devenv-table-properties.md)
 #### [Page and Page Extension Properties](developer/properties/devenv-page-property-overview.md)
 #### [Codeunit Properties](developer/properties/devenv-codeunit-properties.md)  
@@ -455,7 +458,8 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Control Add-In Properties](developer/properties/devenv-control-addin-properties.md)
 #### [View Properties](developer/properties/devenv-view-properties.md)
 #### [Integrating with Dynamics 365 for Sales](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)  
-### [Triggers](developer/triggers/devenv-triggers.md)
+### Triggers 
+### [Triggers Overview](developer/triggers/devenv-triggers.md)
 #### [Table and Field Triggers](developer/triggers/devenv-table-and-field-triggers.md)
 #### [Page and Action Triggers](developer/triggers/devenv-page-and-action-triggers.md)
 #### [Codeunit Triggers](developer/triggers/devenv-codeunit-triggers.md)
