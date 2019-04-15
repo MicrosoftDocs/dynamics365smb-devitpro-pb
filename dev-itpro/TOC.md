@@ -459,7 +459,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [View Properties](developer/properties/devenv-view-properties.md)
 #### [Integrating with Dynamics 365 for Sales](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)  
 ### Triggers 
-### [Triggers Overview](developer/triggers/devenv-triggers.md)
+#### [Triggers Overview](developer/triggers/devenv-triggers.md)
 #### [Table and Field Triggers](developer/triggers/devenv-table-and-field-triggers.md)
 #### [Page and Action Triggers](developer/triggers/devenv-page-and-action-triggers.md)
 #### [Codeunit Triggers](developer/triggers/devenv-codeunit-triggers.md)
