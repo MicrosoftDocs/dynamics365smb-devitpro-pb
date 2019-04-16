@@ -159,7 +159,6 @@
 ### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 ## [Notifications](developer/devenv-notifications-developing.md)
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
-## [Isolated Storage](developer/devenv-isolated-storage.md)
 ## Tables
 ### [Tables Overview](developer/devenv-tables-overview.md)
 ### [Table Object](developer/devenv-table-object.md)
@@ -200,6 +199,7 @@
 #### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
 ### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
+### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## Reports
 ### [Reports Overview](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
@@ -215,7 +215,6 @@
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-universal-app.md)
-## [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
@@ -238,6 +237,7 @@
 #### [CodeCop Analyzer Rules](developer/analyzers/codecop.md)
 #### [PerTenantExtensionCop Analyzer Rules](developer/analyzers/pertenantextensioncop.md)
 #### [UICop Analyzer Rules](developer/analyzers/uicop.md)
+### [Isolated Storage](developer/devenv-isolated-storage.md)
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
