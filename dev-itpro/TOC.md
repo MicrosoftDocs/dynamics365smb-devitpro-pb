@@ -159,7 +159,6 @@
 ### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 ## [Notifications](developer/devenv-notifications-developing.md)
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
-## [Isolated Storage](developer/devenv-isolated-storage.md)
 ## Tables
 ### [Tables Overview](developer/devenv-tables-overview.md)
 ### [Table Object](developer/devenv-table-object.md)
@@ -238,6 +237,7 @@
 #### [CodeCop Analyzer Rules](developer/analyzers/codecop.md)
 #### [PerTenantExtensionCop Analyzer Rules](developer/analyzers/pertenantextensioncop.md)
 #### [UICop Analyzer Rules](developer/analyzers/uicop.md)
+### [Isolated Storage](developer/devenv-isolated-storage.md)
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
