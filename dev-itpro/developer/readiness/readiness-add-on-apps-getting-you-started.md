@@ -105,7 +105,7 @@ It is key that you use the same display name and email throughout your app submi
 
 The Cloud Partner Portal is the place where you first will submit your App for the marketing validation and later submit it for publication.
 
-In order to be set up as a publisher and access the Cloud Partner Portal, you need to email Ryan Weigel at rweigel@microsoft.com, and provide him the following information:
+In order to be set up as a publisher and access the Cloud Partner Portal, you need to email Ryan Weigel at rweigel@microsoft.com , and provide him the following information:
 - Your Publisher display name (which will be displayed on AppSource)
 - The Email account you chose as the primary contact (which is needed when logging into the Cloud Partner Portal)
 - Your MPN ID
