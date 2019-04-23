@@ -8,13 +8,11 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 6e0ff568-9cad-4b0f-bd97-b8ac5690a470
-caps.latest.revision: 26
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
 
-# Tables in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
+# Tables Overview
 Tables are the fundamental objects in any database. They are the objects in which you store and manipulate data. This is true no matter what kind of data you need to manage. When you create a new database, you begin by building the tables. Later, you create pages and reports in order to access and view the data in the tables.  
 
 A table can be visualized as a two-dimensional matrix, consisting of columns and rows. The following illustration shows a table where each row is a record and each column is a field.  
