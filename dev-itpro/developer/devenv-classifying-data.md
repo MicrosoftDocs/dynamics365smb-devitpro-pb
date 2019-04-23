@@ -19,7 +19,7 @@ author: jswymer
 ## About Data Classification
 Classifying data serves different purposes. It can make data easier and more efficient to locate and retrieve, and also help to add another layer of protection and security for handling private and sensitive data. It can supplement your process for making the application compliant with legislative and regulatory requirements for collecting, storing, and using personal information. 
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > You should consider the data classification features offered in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] as the first layer of classification - done by developers ([!INCLUDE[d365fin_md](includes/d365fin_md.md)  and partners) on customizations, add-ons, and extensions. The second layer is to classify the sensitivity of the data itself. For more information, see [Classifying Data Sensitivity](devenv-classifying-data-sensitivity.md). It is also important to consider end-users, and how they handle data they provide and that is made available to them.
 
 ## <a name="DataClassifications"></a>What are the different data classifications?
