@@ -28,8 +28,7 @@ marketing validation.
 
 ## Marketing Checklist for Showcasing Your App
 
-We have created a checklist with guidelines that will help you to create a
-compelling storefront on AppSource. In these guidelines, you will find an
+We have created a checklist with guidelines that will help you to create a compelling storefront on AppSource. In these guidelines, you will find an
 outline of our requirements for marketing validation as well as examples of best
 practices, which you can use as inspiration, while developing the storefront
 details of your offer, your sales landing page and video materials. The
@@ -70,12 +69,11 @@ diligence when developing this content.
 > Use this Key to develop your app page according to the in depth information shared below: SALES & INVENTORY FORECAST
 
 
-To ease your experience with developing the store front details of your listing, we have numerated the core elements, as they appear when you upload it in “Storefront Details” tab at the Cloud Partner Portal.  
+To ease your experience with developing the storefront details of your listing, we have numerated the core elements, as they appear when you upload it in “Storefront Details” tab at the Cloud Partner Portal.  
 
 The image below is an example of what an offering looks like on AppSource, when the storefront details are completed according to best practices. We highly recommend that you review these guidelines.  
 
 ![StoreFront Details](../media/Storefront.png)
-
 
 ## <a name="LanguageBranding"></a>Language & Branding Requirements 
 
@@ -97,8 +95,9 @@ NOTE: If your app caters to a local language that isn’t English, you can impro
 
 
 Make sure to make the right reference throughout your content:
-- Based on the new branding guidelines, the full name, **Microsoft Dynamics 365 Business Central**, must be used in its entirety at first mention on the page, and at all prominent locations such as titles, headings etc.
-- Subsequent mentions can drop "Microsoft" and simply just reference **Dynamics 365 Business Central**. 
+- Based on the ”new” branding guidelines, the full name, "**Microsoft Dynamics 365 Business Central**" must be used in its entirety at first mention on the page, and at all prominent locations such as titles, headings etc. (unless the Microsoft brand is already clearly established)
+- **Dynamics 365 Business Central** on second mention (or first mention if the Microsoft brand is already clearly established)
+- **Business Central** on subsequent mention as long as Microsoft Dynamics 365 has been clearly established on that given page or content. 
 
 Please reference [Microsoft Dynamics 365 branding rules documentation](https://worldready.cloudapp.net/Styleguide/Read?id=2858&topicid=44517 ).
 - Don’t include Microsoft names, logos or trademarks in your offer
@@ -113,7 +112,7 @@ Don’t make any references in any text, screenshots, title bars, Webclient, spo
 Referencing above acronyms, old brand names and old UIs will make your app fail marketing validation promptly.
 
 > [!NOTE]  
-> All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. These are the ONLY options. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, D365 or any other variation that is NOT **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.
+> All content, videos, screenshots etc. must list the product name as **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. Only when the two previous mentioned options are established is it appropriate to use **Business Central** by itself. Don't use acroynms, shorten the name or abbreviate it or use old product names. Always use the most current version of Dynamics 365 Business Central in screenshots, videos etc. Not permitted BC, D365 or any other variation. When in doubt, only use **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**. Limit usage of **Business Central** by itself so that the product branding can be clearly defined and consistent throughout content. 
 
 ## <a name="OfferName"></a>Offer Name 
 
@@ -189,13 +188,13 @@ customers want.*
 How to structure the paragraphs in your description? Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. 
 
 To do so, your description should consist of 6 paragraphs (in the following order):
-- Introduction paragraph (point 3.A)
-- Pain based paragraph (point 3.B)
-- Benefit based paragraph (point 3.C)
-- Benefits in bullet points paragraph (3.D)
-- Closing Call to action paragraph (point 3.E)
-- Supported editions paragraph (point 3.F)
-- Supported countries paragraph (point 3.G)
+- Introduction paragraph (point 2.A)
+- Pain based paragraph (point 2.B)
+- Benefit based paragraph (point 2.C)
+- Benefits in bullet points paragraph (2.D)
+- Closing Call to action paragraph (point 2.E)
+- Supported editions paragraph (point 2.F)
+- Supported countries paragraph (point 2.G)
 
 By including all of these paragraphs you will provide prospects with a compelling offer that explains them WHY they need to start using it.
 
@@ -321,7 +320,7 @@ How to format this paragraph? Format this section as a paragraph
 > [!TIP]  
 > *Example:* *Click Get it now and start aligning your inventory replenishment with your customer demand like a pro. Your customers and sales team will love you for it.*
 
-## <a name="SupportedEditions"></a>Supported Editions - Premium SKU 
+## <a name="SupportedEditions"></a>Supported Editions Supported Countries Premium SKU 
 | Offer Details                                        | Description                                                                                                                                           | Requirements |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 2.F Offer Description **(Supported editions paragraph)** | Finally, insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). | Required     |
@@ -342,6 +341,7 @@ Format the paragraph
 > [!TIP]  
 > *Example:* *Supported editions:* *This app supports both the Essential and Premium edition of Microsoft Dynamics 365 Business Central.*
 
+## Supported Countries
 | Offer Details                                         | Description                                                                                                               | Requirements |
 |-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------|
 | 2.G Offer Description **(Supported countries paragraph)** | Finally, insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
