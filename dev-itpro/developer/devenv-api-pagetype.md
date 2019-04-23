@@ -51,6 +51,6 @@ page 50120 MyCustomerApi
 
 ## See Also  
 [AL Development Environment](devenv-reference-overview.md)  
-[API Query Type](devenv-querytype.md)  
+[API Query Type](devenv-api-querytype.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Developing Extensions](devenv-dev-overview.md)  
