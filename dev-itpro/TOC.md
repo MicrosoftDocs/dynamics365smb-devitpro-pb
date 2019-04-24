@@ -1,19 +1,25 @@
-﻿# [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
+﻿# Developer and IT-Pro Help for Dynamics 365 Business Central
+## [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
 ## [Frequently asked questions](faq.md)
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
-## [Help and Support](help-and-support.md)
+## Help and Support
+### [Resources for Help and Support](help-and-support.md)
 ### [Configuring technical support](technical-support.md)
-### [User assistance model](user-assistance.md)
+### Help system
+#### [User assistance model](user-assistance.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 <!-- deployment-->
-# [Deployment](deployment/deployment.md)
+# Deployment
+## [Deployment Overview](deployment/deployment.md)
+## [Configuring the Help Experience](deployment/configure-help.md)
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
-### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)  
-### [Embed App](deployment/embed-app-overview.md)
-#### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)   
+### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
+### Embedded Apps
+#### [Embed App Overview](deployment/embed-app-overview.md)
+#### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 #### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 #### [Components](deployment/embed-app-components.md)
@@ -29,7 +35,8 @@
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
-### [Deployment Topologies](deployment/deployment-scenarios.md)
+### Deployment Topologies
+#### [Deployment Topologies Overview](deployment/deployment-scenarios.md)
 #### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
 #### [Deploying Single-Computer](deployment/deploy-single-computer-environment.md)
 #### [Deploying on Two-Computers](deployment/deploy-two-computer-environment.md)
@@ -37,7 +44,8 @@
 ### [Installing Using Setup](deployment/install-using-setup.md)
 ### [Provisioning a Service Account](deployment/provision-server-account.md)
 ### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
-### [Business Central Web Server](deployment/web-server-overview.md)
+#### Business Central Web Server
+### [Business Central Web Server Overview](deployment/web-server-overview.md)
 #### [Configuring Web Server Instances](administration/configure-web-server.md)
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
@@ -48,13 +56,14 @@
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating and Altering Databases](cside/cside-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
-## [Configuring the Help Experience](deployment/configure-help.md)
 <!-- end deployment -->
 <!-- administration-->
-# [Administration](administration/administration.md)
+# Administration
+<!--# [Administration](administration/administration.md)-->
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
-### [Administration Center](administration/tenant-admin-center.md)
+### Administration Center
+### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
@@ -63,23 +72,27 @@
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 ## On-Premises
-### [Connect to the Intelligent Cloud](administration/about-intelligent-edge.md)
+### Intelligent Insights
+#### [Connect to the Intelligent Cloud](administration/about-intelligent-edge.md)
 #### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
 #### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
-### [Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)
+### Windows PowerShell Cmdlets
+#### [Windows PowerShell Cmdlets for Business Central](https://docs.microsoft.com/en-us/powershell/business-central/overview)
 #### [Administration Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management)
 #### [Administration Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management)
 #### [Development Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.model.tools)
 #### [Development Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### [Authentication and Credential Types](administration/users-credential-types.md)
 ### [Configuring Business Central Server](administration/configure-server-instance.md)
-### [Configuring Business Central Web Server](administration/configure-web-server.md)
+### Configuring Business Central Web Server
+#### [Configuring Business Central Web Server Instances](administration/configure-web-server.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
-#### [Monitoring Server Events](administration/monitor-server-events.md)
+### Monitoring Server Events
+#### [Monitoring Server Events Overview](administration/monitor-server-events.md)
 ##### [Trace Events List](administration/server-trace-events.md)
 ##### [Admin and Operational Events List](administration/server-events.md)
 ##### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)
@@ -89,7 +102,8 @@
 ##### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
 ##### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
 #### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
-### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
+### SQL Server Performance
+#### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
 #### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
 #### [Data Access](administration/optimize-sql-data-access.md)
 #### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
