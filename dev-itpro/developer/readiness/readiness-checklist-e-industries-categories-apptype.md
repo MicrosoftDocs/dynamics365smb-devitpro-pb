@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
-## <a name="Industries"></a>Industries, Categories, App Type
+
+# <a name="Industries"></a>Industries, Categories, App Type
 
 | Listing details | Description | Requirements |
 |-----------------|--------------|-------------|
@@ -25,5 +26,5 @@ Free (Means your offer is free)
 Trial (Means that your customers can try your offer for a short period of time on AppSource)
 - A *Free Trial* button will appear in the storefront
 
-> [!NOTE] 
->   We recommend that you link to both this button and your offer’s unique app landing page in the “Closing call to action” (cf. point 2.E) of your app description. *Example: Free*
+> [!NOTE]  
+> We recommend that you link to both this button and your offer’s unique app landing page in the “Closing call to action” (cf. point 2.E) of your app description. *Example: Free*

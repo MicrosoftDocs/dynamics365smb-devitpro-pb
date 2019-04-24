@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
-## <a name="SupportedProd"></a>Supported Products, Keywords, Hide Key
+
+# <a name="SupportedProd"></a>Supported Products, Keywords, Hide Key
 
 | Listing details   | Description | Requirements |
 |-------------------|-------------|--------------|
@@ -18,7 +19,7 @@ ms.author: v-liober
 | 13. **Hide key**                     | Enter a secret key that you'll use to preview your offer in AppSource before going live.                                                        | Required     |
 Note, this isn't a password and can only contain alphanumeric characters. *Example:* *SalesInventoryKey*
 
-> [!TIP]
->   *Example:* of the completed app release date-, products your app works with-,
+> [!TIP]  
+> *Example:* of the completed app release date-, products your app works with-,
 search keywords and hide key fields (cf. point 10,11,12 and 13) in the “Listing
 details” section of the Cloud partner portal:

@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
-## <a name="OfferDescription"></a>Offer Description 
+
+# <a name="OfferDescription"></a>Offer Description 
 
 | Offer Details  | Description| Requirements |
 |----------------|------------|--------------|
