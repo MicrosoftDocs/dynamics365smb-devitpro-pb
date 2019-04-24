@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
-## Language and Branding Guidelines
+
+# Language and Branding Guidelines
 
 | General requirements      | Description                 | Requirements |
 |---------------------------|-----------------------------|--------------|

@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
-## <a name="PrivacyLicense"></a>Privacy Policy & Terms of Use
+
+# <a name="PrivacyLicense"></a>Privacy Policy & Terms of Use
 
 | Legal                                | Description | Requirements |
 |--------------------------------------|-------------|--------------|
@@ -20,10 +21,9 @@ ms.author: v-liober
 | | How to upload your terms of use to the Cloud Partner Portal? You can upload your terms of use in two different ways: 1 - provide an URL 2 - enter the terms of use in directly in the designated field (note, you can copy/paste directly from a doc) though you need to apply html tags
 
 > [!TIP]
->   *Example:* of a license agreement that is set up according to our best
->   practices):* [Plumbline Consulting’s license agreement](http://progressussoftware.com/user-agreement/)
+> *Example:* of a license agreement that is set up according to our best practices):* [Plumbline Consulting’s license agreement](http://progressussoftware.com/user-agreement/)
 
-> [!TIP]
->   *Example:* of the completed screenshot fields (cf. point 18 and 19) in the “Legal” section of the Cloud partner portal)
+> [!TIP]  
+> *Example:* of the completed screenshot fields (cf. point 18 and 19) in the “Legal” section of the Cloud partner portal)
 
 ![Storefront Detail - Privacy Policy & License Agreement](../../media/PrivacyLicense.png)

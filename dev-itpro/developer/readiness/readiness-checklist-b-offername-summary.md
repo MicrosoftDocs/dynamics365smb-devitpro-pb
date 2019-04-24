@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
-## <a name="OfferName"></a>Offer Name 
+
+# <a name="OfferName"></a>Offer Name 
 
 | General requirements | Description |Requirements |
 |----------------------|-------------|-------------|
@@ -68,7 +69,7 @@ If you need help formulating a positioning statement, try the value proposition 
 - Consider whether or not is relevant (or valuable) to include your offer name in the summary 
 - Don’t just state the offer name as an attempt to make it more memorable (names rarely give away any clues to the prospect about the value they will receive by starting to use your offer).
 
-> [!Tip]  
+> [!TIP]  
 > *Example:* *Use reliable forecasting to help ensure that you always have the items your
 customers want.*
 
