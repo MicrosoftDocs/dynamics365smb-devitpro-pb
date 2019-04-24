@@ -1,5 +1,5 @@
-﻿# Developer and IT-Pro Help for Dynamics 365 Business Central
-## [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
+﻿# Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central
+## [Get started](index.md)
 ## [Frequently asked questions](faq.md)
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ## Help and Support
@@ -17,18 +17,18 @@
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
 ### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
-### Embedded Apps
+### Embed App
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 #### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 #### [Components](deployment/embed-app-components.md)
 #### [Platform](deployment/embed-app-platform.md)
-#### [Licensing](deployment/embed-app-licensing.md)  
-#### [Customer Sign-up](deployment/embed-app-customer-signup.md)  
-#### [AppSource](deployment/embed-app-appsource.md)  
-#### [Sandbox](deployment/embed-app-sandbox.md)  
-#### [Ecosystem Features](deployment/embed-app-ecosystem.md)  
+#### [Licensing](deployment/embed-app-licensing.md)
+#### [Customer Sign-up](deployment/embed-app-customer-signup.md)
+#### [AppSource](deployment/embed-app-appsource.md)
+#### [Sandbox](deployment/embed-app-sandbox.md)
+#### [Ecosystem Features](deployment/embed-app-ecosystem.md)
 ## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
@@ -532,7 +532,8 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 <!-- end web services -->
 <!-- begin security -->
-# [Security](security/security-and-protection.md)
+# Security
+## [Security and Protection Overview](security/security-and-protection.md)
 ## [Application](security/security-application.md)
 ## [Online](security/security-online.md)
 ## [On-Premises](security/security-onpremises.md)
@@ -547,7 +548,8 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 <!-- end security -->
 <!-- upgrade -->
-# [Upgrade](upgrade/upgrading-to-business-central.md)
+# Upgrade
+## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ## [Online](upgrade/upgrading-to-business-central-online.md)
 ### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -561,7 +563,8 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
 ### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
 #### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
-## [Before You Upgrade](upgrade/Upgrade-Considerations.md)
+## Before You Upgrade
+### [Important Information and Considerations for Before Upgrading](upgrade/Upgrade-Considerations.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
