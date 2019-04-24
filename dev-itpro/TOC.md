@@ -255,7 +255,7 @@
 ### [XMLPort Object](developer/devenv-xmlport-object.md)
 ### [Control Add-In Object](developer/devenv-control-addin-object.md)
 <!--
-Obsolete files. They only include the redirecting URLs to the auto-generated files for methods. 
+Obsolete files. They only include the redirecting URLs to the auto-generated files for methods.
 ### [HTTP, JSON, TextBuilder, and XML API](developer/devenv-restapi-overview.md)
 #### [HttpClient](developer/api/httpclient-class.md)
 #### [HttpContent](developer/api/httpcontent-class.md)
@@ -327,7 +327,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Time Data Type](developer/datatypes/devenv-time-data-type.md)
 #### [TransactionType Data Type](developer/datatypes/devenv-transactiontype-data-type.md)
 #### [Variant Data Type](developer/datatypes/devenv-variant-data-type.md)
-#### [XMLPort Data Type](developer/datatypes/devenv-xmlport-data-type.md) 
+#### [XMLPort Data Type](developer/datatypes/devenv-xmlport-data-type.md)
 -->
 ### Methods
 #### [Methods Overview](developer/methods-auto/library.md)
@@ -343,7 +343,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Byte Data Type](developer/methods-auto/byte/byte-data-type.md)  
 #### [Char Data Type](developer/methods-auto/char/char-data-type.md)
 #### [ClientType Option Type](developer/methods-auto/clienttype/clienttype-option.md)  
-#### [Code Data Type](developer/methods-auto/code/code-data-type.md) 
+#### [Code Data Type](developer/methods-auto/code/code-data-type.md)
 #### [Codeunit Data Type](developer/methods-auto/codeunit/codeunit-data-type.md)    
 #### [CodeunitInstance Data Type](developer/methods-auto/codeunitinstance/codeunitinstance-data-type.md)    
 #### [CompanyProperty Data Type](developer/methods-auto/companyproperty/companyproperty-data-type.md)
@@ -458,7 +458,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Control Add-In Properties](developer/properties/devenv-control-addin-properties.md)
 #### [View Properties](developer/properties/devenv-view-properties.md)
 #### [Integrating with Dynamics 365 for Sales](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)  
-### Triggers 
+### Triggers
 #### [Triggers Overview](developer/triggers/devenv-triggers.md)
 #### [Table and Field Triggers](developer/triggers/devenv-table-and-field-triggers.md)
 #### [Page and Action Triggers](developer/triggers/devenv-page-and-action-triggers.md)
@@ -554,7 +554,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
 ### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
 ### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
-### [Deprecated Features in the Island Version](upgrade/deprecated-features-is.md)
+### [Deprecated Features in the Icelandic Version](upgrade/deprecated-features-is.md)
 ### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
 ### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
 ### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
