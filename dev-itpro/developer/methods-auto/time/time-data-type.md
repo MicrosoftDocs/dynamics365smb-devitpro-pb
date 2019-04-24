@@ -33,6 +33,8 @@ MyTime := 115934T;
 MESSAGE(FORMAT(MyTime));  
 MyTime := 115934.444T;  
 MESSAGE(FORMAT(MyTime));  
+MyTime := 235900T;  
+MESSAGE(FORMAT(MyTime));  
 MyTime := 030000T;  
 MESSAGE(FORMAT(MyTime));  
 ```  
@@ -44,6 +46,8 @@ The following shows what the message windows display on a computer with the regi
 **11:59:34 AM**
   
 **11:59:34.444 AM**
+
+**11:59:00 PM**
   
 **3:00:00 AM**
 

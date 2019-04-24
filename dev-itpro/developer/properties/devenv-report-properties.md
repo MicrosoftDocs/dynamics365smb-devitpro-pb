@@ -19,7 +19,9 @@ This topic lists properties of the report object.
 
 |Property Name|Applies to|
 |-------------|-----------|  
-[AccessByPermission Property](devenv-accessbypermission-property.md)|<ul><li>Report Object</li></ul>|
+|[AccessByPermission Property](devenv-accessbypermission-property.md)|<ul><li>Report Object</li></ul>|
+|[AdditionalSearchTerms Property](devenv-additionalsearchterms-property.md)||<ul><li>Report object</li></ul>|
+|[AdditionalSearchTermsML Property](devenv-additionalsearchtermsml-property.md)||<ul><li>Report object</li></ul>|
 |[ApplicationArea Property](devenv-applicationarea-property.md)|<ul><li>Report Object</li></ul>|
 |[AutoCalcField Property](devenv-autocalcfield-property.md)|<ul><li>Column controls</li></ul>|
 |[AutoFormatExpr Property](devenv-autoformatexpr-property.md)|<ul><li>Column controls</li></ul>|

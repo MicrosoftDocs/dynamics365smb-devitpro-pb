@@ -34,8 +34,9 @@ To ease your journey, from the initial listing to the final publication of your 
 - STEP 3: Develop your app
 - STEP 4: Initiate the validation and publication process
 
-> [!IMPORTANT]  
-> **STEP 1: Create and set up your accounts**
+> [!IMPORTANT]  Please review all of the steps and follow the Marketing and Technical Validation Checklist. 
+
+## STEP 1: Create and set up your accounts
 
 **MPN ID**
 
@@ -104,7 +105,7 @@ It is key that you use the same display name and email throughout your app submi
 
 The Cloud Partner Portal is the place where you first will submit your App for the marketing validation and later submit it for publication.
 
-In order to be set up as a publisher and access the Cloud Partner Portal, you need to email Ryan Weigel at rweigel@microsoft.com, and provide him the following information:
+In order to be set up as a publisher and access the Cloud Partner Portal, you need to email Ryan Weigel at rweigel@microsoft.com , and provide him the following information:
 - Your Publisher display name (which will be displayed on AppSource)
 - The Email account you chose as the primary contact (which is needed when logging into the Cloud Partner Portal)
 - Your MPN ID
@@ -181,7 +182,7 @@ If you DO want to add coworkers, please follow the 5 steps below:
 - The email address(es) of the people you have added to Microsoft Collaborate (No personal email addresses please)
 - The roles you have given then on Collaborate (Participant, Power user)
 
-##STEP 2: List your Add-on app on Microsoft AppSource
+## STEP 2: List your Add-on app on Microsoft AppSource
 
 To list your app, you need to register it on Microsoft AppSource.
 - List your app here: [https://appsource.microsoft.com/en-us/partners/list-an-app](https://appsource.microsoft.com/en-us/partners/list-an-app) 

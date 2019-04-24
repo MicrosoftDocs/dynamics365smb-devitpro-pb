@@ -33,7 +33,18 @@ The new web service action result status code.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+```
+...
+// Set the result code to inform the caller that an item was created.
+actionContext.SetResultCode(WebServiceActionResultCode::Created);
+...
+```
+For a complete code example, see [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md).
+
 ## See Also
 [WebServiceActionContext Data Type](webserviceactioncontext-data-type.md)  
+[Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

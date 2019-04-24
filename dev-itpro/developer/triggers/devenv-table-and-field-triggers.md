@@ -33,7 +33,7 @@ Fields have the following triggers.
 
 |Field trigger|Runs when|  
 |-------------------|-------------------|  
-|[OnValidate (Fields) Trigger](devenv-onvalidate-fields-trigger.md)|Data is entered in a field or when the [VALIDATE (Record)](../methods/devenv-validate-method-record.md) is executed.|  
+|[OnValidate (Fields) Trigger](devenv-onvalidate-fields-trigger.md)|Data is entered in a field or when the [VALIDATE (Record)](../methods-auto/record/record-validate-method.md) is executed.|  
 |[OnLookup (Fields) Trigger](devenv-onlookup-fields-trigger.md)|Lookup is activated.|  
 
 ## See Also  
