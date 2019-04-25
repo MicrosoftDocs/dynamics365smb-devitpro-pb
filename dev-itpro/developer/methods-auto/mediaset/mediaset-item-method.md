@@ -40,7 +40,7 @@ The unique identifier (GUID) of the media object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 # Example  
-For an example of using the ITEM method, see this [example](../../methods-auto/mediaset/mediaset-insert-method.md#InsertMediaExample).
+For an example of using the ITEM method, see this [example](../../methods-auto/mediaset/mediaset-insert-method.md).
 
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  

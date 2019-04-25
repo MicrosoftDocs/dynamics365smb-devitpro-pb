@@ -56,7 +56,7 @@ When a media is imported, it is assigned a unique identifier \(GUID\) and stored
 In addition, the media object is assigned to a MediaSet which also has a specific GUID. This GUID is included in the MediaSet data type field as a reference to the media objects. The MediaSet and its GUID are created with the first media that is imported, and the information is stored in table **2000000183 Tenant Media Set**. All additional media objects for the record are then associated with the same MediaSet GUID.
 
 ## Example  
- This example uses the IMPORTSTREAM method to add images to records in table **27 Item** of the [!INCLUDE[demolonglight_md](../includes/demolonglight_md.md)].
+ This example uses the IMPORTSTREAM method to add images to records in table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)].
 
  To support the example code that follows, you also have to complete these tasks:  
 

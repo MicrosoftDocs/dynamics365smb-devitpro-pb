@@ -58,13 +58,13 @@ The unique ID that is assigned to the MediaSet of the record.If you omit this op
  In addition, the media object is assigned to a MediaSet which also has a specific GUID. This GUID is included in the MediaSet data type field as a reference to the media objects. The MediaSet and its GUID are created with the first media that is imported, and the information is stored in table **2000000183 Tenant Media Set**. All additional media objects for the record are then associated with the same MediaSet GUID.  
 
 ## Example  
-This example uses the IMPORTFILE method to add images to records in table **27 Item** of the [!INCLUDE[demolonglight_md](../includes/demolonglight_md.md)].
+This example uses the IMPORTFILE method to add images to records in table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)].
 
 In support of the example code, you alsmust complete these tasks:  
 
 -   Create two sample image files that you want to use on item no. 1000 in table **27 Item**.
 
-    Save the images as JPEG type, and give them the names 1000-v1.jpg and  1000-v2.jpg. Save the files in the *C:\images* folder on the computer that is running [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] instance.
+    Save the images as JPEG type, and give them the names 1000-v1.jpg and  1000-v2.jpg. Save the files in the *C:\images* folder on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.
 
 -   Verify that table **27 Item** has a field that is called **Picture** and has the data type **MediaSet**.
 

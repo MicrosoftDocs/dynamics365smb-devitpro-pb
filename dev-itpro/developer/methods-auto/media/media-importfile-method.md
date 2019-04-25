@@ -69,7 +69,7 @@ To support the example code that follows, create the following objects:
     This is the field on which you will import the media file.
   - A field group that has the name **Brick** and includes the **No.** and **Image** fields.
 
-      The field group is used to display the image on a page in the brick layout. For more information, see [Define fields for a drop-down control](../../devenv-field-groups.md#DefineFieldsForADrop-DownControl).
+      The field group is used to display the image on a page in the brick layout. For more information, see [Define fields for a drop-down control](../../devenv-field-groups.md).
 - A page that is named **My Items** and has the following characteristics:
 
   -   List type page that uses the **My Items** table as its source.
@@ -82,7 +82,7 @@ To support the example code that follows, create the following objects:
 
 - JPEG image files for one or more items in the **My Items** table.
   -   Give each file a name that corresponds to an item number in the table, such as 1.jpg, 2.jpg, 3.jpg, and so on.
-  -   Save the files in the *C:\images* folder on the computer that is running [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)].
+  -   Save the files in the *C:\images* folder on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].
 
 **Code:**
 
