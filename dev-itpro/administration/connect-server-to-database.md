@@ -20,9 +20,9 @@ This procedure describes how to use the [!INCLUDE[admintool](../developer/includ
 
      For more information, see [Business Central Server Administration Tool](Administration-Tool.md).  
 
-2.  Navigate to the [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] server instance that you want to connect to the converted database, and then choose the **Edit** button.  
+2.  Navigate to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server instance that you want to connect the database to, and then choose the **Edit** button.  
 
-3.  On the **General** FastTab, change the following fields to point at the converted database:  
+3.  On the **Database** section, change the following fields to point at the converted database:  
 
     -   **Database Instance**  
 
@@ -37,14 +37,16 @@ This procedure describes how to use the [!INCLUDE[admintool](../developer/includ
 
 5.  In the left pane, choose the [!INCLUDE[server](../developer/includes/server.md)] computer where the service instance that you modified in the previous step runs.  
 
-     Unless you are administering a remote computer, this is **Microsoft Dynamics NAV \(local\)**.  
+     Unless you are administering a remote computer, this is **Microsoft Dynamics 365 Business Central \(local\)**.  
 
 6.  In the central pane, right-click the service instance that you modified, and then choose **Restart**.  
 
      This stops and restarts the service instance, and the service instance now connects to the converted database.  
 
-7.  To verify that the [!INCLUDE[server](../developer/includes/server.md)] instance accesses the converted database, open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and connect to the modified [!INCLUDE[server](../developer/includes/server.md)] instance.  
-
-## See Also  
+## See Also
+  
 [Upgrading the Data](../upgrade/Upgrading-the-Data.md)  
-[Converting a Database](../upgrade/converting-a-database.md) 
+[Converting a Database](../upgrade/converting-a-database.md)  
+[Configuring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Database](configure-sql-server-authentication.md)  
+[Optimizing SQL Server Performance with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](optimize-sql-server-performance.md)  
+[Configuring [!INCLUDE[server](../developer/includes/server.md)] (Database Settings)](configure-server-instance.md#Database)  
