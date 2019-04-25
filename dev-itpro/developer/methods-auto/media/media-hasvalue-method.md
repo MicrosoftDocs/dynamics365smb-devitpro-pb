@@ -36,27 +36,6 @@ An instance of the [Media](media-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-## Example  
-This example uses the HasValue method to iterate over the **My Items** table to determine whether media objects are available on records in the table.  
-
-The example assumes that **My Items** table exists and contains a **Media** data type field that is named **Image**. For information about importing media, see [ImportFile Method \(Media\)](../../methods-auto/media/media-importfile-method.md).  
-
-The code returns a message if a record does not include a media object. To support the code, you must create the following variable:  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|myItemRec|Record|My Items|  
-
-```  
-if myItemRec.FindFirst() then begin 
-    repeat begin
-        if not myItemRec.Image.HasValue then
-            Error('Item %1 does not have a valid image', myItemRec."No.");          
-    end until myItemRec.Next < 1;  
-end; 
-```  
-
 ## See Also
 [Media Data Type](media-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

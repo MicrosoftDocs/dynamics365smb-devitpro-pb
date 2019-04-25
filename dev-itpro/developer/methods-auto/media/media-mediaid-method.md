@@ -36,34 +36,6 @@ The GUID of the Media object in the database.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-## Remarks  
- When a media is imported on the Media data type field of table record, the media is given a GUID and stored in the system table **2000000184 Tenant Media** of the application database. The GUID is then included in the **Media** data type field as a reference to the media in the database.  
-
-## Example  
-This example uses the MediaId method to get the GUID of the media object that is used on item number **1** in the a the table named **My Items**.  
-
-The example assumes that  the **My Items** table already exists and has a **Media** data type field named **Image**.
-
-This code requires you to create the following variables.  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|myItemRec|Record|My Items|  
-|imageID|GUID||  
-
-This code requires you to create the following text constant.  
-
-|Text constant|ConstValue|  
-|-------------------|---------------|  
-|Text001|Item %1 has a media object with the following ID: %2|  
-
-```  
-myItemRec.Get('1');  
-    mediaGuid := myItemRec.Image.MediaId;  
-    Message(Text000, myItemRec."No.", imageID);  
-```  
-
 ## See Also
 [Media Data Type](media-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
