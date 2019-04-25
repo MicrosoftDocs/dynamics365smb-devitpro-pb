@@ -46,7 +46,7 @@ The number of exported elements.If you omit this optional return value and the o
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The exported media files will be of the same media file type as when they were imported. For more information about the media types, see [Supported Media Types](../devenv-working-with-media-on-records.md).
+ The exported media files will be of the same media file type as when they were imported. For more information about the media types, see [Supported Media Types](../../devenv-working-with-media-on-records.md#SupportedMediaTypes).
 
 The method has the following behavior:  
 

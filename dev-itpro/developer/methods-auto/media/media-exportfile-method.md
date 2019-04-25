@@ -42,7 +42,7 @@ Specifies the full path and name of the file to create for the exported media.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The exported media file will be of the same media type, such as JPEG \(.jpg\) or GIF \(.gif\), as it was when imported.  For more information about the media types, see [Supported Media Types](../../devenv-working-with-media-on-records.md).  
+ The exported media file will be of the same media type, such as JPEG \(.jpg\) or GIF \(.gif\), as it was when imported.  For more information about the media types, see [Supported Media Types](../../devenv-working-with-media-on-records.md#SupportedMediaTypes).  
 
  If a file with the same name as the exported file already exists in the target folder and the current session has write access on the file, the existing file will be automatically replaced by the new file. If the export fails, the existing file will be erased. 
 
