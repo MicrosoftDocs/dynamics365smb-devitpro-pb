@@ -99,6 +99,7 @@ The general procedure for setting up media on records is as follows:
 
 To get an overview of the methods that are related to the Media and MediaSet data types, see [Media Data Type](methods-auto/media/media-data-type.md) and [MediaSet Data Type](methods-auto/mediaset/mediaset-data-type.md).
 
+
 ## Automatic deletion of unused Media objects 
 
 When a table record that contains a media object is deleted, the OnDelete trigger gets the media or media set's ID, and uses the ID to look for other references to the media object from the same field index in the same table. If no other references are found, the media object is assumed to be unreferenced and it is deleted. The runtime will not look in all tables in the database to see if a media object is referenced elsewhere, because doing this would decrease performance and result in costly SQL table scans. If media objects are to be shared between tables, they should be shared through a reference table or by sharing the media set field content as described in the next section. 

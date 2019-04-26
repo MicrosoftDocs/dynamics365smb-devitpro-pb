@@ -39,6 +39,46 @@ Specifies the unique ID that is assigned to the media object that you want to re
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+The REMOVE method disassociates the media object from the MediaSet. It does not delete the media object from the database.
+
+## Example  
+This example uses the REMOVE method and [Item Method \(MediaSet\)](../../methods-auto/mediaset/mediaset-item-method.md) to remove a media object from the MediaSet for record '1000' in the table called TableA. This example assumes the following about TableA:
+
+-   It has a MediaSet data type field called **Images**
+-   It contains the record number '1000'.
+-   Record '1000' has at least 1 media object in the MediaSet.
+
+This code example requires you to create the following variables:  
+
+|Variable name|DataType|Subtype|  
+|-------------------|--------------|-------------|  
+|recA|Record|TableA|
+|mediaId|GUID|(not applicable) |
+
+
+This code example requires you to create the following text constants:  
+
+|Text constant|ENU value|  
+|-------------------|---------------|  
+|Text000|Media %1 was removed from MediaSet %2.|
+|Text001|The media was not removed from MediaSet %1.|
+
+Code:
+```  
+// Retrieves the GUID of the first media object (index number 1) in the MediaSet of record 1000 in TableA
+recA.Get('1000');  
+mediaId := recA.Images.Item(1);
+
+// Removes the media object from the MediaSet of record 1000
+if recA.Images.Remove(mediaId) then begin
+    recA.Modify;    
+    MesageText000, mediaId, recA.Images.MediaId);
+end else begin
+    Message(Text001);
+end;
+```  
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
