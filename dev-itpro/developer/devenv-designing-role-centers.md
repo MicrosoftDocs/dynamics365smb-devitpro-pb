@@ -12,8 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
-
 # Designing Role Centers
 The strength of [!INCLUDE[d365fin_md](includes/d365fin_md.md)] is its role-tailored experience that helps users focus on the work that is important to them. The Role Center is an integral part of the role-tailored experience. And as a developer, role-tailoring should be the foundation for your Role Center design. 
 
