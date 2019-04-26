@@ -202,7 +202,8 @@
 #### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 #### [Promoted Actions](developer/devenv-promoted-actions.md)
 ### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
-### [Designing Role Centers](developer/devenv-designing-role-centers.md)
+### [Role Centers]
+#### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 #### [Headlines](developer/devenv-create-role-center-headline.md)
