@@ -31,7 +31,7 @@ If your app caters to a local language that isn’t English, you can improve the
 
 Below you can see how Deex Korea Co Ltd has set up their apps landing page to accommodate two languages, and everything that this entails. We recommend that you use it as inspiration on how to create a user-friendly landing page. If you click on the pictures you will be re-directed to their two respective landing pages.
 
-Example of Deex Korea Co Ltd.’s user-freindly landing pages that accomodates two language options and is set up in accordance with our best practices:
+Example of Deex Korea Co Ltd.’s user-friendly landing pages that accomodates two language options and is set up in accordance with our best practices:
 
 ## Examples of how other partners have implemented our best practices
 
