@@ -1,7 +1,7 @@
 ---
 title: "ToolTip Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 04/29/2019
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,8 +42,11 @@ In the client, tooltips appear when you point to caption of the control.
 The following example illustrates how you can apply tooltips in an app:  
 
 ```
-Caption = 'Second field';
-ToolTip = 'Shows the name of the entity based on the names in your list of contacts.';
+field("Reward ID";"Reward ID")
+{
+ApplicationArea = All;
+ToolTip = 'Specifies the level of reward that the customer has at this point.';
+}
 ```
 
 ## See Also  
@@ -52,4 +55,5 @@ ToolTip = 'Shows the name of the entity based on the names in your list of conta
 [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  
 [Configuring the Help Experience](../../deployment/configure-help.md)  
 [ToolTipML Property](devenv-tooltipml-property.md)  
+[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../devenv-extension-example.md)  
  <!-- [Multilanguage Development](Multilanguage-Development.md)-->
