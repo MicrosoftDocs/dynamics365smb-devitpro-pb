@@ -11,7 +11,7 @@ ms.author: v-liober
 ---
 ## <a name="SupportedProd"></a>Supported Products, Keywords, Hide Key
 
-| Listing details   | Description | Requirements |
+|Listing details|Description |Requirements |
 |-------------------|-------------|--------------|
 | 11. **Products your app works with** | You do not have to select anything – this field is completed automatically because you are developing an app for Dynamics 365 Business Central. *Example:* *Dynamics 365 Business Central*| Automatic    |
 | 12. **Search keywords**              | Enter a search keyword for your app (max. 3) *Example of 3 keywords:* *Forecasting, Sales, Inventory*                                                                                                | Recommended  |
@@ -20,5 +20,4 @@ Note, this isn't a password and can only contain alphanumeric characters. *Examp
 
 > [!TIP]
 >   *Example:* of the completed app release date-, products your app works with-,
-search keywords and hide key fields (cf. point 10,11,12 and 13) in the “Listing
-details” section of the Cloud partner portal:
+search keywords and hide key fields (cf. point 10,11,12 and 13) in the “Listing details” section of the Cloud partner portal:
