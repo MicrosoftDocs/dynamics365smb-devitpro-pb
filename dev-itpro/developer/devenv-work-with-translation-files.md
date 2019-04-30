@@ -69,9 +69,10 @@ The **ML** versions of properties are **not** included in the .xlf file:
 - [ConstValueML](properties/devenv-constvalueml-property.md)
 - [InstructionalTextML](properties/devenv-instructionaltextml-property.md))
 - [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
-- []()
-- []()
-- 
+- [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)
+- [ReqFilterHeadingML](properties/devenv-reqfilterheadingml-property.dk)
+- [RequestFilterHeadingML](properties/devenv-requestfilterheadingml.dk)
+- [ToolTipML](properties/devenv-tooltipml-property.md)
 
 The [TextConst Data Type](methods-auto/textconst/textconst-data-type.md) is not included in the .xlf file either.
 
