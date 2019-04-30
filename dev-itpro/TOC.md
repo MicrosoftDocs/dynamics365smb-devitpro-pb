@@ -204,6 +204,7 @@
 ### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 ### Role Centers
 #### [Designing Role Centers](developer/devenv-designing-role-centers.md)
+#### [Sample Role Center](developer/devenv-simple-role-center-example.md)
 #### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 #### [Headlines](developer/devenv-create-role-center-headline.md)
