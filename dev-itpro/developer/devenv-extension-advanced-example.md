@@ -1,15 +1,15 @@
 ---
-author: solsen
+author: SusanneWindfeldPedersen
 title: "Building an Advanced Sample Extension"
 description: "Includes code for an advanced example extension."
 ms.custom: na
-ms.date: 04/29/2019
+ms.date: 04/30/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
 # Building an Advanced Sample Extension
@@ -183,6 +183,8 @@ tableextension 50100 "CustomerTable Ext." extends Customer
 ```
 
 ### Customer Rewards page objects
+
+For each page object, you can specify the target Help page that describes the feature that the page object is part of. The `ContextSensitiveHelpPage` property on the apge obbject works together with the link that is specified in the app.json file. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
 #### Customer Rewards Wizard page object
 The following code adds the 50100 **Customer Rewards Wizard** page that enables the user to accept the terms for using the extension as well as activating the extension. The page consists of a welcome step, an activation step, and a finish step. The welcome step has a checkbox for the Terms of Use that must be enabled. The activation step has a text box where the activation code must be entered for validation. A valid activation code for this sample extension is any 14 character alphanumeric code. 
