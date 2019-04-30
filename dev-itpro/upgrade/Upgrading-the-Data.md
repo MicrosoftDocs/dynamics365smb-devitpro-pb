@@ -221,7 +221,7 @@ For more information, see [Connecting a Server Instance to a Database](../admini
 
     The triggers for codeunit **130400 CAL Test Runner** and **130402 CAL Command Line Test Runner** will be updated for you during the data upgrade.
 
-## Task 10: (Upgrade from [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] only) Increase the application version of converted database
+## Task 10: (Upgrade from Dynamics NAV 2018 or Business Central Fall 2018 and later only ) Increase the application version of converted database
 
 You must increase the application version that is assigned to the database.
 
