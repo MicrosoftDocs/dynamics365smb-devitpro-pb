@@ -89,6 +89,12 @@ In this `Hello World` example, we are going over the basic steps required to ret
 5. Scroll down and choose **Use token** button.  
 An Authorization request header is now added containing the Bearer token.
 6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
+   > [!NOTE]  
+    > **For OAuth for testing purposes**, a multi tenant AAD app has been created. Admin concent is needed before the ADD app can be used. Information are as follows:
+    > * Grant Type: Implict 
+    > * Callback URL: https://localhost 
+    > * Auth URL: https://login.windows.net/common/oauth2/authorize?resource=https://api.businesscentral.dynamics.com 
+    > * Client ID: 060af3ac-70c3-4c14-92bb-8a88230f3f38
 
 ## Calling the API
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
