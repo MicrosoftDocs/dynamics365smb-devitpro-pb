@@ -2,7 +2,7 @@
 title: "ImportEncryptionKey Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 04/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,10 +28,10 @@ Points to a password protected file that contains the key on the current server.
 ## Parameters
 *Path*  
 &emsp;Type: [String](../string/string-data-type.md)  
-  
+Specifies the file that contains the encryption key.  
 *Password*  
 &emsp;Type: [String](../string/string-data-type.md)  
-  
+Specifies the password the protects the file.  
 
 
 ## Return Value

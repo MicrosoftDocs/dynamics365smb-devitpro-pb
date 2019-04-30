@@ -1,35 +1,42 @@
-﻿# [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](index.md)
+﻿# Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central
+## [Get started](index.md)
 ## [Frequently asked questions](faq.md)
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
-## [Help and Support](help-and-support.md)
+## Help and Support
+### [Resources for Help and Support](help-and-support.md)
 ### [Configuring technical support](technical-support.md)
-### [User assistance model](user-assistance.md)
+### Help system
+#### [User assistance model](user-assistance.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 <!-- deployment-->
-# [Deployment](deployment/deployment.md)
+# Deployment
+## [Deployment Overview](deployment/deployment.md)
+## [Configuring the Help Experience](deployment/configure-help.md)
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
-### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)  
-### [Embed App](deployment/embed-app-overview.md)
-#### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)   
+### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
+### Embed App
+#### [Embed App Overview](deployment/embed-app-overview.md)
+#### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 #### [Managing in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 #### [Components](deployment/embed-app-components.md)
 #### [Platform](deployment/embed-app-platform.md)
-#### [Licensing](deployment/embed-app-licensing.md)  
-#### [Customer Sign-up](deployment/embed-app-customer-signup.md)  
-#### [AppSource](deployment/embed-app-appsource.md)  
-#### [Sandbox](deployment/embed-app-sandbox.md)  
-#### [Ecosystem Features](deployment/embed-app-ecosystem.md)  
+#### [Licensing](deployment/embed-app-licensing.md)
+#### [Customer Sign-up](deployment/embed-app-customer-signup.md)
+#### [AppSource](deployment/embed-app-appsource.md)
+#### [Sandbox](deployment/embed-app-sandbox.md)
+#### [Ecosystem Features](deployment/embed-app-ecosystem.md)
 ## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
-### [Deployment Topologies](deployment/deployment-scenarios.md)
+### Deployment Topologies
+#### [Deployment Topologies Overview](deployment/deployment-scenarios.md)
 #### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
 #### [Deploying Single-Computer](deployment/deploy-single-computer-environment.md)
 #### [Deploying on Two-Computers](deployment/deploy-two-computer-environment.md)
@@ -37,7 +44,8 @@
 ### [Installing Using Setup](deployment/install-using-setup.md)
 ### [Provisioning a Service Account](deployment/provision-server-account.md)
 ### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
-### [Business Central Web Server](deployment/web-server-overview.md)
+#### Business Central Web Server
+### [Business Central Web Server Overview](deployment/web-server-overview.md)
 #### [Configuring Web Server Instances](administration/configure-web-server.md)
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
@@ -48,13 +56,14 @@
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating and Altering Databases](cside/cside-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
-## [Configuring the Help Experience](deployment/configure-help.md)
 <!-- end deployment -->
 <!-- administration-->
-# [Administration](administration/administration.md)
+# Administration
+<!--# [Administration](administration/administration.md)-->
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
-### [Administration Center](administration/tenant-admin-center.md)
+### Administration Center
+### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
@@ -63,23 +72,27 @@
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 ## On-Premises
-### [Connect to the Intelligent Cloud](administration/about-intelligent-edge.md)
+### Intelligent Insights
+#### [Connect to the Intelligent Cloud](administration/about-intelligent-edge.md)
 #### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
 #### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
-### [Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)
+### Windows PowerShell Cmdlets
+#### [Windows PowerShell Cmdlets for Business Central](https://docs.microsoft.com/en-us/powershell/business-central/overview)
 #### [Administration Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management)
 #### [Administration Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management)
 #### [Development Cmdlets](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.model.tools)
 #### [Development Cmdlets for Extensions](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools)
 ### [Authentication and Credential Types](administration/users-credential-types.md)
 ### [Configuring Business Central Server](administration/configure-server-instance.md)
-### [Configuring Business Central Web Server](administration/configure-web-server.md)
+### Configuring Business Central Web Server
+#### [Configuring Business Central Web Server Instances](administration/configure-web-server.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
-#### [Monitoring Server Events](administration/monitor-server-events.md)
+### Monitoring Server Events
+#### [Monitoring Server Events Overview](administration/monitor-server-events.md)
 ##### [Trace Events List](administration/server-trace-events.md)
 ##### [Admin and Operational Events List](administration/server-events.md)
 ##### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)
@@ -89,7 +102,8 @@
 ##### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
 ##### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
 #### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
-### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
+### SQL Server Performance
+#### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
 #### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
 #### [Data Access](administration/optimize-sql-data-access.md)
 #### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
@@ -102,8 +116,10 @@
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
 <!-- Development-->
-# [Development in AL](developer/devenv-dev-overview.md)
-## [Getting Started with AL](developer/devenv-get-started.md)
+# Development
+## [Development in AL](developer/devenv-dev-overview.md)
+## Getting Started
+### [Getting Started with AL](developer/devenv-get-started.md)
 ### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
 ### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
@@ -116,7 +132,8 @@
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
-### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
+### Ready to Go
+#### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
 #### [The “Ready to Go” Online Learning Catalog](developer/readiness/readiness-learning-catalog.md)
 #### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
@@ -126,11 +143,13 @@
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Creating Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
-## [JSON Files](developer/devenv-json-files.md)
+## Manifest Files
+### [JSON Files](developer/devenv-json-files.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
 ### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
-## [Debugging in AL](developer/devenv-debugging.md)
-## [RAD publishing in AL](developer/devenv-rad-publishing.md)
+## Debugging
+### [Debugging in AL](developer/devenv-debugging.md)
+### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
@@ -145,7 +164,8 @@
 ## Extending the Base Application
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
-## [Events](developer/devenv-events-in-al.md)
+## Events
+### [Events in AL](developer/devenv-events-in-al.md)
 ### [Event Types](developer/devenv-event-types.md)
 ### [Publishing Events](developer/devenv-publishing-events.md)
 ### [Raising Events](developer/devenv-raising-events.md)
@@ -153,8 +173,8 @@
 ### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 ## [Notifications](developer/devenv-notifications-developing.md)
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
-## [Isolated Storage](developer/devenv-isolated-storage.md)
-## [Tables](developer/devenv-tables-overview.md)
+## Tables
+### [Tables Overview](developer/devenv-tables-overview.md)
 ### [Table Object](developer/devenv-table-object.md)
 ### [Table Extension Object](developer/devenv-table-ext-object.md)
 ### [Setting Relationships Between Tables](developer/devenv-set-relationships-between-tables.md)
@@ -164,7 +184,8 @@
 ### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
-## [Pages](developer/devenv-pages-overview.md)
+## Pages
+### [Pages Overview](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
@@ -176,22 +197,28 @@
 #### [Fixed Control](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
 #### [Field Groups](developer/devenv-field-groups.md)
 #### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
-### [Actions](developer/devenv-actions-overview.md)
+### Actions
+#### [Actions in AL](developer/devenv-actions-overview.md)
 #### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 #### [Promoted Actions](developer/devenv-promoted-actions.md)
 ### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
-### [Designing Role Centers](developer/devenv-designing-role-centers.md)
+### Role Centers
+#### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 #### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Adding Pages and Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Designing Pages
-#### [Designing List Pages](developer/devenv-designing-list-pages.md)
+#### List Pages
+##### [Designing List Pages](developer/devenv-designing-list-pages.md)
 ##### [Sample List Page](developer/devenv-simple-list-page-example.md)
-#### [Designing Card Pages](developer/devenv-designing-card-pages.md)
+#### Card Pages
+##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
 ### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
-## [Reports](developer/devenv-reports.md)
+### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
+## Reports
+### [Reports Overview](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
@@ -205,29 +232,32 @@
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-universal-app.md)
-## [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
-## [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+## .NET in AL
+### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 ### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-## [AL Development Environment](developer/devenv-reference-overview.md)
+## AL Programming
+### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
-### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
+### Code Analysis
+#### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
 #### [Using the Code Analysis Tools with the Ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
 #### [AppSourceCop Analyzer Rules](developer/analyzers/appsourcecop.md)
 #### [CodeCop Analyzer Rules](developer/analyzers/codecop.md)
 #### [PerTenantExtensionCop Analyzer Rules](developer/analyzers/pertenantextensioncop.md)
 #### [UICop Analyzer Rules](developer/analyzers/uicop.md)
+### [Isolated Storage](developer/devenv-isolated-storage.md)
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
-#### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
 ### [Table Object](developer/devenv-table-object.md)
 ### [Table Extension Object](developer/devenv-table-ext-object.md)
@@ -242,7 +272,7 @@
 ### [XMLPort Object](developer/devenv-xmlport-object.md)
 ### [Control Add-In Object](developer/devenv-control-addin-object.md)
 <!--
-Obsolete files. They only include the redirecting URLs to the auto-generated files for methods. 
+Obsolete files. They only include the redirecting URLs to the auto-generated files for methods.
 ### [HTTP, JSON, TextBuilder, and XML API](developer/devenv-restapi-overview.md)
 #### [HttpClient](developer/api/httpclient-class.md)
 #### [HttpContent](developer/api/httpcontent-class.md)
@@ -314,9 +344,10 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Time Data Type](developer/datatypes/devenv-time-data-type.md)
 #### [TransactionType Data Type](developer/datatypes/devenv-transactiontype-data-type.md)
 #### [Variant Data Type](developer/datatypes/devenv-variant-data-type.md)
-#### [XMLPort Data Type](developer/datatypes/devenv-xmlport-data-type.md) 
+#### [XMLPort Data Type](developer/datatypes/devenv-xmlport-data-type.md)
 -->
-### [Methods](developer/methods-auto/library.md)
+### Methods
+#### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
@@ -329,7 +360,7 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Byte Data Type](developer/methods-auto/byte/byte-data-type.md)  
 #### [Char Data Type](developer/methods-auto/char/char-data-type.md)
 #### [ClientType Option Type](developer/methods-auto/clienttype/clienttype-option.md)  
-#### [Code Data Type](developer/methods-auto/code/code-data-type.md) 
+#### [Code Data Type](developer/methods-auto/code/code-data-type.md)
 #### [Codeunit Data Type](developer/methods-auto/codeunit/codeunit-data-type.md)    
 #### [CodeunitInstance Data Type](developer/methods-auto/codeunitinstance/codeunitinstance-data-type.md)    
 #### [CompanyProperty Data Type](developer/methods-auto/companyproperty/companyproperty-data-type.md)
@@ -433,7 +464,8 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [XmlReadOptions Data Type](developer/methods-auto/xmlreadoptions/xmlreadoptions-data-type.md)
 #### [XmlText Data Type](developer/methods-auto/xmltext/xmltext-data-type.md)
 #### [XmlWriteOptions Data Type](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-data-type.md)
-### [Properties](developer/properties/devenv-properties.md)
+### Properties
+#### [Properties Overview](developer/properties/devenv-properties.md)
 #### [Table and Table Extension Properties](developer/properties/devenv-table-properties.md)
 #### [Page and Page Extension Properties](developer/properties/devenv-page-property-overview.md)
 #### [Codeunit Properties](developer/properties/devenv-codeunit-properties.md)  
@@ -443,14 +475,16 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Control Add-In Properties](developer/properties/devenv-control-addin-properties.md)
 #### [View Properties](developer/properties/devenv-view-properties.md)
 #### [Integrating with Dynamics 365 for Sales](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)  
-### [Triggers](developer/triggers/devenv-triggers.md)
+### Triggers
+#### [Triggers Overview](developer/triggers/devenv-triggers.md)
 #### [Table and Field Triggers](developer/triggers/devenv-table-and-field-triggers.md)
 #### [Page and Action Triggers](developer/triggers/devenv-page-and-action-triggers.md)
 #### [Codeunit Triggers](developer/triggers/devenv-codeunit-triggers.md)
 #### [Report and Data Item Triggers](developer/triggers/devenv-report-and-data-item-triggers.md)
 #### [XMLPort Triggers](developer/triggers/devenv-xmlport-triggers.md)
 #### [Query Triggers](developer/triggers/devenv-query-triggers.md)
-## [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
+## Rules and Guidelines
+### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
 ### [Benefits and Guidelines for using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
 ### [Testing your Extension](compliance/apptest-testingyourextension.md)
@@ -501,7 +535,8 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 <!-- end web services -->
 <!-- begin security -->
-# [Security](security/security-and-protection.md)
+# Security
+## [Security and Protection Overview](security/security-and-protection.md)
 ## [Application](security/security-application.md)
 ## [Online](security/security-online.md)
 ## [On-Premises](security/security-onpremises.md)
@@ -516,7 +551,8 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 ### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 <!-- end security -->
 <!-- upgrade -->
-# [Upgrade](upgrade/upgrading-to-business-central.md)
+# Upgrade
+## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ## [Online](upgrade/upgrading-to-business-central-online.md)
 ### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -530,14 +566,15 @@ Obsolete files. They only include the redirecting URLs to the auto-generated fil
 #### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
 ### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
 #### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
-## [Before You Upgrade](upgrade/Upgrade-Considerations.md)
+## Before You Upgrade
+### [Important Information and Considerations for Before Upgrading](upgrade/Upgrade-Considerations.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
 ### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
 ### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
 ### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
-### [Deprecated Features in the Island Version](upgrade/deprecated-features-is.md)
+### [Deprecated Features in the Icelandic Version](upgrade/deprecated-features-is.md)
 ### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
 ### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
 ### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)

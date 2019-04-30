@@ -54,11 +54,11 @@ codeunit 10 Stringifier
     procedure ToString(value: Variant) : Text; 
     begin 
         if value.IsInteger then 
-            Exit(IntegerToString(value)); 
+            Exit(IntegerToString(value)) 
         else if value.IsDate then 
-                Exit(DateToString(value)); 
+                Exit(DateToString(value))
         else if value.IsText then 
-                Exit(TextToString(value)); 
+                Exit(TextToString(value))
         else 
             Exit(''); 
     end; 

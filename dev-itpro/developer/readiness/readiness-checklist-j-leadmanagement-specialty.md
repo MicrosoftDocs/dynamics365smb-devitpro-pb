@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
-## Lead Management
+
+# Lead Management
 
 | Lead Management      | Description  | Requirements |
 |----------------------|--------------|--------------|
@@ -23,8 +24,8 @@ Choose which contact options that you want to include
 - Marketo
 - SalesForce
 
-> [!TIP]
->   *Example:* of the completed screenshot fields (cf. point 21) in the “Customer Support” section of the Cloud partner portal:
+> [!TIP]  
+> *Example:* of the completed screenshot fields (cf. point 21) in the “Customer Support” section of the Cloud partner portal:
 
 ## <a name="Localization"></a>Localization Apps
 

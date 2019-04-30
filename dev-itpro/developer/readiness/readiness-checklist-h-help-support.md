@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
-## <a name="Help"></a>Help URL
+
+# <a name="Help"></a>Help URL
 
 | Listing details | Description | Requirements |
 |-----------------|-------------|--------------|
@@ -33,8 +34,8 @@ The help page needs to include online documentation that can be used as help.
 
 - Use the dropdown box to choose which countries your offer supports.
 
-> [!TIP]
->   *Example:* of the completed help link-, supported countries/regions-, supported
+> [!TIP]  
+> *Example:* of the completed help link-, supported countries/regions-, supported
 languages and app version fields (cf. point 6,7,8 and 9) in the “Listing
 details” section of the Cloud partner portal:
 
@@ -60,8 +61,8 @@ The support page needs to include the following contact options and docs:
 How to upload your support page to the Cloud Partner Portal?
 - Enter the URL to your app's support page.
 
-> [!TIP]
->   *Example:* of a support site that is set up according to our best practices:* [Sana Commerce’s support page](https://www.sana-commerce.com/contact/)
+> [!TIP]  
+> *Example:* of a support site that is set up according to our best practices:* [Sana Commerce’s support page](https://www.sana-commerce.com/contact/)
 
 > [!TIP]
 >   *Example:* of the completed screenshot fields (cf. point 20) in the “Customer
