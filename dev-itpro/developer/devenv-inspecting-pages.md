@@ -23,7 +23,7 @@ The [!INCLUDE[webclient](includes/webclient.md)] includes a page inspection feat
 
 ## Working with Page Inspection
 
-To inspect a page, in the top right corner, choose ![Settings icon](media/settings_icon_small.png), then choose **Inspect**. Or, you can use the keyboard shortcut **Ctrl+Alt+F1**.
+You start page inspection from the **Help & Support** page. Choose the question mark in the top right corner, choose **Help & Support**, and then choose **Inspect pages and data**. Or, you can just use the keyboard shortcut **Ctrl+Alt+F1**.
 
 The **Page inspection** pane opens on the side. The following figure illustrates the **Page Inspection** pane on the **Sales Order** page.
 
@@ -91,6 +91,7 @@ Each field is shown with the following information:
 - Data type as specified by the [Data Type property](properties/devenv-data-type-property.md).
 - If the field is a primary key, it is indicated by **PK**. A primary is  specified by the [Key property](properties/devenv-key-property.md).
 - Value of the field.
+- If the field is added by an extension, the name of the extension appears under the value.
 
 #### What field information is not shown
 
