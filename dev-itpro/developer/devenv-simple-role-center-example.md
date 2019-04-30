@@ -18,9 +18,9 @@ The AL code in this article creates a simple Role Center customized for users as
 
 ![Role Center example](media/sample-role-center.png "Role Center example")
 
-For a more detailed explanation of Role Centers, see [Designing Role Centers](devenv-cues-action-tiles.md).
+For a more detailed explanation of Role Centers, see [Designing Role Centers](devenv-designing-role-centers.md).
 
-This example uses the **RoleCenterHeadline** page code [example](devenv-create-role-center-headline.md) to display the headline and the **SalesInvoiceCuePage** page and the following code [example](devenv-designing-role-centers.md) to for the Cue and Action tile.
+This example uses the **RoleCenterHeadline** page code [example](devenv-create-role-center-headline.md) to display the headline and the **SalesInvoiceCuePage** page and the following code [example](devenv-cues-action-tiles.md) for the Cue and Action tile.
 
 ```
 page 50125 MyRoleCenter
