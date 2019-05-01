@@ -396,7 +396,7 @@ This app is relatively straightforward, but we want users of your app to be able
 
 ### Configure context-sensitive links to Help
 
-At an app level, you can specify where the Help for your functionality is published in the app.json file. Then , for each page in your app, you specify which Help file on that website is relevant for that particular page. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
+At an app level, you can specify where the Help for your functionality is published in the app.json file. Then, for each page in your app, you specify which Help file on that website is relevant for that particular page. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
 Open the app.json file, and then change the value of the `contextSensitiveHelpUrl`property to point at the right location on your website. In this example, you publish Help for your app at *https://mysite.com/documentation*.  
 
@@ -439,7 +439,7 @@ You can specify the same relative link for **Reward Card**, **Reward List**, and
 
 ### Add tooltips
 
-Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why the base application includes tooltips for all controls and actions. For more information, see [Help users get unblocked](../user-assistance.md#help-users-get-unblocked).  
+Even the best designed user interface can still be confusing to some. It can be difficult to predict specifically what users will find confusing, and that is why the base application includes tooltips for all controls and actions. For more information, see [Help users get unblocked](../user-assistance.md#help-users-get-unblocked).  
 
 For the purposes of this walkthrough, add the following tooltip to the properties of the **Reward ID** field on all three pages:
 
