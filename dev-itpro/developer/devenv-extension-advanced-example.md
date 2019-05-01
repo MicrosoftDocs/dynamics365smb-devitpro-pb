@@ -184,7 +184,7 @@ tableextension 50100 "CustomerTable Ext." extends Customer
 
 ### Customer Rewards page objects
 
-For each page object, you can specify the target Help page that describes the feature that the page object is part of. The `ContextSensitiveHelpPage` property on the apge obbject works together with the link that is specified in the app.json file. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
+For each page object, you can specify the target Help page that describes the feature that the page object is part of. The `ContextSensitiveHelpPage` property on the page object works together with the link that is specified in the app.json file. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
 #### Customer Rewards Wizard page object
 The following code adds the 50100 **Customer Rewards Wizard** page that enables the user to accept the terms for using the extension as well as activating the extension. The page consists of a welcome step, an activation step, and a finish step. The welcome step has a checkbox for the Terms of Use that must be enabled. The activation step has a text box where the activation code must be entered for validation. A valid activation code for this sample extension is any 14 character alphanumeric code. 
