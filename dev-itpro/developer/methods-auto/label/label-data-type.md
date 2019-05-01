@@ -27,8 +27,8 @@ All of the parameters below are optional and the order is not enforced.
 | Attribute   | Description|
 |-------------|--------------|
 |**Comment**  | It is used for general comments about the label, specifically about the placeholders in that label.|
-|**Locked**   | When Locked is set to **true**, the label should not be translated.|
-|**MaxLength**| It determines how much of the label is used.</br>`Label 'ALLOWED POSTING DATE', Comment='{MaxLength=30}';`<br>|
+|**Locked**   | When Locked is set to **true**, the label should not be translated. Default value is **false**.|
+|**MaxLength**| It determines how much of the label is used.</br>`Label 'ALLOWED POSTING DATE', Comment='{MaxLength=30}';`<br>If no maximum length is specified, the string can be any length.|
 
 ## Syntax example
 

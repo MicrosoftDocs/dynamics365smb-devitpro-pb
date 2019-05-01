@@ -12,8 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
-
 # Designing List Pages
 
 The *List* page type displays records from an underlying table, either as rows and columns or as individual tiles. 

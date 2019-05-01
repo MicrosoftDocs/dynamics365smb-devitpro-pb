@@ -25,6 +25,8 @@ The following properties all apply to the page object, only some of these proper
 |Property Name|Available for Page Extension Object|Applies to|
 |-------------|-----------|---------------------|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)||<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
+|[AdditionalSearchTerms Property](devenv-additionalsearchterms-property.md)||<ul><li>Page object</li></ul>|
+|[AdditionalSearchTermsML Property](devenv-additionalsearchtermsml-property.md)||<ul><li>Page object</li></ul>|
 |[ApplicationArea Property](devenv-applicationarea-property.md)|X|<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
 |[AssistEdit Property](devenv-assistedit-property.md)||<ul><li>Field control</li></ul>|
 |[AutoFormatExpression Property](devenv-autoformatexpression-property.md)||<ul><li>Field control</li></ul>|

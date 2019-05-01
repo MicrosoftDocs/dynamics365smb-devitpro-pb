@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Dutch, NL, Netherlands, local functionality
-ms.date: 04/01/2019
+ms.date: 04/24/2019
 ms.author: bholtorf
 
 ---
@@ -28,6 +28,13 @@ By default, [!INCLUDE[navnow](../developer/includes/navnow_md.md)] does not show
 |Moved, Removed, or Replaced?| Why?|
 |----|----|
 | Moved | The feature to check totals for purchase invoices and credit memos is no longer specific to the Netherlands, so we have made it generally available in the standard product.|
+
+## Standard Sales and Purchase Codes
+If you often need to create sales and purchase lines with similar information, you can set up standard codes representing sales and purchase lines that you can then insert on recurring sales and purchase documents, for example, for recurring replenishment orders.
+
+|Moved, Removed, or Replaced?| Why?|
+|----|----|
+| Removed | The feature has been removed from the Dutch version because it is generally available in the standard product.|
 
 ## See Also
 [Upgrading to [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)]](upgrading-to-business-central.md)  

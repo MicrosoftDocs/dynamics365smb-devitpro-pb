@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
-## <a name="OfferLogo"></a>Marketing Artifacts - Offer Logo
+
+# <a name="OfferLogo"></a>Marketing Artifacts - Offer Logo
 
 | Marketing artifacts                                                | Description                                | Requirements |
 |--------------------------------------------------------------------|--------------------------------------------|--------------|

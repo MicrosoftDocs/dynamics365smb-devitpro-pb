@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files.
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > You can use the .xlf translation files approach only for objects from your extension. For translating the base application you still need to use the .txt files approach. For more information, see the **Translation and Localization apps** section below.
 
 ## Translation and Localization apps
@@ -37,16 +37,14 @@ Now, when you run the build command (Ctrl+Shift+B) in Visual Studio Code, a `\Tr
 > [!IMPORTANT]
 > Make sure to rename the translated file to avoid that the file is overwritten next time the extension is built.
 
-## Syntax
-As stated above, the ML properties (CaptionML, TooltipML etc.), the old report label syntax, and TextConst do not get included in the .xlf file for translation. Make sure to update your code from the old ML syntax to the new label syntax described below. 
-
+## Label syntax
 The label syntax is shown in the example below for the **Caption** property: 
 
 ```
 Caption = 'Developer translation for %1',  Comment = '%1 is extension name', locked = false, MaxLength=999; 
 ```
 > [!NOTE]
-> The `comment`, `locked`, and `maxLength` attributes are optional and the order is not enforced. 
+> The `comment`, `locked`, and `maxLength` attributes are optional and the order is not enforced. For more information, see [Label Data Type](methods-auto/label/label-data-type.md).
 
 Use the same syntax for report labels:  
 
@@ -63,6 +61,21 @@ And the following is the syntax for **Label** data types:
 var
     a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
 ```
+
+
+The **ML** versions of properties are **not** included in the .xlf file:
+
+- [CaptionML](properties/devenv-captionml-property.md)
+- [ConstValueML](properties/devenv-constvalueml-property.md)
+- [InstructionalTextML](properties/devenv-instructionaltextml-property.md))
+- [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
+- [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)
+- [ReqFilterHeadingML](properties/devenv-reqfilterheadingml-property.md)
+- [RequestFilterHeadingML](properties/devenv-requestfilterheadingml-property.md)
+- [ToolTipML](properties/devenv-tooltipml-property.md)
+
+The [TextConst Data Type](methods-auto/textconst/textconst-data-type.md) is not included in the .xlf file either.
+
 
 ## The XLIFF file
 In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. This is illustrated in the example below.

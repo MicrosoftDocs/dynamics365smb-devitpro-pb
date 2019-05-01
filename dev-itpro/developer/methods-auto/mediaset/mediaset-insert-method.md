@@ -39,6 +39,49 @@ Specifies the unique ID that is assigned to the media object that you want to in
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+When media object is inserted in a MediaSet, it is assigned in index number. For more information, see [Indexing of media objects in a media set](../../devenv-working-with-media-on-records.md).
+
+## Example  
+This example uses the Insert method and [Item Method \(MediaSet\)](../../methods-auto/mediaset/mediaset-item-method.md) to take a media object that is already in the database and assigned to a record in a table (TableA), and add it to the MediaSet of a record in another table (TableB). This example assumes the following:
+
+-   TableA and TableB already exist
+-   Each table has a MediaSet data type field called **Images**
+-   Each table contains the record number '1000'.
+-   There is at least 1 media object in the MediaSet of record 1000 in TableA.
+
+This code example requires you to create the following variables:  
+
+|Variable name|DataType|Subtype|  
+|-------------------|--------------|-------------|  
+|recA|Record|TableA|
+|recB|Record|TableB|  
+|mediaId|GUID|(not applicable) |
+
+
+This code example requires you to create the following text constants:  
+
+|Text constant|ENU value|  
+|-------------------|---------------|  
+|Text000|Media %1 was added to MediaSet %2.|
+|Text001|The media was not added to MediaSet %1.|
+
+Code:
+```  
+// Retrieves the GUID of the first media object (index number 1) in the MediaSet of record 1000 in TableA
+recA.Get('1000');  
+MediaId := recA.Images.Item(1);
+
+// Adds media object to the MediaSet of record 1000 in TableB based on the media object GUID
+recB.Get('1000');
+if recB.Images.Insert(mediaId) then begin
+    recB.Modify;    
+    Message(Text000, mediaId, recB.Images.MediaId);
+end else begin
+   Message(Text001);
+end;
+```  
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
