@@ -47,11 +47,11 @@ The following procedure provides an outline of the tasks that are involved in cr
 3.  Decorate the method with the either the [Integration attribute](methods/devenv-integration-attribute.md) or [Business attribute](methods/devenv-business-attribute.md) as follows: 
 
     ```  
-    [Integration(IncludeSender : Boolean, GlobalVarAccess : Boolean)] 
+    [IntegrationEvent(IncludeSender : Boolean, GlobalVarAccess : Boolean)] 
     ```
     or
     ```  
-    [Business(IncludeSender : Boolean)] 
+    [BusinessEvent(IncludeSender : Boolean)] 
     ```  
     > [!TIP]  
     > Use the `teventint` snippet for an integration event or the `teventbus` snippet for a business event to get started.  
@@ -74,7 +74,7 @@ This example creates the codeunit **7000001 MyPublisher** to publish an integrat
 ```
 codeunit 70000001 MyPublishers
 {
-    [Integration(false, false)]
+    [IntegrationEvent(false, false)]
     procedure OnAddressLineChanged(line : Text[100]);
     begin  
     end;
