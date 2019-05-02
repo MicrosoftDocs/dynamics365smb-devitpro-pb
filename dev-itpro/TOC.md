@@ -137,10 +137,9 @@
 #### [The “Ready to Go” Online Learning Catalog](developer/readiness/readiness-learning-catalog.md)
 #### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 ### AppSource Validation
-#### Marketing Validation
-##### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
-##### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
-##### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
+#### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+#### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+#### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 ### Getting Started with AL for On-Premises
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
