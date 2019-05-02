@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# Guideline on creating an effective Sales Landing page for your app
+# Guideline on Creating an Effective Sales Landing Page for Your App
 ## Building a landing page that drives a successful buying transaction
 
 Microsoft will drive qualified traffic to AppSource. Though, once a prospect becomes aware of your app, it will be your job to guide them through to a successful buying transaction. Deliberately mapping and architecting the buying journey is critical to ensure a high level of engagement and conversion. Only presenting your app’s features and functionality, or just providing a free trial, will not ensure prospects will become buyers. For this you need to have a good landing page that is built to help you capture attention, accelerate your customer acquisition process, and drive buying behavior. The recommendations on this page will help you do so.
