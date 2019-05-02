@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# How to make compelling videos
+# How to Make Compelling Videos
 
 Why use video? It is well worth investing time and resources to create marketing videos for your app, it is taken seriously in a business environment.
 
