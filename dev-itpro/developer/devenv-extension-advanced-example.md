@@ -1,15 +1,15 @@
 ---
-author: solsen
+author: SusanneWindfeldPedersen
 title: "Building an Advanced Sample Extension"
 description: "Includes code for an advanced example extension."
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 04/30/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
 # Building an Advanced Sample Extension
@@ -22,19 +22,15 @@ This walkthrough will guide you through all the steps that you must follow to cr
 ## About this walkthrough
 This walkthrough illustrates the following tasks:
 
-- Setting up a sandbox environment.
+- Developing a sample extension that uses codeunits, tables, card pages, list pages, navigate page (Assisted Setup) actions and events, and includes tooltips and links to context-sentsitive Help.  
 
-- Downloading and installing Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
+- Creating extension objects that can be used to modify page and table objects.  
 
-- Developing a sample extension that uses codeunits, tables, card pages, list pages, navigate page (Assisted Setup) actions and events. 
+- Initializing the database during the installation of the extension.  
 
-- Creating extension objects that can be used to modify page and table objects. 
+- Developing a sample test that tests external calls to a service, events, permissions, actions, navigate page (Assisted Setup), and other modified pages.  
 
-- Initializing the database during the installation of the extension. 
-
-- Developing a sample test that tests external calls to a service, events, permissions, actions, navigate page (Assisted Setup), and other modified pages. 
-
-- Running the sample test using the Test Tool.
+- Running the sample test using the Test Tool.  
 
 ## Prerequisites
 To complete this walkthrough, you will need: 
@@ -95,7 +91,7 @@ table 50100 "Reward Level"
 
     trigger OnInsert(); 
     begin 
-         
+
         Validate("Minimum Reward Points"); 
     end; 
 
@@ -185,10 +181,12 @@ tableextension 50100 "CustomerTable Ext." extends Customer
     } 
 } 
 ```
- 
-### Customer Rewards page objects 
 
-#### Customer Rewards Wizard page object 
+### Customer Rewards page objects
+
+For each page object, you can specify the target Help page that describes the feature that the page object is part of. The `ContextSensitiveHelpPage` property on the page object works together with the link that is specified in the app.json file. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
+
+#### Customer Rewards Wizard page object
 The following code adds the 50100 **Customer Rewards Wizard** page that enables the user to accept the terms for using the extension as well as activating the extension. The page consists of a welcome step, an activation step, and a finish step. The welcome step has a checkbox for the Terms of Use that must be enabled. The activation step has a text box where the activation code must be entered for validation. A valid activation code for this sample extension is any 14 character alphanumeric code. 
 
 ```
@@ -197,10 +195,11 @@ page 50100 "Customer Rewards Wizard"
     // Specifies that this page will be a navigate page. 
     PageType = NavigatePage; 
     Caption = 'Customer Rewards assisted setup guide'; 
+    ContextSensitiveHelpPage = 'sales-rewards';
 
-    layout 
-    { 
-        area(content) 
+    layout
+    {
+        area(content)
         { 
             group(MediaStandard) 
             { 
@@ -515,34 +514,38 @@ page 50100 "Customer Rewards Wizard"
 
 ``` 
 
-#### Rewards Level List page object 
-The following code adds the 50101 **Rewards Level List** page that enables the user to view, edit, or add new reward levels and their corresponding minimum required points.  
+#### Rewards Level List page object
+
+The following code adds the 50101 **Rewards Level List** page that enables the user to view, edit, or add new reward levels and their corresponding minimum required points. The code example includes tooltips for controls and a relative link to context-sensitive Help.  
 
 ```
-page 50101 "Rewards Level List" 
+page 50101 "Rewards Level List"
 { 
-    PageType = List; 
-    SourceTable = "Reward Level"; 
-    SourceTableView = sorting ("Minimum Reward Points") order(ascending); 
+    PageType = List;
+    ContextSensitiveHelpPage = 'sales-rewards';
+    SourceTable = "Reward Level";
+    SourceTableView = sorting ("Minimum Reward Points") order(ascending);
 
-    layout 
-    { 
-        area(content) 
-        { 
-            repeater(Group) 
-            { 
-                field(Level; Level) 
-                { 
-                    ApplicationArea = All; 
-                } 
+    layout
+    {
+        area(content)
+        {
+            repeater(Group)
+            {
+                field(Level; Level)
+                {
+                    ApplicationArea = All;
+                    Tooltip = 'Specifies the level of reward that the customer has at this point.';
+                }
 
-                field("Minimum Reward Points"; "Minimum Reward Points") 
-                { 
-                    ApplicationArea = All; 
-                } 
-            } 
-        } 
-    } 
+                field("Minimum Reward Points"; "Minimum Reward Points")
+                {
+                    ApplicationArea = All;
+                    Tooltip = 'Specifies the number of points that customers must have to reach this level.';
+                }
+            }
+        }
+    }
 
     trigger OnOpenPage(); 
     begin 
@@ -574,6 +577,7 @@ pageextension 50100 "Customer Card Ext." extends "Customer Card"
                 ApplicationArea = All; 
                 Caption = 'Reward Level'; 
                 Description = 'Reward level of the customer.'; 
+                ToolTip = 'Specifies the level of reward that the customer has at this point.';
                 Editable = false; 
             } 
 
@@ -582,10 +586,11 @@ pageextension 50100 "Customer Card Ext." extends "Customer Card"
                 ApplicationArea = All; 
                 Caption = 'Reward Points'; 
                 Description = 'Reward points accrued by customer'; 
-                Editable = false; 
-            } 
-        } 
-    } 
+                ToolTip = 'Specifies the total number of points that the customer has at this point.';
+                Editable = false;
+            }
+        }
+    }
 
     trigger OnAfterGetRecord(); 
     var 
@@ -616,7 +621,9 @@ pageextension 50101 "Customer List Ext." extends "Customer List"
                 Image = CustomerRating; 
                 Promoted = true; 
                 PromotedCategory = Process; 
-                PromotedIsBig = true; 
+                PromotedIsBig = true;
+                ToolTip = 'Open the list of reward levels.';
+
 
                 trigger OnAction(); 
                 begin 
@@ -894,5 +901,5 @@ At this point, the Customer Rewards sample extension can be published and instal
 [Developing Extensions](devenv-dev-overview.md)  
 [Getting Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
-[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md) 
-
+[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
+[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
