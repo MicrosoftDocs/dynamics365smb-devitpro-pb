@@ -53,6 +53,9 @@ Make the right references from the get go:
 - Don’t make references to acronyms, old Dynamics 365 brand names/logos or demo old UIs.
 - Don’t include logos or trademarks in your video.
 
+> [!NOTE]
+> Videos can be in any language, must be captioned if not spoken in English.
+
 Structure - Choose the type of videos that you want to include 
 
 You can create 4 different types of marketing videos:
@@ -61,7 +64,7 @@ You can create 4 different types of marketing videos:
 - “Getting Started” videos
 - "Customer Testimony” videos 
 
-See guidelines on how to best structure the 4 above mentioned videos (and why it is crucial to incorporate them) in *”Checklist D”.*
+See guidelines on how to best structure the 4 above mentioned videos (and why it is crucial to incorporate them) in [How to create compelling video](readiness-how-to-make-compelling-videos.md)
 
 > [!TIP]
 >   *Example of a video that is set up according to our best practices:*
@@ -93,6 +96,9 @@ Formatting
 - It is a requirement that all docs are written in English and are formatted as PDF-files.
 - We recommend you to add the link to your app landing page to all your documents.
 
+> [!NOTE]
+> If your description does not include English, it is a requirement that you are providing an English translation as a document. This document must include the description text in English as well as the support information in English (if the support page is not in English). 
+
 Structure
 - Think wisely about what content you include in the learn more section. Don’t sell, educate the prospect:
 - Don’t just include a description of your offer here – the prospect has already read the description in the store front details in AppSource and has shown an interest in your offering by clicking on the learn more item – don’t discourage this interest by repeating something that they already know. 
@@ -121,6 +127,9 @@ Choose the proper image format to use:
 - Can be more effective than screenshots because you can design annotations in them.
 - Screenshots
 - Require super-imposing, which can be clumsy and confusing. Also, screenshots lose readability when reduced in size
+
+> [!NOTE]
+> Screenshots can be provided in any language. 
 
 Structure
 - Upload only .png images with a resolution on 1280 x 720 px.
