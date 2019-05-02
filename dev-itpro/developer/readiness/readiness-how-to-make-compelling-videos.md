@@ -53,7 +53,7 @@ A horizontal generic message that attempts to speak to everyone will likely not 
 - Message: 
     - The question you must answer beyond a doubt is WHY should they invest the time and money to buy your app? What will they get out of it?
     - Why should they spend money on a new system now? Can’t they put it off?
-    - The WHY messaging teaches people something and it is industry specific and results oriented, as well as being memorable. It engages the emotional/limbic brain and leads to meaningful action
+    - The WHY messaging teaches people something and it is industry specific and results oriented, as well as being memorable. It engages the emotional/limbic brain and leads to meaningful action.
 
 ## **Video type 2**: “How & What” video	
 
