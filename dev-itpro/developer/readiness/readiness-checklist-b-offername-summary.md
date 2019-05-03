@@ -17,13 +17,21 @@ ms.author: v-liober
 | 0.C **Offer Name**   | Your offers name on AppSource | Required      |
 
 > [!NOTE]  
-> The offer name must be the same as the name you specified in the app manifest.
+> The offer name must be the same as the name you specified in the app manifest. The offer name must always be in English, no matter what other language you are choosing for your description or documentation. 
 
-**What your offer name will look like on AppSource** (Applicable naming structures) 
+**What your offer name will look like on AppSource** (Applicable naming structure) 
 When creating a name for your offer, you can use the following two naming structures:
-- Name 1: (Your offer name) for Microsoft Dynamics 365 Business Central *Example: Sales & Inventory Forecast for Microsoft Dynamics 365* 
-- Name 2: Your offer name only *Example: Sales & Inventory Forecast* | 
 
+- Name 1: (Your offer name) for Microsoft Dynamics 365 Business Central 
+
+    *Example: Sales & Inventory Forecast for Microsoft Dynamics 365* 
+
+- Name 2: Your offer name only 
+
+    *Example: Sales & Inventory Forecast*  
+
+> [!IMPORTANT]
+> *If you are building a partner localized app (an app for a country where Microsoft has not provided a localization – see list of these [here](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations))*, you MUST provide an offer name with the structure “Feature” for “country / region” (for example “Sales and Inventory Forecast for Estonia”, “Tax Report for Serbia”) 
 
 | General requirements | Description | Requirements | 
 |----------------------|-------------|--------------|
@@ -53,7 +61,7 @@ How to create a good offer name
 
 ![Storefront Detail - Offer Name](../../media/OfferName.png)
 
-## <a name="OfferSummary"></a>Offer Summary
+# <a name="OfferSummary"></a>Offer Summary
 
 | Offer Details  | Description | Requirements |
 |----------------|-------------|--------------|
@@ -62,6 +70,7 @@ How to create a good offer name
 How to create a good summary for your offer? 
 **How to structure your summary?**
 - The summary should be max. 25 words or 100 characters including spaces, or less.
+- The summary can be in any one language (you can choose any language to write your summary in, but do not mix languages) 
 - The summary should summarize the value proposition of your offer in one short and concise sentence.
 - The value proposition is a statement of the unique benefits your product delivers to the customer. 
 
