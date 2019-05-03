@@ -14,15 +14,27 @@ ms.author: v-liober
 
 | General requirements      | Description                 | Requirements |
 |---------------------------|-----------------------------|--------------|
-| 0.A **Language requirements** | Your app must be in English | Required     |
-- English is the de facto language that is used on AppSource to ease the validation process and create a uniform user experience.
-- For you, this means that both the storefront details of your app, and everything that is accessible through it must be in English too. 
-- This includes: your app’s landing page, videos, documentation – such as “Learn more” documents, factsheets, set up instructions, privacy policies, SLAs etc. – as well as help, support- and contact options. 
+| 0.A **Language requirements** | Your app can be in any language – if not in English, a document with English translation is required | Required     |
 
-NOTE: If your app caters to a local language that isn’t English, you can improve the user experience by: 
-- Creating a website that has two landing pages (i.e. two language buttons – cf. one in English and one in the given local language). In so doing your customers can switch to the language they master and thus easily be able to find the right docs and contact info.
-- However, this set up implies that you need to *make two versions of all your docs, support options and landing pages.*  
-- Note, as mentioned above, everything that is accessible through the Cloud Partner Portal needs to be in English. 
+See in the list below what to consider for each storefront detail when it comes to language: 
+
+|Description | Requirements |
+|---------------------------|-----------------------------|
+|Offer name:| Must be English |
+|Summary:| Can be in any one language, not more because of length constraints.|
+|Description:| Can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added.
+|Screenshots:| Can be in any language
+|Videos:|Can be in any language, must be captioned if not spoken in English.
+|Documents:| if description is not in English, a document with description and the support information in English is required. Rest of documents can be in any language.
+|Keywords:| can be provided (no must), in any language
+|Support / Help:| Can be in any language. If not available in English, support contact details must be available in document.
+|Privacy:| If hosted on partner website, can be any language
+|Licensing:| Must be in English if hosted on AppSource, can be in any language if hosted on partner website
+|Supported countries:| Must be in English and using the provided standard html code
+|Supported editions:| Must be in English and using the provided standard html code
+
+> [!NOTE] 
+> If you are targeting an international audience, we still recommend you use English on AppSource and create different landing pages incorporating the needed languages (i.e. two language buttons – cf. one in English and one in the given local language)
 
 | General requirements                                          | Description                                                     | Requirements |
 |---------------------------------------------------------------|-----------------------------------------------------------------|--------------|
