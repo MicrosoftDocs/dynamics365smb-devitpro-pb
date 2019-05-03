@@ -12,8 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
-
 # Designing List Pages
 
 The *List* page type displays records from an underlying table, either as rows and columns or as individual tiles. 
@@ -59,7 +57,7 @@ The following table describes the elements of a typical list page.
 
 |    |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
-|1|List|Displays records of the source table as rows and columns, where each row is a record and the columns are the fields. You define the list by adding a `repeater()` control in the page code, and then add `field()` controls for field that you want to display.|The order of the `field` controls determines the order they appear on the page.   |
+|1|List|Displays records of the source table as rows and columns, where each row is a record and the columns are the fields. You define the list by adding a `repeater()` control within the `area(Content)` control of the page, and then add `field()` controls for each field that you want to display.|The order of the `field` controls determines the order they appear on the page. |
 |2|Tile view|Renders records in a list as tiles (or bricks). Client users can toggle between the list and tile view.<br /><br /> As a developer, to enable a list to be displayed as tiles, you must specify the table fields that you want to include in the tiles. You do this by adding a `fieldgroup(Brick; <Field>)` keyword in the code of the source table.<br /><br /> For more information, see [Field Groups](devenv-field-groups.md).|You can design any list page to display as tiles. The tile view is particularly beneficial for lists with records that include media or images, such a customers, contacts, and items lists. For more information about adding media to records, see [Working With Media on Records](devenv-working-with-media-on-records.md).|
 |3|Action bar|The action bar provides links to other pages, reports, and codeunits. The action bar is defined by an `actions` control in the page code, and individual actions are defined by an `action()` control.<br /><br /> Actions can be displayed on three standard menus in the action bar, **Actions**, **Navigate**, and **Report**, or in promoted categories, which are like custom menus that you define. You can arrange actions on these menus in the root-level or grouped in a sub-menu.<br /><br /> The objects targeted by these links will open in a separate window.<br /><br />For more information, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md).|Organize the action bar to contain the actions that users need to complete a task, such as posting, running a report, and opening another page with related information. Place the most important action at the root-level, and group closely related actions in a sub-menu.|
 |4|Promoted actions|Promoted actions are actions that are defined in the `area()` control like any other action in code, but are configured to display on a higher level in the action bar, in a specific category that you define. You promote actions by setting various `Promoted`-related properties on `action()` controls.<br /><br /> For more information, see [Promoted Actions](devenv-promoted-actions.md). |Promote an action to give it the most prominent placement for users to find it easily. Actions that are promoted appear first in the actions bar. Actions that are not promoted are available to the user by selecting **More options** in the action bar.|
@@ -67,23 +65,28 @@ The following table describes the elements of a typical list page.
 |6|Search|A cross-column, text-based search box at the top of the page that provides users a quick and easy way to reduce the records in a list and display only those records that contain the data that they are interested in seeing. The **Search** appears on all list pages, and requires no additional coding.<br /><br /> For more information, see [Searching, Filtering, and Sorting Data](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-enter-criteria-filters) in the user help for Business Central.||
 |7|Filter pane|The filter pane enables users to apply filters on one or more fields in the list to limit the records that are displayed. Client users can toggle the filter pane on and off as needed. For more information about how to use the filter pane, see [Searching, Filtering, and Sorting Data](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-enter-criteria-filters)|The Filter pane is available on all list pages, with no extra coding required. However, as a developer, you can define sets of special words, called filter tokens, which are kind of like predefined filters. Users can then enter these filter tokens in the filter pane to quickly filter the list to display the desired data. For more information, see [Adding Filter Tokens](devenv-adding-filter-tokens.md).<br /><br /> Also, you can set FlowFilters on the list that enable users to adjust various dimensions that influence calculated fields. The FlowFilters appear in the **Filter totals by** section of the filter pane. For information about adding FlowFilters, see [FlowFilters](devenv-flowfilter-overview.md).|
 
+> [!IMPORTANT]
+> List pages are designed for using a single `repeater()` control within the content area only. If you include more than one repeater or another control like a `group` or `grid`, the page might not behave as expected. If you want to design a page that includes controls in the content area other than a repeater, then try using a `Worksheet` page type instead.
 
 ## [Behavior points](#tab/behavior)
 
 - List pages that are accessed from the Role Center page open embedded within the Role Center framework. The pages are always opened in the read-only mode, regardless of the [Editable](properties/devenv-editable-property.md) property.
 - There are a few system actions that are automatically added to the actions bar, such as **Search**, **See Attached** and **Open in Excel**.
-- Media and image fields only display in tile view.  
+- Media and image fields only display in tile view.
 
 ## [Developer tips](#tab/tips)
 
 From the user’s perspective, the following are qualities of a well-designed list page does the following:
 
--  Displays a single collection of entities or entries that the user needs for their work. 
--  Includes page title that clearly identifies the collection and any specific view that is in effect.
--  Places the most important columns first, and enable a freeze column, so scrolling is not typically necessary. You enable a freeze column by setting the [FreezeColumn](properties/devenv-freezecolumn-property.md) property of the page.
--  The page is accessible from relevant actions on the Role Center page.
--  Includes one or two FactBoxes to give necessary statistics and quick access to related documents.
+- Displays a single collection of entities or entries that the user needs for their work. 
+- Includes page title that clearly identifies the collection and any specific view that is in effect.
+- Places the most important columns first, and enable a freeze column, so scrolling is not typically necessary. You enable a freeze column by setting the [FreezeColumn](properties/devenv-freezecolumn-property.md) property of the page.
+- The page is accessible from relevant actions on the Role Center page.
+- Includes one or two FactBoxes to give necessary statistics and quick access to related documents.
 - The most typical actions for users of the page are promoted.
+
+> [!IMPORTANT]
+> List pages are designed for using a single `repeater()` control within the content area only. If you include more than one repeater or another control like a `group` or `grid`, the page might not behave as expected. If you want to design a page that includes controls in the content area other than a repeater, then try using a `Worksheet` page type instead.
 
 ## [Designing for devices](#tab/targets)
 

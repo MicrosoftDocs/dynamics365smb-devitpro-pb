@@ -125,6 +125,6 @@ page 50111 SampleCustomerList
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
-[Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
+[Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user)  
 [Using Designer](devenv-inclient-designer.md)  

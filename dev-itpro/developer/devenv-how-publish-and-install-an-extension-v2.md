@@ -41,10 +41,10 @@ Synchronizing an extension updates the database schema of the tenant database wi
 
 3.  To synchronize the schema of a tenant database to the extension, run the [Sync-NavApp cmdlet](https://go.microsoft.com/fwlink/?linkid=846311).
 
-    The following example synchronizes the extension **MyExtension** with the tenant: 
+    The following example synchronizes the extension **MyExtension** with version number 1.0.0.0: 
    
     ```
-    Sync-NavApp -ServerInstance YourDynamicsNAVServer -Name ExtensionName -Path “.\MyExtension.app” -Tenant TenantID
+    Sync-NavApp -ServerInstance YourDynamicsNAVServer -Name ExtensionName -Version 1.0.0.0 -Tenant TenantID
     ```
     Replace `TenantID` with the tenant ID of the database. If you do not have a multitenant server instance, use `default` or omit this parameter.
 
