@@ -63,7 +63,7 @@ diligence when developing this content. Follow this marketing validation checkli
 ## Helpful Videos 
 > [!VIDEO - Best Practices for Submitting your App](https://youtu.be/lOL1oRMTq_4)
 
-> [!VIDEO - Common Pitfalls when Submitting your App](youtube.com) coming soon
+> [!VIDEO - Common Pitfalls when Submitting your App](https://youtu.be/WZXGc16HJGU) 
 
 ## Why marketing validation is mandatory
 
