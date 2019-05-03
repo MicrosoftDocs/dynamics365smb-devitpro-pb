@@ -14,11 +14,10 @@ ms.author: v-liober
 
 | Listing details | Description | Requirements |
 |-----------------|-------------|--------------|
-| 6. **Help URL**                    | You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. | Required     |
+| 6. **Help URL**                    | You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, etc.| Required     |
 
 Formatting
-- It is a requirement that the help page is written in English.
-- It is a requirement that all docs at the help page are written in English and are formatted as PDF-files.
+- The Help page can be in any language. We do recommend that your help information is in English and are formatted as PDF-files.
 - There needs to be a clear distinction between the support and the help site. We require two separate pages (i.e. the *link to the support and the help page cannot be the same*).
 
 Structure
@@ -44,7 +43,7 @@ details” section of the Cloud partner portal:
 ## <a name="Support"></a>Support URL
 | Customer support | Description | Requirements |
 |------------------|-------------|--------------|
-| 20. **Support URL**  | Formatting  *It is a requirement that the support page is written in English.* It is a requirement that you provide different (i.e. more than two) contact options on your app landing page. | Required |
+| 20. **Support URL**  | Formatting  Your support page can be in any language. *If not available in English Support contact details must be provided via an attached document.* It is a requirement that you provide different (i.e. more than two) contact options on your app landing page. | Required |
 
 There needs to be a clear distinction between the support and the help site. We require two separate pages (i.e. the *link to the support and the help page cannot be the same*).
 

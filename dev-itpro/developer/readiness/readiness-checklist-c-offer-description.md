@@ -16,6 +16,9 @@ ms.author: v-liober
 |----------------|------------|--------------|
 | 2. **Offer Description** (How to format and structure paragraphs in your offer description) | Make an elaborate and compelling description that outlines the benefits and usage scenarios of your Dynamics 365 Business Central app. | 	Required | 
 
+> [!NOTE] 
+> The description can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added to the document section. 
+
 How to structure the paragraphs in your description? Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. 
 
 To do so, your description should consist of 6 paragraphs (in the following order):
@@ -142,7 +145,7 @@ Choose the type of Call to action that you want to include:
 How to structure the content in this paragraph?
 - We recommend that this paragraph is less than 200 words or 1,200 characters.
 - Insert your chosen call to action(s).
-- Highlight the action that you want users to take by formatting the wanted action in bold as well as linking to your app’s unique landing page (either through hyperlinking the landing page or including a sentence on “Learn more" about us here [www.xxxyyyzzz.com”](http://www.xxxyyyzzz.com/)).
+- Highlight the action that you want users to take by formatting the wanted action in bold as well as linking to your app’s unique landing page (either through hyperlinking the landing page or including a sentence on “Learn more" about us here ["How to Create a Sales Landing Page"](readiness-how-to-create-sales-landing-page.md).
 
 How to format this paragraph? Format this section as a paragraph
 - Use these html tags:
@@ -175,13 +178,6 @@ Format the paragraph
 | Offer Details                                         | Description                                                                                                               | Requirements |
 |-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------|
 | 2.G Offer Description **(Supported countries paragraph)** | Finally, insert a section in the bottom of your description that clearly states which countries your app is available in. | Required     |
-
-Current availability of Dynamics 365 Business Central
-Available in 19 countries: 
-- EMEA (14): AT, BE, CH, DE, DK, ES, FI, FR, IS, IT, NL, NO, SE, UK 
-- NA (2): CA, US 
-- LATAM (1) MX 
-- APAC (2): AU, NZ
 
 Please refer to the list of supported Countries for Microsoft Dynamics 365 Business Central found here https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations 
 
