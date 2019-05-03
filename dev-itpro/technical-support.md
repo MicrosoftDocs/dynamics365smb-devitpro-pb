@@ -1,14 +1,13 @@
 ---
-title: "Technical Support"
+title: "Configuring Technical Support"
 description: Learn about how to support your Business Central customers, online and on-premises.
 author: edupont04
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/10/2019
+ms.date: 05/03/2019
 ---
-
 # Configuring Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]
 
 As a [!INCLUDE[prodshort](developer/includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft.  
@@ -17,7 +16,7 @@ In this section, you can learn about the tools that are available to you to help
 
 ## Configuring the support experience
 
-In your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants, the [Help and Support](/dynamics365/business-central/product-help-support?toc=/dynamics365/business-central/dev-itpro/toc.json) page gives them access to resources that can help unblock them. You can customize the page to include the email address that your customers must use to contact you.
+In your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants, the [Help and Support](/dynamics365/business-central/product-help-and-support?toc=/dynamics365/business-central/dev-itpro/toc.json) page gives them access to resources that can help unblock them. You can customize the page to include the email address that your customers must use to contact you.
 
 <!--Temporary setup-->
 To set up this support email address, run page *9165* in your customer's tenant, and then choose if you want to use the email that you are logged in with, or if you want to specify a different contact email address. To use the email account that you are logged in with, choose the *Use my authentication email* link; otherwise, enter the relevant email address.  
@@ -32,10 +31,10 @@ In on-premises deployments of [!INCLUDE[prodshort](developer/includes/prodshort.
 
 There are two other links in the **Help and Support** page that you can customize:
 
-* Blog
+- Blog
 
     Specifies a link to where your customers can access a blog about their solution  
-* Coming soon
+- Coming soon
 
     Specifies a link to where your customers can access a roadmap for future changes
 
