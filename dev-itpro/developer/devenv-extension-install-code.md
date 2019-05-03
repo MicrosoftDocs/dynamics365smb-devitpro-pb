@@ -81,7 +81,7 @@ codeunit 50100 MyInstallCodeunit
     begin
         // Do work needed the first time this extension is ever installed for this tenant.
         // Some possible usages:
-        // - Service callback/telemetry indicating that extension was install
+        // - Service callback/telemetry indicating that extension was installed
         // - Initial data setup for use
     end;
 
