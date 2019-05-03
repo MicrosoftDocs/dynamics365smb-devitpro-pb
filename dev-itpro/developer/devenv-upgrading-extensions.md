@@ -108,7 +108,7 @@ codeunit 70000001 MyUpgradeCodeunit
                 error('The upgrade is not compatible');
     end;
 
-    trigger OnUpgradePerCompany()
+    trigger OnUpgradePerDatabase()
     begin
         NavApp.RestoreArchiveData(Database::"TableName");      
     end;
