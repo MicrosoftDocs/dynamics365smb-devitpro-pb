@@ -61,7 +61,7 @@ elsewhere. Accordingly, we recommend you put in the time, effort and due
 diligence when developing this content. Follow this marketing validation checklist and get your app passed on the first submission. 
 
 ## Helpful Videos 
-[Video - Best Practices for Submitting your App](https://youtu.be/lOL1oRMTq_4)
+[Video - Best Practices for Submitting your App](https://youtu.be/lOL1oRMTq_4)  
 [Video - Common Pitfalls when Submitting your App](https://youtu.be/WZXGc16HJGU) 
 
 ## Why marketing validation is mandatory
