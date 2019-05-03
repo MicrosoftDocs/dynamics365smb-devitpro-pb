@@ -52,7 +52,7 @@ pageextension 50120 ExtendNavigationArea extends "Order Processor Role Center"
 }
 ```
 
-You can also enable pages and reports to appear in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] search for a quick navigational support. For more information, see [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md).   
+You can also enable pages and reports to appear in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] search for a quick navigational support. For more information, see [Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md).   
 
 ## Adding to the secondary-level navigation 
 The second-level navigation offers a flat list of links to other pages. These should be the most relevant pages needed for a user's business process. We recommend to have only the most important items on this level and to place the others in the top-level navigation instead. 
@@ -140,4 +140,4 @@ addlast(Reporting)
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
-[Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
+[Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md)  
