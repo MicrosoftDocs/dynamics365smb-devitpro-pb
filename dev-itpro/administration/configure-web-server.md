@@ -150,7 +150,6 @@ The following table describes the settings that are available in the navsettings
 |AndroidPrivacy||
 |AndroidSoftwareLicenseTerms||
 |AndroidThirdPartyNotice||
-
 |IosPrivacy||
 |IosSoftwareLicenseTerms||
 |IosThirdPartyNotice||
@@ -158,7 +157,6 @@ The following table describes the settings that are available in the navsettings
 |KeyboardShortcutsLink|Specifies the URL to an article that describes the keyboard shortcuts for the application.<br /><br />Default value: https://go.microsoft.com/fwlink/?linkid=2064754|
 |LegalLink|Specifies the URL to the legal information about application. <br /><br />Default value: http://go.microsoft.com/fwlink/?LinkId=843026|
 |PrivacyLink|Specifies the URL to the privacy information for the application. This link also appears in the sign-in page.<br /><br />Default value: http://go.microsoft.com/fwlink/?LinkId=837448|
-
 -->
 
 ## See Also  
