@@ -12,8 +12,6 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-[!INCLUDE[newdev_dev_preview](includes/newdev_dev_preview.md)]
-
 # Designing Role Centers
 The strength of [!INCLUDE[d365fin_md](includes/d365fin_md.md)] is its role-tailored experience that helps users focus on the work that is important to them. The Role Center is an integral part of the role-tailored experience. And as a developer, role-tailoring should be the foundation for your Role Center design. 
 
@@ -93,6 +91,6 @@ To use or test the new Role Center in the client, you must first associate the R
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
-[Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
+[Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user)  
 [Using Designer](devenv-inclient-designer.md)  

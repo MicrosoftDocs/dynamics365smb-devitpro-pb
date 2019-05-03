@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Users with Azure Active Directory
-Azure Active Directory \(Azure AD\) is a cloud service that provides identity and access capabilities, such as for applications on Microsoft Azure, Microsoft Office 365, and for applications that install on-premises. If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured to use the AccessControlService credential type, you can associate the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user accounts with Azure AD accounts that users use to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], Office 365, and SharePoint.  
+Azure Active Directory \(Azure AD\) is a cloud service that provides identity and access capabilities, such as for applications on Microsoft Azure, Microsoft Office 365, and for applications that install on-premises. If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured to use the AccessControlService credential type, you can associate the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user accounts with Azure AD accounts (or Office 365 account) that users use to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], Office 365, and SharePoint.  
 
  For example, your users access a website, such as a SharePoint site. From there, they have single sign-on access to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] because you have configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure AD.  
 
@@ -21,14 +21,14 @@ Azure Active Directory \(Azure AD\) is a cloud service that provides identity an
  The following sections describe the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] users.
 
 ## Preparation
+
 Azure AD authentication requires the use of service certificates to help secure client connections over a wide area network (WAN). In a production environment, you should obtain a certificate from a certification authority or trusted provider. In a test environment, if you do not have a certificate, then you can create your own self-signed certificate. The implementation of certificates involves installation and configuration of the certificates on the [!INCLUDE[server](../developer/includes/server.md)] server and client computers.
 
 For more information, see [Using Certificates to Secure Connections](../deployment/implement-security-certificates-production-environment.md).
 
-
 ## Task 1: Create an Azure AD Tenant
   
-If you have an Office 365 subscription that is based on a domain such as *solutions.onmicrosoft.com*, you are already using Azure AD because the user accounts are based on Azure AD. Then, if you add the email addresses for those user accounts to the user accounts in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the users experience seamless integration between your SharePoint site and the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
+If you have an Office 365 subscription that is based on a domain such as *solutions.onmicrosoft.com*, you are already using Azure AD because the Office 365 user accounts are based on Azure AD. Then, if you add the email addresses for those user accounts to the user accounts in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the users experience seamless integration between your SharePoint site and the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
 
 If you want to sign up for an Office 365 plan, you can use a plan such as Office 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account which you will use to access the Azure management portal. For example, if your Office 365 site is *Solutions.onmicrosoft.com*, your administrative account can be *admin@solutions.onmicrosoft.com*. For more information, see [Select an Office 365 plan for business](http://go.microsoft.com/fwlink/?LinkId=309050).  
 
@@ -67,11 +67,11 @@ In the overview page for the application, the **URL for Granting Access** field 
 
 You can configure the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [!INCLUDE[admintool](../developer/includes/admintool.md)], modifying the CustomSettings.config file directly, or using the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For more information, see [Configuring Server](../administration/configure-server-instance.md).
 
-1.	Configure the [!INCLUDE[server](../developer/includes/server.md)] instances that must support Azure AD to use `AccessControlService` as the credential type.
+1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instances that must support Azure AD to use `AccessControlService` as the credential type.
 
 	The `AccessControlService` credential type for the [!INCLUDE[server](../developer/includes/server.md)] instance includes support for Azure AD so that you can achieve single sign-on between Office 365 and [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
-2.	Specify the location of the federation metadata. For example, in the [!INCLUDE[admintool](../developer/includes/admintool.md)], on the **Azure Active Directory** tab, set the **WS-Federation Metadata Location** field.
+2. Specify the location of the federation metadata. For example, in the [!INCLUDE[admintool](../developer/includes/admintool.md)], on the **Azure Active Directory** tab, set the **WS-Federation Metadata Location** field.
 
 	The federation metadata is used to establish a trust relationship between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Azure AD. 
 	
@@ -87,7 +87,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 	https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml
 	```  
 
-3.	Specify the WS-federation login endpoint.
+3. Specify the WS-federation login endpoint.
 
 	The WS-federation login endpoint is the URL of the sign-on page that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] redirects to when users sign on from a client. You must specify a URL in the following format:
 
@@ -109,7 +109,6 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
     |`<APP ID URI>`|The ID that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in Azure AD, for example `https://localhost/` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
     |`<APP REPLY URL>`|The reply URL that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Relpy URL** that was configured on the application in Azure AD.<br /><br />`	https://cronusinternationltd.onmicrosoft.com/BC130/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Azure AD authentication service where to send the authentication token. If you do not specify the `wreply` parameter, it will be deducted from the URL in the browser.|
 
-
    > [!IMPORTANT]
    >The query string parameter must be URI-encoded. This means, for example, use "%26" instead of "&".
 
@@ -117,7 +116,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
 	If you are using the [!INCLUDE[admintool](../developer/includes/admintool.md)], select the **Disable Token-Signing Certificate Validation** check box. If you are using the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) or modifying the CustomSettings.config file directly, set `DisableTokenSigningCertificateValidation` to `true`.
 
-5.	To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Azure AD.
+5. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Azure AD.
 
 	In the [!INCLUDE[admintool](../developer/includes/admintool.md)], you do this by setting the **Azure AD App URI** field on the **Azure Active Directory** tab. The App ID URI is typically the same as the *wtrealm* parameter value of the **WS-Federation Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and the **ACSUri** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration.   
 
@@ -143,7 +142,15 @@ For example:
 You configure the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file. <!-- For more information, see [Configuring the Dynamics NAV Windows Client](configuring-the-windows-client.md#afterset).-->
 
 ## Task 6: Associate the Azure AD Accounts with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] User Accounts  
- Each user in your Azure AD tenant that will access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must be set up in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For example, create the users with Windows authentication or with user name/password authentication, depending on your deployment scenario. But you must also specify an authentication email address on the **Office 365 Authentication** FastTab in the **User Card** window. The authentication email address is the email account for that user in your Azure AD tenant. When you combine this with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from the SharePoint site, for example. 
+Each user in your Azure AD tenant that will access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must be set up with an account in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+
+1. In the client, use the **Users** page to create new or modify existing users.
+
+2. On the **User Card** for a specific user, under **Business Central Authentication Password**, assign the user a password.
+
+3. Under **Office 365 Authentication**, specify the authentication email address 
+
+    The authentication email address is the email account for that user in your Azure AD tenant. When you combine this with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].
 
 For more information about how to set up users, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
@@ -151,6 +158,14 @@ For more information about how to set up users, see [Managing Users and Permissi
 >  The single sign-on means that users are still signed in to Azure AD when they sign out from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], unless they close all browser windows. However, if a user selected the **Keep me signed in** field when they signed in, they are still signed in when they close the browser window. To fully sign out from Azure AD, the user must sign out from each application that uses Azure AD, including [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and SharePoint.  
 >   
 >  We recommend that you provide guidance to your users for signing out of their account when they’re done, so that you can keep your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment more secure.  
+
+### Web service accounts
+
+For user accounts that you want to access OData and SOAP web services, you do the same as for a normal user, except you do not have to provide a password. Instead, you specify a web service access key that will be used to sign in.
+
+To specify web service access key, go to **Web Service Access** on the **User Card**, and select the `...` next to the **Web Service Access Key** field to generate a key. Set an expiration date if you like.
+
+The access key that appears in the **Web Service Access Key** is need to access web services. 
 
 ## See Also  
  [Authentication and Credential Types](Users-Credential-Types.md)

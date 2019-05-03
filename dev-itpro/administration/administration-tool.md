@@ -1,4 +1,4 @@
----
+--
 title: "Microsoft Dynamics 365 Business Central Administration Center Tool"
 ms.custom: na
 ms.date: 04/01/2019
