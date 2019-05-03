@@ -1,7 +1,7 @@
 ---
 title: "Web Services Authentication"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 05/03/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,9 +13,9 @@ When users send a request for a web service, they are authenticated according to
 
 ## About NavUserPassword and AccessControlService credential types
   
-If your solution uses NavUserPassword or AccessControlService as the credential type, users can access data through SOAP and OData web services if they specify a password or a web service access key. You set up the user accounts in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. based on how they will access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data. For example, if you set up a user account that will allow an external application to read [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data through a web service, you can generate a web service access key and specify that key for the relevant user accounts. Then, you add the access key to the configuration of the application that consumes the web service. In contrast, when users access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data through a web service in Microsoft Excel, for example, they specify a password instead of a web service access key.  
+If your solution uses NavUserPassword or AccessControlService as the credential type, users can access data through SOAP and OData web services if they specify a password or a web service access key. You set up the user accounts in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client, based on how they will access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data. For example, if you set up a user account that will allow an external application to read [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data through a web service, you can generate a web service access key and specify that key for the relevant user accounts. Then, you add the access key to the configuration of the application that consumes the web service. In contrast, when users access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data through a web service in Microsoft Excel, for example, they specify a password instead of a web service access key.  
   
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] also supports OAuth authentication on OData and SOAP endpoints. OAuth is an open standard for authentication that provides client applications with secure delegated access to server resources. OAuth enables you to extend single sign-on with Office 365 to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services. For more information, see [Using OAuth to Authenticate Microsoft Dynamics NAV Web Services \(Odata and SOAP\)](https://docs.microsoft.com/en-us/previous-versions/dynamics-nav-2016/mt634540%28v=nav.90%29).  
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] also supports OAuth authentication on OData and SOAP endpoints. OAuth is an open standard for authorization that provides client applications with secure delegated access to server resources. OAuth enables you to extend single sign-on with Office 365 to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services. For more information, see [Using OAuth to Authorize Business Central Web Services \(OData and SOAP\)](authenticate-web-services-using-oauth.md).  
   
   
 > [!IMPORTANT] 
