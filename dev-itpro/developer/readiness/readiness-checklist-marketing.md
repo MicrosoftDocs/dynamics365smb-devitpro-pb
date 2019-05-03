@@ -61,21 +61,11 @@ elsewhere. Accordingly, we recommend you put in the time, effort and due
 diligence when developing this content. Follow this marketing validation checklist and get your app passed on the first submission. 
 
 ## Helpful Videos 
-> [!VIDEO - Best Practices for Submitting your App](https://youtu.be/lOL1oRMTq_4)
-
-> [!VIDEO - Common Pitfalls when Submitting your App](https://youtu.be/WZXGc16HJGU) 
+[Video - Best Practices for Submitting your App](https://youtu.be/lOL1oRMTq_4)
+[Video - Common Pitfalls when Submitting your App](https://youtu.be/WZXGc16HJGU) 
 
 ## Why marketing validation is mandatory
 
-The marketing validation is in place to make sure that the customer journey on
-AppSource is a uniform experience, where customers quickly and easily can get an
-overview of your offer’s functionality, why they can benefit from using it,
-while also enticing them to learn more and take the necessary actions to start
-using your offer. Accordingly, to ensure that your listing establishes a good
-first impression, we carry out a marketing validation of all Dynamics 365 Business Central
-apps that are being published on AppSource. This also goes for apps that already
-are live, if some of the content in their storefront details needs to be edited
-– in this case they need to be resubmitted for marketing validation as well.
-Consequently, to be published on AppSource all listings need to pass the required elements within the 
-marketing validation process.
+The marketing validation is in place to make sure that the customer journey on AppSource is a uniform experience, where customers quickly and easily can get an overview of your offer’s functionality, why they can benefit from using it, while also enticing them to learn more and take the necessary actions to start using your offer. Accordingly, to ensure that your listing establishes a good first impression, we carry out a marketing validation of all Dynamics 365 Business Central apps that are being published on AppSource. This also goes for apps that already are live, if some of the content in their storefront details needs to be edited – in this case they need to be resubmitted for marketing validation as well.
+Consequently, to be published on AppSource all listings need to pass the required elements within the marketing validation process.
 
