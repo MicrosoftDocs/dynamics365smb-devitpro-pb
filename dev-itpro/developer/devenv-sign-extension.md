@@ -34,7 +34,7 @@ The signing of an APP package file must be performed on a computer that has [!IN
 4. Install a signing tool such as [SignTool](https://docs.microsoft.com/en-us/dotnet/framework/tools/signtool-exe) or [SignCode](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537364(v=vs.85)) to the computer. The sample command will use SignTool.
 5. Copy your extensions .app file to the computer if it is not already on the computer. The file path for the sample command is `C:\NAV\Proseware.app`.
 6. Run the command to sign the .app file.  
-7. 7.	The following example signs the Proseware.app file with a time stamp using the certificate in the password-protected MyCert.pfx file. The command is run on the computer that was prepared for the signing. Once the command has been run, the Proseware.app file has been modified with a signature. This file is then used when publishing the extension.
+7. The following example signs the Proseware.app file with a time stamp using the certificate in the password-protected MyCert.pfx file. The command is run on the computer that was prepared for the signing. Once the command has been run, the Proseware.app file has been modified with a signature. This file is then used when publishing the extension.
 
 ```
 SignTool sign /f C:\Certificates\MyCert.pfx /p MyPassword /t http://timestamp.verisign.com/scripts/timestamp.dll “C:\NAV\Proseware.app”
