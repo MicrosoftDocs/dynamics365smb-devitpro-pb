@@ -30,14 +30,20 @@ It applies to an already existing table field when it is being modified in a tab
 
 ## Example
 ```
-modify("Address 2")
+tableextension 50111 "CustomerExt" extends Customer
 {
-    trigger OnAfterValidate()
-    begin
-        if (rec."Address 2" = rec.Address) then
-            error('The second address cannot be the same as the first one.');
-    end;
-}
+    fields
+    {
+        modify("Address 2")
+        {
+            trigger OnAfterValidate()
+            begin
+                if (rec."Address 2" = rec.Address) then
+                    error('The second address cannot be the same as the first one.');
+            end;
+        }
+    }
+}    
 ```
 
 ## See Also  

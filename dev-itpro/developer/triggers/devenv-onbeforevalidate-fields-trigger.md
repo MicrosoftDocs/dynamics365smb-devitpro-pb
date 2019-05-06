@@ -31,17 +31,22 @@ It applies to an already existing table field when it is being modified in a tab
 ## Example
 
 ```
-modify("Address 2")
+tableextension 50111 "CustomerExt" extends Customer
 {
-    trigger OnBeforeValidate()
-    begin
-        if (rec.Address = '') then
-            error('Please, input a first address before specifying a second one.');
-    end;
+    fields
+    {
+        modify("Address 2")
+        {
+            trigger OnAValidate()
+            begin
+                if (rec.Address = '') then
+                    error('Please, input a first address before specifying a second one.');
+            end;
+        }
+    }
 }
 
 ```
-
 
 ## See Also  
  [Triggers](devenv-triggers.md)  
