@@ -3,35 +3,34 @@ title: "Signing an APP Package File"
 description: "How do you sign an extension developed in the AL language."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
- 
-
 # Signing an APP Package File
-Code signing is a common practice for many applications. It is the process of digitally signing a file to verify the author and that the file has not been tampered with since it was signed. The signature of the APP package file is verified during the publishing of the extension using the `Publish-NAVApp` cmdlet. 
-For more technical information on signing, see [Authenticode](https://msdn.microsoft.com/en-us/library/ms537359\(VS.85\).aspx). 
+Code signing is a common practice for many applications. It is the process of digitally signing a file to verify the author and that the file has not been tampered with since it was signed. The signature of the APP package file is verified during the publishing of the extension using the `Publish-NAVApp` cmdlet. For more technical information on signing, see [Authenticode](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537359(v=vs.85)).
 
 > [!NOTE]  
-> If you want to publish an unsigned extension package in your on-premise environment, you need to explicitly state that by using the - *SkipVerification* parameter on the `Publish-NAVApp` cmdlet. An extension without a valid signature will not be published. 
+> If you want to publish an unsigned extension package in your on-premise environment, you need to explicitly state that by using the - *SkipVerification* parameter on the `Publish-NAVApp` cmdlet. An extension without a valid signature will not be published on AppSource. 
 
-The signing of an APP package file must be performed on a computer that has [!INCLUDE[navnow](includes/navnow_md.md)] 2018 or later (or the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]) installed. If you use a Docker image for your development environment, that environment will meet this requirement. You must also have the certificate that will be used for signing on the computer. The certificate must include code signing as the intended purpose. It is recommended that you use a certificate purchased from a third-party certificate authority. 
+The signing of an APP package file must be performed on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]) installed. If you use a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]) Docker image for your development environment, that environment will meet this requirement. You must also have the certificate that will be used for signing on the computer. The certificate must include code signing as the intended purpose. It is recommended that you use a certificate purchased from a third-party certificate authority.
 
 > [!IMPORTANT]  
-> If you publish the extension as an app on AppSource, the APP package file must be signed using a certificate from a [Certification Authority](https://technet.microsoft.com/en-us/library/cc751157.aspx) that has its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate provides, including but not limited to GoDaddy, DigiCert, and Symantec.
+> If you publish the extension as an app on AppSource, the APP package file must be signed using a certificate purchased from a Certification Authority that has its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to GoDaddy, DigiCert, and Symantec, see the image below.
+
+![Certificates](media/certificates.png)
+
 
 ## Steps for signing your .app file
 
 1. Prepare your computer for signing. 
 2. Make sure that you sign the .app file on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed.
-3. Copy the certificate that you purchased from a third-party certificate authority to a folder on the computer. Optionally, create your own certificate for local test or development purposes using the [Self-signed certificate information](#self-signed-certificate). The file path for the sample command is `C:\Certificates\MyCert.pfx`.
+3. Copy the certificate that you purchased from a third-party certificate authority to a folder on the computer. The example uses a pfx version of the certificate. If the certificate you purchased is not in a pfx format, create a [PFX file](https://uk.godaddy.com/help/windows-install-codedriver-signing-certificate-and-create-pfx-file-2698). The file path for the sample command is `C:\Certificates\MyCert.pfx`. (Optionally, create your own certificate for local test or development purposes using the [Self-signed certificate](#self-signed-certificate) information).
 4. Install a signing tool such as [SignTool](https://docs.microsoft.com/en-us/dotnet/framework/tools/signtool-exe) or [SignCode](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537364(v=vs.85)) to the computer. The sample command will use SignTool.
 5. Copy your extensions .app file to the computer if it is not already on the computer. The file path for the sample command is `C:\NAV\Proseware.app`.
 6. Run the command to sign the .app file.  
@@ -41,12 +40,12 @@ The signing of an APP package file must be performed on a computer that has [!IN
 SignTool sign /f C:\Certificates\MyCert.pfx /p MyPassword /t http://timestamp.verisign.com/scripts/timestamp.dll “C:\NAV\Proseware.app”
 ```
 
-> [!IMPORTANT]   
-> It is recommended to use a time stamp when signing the APP package file. A time stamp allows the signature to be verifiable even after the certificate used for the signature has expired. For more information, see [Time Stamping Authenticode Signatures](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931395(v=vs.85).aspx).
+> [!IMPORTANT]  
+> It is recommended to use a time stamp when signing the APP package file. A time stamp allows the signature to be verifiable even after the certificate used for the signature has expired. For more information, see [Time Stamping Authenticode Signatures](https://docs.microsoft.com/da-dk/windows/desktop/SecCrypto/time-stamping-authenticode-signatures). Depending on the certification authority, you may need to acquire a specific certificate in order to time stamp, an [Extended Validation](https://www.digicert.com/code-signing/ev-code-signing/) certificate from DigiCert for example.
 
 
 ## Self-signed certificate
-For testing purposes and on-premise deployments, it is acceptable to create your own self-signed certificate using the [New-SelfSignedCertificate](https://technet.microsoft.com/library/hh848633) cmdlet in PowerShell on Windows 10 or [MakeCert](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386968(v=vs.85).aspx).  
+For testing purposes and on-premise deployments, it is acceptable to create your own self-signed certificate using the [New-SelfSignedCertificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps) cmdlet in PowerShell on Windows 10 or [MakeCert](https://docs.microsoft.com/da-dk/windows/desktop/SecCrypto/makecert).  
 
 The following example illustrates how to create a new self-signed certificate for code signing:
 
