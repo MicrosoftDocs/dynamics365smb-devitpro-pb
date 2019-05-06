@@ -28,6 +28,21 @@ OnBeforeValidate()
 
 It applies to an already existing table field when it is being modified in a table extension. 
 
+## Example
+
+```
+modify("Address 2")
+{
+    trigger OnBeforeValidate()
+    begin
+        if (rec.Address = '') then
+            error('Please, input a first address before specifying a second one.');
+    end;
+}
+
+```
+
+
 ## See Also  
  [Triggers](devenv-triggers.md)  
  [Table and Field Triggers](devenv-table-and-field-triggers.md)  
