@@ -2,7 +2,7 @@
 title: "OnAfterValidate Trigger"
 ms.custom: na
 ms.date: 04/01/2019
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article

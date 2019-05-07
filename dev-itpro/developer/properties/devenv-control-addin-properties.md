@@ -9,11 +9,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: cf65e1e0-f696-4aac-afbd-992cd82f98de
 ms.author: solsen
 ---
-
-[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
 
 # Control Add-In Properties
 The following topic lists properties that apply to the [Control Add-In Object](../devenv-control-addin-object.md).

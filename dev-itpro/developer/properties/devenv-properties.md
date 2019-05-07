@@ -11,8 +11,6 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)] 
-
 # Properties Overview
 
 This section describes the properties that are available to developers in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. Properties can be set explicitly in AL code using syntax such as: <br>
@@ -23,8 +21,7 @@ This section describes the properties that are available to developers in [!INCL
 In the sections below, properties are sorted according to the object(s) they apply to.
 
 - [Table and Table Extension Properties](devenv-table-properties.md)  
-- [Page and Page Extension Properties](devenv-page-property-overview.md)  
-- [Codeunit Properties](devenv-codeunit-properties.md)  
+- [Page and Page Extension Properties](devenv-page-property-overview.md)- [Codeunit Properties](devenv-codeunit-properties.md)  
 - [Query Properties](devenv-query-properties.md)  
 - [Report Properties](devenv-report-properties.md)  
 - [XMLPort Properties](devenv-xmlport-properties.md)  

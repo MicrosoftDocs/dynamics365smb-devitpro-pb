@@ -1,5 +1,6 @@
 ---
 title: "Query Properties"
+ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2019
 ms.reviewer: na
@@ -7,22 +8,20 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 690b2ee9-0491-4de6-92b8-8bb988f91b73
-caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
-
-[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
-
 # Query Properties
 This topic lists properties that apply to the query object.  
 
 |Property Name|Applies to|
 |-------------|-----------|  
+|[APIPublisher Property](devenv-apipublisher-property.md)|<ul><li>Query Object</li>|
+|[APIVersion Property (Query)](devenv-apiversion-query-property.md)|<ul><li>Query Object</li>|
+|[APIGroup Property](devenv-apigroup-property.md)|<ul><li>Query Object</li>|
 |[Caption Property](devenv-caption-property.md)|<ul><li>Query Object</li><li>Column control</li><li>Filter control</li></ul>|
 |[CaptionML Property](devenv-captionml-property.md)|<ul><li>Query Object</li><li>Column control</li><li>Filter control</li></ul>|
 |[ColumnFilter Property](devenv-columnfilter-property.md)|<ul><li>Column control</li><li>Filter control</li></ul>|
-|[DataItemLink Property \(Query\)](devenv-dataitemlink-query-property.md)|<ul><li>DataItem control</li></ul>|
+|[DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)|<ul><li>DataItem control</li></ul>|
 |[DataItemLinkType Property](devenv-dataitemlink-type-property.md)|<ul><li>DataItem control</li></ul>|
 |[DataItemTable Property](devenv-dataitemtable-property.md)|<ul><li>DataItem control</li></ul>|
 |[DataItemTableFilter Property](devenv-dataitemtable-filter-property.md)|<ul><li>DataItem control</li></ul>|
@@ -31,12 +30,13 @@ This topic lists properties that apply to the query object.
 |[EntityName Property](devenv-entityname-property.md)|<ul><li>Query Object</li></ul>|
 |[EntitySetName Property](devenv-entitysetname-property.md)|<ul><li>Query Object</li></ul>|
 |[ID Property](devenv-id-property.md)|<ul><li>Query Object</li><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
-|[Indentation Property \(Query\)](devenv-indentation-query-property.md)|<ul><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
+|[Indentation Property (Query)](devenv-indentation-query-property.md)|<ul><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
 |[Method Property](devenv-method-property.md)|<ul><li>Column control</li></ul>|
 |[MethodType Property](devenv-methodtype-property.md)|<ul><li>Column control</li></ul>|
 |[Name Property](devenv-name-property.md)|<ul><li>Query Object</li><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
 |[OrderBy Property](devenv-orderby-property.md)|<ul><li>Query Object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)|<ul><li>Query Object</li></ul>|
+|[QueryType Property](devenv-querytype-property.md)|<ul><li>Query Object</li></ul>|
 |[ReadState Property](devenv-readstate-property.md)|<ul><li>Query Object</li></ul>|
 |[ReverseSign Property](devenv-reversesign-property.md)|<ul><li>Column control</li></ul>|
 |[TopNumberOfRows Property](devenv-topnumberofrows-property.md)|<ul><li>Query Object</li></ul>|

@@ -7,12 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: e394abcd-3510-4cb7-b867-b30ddc32cb6f
-caps.latest.revision: 16
 author: SusanneWindfeldPedersen
 ---
-
-[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
 
 # Codeunit Properties 
 This topic lists properties that apply to the Codeunit object, variables, text constants, methods, parameters, and return values. 
