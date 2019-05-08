@@ -7,16 +7,19 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 18e6df94-639e-4c5f-99ed-5729037bb719
-caps.latest.revision: 13
+ms.author: solsen
 ---
  
 # QueryType Property
-Sets the type of query to create. 
+Sets the type of query to create. The options for this property are `Normal` and `API`.
 
 ## Applies To  
 - Queries
 
+## Syntax
+```
+QueryType = API;
+```
 
 ## See Also  
  [Properties](devenv-properties.md)   
