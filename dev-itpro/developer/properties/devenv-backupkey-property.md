@@ -13,8 +13,6 @@ caps.latest.revision: 5
 ms.author: solsen
 ---
 
- 
-
 # BackupKey Property
 This property is used by the backup/restore system. Under normal circumstances, you do not need to set this property.  
 
@@ -24,10 +22,15 @@ This property is used by the backup/restore system. Under normal circumstances, 
 ## Property Value  
  **True** if the enabled property of secondary keys will be restored during restore; otherwise, **false**. The default value is **false**.  
 
-## Remarks  
- During backup, secondary keys where the [Enabled Property](devenv-enabled-property.md) is set to a value of **true** are marked with a BackupKey value of **true**, and the secondary indexes are not stored in the backup. When the backup is restored, the BackupKey value is checked to see whether it reenables secondary keys where BackupKey = Yes, and the indexes are recreated.  
+## Syntax
+```
+BackupKey = true;
+```
 
- You will normally only see the BackupKey set to **false** (the default), as it is only set to **true** during backup. If a backup restore is suspended during key creation (to be resumed at a later time), you can see and set the BackupKey property.  
+## Remarks  
+During backup, secondary keys where the [Enabled Property](devenv-enabled-property.md) is set to a value of **true** are marked with a BackupKey value of **true**, and the secondary indexes are not stored in the backup. When the backup is restored, the BackupKey value is checked to see whether it reenables secondary keys where BackupKey = true, and the indexes are recreated.  
+
+You will normally only see the BackupKey set to **false** (the default), as it is only set to **true** during backup. If a backup restore is suspended during key creation (to be resumed at a later time), you can see and set the BackupKey property.  
 
 ## See Also  
- [Enabled Property](devenv-enabled-property.md)
+[Enabled Property](devenv-enabled-property.md)
