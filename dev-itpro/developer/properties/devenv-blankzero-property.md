@@ -12,8 +12,6 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # BlankZero Property
 Indicates whether the system displays zeros (0) and No.  
   
@@ -24,5 +22,10 @@ Indicates whether the system displays zeros (0) and No.
 ## Property Value  
  **True** if zeros and No are not displayed; otherwise, **false**. The default is **false**.  
   
+## Syntax
+```
+BlankZero = true;
+```
+
 ## See Also  
  [BlankNumbers Property](devenv-blanknumbers-property.md)

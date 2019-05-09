@@ -12,20 +12,18 @@ caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # BitmapPos Property
 Sets the position of a bitmap.  
   
 ## Applies To  
   
--   Check boxes  
+- Check boxes  
   
--   Command buttons  
+- Command buttons  
   
--   Menu buttons  
+- Menu buttons  
   
--   Option buttons  
+- Option buttons  
   
 ## Property Value  
   
@@ -37,6 +35,11 @@ Sets the position of a bitmap.
 |**Top**|At the top|  
 |**Bottom**|At the bottom|  
 |**Center**|In the center|  
+
+## Syntax
+```
+BitmapPos = Bottom;
+```
   
 ## See Also  
  [Bitmap Property](devenv-bitmap-property.md)   

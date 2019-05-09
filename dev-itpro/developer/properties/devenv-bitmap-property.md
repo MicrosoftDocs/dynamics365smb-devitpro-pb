@@ -12,17 +12,15 @@ caps.latest.revision: 16
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # Bitmap Property
 Sets a bitmap icon to be shown with a department on the Department page.  
 
 ## Applies To  
 
--   MenuSuite buttons  
+- MenuSuite buttons  
 
 ## Remarks  
- You can choose among eleven predefined bitmap icons. To specify a file, you enter an ID number from 0 to 15.  
+You can choose among eleven predefined bitmap icons. To specify a file, you enter an ID number from 0 to 15.  
 
 ## See Also  
- [Menu Properties](devenv-menu-properties.md)   
+[Menu Properties](devenv-menu-properties.md)   
