@@ -13,8 +13,6 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # AssistEdit Property
 Sets assist-edit capabilities for a text box.  
   
@@ -24,7 +22,12 @@ Sets assist-edit capabilities for a text box.
   
 ## Property Value  
  **True** if assist-edit capabilities and an AssistEdit button are provided; otherwise, **false**. The default value is **false**.  
-  
+
+## Syntax
+```
+AssistEdit = true;
+```
+
 ## Remarks  
  You can add AL code in the [OnAssistEdit Trigger](../triggers/devenv-onassistedit-trigger.md) to change the default assist-edit behavior.  
   

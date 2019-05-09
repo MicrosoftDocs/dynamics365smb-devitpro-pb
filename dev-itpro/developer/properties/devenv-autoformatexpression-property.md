@@ -25,8 +25,14 @@ Sets an AL expression that specifies how to format data.
   
 -   Reports  
   
+## Syntax
+```
+AutoFormatExpression = "Currency Code";
+AutoFormatType = 2;
+```
+
 ## Remarks  
- The AL expression is evaluated when the expression performs updates. Together with the [AutoFormatType Property](devenv-autoformattype-property.md), this property determines how data is formatted. These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios.  
+The AL expression is evaluated when the expression performs updates. Together with the [AutoFormatType Property](devenv-autoformattype-property.md), this property determines how data is formatted. These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios.  
   
 ## See Also  
  [AutoFormatType Property](devenv-autoformattype-property.md)   

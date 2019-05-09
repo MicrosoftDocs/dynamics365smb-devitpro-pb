@@ -32,6 +32,11 @@ AutoCalcField is correlated with [CalcFields property](devenv-calcfields-proeprt
 ## Property Value  
  **True** if the FlowField is automatically calculated; otherwise, **false**. The default is **true**.  
 
+## Syntax
+```
+AutoCalcField = true;
+```
+
 ## Remarks
 FlowFields has an effect if the associated data source is a calculated value of the FlowFields.
 <!--  
