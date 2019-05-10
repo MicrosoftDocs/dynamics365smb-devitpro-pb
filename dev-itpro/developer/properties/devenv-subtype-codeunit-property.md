@@ -45,7 +45,7 @@ For more information, see [Testing the Application](Testing-the-Application.md).
 ## See Also  
 [Properties](devenv-properties.md)  
 [Codeunit Properties](devenv-codeunit-properties.md)  
-[Subtype Blob Property](devenv-subtype-blob-property.md)
+[Subtype BLOB Property](devenv-subtype-blob-property.md)
 <!--
 [Testing the Application](Testing-the-Application.md)   
 [How to: Create Test Codeunits and Test Methods](How-to-Create-Test-Codeunits-and-Test-Methods.md)   

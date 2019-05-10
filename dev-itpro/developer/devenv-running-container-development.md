@@ -11,7 +11,11 @@ ms.author: solsen
 ---
 
 # Running a Container-Based Development Environment
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is available as a container-based image, ready for running on a Windows system with Docker installed. The container-based approach is used when you need access to both the AL development environment and the C/SIDE development environment.
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is available as a container-based image, ready for running on a Windows system with Docker installed. The container-based approach is used when you need access to both the AL development environment and the C/SIDE development environment. 
+
+
+> [!TIP]  
+> For more information on where to find Docker images, see [What Docker Image is Right for You?](https://freddysblog.com/2018/04/16/which-docker-image-is-the-right-for-you/).
 
 ## Install and configure Docker
 Install Docker and configure it for Windows Containers.
