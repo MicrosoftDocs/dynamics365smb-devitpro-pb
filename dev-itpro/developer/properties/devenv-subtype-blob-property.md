@@ -12,21 +12,19 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # SubType Property (BLOB)
 Sets additional information about what will be contained in the field.  
   
 ## Applies To  
- BLOB fields  
+- BLOB fields  
   
 ## Property Value  
   
-|**Value**|**Description**|  
-|---------------|---------------------|  
-|**Bitmap**|For storing bitmaps|  
-|**Memo**|For storing memos|  
-|**User-Defined \(default\)**|For user defined information|  
+|**Value**                 |**Description**|  
+|--------------------------|---------------|  
+|**Bitmap**                |For storing bitmaps|  
+|**Memo**                  |For storing memos|  
+|**User-Defined (default)**|For user defined information|  
   
 ## See Also  
 [Properties](devenv-properties.md)   

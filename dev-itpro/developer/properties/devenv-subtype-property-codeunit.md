@@ -47,6 +47,8 @@ A test runner codeunit runs the test codeunits that are programmed to run from i
 <!-- 
 For more information, see [Testing the Application](Testing-the-Application.md).  
 -->  
+When the property type is set to **Upgrade**, you 
+
 ## See Also  
 [Properties](devenv-properties.md)  
 [Codeunit Properties](devenv-codeunit-properties.md)  
