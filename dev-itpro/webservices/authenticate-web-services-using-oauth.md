@@ -349,7 +349,7 @@ Next, you create a C\# console application in Visual Studio.
 
 1. Temporarily set the [!INCLUDE[server](../developer/includes/server.md)] to use **Windows** credential type.
 
-    This allows you to access the OData endppint from Visual Studio.
+    This allows you to access the OData endpoint from Visual Studio.
 2. In the Solution Explorer pane, right-click the project (**BusinessCentralCustomers**), and then choose **Add** > **Connected Service** > **OData Connected Service**.  
 
 3. On the **Configure Endpoint** page, either keep the **Service name** of **OData Service** or change it if you like.
