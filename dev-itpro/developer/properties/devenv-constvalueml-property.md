@@ -21,7 +21,12 @@ Sets the values of a AL text constant for the different languages that are avail
   
 ## Applies To  
  **Local** and **global** text constants in the AL code of objects.  
-  
+ 
+## Syntax
+```
+CaptionML = ENU='Name';
+```
+
 ## Remarks  
  The **ConstValue** property is enabled for multiple languages. It contains a list of text values for the languages that are available in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. The value that is used is selected according to the user's language settings. For more information, see [Multilanguage Development](../devenv-multilanguage-development.md).  
   

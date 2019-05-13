@@ -26,6 +26,11 @@ Use this property to set the target Help file for context-sensitive Help for pag
 
 - XMLport objects
 
+## Syntax
+```
+ContextSensitiveHelpPage = 'page-extension-topic';
+```
+
 ## Remarks
 
 The value of this property forms the second half of the URL to context-sensitive Help for your app. The first half is set in the app.json where you specify the URL to your library of Learn More content. For more information, see [Configure Context-Sensitive Help](../../help/context-sensitive-help.md).  

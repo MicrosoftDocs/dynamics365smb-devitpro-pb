@@ -28,6 +28,32 @@ Sets the container type when you want to add one of the following controls to a 
 ## Applies To  
   
 -   Container controls on Pages  
+
+## Syntax
+```
+page 50100 MyPage
+{
+    PageType = RoleCenter;
+
+    layout
+    {
+        area(RoleCenter)
+        {
+            ...
+        }
+
+        area(FactBoxes)
+        {
+            ...
+        }
+
+        area(Content)
+        {
+            ...
+        }
+    }
+}
+```
   
 ## Remarks  
  A Container control methods as a high-level container for other page controls. You can choose from one of the following subtypes:  

@@ -22,7 +22,15 @@ Sets a value that determines whether users can enter a closing date in this fiel
 -   Table Fields  
   
 -   Page Fields  
-  
+
+## Property value
+**True** if users can enter a closing date in the field, otherwise **false**. The default is **false**.
+
+## Syntax
+```
+ClosingDates = true;
+```
+
 ## Remarks  
  All dates have a corresponding closing date. A closing date is a period following the given date, but before the next date. Closing dates are sorted immediately after the corresponding date but before the next date.  
   
