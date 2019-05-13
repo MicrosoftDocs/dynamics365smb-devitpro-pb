@@ -25,6 +25,11 @@ Sets a value that indicates whether the action should be enabled or disabled if 
   
 ## Property Value  
  **True**/**false**  
+
+## Syntax
+```
+EnabledIfInsertion = true;
+```
   
 ## See Also  
  [EnabledIfError Property](devenv-enablediferror-property.md)   

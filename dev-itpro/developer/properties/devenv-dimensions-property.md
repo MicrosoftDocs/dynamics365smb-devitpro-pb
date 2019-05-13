@@ -25,7 +25,7 @@ Sets the dimensions of a variable that is to create a multi-dimensional variable
   
  For example, to define an integer array with dimensions 3 x 3 x 4, start by creating an integer variable called A. In the **Properties** window, set the **Dimensions** property to a value of **3;3;4**. To access the elements in the array, use either of the following:  
   
--   A[2]\[3\]\[2\]  
+-   A\[2\]\[3\]\[2\]  
   
 -   A\[2,3,2\]  
   

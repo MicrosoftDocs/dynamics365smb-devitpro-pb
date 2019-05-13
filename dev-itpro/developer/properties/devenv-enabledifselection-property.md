@@ -22,7 +22,12 @@ Sets a value that indicates whether the selected action is enabled or disabled.
 -   Actions  
   
 -   Pages  
-  
+
+## Syntax
+```
+EnabledIfSelection = true;
+```
+ 
 ## Property Value  
  **True**/**false**  
   

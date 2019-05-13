@@ -32,6 +32,11 @@ The ExternalAccess Property sets the access level as described in the table belo
 |Modify|Allows the Modify access to the external database. |
 |Read  |Allows the read-only access to the external database.|
 
+## Syntax 
+```
+ExternalAccess = Full;
+```
+
 ## Remarks  
  This property appears when you specify **CRM** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
 
