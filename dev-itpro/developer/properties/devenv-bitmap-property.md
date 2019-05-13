@@ -17,7 +17,12 @@ Sets a bitmap icon to be shown with a department on the Department page.
 
 ## Applies To  
 
-- MenuSuite buttons  
+- Menu buttons  
+
+## Syntax
+```
+Bitmap = 0;
+```
 
 ## Remarks  
 You can choose among eleven predefined bitmap icons. To specify a file, you enter an ID number from 0 to 15.  

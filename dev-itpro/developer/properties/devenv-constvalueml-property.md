@@ -24,7 +24,7 @@ Sets the values of a AL text constant for the different languages that are avail
  
 ## Syntax
 ```
-CaptionML = ENU='Name';
+ConstValueML = DAN=Navn;ENU=Name;ESP=Nombre;FRA=Nom;
 ```
 
 ## Remarks  
