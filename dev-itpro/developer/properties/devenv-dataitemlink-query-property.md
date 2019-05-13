@@ -44,7 +44,7 @@ The DataItemLink property works together with the DataItemLinkType property to c
  A Salesperson table and a Sales Header table have the Code column and Salesperson\_Code field in common, respectively. To create a link between these two tables, you add the following value in the DataItemLink property of the **Sales Header** data item.  
   
 ```  
-Salesperson Code=Salesperson.Code  
+DataItemLink = Salesperson Code=Salesperson.Code  
 ```  
 
   
