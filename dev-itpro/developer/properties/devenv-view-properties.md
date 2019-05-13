@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Control Add-In Properties
+# View Properties
 The following topic lists properties that apply to [Views](../devenv-views.md).
 
 - [Filters](devenv-filters-property.md)  
