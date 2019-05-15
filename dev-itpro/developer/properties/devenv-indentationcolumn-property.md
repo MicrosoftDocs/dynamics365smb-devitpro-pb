@@ -20,6 +20,11 @@ Sets the name of the hidden column that controls row indentation in a List page.
 ## Applies To  
   
 -   Pages (Type = Group, Subtype = Repeater)  
+
+## Syntax
+```
+IndentationColumn = IntegerFieldName;
+```
   
 ## Remarks  
  This property can be set to a field or variable of [Integer Data Type](../datatypes/devenv-integer-data-type.md).

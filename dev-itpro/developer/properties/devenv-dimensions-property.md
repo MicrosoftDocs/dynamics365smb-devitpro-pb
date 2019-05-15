@@ -32,4 +32,5 @@ Sets the dimensions of a variable that is to create a multi-dimensional variable
  Indexes start at a value of 1 (not 0 as in some programming languages).  
   
 ## See Also  
- [Array Methods](../methods/devenv-array-methods.md)
+ [Array Methods](../methods/devenv-array-methods.md)  
+ [Properties](devenv-properties.md)  

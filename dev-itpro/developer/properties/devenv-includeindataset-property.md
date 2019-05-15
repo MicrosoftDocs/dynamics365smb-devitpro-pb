@@ -23,6 +23,12 @@ Sets whether the AL variable's value is included in the dataset.
 ## Property Value  
  **True** to include the variable's value in the dataset; otherwise, **false**. The default is **false**.  
 
+## Syntax
+```
+IncludeInDataSet = true;
+```
+
+
 ## Remarks  
  You must set this property to **true** if the variable is used as the value of the [Editable Property](devenv-editable-property.md), [Enabled Property](devenv-enabled-property.md), [Visible Property](devenv-visible-property.md), or [StyleExpr Property](devenv-styleexpr-property.md).  
 
