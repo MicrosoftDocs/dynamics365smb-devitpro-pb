@@ -63,7 +63,7 @@
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
 ### Administration Center
-### [Administration Center Overview](administration/tenant-admin-center.md)
+#### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)

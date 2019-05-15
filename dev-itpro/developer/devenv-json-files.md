@@ -1,6 +1,6 @@
 ---
 title: "JSON Files"
-description: "Description of the content of the JSON files."
+description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2019
@@ -48,7 +48,7 @@ The following table describes the settings in the `app.json` file:
 
 ## <a name="Launchjson"></a>Launch.json file
 
-The following table describes the settings in the ```launch.json``` file. The `launch.json` file has two configurations depending on whether the extension is published to a local server or to the cloud.
+The following table describes the settings in the `launch.json` file. The `launch.json` file has two configurations depending on whether the extension is published to a local server or to the cloud.
 
 ### Publish to local server settings
 |Setting|Mandatory|Value|
@@ -82,7 +82,6 @@ The following table describes the settings in the ```launch.json``` file. The `l
 The platform symbol file contains all of the base app objects that your extension builds on. If the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code detects that the referenced symbols are not present on local disk, you will get a visual prompt in Visual Studio Code to download the symbols from one of the servers specified in the launch.json file. For more information about the platform symbol file, see [Symbols](devenv-symbols.md).
 
 ## See Also
-
 [AL Development Environment](devenv-reference-overview.md)  
 [Debugging in AL](devenv-debugging.md)  
 [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md)  
