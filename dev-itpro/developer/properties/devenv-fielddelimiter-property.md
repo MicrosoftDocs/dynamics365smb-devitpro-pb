@@ -20,6 +20,11 @@ Specifies the text delimiter for a field.
 ## Applies To  
   
 -   XMLports  
+
+## Syntax
+```
+FieldDelimiter = '<None>';
+```
   
 ## Remarks  
  The default value is “”, an empty string.  

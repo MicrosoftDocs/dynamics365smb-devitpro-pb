@@ -28,6 +28,11 @@ The property has the following values:
 |**LeftSwipe**|Swipe in from the right edge of the touch interface.  |
 |**RightSwipe**|Swipe in from the left edge of the touch interface.  |
 
+## Syntax
+```
+Gesture = None;
+```
+
 ## Remarks
 You typically use the Gesture property on list type pages for executing an action on items in a repeater control.
 

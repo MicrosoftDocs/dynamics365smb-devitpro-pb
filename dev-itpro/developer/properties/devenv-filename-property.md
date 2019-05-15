@@ -18,7 +18,12 @@ Sets the name of the external file to read data from or write data to an XMLport
 ## Applies To  
   
 -   XMLports  
-  
+
+## Syntax
+```
+FileName = 'File.txt';
+```
+ 
 ## Remarks  
  The **FileName** property must be set to a valid file name or a run-time error occurs.  
   

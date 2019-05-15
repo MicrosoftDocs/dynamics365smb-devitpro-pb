@@ -22,6 +22,11 @@ Sets whether to show or hide a value for the user based on an expression.
   
 ## Property Values  
  **True** if the value is hidden; otherwise, **false**. The default is **false**.  
+
+## Syntax
+```
+HideValue = true;
+```
   
 ## See Also  
  [Properties](devenv-properties.md)

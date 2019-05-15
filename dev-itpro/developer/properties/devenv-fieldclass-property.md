@@ -27,7 +27,12 @@ Sets the class of the field.
 |**Normal**|A data entry field|  
 |**FlowFilter**|To compute the results of FlowFields|  
 |**FlowField**|A calculated field|  
-  
+
+## Syntax
+```
+FieldClass = FlowFilter;
+```  
+
 ## Remarks  
  There are three classes of fields: Normal, FlowFields, and FlowFilters. For more information, see [FlowFields](../devenv-flowfields.md) and [FlowFilter Overview](../devenv-flowfilter-overview.md).  
   
