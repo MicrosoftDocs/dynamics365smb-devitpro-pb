@@ -137,4 +137,4 @@ When using the intelligent cloud replication for Dynamics SL 2018 CU1 the follow
 [Connect to the Intelligent Cloud from On-Premises](about-intelligent-edge.md)  
 [Managing your Intelligent Cloud Environment](manage-intelligent-edge.md)  
 [ReplicateData Property](../developer/properties/devenv-replicatedata-property.md)  
-[Intelligent Insights with [!INCLUDE[prodshort](includes/prodshort.md)]](/dynamics365/business-central/about-intelligent-cloud)  
+[Intelligent Insights with Business Central](/dynamics365/business-central/about-intelligent-cloud)  
