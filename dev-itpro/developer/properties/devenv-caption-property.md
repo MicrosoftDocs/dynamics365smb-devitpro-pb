@@ -34,7 +34,7 @@ Sets the text string that displays with the object, control, or other element in
 ## Syntax
 
 ```
-Caption = 'Organization';
+Caption = 'Name';
 ```
 
 ## Remarks  

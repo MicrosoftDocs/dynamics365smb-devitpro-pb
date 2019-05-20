@@ -22,6 +22,11 @@ Specifies if the page action separator is a header.
   
 ## Property Type
 Boolean
+
+## Syntax
+```
+IsHeader = true;
+```
  
   
 ## See Also  

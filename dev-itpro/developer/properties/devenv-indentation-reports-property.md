@@ -19,10 +19,12 @@ Sets the indentation level of a data item or column on a report.
   
 -   Reports  
 
+<!--
 ## Syntax
 ```
 Indentation = 1;
 ```
+-->
   
 ## Remarks  
  A value of **<0>** (zero) indicates no indentation. Data items can be indented ten levels deep. The largest possible value of this property is **<10>**. You can only indent a data item one level at a time, so the indentation level of a data item can be no more than one greater than the level of the preceding data item. Usually, you will set the indentation level property from the Report Dataset Designer, where you indent data items by clicking a button.  

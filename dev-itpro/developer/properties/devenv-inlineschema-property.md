@@ -16,14 +16,19 @@ author: SusanneWindfeldPedersen
 
 # InlineSchema Property
 Specifies whether an XML schema definition should be included inside an XML document.  
-  
+
 ## Applies To  
   
 -   XMLports  
   
 ## Property Value  
  **True** if the XML schema definition should be included in the XML document; otherwise, **false**.  
-  
+
+## Syntax
+```
+InlineSchema = true;
+```
+ 
 ## Remarks  
  Inline schemas are XML schema definitions that can be included inside XML instance documents instead of importing it from an external source. Like an external schema, an inline schema can be used to verify that the XML document instance matches the schema constraints.  
   

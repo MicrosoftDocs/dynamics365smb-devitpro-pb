@@ -23,6 +23,11 @@ Sets a value to specify whether users can add records while using a page.
   
 ## Property Value  
  **True** if you want to allow users to add records; otherwise, **false**. The default value is **true**.  
-  
+
+## Syntax
+```
+InsertAllowed = false;
+```
+ 
 ## See Also  
  [Properties](devenv-properties.md)

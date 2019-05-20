@@ -20,7 +20,7 @@ Sets the value of the AL text constant for the current application language of t
 
 ## Syntax
 ```
-ConstValue = ENU=Name;
+ConstValue = Name;
 ```
 
 ## Remarks  
