@@ -73,7 +73,8 @@
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 ## On-Premises
 ### Intelligent Insights
-#### [Connect to the Intelligent Cloud](administration/about-intelligent-edge.md)
+#### [Connect to the Intelligent Cloud from On-Premises](administration/about-intelligent-edge.md)
+#### [Replicating On-Premises Data](administration/data-replication-intelligent-cloud.md)
 #### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
 #### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
