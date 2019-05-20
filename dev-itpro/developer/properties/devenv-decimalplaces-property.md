@@ -30,6 +30,11 @@ Sets display and storage requirements for the [Decimal Data Type](../datatypes/d
 |**1:4**|A minimum of 1 and a maximum of 4 decimal places.|  
 |**2:**|At least 2 decimal places.|  
 |**:2**|No more than 2 decimal places.|  
+
+## Syntax
+```
+DecimalPlaces = 0 : 5;
+```
   
 ## Remarks  
  For decimal fields, this property specifies the number of decimal places that you want to store. The default storage requirements for [Decimal Data Type](../datatypes/devenv-decimal-data-type.md) are two decimal places for amounts. Use this property to specify storage requirements that are different than the default.  

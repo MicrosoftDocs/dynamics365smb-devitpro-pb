@@ -24,6 +24,11 @@ Tables
   
 ## Property Value  
 **True** if data is available only to this company; otherwise, **false**. The default value is **true**.  
+
+## Syntax
+```
+DataPerCompany = true;
+```
   
 ## See Also  
 [Properties](devenv-properties.md)  

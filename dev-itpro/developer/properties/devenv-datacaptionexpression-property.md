@@ -20,7 +20,12 @@ Sets an AL expression that is evaluated and displayed to the left of the page ca
 ## Applies To  
 -   Pages  
 -   RequestPage
-  
+ 
+## Syntax
+```
+DataCaptionExpression = Description;
+```
+
 ## Remarks  
  The expression is evaluated each time the user switches from one record to another or when one of the fields in the record changes.  
   

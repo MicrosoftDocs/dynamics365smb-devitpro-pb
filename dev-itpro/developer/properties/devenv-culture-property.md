@@ -18,6 +18,11 @@ author: SusanneWindfeldPedersen
 
 Specifies the culture of the .NET assembly.
 
+## Syntax
+```
+Culture = 'neutral';
+```
+
 ## See Also  
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

@@ -26,4 +26,6 @@ Modifies a menu for a department. The menu represents a department in a company.
 |**Bitmap**|The bitmap that is displayed on the menu button. The valid bitmap values are from 0 to 15. The number represents the bitmap.|  
 
 ## See Also  
- 
+[Caption Properties](devenv-caption-property.md)   
+[CaptionML Properties](devenv-captionml-property.md)   
+[Bitmap Properties](devenv-bitmap-property.md)   

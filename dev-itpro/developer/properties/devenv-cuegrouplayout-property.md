@@ -20,6 +20,11 @@ Sets whether a `cuegroup` control displays in the wide layout.
 ## Property Values  
 
 `wide` sets the `cuegroup` control to the wide layout; otherwise, the control uses the normal layout.     
+
+## Syntax
+```
+CuegroupLayout = wide;
+```
   
 ## Remarks  
 For more information about the wide layout for Cues, see [Normal and wide layout for Cues](../devenv-cues-action-tiles.md#CueWideLayout).

@@ -26,8 +26,8 @@ You can choose from the following action menus to place the actions in the speci
 |---------------|--|-------|-----------|-------|  
 |Actions menu|`area(processing)`| Role Center, list, card, and task pages|User tasks|Post a sales order|
 |New document group in Actions menu|`area(creation)` |List, card, Role Center pages, and task pages|Actions that appear under the New group. Opens a new [!INCLUDE[d365fin_md](includes/d365fin_md.md)] document.|New sales invoice|  
-|Navigate menu|``area(navigation)`` |List, card, and task pages|Links to other pages in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|Prices|  
-|Report menu|``area(reporting)`` |Role Center, list, card, and task pages|A list of available reports.|Customer Top 10 List| 
+|Navigate menu|`area(navigation)` |List, card, and task pages|Links to other pages in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|Prices|  
+|Report menu|`area(reporting)` |Role Center, list, card, and task pages|A list of available reports.|Customer Top 10 List| 
   
 The following Actions are related to the Role Center page.
 
@@ -51,7 +51,7 @@ Example: The Sales Orders list page at CRONUS International contains all actions
 Pages can have the following actions as described in each section below.  
   
 ## Actions menu
-The Actions menu is a displayed in the action bar on all page types, and contains relevant tasks for the current page. Typically, you add processing tasks and creation tasks in the Actions menu. To add processing actions such as posting a sale order, you must use the ``processing`` action area. They are regular daily tasks. Therefore, they must be on the Actions menu. For examples on how to add actions to the Actions menu, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md). 
+The Actions menu is a displayed in the action bar on all page types, and contains relevant tasks for the current page. Typically, you add processing tasks and creation tasks in the Actions menu. To add processing actions such as posting a sale order, you must use the `processing` action area. They are regular daily tasks. Therefore, they must be on the Actions menu. For examples on how to add actions to the Actions menu, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md). 
 
 Some examples from the Customer page are as follows:
   
@@ -72,7 +72,7 @@ Some examples from the Customer page are as follows:
 You can add actions to the Actions menu, group actions together under action sub menus, or promote them to the ribbon. For examples of how to use actions, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
   
 ### New Document menu
-The New Document menu is often displayed both as a top-level menu in the actions bar and as a sub menu in the Actions menu. You can use this menu to open new documents within [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can add an action to create a new document such as creating a new sales invoice. This action displays in a separate menu called **New document** in the Actions menu. To add to the New document menu, you must use the ``creation`` action area.
+The New Document menu is often displayed both as a top-level menu in the actions bar and as a sub menu in the Actions menu. You can use this menu to open new documents within [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can add an action to create a new document such as creating a new sales invoice. This action displays in a separate menu called **New document** in the Actions menu. To add to the New document menu, you must use the `creation` action area.
   
 Example: On the Customers page, if the order processor wants to create a new invoice, she can open the new page directly from the Actions menu. This is useful as she creates new sales invoices daily. 
 
@@ -83,13 +83,13 @@ Example: On the Customers page, if the order processor wants to create a new inv
  The user Role Center is like a home page, and home items in the navigation pane are links to the user’s most useful list pages. For more information, see [Setting Up the Home Button and Home Items](Setting-Up-the-Home-Button-and-Home-Items.md). -->
 
 ## Navigate menu
-The Navigate menu is displayed after the Actions menu in the action bar. Rather than providing tasks for the user, this menu provides additional information by taking the user to a specific page in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. To add a page link in the Navigate menu, you must use the ``navigation`` action area. These actions act like a bookmark to enable quick access to view a page. <!-- For examples on how to link pages in the Navigate menu, see [Adding Page Links to Navigate Menu](devenv-adding-page-links-to-navigate-menu.md). -->
+The Navigate menu is displayed after the Actions menu in the action bar. Rather than providing tasks for the user, this menu provides additional information by taking the user to a specific page in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. To add a page link in the Navigate menu, you must use the `navigation` action area. These actions act like a bookmark to enable quick access to view a page. <!-- For examples on how to link pages in the Navigate menu, see [Adding Page Links to Navigate Menu](devenv-adding-page-links-to-navigate-menu.md). -->
   
 > [!NOTE]  
 > You should not add a Navigation action to a Role Center page.  
   
 ## Report menu
-The Report menu is displayed after the Navigate menu in the action bar. The Reports menu lists the reports most relevant to a page. If a user does not require a Report menu, then the menu is hidden. Sometimes it is relevant to promote the most important reports to the top-level in the action bar to save the user from too many clicks. To create an action in the Report menu, you must use the ``reporting`` action area. 
+The Report menu is displayed after the Navigate menu in the action bar. The Reports menu lists the reports most relevant to a page. If a user does not require a Report menu, then the menu is hidden. Sometimes it is relevant to promote the most important reports to the top-level in the action bar to save the user from too many clicks. To create an action in the Report menu, you must use the `reporting` action area. 
 
  <!--
 ### Activity Buttons  

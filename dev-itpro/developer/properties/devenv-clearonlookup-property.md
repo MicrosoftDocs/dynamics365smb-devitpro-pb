@@ -20,9 +20,15 @@ Sets a value that determines whether the current contents of the field are delet
 ## Applies To  
   
 -   Fields  
+
   
 ## Property Value  
  **True** if current contents of the field are replaced; otherwise, **false** if the contents are pasted. The default value is **true** for all fields except FlowFilters fields.  
+
+## Syntax
+```
+ClearOnLookup = true;
+```
   
 ## See Also  
  [FlowFilter Overview](../devenv-flowfilter-overview.md)

@@ -20,6 +20,11 @@ Specifies the page customizations which are applied with this profile.
   
 -   Profile object  
 
+## Syntax
+```
+customizations = SimpleCustomization;
+```
+
 
 ## See Also  
  [Profile Object](../devenv-profile-object.md)

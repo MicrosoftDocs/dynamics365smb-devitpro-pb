@@ -20,6 +20,12 @@ Controls the caption that is used in the label of a field in a database table or
 - Table Fields  
   
 - Page Fields  
+
+## Syntax
+
+```
+CaptionClass = '1,2,3';
+```
   
 ## Remarks  
 The data type of the AL expression must be either `Text` (maximum length 80) or `Code`.  

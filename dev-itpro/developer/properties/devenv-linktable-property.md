@@ -19,7 +19,12 @@ Sets the table that this XML item should be linked to. This property is only ava
   
 ## Applies To  
  XMLports  
-  
+
+## Syntax
+```
+LinkTable = <field>;
+```
+ 
 ## Remarks  
  This property works in combination with the [LinkFields Property](devenv-linkfields-property.md) and the [LinkTableForceInsert Property](devenv-linktableforceinsert-property.md).  
   

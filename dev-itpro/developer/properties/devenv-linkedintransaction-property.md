@@ -19,7 +19,12 @@ Gets and sets data from linked server data sources, such as Microsoft Office Exc
   
 ## Applies To  
  Tables  
-  
+
+## Syntax
+```
+LinkedInTransaction = false;
+```
+ 
 ## Remarks  
  This property is available when the [LinkedObject Property](devenv-linkedobject-property.md) is set to **true**.  
   

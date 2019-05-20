@@ -19,6 +19,11 @@ Sets a value that specifies which system is applied to the XMLport for character
   
 ## Applies To  
  XMLports  
+
+## Syntax
+```
+Encoding = UTF16;
+```
   
 ## Remarks  
  The two options available for this property are UTF8 and UTF16. UTF8 is the default setting. Information about the encoding system used is inserted into the header of the XML document.  

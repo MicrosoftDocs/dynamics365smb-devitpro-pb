@@ -19,6 +19,11 @@ Sets the maximum length of data stored in this field.
   
 ## Applies To  
  Fields  
+
+## Syntax
+```
+field(1; City; Text[15])
+```
   
 ## Remarks  
  For [Text Data Type](../datatypes/devenv-text-data-type.md) and [Code Data Type](../datatypes/devenv-code-data-type.md) fields, enter the maximum length of the field. The database only stores the actual content of the field—not the maximum length you specify.  

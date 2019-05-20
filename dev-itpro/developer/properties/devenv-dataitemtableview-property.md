@@ -16,6 +16,11 @@ Sets the key on which to sort, the sort order, and the filters for the data item
   
 ## Applies To  
 Data items on reports.  
+
+## Remarks
+```
+DataItemTableView = SORTING ("Journal Template Name", Name);
+```
   
 ## Remarks  
  

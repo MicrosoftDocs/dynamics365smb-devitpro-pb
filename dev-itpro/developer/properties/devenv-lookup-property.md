@@ -23,6 +23,11 @@ Use this property to provide a lookup window for a text box.
   
 ## Property Value  
  **True** if you want a lookup for the field; otherwise, **false**. The default value is **false**.  
+
+## Syntax
+```
+Lookup = true;
+```
   
 ## Remarks  
  By default, a lookup provides a list of records in the table. Using this list, users can select a record and retrieve information from it into this control.  
