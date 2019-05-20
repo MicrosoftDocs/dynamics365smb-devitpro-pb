@@ -56,7 +56,7 @@ During the data replication process, [!INCLUDE[prodshort](../developer/includes/
 
 When using the intelligent cloud replication for Dynamics GP 2018 R2, the following information is replicated from Dynamics GP to Business Central online:
 
-- Chart of Accounts master recordsas of the time of the replication
+- Chart of Accounts master records as of the time of the replication
 
     The chart of accounts will be set up as the main account segment from Dynamics GP, and the additional segments will be set up as dimensions in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 - Account Balance as of the time of the replication
@@ -73,26 +73,26 @@ When using the intelligent cloud replication for Dynamics GP 2018 R2, the follow
     |000-1100-01|Cash West|200.00|
     |000-1100-02|Cash Midwest|100.00|
 
-    Because our Main segment in Dynamics GP is defined as the 2nd segment, the data replication creates new accounts in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] based on the number *1100*. When the data replication process runs the first time, an account is set up in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as shown in the following table:  
+    Because the account number's main segment in Dynamics GP is defined as the second segment, the data replication creates new accounts in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] based on the number *1100* in this example. The data replication process then sets up an account in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as shown in the following table:  
 
     |Account number|Account name|Amount|
     |--------------|------------|------|
     |1100|Cash|800.00|
 
-    The data replication generates dimensions on that account based on the different segments. User will see a *Department* dimension with the values 000, 100, and 200, respectively. Another dimension, *Division*, will show the values 00, 01, and 02, respectively.
+    The data replication generates dimensions on that account based on the different segments. User will see a *Department* dimension with the values 000, 100, and 200 respectively. Another dimension, *Division*, will show the values 00, 01, and 02 respectively.
 
-- Customer Master records and outstanding Receivables transactions
+- Customer master records and outstanding transactions from the Receivables module
 
     These transactions will be brought in as the amount remaining in Dynamics GP.
 
-- Vendor Master records and outstanding Payables transactions
+- Vendor master records and outstanding transactions from the Payables module
 
     These transactions will be brought in as the amount remaining in Dynamics GP.
 - Inventory items
 
     Inventory is imported with the cost valuation method that was selected when the company setup wizard was run. Currently, the data replication brings in the quantity on hand for the items at the time of migration. This quantity is brought into the blank location.
 
-- Historical data from Sales Order Processing, Inventory, and Purchase Order Processing
+- Historical data from Sales Order Processing, Purchase Order Processing, and Inventory
 
      This data can be used in Power BI reports and Power Apps. In [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, the data is included in the SmartList views in the **Customers**, **Vendors**, and **Items** lists. Technically, the data is stored in table extensions.  
 
@@ -113,22 +113,22 @@ When you connect your [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md
 
 ## Data replication from Dynamics SL
 
-When using the intelligent cloud replication for Dynamics SL 2018 CU1 the following information is replicated from your on premise Dynamics SL to Business Central SaaS.
+When using the intelligent cloud replication for Dynamics SL 2018 CU 1, the following information is replicated from Dynamics SL to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online:
 
 - Chart of Accounts master records as of the time of the replication
 - Account Balance as of the time of the replication
-- Customer Master records and outstanding Receivables transactions
+- Customer master records and outstanding transactions from the Receivables module
 
-    These transactions will be brought in as the amount remaining within Dynamics SL.
-- Vendor Master records and outstanding Payables transactions
+    These transactions will be brought in as the amount remaining in Dynamics SL.
+- Vendor master records and outstanding transactions from the Payables module
 
-    These transactions will be brought in as the amount remaining within Dynamics SL.
+    These transactions will be brought in as the amount remaining in Dynamics SL.
 
 - Inventory items
 
-    Inventory is imported with the Quantity on Hand for the items at the time of migration. This quantity is brought into the blank location.
+    Inventory is imported with the Quantity on Hand for the items when the company setup wizard was run. This quantity is brought into the blank location.
 
-- Historical data from Sales Order Processing, Inventory, and Purchase Order Processing
+- Historical data from Sales Order Processing, Purchase Order Processing, and Inventory
 
      This data can be used in Power BI reports and Power Apps. In [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, the data is included in the SmartList views in the **Customers**, **Vendors**, and **Items** lists. Technically, the data is stored in table extensions.  
 
