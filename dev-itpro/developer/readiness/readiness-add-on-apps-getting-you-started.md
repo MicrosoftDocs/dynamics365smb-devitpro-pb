@@ -34,7 +34,7 @@ To ease your journey, from the initial listing to the final publication of your 
 - STEP 3: Develop your app
 - STEP 4: Initiate the validation and publication process
 
-> [!IMPORTANT]  Please review all of the steps and follow the Marketing and Technical Validation Checklist. 
+> [!IMPORTANT]  Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
 
 ## STEP 1: Create and set up your accounts
 
@@ -123,9 +123,9 @@ PowerShell script available at](http://aka.ms/BCSandboxLocal)
 ## The “Ready to Go” program
 
 There are several things to keep in mind in building an Add-on app. The **"Ready to Go" program** is designed to support you in bringing your Microsoft Dynamics 365 Business Central offers into Microsoft Appsource. The program encompasses the following three core support options that you can leverage:
-- Element 1: “Ready to Go” Online learning
-- Element 2: “Ready to Go” Coaching
-- Element 3: “Ready to Go” Platform
+- Element 1: [“Ready to Go” Online learning](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-learning-catalog)
+- Element 2: [“Ready to Go” Coaching](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go?tabs=coaching)
+- Element 3: [“Ready to Go” Platform](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go?tabs=learning)
 
 If you want to have more in depth learning resources to get up to speed, then you can get a sneak-peek of the extensive set of **"Ready to Go" resources available in the online learning catalog**. We highly recommend that you either consume the materials which are built for you in the “Ready to Go” online learning catalog or get coached by one of our ISV Development Centers.
 
@@ -199,29 +199,12 @@ When listing your app you need to specify the following:
 Upon listing your app on AppSource you will receive an email from us that outlines the next steps you need to take along with a list of useful resources that can help you bring your app to AppSource quickly.
 
 ## Next steps
-Now that you have completed step 1 and 2 (cf. setting up your accounts and listing your offer on AppSource) you can now proceed to step 3 and 4 (cf. Developing your offer initiating the validation and publication process). Please read the next whitepaper in the series called Developing and publishing your Add-on App to AppSource to learn more about step 3 and 4.
+Now that you have completed step 1 and 2 (cf. setting up your accounts and listing your offer on AppSource) you can now proceed to step 3 and 4 (cf. Developing your offer initiating the validation and publication process). Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
 
 ## Useful resources
 ## Guidelines and general information
 
-Find general information on Add-on apps for Business Central here: aka.ms/BusinessCentralAdd-onApps. 
-
-Utilize our step-by-step guidelines to develop and publish your Business Central app:
-
-- Add-on apps 
-- Whitepaper 1: Getting you started with Dynamics 365 Business Central Add-on apps 
-- Whitepaper 2: Developing and publishing Dynamics 365 Business Central Add-on apps
-
-## The “Ready to Go” program
-
-There are several things to keep in mind in building an Add-on app. The "Ready to Go" program is designed to support you in bringing your Microsoft Dynamics 365 Business Central offers into Microsoft Appsource. The program encompasses the following three core support options that you can leverage:
-- Element 1: “Ready to Go” Online learning
-- Element 2: “Ready to Go” Coaching
-- Element 3: “Ready to Go” Platform
-
-If you want to have more in depth learning resources to get up to speed, then you can get a sneak-peek of the extensive set of "Ready to Go" resources available in the online learning catalog. We highly recommend that you either consume the materials which are built for you in the “Ready to Go” online learning catalog or get coached by one of our ISV Development Centers.
-
-Learn more about how you can leverage the “Ready to Go” program’s different support options here: [aka.ms/ReadyToGo](https://aka.ms/ReadyToGo) 
+Find general information on Add-on apps for Business Central here: [aka.ms/AppSourceGo](aka.ms/AppSourceGo)
 
 ## Monthly “Ready to Go” Office Hours call
 
