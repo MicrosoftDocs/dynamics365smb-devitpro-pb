@@ -31,6 +31,12 @@ Sets the text string that displays with the object, control, or other element in
 
 -   XMLport objects  
 
+## Syntax
+
+```
+Caption = 'Name';
+```
+
 ## Remarks  
  A caption is the text used to show the identity of a control (for example, in the caption bar of a page or a label for another control).  
 

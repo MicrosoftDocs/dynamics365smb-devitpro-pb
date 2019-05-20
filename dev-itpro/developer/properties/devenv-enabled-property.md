@@ -27,6 +27,11 @@ Sets a value that indicates whether a field or key is enabled or disabled, or wh
 ## Property Value  
  **True** on pages if the field, key, or control is enabled; otherwise, **false** on pages. The default is **true** on pages.  
 
+## Syntax
+```
+Enabled = false;
+```
+
 ## Remarks  
  For keys, this property determines whether a key is maintained in the database. If you are not using the key or if you rarely use the key, you may want to mark it as disabled for performance reasons. When you want to use the key you can change this setting.  
 

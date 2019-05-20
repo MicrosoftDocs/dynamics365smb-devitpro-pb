@@ -20,6 +20,11 @@ Field controls in a GridLayout control on a page.
   
 ## Property Values  
 An integer that specifies the number of columns to span the field.  
+
+## Syntax
+```
+ColumnSpan = 2;
+```
   
 ## Remarks  
 When you set a field to span several columns, the field occupies the cells to its right, and existing fields in the occupied cells are moved to the right. 

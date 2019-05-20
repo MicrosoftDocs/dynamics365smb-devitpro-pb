@@ -18,6 +18,11 @@ Sets whether imported records automatically replace existing records with the sa
   
 ## Applies To  
  Data items in XMLports.  
+
+## Syntax
+```
+AutoReplace = true;
+```
   
 ## Property Value 
  **True** if the records are replaced; otherwise, **false**. The default value is **false**.  

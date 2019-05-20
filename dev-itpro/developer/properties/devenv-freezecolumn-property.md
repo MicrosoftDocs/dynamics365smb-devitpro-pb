@@ -20,6 +20,10 @@ Specifies the columns in a list that remain in view on a page, even when you scr
   
 -   Page groups  
 
+## Syntax
+```
+FreezeColumn = GroupCompanyDisplayName;
+```
 
 ## See Also  
 [Properties](devenv-properties.md)  

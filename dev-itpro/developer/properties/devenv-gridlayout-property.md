@@ -24,6 +24,11 @@ The controls inside this definition should be layed out as a grid using the capt
 ## Property Values  
 -   Rows  
 -   Columns  
+
+## Syntax
+```
+GridLayout = Columns;
+```
   
 ## Remarks 
 This property is only supported on grids.

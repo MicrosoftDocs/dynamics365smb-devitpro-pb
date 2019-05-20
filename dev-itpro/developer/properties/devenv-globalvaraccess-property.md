@@ -24,7 +24,12 @@ Specifies whether global variables in the object that contains the event publish
   
 ## Property Value  
  **True** to allow access from event subscriber methods to global variables in the object that contains the event publisher method; otherwise, **false**. The default value is **false**.  
-  
+
+## Syntax
+```
+GlobalVarAccess = true;
+```
+ 
 ## Remarks  
  When you set the GlobalVarAccess property to **true**, event subscriber methods that subscribe to an event can call the global variable parameters in the object that is specified by the [EventPublisherObject Property](devenv-eventpublisherobject-property.md), which contains the event publisher method that declares the event. You must add variable parameters to the event subscriber methods manually and use a name and type that matches the variable declaration in the event publisher object.  
 

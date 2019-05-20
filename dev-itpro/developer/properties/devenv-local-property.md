@@ -21,6 +21,11 @@ Specifies if a method is local to the object on which the method is defined. A l
  **True** to specify the method as local; otherwise, **false**.  
   
  When you add a method, the property is set to **true** by default. If the value is blank, then it defaults to **false**.  
+
+## Syntax
+```
+Local = true;
+```
   
 ## Remarks  
  When the property is set to **true**, the method definition in AL code includes the word **Local**.  

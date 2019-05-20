@@ -22,7 +22,12 @@ Sets whether external images are allowed on a report.
   
 ## Property Value  
  **True** if external images are allowed; otherwise, **false**. The default is **false**.  
-  
+
+## Syntax
+```
+EnableExternalImages = true;
+```
+ 
 ## Remarks  
  When you use the Visual Studio Report Designer for creating reports for the RoleTailored client, you can add images such as your company logo to a report. You can add either *embedded* or *external* images.  
   

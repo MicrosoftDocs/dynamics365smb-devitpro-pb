@@ -25,7 +25,12 @@ Sets a value that specifies whether an action is enabled or disabled if it enter
   
 ## Property Value  
  **True**/**false**  
-  
+ 
+## Syntax
+```
+EnabledIfError = true;
+```
+
 ## See Also  
  [EnabledIfInsertion Property](devenv-enabledifinsertion-property.md)   
  [EnabledIfSelection Property](devenv-enabledifselection-property.md)

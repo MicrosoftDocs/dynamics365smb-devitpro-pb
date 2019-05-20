@@ -30,7 +30,14 @@ Sets a unique numeric ID for this codeunit, table, page, report, XMLport, or con
 -   Tables  
   
 -   XMLports  
-  
+
+## Syntax
+```
+page ID AdressPage
+{
+    ...
+}
+```
 ## Remarks  
  The ID must be unique within the scope of the object. For example, two code units, tables, or page cannot have the same ID, and no control can have the same ID as another control on that object.  
   

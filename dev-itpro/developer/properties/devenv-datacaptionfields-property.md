@@ -22,7 +22,12 @@ Sets the fields that appear to the left of the caption on pages that display the
 -   Pages  
   
 -   Tables  
-  
+ 
+## Syntax
+```
+DataCaptionFields = "Customer Name", "Company Display Name";
+```
+
 ## Remarks  
   
 ## Card Pages  

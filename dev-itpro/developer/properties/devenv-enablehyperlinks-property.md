@@ -22,7 +22,12 @@ Sets whether hyperlinks to URLs are allowed on reports.
   
 ## Property Value  
  **True** if links to other URLs from the report are allowed; otherwise, **true**. The default is **false**.  
-  
+ 
+## Syntax
+```
+EnableHyperlinks = true;
+```
+
 ## Remarks  
  When you use the Visual Studio Report Designer for creating reports for the RoleTailored client, you can add hyperlinks on controls that target different URLs. This allows you set up a link from a field on a report to another report or page of the RoleTailored client for drilling down into data. To use hyperlinks on a report, the EnableHyperlinks property must be set to **true**. <!-- For examples that use this property, see [Walkthrough: Creating a Link from a Report to a Report](Walkthrough-Creating-a-Link-from-a-Report-to-a-Report.md) and [Walkthrough: Creating a Link from a Report to a Page](Walkthrough-Creating-a-Link-from-a-Report-to-a-Page.md). --> 
   

@@ -31,7 +31,12 @@ Sets the string that is to be used to separate fields.
 |<**LF**>|LF alone.|  
 |<**TAB**>|Tabulator alone.|  
 |**Other strings**|The literal string entered.|  
-  
+
+## Syntax
+```
+FieldSeparator = <TAB>;
+```
+ 
 ## Remarks  
  The strings in the preceding table must be entered literally, using the < and > characters. These special strings can be combined and can also be mixed with other characters.  
   

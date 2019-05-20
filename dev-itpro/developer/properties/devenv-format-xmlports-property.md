@@ -18,6 +18,11 @@ Determines the import and export format of the XMLPort.
 ## Applies To  
   
 -   XMLports  
+
+## Syntax
+```
+Format = VariableText;
+```
   
 ## Remarks  
  This property supports support CSV (comma separated values) export files and XML files. Available export options are as follows:  
