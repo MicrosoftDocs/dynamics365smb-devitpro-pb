@@ -35,3 +35,7 @@ An upgrade codeunit is a codeunit that has the [SubType Property (Codeunit)](dev
 ## See Also  
  [Upgrading Data](../devenv-upgrading-data.md) 
 -->
+
+## See Also
+ [Properties](devenv-properties.md)  
+ [Codeunit Properties](properties/devenv-codeunit-properties)

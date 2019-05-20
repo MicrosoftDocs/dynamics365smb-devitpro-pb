@@ -22,7 +22,12 @@ Sets the minimum number of times that an element can occur.
   
 ## Property Values  
  The possible values are **Once** and **Zero** (0). The default value is **Once**.  
-  
+
+## Syntax
+```
+MinOccurs = Zero;
+```
+ 
 ## Remarks  
  The maximum number of times an element can appear is determined by the value of the [MaxOccurs Property](devenv-maxoccurs-property.md). The **MinOccurs** and **MaxOccurs** properties conform to the standard occurrence constraints that are used when defining XML schemas.  
   

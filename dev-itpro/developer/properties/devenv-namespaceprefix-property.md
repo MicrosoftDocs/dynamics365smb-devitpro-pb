@@ -29,3 +29,7 @@ Specifies the namespace prefix on an XMLport element.
 ## See Also  
  [Designing XMLports](../devenv-Designing-XMLports.md)   
  [How to: Create XMLports](../devenv-How-to-Create-XMLports.md) -->
+
+## See Also
+ [Properties](devenv-properties.md)  
+ [XMLPort Object](../devenv-xmlport-object.md)

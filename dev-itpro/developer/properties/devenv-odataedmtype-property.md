@@ -20,7 +20,11 @@ Specifies the Entity Data Model Type to be used for this node in the OData metad
 ## Applies to  
   
 -   Page Fields 
-  
+
+## Syntax
+```
+ODataEDMType = 'POSTALADDRESS';
+```  
 
 ## See Also  
  [Properties](devenv-properties.md)

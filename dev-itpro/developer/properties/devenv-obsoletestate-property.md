@@ -31,6 +31,11 @@ The following table describes the property values.
 |**Pending**|Will be obsolete in a future release. This setting has no effect on the current use of the table, field, or key in code. |  
 |**Removed**|Is obsolete. The element is not deleted from the database; however, references to the element in code are only allowed in upgrade codeunits. References from other objects will result in a runtime error.|   
 
+## Syntax
+```
+ObsoleteState = Pending;
+```
+
 ## Remarks
   
 By coding against this property, you can use this property as a way to communicate through code to other developers which tables and fields will become obsolete over time and those which are already obsolete, enabling them to adjust their application code accordingly.

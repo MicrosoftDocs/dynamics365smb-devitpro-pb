@@ -40,6 +40,11 @@ Sets either a date method for retrieving the year, month, or day from a date fie
  When you set up a totals method on another column in the query, rows in the resulting dataset are grouped by the day, month, or year, depending on the **Method** property setting.  
  <!-- 
  For more information about date methods, see [Using the Date Method to Retrieve Day, Month, and Year Data](Using-the-Date-Method-to-Retrieve-Day--Month--and-Year-Data.md).  -->
+
+### Syntax
+```
+Method = Day;
+```
   
 ## Totals Methods and Groups  
  A totals method performs a calculation on fields in a column and returns a single value. When you set a totals method on a column, the retrieved records are automatically grouped by the other columns in the query, as indicated by a check mark in the **Group By** column in Query Designer. When grouped by a column, records that have similar values for the column are grouped together. The totals method is applied against the records in the group. A summary value is calculated for the group and returned in a single row for the group in the dataset. The **Method** property values correspond to the SQL aggregate functions SUM, AVG, MIN, MAX, and COUNT in SQL SELECT statements.  
@@ -48,6 +53,13 @@ Sets either a date method for retrieving the year, month, or day from a date fie
   
  **Count** is only associated with its parent **DataItem**, not a specific column. Therefore, when you set a column to **Count**, you leave the [DataSource Property](devenv-datasource-property.md) of the column blank. The **Count** method returns an integer value that corresponds to the number of rows that are returned from the table that is specified by the data item associated with the column.  
 
+### Syntax
+```
+Method = Max;
+```
+
   
 ## See Also  
  [MethodType Property](devenv-methodtype-property.md)   
+ [Properties](devenv-properties.md)  
+
