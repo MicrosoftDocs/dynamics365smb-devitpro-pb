@@ -15,21 +15,20 @@ ms.author: solsen
 # Using Designer
 
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code, as it provides an easy and convenient way of making immediate adjustments to your design by simply dragging and dropping the components on the page.  
-
 Here is a quick overview of capabilities in **Designer**: 
 
-|Features                           |Applies to                       | 
-|-----------------------------------|---------------------------------|
-|Add components                     |fields and columns               |
-|Move components                    |fields, columns, cues, parts, actions and action groups |
-|Remove components                  |fields, columns, cues, parts, actions and action groups |
+|Features      |Applies to    | 
+|--------------|--------------|
+|Add components    |fields and columns               |
+|Move components   |fields, columns, cues, parts, actions and action groups |
+|Remove components |fields, columns, cues, parts, actions and action groups |
 |Change field importance, like showing in collapsed FastTab header or under **Show More** |fields|
 |Exclude field from Quick Entry|fields, columns| 
-|Set freeze pane and clear freeze pane |columns                       |
-|Adjust column width |columns                       |
-|Edit caption                       |FastTab, cards, FactBox          |
-|Save extension/download code       |general                          |
-|Preview design                     |general                          |
+|Set freeze pane and clear freeze pane |columns|
+|Adjust column width |columns |
+|Edit caption        |FastTab, cards, FactBox    |
+|Save extension/download code |general           |
+|Preview design               |general           |
 
 ## Important points to note
 
@@ -43,7 +42,7 @@ Here is a quick overview of capabilities in **Designer**:
 
 - You can only add fields/columns, from a predefined list, which is based on the source table. You cannot create new ones.
 
-- In the client, users can change the many of these settings for their workspace only by using personalization (see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user).  
+- In the client, users can change the many of these settings for their workspace only by using personalization (see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user)).  
 
 ## Start and stop designing
 
@@ -93,7 +92,7 @@ Designer lets you make adjustments to the actions that are defined in the action
 
 ![Designer action bar](media/designer-action-bar.png "Designer action bar")
 
-### Remove, hide and show actions and groups
+### Remove, hide, and show actions and groups
 
 Actions and actions groups that are already hidden appear dimmed. To change the state of an action or action group, select it, and then choose one of the following options:
 
