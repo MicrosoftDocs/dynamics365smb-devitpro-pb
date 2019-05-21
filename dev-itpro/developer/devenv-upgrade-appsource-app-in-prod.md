@@ -1,5 +1,4 @@
 ---
-author: rweigel
 title: "Upgrading AppSource Apps in Production"
 description: "Describes how to upgrade apps available on AppSource that are already in running in production."
 ms.custom: na
@@ -9,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+ms.author: rweigel
 ---
 
 # Upgrading AppSource Apps in Production
