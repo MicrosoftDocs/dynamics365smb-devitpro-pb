@@ -204,7 +204,7 @@ Now that you have completed step 1 and 2 (cf. setting up your accounts and listi
 ## Useful resources
 ## Guidelines and general information
 
-Find general information on Add-on apps for Business Central here: [aka.ms/AppSourceGo](aka.ms/AppSourceGo)
+Find general information on Add-on apps for Business Central here: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
 
 ## Monthly “Ready to Go” Office Hours call
 
