@@ -23,7 +23,11 @@ Sets whether links are allowed.
   
 ## Property Value  
  **True** if links are allowed; otherwise, **false**. The default value is **true**.  
-  
+
+## Syntax
+```
+LinksAllowed = false;
+```  
 ## Remarks  
  If LinksAllowed is set to **true**, then you can add links or notes to a page. The links can be a links to web sites, files stored on the local computer or on a remote computer, or links to pages.  
   

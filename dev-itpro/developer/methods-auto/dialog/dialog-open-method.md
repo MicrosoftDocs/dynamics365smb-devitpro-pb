@@ -40,8 +40,9 @@ Use these optional parameters to specify variables for field1, field2, and so on
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- Dialog windows that are opened by an object are closed when the object terminates.  
+## Remarks
+  
+Dialog windows that are opened by an object are closed when the object terminates.  
   
  Dialog windows are automatically sized to hold the longest line of text and the total number of lines.  
   
@@ -51,7 +52,10 @@ Use these optional parameters to specify variables for field1, field2, and so on
   
 -   Write messages using active voice. For example, write “Processing items” instead of writing “Items are being processed.”  
   
--   Align the \# and @ fields to the left with at least one space character between the text and the variable.  
+-   Align the \# field to the left with at least one space character between the text and the variable.
+
+> [!NOTE]
+> With the [!INCLUDE[nav_windows_md](../../includes/nav_windows_md.md)], you can use @ characters instead of # characters for the *String* parameter to display the value as percentage and a progress indicator. The percentage value that is displayed is the percentage of the variable value from 0 to 9999. This is not supported in the [!INCLUDE[webclient](../../includes/webclient.md)].  
   
 ## Example  
  This example shows how to use the dialog.OPEN method.  
@@ -87,9 +91,11 @@ MyDialog.CLOSE()
  Every one second, the dialog window updates with the new value of *MyNext* until it reaches 4, then the dialog window closes.  
   
 ## Example  
- This example shows how to use the dialog.OPEN method to display a progress indicator.  
+ This example shows how to use the dialog.OPEN method to display a progress indicator in the [!INCLUDE[nav_windows_md](../../includes/nav_windows_md.md). The progress indicator will not display in the [!INCLUDE[webclient](../../includes/webclient.md)].
   
- This code example requires that you create the following variables and text constants.  
+This code example requires that you create the following variables and text constants. 
+
+The progress indicator do
   
 |Name|Datatype|  
 |----------|--------------|  
@@ -112,7 +118,7 @@ SLEEP(1000);
 MyDialog.CLOSE()  
 ```  
   
- The dialog window opens and displays the progress indicator and percentage.  
+The dialog window opens and displays the progress indicator and percentage.  
   
 
 ## See Also

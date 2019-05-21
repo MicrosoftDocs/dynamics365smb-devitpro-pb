@@ -25,9 +25,15 @@ Sets a value that determines how data is formatted, together with the AL express
 -   Pages  
   
 -   Reports  
-  
+
+## Syntax
+```
+AutoFormatExpression = "Currency Code";
+AutoFormatType = 2;
+```
+
 ## Remarks  
- These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios.  
+These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios.  
     
 ## See Also  
  [AutoFormatExpression Property](devenv-autoformatexpression-property.md)

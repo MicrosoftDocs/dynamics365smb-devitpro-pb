@@ -27,13 +27,12 @@ Specifies the fields that are linked between two tables using the [LinkTable Pro
 |**<field>**|A field from the table that is specified as the data source of this XML item|  
 |**<reference field>**|A field from the table that is specified in the [LinkTable Property](devenv-linktable-property.md).|  
   
-## Remarks  
- The following syntax shows the **LinkFields** property.  
-  
+## Syntax
 ```  
-<field>=FIELD(<reference field>)   
+LinkFields = <field>=FIELD(<reference field>)   
 ```  
-  
+ ## Remarks  
+ 
  This property works in combination with the [LinkTable Property](devenv-linktable-property.md) and the [LinkTableForceInsert Property](devenv-linktableforceinsert-property.md).  
   
  The property sets a filter on the table that is the data source for the XML item. The filter selects only those records that contain the same **<field>** value in source table as the **<reference field>** value from the table specified in [LinkTable Property](devenv-linktable-property.md).  

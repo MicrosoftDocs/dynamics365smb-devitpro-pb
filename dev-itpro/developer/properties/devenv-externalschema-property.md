@@ -23,7 +23,12 @@ Specifies the name of the database schema of the external database.
   
 ## Property Value  
  The name of the schema of the external database.  
-  
+
+## Syntax
+```
+ExternalSchema = 'schemaName';
+```
+ 
 ## Remarks  
  This property appears when you specify **ExternalSQL** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.  
   

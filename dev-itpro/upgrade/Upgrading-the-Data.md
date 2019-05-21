@@ -451,7 +451,7 @@ Import the permission sets and permissions XML files that you exported from the 
     1. Open table **2000000004 Permission Sets** in the client, and delete all permission sets except SUPER.
 
         > [!NOTE]
-        > You are only required to delete those permission sets that also included in the permission sets XML file that you will import. Because if you try to import a permission set with the same name as on already in the database, you will get an error. 
+        > You are only required to delete those permission sets that are also included in the permission sets XML file that you will import. Because if you try to import a permission set with the same name as one already in the database, you will get an error. 
     2. Run XMLport **9171** and XMLport **9172** to import the permission sets and permission XML files.
 
         For more information, see [How to: Export and Import Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ImportPerms).

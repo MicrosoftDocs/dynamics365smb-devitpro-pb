@@ -24,7 +24,12 @@ Sets filters on fields of the underlying table of a query.
  Filter expression.  
   
  The filter expression must follow the required syntax. For more information, see [Entering Criteria in Filters](../devenv-entering-criteria-in-filters.md).  
-  
+
+## Syntax
+```
+DataItemTableFilter = "Document Type" = FILTER (Invoice | "Credit Memo");
+```
+
 ## Remarks  
  In a query, a DataItem specifies a table from which to retrieve data. You use the DataItemTableFilter property to apply conditions on one or more fields of the table to limit the records in the resulting dataset of the query. You can filter on any field in the table, not just those fields that are included as columns in the resulting dataset.  
   

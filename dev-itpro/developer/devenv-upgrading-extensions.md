@@ -92,7 +92,7 @@ Another one of the more important properties is the `DataVersion` property, that
 All of these properties are encapsulated in a `ModuleInfo` data type. You can access these properties through the `NAVApp.GetCurrentModuleInfo()` and `NAVApp.GetModuleInfo()` methods. 
 
 ### Upgrade codeunit example
-This example uses the `OnCheckPreconditionsPerDatabase()` trigger to check whether the data version of the previous extension version is compatible for the upgrade.
+This example uses the `OnCheckPreconditionsPerDatabase()` trigger to check whether the data version of the previous extension version is compatible for the upgrade before restoring the archived data of the old extension.
 
 ```
 codeunit 70000001 MyUpgradeCodeunit
@@ -105,8 +105,14 @@ codeunit 70000001 MyUpgradeCodeunit
     begin
         if NavApp.GetCurrentModuleInfo(myInfo) then
             if myInfo.DataVersion = Version.Create(1, 0, 0, 1) then
-                ERROR('The upgrade is not compatible');
+                error('The upgrade is not compatible');
     end;
+
+    trigger OnUpgradePerDatabase()
+    begin
+        NavApp.RestoreArchiveData(Database::"TableName");      
+    end;
+}
 ```
 
 ## Running the upgrade for the new extension version

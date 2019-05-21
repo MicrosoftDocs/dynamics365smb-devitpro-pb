@@ -19,6 +19,12 @@ Sets the calculation for FlowFields.
   
 ## Applies To  
  Table Fields  
+
+## Syntax
+
+```
+CalcFormula = Count(RecordCalcFields);
+```
   
 ## Remarks  
  You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and whether a record exists.  

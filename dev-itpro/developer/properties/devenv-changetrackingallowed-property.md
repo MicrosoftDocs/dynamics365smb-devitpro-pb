@@ -19,7 +19,13 @@ Indicates whether change tracking is enabled for the entity exposed through the 
  - Pages
   
 ## Property value
-**true** if the page is exposed as a service, otherwise **false**. The default is **false**.
+**True** if the page is exposed as a service, otherwise **false**. The default is **false**.
+
+## Syntax
+
+```
+ChangeTrackingAllowed = true;
+```
  
 ## See Also  
 [Properties](devenv-properties.md)  

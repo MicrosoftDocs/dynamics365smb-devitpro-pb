@@ -24,6 +24,14 @@ Table keys
 > [!NOTE]  
 > The `Clustered` property cannot be used in table extension objects.
 
+## Property value
+**True** if the index is clustered, otherwise **false**. The default is **false**.
+
+## Syntax
+```
+Clustered = true;
+```
+
 ## Remarks
 
 A clustered index determines the physical order in which records are stored in the table. Using a clustered key can improve the time it takes to retrieve records. 

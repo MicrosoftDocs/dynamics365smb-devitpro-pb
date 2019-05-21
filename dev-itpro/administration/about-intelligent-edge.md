@@ -1,5 +1,5 @@
 ---
-title: Intelligent Edge for on-premises | Microsoft Docs
+title: Connect to the Intelligent Cloud from on-premises | Microsoft Docs
 description: Get a cloud copy of your data so you are connected to the intelligent cloud also when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL, or Dynamics NAV.
 author: bmeier94
 
@@ -10,32 +10,32 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 04/01/2019
+ms.date: 05/20/2019
 ms.author: bmeier
 
 ---
 
-# Connect to the intelligent cloud with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
+# Connect to the Intelligent Cloud from On-Premises with [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
 Customers running their workloads on-premises can get access to the same intelligent cloud scenarios that customers using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online have. Each on-premises solution that connects to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will be able to replicate data from on-premises to the cloud tenant. In this way, users can access intelligent cloud scenarios of Machine Learning, Power BI, Flow, and others to drive suggested actions.  
 
-For the list of currently supported on-premises solutions, see [Which products and versions are supported for connecting to the intelligent cloud](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.
+For the list of currently supported on-premises solutions, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.
 
-## Setting up your intelligent cloud
+## Setting up your connection to the intelligent cloud
 
-This section provides the steps required to configure your intelligent cloud environment. This can simply be done by following the instructions in the **Intelligent Cloud Setup** assisted setup wizard within your Business Central cloud tenant.  
+This section provides the steps required to get intelligent insights through a connection to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. This can simply be done by following the instructions in the **Intelligent Cloud Setup** assisted setup wizard in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant.  
 
 There are a few key points that need to be understood before proceeding with the setup:
 
 - It is always a best practice to test this configuration in your Sandbox environment before making changes to a production tenant. For more information see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md).
-- Any existing data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant will be overwritten with data from your on-premises solution, or source, once the data replication process is run. If you do not want data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant to be overwritten, do not configure the intelligent cloud environment.
-- All users that do not have ‘SUPER’ permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
+- Any existing data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant will be overwritten with data from your on-premises solution, or source, once the data replication process is run. If you do not want data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to be overwritten, do not configure the connection.
+- All users that do not have *SUPER* permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. See more below.
 - If your data source is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises), several stored procedures will be added to the SQL server you define. These stored procedures are required to replicate data from your SQL server to the Azure SQL server associated with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
-- In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the amount of data that can be replicated for any tenant is limited to 150GB. If your database is larger than 150GB, try reducing the number of companies you are replicating data for. This can done using the company selection within the Wizard. Additional options for databases exceeding 150GB will be available in future updates.  
-- Before setting up your intelligent cloud environment, ensure that at least one user in the system that has ‘SUPER’ permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
+- In the current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the amount of data that can be replicated for any tenant is limited to 150GB. If your database is larger than 150GB, try reducing the number of companies you are replicating data for. This can done using the company selection within the assisted setup guide. Additional options for databases exceeding 150GB will be available in future updates.  
+- Before setting up the connection to the intelligent cloud, ensure that at least one user in the system that has *SUPER* permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.  
 - Configuring the intelligent cloud environment will have no impact on any users or data in your on-premises solution.
 
-To begin configuring your intelligent cloud environment, navigate to the assisted setup page and launch the **Intelligent Cloud Setup** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (on-premises) you may also launch the wizard from your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
+To begin configuring the connection, navigate to the assisted setup page and launch the **Intelligent Cloud Setup** assisted setup guide. If you are using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, the same setup guide is also available in your on-premises solution. You will automatically be redirected to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to continue the configuration process.  
 
 ### The assisted setup guide
 
@@ -57,7 +57,7 @@ The assisted setup guide consists of up to 6 pages that take you through the pro
     |---------|---------|
     |*SQL Connection* |**SQL Server**, which is your locally installed SQL Server instance, or **Azure SQL**.|
     |*SQL Connection string*|You must specify the connection string to your SQL Server. For more information, see [the SQL Server blog](https://blogs.msdn.microsoft.com/sqlforum/2010/12/20/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string/). The following snippets illustrate a couple connection strings with different formats: </br>`Server={SQL Server Name};Initial Catalog={Database Name};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};`</br></br>`Server={SQL Server Name};Database={Database Name};User Id={SQL Server Authenticated UserName};Password={SQL Server Authenticated Password};`</br></br>The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data replication process.|
-    |*Integration runtime name*|If your SQL connection is **SQL Server**, you must specify the runtime service that will be used to replicate the data from the defined source to your Business Central cloud tenant. </br></br>If you are a hosting partner, you may have multiple tenants running on the same Integration runtime service. Each tenant will be isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. To create a new runtime service, leave the field empty, and then choose the Next button. Once you choose Next, a new replication pipeline will be created in the Azure service. This should take less than a minute to complete.|
+    |*Integration runtime name*|If your SQL connection is **SQL Server**, you must specify the runtime service that will be used to replicate the data from the defined source to your Business Central online tenant. </br></br>If you are a hosting partner, you may have multiple tenants running on the same Integration runtime service. Each tenant will be isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the Microsoft Integration Runtime Manager. To create a new runtime service, leave the field empty, and then choose the Next button. Once you choose Next, a new replication pipeline will be created in the Azure service. This should take less than a minute to complete.|
 
 4. Self-Hosted Integration Runtime (SHIR)
 
@@ -82,18 +82,18 @@ One example is if you want to change the companies you replicate data for. If th
 
 Another example of why you would want to run the wizard again is you may be a hosting partner and want to add tenants to your existing runtime service.  
 
-In both examples, you will be making updates to an existing runtime service. When you get to the point of the wizard where you can enter specify an existing run time services name, open the Microsoft Integration Runtime Service Manager and enter the runtime name into the wizard field; you will not be allowed to copy/paste. The runtime service will identify that you are making updates to an existing service and will not create a new one.  
+In both examples, you will be making updates to an existing runtime service. When you get to the point of the wizard where you can specify an existing runtime services name, open the Microsoft Integration Runtime Service Manager and enter the runtime name in the field in the wizard; you will not be allowed to copy/paste. The runtime service will identify that you are making updates to an existing service and will not create a new one.  
 
 Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your replication schedule or regenerating an Azure Data Factory (ADF) key may be done using the **Intelligent Cloud Management** page in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. For more information, see [Managing your Intelligent Cloud environment](manage-intelligent-edge.md).  
 
 ## User groups and permission sets
 
-When running in an intelligent cloud state, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will be, with very few exceptions, read-only. Because the on-premises solution is your primary application for running your business activities such as data entry, tax reporting, and sending invoices, these tasks will need to be completed in the on-premises application. We limit the amount of data you can enter into your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to data that is not replicated, otherwise any data that was written to the tenant database would be continuously overwritten during the replication process.  
+When running as connected with an on-premises solution, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will be, with very few exceptions, read-only. Because the on-premises solution is your primary application for running your business activities such as data entry, tax reporting, and sending invoices, these tasks will need to be completed in the on-premises solution. We limit the amount of data you can enter into your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant to data that is not replicated, otherwise any data that was written to the tenant database would be continuously overwritten during the replication process.  
 
-To make setting up this ‘Read-Only’ tenant more efficient, we created a new *Intelligent Cloud* user group and an *Intelligent Cloud* permission set. Once the intelligent cloud environment is configured, all users without SUPER permissions will be automatically assigned to the *Intelligent Cloud* user group. Only users with SUPER permissions will be allowed to make modifications to the system at this point.  
+To make setting up this read-only tenant more efficient, we created a new *Intelligent Cloud* user group and an *Intelligent Cloud* permission set. Once the intelligent cloud environment is configured, all users without SUPER permissions will be automatically assigned to the *Intelligent Cloud* user group. Only users with SUPER permissions will be allowed to make modifications to the system at this point.  
 
 > [!NOTE]  
-> Before configuring the intelligent cloud environment ensure that at least one user in each company is assigned SUPER permissions.  
+> Before you configure the a connection from on-premises to b[!INCLUDE [prodshort](../developer/includes/prodshort.md)], make sure that at least one user in each company is assigned SUPER permissions.  
 
 Users that are reassigned to the Intelligent Cloud user group will have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user may create new user groups and permissions sets and assign users accordingly. It is highly recommended to create any new permissions sets from a copy of the Intelligent Cloud permission set and then take away permissions you do not want users to have.  
 
@@ -106,11 +106,11 @@ When an intelligent cloud environment is configured, it is highly recommended th
 
 ## System requirements
 
-To connect to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md), the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also use either [!INCLUDE[prodshort](../developer/includes/prodshort.md) (on-premises) or Dynamics GP 2018 R2. For more information, see [Which products and versions are supported for connecting to the intelligent cloud](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.
+To connect to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md), the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions. For more information, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
 
 ## See Also
 
-[Managing your intelligent cloud Environment](manage-intelligent-edge.md)  
+[Managing your intelligent cloud environment](manage-intelligent-edge.md)  
 [Replicating on-premises data](data-replication-intelligent-cloud.md)  
-[Frequently Asked Questions about Connecting to the intelligent cloud](faq-intelligent-cloud.md)  
+[Frequently Asked Questions about connecting to the intelligent cloud](faq-intelligent-cloud.md)  
 [Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)  

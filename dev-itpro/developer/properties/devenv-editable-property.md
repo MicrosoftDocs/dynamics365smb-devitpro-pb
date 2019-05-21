@@ -26,6 +26,11 @@ Sets a value that indicates whether a field, page, or control can be edited thro
 ## Property Value  
  **True** on pages if the field, page, or control can be edited; otherwise, **false** on pages. The default value is **true**.  
 
+## Syntax
+```
+Editable = true;
+```
+
 ## Remarks  
  For fields, use this property to make a field for display only.  
 

@@ -20,6 +20,12 @@ Sets the card page that is associated with items in the current list page.
 ## Applies To  
  - List pages  
  - ListPart pages  
+
+## Syntax
+
+```
+CardPageID = "Customer Card";
+```
   
 ## Remarks  
  Use this property on a list page or listpart page to specify the card page that should be displayed when an end user double-clicks an item on the list page or listpart page.  

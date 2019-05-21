@@ -25,6 +25,11 @@ Specifies whether global methods in the object that contains the event publisher
   
 ## Property Value  
  **True** to expose the global methods in the object that contains the event publisher method to event subscriber methods; otherwise, **false**. The default value is **false**.  
+
+## Syntax
+```
+IncludeSender = true;
+```
   
 ## Remarks  
  Setting the property to **true** enables you to call global methods in the object that contains the event publisher method from event subscriber methods that subscribe to the published event.  

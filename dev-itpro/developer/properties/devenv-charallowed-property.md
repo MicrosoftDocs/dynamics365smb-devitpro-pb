@@ -22,6 +22,11 @@ Sets the range of characters the user can enter into this field or control.
 -   Page Fields  
   
 -   Table Fields  
+
+## Syntax
+```
+CharAllowed = 'AZ';
+```
   
 ## Remarks  
  If you want users to only enter uppercase letters in this field, enter **AZ**. This ensures that only uppercase characters in the range of A-Z are accepted. If you want both uppercase and lowercase characters, leave this value blank.  

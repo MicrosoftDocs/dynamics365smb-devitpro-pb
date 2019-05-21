@@ -26,6 +26,11 @@ Specifies the name of the original table in the external database.
 ## Property Value  
  The name of the table in the external database.  
 
+## Syntax
+```
+ExternalName = 'organization';
+```
+
 ## Remarks  
  This property appears when you specify **CRM** or **ExternalSQL** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.  
 

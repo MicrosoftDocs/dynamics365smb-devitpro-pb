@@ -30,5 +30,10 @@ Sets the description of the table, field, page, report, or control. This descrip
 - Tables
 - XMLports, including XMLport text elements, XMLport field elements, XMLport table elements, XMLport field attributes, and XMLport text attributes
 
+## Syntax
+```
+Description = 'Name of the organization.';
+```
+
 ## See Also  
  [Properties](devenv-properties.md)

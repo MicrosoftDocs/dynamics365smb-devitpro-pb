@@ -22,6 +22,11 @@ Sets whether data from the linked table is forcibly modified or inserted into a 
   
 ## Property Value  
  **True** if you want to forcibly insert or modify data; otherwise, **false**. The default is **true**.  
+
+## Syntax
+```
+LinkTableForceInsert = false;
+```
   
 ## Remarks  
  This property works in combination with the [LinkFields Property](devenv-linkfields-property.md) and the [LinkTable Property](devenv-linktable-Property.md).  

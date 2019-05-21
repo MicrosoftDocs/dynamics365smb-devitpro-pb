@@ -13,15 +13,17 @@ author: SusanneWindfeldPedersen
 
 # EntityName Property
 Sets the singular entity name with which the page is exposed in the api endpoint. The following example illustrates the syntax:
-```
-EntityName = 'Customer';
-```
 
 ## Applies To  
   
 - Pages  
   
 - Queries  
+
+## Syntax
+```
+EntityName = 'Customer';
+```
   
 ## See Also  
  [EntitySetName Property](devenv-entitysetname-property.md)  

@@ -12,11 +12,9 @@ caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # SubType Property      
 The SubType property is applicable to the following types:
-- [Subtype Property (Blob)](devenv-subtype-blob-property.md)  
+- [Subtype Property (BLOB)](devenv-subtype-blob-property.md)  
 - [SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)   
 
 ## See Also  

@@ -24,7 +24,12 @@ Sets whether the field value should be automatically incremented.
   
 > [!NOTE]  
 >  If you want to manually assign a value to a field that has the AutoIncrement property set to **true**, you must be member of the SQL Server db_owner database permission set.  
-  
+
+## Syntax
+```
+field(4; D; Integer) { AutoIncrement = true; }
+```
+
 ## Remarks  
  A table can only contain one auto-increment field. The numbers assigned to this field will not always be consecutive for the following reasons:  
   

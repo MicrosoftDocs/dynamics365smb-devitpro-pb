@@ -8,11 +8,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a9518144-46ef-4cd9-b260-1d232895f2d2
 author: SusanneWindfeldPedersen
 ---
-
-[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
 
 # Report Properties
 This topic lists properties of the report object.  

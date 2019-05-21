@@ -22,11 +22,14 @@ Sets whether an action should be viewed as an exit action in the lower part of t
 -   Actions  
   
 -   Pages  
-  
-## Remarks  
- Available options:  
-  
- **True**/**false**
-  
+ 
+## Property value
+**True** if the action is viewed as an exit action, otherwise **false**. The default is **false**.
+
+## Syntax
+```
+InFooterBar = false;
+```
+
 ## See Also  
  [Properties](devenv-properties.md)
