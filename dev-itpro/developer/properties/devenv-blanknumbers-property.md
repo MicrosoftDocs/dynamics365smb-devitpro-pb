@@ -12,14 +12,12 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # BlankNumbers Property
 Indicates whether the system will clear a range of numbers as it formats them.  
   
 ## Applies To  
   
--   Page Fields  
+- Page Fields  
   
 ## Property Value  
   
@@ -31,6 +29,10 @@ Indicates whether the system will clear a range of numbers as it formats them.
 |**BlankZero**|Clear numbers equal to zero|  
 |**BlankZeroAndPos**|Clear positive numbers and zero|  
 |**BlankPos**|Clear positive numbers|  
-  
+
+## Syntax  
+```
+BlankNumbers = BlankNegAndZero;
+```
 ## See Also  
  [BlankZero Property](devenv-blankzero-property.md)

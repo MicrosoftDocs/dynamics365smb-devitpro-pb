@@ -25,7 +25,14 @@ Sets the indentation level of a data item, column, or filter row in a query.
  Integer  
   
  **0** sets no indentation, **1** indents the item one level, **2** indents the item two levels, and so on.  
-  
+
+<!--
+## Syntax
+```
+ Indentation = 0;
+```
+-->
+ 
 ## See Also  
-[properties](devenv-properties.md)  
+[Properties](devenv-properties.md)  
 [Indentation Property Reports](devenv-indentation-reports-property.md) 

@@ -21,7 +21,11 @@ Sets the link to be directed to when pressing the Help button in the user interf
 - RequestPages 
 
 - Pages
-  
+
+## Syntax
+```
+HelpLink = 'https://www.my-help-link-page.com';
+```
 
 ## See Also  
 [Page Object](../devenv-page-object.md)  

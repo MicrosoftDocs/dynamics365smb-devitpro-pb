@@ -13,10 +13,7 @@ ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 ---
 
-[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
-
 # Page and Page Extension Properties Overview
-
 This topic lists properties that apply to the [Page Object](../devenv-page-object.md) and [Page Extension Object](../devenv-page-ext-object.md). 
 
 ## Page object properties

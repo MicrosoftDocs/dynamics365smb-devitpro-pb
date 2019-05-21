@@ -76,6 +76,14 @@ To complete the tasks in this article, you will use various tools and components
 | Old [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version  |<ul><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]</li></ul>|
 |New [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li> </ul>|
 
+<!-- Get application version ans family of the old application
+
+ C:\windows\system32> Get-NAVApplication -ServerInstance BC130
+
+Database server      Database name ApplicationVersion ApplicationFamily
+---------------      ------------- ------------------ -----------------
+NAVDEVVM-0127\BCDEMO BC 130 App    13.4.28076.0       W1-->
+
 ## Task 2: Prepare the Application Object Text Files
 
 You must prepare text files that contain the application objects for the different application versions previously described (original, modified, and target). The text files provide the input for the application merge process.
@@ -165,7 +173,12 @@ The product installation media contains sample scripts that provide examples of 
     ```
     Merge-NAVApplicationObject -OriginalPath ORIGINAL -TargetPath TARGET -ModifiedPath MODIFIED -ResultPath RESULT  
     ```  
+    For example:
 
+
+    ```
+    Merge-NAVApplicationObject -OriginalPath C:\Upgrade\ORIGINAL -TargetPath C:\Upgrade\TARGET -ModifiedPath C:\Upgrade\MODIFIED -ResultPath C:\Upgrade\RESULT  
+    ```  
 Depending on the number of objects that you are merging and the number of differences found, this can take a few seconds, a few minutes, or longer. When the cmdlet completes, the result of the merge is shown, including a description of any application objects with conflicting code. The **RESULT** folder will contain a text file (.TXT) for each merged application object and possibly one or more .CONFLICT files that describe the code conflicts that occurred during the merge.
 
 At this point, you can either go to Task 4 to analyze and eventually resolve the conflicts, or you can go directly to Task 5 to import the merged objects as-is from the **RESULT** folder to the new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
@@ -185,7 +198,7 @@ After you have completed the merge, you import the new merged application object
     For example, give the database the name *My Upgraded App*. For more information, see [Creating and Altering Databases](../cside/cside-create-databases.md).
 
     >[!IMPORTANT]  
-    > You must set the collation of the new database to match the collation of the old application database. To see the collation of the old database, open the database in the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], then choose **File** > **Database** > **Alter** > **Collation**. 
+    > You must set the collation of the new database to match the collation of the old application database. To see the collation of the old database, open it in the old [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] version, then choose **File** > **Database** > **Alter** > **Collation**. 
 
 2. Make sure the database includes a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.
 

@@ -13,8 +13,6 @@ author: SusanneWindfeldPedersen
 redirect_url: devenv-properties.md
 ---
 
-[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
-
 # MenuSuite Properties
 This topic lists properties that apply to the MenuSuite object.    
 

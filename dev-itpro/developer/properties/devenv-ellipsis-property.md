@@ -27,6 +27,11 @@ Sets a value that specifies whether an ellipsis (...) is appended to the caption
   
 ## Property Value  
  **True** if the ellipsis is appended; otherwise, **false**. The default value is **false**.  
+
+## Syntax
+```
+Ellipsis = true;
+```
   
 ## See Also  
  [Properties](devenv-properties.md)

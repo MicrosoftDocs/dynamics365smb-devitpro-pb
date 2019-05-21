@@ -1,25 +1,24 @@
 ---
-title: "OnValidate (Fields) Trigger"
+title: "OnBeforeValidate Trigger"
 ms.custom: na
 ms.date: 04/01/2019
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
+ms.author: t-blrobl
 ms.service: "dynamics365-business-central"
-ms.assetid: dbc4e207-632a-482b-9787-615eb1815571
-author: SusanneWindfeldPedersen
-manager: edupont
+author: blrobl
 ---
 
-# OnValidate (Fields) Trigger
-Runs when user input is validated.  
+# OnBeforeValidate Trigger
+Runs before the user input is validated. 
 
 ## Syntax  
   
 ```  
-OnValidate()  
-```
+OnBeforeValidate()  
+```   
   
 ## Applies To  
 - Fields  
@@ -27,7 +26,7 @@ OnValidate()
 ## Remarks  
  This trigger is run after the default validation behavior. An error message displays if an error occurs in the trigger code. In case of an error, the user entry is not written to the database.  
 
- The OnValidate trigger is also a field trigger at the page level. For more information, see [OnValidate (Page Fields) Trigger](devenv-onvalidate-page-fields-trigger.md). If both the table field and page field triggers are defined, then the OnValidate trigger on the table field is run before the OnValidate trigger on the page field.  
+It applies to an already existing table field when it is being modified in a table extension. 
 
 ## Example
 
@@ -36,18 +35,21 @@ tableextension 50111 "CustomerExt" extends Customer
 {
     fields
     {
-        field(50112; Acronym; Text[15])
+        modify("Address 2")
         {
-            trigger OnValidate();
+            trigger OnAValidate()
             begin
-                rec.Acronym := rec.Acronym.ToUpper();
+                if (rec.Address = '') then
+                    error('Please, input a first address before specifying a second one.');
             end;
         }
     }
 }
+
 ```
-  
+
 ## See Also  
  [Triggers](devenv-triggers.md)  
  [Table and Field Triggers](devenv-table-and-field-triggers.md)  
+ [OnAfterValidate Trigger](devenv-onaftervalidate-fields-trigger.md)  
  [Table Properties](../properties/devenv-table-properties.md)    

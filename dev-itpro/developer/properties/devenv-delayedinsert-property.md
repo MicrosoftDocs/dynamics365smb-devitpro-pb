@@ -23,6 +23,11 @@ Sets a value that specifies whether a user must leave a record before it is inse
   
 ## Property Value  
  **True** if the record is inserted when the user leaves the record; otherwise, **false** if the record is inserted when the user leaves the control that shows the primary key. The default value is **false**.  
+
+## Syntax
+```
+DelayedInsert = false;
+```
   
 ## See Also  
  [Properties](devenv-properties.md)

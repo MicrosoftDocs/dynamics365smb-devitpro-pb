@@ -23,6 +23,11 @@ Sets whether to include the caption of a field in the dataset of a report.
 ## Property Value  
  **True** if the caption is included in the dataset; otherwise **false**. The default value is **true**.  
 
+## Syntax
+```
+IncludeCaption = false;
+```
+
 ## Remarks  
  In Visual Studio Report Designer, if you want to use the Caption or CaptionML values of a field as a label on a report layout, then you must include the caption in the dataset. You design the dataset by using Report Dataset Designer. When you add table fields to the dataset with Report Dataset Designer, you can set the **IncludeCaption property** to **true** to specify that the caption for the field is also added to the dataset. If you do not include the caption in the dataset, then in a multilanguage application, you cannot use the multilanguage captions as labels in the report.  
 

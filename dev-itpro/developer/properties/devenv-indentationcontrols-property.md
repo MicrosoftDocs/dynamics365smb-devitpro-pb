@@ -16,7 +16,12 @@ author: SusanneWindfeldPedersen
 
 # IndentationControls Property
 Sets which columns (controls) are indented in a list.  
-  
+ 
+## Syntax
+```
+IndentationControls = Field1, Field2;
+```
+
 ## Applies To  
   
 -   Repeater subtype controls on page  

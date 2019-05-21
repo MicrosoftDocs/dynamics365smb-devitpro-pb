@@ -13,8 +13,6 @@ ms.assetid: cf65e1e0-f696-4aac-afbd-992cd82f98de
 ms.author: solsen
 ---
 
-[!INCLUDE[d365fin_dev_blog](../includes/d365fin_dev_blog.md)]
-
 # Table and Table Extension Properties
 The following topic lists properties that apply to the [Table Object](../devenv-table-object.md) and, in some cases, to the [Table Extension Object](../devenv-table-ext-object.md) as specified below.
 

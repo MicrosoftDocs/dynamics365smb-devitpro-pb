@@ -16,7 +16,12 @@ author: SusanneWindfeldPedersen
 
 # LookupPageID Property
 Sets the ID of the page you want to use as a lookup.  
-  
+
+## Syntax
+```
+LookupPageId = 50100;
+```
+ 
 ## Applies To  
   
 -   Page Fields  

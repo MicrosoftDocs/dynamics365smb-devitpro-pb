@@ -39,3 +39,25 @@ Sets the subtype for a group control on a page, which determines how fields in a
 |**FixedLayout**|Arranges fields in rows and columns.<br /><br /> This value is not fully supported by the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)]. You can experience misalignment of captions and fields in some setups.|<[Arranging Fields in Rows and Columns Using a FixedLayout Control](Arranging-Fields-in-Rows-and-Columns-Using-a-FixedLayout-Control.md)|  
 |**GridLayout**|Arranges fields in rows and columns. **GridLayout** gives you more control than **FixedLayout** over how fields are displayed by letting you span rows and columns, specify labels for individual fields, and layout fields in a row-by-row or column-by-column basis.<br /><br /> This value is not fully supported by the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)]. You cannot span rows and columns by setting the [RowSpan Property](devenv-rowspan-property.md) and [ColumnSpan Property](devenv-columnspan-property.md) on fields because these properties are not supported.|[How to: Arrange Fields in Rows and Columns Using the GridLayout Control](How-to--Arrange-Fields-in-Rows-and-Columns-Using-the-GridLayout-Control.md)| 
 -->
+
+## Syntax
+```
+page 50100 MyPage
+{  
+    layout
+    {
+        area(Content)
+        {
+
+            GroupType(name)
+            {
+                ...
+            }
+        }
+    }
+}
+```
+
+## See Also
+[Properties](devenv-properties.md)  
+[Pages Overview](../devenv-pages-overview.md)  

@@ -72,10 +72,10 @@ Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prod
 + [Deliver consulting services as a VAR: https://aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices) 
 
 ### Shortcuts to developing and publishing Business Central apps documentation
-+ [Whitepaper 1: Getting you started with Business Central Add-on apps](https://go.microsoft.com/fwlink/?linkid=869734)  
-+ [Whitepaper 2: Developing and publishing Business Central Add-on apps](https://go.microsoft.com/fwlink/?linkid=869733)  
-+ [Whitepaper 1: Getting you started with Business Central Connect apps](https://go.microsoft.com/fwlink/?linkid=2005501)  
-+ [Whitepaper 2: Developing and publishing Business Central Connect apps](https://go.microsoft.com/fwlink/?linkid=2005402)
 
++ [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing)
++ [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
++ [How to create an effective sales landing page](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-create-sales-landing-page)
++ [How to make compelling videos](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-make-compelling-videos)
 ### Learning catalog
 + ["Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  

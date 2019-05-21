@@ -11,13 +11,17 @@ ms.author: solsen
 ---
 
 # Running a Container-Based Development Environment
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is available as a container-based image, ready for running on a Windows system with Docker installed. The container-based approach is used when you need access to both the AL development environment and the C/SIDE development environment.
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is available as a container-based image, ready for running on a Windows system with Docker installed. The container-based approach is used when you need access to both the AL development environment and the C/SIDE development environment. 
+
+
+> [!TIP]  
+> For more information on where to find Docker images, see [What Docker Image is Right for You?](https://freddysblog.com/2018/04/16/which-docker-image-is-the-right-for-you/).
 
 ## Install and configure Docker
 Install Docker and configure it for Windows Containers.
 
 1. Please choose the version of Docker that is appropriate for the host operating system.
-    - Use [Docker Community Edition](https://www.docker.com/community-edition) if the host operating system is Windows 10.  
+    - Use [Docker Community Edition]( https://hub.docker.com/editions/community/docker-ce-desktop-windows) if the host operating system is Windows 10.  
         For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10).
     - Use [Docker Enterprise Edition](https://www.docker.com/enterprise-edition) if the host operating system is Windows Server.  
         For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server).

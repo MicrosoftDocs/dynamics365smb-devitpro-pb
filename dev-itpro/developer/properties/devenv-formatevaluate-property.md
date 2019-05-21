@@ -24,17 +24,22 @@ Sets the data that is being imported or exported as XML data types or as the sta
  AL Format/Evaluate (default)  
   
  XML Format/Evaluate  
-  
+ 
+## Syntax
+```
+FormatEvaluate = XML;
+```
+
 ## Remarks  
   
-## Importing  
+### Importing  
  If the XML document that you want to import contains data that corresponds to the standard AL data types, use AL Format/Evaluate (default value). The data is then evaluated before being inserted into the database.  
   
  If the XML document that you want to import contains data that uses the standard XML data types, use the XML Format/Evaluate setting. This ensures that the data is evaluated and converted to the AL data types before being inserted into the database.  
   
  If the data that you want to import does not follow either the Standard AL formats or the XML formats, import the data into a temporary table in text format. You can then use AL code to convert the data before inserting it into the database.  
   
-## Exporting  
+### Exporting  
  If you want to export data that uses the standard AL data types to an XML document and use these data types in the XML document, use AL Format/Evaluate (default value). The data from the database is then formatted according to the standard rules for AL data types.  
   
  If you want to export data in the standard XML formats to an XML document, use the XML Format/Evaluate setting. This ensures that the data you export from the database is formatted and exported in the standard XML formats.  

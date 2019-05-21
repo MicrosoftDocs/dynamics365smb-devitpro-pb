@@ -24,7 +24,12 @@ Sets the extended data type of a control.
 -   Page Fields  
   
 -   Table Fields  
-  
+
+## Syntax
+```
+ExtendedDatatype = EMail;
+```
+ 
 ## Remarks  
  The value of this property overrides the value of the table field and it converts a text field into the selected extended data type. 
    

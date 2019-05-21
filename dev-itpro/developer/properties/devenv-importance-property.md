@@ -24,6 +24,11 @@ Specifies how a field appears on the FastTab of a page when the FastTab is expan
 |**Standard**|Displays the field on the page by default. This is the default value.|  
 |**Promoted**|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.<br /><br /> If there is only one FastTab on the page, then this property has no effect because the FastTab cannot be collapsed.|  
 |**Additional**|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|  
+
+## Syntax
+```
+Importance = Additional;
+```
   
 ## Remarks
 

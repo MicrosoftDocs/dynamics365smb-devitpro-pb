@@ -12,17 +12,19 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # CalcFields Property
 Sets a list of FlowFields to automatically calculate.  
   
 ## Applies To  
   
 -   Reports  
-  
 -   XMLports  
-  
+
+## Syntax
+```
+CalcFields("Overdue Sales Documents Style");
+```
+
 ## Remarks  
 The list of the FlowFields is the list of CalcFields that you can calculate. For that, [AutoCalcField property](devenv-autocalcfield-property.md) must be enabled. 
 <!--
