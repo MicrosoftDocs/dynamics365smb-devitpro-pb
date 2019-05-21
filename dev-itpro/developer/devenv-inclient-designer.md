@@ -16,6 +16,9 @@ ms.author: solsen
 
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code, as it provides an easy and convenient way of making immediate adjustments to your design by simply dragging and dropping the components on the page.  
 
+> [!TIP]  
+> For information about personalization of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
+
 Here is a quick overview of capabilities in **Designer**: 
 
 |Features                           |Applies to                       | 
