@@ -111,7 +111,7 @@ Let’s look at an example of the transformation process. In [!INCLUDE [navnow_m
 
 When you connect your [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] to [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the data replication process must make the relevant data transformation to put the correct values into the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] table. Technically, it is the same process that is used for upgrading from [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
-## Data replication from Dynamics SL
+<!-- ## Data replication from Dynamics SL
 
 When using the intelligent cloud replication for Dynamics SL 2018 CU 1, the following information is replicated from Dynamics SL to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online:
 
@@ -131,7 +131,7 @@ When using the intelligent cloud replication for Dynamics SL 2018 CU 1, the foll
 - Historical data from Sales Order Processing, Purchase Order Processing, and Inventory
 
      This data can be used in Power BI reports and Power Apps. In [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, the data is included in the SmartList views in the **Customers**, **Vendors**, and **Items** lists. Technically, the data is stored in table extensions.  
-
+-->
 ## See also
 
 [Connect to the Intelligent Cloud from On-Premises](about-intelligent-edge.md)  

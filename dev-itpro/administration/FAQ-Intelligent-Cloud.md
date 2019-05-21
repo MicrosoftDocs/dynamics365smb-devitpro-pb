@@ -24,7 +24,7 @@ The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 - [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises
 - Dynamics NAV 2018 CU 16
     Support added with the April 2019 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update
-- Dynamics SL 2018 CU 1
+<!-- - Dynamics SL 2018 CU 1-->
 
 ## How is my on-premises data replicated to my [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant?
 
