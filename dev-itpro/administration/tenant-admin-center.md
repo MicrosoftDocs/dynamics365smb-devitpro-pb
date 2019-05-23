@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 04/01/2019
+ms.date: 05/31/2019
 ms.author: jaredha
 
 ---
@@ -27,11 +27,11 @@ The following users are authorized to access the [!INCLUDE[prodadmincenter](../d
 
 - Internal tenant administrators
 - Admin agent
-- Helpdesk agent 
+- Helpdesk agent
 
 The admin agent and helpdesk agent roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner associated with the tenant. These roles are delegated administrators on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
 
-As a partner, you can access the center from the Partner Dashboard in the Microsoft Partner Center:
+As a partner, you can access the administration center from the Partner Dashboard in the Microsoft Partner Center:
 
 1. Log into the [Partner Dashboard](https://partnercenter.microsoft.com/dashboard).
 2. Select the **Customers** link in the navigation pane.
@@ -39,9 +39,18 @@ As a partner, you can access the center from the Partner Dashboard in the Micros
 4. Select **Service Management**.
 5. Under the **Administer Services** heading, select [!INCLUDE[prodlong](../developer/includes/prodlong.md)].
 
-You can also get to the administration center by navigating directly to the URL of a tenant's instance. This is done with the following URL, if you replace *[TENANT_ID]* with the tenant ID of the tenant.
+You can also get to the administration center by navigating directly to the URL of a tenant. This is done with the following URL, if you replace *[TENANT_ID]* with the tenant ID of your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
 
 `https://businesscentral.dynamics.com/[TENANT_ID]/admin`
+
+> [!TIP]
+> The tenant ID is shown in the **Help and Support** page in your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
+## Submitting support requests on behalf of your customer
+
+Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, in the administration center, use the link in the Help menu. This opens a new browser tab with the site where you can submit the support request.  
+
+Fill in the fields as appropriate. Most of the necessary information you can find in the administration center, including the tenant ID and the [!INCLUDE [prodshort](developer/includes/prodshort.md)] version.  
 
 ## See also
 
