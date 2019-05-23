@@ -31,6 +31,17 @@ The following users are authorized to access the [!INCLUDE[prodadmincenter](../d
 
 The admin agent and helpdesk agent roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner associated with the tenant. These roles are delegated administrators on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
 
+### Internal administrators
+
+As the internal administrator, you can get to the administration center by navigating directly to the URL. This is done with the following URL, if you replace *[TENANT_ID]* with the tenant ID of your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+
+`https://businesscentral.dynamics.com/[TENANT_ID]/admin`
+
+> [!TIP]
+> The tenant ID is shown in the **Help and Support** page in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
+### Partner access to the administration center
+
 As a partner, you can access the administration center from the Partner Dashboard in the Microsoft Partner Center:
 
 1. Log into the [Partner Dashboard](https://partnercenter.microsoft.com/dashboard).
@@ -39,12 +50,10 @@ As a partner, you can access the administration center from the Partner Dashboar
 4. Select **Service Management**.
 5. Under the **Administer Services** heading, select [!INCLUDE[prodlong](../developer/includes/prodlong.md)].
 
-You can also get to the administration center by navigating directly to the URL of a tenant. This is done with the following URL, if you replace *[TENANT_ID]* with the tenant ID of your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+You can also get to the administration center by navigating directly to the URL of a tenant as described in the previous section.
 
-`https://businesscentral.dynamics.com/[TENANT_ID]/admin`
-
-> [!TIP]
-> The tenant ID is shown in the **Help and Support** page in your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+> [!NOTE]
+> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).  
 
 ## Submitting support requests on behalf of your customer
 

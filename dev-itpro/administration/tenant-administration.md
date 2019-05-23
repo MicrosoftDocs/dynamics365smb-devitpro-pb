@@ -32,8 +32,16 @@ If the prospect wants to extend the trial further than those 30 days, you can ex
 
 As a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] reselling partner, you have administrator access to your customers' Office 365 tenant and their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration Center. You can also log into their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as a *delegated administrator* if you want to reproduce errors, for example.  
 
-The Business Central Administration Center is a powerful tool for you to manage your customers' tenants. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
+The Business Central Administration Center is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
+### Restricted access to Business Central as delegated administrator
+
+When you sign in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated administrator from the administration center, you have access to all areas of their [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. However, because you are not registered as a regular user, there are certain tasks that you cannot do.
+
+The following tasks are not available to the delegated administrator:
+
+- Set up jobs to run as scheduled tasks in the job queue
+- Export data to Excel
 
 ## See Also
 
