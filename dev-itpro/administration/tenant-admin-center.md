@@ -19,7 +19,7 @@ ms.author: jaredha
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Here, administrators can view and work with production and sandbox environments for the tenant, set up upgrade notifications, and view telemetry for events on the tenant.  
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center](../developer/media/business_central_admin_center.png)
+> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
 
 ## Accessing the administration center
 

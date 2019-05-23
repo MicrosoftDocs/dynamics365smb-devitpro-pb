@@ -101,7 +101,7 @@ To set the upgrade window for an environment:
 For major upgrades only, you have the option to select a specific date on which the environment is upgraded. When a major upgrade version is available, a notification is sent to the notification recipients listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] (See [Managing Tenant Notifications](tenant-admin-center-notifications.md) for more information). The **Upgrade version** field in the **Version Management** section of the environment details also displays the version number of the available upgrade version.
 
 > [!div class="mx-imgBorder"]
-> ![Schedule Business Central Upgrade](../developer/media/business_central_admin_center_upgrade.png)
+> ![Schedule Business Central Upgrade](../developer/media/admin/business_central_admin_center_upgrade.png)
 
 To schedule an upgrade date:
 
