@@ -48,9 +48,9 @@ You can also get to the administration center by navigating directly to the URL 
 
 ## Submitting support requests on behalf of your customer
 
-Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, in the administration center, use the link in the Help menu. This opens a new browser tab with the site where you can submit the support request.  
+Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, in the administration center, use the **New Support Request** link in the Help menu. This opens a new browser tab with the site where you can submit the support request.  
 
-Fill in the fields as appropriate. Most of the necessary information you can find in the administration center, including the tenant ID and the [!INCLUDE [prodshort](developer/includes/prodshort.md)] version.  
+Fill in the fields as appropriate. You can find most of the necessary information in the administration center, including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version.  
 
 ## See also
 

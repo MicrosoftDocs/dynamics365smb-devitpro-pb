@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 04/01/2019
+ms.date: 05/31/2019
 ms.author: edupont
 ---
 # Administration of Business Central Online
@@ -27,6 +27,13 @@ If the prospect wants to extend the trial further than those 30 days, you can ex
 
 > [!TIP]
 > You can suggest your prospects sign up for a trial, but you can also set up a customized demonstration environment based on your sandbox environment. This way, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md).
+
+## Acting as a delegated administrator
+
+As a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] reselling partner, you have administrator access to your customers' Office 365 tenant and their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration Center. You can also log into their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as a *delegated administrator* if you want to reproduce errors, for example.  
+
+The Business Central Administration Center is a powerful tool for you to manage your customers' tenants. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
+
 
 ## See Also
 
