@@ -13,7 +13,7 @@ ms.author: solsen
 ---
 
 # Security Setting and IP Protection
-When developing an extension, your code is by default protected against downloading or debugging. Read below about the security setting and adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the V2 extensions.
+When developing an extension, your code is by default protected against downloading or debugging. Read below about the security setting and adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the extensions.
 
 The extension development package provides a pre-configured setting for IP protection against viewing or downloading the code of the extensions. However, this setting can also be controlled in the manifest; the `app.json` file.
 

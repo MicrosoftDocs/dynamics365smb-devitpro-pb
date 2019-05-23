@@ -18,7 +18,7 @@ ms.author: jswymer
 To make your extension available to tenant users requires three basic tasks: publish the extension package to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server instance, synchronize the extension with the tenant database, and install the extension on the tenant.
 
 > [!NOTE]  
->  This article describes how to publish and install the first version of a V2 extension. If you want to publish an install newer version of an extension, see [Upgrading Extensions V2](devenv-upgrading-extensions.md).  
+>  This article describes how to publish and install the first version of an extension. If you want to publish an install newer version of an extension, see [Upgrading Extensions](devenv-upgrading-extensions.md).  
 
 ## Publish and synchronize an extension
 Publishing an extension to a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server instance adds the extension to the application database that is mounted on the server instance, making it available for installation on tenants of the server instance. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
