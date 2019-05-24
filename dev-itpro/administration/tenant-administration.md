@@ -41,7 +41,9 @@ When you sign in to your customers' [!INCLUDE [prodshort](../developer/includes/
 The following tasks are not available to the delegated administrator:
 
 - Set up jobs to run as scheduled tasks in the job queue
-- Export data to Excel
+- Use the **Edit in Excel** action or interact with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] data in Excel using the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] add-in for Excel.
+
+    You can still use the **Open in Excel** action to view data in Excel.
 
 ## See Also
 

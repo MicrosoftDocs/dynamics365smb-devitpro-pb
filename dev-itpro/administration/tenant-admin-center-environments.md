@@ -39,9 +39,9 @@ When the new production environment is created, it will be on the latest product
 
 A sandbox environment is a non-production instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Isolated from production, a sandbox environment is the pace to safely explore, learn, demo, develop, and test the service without the risk of affecting the data and settings of your production environment.
 
-   > [!NOTE]
-   > Each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant is limited to three sandbox environments.
-    
+> [!NOTE]
+> Each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant is limited to three sandbox environments.
+
 To create a sandbox environment:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select the **New** action on the action ribbon.
@@ -86,8 +86,8 @@ When a sandbox environment is created on a Preview version, the environment will
 
 The upgrade window for an environment defines a window of time during the day in which the environment can be upgraded. When an update is rolling out to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, regardless of whether it's the monthly service update or a major update, the update will be applied to an environment within the time frame that the upgrade window defines. This helps to ensure that updates are applied outside of the customer's normal business hours, for example.
 
-   > [!NOTE]
-   > The upgrade window must be a minimum of six hours.
+> [!NOTE]
+> The upgrade window must be a minimum of six hours.
 
 To set the upgrade window for an environment:
 
@@ -108,10 +108,10 @@ To schedule an upgrade date:
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], Select the **Name** of the relevant environment to open the environment details.
 2. Select the **Schedule Upgrade** action on the **Upgrade** list on the action ribbon.
 3. In the **Schedule Environment Upgrade** pane, select the desired upgrade date.
-    > [!Note] 
+    > [!NOTE]
     > The selected date must be within a given date range displayed in the pane.
-    
-4. Select **Schedule Upgrade**.    
+
+4. Select **Schedule Upgrade**.
 
 ## See also
 
