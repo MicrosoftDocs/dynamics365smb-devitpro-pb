@@ -73,7 +73,8 @@
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 ## On-Premises
 ### Intelligent Insights
-#### [Connect to the Intelligent Cloud](administration/about-intelligent-edge.md)
+#### [Connect to the Intelligent Cloud from On-Premises](administration/about-intelligent-edge.md)
+#### [Replicating On-Premises Data](administration/data-replication-intelligent-cloud.md)
 #### [Managing your Intelligent Cloud Environment](administration/manage-intelligent-edge.md)  
 #### [Frequently Asked Questions about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)  
 ### [Server Administration Tool](administration/administration-tool.md)
@@ -161,6 +162,7 @@
 ### [Writing Extension Install Code](developer/devenv-extension-install-code.md)
 ### [Upgrading Extensions](developer/devenv-upgrading-extensions.md)
 ### [Publish and Install an Extension V2](developer/devenv-how-publish-and-install-an-extension-v2.md)
+### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ## [Signing an App Package File](developer/devenv-sign-extension.md)
 ## [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ## Extending the Base Application

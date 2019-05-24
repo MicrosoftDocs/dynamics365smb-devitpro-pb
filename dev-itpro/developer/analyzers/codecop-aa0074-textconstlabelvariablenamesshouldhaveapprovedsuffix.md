@@ -20,6 +20,24 @@ TextConst and Label variable names should have an approved suffix.
 TextConst and Label variable names should have a suffix (an approved three-letter suffix: Msg, Tok, Err, Qst, Lbl, Txt) describing usage.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+|Three-letter suffix  |Meaning  |
+|---------------------|---------|
+|Msg                  |Message  |
+|Tok                  |Token   |
+|Err                  |Error  |
+|Qst                  |StrMenu or Confirm |
+|Lbl                  |Label, Caption |
+|Txt                  |Text |
+
+## Example
+```
+// TextConst prefixed with Tok for Token
+MethodGetTok : TextConst ENU = 'GET';
+```
+
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

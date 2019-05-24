@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.service: dynamics365-business-central
 ms.topic: article
 ms. search.keywords: cloud, edge
-ms.date: 05/14/2019
+ms.date: 05/20/2019
 ms.author: bmeier
 
 ---
@@ -22,9 +22,10 @@ The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
 - Dynamics GP 2018 R2
 - [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises
-- Dynamics NAV 2018 CU16 (added with the April 2019 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update)
+- Dynamics NAV 2018 CU 16
 
-Support for additional products will become available later.  
+    Support added with the April 2019 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update
+<!-- - Dynamics SL 2018 CU 1-->
 
 ## How is my on-premises data replicated to my [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant?
 

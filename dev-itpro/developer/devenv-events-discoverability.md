@@ -8,13 +8,11 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: ddb133b9-e940-4db8-bf3a-e5f906600188
-caps.latest.revision: 24
 author: SusanneWindfeldPedersen
 ---
 # Discoverability of Events 
 
-You subscribe to events to extend application and interact with the base application and other V2 extensions. This topic describes how to discover events that you can subscribe to without writing the code manually. Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario. For example, record the events raised when you post a purchase order and identify the events that you need for your extension. You can retrieve the events in the form of AL snippet code and use them in Visual Studio Code directly. 
+You subscribe to events to extend application and interact with the base application and other extensions. This topic describes how to discover events that you can subscribe to without writing the code manually. Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario. For example, record the events raised when you post a purchase order and identify the events that you need for your extension. You can retrieve the events in the form of AL snippet code and use them in Visual Studio Code directly. 
 
 ## Using the Event Recorder
 You can launch the Event Recorder session from [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)]. It can be accessed in the following two ways:
