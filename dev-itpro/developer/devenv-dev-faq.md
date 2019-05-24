@@ -34,7 +34,7 @@ In the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the concept of M
 - Making pages searchable
 - Making pages accessible through a navigation structure
 
-The first purpose can be achieved in Extensions V2 by using the new properties added to Pages and Reports. For more information, see [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md).
+The first purpose can be achieved in Extensions by using the new properties added to Pages and Reports. For more information, see [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md).
 
 The second purpose can be achieved by extending the Navigation Pane page and/or by adding Actions to other existing pages that can serve as a navigation starting point. For more information, see [Adding Menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md).
 

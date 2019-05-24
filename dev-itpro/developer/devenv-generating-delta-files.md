@@ -17,12 +17,12 @@ caps.latest.revision: 18
 # Generating Delta files
 You can use the `Compare-NAVApplicationObject` powershell cmdlet to generate .delta files from two versions of a set of application objects. 
 
-The cmdlet has a `ExportToNewSyntax` switch that allows generating .delta files that can be used as a starting point for creating V2 extensions. Setting the `ExportToNewSyntax` flag generates .delta files that contain additional information needed to generate the correct structure and layout of V2 extension objects.  
+The cmdlet has a `ExportToNewSyntax` switch that allows generating .delta files that can be used as a starting point for creating extensions. Setting the `ExportToNewSyntax` flag generates .delta files that contain additional information needed to generate the correct structure and layout of extension objects.  
 
 > [!IMPORTANT]  
 > The Txt2Al conversion tool will reject .delta files that were generated without using the -ExportToNewSyntax flag.
 
-Using the `ExportToNewSyntax` switch for the `Compare-NAVApplicationObject` cmdlet produces a .delta file that can be converted to a V2 extension. 
+Using the `ExportToNewSyntax` switch for the `Compare-NAVApplicationObject` cmdlet produces a .delta file that can be converted to an extension. 
 
 ## The ExportToNewSyntax flag
 
