@@ -110,7 +110,7 @@ When your converted solutions compile to an app, you can deploy and run it. You 
 
 5. Publish your extension, either using:  
 
-- PowerShell cmdlets as described in [Publishing and Installing an Extension v2.0](devenv-how-publish-and-install-an-extension-v2.md), or  
+- PowerShell cmdlets as described in [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md), or  
 
 - Publish from within Visual Studio Code by defining the server configuration in launch.json and publish with **Ctrl+F5**. 
 
@@ -123,7 +123,7 @@ We recently released a Docker AL Preview image as part of the Insider program, c
 
 3. Publish your extension: 
 
-    - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension v2.0](devenv-how-publish-and-install-an-extension-v2.md). 
+    - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
 
     - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**. 
 
