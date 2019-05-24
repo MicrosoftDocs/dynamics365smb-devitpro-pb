@@ -22,6 +22,11 @@ Specifies whether to print data in a report for the parent data item when the ch
   
 ## Property Value  
  **True** if you want print only if the child data item generates output; otherwise, **false**. The default is **false**.  
+
+## Syntax
+```
+PrintOnlyIfDetail = true;
+```
   
 ## Remarks  
  This property has no effect on a data item that does not have any child data items. If this property is **false** and there is no record in the child data item that corresponds to the current record in the parent data item, then the report prints data from the current record in the parent data item, even though there is no data for the child data item. If this property is **true** and there is no record in the child data item that corresponds to the current record in the parent data item, then the report does not print data from the current record in the parent data item.  

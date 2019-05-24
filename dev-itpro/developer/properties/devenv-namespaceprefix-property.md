@@ -20,7 +20,12 @@ Specifies the namespace prefix on an XMLport element.
 ## Applies To  
   
 -   XMLports that have the [Format Property (XMLports)](devenv-format-xmlports-property.md) set to **Xml**. The property applies only to **Element** node types. It is not supported on **Attribute** node types.  
-  
+
+## Syntax
+```
+NamespacePrefix = 'prefix';
+```
+ 
 ## Remarks  
  You can only set the property to a prefix that is declared in the [Namespaces Property](devenv-namespaces-property.md) of the XMLport.  
 <!--

@@ -22,7 +22,12 @@ Sets whether inserting records into this table using the paste command is enable
   
 ## Property Value  
  **True** if you want to allow insert by pasting; otherwise, **false**. The default value is **true**.  
-  
+ 
+## Syntax
+```
+PasteIsValid = false;
+```
+
 ## Remarks  
  If records are usually inserted in the table through an external code unit function, set the PasteIsValid property equal to **false**.  
   
@@ -30,3 +35,4 @@ Sets whether inserting records into this table using the paste command is enable
   
 ## See Also  
  [OnInsert Trigger](../triggers/devenv-oninsert-trigger.md)
+ [Properties](devenv-properties.md)

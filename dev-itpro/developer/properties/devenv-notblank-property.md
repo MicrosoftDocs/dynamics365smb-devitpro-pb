@@ -22,6 +22,11 @@ Sets a value that specifies whether users must enter a value in the selected fie
 -   Table Fields  
   
 -   Page Fields  
+
+## Syntax
+```
+NotBlank = true;
+```
   
 ## Remarks  
  You can use this property together with the [InitValue Property](devenv-initvalue-property.md) to make sure that an entry is made in this field. This setting is evaluated for controls and fields during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **NotBlank** property is not validated.  
@@ -38,3 +43,4 @@ Sets a value that specifies whether users must enter a value in the selected fie
  [MinValue Property](devenv-minvalue-property.md)   
  [MaxValue Property](devenv-maxvalue-property.md)   
  [Numeric Property](devenv-numeric-property.md)
+ [Properties](devenv-properties.md)

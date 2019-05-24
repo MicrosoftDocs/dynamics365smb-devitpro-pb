@@ -20,6 +20,10 @@ Sets the name of a node in an XML document.
 ## Applies To  
  XMLports  
 
+## Syntax
+```
+textelement(NodeName1){...}
+```
 <!--
 ## Remarks  
  The name that you specify is inserted in the NodeName field of the XMLport Designer of the element or attribute in question.  

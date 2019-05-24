@@ -25,6 +25,11 @@ Determines whether white space should be preserved in documents that are importe
   
 ## Property Value  
  **False** to normalize white space; otherwise, **true** to not normalize white space. The default is **false**.  
-  
+
+## Syntax
+```
+PreserveWhiteSpace = true;
+```
+ 
 ## See Also  
  [Properties](devenv-properties.md)
