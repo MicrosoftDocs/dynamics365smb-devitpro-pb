@@ -17,6 +17,15 @@ Indicates that the table data is replicated to the cloud service. The default va
   
 ## Applies To  
 - Table fields
- 
+
+## Property  
+ **True** if the table data is replicated to the cloud service otherwise, **false**. The default is **true**.  
+
+## Syntax
+```
+ReplicateData = false;
+```
+
 ## See Also  
+ [Properties](devenv-properties.md)  
 [Table Properties](devenv-table-properties.md)  

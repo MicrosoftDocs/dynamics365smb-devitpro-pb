@@ -20,7 +20,11 @@ Specifies the Role Center Page for this Profile.
   
 -   Profile object  
 
+## Syntax
+```
+RoleCenter = RoleCenterPage;
+```
 
 ## See Also  
- [Profile Object](../devenv-profile-object.md)
+ [Profile Object](../devenv-profile-object.md)  
  [Designing Role Centers](../devenv-designing-role-centers.md)

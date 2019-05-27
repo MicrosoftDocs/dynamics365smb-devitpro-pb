@@ -16,6 +16,16 @@ author: SusanneWindfeldPedersen
 
 # RunPageMode Property
 Sets the mode in which the page is run. Choose between View, Edit, or Create.  
-  
+
+## Applies to  
+
+-   Page actions  
+   
+## Syntax
+```
+RunPageMode = Edit;
+```
+
 ## See Also  
+[Properties](devenv-properties.md)  
  [RunObject Property](devenv-runobject-property.md)
