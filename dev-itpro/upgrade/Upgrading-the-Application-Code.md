@@ -382,6 +382,7 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     >
     >|Name|Extension package|
     >|----|---------|
+    >|OIOUBL |OIOUBL.app|
     >|Payroll Data Import Definitions (DK)| ImportDKPayroll.app| 
     >|Payment and Reconciliation Formats (DK)|FIK.app |
     >|Tax File Formats (DK)| VATReportsDK.app|
