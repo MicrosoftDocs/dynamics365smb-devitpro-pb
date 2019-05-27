@@ -36,9 +36,9 @@ Use the image tag from the current build link above and make sure you refresh th
 
 When we validate apps, we use the base CRONUS demo data. This of course is there for some countries and you don’t have to do anything additional to receive that demo data. However, for countries that are empty and don’t include demo data, you must import the CRONUS evaluation demo data. Not the International CRONUS data, the evaluation demo data. We do not use custom data and we do not use any other data. We always use the base evaluation demo data. To get this same data (if you don’t have it by default), you follow these instructions:
 
-1. Do a search for **Configuration Packages**, and then click it.
+1. Search for **Configuration Packages**, and then choose the link.
 2. Choose **Process > Import Predefined Package**.
-3. Click the link for **GB.ENU.EVALUATION**
+3. Click the link for **GB.ENU.EVALUATION**.
 
     That will start processing. You will see the process bar.
 4. If there are popups at all, just choose **Yes** or **OK**.
