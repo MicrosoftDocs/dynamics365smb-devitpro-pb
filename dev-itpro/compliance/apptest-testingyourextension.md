@@ -22,7 +22,7 @@ Several key things lead to your Business Central extension passing the Microsoft
 - Check that you can uninstall and unpublish your extension without any errors.
 - Make sure you can republish and reinstall your extension without any errors.
 
-## Use the correct Business Central version
+## Use the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version
 
 Use Docker for your development and testing. At least, run your full test in Business Central online at least once before submitting for validation. We use Docker, and this ensures that you will be testing on the same as what we validate your app on.  
 
@@ -63,7 +63,7 @@ Now it is time to test your app. The following are all things you must do as par
 
 ## Maintaining your app
 
-Although we do regular testing of your app when we prepare a new version of Business Central, we expect you to do the same on your end. You have access to the same builds that we do  through the Collaborate program. You can do more thorough testing than we can because you know your app the best. By doing this testing, you can catch future Business Central changes that may impact or break your app. Catching these changes in advance leaves less risk for customers to run into them.
+Although we do regular testing of your app when we prepare a new version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], we expect you to do the same on your end. You have access to the same builds that we do through the Collaborate program. You can do more thorough testing than we can because you know your app the best. By doing this testing, you can catch future [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] changes that may impact or break your app. Catching these changes in advance leaves less risk for customers to run into them.
 
 You should be doing regular testing against our release branch that ports into our monthly service updates. To test against these builds, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the build named **Daily Builds - Maintaining an app in AppSource for Dynamics 365 Business Central**.
 
