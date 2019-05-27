@@ -193,8 +193,24 @@
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
-### [Views](developer/devenv-views.md)
 ### [API Page Type](developer/devenv-api-pagetype.md)
+### Role Centers
+#### [Designing Role Centers](developer/devenv-designing-role-centers.md)
+#### [Sample Role Center](developer/devenv-simple-role-center-example.md)
+#### [Adding links to the Navigation menu](developer/devenv-adding-menus-to-navigation-pane.md)
+#### [Headlines](developer/devenv-create-role-center-headline.md)
+#### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
+### Designing Pages
+#### List Pages
+##### [Designing List Pages](developer/devenv-designing-list-pages.md)
+##### [Sample List Page](developer/devenv-simple-list-page-example.md)
+##### [Views](developer/devenv-views.md)
+##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
+#### Card Pages
+##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
+##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
+#### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
+#### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
 #### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
@@ -205,21 +221,6 @@
 #### [Actions in AL](developer/devenv-actions-overview.md)
 #### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 #### [Promoted Actions](developer/devenv-promoted-actions.md)
-### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
-### Role Centers
-#### [Designing Role Centers](developer/devenv-designing-role-centers.md)
-#### [Sample Role Center](developer/devenv-simple-role-center-example.md)
-#### [Adding Menus to the Navigation Pane](developer/devenv-adding-menus-to-navigation-pane.md)
-#### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
-#### [Headlines](developer/devenv-create-role-center-headline.md)
-#### [Adding Pages and Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
-### Designing Pages
-#### List Pages
-##### [Designing List Pages](developer/devenv-designing-list-pages.md)
-##### [Sample List Page](developer/devenv-simple-list-page-example.md)
-#### Card Pages
-##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
-##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
 ### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 ### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 ## Reports
@@ -228,16 +229,16 @@
 ### [Report Object](developer/devenv-report-object.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 ### [Request Pages](developer/devenv-request-pages.md)
+### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
-## [Working with Translation Files](developer/devenv-work-with-translation-files.md)
-## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
-## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-universal-app.md)
-## [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
+## [Working with Translation Files](developer/devenv-work-with-translation-files.md)
+## [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+## [Instrumenting for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
