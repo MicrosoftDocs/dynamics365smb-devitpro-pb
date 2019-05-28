@@ -43,8 +43,8 @@ The ID of the session that you want to attach the debugger to.The session can be
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks 
-The **ATTACH** method behaves like the **Debug** action on the **Sessions** page.
-You can call the **ATTACH** method to activate the debugger.
+The **Attach** method behaves like the **Debug** action on the **Sessions** page.
+You can call the **Attach** method to activate the debugger.
 
 ## See Also
 [Debugger Data Type](debugger-data-type.md)  

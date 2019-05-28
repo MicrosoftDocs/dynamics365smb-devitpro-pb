@@ -12,7 +12,7 @@ ms.author: rweigel
 
 # Testing your Extension
 
-Several key things lead to your Business Central extension passing the Microsoft validation process. However, one of the most important checks you can do is to take the time and test your extension before submitting it for validation. This allows you to catch some of the basic errors that could lead to validation failures. The following list calls out key points, and the sections below provide more context.
+Several key things lead to your [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] extension passing the Microsoft validation process. However, one of the most important checks you can do is to take the time and test your extension before submitting it for validation. This allows you to catch some of the basic errors that could lead to validation failures. The following list calls out key points, and the sections below provide more context.
 
 - Always test in a [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] online environment. If you test in an on-premises deployment, you might miss errors that would be seen online.
 - Ensure that your extension can be published without code signing errors. You **must not** use the `-skipverification` flag.
@@ -24,11 +24,11 @@ Several key things lead to your Business Central extension passing the Microsoft
 
 ## Use the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version
 
-Use Docker for your development and testing. At least, run your full test in Business Central online at least once before submitting for validation. We use Docker, and this ensures that you will be testing on the same as what we validate your app on.  
+Use Docker for your development and testing. At least, run your full test in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] online at least once before submitting for validation. We use Docker, and this ensures that you will be testing on the same as what we validate your app on.  
 
 If you test in an on-premises deployment, you might miss errors that would be seen online.
 
-And with this, make sure you are using the correct Docker image tag to set up the correct Business Central version number. If you want your app to go live as soon as possible with the current production version at the time you submit your app, you must use the image tag mentioned on the Collaborate site. To do so, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the build named **Current Build - Developing for Dynamics 365 Business Central**. The image tag never changes and when we roll out a new version to production, the build underneath the image tag automatically changes for you. This means that you are always testing on current production. If you test on a build older or much newer, your app will most likely fail validation.
+And with this, make sure you are using the correct Docker image tag to set up the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version number. If you want your app to go live as soon as possible with the current production version at the time you submit your app, you must use the image tag mentioned on the Collaborate site. To do so, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the build named **Current Build - Developing for Dynamics 365 Business Central**. The image tag never changes and when we roll out a new version to production, the build underneath the image tag automatically changes for you. This means that you are always testing on current production. If you test on a build older or much newer, your app will most likely fail validation.
 
 Use the image tag from the current build link above and make sure you refresh the docker instance each time you want to submit. If you haven’t run your Docker script to refresh for months, then you are on a much older build.
 
@@ -49,7 +49,7 @@ When we validate apps, we use the base CRONUS demo data. This of course is there
 
 ## Use the right user for your testing
 
-Do not do your testing with a user that has SUPER permissions marked. The SUPER user can do all without issue and you won’t catch your true app bugs. No live customer will have several users marked with this permission set. Therefore, we cannot test with it. You need to setup a user in your test environment that only has the BUS FULL ACCESS permission set, LOCAL, and any of your own permission sets. For information on how to setup this user, refer to this blog (you will want to use the user named ESSENTIAL).
+Do not do your testing with a user that has SUPER permissions marked. The SUPER user can do all without issue and you won’t catch your true app bugs. No live customer will have several users marked with this permission set. Therefore, we cannot test with it. You need to setup a user in your test environment that only has the BUS FULL ACCESS permission set, LOCAL, and any of your own permission sets. For information on how to setup this user, refer to this blog (coming soon). 
 
 ## Testing your app
 

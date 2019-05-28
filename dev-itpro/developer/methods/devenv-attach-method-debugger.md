@@ -50,9 +50,9 @@ Activates the debugger and attaches it to the specified session.
  If you omit this optional return value and if the break is not set successfully, then a run-time error occurs. If you include the return value, then you must handle any errors.  
 
 ## Remarks  
- The **ATTACH** method behaves like the **Debug** action on the **Sessions** page.  
+ The **Attach** method behaves like the **Debug** action on the **Sessions** page.  
 
- You can call the **ATTACH** method<!--NAV or the [ACTIVATE Method \(Debugger\)](devenv-ACTIVATE-Method-Debugger.md)--> to activate the debugger.  
+ You can call the **Attach** method<!--NAV or the [ACTIVATE Method \(Debugger\)](devenv-ACTIVATE-Method-Debugger.md)--> to activate the debugger.  
 <!--Links
 ## See Also  
  [Activating the Debugger](Activating-the-Debugger.md)  
