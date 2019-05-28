@@ -2,7 +2,7 @@
 title: "Query Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 05/28/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ The following methods are available on the Query data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[SaveAsCsv(Integer, String, [Integer], [String])](query-saveascsv-integer-string-integer-string-method.md)|Saves the resulting data set of a query as a comma separated values (CSV) file.|
+|[SaveAsCsv(Integer, String, [Integer], [String])](query-saveascsv-integer-string-integer-string-method.md)|Saves the resulting data set of a query as a comma-separated values (CSV) file.|
 |[SaveAsCsv(Integer, OutStream, [Integer], [String])](query-saveascsv-integer-outstream-integer-string-method.md)|Saves the resulting data set of a query as a comma separated values (CSV) file.|
 |[SaveAsXml(Integer, String)](query-saveasxml-integer-string-method.md)|Saves the resulting data set of a query as an .xml file.|
 |[SaveAsXml(Integer, OutStream)](query-saveasxml-integer-outstream-method.md)|Saves the resulting data set of a query as an .xml file.|
