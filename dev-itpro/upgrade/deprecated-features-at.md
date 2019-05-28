@@ -15,7 +15,7 @@ ms.author: SorenGP
 ---
 
 # Deprecated Features in the Austrian Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
-This topic lists and describes the local functionality for Austria that has been removed from [!INCLUDE[prodshort(../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
+This topic lists and describes the local functionality for Austria that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Physical Inventory Order
 You can take inventory of your items by using the **Physical Inventory Order** and **Physical Inventory Recording** pages. The physical inventory order contains data for planning, realizing, and analyzing physical inventory. The physical inventory recording contains the items and quantities to be counted and forms the basis of the print-out to be used in the warehouse.

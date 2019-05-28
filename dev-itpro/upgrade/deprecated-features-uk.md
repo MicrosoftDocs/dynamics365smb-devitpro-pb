@@ -92,7 +92,7 @@ When you create finance charge terms and reminder terms, for delayed payment pen
 |----|----|
 |Moved| The Multiple Interest Rates feature is no longer specific to the UK, so we have made it generally available in the standard product. |
 
-## Objects and Fields that are deleted in [!INCLUDE [prodlong](../developer/includes/prodlong.md)]]
+## Objects and Fields that are deleted in [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
 Table 10505 has been deleted. The following list shows additional fields that are deleted as a result of the features that have been removed.  
 
 |Table ID|Field ID|Comments|

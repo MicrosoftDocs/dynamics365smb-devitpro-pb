@@ -222,7 +222,7 @@ A flow field that was used to calculate Balance in My Account page is no longer 
 |--------|--------|--------|
 |9153|My Account|4|Balance|Will be removed in a later release.|
 
-## Fields moved to an extension by Microsoft in [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
+## Fields moved to an extension by Microsoft in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 A number of fields have been moved from the base application to an extension.
 
 ### Denmark
@@ -244,7 +244,7 @@ The functionality for payments and reconciliation in the Danish version (FIK) ha
 |1250|Bank Statement Matching Buffer|13601|13652|Match Status|MatchStatus|
 |1250|Bank Statement Matching Buffer|13600|13653|Description|DescriptionBankStatement|
 
-## Fields marked as ObsoleteState:Pending in [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
+## Fields marked as ObsoleteState:Pending in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 A number of fields are marked as ObsoleteState:Pending. There is no impact on code in this release.  
 
 ### Iceland
@@ -364,7 +364,7 @@ The following fields are marked as ObsoleteState:Pending in the Danish version.
 |5995|13600|Will be removed in a later release.|
 
 
-## Fields no longer in use in Microsoft code in [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
+## Fields no longer in use in Microsoft code in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
 A number of fields that are related to product groups are no longer in use, because the feature was replaced by item categories in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. The fields are marked as ObsoleteState:Pending.  
 
 |Table ID|Field ID|Comments|
