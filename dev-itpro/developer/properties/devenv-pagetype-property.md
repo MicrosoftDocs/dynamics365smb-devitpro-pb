@@ -17,6 +17,11 @@ Sets the type of page that is created.
 ## Applies To  
  Pages  
 
+## Syntax
+```
+PageType = List;
+```
+
 ## Remarks  
 You typically set this property when you are create new pages, but you can change it at any time. The value for the **PageType** property specifies the Page layout.
 

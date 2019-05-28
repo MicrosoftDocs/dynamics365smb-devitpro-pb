@@ -22,6 +22,11 @@ Sets the same record on the page you launch from this control as is already disp
   
 ## Property Value  
  **True** if the current record on the page that you will launch from this control is displayed; otherwise, **false**. The default is **false**.  
+
+## Syntax
+```
+RunPageOnRec = true;
+```
   
 ## Remarks  
  For example, suppose the current page is the sales order and you are providing a way to see the sales statistics for the current customer. You would select RunObject in the PushAction property and use the [RunObject Property](devenv-runobject-property.md) to run the sales statistics page. In this property you could select Yes to display the same record on both pages.  

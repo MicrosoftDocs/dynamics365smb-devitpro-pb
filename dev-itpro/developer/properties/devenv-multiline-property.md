@@ -23,6 +23,11 @@ Sets the value that indicates whether a field can display multiple lines of text
   
 ## Property Value  
  **True** if you want to display multiple lines; otherwise, **false**. The default is **false**.  
+
+## Syntax
+```
+MultiLine = true;
+```
   
 ## See Also  
  [Properties](devenv-properties.md)
