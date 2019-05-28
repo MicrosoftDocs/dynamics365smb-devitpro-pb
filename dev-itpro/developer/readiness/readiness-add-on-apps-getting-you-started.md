@@ -34,7 +34,8 @@ To ease your journey, from the initial listing to the final publication of your 
 - STEP 3: Develop your app
 - STEP 4: Initiate the validation and publication process
 
-> [!IMPORTANT]  Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
+> [!IMPORTANT]  
+> Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
 
 ## STEP 1: Create and set up your accounts
 
@@ -116,7 +117,7 @@ In order to be set up as a publisher and access the Cloud Partner Portal, you ne
 
 You have 3 options to work develop against the current version of Microsoft Dynamics 365 Business Central.
 - [If your add-on is lightweight, it might be sufficient to use a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-get-started) 
-- [If you want to setup a docker based development environment on Azure, you can use:](http://aka.ms/BCSandboxAzure) 
+- [If you want to setup a Docker-based development environment on Azure, you can use:](http://aka.ms/BCSandboxAzure) 
 - [If you want to setup a local docker based developer environment, you can download a
 PowerShell script available at](http://aka.ms/BCSandboxLocal) 
 
@@ -214,7 +215,7 @@ Find general information on Add-on apps for Business Central here: [aka.ms/AppSo
 ## Github
 Use the github forum to ask, or search, the community and Microsoft experts for questions respectively. Go to: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues) now and start asking away.
 
-##Follow “Ready to Go” engagements on social media
+## Follow “Ready to Go” engagements on social media
 
 Get insights on what’s happening with Business central – Follow us on Twitter and LinkedIn.
 
