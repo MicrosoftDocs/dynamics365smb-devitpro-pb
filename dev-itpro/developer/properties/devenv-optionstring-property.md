@@ -23,6 +23,11 @@ Sets the option values for a field, text box, or variable. OptionString is multi
 
 -   Variables  
 
+## Syntax
+```
+OptionString = Ship,Invoice,All;
+```
+
 ## Remarks  
  If the [OptionCaptionML Property](devenv-optioncaptionml-property.md) is set, then users see the OptionCaptionML values as the option values. However, the value that is used in AL code or that is stored in the database will be the corresponding value from the OptionString property.  
 

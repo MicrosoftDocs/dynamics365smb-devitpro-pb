@@ -94,7 +94,7 @@ Before you convert the old database to [!INCLUDE[prodshort](../developer/include
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
     ```
 
-3. Unpublish extensions versions that you do not want to use in the upgraded database. This is optional and typically done for V1 extensions because they are longer supported.
+3. Unpublish extensions versions that you do not want to use in the upgraded database. This is optional and typically done for V1 extensions because they are no longer supported.
 
     For example:
     ```

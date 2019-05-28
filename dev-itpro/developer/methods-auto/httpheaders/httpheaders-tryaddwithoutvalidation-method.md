@@ -2,7 +2,7 @@
 title: "TryAddWithoutValidation Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 05/28/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,9 +28,7 @@ An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
-
-        The header to add to the collection.
-        
+The header to add to the collection.  
 *Value*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The content of the header.  

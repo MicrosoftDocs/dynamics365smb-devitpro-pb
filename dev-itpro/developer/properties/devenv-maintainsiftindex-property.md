@@ -21,7 +21,12 @@ Sets the value to determine whether SIFT structures should be created in SQL Ser
  Keys  
   
 ## Property Value  
- **True** to create the SIFT structures in SQL Server; otherwise, **false**. The default is **true**.  
+ **True** to create the SIFT structures in SQL Server; otherwise, **false**. The default is **true**. 
+
+## Syntax
+```
+MaintainSIFTIndex = false;
+``` 
   
 ## Remarks  
  SumIndexFields are created in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] to support FlowField calculations and other fast summing operations. SQL Server can sum numeric data by scanning the table. If the SIFT structures exist for the SumIndexFields, summing the fields is faster, especially for large sets of records, but modifications to the table are slower because the SIFT structures must also be maintained.  

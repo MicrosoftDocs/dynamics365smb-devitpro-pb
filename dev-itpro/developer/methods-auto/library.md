@@ -2,7 +2,7 @@
 title: "Data Types and Methods in AL"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/23/2019
+ms.date: 05/28/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[HttpClient](httpclient/httpclient-data-type.md)|Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.|
 |[HttpContent](httpcontent/httpcontent-data-type.md)|Represents an HTTP entity body and content headers.|
 |[HttpHeaders](httpheaders/httpheaders-data-type.md)|Is a collection of headers and their values.|
-|[HttpRequestMessage](httprequestmessage/httprequestmessage-data-type.md)|Represents a HTTP request message.|
+|[HttpRequestMessage](httprequestmessage/httprequestmessage-data-type.md)|Represents an HTTP request message.|
 |[HttpResponseMessage](httpresponsemessage/httpresponsemessage-data-type.md)|Represents a HTTP response message including the status code and data.|
 |[InStream](instream/instream-data-type.md)|Is a generic stream object that you can use to read from or write to files and BLOBs. You can define the internal structure of a stream as a flat stream of bytes. You can assign one stream to another. Reading from and writing to a stream occurs sequentially.<br/>  |
 |[Integer](integer/integer-data-type.md)|Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.|
@@ -77,7 +77,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[RecordId](recordid/recordid-data-type.md)|Contains the table number and the primary key of a table.|
 |[RecordRef](recordref/recordref-data-type.md)|References a record in a table.|
 |[Report](report/report-data-type.md)|Is used to display, print, or process information from a database.|
-|[ReportInstance](reportinstance/reportinstance-data-type.md)|Reports are used to display, print or process information from a database.|
+|[ReportInstance](reportinstance/reportinstance-data-type.md)|Reports are used to display, print, or process information from a database.|
 |[RequestPage](requestpage/requestpage-data-type.md)|Is a page that is run before the report starts to execute. Request pages enable end-users to specify options and filters for a report.|
 |[Session](session/session-data-type.md)|Represents a Microsoft Dynamics Business Central session.|
 |[SessionSettings](sessionsettings/sessionsettings-data-type.md)|Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.|

@@ -2,7 +2,7 @@
 title: "ReportFormat System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 05/28/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,11 +19,11 @@ Specifies the format of the report.
 ## Members
 |  Member  |  Description  |
 |----------------|---------------|
-|Excel|The type of file to save the report as.|
-|Html|The type of file to save the report as.|
-|Pdf|The type of file to save the report as.|
-|Word|The type of file to save the report as.|
-|Xml|The type of file to save the report as.|
+|Excel|Saves the report as an Excel file.|
+|Html|Saves the report in HTML format.|
+|Pdf|Saves the report in PDF format.|
+|Word|Saves the report in Word format.|
+|Xml|Saves the report in XML format.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

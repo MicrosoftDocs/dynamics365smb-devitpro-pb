@@ -30,6 +30,11 @@ Sets whether an object has additional permission required to perform some operat
 -   Tables  
   
 -   XMLports  
+
+## Syntax
+```
+Permissions = TableData 1221 = rimd;
+```
   
 ## Remarks  
  The license file determines the permissions that users have within [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These permissions are further refined by the security permissions that you grant the different users.  

@@ -20,7 +20,12 @@ Specifies namespaces on the XMLport.
 ## Applies To  
   
 -   XMLports that have the [Format Property (XMLports)](devenv-format-xmlports-property.md) set to **Xml**.  
-  
+ 
+## Syntax
+```
+Namespaces = prefix = 'namespace';
+```
+
 ## Remarks  
  You can use this property to declare one or more namespaces on the XMLport.  
   
@@ -37,3 +42,7 @@ Specifies namespaces on the XMLport.
 ## See Also  
  [Designing XMLports](Designing-XMLports.md)   
  [How to: Create XMLports](How-to--Create-XMLports.md) -->
+
+## See Also
+ [Properties](devenv-properties.md)  
+ [XMLport Properties](devenv-xmlport-properties.md)

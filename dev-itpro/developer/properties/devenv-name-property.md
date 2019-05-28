@@ -33,6 +33,11 @@ Sets the name of the object. The name is used for internal identification of the
 
 -   XMLports  
 
+## Syntax
+```
+codeunit 50103 Name { ... }
+```
+
 ## Remarks  
  Unlike the [ID Property](devenv-id-property.md), the value of the **Name** property does not have to be unique; however, it is a good practice to use unique names. The Name can be up to 30 characters long. The name must comply with the Common Language Specification (CLS). For example, the first character must be a letter and subsequent characters can be any combination of letters, whole number, and underscores. For more information, see the "Naming" section in [Common Language Specification](http://go.microsoft.com/fwlink/?LinkId=193144) in the MSDN Library.  
 

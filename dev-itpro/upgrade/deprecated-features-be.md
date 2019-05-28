@@ -28,4 +28,4 @@ You can integrate with Isabel to make it easy to upload and download bank files.
 [Upgrading to Microsoft Dynamics 365 Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
-[Belgium Local Functionality in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Belgium/belgium-local-functionality)  
+[Belgium Local Functionality](/dynamics365/business-central/LocalFunctionality/Belgium/belgium-local-functionality)  

@@ -18,6 +18,11 @@ author: SusanneWindfeldPedersen
 
 Specifies the public key token of the .NET assembly.
 
+## Syntax
+```
+PublicKeyToken = 'b77e3c561734a029';
+```
+
 ## See Also  
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

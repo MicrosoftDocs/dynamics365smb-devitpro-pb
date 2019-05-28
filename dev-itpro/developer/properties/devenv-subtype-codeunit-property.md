@@ -26,6 +26,7 @@ Codeunits
 |**Test**|A test codeunit includes AL methods that test the application. <!-- For more information, see [How to: Create Test Codeunits and Test Methods](../devenv-how-to-create-test-codeunits-and-test-methods.md).-->|  
 |**TestRunner**|A test runner codeunit manages the execution of one or more test codeunits. <!-- For more information, see [How to: Create a Test Runner Codeunit](../devenv-how-to-create-a-test-runner-codeunit.md).-->|  
 |**Upgrade**|An upgrade codeunit includes AL methods for synchronizing changes to a table definition in an application with the business data table in SQL Server and migrating existing data. <!-- For more information, see [Upgrade Codeunits](../devenv-upgrade-codeunits.md).-->|  
+|**Install**|An install codeunit includes AL methods for performing operations unconcerned with the extension code itself during the initial installation and the reinstallation of an extension.|
   
 ## Remarks  
 You can create test codeunits and test runner codeunits to test your application.  
@@ -41,7 +42,11 @@ A test runner codeunit runs the test codeunits that are programmed to run from i
 -   Indicates that a test method has failed if it invokes the user interface.  
 <!-- 
 For more information, see [Testing the Application](Testing-the-Application.md).  
--->  
+--> 
+When developing a new extension version, you can use upgrade codeunits to upgrade data from the previous version and make it compatible with the new one. <!-- The data upgrade code is implemented through upgrade triggers, which are invoked when you run the upgrade process. --> For more information, see [Upgrading Extensions](../devenv-upgrading-extensions.md). 
+
+For more information on how to use install codeunits to write extension install code, see [Writing Extension Install Code](../devenv-extension-install-code.md). 
+
 ## See Also  
 [Properties](devenv-properties.md)  
 [Codeunit Properties](devenv-codeunit-properties.md)  

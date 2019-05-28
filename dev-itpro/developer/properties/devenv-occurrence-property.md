@@ -26,6 +26,11 @@ Sets a value that specifies whether an attribute must occur in the data that is 
 |---------------|---------------------|  
 |**Required (default)**|If the attribute must be part of the data.|  
 |**Optional**|If the attribute does not have to be part of the data.|  
+
+## Syntax
+```
+Occurrence = Optional;
+```
   
 ## Remarks  
  This property is primarily used to ensure that the XML data that you are importing conforms to the data structure in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].  

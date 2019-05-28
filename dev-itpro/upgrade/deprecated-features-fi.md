@@ -14,8 +14,8 @@ ms.author: SorenGP
 
 ---
 
-# Deprecated Features in the Finnish Version of Microsoft Dynamics NAV 2018
-This topic lists and describes the local functionality for Finland that has been removed from [!INCLUDE[navnow](../developer/includes/navnow_md.md)], made available from a new page or report, or replaced by a new feature.
+# Deprecated Features in the Finnish Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
+This topic lists and describes the local functionality for Finland that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Multiple Interest Rates
 When you create finance charge terms and reminder terms, for delayed payment penalty, you can specify multiple interest rates so that the penalty fee is calculated from different interest rates in different periods.
@@ -25,7 +25,7 @@ When you create finance charge terms and reminder terms, for delayed payment pen
 |Moved| The Multiple Interest Rates feature is no longer specific to Finland, so we have made it generally available in the standard product. |
 
 ## See Also
-[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-business-central.md)  
+[Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
-[Finland Local Functionality in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Finland/finland-local-functionality)  
+[Finland Local Functionality](/dynamics365/business-central/LocalFunctionality/Finland/finland-local-functionality)  

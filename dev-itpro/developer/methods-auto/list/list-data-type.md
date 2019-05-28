@@ -58,7 +58,7 @@ begin
     customerNames.Add('John');
 
     // Checking if the list contains an element
-    if customerNames.Contains(John) then
+    if customerNames.Contains('John') then
         Message('John is in the list')
     else 
         Message('John is not in the list')

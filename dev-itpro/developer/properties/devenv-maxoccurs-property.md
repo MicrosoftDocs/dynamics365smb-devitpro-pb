@@ -27,7 +27,12 @@ Sets a value that indicates the maximum number of times an element can occur.
 |**Table**|Unbounded|  
 |**Text**|Unbounded|  
 |**Field**|Once|  
-  
+
+## Syntax
+```
+MaxOccurs = Once;
+```
+ 
 ## Remarks  
  The default value of the **MaxOccurs** property varies depending on what you have selected as the [SourceType Property](devenv-sourcetype-property.md) of this element.  
   

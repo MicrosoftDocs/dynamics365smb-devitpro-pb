@@ -22,7 +22,12 @@ Sets a value that indicates whether a SQL Server index that corresponds to the [
   
 ## Property Value  
  **True** to create the SQL Server index; otherwise, **false**. The default is **true**.  
-  
+
+## Syntax
+```
+MaintainSQLIndex = false;
+```
+
 ## Remarks  
  In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], you can use a key to sort data in a table by the set of fields specified in the key. SQL Server can sort data without an index on the fields to be sorted. However, if an index exists, sorting by the fields matching the index will be faster, but modifications to the table will be slower. The more indexes there are on a table, the slower the modifications become.  
   

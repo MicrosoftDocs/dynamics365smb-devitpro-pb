@@ -39,3 +39,7 @@ Specifies what happens to the event subscriber function call when the license of
  [Subscribing to Events](Subscribing-to-Events.md)   
  [AL Method Statements](../devenv-al-method-statements.md)
  -->
+
+## See Also  
+ [Properties](devenv-properties.md)   
+ [Query Object](../devenv-query-object.md)
