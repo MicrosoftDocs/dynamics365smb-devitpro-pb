@@ -20,6 +20,11 @@ This property is used to select the fields that will be the key fields under ODa
 ## Applies to  
   
 -   Pages
+
+## Syntax
+```
+ODataKeyFields = Id;
+```
   
 ## Dependent Property
 

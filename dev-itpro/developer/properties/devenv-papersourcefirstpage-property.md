@@ -19,6 +19,12 @@ Specifies which paper source to use when printing page one of the report.
   
 ## Applies To  
  Reports  
+
+## Syntax
+```
+PaperSourceFirstPage = AutomaticFeed;
+```
+
 <!--
 ## Remarks  
 
@@ -40,3 +46,8 @@ Specifies which paper source to use when printing page one of the report.
  [PaperSourceDefaultPage Property](devenv-papersourcedefaultpage-property.md)   
  [PaperSourceLastPage Property](devenv-papersourcelastpage-property.md)   
  [How to: Add GetPaperTrayForReport Procedure in Codeunit 1](How-to--Add-GetPaperTrayForReport-Procedure-in-Codeunit-1.md) -->
+
+## See Also  
+  [Report Properties](devenv-report-properties.md)   
+ [Report Object](../devenv-report-object.md)   
+ [Properties](devenv-properties.md)

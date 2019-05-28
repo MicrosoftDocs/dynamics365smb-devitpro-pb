@@ -18,7 +18,12 @@ Sets a value that indicates whether the promoted action is displayed on the ribb
 ## Applies to  
   
 - Page actions  
-  
+ 
+## Syntax
+```
+PromotedIsBig = true;
+```
+ 
 ## Remarks  
 Available options are **true**/**false**.  
   

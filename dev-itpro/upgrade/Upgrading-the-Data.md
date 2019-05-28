@@ -336,6 +336,7 @@ In addition, other extensions used in the old deployment that you still want to 
 >
 >|Name|Extension package|
 >|----|---------|
+>|OIOUBL |OIOUBL.app|
 >|Payroll Data Import Definitions (DK)| ImportDKPayroll.app| 
 >|Payment and Reconciliation Formats (DK)|FIK.app |
 >|Tax File Formats (DK)| VATReportsDK.app|
@@ -373,6 +374,16 @@ In addition, other extensions used in the old deployment that you still want to 
         ```
 
         Replace values for the `Database` and `ServerName` settings to suit.
+
+        If the application database contains test objects (ID 130000-139999), then make sure to exclude these objects when generating symbols. You can do this by using the `-Filter` parameter and running the command twice:
+
+        ```
+        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=1..129999"
+        ```
+
+        ```
+        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=140000..1999999999"
+        ```
 
         > [!NOTE]  
         >  This command does not generate a file. It populates the **Object Metadata** table in the database.

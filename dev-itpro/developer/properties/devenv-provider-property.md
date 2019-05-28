@@ -15,12 +15,17 @@ caps.latest.revision: 13
 
 # Provider Property
 Sets the provider for a FactBox. This property enables you to create a link from a Repeater or any other type of control to a Factbox. It could also be used to link two FactBoxes.
-  
+ 
 ## Applies To  
   
 - Page system parts
 - Page parts
 
+## Syntax
+```
+Provider = Details;
+```
 
 ## See Also  
 [Page Object](../devenv-page-object.md)
+ [Properties](devenv-properties.md)

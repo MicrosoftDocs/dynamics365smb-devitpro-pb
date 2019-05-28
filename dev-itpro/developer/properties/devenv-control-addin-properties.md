@@ -28,7 +28,6 @@ The following topic lists properties that apply to the [Control Add-In Object](.
 
 ## See also
 [Codeunit Properties](devenv-codeunit-properties.md)  
-[MenuSuite Properties](devenv-menusuite-properties.md)  
 [Page Properties](devenv-page-property-overview.md)  
 [Query Properties](devenv-query-properties.md)  
 [Report Properties](devenv-report-properties.md)  

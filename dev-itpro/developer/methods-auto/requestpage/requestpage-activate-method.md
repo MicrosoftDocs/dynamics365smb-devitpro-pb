@@ -2,7 +2,7 @@
 title: "Activate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 05/28/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ An instance of the [RequestPage](requestpage-data-type.md) data type.
 
 *Refresh*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If set to **true**, the data on the form will be refreshed.  
+If set to **true**, the data on the page will be refreshed.  
 
 
 ## Return Value

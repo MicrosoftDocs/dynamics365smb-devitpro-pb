@@ -25,6 +25,11 @@ Specifies the list of ordinal values and the position of the option member value
 ## Property values
 The position of the option members value in the external database. You can set -1, 1, 2, but you cannot set the value to 0. 
 
+## Syntax
+```
+OptionOrdinalValues = 1,2,3,4,5;
+```
+
 ## Remarks  
 This property is used when you specify **CRM** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.  
 

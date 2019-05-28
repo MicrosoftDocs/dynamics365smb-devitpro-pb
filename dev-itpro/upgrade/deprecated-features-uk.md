@@ -14,8 +14,8 @@ ms.author: bholtorf
 
 ---
 
-# Deprecated Features in the UK Version of Microsoft Dynamics NAV 2018
-This topic lists and describes the local functionality for the United Kingdom that has been removed from [!INCLUDE[navnow](../developer/includes/navnow_md.md)], made available from a new page or report, or replaced by a new feature.
+# Deprecated Features in the UK Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
+This topic lists and describes the local functionality for the United Kingdom that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Accounting periods and system calendar
 If your fiscal year is different than the calendar, you can measure your fiscal period in other units of time, such as months or quarters. To do this, you set up system calendars and accounting periods.
@@ -92,7 +92,7 @@ When you create finance charge terms and reminder terms, for delayed payment pen
 |----|----|
 |Moved| The Multiple Interest Rates feature is no longer specific to the UK, so we have made it generally available in the standard product. |
 
-## Objects and Fields that are deleted in [!INCLUDE[nav2018](../developer/includes/nav2018_md.md)]
+## Objects and Fields that are deleted in [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
 Table 10505 has been deleted. The following list shows additional fields that are deleted as a result of the features that have been removed.  
 
 |Table ID|Field ID|Comments|
@@ -111,7 +111,7 @@ Table 10505 has been deleted. The following list shows additional fields that ar
 |7152|10550|Deleted.|
 
 ## See Also
-[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-business-central.md)  
+[Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
-[United Kingdom Local Functionality in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/unitedkingdom/united-kingdom-local-functionality)  
+[United Kingdom Local Functionality](/dynamics365/business-central/LocalFunctionality/unitedkingdom/united-kingdom-local-functionality)  
