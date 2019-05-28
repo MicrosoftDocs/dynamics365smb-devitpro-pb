@@ -26,15 +26,15 @@ For the application portion of the upgrade, you must analyze and process code ch
 
 |Version|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------------|---------------------------------------|  
-|*Original version*|This is the baseline version of the solution that you want to upgrade, such as the original release of [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] or [!INCLUDE[nav2017](../developer/includes/nav2017.md)].|  
-|*Modified version*|This is the version that you want to upgrade, such as a customer's [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] or [!INCLUDE[nav2017](../developer/includes/nav2017.md)] database with customizations and add-on solutions.|  
+|*Original version*|This is the baseline version of the solution that you want to upgrade, such as the original release of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 or [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].|  
+|*Modified version*|This is the version that you want to upgrade, such as a customer's [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 or [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database with customizations and add-on solutions.|  
 |*Target version*|This is the target of the merge process that you want to upgrade your application to, such as the standard version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.|  
 
 When you merge the application objects from these three versions, you can import the result into a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database that then contains the upgraded application. At the end of the process, you export the merged [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects from this database to a .fob file that you will use during the data upgrade.
 
 ### Single-tenant and multitenant deployments
 
-The process for upgrading the application code is basically the same for a single-tenant and multitenant deployment. However, there are some inherent differences in the entire process because with a single-tenant deployment the application and business data is included in the same database, while with a multitenant deployment application code is in a separate database than the business data (tenants). Here is the general process for each deployment type. In the tasks that follow, tasks are marked as *Single-tenant only* or *Multitenant only* where applicable. 
+The process for upgrading the application code is basically the same for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data is included in the same database, while with a multitenant deployment application code is in a separate database than the business data (tenants). Here is the general process for each deployment type. In the tasks that follow this section, tasks are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
 **Single-tenant**
 
@@ -67,7 +67,7 @@ To complete the tasks in this article, you will use various tools and components
 |    |  Tool/Component  |
 |----|------------------|
 | Old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version  |<ul><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li><li>[!INCLUDE[navnow](../developer/includes/navnow_md.md)] Development Shell</li></ul>|
-|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li> </ul>|
+|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li> <li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li> </ul>|
 
 #### [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] upgrade
 
@@ -109,7 +109,7 @@ There are three ways to export application objects to text files:
 
     - **ORIGINAL**  
 
-        This folder will be used to store the application object text file(s) from the baseline version, such as the original release of [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] or [!INCLUDE[nav2017](../developer/includes/nav2017.md)].  
+        This folder will be used to store the application object text file(s) from the baseline version, such as the original release of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018, [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], or [!INCLUDE[nav2017](../developer/includes/nav2017.md)].  
 
     - **MODIFIED**  
 
@@ -117,7 +117,7 @@ There are three ways to export application objects to text files:
 
     - **TARGET**  
 
-        This folder will be used to store the application object text file(s) from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+        This folder will be used to store the application object text file(s) from the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version.  
 
     - **RESULT**  
 
