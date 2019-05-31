@@ -66,17 +66,28 @@ On the [Dynamics 365 Ideas site](https://aka.ms/bcideas), you can provide sugges
 
 Make sure to search through the list of submitted suggestions, as chances are that someone already submitted something similar and might have already received votes. Vote if an idea already has been submitted to get it prioritized on the team’s backlog.  
 
-### Business Central Community
+### Business Central blog posts
+
+The Dynamics 365 blog is where Microsoft publishes announcements, updates, and tips and tricks, including for [!INCLUDE[prodshort](includes/prodshort.md)].  
+
+> [!div class="mx-tdCol2BreakAll"]
+> |Name  |Location  |Description|
+> |---------|---------|---------|
+> |Business Central on the Dynamics 365 blog (Users) |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/users/product/business-central/)|Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. </br>Some earlier blog posts are available on the [Community site](https://community.dynamics.com/business/b/financials).|
+> |Business Central on the Dynamics 365 blog (ITpro) |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some earlier blog posts are available on the [Community site](https://community.dynamics.com/business/b/businesscentraldevitpro).|
+
+
+### Business Central communities
 
 On the [Business Central Community site](https://community.dynamics.com/business), you have access to a number of different resources as outlined in the following table.
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
-> [Business Central on the Dynamics 365 blog (Users)] |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/users/product/business-central/)|Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. </br>Some earlier blog posts are available on the [Community site](https://community.dynamics.com/business/b/financials).|
-> [Business Central on the Dynamics 365 blog (ITpro)] |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some earlier blog posts are available on the [Community site](https://community.dynamics.com/business/b/businesscentraldevitpro).|
+> |Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f/758) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
 > |Business Central Support blog |[https://community.dynamics.com/business/b/dynamics365financialssupport](https://community.dynamics.com/business/b/dynamics365financialssupport) |Use this blog for technical information from the Microsoft support team.|
+
+You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central and Dynamics NAV](https://www.navug.com/home), which is a user-led, user-driven community of 22,054 users, partners, and MVPs.  
 
 ## Trials
 
