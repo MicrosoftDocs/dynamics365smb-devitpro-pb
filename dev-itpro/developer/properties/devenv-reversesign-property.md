@@ -25,10 +25,16 @@ Changes negative values into positive values and positive values into negative v
   
 ## Property Value  
  **True** to reverse the sign of column values; otherwise, **false**. The default is **false**.  
-  
+ 
+## Syntax
+```
+ReverseSign = true;
+```
+ 
 ## Remarks  
  Field values in a database table can be negative numbers, as well as positive. For example, credits are typically stored as negative values to deduct them from the overall balance due. However, for displaying purposes, such as in spreadsheets and charts, you might want these quantities to appear as a positive numbers.  
 
 ## See Also  
-[AL Data Types](../datatypes/devenv-al-data-types.md)
-[Properties](devenv-properties.md)  
+[Properties](devenv-properties.md)   
+[AL Data Types](../datatypes/devenv-al-data-types.md)   
+ 

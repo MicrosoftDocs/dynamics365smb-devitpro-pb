@@ -26,6 +26,11 @@ Specifies how the report opens when you preview it.
 |**Normal**|Specifies that the report opens in the default view mode where you can navigate between entries and so on.|  
 |**PrintLayout**|Specifies that the report opens in the print layout mode that shows how the report will print on paper.|  
 
+## Syntax
+```
+PreviewMode = Normal;
+```
+
 ## Remarks  
  In the **Report – Properties** window, in the **PreviewMode** field, specify how the report must open in preview mode. The default mode can be different to how the report prints on paper. If you want to make sure that users see the report as it will look on paper, choose **PrintLayout**.  
 

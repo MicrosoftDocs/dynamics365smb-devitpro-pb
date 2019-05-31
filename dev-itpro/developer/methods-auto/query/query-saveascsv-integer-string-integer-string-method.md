@@ -2,7 +2,7 @@
 title: "SaveAsCsv Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 05/28/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SaveAsCsv Method
-Saves the resulting data set of a query as a comma separated values (CSV) file.
+Saves the resulting data set of a query as a comma-separated values (CSV) file.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.

@@ -23,13 +23,13 @@ In scenarios when application IDs are renamed, or refactored it is also a best p
 
 A RAD published file will not contain the following files that are normally packaged during regular publishing: 
 
-- translation files
-- permission files
-- custom word and report rdlc layout files  
-- table data
-- web service definitions  
+- Translation files
+- Permission files
+- Custom word and report rdlc layout files  
+- Table data
+- Web service definitions  
 
-These files will need to be regenerated with full publishing (Ctrl+F5).
+These files will need to be re-generated with full publishing (Ctrl+F5).
 
 A RAD file will be deleted as a result of a successful publishing.
 

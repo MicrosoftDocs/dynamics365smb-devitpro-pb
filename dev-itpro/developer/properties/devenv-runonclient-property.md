@@ -33,3 +33,6 @@ Sets whether a .NET object that is defined by a variable is run on the [!INCLUDE
  [Extending Microsoft Dynamics NAV Using Microsoft .NET Framework Interoperability](Extending-Microsoft-Dynamics-NAV-Using-Microsoft-.NET-Framework-Interoperability.md)   
  [How to: Call .NET Framework Types From AL Code](How-to-Call-.NET-Framework-Types-From-AL-Code.md)
 -->
+
+## See Also
+[Properties](devenv-properties.md)

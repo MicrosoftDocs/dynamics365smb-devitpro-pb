@@ -29,6 +29,11 @@ Sets the maximum numeric value for a field.
 |**9999.0**|Decimals|  
 |**December 31, 9999**|Dates|  
 |**23:59:59**|Time|  
+
+## Syntax
+```
+MaxValue = 100;
+```
   
 ## Remarks  
  The field setting is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **MaxValue** is not validated.  

@@ -14,8 +14,8 @@ ms.author: SorenGP
 
 ---
 
-# Deprecated Features in the German Version of Microsoft Dynamics NAV 2018
-This topic lists and describes the local functionality for Germany that has been removed from [!INCLUDE[navnow](../developer/includes/navnow_md.md)], made available from a new page or report, or replaced by a new feature.
+# Deprecated Features in the German Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
+This topic lists and describes the local functionality for Germany that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Physical Inventory Order
 You can take inventory of your items by using the **Physical Inventory Order** and **Physical Inventory Recording** pages. The physical inventory order contains data for planning, realizing, and analyzing physical inventory. The physical inventory recording contains the items and quantities to be counted and forms the basis of the print-out to be used in the warehouse.
@@ -32,7 +32,7 @@ You can archive and delete blanket sales and purchase orders. You can view docum
 |Moved| Blanket Order Archiving and Document Line Tracking features are no longer specific to Germany, so we have made them generally available in the standard product. |
 
 ## See Also
-[Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-business-central.md)  
+[Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
-[Germany Local Functionality in [!INCLUDE[navnow](../developer/includes/navnow_md.md)]](/dynamics-nav-app/LocalFunctionality/Germany/germany-local-functionality)  
+[Germany Local Functionality](/dynamics365/business-central/LocalFunctionality/Germany/germany-local-functionality)  

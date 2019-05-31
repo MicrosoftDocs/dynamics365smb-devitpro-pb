@@ -36,6 +36,7 @@ This topic lists properties that apply to the query object.
 |[Name Property](devenv-name-property.md)|<ul><li>Query Object</li><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
 |[OrderBy Property](devenv-orderby-property.md)|<ul><li>Query Object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)|<ul><li>Query Object</li></ul>|
+|[QueryCategory Property](devenv-querycategory-property.md)|<ul><li>Query Object</li></ul>|
 |[QueryType Property](devenv-querytype-property.md)|<ul><li>Query Object</li></ul>|
 |[ReadState Property](devenv-readstate-property.md)|<ul><li>Query Object</li></ul>|
 |[ReverseSign Property](devenv-reversesign-property.md)|<ul><li>Column control</li></ul>|

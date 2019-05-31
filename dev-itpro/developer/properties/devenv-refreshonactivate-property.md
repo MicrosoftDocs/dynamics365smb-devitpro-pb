@@ -21,9 +21,15 @@ Set this property on pages where you want to refresh the data when the user navi
 ## Applies To  
   
 -   Pages 
-  
+
+## Syntax
+```
+RefreshOnActivate = true;
+```
+ 
 ## Remarks  
 On RoleCenters, modifying data in one part will automatically refresh data in any other parts which have the RefreshOnActivate property set to **true**.
 
 ## See Also  
+[Properties](devenv-properties.md)  
  [Page Properties](devenv-page-properties.md)

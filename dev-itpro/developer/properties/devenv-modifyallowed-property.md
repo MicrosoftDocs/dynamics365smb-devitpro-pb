@@ -22,7 +22,12 @@ Sets the value to determine whether users can modify records while using this pa
 -   Pages  
   
 ## Property Value  
- **true** if you want to allow the users to modify records; otherwise, **false**. The default is **true**.  
+ **True** if you want to allow the users to modify records; otherwise, **false**. The default is **true**. 
+
+## Syntax
+```
+ModifyAllowed = false;
+``` 
   
 ## See Also  
  [Properties](devenv-properties.md)

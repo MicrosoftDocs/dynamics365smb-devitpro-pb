@@ -2,7 +2,7 @@
 title: "Contains Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 05/28/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ The specific header.
 ## Return Value
 *Result*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** is the specified header exists in the collection; otherwise **false**.  
+**true** if the specified header exists in the collection; otherwise **false**.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
