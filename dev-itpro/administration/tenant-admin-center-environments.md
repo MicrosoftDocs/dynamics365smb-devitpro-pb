@@ -16,13 +16,21 @@ ms.author: jaredha
 
 # Managing Environments
 
-The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] allows you to view information about the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, as well as manage upgrades for each environment.
+The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, and you can manage upgrades for each environment.
 
-The Environments list page provides an overivew of the production and sandbox environments in the tenant. You can see the details and additional actions for an environment by clicking the link in the **Name** column of the list for the environment.
+> [!div class="mx-imgBorder"]
+> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
+
+## Viewing details for an environment
+
+In the Environments list, you can open a page with more details for an environment by choosing  the link in the **Name** column of the list for the environment.
+
+> [!div class="mx-imgBorder"]
+> ![View details about an environment](../developer/media/admin/business_central_admin_center_details.png)
 
 ## Create a new production environment
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating the production environments for the tenant. 
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, if you have been using a production environment for training purposes, and you have decided to start using [!INCLUDE [nav_prov_short_md](../developer/includes/nav_prov_short_md.md)] to run the business, you can delete the original production environment and then create a new production environment.  
 
 > [!NOTE]
 > Each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant is limited to one production environment.
@@ -37,7 +45,7 @@ When the new production environment is created, it will be on the latest product
 
 ## <a name="create-a-sandbox-environment"></a>Create a new sandbox environment
 
-A sandbox environment is a non-production instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Isolated from production, a sandbox environment is the pace to safely explore, learn, demo, develop, and test the service without the risk of affecting the data and settings of your production environment.
+A sandbox environment is a non-production instance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Isolated from production, a sandbox environment is the place to safely explore, learn, demo, develop, and test the service without the risk of affecting the data and settings of your production environment.
 
 > [!NOTE]
 > Each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant is limited to three sandbox environments.
@@ -45,11 +53,11 @@ A sandbox environment is a non-production instance of [!INCLUDE[prodshort](../de
 To create a sandbox environment:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select the **New** action on the action ribbon.
-2. In the **Create Environment** pane, provide a name for your environment. 
+2. In the **Create Environment** pane, provide a name for the new environment.
 3. Select **Sandbox** in the **Environment Type** list.
 4. Specify if you want the sandbox environment to contain a copy of another environment. If this option is selected, select the environment to copy.
     > [!NOTE]
-    > When creating a sandbox environment as a copy of another environment, the new environment is created on the same application version as the environment being copied. The new environment will also contain all the per-tenant extensions and AppSource extensions installed and published in the environment being copied.
+    > When you create a sandbox environment as a copy of another environment, the new environment is created on the same application version as the environment that you are copying. The new environment will also contain all the per-tenant extensions and AppSource extensions that are installed and published in the original environment that is being copied.
 5. Select the application version for the new sandbox environment from the **Version** list.
 6. Select **Create**.
     > [!NOTE]
@@ -80,7 +88,9 @@ When a sandbox environment is created on a Preview version, the environment will
 
 ## Upgrading environments
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are upgraded on a monthly cadence. Major upgrades occur semiannually, and minor upgrades occur each month that there is not a major upgrade. The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] gives you a level of control over the timing of upgrades for each environment.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are upgraded according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] roadmap with two annual major updates and monthly service updates. For more information, see [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/en-us/business-applications-release-notes/).
+
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] gives you a level of control over the timing of upgrades for each environment.
 
 ### Set the upgrade window
 

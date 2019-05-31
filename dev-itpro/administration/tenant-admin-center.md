@@ -16,7 +16,7 @@ ms.author: jaredha
 ---
 # The Business Central Administration Center
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Here, administrators can view and work with production and sandbox environments for the tenant, set up upgrade notifications, and view telemetry for events on the tenant.  
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Here, administrators can [view and work with production and sandbox environments](tenant-admin-center-environments.md) for the tenant, [set up upgrade notifications](tenant-admin-center-notifications.md), and [view telemetry](tenant-admin-center-telemetry.md) for events on the tenant.  
 
 > [!div class="mx-imgBorder"]
 > ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
@@ -29,11 +29,15 @@ The following users are authorized to access the [!INCLUDE[prodadmincenter](../d
 - Admin agent
 - Helpdesk agent
 
+Internal administrators are the system administrators, IT professionals, or superusers of the company, and they are members of the *Internal Admin* user group in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
 The admin agent and helpdesk agent roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner associated with the tenant. These roles are delegated administrators on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
 
 ### Internal administrators
 
-As the internal administrator, you can get to the administration center by navigating directly to the URL. This is done with the following URL, if you replace *[TENANT_ID]* with the tenant ID of your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].
+As the internal administrator, you can get to the administration center by navigating directly to the URL, or by choosing the link in the **Settings** menu when you are logged in to your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
+To access the administration center from the URL, use the following pattern but replace *[TENANT_ID]* with the tenant ID of your [!INCLUDE [prodshort](../developer/includes/prodshort.md)]:
 
 `https://businesscentral.dynamics.com/[TENANT_ID]/admin`
 
@@ -59,11 +63,10 @@ You can also get to the administration center by navigating directly to the URL 
 
 Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, in the administration center, use the **New Support Request** link in the Help menu. This opens a new browser tab with the site where you can submit the support request.  
 
-Fill in the fields as appropriate. You can find most of the necessary information in the administration center, including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version.  
+Fill in the fields as appropriate. You can find most of the necessary information in the administration center, including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers.  
 
 ## See also
 
-[Working with Administration Tools](administration.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Tenant Notifications](tenant-admin-center-notifications.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  

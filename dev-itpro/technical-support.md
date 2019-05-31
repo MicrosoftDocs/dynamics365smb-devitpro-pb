@@ -49,7 +49,10 @@ For more information, see [Configuring [!INCLUDE[webserver](developer/includes/w
 
 The **Help and Support** page is a powerful tool for you to find technical information about your customers' [!INCLUDE [prodshort](developer/includes/prodshort.md)], both online and on-premises. It gives easy access to the most recent error message, and it has a link to inspect pages for further troubleshooting. This is also where you can find information about which version of [!INCLUDE [prodshort](developer/includes/prodshort.md)], your online customers are on.  
 
-You can use the [!INCLUDE [prodshort](developer/includes/prodshort.md)] Administration center to easily navigate to your customers' tenants, and you can create sandbox environments that can help troubleshoot any issues reported by your customers. For more information, see [The Business Central Administration Center](administration/tenant-admin-center.md).  
+> [!div class="mx-imgBorder"]
+> ![Help and Support page with links to troubleshooting](developer/media/admin/helpsupport_managed.png)
+
+You can use the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)] to easily navigate to your customers' tenants, and you can create sandbox environments that can help troubleshoot any issues reported by your customers. For more information, see [The Business Central Administration Center](administration/tenant-admin-center.md).  
 
 ### Azure Active Directory tenant
 
