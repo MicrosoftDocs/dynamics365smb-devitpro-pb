@@ -65,7 +65,7 @@ You can use the information about which version the tenant is on to help you tro
 |Version  |Example      |Description                                 |
 |---------|-------------|--------------------------------------------|
 |Platform \<major>.\<minor>.\<build>.\<revision>|14.0.29537.0  | Specifies the full platform version, which includes client and server components. |
-|Application \<build> (\<country> \<name> \<major>.\<minor>)|29537 (US Dynamics NAV 14.0)| Specifies the build number for the application, including the major version number. |
+|Application \<build> (\<country> \<name> \<major>.\<minor>)|29537 (US Business Central 14.0)| Specifies the build number for the application, including the major version number. |
 
 However, if you use the online administration center, the version information is rendered differently:
 
