@@ -18,11 +18,11 @@ ms.author: bholtorf
 This topic lists and describes the local functionality for Canada that has been removed from [!INCLUDE[navnow](../developer/includes/navnow_md.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Customer Statement Report
-Shows and prints a list of customer statements on generic forms or plain paper. For example, use the report as part of your payment collection process.
+Shows a list of financial transactions for a selected customer statements for a given period of time. For example, use the report as part of your payment collection process.
 
 |Moved, Removed, or Replaced?|Why?| When?|
 |----|----|----|
-|Replaced| The Standard Statement report (report 1316) provides the same capabilities as the Customer Statement report (report 10072), plus the ability to customize layouts in Word, and it is available for all countries. | Autumn '19 |
+|Replaced| The Standard Statement report (report 1316) provides the same capabilities as the Customer Statement report (report 10072), plus the ability to customize layouts in Word, and it is available for all countries. | 2019 release wave 2 |
 
 ## See Also
 [Upgrading to Microsoft Dynamics NAV 2018](upgrading-to-business-central.md)  
