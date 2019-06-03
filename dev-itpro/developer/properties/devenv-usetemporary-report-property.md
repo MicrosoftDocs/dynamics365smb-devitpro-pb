@@ -19,6 +19,11 @@ Sets whether a temporary table is used to store the data set that is returned fo
 
 - Report data items
 
+## Syntax
+```
+UseTemporary = true;
+```
+
 ## See Also  
 [Properties](devenv-properties.md)   
 [Report Object](../devenv-report-object.md)   

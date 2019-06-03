@@ -17,11 +17,18 @@ caps.latest.revision: 6
 Sets whether the text that is specified by the [Caption Property](devenv-caption-property.md) is displayed for the control.  
 
 ## Applies To  
- Field controls on pages  
- Group controls on pages
+ - Field controls on pages  
+ - Group controls on pages
 
 ## Property Value  
  **True** if the caption is displayed; otherwise, **false**. The default is **true**.  
 
+## Syntax
+```
+ShowCaption = false;
+```
+
 ## See Also  
- [Caption Property](devenv-caption-property.md)
+ [Properties](devenv-properties.md)   
+ [Caption Property](devenv-caption-property.md)    
+

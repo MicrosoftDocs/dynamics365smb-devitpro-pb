@@ -25,7 +25,7 @@ Sets the value to determine whether SIFT structures should be created in SQL Ser
 
 ## Syntax
 ```
-MaintainSIFTIndex = false;
+key(PK;PK) { MaintainSqlIndex=false; MaintainSiftIndex=true; }
 ``` 
   
 ## Remarks  

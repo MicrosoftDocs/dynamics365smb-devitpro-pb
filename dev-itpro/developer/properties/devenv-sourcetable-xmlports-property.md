@@ -19,7 +19,12 @@ Sets the table to which you want to map XML data or the table that you want to e
   
 ## Applies To  
  XMLports  
-  
+
+## Syntax
+```
+SourceTable = Customer;
+```
+ 
 ## Remarks  
  This property is available if you selected Table in the [SourceType Property](devenv-sourcetype-property.md).  
   
@@ -33,5 +38,6 @@ Sets the table to which you want to map XML data or the table that you want to e
 |Customer|Cust.|Cust.\<Customer>|  
   
 ## See Also  
+ [Properties](devenv-properties.md)   
  [SourceType Property](devenv-sourcetype-property.md)   
  [VariableName Properties](devenv-variablename-properties.md)

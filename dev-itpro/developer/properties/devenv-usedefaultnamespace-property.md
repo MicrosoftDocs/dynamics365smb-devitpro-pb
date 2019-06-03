@@ -23,6 +23,11 @@ Specifies whether the value in default namespace should be used for both output 
   
 ## Property Value  
  **True** if the default namespace should be used; otherwise, **false**. The default is **false**.  
+
+## Syntax
+```
+UseDefaultNamespace = true;
+```
   
 ## See Also  
  [Properties](devenv-properties.md)

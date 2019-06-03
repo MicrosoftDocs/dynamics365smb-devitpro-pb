@@ -17,7 +17,12 @@ caps.latest.revision: 5
 Sets a value to shift negative values to the right for display purposes only. You can shift negative values in increments of 1/100 of a millimeter.  
   
 ## Applies To  
- Text boxes  
+ Text boxes 
+
+## Syntax
+```
+SignDisplacement = 600; 
+```
   
 ## Remarks  
  For example, if you enter 600 (6 millimeters) you would see a result similar to:  
