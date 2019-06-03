@@ -15,7 +15,7 @@ ms.author: bholtorf
 ---
 
 # Deprecated Features in the Mexican Version of Microsoft Dynamics 365 Business Central
-This topic lists and describes the local functionality for the Mexico that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort_md.md)], made available from a new page or report, or replaced by a new feature.
+This topic lists and describes the local functionality for the Mexico that has been removed from [!INCLUDE [prodshort](../developer/includes/prodshort_md.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Customer Statement Report
 Shows a list of financial transactions for a selected customer statements for a given period of time. For example, use the report as part of your payment collection process.
