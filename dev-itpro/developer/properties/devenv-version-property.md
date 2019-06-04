@@ -18,6 +18,12 @@ author: SusanneWindfeldPedersen
 
 Specifies the version of the .NET assembly.
 
+## Syntax
+```
+Culture = 'neutral';
+```
+
 ## See Also  
+ [Properties](devenv-properties.md)       
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

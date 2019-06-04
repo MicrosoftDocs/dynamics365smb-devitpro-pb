@@ -19,6 +19,12 @@ Sets whether a temporary table is created to store the records imported using th
 
 - XMLport table elements
 
+
+## Syntax
+```
+UseTemporary = true;
+```
+
 ## See Also  
 [Properties](devenv-properties.md)   
 [XMLPort Object](../devenv-xmlport-object.md)   

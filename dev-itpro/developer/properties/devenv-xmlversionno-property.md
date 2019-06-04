@@ -15,13 +15,18 @@ author: SusanneWindfeldPedersen
  
 
 # XMLVersionNo Property
-Set which version of XML the XML document conforms to. Two options are available: 1.0 \(the default\) and 1.1.  
+Set which version of XML the XML document conforms to. Two options are available: V10 \(the default\) and V11.  
   
 ## Applies To  
  XMLports  
+
+## Syntax
+```
+XMLVersionNo = V10;
+```
   
 ## Remarks  
- The XML version number is inserted into the XML document as the XML declaration, for example, .  
+ The XML version number is inserted into the XML document as the XML declaration.  
   
 ## See Also  
  [Properties](devenv-properties.md)

@@ -28,6 +28,11 @@ Sets whether to display the page or control.
 ## Property Value  
  **True** on pages if you want the page or control to be visible; otherwise, **false** on pages. The default is **true** on pages.  
 
+## Syntax
+```
+Visible = false;
+```
+
 ## Remarks  
  Because this property also applies to containers, such as pages and subpages, if the **Visible** property for the container is set to **false**, then controls on the container are also not displayed, even if the **Visible** property is set to **true**.  
 

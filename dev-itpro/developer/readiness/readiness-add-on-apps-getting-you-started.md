@@ -118,8 +118,7 @@ In order to be set up as a publisher and access the Cloud Partner Portal, you ne
 You have 3 options to work develop against the current version of Microsoft Dynamics 365 Business Central.
 - [If your add-on is lightweight, it might be sufficient to use a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-get-started) 
 - [If you want to setup a Docker-based development environment on Azure, you can use:](http://aka.ms/BCSandboxAzure) 
-- [If you want to setup a local docker based developer environment, you can download a
-PowerShell script available at](http://aka.ms/BCSandboxLocal) 
+- [If you want to setup a local Docker-based developer environment, you can download a PowerShell script available at](http://aka.ms/BCSandboxLocal) 
 
 ## The “Ready to Go” program
 
@@ -155,7 +154,7 @@ Next, your company Global Administrator must click on the ‘Get Started’ opti
 
 Once completed, be sure and click the 'Terms of Use' (TOU) checkbox at the bottom of the registration page. Note: You need to accept the TOU to successfully register (cf. image below).
 
-Click the 'Next' button to complete your initial registration. When successful, you will see the image below.
+Click the **Next** button to complete your initial registration. When successful, you will see the image below.
 
 As the final step, to complete registration, click ‘GO TO DASHBOARD’.
 
@@ -176,12 +175,13 @@ If you DO want to add coworkers, please follow the 5 steps below:
 *Getting access to the available builds and engagements*
 
 1.	Register on [Microsoft Collaborate](https://aka.ms/Collaborate) by using your AAD Global Admin account (as described in detail above).
-2.	Once you have successfully registered (and added coworkers) on  Microsoft Collaborate, your company’s Azure Active Directory (AAD) global administrator should send us an email to complete the on-boarding. We need to manually assign you to the right programs and engagements. Expect a response from us within 1-2 business days.
-3.	In this email, please specify the following:
+2.	Once you have successfully registered (and added coworkers) on  Microsoft Collaborate, your company’s Azure Active Directory (AAD) global administrator should send us an email to complete the on-boarding [Dynamics 365 Business Central Programs](mailto: Dyn365BEP@microsoft.com). We need to manually assign you to the right programs and engagements. Expect a response from us within 1-2 business days.
+3.	In this email to [Dynamics 365 Business Central Programs](mailto: Dyn365BEP@microsoft.com), please specify the following:
 - Your ‘Publisher Display Name’
 - The name(s) of the people you have added to Microsoft Collaborate
 - The email address(es) of the people you have added to Microsoft Collaborate (No personal email addresses please)
 - The roles you have given then on Collaborate (Participant, Power user)
+- MPN ID# and registered Partner Name
 
 ## STEP 2: List your Add-on app on Microsoft AppSource
 
