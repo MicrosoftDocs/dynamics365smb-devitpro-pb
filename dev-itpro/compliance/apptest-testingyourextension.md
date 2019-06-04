@@ -49,7 +49,7 @@ When we validate apps, we use the base CRONUS demo data. This of course is there
 
 ## Use the right user for your testing
 
-Do not do your testing with a user that has SUPER permissions marked. The SUPER user can do all without issue and you won’t catch your true app bugs. No live customer will have several users marked with this permission set. Therefore, we cannot test with it. You need to setup a user in your test environment that only has the BUS FULL ACCESS permission set, LOCAL, and any of your own permission sets. For information on how to setup this user, refer to this blog (coming soon). 
+Do not do your testing with a user that has SUPER permissions marked. The SUPER user can do all without issue and you won’t catch your true app bugs. No live customer will have several users marked with this permission set. Therefore, we cannot test with it. You need to setup a user in your test environment that only has the BUS FULL ACCESS permission set, LOCAL, and any of your own permission sets. For information on how to setup this user, see this blog [Enabling Premium Experience in Business Central Sandbox Containers](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/04/13/enabling-premium-experience-in-business-central-sandbox-containers/?source=nav). 
 
 ## Testing your app
 

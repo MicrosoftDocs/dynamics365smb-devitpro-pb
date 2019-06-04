@@ -25,7 +25,12 @@ Sets additional information about what will be contained in the field.
 |**Bitmap**                |For storing bitmaps|  
 |**Memo**                  |For storing memos|  
 |**User-Defined (default)**|For user defined information|  
-  
+ 
+## Syntax
+```
+SubType = Bitmap;
+```
+
 ## See Also  
 [Properties](devenv-properties.md)   
 [SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)   

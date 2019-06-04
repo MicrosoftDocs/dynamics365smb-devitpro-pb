@@ -22,6 +22,11 @@ Sets the width of the control. Width is set as a number of characters and must b
 -   Page Fields  
   
 -   Table Fields  
+
+## Syntax
+```
+Width = 1;
+```
   
 ## Remarks  
  For controls, the width specifies the width of the column. Static controls in the heading inherit the width from the column control.  

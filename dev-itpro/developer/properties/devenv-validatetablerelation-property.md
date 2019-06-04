@@ -23,6 +23,11 @@ Sets whether to validate a table relationship.
   
 ## Property Value  
  **True** if you want to validate the table relationship; otherwise, **false**. The default is **true**.  
+
+## Syntax
+```
+ValidateTableRelation = false;
+```
   
 ## Remarks  
  For fields, use this property to determine whether to validate the user's entry based on the information already in the table set up through the [TableRelation Property](devenv-tablerelation-property.md) property.  

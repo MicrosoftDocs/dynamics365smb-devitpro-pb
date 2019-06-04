@@ -35,5 +35,6 @@ StartupScript = 'js/chart.js';
 ```
 
 ## See Also  
+ [Properties](devenv-properties.md)   
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

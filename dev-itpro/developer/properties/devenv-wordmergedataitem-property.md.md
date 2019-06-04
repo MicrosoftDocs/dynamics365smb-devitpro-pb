@@ -23,6 +23,10 @@ Specifies the name of the root-level **DataItem** that is used for generating se
 ## WordMergeDataItem Data Type
 String
 
+## Syntax
+```
+ WordMergeDataItem = Header;
+```
 
 ## See Also
 [Report](../devenv-reports.md)  

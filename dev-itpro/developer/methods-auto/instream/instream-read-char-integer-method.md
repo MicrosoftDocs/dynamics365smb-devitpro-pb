@@ -42,10 +42,12 @@ If you omit this optional return value and the operation does not execute succes
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- If the optional return value \(*READ*\) is not present and the data being read is less than the length requested to be read, then you receive an error message.  
+## Remarks
+READ reads until the specified length or a zero byte. For more information about how zero bytes and line endings are read, see [WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
   
- If the return value is present, then you must verify the validity of the data that has been read.  
+If the optional return value \(*READ*\) is not present and the data being read is less than the length requested to be read, then you receive an error message.  
+  
+If the return value is present, then you must verify the validity of the data that has been read.  
   
 ## Example  
  The following example shows how to use the **Instream.READ** method to read data in binary format. The **FIND** method finds the first record from the **Company Information** table. The **CALCFIELDS** method retrieves the **Picture** field, which is a BLOB field. The **CREATEINSTREAM** method uses the recBinaries variable to create an InStream object that is named varInstream. The **varInstream.READ** method then reads three characters from the varInstream variable and stores the binary data in the varChars variable. The number of characters that is read is stored in the numChars variable. The binary data and the number of characters that is read are displayed in a message box. This example requires that you create the following global variables and text constants.  
