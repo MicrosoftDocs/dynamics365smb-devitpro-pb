@@ -27,5 +27,5 @@ Provider = PartName;
 ```
 
 ## See Also  
-[Page Object](../devenv-page-object.md)   
- [Properties](devenv-properties.md)
+[Page Object](../devenv-page-object.md)
+[Properties](devenv-properties.md)
