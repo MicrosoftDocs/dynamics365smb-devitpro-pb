@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# <a name="Help"></a>Help URL
+# Help URL
 
 | Listing details | Description | Requirements |
 |-----------------|-------------|--------------|
