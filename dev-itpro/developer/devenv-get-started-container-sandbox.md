@@ -105,7 +105,7 @@ After the container sandbox is set up, you must set up Visual Studio Code for ex
     ```
     "server": "http://MyBizCentralApp",
     "serverInstance": "NAV",
-    "authentication": Windows,
+    "authentication": "Windows",
     ```
 6. Save the launch.json file.
 
