@@ -17,13 +17,13 @@ Pages of the type `API` are used to generate web service endpoints and this type
 For the API page type, the following naming conventions exist:
 
 - Use camelCase for naming attributes, tables, as well as APIPublisher, APIGroup, EntityName, and EntitySetName.
-- ApiVersion follows the pattern `vX.Y` or `beta`.
+- APIVersion follows the pattern `vX.Y` or `beta`.
 - Do not use any special characters in any of the above mentioned naming.
 
 
 ## Example of the API page type
 The following page example publishes an API available at:
-`../contoso/app1/v2.0/companies({id})/Customers`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
+`../contoso/app1/v2.0/companies({id})/customers`. The `APIVersion` can be specified as one version, or a list of versions, if the API is supported through multiple versions.
 
 ```
 page 50120 MyCustomerApi
