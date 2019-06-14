@@ -3,7 +3,7 @@ title: "API Page Type"
 description: "Description of the API page type used for exposing web service endpoints."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.author: solsen
 ---
