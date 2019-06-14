@@ -16,6 +16,14 @@ manager: edupont
 # OnAssistEdit Trigger
 Runs in place of the [AssistEdit Property](../properties/devenv-assistedit-property.md) features that are provided in the application.  
 
+## Syntax  
+```  
+trigger OnAssistEdit()
+begin
+    ...
+end;
+``` 
+
 ## Applies To  
 - Fields on pages  
 

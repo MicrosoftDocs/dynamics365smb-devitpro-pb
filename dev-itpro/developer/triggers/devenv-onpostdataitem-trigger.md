@@ -15,7 +15,14 @@ manager: edupont
 
 # OnPostDataItem Trigger
 Runs after a data item is processed.  
-  
+
+## Syntax  
+```  
+trigger OnPostDataItem() 
+begin
+    ...
+end;
+```  
 ## Applies To  
 - Data items  
   

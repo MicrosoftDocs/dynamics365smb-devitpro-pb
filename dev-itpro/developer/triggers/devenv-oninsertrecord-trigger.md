@@ -15,17 +15,21 @@ manager: edupont
 
 # OnInsertRecord Trigger
 Runs before a new record is inserted into the table.  
-  
+
 ## Syntax  
-  
-```   
-[Ok]:= OnInsertRecord(BelowxRec)  
+
 ```  
-  
-## Return Value  
+trigger OnInsertRecord(BelowxRec): Ok
+begin
+    ...
+end;
+```  
+
+#### Parameters 
  *BelowxRec*  
  \(Boolean\) This return value indicates whether the new record was inserted after the last record in the table \(xRec\) or not. If **false**, the record was inserted between an existing record and the last record. If **true**, the record was inserted below the last record in the table \(xRec\).  
-  
+
+## Return Value   
  *Ok*  
  \(Boolean\) Indicates whether a new record should be inserted. The return value is checked after each  call. If **true**, the record is inserted. If **false**, the record is not inserted.  
   
