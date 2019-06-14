@@ -31,7 +31,7 @@ tableextension 50111 "CustomerExt" extends Customer
     {
         modify("Address 2")
         {
-            trigger OnAValidate()
+            trigger OnBeforeValidate()
             begin
                 if (rec.Address = '') then
                     error('Please, input a first address before specifying a second one.');
