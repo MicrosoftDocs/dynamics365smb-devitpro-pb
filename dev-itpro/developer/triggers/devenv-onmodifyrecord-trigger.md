@@ -15,13 +15,15 @@ manager: edupont
 
 # OnModifyRecord Trigger
 Runs before a record is modified in the table.  
-  
+
 ## Syntax  
-  
 ```  
-[Ok]:= OnModifyRecord  
-```  
-  
+trigger OnModifyRecord(): Ok
+begin
+    ...
+end;
+```   
+
 ## Return Value  
  *Ok*  
   

@@ -17,7 +17,7 @@ Runs after a page is initialized and run.
 
 ## Syntax  
 ```  
-trigger OnOpenPage();
+trigger OnOpenPage()
 begin
     ...
 end;

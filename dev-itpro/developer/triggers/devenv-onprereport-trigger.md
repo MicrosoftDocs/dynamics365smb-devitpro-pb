@@ -15,7 +15,15 @@ author: SusanneWindfeldPedersen
 
 # OnPreReport Trigger
 Runs before a report is run.  
-  
+
+## Syntax  
+```  
+trigger OnPreReport() 
+begin
+    ...
+end;
+``` 
+ 
 ## Applies To  
 - Reports  
   

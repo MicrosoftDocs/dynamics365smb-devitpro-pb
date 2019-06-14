@@ -19,8 +19,10 @@ Runs in place of the normal lookup features for the current page.
 ## Syntax  
 
 ```  
-
-OnLookup(TextString)  
+trigger OnLookup(TextString) 
+begin
+    ...
+end;
 ```  
 
 #### Parameters  
