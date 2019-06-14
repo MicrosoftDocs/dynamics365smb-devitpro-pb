@@ -14,7 +14,7 @@ Pages of the type `API` are used to generate web service endpoints and this type
 
 ## Naming conventions
 
-For the API page type, the following naming convention exists:
+For the API page type, the following naming conventions exist:
 
 - Use camelCase for naming attributes, tables, as well as APIPublisher, APIGroup, EntityName, and EntitySetName.
 - ApiVersion follows the pattern `vX.Y` or beta.
@@ -33,8 +33,8 @@ page 50120 MyCustomerApi
     APIPublisher = 'contoso';
     APIGroup = 'app1';
     APIVersion = 'v2.0';
-    EntityName = 'Customer';
-    EntitySetName = 'Customers';
+    EntityName = 'customer';
+    EntitySetName = 'customers';
     SourceTable = Customer;
     DelayedInsert = true;
     
