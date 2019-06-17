@@ -14,17 +14,11 @@ author: blrobl
 # OnBeforeValidate Trigger
 Runs before the user input is validated. 
 
-## Syntax  
-  
-```  
-OnBeforeValidate()  
-```   
-  
 ## Applies To  
 - Fields  
   
 ## Remarks  
- This trigger is run after the default validation behavior. An error message displays if an error occurs in the trigger code. In case of an error, the user entry is not written to the database.  
+This trigger is run before the default validation behavior is executed on a record field entry, which are default checks such as data type validation. An error message displays if an error occurs in the trigger code. In case of an error, the user entry is not written to the database.  
 
 It applies to an already existing table field when it is being modified in a table extension. 
 
@@ -37,7 +31,7 @@ tableextension 50111 "CustomerExt" extends Customer
     {
         modify("Address 2")
         {
-            trigger OnAValidate()
+            trigger OnBeforeValidate()
             begin
                 if (rec.Address = '') then
                     error('Please, input a first address before specifying a second one.');

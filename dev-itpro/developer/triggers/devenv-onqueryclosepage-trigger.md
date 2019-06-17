@@ -17,10 +17,11 @@ manager: edupont
 Runs as a page closes and before the [OnClosePage Trigger](devenv-OnClosePage-Trigger.md) executes.  
 
 ## Syntax  
-
 ```  
-
-[Ok]:= OnQueryClosePage(CloseAction)  
+trigger OnQueryClosePage(CloseAction): Ok 
+begin
+    ...
+end;
 ```  
 
 #### Parameters  

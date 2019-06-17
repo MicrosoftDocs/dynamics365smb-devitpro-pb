@@ -19,6 +19,14 @@ Runs each time a record is retrieved from the data item.
 ## Applies To  
 - Data items  
 
+## Syntax  
+```  
+trigger OnAfterGetRecord()
+begin
+    ...
+end;
+``` 
+
 ## Remarks  
  Use this trigger to perform any processing that is needed, based on the values in the fields of the individual records of a data item.  
 

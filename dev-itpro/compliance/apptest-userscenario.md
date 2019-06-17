@@ -10,7 +10,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: rweigel
-
 ---
 
 # User Scenario Documentation

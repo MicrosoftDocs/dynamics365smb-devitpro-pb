@@ -15,6 +15,14 @@ author: SusanneWindfeldPedersen
 # OnPreDataItem Trigger
 Runs before a data item is processed.  
 
+## Syntax  
+```  
+trigger OnPreDataItem() 
+begin
+    ...
+end;
+```
+
 ## Applies To  
 - Data items  
 

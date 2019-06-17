@@ -12,18 +12,20 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
- 
-
-# Culture Property
+# Version Property
 
 Specifies the version of the .NET assembly.
 
 ## Syntax
 ```
 Culture = 'neutral';
+Version = '4.0.0.0';
 ```
 
 ## See Also  
- [Properties](devenv-properties.md)       
+[Properties](devenv-properties.md)       
+
+## See Also  
+[Properties](devenv-properties.md)       
 [Control Add-In Object](../devenv-control-addin-object.md)   
  
