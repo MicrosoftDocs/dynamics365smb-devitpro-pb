@@ -12,8 +12,6 @@ caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # Version Property
 
 Specifies the version of the .NET assembly.
@@ -23,6 +21,9 @@ Specifies the version of the .NET assembly.
 Culture = 'neutral';
 Version = '4.0.0.0';
 ```
+
+## See Also  
+[Properties](devenv-properties.md)       
 
 ## See Also  
 [Properties](devenv-properties.md)       
