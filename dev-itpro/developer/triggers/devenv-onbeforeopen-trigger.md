@@ -20,7 +20,10 @@ Runs before a query is run and the dataset is generated.
 ## Syntax  
 
 ```
-OnBeforeOpen()  
+trigger OnBeforeOpen()
+begin
+    ...
+end;
 ```  
 
 ## Remarks  
