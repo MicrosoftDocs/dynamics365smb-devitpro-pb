@@ -10,16 +10,16 @@ ms.author: solsen
 
 # API Page Type
 
-Pages of the type `API` are used to generate web service endpoints and this type of page cannot be displayed in the user interface. When creating this page type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tpage - Page of type API` to get the right template and the list of these properties automatically filled in. This page type cannot not be extended by creating a page extension object. Instead, you must create a new API by adding a page object.
+Pages of the type `API` are used to create versioned, webhook supported, OData v4 enabled REST web services. This type of page cannot be displayed in the user interface, but is intended for building reliable integration servcies. When creating this page type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tpage - Page of type API` to get the right template and the list of these properties automatically filled in. This page type cannot not be extended by creating a page extension object. Instead, you must create a new API by adding a page object.
 
 ## Naming conventions
 
 For the API page type, the following naming conventions exist:
 
-- Use camelCase for naming attributes, tables, as well as APIPublisher, APIGroup, EntityName, and EntitySetName.
-- APIVersion follows the pattern `vX.Y` or `beta`.
-- Do not use any special characters in any of the above mentioned naming.
-
+- camelCase for naming attributes, tables, as well as APIPublisher, APIGroup, EntityName, and EntitySetName.
+- Alphanumeric characters allowed (A-Z+a-z+0-9) in above elements. 
+- APIVersion follows the pattern vX.Y or beta.
+At design time, compiler will show warnings on casing violations and errors on naming violations. Once an API Page is deployed, corresponding [$metadata](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips) is exposed on the endpoint of the page. 
 
 ## Example of the API page type
 The following page example publishes an API available at:
@@ -44,11 +44,11 @@ page 50120 MyCustomerApi
         {
             repeater(GroupName)
             {
-                field(Id; Id)
+                field(id; Id)
                 {
                     Caption = 'ID';
                 }
-                field(Name; Name)
+                field(name; Name)
                 {
                     Caption = 'Name';
                 }
