@@ -4,6 +4,7 @@ description: "Describing the steps you must go through to successfully submit yo
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 06/07/2019
+ms.date: 06/17/2019
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,10 +19,9 @@ This page defines the rules and guidelines to follow when writing AL code in an 
 
 ## Critical errors
 
-- Code uses encryption key functions such as IMPORTENCRYPTIONKEY, EXPORTENCRYPTIONKEY, CREATEENCRYPTIONKEY, and DELETEENCRYPTIONKEY. (It is fine to use the ENCRYPT and DECRYPT functions.)
+- Code uses encryption key functions such as IMPORTENCRYPTIONKEY, EXPORTENCRYPTIONKEY, CREATEENCRYPTIONKEY, and DELETEENCRYPTIONKEY. (It is fine to use the ENCRYPT and DECRYPT methods.)
 - Code uses ASSERTERROR.
 - External data connections do not properly handle sensitive data.
-- Code uses `AutoIncrement = Yes` for a table field that may be used in a Foreign Key relationship. Recommend code comment that the table field will not be used in a Foreign Key relationship to pass validation. For more information, see [Implementation of surrogate keys using AutoIncrement pattern](https://community.dynamics.com/nav/w/designpatterns/122.implementation-of-surrogate-keys-using-autoincrement-pattern).
 - It does not encrypt sensitive table data. (i.e. credit card info, passwords, etc.).
 
 ## Important errors
