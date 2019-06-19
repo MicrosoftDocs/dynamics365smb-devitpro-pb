@@ -28,13 +28,13 @@ Installs and uninstalls published extensions in [!INCLUDE[d365fin_long_md](../de
 **Install extension**
 
 ```json
-POST /microsoft/automation/{version}/companies({companyId})//extensions({{packageId}})/Microsoft.NAV.install
+POST /microsoft/automation/{version}/companies({companyId})/extensions({{packageId}})/Microsoft.NAV.install
 ```
 
 **Uninstall extension**
 
 ```json
-POST /microsoft/automation/{version}/companies({companyId})//extensions({{packageId}})/Microsoft.NAV.ininstall
+POST /microsoft/automation/{version}/companies({companyId})/extensions({{packageId}})/Microsoft.NAV.uninstall
 ```
 
 ## Request headers
