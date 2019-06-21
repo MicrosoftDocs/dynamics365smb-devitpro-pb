@@ -16,7 +16,7 @@ ms.author: jaredha
 
 # Managing Environments
 
-The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] allows you to view information about the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, as well as manage upgrades for each environment.
+The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] allows you to view information about the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, as well as manage updates for each environment.
 
 The Environments list page provides an overivew of the production and sandbox environments in the tenant. You can see the details and additional actions for an environment by clicking the link in the **Name** column of the list for the environment.
 
@@ -76,46 +76,47 @@ If, when creating a new sandbox environment, the environment is not a copy of an
 
 The version list may also have one or more Preview versions. Preview versions are early release candidates of upcoming releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that are made available specifically for sandbox environments. This allows for reviewing new functionality, validating extension compatibility, and other general testing of the upcoming release.
 
-When a sandbox environment is created on a Preview version, the environment will automatically be upgraded to new Preview versions when they become available. However, the environment will not be upgraded to the Production version. Once a sandbox environment is on a Preview version, it must stay on a Preview version until it is deleted. The environment may also be deleted if an upgrade between Preview versions fails. It is recommended that Preview versions be used only for temporary testing of an upcoming release.
+When a sandbox environment is created on a Preview version, the environment will automatically be updated to new Preview versions when they become available. However, the environment will not be updated to the Production version. Once a sandbox environment is on a Preview version, it must stay on a Preview version until it is deleted. The environment may also be deleted if an update between Preview versions fails. It is recommended that Preview versions be used only for temporary testing of an upcoming release.
 
-## Upgrading environments
+## Updating environments
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are upgraded on a monthly cadence. Major upgrades occur semiannually, and minor upgrades occur each month that there is not a major upgrade. The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] gives you a level of control over the timing of upgrades for each environment.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are updated on a monthly cadence. Major updates occur semiannually, and minor updates occur each month that there is not a major update. The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] gives you a level of control over the timing of updates for each environment.
 
-### Set the upgrade window
 
-The upgrade window for an environment defines a window of time during the day in which the environment can be upgraded. When an update is rolling out to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, regardless of whether it's the monthly service update or a major update, the update will be applied to an environment within the time frame that the upgrade window defines. This helps to ensure that updates are applied outside of the customer's normal business hours, for example.
+### Set the update window
+
+The update window for an environment defines a window of time during the day in which the environment can be updated. When an update is rolling out to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, regardless of whether it's the monthly service update or a major update, the update will be applied to an environment within the time frame that the update window defines. This helps to ensure that updates are applied outside of the customer's normal business hours, for example.
 
 > [!NOTE]
 > Desktop users who are signed in during the update will receive an alert in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-To set the upgrade window for an environment:
+
+To set the update window for an environment:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], Select the **Name** of the relevant environment to open the environment details.
-2. Select the **Set upgrade window** action on the **Upgrade** list on the action ribbon.
-3. In the **Set upgrade window** pane, specify the start time and the end time for the upgrade window for the environment.
-
+2. Select the **Set update window** action on the **Update** list on the action ribbon.
+3. In the **Set update window** pane, specify the start time and the end time for the update window for the environment.
    > [!NOTE]
-   > The upgrade window must be a minimum of six hours.
-
+   > The update window must be a minimum of six hours.
 4. Select **Save**.
 
-### Schedule an upgrade date
+### Schedule an update date
 
-For major upgrades only, you have the option to select a specific date on which the environment is upgraded. When a major upgrade version is available, a notification is sent to the notification recipients listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] (See [Managing Tenant Notifications](tenant-admin-center-notifications.md) for more information). The **Upgrade version** field in the **Version Management** section of the environment details also displays the version number of the available upgrade version.
-
+For major updates only, you have the option to select a specific date on which the environment is updated. When a major update version is available, a notification is sent to the notification recipients listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] (See [Managing Tenant Notifications](tenant-admin-center-notifications.md) for more information). The **Update version** field in the **Version Management** section of the environment details also displays the version number of the available update version.
+<!--
 > [!div class="mx-imgBorder"]
-> ![Schedule Business Central Upgrade](../developer/media/business_central_admin_center_upgrade.png)
+> ![Schedule Business Central Update](../developer/media/business_central_admin_center_update.png)
+-->
 
-To schedule an upgrade date:
+To schedule an update date:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], Select the **Name** of the relevant environment to open the environment details.
-2. Select the **Schedule Upgrade** action on the **Upgrade** list on the action ribbon.
-3. In the **Schedule Environment Upgrade** pane, select the desired upgrade date.
+2. Select the **Schedule Update** action on the **Update** list on the action ribbon.
+3. In the **Schedule Environment Update** pane, select the desired update date.
     > [!Note] 
     > The selected date must be within a given date range displayed in the pane.
     
-4. Select **Schedule Upgrade**.    
+4. Select **Schedule Update**.    
 
 ## See also
 

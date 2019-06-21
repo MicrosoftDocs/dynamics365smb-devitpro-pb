@@ -17,7 +17,7 @@ ms.author: jaredha
 
 # Tenant Notifications
 
-Notifications are sent by email for administrative events that occur on the tenant. For example, notifications are sent when a major upgrade is available for tenant environments, when an environment upgrade has succeeded or failed, or when extensions require changes to be compatible with an upcoming release. When these and other similar events occur on the tenant, an email is sent to the notification recipients for the tenant.
+Notifications are sent by email for administrative events that occur on the tenant. For example, notifications are sent when a major update is available for tenant environments, when an environment update has succeeded or failed, or when extensions require changes to be compatible with an upcoming release. When these and other similar events occur on the tenant, an email is sent to the notification recipients for the tenant.
 
 ## Notification recipients
 
