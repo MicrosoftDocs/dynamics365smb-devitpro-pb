@@ -86,14 +86,18 @@ When a sandbox environment is created on a Preview version, the environment will
 
 The upgrade window for an environment defines a window of time during the day in which the environment can be upgraded. When an update is rolling out to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, regardless of whether it's the monthly service update or a major update, the update will be applied to an environment within the time frame that the upgrade window defines. This helps to ensure that updates are applied outside of the customer's normal business hours, for example.
 
-   > [!NOTE]
-   > The upgrade window must be a minimum of six hours.
+> [!NOTE]
+> Desktop users who are signed in during the update will receive an alert in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 To set the upgrade window for an environment:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], Select the **Name** of the relevant environment to open the environment details.
 2. Select the **Set upgrade window** action on the **Upgrade** list on the action ribbon.
 3. In the **Set upgrade window** pane, specify the start time and the end time for the upgrade window for the environment.
+
+   > [!NOTE]
+   > The upgrade window must be a minimum of six hours.
+
 4. Select **Save**.
 
 ### Schedule an upgrade date
