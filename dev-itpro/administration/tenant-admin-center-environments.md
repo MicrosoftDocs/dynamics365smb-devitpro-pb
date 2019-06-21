@@ -113,7 +113,7 @@ To schedule an update date:
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], Select the **Name** of the relevant environment to open the environment details.
 2. Select the **Schedule Update** action on the **Update** list on the action ribbon.
 3. In the **Schedule Environment Update** pane, select the desired update date.
-    > [!Note] 
+    > [!NOTE] 
     > The selected date must be within a given date range displayed in the pane.
     
 4. Select **Schedule Update**.    
