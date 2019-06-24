@@ -53,20 +53,7 @@ The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Co
 - **CodeCop** is an analyzer that enforces the official AL Coding Guidelines. For more information about the CodeCop rules, see [CodeCop Analyzer Rules](analyzers/codecop.md).
 - **PerTenantExtensionCop** is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants. For more information about the PerTenantExtensionCop rules, see [PerTenantExtensionCop Analyzer Rules](analyzers/pertenantextensioncop.md).
 - **AppSourceCop** is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource. For more information about the AppSourceCop rules, see [AppSourceCop Analyzer Rules](analyzers/appsourcecop.md).
-- **UserInterfaceCop** is an analyzer that enforces rules that must be respected by extensions meant to customize a user interface. For more information about the UserInterfaceCop rules, see [UICop Analyzer Rules](analyzers/uicop.md).
-
-## Selecting code analyzers to run
-By default, all the analyzers that ship with the Visual Studio Code extension are enabled.
-To selectively enable code analyzers:
-1. Open the Command Palette using the **Ctrl+Shift+P** shortcut and choose either User Settings or Workspace Settings.
-2. Copy the setting **al.codeAnalyzers** to the settings file and set it to an empty array: **"al.codeAnalyzers": []**.
-3. Add to the array the paths to the code analyzer assemblies that you want to run.
-
-The analyzers that are shipped with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] are available through the following variables:
-- `"${AppSourceCop}"`
-- `"${CodeCop}"`
-- `"${PerTenantExtensionCop}"`
-- `"${UICop}"`
+- **UICop** is an analyzer that enforces rules that must be respected by extensions meant to customize a user interface. For more information about the UserInterfaceCop rules, see [UICop Analyzer Rules](analyzers/uicop.md).
 
 ## See also
 [Using the Code Analysis Tools with the Ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  
