@@ -10,17 +10,17 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.date: 06/25/2019
 ---
-# System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-premises
+# System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
-The following sections list the minimum hardware and software requirements to install and run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
+The following sections list the minimum hardware and software requirements to use or connect to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, and to install and run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
 
 > [!NOTE]  
 >  [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs some software if it is not already present in the target computer. For more information, see the "Additional Information" section for each component.  
 
 ## Client Components
 
-###  <a name="WebClient"></a> Web Client Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client on-premises.  
+###  <a name="WebClient"></a> Browser Requirements  
+ The following table shows the minimum system requirements for using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a browser.  
 
 |||  
 |-|-|  
@@ -32,13 +32,7 @@ The following sections list the minimum hardware and software requirements to in
 |Printing reports to Excel or Word|<ul><li>Microsoft Office 2019, Microsoft Office 2016, or Microsoft Office 365.</li></ul>|  
 |Additional information|If you experience problems using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], you can try to turn off browser tools, such as translator tools that may run in the background.|  
 
-###  <a name="NavApps"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Tablet Client and Phone Client \(in a Browser\) Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)] running in a browser when used for development and testing purposes.  
 
-|||  
-|-|-|  
-|Server component|Identical to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)]Web client.|  
-|Supported browsers|The following desktop browsers are supported:<ul><li> Microsoft Edge</li><li>Internet Explorer 11 \(build 11.0.9600.17239\) for Windows 10.</li><li>Google Chrome 72.0 for Windows.</li><li>Mozilla Firefox 65.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul><br><br>Cookies and JavaScript must be enabled in the browser. |  
 
 ###  <a name="DynNAVApp"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Universal App Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)].  
@@ -53,7 +47,9 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 |Supported operating systems|<ul><li>Windows 10 S, Home, Pro, Enterprise, or Education \(32-bit and 64-bit editions\).</li><li>Android 6.0 or higher (tablet and phone).</li><li> iOS 10.0 or higher (iPad and iPhone).</li></ul>|  
 |Additional hardware|<ul><li>1 GB RAM for Android and Windows.</li></ul>|  
 |Additional software|<ul><li>A third-party telephony or VoIP app such as Skype is required for placing calls from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>A third-party email program such as Outlook is required for sending emails from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>Microsoft Office 2019, Office 2016, or Office 365 is required for sending data to Microsoft Excel or to Microsoft Word.</li></ul>|  
-|Additional information|<ul><li>Device diagonal screen size 7” for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4” for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>|  
+|Additional information|<ul><li>Device diagonal screen size 7” for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4” for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>|
+
+
 
 ### AL Development Requirements
 
@@ -61,8 +57,8 @@ The following table shows the minimum system requirements for customizing or ext
 
 |||
 |-|-|
-|Software requirements|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
-|Hardware requirements|<ul><li>Hard disk space: 200 MB.</li><li>Memory: 32 GB.</li></ul>|
+|Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
+|Hardware resources|<ul><li>Hard disk space: 200 MB.</li><li>Memory: 32 GB.</li></ul>|
 
 For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
 
@@ -97,9 +93,9 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.2.</li><li>SQL Server Native Client 11.0.</li><li>Report Builder for SQL Server 2016. This is not installed if a version of SQL Server Report Builder or Microsoft Visual Studio is already present on the target computer</li></ul></li><li>If the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] and [!INCLUDE[server](../developer/includes/server.md)] are on the same computer, then only a 64-bit operating system is supported.</li></ul>|  -->
 
 
-## Server Components
+## Server Components (on-premises)
 ###  <a name="NavServerReqs"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Requirements  
- The following table shows the minimum system requirements for [!INCLUDE[server](../developer/includes/server.md)].  
+ The following table shows the minimum system requirements for [!INCLUDE[server](../developer/includes/server.md)] .  
 
 |||  
 |-|-|  
@@ -147,10 +143,10 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 |||  
 |-|-|  
 |Additional software|<ul><li>MSXML version 6.0.</li><li>Telnet or Microsoft Windows HyperTerminal.</li><li>VT100 Plug-in for each computer on which you install ADCS.</li><li>Microsoft Loopback Adapter.</li></ul>|  
-|Additional information|<ul><li>HyperTerminal is no longer included with Windows. For more information, see [What happened to HyperTerminal?](http://go.microsoft.com/fwlink/?LinkId=222571) in the Windows Help.</li><li>VT100 Plug-in acts as a virtual Telnet server.</li></ul>|  
+|Additional information|<ul><li>HyperTerminal is no longer included with Windows. <!--For more information, see [What happened to HyperTerminal?](http://go.microsoft.com/fwlink/?LinkId=222571) in the Windows Help.--></li><li>VT100 Plug-in acts as a virtual Telnet server.</li></ul>|  
 
-###  <a name="BusInboxOutlook"></a> Business Inbox in Microsoft Outlook Requirements  
-The following table shows the minimum system requirements for using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as your business inbox in Outlook.
+###  <a name="BusInboxOutlook"></a>Requirements for using Business Central on-premises as your Business Inbox in Microsoft Outlook  
+The following table shows the minimum system requirements for using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises as your business inbox in Outlook.
 
 |||  
 |-|-|  
@@ -160,13 +156,13 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 |Supported Browsers|<ul><li>When using the Outlook Web App (OWA), your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
 |Supported Operating Systems|<ul><li>When using OWA for iPad, OWA for iPad, or OWA for Android, your mobile device must use a supported Operating System listed in [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements.</li></ul>|  
 
-###  <a name="Outlook"></a> Microsoft Outlook Add-In Requirements  
-The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Add-In for Outlook for synchronization with Outlook.
+<!-- Remove as expected to be removed from DVD###  <a name="Outlook"></a> Microsoft Outlook Add-In Requirements  
+The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Add-In for Outlook for synchronization with Outlook.-->
 
-|||  
+<!--|||  
 |-|-|  
 |Supported Outlook Applications |<ul><li>Outlook 2019</li><li>Outlook 2016</li></ul>|
-|Supported Exchange Servers|<ul><li>Exchange Server 2019</li><li>Exchange Server 2016</li><li>Exchange Online.</li></ul>|  
+|Supported Exchange Servers|<ul><li>Exchange Server 2019</li><li>Exchange Server 2016</li><li>Exchange Online.</li></ul>|  -->
 
 
 ###  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
