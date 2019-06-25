@@ -2,7 +2,7 @@
 title: "Find Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 06/25/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,7 +41,8 @@ If this parameter contains '=', '>' or '<', then you must assign value to all fi
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

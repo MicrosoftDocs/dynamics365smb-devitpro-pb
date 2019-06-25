@@ -13,7 +13,7 @@ ms.author: edupont
 ---
 # Administration of Business Central Online
 
-As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you are the administrator of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants of your customers. You have access to the administration tools of their Office 365 account and their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration center where you can specify upgrade windows, for example.  
+As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner, you are the administrator of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants of your customers. You have access to the administration tools of their Office 365 account and their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration center where you can specify update windows, for example.  
 
 ## Get started with the Cloud Solution provider program
 

@@ -114,6 +114,7 @@
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
+### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
 <!-- Development-->
@@ -204,6 +205,7 @@
 #### List Pages
 ##### [Designing List Pages](developer/devenv-designing-list-pages.md)
 ##### [Sample List Page](developer/devenv-simple-list-page-example.md)
+##### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
 ##### [Views](developer/devenv-views.md)
 ##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
 #### Card Pages
