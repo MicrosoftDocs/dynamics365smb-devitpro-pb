@@ -1,5 +1,5 @@
 ---
-title: "TestField Method"
+title: "CopyLinks Method"
 ms.author: solsen
 ms.custom: na
 ms.date: 06/25/2019
@@ -13,27 +13,22 @@ author: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestField Method
-Tests whether the contents of a field match a given value.
+# CopyLinks Method
+Copies all the links from a specified record.
 
 
 ## Syntax
 ```
- Record.TestField(Field: Any, Value: Decimal)
+ Record.CopyLinks(var FromRecord: Record)
 ```
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.  
 
-*Field*  
-&emsp;Type: [Any](../any/any-data-type.md)  
-The field that you want to test.
-          
-*Value*  
-&emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
-The value that you want to compare to Field. The data type of this parameter must match the data type of Field. If you include this optional parameter and the contents of Field do not match, then an error message is displayed. If you omit this parameter and the contents of Field is zero or blank (empty string), then an error message is displayed.
-          
+*FromRecord*  
+&emsp;Type: [Record](record-data-type.md)  
+Specifies the record from which you want to copy links.  
 
 
 

@@ -21,11 +21,12 @@ You add media to a BLOB data type field on the record. For more information, see
 
 This way enables you to store media in system tables of the database, and then reference the media from application records. For example, you can: 
 
-- Display media with records in list type pages, when the page is viewed in the **Brick** layout.
+- Display media with records in list type pages, when the page is viewed in the **Tile** layout. For more information, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).
+
 - Display media on a card type page for a record.
 - Display media in a report.
 
-Using the [Media](methods-auto/media/media-data-type.md) or [MediaSet](methods-auto/mediaset/mediaset-data-type.md) data type provides better performance than using a BLOB data type and is more flexible in its design. With a BLOB data type, each time the media is rendered in the client, it is retrieved from the SQL database server, which requires extra bandwidth and affects performance. With the Media and MediaSet data types, the client uses media ID to cache the media data, which in turn improves the response time for rendering the media in the user interface.  
+Using the [Media](methods-auto/media/media-data-type.md) or [MediaSet](methods-auto/mediaset/mediaset-data-type.md) data type provides better performance than using a BLOB data type and is more flexible in its design. With a BLOB data type, each time the media is rendered in the client, it is retrieved from the SQL database server, which requires extra bandwidth and affects performance. With the Media and MediaSet data types, the client uses media ID to cache the media data, which in turn improves the response time for rendering the media in the user interface.
 
 ## Using Media and Media Sets on records  
 
@@ -128,4 +129,4 @@ This will create a new media set that contains the shared media object reference
 ## See Also  
 [BLOB Data Type](methods-auto/blob/blob-data-type.md)  
 [Media Data Type](methods-auto/media/media-data-type.md)  
-[MediaSet Data Type](methods-auto/mediaset/mediaset-data-type.md).
+[MediaSet Data Type](methods-auto/mediaset/mediaset-data-type.md)  

@@ -3,7 +3,7 @@ title: "Ready to Go"
 description: "The Ready to Go program contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 06/24/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -52,8 +52,9 @@ The platform also enables you to provide direct feedback to the Microsoft engine
 To get access to the available builds on the platform you need to follow the instructions stipulated in the documentation on [Getting you started with Add-on Apps](https://go.microsoft.com/fwlink/?linkid=869734) and [Getting you started with Connect Apps](https://go.microsoft.com/fwlink/?linkid=2005501).
 
 # [Resources](#tab/resources)
-### The “Dynamics 365 Business Central for Partners” blog
-The blog talks about opportunities, processes, programs, and tools for the Business Central partner community. Follow the blog here: [https://community.dynamics.com/business/b/businesscentraldevitpro](https://community.dynamics.com/business/b/businesscentraldevitpro)
+### Business Central on the Dynamics 365 Blog for partners
+
+The blog talks about opportunities, processes, programs, and tools for the Business Central partner community. Follow the blog here: [Business Central on the Dynamics 365 Blog for partners](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
 
 ### Monthly “Ready to Go” Office Hours call
 “Ready to Go” Office Hours is a monthly call that takes place the second Tuesday of every month. The call is structured as a FAQ session, where a team of our different experts will be present to answer any questions that you may have in relation to bringing your offerings into AppSource. Sign up here: [aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours).

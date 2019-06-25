@@ -1,6 +1,6 @@
 ---
 title: Business Central Admin Center| Microsoft Docs
-description: Learn about how a VAR or an internal administrator can set upgrade windows and other admin tasks.  
+description: Learn about how a VAR or an internal administrator can set update windows and other admin tasks.  
 author: jaredha
 
 ms.service: dynamics365-business-central
@@ -16,7 +16,7 @@ ms.author: jaredha
 ---
 # The Business Central Administration Center
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Here, administrators can view and work with production and sandbox environments for the tenant, set up upgrade notifications, and view telemetry for events on the tenant.  
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Here, administrators can view and work with production and sandbox environments for the tenant, set up update notifications, and view telemetry for events on the tenant.  
 
 > [!div class="mx-imgBorder"]
 > ![Business Central Admin Center](../developer/media/business_central_admin_center.png)

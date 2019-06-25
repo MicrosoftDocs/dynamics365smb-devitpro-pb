@@ -11,8 +11,12 @@ ms.assetid: 17340569-ee99-49bb-8c84-da6978b01437
 caps.latest.revision: 29
 manager: edupont
 ---
-# How to: Display Data as Bricks
-The [!INCLUDE[nav_web](includes/nav_web_md.md)], [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)], and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] have a brick view option in order to optimize space and readability for data that appears in page types that have Repeater controls, such as ListPart, ListPlus, and List. The brick view compresses up to six columns of data and you can switch between the brick view and standard list view.  
+# Designing lists for the Tile View
+
+
+The Microsoft Dynamics NAV Web client, Microsoft Dynamics NAV Tablet client, and Microsoft Dynamics NAV Phone client have a brick view option in order to optimize space and readability for data that appears in page types that have Repeater controls, such as ListPart, ListPlus, and List. The brick view compresses up to six columns of data and you can switch between the brick view and standard list view.
+
+You can design pages that display data in a list, such as ListPart, ListPlus, and List, to give users the option to view data for e.In the client, users The [!INCLUDE[nav_web](includes/nav_web_md.md)], [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)], and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] have a brick view option in order to optimize space and readability for data that appears in page types that have Repeater controls, such as ListPart, ListPlus, and List. The tile view compresses up to six columns of data and you can switch between the tile view and list view.  
 
  The context menu available in the upper right corner on each brick. The context menu contains the actions that are defined for the record, just as in the list view. Choose a brick to drill down into the card.  
 
