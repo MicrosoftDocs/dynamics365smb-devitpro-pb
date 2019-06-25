@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/05/2019
+ms.date: 06/25/2019
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] On-premises
 
@@ -55,9 +55,21 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 |Additional software|<ul><li>A third-party telephony or VoIP app such as Skype is required for placing calls from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>A third-party email program such as Outlook is required for sending emails from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>Microsoft Office 2019, Office 2016, or Office 365 is required for sending data to Microsoft Excel or to Microsoft Word.</li></ul>|  
 |Additional information|<ul><li>Device diagonal screen size 7” for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4” for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>|  
 
-###  <a name="WinClient"></a> [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] Requirements  
- The following table shows the minimum system requirements for using the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].  
+### AL Development Requirements
 
+The following table shows the minimum system requirements for customizing or extending [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using the AL language in Visual Studio Code.
+
+|||
+|-|-|
+|Software requirements|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
+|Hardware requirements|<ul><li>Hard disk space: 200 MB.</li><li>Memory: 32 GB.</li></ul>|
+
+For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
+
+<!--removeWinCli ###  <a name="WinClient"></a> [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] Requirements  
+ The following table shows the minimum system requirements for using the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].  -->
+
+<!--temporarily remove
 |||  
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(32-bit and 64-bit editions\).<br />**Important:** Windows 10 S is not supported.</li><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>|  
@@ -70,17 +82,19 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 |Email logging|<ul><li>Active Directory and Microsoft Exchange Server 2019 or Exchange Server 2016.</li><li>Microsoft Exchange Online, or Exchange Online as part of an Office 365 subscription.</li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.2.</li></ul>|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.2.</li></ul></li><li>The Dynamics NAV Client is available in a 32-bit version and 64-bit version. On a 32-bit Windows operating system, the 32-bit version is run. On a 64-bit Windows operating system, the 64-bit version is run by default; however, you can also run the 32-bit version if it is required.</li><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] can only install the Excel Add-in if Excel is present on the target computer.</li><li>Outlook synchronization is not supported on 64-bit versions of Office.</li></ul>|  
-
+-->
+<!--remove C/SIDE
 ###  <a name="DevEnv"></a> Dynamics NAV Development Environment Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
+-->
 
-|||  
+<!--temporarily remove|||  
 |-|-|  
 |Supported operating systems|<ul><li> Windows 10 Pro, Enterprise, or Education \(32-bit and 64-bit editions\).</li><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Essentials \(64-bit edition\).</li></ul>|  
 |Hardware resources|<ul><li>Hard disk space: 200 MB.</li><li> Memory: 1 GB.</li></ul>|  
 |Reports|<ul><li>For creating and editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016, or</li><li>One of the following versions of Visual Studio:<ul><li>Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li><li>Visual Studio 2015 Professional or Enterprise edition with SQL Server Data Tools installed.<br />**Important:**  Before you install Visual Studio 2015, install Microsoft .NET Framework 4.7.2; otherwise, an error will occur when you compile or run RDLC reports. For more information, see [Report error "Visual Basic Command Line Compiler has stopped working"](http://go.microsoft.com/fwlink/?LinkID=722862).</li></ul></li></ul></ul><ul><li>For upgrading reports:<ul><li>Report Builder for SQL Server 2016</li></ul><li>For creating Word report layouts:<ul><li>Word 2016 or later</li></ul></li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.2.</li></ul>|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.2.</li><li>SQL Server Native Client 11.0.</li><li>Report Builder for SQL Server 2016. This is not installed if a version of SQL Server Report Builder or Microsoft Visual Studio is already present on the target computer</li></ul></li><li>If the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] and [!INCLUDE[server](../developer/includes/server.md)] are on the same computer, then only a 64-bit operating system is supported.</li></ul>|  
+|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.2.</li><li>SQL Server Native Client 11.0.</li><li>Report Builder for SQL Server 2016. This is not installed if a version of SQL Server Report Builder or Microsoft Visual Studio is already present on the target computer</li></ul></li><li>If the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] and [!INCLUDE[server](../developer/includes/server.md)] are on the same computer, then only a 64-bit operating system is supported.</li></ul>|  -->
 
 
 ## Server Components
@@ -181,14 +195,16 @@ Legend:
 > [!Note] 
 > AD, IFD and Claims authentication types are supported for the 2015 and 2016 on-premises versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. OAuth and Office 365 authentication are supported for the 2015, 2015 Update 1, and 2016 Update 1 online versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. For more details on authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/en-us/library/mt608573.aspx).
 
+<!--temporarily remove SharePoint App
 ##  <a name="SharePointApp"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint Requirements  
-The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint.  
+The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint.  -->
 
-|||  
+
+<!--|||  
 |-|-|  
 |Supported operating systems|<ul><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li><li>Windows Server 2012 R2 Standard or Datacenter \(64-bit edition\).</li></ul>|  
 |Additional software|<ul><li>SharePoint 2013 Service Pack 1.</li><li>SharePoint Online.</li></ul>|  
-
+-->
 <!--
 ###  <a name="Azure"></a> Automated Deployment on Microsoft Azure Requirements  
  Automated deployment of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Microsoft Azure by using the [!INCLUDE[nav_prov_short](../developer/includes/nav_prov_short_md.md)] is only supported on Azure virtual machines that are running Windows Server 2012. For additional requirements for specific [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components, refer to the other sections in this topic. 
