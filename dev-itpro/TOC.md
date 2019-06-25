@@ -12,6 +12,7 @@
 <!-- deployment-->
 # Deployment
 ## [Deployment Overview](deployment/deployment.md)
+## [System requirements](deployment/system-requirement-business-central.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
 ## Online
 <!-- ### Onboarding your customer -->
@@ -30,7 +31,6 @@
 #### [Sandbox](deployment/embed-app-sandbox.md)
 #### [Ecosystem Features](deployment/embed-app-ecosystem.md)
 ## On-Premises
-### [System requirements](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
