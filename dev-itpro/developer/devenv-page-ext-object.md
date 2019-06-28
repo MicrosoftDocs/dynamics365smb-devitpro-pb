@@ -28,24 +28,7 @@ For more information about the Page and Page Extension objects, see [Pages Overv
 ## Snippet support
 Typing the shortcut `tpageext` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-## Page extension syntax
-```
-pageextension Id MyExtension extends MyTargetPage
-{
-    layout
-    {
-        // Add changes to page layout here
-    }
-    
-    actions
-    {
-        // Add changes to page actions here
-    }
-    
-    var
-        myInt: Integer;
-}
-```
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Page extension examples
 In the following example, we use a table extension to extend the Customer table with a new field named `ShoeSize` of the datatype Integer. Then we create a page extension object that extends the Customer Card page object by adding a field control `ShoeSize` to the `General` group on the page. The field control is added as the last control in the group using the `addlast` method. The example also illustrates how to add a display-only control to the page.
