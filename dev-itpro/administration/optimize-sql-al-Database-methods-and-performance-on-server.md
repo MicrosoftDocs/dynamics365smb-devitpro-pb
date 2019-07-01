@@ -14,9 +14,7 @@ manager: edupont
 # AL Database Methods and Performance on SQL Server
 This topic describes the relationship between basic database functions in AL and SQL statements.  
   
-## AL and SQL Statements  
-  
-### GET, FIND, and NEXT  
+## GET, FIND, and NEXT  
  The AL language offers several methods to retrieve record data. In [!INCLUDE[prodlong](../developer/includes/prodlong.md)], records are retrieved using multiple active result sets (MARS). Generally, retrieving records with MARS is faster than with server-side cursors. Additionally, each function is optimized for a specific purpose. To achieve optimal performance you must use the method that is best suited for a given purpose.  
   
 -   **Record.GET** is optimized for getting a single record based on primary key values.  
@@ -51,7 +49,7 @@ IF FINDSET THEN
   UNTIL NEXT = 0;  
 ```  
   
-### CALCFIELDS, CALCSUMS, and COUNT  
+## CALCFIELDS, CALCSUMS, and COUNT  
  Each call to **CALCFIELDS**, **CALCFIELD**, **CALCSUMS**, or **CALCSUM** functions that calculates a sum requires a separate SQL statement unless the client has calculated the same sum or another sum that uses the same SumIndexFields or filters in a recent operation, and therefore, the result is cached.  
   
  Each **CALCFIELDS** or **CALCSUMS** request should be confined to use only one SIFT index. The SIFT index can only be used if:  
@@ -64,7 +62,7 @@ IF FINDSET THEN
   
  In [!INCLUDE[prodlong](../developer/includes/prodlong.md)], SIFT indexes can be used to count records in a filter provided that a SIFT index exists that contains all filtered fields in the key fields that are defined for the SIFT index.  
   
-### SETAUTOCALCFIELDS  
+## SETAUTOCALCFIELDS  
  It is a common task to retrieve data and request calculation of associated FlowFields. The following example traverses customer records, calculates the balance, and marks the customer as blocked if the customer exceeds the maximum credit limit. Note the Customer record and associated fields are imaginary.  
   
 ```  
@@ -117,26 +115,40 @@ UNTIL Customer.NEXT = 0;
   
 ```  
   
-### INSERT, MODIFY, DELETE, and LOCKTABLE  
+## INSERT, MODIFY, DELETE, and LOCKTABLE  
  Each call to **INSERT**, **MODIFY**, or **DELETE** functions requires a separate SQL statement. If the table that you modify contains SumIndexes, then the operations will be much slower. As a test, select a table that contains SumIndexes and execute one hundred **INSERT**, **MODIFY**, or **DELETE** operations to measure how long it takes to maintain the table and all its SumIndexes.  
   
  The **LOCKTABLE** function does not require any separate SQL statements. It only causes any subsequent reading from the table to lock the table or parts of it.  
+
+## MODIFYALL and DELETEALL
+
+Using **MODIFYALL** and **DELETEALL** can improve performance by limiting the amount of SQL calls needed. However, be aware that  **MODIFYALL** and **DELETEALL** will revert to individual calls if any of the following conditions exist:
+
+- There is trigger code on the table.
+- There are event subscribers to the following events: OnBeforeModify, OnAfterModify, OnGlobalModify, OnBeforeDelete, OnAfterDelete, OnGlobalDelete, and OnDatabaseModify.
+- Security filtering is active ([SecurityFiltering property](../developer/properties/devenv-securityfiltering-property.md) is set to `Validated`).
+- The table contains `Media` or `MediaSet` data type fields.
+- There are fields that are added through companion tables.
   
 ## See Also  
  [Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
  [Bulk Inserts](optimize-sql-bulk-inserts.md)   
- [GET Method \(Record\)](../developer/methods/devenv-GET-Method-Record.md)   
- [FIND Method \(Record\)](../developer/methods/devenv-FIND-Method-Record.md)   
- [NEXT Method \(Record\)](../developer/methods/devenv-NEXT-Method-Record.md)   
- [FINDSET Method \(Record\)](../developer/methods/devenv-FINDSET-Method-Record.md)   
- [FINDFIRST Method \(Record\)](../developer/methods/devenv-FINDFIRST-Method-Record.md)   
- [FINDLAST Method \(Record\)](../developer/methods/devenv-FINDLAST-Method-Record.md)   
- [CALCFIELDS Method \(Record\)](../developer/methods/devenv-CALCFIELDS-Method-Record.md)   
- [CALCFIELD Method \(FieldRef\)](../developer/methods/devenv-CALCFIELD-Method-FieldRef.md)   
- [CALCSUMS Method \(Record\)](../developer/methods/devenv-CALCSUMS-Method-Record.md)   
- [CALCSUM Method \(FieldRef\)](../developer/methods/devenv-CALCSUM-Method-FieldRef.md)   
- [SETAUTOCALCFIELDS Method \(Record\)](../developer/methods/devenv-SETAUTOCALCFIELDS-Method-Record.md)   
- [INSERT Method \(Record\)](../developer/methods/devenv-INSERT-Method-Record.md)   
- [MODIFY Method \(Record\)](../developer/methods/devenv-MODIFY-Method-Record.md)   
- [DELETE Method \(Record\)](../developer/methods/devenv-DELETE-Method-Record.md)   
- [LOCKTABLE Method \(Record\)](../developer/methods/devenv-LOCKTABLE-Method-Record.md)
+ [GET Method \(Record\)](../developer/methods-auto/record/record-get-method.md)   
+ [FIND Method \(Record\)](../developer/methods-auto/record/record-FIND-method.md)  
+ [NEXT Method \(Record\)](../developer/methods-auto/record/record-NEXT-method.md)  
+ [FINDSET Method \(Record\)](../developer/methods-auto/record/record-FINDSET-method.md)   
+ [FINDFIRST Method \(Record\)](../developer/methods-auto/record/record-FINDFIRST-method.md)   
+ [FINDLAST Method \(Record\)](../developer/methods-auto/record/record-FINDLAST-method.md)   
+ [CALCFIELDS Method \(Record\)](../developer/methods-auto/record/record-CALCFIELDS-method.md)   
+ [CALCFIELD Method \(FieldRef\)](../developer/methods-auto/fieldref/fieldref-CALCFIELD-Method.md)   
+ [CALCSUMS Method \(Record\)](../developer/methods-auto/record/record-CALCSUMS-method.md)   
+ [CALCSUM Method \(FieldRef\)](../developer/methods-auto/fieldref/fieldref-CALCSUM-Method.md)   
+ [SETAUTOCALCFIELDS Method \(Record\)](../developer/methods-auto/record/record-SETAUTOCALCFIELDS-method.md)   
+ [INSERT Method \(Record\)](../developer/methods-auto/record/record-INSERT-method.md)   
+ [MODIFY Method \(Record\)](../developer/methods-auto/record/record-MODIFY-method.md)  
+ [MODIFYALL Method \(Record\)](../developer/methods-auto/record/record-MODIFYAll-method.md)     
+ [DELETE Method \(Record\)](../developer/methods-auto/record/record-DELETE-method.md)  
+ [DELETEALL Method \(Record\)](../developer/methods-auto/record/record-DELETEALL-method.md)   
+ [LOCKTABLE Method \(Record\)](../developer/methods-auto/record/record-LOCKTABLE-method.md)  
+ [Events in AL](../developer/devenv-events-in-al.md)  
+[Using Security Filters](../security/security-filters.md)
