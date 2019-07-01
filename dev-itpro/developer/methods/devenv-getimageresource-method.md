@@ -1,6 +1,5 @@
 ---
 title: "GetImageResource Method"
-author: solsen
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2019
