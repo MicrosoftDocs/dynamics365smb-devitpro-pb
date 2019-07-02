@@ -1,6 +1,6 @@
 ---
 title: Business Central Admin Center| Microsoft Docs
-description: Learn about how a VAR or an internal administrator can set upgrade windows and other admin tasks.  
+description: Learn about how a VAR or an internal administrator can set update windows and other admin tasks.  
 author: jaredha
 
 ms.service: dynamics365-business-central

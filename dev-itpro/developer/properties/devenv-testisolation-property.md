@@ -27,7 +27,12 @@ Specifies which changes to the database to roll back after the tests in the test
 |Disabled|Do not roll back any changes to the database. Tests are not isolated from each other.<br/><br /> This is the default value.|  
 |Codeunit|Roll back all changes to the database after each test codeunit executes.|  
 |Function|Roll back all changes to the database after each test function executes.|  
-  
+ 
+## Syntax
+```
+TestIsolation = Codeunit;
+```
+
 ## Remarks  
 We recommend that you design tests to be independent of each other. Tests might read from and write to the same database, which means that tests can interact with each other. If tests interact, then you may experience incorrect test results. To eliminate test interactions, use the **TestIsolation** property to roll back changes to the database after each test function or after each test codeunit.  
   

@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# <a name="SupportedProd"></a>Supported Products, Keywords, Hide Key
+# Supported Products, Keywords, Hide Key
 
 |Listing details|Description |Requirements  |
 |---------------|-----------|--------------|

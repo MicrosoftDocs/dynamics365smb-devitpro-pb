@@ -23,6 +23,11 @@ Specifies whether an XMLport uses LAX \(Lazy API for XML\) to process an XML fil
   
 ## Property Value  
  **True** if the XMLport uses LAX; otherwise **false**.  
+
+## Syntax
+```
+UseLax = true;
+```
   
 ## Remarks  
  Extra elements and attributes are often added to XML documents when they are processed in software systems. If this property is set to **true**, the XML document will be validated as long as the document meets the minimum schema definition. For example, if an XML document contains extra elements and attributes than the schema strictly defines, the document will validated against the schema.  

@@ -2,7 +2,7 @@
 title: "LockTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 06/25/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,4 +39,5 @@ If this parameter is true, the version will be checked. If this parameter is fal
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
+[AL Database Methods and Performance on SQL Server](../../../administration/optimize-sql-al-Database-methods-and-performance-on-server.md)

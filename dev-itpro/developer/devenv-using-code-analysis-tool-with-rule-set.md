@@ -3,15 +3,13 @@ title: "Using the Code Analysis Tools with the Ruleset"
 description: "Configuring and using a custom ruleset on an AL project."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 06/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 # Using the Code Analysis Tools with the Ruleset
@@ -21,9 +19,10 @@ This topic shows how you can use a custom ruleset to customize the severity of d
 First, create a simple project in AL. 
 1. Press **Alt + A, Alt + L** to create a new project.
 2. Open the Command Palette by using the **Ctrl+Shift+P** shortcut and choose either User Settings or Workspace Settings.
-3. Copy the setting **al.enableCodeAnalysis** to the settings.json file and set it to `true`: **"al.enableCodeAnalysis": true**.
+3. Copy the setting `al.enableCodeAnalysis` to the settings.json file and set it to `true`: `"al.enableCodeAnalysis": true`.
+4. Copy the setting `al.codeanalyzers` to the settings file and then use **Ctrl+Space** to pick from the available code analyzers. Separate the list of code analyzers with commas. For more information about the available analyzers, see [AppSourceCop](analyzers/appsourcecop.md), [CodeCop](analyzers/codecop.md), [PerTenantExtensionCop](analyzers/pertenantextensioncop.md), and [UICop](analyzers/uicop.md).
 
-At this point, the analyzers packaged with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s will be run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate violations of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
+At this point, the selected analyzers will be run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate violations of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
 
 ## Add your own code to the project
 In the Visual Studio Code Explorer, open the `HelloWorld.al` file and replace the existing code with the following:
@@ -76,7 +75,7 @@ To trigger a new compilation manually, use the **Ctrl+Shift+B** shortcut to buil
 
 ## Limitations
 Changing the contents of the ruleset file will not be detected by the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To see the effects of changing the ruleset file, you can try any of the following:
-- Trigger a new compilation manually by using the **Ctrl+Shift+B** shortcut.
+- Set the **al.incrementalBuild** setting to false and trigger a new compilation by using the **Ctrl+Shift+B** shortcut.
 - Reload the window.
 - In the project settings, change the **al.ruleSetPath** setting to an invalid path. Save the settings file, change back the setting, and save it.
 

@@ -17,11 +17,12 @@ manager: edupont
 Runs before a record is deleted from the table.  
   
 ## Syntax  
-  
 ```  
-  
-[Ok]:= OnDeleteRecord  
-```  
+trigger OnDeleteRecord(): Ok
+begin
+    ...
+end;
+``` 
   
 ## Return Value  
  *Ok*  

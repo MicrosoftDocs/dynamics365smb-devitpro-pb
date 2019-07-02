@@ -22,7 +22,12 @@ Sets whether the element can be repeated an unknown number of times at runtime b
   
 ## Property Value  
  **True** if the element can be unbound; otherwise, **false**. The default value is **false**.  
-  
+
+## Syntax
+```
+Unbound = true;
+```
+ 
 ## Remarks  
  If you design an XMLport that is used to import or export data in different formats where the number of columns can vary, you can use this property to handle the number of columns.  
   

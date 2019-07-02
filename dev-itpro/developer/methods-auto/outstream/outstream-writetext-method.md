@@ -43,6 +43,9 @@ If you omit this optional return value and the operation does not execute succes
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+For more information about how zero bytes and line endings are written and read, see [WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
 ## Example  
  This example requires that you create the following variables.  
   

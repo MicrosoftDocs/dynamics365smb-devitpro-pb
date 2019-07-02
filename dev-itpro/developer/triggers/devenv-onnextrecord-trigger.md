@@ -18,11 +18,12 @@ manager: edupont
 Determines the next record to be displayed.  
 
 ## Syntax  
-
 ```  
-
-[ActualSteps]:= OnNextRecord(Steps)  
-```  
+trigger OnNextRecord(Steps): ActualSteps  
+begin
+    ...
+end;
+``` 
 
 #### Parameters  
  *Steps*  
