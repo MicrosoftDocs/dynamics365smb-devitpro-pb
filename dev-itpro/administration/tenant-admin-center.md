@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 05/31/2019
+ms.date: 07/02/2019
 ms.author: jaredha
 
 ---
@@ -59,11 +59,11 @@ You can also get to the administration center by navigating directly to the URL 
 > [!NOTE]
 > As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).  
 
-## Submitting support requests on behalf of your customer
+<!--## Submitting support requests on behalf of your customer
 
 Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, in the administration center, use the **New Support Request** link in the Help menu. This opens a new browser tab with the site where you can submit the support request.  
 
-Fill in the fields as appropriate. You can find most of the necessary information in the administration center, including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers.  
+Fill in the fields as appropriate. You can find most of the necessary information in the administration center, including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers.  -->
 
 ## See also
 
