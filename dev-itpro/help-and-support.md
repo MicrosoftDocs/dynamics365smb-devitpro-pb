@@ -22,8 +22,8 @@ The functionality in the default version of [!INCLUDE[prodshort](includes/prodsh
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central) |Use this library to learn about business functionality. |
-> |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prodshort](includes/prodshort.md)].|
+> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central) |Use this library to learn about business functionality. |
+> |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prodshort](includes/prodshort.md)].|
 
 ### Customize and extend the user assistance
 
@@ -51,7 +51,7 @@ You can learn about current and coming capabilities through a number of differen
 > |Release plans |[https://docs.microsoft.com/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
 > |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central) |Use this content to learn about business functionality. |
 > |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
-> |The "Ready to Go" learning catalog|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-learning-catalog](developer/readiness/readiness-learning-catalog.md)|Get an overview of role-specific training material from Microsoft.|
+> |The "Ready to Go" learning catalog|[/dynamics365/business-central/dev-itpro/developer/readiness/readiness-learning-catalog](developer/readiness/readiness-learning-catalog.md)|Get an overview of role-specific training material from Microsoft.|
 
 ### Share an idea about a new feature you'd like to have
 
@@ -59,16 +59,30 @@ On the [Dynamics 365 Ideas site](https://aka.ms/bcideas), you can provide sugges
 
 Make sure to search through the list of submitted suggestions, as chances are that someone already submitted something similar and might have already received votes. Vote if an idea already has been submitted to get it prioritized on the team’s backlog.  
 
-### Business Central Community
+### Business Central blog posts
+
+The Dynamics 365 blog is where Microsoft publishes announcements, updates, and tips and tricks, including for [!INCLUDE[prodshort](includes/prodshort.md)].  
+
+> [!div class="mx-tdCol2BreakAll"]
+> |Name  |Location  |Description|
+> |---------|---------|---------|
+> |Business Central on the Dynamics 365 blog (Users) |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/users/product/business-central/)|Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. </br>Some earlier blog posts are available on the [Community site](https://community.dynamics.com/business/b/financials).|
+> |Business Central on the Dynamics 365 blog (ITpro) |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some earlier blog posts are available on the [Community site](https://community.dynamics.com/business/b/businesscentraldevitpro).|
+
+
+### Business Central communities
 
 On the [Business Central Community site](https://community.dynamics.com/business), you have access to a number of different resources as outlined in the following table.
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
+> |Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f/758) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
 > |Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
 > |Business Central on the Dynamics 365 Blog for users |[https://cloudblogs.microsoft.com/dynamics365/users/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/users/product/business-central/) | Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. |
 > |Business Central on the Dynamics 365 Blog for partners |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/) | Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. |
+
+You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central and Dynamics NAV](https://www.navug.com/home), which is a user-led, user-driven community of 22,054 users, partners, and MVPs.  
 
 ### Summary of where to file bugs and issues
 
