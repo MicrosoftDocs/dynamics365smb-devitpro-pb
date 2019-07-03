@@ -32,7 +32,8 @@ In order to create FlowFields and FlowFilters, you must first classify the field
 A FlowField type is always associated with a calculation formula that determines how the FlowField is calculated. Likewise, the FlowFilter type is associated with the calculation formula. To perform the calculations by using the FlowField and FlowFilter type, you must derive those fields in the calculation formula which you classify in the table. You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and more, by using the CalcFormula Property. For more information about the syntax and formulas, see [Calculation Formulas and the CalcFormula Property](Properties/devenv-calculation-formulas-and-the-calcformula-property.md). 
  
 ### Example
-In the following example, `MyTable` sets the `Global Dimension 1 Filter` and `Global Dimension 2 Filter` fields whose values are based only on the dimension values included in the filter. `Total Amount` is classified as a FlowField type and here you specify the calculations. Also, this field formulates the currency filter to one single currency because you do not store the filter value on the entries, hence you define the `Currency Filter` as a FlowFilter type. Lastly, the `Total Amount` displays the results immediately based on the filters you apply in the user interface. 
+In the following example, `MyTable` sets the `Global Dimension 1 Filter` and `Global Dimension 2 Filter` fields whose values are based only on the dimension values included in the filter. Also, some of the following fields formulate the currency filter to one single currency because you do not store the filter value on the entries, hence you define the `Currency Filter` as a FlowFilter type.
+`Total Amount`, `Amount upper bound`, `Amount lower bound`, `First Entry`, and `Customer Balance` are classified as a FlowField type and here you specify the calculations. These fields display the results immediately based on the filters that you apply in the user interface. 
 
 
 ```
@@ -44,23 +45,28 @@ table 50123 MyTable
         {
             Description='New field';
         }
-        field(3;"no."; Text[20])
+
+        field(2;"No."; Code[20])
         {
             Description='Serial number of the service';
         }
-        field(4;"Global Dimension 1 Filter"; Code[20])
+
+        field(3;"Global Dimension 1 Filter"; Code[20])
         {
             FieldClass = FlowFilter;
         }
-        field(5;"Global Dimension 2 Filter"; Code[20])
+
+        field(4;"Global Dimension 2 Filter"; Code[20])
         {
             FieldClass = FlowFilter;
         }
-        field(6;"Currency Filter"; Code[10])
+
+        field(5;"Currency Filter"; Code[10])
         {
             FieldClass = FlowFilter;
         }
-        field(2; "Total Amount"; Decimal)
+
+        field(6; "Total Amount"; Decimal)
         {
             FieldClass = FlowField;
             CalcFormula = Sum("Detailed Cust. Ledg. Entry"."Amount (LCY)"
@@ -70,8 +76,45 @@ table 50123 MyTable
             "Currency Code"=FIELD("Currency Filter")
             ) );
         }
+
+        field(7; "Amount upper bound"; Decimal)
+        {
+            FieldClass = FlowField;
+            CalcFormula = max ("Detailed Cust. Ledg. Entry"."Amount (LCY)"
+            WHERE ("Customer No." = FIELD ("No."),
+            "Initial Entry Global Dim. 1" = FIELD ("Global Dimension 1 Filter"),
+            "Initial Entry Global Dim. 2" = FIELD ("Global Dimension 2 Filter"),
+            "Currency Code" = FIELD ("Currency Filter")
+            ));
+        }
+
+        field(8; "Amount lower bound"; Decimal)
+        {
+            FieldClass = FlowField;
+            CalcFormula = min ("Detailed Cust. Ledg. Entry"."Amount (LCY)"
+            WHERE ("Customer No." = FIELD ("No."),
+            "Initial Entry Global Dim. 1" = FIELD ("Global Dimension 1 Filter"),
+            "Initial Entry Global Dim. 2" = FIELD ("Global Dimension 2 Filter"),
+            "Currency Code" = FIELD ("Currency Filter")
+            ));
+        }
+
+        field(9; "First entry"; Boolean)
+        {
+            CalcFormula = exist (Customer where (Payments = const (0),
+                                                 "No." = field ("No.")));
+            FieldClass = FlowField;
+            Caption = 'Specifies whether it is the customer's first entry';
+        }
+
+        field(10; "Customer Balance"; Decimal)
+        {
+            FieldClass = FlowField;
+            CalcFormula = lookup (Customer.Balance where ("No." = field ("No.")));
+        }
     }
 }
+
 ```
 
 ## See Also  

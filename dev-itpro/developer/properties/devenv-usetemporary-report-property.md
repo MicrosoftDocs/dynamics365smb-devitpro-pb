@@ -28,7 +28,7 @@ UseTemporary = true;
 ```
 
 ## Remarks  
-A temporary table is used as a buffer or intermediate storage for data. A temporary table is not stored in the database, but is only held in memory until the report is closed. A temporary table is useful when the column data is not mapped directly to a field in the database but is instead the result of a process or operation, such as an aggregation of data from several columns. If a temporary table is not used, the data must be handled by AL code.  
+ A temporary table is used as a buffer or intermediate storage for data. A temporary table is not stored in the database, but is only held in memory until the report is closed. A temporary table is useful when the column data is not mapped directly to a field in the database but is instead the result of a process or operation, such as an aggregation of data from several columns. If a temporary table is not used, the data must be handled by AL code.  
   
 For an example of the use of the UseTemporary property, see report 1306 in the [!INCLUDE[demolong](../includes/demolong_md.md)].  
 

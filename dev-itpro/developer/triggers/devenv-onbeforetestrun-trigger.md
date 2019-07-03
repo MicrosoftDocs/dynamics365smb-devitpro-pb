@@ -17,7 +17,7 @@ Runs before a test  of a test codeunit is run.
 
 ## Syntax  
 ```  
-trigger OnBeforeTestRun(CodeunitID; CodeunitName; MethodName): Ok  
+trigger OnBeforeTestRun(CodeunitID; CodeunitName; MethodName; Permissions): Ok  
 begin
     ...
 end;

@@ -18,7 +18,6 @@ Specifies the version of the .NET assembly.
 
 ## Syntax
 ```
-Culture = 'neutral';
 Version = '4.0.0.0';
 ```
 

@@ -30,7 +30,30 @@ In addition, when you choose the option to test the relationships between primar
 
 ## Example
 
-The `TableRelation` property can be modified through a [table extension](../devenv-table-ext-object.md). Modifications to the `TableRelation` are additive and evaluated after the existing value. The primary use case is conditional table relations based on conditional enums. The following example illustrates how to define first, an enum, and then a table setting a `TableRelation`. 
+This example shows a simple application of the `TableRelation` property for creating a `Vendors` sub-table by filtering between the records to include only the ones where the purchase expenses are higher than 10,000. 
+
+```
+table 50100 "Main Vendors"
+{
+  fields
+  {
+    field(1; "Vendor No."; Code[20])
+    {
+      DataClassification = ToBeClassified;
+      TableRelation = Vendor."No." where ("Balance (LCY)" = filter (>= 10000));
+    {
+
+    field(2; "Vendor Name"; Text[150])
+    {
+      DataClassification = ToBeClassified;
+      FieldClass = FlowField;
+      CalcFormula = lookup (Vendor.Name where ("No." = field ("Vendor No.")));
+    }
+  }
+}
+```
+
+Moreover, the `TableRelation` property can be modified through a [table extension](../devenv-table-ext-object.md). Modifications to the `TableRelation` are additive and evaluated after the existing value. The primary use case is conditional table relations based on conditional enums. The following example illustrates how to define first, an enum, and then a table setting a `TableRelation`. 
 
 ```
 enum 50120 TypeEnum

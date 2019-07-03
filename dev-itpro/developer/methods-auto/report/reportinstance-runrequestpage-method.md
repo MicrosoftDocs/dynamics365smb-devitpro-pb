@@ -111,10 +111,10 @@ WITH ReportParameters DO BEGIN
 END;  
 
 // Use the REPORT.SAVEAS method to save the report as a PDF file  
-Content.CREATE('TestFile.pdf');  
-Content.CREATEOUTSTREAM(OStream);  
+Content.CREATE('TestFile.pdf');  // only supported in Business Central on-premises
+Content.CREATEOUTSTREAM(OStream);  // only supported in Business Central on-premises
 REPORT.SAVEAS(206,XmlParameters,REPORTFORMAT::Pdf,OStream);  
-Content.CLOSE;  
+Content.CLOSE;  // only supported in Business Central on-premises
 
 // Use the REPORT.EXECUTE method to preview the report  
 REPORT.EXECUTE(206,XmlParameters);  
