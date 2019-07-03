@@ -232,6 +232,7 @@
 ### [Report Object](developer/devenv-report-object.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 ### [Request Pages](developer/devenv-request-pages.md)
+### [Report Triggers](developer/triggers/devenv-report-triggers.md)
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)

@@ -62,7 +62,7 @@ In a complex report that uses data from several tables, the functionality may de
 [Report Object](devenv-report-object.md)  
 [Reports Overview](devenv-reports.md)  
 [Report Design Overview](devenv-report-design-overview.md)  
-[RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)|  
+[RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)  
 [RequestFilterHeadingML Property](properties/devenv-requestfilterheadingml-property.md)  
 [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)  
 [DataItemTableView](properties/devenv-dataitemtableview-property.md)  
