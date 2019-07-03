@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 04/01/2019
+ms.date: 05/31/2019
 ms.author: edupont
 ---
 # Administration of Business Central Online
@@ -27,6 +27,23 @@ If the prospect wants to extend the trial further than those 30 days, you can ex
 
 > [!TIP]
 > You can suggest your prospects sign up for a trial, but you can also set up a customized demonstration environment based on your sandbox environment. This way, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md).
+
+## Acting as a delegated administrator
+
+As a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] reselling partner, you have administrator access to your customers' Office 365 tenant and their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration Center. You can also log into their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as a *delegated administrator* if you want to reproduce errors, for example.  
+
+The Business Central Administration Center is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
+
+### Restricted access to Business Central as delegated administrator
+
+When you sign in to your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated administrator from the administration center, you have access to all areas of their [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. However, because you are not registered as a regular user, there are certain tasks that you cannot do.
+
+The following tasks are not available to the delegated administrator:
+
+- Set up jobs to run as scheduled tasks in the job queue
+- Use the **Edit in Excel** action or interact with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] data in Excel using the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] add-in for Excel.
+
+    You can still use the **Open in Excel** action to view data in Excel.
 
 ## See Also
 

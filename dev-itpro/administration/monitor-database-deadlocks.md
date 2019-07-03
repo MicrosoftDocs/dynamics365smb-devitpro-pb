@@ -30,11 +30,11 @@ In SQL Server Management Studio, connect to the SQL server instance for [!INCLUD
 
 For detailed steps on how to do this, see [Giving the account necessary database privileges in SQL Server](../deployment/provision-server-account.md#dbo).
 
-The next the a client session is established with the database, a session for monitoring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database appears under  **Management**, **Extended Events**.
+The next time a client session is established with the database, a session for monitoring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database appears under  **Management**, **Extended Events**.
 
 #### Configure where to store deadlock events
 
-By default, SQL Server uses an in-memory data structure called a *ring_buffer target* to store deadlock events. When the [!INCLUDE[server](../developer/includes/server.md)] is notified about the deadlock, it reads data from the target ring_buffer target. You have the option to also store the events to a file on the SQL Server, called an *event_file target*, and configure the [!INCLUDE[server](../developer/includes/server.md)] to read from this file instead of the ring_buffer target. An important difference between the ring_buffer target and event_file target is that the ring_buffer target has a storage size limitation of 5MB, while the event_file target provides a much greater storage capacity. Using the event_file target can eliminate potential overloads in high volume situations. So, if your setup has a high volume of database traffic, you might have to change the SQL Server to write deadlock events to an event_file target as described the steps that follow. If you want to use the default ring_buffer target, then no further action is required.
+By default, SQL Server uses an in-memory data structure called a *ring_buffer target* to store deadlock events. When the [!INCLUDE[server](../developer/includes/server.md)] is notified about the deadlock, it reads data from the target *ring_buffer* target. You have the option to also store the events to a file on the SQL Server, called an *event_file target*, and configure the [!INCLUDE[server](../developer/includes/server.md)] to read from this file instead of the ring_buffer target. An important difference between the ring_buffer target and event_file target is that the ring_buffer target has a storage size limitation of 5MB, while the event_file target provides a much greater storage capacity. Using the event_file target can eliminate potential overloads in high volume situations. So, if your setup has a high volume of database traffic, you might have to change the SQL Server to write deadlock events to an event_file target as described the steps that follow. If you want to use the default ring_buffer target, then no further action is required.
 
 > [!NOTE]
 > Reading from the event_file target is only supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Cumulative Update 3 and later.
@@ -51,11 +51,14 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
             SET filename=N'C:\logging\mydeadlocks.xel',max_file_size=(10240)
           )
       ```
+    Replace `C:\logging\mydeadlocks.xel` with the path and file name that you want to store the data.
+   
     For more information see [Alter an Extended Events Session](https://docs.microsoft.com/en-us/sql/relational-databases/extended-events/alter-an-extended-events-session?view=sql-server-2017) and [Targets for Extended Events in SQL Server](https://docs.microsoft.com/en-us/sql/relational-databases/extended-events/targets-for-extended-events-in-sql-server?view=sql-server-2017#eventfile-target).
     
-2. Create a view in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database that uses the new event_file target. 
+2. In the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, create a view that has the name `deadlock_report_event_file_view` and uses the new event_file target.  
 
-    You can create this view based on the default `dbo.deadlock_report_ring_buffer_view` view. To use the event_file target, you change `xt.target_name = N'ring_buffer'` to `xt.target_name = N'event_file'`. For example:
+    <!--You can create this view based on the default `dbo.deadlock_report_ring_buffer_view` view. To use the event_file target, you change `xt.target_name = N'ring_buffer'` to `xt.target_name = N'event_file'`.--> For example:
+
     ```
     USE [Demo Database BC]
     GO
@@ -66,13 +69,22 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
     SET QUOTED_IDENTIFIER ON
     GO
 
-    CREATE VIEW [dbo].[deadlock_report_event_file_view] AS
-        SELECT target_data AS event_raw_data
-        FROM sys.dm_xe_session_targets AS xt INNER JOIN sys.dm_xe_sessions AS xs
-        ON xs.address = xt.event_session_address
-        WHERE xs.name = N'Demo Database BC_deadlock_monitor' AND xt.target_name = N'event_file'
+ 	CREATE VIEW deadlock_report_event_file_view AS
+        SELECT event_data AS event_raw_data
+        FROM sys.fn_xe_file_target_read_file ('C:\logging\*.xel', null, null, null)
     GO
     ```
+
+    <!--
+    CREATE VIEW [dbo].[deadlock_report_event_file_view] AS
+    SELECT target_data AS event_raw_data
+    FROM sys.dm_xe_session_targets AS xt INNER JOIN sys.dm_xe_sessions AS xs
+    ON xs.address = xt.event_session_address
+    WHERE xs.name = N'Demo Database BC_deadlock_monitor' AND xt.target_name = N'event_file'
+    -->
+
+     Replace `C:\logging\` with the path to the event file.
+<!--
 3. Change the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database synonym `dbo.syn_deadlock_event_view` to point to the deadlock report event file view that you created.
 
     This synonym is used by the [!INCLUDE[server](../developer/includes/server.md)] to query the deadlock data. To alter a synonym, you first drop it, and then create a new synonym that has the same name. For example:
@@ -83,6 +95,7 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
     CREATE SYNONYM [dbo].[syn_deadlock_event_view] FOR [dbo].[deadlock_report_event_file_view]
     GO
     ```
+-->
 > [!NOTE]
 > You can delete the ring_buffer target if you like. However, this is not required.
 
