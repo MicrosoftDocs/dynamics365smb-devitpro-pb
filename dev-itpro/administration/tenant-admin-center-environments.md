@@ -88,6 +88,7 @@ When a sandbox environment is created on a Preview version, the environment will
 
 ## Updating environments
 
+
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are upgraded according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] roadmap with two annual major updates and monthly service updates. For more information, see [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/en-us/business-applications-release-notes/).
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] gives you a level of control over the timing of upgrades for each environment.
@@ -114,8 +115,11 @@ To set the update window for an environment:
 
 For major updates only, you have the option to select a specific date on which the environment is updated. When a major update version is available, a notification is sent to the notification recipients listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] (See [Managing Tenant Notifications](tenant-admin-center-notifications.md) for more information). The **Update version** field in the **Version Management** section of the environment details also displays the version number of the available update version.
 
+<!--
 > [!div class="mx-imgBorder"]
 > ![Schedule Business Central Upgrade](../developer/media/admin/business_central_admin_center_upgrade.png)
+> ![Schedule Business Central Update](../developer/media/business_central_admin_center_update.png)
+-->
 
 To schedule an update date:
 
