@@ -1,4 +1,4 @@
---
+---
 title: "Microsoft Dynamics 365 Business Central Administration Center Tool"
 ms.custom: na
 ms.date: 04/01/2019
@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
+
 # [!INCLUDE[admintool](../developer/includes/admintool.md)]
 The [!INCLUDE[admintool](../developer/includes/admintool.md)] is a Microsoft Management Console \(MMC\) snap-in for creating and managing [!INCLUDE[server](../developer/includes/server.md)] instances. 
 
