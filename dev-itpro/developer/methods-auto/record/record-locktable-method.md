@@ -31,7 +31,7 @@ An instance of the [Record](record-data-type.md) data type.
 Specifies what to do if the table is already locked. If this parameter is true and if another application has already locked the table, the system will wait until the table is unlocked. If this parameter is false and if another application has already locked the table, a run-time error occurs.  
 *VersionCheck*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If this parameter is true, the version will be checked. If this parameter is false, blank, or not used, the version will not be checked.  
+If this parameter is true, the version of the Record will be checked. If this parameter is false, blank, or not used, the version will not be checked.  
 
 
 
@@ -39,4 +39,5 @@ If this parameter is true, the version will be checked. If this parameter is fal
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
+[AL Database Methods and Performance on SQL Server](../../../administration/optimize-sql-al-Database-methods-and-performance-on-server.md)

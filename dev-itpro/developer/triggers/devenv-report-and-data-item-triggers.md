@@ -11,8 +11,6 @@ ms.assetid: 7b87c648-7204-4513-babe-0a49d7996f19
 author: SusanneWindfeldPedersen
 ---
 
-
-
 # Report and Data Item Triggers
 In reports, triggers are typically used to perform calculations and verification. Triggers let you control how data is selected and retrieved in a more complex and effective way than you can achieve by using properties.  
 
@@ -34,6 +32,7 @@ In reports, triggers are typically used to perform calculations and verification
 |[OnAfterGetRecord (Data Items) Trigger](devenv-onaftergetrecord-data-items-trigger.md)|When a record has been retrieved from the table.|  
 |[OnPostDataItem Trigger](devenv-onpostdataitem-trigger.md)|When the data item has been iterated for the last time.|  
 
-## See Also  
- [Report Triggers](devenv-report-triggers.md)   
- [Triggers](devenv-triggers.md)
+## See Also
+  
+[Report Triggers](devenv-report-triggers.md)  
+[Triggers](devenv-triggers.md)
