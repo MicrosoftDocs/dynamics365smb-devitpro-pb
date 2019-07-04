@@ -3,7 +3,7 @@ title: "ObsoleteReason Property"
 description: "Description of the ObsoleteReason property"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 06/27/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ ms.author: jswymer
 ---
 
 # ObsoleteReason Property
-Specifies why a table, field, or key has been marked as **Pending** or **Obsolete** in the **ObsoleteState** property.   
+Specifies why a table, field, or key has been marked as **Pending** or **Removed** in the **ObsoleteState** property.   
 
 ## Applies To  
 

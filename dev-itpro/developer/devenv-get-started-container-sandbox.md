@@ -98,7 +98,7 @@ After the container sandbox is set up, you must set up Visual Studio Code for ex
 1. Open a browser to the path that is specified by the `Files` parameter, and save the .vsix file to your computer.
 2. In Visual Studio Code, go to **Extensions**, and then choose **Install from VSIX**.
     You now have the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] enabled.
-3. In Visual Studio Code, press Ctrl+Shift+P and then choose **AL Go!**.
+3. In Visual Studio Code, press **Ctrl+Shift+P** and then choose **AL Go!**.
 4. Choose where to create the project, and then choose the **Your own server** option.
 5. Open the generated `launch.json` file, update the `"server"` setting with the value of the `Dev. Server` parameter and the `"serverInstance"` setting with the value of the `Dev. ServerInstance` to reflect the container you just created. For example:
 
@@ -149,6 +149,7 @@ Creating Desktop Shortcuts for MyBCapp2
 
 ## See Also
 [Running a Container-Based Development Environment](devenv-running-container-development.md)  
+[Working with Sandboxes and Entitlements](devenv-work-sandbox-entitlements.md)  
 [Troubleshooting the Container Sandbox](https://blogs.msdn.microsoft.com/freddyk/2017/10/29/troubleshooting-nav-on-docker/)  
 [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

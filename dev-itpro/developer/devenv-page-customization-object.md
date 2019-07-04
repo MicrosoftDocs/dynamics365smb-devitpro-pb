@@ -9,12 +9,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
-
- 
 
 # Page Customization Object
 The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add changes to the page layout and actions. The page customization object has more restrictions than the [page extension object](devenv-page-ext-object.md); when you define a new page customization object, you cannot add variables, procedures, or triggers. 
@@ -25,23 +21,7 @@ The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_lon
 ## Snippet support
 Typing the shortcut ```tpagecust``` will create the basic layout for a page customization object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-## Page customization syntax
-```
-pagecustomization MyCustomization customizes MyTargetPage
-{
-    layout
-    {
-        // Add changes to page layout here
-    }
-    
-    actions
-    {
-        // Add changes to page actions here
-    }
-    
-    //Variables, procedures and triggers are not allowed on Page Customizations
-}
-```
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Page customization example
 The following page customization example `MyCustomization` is intialized to perform changes to **Customer List**. By using the `moveafter` method, `Blanket Orders` is moved next to the `Aged Accounts Receivable` action item. And the `modify` method is used to hide the `NewSalesBlanketOrder` action item. 

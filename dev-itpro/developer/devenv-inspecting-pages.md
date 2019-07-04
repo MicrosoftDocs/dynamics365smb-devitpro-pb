@@ -42,6 +42,9 @@ In short, the page inspection pane shows the information for the main page or su
 > [!NOTE]
 > If you do not see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](https://docs.microsoft.com/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
 
+> [!TIP]
+> To copy the values of a field or entity under one of the tabs to the clip board, select the field or entity and press Ctrl+C.
+
 ### [Page](#tab/page)
 
 The **Page** field shows information about the main page or a selected (highlighted) sub-page in a part. The field shows the following information:

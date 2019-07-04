@@ -26,36 +26,7 @@ For information about creating a query of the type API, see [API Query Type](dev
 ## Snippet support
 Typing the shortcut ```tquery``` will create the basic layout for a Query object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-## Query syntax
-```
-query Id MyQuery
-{
-    QueryType = Normal;
-    
-    elements
-    {
-        dataitem(DataItemName; SourceTableName)
-        {
-            column(ColumnName; SourceFieldName)
-            {
-                
-            }
-            filter(FilterName; SourceFieldName)
-            {
-                
-            }
-        }
-    }
-    
-    var
-        myInt: Integer;
-    
-    trigger OnBeforeOpen()
-    begin
-        
-    end;
-}
-```
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Query example
 The following example shows a query that displays a list of customers with sales and profit figures. The query primarily retrieves fields from the **Customer** table, but also displays fields from the **Salesperson Purchaser** and **Country Region** tables.

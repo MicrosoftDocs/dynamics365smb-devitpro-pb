@@ -122,7 +122,6 @@
 ## [Development in AL](developer/devenv-dev-overview.md)
 ## Getting Started
 ### [Getting Started with AL](developer/devenv-get-started.md)
-### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
 ### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
@@ -131,6 +130,7 @@
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [AL Code Actions](developer/devenv-code-actions.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
+### [Differences in the Development Environments](developer/devenv-differences.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
@@ -147,6 +147,10 @@
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Creating Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
+## Working in Sandboxes
+### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
+### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
+### [Working with Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
 ## Manifest Files
 ### [JSON Files](developer/devenv-json-files.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
@@ -231,6 +235,7 @@
 ### [Report Object](developer/devenv-report-object.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 ### [Request Pages](developer/devenv-request-pages.md)
+### [Report Triggers](developer/triggers/devenv-report-triggers.md)
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)

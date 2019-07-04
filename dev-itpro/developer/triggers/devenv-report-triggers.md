@@ -36,6 +36,8 @@ When you run a report, the report triggers are called in a specific order.
 
  When there are no more records to be processed in a data item, control returns to the point from which processing was initiated. For an indented data item, this means the next record of the data item on the next highest level. If the data item is already on the highest level, then control returns to the report.  
 
-## See Also  
+## See Also
+
+[Report and DataI](devenv-report-and-data-item-triggers.md)  
 [Report Object](../devenv-report-object.md)  
 [Triggers](devenv-triggers.md)  
