@@ -10,16 +10,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 04/01/2019
+ms.date: 07/02/2019
 ms.author: jaredha
 
 ---
 # The Business Central Administration Center
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Here, administrators can view and work with production and sandbox environments for the tenant, set up update notifications, and view telemetry for events on the tenant.  
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to perform administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Here, administrators can [view and work with production and sandbox environments](tenant-admin-center-environments.md) for the tenant, [set up upgrade notifications](tenant-admin-center-notifications.md), and [view telemetry](tenant-admin-center-telemetry.md) for events on the tenant.  
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center](../developer/media/business_central_admin_center.png)
+> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
 
 ## Accessing the administration center
 
@@ -27,11 +27,26 @@ The following users are authorized to access the [!INCLUDE[prodadmincenter](../d
 
 - Internal tenant administrators
 - Admin agent
-- Helpdesk agent 
+- Helpdesk agent
+
+Internal administrators are the system administrators, IT professionals, or superusers of the company, and they are members of the *Internal Admin* user group in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
 The admin agent and helpdesk agent roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner associated with the tenant. These roles are delegated administrators on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
 
-As a partner, you can access the center from the Partner Dashboard in the Microsoft Partner Center:
+### Internal administrators
+
+As the internal administrator, you can get to the administration center by navigating directly to the URL, or by choosing the link in the **Settings** menu when you are logged in to your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
+To access the administration center from the URL, use the following pattern but replace *[TENANT_ID]* with the tenant ID of your [!INCLUDE [prodshort](../developer/includes/prodshort.md)]:
+
+`https://businesscentral.dynamics.com/[TENANT_ID]/admin`
+
+> [!TIP]
+> The tenant ID is shown in the **Help and Support** page in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
+### Partner access to the administration center
+
+As a partner, you can access the administration center from the Partner Dashboard in the Microsoft Partner Center:
 
 1. Log into the [Partner Dashboard](https://partnercenter.microsoft.com/dashboard).
 2. Select the **Customers** link in the navigation pane.
@@ -39,13 +54,19 @@ As a partner, you can access the center from the Partner Dashboard in the Micros
 4. Select **Service Management**.
 5. Under the **Administer Services** heading, select [!INCLUDE[prodlong](../developer/includes/prodlong.md)].
 
-You can also get to the administration center by navigating directly to the URL of a tenant's instance. This is done with the following URL, if you replace *[TENANT_ID]* with the tenant ID of the tenant.
+You can also get to the administration center by navigating directly to the URL of a tenant as described in the previous section.
 
-`https://businesscentral.dynamics.com/[TENANT_ID]/admin`
+> [!NOTE]
+> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).  
+
+<!--## Submitting support requests on behalf of your customer
+
+Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, in the administration center, use the **New Support Request** link in the Help menu. This opens a new browser tab with the site where you can submit the support request.  
+
+Fill in the fields as appropriate. You can find most of the necessary information in the administration center, including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers.  -->
 
 ## See also
 
-[Working with Administration Tools](administration.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Tenant Notifications](tenant-admin-center-notifications.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  

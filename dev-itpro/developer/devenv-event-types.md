@@ -90,16 +90,16 @@ author: SusanneWindfeldPedersen
   
 |Database trigger event with signature|Description|  
 |-------------------------------------------|-----------------|  
-|`OnBeforeDeleteEvent(VAR Rec: Record, RunTrigger: Boolean)`|Executed before a record is deleted from a table.|  
-|`OnAfterDeleteEvent(VAR Rec: Record, RunTrigger: Boolean)`|Executed after a record is deleted from a table.|  
-|`OnBeforeInsertEvent(VAR Rec: Record, RunTrigger: Boolean)`|Executed before a record is inserted in a table.|  
-|`OnAfterInsertEvent(VAR Rec : Record, RunTrigger : Boolean)`|Executed after a record is inserted in a table.|  
-|`OnBeforeModifyEvent(VAR Rec : Record, VAR xRec : Record, RunTrigger : Boolean)`|Executed before a record is modified in a table.|  
-|`OnAfterModifyEvent(VAR Rec : Record, VAR xRec : Record, RunTrigger : Boolean)`|Executed after a record is modified in a table.|  
-|`OnBeforeRenameEvent(VAR Rec : Record, VAR xRec : Record, RunTrigger : Boolean)`|Executed before a record is renamed in a table.|  
-|`OnAfterRenameEvent(VAR Rec : Record, VAR xRec: Record, RunTrigger : Boolean)`|Executed after a record is renamed in a table.|  
-|`OnBeforeValidateEvent(VAR Rec : Record, VAR xRec : Record, RunTrigger : Boolean; CurrentFieldNo : Integer)`|Executed before a field is validated when its value has been changed.|  
-|`OnAfterValidateEvent(VAR Rec : Record, VAR xRec : Record, RunTrigger : Boolean, CurrentFieldNo : Integer)`|Executed after a field is validated when its value has been changed.|  
+|`OnBeforeDeleteEvent(VAR Rec: Record; RunTrigger: Boolean)`|Executed before a record is deleted from a table.|  
+|`OnAfterDeleteEvent(VAR Rec: Record; RunTrigger: Boolean)`|Executed after a record is deleted from a table.|  
+|`OnBeforeInsertEvent(VAR Rec: Record; RunTrigger: Boolean)`|Executed before a record is inserted in a table.|  
+|`OnAfterInsertEvent(VAR Rec : Record; RunTrigger : Boolean)`|Executed after a record is inserted in a table.|  
+|`OnBeforeModifyEvent(VAR Rec : Record; VAR xRec : Record; RunTrigger : Boolean)`|Executed before a record is modified in a table.|  
+|`OnAfterModifyEvent(VAR Rec : Record; VAR xRec : Record; RunTrigger : Boolean)`|Executed after a record is modified in a table.|  
+|`OnBeforeRenameEvent(VAR Rec : Record; VAR xRec : Record; RunTrigger : Boolean)`|Executed before a record is renamed in a table.|  
+|`OnAfterRenameEvent(VAR Rec : Record; VAR xRec: Record; RunTrigger : Boolean)`|Executed after a record is renamed in a table.|  
+|`OnBeforeValidateEvent(VAR Rec : Record; VAR xRec : Record; CurrentFieldNo : Integer)`|Executed before a field is validated when its value has been changed.|  
+|`OnAfterValidateEvent(VAR Rec : Record; VAR xRec : Record; CurrentFieldNo : Integer)`|Executed after a field is validated when its value has been changed.|  
   
  The following table describes the parameters of the trigger events:  
   
