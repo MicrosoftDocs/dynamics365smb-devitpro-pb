@@ -24,7 +24,7 @@ Denotes a special type of string that is converted to uppercase and removes any 
 ## Remarks  
  The length of a Code variable equals the number of characters in the text without leading or trailing spaces.  
   
- You must specify the length of a Code variable or field. The maximum length of a Code variable is 1024 characters. The maximum length of a Code field in a table is 250 characters. A Code variable cannot be null. The Code data type supports Unicode.  
+ You must specify the length of a Code variable or field. The maximum length of a Code variable is 1024 characters. The maximum length of a Code field in a table is 2048 characters. A Code variable cannot be null. The Code data type supports Unicode.  
   
  You can index any character position in a string, such as A[65]. The resulting value will be a [Char Data Type](../char/char-data-type.md). You cannot assign a char to a position in the code variable greater than the current length of the variable +1. 
   
