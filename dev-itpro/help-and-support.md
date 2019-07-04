@@ -51,7 +51,6 @@ You can learn about current and coming capabilities through a number of differen
 > |Release plans |[https://docs.microsoft.com/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
 > |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central) |Use this content to learn about business functionality. |
 > |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
-
 > |The "Ready to Go" learning catalog|[/dynamics365/business-central/dev-itpro/developer/readiness/readiness-learning-catalog](developer/readiness/readiness-learning-catalog.md)|Get an overview of role-specific training material from Microsoft.|
 
 ### Share an idea about a new feature you'd like to have
