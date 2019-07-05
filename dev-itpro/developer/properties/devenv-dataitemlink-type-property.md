@@ -12,6 +12,7 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 redirect_url: devenv-sqljointype-property
 ---
+<!-- This topic is redirected to devenv-sqljointype-property.md -->
 
 # DataItemLinkType Property
 
