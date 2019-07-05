@@ -10,6 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.assetid: 2805061c-ac39-4ff4-ae23-c4dc5e462636
 caps.latest.revision: 6
 author: SusanneWindfeldPedersen
+redirect_url: devenv-sqljointype-property
 ---
 
 # DataItemLinkType Property
