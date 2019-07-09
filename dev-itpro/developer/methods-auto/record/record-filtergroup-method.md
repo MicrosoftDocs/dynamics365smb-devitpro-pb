@@ -50,7 +50,7 @@ All groups are active at all times. The only way to turn off a group is to remov
   
 Filters in different groups are all effective simultaneously. For example, if in one group, a filter is set on customer numbers 1000 to 2000, while in another group, a filter is set on customer numbers 1800 to 3000, then only numbers in the range 1800 to 2000 are visible.  
   
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] uses the following filter groups internally.  
+[!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] uses the following filter groups internally.  
   
 |Number      |Name      |Description|  
 |------------|----------|-----------------|  
@@ -67,7 +67,7 @@ Filters in different groups are all effective simultaneously. For example, if in
 A filter set in a group different from filter group 0 cannot be changed by a user that uses a filter dialog to set a filter. If, for example, a filter has been set on customer numbers 1000 to 2000 in group 4, then the user can set a filter that delimits this selection further, but cannot widen it to include customer numbers outside the range 1000 to 2000.  
   
 > [!NOTE]  
-> It is possible to use one of the internally used groups. If you do this, you replace the filter that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] assumes is in this group. If, for example, you use filter group 4 in a page, you will replace the filtering that is actually the result of applying the [SubPageLink Property](../../properties/devenv-subpagelink-property.md). This could seriously alter the way pages and subpages interact.  
+> It is possible to use one of the internally used groups. If you do this, you replace the filter that [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] assumes is in this group. If, for example, you use filter group 4 in a page, you will replace the filtering that is actually the result of applying the [SubPageLink Property](../../properties/devenv-subpagelink-property.md). This could seriously alter the way pages and subpages interact.  
   
 > [!IMPORTANT]  
 > Using filter group 7 may cause factboxes to not work as intended.  
