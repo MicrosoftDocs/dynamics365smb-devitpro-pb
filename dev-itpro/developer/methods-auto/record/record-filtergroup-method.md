@@ -89,13 +89,13 @@ Rec.SetFilter(<field>,’’);
 The following example uses the [SetFilter Method (Record)](record-setfilter-method.md) to set a filter that selects records with No. field between 10000 and 20000. Then the **FilterGroup** method returns the number for the filter group. No filter group was selected explicitly so the filter is set in filter group 0. This value is stored in the `varOrigGroup` variable and displayed in a message box. Next, the **FilterGroup** method changes the filter group to 100. The new value is stored in the `varCurrGroup` variable and displayed in a message box.  
   
 This example requires that you create the following variables and text constants.  
-  
-|Variable name|DataType|Subtype|  
-|-------------|--------|-------------|  
-|MyRecord     |Record  |Customer     |  
-|varOrigGroup |Integer |Not applicable|  
-|varCurrGroup |Integer |Not applicable|  
 
+```
+var
+        myRecord: Record Customer;
+        varOrigGroup: Integer;
+        varCurrGroup: Integer;
+```  
 <br>
 
 |Text constant name|ConstValue|  
@@ -118,10 +118,11 @@ The following example finds all customers where the Customer Name or Contact Nam
   
 This example requires that you create the following variable.  
   
-|Variable Name|Datatype|  
-|-------------|--------|  
-|SearchString|Text|  
-  
+```
+var
+        SearchString: Text;
+```
+ 
 <br>
 
 ```  
