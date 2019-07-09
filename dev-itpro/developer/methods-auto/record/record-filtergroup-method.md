@@ -46,7 +46,7 @@ A filter group can contain a filter for a Record that has been set earlier with 
   
 When you select a filter group, subsequent filter settings by the [SetFilter Method (Record)](record-setfilter-method.md) or the [SetRange Method (Record)](record-setrange-method.md) apply to that group.  
   
-All groups are active at all times. The only way to a group is to remove the filters set in that group.  
+All groups are active at all times. The only way to turn off a group is to remove the filters set in that group.  
   
 Filters in different groups are all effective simultaneously. For example, if in one group, a filter is set on customer numbers 1000 to 2000, while in another group, a filter is set on customer numbers 1800 to 3000, then only numbers in the range 1800 to 2000 are visible.  
   
