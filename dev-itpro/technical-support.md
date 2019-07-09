@@ -21,7 +21,7 @@ In your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenant
 <!--Temporary setup-->
 ### To supply your support contact information
 
-1. In your customer's tenant, choose the ![Lightbulb that opens the Tell Me feature](developer/media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Support Contact Information**, and then choose the related link.
+1. In your customer's tenant, choose the ![Lightbulb that opens the Tell Me feature](developer/media/search_small.png "Tell me what you want to do") icon, enter **Support Contact Information**, and then choose the related link.
 2. In the **Support website address**, specify the URL to where your customer can learn about your technical support.
 3. In the **Support email address**, specify the email address if this is how your customer can reach your technical support.
 
