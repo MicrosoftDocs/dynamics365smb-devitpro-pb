@@ -58,7 +58,7 @@ Filters in different groups are all effective simultaneously. For example, if in
 |0|Std|The default group where filters are placed when no other group has been selected explicitly. This group is used for filters that can be set from the filter dialogs by the end user.|  
 |1|Global|Used for filters that apply globally to the entire application.|  
 |2|Form|Used for the filtering actions that result from the following:<br /><br /> - [SetTableView Method (XMLport)](../xmlport/xmlportinstance-settableview-method.md), [SetTableView Method (Page)](../page/page-settableview-method.md)<br/>- [SourceTableView Property](../../properties/devenv-sourcetableview-property.md)<br/>-   [DataItemTableView Property](../../properties/devenv-dataitemtableview-property.md).|  
-|3|Exec|Used for the filtering actions that result from the following:<br /><br /> - [SubPageView Property](../../properties/devenv-subpageview-property.md)<br />-   [RunPageView Property](../../devenv-runpageview-property.md)|  
+|3|Exec|Used for the filtering actions that result from the following:<br /><br /> - [SubPageView Property](../../properties/devenv-subpageview-property.md)<br />- [RunPageView Property](../../properties/devenv-runpageview-property.md)|  
 |4|Link|Used for the filtering actions that result from the following:<br /><br /> - [DataItemLink Property (Reports)](../../devenv-dataitemlink-reports-property.md)<br />-   [SubPageLink Property](../../properties/devenv-subpagelink-property.md)|  
 |5|Temp|Not currently used.|  
 |6|Security|Used for applying security filters for user permissions.|  
@@ -76,13 +76,13 @@ A filter set in a group different from filter group 0 cannot be changed by a use
 To reset the filters in filter group 1, you add an empty filter to the group. To add an empty filter, to filter group 1, you must first set the filter group.  
   
 ```  
-Rec.FILTERGROUP(1);  
+Rec.FilterGroup(1);  
 ```  
  
 Then, for each field in the table that to which the Rec variable refers, set an empty filter.  
   
 ```  
-Rec.SETFILTER(<field>,’’);  
+Rec.SetFilter(<field>,’’);  
 ```  
   
 ## Example  
@@ -92,7 +92,7 @@ This example requires that you create the following variables and text constants
   
 |Variable name|DataType|Subtype|  
 |-------------|--------|-------------|  
-|MyRecord     |Record  |Customer|  
+|MyRecord     |Record  |Customer     |  
 |varOrigGroup |Integer |Not applicable|  
 |varCurrGroup |Integer |Not applicable|  
   
