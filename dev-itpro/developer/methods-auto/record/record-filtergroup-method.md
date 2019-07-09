@@ -46,13 +46,13 @@ A filter group can contain a filter for a Record that has been set earlier with 
   
 When you select a filter group, subsequent filter settings by the [SetFilter Method (Record)](record-setfilter-method.md) or the [SetRange Method (Record)](record-setrange-method.md) apply to that group.  
   
-All groups are active at all times. The only way to disable a group is to remove the filters set in that group.  
+All groups are active at all times. The only way to a group is to remove the filters set in that group.  
   
 Filters in different groups are all effective simultaneously. For example, if in one group, a filter is set on customer numbers 1000 to 2000, while in another group, a filter is set on customer numbers 1800 to 3000, then only numbers in the range 1800 to 2000 are visible.  
   
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] uses the following filter groups internally.  
   
-|Number|Name|Description|  
+|Number      |Name      |Description|  
 |------------|----------|-----------------|  
 |-1|Cross-column|Used to support the cross-column search.|  
 |0|Std|The default group where filters are placed when no other group has been selected explicitly. This group is used for filters that can be set from the filter dialogs by the end user.|  
@@ -95,12 +95,16 @@ This example requires that you create the following variables and text constants
 |MyRecord     |Record  |Customer     |  
 |varOrigGroup |Integer |Not applicable|  
 |varCurrGroup |Integer |Not applicable|  
-  
+
+<br>
+
 |Text constant name|ConstValue|  
 |------------------|----------|  
 |Text000           |The original filtergroup is: %1|  
 |Text001           |The current filtergroup is: %1|  
-  
+
+<br>  
+
 ```  
 MyRecord.SetFilter("No.", '10000..20000');  
 varOrigGroup := MyRecord.FilterGroup;  
@@ -118,6 +122,8 @@ This example requires that you create the following variable.
 |-------------|--------|  
 |SearchString|Text|  
   
+<br>
+
 ```  
 Customer.FilterGroup := -1;  
 SearchString := '@*John*';  
