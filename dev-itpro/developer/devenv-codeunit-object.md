@@ -23,15 +23,20 @@ Typing the shortcut `tcodeunit` will create the basic layout for a codeunit obje
 ## Codeunit example
 This codeunit example checks whether a given customer has registered a shoe size. If not, the customer is assigned a shoe size of 42.
 
+The codeunit can be used both as a direct call to `codeunit.run(customer)` or as a call to the procedure inside the codeunit `createcustomer.CheckSize(customer)`.
+
 ```
 codeunit 50113 CreateCustomer
 {
     trigger OnRun();
-    var
-        r: record Customer;
+    TableNo = Customer;
     begin
-        if not r.HasShoeSize() then
-            r.ShoeSize := 42;
+        CheckSize(Rec);
+    end;
+    procedure CheckSize(var Cust : Record Customer)
+    begin
+        if not Cust.HasSHoeSize() then
+            Cust.ShoeSize := 42;
     end;
 }
 
