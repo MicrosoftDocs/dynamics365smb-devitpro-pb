@@ -59,7 +59,7 @@ Filters in different groups are all effective simultaneously. For example, if in
 |1|Global|Used for filters that apply globally to the entire application.|  
 |2|Form|Used for the filtering actions that result from the following:<br /><br /> - [SetTableView Method (XMLport)](../xmlport/xmlportinstance-settableview-method.md), [SetTableView Method (Page)](../page/page-settableview-method.md)<br/>- [SourceTableView Property](../../properties/devenv-sourcetableview-property.md)<br/>-   [DataItemTableView Property](../../properties/devenv-dataitemtableview-property.md).|  
 |3|Exec|Used for the filtering actions that result from the following:<br /><br /> - [SubPageView Property](../../properties/devenv-subpageview-property.md)<br />- [RunPageView Property](../../properties/devenv-runpageview-property.md)|  
-|4|Link|Used for the filtering actions that result from the following:<br /><br /> - [DataItemLink Property (Reports)](../../devenv-dataitemlink-reports-property.md)<br />-   [SubPageLink Property](../../properties/devenv-subpagelink-property.md)|  
+|4|Link|Used for the filtering actions that result from the following:<br /><br /> - [DataItemLink Property (Reports)](../../properties/devenv-dataitemlink-reports-property.md)<br />-   [SubPageLink Property](../../properties/devenv-subpagelink-property.md)|  
 |5|Temp|Not currently used.|  
 |6|Security|Used for applying security filters for user permissions.|  
 |7|Factboxes|Used for clearing the state of factboxes.|  
