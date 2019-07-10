@@ -64,7 +64,7 @@ tableextension 50100 CustomerExercise extends Customer
 {
     fields
     {
-        field(50100); "V02Max"; Decimal) { }
+        field(50100; "V02Max"; Decimal) { }
     }
    
     fieldgroups
