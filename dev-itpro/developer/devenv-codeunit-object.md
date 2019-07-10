@@ -35,7 +35,7 @@ codeunit 50113 CreateCustomer
     end;
     procedure CheckSize(var Cust : Record Customer)
     begin
-        if not Cust.HasSHoeSize() then
+        if not Cust.HasShoeSize() then
             Cust.ShoeSize := 42;
     end;
 }
