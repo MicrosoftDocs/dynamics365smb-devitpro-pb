@@ -26,7 +26,7 @@ Sets a value that specifies whether users can delete records while using the pag
 
 ## Syntax
 ```
-DelayedInsert = false;
+DeleteAllowed = false;
 ```
   
 ## See Also  
