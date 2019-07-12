@@ -244,7 +244,7 @@ After you have completed the merge, you import the new merged application object
 
     When you compile the objects, an error is thrown for each code conflict, and you can use the tools that are available in the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to resolve the conflicts.
 
-## Task 6: (Multitenant mode only) Check/change the application family and version
+## Task 6: <!--(Multitenant mode only)-->Check/change the application family and version
 
 The application and tenant databases are tagged with `Family` and `Version`. To perform the data upgrade, the `Family` on the application must match that tenant's `Family`. The `Version` of the application must be greater than or equal to the tenant's `Version`. The easiest way to ensure that `Family` and `Version` of the upgraded application are compatible for data upgrade is to set `Family` to the same value as the old application, and set the `Version` to a higher value than the old application. 
 
@@ -326,8 +326,11 @@ For information about importing objects, see [Importing Objects](../cside/cside-
 
 ## <a name="AddExtensions"></a>Task 12: (Multitenant mode only) Publish extensions
 
-1. Import upgrade toolkit.
-
+1. Unpublish the existing system, test, and application symbols by using the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
+       
+        ```
+        Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <name> -Version <n.n.n.n>
+        ```
 2. Publish the system and test symbols.
   
     Symbols are a prerequisite for extensions. If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
@@ -370,7 +373,6 @@ For information about importing objects, see [Importing Objects](../cside/cside-
             
     For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](../developer/devenv-running-cside-and-al-side-by-side.md).
 
- 
 4. <a name="PublishNew"></a>Publish new versions of the Microsoft extensions.
 
     The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the old versions to the new versions.
