@@ -89,7 +89,7 @@ Traditionally, debugging AL has been about examining behavior of the language ru
 
 ### View database statistics
 
-In the **VARIABLES** pane in debugger, expand the **<Database statistics>** node to get insights such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prodshort](includes/prodshort.md)] database, the total number of SQL statements executed, and the total number of rows read, as well as insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
+In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** node to get insights such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prodshort](includes/prodshort.md)] database, the total number of SQL statements executed, and the total number of rows read, as well as insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
 
 |       |       |
 |-------|-------|
