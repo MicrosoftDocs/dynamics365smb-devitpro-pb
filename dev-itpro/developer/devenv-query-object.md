@@ -14,11 +14,85 @@ ms.author: solsen
 
 # Query Object
 
-A query describes a dataset of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You can query to retrieve fields from a single table or multiple tables. You can specify how to join tables in the query and filter the result data, and you can specify totaling methods on fields, such as sums and averages. Queries retrieve records from one or more tables and combine the records into rows and columns in a single dataset. You create a query by adding a Query object file to your project. In the Query object, you define dataitem and column elements in the elements section. The dataitem element specifies the table to retrieve records from. The column element specifies a field of the table to include in the resulting dataset of a query. 
+[!INCLUDE[prodshort](includes/prodshort.md)] query objects enable you to retrieve records from one or more tables and then combine the data into rows and columns in a single dataset. Query objects can also perform calculations on data, such finding the sum or average of all values in a column of the dataset.
+
+There are two types of query objects: normal and API. This article describes normal query objects, which can be used to display data in the user interface. API query objects are used to generate web service endpoints and cannot be displayed in the user interface. For information about creating a query of the type API, see [API Query Type](devenv-api-querytype.md).
+<!-- 
+A query describes a dataset of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You can query to retrieve fields from a single table or multiple tables. You can specify how to join tables in the query and filter the result data, and you can specify totaling methods on fields, such as sums and averages. Queries retrieve records from one or more tables and combine the records into rows and columns in a single dataset. You create a query by adding a Query object file to your project.
+
+A Query object is defined ists of two main elements, `dataitem` and `column` elements. The `dataitem` element specifies the table to retrieve records from. The `column` element specifies a field of the table to include in the resulting dataset of a query.
+-->
+
+### Query usages
+  
+The following examples show how you can use queries in your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] application.  
+
+-   Creating charts that are based on a query instead of a table.  
+
+-   Saving a query as an .xml or .csv file. You can use the [SAVEASXML Function](SAVEASXML-Function.md) to create an .xml file that contains the resulting dataset of a query. You can use the .xml file to integrate with external applications.  
+
+-   Exposing data as an OData web service. You can register and publish a query as a web service in the same way that you can register and publish pages or codeunits as web services. You use the **Web Services** page to register and publish pages, codeunits, or queries. After you expose a query as a web service, you can import it into other applications. <!-- For example, you can import [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] data into Microsoft Excel using Microsoft PowerPivot for Excel, which is a data analysis add-in. You can then create PivotTables in Excel that use the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] data from your query. For an example , see [Walkthrough: Combining Data from Microsoft Dynamics NAV Queries and Pages with Data from Azure DataMarket \(OData\)](Walkthrough--Combining-Data-from-Microsoft-Dynamics-NAV-Queries-and-Pages-with-Data-from-Azure-DataMarket--OData-.md)-->
+
+> [!NOTE]  
+>  You cannot run a query that gets data from both the application database and the business data database. This also applies to single-tenant deployments so that you do not have to rewrite queries if you decide to export the application. For a description of which tables are considered part of the application database, see [Separating Application Data from Business Data](../deployment/Separating-Application-Data-from-Business-Data.md). 
+
+
+
+## Creating a query object
+
+A query object is comprised mainly of two different types of elements: dataitems and columns. A dataitem specifies the table to retrieve records from. A column specifies a field of the table to include in the resulting dataset of a query. The basic steps to create a query object are:
+
+1. Add the `query` keyword, followed by the `elements` control.
+2. Build the dataset by adding `dataitem` controls and `column` controls withing the `elements` control.
+
+    The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add `column` controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add `column` controls as needed. You continue this pattern for additional tables and fields.
+3. When you have specified the dataitem and column elements, create links and joins between the `dataitem` elements.
+
+   Dataitem links and joins determine which records to include in the dataset based on the values of a field common between dataitems. For more information, see [Query Data Item Links and Joins](devenv-query-links-joins.md).
+
+```
+query ID Name
+{
+
+    elements
+    {
+        dataitem(DataItem1; Table1)
+        {
+            column(Column1; Field1)
+            {
+            }
+            column(Column2; Field2)
+            {
+            }
+            dataitem(DataItem2; Table2)
+            {
+                DataItemLink = FieldY = DataItem1.FieldX;
+                SqlJoinType = InnerJoin;
+                column(Column1; Field1)
+                {
+                }
+                dataitem(DataItem3; Table3)
+                {
+                    DataItemLink = FieldZ = DataItem2.FieldY;
+                    SqlJoinType = InnerJoin;
+                    column(Column1; Field1)
+                    {
+                    }
+                }
+            }
+        }
+    }
+}
+
+```
+<!-- 
+The `column` control specifies a field of the table to include in the resulting dataset of a query. You start by adding a `dataitem` control for a table, then within  `dataitem` control, add the `column` controls.
+
+When you have more than one `dataitem` element, you add the `dataitem` in an embedded hierarchy, where the second  `dataitem` element is embedded in the first element, the third `dataitem` element is embedded in the second element, and so on. 
+
 
 When you have specified the dataitem and column elements, you create links between the dataitem elements. A dataitem link determines which records to include in the dataset based on a common field between two dataitems.
-
-For information about creating a query of the type API, see [API Query Type](devenv-api-querytype.md).
+-->
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
@@ -86,7 +160,7 @@ query 50102 "Top Customer Overview"
         }
     }
 }
-```
+``` 
 
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  
