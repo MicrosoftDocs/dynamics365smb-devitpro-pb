@@ -15,7 +15,12 @@ author: SusanneWindfeldPedersen
 
 # SQLDataType Property
 Sets the data type that you want to allow in a code field.  
-  
+ 
+## Syntax
+```
+SQLDataType = Varchar;
+```
+
 ## Applies To  
  Code fields in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] with Microsoft SQL Server.  
   

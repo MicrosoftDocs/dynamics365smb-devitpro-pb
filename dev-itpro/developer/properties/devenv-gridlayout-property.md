@@ -31,7 +31,12 @@ GridLayout = Columns;
 ```
   
 ## Remarks 
+
+By default, fields in a FastTab on a page are arranged automatically in two columns that are based on the number of fields. You use a Grid control to customize the arrangement of fields into rows and columns, and design it to look like a grid-like format or a matrix-like format. For more information, see [Arranging Fields in Rows and Columns Using the Grid Control](../devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md).
+ 
 This property is only supported on grids.
 
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Field Arrangement on FastTabs](../devenv-arranging-fields-on-fasttab.md)  
+[Properties](devenv-properties.md)

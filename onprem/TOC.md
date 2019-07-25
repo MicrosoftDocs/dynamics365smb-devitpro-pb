@@ -323,7 +323,7 @@
 ## [Understanding Session Timeouts](Understanding-Session-Timeouts.md)
 ## [Connecting the Microsoft Dynamics NAV Clients over a Wide Area Network](Connecting-the-Microsoft-Dynamics-NAV-Clients-over-a-Wide-Area-Network.md)
 ## [Exporting and Importing Companies and Other Data](Exporting-and-Importing-Companies-and-Other-Data.md)
-## [Integrating Dynamics NAV and Microsoft Office](Integrating Dynamics NAV and Office.md)
+## [Integrating Dynamics NAV and Microsoft Office](Integrating%20Dynamics%20NAV%20and%20Office.md)
 ## [Integrating Microsoft Dynamics NAV in SharePoint Sites](Integrating-Microsoft-Dynamics-NAV-in-SharePoint-Sites.md)
 # [Security and Protection](Security-and-Protection.md)
 ## [Security Overview](Security-Overview.md)

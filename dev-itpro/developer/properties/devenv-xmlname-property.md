@@ -30,5 +30,10 @@ Sets a variable name for the table or the text that is the data source of the cu
 ## XmlName Type
 String
 
+## Syntax
+```
+XmlName = 'CreditNote';
+```
+
 ## See Also  
  [Properties](devenv-properties.md)

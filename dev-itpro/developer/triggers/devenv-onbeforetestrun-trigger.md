@@ -16,9 +16,11 @@ author: SusanneWindfeldPedersen
 Runs before a test  of a test codeunit is run.  
 
 ## Syntax  
-
 ```  
-OnBeforeTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[128]) Ok : Boolean  
+trigger OnBeforeTestRun(CodeunitID; CodeunitName; MethodName; Permissions): Ok  
+begin
+    ...
+end;
 ```  
 
 #### Parameters  
@@ -28,12 +30,12 @@ OnBeforeTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[1
  Specifies the ID of the codeunit to be run.  
 
  *CodeunitName*  
- Type: Text  
+ Type: Text\[30\]   
 
  The name of the test codeunit to be run.  
 
  *MethodName*  
- Type: Text  
+ Type: Text\[128\] 
 
  Specifies the name of the test  to be run.  
 

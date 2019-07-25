@@ -213,37 +213,37 @@ Get information about the currently supported versions.
 }
 ```
 
-## Upgrades
-The upgrade settings allow you to specify an upgrade window for the time of day an upgrade can be performed on the tenant environment. The upgrade window must be a minimum of six hours. (e.g. 1:00 - 7:00)
+## Updates
+The update settings allow you to specify an update window for the time of day an update can be performed on the tenant environment. The update window must be a minimum of six hours. (e.g. 1:00 - 7:00)
 
-### Get Upgrade Settings
-Returns the upgrade settings for the environment. The upgrade settings currently available are the start and end times for the upgrade window.
+### Get Update Settings
+Returns the update settings for the environment. The update settings currently available are the start and end times for the update window.
 
-```[200] GET v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
+```[200] GET v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/settings/update```
 
 **Response:**  
-Returns the environment's upgrade settings, or "null" if not exists
+Returns the environment's update settings, or "null" if not exists
 ```
 {
-  "preferredStartTimeUtc": datetime, // Start of environment upgrade window
-  "preferredEndTimeUtc": datetime, // End of environment upgrade window
+  "preferredStartTimeUtc": datetime, // Start of environment update window
+  "preferredEndTimeUtc": datetime, // End of environment update window
 }
 ```
 
 > [!NOTE]  
 > The `date` components of the values are ignored, only the time components are used.
 
-### Put Upgrade Settings
-Set the upgrade window start and end times.
+### Put Update Settings
+Set the update window start and end times.
 
-```[200] PUT v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
+```[200] PUT v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/settings/update```
 
 **Body**
 
 ```
 {
-  "preferredStartTimeUtc": datetime, // Start of environment upgrade window
-  "preferredEndTimeUtc": datetime, // End of environment upgrade window
+  "preferredStartTimeUtc": datetime, // Start of environment update window
+  "preferredEndTimeUtc": datetime, // End of environment update window
 }
 ```
 
@@ -251,8 +251,8 @@ Set the upgrade window start and end times.
 Returns the updated settings
 ```
 {
-  "preferredStartTimeUtc": datetime, // Start of environment upgrade window
-  "preferredEndTimeUtc": datetime, // End of environment upgrade window
+  "preferredStartTimeUtc": datetime, // Start of environment update window
+  "preferredEndTimeUtc": datetime, // End of environment update window
 }
 ```
 
@@ -290,7 +290,7 @@ Returns the telemetry logs and with data column headers.
 ```
 
 ## Notifications
-Notifications are sent to the recipient email addresses set up for the tenant. For example, notifications are sent for upgrade availability, successful upgrades, upgrade failures, and extension validations.   
+Notifications are sent to the recipient email addresses set up for the tenant. For example, notifications are sent for update availability, successful updates, update failures, and extension validations.   
 
 ### Get Notification Recipients
 Returns a list of notification recipients.
@@ -447,16 +447,16 @@ Returns a wrapped array of applications.
 }
 ```
 
-## Reschedule Upgrades
-Some environment upgrades are allowed to be rescheduled.
+## Reschedule Updates
+Some environment updates are allowed to be rescheduled.
 
-### Get Scheduled Upgrade
-Get information about upgrades that have already been scheduled for a specific environment.
+### Get Scheduled Update
+Get information about updates that have already been scheduled for a specific environment.
 
-```[200] GET /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/upgrade```
+```[200] GET /v1.2/admin/applications/{applicationFamily}/environments/{environmentName}/update```
 
 **Response:**  
-Returns information about the upgrade job for that environment.
+Returns information about the update job for that environment.
 
 ```
 {
@@ -469,16 +469,16 @@ Returns information about the upgrade job for that environment.
   "earliestSelectableUpgradeDate": datetime,
   "latestSelectableUpgradeDate": datetime,
   "upgadeDate": datetime,
-  "upgradeStatus": string (enum | "Scheduled" or "Running"),
+  "updateStatus": string (enum | "Scheduled" or "Running"),
   "ignoreUpgradeWindow": boolean,
   "isActive": boolean
 }
 ```
 
-### Reschedule Upgrade
-Reschedule an upgrade, if able.
+### Reschedule Update
+Reschedule an update, if able.
 
-```[200] PUT /v1.2/admin/applications/{applicationFamily}/upgrade```
+```[200] PUT /v1.2/admin/applications/{applicationFamily}/update```
 
 **Body**
 

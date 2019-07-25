@@ -2,7 +2,7 @@
 title: "Data Types and Methods in AL"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/28/2019
+ms.date: 07/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -129,6 +129,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[FieldType](fieldtype/fieldtype-option.md)|Represents the type of a table field.|
 |[NotificationScope](notificationscope/notificationscope-option.md)|Specifies the context in which the notification appears in the client.|
 |[ObjectType](objecttype/objecttype-option.md)|The different types of objects.|
+|[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|
 |[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
 |[SecurityFilter](securityfilter/securityfilter-option.md)|Specifies how security filters are applied to the record.|
 |[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)|Use variables of this data type to specify the type of connection to an external database.|

@@ -35,3 +35,6 @@ Sets the actual fields that are used in the corresponding index on SQL Server.
  <!--  
 ## See Also  
  [Table Keys](devenv-table-keys.md) -->
+
+## See Also
+ [Properties](devenv-properties.md)   

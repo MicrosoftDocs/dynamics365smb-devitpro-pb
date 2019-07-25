@@ -33,7 +33,9 @@ Page fields
  
 **true** specifies that the field has input focus when users move through fields by pressing Enter; **false** specifies the field to be skipped. The default is **true**.
 
-The property can be also be configured dynamically by using a Boolean variable or a Boolean type field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”.  
+
+> [!NOTE]
+> For [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)] development, you can use a Boolean variable or a Boolean type field on the page to enable quick entry on a field conditionally. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”. This is currently not supported in the [!INCLUDE[webclient](../includes/webclient.md)]. 
 
 ## Remarks  
 
@@ -43,7 +45,24 @@ As a developer, the **QuickEntry** property can also be set by using Designer (s
 
 ## Example
 
-This example illustrates how to dynamically set the **QuickEntry** property by using a Boolean field on the page. The code modifies the **Customer Card** page so that the **Credit Limit (LCY)** field is skipped if the **Allow Invoice Discount** field is not selected.
+This example illustrates how to remove the **Credit Limit (LCY)** field from quick entry.
+
+```
+pageextension 50100 CustomerCardExt extends "Customer Card"
+{
+    layout
+    {
+        modify("Credit Limit (LCY)")
+        {
+            QuickEntry = false;
+        }
+
+    }
+```
+
+## Example
+
+This example illustrates how to dynamically set the **QuickEntry** property in the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)] by using a Boolean field on the page. The code modifies the **Customer Card** page so that the **Credit Limit (LCY)** field is skipped if the **Allow Invoice Discount** field is not selected.
 
 ```
 pageextension 50100 CustomerCardExt extends "Customer Card"
@@ -59,6 +78,7 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 ```
 
 Now, when a user enables **Allow Invoice Disc.** on the customer card, the **Credit Limit (LCY)** field gets focus when the user presses Enter. Without this modification, focus skips over the field when the user presses Enter.
+
 
 ## See Also
   

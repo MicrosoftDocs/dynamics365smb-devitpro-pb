@@ -46,7 +46,7 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
     |Argument|Description|Optional|
     |--------|------------|-------|
     |`<Event Publisher Object Type>`|Specify the type of object that publishes the event. This can be `Codeunit`, `Page`, `Report`, `Table`, or `XMLPort`. |no|
-    |`<Event Publisher Object>`|Specify the object that publishes the event. You can set this to the ID, such as `50100`, or the recommended way is to use the object name by using the syntax `<Object Type>::"<Object Name>"`, such as `Codeunit::"MyPublishers"`.|no|
+    |`<Event Publisher Object>`|Specify the object that publishes the event. You can set this to the ID, such as `50100`, or the recommended way is to use the object name by using the syntax `<Object Type>::"<Object Name>"`, such as `Codeunit::"MyPublishers"`, or for database triggers `Database::"Customer"`.|no|
     |`<Published Event Name>`|Specify the name of method that publishes the event in the object that is specified by the `<Event Publisher Object>` parameter. |no|
     |`<Published Event Element Name>`|Specifies the table field that the trigger event pertains to. This argument only requires a value for database trigger events, that is, when the `<Event Publisher Object Type>` is set to `Table` and the `<Published Event Name>` argument is a validate trigger event, such as `OnAfterValidateEvent`.|no|
     |`<SkipOnMissingLicense>`|Set to `true` to skip the event subscriber method call if the user's license does not cover the event subscriber codeunit. If `false`, an error is thrown and the code execution stops. `false` is the default.|yes|

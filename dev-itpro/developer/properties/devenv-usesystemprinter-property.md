@@ -22,6 +22,11 @@ Sets which printer is suggested when the report is run.
   
 ## Property Value  
  **True** if you want the system default printer to be used; otherwise, **false**. The default is **false**.  
+
+## Syntax
+```
+UseSystemPrinter = true;
+```
   
 ## Remarks  
  The user will be able to select another printer at runtime if the [UseRequestPage Property](devenv-userequestpage-property.md) is **true**.  

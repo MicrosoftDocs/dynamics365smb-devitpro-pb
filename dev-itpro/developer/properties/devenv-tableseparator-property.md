@@ -32,6 +32,11 @@ Specifies the table separator for a table.
 |**\<LF>**|LF alone.|  
 |**\<TAB>**|Tabulator alone.|  
 |**Other strings**|The literal string entered.|  
+
+## Syntax
+```
+TableSeparator = '<NewLine>';
+```
   
 ## Remarks  
  This property specifies how tables should be separated. The default value is a new line \(**\<NewLine>**\). **TableSeparator** property is only used if the **Format Property** is set to **Variable Text** or **Fixed Text**. Otherwise, the setting is ignored.  

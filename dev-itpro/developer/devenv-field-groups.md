@@ -13,11 +13,14 @@ author: SusanneWindfeldPedersen
 
 # Field Groups (Drop-Down Controls)
 
-A field group in table or table extension objects defines the fields to display in a drop-down control on pages that use the table and fields that display when these pages are shown in the tile view.
+A field group in table or table extension objects defines the fields to display in a drop-down control on pages that use the table. 
+
+> [!NOTE]
+> A field group can also be used to specify fields that display when list type pages are shown in the tile view. For more information, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).
 
 In a table object, you define field groups by first adding a `fieldgroups` control, and then adding one or more `fieldgroup(<Name>; <Field>` keyword for each group, where:
 
-- `<Name>` can be either `DropDown`, for adding fields to the drop-down control, or  `Brick`, for adding fields to display for records in the tile view.
+- `<Name>` can be either `DropDown`, for adding fields to the drop-down control.
 - `<Field>` is a comma-separated list of the fields, by name, to include in the group.  
 
 ```
@@ -61,7 +64,7 @@ tableextension 50100 CustomerExercise extends Customer
 {
     fields
     {
-        field(50100); "V02Max"; Decimal) { }
+        field(50100; "V02Max"; Decimal) { }
     }
    
     fieldgroups
@@ -70,6 +73,7 @@ tableextension 50100 CustomerExercise extends Customer
     }
 }
 ```
+<!--
 ## Define fields to display in tile view
 
 To specify which fields are included in a tile for a record in a list page object, you use the `Brick` field group name. The following example defines the `Brick` field group that includes two fields of a table object:
@@ -113,6 +117,7 @@ table 50101 MyTable
     }
 
 ```
+-->
 ## See Also
 
 [Debugging in AL](devenv-debugging.md)  

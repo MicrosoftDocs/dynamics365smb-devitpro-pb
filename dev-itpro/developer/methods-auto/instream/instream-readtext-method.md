@@ -43,13 +43,14 @@ The number of characters that were read.If you omit this optional return value a
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- READTEXT reads the specified number of bytes, the maximum length of the string, or until the end of the line.  
+
+READTEXT reads the until the specified number of bytes, the maximum length of the string, a zero byte, or until the end of the line. For more information about how zero bytes and line endings are read, see [WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
   
- Data is read in text format.  
+Data is read in text format.  
+
+If you do not use the optional return value and the data being read is less than the length requested to be read, an error message is displayed.  
   
- If you do not use the optional return value and the data being read is less than the length requested to be read, an error message is displayed.  
-  
- If you use the return value, you must verify the validity of the data that has been read.  
+If you use the return value, you must verify the validity of the data that has been read.  
   
 ## Example  
  This example shows how to use the InStream.READTEXT method. This example requires that you create the following variables.  
@@ -72,6 +73,8 @@ END;
 FileTest.CLOSE();  
 ```  
   
+## Example
+
 
 ## See Also
 [InStream Data Type](instream-data-type.md)  

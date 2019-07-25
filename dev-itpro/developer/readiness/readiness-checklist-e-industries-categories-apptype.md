@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# <a name="Industries"></a>Industries, Categories, App Type
+# Industries, Categories, App Type
 
 | Listing details | Description | Requirements |
 |-----------------|--------------|-------------|

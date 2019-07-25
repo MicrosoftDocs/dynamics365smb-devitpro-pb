@@ -41,6 +41,9 @@ The name of the company that you want to create and copy data to. The company na
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+Links and notes on records are not copied to the new company.
 
 ## Example  
  The following example is based on the **Copy Company** batch job, which is part of the [!INCLUDE[demo](../../includes/demo_md.md)]. The batch job takes the Company system table as a data item and uses the **Name** field as the value of the *SourceName* parameter. The value of the *DestinationName* parameter is specified in the **New Company Name** field in the request page, which is represented by the `NewCompanyName` variable.  

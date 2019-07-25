@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# <a name="OfferDescription"></a>Offer Description 
+# Offer Description 
 
 | Offer Details  | Description| Requirements |
 |----------------|------------|--------------|

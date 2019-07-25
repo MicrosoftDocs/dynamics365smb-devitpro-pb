@@ -9,12 +9,9 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
- 
 
 # Page Object
 Pages are the main way to display and organize visual data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. They are the primary object that a user will interact with and have a different behavior based on the type that you choose. Pages are designed independently of the device they are to be rendered on, and in this way the same page can be reused across phone, tablet, and web clients.
@@ -29,96 +26,8 @@ When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_
 ## Snippet support
 Typing the shortcut `tpage` will create the basic layout for a page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-## Card page syntax
-```
-page Id MyPage
-{
-    PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
-    SourceTable = TableName;
-    ContextSensitiveHelpPage = 'my-feature';
 
-    layout
-    {
-        area(Content)
-        {
-            group(GroupName)
-            {
-                field(Name; NameSource)
-                {
-                    ApplicationArea = All;
-                    
-                }
-            }
-        }
-    }
-    
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-                
-                trigger OnAction()
-                begin
-                    
-                end;
-            }
-        }
-    }
-    
-    var
-        myInt: Integer;
-}
-```
-
-## List page syntax
-```
-page Id PageName
-{
-    PageType = List;
-    ApplicationArea = All;
-    SourceTable = TableName;
-    
-    layout
-    {
-        area(Content)
-        {
-            repeater(Group)
-            {
-                field(Name; NameSource)
-                {
-                    ApplicationArea = All;
-                    
-                }
-            }
-        }
-        area(Factboxes)
-        {
-            
-        }
-    }
-    
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-                
-                trigger OnAction();
-                begin
-                    
-                end;
-            }
-        }
-    }
-}
-```
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Page example
 

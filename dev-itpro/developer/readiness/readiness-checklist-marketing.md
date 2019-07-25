@@ -25,24 +25,24 @@ This image below is an example of what an offering looks like on AppSource, when
 |Item Number| Validation Requirements | Guidance/Examples | 
 |----------------------|--------------|--------------|
 |0.A - 0.C|Your app can be in any language – if not in English, a document with English translation is required. Branding - Remember to use the product branding guidelines properly| [General Best Practices including Language and Branding](readiness-checklist-a-languange-branding.md) |
-|0.D| Must be the same as the manifest. (Your offer name) for Microsoft Dynamics 365 Business Central | [Offer Name](readiness-checklist-b-offername-summary.md#OfferName)|
-|1|Max. 25 words or 100 characters, value proposition| [Offer Summary](readiness-checklist-b-offername-summary.md#OfferSummary)|
-|2 - 2.G|Use simple html tags, 3000 characters See link for best practices on formating the content.| [Description](readiness-checklist-c-offer-description.md)|
+|0.D| Must be the same as the manifest. (Your offer name) for Microsoft Dynamics 365 Business Central | [Offer Name](readiness-checklist-b-offername-summary.md)|
+|1|Max. 25 words or 100 characters, value proposition| [Offer Summary](readiness-checklist-b-offername-summary.md)|
+|2 - 2.G|Use simple HTML tags, 3000 characters See link for best practices on formating the content.| [Description](readiness-checklist-c-offer-description.md)|
 |2.F|Supported editions - Premium, Essential or both|  [Premium SKU Listing](readiness-checklist-c-offer-description.md#SupportedEditions)|
-|2.G - 7|Mark only the Dynamics 365 Business Central supported countries that apply.|  [Supported Countries](readiness-checklist-d-supportedcountries-languages.md#CountriesLanguagesApp)|
+|2.G - 7|Mark only the Dynamics 365 Business Central supported countries that apply.|  [Supported Countries](readiness-checklist-d-supportedcountries-languages.md)|
 |3-4|Choose the industries the your offer is best aligned to. (max 2) Categories that your offer caters to (max 3) |[Industries and Categories](readiness-checklist-e-industries-categories-apptype.md)|
-|5|Add-on App - free or trial, Connect App - Contact me|  [Package and App Type](readiness-checklist-e-industries-categories-apptype.md#Industries)|
-|6|Your Help Link cannot be the same as your Support Link. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, etc.|  [Help Link](readiness-checklist-h-help-support.md#Help)|
-|7 - 8| Listed under Description and Language & Branding|[Supported Countries and Languages](readiness-checklist-d-supportedcountries-languages.md#CountriesLanguagesApp)|
+|5|Add-on App - free or trial, Connect App - Contact me|  [Package and App Type](readiness-checklist-e-industries-categories-apptype.md)|
+|6|Your Help Link cannot be the same as your Support Link. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, etc.|  [Help Link](readiness-checklist-h-help-support.md)|
+|7 - 8| Listed under Description and Language & Branding|[Supported Countries and Languages](readiness-checklist-d-supportedcountries-languages.md)|
 |9-10-11|Enter the latest version number. Enter date (dd/mm/yyyy)when you expect your app to be released|[App Version, App Release Date, Supported Products](readiness-checklist-f-supportedproducts-keywords.md)|
-|12|Although it's not required, it is strongly recommended that you use keywords as to optimize the searchability of your app. Maximum of 3 words.|  [Keywords](readiness-checklist-f-supportedproducts-keywords.md#SupportedProd)|
+|12|Although it's not required, it is strongly recommended that you use keywords as to optimize the searchability of your app. Maximum of 3 words.|  [Keywords](readiness-checklist-f-supportedproducts-keywords.md)|
 |13|Enter a secret key that you'll use to preview your offer on AppSource before going live|[Hide Key](readiness-checklist-f-supportedproducts-keywords.md)|
-|14|You are required to provide two logos on AppSource. 48x48 pixel resolution (for your app's search page) and 216x216 resolution (for your app's details page). Both in .png format.|[Logos](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#Logos)|
+|14|You are required to provide two logos on AppSource. 48x48 pixel resolution (for your app's search page) and 216x216 resolution (for your app's details page). Both in .png format.|[Logos](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md)|
 |15|We recommend that you add one or two videos that would act as a demo or a quick 3 minute sales pitch on your app.|  [Videos](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#Videos)|
 |16|Minimum of 1 document (max of 3) permitted.| [Documents](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#Documents)|
 |17|Please double check the resolution needs to be 1280 x 720 and only in .png format. It's required to have a minimum of 3 but you can have up to 5.| [Screenshots](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#Screenshots)|
-|18|Landing page where prospects can find information on how you handle their data.| [Privacy Policy Link](readiness-checklist-i-privacypolicy-termsofuse.md#PrivacyLicense)|
-|19|You need to provide a URL for a distinct page with your license agreement, where prospects can find the information on your terms of use.| [License Agreeement](readiness-checklist-i-privacypolicy-termsofuse.md#PrivacyLicense)|
+|18|Landing page where prospects can find information on how you handle their data.| [Privacy Policy Link](readiness-checklist-i-privacypolicy-termsofuse.md)|
+|19|You need to provide a URL for a distinct page with your license agreement, where prospects can find the information on your terms of use.| [License Agreeement](readiness-checklist-i-privacypolicy-termsofuse.md)|
 |20|It is a requirement that you provide different (i.e. more than two) contact options on your app landing page.| [Support Link](readiness-checklist-h-help-support.md#Support)|
 ||||
 ||**Special Rules for Localization, Connect & Consulting Services Apps**|

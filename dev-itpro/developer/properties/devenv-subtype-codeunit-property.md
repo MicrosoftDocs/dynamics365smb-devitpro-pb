@@ -27,6 +27,11 @@ Codeunits
 |**TestRunner**|A test runner codeunit manages the execution of one or more test codeunits. <!-- For more information, see [How to: Create a Test Runner Codeunit](../devenv-how-to-create-a-test-runner-codeunit.md).-->|  
 |**Upgrade**|An upgrade codeunit includes AL methods for synchronizing changes to a table definition in an application with the business data table in SQL Server and migrating existing data. <!-- For more information, see [Upgrade Codeunits](../devenv-upgrade-codeunits.md).-->|  
 |**Install**|An install codeunit includes AL methods for performing operations unconcerned with the extension code itself during the initial installation and the reinstallation of an extension.|
+
+## Syntax
+```
+SubType = Normal;
+```
   
 ## Remarks  
 You can create test codeunits and test runner codeunits to test your application.  

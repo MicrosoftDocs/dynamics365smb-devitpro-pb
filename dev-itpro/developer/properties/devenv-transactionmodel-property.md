@@ -30,6 +30,11 @@ Specifies whether data is committed to the database during execution of a test m
 |AutoRollback|The transaction is rolled back after test execution. Calls to the **COMMIT** method during a test that is set to **AutoRollback** fail with an error.|  
 |None|Used primarily with TestPages. The test method does not have an open write transaction; therefore, it cannot write to the database. Each interaction with the database occurs through TestPage triggers, which open their own write transactions. At the end of each trigger, if no errors occurred, then any changes are committed to the database. If an error occurred, then changes are rolled back at the end of the transaction.|  
 
+##Syntax
+```
+[TransactionModel(TransactionModel::AutoRollback)]
+```
+
 ## Remarks  
  To create meaningful tests, you must first understand how transactions run. In a typical user scenario, a user who is logged on to a client enters data into one field of a page. Then the user enters some data in another field on the page. The user also checks the value of a third field. Finally, the user saves and closes the page. Every time a user enters data into a field, AL code may be triggered and a new transaction is automatically started. The trigger code runs within this new transaction. Field data is sent to the server where it is processed and often updated in the database. When the AL code in the trigger is finished, the transaction is automatically committed to the database and the page is refreshed with updated data.  
 
@@ -72,6 +77,7 @@ Specifies whether data is committed to the database during execution of a test m
  With **AutoCommit** and **AutoRollback**, the test method starts a write transaction. Triggers that are invoked by the test code inherit this open transaction instead of running in their own separate transactions. By using the **AutoCommit** and **AutoRollback** settings, if several page interactions are invoked from test code, then they share the same transaction. By using the **None** setting, each page interaction runs in a separate transaction.  
 
 ## See Also  
+ [Properties](devenv-properties.md)   
  [TestIsolation Property](devenv-testisolation-property.md)   
  <!-- [Testing the Application](Testing-the-Application.md)   
  [Testing Pages](Testing-Pages.md)   

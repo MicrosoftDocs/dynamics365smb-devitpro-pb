@@ -17,9 +17,11 @@ manager: edupont
 Runs as a page closes after the [OnQueryClosePage Trigger](devenv-onqueryclosepage-trigger.md) is executed.  
 
 ## Syntax  
-
 ```  
-OnClosePage()  
+trigger OnClosePage()
+begin
+    ...
+end;
 ```  
 
 ## Applies To  

@@ -15,7 +15,15 @@ manager: edupont
 
 # OnInit Trigger
 Initializes the user-defined variables on the page.  
-  
+
+## Syntax  
+```  
+trigger OnInit()
+begin
+    ...
+end;
+``` 
+ 
 ## Applies To  
 - Pages  
   

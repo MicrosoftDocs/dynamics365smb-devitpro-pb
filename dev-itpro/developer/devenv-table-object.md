@@ -10,9 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
----
-
- 
+--- 
 
 # Table Object
 Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Regardless of how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
@@ -28,54 +26,8 @@ The structure of a table has four sections. The first block contains metadata fo
 ## Snippet support
 Typing the shortcut `ttable` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-## Table syntax
-```
-table id MyTable
-{
-    DataClassification = ToBeClassified;
-    
-    fields
-    {
-        field(1;MyField; Integer)
-        {
-            DataClassification = ToBeClassified;
-            
-        }
-    }
-    
-    keys
-    {
-        key(PK; MyField)
-        {
-            Clustered = true;
-        }
-    }
-    
-    var
-        myInt: Integer;
-    
-    trigger OnInsert()
-    begin
-        
-    end;
-    
-    trigger OnModify()
-    begin
-        
-    end;
-    
-    trigger OnDelete()
-    begin
-        
-    end;
-    
-    trigger OnRename()
-    begin
-        
-    end;
-    
-} 
-```
+
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Table example
 This table stores address information and has four fields; Address, Locality, Town/City, and County.

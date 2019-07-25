@@ -18,12 +18,14 @@ manager: edupont
 Runs after a new record is initialized, but before users can make entries.  
   
 ## Syntax  
-  
 ```  
-OnNewRecord(BelowxRec)  
-```  
+trigger OnNewRecord(BelowxRec)
+begin
+    ...
+end;
+``` 
   
-## Return Value  
+#### Parameters 
  *BelowxRec*  
  \(Boolean\) This return value indicates whether the new record was inserted after the last record in the table \(xRec\). If **false**, the record was inserted between an existing record and the last record. If **true**, the record was inserted below the last record in the table \(xRec\).  
   

@@ -23,9 +23,9 @@ Sets the provider for a FactBox. This property enables you to create a link from
 
 ## Syntax
 ```
-Provider = Details;
+Provider = PartName;
 ```
 
 ## See Also  
 [Page Object](../devenv-page-object.md)
- [Properties](devenv-properties.md)
+[Properties](devenv-properties.md)

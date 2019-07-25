@@ -19,7 +19,12 @@ Sets whether a request page is presented to the user.
 - XMLports  
   
 ## Property Value  
-**True** if you want to show a request page; otherwise, **false**. The default is **true**.  
+**True** if you want to show a request page; otherwise, **false**. The default is **true**.
+
+## Syntax
+```
+UseRequestPage = false;
+```  
   
 ## Remarks  
 

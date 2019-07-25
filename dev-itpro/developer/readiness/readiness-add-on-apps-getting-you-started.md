@@ -3,14 +3,14 @@ title: "Add-On Apps - Getting You Started"
 description: "Getting you started with Microsoft Dynamics 365 Business Central Add-On Apps on AppSource"
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 06/07/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# Getting you started with your Add-on app
+# Getting You Started with Yyour Add-On App
 
 ## Build your business on Dynamics 365 Business Central
 
@@ -83,7 +83,7 @@ You will have to make a choice which object range is best for you. Some partners
 A developer account enables you to submit apps and add-ins to Microsoft’s marketplaces, including the Windows Store, Office Store, Azure Marketplace, and Microsoft AppSource.
 Note, you only need one developer account per company (not one per app submission).
 - [Register (or check if you already have access) here:](https://developer.microsoft.com/en-us/store/register)
-- A one-time registration fee applies.
+- A one-time registration fee applies
 
 *Choosing a primary contact email and publisher display name*
 
@@ -98,7 +98,7 @@ See example to the right, where the display name is highlighted in yellow.
 
 Consistency is key!
 
-It is key that you use the same display name and email throughout your app submission, as you will be asked to provide them in several different touch points. such as e.g.:
+It is key that you use the same display name and email throughout your app submission, as you will be asked to provide them in several different touch points. such as for example:
 - To sign into the Cloud Partner Portal (and creating your app offer)
 - To enroll and sign in to the Collaborate tool and “Ready to Go” platform
 
@@ -118,8 +118,7 @@ In order to be set up as a publisher and access the Cloud Partner Portal, you ne
 You have 3 options to work develop against the current version of Microsoft Dynamics 365 Business Central.
 - [If your add-on is lightweight, it might be sufficient to use a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-get-started) 
 - [If you want to setup a Docker-based development environment on Azure, you can use:](http://aka.ms/BCSandboxAzure) 
-- [If you want to setup a local docker based developer environment, you can download a
-PowerShell script available at](http://aka.ms/BCSandboxLocal) 
+- [If you want to setup a local Docker-based developer environment, you can download a PowerShell script available at](http://aka.ms/BCSandboxLocal) 
 
 ## The “Ready to Go” program
 
@@ -130,9 +129,7 @@ There are several things to keep in mind in building an Add-on app. The **"Ready
 
 If you want to have more in depth learning resources to get up to speed, then you can get a sneak-peek of the extensive set of **"Ready to Go" resources available in the online learning catalog**. We highly recommend that you either consume the materials which are built for you in the “Ready to Go” online learning catalog or get coached by one of our ISV Development Centers.
 
-Learn more about how you can leverage the “Ready to Go” program’s different support options here:
-
-**aka.ms/ReadyToGo**
+Learn more about how you can leverage the “Ready to Go” program’s different support options here: [aka.ms/ReadyToGo](https://aka.ms/readytogo).
 
 ## Register on Collaborate
 
@@ -155,7 +152,7 @@ Next, your company Global Administrator must click on the ‘Get Started’ opti
 
 Once completed, be sure and click the 'Terms of Use' (TOU) checkbox at the bottom of the registration page. Note: You need to accept the TOU to successfully register (cf. image below).
 
-Click the 'Next' button to complete your initial registration. When successful, you will see the image below.
+Click the **Next** button to complete your initial registration. When successful, you will see the image below.
 
 As the final step, to complete registration, click ‘GO TO DASHBOARD’.
 
@@ -163,7 +160,7 @@ As the final step, to complete registration, click ‘GO TO DASHBOARD’.
 - Please skip this part and move on to the next section called “Getting access to the available builds and engagements” to download packages through Microsoft Collaborate.
 
 If you DO want to add coworkers, please follow the 5 steps below:
-1.	Log on to Microsoft Collaborate with your Global Administrator account on [https://aka.ms/Collaborate](https://aka.ms/Collaborate)
+1.	Log on to Microsoft Collaborate with your Global Administrator account on [https://aka.ms/Collaborate](https://aka.ms/Collaborate).
 2.	Click on the ‘Gear’ Icon on the top right corner of the page and then on ‘Account Settings’ as shown on the image below.
 
 3.	Click on ‘Users’ under ‘Settings’ in the grey panel on the left-hand side of the page. The following image will appear.
@@ -206,20 +203,18 @@ Now that you have completed step 1 and 2 (cf. setting up your accounts and listi
 ## Useful resources
 ## Guidelines and general information
 
-Find general information on Add-on apps for Business Central here: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
+Find general information on Add-on apps for Business Central here: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo).
 
 ## Monthly “Ready to Go” Office Hours call
 
-“Ready to Go” Office Hours is a monthly call that takes place the second Tuesday of every month. The call is structured as a FAQ session, where a team of our different experts will be present to answer any technical or marketing related questions that you may have in relation to bringing your app into AppSource. Sign up for the individual calls that you want to participate in here:
-[aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours) 
+“Ready to Go” Office Hours is a monthly call that takes place the second Tuesday of every month. The call is structured as an FAQ session, where a team of our different experts will be present to answer any technical or marketing related questions that you may have in relation to bringing your app into AppSource. Sign up for the individual calls that you want to participate in here:
+[aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours). 
 
-## Github
-Use the github forum to ask, or search, the community and Microsoft experts for questions respectively. Go to: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues) now and start asking away.
+## GitHub
+Use the GitHub forum to ask, or search, the community and Microsoft experts for questions respectively. Go to: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues) now and start asking away.
 
 ## Follow “Ready to Go” engagements on social media
 
-Get insights on what’s happening with Business central – Follow us on Twitter and LinkedIn.
+Get insights on what’s happening with Business Central – follow us on Twitter and LinkedIn.
 
-If you have any other technical questions in relation to developing your Add-on app, then please email.
-
-*d365val@microsoft.com*
+If you have any other technical questions in relation to developing your Add-on app, then please email: [d365val@microsoft.com](mailto:d365val@microsoft.com).

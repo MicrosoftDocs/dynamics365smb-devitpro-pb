@@ -19,7 +19,11 @@ Sets the **SumIndexField Technology (SIFT)** for the key, if applicable.
 
 ## Applies To  
  Keys  
-  
+
+## Syntax
+```
+key(PK;PK) { MaintainSqlIndex=false; MaintainSiftIndex=true; SumIndexFields=IntField; }
+```   
 ## Remarks  
  You can select up to 20 SumIndexFields for each key.  
   
@@ -28,5 +32,6 @@ Sets the **SumIndexField Technology (SIFT)** for the key, if applicable.
  Changing existing keys may affect the behavior of the application since other parts of your application may depend on the existence of certain keys.  
 
 ## See Also  
-[AL Data Types](../datatypes/devenv-al-data-types.md)
 [Properties](devenv-properties.md)  
+[AL Data Types](../datatypes/devenv-al-data-types.md)
+  

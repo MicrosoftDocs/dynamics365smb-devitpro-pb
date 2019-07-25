@@ -27,61 +27,9 @@ You build the layout of a report by arranging data items and columns, and specif
 > Extension objects can have a name with a maximum length of 30 characters. 
 
 ## Snippet support
-Typing the shortcut ```treport``` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-## Report syntax
-```
-report Id MyReport
-{
-    UsageCategory = Administration;
-    ApplicationArea = All;
-    
-    dataset
-    {
-        dataitem(DataItemName; SourceTableName)
-        {
-            column(ColumnName; SourceFieldName)
-            {
-                
-            }
-        }
-    }
-    
-    requestpage
-    {
-        ContextSensitiveHelpPage = 'my-feature';
-        layout
-        {
-            area(Content)
-            {
-                group(GroupName)
-                {
-                    field(Name; SourceExpression)
-                    {
-                        ApplicationArea = All;
-                        
-                    }
-                }
-            }
-        }
-    
-        actions
-        {
-            area(processing)
-            {
-                action(ActionName)
-                {
-                    ApplicationArea = All;
-                    
-                }
-            }
-        }
-    }
-    
-    var
-        myInt: Integer;
-}
-```
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Report example
 The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a Word Layout report, see [Creating a Report](devenv-howto-report-layout.md).

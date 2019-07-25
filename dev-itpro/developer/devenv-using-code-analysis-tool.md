@@ -4,7 +4,7 @@ description: "Using static code analysis tool on an AL project."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -14,12 +14,13 @@ ms.author: solsen
 This topic shows how you can use static code analysis tool on an AL project from within Visual Studio Code.
 
 ## Enabling code analysis
-First, create a simple project in AL. 
+First, follow the steps below to create a simple project in AL. 
 1. Press **Alt + A, Alt + L** to create a new project.
-2. Open the Command Palette **Ctrl+Shift+P** and choose either User Settings or Workspace Settings.
+2. Open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings**.
 3. Copy the setting `al.enableCodeAnalysis` to the settings file and set it to `true`: `"al.enableCodeAnalysis": true`.
+4. Copy the setting `al.codeanalyzers` to the settings file and then use **Ctrl+Space** to pick from the available code analyzers. Separate the list of code analyzers with commas. For more information about the available analyzers, see [AppSourceCop](analyzers/appsourcecop.md), [CodeCop](analyzers/codecop.md), [PerTenantExtensionCop](analyzers/pertenantextensioncop.md), and [UICop](analyzers/uicop.md).
 
-At this point, the analyzers packaged with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s will be run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate a violation of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
+At this point, the selected analyzers will be run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate a violation of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
 
 ## Adding your own code to the project
 In the Visual Studio Code Explorer, open the `HelloWorld.al` file and replace the existing code with the following:
@@ -52,20 +53,7 @@ The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Co
 - **CodeCop** is an analyzer that enforces the official AL Coding Guidelines. For more information about the CodeCop rules, see [CodeCop Analyzer Rules](analyzers/codecop.md).
 - **PerTenantExtensionCop** is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants. For more information about the PerTenantExtensionCop rules, see [PerTenantExtensionCop Analyzer Rules](analyzers/pertenantextensioncop.md).
 - **AppSourceCop** is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource. For more information about the AppSourceCop rules, see [AppSourceCop Analyzer Rules](analyzers/appsourcecop.md).
-- **UserInterfaceCop** is an analyzer that enforces rules that must be respected by extensions meant to customize a user interface. For more information about the UserInterfaceCop rules, see [UICop Analyzer Rules](analyzers/uicop.md).
-
-## Selecting code analyzers to run
-By default, all the analyzers that ship with the Visual Studio Code extension are enabled.
-To selectively enable code analyzers:
-1. Open the Command Palette using the **Ctrl+Shift+P** shortcut and choose either User Settings or Workspace Settings.
-2. Copy the setting **al.codeAnalyzers** to the settings file and set it to an empty array: **"al.codeAnalyzers": []**.
-3. Add to the array the paths to the code analyzer assemblies that you want to run.
-
-The analyzers that are shipped with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] are available through the following variables:
-- `"${AppSourceCop}"`
-- `"${CodeCop}"`
-- `"${PerTenantExtensionCop}"`
-- `"${UICop}"`
+- **UICop** is an analyzer that enforces rules that must be respected by extensions meant to customize a user interface. For more information about the UserInterfaceCop rules, see [UICop Analyzer Rules](analyzers/uicop.md).
 
 ## See also
 [Using the Code Analysis Tools with the Ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  

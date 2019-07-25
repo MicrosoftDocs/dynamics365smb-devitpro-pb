@@ -114,6 +114,7 @@
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
+### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end admin -->
 <!-- Development-->
@@ -121,7 +122,6 @@
 ## [Development in AL](developer/devenv-dev-overview.md)
 ## Getting Started
 ### [Getting Started with AL](developer/devenv-get-started.md)
-### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
 ### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
@@ -130,6 +130,7 @@
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [AL Code Actions](developer/devenv-code-actions.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
+### [Differences in the Development Environments](developer/devenv-differences.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
@@ -146,6 +147,10 @@
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Creating Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
+## Working in Sandboxes
+### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
+### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
+### [Working with Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
 ## Manifest Files
 ### [JSON Files](developer/devenv-json-files.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
@@ -204,6 +209,7 @@
 #### List Pages
 ##### [Designing List Pages](developer/devenv-designing-list-pages.md)
 ##### [Sample List Page](developer/devenv-simple-list-page-example.md)
+##### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
 ##### [Views](developer/devenv-views.md)
 ##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
 #### Card Pages
@@ -229,6 +235,7 @@
 ### [Report Object](developer/devenv-report-object.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 ### [Request Pages](developer/devenv-request-pages.md)
+### [Report Triggers](developer/triggers/devenv-report-triggers.md)
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
@@ -503,15 +510,18 @@
 ### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
+### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)
 ### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
 ### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
 ### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
 ### [Deprecated Features in the Icelandic Version](upgrade/deprecated-features-is.md)
 ### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
+### [Deprecated Features in the Mexican Version](upgrade/deprecated-features-mx.md)
 ### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
 ### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
 ### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
+### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->

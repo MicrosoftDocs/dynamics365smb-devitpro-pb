@@ -17,6 +17,14 @@ manager: edupont
 # OnPostReport Trigger
 Runs after a report is run.  
 
+## Syntax  
+```  
+trigger OnPostReport()
+begin
+    ...
+end;
+``` 
+
 ## Applies To  
 - Reports  
 

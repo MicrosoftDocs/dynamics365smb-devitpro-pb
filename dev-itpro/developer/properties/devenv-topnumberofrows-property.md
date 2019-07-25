@@ -25,7 +25,12 @@ Specifies the maximum number of rows to include in the resulting dataset of a qu
   
 > [!NOTE]  
 >  A value of **0** is the same as leaving the property blank. If you set the value to **0**, then there is no limit and all rows of the dataset are returned.  
-  
+ 
+## Syntax
+```
+TopNumberOfRows = 10;
+```
+
 ## Remarks  
  You use the **TopNumberOfRows** property to limit the resulting dataset to the first set of rows that are generated for the query. For example, you can include only the first 10 or first 100 rows in the resulting dataset. The TOPNUMBEROFROWS property is useful for key performance indicators such as the top number of customers or sales.  
   

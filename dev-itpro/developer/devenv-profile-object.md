@@ -9,12 +9,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
-
- 
 
 # Profile Object
 The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to build an individual experience for each user profile. Profile object performs a validation to check whether the specified role center page exists, and [page customization objects](devenv-page-customization-object.md) exists, when you define a new profile object. You can add changes to the page layout, and actions; but you cannot add variables, procedures, or triggers. 
@@ -25,16 +21,7 @@ The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] a
 ## Snippet support
 Typing the shortcut ```tprofile``` will create the basic layout for a profile object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-## Profile syntax
-
-```
-profile MyProfile 
-{
-    Description = 'My Description';
-    RoleCenter = RoleCenter;
-    Customizations = Customizations;
-}
-```
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Profile example
 The following profile object example performs a validation to check if the `Business Manager` page of type RoleCenter exists, and if `MyCustomization` exists, and if it is a page customization object. Then the page customization modifies the layout of the **Customer List** to make the `Name` field invisible using the `modify` method. 

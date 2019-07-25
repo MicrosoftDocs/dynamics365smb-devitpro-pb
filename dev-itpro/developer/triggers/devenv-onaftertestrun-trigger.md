@@ -18,10 +18,11 @@ author: SusanneWindfeldPedersen
 Runs after a test  of a test codeunit has been run.  
 
 ## Syntax  
-
 ```  
-
-OnAfterTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[128];Permissions : TestPermissions; Success : Boolean)  
+trigger OnAfterTestRun(CodeunitID; CodeunitName; MethodName; Permissions; Success)
+begin
+    ...
+end;
 ```  
 
 #### Parameters  
@@ -31,12 +32,12 @@ Type: Integer
 Specifies the ID of the codeunit that has run.  
 
 *CodeunitName*  
-Type: Text  
+Type: Text\[30\]   
 
 Specifies the name of the test codeunit that has run.  
 
 *MethodName*  
-Type: Text  
+Type: Text\[128\]   
 
 Specifies the name of the test  that has run.  
 
@@ -89,20 +90,20 @@ The **OnAfterTestRun** trigger is run in its own database transaction.
  The following **OnAfterTestRun** trigger code logs test results to a test reporting system. This example requires that you create a record variable named *log*.  
 
 ```  
-log.INIT;  
+log.Init;  
 log.UnitId := CodeunitId;  
 log.Unit := CodeunitName;  
 log.Func := MethodName;  
 log.Before := Before;  
 log.After := CURRENTDATETIME;  
-If Success THEN  
+if Success then  
   log.Status := log.Status::Success  
-ELSE BEGIN  
+else begin  
   log.Status := log.Status::Failure;  
-  IF MethodName <> '' THEN  
+  if MethodName <> '' then  
     log.Message := GETLASTERRORTEXT;  
-END  
-log.INSERT(true);  
+end;  
+log.Insert(true);  
 ```  
 
  The GETLASTERRORTEXT returns the text that was contained in the last error message.  

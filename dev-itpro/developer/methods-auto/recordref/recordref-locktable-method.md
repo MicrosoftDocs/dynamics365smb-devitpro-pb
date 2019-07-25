@@ -47,7 +47,7 @@ The table lock is released (unlocked) when the transaction is committed.
  This method works the same as the [LOCKTABLE Method \(Record\)](../../methods/devenv-locktable-method-record.md).  
   
 ## Example  
- The following example opens table number 18 \(Customer\) as a RecordRef that is named MyRecordRef. The LOCKTABLE method locks the table. This is ensures that no records are inserted or deleted during the counting process. The [COUNT Method \(RecordRef\)](../../methods/devenv-count-method-recordref.md) then retrieves the number of records in the table. The number of records is stored in the Count variable. The name of the table and the number of records in the table is displayed in a message box. The varTableNo variable can be used to open any table and get the number of records in that table by changing the value of the varTableNo variable. This example requires that you create the following global variables and text constant.  
+ The following example opens table number 18 \(Customer\) as a RecordRef that is named MyRecordRef. The LOCKTABLE method locks the table. This ensures that no records are inserted or deleted during the counting process. The [COUNT Method \(RecordRef\)](../../methods/devenv-count-method-recordref.md) then retrieves the number of records in the table. The number of records is stored in the Count variable. The name of the table and the number of records in the table is displayed in a message box. The varTableNo variable can be used to open any table and get the number of records in that table by changing the value of the varTableNo variable. This example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

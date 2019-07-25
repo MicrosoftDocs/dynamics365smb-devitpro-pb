@@ -31,6 +31,11 @@ Specifies the table type.
 |**Exchange**|This is for internal use only.|
 |**MicrosoftGraph**|This is for internal use only.|
 
+## Syntax
+```
+TableType = CRM;
+```
+
 ## Remarks  
  Tables that are marked as **CRM** or **ExternalSQL** are considered to external tables that are not managed by [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database. <!-- For more information, see [External Tables](External-Tables.md).  -->
 

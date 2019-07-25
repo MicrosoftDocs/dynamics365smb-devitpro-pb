@@ -17,11 +17,12 @@ manager: edupont
 Overrides the default page behavior and enables you to specify which record you want to display when the page opens.  
   
 ## Syntax  
-  
 ```  
-  
-[Ok]:= OnFindRecord(Which)  
-```  
+trigger OnFindRecord(Which): Ok
+begin
+    ...
+end;
+``` 
   
 #### Parameters  
  *Which*  

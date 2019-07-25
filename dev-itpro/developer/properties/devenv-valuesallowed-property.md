@@ -22,6 +22,11 @@ Sets the values that are allowed in the field.
 -   Table Fields  
   
 -   Page Fields  
+
+## Syntax
+```
+ValuesAllowed = Codeunit, Page, Query;
+```
   
 ## Remarks  
  Separate the values with a comma. For example, if you only want the user to enter 1, 3, or 5 in this field, enter 1,3,5 for this property.  

@@ -9,7 +9,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-caps.latest.revision: 11
 ms.author: solsen
 ---
 
@@ -59,6 +58,7 @@ page 50100 "Simple Customercard Page"
             part(MyPart; "Acc. Sched. KPI Web Srv. Lines")
             {
                 ApplicationArea = All;
+                SubPageView = SORTING ("Acc. Schedule Name");
             }
             systempart(Links; Links)
             {
@@ -77,10 +77,45 @@ page 50100 "Simple Customercard Page"
 > When used on Lists, Factboxes can be used to show information about the entire list, or more contextually about the user’s current selection; the currently selected rows. You can control the filter which gets passed to the FactBox that determines its contextual contents. 
 
 ## Filtering data that is displayed on a page in a FactBox
-In many cases, you want to change the content that is displayed on the page in the FactBox based on the content of the main page. For example, if the main page is a Customer List, you can have a FactBox that includes the Customer Details page that shows information about a customer. When a user selects a customer in the Customer List, the Customer Details page displays information about the selected customer. To implement this functionality, you set up a table filter that associates a field in the table that is used by the Customer Details page with a field in the table that is used by the Customer List page. You can also filter on a constant value or set of conditions. 
+In many cases, you want to change the content that is displayed on the page in the FactBox based on the content of the main page. For example, if the main page is a Customer List, you can have a FactBox that includes the Customer Details page that shows information about a customer. When a user selects a customer in the Customer List, the Customer Details page displays information about the selected customer. To implement this functionality, you set up a table filter that associates a field in the table that is used by the Customer Details page with a field in the table that is used by the Customer List page, as shown in the example below. You can also filter on a constant value or set of conditions. 
+
+### Example
+
+```
+page 50101 "Simple Customerlist Page"
+{
+    PageType = List;
+    SourceTable = Customer;
+
+    layout
+    {
+        area(content)
+        {
+            repeater(Control)
+            {
+                field("No."; "No.")
+                {
+                    ApplicationArea = All;
+                }
+            }
+
+        }
+
+        area(FactBoxes)
+        {
+            part(CustomerList; "Customer Details FactBox")
+            {
+                ApplicationArea = All;
+                SubPageLink = "No." = FIELD ("No.");
+            }
+        }
+    }
+}
+```
 
 ## See Also  
 [Pages Overview](devenv-pages-overview.md)   
+[Page and Page Extension Properties Overview](properties/devenv-page-property-overview.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
 [Using Designer](devenv-inclient-designer.md)  
 [Arranging Rows and Columns on a Fasttab]()  

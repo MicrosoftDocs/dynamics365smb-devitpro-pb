@@ -15,6 +15,14 @@ author: SusanneWindfeldPedersen
 
 # OnInitReport Trigger
 Runs when the report is loaded.  
+
+## Syntax  
+```  
+trigger OnInitReport()
+begin
+    ...
+end;
+``` 
   
 ## Applies To  
 - Reports  

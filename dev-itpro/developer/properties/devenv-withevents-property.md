@@ -24,3 +24,6 @@ author: SusanneWindfeldPedersen
 ## See Also  
  [Automation Data Type](../datatypes/devenv-automation-data-type.md) 
  -->
+
+## See Also
+[Properties](devenv-properties.md)

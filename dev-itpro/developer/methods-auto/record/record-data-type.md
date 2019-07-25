@@ -2,7 +2,7 @@
 title: "Record Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 06/25/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,11 +58,12 @@ The following methods are available on instances of the Record data type.
 |[WritePermission()](record-writepermission-method.md)|Determines whether a user can write to a table. This method can test for both full write permission and partial write permission that has been granted with a security filter. A write permission consists of Insert, Delete, and Modify permissions.|
 |[ReadConsistency()](record-readconsistency-method.md)|Determines if the table supports read consistency.|
 |[RecordLevelLocking()](record-recordlevellocking-method.md)|Determines whether the table supports record-level locking.|
-|[Copy(var Record, [Boolean])](record-copy-method.md)|Copies a specified record, filters, marks, and keys that are associated with the record from a table or creates a reference to a record.|
+|[Copy(var Record, [Boolean])](record-copy-method.md)|Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields and keys that are associated with the record from a table or creates a reference to a record.|
 |[AddLink(String, [String])](record-addlink-method.md)|Adds a link to a record.|
 |[DeleteLink(Integer)](record-deletelink-method.md)|Deletes a specified link from a record in a table.|
 |[DeleteLinks()](record-deletelinks-method.md)|Deletes all of the links that have been added to a record.|
-|[CopyLinks(var Record)](record-copylinks-method.md)|Copies all the links from a specified record.|
+|[CopyLinks(var Record)](record-copylinks-table-method.md)|Copies all the links from a specified record.|
+|[CopyLinks(RecordRef)](record-copylinks-recordref-method.md)|Copies all the links from a specified record.|
 |[HasLinks()](record-haslinks-method.md)|Determines whether a record contains any links.|
 |[SetRange(Any, [Any], [Any])](record-setrange-method.md)|Sets a simple filter, such as a single range or a single value, on a field.|
 |[SetFilter(Any, String, [Any,...])](record-setfilter-method.md)|Assigns a filter to a field that you specify.|

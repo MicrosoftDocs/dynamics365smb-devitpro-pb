@@ -21,7 +21,12 @@ Sets whether a single instance of the codeunit and codeunit variables are instan
  Codeunits  
   
 ## Property Values  
- **True** if only one instance of a codeunit that makes it a single instance codeunit is set; otherwise, **false**. The default is **false**.  
+ **True** if only one instance of a codeunit that makes it a single instance codeunit is set; otherwise, **false**. The default is **false**.
+
+## Syntax
+```
+SingleInstance = true;
+```  
   
 ## Remarks  
  When you set this property to **true** on a codeunit, all codeunit variables that use this codeunit use the same instance. That is, all codeunit variables of this codeunit use the same set of internal variables when the code is running on the same client. The codeunit remains instantiated until you close the company.  

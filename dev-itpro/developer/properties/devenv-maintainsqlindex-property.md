@@ -25,7 +25,7 @@ Sets a value that indicates whether a SQL Server index that corresponds to the [
 
 ## Syntax
 ```
-MaintainSQLIndex = false;
+key(PK;PK) { MaintainSqlIndex=false; MaintainSiftIndex=true; }
 ```
 
 ## Remarks  

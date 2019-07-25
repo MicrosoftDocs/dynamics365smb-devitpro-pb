@@ -57,7 +57,6 @@ This topic lists properties of the XMLport object, element, and attribute.
 |[SourceTable Property \(XMLports\)](devenv-sourcetable-xmlports-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
 |[SourceTableView Property \(XMLports\)](devenv-sourcetableview-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
 |[SourceType Property](devenv-sourcetype-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Table attributes</li><li>Field attributes</li></ul>|
-|[Temporary Property \(XMLports\)](devenv-temporary-xmlports-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
 |[TextEncoding Property \(XMLports\)](devenv-textencoding-xmlports-property.md)|<ul><li>XMLport object</li></ul>|
 |[TextType Property](devenv-texttype-property.md)|<ul><li>Text elements</li><li>Text attributes</li></ul>|
 |[TransactionType Property](devenv-transactiontype-property.md)|<ul><li>XMLport object</li></ul>|
@@ -65,6 +64,7 @@ This topic lists properties of the XMLport object, element, and attribute.
 |[UseDefaultNamespace Property](devenv-usedefaultnamespace-property.md)|<ul><li>XMLport object</li></ul>|
 |[UseLax Property](devenv-uselax-property.md)|<ul><li>XMLport object</li></ul>|
 |[UseRequestPage Property](devenv-userequestpage-property.md)|<ul><li>XMLport object</li></ul>|
+|[UseTemporary Property \(XMLports\)](devenv-usetemporary-xmlport-property.md)|<ul><li>Table elements</li><li>Table attributes</li></ul>|
 |[VariableName Properties](devenv-variablename-properties.md)|<ul><li>Text elements</li><li>Table elements</li><li>Text attributes</li><li>Table attributes</li></ul>|
 |[Width Property \(XMLport\)](devenv-width-xmlports-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Table attributes</li><li>Field attributes</li></ul>|
 

@@ -18,10 +18,12 @@ manager: edupont
 Runs when a user selects an action on a page.  
 
 ## Syntax  
-
 ```  
-OnAction()  
-```  
+trigger OnAction()
+begin
+    ...
+end;
+```    
 
 ## Applies To  
 

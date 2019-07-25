@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# <a name="CountriesLanguagesApp"></a>Supported Countries, Languages, App Version, App Release Date
+# Supported Countries, Languages, App Version, App Release Date
 
 | Listing details                | Description                                              | Requirements |
 |--------------------------------|----------------------------------------------------------|--------------|

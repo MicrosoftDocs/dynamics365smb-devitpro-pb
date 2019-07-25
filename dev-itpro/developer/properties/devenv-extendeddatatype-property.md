@@ -1,7 +1,6 @@
 ---
 title: "ExtendedDataType Property"
 description: This topic describes the ExtendedDataType property options.
-author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2019
 ms.reviewer: na

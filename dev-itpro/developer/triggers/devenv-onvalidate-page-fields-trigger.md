@@ -20,8 +20,10 @@ Runs when a field loses focus after its value has been changed.
 ## Syntax  
   
 ```  
-
-OnValidate()  
+trigger OnValidate()
+begin
+    ...
+end;
 ```  
   
 ## Applies To  

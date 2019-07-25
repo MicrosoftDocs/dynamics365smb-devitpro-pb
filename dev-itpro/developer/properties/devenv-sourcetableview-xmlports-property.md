@@ -19,7 +19,12 @@ Sets the key used to sort data in the source table for the XML item.
   
 ## Applies To  
  XMLports  
-  
+
+## Syntax
+```
+SourceTableView = SORTING(Code);
+```
+ 
 ## Remarks  
  The **AssistButton** in the Value field for this property opens the **Table View** window that allows you to specify sort order and the key that is used to sort the table data. You can also place a filter on the table.  
   

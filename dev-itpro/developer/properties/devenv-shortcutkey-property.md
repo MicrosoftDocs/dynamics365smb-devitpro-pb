@@ -22,6 +22,11 @@ Sets a shortcut key for selecting an action.
 
 This property only applies to the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. The property is ignored in the Web client.
 
+## Syntax
+```
+ShortCutKey = 'Shift+Ctrl+D';
+```
+
 ## Remarks  
 Pressing the key that you designate with this property provides the same result as selecting the action.  
 

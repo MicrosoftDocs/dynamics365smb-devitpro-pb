@@ -23,3 +23,11 @@ Sets whether the source table is a temporary table.
   
 ## Property Value  
  **True** if you want the source table to be a temporary table; otherwise, **false**. The default value is **false**.
+
+## Syntax
+```
+SourceTableTemporary = true;
+```
+
+## See Also
+ [Properties](devenv-properties.md)   

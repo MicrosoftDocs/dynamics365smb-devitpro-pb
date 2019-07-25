@@ -22,6 +22,11 @@ Sets the type of text this element or attribute contains.
   
 ## Property Value  
  **BigText** if you want to display large text ; otherwise, **Text**. The default is **Text**.  
-  
+ 
+## Syntax
+```
+TextType = BigText;
+```
+
 ## See Also  
  [Properties](devenv-properties.md)

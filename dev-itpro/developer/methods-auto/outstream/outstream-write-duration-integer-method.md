@@ -43,7 +43,9 @@ The number of bytes that were written.If you omit this optional return value and
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
+## Remarks
+WRITE adds a zero byte at the end of the stream. This is differs from WRITETEXT, which does not. For more information about how zero bytes and line endings are written and read, see [WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
+
  If the optional return value, *Written*, is not specified and it was not possible to write all the data, an error message is displayed.  
   
  If the return value is present, you must verify that all the data was streamed.  

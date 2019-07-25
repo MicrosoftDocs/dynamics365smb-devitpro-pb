@@ -1,6 +1,5 @@
 ---
 title: "Properties Overview"
-author: solsen
 ms.custom: na
 ms.date: 04/01/2019
 ms.reviewer: na

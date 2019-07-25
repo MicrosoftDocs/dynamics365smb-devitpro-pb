@@ -15,6 +15,14 @@ manager: edupont
 
 # OnAfterGetRecord Trigger
 Runs after a record is retrieved from a table but before it is displayed to the user.  
+
+## Syntax  
+```  
+trigger OnAfterGetRecord()
+begin
+    ...
+end;
+``` 
   
 ## Applies To  
 - Pages  

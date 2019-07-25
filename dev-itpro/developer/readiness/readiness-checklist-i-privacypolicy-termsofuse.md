@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# <a name="PrivacyLicense"></a>Privacy Policy & Terms of Use
+# Privacy Policy & Terms of Use
 
 | Legal                                | Description | Requirements |
 |--------------------------------------|-------------|--------------|

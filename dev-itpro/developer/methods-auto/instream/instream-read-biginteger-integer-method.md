@@ -42,7 +42,9 @@ If you omit this optional return value and the operation does not execute succes
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
+## Remarks
+READ reads until the specified length or a zero byte. For more information about how zero bytes and line endings are read, see [WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
+  
  If the optional return value \(*READ*\) is not present and the data being read is less than the length requested to be read, then you receive an error message.  
   
  If the return value is present, then you must verify the validity of the data that has been read.  

@@ -18,6 +18,14 @@ The following triggers apply to codeunits.
 |---------------------------|--------------|  
 |[OnBeforeTestRun Trigger](devenv-onbeforetestrun-trigger.md)|Before a test method of a test codeunit is run.|  
 |[OnAfterTestRun Trigger](devenv-onaftertestrun-trigger.md)|After a test method of a test codeunit is run.|  
+|[OnCheckPreconditionsPerCompany Trigger](devenv-oncheckpreconditionspercompany-trigger.md)|Before an extension upgrade of an upgrade codeunit is run.|  
+|[OnCheckPreconditionsPerDatabase Trigger](devenv-oncheckpreconditionsperdatabase-trigger.md)|Before an extension upgrade of an upgrade codeunit is run.|  
+|[OnUpgradePerCompany Trigger](devenv-onupgradepercompany-trigger.md)|When an extension upgrade of an upgrade codeunit is run.|  
+|[OnUpgradePerDatabase Trigger](devenv-onupgradeperdatabase-trigger.md)|When an extension upgrade of an upgrade codeunit is run.|  
+|[OnValidateUpgradePerCompany Trigger](devenv-onvalidateupgradepercompany-trigger.md)|After an extension upgrade of an upgrade codeunit is run.|  
+|[OnValidateUpgradePerDatabase Trigger](devenv-onvalidateupgradeperdatabase-trigger.md)|After an extension upgrade of an upgrade codeunit is run.|  
+|[OnInstallAppPerCompany Trigger](devenv-oninstallapppercompany-trigger.md)| When an extension installation or reinstallation in an install codeunit is run.|  
+|[OnInstallAppPerDatabase Trigger](devenv-oninstallappperdatabase-trigger.md)|When an extension installation or reinstallation in an install codeunit is run.|  
 
 ## See Also  
  [Triggers](devenv-triggers.md)  

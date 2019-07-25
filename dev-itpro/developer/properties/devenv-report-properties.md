@@ -56,10 +56,10 @@ This topic lists properties of the report object.
 |[ReqFilterHeadingML Property](devenv-reqfilterheadingml-property.md)|<ul><li>DataItem controls</li></ul>|
 |[ShowPrintStatus Property](devenv-showprintstatus-property.md)|<ul><li>Report Object</li></ul>|
 |[SourceExpr Property](devenv-sourceexpr-property.md)|<ul><li>Column controls</li></ul>|
-|[Temporary Property \(Reports\)](devenv-temporary-reports-property.md)|<ul><li>DataItem controls</li></ul>|
 |[TransactionType Property](devenv-transactiontype-property.md)|<ul><li>Report Object</li></ul>|
 |[UsageCategory Property](devenv-usagecategory-property.md)|<ul><li>Report Object</li></ul>|
 |[UseRequestPage Property](devenv-userequestpage-property.md)|<ul><li>Report Object</li></ul>|
+|[UseTemporary Property \(Reports\)](devenv-usetemporary-report-property.md)|<ul><li>DataItem controls</li></ul>|
 |[UseSystemPrinter Property](devenv-usesystemprinter-property.md)|<ul><li>Report Object</li></ul>|
 
 <!--
