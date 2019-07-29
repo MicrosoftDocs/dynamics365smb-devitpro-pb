@@ -352,7 +352,18 @@ In addition, other extensions used in the old deployment that you still want to 
     ```
     Get-NAVAppinfo -ServerInstance <ServerInstanceName>
     ```
-2. <a name="PublishSymbols"></a>Publish the system.app and test.app symbol files.
+
+    To get a list of the currently published symbols, use this command:
+       
+    ```
+    Get-NAVAppinfo -ServerInstance <ServerInstanceName> -SymbolsOnly
+    ```
+2. Unpublish the existing system, test, and application symbols by using the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
+       
+        ```
+        Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <name> -Version <n.n.n.n>
+        ```
+3. <a name="PublishSymbols"></a>Publish the system.app and test.app symbol files.
 
     If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
 
@@ -362,7 +373,7 @@ In addition, other extensions used in the old deployment that you still want to 
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <SymbolFilePath> -PackageType SymbolsOnly
     ```
 
-3. <a name="GenerateSymbols"></a>Generate the application symbol references by using the finsql.exe file as follows:
+4. <a name="GenerateSymbols"></a>Generate the application symbol references by using the finsql.exe file as follows:
 
     1. Make sure that **Enable loading application symbol references at server startup** (EnableSymbolLoadingAtServerStartup) is set on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
@@ -395,7 +406,7 @@ In addition, other extensions used in the old deployment that you still want to 
     For more information about generation symbols, see [Running C/SIDE and AL Side-by-Side](../developer/devenv-running-cside-and-al-side-by-side.md).
 
     4. Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
-4. Upgrade the Microsoft extensions that were published in the old deployment to new versions. For Denmark (DK) and German (DE), you must also complete this step to install the local functionality extensions mentioned at the start of this task. 
+5. Upgrade the Microsoft extensions that were published in the old deployment to new versions. For Denmark (DK) and German (DE), you must also complete this step to install the local functionality extensions mentioned at the start of this task. 
 
     The new extension versions are found in the `\Extensions` folder of the installation media (DVD). Follow these steps for each extension by using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
 
@@ -427,7 +438,7 @@ In addition, other extensions used in the old deployment that you still want to 
         ```
     For more information about publishing extensions, see [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md).
 
-5. Repair, synchronize, and install other currently published extension versions that you still want to use, but have not been upgraded to new versions. 
+6. Repair, synchronize, and install other currently published extension versions that you still want to use, but have not been upgraded to new versions. 
 
     For each extension, complete the following steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]: 
 
@@ -447,7 +458,7 @@ In addition, other extensions used in the old deployment that you still want to 
         Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
    
-6. (Optional) Unpublish unused extension versions by running the [Unpublish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp): 
+7. (Optional) Unpublish unused extension versions by running the [Unpublish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp): 
          
     ```
     Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
