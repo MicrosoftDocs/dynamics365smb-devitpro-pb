@@ -9,66 +9,16 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# Linking and Joining Data Item Define the Query Dataset
+# Linking and Joining Data Items to Define the Query Dataset
 
 [!INCLUDE[prodshort](includes/prodshort.md)] queries enable you to retrieve records from one or more tables and combine the specific records into rows in a single dataset. In AL, each table is specified as a data item. The data included in the dataset is a result of how the data items are linked and joined together.
 
 > [!TIP]
 > The concept of linking and joining data items in AL is similar to Join clauses in SQL Select statements on tables in SQL Server. If you are familiar with SQL Joins, when describing links and joins in AL, this article provides the equivalent SQL SELECT statement in most cases.
 
-## How to link and join data items
-
-When you add data items to a query object in AL, you define them in a specific hierarchy, one after another, where each lower data item is embedded within the definition of the upper data item. The order of the data items determines the sequence in which data items are linked and joined to produce the results in in the dataset.  
-  
-In short, to join two data items, you set the [DataItemLink]() and [SqlJoinType]() properties on the lower dataitem.
- 
-<!--
-
--   The DataItemLink property links one or more columns of the lower data item to the upper data item by associating a field in the lower table with a common field in the upper table.
-  
--   The SqlJoinType property determines which records to combine into the results, based on the values of the fields that are linked by the DataItemLink property.  
-
-    By default, the SqlJoinType property is set to **Left Outer Join**.  The remainder of this article desribes the 
--->
-### Set the DataItemLink Property
-
-The DataItemLink property sets up a reference between one or more columns of the data item tables for combining records. In a query, two data item tables typically will have columns that have values that are common to both tables. For example, the Salesperson table and Sales Header table have the Code column and Salesperson\_Code column in common. To create a link between these two tables, you could add the following value in the DataItemLink property of the **Sales Header** data item.  
-  
-|Field|Reference DataItem|Reference Field|  
-|-----------|------------------------|---------------------|  
-|Salesperson code|Salesperson\_Purchaser|Code|  
-  
-The DataItemLink property sets up "equal to" \(=\) comparison condition between two columns of the data items. When the query is run, the query compares each row of the two data items to find records that having matching values for the columns. Records that have matching column values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the DataItemLinkType property to include records that do not have matching column values. 
-<!--
-The basic steps for linking and joining two data items are as follows:
-
-1. First, two data items are *linked* together by associating a field in the table of one data item with a common field in the table of the other data item.
-2. Then, records of the tables are combined into a dataset by *joining* the data items. There are several different join types that control which records that included in the resulting dataset depending on whether or not the values of the linked fields match.
-
-> [!TIP]
-> The concept of linking and joining data items in AL is similar to Join clauses in SQL Select statements on tables in SQL Server. If you are familiar with SQL Joins, when describing links and joins in AL, this article provides the equivalent SQL SELECT statement in most cases.-->
-
-### Set the SqlJoinType Property
-
-The SqlJoinType property the determines which records to combine into the results, based on the values of the fields that are linked by the DataItemLink property. You use this property to limit the records that are included in the resulting dataset based on the specified conditions. By default, the SqlJoinType property is set to **Left Outer Join**.
-
-### Linking More Than Two Data Items  
-
-A query links data items in the order that they appear in AL, starting from the top and then working downward. When you have more than two data items, lower data items are linked to the resulting dataset of the linked data items above it. For example, when you link the first two data items, the query generates a dataset. When you add another data item, the data item is linked to the dataset of the first linked pair of data items, where it applies the conditions that are specified by its DataItemLink property and DataItemLinkType property. The following illustration shows an example with three data items.  
-  
- ![Query Designer showing 3 data item links](media/NAV_Query_Designer_Sample_3_DataItemLink.png "NAV\_Query\_Designer\_Sample\_3\_DataItemLink")  
-  
- This pattern continues for each additional data item.  
-  
-### Left and Right Data Item Designation and SQL join statements
-
-The concept of linking and joining data items in AL is similar to *join* clauses in SQL Select statements on tables in SQL Server. In SQL join statements, tables are designated as either left or right. In AL query objects, because data items are arranged vertically, when joining data items, the *left* corresponds to the upper data item (table) and *right* corresponds to the data item (table).
-
-To help you understand links and join in AL, if you are already familiar with SQL Joins, this article provides the equivalent SQL SELECT statement in most cases.
-
 ## Sample Tables and Query
 
-To demonstrate data item links consider the following sample tables and query.  
+To demonstrate data item links and joins, this article uses the following sample tables and query.  
   
 ### Salesperson/Purchaser Table
 
@@ -113,6 +63,7 @@ query 50100 "Sample Query"
             dataitem(Sales_Header; "Sales Header")
             {
                 DataItemLink = "Salesperson Code" = Salesperson_Purchaser.Code;
+                // Change the SqlJoinType to suit the desired results
                 SqlJoinType = InnerJoin;
 
                 column(No_; "No.")
@@ -128,6 +79,59 @@ query 50100 "Sample Query"
     }
 }
 ```  
+
+## How to link and join data items
+
+When you add data items to a query object in AL, you define them in a specific hierarchy, one after another, where each lower data item is embedded within the definition of the upper data item. The order of the data items determines the sequence in which data items are linked and joined to produce the results in in the dataset.  
+  
+In short, to join two data items, you set the [DataItemLink](properties/devenv-DataItemLink-query-property.md) and [SqlJoinType](properties/devenv-SqlJoinType-property.md) properties on the lower dataitem.
+
+ 
+<!--
+
+-   The DataItemLink property links one or more columns of the lower data item to the upper data item by associating a field in the lower table with a common field in the upper table.
+  
+-   The SqlJoinType property determines which records to combine into the results, based on the values of the fields that are linked by the DataItemLink property.  
+
+    By default, the SqlJoinType property is set to **Left Outer Join**.  The remainder of this article desribes the 
+-->
+### Set the DataItemLink Property
+
+The DataItemLink property sets up a reference between one or more columns of the data item tables for combining records. In a query, two data item tables typically will have columns that have values that are common to both tables. For example, the Salesperson table and Sales Header table have the Code column and Salesperson\_Code column in common. To create a link between these two tables, you could add the following value in the DataItemLink property of the **Sales Header** data item.  
+  
+|Field|Reference DataItem|Reference Field|  
+|-----------|------------------------|---------------------|  
+|Salesperson code|Salesperson\_Purchaser|Code|  
+  
+The DataItemLink property sets up "equal to" \(=\) comparison condition between two columns of the data items. When the query is run, the query compares each row of the two data items to find records that having matching values for the columns. Records that have matching column values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the DataItemLinkType property to include records that do not have matching column values. 
+<!--
+The basic steps for linking and joining two data items are as follows:
+
+1. First, two data items are *linked* together by associating a field in the table of one data item with a common field in the table of the other data item.
+2. Then, records of the tables are combined into a dataset by *joining* the data items. There are several different join types that control which records that included in the resulting dataset depending on whether or not the values of the linked fields match.
+
+> [!TIP]
+> The concept of linking and joining data items in AL is similar to Join clauses in SQL Select statements on tables in SQL Server. If you are familiar with SQL Joins, when describing links and joins in AL, this article provides the equivalent SQL SELECT statement in most cases.-->
+
+### Set the SqlJoinType Property
+
+The SqlJoinType property the determines which records to combine into the results, based on the values of the fields that are linked by the DataItemLink property. You use this property to limit the records that are included in the resulting dataset based on the specified conditions. By default, the SqlJoinType property is **Left Outer Join**.
+
+### Linking More Than Two Data Items  
+
+A query links data items in the order that they appear in AL, starting from the top and then working downward. When you have more than two data items, lower data items are linked to the resulting dataset of the linked data items above it. For example, when you link the first two data items, the query generates a dataset. When you add another data item, the data item is linked to the dataset of the first linked pair of data items, where it applies the conditions that are specified by its DataItemLink property and DataItemLinkType property. The following illustration shows an example with three data items.  
+  
+ ![Query Designer showing 3 data item links](media/NAV_Query_Designer_Sample_3_DataItemLink.png "NAV\_Query\_Designer\_Sample\_3\_DataItemLink")  
+  
+This pattern continues for each additional data item.  
+  
+### Left and Right Data Item Designation and SQL join statements
+
+The concept of linking and joining data items in AL is similar to *join* clauses in SQL Select statements on tables in SQL Server. In SQL join statements, tables are designated as either left or right. In AL query objects, because data items are arranged vertically, when joining data items, the *left* corresponds to the upper data item (table) and *right* corresponds to the data item (table).
+
+To help you understand links and join in AL, if you are already familiar with SQL Joins, this article provides the equivalent SQL SELECT statement in most cases.
+
+
 
 <!--   
  ![Query Designer inner join](media/QueryJoin_InnerJoin.png "QueryJoin\_InnerJoin")  
@@ -222,7 +226,7 @@ A query links data items in the order that they appear in Query Designer, starti
   
 ### Dataset Example
 
- The following table shows the resulting dataset for an Inner Join between the Sales Header table and Salesperson/Purchaser table in sample query.  
+The following table shows the resulting dataset for an Inner Join between the Sales Header table and Salesperson/Purchaser table in sample query.  
   
 |Name|Sell\_to\_Customer\_No|Sell\_to\_Customer\_Name|  
 |----------|----------------------------|------------------------------|  
@@ -230,7 +234,7 @@ A query links data items in the order that they appear in Query Designer, starti
 |Debra|2000|Blanemark|  
 |John|3000|Candoxy|  
   
- The records for **Bart** in the Salesperson table and **New Concepts** in the Sales Header table do not have matching records in the opposing table, so they are excluded from the resulting dataset.  
+The records for **Bart** in the Salesperson table and **New Concepts** in the Sales Header table do not have matching records in the opposing table, so they are excluded from the resulting dataset.  
   
 ### SQL SELECT Statement for Inner Join  
  To specify an inner join with an SQL statement, you can do either of the following:  

@@ -40,7 +40,7 @@ The following examples show how you can use queries in your [!INCLUDE[d365fin_lo
 
 ## Creating a query object
 
-A query object is comprised mainly of two different types of elements: dataitems and columns. A dataitem specifies the table to retrieve records from. A column specifies a field of the table to include in the resulting dataset of a query. The basic steps to create a query object are:
+A query object is comprised mainly of two different types of elements: dataitems and columns. A dataitem specifies the table to retrieve records from. A column specifies a field of the table to include in the resulting dataset of a query. The basic steps to create a query object are as follows:
 
 1. Add the `query` keyword, followed by the `elements` control.
 2. Build the dataset by adding `dataitem` controls and `column` controls withing the `elements` control.
@@ -49,6 +49,8 @@ A query object is comprised mainly of two different types of elements: dataitems
 3. When you have specified the dataitem and column elements, create links and joins between the `dataitem` elements.
 
    Dataitem links and joins determine which records to include in the dataset based on the values of a field common between dataitems. For more information, see [Query Data Item Links and Joins](devenv-query-links-joins.md).
+
+The following shows the basic structure of a query object.
 
 ```
 query ID Name
