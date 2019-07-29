@@ -110,7 +110,7 @@ query 50121 "Customer_Sales_Quantity"
 
 The following table represents a simplified version of the resulting dataset for the sample query.  
   
-|Customer number|Customer name|Quantity|  
+|Customer_Number|Customer_Name|Qty|  
 |---------------------|-------------------|--------------|  
 |20000|Selangorian Ltd.|200|  
 |30000|Blanemark Hifi|150|  
@@ -119,7 +119,7 @@ The following table represents a simplified version of the resulting dataset for
 |20000|Selangorian Ltd.|400|  
 |30000|Blanemark Hifi|350|  
   
-In its current state, the query does not specify the Method property so it does implement aggregate method. The following sections explain how you can modify the query to implement the different totals methods.  
+In its current state, the query does not specify the Method property so it does implement aggregate method. The following sections explain how you can modify the query to implement the different aggregate methods by simple changing the value of the `Method` property.  
   
 ##  <a name="Sum"></a> Sum
 
@@ -127,15 +127,16 @@ The `Sum` method adds the values of all fields for the specified column within a
 
 ```
 ...
-                column(Qty; Quantity)
-                {
-                   Method = Sum;
-                }
+column(Qty; Quantity)
+{
+    Method = Sum;
+}
+...
 ```
   
 The following table illustrates the resulting dataset for the query.  
   
-|Customer number|Customer name|Quantity|  
+|Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|--------------|  
 |20000|Selangorian Ltd.|900|  
 |30000|Blanemark Hifi|500|  
@@ -149,15 +150,16 @@ The following table illustrates the resulting dataset for the query.
 
 ```
 ...
-                column(Qty; Quantity)
-                {
-                   Method = Average;
-                }
+column(Qty; Quantity)
+{
+    Method = Average;
+}
+...
 ``` 
   
  The following table illustrates the resulting dataset for the query.  
   
-|Customer number|Customer name|Quantity|  
+|Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|--------------|  
 |20000|Selangorian Ltd.|300|  
 |30000|Blanemark Hifi|250|  
@@ -169,15 +171,16 @@ The following table illustrates the resulting dataset for the query.
 
 ```
 ...
-                column(Qty; Quantity)
-                {
-                   Method = Min;
-                }
+column(Qty; Quantity)
+{
+    Method = Min;
+}
+...
 ``` 
   
  The following table illustrates the resulting dataset for the query.  
   
-|Customer number|Customer name|Quantity|  
+|Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|--------------|  
 |20000|Selangorian Ltd.|200|  
 |30000|Blanemark Hifi|150|  
@@ -189,16 +192,17 @@ The following table illustrates the resulting dataset for the query.
 
 ```
 ...
-                column(Qty; Quantity)
-                {
-                   Method = Min;
-                }
+column(Qty; Quantity)
+{
+    Method = Min;
+}
+...
 ``` 
   
   
 The following table illustrates the resulting dataset for the query.  
   
-|Customer number|Customer name|Quantity|  
+|Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|--------------|  
 |20000|Selangorian Ltd.|400|  
 |30000|Blanemark Hifi|350|  
@@ -222,7 +226,7 @@ To set up a `Count` method in the sample query, the `column` element definition 
 
 The following table illustrates the resulting dataset for the query.  
   
-|Customer number|Customer name|Count|  
+|Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|-----------|  
 |20000|Selangorian Ltd.|3|  
 |30000|Blanemark Hifi|2|  
