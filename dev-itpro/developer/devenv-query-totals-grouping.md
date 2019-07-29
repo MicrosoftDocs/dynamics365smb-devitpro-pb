@@ -23,12 +23,12 @@ In a query object, you use aggregate methods to perform a calculation on the fie
   
 ## Set up an aggregate method for a query column
 
-To set up an aggregate on a column, you set the `Method` property on a column. that divides the query result into groups of rows, usually for the purpose of performing one or more aggregations on each group. The SELECT statement returns one row per group.Records in the resulting dataset are grouped by columns that have similar values for the column are grouped together and the aggregate method is applied against the records in the group. A summary value is calculated and returned in a single row for the group in the dataset. 
+To set up an aggregate on a column, you set the `Method` property on a column. that divides the query result into groups of rows, usually for the purpose of performing one or more aggregations on each group. The SELECT statement returns one row per group. Records in the resulting dataset are grouped by columns that have similar values for the column are grouped together and the aggregate method is applied against the records in the group. A summary value is calculated and returned in a single row for the group in the dataset. 
   
 > [!IMPORTANT]  
 >  Except for the `Count` method, you can only use a totals method \(`Sum`, `Average`, `Min`, and `Max`\) on a field that has a numeric data type of `Decimal`, `Integer`, `BigInteger`, or `Duration`.  
   
- The following illustration shows a query that links the **Customer** table and the **Sales Line** table and retrieves the total number of items for each customer. The query is grouped by the **No.** and **Name** columns.  
+The following illustration shows a query that links the **Customer** table and the **Sales Line** table and retrieves the total number of items for each customer. The query is grouped by the **No.** and **Name** columns.  
 
 ```
 query 50123 QueryTotal
@@ -56,30 +56,22 @@ query 50123 QueryTotal
 
                 column(Qty; Quantity)
                 {
-                    // Sets the Quantity field be the sum of grouped columns
+                    // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min
                     Method = Sum;
-                    // Sets the Quantity field be the sum of grouped columns
-                    //Method = Average;
-                    // Sets the Quantity field be the sum of grouped columns
-                    //Method = Max;
-                    // Sets the Quantity field be the sum of grouped columns
-                    //Method = Min;
                 }
             }
         }
     }
 }
 
-``` 
- ![Query with Sum column](media/Query_WalkthroughTotals.png "Query\_WalkthroughTotals")  
-  
+```
 
 The totals methods and grouping correspond to using aggregate functions and the GROUP BY clause, respectively, in SQL SELECT statements. For more information, see [Creating Queries with Totals in SQL](devenv-query-totals-grouping.md#SQL).  
   
- The grouping concept is further explained in the examples for each totals method in the following sections.  
+The grouping concept is further explained in the examples for each method in the following sections.  
   
-## Sample Query  
- The sample query retrieves the quantity of items and customer for each open sales order from the [!INCLUDE[demolong](includes/demolong_md.md)]. The query links table 18 Customer with table 37 Sales Line. The following illustration shows the query setup in Query Designer.  
+## Sample Query
+ The sample query retrieves the quantity of items and customer for each open sales order from the [!INCLUDE[demolong](includes/demolong_md.md)]. The query links table **18 Customer** with table **37 Sales Line**. The following illustration shows the query setup in Query Designer.  
   
  ![Query Designer for Customer Sales query](media/NAV_Query_Designer_CustomerSales_Clip.png "NAV\_Query\_Designer\_CustomerSales\_Clip")  
   
