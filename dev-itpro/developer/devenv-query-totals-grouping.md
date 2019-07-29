@@ -57,7 +57,7 @@ query 50123 QueryTotal
                 column(Qty; Quantity)
                 {
                     // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min
-                    Method = Sum;
+                    // Method = Sum;
                 }
             }
         }
@@ -71,11 +71,45 @@ The totals methods and grouping correspond to using aggregate functions and the 
 The grouping concept is further explained in the examples for each method in the following sections.  
   
 ## Sample Query
- The sample query retrieves the quantity of items and customer for each open sales order from the [!INCLUDE[demolong](includes/demolong_md.md)]. The query links table **18 Customer** with table **37 Sales Line**. The following illustration shows the query setup in Query Designer.  
+
+The following sample query object retrieves the quantity of items per customer for each open sales order. The query links table **18 Customer** with table **37 Sales Line**.  
   
- ![Query Designer for Customer Sales query](media/NAV_Query_Designer_CustomerSales_Clip.png "NAV\_Query\_Designer\_CustomerSales\_Clip")  
-  
- The following table represents a simplified version of the resulting dataset for the sample query.  
+```
+query 50123 QueryTotal
+{
+    QueryType = Normal;
+    // Sorts the results in descending order
+    OrderBy = descending(Quantity);
+
+    elements
+    {
+        dataitem(C; Customer)
+        {
+            column(No_; "No.")
+            {
+            }
+
+            column(Name; Name)
+            {
+            }
+
+            dataitem(SL; "Sales Line")
+            {
+                DataItemLink = "Sell-to Customer No." = c."No.";
+                SqlJoinType = InnerJoin;
+
+                column(Qty; Quantity)
+                {
+                    // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min, or Count
+                    // Method = Sum;
+                }
+            }
+        }
+    }
+}
+```
+
+The following table represents a simplified version of the resulting dataset for the sample query.  
   
 |Customer number|Customer name|Quantity|  
 |---------------------|-------------------|--------------|  
@@ -86,15 +120,21 @@ The grouping concept is further explained in the examples for each method in the
 |20000|Selangorian Ltd.|400|  
 |30000|Blanemark Hifi|350|  
   
- In its current state, the query does not implement a totals method. The following sections explain how you can modify the query to implement the different totals methods.  
+In its current state, the query does not specify the Method property so it does implement aggregate method. The following sections explain how you can modify the query to implement the different totals methods.  
   
 ##  <a name="Sum"></a> Sum
 
-The `Sum` method adds the values of all fields for the specified column within a group. To set up a Sum method on the **Quantity** column of the sample query, set the MethodType property to **Totals** and the Method property to **Sum**. The name of the **Quantity** column automatically changes to **Sum\_Quantity** and the query is automatically grouped by the **No.** and **Name** columns. The following illustration shows the query in Query Designer.  
+The `Sum` method adds the values of all fields for the specified column within a group. To set up a `Sum` method on the **Quantity** column of the sample query, set the `Method` property to `Sum`. The query is automatically grouped by the **No.** and **Name** columns. 
+
+```
+...
+                column(Qty; Quantity)
+                {
+                   Method = Sum;
+                }
+```
   
- ![Query with Sum column](media/Query_WalkthroughTotals.png "Query\_WalkthroughTotals")  
-  
- The following table illustrates the resulting dataset for the query.  
+The following table illustrates the resulting dataset for the query.  
   
 |Customer number|Customer name|Quantity|  
 |---------------------|-------------------|--------------|  
@@ -104,8 +144,17 @@ The `Sum` method adds the values of all fields for the specified column within a
   
  For step-by-step instructions about how to create this query, see [Walkthrough: Creating a Query That Uses a Totaling Method and Sorting](Walkthrough--Creating-a-Query-That-Uses-a-Totaling-Method-and-Sorting.md).  
   
-##  <a name="Average"></a> Average  
- The Average method calculates the average value of the fields in the column within a group. To set up an Average method on the **Quantity** column of the sample query, set the MethodType property to **Totals** and the Method property to **Sum**. The name of the **Quantity** column automatically changes to **Ave\_Quantity** and the query is automatically grouped by the **No.** and **Name** columns.  
+##  <a name="Average"></a> Average
+
+ The `Average` method calculates the average value of the fields in the column within a group. To set up an Average method on the **Quantity** column of the sample query, set the `Method` property to `Average`. The query is automatically grouped by the **No.** and **Name** columns:
+
+```
+...
+                column(Qty; Quantity)
+                {
+                   Method = Average;
+                }
+``` 
   
  The following table illustrates the resulting dataset for the query.  
   
@@ -115,8 +164,17 @@ The `Sum` method adds the values of all fields for the specified column within a
 |30000|Blanemark Hifi|250|  
 |40000|Deerfield Graphics|250|  
   
-##  <a name="Minimum"></a> Min  
- The Min method retrieves the lowest value of fields in the column within a group. To set up a Min method on the **Quantity** column of the sample query, set the MethodType property to **Totals** and the Method property to **Min**. The name of the **Quantity** column automatically changes to **Min\_Quantity** and the query is automatically grouped by the **No.** and **Name** columns.  
+##  <a name="Minimum"></a> Min
+
+ The `Min` method retrieves the lowest value of fields in the column within a group. To set up a `Min` method on the **Quantity** column of the sample query, set the `Method` property to `Min`. The name of the **Quantity** column automatically changes to **Min\_Quantity** and the query is automatically grouped by the **No.** and **Name** columns:
+
+```
+...
+                column(Qty; Quantity)
+                {
+                   Method = Min;
+                }
+``` 
   
  The following table illustrates the resulting dataset for the query.  
   
@@ -126,10 +184,20 @@ The `Sum` method adds the values of all fields for the specified column within a
 |30000|Blanemark Hifi|150|  
 |40000|Deerfield Graphics|250|  
   
-##  <a name="Maximum"></a> Max  
- The Min method retrieves the highest value of fields in the column within a group. To set up a Min method on the **Quantity** column of the sample query, set the MethodType property to **Totals** and the Method property to **Max**. The name of the **Quantity** column automatically changes to **Max\_Quantity** and the query is automatically grouped by the **No.** and **Name** columns.  
+##  <a name="Maximum"></a> Max
+
+ The `Max` method retrieves the highest value of fields in the column within a group. To set up a `Max` method on the **Quantity** column of the sample query, set the `Method` property to `Max`. The name of the **Quantity** column automatically changes to **Max\_Quantity** and the query is automatically grouped by the **No.** and **Name** columns:
+
+```
+...
+                column(Qty; Quantity)
+                {
+                   Method = Min;
+                }
+``` 
   
- The following table illustrates the resulting dataset for the query.  
+  
+The following table illustrates the resulting dataset for the query.  
   
 |Customer number|Customer name|Quantity|  
 |---------------------|-------------------|--------------|  
@@ -137,21 +205,23 @@ The `Sum` method adds the values of all fields for the specified column within a
 |30000|Blanemark Hifi|350|  
 |40000|Deerfield Graphics|250|  
   
-##  <a name="Count"></a> Count  
- The Count method returns the number of records from the data item table that comprise a group in the dataset. Unlike the other totals methods, the Count method is not associated with a specific column. Records are identified and counted based on the primary key of the data item table. Referring to the sample query, you can use a Count method to get the number of open sales orders per customer. To set up a Count method in the sample query, do the following:  
+##  <a name="Count"></a> Count
+
+The `Count` method returns the number of records from the data item table that comprise a group in the dataset. Unlike the other aggregation methods, the `Count` method is not associated with a specific column. Records are identified and counted based on the primary key of the data item table. Referring to the sample query, you can use a `Count` method to get the number of open sales orders per customer.
+
+To set up a `Count` method in the sample query, the `column` element definition cannot include a source table; only a name. Therefore, you can delete the reference to the `Quantity` field in the `column(Qty; Quantity)` element and set the `Method`property to `Count`:  
+
   
-1.  Delete the **Quantity** column because the Count method is not associated with a specific column.  
+```
+...
+                column(Qty)
+                {
+                   Method = Count;
+                }
   
-    > [!NOTE]  
-    >  When using the **Count** method, the [DataSource Property](DataSource-Property.md) must be blank.  
-  
-2.  On a blank line under the data item for Sales Lines, set the MethodType property to **Totals** and the Method property to **Count**. The name of the new column automatically changes to **Count\_** and the query is automatically grouped by the **No.** and **Name** columns.  
-  
-     Query Designer will look similar to the following illustration.  
-  
-     ![Query Designer for counting Customer Sales](media/NAV_Query_CustomerSales_Count_Clip.png "NAV\_Query\_CustomerSales\_Count\_Clip")  
-  
- The following table illustrates the resulting dataset for the query.  
+```
+
+The following table illustrates the resulting dataset for the query.  
   
 |Customer number|Customer name|Count|  
 |---------------------|-------------------|-----------|  
@@ -177,5 +247,5 @@ GROUP BY Customer."No.", Customer.Name
 ## See Also
 
 [Walkthrough: Creating a Query That Uses a Totaling Method and Sorting](Walkthrough--Creating-a-Query-That-Uses-a-Totaling-Method-and-Sorting.md)  
-[Method Property](Method-Property.md)  
+[Method Property](properties/devenv-Method-Property.md)  
 [Aggregate Functions (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql)  
