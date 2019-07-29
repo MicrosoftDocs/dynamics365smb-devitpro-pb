@@ -23,29 +23,29 @@ In a query object, you use aggregate methods to perform a calculation on the fie
   
 ## Set up an aggregate method for a query column
 
-To set up an aggregate on a column, you set the `Method` property on a column. that divides the query result into groups of rows, usually for the purpose of performing one or more aggregations on each group. The SELECT statement returns one row per group. Records in the resulting dataset are grouped by columns that have similar values for the column are grouped together and the aggregate method is applied against the records in the group. A summary value is calculated and returned in a single row for the group in the dataset. 
+To set up an aggregate on a column, you set the column's `Method` property. that divides the query result into groups of rows, usually for the purpose of performing one or more aggregations on each group. The SELECT statement returns one row per group. Records in the resulting dataset are grouped by columns that have similar values for the column are grouped together and the aggregate method is applied against the records in the group. A summary value is calculated and returned in a single row for the group in the dataset. 
   
 > [!IMPORTANT]  
 >  Except for the `Count` method, you can only use a totals method \(`Sum`, `Average`, `Min`, and `Max`\) on a field that has a numeric data type of `Decimal`, `Integer`, `BigInteger`, or `Duration`.  
   
-The following illustration shows a query that links the **Customer** table and the **Sales Line** table and retrieves the total number of items for each customer. The query is grouped by the **No.** and **Name** columns.  
+The following illustration shows a query that links the **Customer** table and the **Sales Line** table and retrieves the total number of line items in every sales order for each customer. The query is grouped by the **No.** and **Name** columns.  
 
 ```
-query 50123 QueryTotal
+query 50101 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
     // Sorts the results in descending order
-    OrderBy = descending(Quantity);
+    OrderBy = descending(Qty);
 
     elements
     {
         dataitem(C; Customer)
         {
-            column(No_; "No.")
+            column(Customer_Number; "No.")
             {
             }
 
-            column(Name; Name)
+            column(Customer_Name; Name)
             {
             }
 
@@ -57,13 +57,12 @@ query 50123 QueryTotal
                 column(Qty; Quantity)
                 {
                     // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min
-                    // Method = Sum;
+                    //Method = Sum;
                 }
             }
         }
     }
 }
-
 ```
 
 The totals methods and grouping correspond to using aggregate functions and the GROUP BY clause, respectively, in SQL SELECT statements. For more information, see [Creating Queries with Totals in SQL](devenv-query-totals-grouping.md#SQL).  
@@ -72,24 +71,24 @@ The grouping concept is further explained in the examples for each method in the
   
 ## Sample Query
 
-The following sample query object retrieves the quantity of items per customer for each open sales order. The query links table **18 Customer** with table **37 Sales Line**.  
+The following sample query object retrieves the quantity of items the total number of line items in every sales order for each customer. The query links the **Customer** table and the **Sales Line** table.  
   
 ```
-query 50123 QueryTotal
+query 50121 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
     // Sorts the results in descending order
-    OrderBy = descending(Quantity);
+    OrderBy = descending(Qty);
 
     elements
     {
         dataitem(C; Customer)
         {
-            column(No_; "No.")
+            column(Customer_Number; "No.")
             {
             }
 
-            column(Name; Name)
+            column(Customer_Name; Name)
             {
             }
 
@@ -100,7 +99,7 @@ query 50123 QueryTotal
 
                 column(Qty; Quantity)
                 {
-                    // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min, or Count
+                    // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min
                     // Method = Sum;
                 }
             }

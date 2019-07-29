@@ -35,7 +35,7 @@ The Salesperson/Purchaser table contains a list of salespersons. Each salesperso
 
 The Sales Header table contains a list of sales orders. Each sales order has a unique number, includes the name of the customer to sell to, and is assigned to a salesperson by the **Salesperson\_Code** column. The following is a simplified version of the Sales Header table for illustration purposes. 
   
-|No|Sell\_to\_Customer\_Name|Salesperson\_Code|  
+|No.|Sell-to Customer Name|Salesperson Code|  
 |--------|------------------------------|-----------------------|  
 |1000|Autohaus|AA|  
 |2000|Blanemark|DD|  
@@ -44,7 +44,7 @@ The Sales Header table contains a list of sales orders. Each sales order has a u
   
 ### Sample Query
 
-The following query object links the Sale Header table with the Salesperson/Purchaser table on the **Salesperson\_Code** and **Code** fields, as specified by the DataItemLink property. In the example, the SQLJoinType property is set to **InnerJoin**.
+The following query object links the **Sale Header** table with the Salesperson/Purchaser table on the **Salesperson\_Code** and **Code** fields, as specified by the DataItemLink property. In the example, the SQLJoinType property is set to **InnerJoin**.
 
 ```
 query 50100 "Sample Query"
@@ -56,7 +56,7 @@ query 50100 "Sample Query"
     {
         dataitem(Salesperson_Purchaser; "Salesperson/Purchaser")
         {
-            column(Name; Name)
+            column(Salesperson; Name)
             {
 
             }
@@ -66,11 +66,11 @@ query 50100 "Sample Query"
                 // Change the SqlJoinType value to suit the desired results: LeftOuterJoin, InnerJoin, RighOuterJoin, FullJoin, CrossJoin.
                 SqlJoinType = InnerJoin;
 
-                column(No_; "No.")
+                column(Order_Number; "No.")
                 {
 
                 }
-                column(Sell_to_Customer_No_; "Sell-to Customer No.")
+                column(Sell_to_Customer; "Sell-to Customer Name")
                 {
 
                 }
@@ -135,7 +135,7 @@ query 50100 "Sample Query"
     {
         dataitem(Salesperson_Purchaser; "Salesperson/Purchaser")
         {
-            column(Name; Name)
+            column(Salesperson; Name)
             {
 
             }
@@ -144,17 +144,17 @@ query 50100 "Sample Query"
                 DataItemLink = "Salesperson Code" = Salesperson_Purchaser.Code;
                 SqlJoinType = InnerJoin;
 
-                column(No_; "No.")
+                column(Order_Number; "No.")
                 {
 
                 }
-                column(Sell_to_Customer_No_; "Sell-to Customer No.")
+                column(Sell_to_Customer; "Sell-to Customer Name")
                 {
 
                 }
                 dataitem(Sales_Line; "Sales Line")
                 {
-                    DataItemLink = "Sell-to Customer No." = Sales_Header."Sell-to Customer No."
+                    DataItemLink = "Sell-to Customer No." = Sales_Header."Sell-to Customer No.";
                 }
             }
         }
@@ -260,7 +260,7 @@ A query links data items in the order that they appear in Query Designer, starti
 
 The following table shows the resulting dataset for an `InnerJoin` between the **Sales Header** table and **Salesperson/Purchaser** table in sample query.  
   
-|Name|Sell\_to\_Customer\_No|Sell\_to\_Customer\_Name|  
+|Salesperson|Order_Number|Sell\_to\_Customer|  
 |----------|----------------------------|------------------------------|  
 |Annette|1000|Autohaus|  
 |Debra|2000|Blanemark|  
@@ -303,9 +303,9 @@ A `LeftOuterJoin` resembles the `InnerJoin` except that the resulting dataset se
   
 ### Dataset Example
  
-The following table shows the resulting dataset for a `LeftOuterJoin` between the **Sales Header** table and **Salesperson/Purchaser** table in sample query.  
+The following table shows the resulting dataset for a `LeftOuterJoin` between the **Sales Header** table and **Salesperson/Purchaser** table in sample query.
   
-|Name|No|Sell\_to\_Customer\_Name|  
+|Salesperson|Order_Number|Sell\_to\_Customer|  
 |----------|--------|------------------------------|  
 |Annette|1000|Autohaus|  
 |Bart|null|null|  
@@ -342,7 +342,7 @@ FROM "Salesperson/Purchaser" LEFT OUTER JOIN "Sales Header"
 
 The following table shows the resulting dataset for a `RightOuterJoin` between the **Salesperson/Purchaser** table and **Sales Header** table in the sample query. The **Sales Header** table is considered the right table.  
   
-|Name|No|Sell\_to\_Customer\_Name|  
+|Salesperson|Order_Number|Sell\_to\_Customer|
 |----------|--------|------------------------------|  
 |Annette|1000|Autohaus|  
 |Debra|2000|Blanemark|  
@@ -381,7 +381,7 @@ FROM "Salesperson/Purchaser" RIGHT OUTER JOIN "Sales Header"
 
 The following table shows the resulting dataset for a full outer join between the **Sales Header** table and **Salesperson/Purchaser** table in sample query.  
   
-|Name|No|Sell\_to\_Customer\_Name|  
+|Salesperson|Order_Number|Sell\_to\_Customer|
 |----------|--------|------------------------------|  
 |Annette|1000|Autohaus|  
 |Bart|null|null|  
@@ -410,7 +410,7 @@ FROM "Salesperson/Purchaser" FULL OUTER JOIN "Sales Header"
 
 The following table shows the resulting dataset for a `CrossJoin` between the **Sales Header** table and **Salesperson/Purchaser** table in sample query.  
   
-|Name|No|Sell\_to\_Customer\_Name|  
+|Salesperson|Order_Number|Sell\_to\_Customer|
 |----------|--------|------------------------------|  
 |Annette|1000|Autohaus|  
 |Annette|2000|Blanemark|  
