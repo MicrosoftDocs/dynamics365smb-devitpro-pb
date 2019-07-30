@@ -115,7 +115,7 @@ The `OutputData` method performs the same operations as the `OutputData` method 
 [Filtering Data in Query Objects](devenv-query-filters.md)  
 [SETRANGE Method](methods-auto/query/queryinstance-setrange-method.md)  
 [OPEN Method](methods-auto/query/queryinstance-open-method.md)   
-[TOPNUMBEROFROWS Method](methods-auto/query/queryinstance-topnumberofrows-method)  
+[TOPNUMBEROFROWS Method](methods-auto/query/queryinstance-topnumberofrows-method.md)  
 [API Query Type](devenv-api-querytype.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
