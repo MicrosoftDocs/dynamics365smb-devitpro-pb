@@ -48,7 +48,7 @@ A query object is comprised mainly of two different types of elements: dataitems
     The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add `column` controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add `column` controls as needed. You continue this pattern for additional tables and fields.
 3. When you have specified the dataitem and column elements, create links and joins between the `dataitem` elements.
 
-   Dataitem links and joins determine which records to include in the dataset based on the values of a field common between dataitems. For more information, see [Query Data Item Links and Joins](devenv-query-links-joins.md).
+   Dataitem links and joins determine which records to include in the dataset based on the values of a field common between dataitems. For more information, see [Linking and Joining Data Items](devenv-query-links-joins.md).
 
 The following shows the basic structure of a query object.
 
@@ -165,6 +165,9 @@ query 50102 "Top Customer Overview"
 ``` 
 
 ## See Also
+
+[Linking and Joining Data Items](devenv-query-links-joins.md)  
+[Aggregating Data in Query Objects](devenv-query-total-grouping.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [API Query Type](devenv-api-querytype.md)  

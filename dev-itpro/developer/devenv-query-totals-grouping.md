@@ -215,6 +215,5 @@ GROUP BY Customer."No.", Customer.Name
   
 ## See Also
 
-[Walkthrough: Creating a Query That Uses a Totaling Method and Sorting](Walkthrough--Creating-a-Query-That-Uses-a-Totaling-Method-and-Sorting.md)  
 [Method Property](properties/devenv-Method-Property.md)  
 [Aggregate Functions (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql)  
