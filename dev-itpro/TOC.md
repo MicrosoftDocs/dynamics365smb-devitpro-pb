@@ -246,6 +246,7 @@
 ### [Filtering](developer/devenv-query-filters.md)
 ### [Aggregating Data](developer/devenv-query-totals-grouping.md)
 ### [Retrieving Date Data](developer/devenv-query-retrieve-date-data.md)
+### [Using Queries Instead of Record Variables](developer/devenv-query-using-instead-record-variables.md)
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-universal-app.md)
