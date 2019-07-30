@@ -13,21 +13,27 @@ ms.service: "dynamics365-business-central"
 
 In a query object, you use aggregate methods to perform a calculation on the fields of a column and return the calculated value in the dataset. For example, you can sum all the fields in a column or find the average value. The following table shows the available totals methods.  
   
-|Value|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
-|-----------|---------------------------------------|  
+|Value|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
+|-----|---------------------------------------|
 |[Sum](devenv-query-totals-grouping.md#Sum)|Calculates the sum of the values of the field in the designated column for all records that are selected as part of the grouped set.|  
 |[Average](devenv-query-totals-grouping.md#Average)|Calculates the average value of the field in the designated column for all records that are selected as part of the grouped set.<br /><br /> When averaging fields that have an integer data type \(such as `Integer` or `BigInteger`\), integer division is used. This means that result is not rounded, and the remainder is discarded. For example, 5÷2=2 instead of 2.5 \(or 2 1/2\).|  
 |[Min](devenv-query-totals-grouping.md#Minimum)|Retrieves the lowest value of the field in the designated column for all records that are selected as part of the grouped set.|  
 |[Max](devenv-query-totals-grouping.md#Maximum)|Retrieves the highest value of the field in the designated column for all records that are selected as part of the grouped set.|  
 |[Count](devenv-query-totals-grouping.md#Count)|Returns the number of records that are selected as part of the grouped set.|  
   
-## Set up an aggregate method for a query column
+## Setting up an aggregate method for a query column
 
-To set up an aggregate on a column, you set the column's `Method` property. that divides the query result into groups of rows, usually for the purpose of performing one or more aggregations on each group. The SELECT statement returns one row per group. Records in the resulting dataset are grouped by columns that have similar values for the column are grouped together and the aggregate method is applied against the records in the group. A summary value is calculated and returned in a single row for the group in the dataset. 
-  
-> [!IMPORTANT]  
->  Except for the `Count` method, you can only use a totals method \(`Sum`, `Average`, `Min`, and `Max`\) on a field that has a numeric data type of `Decimal`, `Integer`, `BigInteger`, or `Duration`.  
-  
+Except for the `Count` method, you can only use a totals method \(`Sum`, `Average`, `Min`, and `Max`\) on a field that has a numeric data type of `Decimal`, `Integer`, `BigInteger`, or `Duration`. To set up an aggregate on a column, you set the column's `Method` property.
+
+```
+column(Name; Field)
+{
+    Method = Sum|Average|Min|Max|Count;
+}
+```
+
+Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROPED BY clause in SQL SELECT statements (see [Creating Queries with Totals in SQL](devenv-query-totals-grouping.md#SQL).
+
 The following illustration shows a query that links the **Customer** table and the **Sales Line** table and retrieves the total number of line items in every sales order for each customer. The query is grouped by the **No.** and **Name** columns.  
 
 ```
@@ -56,7 +62,7 @@ query 50101 "Customer_Sales_Quantity"
 
                 column(Qty; Quantity)
                 {
-                    // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min
+                    // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min, or Count
                     //Method = Sum;
                 }
             }
@@ -67,14 +73,14 @@ query 50101 "Customer_Sales_Quantity"
 
 The totals methods and grouping correspond to using aggregate functions and the GROUP BY clause, respectively, in SQL SELECT statements. For more information, see [Creating Queries with Totals in SQL](devenv-query-totals-grouping.md#SQL).  
   
-The grouping concept is further explained in the examples for each method in the following sections.  
+The aggregate methods and grouping are further explained in the following sections.  
   
 ## Sample Query
 
-The following sample query object retrieves the quantity of items the total number of line items in every sales order for each customer. The query links the **Customer** table and the **Sales Line** table.  
+The following sample query object retrieves the number of line items in every sales order for each customer. The query links the **Customer** table and the **Sales Line** table. In its current state, the query does not specify the Method property so it does implement aggregate method.  
   
 ```
-query 50121 "Customer_Sales_Quantity"
+query 50101 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
     // Sorts the results in descending order
@@ -99,8 +105,8 @@ query 50121 "Customer_Sales_Quantity"
 
                 column(Qty; Quantity)
                 {
-                    // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min
-                    // Method = Sum;
+                    // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min, or Count
+                    //Method = Sum;
                 }
             }
         }
@@ -119,7 +125,7 @@ The following table represents a simplified version of the resulting dataset for
 |20000|Selangorian Ltd.|400|  
 |30000|Blanemark Hifi|350|  
   
-In its current state, the query does not specify the Method property so it does implement aggregate method. The following sections explain how you can modify the query to implement the different aggregate methods by simple changing the value of the `Method` property.  
+The following sections explain how you can modify the query to implement the different aggregate methods by simple changing the value of the `Method` property. 
   
 ##  <a name="Sum"></a> Sum
 
@@ -134,7 +140,7 @@ column(Qty; Quantity)
 ...
 ```
   
-The following table illustrates the resulting dataset for the query.  
+Looking at the sample query, you can use `Sum` method to get the total number of items in sales orders for each customer. The following table illustrates the resulting dataset for the query.  
   
 |Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|--------------|  
@@ -157,7 +163,7 @@ column(Qty; Quantity)
 ...
 ``` 
   
- The following table illustrates the resulting dataset for the query.  
+Looking at the sample query, you can use `Average` method to get the average number of items in sales orders for each customer. The following table illustrates the resulting dataset for the query.
   
 |Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|--------------|  
@@ -178,7 +184,7 @@ column(Qty; Quantity)
 ...
 ``` 
   
- The following table illustrates the resulting dataset for the query.  
+Looking at the sample query, you can use `Min` method to get the least number of items in sales orders for each customer. The following table illustrates the resulting dataset for the query. 
   
 |Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|--------------|  
@@ -199,8 +205,7 @@ column(Qty; Quantity)
 ...
 ``` 
   
-  
-The following table illustrates the resulting dataset for the query.  
+Looking at the sample query, you can use `Max` method to get the greatest number of items in sales orders for each customer. The following table illustrates the resulting dataset for the query.  
   
 |Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|--------------|  
@@ -224,7 +229,7 @@ To set up a `Count` method in the sample query, the `column` element definition 
   
 ```
 
-The following table illustrates the resulting dataset for the query.  
+Looking at the sample query, you can use `Count` method the number of sales orders for each customer. The following table illustrates the resulting dataset for the query. 
   
 |Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|-----------|  
