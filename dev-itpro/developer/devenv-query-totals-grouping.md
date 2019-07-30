@@ -34,45 +34,6 @@ column(Name; Field)
 
 Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROPED BY clause in SQL SELECT statements (see [Creating Queries with Totals in SQL](devenv-query-totals-grouping.md#SQL).
 
-The following illustration shows a query that links the **Customer** table and the **Sales Line** table and retrieves the total number of line items in every sales order for each customer. The query is grouped by the **No.** and **Name** columns.  
-
-```
-query 50101 "Customer_Sales_Quantity"
-{
-    QueryType = Normal;
-    // Sorts the results in descending order
-    OrderBy = descending(Qty);
-
-    elements
-    {
-        dataitem(C; Customer)
-        {
-            column(Customer_Number; "No.")
-            {
-            }
-
-            column(Customer_Name; Name)
-            {
-            }
-
-            dataitem(SL; "Sales Line")
-            {
-                DataItemLink = "Sell-to Customer No." = c."No.";
-                SqlJoinType = InnerJoin;
-
-                column(Qty; Quantity)
-                {
-                    // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min, or Count
-                    //Method = Sum;
-                }
-            }
-        }
-    }
-}
-```
-
-The totals methods and grouping correspond to using aggregate functions and the GROUP BY clause, respectively, in SQL SELECT statements. For more information, see [Creating Queries with Totals in SQL](devenv-query-totals-grouping.md#SQL).  
-  
 The aggregate methods and grouping are further explained in the following sections.  
   
 ## Sample Query
