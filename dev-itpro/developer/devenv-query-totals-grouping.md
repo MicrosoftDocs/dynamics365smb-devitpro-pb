@@ -109,7 +109,6 @@ Looking at the sample query, you can use `Sum` method to get the total number of
 |30000|Blanemark Hifi|500|  
 |40000|Deerfield Graphics|250|  
   
- For step-by-step instructions about how to create this query, see [Walkthrough: Creating a Query That Uses a Totaling Method and Sorting](Walkthrough--Creating-a-Query-That-Uses-a-Totaling-Method-and-Sorting.md).  
   
 ##  <a name="Average"></a> Average
 

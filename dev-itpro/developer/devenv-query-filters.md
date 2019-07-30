@@ -13,20 +13,17 @@ ms.service: "dynamics365-business-central"
 
 You specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table that is associated with the query. For a field to be included in the resulting dataset, a field must meet the conditions of the filter.  
 
-There are two ways to apply filters on a query: in the query object or de
-
 ## Different Ways to Filter a Query Dataset
 
-You can set up filters on a field from Query Designer or from C/AL code by using any of the methods that are outlined in the following table.  
+You can set up filters on a field directly in the query object, or you can use the filter methods that are outlined in the following table.  
 
-|Method|Filter|Description|  
+||Filter|Description|  
 |------------|------------|-----------------|  
 |In query object|Filter on a Data item|You can set the DataItemTableFilter property of a data item to filter on a field in the table of the data item. You can apply the filter to any field in the table, not just fields that are defined as columns in the resulting dataset. A data item filter cannot be overwritten from AL code.|  
 ||Filter on a Column|You can set the ColumnFilter property of a column to filter on the source field of the column. A filter on a column can be overwritten by the SETFILTER and SETRANGE methods from AL code.|  
 ||Add a filter row|A filter row lets you add a filter on a field that will not be included in the resulting dataset, but can be changed from AL code. To set up a filter row in Query Designer, you add a row of the type Filter that is set to the field that you want to filter, and then set its ColumnFilter property.. A filter row is like a data item filter except a filter on a filter row can be overwritten by the SETFILTER and SETRANGE methods from C/AL code.|  
-|AL method calls|SETFILTER method|You can call the SETFILTER method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETFILTER method will overwrite any filter that is applied to a column or filter row on the same field by the ColumnFilter property.|  
+|AL filter method calls|SETFILTER method|You can call the SETFILTER method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETFILTER method will overwrite any filter that is applied to a column or filter row on the same field by the ColumnFilter property.|  
 ||SETRANGE method|You can SETRANGE method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETRANGE method will overwrite any filter that is applied to column or filter row on the same field.|  
-
 
 ## Filtering on data items in query object
 
@@ -80,7 +77,7 @@ query 50100 "Customer_Sales_Quantity"
 }
 ```
 
-### Filtering on columns and filter rows in query object
+## Filtering on columns and filter rows in query object
 
 Unlike data item filters, filters on a column or filter row are dynamic and can be overwritten from AL code at runtime by a call to the SETFILTER or SETRANGE method, if the method sets a filter on the same field.  
 
