@@ -18,29 +18,32 @@ In scenarios where you want to read records from multiple tables, it can be a go
 The following AL code shows an example of using record variables to retrieve and handle records from two tables. You could potentially use this code to track item movement. The code uses two record variables, `Item` and `ItemLedgerEntry`, to retrieve the first five records from table **27 Item** and table **32 Item Ledger Entry** where the **Entry Type** field equals **Sale**. The retrieved records are passed to and handled by the `OutputData` method.  
 
 ```  
-repeat
-    PrevDate := 0D;
-    TotalQty := 0;
-    ItemLedgerEntry.SETCURRENTKEY("Item No.", "Posting Date");
-    ItemLedgerEntry.SETRANGE("Item No.", Item."No.");
-    ItemLedgerEntry.SETRANGE("Entry Type",
-        ItemLedgerEntry."Entry Type"::Sale);
-    if ItemLedgerEntry.FINDSET then
+begin
+    count := 0;
+    if Item.FINDSET then
         repeat
-            if (ItemLedgerEntry."Posting Date" <> PrevDate) and (PrevDate <> 0D) then begin
+            PrevDate := 0D;
+            TotalQty := 0;
+            ItemLedgerEntry.SETCURRENTKEY("Item No.", "Posting Date");
+            ItemLedgerEntry.SETRANGE("Item No.", Item."No.");
+            ItemLedgerEntry.SETRANGE("Entry Type",
+                ItemLedgerEntry."Entry Type"::Sale);
+            if ItemLedgerEntry.FINDSET then
+                repeat
+                    if (ItemLedgerEntry."Posting Date" <> PrevDate) and (PrevDate <> 0D) then begin
+                        OutputData(1, Item."No.", Item.Description, PrevDate, -TotalQty);
+                        TotalQty := 0;
+                        count := count + 1;
+                    end;
+                    PrevDate := ItemLedgerEntry."Posting Date";
+                    TotalQty := TotalQty + ItemLedgerEntry.Quantity;
+                until (ItemLedgerEntry.NEXT = 0) or (count >= 4);
+            if PrevDate <> 0D then begin
                 OutputData(1, Item."No.", Item.Description, PrevDate, -TotalQty);
-                TotalQty := 0;
                 count := count + 1;
             end;
-            PrevDate := ItemLedgerEntry."Posting Date";
-            TotalQty := TotalQty + ItemLedgerEntry.Quantity;
-        until (ItemLedgerEntry.NEXT = 0) or (count >= 4);
-    if PrevDate <> 0D then begin
-        OutputData(1, Item."No.", Item.Description, PrevDate, -TotalQty);
-        count := count + 1;
-    end;
-until (Item.NEXT = 0) or (count >= 4);
-
+        until (Item.NEXT = 0) or (count >= 4);
+end;
 ```  
 
 ## Corresponding Query Implementation  
