@@ -11,91 +11,150 @@ ms.service: "dynamics365-business-central"
 ---
 # Filtering in Query Objects
 
-You can specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table that is associated with the query. For a field to be included in the resulting dataset, a field must meet the conditions of the filter.  
+You specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table that is associated with the query. For a field to be included in the resulting dataset, a field must meet the conditions of the filter.  
+
+There are two ways to apply filters on a query: in the query object or de
 
 ## Different Ways to Filter a Query Dataset
 
- You can set up filters on a field from Query Designer or from C/AL code by using any of the methods that are outlined in the following table.  
+You can set up filters on a field from Query Designer or from C/AL code by using any of the methods that are outlined in the following table.  
 
 |Method|Filter|Description|  
 |------------|------------|-----------------|  
-|In query object|Filter on a Data item|You can set the DataItemTableFilter property of a data item to filter on a field in the table of the data item. You can apply the filter to any field in the table, not just fields that are defined as columns in the resulting dataset. A data item filter cannot be overwritten from C/AL code.|  
-||Filter on a Column|You can set the ColumnFilter property of a column to filter on the source field of the column. A filter on a column can be overwritten by the SETFILTER and SETRANGE methods from C/AL code.|  
-||Filter on a Filter row|A filter row lets you add a filter on a field that will not be included in the resulting dataset, but can be changed from C/AL code. To set up a filter row in Query Designer, you add a row of the type Filter that is set to the field that you want to filter, and then set its ColumnFilter property.. A filter row is like a data item filter except a filter on a filter row can be overwritten by the SETFILTER and SETRANGE methods from C/AL code.|  
-|FILTER method calls|SETFILTER method|You can call the SETFILTER method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETFILTER method will overwrite any filter that is applied to a column or filter row on the same field by the ColumnFilter property.|  
+|In query object|Filter on a Data item|You can set the DataItemTableFilter property of a data item to filter on a field in the table of the data item. You can apply the filter to any field in the table, not just fields that are defined as columns in the resulting dataset. A data item filter cannot be overwritten from AL code.|  
+||Filter on a Column|You can set the ColumnFilter property of a column to filter on the source field of the column. A filter on a column can be overwritten by the SETFILTER and SETRANGE methods from AL code.|  
+||Add a filter row|A filter row lets you add a filter on a field that will not be included in the resulting dataset, but can be changed from AL code. To set up a filter row in Query Designer, you add a row of the type Filter that is set to the field that you want to filter, and then set its ColumnFilter property.. A filter row is like a data item filter except a filter on a filter row can be overwritten by the SETFILTER and SETRANGE methods from C/AL code.|  
+|AL method calls|SETFILTER method|You can call the SETFILTER method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETFILTER method will overwrite any filter that is applied to a column or filter row on the same field by the ColumnFilter property.|  
 ||SETRANGE method|You can SETRANGE method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETRANGE method will overwrite any filter that is applied to column or filter row on the same field.|  
 
-## Filtering From Query Designer  
- You can set up filters from Query Designer on data items, columns, and filter rows. You can set up multiple filters on the same field in addition to different fields.  
 
-### Filtering with Data Items in Query Designer  
- To specify filters on a data item in Query Designer, you set the [DataItemTableFilter Property](DataItemTableFilter-Property.md) of a data item. You can apply a filter on any field in a table, not just those fields that are represented by a column in the query.  
+## Filtering on data items in query object
 
- The following illustration shows Query Designer for a query that links table 18 Customer and table 37 Sales Line. The illustration includes the **Properties** window for the Sales Line data item that sets a filter to include only sales lines that have a quantity greater than 10.  
+To specify filters on a data item, you set the [DataItemTableFilter property](properties/devenv-dataitemtablefilter-property.md) of a data item. `DataItemTableFilter` property has the following syntax:
 
- ![Query inner join, filters on a field](media/QueryFilters_Field.png "QueryFilters\_Field")  
+```
+DataItemTableFilter = String;
+```
 
- The following illustration shows the resulting dataset for the query.  
+Where `String` is the filter expression.
 
- ![Result of a query that filters on a field](media/QueryFilters_Field_Run.png "QueryFilters\_Field\_Run")  
+You can apply a filter on any field in a table, not just those fields that are represented by a column in the query object.
 
- A data item filter is static which means that it cannot be overwritten by a filter on a column or filter row in Query Designer or by the SETFILTER or SETRANGE methods in C/AL code. If one of these filter types is applied to the same field as the data item filter, then the filters are combined. In logical terms, this combination corresponds to an "AND" operation. For example, if the data item filter applies a filter on a field to include values greater than 10 \(>10\) and a column filter applies a filter on the same field to include values less than fifty \(\<50\), then the resultant filter includes values that are greater than 10 and less than fifty \(10\< value \<50\).  
+A data item filter is static which means that it cannot be overwritten by a filter on a column or filter row in Query Designer or by the SETFILTER or SETRANGE methods in AL code. If one of these filter types is applied to the same field as the data item filter, then the filters are combined. In logical terms, this combination corresponds to an "AND" operation. For example, if the data item filter applies a filter on a field to include values greater than 10 \(>10\) and a column filter applies a filter on the same field to include values less than fifty \(\<50\), then the resultant filter includes values that are greater than 10 and less than fifty \(10\< value \<50\).  
 
  The DataItemTableFilter property corresponds to a WHERE clause in an SQL SELECT statement. For more information, see [Equivalent SQL SELECT Statements for Query Filters](Understanding-Query-Filters.md#SQL).  
 
-### Filtering with Columns and Filter Rows From Query Designer  
- Unlike data item filters, filters on a column or filter row are dynamic and can be overwritten from C/AL code at runtime from a call to the SETFILTER or SETRANGE method that sets a filter on the same field.  
+### Example
 
- You use filters on a column to filter on fields that are included in the dataset. To apply a filter on a column, you set the [ColumnFilter Property](ColumnFilter-Property.md) of the column. You can apply a filter on any column, including aggregated columns that are applied a totals method by the [Method Property](Method-Property.md).  
+The following query object links table **18 Customer** and table **37 Sales Line** to get the number of line items in each sales for customers. The `DataItemTableFilter` property is used to only include rows in which the number of line items is greater than 10.  
 
- You use filters on a filter row to filter on fields that you do not want included in the dataset. To set up a filter row, you add a row of the type Filter in Query Designer that specifies a field, and then set its ColumnFilter property. For more information about how to set up filter rows, see [How to: Set Up Filter Rows in Query Designer](How-to--Set-Up-Filter-Rows-in-Query-Designer.md).  
+```
+query 50100 "Customer_Sales_Quantity"
+{
+    QueryType = Normal;
 
- The following illustration shows Query Designer for a query that links the Customer table and the Sales Line table and retrieves the total quantity of items ordered for each customer. The query includes the following filters, as shown by the **Properties** windows in the illustration.  
+    elements
+    {
+        dataitem(C; Customer)
+        {
+            column(Customer_Number; "No.")
+            {
+            }
 
--   A filter on the **Sum\_Quantity** column to include only records from the Sales Line table where the total quantity is less than 50.  
+            column(Customer_Name; Name)
+            {
+            }
 
--   A filter on filter row  for the **Location Code** field of the Sales Line table that includes only records where the location code is WHITE.  
+            dataitem(SL; "Sales Line")
+            {
+                DataItemLink = "Sell-to Customer No." = c."No.";
+                SqlJoinType = InnerJoin;
+                DataItemTableFilter = Quantity = filter(> 10);
 
- ![Query example showing column filters](media/NAV_Query_ColumnFilter_Example.png "NAV\_Query\_ColumnFilter\_Example")  
+                column(Qty; Quantity)
+                {
+                }
+            }
+        }
+    }
+}
+```
 
- The following illustration shows the resulting dataset for the query.  
+### Filtering on columns and filter rows in query object
 
- ![Shows the rendered dataset of a filtered query](media/NAV_Query_Column_Filters_Example_About_Window.png "NAV\_Query\_Column\_Filters\_Example\_About\_Window")  
+Unlike data item filters, filters on a column or filter row are dynamic and can be overwritten from AL code at runtime by a call to the SETFILTER or SETRANGE method, if the method sets a filter on the same field.  
 
- In an SQL SELECT statement, filters on a column or filter row that do not apply a totals method, as with the Location Code filter row in the example, would correspond to a WHERE clause. Filters on a columns or filter rows that do apply a totals method, as with the Quantity column in the example, would correspond to a HAVING clause. For more information, see [Equivalent SQL SELECT Statements for Query Filters](Understanding-Query-Filters.md#SQL).  
+You use filters on a column to filter on fields that are included in the dataset. To apply a filter on a column, you set the [ColumnFilter Property](ColumnFilter-Property.md) of the column.  You can apply a filter on any column, including aggregated columns that are applied an aggregate method by the [Method Property](Method-Property.md).  The `ColumnFilter` property has the following syntax:
 
-###  <a name="SQL"></a> Equivalent SQL SELECT Statements for Query Filters  
- If you are familiar with SQL, then it is helpful to know how filtering in [!INCLUDE[prodshort](includes/prodshort.md)] queries relates to SQL statements. To specify filters in an SQL statement, you use WHERE and HAVING clauses. The WHERE clause filters on fields. The HAVING clause filters on the results that have aggregated values as applied by of a totals method.  
+```
+ColumnFilter = String;
+```
 
- The following example shows the corresponding SQL SELECT statement for the previous data item filter example that links the Customer and Sales Line tables and filters on the Quantity field.  
+where `String` is the filter expression.
 
-```  
-SELECT Customer."No.", Customer.Name, "Sales Line".Quantity  
-FROM Customer LEFT OUTER JOIN "Sales Line"  
-ON Customer."No." = "Sales Line".Sell-to Customer No.  
-WHERE "Sales Line"."Quantity" > 10  
-```  
+You use a filter row when you want to filter the query on a field, but you do not want to include the field in the dataset. For example, you might want to filter a date field on a specific date, but you do not want to include the date in the dataset. To set up a filter row similar to columns of a data item. First, you add `filter` element that specifies the table field on which you want to filter, then you add the `ColumnFilter` property to set the conditions of the filter. a row of the type Filter in Query Designer that specifies a field, and then set its ColumnFilter property. For more information about how to set up filter rows, see [How to: Set Up Filter Rows in Query Designer](How-to--Set-Up-Filter-Rows-in-Query-Designer.md).
 
- The following example shows the corresponding SQL SELECT statement for the previous column and filter row example that links the Customer and Sales Line tables and filters on the Location Code field and the total sum of the Quantity field.  
+### Example
 
-```  
-SELECT Customer."No.", Customer.Name, SUM("Sales Line".Quantity) as Sum_Quantity  
-FROM Customer LEFT OUTER JOIN "Sales Line"  
-  ON Customer."No." = "Sales Line".Sell-to Customer No.  
-WHERE “Sales Line”.”Location Code” = WHITE  
-GROUP BY Customer."No."  
-HAVING Sum_Quantity  50  
-```  
+The following query object links the **Customer** table and the **Sales Line** table and retrieves the total quantity of line items ordered for each customer. The query includes the following filters.  
 
-## Filtering From C/AL Code  
- C/AL code includes the SETFILTER and SETRANGE methods that you can use to apply a filter on a field that is represented as a column or filter row in a query. The SETFILTER and SETRANGE methods enable you to set filters programmatically on a query at runtime. You use the SETRANGE method to filter on a range of values in a column or filter row. The SETFILTER method is more versatile than the SETRANGE method and enables you to filter a field based on a filter expression.  
+-  A filter on the **Qty** column to include only records from the **Sales Line** table where the total quantity is less than 50.  
 
- The SETFILTER and SETRANGE methods will overwrite any filter on the same field that is set on a column or filter row by the ColumnFilter property in Query Designer. If a SETFILTER or SETRANGE method filters on the same field as a filter on a data item, as specified by the DataItemTableFilter property, then the method filter and DataItemTableFilter property filter are combined.  
+- A filter on filter row for the **Location Code** field of the Sales Line table that includes only records where the location code is WHITE. 
 
-### Calling the SETFILTER and SETRANGE methods  
- You can call the SETFILTER and SETRANGE method from the C/AL code of the [!INCLUDE[prodshort](includes/prodshort.md)] object that runs the query object or from the [OnBeforeOpen Trigger](OnBeforeOpen-Trigger.md) of the query object.  
+```
+query 50100 "Customer_Sales_Quantity"
+{
+    QueryType = Normal;
 
- To call the SETFILTER method, you use the following code.  
+    elements
+    {
+        dataitem(C; Customer)
+        {
+            column(Customer_Number; "No.")
+            {
+            }
+
+            column(Customer_Name; Name)
+            {
+            }
+
+            dataitem(SL; "Sales Line")
+            {
+                DataItemLink = "Sell-to Customer No." = c."No.";
+                SqlJoinType = InnerJoin;
+                DataItemTableFilter = Quantity = filter(> 10);
+
+                column(Qty; Quantity)
+                {
+                    Method = Sum;
+                    ColumnFilter = Qty = filter(< 50);
+                }
+
+                filter(Location_Code; "Location Code")
+                {
+                    ColumnFilter = Location_Code = const('White');
+                }
+            }
+        }
+    }
+} 
+
+```
+
+In an SQL SELECT statement, filters on a column or filter row that do not apply an aggregate method, as with the `Location_Code` filter row in the example, would correspond to a WHERE clause. Filters on a columns or filter rows that do apply a totals method, as with the `Quantity` column in the example, would correspond to a HAVING clause. For more information, see [Equivalent SQL SELECT Statements for Query Filters](Understanding-Query-Filters.md#SQL).  
+
+## Filtering from AL using SETFILTER and SETRANGE methods
+
+AL code includes the SETFILTER and SETRANGE methods that you can use to apply a filter on a field that is represented as a column or filter row in a query. The SETFILTER and SETRANGE methods enable you to set filters programmatically on a query at runtime. You use the SETRANGE method to filter on a range of values in a column or filter row. The SETFILTER method is more versatile than the SETRANGE method and enables you to filter a field based on a filter expression.  
+
+The SETFILTER and SETRANGE methods will overwrite any filter on the same field that is set on a column or filter row by the `ColumnFilter` property in Query Designer. If a SETFILTER or SETRANGE method filters on the same field as a filter on a data item, as specified by the `DataItemTableFilter` property, then the method filter and `DataItemTableFilter` property filter are combined.  
+
+### Calling the SETFILTER and SETRANGE methods
+
+You can call the SETFILTER and SETRANGE method from the AL code of the [!INCLUDE[prodshort](includes/prodshort.md)] object that runs the query object or from the [OnBeforeOpen Trigger](OnBeforeOpen-Trigger.md) of the query object.  
+
+To call the SETFILTER method, you use the following code.  
 
 ```  
 Query.SETFILTER(Column, String)  
@@ -121,14 +180,42 @@ Query.SETRANGE(Column, FromValue, ToValue)
 
 -   `ToValue` is the higher value of the range.  
 
- For more information, see [SETFILTER method \(Query\)](SETFILTER-method--Query-.md) and [SETRANGE method \(Query\)](SETRANGE-method--Query-.md).  
+For more information about these methods, see [SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md) and [SETRANGE method \(Query\)](methods-auto/query/queryinstance-setrange-method.md).  
 
-### Example  
- Referring to the query example in the previous section, you can add the following code to the OnBeforeOpen trigger of the query object to change the filters on the **Quantity** column and the  **Location\_Code** filter row to include quantities of less than 50 and a location code of RED.  
+### Example
+
+Referring to the query example in the previous sections, you can add the following code to the `OnBeforeOpen` trigger of the query object to change the filters on the **Quantity** column and the  **Location\_Code** filter row to include quantities of in the range of 10 to 50 and a location code of RED.
 
 ```  
-currQuery.SETFILTER(Sum_Quantity, '<50');  
-currQuery.SETFILTER(Location_Code, '=RED');  
+trigger OnBeforeOpen()
+begin
+    currQuery.SETRANGE(Qty, 10, 50);
+    currQuery.SETFILTER(Location_Code, '=RED');
+end;  
+```
+
+##  <a name="SQL"></a> Equivalent SQL SELECT Statements for Query Filters
+
+If you are familiar with SQL, then it is helpful to know how filtering in [!INCLUDE[prodshort](includes/prodshort.md)] queries relates to SQL statements. To specify filters in an SQL statement, you use WHERE and HAVING clauses. The WHERE clause filters on fields. The HAVING clause filters on the results that have aggregated values as applied by of a totals method.  
+
+The following example shows the corresponding SQL SELECT statement for the previous data item filter example that links the Customer and Sales Line tables and filters on the Quantity field.  
+
+```  
+SELECT Customer."No.", Customer.Name, "Sales Line".Quantity  
+FROM Customer LEFT OUTER JOIN "Sales Line"  
+ON Customer."No." = "Sales Line".Sell-to Customer No.  
+WHERE "Sales Line"."Quantity" > 10  
+```  
+
+The following example shows the corresponding SQL SELECT statement for the previous column and filter row example that links the **Customer** and **Sales Line** tables and filters on the **Location Code** field and the total sum of the **Quantity** field.  
+
+```  
+SELECT Customer."No.", Customer.Name, SUM("Sales Line".Quantity) as Qty  
+FROM Customer LEFT OUTER JOIN "Sales Line"  
+  ON Customer."No." = "Sales Line".Sell-to Customer No.  
+WHERE "Sales Line"."Location Code" = WHITE  
+GROUP BY Customer."No."  
+HAVING Qty  50  
 ```  
 
 ## See Also  

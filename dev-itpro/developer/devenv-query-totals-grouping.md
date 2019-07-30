@@ -11,9 +11,9 @@ ms.service: "dynamics365-business-central"
 ---
 # Aggregating Data in Query Objects
 
-In a query object, you use aggregate methods to perform a calculation on the fields of a column and return the calculated value in the dataset. For example, you can sum all the fields in a column or find the average value. The following table shows the available totals methods.  
+In a query object, you use aggregate methods to perform a calculation on the fields of a column and return the calculated value in the dataset. For example, you can sum all the fields in a column or find the average value. The following table outlines the available aggregate methods.  
   
-|Value|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
+|Method|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
 |-----|---------------------------------------|
 |[Sum](devenv-query-totals-grouping.md#Sum)|Calculates the sum of the values of the field in the designated column for all records that are selected as part of the grouped set.|  
 |[Average](devenv-query-totals-grouping.md#Average)|Calculates the average value of the field in the designated column for all records that are selected as part of the grouped set.<br /><br /> When averaging fields that have an integer data type \(such as `Integer` or `BigInteger`\), integer division is used. This means that result is not rounded, and the remainder is discarded. For example, 5÷2=2 instead of 2.5 \(or 2 1/2\).|  
@@ -23,7 +23,7 @@ In a query object, you use aggregate methods to perform a calculation on the fie
   
 ## Setting up an aggregate method for a query column
 
-Except for the `Count` method, you can only use a totals method \(`Sum`, `Average`, `Min`, and `Max`\) on a field that has a numeric data type of `Decimal`, `Integer`, `BigInteger`, or `Duration`. To set up an aggregate on a column, you set the column's `Method` property.
+Except for the `Count` method, you can only use an aggregate method \(`Sum`, `Average`, `Min`, and `Max`\) on a field that has a numeric data type of `Decimal`, `Integer`, `BigInteger`, or `Duration`. To set up an aggregate on a column, you set the column's `Method` property.
 
 ```
 column(Name; Field)
@@ -32,7 +32,7 @@ column(Name; Field)
 }
 ```
 
-Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROPED BY clause in SQL SELECT statements (see [Creating Queries with Totals in SQL](devenv-query-totals-grouping.md#SQL).
+Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROPED BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL).
 
 The aggregate methods and grouping are further explained in the following sections.  
   
@@ -66,7 +66,7 @@ query 50101 "Customer_Sales_Quantity"
 
                 column(Qty; Quantity)
                 {
-                    // Change the value of the property to perform a different aggregation on grouped columns: Sum, Average, Max, Min, or Count
+                    // Change the value of the property to perform a different aggregate method on grouped columns: Sum, Average, Max, Min, or Count
                     //Method = Sum;
                 }
             }
@@ -176,7 +176,7 @@ Looking at the sample query, you can use `Max` method to get the greatest number
   
 ##  <a name="Count"></a> Count
 
-The `Count` method returns the number of records from the data item table that comprise a group in the dataset. Unlike the other aggregation methods, the `Count` method is not associated with a specific column. Records are identified and counted based on the primary key of the data item table. Referring to the sample query, you can use a `Count` method to get the number of open sales orders per customer.
+The `Count` method returns the number of records from the data item table that comprise a group in the dataset. Unlike the other aggregate methods, the `Count` method is not associated with a specific column. Records are identified and counted based on the primary key of the data item table. Referring to the sample query, you can use a `Count` method to get the number of open sales orders per customer.
 
 To set up a `Count` method in the sample query, the `column` element definition cannot include a source table; only a name. Therefore, you can delete the reference to the `Quantity` field in the `column(Qty; Quantity)` element and set the `Method`property to `Count`:  
 
