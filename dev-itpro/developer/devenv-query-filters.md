@@ -160,27 +160,24 @@ To call the SETFILTER method, you use the following code.
 Query.SETFILTER(Column, String)  
 ```  
 
+To call the SETRANGE method, you use the following code.  
+
+```  
+Query.SETRANGE(Column, FromValue, ToValue)  
+```
+ 
+where:
 -   `Query` is a variable of the Query type that specifies the query object.  
 
 -   `Column` is the name of the column or filter row as defined by its Name property.  
 
 -   `String` is the filter expression.  
 
- To call the SETRANGE method, you use the following code.  
-
-```  
-Query.SETRANGE(Column, FromValue, ToValue)  
-```  
-
--   `Query` is a variable of the Query type that specifies the query object.  
-
--   `Column` is the name of the column or filter row as defined by its Name property.  
-
 -   `FromValue` is the lower value of the range.  
 
 -   `ToValue` is the higher value of the range.  
 
-For more information about these methods, see [SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md) and [SETRANGE method \(Query\)](methods-auto/query/queryinstance-setrange-method.md).  
+For more information about these methods and important behavior, see [SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md) and [SETRANGE method \(Query\)](methods-auto/query/queryinstance-setrange-method.md).  
 
 ### Example
 
