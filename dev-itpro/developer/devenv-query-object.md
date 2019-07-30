@@ -29,14 +29,12 @@ The following examples show how you can use queries in your [!INCLUDE[d365fin_lo
 
 -   Creating charts that are based on a query instead of a table.  
 
--   Saving a query as an .xml or .csv file. You can use the [SAVEASXML Function](SAVEASXML-Function.md) to create an .xml file that contains the resulting dataset of a query. You can use the .xml file to integrate with external applications.  
+-   Saving a query as an .xml or .csv file. For example, you can use the [SAVEASXML method](methods-auto/query/query-saveasxml-integer-string-method.md) to create an .xml file that contains the resulting dataset of a query. You can use the .xml file to integrate with external applications.  
 
--   Exposing data as an OData web service. You can register and publish a query as a web service in the same way that you can register and publish pages or codeunits as web services. You use the **Web Services** page to register and publish pages, codeunits, or queries. After you expose a query as a web service, you can import it into other applications. <!-- For example, you can import [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] data into Microsoft Excel using Microsoft PowerPivot for Excel, which is a data analysis add-in. You can then create PivotTables in Excel that use the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] data from your query. For an example , see [Walkthrough: Combining Data from Microsoft Dynamics NAV Queries and Pages with Data from Azure DataMarket \(OData\)](Walkthrough--Combining-Data-from-Microsoft-Dynamics-NAV-Queries-and-Pages-with-Data-from-Azure-DataMarket--OData-.md)-->
+-   Exposing data as an OData web service. You can register and publish a query as a web service in the same way that you can register and publish pages or codeunits as web services. You use the **Web Services** page to register and publish pages, codeunits, or queries. After you expose a query as a web service, you can import it into other applications.
 
 > [!NOTE]  
 >  You cannot run a query that gets data from both the application database and the business data database. This also applies to single-tenant deployments so that you do not have to rewrite queries if you decide to export the application. For a description of which tables are considered part of the application database, see [Separating Application Data from Business Data](../deployment/Separating-Application-Data-from-Business-Data.md). 
-
-
 
 ## Creating a query object
 
@@ -167,7 +165,7 @@ query 50102 "Top Customer Overview"
 ## See Also
 
 [Linking and Joining Data Items](devenv-query-links-joins.md)  
-[Aggregating Data in Query Objects](devenv-query-total-grouping.md)  
+[Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [API Query Type](devenv-api-querytype.md)  

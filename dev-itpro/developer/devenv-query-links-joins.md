@@ -452,4 +452,4 @@ FROM "Salesperson/Purchaser", "Sales Header"
 
  [Query Object](devenv-query-object.md)  
  [Filtering Queries](devenv-query-filters.md)  
- [Aggregating Data](devenv-query-total.grouping.md)  
+ [Aggregating Data](devenv-query-totals-grouping.md)  

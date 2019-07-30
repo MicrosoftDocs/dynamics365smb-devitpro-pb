@@ -16,7 +16,7 @@ When you have fields in a table that contain dates, you can use a date method to
 To set up a date method on a query column, set the [Method Property](properties/devenv-method-property.md) to `Day`, `Month`, and `Year`.  
   
 > [!IMPORTANT]  
->  You can only use a date method on fields that have a Date or DateTime data type. For additional information about how to use a date method on a field that has the DateTime data type, see [Working with DateTime Data Types](Using-the-Date-Method-to-Retrieve-Day--Month--and-Year-Data.md#DateTime).  
+>  You can only use a date method on fields that have a Date or DateTime data type. For additional information about how to use a date method on a field that has the DateTime data type, see [Working with DateTime Data Types](devenv-query-retrieve-date-data.md#DateTime).  
 
  For more information about how to set up query columns and properties, see [Query Object](devenv-query-object.md).  
   
@@ -133,5 +133,5 @@ query 50100 "Sample Data Query"
   
 ## See Also  
  [Query Objects](devenv-query-object.md)   
- [Aggregating Data in Query Objects](devenv-query-total-grouping.md)  
+ [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
  [Method Property](properties/devenv-Method-Property.md)
