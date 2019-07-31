@@ -89,7 +89,7 @@ query 50123 "Customer_Sales_Quantity"
 The following codeunit runs the query, saves it as a CSV file, and displays a message that states the number of rows that are returned in the resulting dataset.
 
 ```
-codeunit 50100 MyQueryCSV
+codeunit 50100 MyQueryTop10
 {
     trigger OnRun()
     begin
