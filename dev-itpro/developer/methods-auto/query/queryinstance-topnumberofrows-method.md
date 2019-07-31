@@ -86,7 +86,7 @@ query 50123 "Customer_Sales_Quantity"
 }
 ```
 
-The following AL code runs the query, saves it as a CSV file, and displays a message that states the number of rows that are returned in the resulting dataset. You can add the code as a codeunit, and then run the codeunit to see the results.
+The following codeunit runs the query, saves it as a CSV file, and displays a message that states the number of rows that are returned in the resulting dataset.
 
 ```
 codeunit 50100 MyQueryCSV
@@ -112,12 +112,15 @@ codeunit 50100 MyQueryCSV
     var
         MyQuery: Query "Customer_Sales_Quantity";
         Counter: Integer;
-        myQueryStream: OutStream;
         Text000: TextConst ENU = 'count %1.';
 }
 ```
 
 ## See Also
 [Query Data Type](query-data-type.md)  
+[Query Object](devenv-query-object.md)  
+[Linking and Joining Data Items](devenv-query-links-joins.md)  
+[Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
+[Filtering Data in Query Objects](devenv-query-filters.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
