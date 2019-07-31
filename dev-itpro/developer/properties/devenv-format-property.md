@@ -181,10 +181,10 @@ Sets the formats of the source expression for various data types.
   
 |**Europe DateTime**|**Format**|**Example**|  
 |-------------------------|----------------|-----------------|  
-|\<Day,2>-\<Month,2>-\<Year> \<Hours24>.\<Minutes,2>|0|05-04-03 04:35|  
-|\<Day,2>-\<Month,2>-\<Year> \<Hours24>.\<Minutes,2>.\<Seconds,2>\<Second dec>|1|05-04-03 04:35:55,553|  
-|\<Day,2>-\<Month,2>-\<Year> \<Hours24>.\<Minutes,2>|2|05-04-03 04:35|  
-|\<Day,2>-\<Month,2>-\<Year> \<Hours24>.\<Minutes,2>.\<Seconds,2>|3|05-04-03 04:35:55|  
+|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>|0|05-04-03 04:35|  
+|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>.\<Seconds,2>\<Second dec>|1|05-04-03 04:35:55,553|  
+|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>|2|05-04-03 04:35|  
+|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>.\<Seconds,2>|3|05-04-03 04:35:55|  
 |XML format **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC+01:00\) Brussels, Copenhagen, Madrid, Paris time zone, UTC is one hour earlier than local time on the computer and probably two hours earlier during summer time.|9|2003-04-05T03:35:55.553Z|  
   
  The following table shows the standard DateTime formats with the regional setting of English \(US\).  
