@@ -118,9 +118,9 @@ codeunit 50100 MyQueryTop10
 
 ## See Also
 [Query Data Type](query-data-type.md)  
-[Query Object](devenv-query-object.md)  
-[Linking and Joining Data Items](devenv-query-links-joins.md)  
-[Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
-[Filtering Data in Query Objects](devenv-query-filters.md)  
+[Query Object](../../devenv-query-object.md)  
+[Linking and Joining Data Items](../../devenv-query-links-joins.md)  
+[Aggregating Data in Query Objects](../../devenv-query-totals-grouping.md)  
+[Filtering Data in Query Objects](../../devenv-query-filters.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

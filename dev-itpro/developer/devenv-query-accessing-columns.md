@@ -22,11 +22,11 @@ ColumnValue := QueryVariable.ColumnName
 
 -   *QueryVariable* is a variable of the Query data type that specifies the query object.  
 
--   *ColumnName* is the name of the column in the query as specified by the [Name Property](Name-Property.md) of the column.  
+-   *ColumnName* is the name of the column in the query object.  
 
 ## Return Value
 
- Type: The data type of the field that is used by the column, unless the column applies a totaling method as specified by the [Method Property](Method-Property.md). If the column applies a totaling method, then data type is an integer for the Count method and a decimal for all other totaling methods  
+ The data type of the field that is used by the column, unless the column applies a totaling method as specified by the [Method property](properties/devenv-method-property.md). If the column applies a totaling method, then data type is an integer for the Count method and a decimal for all other totaling methods  
 
  Returns the value of the column in the current active row.  
 
@@ -42,7 +42,7 @@ The following query object links table **18 Customer** and table **37 Sales Line
 query 50123 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
-    // Sets the resulst to only include the top forts the results in descending order
+    // Sets the results to only include the top forts the results in descending order
     TopNumberOfRows = 5;
     OrderBy = descending(Qty);
 

@@ -37,7 +37,7 @@ You use the **TopNumberOfRows** property to limit the resulting dataset to the f
 ## See Also
 
 [Query Object](devenv-query-object.md)  
-[Linking and Joining Data Items](devenv-query-links-joins.md)  
-[Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
-[Filtering Data in Query Objects](devenv-query-filters.md)  
+[Linking and Joining Data Items](../devenv-query-links-joins.md)  
+[Aggregating Data in Query Objects](../devenv-query-totals-grouping.md)  
+[Filtering Data in Query Objects](../devenv-query-filters.md)  
 [Properties](devenv-properties.md)
