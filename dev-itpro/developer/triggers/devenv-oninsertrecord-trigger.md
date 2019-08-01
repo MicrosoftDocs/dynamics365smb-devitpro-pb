@@ -27,7 +27,7 @@ end;
 
 #### Parameters 
  *BelowxRec*  
- \(Boolean\) This return value indicates whether the new record was inserted after the last record in the table \(xRec\) or not. If **false**, the record was inserted between an existing record and the last record. If **true**, the record was inserted below the last record in the table \(xRec\).  
+ \(Boolean\) This return value indicates whether the new record is to be inserted after the last record in the table \(xRec\) or not. If **false**, the record is to be inserted between an existing record and the last record. If **true**, the record is to be inserted below the last record in the table \(xRec\).  
 
 ## Return Value   
  *Ok*  
