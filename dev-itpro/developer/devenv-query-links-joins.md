@@ -14,7 +14,7 @@ ms.service: "dynamics365-business-central"
 [!INCLUDE[prodshort](includes/prodshort.md)] queries enable you to retrieve records from one or more tables and combine the specific records into rows in a single dataset. In AL, each table is specified as a data item. The data included in the dataset is a result of how the data items are linked and joined together.
 
 > [!TIP]
-> The concept of linking and joining data items in AL is similar to Join clauses in SQL Select statements on tables in SQL Server. If you are familiar with SQL Joins, when describing links and joins in AL, this article provides the equivalent SQL SELECT statement in most cases.
+> The concept of linking and joining data items in AL is similar to Join clauses in SQL Select statements on tables in SQL Server. For those familiar with SQL Joins, when describing links and joins in AL, this article provides the equivalent SQL SELECT statement in most cases.
 
 ## Sample Tables and Query
 
@@ -97,7 +97,7 @@ In short, to join two data items, you set the [DataItemLink](properties/devenv-D
 -->
 ### Set the DataItemLink Property
 
-The DataItemLink property sets up a reference or association between one or more fields in source table of a lower data item tables with a field in the source table of the upper data item. In a query, two data item tables typically will have columns that have values that are common to both tables. For example, the **Salesperson** table and **Sales Header** table have the **Code** column and **Salesperson\_Code** column in common.  To create a link between these two tables, you could set the DataItemLink property of the **Sales Header** data item as follows:
+The DataItemLink property sets up a reference or association between one or more fields in the source table of a lower data item tables with a field in the source table of the upper data item. In a query, two data item tables typically will have columns that have values that are common to both tables. For example, the **Salesperson** table and **Sales Header** table have the **Code** column and **Salesperson\_Code** column in common.  To create a link between these two tables, you could set the DataItemLink property of the **Sales Header** data item as follows:
 
 ```
 DataItemLink = "Salesperson Code" = Salesperson_Purchaser.Code;

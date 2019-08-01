@@ -56,7 +56,7 @@ The following query object links table **18 Customer** and table **37 Sales Line
 query 50123 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
-    // Sets the resulst to only include the top forts the results in descending order
+    // Sets the resultS to include the top 5 the results in descending order
     TopNumberOfRows = 5;
     OrderBy = descending(Qty);
 
@@ -103,7 +103,7 @@ codeunit 50100 MyQueryTop10
             Counter += 1;
         end;
         // Saves the dataset as a CSV file.  
-        MyQuery.SaveAsCsv('c:\candelete\CustomerSales.csv');
+        MyQuery.SaveAsCsv('c:\temp\CustomerSales.csv');
         // Displays a message that shows the number of rows.  
         MESSAGE(Text000, counter);
 
