@@ -11,7 +11,10 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 # Arranging Fields Using Grid and Fixed Controls
-By default, page fields are arranged automatically in two columns. For more information, see [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md). You can use a Grid control or a Fixed control to arrange fields in rows and columns on a page and design it to look like a grid-like format. This topic outlines the differences between the two controls to help you determine which control to use.  
+By default, page fields are arranged automatically in two columns. For more information, see [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md). You can use a Grid control or a Fixed control to arrange fields in rows and columns on a page and design it to look like a grid-like format. This topic outlines the differences between the two controls to help you determine which control to use. 
+
+> [!IMPORTANT]
+> Arranging fields in rows only works in the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. In the [!INCLUDE[webclient](../includes/webclient.md)], fields can only be arranged in columns.
   
 ## Comparing Grid and Fixed controls  
  The Grid control is a new control and is the preferred method because it gives you more layout options. The following table outlines the Grid and Fixed control characteristics and their differences.  
@@ -74,4 +77,3 @@ For more information on how to use the **Fixed** control, see [Arranging Fields 
 [Arranging Fields on a FastTab](devenv-arranging-fields-on-fasttab.md)  
 [Pages Overview](devenv-pages-overview.md)  
 [GridLayout Property](properties/devenv-gridlayout-property.md)  
-

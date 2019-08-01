@@ -31,7 +31,7 @@ end;
 
 ## Return Value   
  *Ok*  
- \(Boolean\) Indicates whether a new record should be inserted. The return value is checked after each  call. If **true**, the record is inserted. If **false**, the record is not inserted.  
+ \(Boolean\) Determines whether to insert a new record. The return value is checked after each call. If **true**, the record is inserted. If **false**, the record is not inserted.  
   
 ## Applies To  
   

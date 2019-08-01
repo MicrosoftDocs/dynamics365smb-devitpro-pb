@@ -17,23 +17,22 @@ Sets whether the fields in Group controls are arranged horizontally in a row or 
   
 ## Applies To  
   
--   Group controls, including Group, Repeater, CueGroup, FixedLayout, and GridLayout subtypes on pages.  
+-   Group controls, including Group, Repeater, CueGroup, FixedLayout, and GridLayout on pages.  
   
 ## Property Values  
   
 |Value|[!INCLUDE[bp_tabledescription](../includes/bp_tabledescription_md.md)]|  
 |-----------|---------------------------------------|  
-|**Rows**|Arranges fields within Group controls in rows.|  
+|**Rows**|Arranges fields within Group controls in rows. This only works in the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. In the [!INCLUDE[webclient](../includes/webclient.md)], fields can only be arranged in columns.|  
 |**Columns**|Arranges fields within Group controls in columns. This is the default.|  
 |**Undefined**|Same as the **Columns** setting.|  
   
 ## Remarks  
- You use a Group control to arrange fields in rows and columns. To define the rows and columns of fields, you add **SubType** Group controls to the Group control. Each **SubType** control contains the fields that you want to display. You can use the **Layout** property to specify whether the fields in a group are arranged in rows or columns.  
-  
-## See Also  
-[Properties](devenv-properties.md)
+This property is used to arrange fields that display in FastTabs on page type like card and document. For more information, see [Field Arrangement on FastTabs](../devenv-arranging-fields-using-grid-and-fixed-controls.md). 
+
+## See Also
+
+[Field Arrangement on FastTabs](../devenv-arranging-fields-on-fasttab.md)  
+[Properties](devenv-properties.md)  
 [Rowspan Property](devenv-rowspan-property.md)  
 [Columnspan Property](devenv-columnspan-property.md)
-<!--
-[How to: Arrange Fields in Rows and Columns Using the GridLayout Control](How-to--Arrange-Fields-in-Rows-and-Columns-Using-the-GridLayout-Control.md) 
--->
