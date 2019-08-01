@@ -24,7 +24,7 @@ area(factboxes)
     {
         ApplicationArea = All;
         PartType = Page;
-        SubPageLink = "Table ID" = const(36)","DocumentType"" = field("Document Type")","Document No."" = field("No.");
+        SubPageLink = "Table ID" = const(36),"Document Type" = field("Document Type"),"Document No." = field("No.");
     }
 }
     
