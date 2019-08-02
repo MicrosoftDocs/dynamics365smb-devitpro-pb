@@ -15,10 +15,24 @@ ms.service: "dynamics365-business-central"
 
 ## Non-customized application single tenant
 
-1. Unistall extensions from the tenants
-1. RunUpgrade to Business Central Spring 2019.
-1. Convert solution to AL
-1. 
+1. Upgrade to Business Central Spring 2019.
+2. Make backup
+3. Uninstall extensions from the tenants
+4. Run application technical upgrade. invole-navapplicationdbupgrade
+1. set nav application version 1500000
+
+1. Sync tenant
+
+
+## Customized application single tenant
+### Option 1
+
+1. Upgrade to Business Central Spring 2019.
+2. Make backup
+3. Uninstall extensions from the tenants
+4. Run application technical upgrade.
+5. Sync tenant
+
 
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
