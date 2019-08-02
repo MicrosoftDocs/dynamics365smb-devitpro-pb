@@ -19,9 +19,14 @@ ms.service: "dynamics365-business-central"
 2. Make backup
 3. Uninstall extensions from the tenants
 4. Run application technical upgrade. invole-navapplicationdbupgrade
-1. set nav application version 1500000
+  1. C:\windows\system32> Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
+6. Publish platform system symbols: C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+7. Publishing the application system app:
 
-1. Sync tenant
+    C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
+
+7. Publishing the application base app:
+
 
 
 ## Customized application single tenant
