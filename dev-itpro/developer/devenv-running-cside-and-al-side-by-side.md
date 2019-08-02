@@ -24,14 +24,26 @@ ms.author: solsen
 > The symbol references are stored in the **Symbol Reference** column of the **Object Metadata** table of the database. For on-premises installations, if you experience problems with generating symbols, try to setting the values in the **Symbol Reference** column to NULL by using an SQL query, then gnerate the symbols again.-->
 
 ## Get started generating symbols and compiling all objects
+
+Open a command prompt **as an administrator** and change to the directory where the finsql.exe file has been installed as part of Dynamics NAV Development Environment.
+
 Use the `generatesymbolreference` command specified with the database and server name to add symbol references to the **Object Metadata** table for the specified database. 
 
 Given the `generatesymbolreference` command, C/SIDE will traverse all the objects in the database and generate symbols for them. This command should be run at least once to generate the initial set of symbols to which incremental updates can be applied.
 
 ### Syntax example
+
+```
+finsql.exe Command=generatesymbolreference, Database=<DatebaseName>, ServerName=<ServerName>\<Instance>
+```
+
+For example:
 ```
 finsql.exe Command=generatesymbolreference, Database="Demo Database NAV (11-0)", ServerName=.\NAVDEMO
 ```
+
+> [TIP]
+> The finsql.exe includes several parameters that you can set to suit you environment. For more information, see [Using the Development Environment from the Command Prompt](../cside/cside-command-prompt.md). 
 
 This is a lengthy operation.  When you run the command, the console returns to an empty command prompt, and does not display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**.
     

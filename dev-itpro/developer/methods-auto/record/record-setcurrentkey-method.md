@@ -41,7 +41,23 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks 
+
+You can use SetCurrentKey for selecting a key and sorting When you use SetCurrentKey the following rules apply:  
+
+- Inactive fields are ignored. Only active keys are scanned.  
+
+- When searching for a key, the first occurrence of the specified fields is selected. This means the following:  
+
+  - If you specify only one field as a parameter when you call SetCurrentKey, the key that is actually selected may consist of more than one field.  
+
+  - If the field that you specify is the first component of several keys, the key that is selected may not be the key that you expect.  
+
+  - If no keys can be found that include the fields that you specify, the return value is **false**. If you do not test the return value, a run-time error occurs. If you do test the return value, the program will continue to run even though no key was found.
+  
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
+[SETCURRENTKEY, SETRANGE, SETFILTER, GETRANGEMIN, and GETRANGEMAX Methods](../devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods#setcurrentkey-method.md)  
