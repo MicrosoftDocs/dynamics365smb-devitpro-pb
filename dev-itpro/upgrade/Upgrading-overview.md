@@ -17,15 +17,61 @@ ms.service: "dynamics365-business-central"
 
 1. Upgrade to Business Central Spring 2019.
 2. Make backup
-3. Uninstall extensions from the tenants
-4. Run application technical upgrade. invole-navapplicationdbupgrade
+3. Uninstall extensions from the tenants.
+4. Run application technical upgrade.
   1. C:\windows\system32> Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
-6. Publish platform system symbols: C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+5. Boost application version: Set-NAVApplication bc150 -ApplicationVersion 15.0.34737.0 -force
+6. Publish platform system symbols:
+
+    C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
 7. Publishing the application system app:
 
     C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
 
-7. Publishing the application base app:
+8. Publishing the application base app:
+
+    C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
+9. Delete all objects except system objects. did not do this here the second time
+10. Sync the tenant.
+  
+        C:\windows\system32> Sync-NAVTenant bc150 -Mode ForceSync  no force second time
+        Get lots of error about deletion
+11. Deleted all objects except system objects here the second time
+11. Sync application system app Microsoft_System Application_15.0.34737.0.
+
+    C:\windows\system32> Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
+
+12. Sync Base App:
+
+    C:\windows\system32> Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+Got this error the second time:
+C:\windows\system32> Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+Sync-NAVApp : Table Invoice Post. Buffer :: Unsupported field change.
+Field:Additional Grouping Identifier; Change:LengthChanged
+Table Incoming Document :: Unsupported field change. Field:URL1; Change:Remove
+Table Incoming Document :: Unsupported field change. Field:URL2; Change:Remove
+Table Incoming Document :: Unsupported field change. Field:URL3; Change:Remove
+Table Incoming Document :: Unsupported field change. Field:URL4; Change:Remove
+At line:1 char:1
++ Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Sync-NAVApp], InvalidOper
+   ationException
+    + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$bc150/nav-systemappli
+   cation,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.SyncNavApp
+Fixed by doing -mode forcesync
+
+13. Start data upgrade:
+
+    C:\windows\system32> Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
+        
+11. Install application system app Microsoft_System Application_15.0.34737.0 on tenant.
+
+    C:\windows\system32> Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
+
+12. Install Base App on tenant:
+
+    C:\windows\system32> Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
 
 
 
@@ -37,6 +83,33 @@ ms.service: "dynamics365-business-central"
 3. Uninstall extensions from the tenants
 4. Run application technical upgrade.
 5. Sync tenant
+
+
+From Torben
+
+Notes from meeting:
+
+Technical Upgrade Application:
+Invoke-NAVApplicationDatabaseConversion -DatabaseServer . -DatabaseName AL.app 
+
+Technical Upgrade Tenant:
+// Allows the upgrade of the tenant tables by using  -PrepareCalToAlUpgrade which allows excessive tables to be renamed into extension tables
+Sync-NAVTenant  -Tenant default -ServerInstance platformcore -PrepareCalToAlUpgrade
+
+// Sync-NavAppp mode CalToAlUpgrade will allow for baseappupgrade
+// Same operation adds immutable keys into all upgraded tables
+Sync-NAVApp -ServerInstance PlatformCore -Name BaseApp -Publisher Microsoft -Version 14.5.0.0 -Mode CalToAlUpgrade -Tenant default
+
+// When sync is over it is normal extension operation to install
+Install-NAVApp -ServerInstance PlatformCore -Name BaseApp -Publisher Microsoft -Version 14.5.0.0 -Tenant default
+
+// Here we have data upgrade steps from the old BaseApp that need to be removed, contact Steffen Balslev
+
+Upgrade to 15.0 baseapp:
+// To continue to 15.0 BaseApp Extension publish the 15.0 extension
+Publish-NAVApp -ServerInstance PlatformCore -Name BaseApp -Publisher Microsoft -Version 15.0.0.0 -Tenant default
+Sync-NAVApp -ServerInstance PlatformCore -Name BaseApp -Publisher Microsoft -Version 15.0.0.0 -Tenant default
+Install-NAVApp -ServerInstance PlatformCore -Name BaseApp -Publisher Microsoft -Version 15.0.0.0 -Tenant default
 
 
 ## See Also  
