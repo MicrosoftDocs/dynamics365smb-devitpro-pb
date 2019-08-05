@@ -25,6 +25,7 @@ The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 - Dynamics NAV 2018 CU 16
 
     Support added with the April 2019 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update
+        **NAV2018 will only be supported up to the Wave2 Release of Business Central.  This update will release approximately the beginning of Octover 2019. With the Wave2 release a customer will need to update their on premise if they want to migrate to the cloud.  **See the Wave 2 release notes for more information.
 <!-- - Dynamics SL 2018 CU 1-->
 
 ## How is my on-premises data replicated to my [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant?
