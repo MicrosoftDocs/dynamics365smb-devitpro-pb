@@ -15,7 +15,7 @@ manager: edupont
 
 
 # OnNewRecord Trigger
-Runs after a new record is initialized, but before users can make entries.  
+Runs after a new record is initialized, but before it is inserted as a record in the table.  
   
 ## Syntax  
 ```  
@@ -27,13 +27,13 @@ end;
   
 #### Parameters 
  *BelowxRec*  
- \(Boolean\) This return value indicates whether the new record was inserted after the last record in the table \(xRec\). If **false**, the record was inserted between an existing record and the last record. If **true**, the record was inserted below the last record in the table \(xRec\).  
+ \(Boolean\) This return value indicates whether the new record is to be inserted after the last record in the table \(xRec\). If **false**, the record is to be inserted between an existing record and the last record. If **true**, the record is to be inserted below the last record in the table \(xRec\).  
   
 ## Applies To  
 - Pages  
   
 ## Remarks  
- Use this trigger to initialize a new record or other variables on the page.  
+ Use this trigger to initialize a new record or other variables on the page. This is run before users enter any data in the record.  
   
  If an error occurs in the trigger code a popup dialog shows an error message. When the dialog is closed, the user can enter new data.  
   
