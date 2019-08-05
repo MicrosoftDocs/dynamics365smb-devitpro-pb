@@ -3,7 +3,7 @@ title: "Debugging"
 description: "Overview of debugging in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 08/05/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -45,16 +45,23 @@ For more information about **Go To Definition**, see [AL Code Navigation](devenv
 
 ## Break on Errors
 
-Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, then it stops execution both on errors that are handled in code and on unhandled errors. 
+Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, then it stops execution both on errors that are handled in code and on unhandled errors.
+
+> [!NOTE]  
+> This property is not supported for Business Central online.
 
 The default value of the `breakOnError` property is **true**, which means the debugger stops execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false** in the `launch.json` file. 
 
 > [!TIP]  
-> If the debugging session takes longer, you can refresh the session by pressing the Ctrl+Shift+P keys, and select the Reload Window.
+> If the debugging session takes longer, you can refresh the session by pressing the **Ctrl+Shift+P** keys, and select **Reload Window**.
 
 ## Break on Record changes
 
-Specify if the debugger breaks on record changes by using the `breakOnRecordWrite` property. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the AL methods that cause each change.  
+Specify if the debugger breaks on record changes by using the `breakOnRecordWrite` property. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the AL methods that cause each change. 
+
+> [!NOTE]  
+> This property is not supported for Business Central online.
+
 
 |Record change|AL Methods|  
 |-------------------|---------------------|  
