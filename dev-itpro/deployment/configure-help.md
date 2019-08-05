@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/11/2019
+ms.date: 08/05/2019
 ms.author: edupont
 ---
 
@@ -31,7 +31,7 @@ For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premi
 
 ### Online library
 
-If you want to use a website that is not based on Help Server, then you must specify the URL in the settings for the Web client and the Windows client, if your company uses this legacy client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it support.  
+If you want to use a website that is not based on Help Server, then you must specify the URL in the settings for the Web client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it support.  
 
 For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
@@ -42,13 +42,6 @@ For the Web client, which is accessed by users from a browser or from the mobile
     "BaseHelpSearchUrl": "https://docs.microsoft.com/{0}/search/index?search={1}&scope=BusinessCentral",
     "//DefaultRelativeHelpPath":  "The Help article to look up if no other article can be found.",
     "DefaultRelativeHelpPath": "index",
-```
-
-For users who use the legacy Windows client connected to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the ClientUserSettings.config file must contain the following settings:
-
-```
-    <add key="BaseHelpUrl" value="https://mysite.com/{0}/documentation/" />
-    <add key="DefaultRelativeHelpPath" value="index" />
 ```
 
 > [!NOTE]
@@ -69,14 +62,7 @@ For the Web client, which is accessed by users from a browser or from the mobile
     "HelpServerPort": "49000",
 ```
 
-For users who use the legacy Windows client connected to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the ClientUserSettings.config file must contain the following settings:
-
-```
-    <add key="HelpServer" value="https://myserver.com" />
-    <add key="HelpServerPort" value="49000" />
-```
-
-In both examples, *https://myserver.com* represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and ITpro content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+In the example, *https://myserver.com* represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and ITpro content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!IMPORTANT]
 > If you use Help Server, the UI-to-Help mapping functionality that is described in [Configure Context-Sensitive Help](../help/context-sensitive-help.md) does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server?target=_blank).  
