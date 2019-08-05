@@ -10,7 +10,12 @@ ms.service: "dynamics365-business-central"
 ---
 
 # SubPageLink Property
-Sets a link to a Factbox from a page.  
+Sets a link to a Factbox from a page.
+
+## Syntax
+```
+SubPageLink = <TableFilters> ::= <TableFilter> {,<TableFilter>} <TableFilter> ::= <PagePartTableFieldName> = CONST(<FieldConst>) | FILTER(<Filter>) | FIELD (<SourceFieldName>) | FIELD(UPPERLIMIT(<SourceFieldName>)) | FIELD(FILTER(<SourceFieldName>)) | FIELD(UPPERLIMIT(FILTER(<SourceFieldName>)))
+```  
   
 ## Applies To  
   
@@ -23,7 +28,6 @@ area(factboxes)
     part(MyControl;Id)
     {
         ApplicationArea = All;
-        PartType = Page;
         SubPageLink = "Table ID" = const(36),"Document Type" = field("Document Type"),"Document No." = field("No.");
     }
 }
