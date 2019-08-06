@@ -241,9 +241,9 @@
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ## XMLports
-### [XMLport Design Overview](developer/devenv-xmlport-design-overview.md)
+### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ### [XMLport Object](developer/devenv-xmlport-object.md)
-### [Defining a XMLport Schema](developer/devenv-xmlport-schema.md)  
+### [Defining an XMLport Schema](developer/devenv-xmlport-schema.md)  
 ### [Request Pages](developer/devenv-request-pages.md)
 ### [XMLport Triggers](developer/triggers/devenv-xmlport-triggers.md)
 ## Linking to the Web Client and App

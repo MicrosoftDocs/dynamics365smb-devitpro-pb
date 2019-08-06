@@ -69,7 +69,7 @@ schema
 }
 ```
 
-For more information about designing XMLports, see [XMLport Design Overview](devenv-xmlport-design-overview.md).
+For more information about designing XMLports, see [XMLport Design Overview](devenv-xmlport-overview.md).
 
 For more information about data consistency and validation against possible errors when using XMLports, see the blog post [Importing and exporting valid data using XMLports in Dynamics 365 Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/05/22/importing-and-exporting-valid-data-using-xmlports-in-dynamics-365-business-central/).
 
@@ -78,4 +78,4 @@ For more information about data consistency and validation against possible erro
 [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md)  
 [XMLport Triggers](triggers/devenv-xmlport-triggers.md)  
 [Request Pages](devenv-request-pages.md)  
-[XMLport Design Overview](devenv-xmlport-design-overview.md)
+[XMLport Design Overview](devenv-xmlport-overview.md)

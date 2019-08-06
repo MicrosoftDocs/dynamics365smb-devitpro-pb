@@ -1,5 +1,5 @@
 ---
-title: "XMLport Design Overview"
+title: "XMLport Overview"
 description: "Design a XMLport by defining the schema. XMLport object is composed of a schema, request page, properties, triggers, and code."
 author: blrobl
 ms.custom: na
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: t-blrobl
 ---
 
-# XMLport Design Overview
+# XMLport Overview
 A XMLport is composed of the following items:
 
 - An XMLport object
