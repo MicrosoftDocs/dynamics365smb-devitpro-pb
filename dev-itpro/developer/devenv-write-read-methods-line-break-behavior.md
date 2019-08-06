@@ -3,7 +3,7 @@ title: "WRITE, WRITETEXT, READ, and READTEXT Method Behavior"
 description: "WRITE, WRITETEXT, READ, and READTEXT Method Behavior for Line Endings and Zero Terminators."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 08/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

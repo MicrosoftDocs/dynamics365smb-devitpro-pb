@@ -28,23 +28,21 @@ You build the XMLport schema from nodes. A node can be:
 
 - A field attribute
 
-You nest nodes inside other nodes in order to define the structure of the XMLport schema.
+You nest nodes inside other nodes in order to define the structure of the XMLport schema. Use the following keywords to define the structure.
 
-The `textelement` keyword defines a new text element in the XMLport. It is used for XML elements that do not map to a database item or when the database does not need the information. 
+|Keyword|Description|
+|-------|-----------|
+|`textelement`|Defines a new text element in the XMLport. It is used for XML elements that do not map to a database item or when the database does not need the information.|
+|`textattribute`|Defines a new text attribute in the XMLport. It is used for XML attributes that do not map to a database item or when the database does not need the information.|
+|`tableelement`|Defines a new table element in the XMLport. It is used for XML elements that map to a table in the database, which is specified in the [SourceTable Property](properties/devenv-sourcetable-property.md). When the XMLport is run, the code nested inside the table element is iterated for all records in the underlying table.|
+|`fieldelement`|Defines a new field element in the XMLPort. It is used for XMLport elements that map to a field in the database, which is specified in the [SourceField Property](properties/devenv-sourcefield-property.md). You must specify it inside the parent table element of the field. |
+|`fieldattribute`|Defines a new field attribute in the XMLPort. It is used for XMLport attributes that map to a field in the database, which is specified in the [SourceField Property](properties/devenv-sourcefield-property.md).|
 
-The `textattribute` keyword defines a new text attribute in the XMLport. It is used for XML attributes that do not map to a database item or when the database does not need the information. 
-
-The `tableelement` keyword defines a new table element in the XMLport. It is used for XML elements that map to a table in the database, which is specified in the [SourceTable Property](properties/devenv-sourcetable-property.md). When the XMLport is run, the code nested inside the table element is iterated for all records in the underlying table.
-
- The `fieldelement` keyword defines a new field element in the XMLPort. It is used for XMLport elements that map to a field in the database, which is specified in the [SourceField Property](properties/devenv-sourcefield-property.md). You must specify it inside the parent table element of the field. 
-
-The `fieldattribute` keyword defines a new field attribute in the XMLPort. It is used for XMLport attributes that map to a field in the database, which is specified in the [SourceField Property](properties/devenv-sourcefield-property.md).
 
 > [!NOTE]  
 > There can only be one `<root>` node, which must be an element. If the [Format Property](properties/devenv-format-property.md) is set to **Xml**, it must be a `textelement` node.
 
 There can be several attributes for a single element and their order does not matter. Attribute nodes must be specified inside the element nodes they refer to and before other element nodes. They cannot have nested element nodes.
-
 
 ## Snippet support
 Typing the shortcut `txmlport` will create the basic layout for an XMLport object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
