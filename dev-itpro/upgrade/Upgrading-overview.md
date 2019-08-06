@@ -76,13 +76,25 @@ Fixed by doing -mode forcesync
     C:\windows\system32> Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
 
 ## Customized application single tenant
-### Option 1
+### Option 1 - Convert entire solution to an extension
 
 1. Upgrade to Business Central Spring 2019.
-2. Make backup
-3. Uninstall extensions from the tenants
-4. Run application technical upgrade.
-5. Sync tenant
+2. Convert your application from C/AL to AL.
+
+   1. Export aall objects exceot system objects to txt in new sytax:
+
+    C:\windows\system32> Export-NAVApplicationObject -DatabaseServer navdevvm-0127\b    cdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=1..1999999999'
+    2. Start command prompt as admin, navigate to txtal, and run :
+    1. Convert to *.al:
+
+        C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client>txt2al --source=C:\exporttoal --target=C:\exporttoal\al
+    
+    This will create separate al file for each object.
+
+1. Make backup of the database.
+1. Uninstall extensions from the tenants.
+1. Run application technical upgrade.
+1. Sync tenant
 
 
 From Torben
