@@ -25,20 +25,20 @@ AutoCalcField is correlated with [CalcFields property](devenv-calcfields-proeprt
   
 ## Applies To  
   
--   Report columns  
-  
--   XMLports  
+-   Report columns
+-   Field elements in XMLports
+-   Field attributes in XMLports
   
 ## Property Value  
  **True** if the FlowField is automatically calculated; otherwise, **false**. The default is **true**.  
 
 ## Syntax
 ```
-AutoCalcField = true;
+AutoCalcField = false;
 ```
 
 ## Remarks
-FlowFields has an effect if the associated data source is a calculated value of the FlowFields.
+FlowFields have an effect if the associated data source is a calculated value of the FlowFields.
 <!--  
 FlowFields has an effect if the associated data source is a calculated value of the FlowFields.
 -->
@@ -47,6 +47,6 @@ FlowFields has an effect if the associated data source is a calculated value of 
 ## See Also  
 [FlowFields](../devenv-flowfields.md)   
 [Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   
-[CalcFormula](devenv-calcformula-property.md)  
+[CalcFormula Property](devenv-calcformula-property.md)  
 [FlowFilter Overview](../devenv-flowfilter-overview.md)   
 [CalcFields Property](devenv-calcfields-property.md)

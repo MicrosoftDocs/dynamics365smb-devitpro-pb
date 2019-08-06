@@ -34,7 +34,7 @@ MaxOccurs = Once;
 ```
  
 ## Remarks  
- The default value of the **MaxOccurs** property varies depending on what you have selected as the [SourceType Property](devenv-sourcetype-property.md) of this element.  
+ The default value of the **MaxOccurs** property varies depending on the type of this element.  
   
  The minimum number of times an element can appear is determined by the value of the [MinOccurs Property](devenv-minoccurs-property.md).  
   

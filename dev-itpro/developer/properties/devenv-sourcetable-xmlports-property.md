@@ -18,26 +18,13 @@ author: SusanneWindfeldPedersen
 Sets the table to which you want to map XML data or the table that you want to export data from.  
   
 ## Applies To  
- XMLports  
+- Table elements in XMLports
 
 ## Syntax
 ```
-SourceTable = Customer;
+tableelement(NodeName; SourceTable){}
 ```
- 
-## Remarks  
- This property is available if you selected Table in the [SourceType Property](devenv-sourcetype-property.md).  
-  
- The values of the [VariableName Properties](devenv-variablename-properties.md) and the SourceTable properties correspond to the contents of the DataSource field in XMLport Designer. The values that you enter in these properties in the **Properties** window are shown in the DataSource field in XMLport Designer.  
-  
- If you have defined a text variable, you can only see the name of the text variable in the DataSource field in the XMLport Designer. For example, if you have defined a table as an XML item, the DataSource field can display the following information.  
-  
-|Properties window<br /><br /> SourceTable|Properties window<br /><br /> VariableName|XMLport Designer|  
-|---------------------------------------|----------------------------------------|----------------------|  
-|Customer|\<Customer> default|\<Customer>\(Customer\)|  
-|Customer|Cust.|Cust.\<Customer>|  
   
 ## See Also  
  [Properties](devenv-properties.md)   
- [SourceType Property](devenv-sourcetype-property.md)   
- [VariableName Properties](devenv-variablename-properties.md)
+ [SourceField Property](devenv-sourcefield-property.md)

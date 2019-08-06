@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 Sets the width of a data item of an XMLport.  
   
 ## Applies To  
- Fields \(in XMLports\)  
+ Data items in XMLports 
 
 ## Syntax
 ```

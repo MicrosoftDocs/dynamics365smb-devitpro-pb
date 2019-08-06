@@ -29,5 +29,10 @@ Specifies whether the value in default namespace should be used for both output 
 UseDefaultNamespace = true;
 ```
   
-## See Also  
- [Properties](devenv-properties.md)
+ For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
+
+## See Also
+ [Properties](devenv-properties.md)   
+[Namespaces Property](devenv-namespaces-property.md)   
+[NamespacePrefix Property](devenv-namespaceprefix-property.md)  
+[DefaultNamespace Property](devenv-defaultnamespace-property.md)  

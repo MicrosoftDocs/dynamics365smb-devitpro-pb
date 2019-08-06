@@ -26,7 +26,7 @@ For more information about the Page and Page Extension objects, see [Pages Overv
 > The API page type should not be extended by creating a page extension object. Instead, create a new API by adding a [page object](devenv-page-object.md).
 
 ## Snippet support
-Typing the shortcut `tpageext` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `tpageext` will create the basic layout for a page extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 

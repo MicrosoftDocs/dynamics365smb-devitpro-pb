@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Sets whether imported records are automatically written to the table.  
   
 ## Applies To  
- Data items in XMLports  
+ Table elements in XMLports  
   
 ## Property Value  
  **True** if the record is written to the table automatically; otherwise, **false**. The default value is **true**.  
