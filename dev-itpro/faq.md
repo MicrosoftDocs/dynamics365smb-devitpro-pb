@@ -14,7 +14,7 @@ ms.date: 04/10/2019
 
 This section contains answers to frequently asked questions about developing for and administering [!INCLUDE[prodlong](includes/prodlong.md)].  
 
-> [!TIP]  
+> [!TIP]
 > If you are looking for frequently asked questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)], see [Frequently Asked Questions](/dynamics365/business-central/across-faq) in the business functionality content for [!INCLUDE[prodshort](includes/prodshort.md)].
 
 ## Is [!INCLUDE[prodshort](includes/prodshort.md)] available in my country?
