@@ -42,5 +42,6 @@ The TextEncoding used when running, importing or exporting the XmlPort.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Xmlport Data Type](xmlport-data-type.md)  
+[TextEncoding Property \(XMLports\)](../../properties/devenv-textencoding-xmlports-property.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
