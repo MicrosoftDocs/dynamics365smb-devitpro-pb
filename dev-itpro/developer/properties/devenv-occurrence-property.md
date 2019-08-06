@@ -18,7 +18,8 @@ author: SusanneWindfeldPedersen
 Sets a value that specifies whether an attribute must occur in the data that is being imported or exported.  
   
 ## Applies To  
- XMLports  
+ - Field attributes in XMLports  
+ - Text attributes in XMLports
   
 ## Property Value  
   

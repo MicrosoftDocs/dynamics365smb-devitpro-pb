@@ -1,5 +1,5 @@
 ---
-title: "Xmlport Data Type"
+title: "XMLport Data Type"
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2019
@@ -53,3 +53,4 @@ The following methods are available on instances of the Xmlport data type.
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
+[XMLport Design Overview](../../devenv-xmlport-design-overview.md)

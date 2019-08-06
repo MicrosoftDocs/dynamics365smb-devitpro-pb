@@ -10,9 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
----
-
- 
+--- 
 
 # XMLport Object
 XMLports are used to export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Sharing data between different computer systems is seamless when it is shared in XML format. Working with XML files can be tedious so the details of how the XML file is handled are encapsulated in XMLports.
@@ -21,60 +19,6 @@ To use an XMLport to import or export data, you first create an XMLport object. 
 
 > [!NOTE]  
 > In the [!INCLUDE[prodlong](includes/prodlong.md)] Web client, Request pages are not supported. Request pages are dialog boxes that enables the user to set a filter on the data, sort the data, or choose whether to export or import the data. If you try to run an XMLport with a Request page from the Web client, you receive an error that the XMLport page type is not supported.
-
-## Snippet support
-Typing the shortcut ```txmlport``` will create the basic layout for an XMLport object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
-
-## XMLport syntax
-```
-xmlport Id MyXmlport
-{
-    schema
-    {
-        textelement(NodeName1)
-        {
-            tableelement(NodeName2; SourceTableName)
-            {
-                fieldattribute(NodeName3; NodeName2.SourceFieldName)
-                {
-                    
-                }
-            }
-        }
-    }
-    
-    requestpage
-    {
-        layout
-        {
-            area(content)
-            {
-                group(GroupName)
-                {
-                    field(Name; SourceExpression)
-                    {
-                        
-                    }
-                }
-            }
-        }
-    
-        actions
-        {
-            area(processing)
-            {
-                action(ActionName)
-                {
-                    
-                }
-            }
-        }
-    }
-    
-    var
-        myInt: Integer;
-}
-```
 
 ## XMLport example
 The following example shows a page extension of the **Permission Sets** page that adds an action to the specified page calling the XMLport **ExportPermissionSet**. The XMLport exports the permission set data to an XML file. 
@@ -92,7 +36,7 @@ pageextension 50111 PermissionSetExporter extends "Permission Sets"
                 PromotedCategory = New;
                 trigger OnAction();
                 begin
-                    Xmlport.Run(70000124, false, false);
+                    Xmlport.Run(50112, false, false);
                 end;
             }
         }
@@ -208,3 +152,4 @@ xmlport 50112 ExportPermissionSet
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Report Object](devenv-report-object.md)  
+[XMLport Design Overview](devenv-xmlport-design-overview.md)

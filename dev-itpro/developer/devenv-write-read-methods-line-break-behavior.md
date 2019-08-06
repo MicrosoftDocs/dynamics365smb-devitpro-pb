@@ -1,6 +1,6 @@
 ---
-title: "XMLport Object"
-description: "Description of the XMLport object."
+title: "WRITE, WRITETEXT, READ, and READTEXT Method Behavior"
+description: "WRITE, WRITETEXT, READ, and READTEXT Method Behavior for Line Endings and Zero Terminators."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2019
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators 
+# WRITE, WRITETEXT, READ, and READTEXT Method Behavior for Line Endings and Zero Terminators 
 
 When writing to and reading from a stream object using the WRITE, WRITETEXT, READ, and READTEXT methods, it is important to be aware of the following behavior regarding line endings and zero byte terminators:
 

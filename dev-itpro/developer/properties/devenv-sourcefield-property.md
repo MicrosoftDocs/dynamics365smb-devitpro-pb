@@ -18,25 +18,14 @@ author: SusanneWindfeldPedersen
 Sets the field that you want to map XML data to.  
   
 ## Applies To  
- XMLports  
+- Field elements in XMLports
+- Field attributes in XMLports
   
-## Remarks  
- This property is only available if you have selected Field in the [SourceType Property](devenv-sourcetype-property.md).  
-  
- You need to select Table as the SourceType of the parent tag and specify the table in the [SourceTable Property](devenv-sourcetable-property.md).  
-  
- The SourceField property is related to the DataSource field in XMLport Designer.  
-  
- When you choose the **AssistButton** in the Value field for the SourceField property, the window that opens lists all the tables that have been defined as part of this XMLport and you can select a field from one of these tables.  
-  
- If you have given a table a variable name in the **Properties** window for that element, this name is displayed in the **Field Lookup** window.  
-  
- When you select the variable name that you have given the current table, the selection is displayed in the DataSource field of XMLport Designer and in the Value field of the SourceField property in the following format:  
-  
-```  
-tablevariablename::fieldname  
+## Syntax
+```
+fieldattribute(NodeName2; NodeName.SourceField){}
 ```  
   
 ## See Also  
- [SourceType Property](devenv-sourcetype-property.md)   
+ [Properties](devenv-properties.md)   
  [SourceTable Property](devenv-sourcetable-property.md)
