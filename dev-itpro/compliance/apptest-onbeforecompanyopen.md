@@ -17,7 +17,7 @@ To improve the login time for [!INCLUDE[d365fin_long_md](../includes/d365fin_lon
 
 - Move the code to the actual usage of the extension.
 - Code written on the subscribers that are called from these triggers must be safe. Every **GET**, **MODIFY**, **DELETE**, and **INSERT** operation must be written with `IF THEN`, to avoid raising conditions that could prevent user from signing in.
-- The code should start with check `IF NOT GUIALLOWED THEN EXIT;` to avoid impacting Web services code. Other checks to exit early should be added to start of the code so that login performance is not affected.
+- The code should start with check `IF NOT GUIALLOWED THEN EXIT;` to avoid impacting Web services code. Other checks to exit early should be added to the beginning of the code so that login performance is not affected.
 - If the extension is subscribing to **OnBeforeCompanyOpen** or **OnAfterCompanyOpen** in order to perform some long-running data update, then either call **Update** when the extension gets called in code for the first time or apply the new task scheduler pattern for Update 6 and later. This applies to code that is not crucial.
     
     ```
