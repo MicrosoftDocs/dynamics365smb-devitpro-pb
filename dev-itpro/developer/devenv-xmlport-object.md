@@ -152,4 +152,4 @@ xmlport 50112 ExportPermissionSet
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Report Object](devenv-report-object.md)  
-[XMLport Design Overview](devenv-xmlport-overview.md)
+[XMLport Overview](devenv-xmlport-overview.md)
