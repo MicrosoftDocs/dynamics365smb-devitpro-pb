@@ -1,6 +1,6 @@
 ---
 title: Report Design Overview
-description: Design a report by defining the dataset and designing the layout. Report object composes dataset, layout, request page, properties, triggers and code.
+description: Design a report by defining the dataset and designing the layout. Report object is composed of dataset, layout, request page, properties, triggers and code.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2019

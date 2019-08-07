@@ -18,11 +18,11 @@ Sets a list of FlowFields to automatically calculate.
 ## Applies To  
   
 -   Reports  
--   XMLports  
+-   Table elements in XMLports
 
 ## Syntax
 ```
-CalcFields("Overdue Sales Documents Style");
+CalcFields = Amount;
 ```
 
 ## Remarks  
@@ -33,7 +33,7 @@ The list of FlowFields, what you describe here is just a list of fields that are
 --> 
   
 ## See Also  
-[AutoCalcField](devenv-autocalcfield-property.md)   
+[AutoCalcField Property](devenv-autocalcfield-property.md)   
 [FlowFields](../devenv-flowfields.md)   
 [Properties](devenv-properties.md)  
 [Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   

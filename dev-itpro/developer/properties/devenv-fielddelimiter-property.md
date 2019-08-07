@@ -12,8 +12,6 @@ caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # FieldDelimiter Property
 Specifies the text delimiter for a field.  
   
@@ -27,7 +25,10 @@ FieldDelimiter = '<None>';
 ```
   
 ## Remarks  
- The default value is “”, an empty string.  
+
+**FieldDelimiter** is only used if the Format property is set to **Variable Text**. Otherwise, the setting is ignored.
+
+ The default value is “”, an empty string.    
   
  You can set the field delimiter in AL code so that the XMLport can import and export records with different delimiters. For example, if your XMLport must import from a file or stream where one record uses commas and another uses an empty string, you can change the field delimiter property at run time.  
   

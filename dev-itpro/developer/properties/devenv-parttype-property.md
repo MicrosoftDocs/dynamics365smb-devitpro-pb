@@ -12,16 +12,16 @@ caps.latest.revision: 11
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # PartType Property
 Sets the content type that can display in a part FactBox.  
+
+<!-- This property does not appli to AL. -->
   
 ## Applies To  
   
 -   Part controls on pages  
   
-## Remarks  
+## Remarks
  The following table describes the available **SubType** options.  
   
 |[!INCLUDE[bp_tableoption](../includes/bp_tableoption_md.md)]|[!INCLUDE[bp_tabledescription](../includes/bp_tabledescription_md.md)]|  

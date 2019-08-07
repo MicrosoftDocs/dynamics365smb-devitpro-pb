@@ -18,7 +18,8 @@ author: SusanneWindfeldPedersen
 Sets the type of text this element or attribute contains.  
   
 ## Applies To  
- XMLports  
+ - Text elements in XMLports  
+ - Text attributes in XMLports
   
 ## Property Value  
  **BigText** if you want to display large text ; otherwise, **Text**. The default is **Text**.  
