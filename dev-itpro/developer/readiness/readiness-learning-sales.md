@@ -12,7 +12,8 @@ ms.author: solsen
 # The “Ready to Go” Online Learning for Sales
 Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md).
 
-## Getting started
+# [**Getting Started**](#tab/gettingstarted)
+<!-- ## Getting started -->
 
 |Course description|Go to|
 |----|-----|
@@ -27,7 +28,8 @@ Get an overview of the entire "Ready to Go" online learning catalog [here](readi
 |**Cloud SureStep Accelerated Selling**<br>The Cloud SureStep Accelerated Sales Process is built around the needs of the modern buyer and endeavors to trigger an emotional, experience-driven Strategic Tipping Point early in the selling process. This series of videos and resources explain a prescriptive selling process that is specifically designed to counter the traditional resource intensive, “demo-oriented” solution sales approach that typically leads to highly customized product demonstrations, complex sales cycles and long implementation projects. The library of resources includes a number of customizable templates so you may create your own set of sales assets to support accelerated selling.|[Review](https://mbspartner.microsoft.com/OSS/Topic/20)|
 |**Dynamics 365 Business Central Transition Playbook**<br>This playbook resource guide is intended for Microsoft Partners who are looking to transition customers from NAV & GP to Microsoft Dynamics 365 Business Central. |[Dynamics 365 Business Central Transition Playbook](readiness-transition-business-central.md)|
 
-## Proficient knowledge
+# [**Proficient knowledge**](#tab/proficientknowledge)
+<!-- ## Proficient knowledge -->
 
 |Course description|Go to|
 |----|-----|

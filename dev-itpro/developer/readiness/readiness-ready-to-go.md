@@ -23,10 +23,10 @@ The “Ready to Go” program is designed to support you in the journey of bring
 > [!TIP]
 > Keep on top of news, tips, tools, programs, and new capabilities by following us on the [Business Central for partners](https://community.dynamics.com/business/b/businesscentraldevitpro) blog.
 
-# [Learning](#tab/learning)
+# [**Learning**](#tab/learning)
 **The "Ready to Go" learning catalog** is an extensive collection of materials for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], including training resources, white papers, and tools for both app developers (ISVs) as well as resellers (VARs). It is designed for marketeers, business decision makers, sales and pre-sales roles, architects, consultants, and developers. [Access the "Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101).
 
-# [Coaching](#tab/coaching)
+# [**Coaching**](#tab/coaching)
 Several Development Centers, Master VARs, and Training Centers provide **“Ready to Go” coaching**.
 
 The coaches are independently owned companies which provide services to partners, tailored to their needs. Over time they have developed lots of best practices by supporting multiple partners, they also have strong ties with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] teams and are always up to date on the latest strategy and product innovation.
@@ -45,13 +45,13 @@ Please find the coaches in your region and explore which "Ready to Go" offerings
 |**Velosio**<br>(MasterVar)|Coaching and training services in person and online in North America.|[ReadyToGo Contacts](https://www.velosio.com/landing/readytogo/)|
 |**Plataan**<br>(Training Center)|Training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://plataan.tv/en)|
 
-# [Tooling](#tab/tooling)
+# [**Tooling**](#tab/tooling)
 **The "Ready to Go" tooling** is designed to support you in the actual app development, including testing and learning scenarios. The platform provides you with various insider builds of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (cf. both current, upcoming and daily builds are available).  
 The platform also enables you to provide direct feedback to the Microsoft engineers who are working on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
 
 To get access to the available builds on the platform you need to follow the instructions stipulated in the documentation on [Getting you started with Add-on Apps](https://go.microsoft.com/fwlink/?linkid=869734) and [Getting you started with Connect Apps](https://go.microsoft.com/fwlink/?linkid=2005501).
 
-# [Resources](#tab/resources)
+# [**Resources**](#tab/resources)
 ### Business Central on the Dynamics 365 Blog for partners
 
 The blog talks about opportunities, processes, programs, and tools for the Business Central partner community. Follow the blog here: [Business Central on the Dynamics 365 Blog for partners](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
