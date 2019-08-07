@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 05/31/2019
+ms.date: 08/07/2019
 ms.author: edupont
 ---
 # Administration of Business Central Online
@@ -50,5 +50,6 @@ The following tasks are not available to the delegated administrator:
 [The Business Central Administration Center](tenant-admin-center.md)  
 [The Business Central Administration Center API](administration-center-api.md)  
 [Resources for Help and Support for Dynamics 365 Business Central](../help-and-support.md)  
+[How does Microsoft handle database sizes?](../faq.md#how-does-microsoft-handle-database-sizes)  
 [Resell Different Solutions](../developer/readiness/readiness-reseller.md)  
 [Deliver consulting services as a VAR: aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices)  

@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/10/2019
+ms.date: 08/07/2019
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
@@ -44,6 +44,12 @@ Yes, you can. As a partner you have access to the Dynamics Learning Portal, wher
 ## How can I troubleshoot my customers' online tenants?
 
 You can use the **Help and Support** page in your customers' tenants to find technical information, and they can use that page to contact you. For more information, see [Configuring Technical Support for [!INCLUDE[prodlong](includes/prodlong.md)]](technical-support.md).  
+
+## How does Microsoft handle database sizes?
+
+For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in the database. If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
+
+The limit for the size of each tenant's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.  
 
 ## See Also
 
