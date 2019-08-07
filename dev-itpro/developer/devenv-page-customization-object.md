@@ -24,7 +24,7 @@ Typing the shortcut `tpagecust` will create the basic layout for a page customiz
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Page customization example
-The following page customization example `MyCustomization` is intialized to perform changes to **Customer List**. The `modify` method is used to hide the `NewSalesBlanketOrder` action item. If you want to, for example, move fields around on the page, use Designer to drag and drop the fields. For more information, see [Designer](devenv-inclient-designer.md).
+The following page customization example `MyCustomization` makes changes to **Customer List**. The `modify` method is used to hide the `NewSalesBlanketOrder` action item. If you want to, for example, move fields around on the page, use Designer to drag and drop the fields. For more information, see [Designer](devenv-inclient-designer.md).
 
 
 ```
