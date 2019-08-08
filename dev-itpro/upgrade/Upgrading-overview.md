@@ -135,6 +135,7 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
 6. Manually copy the System symbols extension (Microsoft_System_15.0.34942.0.app) to the **.alpackages** folder.
 
     **Error:**
+
     I tried to us the Download Symbols command but could not because of errors.
 7. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. Set the `"al.assemblyProbingPaths"` parameter:
 
@@ -152,7 +153,8 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
 8. Open the **dotnet.al** file and remove all instances of "Version=14.0.0.0" for **Microsoft.Nav** assemblies.
 9. Build the project.
 
-    **Errors:**
+    **Error:**
+
     I got errors compiling the following objects. To fix, I had to comment out code:
 
     - AzureADUserManagement.Codeunit.al
@@ -267,6 +269,7 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
     ```
 
     **Error:**
+
     I got several error on various objects, which prevented me from going any further:
     - ExcelBuffer.Table.al
     - ConfigExcelExchange.Codeunit.al
