@@ -21,9 +21,12 @@ For this scenario, I am upgrading a BC 14.0 unmodified base application. Because
 1. Upgrade to Business Central Spring 2019.
 2. Make backup of the database.
 3. Uninstall extensions from the tenants.
-4. Run a technical upgrade on the application.
-  1. C:\windows\system32> Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
-5. Increase the application application version.
+4. Run a technical upgrade on the application:
+
+    ```
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
+    ```
+1. Increase the application application version.
 
     ```
     Set-NAVApplication bc150 -ApplicationVersion 15.0.34737.0 -force
