@@ -15,7 +15,8 @@ ms.service: "dynamics365-business-central"
 
 For now, these steps are for a single tenant deployment.
 
-## Non-customized application
+## Non-modified application
+
 For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app. 
 
 1. Upgrade to Business Central Spring 2019.
@@ -61,9 +62,10 @@ For this scenario, I am upgrading a BC 14.0 unmodified base application. Because
 
 12. Synchronize the tenant with the base application extension (BaseApp):
 
-   Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
 
     **Error:**
+
     Got this error the second time:
     
     ```
