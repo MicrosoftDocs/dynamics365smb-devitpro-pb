@@ -11,7 +11,7 @@ ms.author: jswymer
 manager: edupont
 ms.service: "dynamics365-business-central"
 ---
-# Upgrading the Application Code in [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
+# Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Wave 2
 
 
 ## Non-customized application single tenant
@@ -30,14 +30,15 @@ For this scenario, I used a BC 14.0 unmodified base application on a BC 14.0 ser
     C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
 7. Publishing the application system app:
 
-    C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
 
 8. Publishing the application base app:
 
-    C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
 10. Synchronize the tenant.
   
-        C:\windows\system32> Sync-NAVTenant bc150 -Mode ForceSync  no force second time
+    Sync-NAVTenant bc150
+
         Get lots of error about deletion
 11. Deleted all objects except system objects here the second time
 11. Synchronize the tenant with the application system extension (Microsoft_System Application_15.0.34737.0):
@@ -46,35 +47,37 @@ For this scenario, I used a BC 14.0 unmodified base application on a BC 14.0 ser
 
 12. Synchronize the tenant with the base application extension (BaseApp):
 
-    C:\windows\system32> Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
-Got this error the second time:
-C:\windows\system32> Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
-Sync-NAVApp : Table Invoice Post. Buffer :: Unsupported field change.
-Field:Additional Grouping Identifier; Change:LengthChanged
-Table Incoming Document :: Unsupported field change. Field:URL1; Change:Remove
-Table Incoming Document :: Unsupported field change. Field:URL2; Change:Remove
-Table Incoming Document :: Unsupported field change. Field:URL3; Change:Remove
-Table Incoming Document :: Unsupported field change. Field:URL4; Change:Remove
-At line:1 char:1
-+ Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (:) [Sync-NAVApp], InvalidOper
-   ationException
-    + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$bc150/nav-systemappli
-   cation,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.SyncNavApp
-Fixed by doing -mode forcesync
+   Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
 
+    Error:
+    Got this error the second time:
+    C:\windows\system32> Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    Sync-NAVApp : Table Invoice Post. Buffer :: Unsupported field change.
+    Field:Additional Grouping Identifier; Change:LengthChanged
+    Table Incoming Document :: Unsupported field change. Field:URL1; Change:Remove
+    Table Incoming Document :: Unsupported field change. Field:URL2; Change:Remove
+    Table Incoming Document :: Unsupported field change. Field:URL3; Change:Remove
+    Table Incoming Document :: Unsupported field change. Field:URL4; Change:Remove
+    At line:1 char:1
+    + Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        + CategoryInfo          : InvalidOperation: (:) [Sync-NAVApp], InvalidOper
+       ationException
+        + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$bc150/nav-systemappli
+       cation,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.SyncNavApp
+    Fixed by doing -mode forcesync
+    
 13. Upgrade the tenant data:
 
-    C:\windows\system32> Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
+    Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
         
 13. Install system application extension (Microsoft_System Application_15.0.34737.0) on tenant.
 
-    C:\windows\system32> Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
+    Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
 
-12. Install base Application extension on the tenant:
+12. Install base application extension on the tenant:
 
-    C:\windows\system32> Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
 
 ## Customized application single tenant
 ### Option 1 - Convert entire solution to an extension
@@ -86,13 +89,14 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
 3. Uninstall extensions from the tenants.
 4. Convert your application from C/AL to AL.
 
-   1. Export all objects except system objects to txt in new syntax for AL:
+   1. Export all objects except system objects to txt in new syntax for AL. For this, I used Development Shell run as an admin:
+    
+      ```
+      Export-NAVApplicationObject -DatabaseServer navdevvm-0127\b    cdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=1..1999999999'
+      ```
+    There is a switch that you can set to tartget the runtime to 4.0. You should set this so you will not get so many warnings.  This is not documented yet.
 
-    C:\windows\system32> Export-NAVApplicationObject -DatabaseServer navdevvm-0127\b    cdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=1..1999999999'
-
-     There is a switch that you can set to tartget the runtime to 4.0. You should set this so you will not get so many warnings.  This is not documented yet.
-
-    2. If you have custom .net addins, create a declaration file (.al). I created a small file called mydotnet.al
+    2. If you have custom .Net addins, create a declaration file (.al). I created a small file called mydotnet.al
 
         ```
         dotnet
@@ -251,12 +255,16 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
     ``` 
 15. Publish platform system symbols:
 
-    C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+   ```
+   Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+   ```
 
     Should you unpublish old all old symbols?
 16. Publish the custom base app:
 
+    ```
     C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
+    ```
 
     **Error:**
     I got several error on various objects, which prevented me from going any further:
@@ -267,28 +275,34 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
     
 17. Synchronize the tenant.
   
-        C:\windows\system32> Sync-NAVTenant bc150 -Mode ForceSync  no force second time
-        Get lots of error about deletion
-18. Deleted all objects except system objects here the second time
+    ```
+    C:\windows\system32> Sync-NAVTenant bc150
+    ```
+ 
+18. Delete all objects except system objects from application database.
 
 19. Synchronize the tenant with the base application extension (BaseApp):
 
-    C:\windows\system32> Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
-    Got this error the second time:
-    C:\windows\system32> Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
-    Sync-NAVApp : Table Invoice Post. Buffer :: Unsupported field change.
+    ```
+    Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    ```
 20. Upgrade the tenant data:
 
-    C:\windows\system32> Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
+    ```
+    Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
+    ```
         
 21. Install system application extension (Microsoft_System Application_15.0.34737.0) on tenant.
 
-    C:\windows\system32> Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
+    ```
+    Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
+    ```
 
 22. Install base Application extension on the tenant:
 
-    C:\windows\system32> Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
-
+    ```
+    Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    ```
 
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
