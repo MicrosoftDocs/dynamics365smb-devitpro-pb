@@ -13,9 +13,10 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Wave 2
 
+For now, these steps are for a single tenant deployment.
 
-## Non-customized application single tenant
-For this scenario, I used a BC 14.0 unmodified base application on a BC 14.0 server instance. Because the application was unmodified, I upgraded to the BC 15 base app. 
+## Non-customized application
+For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app. 
 
 1. Upgrade to Business Central Spring 2019.
 2. Make backup of the database.
@@ -24,22 +25,32 @@ For this scenario, I used a BC 14.0 unmodified base application on a BC 14.0 ser
   1. C:\windows\system32> Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
 5. Increase the application application version.
 
+    ```
     Set-NAVApplication bc150 -ApplicationVersion 15.0.34737.0 -force
+    ```
 6. Publish platform system symbols:
 
-    C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+    ```
+    Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+    ```
 7. Publishing the application system app:
 
+    ```
     Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
+    ```
 
 8. Publishing the application base app:
 
+    ```
     Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
+    ```
 10. Synchronize the tenant.
-  
-    Sync-NAVTenant bc150
 
-        Get lots of error about deletion
+    ```  
+    Sync-NAVTenant bc150
+    ```
+    
+    Get lots of error about deletion
 11. Deleted all objects except system objects here the second time
 11. Synchronize the tenant with the application system extension (Microsoft_System Application_15.0.34737.0):
 
@@ -49,8 +60,10 @@ For this scenario, I used a BC 14.0 unmodified base application on a BC 14.0 ser
 
    Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
 
-    Error:
+    **Error:**
     Got this error the second time:
+    
+    ```
     C:\windows\system32> Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
     Sync-NAVApp : Table Invoice Post. Buffer :: Unsupported field change.
     Field:Additional Grouping Identifier; Change:LengthChanged
@@ -65,21 +78,28 @@ For this scenario, I used a BC 14.0 unmodified base application on a BC 14.0 ser
        ationException
         + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$bc150/nav-systemappli
        cation,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.SyncNavApp
-    Fixed by doing -mode forcesync
+    ```
+    
+    To fix this I synced again using `-mode forcesync`.
     
 13. Upgrade the tenant data:
 
+    ```
     Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
-        
+    ```        
 13. Install system application extension (Microsoft_System Application_15.0.34737.0) on tenant.
 
+    ```
     Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
-
+    ```
 12. Install base application extension on the tenant:
 
+    ```
     Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    ```
 
-## Customized application single tenant
+## Customized application
+
 ### Option 1 - Convert entire solution to an extension
 
 For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance. This proecess will convert the entire BC 14 cusom application to an Extension on the BC 15 platform.
