@@ -27,7 +27,7 @@ For this scenario, I am upgrading a BC 14.0 unmodified base application. Because
     ```
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
     ```
-1. Increase the application application version.
+5. Increase the application application version.
 
     ```
     Set-NAVApplication bc150 -ApplicationVersion 15.0.34737.0 -force
@@ -56,11 +56,12 @@ For this scenario, I am upgrading a BC 14.0 unmodified base application. Because
     
     Get lots of error about deletion
 11. Deleted all objects except system objects here the second time
-11. Synchronize the tenant with the application system extension (Microsoft_System Application_15.0.34737.0):
+12. Synchronize the tenant with the application system extension (Microsoft_System Application_15.0.34737.0):
 
-    C:\windows\system32> Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
-
-12. Synchronize the tenant with the base application extension (BaseApp):
+    ```
+    Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
+    ```
+13. Synchronize the tenant with the base application extension (BaseApp):
 
     Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
 
@@ -69,7 +70,7 @@ For this scenario, I am upgrading a BC 14.0 unmodified base application. Because
     Got this error the second time:
     
     ```
-    C:\windows\system32> Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
     Sync-NAVApp : Table Invoice Post. Buffer :: Unsupported field change.
     Field:Additional Grouping Identifier; Change:LengthChanged
     Table Incoming Document :: Unsupported field change. Field:URL1; Change:Remove
@@ -87,17 +88,17 @@ For this scenario, I am upgrading a BC 14.0 unmodified base application. Because
     
     To fix this I synced again using `-mode forcesync`.
     
-13. Upgrade the tenant data:
+14. Upgrade the tenant data:
 
     ```
     Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
     ```        
-13. Install system application extension (Microsoft_System Application_15.0.34737.0) on tenant.
+15. Install system application extension (Microsoft_System Application_15.0.34737.0) on tenant.
 
     ```
     Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
     ```
-12. Install base application extension on the tenant:
+16. Install base application extension on the tenant:
 
     ```
     Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
