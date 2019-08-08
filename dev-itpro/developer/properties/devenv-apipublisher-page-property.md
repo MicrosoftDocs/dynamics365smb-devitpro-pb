@@ -1,0 +1,31 @@
+---
+title: "APIPublisher Property (Page)"
+ms.author: solsen
+ms.custom: na
+ms.date: 05/07/2019
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.service: "dynamics365-business-central"
+author: SusanneWindfeldPedersen
+---
+ 
+# APIPublisher Property (Page)
+Sets the publisher of the API endpoint the page is exposed in. The syntax for providing a publisher is illustrated in the example below:
+
+## Applies To  
+
+- Page object 
+
+## Syntax
+```
+APIPublisher = 'contoso';
+```
+>[!NOTE]
+> The property **APIPublisher** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**.
+
+## See Also  
+[Properties](devenv-properties.md)   
+[Page Object](../devenv-page-object.md)  
+[APIPublisher Property (Query)](devenv-apipublisher-query-property.md)  

@@ -14,13 +14,17 @@ author: SusanneWindfeldPedersen
 # APIVersion Property (Page)
 Sets the version(s) of the API endpoint the page is exposed in. The syntax for providing versions is illustrated in the example below:
 
+## Applies To  
+
+- Page object 
+
+## Syntax
 ```
 APIVersion = 'beta', 'v1.0';
 ```
 
-## Applies To  
-
-- Page object 
+>[!NOTE]
+> The property **APIVersion** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**.
 
 ## See Also  
 [Properties](devenv-properties.md)   
