@@ -90,7 +90,10 @@ Fixed by doing -mode forcesync
         C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client>txt2al --source=C:\exporttoal --target=C:\exporttoal\al
     
     This will create separate al file for each object.
-
+3. Create a new application db on BC 15.
+4. Connect to 15 server Instance.
+5. Publish system symbols.
+1. Publsih asystem app extension.
 1. Make backup of the database.
 1. Uninstall extensions from the tenants.
 1. Run application technical upgrade.
