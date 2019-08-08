@@ -282,15 +282,15 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
     ``` 
 15. Publish platform system symbols:
 
-   ```
-   Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
-   ```
+    ```
+    Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+    ```
 
     Should you unpublish old all old symbols?
 16. Publish the custom base app:
 
     ```
-    C:\windows\system32> Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
     ```
 
     **Error:**
