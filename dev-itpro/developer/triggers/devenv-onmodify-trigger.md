@@ -18,6 +18,7 @@ Runs when a user modifies an existing record in a table.
   
 ## Applies To  
 - Tables  
+- Table extensions
   
 ## Remarks  
  This trigger is run before the default modify behavior, which checks that all the fields of a record are valid before the modification occurs. It runs automatically when the user changes at least one field (different from the primary key field) of a record in a page from the Web Client. If a user modifies a record using AL code, then the *RunTrigger* argument of [MODIFY (Record) Method](../methods-auto/record/record-modify-method.md) or [MODIFYALL (Record) Method](../methods-auto/record/record-modifyall-method.md) must be set to **true** for the OnModify Trigger to run, or otherwise it will not. If an error occurs in the trigger code, the record changes are canceled.  

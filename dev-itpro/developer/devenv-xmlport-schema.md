@@ -38,7 +38,6 @@ You nest nodes inside other nodes in order to define the structure of the XMLpor
 |`fieldelement`|Defines a new field element in the XMLPort. It is used for XMLport elements that map to a field in the database, which is specified in the [SourceField Property](properties/devenv-sourcefield-property.md). You must specify it inside the parent table element of the field. |
 |`fieldattribute`|Defines a new field attribute in the XMLPort. It is used for XMLport attributes that map to a field in the database, which is specified in the [SourceField Property](properties/devenv-sourcefield-property.md).|
 
-
 > [!NOTE]  
 > There can only be one `<root>` node, which must be an element. If the [Format Property](properties/devenv-format-property.md) is set to **Xml**, it must be a `textelement` node.
 
@@ -69,7 +68,9 @@ schema
 
 For more information about designing XMLports, see [XMLport Overview](devenv-xmlport-overview.md).
 
-For more information about data consistency and validation against possible errors when using XMLports, see the blog post [Importing and exporting valid data using XMLports in Dynamics 365 Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/05/22/importing-and-exporting-valid-data-using-xmlports-in-dynamics-365-business-central/).
+For more information about data consistency and validation against possible errors when using XMLports, see the blog post [Importing and exporting valid data using XMLports in Dynamics 365 Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/05/22/importing-and-exporting-valid-data-using-xmlports-in-dynamics-365-business-central/). 
+
+For information about the use of namespaces in XMLports see [Using Namespaces with XMLports](devenv-using-namespaces-with-xmlports.md).
 
 ## See Also
 [XMLport Object](devenv-xmlport-object.md)  

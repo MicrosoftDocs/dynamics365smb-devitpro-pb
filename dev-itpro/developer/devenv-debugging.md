@@ -47,9 +47,10 @@ For more information about **Go To Definition**, see [AL Code Navigation](devenv
 
 Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, then it stops execution both on errors that are handled in code and on unhandled errors.
 
+<!--
 > [!NOTE]  
 > This property is not supported for Business Central online.
-
+--> 
 The default value of the `breakOnError` property is **true**, which means the debugger stops execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false** in the `launch.json` file. 
 
 > [!TIP]  
@@ -59,9 +60,10 @@ The default value of the `breakOnError` property is **true**, which means the de
 
 Specify if the debugger breaks on record changes by using the `breakOnRecordWrite` property. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the AL methods that cause each change. 
 
+<!-- 
 > [!NOTE]  
 > This property is not supported for Business Central online.
-
+-->
 
 |Record change|AL Methods|  
 |-------------------|---------------------|  
