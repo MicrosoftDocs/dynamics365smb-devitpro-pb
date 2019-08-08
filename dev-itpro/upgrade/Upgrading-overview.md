@@ -36,13 +36,13 @@ For this scenario, I am upgrading a BC 14.0 unmodified base application. Because
     ```
     Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
-7. Publishing the application system app:
+7. Publish the application system app:
 
     ```
     Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
     ```
 
-8. Publishing the application base app:
+8. Publish the application base app:
 
     ```
     Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
