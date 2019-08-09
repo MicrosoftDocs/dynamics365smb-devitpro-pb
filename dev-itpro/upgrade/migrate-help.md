@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2019
+ms.date: 08/09/2019
 ms.author: edupont
 ---
 
@@ -20,7 +20,9 @@ When you move to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you 
 
 More specifically, if you have content that you created for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md), then you can choose to reuse that for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution.  
 
-For example, you have a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server website with HTML files that describe your solution according to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] documentation model and format. In that scenario, you can reuse the Help Server website and rebrand that and the content accordingly. You then connect your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with that Help Server website. For more information, see [Configuring the Help Experience](../deployment/configure-help.md).  
+For example, you have a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server website with HTML files that describe your solution according to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] documentation model and format. In that scenario, you can reuse the Help Server website and rebrand that and the content accordingly. You then connect your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with that Help Server website.  
+
+However, [!INCLUDE [prodshort](../developer/includes/prodshort.md)] does not support the field-based approach to context-sensitive Help that [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] 2017 and earlier use. Instead, you must use the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] page-based approach to context-sensitive Help. You do not have to convert your existing Help, but you do need to populate the **Page Documentation** table. For more information, see [Adding page-level UI-to-Help mapping to the system table](../help/context-sensitive-help.md#adding-page-level-ui-to-help-mapping-to-the-system-table).  
 
 > [!NOTE]
 > For apps for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you must apply tooltips to controls and actions in both page objects and page extensions, and you must supply context-sensitive links. For more information, see [Configuring the Help Experience](../deployment/configure-help.md).
