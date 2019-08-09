@@ -351,12 +351,16 @@ DebuggerCodeViewer.Page.al(14,36): error AL0417: Control add-in '"Microsoft.Dyna
 
 ### Option 1 - Convert entire solution to an extension
 
-For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance. This proecess will convert the entire BC 14 cusom application to an Extension on the BC 15 platform.
+Use this process when you have a customized Business Central application that you want to upgrade to the Business Central Wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
+
+
+For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 cusom application to an Extension on the BC 15 platform.
+
+ ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
+ 
  
 1. Upgrade to Business Central Spring 2019.
-2. Make backup of the database.
-3. Uninstall extensions from the tenants.
-4. Unpublish system and application symbols.
+
 1. Convert your application from C/AL to AL.
 
    1. Export all objects except system objects to txt in new syntax for AL. For this, I used Development Shell run as an admin:
@@ -516,7 +520,13 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
 
 10. Build the project to compile objects.
 
-12. Run a technical upgrade on the application in the old database. This will upgrade the system tables to the BC 15 platform. Start the Business Central Administration Shell as an admin, and run this command: 
+### Upgrade the application to the Business Central V15.0 platform
+ 
+1. Make backup of the database.
+2. Uninstall extensions from the tenants.
+3. Unpublish all extensions from the application server instance.
+4. Unpublish all system and application symbols.
+5. Run a technical upgrade on the application in the old database. This will upgrade the system tables to the BC 15 platform. Start the Business Central Administration Shell as an admin, and run this command: 
 
     ``` 
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
