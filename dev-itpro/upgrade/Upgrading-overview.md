@@ -109,6 +109,8 @@ For this scenario, I am upgrading a BC 14.0 unmodified base application. Because
 ### Option 1 - Convert entire solution to an extension
 
 For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance. This proecess will convert the entire BC 14 cusom application to an Extension on the BC 15 platform.
+
+ ![Upgrade on unmodified Business Central application](../media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application")  
  
 1. Upgrade to Business Central Spring 2019.
 2. Make backup of the database.
@@ -354,7 +356,8 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
 1. Upgrade to Business Central Spring 2019.
 2. Make backup of the database.
 3. Uninstall extensions from the tenants.
-4. Convert your application from C/AL to AL.
+4. Unpublish system and application symbols.
+1. Convert your application from C/AL to AL.
 
    1. Export all objects except system objects to txt in new syntax for AL. For this, I used Development Shell run as an admin:
     
@@ -571,6 +574,67 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
     ```
     Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
     ```
+23. Repair 3rd party extensions that have not been updated. 
+
+    ```
+    Repair-NAVApp bc150 -Name  My14Extension -Version 1.0.0.0
+    ```   
+24. Sync repaired app.:
+
+    ```
+    Repair-NAVApp bc150 -Name  My14Extension -Version 1.0.0.0
+    ```
+    
+    **Error:**
+
+    C:\windows\system32> sync-navApp bc150 -Name  My14Extension -Version 1.0.0.0
+    WARNING: Cannot synchronize the extension My14Extension because it is already synchronized.
+    C:\windows\system32> install-navApp bc150 -Name  My14Extension -Version 1.0.0.0
+    install-navApp : Object of type Table with ID 18 could not be found.
+    At line:1 char:1
+    + install-navApp bc150 -Name  My14Extension -Version 1.0.0.0
+    + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        + CategoryInfo          : InvalidOperation: (:) [Install-NAVApp], InvalidOperationException
+        + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$bc150/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp
+25. 
+
+C:\windows\system32> publish-navapp bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\35032\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
+publish-navapp : Extension compilation failed
+error AL1024: A package with publisher 'Microsoft', name 'BaseApp', and a version compatible with '15.0.0.0' could not be loaded. Symbols for the requested app BaseApp by Microsoft 15.0.0.0 could not be found in the database
+error AL1024: A package with publisher 'Microsoft', name 'System Application', and a version compatible with '15.0.0.0' could not be loaded. Symbols for the requested app System Application by Microsoft 15.0.0.0 could not be found in the database
+src/Pag1851.SalesForecastNoChart.al(10,19): error AL0185: Table 'Item' is missing
+src/Cod1850.SalesForecastHandler.al(8,15): error AL0185: Table 'Item' is missing
+src/Cod1854.SalesForecastNotifier.al(8,29): error AL0185: Table '"My Notifications"' is missing
+src/Pag1850.SalesForecast.al(10,19): error AL0185: Table 'Item' is missing
+src/Cod1853.SalesForecastUpdate.al(12,15): error AL0185: Table 'Item' is missing
+src/Cod1853.SalesForecastUpdate.al(13,26): error AL0185: Codeunit 'LogInManagement' is missing
+src/Cod1853.SalesForecastUpdate.al(16,31): error AL0185: Codeunit 'Time Series Management' is missing
+src/Cod1852.SalesForecastScheduler.al(18,24): error AL0185: Table 'Job Queue Entry' is missing
+src/Cod1852.SalesForecastScheduler.al(24,54): error AL0185: Table 'Job Queue Entry' is missing
+src/Cod1852.SalesForecastScheduler.al(26,29): error AL0185: Codeunit 'Job Queue Management' is missing
+src/Cod1852.SalesForecastScheduler.al(39,24): error AL0185: Table 'Job Queue Entry' is missing
+src/Cod1852.SalesForecastScheduler.al(40,29): error AL0185: Codeunit 'Job Queue Management' is missing
+src/Cod1852.SalesForecastScheduler.al(41,32): error AL0185: Codeunit 'User Login Time Tracker' is missing
+src/Cod1851.SalesForecastUpgrade.al(41,26): error AL0185: Table 'Service Password' is missing
+src/Cod1851.SalesForecastUpgrade.al(63,26): error AL0185: Table 'Service Password' is missing
+src/Cod1851.SalesForecastUpgrade.al(76,26): error AL0185: Table 'Service Password' is missing
+src/Tab1850.SalesForecast.al(14,29): error AL0185: Table 'Item' is missing
+src/Cod1852.SalesForecastScheduler.al(52,24): error AL0185: Table 'Job Queue Entry' is missing
+src/Cod1850.SalesForecastHandler.al(21,43): error AL0185: Table 'Item' is missing
+src/Cod1850.SalesForecastHandler.al(21,78): error AL0185: Codeunit 'Time Series Management' is missing
+src/Cod1850.SalesForecastHandler.al(23,33): error AL0185: Table 'Time Series Forecast' is missing
+src/Cod1850.SalesForecastHandler.al(41,141): error AL0185: Codeunit 'Time Series Management' is missing
+src/Cod1850.SalesForecastHandler.al(43,26): error AL0185: Table 'Item Ledger Entry' is missing
+src/Cod1850.SalesForecastHandler.al(44,31): error AL0185: Table 'Time Series Buffer' is missing
+src/Cod1850.SalesForecastHandler.al(108,12): warning AL0667: 'Internal' is being deprecated in the versions: '4.0' or greater. The Internal scope is being deprecated. Use OnPrem instead. This warning will become an error in a future release.
+src/Cod1850.SalesForecastHandler.al(109,62): error AL0185: Codeunit 'Time Series Management' is missing
+src/Cod1850.SalesForecastHandler.al(111,23): error AL0185: Table 'Azure AI Usage' is missing
+src/Tab1850.SalesForecast.al(52,29): error AL0185: Table 'General Ledger Setup' is missing
+src/Tab1850.SalesForecast.al(54,62): error AL0185: Table 'Time Series Buffer' is missing
+src/Tab1850.SalesForecast.al(66,66): error AL0185: Table 'Time Series Forecast' is missing
+src/Cod1852.SalesForecastScheduler.al(68,26): error AL0185: Table 'My Notifications' is missing
+src/Cod1852.SalesForecastScheduler.al(80,24): error AL0185: Table 'Job Queue Entry' is missing
+src/Cod1852.SalesForecastScheduler.al(104,29): error AL0185: Table 'O365 Getting Started' is missing
 
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
