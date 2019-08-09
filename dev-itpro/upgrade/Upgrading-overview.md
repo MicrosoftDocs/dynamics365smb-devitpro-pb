@@ -635,7 +635,7 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
 16. Publish the custom base app:
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance bc150 -Path "C:\Users\jswymer\Documents\AL\BC15BaseApp\Default publisher_BC15BaseApp_1.0.0.0.app" -SkipVerification
     ```
 
 17. Synchronize the tenant.
@@ -643,14 +643,16 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
     ```
     C:\windows\system32> Sync-NAVTenant bc150
     ```
- 
+    When completed the tenant state is OperationalDataUpgradePending.
 18. Delete all objects except system objects from application database. No sync
 
 19. Synchronize the tenant with the base application extension (BaseApp):
 
     ```
-    Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    Sync-NAVApp bc150 -Name "BC15BaseApp" -Version 1.0.0.0
     ```
+
+
 20. Upgrade the tenant data:
 
     ```
