@@ -27,13 +27,16 @@ Sets a variable name for the table or the text that is the data source of the cu
 
 - XmlPortTextAttribute
 
-## XmlName Type
+## Property Value
 String
 
 ## Syntax
 ```
 XmlName = 'CreditNote';
 ```
+
+## Remarks
+If the **XmlName** property is not defined, it will use the string specified in the [NodeName Property](devenv-nodename-property.md) as the default variable name.
 
 ## See Also  
  [Properties](devenv-properties.md)

@@ -33,5 +33,5 @@ CardPageID = "Customer Card";
  
 ## See Also  
 [PagePartID Property](devenv-pagepartid-property.md)   
-[ChartPartID Property](devenv-chartpartid-property.md)
+[ChartPartID Property](devenv-chartpartid-property.md)   
 [SystemPartID Property](devenv-systempartid-property.md)

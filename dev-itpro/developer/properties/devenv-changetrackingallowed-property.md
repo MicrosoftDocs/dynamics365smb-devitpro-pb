@@ -26,6 +26,10 @@ Indicates whether change tracking is enabled for the entity exposed through the 
 ```
 ChangeTrackingAllowed = true;
 ```
+
+>[!NOTE]
+> The property **ChangeTrackingAllowed** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**.
+
  
 ## See Also  
 [Properties](devenv-properties.md)  

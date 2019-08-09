@@ -247,6 +247,12 @@
 ### [Aggregating Data](developer/devenv-query-totals-grouping.md)
 ### [Retrieving Date Data](developer/devenv-query-retrieve-date-data.md)
 ### [Using Queries Instead of Record Variables](developer/devenv-query-using-instead-record-variables.md)
+## XMLports
+### [XMLport Overview](developer/devenv-xmlport-overview.md)
+### [XMLport Object](developer/devenv-xmlport-object.md)
+### [Defining an XMLport Schema](developer/devenv-xmlport-schema.md)  
+### [Request Pages](developer/devenv-request-pages.md)
+### [XMLport Triggers](developer/triggers/devenv-xmlport-triggers.md)
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-universal-app.md)

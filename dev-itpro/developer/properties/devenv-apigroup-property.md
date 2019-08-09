@@ -2,30 +2,26 @@
 title: "APIGroup Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/07/2019
+ms.date: 04/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+ms.assetid: 18e6df94-639e-4c5f-99ed-5729037bb719
+caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
  
-# APIGroup Property
-Sets the group of the API endpoint the query is exposed in.  The syntax for providing versions is illustrated in the example below:
+# APIGroup Property 
+The APIGroup property is applicable to the following types: 
+- [APIGroup Property (Page)](devenv-APIGroup-page-property.md)   
+- [APIGroup Property (Query)](devenv-APIGroup-query-property.md)   
 
-## Applies To  
-
-- Query object 
-
-## Syntax
-```
-APIGroup = 'app1';
-```
-
-For a full example, see [API Query Type](../devenv-api-querytype.md).
 
 ## See Also  
 [Properties](devenv-properties.md)   
-[Query Object](../devenv-query-object.md)  
-[APIVersion Property (Page)](devenv-apiversion-page-property.md)  
+[Page Object](../devenv-page-object.md)   
+[Query Object](../devenv-query-object.md)   
+[APIGroup Property (Page)](devenv-APIGroup-page-property.md)  
+[APIGroup Property (Query)](devenv-APIGroup-query-property.md) 

@@ -30,7 +30,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
     To get a free subscription and read more information, see [https://azure.microsoft.com](https://azure.microsoft.com).
 
 2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Tell me what you want to do") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
-3. Choose **Host in Azure**. If prompted, enter the user name amd password of your Azure subscription. 
+3. Choose **Host in Azure**. If prompted, enter the user name and password of your Azure subscription. 
 
     The Azure portal opens to display a custom deployment form. 
 4. Fill out the required fields on the form, and then select **Purchase**.

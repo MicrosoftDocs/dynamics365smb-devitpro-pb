@@ -19,22 +19,22 @@ Specifies the namespace prefix on an XMLport element.
   
 ## Applies To  
   
--   XMLports that have the [Format Property (XMLports)](devenv-format-xmlports-property.md) set to **Xml**. The property applies only to **Element** node types. It is not supported on **Attribute** node types.  
+-   Table elements, Field elements and Text elements in XMLports that have the [Format Property (XMLports)](devenv-format-xmlports-property.md) set to **Xml**.  
 
 ## Syntax
 ```
-NamespacePrefix = 'prefix';
+NamespacePrefix = 'bc';
 ```
  
 ## Remarks  
  You can only set the property to a prefix that is declared in the [Namespaces Property](devenv-namespaces-property.md) of the XMLport.  
-<!--
- For more information about namespaces with XMLports, see [Using Namespaces with XMLports](../devenv-Using-Namespaces-with-XMLports.md). 
 
-## See Also  
- [Designing XMLports](../devenv-Designing-XMLports.md)   
- [How to: Create XMLports](../devenv-How-to-Create-XMLports.md) -->
+This property only applies to element node types and will be ignored if it is set in `textattribute` and `fieldattribute` nodes. 
+
+ For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
 
 ## See Also
  [Properties](devenv-properties.md)  
- [XMLPort Object](../devenv-xmlport-object.md)
+[Namespaces Property](devenv-namespaces-property.md)  
+[DefaultNamespace Property](devenv-defaultnamespace-property.md)  
+[UseDefaultNamespace Property](devenv-usedefaultnamespace-property.md)

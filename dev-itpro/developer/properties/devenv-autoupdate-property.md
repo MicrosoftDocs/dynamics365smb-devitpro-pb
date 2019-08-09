@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets whether a record in the database with the same primary key as the record in the imported XMLport is updated with values from the imported record.  
 
 ## Applies To  
- Data items in XMLports.  
+Table elements in XMLports.  
 
 ## Property Value  
  **True** if the records are updated; otherwise, **false**. The default value is **true**.  

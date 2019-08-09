@@ -74,7 +74,7 @@ MESSAGE(Text000, Format(DecimalToRound,0,1), Precision, Direction, Result);
 
  On a computer that has the regional format set to English \(United States\), the message window displays the following:  
 
- **ROUND\(1234.56789, 0.001, >\) returns 1,234.568**  
+ **ROUND\(1234.56789, 0.001, '>'\) returns 1,234.568**  
 
  The following table displays some additional ROUND examples.  
 

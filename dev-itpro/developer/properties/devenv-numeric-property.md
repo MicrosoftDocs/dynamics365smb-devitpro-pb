@@ -34,5 +34,4 @@ Numeric = true;
 ## See Also  
  [MinValue Property](devenv-minvalue-property.md)   
  [MaxValue Property](devenv-maxvalue-property.md)   
- [Numeric Property](devenv-numeric-property.md)
  [Properties](devenv-properties.md)

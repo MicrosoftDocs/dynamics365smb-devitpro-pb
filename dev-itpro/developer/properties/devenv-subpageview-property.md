@@ -15,7 +15,11 @@ caps.latest.revision: 7
 
 # SubPageView Property
 Sets the table view for a subpage.  
-  
+
+## Syntax
+```
+SubPageView = [<SORTING>[<KeyList>] [ORDER(Ascending|Descending)] [WHERE(<TableFilters>)]<KeyList> ::= PagePartTableKey1, PagePartTableKey2, <TableFilters> ::= <TableFilter> {,<TableFilter>}<TableFilter> ::= <PagePartTableFieldName>= CONST(<FieldConst>) | FILTER(<FilterExpression>)
+```
 ## Applies To  
   
 -   Pages  
@@ -25,6 +29,11 @@ Sets the table view for a subpage.
   
  You can use this property to sort the information in the table for display in this subpage.
 
+## Example
+
+```
+SubPageView = sorting("No.") where (City=filter('Miami'));
+```
  ## See Also  
  [Properties](devenv-properties.md)  
  [SubPageLink Property](devenv-subpagelink-property.md)

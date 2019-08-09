@@ -2,7 +2,6 @@
 title: "Request Pages"
 description: "Introducing how to work with request pages in Business Central."
 author: SusanneWindfeldPedersen
-
 ms.custom: na
 ms.date: 04/01/2019
 ms.reviewer: na
@@ -12,7 +11,7 @@ ms.author: solsen
 ---
 
 # Request Pages
-A request page is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for a report. Request pages are defined as part of designing a [report object](devenv-report-object.md). The syntax is shown further down in this topic. You design the filters on request pages by using the following report properties:
+A request page is a page that is run before the report or XMLport starts to execute. Request pages enable end users to specify options and filters for a report and an XMLport. Request pages are defined as part of designing a [report object](devenv-report-object.md) and an [XMLport object](devenv-xmlport-object.md). The syntax is shown further down in this topic. You design the filters on request pages by using the following report and XMLport properties:
 
 |Property|Description|
 |--------|-----------|
@@ -50,19 +49,19 @@ Set the [SaveValues](properties/devenv-savevalues-property.md) property to `true
 > [!NOTE]  
 > We recommend that you add fields that the end users of the report will frequently set filters on.
 
-By default, for every data item in the report, a FastTab for defining filters and sorting is created on the request page. To remove a FastTab from a request page, do not define any `RequestFilterFields` for the data item and set the [DataItemTableView](properties/devenv-dataitemtableview-property.md) property to define sorting. The request page is displayed, but there is no tab for this data item.
+By default, for every data item in the report and XMLport, a FastTab for defining filters and sorting is created on the request page. To remove a FastTab from a request page, do not define any `RequestFilterFields` for the data item and set the [DataItemTableView](properties/devenv-dataitemtableview-property.md) property to define sorting. The request page is displayed, but there is no tab for this data item.
 
 If a `DataItemTableView` is not defined, then end users can select a sort field and sort order at runtime.
 
-If you set the property `UseRequestPage` to `No`, then the report will start to print as soon as it is run. In this case, end users cannot cancel the report run. It is still possible to cancel the report, but some pages may print.
+If you set the property `UseRequestPage` to `No`, then the report or XMLport will start to print as soon as it is run. In this case, end users cannot cancel the report or XMLport run. It is still possible to cancel the report or XMLport, but some pages may print.
 
-In a complex report that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports so that end users cannot change the sort order in a way that affects the functionality of the report.
+In a complex report or XMLport that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports and XMLports so that end users cannot change the sort order in a way that affects the functionality of the report or XMLport.
 
 ## See Also
 [Report Object](devenv-report-object.md)  
+[XMLport Object](devenv-xmlport-object.md)  
 [Reports Overview](devenv-reports.md)  
-[Report Design Overview](devenv-report-design-overview.md)  
-[RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)  
+[RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)   
 [RequestFilterHeadingML Property](properties/devenv-requestfilterheadingml-property.md)  
 [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)  
 [DataItemTableView](properties/devenv-dataitemtableview-property.md)  

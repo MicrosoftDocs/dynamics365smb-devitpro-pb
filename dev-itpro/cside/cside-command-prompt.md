@@ -395,7 +395,7 @@ finsql.exe command=getbuildversion, file=<versionfile>[, logfile=<path and filen
  This example shows how to run the GetBuildVersions command to get the product name and version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that is currently installed on the computer. The example saves the build version information to a .txt type file that has the path and file name *C:\\temp\\navbuildversion.txt*. The example also specifies a log file that has the path and file name *C:\\temp\\bcbuildversionlog.txt*  
   
 ```  
-finsql.exe command=getbuildversion.txt, file=C:\temp\navbuildversion.txt, logfile= C:\temp\bcbuildversionlog.txt  
+finsql.exe command=getbuildversion, file=C:\temp\navbuildversion.txt, logfile= C:\temp\bcbuildversionlog.txt  
 ```  
   
  The build version file, in this case *bcbuildversion.txt*, includes information that is similar to the following:  
