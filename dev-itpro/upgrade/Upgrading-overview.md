@@ -110,7 +110,7 @@ For this scenario, I am upgrading a BC 14.0 unmodified base application. Because
 
 For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance. This proecess will convert the entire BC 14 cusom application to an Extension on the BC 15 platform.
 
- ![Upgrade on unmodified Business Central application](../media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application")  
+ ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application")  
  
 1. Upgrade to Business Central Spring 2019.
 2. Make backup of the database.
