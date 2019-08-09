@@ -524,9 +524,93 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
  
 1. Make backup of the database.
 2. Uninstall extensions from the tenants.
-3. Unpublish all extensions from the application server instance.
-4. Unpublish all system and application symbols.
-5. Run a technical upgrade on the application in the old database. This will upgrade the system tables to the BC 15 platform. Start the Business Central Administration Shell as an admin, and run this command: 
+
+    ``` 
+    Get-NAVAppInfo -ServerInstance bc140 -Tenant default | % { Uninstall-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
+    ``` 
+3. Unpublish all system and application symbols.
+
+    ``` 
+    Get-NAVAppInfo -ServerInstance bc140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
+    ```     
+4. Unpublish all extensions from the application server instance.
+
+    1. Get a list of published extensions:
+
+        get-navappinfo bc140
+
+        <!-- here are mine apps:
+
+            Id            : c526b3e9-b8ca-4683-81ba-fcd5f6b1472a
+        Name          : Sales and Inventory Forecast
+        Version       : 14.4.34866.0
+        Publisher     : Microsoft
+        ExtensionType : ModernDev
+        Scope         : Global
+        
+        Id            : d71b8abb-71f9-47e2-8de5-9a066fa3aa5f
+        Name          : My14Extension
+        Version       : 1.0.0.0
+        Publisher     : Default publisher
+        ExtensionType : ModernDev
+        Scope         : Tenant
+        
+        Id            : e97bbbc7-16b6-470b-9428-376baa778970
+        Name          : Send remittance advice by email
+        Version       : 14.4.34866.0
+        Publisher     : Microsoft
+        ExtensionType : ModernDev
+        Scope         : Global
+        
+        Id            : 8b3609cf-3947-44c3-9f20-ce6edc6da33f
+        Name          : _Exclude_ClientAddIns_
+        Version       : 14.4.34866.0
+        Publisher     : Microsoft
+        ExtensionType : ModernDev
+        Scope         : Global
+        
+        Id            : d09fa965-9a2a-424d-b704-69f3b54ed0ce
+        Name          : PayPal Payments Standard
+        Version       : 14.4.34866.0
+        Publisher     : Microsoft
+        ExtensionType : ModernDev
+        Scope         : Global
+        
+        Id            : 334ef79e-547e-4631-8ba1-7a7f18e14de6
+        Name          : Business Central Intelligent Cloud
+        Version       : 14.4.34866.0
+        Publisher     : Microsoft
+        ExtensionType : ModernDev
+        Scope         : Global
+        
+        Id            : 58623bfa-0559-4bc2-ae1c-0979c29fd9e0
+        Name          : Intelligent Cloud Base
+        Version       : 14.4.34866.0
+        Publisher     : Microsoft
+        ExtensionType : ModernDev
+        Scope         : Global
+        
+        Id            : 2a89f298-7ffd-44a5-a7ce-e08dac98abce
+        Name          : Essential Business Headlines
+        Version       : 14.4.34866.0
+        Publisher     : Microsoft
+        ExtensionType : ModernDev
+        Scope         : Global
+        
+        Id            : 8afe7b40-8c87-4beb-ada0-451d1761bf95
+        Name          : _Exclude_APIV1_
+        Version       : 14.4.34866.0
+        Publisher     : Microsoft
+        ExtensionType : ModernDev
+        Scope         : Global-->
+
+    2. Unpublish extensions:
+
+        ```
+        Get-NAVAppInfo -ServerInstance bc140 | % { Unpublish-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
+        ```
+
+5. Run a technical upgrade on the application in the old database using the Business Central 2019 Wave 2 Administration Shell. This will upgrade the system tables to the BC 15 platform. Start the Business Central Administration Shell as an admin, and run this command: 
 
     ``` 
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
