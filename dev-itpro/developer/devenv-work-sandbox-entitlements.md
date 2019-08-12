@@ -16,6 +16,9 @@ author: freddydk
 The experience that a user has in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] depends on the purchased subscription plan. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two main plans; the Essential and the Premium plan, plus a few more. For more detailed information about the Essential and Premium plans, see [Business Central](https://dynamics.microsoft.com/en-us/business-central/overview/) on the Microsoft Dynamics 365 Marketing site. 
 
 When you develop in a Docker sandbox, the Essential experience is automatically assigned to you (you set the experience on the **Company Information** page), which makes it difficult to test how a user with the Premium plan assigned will experience what you have developed.
+
+Subscription plans are enforced by Entitlements in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], but is not enforced in the Sandboxes for technical reasons. So basically all of your users are SUPER users with access to everything. Therefore you must emulate assigning a plan to a user by assigning the right set of user groups to the user. The next section describes the default setup for the different user plans.
+
 <br>
 
 ## Setup for users with different plans
