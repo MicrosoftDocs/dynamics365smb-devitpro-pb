@@ -58,7 +58,7 @@ Here is a JSON representation of the automationCompany.
 
 ## See Also 
 [Introduction to Automation APIs](itpro-introduction-to-automation-apis.md)  
-[Create Company](dynamics-microsoft-automation-automationCompanies-delete.md)  
+[Create Company](dynamics-microsoft-automation-automationCompanies-post.md)  
 [Update Company](dynamics-microsoft-automation-automationCompanies-patch.md)  
 [Delete Company](dynamics-microsoft-automation-automationCompanies-delete.md)  
 [Get automationCompany](dynamics-microsoft-automation-automationCompanies-get.md)
