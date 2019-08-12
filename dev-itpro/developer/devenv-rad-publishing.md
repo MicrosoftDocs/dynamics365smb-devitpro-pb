@@ -34,7 +34,7 @@ These files will need to be re-generated with full publishing (Ctrl+F5).
 A RAD file will be deleted as a result of a successful publishing.
 
 > [!NOTE]  
-> If RAD publishing fails, then you must do a full publishing before performing another RAD publishing. The final state of an application must be built using full publishing, and never with Rad publishing.
+> If RAD publishing fails, then you must do a full publishing before performing another RAD publishing. The final state of an application must be built using full publishing, and never with RAD publishing.
 
 ## RAD shortcuts
 There are two commands for starting a RAD-based action. 
