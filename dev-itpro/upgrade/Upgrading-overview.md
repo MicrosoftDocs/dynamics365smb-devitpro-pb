@@ -272,6 +272,7 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
 	"endLineNumber": 1,
 	"endColumn": 1
     -->
+<!-->
 8. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. Set the `"al.assemblyProbingPaths"` parameter:
 
     ```
