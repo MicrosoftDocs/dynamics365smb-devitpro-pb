@@ -13,11 +13,13 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Wave 2
 
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 marks the first release where C/AL is fully deprecated and replaced with AL. This means that the entire system and base application is based on extensions. This change will influence how you perform the upgrade compared to earlier releases.
+
 For now, these steps are for a single tenant deployment.
 
 ## Upgrading an unmodified application
 
-Use this scenario if you have a Business Central application that has not been modified. You might have installed Microsoft extensions and created and installed your own extensions. With this upgrade, you will replace the C/AL base application with the new Business Central V15.0 base app extension. The result will be a fully upgraded application and platform on V15.0.
+Use this scenario if you have a Business Central application that has not been modified. The application might include Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central V15.0 base app extension. The result will be a fully upgraded application and platform on V15.0.
 
 <!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app.-->
 
