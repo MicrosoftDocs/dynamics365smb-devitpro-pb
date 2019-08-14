@@ -23,7 +23,7 @@ Use this scenario if you have a Business Central application that has not been m
 
  ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
-## Prerequisite
+### Prerequisite
 
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update.
 
@@ -43,7 +43,7 @@ Use this scenario if you have a Business Central application that has not been m
         ``` 
 5. Dismount the tenant from the old application and stop the old Server instance.
 
-## Upgrade the application
+### Upgrade the application to the 15.0 platform
      
 1. Run a technical upgrade on the application to convert ot to the 15.0 platform.
 
@@ -53,7 +53,7 @@ Use this scenario if you have a Business Central application that has not been m
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
     ```
 2. Connect a Business Central 15.0 server instance to the database and start the instance.
-3. Increase the application application version .
+3. Increase the application version.
 
     ```
     Set-NAVApplication bc150 -ApplicationVersion 15.0.34737.0 -force
@@ -63,31 +63,34 @@ Use this scenario if you have a Business Central application that has not been m
     ```
     Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
-5. Publish the system application extension.
+5. Publish the System Application extension.
 
     ```
     Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
     ```
 
-6. Publish the Business Central base application extension:
+6. Publish the Business Central Base Application extension:
 
     ```
     Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
     ```
-7. Synchronize the tenant with the application.
+### Synchroxize and upgrade the tenant
+
+1. Mount the tenant to the application server instance.
+2. Synchronize the tenant with the application.
 
     ```  
     Sync-NAVTenant bc150
     ```
     At this stage, the tenant state is **OperationalDataUpgradePending**.
 
-8. Delete all objects except system objects. Do not synchronize the tenant/tables. 
-9. Synchronize the tenant with the system application extension (Microsoft_System Application_15.0.34737.0):
+3. Delete all objects except system objects. Do not synchronize the tenant/tables. 
+4. Synchronize the tenant with the System Application extension (Microsoft_System Application_15.0.34737.0):
 
     ```
     Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
     ```
-13. Synchronize the tenant with the Business Central base application extension (BaseApp):
+5. Synchronize the tenant with the Business Central Base Application extension (BaseApp):
 
     Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0 -Mode ForceSync
 
@@ -119,7 +122,7 @@ Use this scenario if you have a Business Central application that has not been m
     -->
     
 
-14. Upgrade the tenant data:
+6. Upgrade the tenant data:
 
     ```
     Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
@@ -143,97 +146,98 @@ Use this scenario if you have a Business Central application that has not been m
     Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
     ```
 -->
-17. Publish and upgrade Microsoft extensions:
+### Publish and upgrade Microsoft extensions
 
-    1. Publish extension:
-    
-        ```
-        Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
-        ```
-    2. Sync the tenant with the extension:
+1. Publish an extension:
 
-        ```
-        sync-navapp bc150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
-        ```
-    3. Upgrade the data to the extension:
+    ```
+    Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
+    ```
+2. Sync the tenant with the extension:
 
-        ```
-        Start-NAVAppDataUpgrade bc150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
-        ```    
+    ```
+    sync-navapp bc150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
+    ```
+3. Upgrade the data to the extension:
+
+    ```
+    Start-NAVAppDataUpgrade bc150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
+    ```    
 
 
-18. Publish and install 3rd party extensions.
+### Publish and install 3rd party extensions.
 
-    Option one - upgrade extension code:
+**Option one - upgrade extension code**
 
-    1. (optional) Upgrade the extension package to reference the base app and system app.
+1. (optional) Upgrade the extension package to reference the base app and system app.
 
-        1. Open the project in Visual Studio Code.
-        2. Download the symbols.
-        3. Modify the `dependencies` parameter in the app.json file to include dependencies on the base app and system app: 
-
-            ```
-              "dependencies": [      {
-                "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
-                "publisher": "Microsoft",
-                "name": "System Application",
-                "version": "15.0.0.0"
-              },
-              {
-                "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-                "publisher": "Microsoft",
-                "name": "BaseApp",
-                "version": "15.0.0.0"
-              }]
-
-        4. Build the project.
-
-    1. Publish Microsoft and 3rd-party extensions that were previously published:
-    
-        ```
-        Publish-NAVApp -ServerInstance bc150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
-        ```
-    4. Synchronize the tenant with the extension:
+    1. Open the project in Visual Studio Code.
+    2. Download the symbols.
+    3. Modify the `dependencies` parameter in the app.json file to include dependencies on the base app and system app: 
 
         ```
-        Sync-NAVApp bc150 -Name My14Extension -Version 1.0.0.3
-        ```
-    5. Upgrade the data to the extension:
+            "dependencies": [      {
+            "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+            "publisher": "Microsoft",
+            "name": "System Application",
+            "version": "15.0.0.0"
+            },
+            {
+            "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+            "publisher": "Microsoft",
+            "name": "BaseApp",
+            "version": "15.0.0.0"
+            }]
 
-        ```
-        Start-NAVAppDataUpgrade bc150 -Name My14Extension -Version 1.0.0.3
-        ```    
+    4. Build the project.
 
-        This upgrades the data and installs the extension version.
+2. Publish Microsoft and 3rd-party extensions that were previously published:
 
-    **Option two - configure server:**
+    ```
+    Publish-NAVApp -ServerInstance bc150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
+    ```
+3. Synchronize the tenant with the extension:
 
-    You can only use this option if you unpublish the old 3rd party extension version.
+    ```
+    Sync-NAVApp bc150 -Name My14Extension -Version 1.0.0.3
+    ```
+4. Upgrade the data to the extension:
 
-    1. Unpublish all 3rd party extensions.
+    ```
+    Start-NAVAppDataUpgrade bc150 -Name My14Extension -Version 1.0.0.3
+    ```    
 
-        This is only necessary if you do not modify the extension code to include a dependency on the baseApp and System Application extension.
-    2. Configure the Server Instance :
+    This upgrades the data and installs the extension version.
 
-        ```
-        Set-NAVServerConfiguration bc150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"} ]'
-        ```
-    2. Publish Microsoft and 3rd-party extensions that were previously published:
-    
-        ```
-        Publish-NAVApp -ServerInstance bc150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
-        ```
-    4. Synchronize the tenant with the extension:
+**Option two - configure server:**
 
-        ```
-        Sync-NAVApp bc150 -Name My14Extension -Version 1.0.0.3
-        ```
-    5. Install the extension:
+You can only use this option if you unpublish the old 3rd party extension version.
 
-        ```
-        Install-NAVApp bc150 -Name My14Extension -Version 1.0.0.3
-        ```
-## Upgrading Customized Application to Busines Central 15.0 Platform- Technical Upgrade
+1. Unpublish all 3rd party extensions.
+
+    This is only necessary if you do not modify the extension code to include a dependency on the baseApp and System Application extension.
+2. Configure the Server Instance :
+
+    ```
+    Set-NAVServerConfiguration bc150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"} ]'
+    ```
+2. Publish Microsoft and 3rd-party extensions that were previously published:
+
+    ```
+    Publish-NAVApp -ServerInstance bc150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
+    ```
+4. Synchronize the tenant with the extension:
+
+    ```
+    Sync-NAVApp bc150 -Name My14Extension -Version 1.0.0.3
+    ```
+5. Install the extension:
+
+    ```
+    Install-NAVApp bc150 -Name My14Extension -Version 1.0.0.3
+    ```
+
+## Upgrading a Customized Application to the 15.0 Platform - Technical Upgrade
 
 <!--
 ### Option 1 - Convert entire solution to an extension
@@ -514,59 +518,61 @@ Use this process when you have a customized Business Central application that yo
 
  ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
  
-## Prerequisite
+### Prerequisite
 
 1. Upgrade to Business Central Spring 2019.
 
-## Convert your application from C/AL to AL
+### Convert your application from C/AL to AL
 
-   1. Export all objects except system objects to txt in new syntax for AL. For this, I used Development Shell run as an admin:
-    
-      ```
-      Export-NAVApplicationObject -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=1..1999999999'
-      ```
+1. Export all objects except system objects to txt in new syntax for AL. For this, I used Development Shell run as an admin:
+
+    ```
+    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=1..1999999999'
+    ```
 
     Optionally, omit the text objects:
 
+
+    ```
+    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=1..129999'
+    ```
     
-      ```
-      Export-NAVApplicationObject -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=1..129999'
-      ```
-        
-      ```
-      Export-NAVApplicationObject -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=140000..1999999999'
-      ```
+    ```
+    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=140000..1999999999'
+    ```
+    
     There is a switch that you can set to tartget the runtime to 4.0. You should set this so you will not get so many warnings.  This is not documented yet.
 
-    2. If you have custom .Net addins, create a declaration file (.al). I created a small file called mydotnet.al
+2. If you have custom .Net addins, create a declaration file (.al). I created a small file called mydotnet.al
 
-        ```
-        dotnet
+    ```
+    dotnet
+    {
+        assembly("Microsoft.Dynamics.Nav.Client.BusinessChart")
         {
-            assembly("Microsoft.Dynamics.Nav.Client.BusinessChart")
+            type("Microsoft.Dynamics.Nav.Client.BusinessChart.BusinessChartAddIn";"Microsoft.Dynamics.Nav.Client.BusinessChart")
             {
-                type("Microsoft.Dynamics.Nav.Client.BusinessChart.BusinessChartAddIn";"Microsoft.Dynamics.Nav.Client.BusinessChart")
-                {
-                    IsControlAddIn = true;
-                }
-            }
-        
-            assembly("Microsoft.Dynamics.Nav.Client.TimelineVisualization")
-            {
-                type("Microsoft.Dynamics.Nav.Client.TimelineVisualization.InteractiveTimelineVisualizationAddIn";"Microsoft.Dynamics.Nav.Client.TimelineVisualization")
-                {
-                    IsControlAddIn = true;
-                }
+                IsControlAddIn = true;
             }
         }
-        ```
-    3. Start command prompt as administrator, navigate to txt2al.exe, and run the following command to convert to *.al. By default, the location is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client
-
-       ```      
-        txt2al --source=C:\exporttoal --target=C:\exporttoal\al --dotNetAddInsPackage=C:\exporttoal\dotnet\mydotnet.al
-       ```      
     
+        assembly("Microsoft.Dynamics.Nav.Client.TimelineVisualization")
+        {
+            type("Microsoft.Dynamics.Nav.Client.TimelineVisualization.InteractiveTimelineVisualizationAddIn";"Microsoft.Dynamics.Nav.Client.TimelineVisualization")
+            {
+                IsControlAddIn = true;
+            }
+        }
+    }
+    ```
+3. Start command prompt as administrator, navigate to txt2al.exe, and run the following command to convert to *.al. By default, the location is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client
+
+    ```      
+    txt2al --source=C:\exporttoal --target=C:\exporttoal\al --dotNetAddInsPackage=C:\exporttoal\dotnet\mydotnet.al
+    ```      
+
     This will create separate al file for each object.
+
 3. Create a new application database on BC 15. Use the New-NAVApplicationDatabase cmdlet of the Aministration Shell:
 
     ```
@@ -605,7 +611,7 @@ Use this process when you have a customized Business Central application that yo
 	"endLineNumber": 1,
 	"endColumn": 1
     -->
-2. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. Set the `"al.assemblyProbingPaths"` parameter:
+8. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. Set the `"al.assemblyProbingPaths"` parameter:
 
     ```
     	"al.assemblyProbingPaths": [
@@ -711,7 +717,7 @@ Use this process when you have a customized Business Central application that yo
 
 10. Build the extension package.
 
-## Convert test application to AL
+## Convert the test application to AL
 
 At minimum, you must create an extension that contains the test libraries (CALTestLibraries.W1.fob) and test runner objects (CALTestRunner.fob). This is required for re-pubishing Microsoft extensions as part of the upgrade.. 
  
