@@ -81,7 +81,7 @@ The table associates page IDs with target articles, but the URL to where to find
 You can run a script that populates the **Page Documentation** table with a mapping for Microsoft's page objects and your own page objects. This is useful if you want to reuse legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] deployment. In that case, you can choose to overwrite the mapping that Microsoft has made.  
 
 > [!CAUTION]
-> The following content is intended as an example. You can choose to do things differently, and while you can use this script as inspiration, reusing the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] legacy Help, the legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help Server, and populating the system table, **Page Documentation**, is not the recommended path going forward. We recommend that you convert any existing content to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] format instead, and that you fork our GitHub repos. For more information, see [Extend, Customize, and Collaborate on the Help for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](contributor-guide.md) and [Migrate Legacy Help to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Format](../upgrade/migrate-help.md).  
+> The following content is intended as an example. You can choose to do things differently, and while you can use this information as inspiration, reusing the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] legacy Help, the legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help Server, and populating the system table, **Page Documentation**, is not the recommended path going forward. We recommend that you convert any existing content to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] format instead, and that you fork our GitHub repos. For more information, see [Extend, Customize, and Collaborate on the Help for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](contributor-guide.md) and [Migrate Legacy Help to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Format](../upgrade/migrate-help.md).  
 
 In this example, you have chosen not to apply context-sensitive Help links to your page objects, and you want to overwrite the UI-to-Help mapping that Microsoft has made in the system table.  
 
@@ -108,7 +108,8 @@ Once you have done this mapping, you can apply it to the **Page Documentation** 
 [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
-[Blog post: Extending and customizing the Help](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/11/extending-and-customizing-help)  
-[Blog post: Collaborate on content for Business Central](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/15/collaborate-on-content-for-business-central)  
+[Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
+[Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
+[Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
