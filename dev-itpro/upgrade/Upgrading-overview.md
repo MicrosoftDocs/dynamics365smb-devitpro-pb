@@ -29,7 +29,7 @@ Use this scenario if you have a Business Central application that has not been m
 
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update.
 
-## Prepare the old application and tenant databases for upgrade
+### Prepare the old application and tenant databases for upgrade
 
 1. Make backup of the databases.
 2. Uninstall all extensions from the tenants.
@@ -76,7 +76,8 @@ Use this scenario if you have a Business Central application that has not been m
     ```
     Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
     ```
-### Synchroxize and upgrade the tenant
+
+### Synchronize and upgrade the tenant
 
 1. Mount the tenant to the application server instance.
 2. Synchronize the tenant with the application.
@@ -326,8 +327,8 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
 	"startColumn": 1,
 	"endLineNumber": 1,
 	"endColumn": 1
-    -->
-<!-->
+
+
 8. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. Set the `"al.assemblyProbingPaths"` parameter:
 
     ```
@@ -520,7 +521,7 @@ Use this process when you have a customized Business Central application that yo
 
  ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
  
-### Prerequisite
+### Prerequisites
 
 1. Upgrade to Business Central Spring 2019.
 
@@ -719,7 +720,7 @@ Use this process when you have a customized Business Central application that yo
 
 10. Build the extension package.
 
-## Convert the test application to AL
+### Convert the test application to AL
 
 At minimum, you must create an extension that contains the test libraries (CALTestLibraries.W1.fob) and test runner objects (CALTestRunner.fob). This is required for re-pubishing Microsoft extensions as part of the upgrade.. 
  
