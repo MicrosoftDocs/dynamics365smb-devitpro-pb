@@ -64,7 +64,7 @@ page 50101 "Reward Card"
 
 In this example, the app contains a page object that is mapped to the *sales-rewards* Help file on the website that the app.json specifies. As a result, the *Learn more* link in the tooltips for this page will go to the equivalent of *https://mysite.com/documentation/sales-rewards*.  
 
-You can use the [*ContextSensitiveHelpPage* property](../developer/properties/devenv-contextsensitivehelppage-property) to direct all Help calls to the same article, or to group the Help calls based on individual features or workflows. For example, Microsoft has chosen to group the context-sensitive links depending on the granularity of the Help for specific area in the base application. If the Help for a specific area is made more granular, then the context-sensitive Help mapping is updated accordingly.  
+You can use the [ContextSensitiveHelpPage property](../developer/properties/devenv-contextsensitivehelppage-property.md) to direct all Help calls to the same article, or to group the Help calls based on individual features or workflows. For example, Microsoft has chosen to group the context-sensitive links depending on the granularity of the Help for specific area in the base application. If the Help for a specific area is made more granular, then the context-sensitive Help mapping is updated accordingly.  
 
 You can set the *ContextSensitiveHelpPage* property on all pages, or only on those that you don't want to get the default Help page for your website. For page extensions, the value of the *ContextSensitiveHelpPage* property will apply only to the controls that the page extension adds to the extended page objects. For example, if your page extension adds two new controls to the base application's Customer Card page, then the *Learn more* links in the tooltips for those two controls will go to the Help page that you have specified, and the *Learn more* links in the rest of the controls will go to the default Help that is specified in the base application. This way, multiple apps can extend the same page object and each apply their own content-sensitive Help link without overwriting the context-sensitive links for other apps.  
 
@@ -99,7 +99,9 @@ In this example, you want to replace the values of the fields in the **Relative 
 |4     |Payment Terms |W1              |N_4|
 |11300 |Financial Journal  |BE         |N_11300 |
 
-Once you have done this mapping, you can apply it to the **Page Documentation** table by using a script that updates the table in the SQL Server database, for example.
+Once you have done this mapping, you can apply it to the **Page Documentation** table by using a script that updates the table in the SQL Server database, for example.  
+
+You can find a couple of suggestions for how to go about this in our blog post, [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/).
 
 ## See also
 
