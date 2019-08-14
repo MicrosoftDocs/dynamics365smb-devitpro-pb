@@ -19,11 +19,10 @@ For now, these steps are for a single tenant deployment.
 
 Use this scenario if you have a Business Central application that has not been modified. You might have installed Microsoft extensions and created and installed your own extensions. With this upgrade, you will replace the C/AL base application with the new Business Central V15.0 base app extension. The result will be a fully upgraded application and platform on V15.0.
 
-<!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app. 
+<!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app.-->
 
  ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
---> 
 ## Prerequisite
 
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update.
@@ -41,11 +40,8 @@ Use this scenario if you have a Business Central application that has not been m
     ``` 
     Get-NAVAppInfo -ServerInstance bc140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
 
-        ```
-4. (Optional) Unpublish all 3rd party extensions.
-
-    This is only necessary if you do not modify the extension code to include a dependency on the baseApp and System Application extension. 
-5. Dismount the tenant from the old application and stop the old Server instance.   ```
+        ``` 
+5. Dismount the tenant from the old application and stop the old Server instance.
 
 ## Upgrade the application
      
@@ -214,7 +210,10 @@ Use this scenario if you have a Business Central application that has not been m
 
     You can only use this option if you unpublish the old 3rd party extension version.
 
-    1. Configure the Server Instance :
+    1. Unpublish all 3rd party extensions.
+
+        This is only necessary if you do not modify the extension code to include a dependency on the baseApp and System Application extension.
+    2. Configure the Server Instance :
 
         ```
         Set-NAVServerConfiguration bc150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"} ]'
