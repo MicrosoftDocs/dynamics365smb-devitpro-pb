@@ -58,23 +58,23 @@ Use this scenario if you have a Business Central application that has not been m
 3. Increase the application version.
 
     ```
-    Set-NAVApplication bc150 -ApplicationVersion 15.0.34737.0 -force
+    Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
     ```
 4. Publish platform system symbols.
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
 5. Publish the System Application extension.
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
     ```
 
 6. Publish the Business Central Base Application extension:
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
     ```
 
 ### Synchronize and upgrade the tenant
@@ -83,7 +83,7 @@ Use this scenario if you have a Business Central application that has not been m
 2. Synchronize the tenant with the application.
 
     ```  
-    Sync-NAVTenant bc150
+    Sync-NAVTenant BC150
     ```
     At this stage, the tenant state is **OperationalDataUpgradePending**.
 
@@ -91,11 +91,11 @@ Use this scenario if you have a Business Central application that has not been m
 4. Synchronize the tenant with the System Application extension (Microsoft_System Application_15.0.34737.0):
 
     ```
-    Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
+    Sync-NAVApp BC150 -Name "System Application" -Version 15.0.34737.0
     ```
 5. Synchronize the tenant with the Business Central Base Application extension (BaseApp):
 
-    Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0 -Mode ForceSync
+    Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0 -Mode ForceSync
 
     This can take several minutes. 
 
@@ -104,7 +104,7 @@ Use this scenario if you have a Business Central application that has not been m
     Got this error the second time:
     
     ```
-    Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
     Sync-NAVApp : Table Invoice Post. Buffer :: Unsupported field change.
     Field:Additional Grouping Identifier; Change:LengthChanged
     Table Incoming Document :: Unsupported field change. Field:URL1; Change:Remove
@@ -112,11 +112,11 @@ Use this scenario if you have a Business Central application that has not been m
     Table Incoming Document :: Unsupported field change. Field:URL3; Change:Remove
     Table Incoming Document :: Unsupported field change. Field:URL4; Change:Remove
     At line:1 char:1
-    + Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    + Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
     + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         + CategoryInfo          : InvalidOperation: (:) [Sync-NAVApp], InvalidOper
        ationException
-        + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$bc150/nav-systemappli
+        + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC150/nav-systemappli
        cation,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.SyncNavApp
     ```
     
@@ -128,7 +128,7 @@ Use this scenario if you have a Business Central application that has not been m
 6. Upgrade the tenant data:
 
     ```
-    Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
+    Start-NAVDataUpgrade BC150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
     ```        
 
     This upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before the next step and to open the client.
@@ -141,12 +141,12 @@ Use this scenario if you have a Business Central application that has not been m
 15. The upgrade installs System Application on the tenant. If it does not, manually install it on the tenant.
 
     ```
-    Install-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
+    Install-NAVApp BC150 -Name "System Application" -Version 15.0.34737.0
     ```
 16. Install base application extension on the tenant:
 
     ```
-    Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    Install-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
     ```
 -->
 ### Publish and upgrade Microsoft extensions
@@ -154,17 +154,17 @@ Use this scenario if you have a Business Central application that has not been m
 1. Publish an extension:
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
     ```
 2. Sync the tenant with the extension:
 
     ```
-    sync-navapp bc150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
+    sync-navapp BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
     ```
 3. Upgrade the data to the extension:
 
     ```
-    Start-NAVAppDataUpgrade bc150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
+    Start-NAVAppDataUpgrade BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
     ```    
 
 
@@ -197,17 +197,17 @@ Use this scenario if you have a Business Central application that has not been m
 2. Publish Microsoft and 3rd-party extensions that were previously published:
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
     ```
 3. Synchronize the tenant with the extension:
 
     ```
-    Sync-NAVApp bc150 -Name My14Extension -Version 1.0.0.3
+    Sync-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
     ```
 4. Upgrade the data to the extension:
 
     ```
-    Start-NAVAppDataUpgrade bc150 -Name My14Extension -Version 1.0.0.3
+    Start-NAVAppDataUpgrade BC150 -Name My14Extension -Version 1.0.0.3
     ```    
 
     This upgrades the data and installs the extension version.
@@ -222,22 +222,22 @@ You can only use this option if you unpublish the old 3rd party extension versio
 2. Configure the Server Instance :
 
     ```
-    Set-NAVServerConfiguration bc150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"} ]'
+    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"} ]'
     ```
 2. Publish Microsoft and 3rd-party extensions that were previously published:
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
     ```
 4. Synchronize the tenant with the extension:
 
     ```
-    Sync-NAVApp bc150 -Name My14Extension -Version 1.0.0.3
+    Sync-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
     ```
 5. Install the extension:
 
     ```
-    Install-NAVApp bc150 -Name My14Extension -Version 1.0.0.3
+    Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
     ```
 
 ## Upgrading a Customized Application to the 15.0 Platform - Technical Upgrade
@@ -453,20 +453,20 @@ For this scenario, I used a BC 14.0 modified base application on a BC 14.0 serve
 14. Increase the application application version.
 
     ``` 
-    Set-NAVApplication bc150 -ApplicationVersion 15.0.34737.0 -force
+    Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
 
     ``` 
 15. Publish platform system symbols:
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
 
     Should you unpublish old all old symbols?
 16. Publish the custom base app:
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
     ```
 
     **Error:**
@@ -483,7 +483,7 @@ DebuggerCodeViewer.Page.al(14,36): error AL0417: Control add-in '"Microsoft.Dyna
 17. Synchronize the tenant.
   
     ```
-    C:\windows\system32> Sync-NAVTenant bc150
+    C:\windows\system32> Sync-NAVTenant BC150
     ```
  
 18. Delete all objects except system objects from application database.
@@ -491,24 +491,24 @@ DebuggerCodeViewer.Page.al(14,36): error AL0417: Control add-in '"Microsoft.Dyna
 19. Synchronize the tenant with the base application extension (BaseApp):
 
     ```
-    Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
     ```
 20. Upgrade the tenant data:
 
     ```
-    Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
+    Start-NAVDataUpgrade BC150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
     ```
         
 21. Install system application extension (Microsoft_System Application_15.0.34737.0) on tenant.
 
     ```
-    Sync-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
+    Sync-NAVApp BC150 -Name "System Application" -Version 15.0.34737.0
     ```
 
 22. Install base Application extension on the tenant:
 
     ```
-    Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34737.0
+    Install-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
     ```
 
 
@@ -800,24 +800,24 @@ CALTestRunner.fob
 2. Increase the application version:
 
     ``` 
-    Set-NAVApplication bc150 -ApplicationVersion 15.0.34982.0 -force
+    Set-NAVApplication BC150 -ApplicationVersion 15.0.34982.0 -force
 
     ``` 
 3. Publish platform system symbols:
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
 4. Publish the custom base app extension:
 
     ```
-    Publish-NAVApp -ServerInstance bc150 -Path "C:\Users\jswymer\Documents\AL\CusomtBaseApp2\Microsoft_BaseApp_15.0.34982.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\CusomtBaseApp2\Microsoft_BaseApp_15.0.34982.0.app" -SkipVerification
     ```
 
 5. Synchronize the tenant.
   
     ```
-    Sync-NAVTenant bc150
+    Sync-NAVTenant BC150
     ```
     When completed the tenant state is OperationalDataUpgradePending.
 6. Delete all objects except system objects from application database (IDs 2000000000 and greater). Do not synchronize the tenant/tables. 
@@ -825,31 +825,31 @@ CALTestRunner.fob
 7. Synchronize the tenant with the base application extension (BaseApp):
 
     ```
-    Sync-NAVApp bc150 -Name "BaseApp" -Version 15.0.34982.0
+    Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34982.0
     ```
 
     This will append tables in database with guids extensions.
 8. Upgrade the tenant data:
 
     ```
-    Start-NAVDataUpgrade bc150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
+    Start-NAVDataUpgrade BC150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
     ```
 <!-- not required with full cusom app       
 21. Install system application extension (Microsoft_System Application_15.0.34737.0) on tenant.
 
     ```
-    Install-NAVApp bc150 -Name "System Application" -Version 15.0.34737.0
+    Install-NAVApp BC150 -Name "System Application" -Version 15.0.34737.0
     ```
 -->
 
 9. Install custom base application extension on the tenant:
 
     ```
-    Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34982.0
+    Install-NAVApp BC150 -Name "BaseApp" -Version 15.0.34982.0
     ```
 
     <!-- I got an error when I tried to do this at first: The get-navdataupgrade indicates that it is done.
-        C:\windows\system32> Get-NAVDataUpgrade bc150 -Tenant default
+        C:\windows\system32> Get-NAVDataUpgrade BC150 -Tenant default
         
         
         ExtensionData             : System.Runtime.Serialization.ExtensionDataObject
@@ -868,31 +868,31 @@ CALTestRunner.fob
         
         
         
-        C:\windows\system32> Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34982.0
+        C:\windows\system32> Install-NAVApp BC150 -Name "BaseApp" -Version 15.0.34982.0
         Install-NAVApp : Could not install the extension BaseApp on tenant default due to the following error: Error code: 85132273
         At line:1 char:1
-        + Install-NAVApp bc150 -Name "BaseApp" -Version 15.0.34982.0
+        + Install-NAVApp BC150 -Name "BaseApp" -Version 15.0.34982.0
         + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             + CategoryInfo          : InvalidOperation: (:) [Install-NAVApp], InvalidOperationException
-            + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$bc150/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp 
+            + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC150/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp 
 
-            C:\windows\system32> Install-NAVApp bc150 -Name BaseApp -Version 15.0.34982.0
+            C:\windows\system32> Install-NAVApp BC150 -Name BaseApp -Version 15.0.34982.0
             Install-NAVApp : Could not install the extension BaseApp on tenant default due to the following error: Error code: 85132273
             At line:1 char:1
-            + Install-NAVApp bc150 -Name BaseApp -Version 15.0.34982.0
+            + Install-NAVApp BC150 -Name BaseApp -Version 15.0.34982.0
             + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 + CategoryInfo          : InvalidOperation: (:) [Install-NAVApp], InvalidOperationException
-                + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$bc150/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp
+                + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC150/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp
             
-            C:\windows\system32> Install-NAVApp bc150 -Name BaseApp -Version 15.0.34982.0 -Tenant default
+            C:\windows\system32> Install-NAVApp BC150 -Name BaseApp -Version 15.0.34982.0 -Tenant default
             Install-NAVApp : Could not install the extension BaseApp on tenant default due to the following error: Error code: 85132273
             At line:1 char:1
-            + Install-NAVApp bc150 -Name BaseApp -Version 15.0.34982.0 -Tenant defa ...
+            + Install-NAVApp BC150 -Name BaseApp -Version 15.0.34982.0 -Tenant defa ...
             + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 + CategoryInfo          : InvalidOperation: (:) [Install-NAVApp], InvalidOperationException
-                + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$bc150/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp
+                + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC150/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp
             
-            C:\windows\system32> Restart-NAVServerInstance bc150
+            C:\windows\system32> Restart-NAVServerInstance BC150
             
             
             ServerInstance : MicrosoftDynamicsNavServer$BC150
@@ -911,24 +911,24 @@ CALTestRunner.fob
    <!-- 1. Either change teh app.json file for each extension, so that the application version is removed and the dependency is added for the custom Base App.Or, configure the DestinationAppsForMigration server setting. 
 
     ```
-    Repair-NAVApp bc150 -Name  My14Extension -Version 1.0.0.0
+    Repair-NAVApp BC150 -Name  My14Extension -Version 1.0.0.0
     ``` 1. Sync repaired app.:
 
     ```
-    Repair-NAVApp bc150 -Name  My14Extension -Version 1.0.0.0
+    Repair-NAVApp BC150 -Name  My14Extension -Version 1.0.0.0
     ```
     
     **Error:**
 
-    C:\windows\system32> sync-navApp bc150 -Name  My14Extension -Version 1.0.0.0
+    C:\windows\system32> sync-navApp BC150 -Name  My14Extension -Version 1.0.0.0
     WARNING: Cannot synchronize the extension My14Extension because it is already synchronized.
-    C:\windows\system32> install-navApp bc150 -Name  My14Extension -Version 1.0.0.0
+    C:\windows\system32> install-navApp BC150 -Name  My14Extension -Version 1.0.0.0
     install-navApp : Object of type Table with ID 18 could not be found.
     At line:1 char:1
-    + install-navApp bc150 -Name  My14Extension -Version 1.0.0.0
+    + install-navApp BC150 -Name  My14Extension -Version 1.0.0.0
     + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         + CategoryInfo          : InvalidOperation: (:) [Install-NAVApp], InvalidOperationException
-        + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$bc150/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp  -->
+        + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC150/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp  -->
 
     
     **Modifying extensions code:**
@@ -953,7 +953,7 @@ CALTestRunner.fob
     ** Set the Server**
 
     ```
-    Set-NAVServerConfiguration bc150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"2b2a78d9-962c-498a-8d97-6d4de94edffc", "name":"TestApp", "publisher": "Microsoft"}]'
+    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"2b2a78d9-962c-498a-8d97-6d4de94edffc", "name":"TestApp", "publisher": "Microsoft"}]'
     ```
 
 25. Publish 3rd party extensions.
@@ -964,17 +964,17 @@ CALTestRunner.fob
     1. Publish Microsoft and 3rd-party extensions that were previously published:
     
         ```
-        Publish-NAVApp -ServerInstance bc150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.4.app" -SkipVerification
+        Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.4.app" -SkipVerification
         ```
     2. Synchronize the tenant with the extension:
 
         ```
-        Sync-NAVApp bc150 -Name My14Extension -Version 1.0.0.4
+        Sync-NAVApp BC150 -Name My14Extension -Version 1.0.0.4
         ```
     3. Upgrade the data to the extension:
 
         ```
-        Start-NAVAppDataUpgrade bc150 -Name My14Extension -Version 1.0.0.4
+        Start-NAVAppDataUpgrade BC150 -Name My14Extension -Version 1.0.0.4
         ```    
 
         This upgrades the data and installs the extension version.
@@ -984,12 +984,12 @@ CALTestRunner.fob
         1. Publish Microsoft and 3rd-party extensions that were previously published:
     
         ```
-        Publish-NAVApp -ServerInstance bc150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.4.app" -SkipVerification
+        Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.4.app" -SkipVerification
         ```
     2. Install the tenant with the extension:
 
         ```
-        Install-NAVApp bc150 -Name My14Extension -Version 1.0.0.4
+        Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.4
         ```
 
 
