@@ -533,6 +533,7 @@ Use this process when you have a customized Business Central application that yo
     Export-NAVApplicationObject -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=1..1999999999'
     ```
 
+    <!-- 
     Optionally, omit the text objects:
 
 
@@ -546,7 +547,7 @@ Use this process when you have a customized Business Central application that yo
     
     There is a switch that you can set to tartget the runtime to 4.0. You should set this so you will not get so many warnings.  This is not documented yet.
 
-2. If you have custom .Net addins, create a declaration file (.al). I created a small file called mydotnet.al
+2. If you have custom .NET add-ins, create a declaration file (.al). I created a small file called mydotnet.al
 
     ```
     dotnet
@@ -571,12 +572,12 @@ Use this process when you have a customized Business Central application that yo
 3. Start command prompt as administrator, navigate to txt2al.exe, and run the following command to convert to *.al. By default, the location is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client
 
     ```      
-    txt2al --source=C:\exporttoal --target=C:\exporttoal\al --dotNetAddInsPackage=C:\exporttoal\dotnet\mydotnet.al
+    txt2al --source=C:\exporttoal\expoertedbc14app2.txt --target=C:\exporttoal\al2 --injectDotNetAddIns --dotNetAddInsPackage=C:\exporttoal\dotnet\mydotnet.al
     ```      
 
     This will create separate al file for each object.
 
-3. Create a new application database on BC 15. Use the New-NAVApplicationDatabase cmdlet of the Aministration Shell:
+3. Create a new application database on BC 15. Use the New-NAVApplicationDatabase cmdlet of the Administration Shell:
 
     ```
     New-NAVApplicationDatabase -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName MyTest15Db
@@ -716,7 +717,7 @@ Use this process when you have a customized Business Central application that yo
     
             ```          
 
-   2. CodeViewer is no longer used. Either remove all references to it in the application (recommended) or copy the **CodeViewer** folder from the Addin folder of Business Central 140 RoleTailored client installation to the Addins folder of the Business Central 150 Server installation.
+   2. CodeViewer is no longer used. Either remove all references to it in the application (recommended) or copy the **CodeViewer** folder from the Addin folder of Business Central 140 RoleTailored client installation to the Add-ins folder of the Business Central 150 Server installation.
 
 10. Build the extension package.
 
