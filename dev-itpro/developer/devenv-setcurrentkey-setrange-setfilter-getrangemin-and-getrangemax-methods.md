@@ -50,7 +50,7 @@ The following methods are used to filter records in a table:
 
     -   If no keys can be found that include the fields that you specify, the return value is FALSE. If you do not test the return value, a run-time error occurs. If you do test the return value, the program will continue to run even though no key was found.  
 
- For more information about this method, see [SetCurrentKey Method (Record)](methods/devenv-setcurrentkey-method-record.md).
+ For more information about this method, see [SetCurrentKey Method (Record)](methods-auto/record/record-setcurrentkey-method.md).
 
 ## SETRANGE Method  
  SETRANGE sets a simple filter on a field.  

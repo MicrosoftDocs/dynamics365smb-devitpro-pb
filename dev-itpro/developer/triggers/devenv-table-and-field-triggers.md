@@ -25,9 +25,17 @@ Tables have the following triggers.
 |Table trigger|Runs when|  
 |-------------------|-------------------|  
 |[OnInsert Trigger](devenv-oninsert-trigger.md)|A new record is inserted into the table.|  
-|[OnModify Trigger](devenv-onmodify-trigger.md)|A record in the table is modified.|  
-|[OnDelete Trigger](devenv-ondelete-trigger.md)|A record in the table is deleted.|  
+|[OnBeforeInsert Trigger](devenv-onbeforeinsert-trigger.md)|A new record is inserted into the table.|   
+|[OnAfterInsert Trigger](devenv-onafterinsert-trigger.md)|A new record is inserted into the table.| 
+|[OnModify Trigger](devenv-onmodify-trigger.md)|A record in the table is modified.|
+|[OnBeforeModify Trigger](devenv-onbeforemodify-trigger.md)|A record in the table is modified.|   
+|[OnAfterModify Trigger](devenv-onaftermodify-trigger.md)|A record in the table is modified.|  
+|[OnDelete Trigger](devenv-ondelete-trigger.md)|A record in the table is deleted.| 
+|[OnBeforeDelete Trigger](devenv-onbeforedelete-trigger.md)|A record in the table is deleted.|   
+|[OnAfterDelete Trigger](devenv-onafterdelete-trigger.md)|A record in the table is deleted.|   
 |[OnRename Trigger](devenv-onrename-trigger.md)|A record is modified in a primary key field.|  
+|[OnBeforeRename Trigger](devenv-onbeforerename-trigger.md)|A record is modified in a primary key field.|  
+|[OnAfterRename Trigger](devenv-onafterrename-trigger.md)|A record is modified in a primary key field.|  
 
 Fields have the following triggers.  
 

@@ -9,7 +9,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-caps.latest.revision: 11
 ms.author: solsen
 ---
 
@@ -119,6 +118,6 @@ page 50101 "Simple Customerlist Page"
 [Page and Page Extension Properties Overview](properties/devenv-page-property-overview.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
 [Using Designer](devenv-inclient-designer.md)  
-[Arranging Rows and Columns on a Fasttab]()  
+[Arranging Fields on a Fasttab](devenv-arranging-fields-on-fasttab.md)  
 [Actions Overview](devenv-actions-overview.md)
 

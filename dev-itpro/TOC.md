@@ -240,6 +240,12 @@
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
+## XMLports
+### [XMLport Overview](developer/devenv-xmlport-overview.md)
+### [XMLport Object](developer/devenv-xmlport-object.md)
+### [Defining an XMLport Schema](developer/devenv-xmlport-schema.md)  
+### [Request Pages](developer/devenv-request-pages.md)
+### [XMLport Triggers](developer/triggers/devenv-xmlport-triggers.md)
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-universal-app.md)

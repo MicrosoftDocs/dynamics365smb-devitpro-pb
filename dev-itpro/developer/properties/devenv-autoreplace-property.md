@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Sets whether imported records automatically replace existing records with the same primary key.  
   
 ## Applies To  
- Data items in XMLports.  
+ Table elements in XMLports.  
 
 ## Syntax
 ```

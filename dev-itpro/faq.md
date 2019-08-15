@@ -23,7 +23,9 @@ This section contains answers to frequently asked questions about developing for
 
 ## How often is [!INCLUDE[prodshort](includes/prodshort.md)] updated?
 
-[!INCLUDE [prodshort](developer/includes/prodshort.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). This means continuous service updates and a major update every 6 months. Stay tuned for more information.  
+[!INCLUDE [prodshort](developer/includes/prodshort.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). This means continuous service updates and a major update every 6 months. For more information, see [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
+
+You can get an overview of new and upcoming changes in the [Dynamics 365 release plans](https://aka.ms/businessappsreleasenotes).  
 
 For information about lifecycle support for [!INCLUDE [prodshort](includes/prodshort.md)] on-premises, see [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md).  
 
@@ -56,4 +58,6 @@ The limit for the size of each tenant's data in [!INCLUDE [prodshort](developer/
 [FAQ for Developing in AL](developer/devenv-dev-faq.md)  
 [Features not implemented in on-premises deployments of [!INCLUDE[prodlong](includes/prodlong.md)]](features-not-implemented-on-premises.md)  
 [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md)  
+[Dynamics 365 Business Central Compliance](/dynamics365/business-central/compliance/compliance-overview)  
+[FAQ for Dynamics 365 Update Policies](/dynamics365/get-started/faq-update-policy)  
 [Welcome to [!INCLUDE[prodlong](includes/prodlong.md)]](/dynamics365/business-central/index)  

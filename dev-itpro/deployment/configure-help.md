@@ -38,8 +38,6 @@ For the Web client, which is accessed by users from a browser or from the mobile
 ```json
     "//BaseHelpUrl":  "The location of Help for this application.",
     "BaseHelpUrl": "https://mysite.com/{0}/documentation/",
-    "//BaseHelpSearchUrl":  "The URL to use if Help is included in the Search functionality in Business Central.",
-    "BaseHelpSearchUrl": "https://docs.microsoft.com/{0}/search/index?search={1}&scope=BusinessCentral",
     "//DefaultRelativeHelpPath":  "The Help article to look up if no other article can be found.",
     "DefaultRelativeHelpPath": "index",
 ```
