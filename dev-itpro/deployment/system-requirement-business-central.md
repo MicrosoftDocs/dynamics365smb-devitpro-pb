@@ -8,14 +8,14 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 06/25/2019
+ms.date: 08/15/2019
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
 The following sections list the minimum hardware and software requirements to use or connect to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, and to install and run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
 
 > [!NOTE]  
->  [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs some software if it is not already present in the target computer. For more information, see the "Additional Information" section for each component.  
+> [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs some software if it is not already present in the target computer. For more information, see the "Additional Information" section for each component.  
 
 ## Client Components
 
@@ -49,8 +49,6 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 |Additional software|<ul><li>A third-party telephony or VoIP app such as Skype is required for placing calls from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>A third-party email program such as Outlook is required for sending emails from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>Microsoft Office 2019, Office 2016, or Office 365 is required for sending data to Microsoft Excel or to Microsoft Word.</li></ul>|  
 |Additional information|<ul><li>Device diagonal screen size 7” for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4” for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>|
 
-
-
 ### AL Development Requirements
 
 The following table shows the minimum system requirements for customizing or extending [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using the AL language in Visual Studio Code.
@@ -58,7 +56,7 @@ The following table shows the minimum system requirements for customizing or ext
 |||
 |-|-|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
-|Hardware resources|<ul><li>Hard disk space: 200 MB.</li><li>Memory: 32 GB.</li></ul>|
+|Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU 4 cores minimum</li><li>Memory: 16 GB for development only. </br> 32 GB is recommended for developing and deploying locally. </br>64 GB is recommended for developing large apps.</li><li>Memory for development and local deployment: minimum 32 GB, 64 GB is recommended.</li></ul>|
 
 For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
 
