@@ -13,9 +13,8 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Wave 2
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 marks the first release where C/AL is fully deprecated and replaced with AL. This means that the entire system and base application is based on extensions. This change will influence how you perform the upgrade compared to earlier releases.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 marks the release where C/AL has been deprecated and replaced with AL. From an application perspective, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. This change will influence how you perform the upgrade compared to earlier releases.
 
-For now, these steps are for a single tenant deployment.
 
 ## Upgrading an unmodified application
 
