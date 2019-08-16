@@ -18,7 +18,7 @@ ms.author: solsen
 With the recent preview release of the base application converted to AL, you can now preview converting your existing C/AL code-customized on-prem solution to an AL code-customized on-prem solution as well. Below outlines the steps involved to do so. Please notice that this is just to test out the conversion; running a modified base application on AL in production is not yet supported. Before venturing into this, we recommend getting familiar with the basics of setting up and developing in Visual Studio Code and AL, see [Developing Extensions in AL](devenv-dev-overview.md). 
 
 > [!NOTE]  
-> Moving on-premise C/AL code customizations to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] online, requires converting these to AL extensions. This could include converting the C/AL deltas to AL extension code as a starting point, as outlined in [The Txt2Al Conversion Tool](devenv-txt2al-tool.md). 
+> Moving on-premise C/AL code customizations to [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] online, requires converting these to AL extensions. This could include converting the C/AL deltas to AL extension code as a starting point, as outlined in [The Txt2Al Conversion Tool](devenv-txt2al-tool.md). 
 
 <!--## To run a code conversion from C/AL to AL-->
 
@@ -26,21 +26,21 @@ With the recent preview release of the base application converted to AL, you can
 
 If your solution uses Microsoft (1st-party) extensions, you will have to convert the test library from C/AL to AL, in addition to the base application. The reason for this is that the Microsoft extensions rely on the test symbols. The easiest way to do this is to import the **CALTestLibraries.W1.fob** file into the old database. This file is available on the installation media (DVD) for in the **TestToolKit** folder.
 
-You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](includes/devshell.md)].
+You can do this using the ([!INCLUDE[nav_dev_long](../developer/../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
 Alternatively, you can create separate AL project in Visual Studio Code for the test libraries and compile the project to into an extension.
 
 ## 2. Compile all the objects in your C/AL solution
 
 Compiling all the objects is a prerequisite for a successful and complete export. To compile objects, you can use either of the following:  
-- C/SIDE ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
-- [Compile-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](includes/devshell.md)]. Make sure to run this as an administrator.
+- C/SIDE ([!INCLUDE[nav_dev_long](../developer/../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
+- [Compile-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run this as an administrator.
 
 ## 3. Export the application from the database to the new TXT syntax
 
 Once the application compiles, you must export all C/AL application objects, except system tables and codeunits, to the new TXT format, that can be used as input to the conversion tool. To do so, use the [Export-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) PowerShell cmdlet with the `ExportToNewSyntax` switch.
 
-When you are converting a custom base application to AL as part, omit all system objects. Thes have IDs in the 2000000000 range. 
+When you are converting a custom base application to AL as part, omit all system objects. These have IDs in the 2000000000 range. 
 
 For example, using the [Export-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps), do the following:
 
@@ -80,7 +80,7 @@ Save the file with any name and the extension **.al**, for example **mydotnet.al
 
 ## 5. Convert the C/AL TXT files to AL
 
-With C/AL exported to the new TXT format, you now convert the code to AL using the [The Txt2Al Conversion Tool](devenv-txt2al-tool.md). The Txt2Al creates .al files for each object in the TXT file.
+With C/AL exported to the new TXT format, you now convert the code to AL using the [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md). The Txt2Al creates .al files for each object in the TXT file.
 
 1. Create folder for storing the .al files.
 2. Start a command prompt as administrator, and navigate to the folder that contain txt2al.exe file.
@@ -108,20 +108,20 @@ When completed, there will be an al for for each object.
 
 To build your base application, you will create a new application database on the Business Central 15.0 platform. This will only be used during  development.
 
-1. Start the [!INCLUDE[adminshell](includes/adminshell.md)] as an administrator.
+1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 2. Run the New-NAVApplicationDatabase cmdlet to create the database. For example:
 
     ```
     New-NAVApplicationDatabase -DatabaseServer myserver\BCDEMO -DatabaseName MyBC15DevDatabase
     ```
 
-3. Connect your [!INCLUDE[server](includes/server.md)] instance to the database. See [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).
+3. Connect your [!INCLUDE[server](../developer/includes/server.md)] instance to the database. See [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).
 
 ## 7. Create and set up an AL project in Visual Studio Code
 
 If you haven't already, install Visual Studio Code and the latest AL Language extension, and create a new AL project for your converted solution.
 
-1. Use the **AL Go!** command as outlined in [Getting Started with AL](devenv-get-started.md).
+1. Use the **AL Go!** command as outlined in [Getting Started with AL](../developer/devenv-get-started.md).
 
 2. Remove the HelloWorld.al sample file from the project. 
 
@@ -178,7 +178,7 @@ Visual Studio Code is built to handle many smaller, dependent projects, and not 
 
 Open your `settings.json` file in the project (or global settings if you prefer that). Set:
 
-- `"al.enableCodeAnalysis": false` to remove code analysis, read more here [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
+- `"al.enableCodeAnalysis": false` to remove code analysis, read more here [Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md).
 
 - `"al.enableCodeActions": false`
 
@@ -298,13 +298,13 @@ Currently, there are known issues which you might have to address.
 
 If solution will use Microsoft (1st party) extensions, you will have to convert the test toolkit libraries and test runner code units to AL because these extensions have a dependency on the test toolkit. The process is similar to what you did to convert your custom base application to AL.
 
-<!--1. Create a new [!INCLUDE[prodshort](includes/prodshort.md)] database.
+<!--1. Create a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.
 
-    You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-create-databases.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](includes/devshell.md)].-->
+    You can do this using the ([!INCLUDE[nav_dev_long](../developer/../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-create-databases.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].-->
 
 2. Import the CALTestLibraries.W1.fob <!--and CALTestRunner.fob--> file into the old database.
 
-    You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](includes/devshell.md)].
+    You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].
     
     Make sure to compile and synchronize.
 3. Export the test library objects to the new TXT syntax. The test objects have IDs in the 130000 range and are tagged with the Version List of NAVW114.40.00,Test.   
@@ -356,7 +356,7 @@ When your converted solutions compile to an app, you can deploy and run it. You 
 
 5. Publish your extension, either using:  
 
-- PowerShell cmdlets as described in [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md), or  
+- PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md), or  
 
 - Publish from within Visual Studio Code by defining the server configuration in launch.json and publish with **Ctrl+F5**. 
 
@@ -369,14 +369,14 @@ We recently released a Docker AL Preview image as part of the Insider program, c
 
 3. Publish your extension: 
 
-    - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
+    - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md). 
 
     - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**. 
 
 ## See Also
-[The Txt2Al Conversion Tool](devenv-txt2al-tool.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Report Object](devenv-report-object.md)  
-[Page Properties](properties/devenv-page-property-overview.md)
+[The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md)  
+[Developing Extensions](../developer/devenv-dev-overview.md)  
+[AL Development Environment](../developer/devenv-reference-overview.md)  
+[Page Extension Object](../developer/devenv-page-ext-object.md)  
+[Report Object](../developer/devenv-report-object.md)  
+[Page Properties](../developer/properties/devenv-page-property-overview.md)
