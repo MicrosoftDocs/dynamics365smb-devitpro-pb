@@ -28,7 +28,7 @@ Use this scenario if you have a Business Central application that has not been m
 
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update.
 
-### Prepare the old application and tenant databases for upgrade
+### Task 1: Prepare the old application and tenant databases for upgrade
 
 1. Make backup of the databases.
 2. Uninstall all extensions from the tenants.
@@ -40,11 +40,10 @@ Use this scenario if you have a Business Central application that has not been m
 
     ``` 
     Get-NAVAppInfo -ServerInstance bc140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
+    ``` 
+4. Dismount the tenant from the old application and stop the old Server instance.
 
-        ``` 
-5. Dismount the tenant from the old application and stop the old Server instance.
-
-### Upgrade the application to the 15.0 platform
+### Task 2: Upgrade the application to the 15.0 platform
      
 1. Run a technical upgrade on the application to convert ot to the 15.0 platform.
 
@@ -76,7 +75,7 @@ Use this scenario if you have a Business Central application that has not been m
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
     ```
 
-### Synchronize and upgrade the tenant
+### Task 4: Synchronize and upgrade the tenant
 
 1. Mount the tenant to the application server instance.
 2. Synchronize the tenant with the application.
@@ -93,8 +92,9 @@ Use this scenario if you have a Business Central application that has not been m
     Sync-NAVApp BC150 -Name "System Application" -Version 15.0.34737.0
     ```
 5. Synchronize the tenant with the Business Central Base Application extension (BaseApp):
-
+    ```
     Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0 -Mode ForceSync
+    ```
 
     This can take several minutes. 
 
@@ -130,7 +130,7 @@ Use this scenario if you have a Business Central application that has not been m
     Start-NAVDataUpgrade BC150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
     ```        
 
-    This upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before the next step and to open the client.
+    This step upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before you complete the next step or to open the application in the client.
 
     To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
     
@@ -148,26 +148,27 @@ Use this scenario if you have a Business Central application that has not been m
     Install-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
     ```
 -->
-### Publish and upgrade Microsoft extensions
+### Task 5: Publish and upgrade Microsoft extensions
 
-1. Publish an extension:
+Complete the following steps for each extension.
+
+1. Publish the extension.
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
     ```
-2. Sync the tenant with the extension:
+2. Synchronize the tenant with the extension. 
 
     ```
     Sync-NAVAapp BC150 -Name "Sales and Inventory Forecast" -Version 14.0.34737.0
     ```
-3. Upgrade the data to the extension:
+3. Upgrade the tenant data to the extension. 
 
     ```
     Start-NAVAppDataUpgrade BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
-    ```    
+    ```
 
-
-### Publish and install 3rd party extensions
+### Task 6: Publish and install 3rd party extensions
 
 **Option one - upgrade extension code**
 
@@ -178,18 +179,19 @@ Use this scenario if you have a Business Central application that has not been m
     3. Modify the `dependencies` parameter in the app.json file to include dependencies on the base app and system app: 
 
         ```
-            "dependencies": [      {
-            "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
-            "publisher": "Microsoft",
-            "name": "System Application",
-            "version": "15.0.0.0"
-            },
-            {
-            "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-            "publisher": "Microsoft",
-            "name": "BaseApp",
-            "version": "15.0.0.0"
-            }]
+        "dependencies": [      {
+        "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+        "publisher": "Microsoft",
+        "name": "System Application",
+        "version": "15.0.0.0"
+        },
+        {
+        "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+        "publisher": "Microsoft",
+        "name": "BaseApp",
+        "version": "15.0.0.0"
+        }]
+        ```
 
     4. Build the project.
 
@@ -211,7 +213,7 @@ Use this scenario if you have a Business Central application that has not been m
 
     This upgrades the data and installs the extension version.
 
-**Option two - configure server:**
+**Option Two - Configure Server:**
 
 You can only use this option if you unpublish the old 3rd party extension version.
 
@@ -780,6 +782,7 @@ CALTestRunner.fob
 4. Unpublish all extensions from the application.
 
     You can use the Get-NAVAppInfo annd Unpublish-NAVApp cmdlets as follows:
+
 <!--
         ```    
         Get-NAVAppInfo bc140
@@ -817,7 +820,7 @@ CALTestRunner.fob
     ```
     Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
     ```
-    
+
     This will configure the server instance to automatically install the base application and test application on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually. 
 
 2. Increase the application version to the version that you gave the custom base application:
