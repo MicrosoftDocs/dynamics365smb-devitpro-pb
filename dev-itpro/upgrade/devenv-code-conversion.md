@@ -26,14 +26,14 @@ With the recent preview release of the base application converted to AL, you can
 
 If your solution uses Microsoft (1st-party) extensions, you will have to convert the test library from C/AL to AL, in addition to the base application. The reason for this is that the Microsoft extensions rely on the test symbols. The easiest way to do this is to import the **CALTestLibraries.W1.fob** file into the old database. This file is available on the installation media (DVD) for in the **TestToolKit** folder.
 
-You can do this using the ([!INCLUDE[nav_dev_long](../developer/../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].
+You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
 Alternatively, you can create separate AL project in Visual Studio Code for the test libraries and compile the project to into an extension.
 
 ## 2. Compile all the objects in your C/AL solution
 
 Compiling all the objects is a prerequisite for a successful and complete export. To compile objects, you can use either of the following:  
-- C/SIDE ([!INCLUDE[nav_dev_long](../developer/../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
+- C/SIDE ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
 - [Compile-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run this as an administrator.
 
 ## 3. Export the application from the database to the new TXT syntax
@@ -300,7 +300,7 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
 
 <!--1. Create a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.
 
-    You can do this using the ([!INCLUDE[nav_dev_long](../developer/../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-create-databases.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].-->
+    You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-create-databases.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].-->
 
 2. Import the CALTestLibraries.W1.fob <!--and CALTestRunner.fob--> file into the old database.
 
