@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Code Conversion from C/AL to AL (Draft)
+# Code Conversion from C/AL to AL
 
 > [!IMPORTANT]  
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
@@ -22,13 +22,21 @@ With the recent preview release of the base application converted to AL, you can
 
 <!--## To run a code conversion from C/AL to AL-->
 
-## 1. Compile all the objects in your C/AL solution
+## 1. Import the test library into your C/AL solution
+
+If your solution uses Microsoft (1st-party) extensions, you will have to convert the test library from C/AL to AL, in addition to the base application. The reason for this is that the Microsoft extensions rely on the test symbols. The easiest way to do this is to import the **CALTestLibraries.W1.fob** file into the old database. This file is available on the installation media (DVD) for in the **TestToolKit** folder.
+
+You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](includes/devshell.md)].
+
+Alternatively, you can create separate AL project in Visual Studio Code for the test libraries and compile the project to into an extension.
+
+## 2. Compile all the objects in your C/AL solution
 
 Compiling all the objects is a prerequisite for a successful and complete export. To compile objects, you can use either of the following:  
 - C/SIDE ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
 - [Compile-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](includes/devshell.md)]. Make sure to run this as an administrator.
 
-## 2. Export the application from the database to the new TXT syntax
+## 3. Export the application from the database to the new TXT syntax
 
 Once the application compiles, you must export all C/AL application objects, except system tables and codeunits, to the new TXT format, that can be used as input to the conversion tool. To do so, use the [Export-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) PowerShell cmdlet with the `ExportToNewSyntax` switch.
 
@@ -43,7 +51,7 @@ For example, using the [Export-NAVApplicationObject](https://docs.microsoft.com/
     ```
 This can take several minutes.
 
-## 3. Create a declaration file for custom .NET assemblies (optional)
+## 4. Create a declaration file for custom .NET assemblies (optional)
 
 If your solution contains .NET interoperability code and control add-ins, you can create a file that contains the declarations to the assemblies. This file will be used when you convert the C/AL TXT files to AL in the next step. Alternatively, after the conversion, you will have to manually add the declarations to objects that use the assemblies.   
 
@@ -70,7 +78,7 @@ dotnet
 
 Save the file with any name and the extension **.al**, for example **mydotnet.al**. Make a note of the path because you will use it in the next step. 
 
-## 4. Convert the C/AL TXT files to AL
+## 5. Convert the C/AL TXT files to AL
 
 With C/AL exported to the new TXT format, you now convert the code to AL using the [The Txt2Al Conversion Tool](devenv-txt2al-tool.md). The Txt2Al creates .al files for each object in the TXT file.
 
@@ -96,7 +104,7 @@ If you are interested in migrating your localization resources, you should use t
 
 When completed, there will be an al for for each object.
 
-## 4. Create a new application database for development purposes
+## 6. Create a new application database for development purposes
 
 To build your base application, you will create a new application database on the Business Central 15.0 platform. This will only be used during  development.
 
@@ -109,11 +117,10 @@ To build your base application, you will create a new application database on th
 
 3. Connect your [!INCLUDE[server](includes/server.md)] instance to the database. See [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).
 
-## 4. Create and set up an AL project in Visual Studio Code
+## 7. Create and set up an AL project in Visual Studio Code
 
 If you haven't already, install Visual Studio Code and the latest AL Language extension, and create a new AL project for your converted solution.
 
-1. 
 1. Use the **AL Go!** command as outlined in [Getting Started with AL](devenv-get-started.md).
 
 2. Remove the HelloWorld.al sample file from the project. 
@@ -126,14 +133,31 @@ If you haven't already, install Visual Studio Code and the latest AL Language ex
 
     For example:
 
-        ```
-    	"al.assemblyProbingPaths": [
-		"./.netpackages", "C:/Windows/Microsoft.NET/assembly", "C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins",:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00","C:/NugetCache/Microsoft.Nav.Platform.Main.14.0.28217",
-		"C:/windows/assembly/GAC/ADODB","C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client"
-	],
     ```
+    "al.assemblyProbingPaths": [
+    "./.netpackages", "C:/Windows/Microsoft.NET/assembly", "C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins",:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00","C:/NugetCache/Microsoft.Nav.Platform.Main.14.0.28217",
+    "C:/windows/assembly/GAC/ADODB","C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client"],
+    ```
+6. Modify the app.json for the project:
 
- 4. Open the **dotnet.al** file for the project, and make the following changes:
+    - **Important** It is important that the ID, name, publisher, and version of the custom base application match the Business Central base application. Set the parameters to the following values`:
+
+        ```
+          "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+          "name": "BaseApp",
+          "publisher": "Microsoft",
+          "version": "15.0.34982.0"
+        ```
+    - Set the `target` to `OnPrem`.
+    - Change the `idRange` to include all the IDs (leave blank).
+    - Delete the values in the `dependencies` parameter.
+
+5. Manually copy the system (platform) symbols extension (Microsoft_System_15.0.34942.0.app) to the **.alpackages** folder of the project.
+
+    This file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment folder.
+4. Copy all of the AL files generated in the previous step to the root folder of your project.
+
+5. Open the **dotnet.al** file for the project, and make the following changes:
 
     - Delete all instances of "Version=14.0.0.0" for **Microsoft.Nav** assembly declarations.
     - For the `DocumentFormat.OpenXml` assembly declaration, remove the `version` and `culture` keys and set `PublicKeyToken = '8fb06cb64d019a17'`.
@@ -144,12 +168,11 @@ If you haven't already, install Visual Studio Code and the latest AL Language ex
             PublicKeyToken = '8fb06cb64d019a17';
             ...
         ```
-4. Copy all of the AL files generated in the previous step to the root folder of your project.
 
 > [!NOTE]  
 > Adding assemblies to the folders in your assembly probing paths is not automatically detected by the compiler. You must restart Visual Studio Code for the changes to be detected.
 
-## 5. Improve Visual Studio Code editing experience performance
+## 8. Improve Visual Studio Code editing experience performance (optional)
 
 Visual Studio Code is built to handle many smaller, dependent projects, and not one large project, however, as the base application is not yet split into modules or components that allows managing the code in smaller projects, we recommend the following performance optimizations.
 
@@ -163,7 +186,7 @@ Open your `settings.json` file in the project (or global settings if you prefer 
 
 - Add the build folder to the exclusion list for [Windows Defender](https://support.microsoft.com/en-us/help/4028485/windows-10-add-an-exclusion-to-windows-security).
 
-## 6. Compile your project in Visual Studio Code
+## 9. Compile your project in Visual Studio Code
 The AL compiler is more strict than the C/SIDE compiler and will issue errors for constructs that are not valid. We recommend that you fix the errors in the C/AL solution and re-export, iterating over steps 1-4 above until all the compilation errors are fixed.
 
 Currently, there are known issues which you might have to address.
@@ -253,27 +276,70 @@ Currently, there are known issues which you might have to address.
     
             ```          
 
-   2. CodeViewer errors.
+   2. CodeViewer related errors.
 
       CodeViewer is no longer used. Either remove all references to it in the application (recommended) or copy the **CodeViewer** folder from the Add-in folder of Business Central 140 RoleTailored client installation to the Add-ins folder of the Business Central 150 Server installation.
 
-## 8. Convert the test toolkit library and test runner codeunits to AL
+<!--
+3. Publish the custom application:
 
-If you solution will use Microsoft (1st party) extensions, you will have to convert the test toolkit libraries and test runner code units to AL because these extensions have a dependency on the test toolkit. The process is similar to what you did to convert your custom base application to AL.
+    1. Publish the platform system symbols:
 
-1. Create a new [!INCLUDE[prodshort](includes/prodshort.md)] database.
+        ```
+        Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
+        ```
+    2. Publish the custom base app extension:
 
-    You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-create-databases.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](includes/devshell.md)].
+        ```
+        Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\CusomtBaseApp2\Microsoft_BaseApp_15.0.34982.0.app" -SkipVerification
+        ```
+-->
+## 8. Convert the test toolkit library and test runner codeunits to AL extension
 
-2. Import the CALTestLibraries.W1.fob and CALTestRunner.fob files into the database.
+If solution will use Microsoft (1st party) extensions, you will have to convert the test toolkit libraries and test runner code units to AL because these extensions have a dependency on the test toolkit. The process is similar to what you did to convert your custom base application to AL.
+
+<!--1. Create a new [!INCLUDE[prodshort](includes/prodshort.md)] database.
+
+    You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-create-databases.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](includes/devshell.md)].-->
+
+2. Import the CALTestLibraries.W1.fob <!--and CALTestRunner.fob--> file into the old database.
 
     You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](includes/devshell.md)].
     
-    You do not have to synchronize.
-3. Export the application from the database to the new TXT syntax.
+    Make sure to compile and synchronize.
+3. Export the test library objects to the new TXT syntax. The test objects have IDs in the 130000 range and are tagged with the Version List of NAVW114.40.00,Test.   
+
+    ``` 
+    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\txt\expoertedbc14TESTapp.txt" -Filter 'Version list=NAVW114.40.00,Test'
+    ``` 
 
 4. Convert the TXT file to AL by using the Txt2Al tool.
-5. 
+
+    ``` 
+    txt2al --source=C:\exporttoal --target=C:\exporttoal\testapp\al --injectDotNetAddIns
+    ``` 
+5.  Create and set up an AL project in Visual Studio Code.
+
+6. In the app.json file, make the following changes:
+
+    - Add a dependency on the base application.
+
+        ``` 
+        "dependencies": [
+        {
+            "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+            "publisher": "Microsoft",
+            "name": "BaseApp",
+            "version": "15.0.34982.0"
+        }
+        ],
+        ```
+    -  Set the `version` to the old application version, such as `14.4.0.0`.
+7. Copy all of the AL files, except the dotnet.al file, that were generated in the previous step to the root folder of your project.
+
+8. Build the project.
+
+    Had to modify or remove LibraryAzureADUserMgmt.Codeunit.al, LibraryVerifyXMLSchema.Codeunit, LibraryVerifyXML.Codeunit.al, and LibraryLowerPermissions.Codeunit.al
 
 ## 7. Publish your project
 When your converted solutions compile to an app, you can deploy and run it. You can either create and publish to your own database, or use the recently release Docker AL Preview image.
