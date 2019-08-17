@@ -159,7 +159,7 @@ If you haven't already, install Visual Studio Code and the latest AL Language ex
 
 5. Open the **dotnet.al** file for the project, and make the following changes:
 
-    - Delete all instances of "Version=14.0.0.0" for **Microsoft.Nav** assembly declarations.
+    - Delete all instances of `Version='14.0.0.0';` for **Microsoft.Nav** assembly declarations.
     - For the `DocumentFormat.OpenXml` assembly declaration, remove the `version` and `culture` keys and set `PublicKeyToken = '8fb06cb64d019a17'`.
 
         ```
