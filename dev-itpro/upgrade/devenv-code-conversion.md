@@ -138,7 +138,7 @@ If you haven't already, install Visual Studio Code and the latest AL Language ex
     "./.netpackages", "C:/Windows/Microsoft.NET/assembly", "C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins",:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00","C:/NugetCache/Microsoft.Nav.Platform.Main.14.0.28217",
     "C:/windows/assembly/GAC/ADODB","C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client"],
     ```
-6. Modify the app.json for the project:
+4. Modify the app.json for the project:
 
     - **Important** It is important that the ID, name, publisher, and version of the custom base application match the Business Central base application. Set the parameters to the following values`:
 
@@ -155,9 +155,9 @@ If you haven't already, install Visual Studio Code and the latest AL Language ex
 5. Manually copy the system (platform) symbols extension (Microsoft_System_15.0.34942.0.app) to the **.alpackages** folder of the project.
 
     This file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment folder.
-4. Copy all of the AL files generated in the previous step to the root folder of your project.
+6. Copy all of the AL files generated in the previous step to the root folder of your project.
 
-5. Open the **dotnet.al** file for the project, and make the following changes:
+7. Open the **dotnet.al** file for the project, and make the following changes:
 
     - Delete all instances of `Version='14.0.0.0';` for **Microsoft.Nav** assembly declarations.
     - For the `DocumentFormat.OpenXml` assembly declaration, remove the `version` and `culture` keys and set `PublicKeyToken = '8fb06cb64d019a17'`.
