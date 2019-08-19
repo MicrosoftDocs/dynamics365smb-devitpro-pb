@@ -23,6 +23,7 @@ You must submit a periodic report of transactions with customers and vendors in 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
 |Removed| The functionality for blacklisted countries/regions has been removed from the Italian version.|
+|Removed| The Activity Code functionality been removed from the Italian version.|
 
 ## Multiple Interest Rates
 When you create finance charge terms and reminder terms, for delayed payment penalty, you can specify multiple interest rates so that the penalty fee is calculated from different interest rates in different periods.
