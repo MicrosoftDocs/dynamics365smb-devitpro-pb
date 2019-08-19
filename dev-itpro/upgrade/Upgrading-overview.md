@@ -851,7 +851,7 @@ CALTestRunner.fob
 
 <!--5. Mount the tenant (multinent deployment only).-->
 
-## Task 4: Upgrade the tenant
+### Task 4: Upgrade the tenant
 
 If you have a multitenant deployment, perform these steps for each tenant.
 
@@ -962,7 +962,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 The application should now be accessible from the client.
 
-## Publish Microsoft and custom extensions
+### Publish Microsoft and 3rd party extensions
 
 Now, you can publish the Microsoft and 3rd-party extensions that were published in the old solution. For each extension, do the following steps:
 <!--
