@@ -11,7 +11,7 @@ ms.author: jswymer
 manager: edupont
 ms.service: "dynamics365-business-central"
 ---
-# Technical Upgrade to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Wave 2
+# Technical Upgrade to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2
 
 Use this process when you have a customized Business Central application that you want to upgrade to the Business Central Wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 

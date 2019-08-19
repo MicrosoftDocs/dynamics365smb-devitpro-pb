@@ -11,7 +11,7 @@ ms.author: jswymer
 manager: edupont
 ms.service: "dynamics365-business-central"
 ---
-# Upgrading an unmodified application to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Wave 2
+# Upgrading an unmodified application to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2
 
 Use this scenario if you have a Business Central application that has not been modified. The application might include Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central V15.0 base app extension. The result will be a fully upgraded application and platform on V15.0.
 
