@@ -42,3 +42,4 @@ Each tenant supports having a single encryption key. To use the encryption meth
 
 ## See Also  
 
+[Application Security in Business Central](../security/security-application.md)
