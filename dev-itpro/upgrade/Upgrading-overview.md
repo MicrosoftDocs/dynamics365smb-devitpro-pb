@@ -33,7 +33,7 @@ Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14
 2. Uninstall all extensions from the tenants.
 
     ``` 
-    Get-NAVAppInfo -ServerInstance bc140 -Tenant default | % { Uninstall-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
+    Get-NAVAppInfo -ServerInstance bc140 -Tenant default | % { Uninstall-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version -Tenant default}
     ``` 
 3. Unpublish all system, test, and application symbols from the application.
 
@@ -781,7 +781,7 @@ CALTestRunner.fob
     Use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for Business Central Spring 2019 (run as an adminstrator):
 
     ``` 
-    Get-NAVAppInfo -ServerInstance bc140 -Tenant default | % { Uninstall-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
+    Get-NAVAppInfo -ServerInstance bc140 -Tenant default | % { Uninstall-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version -Tenant default}
     ``` 
 3. Unpublish all system and application symbols.
 
@@ -797,6 +797,10 @@ CALTestRunner.fob
     ```
 
 5. Dismount tenants and stop server instance.
+
+   ```
+   Dismount-NAVTenant bc140 -Tenant default
+   ```
 
 6. Run a technical upgrade on the old application database by using the Business Central 2019 Wave 2 Administration Shell. This will upgrade the system tables to the BC 15 platform. Start the Business Central Administration Shell as an admin, and run this command:
 
@@ -819,7 +823,13 @@ CALTestRunner.fob
     Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
     ```
 
-    This will configure the server instance to automatically install the base application and test application on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually. 
+    This will configure the server instance to automatically install the base application and test application on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
+
+3. Configure the server instance to synchronize only base application.
+
+    ```
+     Set-NAVServerConfiguration bc150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
+    ```
 
 2. Increase the application version to the version that you gave the custom base application:
 
@@ -843,26 +853,35 @@ CALTestRunner.fob
 
 ## Task 4: Upgrade the tenant
 
-1. Synchronize the tenant.
+If you have a multitenant deployment, perform these steps for each tenant.
+
+1. (Multitnent only) Mount the tenant.
+
+    ```
+    Mount-NAVTenant bc150 -Tenant default -DatabaseName "Demo Database BC (14-0)" -DatabaseServer navdevvm-0127 -DatabaseInstance BCDEMO
+    ```
+2. Synchronize the tenant.
   
     ```
-    Sync-NAVTenant BC150
+    Sync-NAVTenant BC150 -tenant default
     ```
 
     When completed the tenant state is **OperationalDataUpgradePending**.
-2. Delete all objects except system objects from application database (IDs 2000000000 and greater). Do not synchronize the tenant/tables.
+<!-- this step is not required becase of the  "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync server setting
+2. Delete all objects except system objects from application database (IDs 2000000000 and greater). Do not synchronize the tenant/tables. -->
 
 3. Synchronize the tenant with the base application extension (BaseApp):
 
     ```
-    Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34982.0
+    Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34982.0 -tenant default
     ```
 
     This will append tables in database with guids extensions.
 
-4. If you published a test application extension, synchronize the tenant with the test application extension.
+<!-- This step is not required becase I do not have a test app>
+4. If you published a test application extension, synchronize the tenant with the test application extension.-->
 
-5. Upgrade the tenant data:
+5. Upgrade the tenant data.
 
     ```
     Start-NAVDataUpgrade BC150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
@@ -874,7 +893,9 @@ CALTestRunner.fob
     Install-NAVApp BC150 -Name "System Application" -Version 15.0.34737.0
     ```
 -->
-6. When upgrade is completed, restart the server instance. You will see that the cusom base application and test application have been isntalled on the tenant.
+6. (Single tenant only) When upgrade is completed, restart the server instance.
+
+    You will see that the custom base application and test application have been isntalled on the tenant. Only required for single tenant.
 
 <!--
 9. If you did not configured server instance with base app, install custom base application extension on the tenant:
@@ -939,11 +960,11 @@ CALTestRunner.fob
             
             --> 
 
-The application should no be accessible from the client.
+The application should now be accessible from the client.
 
 ## Publish Microsoft and custom extensions
 
-Now, you can publish the Microsoft and 3rd-party extensions that were published in the old solution. For each extension, do the following steps:      
+Now, you can publish the Microsoft and 3rd-party extensions that were published in the old solution. For each extension, do the following steps:
 <!--
 9. Prepare to publish and upgrade Microsoft and 3rd party extensions
 
