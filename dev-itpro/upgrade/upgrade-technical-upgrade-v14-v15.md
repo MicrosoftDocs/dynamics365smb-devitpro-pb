@@ -64,7 +64,7 @@ This step will upgrade the system tables of the application to the version 15 pl
 Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
 ``` 
 
-## Task 3: Upgrade the application
+## Task 4: Upgrade the application
 
 1. Connect a version 15.0 server instance to the old application database.
 
@@ -110,7 +110,7 @@ Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -Da
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.4.app" -SkipVerification
     ```
 
-### Task 4: Synchronize and upgrade the tenants
+## Task 5: Synchronize and upgrade the tenants
 
 If you have a multitenant deployment, perform these steps for each tenant.
 
@@ -149,7 +149,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 The application should now be accessible from the client.
 
-## Synchronize and install Microsoft and 3rd party extensions on the tenants
+## Task 6: Synchronize and install Microsoft and 3rd party extensions on the tenants
 
 Now, you can publish the Microsoft and 3rd-party extensions that were published in the old solution. For each extension, do the following steps:
 
