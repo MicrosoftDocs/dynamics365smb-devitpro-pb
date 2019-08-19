@@ -56,6 +56,11 @@ Use this scenario if you have a Business Central application that has not been m
     ```
     Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
     ```
+3. Configure the server instance to synchronize only the base application with tenants.
+
+    ```
+     Set-NAVServerConfiguration bc150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
+    ```
 4. Publish version 15 system symbols extension.
 
     The symbols extension package is called System.app. You find it where the AL Development Environment was installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
@@ -86,7 +91,6 @@ Use this scenario if you have a Business Central application that has not been m
 
     At this stage, the tenant state is **OperationalDataUpgradePending**.
 
-3. Delete all objects except system objects. Do not synchronize the tenant/tables.
 4. Synchronize the tenant with the System Application extension (Microsoft_System Application_15.0.34737.0):
 
     ```

@@ -32,7 +32,7 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
 1. Make backup of the database.
 2. Uninstall all extensions from the old tenants.
 
-    Use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for Business Central Spring 2019 (run as an adminstrator):
+    Use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for Business Central Spring 2019 (run as an administrator):
 
     ``` 
     Get-NAVAppInfo -ServerInstance bc140 -Tenant default | % { Uninstall-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version -Tenant default}
