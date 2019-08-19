@@ -219,8 +219,6 @@ Complete this task if you have 3rd-party extensions to upgrade. The extensions m
 
 #### Configure server instance
 
-You can only use this option if you unpublish the old 3rd party extension version.
-
 1. Unpublish all 3rd party extensions.
 
 2. Configure the version 15.0 server instance.
