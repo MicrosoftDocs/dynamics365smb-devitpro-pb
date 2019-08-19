@@ -38,7 +38,7 @@ Use this scenario if you have a Business Central application that has not been m
     ``` 
 4. Dismount the tenants from the old application and stop the server instance.
 
-### Task 2: Upgrade the version 14.0 application to the version 15.0 platform
+## Task 2: Upgrade the version 14.0 application to the version 15.0 platform
      
 1. Run a technical upgrade on the application.
 
@@ -48,7 +48,7 @@ Use this scenario if you have a Business Central application that has not been m
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-### Task 3: Upgrade the application
+## Task 3: Upgrade the application
 
 1. Connect a version 15.0 server instance to the database and start the instance.
 2. Increase the application version of the application database.
@@ -75,7 +75,7 @@ Use this scenario if you have a Business Central application that has not been m
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
     ```
 
-### Task 4: Synchronize and upgrade the tenants
+## Task 4: Synchronize and upgrade the tenants
 
 1. Mount the tenant to the version 15.0 server instance.
 2. Synchronize the tenant with the application.
@@ -150,7 +150,7 @@ Use this scenario if you have a Business Central application that has not been m
     ```
 -->
 
-### Task 5: Publish and upgrade Microsoft extensions
+## Task 5: Publish and upgrade Microsoft extensions
 
 Complete this task to upgrade any Microsoft extensions that were used in the previous version to new versions that are avialbel on the installation media. Do the following steps for each extension.
 
@@ -170,11 +170,11 @@ Complete this task to upgrade any Microsoft extensions that were used in the pre
     Start-NAVAppDataUpgrade BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
     ```
 
-### Task 6: Publish and install 3rd party extensions
+## Task 6: Publish and install 3rd party extensions
 
 Complete this task if you have 3rd-party extensions to upgrade. The extensions must be modified to work with base application extension. There are two ways to do this. You can either modify the extension code or configure the version 15 server instance to handle this.
 
-#### Modify extension code
+### Modify extension code
 
 1. Upgrade the extension package to reference the base app and system app.
 
@@ -217,7 +217,7 @@ Complete this task if you have 3rd-party extensions to upgrade. The extensions m
 
     This upgrades the data and installs the extension version.
 
-#### Configure server instance
+### Configure server instance
 
 1. Unpublish all 3rd party extensions.
 
