@@ -29,12 +29,12 @@ Use this scenario if you have a Business Central application that has not been m
 2. Uninstall all extensions from the tenants.
 
     ``` 
-    Get-NAVAppInfo -ServerInstance bc140 -Tenant default | % { Uninstall-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version -Tenant default}
+    Get-NAVAppInfo -ServerInstance BC140 -Tenant default | % { Uninstall-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version -Tenant default}
     ``` 
 3. Unpublish all system, test, and application symbols from the application.
 
     ``` 
-    Get-NAVAppInfo -ServerInstance bc140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
+    Get-NAVAppInfo -ServerInstance BC140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
     ``` 
 4. (Multitenant only) Dismount the tenants from the application server instance.
 5. Stop the server instance.
@@ -51,7 +51,7 @@ Use this scenario if you have a Business Central application that has not been m
 
 ## Task 3: Upgrade the application
 
-1. Connect a version 15.0 server instance to the application database and start the server instance.
+1. Connect a version 15.0 server instance to the application database, and then start the server instance.
 2. Increase the application version of the application database.
 
     ```
