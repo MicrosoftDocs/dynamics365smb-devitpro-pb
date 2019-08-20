@@ -32,7 +32,9 @@
 ## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
-### [Dynamics 365 Business Central On-Premises Updates](deployment/update-versions.md)
+### Dynamics 365 Business Central On-Premises Updates
+#### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
+#### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)

@@ -17,11 +17,14 @@ This article describes how to install a cumulative update for[!INCLUDE[prodshort
 
 The first thing to do is to download the Cumulative Update package that matches your Business Central deployment.
 
-1. Go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central on-premises](https://support.microsoft.com/da-dk/help/4470116/released-cumulative-updates-for-microsoft-dynamics-365-business), select the Cumulative Update that you want.
+1. Go to the relevant list of available updates for your on-premises version of Business Central, and then choose the Cumulative Update that you want.
+
+    For a list of supported versions of Business Central on-premises, see the [See Also](#see-also) section.
 2. From the cumulative update page, under the **Release** section, select the link for downloading the update and follow the instructions.
 3. On the computer where you downloaded cumulative update, extract files from all .zip files.
 
 The cumulative update includes files that are separated into the following folders:
+
 - APPLICATION folder
   
     Used for updating your application with the new or modified application objects that comprise the cumulative update.
@@ -44,15 +47,15 @@ To upgrade to the latest platform the database must be converted by using the Dy
 1. Uninstall the current Business Central components.
 2. Install Business Central components of the cumulative update.
 
-    From the DVD folder, run set.exe to install Business Central. As a minimum, install the following components: Server, Web Server Components, SQL Server Components, and the Dynamics NAV Development Environment. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
-3. Start the new [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)] as an adminstrator
+    From the DVD folder, run setup.exe to install Business Central. As a minimum, install the following components: Server, Web Server Components, SQL Server Components, and the Dynamics NAV Development Environment. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+3. Start the new [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)] as an administrator
 4. Open the application database.
 
     For more information, see [Open a Database](../cside/cside-open-database.md).
 5. If prompted, follow instructions to convert it to the new platform.
 6. (Multitenant deployment only) Mount an old tenant to the Business Central Server instance.
 
-    You will have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant ](../administration/mount-dismount-tenant.md).
+    You will have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
  
 7. Synchronize the database (tenant).
 
@@ -166,7 +169,9 @@ The general steps for this task are listed below. For detailed steps, see [Publi
     This ensures that the extensions work on the new platform and application versions.
 
 ## See Also
-  
+
+[Dynamics 365 Business Central On-Premises October'18 Updates](../deployment/update-versions-13.md)  
+[Dynamics 365 Business Central On-Premises April'19 Updates](../deployment/update-versions-14.md)  
 [Upgrading the Application Code](Upgrading-the-Application-Code.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  

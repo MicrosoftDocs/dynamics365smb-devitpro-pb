@@ -1,6 +1,6 @@
 ---
-title: "On-premises updates"
-description: "Learn about the lifecycle and product life of Dynamics 365 Business Central versions for on-premises deployments."
+title: "Cumulative updates"
+description: "Learn about the cumulative updates for Dynamics 365 Business Central on-premises deployments."
 author: MartinNielander
 ms.custom: na
 ms.reviewer: edupont
@@ -11,9 +11,9 @@ ms.date: 08/20/2019
 
 ---
 
-# Dynamics 365 Business Central On-Premises Updates
+# Dynamics 365 Business Central On-Premises October'18 Updates
 
-This article lists cumulative updates that have been released for Microsoft Dynamics 365 Business Central on-premises. A cumulative update is a cumulative set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central on-premises, we recommend that you apply this cumulative update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see if the tenants have been updated.  
+This article lists cumulative updates that have been released for the October'19 release of Microsoft Dynamics 365 Business Central on-premises. A cumulative update is a cumulative set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central October '18 on-premises, we recommend that you apply this cumulative update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see if the tenants have been updated.  
 
 The cumulative update is intended mainly for solutions that are experiencing the problems described in the Knowledge Base article linked to below. However, you are advised to always keep your solution updated with the latest cumulative update. If you are in doubt about whether this cumulative update addresses your specific problem, or if you want to confirm whether any special compatibility, installation, or download issues are associated with this cumulative update, support professionals in Customer Support Services are ready to help you. For more information, see [https://support.microsoft.com/contactus/](https://support.microsoft.com/contactus/).
 
@@ -21,9 +21,9 @@ The latest cumulative update listed in this article includes hotfixes and regula
 
 You should always install the latest cumulative update.
 
-## Available updates
+## Available updates for Business Central October 2018
 
-The following table lists the cumulative updates that have been released for Business Central. The cumulative updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Knowledge Base article for a description.
+The following table lists the cumulative updates that have been released for the October'18 release of Business Central (version 13). The cumulative updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
