@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading an unmodified application to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2
 
-Use this scenario if you have a Business Central application that has not been modified. The application might include Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central V15.0 base app extension. The result will be a fully upgraded application and platform on V15.0.
+Use this scenario if you have a Business Central application that has not been modified. Your solution might include Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central V15.0 base app extension. The result will be a fully upgraded application and platform on V15.0.
 
 <!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app.-->
 
@@ -36,21 +36,22 @@ Use this scenario if you have a Business Central application that has not been m
     ``` 
     Get-NAVAppInfo -ServerInstance bc140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
     ``` 
-4. Dismount the tenants from the old application and stop the server instance.
+4. (Multitenant only) Dismount the tenants from the application server instance.
+5. Stop the server instance.
 
 ## Task 2: Upgrade the version 14.0 application to the version 15.0 platform
      
 1. Run a technical upgrade on the application.
 
-     [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for 2019 Wave 2 as an administrator, and run the Invoke-NAVApplicationDatabaseConversion cmdlet:
+    Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for 2019 Wave 2 as an administrator, and run the Invoke-NAVApplicationDatabaseConversion cmdlet:
 
     ```
-    Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)"
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
 ## Task 3: Upgrade the application
 
-1. Connect a version 15.0 server instance to the database and start the instance.
+1. Connect a version 15.0 server instance to the application database and start the server instance.
 2. Increase the application version of the application database.
 
     ```
@@ -63,18 +64,18 @@ Use this scenario if you have a Business Central application that has not been m
     ```
 4. Publish version 15 system symbols extension.
 
-    The symbols extension package is called System.app. You find it where the AL Development Environment was installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
+    The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
-5. Publish the System Application extension.
+5. Publish the System Application extension (Microsoft_System Application_15.0.34737.0.app).
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
     ```
 
-6. Publish the Business Central base application extension:
+6. Publish the Business Central base application extension (Microsoft_BaseApp_15.0.34737.0.app).
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
@@ -82,7 +83,9 @@ Use this scenario if you have a Business Central application that has not been m
 
 ## Task 4: Synchronize and upgrade the tenants
 
-1. Mount the tenant to the version 15.0 server instance.
+If you have a multitenant deployment, perform these steps for each tenant.
+
+1. (Multitenant only) Mount the tenant to the version 15.0 server instance.
 2. Synchronize the tenant with the application.
 
     ```  
@@ -156,7 +159,7 @@ Use this scenario if you have a Business Central application that has not been m
 
 ## Task 5: Publish and upgrade Microsoft extensions
 
-Complete this task to upgrade any Microsoft extensions that were used in the previous version to new versions that are avialbel on the installation media. Do the following steps for each extension.
+Complete this task to upgrade any Microsoft extensions that were used in the previous version to new versions that are available on the installation media. Do the following steps for each extension.
 
 1. Publish the extension.
 
@@ -168,7 +171,7 @@ Complete this task to upgrade any Microsoft extensions that were used in the pre
     ```
     Sync-NAVAapp BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
     ```
-3. Upgrade the tenant data to the extension. 
+3. Upgrade the tenant data to the extension.
 
     ```
     Start-NAVAppDataUpgrade BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
