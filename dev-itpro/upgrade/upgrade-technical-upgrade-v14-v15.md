@@ -64,7 +64,7 @@ This step will upgrade the system tables of the application to the version 15 pl
 Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
 ``` 
 
-## Task 4: Upgrade the application
+## Task 4: Publish the base application, symbols, and extensions
 
 1. Connect a version 15.0 server instance to the old application database.
 
