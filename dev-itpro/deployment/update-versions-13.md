@@ -42,10 +42,11 @@ The following table lists the cumulative updates that have been released for the
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Cumulative Update](../upgrade/upgrading-cumulative-update.md)  
+[Dynamics 365 Business Central On-Premises April'19 Updates](update-versions-14.md)  
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements](system-requirement-business-central.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
-[Dynamics 365 Business Central blog for partners](https://community.dynamics.com/business/b/businesscentraldevitpro)  
+[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
 [Dynamics NAV developer and ITpro content](/dynamics-nav/index)  
