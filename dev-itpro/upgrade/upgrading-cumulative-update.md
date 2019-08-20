@@ -1,8 +1,8 @@
 ---
-title: Upgrading the Database
-description: This article describes the tasks required for upgrading from the earlier versions of database to Dynamics 365 Business Central.
+title: Install a cumulative update
+description: This article describes the tasks required for getting the monthly cumulative update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 08/20/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,7 @@ To upgrade to the latest platform the database must be converted by using the Dy
     From the DVD folder, run set.exe to install Business Central. As a minimum, install the following components: Server, Web Server Components, SQL Server Components, and the Dynamics NAV Development Environment. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 3. Start the new [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)] as an adminstrator
 4. Open the application database.
-    
+
     For more information, see [Open a Database](../cside/cside-open-database.md).
 5. If prompted, follow instructions to convert it to the new platform.
 6. (Multitenant deployment only) Mount an old tenant to the Business Central Server instance.
@@ -69,7 +69,7 @@ The APPLICATION folder includes the following files:
 Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], complete one of the following tasks.
 
 > [!NOTE]
-> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](https://mbs.microsoft.com/customersource/documentation/howtodocuments/downloadnavlicensecs.htm)) and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/deployment/documentation/howtoarticles/howtodownloadcustomernavlicense.htm)).
+> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](https://mbs.microsoft.com/customersource/documentation/howtodocuments/downloadnavlicensecs.htm)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/deployment/documentation/howtoarticles/howtodownloadcustomernavlicense.htm)).
 
 ### Update an unmodified application to the Business Central cumulative update objects
 
