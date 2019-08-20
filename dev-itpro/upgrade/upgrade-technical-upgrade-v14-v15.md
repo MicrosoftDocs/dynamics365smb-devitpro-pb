@@ -50,18 +50,19 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
     Get-NAVAppInfo -ServerInstance BC140 | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
     ```
 
-5. Dismount the tenants and stop server instance.
+5. (Multitenant only) Dismount the tenants. and stop server instance.
 
    ```
    Dismount-NAVTenant BC140 -Tenant default
    ```
+6. Stop the server instance.
 
 ## Task 3: Upgrade the application database to the version 15.0 platform
 
 This step will upgrade the system tables of the application to the version 15 platform. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for 2019 Wave 2 as an administrator, and run this command:
 
 ```
-Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
+Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
 ``` 
 
 ## Task 4: Publish the base application, symbols, and extensions

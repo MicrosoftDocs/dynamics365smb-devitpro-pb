@@ -47,13 +47,13 @@ For example, using the [Export-NAVApplicationObject](https://docs.microsoft.com/
 1. Create a folder for storing the exported TXT file.
 2. Run the following command:
     ```
-    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app.txt" -Filter 'Id=1..1999999999'
+    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app.txt" -Filter 'Id=1..1999999999'
     ```
 This can take several minutes.
 
 ## 4. Create a declaration file for custom .NET assemblies (optional)
 
-If your solution contains .NET interoperability code and control add-ins, you can create a file that contains the declarations to the assemblies. This file will be used when you convert the C/AL TXT files to AL in the next step. Alternatively, after the conversion, you will have to manually add the declarations to objects that use the assemblies.   
+If your solution contains .NET interoperability code and control add-ins, you can create a file that contains the declarations to the assemblies. This file will be used when you convert the C/AL TXT files to AL in the next step. Alternatively, after the conversion, you will have to manually add the declarations to objects that use the assemblies.
 
 To create the file, use a text editor or Visual Studio code to create a file that contains the assembly declarations as follows:
 
@@ -112,7 +112,7 @@ To build your base application, you will create a new application database on th
 2. Run the New-NAVApplicationDatabase cmdlet to create the database. For example:
 
     ```
-    New-NAVApplicationDatabase -DatabaseServer myserver\BCDEMO -DatabaseName MyBC15DevDatabase
+    New-NAVApplicationDatabase -DatabaseServer .\BCDEMO -DatabaseName MyBC15DevDatabase
     ```
 
 3. Connect your [!INCLUDE[server](../developer/includes/server.md)] instance to the database. See [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).
@@ -311,7 +311,7 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
 3. Export the test library objects to the new TXT syntax. The test objects have IDs in the 130000 range and are tagged with the Version List of NAVW114.40.00,Test.   
 
     ``` 
-    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\txt\expoertedbc14TESTapp.txt" -Filter 'Version list=NAVW114.40.00,Test'
+    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\txt\expoertedbc14TESTapp.txt" -Filter 'Version list=NAVW114.40.00,Test'
     ``` 
 
 4. Convert the TXT file to AL by using the Txt2Al tool.
