@@ -35,25 +35,25 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
     Use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for Business Central Spring 2019 (run as an administrator):
 
     ``` 
-    Get-NAVAppInfo -ServerInstance bc140 -Tenant default | % { Uninstall-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version -Tenant default}
+    Get-NAVAppInfo -ServerInstance BC140 -Tenant default | % { Uninstall-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version -Tenant default}
     ``` 
 3. Unpublish all system and application symbols.
 
     ``` 
-    Get-NAVAppInfo -ServerInstance bc140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
+    Get-NAVAppInfo -ServerInstance BC140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
     ```     
 4. Unpublish all extensions from the application.
 
    You can use the Get-NAVAppInfo and Unpublish-NAVApp cmdlets as follows:
 
     ```
-    Get-NAVAppInfo -ServerInstance bc140 | % { Unpublish-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
+    Get-NAVAppInfo -ServerInstance BC140 | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
     ```
 
 5. Dismount the tenants and stop server instance.
 
    ```
-   Dismount-NAVTenant bc140 -Tenant default
+   Dismount-NAVTenant BC140 -Tenant default
    ```
 
 ## Task 3: Upgrade the application database to the version 15.0 platform
@@ -73,7 +73,7 @@ Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -Da
 2. Configure the server instance to migrate Microsoft and 3rd party extensions to the use the new base application extension. 
 
     ```
-    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
     ```
 
     This will configure the server instance to automatically install the base application and test application on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
@@ -81,7 +81,7 @@ Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -Da
 3. Configure the server instance to synchronize only the base application with tenants.
 
     ```
-     Set-NAVServerConfiguration bc150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
+     Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
     ```
 
 2. Increase the application version to the version that you gave the custom base application:
@@ -117,13 +117,13 @@ If you have a multitenant deployment, perform these steps for each tenant.
 1. (Multitnent only) Mount the tenant.
 
     ```
-    Mount-NAVTenant bc150 -Tenant default -DatabaseName "Demo Database BC (14-0)" -DatabaseServer navdevvm-0127 -DatabaseInstance BCDEMO
+    Mount-NAVTenant -ServerInstance BC150 -Tenant default -DatabaseName "Demo Database BC (14-0)" -DatabaseServer navdevvm-0127 -DatabaseInstance BCDEMO
     ```
 
 2. Synchronize the tenant.
   
     ```
-    Sync-NAVTenant BC150 -tenant default
+    Sync-NAVTenant -ServerInstance BC150 -tenant default
     ```
 
     When completed the tenant state is **OperationalDataUpgradePending**.
@@ -131,7 +131,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 3. Synchronize the tenant with the base application extension (BaseApp):
 
     ```
-    Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34982.0 -tenant default
+    Sync-NAVApp -ServerInstance BC150 -Name "BaseApp" -Version 15.0.34982.0 -tenant default
     ```
 
     This will append tables in database with guids extensions.
@@ -139,7 +139,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 5. Upgrade the tenant data.
 
     ```
-    Start-NAVDataUpgrade BC150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
+    Start-NAVDataUpgrade -ServerInstance BC150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
     ```
 
 6. (Single tenant only) When upgrade is completed, restart the server instance.
@@ -161,7 +161,7 @@ Now, you can publish the Microsoft and 3rd-party extensions that were published 
 2. Install the extension on the tenant:
 
     ```
-    Install-NAVApp BC150 -Tenant default -Name My14Extension -Version 1.0.0.4
+    Install-NAVApp -ServerInstance BC150 -Tenant default -Name My14Extension -Version 1.0.0.4
     ```
 
 
