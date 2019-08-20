@@ -135,7 +135,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
     Sync-NAVApp -ServerInstance BC150 -Name "BaseApp" -Version 15.0.34982.0 -tenant default
     ```
 
-    This will append tables in database with guids extensions.
+    This will append tables in database with extension IDs.
 
 5. Upgrade the tenant data.
 
