@@ -294,15 +294,16 @@ Currently, there are known issues which you might have to address.
         Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\CusomtBaseApp2\Microsoft_BaseApp_15.0.34982.0.app" -SkipVerification
         ```
 -->
+<!--
 ## 8. Convert the test toolkit library and test runner codeunits to AL extension
 
 If solution will use Microsoft (1st party) extensions, you will have to convert the test toolkit libraries and test runner code units to AL because these extensions have a dependency on the test toolkit. The process is similar to what you did to convert your custom base application to AL.
 
 <!--1. Create a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.
 
-    You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-create-databases.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].-->
+    You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-create-databases.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
-2. Import the CALTestLibraries.W1.fob <!--and CALTestRunner.fob--> file into the old database.
+2. Import the CALTestLibraries.W1.fob <!--and CALTestRunner.fob> file into the old database.
 
     You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].
     
@@ -340,7 +341,7 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
 8. Build the project.
 
     Had to modify or remove LibraryAzureADUserMgmt.Codeunit.al, LibraryVerifyXMLSchema.Codeunit, LibraryVerifyXML.Codeunit.al, and LibraryLowerPermissions.Codeunit.al
-
+-->
 ## 7. Publish your project
 When your converted solutions compile to an app, you can deploy and run it. You can either create and publish to your own database, or use the recently release Docker AL Preview image.
 
