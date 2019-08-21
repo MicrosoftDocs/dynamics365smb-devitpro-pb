@@ -15,10 +15,10 @@ ms.author: solsen
 > [!IMPORTANT]  
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 
-With the recent preview release of the base application converted to AL, you can now preview converting your existing C/AL code-customized on-prem solution to an AL code-customized on-prem solution as well. Below outlines the steps involved to do so. Please notice that this is just to test out the conversion; running a modified base application on AL in production is not yet supported. Before venturing into this, we recommend getting familiar with the basics of setting up and developing in Visual Studio Code and AL, see [Developing Extensions in AL](devenv-dev-overview.md). 
+With the recent preview release of the base application converted to AL, you can now preview converting your existing C/AL code-customized on-prem solution to an AL code-customized on-prem solution as well. Below outlines the steps involved to do so. Please notice that this is just to test out the conversion; running a modified base application on AL in production is not yet supported. Before venturing into this, we recommend getting familiar with the basics of setting up and developing in Visual Studio Code and AL, see [Developing Extensions in AL](../developer/devenv-dev-overview.md). 
 
 > [!NOTE]  
-> Moving on-premise C/AL code customizations to [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] online, requires converting these to AL extensions. This could include converting the C/AL deltas to AL extension code as a starting point, as outlined in [The Txt2Al Conversion Tool](devenv-txt2al-tool.md). 
+> Moving on-premise C/AL code customizations to [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] online, requires converting these to AL extensions. This could include converting the C/AL deltas to AL extension code as a starting point, as outlined in [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md). 
 
 <!--## To run a code conversion from C/AL to AL-->
 
