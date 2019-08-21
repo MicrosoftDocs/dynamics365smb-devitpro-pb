@@ -10,6 +10,7 @@ ms.topic: article
 ms.author: jswymer
 manager: edupont
 ms.service: "dynamics365-business-central"
+ROBOTS: NOINDEX
 ---
 # Technical Upgrade to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2
 
