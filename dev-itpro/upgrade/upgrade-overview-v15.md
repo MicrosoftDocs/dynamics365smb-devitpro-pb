@@ -10,6 +10,7 @@ ms.topic: article
 ms.author: jswymer
 manager: edupont
 ms.service: "dynamics365-business-central"
+ROBOTS: NOINDEX
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Wave 2
 
@@ -23,6 +24,9 @@ Use this scenario if you have a Business Central application that has not been m
 
  ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
+For more information, see [Upgrading an Unmodified Application](upgrade-unmodified-application.md). 
+
+<!--
 ### Prerequisite
 
 Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.0).
@@ -125,7 +129,7 @@ Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14
 
     -->
     
-
+<!--
 6. Upgrade the tenant data.
 
     ```
@@ -151,6 +155,7 @@ Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14
     ```
 -->
 
+<!--
 ### Task 5: Publish and upgrade Microsoft extensions
 
 Complete this task to upgrade any Microsoft extensions that were used in the previous version to new versions that are avialbel on the installation media. Do the following steps for each extension.
@@ -524,13 +529,18 @@ DebuggerCodeViewer.Page.al(14,36): error AL0417: Control add-in '"Microsoft.Dyna
 
 ### Clean steps
 -->
+## Technical Upgrade to Business Central 2019 Wave 2
 
 Use this process when you have a customized Business Central application that you want to upgrade to the Business Central Wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 
 <!-- For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 custom application to an Extension on the BC 15 platform.-->
 
  ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
- 
+
+
+For more information, see [Technical Upgrade](upgrade-technical-upgrade-v14-v15.md). 
+
+<!--
 ### Prerequisites
 
 1. Upgrade to Business Central Spring 2019.
@@ -773,6 +783,7 @@ CALTestRunner.fob
     Make a note of the name, ID, and publisher.
 
 -->
+<!--
 ### Task 2: Upgrade the application database to the version 15.0 platform
  
 1. Make backup of the database.
@@ -810,7 +821,7 @@ CALTestRunner.fob
 
     <!--What if to made changes to system tables?-->
 
-
+<!--
 ### Task 3: Upgrade the application
 
 1. Connect the Business Central 15.0 Server instance to the old application database.
@@ -851,6 +862,7 @@ CALTestRunner.fob
 
 <!--5. Mount the tenant (multinent deployment only).-->
 
+<!--
 ### Task 4: Upgrade the tenant
 
 If you have a multitenant deployment, perform these steps for each tenant.
@@ -870,6 +882,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 <!-- this step is not required becase of the  "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync server setting
 2. Delete all objects except system objects from application database (IDs 2000000000 and greater). Do not synchronize the tenant/tables. -->
 
+<!-- 
 3. Synchronize the tenant with the base application extension (BaseApp):
 
     ```
@@ -880,7 +893,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 <!-- This step is not required becase I do not have a test app>
 4. If you published a test application extension, synchronize the tenant with the test application extension.-->
-
+<!--
 5. Upgrade the tenant data.
 
     ```
@@ -893,6 +906,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
     Install-NAVApp BC150 -Name "System Application" -Version 15.0.34737.0
     ```
 -->
+<!--
 6. (Single tenant only) When upgrade is completed, restart the server instance.
 
     You will see that the custom base application and test application have been isntalled on the tenant. Only required for single tenant.
@@ -960,6 +974,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
             
             --> 
 
+<!--
 The application should now be accessible from the client.
 
 ### Publish Microsoft and 3rd party extensions
@@ -1058,7 +1073,7 @@ Now, you can publish the Microsoft and 3rd-party extensions that were published 
         This upgrades the data and installs the extension version.
 
     If you configured server:-->
-
+<!--
 1. Publish the extension that was previously published:
     
     ```
@@ -1074,7 +1089,7 @@ Now, you can publish the Microsoft and 3rd-party extensions that were published 
     Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.4
     ```
 
-
+-->
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
 [Upgrading to Business Central](upgrading-to-business-central.md)  
