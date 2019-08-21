@@ -14,9 +14,14 @@ ROBOTS: NOINDEX
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Wave 2
 
+> [!IMPORTANT]  
+> [!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)] 
+>
+> Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
+
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 marks the release where C/AL has been deprecated and replaced entirely by AL. From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. This change will influence how you perform the upgrade compared to earlier releases.
 
-## Upgrading an unmodified application
+## Upgrading an Unmodified Application
 
 Use this scenario if you have a Business Central application that has not been modified. The application might include Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central V15.0 base app extension. The result will be a fully upgraded application and platform on V15.0.
 
