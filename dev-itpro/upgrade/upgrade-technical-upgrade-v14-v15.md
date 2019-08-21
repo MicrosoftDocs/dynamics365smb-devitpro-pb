@@ -13,6 +13,11 @@ ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2
 
+[!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)] 
+
+> [!IMPORTANT]  
+> Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
+
 Use this process when you have a customized Business Central application that you want to upgrade to the Business Central Wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 
 <!-- For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 custom application to an Extension on the BC 15 platform.-->

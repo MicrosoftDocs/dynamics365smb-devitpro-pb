@@ -13,6 +13,11 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading an unmodified application to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2
 
+[!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)] 
+
+> [!IMPORTANT]  
+> Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
+
 Use this scenario if you have a Business Central application that has not been modified. Your solution might include Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central V15.0 base app extension. The result will be a fully upgraded application and platform on V15.0.
 
 <!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app.-->
