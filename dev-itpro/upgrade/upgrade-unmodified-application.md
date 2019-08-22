@@ -74,7 +74,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
     ```
     Dismount-NAVTenant -ServerInstance BC140 -Tenant default
     ```
-4. Stop the server instance.
+5. Stop the server instance.
 
     ```
     Stop-NAVServerInstance -ServerInstance BC140
@@ -169,14 +169,14 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
     At this stage, the tenant state is **OperationalDataUpgradePending**.
 
-3. Synchronize the tenant with the **System Application** extension (Microsoft_System Application_15.0.34737.0):
+3. Synchronize the tenant with the **System Application** extension (Microsoft_System Application):
 
     Use the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
     ```
     Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "System Application" -Version 15.0.34737.0
     ```
-5. Synchronize the tenant with the Business Central Base Application extension (BaseApp):
+5. Synchronize the tenant with the Business Central Base Application extension (Microsoft_BaseApp):
 
     ```
     Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "BaseApp" -Version 15.0.34737.0 -Mode ForceSync
