@@ -29,12 +29,15 @@ Use this scenario if you have a Business Central application that has not been m
 
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.0).
 
-2. Install all components of Business Central 2019 Wave 2 (version 15).
-
-    > [!IMPORTANT]
-    > You must install all components available in Setup because of dependencies. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. You must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins folder.
 
 ## Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2 (version 15.0)
+
+1. Before you install version 15.0, it can be useful to create desktop shortcuts to the the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these will be replaced with the version 15.0 tools.
+
+2. Install all components of Business Central 2019 Wave 2 (version 15) bu using setup.exe.
+
+    > [!IMPORTANT]
+    > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins folder.
 
 ## Task 1: Prepare the version 14.0 application and tenant databases for upgrade
 
