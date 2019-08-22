@@ -39,27 +39,44 @@ Use this scenario if you have a Business Central application that has not been m
     > [!IMPORTANT]
     > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins folder.
 
+    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+
 ## Task 1: Prepare the version 14.0 application and tenant databases for upgrade
 
 1. Make backup of the databases.
-2. Uninstall all extensions from the tenants.
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14.0 as an administrator.
+1. Uninstall all extensions from the tenants.
+
+    To uninstall an extension, you use the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet. For example, together with the Get-NAVAPP cndlet, you can uninstall all extensions with a single command:
 
     ``` 
     Get-NAVAppInfo -ServerInstance BC140 -Tenant default | % { Uninstall-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version -Tenant default}
     ``` 
 3. Unpublish all system, test, and application symbols from the application.
 
+    To unpublish symbols, use the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
+
     ``` 
     Get-NAVAppInfo -ServerInstance BC140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
     ``` 
 4. (Multitenant only) Dismount the tenants from the application server instance.
-5. Stop the server instance.
+
+    To dismount a tenant, use the [Dismount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
+
+    ```
+    Dismount-NAVTenant -ServerInstance BC140 -Tenant default
+    ```
+4. Stop the server instance.
+
+    ```
+    Stop-NAVServerInstance -ServerInstance BC140
+    ```
 
 ## Task 2: Upgrade the version 14.0 application to the version 15.0 platform
      
 1. Run a technical upgrade on the application.
 
-    Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for 2019 Wave 2 as an administrator, and run the Invoke-NAVApplicationDatabaseConversion cmdlet:
+    Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator, and run the Invoke-NAVApplicationDatabaseConversion cmdlet:
 
     ```
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
@@ -68,12 +85,19 @@ Use this scenario if you have a Business Central application that has not been m
 ## Task 3: Upgrade the application
 
 1. Connect a version 15.0 server instance to the application database, and then start the server instance.
+
+    For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+
 2. Increase the application version of the application database.
+
+    Use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 
     ```
     Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
     ```
 3. Configure the server instance to synchronize only the base application with tenants.
+
+    This is dne by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`. 
 
     ```
      Set-NAVServerConfiguration bc150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
@@ -85,7 +109,7 @@ Use this scenario if you have a Business Central application that has not been m
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
-5. Publish the System Application extension (Microsoft_System Application_15.0.34737.0.app).
+5. Publish the **System Application** extension (Microsoft_System Application_15.0.34737.0.app).
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
@@ -102,20 +126,41 @@ Use this scenario if you have a Business Central application that has not been m
 If you have a multitenant deployment, perform these steps for each tenant.
 
 1. (Multitenant only) Mount the tenant to the version 15.0 server instance.
+
+    To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
+
+    
+    ```
+    Mount-NAVTenant -ServerInstance BC150 -DatabaseName "Demo Database BC (14-0) -DatabaseServer .\BCDEMO -Tenant tenant1 -AllowAppDatabaseWrite
+    ```
+    
+    > [!IMPORTANT]
+    > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you will get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
+    
+    > [!NOTE]  
+    > For upgrade, we recommend that you use the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
+
 2. Synchronize the tenant with the application.
+
+    Use the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
 
     ```  
     Sync-NAVTenant -ServerInstance BC150 -Tenant default
     ```
+    
+    With a single-tenant deployment, you can omit the `-Tenant` parameter.
 
     At this stage, the tenant state is **OperationalDataUpgradePending**.
 
-4. Synchronize the tenant with the System Application extension (Microsoft_System Application_15.0.34737.0):
+3. Synchronize the tenant with the **System Application** extension (Microsoft_System Application_15.0.34737.0):
+
+    Use the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
     ```
     Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "System Application" -Version 15.0.34737.0
     ```
 5. Synchronize the tenant with the Business Central Base Application extension (BaseApp):
+
     ```
     Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "BaseApp" -Version 15.0.34737.0 -Mode ForceSync
     ```
@@ -149,6 +194,8 @@ If you have a multitenant deployment, perform these steps for each tenant.
     
 
 6. Upgrade the tenant data.
+
+    Use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
     ```
     Start-NAVDataUpgrade -ServerInstance BC150 -Tenant default -FunctionExecutionMode Serial -Force -SkipCompanyInitialization

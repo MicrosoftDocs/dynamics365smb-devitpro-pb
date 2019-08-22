@@ -38,6 +38,8 @@ Use this process when you have a customized Business Central application that yo
     > [!IMPORTANT]
     > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins folder.
 
+    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+
 ## Task 1: Convert your application from C/AL to AL
 
 The first thing to do is convert your solution from C/AL to AL. For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
