@@ -34,6 +34,8 @@ Use this scenario if you have a Business Central application that has not been m
     > [!IMPORTANT]
     > You must install all components available in Setup because of dependencies. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. You must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins folder.
 
+## Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2 (version 15.0)
+
 ## Task 1: Prepare the version 14.0 application and tenant databases for upgrade
 
 1. Make backup of the databases.
