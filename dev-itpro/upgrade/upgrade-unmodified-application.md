@@ -28,7 +28,7 @@ Use this scenario if you have a Business Central application that has not been m
 
 ## Single-tenant and multitenant deployments
 
-The process for upgrading the very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data is included in the same database, while with a multitenant deployment application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the **application database** as your database. In the steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+The process for upgrading the very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data is included in the same database, while with a multitenant deployment application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the **application database** and tenant database as the same database. In the steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
 ## Prerequisite
 
@@ -42,7 +42,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 2. Install all components of Business Central 2019 Wave 2 (version 15) by using setup.exe.
 
     > [!IMPORTANT]
-    > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins folder.
+    > Because of dependencies, we recommend that for upgrade, you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins folder.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -81,8 +81,11 @@ The process for upgrading the very similar for a single-tenant and multitenant d
     ```
 
 ## Task 2: Upgrade the version 14.0 application to the version 15.0 platform
-     
-1. Run a technical upgrade on the application.
+
+This task converts an application database from the version 14.0 platform
+to the version 15.0 platform. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
+
+1. Run a technical upgrade on the application database.
 
     Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator, and run the Invoke-NAVApplicationDatabaseConversion cmdlet:
 
@@ -103,30 +106,37 @@ The process for upgrading the very similar for a single-tenant and multitenant d
     ```
     Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
     ```
-3. Configure the server instance to synchronize only the base application with tenants.
+3. Configure the server instance to synchronize only the system application objects with tenants.
 
     This is dne by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`. 
 
     ```
-     Set-NAVServerConfiguration bc150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
+     Set-NAVServerConfiguration BC150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
     ```
+
+    This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system application objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
+ 
 4. Publish version 15 system symbols extension.
 
-    The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
+    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
-5. Publish the **System Application** extension (Microsoft_System Application_15.0.34737.0.app).
+5. Publish the **System Application** extension (Microsoft_System Application.app).
+
+    The **System Application** extension contains objects (IDs in the 2000000000 range ) that are required by any application. You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).   
 
     ```
-    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\35535\W1DVD\Applications\System Application\Source\Microsoft_System Application.app" -SkipVerification
     ```
 
-6. Publish the Business Central base application extension (Microsoft_BaseApp_15.0.34737.0.app).
+6. Publish the Business Central base app extension (Microsoft_BaseApp.app).
+
+    The **base application** extension contains the application business objects. You find the (Microsoft_System Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
 
     ```
-    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp.app" -SkipVerification
     ```
 
 ## Task 4: Synchronize and upgrade the tenants
@@ -136,7 +146,6 @@ If you have a multitenant deployment, perform these steps for each tenant.
 1. (Multitenant only) Mount the tenant to the version 15.0 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
-
     
     ```
     Mount-NAVTenant -ServerInstance BC150 -DatabaseName "Demo Database BC (14-0) -DatabaseServer .\BCDEMO -Tenant tenant1 -AllowAppDatabaseWrite

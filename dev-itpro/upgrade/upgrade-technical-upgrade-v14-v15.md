@@ -84,7 +84,7 @@ Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "
 
 ## Task 4: Publish the base application, symbols, and extensions
 
-1. Connect a version 15.0 server instance to the old application database.
+1. Connect a version 15.0 server instance to the application database.
 
     In a single tenant deployment, this will mount the tenant automatically.
 
