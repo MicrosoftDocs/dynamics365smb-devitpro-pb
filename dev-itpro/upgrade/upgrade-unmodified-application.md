@@ -67,7 +67,14 @@ The process for upgrading the very similar for a single-tenant and multitenant d
     ``` 
     Get-NAVAppInfo -ServerInstance BC140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
     ``` 
-4. (Multitenant only) Dismount the tenants from the application server instance.
+
+4. Unpublish all 3rd party extensions.
+
+    ``` 
+    Unpublish-NAVApp -ServerInstance BC140 -Name My14Extension -Version 1.0.0.4
+    ```
+
+5. (Multitenant only) Dismount the tenants from the application server instance.
 
     To dismount a tenant, use the [Dismount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
@@ -93,7 +100,7 @@ to the version 15.0 platform. The conversion updates the system tables of the da
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-## Task 3: Upgrade the application
+## Task 3: Publish the base application, symbols, and other extensions
 
 1. Connect a version 15.0 server instance to the application database, and then start the server instance.
 
@@ -106,24 +113,40 @@ to the version 15.0 platform. The conversion updates the system tables of the da
     ```
     Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
     ```
-3. Configure the server instance to synchronize only the system application objects with tenants.
-
-    This is dne by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`. 
+2. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. 
 
     ```
-     Set-NAVServerConfiguration BC150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    ```
+    <!-- with test
+    ```
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    ```-->
+    This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application--> on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
+
+3. Configure the server instance to synchronize only the system application objects with tenants.
+
+    This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`. 
+
+    ```
+    Set-NAVServerConfiguration BC150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
     ```
 
     This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system application objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
- 
-4. Publish version 15 system symbols extension.
+
+4. Restart the server instance.
+
+    ```
+    Restart-NAVServerInstance BC150
+    ```
+5. Publish version 15 system symbols extension.
 
     The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
-5. Publish the **System Application** extension (Microsoft_System Application.app).
+6. Publish the **System Application** extension (Microsoft_System Application.app).
 
     The **System Application** extension contains objects (IDs in the 2000000000 range ) that are required by any application. You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).   
 
@@ -131,12 +154,25 @@ to the version 15.0 platform. The conversion updates the system tables of the da
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\35535\W1DVD\Applications\System Application\Source\Microsoft_System Application.app" -SkipVerification
     ```
 
-6. Publish the Business Central base app extension (Microsoft_BaseApp.app).
+7. Publish the Business Central base app extension (Microsoft_BaseApp.app).
 
     The **base application** extension contains the application business objects. You find the (Microsoft_System Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp.app" -SkipVerification
+    ```
+
+8. Publish the new versions of Microsoft extensions that were used before upgrade.
+
+    You find the extensions in the **Extensions** folder of the installation media (DVD). 
+    
+    ```
+    Publish-NAVApp -ServerInstance BC150 -Path c:"\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
+    ```
+9. Publish the 3rd-party extensions that were used before upgrade.
+
+    ```
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
     ```
 
 ## Task 4: Synchronize and upgrade the tenants
@@ -237,16 +273,18 @@ If you have a multitenant deployment, perform these steps for each tenant.
     ```
 -->
 
-## Task 5: Publish and upgrade Microsoft extensions
+## Task 5: Sychronize and upgrade Microsoft extensions on the tenants
 
-Complete this task to upgrade any Microsoft extensions that were used in the previous version to new versions that are available on the installation media. Do the following steps for each extension.
+Complete this task to upgrade any Microsoft extensions that were used in the previous version to new versions that are available on the installation media. Do the following steps for each extension, and for each tenant in a multitenant deployment.
 
+<!--
 1. Publish the extension.
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path c:"\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
     ```
-2. Synchronize the tenant with the extension. 
+-->
+1. Synchronize the tenant with the extension. 
 
     ```
     Sync-NAVAapp BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
@@ -257,10 +295,11 @@ Complete this task to upgrade any Microsoft extensions that were used in the pre
     Start-NAVAppDataUpgrade BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
     ```
 
-## Task 6: Publish and install 3rd party extensions
+## Task 6: Synchronize and install 3rd party extensions
 
-Complete this task if you have 3rd-party extensions to upgrade. The extensions must be modified to work with base application extension. There are two ways to do this. You can either modify the extension code or configure the version 15 server instance to handle this.
+Complete this task if you have 3rd-party extensions to upgrade. The extensions must be modified to work with base application extension. <!--There are two ways to do this. You can either modify the extension code or configure the version 15 server instance to handle this.-->
 
+<!--
 ### Modify extension code
 
 1. Upgrade the extension package to reference the base app and system app.
@@ -323,12 +362,13 @@ Complete this task if you have 3rd-party extensions to upgrade. The extensions m
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
     ```
-4. Synchronize the tenant with the extension:
+-->
+1. Synchronize the tenant with the extension:
 
     ```
     Sync-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
     ```
-5. Install the extension:
+2. Install the extension:
 
     ```
     Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.3

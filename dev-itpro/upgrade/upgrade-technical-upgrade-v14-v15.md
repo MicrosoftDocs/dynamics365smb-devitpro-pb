@@ -105,7 +105,7 @@ This task converts an application database from the version 14.0 platform to the
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-## Task 4: Publish the base application, symbols, and extensions
+## Task 4: Publish the base application, symbols, and other extensions
 
 1. Connect a version 15.0 server instance to the application database.
 
@@ -132,7 +132,12 @@ This task converts an application database from the version 14.0 platform to the
 
     This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system application objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
 
-4. Increase the application version of the application database.
+4. Restart the server instance.
+
+    ```
+    Restart-NAVServerInstance BC150
+    ```
+5. Increase the application version of the application database.
 
     Use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 
@@ -142,20 +147,20 @@ This task converts an application database from the version 14.0 platform to the
 
     At this point, the tenant state is **OperationalWithSyncPending**.
 
-5. Publish the version 15 system symbols extension.
+6. Publish the version 15 system symbols extension.
 
     The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
-6. Publish the custom base application extension that you created:
+7. Publish the custom base application extension that you created:
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\CusomtBaseApp2\Microsoft_BaseApp_15.0.34982.0.app" -SkipVerification
     ```
 
-7. Publish the Microsoft and 3rd party extensions.
+8. Publish the Microsoft and 3rd party extensions.
 
     Publish the Microsoft and 3rd party extensions that were published to the old application.
 
