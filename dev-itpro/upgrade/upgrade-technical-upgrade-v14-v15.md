@@ -26,7 +26,7 @@ Use this process when you have a customized Business Central application that yo
  ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
  
 
-## Single-tenant and multitenant deployments
+### Single-tenant and multitenant deployments
 
 The process for upgrading the very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data is included in the same database, while with a multitenant deployment application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the **application database** and tenant database as the same database. In the steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
@@ -230,7 +230,6 @@ Now, you can install the Microsoft and 3rd-party extensions that were previously
     ```
     Install-NAVApp -ServerInstance BC150 -Tenant default -Name My14Extension -Version 1.0.0.4
     ```
-
 
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
