@@ -25,6 +25,11 @@ Use this scenario if you have a Business Central application that has not been m
 
  ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
+
+## Single-tenant and multitenant deployments
+
+The process for upgrading the very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data is included in the same database, while with a multitenant deployment application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the **application database** as your database. In the steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+
 ## Prerequisite
 
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.0).
@@ -34,7 +39,7 @@ Use this scenario if you have a Business Central application that has not been m
 
 1. Before you install version 15.0, it can be useful to create desktop shortcuts to the the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these will be replaced with the version 15.0 tools.
 
-2. Install all components of Business Central 2019 Wave 2 (version 15) bu using setup.exe.
+2. Install all components of Business Central 2019 Wave 2 (version 15) by using setup.exe.
 
     > [!IMPORTANT]
     > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins folder.
@@ -45,13 +50,16 @@ Use this scenario if you have a Business Central application that has not been m
 
 1. Make backup of the databases.
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14.0 as an administrator.
-1. Uninstall all extensions from the tenants.
+1. Uninstall all extensions from the all tenants.
 
     To uninstall an extension, you use the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet. For example, together with the Get-NAVAPP cndlet, you can uninstall all extensions with a single command:
 
     ``` 
     Get-NAVAppInfo -ServerInstance BC140 -Tenant default | % { Uninstall-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version -Tenant default}
     ``` 
+
+    If you have a single tenant deployment, you can omit the `-Tenant` parameter and value. 
+
 3. Unpublish all system, test, and application symbols from the application.
 
     To unpublish symbols, use the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
@@ -148,7 +156,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
     Sync-NAVTenant -ServerInstance BC150 -Tenant default
     ```
     
-    With a single-tenant deployment, you can omit the `-Tenant` parameter.
+    With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
     At this stage, the tenant state is **OperationalDataUpgradePending**.
 
