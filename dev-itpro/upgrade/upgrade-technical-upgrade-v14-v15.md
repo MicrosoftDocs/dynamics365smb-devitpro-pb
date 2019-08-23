@@ -32,7 +32,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 ## Prerequisites
 
-1. Upgrade to Business Central Spring 2019.
+1.  Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.0). For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md)
 
 ## Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2 (version 15.0)
 
