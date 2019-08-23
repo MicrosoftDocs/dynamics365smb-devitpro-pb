@@ -1095,11 +1095,6 @@ Now, you can publish the Microsoft and 3rd-party extensions that were published 
     ```
 
 -->
-## Componennt overview
-
-When upgrading, it will help to understand the components indicated in the illustration:
-
-
 
 ## <a name="Symbols"></a>Symbols
 
