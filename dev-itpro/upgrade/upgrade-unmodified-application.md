@@ -146,6 +146,8 @@ to the version 15.0 platform. The conversion updates the system tables of the da
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
+    
+    [What are symbols?](upgrade-overview-v15.md#Symbols) 
 6. Publish the **System Application** extension (Microsoft_System Application.app).
 
     The **System Application** extension contains objects (IDs in the 2000000000 range ) that are required by any application. You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).   

@@ -71,7 +71,9 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
 
     ``` 
     Get-NAVAppInfo -ServerInstance BC140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
-    ```     
+    ```    
+
+    [What are symbols?](upgrade-overview-v15.md#Symbols)  
 4. Unpublish all extensions from the application.
 
     ```
