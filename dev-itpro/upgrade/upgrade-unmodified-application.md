@@ -126,13 +126,13 @@ to the version 15.0 platform. The conversion updates the system tables of the da
 
 3. Configure the server instance to synchronize only the system application objects with tenants.
 
-    This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`. 
+    This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`.
 
     ```
     Set-NAVServerConfiguration BC150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
     ```
 
-    This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system application objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
+    This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains the old metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
 
 4. Restart the server instance.
 
@@ -155,7 +155,8 @@ to the version 15.0 platform. The conversion updates the system tables of the da
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\35535\W1DVD\Applications\System Application\Source\Microsoft_System Application.app" -SkipVerification
     ```
-
+    
+    [What is the System Application?](upgrade-overview-v15.md#Symbols) 
 7. Publish the Business Central base app extension (Microsoft_BaseApp.app).
 
     The **base application** extension contains the application business objects. You find the (Microsoft_System Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
