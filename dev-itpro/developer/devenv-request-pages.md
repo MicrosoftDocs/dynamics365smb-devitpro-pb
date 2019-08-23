@@ -11,7 +11,7 @@ ms.author: solsen
 ---
 
 # Request Pages
-A request page is a page that is run before the report or XMLport starts to execute. Request pages enable end users to specify options and filters for a report and an XMLport. Request pages are defined as part of designing a [report object](devenv-report-object.md) and an [XMLport object](devenv-xmlport-object.md) ([!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)]). The syntax is shown further down in this topic. You design the filters on request pages by using the following report and XMLport properties:
+A request page is a page that is run before the report or XMLport starts to execute. Request pages enable end users to specify options and filters for a report and an XMLport ([!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)]). Request pages are defined as part of designing a [report object](devenv-report-object.md) and an [XMLport object](devenv-xmlport-object.md). The syntax is shown further down in this topic. You design the filters on request pages by using the following report and XMLport properties:
 
 |Property|Description|
 |--------|-----------|
