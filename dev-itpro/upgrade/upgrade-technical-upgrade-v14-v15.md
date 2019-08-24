@@ -28,7 +28,7 @@ Use this process when you have a customized Business Central application that yo
 
 ### Single-tenant and multitenant deployments
 
-The process for upgrading the very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data is included in the same database, while with a multitenant deployment application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+The process for upgrading the very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data are included in the same database, while with a multitenant deployment application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
 ## Prerequisites
 
@@ -126,7 +126,7 @@ This task converts an application database from the version 14.0 platform to the
 
 3. Configure the server instance to synchronize only the system application objects with tenants.
 
-    This is dne by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`. 
+    This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`. 
 
     ```
     Set-NAVServerConfiguration BC150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
@@ -200,25 +200,28 @@ If you have a multitenant deployment, perform these steps for each tenant.
     Sync-NAVApp -ServerInstance BC150 -Name "BaseApp" -Version 15.0.34982.0 -tenant default
     ```
 
-    This will append tables in database with extension IDs.
+    With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID.
 
 5. Upgrade the tenant data.
 
     Use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
     ```
-    Start-NAVDataUpgrade -ServerInstance BC150 -Tenant default -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
+    Start-NAVDataUpgrade -ServerInstance BC150 -Tenant default -FunctionExecutionMode Serial
     ```        
 
     This step upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before you complete the next step or to open the application in the client.
 
-    To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
-    
-    When completed, the tenant state should be **Operational**.
+    > [!TIP]  
+    >  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the `Start-NavDataUpgrade` with the `-SkipCompanyIntitialization` parameter. 
+
+    The data upgrade process runs `CheckPreconditions` and `Upgrade` functions in the upgrade codeunits. If any of the preconditions are not met or an upgrade function fails, you must correct the error and resume the data upgrade process. If CheckPreconditions and Upgrade functions are executed successfully, codeunit 2 is automatically run to initialize all companies in the database unless you set the `-SkipCompanyIntitialization` parameter.
+
+    To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch. When completed, the tenant state should be **Operational**.
+
 6. (Single tenant only) When upgrade is completed, restart the server instance.
 
     You will see that the custom base application has been installed on the tenant. 
-
 
 The application should now be accessible from the client.
 

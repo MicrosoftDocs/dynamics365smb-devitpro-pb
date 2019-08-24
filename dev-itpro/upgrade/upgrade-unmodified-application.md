@@ -220,8 +220,11 @@ If you have a multitenant deployment, perform these steps for each tenant.
     ```
     Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "BaseApp" -Version 15.0.34737.0 -Mode ForceSync
     ```
+    
+    With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID. This process can take several minutes.
 
-    This can take several minutes.
+    > [!IMPORTANT] 
+    > Usually, you will use the `-Mode Sync` switch instead of `-Mode ForceSync`. However, currently the upgrade code is not available. So you must use `-Mode ForceSync`otherwise you will not be able to synchronize the tenant because of destructive changes, specifically with the Invoice Post. Buffer and Incoming Document tables. 
 
     <!--**Error:**
 
