@@ -109,6 +109,8 @@ This task converts an application database from the version 14.0 platform to the
 
 ## Task 4: Publish the base application, symbols, and other extensions
 
+In this task, you will publish extensions to the version 15.0 server instance. Publishing an extension adds the extension to the application database that is mounted on the server instance, making it available for installing on tenants later on. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
+
 1. Connect a version 15.0 server instance to the application database.
 
     In a single tenant deployment, this will mount the tenant automatically.
@@ -171,6 +173,8 @@ This task converts an application database from the version 14.0 platform to the
     ```
 
 ## Task 5: Synchronize and upgrade the tenants
+
+In this task, you will complete two processes on the tenant: synchronizing and upgrading data. Synchronizing a tenant updates the database schema in a tenant database with any schema changes in the application database. The application database contains tables that define the application. The tenant database must contain the SQL Server tables that the application prescribes. Upgrading data updates the actual data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database.
 
 If you have a multitenant deployment, perform these steps for each tenant.
 
