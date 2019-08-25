@@ -96,7 +96,6 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
 
 ## Task 3: Upgrade the application database to the version 15.0 platform
 
-
 This task converts an application database from the version 14.0 platform to the version 15.0 platform. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
 
 1. Run a technical upgrade on the application database.
