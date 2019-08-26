@@ -95,8 +95,8 @@
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
-### Monitoring Server Events
-#### [Monitoring Server Events Overview](administration/monitor-server-events.md)
+#### Monitoring Server Events
+##### [Monitoring Server Events Overview](administration/monitor-server-events.md)
 ##### [Trace Events List](administration/server-trace-events.md)
 ##### [Admin and Operational Events List](administration/server-events.md)
 ##### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)

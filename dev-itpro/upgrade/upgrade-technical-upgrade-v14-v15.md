@@ -176,7 +176,7 @@ In this task, you will complete two processes on the tenant: synchronizing and u
 
 If you have a multitenant deployment, perform these steps for each tenant.
 
-1. (Multitnent only) Mount the tenant.
+1. (Multitenant only) Mount the tenant.
 
     ```
     Mount-NAVTenant -ServerInstance BC150 -Tenant default -DatabaseName "Demo Database BC (14-0)" -DatabaseServer navdevvm-0127 -DatabaseInstance BCDEMO
@@ -209,9 +209,9 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
     Use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
-
+    ```
     Start-NAVDataUpgrade -ServerInstance BC150 -Tenant default -FunctionExecutionMode Serial
-
+    ```
 
     This step upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before you complete the next step or to open the application in the client.
 
