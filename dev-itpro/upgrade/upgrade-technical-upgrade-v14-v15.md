@@ -34,7 +34,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 1.  Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.0). For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md)
 
-## Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2 (version 15.0)
+## Task 1: Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2 (version 15.0)
 
 1. Before you install version 15.0, it can be useful to create desktop shortcuts to the the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these will be replaced with the version 15.0 tools.
 
@@ -45,11 +45,11 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 1: Convert your application from C/AL to AL
+## Task 2: Convert your application from C/AL to AL
 
 The first thing to do is convert your solution from C/AL to AL. For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
 
-## Task 2: Prepare the application database for technical upgrade
+## Task 3: Prepare the application database for technical upgrade
 
 1. Make backup of the database.
 2. Uninstall all extensions from the old tenants.
@@ -94,7 +94,7 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
     Stop-NAVServerInstance -ServerInstance BC140
     ```
 
-## Task 3: Upgrade the application database to the version 15.0 platform
+## Task 4: Upgrade the application database to the version 15.0 platform
 
 This task converts an application database from the version 14.0 platform to the version 15.0 platform. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
 
@@ -106,7 +106,7 @@ This task converts an application database from the version 14.0 platform to the
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-## Task 4: Publish the base application, symbols, and other extensions
+## Task 5: Publish the base application, symbols, and other extensions
 
 In this task, you will publish extensions to the version 15.0 server instance. Publishing an extension adds the extension to the application database that is mounted on the server instance, making it available for installing on tenants later on. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -171,7 +171,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.4.app" -SkipVerification
     ```
 
-## Task 5: Synchronize and upgrade the tenants
+## Task 6: Synchronize and upgrade the tenants
 
 In this task, you will complete two processes on the tenant: synchronizing and upgrading data. Synchronizing a tenant updates the database schema in a tenant database with any schema changes in the application database. The application database contains tables that define the application. The tenant database must contain the SQL Server tables that the application prescribes. Upgrading data updates the actual data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database.
 
@@ -228,7 +228,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 The application should now be accessible from the client.
 
-## Task 6: Synchronize and install Microsoft and 3rd party extensions on the tenants
+## Task 7: Synchronize and install Microsoft and 3rd party extensions on the tenants
 
 Now, you can install the Microsoft and 3rd-party extensions that were previously installed before the upgrade. For each extension, do the following steps:
 

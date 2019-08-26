@@ -35,7 +35,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.0). For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md)
 
 
-## Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] version 15.0
+## Task 1: Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] version 15.0
 
 1. Before you install version 15.0, it can be useful to create desktop shortcuts to the the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these will be replaced with the version 15.0 tools.
 
@@ -46,7 +46,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 1: Prepare the version 14.0 application and tenant databases for upgrade
+## Task 2: Prepare the version 14.0 application and tenant databases for upgrade
 
 1. Make backup of the databases.
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14.0 as an administrator.
@@ -87,7 +87,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
     Stop-NAVServerInstance -ServerInstance BC140
     ```
 
-## Task 2: Upgrade the version 14.0 application to the version 15.0 platform
+## Task 3: Upgrade the version 14.0 application to the version 15.0 platform
 
 This task converts an application database from the version 14.0 platform to the version 15.0 platform. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
 
@@ -99,7 +99,7 @@ This task converts an application database from the version 14.0 platform to the
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-## Task 3: Publish the base application, symbols, and other extensions
+## Task 4: Publish the base application, symbols, and other extensions
 
 In this task, you will publish extensions to the version 15.0 server instance. Publishing an extension adds the extension to the application database that is mounted on the server instance, making it available for installing on tenants later on. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -179,7 +179,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
     ```
 
-## Task 4: Synchronize and upgrade the tenants
+## Task 5: Synchronize and upgrade the tenants
 
 In this task, you will complete two processes on the tenant: synchronizing and upgrading data. Synchronizing a tenant updates the database schema in a tenant database with any schema changes in the application database. The application database contains tables that define the application. The tenant database must contain the SQL Server tables that the application prescribes. Upgrading data updates the actual data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database. 
 
@@ -282,7 +282,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
     ```
 -->
 
-## Task 5: Sychronize and upgrade Microsoft extensions on the tenants
+## Task 6: Synchronize and upgrade Microsoft extensions on the tenants
 
 Complete this task to upgrade any Microsoft extensions that were used in the previous version to new versions that are available on the installation media. Do the following steps for each extension, and for each tenant in a multitenant deployment.
 
@@ -293,18 +293,19 @@ Complete this task to upgrade any Microsoft extensions that were used in the pre
     Publish-NAVApp -ServerInstance BC150 -Path c:"\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
     ```
 -->
+
 1. Synchronize the tenant with the extension. 
 
     ```
     Sync-NAVAapp BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
     ```
-3. Upgrade the tenant data to the extension.
+2. Upgrade the tenant data to the extension.
 
     ```
     Start-NAVAppDataUpgrade BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
     ```
 
-## Task 6: Synchronize and install 3rd party extensions
+## Task 7: Synchronize and install 3rd party extensions
 
 Complete this task if you have 3rd-party extensions to upgrade. The extensions must be modified to work with base application extension. <!--There are two ways to do this. You can either modify the extension code or configure the version 15 server instance to handle this.-->
 
