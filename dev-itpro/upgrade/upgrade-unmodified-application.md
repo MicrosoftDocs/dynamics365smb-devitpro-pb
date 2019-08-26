@@ -228,31 +228,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
     > [!IMPORTANT] 
     > Usually, you will use the `-Mode Sync` switch instead of `-Mode ForceSync`. However, currently the upgrade code is not available. So you must use `-Mode ForceSync`otherwise you will not be able to synchronize the tenant because of destructive changes, specifically with the Invoice Post. Buffer and Incoming Document tables. 
-    
-       <!--**Error:**
-    
-        Got this error the second time:
-        
-        ```
-        Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
-        Sync-NAVApp : Table Invoice Post. Buffer :: Unsupported field change.
-        Field:Additional Grouping Identifier; Change:LengthChanged
-        Table Incoming Document :: Unsupported field change. Field:URL1; Change:Remove
-        Table Incoming Document :: Unsupported field change. Field:URL2; Change:Remove
-        Table Incoming Document :: Unsupported field change. Field:URL3; Change:Remove
-        Table Incoming Document :: Unsupported field change. Field:URL4; Change:Remove
-        At line:1 char:1
-        + Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
-        + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            + CategoryInfo          : InvalidOperation: (:) [Sync-NAVApp], InvalidOper
-           ationException
-            + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC150/nav-systemappli
-           cation,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.SyncNavApp
-        ```
-        
-        To fix this I synced again using `-mode forcesync`.
-    
-        -->
+
 
 6. Upgrade the tenant data.
 
