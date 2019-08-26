@@ -34,7 +34,6 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.0). For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md)
 
-
 ## Task 1: Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] version 15.0
 
 1. Before you install version 15.0, it can be useful to create desktop shortcuts to the the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these will be replaced with the version 15.0 tools.
@@ -293,7 +292,6 @@ Complete this task to upgrade any Microsoft extensions that were used in the pre
     Publish-NAVApp -ServerInstance BC150 -Path c:"\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
     ```
 -->
-
 1. Synchronize the tenant with the extension. 
 
     ```
