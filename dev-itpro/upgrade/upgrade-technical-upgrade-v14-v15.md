@@ -109,7 +109,6 @@ This task converts an application database from the version 14.0 platform to the
 ## Task 5: Publish the base application, symbols, and other extensions
 
 In this task, you will publish extensions to the version 15.0 server instance. Publishing an extension adds the extension to the application database that is mounted on the server instance, making it available for installing on tenants later on. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
-
 1. Connect a version 15.0 server instance to the application database.
 
     In a single tenant deployment, this will mount the tenant automatically.
@@ -205,13 +204,14 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
     With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID.
 
+
 5. Upgrade the tenant data.
 
     Use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
-    ```
+
     Start-NAVDataUpgrade -ServerInstance BC150 -Tenant default -FunctionExecutionMode Serial
-    ```        
+
 
     This step upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before you complete the next step or to open the application in the client.
 
