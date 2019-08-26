@@ -176,7 +176,7 @@ In this task, you will complete two processes on the tenant: synchronizing and u
 
 If you have a multitenant deployment, perform these steps for each tenant.
 
-1. (Multitnent only) Mount the tenant.
+1. (Multitenant only) Mount the tenant.
 
     ```
     Mount-NAVTenant -ServerInstance BC150 -Tenant default -DatabaseName "Demo Database BC (14-0)" -DatabaseServer navdevvm-0127 -DatabaseInstance BCDEMO
