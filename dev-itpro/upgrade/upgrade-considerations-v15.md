@@ -45,7 +45,7 @@ To take advantage of these all these features, you will have to perform an appli
  If you are upgrading a solution that depends on functionality that is deprecated or changed in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you must verify that the upgrade codeunits migrate data correctly. See the See Also section for links to descriptions of deprecated functionality.
 
 ### The System Password table is not available for online versions
-The System Password table is deprecated, and all extensions must use Isolated Storage to store Azure Key Vault keys. 
+The System Password table is deprecated, and all extensions must use Isolated Storage to store Azure Key Vault keys. For more information, see [Isolated Storage](..developer/devenv-isolated-storage.md).
 
 ## Deprecated fields and fields marked as obsolete
 
