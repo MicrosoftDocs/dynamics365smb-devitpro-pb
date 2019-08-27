@@ -90,6 +90,7 @@
 #### [Configuring Business Central Web Server Instances](administration/configure-web-server.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
+### [Encrypting Data](developer/devenv-encrypting-data.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 ### Monitoring Server Events
