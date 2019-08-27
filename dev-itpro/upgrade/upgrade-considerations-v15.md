@@ -12,7 +12,7 @@ ms.service: dynamics365-business-central
 ms.date: 04/01/2019
 ms.author: jswymer
 ---
-# Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
+# Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2
 
 Depending on which version you are upgrading from, and the degree to which your solution differs from the standard version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you may want to prepare your solution for the upgrade. This topic provides important information and tips for things to consider when you prepare to upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
@@ -29,12 +29,39 @@ The process consists of two parts:
 - Convert non-standard functionality and customizations to apps and per-tenant extensions. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).
 - Enable replication to a cloud tenant as described in [Connect to the intelligent cloud](../administration/about-intelligent-edge.md), and then switch to use the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant going forward.
 
+## Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]
+
+### Codeunit 1 has been deprecated and replaced
+
+[!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] included codeunit **1 ApplicationManagement**. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this codeunit has been retired, and new ‘system’ codeunits have been introduced in the 2 billion range.
+
+For information, see [Transitioning from Codeunit 1 to System Codeunits](transition-from-codeunit1.md).
+
+### V1 Extensions have been discontinued
+
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], extensions V1 are no longer supported for on-premise installations. As a result, any custom extensions V1 must be converted to extensions V2 in the old environment before upgrading to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+
+For information about how to convert to extensions V2, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
+
+### MenuSuite not used for page and report search 
+
+With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects. As part of the application code upgrade process, you change these properties on existing pages and reports used by the MenuSuite to ensure that they are still searchable from the Web client. For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
+
+## <a name="CRM"></a>[!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration
+
+Because of changes in [!INCLUDE[crm_md](../developer/includes/crm_md.md)] and the  integration since pervious releases, if your application is integrating with [!INCLUDE[crm_md](../developer/includes/crm_md.md)], then you must perform a full upgrade instead of just a technical upgrade.
+
 ## New and changed application features
 
-There a several new and changed application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2019 release wave 2](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-business-central/).
+There a several new and changed application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central April '19 release](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-business-central).
 
 To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
 
+### Changes to profiles in the [!INCLUDE[demolong_md](../developer/includes/demolong_md.md)] and promoted actions
+
+With the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 release, profiles that are part of the [!INCLUDE[demolong_md](../developer/includes/demolong_md.md)], such as the **Sales Order Processor** profile, customize fewer pages compared to earlier releases. For customers that rely on these profiles, their users might experience slight differences in the layout of actions in the action bar on pages. Additionally, the layout of promoted actions on over 380 core application pages has been fine-tuned.
+
+To ensure that users are not disrupted by these changes, we recommend that administrators and partners who are upgrading a customer to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019, review the layout of promoted actions when combined with their own code and profile customization.
 
 ## Names of variables
   
@@ -43,9 +70,6 @@ To take advantage of these all these features, you will have to perform an appli
 ## Deprecated or redesigned functionality
   
  If you are upgrading a solution that depends on functionality that is deprecated or changed in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you must verify that the upgrade codeunits migrate data correctly. See the See Also section for links to descriptions of deprecated functionality.
-
-### The System Password table is not available for online versions
-The System Password table is deprecated, and all extensions must use Isolated Storage to store Azure Key Vault keys. 
 
 ## Deprecated fields and fields marked as obsolete
 
