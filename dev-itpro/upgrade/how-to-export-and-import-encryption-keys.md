@@ -11,7 +11,6 @@ ms.service: "dynamics365-business-central"
 ---
 
 # Exporting and Importing Encryption Keys
-test.
 
 [!INCLUDE[on_prem_only](../developer/includes/on_prem_only.md)]
 
