@@ -11,9 +11,9 @@ ms.service: "dynamics365-business-central"
 ---
 
 # Exporting and Importing Encryption Keys
-[!INCLUDE[on_prem_only](../developer/includes/on_prem_only.md)]
-
 You can encrypt data on the server instance by generating new encryption keys or importing or changing existing encryption keys that you enable on the server instance.  
+
+[!INCLUDE[on_prem_only](../developer/includes/on_prem_only.md)]
 
 > [!NOTE]  
 >  If the deployment is configured with multiple service instances, then you must first enable encryption on one server instance and then export the key so it can be imported to another server instance where you enable encryption. You cannot generate different keys within one multiple-server instance environment.  
