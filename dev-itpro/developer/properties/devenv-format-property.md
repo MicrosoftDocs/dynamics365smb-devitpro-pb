@@ -101,7 +101,7 @@ Sets the formats of the source expression for various data types.
   
      For example, a field that is based on a source expression of the Date data type can use the following format string:  
   
-     <Weekday Text>, <Month Text> <Day>  
+     \<Weekday Text>, \<Month Text> \<Day>   
   
      This expression displays the date as Monday, April 15.  
   
