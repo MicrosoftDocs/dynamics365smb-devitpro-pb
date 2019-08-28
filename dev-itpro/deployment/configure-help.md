@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/11/2019
+ms.date: 08/09/2019
 ms.author: edupont
 ---
 
@@ -38,8 +38,6 @@ For the Web client, which is accessed by users from a browser or from the mobile
 ```json
     "//BaseHelpUrl":  "The location of Help for this application.",
     "BaseHelpUrl": "https://mysite.com/{0}/documentation/",
-    "//BaseHelpSearchUrl":  "The URL to use if Help is included in the Search functionality in Business Central.",
-    "BaseHelpSearchUrl": "https://docs.microsoft.com/{0}/search/index?search={1}&scope=BusinessCentral",
     "//DefaultRelativeHelpPath":  "The Help article to look up if no other article can be found.",
     "DefaultRelativeHelpPath": "index",
 ```
@@ -79,9 +77,11 @@ For users who use the legacy Windows client connected to [!INCLUDE[prodshort](..
 In both examples, *https://myserver.com* represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and ITpro content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!IMPORTANT]
-> If you use Help Server, the UI-to-Help mapping functionality that is described in [Configure Context-Sensitive Help](../help/context-sensitive-help.md) does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server?target=_blank).  
+> If you use Help Server, you must switch to the UI-to-Help mapping functionality that is described in [Configure Context-Sensitive Help](../help/context-sensitive-help.md). The legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N_123.htm for the page object with the ID 123 is not supported in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Adding page-level UI-to-Help mapping to the system table](../help/context-sensitive-help.md#adding-page-level-ui-to-help-mapping-to-the-system-table).  
 
-For guidance about how to generate HTML files, see the [Readme.md in the public source repo for the business functionality content](https://github.com/MicrosoftDocs/dynamics365smb-docs?target=_blank#building-html-files). Optionally, you can choose to reuse the HTML and .HTM files that you used for Dynamics NAV in your online library or Help Server deployment.  
+For guidance about how to generate HTML files for Help Server, see [Extend, Customize, and Collaborate on the Help for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../help/contributor-guide.md). Optionally, you can choose to reuse the HTML and .HTM files that you used for Dynamics NAV in your online library or Help Server deployment.  
+
+[!INCLUDE [nav2017classichelp](../developer/includes/nav2017classichelp.md)]
 
 ## Fork the Microsoft repos
 
