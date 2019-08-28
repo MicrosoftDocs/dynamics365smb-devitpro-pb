@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml or .resx files in the ModernDev repo.)
 # UICop Analyzer Rules
-UICop is an analyzer that enforces rules that must be respected by extensions meant to customize a user interface.
+UICop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants.
 
 ## Rules
 
