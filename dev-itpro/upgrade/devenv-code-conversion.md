@@ -30,7 +30,7 @@ You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev
 
 Alternatively, you can create separate AL project in Visual Studio Code for the test libraries and compile the project to into an extension.
 
-## Taks 2: Compile all the objects in your C/AL solution
+## Task 2: Compile all the objects in your C/AL solution
 
 Compiling all the objects is a prerequisite for a successful and complete export. To compile objects, you can use either of the following:  
 - C/SIDE ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
