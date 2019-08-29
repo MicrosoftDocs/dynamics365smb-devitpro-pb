@@ -128,7 +128,7 @@ To build your base application, you will create a new application database on th
 
 In this task, you will create a AL project in Visual Studio code that you will use for building your custom base application extension based on your converted C/AL application.
 
-1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 15.o as outlined in [Getting Started with AL](../developer/devenv-get-started.md).  
+1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 15.0 as outlined in [Getting Started with AL](../developer/devenv-get-started.md).  
 2. Use the **AL Go!** command to create a new project.
 3. Remove the HelloWorld.al sample file from the project.
 4. Create a **.alpackages** folder in the project and then copy the system (platform) symbols extension (System.app) to the folder.
@@ -282,8 +282,10 @@ Currently, there are known issues which you might have to address.
     
                             AddInReady := true; */
                         end;
+            ```  
     
-            ``` 
+        - PowerBIServiceMgt.Codeunit.al (ImportReportRequest)
+        - Debugger objects 
 
         After you fix these issues, build tha project again.    
 <!--
