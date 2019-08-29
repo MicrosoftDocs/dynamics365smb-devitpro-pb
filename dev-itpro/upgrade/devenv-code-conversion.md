@@ -361,8 +361,9 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
     Had to modify or remove LibraryAzureADUserMgmt.Codeunit.al, LibraryVerifyXMLSchema.Codeunit, LibraryVerifyXML.Codeunit.al, and LibraryLowerPermissions.Codeunit.al
 -->
 ## Task 11: Publish your project
-When your converted solutions compile to an app, you can deploy and run it. You can either create and publish to your own database, or use the recently release Docker AL Preview image.
+When your converted solutions compile to an app, you can deploy and run it. You can either create and publish to your own database, or use the recently release Docker AL Preview image. If you are performaing a technical upgrade from version 14.0 to version 15.0, return to the technical upgrade step where you left off.
 
+<!--
 ### Publishing the AL solution to an empty database 
 
 1. Use the [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet to create a new database.
@@ -391,7 +392,7 @@ We recently released a Docker AL Preview image as part of the Insider program, c
     - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md). 
 
     - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**. 
-
+-->
 ## See Also
 [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md)  
 [Developing Extensions](../developer/devenv-dev-overview.md)  
