@@ -34,11 +34,11 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 1.  Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.0). For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md)
 
-## Task 1: Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2 (version 15.0)
+## Task 1: Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 release wave 2 (version 15.0)
 
 1. Before you install version 15.0, it can be useful to create desktop shortcuts to the the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these will be replaced with the version 15.0 tools.
 
-2. Install all components of Business Central 2019 Wave 2 (version 15).
+2. Install all components of Business Central 2019 release wave 2 (version 15).
 
     If you did not uninstall version 14.0, then you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) during installation, or you must stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you will get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
