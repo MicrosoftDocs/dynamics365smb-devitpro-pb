@@ -89,7 +89,7 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
 3. Run the txt2al command:
 
     ```      
-    txt2al --source=C:\export2al\exportedbc14app.txt --target=C:\export2al\al2 --injectDotNetAddIns --dotNetAddInsPackage=C:\export2al\dotnet\mydotnet.al --dotNetTypePrefix
+    txt2al --source=C:\export2al\exportedbc14app.txt --target=C:\export2al\al2 --injectDotNetAddIns --dotNetAddInsPackage=C:\export2al\dotnet\mydotnet.al --dotNetTypePrefix --rename
     ```      
 
     If your solution contains .NET interoperability code, the following Txt2Al command line parameters should be used to achieve a conversion that requires less manual intervention:  
@@ -98,9 +98,10 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
     - `--dotNetAddInsPackage` should be used to point the conversion tool to an AL file containing declarations for the .NET types that represent .NET control addins. Use this to inject a custom set of .NET control add-in declarations. This is the file you created in the previous step.
         
     - `--dotNetTypePrefix` should be used to specify a prefix for all the .NET type aliases created by the conversion tool. In AL, .NET type declarations are in the global namespace, and this will prevent conflicts between different solutions.
+    - `--rename` changes names of the output files to prevent clashes with the source .txt files, so that that your resources are not overwritten by files with the sane name. 
 
 > [!NOTE]
-If you are interested in migrating your localization resources, you should use the ```--addLegacyTranslationInfo``` switch to instruct Txt2Al to generate information about the legacy IDs of the translation code.
+>If you are interested in migrating your localization resources, you should use the `--addLegacyTranslationInfo` switch to instruct Txt2Al to generate information about the legacy IDs of the translation code.
 
 When completed, there will be an al for for each object.
 
