@@ -21,42 +21,45 @@ The System Application contains modules that contain low-level support functiona
 ## Overview of the Modules in the System Application
 The list of modules is growing continuously. The following table lists and describes the modules that are available now. For more details about each module, and to get a look at the code, visit our [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) repository on GitHub.
 
-|Module|Description|
-|----|----|
-|Encryption Management|Contains the capabilities for encryption and hashing.|
-|Object Selection|Look up page for all of the application objects, including objects from installed extensions.|
-|Extension Management|Provides the tools needed to manage an extension.|
-|Server Settings|Exposes methods that get settings from the server configuration file.|
-|Headlines|Helps with constructing the text for headlines.|
-|User Log-In Times|Keeps track of when users sign in.|
-|DotNet Aliases|Defines aliases for .NET classes.|
-|Data Compression|Compresses and uncompresses data in a binary format.|
-|Translation|Gets and stores language translations.|
-|Language|Changes the language for Windows and applications.|
-|Record Link Management|Provides helper functions for RecordLinks.|
-|Confirm Management|Determines whether a confirm dialog displays when logic is run.|
-|Recurrence Schedule|Calculates when the next event will occur.|
-|Password Dialog|Sets and verifies passwords.|
-|BLOB Storage|Stores and manages data in a binary format.|
-|Field Selection|Looks up fields.|
-|Azure AD User|Retrieves and updates a user from the Azure AD Graph API.|
+|Module|Description|Link to ReadMe|
+|----|----|----|
+|Cryptography Management|Contains the capabilities for encryption and hashing.|N/A|
+|Object Selection|Look up page for all of the application objects, including objects from installed extensions.|N/A|
+|Extension Management|Provides the tools needed to manage an extension.|N/A|
+|Server Settings|Exposes methods that get settings from the server configuration file.|N/A|
+|Headlines|Helps with constructing the text for headlines.|N/A|
+|User Log-In Times|Keeps track of when users sign in.|N/A|
+|DotNet Aliases|Defines aliases for .NET classes.|N/A|
+|Data Compression|Compresses and uncompresses data in a binary format.|N/A|
+|Translation|Gets and stores language translations.|N/A|
+|Language|Changes the language for Windows and applications.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Language/README.md)]|
+|Record Link Management|Provides helper functions for RecordLinks.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Record%20Link%20Management/README.md)|
+|Confirm Management|Determines whether a confirm dialog displays when logic is run.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Confirm%20Management/README.md)|
+|Recurrence Schedule|Calculates when the next event will occur.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Recurrence%20Schedule/README.md)]|
+|Password Dialog|Sets and verifies passwords.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Password%20Dialog/README.md)|
+|BLOB Storage|Stores and manages data in a binary format.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/BLOB%20Storage/README.md)]|
+|Field Selection|Looks up fields.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Field%20Selection/README.md)|
+|Azure AD User|Retrieves and updates a user from the Azure AD Graph API.|N/A|
 |Azure AD Graph|Interface for the Azure AD Graph API.|
-|Azure AD Licensing|Access information about the subscribed SKUs and the corresponding service plans.|
-|Video|Looks up and plays videos.|
-|Azure Key Vault|Stores Azure Key Vault secrets for deployments.|
-|Satisfaction Survey|Shows a satisfaction survey.|
-|Environment Information|Contains helper methods for getting information about the tenant and general settings.|
-|User Selection|Looks up and selects registered users.|
-|Tenant License State|Retrieves the current state of the tenant license.|
-|Date-Time Dialog|Provides helper functions for entering date-time values.|
-|Default Role Center|Supports the default RoleCenter selection.|
-|Caption Class|Defines how the CaptionClass property displays captions.|
-|Client Type Management|Allows testing of code that relies on different types of clients.|
-|Auto Format|Formats the appearance decimal data types.|
-|System Initialization|Runs non-business logic on user log-ins.|
-|Filter Tokens|Provides helper functions to manage filter texts.|
-|Manual Setup|Contains functions and events used by manual setup pages.|
-|Data Classification|Handles data classification for objects that might contain sensitive information.|
+|Azure AD Licensing|Access information about the subscribed SKUs and the corresponding service plans.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Licensing/README.md)|
+|Azure AD Plan|Provides methods for retrieving and managing user plans in Azure Active Directory.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Plan/README.md).|
+|Azure AD Tenant|Retrieves information about the Azure Active Directory tenant.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Tenant/README.md).|
+|Video|Looks up and plays videos.|N/A|
+|Azure Key Vault|Stores Azure Key Vault secrets for deployments.|N/A|
+|Satisfaction Survey|Shows a satisfaction survey.|N/A|
+|Environment Information|Contains helper methods for getting information about the tenant and general settings.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Environment%20Information/README.md)|
+|User Selection|Looks up and selects registered users.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/User%20Selection/README.md)|
+|Tenant License State|Retrieves the current state of the tenant license.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Tenant%20License%20State/README.md)]|
+|Date-Time Dialog|Provides helper functions for entering date-time values.|N/A|
+|Default Role Center|Supports the default RoleCenter selection.|N/A|
+|Caption Class|Defines how the CaptionClass property displays captions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md)|
+|Client Type Management|Allows testing of code that relies on different types of clients.|N/A|
+|Auto Format|Formats the appearance decimal data types.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Auto%20Format/README.md)|
+|System Initialization|Runs non-business logic on user log-ins.|N/A|
+|Filter Tokens|Provides helper functions to manage filter texts.|N/A|
+|Manual Setup|Contains functions and events used by manual setup pages.|N/A|
+|Data Classification|Handles data classification for objects that might contain sensitive information.|N/A|
+|Base64|Converts text and from base 64.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Base64/README.md)|
 
 
 ## Example - Enhancing a Module
