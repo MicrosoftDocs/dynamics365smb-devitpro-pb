@@ -163,8 +163,11 @@ For a more information about the different key properties, see [Key Properties](
 When developing a new version of an extension, be aware of the following restrictions to avoid schema synchronization errors that prevent you from publishing the new version: 
 
 - Do not delete existing keys.
-- Do not add or remove fields, change the order of fields, or change properties of existing keys.
+- Do not add or remove fields, nor change their order.
+- Do not change properties of existing keys.
 - Do not add additional unique keys.
+- Do not add additional clustered keys.
+- Do not add keys that are fields of the base table.
 
 ## See Also
 
