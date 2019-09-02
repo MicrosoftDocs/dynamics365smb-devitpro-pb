@@ -21,7 +21,7 @@ Sets the formats of the source expression for various data types.
  All data types in AL.  
   
 ## Remarks  
- You can set the Format property to a predefined format, or you can build your own format. For more information, see [FORMAT Method (Code, Text)](../methods/devenv-format-method-code-text.md).  
+ You can set the Format property to a predefined format, or you can build your own format. For more information, see [FORMAT Method (Integer, Text)](../methods-auto/system/system-format-joker-integer-string-method.md).  
   
 ## Basic Settings  
  To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* is one of the entries in the Value column of the following table.  
@@ -101,7 +101,7 @@ Sets the formats of the source expression for various data types.
   
      For example, a field that is based on a source expression of the Date data type can use the following format string:  
   
-     <Weekday Text>, <Month Text> <Day>  
+     \<Weekday Text>, \<Month Text> \<Day>   
   
      This expression displays the date as Monday, April 15.  
   
