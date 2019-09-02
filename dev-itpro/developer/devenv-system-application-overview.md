@@ -32,24 +32,24 @@ The list of modules is growing continuously. The following table lists and descr
 |DotNet Aliases|Defines aliases for .NET classes.|N/A|
 |Data Compression|Compresses and uncompresses data in a binary format.|N/A|
 |Translation|Gets and stores language translations.|N/A|
-|Language|Changes the language for Windows and applications.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Language/README.md)]|
+|Language|Changes the language for Windows and applications.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Language/README.md)|
 |Record Link Management|Provides helper functions for RecordLinks.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Record%20Link%20Management/README.md)|
 |Confirm Management|Determines whether a confirm dialog displays when logic is run.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Confirm%20Management/README.md)|
-|Recurrence Schedule|Calculates when the next event will occur.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Recurrence%20Schedule/README.md)]|
+|Recurrence Schedule|Calculates when the next event will occur.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Recurrence%20Schedule/README.md)|
 |Password Dialog|Sets and verifies passwords.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Password%20Dialog/README.md)|
-|BLOB Storage|Stores and manages data in a binary format.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/BLOB%20Storage/README.md)]|
+|BLOB Storage|Stores and manages data in a binary format.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/BLOB%20Storage/README.md)|
 |Field Selection|Looks up fields.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Field%20Selection/README.md)|
 |Azure AD User|Retrieves and updates a user from the Azure AD Graph API.|N/A|
-|Azure AD Graph|Interface for the Azure AD Graph API.|
+|Azure AD Graph|Interface for the Azure AD Graph API.|N/A|
 |Azure AD Licensing|Access information about the subscribed SKUs and the corresponding service plans.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Licensing/README.md)|
-|Azure AD Plan|Provides methods for retrieving and managing user plans in Azure Active Directory.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Plan/README.md).|
-|Azure AD Tenant|Retrieves information about the Azure Active Directory tenant.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Tenant/README.md).|
+|Azure AD Plan|Provides methods for retrieving and managing user plans in Azure Active Directory.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Plan/README.md)|
+|Azure AD Tenant|Retrieves information about the Azure Active Directory tenant.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Tenant/README.md)|
 |Video|Looks up and plays videos.|N/A|
 |Azure Key Vault|Stores Azure Key Vault secrets for deployments.|N/A|
 |Satisfaction Survey|Shows a satisfaction survey.|N/A|
 |Environment Information|Contains helper methods for getting information about the tenant and general settings.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Environment%20Information/README.md)|
 |User Selection|Looks up and selects registered users.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/User%20Selection/README.md)|
-|Tenant License State|Retrieves the current state of the tenant license.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Tenant%20License%20State/README.md)]|
+|Tenant License State|Retrieves the current state of the tenant license.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Tenant%20License%20State/README.md)|
 |Date-Time Dialog|Provides helper functions for entering date-time values.|N/A|
 |Default Role Center|Supports the default RoleCenter selection.|N/A|
 |Caption Class|Defines how the CaptionClass property displays captions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md)|
@@ -100,8 +100,8 @@ New-BCContainer -accept_eula `
                 -memoryLimit 16g `
 ```
   
-    > [!Note]
-    > The container will start as a process, and the output will display in the PowerShell output window. Make a note of the URL for the web client. You will need that later. 
+  > [!Note]
+  > The container will start as a process, and the output will display in the PowerShell output window. Make a note of the URL for the web client. You will need that later. 
 
 3. Uninstall and unpublish the System Application.
   
@@ -122,8 +122,8 @@ UnPublish-NavContainerApp -containerName $containerName `
 
 5. When your project is created, follow these steps:  
   
-  a. Update launch.json – update the Server and Server Instance parameters with values from the PowerShell output. 
-  b. Delete the HelloWorld.al and app.json files. 
+    1. Update launch.json – Update the **Server** and **Server Instance** parameters with values from the PowerShell output. 
+    2. Delete the **HelloWorld.al** and **app.json** files. 
 
 6. Get the latest code for the System Application from our GitHub repository at [AlAppExtensions](https://github.com/microsoft/ALAppExtensions). In GitHub, choose the **Clone** or **Download** buttons, and then **Download ZIP**. Open the downloaded archive and copy the content of the \ALAppExtensions-master\Modules\System folder to your AL project.
 
