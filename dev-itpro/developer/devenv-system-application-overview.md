@@ -12,7 +12,7 @@ ms.author: bholtorf
 ms.date: 09/02/2019
 ---
 
-# Extending the System Application
+# Overview of the System Application
 The System Application contains modules that contain low-level support functionality and frameworks. The System Application interfaces to the Business Central platform and online ecosystem to provide the functions that the business logic in the Base Application needs.
 
 ## Overview of the Modules in the System Application
@@ -57,9 +57,9 @@ The list of modules is growing continuously. The following table lists and descr
 
 
 ## Example - Enhancing a Module
-<!--This example shows how to -->
+<!--This example shows how to... -->
 
-1. Start by pulling the latest Docker image. 
+1. Start by pulling the latest Docker image. For more information, see [Freddy's Blog](https://freddysblog.com/2019/07/31/preview-of-dynamics-365-business-central-2019-release-wave-2/).
 
 ```
 docker pull bcprivate.azurecr.io/bcsandbox-master:base-ltsc2019                  
