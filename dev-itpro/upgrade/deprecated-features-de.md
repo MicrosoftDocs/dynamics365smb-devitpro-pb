@@ -9,13 +9,20 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Germany, local functionality
-ms.date: 06/20/2019
+ms.date: 08/29/2019
 ms.author: SorenGP
 
 ---
 
 # Deprecated Features in the German Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
 This topic lists and describes the local functionality for Germany that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
+
+## Batch Print Sales and Purchase Documents When Posting
+When you batch post sales or purchase documents, you can select to also print the related reports.
+
+|Moved, Removed, or Replaced?|Why?|
+|----|----|
+|Moved| The Batch Print when Posting feature is no longer specific to Germany, so we have made it generally available in the standard product. |
 
 ## Copy Existing Items to Create New Items
 When you add a new item, to save time, you can use the **Copy Item** function to copy an existing item to use as a template for a new item.
