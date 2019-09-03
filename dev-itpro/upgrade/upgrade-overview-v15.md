@@ -21,16 +21,15 @@ ROBOTS: NOINDEX
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 marks the release where C/AL has been deprecated and replaced entirely by AL. From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. This change will influence how you perform the upgrade compared to earlier releases.
 
-## Upgrading an Unmodified Application
+## Upgrading an Unmodified v14.0 Application
 
-Use this scenario if you have a Business Central application that has not been modified. The application might include Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central V15.0 base app extension. The result will be a fully upgraded application and platform on V15.0.
+Use this scenario if you have a Business Central application that does not include any code customization, other than Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central v15.0 base appplication extension and the system application. The result will be a fully upgraded application and platform on v15.0.
 
 <!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app.-->
 
  ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
 For more information, see [Upgrading an Unmodified Application](upgrade-unmodified-application.md). 
-
 <!--
 ### Prerequisite
 
@@ -534,7 +533,7 @@ DebuggerCodeViewer.Page.al(14,36): error AL0417: Control add-in '"Microsoft.Dyna
 
 ### Clean steps
 -->
-## Technical Upgrade to Business Central 2019 Wave 2
+## Technical Upgrade of a Code Customized Application to Business Central 2019 Wave 2 platform
 
 Use this process when you have a customized Business Central application that you want to upgrade to the Business Central Wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 
@@ -544,6 +543,15 @@ Use this process when you have a customized Business Central application that yo
 
 
 For more information, see [Technical Upgrade](upgrade-technical-upgrade-v14-v15.md). 
+
+## Upgrade a Code Customized Application to Business Central 2019 Wave 2 Application and Platform
+
+Use this process when you have a customized Business Central application that you want to upgrade to the Business Central Wave 2 application and platform. With this process, you will convert the entire application from C/AL to AL and refactor to use the system application layer extension.
+
+ ![Upgrade on customized Business Central application](../developer/media/bc15-full-upgrade-customized-app.png "Upgrade on customize Business Central application")  
+
+For more information, see [Full Upgrade](upgrade-full-upgrade-v14-v15.md). 
+
 
 <!--
 ### Prerequisites
