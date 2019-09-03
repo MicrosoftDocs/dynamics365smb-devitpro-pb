@@ -41,8 +41,8 @@ There are two commands for starting a RAD-based action.
 
 |Shortcut     |Description|
 |-------------|-----------|
-|Ctrl+Alt+F5  |Start RAD debugging without publishing.|
-|Alt+F5       |Start RAD publishing.|
+|Ctrl+Alt+F5  |Start RAD publishing without debugging.|
+|Alt+F5       |Start RAD with debugging.|
 
 ## See also
 [Developing Extensions in AL](devenv-dev-overview.md)  

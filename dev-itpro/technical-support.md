@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 07/09/2019
+ms.date: 05/30/2019
 ---
 # Configuring Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]
 

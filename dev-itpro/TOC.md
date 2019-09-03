@@ -32,6 +32,9 @@
 #### [Ecosystem Features](deployment/embed-app-ecosystem.md)
 ## On-Premises
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
+### Dynamics 365 Business Central On-Premises Updates
+#### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
+#### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -92,8 +95,8 @@
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
-### Monitoring Server Events
-#### [Monitoring Server Events Overview](administration/monitor-server-events.md)
+#### Monitoring Server Events
+##### [Monitoring Server Events Overview](administration/monitor-server-events.md)
 ##### [Trace Events List](administration/server-trace-events.md)
 ##### [Admin and Operational Events List](administration/server-events.md)
 ##### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)
@@ -511,6 +514,7 @@
 #### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
 ### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
 #### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
+### [Installing a Cumulative Update](upgrade/upgrading-cumulative-update.md)
 ## Before You Upgrade
 ### [Important Information and Considerations for Before Upgrading](upgrade/Upgrade-Considerations.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)

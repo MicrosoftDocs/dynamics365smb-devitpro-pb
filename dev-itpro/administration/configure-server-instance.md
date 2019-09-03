@@ -300,6 +300,16 @@ The following table describes settings that you can adjust for compatibility wit
 |Use Client Timestamp For Report Execution Timestamp|ReplaceReportExecutionTimeWithClientTime|Specifies whether to replace the report execution timestamp with the client timestamp instead of the server instance timestamp.<br /><br /> Default: Enabled (check box is selected)<br />Dynamically Updatable: No|
 |Use FIND('-') to Populate Pages Instead of FIND('=><')|UseFindMinusWhenPopulatingPage|Specifies whether pages are initially populated by using FIND('-') instead of FIND('=><'). This setting is relevant to pages that display lists in descending order. Enabling this setting ensures that the first record, instead of the last record, is in focus when the page opens. Pages that use the OnFindRecord trigger will ignore this setting and always use FIND('=><').<br /><br /> Default: Enabled (check box is selected)<br />Dynamically Updatable: No|
 
+
+## <a name="Upgrade"></a>Upgrade Settings
+
+The following table describes fields on the **Upgrade** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+
+|  Setting  |Key Name|  Description  |
+|-----------|--------|---------------|
+|Integration Records Table (ID)|IntegrationRecordsTableId| Enables the upgrade step to preserve integration IDs. The value specifies the ID of the table that stores integration records. The table must match the schema and have at least the following fields (with exact naming): Integration ID, Record ID, Table ID. <br /><br />To skip the upgrade step to preserve integration IDs, set the value to 0. <br /><br />This settings applies only when upgrading from Business Central version 14.0 to Business Central version 15.0.
+ <br /> <br />Default: 5151<br />Dynamically Updatable: Yes|
+
 ##  <a name="UsingPowerShell"></a> Using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to Modify Server Instance Settings
   
 The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] includes several `Set-` cmdlets that enable you to create and modify [!INCLUDE[server](../developer/includes/server.md)] instances.
