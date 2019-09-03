@@ -118,7 +118,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
 2. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. 
 
     ```
-    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"}]'
     ```
     <!-- with test
     ```
@@ -152,27 +152,27 @@ In this task, you will publish extensions to the version 15.0 server instance. P
     [What are symbols?](upgrade-overview-v15.md#Symbols) 
 6. Publish the **System Application** extension (Microsoft_System Application.app).
 
-    The **System Application** extension contains objects (IDs in the 2000000000 range ) that are required by any application. You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).   
+    The **System Application** extension contains objects (IDs in the 2000000000 range ) that are required by any application. You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).
 
     ```
-    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\35535\W1DVD\Applications\System Application\Source\Microsoft_System Application.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35903\W1DVD\Applications\System Application\Source\Microsoft_System Application.app"
     ```
     
     [What is the System Application?](upgrade-overview-v15.md#Symbols) 
-7. Publish the Business Central base app extension (Microsoft_BaseApp.app).
+7. Publish the Business Central base application extension (Microsoft_Base Application.app).
 
     The **base application** extension contains the application business objects. You find the (Microsoft_System Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
 
     ```
-    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35903\W1DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
     ```
 
 8. Publish the new versions of Microsoft extensions that were used before upgrade.
 
-    You find the extensions in the **Extensions** folder of the installation media (DVD). 
+    You find the extensions in the **Applications** folder of the installation media (DVD). 
     
     ```
-    Publish-NAVApp -ServerInstance BC150 -Path c:"\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path c:"\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app"
     ```
 9. Publish the 3rd-party extensions that were used before upgrade.
 
