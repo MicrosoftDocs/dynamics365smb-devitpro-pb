@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 04/01/2019
+ms.date: 08/21/2019
 ms.author: jaredha
 ---
 
@@ -88,7 +88,6 @@ When a sandbox environment is created on a Preview version, the environment will
 
 ## Updating environments
 
-
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are upgraded according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] roadmap with two annual major updates and monthly service updates. For more information, see [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/en-us/business-applications-release-notes/).
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] gives you a level of control over the timing of upgrades for each environment.
@@ -130,6 +129,39 @@ To schedule an update date:
     > The selected date must be within a given date range displayed in the pane.
 
 4. Select **Schedule Upgrade**.
+
+## Report customer outages
+
+When a customer has a situation where they cannot login to Business Central immediate action needs to be taken. You have the option to report this outage to Microsoft using **Report Production Outage** in the production environment. This option is not available in a sandbox environment. This action creates a support ticket for Microsoft to begin steps to resolve the issue. 
+
+To report an outage:
+
+1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], Select the **Name** of the relevant environment to open the environment details.
+2. Select  **Report Production Outage** on the action ribbon.
+3. In the **Report Production Ouage** pane, select the outage type:
+
+    - Unable to log on (all users)
+    - Cannot access API/Web Service
+
+4. Enter your name, email address, and phone number. This information will be included in the support ticket.  
+5. Choose **Next**.
+6. On the next pane provide the details of the outage including browsers tried, any companies that you can log into, and errors and correlation IDs. This information will be included in the support ticket.  
+7. Finally, add the date and time the outage began. This information will also flow to the support ticket. 
+8. Mark the consent checkbox and choose **Report**.
+
+## Manage Support Contact
+
+When a customer opens the Help & Support page in Business Central they can see how they can get support from their partner in the Report a Problem section, if the information has been entered. Rather than manually updating all environments individually, you can add your support contact details in the Business Central Administration Center and automatically update the Help & Support page in all related Business Central tenants. 
+
+To update the support contact details:
+
+1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** field for the relevant environemnt to open the environment details. 
+2. Select **Manage Support Contact** on the action ribbon.
+    > [!NOTE]
+    > You may get a warning message if the feature is not yet turned on for your environment.
+    
+3. In the **Manage Support Contact Details** pane, add an email address and/or a website. 
+4. Mark **Apply to all environments** if you want to add the same details to all related environments. 
 
 ## See also
 
