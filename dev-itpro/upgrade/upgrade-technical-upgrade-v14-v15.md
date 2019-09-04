@@ -111,7 +111,12 @@ This task converts an application database from the version 14.0 platform to the
 ## Task 5: Publish the base application, symbols, and other extensions
 
 In this task, you will publish extensions to the version 15.0 server instance. Publishing an extension adds the extension to the application database that is mounted on the server instance, making it available for installing on tenants later on. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
-1. Connect a version 15.0 server instance to the application database.
+
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 that you started in the previous task.
+
+1. Connect the version 15.0 server instance that you installed earlier to the application database, and then start the server instance.
+
+    For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
     In a single tenant deployment, this will mount the tenant automatically.
 
