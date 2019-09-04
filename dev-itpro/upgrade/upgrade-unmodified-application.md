@@ -279,7 +279,7 @@ When completed, the tenant state should be **Operational**.
     Install-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
     ```
 -->
-
+<!--
 ## Task 6: Synchronize and upgrade Microsoft extensions on the tenants
 
 Complete this task to upgrade any Microsoft extensions that were used in the previous version to new versions that are available on the installation media. Do the following steps for each extension, and for each tenant in a multitenant deployment.
@@ -291,6 +291,7 @@ Complete this task to upgrade any Microsoft extensions that were used in the pre
     Publish-NAVApp -ServerInstance BC150 -Path c:"\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
     ```
 -->
+<!--
 1. Synchronize the tenant with the extension. 
 
     ```
@@ -301,10 +302,11 @@ Complete this task to upgrade any Microsoft extensions that were used in the pre
     ```
     Start-NAVAppDataUpgrade  -ServerInstance BC150 -Name "Sales and Inventory Forecast" -Version 15.0.35926.0
     ```
+-->
 
 ## Task 8: Install 3rd party extensions
 
-Complete this task if you have 3rd-party extensions. For each extension, run the Install-NAVApp cmdlet to install it.
+For each extension, run the Install-NAVApp cmdlet:
 
 ```
 Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
