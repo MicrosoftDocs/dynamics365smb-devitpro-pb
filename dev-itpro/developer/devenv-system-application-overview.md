@@ -13,13 +13,15 @@ ms.date: 09/02/2019
 ---
 
 # Overview of the System Application
-The System Application contains modules that contain low-level support functionality and frameworks. The System Application interfaces to the Business Central platform and online ecosystem to provide the functions that the business logic in the Base Application needs.
+The System Application contains modules that are similar to APIs. The modules interact with the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform and online ecosystem to provide the methods that support the business logic in the Base Application. If you are developing extensions or add-ons for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you will probably need to use one or more of the objects in the modules. 
+
+This topic provides an overview of the modules in the System Application. For more details about each module, and to get a look at the code, choose the **ReadMe** link for the module to visit our [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) repository on GitHub.
 
 > [!Note]
-> In an effort to prepare the application for the new technology ecosystem in which Business Central exists, a fundamental change made its entrance into the product in the previous release. We’ve started shattering our monolithic business app, combining the pieces of its business logic that are similar in purpose into polished modules, and refitting them. Because this is such a fundamental change, we are eager to hear and react to feedback from our partner community so that we can improve the System Application even further. We will also continue to enrich and complete by adding new modules to it.
+> The modules in the System Application represent a significant change in what's happening under the hood in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. We will continue to enhance the System Application in future releases. If you find something you think we should add, or fix, please let us know. 
 
 ## Overview of the Modules in the System Application
-The list of modules is growing continuously. The following table lists and describes the modules that are available now. For more details about each module, and to get a look at the code, visit our [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) repository on GitHub.
+The list of modules is growing continuously. The following table lists and describes the modules that are available now. 
 
 |Module|Description|Link to ReadMe|
 |----|----|----|
@@ -62,7 +64,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Base64|Converts text and from base 64.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Base64/README.md)|
 
 
-## Example - Enhancing a Module
+<!--## Example - Enhancing a Module
 This example shows how to...
 
 1. Start by pulling the latest Docker image. For more information, see [Freddy's Blog](https://freddysblog.com/2019/07/31/preview-of-dynamics-365-business-central-2019-release-wave-2/).
@@ -144,7 +146,7 @@ Publish-NavContainerApp -containerName $containerName `
 
 -install
 ```
-8. You can share your enhancements with others. For more information, see [Git Going with Extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/posts/quot-git-quot-going-with-extensions). The only difference in the guidance is that you must use a container instead of a cloud sandbox.  
+8. You can share your enhancements with others. For more information, see [Git Going with Extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/posts/quot-git-quot-going-with-extensions). The only difference in the guidance is that you must use a container instead of a cloud sandbox.  -->
 
 ## See Also
 [ALAppExtensions](https://github.com/microsoft/ALAppExtensions)
