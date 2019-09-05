@@ -25,12 +25,9 @@ Licensed customers must stay current with updates to the [!INCLUDE[prodlong](../
 |--------------------------------------------|------------------|--------------|----------------|-----------------------|
 |Dynamics 365 Business Central (on-premises) | October'18 Update|24630         |November 1, 2018|\*\*|
 |Dynamics 365 Business Central (on-premises) | April '19 Update |29537         |April 1, 2019   |October 10, 2023|
-|Dynamics 365 Business Central (on-premises) | 2019 release wave 2|              |                |\*|
 
-\* View the modern lifecycle policy in the next section.  
-\*\* Indicates that the version is considered a service pack with a support end date of April 14, 2020.  
+\*\* In order to obtain mainstream support after April 14, 2020, customers will need to update to the April '2019 release or later Update for the April 2019 version  
 
-The build number for the versions that are not yet available will be updated when the version is released.
 
 ## Modern Lifecycle Policy
 
