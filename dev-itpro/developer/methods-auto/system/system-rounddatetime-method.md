@@ -2,7 +2,7 @@
 title: "RoundDateTime Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 09/05/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Rounds a DateTime.
 
 ## Syntax
 ```
-NewDatetime :=   System.RoundDateTime(Datetime: DateTime, [Precision: BigInteger], [Direction: String])
+NewDatetime :=   System.RoundDateTime(Datetime: DateTime [, Precision: BigInteger] [, Direction: String])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

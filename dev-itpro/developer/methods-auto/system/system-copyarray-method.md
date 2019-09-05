@@ -2,7 +2,7 @@
 title: "CopyArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 09/05/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Copies one or more elements in an array to a new array.
 
 ## Syntax
 ```
- System.CopyArray(NewArray: Array of [Any], Array: Array of [Any], Position: Integer, [Length: Integer])
+ System.CopyArray(NewArray: Array of [Any], Array: Array of [Any], Position: Integer [, Length: Integer])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

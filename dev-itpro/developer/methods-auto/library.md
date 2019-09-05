@@ -2,7 +2,7 @@
 title: "Data Types and Methods in AL"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/01/2019
+ms.date: 09/05/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,6 +39,8 @@ The following data types are available as part of the AL Language. Each data typ
 |[Dictionary](dictionary/dictionary-data-type.md)|Represents a collection of keys and values.|
 |[DotNet](dotnet/dotnet-data-type.md)|Represents an unspecified .NET type.|
 |[Duration](duration/duration-data-type.md)|Represents the difference between two DateTimes. This value can be negative. It is stored as a 64-bit integer. The integer value is the number of milliseconds during the duration.|
+|[Enum](enum/enum-data-type.md)|Provides access to all enums using ::|
+|[EnumType](enumtype/enumtype-data-type.md)|Represents the text content of an element or attribute.|
 |[ErrorInfo](errorinfo/errorinfo-data-type.md)|Provides a structure for grouping information about an error.|
 |[FieldRef](fieldref/fieldref-data-type.md)|Identifies a field in a table and gives you access to this field.|
 |[File](file/file-data-type.md)|Represents a file.|
@@ -68,6 +70,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[None](none/none-data-type.md)|Is used implicitly when a method does not return a value.|
 |[Notification](notification/notification-data-type.md)|Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client.|
 |[NumberSequence](numbersequence/numbersequence-data-type.md)|Is a complex data type for creating and managing number sequences in the database.|
+|[SessionInformation](sessioninformation/sessioninformation-data-type.md)|Is a complex data type for exposing Session information into AL.|
 |[Option](option/option-data-type.md)|Denotes an option value. In the code snippet below, you can see how the Option data type is declared.|
 |[OutStream](outstream/outstream-data-type.md)|Is a generic stream object that you can use to write to files and BLOBs.|
 |[Page](page/page-data-type.md)|Contains a number of simpler elements called controls. Controls are used to display information to the user or receive information from the user.|

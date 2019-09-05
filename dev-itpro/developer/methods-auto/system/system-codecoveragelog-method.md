@@ -2,7 +2,7 @@
 title: "CodeCoverageLog Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 09/05/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Starts and stops the logging of code. You can also use this method to retrieve t
 
 ## Syntax
 ```
-[IsActive := ]  System.CodeCoverageLog([NewIsActive: Boolean], [MultiSession: Boolean])
+[IsActive := ]  System.CodeCoverageLog([NewIsActive: Boolean] [, MultiSession: Boolean])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  
