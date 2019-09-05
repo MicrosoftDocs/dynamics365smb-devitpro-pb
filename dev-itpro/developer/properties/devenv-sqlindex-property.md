@@ -41,10 +41,10 @@ The following example uses the SQLIndex property on a primary key that includes 
 ```
 keys
 {
-    key(PK; MyField, MyField2) 
+    key(PK; MyField1, MyField2) 
     {
         Clustered = true;
-        SqlIndex = MyField,MyField2;
+        SqlIndex = MyField2,MyField1;
     }
 }
 ```    
