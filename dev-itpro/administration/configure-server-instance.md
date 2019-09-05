@@ -309,6 +309,9 @@ The following table describes fields on the **Upgrade** tab in the [!INCLUDE[adm
 |-----------|--------|---------------|
 |Integration Records Table (ID)|IntegrationRecordsTableId| Enables the upgrade step to preserve integration IDs. The value specifies the ID of the table that stores integration records. The table must match the schema and have at least the following fields (with exact naming): Integration ID, Record ID, Table ID. <br /><br />To skip the upgrade step to preserve integration IDs, set the value to 0. <br /><br />This settings applies only when upgrading from Business Central version 14.0 to Business Central version 15.0.
  <br /> <br />Default: 5151<br />Dynamically Updatable: Yes|
+|*not avialable*|DestinationAppsForMigration| Specifies the extensions that Microsoft and 3rd-party extensions have a dependency on. The dependencies typically include the base application, system application, and test application. This setting should only be used when upgrading from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019. The setting is used during the data upgrade process. When configured, the server instance will automatically install the specified extensions on the tenant. When the that are specifiesfies the manifest of the published extensions to include the required dependencies and automatically install the base application on tenants after the data upgrade.Enables the upgrade step to preserve integration IDs. The value specifies the ID of the table that stores integration records. The table must match the schema and have at least the following fields (with exact naming): Integration ID, Record ID, Table ID.
+ <br /> <br />Default: <br />Dynamically Updatable: No|
+
 
 ##  <a name="UsingPowerShell"></a> Using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to Modify Server Instance Settings
   
