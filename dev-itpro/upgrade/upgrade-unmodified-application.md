@@ -146,11 +146,20 @@ In this task, you will publish extensions to the version 15.0 server instance. P
 
     This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains the old metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
 
-4. Restart the server instance.
+
+
+4. Temporarily disable task scheduler on the server instance for purposes of upgrade.
+
+    ```
+    Set-NavServerConfiguration -ServerInstance BC150 -KeyName "EnableTaskScheduler" -KeyValue false
+    ```
+
+5. Restart the server instance.
 
     ```
     Restart-NAVServerInstance -ServerInstance BC150
     ```
+
 5. Publish version 15 system symbols extension.
 
     The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
@@ -169,7 +178,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
     ```
    <!-- 
    ```
-    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35926\W1DVD\Applications\System Application\Source\Microsoft_System Application.app"
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35986\W1DVD\Applications\System Application\Source\Microsoft_System Application.app"
     ```
     -->
     [What is the System Application?](upgrade-overview-v15.md#Symbols) 
@@ -182,7 +191,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
     ```
    <!--
     ```
-    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35926\W1DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35986\W1DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
     ```
 -->
 8. Publish the new versions of Microsoft extensions that were used before upgrade.
@@ -195,7 +204,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
 
    <!--   
     ```
-    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35926\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
+    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35986\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
 -->
 9. Publish the 3rd-party extensions that were used before upgrade.
@@ -246,12 +255,12 @@ If you have a multitenant deployment, perform these steps for each tenant.
     Use the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
     ```
-    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "System Application" -Version 15.0.35926.0
+    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "System Application" -Version 15.0.35986.0
     ```
 5. Synchronize the tenant with the Business Central Base Application extension (Microsoft_BaseApp):
 
     ```
-    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "Base Application" -Version 15.0.35926.0
+    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "Base Application" -Version 15.0.35986.0
     ```
     
     With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID. This process can take several minutes.
@@ -260,12 +269,12 @@ If you have a multitenant deployment, perform these steps for each tenant.
     > Usually, you will use the `-Mode Sync` switch instead of `-Mode ForceSync`. However, currently the upgrade code is not available. So you must use `-Mode ForceSync`otherwise you will not be able to synchronize the tenant because of destructive changes, specifically with the Invoice Post. Buffer and Incoming Document tables. 
 
 -->
-6. Synchronize the tenent with Micorosft and 3rd-party extensions.
+6. Synchronize the tenant with Microsoft and 3rd-party extensions.
 
     For each extension, run the Sync-NAVApp cmdlet: 
 
     ```
-    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "Sales And Inventory Forecast" -Version 15.0.35926.0
+    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "Sales And Inventory Forecast" -Version 15.0.35986.0
     ```
 
 ## Task 7: Upgrade the tenant data
@@ -275,7 +284,7 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
 1. To run the data upgrade, use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
     ```
-    Start-NAVDataUpgrade -ServerInstance BC150 -Tenant default -FunctionExecutionMode Serial -SkipCompanyIntitialization -Force 
+    Start-NAVDataUpgrade -ServerInstance BC150 -Tenant default -FunctionExecutionMode Serial -SkipCompanyInitialization -SkipAppVersionCheck -Force
     ```        
     
     This step upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before you complete the next step or to open the application in the client.
@@ -291,7 +300,7 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
     For each extension, run the Start-NAVAppDataUpgrade cmdlet.
 
     ```
-    Start-NAVAppDataUpgrade  -ServerInstance BC150 -Name "Sales and Inventory Forecast" -Version 15.0.35926.0
+    Start-NAVAppDataUpgrade  -ServerInstance BC150 -Name "Sales and Inventory Forecast" -Version 15.0.35986.0
     ```
 
 <!--
