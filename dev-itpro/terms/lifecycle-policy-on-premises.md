@@ -1,13 +1,13 @@
 ---
 title: "Software lifecycle policy and on-premises updates"
 description: "Learn about the lifecycle and product life of Dynamics 365 Business Central versions for on-premises deployments."
-author: edupont04
+author: plindgre
 ms.custom: na
-ms.reviewer: na
+ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: edupont
-ms.date: 08/08/2019
+ms.author: plindgre
+ms.date: 09/05/2019
 
 ---
 
@@ -26,7 +26,7 @@ Licensed customers must stay current with updates to the [!INCLUDE[prodlong](../
 |Dynamics 365 Business Central (on-premises) | October'18 Update|24630         |November 1, 2018|\*\*|
 |Dynamics 365 Business Central (on-premises) | April '19 Update |29537         |April 1, 2019   |October 10, 2023|
 
-\*\* In order to obtain mainstream support after April 14, 2020, customers will need to update to the April '2019 release or later Update for the April 2019 version  
+\*\* In order to obtain mainstream support after April 14, 2020, customers must update to the April 2019 release or a later update for the April 2019 version  
 
 
 ## Modern Lifecycle Policy
