@@ -69,13 +69,13 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
     Get-NAVAppInfo -ServerInstance BC140 -Tenant default | % { Uninstall-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version -Tenant default}
     ```
 
-4. Unpublish all extensions from the application.
+3. Unpublish all extensions from the application.
 
     ```
     Get-NAVAppInfo -ServerInstance BC140 | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
     ```
 
-5. Unpublish all system, test, and application symbols.
+4. Unpublish all system, test, and application symbols.
 
     To unpublish symbols, use the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
 
@@ -93,19 +93,18 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
     Dismount-NAVTenant -ServerInstance BC140 -Tenant default
     ```
 
-4. Stop the server instance.
+6. Stop the server instance.
 
     ```
     Stop-NAVServerInstance -ServerInstance BC140
     ```
 
-## Task 4: Upgrade the application database to the version 15.0 platform
+## Task 4: Upgrade the version 14.0 application database to the version 15.0 platform
 
-This task converts an application database from the version 14.0 platform to the version 15.0 platform. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database to convert it from the version 14.0 platform to the version 15.0 platform. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
 
-1. Run a technical upgrade on the application database.
-
-    Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator, and run the Invoke-NAVApplicationDatabaseConversion cmdlet:
+1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator.
+2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
@@ -117,39 +116,48 @@ In this task, you will publish extensions to the version 15.0 server instance. P
 
 The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 that you started in the previous task.
 
-1. Connect the version 15.0 server instance that you installed earlier to the application database, and then start the server instance.
+1. Configure the version 15.0 server instance, which you installed earlier, to prepare for upgrading the application.
 
-    For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    1. Set the server instance to connect to the application database.
+    
+            ```
+            Set-NAVServerConfiguration -ServerInstance BC150 -KeyName DatabaseName -KeyValue "Demo Database BC (14-0)"
+            ```
+            
+            In a single tenant deployment, this will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-    In a single tenant deployment, this will mount the tenant automatically.
+    3. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. 
 
-2. Configure the server instance to migrate Microsoft and 3rd party extensions to the use the new base application extension. 
-
-    ```
-    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
-    ```
-    <!-- with test
-    ```
-    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
-    ```-->
-    This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application--> on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
-
-3. Configure the server instance to synchronize only the system application objects with tenants.
-
-    This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`. 
-
-    ```
-    Set-NAVServerConfiguration BC150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
-    ```
-
-    This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system application objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
-
-4. Restart the server instance.
-
-    ```
-    Restart-NAVServerInstance BC150
-    ```
-5. Increase the application version of the application database.
+            ```
+            Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"}]'
+            ```
+            <!-- with test
+            ```
+            Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+            ```-->
+            This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application--> on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
+        <!-- maybe not required-->
+    4. Configure the server instance to synchronize only the system application objects with tenants.
+    
+            This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`.
+        
+            ```
+            Set-NAVServerConfiguration BC150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
+            ```
+        
+            This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains the old metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
+    
+    5. Temporarily disable task scheduler on the server instance for purposes of upgrade.
+    
+            ```
+            Set-NavServerConfiguration -ServerInstance BC150 -KeyName "EnableTaskScheduler" -KeyValue false
+            ```
+    6. Restart the server instance.
+    
+            ```
+            Restart-NAVServerInstance -ServerInstance BC150
+            ```
+2. Increase the application version of the application database, and restart the server instance.
 
     Use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 
@@ -157,22 +165,24 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
     ```
 
-    At this point, the tenant state is **OperationalWithSyncPending**.
+    ```
+    Restart-NAVServerInstance -ServerInstance BC150
+    ```
 
-6. Publish the version 15 system symbols extension.
+3. Publish the version 15 system symbols extension.
 
     The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
-7. Publish the custom base application extension that you created:
+4. Publish the custom base application extension that you created:
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\CusomtBaseApp2\Microsoft_BaseApp_15.0.34982.0.app" -SkipVerification
     ```
 
-8. Publish the Microsoft and 3rd party extensions.
+5. Publish the Microsoft and 3rd party extensions.
 
     Publish the Microsoft and 3rd party extensions that were published to the old application.
 
@@ -180,7 +190,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.4.app" -SkipVerification
     ```
 
-## Task 6: Synchronize and upgrade the tenants
+## Task 6: Synchronize the tenant
 
 In this task, you will complete two processes on the tenant: synchronizing and upgrading data. Synchronizing a tenant updates the database schema in a tenant database with any schema changes in the application database. The application database contains tables that define the application. The tenant database must contain the SQL Server tables that the application prescribes. Upgrading data updates the actual data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database.
 
@@ -197,62 +207,65 @@ If you have a multitenant deployment, perform these steps for each tenant.
     Use the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
 
     ```  
-    Sync-NAVTenant -ServerInstance BC150 -Tenant default
+    Sync-NAVTenant -ServerInstance BC150 -Tenant default -Mode Sync
     ```
     
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
     At this stage, the tenant state is **OperationalDataUpgradePending**.
 
-3. Synchronize the tenant with the base application extension (BaseApp).
+3. Synchronize the tenant with the base application extension (Base Application).
 
     Use the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
     ```
-    Sync-NAVApp -ServerInstance BC150 -Name "BaseApp" -Version 15.0.34982.0 -tenant default
+    Sync-NAVApp -ServerInstance BC150 -Name "Base Application" -Version 15.0.34982.0 -tenant default
     ```
 
     With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID.
 
+4. Synchronize the Microsoft and 3rd-party extensions that were previously installed before the upgrade with the tenant.
 
-5. Upgrade the tenant data.
+    For each extension, do the following:
 
-    Use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
-
-    ```
-    Start-NAVDataUpgrade -ServerInstance BC150 -Tenant default -FunctionExecutionMode Serial
-    ```
-
-    This step upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before you complete the next step or to open the application in the client.
-
-    > [!TIP]  
-    >  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the `Start-NavDataUpgrade` with the `-SkipCompanyIntitialization` parameter. 
-
-    The data upgrade process runs `CheckPreconditions` and `Upgrade` functions in the upgrade codeunits. If any of the preconditions are not met or an upgrade function fails, you must correct the error and resume the data upgrade process. If CheckPreconditions and Upgrade functions are executed successfully, codeunit 2 is automatically run to initialize all companies in the database unless you set the `-SkipCompanyIntitialization` parameter.
-
-    To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch. When completed, the tenant state should be **Operational**.
-
-6. (Single tenant only) When upgrade is completed, restart the server instance.
-
-    You will see that the custom base application has been installed on the tenant. 
-
-The application should now be accessible from the client.
-
-## Task 7: Synchronize and install Microsoft and 3rd party extensions on the tenants
-
-Now, you can install the Microsoft and 3rd-party extensions that were previously installed before the upgrade. For each extension, do the following steps:
-
-1. Synchronize the extension with the tenant:
     ```
     Sync-NAVApp -ServerInstance BC150 -Tenant default -Name My14Extension -Version 1.0.0.4
     ```
 
-2. Install the extension on the tenant:
 
-    Use the [Install-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet: 
+## Task 7: Upgrade the tenant data
+
+Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions. This step will also automatically install the **System Application** and **Base Application** extensions on the tenant.
+
+1. To run the data upgrade, use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
+
     ```
-    Install-NAVApp -ServerInstance BC150 -Tenant default -Name My14Extension -Version 1.0.0.4
-    ```
+    Start-NAVDataUpgrade -ServerInstance BC150 -Tenant default -FunctionExecutionMode Serial -SkipCompanyInitialization -SkipAppVersionCheck -Force
+    ```        
+    
+    This step upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before you complete the next step or to open the application in the client.
+    
+    > [!TIP]  
+    >  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the `Start-NavDataUpgrade` with the `-SkipCompanyIntitialization` parameter.
+    
+    To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
+    
+    When completed, the tenant state should be **Operational**.
+2. (Single tenant only) When upgrade is completed, restart the server instance.
+
+    You will see that the custom base application has been installed on the tenant.
+
+The application should now be accessible from the client.
+
+## Task 8: Synchronize and install Microsoft and 3rd party extensions on the tenants
+
+Now, you can install the Microsoft and 3rd-party extensions that were installed on the tenant before the upgrade.
+
+For each extension, run the Install-NAVApp cmdlet:
+
+```
+Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
+```
 
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   

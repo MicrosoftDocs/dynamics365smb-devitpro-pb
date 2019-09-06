@@ -101,15 +101,17 @@ This task runs a technical upgrade on the application database to convert it fro
 
 In this task, you will publish extensions to the version 15.0 server instance. Publishing an extension adds the extension to the application database that is mounted on the server instance, making it available for installing on tenants later on. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 that you started in the previous task.
+
 1. Configure the version 15.0 server instance, which you installed earlier, to prepare for upgrading the application.
 
-    Continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and complete these steps:
     1. Set the server instance to connect to the application database.
     
             ```
             Set-NAVServerConfiguration -ServerInstance BC150 -KeyName DatabaseName -KeyValue "Demo Database BC (14-0)"
             ```
-            For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+            
+            In a single tenant deployment, this will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
     3. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. 
 
@@ -142,7 +144,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
             ```
             Restart-NAVServerInstance -ServerInstance BC150
             ```
-2. Increase the application version of the application database, and restart the server instancee.
+2. Increase the application version of the application database, and restart the server instance.
 
     Use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 
@@ -273,7 +275,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 ## Task 7: Upgrade the tenant data
 
-Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions.
+Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions. This step will also automatically install the **System Application** and **Base Application** extensions on the tenant.
 
 1. To run the data upgrade, use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
@@ -289,7 +291,10 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
     To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
     
     When completed, the tenant state should be **Operational**.
-2. Upgrade the tenant data to the Microsoft and 3rd party extensions.
+2. (Single tenant only) When upgrade is completed, restart the server instance.
+
+    You will see that the custom base application has been installed on the tenant. 
+3. Upgrade the tenant data to the Microsoft and 3rd party extensions.
 
     For each extension, run the Start-NAVAppDataUpgrade cmdlet.
 
