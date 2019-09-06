@@ -193,7 +193,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35986\W1DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
     ```
--->
+    -->
 8. Publish the new versions of Microsoft extensions that were used before upgrade.
 
     You find the extensions in the **Applications** folder of the installation media (DVD). 
@@ -206,7 +206,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35986\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
--->
+    -->
 9. Publish the 3rd-party extensions that were used before upgrade.
 
     ```
@@ -217,7 +217,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Ext\Default publisher_My14Ext_1.0.0.2.app -Skip"
     ```
--->
+    -->
 ## Task 5: Synchronize the tenant
 
 In this task, you will synchronize the tenant's database schema any schema changes in the application database and extensions. Upgrading data updates the actual data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database. 
@@ -347,6 +347,13 @@ For each extension, run the Install-NAVApp cmdlet:
 ```
 Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
 ```
+
+At this point, the upgrade is complete, and you should be able to open the client.
+
+## Post-upgrade tasks
+
+1. Enable task scheduler on the server instance, if needed.
+2. (Multitenant only) If you used the `-AllowAppDatabaseWrite` parameter when mounting tenants, dismount the tenants, and then mount again without the `-AllowAppDatabaseWrite`. 
 
 <!-- The extensions must be modified to work with base application extension. <!--There are two ways to do this. You can either modify the extension code or configure the version 15 server instance to handle this.-->
 
