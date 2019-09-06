@@ -69,7 +69,7 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
     Get-NAVAppInfo -ServerInstance BC140 -Tenant default | % { Uninstall-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version -Tenant default}
     ```
 
-3. Unpublish all extensions from the application.
+3. Unpublish all extensions from the application server instance.
 
     ```
     Get-NAVAppInfo -ServerInstance BC140 | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
@@ -257,7 +257,7 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
 
 The application should now be accessible from the client.
 
-## Task 8: Synchronize and install Microsoft and 3rd party extensions on the tenants
+## Task 8: Install Microsoft and 3rd party extensions on the tenants
 
 Now, you can install the Microsoft and 3rd-party extensions that were installed on the tenant before the upgrade.
 
