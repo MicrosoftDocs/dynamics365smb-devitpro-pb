@@ -97,54 +97,57 @@ This task runs a technical upgrade on the application database to convert it fro
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-## Task 4: Publish the base application, symbols, and other extensions
+## Task 4: Configure the version server instance
+
+When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade, and can be reverted after you complete the upgrade.
+
+1. Set the server instance to connect to the application database.
+
+    ```
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName DatabaseName -KeyValue "Demo Database BC (14-0)"
+    ```
+    
+    In a single tenant deployment, this will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+
+2. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. 
+
+    ```
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"}]'
+    ```
+    <!-- with test
+    ```
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    ```-->
+    This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application--> on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
+    <!-- maybe not required-->
+3. Configure the server instance to synchronize only the system application objects with tenants.
+
+    This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`.
+
+    ```
+    Set-NAVServerConfiguration BC150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
+    ```
+
+    This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains the old metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
+
+4. Temporarily disable task scheduler on the server instance for purposes of upgrade.
+
+    ```
+    Set-NavServerConfiguration -ServerInstance BC150 -KeyName "EnableTaskScheduler" -KeyValue false
+    ```
+5. Restart the server instance.
+
+    ```
+    Restart-NAVServerInstance -ServerInstance BC150
+    ```
+
+## Task 5: Publish the base application, symbols, and other extensions
 
 In this task, you will publish extensions to the version 15.0 server instance. Publishing an extension adds the extension to the application database that is mounted on the server instance, making it available for installing on tenants later on. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
 The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 that you started in the previous task.
 
-1. Configure the version 15.0 server instance, which you installed earlier, to prepare for upgrading the application.
-
-    1. Set the server instance to connect to the application database.
-    
-            ```
-            Set-NAVServerConfiguration -ServerInstance BC150 -KeyName DatabaseName -KeyValue "Demo Database BC (14-0)"
-            ```
-            
-            In a single tenant deployment, this will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
-
-    3. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. 
-
-        ```
-        Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"}]'
-        ```
-        <!-- with test
-        ```
-        Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
-        ```-->
-        This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application--> on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
-        <!-- maybe not required-->
-    4. Configure the server instance to synchronize only the system application objects with tenants.
-    
-        This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`.
-    
-        ```
-        Set-NAVServerConfiguration BC150 -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
-        ```
-    
-        This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains the old metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
-    
-    5. Temporarily disable task scheduler on the server instance for purposes of upgrade.
-    
-        ```
-        Set-NavServerConfiguration -ServerInstance BC150 -KeyName "EnableTaskScheduler" -KeyValue false
-        ```
-    6. Restart the server instance.
-    
-        ```
-        Restart-NAVServerInstance -ServerInstance BC150
-        ```
-2. Increase the application version of the application database, and restart the server instance.
+1. Increase the application version of the application database, and restart the server instance.
 
     Use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 
@@ -214,7 +217,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
     -->
 
-## Task 5: Synchronize the tenant
+## Task 6: Synchronize the tenant
 
 In this task, you will synchronize the tenant's database schema any schema changes in the application database and extensions. Upgrading data updates the actual data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database. 
 
