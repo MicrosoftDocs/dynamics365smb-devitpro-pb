@@ -53,7 +53,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 1. Make backup of the databases.
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14.0 as an administrator.
-1. Uninstall all extensions from the all tenants.
+3. Uninstall all extensions from the all tenants.
 
     To uninstall an extension, you use the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet. For example, together with the Get-NAVAPP cndlet, you can uninstall all extensions with a single command:
 
@@ -215,7 +215,7 @@ In this task, you will publish extensions to the version 15.0 server instance. P
 
    <!--  
     ```
-    Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Ext\Default publisher_My14Ext_1.0.0.2.app"
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Ext\Default publisher_My14Ext_1.0.0.2.app -Skip"
     ```
 -->
 ## Task 5: Synchronize the tenant
