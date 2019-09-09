@@ -528,6 +528,7 @@
 ### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
+## On-Premises
 ### Business Central Spring 2019
 #### [Overview](upgrade/upgrading-to-business-central-on-premises.md)
 #### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
@@ -543,6 +544,10 @@
 ##### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
 ##### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
 #### [Installing a Cumulative Update](upgrade/upgrading-cumulative-update.md)
+### Business Central 2019 Release Wave 2
+#### [Overview](upgrade/upgrade-overview-v15.md)
+#### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
+#### [Technical Upgrade of a Customice Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
