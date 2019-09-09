@@ -9,16 +9,16 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
-ms.date: 09/02/2019
+ms.date: 09/09/2019
 ---
 
 # Overview of the System Application
-The System Application contains modules that are similar to APIs. The modules interact with the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform and online ecosystem to provide the methods that support the business logic in the Base Application. If you are developing extensions or add-ons for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you will probably need to use one or more of the objects in the modules. 
+The System Application contains modules that interact with the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform and online ecosystem to support the business logic in the Base Application. If you are developing extensions or add-ons for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you will probably need to use one or more of the objects in the modules. 
 
 This topic provides an overview of the modules in the System Application. For more details about each module, and to get a look at the code, choose the **ReadMe** link for the module to visit our [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) repository on GitHub.
 
 > [!Note]
-> The modules in the System Application represent a significant change in what's happening under the hood in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. We will continue to enhance the System Application in future releases. If you find something you think we should add, or fix, please let us know. 
+> The modules in the System Application represent a significant change in what's happening under the hood in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. We will continue to enhance the System Application in future releases. If you find something you think we should add, visit our [Dynamics 365 Application Ideas](aka.ms/bcideas) page. If you want us to improve something, go to the [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) repository and submit a pull request for it.  
 
 ## Overview of the Modules in the System Application
 The list of modules is growing continuously. The following table lists and describes the modules that are available now. 
