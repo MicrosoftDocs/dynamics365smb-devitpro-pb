@@ -506,21 +506,6 @@
 <!-- upgrade -->
 # Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
-## [Online](upgrade/upgrading-to-business-central-online.md)
-### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
-## [On-Premises](upgrade/upgrading-to-business-central-on-premises.md)
-### Business Central Spring 2019
-#### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
-#### [Technical Upgrade](upgrade/Converting-a-Database.md)
-#### [Tecnical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
-#### [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
-#### [Upgrading the Data: Single-Tenant Mode](upgrade/Upgrading-the-Data.md)
-#### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
-### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
-#### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
-### [Installing a Cumulative Update](upgrade/upgrading-cumulative-update.md)
 ## Before You Upgrade
 ### [Important Information and Considerations for Before Upgrading](upgrade/Upgrade-Considerations.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
@@ -538,6 +523,26 @@
 ### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
 ### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
+## Online
+### [Online](upgrade/upgrading-to-business-central-online.md)
+### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### Business Central Spring 2019
+#### [Overview](upgrade/upgrading-to-business-central-on-premises.md)
+#### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
+#### Technical Upgrade
+##### [Technical Upgrade](upgrade/Converting-a-Database.md)
+##### [Tecnical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
+#### Application and Data Upgrade
+##### [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
+#### Upgrading the Data: Single-Tenant Mode
+##### [Upgrading the Data: Single-Tenant Mode](upgrade/Upgrading-the-Data.md)
+##### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
+#### Upgrading the Data: Multitenant Mode
+##### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
+##### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
+#### [Installing a Cumulative Update](upgrade/upgrading-cumulative-update.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
