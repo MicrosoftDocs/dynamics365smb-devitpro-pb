@@ -12,18 +12,20 @@ manager: edupont
 ms.service: "dynamics365-business-central"
 ROBOTS: NOINDEX
 ---
-# Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Wave 2
+# Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2
 
 > [!IMPORTANT]  
 > [!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)] 
 >
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 marks the release where C/AL has been deprecated and replaced entirely by AL. From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. This change will influence how you perform the upgrade compared to earlier releases.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marks the release where C/AL has been deprecated and replaced by AL. From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. This change will influence how you perform the upgrade compared to earlier releases.
 
-## Upgrading an Unmodified v14.0 Application
+Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to the latest cumulative update of [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
 
-Use this scenario if you have a Business Central application that does not include any code customization, other than Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central v15.0 base appplication extension and the system application. The result will be a fully upgraded application and platform on v15.0.
+## Upgrading an unmodified [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 application
+
+Use this scenario if you have a Business Central application that does not include any code customization, other than Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central version 15 base application extension and the system application. The result will be a fully upgraded application and platform on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2.
 
 <!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app.-->
 
@@ -533,9 +535,9 @@ DebuggerCodeViewer.Page.al(14,36): error AL0417: Control add-in '"Microsoft.Dyna
 
 ### Clean steps
 -->
-## Technical Upgrade of a Code Customized Application to Business Central 2019 Wave 2 platform
+## Technical Upgrade of a code-customized application to Business Central 2019 release wave 2 platform
 
-Use this process when you have a customized Business Central application that you want to upgrade to the Business Central Wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
+Use this process when you have a customized Business Central application that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 
 <!-- For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 custom application to an Extension on the BC 15 platform.-->
 
