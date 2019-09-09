@@ -19,7 +19,7 @@ This topic outlines the lifecycle and support policies for [!INCLUDE[prodlong](.
 
 [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) October'18 and April '19 Update software is covered by the Fixed Lifecycle Policy.  
 
-Licensed customers must stay current with updates to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] on-premises software in accordance with the following servicing and system requirements. This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and that it deploy updates as noted later in this topic.  
+Licensed customers must stay current with updates to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] on-premises software in accordance with the following servicing and system requirements. This policy requires that the customer maintain an Enhancement Plan, and that it deploy updates as noted later in this topic.  
 
 |Release                                     |Version           |Build number  |Availability    |Mainstream support ends|
 |--------------------------------------------|------------------|--------------|----------------|-----------------------|
@@ -31,7 +31,7 @@ Licensed customers must stay current with updates to the [!INCLUDE[prodlong](../
 
 ## Modern Lifecycle Policy
 
-[!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) 2019 Release Wave 2 October 2019 Update and newer software is covered by the Modern Lifecycle Policy.  
+[!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) 2019 release wave 2 and newer updates are covered by the Modern Lifecycle Policy.  
 
 The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) software as indicated on the [Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on) page, but only if the customer keeps the deployed software current according to this policy. In keeping current you are getting all the latest feature and bug fixes.  
 
