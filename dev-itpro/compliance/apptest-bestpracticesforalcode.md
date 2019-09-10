@@ -4,7 +4,7 @@ description: "Best Practices for writing AL code."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/10/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -28,34 +28,37 @@ Follow the syntax for file naming as shown below:
 
 |Full objects|Extensions|
 |------|---------------------------|
-|`<Type><Id>.<ObjectName>.al`|`<Type><BaseId>-Ext<ObjectId>.<ObjectName>.al`|
+|`<ObjectNameExcludingPrefix>.<FullTypeName>.al`|`<ObjectNameExcludingPrefix>.<FullTypeName>Ext.al`|
 
 ### Type map
 Use the listed abbreviations for each type of object in the file naming:
 
 |Object    |Abbreviation|
 |----------|---------------------------|
-|Page      |Pag|
-|Page Extension|PagExt|
-|Page Customization|PagCust|
-|Codeunit  |Cod|
-|Table     |Tab|
-|Table Extension|TabExt|
-|XML Port  |Xml|
-|Report    |Rep|
-|Query     |Que|
-|Enum      |Enu|
-|Enum Extension|EnuExt|
-|Control Add-ins|ConAddin|
+|Page      |Page|
+|Page Extension|PageExt|
+|Page Customization|PageCust|
+|Codeunit  |Codeunit|
+|Table     |Table|
+|Table Extension|TableExt|
+|XML Port  |Xmlport|
+|Report    |Report|
+|Request Page|RequestPage|
+|Query     |Query|
+|Enum      |Enum|
+|Enum Extension|EnumExt|
+|Control Add-ins|ControlAddin|
+|Dotnet    |Dotnet|
+|Profile   |Profile|
 
 ### Examples of file naming
 The following table illustrates how the file naming should look.
 
 |Object name|File name|
 |------|---------------------------|
-|codeunit 1000 "Job Calculate WIP"|Cod1000.JobCalculateWIP.al|
-|page 21 "Customer Card"|Pag21.CustomerCard.al|
-|page 1234 "MyPag" extends "Customer Card"|Pag21-Ext1234.MyPag.al|
+|codeunit 1000 "Job Calculate WIP"|`JobCalculateWIP.Codeunit.al`|
+|page 21 "Customer Card"|`CustomerCard.Page.al`|
+|page 1234 "MyPage" extends "Customer Card"|`MyPage.PageExt.al`|
 
 
 ## Formatting
