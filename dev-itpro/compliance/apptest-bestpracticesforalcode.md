@@ -21,7 +21,7 @@ This page defines some of the best practices to follow when writing AL code for 
 An extension is fully contained in a single folder. This folder often contains multiple files, such as app.json and launch.json files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.   
 
 ## File naming 
-Each file name must start with the corresponding type and ID, followed by a dot for full objects or a dash for extensions. The name of the object is written only with characters [A-Za-z0-9] and dot al is used for the file type. 
+Each file name has object name with only characters [A-Za-z0-9], object type and dot al, for file type.
 
 ### File naming notation
 Follow the syntax for file naming as shown below:
