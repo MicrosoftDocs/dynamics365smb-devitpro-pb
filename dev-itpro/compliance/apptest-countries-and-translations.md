@@ -50,7 +50,7 @@ In countries, where Microsoft has not delivered a localization, partners can bui
 |Japan|ja-JP|
 |Malaysia|en-US|
 |Poland|pl-PL|
-|Serbia|rs-latn-RS|
+|Serbia|sr-latn-RS|
 |Singapore|en-US|
 |South Africa|en-ZA|
 |South Korea|ko-KR|

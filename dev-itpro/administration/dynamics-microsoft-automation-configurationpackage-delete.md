@@ -38,7 +38,7 @@ If successful, this method returns a ```204 No Content``` response code.
 
 Here is an example of the request.
 ```json
-DELETE https://api.businesscentral.dynamics.com/v1.0/api//microsoft/automation/beta/companies({companyId})/configurationPackages('{packageName}')
+DELETE https://api.businesscentral.dynamics.com/v1.0/api//microsoft/automation/v1.0/companies({companyId})/configurationPackages('{packageName}')
 ```
 
 ## See Also 

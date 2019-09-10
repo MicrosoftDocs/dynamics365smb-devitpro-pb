@@ -17,6 +17,9 @@ Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](inc
 
 The structure of a table has four sections. The first block contains metadata for the overall table; the table type. The fields section describes the data elements that make up the table; their name and the type of data they can store. The keys section contains the definitions of the keys that the table needs to support. The final section details the triggers and code that can run on the table.
 
+> [!IMPORTANT]  
+> Only pages with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
+
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 

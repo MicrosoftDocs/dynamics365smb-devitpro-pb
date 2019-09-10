@@ -154,13 +154,19 @@
 ### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
 ### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
 ### [Working with Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
-## Manifest Files
+## Configuration Files
 ### [JSON Files](developer/devenv-json-files.md)
+### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
 ### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
-## Debugging
+## Compiling, Publishing, and Debugging
+### [Compilation Scope Overview](developer/devenv-compilation-scope-overview.md)
 ### [Debugging in AL](developer/devenv-debugging.md)
+### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 ### [RAD publishing in AL](developer/devenv-rad-publishing.md)
+## Working with Projects and Workspaces
+### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
+### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
@@ -271,7 +277,6 @@
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
-### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
@@ -445,8 +450,14 @@
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
-<!-- ## Preview Features in AL -->
-
+<!-- 
+## Preview Features in AL
+### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
+### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
+### [InternalEvent Attribute](developer/methods/devenv-internal-attribute.md)
+### [Access Property](developer/properties/devenv-access-property.md)
+### [Extensible Property](developer/properties/devenv-extensible-property.md)
+### [JSON files](developer/devenv-json-files.md) -->
 <!-- end AL -->
 <!-- web service -->
 # [Web Services](webservices/web-services.md)

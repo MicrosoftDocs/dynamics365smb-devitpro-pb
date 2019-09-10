@@ -41,6 +41,8 @@ This topic lists properties of the report object.
 |[Indentation Property \(Reports\)](devenv-indentation-reports-property.md)|<ul><li>DataItem controls</li><li>Column controls</li><ul>|
 |[MaxIteration Property](devenv-maxiteration-property.md)|<ul><li>DataItem controls</li></ul>|
 |[Name Property](devenv-name-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li><li>Report Labels</li></ul>|
+|[ObsoleteState Property](devenv-obsoletestate-property.md)|<ul><li>Report Object</li><li>Column controls</li><li>DataItem controls</li><li>Request page controls</li></ul>|
+|[ObsoleteReason Property](devenv-obsoletereason-property.md)|<ul><li>Report Object</li><li>Column controls</li><li>DataItem controls</li><li>Request page controls</li></ul>|
 |[OptionCaption Property](devenv-optioncaption-property.md)|<ul><li>Column controls</li></ul>|
 |[OptionCaptionML Property](devenv-optioncaptionml-property.md)|<ul><li>Column controls</li></ul>|
 |[OptionString Property](devenv-optionstring-property.md)|<ul><li>Column controls</li></ul>|
