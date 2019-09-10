@@ -26,7 +26,7 @@ Use this process when you have a code customized [!INCLUDE[prodshort](../develop
  ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
  
 
-### Single-tenant and multitenant deployments
+#### Single-tenant and multitenant deployments
 
 The process for upgrading the very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data are included in the same database, while with a multitenant deployment application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
@@ -65,10 +65,6 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
 
     If you have a single tenant deployment, you can omit the `-Tenant` parameter and value. 
 
-    ``` 
-    Get-NAVAppInfo -ServerInstance BC140 -Tenant default | % { Uninstall-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version -Tenant default}
-    ```
-
 3. Unpublish all extensions from the application server instance.
 
     ```
@@ -99,7 +95,7 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
     Stop-NAVServerInstance -ServerInstance BC140
     ```
 
-## Task 4: Upgrade the version 14.0 application database to the version 15.0 platform
+## Task 4: Convert the version 14.0 application database to the version 15.0 platform
 
 This task runs a technical upgrade on the application database to convert it from the version 14.0 platform to the version 15.0 platform. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
 
@@ -110,7 +106,7 @@ This task runs a technical upgrade on the application database to convert it fro
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-## Task 5: Configure the version server instance
+## Task 5: Configure the version server instance 
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade, and can be reverted after you complete the upgrade.
 
@@ -125,11 +121,11 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
 2. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. 
 
     ```
-    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"}]'
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"}]'
     ```
     <!-- with test
     ```
-    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"d8ffeae4-92a7-4b6e-a5b9-efa58321b8e4", "name":"testlibraries", "publisher": "Default publisher"}]'
     ```-->
     This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application--> on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
     <!-- maybe not required-->
@@ -165,7 +161,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 
     ```
-    Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
+    Set-NAVApplication BC150 -ApplicationVersion 15.0.0.0 -force
     ```
 
     ```

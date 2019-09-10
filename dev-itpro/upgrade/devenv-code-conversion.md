@@ -15,7 +15,9 @@ ms.author: solsen
 > [!IMPORTANT]  
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 
-With the recent preview release of the base application converted to AL, you can now preview converting your existing C/AL code-customized on-prem solution to an AL code-customized on-prem solution as well. Below outlines the steps involved to do so. Please notice that this is just to test out the conversion; running a modified base application on AL in production is not yet supported. Before venturing into this, we recommend getting familiar with the basics of setting up and developing in Visual Studio Code and AL, see [Developing Extensions in AL](../developer/devenv-dev-overview.md). 
+This article explains how to convert your existing C/AL code-customized on-premises solution to an AL code-customized on-premises solution.
+
+Before you start, we recommend getting familiar with the basics of setting up and developing in Visual Studio Code and AL, see [Developing Extensions in AL](../developer/devenv-dev-overview.md). 
 
 > [!NOTE]  
 > Moving on-premise C/AL code customizations to [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] online, requires converting these to AL extensions. This could include converting the C/AL deltas to AL extension code as a starting point, as outlined in [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md). 
@@ -24,7 +26,7 @@ With the recent preview release of the base application converted to AL, you can
 
 ## Task 1: Import the test library into your C/AL solution
 
-If your solution uses Microsoft (1st-party) extensions, you will have to convert the test library from C/AL to AL, in addition to the base application. The reason for this is that the Microsoft extensions rely on the test symbols. The easiest way to do this is to import the **CALTestLibraries.W1.fob** file into the old database. This file is available on the installation media (DVD) for in the **TestToolKit** folder.
+If your solution uses Microsoft (1st-party) extensions, you will have to convert the test library from C/AL to AL. The reason for this is that the Microsoft extensions rely on the test symbols. The easiest way to do this is to import the **CALTestLibraries.W1.fob** file into the old database. This file is available on the installation media (DVD) for in the **TestToolKit** folder.
 
 You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
@@ -38,16 +40,17 @@ Compiling all the objects is a prerequisite for a successful and complete export
 
 ## Task 3: Export the application from the database to the new TXT syntax
 
-Once the application compiles, you must export all C/AL application objects, except system tables and codeunits, to the new TXT format, that can be used as input to the conversion tool. To do so, use the [Export-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) PowerShell cmdlet with the `ExportToNewSyntax` switch.
+Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. It is important to:
 
-When you are converting a custom base application to AL as part, omit all system objects. These have IDs in the 2000000000 range. 
+- Omit omit all system objects, which have IDs in the 2000000000 range. 
+- Use the `ExportToNewSyntax` switch to export the objects in a syntax that is compatible with the Txt2Al conversion tool.
 
-For example, using the [Export-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps), do the following:
+The Export-NAVApplicationObject cmdlet will export all objects to a single .txt file. For example, do the following:
 
 1. Create a folder for storing the exported TXT file.
 2. Run the following command:
     ```
-    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app.txt" -Filter 'Id=1..1999999999'
+    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app-part1.txt" -Filter 'Id=1..1999999999' ID=1..129999
     ```
 This can take several minutes.
 
@@ -103,7 +106,7 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
 > [!NOTE]
 >If you are interested in migrating your localization resources, you should use the `--addLegacyTranslationInfo` switch to instruct Txt2Al to generate information about the legacy IDs of the translation code.
 
-When completed, there will be an al for for each object.
+When completed, there will be an .al file for for each object.
 
 
 ## Task 6:  Copy CodeViewer add-in to the [!INCLUDE[server](../developer/includes/server.md)] version 15.0 installation
@@ -145,7 +148,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
     For example:
 
     ```
-    "al.assemblyProbingPaths": ["./.netpackages", "C:/Windows/Microsoft.NET/assembly","C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins","C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client",C:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00","C:/windows/assembly/GAC/ADODB"],
+    "al.assemblyProbingPaths": ["./.netpackages", "C:/Windows/Microsoft.NET/assembly","C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins","C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client",C:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00","C:/windows/assembly/GAC/ADODB"]
     ```
 <!--
     ```
@@ -157,7 +160,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
     For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 4. Modify the app.json for the project:
 
-    - **Important** The ID, name, publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:
+    - **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:
 
         ```
           "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
@@ -223,7 +226,7 @@ Currently, there are known issues which you might have to address.
                 TempPlan.Reset;
                 TempPlan.DeleteAll;
         
-                // Loop through assigned Azzure AD Plans
+                // Loop through assigned Azure AD Plans
                 foreach AssignedPlan in GraphUser.AssignedPlans do begin
                   HaveAssignedPlans := true;
                   if AssignedPlan.CapabilityStatus = 'Enabled' then begin
@@ -290,8 +293,10 @@ Currently, there are known issues which you might have to address.
             ```  
     
         - PowerBIServiceMgt.Codeunit.al (ImportReportRequest)
-        - Debugger objects 
+        - Debugger objects
+        - SessionList
 
+        - For test XmlTextReader LibraryVerifyXMLSchema.Codeunit.al
         After you fix these issues, build tha project again.    
 <!--
    2. CodeViewer related errors.
