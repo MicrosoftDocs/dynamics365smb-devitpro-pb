@@ -163,6 +163,7 @@
 ### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
+### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
 ### [Generating Delta Files](developer/devenv-generating-delta-files.md)
@@ -196,6 +197,7 @@
 ### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
+### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ## Pages
 ### [Pages Overview](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
@@ -226,6 +228,7 @@
 #### [Fixed Control](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
 #### [Field Groups](developer/devenv-field-groups.md)
 #### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
+### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### Actions
 #### [Actions in AL](developer/devenv-actions-overview.md)
 #### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
@@ -243,6 +246,7 @@
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
+### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ## XMLports
 ### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ### [XMLport Object](developer/devenv-xmlport-object.md)
