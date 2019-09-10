@@ -52,6 +52,14 @@ The Export-NAVApplicationObject cmdlet will export all objects to a single .txt 
     ```
     Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app-part1.txt" -Filter 'Id=1..1999999999' ID=1..129999
     ```
+
+    <!-- For spearte test library
+    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app-part1.txt" -Filter 'Id=1..129999'
+
+    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app-part2.txt" -Filter 'Id=1400000..1999999999'
+
+    Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14testobjects.txt" -Filter 'Id=130400..130416'
+    -->
 This can take several minutes.
 
 ## Task 4: Create a declaration file for custom .NET assemblies (optional)
@@ -92,8 +100,14 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
 3. Run the txt2al command:
 
     ```      
-    txt2al --source=C:\export2al\exportedbc14app.txt --target=C:\export2al\al2 --injectDotNetAddIns --dotNetAddInsPackage=C:\export2al\dotnet\mydotnet.al --dotNetTypePrefix --rename
+    txt2al --source=C:\export2al\exportedbc14app.txt --target=C:\export2al\baseapp --injectDotNetAddIns --dotNetAddInsPackage=C:\export2al\dotnet\mydotnet.al --dotNetTypePrefix --rename
     ```      
+
+    <!--
+    >txt2al --source=C:\export2al\baseapp --target=C:\export2al\baseapp\al --injectDotNetAddIns
+    -->
+
+    <!--txt2al --source=C:\export2al\testlibrary --target=C:\export2al\testlibarary\al --injectDotNetAddIns-->
 
     If your solution contains .NET interoperability code, the following Txt2Al command line parameters should be used to achieve a conversion that requires less manual intervention:  
 
@@ -127,6 +141,10 @@ To build your base application, you will create a new application database on th
     ```
 
 3. Connect your [!INCLUDE[server](../developer/includes/server.md)] instance to the database. See [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).
+
+    ```
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName DatabaseName -KeyValue "BC15DBForUpgrade2"
+    ```
 
 ## Task 8: Create and set up an AL project in Visual Studio Code
 
@@ -176,7 +194,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
 7. Open the **dotnet.al** file for the project, and make the following changes:
 
-    - Delete all instances of `Version='14.0.0.0';` for **Microsoft.Dynamics.Nav** assembly declarations.
+    - Delete all instances of `Version = '14.0.0.0';` for **Microsoft.Dynamics.Nav** assembly declarations.
     - For the `DocumentFormat.OpenXml` assembly declaration, remove the `version` and `culture` keys and set `PublicKeyToken = '8fb06cb64d019a17'`.
 
         ```
