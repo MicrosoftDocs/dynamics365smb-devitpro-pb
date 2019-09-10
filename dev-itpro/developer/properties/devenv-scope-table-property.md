@@ -20,7 +20,7 @@ Sets the scope of a table. The options are `Cloud`, `Extension`, `Internal`, `On
 - Tables
 
 ## Remarks
-When a table is marked with `Scope = OnPrem` it is not available from an extension....
+When a table is marked with `Scope = OnPrem` it is not available to a cloud extension. 
 
 ## Examples
 ```
