@@ -154,7 +154,7 @@
 ### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
 ### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
 ### [Working with Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
-## Configuration Files
+## Configuring the Development Environment
 ### [JSON Files](developer/devenv-json-files.md)
 ### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
