@@ -189,12 +189,16 @@ In this task, you will create a AL project in Visual Studio code that you will u
 5. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
 
     Change the `"al.assemblyProbingPaths": ["./.netpackages"]` setting to point to all the folders that contain .NET assemblies that are used by your project. For example:
-<!-- check with susanne-->
+
     ```
     "al.assemblyProbingPaths": ["./.netpackages","C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins","C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client",C:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00","C:/windows/assembly/GAC/ADODB","C:/Windows/Microsoft.NET/assembly",]
     ```
     For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
-6. Modify the `app.json` for the project to configure the following:
+
+    > [!NOTE]  
+    > Adding assemblies to the folders in your assembly probing paths is not automatically detected by the compiler. You must restart Visual Studio Code for the changes to be detected.
+
+6. Modify the `app.json` for the project as follows:
 
     - **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:
 
@@ -202,8 +206,10 @@ In this task, you will create a AL project in Visual Studio code that you will u
           "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
           "name": "Base Application",
           "publisher": "Microsoft",
-          "version": "15.0.<version>.0"
+          "version": "14.5.0.0"
         ```
+
+        We recommend that you set the "version" to the same version as the C/AL application.  
     - Set the `target` to `OnPrem`.
     - Change the `idRange` to include all the IDs used by your base application (or leave blank).
     - Delete the values in the `dependencies` parameter.
@@ -221,9 +227,6 @@ In this task, you will create a AL project in Visual Studio code that you will u
             PublicKeyToken = '8fb06cb64d019a17';
             ...
         ```
-
-> [!NOTE]  
-> Adding assemblies to the folders in your assembly probing paths is not automatically detected by the compiler. You must restart Visual Studio Code for the changes to be detected.
 
 <!-- create article and link-->
 ## Task 9: Improve Visual Studio Code editing experience performance (optional)
