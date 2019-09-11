@@ -188,11 +188,11 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
 5. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
 
-    Change the `"al.assemblyProbingPaths": ["./.netpackages"]` setting to point to all the folders that contain .NET assemblies that are used by your project. For example:
+    Change `"al.assemblyProbingPaths": ["./.netpackages"]` to point to all the folders that contain .NET assemblies that are used by your project. For example:
 
-    ```
-    "al.assemblyProbingPaths": ["./.netpackages","C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins","C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client",C:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00","C:/windows/assembly/GAC/ADODB","C:/Windows/Microsoft.NET/assembly",]
-    ```
+        ```
+        "al.assemblyProbingPaths": ["./.netpackages","C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins","C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client",C:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00","C:/windows/assembly/GAC/ADODB","C:/Windows/Microsoft.NET/assembly",]
+        ```
     For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
     > [!NOTE]  
@@ -246,8 +246,7 @@ Open your `settings.json` file in the project (or global settings if you prefer 
 ## Task 10: Compile your project in Visual Studio Code
 The AL compiler is more strict than the C/SIDE compiler and will issue errors for constructs that are not valid. We recommend that you fix the errors in the C/AL solution and re-export, iterating over steps 1-4 above until all the compilation errors are fixed.
 
-
-Currently, there are known issues which you might have to address.
+Fix any errors that occur. The following are issues that you might encounter:
 
 <!--
 1. Fixing errors in AzureADUserManagement.Codeunit.al, FlowSelectorTemplate.Page.al, and FlowSelector.Page.al.
@@ -291,50 +290,49 @@ Currently, there are known issues which you might have to address.
 -->
 1. FlowSelectorTemplate.Page.al
     
-            ```   
-            usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
-            {
-            ApplicationArea = Basic,Suite;
-        
-            trigger ControlAddInReady()
-            begin
-            /*                                 CurrPage.FlowAddin.Initialize(
-                FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
-                AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-                AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-                AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
-    
-            LoadTemplates;
-    
-            AddInReady := true; */
-            end;
-            ```   
-            ```
+    ```   
+    usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
+    {
+    ApplicationArea = Basic,Suite;
+
+    trigger ControlAddInReady()
+    begin
+    /*                                 CurrPage.FlowAddin.Initialize(
+        FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
+        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
+        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
+        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
+
+    LoadTemplates;
+
+    AddInReady := true; */
+    end;
+    ```   
 
 2. FlowSelector.Page.al
     
-            ```   
-                group(Control3)
-                {
-                    ShowCaption = false;
-                    Visible = IsUserReadyForFlow AND NOT IsErrorMessageVisible;
-                    usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
-                    {
-                        ApplicationArea = Basic,Suite;
-    
-                        trigger ControlAddInReady()
-                        begin
-                        /*     CurrPage.FlowAddin.Initialize(
-                              FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
-                              AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-                              AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-                              AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
-    
-                            LoadFlows;
-    
-                            AddInReady := true; */
-                        end;
-            ```  
+    ```   
+        group(Control3)
+        {
+            ShowCaption = false;
+            Visible = IsUserReadyForFlow AND NOT IsErrorMessageVisible;
+            usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
+            {
+                ApplicationArea = Basic,Suite;
+
+                trigger ControlAddInReady()
+                begin
+                /*     CurrPage.FlowAddin.Initialize(
+                        FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
+                        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
+                        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
+                        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
+
+                    LoadFlows;
+
+                    AddInReady := true; */
+                end;
+    ```  
 2. Delete debugger objects:
 
     - Debugger.Page.al
@@ -399,9 +397,9 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
  
 
 -->
-## 8. Convert the test toolkit library and test runner codeunits to AL extension
+## Task 8: Convert the test toolkit library and test runner codeunits to AL extension
 
-If you converted the test library form C/AL to AL, now you will create and build a project for test library, similar to what you did for the base application. 
+If you converted the test library form C/AL to AL, you will now create and build a project for test library, similar to what you did for the base application.
 
 1. Follow steps 1 through 5 in Task 8 to create an AL project for the test library.  
 

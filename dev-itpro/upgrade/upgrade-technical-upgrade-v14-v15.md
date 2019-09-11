@@ -144,7 +144,7 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance BC150
     ```
 
-## Task 6: Publish the system symbole, base application, and test application 
+## Task 6: Publish the system symbols, base application, and test application
 
 In this task, you will publish extensions to the version 15.0 server instance. Publishing an extension adds the extension to the application database that is mounted on the server instance, making it available for installing on tenants later on. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -163,40 +163,54 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Restart-NAVServerInstance -ServerInstance BC150
     ```
 -->
-2. Publish the version 15 system symbols extension.
+1. Publish the system symbols extension for version 15.
 
     The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
-3. Publish the custom base application extension that you created:
+2. Publish the custom base application extension that you created.
 
     ```
-    Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\CusomtBaseApp2\Microsoft_BaseApp_15.0.34982.0.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\MyDocuments\AL\CustomBaseApplication\Microsoft_BaseApp_14.5.0.0.app"
     ```
+3. Publish the test library extension that you created.
+
+    ```
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\MyDocuments\AL\testlibarary\testlibrary_14.5.0.0.app"
+    ```
+
 
 4. Publish the Microsoft and 3rd party extensions.
 
     Publish the Microsoft and 3rd party extensions that were published to the old application.
 
     ```
-    Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.4.app" -SkipVerification
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\MyDocuments\AL\My14Extension\Default publisher_My14Extension_1.0.0.4.app" -SkipVerification
     ```
 
-## Task 7: Synchronize the tenant
+## Task 7: Synchronize the tenant and install the base and test library application
 
-In this task, you will complete two processes on the tenant: synchronizing and upgrading data. Synchronizing a tenant updates the database schema in a tenant database with any schema changes in the application database. The application database contains tables that define the application. The tenant database must contain the SQL Server tables that the application prescribes. Upgrading data updates the actual data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database.
+In this task, you update the schema of tenant database schema with schema of changes in system objects and application objects database. This task will transfer ownweship .
 
 If you have a multitenant deployment, perform these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant.
+1. (Multitenant only) Mount the tenant to the version 15 server instance.
 
+    To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
+    
     ```
-    Mount-NAVTenant -ServerInstance BC150 -Tenant default -DatabaseName "Demo Database BC (14-0)" -DatabaseServer navdevvm-0127 -DatabaseInstance BCDEMO
+    Mount-NAVTenant -ServerInstance BC150 -DatabaseName "Demo Database BC (14-0) -DatabaseServer .\BCDEMO -Tenant tenant1 -AllowAppDatabaseWrite
     ```
+    
+    > [!IMPORTANT]
+    > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you will get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
+    
+    > [!NOTE]  
+    > For upgrade, we recommend that you use the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
 
-2. Synchronize the tenant.
+2. Synchronize the tenant to the system objects.
   
     Use the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
 
@@ -206,19 +220,33 @@ If you have a multitenant deployment, perform these steps for each tenant.
     
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-    At this stage, the tenant state is **OperationalDataUpgradePending**. Changes to system are 
+    At this stage, the tenant state is **Operational**. Changes to system are 
 
-3. Synchronize the tenant with the base application extension (Base Application).
+3. Synchronize the tenant to the base application extension (Base Application).
 
     Use the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
     ```
-    Sync-NAVApp -ServerInstance BC150 -Name "Base Application" -Version 15.0.34982.0 -tenant default
+    Sync-NAVApp -ServerInstance BC150 -Name "Base Application" -Version 14.5.0.0 -tenant default
     ```
 
     With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID.
 
-4. Synchronize the Microsoft and 3rd-party extensions that were previously installed before the upgrade with the tenant.
+4. Install custom base application extension on the tenant.
+
+    To install the extension, you use the [Install-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
+
+    ```
+    Install-NAVApp -ServerInstance BC150 -Name "Base Application" -Version 14.5.0.0
+    ```
+
+    At this point, the base application is upgraded to the version 15 platform and is operational. You should be able to open the application in the client.
+
+5. Synchronize and install the test library extension, similar to base application.
+
+
+
+1. Synchronize the Microsoft and 3rd-party extensions that were previously installed before the upgrade with the tenant.
 
     For each extension, do the following:
 
@@ -226,8 +254,11 @@ If you have a multitenant deployment, perform these steps for each tenant.
     Sync-NAVApp -ServerInstance BC150 -Tenant default -Name My14Extension -Version 1.0.0.4
     ```
 
+## Task 8: Configure the version 15 server instance for migrating Microsoft and 3rd party extensions
 
-2. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. <!-- skip this step for now in single tenant-->
+Microsoft With this task, you configure the version 15 server to automatically modify the manifest of existing extensions to include a dependency on the base application and test library extension.  automatically install the base application <!--and test application--> on tenants after the data upgrade. the use the new base application and system application extensionsSynchronize and install base application and test application on the tenant
+
+1. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. <!-- skip this step for now in single tenant-->
 
     ```
     Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"}]'
@@ -238,10 +269,11 @@ If you have a multitenant deployment, perform these steps for each tenant.
     ```-->
     This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application--> on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
     <!-- maybe not required-->
+2. Restart the server instance.
 
-## Task 8: Upgrade the tenant data
+## Task 8: Publish, Sync and install Microsoft and third party extensions
 
-Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions. This step will also automatically install the **System Application** and **Base Application** extensions on the tenant.
+<!--Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions. This step will also automatically install the **System Application** and **Base Application** extensions on the tenant.
 
 1. To run the data upgrade, use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
@@ -261,7 +293,7 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
 
     You will see that the custom base application has been installed on the tenant.
 
-The application should now be accessible from the client.
+The application should now be accessible from the client.-->
 
 ## Task 9: Install Microsoft and 3rd party extensions on the tenants
 
