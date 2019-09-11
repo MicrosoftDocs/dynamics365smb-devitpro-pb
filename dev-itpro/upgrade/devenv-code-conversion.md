@@ -53,7 +53,7 @@ The Export-NAVApplicationObject cmdlet will export all objects to a single .txt 
     Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app-part1.txt" -Filter 'Id=1..1999999999' ID=1..129999
     ```
 
-    <!-- For spearte test library
+    <!-- For separate test library
     Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app-part1.txt" -Filter 'Id=1..129999'
 
     Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app-part2.txt" -Filter 'Id=1400000..1999999999'
@@ -131,19 +131,24 @@ In version 15.0 CodeViewer is no longer used, but it is required because of refe
 
 ## Task 7: Create a new application database for development purposes
 
-To build your base application, you will create a new application database on the Business Central 15.0 platform. This will only be used during development.
+To build your base application, you will create a new application database on the Business Central version 15 platform. This will only be used during development.
 
-1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15 as an administrator.
 2. Run the New-NAVApplicationDatabase cmdlet to create the database. For example:
 
     ```
-    New-NAVApplicationDatabase -DatabaseServer .\BCDEMO -DatabaseName MyBC15DevDatabase
+    New-NAVApplicationDatabase -DatabaseServer .\BCDEMO -DatabaseName MyBC15DBforupgrade
     ```
 
 3. Connect your [!INCLUDE[server](../developer/includes/server.md)] instance to the database. See [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).
 
     ```
-    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName DatabaseName -KeyValue "BC15DBForUpgrade2"
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName DatabaseName -KeyValue "MyBC15DBforupgrade"
+    ```
+4. Restart the server instance.
+
+    ```
+    Restart-NAVServerInstance -ServerInstance BC150
     ```
 
 ## Task 8: Create and set up an AL project in Visual Studio Code
@@ -224,8 +229,10 @@ Open your `settings.json` file in the project (or global settings if you prefer 
 ## Task 10: Compile your project in Visual Studio Code
 The AL compiler is more strict than the C/SIDE compiler and will issue errors for constructs that are not valid. We recommend that you fix the errors in the C/AL solution and re-export, iterating over steps 1-4 above until all the compilation errors are fixed.
 
+
 Currently, there are known issues which you might have to address.
- 
+
+<!--
 1. Fixing errors in AzureADUserManagement.Codeunit.al, FlowSelectorTemplate.Page.al, and FlowSelector.Page.al.
 
     To fix these errors, comment out the code that errors, as shown: 
@@ -264,7 +271,8 @@ Currently, there are known issues which you might have to address.
             end;
     
             ```
-        - FlowSelectorTemplate.Page.al
+-->
+1. FlowSelectorTemplate.Page.al
     
             ```   
             usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
@@ -285,7 +293,8 @@ Currently, there are known issues which you might have to address.
             end;
             ```   
             ```
-        - FlowSelector.Page.al
+
+2. FlowSelector.Page.al
     
             ```   
                 group(Control3)
@@ -309,13 +318,22 @@ Currently, there are known issues which you might have to address.
                             AddInReady := true; */
                         end;
             ```  
-    
-        - PowerBIServiceMgt.Codeunit.al (ImportReportRequest)
-        - Debugger objects
-        - SessionList
+2. Delete debugger objects:
 
-        - For test XmlTextReader LibraryVerifyXMLSchema.Codeunit.al
-        After you fix these issues, build tha project again.    
+    - Debugger.Page.al
+    - DebuggerBreakpointCondition.Page.al
+    - DebuggerBreakpointList.Page.al
+    - DebuggerCallstackFactBox.Page.al
+    - DebuggerCodeViewer.Page.al
+    - DebuggerManagement.Codeunit.al
+    - DebuggerVariableList.Page.al
+    - DebuggerWatchValueFactBox.Page.al
+    - SessionList.Page.al
+    - ChangeGlobalDimensions.Codeunit.al (sessionlist missing)
+
+3. PowerBIServiceMgt.Codeunit.al (ImportReportRequest)
+
+ 
 <!--
    2. CodeViewer related errors.
 
@@ -336,9 +354,37 @@ Currently, there are known issues which you might have to address.
         ```
 -->
 <!--
+
+## Task 11: Create an extensions for your test libary
+If solution will use Microsoft (1st party) extensions, you will have to convert the test toolkit libraries and test runner code units to AL because these extensions have a dependency on the test toolkit. The process is similar to what you did to convert your custom base application to AL.
+
+1. Create a project the same way as you did for the base application, Task 8, steps 1-5.
+2. Modify the app.json to include a dependency on your custom  base application extension 
+
+    ```
+      "dependencies": [
+        {
+          "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+          "publisher": "Microsoft",
+          "name": "Base Application",
+          "version": "15.0.0.0"
+        }
+      ]
+    ```
+3. Copy all of the AL files for the test library that your generated in Task 5 to the root folder of your test project.
+
+4. Open the **dotnet.al** file for the project, and make the following changes:
+
+    - Delete all instances of `Version = '14.0.0.0';` for **Microsoft.Dynamics.Nav** assembly declarations.
+5. Build the project.
+
+    There is a known issue with the XmlTextReader reference in LibraryVerifyXMLSchema.Codeunit.al
+ 
+
+
 ## 8. Convert the test toolkit library and test runner codeunits to AL extension
 
-If solution will use Microsoft (1st party) extensions, you will have to convert the test toolkit libraries and test runner code units to AL because these extensions have a dependency on the test toolkit. The process is similar to what you did to convert your custom base application to AL.
+
 
 <!--1. Create a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.
 
@@ -371,8 +417,8 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
         {
             "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
             "publisher": "Microsoft",
-            "name": "BaseApp",
-            "version": "15.0.34982.0"
+            "name": "Base Application",
+            "version": "15.0.0.0"
         }
         ],
         ```
@@ -384,7 +430,7 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
     Had to modify or remove LibraryAzureADUserMgmt.Codeunit.al, LibraryVerifyXMLSchema.Codeunit, LibraryVerifyXML.Codeunit.al, and LibraryLowerPermissions.Codeunit.al
 -->
 ## Task 11: Publish your project
-When your converted solutions compile to an app, you can deploy and run it. You can either create and publish to your own database, or use the recently release Docker AL Preview image. If you are performaing a technical upgrade from version 14.0 to version 15.0, return to the technical upgrade step where you left off.
+When your converted solutions compile to an app, you can deploy and run it. You can either create and publish to your own database, or use the recently release Docker AL Preview image. If you are performing a technical upgrade from version 14.0 to version 15.0, return to the technical upgrade step where you left off.
 
 <!--
 ### Publishing the AL solution to an empty database 
