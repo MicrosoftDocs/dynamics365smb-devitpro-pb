@@ -242,7 +242,9 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
     At this point, the base application is upgraded to the version 15 platform and is operational. You should be able to open the application in the client.
 
-5. Synchronize and install the test library extension, similar to base application.
+5. Synchronize and install the test library extension, using the same cmdlets, similar to what you did for the base application.
+
+base application.
 
 
 
@@ -256,7 +258,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 ## Task 8: Configure the version 15 server instance for migrating Microsoft and 3rd party extensions
 
-Microsoft With this task, you configure the version 15 server to automatically modify the manifest of existing extensions to include a dependency on the base application and test library extension.  automatically install the base application <!--and test application--> on tenants after the data upgrade. the use the new base application and system application extensionsSynchronize and install base application and test application on the tenant
+With this task, you configure the version 15 server to automatically modify the manifest of existing extensions to include a dependency on the base application and test library extension.  automatically install the base application <!--and test application--> on tenants after the data upgrade. the use the new base application and system application extensionsSynchronize and install base application and test application on the tenant
 
 1. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. <!-- skip this step for now in single tenant-->
 
