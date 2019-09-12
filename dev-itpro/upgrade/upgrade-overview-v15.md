@@ -23,7 +23,7 @@ ROBOTS: NOINDEX
 
 Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to the latest cumulative update of [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
 
-## Full upgrade of an unmodified [!INCLUDE[prodlong](../developer/includes/prodlong.md)] application
+## Full upgrade of an out-of-the-box [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application
 
 Use this scenario if you have a Business Central application that does not include any code customization, other than Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central version 15 base application extension and the system application. The result will be a fully upgraded application and platform on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2.
 
@@ -535,7 +535,7 @@ DebuggerCodeViewer.Page.al(14,36): error AL0417: Control add-in '"Microsoft.Dyna
 
 ### Clean steps
 -->
-## Technical upgrade of a code-customized application
+## Technical upgrade of a custom application
 
 Use this process when you have a customized Business Central application that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 
