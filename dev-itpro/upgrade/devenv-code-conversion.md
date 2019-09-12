@@ -186,7 +186,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
     This step is optional, but recommended. For more information, see [Optimize Visual Studio Code for Editing and Building](devenv-optimize-visual-studio-code.md).
 
 3. From the **Command Palette**, select the **AL Go!** command to create a new project.
-4. Create a **.alpackages** folder in the project and then copy the system (platform) symbols extension (System.app) to the folder.
+4. Create a **.alpackages** folder in the root folder of the project and then copy the system (platform) symbols extension (System.app) to the folder.
 
     The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
 5. Remove the **HelloWorld.al** sample file from the project.
