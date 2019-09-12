@@ -188,10 +188,15 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
 5. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
 
-    Change `"al.assemblyProbingPaths": ["./.netpackages"]` to point to all the folders that contain .NET assemblies that are used by your project. For example:
+    Change `"al.assemblyProbingPaths": ["./.netpackages"]` to point to all the folders that contain .NET assemblies that are used by your project. Here is an example that contains the most typical paths:
 
         ```
-        "al.assemblyProbingPaths": ["./.netpackages","C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins","C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client",C:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00","C:/windows/assembly/GAC/ADODB","C:/Windows/Microsoft.NET/assembly",]
+        "al.assemblyProbingPaths": [
+		"C:\\Program Files\\Microsoft Dynamics 365 Business Central\\150",
+		"C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\150\\RoleTailored Client",
+		"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2",
+        "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell\\3.0"
+	    ]
         ```
     For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
