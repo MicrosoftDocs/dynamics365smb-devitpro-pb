@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 06/24/2019
+ms.date: 09/12/2019
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -33,7 +33,7 @@ When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.
 
 As a [!INCLUDE[prodshort](includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, and you are the first line of support. You can customize the support experience, and you have access to information that can help you troubleshoot any issues that your customers report.  
 
-For more information, see [Technical Support](technical-support.md).  
+For more information, see [Configuring Technical Support](technical-support.md).  
 
 ### Get started with the "Ready to Go" program
 
@@ -68,7 +68,6 @@ The Dynamics 365 blog is where Microsoft publishes announcements, updates, and t
 > |---------|---------|---------|
 > |Business Central on the Dynamics 365 blog (Users) |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/users/product/business-central/)|Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. </br>Some earlier blog posts are available on the [Community site](https://community.dynamics.com/business/b/financials).|
 > |Business Central on the Dynamics 365 blog (ITpro) |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some earlier blog posts are available on the [Community site](https://community.dynamics.com/business/b/businesscentraldevitpro).|
-
 
 ### Business Central communities
 

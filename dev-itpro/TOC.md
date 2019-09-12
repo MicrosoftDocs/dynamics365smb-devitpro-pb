@@ -62,7 +62,6 @@
 <!-- end deployment -->
 <!-- administration-->
 # Administration
-<!--# [Administration](administration/administration.md)-->
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
 ### Administration Center
@@ -75,6 +74,7 @@
 #### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 #### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 ## On-Premises
+### [Administration of Business Central On-Premises](administration/administration.md)
 ### Intelligent Insights
 #### [Connect to the Intelligent Cloud from On-Premises](administration/about-intelligent-edge.md)
 #### [Replicating On-Premises Data](administration/data-replication-intelligent-cloud.md)
