@@ -179,14 +179,19 @@ To build your base application, you will create a new application database on th
 
 In this task, you will create a AL project in Visual Studio code that you will use for building your custom base application extension based on your converted C/AL application.
 
-1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 15.0 as outlined in [Getting Started with AL](../developer/devenv-get-started.md).  
-2. Use the **AL Go!** command to create a new project.
+1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 15.0 as outlined in [Getting Started with AL](../developer/devenv-get-started.md).
+
+2. Configure Visual Studio Code for optimal performance with AL projects.
+
+    This step is optional, but recommended. For more information, see [Optimize Visual Studio Code for Editing and Building](devenv-optimize-visual-studio-code.md).
+
+3. From the **Command Palette**, select the **AL Go!** command to create a new project.
 4. Create a **.alpackages** folder in the project and then copy the system (platform) symbols extension (System.app) to the folder.
 
     The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
-4. Remove the HelloWorld.al sample file from the project.
+5. Remove the **HelloWorld.al** sample file from the project.
 
-5. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
+6. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
 
     Change `"al.assemblyProbingPaths": ["./.netpackages"]` to point to all the folders that contain .NET assemblies that are used by your project. Here is an example that contains the most typical paths:
 
@@ -203,7 +208,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
     > [!NOTE]  
     > Adding assemblies to the folders in your assembly probing paths is not automatically detected by the compiler. You must restart Visual Studio Code for the changes to be detected.
 
-6. Modify the `app.json` for the project as follows:
+7. Modify the `app.json` for the project as follows:
 
     - **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:
 
@@ -219,9 +224,9 @@ In this task, you will create a AL project in Visual Studio code that you will u
     - Change the `idRange` to include all the IDs used by your base application (or leave blank).
     - Delete the values in the `dependencies` parameter.
 
-6. Copy all of the AL files generated in the previous step to the root folder of your project.
+8. Copy all of the AL files generated in the previous step to the root folder of your project.
 
-7. Open the **dotnet.al** file for the project, and make the following changes:
+9. Open the **dotnet.al** file for the project, and make the following changes:
 
     - Delete all instances of `Version = '14.0.0.0';` for **Microsoft.Dynamics.Nav** assembly declarations.
     - For the `DocumentFormat.OpenXml` assembly declaration, remove the `version` and `culture` keys and set `PublicKeyToken = '8fb06cb64d019a17'`.
@@ -232,7 +237,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
             PublicKeyToken = '8fb06cb64d019a17';
             ...
         ```
-
+10. 
 <!-- create article and link-->
 ## Task 9: Improve Visual Studio Code editing experience performance (optional)
 
