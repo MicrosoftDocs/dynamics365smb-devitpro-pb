@@ -3,7 +3,7 @@ title: "ObsoleteState Property"
 description: "Description of the ObsoleteState property"
 author: jswymer
 ms.custom: na
-ms.date: 08/29/2019
+ms.date: 09/13/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ ms.author: jswymer
 ---
 
 # ObsoleteState Property
-Marks whether the object or element is or will become obsolete (deprecated).   
+Marks whether the object or element is or will become obsolete.   
 
 ## Applies To  
 
