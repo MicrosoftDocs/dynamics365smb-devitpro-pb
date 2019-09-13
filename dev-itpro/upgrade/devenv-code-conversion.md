@@ -138,13 +138,13 @@ With C/AL exported to the new TXT format, you now convert the code to AL using t
         ``` 
 
 
-## Task 6:  Copy CodeViewer add-in to the [!INCLUDE[server](../developer/includes/server.md)] version 15.0 installation
+## Task 6: Copy CodeViewer add-in to the version 15.0 server installation
 
-Copy the **CodeViewer** folder from the **Add-ins** folder of the Business Central 140 RoleTailored client installation (C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client\Add-ins) to the **Add-ins** folder of the Business Central 150 Server installation (C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins). Replace the existing folder and files, if any.
+Copy the **CodeViewer** folder from the **Add-ins** folder of the Business Central version 14 RoleTailored client installation (C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client\Add-ins) to the **Add-ins** folder of the Business Central 150 Server installation (C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins). Replace the existing folder and files, if any.
  
 In version 15.0 CodeViewer is no longer used, but it is required because of references thar exist in the converted application. If you omit this step, you might get compilation errors.
 
-## Task 7: Create a new application database for development purposes
+## Task 7: Create a new application database for development
 
 To build your base application, you will create a new application database on the Business Central version 15 platform. This will only be used during development.
 
@@ -175,7 +175,7 @@ To build your base application, you will create a new application database on th
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
 -->
-## Task 8: Create and build an AL project for custom base application in Visual Studio Code
+## Task 8: Create and build AL project for custom base application
 
 In this task, you will create a AL project in Visual Studio code that you will use for building your custom base application extension based on your converted C/AL application.
 
@@ -429,7 +429,7 @@ If you converted the test library form C/AL to AL, you will now create and build
 
 ## Next Steps
 
-If you are performing a technical upgrade from version 14.0 to version 15.0, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15#Preparedb) where you left off.
+If you are performing a technical upgrade from version 14.0 to version 15.0, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15.md#Preparedb) where you left off.
 
 <!--
 ## Task 11: Publish your project
