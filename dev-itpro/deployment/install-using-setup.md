@@ -1,7 +1,8 @@
+
 ---
 title: "Install Business Central Using Setup"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 08/07/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,6 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: e4bd0a48-9e21-44e3-8a5d-858f02af5206
 caps.latest.revision: 24
+ms.author: jswymer
 ---
 # Installing Business Central Using Setup
 You use [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the different components that comprise a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production, demonstration, or development environment. For a list of components, see [Components and Topology](product-and-architecture-overview.md).   
@@ -27,7 +29,7 @@ There are some components that require other software in order run, for example 
 
 ## Before you run Setup
 
-1. Plan you deployment and identify the components that you want to install.
+1. Plan your deployment and identify the components that you want to install.
 2. Verify that the target computer where you will install components meets the hardware and software requirements for the components that you want to install. For more information, see [System Requirements](system-requirement-business-central.md).
 3.  Make sure that you are an administrator on the computer where you run Setup.
 

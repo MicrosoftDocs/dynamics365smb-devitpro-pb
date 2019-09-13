@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 Sets the key used to sort data in the source table for the XML item.  
   
 ## Applies To  
- XMLports  
+ Table elements in XMLports  
 
 ## Syntax
 ```
@@ -26,7 +26,9 @@ SourceTableView = SORTING(Code);
 ```
  
 ## Remarks  
- The **AssistButton** in the Value field for this property opens the **Table View** window that allows you to specify sort order and the key that is used to sort the table data. You can also place a filter on the table.  
+
+To sort a set of table fields in the table view, use the **sorting** keyword. To sort the records in ascending or descending order, use the **order** keyword.  And, to apply a set of filters in the table view, use the **where** keyword.
+
   
 ## See Also  
  [Properties](devenv-properties.md)

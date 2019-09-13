@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2019
+ms.date: 08/14/2019
 ms.author: edupont
 ---
 
@@ -436,3 +436,5 @@ You can build and preview your content in local to discover and fix problems ear
 [Visual Studio Code](https://code.visualstudio.com/)  
 [Atom](https://atom.io/)  
 [DocFx](https://dotnet.github.io/docfx/)  
+[Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
+[Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  

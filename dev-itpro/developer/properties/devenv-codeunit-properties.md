@@ -27,7 +27,7 @@ This topic lists properties that apply to the Codeunit object, variables, text c
 |[GlobalVarAccess Property](devenv-globalvaraccess-property.md)|<ul><li>Global Methods</li></ul>|
 |[HandlerFunctions Property](devenv-handlermethods-property.md)|<ul><li>Global Methods</li></ul>|
 |[ID Property](devenv-id-property.md)|<ul><li>Global Variables</li><li>Global Text Constants</li><li>Global Methods</li><li>AL Locals Variables</li><li>AL Locals Text Constants</li><li>AL Locals Parameters</li><li>AL Locals Return Values</li></ul>|
-|[IncludeInDataSet Property](devenv-includeindataset-property.md)|<ul><li>Global Variables</li></ul>|
+|[InDataSet Property](devenv-indataset-property.md)|<ul><li>Global Variables</li></ul>|
 |[IncludeSender Property](devenv-includesender-property.md)|<ul><li>Global Methods</li></ul>|
 |[Local Property](devenv-local-property.md)|<ul><li>Global Methods</li></ul>|
 |[MethodType Property \(Upgrade Codeunits\)](devenv-methodtype-property-upgrade-codeunits.md)|<ul><li>Global Methods</li></ul>|

@@ -3,7 +3,7 @@ title: "Getting started with Microsoft .NET Interoperability from AL"
 description: "Description of the process of referencing and using .NET types"
 author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 08/07/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,7 +48,14 @@ dotnet
 
 ```
 
-By default, the compiler only knows about the location of the `mscorlib` assembly. You can reference any compatible assembly by providing the compiler with a path to the assembly's containing folder. This can be achieved by adding the path to assembly's containing folder to the `"al.assemblyProbingPaths"` setting. <!-- For more information, see [](). (TODO: Add this to an article about settings)-->
+By default, the compiler only knows about the location of the `mscorlib` assembly. You can reference any compatible assembly by providing the compiler with a path to the assembly's containing folder. This can be achieved by adding the path to assembly's containing folder to the `"al.assemblyProbingPaths"` setting. Open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings** and specify the `al.assemblyProbingPaths` setting. For example:
+
+```
+"al.assemblyProbingPaths": [
+        "./.netpackages",
+        "C:/Program Files/Assemblies"
+    ]
+```
 
 > [!NOTE]  
 > Any update to an assembly's code is not automatically detected by the compiler. If an assembly has changed, then you must restart your development environment.

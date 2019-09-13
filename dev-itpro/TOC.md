@@ -32,6 +32,9 @@
 ## On-Premises
 ### [System requirements](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
+### Dynamics 365 Business Central On-Premises Updates
+#### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)
+#### [Dynamics 365 Business Central April'19 On-Premises Updates](deployment/update-versions-14.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -92,8 +95,8 @@
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
-### Monitoring Server Events
-#### [Monitoring Server Events Overview](administration/monitor-server-events.md)
+#### Monitoring Server Events
+##### [Monitoring Server Events Overview](administration/monitor-server-events.md)
 ##### [Trace Events List](administration/server-trace-events.md)
 ##### [Admin and Operational Events List](administration/server-events.md)
 ##### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)
@@ -160,6 +163,7 @@
 ### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
+### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
 ### [Generating Delta Files](developer/devenv-generating-delta-files.md)
@@ -193,6 +197,7 @@
 ### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
+### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ## Pages
 ### [Pages Overview](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
@@ -223,6 +228,7 @@
 #### [Fixed Control](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
 #### [Field Groups](developer/devenv-field-groups.md)
 #### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
+### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### Actions
 #### [Actions in AL](developer/devenv-actions-overview.md)
 #### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
@@ -240,6 +246,7 @@
 ### [Testing a Report](developer/devenv-testing-reports.md)
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
+### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ## XMLports
 ### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ### [XMLport Object](developer/devenv-xmlport-object.md)
@@ -511,6 +518,7 @@
 #### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
 ### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
 #### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
+### [Installing a Cumulative Update](upgrade/upgrading-cumulative-update.md)
 ## Before You Upgrade
 ### [Important Information and Considerations for Before Upgrading](upgrade/Upgrade-Considerations.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
