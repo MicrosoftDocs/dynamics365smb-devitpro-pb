@@ -1,5 +1,5 @@
 ---
-title: "Publishing a Code Customization"
+title: "Publishing a Code-Customized Base Application"
 description: "Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem"
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Publishing a Code Customization for Business Central On-Prem
+# Publishing a Code-Customized Base Application for Business Central On-Prem
 This topic decribes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem and publish the code-customized Base Application to the local server.
 
 ## Prerequisites
