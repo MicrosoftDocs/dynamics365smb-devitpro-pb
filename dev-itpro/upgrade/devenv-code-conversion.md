@@ -185,7 +185,9 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
     This step is optional, but recommended. For more information, see [Optimize Visual Studio Code for Editing and Building](devenv-optimize-visual-studio-code.md).
 
-3. From the **Command Palette**, select the **AL Go!** command to create a new project.
+3. In Visual Studio Code, from the **Command Palette**, select the **AL Go!** command to create a new project.
+
+    Specify the path for the project, and set the **Target Platform** to **4.0 Business Central 2019 release wave 2**. When prompted to select your server, choose <!--Microsoft cloud sandbox or--> **Your own server**.
 4. Create a **.alpackages** folder in the root folder of the project and then copy the system (platform) symbols extension (System.app) to the folder.
 
     The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
@@ -237,26 +239,72 @@ In this task, you will create a AL project in Visual Studio code that you will u
             PublicKeyToken = '8fb06cb64d019a17';
             ...
         ```
-10. 
-<!-- create article and link-->
-## Task 9: Improve Visual Studio Code editing experience performance (optional)
+10. Press Ctrl+Shift+B to build and compile your project.
 
-Visual Studio Code is built to handle many smaller, dependent projects, and not one large project, however, as the base application is not yet split into modules or components that allows managing the code in smaller projects, we recommend the following performance optimizations.
+    The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again. The following are issues that you might encounter:
+    1. FlowSelectorTemplate.Page.al
+        
+        ```   
+        usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
+        {
+        ApplicationArea = Basic,Suite;
+    
+        trigger ControlAddInReady()
+        begin
+        /*                                 CurrPage.FlowAddin.Initialize(
+            FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
+            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
+            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
+            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
+    
+        LoadTemplates;
+    
+        AddInReady := true; */
+        end;
+        ```   
+    
+    2. FlowSelector.Page.al
+        
+        ```   
+            group(Control3)
+            {
+                ShowCaption = false;
+                Visible = IsUserReadyForFlow AND NOT IsErrorMessageVisible;
+                usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
+                {
+                    ApplicationArea = Basic,Suite;
+    
+                    trigger ControlAddInReady()
+                    begin
+                    /*     CurrPage.FlowAddin.Initialize(
+                            FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
+                            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
+                            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
+                            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
+    
+                        LoadFlows;
+    
+                        AddInReady := true; */
+                    end;
+        ```  
+    2. Delete debugger objects:
+    
+        - Debugger.Page.al
+        - DebuggerBreakpointCondition.Page.al
+        - DebuggerBreakpointList.Page.al
+        - DebuggerCallstackFactBox.Page.al
+        - DebuggerCodeViewer.Page.al
+        - DebuggerManagement.Codeunit.al
+        - DebuggerVariableList.Page.al
+        - DebuggerWatchValueFactBox.Page.al
+        - SessionList.Page.al
+        - ChangeGlobalDimensions.Codeunit.al (sessionlist missing)
+    
+    3. PowerBIServiceMgt.Codeunit.al (ImportReportRequest)
 
-Open your `settings.json` file in the project (or global settings if you prefer that). Set:
 
-- `"al.enableCodeAnalysis": false` to remove code analysis, read more here [Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md).
-
-- `"al.enableCodeActions": false`
-
-- `"editor.codeLens": false` to remove code lens in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/Docs/editor/editingevolved#_reference-information).
-
-- Add the build folder to the exclusion list for [Windows Defender](https://support.microsoft.com/en-us/help/4028485/windows-10-add-an-exclusion-to-windows-security).
-
-## Task 10: Compile your project in Visual Studio Code
-The AL compiler is more strict than the C/SIDE compiler and will issue errors for constructs that are not valid. We recommend that you fix the errors in the C/AL solution and re-export, iterating over steps 1-4 above until all the compilation errors are fixed.
-
-Fix any errors that occur. The following are issues that you might encounter:
+<!--
+The AL compiler is more strict than the C/SIDE compiler and will issue errors for constructs that are not valid. We recommend that you fix the errors in the C/AL solution and re-export, iterating over steps 1-4 above until all the compilation errors are fixed.-->
 
 <!--
 1. Fixing errors in AzureADUserManagement.Codeunit.al, FlowSelectorTemplate.Page.al, and FlowSelector.Page.al.
@@ -298,65 +346,6 @@ Fix any errors that occur. The following are issues that you might encounter:
     
             ```
 -->
-1. FlowSelectorTemplate.Page.al
-    
-    ```   
-    usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
-    {
-    ApplicationArea = Basic,Suite;
-
-    trigger ControlAddInReady()
-    begin
-    /*                                 CurrPage.FlowAddin.Initialize(
-        FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
-        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
-
-    LoadTemplates;
-
-    AddInReady := true; */
-    end;
-    ```   
-
-2. FlowSelector.Page.al
-    
-    ```   
-        group(Control3)
-        {
-            ShowCaption = false;
-            Visible = IsUserReadyForFlow AND NOT IsErrorMessageVisible;
-            usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
-            {
-                ApplicationArea = Basic,Suite;
-
-                trigger ControlAddInReady()
-                begin
-                /*     CurrPage.FlowAddin.Initialize(
-                        FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
-                        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-                        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-                        AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
-
-                    LoadFlows;
-
-                    AddInReady := true; */
-                end;
-    ```  
-2. Delete debugger objects:
-
-    - Debugger.Page.al
-    - DebuggerBreakpointCondition.Page.al
-    - DebuggerBreakpointList.Page.al
-    - DebuggerCallstackFactBox.Page.al
-    - DebuggerCodeViewer.Page.al
-    - DebuggerManagement.Codeunit.al
-    - DebuggerVariableList.Page.al
-    - DebuggerWatchValueFactBox.Page.al
-    - SessionList.Page.al
-    - ChangeGlobalDimensions.Codeunit.al (sessionlist missing)
-
-3. PowerBIServiceMgt.Codeunit.al (ImportReportRequest)
 
  
 <!--
@@ -407,6 +396,9 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
  
 
 -->
+
+When all errors are fixed, the custom base application package (.app) will be created.
+
 ## Task 8: Convert the test toolkit library and test runner codeunits to AL extension
 
 If you converted the test library form C/AL to AL, you will now create and build a project for test library, similar to what you did for the base application.

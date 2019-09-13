@@ -111,7 +111,7 @@ This task runs a technical upgrade on the application database to convert it fro
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-## Task 5: Configure the version server instance 
+## Task 5: Configure the version 15 server instance
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade, and can be reverted after you complete the upgrade.
 
@@ -123,6 +123,7 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     
     In a single tenant deployment, this will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
+<!--
 2. Configure the server instance to synchronize only the system application objects with tenants.
 
     This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`.
@@ -132,12 +133,13 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     ```
 
     This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains the old metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
-
-4. Temporarily disable task scheduler on the server instance for purposes of upgrade.
+-->
+3. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```
     Set-NavServerConfiguration -ServerInstance BC150 -KeyName "EnableTaskScheduler" -KeyValue false
     ```
+    Be sure to re-enable this after upgrade if needed.
 5. Restart the server instance.
 
     ```
@@ -170,31 +172,24 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
-2. Publish the custom base application extension that you created.
+2. Publish the custom base application extension that you created in **Task 2**.
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\MyDocuments\AL\CustomBaseApplication\Microsoft_BaseApp_14.5.0.0.app"
     ```
-3. Publish the test library extension that you created.
+
+3. Publish the test library extension if you created one in **Task 2**.
 
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\MyDocuments\AL\testlibarary\testlibrary_14.5.0.0.app"
     ```
 
 
-4. Publish the Microsoft and 3rd party extensions.
-
-    Publish the Microsoft and 3rd party extensions that were published to the old application.
-
-    ```
-    Publish-NAVApp -ServerInstance BC150 -Path "C:\MyDocuments\AL\My14Extension\Default publisher_My14Extension_1.0.0.4.app" -SkipVerification
-    ```
-
 ## Task 7: Synchronize the tenant and install the base and test library application
 
-In this task, you update the schema of tenant database schema with schema of changes in system objects and application objects database. This task will transfer ownweship .
+In this task, you update the schema of tenant database schema with schema of changes in system objects and application objects. In this step, you will synchronize the tenant to the to your custom base application extension and test libary extension (if any). With this operation, the extensions will take ownership of the tables in the SQL database.
 
-If you have a multitenant deployment, perform these steps for each tenant.
+If you have a multitenant deployment, perform these steps for each tenant (replacing the name `Default` with the appropriate tenant ID).
 
 1. (Multitenant only) Mount the tenant to the version 15 server instance.
 
@@ -242,40 +237,28 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
     At this point, the base application is upgraded to the version 15 platform and is operational. You should be able to open the application in the client.
 
-5. Synchronize and install the test library extension, using the same cmdlets, similar to what you did for the base application.
+5. Synchronize and install the test library extension, similar to what you did for the custom base application in steps 3 and 4.
 
-base application.
-
-
-
-1. Synchronize the Microsoft and 3rd-party extensions that were previously installed before the upgrade with the tenant.
-
-    For each extension, do the following:
-
-    ```
-    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name My14Extension -Version 1.0.0.4
-    ```
 
 ## Task 8: Configure the version 15 server instance for migrating Microsoft and 3rd party extensions
 
-With this task, you configure the version 15 server to automatically modify the manifest of existing extensions to include a dependency on the base application and test library extension.  automatically install the base application <!--and test application--> on tenants after the data upgrade. the use the new base application and system application extensionsSynchronize and install base application and test application on the tenant
+With this task, you configure the version 15 server so that the Microsoft and 3rd party extensions that were installed in the version 14 deployment can be reinstalled. You will do this by configuring the `DestinationAppsForMigration` parameter of the serve instance with information about the custom base application and test library. Specifically, you need the appId, name, and publisher assigned to these extensions. With the `DestinationAppsForMigration` parameter set, when you publish the Microsoft and 3rd party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application and test library extension, allowing them to be published.
 
-1. Configure the server instance to migrate 3rd party extensions to the use the new base application and system application extensions. <!-- skip this step for now in single tenant-->
+1. Get the appId, name, and publisher of the custom base application and test library extensions.
 
     ```
-    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"}]'
+    Get-NAVAppInfo BC150
     ```
-    <!-- with test
+2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the custom base application and test library (is used). For example:<!-- skip this step for now in single tenant-->
+
     ```
-    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"7914d8cb-58b7-4fda-8261-8b4f217c184d", "name":"MyCustTestExt13", "publisher": "Default publisher"}]'
-    ```-->
-    This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application--> on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
-    <!-- maybe not required-->
-2. Restart the server instance.
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"7914d8cb-58b7-4fda-8261-8b4f217c184d", "name":"TestLibrary", "publisher": "Default publisher"}]'
+    ```
+3. Restart the server instance.
 
-## Task 8: Publish, Sync and install Microsoft and third party extensions
+<!--## Task 8: Publish, Sync and install Microsoft and third party extensions
 
-<!--Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions. This step will also automatically install the **System Application** and **Base Application** extensions on the tenant.
+Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions. This step will also automatically install the **System Application** and **Base Application** extensions on the tenant.
 
 1. To run the data upgrade, use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
@@ -297,15 +280,33 @@ With this task, you configure the version 15 server to automatically modify the 
 
 The application should now be accessible from the client.-->
 
-## Task 9: Install Microsoft and 3rd party extensions on the tenants
+## Task 9: Publish, synchronize, and install Microsoft and 3rd party extensions on the tenants
 
 Now, you can install the Microsoft and 3rd-party extensions that were installed on the tenant before the upgrade.
 
-For each extension, run the Install-NAVApp cmdlet:
+1. Publish the old extension versions.
 
-```
-Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
-```
+    ```
+    Publish-NAVApp -ServerInstance BC150 -Path "C:\14.X\DVD\Extensions\SalesAndInventoryForecast.app"
+    ```
+
+    You only need to do this once.
+
+2. Synchronize the extension.
+
+    ```
+    Sync-NAVApp -ServerInstance BC150 -Name "Sales and Inventory Forecast" -Version 14.5.35930.0 -tenant default
+    ```
+3. Install the extension:
+
+    ```
+    Install-NAVApp -ServerInstance BC150 -Name "Sales and Inventory Forecast" -Version 14.5.35930.0 -tenant default
+    ```
+Now, your application is fully upgraded to the version 15 platform.
+
+## Task 10: Post-upgrade
+1. Enable task scheduler on the server instance.
+2. (Multitnenat only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
 
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
