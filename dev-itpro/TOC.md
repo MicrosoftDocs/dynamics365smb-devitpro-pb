@@ -159,6 +159,7 @@
 ### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
 ### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
 ### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
+### [Optimizing Visual Studio Code for AL Development](developer/devenv-optimize-visual-studio-code.md)
 ## Compiling, Publishing, and Debugging
 ### [Compilation Scope Overview](developer/devenv-compilation-scope-overview.md)
 ### [Debugging in AL](developer/devenv-debugging.md)
