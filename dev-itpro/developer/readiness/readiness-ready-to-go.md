@@ -49,8 +49,6 @@ Please find the coaches in your region and explore which "Ready to Go" offerings
 **The "Ready to Go" tooling** is designed to support you in the actual app development, including testing and learning scenarios. The platform provides you with various insider builds of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (cf. both current, upcoming and daily builds are available).  
 The platform also enables you to provide direct feedback to the Microsoft engineers who are working on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
 
-To get access to the available builds on the platform you need to follow the instructions stipulated in the documentation on [Getting you started with Add-on Apps](https://go.microsoft.com/fwlink/?linkid=869734) and [Getting you started with Connect Apps](https://go.microsoft.com/fwlink/?linkid=2005501).
-
 # [**Resources**](#tab/resources)
 ### Business Central on the Dynamics 365 Blog for partners
 
