@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# Getting You Started with Your Add-On App
+# Getting You Started with Building Apps
 
 ## Build your business on Dynamics 365 Business Central
 
