@@ -175,7 +175,7 @@ To build your base application, you will create a new application database on th
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
 -->
-## Task 8: Create AL project for custom base application in Visual Studio Code and build
+## Task 8: Create and build an AL project for custom base application in Visual Studio Code
 
 In this task, you will create a AL project in Visual Studio code that you will use for building your custom base application extension based on your converted C/AL application.
 
@@ -241,7 +241,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
         ```
 10. Press Ctrl+Shift+B to build and compile your project.
 
-    The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again. The following are issues that you might encounter:
+    The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again. The following are known issues that you might encounter:
     1. FlowSelectorTemplate.Page.al
         
         ```   
@@ -399,7 +399,7 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
 
 When all errors are fixed, the custom base application package (.app) will be created.
 
-## Task 8: Convert the test toolkit library and test runner codeunits to AL extension
+## Task 8: Create and build an AL project for the test library
 
 If you converted the test library form C/AL to AL, you will now create and build a project for test library, similar to what you did for the base application.
 
@@ -427,10 +427,14 @@ If you converted the test library form C/AL to AL, you will now create and build
 
     Currently, there is a know issue with the LibraryVerifyXMLSchema.Codeunit.al. You have to fix reference to `XmlTextReader`.  
 
-## Task 11: Publish your project
-When your converted solutions compile to an app, you can deploy and run it. You can either create and publish to your own database, or use the recently release Docker AL Preview image. If you are performing a technical upgrade from version 14.0 to version 15.0, return to the technical upgrade step where you left off.
+## Next Steps
+
+If you are performing a technical upgrade from version 14.0 to version 15.0, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15#Preparedb) where you left off.
 
 <!--
+## Task 11: Publish your project
+When your converted solutions compile to an app, you can deploy and run it. You can either create and publish to your own database, or use the recently release Docker AL Preview image. 
+
 ### Publishing the AL solution to an empty database 
 
 1. Use the [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet to create a new database.

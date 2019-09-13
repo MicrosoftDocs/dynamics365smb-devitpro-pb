@@ -52,7 +52,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 The first thing to do is convert your solution from C/AL to AL. For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
 
-## Task 3: Prepare the application database for technical upgrade
+## <a name="Preparedb"></a> Task 3: Prepare the application database for technical upgrade
 
 1. Make backup of the database.
 2. Make sure that you have access to the extension packages for all published extensions.
