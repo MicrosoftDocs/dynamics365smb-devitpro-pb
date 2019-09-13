@@ -24,7 +24,6 @@ The first thing to do is to download the Cumulative Update package that matches 
 3. On the computer where you downloaded cumulative update, extract files from all .zip files.
 
 The cumulative update includes files that are separated into the following folders:
-
 - APPLICATION folder
   
     Used for updating your application with the new or modified application objects that comprise the cumulative update.

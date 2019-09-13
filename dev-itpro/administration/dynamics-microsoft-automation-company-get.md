@@ -39,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and list of  **c
 
 Here is an example of the request.
 ```json
-GET https://api.businesscentral.dynamics.com/v1.0/api/microsoft/automation/beta/companies
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies
 ```
 
 **Response**

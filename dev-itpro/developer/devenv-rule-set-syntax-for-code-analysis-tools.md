@@ -88,4 +88,5 @@ The following example shows a project specific ruleset that extends a company wi
 ## See Also
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Using the Code Analysis Tools with the ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  
-[AL Development Environment](devenv-reference-overview.md)
+[AL Development Environment](devenv-reference-overview.md)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  

@@ -83,4 +83,5 @@ Changing the contents of the ruleset file will not be detected by the [!INCLUDE[
 [Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)    
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Development in AL](devenv-dev-overview.md)  
-[Debugging in AL](devenv-debugging.md)
+[Debugging in AL](devenv-debugging.md)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  

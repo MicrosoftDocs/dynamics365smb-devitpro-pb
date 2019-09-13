@@ -1,7 +1,7 @@
 ---
 title: "Method Attributes"
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 07/03/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,6 +32,9 @@ The following method attributes are available:
 - [Business Attribute](devenv-business-attribute.md)  
 - [EventSubscriber Attribute](devenv-eventsubscriber-attribute.md)  
 - [NonDebuggable Attribute](devenv-nondebuggable-attribute.md)  
+- [Scope Attribute](devenv-scope-attribute.md)
+- [InternalEvent Attribute](devenv-internal-attribute.md)  
+- [Obsolete Attribute](devenv-obsolete-attribute.md)
 
 <!--Links [UpgradePerCompany](devenv-upgradepercompany-attribute.md)
 
