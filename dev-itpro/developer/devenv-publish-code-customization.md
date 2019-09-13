@@ -3,7 +3,7 @@ title: "Publishing a Code Customization"
 description: "Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 09/05/2019
+ms.date: 09/13/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +24,9 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 ## To publish a code customization for Business Central on-prem
 
-1. Get the Base Application from the `/Applications/BaseApp/Source` folder on the DVD.
-2. Open the source folder in Visual Studio Code.
+1. Get the Base Application source from the `/Applications/BaseApp/Source` folder on the DVD.
+2. Unzip the BaseApplication.source.zip file and open the source folder in Visual Studio Code. This folder contains all of the base application objects and an `app.json` file with the settings enabled for `OnPrem`.
+3. Next, download symbols from the Base Application using **Ctrl+Shift+P** and then choose **Download Symbols**. 
 3. Customize the Base Application. In this example, we will just modify the text in the **Name** field on the **Customer Card** page to be **Strong**. So, in the `CustomerCard.Page.al` file, we specify the following extra line of code:
     ```
     ...
@@ -46,12 +47,12 @@ Make sure to have the following prerequisites installed to be able to follow the
                 }
     ...
     ```
-4. Use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings on the **Development** tab are set as follows: 
+4. Use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
     - **Allowed Extension Target Level** is set to **OnPrem**.
     - **Enable Developer Service Endpoint** checkbox is selected. 
     - **Enable Loading Application Symbol References at Server Startup** checkbox is selected.
-5. Now, you must configure your `launch.json` file settings to the local server and set the `target` to **OnPrem**. For more information, see [JSON Files](devenv-json-files.md).
-6. In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System Application in the project under <!-- needed?? -->
+5. Now, you must configure your `launch.json` file settings to the local server. For more information, see [JSON Files](devenv-json-files.md).
+6. In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System Application in the project under `.alpackages`.
     ```
     "dependencies": [
         {
@@ -63,8 +64,7 @@ Make sure to have the following prerequisites installed to be able to follow the
     ],
     ```
 
-7. Next, download symbols from the Base Application using **Ctrl+Shift+P** and then choose **Download Symbols**.
-8. Configure **User Settings** or **Workspace Settings** to include the following `"al.assemblyProbingPaths"` setting. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+8. Configure **User Settings** or **Workspace Settings** to include the following paths for the `"al.assemblyProbingPaths"` setting. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
     ```
     "al.assemblyProbingPaths": [
@@ -93,11 +93,11 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     `Get-NAVAppInfo -ServerInstance BC150 | %{Uninstall-NAVApp -Name $_.Name -ServerInstance BC150 -Force}`
 
-11. The next step is to first unpublish the application that we want to publish and all its dependencies.
+11. The next step is to first unpublish the application that we want to publish and all of its dependencies.
 
     `Unpublish-NavApp -Name "Base Application" -ServerInstance BC150`
 
-    This will probably give an error saying that there are dependencies on the Base Application. To solve this, you must uninstall all the applications with dependencies on the Base Application.
+    This can give an error regarding dependencies on the Base Application. To solve this, you must uninstall all the applications with dependencies on the Base Application.
 
     A script like the following is useful for unpublishing the app and all of its dependencies. For example, use Windows PowerShell ISE to create a new script with the following lines of code:
 
@@ -121,7 +121,7 @@ Make sure to have the following prerequisites installed to be able to follow the
     
     }
     ```
-12. Run the script you just created to handle the uninstall and unpublishing of the Base Application and dependencies.
+12. Run the script you created in step 11 to handle the uninstall and unpublishing of the Base Application and dependencies.
 13. Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
 
 14. Import a license with rights to publish the extension. For example:
