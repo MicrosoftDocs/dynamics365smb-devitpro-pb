@@ -73,10 +73,7 @@ Make sure to have the following prerequisites installed to be able to follow the
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell\\3.0"
     ],        
     ```
-9. For improved performance switch off CodeLens support, by adding the following setting also to the **User Settings** or **Workspace Settings** file:
-    ```
-    "editor.codeLens": false
-    ```
+9. For improved performance when working with a large project like the Base Application, see the [Optimize Visual Studio Code Editing and Building Performance](devenv-optimize-visual-studio-code.md) topic.
 
 10. If you now try to publish the extension from Visual Studio Code you will get the following error:
 
