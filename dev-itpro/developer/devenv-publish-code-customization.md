@@ -25,7 +25,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 ## To publish a code customization for Business Central on-prem
 
 1. Get the Base Application source from the `/Applications/BaseApp/Source` folder on the DVD.
-2. Unzip the BaseApplication.source.zip file and open the source folder in Visual Studio Code. This folder contains all of the base application objects and an `app.json` file with the settings enabled for `OnPrem`.
+2. Unzip the *BaseApplication.source.zip* file and open the source folder in Visual Studio Code. This folder contains all of the base application objects and an `app.json` file with the settings enabled for `OnPrem`.
 3. Next, download symbols from the Base Application using **Ctrl+Shift+P** and then choose **Download Symbols**. 
 3. Customize the Base Application. In this example, we will just modify the text in the **Name** field on the **Customer Card** page to be **Strong**. So, in the `CustomerCard.Page.al` file, we specify the following extra line of code:
     ```
