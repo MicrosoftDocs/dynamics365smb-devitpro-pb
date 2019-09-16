@@ -83,7 +83,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     The extensions are installed in the global scope. If you want to publish an extension from Visual Studio Code, within the developer scope, you will have to first uninstall and then unpublish the extensions from the command line.
 
-    Ideally, you should uninstall the application that you want to update and all its dependencies. To uninstall the Base Application use the following cmdlet:
+    Ideally, you should uninstall the application that you want to update and all its dependencies. To uninstall the Base Application use the following cmdlet:<br>
     `Uninstall-NavApp -Name "Base Application" -ServerInstance BC150 -Force`
 
     Use the `-Force` parameter to uninstall all dependencies.
@@ -123,11 +123,10 @@ Make sure to have the following prerequisites installed to be able to follow the
 12. Run the script you created in step 11 to handle the uninstall and unpublishing of the Base Application and dependencies.
 13. Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
 
-14. Import a license with rights to publish the extension. For example:
-
-```
-Import-NAVServerLicense -ServerInstance BC150 -LicenseFile "C:\Users\mylicense.flf"
-```
+14. Import a license with rights to publish the extension. For example:  
+    ```
+    Import-NAVServerLicense -ServerInstance BC150 -LicenseFile "C:\Users\mylicense.flf"
+    ```
 
 15. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
 
