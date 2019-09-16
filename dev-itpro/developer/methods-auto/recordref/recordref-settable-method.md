@@ -28,7 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Rec*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-The Record for which you want to specify a table.  
+The Record you want to refer to the table.  
 
 
 
