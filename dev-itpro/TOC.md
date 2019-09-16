@@ -12,7 +12,8 @@
 <!-- deployment-->
 # Deployment
 ## [Deployment Overview](deployment/deployment.md)
-## [System requirements](deployment/system-requirement-business-central.md)
+### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+### [System requirements Spring 2019](deployment/system-requirement-business-central.md)
 ## [Configuring the Help Experience](deployment/configure-help.md)
 ## Online
 <!-- ### Onboarding your customer -->
