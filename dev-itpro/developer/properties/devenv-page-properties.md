@@ -2,7 +2,6 @@
 title: "Page Properties"
 author: solsen
 ms.custom: na
-ms.date: 08/29/2019
 ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
