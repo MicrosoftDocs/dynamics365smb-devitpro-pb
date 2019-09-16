@@ -34,5 +34,5 @@ Specifies if the number sequence is company-specific. Default is true.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [NumberSequence Data Type](numbersequence-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

@@ -39,5 +39,5 @@ Returns the current value from number sequence.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [NumberSequence Data Type](numbersequence-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  
