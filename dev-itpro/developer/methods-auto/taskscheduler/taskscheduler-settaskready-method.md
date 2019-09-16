@@ -2,7 +2,7 @@
 title: "SetTaskReady Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/23/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 
 ## Syntax
 ```
-[Ok := ]  TaskScheduler.SetTaskReady(Task: Guid, [NotBefore: DateTime])
+[Ok := ]  TaskScheduler.SetTaskReady(Task: Guid [, NotBefore: DateTime])
 ```
 ## Parameters
 *Task*  

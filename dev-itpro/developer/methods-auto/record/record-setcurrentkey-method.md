@@ -2,7 +2,7 @@
 title: "SetCurrentKey Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/25/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Selects a key for a table.
 
 ## Syntax
 ```
-[Ok := ]  Record.SetCurrentKey(Field1: Any, [Field2: Any,...])
+[Ok := ]  Record.SetCurrentKey(Field1: Any [, Field2: Any,...])
 ```
 ## Parameters
 *Record*  
