@@ -295,6 +295,7 @@
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### [Number Sequences](developer/devenv-number-sequences.md)
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
 ### Objects
 #### [Table Object](developer/devenv-table-object.md)
