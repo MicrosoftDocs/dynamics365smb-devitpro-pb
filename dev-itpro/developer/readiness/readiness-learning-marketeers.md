@@ -10,9 +10,10 @@ ms.author: solsen
 ---
 
 # The “Ready to Go” Online Learning for Marketeers
-Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md).
+Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md). Use the tabs below to view training available based on proficiency level.
 
-## Getting started
+# [**Getting Started**](#tab/gettingstarted)
+<!-- ## Getting started -->
 
 |Course description|Go to|
 |----|-----|
