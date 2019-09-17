@@ -43,7 +43,35 @@ If this parameter is true, the SystemId field of the record is given a value tha
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Remarks
+
+The inserted record will automatically get assigned a SystemId by the platform. To assign a specific SystemId instead of the one assigned by the platform, use [Insert(Boolean, Boolean)](record-insert-boolean-boolean-method.md) instead.
+
+## Example
+  
+This example shows how to use the INSERT method to insert a record with a specified SystemId.
+
+```
+var
+    CustomerRec: Record Customer;
+    Text000: TextConst ENU = 'Customer no: %1 inserted.';
+    Text001: TextConst ENU = 'Customer no: %1 already exists.';
+begin
+    CustomerRec.Init(); 
+    CustomerRec."No." := '1120'; 
+    CustomerRec.SystemId := '{B6666666-F5A2-E911-8180-001DD8B7338E}';  
+    if CustomerRec.INSERT(true, true) then  
+      Message(Text000, CustomerRec."No.")  
+    else  
+      Message(Text001, CustomerRec."No.");
+end;
+```
+
+No run-time error occurs if customer 1120 already exists.
+
 ## See Also
+
+[SystemId Field](../../devenv-table-object.md#systemid)  
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

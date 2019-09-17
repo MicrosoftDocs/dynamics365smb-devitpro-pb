@@ -99,7 +99,10 @@ In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** no
 |-------|-------|
 |Current SQL latency (ms) | When the debugger hits a breakpoint, the [!INCLUDE[server](includes/server.md)] will send a short SQL statement to the database and measure how long time it takes. The value is in milliseconds.| 
 |Number of SQL Executes | This number shows the total number of SQL statements executed in the debugging session since the debugger was started.|
-|Number of SQL Rows Reads | This number shows the total number of rows read from the [!INCLUDE[prodshort](includes/prodshort.md)] database in the debugging session since the debugger was started.|
+|Number of SQL Rows Read | This number shows the total number of rows read from the [!INCLUDE[prodshort](includes/prodshort.md)] database in the debugging session since the debugger was started.|
+
+> [!TIP]
+> You can also get database insights from the AL runtime by using the [SqlStatementsExecuted()](methods-auto/sessioninformation/sessioninformation-sqlstatementsexecuted-method.md) and [SqlRowsRead()](methods-auto/sessioninformation/sessioninformation-sqlrowsread-method.md) methods.
 
 ### View SQL statement statistics
 
