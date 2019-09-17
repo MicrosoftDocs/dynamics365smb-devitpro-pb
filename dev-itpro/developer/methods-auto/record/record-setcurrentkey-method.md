@@ -2,7 +2,7 @@
 title: "SetCurrentKey Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Selects a key for a table.
 
 ## Syntax
 ```
-[Ok := ]  Record.SetCurrentKey(Field1: Any, [Field2: Any,...])
+[Ok := ]  Record.SetCurrentKey(Field1: Any [, Field2: Any,...])
 ```
 ## Parameters
 *Record*  
@@ -60,4 +60,4 @@ You can use SetCurrentKey for selecting a key and sorting When you use SetCurren
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[SETCURRENTKEY, SETRANGE, SETFILTER, GETRANGEMIN, and GETRANGEMAX Methods](../devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods#setcurrentkey-method.md)  
+[SETCURRENTKEY, SETRANGE, SETFILTER, GETRANGEMIN, and GETRANGEMAX Methods](../../devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)  

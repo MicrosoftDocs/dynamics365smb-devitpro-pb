@@ -2,7 +2,7 @@
 title: "Rename Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Changes the value of a primary key in a table.
 
 ## Syntax
 ```
-[Ok := ]  Record.Rename(Value1: Any, [Value2: Any,...])
+[Ok := ]  Record.Rename(Value1: Any [, Value2: Any,...])
 ```
 ## Parameters
 *Record*  

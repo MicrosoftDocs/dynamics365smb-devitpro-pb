@@ -2,7 +2,7 @@
 title: "ArrayLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Returns the total number of elements in an array or the number of elements in a 
 
 ## Syntax
 ```
-Length :=   System.ArrayLen(Array: Array of [Any], [Dimension: Integer])
+Length :=   System.ArrayLen(Array: Array of [Any] [, Dimension: Integer])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

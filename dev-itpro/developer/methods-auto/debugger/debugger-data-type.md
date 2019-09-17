@@ -2,7 +2,7 @@
 title: "Debugger Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ The following methods are available on the Debugger data type.
 |[Stop()](debugger-stop-method.md)|Stops execution as if the code hits an error.|
 |[DebuggingSessionID()](debugger-debuggingsessionid-method.md)|Gets the ID of the session that the debugger is currently attached to.|
 |[GetLastErrorText()](debugger-getlasterrortext-method.md)|Gets the last error that occurred in the debugger.|
-|[EnableSqlTrace(Integer, [Boolean])](debugger-enablesqltrace-method.md)|Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected.|
+|[EnableSqlTrace(Integer [, Boolean])](debugger-enablesqltrace-method.md)|Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected.|
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

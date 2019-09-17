@@ -2,7 +2,7 @@
 title: "SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/28/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Sets a filter on a column of a query to limit the records in the resulting data 
 
 ## Syntax
 ```
- Query.SetFilter(Column: Any, String: String, [Value: Any,...])
+ Query.SetFilter(Column: Any, String: String [, Value: Any,...])
 ```
 ## Parameters
 *Query*  

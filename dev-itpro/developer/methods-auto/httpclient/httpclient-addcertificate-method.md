@@ -2,7 +2,7 @@
 title: "AddCertificate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Adds a certificate to the HttpClient class.
 
 ## Syntax
 ```
- HttpClient.AddCertificate(Certificate: String, [Password: String])
+ HttpClient.AddCertificate(Certificate: String [, Password: String])
 ```
 ## Parameters
 *HttpClient*  
