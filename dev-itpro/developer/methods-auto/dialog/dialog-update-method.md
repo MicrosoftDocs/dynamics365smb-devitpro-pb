@@ -2,7 +2,7 @@
 title: "Update Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Updates the value of a '#'-or '@' field in the active window.
 
 ## Syntax
 ```
- Dialog.Update([Number: Integer], [Value: Any])
+ Dialog.Update([Number: Integer] [, Value: Any])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  
@@ -34,7 +34,7 @@ Each '#' or '@' field has a specific number. The Number argument tells into whic
         
 *Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-This value or expression can be any simple AL data type such as Boolean, Option, Integer, Decimal, Date, Time, Text, and Code. If you omit this value, then the value from the variable in the [OPEN method (Dialog)](../../methods-auto/dialog/dialog-open-method.md)] call is used.  
+This value or expression can be any simple AL data type such as Boolean, Option, Integer, Decimal, Date, Time, Text, and Code. If you omit this value, then the value from the variable in the OPEN method (Dialog)] call is used.  
 
 
 

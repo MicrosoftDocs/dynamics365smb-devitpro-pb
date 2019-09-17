@@ -2,7 +2,7 @@
 title: "File Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/10/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +25,8 @@ The following methods are available on the File data type.
 |[Erase(String)](file-erase-method.md)|Deletes a file.|
 |[Rename(String, String)](file-rename-method.md)|Renames an ASCII or binary file.|
 |[Copy(String, String)](file-copy-method.md)|Copies a file.|
-|[GetStamp(String, var Date, [var Time])](file-getstamp-method.md)|Gets the exact time that a file was last written to.|
-|[SetStamp(String, Date, [Time])](file-setstamp-method.md)|Sets a timestamp for a file.|
+|[GetStamp(String, var Date [, var Time])](file-getstamp-method.md)|Gets the exact time that a file was last written to.|
+|[SetStamp(String, Date [, Time])](file-setstamp-method.md)|Sets a timestamp for a file.|
 |[Exists(String)](file-exists-method.md)|Determines whether a file exists.|
 |[UploadIntoStream(String, String, String, var Text, var InStream)](file-uploadintostream-method.md)|Sends a file from the client computer to the corresponding server. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.|
 |[DownloadFromStream(InStream, String, String, String, var Text)](file-downloadfromstream-method.md)|Sends a file from server computer to the client computer. The client computer is the computer that is running the Windows client or the computer that is running the browser that accesses the web client.|
@@ -38,8 +38,8 @@ The following methods are available on instances of the File data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Open(String, [TextEncoding])](file-open-method.md)|Opens an ASCII or binary file. This method does not create the file if it does not exist.|
-|[Create(String, [TextEncoding])](file-create-method.md)|Creates an Automation object.|
+|[Open(String [, TextEncoding])](file-open-method.md)|Opens an ASCII or binary file. This method does not create the file if it does not exist.|
+|[Create(String [, TextEncoding])](file-create-method.md)|Creates an Automation object.|
 |[Close()](file-close-method.md)|Closes a file that has been opened by the OPEN method (File).|
 |[Name()](file-name-method.md)|Gets the name of an ASCII or binary file.|
 |[Pos()](file-pos-method.md)|Gets the current position of the file pointer in an ASCII or binary file.|

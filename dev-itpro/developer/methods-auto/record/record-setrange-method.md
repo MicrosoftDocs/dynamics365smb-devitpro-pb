@@ -2,7 +2,7 @@
 title: "SetRange Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/25/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Sets a simple filter, such as a single range or a single value, on a field.
 
 ## Syntax
 ```
- Record.SetRange(Field: Any, [FromValue: Any], [ToValue: Any])
+ Record.SetRange(Field: Any [, FromValue: Any] [, ToValue: Any])
 ```
 ## Parameters
 *Record*  
