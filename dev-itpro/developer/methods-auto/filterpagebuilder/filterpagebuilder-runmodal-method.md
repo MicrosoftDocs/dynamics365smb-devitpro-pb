@@ -43,25 +43,23 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 ## Example  
  The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view. The [GETVIEW Method](../../methods-auto/filterpagebuilder/filterpagebuilder-getview-method.md) is used to capture that filter view from the FilterPageBuilder object, and then apply it to the record.  
   
- This example requires that you create the following global variables.  
-  
-|Variable name|DataType|SubType|  
-|-------------------|--------------|-------------|  
-|varDateItem|Text||  
-|varDateRecord|Record|Date|  
-|varFilterPageBuilder|FilterPageBuilder||  
-|varDefaultView|Text||  
-  
-```  
-varDateItem := 'Date record';  
-varDateRecord.SETFILTER("Period End", '12122015D');  
-varDateRecord.SETFILTER("Period Start", '01012015D');  
-varDefaultView := varDateRecord.GETVIEW;  
-varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);  
-varFilterPageBuilder.SETVIEW(varDateItem, varDefaultView);  
-IF varFilterPageBuilder.RUNMODAL = TRUE THEN  
-  varDateRecord.SETVIEW(varFilterPageBuilder.GETVIEW(varDateItem));  
-  
+```
+var
+    varDateItem: Text[300];  
+    varDateRecord: Record Date;  
+    varFilterPageBuilder: FilterPageBuilder;  
+    varDefaultView: Text[300];
+
+begin
+    varDateItem := 'Date record';  
+    varDateRecord.SETFILTER("Period End", '12122015D');  
+    varDateRecord.SETFILTER("Period Start", '01012015D');  
+    varDefaultView := varDateRecord.GETVIEW;  
+    varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);  
+    varFilterPageBuilder.SETVIEW(varDateItem, varDefaultView);  
+    IF varFilterPageBuilder.RUNMODAL = TRUE THEN  
+      varDateRecord.SETVIEW(varFilterPageBuilder.GETVIEW(varDateItem));  
+end; 
 ```  
 
 ## See Also

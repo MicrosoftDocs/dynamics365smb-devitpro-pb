@@ -208,6 +208,7 @@
 ### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
+### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ## Pages
 ### [Pages Overview](developer/devenv-pages-overview.md)
