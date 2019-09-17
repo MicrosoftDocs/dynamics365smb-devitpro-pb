@@ -272,6 +272,18 @@ The following table describes fields on the **Reports** tab in the [!INCLUDE[adm
 | Report PDF Font Embedding  |ReportPDFFontEmbedding|  Specifies whether fonts are embedded in PDF files that are generated for reports when the report uses an RDLC report layout at runtime. This setting applies when reports are run and saved as PDF files on the client (from the report request page or print preview window) or on the server instance (by the [SAVEAS function](../developer/methods/devenv-SAVEAS-method.md) or [SAVEASPDF function](../developer/methods/devenv-SAVEASPDF-method-Report.md) in AL code).<br /><br />**Note:** This setting does not apply when a report uses a Word report layout at runtime.<br/><br/>Embedding fonts in a PDF of a report makes sure that the PDF will use the same fonts as the original file, regardless of where the PDF is opened and which fonts are installed on the computer. However, embedding fonts can significantly increase the size of the PDF files. By disabling font embedding, you can decrease the size of the report PDF files.<br /><br />**Note:** This is a global setting for font embedding in report PDF files. You can override this setting on a report basis by the specifying the [PDFFontEmbedding property](../developer/properties/devenv-PDFFontEmbedding-Property.md).<br /><br />Default: Enabled<br />Dynamically Updatable: No| 
 |*not available*|CalculateBestPaperSizeForReportPrinting|Determines the paper size to use when printing reports from the client.<br /><br />If set to `true`, the system calculates which of the available paper sizes on the printer is best suited for printing, and then uses that paper size.<br /><br /> If set to `false`, the printer's default paper size is used.<br /><br />Default: true|
 
+## Extensions Settings
+
+The following table describes fields on the **Extensions** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+
+> [!NOTE]
+> These settings are only available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Wave 2 and later.
+
+|  Setting  |Key Name|  Description  |
+|-----------|--------|---------------|
+|Overwrite Existing Translations|OverwriteExistingTranslations|Specifies whether to overwrite existing text translations in the base application with text translations that are included in extensions.<br /><br />Default: Enabled<br />Dynamically Updatable: No|
+|Required Extensions|RequiredExtensions|Specifies a list of required extensions that cannot be uninstalled by using the **Extension Management** page in the client. The extensions can still be uninstalled by using the [Uninstall-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].<br /><br />You specify an extension by its AppID (which is a GUID). When you have more than one extension, separate each AppID with a semicolon. The AppID for the BaseApp extension is 437dbf0e-84ff-417a-965d-ed2bb9650972 and System Application extension is 63ca2fa4-4f03-4f2b-a480-172fef340d3f. <br /><br /> Default: Blank or "" (empty string)<br />Dynamically Updatable: Yes|
+
 ## <a name="Development"></a>Development Settings
 
 The following table describes fields on the **Development** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
