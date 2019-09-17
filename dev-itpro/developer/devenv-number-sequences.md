@@ -33,7 +33,7 @@ To create and manage number sequences, you use the `NumberSequence` data type an
 
 |Method name|Description|
 |-----------|-----------|
-|[Insert(String, [BigInteger][, BigInteger], [Boolean])](methods-auto/numbersequence/numbersequence-insert-method.md)|Creates a number sequence in the database, with the given parameters.|
+|[Insert(String[, BigInteger][, BigInteger], [Boolean])](methods-auto/numbersequence/numbersequence-insert-method.md)|Creates a number sequence in the database, with the given parameters.|
 |[Exists(String[, Boolean])](methods-auto/numbersequence/numbersequence-exists-method.md)|Checks whether a specific number sequence exists.|
 |[Delete(String[, Boolean])](methods-auto/numbersequence/numbersequence-delete-method.md)|Deletes a specific number sequence.|
 |[Next(String[, Boolean])](methods-auto/numbersequence/numbersequence-next-method.md)|Retrieves the next value from the number sequence.|
