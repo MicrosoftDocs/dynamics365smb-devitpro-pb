@@ -4,7 +4,7 @@
 ## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
-### [Configuring technical support](technical-support.md)
+### [Technical support](technical-support.md)
 ### Help system
 #### [User assistance model](user-assistance.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
@@ -67,6 +67,7 @@
 # Administration
 ## Online
 ### [Administration of Business Central Online](administration/tenant-administration.md)
+### [Managing Technical Support](administration/manage-technical-support.md)
 ### Administration Center
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
