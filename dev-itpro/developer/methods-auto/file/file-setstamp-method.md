@@ -2,7 +2,7 @@
 title: "SetStamp Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/10/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets a timestamp for a file.
 
 ## Syntax
 ```
-[Ok := ]  File.SetStamp(Name: String, Date: Date, [Time: Time])
+[Ok := ]  File.SetStamp(Name: String, Date: Date [, Time: Time])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

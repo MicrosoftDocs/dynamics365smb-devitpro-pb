@@ -2,7 +2,7 @@
 title: "GetView Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Gets the filter view (which defines the sort order, key, and filters) for the re
 
 ## Syntax
 ```
-View :=   FilterPageBuilder.GetView(Name: String, [UseNames: Boolean])
+View :=   FilterPageBuilder.GetView(Name: String [, UseNames: Boolean])
 ```
 ## Parameters
 *FilterPageBuilder*  

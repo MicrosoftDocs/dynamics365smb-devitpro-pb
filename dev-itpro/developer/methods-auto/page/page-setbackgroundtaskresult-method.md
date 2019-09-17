@@ -2,7 +2,7 @@
 title: "SetBackgroundTaskResult Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,8 +16,6 @@ author: solsen
 # SetBackgroundTaskResult Method
 Sets the page background task result as a dictionary. When the task is completed, the OnPageBackgroundCompleted trigger will be invoked on the page with this result dictionary.
 
-> [!NOTE]
-> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```

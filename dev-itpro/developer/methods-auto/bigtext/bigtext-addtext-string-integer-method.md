@@ -2,7 +2,7 @@
 title: "AddText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Adds a text string to a BigText variable.
 
 ## Syntax
 ```
- BigText.AddText(String: String, [Position: Integer])
+ BigText.AddText(String: String [, Position: Integer])
 ```
 ## Parameters
 *BigText*  

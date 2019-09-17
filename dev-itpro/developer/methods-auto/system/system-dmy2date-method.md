@@ -2,7 +2,7 @@
 title: "DMY2Date Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Gets a Date object based on a day, month, and year.
 
 ## Syntax
 ```
-Date :=   System.DMY2Date(Day: Integer, [Month: Integer], [Year: Integer])
+Date :=   System.DMY2Date(Day: Integer [, Month: Integer] [, Year: Integer])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

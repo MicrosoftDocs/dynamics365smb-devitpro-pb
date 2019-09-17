@@ -2,7 +2,7 @@
 title: "ClientType System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Represents the type of the client executing the operation.
 |  Member  |  Description  |
 |----------------|---------------|
 |Background|A background client.|
+|ChildSession|A child session client.|
 |Desktop|A desktop client.|
 |Management|A management client.|
 |NAS|A NAS client.|

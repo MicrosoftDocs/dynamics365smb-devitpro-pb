@@ -210,6 +210,20 @@ Sets the formats of the source expression for various data types.
 |\<Text>|1|True/False|  
 |\<Number>|2|1/0|  
 |XML format|9|true/false|  
+
+|**GUID**|**Format**|**Example**|  
+|----------------|----------------|-----------------|  
+|{\<Text>}|0|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|{\<Text>}|1|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|{\<Text>}|2|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|XML format|9|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+
+|**Enum value**|**Format**|**Example**|  
+|----------------|----------------|-----------------|  
+|\<Text>|0|Bronze|  
+|\<Text>|1|Bronze|  
+|\<Number>|2|1|  
+|XML format|9|1|  
   
 |**Option**|**Format**|**Example**|  
 |----------------|----------------|-----------------|  
@@ -222,7 +236,7 @@ Sets the formats of the source expression for various data types.
   
  For Chars, all formats should resemble the following: <Char/Number>.  
   
- For Text and Code, all formats should resemble the following: <Text>.  
+ For Text and Code, all formats should resemble the following: \<Text>.  
   
 ## See Also  
  [DecimalPlaces Property](devenv-decimalplaces-property.md)
