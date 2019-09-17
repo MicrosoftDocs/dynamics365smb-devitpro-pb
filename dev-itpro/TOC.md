@@ -215,6 +215,7 @@
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
 ### [Page Customization Object](developer/devenv-page-customization-object.md)
 ### [API Page Type](developer/devenv-api-pagetype.md)
+### [Page Background Tasks](developer/devenv-page-background-tasks.md)
 ### Role Centers
 #### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Sample Role Center](developer/devenv-simple-role-center-example.md)
