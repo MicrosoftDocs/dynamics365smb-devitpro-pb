@@ -15,24 +15,24 @@ ms.author: edupont
 
 # Managing Technical Support
 
-You can log in to the customer's [!INCLUDE [prodshort](developer/includes/prodshort.md)] as the delegated admin for troubleshooting, and you can use the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)] to manage environments and upgrades.  
+You can log in to the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated admin for troubleshooting, and you can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage environments and upgrades.  
 
 ## Finding technical information
 
-The **Help and Support** page is a powerful tool for you to find technical information about your customers' [!INCLUDE [prodshort](developer/includes/prodshort.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the most recent error message, and it has a link to inspect pages for further troubleshooting.  
+The **Help and Support** page is a powerful tool for you to find technical information about your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the most recent error message, and it has a link to inspect pages for further troubleshooting.  
 
 > [!div class="mx-imgBorder"]
-> ![Links for troubleshooting and support from the Help and Support page](developer/media/admin/helpsupport_managed.png)
+> ![Links for troubleshooting and support from the Help and Support page](../developer/media/admin/helpsupport_managed.png)
 
-Also in the **Help and Support** page, users can see your support contact information, and they and you can see which version of [!INCLUDE [prodshort](developer/includes/prodshort.md)], the tenant is on.  
+Also in the **Help and Support** page, users can see your support contact information, and they and you can see which version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the tenant is on.  
 
-As an administrator, you also have access to this information in the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)]. You can use the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)] to easily navigate to your customers' tenants, and you can create sandbox environments that can help troubleshoot any issues reported by your customers. For more information, see [The Business Central Administration Center](administration/tenant-admin-center.md).  
+As an administrator, you also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. You can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily navigate to your customers' tenants, and you can create sandbox environments that can help troubleshoot any issues reported by your customers. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
 ### Azure Active Directory tenant
 
 If you have configured the support email address, and your customer uses that to contact you, then the **Help and Support** page encourages them to include information about their Azure Active Directory tenant ID in the email. This information is shown at the bottom of the **Help and Support** page. You can use that to identify the tenant in the administration center, and you can use it to log into their tenant.  
 
-You also have access to this information in the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)].  
+You also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
 ### Version
 
@@ -50,7 +50,7 @@ However, if you use the online administration center, the version information is
 |Platform |14.0 | Specifies the platform version, which includes client and server components. |
 |Application \<major>.\<minor>.\<build>.\<revision>|14.0.29537.0 | Specifies the full version number for the application. |
 
-The numbers are updated based on Microsoft's builds. In the default version of [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, platform and application have the same major version number but different build numbers. If you perform a technical upgrade of [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, then platform and application will have different versions. The October'18 update was major update 13, the April'19 update was major version 14, and the 2019 release wave 2 is major version 15.  
+The numbers are updated based on Microsoft's builds. In the default version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, platform and application have the same major version number but different build numbers. If you perform a technical upgrade of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then platform and application will have different versions. The October'18 update was major update 13, the April'19 update was major version 14, and the 2019 release wave 2 is major version 15.  
 
 For more information about build versions, see the blog post by our technical evangelist at [Business Central Build Numbers](https://freddysblog.com/2018/12/05/business-central-build-numbers/).  
 
@@ -73,13 +73,13 @@ The information that you can get from this link includes the following:
 
     This shows information about the runtime objects.
 
-The link cannot open errors that were generated by the platform. So if you suspect that the issue is caused by the platform, you can try to reproduce the error in a sandbox environment before you contact Microsoft for support. For more information, see [Create a sandbox environment](administration/tenant-admin-center-environments.md#create-a-sandbox-environment).
+The link cannot open errors that were generated by the platform. So if you suspect that the issue is caused by the platform, you can try to reproduce the error in a sandbox environment before you contact Microsoft for support. For more information, see [Create a sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment).
 
 ## Escalating your customer's support issues
 
 Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, use the [!INCLUDE [prodshort](developer/includes/prodshort.md)] Administration Center to easily submit a support request to Microsoft.  
 
-For more information, see [Submitting support requests on behalf of your customer](administration/tenant-admin-center.md#submitting-support-requests-on-behalf-of-your-customer).  
+For more information, see [Submitting support requests on behalf of your customer](tenant-admin-center.md#submitting-support-requests-on-behalf-of-your-customer).  
 <!-- TODO: How to manage your customers' support issues -->
 
 ## See Also
