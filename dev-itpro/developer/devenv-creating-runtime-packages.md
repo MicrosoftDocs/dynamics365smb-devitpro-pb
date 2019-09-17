@@ -24,7 +24,7 @@ Next, use the following PowerShell command to connect to the server, find the ex
 
 `Get-NavAppRuntimePackage`
 
-For more information about this cmdlet, see [Get-NAVAppRuntimePackage cmdlet](https://go.microsoft.com/fwlink/?linkid=859214).
+For more information about this cmdlet, see [Get-NAVAppRuntimePackage cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/Get-NAVAppRuntimePackage?view=businesscentral-ps).
 
 The following example gets the NAV App runtime package with the provided name and version.
 

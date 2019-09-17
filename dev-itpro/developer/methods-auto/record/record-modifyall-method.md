@@ -2,7 +2,7 @@
 title: "ModifyAll Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/25/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Modifies a field in all records within a range that you specify.
 
 ## Syntax
 ```
- Record.ModifyAll(Field: Any, NewValue: Any, [RunTrigger: Boolean])
+ Record.ModifyAll(Field: Any, NewValue: Any [, RunTrigger: Boolean])
 ```
 ## Parameters
 *Record*  

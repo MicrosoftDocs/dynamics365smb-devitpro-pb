@@ -2,7 +2,7 @@
 title: "Contains Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Determines whether the storage contains a value with the specified key.
 
 ## Syntax
 ```
-HasValue :=   IsolatedStorage.Contains(Key: String, [DataScope: DataScope])
+HasValue :=   IsolatedStorage.Contains(Key: String [, DataScope: DataScope])
 ```
 ## Parameters
 *Key*  

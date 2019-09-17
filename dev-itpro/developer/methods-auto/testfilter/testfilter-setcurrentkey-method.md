@@ -2,7 +2,7 @@
 title: "SetCurrentKey Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Sets the specified fields in a data set on a test page as the current key.
 
 ## Syntax
 ```
-[Ok := ]  TestFilter.SetCurrentKey(Field1: TestFilterField, [Field2: TestFilterField,...])
+[Ok := ]  TestFilter.SetCurrentKey(Field1: TestFilterField [, Field2: TestFilterField,...])
 ```
 ## Parameters
 *TestFilter*  
