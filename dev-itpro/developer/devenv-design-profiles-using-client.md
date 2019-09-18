@@ -14,6 +14,8 @@ ms.author: jswymer
 
 # Using the Client to Create Profiles and Page Customizations
 
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
 Using the client can be a useful alternative to writing AL code directly in Visual Studio Code because you are working with the user interface just as the users would. This is especially advantageous for consultants, application administrators, and less technical users. But a consequence of using the client alone is that the profile-related changes pertain only to the tenant in which they were made. In contrast, profiles and page customizations that are extension-based are published to the application server instance and available for installation on all tenants.
 
 However, you can export user-defined profiles and page customizations from the client to files (.al type) that contain the changes as AL code. Once you have the files, you can include them in a Visual Studio Code project and compile them into an extension package that can be published and available to all tenants. To export user-defined profiles and page customizations from the client, open the **Profiles (Roles)** page, and select the **Export User-Created Profiles** action. A .zip file is downloaded to your computer. The zip files contains .al files for the profile and page customizations, plus an app.json and profiles.json file.
