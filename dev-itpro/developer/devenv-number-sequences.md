@@ -13,6 +13,8 @@ ms.author: jswymer
 ---
 
 # Number Sequences in [!INCLUDE[prodshort](includes/prodshort.md)]
+
+[!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
  
 In AL, you can create and manage number sequences that generate numeric identifiers for data and records. [!INCLUDE[prodshort](includes/prodshort.md)] number sequences are built on SQL Server number sequences, which means that they are not associated with any tables. Instead, the application code references the number sequence object and coordinates the values across records.
 
