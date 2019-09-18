@@ -97,6 +97,8 @@ System fields are assigned numbers in the range 2000000000-2147483647. This rang
 
 ### <a name="systemid"></a>SystemId field
 
+[!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
+
 The **SystemId** field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. The **SystemId** field has the following characteristics and behavior:
 
 - All records must have a value in the **SystemId** field.
