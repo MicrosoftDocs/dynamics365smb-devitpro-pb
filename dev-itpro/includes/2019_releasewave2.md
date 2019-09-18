@@ -1,2 +1,1 @@
-> []  
 > This applies to Business Central 2019 release wave 2.
