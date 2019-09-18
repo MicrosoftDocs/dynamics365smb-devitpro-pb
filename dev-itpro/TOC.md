@@ -280,6 +280,12 @@
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+## [Customizing for User Roles](developer/devenv-role-customization.md)
+## Profiles
+### [Designing Profiles](developer/devenv-design-profiles.md)
+### [Profile Object](developer/devenv-profile-object.md)
+### [Page Customization Object](developer/devenv-page-customization-object.md)
+### [Using Client to Create Profiles](developer/devenv-design-profiles-using-client.md)
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
