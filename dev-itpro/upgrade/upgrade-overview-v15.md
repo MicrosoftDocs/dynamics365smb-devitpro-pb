@@ -23,9 +23,9 @@ ROBOTS: NOINDEX
 
 Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to the latest cumulative update of [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
 
-## Full upgrade of an out-of-the-box [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application
+## Upgrade an unmodified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application
 
-Use this scenario if you have a Business Central application that does not include any code customization, other than Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central version 15 base application extension and the system application. The result will be a fully upgraded application and platform on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2.
+Use this scenario if you have a Business Central application that does not include any code customization in C/AL. Customizations, if any, are done by extensions, whihc can be Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central version 15 base application extension and the system application. The result will be a fully upgraded application and platform on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2.
 
 <!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app.-->
 
