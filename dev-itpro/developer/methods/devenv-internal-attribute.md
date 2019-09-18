@@ -12,6 +12,9 @@ author: SusanneWindfeldPedersen
 ---
 
 # InternalEvent Attribute
+
+[!INCLUDE[2019_releasewave2.md](../../includes/2019_releasewave2.md)]
+
 Specifies that the method is published as an internal event. It can only be subscribed to from within the same module.
 
 ## Snippet support
