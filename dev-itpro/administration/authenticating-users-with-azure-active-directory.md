@@ -182,4 +182,6 @@ To specify web service access key, go to **Web Service Access** on the **User Ca
 The access key that appears in the **Web Service Access Key** is need to access web services. 
 
 ## See Also  
- [Authentication and Credential Types](Users-Credential-Types.md)
+
+[Authentication and Credential Types](Users-Credential-Types.md)  
+[Troubleshooting: The SAML2 token is not valid because its validity period has ended](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
