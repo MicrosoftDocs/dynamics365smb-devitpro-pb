@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Compilation Scope Overview
+
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] there are different layers of controlling what can be published to the server and accessed from within a project. 
 
 ## Configuring extension target on the server

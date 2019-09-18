@@ -12,6 +12,9 @@ ms.author: solsen
 ---
 
 # Extensible Property
+
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
 Sets a value that indicates whether a table, page, or enum can be extended. If the value is **true**, the object can be extended using a `tableextension`, `pageextension`, or `enumextension` respectively.
 
 ## Applies To  

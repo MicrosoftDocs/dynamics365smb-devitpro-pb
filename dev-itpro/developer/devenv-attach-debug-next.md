@@ -12,6 +12,8 @@ author: SusanneWindfeldPedersen
 
 # Attach and Debug Next
 
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
 If you do not want to publish and invoke functionality to debug it, you can instead attach a session to a specified server and await a process to trigger the breakpoint you have set. Then debugging starts when the code that the breakpoint is set on is hit. This is particularly useful for debugging Web API sessions. 
 
 > [!NOTE]  

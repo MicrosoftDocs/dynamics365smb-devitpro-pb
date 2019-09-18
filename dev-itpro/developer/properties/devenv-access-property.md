@@ -13,6 +13,9 @@ author: SusanneWindfeldPedersen
 ---
 
 # Access Property
+
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
 The `Access` property is an access modifier which allows controlling the accessibility level of methods and objects. If the `Access` property is not specified, the default is `Public`.
 
 ## Applies To  

@@ -11,6 +11,9 @@ author: SusanneWindfeldPedersen
 ---
 
 # Protected Variables
+
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
 Use the `protected` keyword on the declaration of a var section to make the declared variable within that section accessible from other objects within the same module. If you want to only expose some variables as `protected`, you must created two sections of var declarations. See in the syntax below.
 
 ## Syntax

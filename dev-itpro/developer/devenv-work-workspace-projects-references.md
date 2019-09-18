@@ -12,6 +12,9 @@ ms.author: solsen
 ---
 
 # Working with multiple projects and project references
+
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
 A project reference in an AL-based workspace is defined as a dependency in the `app.json` file and exists as a project in the workspace. There is no special visual representation of a project reference.
 
 In the example below, the project called **Leaf** defines two dependencies to the projects **Middle** and **Root**. Since both **Root** and **Middle** are projects in the workspace they are considered project references.
