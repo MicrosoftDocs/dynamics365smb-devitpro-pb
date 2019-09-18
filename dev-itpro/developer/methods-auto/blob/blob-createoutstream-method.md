@@ -2,7 +2,7 @@
 title: "CreateOutStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Creates an OutStream object for a binary large object (BLOB). This enables you t
 
 ## Syntax
 ```
- Blob.CreateOutStream(OutStream: OutStream, [Encoding: TextEncoding])
+ Blob.CreateOutStream(OutStream: OutStream [, Encoding: TextEncoding])
 ```
 ## Parameters
 *Blob*  

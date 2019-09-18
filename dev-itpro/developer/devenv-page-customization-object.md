@@ -33,7 +33,7 @@ The following page customization example `MyCustomization` makes changes to **Cu
 profile TheBoss
 {
     Description = 'The Boss';
-    RoleCenter = "Business Manager";
+    RoleCenter = "Business Manager Role Center";
     Customizations = MyCustomization;
 }
 

@@ -2,7 +2,7 @@
 title: "FieldRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,6 +30,10 @@ The following methods are available on instances of the FieldRef data type.
 |[OptionMembers()](fieldref-optionmembers-method.md)|Gets the list of options that are available in the field that is currently selected.|
 |[OptionString()](fieldref-optionstring-method.md)|The 'OptionString' property has been deprecated and will be removed in the future. Use the 'OptionMembers' property instead.|
 |[OptionCaption()](fieldref-optioncaption-method.md)|Gets the option caption of the field that is currently selected.|
+|[GetEnumValueName(Integer)](fieldref-getenumvaluename-method.md)|Gets an Enum value (or Option member) name from the Enum metadata for the field that is currently selected.|
+|[GetEnumValueNameFromOrdinalValue(Integer)](fieldref-getenumvaluenamefromordinalvalue-method.md)|Gets an Enum value (or Option member) name from the Enum metadata for the field that is currently selected.|
+|[GetEnumValueOrdinal(Integer)](fieldref-getenumvalueordinal-method.md)|Gets the Enum value (or Option member) ordinal value from the Enum metadata for the field that is currently selected.|
+|[EnumValueCount()](fieldref-enumvaluecount-method.md)|Gets the number of Enum values (or Option members) from the Enum metadata for the field that is currently selected.|
 |[Active()](fieldref-active-method.md)|Checks whether the field that is currently selected is enabled.|
 |[Record()](fieldref-record-method.md)|Gets the RecordRef of the field that is currently selected. This method returns an error if no field is selected.|
 |[Length()](fieldref-length-method.md)|Gets the maximum size of the field (the size specified in the DataLength property of the field). This method is usually used for finding the defined length of code and text fields.|
@@ -48,6 +52,7 @@ The following methods are available on instances of the FieldRef data type.
 |[TestField(Decimal)](fieldref-testfield-decimal-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Guid)](fieldref-testfield-guid-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(String)](fieldref-testfield-string-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
+|[TestField(Label)](fieldref-testfield-label-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Text)](fieldref-testfield-text-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Code)](fieldref-testfield-code-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Date)](fieldref-testfield-date-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
@@ -56,8 +61,8 @@ The following methods are available on instances of the FieldRef data type.
 |[TestField(Variant)](fieldref-testfield-variant-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Any)](fieldref-testfield-joker-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[Relation()](fieldref-relation-method.md)|Finds the table relationship of a given field.|
-|[SetRange([Any], [Any])](fieldref-setrange-method.md)|Sets a simple filter on a field, such as a single range or a single value.|
-|[SetFilter(String, [Any,...])](fieldref-setfilter-method.md)|Assigns a filter to a field that you specify.|
+|[SetRange([Any] [, Any])](fieldref-setrange-method.md)|Sets a simple filter on a field, such as a single range or a single value.|
+|[SetFilter(String [, Any,...])](fieldref-setfilter-method.md)|Assigns a filter to a field that you specify.|
 |[GetFilter()](fieldref-getfilter-method.md)|Gets the filter that is currently applied to the field referred to by FieldRef.|
 |[GetRangeMin()](fieldref-getrangemin-method.md)|Gets the minimum value in a range for a field.|
 |[GetRangeMax()](fieldref-getrangemax-method.md)|Gets the maximum value in a range for a field.|

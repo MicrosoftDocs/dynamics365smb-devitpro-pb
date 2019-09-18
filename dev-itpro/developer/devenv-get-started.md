@@ -44,11 +44,11 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 + Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by starting typing `t` and pick from the list.
 + Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
 + Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
-+ Use **Ctrl+Shift+P** to clear the credentials cache if you want to deploy against a different environment.
++ Use **Ctrl+Shift+P** and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
 
 
 ## JSON file settings
-There are two JSON files in the project; the `app.json` file and the `launch.json` file. The files are automatically generated for your project. For more information, see [JSON files](devenv-json-files.md).
+There are three JSON files in the project; the `app.json` file, the `launch.json` file and the `rad.json`. The files are automatically generated for your project. For more information, see [JSON files](devenv-json-files.md) and [Working with Rapid Application Development (RAD)](devenv-rad-publishing.md).
 
 ## Telemetry settings
 By default, Visual Studio Code is set up with a telemetry system to enable that data and errors are sent to Microsoft. If you do not want to send telemetry data, you can change the `telemetry.enableTelemetry` setting from `true` to `false`. 
