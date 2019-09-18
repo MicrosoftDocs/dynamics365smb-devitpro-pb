@@ -13,6 +13,9 @@ ms.author: solsen
 ---
 
 # Publishing a Code-Customized Base Application for Business Central On-Prem
+
+[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
+
 This topic decribes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem and publish the code-customized Base Application to the local server.
 
 ## Prerequisites
