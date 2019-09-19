@@ -576,6 +576,7 @@
 #### [Overview](upgrade/upgrade-overview-v15.md)
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
+#### [Full Upgrade from 14 to 15](upgrade/upgrade-full-upgrade-v14-v15.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->
