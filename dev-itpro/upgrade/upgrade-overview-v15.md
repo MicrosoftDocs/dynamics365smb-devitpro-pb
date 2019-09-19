@@ -19,9 +19,16 @@ ROBOTS: NOINDEX
 >
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marks the release where C/AL has been deprecated and replaced by AL. From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. This change will influence how you perform the upgrade compared to earlier releases.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marks the release where C/AL has been deprecated and replaced by AL. From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application is now delivered as an AL in an extensions instead of C/AL. Additionally, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. This change will influence how you perform the upgrade compared to earlier releases.
 
-Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to the latest cumulative update of [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
+## Upgrade paths
+
+When upgrading your solution to version 5, the goal is to move towards using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application and  system application as-is, and moving your code customizations into extensions. There are different paths that you can take to achieve this goal as outlin in the following illustration.
+
+[add illustration]
+
+> [!NOTE]
+> Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to the latest cumulative update of [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
 
 ## Upgrade an unmodified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application
 

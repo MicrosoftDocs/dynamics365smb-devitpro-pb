@@ -55,10 +55,30 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
 
 ## Task 3: Merge version 14.0 AL code with version 15.0 AL code
 
+Tools? What version of txt2al.exe?
+
+How?
+
+Who knows?
+
+
+
+
 
 
 ## Task 4: Uptake System Application 
+
 In version 15.0, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. For an introduction to the System Application, see [Breaking the monolith: Introducing the Business Central System Application](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/09/introducing-the-dynamics-365-business-central-system-application/).
+
+How? 
+- Remove system application objects from base application
+- Refactor base application to use system application
+
+## Move customizations into extensions
+
+How to move custom table to extension, and migrate data?
+How to move custom fields from base application table to extension,, amd move data?
+
 ## Task 4: Prepare the application database for technical upgrade
 
 1. Make backup of the database.
