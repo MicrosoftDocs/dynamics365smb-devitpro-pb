@@ -1,2 +1,1 @@
-> [!Note]
-> This applies only to [!INCLUDE[prodshort](prodshort.md)] on-premises.
+This applies only to [!INCLUDE[prodshort](prodshort.md)] on-premises. For online versions, encryption is always enabled and you cannot turn it off.

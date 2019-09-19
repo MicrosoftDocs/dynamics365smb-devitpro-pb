@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 This article gives an overview of data encription and how to use it to add security [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
 > [!Note]
-> [!INCLUDE[on_prem_only](../developer/includes/on_prem_only.md)] For online versions, encryption is always enabled and you cannot turn it off.
+> [!INCLUDE[on_prem_only](includes/on_prem_only.md)]
 
 ## Cryptography overview
 The methods that support cryptography provide services that enable developers manage encrypting and decrypting data. Each tenant supports a single encryption key which is used for encrypting and decrypting data stored in the database. Additional methods are provided to assist building robust solutions when working with encryption and for managing the encryption keys.  

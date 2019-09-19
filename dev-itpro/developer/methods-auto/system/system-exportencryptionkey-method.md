@@ -42,7 +42,7 @@ A temporary filepath to where the key is exported.
 ## Remarks  
 
 > [!Note]
-> [!INCLUDE[on_prem_only](../developer/includes/on_prem_only.md)] For online versions, encryption is always enabled and you cannot turn it off.
+> [!INCLUDE[on_prem_only](includes/on_prem_only.md)]
 
 If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.  
 
