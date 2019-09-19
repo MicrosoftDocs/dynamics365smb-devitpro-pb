@@ -2,7 +2,7 @@
 title: "EnqueueBackgroundTask Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 09/17/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,7 +50,74 @@ Specifies the level of error handling on page background task level.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled. Typically, you call the ENQUEUEBACKGROUNDTASK method from a page trigger. It is important that the ID of the current record of the page remains static after the call is made and while the background task is running; otherwise the task will be canceled. For this reason, we recommend that you do not enqueue the background task from the `OnOpenPage` trigger. Instead, use the  `OnAfterGetRecord` or `OnAfterGetCurrRecord` triggers.
+
+​Only five page background tasks can be run simultaneously for a parent session. If there are more than five, then they will be queued and run when a slot becomes available as other tasks are finished.​
+
+If a timeout occurs, the background task is canceled and an error occurs. On the page, the error will appear as a notification. You can re-schedule the task in the completion trigger. ​
+
+## Example
+The following code extends the **Customer Card** page with a page background task by using the ENQUEUEBACKGROUNDTASK method. For more details about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
+  
+```
+pageextension 50100 CustomerCardExt extends "Customer Card"
+{
+    layout
+    {
+        addlast(General)
+        {
+
+            field(Before1; before1)
+            {
+                ApplicationArea = All;
+                Caption = 'Before 1';
+                Editable = false;
+            }
+
+            field(Duration1; duration1)
+            {
+                ApplicationArea = All;
+                Caption = 'Duration 1';
+                Editable = false;
+            }
+
+            field(After1; after1)
+            {
+                ApplicationArea = All;
+                Caption = 'After 1';
+                Editable = false;
+            }
+        }
+    }
+
+    var
+        // Global variable used for the TaskID
+        WaitTaskId: Integer;
+        
+        // Variables for the three fields on the page 
+        before1: Text;
+        duration1: Text;
+        after1: Text;
+
+    trigger OnAfterGetRecord();
+    var
+        //Defines a variable for passing parameters to the background task
+        TaskParameters: Dictionary of [Text, Text];
+    begin
+        // Adds a key-value pair to the parameters dictionary 
+        TaskParameters.Add('Wait', '1000');
+
+        //Enqueues the page background task
+        CurrPage.EnqueueBackgroundTask(WaitTaskId, 50100, TaskParameters, 10000, PageBackgroundTaskErrorLevel::Warning);
+    end;
+```
+
 ## See Also
+
+[Page Background Tasks](../../devenv-page-background-tasks.md)  
 [Page Data Type](page-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

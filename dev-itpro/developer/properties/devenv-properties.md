@@ -20,7 +20,8 @@ This section describes the properties that are available to developers in [!INCL
 In the sections below, properties are sorted according to the object(s) they apply to.
 
 - [Table and Table Extension Properties](devenv-table-properties.md)  
-- [Page and Page Extension Properties](devenv-page-property-overview.md)- [Codeunit Properties](devenv-codeunit-properties.md)  
+- [Page and Page Extension Properties](devenv-page-property-overview.md)
+- [Codeunit Properties](devenv-codeunit-properties.md)  
 - [Query Properties](devenv-query-properties.md)  
 - [Report Properties](devenv-report-properties.md)  
 - [XMLPort Properties](devenv-xmlport-properties.md)  

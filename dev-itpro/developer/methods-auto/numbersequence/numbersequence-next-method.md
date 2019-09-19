@@ -37,6 +37,15 @@ Returns the next value from number sequence.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+The following example gets the next value in the number sequence `MyNumberSequence`. The number series is not company specific.
+ 
+```
+number := NumberSequence.Next('MyNumberSequence', false);
+```
+
 ## See Also
+[NumberSequence Data Type](numbersequence-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

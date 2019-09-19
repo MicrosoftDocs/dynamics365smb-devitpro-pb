@@ -73,6 +73,7 @@ tableextension 50100 CustomerExercise extends Customer
     }
 }
 ```
+
 <!--
 ## Define fields to display in tile view
 

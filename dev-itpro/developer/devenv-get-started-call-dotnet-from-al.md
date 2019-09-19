@@ -106,5 +106,6 @@ The server will search the global assembly cache (GAC), the **Add-ins** folder, 
 [Getting Started with AL](devenv-get-started.md)  
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)        
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)     
-[Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)
+[Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 

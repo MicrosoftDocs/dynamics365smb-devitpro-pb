@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 06/24/2019
+ms.date: 09/17/2019
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -34,6 +34,10 @@ When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.
 As a [!INCLUDE[prodshort](includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, and you are the first line of support. You can customize the support experience, and you have access to information that can help you troubleshoot any issues that your customers report.  
 
 For more information, see [Technical Support](technical-support.md).  
+
+## Resources
+
+As a partner, you can keep on top of current and upcoming capabilities, and you can share Microsoft's roadmap with your prospects, for example. This section provides links to places to keep track of for people who are new to [!INCLUDE [prodshort](developer/includes/prodshort.md)] as well as for people who have been working with the product for years.  
 
 ### Get started with the "Ready to Go" program
 
@@ -66,9 +70,7 @@ The Dynamics 365 blog is where Microsoft publishes announcements, updates, and t
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Business Central on the Dynamics 365 blog (Users) |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/users/product/business-central/)|Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. </br>Some earlier blog posts are available on the [Community site](https://community.dynamics.com/business/b/financials).|
-> |Business Central on the Dynamics 365 blog (ITpro) |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some earlier blog posts are available on the [Community site](https://community.dynamics.com/business/b/businesscentraldevitpro).|
-
+> |Business Central on the Dynamics 365 blog|[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some earlier blog posts are available on the [Community site for partners](https://community.dynamics.com/business/b/businesscentraldevitpro) or the [Community site for users](https://community.dynamics.com/business/b/financials).|
 
 ### Business Central communities
 
@@ -79,9 +81,6 @@ On the [Business Central Community site](https://community.dynamics.com/business
 > |---------|---------|---------|
 > |Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f/758) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
 > |Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
-> |Business Central on the Dynamics 365 Blog for users |[https://cloudblogs.microsoft.com/dynamics365/users/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/users/product/business-central/) | Use this to learn more about new Business Central and app releases, tips and tricks, as well as updates about new country releases. |
-> |Business Central on the Dynamics 365 Blog for partners |[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/) | Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. |
-
 
 You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central and Dynamics NAV](https://www.navug.com/home), which is a user-led, user-driven community of 22,054 users, partners, and MVPs.  
 

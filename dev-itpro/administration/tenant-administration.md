@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 05/31/2019
+ms.date: 09/12/2019
 ms.author: edupont
 ---
 # Administration of Business Central Online
@@ -17,16 +17,16 @@ As a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reselling partner
 
 ## Get started with the Cloud Solution provider program
 
-You must enroll in the Cloud Solution Provider program in order to service Business Central online. In the Microsoft Partner Center documentation, you can learn how to [add a customer](/partner-center/add-a-new-customer?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml), [assign licenses to users](/partner-center/assign-licenses-to-users?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml), and [create new subscriptions](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml). [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is one of the subscriptions that you can create, and there are [!INCLUDE[prodshort](../developer/includes/prodshort.md)]-specific license types that you can assign to users.  
+You must enroll in the [Cloud Solution Provider program](https://partner.microsoft.com/en-US/membership/cloud-solution-provider) in order to service Business Central online. In the Microsoft Partner Center documentation, you can learn how to [add a customer](/partner-center/add-a-new-customer?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml), [assign licenses to users](/partner-center/assign-licenses-to-users?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml), and [create new subscriptions](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml). [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is one of the subscriptions that you can create, and there are [!INCLUDE[prodshort](../developer/includes/prodshort.md)]-specific license types that you can assign to users.  
 
 ## Extending trials
 
-A prospect can sign up for a free trial of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When they first sign up for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], they get access to an evaluation version that does not include all capabilities in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If they then enable the 30 day trial experience, this enables all capabilities. However, sometimes 30 days is not quite enough to decide if they want to buy [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In that case, they can extend their trial with an additional 30 days. For more information, see [Need More Time to Decide Whether to Subscribe?](/dynamics365/business-central/admin-extend-trial?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml).  
+A prospect can sign up for a free trial of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When they first sign up for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], they get access to an evaluation version that does not include all capabilities in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. They can then switch to the 30 day trial experience to enable all capabilities. However, sometimes 30 days is not quite enough to decide if they want to buy [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. In that case, they can extend their trial with an additional 30 days. For more information, see [Need More Time to Decide Whether to Subscribe?](/dynamics365/business-central/admin-extend-trial?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml).  
 
 If the prospect wants to extend the trial further than those 30 days, you can extend it another 30 days if you, as the delegated administrator, log into their [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and extend the trial using the same **Extend Trial Period** guide. However, after those additional 30 days, the prospect must either purchase [!INCLUDE[prodshort](../developer/includes/prodshort.md)], or you can ask Microsoft for an additional extension of the trial by contacting Support.  
 
 > [!TIP]
-> You can suggest your prospects sign up for a trial, but you can also set up a customized demonstration environment based on your sandbox environment. This way, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md).
+> You can suggest your prospects sign up for a trial, but you can also set up a customized demonstration environment based on a sandbox environment. This way, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Creating a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml).  
 
 ## Acting as a delegated administrator
 
@@ -49,6 +49,8 @@ The following tasks are not available to the delegated administrator:
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [The Business Central Administration Center API](administration-center-api.md)  
+[Submitting support requests on behalf of your customer](tenant-admin-center.md#submitting-support-requests-on-behalf-of-your-customer)  
 [Resources for Help and Support for Dynamics 365 Business Central](../help-and-support.md)  
+[How does Microsoft handle database sizes?](../faq.md#how-does-microsoft-handle-database-sizes)  
 [Resell Different Solutions](../developer/readiness/readiness-reseller.md)  
 [Deliver consulting services as a VAR: aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices)  
