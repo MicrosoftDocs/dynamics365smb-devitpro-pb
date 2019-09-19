@@ -1111,6 +1111,7 @@ Now, you can publish the Microsoft and 3rd-party extensions that were published 
 
 In version 15.0, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. For an introduction to the System Application, see [Breaking the monolith: Introducing the Business Central System Application](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/09/introducing-the-dynamics-365-business-central-system-application/).
 
+
 ## <a name="Symbols"></a>Symbols
 
 Symbols are the application programming interface between AL code and C/AL code. Symbols enable the ability to reference C/AL objects from AL objects. Symbols are provided as an extension package, and are published to the server instance similar to application extensions, but not installed on tenants.
