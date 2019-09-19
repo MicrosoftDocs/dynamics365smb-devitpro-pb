@@ -20,6 +20,10 @@ Encryption key functions must not be invoked.
 Encryption key functions must not be invoked.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+> [!Note]
+> [!INCLUDE[on_prem_only](../developer/includes/on_prem_only.md)] For online versions, encryption is always enabled and you cannot turn it off.
+
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
