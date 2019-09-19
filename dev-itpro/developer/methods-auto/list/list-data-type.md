@@ -46,6 +46,8 @@ The following methods are available on instances of the List data type.
 ## Remarks  
  The List can only be used with simple types i.e. you can have a List of [Integer] but cannot have a List of [Blob]. 
 
+ Lists are 1-based indexed, that is, the indexing of the List data type begins with 1.
+
 ## Example  
  In the following example, the variable `CustomerNames` is a list of Text values which represent customer names. The procedure `WorkWithListOfCustomers` displays how one would work with the List data type. The `Add` method is used to add the string `'John'` to the `CustomerNames` list. The `Contains` method is used to check whether the list contains the specified value, in this case, the string `'John'`. We continue by using the Message procedure to display a relevant message. 
 
