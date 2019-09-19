@@ -92,3 +92,4 @@ In general, views can in several ways be compared to page customizations. These 
 [Page Object](devenv-page-object.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Page Customization Object](devenv-page-customization-object.md)  
+[SharedLayout Property](properties/devenv-sharedlayout-property.md)

@@ -69,3 +69,4 @@ view(DetachedView)
 
 ## See Also
 [Properties](devenv-properties.md)  
+[Views](../devenv-views.md)
