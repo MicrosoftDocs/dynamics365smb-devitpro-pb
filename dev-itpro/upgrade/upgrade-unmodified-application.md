@@ -179,7 +179,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\15.x\35986\W1DVD\Applications\System Application\Source\Microsoft_System Application.app"
     ```
     -->
-    [What is the System Application?](upgrade-overview-v15.md#Symbols) 
+    [What is the System Application?](upgrade-overview-v15.md#SystemApplication) 
 5. Publish the Business Central base application extension (Microsoft_Base Application.app).
 
     The **Base Application** extension contains the application business objects. You find the (Microsoft_Base Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).

@@ -27,7 +27,7 @@ Use this process when you have a customized Business Central application that yo
  
  
 
-### Single-tenant and multitenant deployments
+#### Single-tenant and multitenant deployments
 
 The process for upgrading the very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data are included in the same database, while with a multitenant deployment application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
@@ -49,14 +49,16 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 2: Convert your application from C/AL to AL
+## Task 2: Convert your version 14 application from C/AL to AL
 
 The first thing to do is convert your solution from C/AL to AL. For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
 
 ## Task 3: Merge version 14.0 AL code with version 15.0 AL code
 
- 
+In version 15.0, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. For an introduction to the System Application, see [Breaking the monolith: Introducing the Business Central System Application](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/09/introducing-the-dynamics-365-business-central-system-application/).
+## Task 4: Uptake System Application 
 
+The
 ## Task 4: Prepare the application database for technical upgrade
 
 1. Make backup of the database.
