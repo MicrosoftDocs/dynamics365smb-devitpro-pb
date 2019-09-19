@@ -18,11 +18,13 @@ an administrator from the reselling partner company. Some of the tools are the s
 
 ## Administration as an internal administrator
 
+Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, and they are members of the **Internal Admin** user group in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
 As the internal administrator, you can add users, grant permissions, set up integration to other products, and many other tasks right there in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Administration](/dynamics365/business-central/admin-setup-and-administration) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
-For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
+For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], where you can manage upgrade schedules and other tasks. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
-If the organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can then cancel the subscription . For more information, see [Unsubscribe, Remove, or Reset Business Central](/dynamics365/business-central/admin-cancel) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+If the organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can then cancel the subscription. For more information, see [Unsubscribe, Remove, or Reset Business Central](/dynamics365/business-central/admin-cancel) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
 ## Administration as a partner
 
