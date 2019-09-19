@@ -2,7 +2,7 @@
 title: "Page Properties"
 author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -74,6 +74,8 @@ This topic lists properties that apply to the page object, controls, and actions
 - [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md)  
 
 - [SourceTableView Property](devenv-sourcetableview-property.md)  
+
+- [UsageCategory Property](devenv-usagecategory-property.md)  
 
 ## Container Control Properties  
  The following properties apply to **Container** controls on a page.  

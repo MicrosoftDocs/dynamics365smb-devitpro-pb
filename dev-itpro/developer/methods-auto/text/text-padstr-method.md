@@ -2,7 +2,7 @@
 title: "PadStr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Changes the length of a string to a specified length. If the string is shorter t
 
 ## Syntax
 ```
-NewString :=   Text.PadStr(String: String, Length: Integer, [FillCharacter: String])
+NewString :=   Text.PadStr(String: String, Length: Integer [, FillCharacter: String])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

@@ -2,7 +2,7 @@
 title: "SaveAsCsv Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/28/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Saves the resulting data set of a query as a comma-separated values (CSV) file.
 
 ## Syntax
 ```
-[Ok := ]  Query.SaveAsCsv(Number: Integer, FileName: String, [Format: Integer], [FormatArgument: String])
+[Ok := ]  Query.SaveAsCsv(Number: Integer, FileName: String [, Format: Integer] [, FormatArgument: String])
 ```
 ## Parameters
 *Number*  

@@ -10,9 +10,10 @@ ms.author: solsen
 ---
 
 # The “Ready to Go” Online Learning for Pre-Sales
-Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md).
+Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md). 
 
-## Getting started
+# [**Getting Started**](#tab/gettingstarted)
+<!-- ## Getting started -->
 
 |Course description|Go to|
 |----|-----|
