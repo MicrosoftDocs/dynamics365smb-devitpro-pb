@@ -29,7 +29,7 @@ SharedLayout = false;
 ## Remarks  
 A view with `SharedLayout = true` follows the design of the **All** page and any user personalization made on **All** or any of the views marked with `SharedLayout` are applied on the view. They all share the same layout. This is a basic experience in the case where defining a specific layout for the view is not important. The view is then filter only. 
 
-Code sample: 
+### Example
 
 ```
 view(SharedLayoutView) 
@@ -44,7 +44,7 @@ view(SharedLayoutView)
 
 A view with detached layout `SharedLayout = false` defines its own layout and is independent from all other views. Any changes coded in the layout sections are applied in the view. User personalization made on the page are not applied on that view.
 
-Code sample:
+### Example
 
 ```
 view(DetachedView)
