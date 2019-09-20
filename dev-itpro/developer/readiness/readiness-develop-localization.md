@@ -94,10 +94,6 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 * If your localization app(s) are extending Business Central data model with new tables and/or fields, you must setthe  DataClassification property correctly. Localization apps with fields having the DataClassification property set to ToBeClassified will be rejected. Read more on [Classifying Data in Business Central here](../devenv-classifying-data.md).
 * If you're converting an existing localization (developed in C/AL) to localization apps (check this [video](https://mbspartner.microsoft.com/D365/Videos/101769)(requires PartnerSource access)), as described in technical checklist for your app, you'll need to set the ApplicationArea property on UI elements that you want to make visible in Business Central. To help you with that use [NAVApplicationAreaHelper powershell command let](https://blogs.msdn.microsoft.com/nav/2018/06/06/navapplicationareahelper/) to do this in bulk.  
 
-## Getting started with localization apps
-Choose add-on apps for localizations, when you are adding or changing functionality for the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] user. See the following whitepaper for [getting started with developing add-on apps](https://go.microsoft.com/fwlink/?linkid=869734). It contains information about [object ranges](../devenv-object-ranges.md) and other details that are useful for getting started with development of your app. You can request your unique object range [here](https://mbs.microsoft.com/partnersource/global/partner-essentials/partner-strategy/365businesscentralrequestuniqueobjectrange) (requires PartnerSource access).
-For more information about localization apps, see [Translation and Localization apps](../devenv-work-with-translation-files.md#translation-and-localization-apps)
-
 > [!NOTE]  
 > You can also create Connect apps if you find it beneficial to have some functionality placed outside the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] environment and instead connect to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] using for example APIs or Web services.
 
