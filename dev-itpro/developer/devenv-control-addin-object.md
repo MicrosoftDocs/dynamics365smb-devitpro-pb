@@ -121,13 +121,50 @@ page 50100 CustomersMapPage
                 // The control add-in events can be handled by defining a trigger with a corresponding name.
 
                 trigger CountryClicked(Country : JsonObject)
-                var Data : JsonArray;
+                var 
+                    Data : JsonArray;
                 begin
-
                     // The control add-in methods can be invoked via a reference to the usercontrol.
 
+                    Data := CustomersPerCountryToJson();
                     CurrPage.ControlName.LoadData(Data);
-                end;                  
+                end;
+            }
+        }
+    }
+
+    // Coverts the CustomerPerCountryQuery query into a JsonArray data type.
+    local procedure CustomersPerCountryToJson() Result: JsonArray
+    var
+        CustomersQuery: query CustomersPerCountryQuery;
+        JObject: JsonObject;
+    begin
+        CustomersQuery.Open();
+        while CustomersQuery.Read() do begin
+            JObject := QueryRecordToJson(CustomersQuery);
+            Result.Add(JObject);
+        end;
+    end;
+    
+    // Converts a CustomersPerCountryQuery row into a JsonObject data type.
+    local procedure QueryRecordToJson(var Q: Query CustomersPerCountryQuery) Result: JsonObject
+    begin
+        Result.Add('code', Q.CountryRegionCode);
+        Result.Add('value', Q.CustomerCount);
+    end;
+}
+
+// The query retrieves the different country/region codes that appear in the Customer table and their number of occurrences.
+query 50101 CustomersPerCountryQuery
+{
+    elements
+    {
+        dataitem(Customer; Customer)
+        {
+            column(CountryRegionCode; "Country/Region Code") { }
+            column(CustomerCount)
+            {
+                Method = Count;
             }
         }
     }
