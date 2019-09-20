@@ -40,6 +40,20 @@ Alternatively, you can sign up for an Azure subscription that is not associated 
 
  When you have created the Azure AD tenant, you must add users. For more information, see [Quickstart: Add new users to Azure Active Directory](http://go.microsoft.com/fwlink/?LinkId=317435). 
 
+> [!IMPORTANT]  
+> For security reasons, we recommend that you limit the lifetime of the access token to 10 minutes. To do this, follow the steps in the [To set the access token lifetime](#to-set-the-access-token-lifetime) section below.
+
+### To set the access token lifetime
+As a reference, see the prerequisites section in the following topic: [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes#prerequisites). Follow the steps outlined below.
+
+1. Download the latest [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.11).
+2. Run the following command to sign in to your Azure AD admin account `Connect-AzureAD -Confirm`
+3. Login as the tenant admin. 
+4. Run the `Get-AzureADPolicy` command. 
+5. For each `Id` which is the result of above command, run `    Remove-AzureADPolicy -Id {Guid}`. 
+6. Set the token lifetime to 10 minutes by running the following command: `New-AzureADPolicy -Definition @('{"TokenLifetimePolicy":{"Version":1, "AccessTokenLifetime":"0.00:10:00"}}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault $true -Type "TokenLifetimePolicy"`.
+
+
 ## Task 2: Add an Application for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to the Azure AD Tenant  
 
 You must register your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution as an application in Azure AD tenant. Then, you can choose to make it available to other Azure AD tenants.  
@@ -168,4 +182,6 @@ To specify web service access key, go to **Web Service Access** on the **User Ca
 The access key that appears in the **Web Service Access Key** is need to access web services. 
 
 ## See Also  
- [Authentication and Credential Types](Users-Credential-Types.md)
+
+[Authentication and Credential Types](Users-Credential-Types.md)  
+[Troubleshooting: The SAML2 token is not valid because its validity period has ended](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
