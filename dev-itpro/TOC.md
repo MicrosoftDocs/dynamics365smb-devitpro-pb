@@ -124,6 +124,7 @@
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
+## [Version numbers in Business Central](administration/version-numbers.md)
 <!-- end admin -->
 <!-- Development-->
 # Development

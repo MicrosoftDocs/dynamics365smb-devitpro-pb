@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 09/19/2019
+ms.date: 09/20/2019
 ms.author: edupont
 ---
 # Administration of Business Central Online
@@ -18,7 +18,7 @@ an administrator from the reselling partner company. Some of the tools are the s
 
 ## Administration as an internal administrator
 
-Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, and they are members of the **Internal Admin** user group in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+Internal administrators are the system administrators, IT professionals, or superusers of the customer's company.  
 
 As the internal administrator, you can add users, grant permissions, set up integration to other products, and many other tasks right there in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Administration](/dynamics365/business-central/admin-setup-and-administration) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
@@ -69,5 +69,6 @@ If the prospect wants to extend the trial further than those 30 days, the partne
 [Submitting support requests on behalf of your customer](tenant-admin-center.md#submitting-support-requests-on-behalf-of-your-customer)  
 [Resources for Help and Support for Dynamics 365 Business Central](../help-and-support.md)  
 [How does Microsoft handle database sizes?](../faq.md#how-does-microsoft-handle-database-sizes)  
+[Version numbers in Business Central](version-numbers.md)  
 [Resell Different Solutions](../developer/readiness/readiness-reseller.md)  
 [Deliver consulting services as a VAR: aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices)  

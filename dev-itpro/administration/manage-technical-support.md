@@ -38,23 +38,7 @@ You also have access to this information in the [!INCLUDE [prodadmincenter](../d
 
 ### Version
 
-You can use the information about which version the tenant is on to help you troubleshoot the issue that the customer has reported, for example. This information is listed in the **Troubleshooting** section of the **Help and Support** page in the following format:
-
-|Version  |Example      |Description                                 |
-|---------|-------------|--------------------------------------------|
-|Platform \<major>.\<minor>.\<build>.\<revision>|14.0.29537.0  | Specifies the full platform version, which includes client and server components. |
-|Application \<build> (\<country> \<name> \<major>.\<minor>)|29537 (US Business Central 14.0)| Specifies the build number for the application, including the major version number. |
-
-However, if you use the online administration center, the version information is rendered differently:
-
-|Version  |Example      |Description                                 |
-|---------|-------------|--------------------------------------------|
-|Platform |14.0 | Specifies the platform version, which includes client and server components. |
-|Application \<major>.\<minor>.\<build>.\<revision>|14.0.29537.0 | Specifies the full version number for the application. |
-
-The numbers are updated based on Microsoft's builds. In the default version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, platform and application have the same major version number but different build numbers. If you perform a technical upgrade of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then platform and application will have different versions. The October'18 update was major update 13, the April'19 update was major version 14, and the 2019 release wave 2 is major version 15.  
-
-For more information about build versions, see the blog post by our technical evangelist at [Business Central Build Numbers](https://freddysblog.com/2018/12/05/business-central-build-numbers/).  
+You can use the information about which version the tenant is on to help you troubleshoot the issue that the customer has reported, for example. This information is listed in the **Troubleshooting** section of the **Help and Support** page. For more information, see [Version numbers in Business Central](version-numbers.md).  
 
 ### Last known error
 
