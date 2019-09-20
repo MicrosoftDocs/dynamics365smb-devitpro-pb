@@ -23,7 +23,7 @@ ROBOTS: NOINDEX
 
 ## Upgrade paths
 
-When upgrading your solution to version 5, the goal is to move towards using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application and  system application as-is, and moving your code customizations into extensions. There are different paths that you can take to achieve this goal as outlin in the following illustration.
+When upgrading your version 14 solution to version 15, the goal is to move towards a full uptake of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base and system application as-is and migrating code customizations to add-on extensions. There are different upgrade paths that you follow to get to this state, as illustrated in the following figure. Most paths can be performed in stages. Depending on the path you choose, you might be limited from bringing your solution to the next stage until tooling is available in a future release.
 
 [add illustration]
 
