@@ -51,6 +51,10 @@ The following tasks are not available to the delegated administrator:
 
     You can still use the **Open in Excel** action to view data in Excel.
 
+### Manage technical support
+
+As a reselling partner, you must be the first line of support for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] customers. You must set up your support contact information, and help the internal administrators troubleshoot any issues that users find. For more information, see [Managing Technical Support](manage-technical-support.md).  
+
 ## Extending trials
 
 A business can sign up for a free trial of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When they first sign up for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], they get access to an evaluation version that does not include all capabilities in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. They can then switch to the 30 day trial experience to enable all capabilities.  
@@ -66,7 +70,7 @@ If the prospect wants to extend the trial further than those 30 days, the partne
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [The Business Central Administration Center API](administration-center-api.md)  
-[Submitting support requests on behalf of your customer](tenant-admin-center.md#submitting-support-requests-on-behalf-of-your-customer)  
+[Submitting support requests on behalf of your customer](manage-technical-support.md#submitting-support-requests-on-behalf-of-your-customer)  
 [Resources for Help and Support for Dynamics 365 Business Central](../help-and-support.md)  
 [How does Microsoft handle database sizes?](../faq.md#how-does-microsoft-handle-database-sizes)  
 [Version numbers in Business Central](version-numbers.md)  
