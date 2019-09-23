@@ -103,13 +103,14 @@ To report an outage:
 7. Finally, add the date and time when the outage began. This information will also flow to the support ticket.  
 8. Choose the consent checkbox, and then choose **Report**.
 
-A support request ticket is then created, and you will see a dialog box with the ticket ID. You cna then monitor progress in the **Reported Outages** section. You can access the tickets in the Partner Center.  
+A support request ticket is then created, and you will see a dialog box with the ticket ID. You can then monitor progress in the **Reported Outages** section. From there, you can access the tickets in the Partner Center. For more information, see the [Microsoft Partner Center](/partner-center/) documentation.  
 
 ## See Also
 
 [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Technical Support for Business Central](../technical-support.md)  
+[Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
 [Deployment Overview](../deployment/Deployment.md)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Administration of Business Central On-Premises](Administration.md)  
