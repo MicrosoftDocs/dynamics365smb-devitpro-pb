@@ -2,7 +2,7 @@
 title: "List Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ The following methods are available on instances of the List data type.
 |-----------|-----------|
 |[Count()](list-count-method.md)|Gets the number of elements contained in the List.|
 |[Add(T)](list-add-method.md)|Adds a value to the end of the List.|
-|[AddRange(T, [T,...])](list-addrange-t-t-method.md)|Adds the elements of the specified collection to the end of the list.|
+|[AddRange(T [, T,...])](list-addrange-t-t-method.md)|Adds the elements of the specified collection to the end of the list.|
 |[AddRange(List of [T])](list-addrange-list[t]-method.md)|Adds the elements of the specified collection to the end of the list.|
 |[Get(Integer, var T)](list-get-integer-t-method.md)|Gets the element at the specified index.|
 |[Get(Integer)](list-get-integer-method.md)|Gets the element at the specified index. This method will raise an error if the index is outside the valid range.|
@@ -45,6 +45,8 @@ The following methods are available on instances of the List data type.
 
 ## Remarks  
  The List can only be used with simple types i.e. you can have a List of [Integer] but cannot have a List of [Blob]. 
+
+ Lists are 1-based indexed, that is, the indexing of the List data type begins with 1.
 
 ## Example  
  In the following example, the variable `CustomerNames` is a list of Text values which represent customer names. The procedure `WorkWithListOfCustomers` displays how one would work with the List data type. The `Add` method is used to add the string `'John'` to the `CustomerNames` list. The `Contains` method is used to check whether the list contains the specified value, in this case, the string `'John'`. We continue by using the Message procedure to display a relevant message. 

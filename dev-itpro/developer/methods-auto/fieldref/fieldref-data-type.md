@@ -2,7 +2,7 @@
 title: "FieldRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,6 +48,7 @@ The following methods are available on instances of the FieldRef data type.
 |[TestField(Decimal)](fieldref-testfield-decimal-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Guid)](fieldref-testfield-guid-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(String)](fieldref-testfield-string-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
+|[TestField(Label)](fieldref-testfield-label-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Text)](fieldref-testfield-text-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Code)](fieldref-testfield-code-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Date)](fieldref-testfield-date-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
@@ -56,8 +57,8 @@ The following methods are available on instances of the FieldRef data type.
 |[TestField(Variant)](fieldref-testfield-variant-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Any)](fieldref-testfield-joker-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[Relation()](fieldref-relation-method.md)|Finds the table relationship of a given field.|
-|[SetRange([Any], [Any])](fieldref-setrange-method.md)|Sets a simple filter on a field, such as a single range or a single value.|
-|[SetFilter(String, [Any,...])](fieldref-setfilter-method.md)|Assigns a filter to a field that you specify.|
+|[SetRange([Any] [, Any])](fieldref-setrange-method.md)|Sets a simple filter on a field, such as a single range or a single value.|
+|[SetFilter(String [, Any,...])](fieldref-setfilter-method.md)|Assigns a filter to a field that you specify.|
 |[GetFilter()](fieldref-getfilter-method.md)|Gets the filter that is currently applied to the field referred to by FieldRef.|
 |[GetRangeMin()](fieldref-getrangemin-method.md)|Gets the minimum value in a range for a field.|
 |[GetRangeMax()](fieldref-getrangemax-method.md)|Gets the maximum value in a range for a field.|

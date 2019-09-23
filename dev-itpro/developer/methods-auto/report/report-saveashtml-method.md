@@ -2,7 +2,7 @@
 title: "SaveAsHtml Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Saves a report as an HTML file. The file is saved on the computer where the serv
 
 ## Syntax
 ```
-[Ok := ]  Report.SaveAsHtml(Number: Integer, FileName: String, [var Record: Record])
+[Ok := ]  Report.SaveAsHtml(Number: Integer, FileName: String [, var Record: Record])
 ```
 ## Parameters
 *Number*  

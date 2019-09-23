@@ -2,7 +2,7 @@
 title: "Create Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/10/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Creates an Automation object.
 
 ## Syntax
 ```
-[Ok := ]  File.Create(Name: String, [Encoding: TextEncoding])
+[Ok := ]  File.Create(Name: String [, Encoding: TextEncoding])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

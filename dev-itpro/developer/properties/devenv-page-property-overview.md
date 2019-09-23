@@ -14,7 +14,7 @@ ms.author: solsen
 ---
 
 # Page and Page Extension Properties Overview
-This topic lists properties that apply to the [Page Object](../devenv-page-object.md) and [Page Extension Object](../devenv-page-ext-object.md). 
+This topic lists properties that apply to the [Page Object](../devenv-page-object.md) and [Page Extension Object](../devenv-page-ext-object.md).
 
 ## Page object properties
 The following properties all apply to the page object, only some of these properties can be set for a page extension object as specified below.
@@ -24,7 +24,7 @@ The following properties all apply to the page object, only some of these proper
 |[AccessByPermission Property](devenv-accessbypermission-property.md)||<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
 |[AdditionalSearchTerms Property](devenv-additionalsearchterms-property.md)||<ul><li>Page object</li></ul>|
 |[AdditionalSearchTermsML Property](devenv-additionalsearchtermsml-property.md)||<ul><li>Page object</li></ul>|
-|[ApplicationArea Property](devenv-applicationarea-property.md)|X|<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
+|[ApplicationArea Property](devenv-applicationarea-property.md)|X (see next column)|<ul><li>Page object (cannot be specified for a page extension object)</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
 |[AssistEdit Property](devenv-assistedit-property.md)||<ul><li>Field control</li></ul>|
 |[AutoFormatExpression Property](devenv-autoformatexpression-property.md)||<ul><li>Field control</li></ul>|
 |[AutoFormatType Property](devenv-autoformattype-property.md)||<ul><li>Field control</li></ul>|
