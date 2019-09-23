@@ -39,8 +39,6 @@ The following data types are available as part of the AL Language. Each data typ
 |[Dictionary](dictionary/dictionary-data-type.md)|Represents a collection of keys and values.|
 |[DotNet](dotnet/dotnet-data-type.md)|Represents an unspecified .NET type.|
 |[Duration](duration/duration-data-type.md)|Represents the difference between two DateTimes. This value can be negative. It is stored as a 64-bit integer. The integer value is the number of milliseconds during the duration.|
-|[Enum](enum/enum-data-type.md)|Provides access to all enums using ::|
-|[EnumType](enumtype/enumtype-data-type.md)|Represents the text content of an element or attribute.|
 |[ErrorInfo](errorinfo/errorinfo-data-type.md)|Provides a structure for grouping information about an error.|
 |[FieldRef](fieldref/fieldref-data-type.md)|Identifies a field in a table and gives you access to this field.|
 |[File](file/file-data-type.md)|Represents a file.|
