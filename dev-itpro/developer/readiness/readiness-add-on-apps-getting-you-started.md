@@ -102,14 +102,11 @@ It is key that you use the same display name and email throughout your app submi
 - To sign into the Cloud Partner Portal (and creating your app offer)
 - To enroll and sign in to the Collaborate tool and “Ready to Go” platform
 
-## Access to the Cloud Partner Portal and being set up as a publisher
+## Access to Partner Center
+Partner Center is the single destination to manage your business relationship with Microsoft. 
+[Get Started by clicking this link](https://partner.microsoft.com/en-us/dashboard/account/v3/enrollment/introduction/azureisv)
 
-The Cloud Partner Portal is the place where you first will submit your App for the marketing validation and later submit it for publication.
-
-In order to be set up as a publisher and access the Cloud Partner Portal, you need to email Ryan Weigel at rweigel@microsoft.com , and provide him the following information:
-- Your Publisher display name (which will be displayed on AppSource)
-- The Email account you chose as the primary contact (which is needed when logging into the Cloud Partner Portal)
-- Your MPN ID
+NOTE: This has replaced the Cloud Partner Portal. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
 
 ## Get onboarded to tools and programs
 
