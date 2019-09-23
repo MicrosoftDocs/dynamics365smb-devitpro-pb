@@ -134,6 +134,10 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
 	In the [!INCLUDE[admintool](../developer/includes/admintool.md)], you do this by setting the **Azure AD App URI** field on the **Azure Active Directory** tab. The App ID URI is typically the same as the *wtrealm* parameter value of the **WS-Federation Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and the **ACSUri** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. 
 
+6. Increase the `ExtendedSecurityTokenLifetime` parameter value. We recommend that you set it to a value greater than 8 hours.
+
+    This parameter defines the interval of time that a client session can remain inactive before the session is dropped. If the value is too low, users may experience the error **Connection is not longer available or was lost** and the event log will include the error **The SAML2 token is not valid because its validity period has ended.** fir the server instance. Increasing this value will resolve this issue.	  
+
 ## Task 4: Configure [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] for Azure AD  
  You must configure the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to use `AccessControlService` as the credential type.  
 
