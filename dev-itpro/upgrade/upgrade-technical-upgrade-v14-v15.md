@@ -48,6 +48,12 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
+3. Copy the version 14 **CodeViewer** add-in to the version 15.0 server installation.
+
+    Copy the **CodeViewer** folder from the **Add-ins** folder of the Business Central version 14 RoleTailored client installation (C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client\Add-ins) to the **Add-ins** folder of the Business Central 150 Server installation (C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins). Replace the existing folder and files, if any.
+     
+    In version 15.0 CodeViewer is no longer used, but it is required because of references tha exist in the converted application. If you omit this step, you might get compilation errors later.
+
 ## Task 2: Convert your application from C/AL to AL
 
 The first thing to do is convert your solution from C/AL to AL. For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
@@ -305,6 +311,7 @@ Now, you can install the Microsoft and 3rd-party extensions that were installed 
 Now, your application is fully upgraded to the version 15 platform.
 
 ## Task 10: Post-upgrade
+
 1. Enable task scheduler on the server instance.
 2. (Multitnenat only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
 
