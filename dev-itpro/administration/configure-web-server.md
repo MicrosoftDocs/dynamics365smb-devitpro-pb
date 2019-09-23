@@ -129,11 +129,6 @@ The following table describes the settings that are available in the navsettings
 |DefaultRelativeHelpPath|Specifies the default Help article to open if no other context-sensitive link is specified.<br /><br /> Default value: none|
 |PersonalizationEnabled|Specifies whether personalization is enabled in the [!INCLUDE[webclient](../developer/includes/webclient.md)]. Set to `true` to enable personalization.<br /><br />For more information, see [Managing Personalization](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage).|
 
-<!-- Hidden from file and help
-|BaseHelpSearchUrl|Specifies the link to search API for the online Help library that the deployment uses, such as *https://mysite.com/{0}/search/index?search={1}&scope=BusinessCentral*.<br /><br /> Default value: none|
-
--->
-
 ### `ApplicationIdSettings` element settings
 
 |Setting/KeyName|Description|  
