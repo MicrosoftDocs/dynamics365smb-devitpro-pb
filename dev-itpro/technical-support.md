@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 09/17/2019
+ms.date: 09/23/2019
 ---
 # Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]
 
@@ -18,7 +18,13 @@ In this section, you can learn about the tools that are available to you to help
 
 Because you are the first line of support for your customers, you must make it easy for them to contact you. to that end, there is a section in the [Help and Support](/dynamics365/business-central/product-help-and-support?toc=/dynamics365/business-central/dev-itpro/toc.json) page in your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants where they can find this information.  
 
-<!--Temporary setup-->
+### To supply your support contact information in the administration center
+
+1. In the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)], choose the environment that you want to specify yur contact details for, such as *Production*, and then choose the **Manage Support Contact** button.
+2. Fill in the **Name**, **Support email address**, and the **Support website address** fields, so that your users know how to contact you for technical support.
+3. Optionally, choose the **Apply to all environments** checkbox if you want to add the same details to all related environments.
+
+<!--Temporary setup
 ### To supply your support contact information for a tenant
 
 1. In your customer's tenant, choose the ![Lightbulb that opens the Tell Me feature](developer/media/search_small.png "Tell me what you want to do") icon, enter **Support Contact Information**, and then choose the related link.
@@ -26,14 +32,6 @@ Because you are the first line of support for your customers, you must make it e
 3. In the **Support email address**, specify the email address if this is how your customer can reach your technical support.
 
     To use the email account that you are logged in with, choose the *Use my authentication email* link; otherwise, specify the relevant email address.  
-
-<!--TODO: Set this up in the tenant admin center
-
-### To supply your support contact information in the administration center
-
-1. In the [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)], choose the environment that you want to specify yur contact details for, such as *Production*, and then choose the **Manage Support Contact** button.
-2. In the **Support website address** field, specify the URL to where your customer can learn about your technical support.
-3. In the **Support email address** field, specify the email address if this is how your customer can reach your technical support.
 -->
 
 ### On-premises deployments
