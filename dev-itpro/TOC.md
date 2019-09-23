@@ -338,7 +338,6 @@
 #### [ClientType Option Type](developer/methods-auto/clienttype/clienttype-option.md)  
 #### [Code Data Type](developer/methods-auto/code/code-data-type.md)
 #### [Codeunit Data Type](developer/methods-auto/codeunit/codeunit-data-type.md)    
-#### [CodeunitInstance Data Type](developer/methods-auto/codeunitinstance/codeunitinstance-data-type.md)    
 #### [CompanyProperty Data Type](developer/methods-auto/companyproperty/companyproperty-data-type.md)
 #### [Database Data Type](developer/methods-auto/database/database-data-type.md)
 #### [DataClassification Option Type](developer/methods-auto/dataclassification/dataclassification-option.md)
