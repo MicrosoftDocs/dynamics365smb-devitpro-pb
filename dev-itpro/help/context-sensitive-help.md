@@ -112,6 +112,7 @@ You can find a couple of suggestions for how to go about this in our blog post, 
 [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../developer/devenv-extension-example.md)  
 [Building an Advanced Sample Extension](../developer/devenv-extension-advanced-example.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
+[JSON Files](../developer/devenv-json-files.md)  
 [Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
 [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
 [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/)  
