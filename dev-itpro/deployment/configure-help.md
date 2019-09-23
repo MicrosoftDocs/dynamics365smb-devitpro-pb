@@ -80,6 +80,8 @@ If you want to customize or extend the Microsoft Help, you can fork our public r
 [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server)  
 [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server)  
 [Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
+[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../developer/devenv-extension-example.md)  
+[Building an Advanced Sample Extension](../developer/devenv-extension-advanced-example.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [System Requirements](system-requirement-business-central.md)  
 [Resources for Help and Support](../help-and-support.md)  

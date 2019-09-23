@@ -100,6 +100,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 The platform symbol file contains all of the base app objects that your extension builds on. If the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code detects that the referenced symbols are not present on local disk, you will get a visual prompt in Visual Studio Code to download the symbols from one of the servers specified in the launch.json file. For more information about the platform symbol file, see [Symbols](devenv-symbols.md). -->
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Debugging in AL](devenv-debugging.md)  
 [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md)  
