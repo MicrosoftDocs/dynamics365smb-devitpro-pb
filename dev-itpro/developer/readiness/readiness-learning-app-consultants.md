@@ -10,9 +10,10 @@ ms.author: solsen
 ---
 
 # The “Ready to Go” Online Learning for Application Consultants
-Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md).
+Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md). Use the tabs below to view training available based on proficiency level.
 
-## Getting started
+# [**Getting Started**](#tab/gettingstarted)
+<!-- ## Getting started -->
 
 |Course description|Go to|
 |----|-----|
@@ -26,7 +27,9 @@ Get an overview of the entire "Ready to Go" online learning catalog [here](readi
 |**Learning path: Use journals in Microsoft Dynamics 365 Business Central**<br>Do you need to create and post journal entries in Business Central? Then this path is for you. Setting up general journal templates, creating journal transactions including recurring transactions, and posting transactions are all discussed in the modules of this learning path. This learning path consists of the follwoing modules:<br>- [Set up general journal templates in Dynamics 365 Business Central](https://docs.microsoft.com/en-us/learn/modules/general-journal-templates-dynamics-365-business-central/index)<br>- [Create and process journal entries in Dynamics 365 Business Central](https://docs.microsoft.com/en-us/learn/modules/create-process-journal-entries-dynamics-365-business-central/index)<br>- [Post periodic journal entries in Dynamics 365 Business Central](https://docs.microsoft.com/en-us/learn/modules/periodic-journal-entries-dynamics-365-business-central/index)|[Learning path](https://docs.microsoft.com/en-us/learn/paths/use-journals-dynamics-365-business-central/)|
 |**Learning path: Set up financial management in Microsoft Dynamics 365 Business Central**<br>Do you want to use Business Central for financial management? Then, this learning path is for you. It discusses the setup of number series, audit trail codes, posting groups, dimensions and the chart of accounts. This learning path consists of the follwoing modules:<br>- [Set up number series and trail codes in Dynamics 365 Business Central](https://docs.microsoft.com/en-us/learn/modules/number-series-trail-codes-dynamics-365-business-central/index)<br>- [Set up posting groups in Dynamics 365 Business Central](https://docs.microsoft.com/en-us/learn/modules/posting-groups-dynamics-365-business-central/index)<br>- [Set up dimensions in Dynamics 365 Business Central](https://docs.microsoft.com/en-us/learn/modules/dimensions-dynamics-365-business-central/index)<br>- [Set up the chart of accounts in Dynamics 365 Business Central](https://docs.microsoft.com/en-us/learn/modules/chart-accounts-dynamics-365-business-central/index)|[Learning path](https://docs.microsoft.com/en-us/learn/paths/set-up-financial-management-dynamics-365-business-central/)|
 
-## Proficient knowledge
+
+# [**Proficient Knowledge**](#tab/proficientknowledge)
+<!-- ## Proficient knowledge -->
 
 |Course description|Go to|
 |----|-----|
@@ -40,7 +43,8 @@ Get an overview of the entire "Ready to Go" online learning catalog [here](readi
 |**GDPR Resources for Dynamics 365 Business Central**<br>The General Data Protection Regulation (GDPR) is fundamentally about protecting and enabling the privacy rights of individuals.|[Read](https://www.microsoft.com/trustcenter)<br>[Download](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5fa41da9-69b2-47ea-8413-4a91345b299b&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)|
 
 
-## For experts
+# [**For Experts**](#tab/forexperts)
+<!-- ## For experts -->
 
 |Course description|Go to|
 |----|-----|
