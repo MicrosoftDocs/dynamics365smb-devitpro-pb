@@ -82,7 +82,7 @@ The navsettings.json has the following structure, where settings are included un
 {
   "NAVWebSettings": {
      "//ServerInstance":  "Name of the Business Central Server instance to connect to (for client) or listen on (for server).",
-     "ServerInstance":  "BC140",
+     "ServerInstance":  "BC150",
       [...more keys]
  },
   "ApplicationIdSettings": {
