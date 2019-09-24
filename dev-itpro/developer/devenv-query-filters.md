@@ -40,7 +40,7 @@ You can apply a filter on any field in a table, not just those fields that are r
 
 A data item filter is static which means that it cannot be overwritten by a filter on a column or filter row in Query Designer or by the SETFILTER or SETRANGE methods in AL code. If one of these filter types is applied to the same field as the data item filter, then the filters are combined. In logical terms, this combination corresponds to an "AND" operation. For example, if the data item filter applies a filter on a field to include values greater than 10 \(>10\) and a column filter applies a filter on the same field to include values less than fifty \(\<50\), then the resultant filter includes values that are greater than 10 and less than fifty \(10\< value \<50\).  
 
- The DataItemTableFilter property corresponds to a WHERE clause in an SQL SELECT statement. For more information, see [Equivalent SQL SELECT Statements for Query Filters](Understanding-Query-Filters.md#SQL).  
+ The DataItemTableFilter property corresponds to a WHERE clause in an SQL SELECT statement. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-queryfilter.md#SQL).  
 
 ### Example
 
@@ -82,7 +82,7 @@ query 50100 "Customer_Sales_Quantity"
 
 Unlike data item filters, filters on a column or filter row are dynamic and can be overwritten from AL code at runtime by a call to the SETFILTER or SETRANGE method, if the method sets a filter on the same field.  
 
-You use filters on a column to filter on fields that are included in the dataset. To apply a filter on a column, you set the [ColumnFilter Property](ColumnFilter-Property.md) of the column.  You can apply a filter on any column, including aggregated columns that are applied an aggregate method by the [Method Property](Method-Property.md).  The `ColumnFilter` property has the following syntax:
+You use filters on a column to filter on fields that are included in the dataset. To apply a filter on a column, you set the [ColumnFilter Property](properties/devenv-ColumnFilter-Property.md) of the column.  You can apply a filter on any column, including aggregated columns that are applied an aggregate method by the [Method Property](properties/devenv-Method-Property.md).  The `ColumnFilter` property has the following syntax:
 
 ```
 ColumnFilter = String;
@@ -90,7 +90,7 @@ ColumnFilter = String;
 
 where `String` is the filter expression.
 
-You use a filter row when you want to filter the query on a field, but you do not want to include the field in the dataset. For example, you might want to filter a date field on a specific date, but you do not want to include the date in the dataset. To set up a filter row similar to columns of a data item. First, you add `filter` element that specifies the table field on which you want to filter, then you add the `ColumnFilter` property to set the conditions of the filter. a row of the type Filter in Query Designer that specifies a field, and then set its ColumnFilter property. For more information about how to set up filter rows, see [How to: Set Up Filter Rows in Query Designer](How-to--Set-Up-Filter-Rows-in-Query-Designer.md).
+You use a filter row when you want to filter the query on a field, but you do not want to include the field in the dataset. For example, you might want to filter a date field on a specific date, but you do not want to include the date in the dataset. To set up a filter row similar to columns of a data item. First, you add `filter` element that specifies the table field on which you want to filter, then you add the `ColumnFilter` property to set the conditions of the filter.
 
 ### Example
 
@@ -140,7 +140,7 @@ query 50100 "Customer_Sales_Quantity"
 
 ```
 
-In an SQL SELECT statement, filters on a column or filter row that do not apply an aggregate method, as with the `Location_Code` filter row in the example, would correspond to a WHERE clause. Filters on a columns or filter rows that do apply a totals method, as with the `Quantity` column in the example, would correspond to a HAVING clause. For more information, see [Equivalent SQL SELECT Statements for Query Filters](Understanding-Query-Filters.md#SQL).  
+In an SQL SELECT statement, filters on a column or filter row that do not apply an aggregate method, as with the `Location_Code` filter row in the example, would correspond to a WHERE clause. Filters on a columns or filter rows that do apply a totals method, as with the `Quantity` column in the example, would correspond to a HAVING clause. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-query-filters.md#SQL).  
 
 ## Filtering from AL using SETFILTER and SETRANGE methods
 
