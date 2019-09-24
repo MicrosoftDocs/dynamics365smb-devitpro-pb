@@ -8,51 +8,37 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/17/2019
+ms.date: 09/20/2019
 ms.author: edupont
 
 ---
 
 # Managing Technical Support
 
-You can log in to the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated admin for troubleshooting, and you can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage environments and upgrades.  
+If users report that they are having a problem with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], superusers and the internal administrator can often find a solution. The internal administrator can find technical information in the **Help and Support** page as described in the following sections, and they can then escalate relevant issues to the reselling partner.  
+
+The reselling partner can log in to their customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as the delegated admin for troubleshooting. Both internal administrators and the reselling partner can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage environments and upgrades.  
 
 ## Finding technical information
 
-The **Help and Support** page is a powerful tool for you to find technical information about your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the most recent error message, and it has a link to inspect pages for further troubleshooting.  
+The **Help and Support** page is a powerful tool for internal administrators to find technical information about your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the most recent error message, and it has a link to inspect pages for further troubleshooting.  
 
 > [!div class="mx-imgBorder"]
 > ![Links for troubleshooting and support from the Help and Support page](../developer/media/admin/helpsupport_managed.png)
 
-Also in the **Help and Support** page, users can see your support contact information, and they and you can see which version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the tenant is on.  
+Also in the **Help and Support** page, users can see support contact information, provided that this has been set up. For more information, see [To supply your support contact information in the administration center](../technical-support.md#to-supply-your-support-contact-information-in-the-administration-center). The **Help and Support** page also shows which version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the tenant is on.  
 
 As an administrator, you also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. You can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily navigate to your customers' tenants, and you can create sandbox environments that can help troubleshoot any issues reported by your customers. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
 ### Azure Active Directory tenant
 
-If you have configured the support email address, and your customer uses that to contact you, then the **Help and Support** page encourages them to include information about their Azure Active Directory tenant ID in the email. This information is shown at the bottom of the **Help and Support** page. You can use that to identify the tenant in the administration center, and you can use it to log into their tenant.  
+If you have configured the support email address, and your customer uses that to contact you, then the **Help and Support** page encourages them to include information about their Azure Active Directory tenant ID in the email. This information is shown at the bottom of the **Help and Support** page. You can use that to identify the tenant in the administration center, and you can use it to log into their tenant for troubleshooting, for example.  
 
 You also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
 ### Version
 
-You can use the information about which version the tenant is on to help you troubleshoot the issue that the customer has reported, for example. This information is listed in the **Troubleshooting** section of the **Help and Support** page in the following format:
-
-|Version  |Example      |Description                                 |
-|---------|-------------|--------------------------------------------|
-|Platform \<major>.\<minor>.\<build>.\<revision>|14.0.29537.0  | Specifies the full platform version, which includes client and server components. |
-|Application \<build> (\<country> \<name> \<major>.\<minor>)|29537 (US Business Central 14.0)| Specifies the build number for the application, including the major version number. |
-
-However, if you use the online administration center, the version information is rendered differently:
-
-|Version  |Example      |Description                                 |
-|---------|-------------|--------------------------------------------|
-|Platform |14.0 | Specifies the platform version, which includes client and server components. |
-|Application \<major>.\<minor>.\<build>.\<revision>|14.0.29537.0 | Specifies the full version number for the application. |
-
-The numbers are updated based on Microsoft's builds. In the default version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, platform and application have the same major version number but different build numbers. If you perform a technical upgrade of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then platform and application will have different versions. The October'18 update was major update 13, the April'19 update was major version 14, and the 2019 release wave 2 is major version 15.  
-
-For more information about build versions, see the blog post by our technical evangelist at [Business Central Build Numbers](https://freddysblog.com/2018/12/05/business-central-build-numbers/).  
+You can use the information about which version the tenant is on to help you troubleshoot the issue that the customer has reported, for example. This information is also listed in the **Troubleshooting** section of the **Help and Support** page. For more information, see [Version numbers in Business Central](version-numbers.md).  
 
 ### Last known error
 
@@ -77,17 +63,54 @@ The link cannot open errors that were generated by the platform. So if you suspe
 
 ## Escalating your customer's support issues
 
-Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, use the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration Center to easily submit a support request to Microsoft.  
+Sometimes the tenant has run into a problem that you cannot resolve. In those cases, the reselling partner can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily submit a support request to Microsoft.  
 
-For more information, see [Submitting support requests on behalf of your customer](tenant-admin-center.md#submitting-support-requests-on-behalf-of-your-customer).  
+### Submitting support requests on behalf of your customer
+
+Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], use the **New Support Request** link in the Help menu. This opens a new browser tab so that you can submit the support request in the Power Platform Admin Center.  
+
+> [!IMPORTANT]
+> You must be a registered partner in order to submit a support request.
+
+In the Power Platform Admin Center, you are automatically logged in with information about the customer tenant that you are working on behalf of. Create a new support request and fill in the fields as appropriate. You can find most of the necessary information in the administration center, including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers.  
+
+For more information, see [Power Platform Admin Center](/power-platform/admin/admin-documentation).
+
 <!-- TODO: How to manage your customers' support issues -->
+
+## Report customer outages
+
+When a customer has a situation where they cannot login to [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you must take immediate action. You can report this outage to Microsoft by using the **Report Production Outage** action for the relevant production environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. This action creates a support ticket for Microsoft with all the information that is needed to begin steps to resolve the issue.  
+
+> [!NOTE]
+> This option is not available in sandbox environments.  
+
+> [!IMPORTANT]
+> You must be a registered partner in order to report an outage.
+
+To report an outage:
+
+1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
+2. In the action ribbon, choose **Report Production Outage**.
+3. In the **Report Production Outage** pane, choose the outage type:
+
+    - Unable to log on (all users)
+    - Cannot access API/Web Service
+
+4. Enter your name, email address, and phone number. This information will be included in the support ticket.  
+5. Choose **Next**.
+6. In the next pane, provide details about the outage, including which browsers users have tried to log in with, any companies that you can log into, and errors and correlation IDs. This information will be included in the support ticket.  
+7. Finally, add the date and time when the outage began. This information will also flow to the support ticket.  
+8. Choose the consent checkbox, and then choose **Report**.
+
+A support request ticket is then created, and you will see a dialog box with the ticket ID. You can then monitor progress in the **Reported Outages** section. From there, you can access the tickets in the Partner Center. For more information, see the [Microsoft Partner Center](/partner-center/) documentation.  
 
 ## See Also
 
 [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
-[Technical Support for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../technical-support.md)  
+[Technical Support for Business Central](../technical-support.md)  
+[Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
 [Deployment Overview](../deployment/Deployment.md)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Administration of Business Central On-Premises](Administration.md)  
-[Blog post: Business Central Build Numbers](https://freddysblog.com/2018/12/05/business-central-build-numbers/)

@@ -1,10 +1,10 @@
 ---
-title: "View Properties"
-description: "This topic lists properties that apply to views."
+title: "Profile Properties"
+description: "This topic lists properties that apply to profiles specifically."
 
 author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/19/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,10 @@ ms.author: solsen
 ---
 
 # View Properties
-The following topic lists properties that apply to [Views](../devenv-views.md) specifically.
+The following topic lists properties that apply to [Profiles](../devenv-profile-object.md) specifically.
 
-- [Filters](devenv-filters-property.md)  
-- [OrderBy](devenv-orderby-property.md)
-- [SharedLayout](devenv-sharedlayout-property.md)
+- [ProfileDescription](devenv-profiledescription-property.md)  
+- [Enabled](devenv-enabled-property.md)
 
 ## See also
 [Codeunit Properties](devenv-codeunit-properties.md)  

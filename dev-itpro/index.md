@@ -22,4 +22,4 @@ ms.service: "dynamics365-business-central"
 [Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences](faq.md)  
 [Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]](help-and-support.md)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
-[Dynamics NAV developer and ITpro content](/dynamics-nav/index)  
+[Dynamics NAV Developer and ITPro Content](/dynamics-nav/index)  
