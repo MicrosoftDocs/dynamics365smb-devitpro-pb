@@ -266,6 +266,7 @@
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ## Queries
+### [Overview](developer/devenv-query-overview.md)
 ### [Query Object](developer/devenv-query-object.md)
 ### [Linking and Joining Data Items](developer/devenv-query-links-joins.md)
 ### [Filtering](developer/devenv-query-filters.md)
