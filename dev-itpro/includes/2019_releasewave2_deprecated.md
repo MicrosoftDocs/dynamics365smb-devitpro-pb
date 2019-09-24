@@ -1,1 +1,1 @@
-> **DEPRECATED IN:** Business Central 2019 release wave 2
+> **DISCONTINUED AFTER:** Business Central Spring 2019

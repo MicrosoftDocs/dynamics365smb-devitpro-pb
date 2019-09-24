@@ -30,9 +30,7 @@ A RAD published file will not contain the following files that are normally pack
 - Table data
 - Web service definitions  
 
-These files will need to be re-generated with full publishing (Ctrl+F5).
-
-A RAD file will be deleted as a result of a successful publishing.
+These files will need to be re-generated with full publishing (Ctrl+F5). A RAD file will be deleted as a result of a successful publishing.
 
 > [!NOTE]  
 > If RAD publishing fails, then you must do a full publishing before performing another RAD publishing. The final state of an application must be built using full publishing, and never with RAD publishing.
