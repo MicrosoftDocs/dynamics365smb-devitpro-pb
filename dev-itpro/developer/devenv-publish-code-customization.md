@@ -16,12 +16,15 @@ ms.author: solsen
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-This topic decribes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem and publish the code-customized Base Application to the local server.
+This topic describes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem and publish the code-customized Base Application to the local server. 
+
+> [!IMPORTANT]  
+> Instead of code-customizing the Base Application, it is *strongly* recommended to create extensions whenever possible.
 
 ## Prerequisites
 Make sure to have the following prerequisites installed to be able to follow the steps in this topic.
 
-- [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem with the AL Development environment option installed. 
+- [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem with the AL Development environment option installed.
 - Visual Studio Code.
 - The AL Language extension.
 
@@ -39,7 +42,7 @@ Make sure to have the following prerequisites installed to be able to follow the
         Importance = Promoted;
         ShowMandatory = true;
 
-        Style = Strong;       // Show name in bold                 
+        Style = Strong;       // Show name in bold
         
         ToolTip = 'Specifies the customer''s name. This name will appear on all sales documents for the customer.';
 
@@ -135,6 +138,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 The Base Application is now published with the small customization of bolding the text in the name field on the Customer Card.
 
-## See Also  
+## See Also
+
 [Unpublishing and Uninstalling Extensions](devenv-unpublish-and-uninstall-extension-v2.md)  
-[Developing Extensions](devenv-dev-overview.md)  
+[Developing Extensions](devenv-dev-overview.md)
