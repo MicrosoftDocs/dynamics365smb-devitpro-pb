@@ -27,8 +27,6 @@ There a several new and changed platform application features available in [!INC
 
 To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
 
-## Deprecated features
-
 ## Upgrade paths
 
 When upgrading your version 14 solution to version 15, the goal is to move towards a full uptake of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base and system application as-is and migrating code customizations to add-on extensions. There are different upgrade paths that you follow to get to this state, as illustrated in the following figure. Most paths can be performed in stages. Depending on the path you choose, you might be limited from bringing your solution to the next stage until tooling is available in a future release.
@@ -40,7 +38,7 @@ When upgrading your version 14 solution to version 15, the goal is to move towar
 
 ## Upgrade an unmodified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application
 
-Use this scenario if you have a Business Central application that does not include any code customization in C/AL. Customizations, if any, are done by extensions, whihc can be Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central version 15 base application extension and the system application. The result will be a fully upgraded application and platform on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2.
+Use this scenario if you have a Business Central application that does not include any code customization in C/AL. Customizations, if any, are done by extensions, which can be Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central version 15 base application extension and the system application. The result will be a fully upgraded application and platform on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2.
 
 <!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app.-->
 
