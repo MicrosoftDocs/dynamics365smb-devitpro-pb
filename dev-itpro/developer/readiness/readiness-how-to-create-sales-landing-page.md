@@ -221,8 +221,9 @@ We recommend providing three offerings, optimized for three different customer s
 Most lead capture forms are way too long, demanding, and intimidating, and have low completion rates.
 - Note, nobody has the time or is willing to fill out an annoying form, which is of no value to them, especially if it is purely self-serving from your standpoint.	
 
-| Element        | Description | Example |
-|-------- -------|-------------|---------|
+
+| Element       | Description | Example |
+|---------------|-------------|---------|
 |**Contact**|Provide prospects with different contact options based on their readiness to interact with you.|<!--./media/image69.jpg -->|
 
 - Ideally, include a phone number and an email address with an employee photo.
@@ -230,11 +231,10 @@ Most lead capture forms are way too long, demanding, and intimidating, and have 
 
 | Element         | Description | Example |
 |-----------------|-------------|---------|
-|**AppSource app page link & social share**|Include a link back to your listing on AppSource, so the prospect can return when ready.|	Return to AppSource<!--	./media/image70.jpg -->|
+|**AppSource app page link & social share**|Include a link back to your listing on AppSource, so the prospect can return when ready.|Return to AppSource<!--	./media/image70.jpg -->|
 
 - Also, enable visitors to share and forward your app with others!
 
 | Element        | Description | Example |
-|----------------|-------------|---------||**Close them! Add a get started button**|Include a very specific call-to-action button with the option to buy or try.|<!-- ./media/image71.jpg ./media/image72.jpg -->|
-
-
+|----------------|-------------|---------|
+|**Close them! Add a get started button**|Include a very specific call-to-action button with the option to buy or try.|<!-- ./media/image71.jpg ./media/image72.jpg -->|
