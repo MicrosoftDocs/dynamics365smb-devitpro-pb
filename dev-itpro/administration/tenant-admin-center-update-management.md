@@ -10,13 +10,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 09/07/2019
+ms.date: 09/24/2019
 ms.author: jaredha
 ---
 
 # Updating Environments
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are updated according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] roadmap with semiannual major updates in April and October, and monthly service updates. For more information, see [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/en-us/business-applications-release-notes/).
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are updated according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] roadmap with major updates every 6 months in April and October, and monthly service updates. For more information, see [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/en-us/business-applications-release-notes/).
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] gives you a level of control over the timing of updates for each environment.
 
@@ -40,15 +40,15 @@ To set the update window for an environment:
 
 ## Schedule an update date
 
-*For major updates only*, you have the option to select a specific date on which the environment is updated. The **Update version** field in the **Version Management** section of the environment details also displays the version number of the available update version.
+Specifically for major updates, you can select a specific date on which the environment is updated. The **Update version** field in the **Version Management** section of the environment details also displays the version number of the available update version.
 
 To schedule an update date:
 
-1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], Select the **Name** of the relevant environment to open the environment details.
-2. Select the **Schedule Update** action on the **Update** list on the action ribbon.
+1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
+2. Choose the **Schedule Update** action on the **Update** list on the action ribbon.
 3. In the **Schedule Environment Update** pane, select the desired update date.
     > [!NOTE]
-    > The selected date must be within a given date range displayed in the pane.
+    > The specified date must be within a given date range displayed in the pane.
 
 4. Select **Schedule Update**.
 
@@ -56,7 +56,7 @@ When the option is available for tenant administrators to select an update date,
 
 ## Update Notifications
 
-For updates for which the option is available for tenat administrators to schedule the update date, a notification is sent to the notification recipients listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] (See [Managing Tenant Notifications](tenant-admin-center-notifications.md) for more information).
+For updates for which the option is available for tenant administrators to schedule the update date, a notification is sent to the notification recipients listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](tenant-admin-center-notifications.md).
 
 Scheduling environment updates is *not* available for monthly service updates. For these, the update is applied to tenant environments as it becomes available. No notifications are sent to tenant administrators prior to the update. Notifications are sent only after the update is applied.
 
