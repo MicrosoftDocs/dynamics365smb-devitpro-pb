@@ -8,9 +8,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-manager: edupont
+author: jswymer
 ms.service: "dynamics365-business-central"
-ROBOTS: NOINDEX
 ---
 # Technical Upgrade to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2
 

@@ -7,7 +7,7 @@ ms.custom: na
 ms.date: 04/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+author: jswymerms.author: jswymer
 ---
 
 # Code Conversion from C/AL to AL
@@ -183,7 +183,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
 2. Configure Visual Studio Code for optimal performance with AL projects.
 
-    This step is optional, but recommended. For more information, see [Optimize Visual Studio Code for Editing and Building](devenv-optimize-visual-studio-code.md).
+    This step is optional, but recommended. For more information, see [Optimize Visual Studio Code for Editing and Building](../developer/devenv-optimize-visual-studio-code.md).
 
 3. In Visual Studio Code, from the **Command Palette**, select the **AL Go!** command to create a new project.
 
