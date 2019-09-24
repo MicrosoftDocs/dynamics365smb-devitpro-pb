@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Linking and Joining Data Items to Define the Query Dataset
 
@@ -22,7 +23,7 @@ To demonstrate data item links and joins, this article uses the following sample
   
 ### Salesperson/Purchaser Table
 
-The Salesperson/Purchaser table contains a list of salespersons. Each salesperson is identified by a unique code. The following is a simplified version of the Salesperson/Purchaser table for illustration purposes. 
+The Salesperson/Purchaser table contains a list of salespersons. Each salesperson is identified by a unique code. The following is a simplified version of the Salesperson/Purchaser table for demonstration purposes. 
   
 |Code|Name|  
 |----------|----------|  
@@ -33,7 +34,7 @@ The Salesperson/Purchaser table contains a list of salespersons. Each salesperso
   
 ### Sales Header Table
 
-The Sales Header table contains a list of sales orders. Each sales order has a unique number, includes the name of the customer to sell to, and is assigned to a salesperson by the **Salesperson\_Code** column. The following is a simplified version of the Sales Header table for illustration purposes. 
+The Sales Header table contains a list of sales orders. Each sales order has a unique number, includes the name of the customer to sell to, and is assigned to a salesperson by the **Salesperson\_Code** column. The following is a simplified version of the Sales Header table for demonstration purposes. 
   
 |No.|Sell-to Customer Name|Salesperson Code|  
 |--------|------------------------------|-----------------------|  
@@ -82,7 +83,7 @@ query 50100 "Sample Query"
 
 ## How to link and join data items
 
-When you add data items to a query object in AL, you define them in a specific hierarchy, one after another, where each lower data item is embedded within the definition of the upper data item. The order of the data items determines the sequence in which data items are linked and joined to produce the results in in the dataset.  
+When you add data items to a query object in AL, you define them in a specific hierarchy, one after another, where each lower data item is embedded within the definition of the upper data item. The order of the data items determines the sequence in which data items are linked and joined to produce the resultsinthe dataset.  
   
 In short, to join two data items, you set the [DataItemLink](properties/devenv-DataItemLink-query-property.md) and [SqlJoinType](properties/devenv-SqlJoinType-property.md) properties on the lower data item in the query object.
 
@@ -103,7 +104,7 @@ The DataItemLink property sets up a reference or association between one or more
 DataItemLink = "Salesperson Code" = Salesperson_Purchaser.Code;
 ```  
   
-The DataItemLink property sets up "equal to" \(=\) comparison condition between two columns of the data items. When the query is run, the query compares each row of the two data items to find records that having matching values for the columns. Records that have matching column values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the SqlJoinType property to include records that do not have matching column values. 
+The DataItemLink property sets up an "equal to" \(=\) comparison condition between two columns of the data items. When the query is run, the query compares each row of the two data items to find records that having matching values for the columns. Records that have matching column values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the SqlJoinType property to include records that do not have matching column values. 
 <!--
 The basic steps for linking and joining two data items are as follows:
 
@@ -115,10 +116,10 @@ The basic steps for linking and joining two data items are as follows:
 
 ### Set the SqlJoinType Property
 
-The SqlJoinType property the determines which records to combine into the results, based on the values of the fields that are linked by the DataItemLink property. You use this property to limit the records that are included in the resulting dataset based on the specified conditions. By default, the SqlJoinType property is `LeftOuterJoin`, so if you omit this property a `LeftOuterJoin` is performed.
+The SqlJoinType property the determines which records to combine into the results, based on the values of the fields that are linked by the DataItemLink property. You use this property to limit the records that are included in the resulting dataset based on the specified conditions. By default, the SqlJoinType property is `LeftOuterJoin`, so if you omit this property, a `LeftOuterJoin` is performed.
 
 > [!TIP]
-> In SQL join statements, tables are designated as either left or right. In AL query objects, because data items are arranged vertically, when joining data items, the *left* corresponds to the upper data item (table) and *right* corresponds to the data item (table).
+> In SQL join statements, tables are designated as either left or right. In AL query objects, because data items are arranged vertically, when joining data items, the *left* corresponds to the upper data item (table) and *right* corresponds to the lower data item (table).
 
 ### Linking More Than Two Data Items  
 

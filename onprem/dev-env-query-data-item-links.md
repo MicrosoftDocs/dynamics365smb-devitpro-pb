@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Query Data Item Links 
 With [!INCLUDE[navnow](includes/navnow_md.md)] queries, you can retrieve records from one or more tables and combine the records into rows in a single dataset. In Query Designer, tables are specified by data items. You combine tables by linking the data items in Query Designer. In most cases, the tables are combined based on a relationship between certain fields in the tables. [!INCLUDE[prodshort](includes/prodshort.md)] includes different types of data item links that you can use to limit the records that are included in the resulting dataset by how the fields in data item tables are related to each other.  
@@ -70,7 +71,7 @@ With [!INCLUDE[navnow](includes/navnow_md.md)] queries, you can retrieve records
 |-----------|------------------------|---------------------|  
 |Salesperson code|Salesperson\_Purchaser|Code|  
   
- The DataItemLink property sets up "equal to" \(=\) comparison condition between two columns of the data items. When the query is run, the query compares each row of the two data items to find records that having matching values for the columns. Records that have matching column values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the DataItemLinkType property to include records that do not have matching column values.  
+ The DataItemLink property sets up an "equal to" \(=\) comparison condition between two columns of the data items. When the query is run, the query compares each row of the two data items to find records that having matching values for the columns. Records that have matching column values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the DataItemLinkType property to include records that do not have matching column values.  
   
 ## Setting Up the DataItemLinkType Property  
  You use the data item link type to limit the records that are included in the resulting dataset based on the conditions of the DataItemLink property. You have the following options from which to choose:  
@@ -110,8 +111,10 @@ With [!INCLUDE[navnow](includes/navnow_md.md)] queries, you can retrieve records
   
  The record for **Bart** in the Salesperson table does not have a matching record in the Sales Header table, so a row is included but the columns from the Sale Header table are given a null value. The record in the Sale Header table for **New Concepts** is not included in the resulting dataset because it does not have a matching column in the Salesperson table.  
   
-## See Also  
- [How to: Create Queries](How-to--Create-Queries.md)   
- [Walkthrough: Creating a Query to Link Two Tables](Walkthrough--Creating-a-Query-to-Link-Two-Tables.md)   
- [Walkthrough: Creating a Query That Uses a Totaling Method and Sorting](Walkthrough--Creating-a-Query-That-Uses-a-Totaling-Method-and-Sorting.md)   
- [Walkthrough: Creating a Query to Link Three Tables](Walkthrough--Creating-a-Query-to-Link-Three-Tables.md)
+## See Also
+
+ [Query Object](devenv-query-object.md)  
+ [Filtering Queries](devenv-query-filters.md)  
+ [Aggregating Data](devenv-query-totals-grouping.md)  
+ [SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md)
+ [SETRANGE method](methods-auto/query/queryinstance-setrange-method.md)

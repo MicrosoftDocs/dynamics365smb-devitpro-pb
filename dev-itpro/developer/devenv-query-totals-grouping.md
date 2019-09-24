@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Aggregating Data in Query Objects
 
@@ -215,4 +216,7 @@ GROUP BY Customer."No.", Customer.Name
 ## See Also
 
 [Method Property](properties/devenv-Method-Property.md)  
+ [Query Object](devenv-query-object.md)  
+ [Filtering Queries](devenv-query-filters.md)  
+ [Aggregating Data](devenv-query-totals-grouping.md)  
 [Aggregate Functions (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql)  

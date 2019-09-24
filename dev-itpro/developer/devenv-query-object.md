@@ -1,7 +1,6 @@
 ---
 title: "Query Object"
 description: "Description of the query object."
-author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2019
 ms.reviewer: na

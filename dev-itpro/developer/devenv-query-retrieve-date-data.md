@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Retrieving Date Data in Queries
 
@@ -17,7 +18,7 @@ When you have fields in a table that contain dates, you can use a date method to
 To set up a date method on a query column, set the [Method Property](properties/devenv-method-property.md) to `Day`, `Month`, and `Year`.  
   
 > [!IMPORTANT]  
->  You can only use a date method on fields that have a Date or DateTime data type. For additional information about how to use a date method on a field that has the DateTime data type, see [Working with DateTime Data Types](devenv-query-retrieve-date-data.md#DateTime).  
+>  You can only use a date method on fields that have a Date or DateTime data type. For additional information about how to use a date method on a field that has the DateTime data type, see [Working with DateTime Data Types](devenv-query-retrieve-date-data.md#DateTime).
 
  For more information about how to set up query columns and properties, see [Query Object](devenv-query-object.md).  
   
@@ -81,7 +82,7 @@ query 50100 "Sample Data Query"
   
 ### Example
 
- The following table displays the resulting dataset for the sample query with the `Method` property of the `Order Date` column set to `Day`.  
+The following table displays the resulting dataset for the sample query with the `Method` property of the `Order Date` column set to `Day`.  
   
 |Bill\_to\_Name|Day\_Order\_Date|Count\_|  
 |--------------------|----------------------|-------------|  

@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Filtering in Query Objects
 
@@ -19,11 +20,11 @@ You can set up filters on a field directly in the query object, or you can use t
 
 ||Filter|Description|  
 |------------|------------|-----------------|  
-|In query object|Filter on a Data item|You can set the DataItemTableFilter property of a data item to filter on a field in the table of the data item. You can apply the filter to any field in the table, not just fields that are defined as columns in the resulting dataset. A data item filter cannot be overwritten from AL code.|  
-||Filter on a Column|You can set the ColumnFilter property of a column to filter on the source field of the column. A filter on a column can be overwritten by the SETFILTER and SETRANGE methods from AL code.|  
-||Add a filter row|A filter row lets you add a filter on a field that will not be included in the resulting dataset, but can be changed from AL code. To set up a filter row in Query Designer, you add a row of the type Filter that is set to the field that you want to filter, and then set its ColumnFilter property.. A filter row is like a data item filter except a filter on a filter row can be overwritten by the SETFILTER and SETRANGE methods from C/AL code.|  
-|AL filter method calls|SETFILTER method|You can call the SETFILTER method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETFILTER method will overwrite any filter that is applied to a column or filter row on the same field by the ColumnFilter property.|  
-||SETRANGE method|You can SETRANGE method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETRANGE method will overwrite any filter that is applied to column or filter row on the same field.|  
+|In query object|Filter on a Data item|You can set the [DataItemTableFilter property](properties/devenv-dataitemtablefilter-property.md) of a data item to filter on a field in the table of the data item. You can apply the filter to any field in the table, not just fields that are defined as columns in the resulting dataset. A data item filter cannot be overwritten from AL code.|  
+||Filter on a Column|You can set the [ColumnFilter property](properties/devenv-columnfilter-property.md) of a column to filter on the source field of the column. A filter on a column can be overwritten by the SETFILTER and SETRANGE methods from AL code.|  
+||Add a filter row|A filter row lets you add a filter on a field that will not be included in the resulting dataset, but can be changed from AL code. To set up a filter row in Query Designer, you add a row of the type Filter that is set to the field that you want to filter, and then set its ColumnFilter property. A filter row is like a data item filter except a filter on a filter row can be overwritten by the SETFILTER and SETRANGE methods from C/AL code.|  
+|AL filter method calls|[SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md)|You can call the SETFILTER method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETFILTER method will overwrite any filter that is applied to a column or filter row on the same field by the ColumnFilter property.|  
+||[SETRANGE method](methods-auto/query/queryinstance-setrange-method.md)|You can SETRANGE method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETRANGE method will overwrite any filter that is applied to column or filter row on the same field.|  
 
 ## Filtering on data items in query object
 
@@ -149,7 +150,7 @@ The SETFILTER and SETRANGE methods will overwrite any filter on the same field t
 
 ### Calling the SETFILTER and SETRANGE methods
 
-You can call the SETFILTER and SETRANGE method from the AL code of the [!INCLUDE[prodshort](includes/prodshort.md)] object that runs the query object or from the [OnBeforeOpen Trigger](OnBeforeOpen-Trigger.md) of the query object.  
+You can call the SETFILTER and SETRANGE method from the AL code of the [!INCLUDE[prodshort](includes/prodshort.md)] object that runs the query object or from the [OnBeforeOpen Trigger](triggers/devenv-onbeforeopen-trigger.md) of the query object.  
 
 To call the SETFILTER method, you use the following code.  
 
@@ -212,11 +213,10 @@ GROUP BY Customer."No."
 HAVING Qty  50  
 ```  
 
-## See Also  
- [How to: Create Queries](How-to--Create-Queries.md)   
- [How to: Set Up Filter Rows in Query Designer](How-to--Set-Up-Filter-Rows-in-Query-Designer.md)   
- [Understanding Data Item Links](Understanding-Data-Item-Links.md)   
- [Understanding Query Totals and Grouping](Understanding-Query-Totals-and-Grouping.md)   
- [Working with Queries in C/AL](Working-with-Queries-in-C-AL.md)   
- [SETFILTER method \(Query\)](SETFILTER-method--Query-.md)   
- [SETRANGE method \(Query\)](SETRANGE-method--Query-.md)
+## See Also
+
+ [Query Object](devenv-query-object.md)  
+ [Filtering Queries](devenv-query-filters.md)  
+ [Aggregating Data](devenv-query-totals-grouping.md)  
+ [SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md)
+ [SETRANGE method](methods-auto/query/queryinstance-setrange-method.md)
