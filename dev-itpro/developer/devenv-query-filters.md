@@ -40,7 +40,7 @@ You can apply a filter on any field in a table, not just those fields that are r
 
 A data item filter is static which means that it cannot be overwritten by a filter on a column or filter row in Query Designer or by the SETFILTER or SETRANGE methods in AL code. If one of these filter types is applied to the same field as the data item filter, then the filters are combined. In logical terms, this combination corresponds to an "AND" operation. For example, if the data item filter applies a filter on a field to include values greater than 10 \(>10\) and a column filter applies a filter on the same field to include values less than fifty \(\<50\), then the resultant filter includes values that are greater than 10 and less than fifty \(10\< value \<50\).  
 
- The DataItemTableFilter property corresponds to a WHERE clause in an SQL SELECT statement. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-queryfilter.md#SQL).  
+ The DataItemTableFilter property corresponds to a WHERE clause in an SQL SELECT statement. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-query-filters.md#SQL).  
 
 ### Example
 
