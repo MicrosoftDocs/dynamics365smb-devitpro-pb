@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 261c896a-4b7b-4b46-b874-2c032e7096be
 caps.latest.revision: 9
-manager: edupont
+author: jswymer
 ---
 # Accessing Columns of a Query Dataset
-If the query is in the reading state, you can retrieve the value of columns in the current active row of the dataset by using the following syntax in C/AL.  
+
+If the query is in the reading state, you can retrieve the value of columns in the current active row of the dataset by using the following syntax in AL.  
 
 ## Syntax  
 
@@ -100,3 +101,8 @@ codeunit 50100 QueryColumnAccess
         Text000: TextConst ENU = 'Customer name = %1, Quantity = %2.';
 }
 ```
+## See Also
+
+ [Query Object](devenv-query-object.md)  
+ [Filtering Queries](devenv-query-filters.md)  
+ [Aggregating Data](devenv-query-totals-grouping.md)  
