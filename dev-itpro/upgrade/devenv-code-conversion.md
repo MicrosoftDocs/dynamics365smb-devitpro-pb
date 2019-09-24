@@ -1,15 +1,13 @@
 ---
 title: "Code Conversion from C/AL to AL"
 description: "Description of the conversion process from C/AL to AL."
-
-author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymerms.author: jswymer
+author: jswymer
+ms.author: jswymer
 ---
-
 # Code Conversion from C/AL to AL
 
 > [!IMPORTANT]  
