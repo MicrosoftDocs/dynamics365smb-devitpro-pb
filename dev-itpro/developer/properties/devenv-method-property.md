@@ -38,7 +38,7 @@ Sets either a date method for retrieving the year, month, or day from a date fie
   
  When you set up a totals method on another column in the query, rows in the resulting dataset are grouped by the day, month, or year, depending on the **Method** property setting.  
  
- For more information about date methods, see [Retrieving Date Data in Queries](devenv-query-retrieve-date-data.md).
+ For more information about date methods, see [Retrieving Date Data in Queries](../devenv-query-retrieve-date-data.md).
 
 ### Syntax
 ```
