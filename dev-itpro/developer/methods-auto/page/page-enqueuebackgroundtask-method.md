@@ -57,7 +57,16 @@ The enqueued page background task stores the record ID of the current page. If t
 
 ​Only five page background tasks can be run simultaneously for a parent session. If there are more than five, then they will be queued and run when a slot becomes available as other tasks are finished.​
 
-If a timeout occurs, the background task is canceled and an error occurs. On the page, the error will appear as a notification. You can re-schedule the task in the completion trigger. ​
+### Timeout
+
+When the value of the *Timeout* parameter is exceeded, the background task is canceled and an error occurs. On the page, the error will appear as a notification.
+
+Be aware that the [!INCLUDE[server](../developer/includes/server.md)] instance includes two configuration settings related to page back ground task timeout: PageBackgroundTaskDefaultTimeout and PageBackgroundTaskMaxTimeout.
+- The PageBackgroundTaskDefaultTimeout (which has a default value of 00:02:00) determines the timeout if the *Timeout* parameter is not given a value.
+
+- The PageBackgroundTaskMaxTimeout specifies the maximum amount of time that a page background task can run; regardless of the value of the *Timeout* parameter. This means that if the *Timeout* parameter value is greater than the PageBackgroundTaskMaxTimeout (which has a default value of 00:10:00), the PageBackgroundTaskMaxTimeout value determines tha timeout.
+
+For more information, see [Configuring Business Central Server](../../../administration/configure-server-instance.md#Task).
 
 ## Example
 The following code extends the **Customer Card** page with a page background task by using the ENQUEUEBACKGROUNDTASK method. For more details about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
