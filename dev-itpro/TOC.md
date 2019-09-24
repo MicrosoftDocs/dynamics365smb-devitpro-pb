@@ -544,23 +544,6 @@
 <!-- upgrade -->
 # Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
-## Before You Upgrade
-### [Important Information and Considerations for Before Upgrading](upgrade/Upgrade-Considerations.md)
-### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
-### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
-### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
-### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)
-### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
-### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
-### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
-### [Deprecated Features in the Icelandic Version](upgrade/deprecated-features-is.md)
-### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
-### [Deprecated Features in the Mexican Version](upgrade/deprecated-features-mx.md)
-### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
-### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
-### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
-### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
-### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
 ## Online
 ### [Online](upgrade/upgrading-to-business-central-online.md)
 ### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -569,6 +552,7 @@
 ## On-Premises
 ### Business Central Spring 2019
 #### [Overview](upgrade/upgrading-to-business-central-on-premises.md)
+#### [Before You Upgrade](upgrade/Upgrade-Considerations.md)
 #### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
 #### Technical Upgrade
 ##### [Technical Upgrade](upgrade/Converting-a-Database.md)
@@ -587,6 +571,22 @@
 #### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
 #### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
 #### [Full Upgrade from 14 to 15](upgrade/upgrade-full-upgrade-v14-v15.md)
+## Deprecated Features
+### [Deprecated Fields, and Fields Marked as Obsolete](upgrade/deprecated-fields.md)
+### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
+### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
+### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)
+### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
+### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
+### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
+### [Deprecated Features in the Icelandic Version](upgrade/deprecated-features-is.md)
+### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
+### [Deprecated Features in the Mexican Version](upgrade/deprecated-features-mx.md)
+### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
+### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
+### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
+### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
+### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!-- end upgrade -->
 <!-- preview of Graph API starts-->

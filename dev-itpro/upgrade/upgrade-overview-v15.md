@@ -19,7 +19,15 @@ ROBOTS: NOINDEX
 >
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marks the release where C/AL has been deprecated and replaced by AL. From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application is now delivered as an AL in an extensions instead of C/AL. Additionally, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. This change will influence how you perform the upgrade compared to earlier releases.
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marks the release where C/AL has been completely replaced by AL. The 2019 release wave 2 is the first version that does not include the classic development environment (also known as C/SIDE). From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application is now delivered as an AL in an extensions instead of C/AL. Additionally, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. This change will influence how you perform the upgrade compared to earlier releases.
+
+## New and changed application features
+
+There a several new and changed platform application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 release wave2 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2019 release wave 2](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-business-central/).
+
+To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
+
+## Deprecated features
 
 ## Upgrade paths
 
