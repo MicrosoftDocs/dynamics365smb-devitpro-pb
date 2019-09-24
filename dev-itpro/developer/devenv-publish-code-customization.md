@@ -16,7 +16,10 @@ ms.author: solsen
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-This topic decribes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem and publish the code-customized Base Application to the local server.
+This topic decribes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-prem and publish the code-customized Base Application to the local server. 
+
+> [!IMPORTANT]  
+> Instead of code-customizing the Base Application, it is *strongly* recommended to create extensions whenever possible.
 
 ## Prerequisites
 Make sure to have the following prerequisites installed to be able to follow the steps in this topic.

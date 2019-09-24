@@ -114,7 +114,8 @@ If you need help formulating a positioning statement, try the value proposition 
 | Element     | Description | Example |
 |-------------|-------------|---------|
 |**Messaging (Prove your claims)** |Include specific calls-to-action on your app page.|	“Reduce how long it takes to set up your recipes in the morning from 1 hour to 10 minutes.”<!-- ./media/image52.jpg to be fixed -->|
-|Don’t make general and abstract claims.
+||Don’t make general and abstract claims.||
+
 - Use data as often as possible to support your statements.
 
 If you make specific claims, support your claims with proof, while Quantifying impacts and gains.
@@ -144,8 +145,8 @@ Button text should use benefit language rather than descriptive language.
 Visual elements
 
 | Element   | Description | Example |
-|-----------|-------------|--------------|
-|**Pictures (Differentiation comparison images)** Show them, don’t tell them|Show the before and after state.|<!-- ./media/image57.jpg -->|
+|-----------|-------------|---------|
+|**Pictures (Differentiation comparison images)**| Show them, don’t tell them|Show the before and after state.|<!-- ./media/image57.jpg -->|
 
 
 - This is a visual image of how your prospects do things now versus how they will be able to do it in the future.
