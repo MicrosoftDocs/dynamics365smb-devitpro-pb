@@ -2,7 +2,7 @@
 title: "UseWindowsAuthentication Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets the HttpClient credentials to use the specified network credentials for Win
 
 ## Syntax
 ```
-[Result := ]  HttpClient.UseWindowsAuthentication(UserName: String, Password: String, [Domain: String])
+[Result := ]  HttpClient.UseWindowsAuthentication(UserName: String, Password: String [, Domain: String])
 ```
 ## Parameters
 *HttpClient*  

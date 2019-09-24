@@ -2,7 +2,7 @@
 title: "CancelBackgroundTask Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 09/17/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,8 +16,6 @@ author: solsen
 # CancelBackgroundTask Method
 Attempt to cancel a page background task.
 
-> [!NOTE]
-> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```
@@ -40,7 +38,29 @@ Specifies the ID of the page background task to cancel. The ID is assigned to th
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+The following example uses the CANCELBACKGROUNDTASK method to cancel an existing page background task, based on its task ID.
+ 
+```
+var​
+  WaitTaskId: Integer;​
+​
+trigger OnAfterGetRecord()​
+var​
+  TaskParameters: Dictionary of [Text, Text];​
+begin​
+  if (WaitTaskId > 0) then​
+    Currpage.CancelBackgroundTask(WaitTaskId);​
+
+    TaskParameters.Add('Wait', '1000');
+
+    CurrPage.EnqueueBackgroundTask(WaitTaskId, 50100, TaskParameters, 1000, PageBackgroundTaskErrorLevel::Warning);
+
+end;
+```
 ## See Also
+[Page Background Tasks](../../devenv-page-background-tasks.md)  
 [Page Data Type](page-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

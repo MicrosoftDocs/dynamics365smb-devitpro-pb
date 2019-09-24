@@ -20,12 +20,14 @@ This section describes the properties that are available to developers in [!INCL
 In the sections below, properties are sorted according to the object(s) they apply to.
 
 - [Table and Table Extension Properties](devenv-table-properties.md)  
-- [Page and Page Extension Properties](devenv-page-property-overview.md)- [Codeunit Properties](devenv-codeunit-properties.md)  
+- [Page and Page Extension Properties](devenv-page-property-overview.md)
+- [Codeunit Properties](devenv-codeunit-properties.md)  
 - [Query Properties](devenv-query-properties.md)  
 - [Report Properties](devenv-report-properties.md)  
 - [XMLPort Properties](devenv-xmlport-properties.md)  
 - [Control Add-In Properties](devenv-control-addin-properties.md)
 - [View Properties](devenv-view-properties.md)
+- [Profile Properties](devenv-profile-properties.md)
 - [Integrating with Dynamics 365 for Sales](../devenv-integrating-dynamics-365-for-sales-extension-development.md)
 
 ## See Also  

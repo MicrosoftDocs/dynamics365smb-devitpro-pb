@@ -19,6 +19,9 @@ Along with defining other fields, the table extension is where you write trigger
 
 When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] , you will follow the code layout for a table extension as shown in the example below.
 
+> [!IMPORTANT]  
+> Only tables with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
+
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 

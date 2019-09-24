@@ -50,7 +50,7 @@ xmlport 50100 XmlPortWithHelp
 }
 ```
 
-In all three examples, the *ContextSensitiveHelpPage* property is set to point at the same Help files. This is because all three example objects support the same feature that is explained in the *sales-rewards* Help topic. In your app, you can choose to structure the Help differently.  
+In all three examples, the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) is set to point at the same Help files. This is because all three example objects support the same feature that is explained in the *sales-rewards* Help topic. In your app, you can choose to structure the Help differently.  
 
 ## See Also
 

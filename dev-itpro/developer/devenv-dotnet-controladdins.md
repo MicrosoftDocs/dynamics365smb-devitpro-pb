@@ -68,12 +68,14 @@ The next needed piece of information is the namespace-qualified name of the type
 
 The `ControlAddInExport` attribute's constructor takes as an argument the name of the control add-in, as represented in the runtime, and in existing C/AL code. In this example, the name of the control add-in is `Microsoft.Dynamics.Nav.Client.PingPong`. This was the last component needed to construct a declaration for this .NET control add-in in AL. The name of the assembly is used in creating the `assembly` construct, the namespace-qualified name of the type is used as the first element in the `type` declaration, and the name of the control add-in is used as the alias of the type. You complete the declaration by setting the `IsControlAddIn` property to true. This property is used to tell the AL compiler to treat the given type declaration as a .NET control add-in declaration.
 
+ Remember to add the setting `"al.assemblyProbingPaths"` in the **User Settings** or **Workspace Settings** specifying the path of the folder containing the assembly so that the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](/devenv-get-started-call-dotnet-from-al.md).
+
 ```
 dotnet
 {
     assembly("Microsoft.Dynamics.Nav.Client.PingPong")
     {
-        type("Microsoft.Dynamics.Nav.Client.PingPong.PingPongAddIn"; "Microsoft.Dynamics.Nav.Client.PingPong")
+        type("Microsoft.Dynamics.Nav.Client.PingPong.PingPongAddIn"; PingPongAddIn)
         {
             IsControlAddIn = true;
         }
@@ -119,7 +121,8 @@ If within the same project you have a native AL control add-in and a .NET add-in
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)     
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)            
 [Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)   
-[How to: Determine an Assembly's Fully Qualified Name](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name)
+[How to: Determine an Assembly's Fully Qualified Name](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 
 
 

@@ -10,16 +10,16 @@ ms.service: "dynamics365-business-central"
 ms.author: v-liober
 ---
 
-# Getting You Started with Your Add-On App
+# Getting You Started with Building Apps
 
 ## Build your business on Dynamics 365 Business Central
 
 Microsoft Dynamics 365 Business Central is a business management solution that helps companies connect their financials, sales, service and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you can easily and quickly tailor, extend and build applications so they fit your specific needs — with little to no code development.
 
-AppSource is Microsoft’s marketplace for your Dynamics 365 Business Central offerings and there are several reasons why going to market with Microsoft AppSource is a great idea. For example, it allows you to promote your brand, expand your reach, accelerate the customer journey and upsell your solutions and it connects you with millions of Office 365 & Dynamics 365 business users. Find more information about which opportunities you have as a partner at: aka.ms/BusinessCentralApps
+AppSource is Microsoft’s marketplace for your Dynamics 365 Business Central offerings and there are several reasons why going to market with Microsoft AppSource is a great idea. For example, it allows you to promote your brand, expand your reach, accelerate the customer journey and upsell your solutions and it connects you with millions of Office 365 & Dynamics 365 business users. Find more information about which opportunities you have as a partner at: Apps on AppSource for Business Central [aka.ms/BusinessCentralApps](https://aka.ms/BusinessCentralApps)
 
 You can bring two types of offerings to Microsoft AppSource:
-- **Add-on Apps** (that brings your industry expertise to market), **Connect Apps** (that connect services) and **Embed Apps**.
+- **Add-on Apps** (that brings your industry expertise to market), **Connect Apps** (that connect services) and **Embed Apps** (an end-to-end solution meeting the specific needs of a vertical or micro-vertical industry). [What is an Embed App?](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/embed-app-overview)
 - Or **Packaged Consulting Services** (that bring ready-made packaged engagements to market).
 
 ## Guidelines for Business Central Add-on apps
@@ -102,14 +102,11 @@ It is key that you use the same display name and email throughout your app submi
 - To sign into the Cloud Partner Portal (and creating your app offer)
 - To enroll and sign in to the Collaborate tool and “Ready to Go” platform
 
-## Access to the Cloud Partner Portal and being set up as a publisher
+## Access to Partner Center
+Partner Center is the single destination to manage your business relationship with Microsoft. 
+[Get Started by clicking this link](https://partner.microsoft.com/en-us/dashboard/account/v3/enrollment/introduction/azureisv)
 
-The Cloud Partner Portal is the place where you first will submit your App for the marketing validation and later submit it for publication.
-
-In order to be set up as a publisher and access the Cloud Partner Portal, you need to email Ryan Weigel at rweigel@microsoft.com , and provide him the following information:
-- Your Publisher display name (which will be displayed on AppSource)
-- The Email account you chose as the primary contact (which is needed when logging into the Cloud Partner Portal)
-- Your MPN ID
+NOTE: This has replaced the Cloud Partner Portal. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
 
 ## Get onboarded to tools and programs
 

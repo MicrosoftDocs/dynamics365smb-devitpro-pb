@@ -21,7 +21,7 @@ Sets the formats of the source expression for various data types.
  All data types in AL.  
   
 ## Remarks  
- You can set the Format property to a predefined format, or you can build your own format. For more information, see [FORMAT Method (Code, Text)](../methods/devenv-format-method-code-text.md).  
+ You can set the Format property to a predefined format, or you can build your own format. For more information, see [FORMAT Method (Integer, Text)](../methods-auto/system/system-format-joker-integer-string-method.md).  
   
 ## Basic Settings  
  To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* is one of the entries in the Value column of the following table.  
@@ -101,7 +101,7 @@ Sets the formats of the source expression for various data types.
   
      For example, a field that is based on a source expression of the Date data type can use the following format string:  
   
-     <Weekday Text>, <Month Text> <Day>  
+     \<Weekday Text>, \<Month Text> \<Day>   
   
      This expression displays the date as Monday, April 15.  
   
@@ -210,6 +210,20 @@ Sets the formats of the source expression for various data types.
 |\<Text>|1|True/False|  
 |\<Number>|2|1/0|  
 |XML format|9|true/false|  
+
+|**GUID**|**Format**|**Example**|  
+|----------------|----------------|-----------------|  
+|{\<Text>}|0|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|{\<Text>}|1|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|{\<Text>}|2|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|XML format|9|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+
+|**Enum value**|**Format**|**Example**|  
+|----------------|----------------|-----------------|  
+|\<Text>|0|Bronze|  
+|\<Text>|1|Bronze|  
+|\<Number>|2|1|  
+|XML format|9|1|  
   
 |**Option**|**Format**|**Example**|  
 |----------------|----------------|-----------------|  
@@ -222,7 +236,7 @@ Sets the formats of the source expression for various data types.
   
  For Chars, all formats should resemble the following: <Char/Number>.  
   
- For Text and Code, all formats should resemble the following: <Text>.  
+ For Text and Code, all formats should resemble the following: \<Text>.  
   
 ## See Also  
  [DecimalPlaces Property](devenv-decimalplaces-property.md)
