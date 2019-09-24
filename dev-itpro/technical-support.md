@@ -67,4 +67,5 @@ The [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)] is your 
 [Deployment Overview](deployment/Deployment.md)  
 [Administration of Business Central Online](administration/tenant-administration.md)  
 [Administration of Business Central On-Premises](administration/Administration.md)  
-[Blog post: Business Central Build Numbers](https://freddysblog.com/2018/12/05/business-central-build-numbers/)
+[Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
+[Providing support to your customers (Microsoft Partner Center)](/partner-center/customer-support)  
