@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: fd5a62ed-50c7-49ad-9610-f299e1961725
 caps.latest.revision: 19
-manager: edupont
+author: jswymer
 ---
 # Data Access
 Data that is needed in the client goes through the following path from the [!INCLUDE[server](../developer/includes/server.md)] to the SQL Server database:
@@ -23,6 +23,7 @@ In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the data cache is 
 
 The following AL functions utilize the cache system:  
 -   GET  
+-   GETBYSYSTEMID
 -   FIND  
 -   FINDFIRST  
 -   FINDLAST  
@@ -164,3 +165,4 @@ For more general information about table compression in SQL Server, see [Data Co
 ## See Also
 
 [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)  
+[GetBySystemId(Guid)](../developer/methods-auto/record/record-getbysystemid-method.md)  

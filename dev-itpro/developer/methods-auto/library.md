@@ -2,7 +2,7 @@
 title: "Data Types and Methods in AL"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 09/17/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -74,11 +74,9 @@ The following data types are available as part of the AL Language. Each data typ
 |[Page](page/page-data-type.md)|Contains a number of simpler elements called controls. Controls are used to display information to the user or receive information from the user.|
 |[ProductName](productname/productname-data-type.md)|An application can have a full name, marketing name, and short name. The PRODUCTNAME functions enable you to retrieve these name variations.|
 |[Query](query/query-data-type.md)|Enables you to retrieve data from multiple tables and combine the data in single dataset.|
-|[QueryInstance](queryinstance/queryinstance-data-type.md)|Enables you to retrieve data from multiple tables and combine the data in single dataset.|
 |[RecordId](recordid/recordid-data-type.md)|Contains the table number and the primary key of a table.|
 |[RecordRef](recordref/recordref-data-type.md)|References a record in a table.|
 |[Report](report/report-data-type.md)|Is used to display, print, or process information from a database.|
-|[ReportInstance](reportinstance/reportinstance-data-type.md)|Reports are used to display, print, or process information from a database.|
 |[RequestPage](requestpage/requestpage-data-type.md)|Is a page that is run before the report starts to execute. Request pages enable end-users to specify options and filters for a report.|
 |[Session](session/session-data-type.md)|Represents a Microsoft Dynamics Business Central session.|
 |[SessionSettings](sessionsettings/sessionsettings-data-type.md)|Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.|
@@ -113,7 +111,6 @@ The following data types are available as part of the AL Language. Each data typ
 |[XmlNode](xmlnode/xmlnode-data-type.md)|Represents a XML node which can either be for instance an XML attribute, an XML element or a XML document.|
 |[XmlNodeList](xmlnodelist/xmlnodelist-data-type.md)|Represents a collection of XML nodes.|
 |[Xmlport](xmlport/xmlport-data-type.md)|XmlPorts are used to export or import data between an external source and a Microsoft Dynamics Business Central database.|
-|[XmlportInstance](xmlportinstance/xmlportinstance-data-type.md)|Represents an instance of an XmlPort.|
 |[XmlProcessingInstruction](xmlprocessinginstruction/xmlprocessinginstruction-data-type.md)|Represents a processing instruction, which XML defines to keep processor-specific information in the text of the document.|
 |[XmlReadOptions](xmlreadoptions/xmlreadoptions-data-type.md)|Represents the options configuring how XML is loaded from a data source.|
 |[XmlText](xmltext/xmltext-data-type.md)|Represents the text content of an element or attribute.|

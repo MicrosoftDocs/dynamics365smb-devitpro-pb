@@ -5029,6 +5029,12 @@
       "source_path": "dev-itpro/developer/properties/devenv-textencoding-xmlports-property.md",
       "redirect_url": "devenv-textencoding-property",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "dev-itpro/developer/properties/devenv-globalvaraccess-property.md",
+      "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods/devenv-integration-attribute",
+      "redirect_document_id": false
     }
+
   ]
 }

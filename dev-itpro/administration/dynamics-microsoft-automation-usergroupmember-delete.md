@@ -41,7 +41,7 @@ If successful, this method returns a ```204 No Content``` response code.
 
 Here is an example of the request.
 ```json
-DELETE https://api.businesscentral.dynamics.com/v1.0/api/microsoft/automation/beta/companies({{companyId}})/users({{securityId}})/userGroupMembers('D365%20EXT.%20ACCOUNTANT',{{userSecurityId}},'CRONUS USA, Inc.')
+DELETE https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({{companyId}})/users({{securityId}})/userGroupMembers('D365%20EXT.%20ACCOUNTANT',{{userSecurityId}},'CRONUS USA, Inc.')
 If-Match:*
 ```
 ## See Also 

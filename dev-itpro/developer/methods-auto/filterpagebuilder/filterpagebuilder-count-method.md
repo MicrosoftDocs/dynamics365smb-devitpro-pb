@@ -39,25 +39,26 @@ The number of filter controls in the current FilterPageBuilder object instance.
 
 ## Example  
  The following example uses the COUNT method on a filter page object that includes a two filter controls for the **Date** system table.  
-  
- This example requires that you create the following global variables.  
-  
-|Variable name|DataType|SubType|  
-|-------------------|--------------|-------------|  
-|varDateItem|Text||  
-|varCount|Integer|Date|  
-|varFilterPageBuilder|FilterPageBuilder||  
-  
-```  
-varDateItem := 'Date record';  
-varFilterPageBuilder.ADDTABLE(varDateItem + ‘ 1’,DATABASE::Date);  
-varFilterPageBuilder.ADDTABLE(varDateItem + ‘ 2’,DATABASE::Date);  
-varCount := varFilterPageBuilder.COUNT;  
-IF varCount <> 2 THEN   
-  ERROR(‘There should be two controls in varFilterPageBuilder’);  
+ 
+```
+var
+    varDateItem: Text[30];  
+    varCount: Integer;  
+    varFilterPageBuilder: FilterPageBuilder;
+
+begin 
+    varDateItem := 'Date record';  
+    varFilterPageBuilder.ADDTABLE(varDateItem + ' 1',DATABASE::Date);  
+    varFilterPageBuilder.ADDTABLE(varDateItem + ' 2',DATABASE::Date);  
+    varCount := varFilterPageBuilder.COUNT;  
+    if varCount <> 2 then   
+      ERROR('There should be two controls in varFilterPageBuilder');
+    varFilterPageBuilder.RunModal();  
+end; 
 ```  
 
 ## See Also
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
+[Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

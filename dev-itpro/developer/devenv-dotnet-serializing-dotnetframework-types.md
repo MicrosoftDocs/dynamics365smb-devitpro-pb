@@ -176,5 +176,6 @@ The line that contains assignment of the **ServerObject** to the **ClientObject*
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)    
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)    
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)  
-[Using Designer](devenv-inclient-designer.md)
+[Using Designer](devenv-inclient-designer.md)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 

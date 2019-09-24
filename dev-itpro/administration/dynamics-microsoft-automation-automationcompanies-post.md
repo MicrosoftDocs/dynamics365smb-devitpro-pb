@@ -42,7 +42,7 @@ If successful, this method returns ```201 Created``` response code and a **autom
 Here is an example of a request.
 
 ```json
-POST https://api.businesscentral.dynamics.com/v1.0/api/microsoft/automation/beta/companies({id})/automationCompanies
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({id})/automationCompanies
 Content-type: application/json
 
 {

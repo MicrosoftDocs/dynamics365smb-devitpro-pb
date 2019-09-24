@@ -20,7 +20,7 @@ Sets a shortcut key for selecting an action.
 
 -  Actions on pages.  
 
-This property only applies to the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. The property is ignored in the Web client.
+This property is fully functional in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] Web client.
 
 ## Syntax
 ```
@@ -30,7 +30,10 @@ ShortCutKey = 'Shift+Ctrl+D';
 ## Remarks  
 Pressing the key that you designate with this property provides the same result as selecting the action.  
 
-Some shortcut keys have default assignments. Do not reuse shortcut keys that are already assigned. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics NAV Windows Client](https://docs.microsoft.com/en-us/dynamics-nav-app/keyboard-shortcuts-windows-client). 
+Some shortcut keys have default assignments. Do not reuse shortcut keys that are already assigned. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics 365 Business Central Web Client](https://docs.microsoft.com/en-us/dynamics365/business-central/keyboard-shortcuts). 
+
+Note that the shortcut keys that you set with this property have precedence over the default shortcut keys of the web browser that you are using and that they will override their behavior.
   
-## See Also  
+## See Also
+
  [Properties](devenv-properties.md)

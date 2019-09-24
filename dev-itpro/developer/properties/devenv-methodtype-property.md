@@ -16,6 +16,8 @@ author: SusanneWindfeldPedersen
 
 # MethodType Property
 Sets a date or totals type method on the query column. The method is applied by the [Method Property](devenv-method-property.md).  
+
+<!-- This is deprecated in Business Central -->
   
 ## Applies to  
  Query columns  

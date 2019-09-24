@@ -19,10 +19,10 @@ For developers, administrators, and support personnel, it can be useful to inspe
 
 - In a development environment, in addition to viewing a table directly from the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], developers can view a table automatically when they publish/debug an AL project from Visual Studio Code.
 
-> [!NOTE]
+> [!NOTE]  
 > The table appears as read-only in the client, so modifications, insertions, and deletions cannot be made.
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Data in the tables can be sensitive. Be sure to follow your organization's guidelines for handling such data. 
 
 ## Required permissions
