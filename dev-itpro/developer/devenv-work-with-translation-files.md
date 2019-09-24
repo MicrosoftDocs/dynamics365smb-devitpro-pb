@@ -12,12 +12,6 @@ author: SusanneWindfeldPedersen
 # Working with Translation Files
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multilanguage enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] this is done using XLIFF files, which is a standardized format used for computer-based translations. 
 
-
-
-<!-- 
-> [!IMPORTANT]  
-> You can use the .xlf translation files approach only for objects from your extension. For translating the base application you still need to use the .txt files approach. For more information, see the **Translation and Localization apps** section below. -->
-
 ## Generating the XLIFF file
 To add a new language to the extension that you have built, you must first enable the generation of XLIFF files. The XLIFF file extension is .xlf. The generated XLIFF file contains the strings that are specified in properties such as **Caption**, **CaptionML**, and **Tooltip**.
 
@@ -30,9 +24,9 @@ In the app.json file of your extension, add the following line:
   "features": [ "TranslationFile" ]
 ```
 
-Now, when you run the build command (Ctrl+Shift+B) in Visual Studio Code, a `\Translations` folder will be generated and populated with the .xlf file that contains all the labels, label properties, and report labels that you are using in the extension. The generated .xlf file can now be translated.
+Now, when you run the build command (**Ctrl+Shift+B**) in Visual Studio Code, a `\Translations` folder will be generated and populated with the .xlf file that contains all the labels, label properties, and report labels that you are using in the extension. The generated .xlf file can now be translated.
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Make sure to rename the translated file to avoid that the file is overwritten next time the extension is built.
 
 By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, request pages, and table fields. If the object already has a `Caption` or `CaptionML` property set, that value will be used, for table fields the `OptionCaption` is used. The syntax is the following:
@@ -120,3 +114,6 @@ For more information about importing and exporting .txt files, see [How to: Add 
 
 ## See Also
 [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)  
+[Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md)  
+[JSON Files](devenv-json-files.md)
+
