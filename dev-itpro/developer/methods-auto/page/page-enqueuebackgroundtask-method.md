@@ -61,7 +61,7 @@ The enqueued page background task stores the record ID of the current page. If t
 
 When the value of the *Timeout* parameter is exceeded, the background task is canceled and an error occurs. On the page, the error will appear as a notification.
 
-Be aware that the [!INCLUDE[server](../developer/includes/server.md)] instance includes two configuration settings related to page back ground task timeout: PageBackgroundTaskDefaultTimeout and PageBackgroundTaskMaxTimeout.
+Be aware that the [!INCLUDE[server](../../includes/server.md)] instance includes two configuration settings related to page back ground task timeout: PageBackgroundTaskDefaultTimeout and PageBackgroundTaskMaxTimeout.
 - The PageBackgroundTaskDefaultTimeout (which has a default value of 00:02:00) determines the timeout if the *Timeout* parameter is not given a value.
 
 - The PageBackgroundTaskMaxTimeout specifies the maximum amount of time that a page background task can run; regardless of the value of the *Timeout* parameter. This means that if the *Timeout* parameter value is greater than the PageBackgroundTaskMaxTimeout (which has a default value of 00:10:00), the PageBackgroundTaskMaxTimeout value determines tha timeout.
