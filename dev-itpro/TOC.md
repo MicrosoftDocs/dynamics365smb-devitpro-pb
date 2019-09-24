@@ -265,6 +265,16 @@
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+## Queries
+### [Overview](developer/devenv-query-overview.md)
+### [Query Object](developer/devenv-query-object.md)
+### [Linking and Joining Data Items](developer/devenv-query-links-joins.md)
+### [Filtering](developer/devenv-query-filters.md)
+### [Aggregating Data](developer/devenv-query-totals-grouping.md)
+### [Retrieving Date Data](developer/devenv-query-retrieve-date-data.md)
+### [Using Queries Instead of Record Variables](developer/devenv-query-using-instead-record-variables.md)
+### [Accessing Columns of a Query Dataset](developer/devenv-query-accessing-columns.md)
+### [API Query Type](developer/devenv-api-querytype.md)
 ## XMLports
 ### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ### [XMLport Object](developer/devenv-xmlport-object.md)
