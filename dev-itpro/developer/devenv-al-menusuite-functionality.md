@@ -78,6 +78,9 @@ The **AccessByPermission** property and **ApplicationArea** property are the opt
 
 ## Working in the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)]
 
+>[!NOTE]
+> [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
+
 If you are using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], you can also set UsageCategory, AdditionalSearchTerms, AccessByPermission, and ApplicationArea properties on pages and reports to control their search.
 
 After you change these properties by using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], before the changes take effect in the client, you must run **Build Object Search Index** from the **Tools** menu.
