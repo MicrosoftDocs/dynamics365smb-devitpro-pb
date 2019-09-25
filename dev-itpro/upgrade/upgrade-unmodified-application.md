@@ -367,7 +367,7 @@ Do the following steps for each extension, and for each tenant in a multitenant 
 
 ## Task 8: Configure the version 15 server instance for migrating 3rd party extensions
 
-With this task, you configure the version 15 server so that 3rd party extensions that were installed in the version 14 deployment can be reinstalled. You will do this by configuring the `DestinationAppsForMigration` parameter of the serve instance with information about the custom base application and test library. Specifically, you need the appId, name, and publisher assigned to these extensions. With the `DestinationAppsForMigration` parameter set, when you publish the Microsoft and 3rd party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application and test library extension, allowing them to be published.
+Complete this task if you have any 3rd party extensions that were installed in the version 14 deployment so that they can be published abd installed on tenants. You configure the `DestinationAppsForMigration` parameter of the version 15 server instance with information about the base application (specifically, the appId, name, and publisher). With the `DestinationAppsForMigration` parameter set, when you publish the 3rd party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application, allowing them to be published.
 
 1. Get the appId, name, and publisher of the base application.
 
@@ -412,21 +412,23 @@ With this task, you configure the version 15 server so that 3rd party extensions
 
 ## Task 9: Publish, synchronize and install 3rd party extensions
 
+Complete the following steps for each extension.
+
 1. Publish the extension.
 
     ```
-    Publish-NAVApp bc150 -Path "C:\AL\My14Ext\Default publisher_My14Ext_1.0.0.0.app"
+    Publish-NAVApp bc150 -Path "C:\AL\My14Ext\Default publisher_My14Extension_1.0.0.0.app"
     ```
 
 2. Synchronize the tenant with the extension. 
 
     ```
-    Sync-NAVApp -ServerInstance BC150 -Name "My14Ext" -Version 1.0.0.0
+    Sync-NAVApp -ServerInstance BC150 -Name "My14Extension" -Version 1.0.0.0
     ```
 3. Install the extension. 
 
     ```
-    Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
+    Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.0
     ```
 4. (Multitentant only) Repeat steps 2 and 3 for each tenant.
 
@@ -434,7 +436,8 @@ At this point, the upgrade is complete, and you should be able to open the clien
 
 ## Post-upgrade tasks
 
-1. (Multitenant only) If you used the `-AllowAppDatabaseWrite` parameter when mounting tenants, dismount the tenants, and then mount again without the `-AllowAppDatabaseWrite`. 
+1. Enable task scheduler on the server instance.
+2. (Multitnenat only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
 
 <!--
     Start-NAVAppDataUpgrade  -ServerInstance BC150 -Name "Sales and Inventory Forecast" -Version 15.0.35926.0
