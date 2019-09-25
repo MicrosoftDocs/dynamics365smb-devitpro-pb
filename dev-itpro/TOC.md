@@ -1,7 +1,6 @@
 ﻿# Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central
 ## [Get started](index.md)
 ## [Frequently asked questions](faq.md)
-## [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Technical support](technical-support.md)
@@ -9,8 +8,6 @@
 #### [User assistance model](user-assistance.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
-### Lifecycle policy
-#### [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md)
 <!--Ready2Go-->
 ## Ready to Go
 ### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
@@ -24,13 +21,18 @@
 ### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 <!-- deployment-->
 # Deployment
-## [Deployment Overview](deployment/deployment.md)
-### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
-### [System requirements Spring 2019](deployment/system-requirement-business-central.md)
+## [Overview](deployment/deployment.md)
+<!--### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+### [System requirements Spring 2019](deployment/system-requirement-business-central.md)-->
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
-### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
+### [Cloud Solution Provider program](/partner-center/csp-overview)
+### [Business Central Administration Center](administration/tenant-admin-center.md)
+### [Managing Environments](administration/tenant-admin-center-environments.md)
+### [Technical Support of Business Central](technical-support.md)
+### [Setting Up Business Central](/dynamics365/business-central/setup)
+### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ### Embed App
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Microsoft Responsibilities](deployment/embed-app-microsoft-responsibilities.md)
@@ -44,6 +46,7 @@
 #### [Sandbox](deployment/embed-app-sandbox.md)
 #### [Ecosystem Features](deployment/embed-app-ecosystem.md)
 ## On-Premises
+### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
@@ -201,7 +204,6 @@
 ### [Publish and Install an Extension V2](developer/devenv-how-publish-and-install-an-extension-v2.md)
 ### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ## [Signing an App Package File](developer/devenv-sign-extension.md)
-## [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ## Extending the Base Application
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
 ### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
@@ -561,7 +563,8 @@
 # Upgrade
 ## [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ## Online
-### [Online](upgrade/upgrading-to-business-central-online.md)
+### [Overview](upgrade/upgrading-to-business-central-online.md)
+### [Upgrading from Dynamics NAV to Business Central online](upgrade/Upgrade-Considerations.md#upgrading-from--to--online)
 ### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
