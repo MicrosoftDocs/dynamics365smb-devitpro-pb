@@ -116,7 +116,7 @@ This task runs a technical upgrade on the application database to convert it fro
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-## Task 5: Connect the version 15 server instance to the application database
+## Task 5: Connect and configure the version 15 server instance
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade, and can be reverted after you complete the upgrade.
 
@@ -190,7 +190,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
 
 
-## Task 7: Synchronize tenant and install base application and test library extensions
+## Task 7: Synchronize tenant and synchronize/install base application and test library extensions
 
 In this task, you update the schema of tenant database schema with schema of changes in system objects and application objects. In this step, you will synchronize the tenant to the to your custom base application extension and test libary extension (if any). With this operation, the extensions will take ownership of the tables in the SQL database.
 
