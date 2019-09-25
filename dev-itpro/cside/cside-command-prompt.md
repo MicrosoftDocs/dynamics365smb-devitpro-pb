@@ -126,7 +126,7 @@ Specifies how to synchronize table definition changes in the business \(tenant\)
 
 |[!INCLUDE[bp_tableoption](../developer/includes/bp_tableoption_md.md)]|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |----------------------------------|---------------------------------------|  
-|**yes**|Before applying changes to the business data table, [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] validates the changed table definition to check for destructive changes to the table. This includes changes that require that data is deleted in the fields of the business data table which are affected by the changes before the changes can be applied.<br /><br /> -   If there are no destructive changes to the table, then the schema changes are applied to the business data table immediately.<br />-   If there are destructive changes, [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] checks that there are table synchronization instructions in an upgrade codeunit. If there are instructions, then the schema changes are applied to the business database table according to the instructions. If there are no instructions, then an error message appears. The table definition changes are not saved and the schema changes are not applied.|  
+|**yes**|Before applying changes to the business data table, [!INCLUDE[server](../developer/includes/server.md)] validates the changed table definition to check for destructive changes to the table. This includes changes that require that data is deleted in the fields of the business data table which are affected by the changes before the changes can be applied.<br /><br /> -   If there are no destructive changes to the table, then the schema changes are applied to the business data table immediately.<br />-   If there are destructive changes, [!INCLUDE[server](../developer/includes/server.md)] checks that there are table synchronization instructions in an upgrade codeunit. If there are instructions, then the schema changes are applied to the business database table according to the instructions. If there are no instructions, then an error message appears. The table definition changes are not saved and the schema changes are not applied.|  
 |**no**|Table definition changes are saved and compiled in the application but the changes are not validated or applied to the business data table. You synchronize the table schema later by doing one of the following:<br /><br /> -   Save or compile the table from Object Designer in [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] and choose either the **Now - with validation** or **Force** synchronization option.<br />-   Use the **Sync. Schema for All Tables** option on the **Tools** menu.<br />-   Run the Sync-NAVTenant cmdlet from the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].|  
 |force|Table definition changes are applied to the business data table schema without validation. For destructive changes, data in columns of the business data table that are affected by changes will be deleted.<br /><br /> This option ignores any table synchronization instructions for the table in upgrade codeunits.|  
 
@@ -134,15 +134,15 @@ Specifies how to synchronize table definition changes in the business \(tenant\)
 
 *navservername*  
 
- Specifies the name of the server that hosts the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, such as **MyServer**.  
+ Specifies the name of the server that hosts the [!INCLUDE[server](../developer/includes/server.md)] instance, such as **MyServer**.  
 
 *navserverinstance*  
 
- Specifies the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that is being used, such as [!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)].  
+ Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance that is being used, such as [!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)].  
 
  *navservermanagementport*  
 
- Specifies the port on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] server that the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows PowerShell cmdlets access, such as **7045**.  
+ Specifies the port on the [!INCLUDE[server](../developer/includes/server.md)] server that the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows PowerShell cmdlets access, such as **7045**.  
 
  *tenant*  
 
@@ -520,7 +520,7 @@ finsql.exe command=upgradedatabase, servername=<server>, database=<database>[, l
  You use the **UpgradeDatabase** command together with the finsql.exe executable when you want to convert a database from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to the new version. For example, if you are upgrading several databases, you can create scripts that help you repeat the steps. finsql.exe is the executable file that runs the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]. By default, finsql.exe is located at [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]RoleTailored Client\\.  
   
 > [!IMPORTANT]  
->  The upgrade is not completed when you have run this command. You must compile all objects, and you must connect to a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. For more information, see [Converting a Database](../upgrade/Converting-a-Database.md).  
+>  The upgrade is not completed when you have run this command. You must compile all objects, and you must connect to a [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see [Converting a Database](../upgrade/Converting-a-Database.md).  
   
 ### Example  
  This example upgrades the *NAV Danish Database* database on the *TestComputer01\\BCDEMO* SQL Server instance.  

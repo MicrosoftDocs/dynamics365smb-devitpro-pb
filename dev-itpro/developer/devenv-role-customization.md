@@ -36,7 +36,7 @@ A *profile* is the mechanism that makes a Role Center and its associated pages a
 
 On top of the profile are *page customizations*. Page customizations modify the layout of elements on specific pages. For example, you can move or hide actions, fields, columns on list, or entire parts; exactly the same modifications that can be done using personalization. The page customizations will be seen by all users of the profile. Like profiles, page customizations can be made in AL as part of an extension or from the client by modifying the profile. Customizations that are made from the client will take precedence over the customizations in AL. <!--Page customizations are substractive between layers. This means, for example, if an element such as an action or part is removed at by an extension, it cannot be added by customizing the profile in the client or by personalization.-->
 
-For more information about profiles and page customization in AL, see [Designing Profiles](devenv-design-profiles.md). For information about using the client, [Customizing the Workspace for Profiles (Roles)](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage?branch=Fall-2019) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+For more information about profiles and page customization in AL, see [Designing Profiles](devenv-design-profiles.md). For information about using the client, [Customizing the Workspace for Profiles (Roles)](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage?) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
 
 <!--
 
@@ -48,7 +48,7 @@ For more information about profiles and page customization in AL, see [Designing
 
 
 - In AL code, you create extension-based page customizations by using the [page customization object](devenv-page-customization-object.md).
-- In the client, you create page customizations for profiles from the **Profiles** page. For more information, see [Customizing the Workspace for Profiles (Roles)](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage?branch=Fall-2019) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+- In the client, you create page customizations for profiles from the **Profiles** page. For more information, see [Customizing the Workspace for Profiles (Roles)](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
 
 -->
 ## Personalization

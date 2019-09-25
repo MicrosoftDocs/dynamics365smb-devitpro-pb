@@ -49,7 +49,7 @@ You cannot change the collation directly in the current database. To change the 
 
     For more information, see [Synchronizing the Tenant Database with the Application Database](../administration/synchronize-tenant-database-and-application-database.md).  
 
-6.  Restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.  
+6.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.  
 
 
 ## See Also  
