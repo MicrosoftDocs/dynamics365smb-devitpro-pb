@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
+author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]: Single-Tenant Deployment
@@ -84,7 +85,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     - Server
     - SQL Server Components
     - [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)]
-    - [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]
+    - [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]).
     - AL Development Environment
     - (optionally) [!INCLUDE[admintool](../developer/includes/admintool.md)]
 

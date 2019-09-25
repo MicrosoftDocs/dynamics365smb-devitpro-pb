@@ -74,13 +74,7 @@ The Dynamics 365 blog is where Microsoft publishes announcements, updates, and t
 
 ### Business Central communities
 
-On the [Business Central Community site](https://community.dynamics.com/business), you have access to a number of different resources as outlined in the following table.
-
-> [!div class="mx-tdCol2BreakAll"]
-> |Name  |Location  |Description|
-> |---------|---------|---------|
-> |Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f/758) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
-> |Business Central Forum |[https://community.dynamics.com/business/f](https://community.dynamics.com/business/f) |Use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.|
+On the [Business Central Community site](https://community.dynamics.com/business), you have access to the [Business Central Forum](https://community.dynamics.com/business/f/758). You can use this forum to submit a question and learn from other Business Central community members. MVPs, Partners, and Microsoft employees participate in the conversations.
 
 You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central and Dynamics NAV](https://www.navug.com/home), which is a user-led, user-driven community of 22,054 users, partners, and MVPs.  
 
@@ -88,7 +82,7 @@ You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central a
 
 - For collaboration in preview or beta versions of the AL language in Visual Studio Code, use [GitHub](https://github.com/microsoft/al)  
 - For Microsoft partners, for versions already in general availability and supported, file requests through [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/)  
-- For Microsoft partners who have discovered a bug in a in preview or beta version, use [MS Collaborate](https://docs.microsoft.com/en-us/collaborate/)  
+- For Microsoft partners who have discovered a bug in a in preview or beta version, use [MS Collaborate](/collaborate/)  
 
 ## Trials
 

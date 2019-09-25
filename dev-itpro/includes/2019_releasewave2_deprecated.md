@@ -1,1 +1,1 @@
-> **DISCONTINUED AFTER:** Business Central Spring 2019
+**DISCONTINUED AFTER:** Business Central Spring 2019

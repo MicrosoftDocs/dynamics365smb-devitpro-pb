@@ -305,9 +305,11 @@ The TOC structure of the TOC file is as follows:
 
 ### Standard Phrases
 
-All fields in Business Central have tooltips. Therefore, do not document fields in Help. To refer readers to the tooltips, use this standard phrase where relevant:    
-"Choose a field to read a short description of the field or link to more information."
-For more information, see [Dynamics 365 Business Central User Assistance Model](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/user-assistance).
+All fields in Business Central have tooltips. Therefore, do not document fields in Help. To refer readers to the tooltips, use this standard phrase where relevant:
+
+> "Choose a field to read a short description of the field or link to more information."
+
+For more information, see [Business Central User Assistance Model](../user-assistance.md).
 
 ### Topic Titles
 

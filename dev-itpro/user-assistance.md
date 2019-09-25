@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 09/24/2019
+ms.date: 09/25/2019
 ms.author: edupont
 ---
 
@@ -85,11 +85,11 @@ For more information, see [Extend, Customize, and Collaborate on the Help](help/
 
 ### Working in MarkDown
 
-If you fork one of our repos, you will be authoring in something called MarkDown. We recommend that you learn the basics by referring to the Docs contributor guide. For more information, see [How to use Markdown for writing Docs](https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown).  
+If you fork one of our repos, you will be authoring in something called MarkDown. We recommend that you learn the basics by referring to the Docs contributor guide. For more information, see [How to use Markdown for writing Docs](/contribute/how-to-write-use-markdown).  
 
-The team that built the Docs.microsoft.com site have also developed an extension for Visual Studio Code that helps with MarkDown validation, for example. For more information, see [Docs Authoring Pack for VS Code](https://docs.microsoft.com/en-us/contribute/how-to-write-docs-auth-pack). However, you can also use other text editors.  
+The team that built the Docs.microsoft.com site have also developed an extension for Visual Studio Code that helps with MarkDown validation, for example. For more information, see [Docs Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack). However, you can also use other text editors.  
 
-For other tips and tricks, see [Blog post: Collaborate on content for Business Central](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/15/collaborate-on-content-for-business-central).  
+For other tips and tricks, see [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
 
 ## Translate the Help
 

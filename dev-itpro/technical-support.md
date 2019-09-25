@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 09/24/2019
+ms.date: 09/25/2019
 ---
 # Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]
 
@@ -16,7 +16,7 @@ In this section, you can learn about the tools that are available to you to help
 
 ## Configuring the support experience
 
-Because you are the first line of support for your customers, you must make it easy for them to contact you. to that end, there is a section in the [Help and Support](/dynamics365/business-central/product-help-and-support?toc=/dynamics365/business-central/dev-itpro/toc.json) page in your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants where they can find this information.  
+Because you are the first line of support for your customers, you must make it easy for them to contact you. To that end, there is a section in the [Help and Support](/dynamics365/business-central/product-help-and-support?toc=/dynamics365/business-central/dev-itpro/toc.json) page in your customers' [!INCLUDE[prodshort](developer/includes/prodshort.md)] tenants where they can find this information.  
 
 ### To supply your support contact information in the administration center
 
