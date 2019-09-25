@@ -12,12 +12,12 @@ author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Upgrading an unmodified application to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2
-
+<!--
 > [!IMPORTANT]  
 > [!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)] 
 >
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
-
+-->
 Use this scenario if you have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (referred to as version 14) application that does not include any code customization. Your solution might include Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 base application extension. The result will be a fully upgraded Business Central 2019 release wave 2 (referred to as version 15) application and platform.
 
 <!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app.-->
