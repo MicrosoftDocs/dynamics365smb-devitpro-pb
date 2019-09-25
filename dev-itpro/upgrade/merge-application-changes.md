@@ -6,6 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
+author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Merge Application Changes
@@ -72,6 +73,10 @@ ms.service: "dynamics365-business-central"
  Alternatively, you can use the Compare-NAVApplicationObject cmdlet and Update-NAVApplicationObject cmdlet to first compare and the apply the difference. See [Compare and Update Application Object Source Files](compare-update-application-object-source-files.md).  
 
 ## Managing Conflicts  
+
+> [!NOTE]
+> [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
+
  At the end of the previous procedure, the RESULT folder contains text files with merged application objects and zero or more CONFLICT files. Since the CONFLICT files describe the conflicts, you can import the merged text files into the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] and resolve the conflicts there. Alternatively, you can use an external three-way merge tool to further analyze the conflicts. For more information, see [Handling Merge Conflicts](Handling-Merge-Conflicts.md).  
 
 #### To resolve merge conflicts in the development environment  

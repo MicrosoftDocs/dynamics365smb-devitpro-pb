@@ -11,6 +11,9 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 # Using the Development Environment from the Command Prompt
+>[!NOTE]
+> [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
+
 You can start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] by running finsql.exe at the command prompt. You can also use the finsql.exe command to perform the several development tasks without using the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] client.  
 
   By default, finsql.exe is located at [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]\\RoleTailored Client\\.  

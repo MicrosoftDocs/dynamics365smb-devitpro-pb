@@ -13,6 +13,9 @@ author: jswymer
 # Creating and Altering [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Databases
 You can create new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases in the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] and by using the [New-NAVDatabase](http://go.microsoft.com/fwlink/?LinkID=401374) cmdlet in the [!INCLUDE[devshell](../developer/includes/devshell.md)].  
 
+>[!NOTE]
+> [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
+
 When you create a database you must specify the SQL Server instance for the database and the authentication type.  
 
 
