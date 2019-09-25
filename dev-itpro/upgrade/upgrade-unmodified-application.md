@@ -425,7 +425,7 @@ Complete the following steps for each extension.
     ```
     Sync-NAVApp -ServerInstance BC150 -Name "My14Extension" -Version 1.0.0.0
     ```
-3. Install the extension. 
+3. Install the extension.
 
     ```
     Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.0
