@@ -48,7 +48,7 @@ For more information about profiles and page customization in AL, see [Designing
 
 
 - In AL code, you create extension-based page customizations by using the [page customization object](devenv-page-customization-object.md).
-- In the client, you create page customizations for profiles from the **Profiles** page. For more information, see [Customizing the Workspace for Profiles (Roles)](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage?branch=Fall-2019) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+- In the client, you create page customizations for profiles from the **Profiles** page. For more information, see [Customizing the Workspace for Profiles (Roles)](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
 
 -->
 ## Personalization
