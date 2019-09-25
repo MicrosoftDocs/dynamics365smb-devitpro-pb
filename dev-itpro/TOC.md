@@ -364,6 +364,7 @@
 #### [Dictionary Data Type](developer/methods-auto/dictionary/dictionary-data-type.md)
 #### [DotNet Data Type](developer/methods-auto/dotnet/dotnet-data-type.md)
 #### [Duration Data Type](developer/methods-auto/duration/duration-data-type.md)
+#### [Enum Data Type](developer/methods-auto/enum/enum-data-type.md)
 #### [ExecutionContext Option Type](developer/methods-auto/executioncontext/executioncontext-option.md)
 #### [ExecutionMode Option Type](developer/methods-auto/executionmode/executionmode-option.md)
 #### [FieldClass Option Type](developer/methods-auto/fieldclass/fieldclass-option.md)
