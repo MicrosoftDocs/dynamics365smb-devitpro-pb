@@ -92,13 +92,19 @@ Designer lets you make adjustments to the actions that are defined in the action
 
 ![Designer action bar](media/designer-action-bar.png "Designer action bar")
 
+> [!NOTE]
+> You cannot modify actions that are defined on pages that are shown in parts, such as in FactBoxes or embedded lists. 
+
+> [!TIP]
+> In Designer, to run an action as normal, select the action and press Ctrl+Click.
+
 ### Remove, hide, and show actions and groups
 
 Actions and actions groups that are already hidden appear dimmed. To change the state of an action or action group, select it, and then choose one of the following options:
 
 |Option|What it does|
 |------|------------
-|**Remove**|This option is available for the actions that are shown in a only a promoted category alone or actions that are shown in both a promoted category and another action menu.<br /><br /> Choosing **Remove** deletes the action from the selected location so that it no longer appears.<br /><br /> If the action is only shown in the promoted category, it will automatically be shown in the action menu where it is originally defined.|
+|**Remove**|This option is available for the actions that are shown only in a promoted category or actions that are shown in both a promoted category and another action menu.<br /><br /> Choosing **Remove** deletes the action from the selected location so that it no longer appears.<br /><br /> If the action is only shown in the promoted category, it will automatically be shown in the action menu where it is originally defined.<br /><br />You cannot remove actions on a Role Center pages; you can only hide them.|
 |**Hide**|This option is available for actions or action groups that currently are shown only in an action menu (not in a promoted category). Like **Remove**, choosing **Hide** will make the action or action group disappear from the action bar in the client. However, in Designer, the action or action group appears dimmed.|
 |**Show**|This option appears if the action or action group has been previously hidden (dimmed). Choosing this option will make the action or action group appear in the action bar.|
 
@@ -111,6 +117,7 @@ To move an action or action group, drag and drop it to the desired location, jus
 - You can move individual actions into the promoted categories, but you cannot change the order of the actions in the category.
 - You cannot move an action group into a promoted category.
 - To move an action or action group into an empty action group, drag the action or action group to the target group and drop it in the **Drop an action here** box.
+- On Role Center pages, you cannot move actions among the different areas that are defined by the `area(creation)`, `area(processing)`, and `area(reporting)` controls.
 
 ## Preview design on different display targets
 

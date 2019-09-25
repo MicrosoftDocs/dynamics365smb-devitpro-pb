@@ -51,7 +51,8 @@ You can add the Azure AD application by using the [Azure portal](http://go.micro
 
 1. Add an Azure AD application for the Excel add-in.
 
-    When you add an application to an Azure AD tenant, you must specify the following information:  
+    When you add an application to an Azure AD tenant, you must specify the following information:
+
     |Setting|Description|
     |-------|-----------|
     |Name|The name of your application as it will display to your users, such as *Excel Add-in for Dynamics NAV*.|

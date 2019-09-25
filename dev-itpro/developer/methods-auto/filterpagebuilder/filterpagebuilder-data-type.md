@@ -2,7 +2,7 @@
 title: "FilterPageBuilder Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 09/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,4 +38,5 @@ The following methods are available on instances of the FilterPageBuilder data t
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  
+[Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

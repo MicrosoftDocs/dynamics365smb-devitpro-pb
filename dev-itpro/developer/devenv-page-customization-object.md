@@ -13,10 +13,13 @@ ms.author: solsen
 ---
 
 # Page Customization Object
-The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add changes to the page layout and actions. The page customization object has more restrictions than the [page extension object](devenv-page-ext-object.md); when you define a new page customization object, you cannot add variables, procedures, or triggers. 
+
+The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add changes to the layout and actions on page that are accessible for a profile. 
+
+The page customization object has more restrictions than the [page extension object](devenv-page-ext-object.md); when you define a new page customization object, you cannot add variables, procedures, or triggers. 
 
 > [!NOTE]  
-> Page customizations only apply to the RoleCenter they are specified for. In order to see them, in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] under **My Settings**, **Role Center** change to the specific RoleCenter that a page customization is defined for.
+> A single page customization can be used with multiple profiles within the same extension. Page customizations only apply to the RoleCenters they are specified for. In order to view or changes the RoleCenters in the client, go to **My Settings** > **Role Center**. 
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.     
@@ -27,7 +30,8 @@ Typing the shortcut `tpagecust` will create the basic layout for a page customiz
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Page customization example
-The following page customization example `MyCustomization` makes changes to **Customer List**. By using the `moveafter` method, `Blanket Orders` is moved next to the `Aged Accounts Receivable` action item. And the modify method is used to hide the `NewSalesBlanketOrder` action item.
+
+The following page customization example `MyCustomization` makes changes to **Customer List**. By using the `moveafter` method, `Blanket Orders` is moved after the `Orders` action item. And the `modify` method is used to hide the `NewSalesBlanketOrder` action item.
 
 ```
 profile TheBoss
@@ -35,23 +39,35 @@ profile TheBoss
     Description = 'The Boss';
     RoleCenter = "Business Manager Role Center";
     Customizations = MyCustomization;
+    Caption = 'Boss';
 }
 
 pagecustomization MyCustomization customizes "Customer List"
 {
     actions
     {
-        moveafter("Blanket Orders"; "Aged Accounts Receivable")
+        moveafter(Orders; "Blanket Orders")
 
         modify(NewSalesBlanketOrder)
         {
             Visible = false;
         }
-        
+
     }
 }
 ```
 
+You can use the same page customization on another profile within the same extension package by referencing its name from the profile definition, for example:
+
+```
+profile TheSalesman
+{
+    ProfileDescription = 'The Boss';
+    RoleCenter = "Sales Manager Role Center";
+    Customizations = MyCustomization;
+    Caption = 'Salesman';
+}
+```
 
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  

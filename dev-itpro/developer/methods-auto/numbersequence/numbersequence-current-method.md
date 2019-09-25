@@ -2,7 +2,7 @@
 title: "Current Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 09/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,7 +37,15 @@ Returns the current value from number sequence.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+The following example gets the current value for the number sequence `MyNumberSequence`, which is not company specific.
+ 
+```
+number := NumberSequence.Current('MyNumberSequence', false);
+```
+
 ## See Also
 [NumberSequence Data Type](numbersequence-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

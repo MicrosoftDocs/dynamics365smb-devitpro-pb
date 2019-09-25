@@ -82,7 +82,7 @@ The navsettings.json has the following structure, where settings are included un
 {
   "NAVWebSettings": {
      "//ServerInstance":  "Name of the Business Central Server instance to connect to (for client) or listen on (for server).",
-     "ServerInstance":  "BC140",
+     "ServerInstance":  "BC150",
       [...more keys]
  },
   "ApplicationIdSettings": {
@@ -128,11 +128,6 @@ The following table describes the settings that are available in the navsettings
 |UseAdditionalSearchTerms|Specifies whether **Tell me** uses the additional search terms that are defined on pages and reports.<br /><br />The additional search terms are specified by the [AdditionalSearchTerms](../developer/properties/devenv-additionalsearchterms-property.md) and [AdditionalSearchTermsML](../developer/properties/devenv-additionalsearchtermsml-property.md) properties.<br /><br /> If you set this to `false` the additional search terms are ignored.<br /><br /> Default value: true |
 |DefaultRelativeHelpPath|Specifies the default Help article to open if no other context-sensitive link is specified.<br /><br /> Default value: none|
 |PersonalizationEnabled|Specifies whether personalization is enabled in the [!INCLUDE[webclient](../developer/includes/webclient.md)]. Set to `true` to enable personalization.<br /><br />For more information, see [Managing Personalization](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage).|
-
-<!-- Hidden from file and help
-|BaseHelpSearchUrl|Specifies the link to search API for the online Help library that the deployment uses, such as *https://mysite.com/{0}/search/index?search={1}&scope=BusinessCentral*.<br /><br /> Default value: none|
-
--->
 
 ### `ApplicationIdSettings` element settings
 

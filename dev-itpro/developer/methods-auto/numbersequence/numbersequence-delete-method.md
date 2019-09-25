@@ -2,7 +2,7 @@
 title: "Delete Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 09/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,15 @@ Specifies if the number sequence is company-specific. Default is true.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+The following example checks whether the number sequence `MyNumberSequence` exists, and if so, it deletes it.
+ 
+```
+if NumberSequence.Exists('MyNumberSequence', false) then
+    NumberSequence.Delete('MyNumberSequence', false);
+```
 ## See Also
 [NumberSequence Data Type](numbersequence-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

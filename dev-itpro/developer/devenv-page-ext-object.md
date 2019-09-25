@@ -19,6 +19,9 @@ The structure of a page is hierarchical and breaks down into three sections. The
 
 For more information about the Page and Page Extension objects, see [Pages Overview](devenv-pages-overview.md).
 
+> [!IMPORTANT]  
+> Only pages with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
+
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 

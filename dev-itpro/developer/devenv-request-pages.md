@@ -11,7 +11,8 @@ ms.author: solsen
 ---
 
 # Request Pages
-A request page is a page that is run before the report or XMLport starts to execute. Request pages enable end users to specify options and filters for a report and an XMLport ([!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)]). Request pages are defined as part of designing a [report object](devenv-report-object.md) and an [XMLport object](devenv-xmlport-object.md). The syntax is shown further down in this topic. You design the filters on request pages by using the following report and XMLport properties:
+
+A request page is a page that is run before the report or XMLport starts to execute. Request pages enable end users to specify options and filters for a report and an XMLport. Request pages are defined as part of designing a [report object](devenv-report-object.md) and an [XMLport object](devenv-xmlport-object.md). The syntax is shown further down in this topic. You design the filters on request pages by using the following report and XMLport properties:
 
 |Property|Description|
 |--------|-----------|
@@ -28,7 +29,7 @@ In addition to specifying options and filters, users can choose from the followi
 
 ## Filtering on request pages
 
-The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end user can add more fields on which to filter to the request page. Defining the `RequestFilterFields` property in `dataitem()` part of the report code is done as illustrated in the example below:
+The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end user can add more fields on which to filter to the request page. Defining the `RequestFilterFields` property in `dataitem()` part of the report code is done as illustrated in the following code example (which creates the request page shown in the above figure):  
 
 ```
 report 50103 "Customer List"
@@ -42,6 +43,7 @@ report 50103 "Customer List"
             RequestFilterFields = "No.", "Search Name", "Customer Posting Group";
 ...
 ```
+
 For more information about the report object, see [Report Object](devenv-report-object.md).
 
 Set the [SaveValues](properties/devenv-savevalues-property.md) property to `true` in order to save the values that the end user enters on the request page.
@@ -57,11 +59,18 @@ If you set the property `UseRequestPage` to `No`, then the report or XMLport wil
 
 In a complex report or XMLport that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports and XMLports so that end users cannot change the sort order in a way that affects the functionality of the report or XMLport.
 
+For data items whose source table contains calculated fields, such as amounts and quantities, the **Filter totals by:** section is automatically included on the request page, which allows you to adjust various dimensions that influence calculations.
+
+> [!TIP]
+> For information about how to enter filter criteria on the request page, see [Filtering](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-enter-criteria-filters#-filtering) in the Business Central application help.
+
 ## See Also
 [Report Object](devenv-report-object.md)  
 [XMLport Object](devenv-xmlport-object.md)  
 [Reports Overview](devenv-reports.md)  
-[RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)   
+[Report Design Overview](devenv-report-design-overview.md)  
+[RunRequestPage Method](methods-auto/report/reportinstance-runrequestpage-method.md)  
+[RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)  
 [RequestFilterHeadingML Property](properties/devenv-requestfilterheadingml-property.md)  
 [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)  
 [DataItemTableView](properties/devenv-dataitemtableview-property.md)  

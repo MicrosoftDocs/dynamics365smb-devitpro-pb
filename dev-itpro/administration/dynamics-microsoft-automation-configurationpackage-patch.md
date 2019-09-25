@@ -46,7 +46,7 @@ If successful, this method returns a ```204 No Content```.
 
 Here is an example of the request.
 ```json
-PATCH https://api.businesscentral.dynamics.com/v1.0/api/microsoft/automation/beta/companies({companyId})//configurationPackages('{packageName}')/file('{packageName}')/content
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})//configurationPackages('{packageName}')/file('{packageName}')/content
 Authorization : Bearer {token}
 Content-type : application/octet-stream
 If-Match:*

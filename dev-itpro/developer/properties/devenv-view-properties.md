@@ -14,10 +14,11 @@ ms.author: solsen
 ---
 
 # View Properties
-The following topic lists properties that apply to [Views](../devenv-views.md).
+The following topic lists properties that apply to [Views](../devenv-views.md) specifically.
 
 - [Filters](devenv-filters-property.md)  
 - [OrderBy](devenv-orderby-property.md)
+- [SharedLayout](devenv-sharedlayout-property.md)
 
 ## See also
 [Codeunit Properties](devenv-codeunit-properties.md)  

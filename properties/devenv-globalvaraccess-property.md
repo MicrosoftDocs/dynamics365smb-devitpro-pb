@@ -10,9 +10,9 @@ ms.service: "dynamics365-business-central"
 ms.assetid: f8792ef2-9a9e-4be6-a6d1-d5fa8b5a5705
 caps.latest.revision: 3
 author: SusanneWindfeldPedersen
----
+--- 
 
- 
+<!-- This property is no longer supported, and the topic has been redirected to methods/devenv-integration-attribute.md -->
 
 # GlobalVarAccess Property
 Specifies whether global variables in the object that contains the event publisher method are accessible to event subscriber methods that subscribe to the published event.  

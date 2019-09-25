@@ -2,7 +2,7 @@
 title: "AddTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 09/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,20 +51,20 @@ The text that is specified by the Name parameter. If an error occurs at runtime,
 ## Example  
  The following example initializes a filter page object that includes a filter control that uses the Date system table. The filter control has the caption of **Date record**.  
 
- This example requires that you create the following global variables.  
-
-|Variable name|DataType|SubType|  
-|-------------------|--------------|-------------|  
-|varDateItem|Text||  
-|varFilterPageBuilder|FilterPageBuilder||  
-
 ```  
-varDateItem := 'Date record';  
-FilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);  
+var
+    varDateItem: Text[30];
+    varFilterPageBuilder: FilterPageBuilder;
 
+begin
+    varDateItem := 'Date record';  
+    varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);
+    varFilterPageBuilder.RunModal(); 
+end;
 ```  
 
 ## See Also
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
+[Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

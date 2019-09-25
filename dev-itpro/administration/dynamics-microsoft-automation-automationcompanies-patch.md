@@ -41,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and a **automati
 
 Here is an example of the request.
 ```json
-PATCH https://api.businesscentral.dynamics.com/v1.0/api/microsoft/automation/beta/companies({id})/automationCompanies
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({id})/automationCompanies
 Content-type: application/json
 If-Match:*
 {

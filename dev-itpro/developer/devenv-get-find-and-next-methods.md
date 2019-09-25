@@ -47,7 +47,31 @@ else
 ```  
   
 Get searches for the records, regardless of the current filters, and it does not change any filters. Get always searches through all the records in a table.  
+
+## GetBySystemId method
+
+[!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
+
+The [GetBySystemId(Guid)](methods-auto/record/record-getbysystemid-method.md) retrieves a record based on the value of its **SystemId** field.   
   
+GetBySystemId has the following syntax:  
+  
+```
+RecordExists :=   Record.GetBySystemId(SystemId: Guid)
+``` 
+  
+The following example gets the record that has the SystemId `5286305A-08A3-E911-8180-001DD8B7338E`:
+
+```
+var
+    Customer: Record Customer;
+    Text000: TextConst ENU = 'Customer was found.';
+begin
+    If Customer.GetBySystemId('{5286305A-08A3-E911-8180-001DD8B7338E}') then
+    Message(Text000);
+end;
+```  
+
 ## Find methods  
 The [Find Method (Record)](methods-auto/record/record-find-method.md) locates a record in a table that is based on the values stored in the keys.  
   
@@ -101,3 +125,4 @@ until (Rec.Next = 0);
 
 ## See Also
 [AL Methods](methods-auto/library.md)  
+[SystemId Field](devenv-table-object.md#systemid)

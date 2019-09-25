@@ -84,87 +84,65 @@ The following control add-in example syntax defines a chart that can show how cu
 
 ```
 // The controladdin type declares the new add-in.
-
-controladdin CustomersPerCountryChart
+controladdin SampleAddIn
 {
     // The Scripts property can reference both external and local scripts.
-    Scripts = 'https://code.jquery.com/jquery-2.1.0.min.js',
-              'js/main.js';
+    Scripts = 'https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-debug.js',
+                'main.js';
 
-    // The StartupScript is a special script that the webclient calls once the page is loaded.
-    StartupScript = 'js/chart.js';
+    // The StartupScript is a special script that the web client calls once the page is loaded.
+    StartupScript = 'startup.js';
 
-    // Images and StyleSheets can be referenced in a similar fashion.
+    // Specifies the StyleSheets that are included in the control add-in.
+    StyleSheets = 'skin.css';
 
-    // The layout properties define how control add-in are displayed on the page.
-    VerticalShrink = true;
+    // Specifies the Images that are included in the control add-in.
+    Images = 'image.png';
 
     // The procedure declarations specify what JavaScript methods could be called from AL.
-    // In JavaScript code, there should be a global function LoadData(data) {}
-    procedure LoadData(Data : JsonArray);
+    // In main.js code, there should be a global function CallJavaScript(i,s,d,c) {}
+    procedure CallJavaScript(i: integer; s: text; d: decimal; c: char);
 
     // The event declarations specify what callbacks could be raised from JavaScript by using the webclient API:
-    // Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('CountryClicked', [{country: 'M}])
-    event CountryClicked(Country: JsonObject);
+    // Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('CallBack', [42, 'some text', 5.8, 'c'])
+    event Callback(i: integer; s: text; d: decimal; c: char);
 }
 
-page 50100 CustomersMapPage
+page 50130 PageWithAddIn
 {
     layout
     {
         area(Content)
         {
-            // The control add-in can be placed on the page using usercontrol keyword.
-
-            usercontrol(ControlName; CustomersPerCountryChart)
+             // The control add-in can be placed on the page using usercontrol keyword.
+            usercontrol(ControlName; SampleAddIn)
             {
-                // The control add-in events can be handled by defining a trigger with a corresponding name.
 
-                trigger CountryClicked(Country : JsonObject)
-                var 
-                    Data : JsonArray;
+                ApplicationArea = All;
+
+                 // The control add-in events can be handled by defining a trigger with a corresponding name.
+                trigger Callback(i: integer; s: text; d: decimal; c: char)
                 begin
-                    // The control add-in methods can be invoked via a reference to the usercontrol.
-
-                    Data := CustomersPerCountryToJson();
-                    CurrPage.ControlName.LoadData(Data);
+                    Message('Got from js: %1, %2, %3, %4', i, s, d, c);
                 end;
             }
         }
     }
 
-    // Coverts the CustomerPerCountryQuery query into a JsonArray data type.
-    local procedure CustomersPerCountryToJson() Result: JsonArray
-    var
-        CustomersQuery: query CustomersPerCountryQuery;
-        JObject: JsonObject;
-    begin
-        CustomersQuery.Open();
-        while CustomersQuery.Read() do begin
-            JObject := QueryRecordToJson(CustomersQuery);
-            Result.Add(JObject);
-        end;
-    end;
-    
-    // Converts a CustomersPerCountryQuery row into a JsonObject data type.
-    local procedure QueryRecordToJson(var Q: Query CustomersPerCountryQuery) Result: JsonObject
-    begin
-        Result.Add('code', Q.CountryRegionCode);
-        Result.Add('value', Q.CustomerCount);
-    end;
-}
-
-// The query retrieves the different country/region codes that appear in the Customer table and their number of occurrences.
-query 50101 CustomersPerCountryQuery
-{
-    elements
+    actions
     {
-        dataitem(Customer; Customer)
+        area(Creation)
         {
-            column(CountryRegionCode; "Country/Region Code") { }
-            column(CustomerCount)
+            action(CallJavaScript)
             {
-                Method = Count;
+                ApplicationArea = All;
+
+                trigger OnAction();
+                begin
+                    
+                    // The control add-in methods can be invoked via a reference to the usercontrol.
+                    CurrPage.ControlName.CallJavaScript(5, 'text', 6.3, 'c');
+                end;
             }
         }
     }

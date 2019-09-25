@@ -2,7 +2,7 @@
 title: "GetBySystemId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 09/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,26 @@ The SystemId of the record to retrieve.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Remarks
+
+Every record has a SystemId, which is stored in the SystemId field of the table. The SystemId cannot be changed.
+
+## Example
+  
+This example shows how to use the GETBYSYSTEMID method to retrieve a record.
+
+```
+var
+    CustomerRec: Record Customer;
+    Text000: TextConst ENU = 'Customer was found.';
+begin
+    If CustomerRec.GetBySystemId('{5286305A-08A3-E911-8180-001DD8B7338E}') then
+    Message(Text000);
+end;
+```
 ## See Also
+
+[SystemId Field](../../devenv-table-object.md#systemid)  
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

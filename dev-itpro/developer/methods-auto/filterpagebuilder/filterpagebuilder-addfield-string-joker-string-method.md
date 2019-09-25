@@ -2,7 +2,7 @@
 title: "AddField Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 09/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -54,24 +54,24 @@ A default filter on the field that is specified by the Field parameter.
 ## Example  
  The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two fields of the **Date** record variable which will be available in the filter control on the filter page: **Period End** and **Period Start**. A default filter is set on the **Period End** field.  
   
- This example requires that you create the following global variables.  
-  
-|Variable name|DataType|SubType|  
-|-------------------|--------------|-------------|  
-|varDateItem|Text||  
-|varDateRecord|Record|Date|  
-|varFilterPageBuilder|FilterPageBuilder||  
-  
-```  
-varDateItem := 'Date record';  
-varFilterPageBuilder.ADDRECORD(varDateItem, varDateRecord);  
-varFilterPageBuilder.ADDFIELD(varDateItem, varDateRecord."Period End",'12122015D');  
-varFilterPageBuilder.ADDFIELD(varDateItem, varDateRecord."Period Start");  
-  
+``` 
+var
+    varDateItem|: Text[30];  
+    varDateRecord: Record Date;  
+    varFilterPageBuilder: FilterPageBuilder;  
+
+begin     
+    varDateItem := 'Date record';  
+    varFilterPageBuilder.ADDRECORD(varDateItem, varDateRecord);  
+    varFilterPageBuilder.ADDFIELD(varDateItem, varDateRecord."Period End",'12122015D');  
+    varFilterPageBuilder.ADDFIELD(varDateItem, varDateRecord."Period Start");
+    varFilterPageBuilder.RunModal();  
+end;
 ```  
 
 
 ## See Also
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
+[Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

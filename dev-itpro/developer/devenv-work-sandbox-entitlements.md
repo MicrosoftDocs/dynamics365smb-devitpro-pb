@@ -16,9 +16,6 @@ author: freddydk
 The experience that a user has in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] depends on the purchased subscription plan. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two main plans; the Essential and the Premium plan, plus a few more. For more detailed information about the Essential and Premium plans, see [Business Central](https://dynamics.microsoft.com/en-us/business-central/overview/) on the Microsoft Dynamics 365 Marketing site. 
 
 When you develop in a Docker sandbox, the Essential experience is automatically assigned to you (you set the experience on the **Company Information** page), which makes it difficult to test how a user with the Premium plan assigned will experience what you have developed.
-
-Subscription plans are enforced by Entitlements in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], but is not enforced in the Sandboxes for technical reasons. So basically all of your users are SUPER users with access to everything. Therefore you must emulate assigning a plan to a user by assigning the right set of user groups to the user. The next section describes the default setup for the different user plans.
-
 <br>
 
 ## Setup for users with different plans
@@ -32,12 +29,13 @@ To mimic users with a specific subscription plan assigned, you can set them up w
 
 |User Name <br>The type of subscription plan <br> assigned to the given user|User Groups|Permission Sets|
 |---------|-----------|---------------|
-|EXTERNALACCOUNTANT|D365 EXT. ACCOUNTANT<br>D365 EXTENSION MGT<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT<br>D365 READ<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
-|PREMIUM|D365 BUS PREMIUM<br>D365 EXTENSION MGT<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 BUS PREMIUM<br>D365 EXTENSION MGT<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
-|ESSENTIAL|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
-|INTERNALADMIN|D365 INTERNAL ADMIN<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|D365 READ<br>LOCAL<br>SECURITY<br>TROUBLESHOOT TOOLS<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
+|EXTERNALACCOUNTANT|D365 EXT. ACCOUNTANT<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 READ<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
+|PREMIUM|D365 BUS PREMIUM<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 BUS PREMIUM<br>D365 EXTENSION MGT (non-default)<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
+|ESSENTIAL|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 BUS FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
+|INTERNALADMIN|D365 INTERNAL ADMIN<br>D365 TROUBLESHOOT<br>D365 BACKUP/RESTORE<br>D365 SECURITY (non-default)|D365 READ<br>LOCAL<br>SECURITY<br>TROUBLESHOOT TOOLS<br>D365 BACKUP/RESTORE<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
 |TEAMMEMBER|D365 TEAM MEMBER<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|D365 READ<br>D365 TEAM MEMBER<br>LOCAL<br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
-|DELEGATEDADMIN|D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|D365 BASIC<br>D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>LOCAL<br>TROUBLESHOOT TOOLS<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
+|DEVICE	|D365 FULL ACCESS<br>D365 EXTENSION MGT (non-default)<br>D365 BUS PREMIUM (non-default)* <br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)<br><br> *) Please note: usage need to be according to terms in Licensing Guide |D365 FULL ACCESS<br>LOCAL<br>D365 EXTENSION MGT(non-default)<br> D365 BUS PREMIUM (non-default)* <br>TROUBLESHOOT TOOLS (non-default)<br>D365 BASIC (non-default)<br>SECURITY (non-default)<br><br> *) Please note: usage need to be according to terms in Licensing Guide|
+|DELEGATEDADMIN|D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 BACKUP/RESTORE<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|D365 BASIC<br>D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>LOCAL<br>D365 BACKUP/RESTORE<br>TROUBLESHOOT TOOLS<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
 
 > [!TIP]  
 > For more information about how to choose a user experience, see [Changing Which Features are Displayed](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features).

@@ -11,10 +11,16 @@ author: SusanneWindfeldPedersen
 ---
 
 # Encrypting Data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
-This article gives an overview of data encription and how to use it to add security [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
+This article gives an overview of data encryption and how to use it to add security [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
+
+> [!NOTE]
+> [!INCLUDE[on_prem_only](../developer/includes/on_prem_only.md)] For online versions, encryption is always turned on.
+
+> [!Note]
+> [!INCLUDE[on_prem_only](includes/on_prem_only.md)]
 
 ## Cryptography overview
-The methods that support cryptography provide services that enable developers manage encrypting and decrypting data. Each tena nt supports a single encryption key which is used for encrypting and decrypting data stored in the database. Additional methods are provided to assist building robust solutions when working with encryption and for managing the encryption keys.  
+The methods that support cryptography provide services that enable developers manage encrypting and decrypting data. Each tenant supports a single encryption key which is used for encrypting and decrypting data stored in the database. Additional methods are provided to assist building robust solutions when working with encryption and for managing the encryption keys.  
 
  ![Flow between plain text and encrypted text](media/Encryption.jpg "Encryption in Dynamics 365 Business Central")  
 
