@@ -83,7 +83,7 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
 
 4. Unpublish all system, test, and application symbols.
 
-    To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.:
+    To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.
 
     ``` 
     Get-NAVAppInfo -ServerInstance BC140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
@@ -188,7 +188,6 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\MyDocuments\AL\testlibarary\testlibrary_14.5.0.0.app"
     ```
-
 
 ## Task 7: Synchronize tenant and synchronize/install base application and test library extensions
 

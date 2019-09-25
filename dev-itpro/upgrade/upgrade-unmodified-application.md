@@ -108,13 +108,13 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     
     In a single tenant deployment, this will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-3. Disable task scheduler on the server instance for purposes of upgrade.
+2. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```
     Set-NavServerConfiguration -ServerInstance BC150 -KeyName "EnableTaskScheduler" -KeyValue false
     ```
     Be sure to re-enable this after upgrade if needed.
-5. Restart the server instance.
+3. Restart the server instance.
 
     ```
     Restart-NAVServerInstance -ServerInstance BC150
@@ -217,10 +217,6 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
     -->
 <!--
-6. Publish the new versions of Microsoft extensions that were used before upgrade.
-
-    You find the extensions in the **Applications** folder of the installation media (DVD). 
-    
     ```
     Publish-NAVApp -ServerInstance BC150 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
@@ -343,6 +339,7 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
     
     When completed, the tenant state should be **Operational**.
 
+
 ## Task 9: Upgrade to the new versions of Microsoft extensions
 
 Complete this task to upgrade any Microsoft extensions that were used in your deployment to new versions that are available on the installation media (DVD). The new versions are located in the **Application** folder of the DVD. There is a folder for each extension, and the extension package (.app file) is located in the **Source** folder. 
@@ -437,18 +434,17 @@ At this point, the upgrade is complete, and you should be able to open the clien
 
 ## Post-upgrade tasks
 
-1. Enable task scheduler on the server instance, if needed.
-2. (Multitenant only) If you used the `-AllowAppDatabaseWrite` parameter when mounting tenants, dismount the tenants, and then mount again without the `-AllowAppDatabaseWrite`. 
-
-<!-- The extensions must be modified to work with base application extension. <!--There are two ways to do this. You can either modify the extension code or configure the version 15 server instance to handle this.-->
+1. (Multitenant only) If you used the `-AllowAppDatabaseWrite` parameter when mounting tenants, dismount the tenants, and then mount again without the `-AllowAppDatabaseWrite`. 
 
 <!--
-### Modify extension code
+    Start-NAVAppDataUpgrade  -ServerInstance BC150 -Name "Sales and Inventory Forecast" -Version 15.0.35926.0
+    ```
 
-1. Upgrade the extension package to reference the base app and system app.
 
-    1. Open the project in Visual Studio Code.
-    2. Download the symbols.
+## Task 8: Install 3rd party extensions
+
+For each extension, run the Install-NAVApp cmdlet:
+
     3. Modify the `dependencies` parameter in the app.json file to include dependencies on the base app and system app: 
 
         ```

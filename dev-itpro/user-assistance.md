@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 08/14/2019
+ms.date: 09/24/2019
 ms.author: edupont
 ---
 
@@ -97,6 +97,10 @@ If you want to deliver a [localization app](developer/readiness/readiness-develo
 
 The user assistance in the shape of tooltips and other user interface text is translated as part of the application. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
 
+## Style
+
+At Microsoft, we are in process of updating our style guides. If you have a partner account, you can get access to the Microsoft style guides on the [Microsoft Style Guides platform](https://styleguides.azurewebsites.net/). You can then download the style guide that you want and share that local copy with colleagues.  
+
 ## See Also
 
 [Configure the Help Experience](deployment/configure-help.md)  
@@ -110,4 +114,5 @@ The user assistance in the shape of tooltips and other user interface text is tr
 [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
-[Style Guide for Microsoft Dynamics NAV (requires login)](https://worldready.cloudapp.net/Styleguide/Read?id=2748&topicid=38066)  
+[Style Guide for Microsoft Dynamics NAV (requires login)](https://styleguides.azurewebsites.net/StyleGuide/Read?id=2748)  
+[Microsoft Cloud Style Guide (requires login)](https://styleguides.azurewebsites.net/StyleGuide/Read?id=2696)  
