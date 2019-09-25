@@ -2,7 +2,7 @@
 title: "FieldRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 09/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,6 +30,10 @@ The following methods are available on instances of the FieldRef data type.
 |[OptionMembers()](fieldref-optionmembers-method.md)|Gets the list of options that are available in the field that is currently selected.|
 |[OptionString()](fieldref-optionstring-method.md)|The 'OptionString' property has been deprecated and will be removed in the future. Use the 'OptionMembers' property instead.|
 |[OptionCaption()](fieldref-optioncaption-method.md)|Gets the option caption of the field that is currently selected.|
+|[GetEnumValueName(Integer)](fieldref-getenumvaluename-method.md)|Gets an Enum value (or Option member) name from the Enum metadata for the field that is currently selected.|
+|[GetEnumValueNameFromOrdinalValue(Integer)](fieldref-getenumvaluenamefromordinalvalue-method.md)|Gets an Enum value (or Option member) name from the Enum metadata for the field that is currently selected.|
+|[GetEnumValueOrdinal(Integer)](fieldref-getenumvalueordinal-method.md)|Gets the Enum value (or Option member) ordinal value from the Enum metadata for the field that is currently selected.|
+|[EnumValueCount()](fieldref-enumvaluecount-method.md)|Gets the number of Enum values (or Option members) from the Enum metadata for the field that is currently selected.|
 |[Active()](fieldref-active-method.md)|Checks whether the field that is currently selected is enabled.|
 |[Record()](fieldref-record-method.md)|Gets the RecordRef of the field that is currently selected. This method returns an error if no field is selected.|
 |[Length()](fieldref-length-method.md)|Gets the maximum size of the field (the size specified in the DataLength property of the field). This method is usually used for finding the defined length of code and text fields.|

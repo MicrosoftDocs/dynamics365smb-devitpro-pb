@@ -2,7 +2,7 @@
 title: "Data Types and Methods in AL"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/17/2019
+ms.date: 09/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,6 @@ The following data types are available as part of the AL Language. Each data typ
 |[Char](char/char-data-type.md)|Stores a single, 16-bit character as a value in the range 0 to 65535. You can convert this data type from a number to a character and vice versa. This means you can use mathematical operators on Char variables.|
 |[Code](code/code-data-type.md)|Denotes a special type of string that is converted to uppercase and removes any trailing or leading spaces.|
 |[Codeunit](codeunit/codeunit-data-type.md)|Is a container for AL code that you can use from other application objects.|
-|[CodeunitInstance](codeunitinstance/codeunitinstance-data-type.md)|Is a container for AL code that you can use from other application objects.|
 |[CompanyProperty](companyproperty/companyproperty-data-type.md)|Provides language support for company properties.|
 |[Database](database/database-data-type.md)|Provides access to common database functionality.|
 |[Date](date/date-data-type.md)|Denotes a date ranging from January 1, 1753 to December 31, 9999.|
@@ -39,6 +38,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[Dictionary](dictionary/dictionary-data-type.md)|Represents a collection of keys and values.|
 |[DotNet](dotnet/dotnet-data-type.md)|Represents an unspecified .NET type.|
 |[Duration](duration/duration-data-type.md)|Represents the difference between two DateTimes. This value can be negative. It is stored as a 64-bit integer. The integer value is the number of milliseconds during the duration.|
+|[Enum](enum/enum-data-type.md)|Represents the text content of an element or attribute.|
 |[ErrorInfo](errorinfo/errorinfo-data-type.md)|Provides a structure for grouping information about an error.|
 |[FieldRef](fieldref/fieldref-data-type.md)|Identifies a field in a table and gives you access to this field.|
 |[File](file/file-data-type.md)|Represents a file.|
