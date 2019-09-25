@@ -410,7 +410,7 @@ Complete this task if you have any 3rd party extensions that were installed in t
 
 -->
 
-## Task 9: Publish, synchronize and install 3rd party extensions
+## Task 11: Publish, synchronize and install 3rd party extensions
 
 Complete the following steps for each extension.
 
