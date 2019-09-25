@@ -70,7 +70,7 @@ Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an admi
 
 ## Alter a Database
 
-The changes will not take effect until you restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
+The changes will not take effect until you restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 > [!NOTE]  
 >  You cannot alter a database by using the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] if the database is deployed on Azure SQL Database.
