@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-manager: edupont
+author: jswymer
 ms.date: 09/12/2019
 ---
 # Administration of Business Central On-Premises
