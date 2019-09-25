@@ -16,7 +16,7 @@ ms.author: jaredha
 
 # Updating Environments
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are updated according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] roadmap with major updates every 6 months in April and October, and monthly service updates. For more information, see [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/en-us/business-applications-release-notes/).
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are updated according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] roadmap with major updates every 6 months in April and October, and monthly service updates. For more information, see [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/).
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] gives you a level of control over the timing of updates for each environment.
 
@@ -31,12 +31,12 @@ The update window must be a minimum of six hours.
 
 To set the update window for an environment:
 
-1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], Select the **Name** of the relevant environment to open the environment details.
-2. Select the **Set update window** action on the **Update** list on the action ribbon.
+1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
+2. Choose the **Set update window** action on the **Update** list on the action ribbon.
 3. In the **Set update window** pane, specify the start time and the end time for the update window for the environment.
    > [!NOTE]
    > The update window must be a minimum of six hours.
-4. Select **Save**.
+4. Choose **Save**.
 
 ## Schedule an update date
 
@@ -46,13 +46,13 @@ To schedule an update date:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
 2. Choose the **Schedule Update** action on the **Update** list on the action ribbon.
-3. In the **Schedule Environment Update** pane, select the desired update date.
+3. In the **Schedule Environment Update** pane, specify the update date.
     > [!NOTE]
     > The specified date must be within a given date range displayed in the pane.
 
-4. Select **Schedule Update**.
+4. Choose **Schedule Update**.
 
-When the option is available for tenant administrators to select an update date, and no date is selected, the update is applied automatically to each tenant environment with a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications, providing administrators the option to select a specific date, if desired. Not selecting an update date does not prevent the environment from being updated.
+If an administrator has chosen the **Schedule Update** action but not set a date, then the update is applied automatically to each tenant environment with a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications. You can then choose to override that with a custom date by following the steps that are provided above. Not selecting an update date does not prevent the environment from being updated.
 
 ## Update Notifications
 

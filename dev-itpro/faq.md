@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 08/07/2019
+ms.date: 09/25/2019
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
@@ -41,11 +41,17 @@ No, this is not currently supported.
 
 ## Can I get training in Business Central?
 
-Yes, you can. As a partner you have access to the Dynamics Learning Portal, where you can find eLearning courses for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see the [Microsoft Dynamics 365 training page](/dynamics365/get-started/training/index#dynamics-365-partners).  
+Yes, you can. You can find free eLearning content on the [Microsoft Learn site](/learn/browse/?products=dynamics-business-central). As a partner, you also have access to the Dynamics Learning Portal, where you can find older eLearning courses for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see the [Microsoft Dynamics 365 training page](/dynamics365/get-started/training/index#dynamics-365-partners).  
+
+## How do I help my customer configure their environment?
+
+You can find guidance for setting up [!INCLUDE [prodshort](developer/includes/prodshort.md)] in the application content. For more information, see [Setting Up Business Central](/dynamics365/business-central/setup).  
+
+You can also find relevant content on the [Microsoft Learn site](/learn/browse/?products=dynamics-business-central).
 
 ## How can I troubleshoot my customers' online tenants?
 
-You can use the **Help and Support** page in your customers' tenants to find technical information, and they can use that page to contact you. For more information, see [Configuring Technical Support for [!INCLUDE[prodlong](includes/prodlong.md)]](technical-support.md).  
+You can use the **Help and Support** page in your customers' tenants to find technical information, and they can use that page to contact you. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
 
 ## How does Microsoft handle database sizes?
 

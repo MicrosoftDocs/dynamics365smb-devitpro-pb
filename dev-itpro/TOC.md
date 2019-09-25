@@ -9,12 +9,24 @@
 #### [User assistance model](user-assistance.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
+### Lifecycle policy
+#### [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md)
+<!--Ready2Go-->
+## Ready to Go
+### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
+### [Learning Catalog](developer/readiness/readiness-learning-catalog.md)
+### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
+<!--AppSourcevalidation-->
+## AppSource Validation
+### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
+### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 <!-- deployment-->
 # Deployment
 ## [Deployment Overview](deployment/deployment.md)
 ### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
 ### [System requirements Spring 2019](deployment/system-requirement-business-central.md)
-## [Configuring the Help Experience](deployment/configure-help.md)
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
@@ -62,6 +74,7 @@
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating and Altering Databases](cside/cside-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
+## [Configuring the Help Experience](deployment/configure-help.md)
 <!-- end deployment -->
 <!-- administration-->
 # Administration

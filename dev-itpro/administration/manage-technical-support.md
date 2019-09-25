@@ -70,7 +70,7 @@ Sometimes the tenant has run into a problem that you cannot resolve. In those ca
 Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], use the **New Support Request** link in the Help menu. This opens a new browser tab so that you can submit the support request in the Power Platform Admin Center.  
 
 > [!IMPORTANT]
-> You must be a registered partner in order to submit a support request.
+> You must be registered as a partner in order to submit a support request.
 
 In the Power Platform Admin Center, you are automatically logged in with information about the customer tenant that you are working on behalf of. Create a new support request and fill in the fields as appropriate. You can find most of the necessary information in the administration center, including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers.  
 
@@ -86,7 +86,7 @@ When a customer has a situation where they cannot login to [!INCLUDE [prodshort]
 > This option is not available in sandbox environments.  
 
 > [!IMPORTANT]
-> You must be a registered partner in order to report an outage.
+> You must be registered as a partner in order to report an outage.
 
 To report an outage:
 
