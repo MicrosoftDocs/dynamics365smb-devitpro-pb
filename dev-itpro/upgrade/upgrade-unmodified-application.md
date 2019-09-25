@@ -319,7 +319,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
     At this point, the base application is upgraded to the version 15 platform and is operational. You should be able to open the application in the client.
 
-## Task 7: Upgrade the tenant data
+## Task 8: Upgrade the tenant data
 
 Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions. This step will also automatically install the **System Application** and **Base Application** extensions on the tenant.
 
@@ -365,7 +365,7 @@ Do the following steps for each extension, and for each tenant in a multitenant 
 4. (Multitentant only) Repeat steps 2 and 3 for each tenant.
 
 
-## Task 8: Configure the version 15 server instance for migrating 3rd party extensions
+## Task 10: Configure the version 15 server instance for migrating 3rd party extensions
 
 Complete this task if you have any 3rd party extensions that were installed in the version 14 deployment so that they can be published abd installed on tenants. You configure the `DestinationAppsForMigration` parameter of the version 15 server instance with information about the base application (specifically, the appId, name, and publisher). With the `DestinationAppsForMigration` parameter set, when you publish the 3rd party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application, allowing them to be published.
 
@@ -381,7 +381,7 @@ Complete this task if you have any 3rd party extensions that were installed in t
     ```
 3. Restart the server instance.
 
-<!-->
+<!--
 
 2. (Single tenant only) When upgrade is completed, restart the server instance.
 
@@ -393,7 +393,7 @@ Complete this task if you have any 3rd party extensions that were installed in t
     ```
     Start-NAVAppDataUpgrade  -ServerInstance BC150 -Name "Sales and Inventory Forecast" -Version 15.0.35986.0
     ```
-
+-->
 <!--
 15. The upgrade installs System Application on the tenant. If it does not, manually install it on the tenant.
 
