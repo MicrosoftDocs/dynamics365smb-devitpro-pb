@@ -96,7 +96,7 @@ This task runs a technical upgrade on the application database to convert it fro
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-## Task 4: Connect and configure the version 15 server instance
+## Task 4: Connect and configure the version 15 server instance to the application
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade, and can be reverted after you complete the upgrade.
 
@@ -119,7 +119,7 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     ```
     Restart-NAVServerInstance -ServerInstance BC150
     ```
-
+<!--
 ## Task 4: Configure the version 15 server instance 
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change some of the server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15 upgrade, and can be reverted after you complete the upgrade.
@@ -140,9 +140,9 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     <!-- with test
     ```
     Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
-    ```-->
-    This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application--> on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
-    <!-- maybe not required-->
+    ```
+    This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application-- on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
+
 3. Configure the server instance to synchronize only the system application objects with tenants.
 
     This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`.
@@ -163,7 +163,7 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     ```
     Restart-NAVServerInstance -ServerInstance BC150
     ```
-
+-->
 ## Task 5: Publish the platform symbols, system application, and base application extensions
 
 In this task, you will publish extensions to the version 15 server instance. Publishing an extension adds the extension to the application database that is mounted on the server instance, making it available for installing on tenants later on. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
