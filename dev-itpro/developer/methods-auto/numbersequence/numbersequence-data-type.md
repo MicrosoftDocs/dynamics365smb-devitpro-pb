@@ -16,7 +16,6 @@ author: solsen
 # NumberSequence Data Type
 Is a complex data type for creating and managing number sequences in the database.
 
-
 The following methods are available on the NumberSequence data type.
 
 

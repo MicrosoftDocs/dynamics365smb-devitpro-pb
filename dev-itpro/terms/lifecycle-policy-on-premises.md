@@ -40,7 +40,7 @@ The following image illustrates the update schedule for [!INCLUDE [prodlong](../
 
 <!-- Critical fixes and non-critical updates are handled in the following way:
 
-- **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes will be made available in the latest platform update version.
+## Modern Lifecycle Policy
 
 - **Non-critical updates** – Customers must update to the most current Dynamics 365 Business Central to deploy non-critical updates.-->
 
