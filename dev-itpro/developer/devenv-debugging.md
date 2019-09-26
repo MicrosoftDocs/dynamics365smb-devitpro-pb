@@ -75,7 +75,7 @@ If you do not want to publish and invoke functionality to debug it, you can inst
 |F5           |Start debugging|
 |Ctrl+F5      |Start without debugging|
 |Shift+F5     |Stop debugging|
-|Ctrl+Shift+F5|Start debugging without publishing. Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method “foo”, add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint will not be hit, or if it is hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
+|Ctrl+Shift+F5|Start debugging without publishing. <br> Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method “foo”, add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint will not be hit, or if it is hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
 |Alt+F5       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
 |F10          |Step over|
 |F11          |Step into|
@@ -125,6 +125,8 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 To restrict the ability to debug certain methods and/or variables, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
 
 ## See Also
+
+[Attach and Debug Next](devenv-attach-debug-next.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [AL Code Navigation](devenv-al-code-navigation.md)  

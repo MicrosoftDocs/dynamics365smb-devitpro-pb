@@ -27,11 +27,11 @@
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
-### [Cloud Solution Provider program](/partner-center/csp-overview)
+### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business Central Administration Center](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
 ### [Technical Support of Business Central](technical-support.md)
-### [Setting Up Business Central](/dynamics365/business-central/setup)
+### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ### Embed App
 #### [Embed App Overview](deployment/embed-app-overview.md)
@@ -88,7 +88,7 @@
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
 #### [Updating Environments](administration/tenant-admin-center-update-management.md)
-#### [Database Exports](administration/tenant-admin-center-database-export.md)
+<!--#### [Database Exports](administration/tenant-admin-center-database-export.md)-->
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 #### [Administration Center API](administration/administration-center-api.md)
@@ -568,6 +568,7 @@
 ### [Importing Business Data from Other Finance Systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [The Dynamics GP Data Migration Extension](/dynamics365/business-central/ui-extensions-dynamicsgp-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [The QuickBooks Data Migration Extension](/dynamics365/business-central/ui-extensions-quickbooks-data-migration?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ## On-Premises
 ### Business Central Spring 2019
 #### [Overview](upgrade/upgrading-to-business-central-on-premises.md)

@@ -52,13 +52,13 @@ We urge you to review and implement these best practices on your landing page �
 ## Layout and structure elements
 | Element                                | Description | Example |
 |--------------------------------------|-------------|--------------|
-|Company|	Include the company logo on the page|	./media/image30.jpg|
-|App name & app logo	|Include a visual logo of your product name and a onesentence positioning statement.		|<!-- to be fixed./media/image31.jpg -->|
+|Company|	Include the company logo on the page|<!--	./media/image30.jpg to be fixed -->|
+|App name & app logo	|Include a visual logo of your product name and a one sentence positioning statement.		|<!-- to be fixed./media/image31.jpg -->|
 |||<!--  to be fixed ./media/image32.jpg -->|
 |||<!-- to be fixed ./media/image33.jpg -->|
 |Top menu choices|	Use clean, straightforward and descriptive menu options.|<!--/media/image34.jpg to be fixed -->|
-|Search box|	Include a search box so visitors can quickly find what they are looking for.|<!-- to be fixed ./media/image37.jpg -->|	
-|Emotional tribal anchor photos|	Visuals create an emotional Add-onion. The brain skims over non-emotional photos.| <!-- to be fixed ./media/image38.jpg -->|
+|Search box| Include a search box so visitors can quickly find what they are looking for.|<!-- to be fixed ./media/image37.jpg -->|	
+|Emotional tribal anchor photos| Visuals create an emotional Add-onion. The brain skims over non-emotional photos.| <!-- to be fixed ./media/image38.jpg -->|
 |Visual| Make your page easy to scan, with lots of strong visual imagery.|<!-- ./media/image39.jpg to be fixed -->|
 
 ## Logo
@@ -126,7 +126,7 @@ Target market - If you support multiple countries or languages, this is a key se
 	
 | Element    | Description | Example |
 |------------|-------------|---------|
-|**Messaging (Compelling call-to-action)**| Include specific calls-to-action on your app page|./media/image53.jpg|
+|**Messaging (Compelling call-to-action)**| Include specific calls-to-action on your app page|<!-- >./media/image53.jpg -->|
 - This can be your free trial; a time-limited special price; a scheduled walk-through demonstration; and so on.
 - The words "free” and “save” are highly emotional words in the English language, so they should be used.
 - Use bright colors, such as orange, yellow, or red, to call attention to your buttons.
@@ -174,6 +174,7 @@ Include at least one customer testimonial video on your app landing page.
 - Your client should speak specifically about the pains they had before and the benefits they gained after, not product features. It should be all about your customers, not you.
 
 Include one product demonstration video.
+
 - See the video best practices [https://aka.ms/ReadyToGo](https://aka.ms/ReadyToGo).
 
 ## Elements that reduce anxiety and risk, while increasing trust

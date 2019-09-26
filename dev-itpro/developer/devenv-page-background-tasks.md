@@ -57,7 +57,7 @@ The API for background tasks includes the following:
 ||[RunPageBackgroundTask](methods-auto/testpage/testpage-runpagebackgroundtask-method.md)|Runs the page background task codeunit in the current session.|
 ||[CancelBackgroundTask](methods-auto/page/page-cancelbackgroundtask-method.md)|Attempt to cancel a page background task.|
 |Triggers|[OnPageBackgroundTaskCompleted](triggers/devenv-onpagebackgroundtaskcompleted-trigger.md)|Runs after a page background task has successfully completed.|
-||[OnPageBackgroundTaskError ](triggers/devenv-onpagebackgroundtaskerror-trigger.md)|Runs when an error occurs in a page background task. |
+||[OnPageBackgroundTaskError](triggers/devenv-onpagebackgroundtaskerror-trigger.md)|Runs when an error occurs in a page background task. |
 
 ## How to create a page background task
 

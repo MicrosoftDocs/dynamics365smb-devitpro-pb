@@ -12,11 +12,13 @@ ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
 ms.date: 09/07/2019
 ms.author: jaredha
+<!--Temporarily do not show up in search>
+ROBOTS: NOINDEX
 ---
 
 # Database Export
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides the ability to export the database for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments.
+<!--COMMENTED OUT FOR NOW The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides the ability to export the database for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments.
 
 
 
@@ -27,4 +29,4 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 [Managing Environments](tenant-admin-center-environments.md)  
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  -->

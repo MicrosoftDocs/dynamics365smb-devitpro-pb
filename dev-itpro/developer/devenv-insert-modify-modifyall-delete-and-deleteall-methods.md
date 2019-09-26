@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Insert, Modify, ModifyAll, Delete, and DeleteAll Methods
+
 The following methods maintain the database by adding, modifying, and removing records:  
 
 - Insert
