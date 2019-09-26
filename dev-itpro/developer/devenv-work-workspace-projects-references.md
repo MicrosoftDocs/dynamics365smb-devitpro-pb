@@ -1,5 +1,5 @@
 ---
-title: "Working with multiple projects and project references"
+title: "Working with Multiple Projects and Project References"
 description: "Handling solutions in the AL language that contains multiple projects in one VS Code folder and contains references between these projects."
 author: SusanneWindfeldPedersen
 ms.date: 08/13/2019
@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Working with multiple projects and project references
+# Working with Multiple Projects and Project References
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
