@@ -27,11 +27,11 @@
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
-### [Cloud Solution Provider program](/partner-center/csp-overview)
+### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business Central Administration Center](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
 ### [Technical Support of Business Central](technical-support.md)
-### [Setting Up Business Central](/dynamics365/business-central/setup)
+### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ### Embed App
 #### [Embed App Overview](deployment/embed-app-overview.md)
