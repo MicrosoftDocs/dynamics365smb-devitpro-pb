@@ -57,7 +57,7 @@ The API for background tasks includes the following:
 ||[RunPageBackgroundTask](methods-auto/testpage/testpage-runpagebackgroundtask-method.md)|Runs the page background task codeunit in the current session.|
 ||[CancelBackgroundTask](methods-auto/page/page-cancelbackgroundtask-method.md)|Attempt to cancel a page background task.|
 |Triggers|[OnPageBackgroundTaskCompleted](triggers/devenv-onpagebackgroundtaskcompleted-trigger.md)|Runs after a page background task has successfully completed.|
-||[OnPageBackgroundTaskError ](triggers/devenv-onpagebackgroundtaskerror-trigger.md)|Runs when an error occurs in a page background task. |
+||[OnPageBackgroundTaskError](triggers/devenv-onpagebackgroundtaskerror-trigger.md)|Runs when an error occurs in a page background task. |
 
 ## How to create a page background task
 
@@ -94,7 +94,7 @@ For general information about creating a codeunit, see [Codeunit Object](devenv-
 
 When a page background task is enqueued, it can include a set of parameters (a collection of key and value pairs) that can be used in the computations done in the background task codeunit. These parameters are passed as a dictionary of text to the codeunit's OnRun trigger when the page background task session is started.
 
-To get the parameters, call the [GetBackgroundParameters Method](methods-auto/page/page-getbackgroundparameters-method.md).
+To get the parameters, call the GETBACKGROUNDPARAMETERS method.
 
 ```
 Parameters :=  Page.GetBackgroundParameters()
