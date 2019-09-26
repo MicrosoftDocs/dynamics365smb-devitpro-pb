@@ -63,6 +63,7 @@ The following topic lists properties that apply to the [Table Object](../devenv-
 |[PasteIsValid Property](devenv-pasteisvalid-property.md)||<ul><li>Table object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)||<ul><li>Table object</li></ul>|
 |[ReplicateData Property](devenv-replicatedata-property.md)|<ul><li>Table object</li></ul>|
+|[Scope (Table) Property](devenv-scope-table-property.md)||<ul><li>Table object</li></ul>|
 |[SignDisplacement Property](devenv-signdisplacement-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>|
 |[SQLDataType Property](devenv-sql-data-type-property.md)||<ul><li>Code field</li><li>OemCode field</li></ul>|
 |[SqlTimeStamp Property](devenv-sql-timestamp-property.md)||<ul><li>BigInteger</li></ul>|
@@ -73,11 +74,10 @@ The following topic lists properties that apply to the [Table Object](../devenv-
 |[ValuesAllowed Property](devenv-valuesallowed-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>| 
 |[Width Property](devenv-width-property.md)|X|<ul><li>BigInteger field</li><li>Code field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Text field</li></ul>| 
 
-
-
 ## See Also  
- [Properties](devenv-properties.md)  
- [Page and Page Extension Properties](devenv-page-property-overview.md)
+
+[Properties](devenv-properties.md)  
+[Page and Page Extension Properties](devenv-page-property-overview.md)
 
 
 <!--

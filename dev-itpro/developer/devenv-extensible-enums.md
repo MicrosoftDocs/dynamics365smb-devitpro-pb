@@ -155,4 +155,4 @@ Conversion to and from `enum` is more strict than for `Options` in C/SIDE.
 [AL Data Types](datatypes/devenv-al-data-types.md)  
 [TableRelation Property](properties/devenv-tablerelation-property.md)  
 [Extensible Property](properties/devenv-extensible-property.md)  
-
+[Enum Data Type](methods-auto/enum/enum-data-type.md)

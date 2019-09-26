@@ -88,7 +88,7 @@
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
 #### [Updating Environments](administration/tenant-admin-center-update-management.md)
-#### [Database Exports](administration/tenant-admin-center-database-export.md)
+<!--#### [Database Exports](administration/tenant-admin-center-database-export.md)-->
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 #### [Administration Center API](administration/administration-center-api.md)
