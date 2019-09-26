@@ -94,7 +94,7 @@ For general information about creating a codeunit, see [Codeunit Object](devenv-
 
 When a page background task is enqueued, it can include a set of parameters (a collection of key and value pairs) that can be used in the computations done in the background task codeunit. These parameters are passed as a dictionary of text to the codeunit's OnRun trigger when the page background task session is started.
 
-To get the parameters, call the GETBACKGROUNDPARAMETERS method.
+To get the parameters, call the [GetBackgroundParameters Method](methods-auto/page/page-getbackgroundparameters-method.md).
 
 ```
 Parameters :=  Page.GetBackgroundParameters()
