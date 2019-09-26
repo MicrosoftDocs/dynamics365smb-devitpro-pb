@@ -101,6 +101,11 @@ In the generated .xlf file, you can see a `<source>` element for each label. For
 
 When the extension is built and published, you change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
 
+## Translating other extensions
+
+To translate other extensions, for example, adding translations to the Base Application, you must reference the project to be translated using the `dependencies` section in the app.json file. For more information, see [JSON Files](devenv-json-files.md). When you have the dependencies added, you can add .xlf files in your current project that translates the object captions of the referenced extension. When your extension is then built and published, change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
+
+
 ## Translation and Localization apps
 
 > [!NOTE]  
