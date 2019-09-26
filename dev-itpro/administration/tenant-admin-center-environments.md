@@ -16,7 +16,7 @@ ms.author: jaredha
 
 # Managing Environments
 
-The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, and you can manage upgrades for each environment.
+The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
 
 > [!div class="mx-imgBorder"]
 > ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
@@ -39,7 +39,8 @@ To create a production environment:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **New** action on the action ribbon.
 2. In the **Create Environment** pane, in the **Environment Type** list, choose **Production**.
-3. Select **Create**.
+3. In the **Country** list, select the country for the environment. The selected country determines the localization for the environment, as well as the Azure region in which the environment is created and stored.
+4. Select **Create**.
 
 When the new production environment is created, it will be on the latest production version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
@@ -58,8 +59,9 @@ To create a sandbox environment:
 4. Specify if you want the sandbox environment to contain a copy of another environment. Ifyou choose this option, you must specify the environment to copy.
     > [!NOTE]
     > When you create a sandbox environment as a copy of another environment, the new environment is created on the same application version as the environment that you are copying. The new environment will also contain all the per-tenant extensions and AppSource extensions that are installed and published in the original environment that is being copied.
-5. Select the relevant application version for the new sandbox environment from the **Version** list.
-6. Select **Create**.
+5. In the **Country** list, select the country for the environment. The selected country determines the localization for the environment, as well as the Azure region in which the environment is created and stored.
+6. Select the relevant application version for the new sandbox environment from the **Version** list.
+7. Select **Create**.
     > [!NOTE]
     > The sandbox environment will not be accessible until the **State** shows *Active*.
 
