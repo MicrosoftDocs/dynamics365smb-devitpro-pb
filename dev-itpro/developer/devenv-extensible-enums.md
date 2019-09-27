@@ -37,6 +37,8 @@ enum 50121 Loyalty
 > [!IMPORTANT]  
 > Only enums with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
 
+## Enumextension object
+
 Enums can be extended in order to add more values to the enumeration list in which case the `Extensible` property must be set to `true`. The syntax for an enum extension, which extends the **Loyalty** enum with the value **Diamond**, is shown below.
 
 ```
