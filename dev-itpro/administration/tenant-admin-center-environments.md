@@ -16,7 +16,7 @@ ms.author: jaredha
 
 # Managing Environments
 
-The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, and you can manage upgrades for each environment.
+The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
 
 > [!div class="mx-imgBorder"]
 > ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
@@ -39,7 +39,8 @@ To create a production environment:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **New** action on the action ribbon.
 2. In the **Create Environment** pane, in the **Environment Type** list, choose **Production**.
-3. Select **Create**.
+3. In the **Country** list, select the country for the environment. The selected country determines the localization for the environment, as well as the Azure region in which the environment is created and stored.
+4. Select **Create**.
 
 When the new production environment is created, it will be on the latest production version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
@@ -58,8 +59,9 @@ To create a sandbox environment:
 4. Specify if you want the sandbox environment to contain a copy of another environment. Ifyou choose this option, you must specify the environment to copy.
     > [!NOTE]
     > When you create a sandbox environment as a copy of another environment, the new environment is created on the same application version as the environment that you are copying. The new environment will also contain all the per-tenant extensions and AppSource extensions that are installed and published in the original environment that is being copied.
-5. Select the relevant application version for the new sandbox environment from the **Version** list.
-6. Select **Create**.
+5. In the **Country** list, select the country for the environment. The selected country determines the localization for the environment, as well as the Azure region in which the environment is created and stored.
+6. Select the relevant application version for the new sandbox environment from the **Version** list.
+7. Select **Create**.
     > [!NOTE]
     > The sandbox environment will not be accessible until the **State** shows *Active*.
 
@@ -85,36 +87,6 @@ If you choose to create a sandbox that is not a copy of an existing environment,
 The version list may also have one or more *preview* versions. Preview versions are early release candidates of upcoming releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that are made available specifically for sandbox environments. This gives you access to review new functionality, validate extension compatibility, and other general testing of the upcoming release.
 
 When you create a sandbox environment on a preview version, the environment will automatically be updated to new preview versions when they become available. However, the environment will not be updated to the production version. Once a sandbox environment is on a preview version, it must stay on a preview version until it is deleted. The environment can also be deleted if an update between preview versions fails. We recommend that preview versions are used only for temporary testing of an upcoming release.
-
-## Sending telemetry to Microsoft Azure Application Insights
-
-You can set up your environments to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. To read more about Application Insights, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
-
-Currently, the only telemetry that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits to Application Insights pertains to long running SQL queries. We expect to add more telemetry in future updates.
-
-Identifying long running SQL queries on a tenant database can be a good starting point when doing performance analysis, and Application Insights provides tools that can help you in this task.
-
-### Enable sending telemetry to Application Insights
-
-1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).
-2. Create an Application Insights resource in Azure.
-
-    The Application Insights resource will be assigned an instrumentation key. Copy this key because you will need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
-
-    For more information, see [Create an Application Insights resource](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource).
-
-3. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], on the **Environments** tab, select **Application Insights Key**.
-4. On the **Application Insights Key** page, enter the instrumentation key in the **Instrumentation Key** field.
-5. If you want to apply the instrumentation key to all your environments, turn on the **Apply to all environments** switch.
-6. Select **Save**.
-
-### Analyze long running SQL queries
-
-Any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource. To get a quick overview, you can go the [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
-
-For details about the long running SQL query telemetry information and dimensions sent from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], see [Dimensions for long running SQL queries](monitor-long-running-sql-queries-event-log.md#LRSQLQuery).
-
-There are multiple reasons that can affect the time it takes SQL queries to run. For example, the database could be waiting for a lock to be released or the database is executing an operation that performs badly because of missing indexes. In some cases, you can see what caused the delay by looking at the SQL statement that was generated by the code. This information can be found in the **CustomDimension** data, specifically the **AL Stack Trace** column.
 
 ## See also
 
