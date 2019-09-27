@@ -12,33 +12,33 @@ ms.author: v-liober
 
 # Language and Branding Guidelines
 
-| General requirements      | Description                 | Requirements |
-|---------------------------|-----------------------------|--------------|
+| General requirements | Description| Requirements |
+|----------------------|--------------|-------------|
 | 0.A **Language requirements** | Your app can be in any language – if not in English, a document with English translation is required | Required     |
 
 See in the list below what to consider for each storefront detail when it comes to language: 
 
 |Description | Requirements |
-|---------------------------|-----------------------------|
+|------------|---------------|
 |Offer name:| Must be English |
 |Summary:| Can be in any one language, not more because of length constraints.|
-|Description:| Can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added.
-|Screenshots:| Can be in any language
-|Videos:|Can be in any language, must be captioned if not spoken in English.
-|Documents:| if description is not in English, a document with description and the support information in English is required. Rest of documents can be in any language.
-|Keywords:| can be provided (no must), in any language
-|Support / Help:| Can be in any language. If not available in English, support contact details must be available in document.
-|Privacy:| If hosted on partner website, can be any language
-|Licensing:| Must be in English if hosted on AppSource, can be in any language if hosted on partner website
-|Supported countries:| Must be in English and using the provided standard html code
-|Supported editions:| Must be in English and using the provided standard html code
+|Description:| Can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added.|
+|Screenshots:| Can be in any language|
+|Videos:|Can be in any language, must be captioned if not spoken in English.|
+|Documents:| if description is not in English, a document with description and the support information in English is required. Rest of documents can be in any language.|
+|Keywords:| can be provided (no must), in any language.|
+|Support / Help:| Can be in any language. If not available in English, support contact details must be available in document.|
+|Privacy:| If hosted on partner website, can be any language.|
+|Licensing:| Must be in English if hosted on AppSource, can be in any language if hosted on partner website.|
+|Supported countries:| Must be in English and using the provided standard html code.|
+|Supported editions:| Must be in English and using the provided standard html code.|
 
-> [!NOTE] 
+> [!NOTE]  
 > If you are targeting an international audience, we still recommend you use English on AppSource and create different landing pages incorporating the needed languages (i.e. two language buttons – cf. one in English and one in the given local language)
 
-| General requirements                                          | Description                                                     | Requirements |
-|---------------------------------------------------------------|-----------------------------------------------------------------|--------------|
-| 0.B **Branding** (How to reference the Microsoft brand correctly) | Be consistent with the branding throughout your communications: Throughout all your sales, communication and marketing materials, all references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct branding and UI, cf. either **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.  | Required     |
+| General requirements | Description  | Requirements |
+|----------------------|--------------|--------------|
+| 0.B **Branding** (How to reference the Microsoft brand correctly) | Be consistent with the branding throughout your communications: Throughout all your sales, communication and marketing materials, all references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct branding and UI, cf. either **Microsoft Dynamics 365 Business Central** or **Dynamics 365 Business Central**.  | Required |
 
 
 Make sure to make the right reference throughout your content:

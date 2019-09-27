@@ -14,7 +14,7 @@ ms.author: v-liober
 
 | Listing details | Description | Requirements |
 |-----------------|-------------|--------------|
-| 6. **Help URL**                    | You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, etc.| Required     |
+| 6. **Help URL** | You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, etc.| Required|
 
 Formatting
 - The Help page can be in any language. We do recommend that your help information is in English and are formatted as PDF-files.
