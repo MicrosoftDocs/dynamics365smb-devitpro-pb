@@ -140,13 +140,13 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
 
     This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains the old metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
 -->
-3. Disable task scheduler on the server instance for purposes of upgrade.
+2. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```
     Set-NavServerConfiguration -ServerInstance BC150 -KeyName "EnableTaskScheduler" -KeyValue false
     ```
     Be sure to re-enable this after upgrade if needed.
-5. Restart the server instance.
+3. Restart the server instance.
 
     ```
     Restart-NAVServerInstance -ServerInstance BC150
