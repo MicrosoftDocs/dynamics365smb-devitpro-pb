@@ -12,7 +12,7 @@ author: jswymer
 ms.service: "dynamics365-business-central"
 ROBOTS: NOINDEX
 ---
-# Upgrade Customized Version 14.0 Application to Version 15.0 Base Application
+# Upgrade Customized Version 14.0 Application to Customized Version 15.0 Base Application
 
 > [!IMPORTANT]  
 > [!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)] 
@@ -67,7 +67,15 @@ For more information, see [Overview of the System Application](../developer/deve
 
 ## Task 4: Move code customizations into extensions
 
-To take up the base application, you will move all your custom-code into extensions.
+Move as much of your custom code into extensions. 
+
+## Task 4: Merge code customizations into the Microsoft Base application
+
+1. Create a baseline version of the version 15 Microsoft Base Application. 
+
+2. Create a delta of 
+
+3. Merge the deltas into the Microsoft Base Application.
 
 - If you have changed a the primary key of a table or data type of a field, this will cause problems.
 

@@ -62,7 +62,7 @@ In general, uptaking the system application involves the following steps:
 
 2. Refactor your customized code of the base application to use system application.
 
-    For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md).
+For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md).
 
 ## Task 
 ## See Also  
