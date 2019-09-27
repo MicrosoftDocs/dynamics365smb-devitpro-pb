@@ -30,7 +30,7 @@ To take advantage of these all these features, you will have to perform an appli
 
 When upgrading your version 14 solution to version 15, the goal is to move towards a full uptake of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base and system application as-is and migrating code customizations to add-on extensions. There are different upgrade paths that you follow to get to this state, as illustrated in the following figure. Most paths can be performed in stages. Depending on the path you choose, you might be limited from bringing your solution to the next stage until tooling is available in a future release.
 
-[add illustration]
+![Upgrade path on Business Central application](../developer/mediabc15-upgrade-paths.png "Upgrade paths")
 
 > [!NOTE]
 > Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to the latest cumulative update of [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
