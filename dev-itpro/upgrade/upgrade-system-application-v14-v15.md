@@ -54,21 +54,17 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
 
 ## Task 4: Uptake System Application
 
-In version 15.0, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. For an introduction to the System Application, see [Breaking the monolith: Introducing the Business Central System Application](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/09/introducing-the-dynamics-365-business-central-system-application/).
+In version 15.0, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application.
 
-- Remove the old system application objects from base application. If you hav any custom code, you will have to refactor to system application.
-- Refactor your custom base application to use system application.
+In general, uptaking the system application involves the following steps:
 
-## Task 3: Merge version 14.0 AL code with version 15.0 AL code
+1. Remove the version 14 objects that are replaced by objects in the System application objects from base application. If you have any custom code in these objects, you will have to move the code to the base application or extensions if you still want  the functionality.
 
-## Task 4: Move customizations into extensions
+2. Refactor your customized code of the base application to use system application.
 
-To take up the base application, you will move all your custom-code into extensions.
+    For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md).
 
-- If you have changed a the primary key of a table or data type of a field, this will cause problems.
-
-- At a minimum, you shoudl move tables to extensions now.
-
+## Task 
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
 [Upgrading to Business Central](upgrading-to-business-central.md)  
