@@ -23,7 +23,7 @@ This image below is an example of what an offering looks like on AppSource, when
 ![StoreFront Details](../media/Storefront.png)
 
 |Item Number| Validation Requirements | Guidance/Examples | 
-|----------------------|--------------|--------------|
+|-----------|--------------|--------------|
 |0.A - 0.C|Your app can be in any language – if not in English, a document with English translation is required. Branding - Remember to use the product branding guidelines properly| [General Best Practices including Language and Branding](readiness-checklist-a-languange-branding.md) |
 |0.D| Must be the same as the manifest. (Your offer name) for Microsoft Dynamics 365 Business Central | [Offer Name](readiness-checklist-b-offername-summary.md)|
 |1|Max. 25 words or 100 characters, value proposition| [Offer Summary](readiness-checklist-b-offername-summary.md)|
