@@ -7,6 +7,7 @@
 ### Help system
 #### [User assistance model](user-assistance.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
+#### [Authoring Guide](help/writing-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 <!--Ready2Go-->
 ## Ready to Go
