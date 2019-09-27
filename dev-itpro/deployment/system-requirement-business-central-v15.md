@@ -12,7 +12,7 @@ ms.date: 04/05/2019
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2
 
-The following sections list the minimum hardware and software requirements to use or connect to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, and to install and run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
+The following sections list the minimum hardware and software requirements to use or connect to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, and to install and run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises (version 15). **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
 
 > [!NOTE]  
 >  [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs some software if it is not already present in the target computer. For more information, see the "Additional Information" section for each component.  
@@ -24,7 +24,7 @@ The following sections list the minimum hardware and software requirements to us
 
 |||  
 |-|-|  
-|Supported browsers|<ul><li>Microsoft Edge.</li><li>Internet Explorer 11.</li><li>Google Chrome 72.0 for Windows.</li><li>Mozilla Firefox 65.0 for Windows.</li><li>Safari 10.0 for macOS.</li></ul>Cookies and JavaScript must be enabled in the browser.|  
+|Supported browsers|<ul><li>Microsoft Edge.</li><li>Internet Explorer 11.</li><li>Google Chrome 77.0 for Windows.</li><li>Mozilla Firefox 69.0 for Windows.</li><li>Safari 12.0 for macOS.</li></ul>Cookies and JavaScript must be enabled in the browser.|  
 |Business inbox in Outlook|<ul><li>Microsoft Office 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
 |Sending data to Excel|<ul><li>Microsoft Office 365, Microsoft Office 2019, or Microsoft Office 2016.</li></ul>|  
 |Editing in Excel using the Excel Add-in |<ul><li>Excel 2019, Excel 2016, or Excel Online.<br /><br />For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data).</li></ul>|  

@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 09/12/2019
+ms.date: 09/27/2019
 ---
 # Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -66,5 +66,6 @@ Part of your configuration is to specify where to look up the Help for the solut
 ## See Also  
 
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)
-<!-- [Product and Architecture Overview](Product-and-Architecture-Overview.md) -->  
-[System Requirements](system-requirement-business-central.md)  
+[Product and Architecture Overview](product-and-architecture-overview.md)  
+[System Requirements 2019 release wave 2](system-requirement-business-central-v15.md)  
+[System Requirements April '19](system-requirement-business-central.md)  
