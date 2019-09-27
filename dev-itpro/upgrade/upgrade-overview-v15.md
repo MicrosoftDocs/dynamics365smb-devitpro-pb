@@ -547,7 +547,7 @@ DebuggerCodeViewer.Page.al(14,36): error AL0417: Control add-in '"Microsoft.Dyna
 
 ### Clean steps
 -->
-## Technical upgrade of a custom application
+## Technical upgrade of a custom application to version 15 platform
 
 Use this process when you have a customized Business Central application that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 
@@ -556,9 +556,19 @@ Use this process when you have a customized Business Central application that yo
  ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
 
 
-For more information, see [Technical Upgrade](upgrade-technical-upgrade-v14-v15.md). 
+For more information, see [Technical Upgrade](upgrade-technical-upgrade-v14-v15.md).
 
-## Upgrade a Code Customized Application to Business Central 2019 Wave 2 Application and Platform
+
+## Upgrade Customized Application to the Microsoft System Application
+
+Use this process when you have a customized Business Central application that you want to upgrade to use the Microsoft System Application and the version 15 platform. With this process, you will convert the entire application from C/AL to AL and refactor to use the System Application  extension.
+
+!["Upgrade to system application in Business Central](../developer/media/bc15-system-application-upgrade-customized-app.png "Upgrade to system application in Business Central")  
+
+For more information, see [Full Upgrade](upgrade-system-application-v14-v15.md). 
+
+
+## Upgrade Customized Application to the Microsoft Base Application
 
 Use this process when you have a customized Business Central application that you want to upgrade to the Business Central Wave 2 application and platform. With this process, you will convert the entire application from C/AL to AL and refactor to use the system application layer extension.
 
