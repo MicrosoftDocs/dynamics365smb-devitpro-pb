@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: plindgre
-ms.date: 09/05/2019
+ms.date: 09/25/2019
 
 ---
 
@@ -43,23 +43,6 @@ The following image illustrates the update schedule for [!INCLUDE [prodlong](../
 - **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes will be made available in the latest platform update version.
 
 - **Non-critical updates** – Customers must update to the most current Dynamics 365 Business Central to deploy non-critical updates.-->
-
-
-## Modern Lifecycle Policy
-
-[!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) 2019 Release Wave 2 October 2019 Update and newer software is covered by the Modern Lifecycle Policy.  
-
-The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) software as indicated on the [Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on) page, but only if the customer keeps the deployed software current according to this policy. In keeping current you are getting all the latest feature and bug fixes.  
-
-The following image illustrates the update schedule for [!INCLUDE [prodlong](../developer/includes/prodlong.md)].
-![Update schedule for Dynamics 365 Business Central](../developer/media/terms/dynamics-365-business-central-modern-lifecycle-policy.jpg)
-
-<!-- Critical fixes and non-critical updates are handled in the following way:
-
-- **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes will be made available in the latest platform update version.
-
-- **Non-critical updates** – Customers must update to the most current Dynamics 365 Business Central to deploy non-critical updates.-->
-
 
 ## See Also
 

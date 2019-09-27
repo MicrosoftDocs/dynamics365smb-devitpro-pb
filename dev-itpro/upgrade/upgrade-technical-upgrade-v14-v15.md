@@ -13,11 +13,12 @@ ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2
 
+<!--
 > [!IMPORTANT]  
 > [!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)] 
 >
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
-
+-->
 Use this process when you have a code customized [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform (version 15). This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 
 <!-- For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 custom application to an Extension on the BC 15 platform.-->
@@ -83,7 +84,7 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
 
 4. Unpublish all system, test, and application symbols.
 
-    To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.:
+    To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.
 
     ``` 
     Get-NAVAppInfo -ServerInstance BC140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance BC140 -Name $_.Name -Version $_.Version }
@@ -116,7 +117,7 @@ This task runs a technical upgrade on the application database to convert it fro
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
 
-## Task 5: Connect the version 15 server instance to the application database
+## Task 5: Connect and configure the version 15 server instance
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade, and can be reverted after you complete the upgrade.
 
@@ -189,8 +190,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC150 -Path "C:\MyDocuments\AL\testlibarary\testlibrary_14.5.0.0.app"
     ```
 
-
-## Task 7: Synchronize tenant and install base application and test library extensions
+## Task 7: Synchronize tenant and synchronize/install base application and test library extensions
 
 In this task, you update the schema of tenant database schema with schema of changes in system objects and application objects. In this step, you will synchronize the tenant to the to your custom base application extension and test libary extension (if any). With this operation, the extensions will take ownership of the tables in the SQL database.
 
