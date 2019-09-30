@@ -237,9 +237,26 @@ In this task, you will create a AL project in Visual Studio code that you will u
             PublicKeyToken = '8fb06cb64d019a17';
             ...
         ```
-10. Press Ctrl+Shift+B to build and compile your project.
+10. Delete objects that are related to the client debugger client.
 
-    The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again. The following are known issues that you might encounter:
+     Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on version 15. Yo avoid compilation errors, delete the following objects:
+    
+        - Debugger.Page.al
+        - DebuggerBreakpointCondition.Page.al
+        - DebuggerBreakpointList.Page.al
+        - DebuggerCallstackFactBox.Page.al
+        - DebuggerCodeViewer.Page.al
+        - DebuggerManagement.Codeunit.al
+        - DebuggerVariableList.Page.al
+        - DebuggerWatchValueFactBox.Page.al
+        - SessionList.Page.al
+        - ChangeGlobalDimensions.Codeunit.al (sessionlist missing)
+        
+11. Build and compile your project (press Ctrl+Shift+B).
+
+    The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again. 
+    <!--
+    The following are known issues that you might encounter:
     1. FlowSelectorTemplate.Page.al
         
         ```   
@@ -285,18 +302,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
                         AddInReady := true; */
                     end;
         ```  
-    2. Delete debugger objects:
-    
-        - Debugger.Page.al
-        - DebuggerBreakpointCondition.Page.al
-        - DebuggerBreakpointList.Page.al
-        - DebuggerCallstackFactBox.Page.al
-        - DebuggerCodeViewer.Page.al
-        - DebuggerManagement.Codeunit.al
-        - DebuggerVariableList.Page.al
-        - DebuggerWatchValueFactBox.Page.al
-        - SessionList.Page.al
-        - ChangeGlobalDimensions.Codeunit.al (sessionlist missing)
+
     
     3. PowerBIServiceMgt.Codeunit.al (ImportReportRequest)
 
@@ -397,7 +403,7 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
 
 When all errors are fixed, the custom base application package (.app) will be created.
 
-## Task 8: Create and build an AL project for the test library
+## Task 2: Create and build an AL project for the test library
 
 If you converted the test library form C/AL to AL, you will now create and build a project for test library, similar to what you did for the base application.
 
