@@ -28,16 +28,24 @@ When upgrading your version 14 solution to version 15, the goal is to move towar
 
 As mentioned, the recommended upgrade path for a customized solution is uptake the version 15 Microsoft Base Application and System Application, and move all code customizations to extensions. However, we realize that the complexity of some solutions will make this path very difficult. If this path is not currently realistic for your solution, then we recommend the upgrading to a version 15 customized base application. 
 
-Be aware that for each path, once the database is synchronized and its data upgraded, it becomes more difficult to bring your solution to the next path. This will require significant manual work until tooling is available in a future release.
+Be aware that for each path, once the database has been synchronized and data upgraded, it becomes more difficult to bring your solution to the next path. This will require significant manual work until tooling is available in a future release.
 
 For details about each path, see the following articles:
 
-- [Upgrading an Unmodified Application](upgrade-unmodified-application.md)
-- [Technical Upgrade](upgrade-technical-upgrade-v14-v15.md)
-- [Upgrade to the Microsoft System Application](upgrade-system-application-v14-v15.md)
-- [Upgrade to Customized Base Application](upgrade-hybrid-upgrade-v14-v15.md)
-- [Upgrade to the Microsoft Base Application](upgrade-full-upgrade-v14-v15.md)
+- [Upgrade of an Unmodified Application](upgrade-unmodified-application.md)
+- [Technical Upgrade of Customized Application](upgrade-technical-upgrade-v14-v15.md)
 
+*The following articles are currently being finalized and will be available soon*
+ 
+- Upgrade to the System Application
+- Upgrade to a Customized Version 15 Base Application  
+- Upgrade to the Microsoft Base Application 
+
+<!--
+- [Upgrade to the Microsoft System Application](upgrade-system-application-v14-v15.md)
+- [Upgrade to Customized Base Application](upgrade-hybrid-upgrade-v14-v15.md)  
+- [Upgrade to the Microsoft Base Application](upgrade-full-upgrade-v14-v15.md)
+-->
 
 > [!NOTE]
 > Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to the latest cumulative update of [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
