@@ -255,6 +255,9 @@ In this task, you will create a AL project in Visual Studio code that you will u
 11. Build and compile your project (press Ctrl+Shift+B).
 
     The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again. 
+
+    > [!TIP]
+    > If you are maintaining your C/AL solution going forward, we recommend that you fix errors in CAL code and re-convert to AL again. This makes it easier to foward push in future because code bases are similar. 
     <!--
     The following are known issues that you might encounter:
     1. FlowSelectorTemplate.Page.al
@@ -403,7 +406,7 @@ If solution will use Microsoft (1st party) extensions, you will have to convert 
 
 When all errors are fixed, the custom base application package (.app) will be created.
 
-## Task 2: Create and build an AL project for the test library
+## Task 8: Create and build an AL project for the test library
 
 If you converted the test library form C/AL to AL, you will now create and build a project for test library, similar to what you did for the base application.
 
