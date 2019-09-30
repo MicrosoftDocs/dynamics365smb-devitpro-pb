@@ -647,7 +647,7 @@ Now, you can publish the Microsoft and 3rd-party extensions that were published 
 
 ### <a name="BaseApplication"></a>Base Application
 
-The base application contains the objects (such as table, pages, codeunits, and reports) that define the business logic and functionality of the solution. In version 14 and earlier, the base application also contained system objects that were not specifically related to the business logic. In version 15, the business objects have been moved to the Microsoft Base Application extension, and the system objects have been moved to the System Application extension. 
+The base application contains the objects (such as table, pages, codeunits, and reports) that define the business logic and functionality of the solution. In version 14 and earlier, the base application also contained system objects that were not specifically related to the business logic. In version 15, the standard business objects are now included in the Microsoft Base Application extension, and the system objects have been moved to the System Application extension. 
 
 ### <a name="SystemApplication"></a>System Application
 
