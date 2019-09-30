@@ -1,6 +1,6 @@
 ---
 title: "Moving Custom Fields From Base Application to Extensions"
-description: "Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem"
+description: "DMoving Custom Fields From Base Application to Extensions"
 author: jswymer
 ms.custom: na
 ms.date: 09/13/2019
@@ -41,7 +41,7 @@ In this step, you will create an table extension object that includes a field th
     }
     ```
 
-## Create a page extension object for displaying the new field in the client
+## Create a page extension object for displaying the new field
 
 Because the **Customer Card** was originally modified to include a field for the **Shoesize**, you create a page extension object that extends the **Customer Card** page with the new **Shoesize2** field, which will replace the original **Shoesize** field.
 
@@ -71,7 +71,7 @@ Because the **Customer Card** was originally modified to include a field for the
     }
     ```
 
-## Create an install codeunit that copies existing data from the base application table to the new field in the extension
+## Create an install codeunit that copies existing data to the extension table
 
 You need to somehow copy or move the data that is stored in the original **Shoesize** field in the **Customer** base application table in the database to the new **Shoesize2** field of the extension. In thi example, this is done by writing install code for the extension package. This involves creating an install type codeunit, and then adding code to one of its install triggers to migrate the data. For more information, see [Writing Extension Install Code](devenv-extension-install-code.md).
 
