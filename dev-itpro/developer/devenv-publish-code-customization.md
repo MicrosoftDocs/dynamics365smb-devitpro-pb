@@ -75,10 +75,9 @@ Make sure to have the following prerequisites installed to be able to follow the
     ```
     "al.assemblyProbingPaths": [
         "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\150",
-        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\150\\RoleTailored Client",
+        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\150",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2",
-        "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell\\3.0",
-        "C:\\Windows\\Microsoft.NET\\assembly"
+        "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell"
     ],        
     ```
 9. For improved performance when working with a large project like the Base Application, see the [Optimize Visual Studio Code Editing and Building Performance](devenv-optimize-visual-studio-code.md) topic.
