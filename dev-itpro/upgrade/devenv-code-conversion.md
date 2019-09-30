@@ -254,10 +254,10 @@ In this task, you will create a AL project in Visual Studio code that you will u
         
 11. Build and compile your project (press Ctrl+Shift+B).
 
-    The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again. 
+    The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again.
 
     > [!TIP]
-    > If you are maintaining your C/AL solution going forward, we recommend that you fix errors in CAL code and re-convert to AL again. This makes it easier to foward push in future because code bases are similar. 
+    > If you are maintaining your C/AL solution going forward, we recommend that you fix errors in C/AL objects and convert to AL again. This makes it furure changes easier because code bases are similar.
     <!--
     The following are known issues that you might encounter:
     1. FlowSelectorTemplate.Page.al
@@ -428,9 +428,9 @@ If you converted the test library form C/AL to AL, you will now create and build
         ],
         ```
 
-7. Copy all of the AL files that you generated for the test library in **Task 3** to the root folder of your project.
+3. Copy all of the AL files that you generated for the test library in **Task 3** to the root folder of your project.
 
-8. Build the project.
+4. Build the project.
 
     Currently, there is a know issue with the LibraryVerifyXMLSchema.Codeunit.al. You have to fix reference to `XmlTextReader`.  
 
