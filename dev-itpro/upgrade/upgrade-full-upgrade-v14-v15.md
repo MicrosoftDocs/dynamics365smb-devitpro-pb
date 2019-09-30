@@ -35,43 +35,63 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 1.  Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.0). For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md)
 
+2. Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 release wave 2 (version 15.0)
 
-## Task 1: Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 release wave 2 (version 15.0)
+    1. Before you install version 15.0, it can be useful to create desktop shortcuts to the the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these will be replaced with the version 15.0 tools.
+    
+    2. Install all components of Business Central 2019 release wave 2 (version 15).
+    
+        If you did not uninstall version 14.0, then you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) during installation, or you must stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you will get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    
+        > [!IMPORTANT]
+        > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins folder.
+    
+        For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+    
+## Upgrade Application Code
 
-1. Before you install version 15.0, it can be useful to create desktop shortcuts to the the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these will be replaced with the version 15.0 tools.
+1. Convert your version 14 application from C/AL to AL
 
-2. Install all components of Business Central 2019 release wave 2 (version 15).
+    The first thing to do is convert your solution from C/AL to AL. For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
 
-    If you did not uninstall version 14.0, then you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) during installation, or you must stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you will get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+3. Uptake System Application
 
-    > [!IMPORTANT]
-    > Because of dependencies, we recommend that for upgrade , you install all components available. Also, there is currently a known issue with the Microsoft.Office.Interop.Word.dll. After installation, you must copy the Microsoft.Office.Interop.Word.dll from the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\RoleTailored Client folder to the C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins folder.
+    In version 15.0, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application.
+    
+    In general, uptaking the system application involves the following steps:
+    
+    1. Remove the version 14 objects that are replaced by objects in the System application objects from base application. If you have any custom code in these objects, you will have to move the code to the base application or extensions if you still want  the functionality.
+    
+    2. Refactor your customized code in the base application to use system application.
+    
+    For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md).
 
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+4. Move code customizations to extensions
 
-## Task 2: Convert your version 14 application from C/AL to AL
+    To take up the base application, you will move all your custom-code into extensions.
+    
+    - If you have changed a the primary key of a table or data type of a field, this will cause problems.
+    
+    - At a minimum, you should move tables to extensions now.
+    
 
-The first thing to do is convert your solution from C/AL to AL. For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
+## Upgrade the Database 
 
-## Task 3: Uptake System Application
+1. Prepare the database.
+    1. Uninstall all etxensions.
+    2. Unpublish all extensions
+2. Convert the version 14 application database to version 15.
+3. Publish system symbols, system application, and base application extensions.
+4. Synchronize system application and base application extensions with the tenant database.
+5. Install system application and base application extensions.
+6. Run the data upgrade.
+7. Upgrade to the new versions of Microsoft extensions.
+8. Install 3rd-party extensions:
+    1. Configure the version 15 server instance for migrating 3rd party extensions
+    2. Publish extensions.
+    3. Synchronize extensions.
+    4. Install extensions.
 
-In version 15.0, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application.
-
-In general, uptaking the system application involves the following steps:
-
-1. Remove the version 14 objects that are replaced by objects in the System application objects from base application. If you have any custom code in these objects, you will have to move the code to the base application or extensions if you still want  the functionality.
-
-2. Refactor your customized code of the base application to use system application.
-
-For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md).
-
-## Task 4: Move code customizations into extensions
-
-To take up the base application, you will move all your custom-code into extensions.
-
-- If you have changed a the primary key of a table or data type of a field, this will cause problems.
-
-- At a minimum, you should move tables to extensions now.
 
 
 ## See Also  
