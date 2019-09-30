@@ -39,7 +39,7 @@ For details about each path, see the following articles:
  
 - Upgrade to the System Application
 - Upgrade to a Customized Version 15 Base Application  
-- Upgrade to the Microsoft Base Application 
+- Upgrade to the Microsoft Base Application
 
 <!--
 - [Upgrade to the Microsoft System Application](upgrade-system-application-v14-v15.md)
