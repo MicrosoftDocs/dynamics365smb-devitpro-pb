@@ -2,7 +2,7 @@
 title: "APIGroup Property (Page)"
 ms.author: solsen
 ms.custom: na
-ms.date: 07/08/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

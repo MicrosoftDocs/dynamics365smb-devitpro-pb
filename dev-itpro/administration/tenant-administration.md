@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 09/20/2019
+ms.date: 10/01/2019
 ms.author: edupont
 ---
 # Administration of Business Central Online

@@ -3,7 +3,7 @@ title: "Running C/SIDE and AL Side-by-Side"
 description: "Description of how you can run both development environments side-by-side."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/07/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

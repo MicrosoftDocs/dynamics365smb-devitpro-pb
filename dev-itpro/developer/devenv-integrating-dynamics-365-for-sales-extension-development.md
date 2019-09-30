@@ -2,7 +2,7 @@
 title: "Enabling Sales Tables for Extension Development"
 description: "This topic explains how to enable Dynamics 365 for Sales tables for the extension development process."
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
-ms.date: 09/09/2019
+ms.date: 10/01/2019
 ---
 
 # Overview of the System Application

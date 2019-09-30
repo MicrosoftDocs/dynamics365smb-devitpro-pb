@@ -3,7 +3,7 @@ title: "Technical Validation Checklist"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: article

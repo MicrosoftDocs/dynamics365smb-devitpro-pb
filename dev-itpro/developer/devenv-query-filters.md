@@ -2,7 +2,7 @@
 title: Filtering From Query Designer and C/AL Code
 description: Specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table associated with the query.
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

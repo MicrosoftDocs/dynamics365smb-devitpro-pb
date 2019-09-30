@@ -48,8 +48,8 @@
 #### [Ecosystem Features](deployment/embed-app-ecosystem.md)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
-### [System requirements 2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
-### [System requirements Spring 2019](deployment/system-requirement-business-central.md)
+### [System requirements 2019 release wave 2](deployment/system-requirement-business-central-v15.md)
+### [System requirements April '19](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### Dynamics 365 Business Central On-Premises Updates
 #### [Dynamics 365 Business Central October'18 On-Premises Updates](deployment/update-versions-13.md)

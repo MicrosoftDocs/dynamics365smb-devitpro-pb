@@ -8,11 +8,11 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 08/15/2019
+ms.date: 10/01/2019
 ---
-# System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019
+# System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] April '19
 
-The following sections list the minimum hardware and software requirements to use or connect to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, and to install and run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
+The following sections list the minimum hardware and software requirements to use or connect to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, and to install and run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises (version 14). **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
 
 > [!NOTE]  
 > [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs some software if it is not already present in the target computer. For more information, see the "Additional Information" section for each component.  
@@ -60,10 +60,9 @@ The following table shows the minimum system requirements for customizing or ext
 
 For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
 
-<!--removeWinCli ###  <a name="WinClient"></a> [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] Requirements  
+###  <a name="WinClient"></a> [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] Requirements  
  The following table shows the minimum system requirements for using the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].  -->
 
-<!--temporarily remove
 |||  
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(32-bit and 64-bit editions\).<br />**Important:** Windows 10 S is not supported.</li><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>|  
@@ -75,19 +74,17 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 |Email logging|<ul><li>Active Directory and Microsoft Exchange Server 2019 or Exchange Server 2016.</li><li>Microsoft Exchange Online, or Exchange Online as part of an Office 365 subscription.</li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.2.</li></ul>|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.2.</li></ul></li><li>The Dynamics NAV Client is available in a 32-bit version and 64-bit version. On a 32-bit Windows operating system, the 32-bit version is run. On a 64-bit Windows operating system, the 64-bit version is run by default; however, you can also run the 32-bit version if it is required.</li><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] can only install the Excel Add-in if Excel is present on the target computer.</li><li>Outlook synchronization is not supported on 64-bit versions of Office.</li></ul>|  
--->
-<!--remove C/SIDE
+
 ###  <a name="DevEnv"></a> Dynamics NAV Development Environment Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
--->
 
-<!--temporarily remove|||  
+|||  
 |-|-|  
 |Supported operating systems|<ul><li> Windows 10 Pro, Enterprise, or Education \(32-bit and 64-bit editions\).</li><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>|  
 |Hardware resources|<ul><li>Hard disk space: 200 MB.</li><li> Memory: 1 GB.</li></ul>|  
 |Reports|<ul><li>For creating and editing RDLC report layouts:<ul><li>Report Builder for SQL Server 2016, or</li><li>One of the following versions of Visual Studio:<ul><li>Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li><li>Visual Studio 2015 Professional or Enterprise edition with SQL Server Data Tools installed.<br />**Important:**  Before you install Visual Studio 2015, install Microsoft .NET Framework 4.7.2; otherwise, an error will occur when you compile or run RDLC reports. For more information, see [Report error "Visual Basic Command Line Compiler has stopped working"](http://go.microsoft.com/fwlink/?LinkID=722862).</li></ul></li></ul></ul><ul><li>For upgrading reports:<ul><li>Report Builder for SQL Server 2016</li></ul><li>For creating Word report layouts:<ul><li>Word 2016 or later</li></ul></li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.2.</li></ul>|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.2.</li><li>SQL Server Native Client 11.0.</li><li>Report Builder for SQL Server 2016. This is not installed if a version of SQL Server Report Builder or Microsoft Visual Studio is already present on the target computer</li></ul></li><li>If the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] and [!INCLUDE[server](../developer/includes/server.md)] are on the same computer, then only a 64-bit operating system is supported.</li></ul>|  -->
+|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it is not already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.2.</li><li>SQL Server Native Client 11.0.</li><li>Report Builder for SQL Server 2016. This is not installed if a version of SQL Server Report Builder or Microsoft Visual Studio is already present on the target computer</li></ul></li><li>If the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] and [!INCLUDE[server](../developer/includes/server.md)] are on the same computer, then only a 64-bit operating system is supported.</li></ul>|
 
 
 ## Server Components (on-premises)
@@ -153,23 +150,22 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 |Supported Browsers|<ul><li>When using the Outlook Web App (OWA), your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
 |Supported Operating Systems|<ul><li>When using OWA for iPad, OWA for iPad, or OWA for Android, your mobile device must use a supported Operating System listed in [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements.</li></ul>|  
 
-<!-- Remove as expected to be removed from DVD###  <a name="Outlook"></a> Microsoft Outlook Add-In Requirements  
-The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Add-In for Outlook for synchronization with Outlook.-->
+###  <a name="Outlook"></a> Microsoft Outlook Add-In Requirements  
+The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Add-In for Outlook for synchronization with Outlook.
 
-<!--|||  
+|||  
 |-|-|  
 |Supported Outlook Applications |<ul><li>Outlook 2019</li><li>Outlook 2016</li></ul>|
-|Supported Exchange Servers|<ul><li>Exchange Server 2019</li><li>Exchange Server 2016</li><li>Exchange Online.</li></ul>|  -->
+|Supported Exchange Servers|<ul><li>Exchange Server 2019</li><li>Exchange Server 2016</li><li>Exchange Online.</li></ul>|
 
 
 ###  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
  The following table shows the product version requirements for integrating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with [!INCLUDE[crm](../developer/includes/crm_md.md)], and the versions in which users can view the availability of items in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from [!INCLUDE[crm](../developer/includes/crm_md.md)].  
 
-<!--
 |||  
 |-|-|  
 |Microsoft Dynamics CRM versions|<ul><li>Microsoft Dynamics CRM 2015 or Microsoft Dynamics CRM 2016<BR />Note: AD, IFD and Claims authentication types are supported for above editions.</li><li>Microsoft Dynamics CRM Online 2015, Microsoft Dynamics CRM Online 2015 Update 1, or Microsoft Dynamics CRM Online 2016 Update 1 or Microsoft Dynamics 365<BR />Note: OAuth and Office 365 authentication types are supported for these editions.</li></ul>For more details on authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/en-us/library/mt608573.aspx).|
-|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Integration Solution (.zip)|For Dynamics CRM 2015, Dynamics CRM Online 2015, and Dynamics CRM Online 2015 Update 1:<ul><li>Use the DynamicsNAVIntegrationSolution.zip file that is found on the Dynamics NAV 2016 installation media (DVD) to install the solution.</li><li>Item Availability is not supported on Dynamics CRM 2015, versions Update 1 and Online.</li></ul>For more information, see [Preparing Dynamics 365 for Sales for Integration](../administration/prepare-dynamics-365-for-sales-for-integration.md).      |   -->
+|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Integration Solution (.zip)|For Dynamics CRM 2015, Dynamics CRM Online 2015, and Dynamics CRM Online 2015 Update 1:<ul><li>Use the DynamicsNAVIntegrationSolution.zip file that is found on the Dynamics NAV 2016 installation media (DVD) to install the solution.</li><li>Item Availability is not supported on Dynamics CRM 2015, versions Update 1 and Online.</li></ul>For more information, see [Preparing Dynamics 365 for Sales for Integration](../administration/prepare-dynamics-365-for-sales-for-integration.md).      | 
 
 ||||||  
 |-|-|-|-|-|
