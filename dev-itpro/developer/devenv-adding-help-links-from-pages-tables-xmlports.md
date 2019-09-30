@@ -3,7 +3,7 @@ title: "Adding Help Links from Pages, Reports, and XMLports"
 description: "This topic shows how to specify the help link."
 author: edupont04
 ms.custom: na
-ms.date: 04/26/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "Page Customization Object"
 description: "Description of the page customization object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/07/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

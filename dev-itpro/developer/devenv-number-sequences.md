@@ -3,7 +3,7 @@ title: "Number Sequences"
 description: "This topic describes how to create number sequences in AL code in Dynamics 365 Business Central." 
 author: jswymer
 ms.custom: na
-ms.date: 06/17/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

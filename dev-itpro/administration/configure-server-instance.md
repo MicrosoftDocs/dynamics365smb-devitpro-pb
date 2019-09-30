@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dynamics 365 Business Central Server Configuration
 description: Configure and modify settings in the Setup or Installed Business Central Server using the Administration Console and PowerShell Cmdlets.
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"

@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/07/2019
+ms.date: 10/01/2019
 ms.author: jaredha
 ---
 

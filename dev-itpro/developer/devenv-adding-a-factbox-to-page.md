@@ -3,7 +3,7 @@ title: "Adding a FactBox to a Page"
 description: A FactBox is located on the right-most side of a page. This area is used to display content including other pages, charts, and system parts such as Microsoft Outlook, Notes, and Record Links.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "Debugging"
 description: "Overview of debugging in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/05/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"

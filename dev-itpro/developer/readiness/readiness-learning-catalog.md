@@ -6,7 +6,7 @@ experiment_id: "81ba5f65-59fb-4d"
 title: Ready to Go Online Learning Catalog
 description: 
 ms.topic: hub-page
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---

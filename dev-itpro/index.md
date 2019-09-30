@@ -2,7 +2,7 @@
 title: "Developer and IT-Pro Help for Business Central"
 description: Learn how to extend, manage, and customize Dynamics 365 Business Central
 
-ms.date: 08/20/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
