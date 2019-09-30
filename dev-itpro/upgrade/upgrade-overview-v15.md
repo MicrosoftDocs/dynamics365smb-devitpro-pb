@@ -643,19 +643,26 @@ Now, you can publish the Microsoft and 3rd-party extensions that were published 
     ```
 
 -->
+## Components
 
+### <a name="BaseApplication"></a>Base Application
 
-## <a name="SystemApplication"></a>System Application
+The base application contains the objects (such as table, pages, codeunits, and reports) that define the business logic and functionality of the solution. In version 14 and earlier, the base application also contained system objects that were not specifically related to the business logic. In version 15, the business objects have been moved to the Microsoft Base Application extension, and the system objects have been moved to the System Application extension. 
+
+### <a name="SystemApplication"></a>System Application
 
 In version 15.0, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. For an introduction to the System Application, see For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md).
 
-## <a name="Symbols"></a>Symbols
+### <a name="Symbols"></a>Symbols
 
 Symbols are the application programming interface between AL code and C/AL code. Symbols enable the ability to reference C/AL objects from AL objects. Symbols are provided as an extension package, and are published to the server instance similar to application extensions, but not installed on tenants.
 
 In version 14.0, with the base application being C/AL, there are three types of symbols: system, application, and test. System symbols contained references to the platform system objects. The application symbols contained references to the business application objects. The test symbols contained references to the test libraries used by Microsoft extensions.
 
 In version 15, with the move to AL, the only symbols required are the system systems, which are still provided on the version 15.0 installation media (DVD).
+
+### Customization extensions
+Customization extensions are AL extensions that add functionality to the base application or system application. These extensions can be Microsoft (1st party) or 3rd party extensions. 3rd party extensions are extensions that your organization provides or extensions that are provided by others, such as from ISVs or from App Source.
   
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
