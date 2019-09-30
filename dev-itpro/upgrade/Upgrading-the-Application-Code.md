@@ -294,7 +294,7 @@ You now have a new database with a fully upgraded application. For a multitenant
 
 ## Task 10: (Single-tenant mode only) Export all objects
 
-With a single-tenant deployment, export all objects of the new database to a .fob type file, such as **objects.fob** file. You will use this .fob file as part of the data upgrade process. The export must include customized objects, upgraded reget-helpports, and all other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects.
+With a single-tenant deployment, export all objects of the new database to a .fob type file, such as **objects.fob** file. You will use this .fob file as part of the data upgrade process. The export must include customized objects, upgraded reports, and all other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects.
 
 As with exporting objects in Task 1, you can use either the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], finsql.exe, or [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
