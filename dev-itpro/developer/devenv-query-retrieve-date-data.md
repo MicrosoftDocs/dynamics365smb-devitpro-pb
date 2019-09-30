@@ -1,7 +1,7 @@
 ---
 title: "Using the Date Method to Retrieve Day, Month, and Year Data"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

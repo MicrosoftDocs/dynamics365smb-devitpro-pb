@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 09/27/2019
+ms.date: 10/01/2019
 ---
 # Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 

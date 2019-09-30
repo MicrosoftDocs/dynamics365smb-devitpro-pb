@@ -1,7 +1,7 @@
 ---
 title: "Attach and Debug Next"
 ms.custom: na
-ms.date: 07/05/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "Creating Runtime Packages for Business Central On-Premises"
 description: "How to create runtime packages used for distribution of extensions."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/10/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

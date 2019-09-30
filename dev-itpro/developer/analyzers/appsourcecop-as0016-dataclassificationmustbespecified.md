@@ -2,7 +2,7 @@
 title: "Fields of field class 'Normal' must use the DataClassification property and its value should be different from ToBeClassified."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
