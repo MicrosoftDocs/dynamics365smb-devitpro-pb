@@ -74,7 +74,7 @@ Value := '010196';
 Ok1 := EVALUATE(VarInteger, Value);  
 Ok2 := EVALUATE(VarDate, Value);  
 Ok3 := EVALUATE(VarYesNo, Value);  
-Value := '2days 4hours 3.7 seconds 17.3 milliseconds';  
+Value := '2days 4hours 3.7 seconds 17 milliseconds';  
 Ok4 := EVALUATE(VarDuration, Value);  
 MESSAGE(Text000 + Text001 + Text002 + Text003, VarInteger, Ok1, VarDate, Ok2, VarYesNo, Ok3, VarDuration, Ok4);  
 ```  
@@ -103,7 +103,7 @@ MESSAGE(Text000 + Text001 + Text002 + Text003, VarInteger, Ok1, VarDate, Ok2, Va
   
 -   millisecond, milliseconds, milli, millis  
   
- You can include decimal values in the string that you evaluate as a duration. Decimal values for milliseconds are ignored; only the whole number is evaluated.  
+ You can include decimal values in the string that you evaluate as a duration, except for milliseconds, which must be a whole number.  
 
 ## See Also
 [System Data Type](system-data-type.md)  
