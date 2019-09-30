@@ -35,7 +35,7 @@ For details about each path, see the following articles:
 - [Upgrade of an Unmodified Application](upgrade-unmodified-application.md)
 - [Technical Upgrade of Customized Application](upgrade-technical-upgrade-v14-v15.md)
 
-*The following articles are currently being finalized and will be available soon*
+*The following articles are currently being formalized and will be available as soon as possible*
  
 - Upgrade to the System Application
 - Upgrade to a Customized Version 15 Base Application  
