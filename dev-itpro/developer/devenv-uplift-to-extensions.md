@@ -97,21 +97,23 @@ In this example, you will use the [VALIDATE method](methods-auto/record/record-v
             if AppInfo.DataVersion = Version.Create(0, 0, 0, 0) then // A 'DataVersion' of 0.0.0.0 indicates a 'fresh/new' install
                 HandleFreshInstall
         end;
+    }
     ```
 3. Add a local method that iterates through the records of the **Customer** table
-        local procedure HandleFreshInstall();
-        begin
-            if CustomerRec.FINDSET() then
-                repeat
-    
-                    CustomerRec.VALIDATE("Shoesize2", CustomerRec.Shoesize);
-    
-                    CustomerRec.MODIFY();
-    
-                until CustomerRec.Next = 0;
-    
-        end;    
-    }
+
+    ```
+    local procedure HandleFreshInstall();
+    begin
+        if CustomerRec.FINDSET() then
+            repeat
+
+                CustomerRec.VALIDATE("Shoesize2", CustomerRec.Shoesize);
+
+                CustomerRec.MODIFY();
+
+            until CustomerRec.Next = 0;
+
+    end;
     ```
 
 4. Build the extension package.
