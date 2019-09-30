@@ -22,7 +22,7 @@ ms.service: "dynamics365-business-central"
 
 ## Upgrade paths
 
-When upgrading your version 14 solution to version 15, the goal is to move towards a full uptake of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base and system applications, as they are, and migrating code customizations to add-on extensions. There are different upgrade paths that you follow to get to this state, as illustrated in the following figure. 
+When upgrading your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (version 14) solution to version 15, the goal is to move towards a full uptake of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base and system applications, as they are, and migrating code customizations to add-on extensions. There are different upgrade paths that you follow to get to this state, as illustrated in the following figure. 
 
 ![Upgrade path on Business Central application](../developer/media/bc15-upgrade-paths.png "Upgrade paths")
 
