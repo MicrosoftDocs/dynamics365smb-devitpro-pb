@@ -13,9 +13,6 @@ author: SusanneWindfeldPedersen
 # Encrypting Data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
 This article gives an overview of data encryption and how to use it to add security [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
-> [!NOTE]
-> [!INCLUDE[on_prem_only](../developer/includes/on_prem_only.md)] For online versions, encryption is always turned on.
-
 > [!Note]
 > [!INCLUDE[on_prem_only](includes/on_prem_only.md)]
 
