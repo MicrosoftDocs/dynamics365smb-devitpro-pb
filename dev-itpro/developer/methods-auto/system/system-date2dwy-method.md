@@ -2,7 +2,7 @@
 title: "Date2DWY Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/30/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,9 +30,9 @@ The input date.
 *Value*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies what the function returns. The valid options are 1, 2, and 3.
-        - The value 1 corresponds to day of the week (1-7, Monday = 1).
-        - The value 2 corresponds to week number (1-53).
-        - The value 3 corresponds to year.
+- The value 1 corresponds to day of the week (1-7, Monday = 1).
+- The value 2 corresponds to week number (1-53).
+- The value 3 corresponds to year.
         
 
 
