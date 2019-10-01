@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-# Moving Custom Fields From Base Application to Extensions
+# Moving Custom Fields From the Base Application to an Extension
 
 This article describes how to move a custom field, which was originally added directly to a base application table object, to an extension and migrate the data from the base application table to the table that is added by a table extension object.
 
