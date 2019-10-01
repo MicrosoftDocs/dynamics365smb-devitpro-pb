@@ -26,5 +26,6 @@ This data type can be substituted by any other data type.
 
 
 ## See Also  
+
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

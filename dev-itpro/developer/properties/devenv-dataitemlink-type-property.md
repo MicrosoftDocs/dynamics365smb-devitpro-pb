@@ -1,7 +1,7 @@
 ---
 title: "DataItemLinkType Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,8 +9,10 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 2805061c-ac39-4ff4-ae23-c4dc5e462636
 caps.latest.revision: 6
-author: SusanneWindfeldPedersen
+author: jswymer
+redirect_url: devenv-sqljointype-property
 ---
+<!-- This topic is redirected to devenv-sqljointype-property.md -->
 
 # DataItemLinkType Property
 
@@ -35,7 +37,7 @@ Sets the data item link type between data items in a query to determine the reco
 ## Remarks  
  When setting up a data item link between two data items, you always set up the DataItemLinkType property on the lower data item in Query Designer.  
   
- The DataItemLinkType property works together with the DataItemLinkType property to combine records from tables into a dataset. The DataItemLink property sets up "equal to" \(=\) comparison between two or more fields of the data item tables. When the query is run, the query compares each row of the two data items to find records that have matching values for the fields. Records that have matching field values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the [DataItemLinkType Property](devenv-dataitemlink-type-property.md) to include records that do not have matching field values.  
+ The DataItemLinkType property works together with the DataItemLinkType property to combine records from tables into a dataset. The DataItemLink property sets up an "equal to" \(=\) comparison between two or more fields of the data item tables. When the query is run, the query compares each row of the two data items to find records that have matching values for the fields. Records that have matching field values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the [DataItemLinkType Property](devenv-dataitemlink-type-property.md) to include records that do not have matching field values.  
   
 > [!NOTE]  
 >  If the DataItemLinkType property is set to **SQL Advanced Options** and the [SQLJoinType Property](devenv-sqljointype-property.md) is set to **Cross Join**, then you cannot set the DataItemLink property because there is no relationship between table fields.  

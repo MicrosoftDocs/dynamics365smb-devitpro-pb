@@ -3,7 +3,7 @@ title: ".NET Control Add-Ins"
 description: "Description of the process of declaring the usage of a .NET or Javascript add-ins in AL"
 author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -121,7 +121,8 @@ If within the same project you have a native AL control add-in and a .NET add-in
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)     
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)            
 [Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)   
-[How to: Determine an Assembly's Fully Qualified Name](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name)
+[How to: Determine an Assembly's Fully Qualified Name](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/how-to-determine-assembly-fully-qualified-name)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 
 
 

@@ -4,7 +4,7 @@ description: Use the User Personalization page to assign a user to a profile, an
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ When you have created a profile, you can use the **User Personalization** page t
   
 |Field    |Description|  
 |---------|---------------------------------------|  
-|**User ID**|Choose the **AssistEdit** button to view all available user logins, select the relevant user, and then choose the **OK** button.<br /><br /> For more information, see [Managing Users and Permissions](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions).|  
+|**User ID**|Choose the **AssistEdit** button to view all available user logins, select the relevant user, and then choose the **OK** button.<br /><br /> For more information, see [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions).|  
 |**Profile ID**|Select a profile ID that you have already created. Choose the **AssistEdit** button to view all available profiles.|  
 |**Language ID**|Select the appropriate language ID, or leave this field blank.|  
 |**Company**|Select a company from the **Companies** window.|  
@@ -33,4 +33,4 @@ When you have created a profile, you can use the **User Personalization** page t
   
 ## See Also  
 [Profile Object](devenv-profile-object.md)  
-[Managing Users and Permissions](https://review.docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)  
+[Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)  

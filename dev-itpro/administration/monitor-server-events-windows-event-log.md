@@ -1,7 +1,7 @@
 ---
 title: "Monitoring Microsoft Dynamics 365 Business Central Server Events in Event Viewer"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The **Common** folder contains telemetry events from the event trace provider ca
       
 |Log|Description|  
 |---------|-----------------|  
-|Admin|Includes custom telemetry trace events that are emitted from the application. These are events that are sent by [SENDTRACETAG method](../developer/methods/devenv-sendtracetag-method.md) calls from inside the application. <br /><br /> For more information, see [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md).<br /><br /> **Note** The [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[nav_server_md](../developer/includes/nav_server_md.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](configure-server-instance.md#General).|  
+|Admin|Includes custom telemetry trace events that are emitted from the application. These are events that are sent by [SENDTRACETAG method](../developer/methods/devenv-sendtracetag-method.md) calls from inside the application. <br /><br /> For more information, see [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md).<br /><br /> **Note** The [!INCLUDE[server](../developer/includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[server](../developer/includes/server.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](configure-server-instance.md#General).|  
 |Operational|Not applicable.|  
 |Debug|Includes system telemetry trace events that occur.<br /><br /> **Note:** In Event Viewer, this log is hidden and disabled by default. For information about how to show and enable this log, see [Enable Business Central Debug Logs in Event Viewer](use-Event-Viewer-Collect-View-Trace-Events.md).|  
   

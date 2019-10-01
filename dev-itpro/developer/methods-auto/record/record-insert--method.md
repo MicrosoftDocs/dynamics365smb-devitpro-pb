@@ -34,7 +34,48 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
+## Remarks
+
+The inserted record will automatically get assigned a SystemId by the platform. To assign a specific SystemId instead of the one assigned by the platform, use [Insert(Boolean, Boolean)](record-insert-boolean-boolean-method.md) instead.
+
+## Example
+
+This example shows how to use the INSERT method without a return value.  
+  
+```  
+Customer.Init;  
+Customer."No." := '1120';  
+Customer.Insert();  
+```  
+  
+If customer 1120 already exists, then a run-time error occurs.  
+
+## Example
+  
+This example shows how to use the INSERT method with a return value.
+
+```
+var
+    CustomerRec: Record Customer;
+    Text000: TextConst ENU = 'Customer no: %1 inserted.';
+    Text001: TextConst ENU = 'Customer no: %1 already exists.';
+begin
+    CustomerRec.Init();  
+    CustomerRec."No." := '1120';  
+    if CustomerRec.INSERT() then  
+      Message(Text000, CustomerRec."No.")  
+    else  
+      Message(Text001, CustomerRec."No.");
+end;
+```
+
+No run-time error occurs if customer 1120 already exists. 
+ 
 ## See Also
+
+[SystemId Field](../../devenv-table-object.md#systemid)  
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

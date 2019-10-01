@@ -3,7 +3,7 @@ title: "How to make compelling videos"
 description: "How to make compelling videos"
 author: v-liober
 ms.custom: na
-ms.date: 04/08/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"

@@ -3,7 +3,7 @@ title: "Creating Runtime Packages for Business Central On-Premises"
 description: "How to create runtime packages used for distribution of extensions."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/10/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,5 +36,5 @@ For publishing and installing the package, use the [Publish-NavApp](https://go.m
 The limitation of runtime packages is that they only work for on-premise installations and therefore cannot be submitted to AppSource. Moreover, the debugging experience is very limited since no source code is available. 
  
 ## See also
-[Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079)   
+[Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079)  
 [Install-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=618056)  

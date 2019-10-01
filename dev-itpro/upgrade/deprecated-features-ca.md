@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Canada, local functionality
-ms.date: 05/31/2019
+ms.date: 10/01/2019
 ms.author: bholtorf
 
 ---

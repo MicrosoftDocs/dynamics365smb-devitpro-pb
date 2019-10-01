@@ -1,7 +1,7 @@
 ---
 title: "Enabled Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,17 +12,15 @@ ms.author: solsen
 ---
 
 # Enabled Property
-Sets a value that indicates whether a field or key is enabled or disabled, or whether a control can respond to user-generated events.  
+Sets a value that indicates whether a field or key is enabled or disabled, or whether a control can respond to user-generated events. This property can also be used to enable profiles for users, for profiles the default value is **true**.
 
 ## Applies To  
 
--   Group, part, and field controls on pages  
-
--   Page actions  
-
--   Keys  
-
--   Table fields  
+- Group, part, and field controls on pages  
+- Page actions  
+- Keys  
+- Table fields  
+- Profiles
 
 ## Property Value  
  **True** on pages if the field, key, or control is enabled; otherwise, **false** on pages. The default is **true** on pages.  

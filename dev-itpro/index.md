@@ -2,7 +2,7 @@
 title: "Developer and IT-Pro Help for Business Central"
 description: Learn how to extend, manage, and customize Dynamics 365 Business Central
 
-ms.date: 08/20/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,4 +22,4 @@ ms.service: "dynamics365-business-central"
 [Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences](faq.md)  
 [Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]](help-and-support.md)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
-[Dynamics NAV developer and ITpro content](/dynamics-nav/index)  
+[Dynamics NAV Developer and ITPro Content](/dynamics-nav/index)  

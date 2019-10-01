@@ -38,4 +38,5 @@ The following methods are available on instances of the FilterPageBuilder data t
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  
+[Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

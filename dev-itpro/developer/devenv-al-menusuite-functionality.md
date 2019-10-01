@@ -3,7 +3,7 @@ title: "Adding Pages and Reports to Tell me"
 description: "Description of how you use AL to add pages and reports so that they are discoverable through search in the client."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -77,6 +77,9 @@ In addition to making a page or report searchable, you can control the access of
 The **AccessByPermission** property and **ApplicationArea** property are the optional settings, which can be applied with the **UsageCategory** property. These settings are used to set restrictions on an object when you enable the Search functionality.
 
 ## Working in the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)]
+
+>[!NOTE]
+> [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
 
 If you are using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], you can also set UsageCategory, AdditionalSearchTerms, AccessByPermission, and ApplicationArea properties on pages and reports to control their search.
 

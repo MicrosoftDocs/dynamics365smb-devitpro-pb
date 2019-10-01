@@ -41,30 +41,31 @@ The name of the filter control.
 
 ## Example  
  The following example initializes a filter page object that includes two filter controls for the **Date** system table. The NAME method returns the names of filter control in a message dialog box.  
-  
- This example requires that you create the following global variables.  
-  
-|Variable name|DataType|SubType|  
-|-------------------|--------------|-------------|  
-|varDateItem|Text||  
-|varCount|Integer|Date|  
-|varIndex|Integer||  
-|varFilterPageBuilder|FilterPageBuilder||  
-  
+ 
 ```  
-varDateVariable := 'Date record';  
-varFilterPageBuilder.ADDTABLE(varDateVariable + ‘ 1’,DATABASE::Date);  
-varFilterPageBuilder.ADDTABLE(varDateVariable + ‘ 2’,DATABASE::Date);  
-varCount := varFilterPageBuilder.COUNT;  
-IF varCount <> 2 THEN   
-  error(‘There should be two controls in FilterPageBuilder’);  
-FOR varIndex := 1 to varCount do  
-  MESSAGE(‘Control item %1 is named %2’, varIndex, varFilterPageBuilder.Name(varIndex));  
-  
+    var
+        varDateItem: Text[30];
+        varCount: Integer;
+        varIndex: Integer;
+        varFilterPageBuilder: FilterPageBuilder;
+
+    begin
+        varDateItem := 'Date record';
+        varFilterPageBuilder.ADDTABLE(varDateItem + ' 1', DATABASE::Date);
+        varFilterPageBuilder.ADDTABLE(varDateItem + ' 2', DATABASE::Date);
+        varCount := varFilterPageBuilder.COUNT;
+        IF varCount <> 2 THEN
+            error('There should be two controls in FilterPageBuilder');
+        FOR varIndex := 1 to varCount do
+            MESSAGE('Control item %1 is named %2', varIndex, varFilterPageBuilder.Name(varIndex));
+        varFilterPageBuilder.RunModal();
+    end;
+    
 ```  
   
 
 ## See Also
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
+[Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
