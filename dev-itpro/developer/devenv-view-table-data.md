@@ -3,7 +3,7 @@ title: "Viewing Table Data in Browser"
 description: "View tables in browser for troubleshooting"
 author: jswymer
 ms.custom: na
-ms.date: 06/11/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

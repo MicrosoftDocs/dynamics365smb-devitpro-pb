@@ -2,7 +2,7 @@
 title: "Read Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -67,6 +67,7 @@ Bstr.READ(Istream);
  Use the [CALCFIELDS Method \(Record\)](../../methods-auto/record/record-calcfields-method.md) to calculate the BlobField. A BlobField is a binary large object \(maximum size 2 GB\) and must be calculated if you want to use it in AL or display it in the application.  
 
 ## See Also
+
 [BigText Data Type](bigtext-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

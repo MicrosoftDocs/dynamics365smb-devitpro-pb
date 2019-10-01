@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/07/2019
+ms.date: 10/01/2019
 ms.author: jaredha
 ---
 
@@ -27,7 +27,7 @@ To filter the telemetry for an environment:
 4. Choose the environment.
 5. Select **Filter**.
 
-## Sending telemetry to Microsoft Azure Application Insights
+## Sending telemetry to Microsoft Azure Application Insights (Preview)
 
 You can set up your environments to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. To read more about Application Insights, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
@@ -36,6 +36,9 @@ Currently, the only telemetry that [!INCLUDE[prodshort](../developer/includes/pr
 Identifying long running SQL queries on a tenant database can be a good starting point when doing performance analysis, and Application Insights provides tools that can help you in this task.
 
 ### Enable sending telemetry to Application Insights
+
+> [!IMPORTANT]  
+> This process requires a restart to the environment, which is triggered automatically after step 5. Plan to do this during non-working hours to avoid disruptions.
 
 1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).
 2. Create an Application Insights resource in Azure.
@@ -46,8 +49,7 @@ Identifying long running SQL queries on a tenant database can be a good starting
 
 3. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], on the **Environments** tab, select **Application Insights Key**.
 4. On the **Application Insights Key** page, enter the instrumentation key in the **Instrumentation Key** field.
-5. If you want to apply the instrumentation key to all your environments, turn on the **Apply to all environments** switch.
-6. Select **Save**.
+5. Select **Save**.
 
 ### Analyze long running SQL queries
 

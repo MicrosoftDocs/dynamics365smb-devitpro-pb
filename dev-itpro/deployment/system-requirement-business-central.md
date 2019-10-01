@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 08/15/2019
+ms.date: 10/01/2019
 ---
 # System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] April '19
 

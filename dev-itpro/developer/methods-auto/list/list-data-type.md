@@ -2,7 +2,7 @@
 title: "List Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ The following methods are available on instances of the List data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The List can only be used with simple types i.e. you can have a List of [Integer] but cannot have a List of [Blob]. 
+The List can only be used with simple types i.e. you can have a List of [Integer] but cannot have a List of [Blob]. 
 
 Lists are 1-based indexed, that is, the indexing of a List begins with 1.
 

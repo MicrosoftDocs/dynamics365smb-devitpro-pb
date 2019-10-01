@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 09/25/2019
+ms.date: 10/01/2019
 ms.author: edupont
 ---
 
@@ -93,7 +93,7 @@ For other tips and tricks, see [Blog post: Collaborate on content for Business C
 
 ## Translate the Help
 
-If you want to deliver a [localization app](developer/readiness/readiness-develop-localization.md), or if you want to deliver your functionality in more than one country, you will want to translate the Help. To help you do that, we suggest that you take a look at the [Microsoft Dynamics 365 Translation Service](/dynamics365/unified-operations/dev-itpro/lifecycle-services/translation-service-overview), which is available as preview in the Microsoft Dynamics Life Cycle Services. For more information, see [Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua).  
+If you want to deliver a [localization app](developer/readiness/readiness-develop-localization.md), or if you want to deliver your functionality in more than one country, you will want to translate the Help. To help you do that, we suggest that you take a look at the [Microsoft Dynamics 365 Translation Service](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview), which is available as preview in the Microsoft Dynamics Life Cycle Services. For more information, see [Translate documentation files](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
 
 The user assistance in the shape of tooltips and other user interface text is translated as part of the application. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
 

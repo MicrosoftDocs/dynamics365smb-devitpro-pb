@@ -2,7 +2,7 @@
 title: "Length Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -63,6 +63,7 @@ MESSAGE(Text000, VarLength);
   
 
 ## See Also
+
 [BigText Data Type](bigtext-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: martinni
-ms.date: 08/20/2019
+ms.date: 10/01/2019
 
 ---
 

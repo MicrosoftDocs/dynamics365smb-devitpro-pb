@@ -2,7 +2,7 @@
 title: "Insert Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,6 +43,7 @@ If this parameter is true, the SystemId field of the record is given a value tha
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Remarks
 
 The inserted record will automatically get assigned a SystemId by the platform. To assign a specific SystemId instead of the one assigned by the platform, use [Insert(Boolean, Boolean)](record-insert-boolean-boolean-method.md) instead.

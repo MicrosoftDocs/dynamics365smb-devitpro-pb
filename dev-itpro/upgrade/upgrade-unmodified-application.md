@@ -2,7 +2,7 @@
 title: Upgrade an unmodified application
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
 ms.custom: na
-ms.date: 08/21/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -410,7 +410,7 @@ Complete this task if you have any 3rd party extensions that were installed in t
 
 -->
 
-## Task 9: Publish, synchronize and install 3rd party extensions
+## Task 11: Publish, synchronize and install 3rd party extensions
 
 Complete the following steps for each extension.
 
@@ -425,7 +425,7 @@ Complete the following steps for each extension.
     ```
     Sync-NAVApp -ServerInstance BC150 -Name "My14Extension" -Version 1.0.0.0
     ```
-3. Install the extension. 
+3. Install the extension.
 
     ```
     Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.0

@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 09/25/2019
+ms.date: 10/01/2019
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 

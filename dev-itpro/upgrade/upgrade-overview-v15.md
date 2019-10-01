@@ -2,7 +2,7 @@
 title: Upgrade to Business Central 2019 Wave 2
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
 ms.custom: na
-ms.date: 08/21/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,552 +20,78 @@ ms.service: "dynamics365-business-central"
 -->
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marks the release where C/AL has been completely replaced by AL. The 2019 release wave 2 is the first version that does not include the classic development environment (also known as C/SIDE). From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application is now delivered as an AL in an extensions instead of C/AL. Additionally, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. This change will influence how you perform the upgrade compared to earlier releases.
 
-## New and changed application features
-
-There a several new and changed platform application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 release wave2 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2019 release wave 2](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-business-central/).
-
-To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
-
 ## Upgrade paths
 
-When upgrading your version 14 solution to version 15, the goal is to move towards a full uptake of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base and system application as-is and migrating code customizations to add-on extensions. There are different upgrade paths that you follow to get to this state, as illustrated in the following figure. Most paths can be performed in stages. Depending on the path you choose, you might be limited from bringing your solution to the next stage until tooling is available in a future release.
+When upgrading your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (version 14) solution to version 15, the goal is to move towards a full uptake of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base and system applications, as they are, and migrating code customizations to add-on extensions. There are different upgrade paths that you follow to get to this state, as illustrated in the following figure. 
 
-[add illustration]
+![Upgrade path on Business Central application](../developer/media/bc15-upgrade-paths.png "Upgrade paths")
+
+As mentioned, the recommended upgrade path for a customized solution is to uptake the version 15 Microsoft Base Application and System Application, and move all code customizations to extensions. However, we realize that the complexity of some solutions will make this path very difficult. If this path is not currently realistic for your solution, then we recommend as a minimum to upgrade to a version 15 customized base application. 
+
+Be aware that for each path, once the database has been synchronized and data upgraded, it becomes more difficult to bring your solution to the next path. This will require significant manual work until tooling is available in a future release.
+
+For details about each path, see the following articles:
+
+- [Upgrade of an Unmodified Application](upgrade-unmodified-application.md)
+- [Technical Upgrade of Customized Application](upgrade-technical-upgrade-v14-v15.md)
+
+*The following articles are currently being formalized and will be available as soon as possible*
+ 
+- Upgrade to the System Application
+- Upgrade to a Customized Version 15 Base Application  
+- Upgrade to the Microsoft Base Application
+
+<!--
+- [Upgrade to the Microsoft System Application](upgrade-system-application-v14-v15.md)
+- [Upgrade to Customized Base Application](upgrade-hybrid-upgrade-v14-v15.md)  
+- [Upgrade to the Microsoft Base Application](upgrade-full-upgrade-v14-v15.md)
+-->
 
 > [!NOTE]
 > Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to the latest cumulative update of [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
-
+<!--
 ## Upgrade an unmodified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application
 
 Use this scenario if you have a Business Central application that does not include any code customization in C/AL. Customizations, if any, are done by extensions, which can be Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central version 15 base application extension and the system application. The result will be a fully upgraded application and platform on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2.
 
-<!-- For this scenario, I am upgrading a BC 14.0 unmodified base application. Because the application was unmodified, I upgraded to the BC 15 base app.-->
-
  ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
 For more information, see [Upgrading an Unmodified Application](upgrade-unmodified-application.md). 
-<!--
-### Prerequisite
 
-Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.0).
-
-### Task 1: Prepare the version 14.0 application and tenant databases for upgrade
-
-1. Make backup of the databases.
-2. Uninstall all extensions from the tenants.
-
-    ``` 
-    Get-NAVAppInfo -ServerInstance bc140 -Tenant default | % { Uninstall-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version -Tenant default}
-    ``` 
-3. Unpublish all system, test, and application symbols from the application.
-
-    ``` 
-    Get-NAVAppInfo -ServerInstance bc140 -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance bc140 -Name $_.Name -Version $_.Version }
-    ``` 
-4. Dismount the tenant from the old application and stop the old Server instance.
-
-### Task 2: Upgrade the version 14.0 application to the version 15.0 platform
-     
-1. Run a technical upgrade on the application.
-
-    Start the Dynamics NAV Dev Shell as and administrator, and run the Invoke-NAVApplicationDatabaseConversion cmdlet:
-
-    ```
-    Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName "Demo Database BC (14-0)"
-    ```
-2. Connect a version 15.0 server instance to the database and start the instance.
-3. Increase the application version of the application database.
-
-    ```
-    Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
-    ```
-4. Publish version 15 system symbols extension.
-
-    The symbols extension package is called System.app. You find it where the AL Development Environment was installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
-
-    ```
-    Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
-    ```
-5. Publish the System Application extension.
-
-    ```
-    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_System Application_15.0.34737.0.app" -SkipVerification
-    ```
-
-6. Publish the Business Central base application extension:
-
-    ```
-    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
-    ```
-
-### Task 4: Synchronize and upgrade the tenant
-
-1. Mount the tenant to the version 15.0 server instance.
-2. Synchronize the tenant with the application.
-
-    ```  
-    Sync-NAVTenant BC150
-    ```
-
-    At this stage, the tenant state is **OperationalDataUpgradePending**.
-
-3. Delete all objects except system objects. Do not synchronize the tenant/tables.
-4. Synchronize the tenant with the System Application extension (Microsoft_System Application_15.0.34737.0):
-
-    ```
-    Sync-NAVApp BC150 -Name "System Application" -Version 15.0.34737.0
-    ```
-5. Synchronize the tenant with the Business Central Base Application extension (BaseApp):
-    ```
-    Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0 -Mode ForceSync
-    ```
-
-    This can take several minutes.
-
-    <!--**Error:**
-
-    Got this error the second time:
-    
-    ```
-    Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
-    Sync-NAVApp : Table Invoice Post. Buffer :: Unsupported field change.
-    Field:Additional Grouping Identifier; Change:LengthChanged
-    Table Incoming Document :: Unsupported field change. Field:URL1; Change:Remove
-    Table Incoming Document :: Unsupported field change. Field:URL2; Change:Remove
-    Table Incoming Document :: Unsupported field change. Field:URL3; Change:Remove
-    Table Incoming Document :: Unsupported field change. Field:URL4; Change:Remove
-    At line:1 char:1
-    + Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
-    + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        + CategoryInfo          : InvalidOperation: (:) [Sync-NAVApp], InvalidOper
-       ationException
-        + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC150/nav-systemappli
-       cation,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.SyncNavApp
-    ```
-    
-    To fix this I synced again using `-mode forcesync`.
-
-    -->
-    
-<!--
-6. Upgrade the tenant data.
-
-    ```
-    Start-NAVDataUpgrade BC150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
-    ```        
-
-    This step upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before you complete the next step or to open the application in the client.
-
-    To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
-    
-    When completed, the tenant state should be **Operational**.
-
-<!--
-15. The upgrade installs System Application on the tenant. If it does not, manually install it on the tenant.
-
-    ```
-    Install-NAVApp BC150 -Name "System Application" -Version 15.0.34737.0
-    ```
-16. Install base application extension on the tenant:
-
-    ```
-    Install-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
-    ```
--->
-
-<!--
-### Task 5: Publish and upgrade Microsoft extensions
-
-Complete this task to upgrade any Microsoft extensions that were used in the previous version to new versions that are avialbel on the installation media. Do the following steps for each extension.
-
-1. Publish the extension.
-
-    ```
-    Publish-NAVApp -ServerInstance BC150 -Path c:"\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\W1DVD\Extensions\SalesAndInventoryForecast.app" -SkipVerification
-    ```
-2. Synchronize the tenant with the extension. 
-
-    ```
-    Sync-NAVAapp BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
-    ```
-3. Upgrade the tenant data to the extension. 
-
-    ```
-    Start-NAVAppDataUpgrade BC150 -Name "Sales and Inventory Forecast" -Version 15.0.34737.0
-    ```
-
-### Task 6: Publish and install 3rd party extensions
-
-Complete this task if you have 3rd-party extensions to upgrade. The extensions must be modified to work with base application extension. There are two ways to do this. You can either modify the extension code or configure the version 15 server instance to handle this.
-
-#### Modify extension code
-
-1. (optional) Upgrade the extension package to reference the base app and system app.
-
-    1. Open the project in Visual Studio Code.
-    2. Download the symbols.
-    3. Modify the `dependencies` parameter in the app.json file to include dependencies on the base app and system app: 
-
-        ```
-        "dependencies": [      {
-        "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
-        "publisher": "Microsoft",
-        "name": "System Application",
-        "version": "15.0.0.0"
-        },
-        {
-        "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-        "publisher": "Microsoft",
-        "name": "BaseApp",
-        "version": "15.0.0.0"
-        }]
-        ```
-
-    4. Build the project.
-
-2. Publish the 3rd-party extension:
-
-    ```
-    Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
-    ```
-3. Synchronize the tenant with the extension:
-
-    ```
-    Sync-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
-    ```
-4. Upgrade the data to the extension:
-
-    ```
-    Start-NAVAppDataUpgrade BC150 -Name My14Extension -Version 1.0.0.3
-    ```    
-
-    This upgrades the data and installs the extension version.
-
-#### Configure server instance
-
-You can only use this option if you unpublish the old 3rd party extension version.
-
-1. Unpublish all 3rd party extensions.
-
-2. Configure the version 15.0 server instance.
-
-    Using the Set-NAVServerConfiguration cmdlet, set the `DestinationAppsForMigration` parameter to identify the BaseApp ans System Application as follows:
-
-    ```
-    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"} ]'
-    ```
-
-    Restart the server instance.
-
-2. Publish 3rd-party extensions that were previously published:
-
-    ```
-    Publish-NAVApp -ServerInstance BC150 -Path "C:\Users\jswymer\Documents\AL\My14Extension\Default publisher_My14Extension_1.0.0.3.app" -SkipVerification
-    ```
-4. Synchronize the tenant with the extension:
-
-    ```
-    Sync-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
-    ```
-5. Install the extension:
-
-    ```
-    Install-NAVApp BC150 -Name My14Extension -Version 1.0.0.3
-    ```
-
-## Upgrading a Customized Application to the 15.0 Platform - Technical Upgrade
-
-<!--
-### Option 1 - Convert entire solution to an extension
-
-For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance. This process will convert the entire BC 14 cusom application to an Extension on the BC 15 platform.
-
- 
-1. Upgrade to Business Central Spring 2019.
-2. Make backup of the database.
-3. Uninstall extensions from the tenants.
-4. Convert your application from C/AL to AL.
-
-   1. Export all objects except system objects to txt in new syntax for AL. For this, I used Development Shell run as an admin:
-    
-      ```
-      Export-NAVApplicationObject -DatabaseServer navdevvm-0127\BCDemo -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\exporttoal\expoertedbc14app.txt" -Filter 'Id=1..1999999999'
-      ```
-    There is a switch that you can set to tartget the runtime to 4.0. You should set this so you will not get so many warnings.  This is not documented yet.
-
-    2. If you have custom .Net addins, create a declaration file (.al). I created a small file called mydotnet.al
-
-        ```
-        dotnet
-        {
-            assembly("Microsoft.Dynamics.Nav.Client.BusinessChart")
-            {
-                type("Microsoft.Dynamics.Nav.Client.BusinessChart.BusinessChartAddIn";"Microsoft.Dynamics.Nav.Client.BusinessChart")
-                {
-                    IsControlAddIn = true;
-                }
-            }
-        
-            assembly("Microsoft.Dynamics.Nav.Client.TimelineVisualization")
-            {
-                type("Microsoft.Dynamics.Nav.Client.TimelineVisualization.InteractiveTimelineVisualizationAddIn";"Microsoft.Dynamics.Nav.Client.TimelineVisualization")
-                {
-                    IsControlAddIn = true;
-                }
-            }
-        }
-        ```
-    3. Start a command prompt as administrator, navigate to the txt2al.exe location, and run the following command to convert to *.al. By default, the location is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client
-
-       ```      
-        txt2al --source=C:\exporttoal --target=C:\exporttoal\al --dotNetAddInsPackage=C:\exporttoal\dotnet\mydotnet.al
-       ```      
-    
-    This will create separate al file for each object.
-3. Create a new application database on BC 15. Use the New-NAVApplicationDatabase cmdlet of the Aministration Shell:
-
-    ```
-    New-NAVApplicationDatabase -DatabaseServer navdevvm-0127\BCDEMO -DatabaseName MyTest15Db
-    ```
-    
-4. Connect to BC 15 server Instance to the database
-5. Create a project for application in VS Code.
-
-    - Connect to the BC 15 Server instance.
-6. Modify the app.json:
-
-    - Set the `id`:
-
-        ```
-          "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-          "name": "BaseApp",
-          "publisher": "Microsoft",
-          "version": "15.0.34982.0"
-        ```
-    - Set the target in the app.json to OnPrem.
-    - In the app.json change the `idRange` to include all the IDs (leave blank).
-    - Delete the values in the `dependencies` parameter  
-7. Manually copy the System symbols extension (Microsoft_System_15.0.34942.0.app) to the **.alpackages** folder.
-
-    <!-- **Error:**
-
-    I tried to us the Download Symbols command but could not because of error: {
-	"resource": "/c:/Users/jswymer/Documents/AL/CusomtBaseApp2/app.json",
-	"owner": "_generated_diagnostic_collection_name_#1",
-	"code": "AL1045",
-	"severity": 8,
-	"message": "The package cache c:\\Users\\jswymer\\Documents\\AL\\CusomtBaseApp2\\./.alpackages could not be found.",
-	"source": "AL",
-	"startLineNumber": 1,
-	"startColumn": 1,
-	"endLineNumber": 1,
-	"endColumn": 1
-
-
-8. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. Set the `"al.assemblyProbingPaths"` parameter:
-
-    ```
-    	"al.assemblyProbingPaths": [
-		"./.netpackages", "C:/Windows/Microsoft.NET/assembly", "C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins",
-		"C:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00",
-		"C:/NugetCache/Microsoft.Nav.Platform.Main.14.0.28217",
-		"C:/windows/assembly/GAC/ADODB",
-		"C:/Depot/NAV/test/App/MockService/MockService",
-		"C:/Depot/NAV/test/App/MockTest",
-		"C:/Depot/NAV/test/App/ALTest/DGMLVisualizationAddIn", "C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client"
-	],
-    ```
-8. Open the **dotnet.al** file and remove all instances of "Version=14.0.0.0" for **Microsoft.Nav** assemblies. Set reove the version and culture key from DocumentFormat.OpenXml and set the PublicKeyToken = '8fb06cb64d019a17'
-
-
-    ```
-    assembly("DocumentFormat.OpenXml")
-    {
-        PublicKeyToken = '8fb06cb64d019a17';
-
-9. Build the project.
-
-  <!--  **Error:**
-
-    I got errors compiling the following objects. To fix, I had to comment out code:
-
-    - AzureADUserManagement.Codeunit.al
-
-        ```
-            local procedure GetGraphUserPlans(var TempPlan: Record Plan temporary;var GraphUser: DotNet UserInfo;IncludePlansWithoutEntitlement: Boolean)
-        var
-            AssignedPlan: DotNet ServicePlanInfo;
-            DirectoryRole: DotNet RoleInfo;
-            ServicePlanIdValue: Variant;
-            IsSystemRole: Boolean;
-            HaveAssignedPlans: Boolean;
-        begin
-            TempPlan.Reset;
-            TempPlan.DeleteAll;
-    
-            // Loop through assigned Azzure AD Plans
-            foreach AssignedPlan in GraphUser.AssignedPlans do begin
-              HaveAssignedPlans := true;
-              if AssignedPlan.CapabilityStatus = 'Enabled' then begin
-                ServicePlanIdValue := AssignedPlan.ServicePlanId;
-                if IncludePlansWithoutEntitlement or IsNavServicePlan(ServicePlanIdValue) then
-                  AddToTempPlan(ServicePlanIdValue,AssignedPlan.ServicePlanName,TempPlan);
-              end;
-            end;
-    
-            // If there are no Azure AD Plans, loop through Azure AD Roles
-            /* if not HaveAssignedPlans then
-              foreach DirectoryRole in Graph.GetUserRoles(GraphUser) do begin
-                Evaluate(IsSystemRole,Format(DirectoryRole.IsSystem));
-                if IncludePlansWithoutEntitlement or IsSystemRole then
-                  AddToTempPlan(DirectoryRole.RoleTemplateId,DirectoryRole.DisplayName,TempPlan);
-              end; */
-        end;
-
-        ```
-    - FlowSelectorTemplate.Page.al
-
-        ```   
-        usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
-        {
-        ApplicationArea = Basic,Suite;
-    
-        trigger ControlAddInReady()
-        begin
-        /*                                 CurrPage.FlowAddin.Initialize(
-            FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
-            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-            AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
-
-        LoadTemplates;
-
-        AddInReady := true; */
-        end;
-        ```   
-        ```
-    - FlowSelector.Page.al
-
-        ```   
-            group(Control3)
-            {
-                ShowCaption = false;
-                Visible = IsUserReadyForFlow AND NOT IsErrorMessageVisible;
-                usercontrol(FlowAddin;"Microsoft.Dynamics.Nav.Client.FlowIntegration")
-                {
-                    ApplicationArea = Basic,Suite;
-
-                    trigger ControlAddInReady()
-                    begin
-                    /*     CurrPage.FlowAddin.Initialize(
-                          FlowServiceManagement.GetFlowUrl,FlowServiceManagement.GetLocale,
-                          AzureAdMgt.GetAccessToken(FlowServiceManagement.GetFlowARMResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-                          AzureAdMgt.GetAccessToken(FlowServiceManagement.GetAzureADGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false),
-                          AzureAdMgt.GetAccessToken(FlowServiceManagement.GetMicrosoftGraphhResourceUrl,FlowServiceManagement.GetFlowResourceName,false));
-
-                        LoadFlows;
-
-                        AddInReady := true; */
-                    end;
-
-        ```          
-
-11. Build project again. This time the package build succeeded.
-
-12. Copy the CodeViewer addin from the RoleTailored client installation to the BC 15 Server installation add-ind folder. Replace all.
-
-12. Run a technical upgrade on the application in the old database. This will upgrade the system tables to the BC 15 platform. Start the Business Central Administration Shell as an admin, and run this command: 
-
-    ``` 
-    Invoke-NAVApplicationDatabaseConversion -DatabaseServer navdevvm-0127\bcdemo -DatabaseName "demo database bc (14-0)"
-    ``` 
-
-    What id to made changes to system tables?
-
-13. Connect the BC 15 server to the old database.
-14. Increase the application application version.
-
-    ``` 
-    Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
-
-    ``` 
-15. Publish platform system symbols:
-
-    ```
-    Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
-    ```
-
-    Should you unpublish old all old symbols?
-16. Publish the custom base app:
-
-    ```
-    Publish-NAVApp -ServerInstance BC150 -Path "\\vedfssrv01\DynNavFS\Ship\W1\Main\34737\w1Build\Extensions\W1\Microsoft_BaseApp_15.0.34737.0.app" -SkipVerification
-    ```
-
-    **Error:**
-
-    I got several error on various objects, which prevented me from going any further:
-    - ExcelBuffer.Table.al
-    - ConfigExcelExchange.Codeunit.al
-    - OpenXMLManagement.Codeunit.al
-    - QuestionnaireManagement.Codeunit.al
-    - dotnet.al(1995,14): error AL0451: An assembly named 'Microsoft.Dynamics.Nav.Client.CodeViewer, PublicKeyToken=null' could not be found in the assembly probing paths 'C:\Program Files\Microsoft Dynamics 365 Business Central\150\
-Central\150\Service\, C:\windows\Microsoft.NET\assembly\'
-DebuggerCodeViewer.Page.al(14,36): error AL0417: Control add-in '"Microsoft.Dynamics.Nav.Client.CodeViewer"' not found
-    
-17. Synchronize the tenant.
-  
-    ```
-    C:\windows\system32> Sync-NAVTenant BC150
-    ```
- 
-18. Delete all objects except system objects from application database.
-
-19. Synchronize the tenant with the base application extension (BaseApp):
-
-    ```
-    Sync-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
-    ```
-20. Upgrade the tenant data:
-
-    ```
-    Start-NAVDataUpgrade BC150 -FunctionExecutionMode Serial -Force -SkipCompanyInitialization
-    ```
-        
-21. Install system application extension (Microsoft_System Application_15.0.34737.0) on tenant.
-
-    ```
-    Sync-NAVApp BC150 -Name "System Application" -Version 15.0.34737.0
-    ```
-
-22. Install base Application extension on the tenant:
-
-    ```
-    Install-NAVApp BC150 -Name "BaseApp" -Version 15.0.34737.0
-    ```
-
-
-### Clean steps
--->
-## Technical upgrade of a custom application
+## Technical upgrade of a custom application to version 15 platform
 
 Use this process when you have a customized Business Central application that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 
-<!-- For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 custom application to an Extension on the BC 15 platform.-->
 
  ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
 
 
-For more information, see [Technical Upgrade](upgrade-technical-upgrade-v14-v15.md). 
+For more information, see [Technical Upgrade](upgrade-technical-upgrade-v14-v15.md).
 
-## Upgrade a Code Customized Application to Business Central 2019 Wave 2 Application and Platform
+
+## Upgrade Customized Application to the Microsoft System Application
+
+Use this process when you have a customized Business Central application that you want to upgrade to use the Microsoft System Application and the version 15 platform. With this process, you will convert the entire application from C/AL to AL and refactor to use the System Application  extension.
+
+!["Upgrade to system application in Business Central](../developer/media/bc15-system-application-upgrade-customized-app.png "Upgrade to system application in Business Central")  
+
+For more information, see [Upgrade to the System Application](upgrade-system-application-v14-v15.md). 
+
+
+## Upgrade Customized Application to the Microsoft Base Application
 
 Use this process when you have a customized Business Central application that you want to upgrade to the Business Central Wave 2 application and platform. With this process, you will convert the entire application from C/AL to AL and refactor to use the system application layer extension.
 
  ![Upgrade on customized Business Central application](../developer/media/bc15-full-upgrade-customized-app.png "Upgrade on customize Business Central application")  
 
-For more information, see [Full Upgrade](upgrade-full-upgrade-v14-v15.md). 
+For more information, see [Upgrade to the Microsoft Base Application](upgrade-full-upgrade-v14-v15.md). 
+-->
 
+## New and changed application features
+
+There a several new and changed platform application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 release wave2 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2019 release wave 2](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-business-central/).
+
+To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
 
 <!--
 ### Prerequisites
@@ -1117,20 +643,26 @@ Now, you can publish the Microsoft and 3rd-party extensions that were published 
     ```
 
 -->
+## Components
 
+### <a name="BaseApplication"></a>Base Application
 
-## <a name="SystemApplication"></a>System Application
+The base application contains the objects (such as table, pages, codeunits, and reports) that define the business logic and functionality of the solution. In version 14 and earlier, the base application also contained system objects that were not specifically related to the business logic. In version 15, the standard business objects are now included in the Microsoft Base Application extension, and the system objects have been moved to the System Application extension. 
 
-In version 15.0, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. For an introduction to the System Application, see [Breaking the monolith: Introducing the Business Central System Application](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/09/introducing-the-dynamics-365-business-central-system-application/).
+### <a name="SystemApplication"></a>System Application
 
+In version 15.0, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. For an introduction to the System Application, see For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md).
 
-## <a name="Symbols"></a>Symbols
+### <a name="Symbols"></a>Symbols
 
 Symbols are the application programming interface between AL code and C/AL code. Symbols enable the ability to reference C/AL objects from AL objects. Symbols are provided as an extension package, and are published to the server instance similar to application extensions, but not installed on tenants.
 
 In version 14.0, with the base application being C/AL, there are three types of symbols: system, application, and test. System symbols contained references to the platform system objects. The application symbols contained references to the business application objects. The test symbols contained references to the test libraries used by Microsoft extensions.
 
 In version 15, with the move to AL, the only symbols required are the system systems, which are still provided on the version 15.0 installation media (DVD).
+
+### Customization extensions
+Customization extensions are AL extensions that add functionality to the base application or system application. These extensions can be Microsoft (1st party) or 3rd party extensions. 3rd party extensions are extensions that your organization provides or extensions that are provided by others, such as from ISVs or from App Source.
   
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
