@@ -14,9 +14,16 @@ ms.author: jswymer
 
 # Moving Custom Fields From Base Application to Extensions
 
-This article describes how to move a custom field, which was originally added directly to a base application table object, to an extension and migrate the data from the base application table to the table extension.
+This article describes how to move a custom field, which was originally added directly to a base application table object, to an extension and migrate the data from the base application table to the table that is added by a table extension object.
+
+
 
 To help explain the process, a simple example is used throughout this article. In this example, an integer data type field, named **Shoesize**, was added the original **Customer** table object and **Customer Card** page object of the base application.
+
+## Migrating data
+
+The data migration can be handled by writing either installation code or upgrade code, depending on whether you include the table extension object and other related objects in a new extension or in an existing extension, which has been previously published and installed. The example used in this article uses a new extension, so the data migrating code is written in the installation code of the new extension. For general information about install code and upgrade code, see [Writing Extension Install Code](devenv-extension-install-code.md) and [Upgrading Extensions](devenv-upgrading-extensions.md).
+
 
 ## Create a table extension object that adds a field to the base application table object
 
@@ -99,7 +106,7 @@ In this example, you will use the [VALIDATE method](methods-auto/record/record-v
         end;
     }
     ```
-3. Add a local method that iterates through the records of the **Customer** table
+3. Add a local method to the codeunit that iterates through the records of the **Customer** table and replicates data to the new field (**Shoesize2**). 
 
     ```
     local procedure HandleFreshInstall();
@@ -118,11 +125,15 @@ In this example, you will use the [VALIDATE method](methods-auto/record/record-v
 
 4. Build the extension package.
 
-## Obsolete/remove the custom field in base application
+## Mark the custom field in base application table as being removed
 
-1. In the base application table object, mark the old field as obsolete.
+In this task, you will mark the custom field in the base application table as being removed. This will not remove field or data from the database table. However, it will prevent others from referencing the custom field in code going forward, unless referenced from an upgrade codeunit
 
-    For example, in the AL code of **Customer** base application table object, add the `ObsoleteState = Removed` property to the **ShoeSize** field. 
+1. In the app.json, increase the `version` of the base application.
+        
+2. Open the base application table object, and set the `ObsoleteState` property to `Removed`.  
+
+    For example, in the AL code of **Customer** base application table object, add the `ObsoleteState = Removed` property to the **ShoeSize** field.
 
 2. In the **Customer Card** page object, delete the **Shoesize** field.
 
@@ -130,19 +141,21 @@ In this example, you will use the [VALIDATE method](methods-auto/record/record-v
 
 ## Next steps
 
-1. Publish, synchronize, and upgrade to the new base application version.
-2. Publish, synchronize, and install the new extension package.
-3. Delete the field from the base application table.
+1. Publish the new base application version, then synchronize and run the data upgrade on tenants.
+2. Publish the new extension package, then synchronize and install the new extension on tenants.
+3. Permanently delete the custom field from the base application table (optional).
 
     You are not required to perform this step at this time. Complete these step when you want to delete the original field from the database. 
 
-    1. Delete the original **Shoesize** from the **cusotmer** table of base application.
+    1. Delete the original **Shoesize** from the **Customer** table of base application.
     2. Build and publish the new version of the base application.
-    3. Synchronize the base application extension using the `-Mode Focreync` parameter.
-    4. Run the data upgrade.    
+    3. Synchronize the base application extension using the `-Mode ForceSync` parameter.
+    4. Run the data upgrade.
 
 ## See Also
 
-[Unpublishing and Uninstalling Extensions](devenv-unpublish-and-uninstall-extension-v2.md)  
-[Developing Extensions](devenv-dev-overview.md)
+[Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
+[Upgrading Extensions](devenv-upgrading-extensions.md)
+[Developing Extensions](devenv-dev-overview.md)  
+[ObsoleteState Property](properties/devenv-obsoletestate-property.md)  
 
