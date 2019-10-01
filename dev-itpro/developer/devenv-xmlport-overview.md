@@ -3,7 +3,7 @@ title: "XMLport Overview"
 description: "Design a XMLport by defining the schema. XMLport object is composed of a schema, request page, properties, triggers, and code."
 author: blrobl
 ms.custom: na
-ms.date: 08/06/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

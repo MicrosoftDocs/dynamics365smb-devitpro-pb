@@ -1,7 +1,7 @@
 ---
 title: "Actions Overview"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,6 @@ For more information about actions used on the role center page, see [Designing 
  
 > [!TIP]  
 > If you used to work in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)], you can get an overview of the mapping between actions in the [Differences in the Development Environments](devenv-differences.md#Pages) topic.
-
 
 ## Types of Actions  
 Each page has a different set of actions depending on the page type, and the processes that the page supports. In order to create the appropriate set of actions for a particular page, you should have a good understanding of your customer's business processes.  
@@ -107,6 +106,43 @@ Promoted actions are actions that are set up on the Actions, Navigate, or Report
 The Home menu is always displayed first so promoted actions provide quick access to common tasks, because users do not have to browse through a menu to access them. You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. For more information, see [Promoted Property](properties/devenv-promoted-property.md).
 -->
 
+## Grouping Actions in Sub-Menus
+
+Within the different areas, you can create sub-menus to a group of actions and improve navigation. You create a sub-menu by adding a `group()` control, as shown in the following example:  
+
+```
+actions
+{
+    area(Report)
+    {
+        action(Report 1)
+        {
+            RunObject = report "Report1";
+        }
+
+        // Adds a sub-menu called "Group1" to the Report menu. 
+        group(Group1)
+        {
+            // Adds the action "Report 2" to the My Label sub-menu. 
+            action(Action2)
+            {
+                RunObject = report "Report2";
+            }
+            // Adds a sub-menu called "Group2" to the Group1 sub-menu. 
+            group(Group2)
+            {
+                // Adds the action "Report 3" to the Group1 sub-menu. 
+                action(Action3)
+                {
+                    RunObject = report "Report3";
+                }
+            }
+        }
+    }
+}
+```
+> [!NOTE]
+> Prior to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2019 Wave 2, in the client, sub-menus were automatically placed before single actions on the same level. This means, for example, group **Group2** appears before the action **Report 2**.  
 
 ## Actions at runtime  
  An action can trigger code to run, such as posting a document or otherwise modifying a record in a table. When a user chooses an action, one of the following pieces of logic will happen in addition to the code that the action itself triggers:  

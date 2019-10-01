@@ -3,7 +3,7 @@ title: Designing List Pages for Business Central
 description: "Provides and overview of List page design"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -107,7 +107,7 @@ Only promoted actions will display on mobile devices, so make sure you promote t
 
 ### Configure actions to display in shortcut menu on rows
 
-Using the [Scope](properties/devenv-scope-property.md) property, configure actions to display in the shortcut menu that is available on each row. You typically do this for common actions that relate to records in the list, such as the **Line Comments** action. This gives users a more direct way to invoke actions that relate to the selected row or line.
+Using the [Scope (Action)](properties/devenv-scope-action-property.md) property, configure actions to display in the shortcut menu that is available on each row. You typically do this for common actions that relate to records in the list, such as the **Line Comments** action. This gives users a more direct way to invoke actions that relate to the selected row or line.
 
 ### Configure the gesture for actions
 

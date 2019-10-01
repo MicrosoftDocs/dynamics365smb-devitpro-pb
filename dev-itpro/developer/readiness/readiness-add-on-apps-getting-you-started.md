@@ -3,7 +3,7 @@ title: "Add-On Apps - Getting You Started"
 description: "Getting you started with Microsoft Dynamics 365 Business Central Add-On Apps on AppSource"
 author: v-liober
 ms.custom: na
-ms.date: 06/07/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -57,9 +57,9 @@ Access to PSBC is provided by having an active:
 - Partner Registration Agreement (PRA) if you are a non-selling partner.
 
 The relevant contract can be requested through your local Regional Operations Center (ROC) Contracts and Agreements Team below:
-- mbscon@microsoft.com : If you are based in Europe, the Middle East, or Africa.
-- mbsagree@microsoft.com : If you are based in the Americas.
-- mbslques@microsoft.com : If you are based in the Asia Pacific region.
+- [mbscon@microsoft.com](mailto:mbscon@microsoft.com): If you are based in Europe, the Middle East, or Africa.
+- [mbsagree@microsoft.com](mailto:mbsagree@microsoft.com): If you are based in the Americas.
+- [mbslques@microsoft.com](mailto:mbslques@microsoft.com): If you are based in the Asia Pacific region.
 
 ## Object Ranges
 
@@ -76,7 +76,7 @@ Today you can implement apps developed in this range both on-premises, partner h
 This object range is free of charge, the only requirement on this range is that your objects can be AL only.   
 You can request both object ranges [here](https://mbs.microsoft.com/partnersource/global/partner-essentials/partner-strategy/365businesscentralrequestuniqueobjectrange).
 
-You will have to make a choice which object range is best for you. Some partners desire to have 1 product line which can be implemented everywhere, others want to build a new SAASified app separate from their legacy solutions.
+You will have to make a choice which object range is best for you. Some partners desire to have 1 product line which can be implemented everywhere, others want to build a new SaaSified app separate from their legacy solutions.
 
 
 ## Developer account
@@ -158,20 +158,21 @@ As the final step, to complete registration, click ‘GO TO DASHBOARD’.
 
 If you DO want to add coworkers, please follow the 5 steps below:
 1.	Log on to Microsoft Collaborate with your Global Administrator account on [https://aka.ms/Collaborate](https://aka.ms/Collaborate).
-2.	Click on the ‘Gear’ Icon on the top right corner of the page and then on ‘Account Settings’ as shown on the image below.
+2. Click on the ‘Gear’ Icon on the top right corner of the page and then on ‘Account Settings’ as shown on the image below.
 
-3.	Click on ‘Users’ under ‘Settings’ in the grey panel on the left-hand side of the page. The following image will appear.
+3. Click on ‘Users’ under ‘Settings’ in the grey panel on the left-hand side of the page. The following image will appear.
 
-4.	Click the grey ‘ADD USERS’ button and leave the default choice to ‘Add existing users’ as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey ‘ADD SELECTED’ button (see image below).
+4. Click the grey ‘ADD USERS’ button and leave the default choice to ‘Add existing users’ as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey ‘ADD SELECTED’ button (see image below).
 
-5.	You have now successfully added your coworker to Collaborate. The added users will appear in your list of users and will now be able to log on to Microsoft Collaborate using the following link:
+5. You have now successfully added your coworker to Collaborate. The added users will appear in your list of users and will now be able to log on to Microsoft Collaborate using the following link:
 [https://aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 *Getting access to the available builds and engagements*
 
-1.	Register on [Microsoft Collaborate](https://aka.ms/Collaborate) by using your AAD Global Admin account (as described in detail above).
-2.	Once you have successfully registered (and added coworkers) on  Microsoft Collaborate, your company’s Azure Active Directory (AAD) global administrator should send us an email to complete the on-boarding [Dynamics 365 Business Central Programs](mailto: Dyn365BEP@microsoft.com). We need to manually assign you to the right programs and engagements. Expect a response from us within 1-2 business days.
-3.	In this email to [Dynamics 365 Business Central Programs](mailto: Dyn365BEP@microsoft.com), please specify the following:
+1. Register on [Microsoft Collaborate](https://aka.ms/Collaborate) by using your AAD Global Admin account (as described in detail above).
+2. Once you have successfully registered (and added coworkers) on  Microsoft Collaborate, your company’s Azure Active Directory (AAD) global administrator should send us an email to complete the on-boarding [Dynamics 365 Business Central Programs](mailto: Dyn365BEP@microsoft.com). We need to manually assign you to the right programs and engagements. Expect a response from us within 1-2 business days.
+3. In this email to [Dynamics 365 Business Central Programs](mailto: Dyn365BEP@microsoft.com), please specify the following:
+
 - Your ‘Publisher Display Name’
 - The name(s) of the people you have added to Microsoft Collaborate
 - The email address(es) of the people you have added to Microsoft Collaborate (No personal email addresses please)
@@ -184,6 +185,7 @@ To list your app, you need to register it on Microsoft AppSource.
 - List your app here: [https://appsource.microsoft.com/en-us/partners/list-an-app](https://appsource.microsoft.com/en-us/partners/list-an-app) 
 
 When listing your app you need to specify the following:
+
 - Contact Info (First name, Last name, Email)
 - Company Info (Company name, Company website, MPN Id)
 - App Info: Type of offer you intend to publish (cf. app or consulting service) 
@@ -198,19 +200,20 @@ Upon listing your app on AppSource you will receive an email from us that outlin
 Now that you have completed step 1 and 2 (cf. setting up your accounts and listing your offer on AppSource) you can now proceed to step 3 and 4 (cf. Developing your offer initiating the validation and publication process). Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
 
 ## Useful resources
-## Guidelines and general information
+
+### Guidelines and general information
 
 Find general information on Add-on apps for Business Central here: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo).
 
-## Monthly “Ready to Go” Office Hours call
+### Monthly “Ready to Go” Office Hours call
 
 “Ready to Go” Office Hours is a monthly call that takes place the second Tuesday of every month. The call is structured as an FAQ session, where a team of our different experts will be present to answer any technical or marketing related questions that you may have in relation to bringing your app into AppSource. Sign up for the individual calls that you want to participate in here:
 [aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours). 
 
-## GitHub
+### GitHub
 Use the GitHub forum to ask, or search, the community and Microsoft experts for questions respectively. Go to: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues) now and start asking away.
 
-## Follow “Ready to Go” engagements on social media
+### Follow “Ready to Go” engagements on social media
 
 Get insights on what’s happening with Business Central – follow us on Twitter and LinkedIn.
 

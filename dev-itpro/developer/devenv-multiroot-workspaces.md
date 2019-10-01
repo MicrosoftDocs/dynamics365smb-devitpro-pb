@@ -3,18 +3,14 @@ title: "Working with multiple AL project folders within one workspace"
 description: "Handling solutions in the AL language that contain multiple projects."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
-
- 
 
 # Working with multiple AL project folders within one workspace
 Visual Studio Code offers the multi-root workspace feature which enables grouping different project folders into one workspace. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality and allows you to work with multiple AL folders including roots and projects within one workspace. 
@@ -35,9 +31,10 @@ It is not mandatory to use only AL-based roots. Different kinds of projects can 
 - `al.packageCachePath`  
 - `al.enableCodeAnalysis`
 
-The `al.packageCachePath` setting allows you to specify the path to a folder that will act as the cache for the symbol files used by your project. It can be specified in the **User Settings**, **Workspace Settings**, or **Project Settings**. The `al.enableCodeAnalysis` setting allows you to enable the execution of code analyzers on your project. It can likewise be specified in the **User Settings**, **Workspace Settings**, or **Project Settings**.
+The `al.packageCachePath` setting allows you to specify the path to a folder that will act as the cache for the symbol files used by your project. It can be specified in the **User Settings**, **Workspace Settings**, or **Project Settings**. The `al.enableCodeAnalysis` setting allows you to enable the execution of code analyzers on your project. It can likewise be specified in the **User Settings**, **Workspace Settings**, or **Project Settings**. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 
 ## See also 
-[Development in AL](devenv-dev-overview.md)   
-[Best Practices for AL](../compliance/apptest-bestpracticesforalcode.md)
+[Development in AL](devenv-dev-overview.md)  
+[Best Practices for AL](../compliance/apptest-bestpracticesforalcode.md)  
+[Working with Multiple Projects and Project References](devenv-work-workspace-projects-references.md)  

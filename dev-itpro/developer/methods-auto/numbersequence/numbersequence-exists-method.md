@@ -37,7 +37,15 @@ Returns true if the number sequence exists.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+The following example checks whether the number sequence `MyNumberSequence` exists, and if so, it deletes it.
+ 
+```
+if NumberSequence.Exists('MyNumberSequence', false) then
+    NumberSequence.Delete('MyNumberSequence', false);
+```
 ## See Also
 [NumberSequence Data Type](numbersequence-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

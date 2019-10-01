@@ -40,7 +40,26 @@ The current value of the FilterPageBuilder UI caption.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+```  
+var
+    varFilterPageBuilder: FilterPageBuilder;
+    Customer: Record Customer;
+    Item: Record Item;
+    varDateItem: Text[30];
+begin
+    varFilterPageBuilder.AddRecord('Item Table', Item);  
+    varFilterPageBuilder.Addfield('Item Table', Item."No.", '>100');  
+    varFilterPageBuilder.PageCaption := 'Item Filter Page';
+    varFilterPageBuilder.RunModal;  
+    Item.SetView(varFilterPageBuilder.Getview('Item Table')); 
+end;
+```
+
 ## See Also
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
+[Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

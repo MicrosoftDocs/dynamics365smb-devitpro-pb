@@ -3,7 +3,7 @@ title: "Step 3 - How to Develop Your App"
 description: ""
 author: 
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"

@@ -4,7 +4,7 @@ description: "This topic lists properties that apply to views."
 
 author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,11 @@ ms.author: solsen
 ---
 
 # View Properties
-The following topic lists properties that apply to [Views](../devenv-views.md).
+The following topic lists properties that apply to [Views](../devenv-views.md) specifically.
 
 - [Filters](devenv-filters-property.md)  
 - [OrderBy](devenv-orderby-property.md)
+- [SharedLayout](devenv-sharedlayout-property.md)
 
 ## See also
 [Codeunit Properties](devenv-codeunit-properties.md)  

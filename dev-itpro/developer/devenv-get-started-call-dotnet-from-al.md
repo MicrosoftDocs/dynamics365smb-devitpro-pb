@@ -3,7 +3,7 @@ title: "Getting started with Microsoft .NET Interoperability from AL"
 description: "Description of the process of referencing and using .NET types"
 author: solsen
 ms.custom: na
-ms.date: 08/07/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -106,5 +106,6 @@ The server will search the global assembly cache (GAC), the **Add-ins** folder, 
 [Getting Started with AL](devenv-get-started.md)  
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)        
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)     
-[Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)
+[Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 
