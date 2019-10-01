@@ -2,7 +2,7 @@
 title: "RunPageBackgroundTask Method"
 ms.author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 09/16/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
