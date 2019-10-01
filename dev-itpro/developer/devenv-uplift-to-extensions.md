@@ -27,7 +27,7 @@ For general information about install code and upgrade code, see [Writing Extens
 
 ## Mark the custom field in base application table as being removed
 
-In this task, you will mark the custom field in the base application table as being removed. This will not remove field or data from the database table. However, it will prevent others from referencing the custom field in code going forward, unless referenced from an upgrade codeunit
+In this task, you will mark the custom field in the base application table as being removed. This will not remove field or data from the database table. However, it will prevent others from referencing the custom field in code going forward, unless referenced from an upgrade codeunit.
 
 1. In the app.json, increase the `version` of the base application.
         
@@ -54,7 +54,7 @@ In this step, you will create a table extension object that includes a field tha
 1. Create an AL project in Visual Studio Code and add a dependency on the base application.
 2. Create a table extension object that extends the base table object and add a field to the table extension object that will replace the custom field in the base application table.
 
-    Give the field the same data type and length (if any) as the custom field in the base table you want to replace. You will have to assign the field a different ID than the custom field. This example adds a field named `ABC - ShoeSize` (for example, where `ABC` is your approved ISV prefix) and of the data type `integer`.
+    Give the field the same data type and length (if any) as the custom field in the base table you want to replace. You will have to assign the field a different ID than the custom field. This example adds a field named `ABC - ShoeSize` (for example, where `ABC` is your approved ISV prefix) and has the data type `integer`.
     
     ```
     tableextension 50101 CustTableExt extends Customer
@@ -128,7 +128,7 @@ In this example, you will use the [VALIDATE method](methods-auto/record/record-v
         end;
     }
     ```
-3. Add a local method to the codeunit that iterates through the records of the **Customer** table and replicates data to the new field (**Shoesize2**). 
+3. Add a local method to the codeunit that iterates through the records of the **Customer** table and replicates data to the new field (**ABC - ShoeSize**). 
 
     ```
     local procedure HandleFreshInstall();
