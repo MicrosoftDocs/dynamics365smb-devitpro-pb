@@ -37,7 +37,8 @@ Identifying long running SQL queries on a tenant database can be a good starting
 
 ### Enable sending telemetry to Application Insights
 
-Note: This process requires a restart to the environment and is triggered automatically after step 5 below. Plan to do this during non-working hours to avoid disruptions.
+> [!IMPORTANT]  
+> This process requires a restart to the environment, which is triggered automatically after step 5. Plan to do this during non-working hours to avoid disruptions.
 
 1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).
 2. Create an Application Insights resource in Azure.
