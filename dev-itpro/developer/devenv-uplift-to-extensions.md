@@ -38,7 +38,7 @@ In this task, you will mark the custom field in the base application table as be
     ```
     field(9008;"ShoeSize"; Integer)
     {
-        DataClassification = ToBeClassified;
+        DataClassification = CustomerContent;
         ObsoleteState = Removed;
         
     }
@@ -63,7 +63,7 @@ In this step, you will create a table extension object that includes a field tha
         {
             field(9009; "ABC – ShoeSize"; Integer)
             {
-                DataClassification = ToBeClassified;
+                DataClassification = CustomerContent;
             }
         }
 
