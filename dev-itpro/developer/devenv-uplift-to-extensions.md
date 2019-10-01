@@ -16,13 +16,13 @@ ms.author: jswymer
 
 This article describes how to move a custom field, which was originally added directly to a base application table object, to an extension and migrate the data from the base application table to the table that is added by a table extension object.
 
-
-
 To help explain the process, a simple example is used throughout this article. In this example, an integer data type field, named **Shoesize**, was added the original **Customer** table object and **Customer Card** page object of the base application.
 
 ## Migrating data
 
-The data migration can be handled by writing either installation code or upgrade code, depending on whether you include the table extension object and other related objects in a new extension or in an existing extension, which has been previously published and installed. The example used in this article uses a new extension, so the data migrating code is written in the installation code of the new extension. For general information about install code and upgrade code, see [Writing Extension Install Code](devenv-extension-install-code.md) and [Upgrading Extensions](devenv-upgrading-extensions.md).
+The data migration can be handled by writing either install code or upgrade code, depending on whether the table extension object (and other related objects) is added by a new extension or existing extension. If the table extensions object is included in a new extension, then you write install code. If the table extension object is added to an existing extension, which has been previously published and installed, then you write upgrade code. The example used in this article adds the table extension object in a new extension, so install code is used.
+
+For general information about install code and upgrade code, see [Writing Extension Install Code](devenv-extension-install-code.md) and [Upgrading Extensions](devenv-upgrading-extensions.md).
 
 
 ## Create a table extension object that adds a field to the base application table object
