@@ -34,6 +34,7 @@ The SystemId of the record to retrieve.
 ## Return Value
 *RecordExists*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+
 **true** if the record exists; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
