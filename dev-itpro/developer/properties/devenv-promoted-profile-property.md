@@ -17,6 +17,9 @@ For profiles the **Promoted** property specifies whether or not the profile is a
   
 - Profiles
   
+## Property Value  
+**True** if the profile is available from the **Role Explorer** in the UI; otherwise, **false**. The default is **false**.  
+
 ## Example
 The following code illustrates how to set the **Promoted** property.
  
@@ -32,6 +35,7 @@ profile MyProfile
     Customizations = MyCustomization;
 } 
 ```
+
 ## See Also  
 
 [Properties](devenv-properties.md)

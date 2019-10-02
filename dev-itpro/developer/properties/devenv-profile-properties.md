@@ -17,8 +17,8 @@ ms.author: solsen
 The following topic lists properties that apply to [Profiles](../devenv-profile-object.md) specifically.
 
 - [ProfileDescription](devenv-profiledescription-property.md)  
-- [Enabled](devenv-enabled-property.md)  
-- [Promoted](devenv-promoted-property.md)
+- [Enabled](devenv-enabled-profile-property.md)  
+- [Promoted](devenv-promoted-profile-property.md)
 
 ## See also
 [Codeunit Properties](devenv-codeunit-properties.md)  
