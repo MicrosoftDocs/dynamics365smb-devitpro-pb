@@ -3,7 +3,7 @@ title: Inspecting Pages
 description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,6 +41,9 @@ In short, the page inspection pane shows the information for the main page or su
 
 > [!NOTE]
 > If you do not see all details described below, you might not have the required permissions. For more information, see [Controlling Access to Page Inspection Details](https://docs.microsoft.com/dynamics365/business-central/across-inspect-page?#controlling-access-to-page-inspection).
+
+> [!TIP]
+> To copy the values of a field or entity under one of the tabs to the clip board, select the field or entity and press Ctrl+C.
 
 ### [Page](#tab/page)
 

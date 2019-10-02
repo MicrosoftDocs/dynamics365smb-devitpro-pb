@@ -3,7 +3,7 @@ author: jswymer
 title: "Writing extensions installation code"
 description: "Describes how to add code to run to initialize data when an extension is installed."
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,7 +52,7 @@ codeunit [ID] [NAME]
 }
 ```
 > [!TIP]
-> Use the shortcuts `tcodunit` and `ttrigger` to create the basic structure for the codeunit and trigger.
+> Use the shortcuts `tcodeunit` and `ttrigger` to create the basic structure for the codeunit and trigger.
 
 ### Get information about an extension
 Each extension version has a set of properties that contain information about the extension, including: AppVersion, DataVersion, Dependencies, Id, Name, and Publisher. This information can be useful when installing. For example, one of the more important properties is the `DataVersion` property, which tells you what version of data you are dealing with. These properties are encapsulated in a `ModuleInfo` data type. You can access these properties by through the `NAVApp.GetCurrentModuleInfo()` and `NAVAPP.GetModuleInfo()` methods.

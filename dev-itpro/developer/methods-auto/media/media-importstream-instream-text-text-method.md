@@ -2,7 +2,7 @@
 title: "ImportStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Adds a media type (MIME), such as jpeg image, from an InStream object to a Media
 
 ## Syntax
 ```
-[ID := ]  Media.ImportStream(Stream: InStream, Description: Text, [MimeType: Text])
+[ID := ]  Media.ImportStream(Stream: InStream, Description: Text [, MimeType: Text])
 ```
 ## Parameters
 *Media*  

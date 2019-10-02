@@ -2,7 +2,7 @@
 title: "NavApp Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ The following methods are available on the NavApp data type.
 |-----------|-----------|
 |[GetArchiveRecordRef(Integer, var RecordRef)](navapp-getarchiverecordref-method.md)|Returns a RecordRef for the specified table.|
 |[GetArchiveVersion()](navapp-getarchiveversion-method.md)|Returns the version of the extension that the specified table is part of.|
-|[RestoreArchiveData(Integer, [Boolean])](navapp-restorearchivedata-method.md)|Restores archived data for a specified table of an extension during installation.|
+|[RestoreArchiveData(Integer [, Boolean])](navapp-restorearchivedata-method.md)|Restores archived data for a specified table of an extension during installation.|
 |[DeleteArchiveData(Integer)](navapp-deletearchivedata-method.md)|Deletes the archived data for a specified table of an extension during installation.|
 |[LoadPackageData(Integer)](navapp-loadpackagedata-method.md)|Loads default, or starting, table data into the specified table of an extension during installation.|
 |[IsInstalling()](navapp-isinstalling-method.md)|Returns **true** if the application that contains the AL object that is currently running is being installed, otherwise it returns **false**.|

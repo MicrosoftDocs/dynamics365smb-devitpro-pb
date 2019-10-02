@@ -3,16 +3,17 @@ title: "The “Ready to Go” Online learning for developers, architects, and en
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # The “Ready to Go” Online Learning for Developers, Architects, and Engineers
-Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md).
+Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md). Use the tabs below to view training available based on proficiency level.
 
-## Getting started
+# [**Getting Started**](#tab/gettingstarted)
+<!-- ## Getting started -->
 
 |Course description|Go to|
 |----|-----|
@@ -31,8 +32,8 @@ Get an overview of the entire "Ready to Go" online learning catalog [here](readi
 |**Extending the Base App** The base app of Microsoft Dynamics 365 Business Central is extended by leveraging the inbuilt event concept. Get introduced to the basics of subscribing to events in Visual Studio Code AL, and learn how to use the event recorder to determine which integration event to hook into if you want to enhance existing business logic in the base app. This video will show you how to extend the posting routine by evaluating the results of the event recorder.|[Watch](https://go.microsoft.com/fwlink/?linkid=2091016)|
 |**Microsoft Dynamics 365 Business Central User Management in CSP** As a reseller, Business Central-related CSP administration belongs to your recurring tasks. Learn more about how to set up a new tenant, how to manage their access rights, how to set up full users, team members, IT admins and accountants. In short: This video will show you how to smoothly run your daily business within the admin center portal.|[Watch](https://go.microsoft.com/fwlink/?linkid=2091402)|
 
-
-## Proficient knowledge
+# [**Proficient Knowledge**](#tab/proficientknowledge)
+<!-- ## Proficient knowledge -->
 
 |Course description|Go to|
 |----|-----|
@@ -48,7 +49,8 @@ Get an overview of the entire "Ready to Go" online learning catalog [here](readi
 |**Using Intelligent Cloud Sync as a Data Migration Mechanism** Intelligent Cloud Sync has been introduced in 2018 to enable a cloud companion tenant to on-prem implementations so that they can make use of the great advantages of artificial intelligence and other SaaS tools to enhance business insights as well. But Intelligent Cloud Sync can do more than just that. It is also an ideal mechanism to migrate your data from a traditional on-prem installation to your brand-new operative cloud tentant. Learn how to quickly and most efficiently migrate data from an existing implementation to Microsoft Dynamics 365 Business Central.|[Watch](https://go.microsoft.com/fwlink/?linkid=2091212)|
 |**Connecting Power Apps & Flow to Microsoft Dynamics 365 Business Central** The Power Platform is a great addition to the Microsoft Dynamics 365 SaaS stack. This video will introduce the general concepts of Power Apps and Microsoft Flow. Learn how to connect these user-friendly tools to your Business Central product or implementation.|[Watch](https://go.microsoft.com/fwlink/?linkid=2091213)|
 
-## For experts
+# [**For Experts**](#tab/forexperts)
+<!-- ## For experts -->
 
 |Course description|Go to|
 |----|-----|

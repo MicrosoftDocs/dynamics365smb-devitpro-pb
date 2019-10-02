@@ -2,7 +2,7 @@
 title: "ImportFile Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Adds a media, such as a JPEG image, to the MediaSet data type field of a record 
 
 ## Syntax
 ```
-[ID := ]  MediaSet.ImportFile(Filename: String, Description: String, [MimeType: String])
+[ID := ]  MediaSet.ImportFile(Filename: String, Description: String [, MimeType: String])
 ```
 ## Parameters
 *MediaSet*  

@@ -2,7 +2,7 @@
 title: "Open Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Opens a dialog window.
 
 ## Syntax
 ```
- Dialog.Open(String: String, [var Variable1: Any,...])
+ Dialog.Open(String: String [, var Variable1: Any,...])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  
@@ -30,7 +30,7 @@ An instance of the [Dialog](dialog-data-type.md) data type.
 
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
-This string contains the text that you want to display in the window. Use a backslash (\) to start a new line. Use number signs (#) to insert variable values into the string. Place the number signs where you want to substitute the variable value. Place a number in the part of the string where a variable value will be substituted (for example, #1####) to be able to reference this field for updating. If you use @ characters instead of # characters, then the variable value is used as a percentage and both the percentage and a progress indicator are displayed. The percentage value that is displayed is the percentage of the variable value from 0 to 9999. The number of # or @ characters in the string indicates the length of the field or progress indicator. You can update the fields using the [UPDATE method (Dialog)](../../methods-auto/dialog/dialog-update-method.md) or by letting the user edit the values.
+This string contains the text that you want to display in the window. Use a backslash (\) to start a new line. Use number signs (#) to insert variable values into the string. Place the number signs where you want to substitute the variable value. Place a number in the part of the string where a variable value will be substituted (for example, #1####) to be able to reference this field for updating.  The number of # characters in the string indicates the length of the field. You can update the fields using the UPDATE method (Dialog) or by letting the user edit the values.
           
 *Variable1*  
 &emsp;Type: [Any](../any/any-data-type.md)  

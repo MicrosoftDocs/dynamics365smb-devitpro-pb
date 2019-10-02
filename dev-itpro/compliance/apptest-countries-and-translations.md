@@ -3,7 +3,7 @@ title: "Countries and Translations supported"
 description: "Describing a matrix of supported countries with their translations."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"

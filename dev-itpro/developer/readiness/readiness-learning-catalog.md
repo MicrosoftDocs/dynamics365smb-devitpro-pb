@@ -6,7 +6,7 @@ experiment_id: "81ba5f65-59fb-4d"
 title: Ready to Go Online Learning Catalog
 description: 
 ms.topic: hub-page
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -23,18 +23,18 @@ ms.author: solsen
                     <a href="#products1" data-linktype="self-bookmark"></a>
                     <ul id="products1" class="cardsC cols cols3">
                         <li>
-                            <a href="readiness-learning-dev-archs-engineers.md" title="Materials for developers, architects, and engineers" data-linktype="relative-path">
+                            <a href="readiness-learning-dev-archs-engineers.md" title="Developers, architects, and engineers" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage_blue.png" src="../media/PreviewImage_blue.png" alt="" data-linktype="relative-path">
+                                                <div class="cardImage bgdAccent1">
+                                                    <img data-scaleimage="../media/01_developers_architects_engineers.png" src="../media/01_developers_architects_engineers.png" alt="" data-linktype="relative-path">                                                 
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Materials for developers, architects, and engineers</h3>
-						    <p>The “Ready to Go” online learning for developers, architects, and engineers.</p>
+                                                <h3>Developers, architects, and engineers</h3>
+						    <p>Information about Visual Studio Code, AL, and how to extend the Base Application can be found here amongst other technical topics. </p>
                                             </div>
                                         </div>
                                     </div>
@@ -42,18 +42,18 @@ ms.author: solsen
                             </a>
                         </li>
                         <li>
-                            <a href="readiness-learning-app-consultants.md" title="Materials for application consultants" data-linktype="relative-path">
+                            <a href="readiness-learning-app-consultants.md" title="Application consultants" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
+                                                <div class="cardImage bgdAccent1">
+                                                    <img data-scaleimage="../media/02_application_consultants.png" src="../media/02_application_consultants.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Materials for application consultants</h3>
-												<p>The “Ready to Go” online learning for application consultants.</p>
+                                                <h3>Application consultants</h3>
+												<p>Learn more about how to create financial reports, use cost accounting, or extend the posting functionality.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -61,18 +61,18 @@ ms.author: solsen
                             </a>
                         </li>
                         <li>
-                            <a href="readiness-learning-presales.md" title="Materials for presales roles" data-linktype="relative-path">
+                            <a href="readiness-learning-presales.md" title="Pre-sales roles" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage_blue.png" src="../media/PreviewImage_blue.png" alt="" data-linktype="relative-path">
+                                                <div class="cardImage bgdAccent1">
+                                                    <img data-scaleimage="../media/03_pre-sales_roles.png" src="../media/03_pre-sales_roles.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Materials for pre-sales roles</h3>
-												<p>The “Ready to Go” online learning for pre-sales.</p>
+                                                <h3>Pre-sales roles</h3>
+												<p>Find out how to do compelling prospect conversations and what kind of demo videos we have available.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -80,18 +80,18 @@ ms.author: solsen
                             </a>
                         </li> 
                         <li>
-                            <a href="readiness-learning-sales.md" title="Materials for sales roles" data-linktype="relative-path">
+                            <a href="readiness-learning-sales.md" title="Sales roles" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
+                                                <div class="cardImage bgdAccent1">
+                                                    <img data-scaleimage="../media/04_sales_roles.png" src="../media/04_sales_roles.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Materials for sales roles</h3>
-												<p>The “Ready to Go” online learning for sales.</p>
+                                                <h3>Sales roles</h3>
+												<p>Search customer stories and get information about the latest Business Central capabilities here.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -99,18 +99,18 @@ ms.author: solsen
                             </a>
                         </li> 
                         <li>
-                            <a href="readiness-learning-marketeers.md" title="Materials for marketeers" data-linktype="relative-path">
+                            <a href="readiness-learning-marketeers.md" title="Marketeers" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage_blue.png" src="../media/PreviewImage_blue.png" alt="" data-linktype="relative-path">
+                                                <div class="cardImage bgdAccent1">
+                                                    <img data-scaleimage="../media/05_marketeers.png" src="../media/05_marketeers.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Materials for marketeers</h3>
-												<p>The “Ready to Go” online learning for marketeers.</p>
+                                                <h3>Marketeers</h3>
+												<p>Get more information about marketing in a cloud world and our core marketing bill of materials</p>
                                             </div>
                                         </div>
                                     </div>
@@ -118,18 +118,18 @@ ms.author: solsen
                             </a>
                         </li> 
                         <li>
-                            <a href="readiness-learning-bus-decision-makers.md" title="Materials for business decision makers" data-linktype="relative-path">
+                            <a href="readiness-learning-bus-decision-makers.md" title="Business decision makers" data-linktype="relative-path">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
+                                                <div class="cardImage bgdAccent1">
+                                                    <img data-scaleimage="../media/06_business_decision_makers.png" src="../media/06_business_decision_makers.png" alt="" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Materials for business decision makers</h3>
-												<p>The “Ready to Go” online learning for business decision makers.</p>
+                                                <h3>Business decision makers</h3>
+												<p>Want to know more about the vertical go-to-market strategy or how to build a profitable cloud practice?</p>
                                             </div>
                                         </div>
                                     </div>

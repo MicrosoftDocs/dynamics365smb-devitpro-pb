@@ -1,7 +1,7 @@
 ---
 title: "Codeunit Properties"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ This topic lists properties that apply to the Codeunit object, variables, text c
 
 |Property Name|Applies to|
 |-------------|-----------|  
+|[Access Property](devenv-access-property.md)|<ul><li>Codeunit objects</li></ul>|
 |[ConstValue Property](devenv-constvalue-property.md)|<ul><li>Global Text Constants</li><li>AL Locals Text Constants</li></ul>|
 |[ConstValueML Property](devenv-constvalueml-property.md)|<ul><li>Global Text Constants</li><li>AL Locals Text Constants</li></ul>|
 |[Dimensions Property](devenv-dimensions-property.md)|<ul><li>Global Variables</li><li>AL Locals Variables</li><li>AL Locals Parameters</li><li>AL Locals Return Values</li></ul>|

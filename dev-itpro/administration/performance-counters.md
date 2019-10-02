@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Dynamics 365 Business Central Performance Counters"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ These counters pertain to sessions from the clients, NAS, and web services, to t
 
 |  Counter  |  [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]  |
 |-----------|-----------------------------------------------------------------------|
+|\# Active child sessions|Number of active child sessions on the [!INCLUDE[server](../developer/includes/server.md)] instance. An active child session is a connection to the server instance from a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client, such as the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] or [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], NAS, or Web services. A child session is created by a background task that is run asynchronously on a page. For more information, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).|
 |\# Active sessions|Number of active sessions on the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br /> An active session is a connection to the [!INCLUDE[server](../developer/includes/server.md)] instance from a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client, such as the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] or [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], and Web services (OData and SOAP).|
 |Server operations/sec|Number of operations that have started on the [!INCLUDE[server](../developer/includes/server.md)] per second.<br /><br /> An operation is a call to the [!INCLUDE[server](../developer/includes/server.md)] instance from a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects.<br /><br />Note: OData and SOAP requests are not included.|
 |Average server operation time \(ms\)|Average duration of server operations in milliseconds.|
@@ -120,4 +121,3 @@ For more information about task scheduler, see [Task Scheduler](../developer/dev
  [Set up Performance Counters in Windows Performance Monitor](set-up-performance-counters-performance-monitor.md)   
  [Create a Data Collector Set From Template](monitor-create-data-collector-set-from-template.md)   
  [Optimizing SQL Server Performance with Business Central](Optimize-SQL-Server-Performance.md)   
-

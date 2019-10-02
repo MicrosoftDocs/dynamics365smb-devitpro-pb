@@ -3,7 +3,7 @@ title: "Be careful about UI for web services"
 description: "Describing the steps you must go through to successfully submit your app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

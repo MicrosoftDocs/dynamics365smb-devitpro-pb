@@ -1,27 +1,25 @@
 ---
 title: "RunPageBackgroundTask Method"
-ms.author: solsen
+ms.author: jswymer
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: jswymer
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RunPageBackgroundTask Method
-Runs the page background task codeunit in the current session. Note that no triggers are invoked at this point.
+Runs the page background task codeunit in the current session. Note that by default, no triggers are invoked at this point.
 
-> [!NOTE]
-> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```
-Results :=   TestPage.RunPageBackgroundTask(CodeunitId: Integer, [var Parameters: Dictionary of [Text, Text]])
+Results :=   TestPage.RunPageBackgroundTask(CodeunitId: Integer [, var Parameters: Dictionary of [Text, Text]] [, RunCompletionTriggers: Boolean])
 ```
 ## Parameters
 *TestPage*  
@@ -34,11 +32,14 @@ Specifies the ID of the codeunit to run.
 *Parameters*  
 &emsp;Type: [Dictionary of [Text, Text]](../dictionary/dictionary-data-type.md)  
 Specifies a collection of keys and values that are passed to the OnRun trigger of the codeunit that runs when the page background task session is started.  
+*RunCompletionTriggers*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+Runs the completion triggers after the completion of the code unit. Default value is **false**.  
 
 
 ## Return Value
 *Results*  
-&emsp;Type: [Text](../text/text-data-type.md)  
+&emsp;Type: [Dictionary of [Text, Text]](../dictionary/dictionary-data-type.md)  
 The dictionary of results for the page background task.  
 
 

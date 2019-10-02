@@ -2,7 +2,7 @@
 title: "SetEncrypted Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Encrypts and sets the value associated with the specified key. The input string 
 
 ## Syntax
 ```
-[Ok := ]  IsolatedStorage.SetEncrypted(Key: String, Value: String, [DataScope: DataScope])
+[Ok := ]  IsolatedStorage.SetEncrypted(Key: String, Value: String [, DataScope: DataScope])
 ```
 ## Parameters
 *Key*  

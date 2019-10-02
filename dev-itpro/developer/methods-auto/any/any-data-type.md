@@ -2,7 +2,7 @@
 title: "Any Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,5 +26,6 @@ This data type can be substituted by any other data type.
 
 
 ## See Also  
+
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

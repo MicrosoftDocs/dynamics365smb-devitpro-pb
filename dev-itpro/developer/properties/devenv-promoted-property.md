@@ -1,7 +1,7 @@
 ---
 title: "Promoted Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,11 +13,12 @@ author: SusanneWindfeldPedersen
 ---
 
 # Promoted Property
-Sets the value that indicates whether the selected action is promoted, which means that it is elevated to a promoted category in the action bar, as well as the group where is it defined.  
+Sets the value that indicates whether the selected action is promoted, which means that it is elevated to a promoted category in the action bar, as well as the group where is it defined. For profiles the **Promoted** property specifies whether or not the profile is available in the **Role Explorer**.
   
 ## Applies To  
   
 - Page actions  
+- Profiles
   
 ## Example
 The following code illustrates how to set the **Promoted** property.

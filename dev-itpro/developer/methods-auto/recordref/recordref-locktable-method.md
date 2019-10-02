@@ -2,7 +2,7 @@
 title: "LockTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Locks a table to protect it from write transactions that conflict with each othe
 
 ## Syntax
 ```
- RecordRef.LockTable([Wait: Boolean], [VersionCheck: Boolean])
+ RecordRef.LockTable([Wait: Boolean] [, VersionCheck: Boolean])
 ```
 ## Parameters
 *RecordRef*  
@@ -32,7 +32,7 @@ Specifies what to do if the table is already locked. If this parameter is true a
           
 *VersionCheck*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If this parameter is true, the version will be checked. If this parameter is false, blank, or not used, the version will not be checked.  
+If this parameter is true, the version of the RecordRef will be checked. If this parameter is false, blank, or not used, the version will not be checked.  
 
 
 

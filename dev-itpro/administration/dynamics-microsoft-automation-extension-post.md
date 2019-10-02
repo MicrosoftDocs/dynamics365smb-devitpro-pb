@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.author: solsen
 ---
 
@@ -54,7 +54,7 @@ If successful, this method returns a ```200 OK``` response code.
 
 Here is an example of the request.
 ```json
-POST https://api.businesscentral.dynamics.com/v1.0/api/microsoft/automation/beta/companies({companyId})/extensions({extensionId})/Microsoft.NAV.install
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/extensions({extensionId})/Microsoft.NAV.install
 ```
 
 ## See Also 

@@ -2,13 +2,13 @@
 title: Upgrade Application Code
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-manager: edupont
+author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Application Code in [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
@@ -67,14 +67,14 @@ To complete the tasks in this article, you will use various tools and components
 |    |  Tool/Component  |
 |----|------------------|
 | Old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version  |<ul><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li><li>[!INCLUDE[navnow](../developer/includes/navnow_md.md)] Development Shell</li></ul>|
-|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li> <li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li> </ul>|
+|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] ([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li> </ul>|
 
 #### [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] upgrade
 
 |    |  Tool/Component  |
 |----|------------------|
 | Old [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version  |<ul><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]</li></ul>|
-|New [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li> </ul>|
+|New [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li> </ul>|
 
 <!-- Get application version ans family of the old application
 

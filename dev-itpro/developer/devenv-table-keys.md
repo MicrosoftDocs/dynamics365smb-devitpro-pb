@@ -1,7 +1,7 @@
 ---
 title: "Table Keys"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,10 +43,13 @@ A key definition includes the [Unique](properties/devenv-unique-property.md) pro
 
 Like primary keys, you can create unique secondary keys that are comprised of multiple fields. In this case, it's the combination of the values in the secondary key that must be unique. For example, if you have a **Customer** table, you could create a unique key for the **Name**, **Address**, and **City** fields to make sure that there are no customers that have the same combination of values for these fields.
 
-Unlike primary keys, it is possible to define multiple unique secondary keys on a table.  
+Unlike primary keys, it is possible to define multiple unique secondary keys on a table. 
 
 > [!NOTE]  
 > The `Unique` property is not supported in table extension objects.
+
+### System keys
+There is always a unique secondary key on the **SystemId** field.
 
 ## Clustered and non-clustered keys
 
@@ -163,11 +166,15 @@ For a more information about the different key properties, see [Key Properties](
 When developing a new version of an extension, be aware of the following restrictions to avoid schema synchronization errors that prevent you from publishing the new version: 
 
 - Do not delete existing keys.
-- Do not add or remove fields, change the order of fields, or change properties of existing keys.
+- Do not add or remove fields, nor change their order.
+- Do not change properties of existing keys.
 - Do not add additional unique keys.
+- Do not add additional clustered keys.
+- Do not add keys that are fields of the base table.
 
 ## See Also
 
 [Tables Overview](devenv-tables-overview.md)  
 [Table Object](devenv-table-object.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
+[SystemId Field](devenv-table-object.md#systemid)  

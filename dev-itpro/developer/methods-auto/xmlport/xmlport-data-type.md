@@ -1,8 +1,8 @@
 ---
-title: "XMLport Data Type"
+title: "Xmlport Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,9 +22,9 @@ The following methods are available on the Xmlport data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Import(Integer, var InStream, [var Record])](xmlport-import-method.md)|Reads and parses an incoming XML data stream (XML document).|
-|[Export(Integer, var OutStream, [var Record])](xmlport-export-method.md)|Creates an XML data stream (XML document) and sends it to a chosen destination.|
-|[Run(Integer, [Boolean], [Boolean], [var Record])](xmlport-run-method.md)|Loads and executes the XmlPort that you specify.|
+|[Import(Integer, var InStream [, var Record])](xmlport-import-method.md)|Reads and parses an incoming XML data stream (XML document).|
+|[Export(Integer, var OutStream [, var Record])](xmlport-export-method.md)|Creates an XML data stream (XML document) and sends it to a chosen destination.|
+|[Run(Integer [, Boolean] [, Boolean] [, var Record])](xmlport-run-method.md)|Loads and executes the XmlPort that you specify.|
 
 The following methods are available on instances of the Xmlport data type.
 

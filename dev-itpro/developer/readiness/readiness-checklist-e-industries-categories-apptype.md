@@ -3,7 +3,7 @@ title: "Industries, Categories and App Type"
 description: "Guidelines on industries, categories and app type "
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -14,8 +14,8 @@ ms.author: v-liober
 
 | Listing details | Description | Requirements |
 |-----------------|--------------|-------------|
-| 3. **Industries**   | Choose the industries that your offer is best aligned to. If your offer relates to multiple industries you can choose a maximum of 2. *Example:* Industries *Distribution, Professional services*                                                                               | Recommended  |
-| 4. **Categories**   | Choose the categories that your offer caters to (max 3)    *Example:* Categories *Operations Supply Chain, Sales*                                                                                                                                                          | Required     |
+| 3. **Industries**   | Choose the industries that your offer is best aligned to. If your offer relates to multiple industries you can choose a maximum of 2. *Example:* Industries *Distribution, Professional services* | Recommended  |
+| 4. **Categories**   | Choose the categories that your offer caters to (max 3)    *Example:* Categories *Operations Supply Chain, Sales* | Required     |
 | 5. **App type**     | Choose which app type your offer is. In the Cloud Partner Portal, you can choose between the options: Free and Trial. Each of these options will convert to different buttons in the storefront details of your app. | Required     |
 
 Options, meaning and button layout in your storefront details:

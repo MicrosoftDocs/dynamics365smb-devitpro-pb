@@ -3,16 +3,17 @@ title: "The “Ready to Go” Online learning for pre-sales"
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # The “Ready to Go” Online Learning for Pre-Sales
-Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md).
+Get an overview of the entire "Ready to Go" online learning catalog [here](readiness-learning-catalog.md). 
 
-## Getting started
+# [**Getting Started**](#tab/gettingstarted)
+<!-- ## Getting started -->
 
 |Course description|Go to|
 |----|-----|

@@ -3,7 +3,7 @@ title: "Page Extension Object"
 description: "Description of the page extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/27/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,9 @@ The page extension object extends a [!INCLUDE[d365fin_long_md](includes/d365fin_
 The structure of a page is hierarchical and breaks down into three sections. The first block contains metadata for the overall page; the type of the page and the source table it is showing data from. The next section; the layout, describes the visual parts on the page. The final section details the actions that are published on the page.
 
 For more information about the Page and Page Extension objects, see [Pages Overview](devenv-pages-overview.md).
+
+> [!IMPORTANT]  
+> Only pages with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
