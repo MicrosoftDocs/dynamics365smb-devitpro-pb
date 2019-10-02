@@ -24,10 +24,10 @@ See in the list below what to consider for each storefront detail when it comes 
 |Summary:| Can be in any one language, not more because of length constraints.|
 |Description:| Can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added.|
 |Screenshots:| Can be in any language|
-|Videos:|Can be in any language, must be captioned if not spoken in English.|
-|Documents:| if description is not in English, a document with description and the support information in English is required. Rest of documents can be in any language.|
-|Keywords:| can be provided (no must), in any language.|
-|Support / Help:| Can be in any language. If not available in English, support contact details must be available in document.|
+|Videos:|Can be in any language, no captioning required, however English captioning recommended|
+|Documents:| If description is not in English, a document with description in English is required. Rest of documents can be in any language.|
+|Keywords:| Can be provided (no must), in any language.|
+|Support / Help:| Can be in any language. Recommended in English. |
 |Privacy:| If hosted on partner website, can be any language.|
 |Licensing:| Must be in English if hosted on AppSource, can be in any language if hosted on partner website.|
 |Supported countries:| Must be in English and using the provided standard html code.|

@@ -29,6 +29,10 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+Only non-modal pages can be trapped.
+
 ## See Also
 [TestPage Data Type](testpage-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

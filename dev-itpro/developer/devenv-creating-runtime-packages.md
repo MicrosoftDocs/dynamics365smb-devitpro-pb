@@ -36,5 +36,5 @@ For publishing and installing the package, use the [Publish-NavApp](https://go.m
 The limitation of runtime packages is that they only work for on-premise installations and therefore cannot be submitted to AppSource. Moreover, the debugging experience is very limited since no source code is available. 
  
 ## See also
-[Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079)   
+[Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079)  
 [Install-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=618056)  

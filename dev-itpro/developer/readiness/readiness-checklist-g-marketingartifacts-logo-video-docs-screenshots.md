@@ -15,8 +15,8 @@ ms.author: v-liober
 | Marketing artifacts | Description| Requirements |
 |---------------------|------------|--------------|
 | 14. **Offer logo**  | Formatting | Required     |
-| 14.A Offer logo for your app’s search page (.png, 48x48 pixels)    | 1 offer logo for your app’s search page: 48x48 pixels resolution .png image [./media/image17.jpg](./media/image17.jpg) | Required     |
-| 14.B Offer logo for your app’s details page (.png, 216x216 pixels) | 1 offer logo for your app’s details page: 216x216 pixels resolution .png image [./media/image17.jpg](./media/image17.jpg) | Required     |
+| 14.A Offer logo for your app’s search page (.png, 48x48 pixels)    | 1 offer logo for your app’s search page: 48x48 pixels resolution .png image | Required     |
+| 14.B Offer logo for your app’s details page (.png, 216x216 pixels) | 1 offer logo for your app’s details page: 216x216 pixels resolution .png image | Required     |
 
 You are required to provide two offer logos on AppSource:
 - one in 48x48 pixels resolution for your app’s search page:
@@ -45,13 +45,13 @@ Large amounts of information are easier to take in when visualized. Using videos
 Formatting and General requirements (cf. section 0.A-D) to keep in mind when creating videos:
 - A minimum of one video is recommended (up to a maximum of 5 are permitted).
 - Language in videos can be either local or English
-- Note, videos made in local language must have subtitles in English.
+- Note, videos made in local language can have subtitles in English (no requirement).
 Make the right references from the get go: 
 - Only include screenshots & demo of the newest UI.
 - Reference Microsoft’s brand names correctly:
-- Only refer to Microsoft Dynamics 365 Business Central or Dynamics 365 Business Central.
-- Don’t make references to acronyms, old Dynamics 365 brand names/logos or demo old UIs.
-- Don’t include logos or trademarks in your video.
+- Only refer to Microsoft Dynamics 365 Business Central, Dynamics 365 Business Central or Business Central after first mentioning of full product name.
+- Don’t make references to acronyms, old Dynamics 365 NAV brand names/logos or demo old UIs.
+- Don’t include Microsoft Dynamics 365 logos or trademarks in your video.
 
 > [!NOTE]
 > Videos can be in any language, must be captioned if not spoken in English.
