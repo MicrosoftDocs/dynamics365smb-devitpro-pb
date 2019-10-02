@@ -27,6 +27,21 @@ For information about the **Enabled** property for pages, keys and table fields,
 ```
 Enabled = false;
 ```
+## Example
+The following code illustrates how to set the **Enabled** property. **True** is default, but just used here for illustration purposes.
+ 
+```
+profile MyProfile
+{ 
+    Description = 'Some internal comment that only the Dev can see'; 
+    Caption = 'My User-friendly Name'; 
+    ProfileDescription = 'A detailed description of who is this profile for, why/how to use it (etc)' 
+    RoleCenter = MyRoleCenter; 
+    Enabled = true; 
+    Promoted = true; 
+    Customizations = MyCustomization;
+} 
+```
 
 ## See Also  
 
