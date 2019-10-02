@@ -15,8 +15,8 @@ ms.author: v-liober
 | Marketing artifacts | Description| Requirements |
 |---------------------|------------|--------------|
 | 14. **Offer logo**  | Formatting | Required     |
-| 14.A Offer logo for your app’s search page (.png, 48x48 pixels)    | 1 offer logo for your app’s search page: 48x48 pixels resolution .png image [./media/image17.jpg](./media/image17.jpg) | Required     |
-| 14.B Offer logo for your app’s details page (.png, 216x216 pixels) | 1 offer logo for your app’s details page: 216x216 pixels resolution .png image [./media/image17.jpg](./media/image17.jpg) | Required     |
+| 14.A Offer logo for your app’s search page (.png, 48x48 pixels)    | 1 offer logo for your app’s search page: 48x48 pixels resolution .png image ![image17.jpg](../../media/image17.jpg) | Required     |
+| 14.B Offer logo for your app’s details page (.png, 216x216 pixels) | 1 offer logo for your app’s details page: 216x216 pixels resolution .png image ![image17.jpg](../../media/image17.jpg) | Required     |
 
 You are required to provide two offer logos on AppSource:
 - one in 48x48 pixels resolution for your app’s search page:
