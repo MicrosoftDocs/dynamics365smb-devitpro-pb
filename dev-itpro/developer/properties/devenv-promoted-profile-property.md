@@ -38,5 +38,5 @@ profile MyProfile
 
 ## See Also  
 
-[Properties](devenv-properties.md)
-[Promoted (Actions) Property](devenv-promoted-action-property.md)  
+[Properties](devenv-properties.md)  
+[Promoted (Actions) Property](devenv-promoted-action-property.md) 
