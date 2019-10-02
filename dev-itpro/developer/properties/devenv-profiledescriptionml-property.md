@@ -22,4 +22,5 @@ ProfileDescriptionML = 'This profile can be used for processing sales order on a
 ```
 
 ## See Also  
-[Properties](devenv-properties.md)
+[Properties](devenv-properties.md)  
+[ProfileDescription Property](devenv-profiledescription-property.md)
