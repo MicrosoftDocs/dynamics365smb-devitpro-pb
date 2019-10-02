@@ -472,6 +472,7 @@
 #### [Properties Overview](developer/properties/devenv-properties.md)
 #### [Table and Table Extension Properties](developer/properties/devenv-table-properties.md)
 #### [Page and Page Extension Properties](developer/properties/devenv-page-property-overview.md)
+#### [Profile Properties](developer/properties/devenv-profile-properties.md)
 #### [Codeunit Properties](developer/properties/devenv-codeunit-properties.md)  
 #### [Query Properties](developer/properties/devenv-query-properties.md)  
 #### [Report Properties](developer/properties/devenv-report-properties.md)  
