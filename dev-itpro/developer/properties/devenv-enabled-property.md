@@ -1,5 +1,6 @@
 ---
 title: "Enabled Property"
+author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
