@@ -14,7 +14,7 @@ ms.author: solsen
 # Enabled (Profile) Property
 Specifies whether the profile can be used by users or not.
 
-For information about the **Enabled** property for pages, keys and table fields, see [Enabled (Profile) Property](devenv-enabled-profile-property.md).
+For information about the **Enabled** property for pages, keys and table fields, see [Enabled Property](devenv-enabled-property.md).
 
 ## Applies To  
 
