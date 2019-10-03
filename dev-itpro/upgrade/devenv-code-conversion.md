@@ -54,11 +54,11 @@ For example, do the following:
         ```
     
         ```
-        Export-NAVApplicationObject -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14app-part2.txt" -Filter 'Id=1400000..1999999999'
+        Export-NAVApplicationObject -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\baseapplication\exportedbc14app-part2.txt" -Filter 'Id=1400000..1999999999'
         ```
     
         ```
-        Export-NAVApplicationObject -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\exportedbc14testobjects.txt" -Filter 'Id=130400..130416'
+        Export-NAVApplicationObject -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\baseapplication\exportedbc14testobjects.txt" -Filter 'Id=130400..130416'
         ```
 2. Export the test library objects.
     1. Create a folder for storing the exported test library objects to TXT files (for example, c:\export2al\testlibrary).
