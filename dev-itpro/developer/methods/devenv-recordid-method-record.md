@@ -37,18 +37,18 @@ RecordID := Record.RECORDID
 |FORMAT\(Customer.RECORDID,0,1\)|Kunde: 1212121|  
 |FORMAT\(Customer.RECORDID,0,9\)|Customer: 1212121|  
   
- When you use standard format 1, the caption of the record is returned. When you use other standard formats, the name of the record is returned, which is usually English \(US\). For more information, see [Format Property](../properties/devenv-format-property.md).  
+When you use standard format 1, the caption of the record is returned. When you use other standard formats, the name of the record is returned, which is usually English \(US\). For more information, see [Format Property](../properties/devenv-format-property.md).  
   
 ## Example  
 The following example opens table 18 \(Customer\) as a Record variable that is named MyRecord. The [FINDLAST Method \(Record\)](devenv-findlast-method-record.md) finds the last record in the table. The record ID of the last record is retrieved, stored in the RecID variable displayed in message box.  
   
 |Variable name|DataType|Subtype|  
-|-------------------|--------------|---|  
+|-------------|--------|-------|  
 |MyRecord|Record|Customer|  
 |RecID|RecordID|  |
   
 |Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
+|------------------|--------|---------------|  
 |MyTextConst|Text|The record ID for the last record is: %1|  
   
 ```  
@@ -58,5 +58,5 @@ MESSAGE(MyTextConst, RecID);
 ```  
   
 ## See Also  
- [Record Data Type](../datatypes/devenv-record-data-type.md)   
- [Format Property](../properties/devenv-format-property.md)
+[Record Data Type](../datatypes/devenv-record-data-type.md)  
+[Format Property](../properties/devenv-format-property.md)
