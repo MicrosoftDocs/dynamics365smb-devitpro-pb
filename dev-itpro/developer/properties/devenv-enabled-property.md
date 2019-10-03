@@ -1,5 +1,6 @@
 ---
 title: "Enabled Property"
+author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2019
 ms.reviewer: na
@@ -14,13 +15,14 @@ ms.author: solsen
 # Enabled Property
 Sets a value that indicates whether a field or key is enabled or disabled, or whether a control can respond to user-generated events. This property can also be used to enable profiles for users, for profiles the default value is **true**.
 
+For information about the **Enabled** property for Profiles, see [Enabled (Profile) Property](devenv-enabled-profile-property.md).
+
 ## Applies To  
 
 - Group, part, and field controls on pages  
 - Page actions  
 - Keys  
 - Table fields  
-- Profiles
 
 ## Property Value  
  **True** on pages if the field, key, or control is enabled; otherwise, **false** on pages. The default is **true** on pages.  
