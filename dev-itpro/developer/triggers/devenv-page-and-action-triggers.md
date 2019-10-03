@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 1282d6c0-be0e-4399-b948-848d1f0c700e
 author: SusanneWindfeldPedersen
-manager: edupont
+
+
 ---
 
 
@@ -18,14 +19,14 @@ Page triggers allow you to use AL code to control the behavior of the system as 
 
  Page triggers can be divided into three categories:  
 
--   General page triggers that apply to the entire page  
+- General page triggers that apply to the entire page  
 
--   Field page triggers that apply to a field control on a page  
+- Field page triggers that apply to a field control on a page  
 
--   Action triggers that apply to an action on a page.  
+- Action triggers that apply to an action on a page.  
 
 > [!IMPORTANT]  
->  If you define two methods that have the same name, one defined in a page and the other in a table that is referenced by the page, you cannot invoke the method defined in the page directly. By default, a call to the method invokes the method that is defined in the table. This behavior occurs when the method is called from a source expression or a trigger.  
+> If you define two methods that have the same name, one defined in a page and the other in a table that is referenced by the page, you cannot invoke the method defined in the page directly. By default, a call to the method invokes the method that is defined in the table. This behavior occurs when the method is called from a source expression or a trigger.  
 
 ## General Triggers  
  The following table lists triggers that apply to the entire page.  
@@ -63,6 +64,15 @@ Page triggers allow you to use AL code to control the behavior of the system as 
 |Triggers|Runs|  
 |--------------|--------------|  
 |[OnAction Trigger](devenv-onaction-trigger.md)|When an action is initiated on a page.|  
+
+
+## Page Background Triggers
+The following table lists triggers that apply to page background tasks. For more information, see [Page Background Tasks](../devenv-page-background-tasks.md).
+
+|Triggers|Runs|
+|--------|-----|
+|[OnPageBackgroundTaskCompleted](devenv-onpagebackgroundtaskcompleted-trigger.md)|Runs after a page background task has successfully completed.|
+|[OnPageBackgroundTaskError](devenv-onpagebackgroundtaskerror-trigger.md)|Runs when an error occurs in a page background task.|
 
 ## See Also  
  [Triggers](devenv-triggers.md)
