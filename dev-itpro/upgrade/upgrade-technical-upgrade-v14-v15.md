@@ -52,7 +52,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
     Copy the **CodeViewer** folder from the **Add-ins** folder of the Business Central version 14 RoleTailored client installation (C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client\Add-ins) to the **Add-ins** folder of the Business Central 150 Server installation (C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins). Replace the existing folder and files, if any.
      
-    In version 15.0 CodeViewer is no longer used, but it is required because of references tha exist in the converted application. If you omit this step, you might get compilation errors later.
+    In version 15.0 CodeViewer is no longer used, but it is required because of references that exist in the converted application. If you omit this step, you might get compilation errors later.
 
 ## Task 2: Convert your application from C/AL to AL
 
