@@ -337,6 +337,7 @@
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
 ### [Number Sequences](developer/devenv-number-sequences.md)
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
+### [Protected Variables](developer/devenv-protected-variables.md)
 ### Objects
 #### [Table Object](developer/devenv-table-object.md)
 #### [Table Extension Object](developer/devenv-table-ext-object.md)
