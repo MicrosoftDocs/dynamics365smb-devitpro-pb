@@ -26,9 +26,7 @@ Before you start, we recommend getting familiar with the basics of setting up an
 
 If your solution uses Microsoft (1st-party) extensions, you will have to convert the test library from C/AL to AL. The reason for this is that the Microsoft extensions rely on the test symbols. The easiest way to do this is to import the **CALTestLibraries.W1.fob** file into the old database. This file is available on the installation media (DVD) for in the **TestToolKit** folder.
 
-You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) (see [Creating and Altering Databases](../cside/cside-import-objects.md) or [Create-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/create-navdatabase?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)].
-
-Alternatively, you can create separate AL project in Visual Studio Code for the test libraries and compile the project to into an extension.
+You can do this using the ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]) For more information, see [Exporting and Importing Objects](../cside/cside-import-objects.md).
 
 ## Task 2: Compile all the objects in your C/AL solution
 
