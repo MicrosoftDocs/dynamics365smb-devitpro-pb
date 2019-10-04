@@ -2,7 +2,7 @@
 title: How to Alter Databases
 description: Modify the Database property settings by using the Alter Database window, which gives you access to the same settings as the New Database window.
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ You cannot change the collation directly in the current database. To change the 
 
     For more information, see [Synchronizing the Tenant Database with the Application Database](../administration/synchronize-tenant-database-and-application-database.md).  
 
-6.  Restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.  
+6.  Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.  
 
 
 ## See Also  

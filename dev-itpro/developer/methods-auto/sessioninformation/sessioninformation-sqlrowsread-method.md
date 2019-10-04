@@ -2,7 +2,7 @@
 title: "SqlRowsRead Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,6 +32,26 @@ The amount of SQL rows read on the session, since the session started.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+AL debugger also lets you monitor the number of SQL rows read. For more information, see [Debugging SQL behavior](../../devenv-debugging.md#DebugSQL).
+
+## Example
+
+The following code gets the number of SQL rows read for the session and displays the number in a message.
+
+```
+var
+    SqlRowsRead := BigText;
+
+begin
+
+    SqlRowsRead := SessionInformation.SqlRowsRead();
+    Message(Format(SqlRowsRead));
+end;
+```
+
 ## See Also
 [SessionInformation Data Type](sessioninformation-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

@@ -93,7 +93,7 @@ After publishing a web service, verify that the port that web service applicatio
   
       The browser should now show the web service that you have published, in the following format <!-- of an AtomPub document.-->: 
 
-    {"@odata.context":"http://localhost:7048/BC140/ODataV4/$metadata","value":[{"name":"CustomerPriceAndLineDisc","kind":"EntitySet","url":"CustomerPriceAndLineDisc"}, 
+    {"@odata.context":"http://localhost:7048/BC150/ODataV4/$metadata","value":[{"name":"CustomerPriceAndLineDisc","kind":"EntitySet","url":"CustomerPriceAndLineDisc"}, 
   <!--
       ![Basic AtomPub document for a page](media/BasAtomPub.JPG "BasAtomPub")  -->
   

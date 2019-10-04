@@ -2,7 +2,7 @@
 title: "GetView Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,29 +47,29 @@ The view that is configured for the filter control that is identified by Name.
 ## Example  
  The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view. The GETVIEW method is used to capture that filter view from the FilterPageBuilder object, and then apply it to the record.  
 
- This example requires that you create the following global variables.  
+```
+var
+    varDateItem: Text[300];  
+    varDateRecord: Record Date;  
+    varFilterPageBuilder: FilterPageBuilder;  
+    varDefaultView: Text[300];
 
-|Variable name|DataType|SubType|  
-|-------------------|--------------|-------------|  
-|varDateItem|Text||  
-|varDateRecord|Record|Date|  
-|varFilterPageBuilder|FilterPageBuilder||  
-|varDefaultView|Text||  
-
-```  
-varDateItem := 'Date record';  
-varDateRecord.SETFILTER("Period End", '12122015D');  
-varDateRecord.SETFILTER("Period Start", '01012015D');  
-varDefaultView := varDateRecord.GETVIEW;  
-varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);  
-varFilterPageBuilder.SETVIEW(varDateItem, varDefaultView);  
-IF varFilterPageBuilder.RUNMODAL = TRUE THEN  
-  varDateRecord.SETVIEW(varFilterPageBuilder.GETVIEW(varDateItem)); 
-
+begin
+    varDateItem := 'Date record';  
+    varDateRecord.SETFILTER("Period End", '12122015D');  
+    varDateRecord.SETFILTER("Period Start", '01012015D');  
+    varDefaultView := varDateRecord.GETVIEW;  
+    varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);  
+    varFilterPageBuilder.SETVIEW(varDateItem, varDefaultView);  
+    if varFilterPageBuilder.RUNMODAL = true then  
+      varDateRecord.SETVIEW(varFilterPageBuilder.GETVIEW(varDateItem));
+      varFilterPageBuilder.RunModal(); 
+end;
 ```  
 
 
 ## See Also
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
+[Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

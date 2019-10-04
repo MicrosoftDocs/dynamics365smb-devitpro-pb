@@ -2,7 +2,7 @@
 title: "AsInteger Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,13 +19,13 @@ Get the enum value as an integer value.
 
 ## Syntax
 ```
-The Enum Value as an Integer value :=   EnumType.AsInteger()
+The Enum Value as an Integer value :=   Enum.AsInteger()
 ```
 
 ## Parameters
-*EnumType*  
-&emsp;Type: [EnumType](enumtype-data-type.md)  
-An instance of the [EnumType](enumtype-data-type.md) data type.  
+*Enum*  
+&emsp;Type: [Enum](enum-data-type.md)  
+An instance of the [Enum](enum-data-type.md) data type.  
 
 ## Return Value
 *The Enum Value as an Integer value*  
@@ -35,6 +35,6 @@ An instance of the [EnumType](enumtype-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[EnumType Data Type](enumtype-data-type.md)  
+[Enum Data Type](enum-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

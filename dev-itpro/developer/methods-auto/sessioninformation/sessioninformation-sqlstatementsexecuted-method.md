@@ -2,7 +2,7 @@
 title: "SqlStatementsExecuted Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,28 @@ The amount of SQL statements executed on the session, since the session started.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+AL debugger also lets you to monitor the number of SQL statements executed. For more information, see [Debugging SQL behavior](../../devenv-debugging.md#DebugSQL).
+
+## Example
+
+The following code gets the number of SQL statements executed and displays the number in a message.
+
+```
+var
+    SqlStatementsExecuted : BigText;
+
+begin
+
+    SqlStatementsExecuted := SessionInformation.SqlStatementsExecuted();
+    Message(Format(SqlStatementsExecuted));
+end;
+```
+
 ## See Also
+
 [SessionInformation Data Type](sessioninformation-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

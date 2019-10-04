@@ -1,7 +1,7 @@
 ---
 title: "Caption Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,19 +17,14 @@ Sets the text string that displays with the object, control, or other element in
 
 ## Applies To  
 
--   Codeunit objects  
-
--   XMLport objects  
-
--   Pages, including general page properties, Container, Group, Part, and Field controls.  
-
--   Query objects and query columns  
-
--   Reports  
-
--   Tables and table fields  
-
--   XMLport objects  
+- Codeunit objects  
+- XMLport objects  
+- Pages, including general page properties, Container, Group, Part, and Field controls.  
+- Profile objects
+- Query objects and query columns  
+- Reports  
+- Tables and table fields  
+- XMLport objects  
 
 ## Syntax
 

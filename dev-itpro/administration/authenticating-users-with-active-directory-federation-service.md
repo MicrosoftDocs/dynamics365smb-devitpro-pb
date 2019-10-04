@@ -1,7 +1,7 @@
 ---
 title: "Authenticating Users with Active Directory Federation Services"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -267,6 +267,9 @@ The configuration changes are automatically picked up by the Internet Informatio
 >Instead of re-configuring the existing web client, consider using the [New-NAVWebServerInstance cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to add an additional web server instance, and leave the existing instance running NavUserPassword authentication.
 
 ### Set up the Dynamic NAV Windows client (optional)
+>[!NOTE]
+> [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
+
 You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file for each client installation.
 
 1.  Set the **ClientServicesCredentialType** to `AccessControlService` as shown:

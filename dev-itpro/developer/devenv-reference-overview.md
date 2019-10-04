@@ -3,18 +3,14 @@ title: "AL Development Environment"
 description: "Overview of the objects in the AL Language development environment."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
-
- 
 
 # AL Development Environment
 This section describes all of the objects that are available with the AL Language development environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
@@ -44,6 +40,9 @@ This section describes all of the objects that are available with the AL Languag
 |To |See |
 |---|----|
 |Learn about writing codeunits for your extension.|[Codeunit Object](devenv-codeunit-object.md)|
+|Get an overview of methods in AL grouped by the data type that they support.|[Data Types and Methods in AL](methods-auto/library.md)|
+|Get an overview of properties in AL grouped by the objects that they support.|[Properties Overview](properties/devenv-properties.md)|
+|Get an overview of triggers in AL grouped by the objects that they support.|[Triggers Overview](triggers/devenv-triggers.md)|
 
 ## API for HTTP, JSON, TextBuilder, and XML
 For information about the HTTP, JSON, TextBuilder, and XML classes, see [HTTP, JSON, TextBuilder, and XML API Overview](devenv-restapi-overview.md).
@@ -52,3 +51,4 @@ For information about the HTTP, JSON, TextBuilder, and XML classes, see [HTTP, J
 [Developing Extensions](devenv-dev-overview.md)  
 [Getting Started with AL](devenv-get-started.md)   
 [FAQ for Developing in AL](devenv-dev-faq.md)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)

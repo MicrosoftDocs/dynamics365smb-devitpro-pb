@@ -1,7 +1,7 @@
 ---
 title: "Description Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,9 +17,6 @@ author: SusanneWindfeldPedersen
 # Description Property
 Sets the description of the table, field, page, report, or control. This description is for internal use and does not appear to end users.  
 
-> [!NOTE]  
-> For profile objects, the Description property sets the description of the profile to be displayed to end users. 
-    
 ## Applies To  
 - Codeunits
 - Fields

@@ -1,8 +1,8 @@
 ---
-title: "FromInteger Method"
+title: "Ordinals Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,28 +13,24 @@ author: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FromInteger Method
-Returns an enum with the integer value
+# Ordinals Method
+Gets the ordinal numbers/ID's for the values
 
 
 ## Syntax
 ```
-Enum with integer value :=   EnumType.FromInteger(Value: Integer)
+List of ordinals :=   Enum.Ordinals()
 ```
-## Parameters
-*Value*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
 
 
 ## Return Value
-*Enum with integer value*  
-&emsp;Type: [Any](../any/any-data-type.md)  
+*List of ordinals*  
+&emsp;Type: [List of [Integer]](../list/list-data-type.md)  
   
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[EnumType Data Type](enumtype-data-type.md)  
+[Enum Data Type](enum-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

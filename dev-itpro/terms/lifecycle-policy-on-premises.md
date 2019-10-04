@@ -1,13 +1,13 @@
 ---
 title: "Software lifecycle policy and on-premises updates"
 description: "Learn about the lifecycle and product life of Dynamics 365 Business Central versions for on-premises deployments."
-author: edupont04
+author: plindgre
 ms.custom: na
-ms.reviewer: na
+ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: edupont
-ms.date: 04/10/2019
+ms.author: plindgre
+ms.date: 10/01/2019
 
 ---
 
@@ -17,30 +17,33 @@ This topic outlines the lifecycle and support policies for [!INCLUDE[prodlong](.
 
 ## Fixed Lifecycle Policy
 
-[!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) software is covered by the Fixed Lifecycle Policy.  
+[!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) October'18 and April '19 Update software is covered by the Fixed Lifecycle Policy.  
 
-Licensed customers must stay current with updates to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] on-premises software in accordance with the following servicing and system requirements. This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and that it deploy updates as noted later in this topic.  
-
-## On-premises software update policies
-
-The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) software as indicated on the [Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on) page, but only if the customer keeps the deployed software current according to this policy.  
-
-Critical fixes and non-critical updates are handled in the following way:
-
-- **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes will be made available in the latest platform update version.
-
-- **Non-critical updates** – Customers must update to the most current Dynamics 365 Business Central to deploy non-critical updates.
+Licensed customers must stay current with updates to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] on-premises software in accordance with the following servicing and system requirements. This policy requires that the customer maintain an Enhancement Plan, and that it deploy updates as noted later in this topic.  
 
 |Release                                     |Version           |Build number  |Availability    |Mainstream support ends|
 |--------------------------------------------|------------------|--------------|----------------|-----------------------|
 |Dynamics 365 Business Central (on-premises) | October'18 Update|24630         |November 1, 2018|\*\*|
 |Dynamics 365 Business Central (on-premises) | April '19 Update |29537         |April 1, 2019   |October 10, 2023|
-|Dynamics 365 Business Central (on-premises) | October'19 Update|              |                |\*|
 
-\* Indicates that the expiration date will be added on this page when the next version is released.  
-\*\* Indicates that the version is considered a service pack with a support end date of April 14, 2020.  
+\*\* In order to obtain mainstream support after April 14, 2020, customers must update to the April 2019 release or a later update for the April 2019 version  
 
-The build number for the versions that are not yet available will be updated when the version is released.
+
+## Modern Lifecycle Policy
+
+[!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) 2019 release wave 2 and newer updates are covered by the Modern Lifecycle Policy.  
+
+The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) software as indicated on the [Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on) page, but only if the customer keeps the deployed software current according to this policy. In keeping current you are getting all the latest feature and bug fixes.  
+
+The following image illustrates the update schedule for [!INCLUDE [prodlong](../developer/includes/prodlong.md)].
+> [!div class="mx-imgBorder"]
+> ![Update schedule for Dynamics 365 Business Central](../developer/media/terms/dynamics-365-business-central-modern-lifecycle-policy.png)
+
+<!-- Critical fixes and non-critical updates are handled in the following way:
+
+- **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes will be made available in the latest platform update version.
+
+- **Non-critical updates** – Customers must update to the most current Dynamics 365 Business Central to deploy non-critical updates.-->
 
 ## See Also
 

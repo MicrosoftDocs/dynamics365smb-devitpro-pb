@@ -3,7 +3,7 @@ title: "Table Extension Object"
 description: "Description of the table extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -18,6 +18,9 @@ The table extension object allows you to add additional fields or to change some
 Along with defining other fields, the table extension is where you write trigger code for your additional fields.
 
 When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] , you will follow the code layout for a table extension as shown in the example below.
+
+> [!IMPORTANT]  
+> Only tables with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.

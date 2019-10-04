@@ -3,7 +3,7 @@ title: "Debugging"
 description: "Overview of debugging in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/05/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -47,10 +47,6 @@ For more information about **Go To Definition**, see [AL Code Navigation](devenv
 
 Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, then it stops execution both on errors that are handled in code and on unhandled errors.
 
-<!--
-> [!NOTE]  
-> This property is not supported for Business Central online.
---> 
 The default value of the `breakOnError` property is **true**, which means the debugger stops execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false** in the `launch.json` file. 
 
 > [!TIP]  
@@ -60,19 +56,17 @@ The default value of the `breakOnError` property is **true**, which means the de
 
 Specify if the debugger breaks on record changes by using the `breakOnRecordWrite` property. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the AL methods that cause each change. 
 
-<!-- 
-> [!NOTE]  
-> This property is not supported for Business Central online.
--->
-
 |Record change|AL Methods|  
 |-------------------|---------------------|  
-|Create a new record|[INSERT Method (Record)](methods/devenv-insert-method-record.md)|  
-|Update an existing record|[MODIFY Method (Record)](methods/devenv-modify-method-record.md), [MODIFYALL Method (Record)](methods/devenv-modifyall-method-record.md), [RENAME Method (Record)](methods/devenv-rename-method-record.md)|  
-|Delete an existing record|[DELETE Method (Record)](methods/devenv-delete-method-record.md), [DELETEALL Method (Record)](methods/devenv-deleteall-method-record.md)|  
+|Create a new record|[Insert Method (Record)](methods-auto/record/record-insert-method.md)|  
+|Update an existing record|[Modify Method (Record)](methods-auto/record/record-modify-method.md), [ModifyAll Method (Record)](methods-auto/record/record-modifyall-method.md), [Rename Method (Record)](methods-auto/record/record-rename-method.md)|  
+|Delete an existing record|[Delete Method (Record)](methods-auto/record/record-delete-method.md), [DeleteAll Method (Record)](methods-auto/record/record-deleteall-method.md)|  
 
 
 The default value of the `breakOnRecordWrite` property is **false**, which means the debugger is not set to break on record changes by default. To break on record changes, you can set the `breakOnRecordWrite` property to **true** in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).
+
+## Attach and Debug Next
+If you do not want to publish and invoke functionality to debug it, you can instead attach a session to a specified server and await a process to trigger the breakpoint you have set. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
 
 ## Debugging shortcuts
 
@@ -81,13 +75,14 @@ The default value of the `breakOnRecordWrite` property is **false**, which means
 |F5           |Start debugging|
 |Ctrl+F5      |Start without debugging|
 |Shift+F5     |Stop debugging|
-|Ctrl+Shift+F5|Start debugging without publishing. Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method “foo”, add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint will not be hit, or if it is hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
+|Ctrl+Shift+F5|Start debugging without publishing. <br> Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method “foo”, add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint will not be hit, or if it is hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
+|Alt+F5       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
 |F10          |Step over|
 |F11          |Step into|
 |Shift+F11    |Step out|
 |F12          |Go To Definition| 
 
-For more shortcuts, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
+For more shortcuts, see [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging). 
 
 <!-- 
 To use the Go To Definition on local server, it requires that the AL symbols are rebuilt and downloaded from C/SIDE. The application symbols that were built with the previous version of C/SIDE would not make it possible to have Go To Definition work on base application methods. -->
@@ -104,7 +99,10 @@ In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** no
 |-------|-------|
 |Current SQL latency (ms) | When the debugger hits a breakpoint, the [!INCLUDE[server](includes/server.md)] will send a short SQL statement to the database and measure how long time it takes. The value is in milliseconds.| 
 |Number of SQL Executes | This number shows the total number of SQL statements executed in the debugging session since the debugger was started.|
-|Number of SQL Rows Reads | This number shows the total number of rows read from the [!INCLUDE[prodshort](includes/prodshort.md)] database in the debugging session since the debugger was started.|
+|Number of SQL Rows Read | This number shows the total number of rows read from the [!INCLUDE[prodshort](includes/prodshort.md)] database in the debugging session since the debugger was started.|
+
+> [!TIP]
+> You can also get database insights from the AL runtime by using the [SqlStatementsExecuted()](methods-auto/sessioninformation/sessioninformation-sqlstatementsexecuted-method.md) and [SqlRowsRead()](methods-auto/sessioninformation/sessioninformation-sqlrowsread-method.md) methods.
 
 ### View SQL statement statistics
 
@@ -119,7 +117,7 @@ The database insights also let you peek into the most recent and the latest long
 
 The number of SQL statements tracked by the debugger can be configured in the [!INCLUDE[server](includes/server.md)]. The default value is 10.
 
-> [!NOTE]
+> [!NOTE]  
 > For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights that you expect to see in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
 ## NonDebuggable Attribute
@@ -127,6 +125,12 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 To restrict the ability to debug certain methods and/or variables, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
 
 ## See Also
+
+[Attach and Debug Next](devenv-attach-debug-next.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [AL Code Navigation](devenv-al-code-navigation.md)  
+[EnableLongRunningSQLStatements Property](properties/devenv-enablelongrunningsqlstatements-property.md)  
+[EnableSQLInformationDebugger Property](properties/devenv-enablesqlinformationdebugger-property.md)  
+[LongrunningSQLStatementsThreshold Property](properties/devenv-longrunningsqlstatementsthreshold-property.md)  
+[NumberOfSQLStatements Property](properties/devenv-numberofsqlstatements-property.md)  

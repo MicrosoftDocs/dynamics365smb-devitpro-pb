@@ -2,7 +2,7 @@
 title: Creating and Altering Business Central Databases
 description: Create a new database in the development environment and by using the New-NAVDatabase cmdlet in the Administration Shell. 
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,6 +12,9 @@ author: jswymer
 ---
 # Creating and Altering [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Databases
 You can create new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases in the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] and by using the [New-NAVDatabase](http://go.microsoft.com/fwlink/?LinkID=401374) cmdlet in the [!INCLUDE[devshell](../developer/includes/devshell.md)].  
+
+>[!NOTE]
+> [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
 
 When you create a database you must specify the SQL Server instance for the database and the authentication type.  
 
@@ -70,7 +73,7 @@ Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an admi
 
 ## Alter a Database
 
-The changes will not take effect until you restart the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance.
+The changes will not take effect until you restart the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 > [!NOTE]  
 >  You cannot alter a database by using the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] if the database is deployed on Azure SQL Database.

@@ -1,9 +1,9 @@
 ---
-title: "WRITE, WRITETEXT, READ, and READTEXT Method Behavior"
-description: "WRITE, WRITETEXT, READ, and READTEXT Method Behavior for Line Endings and Zero Terminators."
+title: "Write, WriteText, Read, and ReadText Method Behavior"
+description: "Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/06/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,13 +12,13 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# WRITE, WRITETEXT, READ, and READTEXT Method Behavior for Line Endings and Zero Terminators 
+# Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators 
 
-When writing to and reading from a stream object using the WRITE, WRITETEXT, READ, and READTEXT methods, it is important to be aware of the following behavior regarding line endings and zero byte terminators:
+When writing to and reading from a stream object using the Write, WriteText, Read, and ReadText methods, it is important to be aware of the following behavior regarding line endings and zero byte terminators:
 
-- WRITE adds a 0 byte at the end of the stream; WRITETEXT does not.
-- READ reads until a 0 byte or the specified length  of the string.
-- READTEXT reads the until a zero byte, an end-of-line, the specified number of bytes, or the maximum length.  
+- Write adds a 0 byte at the end of the stream; WriteText does not.
+- Read reads until a 0 byte or the specified length  of the string.
+- ReadText reads the until a zero byte, an end-of-line, the specified number of bytes, or the maximum length.  
 
 To help understand this, consider the following code examples. These example assume that a BLOB field called `MyBlobField` exists in a table called `MyBlogTable`.
 
@@ -203,6 +203,6 @@ codeunit 50111 MyCodeunit
 ```
 -->
 ## See Also
-[WRITE and WRITETEXT Methods](methods-auto/outstream/outstream-data-type.md)  
-[READ and READTEXT Methods](methods-auto/instream/instream-data-type.md)  
+[Write and WriteText Methods](methods-auto/outstream/outstream-data-type.md)  
+[Read and ReadText Methods](methods-auto/instream/instream-data-type.md)  
 [AL Development Environment](devenv-reference-overview.md)    

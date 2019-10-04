@@ -3,7 +3,7 @@ title: "ObsoleteReason Property"
 description: "Description of the ObsoleteReason property"
 author: jswymer
 ms.custom: na
-ms.date: 06/27/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,16 +13,40 @@ ms.author: jswymer
 ---
 
 # ObsoleteReason Property
-Specifies why a table, field, or key has been marked as **Pending** or **Removed** in the **ObsoleteState** property.   
+Specifies why an object or element has been marked as **Pending** or **Removed** in the **ObsoleteState** property.  
 
 ## Applies To  
 
 -   Table objects
 -   Table fields
 -   Table keys
+-	Codeunit
+-	Enum
+-	EnumValue
+-	Page
+-	PageAction
+-	PageActionArea
+-	PageActionGroup
+-	PageActionSeparator
+-	PageArea
+-	PageChartPart
+-	PageField
+-	PageGroup
+-	PageLabel
+-	PagePart
+-	PageSystemPart
+-	Query
+-	QueryColumn
+-	QueryDataItem
+-	QueryFilter
+-	Report
+-	ReportColumn
+-	ReportDataItem
+-	RequestPage
+-	XmlPort
   
 ## Property Value  
- A text string.
+A text string.
 
 ## Syntax
 ```
@@ -33,7 +57,7 @@ ObsoleteReason = 'Not Needed';
 Use this property to inform developers about a table, field, or key that will become obsolete in time or is already obsolete.
 
 ## See Also  
- [ObsoleteState](devenv-obsoletestate-property.md)  
- [Properties](devenv-properties.md)  
- [MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  
+[ObsoleteState](devenv-obsoletestate-property.md)  
+[Properties](devenv-properties.md)  
+[MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  
 
