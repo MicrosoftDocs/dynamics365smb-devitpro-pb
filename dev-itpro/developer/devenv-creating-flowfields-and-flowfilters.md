@@ -104,7 +104,7 @@ table 50123 MyTable
             CalcFormula = exist (Customer where (Payments = const (0),
                                                  "No." = field ("No.")));
             FieldClass = FlowField;
-            Caption = 'Specifies whether it is the customer's first entry';
+            Caption = 'Specifies whether it is the customer''s first entry';
         }
 
         field(10; "Customer Balance"; Decimal)
