@@ -43,7 +43,7 @@ The following code gets the number of SQL statements executed and displays the n
 
 ```
 var
-    SqlStatementsExecuted := BigText;
+    SqlStatementsExecuted : BigText;
 
 begin
 

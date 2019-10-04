@@ -36,7 +36,8 @@ Licensed customers must stay current with updates to the [!INCLUDE[prodlong](../
 The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) software as indicated on the [Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on) page, but only if the customer keeps the deployed software current according to this policy. In keeping current you are getting all the latest feature and bug fixes.  
 
 The following image illustrates the update schedule for [!INCLUDE [prodlong](../developer/includes/prodlong.md)].
-![Update schedule for Dynamics 365 Business Central](../developer/media/terms/dynamics-365-business-central-modern-lifecycle-policy.jpg)
+> [!div class="mx-imgBorder"]
+> ![Update schedule for Dynamics 365 Business Central](../developer/media/terms/dynamics-365-business-central-modern-lifecycle-policy.png)
 
 <!-- Critical fixes and non-critical updates are handled in the following way:
 

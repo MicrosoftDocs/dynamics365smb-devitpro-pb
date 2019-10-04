@@ -21,19 +21,13 @@ Sets the string that is used to identify a control or other object in the user i
 ## Applies To  
 
 - Codeunit objects  
-
 - XMLport objects  
-
 - Menu objects, menu buttons, menu groups, and menu items  
-
 - Pages, including general page properties and Group, Part, and Field controls.  
-
+- Profile objects
 - Query objects and query columns  
-
 - Report objects  
-
 - Table objects and table fields  
-
 - XMLport objects  
 
 ## Remarks  

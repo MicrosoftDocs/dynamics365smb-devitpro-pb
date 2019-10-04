@@ -13,11 +13,12 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# View Properties
+# Profile Properties
 The following topic lists properties that apply to [Profiles](../devenv-profile-object.md) specifically.
 
 - [ProfileDescription](devenv-profiledescription-property.md)  
-- [Enabled](devenv-enabled-property.md)
+- [Enabled](devenv-enabled-profile-property.md)  
+- [Promoted](devenv-promoted-profile-property.md)
 
 ## See also
 [Codeunit Properties](devenv-codeunit-properties.md)  

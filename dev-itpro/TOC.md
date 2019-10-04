@@ -299,6 +299,12 @@
 ### [Defining an XMLport Schema](developer/devenv-xmlport-schema.md)  
 ### [Request Pages](developer/devenv-request-pages.md)
 ### [XMLport Triggers](developer/triggers/devenv-xmlport-triggers.md)
+## [Customizing for User Roles](developer/devenv-role-customization.md)
+## Profiles
+### [Designing Profiles](developer/devenv-design-profiles.md)
+### [Profile Object](developer/devenv-profile-object.md)
+### [Page Customization Object](developer/devenv-page-customization-object.md)
+### [Using Client to Create Profiles](developer/devenv-design-profiles-using-client.md)
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-universal-app.md)
@@ -312,12 +318,6 @@
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 ## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-## [Customizing for User Roles](developer/devenv-role-customization.md)
-## Profiles
-### [Designing Profiles](developer/devenv-design-profiles.md)
-### [Profile Object](developer/devenv-profile-object.md)
-### [Page Customization Object](developer/devenv-page-customization-object.md)
-### [Using Client to Create Profiles](developer/devenv-design-profiles-using-client.md)
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [AL Programming Guide](developer/devenv-programming-in-al.md)
@@ -337,6 +337,7 @@
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
 ### [Number Sequences](developer/devenv-number-sequences.md)
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
+### [Protected Variables](developer/devenv-protected-variables.md)
 ### Objects
 #### [Table Object](developer/devenv-table-object.md)
 #### [Table Extension Object](developer/devenv-table-ext-object.md)
@@ -472,6 +473,7 @@
 #### [Properties Overview](developer/properties/devenv-properties.md)
 #### [Table and Table Extension Properties](developer/properties/devenv-table-properties.md)
 #### [Page and Page Extension Properties](developer/properties/devenv-page-property-overview.md)
+#### [Profile Properties](developer/properties/devenv-profile-properties.md)
 #### [Codeunit Properties](developer/properties/devenv-codeunit-properties.md)  
 #### [Query Properties](developer/properties/devenv-query-properties.md)  
 #### [Report Properties](developer/properties/devenv-report-properties.md)  
