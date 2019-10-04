@@ -173,7 +173,7 @@ To build your base application, you will create a new application database on th
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
 -->
-## Task 7: Create and build AL project for custom base application
+## Task 7: Create and build an AL project for custom base application
 
 In this task, you will create a AL project in Visual Studio code that you will use for building your custom base application extension based on your converted C/AL application.
 
@@ -186,7 +186,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
 3. In Visual Studio Code, from the **Command Palette**, select the **AL Go!** command to create a new project.
 
     Specify the path for the project, and set the **Target Platform** to **4.0 Business Central 2019 release wave 2**. When prompted to select your server, choose <!--Microsoft cloud sandbox or--> **Your own server**.
-4. Create a **.alpackages** folder in the root folder of the project and then copy the system (platform) symbols extension (System.app) to the folder.
+4. Create a **.alpackages** folder in the root folder of the project and then copy the system (platform) symbols extension (System.app file) to the folder.
 
     The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
 5. Delete the **HelloWorld.al** sample file from the project.
@@ -195,14 +195,14 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
     Change `"al.assemblyProbingPaths": ["./.netpackages"]` to point to all the folders that contain .NET assemblies that are used by your project. Here is an example that contains the most typical paths:
 
-        ```
-        "al.assemblyProbingPaths": [
-		"C:\\Program Files\\Microsoft Dynamics 365 Business Central\\150",
-		"C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\150\\RoleTailored Client",
-		"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2",
-        "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell\\3.0"
-	    ]
-        ```
+    ```
+    "al.assemblyProbingPaths": [
+    "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\150",
+    "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\150\\RoleTailored Client",
+    "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2",
+    "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell\\3.0"
+    ]
+    ```
     For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
     > [!NOTE]  
@@ -239,7 +239,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
         ```
 10. Delete objects that are related to the client debugger client.
 
-     Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on version 15. Yo avoid compilation errors, delete the following objects:
+     Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on version 15. To avoid compilation errors, delete the following objects:
     
         - Debugger.Page.al
         - DebuggerBreakpointCondition.Page.al
@@ -251,7 +251,7 @@ In this task, you will create a AL project in Visual Studio code that you will u
         - DebuggerWatchValueFactBox.Page.al
         - SessionList.Page.al
         
-        You might have to remove references to `SessionList` in ChangeGlobalDimensions.Codeunit.al.
+        You might also have to remove references to `SessionList` in ChangeGlobalDimensions.Codeunit.al.
         
 11. Build and compile your project (press Ctrl+Shift+B).
 
@@ -413,7 +413,7 @@ If you converted the test library form C/AL to AL, you will now create and build
 
 1. Follow steps 1 through 5 in **Task 7** to create an AL project for the test library.  
 
-2. As with base application project, you have to modify the `app.json` file, but this case, you have to change the version and add a dependency on the base application that you created.
+2. As with base application project, you have to modify the `app.json` file, but in this case, you have to change the version and add a dependency on the base application that you created.
 
     - Set the `"version"` to the old application version, such as `14.5.0.0`.
     - Set the `"dependencies"` to include information about your custom the base application. 
@@ -434,17 +434,7 @@ If you converted the test library form C/AL to AL, you will now create and build
 4. Open the **dotnet.al** file for the project, and make the following changes:
 
     - Delete all instances of `Version = '14.0.0.0';` for **Microsoft.Dynamics.Nav** assembly declarations.
-    - For the `DocumentFormat.OpenXml` assembly declaration, remove the `version` and `culture` keys and set `PublicKeyToken = '8fb06cb64d019a17'`.
-
-        ```
-        assembly("DocumentFormat.OpenXml")
-        {
-            PublicKeyToken = '8fb06cb64d019a17';
-            ...
-        ```
 5. Build the project.
-
-    Currently, there is a know issue with the LibraryVerifyXMLSchema.Codeunit.al. You have to fix reference to `XmlTextReader`.  
 
 ## Next Steps
 
