@@ -51,13 +51,10 @@ Sets the formats of the source expression for various data types.
 |||  
 |-|-|  
 |FormatProperty :=|\[\<Char> &#124; \<Field> &#124; \<Attribute>\]|  
-|||  
 |\<Char> :=|character with ASCII value \[32..255\]|  
-|||  
 |\<Field> :=|'\<' \<FieldName> \[',' \<FieldLen>\] '>'<br /><br /> \[, \<Attribute>\]|  
 |\<FieldName> :=|literal name of field \(format component\)|  
 |\<FieldLen> :=|length of field \(0 or no entry means that the length is dynamic\)|  
-|||  
 |\<Attribute> :=|\['\<' \<AttributeName> ',' \<Char> '>'\]|  
 |\<AttributeName> :=|\[Standard Format &#124; 1000Character &#124; Comma &#124; Overflow &#124; Filler Character &#124; Precision\]|  
   
@@ -219,7 +216,7 @@ Sets the formats of the source expression for various data types.
 |<16byte>|3|EA48A3E048E04AB7B1A1E3EA85BF1B75|  
 |<4byte>-<2byte>-<2byte>-<2byte>-<6byte>|4|EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75|  
 |(<4byte>-<2byte>-<2byte>-<2byte>-<6byte>)|5|(EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75)|  
-|{0X<4byte>,0X<2byte>,0X<2byte>,{0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>})|5|{0XEA48A3E0,0X48E0,0X4AB7,{0XB1,0XA1,0XE3,0XEA,0X85,0XBF,0X1B,0X75}}|  
+|{0X<4byte>,0X<2byte>,0X<2byte>,{0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>})|6|{0XEA48A3E0,0X48E0,0X4AB7,{0XB1,0XA1,0XE3,0XEA,0X85,0XBF,0X1B,0X75}}|  
 |XML format|9|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
 
 |**Enum value**|**Format**|**Example**|  
