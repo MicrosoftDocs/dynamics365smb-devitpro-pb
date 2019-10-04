@@ -213,9 +213,13 @@ Sets the formats of the source expression for various data types.
 
 |**GUID**|**Format**|**Example**|  
 |----------------|----------------|-----------------|  
-|{\<Text>}|0|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
-|{\<Text>}|1|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
-|{\<Text>}|2|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|{<4byte>-<2byte>-<2byte>-<2byte>-<6byte>}|0|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|{<4byte>-<2byte>-<2byte>-<2byte>-<6byte>}|1|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|{<4byte>-<2byte>-<2byte>-<2byte>-<6byte>}|2|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|<16byte>|3|EA48A3E048E04AB7B1A1E3EA85BF1B75|  
+|<4byte>-<2byte>-<2byte>-<2byte>-<6byte>|4|EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75|  
+|(<4byte>-<2byte>-<2byte>-<2byte>-<6byte>)|5|(EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75)|  
+|{0X<4byte>,0X<2byte>,0X<2byte>,{0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>})|5|{0XEA48A3E0,0X48E0,0X4AB7,{0XB1,0XA1,0XE3,0XEA,0X85,0XBF,0X1B,0X75}}|  
 |XML format|9|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
 
 |**Enum value**|**Format**|**Example**|  
