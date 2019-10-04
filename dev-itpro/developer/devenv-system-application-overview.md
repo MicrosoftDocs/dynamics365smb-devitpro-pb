@@ -35,7 +35,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Azure AD User|Retrieves and updates a user from the Azure AD Graph API.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20User/README.md)|
 |Azure Key Vault|Stores Azure Key Vault secrets for deployments.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20Key%20Vault/README.md)|
 |BLOB Storage|Stores and manages data in a binary format.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/BLOB%20Storage/README.md)|
-|Base64|Converts text and from base 64.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Base64/README.md)|
+|Base64|Converts text and from base 64.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Base64%20Convert/README.md|
 |Caption Class|Defines how the CaptionClass property displays captions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md)|
 |Client Type Management|Allows testing of code that relies on different types of clients.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Client%20Type%20Management/README.md)|
 |Confirm Management|Determines whether a confirm dialog displays when logic is run.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Confirm%20Management/README.md)|
