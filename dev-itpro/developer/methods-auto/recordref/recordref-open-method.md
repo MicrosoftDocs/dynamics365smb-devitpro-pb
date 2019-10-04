@@ -53,7 +53,7 @@ The name of the company to which you want to change. If you omit this parameter,
 var r : record 2000000006;
 ```
 ## Example  
- The following example uses the OPEN method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a message box. At the end of the display, the [CLOSE Method \(RecordRef\)](../../methods/devenv-close-method-recordref.md) closes the table. This example requires that you create the following global variable and text constants.  
+ The following example uses the OPEN method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a message box. At the end of the display, the [CLOSE Method \(RecordRef\)](../../methods/devenv-close-method.md) closes the table. This example requires that you create the following global variable and text constants.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

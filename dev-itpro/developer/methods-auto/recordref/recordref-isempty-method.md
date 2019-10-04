@@ -47,7 +47,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
  This method works the same as the [ISEMPTY Method \(Record\)](../../methods/devenv-isempty-method-record.md).  
 
 ## Example  
- The following example opens table 18, the customer table as a RecordRef variable that is named. CustomerRecref. The [ISEMPTY Method \(RECORDREF\)](../../methods/devenv-isempty-method-recordref.md) determines whether the table is empty. The message box displays **No** because the Customer table is not empty. **No** represents **false**. This example requires that you create the following global variable and text constant.  
+ The following example opens table 18, the customer table as a RecordRef variable that is named. CustomerRecref. The [ISEMPTY Method \(RECORDREF\)](../../methods/devenv-isempty-method.md) determines whether the table is empty. The message box displays **No** because the Customer table is not empty. **No** represents **false**. This example requires that you create the following global variable and text constant.  
 
 |Variable name|DataType|  
 |-------------------|--------------|  

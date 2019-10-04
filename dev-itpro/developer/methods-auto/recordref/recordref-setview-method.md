@@ -35,7 +35,7 @@ The string format is the same as the SourceTableView property on pages.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The value of the *String* parameter can be returned by the [GETVIEW Method \(RecordRef\)](../../methods/devenv-getview-method-recordref.md).  
+ The value of the *String* parameter can be returned by the [GETVIEW Method \(RecordRef\)](../../methods/devenv-getview-method.md).  
   
  If the SETVIEW method is executed with an empty string, all the filters are removed and the primary key is used.  
   
@@ -44,7 +44,7 @@ The string format is the same as the SourceTableView property on pages.
  This method works the same as the [SETVIEW Method \(Record\)](../../methods/devenv-setview-method-record.md).  
   
 ## Example  
- The following example opens the Customer \(18\) table as a RecordRef variable that is named CustomerRecRef. The SETVIEW method sets the sort key to the Name field, sort order to Ascending and sets a filter that selects records between 1000 and 2000. The [GETVIEW Method \(RecordRef\)](../../methods/devenv-getview-method-recordref.md) retrieves the sort order, key and filters that have been set and stores the value in the ViewString variable. The value in the ViewString variable is displayed in a message box. This example requires that you create the following global variables and text constant.  
+ The following example opens the Customer \(18\) table as a RecordRef variable that is named CustomerRecRef. The SETVIEW method sets the sort key to the Name field, sort order to Ascending and sets a filter that selects records between 1000 and 2000. The [GETVIEW Method \(RecordRef\)](../../methods/devenv-getview-method.md) retrieves the sort order, key and filters that have been set and stores the value in the ViewString variable. The value in the ViewString variable is displayed in a message box. This example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

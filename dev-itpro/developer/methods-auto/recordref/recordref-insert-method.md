@@ -50,10 +50,10 @@ Specifies whether to run the AL code in the OnInsert Trigger. If this parameter 
  This method works the same as the [INSERT Method \(Record\)](../../methods/devenv-insert-method-record.md).  
   
 ## Example  
- The following example opens a table 18 \(Customer\) with a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) creates a FieldRef variable that is named MyFieldRef for the field. The [INIT Method \(RecordRef\)](../../methods/devenv-init-method-recordref.md) initializes the values in the fields by using default values and then the INSERT method inserts a new record. The new record is 1120. This is the primary key for the new record.  
+ The following example opens a table 18 \(Customer\) with a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](../../methods/devenv-field-method.md) creates a FieldRef variable that is named MyFieldRef for the field. The [INIT Method \(RecordRef\)](../../methods/devenv-init-method.md) initializes the values in the fields by using default values and then the INSERT method inserts a new record. The new record is 1120. This is the primary key for the new record.  
   
 > [!NOTE]  
->  In this example, the INIT method is called before the primary key is assigned a value. The INIT method does not initialize primary key fields. Therefore calling the [INIT Method \(RecordRef\)](../../methods/devenv-init-method-recordref.md) before or after you assign values to the primary key field does not make any difference.  
+>  In this example, the INIT method is called before the primary key is assigned a value. The INIT method does not initialize primary key fields. Therefore calling the [INIT Method \(RecordRef\)](../../methods/devenv-init-method.md) before or after you assign values to the primary key field does not make any difference.  
   
  This example requires that you create the following global variables and text constants.  
   
