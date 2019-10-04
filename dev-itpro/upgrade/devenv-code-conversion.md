@@ -34,7 +34,7 @@ Compiling all the objects is a prerequisite for a successful and complete export
 - C/SIDE ([!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]). See [Compiling Objects](../cside/cside-compiling-objects.md).
 - [Compile-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-psPowerShell) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Make sure to run this as an administrator.
 
-## Task 3: Export the application from the database to the new TXT syntax
+## Task 3: Export the application objects to the new TXT syntax
 
 Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject?view=businesscentral-ps) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. It is important to:
 
@@ -241,18 +241,18 @@ In this task, you will create a AL project in Visual Studio code that you will u
 
      Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on version 15. To avoid compilation errors, delete the following objects:
     
-        - Debugger.Page.al
-        - DebuggerBreakpointCondition.Page.al
-        - DebuggerBreakpointList.Page.al
-        - DebuggerCallstackFactBox.Page.al
-        - DebuggerCodeViewer.Page.al
-        - DebuggerManagement.Codeunit.al
-        - DebuggerVariableList.Page.al
-        - DebuggerWatchValueFactBox.Page.al
-        - SessionList.Page.al
+    - Debugger.Page.al
+    - DebuggerBreakpointCondition.Page.al
+    - DebuggerBreakpointList.Page.al
+    - DebuggerCallstackFactBox.Page.al
+    - DebuggerCodeViewer.Page.al
+    - DebuggerManagement.Codeunit.al
+    - DebuggerVariableList.Page.al
+    - DebuggerWatchValueFactBox.Page.al
+    - SessionList.Page.al
         
-        You might also have to remove references to `SessionList` in ChangeGlobalDimensions.Codeunit.al.
-        
+    You might also have to remove references to `SessionList` in ChangeGlobalDimensions.Codeunit.al.
+    
 11. Build and compile your project (press Ctrl+Shift+B).
 
     The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again.
