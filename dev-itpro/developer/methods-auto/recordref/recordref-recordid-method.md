@@ -38,7 +38,7 @@ The ID of the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The [FINDLAST Method \(RecordRef\)](../../methods/devenv-findlast-method.md) finds the last record in the table. The record id of the last record is retrieved, stored in the RecID variable displayed in message box. This example requires that you create the following global variables and text constant.  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The [FINDLAST Method \(RecordRef\)](recordref-findlast-method.md) finds the last record in the table. The record id of the last record is retrieved, stored in the RecID variable displayed in message box. This example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  
