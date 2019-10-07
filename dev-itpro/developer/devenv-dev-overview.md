@@ -26,7 +26,7 @@ For more information on how to group a set of disparate project folders into one
 
 
 > [!NOTE]  
-> A single .al file may contain multiple objects. 
+> A single .al file may contain multiple objects.
 
 There are two other special objects which are specifically used for building extensions. Table extension objects and page extension objects are used for defining additive or overriding changes to table or page objects. For example, an extension for managing a business that sells organic food may define a table extension object for the Item table that contains two additional fields, `Organic` and `Produced Locally`. The `Organic` and `Produced Locally` fields are not usually present in the Item table, but through the table extension these data fields will now be available to store data in and to access from code. You can then use the page extension object to display the fields that you added to the table object.
 
