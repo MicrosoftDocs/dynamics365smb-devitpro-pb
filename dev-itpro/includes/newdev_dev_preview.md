@@ -1,1 +1,0 @@
-The Microsoft Dynamics NAV ‘Tenerife’ Developer Preview is still evolving with frequent updates. Follow us on the [Dynamics NAV Team Blog](https://go.microsoft.com/fwlink/?linkid=834891) for the announcements.

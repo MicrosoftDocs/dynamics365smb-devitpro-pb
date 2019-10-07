@@ -1,1 +1,0 @@
-**DISCONTINUED AFTER:** Business Central Spring 2019
