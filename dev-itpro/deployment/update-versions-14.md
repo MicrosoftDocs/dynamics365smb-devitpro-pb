@@ -27,7 +27,10 @@ The following table lists the cumulative updates that have been released for the
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
-|[4514872](https://support.microsoft.com/en-us/help/4514872) |Cumulative Update 02 |August, 2019|Application Build 34444</br>Platform Build 34251|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4522949](https://support.microsoft.com/en-us/help/4522949) |Cumulative Update 05 |October, 2019|Application 36463</br>Platform Build 36457|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4518535](https://support.microsoft.com/en-us/help/4518535) |Cumulative Update 04 |September, 2019|Application Build 35970</br>Platform Build 35916|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4515445](http://support.microsoft.com/help/4515445) |Cumulative Update 03 |August, 2019|Application Build 35602</br>Platform Build 35570|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4514872](https://support.microsoft.com/en-us/help/4514872) |Cumulative Update 02 |July, 2019|Application Build 34444</br>Platform Build 34251|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4501146](https://support.microsoft.com/en-us/help/4501146) |Cumulative Update 01 |May, 2019|Application Build 32615</br>Platform Build 32600|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 
 ## See Also
