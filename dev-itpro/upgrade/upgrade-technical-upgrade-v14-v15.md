@@ -56,7 +56,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 ## Task 2: Convert your application from C/AL to AL
 
-The first thing to do is convert your solution from C/AL to AL. For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
+Convert your solution from C/AL code to AL code. For more information, see [Code Conversion from C/AL to AL](devenv-code-conversion.md).
 
 ## <a name="Preparedb"></a> Task 3: Prepare the application database for technical upgrade
 
@@ -111,12 +111,20 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
 This task runs a technical upgrade on the application database to convert it from the version 14.0 platform to the version 15.0 platform. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
 
 1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator.
-2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
+2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
 
     ```
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
+    When completed, a message similar to following displays in the console:
 
+    ```
+    DatabaseServer      : .\BCDEMO
+    DatabaseName        : Demo Database BC (14-0)
+    DatabaseCredentials :
+    DatabaseLocation    :
+    Collation           :
+    ```
 ## Task 5: Connect and configure the version 15 server instance
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade, and can be reverted after you complete the upgrade.
@@ -307,6 +315,8 @@ Now, you can install the Microsoft and 3rd-party extensions that were installed 
     ```
     Install-NAVApp -ServerInstance BC150 -Name "Sales and Inventory Forecast" -Version 14.5.35930.0 -tenant default
     ```
+4. Repeat steps 2 and 3 for each extension and on each tenant.
+
 Now, your application is fully upgraded to the version 15 platform.
 
 ## Task 10: Post-upgrade

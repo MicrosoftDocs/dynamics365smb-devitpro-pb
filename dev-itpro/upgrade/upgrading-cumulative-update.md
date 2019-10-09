@@ -43,8 +43,14 @@ The following components are part of the [!INCLUDE[prodshort](../developer/inclu
 
 To upgrade to the latest platform the database must be converted by using the Dynamics NAV Development Environment.
 
-1. Uninstall the current Business Central components.
-2. Install Business Central components of the cumulative update.
+1. (Single-tenant deployment only) Uninstall all extensions. 
+
+    If the [!INCLUDE[server](../developer/includes/server.md)] is configured as a single-tenant instance, you must uninstall all extensions from tenant. For example, using the [Uninstall-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], you can run the following command:
+
+    ```
+    Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
+    ``` 
+1. Install Business Central components of the cumulative update.
 
     From the DVD folder, run setup.exe to install Business Central. As a minimum, install the following components: Server, Web Server Components, SQL Server Components, and the Dynamics NAV Development Environment. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 3. Start the new [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)] as an administrator
