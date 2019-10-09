@@ -2,7 +2,7 @@
 title: "RecordRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,9 @@ The following methods are available on instances of the RecordRef data type.
 |[RecordId()](recordref-recordid-method.md)|Gets the RecordID of the record that is currently selected in the table. If no table is selected, an error is generated.|
 |[ChangeCompany([String])](recordref-changecompany-method.md)|Redirects references to table data from one company to another.|
 |[Init()](recordref-init-method.md)|Initializes a record in a table.|
-|[Insert([Boolean])](recordref-insert-method.md)|Inserts a record into a table.|
+|[Insert()](recordref-insert--method.md)|Inserts a record into a table without executing the code in the OnInsert trigger.|
+|[Insert(Boolean)](recordref-insert-boolean-method.md)|Inserts a record into a table.|
+|[Insert(Boolean, Boolean)](recordref-insert-boolean-boolean-method.md)|Inserts a record into a table.|
 |[Modify([Boolean])](recordref-modify-method.md)|Modifies a record in a table.|
 |[Delete([Boolean])](recordref-delete-method.md)|Deletes a record in a table.|
 |[DeleteAll([Boolean])](recordref-deleteall-method.md)|Deletes all records in a table that fall within a specified range.|

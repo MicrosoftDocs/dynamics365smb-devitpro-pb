@@ -2,7 +2,7 @@
 title: "Find Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ Specifies how to perform the search. The table will be searched until the record
 -   +  search for the last record in the table (+ can only be used alone)
 -   -  search for the first record in the table (- can only be used alone)
 You can combine the '=', '>', and '<' characters. If this parameter contains '=', '>', or '<', then you must assign value to all fields of the current and primary keys before you call FIND.
-          
+  
 
 
 ## Return Value

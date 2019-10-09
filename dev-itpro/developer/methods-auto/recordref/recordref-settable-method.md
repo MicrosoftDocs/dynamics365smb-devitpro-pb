@@ -2,7 +2,7 @@
 title: "SetTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Rec*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-The Record for which you want to specify a table.  
+Specifies the Record that you want to refer to the table.  
 
 
 
