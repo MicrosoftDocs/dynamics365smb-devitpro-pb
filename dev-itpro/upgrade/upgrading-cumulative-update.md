@@ -9,6 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Installing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Cumulative Update
 This article describes how to install a cumulative update for[!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. A cumulative update is a cumulative set of files that includes all hotfixes and regulatory features that have been released for Business Central.

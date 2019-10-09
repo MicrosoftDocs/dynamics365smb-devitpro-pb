@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: kepontop
+author: jswymer
 ---
 
 # Data Encryption at Rest

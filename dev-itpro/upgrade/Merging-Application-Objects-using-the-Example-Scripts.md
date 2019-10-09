@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Merging Application Objects using the Example Scripts
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media includes a folder with examples of how you can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to compare and merge application objects. In the **WindowsPowerShellScripts** folder on the product media, the **ApplicationMergeUtilities** folder contains [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] sample scripts and folders that contain demonstration data.  

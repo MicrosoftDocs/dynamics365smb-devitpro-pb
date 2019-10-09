@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 275aad2c-ea2c-4291-8381-82b0b92dc1a0
 caps.latest.revision: 29
-manager: edupont
+author: jswymer
 ---
 # [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Component and System Topology
 

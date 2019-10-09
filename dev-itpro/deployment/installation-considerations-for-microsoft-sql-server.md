@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 
 # Installation Considerations for Microsoft SQL Server and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]

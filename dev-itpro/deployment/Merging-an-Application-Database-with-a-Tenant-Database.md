@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 39a81332-8db1-4e5d-acda-915bf9591880
 caps.latest.revision: 5
+author: jswymer
 ---
 # Migrating to Single-Tenancy From Multitenancy
 

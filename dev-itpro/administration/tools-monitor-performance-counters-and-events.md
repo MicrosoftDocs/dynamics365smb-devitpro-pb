@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 9093c5f4-a594-4b70-90f3-2be0e1c13abd
 caps.latest.revision: 14
+author: SusanneWindfeldPedersen
 ---
 # Tools for Monitoring Performance Counters and Events
 This topic lists some of the tools that you can use to monitor [!INCLUDE[server](../developer/includes/server.md)].  

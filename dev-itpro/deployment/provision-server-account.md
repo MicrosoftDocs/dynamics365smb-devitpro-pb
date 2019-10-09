@@ -8,6 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Provisioning the [!INCLUDE[server](../developer/includes/server.md)] Service Account
 The [!INCLUDE[server](../developer/includes/server.md)] account is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients to log on to the [!INCLUDE[server](../developer/includes/server.md)] instance. The [!INCLUDE[server](../developer/includes/server.md)] then uses the service account to log on to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. When you install [!INCLUDE[server](../developer/includes/server.md)], you identify an Active Directory account to provide credentials for the server. By default, Setup runs [!INCLUDE[server](../developer/includes/server.md)] under the Network Service account, a predefined local account used by the service control manager. This account has minimum privileges on the local computer and acts as the computer on the network.  

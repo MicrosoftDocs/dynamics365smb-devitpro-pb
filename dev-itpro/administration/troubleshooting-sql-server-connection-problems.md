@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: SusanneWindfeldPedersen
 ---
 # Troubleshooting: SQL Server Connection Problems
 After installing and configuring [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you may not be able to connect the [!INCLUDE[rtc](../developer/includes/rtc_md.md)] to [!INCLUDE[server](../developer/includes/server.md)]. In this case you see an error message like the following when you attempt to start the [!INCLUDE[rtc](../developer/includes/rtc_md.md)].  

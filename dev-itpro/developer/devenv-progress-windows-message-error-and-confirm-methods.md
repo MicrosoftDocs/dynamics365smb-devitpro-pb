@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 5d2c7db2-fc8b-46e1-a1c3-2be06f806258
 caps.latest.revision: 17
+author: SusanneWindfeldPedersen
 ---
 
 
