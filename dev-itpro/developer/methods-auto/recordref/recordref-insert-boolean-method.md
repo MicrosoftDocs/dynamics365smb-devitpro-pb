@@ -1,5 +1,5 @@
 ---
-title: "ReadConsistency Method"
+title: "Insert Method"
 ms.author: solsen
 ms.custom: na
 ms.date: 10/09/2019
@@ -13,30 +13,32 @@ author: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ReadConsistency Method
-Gets a value indicating whether read consistency is enabled.
+# Insert Method
+Inserts a record into a table.
 
 
 ## Syntax
 ```
-Ok :=   RecordRef.ReadConsistency()
+[Ok := ]  RecordRef.Insert(RunTrigger: Boolean)
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
+*RunTrigger*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+If this parameter is true, the code in the OnInsert Trigger is executed. If this parameter is false, the code in the OnInsert trigger is not executed. The default value is false.  
+
+
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if read consistency is enabled; otherwise, **false**.  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

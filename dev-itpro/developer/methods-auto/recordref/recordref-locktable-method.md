@@ -2,7 +2,7 @@
 title: "LockTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Wait*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies what to do if the table is already locked. If this parameter is true and if another application has already locked the table, the system will wait until the table is unlocked. If this parameter is false and if another application has already locked the table, a run-time error occurs.
-          
+Specifies what to do if the table is already locked. If this parameter is true and if another application has already locked the table, the system will wait until the table is unlocked. If this parameter is false and if another application has already locked the table, a run-time error occurs.  
 *VersionCheck*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If this parameter is true, the version of the RecordRef will be checked. If this parameter is false, blank, or not used, the version will not be checked.  
