@@ -33,8 +33,8 @@ The following example gets the NAV App runtime package with the provided name an
 For publishing and installing the package, use the [Publish-NavApp](https://go.microsoft.com/fwlink/?linkid=616079) and the [Install-NAVApp](https://go.microsoft.com/fwlink/?linkid=618056) PowerShell cmdlets. 
 
 ## Limitations
-The limitation of runtime packages is that they only work for on-premise installations and therefore cannot be submitted to AppSource. Moreover, the debugging experience is very limited since no source code is available. 
- 
+The limitation of runtime packages is that they only work for on-premise installations and therefore cannot be submitted to AppSource. Moreover, debugging into an extension to view the source code is not allowed by default. To enable it, you must specify the parameter `-ShowMyCode` and set it to true.
+
 ## See also
 [Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079)  
 [Install-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=618056)  
