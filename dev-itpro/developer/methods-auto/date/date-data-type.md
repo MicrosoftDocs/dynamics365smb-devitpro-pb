@@ -31,7 +31,7 @@ The displayed text format of the date is determined by your Region and Language 
   
 ## Syntax
 The syntax for defining DateTime format follows the [ISO standard](https://en.wikipedia.org/wiki/ISO_8601). 
-- The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 26th of March, 2018.
+- The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 25th of March, 2018.
 
  To assign a normal date to a variable, use the following format: `yyyymmddD`. 
   

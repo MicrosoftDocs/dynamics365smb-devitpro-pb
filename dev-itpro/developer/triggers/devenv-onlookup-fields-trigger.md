@@ -19,6 +19,8 @@ Causes the system to display a lookup page.
 - Fields  
 
 ## Remarks  
+The [Lookup Property](../properties/devenv-lookup-property.md) must be set to **True** to enable the lookup.
+
  There are three lookup options:  
 
 1.  Default Lookup - The lookup into the table is performed without applying filters or other special parameters.  

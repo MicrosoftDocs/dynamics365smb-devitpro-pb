@@ -40,9 +40,9 @@ The string format is the same as the SourceTableView property on pages.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If the [SETVIEW Method \(RecordRef\)](../../methods/devenv-setview-method-recordref.md) has been executed, the *String* parameter will return the value set by SETVIEW.  
+ If the [SETVIEW Method \(RecordRef\)](recordref-setview-method.md) has been executed, the *String* parameter will return the value set by SETVIEW.  
   
- This method works the same way as the [GETVIEW Method \(Record\)](../../methods/devenv-getview-method-record.md).  
+ This method works the same way as the [GETVIEW Method \(Record\)](recordref-getview-method.md).  
   
 ## Example  
  The following example opens the Customer table as a RecordRef variable that is named RecRef. The RecRef variable uses the GETVIEW method to retrieve the field that the table is sorted on and stores the value in the varView variable. The Customer table does not have any filters and keys set so no filters or keys are displayed. The *UseCaptions* parameter is set to **true** so the name of the field is displayed. If you set the *UseCaptions* to **false**, the field number will be displayed. This example requires that you create the following global variables and text constant.  

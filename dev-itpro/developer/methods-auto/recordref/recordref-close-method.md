@@ -34,7 +34,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
  You must use this method if you have several recordrefs defined as variables because these will be maintained until the variable gets out of scope.  
   
 ## Example  
- The following example opens tables 3 through 10 as a Recordref variable that is named MyRecordRef. For each table that is open, the [CAPTION Method \(RecordRef\)](../../methods/devenv-caption-method-recordref.md) retrieves the caption of the table and displays the table number and the caption in a messages box. After each caption is displayed, the CLOSE method closes the table before the next table is open. This example requires that you create the following global variables and text constants.  
+The following example opens tables 3 through 10 as a Recordref variable that is named MyRecordRef. For each table that is open, the [CAPTION Method (RecordRef)](recordref-caption-method.md) retrieves the caption of the table and displays the table number and the caption in a messages box. After each caption is displayed, the CLOSE method closes the table before the next table is open. This example requires that you create the following global variables and text constants.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

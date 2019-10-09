@@ -96,21 +96,6 @@ When using the intelligent cloud replication for Dynamics GP 2018 R2, the follow
 
      This data can be used in Power BI reports and Power Apps. In [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, the data is included in the SmartList views in the **Customers**, **Vendors**, and **Items** lists. Technically, the data is stored in table extensions.  
 
-## Data replication from Dynamics NAV
-
-The data replication process for [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] is very similar to the process for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises with one major exception: A transformation process that is run on tables that have upgrade logic on them because of differences in data structure between [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] and [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
-
-In order to set up the data replication process, you must upgrade to [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] CU 15 or later. Cumulative update 15 added an extension that is needed to set up the replication process.  
-
-From the standpoint of walking through the wizard, the process is the same. For more information, see [Connect to the Intelligent Cloud from On-Premises](about-intelligent-edge.md).  
-
-Let’s look at an example of the transformation process. In [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)], the **Sales & Receivables Setup** window includes a field, **Archive Quotes and Orders**, that specifies whether to automatically archive sales quotes and sales orders when a sales quote or order is deleted. In [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the **Sales & Receivables Setup** window includes an **Archiving** FastTab where you can specify how and when to archive quotes and orders separately.  
-
-> [!div class="mx-imgBorder"]
-> ![Shows the Sales & Receivables page with the Archiving tab](../media/SRsetup.png)
-
-When you connect your [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] to [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the data replication process must make the relevant data transformation to put the correct values into the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] table. Technically, it is the same process that is used for upgrading from [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
-
 <!-- ## Data replication from Dynamics SL
 
 When using the intelligent cloud replication for Dynamics SL 2018 CU 1, the following information is replicated from Dynamics SL to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online:

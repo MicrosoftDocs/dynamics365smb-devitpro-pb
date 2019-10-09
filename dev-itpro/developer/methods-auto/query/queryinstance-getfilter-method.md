@@ -40,11 +40,8 @@ The filters of the column.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The **GETFILTER** method returns the filters that are currently set for a data column or filter row by the [SETFILTER Method \(Query\)](../../methods-auto/query/queryinstance-setfilter-method.md) method, [SETRANGE Method \(Query\)](../../methods-auto/query/queryinstance-setrange-method.md) method, and the column's [ColumnFilter Property](../../properties/devenv-columnfilter-property.md) in Query Designer. The **GETFILTER** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) in Query Designer or global filters that are set by the **FILTERGROUP** method.  
-  
-> [!NOTE]  
->  A filter row is row in Query Designer that is used to filter on a field that is not included in the resulting dataset. 
-<!-- Links For more information, see [Understanding Query Filters](Understanding-Query-Filters.md) and [How to: Set Up Filter Rows in Query Designer](How-to-Set-Up-Filter-Rows-in-Query-Designer.md). -->  
+ The **GETFILTER** method returns the filters that are currently set for a data column or filter row by the [SETFILTER Method \(Query\)](../../methods-auto/query/queryinstance-setfilter-method.md) method, [SETRANGE Method \(Query\)](../../methods-auto/query/queryinstance-setrange-method.md) method, and the column's [ColumnFilter Property](../../properties/devenv-columnfilter-property.md). The **GETFILTER** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) or global filters that are set by the **FILTERGROUP** method.  
+
   
  You can call the **GETFILTER** method multiple times and at any point in the code. If you call the **GETFILTER** method before the **SETFILTER** or **SETRANGE** method, then the **GETFILTER** method returns only filters on the column that are set by the column's ColumnFilter property.  
   
