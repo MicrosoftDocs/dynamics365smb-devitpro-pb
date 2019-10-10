@@ -7,11 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: ccb82e83-31c7-40f2-b99c-7797bb2d0f3d
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnAfterAssignVariable Trigger
 Runs after the value defined in the XML document is assigned to the text variable.  

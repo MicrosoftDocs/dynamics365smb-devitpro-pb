@@ -7,12 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 26c59262-cd85-4e52-87d2-b77679f67976
 author: SusanneWindfeldPedersen
- 
 ---
-
-
 
 # OnInitXMLport Trigger
 Runs when the XMLport is loaded and before any table views and filters are set.  

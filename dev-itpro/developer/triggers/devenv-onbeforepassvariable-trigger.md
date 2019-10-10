@@ -7,11 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: ff936806-3949-4307-9f3b-ee2812f7ec96
 author: SusanneWindfeldPedersen
- 
 ---
-
 
 # OnBeforePassVariable Trigger
 Runs after the source expression has been formatted into a text variable and before the text variable is passed to the XML document.  
