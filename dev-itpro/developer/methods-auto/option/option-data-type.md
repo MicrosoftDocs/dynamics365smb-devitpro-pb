@@ -21,6 +21,8 @@ Denotes an option value. In the code snippet below, you can see how the Option d
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax example
+
 ```
 procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
     var 
