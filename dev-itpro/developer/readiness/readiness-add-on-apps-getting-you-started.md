@@ -106,16 +106,17 @@ It is key that you use the same display name and email throughout your app submi
 Partner Center is the single destination to manage your business relationship with Microsoft. 
 [Get Started by clicking this link](https://partner.microsoft.com/en-us/dashboard/account/v3/enrollment/introduction/azureisv)
 
-NOTE: This has replaced the Cloud Partner Portal. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
+> [!NOTE]  
+> This has replaced the Cloud Partner Portal. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
 
 ## Get onboarded to tools and programs
 
 ### Create your sandbox environment
 
 You have 3 options to work develop against the current version of Microsoft Dynamics 365 Business Central.
-- [If your add-on is lightweight, it might be sufficient to use a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-get-started) 
-- [If you want to setup a Docker-based development environment on Azure, you can use:](http://aka.ms/BCSandboxAzure) 
-- [If you want to setup a local Docker-based developer environment, you can download a PowerShell script available at](http://aka.ms/BCSandboxLocal) 
+- If your add-on is lightweight, it might be sufficient to use a [sandbox environment](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-get-started) 
+- If you want to setup a Docker-based development environment on Azure, you can [use](http://aka.ms/BCSandboxAzure) 
+- If you want to setup a local Docker-based developer environment, you can download a PowerShell script available [here](http://aka.ms/BCSandboxLocal) 
 
 ## The “Ready to Go” program
 
