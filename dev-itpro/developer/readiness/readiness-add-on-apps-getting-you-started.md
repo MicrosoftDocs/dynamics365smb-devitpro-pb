@@ -82,7 +82,7 @@ You will have to make a choice which object range is best for you. Some partners
 ## Developer account
 A developer account enables you to submit apps and add-ins to Microsoft’s marketplaces, including the Windows Store, Office Store, Azure Marketplace, and Microsoft AppSource.
 Note, you only need one developer account per company (not one per app submission).
-- [Register (or check if you already have access) here:](https://developer.microsoft.com/en-us/store/register)
+- Register (or check if you already have access) [here](https://developer.microsoft.com/en-us/store/register)
 - A one-time registration fee applies
 
 *Choosing a primary contact email and publisher display name*
