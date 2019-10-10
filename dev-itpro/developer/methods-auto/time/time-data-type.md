@@ -39,7 +39,7 @@ MyTime := 030000T;
 MESSAGE(FORMAT(MyTime));  
 ```  
   
-The following shows what the message windows display on a computer with the regional format set to English (United States).  
+The following shows what the message windows display accordingly on a computer with the regional format set to English (United States) for the syntax examples above.  
   
 **11:59:00 AM**
   
