@@ -148,7 +148,7 @@ To start the registration process, your company Global Administrator must first 
 Next, your company Global Administrator must click on the ‘Get Started’ option under the ‘Microsoft Collaborate’ header.
 - Note: If you are properly registered, and have setup your above Developer Account, the registration page should autofill with your Company details. If the page is not filled automatically, please complete the form manually.
 
-Once completed, be sure and click the 'Terms of Use' (TOU) checkbox at the bottom of the registration page. Note: You need to accept the TOU to successfully register (cf. image below).
+Once completed, be sure and click the 'Terms of Use' (TOU) checkbox at the bottom of the registration page. Note: You need to accept the TOU to successfully register.
 
 Click the **Next** button to complete your initial registration. When successful, you will see the image below.
 
@@ -158,7 +158,7 @@ As the final step, to complete registration, click ‘GO TO DASHBOARD’.
 - Please skip this part and move on to the next section called “Getting access to the available builds and engagements” to download packages through Microsoft Collaborate.
 
 If you DO want to add coworkers, please follow the 5 steps below:
-1.	Log on to Microsoft Collaborate with your Global Administrator account on [https://aka.ms/Collaborate](https://aka.ms/Collaborate).
+1.	Log on to Microsoft Collaborate with your Global Administrator account on [aka.ms/Collaborate](https://aka.ms/Collaborate).
 2. Click on the ‘Gear’ Icon on the top right corner of the page and then on ‘Account Settings’ as shown on the image below.
 
 3. Click on ‘Users’ under ‘Settings’ in the grey panel on the left-hand side of the page. The following image will appear.
