@@ -7,11 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: f3b559c5-98d1-4880-9c36-cbff899ff993
 author: SusanneWindfeldPedersen
- 
 ---
-
 
 # OnRename Trigger
 Runs when a user tries to rename a record.  

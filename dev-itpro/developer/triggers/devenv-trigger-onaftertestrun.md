@@ -8,13 +8,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
 author: SusanneWindfeldPedersen
- 
 ms.service: "dynamics365-business-central"
 ---
 
-
 # OnAfterTestRun Trigger
 Runs after a test  of a test codeunit has been run.
+
+## Syntax
 
 ```
 OnAfterTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[128]; MethodTestPermissions : TestPermissions; Success : Boolean)

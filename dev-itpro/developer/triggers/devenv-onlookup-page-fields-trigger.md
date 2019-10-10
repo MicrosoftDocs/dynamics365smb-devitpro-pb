@@ -7,11 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 5718e2d3-26af-437b-b96b-08b588c1eea1
 author: SusanneWindfeldPedersen
- 
 ---
-
 
 # OnLookup (Page fields) Trigger
 Runs in place of the normal lookup features for the current page.  
