@@ -22,7 +22,7 @@ Your app landing page should be built to move prospects effectively through the 
 English is the de facto language that is used on AppSource to ease the validation process and create a uniform user experience.
 
 For you, this means that both the storefront details of your app, and everything that is accessible through it must be in English too.
-- This includes: your app’s landing page, videos, documentation – such as “Learn more” documents, factsheets, set up instructions, privacy policies, SLAs etc. – as well as help, support- and contact options.
+- This includes: your app’s landing page, videos, documentation – such as “Learn more” documents, factsheets, set up instructions, privacy policies, SLAs etc. – as well as help, support, and contact options.
 
 If your app caters to a local language that isn’t English, you can improve the user experience by:
 - Creating a website that has two landing pages (i.e. two language buttons – cf. one in English and one in the given local language). In so doing your customers can switch to the language they master and thus easily be able to find the right docs and contact info by a shift of a button.
