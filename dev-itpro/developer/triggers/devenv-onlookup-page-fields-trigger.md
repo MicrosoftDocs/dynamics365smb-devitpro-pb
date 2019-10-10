@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 5718e2d3-26af-437b-b96b-08b588c1eea1
 author: SusanneWindfeldPedersen
-manager: edupont
+ 
 ---
 
 

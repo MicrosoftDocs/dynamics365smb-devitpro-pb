@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
-manager: edupont
+ 
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
