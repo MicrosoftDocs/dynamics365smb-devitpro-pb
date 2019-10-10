@@ -166,19 +166,18 @@ If you DO want to add coworkers, please follow the 5 steps below:
 4. Click the grey ‘ADD USERS’ button and leave the default choice to ‘Add existing users’ as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey ‘ADD SELECTED’ button (see image below).
 
 5. You have now successfully added your coworker to Collaborate. The added users will appear in your list of users and will now be able to log on to Microsoft Collaborate using the following link:
-[https://aka.ms/Collaborate](https://aka.ms/Collaborate)
+[aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 *Getting access to the available builds and engagements*
 
 1. Register on [Microsoft Collaborate](https://aka.ms/Collaborate) by using your AAD Global Admin account (as described in detail above).
 2. Once you have successfully registered (and added coworkers) on  Microsoft Collaborate, your company’s Azure Active Directory (AAD) global administrator should send us an email to complete the on-boarding [Dynamics 365 Business Central Programs](mailto: Dyn365BEP@microsoft.com). We need to manually assign you to the right programs and engagements. Expect a response from us within 1-2 business days.
 3. In this email to [Dynamics 365 Business Central Programs](mailto: Dyn365BEP@microsoft.com), please specify the following:
-
-- Your ‘Publisher Display Name’
-- The name(s) of the people you have added to Microsoft Collaborate
-- The email address(es) of the people you have added to Microsoft Collaborate (No personal email addresses please)
-- The roles you have given then on Collaborate (Participant, Power user)
-- MPN ID# and registered Partner Name
+    - Your ‘Publisher Display Name’
+    - The name(s) of the people you have added to Microsoft Collaborate
+    - The email address(es) of the people you have added to Microsoft Collaborate (No personal email addresses please)
+    - The roles you have given then on Collaborate (Participant, Power user)
+    - MPN ID# and registered Partner Name
 
 ## STEP 2: List your Add-on app on Microsoft AppSource
 
