@@ -38,14 +38,14 @@ The current caption of the field as a String.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- CAPTION returns the caption of a field. CAPTION first looks for a [CaptionML Property](../../properties/devenv-captionml-property.md).  
+CAPTION returns the caption of a field. CAPTION first looks for a [CaptionML Property](../../properties/devenv-captionml-property.md).  
   
- If it does not find one, it will use the [Name Property](../../properties/devenv-name-property.md). This means that CAPTION is enabled for multilanguage functionality.  
+If it does not find one, it will use the [Name Property](../../properties/devenv-name-property.md). This means that CAPTION is enabled for multilanguage functionality.  
   
- This method is similar to the [FIELDCAPTION Method \(Record\)](../../methods/devenv-fieldcaption-method-record.md) method.  
+This method is similar to the [FIELDCAPTION Method \(Record\)](../record/record-fieldcaption-method.md) method.  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The code uses the [FIELD Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) to loop through field 1 through 9 and creates a FieldRef variable that is named MyFieldRef. For each field, the CAPTION method retrieves the caption of the field, stores it in the varCaption variable and displays it in a message box. This example requires that you create the following global variables and text constant.  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The code uses the [FIELD Method \(RecordRef\)](../recordref/recordref-field-method.md) to loop through field 1 through 9 and creates a FieldRef variable that is named MyFieldRef. For each field, the CAPTION method retrieves the caption of the field, stores it in the varCaption variable and displays it in a message box. This example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  
@@ -58,8 +58,7 @@ The current caption of the field as a String.
 |-------------------|---------------|  
 |Text000|The caption for field %1 is "%2".|  
   
-```  
-  
+```
 CustomerRecref.OPEN(18);  
 FOR i := 1 TO 9 DO BEGIN  
   MyFieldRef := CustomerRecref.FIELD(i);  

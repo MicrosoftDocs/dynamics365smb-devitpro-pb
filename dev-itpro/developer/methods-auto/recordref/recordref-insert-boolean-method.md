@@ -1,5 +1,5 @@
 ---
-title: "CountApprox Method"
+title: "Insert Method"
 ms.author: solsen
 ms.custom: na
 ms.date: 10/09/2019
@@ -13,26 +13,28 @@ author: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CountApprox Method
-Gets an approximate count of the number of records in the table
+# Insert Method
+Inserts a record into a table.
 
 
 ## Syntax
 ```
-Number :=   RecordRef.CountApprox()
+[Ok := ]  RecordRef.Insert(RunTrigger: Boolean)
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
+*RunTrigger*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+If this parameter is true, the code in the OnInsert Trigger is executed. If this parameter is false, the code in the OnInsert trigger is not executed. The default value is false.  
+
+
 ## Return Value
-*Number*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-Approximate number of records in the table.  
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

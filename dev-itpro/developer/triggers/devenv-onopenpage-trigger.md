@@ -8,7 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: c6b911c1-55b2-4837-b1af-32dbe64f84e3
 author: SusanneWindfeldPedersen
 ---
 

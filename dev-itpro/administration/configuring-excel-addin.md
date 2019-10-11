@@ -16,6 +16,9 @@ You can set up the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] dep
 
 Without this add-in, users can open a list page in Excel from the **Open in Excel** action on the page, which does not allow them to push changed data back to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When this add-in is set up, the **Open in Excel** action is replaced by the **Edit in Excel** action.
 
+> [!NOTE]  
+> This feature is only available for the Web client.
+
 >[!NOTE]
 >This Excel add-in is different than the Microsoft Excel Add-in that can be installed together with the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] client by using the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].
 

@@ -27,8 +27,8 @@ The `TextConst` data type is typically used for UI messages; process or error me
 > [!IMPORTANT]  
 > The `TextConst` data type is not included in the .xlf files for translation. Make sure to use the [Label Data Type](../label/label-data-type.md) instead.
 
-
-The data type can be declared with the syntax as shown below:
+## Example
+The data type can be declared with the syntax as shown in the example below.
 
 ```
 codeunit 50100 MyCodeunit
