@@ -28,11 +28,10 @@ To ease your journey, from the initial listing to the final publication of your 
 	
 **Getting you started with Add-on Apps** 
 - STEP 1: Create and set up your accounts
-- STEP 2: List your app on AppSource
 
 **Developing and publishing your Add-on App to AppSource**
-- STEP 3: Develop your app
-- STEP 4: Initiate the validation and publication process
+- STEP 2: Develop your app
+- STEP 3: Initiate the validation and publication process
 
 > [!IMPORTANT]  
 > Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
