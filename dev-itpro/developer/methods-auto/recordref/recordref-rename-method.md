@@ -2,7 +2,7 @@
 title: "Rename Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The new values for the primary key.
-        
+The new values for the primary key.  
 *Value2*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The new values for the primary key.  

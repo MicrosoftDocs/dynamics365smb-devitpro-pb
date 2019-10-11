@@ -2,7 +2,7 @@
 title: "Next Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Steps*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-Defines the direction of the search and how many records to step include. If this parameter is greater than zero, the method will search the number of records specified in Steps forward in the table. If this parameter is less than zero, the method will search the number of records specified in Steps backward in the table. If this parameter is 0, no records are stepped over. If you do not specify this parameter, the method finds the next record.
-          
+Defines the direction of the search and how many records to step include. If this parameter is greater than zero, the method will search the number of records specified in Steps forward in the table. If this parameter is less than zero, the method will search the number of records specified in Steps backward in the table. If this parameter is 0, no records are stepped over. If you do not specify this parameter, the method finds the next record.  
 
 
 ## Return Value
