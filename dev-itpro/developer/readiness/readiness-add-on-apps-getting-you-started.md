@@ -178,6 +178,7 @@ If you DO want to add coworkers, please follow the 5 steps below:
     - The roles you have given then on Collaborate (Participant, Power user)
     - MPN ID# and registered Partner Name
 
+<!--
 ## STEP 2: List your Add-on app on Microsoft AppSource
 
 To list your app, you need to register it on Microsoft AppSource.
@@ -193,10 +194,10 @@ When listing your app you need to specify the following:
 
 *App description: Intended users of the app (cf. IT professional, Developers, Business Users)*
 
-Upon listing your app on AppSource you will receive an email from us that outlines the next steps you need to take along with a list of useful resources that can help you bring your app to AppSource quickly.
+Upon listing your app on AppSource you will receive an email from us that outlines the next steps you need to take along with a list of useful resources that can help you bring your app to AppSource quickly. -->
 
 ## Next steps
-Now that you have completed step 1 and 2 (cf. setting up your accounts and listing your offer on AppSource) you can now proceed to step 3 and 4 (cf. Developing your offer initiating the validation and publication process). Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
+Now that you have completed step 1 (cf. setting up your accounts) you can now proceed to step 2 and 3 (cf. Developing your offer initiating the validation and publication process). Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
 
 ## Useful resources
 
