@@ -9,6 +9,7 @@
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
+#### [Configure the Help Experience](deployment/configure-help.md)
 <!--Ready2Go-->
 ## Ready to Go
 ### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
@@ -28,7 +29,6 @@
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business Central Administration Center](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
 ### [Technical Support of Business Central](technical-support.md)
@@ -46,6 +46,7 @@
 #### [AppSource](deployment/embed-app-appsource.md)
 #### [Sandbox](deployment/embed-app-sandbox.md)
 #### [Ecosystem Features](deployment/embed-app-ecosystem.md)
+### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### [System requirements 2019 release wave 2](deployment/system-requirement-business-central-v15.md)
@@ -78,7 +79,6 @@
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating and Altering Databases](cside/cside-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
-## [Configuring the Help Experience](deployment/configure-help.md)
 <!-- end deployment -->
 <!-- administration-->
 # Administration
