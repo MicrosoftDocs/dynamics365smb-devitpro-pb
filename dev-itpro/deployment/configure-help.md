@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2019
+ms.date: 10/15/2019
 ms.author: edupont
 ---
 
@@ -18,7 +18,7 @@ These and other scenarios are also supported in [!INCLUDE[prodshort](../develope
 
 ## Apps for online tenants
 
-When you build an app for in[!INCLUDE [prodshort](../developer/includes/prodshort.md)] using the AL developer experience, you are expected to comply with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user assistance model. This includes tooltips and context-sensitive links to Help.  
+When you build an app for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] using the AL developer experience, you are expected to comply with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user assistance model. This includes tooltips and context-sensitive links to Help.  
 
 For more information, see [User Assistance Model](../user-assistance.md) and [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
@@ -31,19 +31,17 @@ For deploying [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premi
 
 ### Online library
 
-If you want to use a website that is not based on Help Server, then you must specify the URL in the settings for the Web client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it support.  
+If you want to use a website that is *not* based on Help Server, then you must specify the URL in the settings for the Web client. The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it support.  
 
-For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
+For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following setting:
 
 ```json
     "//BaseHelpUrl":  "The location of Help for this application.",
     "BaseHelpUrl": "https://mysite.com/{0}/documentation/",
-    "//DefaultRelativeHelpPath":  "The Help article to look up if no other article can be found.",
-    "DefaultRelativeHelpPath": "index",
 ```
 
 > [!NOTE]
-> Replace the value of the BaseHelpUrl key with the URL for your own website, such as `https://mysite.com/{0}/documentation/`. The parameter, {0}, represents the locale of the browser that the user is using, such as en-us or da-dk, and is set automatically at runtime.
+> Replace the value of the BaseHelpUrl key with the URL for your own website. The parameter, {0}, represents the locale of the browser that the user is using, such as en-us or da-dk, and is set automatically at runtime.
 
 ### Help Server
 
@@ -52,9 +50,7 @@ If you want to use Help Server, then you must specify the server and port in the
 For the Web client, which is accessed by users from a browser or from the mobile apps, the navsettings.json file must contain the following settings:
 
 ```json
-    "//HelpServer": [
-        "Name of the Dynamics NAV Help Server to connect to."
-        ],
+    "//HelpServer": "Name of the Dynamics NAV Help Server to connect to.",
     "HelpServer": "https://myserver.com",
     "//HelpServerPort":  "The listening TCP port for the Dynamics NAV Help Server. Valid range: 1-65535",
     "HelpServerPort": "49000",
@@ -63,7 +59,7 @@ For the Web client, which is accessed by users from a browser or from the mobile
 In the example, *https://myserver.com* represents the URL to the Help Server instance. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and ITpro content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!IMPORTANT]
-> If you use Help Server, the UI-to-Help mapping functionality that is described in [Configure Context-Sensitive Help](../help/context-sensitive-help.md) does not work. Instead, you must rely on the legacy Help lookup mechanism that hinges on .HTM files with filenames that reflect the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server?target=_blank).
+> If you use Help Server, the UI-to-Help mapping functionality that is described in [Configure Context-Sensitive Help](../help/context-sensitive-help.md) does not work. Neither does the original Help lookup mechanism that was based on filenames that reflected the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server?target=_blank).
 
 > [!TIP]
 > If you are upgrading from [!INCLUDE [navnowlong_md](../developer/includes/navnowlong_md.md)], you can reuse your existing Help Server content by simply replacing the product name and make any other changes that apply to your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment.  
@@ -86,7 +82,8 @@ If you want to customize or extend the Microsoft Help, you can fork our public r
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [System Requirements](system-requirement-business-central.md)  
 [Resources for Help and Support](../help-and-support.md)  
-[Blog post: Extending and customizing the Help](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/11/extending-and-customizing-help)  
-[Blog post: Collaborate on content for Business Central](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/12/15/collaborate-on-content-for-business-central)  
+[Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central/)  
+[Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
+[Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
