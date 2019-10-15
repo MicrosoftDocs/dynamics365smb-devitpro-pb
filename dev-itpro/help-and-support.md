@@ -6,12 +6,12 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2019
+ms.date: 10/15/2019
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
 
-As a [!INCLUDE[prodshort](includes/prodshort.md)] partner, you have access to resources that can help you support your customers the users of [!INCLUDE[prodshort](includes/prodshort.md)], and you have access to resources that can help you be more productive as a partner.  
+As a [!INCLUDE[prodshort](includes/prodshort.md)] partner, you have access to resources that can help you support your [!INCLUDE[prodshort](includes/prodshort.md)] customers, and you have access to resources that can help you be more productive as a partner.  
 
 This page outlines the resources available to you.  
 
@@ -27,13 +27,17 @@ The functionality in the default version of [!INCLUDE[prodshort](includes/prodsh
 
 ### Customize and extend the user assistance
 
-When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.md)], they have access to user assistance according to the [!INCLUDE[prodshort](includes/prodshort.md)] user assistance model. If you customize [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User Assistance Model](user-assistance.md) and [Configure the Help Experience](deployment/configure-help.md).  
+When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.md)] online, or before they buy [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, they have access to tooltips that can help them get unblocked, and context-sensitive links to learn more according to the [!INCLUDE[prodshort](includes/prodshort.md)] user assistance model. If you customize or extend [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User Assistance Model](user-assistance.md) and [Configure the Help Experience](deployment/configure-help.md).  
 
 ## Support
 
 As a [!INCLUDE[prodshort](includes/prodshort.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prodshort](includes/prodshort.md)] tenants, and you are the first line of support. You can customize the support experience, and you have access to information that can help you troubleshoot any issues that your customers report.  
 
 For more information, see [Technical Support](technical-support.md).  
+
+## Training
+
+You and your customers can find free eLearning content on the Microsoft Learn site. Find the related learning paths at [aka.ms/bclearn](https://aka.ms/bclearn).  
 
 ## Resources
 
@@ -83,6 +87,8 @@ You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central a
 - For collaboration in preview or beta versions of the AL language in Visual Studio Code, use [GitHub](https://github.com/microsoft/al)  
 - For Microsoft partners, for versions already in general availability and supported, file requests through [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/)  
 - For Microsoft partners who have discovered a bug in a in preview or beta version, use [MS Collaborate](/collaborate/)  
+
+For problems reported by your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers, use the [!INCLUDE [tenant-admin-center](administration/tenant-admin-center.md)] to troubleshoot and submit support requests. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
 
 ## Trials
 
