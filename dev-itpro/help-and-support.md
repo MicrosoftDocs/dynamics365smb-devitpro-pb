@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/15/2019
+ms.date: 10/16/2019
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -22,7 +22,7 @@ The functionality in the default version of [!INCLUDE[prodshort](includes/prodsh
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central) |Use this library to learn about business functionality. |
+> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central/) |Use this library to learn about business functionality. |
 > |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prodshort](includes/prodshort.md)].|
 
 ### Customize and extend the user assistance
@@ -57,7 +57,7 @@ You can learn about current and coming capabilities through a number of differen
 > |Name  |Location  |Description|
 > |---------|---------|---------|
 > |Release plans |[https://docs.microsoft.com/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
-> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central) |Use this content to learn about business functionality. |
+> |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central) |Use this content to learn about business functionality. |
 > |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
 > |The "Ready to Go" learning catalog|[/dynamics365/business-central/dev-itpro/developer/readiness/readiness-learning-catalog](developer/readiness/readiness-learning-catalog.md)|Get an overview of role-specific training material from Microsoft.|
 
@@ -74,7 +74,7 @@ The Dynamics 365 blog is where Microsoft publishes announcements, updates, and t
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Business Central on the Dynamics 365 blog|[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some earlier blog posts are available on the [Community site for partners](https://community.dynamics.com/business/b/businesscentraldevitpro) or the [Community site for users](https://community.dynamics.com/business/b/financials).|
+> |Business Central on the Dynamics 365 blog|[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some older blog posts are still available on the [Community site for partners](https://community.dynamics.com/business/b/businesscentraldevitpro) or the [Community site for business users](https://community.dynamics.com/business/b/financials).|
 
 ### Business Central communities
 
@@ -86,9 +86,9 @@ You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central a
 
 - For collaboration in preview or beta versions of the AL language in Visual Studio Code, use [GitHub](https://github.com/microsoft/al)  
 - For Microsoft partners, for versions already in general availability and supported, file requests through [Microsoft PartnerSource](https://mbs.microsoft.com/partnersource/)  
-- For Microsoft partners who have discovered a bug in a in preview or beta version, use [MS Collaborate](/collaborate/)  
+- For Microsoft partners who have discovered a bug in a preview or beta version, use [MS Collaborate](/collaborate/)  
 
-For problems reported by your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers, use the [!INCLUDE [tenant-admin-center](administration/tenant-admin-center.md)] to troubleshoot and submit support requests. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
+For problems reported by your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers, use the [administration center](administration/tenant-admin-center.md)] to troubleshoot and submit support requests. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
 
 ## Trials
 
