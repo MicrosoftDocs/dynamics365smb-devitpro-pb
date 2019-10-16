@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2019
+ms.date: 10/15/2019
 ms.author: edupont
 ---
 
@@ -110,7 +110,10 @@ For example, to create a pull request to the MicrosoftDocs/dynamics365smb-docs r
 
 ## Building HTML files
 
-For publishing to your own website, you can use tools such as [DocFx](https://dotnet.github.io/docfx/). For example, if you want to preview your content locally, or if you want to publish to the legacy Microsoft Dynamics NAV Help Server. DocFX is an open source tool for converting markdown files. This section provides some guidance on how you can use DocFX to publish HTML files for the Dynamics NAV Hep Server.
+For publishing to your own website, you can use tools such as [DocFx](https://dotnet.github.io/docfx/). DocFX is an open source tool for converting markdown files, such as if you want to preview your content locally, generate content for your website, or if you want to publish to the legacy Microsoft Dynamics NAV Help Server. This section provides some guidance on how you can use DocFX to publish HTML files for the Dynamics NAV Hep Server.  
+
+> [!TIP]
+> You can also use DocFx to generate content for other websites. In that case, either modify NAV docfx.json or replace NAVdocfx.json with docfx.json and reconfigure that to meet your website's requirements.
 
 1. Install DocFX on your computer.
 
@@ -138,8 +141,15 @@ The files are generated as .html files and stored in the specified output.
 > [!NOTE]
 > The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as .openpublishing.build.ps1. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available.  
 
-For tips and tricks about writing in MarkDown, see the 
-[Authoring Guide](writing-guide.md).  
+For tips and tricks about writing in MarkDown, see the [Authoring Guide](writing-guide.md).  
+
+### Links to anchors across languages
+
+If your website supports two or more locales, you can use DocFx to generate HTML files for the relevant languages. However, you may experience problems with links to anchors, also known as bookmarks. For example, if your content has a link from article1.md to a specific section in article2.md, that link would be formatted like this: ```[Subheading](article2.md#subheading)```. Then, when you run DocFx to generate HTML files in Danish, DocFx will convert that link to ```[Overskrift](article2.md#overskrift)```. That is not a problem because the link will work in both English and Danish.  
+
+But if you then want to use that link elsewhere, the link only works for one of the languages because that anchor changed its name in the Danish translation. So if you link to that subheading in article2 from your marketing site or support site, or if you use it as the value of the [ContextSensitiveHelpPage](../developer/properties/devenv-contextsensitivehelppage-property.md) property, then it only works in English.  
+
+To work around this problem, you can add a post-processing step to the script that you use to run DocFx to change the equivalent of ```<a name=‘da-DK anchor name’></a>``` with ```<a name=‘en-US anchor name’></a>```. In this example, the step would change ```<a name=‘overskrift’></a>``` to ```<a name=‘subheading’></a>```.  
 
 ## See also
 
