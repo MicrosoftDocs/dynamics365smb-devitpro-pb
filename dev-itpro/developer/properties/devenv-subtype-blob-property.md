@@ -24,7 +24,9 @@ Sets additional information about what will be contained in the field.
 |--------------------------|---------------|  
 |**Bitmap**                |For storing bitmaps|  
 |**Memo**                  |For storing memos|  
+|**Json**|For storing Json data|  
 |**User-Defined (default)**|For user defined information|  
+
  
 ## Syntax
 ```
