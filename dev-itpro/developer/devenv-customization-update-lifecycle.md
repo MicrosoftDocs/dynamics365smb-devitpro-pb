@@ -22,7 +22,7 @@ Continue reading for information on the process for ensuring update compatibilit
 ## Automated Extension Validation
 For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] updates for which you have the option to schedule an update date (see [Updating Environments](../administration/tenant-admin-center-update-management.md)), prior to scheduling the update an automated service runs to validate all tenant customizations. This validation compares the extension dependencies to the updated version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application to see if any changes caused incompatibilities with the next release.
 
-If the validation service discovers any tenant customizations that are not compatible with the update version, an email notification is sent to the tenant administrators listed on the Notification recipients tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](tenant-admin-center-notifications.md).
+If the validation service discovers any tenant customizations that are not compatible with the update version, an email notification is sent to the tenant administrators listed on the Notification recipients tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](../administration/tenant-admin-center-notifications.md).
 
 > [!NOTE]
 > It is important that at least one administrator's email address has been entered as a notification recipient to receive the update notifications.
