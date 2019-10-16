@@ -7,11 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 0e06ffde-8cce-4e62-8d40-4109cca9495a
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnModifyRecord Trigger
 Runs before a record is modified in the table.  
@@ -31,7 +28,7 @@ end;
   
 ## Applies To  
   
--   Pages  
+- Pages  
   
 ## Remarks  
  If an error occurs in the trigger code, the action is canceled, but the page is not closed.  

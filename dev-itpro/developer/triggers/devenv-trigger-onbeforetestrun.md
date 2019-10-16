@@ -16,6 +16,8 @@ ms.service: "dynamics365-business-central"
 # OnBeforeTestRun Trigger
 Runs before a test  of a test codeunit is run.
 
+## Syntax
+
 ```
 OnBeforeTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[128]; TestPermissions : Text) Ok : Boolean)
 ```

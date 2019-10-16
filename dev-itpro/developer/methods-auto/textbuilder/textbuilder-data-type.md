@@ -38,7 +38,7 @@ The following methods are available on instances of the TextBuilder data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-> [!NOTE]    
+> [!NOTE]  
 > For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data.
 
 ## See Also

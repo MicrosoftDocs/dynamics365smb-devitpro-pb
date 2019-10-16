@@ -7,12 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: c9a4c961-c9c2-4afb-8493-fbeefdad27ca
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
-
 
 # OnValidate (Page fields) Trigger
 Runs when a field loses focus after its value has been changed.  

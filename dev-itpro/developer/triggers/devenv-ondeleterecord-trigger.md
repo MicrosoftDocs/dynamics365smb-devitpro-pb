@@ -7,11 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a1fd9af0-4f10-430c-8a06-c5751eb2daee
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnDeleteRecord Trigger
 Runs before a record is deleted from the table.  
@@ -31,7 +28,7 @@ end;
   
 ## Applies To  
   
--   Pages  
+- Pages  
   
 ## Remarks  
  The action is canceled but the page is not closed if an error occurs in the trigger code. You can use this trigger to write to the database.  
