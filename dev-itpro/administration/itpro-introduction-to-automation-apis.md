@@ -149,7 +149,7 @@ There are two bound actions available on the **extensions** endpoint: `Microsoft
 Issue a [POST extension](dynamics-microsoft-automation-extension-post.md) using the bound actions. See the example below.
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0{apiVersion}/companies({companyId})//extensions({extensionId})/Microsoft.NAV.install
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0{apiVersion}/companies({companyId})//extensions({packageId})/Microsoft.NAV.install
 
 Authorization: Bearer {token}
 ```
