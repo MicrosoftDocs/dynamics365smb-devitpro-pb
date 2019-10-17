@@ -8,36 +8,41 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jaredha
-ms.date: 10/16/2019
+ms.date: 10/17/2019
 ---
 
-# Update Lifecycle for Tenant Customizations
+# Update Lifecycle for Customizations of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online
 
-When creating a tenant customization, or extension scoped to a single [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment (often referred to as per-tenant extensions), there is maintenance that must be considered throughout the lifecycle of the extension. See [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md) for more information on the extension lifecycle and events that can cause incompatibilities between the extension and base application. 
+When you create a tenant-specific customization, or an extension that is scoped to a single [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment (often referred to as per-tenant extensions), you must take the lifecycle of the extension into consideration. For more information about the extension lifecycle and events that can cause incompatibilities between the extension and base application, see [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md). 
 
-*You are responsible for your extension*. You own the process of updating the extension and providing upgrade code if the schema changes between versions of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. When an update is available for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment, all extensions (both AppSource extensions and tenant customizations) must be compatible with the next version of the base application before the update can be installed on the environment. You are responsible for ensuring that your extensions are compatible with the update version.
+You are responsible for your extension. You own the process of updating the extension and providing upgrade code if the schema changes between versions of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application. When an update is available for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment, all extensions, both AppSource extensions and tenant customizations, must be compatible with the next version of the base application before the update can be installed on the environment. You are responsible for ensuring that your extensions are compatible with the update version.
 
-Continue reading for information on the process for ensuring update compatibility for tenant customizations.
+In this article, we describe the process for ensuring update compatibility for tenant customizations.
 
 ## Automated Extension Validation
-For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] updates for which you have the option to schedule an update date (see [Updating Environments](../administration/tenant-admin-center-update-management.md)), prior to scheduling the update an automated service runs to validate all tenant customizations. This validation compares the extension dependencies to the updated version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application to see if any changes caused incompatibilities with the next release.
 
-If the validation service discovers any tenant customizations that are not compatible with the update version, an email notification is sent to the tenant administrators listed on the Notification recipients tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](../administration/tenant-admin-center-notifications.md).
+An automated service validates all tenant customizations before an update is marked for a scheduled update of an environment. This validation compares the extension's dependencies with the updated version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application to see if any changes caused incompatibilities with the new version.
 
-> [!NOTE]
-> It is important that at least one administrator's email address has been entered as a notification recipient to receive the update notifications.
+If the validation service discovers any tenant customizations that are not compatible with the update, an email notification is sent to the tenant administrators listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](../administration/tenant-admin-center-notifications.md).
+
+> [!IMPORTANT]
+> At least one email address must be specified as a notification recipient to receive the update notifications. If you do not speciy an email address, you will not be notified of updates and other changes to the tenant.
 
 The email notification provides information on the incompatible extension, detail on which properties must be updated, and steps to bring the extension into compatibility.
 
 ## Update Failure Notification
-If a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment has an extension that is not compatible with the update version, the update install will fail. If an update fails due to an incompatible extension, a notification is sent to tenant administrators listed on the Notification recipients tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+
+If a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment has an extension that is not compatible with the update version, the update cannot be applied. If an update fails due to an incompatible extension, a notification is sent to the tenant administrators listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
+
 The notification is similar to that provided by the automated extension validation. It provides information on the incompatible extension, detail on which properties must be updated, and steps to bring the extension into compatibility.
 
 ## Automatic Extension Removal
-The publisher of an extension must maintain compatibility with the new release of Dynamics 365 [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. An extension that is not compatible with the update version within 90 days of the first notification of incompatibility will be removed, and the environment updated.
+
+The publisher of an extension must maintain compatibility with the new release of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. An extension that is not compatible with the update within 90 days of the first notification of incompatibility will be removed, and then the environment will be updated.
 
 ## See Also
 
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  
-[Upgrading Extensions](devenv-upgrading-extensions.md)
-[Updating Environments](../administration/tenant-admin-center-update-management.md)
+[Upgrading Extensions](devenv-upgrading-extensions.md)  
+[Updating Environments](../administration/tenant-admin-center-update-management.md)  
+
