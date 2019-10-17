@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2019
+ms.date: 10/15/2019
 ms.author: edupont
 ---
 
@@ -110,7 +110,10 @@ For example, to create a pull request to the MicrosoftDocs/dynamics365smb-docs r
 
 ## Building HTML files
 
-For publishing to your own website, you can use tools such as [DocFx](https://dotnet.github.io/docfx/). For example, if you want to preview your content locally, or if you want to publish to the legacy Microsoft Dynamics NAV Help Server. DocFX is an open source tool for converting markdown files. This section provides some guidance on how you can use DocFX to publish HTML files for the Dynamics NAV Hep Server.
+For publishing to your own website, you can use tools such as [DocFx](https://dotnet.github.io/docfx/). DocFX is an open source tool for converting markdown files, such as if you want to preview your content locally, generate content for your website, or if you want to publish to the legacy Microsoft Dynamics NAV Help Server. This section provides some guidance on how you can use DocFX to publish HTML files for the Dynamics NAV Hep Server.  
+
+> [!TIP]
+> You can also use DocFx to generate content for other websites. In that case, either modify NAV docfx.json or replace NAVdocfx.json with docfx.json and reconfigure that to meet your website's requirements.
 
 1. Install DocFX on your computer.
 
@@ -127,7 +130,7 @@ For publishing to your own website, you can use tools such as [DocFx](https://do
 
 4. Go to the docfx installation folder.
 
-5. Run the following command:
+5. Run the equivalent of the following command:
 
     ```powershell
     docfx "c:\GitHub\MSFT\dynamics365smb-docs\business-central\NAVdocfx.json"
@@ -138,8 +141,25 @@ The files are generated as .html files and stored in the specified output.
 > [!NOTE]
 > The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as .openpublishing.build.ps1. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available.  
 
-For tips and tricks about writing in MarkDown, see the 
-[Authoring Guide](writing-guide.md).  
+For tips and tricks about writing in MarkDown, see the [Authoring Guide](writing-guide.md).  
+
+### Links to anchors across languages
+
+If your website supports two or more locales, you can use DocFx to generate HTML files for the relevant languages. However, you may experience problems with links to anchors, also known as bookmarks. For example, if your content has a link from article1.md to a specific section in article2.md, that link would be formatted like this: ```[My translated subheading](article2.md#my-translated-subheading)```. Then, when you run DocFx to generate HTML files in Danish, DocFx will convert that link to ```[Min oversatte overskrift](article2.md#min-oversatte-overskrift)```. That is not a problem because the link will work in both English and Danish.  
+
+But if you then want to use that link elsewhere, the link only works for one of the languages because that anchor changed its name in the Danish translation. So if you link to that subheading in article2 from your marketing site or support site, or if you use it as the value of the [ContextSensitiveHelpPage](../developer/properties/devenv-contextsensitivehelppage-property.md) property, then it only works in English.  
+
+To work around this problem, you can add a post-processing step to the script that you use to run DocFx to change the equivalent of ```<h3 id=da-DK-anchor-name>``` with ```<h3 id=en-US-anchor-name>```. In this example, the step would change ```<h3 id=min-oversatte-overskrift’>``` to ```<h3 id=my-translated-subheading’>```.  
+
+Alternatively, you can create explicit anchors by tagging your subheading to give it a fixed anchor. In this example, this is how that would look in MarkDown:
+
+```
+<a name="subheading"></a> ### My translated subheading
+```
+
+You would then be able to use the same link across all locales: ```[My translated subheading](article2.md#subheading)```, which would render in HTML as ```myurl.com/docs/article2#subheading```.  
+
+For more information, see [Using hashtag in cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-hashtag-in-cross-reference) in the GitHub documentation.  
 
 ## See also
 
