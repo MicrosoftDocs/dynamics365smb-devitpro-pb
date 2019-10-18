@@ -269,8 +269,6 @@ If you have a multitenant deployment, perform these steps for each tenant.
     
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-    At this stage, the tenant state is **OperationalDataUpgradePending**.
-
 3. Synchronize the tenant with the **System Application** extension (Microsoft_System Application):
 
     Use the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
@@ -321,7 +319,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 ## Task 8: Upgrade the tenant data
 
-Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions. This step will also automatically install the **System Application** and **Base Application** extensions on the tenant.
+Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions.
 
 1. To run the data upgrade, use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
@@ -337,8 +335,6 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
     -->
 2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
     
-    When completed, the tenant state should be **Operational**.
-
 
 ## Task 9: Upgrade to the new versions of Microsoft extensions
 
