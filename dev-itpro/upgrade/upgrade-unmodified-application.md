@@ -363,14 +363,14 @@ Do the following steps for each extension, and for each tenant in a multitenant 
 
 ## Task 10: Configure the version 15 server instance for migrating 3rd party extensions
 
-Complete this task if you have any 3rd party extensions that were installed in the version 14 deployment so that they can be published abd installed on tenants. You configure the `DestinationAppsForMigration` parameter of the version 15 server instance with information about the base application (specifically, the appId, name, and publisher). With the `DestinationAppsForMigration` parameter set, when you publish the 3rd party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application, allowing them to be published.
+Complete this task if you have any 3rd party extensions that were installed in the version 14 deployment so that they can be published and installed on tenants. You configure the `DestinationAppsForMigration` parameter of the version 15 server instance with information about the base application (specifically, the appId, name, and publisher). With the `DestinationAppsForMigration` parameter set, when you publish the 3rd party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application, allowing them to be published.
 
 1. Get the appId, name, and publisher of the base application.
 
     ```
     Get-NAVAppInfo BC150
     ```
-2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the custom base application and test library (is used). For example:<!-- skip this step for now in single tenant-->
+2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the  base application. For example:<!-- skip this step for now in single tenant-->
 
     ```
     Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"}]'
