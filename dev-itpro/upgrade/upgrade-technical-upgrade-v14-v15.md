@@ -262,7 +262,7 @@ With this task, you configure the version 15 server so that the Microsoft and 3r
     ```
     Get-NAVAppInfo BC150
     ```
-2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the custom base application and test library (is used). For example:<!-- skip this step for now in single tenant-->
+2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the custom base application and test library (if used). For example:<!-- skip this step for now in single tenant-->
 
     ```
     Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"7914d8cb-58b7-4fda-8261-8b4f217c184d", "name":"TestLibrary", "publisher": "Default publisher"}]'

@@ -269,8 +269,6 @@ If you have a multitenant deployment, perform these steps for each tenant.
     
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-    At this stage, the tenant state is **OperationalDataUpgradePending**.
-
 3. Synchronize the tenant with the **System Application** extension (Microsoft_System Application):
 
     Use the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
@@ -321,7 +319,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 ## Task 8: Upgrade the tenant data
 
-Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions. This step will also automatically install the **System Application** and **Base Application** extensions on the tenant.
+Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions.
 
 1. To run the data upgrade, use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
@@ -337,8 +335,6 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
     -->
 2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
     
-    When completed, the tenant state should be **Operational**.
-
 
 ## Task 9: Upgrade to the new versions of Microsoft extensions
 
@@ -367,14 +363,14 @@ Do the following steps for each extension, and for each tenant in a multitenant 
 
 ## Task 10: Configure the version 15 server instance for migrating 3rd party extensions
 
-Complete this task if you have any 3rd party extensions that were installed in the version 14 deployment so that they can be published abd installed on tenants. You configure the `DestinationAppsForMigration` parameter of the version 15 server instance with information about the base application (specifically, the appId, name, and publisher). With the `DestinationAppsForMigration` parameter set, when you publish the 3rd party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application, allowing them to be published.
+Complete this task if you have any 3rd party extensions that were installed in the version 14 deployment so that they can be published and installed on tenants. You configure the `DestinationAppsForMigration` parameter of the version 15 server instance with information about the base application (specifically, the appId, name, and publisher). With the `DestinationAppsForMigration` parameter set, when you publish the 3rd party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application, allowing them to be published.
 
 1. Get the appId, name, and publisher of the base application.
 
     ```
     Get-NAVAppInfo BC150
     ```
-2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the custom base application and test library (is used). For example:<!-- skip this step for now in single tenant-->
+2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the  base application. For example:<!-- skip this step for now in single tenant-->
 
     ```
     Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"}]'
