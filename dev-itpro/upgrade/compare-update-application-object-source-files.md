@@ -2,11 +2,12 @@
 title: Compare and Update Application Object Source Files
 description: Compare the different set of Dynamics NAV application objects using Windows PowerShell cmdlets and apply all or some differences to the target solution.
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
+author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Compare and Update Application Object Source Files
@@ -25,6 +26,9 @@ You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to comp
  The steps in the following procedures compare the ORIGINAL version to the MODIFIED solution and apply the relevant changes to your TARGET solution. As a result, you have an application that contains your solution with the updates from the MODIFIED application. Alternatively, the MODIFIED solution can be your solution and the TARGET solution can be the new release from Microsoft. The actual versions that you use to set each cmdlet parameter depend on your concrete scenario. However, we recommend that MODIFIED contains the solution with the fewest changes compared to ORIGINAL. The Compare-NAVApplicationObject cmdlet compares two sets of application objects and stores the differences in DELTA files in the specified folder.  
   
  The following procedure assumes that you have exported the relevant application objects to text files. For an example of how to do that, see the **To prepare the application object files** section in the [Merge Application Changes](merge-application-changes.md) topic.  
+
+>[!NOTE]
+> [!INCLUDE[devshell](../developer/includes/devshell.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
   
 ### To compare two sets of application objects  
   

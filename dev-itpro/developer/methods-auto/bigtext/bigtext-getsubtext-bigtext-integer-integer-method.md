@@ -2,7 +2,7 @@
 title: "GetSubText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Gets part of a BigText variable.
 
 ## Syntax
 ```
-[Length := ]  BigText.GetSubText(var Variable: BigText, Position: Integer, [Length: Integer])
+[Length := ]  BigText.GetSubText(var Variable: BigText, Position: Integer [, Length: Integer])
 ```
 ## Parameters
 *BigText*  
@@ -119,6 +119,7 @@ MESSAGE(Text000, VarSubText);
 ```  
 
 ## See Also
+
 [BigText Data Type](bigtext-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

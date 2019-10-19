@@ -2,7 +2,7 @@
 title: "Query Properties"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,7 @@ This topic lists properties that apply to the query object.
 
 |Property Name|Applies to|
 |-------------|-----------|  
+|[Access Property](devenv-access-property.md)|<ul><li>Query object</li></ul>|
 |[APIPublisher Property](devenv-apipublisher-property.md)|<ul><li>Query Object</li>|
 |[APIVersion Property (Query)](devenv-apiversion-query-property.md)|<ul><li>Query Object</li>|
 |[APIGroup Property](devenv-apigroup-property.md)|<ul><li>Query Object</li>|
@@ -34,6 +35,8 @@ This topic lists properties that apply to the query object.
 |[Method Property](devenv-method-property.md)|<ul><li>Column control</li></ul>|
 |[MethodType Property](devenv-methodtype-property.md)|<ul><li>Column control</li></ul>|
 |[Name Property](devenv-name-property.md)|<ul><li>Query Object</li><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
+|[ObsoleteState Property](devenv-obsoletestate-property.md)|<ul><li>Query Object</li><li>Column control</li><li>DataItem control</li><li>Filter control</li></ul>|
+|[ObsoleteReason Property](devenv-obsoletereason-property.md)|<ul><li>Query Object</li><li>Column control</li><li>DataItem control</li><li>Filter control</li></ul>|
 |[OrderBy Property](devenv-orderby-property.md)|<ul><li>Query Object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)|<ul><li>Query Object</li></ul>|
 |[QueryCategory Property](devenv-querycategory-property.md)|<ul><li>Query Object</li></ul>|

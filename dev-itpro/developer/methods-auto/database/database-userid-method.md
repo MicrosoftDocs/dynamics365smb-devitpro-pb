@@ -2,7 +2,7 @@
 title: "UserId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,6 +34,18 @@ This string contains the value of the User Name field in table 2000000120, the U
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+```
+User := USERID;  
+MESSAGE(The system was started by %1, User);  
+```
+The following is an example of the output of the previous code:
+
+**The system was started by cronus\simon.**
+
+
 ## See Also
 [Database Data Type](database-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

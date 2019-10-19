@@ -2,7 +2,7 @@
 title: "Open Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Causes a RecordRef variable to refer to a table, which is identified by its numb
 
 ## Syntax
 ```
- RecordRef.Open(No: Integer, [Temp: Boolean], [CompanyName: String])
+ RecordRef.Open(No: Integer [, Temp: Boolean] [, CompanyName: String])
 ```
 ## Parameters
 *RecordRef*  
@@ -46,14 +46,14 @@ The name of the company to which you want to change. If you omit this parameter,
  If you use the *CompanyName* parameter, then this method works the same as the [CHANGECOMPANY Method \(Record\)](../../methods/devenv-changecompany-method-record.md).  
 
 ## Limitations 
- In the development settings, you can specify the allowed target level when publishing the extension, which includes the following options; Internal, Extension, Solution, and Personalization. When you set the **target** as `Internal`, this allows you to access all the table data with no restrictions in [!INCLUDE[navnow_md](../../includes/navnow_md.md)]. However, you cannot publish the extension to the AppSource. <!-- For more information, see [Development Settings](../../configuring-microsoft-dynamics-nav-server.md#development-settings). -->
+ In the development settings, you can specify the allowed target level when publishing the extension, which includes the following options; Internal, Extension, Solution, and Personalization. When you set the **target** as `OnPrem`, this allows you to access all the table data with no restrictions. However, you cannot publish the extension to the AppSource. <!-- For more information, see [Development Settings](../../configuring-microsoft-dynamics-nav-server.md#development-settings). -->
  
- For [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], you must set the **target** as `Extension` to publish your extension to the AppSource. However, when you use this setting with the RecordRef data type, some system and virtual tables are blocked with the ids that extend `2000000000+`. Therefore, you must declare the records explicitly as a record variable. For example: 
+ For [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], you must set the **target** as `Cloud` to publish your extension to the AppSource. However, when you use this setting with the RecordRef data type, some system and virtual tables are blocked with the ids that extend `2000000000+`. Therefore, you must declare the records explicitly as a record variable. For example: 
 ```
 var r : record 2000000006;
 ```
 ## Example  
- The following example uses the OPEN method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a message box. At the end of the display, the [CLOSE Method \(RecordRef\)](../../methods/devenv-close-method-recordref.md) closes the table. This example requires that you create the following global variable and text constants.  
+ The following example uses the OPEN method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a message box. At the end of the display, the [CLOSE Method \(RecordRef\)](recordref-close-method.md) closes the table. This example requires that you create the following global variable and text constants.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

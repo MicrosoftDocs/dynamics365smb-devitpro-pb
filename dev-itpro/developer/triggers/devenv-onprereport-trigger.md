@@ -1,17 +1,14 @@
 ---
 title: "OnPreReport Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 069bf4ef-0cbd-4416-856f-a6eebf068e98
 author: SusanneWindfeldPedersen
 ---
-
-
 
 # OnPreReport Trigger
 Runs before a report is run.  

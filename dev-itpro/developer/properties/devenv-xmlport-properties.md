@@ -1,7 +1,7 @@
 ---
 title: "XMLport Properties"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,6 +47,8 @@ This topic lists properties of the XMLport object, element, and attribute.
 |[NamespacePrefix Property](devenv-namespaceprefix-property.md)|<ul><li>XMLport object</li></ul>|
 |[Namespaces Property](devenv-namespaces-property.md)|<ul><li>XMLport object</li></ul>|
 |[NodeName Property](devenv-nodename-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Field attributes</li></ul>|
+|[ObsoleteState Property](devenv-obsoletestate-property.md)|<ul><li>XMLport object</li></ul>|
+|[ObsoleteReason Property](devenv-obsoletereason-property.md)|<ul><li>XMLport object</li></ul>|
 |[Occurrence Property](devenv-occurrence-property.md)|<ul><li>Text attributes</li><li>Field attributes</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)|<ul><li>XMLport object</li></ul>|
 |[PreserveWhiteSpace Property](devenv-preservewhitespace-property.md)|<ul><li>XMLport object</li></ul>|

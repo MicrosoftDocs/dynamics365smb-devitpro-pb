@@ -3,15 +3,13 @@ title: "Exporting data for Extensions"
 description: "How you can export data such as permisisons, web services, and table data for an extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 # Exporting data for Extensions
@@ -21,6 +19,10 @@ For your extension to run properly, configuration and starting data such as perm
 - Web services
 - Starting table data
 - Custom report layouts
+
+
+> [!NOTE]  
+> The NAV Development Shell is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
 
 The data must be exported into files to be included in the extension. To use the export functions you must use a container sandbox environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md).
 

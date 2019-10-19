@@ -7,19 +7,20 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
-ms.assetid: 4f09f7f0-e353-4793-8cb6-679c0571711a
-caps.latest.revision: 34
-manager: edupont
+ms.service: "dynamics365-business-central"
 ---
-# Understanding Data Item Links in Dynamics NAV
-With [!INCLUDE[navnow](includes/navnow_md.md)] queries, you can retrieve records from one or more tables and combine the records into rows in a single dataset. In Query Designer, tables are specified by data items. You combine tables by linking the data items in Query Designer. In most cases, the tables are combined based on a relationship between certain fields in the tables. [!INCLUDE[navnow](includes/navnow_md.md)] includes different types of data item links that you can use to limit the records that are included in the resulting dataset by how the fields in data item tables are related to each other.  
+# Query Data Item Links and Joins
+
+[!INCLUDE[prodshort](includes/prodshort.md)] queries enable you to retrieve records from one or more tables and combine the specific records into rows in a single dataset. In AL, each table is specified as a data item. The data included in the dataset is a result of how the data items are linked and joined together.
+
+- Data items are *linked* together by associating a field in the table of a one data item with a common field in field in the table of another data item.
+- Finally, records of tables are combined into a dataset by *joining* the data items. There are several different join types that control which records that included in the resulting dataset depending on whether or not the values of the linked fields match.  
   
 ## Sample Tables and Query  
- This topic uses the following sample tables and query to demonstrate data item links.  
+To demonstrate data item links consider the following sample tables and query.  
   
 ### Salesperson/Purchaser Table  
- The Salesperson/Purchaser table contains a list of salespersons. Each salesperson is identified by a unique code  
+The Salesperson/Purchaser table contains a list of salespersons. Each salesperson is identified by a unique code.  
   
 |Code|Name|  
 |----------|----------|  
@@ -28,8 +29,9 @@ With [!INCLUDE[navnow](includes/navnow_md.md)] queries, you can retrieve records
 |DD|Debra|  
 |JJ|John|  
   
-### Sales Header Table  
- The Sales Header table contains a list of sales orders. Each sales order has a unique number, includes the name of the customer to sell to, and is assigned to a salesperson by the **Salesperson\_Code** column.  
+### Sales Header Table
+
+The Sales Header table contains a list of sales orders. Each sales order has a unique number, includes the name of the customer to sell to, and is assigned to a salesperson by the **Salesperson\_Code** column.  
   
 |No|Sell\_to\_Customer\_Name|Salesperson\_Code|  
 |--------|------------------------------|-----------------------|  
@@ -38,13 +40,48 @@ With [!INCLUDE[navnow](includes/navnow_md.md)] queries, you can retrieve records
 |3000|Candoxy|JJ|  
 |4000|New Concepts||  
   
-### Sample Query  
- The following illustration shows the Query Designer for a query that links the Sale Header table with the Salesperson/Purchaser table on the **Salesperson\_Code** and **Code** columns, as specified by the DataItemLink property. In the illustration, the DataItemLinkType property is set to **Exclude Row If No Match**. You can set the property to **Always Include** to change the resulting dataset as described in this topic.  
+### Sample Query
+
+The following query object links the Sale Header table with the Salesperson/Purchaser table on the **Salesperson\_Code** and **Code** fields, as specified by the DataItemLink property. In the example, the SQLJoinType property is set to **InnerJoin**.
+
+```
+query 50100 "Sample Query"
+{
+    QueryType = Normal;
+    Caption = 'Sales Overview';
+
+    elements
+    {
+        dataitem(Salesperson_Purchaser; "Salesperson/Purchaser")
+        {
+            column(Name; Name)
+            {
+
+            }
+            dataitem(Sales_Header; "Sales Header")
+            {
+                DataItemLink = "Salesperson Code" = Salesperson_Purchaser.Code;
+                SqlJoinType = InnerJoin;
+
+                column(No_; "No.")
+                {
+
+                }
+                column(Sell_to_Customer_No_; "Sell-to Customer No.")
+                {
+
+                }
+            }
+        }
+    }
+}
+```  
   
  ![Query Designer inner join](media/QueryJoin_InnerJoin.png "QueryJoin\_InnerJoin")  
   
-## How Data Item Links Work in Query Designer  
- When you add data items in Query Designer, they are arranged in a hierarchy, where the **DataSource** column of each data item is indented to one level from the data item above to indicate a link between with the data items above it. The order of the data items determines the sequence in which data items are linked. In SQL SELECT statements, this hierarchy corresponds to designating tables as left and right, where the upper data item would be on the left and the lower data item would be on the right.  
+## How Data Item Links Work  
+
+When you add data items in AL, they are arranged in a hierarchy, where the **DataSource** column of each data item is indented to one level from the data item above to indicate a link between with the data items above it. The order of the data items determines the sequence in which data items are linked. In SQL SELECT statements, this hierarchy corresponds to designating tables as left and right, where the upper data item would be on the left and the lower data item would be on the right.  
   
  To create a link between two data items in Query Designer, you set the DataItemLink property and the DataItemLinkType property on the lower data item in Query Designer.  
   

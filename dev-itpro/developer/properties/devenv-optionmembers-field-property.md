@@ -1,22 +1,16 @@
 ---
 title: "OptionMembers Property (Field)"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: c90654ad-da85-496c-900a-1c2fc7dd2f2b
-caps.latest.revision: 13
 ---
 
-<!--
-Ask Esben for more information about it. 
--->
- 
 # OptionMembers Property (Field)
-Gets the list of options that are available in the field that is currently selected. 
+Sets the list of options that are available in the field that is currently selected. 
 
   
 ## Applies To  

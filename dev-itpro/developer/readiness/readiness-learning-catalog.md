@@ -6,7 +6,7 @@ experiment_id: "81ba5f65-59fb-4d"
 title: Ready to Go Online Learning Catalog
 description: 
 ms.topic: hub-page
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -15,6 +15,7 @@ ms.author: solsen
 <div class="container">
 <h1>The “Ready to Go” Online Learning Catalog</h1>
 <p> This “Ready to Go” learning catalog provides Dynamics 365 Business Central partners a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develop apps for Microsoft AppSource. The information in this document is being updated on a weekly basis.</p>
+
 
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
@@ -111,4 +112,3 @@ ms.author: solsen
 
  :::column-end:::
 :::row-end:::
-

@@ -2,7 +2,7 @@
 title: "GetFilters Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,13 +38,13 @@ Filters that have been applied to the table that is referred to by the RecordRef
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [GETFILTERS Method \(Record\)](../../methods/devenv-getfilters-method-record.md).  
+ This method works just like the [GETFILTERS Method \(Record\)](../record/record-getfilters-method.md).  
   
 ## Property Value/Return Value  
  Filters that have been applied to the table that is referred to by the *RecordRef* parameter.  
   
 ## Example  
- The following example opens a table as a RecorRef variable. The variable, RecRef, is used with the GETFILTERS method to retrieve the filters that are applied in the Customer table. If filters are applied, they will be stored in the Filters1 variable. The Filters1 variable does not contain any filters because filters have not been set. Then the [SETRECFILTER Method \(RecordRef\)](../../methods/devenv-setrecfilter-method-recordref.md) is used to set the value in the current key of the current record as a filter. The variable Filters2 will now contain No. as a filter. The example requires that you create the following global variables and text constant.  
+ The following example opens a table as a RecorRef variable. The variable, RecRef, is used with the GETFILTERS method to retrieve the filters that are applied in the Customer table. If filters are applied, they will be stored in the Filters1 variable. The Filters1 variable does not contain any filters because filters have not been set. Then the [SETRECFILTER Method \(RecordRef\)](recordref-setrecfilter-method.md) is used to set the value in the current key of the current record as a filter. The variable Filters2 will now contain No. as a filter. The example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 07/02/2019
+ms.date: 10/01/2019
 ms.author: jaredha
 
 ---
@@ -29,9 +29,9 @@ The following users are authorized to access the [!INCLUDE[prodadmincenter](../d
 - Admin agent
 - Helpdesk agent
 
-Internal administrators are the system administrators, IT professionals, or superusers of the company, and they are members of the *Internal Admin* user group in [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global admin** role in the Office 365 admin center. For more information, see [About admin roles](/office365/admin/add-users/about-admin-roles) in the Office 365 admin content.  
 
-The admin agent and helpdesk agent roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner associated with the tenant. These roles are delegated administrators on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant.
+The admin agent and helpdesk agent roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles have access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant as *delegated administrators*.
 
 ### Internal administrators
 
@@ -59,18 +59,13 @@ You can also get to the administration center by navigating directly to the URL 
 > [!NOTE]
 > As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).  
 
-<!--## Submitting support requests on behalf of your customer
-
-Sometimes your customer's tenant has run into a problem that you cannot resolve. In those cases, in the administration center, use the **New Support Request** link in the Help menu. This opens a new browser tab with the site where you can submit the support request.  
-
-Fill in the fields as appropriate. You can find most of the necessary information in the administration center, including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers.  -->
-
 ## See also
 
 [Managing Environments](tenant-admin-center-environments.md)  
 [Tenant Notifications](tenant-admin-center-notifications.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  
 [Administration Center API](administration-center-api.md)  
+[Managing Technical Support](manage-technical-support.md)  
 [Business Central Data Security](../security/data-security.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
 [Microsoft Partner Dashboard](https://partnercenter.microsoft.com/dashboard)  

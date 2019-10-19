@@ -2,7 +2,7 @@
 title: "Modify Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *RunTrigger*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies whether to run the AL code in the OnModify Trigger. If this parameter is true, then the code in the OnModify trigger is executed. If this parameter is false (default), then the code is not executed.
-          
+Specifies whether to run the AL code in the OnModify Trigger. If this parameter is true, then the code in the OnModify trigger is executed. If this parameter is false (default), then the code is not executed.  
 
 
 ## Return Value
@@ -49,13 +48,13 @@ Specifies whether to run the AL code in the OnModify Trigger. If this parameter 
   
  **Enter your changes again in the updated window, or start the interrupted activity again.**  
   
- In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], we have restricted the **MODIFY** Method \(RECORDREF\), [RENAME Method \(RecordRef\)](../../methods/devenv-rename-method-recordref.md), and [DELETE Method \(RecordRef\)](../../methods/devenv-delete-method-recordref.md) so that the end-user receives the following run-time error in these certain situations:  
+ In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], we have restricted the **MODIFY** Method \(RECORDREF\), [RENAME Method \(RecordRef\)](recordref-rename-method.md), and [DELETE Method \(RecordRef\)](recordref-delete-method.md) so that the end-user receives the following run-time error in these certain situations:  
   
  **Unable to change an earlier version of the \<Table Name> record. The record should be read from the database again. This is a programming error.**  
   
- You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(RecordRef\)](../../methods/devenv-get-method-recordref.md) to refresh the record with the latest version.  
+ You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(RecordRef\)](recordref-get-method.md) to refresh the record with the latest version.  
   
- This method works the same as the [MODIFY Method \(Record\)](../../methods/devenv-modify-method-record.md).  
+ This method works the same as the [MODIFY Method \(Record\)](../record/record-modify-method.md).  
   
 
 ## See Also

@@ -3,18 +3,14 @@ title: "Extending Item Charges Distribution Methods"
 description: "How you extend item charges in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: grobyns
-caps.latest.revision: 1
 ---
-
- 
 
 # Extending Item Charge Distribution Methods 
 To ensure correct valuation, your inventory items must carry any added costs, such as freight, physical handling, insurance, and transportation that you incur when purchasing or selling the items.
@@ -23,7 +19,7 @@ Users can add these costs by adding a Charge (Item) line to the involved purchas
 
 Item charges are distributed over other item lines in the document according to a distribution method. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers four distribution methods out of the box: **Equally**, **By Amount**, **By Weight**, and **By Volume**. This article explains how to remove or add item charge distribution methods. The article describes the method for purchases. The steps are similar for sales, except the events are located in codeunit 5807, **Item Charge Assgnt. (Sales)**.
 
-To enable extension of item charges distribution methods, two events have been added to codeunit 5805, **Item Charge Assgnt. (Purch.)**. The work consists of the following two tasks:
+To enable extension of item charges distribution methods, two events can be found in codeunit 5805, **Item Charge Assgnt. (Purch.)**. The work consists of the following two tasks:
 
 1. In the **OnBeforeShowSuggestItemChargeAssignStrMenu** event, you manipulate the options that are presented to users. You can remove, add, and change the order of the options.
 

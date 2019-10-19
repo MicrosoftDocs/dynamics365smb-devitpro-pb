@@ -2,7 +2,7 @@
 title: "StrSubstNo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you 
 
 ## Syntax
 ```
-NewString :=   Text.StrSubstNo(String: String, [Value1: Any,...])
+NewString :=   Text.StrSubstNo(String: String [, Value1: Any,...])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

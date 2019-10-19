@@ -2,7 +2,7 @@
 title: "GetStamp Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/10/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the exact time that a file was last written to.
 
 ## Syntax
 ```
-[Ok := ]  File.GetStamp(Name: String, var Date: Date, [var Time: Time])
+[Ok := ]  File.GetStamp(Name: String, var Date: Date [, var Time: Time])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

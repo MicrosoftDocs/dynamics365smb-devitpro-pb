@@ -2,7 +2,7 @@
 title: "RecordRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ The following methods are available on instances of the RecordRef data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Open(Integer, [Boolean], [String])](recordref-open-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
+|[Open(Integer [, Boolean] [, String])](recordref-open-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
 |[Close()](recordref-close-method.md)|Closes the current page or table.|
 |[GetTable(Record)](recordref-gettable-method.md)|Gets the table of a Record variable and causes the RecordRef to refer to the same table.|
 |[SetTable(Record)](recordref-settable-method.md)|Sets the table to which a Record variable refers as the same table as a RecordRef variable.|
@@ -34,10 +34,10 @@ The following methods are available on instances of the RecordRef data type.
 |[Next([Integer])](recordref-next-method.md)|Steps through a specified number of records and retrieves a record.|
 |[FindFirst()](recordref-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
 |[FindLast()](recordref-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
-|[FindSet([Boolean], [Boolean])](recordref-findset-method.md)|Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.|
+|[FindSet([Boolean] [, Boolean])](recordref-findset-method.md)|Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.|
 |[Reset()](recordref-reset-method.md)|Removes all filters, including any special filters set by the MARKEDONLY method (Record) and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables on the record.|
 |[Ascending([Boolean])](recordref-ascending-method.md)|Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed.|
-|[LockTable([Boolean], [Boolean])](recordref-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
+|[LockTable([Boolean] [, Boolean])](recordref-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
 |[Count()](recordref-count-method.md)|Counts the number of records that are in the filters that are currently applied to the table referred to by the RecordRef.|
 |[IsEmpty()](recordref-isempty-method.md)|Determines whether any records exist in a filtered set of records in a table.|
 |[CountApprox()](recordref-countapprox-method.md)|Gets an approximate count of the number of records in the table|
@@ -51,7 +51,9 @@ The following methods are available on instances of the RecordRef data type.
 |[RecordId()](recordref-recordid-method.md)|Gets the RecordID of the record that is currently selected in the table. If no table is selected, an error is generated.|
 |[ChangeCompany([String])](recordref-changecompany-method.md)|Redirects references to table data from one company to another.|
 |[Init()](recordref-init-method.md)|Initializes a record in a table.|
-|[Insert([Boolean])](recordref-insert-method.md)|Inserts a record into a table.|
+|[Insert()](recordref-insert--method.md)|Inserts a record into a table without executing the code in the OnInsert trigger.|
+|[Insert(Boolean)](recordref-insert-boolean-method.md)|Inserts a record into a table.|
+|[Insert(Boolean, Boolean)](recordref-insert-boolean-boolean-method.md)|Inserts a record into a table.|
 |[Modify([Boolean])](recordref-modify-method.md)|Modifies a record in a table.|
 |[Delete([Boolean])](recordref-delete-method.md)|Deletes a record in a table.|
 |[DeleteAll([Boolean])](recordref-deleteall-method.md)|Deletes all records in a table that fall within a specified range.|
@@ -59,7 +61,7 @@ The following methods are available on instances of the RecordRef data type.
 |[WritePermission()](recordref-writepermission-method.md)|Determines if you can write to a table.|
 |[ReadConsistency()](recordref-readconsistency-method.md)|Gets a value indicating whether read consistency is enabled.|
 |[RecordLevelLocking()](recordref-recordlevellocking-method.md)|Gets a value indicating whether record level locking is enabled.|
-|[AddLink(String, [String])](recordref-addlink-method.md)|Adds a link to a record in a table.|
+|[AddLink(String [, String])](recordref-addlink-method.md)|Adds a link to a record in a table.|
 |[DeleteLink(Integer)](recordref-deletelink-method.md)|Deletes a specified link from a record in a table.|
 |[DeleteLinks()](recordref-deletelinks-method.md)|Deletes all of the links that have been added to a record.|
 |[CopyLinks(Record)](recordref-copylinks-table-method.md)|Copies all the links from a particular record.|
@@ -79,8 +81,9 @@ The following methods are available on instances of the RecordRef data type.
 |[SetRecFilter()](recordref-setrecfilter-method.md)|Sets a filter on a record that is referred to by a RecordRef.|
 |[FilterGroup([Integer])](recordref-filtergroup-method.md)|Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.|
 |[SetPermissionFilter()](recordref-setpermissionfilter-method.md)|Applies the user's security filter to the referenced record. The security filter is combined with any other filters that are placed on the record with SetFilter or SetRange. The combined filter will not include any records outside the range of the security filter and this will prevent a runtime permission error from occuring when the record is read. If the permission filter is not set, an error can occur if you attempt to read a record that is outside the range of the user's security filter.|
-|[Rename(Any, [Any,...])](recordref-rename-method.md)|Changes the value of a primary key in a table.|
+|[Rename(Any [, Any,...])](recordref-rename-method.md)|Changes the value of a primary key in a table.|
 |[SecurityFiltering([SecurityFilter])](recordref-securityfiltering-method.md)|Gets or sets how security filters are applied to the RecordRef.|
+|[SystemIdNo()](recordref-systemidno-method.md)|Gets the field number that is used by the SystemId field. The SystemId field is a system field that the platform adds to all table objects.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

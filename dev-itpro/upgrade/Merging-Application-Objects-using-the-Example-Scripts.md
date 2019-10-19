@@ -1,7 +1,7 @@
 ---
 title: "Merging Application Objects using the Example Scripts"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media incl
  For example, you can import the module into the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE by typing a command such as the following:  
   
 ```  
-Import-Module "${env:ProgramFiles(x86)}\Microsoft Dynamics NAV\90\RoleTailored Client\Microsoft.Dynamics.Nav.Model.Tools.psd1" -force  
+Import-Module "${env:ProgramFiles(x86)}\Microsoft Dynamics 365 Business Central\140\RoleTailored Client\Microsoft.Dynamics.Nav.Model.Tools.psd1" -force  
   
 Get-Help "NAV"  
 ```  

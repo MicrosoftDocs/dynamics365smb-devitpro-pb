@@ -2,7 +2,7 @@
 title: "AddRange Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Adds the elements of the specified collection to the end of the list.
 
 ## Syntax
 ```
- List.AddRange(Value: T, [Values: T,...])
+ List.AddRange(Value: T [, Values: T,...])
 ```
 ## Parameters
 *List*  

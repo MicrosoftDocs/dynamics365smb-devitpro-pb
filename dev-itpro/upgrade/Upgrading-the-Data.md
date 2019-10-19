@@ -2,12 +2,13 @@
 title: Upgrading the Database
 description: This article describes the tasks required for upgrading from the earlier versions of database to Dynamics 365 Business Central.
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
+author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]: Single-Tenant Deployment
@@ -84,7 +85,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     - Server
     - SQL Server Components
     - [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)]
-    - [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]
+    - [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]).
     - AL Development Environment
     - (optionally) [!INCLUDE[admintool](../developer/includes/admintool.md)]
 

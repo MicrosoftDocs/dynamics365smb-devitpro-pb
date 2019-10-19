@@ -3,7 +3,7 @@ title: "Extensible Enums"
 description: "Overview of the concept of extending enumerables "
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.topic: article
@@ -30,6 +30,14 @@ enum 50121 Loyalty
 	}
 }
 ```
+
+> [!NOTE]  
+> Enums and enumextension objects do not have their own license range, instead they reuse the range for tables. This means that you can publish an enum with a given object ID if the license allows a table with that ID to be published. Also, the enum does not have to use the same ID as the table it is put on, just be in the allocated table object ID range.
+
+> [!IMPORTANT]  
+> Only enums with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
+
+## Enumextension object
 
 Enums can be extended in order to add more values to the enumeration list in which case the `Extensible` property must be set to `true`. The syntax for an enum extension, which extends the **Loyalty** enum with the value **Diamond**, is shown below.
 
@@ -151,4 +159,5 @@ Conversion to and from `enum` is more strict than for `Options` in C/SIDE.
 ## See Also
 [AL Data Types](datatypes/devenv-al-data-types.md)  
 [TableRelation Property](properties/devenv-tablerelation-property.md)  
-
+[Extensible Property](properties/devenv-extensible-property.md)  
+[Enum Data Type](methods-auto/enum/enum-data-type.md)

@@ -2,7 +2,7 @@
 title: "StrCheckSum Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Calculates a checksum for a string that contains a number. If the source is empt
 
 ## Syntax
 ```
-CheckNumber :=   Text.StrCheckSum(String: String, [WeightString: String], [Modulus: Integer])
+CheckNumber :=   Text.StrCheckSum(String: String [, WeightString: String] [, Modulus: Integer])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

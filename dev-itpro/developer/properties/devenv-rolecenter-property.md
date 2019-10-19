@@ -1,30 +1,28 @@
 ---
 title: "RoleCenter Property"
+author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: c90654ad-da85-496c-900a-1c2fc7dd2f2b
-caps.latest.revision: 13
+ms.author: solsen
 ---
 
- 
-
 # RoleCenter Property
-Specifies the Role Center Page for this Profile.
+Specifies the Role Center Page associated with the profile.
   
 ## Applies To  
   
--   Profile object  
+- Profile object  
 
 ## Syntax
 ```
-RoleCenter = RoleCenterPage;
+RoleCenter = MyRoleCenter;
 ```
 
 ## See Also  
- [Profile Object](../devenv-profile-object.md)  
- [Designing Role Centers](../devenv-designing-role-centers.md)
+[Profile Object](../devenv-profile-object.md)  
+[Designing Role Centers](../devenv-designing-role-centers.md)

@@ -1,7 +1,7 @@
 ---
 title: "OnBeforeTestRun Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,8 @@ ms.service: "dynamics365-business-central"
 
 # OnBeforeTestRun Trigger
 Runs before a test  of a test codeunit is run.
+
+## Syntax
 
 ```
 OnBeforeTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[128]; TestPermissions : Text) Ok : Boolean)

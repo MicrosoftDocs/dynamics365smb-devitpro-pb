@@ -1,18 +1,14 @@
 ---
 title: "OnBeforeInsertRecord Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 45f257ec-9ff2-4797-906b-2daef5784556
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
-
 
 # OnBeforeInsertRecord Trigger
 Runs after a record has been loaded and before it is inserted into a database table.  

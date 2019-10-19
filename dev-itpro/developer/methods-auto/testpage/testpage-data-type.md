@@ -2,7 +2,7 @@
 title: "TestPage Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,7 @@ The following methods are available on instances of the TestPage data type.
 |[Cancel()](testpage-cancel-method.md)|Gets the Cancel system action.|
 |[Yes()](testpage-yes-method.md)|Gets the Yes system action.|
 |[No()](testpage-no-method.md)|Gets the No system action.|
-|[RunPageBackgroundTask(Integer, [var Dictionary of [Text, Text]])](testpage-runpagebackgroundtask-method.md)|Runs the page background task codeunit in the current session. Note that no triggers are invoked at this point.|
+|[RunPageBackgroundTask(Integer [, var Dictionary of [Text, Text]] [, Boolean])](testpage-runpagebackgroundtask-method.md)|Runs the page background task codeunit in the current session. Note that by default, no triggers are invoked at this point.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

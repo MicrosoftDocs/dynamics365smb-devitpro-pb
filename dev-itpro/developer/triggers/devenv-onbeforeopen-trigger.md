@@ -1,18 +1,14 @@
 ---
 title: "OnBeforeOpen Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: ea037a45-e5f6-4f6c-a4ed-31d0a85c1e56
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
-
 
 # OnBeforeOpen Trigger
 Runs before a query is run and the dataset is generated.  

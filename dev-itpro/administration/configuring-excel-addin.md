@@ -4,7 +4,7 @@ author: jswymer
 manager: edupont
 ms.author: jswymer
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ ms.service: "dynamics365-business-central"
 You can set up the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment to support an Excel add-in that enables users in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to work with data from list pages in Excel. Users can get fresh data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] into Excel and push updated data from Excel to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
 Without this add-in, users can open a list page in Excel from the **Open in Excel** action on the page, which does not allow them to push changed data back to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When this add-in is set up, the **Open in Excel** action is replaced by the **Edit in Excel** action.
+
+> [!NOTE]  
+> This feature is only available for the Web client.
 
 >[!NOTE]
 >This Excel add-in is different than the Microsoft Excel Add-in that can be installed together with the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] client by using the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].
@@ -51,7 +54,8 @@ You can add the Azure AD application by using the [Azure portal](http://go.micro
 
 1. Add an Azure AD application for the Excel add-in.
 
-    When you add an application to an Azure AD tenant, you must specify the following information:  
+    When you add an application to an Azure AD tenant, you must specify the following information:
+
     |Setting|Description|
     |-------|-----------|
     |Name|The name of your application as it will display to your users, such as *Excel Add-in for Dynamics NAV*.|

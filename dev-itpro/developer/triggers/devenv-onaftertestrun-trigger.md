@@ -1,18 +1,15 @@
 ---
 title: "OnAfterTestRun Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
-manager: edupont
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
-
 
 # OnAfterTestRun Trigger
 Runs after a test  of a test codeunit has been run.  

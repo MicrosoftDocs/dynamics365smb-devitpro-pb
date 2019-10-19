@@ -3,14 +3,13 @@ title: "Deploying a Tenant Customization"
 description: "Overview of the how you deploy an .app package with a tenant customization to Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Deploying a Tenant Customization

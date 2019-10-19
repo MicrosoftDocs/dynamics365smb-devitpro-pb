@@ -2,7 +2,7 @@
 title: "Page Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,10 +22,10 @@ The following methods are available on the Page data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[RunModal(Integer, [Record], [Any])](page-runmodal-integer-table-joker-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
+|[RunModal(Integer [, Record] [, Any])](page-runmodal-integer-table-joker-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[RunModal(Integer, Record, Integer)](page-runmodal-integer-table-integer-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[RunModal(Integer, Record, FieldRef)](page-runmodal-integer-table-fieldref-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
-|[Run(Integer, [Record], [Any])](page-run-integer-table-joker-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
+|[Run(Integer [, Record] [, Any])](page-run-integer-table-joker-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
 |[Run(Integer, Record, Integer)](page-run-integer-table-integer-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
 |[SetBackgroundTaskResult(Dictionary of [Text, Text])](page-setbackgroundtaskresult-method.md)|Sets the page background task result as a dictionary. When the task is completed, the OnPageBackgroundCompleted trigger will be invoked on the page with this result dictionary.|
 |[GetBackgroundParameters()](page-getbackgroundparameters-method.md)|Gets the page background task input parameters.|
@@ -48,7 +48,7 @@ The following methods are available on instances of the Page data type.
 |[Close()](page-close-method.md)|Closes the current page.|
 |[RunModal()](page-runmodal--method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[Run()](page-run--method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
-|[EnqueueBackgroundTask(var Integer, Integer, [var Dictionary of [Text, Text]], [Boolean], [Integer])](page-enqueuebackgroundtask-method.md)|Creates and queues a background task that runs the specified codeunit (without a UI) in a child session of the page session. If the task completes successfully, the **OnPageBackgroundTaskCompleted** trigger is invoked. If an error occurs, the **OnPageBackgroundTaskError** trigger is invoked. If the page is closed before the task completes, the task is cancelled.|
+|[EnqueueBackgroundTask(var Integer, Integer [, var Dictionary of [Text, Text]] [, Integer] [, PageBackgroundTaskErrorLevel])](page-enqueuebackgroundtask-method.md)|Creates and queues a background task that runs the specified codeunit (without a UI) in a read-only child session of the page session. If the task completes successfully, the **OnPageBackgroundTaskCompleted** trigger is invoked. If an error occurs, the **OnPageBackgroundTaskError** trigger is invoked. If the page is closed before the task completes, or the page record ID on the task changed, the task is cancelled.|
 |[CancelBackgroundTask(Integer)](page-cancelbackgroundtask-method.md)|Attempt to cancel a page background task.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

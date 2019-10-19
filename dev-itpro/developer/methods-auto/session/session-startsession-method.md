@@ -2,7 +2,7 @@
 title: "StartSession Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Starts a session without a UI and runs the specified codeunit.
 
 ## Syntax
 ```
-[Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer, [Company: String], [var Record: Record])
+[Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer [, Company: String] [, var Record: Record])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

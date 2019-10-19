@@ -2,7 +2,7 @@
 title: "Date2DWY Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,17 @@ Number :=   System.Date2DWY(Date: Date, Value: Integer)
 The input date.  
 *Value*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+Specifies what the function returns. The valid options are 1, 2, and 3.
+- The value 1 corresponds to day of the week (1-7, Monday = 1).
+- The value 2 corresponds to week number (1-53).
+- The value 3 corresponds to year.
+        
 
 
 ## Return Value
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+The resulting day of the week, week number, or year.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

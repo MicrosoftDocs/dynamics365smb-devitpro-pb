@@ -2,7 +2,7 @@
 title: "TableNo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,10 +38,10 @@ The ID of the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- In previous versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], if a RecordID referred to a temporary table, then the table number value of the RecordID was the run-time generated sequence ID, which is from the base value of 2000100000. You could use the table number to determine if a RecordID referred to a temporary table. In [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], the table number value of a RecordID always contains the ID of the originating physical table and not the run-time generated sequence ID. If you previously used the [TABLENO Method \(RECORDID\)](../../methods/devenv-tableno-method-recordid.md) to test for the sequence number and determine if the RecordID was temporary, then you use the [ISTEMPORARY Method \(RecordRef\)](../../methods/devenv-istemporary-method-recordref.md) in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] instead.  
+ In previous versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], if a RecordID referred to a temporary table, then the table number value of the RecordID was the run-time generated sequence ID, which is from the base value of 2000100000. You could use the table number to determine if a RecordID referred to a temporary table. In [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], the table number value of a RecordID always contains the ID of the originating physical table and not the run-time generated sequence ID. If you previously used the [TABLENO Method \(RECORDID\)](../recordid/recordid-tableno-method.md) to test for the sequence number and determine if the RecordID was temporary, then you use the [ISTEMPORARY Method \(RecordRef\)](../recordref/recordref-istemporary-method.md) in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] instead.  
   
 ## Example  
- The following example opens the Customer table with the record reference variable named RecRef and finds the first record in the Customers table. If a record is found, the [RECORDID Method \(RecordRef\)](../../methods/devenv-recordid-method-recordref.md) gets the ID of the first record in the table. The TABLENO method then uses the RecID variable to retrieve the number of the table that contains the record. The table number is then displayed in a message box. This example requires that you create the following global variables.  
+ The following example opens the Customer table with the record reference variable named RecRef and finds the first record in the Customers table. If a record is found, the [RECORDID Method \(RecordRef\)](../recordref/recordref-recordid-method.md) gets the ID of the first record in the table. The TABLENO method then uses the RecID variable to retrieve the number of the table that contains the record. The table number is then displayed in a message box. This example requires that you create the following global variables.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

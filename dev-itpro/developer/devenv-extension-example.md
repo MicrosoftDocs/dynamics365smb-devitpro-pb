@@ -3,7 +3,7 @@ author: jswymer
 title: "Building your first sample extension that uses new objects and extension objects"
 description: "Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code."
 ms.custom: na
-ms.date: 04/29/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -114,7 +114,7 @@ For more information about table properties, see [Table Properties](properties/d
 The following code adds a new page **50101 Reward Card** for viewing and editing the different reward levels that are stored in the new **Reward** table. Pages are the primary object that a user will interact with and have a different behavior based on the type of page that you choose. The **Reward Card** page is of type Card and it is used to view and edit one record or entity from the **Reward** table. 
 
 > [!TIP]
-> Use the snippet `tpage, Page of type card` to create the basic structure for the page object.
+> Use the snippet `tpage, Page` to create the basic structure for the page object.
 
 ```
 page 50101 "Reward Card"
@@ -211,10 +211,10 @@ page 50102 "Reward List"
 }
 ```
 
-After you have created the objects, update the **startupObjectId** in the launch.json file to 50102, the ID of the **Reward List** page and select the Ctrl+F5 shortcut to see the new page in your sandbox environment. You will be asked to sign in to your [!INCLUDE [prodshort](includes/prodshort.md)].  
+After you have created the objects, update the **startupObjectId** in the `launch.json` file to 50102, the ID of the **Reward List** page and select the Ctrl+F5 shortcut to see the new page in your sandbox environment. You will be asked to sign in to your [!INCLUDE [prodshort](includes/prodshort.md)], if you have not already done so.  
 
 > [!TIP]
-> Information about your sandbox environment and other environments is stored as configurations in the launch.json file. For more information, see [JSON Files](devenv-json-files.md).  
+> Information about your sandbox environment and other environments is stored as configurations in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).  
 
 ## Designer
 
@@ -236,7 +236,7 @@ field(5;"Last Modified Date";Date)
 }
 
 ```
-The **Last Modified Date** field requires constant changes to remain accurate. To keep it updated, triggers will be used. Triggers are predefined methods that are executed when certain actions happen. They are added by default when you use the `ttable` template, and now you can add code to the triggers.  
+The **Last Modified Date** field requires constant changes to remain accurate. To keep it updated, triggers will be used. Triggers are predefined methods that are executed when certain actions happen. They are added by default when you use the `ttable` template, but you can also use the `ttriger` snippet to add them manually. Now you can add code to the triggers.  
 
 ```
     // "OnInsert" trigger executes when a new record is inserted into the table.
@@ -270,7 +270,7 @@ The **Last Modified Date** field requires constant changes to remain accurate. T
     end;
 ```
 
-From this point, changes to the **Reward Card** page can be done either manually by adding the code below in Visual Studio Code or by using the Designer's functions. Both ways lead to the same results, but the Designer speeds up the process. 
+From this point, changes to the **Reward Card** page can be done either manually by adding the code below in Visual Studio Code or by using the Designer's functions to add the same fields. Both ways lead to the same results, but the Designer speeds up the process. 
 
 
 ```
@@ -286,19 +286,18 @@ field("Last Modified Date";"Last Modified Date")
 
 ```
 
-Using the F6 key shortcut in Visual Studio Code launches the browser and enters the Designer.
+Using the F6 key shortcut in Visual Studio Code launches the browser and enters the Designer. You can also use the Designer from the [!INCLUDE[prodshort](includes/prodshort.md)] client, by selecting ![Settings icon](media/settings_icon_small.png) **Designer**.
 
 > [!NOTE]  
 > Every time you start designing, you create a new extension and the changes you make in the Designer will apply to all users.
 
 To add the same fields and customize the **Reward Card** page, follow the next steps:
 
-- Choose the purple box to the right of the **Last Modified Date** field and select **Remove**. 
 - Navigate to the **Reward Card** page by choosing **+ new**.  
-- Select **More** from the Designer bar. 
+- Enter the Designer mode from the UI and select **More** from the Designer bar. 
 - Select **Field** from the Designer bar to show the list of available fields. 
-- Drag the **Minimum Purchase** and **Last Modified Date** fields from the list onto the page in the **General group**. 
-- Choose the **General** in the group caption to enable the value to be edited. Change the caption to **Info** and press **Enter**.
+- Drag the **Minimum Purchase** and **Last Modified Date** fields from the list onto the page in the **Reward group**. 
+- Choose the **Reward** in the group caption to enable the value to be edited. Change the caption to **Info** and press **Enter**.
 
 After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the F7 key shortcut from Visual Studio Code. You can also uninstall the extension by opening the **Extension Management** page.  
 For more information about Designer, see [Designer](devenv-inclient-designer.md).  
@@ -388,7 +387,7 @@ pageextension 50104 "Customer Card Ext" extends "Customer Card"
 }
 ```
 
-At this point, reward levels can be created and assigned to customers. To do that, update the startupObjectId value in launch.json to 21 and select the Ctrl+F5 key to open the page.
+At this point, reward levels can be created and assigned to customers. To do that, update the `startupObjectId` value in launch.json to 21 and select the Ctrl+F5 key to open the page.
 
 ## Help links
 
@@ -398,13 +397,13 @@ This app is relatively straightforward, but we want users of your app to be able
 
 At an app level, you can specify where the Help for your functionality is published in the app.json file. Then, for each page in your app, you specify which Help file on that website is relevant for that particular page. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
-Open the app.json file, and then change the value of the `contextSensitiveHelpUrl`property to point at the right location on your website. In this example, you publish Help for your app at *https://mysite.com/documentation*.  
+Open the app.json file, and then change the value of the `contextSensitiveHelpUrl` property to point at the right location on your website. In this example, you publish Help for your app at *https://mysite.com/documentation*.  
 
 ```json
 "contextSensitiveHelpUrl": "https://mysite.com/documentation",
 ```
 
-Next, you set the `ContextSensitiveHelpPage` property for the **Reward Card** and **Reward List** pages:
+Next, you set the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) for the **Reward Card** and **Reward List** pages:
 
 ```
     // The target Help topic is hosted on the website that is specified in the app.json file.
@@ -463,12 +462,12 @@ If you now deploy the app, you will be able to read the tooltip text for the **R
 
 ## Install code
 
-After installing the extension, the **Reward List** page is empty. This is the result of the fact that the **Reward** table is also empty. Data can be entered manually into the **Reward** table by creating new records from the **Reward List** page. However, this task slows down the process, especially because the **Reward** table should be initialized with a standard number of reward levels when the extension is installed. To solve this, install codeunits can be used. A codeunit is an object that can be used to encapsulate a set of related functionality represented by procedures and variables. An install codeunit is a codeunit with the Subtype property set to Install. This codeunit provides a set of triggers that are executed when the extension is installed for the first time and when the same version is re-installed. 
+After installing the extension, the **Reward List** page is empty. This is the result of the fact that the **Reward** table is also empty. Data can be entered manually into the **Reward** table by creating new records from the **Reward List** page. However, this task slows down the process, especially because the **Reward** table should be initialized with a standard number of reward levels when the extension is installed. To solve this, install codeunits can be used. A codeunit is an object that can be used to encapsulate a set of related functionality represented by procedures and variables. An install codeunit is a codeunit with the [Subtype property](properties/devenv-subtype-codeunit-property.md) set to Install. This codeunit provides a set of triggers that are executed when the extension is installed for the first time and when the same version is re-installed. 
 
 In this example, the following install codeunit initializes the **Reward** table with three records representing the 'GOLD', 'SILVER', and 'BRONZE' reward levels. 
 
 > [!TIP]
-> Use the shortcuts `tcodeunit` and `ttrigger` to create the basic structure for the codeunit and trigger.
+> Use the shortcuts `tcodeunit` to create the basic structure for the codeunit.
 
 ```
 codeunit 50105 RewardsInstallCode
@@ -512,7 +511,7 @@ codeunit 50105 RewardsInstallCode
 For more information about install code, see [Writing Extension Install Code](devenv-extension-install-code.md).
 
 ## Upgrade code
-When you upgrade an extension to a newer version, if any modifications to the existing data are required to support the upgrade, you must write upgrade code in an upgrade codeunit. In this example, the following upgrade codeunit contains code that changes the BRONZE reward level to customer records to ALUMINUM. The upgrade codeunit will run when you run the `Upgrade-NAVApp` cmdlet. 
+When you upgrade an extension to a newer version, if any modifications to the existing data are required to support the upgrade, you must write upgrade code in an upgrade codeunit. In this example, the following upgrade codeunit contains code that changes the BRONZE reward level to customer records to ALUMINUM. The upgrade codeunit will run when you run the [Start-NAVAppDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade?view=businesscentral-ps) cmdlet. 
 
 
 > [!IMPORTANT]

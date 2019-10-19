@@ -2,7 +2,7 @@
 title: "Codeunit Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ The following methods are available on the Codeunit data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Run(Integer, [var Record])](codeunit-run-method.md)|Loads and runs the unit of AL code you specify. To use this method, you can specify a table associated with the codeunit when you defined the codeunit properties. This allows you to pass a variable with the method. The transaction that the codeunit contains is always committed due to the Boolean return value.|
+|[Run(Integer [, var Record])](codeunit-run-method.md)|Loads and runs the unit of AL code you specify. To use this method, you can specify a table associated with the codeunit when you defined the codeunit properties. This allows you to pass a variable with the method. The transaction that the codeunit contains is always committed due to the Boolean return value.|
 
 The following methods are available on instances of the Codeunit data type.
 

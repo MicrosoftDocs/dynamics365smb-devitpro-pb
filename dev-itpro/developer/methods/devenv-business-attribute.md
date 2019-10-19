@@ -1,21 +1,20 @@
 ---
 title: "BusinessEvent Attribute"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
-
 ---
 
 # BusinessEvent Attribute
 Specifies the method to be business type event publisher.
 
 ## Snippet support
-Typing the shortcut ```teventbus``` will create the basic BusinessEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.  
+Typing the shortcut `teventbus` will create the basic BusinessEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.  
 
 ## Syntax  
   
@@ -66,8 +65,8 @@ end;
 ```  
   
 ## See Also  
- [Events in AL](../devenv-events-in-al.md)  
- [Publishing Events](../devenv-publishing-events.md)   
- [Raising Events](../devenv-raising-events.md)   
- [Subscribing to Events](../devenv-subscribing-to-events.md)   
- [Method Attributes](devenv-method-attributes.md)
+[Events in AL](../devenv-events-in-al.md)  
+[Publishing Events](../devenv-publishing-events.md)   
+[Raising Events](../devenv-raising-events.md)   
+[Subscribing to Events](../devenv-subscribing-to-events.md)   
+[Method Attributes](devenv-method-attributes.md)

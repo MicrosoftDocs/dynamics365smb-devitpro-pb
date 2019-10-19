@@ -1,7 +1,8 @@
 ---
 title: "How to: Publish a Web Service"
 ms.custom: na
-ms.date: 04/01/2019
+author: jswymer
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -91,4 +92,14 @@ https://localhost:7048/<serverinstance>/OData/Company('CRONUS International Ltd.
 ```  
 https://localhost:7048/<serverinstance>/OData/Customer?company='CRONUS International Ltd.'  
 ```  
-  
+
+## Unpublishing a web service
+
+To unpublish a webs service, clear the **Published** check box. This will make the web service inaccessible.
+
+> [!IMPORTANT]
+> When you unpublish a web service that is marked for **All Tenants**, other web services that use the same object will be automatically unpublished, even though the **Published** check box is still selected for these web services.
+
+## See Also
+
+[Web Services](web-services.md)

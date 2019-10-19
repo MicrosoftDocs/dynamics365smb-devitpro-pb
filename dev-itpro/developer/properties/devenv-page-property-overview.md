@@ -3,7 +3,7 @@ title: "Page and Page Extension Properties Overview"
 description: "Description of the available properties on page extensions."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,17 +14,18 @@ ms.author: solsen
 ---
 
 # Page and Page Extension Properties Overview
-This topic lists properties that apply to the [Page Object](../devenv-page-object.md) and [Page Extension Object](../devenv-page-ext-object.md). 
+This topic lists properties that apply to the [Page Object](../devenv-page-object.md) and [Page Extension Object](../devenv-page-ext-object.md).
 
 ## Page object properties
 The following properties all apply to the page object, only some of these properties can be set for a page extension object as specified below.
 
 |Property Name|Available for Page Extension Object|Applies to|
 |-------------|-----------|---------------------|
+|[Access Property](devenv-access-property.md)||
 |[AccessByPermission Property](devenv-accessbypermission-property.md)||<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
 |[AdditionalSearchTerms Property](devenv-additionalsearchterms-property.md)||<ul><li>Page object</li></ul>|
 |[AdditionalSearchTermsML Property](devenv-additionalsearchtermsml-property.md)||<ul><li>Page object</li></ul>|
-|[ApplicationArea Property](devenv-applicationarea-property.md)|X|<ul><li>Page object</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
+|[ApplicationArea Property](devenv-applicationarea-property.md)|X (see next column)|<ul><li>Page object (cannot be specified for a page extension object)</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
 |[AssistEdit Property](devenv-assistedit-property.md)||<ul><li>Field control</li></ul>|
 |[AutoFormatExpression Property](devenv-autoformatexpression-property.md)||<ul><li>Field control</li></ul>|
 |[AutoFormatType Property](devenv-autoformattype-property.md)||<ul><li>Field control</li></ul>|
@@ -52,6 +53,7 @@ The following properties all apply to the page object, only some of these proper
 |[EntityName Property](devenv-entityname-property.md)||<ul><li>Page object</li><li>Part control</li></ul>|
 |[EntitySetName Property](devenv-entitysetname-property.md)||<ul><li>Page object</li><li>Part control</li></ul>|
 |[ExtendedDataType Property](devenv-Extendeddatatype-property.md)||<ul><li>Field control</li></ul>|
+|[Extensible Property](devenv-extensible-property.md)||<ul><li>Page object</li></ul>|
 |[FreezeColumn Property](devenv-freezecolumnid-property.md)|X|<ul><li>Group control</li></ul>|
 |[GridLayout Property](devenv-gridlayout-property.md)||<ul><li>Group control</li></ul>|
 |[Gesture Property](devenv-gesture-property.md)||<ul><li>Action</li></ul>|
@@ -73,6 +75,8 @@ The following properties all apply to the page object, only some of these proper
 |[MultiLine Property](devenv-multiline-property.md)||<ul><li>Field control</li></ul>|
 |[NotBlank Property](devenv-notblank-property.md)||<ul><li>Field control</li></ul>|
 |[Numeric Property](devenv-numeric-property.md)||<ul><li>Field control</li></ul>|
+|[ObsoleteState Property](devenv-obsoletestate-property.md)||<ul><li>Page object</li><li>Action</li><li>Action area</li><li>Action group</li><li>Action separator</li><li>Area</li><li>Chart part</li><li>Field control</li><li>Group</li><li>Label</li><li>Part</li><li>System part</li><ul>|
+|[ObsoleteReason Property](devenv-obsoletereason-property.md)||<ul><li>Page object</li><li>Action</li><li>Action area</li><li>Action group</li><li>Action separator</li><li>Area</li><li>Chart part</li><li>Field control</li><li>Group</li><li>Label</li><li>Part</li><li>System part</li><ul>|
 |[ODataEDMType Property](devenv-odataedmtype-property.md)|X|<ul><li>Page object</li><li>Field control</li></ul>|
 |[ODataKeyFields Property](devenv-odatakeyfields-property.md)||<ul><li>Page object</li></ul>|
 |[OptionCaptionML Property](devenv-optioncaptionml-property.md)||<ul><li>Field control</li></ul>|

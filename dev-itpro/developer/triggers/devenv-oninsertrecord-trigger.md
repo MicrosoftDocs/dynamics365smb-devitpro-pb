@@ -1,17 +1,14 @@
 ---
 title: "OnInsertRecord Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: eb1d2913-5ab8-40db-8790-e5e6b80b6722
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnInsertRecord Trigger
 Runs before a new record is inserted into the table.  

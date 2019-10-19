@@ -2,7 +2,7 @@
 title: "ReadPermission Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,7 +46,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
   
  If you do not have permission to read from a table and you attempt to read, a run-time error occurs. This method lets you determine in advance if you have read permission. When the permissions are checked, the combination of the permissions in the license file and the user's permissions in the Permission table is considered.  
   
- This method works the same as the [READPERMISSION Method \(Record\)](../../methods/devenv-readpermission-method-record.md).  
+ This method works the same as the [READPERMISSION Method \(Record\)](../record/record-readpermission-method.md).  
   
 ## Example  
  The following example opens table 18 \(Customer\) and creates a RecordRef variable that is named MyRecordRef for the table. The READPERMISSION method determines whether the table has read permission and stores the return value in the varHasReadPerm variable. The Customer table has read permission, so the message displays **Yes**. You can initialize the varTableNo variable with any table number. This example requires that you create the following global variables and text constant.  

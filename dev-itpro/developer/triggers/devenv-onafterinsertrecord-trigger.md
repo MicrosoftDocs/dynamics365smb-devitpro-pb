@@ -1,23 +1,20 @@
 ---
 title: "OnAfterInsertRecord Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 2dd18e75-4bbe-4e88-8f22-a5b064708bfd
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnAfterInsertRecord Trigger
 Runs after a record has been inserted into a database table.  
   
 ## Applies To  
-- XMLports.  
+- XMLports  
   
 ## Remarks  
  This trigger is only used to import data and can be used to move data from temporary tables to real tables.  

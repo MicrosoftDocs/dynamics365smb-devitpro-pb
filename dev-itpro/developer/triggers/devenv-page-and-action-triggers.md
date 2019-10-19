@@ -1,31 +1,28 @@
 ---
 title: "Page and Action Triggers"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 1282d6c0-be0e-4399-b948-848d1f0c700e
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # Page and Action Triggers
 Page triggers allow you to use AL code to control the behavior of the system as a result of an event on the page, such as a page opening or a field changing its value. You typically use page triggers for advanced validation and logic.  
 
  Page triggers can be divided into three categories:  
 
--   General page triggers that apply to the entire page  
+- General page triggers that apply to the entire page  
 
--   Field page triggers that apply to a field control on a page  
+- Field page triggers that apply to a field control on a page  
 
--   Action triggers that apply to an action on a page.  
+- Action triggers that apply to an action on a page.  
 
 > [!IMPORTANT]  
->  If you define two methods that have the same name, one defined in a page and the other in a table that is referenced by the page, you cannot invoke the method defined in the page directly. By default, a call to the method invokes the method that is defined in the table. This behavior occurs when the method is called from a source expression or a trigger.  
+> If you define two methods that have the same name, one defined in a page and the other in a table that is referenced by the page, you cannot invoke the method defined in the page directly. By default, a call to the method invokes the method that is defined in the table. This behavior occurs when the method is called from a source expression or a trigger.  
 
 ## General Triggers  
  The following table lists triggers that apply to the entire page.  
@@ -63,6 +60,15 @@ Page triggers allow you to use AL code to control the behavior of the system as 
 |Triggers|Runs|  
 |--------------|--------------|  
 |[OnAction Trigger](devenv-onaction-trigger.md)|When an action is initiated on a page.|  
+
+
+## Page Background Triggers
+The following table lists triggers that apply to page background tasks. For more information, see [Page Background Tasks](../devenv-page-background-tasks.md).
+
+|Triggers|Runs|
+|--------|-----|
+|[OnPageBackgroundTaskCompleted](devenv-onpagebackgroundtaskcompleted-trigger.md)|Runs after a page background task has successfully completed.|
+|[OnPageBackgroundTaskError](devenv-onpagebackgroundtaskerror-trigger.md)|Runs when an error occurs in a page background task.|
 
 ## See Also  
  [Triggers](devenv-triggers.md)

@@ -1,7 +1,7 @@
 ---
 title: "Insert, Modify, ModifyAll, Delete, and DeleteAll Methods"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Insert, Modify, ModifyAll, Delete, and DeleteAll Methods
+
 The following methods maintain the database by adding, modifying, and removing records:  
 
 - Insert
@@ -24,27 +25,32 @@ These methods are some of the most frequently used AL methods.
 Some of these methods return an optional Boolean value that indicates whether the method succeeded. If you do not handle the return value in your code, a run-time error occurs when a method returns **false**. If you handle the return value by testing its value in an **if** statement, no error will occur, and you must take corrective action in the code.  
 
 ## Insert method  
-Insert inserts a record in a table. For more information, see [Insert Method](methods-auto/record/record-insert-method.md).
-Insert has the following syntax.
-
+The Insert method inserts a record in a table. Insert has the following syntax.
+<!--
 ```  
 [Ok :=] Record.Insert([RunTrigger])  
 ```  
-
-The following example inserts a new record, with the **No.** and **Name** fields specified in the assigned values, while other fields will have their default values. If the **No.** field is the primary key of the **Customer** table, then the record will be inserted in the **Customer** table unless the table already contains a record with the same primary key. In this case you receive an error message because the return value is not tested.  
-
- This example requires that you create the following variable.  
-
-|Variable|Data type|Subtype|  
-|--------------|---------------|-------------|  
-|Customer|Record|Customer|  
-
+-->
 ```  
-Customer.Init;  
-Customer."No." := '4711';  
-Customer.Name := 'Andrew Dixon';  
-Customer.Insert;  
+[Ok := ]  Record.Insert([RunTrigger: Boolean[, InsertWithSystemId: Boolean]])
 ```  
+
+A record must be assigned a **SystemId**. You have the option to assign your own value or have the platform assign an auto-generated value. The following example inserts a new record, with the **SystemId**, **No.**, and **Name** fields specified in the assigned values, while other fields will have their default values. If the **No.** field is the primary key of the **Customer** table, then the record will be inserted in the **Customer** table unless the table already contains a record with the same primary key. In this case you receive an error message because the return value is not tested.  
+
+```
+var
+    Customer: Record Customer;
+begin
+    Customer.Init;
+    Customer.SystemId := '{B6666666-F5A2-E911-8180-001DD8B7338E}';  
+    Customer."No." := '4711';  
+    Customer.Name := 'Andrew Dixon';  
+    Customer.Insert(false, true);
+end; 
+```  
+
+> [!IMPORTANT]
+> After the **SystemId** has been set on a record, it cannot be changed.
 
 ## Modify method  
 Modify modifies a record that already exists. For more information, see [Modify Method](methods-auto/record/record-modify-method.md).
@@ -148,3 +154,4 @@ Customer.DeleteAll;
 
 ## See Also
 [AL Methods](methods/devenv-al-method-reference.md)  
+[SystemId Field](devenv-table-object.md#systemid)  

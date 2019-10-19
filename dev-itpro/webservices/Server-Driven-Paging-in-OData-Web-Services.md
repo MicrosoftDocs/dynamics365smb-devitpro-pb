@@ -1,7 +1,7 @@
 ---
 title: "Server-Driven Paging in OData Web Services"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Server-driven paging ensures that the quantity of data that is returned by an OD
  When using OData with queries that are set with a top number of rows by either the [TopNumberOfRows Property](../developer/properties/devenv-TopNumberOfRows-Property.md) and [TopNumberOfRows Method](../developer/methods-auto/query/queryinstance-topnumberofrows-method.md), you should set the **Max Page Size** value greater than the value of the **TopNumberOfRows** property and **TopNumberOfRows** method. For more information, see [Using OData with Queries That are Set with a Top Number of Rows](use-odata-with-queries-set-with-top-number-of-rows.md).  
   
 > [!NOTE] 
-> In the CustomSettings.config file for [!INCLUDE[server](../developer/includes/server.md)], the **Max Page Size** setting is called **ODataServicesPageMaxSize**.  
+> In the CustomSettings.config file for [!INCLUDE[server](../developer/includes/server.md)], the **Max Page Size** setting is called **ODataServicesMaxPageSize**.  
   
 ## See Also  
  [OData Web Services](OData-Web-Services.md)  

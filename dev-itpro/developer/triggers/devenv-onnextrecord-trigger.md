@@ -1,18 +1,14 @@
 ---
 title: "OnNextRecord Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 2e946369-2c8b-47f2-8f3e-0bd805f5c94a
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
-
 
 # OnNextRecord Trigger
 Determines the next record to be displayed.  
@@ -37,7 +33,7 @@ end;
 
 ## Applies To  
 
--   Pages  
+- Pages  
 
 ## Remarks  
  This trigger is executed in place of the default next record behavior.  

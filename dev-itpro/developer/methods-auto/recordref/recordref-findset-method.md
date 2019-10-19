@@ -2,7 +2,7 @@
 title: "FindSet Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Finds a set of records in a table based on the current key and filter. FINDSET c
 
 ## Syntax
 ```
-[Ok := ]  RecordRef.FindSet([ForUpdate: Boolean], [UpdateKey: Boolean])
+[Ok := ]  RecordRef.FindSet([ForUpdate: Boolean] [, UpdateKey: Boolean])
 ```
 ## Parameters
 *RecordRef*  
@@ -28,12 +28,10 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *ForUpdate*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Set this parameter to false if you do not want to modify any records in the set. Set this parameter to true if you want to modify records in the set. If you set this parameter to true, the LOCKTABLE method (RecordRef) is immediately performed on the table before the records are read.
-          
+Set this parameter to false if you do not want to modify any records in the set. Set this parameter to true if you want to modify records in the set. If you set this parameter to true, the LOCKTABLE method (RecordRef) is immediately performed on the table before the records are read.  
 *UpdateKey*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-This parameter only applies if ForUpdate is true. If you are going to modify any field value within the current key, set this parameter to true.
-          
+This parameter only applies if ForUpdate is true. If you are going to modify any field value within the current key, set this parameter to true.  
 
 
 ## Return Value
@@ -59,10 +57,10 @@ This parameter only applies if ForUpdate is true. If you are going to modify any
   
  This method is designed to optimize finding and updating sets. If you set any or both of the parameters to **false**, you can still modify the records in the set but these updates will not be performed optimally.  
   
- This method works the same way as the [FINDSET Method \(Record\)](../../methods/devenv-findset-method-record.md).  
+ This method works the same way as the [FINDSET Method \(Record\)](../record/record-findset-method.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The [FIELD Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) creates a FieldRef variable that is named MyFieldRef with the first field \(No.\). The [SETFILTER Method \(FieldRef\)](../../methods/devenv-setfilter-method-fieldref.md) uses the MyFieldRef variable to set a filter that selects records from 30000 to 32000. `MyRecordRef.FIELD(2)` creates a FieldRef for the second field \(Name\). The FINDSET method finds the set of records based on the key and the filters that have been set. The *ForUpdate* parameters and *UpdateKeys* are both set to **FALSE**. This makes the records in the set read-only. The record ID and name of each customer in the record set is displayed in a message box until no records are left in the record set. The following example requires that you create the following global variables and text constant.  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The [FIELD Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef with the first field \(No.\). The [SETFILTER Method \(FieldRef\)](../fieldref/fieldref-setfilter-method.md) uses the MyFieldRef variable to set a filter that selects records from 30000 to 32000. `MyRecordRef.FIELD(2)` creates a FieldRef for the second field \(Name\). The FINDSET method finds the set of records based on the key and the filters that have been set. The *ForUpdate* parameters and *UpdateKeys* are both set to **FALSE**. This makes the records in the set read-only. The record ID and name of each customer in the record set is displayed in a message box until no records are left in the record set. The following example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

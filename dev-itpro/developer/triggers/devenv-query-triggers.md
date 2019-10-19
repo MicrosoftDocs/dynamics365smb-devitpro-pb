@@ -2,13 +2,12 @@
 title: "Query Triggers"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 8577e3f5-1ddf-4171-bb89-9fee33d4fe8f
 author: SusanneWindfeldPedersen
 ---
 

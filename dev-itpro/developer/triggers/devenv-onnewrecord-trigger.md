@@ -1,18 +1,14 @@
 ---
 title: "OnNewRecord Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 680810f5-425f-483d-b574-4fe1db644b51
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
-
 
 # OnNewRecord Trigger
 Runs after a new record is initialized, but before it is inserted as a record in the table.  

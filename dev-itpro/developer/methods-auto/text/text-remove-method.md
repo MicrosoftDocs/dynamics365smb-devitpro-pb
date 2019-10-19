@@ -2,7 +2,7 @@
 title: "Remove Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Returns a new Text in which a specified number of characters from the current st
 
 ## Syntax
 ```
-Result :=   Text.Remove(StartIndex: Integer, [Count: Integer])
+Result :=   Text.Remove(StartIndex: Integer [, Count: Integer])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  

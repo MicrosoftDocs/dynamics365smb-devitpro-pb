@@ -3,7 +3,7 @@ title: "Security Setting and IP Protection"
 description: This topic explains how to set the security setting and IP protection against downloading or debugging into extension to see the source code.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/23/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

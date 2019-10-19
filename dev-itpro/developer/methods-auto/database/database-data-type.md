@@ -2,7 +2,7 @@
 title: "Database Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,12 +38,12 @@ The following methods are available on the Database data type.
 |[SessionId()](database-sessionid-method.md)|Gets the ID of the current session.|
 |[ServiceInstanceId()](database-serviceinstanceid-method.md)|Gets the ID of the service instance.|
 |[CopyCompany(String, String)](database-copycompany-method.md)|Creates a new company and copies all data from an existing company in the same database.|
-|[ImportData(Boolean, var Text, [Boolean], [Boolean], [Record])](database-importdata-method.md)|Imports data from a file that has been exported from a database.|
-|[ExportData(Boolean, var Text, [String], [Boolean], [Boolean], [Boolean], [Record])](database-exportdata-method.md)|Exports data from the database to a file. The data is not deleted from the database.|
+|[ImportData(Boolean, var Text [, Boolean] [, Boolean] [, Record])](database-importdata-method.md)|Imports data from a file that has been exported from a database.|
+|[ExportData(Boolean, var Text [, String] [, Boolean] [, Boolean] [, Boolean] [, Record])](database-exportdata-method.md)|Exports data from the database to a file. The data is not deleted from the database.|
 |[DataFileInformation(Boolean, var Text, var Text, var Boolean, var Boolean, var Boolean, var Text, var DateTime, var Record)](database-datafileinformation-method.md)|Specifies data from a file that has been exported from a database.|
 |[RegisterTableConnection(TableConnectionType, String, String)](database-registertableconnection-method.md)|Registers a table connection to an external database.|
 |[UnregisterTableConnection(TableConnectionType, String)](database-unregistertableconnection-method.md)|Unregisters a table connection to an external database.|
-|[SetDefaultTableConnection(TableConnectionType, String, [Boolean])](database-setdefaulttableconnection-method.md)|Establishes a connection to an external database based on a previously registered connection of the specified type.|
+|[SetDefaultTableConnection(TableConnectionType, String [, Boolean])](database-setdefaulttableconnection-method.md)|Establishes a connection to an external database based on a previously registered connection of the specified type.|
 |[GetDefaultTableConnection(TableConnectionType)](database-getdefaulttableconnection-method.md)|Gets the default table connection based on the specified connection type. You must already have registered a table connection of this type.|
 |[HasTableConnection(TableConnectionType, String)](database-hastableconnection-method.md)|Verifies if a connection to an external database exists based on the specified name.|
 

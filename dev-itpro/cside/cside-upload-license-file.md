@@ -1,7 +1,7 @@
 ---
 title: "How to: Upload the License File"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ After an administrator or a Microsoft Certified Partner initially installs [!INC
 
 4.  Restart the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to activate the license.  
 
-5.  Restart all [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances on the computer to activate the license for other clients.  
+5.  Restart all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer to activate the license for other clients.  
 
 > [!NOTE]  
 >  Always review your license file after uploading, to verify that all information is correct and that you have all necessary license granules.  
@@ -53,7 +53,7 @@ After an administrator or a Microsoft Certified Partner initially installs [!INC
 
 2.  In the **Alter Database** window, choose **Integration**, and then select **Save license in database**.  
 
-3.  Restart all [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instances on the computer to activate the license for other clients.  
+3.  Restart all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer to activate the license for other clients.  
 
 ## See Also  
  [Microsoft Dynamics ERP Software License Terms (requires login)](http://go.microsoft.com/fwlink/?LinkId=247426)   
