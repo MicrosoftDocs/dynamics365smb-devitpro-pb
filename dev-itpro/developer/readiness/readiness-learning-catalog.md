@@ -15,131 +15,100 @@ ms.author: solsen
 <div class="container">
 <h1>The “Ready to Go” Online Learning Catalog</h1>
 <p> This “Ready to Go” learning catalog provides Dynamics 365 Business Central partners a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develop apps for Microsoft AppSource. The information in this document is being updated on a weekly basis.</p>
- <ul class="pivots">
-    <li>
-        <a href="#products" data-linktype="self-bookmark"></a>
-            <ul id="products">
-                <li>
-                    <a href="#products1" data-linktype="self-bookmark"></a>
-                    <ul id="products1" class="cardsC cols cols3">
-                        <li>
-                            <a href="readiness-learning-dev-archs-engineers.md" title="Materials for developers, architects, and engineers" data-linktype="relative-path">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage_blue.png" src="../media/PreviewImage_blue.png" alt="" data-linktype="relative-path">
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Materials for developers, architects, and engineers</h3>
-						    <p>The “Ready to Go” online learning for developers, architects, and engineers.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="readiness-learning-app-consultants.md" title="Materials for application consultants" data-linktype="relative-path">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Materials for application consultants</h3>
-												<p>The “Ready to Go” online learning for application consultants.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="readiness-learning-presales.md" title="Materials for presales roles" data-linktype="relative-path">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage_blue.png" src="../media/PreviewImage_blue.png" alt="" data-linktype="relative-path">
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Materials for pre-sales roles</h3>
-												<p>The “Ready to Go” online learning for pre-sales.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li> 
-                        <li>
-                            <a href="readiness-learning-sales.md" title="Materials for sales roles" data-linktype="relative-path">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Materials for sales roles</h3>
-												<p>The “Ready to Go” online learning for sales.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li> 
-                        <li>
-                            <a href="readiness-learning-marketeers.md" title="Materials for marketeers" data-linktype="relative-path">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage_blue.png" src="../media/PreviewImage_blue.png" alt="" data-linktype="relative-path">
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Materials for marketeers</h3>
-												<p>The “Ready to Go” online learning for marketeers.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li> 
-                        <li>
-                            <a href="readiness-learning-bus-decision-makers.md" title="Materials for business decision makers" data-linktype="relative-path">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img data-scaleimage="../media/PreviewImage.png" src="../media/PreviewImage.png" alt="" data-linktype="relative-path">
-                                                </div>
-                                            </div>
-                                            <div class="cardText">
-                                                <h3>Materials for business decision makers</h3>
-												<p>The “Ready to Go” online learning for business decision makers.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li> 
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</div>
-</div>
+
+
+<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+
+:::row:::
+    :::column:::
+<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+
+    ### Materials for developers, architects, and engineers
+
+    [The “Ready to Go” online learning for developers, architects, and engineers](readiness-learning-dev-archs-engineers.md)
+
+    [Get started](learning-dev-archs-engineers.md#get-started)
+    [What's new](learning-dev-archs-engineers.md#whats-new)
+    [Proficient knowledge](learning-dev-archs-engineers.md#proficient)
+    [For experts](learning-dev-archs-engineers.md#experts)
+
+:::column-end:::
+
+:::row-end::: :::row::: :::column:::
+  
+
+    ### Materials for application consultants
+
+    [The “Ready to Go” online learning for application consultants](readiness-learning-catalog-app-consultants.md)
+
+:::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+
+    ### Materials for functional consultants
+
+    [The “Ready to Go” online learning for functional consultants](readiness-learning-catalog-functional-consultants.md)
+
+    [Get started](readiness-learning-catalog-functional-consultants.md#get-started)
+
+    [Proficient knowledge](readiness-learning-catalog-functional-consultants.md#proficient)
+
+:::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+
+    ### Materials for pre-sales roles
+
+    [The "ready to Go" online learning for pre-sales](readiness-learning-presales.md)
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+    ### Materials for sales roles
+
+    [The "ready to Go" online learning for sales](readiness-learning-sales.md)
+
+    [Get started](readiness-learning-sales.md#get-started)
+
+    [Proficient knowledge](readiness-learning-sales.md#proficient)
+
+:::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+
+    ### Materials for marketeers
+
+    [The "Ready to Go" online learning for marketeers](readiness-learning-marketeers.md)
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+    ### Materials for business decision makers
+
+    [The "Ready to Go" online learning for business decision makers](readiness-learning-bus-decision-makers.md)
+
+
+ :::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+    ### Materials for business users
+
+    [The "Ready to Go" online learning for business users](readiness-learning-bus-users.md)
+
+    [Get started](readiness-learning-bus-users.md#get-started)
+
+    [Proficient knowledge](readiness-learning-bus-users.md#proficient)
+
+
+ :::column-end:::
+:::row-end:::
+
