@@ -30,13 +30,13 @@ For more information setting up an Azure storage account, see [Create a storage 
 The next step is to generate a shared access signature (SAS) that is used to provide secure delegated access to your storage account. This allows the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service to write the .bacpac file to your storage account.
 
 1. On the Azure storage account, select **Shared access signature** in the navigation pane.
-2. In the **Allowed services** section of the shared access signature pane, mark **Blog**, and unmark the other options.
-3. In the **Allowed resource types** section, mark **Container**, and unmark the other options.
+2. In the **Allowed services** section of the shared access signature pane, mark **Blob**, and unmark the other options.
+3. In the **Allowed resource types** section, mark **Container** and **Object**, and unmark the other option(s).
 4. In the **Allowed permissions** section, mark **Read**, **Write**, **Delete**, and **Create**, and unmark the other options.
-5. Select a start and end date and time for the SAS.
+5. Select a start and end date and time for the SAS. A minimum expiration window of six hours from the initiation of the export is required.
 
   > [!TIP]
-  > It is a best practice to use near-term expiration for the account SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to begin the database export operation.
+  > It is a best practice to use near-term expiration for the account SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation.
 
 6. In the **Allowed protocols** section, select **HTTPS only**.
 7. Select **Generate SAS and connection string**.
@@ -49,9 +49,11 @@ After creating the Azure storage account, and generating the SAS URI, you can th
 
 1. On the Environments list page, select the enviroment name of your environment to view the environment details.
 2. On the action ribbon of the environment details, select **Database >> Create Database Export**.
-3. In the **File Name** field, enter a name for the export file, or leave teh default value.
+3. In the **File Name** field, enter a name for the export file, or leave the default value.
 4. In the **SAS URI** field, enter the **Blob service SAS URL** value copied in the previous section.
 5. In the **Container Name** field, enter a name of the container in the Azure storage account to which you want the .bacpac file exported. If you have already created a container in your Azure storage account, you can enter the name of that container here. Otherwise, if the name entered in the Container Name field does not already exist in the Azure storage account, it will be created for you.
+
+Once the export process begins, the .bacpac file is generated and exported to the indicated Azure storage account. The process may take several minutes to several hours depending on the size of database. The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] does not need to remain open for the export to complete. Upon successful completion, you will be able to access the export file in your Azure storage account. 
 
 ## View the export history
 All database export activity is logged in export history for auditing purposes. To view the history, select **Database >> View Export History** on the action ribbon of the environment details page of the environment.
