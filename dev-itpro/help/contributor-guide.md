@@ -151,13 +151,13 @@ But if you then want to use that link elsewhere, the link only works for one of 
 
 To work around this problem, you can add a post-processing step to the script that you use to run DocFx to change the equivalent of ```<h3 id=da-DK-anchor-name>``` with ```<h3 id=en-US-anchor-name>```. In this example, the step would change ```<h3 id=min-oversatte-overskrift’>``` to ```<h3 id=my-translated-subheading’>```.  
 
-Alternatively, you can create explicit anchors by tagging your subheading to give it a fixed anchor. In this example, this is how that would look in MarkDown:
+Alternatively, you can create explicit anchors by tagging your subheading to give it a *fixed anchor*. In this example, this is how that would look in MarkDown:
 
 ```
-<a name="subheading"></a> ### My translated subheading
+### <a name="subheading"></a>My translated subheading
 ```
 
-You would then be able to use the same link across all locales: ```[My translated subheading](article2.md#subheading)```, which would render in HTML as ```myurl.com/docs/article2#subheading```.  
+You would then be able to use the same link across all locales: ```[My translated subheading](article2.md#subheading)```, which would render in HTML as ```myurl.com/docs/article2#subheading``` across all languages.  
 
 For more information, see [Using hashtag in cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-hashtag-in-cross-reference) in the GitHub documentation.  
 
