@@ -59,10 +59,13 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 3. Unpublish all 3rd party extensions.
 
-    To unpublish an extension, use the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
+    To unpublish an extension, use the [Unpublish-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
+    
     ``` 
-    Unpublish-NAVApp -ServerInstance BC140 -Name My14Ext -Version 1.0.0.0
+    Unpublish-NAVApp -ServerInstance BC140 -Name <name> -Version <version>
     ``` 
+
+    <!--  Unpublish-NAVApp -ServerInstance BC140 -Name My14Ext -Version 1.0.0.0>
 
 4. Unpublish all system, test, and application symbols from the application.
 
@@ -274,14 +277,18 @@ If you have a multitenant deployment, perform these steps for each tenant.
     Use the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
     ```
-    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "System Application" -Version 15.0.35986.0
+    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "System Application" -Version <version>
+    ```
+
+    Replace `<version>` with the exact version of the published System Application. To get the version, you can use the Get-NAVAppInfo cmdlet.
     ```
 5. Synchronize the tenant with the Business Central Base Application extension (Microsoft_BaseApp):
 
     ```
-    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "Base Application" -Version 15.0.35986.0
+    Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "Base Application" -Version <version>
     ```
-    
+   Replace `<version>` with the exact version of the published Base Application. 
+
     With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID. This process can take several minutes.
 <!--
     > [!IMPORTANT] 
