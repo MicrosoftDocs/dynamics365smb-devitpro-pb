@@ -102,7 +102,7 @@ For more information, see [Create a Full Database Backup \(SQL Server\)](http://
 
 ## Task 2 Uninstall all extensions in old database
 
-Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!INCLUDE[admishell](../developer/includes/adminshell.md) that matches to old database, and run these commands:
+Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md) that matches to old database, and run these commands:
 
 1. To get a list of the extensions that are installed, run this command:
 
