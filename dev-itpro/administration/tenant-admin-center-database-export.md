@@ -19,7 +19,7 @@ ms.author: jaredha
 
 From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environments as .bacpac files to an Azure storage container.
 
-## Set up Azure storage
+## Setting up Azure storage
 
 Before you can export the file, you must first set up the Azure storage account container that the .bacpac file will be exported to.  
 
@@ -28,8 +28,6 @@ Before you can export the file, you must first set up the Azure storage account 
 The first step of creating the storage account container is to create the Azure storage account. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure Portal](https://portal.azure.com). 
 
 For more information setting up an Azure storage account, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
-
-
 
 ### Generating a shared access signature (SAS)
 
@@ -43,8 +41,8 @@ The next step is to generate a shared access signature (SAS) that provides secur
 4. In the **Allowed permissions** section, mark **Read**, **Write**, **Delete**, and **Create**, and clear the other options.
 5. Select a start and end date and time for the SAS. A minimum expiration window of six hours from the initiation of the export is required.
 
-  > [!TIP]
-  > It is a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation.
+    > [!TIP]
+    > It is a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation.
 
 6. In the **Allowed protocols** section, select **HTTPS only**.
 7. Select **Generate SAS and connection string**.
