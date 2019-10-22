@@ -71,7 +71,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
     - When upgrading from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-        In the client, search for and open the Permission Sets page, select the user-defined permission sets that you want to keep, and then choose **Export Permission Sets**.
+        In the client, search for and open the **Permission Sets** page, select the user-defined permission sets that you want to keep, and then choose **Export Permission Sets**. This action runs XMLPort **9173 Export Permission Sets**.
 
 6. If the old deployment uses data encryption, you have exported the encryption key file that it used for the data encryption.  
 
@@ -102,7 +102,7 @@ For more information, see [Create a Full Database Backup \(SQL Server\)](http://
 
 ## Task 2 Uninstall all extensions in old database
 
-Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!INCLUDE[admishell](../developer/includes/adminshell.md) that matches to old database, and run these commands:
+Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md) that matches to old database, and run these commands:
 
 1. To get a list of the extensions that are installed, run this command:
 
@@ -484,6 +484,8 @@ Import the permission sets and permissions XML files that you exported from the 
     1. In the client, search for and open the **Permission Sets** page.
     2. Delete all user-defined permissions.
     3. Choose **Import Permission Sets**, then select the permissions set file that you exported previously.
+
+        This action runs the XMLPort **9174 Import Tenant Permissions**.
 
 ## <a name="UploadEncryptionKeys"></a>Task 16: \(Optional\) Import data encryption key
 
