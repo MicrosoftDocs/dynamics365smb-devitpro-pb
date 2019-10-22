@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2019
+ms.date: 10/22/2019
 ms.author: edupont
 ---
 
@@ -18,7 +18,7 @@ The standard version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)
 
 When you move to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can reuse your existing product Help solution in most situations, especially if the content is already published to what we refer to here as an *online library*, which is an internal or external website. In that case, all you have to do is to add that website to the configuration of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online or on-premises. For more information, see [Configuring the Help Experience](../deployment/configure-help.md).  
 
-More specifically, if you have content that you created for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md), then you can choose to reuse that for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution.  
+More specifically, if you have content that you created for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you can choose to reuse that for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution.  
 
 For example, you have a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server website with HTML files that describe your solution according to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] documentation model and format. In that scenario, you can reuse the Help Server website and rebrand that and the content accordingly. You then connect your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with that Help Server website.  
 
@@ -35,13 +35,13 @@ If you are migrating your solution from Dynamics GP, you might have content in P
 
 ### Migrating from Dynamics NAV
 
-If you are migrating your solution from [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] or later versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md), then you most likely have been using the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server, and your Help content is in HTML format. That means that you can reuse your existing content as-is, or you can use publicly available third-party solutions to convert some or all of your HTML files to MarkDown, if you want to follow similar processes to the ones the Microsoft team follows. For more information, see the [Moving to MarkDown](#moving-to-markdown) section.  
+If you are migrating your solution from [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] or later versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you most likely have been using the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server, and your Help content is in HTML format. That means that you can reuse your existing content as-is, or you can use publicly available third-party solutions to convert some or all of your HTML files to MarkDown, if you want to follow similar processes to the ones the Microsoft team follows. For more information, see the [Moving to MarkDown](#moving-to-markdown) section.  
 
-If you are migrating from an earlier version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md), then you can choose to first migrate to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] format, and then migrate again to MarkDown or similar formats. For more information, see [Upgrading Your Existing Help Content](/previous-versions/dynamicsnav-2013r2/dn466754(v=nav.71)) in the legacy docs for [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)].  
+If you are migrating from an earlier version of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], then you can choose to first migrate to the [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)] format, and then migrate again to MarkDown or similar formats. For more information, see [Upgrading Your Existing Help Content](/previous-versions/dynamicsnav-2013r2/dn466754(v=nav.71)) in the legacy docs for [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)].  
 
 ### Converting legacy Dynamics NAV field Help to tooltips
 
-For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], Microsoft extracted the first paragraph from the HTML files of the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md) Help for table fields, and then imported the text into the page objects of the base application as tooltips. You can build a similar tool if you want to reuse your existing content in the same way.  
+For the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], Microsoft extracted the first paragraph from the HTML files of the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help for table fields, and then imported the text into the page objects of the base application as tooltips. You can build a similar tool if you want to reuse your existing content in the same way.  
 
 The tooltips play an important role as part of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] [user assistance model](../user-assistance.md), and we encourage you to apply tooltips to your controls and actions as well.  
 
