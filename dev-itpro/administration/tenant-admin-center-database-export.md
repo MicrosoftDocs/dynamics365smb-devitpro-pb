@@ -1,5 +1,5 @@
 ---
-title: Database Export | Microsoft Docs
+title: Exporting Databases | Microsoft Docs
 description: Use the Business Central administration center to export environment databases.  
 author: jaredha
 
