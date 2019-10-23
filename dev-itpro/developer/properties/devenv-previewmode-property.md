@@ -41,4 +41,4 @@ PreviewMode = Normal;
  [Report Design Overview](../devenv-report-design-overview.md)   
  [Designing Reports](../devenv-designing-reports.md)   
  [Printing Reports](../devenv-printing-reports.md) -->  
- [PREVIEW Method (Report)](../methods/devenv-preview-method-report.md)
+ [PREVIEW Method (Report)](../methods-auto/report/reportinstance-preview-method.md)

@@ -53,9 +53,9 @@ In some cases, the actions for the return values are different when the page dis
 |RunSystem|The user selected an option that ran an external program.|  
 
 ## Remarks  
- If you know the specific page that you want to run when you are designing your application, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [RUN Method \(Page\)](../../methods/devenv-run-method-page.md).  
+ If you know the specific page that you want to run when you are designing your application, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [RUN Method \(Page\)](../../methods-auto/page/page-run-method.md).  
 
- If you do not know the specific page that you want to run, then use the [PAGE.RUN Method](../../methods/devenv-page-run-method.md) or the [PAGE.RUNMODAL Method](../../methods/devenv-page-runmodal-method.md) and specify the page in the *Number* parameter.  
+ If you do not know the specific page that you want to run, then use the [RUN Method \(Page\)](../../methods-auto/page/page-run-method.md) or the [RUNMODAL Method \(Page\)](../../methods-auto/page/page-runmodal-method.md)and specify the page in the *Number* parameter.  
 
  After you define the page variable, you can use it before and after you run the page. If you use the [PAGE.RUN Method](../../methods/devenv-page-run-method.md), then you can only use the variable before you run the page.  
 

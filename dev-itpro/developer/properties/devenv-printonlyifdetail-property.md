@@ -78,4 +78,4 @@ PrintOnlyIfDetail = true;
 |Order|10000|101016||…|  
   
 ## See Also  
- [PRINTONLYIFDETAIL Method (Report)](../methods/devenv-printonlyifdetail-method-report.md)
+ [PRINTONLYIFDETAIL Method (Report)](../methods-auto/report/reportinstance-printonlyifdetail-method.md)
