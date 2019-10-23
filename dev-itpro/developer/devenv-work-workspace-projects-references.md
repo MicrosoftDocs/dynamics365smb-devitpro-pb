@@ -74,7 +74,7 @@ To control how dependency publishing is performed on the server, the `launch.jso
 |--------|------------|
 |Default|Set dependency publishing will be applied.|
 |Ignore|Dependency publishing is ignored. This setting should be used cautiously, see note below.|
-|Strict|Dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace.|
+|Strict|Dependency publishing will fail if there are any installed apps that depend on the startup project.|
 
 > [!NOTE]  
 > With the `Ignore` setting only **Leaf** will be published against what has already been published on the server for **Middle** and **Base**. If a change has been done on **Base** that would break **Leaf**, even though local compilation would pass, the server compilation will fail in this scenario. The benefit of using this option is to gain publishing time when **Base** is a large project. Assuming that **Base** is published, then **Leaf** and **Middle** will be left untouched on the server. Only runtime errors will reveal if **Base** has broken **Middle** and **Leaf**.
