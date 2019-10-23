@@ -3,7 +3,7 @@ layout: HubPage
 hide_bc: true
 experimental: true
 experiment_id: "81ba5f65-59fb-4d"
-title: Ready to Go Online Learning Catalog
+title: Learning Catalog for Business Central
 description: 
 ms.topic: hub-page
 ms.date: 10/01/2019
@@ -13,8 +13,8 @@ ms.author: solsen
 
 <div id="main" class="v2">
 <div class="container">
-<h1>The “Ready to Go” Online Learning Catalog</h1>
-<p> This “Ready to Go” learning catalog provides Dynamics 365 Business Central partners a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develop apps for Microsoft AppSource. The information in this document is being updated on a weekly basis.</p>
+<h1>Learning Catalog for Business Central</h1>
+<p> This learning catalog provides Dynamics 365 Business Central partners a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develop apps for Microsoft AppSource. The information in this document is being updated on a weekly basis.</p>
 
 
 
@@ -23,46 +23,46 @@ ms.author: solsen
 :::row:::
     :::column:::
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
-
-    ### Materials for developers, architects, and engineers
-
-    [The “Ready to Go” online learning for developers, architects, and engineers](readiness-learning-dev-archs-engineers.md)
-
-    [Get started](learning-dev-archs-engineers.md#get-started)
-    [What's new](learning-dev-archs-engineers.md#whats-new)
-    [Proficient knowledge](learning-dev-archs-engineers.md#proficient)
-    [For experts](learning-dev-archs-engineers.md#experts)
-
-:::column-end:::
-
-:::row-end::: :::row::: :::column:::
-  
-
-    ### Materials for application consultants
-
-    [The “Ready to Go” online learning for application consultants](readiness-learning-catalog-app-consultants.md)
-
-:::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
 
     ### Materials for functional consultants
 
-    [The “Ready to Go” online learning for functional consultants](readiness-learning-catalog-functional-consultants.md)
+    [Functional Consultants Learning Catalog](readiness-learning-catalog-functional-consultants.md)
 
     [Get started](readiness-learning-catalog-functional-consultants.md#get-started)
-
-    [Proficient knowledge](readiness-learning-catalog-functional-consultants.md#proficient)
+    [Deploy](readiness-learning-catalog-functional-consultants.md#deploy)
+    [Financials](readiness-learning-catalog-functional-consultants.md#financials)
+    [Trade](readiness-learning-catalog-functional-consultants.md#trade)
+    [Cloud](readiness-learning-catalog-functional-consultants.md#cloud)
 
 :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
+    ### Materials for developers
+
+    [Developers Learning Catalog](readiness-learning-presales.md)
+
+    [Get started](readiness-learning-developers.md#get-started)
+    [What's new](readiness-learning-developers.md#whatsnew)
+    [Core development](readiness-learning-developers.md#core-development)
+    [Application lifecycle management](readiness-learning-developers.md#applife)
+    [Connect apps](readiness-learning-developers.md#connect-apps)
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
     ### Materials for pre-sales roles
 
-    [The "ready to Go" online learning for pre-sales](readiness-learning-presales.md)
+    [Pre-sales Learning Catalog](readiness-learning-presales.md)
+
+    [Get started](readiness-learning-presales.md#get-started)
+    [Grow your business](readiness-learning-presales.md#grow)
+    [Busines value](readiness-learning-presales.md#busvalue)
+    [What's new](readiness-learning-presales.md#whatsnew)
+    [Demo](readiness-learning-presales.md#demo)
 
 :::column-end:::
 :::row-end:::
@@ -71,20 +71,11 @@ ms.author: solsen
 
     ### Materials for sales roles
 
-    [The "ready to Go" online learning for sales](readiness-learning-sales.md)
+    [Sales Learning Catalog](readiness-learning-sales.md)
 
+    [Business value](readiness-learning-sales.md#busvalue)
     [Get started](readiness-learning-sales.md#get-started)
-
-    [Proficient knowledge](readiness-learning-sales.md#proficient)
-
-:::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-
-    ### Materials for marketeers
-
-    [The "Ready to Go" online learning for marketeers](readiness-learning-marketeers.md)
+    [Grow your business](readiness-learning-sales.md#grow)
 
 :::column-end:::
 :::row-end:::
@@ -93,7 +84,10 @@ ms.author: solsen
 
     ### Materials for business decision makers
 
-    [The "Ready to Go" online learning for business decision makers](readiness-learning-bus-decision-makers.md)
+    [Business Decision Makers Learning Catalog](readiness-learning-bus-decision-makers.md)
+
+    [Business value](readiness-learning-bus-decision-makers.md#busvalue)
+    [Get started](readiness-learning-bus-decision-makers.md#get-started)
 
 
  :::column-end:::
@@ -103,11 +97,11 @@ ms.author: solsen
 
     ### Materials for business users
 
-    [The "Ready to Go" online learning for business users](readiness-learning-bus-users.md)
+    [Business Users Learning Catalog](readiness-learning-bus-users.md)
 
     [Get started](readiness-learning-bus-users.md#get-started)
-
-    [Proficient knowledge](readiness-learning-bus-users.md#proficient)
+    [Financials](readiness-learning-bus-users.md#financials)
+    [Trade](readiness-learning-bus-users.md#trade)
 
 
  :::column-end:::
