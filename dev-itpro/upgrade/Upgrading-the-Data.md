@@ -2,7 +2,7 @@
 title: Upgrading the Database
 description: This article describes the tasks required for upgrading from the earlier versions of database to Dynamics 365 Business Central.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/22/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -55,7 +55,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade90014x.FOB| Upgrade900130.FOB|
     |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade100014x.FOB| Upgrade1000130.FOB|
     |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade110014x.FOB|Upgrade1100130.FOB|
-    |[!INCLUDE[prodshort](../developer/includes/prodshort.md) Fall 2018]| Upgrade13x14x.FOB|Not applicable|
+    |[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Fall 2018]| Upgrade13x14x.FOB|Not applicable|
 
    For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark or **Upgrade110014x.DE.fob** for Germany.
 
@@ -71,7 +71,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
     - When upgrading from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-        In the client, search for and open the Permission Sets page, select the user-defined permission sets that you want to keep, and then choose **Export Permission Sets**.
+        In the client, search for and open the **Permission Sets** page, select the user-defined permission sets that you want to keep, and then choose **Export Permission Sets**. This action runs XMLPort **9173 Export Permission Sets**.
 
 6. If the old deployment uses data encryption, you have exported the encryption key file that it used for the data encryption.  
 
@@ -102,7 +102,7 @@ For more information, see [Create a Full Database Backup \(SQL Server\)](http://
 
 ## Task 2 Uninstall all extensions in old database
 
-Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!INCLUDE[admishell](../developer/includes/adminshell.md) that matches to old database, and run these commands:
+Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)] that matches to old database, and run these commands:
 
 1. To get a list of the extensions that are installed, run this command:
 
@@ -484,6 +484,8 @@ Import the permission sets and permissions XML files that you exported from the 
     1. In the client, search for and open the **Permission Sets** page.
     2. Delete all user-defined permissions.
     3. Choose **Import Permission Sets**, then select the permissions set file that you exported previously.
+
+        This action runs the XMLPort **9174 Import Tenant Permissions**.
 
 ## <a name="UploadEncryptionKeys"></a>Task 16: \(Optional\) Import data encryption key
 

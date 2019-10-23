@@ -228,7 +228,7 @@ If you have a multitenant deployment, perform these steps for each tenant (repla
     
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-    At this stage, the tenant state is **Operational**. Changes to system are 
+    At this stage, the tenant state is **Operational**.
 
 3. Synchronize the tenant to the base application extension (Base Application).
 
@@ -260,7 +260,7 @@ With this task, you configure the version 15 server so that the Microsoft and 3r
 1. Get the appId, name, and publisher of the custom base application and test library extensions.
 
     ```
-    Get-NAVAppInfo BC150
+    Get-NAVAppInfo -ServerInstance BC150
     ```
 2. Set the `DestinationAppsForMigration` parameter for the server instance configuration to include the information about the custom base application and test library (if used). For example:<!-- skip this step for now in single tenant-->
 

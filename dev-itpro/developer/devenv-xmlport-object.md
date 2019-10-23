@@ -13,7 +13,7 @@ ms.author: solsen
 --- 
 
 # XMLport Object
-XMLports are used to export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Sharing data between different computer systems is seamless when it is shared in XML format. Working with XML files can be tedious so the details of how the XML file is handled are encapsulated in XMLports.
+XMLports are used to export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Sharing data between different computer systems is seamless when it is shared in an XML format. Working with XML files can be tedious so the details of how the XML file is handled are encapsulated in XMLports.
 
 To use an XMLport to import or export data, you first create an XMLport object. You can run the XMLport from a page or codeunit object. 
 
@@ -150,6 +150,7 @@ xmlport 50112 ExportPermissionSet
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[XMLport Overview](devenv-xmlport-overview.md)  
+[Using Namespaces with XMLports](devenv-using-namespaces-with-xmlports.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Report Object](devenv-report-object.md)  
-[XMLport Overview](devenv-xmlport-overview.md)
