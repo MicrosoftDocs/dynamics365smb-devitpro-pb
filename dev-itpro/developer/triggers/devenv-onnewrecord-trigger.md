@@ -32,7 +32,10 @@ end;
  Use this trigger to initialize a new record or other variables on the page. This is run before users enter any data in the record.  
   
  If an error occurs in the trigger code a popup dialog shows an error message. When the dialog is closed, the user can enter new data.  
-  
+
+> [!IMPORTANT]  
+> For pages of the type Card, List, ListPlus, Document, or Worksheet, the OnNewRecord trigger is called twice if the page is opened in the edit mode and does not have any records to display. If the page is opened in the view mode, the trigger is called only once.
+
 > [!NOTE]  
 >  The OnNewRecord trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](Exposing-Methods-and-Properties-in-a-Windows-Client-Control-Add-in.md).  -->
   

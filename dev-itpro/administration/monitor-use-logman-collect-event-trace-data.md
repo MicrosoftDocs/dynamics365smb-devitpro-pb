@@ -62,7 +62,7 @@ The following steps give you an example of how to use logman.
     logman stop MyServerTraceData 
     ```
 
-The data is now stored in an .elt file. 
+The data is now stored in an .etl file. 
 
 ## View trace event data
 

@@ -9,12 +9,9 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
- 
 
 # Ruleset for the Code Analysis Tool 
 In an AL project, you can use a custom ruleset file to specify how code analysis will report the issues it encounters. Different settings can affect how rules are applied and each ruleset file name must follow the pattern `<name>.ruleset.json` to benefit from IntelliSense in Visual Studio Code.
@@ -36,7 +33,7 @@ An **IncludedRuleSet** is a complex JSON object that defines the inclusion of an
 
 |Setting|Mandatory|Type|Value|
 |-------|---------|-----|-----|   
-|path|Yes|String|The path to the included file. For includes specified in the file to which the **al.ruleSetPath** is set, the path can be absolute or relative to the project folder. For files included from the root ruleset file, the path is relative to the file.|    
+|path|Yes|String|The path to the included file. For includes specified in the file to which the **al.ruleSetPath** is set, the path can be absolute or relative to the project folder. For files included from the root ruleset file, the path is relative to the file. Adding an entry to the ruleset path and saving it will automatically be applied to all projects that are using the ruleset.|    
 |action|Yes|Error&nbsp;&#124;&nbsp;Warning&nbsp;&#124;&nbsp;Info&nbsp;&#124;&nbsp;Hidden&nbsp;&#124;&nbsp;None&nbsp;&#124;&nbsp;Default|The action to apply for all the diagnostics that have an action specified in the included ruleset that is different from **None** and **Hidden**.|
 
 A **Rule** is a complex JSON object that specifies how you can process a specific diagnostic. A **Rule** object has the following properties:     
@@ -63,7 +60,7 @@ The following example shows a ruleset that sets the severity of rule **AA0001 : 
 }
 ```
 
-The following example shows a project specific ruleset that extends a company wide ruleset contained in the file **company.ruleset.json** and sets the severity of the rule **AA0005 : Only use BEGIN..END to enclose compound statements.** provided by the **CodeCop** analyzer to **Info**.
+The following example shows a project-specific ruleset that extends a company-wide ruleset contained in the file **company.ruleset.json** and sets the severity of the rule **AA0005 : Only use BEGIN..END to enclose compound statements.** provided by the **CodeCop** analyzer to **Info**.
 
 ```
 {

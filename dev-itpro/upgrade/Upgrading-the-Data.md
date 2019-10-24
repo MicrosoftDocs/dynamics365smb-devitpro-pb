@@ -156,7 +156,9 @@ Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoin
 
 If the database is on Azure SQL Database, you must first add your user account to the **dbmanager** database role on master database. This membership is only required for converting the database, and can be removed afterwards. 
 
-To convert the old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] format, open the old database in the new [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and follow the conversion instructions.
+To convert the old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] format, run the new [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], open the old database, and follow the conversion instructions.
+
+If you do not run the development environment as an administrator, you will get an error and the conversion will be stopped.
 
 For more information about how to open a database, see [Open a Database](../cside/cside-open-database.md).
 
