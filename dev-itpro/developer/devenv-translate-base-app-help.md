@@ -27,10 +27,7 @@ The `supportedLocales` property is used to specify the list of locales that are 
 
 ```
 "helpBaseUrl": "https://www.mydocumentationwebsite.com/{0}/business-central/",
-
-  "supportedLocales": [
-
-       "da-DK"  ]
+"supportedLocales": ["da-DK"]
 ```
 
 ## See Also
