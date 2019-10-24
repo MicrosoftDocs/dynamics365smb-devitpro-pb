@@ -34,9 +34,9 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 1. Upgrade to Business Central Spring 2019 [Cumulative Update 4](https://support.microsoft.com/en-us/help/4518535) (version 14.5).
 
-   If your current deployment is already running version 14 cumulative update 5, we recommend to wait until the first cumulative update for version 15 is released.
+   If your current deployment is already running cumulative update 5 (version 14.6), we recommend to wait until the first cumulative update for version 15 is released.
 
-For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md)
+ For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
 
 ## Task 1: Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 release wave 2 (version 15.0)
 
