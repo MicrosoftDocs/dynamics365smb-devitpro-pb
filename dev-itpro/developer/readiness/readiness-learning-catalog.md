@@ -26,13 +26,13 @@ ms.author: solsen
 
     ### Materials for functional consultants
 
-    [Functional Consultants Learning Catalog](readiness-learning-catalog-functional-consultants.md)
+    [Functional Consultants Learning Catalog](readiness-learning-functional-consultants.md)
 
-    [Get started](readiness-learning-catalog-functional-consultants.md#get-started)
-    [Deploy](readiness-learning-catalog-functional-consultants.md#deploy)
-    [Financials](readiness-learning-catalog-functional-consultants.md#financials)
-    [Trade](readiness-learning-catalog-functional-consultants.md#trade)
-    [Cloud](readiness-learning-catalog-functional-consultants.md#cloud)
+    [Get started](readiness-learning-functional-consultants.md#get-started)
+    [Deploy](readiness-learning-functional-consultants.md#deploy)
+    [Financials](readiness-learning-functional-consultants.md#financials)
+    [Trade](readiness-learning-functional-consultants.md#trade)
+    [Cloud](readiness-learning-functional-consultants.md#cloud)
 
 :::column-end:::
 :::row-end:::
