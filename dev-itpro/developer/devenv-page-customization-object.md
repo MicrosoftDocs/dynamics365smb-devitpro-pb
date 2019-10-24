@@ -78,4 +78,5 @@ profile TheSalesman
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Object](devenv-page-object.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
-[Page Extension Properties](properties/devenv-page-property-overview.md)   
+[Views](devenv-views.md)  
+[Page Extension Properties](properties/devenv-page-property-overview.md)  
