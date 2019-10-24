@@ -103,6 +103,5 @@ ms.author: solsen
     [Financials](readiness-learning-bus-users.md#financials)
     [Trade](readiness-learning-bus-users.md#trade)
 
-
  :::column-end:::
 :::row-end:::
