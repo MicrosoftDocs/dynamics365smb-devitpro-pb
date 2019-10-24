@@ -16,8 +16,6 @@ ms.author: solsen
 <h1>Learning Catalog for Business Central</h1>
 <p> This learning catalog provides Dynamics 365 Business Central partners a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develop apps for Microsoft AppSource. The information in this document is being updated on a weekly basis.</p>
 
-
-
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
 :::row:::
@@ -34,9 +32,7 @@ ms.author: solsen
     [Trade](readiness-learning-functional-consultants.md#trade)
     [Cloud](readiness-learning-functional-consultants.md#cloud)
 
-:::column-end:::
-:::row-end:::
-:::row:::
+    :::column-end:::
     :::column:::
 
     ### Materials for developers
@@ -49,10 +45,10 @@ ms.author: solsen
     [Application lifecycle management](readiness-learning-developers.md#applife)
     [Connect apps](readiness-learning-developers.md#connect-apps)
 
-:::column-end:::
+     :::column-end:::
 :::row-end:::
 :::row:::
-:::column:::
+    :::column:::
 
     ### Materials for pre-sales roles
 
@@ -64,10 +60,8 @@ ms.author: solsen
     [What's new](readiness-learning-presales.md#whatsnew)
     [Demo](readiness-learning-presales.md#demo)
 
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
     ### Materials for sales roles
 
@@ -77,10 +71,10 @@ ms.author: solsen
     [Get started](readiness-learning-sales.md#get-started)
     [Grow your business](readiness-learning-sales.md#grow)
 
-:::column-end:::
+      :::column-end:::
 :::row-end:::
 :::row:::
-:::column:::
+    :::column:::
 
     ### Materials for business decision makers
 
@@ -90,10 +84,8 @@ ms.author: solsen
     [Get started](readiness-learning-bus-decision-makers.md#get-started)
 
 
- :::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
     ### Materials for business users
 
