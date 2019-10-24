@@ -32,7 +32,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 ## Prerequisites
 
-1. Upgrade to Business Central Spring 2019 (version 14) [cumulative update 4](https://support.microsoft.com/en-us/help/4518535).
+1. Upgrade to Business Central Spring 2019 [Cumulative Update 4](https://support.microsoft.com/en-us/help/4518535) (version 14.5).
 
    If your current deployment is already running version 14 cumulative update 5, we recommend to wait until the first cumulative update for version 15 is released.
 
