@@ -72,7 +72,7 @@ IF SomePage.RUNMODAL = Action::LookupOK THEN
 ```  
 
 > [!NOTE]  
->  This code example includes the [CLEAR Method](../methods-auto/system/system-clear-joker-method.md) to make sure that the variable has been cleared.  
+>  This code example includes the [CLEAR Method](../system/system-clear-joker-method.md) to make sure that the variable has been cleared.  
 
 ## See Also
 [Page Data Type](page-data-type.md)  
