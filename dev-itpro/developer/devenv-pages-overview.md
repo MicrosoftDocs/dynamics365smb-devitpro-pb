@@ -3,13 +3,12 @@ title: "Pages Overview"
 description: Pages are the main way to display and organize data. Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 0ba68a20-d83a-4e4c-9938-dac7fa8f5461
 ms.author: solsen
 ---
 
@@ -164,6 +163,9 @@ tableextension 70000020 CustomerTableExtension extends Customer
     }
 }
 ```
+
+## Views
+Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
 
 ## Adding Help to the page objects
 

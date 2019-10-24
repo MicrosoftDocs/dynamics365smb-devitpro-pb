@@ -3,7 +3,7 @@ title: "Page Extension Object"
 description: "Description of the page extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,6 +32,9 @@ For more information about the Page and Page Extension objects, see [Pages Overv
 Typing the shortcut `tpageext` will create the basic layout for a page extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+## Views
+Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
 
 ## Page extension examples
 In the following example, we use a table extension to extend the Customer table with a new field named `ShoeSize` of the datatype Integer. Then we create a page extension object that extends the Customer Card page object by adding a field control `ShoeSize` to the `General` group on the page. The field control is added as the last control in the group using the `addlast` method. The example also illustrates how to add a display-only control to the page.
@@ -163,9 +166,6 @@ pageextension 50114 AddCustomerReport extends "Customer List"
     }
 }
 ```
-
-## Applies To  
-Pages  
 
 ## See Also  
 [Page Object](devenv-page-object.md)  
