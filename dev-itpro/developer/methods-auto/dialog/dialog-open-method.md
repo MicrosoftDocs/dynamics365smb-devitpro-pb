@@ -74,12 +74,12 @@ Dialog windows that are opened by an object are closed when the object terminate
 ```  
 MyNext := 0;  
 MyDialog.OPEN(Text000,MyNext);  
-REPEAT  
+repeat  
   // Do some processing.  
   SLEEP(1000);  
   MyNext := MyNext + 1;  
   MyDialog.UPDATE(); // Update the field in the dialog.  
-UNTIL MyNext = 4;  
+until MyNext = 4;  
 SLEEP(1000);  
 MyDialog.CLOSE()  
 ```  
@@ -109,11 +109,11 @@ The progress indicator do
 ```  
 MyNext := 0;  
 MyDialog.OPEN(Text000,MyNext);  
-REPEAT  
+repeat  
   // Do some processing.  
   MyNext := MyNext + 1;  
   MyDialog.UPDATE(); // Update the field in the dialog.  
-UNTIL MyNext = 9999;  
+until MyNext = 9999;  
 SLEEP(1000);  
 MyDialog.CLOSE()  
 ```  
