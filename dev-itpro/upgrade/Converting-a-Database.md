@@ -10,7 +10,7 @@ ms.author: jswymer
 ms.prod: "dynamics365-business-central"
 author: jswymer
 ---
-# Converting a Database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] - Technical Upgrade
+# Converting a Database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019  - Technical Upgrade
 
 [See print-friendly quick reference](technical-upgrade-checklist.md)
 
@@ -173,7 +173,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     -  Server
     -  SQL Server Database Components
     -  Administration Tool
-    -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)
+    -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]
 
     > [!IMPORTANT]  
     > For a multitenant installation, configure the [!INCLUDE[server](../developer/includes/server.md)] instance to be a multitenant instance.
@@ -185,6 +185,9 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     - Otherwise, connect to the old application database that you prepared in the previous task, and then go to the next step.
 
     For more information, see [Open Databases](../cside/cside-open-database.md).
+
+    > [!IMPORTANT]  
+    > If you do not run the development environment as an administrator, you will get an error and the conversion will be stopped.
 
 4. In the dialog box that appears, read the instructions about converting the database carefully because this action cannot be reversed. When you are ready, choose the **OK** button, and then choose the **OK** button to confirm that you want to convert the database.  
 

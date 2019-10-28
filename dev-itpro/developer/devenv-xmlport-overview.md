@@ -30,7 +30,7 @@ You create an XMLport object in the AL Language development environment to defin
 In order to define the underlying structure of the imported or exported document, you use the XMLport schema. An XMLport schema determines which data is exported from or imported to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables and the format and structure of the files used. You build the XMLport schema by adding nodes. For more information, see [Defining a XMLport Schema](devenv-xmlport-schema.md).
 
 ## Request page
-Request pages are dialog boxes that enable the user to set a filter on the data, sort the data, or choose whether to export or import the data. Note that in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Web client, Request pages are not supported. For more information, see [Request Pages](devenv-request-pages.md).
+Request pages are dialog boxes that enable the user to set a filter on the data, sort the data, or choose whether to export or import the data. For more information, see [Request Pages](devenv-request-pages.md).
 
 ## XMLport properties, triggers, and code
 XMLport objects include triggers, methods, and properties that can be used to work with the object. For more information, see [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md) and [XMLport Triggers](triggers/devenv-xmlport-triggers.md).
