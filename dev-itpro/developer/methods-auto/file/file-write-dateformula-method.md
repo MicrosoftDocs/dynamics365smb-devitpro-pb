@@ -55,22 +55,22 @@ The data that you want to write to the file.
   
 ## Example  
  The following example determines whether the specified file exists. If it exists, the [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [WRITE Method \(FILE\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file and then the [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt. This example requires that you create the following global variables.  
-  
+
 |Variable name|DataType|  
 |-------------------|--------------|  
 |FileName|Text|  
-|TestFile|File|  
+|TestFile|File| 
+|DteForm|DateFormula|   
   
 ```  
 FileName := 'C:\TestFolder\TestFile.txt';  
-IF EXISTS(FileName) THEN BEGIN  
+if EXISTS(FileName) then begin
   TestFile.WRITEMODE(TRUE);  
   TestFile.OPEN(FileName);  
-  TestFile.WRITE('Hello World');  
+  TestFile.WRITE(DteForm);  
   TestFile.CLOSE;  
-END  
-ELSE  
-  MESSAGE('%1 does not exit.', FileName);  
+end else 
+  MESSAGE('%1 does not exit.', FileName);
 ```  
   
 

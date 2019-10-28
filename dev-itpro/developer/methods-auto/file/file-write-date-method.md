@@ -59,14 +59,15 @@ The data that you want to write to the file.
 |Variable name|DataType|  
 |-------------------|--------------|  
 |FileName|Text|  
-|TestFile|File|  
+|TestFile|File| 
+|Dte|Date|   
   
 ```  
 FileName := 'C:\TestFolder\TestFile.txt';  
 if EXISTS(FileName) then begin
   TestFile.WRITEMODE(TRUE);  
   TestFile.OPEN(FileName);  
-  TestFile.WRITE('Hello World');  
+  TestFile.WRITE(Dte);  
   TestFile.CLOSE;  
 end else 
   MESSAGE('%1 does not exit.', FileName);

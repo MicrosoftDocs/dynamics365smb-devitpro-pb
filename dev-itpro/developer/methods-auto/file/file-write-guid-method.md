@@ -59,19 +59,19 @@ The data that you want to write to the file.
 |Variable name|DataType|  
 |-------------------|--------------|  
 |FileName|Text|  
-|TestFile|File|  
+|TestFile|File| 
+|Guid1|GUID|   
   
 ```  
 FileName := 'C:\TestFolder\TestFile.txt';  
-IF EXISTS(FileName) THEN BEGIN  
+if EXISTS(FileName) then begin
   TestFile.WRITEMODE(TRUE);  
   TestFile.OPEN(FileName);  
-  TestFile.WRITE('Hello World');  
+  TestFile.WRITE(Guid1);  
   TestFile.CLOSE;  
-END  
-ELSE  
-  MESSAGE('%1 does not exit.', FileName);  
-```  
+end else 
+  MESSAGE('%1 does not exit.', FileName);
+```
   
 ## See Also
 [File Data Type](file-data-type.md)  
