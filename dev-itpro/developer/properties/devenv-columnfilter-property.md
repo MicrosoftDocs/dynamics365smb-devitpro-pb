@@ -40,5 +40,5 @@ Sets a filter on the column filter row of a query.
  The following example sets a filter on the ColumnFilter property of the Quantity column of a query so that the resulting dataset will only include records where the value of the Quantity column is between 20 and 50.  
   
 ```  
-Quantity=FILTER(>20&<50)  
+Quantity=FILTER(>20&<50);  
 ```  

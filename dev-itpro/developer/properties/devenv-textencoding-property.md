@@ -53,7 +53,7 @@ The **TextEncoding** property is only available when the **Format** property is 
   
 ```  
 ...  
-      CASE MyDefinitionTable."File Encoding" OF  
+      case MyDefinitionTable."File Encoding" of  
         MyDefinitionTable."File Encoding"::"MS-DOS":  
           currXMLport.TEXTENCODING(TEXTENCODING::MSDos);  
         MyDefinitionTable."File Encoding"::"UTF-8":  

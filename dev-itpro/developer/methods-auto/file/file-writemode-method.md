@@ -70,13 +70,12 @@ An instance of the [File](file-data-type.md) data type.
   
 ```  
 FileName := 'C:\TestFolder\TestFile.txt';  
-IF EXISTS(FileName) THEN BEGIN  
+if EXISTS(FileName) then begin
   TestFile.WRITEMODE(TRUE);  
   TestFile.OPEN(FileName);  
   TestFile.WRITE('Hello World');  
   TestFile.CLOSE;  
-END  
-ELSE  
+end else 
   MESSAGE('%1 does not exit.', FileName);  
 ```  
   

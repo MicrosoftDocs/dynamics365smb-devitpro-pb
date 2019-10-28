@@ -53,10 +53,10 @@ An instance of the [Report](report-data-type.md) data type.
 MyVar := 0;  
 REPEAT  
   MyVar := MyVar + 1;  
-  IF MyVar = 5 THEN  
+  if MyVar = 5 then  
     CurrReport.BREAK;  
   MESSAGE(Text000,MyVar);  
-UNTIL Myvar = 10;  
+until Myvar = 10;  
 MESSAGE('After REPEAT-UNTIL loop'); //This statement is never called.  
 ```  
 

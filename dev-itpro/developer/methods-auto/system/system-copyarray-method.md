@@ -55,8 +55,8 @@ The number of array elements to copy. If you do not specify Length, all array el
 
 |Variable name|DataType|Dimension|  
 |-------------------|--------------|---------------|  
-|Array1|Integer|10|  
-|Array2|Integer|5|  
+|Array1|Integer array|10|  
+|Array2|Integer array|5|  
 
 ```  
 Array1[1] := 1;  

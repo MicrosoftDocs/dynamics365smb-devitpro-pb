@@ -51,12 +51,12 @@ The number of fields in the table.
   
 ```  
   
-FOR i := 3 TO 5 DO BEGIN  
+for i := 3 TO 5 DO begin  
   MyRecordRef.OPEN(i);  
   varFieldCount := MyRecordRef.FIELDCOUNT;  
   MESSAGE(Text000, MyRecordRef.NAME, varFieldCount);  
   MyRecordRef.CLOSE;  
- END;  
+ end;  
 ```  
   
 

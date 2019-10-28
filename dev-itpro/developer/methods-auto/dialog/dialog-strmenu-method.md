@@ -53,7 +53,7 @@ The number of the menu option that the user selected. If the user presses the Es
 |Name|ConstValue|  
 |----------|----------------|  
 |Text000|'Save,Delete,Exit,Find'|  
-|Text001|'You selected option%1.'|  
+|Text001|'You selected option %1.'|  
 |Text002|'Choose one of the following options:'|  
   
 |Name|DataType|Length|  

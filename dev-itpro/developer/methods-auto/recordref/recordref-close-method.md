@@ -47,12 +47,12 @@ The following example opens tables 3 through 10 as a Recordref variable that is 
 |Text000|Text|Table No: %1 Caption: %2|  
   
 ```  
-FOR i := 3 TO 10 DO BEGIN  
-MyRecordRef.OPEN(i);  
-varCaption := MyRecordRef.CAPTION;  
-MESSAGE(Text000, i, varCaption);  
-MyRecordRef.CLOSE;  
-END;  
+for i := 3 TO 10 DO begin  
+    MyRecordRef.OPEN(i);  
+    varCaption := MyRecordRef.CAPTION;  
+    MESSAGE(Text000, i, varCaption);  
+    MyRecordRef.CLOSE;  
+end;  
 ```  
   
 

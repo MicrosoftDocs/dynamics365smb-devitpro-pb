@@ -65,7 +65,7 @@ The resulting day of the week, week number, or year.
 |Text003|The year: %4|  
   
 ```  
-InputDate := 010114D;  
+InputDate := 20140101D;  
 DayOfWeek := DATE2DWY(InputDate, 1);  
 WeekNumber := DATE2DWY(InputDate, 2);  
 Year := DATE2DWY(InputDate, 3);  

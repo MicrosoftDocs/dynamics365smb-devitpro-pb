@@ -53,11 +53,11 @@ An instance of the [InStream](instream-data-type.md) data type.
   
 FileTest.OPEN('c:\MyFolder\MyText.txt');  
 FileTest.CREATEINSTREAM(StreamInTest);  
-WHILE NOT StreamInTest.EOS DO BEGIN  
+while not StreamInTest.EOS do begin 
   StreamInTest.READTEXT(Buffer);  
   //Do some processing  
   MESSAGE('Stream is still processing')  
-END;  
+end;  
 MESSAGE('End of Stream');  
 ```  
   

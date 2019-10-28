@@ -46,7 +46,7 @@ The output string that is decrypted.
  This example requires that you create the following text constants: EncryptedText and PlainText.  
 
 ```  
-IF NOT ENCRYPTIONENABLED THEN  
+if not ENCRYPTIONENABLED then  
         ERROR('Encryption has not been enabled.');  
       PlainText := DECRYPT(EncryptedText);  
 

@@ -42,7 +42,7 @@ The client type that is running in current session.
  In the following example, CURRENTCLIENTTYPE is used to get the client type for the session and return a message if the session uses the [!INCLUDE[d365fin_tablet_md](../../includes/d365fin_tablet_md.md)].  
 
 ```  
-IF CURRENTCLIENTTYPE = CLIENTTYPE::Tablet THEN  
+if CURRENTCLIENTTYPE = CLIENTTYPE::Tablet then  
   Message('The session is running the Tablet client');  
 ```  
 

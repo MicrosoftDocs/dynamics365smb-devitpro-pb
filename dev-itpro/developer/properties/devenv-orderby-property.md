@@ -73,5 +73,5 @@ The **OrderBy** property corresponds to the Order By clause in SQL select statem
 The following is the Order By clause in SQL that corresponds to the OrderBy property in this example.  
   
 ```  
-OrderBy Name,Quantity  
+OrderBy = ascending (Name,Quantity);  
 ```
