@@ -51,8 +51,8 @@ This example requires that you create the following global variables.
   
 |Variable name|DataType|Dimension|  
 |-------------------|--------------|---------------|  
-|Array1|Integer|2|  
-|Array2|Integer|3;4|  
+|Array1|Integer array|2|  
+|Array2|Integer array|3;4|  
   
 ```  
 MESSAGE('Array1, Total number of elements: %1', ARRAYLEN(Array1));  

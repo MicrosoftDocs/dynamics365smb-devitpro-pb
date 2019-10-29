@@ -66,14 +66,12 @@ If you use the return value, you must verify the validity of the data that has b
 FileTest.OPEN('c:\XMLDocs\NewTest.txt');  
 FileTest.CREATEINSTREAM(StreamInTest);  
 // Starting a loop  
-WHILE NOT (StreamInTest.EOS) DO BEGIN  
+while not (StreamInTest.EOS) do begin 
   Int := StreamInTest.READTEXT(Txt,100);  
   MESSAGE(Txt + '\Size: ' + FORMAT(Int));  
-END;  
+end;  
 FileTest.CLOSE();  
 ```  
-  
-## Example
 
 
 ## See Also

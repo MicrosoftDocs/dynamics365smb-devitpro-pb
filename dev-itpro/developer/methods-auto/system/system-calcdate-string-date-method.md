@@ -105,7 +105,7 @@ Use this optional parameter to define a reference date. The default is the curre
 Expr1 := '<CQ+1M-10D>'; // Current quarter + 1 month - 10 days  
 Expr2 := '<-WD2>'; // The last weekday no.2, (last Tuesday)  
 Expr3 := '<CM+30D>'; // Current month + 30 days  
-RefDate := 052196D;  
+RefDate := 19960521D;  
 Date1 := CALCDATE(Expr1, RefDate);  
 Date2 := CALCDATE(Expr2, RefDate);  
 Date3 := CALCDATE(Expr3, RefDate);  

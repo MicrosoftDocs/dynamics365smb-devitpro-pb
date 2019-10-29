@@ -54,11 +54,8 @@ The string array that you want to compress.
 ||  
 |-|  
 |Joe Raybon|  
-||  
-|One Meca Way|  
-||  
-|Atlanta|  
-||  
+|One Meca Way|   
+|Atlanta||
   
  The output StringArray has the following values.  
   
@@ -66,10 +63,7 @@ The string array that you want to compress.
 |-|  
 |Joe Raybon|  
 |One Meca Way|  
-||  
-|Atlanta|  
-||  
-||  
+|Atlanta||  
   
  All non-empty entries have been moved to the beginning of the array.  
   
@@ -77,7 +71,7 @@ The string array that you want to compress.
   
 |Variable|DataType|Dimension|  
 |--------------|--------------|---------------|  
-|CustomerData|Text|6|  
+|CustomerData|Text array|6|  
   
 ```  
 CustomerData[1] := 'Joe Raybon';  

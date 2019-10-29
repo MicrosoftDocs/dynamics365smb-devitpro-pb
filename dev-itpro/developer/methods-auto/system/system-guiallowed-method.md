@@ -48,7 +48,7 @@ Ok :=   System.GuiAllowed()
 |Text000|Code is running on a client.|  
 
 ```  
-IF GUIALLOWED THEN  
+if GUIALLOWED then  
  MESSAGE(Text000);  
 ```  
 

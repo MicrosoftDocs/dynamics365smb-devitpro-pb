@@ -90,14 +90,14 @@ itemRec.Get('1000');
 
 fileName := 'C:\images\1000-v1.jpg';
 importFile.Open(fileName);  
-importFile.CreateStream(inStreamObject);  
+importFile.CreateInStream(inStreamObject);  
 itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + Format(itemRec."No."));  
 itemRec.Modify;  
 importFile.Close;  
 
 fileName := 'C:\images\1000-v2.jpg';
 importFile.Open(fileName);  
-importFile.CreateStream(inStreamObject);  
+importFile.CreateInStream(inStreamObject);  
 itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + FORMAT(itemRec."No."));  
 itemRec.Modify;  
 importFile.Close;

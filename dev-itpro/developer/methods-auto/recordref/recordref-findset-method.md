@@ -43,7 +43,7 @@ This parameter only applies if ForUpdate is true. If you are going to modify any
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You should use this method only when you explicitly want to loop through a recordset. You should only use this method in combination with REPEAT..UNTIL.  
+ You should use this method only when you explicitly want to loop through a recordset. You should only use this method in combination with repeat..until.  
   
  Furthermore, FINDSET only allows you to loop through the recordset from the top down. If you want to loop from the bottom up, you should use FIND\(‘+’\).  
   
@@ -77,11 +77,11 @@ MyRecordRef.OPEN(18);
 MyFieldRef := MyRecordRef.FIELD(1);  
 MyFieldRef.SETFILTER('30000..32000');  
 MyFieldRef := MyRecordRef.FIELD(2);  
-IF MyRecordRef.FINDSET(FALSE, FALSE) THEN BEGIN  
-  REPEAT  
+if MyRecordRef.FINDSET(FALSE, FALSE) then begin  
+  repeat  
     MESSAGE(Text000 , MyRecordRef.RECORDID, MyFieldRef.VALUE);  
-  UNTIL MyRecordRef.NEXT = 0;  
-END;  
+  until MyRecordRef.NEXT = 0;  
+end;  
 ```  
 
 ## See Also

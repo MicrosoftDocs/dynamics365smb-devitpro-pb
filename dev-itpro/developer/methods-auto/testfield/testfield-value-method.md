@@ -64,13 +64,13 @@ If you want to format the value of a FieldRef you must use `FORMAT(FieldRef)` in
 CustomerNo := '50000';  
 CustomerRecref.OPEN(18);  
 MyFieldRef := CustomerRecref.FIELD(1);  
-IF MyFieldRef.ACTIVE THEN BEGIN  
+if MyFieldRef.ACTIVE then begin  
   MyFieldRef.VALUE(CustomerNo);  
   MyFieldRef := CustomerRecref.FIELD(2);  
   MyFieldRef.VALUE('Contoso');  
   CustomerRecref.MODIFY;  
   MESSAGE(Text000, MyFieldRef.VALUE);  
-END  
+end;  
   
 ```  
 

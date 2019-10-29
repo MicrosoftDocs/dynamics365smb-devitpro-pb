@@ -62,12 +62,12 @@ To handle the actions, the **Action Handler** codeunit has two global methods th
 PROCEDURE RunAction1@1(MyNotification@1000 : Notification);
 BEGIN
     MESSAGE('This is RunAction1');
-END;
+end;
 
 PROCEDURE RunAction2@2(MyNotification@1000 : Notification);
 BEGIN
  MESSAGE('This is RunAction2');
-END;
+end;
 ```
 
 ## See Also

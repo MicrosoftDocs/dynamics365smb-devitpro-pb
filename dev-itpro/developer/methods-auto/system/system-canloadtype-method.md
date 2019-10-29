@@ -51,7 +51,7 @@ A variable of the DotNet data type to represent the .NET Framework type.
 |MyError|Cannot access the specified type.|  
 
 ```  
-IF NOT CANLOADTYPE(OObjLibrary) THEN  
+if not CANLOADTYPE(OObjLibrary) then  
    ERROR(MyError);  
 ```  
 ## See Also

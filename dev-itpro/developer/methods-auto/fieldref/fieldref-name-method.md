@@ -58,13 +58,13 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ```  
 
-FOR i := 1 TO 5 DO BEGIN  
-CustomerRecref.OPEN(DATABASE::Customer);  
-MyFieldRef := CustomerRecref.FIELD(i);  
-varName := MyFieldRef.NAME;  
-MESSAGE(Text000, i, varName);  
-CustomerRecref.CLOSE;  
-END;  
+for i := 1 to 5 do begin  
+    CustomerRecref.OPEN(DATABASE::Customer);  
+    MyFieldRef := CustomerRecref.FIELD(i);  
+    varName := MyFieldRef.NAME;  
+    MESSAGE(Text000, i, varName);  
+    CustomerRecref.CLOSE;  
+end;  
 
 ```  
 

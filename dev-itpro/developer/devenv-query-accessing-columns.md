@@ -89,7 +89,7 @@ codeunit 50100 QueryColumnAccess
         // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
         WHILE MyQuery.READ DO BEGIN
             MESSAGE(Text000, MyQuery.Customer_Name, MyQuery.Qty);
-        END;
+        end;
         // Closes the query.  
         MyQuery.CLOSE;
 
