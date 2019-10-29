@@ -15,8 +15,6 @@ caps.latest.revision: 16
 # Deprecated Features in W1
 This topic describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This information will probably change with future releases, and might not include each deprecated feature.
 
-
-
 > [!NOTE]
 > The features in this topic are deprecated in Business Central 2019 release wave 2.
 
@@ -25,7 +23,7 @@ You can use the bank data conversion service from AMC to convert bank data from 
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Replaced|The AMC 365 Fundamentals extension is now available for converting bank data to formats that are used by more than 600 banks world-wide.|
+|Moved|The functionality is shipped as the AMC 365 Fundamentals extension, which is now available for converting bank data to formats that are used by more than 600 banks world-wide.|
 
 ## The Windows Client
 
