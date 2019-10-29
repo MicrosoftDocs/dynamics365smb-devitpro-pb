@@ -1,7 +1,7 @@
 ---
 title: "RDLCLayout Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/29/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,18 +11,15 @@ author: SusanneWindfeldPedersen
 ---
 
 # RDLCLayout Property
-Sets the imported file name and the RDLC layout that is used on a report.
+Sets the imported file name and the RDL layout that is used on a report.
 
 > [!NOTE]
-> Reports support both RDLC and Word layout.
+> Reports support both RDL and Word layout. For more information, see [DefaultLayout Property](devenv-defaultlayout-property.md).
 
 ## Remarks
 The RDL file has to be in the same folder as the AL object. 
 
 ## Example
-<!--
-Code taken from this file: devenv-howto-rdl-report-layout
--->
 The following example shows how to use this property to generate the *MyRDLCReport.rdl* file.
 
 ```
