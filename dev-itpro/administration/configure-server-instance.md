@@ -302,7 +302,7 @@ The following table describes fields on the **Development** tab in the [!INCLUDE
 |HttpClient AL Function Response Size|NavHttpClientMaxResponseContentSize|Specifies the maximum size in megabytes of a response buffer used by the HttpClient AL function.<br /><br />The maximum allowed extension size can be adjusted based on the HttpClient AL Function Maximum Timeout setting.<br /><br />Default: 15<br />Dynamically Updatable: Yes|
 |Port|DeveloperServicesPort|The listening HTTP port for Microsoft Dynamics NAV Developer web services.<br /><br />Valid range: 1 - 65535<br />Default: 7049<br />Dynamically Updatable: No|
 
-## Compatibility Settings
+## <a name="Compatibility"></a>Compatibility Settings
 
 The following table describes settings that you can adjust for compatibility with other systems. In most cases, we do not recommend that you change these settings from their default values.
 
@@ -354,7 +354,7 @@ Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName MaxStreamReadSize 
 For more information about running the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).  
 
 ## See Also
-w  
+
 [Business Central Server Administration Tool](administration-tool.md)   
 [Enhancing Business Central Server Security](../security/enhancing-server-instance-security.md)   
 [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)   
