@@ -20,17 +20,17 @@ For your extension to run properly, configuration and starting data such as perm
 - Starting table data
 - Custom report layouts
 
-
+<!-- 
 > [!NOTE]  
-> The NAV Development Shell is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
+> The NAV Development Shell is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]. -->
 
 The data must be exported into files to be included in the extension. To use the export functions you must use a container sandbox environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md).
 
 ## To export permission sets
-1. Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)].
-2. Export the relevant permission set using the `Export-NAVAppPermissionSet` cmdlet to export the permission set to a file. The following command exports the BASIC permission set.
+1. Open the [!INCLUDE[bc_dev_shell](includes/bc_dev_shell.md)].
+2. Export the relevant permission set using the `Export-NAVAppPermissionSet` cmdlet to export the permission set to a file. For example, the following command exports the BASIC permission set.
 
-    `Export-NAVAppPermissionSet -ServerInstance DynamicsNAV110 -Path '.\PermissionSet.xml' -PermissionSetId BASIC`
+    `Export-NAVAppPermissionSet -ServerInstance DynamicsNAV150 -Path '.\PermissionSet.xml' -PermissionSetId BASIC`
 
     > [!NOTE]  
     > Export each permission set to a separate XML file.
@@ -42,10 +42,10 @@ The data must be exported into files to be included in the extension. To use the
 
 ## To export web services
 
-1. Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)].
+1. Open the [!INCLUDE[bc_dev_shell](includes/bc_dev_shell.md)].
 2. Export the relevant web service using the `Export-NAVAppTenantWebService` cmdlet to export the web service to a file. The following command exports the Customer Card page.
 
-    `Export-NAVAppTenantWebService -ServerInstance DynamicsNAV110 -Path TenantWebService.xml -ServiceName Customer -ObjectType Page -ObjectId 21`
+    `Export-NAVAppTenantWebService -ServerInstance DynamicsNAV150 -Path TenantWebService.xml -ServiceName Customer -ObjectType Page -ObjectId 21`
 
     > [!NOTE]  
     > Export each web service to a separate XML file.
@@ -54,10 +54,10 @@ The data must be exported into files to be included in the extension. To use the
 
 ## To export table data 
 
-1. Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)].
+1. Open the [!INCLUDE[bc_dev_shell](includes/bc_dev_shell.md)].
 2. Export the relevant data using the `Export-NAVAppTableData` cmdlet to export the data to a file. This includes setting the path to a folder where you want the .navxdata file created. A data file in the format of TAB<TABLEID>.navxdata will be created. (Example: TAB10000.navxdata). 
 
-    `Export-NAVAppTableData -ServerInstance DynamicsNAV110 -Path ‘C:\NAVAppTableData’ -TableId 10000`
+    `Export-NAVAppTableData -ServerInstance DynamicsNAV150 -Path ‘C:\NAVAppTableData’ -TableId 10000`
 
     > [!NOTE]  
     > Export the data for each table to a separate XML file.
@@ -81,10 +81,10 @@ The data must be exported into files to be included in the extension. To use the
 
 ## To export custom report layouts
 
-1. Open the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)].
+1. Open the [!INCLUDE[bc_dev_shell](includes/bc_dev_shell.md)].
 2. Export the relevant report layouts using the `Export-NAVAppReportLayout` cmdlet to export to a file:
 
-    `Export-NAVAppReportLayout -ServerInstance DynamicsNAV110 -Path .\ReportLayout.xml -LayoutId 1`
+    `Export-NAVAppReportLayout -ServerInstance DynamicsNAV150 -Path .\ReportLayout.xml -LayoutId 1`
 
     > [!NOTE]  
     > Export each custom report layout to a separate XML file.
@@ -92,6 +92,7 @@ The data must be exported into files to be included in the extension. To use the
 3. Add the exported custom report files to the Visual Studio Code project that contains your extension.
 
 ## See Also
+
 [Developing Extensions in AL](devenv-dev-overview.md)  
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
 [Writing Extension Install Code](devenv-extension-install-code.md)  
