@@ -1,0 +1,14 @@
+{
+    "redirections": [
+        {
+            "source_path": "GitHub/dynamics365smb-devitpro-lorelei/dev-itpro/developer/readiness/readiness-learning-app-consultants.md",
+            "redirect_url": "GitHub/dynamics365smb-devitpro-lorelei/dev-itpro/developer/readiness/readiness-learning-catalog",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "GitHub/dynamics365smb-devitpro-lorelei/dev-itpro/developer/readiness/readiness-learning-dev-archs-engineers.md",
+            "redirect_url": "GitHub/dynamics365smb-devitpro-lorelei/dev-itpro/developer/readiness/readiness-learning-catalog",
+            "redirect_document_id": false
+        }
+    ]
+}
