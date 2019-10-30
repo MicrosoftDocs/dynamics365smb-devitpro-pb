@@ -59,13 +59,13 @@ This method is similar to the [CALCFIELDS Method \(Record\)](../../methods-auto/
 
 Count := 0;  
 CustRecordref.OPEN(18);  
-IF CustRecordref.FIND('-') THEN  
-  REPEAT  
+if CustRecordref.FIND('-') then  
+  repeat  
     MyFieldRef := CustRecordref.FIELD(66);  
     MyFieldRef.CALCFIELD;  
     MESSAGE(Text000, CustRecordref.RECORDID, MyFieldRef);  
     Count := Count + 1;  
-  UNTIL CustRecordref.NEXT = 0;  
+  until CustRecordref.NEXT = 0;  
 ```  
 
 ## See Also

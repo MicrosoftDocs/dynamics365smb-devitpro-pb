@@ -51,15 +51,15 @@ DotNet :=   System.GetLastErrorObject()
 |WebException|DotNet|'System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Net.WebException|  
   
 ```  
-IF NOT MyCodeunit.RUN THEN BEGIN  
+if not MyCodeunit.RUN then begin  
     Exception := GETLASTERROROBJECT;  
   
-    IF NOT Exception.InnerException.GetType.Equals(WebException.GetType) THEN  
+    if not Exception.InnerException.GetType.Equals(WebException.GetType) then  
         ERROR(Exception.Message);  
   
     WebException := Exception.InnerException;  
     ERROR(WebException.Message);  
-END;  
+end;  
 ```  
 ## See Also
 [System Data Type](system-data-type.md)  

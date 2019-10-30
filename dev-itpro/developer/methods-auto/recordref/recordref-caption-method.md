@@ -54,12 +54,12 @@ The caption of the table.
 |Text000|Text|Table No: %1 Caption: %2|  
   
 ```  
-FOR i := 3 TO 6 DO BEGIN  
+for i := 3 TO 6 DO begin  
 MyRecordRef.OPEN(i);  
 varCaption := MyRecordRef.CAPTION;  
 MESSAGE(Text000, i, varCaption);  
 MyRecordRef.CLOSE;  
-END;  
+end;  
 ```  
   
  This example displays the following:  

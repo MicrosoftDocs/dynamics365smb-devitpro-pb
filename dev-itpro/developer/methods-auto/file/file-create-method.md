@@ -62,10 +62,9 @@ An instance of the [File](file-data-type.md) data type.
   
 ```  
   
-IF TestFile.CREATE('C:\TestFolder\TestFile.txt') THEN BEGIN  
-  MESSAGE('%1 is created', TestFile.NAME)  
-END  
-ELSE  
+if TestFile.CREATE('C:\TestFolder\TestFile.txt') then begin  
+  MESSAGE('%1 is created', TestFile.NAME);  
+end else  
 ERROR('The file could not be created');  
 ```  
   

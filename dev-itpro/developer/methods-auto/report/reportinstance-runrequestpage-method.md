@@ -84,9 +84,9 @@ XmlParameters := REPORT.RUNREQUESTPAGE(206);
 CurrentUser := USERID;  
 
 // Save the request page parameters to the database table  
-WITH ReportParameters DO BEGIN  
+with ReportParameters do begin  
     // Cleanup  
-    IF GET(206,CurrentUser) THEN  
+    if GET(206,CurrentUser) then  
     DELETE;  
 
     SETAUTOCALCFIELDS(Parameters);  
@@ -97,18 +97,18 @@ WITH ReportParameters DO BEGIN
     OStream.WRITETEXT(XmlParameters);  
 
     INSERT;  
-END;  
+end;  
 
 CLEAR(ReportParameters);  
 XmlParameters := '';  
 
 // Read the request page parameters from the database table  
-WITH ReportParameters DO BEGIN  
+with ReportParameters do begin  
     SETAUTOCALCFIELDS(Parameters);  
     GET(206,CurrentUser);  
     Parameters.CREATEINSTREAM(IStream,TEXTENCODING::UTF8);  
     IStream.READTEXT(XmlParameters);  
-END;  
+end;  
 
 // Use the REPORT.SAVEAS method to save the report as a PDF file  
 Content.CREATE('TestFile.pdf');  // only supported in Business Central on-premises

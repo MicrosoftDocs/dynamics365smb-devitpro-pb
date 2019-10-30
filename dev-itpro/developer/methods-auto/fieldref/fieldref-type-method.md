@@ -53,10 +53,10 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 ```  
   
 CustomerRecref.OPEN(DATABASE::Customer);  
-FOR i := 1 TO 5 DO BEGIN  
+for i := 1 to 5 do begin  
   MyFieldRef := CustomerRecref.FIELD(i);  
   MESSAGE(Text000, i, MyFieldRef.TYPE);  
-END;  
+end;  
   
 ```  
   

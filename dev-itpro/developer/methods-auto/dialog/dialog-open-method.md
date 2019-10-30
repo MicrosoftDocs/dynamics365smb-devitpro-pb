@@ -81,7 +81,7 @@ repeat
   MyDialog.UPDATE(); // Update the field in the dialog.  
 until MyNext = 4;  
 SLEEP(1000);  
-MyDialog.CLOSE()  
+MyDialog.CLOSE();  
 ```  
   
  The dialog window opens and displays this text:  
@@ -104,7 +104,7 @@ The progress indicator do
   
 |Text constant name|Constant value|  
 |------------------------|--------------------|  
-|Text000|Progress from 0 to 9999 @1@@@@@|  
+|Text000|Progress from 0 to 9999 #1#####|  
   
 ```  
 MyNext := 0;  
@@ -115,7 +115,7 @@ repeat
   MyDialog.UPDATE(); // Update the field in the dialog.  
 until MyNext = 9999;  
 SLEEP(1000);  
-MyDialog.CLOSE()  
+MyDialog.CLOSE();  
 ```  
   
 The dialog window opens and displays the progress indicator and percentage.  

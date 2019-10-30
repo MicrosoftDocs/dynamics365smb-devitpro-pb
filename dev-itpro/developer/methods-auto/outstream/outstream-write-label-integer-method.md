@@ -41,6 +41,23 @@ The number of bytes that were written.If you omit this optional return value and
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+This example requires that you create the following variables.  
+  
+|Variable name|DataType|SubType|  
+|-------------------|--------------|---|  
+|recBinaries|Record|Company Information|  
+|OStream|OutStream|| 
+|lbl|Label|'Hello World'| 
+
+```  
+recBinaries.FIND('-');  
+recBinaries.Picture.CREATEOUTSTREAM(OStream);   
+OStream.WRITE(lbl);  
+recBinaries.MODIFY();  
+```   
 ## See Also
 [OutStream Data Type](outstream-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

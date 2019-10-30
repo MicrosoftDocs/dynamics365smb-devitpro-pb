@@ -77,9 +77,9 @@ A record that is passed to the OnRun trigger of the codeunit that runs when the 
 
 ```  
 OK := STARTSESSION(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
-IF OK THEN  
+if OK then  
   STOPSESSION(SessionId, 'Logoff cache stress test session')  
-ELSE  
+else  
   ERROR('The session was not started successfully.');  
 ```  
 
