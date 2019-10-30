@@ -61,7 +61,7 @@ ExpectedErrorCode := 'StreamIO';
 FileObj1.CREATETEMPFILE;  
 ASSERTERROR FileObj2.CREATE(FileObj1.NAME);  
 ErrorCode := GETLASTERRORCODE;  
-IF ErrorCode <> ExpectedErrorCode THEN  
+if ErrorCode <> ExpectedErrorCode then  
   ERROR(Text001, ExpectedErrorCode, ErrorCode, GETLASTERRORTEXT);  
   
 ```  

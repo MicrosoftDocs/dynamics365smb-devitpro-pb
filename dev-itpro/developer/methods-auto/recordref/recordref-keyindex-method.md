@@ -58,10 +58,10 @@ The KeyRef of the field that has the specified index.
 ```  
   
 CustomerRecref.OPEN(18);  
-  FOR i := 1 TO CustomerRecref.KEYCOUNT DO BEGIN  
+  for i := 1 TO CustomerRecref.KEYCOUNT DO begin  
     varKeyRef := CustomerRecref.KEYINDEX(i);  
     MESSAGE(Text000, i, varKeyRef);  
-  END;  
+  end;  
 CustomerRecref.CLOSE;  
 ```  
   

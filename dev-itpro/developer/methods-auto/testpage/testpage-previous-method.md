@@ -44,9 +44,10 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ```  
 CustomerList.OPENVIEW;  
 …  
-IF CustomerList.LAST THEN REPEAT  
+if CustomerList.LAST then repeat  
   MESSAGE(CustomerList.Name);  
-UNTIL NOT CustomerList.PREVIOUS;  
+until not CustomerList.PREVIOUS;  
+```
   
 
 ## See Also

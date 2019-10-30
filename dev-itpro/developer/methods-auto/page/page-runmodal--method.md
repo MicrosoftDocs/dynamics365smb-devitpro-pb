@@ -63,11 +63,11 @@ In some cases, the actions for the return values are different when the page dis
  This example shows how to use this method. Assume that the *SomePage* variable has been defined as `Page 1`.  
 
 ```  
-CLEAR(SomePage)  
+CLEAR(SomePage);  
 SomePage.XXX; // Any user-defined method  
 SomePage.SETTABLEVIEW(MyRecord);  
 SomePage.SETRECORD(MyRecord);  
-IF SomePage.RUNMODAL = Action::LookupOK THEN  
+if SomePage.RUNMODAL = Action::LookupOK then  
   SomePage.GETRECORD(MyRecord)...  
 ```  
 

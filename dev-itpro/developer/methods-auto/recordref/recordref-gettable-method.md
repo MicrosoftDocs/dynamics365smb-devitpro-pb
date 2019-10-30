@@ -55,24 +55,24 @@ Use this record variable to specify the table to which the RecordRefVar refers.
  This example assumes that the AccSchedLineNo variable has been assigned a value previously in the code.  
   
 ```  
-IF GLAcc.FIND('-') THEN  
-  REPEAT  
+if GLAcc.FIND('-') then  
+  repeat  
     AccSchedLine.INIT;  
     AccSchedLine."Line No." := AccSchedLineNo;  
     AccSchedLineNo := AccSchedLineNo + 10000;  
     AccSchedLine.Description := GLAcc.Name;  
-    IF GLAcc."Account Type" IN [GLAcc."Account Type"::Posting,GLAcc."Account Type"::Total,GLAcc."Account Type"::"End-Total"] THEN BEGIN  
+    ifGLAcc."Account Type" IN [GLAcc."Account Type"::Posting,GLAcc."Account Type"::Total,GLAcc."Account Type"::"End-Total"] then begin  
       AccSchedLine.Totaling := GLAcc."No.";  
       AccSchedLine."Row No." := COPYSTR(GLAcc."No.",1,MAXSTRLEN(AccSchedLine."Row No."));  
-    END;  
-    IF GLAcc."Account Type" IN [GLAcc."Account Type"::Total,GLAcc."Account Type"::"End-Total"] THEN  
+    end;  
+    if GLAcc."Account Type" IN [GLAcc."Account Type"::Total,GLAcc."Account Type"::"End-Total"] then  
       AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Total Accounts"  
-    ELSE  
+    else  
       AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Posting Accounts";  
     AccSchedLine.INSERT;  
     RecRef.GETTABLE(AccSchedLine);  
     ChangeLogMgt.LogInsertion(RecRef);  
-  UNTIL GLAcc.NEXT = 0;  
+  until GLAcc.NEXT = 0;  
 ```  
 
 ## See Also

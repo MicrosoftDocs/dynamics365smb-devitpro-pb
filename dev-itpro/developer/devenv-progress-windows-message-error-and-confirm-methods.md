@@ -7,8 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 5d2c7db2-fc8b-46e1-a1c3-2be06f806258
-caps.latest.revision: 17
+author: SusanneWindfeldPedersen
 ---
 
 
@@ -57,7 +56,7 @@ You can use several specialized methods to display messages and gather input. We
  The MESSAGE method has the following syntax.  
 
 ```  
-MESSAGE(String [, Value1, ...])  
+MESSAGE(String [, Value1, ...]);  
 ```  
 
  The MESSAGE method executes asynchronously, which means that MESSAGE is not executed until the method from which it was called ends or another method requests user input. The method is useful for notifying the user that some processing has been successfully completed.  
@@ -81,7 +80,7 @@ MESSAGE(Text001,"No.",SalesHeader2."No.");
  The ERROR method has the following syntax.  
 
 ```  
-ERROR(String [, Value1, ...])  
+ERROR(String [, Value1, ...]);  
 ```  
 
 ## CONFIRM method  
@@ -90,17 +89,20 @@ ERROR(String [, Value1, ...])
  The CONFIRM method has the following syntax.  
 
 ```  
-Ok := Dialog.CONFIRM(String [, Default] [, Value1] ,...)  
+Ok := Dialog.CONFIRM(String [, Default] [, Value1] ,...);  
 ```  
 
  The following example shows how to use the CONFIRM method.  
 
 ```  
-IF CONFIRM('Do you want to post the journal lines and print report %1?',FALSE, ReportID) THEN  
+if CONFIRM('Do you want to post the journal lines and print report %1?',FALSE, ReportID) then  
    MESSAGE('Posting')  
-ELSE  
+else  
    MESSAGE('No Posting');  
    EXIT;  
 ```  
 
  The FALSE parameter in the CONFIRM statement means that No is the default.
+
+ ## See Also  
+[Dialog Data Type](methods-auto/dialog/dialog-data-type.md) 

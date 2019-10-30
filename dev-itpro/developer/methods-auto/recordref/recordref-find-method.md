@@ -69,11 +69,10 @@ varCustomerNo := '40000';
 CustomerRecref.OPEN(18);  
 MyFieldRef := CustomerRecref.FIELD(1);  
 MyFieldRef.VALUE := varCustomerNo;  
-IF CustomerRecref.FIND('=') THEN BEGIN  
+if CustomerRecref.FIND('=') then begin  
   MESSAGE(Text000 + Text001,  CustomerRecref.FIELD(1), CustomerRecref.FIELD(2));  
   MESSAGE('Address: %1, %2',  CustomerRecref.FIELD(5),  CustomerRecref.FIELD(7));  
-END  
-ELSE  
+end else
   MESSAGE(Text002);  
   
 ```  

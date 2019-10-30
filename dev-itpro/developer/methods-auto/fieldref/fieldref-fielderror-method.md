@@ -60,9 +60,9 @@ CustomerName := '';
 MyFieldRef := CustomerRecref.FIELD(1);  
 MyFieldRef.VALUE('30000');  
 MyFieldRef := CustomerRecref.FIELD(2);  
-IF CustomerName = '' THEN  
+if CustomerName = '' then  
   MyFieldRef.FIELDERROR(Text000)  
-ELSE  
+else  
   //Do some processing  
   
 ```  

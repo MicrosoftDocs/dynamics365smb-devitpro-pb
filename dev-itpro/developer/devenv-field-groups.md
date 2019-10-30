@@ -15,13 +15,13 @@ author: SusanneWindfeldPedersen
 
 A field group in table or table extension objects defines the fields to display in a drop-down control on pages that use the table. 
 
-> [!NOTE]
-> A field group can also be used to specify fields that display when list type pages are shown in the tile view. For more information, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).
-
 In a table object, you define field groups by first adding a `fieldgroups` control, and then adding one or more `fieldgroup(<Name>; <Field>)` keyword for each group, where:
 
-- `<Name>` can be either `DropDown`, for adding fields to the drop-down control, or `Brick` to display data as bricks. <!-- For more information, see ... -->
+- `<Name>` can be either `DropDown`, for adding fields to the drop-down control, or `Brick` to display data as tiles.
 - `<Field>` is a comma-separated list of the fields, by name, to include in the group.  
+
+> [!NOTE]
+> A field group can also be used to specify fields that display when list type pages are shown in the tile view. For more information, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).
 
 ```
 fieldgroups
