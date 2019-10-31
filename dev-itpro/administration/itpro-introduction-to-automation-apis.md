@@ -89,7 +89,7 @@ Authorization: Bearer {token}
 When the RapidStart package is imported it can applied with a [POST on bound action Microsoft.NAV.apply](dynamics-microsoft-automation-configurationpackage-post.md).
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0{apiVersion}/companies({companyId})/configurationPackages('SAMPLE}')/Microsoft.NAV.apply
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/{apiVersion}/companies({companyId})/configurationPackages('SAMPLE}')/Microsoft.NAV.apply
 
 Authorization: Bearer {token}
 ```
@@ -116,7 +116,7 @@ If-Match:*
 To assign users to a user group, issue a [POST request](dynamics-microsoft-automation-usergroupmember-post.md) against the **userGroupMembers** entity. See the example below.
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0{apiVersion}/companies({companyId})//users({userSecurityId})/userGroupMembers
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/{apiVersion}/companies({companyId})/users({userSecurityId})/userGroupMembers
 
 Authorization: Bearer {token}
 { 
@@ -130,7 +130,7 @@ To retrieve the list of user groups issue a [GET userGroups](dynamics-microsoft-
 Assigning permission sets is identical to adding users to user groups. [GET permissionSet](dynamics-microsoft-automation-permissionset-get.md) returns information about the available permission sets. To assign a permissionSet issue a [POST userPermission](dynamics-microsoft-automation-userpermission-post.md) as shown in the following example.
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0{apiVersion}/companies({companyId})//users({userSecurityId})/userPermissions
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/{apiVersion}/companies({companyId})/users({userSecurityId})/userPermissions
 
 Authorization: Bearer {token}
 { 
@@ -149,7 +149,7 @@ There are two bound actions available on the **extensions** endpoint: `Microsoft
 Issue a [POST extension](dynamics-microsoft-automation-extension-post.md) using the bound actions. See the example below.
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0{apiVersion}/companies({companyId})//extensions({packageId})/Microsoft.NAV.install
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/{apiVersion}/companies({companyId})/extensions({packageId})/Microsoft.NAV.install
 
 Authorization: Bearer {token}
 ```
@@ -161,6 +161,13 @@ Issue a [PATCH](dynamics-microsoft-automation-extensionupload-patch.md) against 
 > Installing per-tenant extensions using Automation APIs is only possible in SaaS.
 
 Uninstalling the extension can be done through the bound action [Microsoft.NAV.uninstall](dynamics-microsoft-automation-extension-post.md), as with the add-on extensions.  
+
+### Monitoring extension installation progress
+To view ongoing extension installation status, issue [GET extensionDeploymentStatus](dynamics-microsoft-automation-extensionDeploymentStatus-get.md) as shown in the following example.
+
+```json
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/extensionDeploymentStatus
+```
 
 ## See Also 
 [Automation API overview](dynamics-microsoft-automation-overview.md)  
