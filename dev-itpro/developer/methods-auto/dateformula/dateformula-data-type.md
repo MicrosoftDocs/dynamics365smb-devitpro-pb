@@ -30,7 +30,7 @@ Represents a date formula that has the same capabilities as an ordinary input st
  This example requires that you create a DateFormulaVariable variable that is a DateFormula data type.  
 
 ```  
-IF FORMAT(DateFormulaVariable) = ' ' THEN  
+if FORMAT(DateFormulaVariable) = ' ' then  
   EVALUATE(DateFormulaVariable, '1W');  
 ```  
 

@@ -60,11 +60,11 @@ This method is similar to the [FIELDCAPTION Method \(Record\)](../record/record-
   
 ```
 CustomerRecref.OPEN(18);  
-FOR i := 1 TO 9 DO BEGIN  
+for i := 1 to 9 do begin  
   MyFieldRef := CustomerRecref.FIELD(i);  
   varCaption := MyFieldRef.CAPTION;  
   MESSAGE(Text000, i, varCaption);  
-END;  
+end;  
 CustomerRecref.CLOSE;  
 ```  
   

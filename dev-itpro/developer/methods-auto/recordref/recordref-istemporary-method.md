@@ -45,14 +45,14 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
   
 ```  
 // Previous code  
-IF RecordRefVar.Number >= 2000100000 THEN BEGIN  
+ifRecordRefVar.Number >= 2000100000 then begin  
   // Code for temporary tables  
-END;  
+end;  
   
 // New code  
-IF RecordRefVar.IsTemporary THEN BEGIN  
+ifRecordRefVar.IsTemporary then begin  
   // Code for temporary tables  
-END;  
+end;  
 ```  
 
 ## See Also

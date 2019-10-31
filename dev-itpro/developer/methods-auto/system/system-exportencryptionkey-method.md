@@ -52,7 +52,7 @@ If encryption is not enabled or the encryption key is not found, the following e
  This example requires that you create the following text constants: ExportFileName and ClientFileName.  
 
 ```  
-IF NOT ENCRYPTIONENABLED THEN  
+if not ENCRYPTIONENABLED then  
     ERROR('Encryption has not been enabled.');  
     ExportFileName := EXPORTENCRYPTIONKEY('This is my personal secret');  
 

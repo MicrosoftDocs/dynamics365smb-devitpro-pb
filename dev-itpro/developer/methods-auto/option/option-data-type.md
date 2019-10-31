@@ -28,8 +28,8 @@ procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
     var 
         OptionVariable : Option C, "or D";
     begin
-        Message(OptionParameter::Alpha);
-        Message(OptionVariable::C);
+        Message('%1',OptionParameter::Alpha);
+        Message('%1',OptionVariable::C);
     end;
 ```
 

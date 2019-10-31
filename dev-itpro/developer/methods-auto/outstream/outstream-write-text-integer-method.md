@@ -52,15 +52,20 @@ If the optional return value, *Written*, is not specified and it was not possibl
   
 ## Example  
   
+This example requires that you create the following variables.  
+  
+|Variable name|DataType|SubType|  
+|-------------------|--------------|---|  
+|recBinaries|Record|Company Information|  
+|OStream|OutStream|| 
+|Txt|Text|| 
+
 ```  
 recBinaries.FIND('-');  
-recBinaries.Data.CREATEOUTSTREAM(OutStream);  
-OutStream.WRITE('Secretary');  
-OutStream.WRITE('Alice');  
-OutStream.WRITE('Hart');  
-OutStream.WRITE(010696D);  
+recBinaries.Picture.CREATEOUTSTREAM(OStream);   
+OStream.WRITE(Txt);  
 recBinaries.MODIFY();  
-```  
+```   
   
 
 ## See Also

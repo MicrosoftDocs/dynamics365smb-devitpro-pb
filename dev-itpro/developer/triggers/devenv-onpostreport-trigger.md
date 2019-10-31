@@ -30,7 +30,7 @@ end;
  Because this trigger is run after the report is processed, you can use it to inform users about the result of the report run. For example, if some records could not be processed, you could inform the user of this using the following code in this trigger.  
 
 ```  
-IF ProblemsInReport THEN  
+if ProblemsInReport then  
 MESSAGE(Text000, NumberOfErrors);  
 ```  
 

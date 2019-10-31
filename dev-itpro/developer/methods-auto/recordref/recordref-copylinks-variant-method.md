@@ -60,12 +60,12 @@ MyFieldRef := CustomerRecref.FIELD(1);
 MyFieldRef.SETRANGE('30000' , '40000');  
 VendorRecord.SETRANGE("No.", '10000');  
 Count := 0;  
-IF CustomerRecref.FIND('-') THEN  
-  REPEAT  
+ifCustomerRecref.FIND('-') then  
+  repeat  
     Count := Count + 1;  
     CustomerRecref.COPYLINKS(VendorRecord);  
     MESSAGE(Text000, CustomerRecref.RECORDID);  
-  UNTIL CustomerRecref.NEXT = 0;  
+  until CustomerRecref.NEXT = 0;  
 CustomerRecref.CLOSE;  
 ```  
 

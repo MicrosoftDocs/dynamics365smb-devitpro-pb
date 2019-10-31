@@ -40,7 +40,7 @@ Creates an encryption key for the current tenant.
  This code example creates an encryption key for the current tenant. It uses the [ENCRYPTIONENABLED](../../methods-auto/system/system-encryptionenabled-method.md) method to perform a check.  
 
 ```  
-IF NOT ENCRYPTIONENABLED THEN  
+if not ENCRYPTIONENABLED then  
         CREATEENCRYPTIONKEY();  
 ```  
 ## See Also

@@ -428,7 +428,7 @@ page 50100 "Customer Rewards Wizard"
 
         Step::Finish : 
           ShowFinalPage; 
-        END; 
+        end; 
     end; 
 
     local procedure NextStep(Backwards: Boolean); 

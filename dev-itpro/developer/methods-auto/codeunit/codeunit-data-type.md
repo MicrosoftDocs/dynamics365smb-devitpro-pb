@@ -28,7 +28,7 @@ The following methods are available on instances of the Codeunit data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Run(var Record)](codeunitinstance-run-method.md)|Loads and executes the unit of C/AL code that you specify.|
+|[Run(var Record)](codeunitinstance-run-method.md)|Loads and executes the unit of AL code that you specify.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -63,13 +63,13 @@ varNewName := 'Contoso';
 MyRecordRef.OPEN(18);  
 MyFieldRef := MyRecordRef.FIELD(1);  
 MyFieldRef.VALUE := MyRecord;  
-IF MyRecordRef.FIND('=') THEN BEGIN  
+if MyRecordRef.FIND('=') then begin  
   varOldName := MyRecordRef.FIELD(2);  
   MESSAGE('Old Name: %1', varOldName);  
   varOldName.VALUE := varNewName;  
   MyRecordRef.MODIFY;    
   MESSAGE('New Name: %1', MyRecordRef.FIELD(2));  
-END;  
+end;  
   
 ```  
 

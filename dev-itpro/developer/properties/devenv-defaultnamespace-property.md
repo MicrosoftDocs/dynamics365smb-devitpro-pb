@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
  
 
 # DefaultNamespace Property
-Specifies the default namespace for both the [IMPORT Method (XMLport)](../methods/devenv-IMPORT-Method-XMLport.md) and [EXPORT Method (XMLport)](../methods/devenv-EXPORT-Method-XMLport.md) methods.  
+Specifies the default namespace for both the [IMPORT Method (XMLport)](../methods-auto/xmlport/xmlport-IMPORT-Method.md) and [EXPORT Method (XMLport)](../methods-auto/xmlport/xmlport-EXPORT-Method.md) methods.  
   
 ## Applies To  
   

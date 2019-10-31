@@ -50,7 +50,7 @@ Here is a JSON representation of the extensionDeploymentStatus.
 ## Methods
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[GET extensionUpload](dynamics-microsoft-automation-extensionUpload-patch.md)|NA|Uploades an extension|
+|[GET extensionDeploymentStatus](dynamics-microsoft-automation-extensionDeploymentStatus-get.md)|extensionDeploymentStatus|Gets extension installation status|
 
 ## Relationships / Navigation properties
 None

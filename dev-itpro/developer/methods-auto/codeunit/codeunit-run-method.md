@@ -50,9 +50,9 @@ This optional parameter identifies a record. This parameter is a record data typ
   
 ```  
 AccountRecord.INIT;  
-IF NOT FiscalYearCloseInstance.RUN(AccountRecord) THEN  
+if not FiscalYearCloseInstance.RUN(AccountRecord) then  
   ERROR('Codeunit run failed (with record).');  
-IF NOT AppMgmtInstance.RUN THEN  
+if not AppMgmtInstance.RUN then  
   ERROR('Codeunit run failed.');  
 ```  
 

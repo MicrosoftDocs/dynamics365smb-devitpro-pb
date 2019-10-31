@@ -88,16 +88,16 @@ NewNo1 := ‘9999999’;
 NewNo2 := ‘8888888’;  
 MESSAGE('Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.");  
 result := CustomerRec.RENAME(NewNo1);  
-IF result THEN  
+ifresult then  
   MESSAGE('After rename - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
-ELSE  
+else  
   MESSAGE('No rename.');  
 CustRecRef.GETTABLE(CustomerRec);  
 result := CustRecRef.RENAME(NewNo2);  
-IF result THEN BEGIN  
+ifresult then begin  
   CustomerRec.GET(NewNo2);  
   MESSAGE('After rename 2 - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
-END ELSE  
+END else  
   MESSAGE('No rename.');  
 ```  
   
