@@ -2,7 +2,7 @@
 title: "PrintOnlyIfDetail Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,7 +52,7 @@ The current settings of the PrintOnlyIfDetail property.
 |PageGroupNo|Integer|Not applicable|  
   
 ```  
-IF CurrReport.PRINTONLYIFDETAIL AND GLEntryPage.FIND('-') THEN  
+if CurrReport.PRINTONLYifDETAIL AND GLEntryPage.FIND('-') then  
   PageGroupNo := PageGroupNo + 1;  
 ```  
   
@@ -60,7 +60,7 @@ IF CurrReport.PRINTONLYIFDETAIL AND GLEntryPage.FIND('-') THEN
  The following example sets the value of the [PrintOnlyIfDetail Property](../../properties/devenv-printonlyifdetail-property.md) to true. It requires that you create a Report variable named Report111. The Subtype of the variable is report 111, Customer - Top 10 List.  
   
 ```  
-IsPrintOnlyIfDetail := Report111.PRINTONLYIFDETAIL(true);  
+IsPrintOnlyIfDetail := Report111.PRINTONLYifDETAIL(true);  
 ```  
   
 

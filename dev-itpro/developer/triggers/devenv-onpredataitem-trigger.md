@@ -1,16 +1,14 @@
 ---
 title: "OnPreDataItem Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 4b6df5e3-5346-4171-8113-54e098e4bc02
 author: SusanneWindfeldPedersen
 ---
-
 
 # OnPreDataItem Trigger
 Runs before a data item is processed.  

@@ -2,7 +2,7 @@
 title: "Validate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/25/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Calls the OnValidate trigger for the field that you specify.
 
 ## Syntax
 ```
- Record.Validate(Field: Any, [NewValue: Any])
+ Record.Validate(Field: Any [, NewValue: Any])
 ```
 ## Parameters
 *Record*  

@@ -2,13 +2,12 @@
 title: "OnOpenPage Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: c6b911c1-55b2-4837-b1af-32dbe64f84e3
 author: SusanneWindfeldPedersen
 ---
 

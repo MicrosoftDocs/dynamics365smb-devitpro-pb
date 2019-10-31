@@ -2,7 +2,7 @@
 title: "GetLastErrorCallStack Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,7 +52,7 @@ ERROR('Some error message')
 // Codeunit 50002, TestErrors2  
 // OnRun trigger  
 CLEARLASTERROR;  
-IF NOT Codeunit.RUN(50001) THEN  
+if not Codeunit.RUN(50001) then  
   MESSAGE('The call stack for the last error is:\' + GETLASTERRORCALLSTACK);  
   
 ```  

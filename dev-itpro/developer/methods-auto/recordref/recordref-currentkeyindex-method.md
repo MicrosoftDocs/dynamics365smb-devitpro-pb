@@ -2,7 +2,7 @@
 title: "CurrentKeyIndex Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,12 +59,12 @@ The number of the current key.
 ```  
 varFromTable := 36;  
 varToTable := 39;  
-FOR i := varFromTable TO varToTable DO BEGIN  
+for i := varFromTable TO varToTable DO begin  
   MyRecordRef.OPEN(i);  
   CurrentKeyIndex := MyRecordRef.CURRENTKEYINDEX;  
   MESSAGE(Text000, MyRecordRef.NAME, CurrentKeyIndex);  
   MyRecordRef.CLOSE;  
-END  
+end;  
 ```  
   
 

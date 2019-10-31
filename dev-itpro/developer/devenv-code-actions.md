@@ -4,7 +4,7 @@ description: "Code Actions"
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -19,9 +19,15 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] two code actions are 
 - Spell check code action.
 
 ## To enable AL Code Actions
-1. Open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings** depending on which scope you want the code actions to apply to.
-2. Enter the setting `al.enableCodeActions` to the settings file and set it to `true`: `"al.enableCodeActions": true`
+1. Open the Command Palette **Ctrl+P** and open the `settings.json` file.
+2. Enter the setting `al.enableCodeActions` and set it to `true`: `"al.enableCodeActions": true`
 3. Save the settings file. You have now enabled code actions on your project.
+
+Alternatively:
+
+1. Open the Settings Page, **Ctrl+,** and choose either **User Settings** or **Workspace Settings** depending on which scope you want the code actions to apply to.
+2. Navigate to **Extensions > AL Language extension configuration**.
+3. Click on the **Enable Code Actions** checkbox. You have now enabled code actions on your project.
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  

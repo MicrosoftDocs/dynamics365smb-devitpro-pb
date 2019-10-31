@@ -2,7 +2,7 @@
 title: "ImportStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Adds a media file, such as a JPEG image, from an InStream object to the MediaSet
 
 ## Syntax
 ```
-[ID := ]  MediaSet.ImportStream(Stream: InStream, Description: String, [MimeType: String])
+[ID := ]  MediaSet.ImportStream(Stream: InStream, Description: String [, MimeType: String])
 ```
 ## Parameters
 *MediaSet*  
@@ -90,14 +90,14 @@ itemRec.Get('1000');
 
 fileName := 'C:\images\1000-v1.jpg';
 importFile.Open(fileName);  
-importFile.CreateStream(inStreamObject);  
+importFile.CreateInStream(inStreamObject);  
 itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + Format(itemRec."No."));  
 itemRec.Modify;  
 importFile.Close;  
 
 fileName := 'C:\images\1000-v2.jpg';
 importFile.Open(fileName);  
-importFile.CreateStream(inStreamObject);  
+importFile.CreateInStream(inStreamObject);  
 itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + FORMAT(itemRec."No."));  
 itemRec.Modify;  
 importFile.Close;

@@ -2,7 +2,7 @@
 title: "Setting Relationships Between Tables"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -45,8 +45,8 @@ Advanced table relations are typically prefixed with a conditional statement and
 ```  
 <TableRelation> =  
    <TableName>[.<FieldName>] [WHERE(<TableFilters>)] |  
-   IF (<Conditions>) <TableName>[.<FieldName>]  
-   [WHERE(<TableFilters>)] ELSE <TableRelation>  
+   if (<Conditions>) <TableName>[.<FieldName>]  
+   [WHERE(<TableFilters>)] else <TableRelation>  
 <Conditions> ::=  
    <TableFilters>  
 <TableFilters> ::=  

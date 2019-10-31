@@ -2,7 +2,7 @@
 title: "Version Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ The following methods are available on the Version data type.
 |Method name|Description|
 |-----------|-----------|
 |[Create(String)](version-create-string-method.md)|Creates a version object from the provided string. The string should be in the format W.X.Y.Z, where W, X, Y and Z represent positive integers and where Y and Z are optional. If the input string is not in the expected format, an exception is thrown.|
-|[Create(Integer, Integer, [Integer], [Integer])](version-create-integer-integer-integer-integer-method.md)|Creates a version object from the major, minor, build and revision numbers provided.|
+|[Create(Integer, Integer [, Integer] [, Integer])](version-create-integer-integer-integer-integer-method.md)|Creates a version object from the major, minor, build and revision numbers provided.|
 
 The following methods are available on instances of the Version data type.
 

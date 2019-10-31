@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Logman to Collect Event Trace Data"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -62,7 +62,7 @@ The following steps give you an example of how to use logman.
     logman stop MyServerTraceData 
     ```
 
-The data is now stored in an .elt file. 
+The data is now stored in an .etl file. 
 
 ## View trace event data
 

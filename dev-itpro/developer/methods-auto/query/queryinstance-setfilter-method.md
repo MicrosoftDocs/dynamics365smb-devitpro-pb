@@ -2,7 +2,7 @@
 title: "SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/28/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Sets a filter on a column of a query to limit the records in the resulting data 
 
 ## Syntax
 ```
- Query.SetFilter(Column: Any, String: String, [Value: Any,...])
+ Query.SetFilter(Column: Any, String: String [, Value: Any,...])
 ```
 ## Parameters
 *Query*  
@@ -116,10 +116,10 @@ MyQuery.SETFILTER(NAME, 'Selangorian Ltd.');
 MyQuery.OPEN;  
 // Reads each row in the dataset and displays message with column values.  
 // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
-WHILE MyQuery.READ DO  
-BEGIN  
+while MyQuery.READ do  
+begin  
   MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);  
-END;   
+end;   
 // Saves the resulting dataset as a CSV file.  
 MyQuery.SAVEASCSV('c:\temp\CustomerSales.csv');  
 // Closes the query.  

@@ -1,6 +1,6 @@
 ---
-title: Replicating On-Premises Data | Microsoft Docs
-description: Learn how to set up data replication from on-premises to your Business Central tenant so you can connect to the intelligent cloud.
+title: Migration On-Premises Data | Microsoft Docs
+description: Learn how to set up cloud data migrartion from on-premises to your Business Central tenant so you can migrate to the  cloud version of Business Central.
 author: bmeier94
 
 ms.reviewer: edupont
@@ -10,43 +10,41 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: cloud, edge
-ms.date: 05/28/2019
+ms.date: 10/01/2019
 ms.author: bmeier
 
 ---
 # Replicating On-Premises Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-Data replication is the process of securely migrating data from your on-premises SQL Server instance to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. The process uses the Azure Data Factory (ADF) to migrate the data between databases directly, meaning it does not look at any permissions within the applications you are transferring data between, only SQL permissions.  
+Data migration is the process of securely migrating data from your on-premises SQL Server instance to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. The process uses the Azure Data Factory (ADF) to migrate the data between databases directly, meaning it does not look at any permissions within the applications you are transferring data between, only SQL permissions.  
 
-In order for the data migration to take place, you must successfully complete the **Intelligent Cloud Setup** assisted setup wizard in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. Once the wizard is complete and data replication is activated, an initial data replication will happen at the scheduled time. Alternatively, you can trigger the data replication process manually.  
+In order for the data migration to take place, you must successfully complete the **Cloud Migration Setup** assisted setup wizard in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. Once the wizard is complete and data migration is activated, an initial data migration will happen at the scheduled time. Alternatively, you can trigger the data migration process manually.  
 
-Data is replicated between the two systems on a per-table basis, and success and failures are tracked for each table. If a table fails to replicate, the error will be captured, and the replications moves on to the next table until completed. Tables will fail to replicate if they cannot be found, or if the schema does not match between the cloud and the on-premises tables.  
+Data is replicated between the two systems on a per-table basis, and success and failures are tracked for each table. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed. Tables will fail to migrate if they cannot be found, or if the schema does not match between the cloud and the on-premises tables.  
 
-If a table fails to replicate, a blocker is placed on the  table in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. It is meant as a way for the service to inform you that the data you are viewing has not replicated to prevent you from viewing data that may be out of date. At no point will there be an impact on your on-premises SQL Server data.  
-
-The initial data replication time can vary depending factors such as the amount of data to replicate, your SQL Server configuration, and your connection speeds. The initial replication will take the longest amount of time to complete because all data is replicating. After the initial replication, only changes in data will be replicated so they should run more quickly.  
+The initial data migration time can vary depending factors such as the amount of data to migrate, your SQL Server configuration, and your connection speeds. The initial replication will take the longest amount of time to complete because all data is migrating. After the initial migration, only changes in data will be migrated so they should run more quickly.  You do not need to run the migration process more than once if you don't want to but if you are running the migration while users are still using the on-premises system you will need to run at least one more migration in order to ensure all data was moved to the cloud before you start transacting in the cloud tenant.  
 
 ## Data replication from Business Central on-premises
 
-Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution can have an identical twin in a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant. The data replication can be started quite easily from the assisted setup wizard in your on-premises solution. For more information, see [Connect to the Intelligent Cloud from On-Premises](about-intelligent-edge.md).  
+Your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution can have an identical twin in a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online tenant. The data migration can be started quite easily from the assisted setup wizard in your on-premises solution. For more information, see [Connect to the Intelligent Cloud from On-Premises](about-intelligent-edge.md).  
 
 ### Replicating data from extensions
 
-When your on-premises solution is connected to the intelligent cloud, it is highly recommended that you test the impact of any extension in a sandbox environment before you install the extensions in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production tenant to help avoid any data failures or unintended consequences.  
+When your on-premises solution is connected to the cloud, it is highly recommended that you test the impact of any extension in a sandbox environment before you install the extensions in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production tenant to help avoid any data failures or unintended consequences.  
 
-In order to support data replication, tables and table extensions must specify if data from that table must be replicated or not. By default, the **ReplicateData** property is set to *Yes* so that, by default, any extension that is installed in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will have all its tables replicated.  
+In order to support data migration, tables and table extensions must specify if data from that table must be migrated or not. By default, the **ReplicateData** property is set to *Yes* so that, by default, any extension that is installed in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant will have all its tables migrated.  
 
-In certain circumstances, you may want to not replicate all data. Here are a few examples:
+In certain circumstances, you may want to not migrate all data. Here are a few examples:
 
 - The extension is installed in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant but not in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises solution
 
-    In this case, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will attempt to replicate the data but fail. Since the extension is not installed on-premises, any table related to that extension table will fail to replicate, and blocker notifications will appear on pages that are associated with those tables.
+    In this case, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will attempt to replicate the data but show a warning. Since the extension is not installed on-premises, any table related to that extension table will not migrate, and warning notifications will appear in the cloud migration status page.
 
-    If you own the extension, we recommend that you set the **ReplicateData** property to *No* on the extension tables. If you do not, and if you want data to replicate, install the extension in both your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant and your on-premises solution. If you do not want data to replicate, uninstall the extension from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant.  
+    If you own the extension, we recommend that you set the **ReplicateData** property to *No* on the extension tables. If you do not, and if you want data to migrate, install the extension in both your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant and your on-premises solution. If you do not want data to replicate, uninstall the extension from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant.  
 
 - The extension references a base table
 
-    This can cause your base table to appear empty when you view data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. If that happens, uninstall the extension from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, and then run the data replication process again.
+    This can cause your base table to appear empty when you view data in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant. If that happens, uninstall the extension from your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cloud tenant, and then run the cloud migration process again.
 
 ### Data that is not replicated
 
@@ -54,12 +52,12 @@ During the data replication process, [!INCLUDE[prodshort](../developer/includes/
 
 ## Data replication from Dynamics GP
 
-When using the intelligent cloud replication for Dynamics GP 2018 R2, the following information is replicated from Dynamics GP to Business Central online:
+When using the cloud migration for Dynamics GP 2018 R2, the following information is migrated from Dynamics GP to Business Central online:
 
-- Chart of Accounts master records as of the time of the replication
+- Chart of Accounts master records as of the time of the migration
 
     The chart of accounts will be set up as the main account segment from Dynamics GP, and the additional segments will be set up as dimensions in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
-- Account Balance as of the time of the replication
+- Account Balance as of the time of the migration
 
     The account balances are brought over as a sum amount of the balances grouped by the main account number.
 
@@ -73,13 +71,13 @@ When using the intelligent cloud replication for Dynamics GP 2018 R2, the follow
     |000-1100-01|Cash West|200.00|
     |000-1100-02|Cash Midwest|100.00|
 
-    Because the account number's main segment in Dynamics GP is defined as the second segment, the data replication creates new accounts in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] based on the number *1100* in this example. The data replication process then sets up an account in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as shown in the following table:  
+    Because the account number's main segment in Dynamics GP is defined as the second segment, the data migration creates new accounts in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] based on the number *1100* in this example. The data migration process then sets up an account in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as shown in the following table:  
 
     |Account number|Account name|Amount|
     |--------------|------------|------|
     |1100|Cash|800.00|
 
-    The data replication generates dimensions on that account based on the different segments. User will see a *Department* dimension with the values 000, 100, and 200 respectively. Another dimension, *Division*, will show the values 00, 01, and 02 respectively.
+    The data migration generates dimensions on that account based on the different segments. User will see a *Department* dimension with the values 000, 100, and 200 respectively. Another dimension, *Division*, will show the values 00, 01, and 02 respectively.
 
 - Customer master records and outstanding transactions from the Receivables module
 
@@ -96,27 +94,12 @@ When using the intelligent cloud replication for Dynamics GP 2018 R2, the follow
 
      This data can be used in Power BI reports and Power Apps. In [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, the data is included in the SmartList views in the **Customers**, **Vendors**, and **Items** lists. Technically, the data is stored in table extensions.  
 
-## Data replication from Dynamics NAV
-
-The data replication process for [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] is very similar to the process for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises with one major exception: A transformation process that is run on tables that have upgrade logic on them because of differences in data structure between [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] and [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
-
-In order to set up the data replication process, you must upgrade to [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] CU 15 or later. Cumulative update 15 added an extension that is needed to set up the replication process.  
-
-From the standpoint of walking through the wizard, the process is the same. For more information, see [Connect to the Intelligent Cloud from On-Premises](about-intelligent-edge.md).  
-
-Let’s look at an example of the transformation process. In [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)], the **Sales & Receivables Setup** window includes a field, **Archive Quotes and Orders**, that specifies whether to automatically archive sales quotes and sales orders when a sales quote or order is deleted. In [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the **Sales & Receivables Setup** window includes an **Archiving** FastTab where you can specify how and when to archive quotes and orders separately.  
-
-> [!div class="mx-imgBorder"]
-> ![Shows the Sales & Receivables page with the Archiving tab](../media/SRsetup.png)
-
-When you connect your [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] to [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the data replication process must make the relevant data transformation to put the correct values into the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] table. Technically, it is the same process that is used for upgrading from [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
-
 <!-- ## Data replication from Dynamics SL
 
-When using the intelligent cloud replication for Dynamics SL 2018 CU 1, the following information is replicated from Dynamics SL to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online:
+When using the cloud migration for Dynamics SL 2018 CU 1, the following information is migrated from Dynamics SL to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online:
 
-- Chart of Accounts master records as of the time of the replication
-- Account Balance as of the time of the replication
+- Chart of Accounts master records as of the time of the migration
+- Account Balance as of the time of the migration
 - Customer master records and outstanding transactions from the Receivables module
 
     These transactions will be brought in as the amount remaining in Dynamics SL.

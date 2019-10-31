@@ -2,7 +2,7 @@
 title: "ReadText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Reads text from an InStream object.
 
 ## Syntax
 ```
-[Read := ]  InStream.ReadText(var Variable: Text, [Length: Integer])
+[Read := ]  InStream.ReadText(var Variable: Text [, Length: Integer])
 ```
 ## Parameters
 *InStream*  
@@ -66,14 +66,12 @@ If you use the return value, you must verify the validity of the data that has b
 FileTest.OPEN('c:\XMLDocs\NewTest.txt');  
 FileTest.CREATEINSTREAM(StreamInTest);  
 // Starting a loop  
-WHILE NOT (StreamInTest.EOS) DO BEGIN  
+while not (StreamInTest.EOS) do begin 
   Int := StreamInTest.READTEXT(Txt,100);  
   MESSAGE(Txt + '\Size: ' + FORMAT(Int));  
-END;  
+end;  
 FileTest.CLOSE();  
 ```  
-  
-## Example
 
 
 ## See Also

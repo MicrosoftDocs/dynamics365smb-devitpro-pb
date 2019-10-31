@@ -1,18 +1,14 @@
 ---
 title: "OnAfterModifyRecord Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 5471bdd5-60fb-44fa-b6bf-96d776714be6
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
-
 
 # OnAfterModifyRecord Trigger
 Runs after a record has been modified.  

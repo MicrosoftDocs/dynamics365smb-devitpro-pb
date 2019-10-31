@@ -2,7 +2,7 @@
 title: "Upload Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/10/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -72,7 +72,7 @@ We recommend that you use the methods in codeunit 419, File Management, to uploa
 ## Example  
 
 ```  
-UPLOAD('Upload file','C:\','Text file(*.txt)|*.txt','Test.txt',varTest)  
+UPLOAD('Upload file','C:\','Text file(*.txt)|*.txt','Test.txt',varTest);  
 ```  
 
 ## See Also

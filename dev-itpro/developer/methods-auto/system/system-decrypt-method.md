@@ -2,7 +2,7 @@
 title: "Decrypt Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,7 +46,7 @@ The output string that is decrypted.
  This example requires that you create the following text constants: EncryptedText and PlainText.  
 
 ```  
-IF NOT ENCRYPTIONENABLED THEN  
+if not ENCRYPTIONENABLED then  
         ERROR('Encryption has not been enabled.');  
       PlainText := DECRYPT(EncryptedText);  
 

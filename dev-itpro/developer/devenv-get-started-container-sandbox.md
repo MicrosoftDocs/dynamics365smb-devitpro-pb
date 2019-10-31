@@ -4,7 +4,7 @@ description: "Overview of the getting started with the container-based developme
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer

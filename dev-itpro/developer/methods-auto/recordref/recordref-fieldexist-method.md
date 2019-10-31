@@ -2,7 +2,7 @@
 title: "FieldExist Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -57,14 +57,13 @@ The FieldNo that you want to know whether exists in the table.
 ```  
   
 MyRecordRef.OPEN(18);  
-FOR i := 1 TO 12 DO BEGIN  
-  IF MyRecordRef.FIELDEXIST(i) THEN BEGIN  
+for i := 1 TO 12 DO begin  
+  if MyRecordRef.FIELDEXIST(i) then begin  
      VarFieldName := MyRecordRef.FIELD(i);  
      MESSAGE(Text000, i, VarFieldName.NAME);  
-    END  
-  ELSE  
+    end else  
     MESSAGE(Text001, i);  
-  END;  
+  end;  
 ```  
   
 

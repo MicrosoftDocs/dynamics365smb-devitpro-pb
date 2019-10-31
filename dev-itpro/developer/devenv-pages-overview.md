@@ -3,13 +3,12 @@ title: "Pages Overview"
 description: Pages are the main way to display and organize data. Pages are the main way to display and organize data.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 0ba68a20-d83a-4e4c-9938-dac7fa8f5461
 ms.author: solsen
 ---
 

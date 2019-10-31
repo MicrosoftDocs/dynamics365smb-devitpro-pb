@@ -2,7 +2,7 @@
 title: "TransferFields Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/25/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Copies all matching fields in one record to another record.
 
 ## Syntax
 ```
- Record.TransferFields(var FromRecord: Record, [InitPrimaryKeyFields: Boolean])
+ Record.TransferFields(var FromRecord: Record [, InitPrimaryKeyFields: Boolean])
 ```
 ## Parameters
 *Record*  

@@ -2,7 +2,7 @@
 title: "CompressArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -54,11 +54,8 @@ The string array that you want to compress.
 ||  
 |-|  
 |Joe Raybon|  
-||  
-|One Meca Way|  
-||  
-|Atlanta|  
-||  
+|One Meca Way|   
+|Atlanta||
   
  The output StringArray has the following values.  
   
@@ -66,10 +63,7 @@ The string array that you want to compress.
 |-|  
 |Joe Raybon|  
 |One Meca Way|  
-||  
-|Atlanta|  
-||  
-||  
+|Atlanta||  
   
  All non-empty entries have been moved to the beginning of the array.  
   
@@ -77,7 +71,7 @@ The string array that you want to compress.
   
 |Variable|DataType|Dimension|  
 |--------------|--------------|---------------|  
-|CustomerData|Text|6|  
+|CustomerData|Text array|6|  
   
 ```  
 CustomerData[1] := 'Joe Raybon';  

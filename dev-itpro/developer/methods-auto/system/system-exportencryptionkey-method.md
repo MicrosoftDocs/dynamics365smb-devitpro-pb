@@ -2,7 +2,7 @@
 title: "ExportEncryptionKey Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,7 +40,11 @@ A temporary filepath to where the key is exported.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.  
+
+> [!Note]
+> [!INCLUDE[on_prem_only](../../includes/on_prem_only.md)]
+
+If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.  
 
 ## Example  
  This code example uses the EXPORTENCRYPTIONKEY method to return a password protected file that contains an encryption key. With the DOWNLOAD method the file is sent from the [!INCLUDE[d365fin_server](../../includes/d365fin_server_md.md)] computer to the client computer.  
@@ -48,7 +52,7 @@ A temporary filepath to where the key is exported.
  This example requires that you create the following text constants: ExportFileName and ClientFileName.  
 
 ```  
-IF NOT ENCRYPTIONENABLED THEN  
+if not ENCRYPTIONENABLED then  
     ERROR('Encryption has not been enabled.');  
     ExportFileName := EXPORTENCRYPTIONKEY('This is my personal secret');  
 

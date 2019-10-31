@@ -2,7 +2,7 @@
 title: "Evaluate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Evaluates a string representation of a value into its typical representation. Th
 
 ## Syntax
 ```
-[Ok := ]  System.Evaluate(var Variable: Any, String: String, [Number: Integer])
+[Ok := ]  System.Evaluate(var Variable: Any, String: String [, Number: Integer])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  
@@ -74,7 +74,7 @@ Value := '010196';
 Ok1 := EVALUATE(VarInteger, Value);  
 Ok2 := EVALUATE(VarDate, Value);  
 Ok3 := EVALUATE(VarYesNo, Value);  
-Value := '2days 4hours 3.7 seconds 17.3 milliseconds';  
+Value := '2days 4hours 3.7 seconds 17 milliseconds';  
 Ok4 := EVALUATE(VarDuration, Value);  
 MESSAGE(Text000 + Text001 + Text002 + Text003, VarInteger, Ok1, VarDate, Ok2, VarYesNo, Ok3, VarDuration, Ok4);  
 ```  
@@ -103,7 +103,7 @@ MESSAGE(Text000 + Text001 + Text002 + Text003, VarInteger, Ok1, VarDate, Ok2, Va
   
 -   millisecond, milliseconds, milli, millis  
   
- You can include decimal values in the string that you evaluate as a duration. Decimal values for milliseconds are ignored; only the whole number is evaluated.  
+ You can include decimal values in the string that you evaluate as a duration, except for milliseconds, which must be a whole number.  
 
 ## See Also
 [System Data Type](system-data-type.md)  

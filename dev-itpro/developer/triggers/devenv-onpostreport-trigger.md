@@ -1,18 +1,14 @@
 ---
 title: "OnPostReport Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: bc317b67-0417-44c8-9e40-b8bdcf274c43
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
-
 
 # OnPostReport Trigger
 Runs after a report is run.  
@@ -34,7 +30,7 @@ end;
  Because this trigger is run after the report is processed, you can use it to inform users about the result of the report run. For example, if some records could not be processed, you could inform the user of this using the following code in this trigger.  
 
 ```  
-IF ProblemsInReport THEN  
+if ProblemsInReport then  
 MESSAGE(Text000, NumberOfErrors);  
 ```  
 

@@ -3,7 +3,7 @@ title: "XMLport Overview"
 description: "Design a XMLport by defining the schema. XMLport object is composed of a schema, request page, properties, triggers, and code."
 author: blrobl
 ms.custom: na
-ms.date: 08/06/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,24 +13,24 @@ ms.author: t-blrobl
 ---
 
 # XMLport Overview
-A XMLport is composed of the following items:
+An XMLport is composed of the following items:
 
 - An XMLport object
 
 - An XMLport schema
 
-- A Request Page
+- A Request page
 
 - Properties, triggers, and code
 
 ## XMLport object
-You create a XMLport object in the AL Language development environment to define the schema of an XML document. You can export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] with XMLports. For more information, see [XMLport Object](devenv-xmlport-object.md).
+You create an XMLport object in the AL Language development environment to define the schema of an XML document. You can export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] with XMLports. For more information, see [XMLport Object](devenv-xmlport-object.md).
 
 ### XMLport schema
 In order to define the underlying structure of the imported or exported document, you use the XMLport schema. An XMLport schema determines which data is exported from or imported to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables and the format and structure of the files used. You build the XMLport schema by adding nodes. For more information, see [Defining a XMLport Schema](devenv-xmlport-schema.md).
 
 ## Request page
-Request Pages are dialog boxes that enable the user to set a filter on the data, sort the data, or choose whether to export or import the data. Note that in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Web client, Request pages are not supported. For more information, see [Request Pages](devenv-request-pages.md).
+Request pages are dialog boxes that enable the user to set a filter on the data, sort the data, or choose whether to export or import the data. For more information, see [Request Pages](devenv-request-pages.md).
 
 ## XMLport properties, triggers, and code
 XMLport objects include triggers, methods, and properties that can be used to work with the object. For more information, see [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md) and [XMLport Triggers](triggers/devenv-xmlport-triggers.md).
@@ -40,8 +40,10 @@ When you design XMLports, you must set the value of the [Format Property (XMLpor
 For more information about data consistency and validation against possible errors when using XMLports, see the blog post [Importing and exporting valid data using XMLports in Dynamics 365 Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/05/22/importing-and-exporting-valid-data-using-xmlports-in-dynamics-365-business-central/).
 
 ## See Also
+
 [XMLport Object](devenv-xmlport-object.md)  
-[Defining a XMLport Schema](devenv-xmlport-schema.md)   
+[Defining a XMLport Schema](devenv-xmlport-schema.md)  
+[Using Namespaces with XMLports](devenv-using-namespaces-with-xmlports.md)  
 [Request Pages](devenv-request-pages.md)  
 [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md)  
 [XMLport Triggers](triggers/devenv-xmlport-triggers.md)

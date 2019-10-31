@@ -3,7 +3,7 @@ title: "Help and Customer Support"
 description: "Guidelines on help and customer support links"
 author: v-liober
 ms.custom: na
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -14,7 +14,7 @@ ms.author: v-liober
 
 | Listing details | Description | Requirements |
 |-----------------|-------------|--------------|
-| 6. **Help URL**                    | You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, etc.| Required     |
+| 6. **Help URL** | You need to provide an URL for a distinct help page where prospects can find different types of online product help. The help page needs to include online documentation that can be used as help. Your Help Link should be a landing page on your website where one can find help resources, such as documentation, FAQs, step-by-step guides, webinars, etc.| Required|
 
 Formatting
 - The Help page can be in any language. We do recommend that your help information is in English and are formatted as PDF-files.

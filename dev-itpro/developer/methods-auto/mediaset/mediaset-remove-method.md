@@ -2,7 +2,7 @@
 title: "Remove Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -74,7 +74,7 @@ mediaId := recA.Images.Item(1);
 // Removes the media object from the MediaSet of record 1000
 if recA.Images.Remove(mediaId) then begin
     recA.Modify;    
-    MesageText000, mediaId, recA.Images.MediaId);
+    Message(Text000, mediaId, recA.Images.MediaId);
 end else begin
     Message(Text001);
 end;

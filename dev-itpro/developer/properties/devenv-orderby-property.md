@@ -4,7 +4,7 @@ description: "Description of the OrderBy property for Business Central."
 
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
@@ -73,5 +73,5 @@ The **OrderBy** property corresponds to the Order By clause in SQL select statem
 The following is the Order By clause in SQL that corresponds to the OrderBy property in this example.  
   
 ```  
-OrderBy Name,Quantity  
+OrderBy = ascending (Name,Quantity);  
 ```

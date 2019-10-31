@@ -8,13 +8,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 07/17/2019
+ms.date: 10/23/2019
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
 This section contains answers to frequently asked questions about developing for and administering [!INCLUDE[prodlong](includes/prodlong.md)].  
 
-> [!TIP]  
+> [!TIP]
 > If you are looking for frequently asked questions about signing up for and using [!INCLUDE[prodshort](includes/prodshort.md)], see [Frequently Asked Questions](/dynamics365/business-central/across-faq) in the business functionality content for [!INCLUDE[prodshort](includes/prodshort.md)].
 
 ## Is [!INCLUDE[prodshort](includes/prodshort.md)] available in my country?
@@ -37,15 +37,27 @@ For more information, see [Learn about automatic SQL Database backups](/azure/sq
 
 ## Can I request a copy of the backup of my production database?
 
-No, this is not currently supported.
+No, but from the Business Central administration center, you can export the database for Business Central online environments as .bacpac files to an Azure storage container. For more information, see [Exporting Databases](administration/tenant-admin-center-database-export.md).  
 
 ## Can I get training in Business Central?
 
-Yes, you can. As a partner you have access to the Dynamics Learning Portal, where you can find eLearning courses for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see the [Microsoft Dynamics 365 training page](/dynamics365/get-started/training/index#dynamics-365-partners).  
+Yes, you can. You can find free eLearning content on the [Microsoft Learn site](/learn/browse/?products=dynamics-business-central). As a partner, you also have access to the Dynamics Learning Portal, where you can find older eLearning courses for [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see the [Microsoft Dynamics 365 training page](/dynamics365/get-started/training/index#dynamics-365-partners).  
+
+## How do I help my customer configure their environment?
+
+You can find guidance for setting up [!INCLUDE [prodshort](developer/includes/prodshort.md)] in the application content. For more information, see [Setting Up Business Central](/dynamics365/business-central/setup).  
+
+You can also find relevant content on the [Microsoft Learn site](/learn/browse/?products=dynamics-business-central).
 
 ## How can I troubleshoot my customers' online tenants?
 
-You can use the **Help and Support** page in your customers' tenants to find technical information, and they can use that page to contact you. For more information, see [Configuring Technical Support for [!INCLUDE[prodlong](includes/prodlong.md)]](technical-support.md).  
+You can use the **Help and Support** page in your customers' tenants to find technical information, and they can use that page to contact you. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
+
+## How does Microsoft handle database sizes?
+
+For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in the database. If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
+
+The limit for the size of each tenant's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.  
 
 ## See Also
 
@@ -54,4 +66,5 @@ You can use the **Help and Support** page in your customers' tenants to find tec
 [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md)  
 [Dynamics 365 Business Central Compliance](/dynamics365/business-central/compliance/compliance-overview)  
 [FAQ for Dynamics 365 Update Policies](/dynamics365/get-started/faq-update-policy)  
+[Dynamics 365 Resources](https://dynamics.microsoft.com/resources/)  
 [Welcome to [!INCLUDE[prodlong](includes/prodlong.md)]](/dynamics365/business-central/index)  

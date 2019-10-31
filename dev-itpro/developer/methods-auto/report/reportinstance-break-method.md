@@ -2,7 +2,7 @@
 title: "Break Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,10 +53,10 @@ An instance of the [Report](report-data-type.md) data type.
 MyVar := 0;  
 REPEAT  
   MyVar := MyVar + 1;  
-  IF MyVar = 5 THEN  
+  if MyVar = 5 then  
     CurrReport.BREAK;  
   MESSAGE(Text000,MyVar);  
-UNTIL Myvar = 10;  
+until Myvar = 10;  
 MESSAGE('After REPEAT-UNTIL loop'); //This statement is never called.  
 ```  
 

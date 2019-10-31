@@ -2,7 +2,7 @@
 title: "Using the Development Environment from the Command Prompt"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,6 +11,9 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 # Using the Development Environment from the Command Prompt
+>[!NOTE]
+> [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
+
 You can start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] by running finsql.exe at the command prompt. You can also use the finsql.exe command to perform the several development tasks without using the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] client.  
 
   By default, finsql.exe is located at [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]\\RoleTailored Client\\.  
@@ -20,7 +23,7 @@ You can start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.
 The finsql.exe has the following syntax.  
 
 ```  
-finsql.exe [command=<command> | designobject=<object type> <object ID>,] [servername=<server>,] [collation=<collation>,] [database=<database>,] [file=<file>,] [filter=<filter>,] [generatesymbolreference=<yes|no>,] [importaction=<default|overwrite|skip|0|1|2>,] [langid=<ID>,] [logfile=<logfile>,] [navservername=<name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [ntauthentication=<yes|no|0|1>,] [objectcache=<cache>,] [password=<password>,] [showalldesignercolumns=<yes|no|0|1>,] [suppressbuildsearchindex=<yes|no|0|1>,] [synchronizeschemachanges=<yes|no|force>,] [temppath=<path>,] [tenant=<tenant ID>,] [unicode=<yes|no|0|1>,] [useoldeditor=<yes|no>,] [username=<user name>,]
+finsql.exe [command=<command> | designobject=<object type> <object ID>][,servername=<server>][,collation=<collation>][,database=<database>][,file=<file>][,filter=<filter>][,generatesymbolreference=<yes|no>][,importaction=<default|overwrite|skip|0|1|2>][,langid=<ID>][,logfile=<logfile>][,navservername=<name>][,navserverinstance=<instance>][,navservermanagementport=<port>][,ntauthentication=<yes|no|0|1>][,objectcache=<cache>][,password=<password>][,showalldesignercolumns=<yes|no|0|1>][,suppressbuildsearchindex=<yes|no|0|1>][,synchronizeschemachanges=<yes|no|force>][,temppath=<path>][,tenant=<tenant ID>][,unicode=<yes|no|0|1>][,useoldeditor=<yes|no>][,username=<user name>,]
 ``` 
 
 ### Syntax Key  
@@ -48,11 +51,11 @@ The following table describes the notation that is used to indicate syntax.
 |---------------|-----------------|---------------------|  
 |collation|The collation to use when you create a new database. The value must be one of the following:<br /><br /> \*  A full language culture name. For example, da-DK for Danish or hu-HU for Hungarian.<br /><br /> \*  A SQL Server collation name without case or accent. For example, Latin1\_General\_100.<br /><br /> \*  A SQL Server collation name with case and accent. For example, Danish\_Greenlandic\_100\_CS\_AI.<br /><br /> Use this optional parameter when you create a database with the *command=createdatabase* parameter.|[CreateDatabase](#CreateDatabase)|  
 |command|The development command that you want to run. The possible values are as follows:<br /><br /> [BuildVirtualMetadata](#BuildVirtualMetadata)<br />[CreateDatabase](#CreateDatabase)<br />[UpgradeDatabase](#UpgradeDatabase)<br /> [CompileObjects](#CompileObjects)<br />[DeleteObjects](#DeleteObjects)<br />[ExportObjects](#ExportObjects)<br />[ImportObjects](#ImportObjects)<br />[ExportLangModule](#ExportLangModule)<br />[ImportLangModule](#ImportLangModule)<br />[ExportTranslate](#ExportTranslate)<br />[ImportTranslate](#ImportTranslate)<br />[ExportToNewSyntax](#ExportToNewSyntax)<br />[GetBuildVersion](#GetBuildVersion)<br /> [GenerateSymbolReference](#GenerateSymbolReference)|Not applicable|  
-|database|If you use the *command=CreateDatabase* parameter, then the *database* parameter specifies the name of the new database that you want to create. In this case, the *database* parameter is required.<br /><br /> For all other commands, the *database* parameter specifies the database that you want to open.<br /><br /> If you do not specify both the *servername* and the *database* parameter, then the database server and database that are stored in the .zup file are used. If you do not specify the *database* parameter but you do specify the *servername* parameter, then the **Open Database** window opens so that you can specify the database name.<br /><br /> For more information, see [Saving Setup Parameters in the Zup File](https://docs.microsoft.com/en-us/dynamics-nav/saving-setup-parameters-in-the-zup-file).|All|  
+|database|If you use the *command=CreateDatabase* parameter, then the *database* parameter specifies the name of the new database that you want to create. In this case, the *database* parameter is required.<br /><br /> For all other commands, the *database* parameter specifies the database that you want to open.<br /><br /> If you do not specify both the *servername* and the *database* parameter, then the database server and database that are stored in the .zup file are used. If you do not specify the *database* parameter but you do specify the *servername* parameter, then the **Open Database** window opens so that you can specify the database name.<br /><br /> For more information, see [Saving Setup Parameters in the Zup File](https://docs.microsoft.com/dynamics-nav/saving-setup-parameters-in-the-zup-file).|All|  
 |designobject|See [DesignObject](#DesignObject)|Not applicable|  
 |file|The path and file name of the file that is used for exporting data to or importing data from. The file type depends on the command.|[CreateDatabase](#CreateDatabase)<br /><br /> [ExportObjects](#ExportObjects)<br /><br /> [ImportObjects](#ImportObjects)<br /><br /> [ExportLangModule](#ExportLangModule)<br /><br /> [ImportLangModule](#ImportLangModule)<br /><br /> [ExportTranslate](#ExportTranslate)<br /><br /> [ImportTranslate](#ImportTranslate)|  
 |filter|A filter on the **Object** table.<br /><br /> Use this parameter to specify which objects the command applies to.|[CompileObjects](#CompileObjects)<br /><br /> [CreateLanguage](#CreateLanguage)<br /><br /> [ExportObjects](#ExportObjects)<br /><br /> [ExportTranslate](#ExportTranslate)|  
-|id|Specifies the path and file name of the .zup file for storing setup parameters. By default, the setup parameters are stored in and retrieved from the fin.zup file. If you specify the *id* parameter, then the setup parameters are stored in and retrieved from a file that is named \<*id*>.zup.<br /><br /> By default, the fin.zup file is located at C:\\users\\*\<user name>*\\AppData\\Roaming\\. To change the location of the .zup file, specify the path and ID in the *id* parameter.<br /><br /> For example, the following command sets the path and file name of the .zup file to C:\\mynavfin.zup:<br /><br /> `finsql.exe id="C:\mynavfin.zup"`<br /><br /> For more information, see [Saving Setup Parameters in the Zup File](https://docs.microsoft.com/en-us/dynamics-nav/saving-setup-parameters-in-the-zup-file).|None. You use this as a stand-alone parameter with the finslg.exe.|  
+|id|Specifies the path and file name of the .zup file for storing setup parameters. By default, the setup parameters are stored in and retrieved from the fin.zup file. If you specify the *id* parameter, then the setup parameters are stored in and retrieved from a file that is named \<*id*>.zup.<br /><br /> By default, the fin.zup file is located at C:\\users\\*\<user name>*\\AppData\\Roaming\\. To change the location of the .zup file, specify the path and ID in the *id* parameter.<br /><br /> For example, the following command sets the path and file name of the .zup file to C:\\mynavfin.zup:<br /><br /> `finsql.exe id="C:\mynavfin.zup"`<br /><br /> For more information, see [Saving Setup Parameters in the Zup File](https://docs.microsoft.com/dynamics-nav/saving-setup-parameters-in-the-zup-file).|None. You use this as a stand-alone parameter with the finslg.exe.|  
 |importaction|Specifies how to handle conflicts with existing objects when you import from a .fob file. The possible values are:<br /><br /> \* **default** or **0** \(default\) – If there is a conflict, then an error is logged in the log file and no objects from the file are imported.<br /><br /> \* **overwrite** or **1** – If there is a conflict, then overwrite the existing object with the object in the import file.<br /><br /> \* **skip** or **2** - If there is a conflict, then skip the object. The existing object remains unchanged.|[ImportObjects](#ImportObjects)|  
 |langid|Specifies the standard Windows three-letter ID of the language.|[CreateLanguage](#CreateLanguage)<br /><br /> [ExportLangModule](#ExportLangModule)|  
 |logfile|Specifies the path and file name for the file that contains error messages that result from running finsql.exe with the *command* parameter. If there are no errors, then a log file is not created.|All|  
@@ -62,7 +65,7 @@ The following table describes the notation that is used to indicate syntax.
 |ntauthentication|Specifies if you want to use NT authentication. The possible values are **yes**, **no**, **1**, or **0**. If you specify the *username* and *password* parameters, then you must specify **ntauthentication=no** or **ntauthentication=0**.|All|  
 |objectcache|Specifies the size of the object cache, in kilobytes. Objects such as code, descriptions, and windows that are used on the computer that is running the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] are stored in the object cache.<br /><br /> The default value is 32000.<br /><br /> For example, the following command sets the object cache to 50000:<br /><br /> `finsql.exe objectcache=50000`<br /><br /> You can also set the object cache from the **Options** window in the Tools menu of the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].|None. You use this as a stand-alone parameter with the finsql.exe.|  
 |password|Specifies the password to use with the *username* parameter to authenticate to the database. If you do not specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.|All|  
-|servername|Specifies the name of the database server.<br /><br /> If you do not specify both the *servername* parameter and the *database* parameter, then the database server and database that are stored in the .zup file are used. If you do not specify the *servername* parameter but you do specify the *database* parameter, then the **Open Database** window opens so that you can specify the database server name.<br /><br /> For more information, see [Saving Setup Parameters in the Zup File](https://docs.microsoft.com/en-us/dynamics-nav/saving-setup-parameters-in-the-zup-file).|All|  
+|servername|Specifies the name of the database server.<br /><br /> If you do not specify both the *servername* parameter and the *database* parameter, then the database server and database that are stored in the .zup file are used. If you do not specify the *servername* parameter but you do specify the *database* parameter, then the **Open Database** window opens so that you can specify the database server name.<br /><br /> For more information, see [Saving Setup Parameters in the Zup File](https://docs.microsoft.com/dynamics-nav/saving-setup-parameters-in-the-zup-file).|All|  
 |synchronizeschemachanges|Synchronizes table schema changes for all tables in the database. This is useful when you upgrade from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] or when you made changes to a table or multiple tables previously and chose to synchronize later. For more information, see [Synchronizing the Tenant Database with the Application Database](../administration/synchronize-tenant-database-and-application-database.md).|All|  
 |temppath|Specifies the path of the location to store temporary files that are created while [!INCLUDE[prodshort](../developer/includes/prodshort.md)] runs. These files are automatically deleted when [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is closed.<br /><br /> By default, these files are put in the Temp folder for the user, such as \<C:\\Users\\*\<user name>*\\AppData\\Local\\Temp>.<br /><br /> For example, the following command sets the temporary file path to C:\\Temp:<br /><br /> `finsql.exe temppath="c:\temp"`<br /><br /> You can also set the temporary file path from the **Options** window in the Tools menu of the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].|None. You use this as a stand-alone parameter with the finsql.exe.|  
 |tenant|Specifies the ID of the tenant that is accessed when you run objects from the development environment. If your solution is not set up to deploy in a multitenant deployment architecture, leave the parameter empty.|[CompileObjects](#CompileObjects)<br /><br /> [DeleteObjects](#DeleteObjects)<br /><br /> [ImportObjects](#ImportObjects)|  
@@ -77,14 +80,14 @@ Regenerates C\# and metadata information in [!INCLUDE[prodshort](../developer/in
 ### Syntax  
 
 ```  
-finsql.exe command=buildvirtualmetadata, langid=<langid>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
+finsql.exe command=buildvirtualmetadata,langid=<langid>[,servername=<server>][,database=<database>][,logfile=<path and filename>][,username=<user name>][,password=<password>][,ntauthentication=<yes|no|0|1>]  
 ```  
 
 ### Example  
  This example builds metadata for virtual tables in the *Demo Database* database.  
 
 ```  
-finsql.exe command=buildvirtualmetadata, servername=TestComputer01\BCDEMO, database="Demo Database"  
+finsql.exe command=buildvirtualmetadata,servername=TestComputer01\BCDEMO,database="Demo Database"  
 ```  
 
 ## <a name="CreateDatabase"></a>CreateDatabase
@@ -93,7 +96,7 @@ Creates a new database for [!INCLUDE[prodshort](../developer/includes/prodshort.
 ### Syntax  
   
 ```  
-finsql.exe command=createdatabase, [servername=<server>,] [database=<database>,] [collation=<collation>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
+finsql.exe command=createdatabase[,servername=<server>][,database=<database>][,collation=<collation>][,logfile=<path and filename>][,username=<user name>][,password=<password>][,ntauthentication=<yes|no|0|1>]  
 ```  
 
 *collation*  
@@ -108,7 +111,7 @@ finsql.exe command=createdatabase, [servername=<server>,] [database=<database>,]
  This example creates a database on a SQL server that is named TestComputer01\\BCDEMO. The new database is given the name NAV Danish Database and uses the collation da-DK.  
   
 ```  
-finsql.exe command=createdatabase, servername=TestComputer01\BCDEMO, database="NAV Danish Database", collation=da-dk  
+finsql.exe command=createdatabase,servername=TestComputer01\BCDEMO,database="NAV Danish Database",collation=da-dk  
 ```  
 
 ## <a name="CompileObjects"></a>CompileObjects
@@ -117,7 +120,7 @@ Compiles objects from the specified database.
 ### Syntax  
 
 ```  
-finsql.exe command=compileobjects, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [tenant=<tenant ID>]  
+finsql.exe command=compileobjects[,servername=<server>][,database=<database>][,filter=<filter>][,logfile=<path and filename>][,username=<user name>][,password=<password>][,ntauthentication=<yes|no|0|1>][,synchronizeschemachanges=<yes|no|force>][,navservername=<server name>][,navserverinstance=<instance>][,navservermanagementport=<port>][,tenant=<tenant ID>]  
 ```  
 
 *synchronizeschemachanges*  
@@ -126,7 +129,7 @@ Specifies how to synchronize table definition changes in the business \(tenant\)
 
 |[!INCLUDE[bp_tableoption](../developer/includes/bp_tableoption_md.md)]|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |----------------------------------|---------------------------------------|  
-|**yes**|Before applying changes to the business data table, [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] validates the changed table definition to check for destructive changes to the table. This includes changes that require that data is deleted in the fields of the business data table which are affected by the changes before the changes can be applied.<br /><br /> -   If there are no destructive changes to the table, then the schema changes are applied to the business data table immediately.<br />-   If there are destructive changes, [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] checks that there are table synchronization instructions in an upgrade codeunit. If there are instructions, then the schema changes are applied to the business database table according to the instructions. If there are no instructions, then an error message appears. The table definition changes are not saved and the schema changes are not applied.|  
+|**yes**|Before applying changes to the business data table, [!INCLUDE[server](../developer/includes/server.md)] validates the changed table definition to check for destructive changes to the table. This includes changes that require that data is deleted in the fields of the business data table which are affected by the changes before the changes can be applied.<br /><br /> -   If there are no destructive changes to the table, then the schema changes are applied to the business data table immediately.<br />-   If there are destructive changes, [!INCLUDE[server](../developer/includes/server.md)] checks that there are table synchronization instructions in an upgrade codeunit. If there are instructions, then the schema changes are applied to the business database table according to the instructions. If there are no instructions, then an error message appears. The table definition changes are not saved and the schema changes are not applied.|  
 |**no**|Table definition changes are saved and compiled in the application but the changes are not validated or applied to the business data table. You synchronize the table schema later by doing one of the following:<br /><br /> -   Save or compile the table from Object Designer in [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] and choose either the **Now - with validation** or **Force** synchronization option.<br />-   Use the **Sync. Schema for All Tables** option on the **Tools** menu.<br />-   Run the Sync-NAVTenant cmdlet from the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)].|  
 |force|Table definition changes are applied to the business data table schema without validation. For destructive changes, data in columns of the business data table that are affected by changes will be deleted.<br /><br /> This option ignores any table synchronization instructions for the table in upgrade codeunits.|  
 
@@ -134,15 +137,15 @@ Specifies how to synchronize table definition changes in the business \(tenant\)
 
 *navservername*  
 
- Specifies the name of the server that hosts the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, such as **MyServer**.  
+ Specifies the name of the server that hosts the [!INCLUDE[server](../developer/includes/server.md)] instance, such as **MyServer**.  
 
 *navserverinstance*  
 
- Specifies the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance that is being used, such as [!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)].  
+ Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance that is being used, such as [!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)].  
 
  *navservermanagementport*  
 
- Specifies the port on the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] server that the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows PowerShell cmdlets access, such as **7045**.  
+ Specifies the port on the [!INCLUDE[server](../developer/includes/server.md)] server that the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows PowerShell cmdlets access, such as **7045**.  
 
  *tenant*  
 
@@ -157,7 +160,7 @@ Specifies how to synchronize table definition changes in the business \(tenant\)
  This example shows how to run a command to compile all tables and codeunits that have an ID that is greater than or equal to 500 and less than or equal to 1000.  
 
 ```  
-finsql.exe command=compileobjects, servername=TestComputer01\BCDEMO, database="Demo Database BC", filter="Type=Table|Codeunit;ID=500..1000"  
+finsql.exe command=compileobjects,servername=TestComputer01\BCDEMO,database="Demo Database BC",filter="Type=Table|Codeunit;ID=500..1000"  
 ```  
 
 ## <a name="CreateLanguage"></a>CreateLanguage
@@ -166,7 +169,7 @@ Creates captions on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] ob
 ### Syntax  
   
 ```  
-finsql.exe command=createlanguage, langid=<langid>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
+finsql.exe command=createlanguage,langid=<langid>[,servername=<server>][,database=<database>][,filter=<filter>][,logfile=<path and filename>][,username=<user name>][,password=<password>][,ntauthentication=<yes|no|0|1>]  
 ```  
 
 ### Parameters  
@@ -184,7 +187,7 @@ finsql.exe command=createlanguage, langid=<langid>, [servername=<server>,] [data
  This example adds captions for Danish \(DAN\) on all table and page objects with IDs from 1 to 10000 in the *BC Danish Database*.  
   
 ```  
-finsql.exe command=createlanguage, langid=DAN, servername=TestComputer01\BCDEMO, database="BC Danish Database", filter="Table|Page;ID=1..10000"  
+finsql.exe command=createlanguage,langid=DAN,servername=TestComputer01\BCDEMO,database="BC Danish Database",filter="Table|Page;ID=1..10000"  
 ```  
 
 ## <a name="DeleteObjects"></a>DeleteObjects
@@ -193,7 +196,7 @@ Deletes objects from the specified [!INCLUDE[prodshort](../developer/includes/pr
 ### Syntax  
 
 ```  
-finsql.exe command=deleteobjects, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [tenant=<tenant ID>]  
+finsql.exe command=deleteobjects[,servername=<server>][,database=<database>][,filter=<filter>][,logfile=<path and filename>][,username=<user name>][,password=<password>][,ntauthentication=<yes|no|0|1>][,synchronizeschemachanges=<yes|no|force>][,navservername=<server name>][,navserverinstance=<instance>][,navservermanagementport=<port>][,tenant=<tenant ID>]  
 ```  
 
 ### Remarks  
@@ -203,7 +206,7 @@ finsql.exe command=deleteobjects, [servername=<server>,] [database=<database>,] 
  This example shows how to run the DeleteObjects command to delete all tables and codeunits that have an ID that is greater than or equal to 500 and less than or equal to 1000.  
 
 ```  
-finsql.exe command=deleteobjects, servername=TestComputer01\BCDEMO, database="Demo Database BC", filter="Type=Table|Codeunit;ID=500..1000"  
+finsql.exe command=deleteobjects,servername=TestComputer01\BCDEMO,database="Demo Database BC",filter="Type=Table|Codeunit;ID=500..1000"  
 ```  
 
 ## <a name="DesignObject"></a>DesignObject
@@ -212,7 +215,7 @@ Opens the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] a
 ### Syntax  
 
 ```  
-finsql.exe designobject=<object type> <object ID>[, servername=<server>,] [database=<database>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
+finsql.exe designobject=<object type> <object ID>[,servername=<server>][,database=<database>][,username=<user name>][,password=<password>][,ntauthentication=<yes|no|0|1>]  
 ```  
 
 *designobject*  
@@ -231,13 +234,13 @@ finsql.exe designobject=<object type> <object ID>[, servername=<server>,] [datab
 
 - XMLport  
 
-  The possible values of the object ID are 0 and any ID of an existing object. If you specify 0 for the object ID, then you open a new object to design.  
+  The possible values of the object ID are 0 and any ID of an existing object. If you specify 0 for the object ID,then you open a new object to design.  
 
 ### Example  
-This example shows how to run a command to open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] and open Page Designer to design page 21, **Customer Card**.  
+This example shows how to run a command to open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] and open Page Designer to design page 21,  **Customer Card**.  
 
 ```  
-finsql.exe servername=TestComputer01\BCDEMO, database="Demo Database BC", designobject=Page 21  
+finsql.exe servername=TestComputer01\BCDEMO,database="Demo Database BC",designobject=Page 21  
 ```
 
 ## <a name="ExportLangModule"></a>ExportLangModule
@@ -246,7 +249,7 @@ Exports a language module from the specified database to a file.
 ### Syntax  
 
 ```  
-finsql.exe command=exportlangmodule, file=<exportfile>, langid=<langid>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>]  
+finsql.exe command=exportlangmodule,file=<exportfile>,langid=<langid>[,servername=<server>][,database=<database>][,logfile=<path and filename>][,username=<username>][,password=<password>][,ntauthentication=<yes|no|1|0>]  
 ```  
 
 ### Parameters  
@@ -270,7 +273,7 @@ finsql.exe command=exportlangmodule, file=<exportfile>, langid=<langid>, [server
  This example shows how to run the ExportLangmodule command to export a language module for Danish \(DAN\) from the *Demo Database NAV \(10-0\)* database.  
 
 ```  
-finsql.exe command=exportlangmodule, langid=DAN, file=C:\DANlanguagemodule.flm, servername=TestComputer01\BCDEMO, database="Demo Database BC", username=dbadmin, password=P@ssword, ntauthentication=no, logfile=C:\ExportDANlanguagemoduleLog.txt  
+finsql.exe command=exportlangmodule,langid=DAN,file=C:\DANlanguagemodule.flm,servername=TestComputer01\BCDEMO,database="Demo Database BC",username=dbadmin,password=P@ssword,ntauthentication=no,logfile=C:\ExportDANlanguagemoduleLog.txt  
 ```
 
 ## <a name="ExportObjects"></a>ExportObjects
@@ -279,7 +282,7 @@ Exports objects from the specified database.
 ### Syntax  
 
 ```  
-finsql.exe command=exportobjects, file=<exportfile>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [filter=<filter>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>]  
+finsql.exe command=exportobjects,file=<exportfile>[,servername=<server>][,database=<database>][,logfile=<path and filename>][,filter=<filter>][,username=<username>][,password=<password>][,ntauthentication=<yes|no|1|0>]  
 ```  
 
 ### Parameters  
@@ -304,7 +307,7 @@ finsql.exe command=exportobjects, file=<exportfile>, [servername=<server>,] [dat
  This example shows how to run a command to export all queries in a given ID range, using the specified user name and password.  
 
 ```  
-finsql.exe command=exportobjects, file=C:\QueryExport.txt, servername=TestComputer01\BCDEMO, database="Demo Database BC", filter="Type=Query;ID=50001..50010", username=dbadmin, password=P@ssword, ntauthentication=no, logfile=C:\QueryExportLog.txt  
+finsql.exe command=exportobjects,file=C:\QueryExport.txt,servername=TestComputer01\BCDEMO,database="Demo Database BC",filter="Type=Query;ID=50001..50010",username=dbadmin,password=P@ssword,ntauthentication=no,logfile=C:\QueryExportLog.txt  
 ```
 
 ## <a name="ExportToNewSyntax"></a>ExportToNewSyntax
@@ -313,7 +316,7 @@ Export application objects to a .txt file in the syntax that is supported by the
 ### Syntax  
 
 ```  
-finsql.exe command=exporttonewsyntax, file=<filename.txt>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>]  
+finsql.exe command=exporttonewsyntax,file=<filename.txt>[,servername=<server>][,database=<database>][,filter=<filter>][,logfile=<path and filename>][,username=<username>][,password=<password>][,ntauthentication=<yes|no|1|0>]  
 ```  
 
 ### Parameters  
@@ -326,7 +329,7 @@ finsql.exe command=exporttonewsyntax, file=<filename.txt>, [servername=<server>,
  The following example exports the table **225** from the Demo Database NAV database:
  
 ```
-finsql.exe command=exporttonewsyntax, file=exportedobjects.txt, database="Demo Database NAV", servername=.\BCDEMO ,filter=type=table;ID=225
+finsql.exe command=exporttonewsyntax,file=exportedobjects.txt,database="Demo Database NAV",servername=.\BCDEMO ,filter=type=table;ID=225
 ```
   
 ## <a name="ExportTranslate"></a>ExportTranslate
@@ -335,7 +338,7 @@ Exports UI text strings of objects from a specified [!INCLUDE[prodshort](../deve
 ### Syntax  
 
 ```  
-finsql.exe command=exporttranslate, file=<exportfile>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>]  
+finsql.exe command=exporttranslate,file=<exportfile>[,servername=<server>][,database=<database>][,filter=<filter>][,logfile=<path and filename>][,username=<username>][,password=<password>][,ntauthentication=<yes|no|1|0>]  
 ```  
 
 ### Parameters  
@@ -350,7 +353,7 @@ finsql.exe command=exporttranslate, file=<exportfile>, [servername=<server>,] [d
  This example shows how to run the ExportTranslate command to export text strings from the *Demo Database BC* database to a .txt type file that has the path and file name *C:\\bctextstrings.txt*.  
 
 ```  
-finsql.exe command=exporttranslate, file=C:\bctextstrings.txt, servername=TestComputer01\BCDEMO, database="Demo Database BC"  
+finsql.exe command=exporttranslate,file=C:\bctextstrings.txt,servername=TestComputer01\BCDEMO,database="Demo Database BC"  
 ```  
 
 ## <a name="GenerateSymbolReference"></a>Generatesymbolreference
@@ -359,12 +362,12 @@ Generates object symbols for developing against the objects in the AL Developmen
 
 ### Syntax
 ```
-finsql.exe command=generatesymbolreference, Database=<database name>, servername=<servername>
+finsql.exe command=generatesymbolreference,Database=<database name>,servername=<servername>
 ```
 
 ### Example
 ```
-finsql.exe Command=generatesymbolreference, Database="Demo Database BC", ServerName=.\BCDEMO
+finsql.exe Command=generatesymbolreference,Database="Demo Database BC",ServerName=.\BCDEMO
 ```
 
 ## <a name="GetBuildVersion"></a>GetBuildVersion
@@ -373,7 +376,7 @@ Gets the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product name 
 ### Syntax  
   
 ```  
-finsql.exe command=getbuildversion, file=<versionfile>[, logfile=<path and filename>]  
+finsql.exe command=getbuildversion,file=<versionfile>[,logfile=<path and filename>]  
 ```  
   
 ### Parameters  
@@ -395,7 +398,7 @@ finsql.exe command=getbuildversion, file=<versionfile>[, logfile=<path and filen
  This example shows how to run the GetBuildVersions command to get the product name and version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that is currently installed on the computer. The example saves the build version information to a .txt type file that has the path and file name *C:\\temp\\navbuildversion.txt*. The example also specifies a log file that has the path and file name *C:\\temp\\bcbuildversionlog.txt*  
   
 ```  
-finsql.exe command=getbuildversion, file=C:\temp\navbuildversion.txt, logfile= C:\temp\bcbuildversionlog.txt  
+finsql.exe command=getbuildversion,file=C:\temp\navbuildversion.txt,logfile= C:\temp\bcbuildversionlog.txt  
 ```  
   
  The build version file, in this case *bcbuildversion.txt*, includes information that is similar to the following:  
@@ -410,7 +413,7 @@ Imports a language module from a file to the specified [!INCLUDE[prodshort](../d
 ### Syntax  
 
 ```  
-finsql.exe command=importlangmodule, file=<importfile>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>] 
+finsql.exe command=importlangmodule,file=<importfile>[,servername=<server>][,database=<database>][,filter=<filter>][,logfile=<path and filename>][,username=<username>][,password=<password>][,ntauthentication=<yes|no|1|0>] 
 ```  
 
 ### Parameters  
@@ -427,7 +430,7 @@ finsql.exe command=importlangmodule, file=<importfile>, [servername=<server>,] [
  This example shows how to run the ImportLangModule command to import a language module for Danish \(DAN\) to the *Demo Database NAV \(10-0\)* database. The language module file path is *C:\\DANlanguagemodule.flm*.  
 
 ```  
-finsql.exe command=importlangmodule, file=C:\DANlanguagemodule.flm, servername=TestComputer01\BCDEMO, database="Demo Database BC"  
+finsql.exe command=importlangmodule,file=C:\DANlanguagemodule.flm,servername=TestComputer01\BCDEMO,database="Demo Database BC"  
 ```
 
 ## <a name="ImportObjects"></a>ImportObjects
@@ -436,7 +439,7 @@ Imports objects from a file to the specified database.
 ### Syntax  
   
 ```  
-finsql.exe command=importobjects, file=<importfile>, [servername=<server>,] [database=<database>,] [logfile=<path and filename>,] [importaction=<default|overwrite|skip|0|1|2>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>,] [synchronizeschemachanges=<yes|no|force>,] [navservername=<server name>,] [navserverinstance=<instance>,] [navservermanagementport=<port>,] [suppressbuildsearchindex=<yes|no|1|0>,] [tenant=<tenant ID>]  
+finsql.exe command=importobjects,file=<importfile>[,servername=<server>][,database=<database>][,logfile=<path and filename>][,importaction=<default|overwrite|skip|0|1|2>][,username=<username>][,password=<password>][,ntauthentication=<yes|no|1|0>][,synchronizeschemachanges=<yes|no|force>][,navservername=<server name>][,navserverinstance=<instance>][,navservermanagementport=<port>][,suppressbuildsearchindex=<yes|no|1|0>][,tenant=<tenant ID>]  
 ```
 
 ### Parameters  
@@ -481,7 +484,7 @@ Setting `suppressbuildsearchindex=yes` can be useful if you are importing severa
  This example shows how to run a command to import the objects from a .fob file into [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If any of the objects to import already exist in the database, then overwrite them with the objects from the import file.  
   
 ```  
-finsql.exe command=importobjects, file=C:\NewObjects.fob, servername=TestComputer01, database="Demo Database BC", ImportAction=overwrite  
+finsql.exe command=importobjects,file=C:\NewObjects.fob,servername=TestComputer01,database="Demo Database BC",ImportAction=overwrite  
 ```  
 ## <a name="ImportTranslate"></a>ImportTranslate
 Imports UI text strings for objects from a text file to a specified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
@@ -489,7 +492,7 @@ Imports UI text strings for objects from a text file to a specified [!INCLUDE[pr
 ### Syntax  
 
 ```  
-finsql.exe command=importtranslate, file=<importfile>, [servername=<server>,] [database=<database>,] [filter=<filter>,] [logfile=<path and filename>,] [username=<username>,] [password=<password>,] [ntauthentication=<yes|no|1|0>]  
+finsql.exe command=importtranslate,file=<importfile>[,servername=<server>][,database=<database>][,filter=<filter>][,logfile=<path and filename>][,username=<username>][,password=<password>][,ntauthentication=<yes|no|1|0>]  
 ```  
 
 ### Parameters  
@@ -504,7 +507,7 @@ finsql.exe command=importtranslate, file=<importfile>, [servername=<server>,] [d
  This example shows how to run the ImportTranslate command to import text strings from a text file to the *Demo Database NAV \(10-0\)* database. The text file that has the path and file name *C:\\bctextstrings.txt*.  
 
 ```  
-finsql.exe command=importtranslate, file=C:\bctextstrings.txt, servername=TestComputer01\BCDEMO, database="Demo Database BC"  
+finsql.exe command=importtranslate,file=C:\bctextstrings.txt,servername=TestComputer01\BCDEMO,database="Demo Database BC"  
 ```  
 
 ## <a name="UpgradeDatabase"></a>UpgradeDatabase
@@ -513,20 +516,20 @@ Upgrades an existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] d
 ### Syntax  
   
 ```  
-finsql.exe command=upgradedatabase, servername=<server>, database=<database>[, logfile=<path and filename>,] [username=<user name>,] [password=<password>,] [ntauthentication=<yes|no|0|1>]  
+finsql.exe command=upgradedatabase, servername=<server>, database=<database>[, logfile=<path and filename>][,username=<user name>][,password=<password>][,ntauthentication=<yes|no|0|1>]  
 ```  
   
 ### Remarks  
  You use the **UpgradeDatabase** command together with the finsql.exe executable when you want to convert a database from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to the new version. For example, if you are upgrading several databases, you can create scripts that help you repeat the steps. finsql.exe is the executable file that runs the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]. By default, finsql.exe is located at [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]RoleTailored Client\\.  
   
 > [!IMPORTANT]  
->  The upgrade is not completed when you have run this command. You must compile all objects, and you must connect to a [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance. For more information, see [Converting a Database](../upgrade/Converting-a-Database.md).  
+>  The upgrade is not completed when you have run this command. You must compile all objects, and you must connect to a [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see [Converting a Database](../upgrade/Converting-a-Database.md).  
   
 ### Example  
  This example upgrades the *NAV Danish Database* database on the *TestComputer01\\BCDEMO* SQL Server instance.  
   
 ```  
-finsql.exe command=upgradedatabase, servername=TestComputer01\BCDEMO, database="BC Danish Database"  
+finsql.exe command=upgradedatabase,servername=TestComputer01\BCDEMO,database="BC Danish Database"  
 ```  
  
 ## See Also  

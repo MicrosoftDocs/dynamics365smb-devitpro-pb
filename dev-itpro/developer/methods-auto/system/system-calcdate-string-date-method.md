@@ -2,7 +2,7 @@
 title: "CalcDate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Calculates a new date that is based on a date expression and a reference date.
 
 ## Syntax
 ```
-NewDate :=   System.CalcDate(DateExpression: String, [Date: Date])
+NewDate :=   System.CalcDate(DateExpression: String [, Date: Date])
 ```
 > [!NOTE]  
 > This method can be invoked without specifying the data type name.  
@@ -105,7 +105,7 @@ Use this optional parameter to define a reference date. The default is the curre
 Expr1 := '<CQ+1M-10D>'; // Current quarter + 1 month - 10 days  
 Expr2 := '<-WD2>'; // The last weekday no.2, (last Tuesday)  
 Expr3 := '<CM+30D>'; // Current month + 30 days  
-RefDate := 052196D;  
+RefDate := 19960521D;  
 Date1 := CALCDATE(Expr1, RefDate);  
 Date2 := CALCDATE(Expr2, RefDate);  
 Date3 := CALCDATE(Expr3, RefDate);  

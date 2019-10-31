@@ -1,7 +1,7 @@
 ---
 title: "TableNo Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,7 +41,7 @@ codeunit 50100 MyCodeunit
 
 The signature of the `OnRun` trigger is `OnRun(var Rec : Record Item)`. 
 
-You can then use the `Rec` variable in the codeunit, and use the [Codeunit.RUN Method \(Codeunit\)](../methods/devenv-codeunit.RUN-method-codeunit.md) to execute the codeunit.  
+You can then use the `Rec` variable in the codeunit, and use the  [RUN Method \(Codeunit\)](../methods-auto/codeunit/codeunit-RUN-method.md) to execute the codeunit.  
   
 ## See Also  
- [Codeunit.RUN Method \(Codeunit\)](../methods/devenv-codeunit.RUN-method-codeunit.md)
+ [RUN Method \(Codeunit\)](../methods-auto/codeunit/codeunit-RUN-method.md)

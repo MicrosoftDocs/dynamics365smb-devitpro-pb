@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/20/2019
+ms.date: 10/01/2019
 ms.author: solsen
 ---
 
@@ -42,7 +42,7 @@ If successful, this method returns a ```204 No Content```.
 Here is an example of the request.
 
 ```json
-PATCH https://api.businesscentral.dynamics.com/v1.0/api/microsoft/automation/beta/companies({companyId})/extensionUpload(0)/content
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/extensionUpload(0)/content
 Authorization : Bearer {token}
 Content-type : application/octet-stream
 If-Match:-*
@@ -50,6 +50,7 @@ If-Match:-*
 
 ## See Also 
 [Introduction to Automation APIs](itpro-introduction-to-automation-apis.md)  
+[Extension Resource Type](dynamics-microsoft-automation-extension.md)
 [Get Extensions](dynamics-microsoft-automation-extension-get.md)  
 [Install extension](dynamics-microsoft-automation-extension-post.md)  
 [Uninstall extension](dynamics-microsoft-automation-extension-post.md)  

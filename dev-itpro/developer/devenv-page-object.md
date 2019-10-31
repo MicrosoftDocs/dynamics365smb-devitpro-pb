@@ -3,7 +3,7 @@ title: "Page Object"
 description: "Description of the page object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/24/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,13 +12,15 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-
 # Page Object
 Pages are the main way to display and organize visual data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. They are the primary object that a user will interact with and have a different behavior based on the type that you choose. Pages are designed independently of the device they are to be rendered on, and in this way the same page can be reused across phone, tablet, and web clients.
 
 The structure of a page is hierarchical and breaks down in to three sections. The first block contains metadata for the overall page; the type of the page and the source table it is showing data from. The next section; the layout, describes the visual parts on the page. The final section details the actions that are published on the page.
 
 When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you will follow the code layout for a page as shown in the page example below, but for more details on the individual controls and properties that are available, see [Page Property Overview](properties/devenv-page-property-overview.md).
+
+> [!IMPORTANT]  
+> Only pages with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
@@ -28,6 +30,9 @@ Typing the shortcut `tpage` will create the basic layout for a page object when 
 
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+## Views
+Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
 
 ## Page example
 
@@ -84,6 +89,7 @@ page 50101 SimpleCustomerCard
 ## See Also
 
 [AL Development Environment](devenv-reference-overview.md)  
+[Views](devenv-views.md)  
 [Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Page and Page Extension Properties Overview](properties/devenv-page-property-overview.md)  

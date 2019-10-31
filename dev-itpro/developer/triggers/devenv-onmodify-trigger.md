@@ -1,17 +1,14 @@
 ---
 title: "OnModify Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 66f54530-7318-4e43-8aea-ca18c04c5d18
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnModify Trigger
 Runs when a user modifies an existing record in a table.  

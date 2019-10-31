@@ -3,7 +3,7 @@ title: "API Query Type"
 description: "Description of the API query type used for exposing and viewing web service endpoints."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.author: solsen
 ---

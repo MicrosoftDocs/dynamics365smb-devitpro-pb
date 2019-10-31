@@ -3,7 +3,7 @@ title: "XMLport Object"
 description: "Description of the XMLport object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/06/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,12 +13,11 @@ ms.author: solsen
 --- 
 
 # XMLport Object
-XMLports are used to export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Sharing data between different computer systems is seamless when it is shared in XML format. Working with XML files can be tedious so the details of how the XML file is handled are encapsulated in XMLports.
+XMLports are used to export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Sharing data between different computer systems is seamless when it is shared in an XML format. Working with XML files can be tedious so the details of how the XML file is handled are encapsulated in XMLports.
 
-To use an XMLport to import or export data, you first create an XMLport object. You can run the XMLport from a page or codeunit object. 
+To use an XMLport to import or export data, you first create an XMLport object. Once created, you can run the XMLport from a page or codeunit object.
 
-> [!NOTE]  
-> In the [!INCLUDE[prodlong](includes/prodlong.md)] Web client, Request pages are not supported. Request pages are dialog boxes that enables the user to set a filter on the data, sort the data, or choose whether to export or import the data. If you try to run an XMLport with a Request page from the Web client, you receive an error that the XMLport page type is not supported.
+You can design XMLPorts to include a request page, which is a dialog box that enables the user to set a filter on the data, sort the data, or choose whether to export or import the data. For for information about request pages, see [Request Pages](devenv-request-pages.md).
 
 ## XMLport example
 The following example shows a page extension of the **Permission Sets** page that adds an action to the specified page calling the XMLport **ExportPermissionSet**. The XMLport exports the permission set data to an XML file. 
@@ -150,6 +149,7 @@ xmlport 50112 ExportPermissionSet
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[XMLport Overview](devenv-xmlport-overview.md)  
+[Using Namespaces with XMLports](devenv-using-namespaces-with-xmlports.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Report Object](devenv-report-object.md)  
-[XMLport Overview](devenv-xmlport-overview.md)

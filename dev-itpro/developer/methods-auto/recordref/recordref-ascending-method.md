@@ -2,7 +2,7 @@
 title: "Ascending Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,7 +45,7 @@ Specifies the order in which a search will be performed.
  This method works just like the [ASCENDING Method \(Record\)](../../methods/devenv-ascending-method-record.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SETVIEW Method \(RecordRef\)](../../methods/devenv-setview-method-recordref.md) sets a filter that includes sorting the data in ascending order. The ASCENDING method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **Yes** in a message box. This example requires that you create the following global variables and text constant.  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SETVIEW Method (RecordRef)](recordref-setview-method.md) sets a filter that includes sorting the data in ascending order. The ASCENDING method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **Yes** in a message box. This example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  
@@ -64,7 +64,7 @@ MESSAGE(Text000, IsAscending);
 ```  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SETVIEW Method \(RecordRef\)](../../methods/devenv-setview-method-recordref.md) sets a filter that includes sorting the data in descending order. The ASCENDING method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **No** in a message box because the sort order is descending. The ASCENDING method changes the sort order to ascending by setting the *SetAscending* parameter to **true**. The ASCENDING method checks the sort order again. This time **Yes** is displayed.  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SETVIEW Method (RecordRef)](recordref-setview-method.md) sets a filter that includes sorting the data in descending order. The ASCENDING method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **No** in a message box because the sort order is descending. The ASCENDING method changes the sort order to ascending by setting the *SetAscending* parameter to **true**. The ASCENDING method checks the sort order again. This time **Yes** is displayed.  
   
 ```  
 CustomerRecref.OPEN(18);  

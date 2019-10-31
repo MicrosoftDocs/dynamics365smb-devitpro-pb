@@ -4,7 +4,7 @@ description: "Description of the converter tool."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -31,7 +31,7 @@ It is **very** important that you compile the database to get the right result i
   ```finsql.exe Command=ExportToNewSyntax, File=exportedNewModifiedObjects.txt, Database="Demo Database NAV (13-0)", ServerName=.\NAVDEMO ,Filter=Type=table;ID=231```
 5. Run the Set-ObjectPropertiesFromMenuSuite cmdlet which will convert MenuSuite information on pages and reports in the generated AL objects to enable them for search. For more information, see [Making Pages and Reports Searchable in the Web client](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrade-pages-report-for-search)
 6. Create .delta files using the Compare-NAVApplicationObject powershell script. For more information, see [Generating DELTA Files](devenv-generating-delta-files.md).
-7. Go to the *\Program Files(x86)\Microsoft Dynamics 365 Business Central\130\RoleTailored Client* folder and locate the **txt2al.exe** converter tool. 
+7. Go to the *\Program Files(x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client* folder and locate the **txt2al.exe** converter tool. 
 8. Run the tool from the command line using the following syntax:  
 ```txt2al --source --target --rename --type --extensionStartId --injectDotNetAddIns --dotNetAddInsPackage --dotNetTypePrefix --translationFormat --addLegacyTranslationInfo```
 
@@ -39,7 +39,7 @@ It is **very** important that you compile the database to get the right result i
 
 |Parameter   |Description|
 |------------|-----------|
-|--source=Path |Required. The path of the directory containing the .delta  files.|
+|--source=Path |Required. The path of the directory containing the .delta files.|
 |--target=Path |Required. The path of the directory into which the converted AL files will be placed.|
 |--rename |Rename the output files to prevent clashes with the source .txt files.|
 |--type=ObjectType |The type of object to convert. Allowed values: Codeunit, Table, Page, Report, Query, XmlPort|

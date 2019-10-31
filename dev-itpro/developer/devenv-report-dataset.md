@@ -3,18 +3,14 @@ title: "Report Dataset"
 description: "The dataset determines the data extracted to print or display the information from the database."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
-
- 
 
 # Defining a Report Dataset
 You use a report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] to define the data model, or dataset, of a report. The dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. For more information, see [Report Object](devenv-report-object.md).
@@ -52,6 +48,7 @@ dataset
     }
 }
 ```
+
 ## See Also
 [Report Object](devenv-report-object.md)  
 [Reports Overview](devenv-reports.md)  

@@ -1,7 +1,7 @@
 ---
 title: "SubType Property (BLOB)"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,9 @@ Sets additional information about what will be contained in the field.
 |--------------------------|---------------|  
 |**Bitmap**                |For storing bitmaps|  
 |**Memo**                  |For storing memos|  
+|**Json**|For storing Json data|  
 |**User-Defined (default)**|For user defined information|  
+
  
 ## Syntax
 ```

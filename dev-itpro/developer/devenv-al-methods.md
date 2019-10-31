@@ -1,7 +1,7 @@
 ---
 title: "Working with AL Methods"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -74,7 +74,7 @@ In this case, the `CalculatePrice` method must return a value that is used in ev
 A method can also be run by using a method call statement. This statement only calls the method and does not return any value. The following is an example of calling a method named `MyRunMethod`:
 
 ```
-IF Quantity > 5 THEN
+if Quantity > 5 then
 MyRunMethod;
 ```
 
@@ -135,9 +135,9 @@ ReturnVal := MyMethod(Param1);
  In this example, MyMethod returns a Boolean value. You can use the return value in a conditional statement.  
   
 ```  
-IF (MyMethod(Param1)) THEN  
+if (MyMethod(Param1)) then  
   <Statement1>  
-ELSE  
+else  
   <Statement2>  
 ```
 

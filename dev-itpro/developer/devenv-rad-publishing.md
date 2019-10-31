@@ -3,7 +3,7 @@ title: "Working with Rapid Application Development"
 description: "Describes what Rapid Application Development is and how you publish using RAD."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.topic: article
 ms.prod: "dynamics-businesscentral"
@@ -11,6 +11,7 @@ ms.author: solsen
 ---
 
 # Working with Rapid Application Development
+
 Working with Visual Studio Code and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you can benefit from Rapid Application Development (RAD) on large code projects. RAD allows faster development on projects with a large number of files by doing a delta compilation and publishing only on those application objects that have changed during development in Visual Studio Code. RAD publishing is an interim state and does not replace a full publish. 
 
 ## How RAD works
@@ -29,9 +30,7 @@ A RAD published file will not contain the following files that are normally pack
 - Table data
 - Web service definitions  
 
-These files will need to be re-generated with full publishing (Ctrl+F5).
-
-A RAD file will be deleted as a result of a successful publishing.
+These files will need to be re-generated with full publishing (Ctrl+F5). A RAD file will be deleted as a result of a successful publishing.
 
 > [!NOTE]  
 > If RAD publishing fails, then you must do a full publishing before performing another RAD publishing. The final state of an application must be built using full publishing, and never with RAD publishing.

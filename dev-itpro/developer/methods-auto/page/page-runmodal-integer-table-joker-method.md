@@ -2,7 +2,7 @@
 title: "RunModal Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Creates, opens, and closes a page that you specify. When a page is run modally, 
 
 ## Syntax
 ```
-[Action := ]  Page.RunModal(Number: Integer, [Record: Record], [Field: Any])
+[Action := ]  Page.RunModal(Number: Integer [, Record: Record] [, Field: Any])
 ```
 ## Parameters
 *Number*  

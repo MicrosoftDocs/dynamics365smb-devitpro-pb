@@ -3,14 +3,12 @@ title: "Exporting Permission Sets"
 description: Export permission sets for Dynamics 365 for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/30/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 0ba68a20-d83a-4e4c-9938-dac7fa8f5461
-caps.latest.revision: 35
 ms.author: solsen
 ---
 
@@ -25,16 +23,15 @@ Permission sets that exist in [!INCLUDE[d365fin_long_md](includes/d365fin_long_m
 4. Save the file to your extension folder.
 5. Delete the permission sets from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
 
-You can generate a permission set file which contains permissions to all the files in your extension. This will make it easier to start setting up permissions for your app. You can do this by simply creating an extension with some objects. 
+You can generate a permission set file which contains permissions to all the files in your extension. This will make it easier to start setting up permissions for your app. You can do this by simply creating an extension with some objects as described below. 
 
 ## To export permission sets using Visual Studio Code
 
-1. In Visual Studio Code, open your extension.
-2. Create extension with some objects like Page, Report, Table, Query, Codeunit, or XmlPort.  
-3. Open the command palette using the `Ctrl+Shift+P` keys and select the **AL: Generate permission set containing current extension objects** command.  
+1. In Visual Studio Code, open your extension with objects; pages, reports, tables, queries, codeunits, and/or xmlports.  
+2. Open the command palette using the `Ctrl+Shift+P` keys and select the **AL: Generate permission set containing current extension objects** command.  
     > [!NOTE]  
     > If you do this repeatedly, Visual Studio Code will probe for overwriting the file, there is no support for merging manual corrections into newly generated content.
-4. Publish the app. 
+3. Publish the app. 
 
 Now, you have the XML file with default permissions to all your objects.
 

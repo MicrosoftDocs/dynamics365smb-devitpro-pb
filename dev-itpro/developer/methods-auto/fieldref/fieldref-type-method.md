@@ -2,7 +2,7 @@
 title: "Type Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,10 +53,10 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 ```  
   
 CustomerRecref.OPEN(DATABASE::Customer);  
-FOR i := 1 TO 5 DO BEGIN  
+for i := 1 to 5 do begin  
   MyFieldRef := CustomerRecref.FIELD(i);  
   MESSAGE(Text000, i, MyFieldRef.TYPE);  
-END;  
+end;  
   
 ```  
   

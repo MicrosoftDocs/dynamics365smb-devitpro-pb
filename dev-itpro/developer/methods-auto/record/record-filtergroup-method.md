@@ -2,7 +2,7 @@
 title: "FilterGroup Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/25/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -92,7 +92,7 @@ This example requires that you create the following variables and text constants
 
 ```
 var
-        myRecord: Record Customer;
+        Customer: Record Customer;
         varOrigGroup: Integer;
         varCurrGroup: Integer;
 ```  
@@ -106,10 +106,10 @@ var
 <br>  
 
 ```  
-MyRecord.SetFilter("No.", '10000..20000');  
-varOrigGroup := MyRecord.FilterGroup;  
+Customer.SetFilter("No.", '10000..20000');  
+varOrigGroup := Customer.FilterGroup;  
 Message(Text000, varOrigGroup);  
-varCurrGroup := MyRecord.FilterGroup(1);  
+varCurrGroup := Customer.FilterGroup(1);  
 Message(Text001, varCurrGroup);  
 ```  
   
@@ -120,7 +120,7 @@ This example requires that you create the following variable.
   
 ```
 var
-        SearchString: Text;
+    SearchString: Text;
 ```
  
 <br>

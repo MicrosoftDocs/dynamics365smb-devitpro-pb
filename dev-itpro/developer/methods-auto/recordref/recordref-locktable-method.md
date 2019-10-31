@@ -2,7 +2,7 @@
 title: "LockTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Locks a table to protect it from write transactions that conflict with each othe
 
 ## Syntax
 ```
- RecordRef.LockTable([Wait: Boolean], [VersionCheck: Boolean])
+ RecordRef.LockTable([Wait: Boolean] [, VersionCheck: Boolean])
 ```
 ## Parameters
 *RecordRef*  
@@ -28,11 +28,10 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Wait*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies what to do if the table is already locked. If this parameter is true and if another application has already locked the table, the system will wait until the table is unlocked. If this parameter is false and if another application has already locked the table, a run-time error occurs.
-          
+Specifies what to do if the table is already locked. If this parameter is true and if another application has already locked the table, the system will wait until the table is unlocked. If this parameter is false and if another application has already locked the table, a run-time error occurs.  
 *VersionCheck*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If this parameter is true, the version will be checked. If this parameter is false, blank, or not used, the version will not be checked.  
+If this parameter is true, the version of the RecordRef will be checked. If this parameter is false, blank, or not used, the version will not be checked.  
 
 
 
@@ -44,10 +43,10 @@ If this parameter is true, the version will be checked. If this parameter is fal
  
 The table lock is released (unlocked) when the transaction is committed. 
   
- This method works the same as the [LOCKTABLE Method \(Record\)](../../methods/devenv-locktable-method-record.md).  
+ This method works the same as the [LOCKTABLE Method \(Record\)](../record/record-locktable-method.md).  
   
 ## Example  
- The following example opens table number 18 \(Customer\) as a RecordRef that is named MyRecordRef. The LOCKTABLE method locks the table. This ensures that no records are inserted or deleted during the counting process. The [COUNT Method \(RecordRef\)](../../methods/devenv-count-method-recordref.md) then retrieves the number of records in the table. The number of records is stored in the Count variable. The name of the table and the number of records in the table is displayed in a message box. The varTableNo variable can be used to open any table and get the number of records in that table by changing the value of the varTableNo variable. This example requires that you create the following global variables and text constant.  
+ The following example opens table number 18 \(Customer\) as a RecordRef that is named MyRecordRef. The LOCKTABLE method locks the table. This ensures that no records are inserted or deleted during the counting process. The [COUNT Method \(RecordRef\)](recordref-count-method.md) then retrieves the number of records in the table. The number of records is stored in the Count variable. The name of the table and the number of records in the table is displayed in a message box. The varTableNo variable can be used to open any table and get the number of records in that table by changing the value of the varTableNo variable. This example requires that you create the following global variables and text constant.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

@@ -3,7 +3,7 @@ author: SusanneWindfeldPedersen
 title: "Building an Advanced Sample Extension"
 description: "Includes code for an advanced example extension."
 ms.custom: na
-ms.date: 04/30/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -428,7 +428,7 @@ page 50100 "Customer Rewards Wizard"
 
         Step::Finish : 
           ShowFinalPage; 
-        END; 
+        end; 
     end; 
 
     local procedure NextStep(Backwards: Boolean); 

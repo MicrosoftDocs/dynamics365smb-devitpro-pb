@@ -2,7 +2,7 @@
 title: "IsNullGuid Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,11 +59,11 @@ The GUID that you want to check whether it is null.
 validGuid := '{FC841BE6-0ADA-46C4-A6A9-142AEC211613}';  
 nullGuid  := '{00000000-0000-0000-0000-000000000000}';  
   
-IF ISNULLGUID(validGuid) THEN  
+if ISNULLGUID(validGuid) then  
   MESSAGE(Text000)  
-ELSE   
+else   
   MESSAGE(Text001 + Text002, validGuid);  
-IF ISNULLGUID(nullGuid) THEN  
+if ISNULLGUID(nullGuid) then  
   MESSAGE(Text000);  
 ```  
   

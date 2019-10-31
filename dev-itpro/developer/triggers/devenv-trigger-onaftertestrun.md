@@ -1,20 +1,20 @@
 ---
 title: "OnAfterTestRun Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
 author: SusanneWindfeldPedersen
-manager: edupont
 ms.service: "dynamics365-business-central"
 ---
 
-
 # OnAfterTestRun Trigger
 Runs after a test  of a test codeunit has been run.
+
+## Syntax
 
 ```
 OnAfterTestRun(CodeunitID : Integer;CodeunitName : Text[30];MethodName : Text[128]; MethodTestPermissions : TestPermissions; Success : Boolean)
@@ -97,7 +97,7 @@ ELSE BEGIN
   log.Status := log.Status::Failure;
   IF MethodName <> '' THEN
     log.Message := GETLASTERRORTEXT;
-END
+END;
 log.INSERT(true);
 ```
 

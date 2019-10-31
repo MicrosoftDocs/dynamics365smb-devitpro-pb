@@ -1,7 +1,7 @@
 ---
 title: "CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ CalcFields updates FlowFields. FlowFields are automatically updated when they ar
 CalcFields has the following syntax.  
 
 ```  
-[Ok :=] Record.CalcFields(Field1, [Field2],...)  
+[Ok :=] Record.CalcFields(Field1, [Field2],...);  
 ```  
 
 When you use FlowFields in AL methods, you must use the CalcFields method to update them.  
@@ -58,7 +58,7 @@ CalcSums calculates the sum of one or more fields that are SumIndexFields in the
 CalcSums has the following syntax.  
 
 ```  
-[Ok :=] Record.CalcSums (Field1, [Field2],...)  
+[Ok :=] Record.CalcSums (Field1, [Field2],...);  
 ```  
 
 For CalcSums, a key that contains the SumIndexFields must be selected as the current key. Similar to CalcFields, CalcSums uses the current filter settings when it performs the calculation.  
@@ -74,7 +74,7 @@ custledgerentry.SetCurrentKey("Customer No.");
 custledgerentry.SetRange("Customer No.",'10000','50000');  
 custledgerentry.SetRange("Posting Date",0D,TODAY);  
 custledgerentry.CalcSums("Sales (LCY)");  
-Message('%1 calculated sales',custledgerentry."Sales (LCY)")  
+Message('%1 calculated sales',custledgerentry."Sales (LCY)");  
 ```  
 
 ## FieldError method
@@ -83,7 +83,7 @@ FieldError triggers a run-time error after it displays a field-related error mes
 FieldError has the following syntax.  
 
 ```  
-Record.FieldError(Field, [Text])  
+Record.FieldError(Field, [Text]);  
 ```  
 
 This method is very similar to the Error method. However, in the FieldError method, if the name of a field is changed, for example, translated to another language, in the Table Designer, the message from the FieldError method will reflect the current name of the field.  
@@ -96,7 +96,7 @@ The following examples show how to use the FieldError method. These examples req
 
 ```  
 Item.Get('70000');  
-IF Item.Class <> 'HARDWARE' THEN  
+If Item.Class <> 'HARDWARE' then  
    Item.FieldError(Class);  
 ```  
 
@@ -132,7 +132,7 @@ The following error message is displayed:
 FieldName returns the name of a field. It has the following syntax.  
 
 ```  
-Name := Record.FieldName(Field)  
+Name := Record.FieldName(Field);  
 ```  
 
 You could just use the name of the field. However, using FieldName lets you create messages that always contain the name of the field, even if the name of the field is changed.  
@@ -140,15 +140,14 @@ You could just use the name of the field. However, using FieldName lets you crea
 This example shows how to use FieldName together with FieldError.  
 
 ```  
-FieldError(  
-   Quantity,'must not be less than ' + FieldName("Quantity Shipped"));  
+FieldError(Quantity,'must not be less than ' + FieldName("Quantity Shipped"));  
 ```  
 
 ## Init 
 Init initializes a record. It has the following syntax.  
 
 ```  
-Record.Init()
+Record.Init();
 ```  
 
 If a default value for a field has been defined by using the **InitValue** property, this value is used for the initialization. Otherwise, the default value of each data type is used.  
@@ -160,7 +159,7 @@ If a default value for a field has been defined by using the **InitValue** prope
 TestField tests whether a field contains a specific value. It has the following syntax.  
 
 ```  
-Record.TestField(Field, [Value])  
+Record.TestField(Field, [Value]);  
 ```  
 
 If the test fails, that is, if the field does not contain the specified value, an error message is displayed and a run-time error is triggered. This means that any changes that were made to the record are discarded. If the value that you test against is an empty string, the field must have a value other than blank or 0 (zero).  
@@ -172,7 +171,7 @@ The following example tests the Language Code field for customer number 10000 in
 |customer|Record|Customer|  
 
 ```  
-customer.Get('10000')  
+customer.Get('10000');  
 customer.TestField("Language Code",'ZX');  
 ```  
 
@@ -180,7 +179,7 @@ customer.TestField("Language Code",'ZX');
 Validate calls the OnValidate trigger of a field. It has the following syntax.  
 
 ```  
-Record.Validate(Field [, NewValue])  
+Record.Validate(Field [, NewValue]);  
 ```  
 
 When you enter an account number in a ledger, code in a table trigger is executed to transfer the name of the account from the chart of accounts. If you enter an account number in a batch job, the code which transfers the name of the account is not automatically executed. The following example executes the appropriate field-level trigger code. This example requires that you create the following variable.  

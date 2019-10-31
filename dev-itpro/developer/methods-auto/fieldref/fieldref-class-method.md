@@ -2,7 +2,7 @@
 title: "Class Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,7 +40,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 ## Remarks  
  The FieldRef refers to the field that you are interested in.  
   
- The CLASS method returns the class as an Option. However, you cannot assign the class to an Option variable directly. Instead, you must use the [EVALUATE Method](../../methods/devenv-evaluate-method.md). The EVALUATE method has a variable parameter to which the value is assigned and a string parameter. You use the FORMAT method to convert the result of the FieldRef.CLASS method to Text, and then use the EVALUATE method to convert the Text to an Option.  
+ The CLASS method returns the class as an Option. However, you cannot assign the class to an Option variable directly. Instead, you must use the [EVALUATE Method](../../methods/devenv-evaluate-method.md). The EVALUATE method has a variable parameter to which the value is assigned and a string parameter. You use the forMAT method to convert the result of the FieldRef.CLASS method to Text, and then use the EVALUATE method to convert the Text to an Option.  
   
 ## Example  
  In this example, the return value of the CLASS method is converted to Text and then converted to an Option. This example requires that you create the following variables.  
@@ -53,7 +53,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
  The value of the **OptionString** property of OptionVar is Normal,FlowFilter,FlowField.  
   
 ```  
-EVALUATE(OptionVar,FORMAT(FldRef.CLASS));  
+EVALUATE(OptionVar,forMAT(FldRef.CLASS));  
 ```  
   
 ## Example  
@@ -67,7 +67,7 @@ EVALUATE(OptionVar,FORMAT(FldRef.CLASS));
 |FldRef|FieldRef|Not applicable|  
   
 ```  
-EVALUATE(FieldRec.Class,FORMAT(FldRef.CLASS));  
+EVALUATE(FieldRec.Class,forMAT(FldRef.CLASS));  
 ```  
   
 

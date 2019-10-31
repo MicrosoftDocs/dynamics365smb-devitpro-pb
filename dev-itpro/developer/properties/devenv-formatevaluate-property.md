@@ -1,7 +1,7 @@
 ---
 title: "FormatEvaluate Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,9 +58,9 @@ FormatEvaluate = XML;
   
  This is an XMLport property and therefore applies to all the data that is being streamed. It cannot be applied only to specific fields.  
   
- For more information about formatting AL data types, see [Format Property](devenv-format-property.md). For more information about evaluating variables, see [EVALUATE Method](../methods/devenv-evaluate-method.md). For more information about using temporary tables, see [Temporary Property (XMLports)](devenv-temporary-xmlports-property.md).  
+ For more information about formatting AL data types, see [Format Property](devenv-format-property.md). For more information about evaluating variables, see [EVALUATE Method](../methods-auto/system/system-evaluate-method.md). For more information about using temporary tables, see [Temporary Property (XMLports)](devenv-temporary-xmlports-property.md).  
   
 ## See Also  
  [Format Property (XMLports)](devenv-format-xmlports-property.md)   
- [EVALUATE Method](../methods/devenv-EVALUATE-method.md)   
+ [EVALUATE Method](../methods-auto/system/system-EVALUATE-method.md)   
  [Temporary Property (XMLports)](devenv-temporary-xmlports-property.md)

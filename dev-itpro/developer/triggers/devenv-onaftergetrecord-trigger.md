@@ -1,15 +1,13 @@
 ---
 title: "OnAfterGetRecord Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 07ceb5c1-253c-4336-b6ef-525e312e8650
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
 
 

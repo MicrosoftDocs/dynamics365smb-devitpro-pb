@@ -2,7 +2,7 @@
 title: "Timeout Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Timeout Method
-Gets or sets the duration in seconds to wait before the request times out.
+Gets or sets the duration in milliseconds to wait before the request times out.
 
 
 ## Syntax
@@ -30,17 +30,23 @@ An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 *SetTimeout*  
 &emsp;Type: [Duration](../duration/duration-data-type.md)  
-The duration in seconds to wait before the request times out.  
+The duration in milliseconds to wait before the request times out.  
 
 
 ## Return Value
 *CurrentTimeout*  
 &emsp;Type: [Duration](../duration/duration-data-type.md)  
-The duration in seconds to wait before the request times out.  
+The duration in milliseconds to wait before the request times out.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The *SetTimeout* duration is limited by the **NavHttpClientMaxTimeout** parameter that is configured for [!INCLUDE[server](../../includes/server.md)] instance. If you set the duration to a value that is greater than the value of the  **NavHttpClientMaxTimeout** parameter, a 'NavNclHttpClientTimeoutTooLargeException' error is thrown. The default value of the **NavHttpClientMaxTimeout** parameter is 00:05:00. To change the **NavHttpClientMaxTimeout** parameter, see [Configuring Business Central Server](../../../administration/configure-server-instance.md#Development).
+
 ## See Also
+
 [HttpClient Data Type](httpclient-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

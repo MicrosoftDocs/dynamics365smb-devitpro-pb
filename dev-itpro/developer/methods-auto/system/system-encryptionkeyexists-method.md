@@ -2,7 +2,7 @@
 title: "EncryptionKeyExists Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,12 +38,12 @@ Ok :=   System.EncryptionKeyExists()
  This code example performs checks to determine if an encryption key already exists.  
 
 ```  
-IF ENCRYPTIONENABLED THEN  
-        IF ENCRYPTIONKEYEXISTS THEN  
+if ENCRYPTIONENABLED then  
+        if ENCRYPTIONKEYEXISTS then  
           MESSAGE('Encryption has been enabled and the encryption key is present in this server instance')  
-        ELSE  
+        else  
           MESSAGE('Encryption has been enabled but the encryption key is not present on this server instance')  
-      ELSE  
+      else  
         MESSAGE('Encryption has not been enabled')  
 ``` 
 

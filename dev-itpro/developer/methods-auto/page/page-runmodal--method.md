@@ -2,7 +2,7 @@
 title: "RunModal Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,26 +53,26 @@ In some cases, the actions for the return values are different when the page dis
 |RunSystem|The user selected an option that ran an external program.|  
 
 ## Remarks  
- If you know the specific page that you want to run when you are designing your application, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [RUN Method \(Page\)](../../methods/devenv-run-method-page.md).  
+ If you know the specific page that you want to run when you are designing your application, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [RUN Method \(Page\)](page-run--method.md).  
 
- If you do not know the specific page that you want to run, then use the [PAGE.RUN Method](../../methods/devenv-page-run-method.md) or the [PAGE.RUNMODAL Method](../../methods/devenv-page-runmodal-method.md) and specify the page in the *Number* parameter.  
+ If you do not know the specific page that you want to run, then use the [RUN Method \(Page\)](page-run--method.md) or the **RUNMODAL Method \(Page\)** and specify the page in the *Number* parameter.  
 
- After you define the page variable, you can use it before and after you run the page. If you use the [PAGE.RUN Method](../../methods/devenv-page-run-method.md), then you can only use the variable before you run the page.  
+ After you define the page variable, you can use it before and after you run the page. If you use the [RUN Method \(Page\)](page-run--method.md), then you can only use the variable before you run the page.  
 
 ## Example  
  This example shows how to use this method. Assume that the *SomePage* variable has been defined as `Page 1`.  
 
 ```  
-CLEAR(SomePage)  
+CLEAR(SomePage);  
 SomePage.XXX; // Any user-defined method  
 SomePage.SETTABLEVIEW(MyRecord);  
 SomePage.SETRECORD(MyRecord);  
-IF SomePage.RUNMODAL = Action::LookupOK THEN  
+if SomePage.RUNMODAL = Action::LookupOK then  
   SomePage.GETRECORD(MyRecord)...  
 ```  
 
 > [!NOTE]  
->  This code example includes the [CLEAR Method](../../methods/devenv-clear-method.md) to make sure that the variable has been cleared.  
+>  This code example includes the [CLEAR Method](../system/system-clear-joker-method.md) to make sure that the variable has been cleared.  
 
 ## See Also
 [Page Data Type](page-data-type.md)  

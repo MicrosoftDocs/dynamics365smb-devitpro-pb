@@ -2,7 +2,7 @@
 title: "Number Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,11 +53,11 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
   
 LocationRecref.OPEN(DATABASE::Location);  
 FieldIndex := 0;  
-REPEAT  
+repeat  
   FieldIndex  := FieldIndex + 1;  
   MyFieldRef := LocationRecref.FIELDINDEX(FieldIndex);  
   MESSAGE('Field Number: %1  Field Caption: %2.' , MyFieldRef.NUMBER, MyFieldRef.CAPTION);  
-UNTIL FieldIndex = 10;  
+until FieldIndex = 10;  
 ```  
   
 

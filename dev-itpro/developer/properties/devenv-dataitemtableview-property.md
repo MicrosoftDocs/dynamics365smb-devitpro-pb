@@ -2,7 +2,7 @@
 title: "DataItemTableView Property"
 
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,9 +17,15 @@ Sets the key on which to sort, the sort order, and the filters for the data item
 ## Applies To  
 Data items on reports.  
 
-## Remarks
+## Examples
+
+In the following example, the **DataItemView** property is used to sort a table view based on the `"Entry No."` field.
 ```
-DataItemTableView = SORTING ("Journal Template Name", Name);
+DataItemTableView = SORTING ("Entry No.");
+```
+This code sample shows how the same property can be used to apply filters on a table view.
+```
+DataItemTableView = WHERE("Document Type" = FILTER(Payment | Invoice | "Credit Memo"), Open= CONST(true));
 ```
   
 ## Remarks  

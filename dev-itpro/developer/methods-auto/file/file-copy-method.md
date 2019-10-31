@@ -2,7 +2,7 @@
 title: "Copy Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/10/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -65,12 +65,12 @@ The name that you want to assign to the copy that includes its path. When you en
   
 OldFile := 'old.txt';  
 NewFile := 'new.txt';  
-IF FILE.COPY('c:\Old\' + OldFile, 'c:\New\' + NewFile) THEN  
+if FILE.COPY('c:\Old\' + OldFile, 'c:\New\' + NewFile) then  
   // Continue your program.  
-  MESSAGE('The file was copied.')  
-ELSE  
+  MESSAGE('The file was copied.');  
+else  
   // Handle the error.  
-  MESSAGE('The file was not copied.')  
+  MESSAGE('The file was not copied.');  
 ```  
   
 

@@ -2,7 +2,7 @@
 title: "BindSubscription Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,13 +43,13 @@ The codeunit that contains the event subscribers.
  The codeunit instance to which event subscribers bind will be this exact instance and events will be raised on this instance. You cannot bind the same instance more than once, but you can bind multiple instances of the same codeunit. This will result in an event subscriber call on each bound instance when a given event is raised.  
   
 ## Example  
- The following code illustrates a typical use of the BINDSUBSCRIPTION method.  
+ The following pseudocode illustrates a typical use of the BINDSUBSCRIPTION method.  
   
 ```  
 Method MyFunction(….)  
 LocalVar  
   SubScriberCodeunit5000;  
-BEGIN  
+begin 
   // Set global information on the subscriber codeunit if required  
   // You can rely on the instance being the same as the one receiving the event subscriber call  
   
@@ -57,7 +57,7 @@ BEGIN
   BINDSUBSCRIPTION(SubscriberCodeunit5000);  
   DoSomething(…);  // After binding, all subscriptions on SubscriberCodeunit5000 are “active”.  
   
-END; // Notice, that when SubScriberCodeunit5000 goes out of scope, all bindings are removed.  
+end; // Notice, that when SubScriberCodeunit5000 goes out of scope, all bindings are removed.  
   
 ```  
   

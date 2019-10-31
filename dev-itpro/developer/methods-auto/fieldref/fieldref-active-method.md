@@ -2,7 +2,7 @@
 title: "Active Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -73,14 +73,14 @@ Recref.OPEN(18);
 MyFieldRef := Recref.FIELD(1);  
 MyFieldRef.SETRANGE('30000');  
 Recref.FIND('-');  
-FOR i := 1 TO 5 DO BEGIN  
+for i := 1 to 5 do begin
   MyFieldRef := Recref.FIELDINDEX(i);  
-  IF MyFieldRef.ACTIVE THEN  
+  if MyFieldRef.ACTIVE then  
     MESSAGE(Text000, i)  
-  ELSE BEGIN  
+  else begin 
     MESSAGE(Text001, i)  
-  END;  
-END;  
+  end;  
+end;  
 
 ```  
 

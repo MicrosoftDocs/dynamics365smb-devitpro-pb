@@ -3,7 +3,7 @@ title: "Marketing Artifacts"
 description: "Guidelines to marketing artifacts including logos, screenshots, documents and videos"
 author: v-liober
 ms.custom: na
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -12,11 +12,11 @@ ms.author: v-liober
 
 # Marketing Artifacts - Offer Logo
 
-| Marketing artifacts                                                | Description                                | Requirements |
-|--------------------------------------------------------------------|--------------------------------------------|--------------|
-| 14. **Offer logo**                                                     | Formatting                                 | Required     |
-| 14.A Offer logo for your app’s search page (.png, 48x48 pixels)    | 1 offer logo for your app’s search page: 48x48 pixels resolution .png image [./media/image17.jpg](./media/image17.jpg) | Required     |
-| 14.B Offer logo for your app’s details page (.png, 216x216 pixels) | 1 offer logo for your app’s details page: 216x216 pixels resolution .png image [./media/image17.jpg](./media/image17.jpg) | Required     |
+| Marketing artifacts | Description| Requirements |
+|---------------------|------------|--------------|
+| 14. **Offer logo**  | Formatting | Required     |
+| 14.A Offer logo for your app’s search page (.png, 48x48 pixels)    | 1 offer logo for your app’s search page: 48x48 pixels resolution .png image | Required     |
+| 14.B Offer logo for your app’s details page (.png, 216x216 pixels) | 1 offer logo for your app’s details page: 216x216 pixels resolution .png image | Required     |
 
 You are required to provide two offer logos on AppSource:
 - one in 48x48 pixels resolution for your app’s search page:
@@ -36,22 +36,22 @@ Structure
 ![Storefront Detail - Logo](../../media/Logo.png)
 
 ## <a name="Videos"></a>Marketing Artifacts - Videos
-| Marketing artifacts                  | Description                                                                                 | Requirements |
-|---------------------|---------------------------------------------------------------------------------------------|--------------|
-| 15. **Videos**          | Pictures tell more than a 100 words – make sure to leverage this when promoting your offer. | Recommended  |
+| Marketing artifacts  | Description| Requirements |
+|---------------------|-------------|--------------|
+| 15. **Videos** | Pictures tell more than a 100 words – make sure to leverage this when promoting your offer. | Recommended  |
 
 Large amounts of information are easier to take in when visualized. Using videos that demo your offer are therefore ideal to create intertest and enable prospects to learn more about your offer quickly. On AppSource videos will play when customers select the associated video thumbnail on your app's details page.
 
 Formatting and General requirements (cf. section 0.A-D) to keep in mind when creating videos:
 - A minimum of one video is recommended (up to a maximum of 5 are permitted).
 - Language in videos can be either local or English
-- Note, videos made in local language must have subtitles in English.
+- Note, videos made in local language can have subtitles in English (no requirement).
 Make the right references from the get go: 
 - Only include screenshots & demo of the newest UI.
 - Reference Microsoft’s brand names correctly:
-- Only refer to Microsoft Dynamics 365 Business Central or Dynamics 365 Business Central.
-- Don’t make references to acronyms, old Dynamics 365 brand names/logos or demo old UIs.
-- Don’t include logos or trademarks in your video.
+- Only refer to Microsoft Dynamics 365 Business Central, Dynamics 365 Business Central or Business Central after first mentioning of full product name.
+- Don’t make references to acronyms, old Dynamics 365 NAV brand names/logos or demo old UIs.
+- Don’t include Microsoft Dynamics 365 logos or trademarks in your video.
 
 > [!NOTE]
 > Videos can be in any language, must be captioned if not spoken in English.
@@ -67,8 +67,8 @@ You can create 4 different types of marketing videos:
 See guidelines on how to best structure the 4 above mentioned videos (and why it is crucial to incorporate them) in [How to create compelling video](readiness-how-to-make-compelling-videos.md)
 
 > [!TIP]
->   *Example of a video that is set up according to our best practices:*
->   [A “How and What product video” from Open Door Technology](https://vimeo.com/260138342)
+> *Example of a video that is set up according to our best practices:*
+> [A “How and What product video” from Open Door Technology](https://vimeo.com/260138342)
 
 How to upload video(s) to the Cloud Partner Portal? 
 When uploading a video in the in the Cloud Partner Portal you need to provide the following:
@@ -81,8 +81,8 @@ When uploading a video in the in the Cloud Partner Portal you need to provide th
 Note: On AppSource videos will play when customers select the associated video thumbnail on your app's details page.
 
 > [!TIP]
->   *Example:* *URL to YouTube video Thumbnail image*
->   [How Cortana helps manage inventory in](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s) [Dynamics 365 Business Central](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
+> *Example:* *URL to YouTube video Thumbnail image*
+> [How Cortana helps manage inventory in](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s) [Dynamics 365 Business Central](https://www.youtube.com/watch?v=toac7I6At2Q&index=4&list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4&t=0s)
 
 ![Storefront Detail - Videos](../../media/Videos.png)
 
@@ -96,10 +96,10 @@ Formatting
 - It is a requirement that all docs are written in English and are formatted as PDF-files.
 - We recommend you to add the link to your app landing page to all your documents.
 
-> [!NOTE]
+> [!NOTE]  
 > If your description does not include English, it is a requirement that you are providing an English translation as a document. This document must include the description text in English as well as the support information in English (if the support page is not in English). 
 
-Structure
+Structure:
 - Think wisely about what content you include in the learn more section. Don’t sell, educate the prospect:
 - Don’t just include a description of your offer here – the prospect has already read the description in the store front details in AppSource and has shown an interest in your offering by clicking on the learn more item – don’t discourage this interest by repeating something that they already know. 
 - Instead, use this opportunity to show them something new that entices their interest to start using your offer even more.
@@ -128,7 +128,7 @@ Choose the proper image format to use:
 - Screenshots
 - Require super-imposing, which can be clumsy and confusing. Also, screenshots lose readability when reduced in size
 
-> [!NOTE]
+> [!NOTE]  
 > Screenshots can be provided in any language. 
 
 Structure
@@ -151,10 +151,10 @@ When uploading a screenshot in the in the Cloud Partner Portal you need to provi
 - An URL to a YouTube or Vimeo video o The video URL must be either a YouTube or Vimeo link that is able to be played using an embedded experience.
 - Upload only a .png image with resolution 1280 x 720.
 
-> [!TIP]
+> [!TIP]  
 > *Example:* *Dashboard* *Set up instructions*
 
-> [!TIP]
+> [!TIP]  
 > *Example:* of the completed screenshot fields (cf. point 17) in the “Marketing artifacts” section of the Cloud partner portal:
 
 ![Storefront Detail - Screenshots](../../media/Screenshots.png)

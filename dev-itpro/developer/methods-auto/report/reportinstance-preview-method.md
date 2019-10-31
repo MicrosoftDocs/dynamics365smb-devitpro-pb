@@ -2,7 +2,7 @@
 title: "Preview Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,9 +48,9 @@ If you run a client report definition \(RDLC\) report layout in preview mode and
  This example shows how to use the PREVIEW method. You can use this method in an application that stores a count of how many times a document has been printed in the database. This number must be updated from inside the report that is used to print the document. To avoid updating the number when the report is run in preview mode, add a construct to the OnPreDataItem trigger that resembles the one that is shown in this example when you add the code that updates the count.  
 
 ```  
-IF CurrReport.PREVIEW THEN  
+if CurrReport.PREVIEW then  
 ... // Preview-specific processing.  
-ELSE  
+else  
 ... // Processing that is not preview specific:  
 ... // Update the print count.  
 ```  

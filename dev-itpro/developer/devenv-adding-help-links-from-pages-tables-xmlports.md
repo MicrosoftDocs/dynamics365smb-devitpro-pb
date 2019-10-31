@@ -3,7 +3,7 @@ title: "Adding Help Links from Pages, Reports, and XMLports"
 description: "This topic shows how to specify the help link."
 author: edupont04
 ms.custom: na
-ms.date: 04/26/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,7 +50,7 @@ xmlport 50100 XmlPortWithHelp
 }
 ```
 
-In all three examples, the *ContextSensitiveHelpPage* property is set to point at the same Help files. This is because all three example objects support the same feature that is explained in the *sales-rewards* Help topic. In your app, you can choose to structure the Help differently.  
+In all three examples, the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) is set to point at the same Help files. This is because all three example objects support the same feature that is explained in the *sales-rewards* Help topic. In your app, you can choose to structure the Help differently.  
 
 ## See Also
 

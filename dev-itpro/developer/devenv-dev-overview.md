@@ -3,7 +3,7 @@ title: "Developing Extensions in AL"
 description: "Overview of the development experience for building extensions using the AL language."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,8 +11,6 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
-
- 
 
 # Development in AL
 Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they are different or modify the behavior of the solution. This section explains how you can develop extensions using the development environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
@@ -28,7 +26,7 @@ For more information on how to group a set of disparate project folders into one
 
 
 > [!NOTE]  
-> A single .al file may contain multiple objects. 
+> A single .al file may contain multiple objects.
 
 There are two other special objects which are specifically used for building extensions. Table extension objects and page extension objects are used for defining additive or overriding changes to table or page objects. For example, an extension for managing a business that sells organic food may define a table extension object for the Item table that contains two additional fields, `Organic` and `Produced Locally`. The `Organic` and `Produced Locally` fields are not usually present in the Item table, but through the table extension these data fields will now be available to store data in and to access from code. You can then use the page extension object to display the fields that you added to the table object.
 

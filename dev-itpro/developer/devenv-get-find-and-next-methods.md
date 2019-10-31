@@ -2,7 +2,7 @@
 title: "Get, Find, and Next Methods"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,31 @@ else
 ```  
   
 Get searches for the records, regardless of the current filters, and it does not change any filters. Get always searches through all the records in a table.  
+
+## GetBySystemId method
+
+[!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
+
+The [GetBySystemId(Guid)](methods-auto/record/record-getbysystemid-method.md) retrieves a record based on the value of its **SystemId** field.   
   
+GetBySystemId has the following syntax:  
+  
+```
+RecordExists :=   Record.GetBySystemId(SystemId: Guid)
+``` 
+  
+The following example gets the record that has the SystemId `5286305A-08A3-E911-8180-001DD8B7338E`:
+
+```
+var
+    Customer: Record Customer;
+    Text000: TextConst ENU = 'Customer was found.';
+begin
+    If Customer.GetBySystemId('{5286305A-08A3-E911-8180-001DD8B7338E}') then
+    Message(Text000);
+end;
+```  
+
 ## Find methods  
 The [Find Method (Record)](methods-auto/record/record-find-method.md) locates a record in a table that is based on the values stored in the keys.  
   
@@ -67,16 +91,17 @@ The important differences between Get and Find are as follows:
   
 - Find can find the first or the last record, depending on the sort order defined by the current key.  
   
-When you are developing applications in a relational database, there are often one-to-many relationships defined between tables. An example could be the relationship between an **Item** table, which registers items, and a **Sales Line** table, which registers the detailed lines from sales orders. One record in the **Sales Line** table can only be related to one item, but each item can be related to any number of sales line records. You would not want an item record to be deleted as long as there are still open sales orders that include the item. You can use Find to check for open sales orders.  
+When you are developing applications in a relational database, there are often one-to-many relationships defined between tables. An example could be the relationship between an **Item Variant** table, which registers items, and a **Sales Line** table, which registers the detailed lines from sales orders. One record in the **Sales Line** table can only be related to one item, but each item can be related to any number of sales line records. You would not want an item record to be deleted as long as there are still open sales orders that include the item. You can use Find to check for open sales orders.  
   
-The OnDelete trigger of the **Item** table includes the following code that illustrates using Find.  
+The OnDelete trigger of the **Item Variant** table includes the following code that illustrates using Find.  
   
 ```  
-SalesOrderLine.SetCurrentKey(Type,"No.");  
-SalesOrderLine.SetRange(Type,SalesOrderLine.Type::Item);  
-SalesOrderLine.SetRange("No.","No.");  
-IF SalesOrderLine.Find('-') THEN  
-ERROR(Text001,TableCaption,"No.",SalesOrderLine."Document Type");  
+SalesOrderLine.SetCurrentKey(Type, "No.");
+SalesOrderLine.SetRange(Type, SalesOrderLine.Type::Item);
+SalesOrderLine.SetRange("No.", "Item No.");
+SalesOrderLine.SetRange("Variant Code", Code);
+if not SalesOrderLine.IsEmpty then
+    Error(Text001, Code, SalesOrderLine.TableCaption);  
 ```  
   
 If you want to find the first record in a table or set, then use the [FindFirst Method (Record)](methods-auto/record/record-findfirst-method.md). If you want to find the last record in a table or set, then use the [FindLast Method (Record)](methods-auto/record/record-findlast-method.md).  
@@ -101,3 +126,4 @@ until (Rec.Next = 0);
 
 ## See Also
 [AL Methods](methods-auto/library.md)  
+[SystemId Field](devenv-table-object.md#systemid)

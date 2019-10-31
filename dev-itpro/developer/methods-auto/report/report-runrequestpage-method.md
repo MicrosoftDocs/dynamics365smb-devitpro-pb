@@ -2,7 +2,7 @@
 title: "RunRequestPage Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Runs the request page for a report without running the report. Returns an XML st
 
 ## Syntax
 ```
-Parameters :=   Report.RunRequestPage(Number: Integer, [Parameters: String])
+Parameters :=   Report.RunRequestPage(Number: Integer [, Parameters: String])
 ```
 ## Parameters
 *Number*  
@@ -85,9 +85,9 @@ XmlParameters := REPORT.RUNREQUESTPAGE(206);
 CurrentUser := USERID;  
 
 // Save the request page parameters to the database table  
-WITH ReportParameters DO BEGIN  
+with ReportParameters do begin  
     // Cleanup  
-    IF GET(206,CurrentUser) THEN  
+    if GET(206,CurrentUser) then  
     DELETE;  
 
     SETAUTOCALCFIELDS(Parameters);  
@@ -98,18 +98,18 @@ WITH ReportParameters DO BEGIN
     OStream.WRITETEXT(XmlParameters);  
 
     INSERT;  
-END;  
+end;  
 
 CLEAR(ReportParameters);  
 XmlParameters := '';  
 
 // Read the request page parameters from the database table  
-WITH ReportParameters DO BEGIN  
+with ReportParameters do begin  
     SETAUTOCALCFIELDS(Parameters);  
     GET(206,CurrentUser);  
     Parameters.CREATEINSTREAM(IStream,TEXTENCODING::UTF8);  
     IStream.READTEXT(XmlParameters);  
-END;  
+end;  
 
 // Use the REPORT.SAVEAS method to save the report as a PDF file  
 Content.CREATE('TestFile.pdf');  

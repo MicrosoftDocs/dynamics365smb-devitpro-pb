@@ -2,7 +2,7 @@
 title: "AddLink Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Adds a link to a record in a table.
 
 ## Syntax
 ```
-[ID := ]  RecordRef.AddLink(URL: String, [Description: String])
+[ID := ]  RecordRef.AddLink(URL: String [, Description: String])
 ```
 ## Parameters
 *RecordRef*  
@@ -28,8 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *URL*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The link that you want to add to the record.
-        
+The link that you want to add to the record.  
 *Description*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Optional description of the link.  
@@ -47,7 +46,7 @@ The ID of the URL that you want to add to the record. Every time that you add a 
  The URL can be a link to a Web site, a file stored on the local or on a remote computer, or a link to a [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] page. You can then view the link in the **Links** FactBox on pages that display the record.  
 
 ## Example  
- The following example adds a link to a record in the Customer table. The code starts by opening table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) creates a FieldRef variable that is named MyFieldRef for the first field \(No.\). Next, `MyFieldRef.VALUE` is set to record 01121212. The [FIND Method \(RecordRef\)](../../methods/devenv-find-method-recordref.md) method searches the records for record no. 01121212. If the record is found, then the ADDLINK method adds a link to the record. The link is assigned a link ID, which is stored in the LinkID variable. The link ID is displayed in a message box. You can view the link you added in the **Links** FactBox on the Customer List or Customer Card pages. This example requires that you create the following global variables and text constants.  
+ The following example adds a link to a record in the Customer table. The code starts by opening table 18 \(Customer) as a RecordRef variable that is named CustomerRecref. The [FIELD Method (RecordRef)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for the first field \(No.\). Next, `MyFieldRef.VALUE` is set to record 01121212. The [FIND Method (RecordRef)](recordref-find-method.md) method searches the records for record no. 01121212. If the record is found, then the ADDLINK method adds a link to the record. The link is assigned a link ID, which is stored in the LinkID variable. The link ID is displayed in a message box. You can view the link you added in the **Links** FactBox on the Customer List or Customer Card pages. This example requires that you create the following global variables and text constants.  
 
 |Variable name|DataType|  
 |-------------------|--------------|  
@@ -67,11 +66,10 @@ CustomerNum := '01121212';
 CustomerRecref.OPEN(18);  
 MyFieldRef := CustomerRecref.FIELD(1);  
 MyFieldRef.VALUE := CustomerNum;  
-IF CustomerRecref.FIND('=') THEN BEGIN  
+if CustomerRecref.FIND('=') then begin  
   LinkID := CustomerRecref.ADDLINK(varLink);  
   MESSAGE(Text000, LinkID);  
-END  
-ELSE  
+end else
   MESSAGE(Text001);  
 ```  
 

@@ -3,15 +3,13 @@ title: "Creating and Interacting with an OData V4 Bound Action"
 description: "Document how to create and interact with an OData V4 Bound Action in AL."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
 ---
 
 # Creating and Interacting with an OData V4 Bound Action
@@ -25,7 +23,7 @@ The following example shows you how you can declare an OData bound action on a p
 > [!NOTE]   
 > Bound actions cannot be added by extending an existing page that has been exposed as a web service. 
 
-```al
+```
 page 50110 SalesInvoiceCopy
 {
     ODataKeyFields = "Id";
@@ -124,5 +122,3 @@ POST /ODataV4/Company({companyName})/SalesInvoiceCopy({id})/NAV.Copy
 [Devoloping for Multiple Platform Versions](devenv-developing-for-multiple-platform-versions.md)  
 [Exporting Permission Sets](devenv-export-permission-sets.md)  
 [Discover Events Using the Event Recorder](devenv-events-discoverability.md)    
-
-

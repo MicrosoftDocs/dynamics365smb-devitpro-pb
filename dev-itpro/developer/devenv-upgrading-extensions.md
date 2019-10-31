@@ -3,7 +3,7 @@ author: jswymer
 title: "Upgrading an Extension V2 to a new version"
 description: "Describes how to add code to upgrade data in a new extension version."
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,8 +11,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 
-
-# Upgrading Extensions V2
+# Upgrading Extensions
 This article provides information about how to make a newer version of extension upgrade available on tenants. The first phase of this process is to develop the extension for upgrading, which means adding code to upgrade data from the previous extension version. Once you have the upgrade code in place, you can publish and synchronize the new version, and the run the data upgrade.
 
 > [!NOTE]
@@ -72,7 +71,7 @@ codeunit [ID] [NAME]
 > Use the shortcuts `tcodeunit` and `ttrigger` to create the basic structure for the codeunit and trigger.
 
 ### Get information about an extension
-Each extension version has a set of properties that contain information about the extension, including: `AppVersion`, `DataVersion`, `Dependencies`, `Id`, `Name`, and `Publisher`. This information can be useful when upgrading. 
+Each extension version has a set of properties that contain information about the extension, including: `AppVersion`, `DataVersion`, `Dependencies`, `Id`, `Name`, and `Publisher`. This information can be useful when upgrading. For more information, see [JSON Files](devenv-json-files.md).
 
 The `AppVersion` is one of the available properties and it's value differs depending on the context of the code being run:
 

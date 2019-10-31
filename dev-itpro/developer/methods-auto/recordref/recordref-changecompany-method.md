@@ -2,7 +2,7 @@
 title: "ChangeCompany Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *CompanyName*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The name of the company to which you want to change. If you omit this parameter, you change back to the current company.
-          
+The name of the company to which you want to change. If you omit this parameter, you change back to the current company.  
 
 
 ## Return Value
@@ -41,22 +40,22 @@ The name of the company to which you want to change. If you omit this parameter,
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- When executing this method, the user's access rights are respected. For example, a user cannot access data in *CompanyName* unless he already has the necessary access rights.  
+When executing this method, the user's access rights are respected. For example, a user cannot access data in *CompanyName* unless he already has the necessary access rights.  
 
- The **CHANGECOMPANY** method is not affected by the [RESET Method \(RecordRef\)](../../methods/devenv-reset-method-recordref.md). You can deselect a company by making a new call to **CHANGECOMPANY** or by using the [CLEAR Method](../../methods/devenv-clear-method.md).  
+The **CHANGECOMPANY** method is not affected by the [RESET Method (RecordRef)](recordref-reset-method.md). You can deselect a company by making a new call to **CHANGECOMPANY** or by using the [CLEAR Method](../system/system-clear-joker-method.md).  
 
- Global filters always belong to a specific company. If you use the following code to select the company named NewCompany, any filters assigned to *RecordRef* will be transferred to *RecordRef* in the new company.  
+Global filters always belong to a specific company. If you use the following code to select the company named NewCompany, any filters assigned to *RecordRef* will be transferred to *RecordRef* in the new company.  
 
 ```  
 RecordRef.CHANGECOMPANY(NewCompany);  
 ```  
 
- Even if you run the **CHANGECOMPANY** method, triggers still run in the current company, not in the company that you specified in the **CHANGECOMPANY** method.  
+Even if you run the **CHANGECOMPANY** method, triggers still run in the current company, not in the company that you specified in the **CHANGECOMPANY** method.  
 
 ## Example  
- This example shows how to use the **CHANGECOMPANY** method. The following code takes a RecordRef to table **18 Customer** in the current company and redirects it to the table in another company \(in this case Company B\). The last record in the Customer table of Company B is then deleted.  
+This example shows how to use the **CHANGECOMPANY** method. The following code takes a RecordRef to table **18 Customer** in the current company and redirects it to the table in another company \(in this case Company B\). The last record in the Customer table of Company B is then deleted.  
 
- This example requires that you create the following global variables and text constant  
+This example requires that you create the following global variables and text constant  
 
 |Variable name|DataType|  
 |-------------------|--------------|  

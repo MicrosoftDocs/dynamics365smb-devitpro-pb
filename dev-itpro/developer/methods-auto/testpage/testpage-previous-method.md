@@ -2,7 +2,7 @@
 title: "Previous Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,9 +44,10 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ```  
 CustomerList.OPENVIEW;  
 …  
-IF CustomerList.LAST THEN REPEAT  
+if CustomerList.LAST then repeat  
   MESSAGE(CustomerList.Name);  
-UNTIL NOT CustomerList.PREVIOUS;  
+until not CustomerList.PREVIOUS;  
+```
   
 
 ## See Also

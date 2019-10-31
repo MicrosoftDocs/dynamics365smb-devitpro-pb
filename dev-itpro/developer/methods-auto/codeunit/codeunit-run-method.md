@@ -2,7 +2,7 @@
 title: "Run Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Loads and runs the unit of AL code you specify. To use this method, you can spec
 
 ## Syntax
 ```
-[Ok := ]  Codeunit.Run(Number: Integer, [var Record: Record])
+[Ok := ]  Codeunit.Run(Number: Integer [, var Record: Record])
 ```
 ## Parameters
 *Number*  
@@ -50,9 +50,9 @@ This optional parameter identifies a record. This parameter is a record data typ
   
 ```  
 AccountRecord.INIT;  
-IF NOT FiscalYearCloseInstance.RUN(AccountRecord) THEN  
+if not FiscalYearCloseInstance.RUN(AccountRecord) then  
   ERROR('Codeunit run failed (with record).');  
-IF NOT AppMgmtInstance.RUN THEN  
+if not AppMgmtInstance.RUN then  
   ERROR('Codeunit run failed.');  
 ```  
 

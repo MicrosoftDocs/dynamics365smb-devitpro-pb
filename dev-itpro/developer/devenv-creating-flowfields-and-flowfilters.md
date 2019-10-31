@@ -1,17 +1,15 @@
 ---
 title: Create FlowFields and FlowFilters
 description: FlowFields and FlowFilters are used to display the result of the calculation described in the CalcFormula property. 
-ms.date: 04/01/2019
+author: SusanneWindfeldPedersen
+ms.date: 10/04/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 2f6560a1-33a5-4fee-beac-fa6a3100c85a
-caps.latest.revision: 11
+ms.author: solsen
 ---
-
- 
 
 # Create FlowFields and FlowFilters
 This topic describes the procedure and the properties used to create FlowFields and FlowFilters. 
@@ -104,7 +102,7 @@ table 50123 MyTable
             CalcFormula = exist (Customer where (Payments = const (0),
                                                  "No." = field ("No.")));
             FieldClass = FlowField;
-            Caption = 'Specifies whether it is the customer's first entry';
+            Caption = 'Specifies whether it is the customer''s first entry';
         }
 
         field(10; "Customer Balance"; Decimal)

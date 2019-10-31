@@ -2,7 +2,7 @@
 title: "FieldError Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -60,9 +60,9 @@ CustomerName := '';
 MyFieldRef := CustomerRecref.FIELD(1);  
 MyFieldRef.VALUE('30000');  
 MyFieldRef := CustomerRecref.FIELD(2);  
-IF CustomerName = '' THEN  
+if CustomerName = '' then  
   MyFieldRef.FIELDERROR(Text000)  
-ELSE  
+else  
   //Do some processing  
   
 ```  

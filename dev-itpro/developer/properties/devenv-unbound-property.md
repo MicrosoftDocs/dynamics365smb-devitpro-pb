@@ -1,7 +1,7 @@
 ---
 title: "Unbound Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: d0632b9c-70ba-4a30-8b4b-5283ebb11b90
 caps.latest.revision: 5
+author: SusanneWindfeldPedersen
 ---
 
  
@@ -39,4 +40,4 @@ Unbound = true;
  For example, your XMLport can export data in two different file formats. One format contains 5 columns, and the other contains 10 columns. Instead of duplicating the maximum number of columns and writing code that skips any redundant columns, you can set up a single column, make it unbound, and then specify in code when to break to the next element.  
   
 ## See Also  
- [BREAKUNBOUND Method \(XMLport\)](../methods/devenv-BREAKUNBOUND-method-xmlport.md)
+ [BREAKUNBOUND Method \(XMLport\)](../methods-auto/xmlport/xmlportinstance-BREAKUNBOUND-method.md)

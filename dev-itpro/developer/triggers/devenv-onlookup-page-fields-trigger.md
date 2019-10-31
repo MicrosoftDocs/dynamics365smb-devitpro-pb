@@ -1,17 +1,14 @@
 ---
 title: "OnLookup (Page fields) Trigger"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 5718e2d3-26af-437b-b96b-08b588c1eea1
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnLookup (Page fields) Trigger
 Runs in place of the normal lookup features for the current page.  

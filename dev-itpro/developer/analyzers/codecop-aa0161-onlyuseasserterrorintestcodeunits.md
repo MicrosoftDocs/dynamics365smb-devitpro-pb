@@ -1,8 +1,8 @@
 ---
-title: "Only use ASSERTERROR in Test Codeunits."
+title: "Only use AssertError in Test Codeunits."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/15/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,12 +12,12 @@ author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .xml or .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0161
-Only use ASSERTERROR in Test Codeunits.  
+Only use AssertError in Test Codeunits.  
 
 ## Description
-Only use ASSERTERROR in Test Codeunits.
+Only use AssertError in Test Codeunits.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

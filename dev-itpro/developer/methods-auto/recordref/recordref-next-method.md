@@ -2,7 +2,7 @@
 title: "Next Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Steps*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-Defines the direction of the search and how many records to step include. If this parameter is greater than zero, the method will search the number of records specified in Steps forward in the table. If this parameter is less than zero, the method will search the number of records specified in Steps backward in the table. If this parameter is 0, no records are stepped over. If you do not specify this parameter, the method finds the next record.
-          
+Defines the direction of the search and how many records to step include. If this parameter is greater than zero, the method will search the number of records specified in Steps forward in the table. If this parameter is less than zero, the method will search the number of records specified in Steps backward in the table. If this parameter is 0, no records are stepped over. If you do not specify this parameter, the method finds the next record.  
 
 
 ## Return Value
@@ -43,10 +42,10 @@ Defines the direction of the search and how many records to include.
 ## Remarks  
  This method locates a record positioned a given number of steps forward or backward from the record specified by *RecordRef*. Movement through the table is governed by the filters and the current key associated with the records. The fields in the record which will be compared with the current key fields must contain appropriate values before the method is called.  
   
- This method works the same as the [NEXT Method \(Record\)](../../methods/devenv-next-method-record.md).  
+ This method works the same as the [NEXT Method \(Record\)](../record/record-next-method.md).  
   
 ## Example  
- The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SETRANGE method sets a filter that selects all records from 10000 to 40000 in the No. field. The [FIND Method \(RecordRef\)](../../methods/devenv-find-method-recordref.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The NEXT method steps through the records and finds the next record because no value is specified for the *Steps* parameter. The number of records that are found in the range is stored in the Count variable and displayed in a message box. This example requires that you create the following global variables and text constants.  
+ The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SETRANGE method sets a filter that selects all records from 10000 to 40000 in the No. field. The [FIND Method \(RecordRef\)](recordref-find-method.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The NEXT method steps through the records and finds the next record because no value is specified for the *Steps* parameter. The number of records that are found in the range is stored in the Count variable and displayed in a message box. This example requires that you create the following global variables and text constants.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  
@@ -64,10 +63,10 @@ CustomerRecref.OPEN(DATABASE::Customer);
 MyFieldRef := CustomerRecref.FIELD(1);  
 MyFieldRef.SETRANGE('10000' , '40000');  
 Count := 0;  
-IF CustomerRecref.FIND('-') THEN  
-  REPEAT  
+if CustomerRecref.FIND('-') then  
+  repeat  
     Count := Count + 1;  
-  UNTIL CustomerRecref.NEXT = 0;  
+  until CustomerRecref.NEXT = 0;  
 MESSAGE(Text000 , Count);  
 ``` 
 

@@ -2,7 +2,7 @@
 title: "CalcField Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,13 +59,13 @@ This method is similar to the [CALCFIELDS Method \(Record\)](../../methods-auto/
 
 Count := 0;  
 CustRecordref.OPEN(18);  
-IF CustRecordref.FIND('-') THEN  
-  REPEAT  
+if CustRecordref.FIND('-') then  
+  repeat  
     MyFieldRef := CustRecordref.FIELD(66);  
     MyFieldRef.CALCFIELD;  
     MESSAGE(Text000, CustRecordref.RECORDID, MyFieldRef);  
     Count := Count + 1;  
-  UNTIL CustRecordref.NEXT = 0;  
+  until CustRecordref.NEXT = 0;  
 ```  
 
 ## See Also

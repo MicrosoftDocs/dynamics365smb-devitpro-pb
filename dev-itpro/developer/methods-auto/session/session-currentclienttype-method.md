@@ -2,7 +2,7 @@
 title: "CurrentClientType Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ The client type that is running in current session.
  In the following example, CURRENTCLIENTTYPE is used to get the client type for the session and return a message if the session uses the [!INCLUDE[d365fin_tablet_md](../../includes/d365fin_tablet_md.md)].  
 
 ```  
-IF CURRENTCLIENTTYPE = CLIENTTYPE::Tablet THEN  
+if CURRENTCLIENTTYPE = CLIENTTYPE::Tablet then  
   Message('The session is running the Tablet client');  
 ```  
 

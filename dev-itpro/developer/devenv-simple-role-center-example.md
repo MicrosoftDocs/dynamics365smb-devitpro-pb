@@ -3,7 +3,7 @@ title: Simple Role Center Example
 description: "Provides AL code for a simple role center"
 author: blrobl
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -69,11 +69,27 @@ page 50125 MyRoleCenter
                     RunObject = Page "Posted Sales Invoices";
                     ApplicationArea = All;
                 }
+
+                group(SalesDocuments)
+                {
+                    Caption = 'Sales Documents';
+                    action("Sales Document Entity")
+                    {
+                        ApplicationArea = All;
+                        RunObject = page "Sales Document Entity";
+                    }
+                    action("Sales Document Line Entity")
+                    {
+                        ApplicationArea = All;
+                        RunObject = page "Sales Document Line Entity";
+                    }
+                }
             }
         }
 
         area(Embedding)
         {
+
             action(Sales)
             {
                 Caption = 'Sales lists';
@@ -88,6 +104,7 @@ page 50125 MyRoleCenter
                 ApplicationArea = All;
 
             }
+
 
         }
 
@@ -122,6 +139,14 @@ page 50125 MyRoleCenter
             }
         }
     }
+}
+
+// Creates a profile that uses the Role Center
+profile MyProfile
+{
+    ProfileDescription = 'Sample Profile';
+    RoleCenter = MyRoleCenter;
+    Caption = 'My profile';
 }
 
 ```

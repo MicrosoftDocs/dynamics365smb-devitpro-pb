@@ -1,7 +1,7 @@
 ---
 title: "AL Control Statements"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,9 @@ The control structures in AL are divided into the following main groups, as desc
 - Conditional Statements
 - Repetitive Statements
 
+> [!NOTE]  
+> In the following sections conventions for how to structure and align AL code are presented to introduce best practices. In many cases the structure is not necessary to get the code to compile, but rather to improve readability.
+
 ## AL Compound Statements
 In some cases, the AL syntax only lets you use a single statement. However, if you have to execute more than one simple statement, the statements can be written as a compound statement by enclosing the statements between the begin and end keywords.  
 
@@ -29,10 +32,10 @@ begin
   <Statement 2>;  
   ..  
   <Statement n>;  
-end  
+end;  
 ```  
 
- The individual statements are separated by a semicolon. In AL, a semicolon is used to separate statements and not, as in other programming languages, as a terminator symbol for a statement. Nevertheless, an extra semicolon before an end does not cause an error because it is interpreted by the compiler as an empty statement.  
+The individual statements are separated by a semicolon. In AL, a semicolon is used to separate statements and not, as in other programming languages, as a terminator symbol for a statement. Nevertheless, an extra semicolon before an end does not cause an error because it is interpreted by the compiler as an empty statement.  
 
 ## Blocks  
 The begin-end structure is also called a *block*. Blocks can be very useful to refer to the other control structures in AL.  
@@ -232,7 +235,7 @@ case Field of
     y := x;  
     a := b;  
   end;  
-end  
+end;  
 ```  
 
 #### Example  
@@ -247,7 +250,7 @@ case Number of
     MESSAGE('In the range from 10 to 100.');  
   else  
     MESSAGE('Neither 1, 2, 9, nor in the range from 10 to 100.');  
-end  
+end;  
 ```  
 #### Example  
 The following AL code shows how value sets in a case statement are evaluated if the expression is a Code data type.
@@ -261,7 +264,7 @@ case MyCode of
     MESSAGE('This message is not displayed.');  
 else  
   MESSAGE('The value set does not match the expression.');
-end
+end;
 ```
 
 This example requires that you create the following code data type variable.
@@ -520,11 +523,11 @@ break;
  The following AL code increases the variable I by one for each iteration, and terminates the iteration when I equals 10.  
 
 ```  
-WHILE Count < 1000 DO
-  BEGIN
+while Count < 1000 do
+  begin
   Count := Count + 1;
   MESSAGE(FORMAT(Count));
-  IF Count = 10 THEN
+  if Count = 10 then
     break;
   end; 
 end; 

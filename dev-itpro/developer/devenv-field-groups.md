@@ -2,7 +2,7 @@
 title: Field Groups
 description: A field group defines the fields to display in a drop-down control in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 04/23/2019
+ms.date: 10/23/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,18 +15,18 @@ author: SusanneWindfeldPedersen
 
 A field group in table or table extension objects defines the fields to display in a drop-down control on pages that use the table. 
 
+In a table object, you define field groups by first adding a `fieldgroups` control, and then adding one or more `fieldgroup(<Name>; <Field>)` keyword for each group, where:
+
+- `<Name>` can be either `DropDown`, for adding fields to the drop-down control, or `Brick` to display data as tiles.
+- `<Field>` is a comma-separated list of the fields, by name, to include in the group.  
+
 > [!NOTE]
 > A field group can also be used to specify fields that display when list type pages are shown in the tile view. For more information, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).
-
-In a table object, you define field groups by first adding a `fieldgroups` control, and then adding one or more `fieldgroup(<Name>; <Field>` keyword for each group, where:
-
-- `<Name>` can be either `DropDown`, for adding fields to the drop-down control.
-- `<Field>` is a comma-separated list of the fields, by name, to include in the group.  
 
 ```
 fieldgroups
 {
-  fieldgroup(Dropdown; Field1, Field2)
+  fieldgroup(DropDown; Field1, Field2)
   {
         
   }
@@ -38,6 +38,9 @@ fieldgroups
 ```
 > [!NOTE]  
 > The `fieldgroups` keyword cannot be inserted before the `key` control.
+
+> [!IMPORTANT]  
+> The syntax for using a DropDown, must be exactly `DropDown` with the right capitalization.
 
 
 In a table extension object, the `fieldgroups` control allows you to add more fields to a field group defined for the table object. This can be done by using the `addlast(<name>; <field>)` keyword.
@@ -73,6 +76,7 @@ tableextension 50100 CustomerExercise extends Customer
     }
 }
 ```
+
 <!--
 ## Define fields to display in tile view
 

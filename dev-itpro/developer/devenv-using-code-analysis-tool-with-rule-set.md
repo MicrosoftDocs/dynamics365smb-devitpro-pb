@@ -3,7 +3,7 @@ title: "Using the Code Analysis Tools with the Ruleset"
 description: "Configuring and using a custom ruleset on an AL project."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/24/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -83,4 +83,5 @@ Changing the contents of the ruleset file will not be detected by the [!INCLUDE[
 [Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)    
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Development in AL](devenv-dev-overview.md)  
-[Debugging in AL](devenv-debugging.md)
+[Debugging in AL](devenv-debugging.md)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  

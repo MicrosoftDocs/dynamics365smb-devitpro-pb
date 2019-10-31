@@ -2,7 +2,7 @@
 title: "EOS Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,11 +53,11 @@ An instance of the [InStream](instream-data-type.md) data type.
   
 FileTest.OPEN('c:\MyFolder\MyText.txt');  
 FileTest.CREATEINSTREAM(StreamInTest);  
-WHILE NOT StreamInTest.EOS DO BEGIN  
+while not StreamInTest.EOS do begin 
   StreamInTest.READTEXT(Buffer);  
   //Do some processing  
   MESSAGE('Stream is still processing')  
-END;  
+end;  
 MESSAGE('End of Stream');  
 ```  
   

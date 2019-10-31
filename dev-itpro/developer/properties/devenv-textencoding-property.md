@@ -1,7 +1,7 @@
 ---
 title: "TextEncoding Property (XMLports)"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,7 +53,7 @@ The **TextEncoding** property is only available when the **Format** property is 
   
 ```  
 ...  
-      CASE MyDefinitionTable."File Encoding" OF  
+      case MyDefinitionTable."File Encoding" of  
         MyDefinitionTable."File Encoding"::"MS-DOS":  
           currXMLport.TEXTENCODING(TEXTENCODING::MSDos);  
         MyDefinitionTable."File Encoding"::"UTF-8":  

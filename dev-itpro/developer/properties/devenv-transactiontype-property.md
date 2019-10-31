@@ -1,7 +1,7 @@
 ---
 title: "TransactionType Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Sets the transaction type.
 -   Database transactions for all AL code  
   
 ## Remarks  
- There are four basic transaction types: **Browse**, **Snapshot**, **UpdateNoLocks**, and **Update**. Additionally, there is a **Report** type that maps to the **Browse** transaction type. Each transaction type defines the behavior of a transaction in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and takes effect from the start of a transaction. A transaction starts at the start of the outermost code or immediately after the [COMMIT Method \(Database\)](../methods/devenv-COMMIT-Method-Database.md) is called. A transaction ends at the end of the outermost code or when the COMMIT method is called. For example, if a method in a codeunit calls another codeunit, then a new transaction is not started at the start of the second codeunit.  
+ There are four basic transaction types: **Browse**, **Snapshot**, **UpdateNoLocks**, and **Update**. Additionally, there is a **Report** type that maps to the **Browse** transaction type. Each transaction type defines the behavior of a transaction in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and takes effect from the start of a transaction. A transaction starts at the start of the outermost code or immediately after the [COMMIT Method \(Database\)](../methods-auto/database/database-COMMIT-Method.md) is called. A transaction ends at the end of the outermost code or when the COMMIT method is called. For example, if a method in a codeunit calls another codeunit, then a new transaction is not started at the start of the second codeunit.  
   
  The following table shows transaction behavior with SQL Server.  
   
@@ -30,7 +30,7 @@ Sets the transaction type.
 |--------------------------|------------------|  
 |Browse|This is a read-only transaction. Modifications cannot occur within the transaction. All read operations are performed with READ UNCOMMITTED locking. Therefore, no locks are added and locks that are added by other sessions are not honored. This means that the transaction may read uncommitted data.<br /><br /> For more information about READ UNCOMMITTED locking, see [SET TRANSACTION ISOLATION LEVEL \(Transact-SQL\)](http://go.microsoft.com/fwlink/?LinkId=251872) in the MSDN Library.|  
 |Snapshot|This is a read-only transaction. Modifications cannot occur within the transaction. All read operations are performed with REPEATABLE READ locking. Therefore, shared locks are added on all data and are maintained until the end of the transaction. This prevents other transactions from modifying any rows that have been read by the current transaction.<br /><br /> For more information about REPEATABLE READ locking, see [SET TRANSACTION ISOLATION LEVEL \(Transact-SQL\)](http://go.microsoft.com/fwlink/?LinkId=251872) in the MSDN Library.|  
-|UpdateNoLocks|This is an update transaction. Modifications can occur within the transaction. All read operations are performed with READ UNCOMMITTED locking until the table is either modified by a write operation or locked with the [LOCKTABLE Method \(Record\)](../methods/devenv-LOCKTABLE-Method-Record.md). From this point until the end of the transaction, all read operations are performed with UPDLOCK locking.<br /><br /> For more information about UPDLOCK locking, see [Table Hints \(Transact-SQL\)](http://go.microsoft.com/fwlink/?LinkId=251875) in the MSDN Library.<br /><br /> This transaction type improves concurrency for all tables that users access within the transaction by delaying locking as much as it can. However, the disadvantage is that you must know when to lock the tables for the required transaction behavior.<br /><br /> This is the default transaction type if you have not specified a type with the [CURRENTTRANSACTIONTYPE Method \(Database\)](../methods/devenv-CURRENTTRANSACTIONTYPE-Method-Database.md).|  
+|UpdateNoLocks|This is an update transaction. Modifications can occur within the transaction. All read operations are performed with READ UNCOMMITTED locking until the table is either modified by a write operation or locked with the [LOCKTABLE Method \(Record\)](../methods-auto/record/record-LOCKTABLE-Method.md). From this point until the end of the transaction, all read operations are performed with UPDLOCK locking.<br /><br /> For more information about UPDLOCK locking, see [Table Hints \(Transact-SQL\)](http://go.microsoft.com/fwlink/?LinkId=251875) in the MSDN Library.<br /><br /> This transaction type improves concurrency for all tables that users access within the transaction by delaying locking as much as it can. However, the disadvantage is that you must know when to lock the tables for the required transaction behavior.<br /><br /> This is the default transaction type if you have not specified a type with the [CURRENTTRANSACTIONTYPE Method \(Database\)](../methods-auto/database/database-CURRENTTRANSACTIONTYPE-Method.md).|  
 |Update|This is an update transaction. Modifications can occur within the transaction. All read operations are performed with REPEATABLE READ locking until the table is either modified by any write operation or locked with the LOCKTABLE method. From this point forward, all read operations are performed with UPDLOCK locking.<br /><br /> This transaction type provides full transaction isolation from the start of the transaction, regardless of the lock status of tables that users access within the transaction.|  
   
 > [!NOTE]  
@@ -42,4 +42,4 @@ Sets the transaction type.
   
 ## See Also  
  [Isolation Levels in the Database Engine](http://go.microsoft.com/fwlink/?LinkId=251873)   
- [CURRENTTRANSACTIONTYPE Method \(Database\)](../methods/devenv-CURRENTTRANSACTIONTYPE-Method-Database.md)
+ [CURRENTTRANSACTIONTYPE Method \(Database\)](../methods-auto/database/database-CURRENTTRANSACTIONTYPE-Method.md)

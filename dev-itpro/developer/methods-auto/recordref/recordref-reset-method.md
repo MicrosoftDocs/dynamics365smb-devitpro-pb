@@ -2,7 +2,7 @@
 title: "Reset Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
  This method works the same as the [RESET Method \(Record\)](../../methods/devenv-reset-method-record.md).  
   
 ## Example  
- The following example opens the Customer \(18\) table and creates a RecordRef variable that is named RecRef. The [GETFILTERS Method \(RecordRef\)](../../methods/devenv-getfilters-method-recordref.md) gets filters that have been applied to records in the table. The filters that are returned, if any, are stored in the Filters1 variable and displayed in message box. In this example, no filters are set so the message is blank. The [SETRECFILTER Method \(RecordRef\)](../../methods/devenv-setrecfilter-method-recordref.md) sets a filter on the current key of the current record that is represented by the RecRef variable. The [GETFILTERS Method \(RecordRef\)](../../methods/devenv-getfilters-method-recordref.md) gets the filters that have been set and stores the value in the Filters2 variable. The message displays No. because the No. field is set as a filter. The RESET method removes the filter that was set. The value of the filter that is returned by the [GETFILTERS Method \(RecordRef\)](../../methods/devenv-getfilters-method-recordref.md) after the [RESET Method \(RECORDREF\)](../../methods/devenv-reset-method-recordref.md) is executed is stored in the Filters3 variable. Filter3 is blank because the filter that was set by `RecRef.SETRECFILTER;` is removed by the RESET method. This example requires that create the following global variables and text constants.  
+ The following example opens the Customer \(18\) table and creates a RecordRef variable that is named RecRef. The [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) gets filters that have been applied to records in the table. The filters that are returned, if any, are stored in the Filters1 variable and displayed in message box. In this example, no filters are set so the message is blank. The [SETRECFILTER Method \(RecordRef\)](recordref-setrecfilter-method.md) sets a filter on the current key of the current record that is represented by the RecRef variable. The [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) gets the filters that have been set and stores the value in the Filters2 variable. The message displays No. because the No. field is set as a filter. The RESET method removes the filter that was set. The value of the filter that is returned by the [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) after the [RESET Method \(RECORDREF\)](recordref-reset-method.md) is executed is stored in the Filters3 variable. Filter3 is blank because the filter that was set by `RecRef.SETRECFILTER;` is removed by the RESET method. This example requires that create the following global variables and text constants.  
   
 |Variable name|DataType|  
 |-------------------|--------------|  

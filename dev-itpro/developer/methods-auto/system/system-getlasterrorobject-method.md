@@ -2,7 +2,7 @@
 title: "GetLastErrorObject Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,15 +51,15 @@ DotNet :=   System.GetLastErrorObject()
 |WebException|DotNet|'System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Net.WebException|  
   
 ```  
-IF NOT MyCodeunit.RUN THEN BEGIN  
+if not MyCodeunit.RUN then begin  
     Exception := GETLASTERROROBJECT;  
   
-    IF NOT Exception.InnerException.GetType.Equals(WebException.GetType) THEN  
+    if not Exception.InnerException.GetType.Equals(WebException.GetType) then  
         ERROR(Exception.Message);  
   
     WebException := Exception.InnerException;  
     ERROR(WebException.Message);  
-END;  
+end;  
 ```  
 ## See Also
 [System Data Type](system-data-type.md)  

@@ -2,7 +2,7 @@
 title: "FieldCount Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,12 +51,12 @@ The number of fields in the table.
   
 ```  
   
-FOR i := 3 TO 5 DO BEGIN  
+for i := 3 TO 5 DO begin  
   MyRecordRef.OPEN(i);  
   varFieldCount := MyRecordRef.FIELDCOUNT;  
   MESSAGE(Text000, MyRecordRef.NAME, varFieldCount);  
   MyRecordRef.CLOSE;  
- END;  
+ end;  
 ```  
   
 

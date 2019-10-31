@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: martinni
-ms.date: 08/20/2019
+ms.date: 10/01/2019
 
 ---
 
@@ -27,6 +27,8 @@ The following table lists the cumulative updates that have been released for the
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
+|[4522950](https://support.microsoft.com/en-us/help/4522950) |Cumulative Update 12 |October, 2019| Application Build 36481</br>Platform Build 36446   |AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4518534](https://support.microsoft.com/en-us/help/4518534) |Cumulative Update 11 |September, 2019| Application Build 35888</br>Platform Build 35820   |AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4514619](https://support.microsoft.com/en-us/help/4514619) |Cumulative Update 10 |August, 2019| Application Build 34590</br>Platform Build 34560   |AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4511343](https://support.microsoft.com/en-us/help/4511343) |Cumulative Update 09 |July, 2019| Application Build 33838</br>Platform Build 33825   |AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4506821](https://support.microsoft.com/en-us/help/4506821) |Cumulative Update 08 |June, 2019| Application Build 32990</br>Platform Build 32943   |AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|

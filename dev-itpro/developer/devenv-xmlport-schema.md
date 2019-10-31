@@ -3,7 +3,7 @@ title: "Defining an XMLport schema"
 description: "An XMLport schema determines which data is exported from or imported to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables and the format and structure of the files used."
 author: blrobl
 ms.custom: na
-ms.date: 08/06/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -75,6 +75,7 @@ For information about the use of namespaces in XMLports see [Using Namespaces wi
 ## See Also
 [XMLport Object](devenv-xmlport-object.md)  
 [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md)  
+[Using Namespaces with XMLports](devenv-using-namespaces-with-xmlports.md)  
 [XMLport Triggers](triggers/devenv-xmlport-triggers.md)  
 [Request Pages](devenv-request-pages.md)  
 [XMLport Overview](devenv-xmlport-overview.md)

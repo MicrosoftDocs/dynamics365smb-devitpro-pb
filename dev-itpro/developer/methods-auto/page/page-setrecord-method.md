@@ -2,7 +2,7 @@
 title: "SetRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,15 +51,13 @@ The record to set as the current record. You cannot use a temporary record for t
 |------------------------|---------------|  
 |Text 000|The record was not found.|  
   
-```  
-IF  
-  MyRecord.GET('30000') THEN BEGIN  
+```
+if MyRecord.GET('30000') then begin  
   MyPage.SETRECORD(MyRecord);  
-  MyPage.RUN;  
-   END  
-ELSE BEGIN  
+  MyPage.RUN;
+end else begin
   MESSAGE(Text000);  
-  END;  
+end;  
 ```
 
 ## See Also

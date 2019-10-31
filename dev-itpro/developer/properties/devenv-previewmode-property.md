@@ -1,7 +1,7 @@
 ---
 title: "PreviewMode Property"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: e79b25b8-4582-450b-93e0-5ec01110e9fc
 caps.latest.revision: 3
+author: SusanneWindfeldPedersen
 ---
 
  
@@ -41,4 +42,4 @@ PreviewMode = Normal;
  [Report Design Overview](../devenv-report-design-overview.md)   
  [Designing Reports](../devenv-designing-reports.md)   
  [Printing Reports](../devenv-printing-reports.md) -->  
- [PREVIEW Method (Report)](../methods/devenv-preview-method-report.md)
+ [PREVIEW Method (Report)](../methods-auto/report/reportinstance-preview-method.md)

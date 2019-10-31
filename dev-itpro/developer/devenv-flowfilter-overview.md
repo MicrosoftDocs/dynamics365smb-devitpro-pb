@@ -1,14 +1,12 @@
 ---
 title: "FlowFilter Overview"
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 2e01ac2b-e6e4-4d93-8495-0fc7739d3173
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 

@@ -4,7 +4,7 @@ description: "Description of what views are and how they are defined in Business
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/24/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -43,6 +43,9 @@ For more information, see [OrderBy](properties/devenv-orderby-property.md).
 ## View example
 The following example shows a page customization of the **Customer List** page, which is available for a specific role center only; the **My Role Center**. Change the role center view under **My Settings**. The definition of the view adds a caption which is displayed on the left side in the UI. The view sorts the customer balance in ascending mode and the view modifies the layout by moving the customer balance first and adding a freeze column after it.
 
+> [!IMPORTANT]  
+> The definition of the `view` section must come after any definition of layout and actions, otherwise you will get a compilation error.
+
 ```
 profile MyProfile
 {
@@ -53,6 +56,16 @@ profile MyProfile
 
 pagecustomization MyCustomization customizes "Customer List"
 {
+    layout
+    {
+        // Change the layout of the page
+    }
+
+    actions
+    {
+        // Add any actions to the page
+    }
+
     views
     {
         addfirst
@@ -62,9 +75,10 @@ pagecustomization MyCustomization customizes "Customer List"
                 Caption = 'Ordered Balance LCY';
                 OrderBy = ascending ("Balance (LCY)");
 
-
                 layout
                 {
+                    // Change the layout of the view
+
                     movefirst(Control1; "Balance (LCY)")
 
                     modify(Control1)
@@ -92,3 +106,4 @@ In general, views can in several ways be compared to page customizations. These 
 [Page Object](devenv-page-object.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Page Customization Object](devenv-page-customization-object.md)  
+[SharedLayout Property](properties/devenv-sharedlayout-property.md)

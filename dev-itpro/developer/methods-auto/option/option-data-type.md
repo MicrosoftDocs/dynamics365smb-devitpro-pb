@@ -2,7 +2,7 @@
 title: "Option Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,13 +21,15 @@ Denotes an option value. In the code snippet below, you can see how the Option d
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax example
+
 ```
 procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
     var 
         OptionVariable : Option C, "or D";
     begin
-        Message(OptionParameter::Alpha);
-        Message(OptionVariable::C);
+        Message('%1',OptionParameter::Alpha);
+        Message('%1',OptionVariable::C);
     end;
 ```
 

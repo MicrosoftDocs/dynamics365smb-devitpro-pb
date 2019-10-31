@@ -2,7 +2,7 @@
 title: "GetLastErrorCode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/09/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -61,7 +61,7 @@ ExpectedErrorCode := 'StreamIO';
 FileObj1.CREATETEMPFILE;  
 ASSERTERROR FileObj2.CREATE(FileObj1.NAME);  
 ErrorCode := GETLASTERRORCODE;  
-IF ErrorCode <> ExpectedErrorCode THEN  
+if ErrorCode <> ExpectedErrorCode then  
   ERROR(Text001, ExpectedErrorCode, ErrorCode, GETLASTERRORTEXT);  
   
 ```  

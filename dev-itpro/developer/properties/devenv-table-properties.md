@@ -3,7 +3,7 @@ title: Table and Table Extension Properties
 description: This topic lists table properties that apply to feilds of a table object.
 author: solsen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,8 +16,9 @@ ms.author: solsen
 # Table and Table Extension Properties
 The following topic lists properties that apply to the [Table Object](../devenv-table-object.md) and, in some cases, to the [Table Extension Object](../devenv-table-ext-object.md) as specified below.
 
-|Property Name|Available for Table Extension Object|Applies to|
+|Property Name|Available for Table<br />  Extension Object|Applies to|
 |-------------|-----------|---------------------|
+|[Access Property](devenv-access-property.md)||<ul><li>Table</li><li>Table fields</li></ul>|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)||<ul><li>BLOB field</li><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>TableFilter field</li><li>Text field</li><li>Time field</li></ul>|
 |[AutoFormatExpression Property](devenv-autoformatexpression-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
 |[AutoFormatType Property](devenv-autoformattype-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
@@ -41,6 +42,7 @@ The following topic lists properties that apply to the [Table Object](../devenv-
 |[Editable Property](devenv-editable-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
 |[Enabled Property](devenv-enabled-property.md)||<ul><li>BLOB field</li><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>TableFilter field</li><li>Text field</li><li>Time field</li></ul>|
 |[ExtendedDataType Property](devenv-extendeddatatype-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
+|[Extensible Property](devenv-extensible-property.md)||<ul><li>Table object</li></ul>|
 |[ExternalName Property](devenv-externalname-property.md)||<ul><li>Table object</li></ul>|
 |[ExternalSchema Property](devenv-externalschema-property.md)||<ul><li>Table object</li></ul>|
 |[FieldClass Property](devenv-fieldclass-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
@@ -61,6 +63,7 @@ The following topic lists properties that apply to the [Table Object](../devenv-
 |[PasteIsValid Property](devenv-pasteisvalid-property.md)||<ul><li>Table object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)||<ul><li>Table object</li></ul>|
 |[ReplicateData Property](devenv-replicatedata-property.md)|<ul><li>Table object</li></ul>|
+|[Scope (Table) Property](devenv-scope-table-property.md)||<ul><li>Table object</li></ul>|
 |[SignDisplacement Property](devenv-signdisplacement-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>|
 |[SQLDataType Property](devenv-sql-data-type-property.md)||<ul><li>Code field</li><li>OemCode field</li></ul>|
 |[SqlTimeStamp Property](devenv-sql-timestamp-property.md)||<ul><li>BigInteger</li></ul>|
@@ -71,11 +74,10 @@ The following topic lists properties that apply to the [Table Object](../devenv-
 |[ValuesAllowed Property](devenv-valuesallowed-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>| 
 |[Width Property](devenv-width-property.md)|X|<ul><li>BigInteger field</li><li>Code field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Text field</li></ul>| 
 
-
-
 ## See Also  
- [Properties](devenv-properties.md)  
- [Page and Page Extension Properties](devenv-page-property-overview.md)
+
+[Properties](devenv-properties.md)  
+[Page and Page Extension Properties](devenv-page-property-overview.md)
 
 
 <!--

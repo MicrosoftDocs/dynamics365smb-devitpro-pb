@@ -3,7 +3,7 @@ title: "Offer Name and Offer Summary"
 description: "Guidelines on offer name and offer summary"
 author: v-liober
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -30,7 +30,7 @@ When creating a name for your offer, you can use the following two naming struct
 
     *Example: Sales & Inventory Forecast*  
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > *If you are building a partner localized app (an app for a country where Microsoft has not provided a localization – see list of these [here](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations))*, you MUST provide an offer name with the structure “Feature” for “country / region” (for example “Sales and Inventory Forecast for Estonia”, “Tax Report for Serbia”) 
 
 | General requirements | Description | Requirements | 

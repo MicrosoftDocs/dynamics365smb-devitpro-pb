@@ -3,7 +3,7 @@ title: "Report Object"
 description: "Reports are used to print or display information from a database."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,8 +11,6 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
-
- 
 
 # Report Object
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.
@@ -38,7 +36,9 @@ The following example is a report that prints the list of customers. The report 
 report 50103 "Customer List"
 {
   CaptionML=ENU='Customer List';
-  RDLCLayout = 'Customer List Report.rdlc'; // if Word use WordLayout property
+  DefaultLayout = RDLC; // if Word use WordLayout property
+  RDLCLayout = 'MyRDLCReport.rdl';
+
   dataset
   {
     dataitem(Customer;Customer)

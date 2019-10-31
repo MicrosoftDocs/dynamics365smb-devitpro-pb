@@ -3,7 +3,7 @@ title: "Profile Object"
 description: "Description of the page object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2019
+ms.date: 10/01/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,15 +27,19 @@ Typing the shortcut `tprofile` will create the basic layout for a profile object
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Profile example
-The following profile object example performs a validation to check if the `Business Manager` page of type RoleCenter exists, and if `MyCustomization` exists, and if it is a page customization object. Then the page customization modifies the layout of the **Customer List** to make the `Name` field invisible using the `modify` method. 
+The following profile object example creates a profile for the `MyRoleCenter` Role Center, which is available in the **Role Explorer** in the UI and available to end-users. The profile also depends on the customization `MyCustomization` and modifies the layout of the **Customer List** to make the `Name` field invisible using the `modify` method. For more information, see [Profile Properties](properties/devenv-profile-properties.md).
 
 ```
-profile TheBoss
-{
-    Description = 'The Boss';
-    RoleCenter = "Business Manager";
+profile MyProfile
+{ 
+    Description = 'Some internal comment that only the Dev can see'; 
+    Caption = 'My User-friendly Name'; 
+    ProfileDescription = 'A detailed description of who is this profile for, why/how to use it (etc)' 
+    RoleCenter = MyRoleCenter; 
+    Enabled = true; 
+    Promoted = true; 
     Customizations = MyCustomization;
-}
+} 
 
 pagecustomization MyCustomization customizes "Customer List"
 {
