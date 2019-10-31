@@ -97,7 +97,7 @@ ELSE BEGIN
   log.Status := log.Status::Failure;
   IF MethodName <> '' THEN
     log.Message := GETLASTERRORTEXT;
-END
+END;
 log.INSERT(true);
 ```
 

@@ -75,6 +75,7 @@ For information about the use of namespaces in XMLports see [Using Namespaces wi
 ## See Also
 [XMLport Object](devenv-xmlport-object.md)  
 [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md)  
+[Using Namespaces with XMLports](devenv-using-namespaces-with-xmlports.md)  
 [XMLport Triggers](triggers/devenv-xmlport-triggers.md)  
 [Request Pages](devenv-request-pages.md)  
 [XMLport Overview](devenv-xmlport-overview.md)

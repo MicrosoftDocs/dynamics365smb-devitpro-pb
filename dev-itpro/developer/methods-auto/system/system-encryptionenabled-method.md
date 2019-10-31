@@ -37,9 +37,9 @@ Ok :=   System.EncryptionEnabled()
  This code example checks if the tenant is configured for encryption.  
 
 ```  
-IF ENCRYPTIONENABLED THEN  
+if ENCRYPTIONENABLED then  
         MESSAGE('Encryption has been enabled')  
-      ELSE  
+      else  
         MESSAGE('Encryption has not been enabled')  
 ```   
 

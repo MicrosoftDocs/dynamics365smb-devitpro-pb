@@ -45,13 +45,13 @@ The codeunit that contains the event subscribers.
  The codeunit instance that is unbound will be the same instance that previously was bound.  
   
 ## Example  
- The following code illustrates a typical use of the BINDSUBSCRIPTION method.  
+ The following pseudocode illustrates a typical use of the BINDSUBSCRIPTION method.  
   
 ```  
 Method MyFunction(….)  
 LocalVar  
   SubScriberCodeunit5000;  
-BEGIN  
+begin 
   // Set global information on the subscriber codeunit if required  
   // You can rely on the instance being the same as the one receiving the event subscriber call  
   
@@ -61,7 +61,7 @@ BEGIN
   UNBINDSUBSCRIPTION(SubscriberCodeunit888);  // Now deactivating again  
   DoStuff(…);  // This time no events are raised inside SubscriberCodeunit888;  
   
-END;  
+end;  
   
 ```  
 

@@ -54,13 +54,12 @@ The name of the file that you want to check. This includes the path. When you en
 ```  
   
 FileName := 'C:\TestFolder\TestFile2.txt';  
-IF EXISTS(FileName) THEN BEGIN  
+if EXISTS(FileName) then begin  
   TestFile.WRITEMODE(TRUE);  
   TestFile.OPEN(FileName);  
   TestFile.WRITE('Hello World');  
   TestFile.CLOSE;  
-END  
-ELSE  
+end else  
 MESSAGE('%1 does not exist.', FileName);  
 ```  
   

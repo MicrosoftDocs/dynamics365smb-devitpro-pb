@@ -9,7 +9,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 0ba68a20-d83a-4e4c-9938-dac7fa8f5461
 ms.author: solsen
 ---
 

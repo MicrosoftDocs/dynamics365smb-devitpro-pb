@@ -56,10 +56,10 @@ The RecordID that contains the table number and the primary key of the table and
 RecRef.OPEN(DATABASE::Customer);  
 MyFieldRef := RecRef.FIELD(1);  
 MyFieldRef.VALUE := '30000';  
-IF RecRef.FIND('=') THEN BEGIN  
+if RecRef.FIND('=') then begin  
   RecID := RecRef.RECORDID;  
   RecRef.GET(RecID);  
-END  
+end;  
 ```  
 
 ## See Also

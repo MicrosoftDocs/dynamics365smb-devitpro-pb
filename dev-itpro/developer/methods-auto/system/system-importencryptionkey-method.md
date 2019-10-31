@@ -51,18 +51,18 @@ Specifies the password the protects the file.
  This example requires that you create a text constant ServerFileName.  
 
 ```  
-IF ENCRYPTIONENABLED THEN  
-        IF ENCRYPTIONKEYEXISTS THEN  
-          IF NOT CONFIRM('Encryption has been enabled and the server already contains an encryption key.\'  
+if ENCRYPTIONENABLED then  
+        if ENCRYPTIONKEYEXISTS then  
+          if not CONFIRM('Encryption has been enabled and the server already contains an encryption key.\'  
           + 'Importing a key will overwrite any existing key and may result in lost data.\\'  
-          + 'Do you wish to continue?') THEN  
+          + 'Do you wish to continue?') then  
             EXIT  
-        ELSE  
-          IF NOT CONFIRM('Importing a key different from the already configured key will result in data corruption.\\'  
-          + 'Do you wish to continue?') THEN  
+       else  
+          if not CONFIRM('Importing a key different from the already configured key will result in data corruption.\\'  
+          + 'Do you wish to continue?') then  
             EXIT  
 
-      IF NOT UPLOAD('Upload encrypted key','','Encrypted Key File (*.ekey)|*.ekey','ExportedKey.ekey',ServerFileName) THEN  
+      if not UPLOAD('Upload encrypted key','','Encrypted Key File (*.ekey)|*.ekey','ExportedKey.ekey',ServerFileName) then  
         EXIT;  
 
       IMPORTENCRYPTIONKEY(ServerFileName,'This is my personal secret');  

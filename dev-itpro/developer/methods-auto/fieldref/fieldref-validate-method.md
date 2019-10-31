@@ -58,13 +58,13 @@ The value to insert in the field.
 
 ```  
 EntryRecref.OPEN(17);  
-IF EntryRecref.FINDFIRST THEN BEGIN  
+if EntryRecref.FINDFIRST then begin  
   MyFieldRef := EntryRecref.FIELD(3);  
   MESSAGE(Text000, EntryRecref.RECORDID, MyFieldRef.VALUE);  
   MyFieldRef.VALIDATE('1210');  
   EntryRecref.MODIFY;  
   MESSAGE(Text001, EntryRecref.RECORDID, MyFieldRef.VALUE);  
-END;  
+end;  
 ```  
 
 

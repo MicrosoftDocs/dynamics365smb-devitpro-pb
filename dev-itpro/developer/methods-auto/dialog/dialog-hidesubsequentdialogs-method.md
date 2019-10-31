@@ -72,7 +72,7 @@ var
     SLEEP(2000);
 
     // MyDialog1 dialog will open 
-    MyDialog1.Update('Dialog 1 #1', Text000);
+    MyDialog1.OPEN('Dialog 1 #1', Text000);
     SLEEP(2000);
 
     // As soon as MyDialog1 dialog is closed, other can be reopened and they will no longer be hidden

@@ -104,7 +104,7 @@ Query.READ;
 
 ```  
 OK := MyCustomerQuery.SAVEASCSV('c:\mycustomers.csv', 0, '1,10,40');  
-IF NOT OK THEN  
+if not OK then  
   ERROR(Text000);  
 ```  
 

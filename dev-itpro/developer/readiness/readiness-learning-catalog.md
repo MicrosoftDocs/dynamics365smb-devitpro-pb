@@ -50,10 +50,8 @@ ms.author: solsen
 :::row:::
     :::column:::
 
-    ### Materials for pre-sales roles
-
+    [What's new](readiness-learning-presales.md#whatsnew)
     [Pre-sales Learning Catalog](readiness-learning-presales.md)
-
     [Get started](readiness-learning-presales.md#get-started)
     [Grow your business](readiness-learning-presales.md#grow)
     [Busines value](readiness-learning-presales.md#busvalue)
@@ -71,6 +69,7 @@ ms.author: solsen
     [Get started](readiness-learning-sales.md#get-started)
     [Grow your business](readiness-learning-sales.md#grow)
 
+
       :::column-end:::
 :::row-end:::
 :::row:::
@@ -86,14 +85,14 @@ ms.author: solsen
 
     :::column-end:::
     :::column:::
+:::column-end:::
+    :::column:::
 
-    ### Materials for business users
 
     [Business Users Learning Catalog](readiness-learning-bus-users.md)
-
     [Get started](readiness-learning-bus-users.md#get-started)
     [Financials](readiness-learning-bus-users.md#financials)
     [Trade](readiness-learning-bus-users.md#trade)
 
- :::column-end:::
+     :::column-end:::
 :::row-end:::

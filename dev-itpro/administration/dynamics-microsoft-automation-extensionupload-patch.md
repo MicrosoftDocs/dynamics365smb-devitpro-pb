@@ -50,6 +50,7 @@ If-Match:-*
 
 ## See Also 
 [Introduction to Automation APIs](itpro-introduction-to-automation-apis.md)  
+[Extension Resource Type](dynamics-microsoft-automation-extension.md)
 [Get Extensions](dynamics-microsoft-automation-extension-get.md)  
 [Install extension](dynamics-microsoft-automation-extension-post.md)  
 [Uninstall extension](dynamics-microsoft-automation-extension-post.md)  

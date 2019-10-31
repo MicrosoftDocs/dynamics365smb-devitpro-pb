@@ -43,9 +43,9 @@ An instance of the [Report](report-data-type.md) data type.
 |Balance|Decimal|  
 
 ```  
-IF Balance = 0 THEN  
+if Balance = 0 then  
   CurrReport.SKIP  
-ELSE  
+else  
   ... // Do some processing.  
 ```  
 

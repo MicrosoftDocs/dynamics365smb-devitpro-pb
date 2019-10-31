@@ -42,7 +42,7 @@ The default client that is configured for the server instance that is used by th
  In the following example, DEFAULTCLIENTTYPE is used to return the default client type that is configured for the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance that is used by the current session.  
 
 ```  
-IF DEFAULTCLIENTTYPE = CLIENTTYPE::Web THEN  
+if DEFAULTCLIENTTYPE = CLIENTTYPE::Web then  
   Message('The default client is Web client');  
 ```  
 

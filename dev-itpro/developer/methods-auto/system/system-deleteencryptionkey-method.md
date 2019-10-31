@@ -32,7 +32,7 @@ Deletes an encryption key for the current tenant.
  This code example checks if encryption is configured for the tenant using the [ENCRYPTIONENABLED](../../methods-auto/system/system-encryptionenabled-method.md) method and if so, it performs the deletion of the encryption key.  
 
 ```  
-IF NOT ENCRYPTIONENABLED THEN  
+if not ENCRYPTIONENABLED then  
   ERROR('Encryption has not been enabled.');  
   DELETEENCRYPTIONKEY();  
 ```

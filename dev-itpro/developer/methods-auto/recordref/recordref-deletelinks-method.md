@@ -50,11 +50,10 @@ CustomerNum := '01121212';
 CustomerRecref.OPEN(18);  
 MyFieldRef := CustomerRecref.FIELD(1);  
 MyFieldRef.VALUE := CustomerNum;  
-IF CustomerRecref.FIND('=') THEN BEGIN  
+if CustomerRecref.FIND('=') then begin  
   CustomerRecref.DELETELINKS;  
   MESSAGE(Text000, CustomerNum);  
-END  
-ELSE  
+end else
   MESSAGE(Text001);  
 ```  
 

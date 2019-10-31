@@ -74,14 +74,14 @@ Dialog windows that are opened by an object are closed when the object terminate
 ```  
 MyNext := 0;  
 MyDialog.OPEN(Text000,MyNext);  
-REPEAT  
+repeat  
   // Do some processing.  
   SLEEP(1000);  
   MyNext := MyNext + 1;  
   MyDialog.UPDATE(); // Update the field in the dialog.  
-UNTIL MyNext = 4;  
+until MyNext = 4;  
 SLEEP(1000);  
-MyDialog.CLOSE()  
+MyDialog.CLOSE();  
 ```  
   
  The dialog window opens and displays this text:  
@@ -104,18 +104,18 @@ The progress indicator do
   
 |Text constant name|Constant value|  
 |------------------------|--------------------|  
-|Text000|Progress from 0 to 9999 @1@@@@@|  
+|Text000|Progress from 0 to 9999 #1#####|  
   
 ```  
 MyNext := 0;  
 MyDialog.OPEN(Text000,MyNext);  
-REPEAT  
+repeat  
   // Do some processing.  
   MyNext := MyNext + 1;  
   MyDialog.UPDATE(); // Update the field in the dialog.  
-UNTIL MyNext = 9999;  
+until MyNext = 9999;  
 SLEEP(1000);  
-MyDialog.CLOSE()  
+MyDialog.CLOSE();  
 ```  
   
 The dialog window opens and displays the progress indicator and percentage.  

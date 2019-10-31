@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2019
+ms.date: 10/23/2019
 ---
 # Frequently Asked Questions for Dynamics 365 Business Central Developer and ITPro Experiences
 
@@ -37,7 +37,7 @@ For more information, see [Learn about automatic SQL Database backups](/azure/sq
 
 ## Can I request a copy of the backup of my production database?
 
-No, this is not currently supported.
+No, but from the Business Central administration center, you can export the database for Business Central online environments as .bacpac files to an Azure storage container. For more information, see [Exporting Databases](administration/tenant-admin-center-database-export.md).  
 
 ## Can I get training in Business Central?
 
@@ -66,4 +66,5 @@ The limit for the size of each tenant's data in [!INCLUDE [prodshort](developer/
 [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](terms/lifecycle-policy-on-premises.md)  
 [Dynamics 365 Business Central Compliance](/dynamics365/business-central/compliance/compliance-overview)  
 [FAQ for Dynamics 365 Update Policies](/dynamics365/get-started/faq-update-policy)  
+[Dynamics 365 Resources](https://dynamics.microsoft.com/resources/)  
 [Welcome to [!INCLUDE[prodlong](includes/prodlong.md)]](/dynamics365/business-central/index)  

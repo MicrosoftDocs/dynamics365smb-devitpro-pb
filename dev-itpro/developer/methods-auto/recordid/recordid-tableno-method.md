@@ -52,14 +52,13 @@ The ID of the table.
 ```  
   
 RecRef.OPEN(DATABASE::Customer);  
-IF RecRef.FIND('-') THEN BEGIN  
+if RecRef.FIND('-') then begin  
   RecID := RecRef.RECORDID;  
   varTableNumber := RecID.TABLENO;  
   MESSAGE('The Customer table is number: %1', varTableNumber);  
-  END  
-ELSE BEGIN  
+end else begin
 MESSAGE('No records found in the table');  
-END;  
+end;  
 ```  
   
 

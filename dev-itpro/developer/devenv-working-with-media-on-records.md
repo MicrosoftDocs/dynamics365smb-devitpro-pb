@@ -116,7 +116,7 @@ To avoid unintentionally deleting referenced media objects, media sharing should
 This example copies a media set field called `MediaSetField` in table `mediaSourceTable` to a field in another table `mediaTargetTable`. The `FOR` loop will iterate all media objects in the source, and then insert their ID in the target field. 
 
 ```
-FOR index := 1 TO mediaSourceTable.MediaSetField.COUNT DO 
+for index := 1 to mediaSourceTable.MediaSetField.COUNT do 
   mediaTargetTable.MediaSetField.INSERT(mediaSourceTable.MediaSetField.ITEM(index)); 
 MediaTargetTable.Modify(true);
 ```

@@ -89,7 +89,7 @@
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
 #### [Updating Environments](administration/tenant-admin-center-update-management.md)
-<!--#### [Database Exports](administration/tenant-admin-center-database-export.md)-->
+#### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 #### [Administration Center API](administration/administration-center-api.md)
@@ -117,6 +117,7 @@
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
+### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### Monitoring Server Events
