@@ -59,7 +59,7 @@ The input date.
 |Text000|The closing date for %1 is %2.|  
   
 ```  
-Date1 := 040414D;  
+Date1 := 20140404D;  
 CloDate := CLOSINGDATE(Date1);  
 MESSAGE(Text000, Date1, CloDate);  
 ```  
@@ -82,15 +82,15 @@ MESSAGE(Text000, Date1, CloDate);
 |Text001|The closing date for %1 is %2.|  
   
 ```  
-// Date1 := 040414C;  
+// Date1 := 20140404C;  
 // The previous statement does not compile because the compiler   
-// cannot convert '040414C' to a Date data type.  
-Date1 := 040414D;  
+// cannot convert '20140404C' to a Date data type.  
+Date1 := 20140404D;  
 // The previous statement compiles.   
-// The compiler converts '040414D' to a Date data type.  
-// CloDate1 := CLOSINGDATE(050514C);  
+// The compiler converts '20140404D' to a Date data type.  
+// CloDate1 := CLOSINGDATE(20140505C);  
 // The previous statement does not compile because the compiler   
-// cannot convert '050514C' to a Date data type and the CLOSINGDATE   
+// cannot convert '20140505C' to a Date data type and the CLOSINGDATE   
 // method requires a Date data type for its parameter.  
 CloDate1 := CLOSINGDATE(Date1);  
 // The previous statement compiles.  

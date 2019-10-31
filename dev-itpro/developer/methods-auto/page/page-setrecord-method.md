@@ -51,15 +51,13 @@ The record to set as the current record. You cannot use a temporary record for t
 |------------------------|---------------|  
 |Text 000|The record was not found.|  
   
-```  
-IF  
-  MyRecord.GET('30000') THEN BEGIN  
+```
+if MyRecord.GET('30000') then begin  
   MyPage.SETRECORD(MyRecord);  
-  MyPage.RUN;  
-   END  
-ELSE BEGIN  
+  MyPage.RUN;
+end else begin
   MESSAGE(Text000);  
-  END;  
+end;  
 ```
 
 ## See Also

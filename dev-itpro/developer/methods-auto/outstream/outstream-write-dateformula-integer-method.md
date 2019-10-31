@@ -52,15 +52,20 @@ WRITE adds a zero byte at the end of the stream. This is differs from WRITETEXT,
   
 ## Example  
   
+This example requires that you create the following variables.  
+  
+|Variable name|DataType|SubType|  
+|-------------------|--------------|---|  
+|recBinaries|Record|Company Information|  
+|OStream|OutStream|| 
+|DateForm|DateFormula|| 
+
 ```  
 recBinaries.FIND('-');  
-recBinaries.Data.CREATEOUTSTREAM(OutStream);  
-OutStream.WRITE('Secretary');  
-OutStream.WRITE('Alice');  
-OutStream.WRITE('Hart');  
-OutStream.WRITE(010696D);  
+recBinaries.Picture.CREATEOUTSTREAM(OStream);   
+OStream.WRITE(DateForm);  
 recBinaries.MODIFY();  
-```  
+```   
   
 ## See Also
 [OutStream Data Type](outstream-data-type.md)  

@@ -59,11 +59,10 @@ varLinkid := 21;
 CustomerRecref.OPEN(18);  
 MyFieldRef := CustomerRecref.FIELD(1);  
 MyFieldRef.VALUE := CustomerNum;  
-IF CustomerRecref.FIND('=') THEN BEGIN  
+if CustomerRecref.FIND('=') then begin  
   CustomerRecref.DELETELINK(varLinkid);  
   MESSAGE(Text000, varLinkid);  
-END  
-ELSE  
+end else
   MESSAGE(Text001);  
   
 ```  

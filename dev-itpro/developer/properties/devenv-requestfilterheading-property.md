@@ -7,8 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: e11c0fa0-0d61-43b9-8613-cb443588e790
-caps.latest.revision: 8
+author: jswymer
 ---
 
 
@@ -30,4 +29,5 @@ RequestFilterHeading = 'Entry';
 ``` 
   
 ## See Also  
+[Request Pages](../devenv-request-pages.md)  
 [Multilanguage Development](../devenv-multilanguage-development.md)

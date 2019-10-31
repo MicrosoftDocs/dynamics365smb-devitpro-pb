@@ -72,12 +72,12 @@ varRecordToDelete := '10000';
 MyRecordRef.OPEN(18);  
 MyFieldRef := MyRecordRef.FIELD(1);  
 MyFieldRef.VALUE := varRecordToDelete;  
-IF MyRecordRef.FIND('=') THEN BEGIN  
-  IF MyRecordRef.DELETE THEN BEGIN  
+ifMyRecordRef.FIND('=') then begin  
+  ifMyRecordRef.DELETE then begin  
     MyRecordRef.MODIFY;  
     MESSAGE(Text000, MyFieldRef.VALUE);  
-  END;  
-END;  
+  end;  
+end;  
 
 ```  
 

@@ -45,8 +45,8 @@ Advanced table relations are typically prefixed with a conditional statement and
 ```  
 <TableRelation> =  
    <TableName>[.<FieldName>] [WHERE(<TableFilters>)] |  
-   IF (<Conditions>) <TableName>[.<FieldName>]  
-   [WHERE(<TableFilters>)] ELSE <TableRelation>  
+   if (<Conditions>) <TableName>[.<FieldName>]  
+   [WHERE(<TableFilters>)] else <TableRelation>  
 <Conditions> ::=  
    <TableFilters>  
 <TableFilters> ::=  

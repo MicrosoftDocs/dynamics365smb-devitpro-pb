@@ -32,7 +32,7 @@ begin
   <Statement 2>;  
   ..  
   <Statement n>;  
-end  
+end;  
 ```  
 
 The individual statements are separated by a semicolon. In AL, a semicolon is used to separate statements and not, as in other programming languages, as a terminator symbol for a statement. Nevertheless, an extra semicolon before an end does not cause an error because it is interpreted by the compiler as an empty statement.  
@@ -235,7 +235,7 @@ case Field of
     y := x;  
     a := b;  
   end;  
-end  
+end;  
 ```  
 
 #### Example  
@@ -250,7 +250,7 @@ case Number of
     MESSAGE('In the range from 10 to 100.');  
   else  
     MESSAGE('Neither 1, 2, 9, nor in the range from 10 to 100.');  
-end  
+end;  
 ```  
 #### Example  
 The following AL code shows how value sets in a case statement are evaluated if the expression is a Code data type.
@@ -264,7 +264,7 @@ case MyCode of
     MESSAGE('This message is not displayed.');  
 else  
   MESSAGE('The value set does not match the expression.');
-end
+end;
 ```
 
 This example requires that you create the following code data type variable.
@@ -523,11 +523,11 @@ break;
  The following AL code increases the variable I by one for each iteration, and terminates the iteration when I equals 10.  
 
 ```  
-WHILE Count < 1000 DO
-  BEGIN
+while Count < 1000 do
+  begin
   Count := Count + 1;
   MESSAGE(FORMAT(Count));
-  IF Count = 10 THEN
+  if Count = 10 then
     break;
   end; 
 end; 

@@ -63,10 +63,10 @@ CustomerRecref.OPEN(DATABASE::Customer);
 MyFieldRef := CustomerRecref.FIELD(1);  
 MyFieldRef.SETRANGE('10000' , '40000');  
 Count := 0;  
-IF CustomerRecref.FIND('-') THEN  
-  REPEAT  
+if CustomerRecref.FIND('-') then  
+  repeat  
     Count := Count + 1;  
-  UNTIL CustomerRecref.NEXT = 0;  
+  until CustomerRecref.NEXT = 0;  
 MESSAGE(Text000 , Count);  
 ``` 
 

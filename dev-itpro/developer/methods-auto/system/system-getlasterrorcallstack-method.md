@@ -52,7 +52,7 @@ ERROR('Some error message')
 // Codeunit 50002, TestErrors2  
 // OnRun trigger  
 CLEARLASTERROR;  
-IF NOT Codeunit.RUN(50001) THEN  
+if not Codeunit.RUN(50001) then  
   MESSAGE('The call stack for the last error is:\' + GETLASTERRORCALLSTACK);  
   
 ```  

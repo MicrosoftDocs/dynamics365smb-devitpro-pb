@@ -77,7 +77,7 @@ Query.READ;
 
 ```  
 OK := MyCustomerQuery.SAVEASXML('c:\myquery.xml');  
-IF NOT OK THEN  
+if not OK then
   ERROR(Text000);  
 ```  
 

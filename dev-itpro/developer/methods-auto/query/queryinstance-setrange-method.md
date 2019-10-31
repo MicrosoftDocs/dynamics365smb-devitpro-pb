@@ -116,10 +116,10 @@ MyQuery.SETFILTER(NAME, 'Selangorian Ltd.');
 MyQuery.OPEN;  
 // Reads each row in the dataset and displays message with column values.  
 // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
-WHILE MyQuery.READ DO  
-BEGIN  
+while MyQuery.READ do  
+begin  
   MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);  
-END;   
+end;   
 // Saves the resulting dataset as a CSV file.  
 MyQuery.SAVEASCSV('c:\temp\CustomerSales.csv');  
 MyQuery.CLOSE;  

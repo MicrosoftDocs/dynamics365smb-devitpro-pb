@@ -59,12 +59,12 @@ The number of the current key.
 ```  
 varFromTable := 36;  
 varToTable := 39;  
-FOR i := varFromTable TO varToTable DO BEGIN  
+for i := varFromTable TO varToTable DO begin  
   MyRecordRef.OPEN(i);  
   CurrentKeyIndex := MyRecordRef.CURRENTKEYINDEX;  
   MESSAGE(Text000, MyRecordRef.NAME, CurrentKeyIndex);  
   MyRecordRef.CLOSE;  
-END  
+end;  
 ```  
   
 

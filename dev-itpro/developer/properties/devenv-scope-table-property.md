@@ -27,10 +27,6 @@ When a table is marked with `Scope = OnPrem` it is not available to a cloud exte
 Scope = Cloud;
 ```
 
-```
-Scope = OnPrem;
-```
-
 ## See Also  
 [Properties](devenv-properties.md)  
 [Scope Property](devenv-scope-property.md)  

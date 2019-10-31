@@ -27,6 +27,9 @@ In addition to specifying options and filters, users can choose from the followi
 - Cancel
 - Help
 
+> [!NOTE]  
+> Request pages for XMLPorts are not supported by the [!INCLUDE[webclient](includes/webclient.md)] in versions prior to [!INCLUDE[prodlong](includes/prodlong.md)] 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLPort request pages do work in the [!INCLUDE[webclient](includes/nav_windows_md.md)].
+
 ## Filtering on request pages
 
 The fields that you define as `RequestFilterFields` are shown on the request page. In addition, an end user can add more fields on which to filter to the request page. Defining the `RequestFilterFields` property in `dataitem()` part of the report code is done as illustrated in the following code example (which creates the request page shown in the above figure):  

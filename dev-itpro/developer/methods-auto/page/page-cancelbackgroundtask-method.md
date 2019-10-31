@@ -52,11 +52,8 @@ var​
 begin​
   if (WaitTaskId > 0) then​
     Currpage.CancelBackgroundTask(WaitTaskId);​
-
     TaskParameters.Add('Wait', '1000');
-
     CurrPage.EnqueueBackgroundTask(WaitTaskId, 50100, TaskParameters, 1000, PageBackgroundTaskErrorLevel::Warning);
-
 end;
 ```
 ## See Also

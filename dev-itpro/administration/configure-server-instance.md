@@ -14,16 +14,16 @@ When you run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup and
 After you install [!INCLUDE[server](../developer/includes/server.md)], you can change any of the settings that you provided during Setup, plus several other settings that were not available to you in Setup.
 
 > [!NOTE]  
->  Each [!INCLUDE[server](../developer/includes/server.md)] instance has its own CustomSettings.config file.  
+> Each [!INCLUDE[server](../developer/includes/server.md)] instance has its own CustomSettings.config file.  
 
 ## Configuring [!INCLUDE[server](../developer/includes/server.md)] in Setup
  
 You configure the default instance of [!INCLUDE[server](../developer/includes/server.md)] by running [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] and selecting one of the following: 
 
--   Demo Option
--   Server Option
--   Developer Option
--   Customize > Server 
+- Demo Option
+- Server Option
+- Developer Option
+- Customize > Server 
 
 After you specify an installation option or customize your component list, the **Specify parameters** pane is displayed in Setup. The list of parameters that you see in the **Specify parameters** pane depends on which components you have selected for configuration. Setup provides a short description for each parameter. 
 
@@ -31,15 +31,15 @@ After you specify an installation option or customize your component list, the *
   
 After you install [!INCLUDE[server](../developer/includes/server.md)], you can change the configuration settings in the CustomSettings.config file of a [!INCLUDE[server](../developer/includes/server.md)] instance in the following ways:  
 
--   Using the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+- Using the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
     For more information, see [Settings in the Business Central Server Administration Tool](configure-server-instance.md#NavAdminSettings) and [Business Central Server Administration Tool](Administration-Tool.md).  
 
--   Using the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) that is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+- Using the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) that is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
     For more information, see [Using Administration Shell Cmdlets to Modify Settings](configure-server-instance.md#UsingPowerShell).  
 
--   By directly editing CustomSettings.config using a text editor.
+- By directly editing CustomSettings.config using a text editor.
 
     We recommend that you do not directly edit the configuration file, because if you make any errors in typing, then you may not be able to start the instance.  
 
@@ -52,8 +52,8 @@ If you use the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwli
 ##  <a name="NavAdminSettings"></a>[!INCLUDE[server](../developer/includes/server.md)] Instance Settings
   
 This section describes all the configuration settings for a [!INCLUDE[server](../developer/includes/server.md)] instance. The settings are grouped according to the tabs under which they appear in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
--   The **Setting** column displays the name of the setting as it appears in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
--   The **Key Name** column displays the name of the setting as it appears in the CustomSettings.config file, and is also the name to use for the setting when using the Set-NAVServerConfiguration cmdlet.
+- The **Setting** column displays the name of the setting as it appears in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+- The **Key Name** column displays the name of the setting as it appears in the CustomSettings.config file, and is also the name to use for the setting when using the Set-NAVServerConfiguration cmdlet.
 
 ##  <a name="General"></a> General Settings
   
@@ -302,13 +302,13 @@ The following table describes fields on the **Development** tab in the [!INCLUDE
 |HttpClient AL Function Response Size|NavHttpClientMaxResponseContentSize|Specifies the maximum size in megabytes of a response buffer used by the HttpClient AL function.<br /><br />The maximum allowed extension size can be adjusted based on the HttpClient AL Function Maximum Timeout setting.<br /><br />Default: 15<br />Dynamically Updatable: Yes|
 |Port|DeveloperServicesPort|The listening HTTP port for Microsoft Dynamics NAV Developer web services.<br /><br />Valid range: 1 - 65535<br />Default: 7049<br />Dynamically Updatable: No|
 
-## Compatibility Settings
+## <a name="Compatibility"></a>Compatibility Settings
 
 The following table describes settings that you can adjust for compatibility with other systems. In most cases, we do not recommend that you change these settings from their default values.
 
 |  Setting  |Key Name|  Description  |
 |-----------|--------|---------------|
-|Security Protocol|SecurityProtocol|Specifies the default security protocol level for the server instance.<br /><br />Values: **Ssl3**, **Tls**, **Tls11**, **Tls12**, **SystemDefault**. For more information about these values, see [SecurityProtocolType Enum](https://docs.microsoft.com/en-us/dotnet/api/system.net.securityprotocoltype).<br /><br />Default: **Tls12**<br />Dynamically Updatable: No|
+|Security Protocol|SecurityProtocol|Specifies the default security protocol level for the server instance. This setting also controls the [HttpClient](../developer/methods-auto/httpclient/httpclient-data-type).<br /><br />Values: **Ssl3**, **Tls**, **Tls11**, **Tls12**, **SystemDefault**. For more information about these values, see [SecurityProtocolType Enum](https://docs.microsoft.com/en-us/dotnet/api/system.net.securityprotocoltype).<br /><br />Default: **Tls12**<br />Dynamically Updatable: No|
 |Use Client Timestamp For Report Execution Timestamp|ReplaceReportExecutionTimeWithClientTime|Specifies whether to replace the report execution timestamp with the client timestamp instead of the server instance timestamp.<br /><br /> Default: Enabled (check box is selected)<br />Dynamically Updatable: No|
 |Use FIND('-') to Populate Pages Instead of FIND('=><')|UseFindMinusWhenPopulatingPage|Specifies whether pages are initially populated by using FIND('-') instead of FIND('=><'). This setting is relevant to pages that display lists in descending order. Enabling this setting ensures that the first record, instead of the last record, is in focus when the page opens. Pages that use the OnFindRecord trigger will ignore this setting and always use FIND('=><').<br /><br /> Default: Enabled (check box is selected)<br />Dynamically Updatable: No|
 
@@ -354,7 +354,7 @@ Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName MaxStreamReadSize 
 For more information about running the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).  
 
 ## See Also
-w  
+
 [Business Central Server Administration Tool](administration-tool.md)   
 [Enhancing Business Central Server Security](../security/enhancing-server-instance-security.md)   
 [Business Central Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)   

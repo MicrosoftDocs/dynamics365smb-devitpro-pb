@@ -74,7 +74,7 @@ mediaId := recA.Images.Item(1);
 // Removes the media object from the MediaSet of record 1000
 if recA.Images.Remove(mediaId) then begin
     recA.Modify;    
-    MesageText000, mediaId, recA.Images.MediaId);
+    Message(Text000, mediaId, recA.Images.MediaId);
 end else begin
     Message(Text001);
 end;

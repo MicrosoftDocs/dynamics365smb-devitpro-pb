@@ -58,8 +58,8 @@ var
 
 begin
     varDateItem := 'Date record';  
-    varDateRecord.SETFILTER("Period End", '12122015D');  
-    varDateRecord.SETFILTER("Period Start", '01012015D');  
+    varDateRecord.SETFILTER("Period End", '20151212D');  
+    varDateRecord.SETFILTER("Period Start", '20150101D');  
     varDefaultView := varDateRecord.GETVIEW;  
     varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);  
     varFilterPageBuilder.SETVIEW(varDateItem, varDefaultView);
