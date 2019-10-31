@@ -4,9 +4,9 @@ hide_bc: true
 experimental: true
 experiment_id: "81ba5f65-59fb-4d"
 title: Business Central Learning Catalog
-description: 
+description:
 ms.topic: hub-page
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -84,7 +84,7 @@ ms.author: solsen
     [Get started](readiness-learning-bus-users.md#get-started)
 
     [Financials](readiness-learning-bus-users.md#financials)
-    
+
     [Trade](readiness-learning-bus-users.md#trade)
 
 :::column-end:::
