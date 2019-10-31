@@ -8,7 +8,7 @@ description:
 ms.topic: hub-page
 ms.date: 10/31/2019
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: loreleishannonmsft
 ---
 
 <div id="main" class="v2">
