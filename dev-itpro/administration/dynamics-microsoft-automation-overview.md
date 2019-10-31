@@ -27,6 +27,8 @@ The following table provides an overview of the available resource types on a [!
 |[userGroup resource type](dynamics-microsoft-automation-usergroup.md)|Represents a userGroup resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
 |[userGroupMember resource type](dynamics-microsoft-automation-usergroupmember.md)|Represents a userGroup resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
 |[userPermission resource type](dynamics-microsoft-automation-userpermission.md)|Represents a userPermissions resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
+|[extensionDeploymentStatus resource type](dynamics-microsoft-automation-extensiondeploymentstatus.md)|Represents a extensionDeploymentStatus resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
+
 
 ## See Also 
 [Introduction to Automation APIs](itpro-introduction-to-automation-apis.md)  
