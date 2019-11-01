@@ -11,8 +11,7 @@
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
 <!--Ready2Go-->
-## Ready to Go
-### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
+## Training and Readiness
 ### [Learning Catalog](developer/readiness/readiness-learning-catalog.md)
 ### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 <!--AppSourcevalidation-->
