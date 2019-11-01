@@ -8,13 +8,13 @@ description:
 ms.topic: hub-page
 ms.date: 10/31/2019
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: loreleishannonmsft
 ---
 
 <div id="main" class="v2">
 <div class="container">
 <h1>Business Central Learning Catalog</h1>
-<p> This learning catalog provides Dynamics 365 Business Central partners with a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develop apps for Microsoft AppSource. The information in this document is being updated on a weekly basis.</p>
+<p> This learning catalog provides Dynamics 365 Business Central partners with a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develop apps for Microsoft AppSource. The information in this document is updated on a weekly basis.</p>
 
 
 
