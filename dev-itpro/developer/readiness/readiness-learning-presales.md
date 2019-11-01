@@ -65,8 +65,5 @@ Get an overview of the entire Business Central learning catalog [here](readiness
 | [Demo: The Owner](https://www.youtube.com/watch?v=hrNx-GkHIuI&feature=youtu.be) | Join Craig as he shows you how the role Owner works and behaves in Business Central.| YouTube video | 8 minutes 38 seconds |
 | [Demo: The Project Manager](https://www.youtube.com/watch?v=3WZjrVMirpo&feature=youtu.be) | Join Craig as he shows you how the role of the Project Manager works and behaves in Business Central. | YouTube video | 5 minutes 53 seconds |
 | [Demo: The Sales Manager](https://www.youtube.com/watch?v=Vfv3l0uQ50g&feature=youtu.be) | Join Craig as he shows you how the role of the Sales Manager works and behaves in Business Central. | YouTube video | 5 minutes 25 seconds |
-
-| [Demo: The Sales Representative](https://www.youtube.com/watch?v=XbnSWvVE4Fc&feature=youtu.be) | Join Craig as he shows you how the role of the Sales Representative works and behaves in Business Central. | YouTube video | 5 minutes 25 seconds |
-=======
 | [Demo: The Sales Representative](https://www.youtube.com/watch?v=XbnSWvVE4Fc&feature=youtu.be) | Join Craig as he shows you how the role of the Sales Representative works and behaves in Business Central. | YouTube video | 5 minutes 25 seconds |
 
