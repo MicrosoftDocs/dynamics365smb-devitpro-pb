@@ -3,7 +3,7 @@ title: "Business decision makers learning catalog"
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 04/01/2019
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -13,7 +13,11 @@ ms.author: solsen
 Get an overview of the entire Business Central learning catalog [here](readiness-learning-catalog.md). 
 
 ## Business value<a name="busvalue"></a>
+
 | Content                                                                | Description                                                                                                | Format                               | Length     |
+=======
+| Content                                                                | Description                                                                                                | Format                                | Length     |
+
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------|------------|
 | [Dynamics 365 Business Central](https://docs.microsoft.com/en-us/learn/modules/dynamics-365-business-central/) | This module shows application features, benefits, and examples of Dynamics 365 Business Central in action. | Free, self-paced online learning path | 24 minutes |
 
