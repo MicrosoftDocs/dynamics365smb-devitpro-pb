@@ -75,10 +75,10 @@ page 50100 "Simple Customercard Page"
 ```
 
 > [!TIP]  
-> When used on Lists, Factboxes can be used to show information about the entire list, or more contextually about the user’s current selection; the currently selected rows. You can control the filter which gets passed to the FactBox that determines its contextual contents. 
+> When used on Lists, FactBoxes can be used to show information about the entire list, or more contextually about the user’s current selection; the currently selected rows. You can control the filter which gets passed to the FactBox that determines its contextual contents. 
 
 > [!NOTE] 
-> The `systempart` keyword also includes an `Outlook` value, for example, `systempart(Outlook; Outlook)`. This value is only supported by the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (which has been deprecated after [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019). This value is ignored in the [nav_web_md](../developer/includes/nav_web_md.md)].
+> The `systempart` keyword also includes an `Outlook` value, for example, `systempart(Outlook; Outlook)`. This value is only supported by the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (which has been deprecated after [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019). This value is ignored in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
 ## Filtering data that is displayed on a page in a FactBox
 
