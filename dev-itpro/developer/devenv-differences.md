@@ -32,7 +32,7 @@ Several properties have been renamed, to mention some:
 
 |C/SIDE|AL Language Development Environment|
 |------|---------------------------|
-|AutoFormatExpr|AutoFormatExpression|   
+|AutoFormatExpr|AutoFormatExpression|
 |DataCaptionExpr|DataCaptionExpression|
 |Layout|GridLayout|
 |ProviderID|Provider|
@@ -41,10 +41,10 @@ Several properties have been renamed, to mention some:
 > Property values are considered as syntax elements; thus they should follow the standard AL escaping rules. 
 
 ## Multilanguage properties
-With the introduction of .xliff files, the ML properties, such as **CaptionML** and **TooltipML** will be deprecated in a later version. Use the equivalent properties instead, such as **Caption** and **Tooltip**, then make sure the manifest is set up to generate the `/Translations` folder and use the generated .xliff files for translations of the extension. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
+With the introduction of .xliff files, the ML properties, such as **CaptionML** and **TooltipML** are not used for this translation method. Use the equivalent properties instead, such as **Caption** and **Tooltip**, then make sure the manifest is set up to generate the `/Translations` folder and use the generated .xliff files for translations of the extension. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
 
 ## <a name="Pages"></a> Pages 
-The ```ActionContainer``` elements in AL have been renamed; the following table lists the renamed elements:
+The `ActionContainer` elements in AL have been renamed; the following table lists the renamed elements:
 
 |C/SIDE|AL Language Development Environment|
 |------|---------------------------|
@@ -68,8 +68,7 @@ For syntax examples, see [Page Object](devenv-page-object.md) and [Page Extensio
 ## Naming
 Controls, actions, and methods names must be unique on pages. In C/SIDE, you could create a Part control with the same name as a method, which would give you an error at runtime. This is now prevented, by disallowing duplicates. Similarly, trigger and trigger event names are disallowed on matching application object types. Likewise, actions and fields could have same names before, but that would have prevented page testability access, and will now throw a compilation error. 
 
-
-> [!NOTE]
+> [!NOTE]  
 > Name on Controls and Actions on Pages is now mandatory. 
 
 ## Property dependencies
@@ -85,10 +84,11 @@ Some properties require that you set another property. An example is `PromotedCa
 
 ## Limited functionality 
 
-The `InitValue` property of type `Duration` is not allowed in new development environment.   
+The `InitValue` property of type `Duration` is not allowed in new development environment. 
 The `InitValue` of type `DateTime` only allows for the value `0DT`.  
 
 ## See Also
-[Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)    
+[Developing Extensions](devenv-dev-overview.md)   
+[Getting Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+
