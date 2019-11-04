@@ -130,10 +130,6 @@ ms.author: loreleishannonmsft
 
     [Business value](readiness-learning-sales.md#busvalue)
 
-    [What's new](readiness-learning-sales.md#whatsnew)
-
-    [Demo](readiness-learning-sales.md#demo)
-
     :::column-end:::
 
 :::row-end:::

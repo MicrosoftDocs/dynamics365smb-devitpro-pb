@@ -10,7 +10,7 @@ ms.author: solsen
 ---
 
 # Pre-Sales Learning Catalog
-Get an overview of the entire Business Central learning catalog [here](readiness-learning-catalog.md). 
+The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. 
 
 ## Getting Started<a name="get-started"></a>
 | Content                                                                                                                              | Description                                                                                                                                                                                                                                                                                      | Format                                | Length             |

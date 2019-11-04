@@ -1,6 +1,6 @@
 ---
-title: "Business users learning catalog"
-description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
+title: "Business user learning catalog"
+description: "Business user learning catalog"
 author: LoreleiShannon
 ms.custom: na
 ms.date: 04/01/2019
@@ -10,7 +10,7 @@ ms.author: solsen
 ---
 
 # Business Users Learning Catalog
-Get an overview of the entire Business Central learning catalog [here](readiness-learning-catalog.md).
+The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. 
 
 ## Getting started<a name="get-started"></a>
 

@@ -1,5 +1,5 @@
 ---
-title: "Functional consultants learning catalog"
+title: "Functional consultant learning catalog"
 description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
 author: LoreleiShannon
 ms.custom: na
@@ -9,8 +9,8 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Functional Consultants Learning Catalog
-Get an overview of the entire Business Central learning catalog [here](readiness-learning-catalog.md).
+# Functional Consultant Learning Catalog
+The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. 
 
 ## Getting started<a name="get-started"></a>
 
