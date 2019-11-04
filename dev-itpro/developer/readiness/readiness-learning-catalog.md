@@ -9,7 +9,7 @@ ms.author: v-lshann
 ---
 
 # Business Central Learning Catalog
-This learning catalog provides Dynamics 365 Business Central partners with a single point of access to training resources. It contains readiness information for multiple roles inside organizations which resell Dynamics 365 Business Central and for those who develop apps for Microsoft AppSource. The information in this document is updated on a weekly basis.
+Find the right online training, in person workshops, and events for your role as a Business Central user or partner.
 
 
 :::row:::
