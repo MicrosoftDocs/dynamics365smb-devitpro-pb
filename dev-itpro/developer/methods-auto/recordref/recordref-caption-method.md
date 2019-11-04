@@ -50,12 +50,12 @@ var
     MyRecordRef: RecordRef;
     Text000: TextConst ENU='Table No: %1 Caption: %2';
 begin
-for i := 3 TO 6 do begin  
-    MyRecordRef.OPEN(i);  
-    varCaption := MyRecordRef.CAPTION;  
-    MESSAGE(Text000, i, varCaption);  
-    MyRecordRef.CLOSE;  
-    end;  
+    for i := 3 TO 6 do begin  
+        MyRecordRef.OPEN(i);  
+        varCaption := MyRecordRef.CAPTION;  
+        MESSAGE(Text000, i, varCaption);  
+        MyRecordRef.CLOSE;  
+        end;  
 end;
 ```  
   
