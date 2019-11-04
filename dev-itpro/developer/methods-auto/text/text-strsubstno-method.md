@@ -85,27 +85,22 @@ Returns a new string with the provided values inserted into the specified string
 ## Example  
  The following example shows how to use the STRSUBSTNO method.  
   
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|Data type|Length|  
-|-------------------|---------------|------------|  
-|Str|Text|1024|  
-|AccountNo|Integer|Not applicable|  
-|Balance|Decimal|Not applicable|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The balance of account %1 is $ %2|  
-|Text001|The string before STRSUBSTNO has been called:\\%1|  
-|Text002|The string after STRSUBSTNO has been called:\\%1|  
-  
 ```  
-Str := Text000;  
-AccountNo := 3452;   
-Balance := 2345 + 5462;  
-MESSAGE(Text001, Str);  
-Str := STRSUBSTNO(Str, AccountNo, Balance);  
-MESSAGE(Text002, Str);  
+var
+    Str: Text[1024];
+    AccountNo: Integer;
+    Balance: Decimal;
+    Text000: TextConst ENU='The balance of account %1 is $ %2';  
+    Text001: TextConst ENU='The test string before STRSUBSTNO is called:\\%1';  
+    Text002: TextConst ENU='The string after STRSUBSTNO is called:\\%1';  
+begin
+    Str := Text000;  
+    AccountNo := 3452;   
+    Balance := 2345 + 5462;  
+    MESSAGE(Text001, Str);  
+    Str := STRSUBSTNO(Str, AccountNo, Balance);  
+    MESSAGE(Text002, Str);  
+end;
 ```  
   
  The first message window displays the following text:  

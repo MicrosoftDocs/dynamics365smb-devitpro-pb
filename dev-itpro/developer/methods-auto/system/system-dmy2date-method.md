@@ -46,25 +46,21 @@ The four-digit number of the year. If you omit this optional parameter, the curr
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This code example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|Day|Integer|  
-|Month|Integer|  
-|Year|Integer|  
-|OutputDate|Date|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|Day number %1, month number %2, and year number %3 corresponds to the date %4.|  
-  
-```  
-Day := 17;  
-Month := 2;  
-Year := 2014;  
-OutputDate := DMY2DATE(Day, Month, Year);  
-MESSAGE(Text000, Day, Month, Year, OutputDate);  
+ 
+```
+var
+    Day: Integer;
+    Month: Integer;
+    Year: Integer;
+    OutputDate: Date;
+    Text000: TextConst ENU="Day number %1, month number %2, and year number %3 corresponds to the date %4.";  
+begin  
+    Day := 17;  
+    Month := 2;  
+    Year := 2014;  
+    OutputDate := DMY2DATE(Day, Month, Year);  
+    MESSAGE(Text000, Day, Month, Year, OutputDate);  
+end;
 ```  
   
  On a computer that has the regional format set to English \(United States\), the message window displays the following:  

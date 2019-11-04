@@ -52,24 +52,20 @@ The time that you want stamped on the file.
 
 ## Example  
  The following example sets timestamp for that a file that is named varFileName. The date and time are set to the current date and on your computer respectively. The code example assumes that you have created the following file: 'C:\\MyFolder\\MyText.txt'. The following example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|varFileName|Text|  
-|varDate|Date|  
-|varTime|Time|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|The timestamp for this file is Date: %1 Time: %2.|  
-  
-```  
-  
-VarFileName := 'C:\MyFolder\MyText.txt';  
-varDate := TODAY;  
-varTime := TIME;  
-SETSTAMP(VarFileName, varDate, varTime);  
-MESSAGE(Text000, varDate, varTime);  
+
+```
+ var
+    varFileName: Text;
+    varDate: Date;
+    varTime: Time;
+    Text000: TextConst ENU='The timestamp for this file is Date: %1 Time: %2.';
+begin
+    VarFileName := 'C:\MyFolder\MyText.txt';  
+    varDate := TODAY;  
+    varTime := TIME;  
+    SETSTAMP(VarFileName, varDate, varTime);  
+    MESSAGE(Text000, varDate, varTime);  
+end;
 ```  
   
 ## See Also

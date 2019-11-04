@@ -76,15 +76,15 @@ The business logic is run on the computer that is running [!INCLUDE[d365fin_serv
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]    
 
 ## Example  
- This example shows how to use the DOWNLOAD method. It requires that you create the following variable.  
+ This example shows how to use the DOWNLOAD method.
 
-|Variable name|DataType|  
-|-------------------|--------------|  
-|ToFile|Text|  
-
-```  
-ToFile := 'ToFile.txt';  
-DOWNLOAD('FromFile.txt','Download file','C:\','Text file(*.txt)|*.txt',ToFile);  
+ ```
+ var
+    ToFile: Text;
+begin
+    ToFile := 'ToFile.txt';  
+    DOWNLOAD('FromFile.txt','Download file','C:\','Text file(*.txt)|*.txt',ToFile);  
+end;
 ```  
 
 

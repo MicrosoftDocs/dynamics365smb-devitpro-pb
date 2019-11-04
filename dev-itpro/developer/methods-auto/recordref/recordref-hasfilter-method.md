@@ -42,24 +42,20 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
   
 ## Example  
  The following example opens the Customer table with a RecordRef variable that is named RecRef. The HASFILTER method determines whether a filter has been applied in the Customer table. The method returns **false** because no filters are applied. The return value is stored in the varHasFilters variable. The [SETRECFILTER Method \(RecordRef\)](recordref-setrecfilter-method.md) is used to set a filter. The HASFILTER method now returns **true**. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|RecRef|RecordRef|  
-|varHasFilters|Text|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|Are there any filters? %1|  
-  
-```  
-  
-RecRef.OPEN(DATABASE::Customer);  
-VarHasFilters := RecRef.HASFILTER;  
-MESSAGE('Are there any filters? %1', VarHasFilters);  
-RecRef.SETRECFILTER;  
-VarHasFilters := RecRef.HASFILTER;  
-MESSAGE(Text000, VarHasFilters);  
+    
+```   
+var
+    varHasFilters: Text;
+    RecRef: RecordRef;
+    Text000: TextConst ENU='Are there any filters? %1';
+begin   
+    RecRef.OPEN(DATABASE::Customer);  
+    VarHasFilters := RecRef.HASFILTER;  
+    MESSAGE('Are there any filters? %1', VarHasFilters);  
+    RecRef.SETRECFILTER;  
+    VarHasFilters := RecRef.HASFILTER;  
+    MESSAGE(Text000, VarHasFilters);  
+end;
 ```  
 
 ## See Also

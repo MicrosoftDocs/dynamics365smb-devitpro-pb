@@ -40,19 +40,17 @@ The string converted to uppercase.
 ## Example  
  The following example shows how to use the **UPPERCASE** method.  
   
- This example requires that you create the following text constants.  
-  
-|Text constant|ConstValue|  
-|-------------------|----------------|  
-|Text000|Outstanding Order Status|  
-|Text001|The test string before UPPERCASE is called:\\%1|  
-|Text002|The string after UPPERCASE is called:\\%1|  
-  
 ```  
-Lower := Text000;  
-MESSAGE(Text001, Lower);  
-Upper := UPPERCASE(Lower);  
-MESSAGE(Text002, Upper);  
+var
+    Text000: TextConst ENU='Outstanding Order Status';  
+    Text001: TextConst ENU='The test string before UPPERCASE is called:\\%1';  
+    Text002: TextConst ENU='The string after UPPERCASE is called:\\%1';  
+begin
+    Lower := Text000;  
+    MESSAGE(Text001, Lower);  
+    Upper := UPPERCASE(Lower);  
+    MESSAGE(Text002, Upper);  
+end;
 ```  
   
  The first message window displays the following:  

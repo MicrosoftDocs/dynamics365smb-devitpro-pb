@@ -45,17 +45,16 @@ The SID of the specified Windows user account.
  This method runs only on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. If you call this method from the client computer, then no action occurs.  
   
 ## Example  
- This example assigns the SID for Simon's Windows user account to a variable. This example requires that you create the following variables.  
-  
-|Name|DataType|Length|  
-|----------|--------------|------------|  
-|NewSID|Text|119|  
-|UserAccount|Text|132|  
-  
-```  
-UserAccount := 'cronus\simon';  
-NewSID := SID(UserAccount);  
 ```
+var
+    NewSID: Text[119];
+    UserAccount: Text[132];
+begin
+    UserAccount := 'cronus\simon';  
+    NewSID := SID(UserAccount);  
+end;
+```
+
 ## See Also
 [Database Data Type](database-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

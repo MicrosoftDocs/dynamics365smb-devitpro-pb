@@ -60,14 +60,14 @@ Specifies the recordID of the record that you want to run the task on.
 Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more information about tasks and task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
 
 ## Example  
-The following example schedules a task to run the **Job Queue Dispatcher** and uses codeunit **Job Queue Error Handler** as the failure codeunit. The code requires that you create the following AL variable.  
-
-|Variable|DataType|SubType|  
-|--------------|--------------|-------------|  
-|JobQueueEntry|Record|Job Queue Entry|  
+The following example schedules a task to run the **Job Queue Dispatcher** and uses codeunit **Job Queue Error Handler** as the failure codeunit. 
 
 ```  
-TASKSCHEDULER.CREATETASK(CODEUNIT::"Job Queue Dispatcher", CODEUNIT::"Job Queue Error Handler", TRUE, COMPANYNAME, CURRENTDATETIME + 1000 + RANDOM(3000), JobQueueEntry.RECORDID);  
+var
+    JobQueueEntry: Record "Job Queue Entry";
+begin
+    TASKSCHEDULER.CREATETASK(CODEUNIT::"Job Queue Dispatcher", CODEUNIT::"Job Queue Error Handler", TRUE, COMPANYNAME, CURRENTDATETIME + 1000 + RANDOM(3000), JobQueueEntry.RECORDID);  
+end;
 ```  
 
 

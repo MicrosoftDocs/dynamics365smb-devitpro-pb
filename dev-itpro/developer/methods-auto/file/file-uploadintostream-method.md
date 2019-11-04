@@ -71,16 +71,14 @@ The business logic runs on the [!INCLUDE[d365fin_server_md](../../includes/d365f
  We recommend that you use the methods in codeunit 419, File Management, to upload and download files.  
 
 ## Example  
- This example requires that you create the following variables.  
-
-|Name|DataType|  
-|----------|--------------|  
-|FileName|Text|  
-|NVInStream|InStream|  
-
-```  
-FileName := 'c:\SomeFile.txt';  
-UPLOADINTOSTREAM('Import','',' All Files (*.*)|*.*',FileName,NVInStream);  
+ ```
+ var
+    FileName: Text;
+    NVInStream: InStream;
+begin
+    FileName := 'c:\SomeFile.txt';  
+    UPLOADINTOSTREAM('Import','',' All Files (*.*)|*.*',FileName,NVInStream); 
+end;
 ```  
 
 

@@ -48,29 +48,26 @@ The ID of the URL that you want to add to the record. Every time that you add a 
 ## Example  
  The following example adds a link to a record in the Customer table. The code starts by opening table 18 \(Customer) as a RecordRef variable that is named CustomerRecref. The [FIELD Method (RecordRef)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for the first field \(No.\). Next, `MyFieldRef.VALUE` is set to record 01121212. The [FIND Method (RecordRef)](recordref-find-method.md) method searches the records for record no. 01121212. If the record is found, then the ADDLINK method adds a link to the record. The link is assigned a link ID, which is stored in the LinkID variable. The link ID is displayed in a message box. You can view the link you added in the **Links** FactBox on the Customer List or Customer Card pages. This example requires that you create the following global variables and text constants.  
 
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerNum|Code|  
-|varLink|Text|  
-|CustomerRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|LinkID|Integer|  
-
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|The link with ID %1 has been added.|  
-|Text001|Text|The customer cannot be found.|  
-
-```  
-CustomerNum := '01121212';  
-CustomerRecref.OPEN(18);  
-MyFieldRef := CustomerRecref.FIELD(1);  
-MyFieldRef.VALUE := CustomerNum;  
-if CustomerRecref.FIND('=') then begin  
-  LinkID := CustomerRecref.ADDLINK(varLink);  
-  MESSAGE(Text000, LinkID);  
-end else
-  MESSAGE(Text001);  
+```
+var
+    CustomerNum: Code;
+    varLink: Text;
+    CustomerRecref: RecordRef;
+    MyFieldRef: FieldRef;
+    LinkID: Integer;
+    Text000: TextConst ENU='The link with ID %1 has been added.';
+    Text001: TextConst ENU='The customer cannot be found.';
+begin  
+    CustomerNum := '01121212';  
+    CustomerRecref.OPEN(18);  
+    MyFieldRef := CustomerRecref.FIELD(1);  
+    MyFieldRef.VALUE := CustomerNum;  
+    if CustomerRecref.FIND('=') then begin  
+      LinkID := CustomerRecref.ADDLINK(varLink);  
+      MESSAGE(Text000, LinkID);  
+    end else
+      MESSAGE(Text001);  
+end;
 ```  
 
 ## See Also

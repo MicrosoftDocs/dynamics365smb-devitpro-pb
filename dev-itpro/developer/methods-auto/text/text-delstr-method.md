@@ -53,28 +53,23 @@ The input string without the specified substring.
  If you omit *Length* and *Position* is greater than the length of *String*, then *String* is returned unchanged.  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|Str|Text|40|  
-|Position|Integer|Not applicable|  
-|Length|Integer|Not applicable|  
-|NewStr|Text|40|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Adjusting prices - Please wait.|  
-|Text001|The original string:>%1\<|  
-|Text002|The modified string:>%2\<|  
-  
-```  
-Str := Text000;  
-Position := 11; // Remove the word 'prices' and a blank.  
-Length := 7;  
-NewStr := DELSTR(Str, Position, Length);  
-MESSAGE(Text001, Str);  
-MESSAGE(Text002, NewStr);  
+```
+var
+    Str: Text[40];
+    NewStr: Text[40];
+    Position: Integer;
+    Lenght: Integer;
+    Text000: TexConst ENU='Adjusting prices - Please wait.';
+    Text001: TexConst ENU='The original string:>%1<';
+    Text002: TexConst ENU='The original modified:>%2<';
+begin
+    Str := Text000;  
+    Position := 11; // Remove the word 'prices' and a blank.  
+    Length := 7;  
+    NewStr := DELSTR(Str, Position, Length);  
+    MESSAGE(Text001, Str);  
+    MESSAGE(Text002, NewStr);  
+end;
 ```  
   
  The first message window displays the following:  

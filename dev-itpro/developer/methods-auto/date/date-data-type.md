@@ -44,17 +44,15 @@ The syntax for defining DateTime format follows the [ISO standard](https://en.wi
 
 
 ## Example  
-This example shows a valid assignment of date. It requires that you define the following variable.  
-  
-|Variable|DataType|  
-|--------|--------|  
-|Date1|Date|  
-  
-This example is compiled and run on a computer with the regional format set to English (United States).
+This example shows a valid assignment of date. This example is compiled and run on a computer with the regional format set to English (United States).
 
 ```  
-Date1 := 20180612D;  
-MESSAGE(FORMAT(Date1));  
+var
+    Date1: Date;
+begin
+    Date1 := 20180612D;  
+    MESSAGE(FORMAT(Date1));  
+end;
 ```  
   
 The message window displays the following:  

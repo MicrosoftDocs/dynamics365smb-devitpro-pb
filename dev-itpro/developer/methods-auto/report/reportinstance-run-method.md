@@ -42,18 +42,17 @@ If the report you specify does not exist, then a compile error occurs.
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
   
 ## Example  
- This example requires that you create the following variables.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|CustomerRec|Record|Customer|  
-|SomeReport|Report|Salesperson - Sales Statistics|  
-  
+
 ```  
-CustomerRec.SETCURRENTKEY("No.");  
-CustomerRec.SETFILTER("Salesperson Code", 'JR|PS');  
-SomeReport.SETTABLEVIEW(CustomerRec);  
-SomeReport.RUN  
+var
+    CustomerRec: Record Customer;
+    SomeReport: Report "Salesperson - Sales Statistics";
+begin
+    CustomerRec.SETCURRENTKEY("No.");  
+    CustomerRec.SETFILTER("Salesperson Code", 'JR|PS');  
+    SomeReport.SETTABLEVIEW(CustomerRec);  
+    SomeReport.RUN;
+end;
 ```  
 
 ## See Also
