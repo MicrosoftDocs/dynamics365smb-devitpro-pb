@@ -1,6 +1,6 @@
 ---
 title: "Pre-sales learning catalog"
-description: "Overview of how you can build and expand your business with Dynamics 365 Business Central"
+description: "Pre-sales learning catalog"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2019

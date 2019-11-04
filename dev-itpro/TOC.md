@@ -17,7 +17,7 @@
 #### [Business Decision Maker Learning Catalog](developer/readiness/readiness-learning-bus-decision-makers.md)
 #### [Business User Learning Catalog](developer/readiness/readiness-learning-bus-users.md)
 #### [Developer Learning Catalog](developer/readiness/readiness-learning-developers.md)
-#### [Functional Consultant Learning Catalog](developer/readiness/readiness-learning-catalog-functional-consultants.md)
+#### [Functional Consultant Learning Catalog](developer/readiness/readiness-learning-functional-consultants.md)
 #### [Pre-sales Learning Catalog](developer/readiness/readiness-learning-presales.md)
 #### [Sales Learning Catalog](developer/readiness/readiness-learning-sales.md)
 

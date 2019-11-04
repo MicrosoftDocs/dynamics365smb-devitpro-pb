@@ -1,10 +1,6 @@
 ---
-layout: HubPage
-hide_bc: true
-experimental: true
-experiment_id: "81ba5f65-59fb-4d"
 title: Business Central Learning Catalog
-description:
+description: Business Central Learning Catalog
 ms.topic: article
 ms.date: 11/05/2019
 ms.service: "dynamics365-business-central"
@@ -78,17 +74,17 @@ ms.author: loreleishannonmsft
     
     Are you an implementation expert for a business domain? 
 
-    [Functional Consultant Learning Catalog](readiness-learning-catalog-functional-consultants.md)
+    [Functional Consultant Learning Catalog](readiness-learning-functional-consultants.md)
 
-    [Get started](readiness-learning-catalog-functional-consultants.md#get-started)
+    [Get started](readiness-learning-functional-consultants.md#get-started)
 
-    [Deploy](readiness-learning-catalog-functional-consultants.md#deploy)
+    [Deploy](readiness-learning-functional-consultants.md#deploy)
 
-    [Financials](readiness-learning-catalog-functional-consultants.md#financials)
+    [Financials](readiness-learning-functional-consultants.md#financials)
 
-    [Trade](readiness-learning-catalog-functional-consultants.md#trade)
+    [Trade](readiness-learning-functional-consultants.md#trade)
 
-    [Cloud](readiness-learning-catalog-functional-consultants.md#cloud)
+    [Cloud](readiness-learning-functional-consultants.md#cloud)
 
     :::column-end:::
      
