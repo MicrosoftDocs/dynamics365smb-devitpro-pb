@@ -99,7 +99,6 @@ You cannot view virtual tables or the following system tables:
 |  ID  |  Name  |
 |------|--------|
 | 2000000170 |Configuration Package File|
-| 2000000170 |Configuration Package File|
 | 2000000173 |Data Sensitivity|
 | 2000000100 |Debugger Breakpoint|
 | 2000000103 |Debugger Watch|
