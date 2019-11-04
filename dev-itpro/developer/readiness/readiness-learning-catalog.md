@@ -60,7 +60,7 @@ ms.author: loreleishannonmsft
 
     [Developer Learning Catalog](readiness-learning-developers.md)
 
-    [Getting started](readiness-learning-developers.md#getstarted)
+    [Getting started](readiness-learning-developers.md#get-started)
 
     [What's new](readiness-learning-developers.md#whatsnew)
 
