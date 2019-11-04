@@ -13,7 +13,6 @@ ms.author: solsen
 Get an overview of the entire Business Central learning catalog [here](readiness-learning-catalog.md). 
 
 ## Getting Started<a name="get-started"></a>
-
 | Content                                                                                                                              | Description                                                                                                                                                                                                                                                                                      | Format                                | Length             |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|--------------------|
 | [Get started with Microsoft Dynamics 365 Business Central](https://docs.microsoft.com/learn/paths/get-started-dynamics-365-business-central/)                          | Are you interested in Business Central? If so, this learning path provides a good introduction. It discusses how to set up a trial, provides some basic information about what's available, and shows some personalization options you can make to customize Business Central for your use. | Free, self-paced online learning path | 3 hours 4 minutes  |
@@ -67,3 +66,4 @@ Get an overview of the entire Business Central learning catalog [here](readiness
 | [Demo: The Project Manager](https://www.youtube.com/watch?v=3WZjrVMirpo&feature=youtu.be) | Join Craig as he shows you how the role of the Project Manager works and behaves in Business Central. | YouTube video | 5 minutes 53 seconds |
 | [Demo: The Sales Manager](https://www.youtube.com/watch?v=Vfv3l0uQ50g&feature=youtu.be) | Join Craig as he shows you how the role of the Sales Manager works and behaves in Business Central. | YouTube video | 5 minutes 25 seconds |
 | [Demo: The Sales Representative](https://www.youtube.com/watch?v=XbnSWvVE4Fc&feature=youtu.be) | Join Craig as he shows you how the role of the Sales Representative works and behaves in Business Central. | YouTube video | 5 minutes 25 seconds |
+
