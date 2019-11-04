@@ -18,6 +18,7 @@ Sets whether user-specific control values are saved for this page.
   
 - Pages
 - Report request page  
+- XMLport request page
   
 ## Property Value  
 

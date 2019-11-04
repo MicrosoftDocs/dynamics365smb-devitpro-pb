@@ -11,8 +11,8 @@ ms.service: "dynamics365-business-central"
  
 # RequestFilterFields Property
 
-Specifies which fields are automatically included on the tab of the request page that is related to this data item. The user can set filters on these fields.  
-  
+Specifies which fields are automatically included on the tab of the request page that is related  to to a report's data item or an XMLport's table element. The user can set filters on these fields.  
+
 ## Applies to  
   
 - Data items on reports  
@@ -33,9 +33,9 @@ A user can add other fields to the request page and set filters on these fields.
   
 If you do not want users to add filters on fields, then use one of the following methods:  
   
-- Do not specify any filters in the **RequestFilterFields** property and specify a key field on which to sort in the [DataItemTableView Property](devenv-dataitemtableview-property.md).  
+- Do not specify any filters in the **RequestFilterFields** property and specify a key field on which to sort in the [DataItemTableView Property](devenv-dataitemtableview-property.md) for a report and in the [SourceTableView (XMLports) Property](devenv-sourcetableview-XMLports-property.md) for an XMLport.  
   
-- Remove the request page by using the [UseRequestPage Property](devenv-userequestpage-property.md) of the report.  
+- Remove the request page by using the [UseRequestPage Property](devenv-userequestpage-property.md) of the report or XMLport.  
 
 ## See Also
 [Request Pages](../devenv-request-pages.md)  
