@@ -12,7 +12,15 @@
 #### [Configure the Help Experience](deployment/configure-help.md)
 <!--Ready2Go-->
 ## Training and Readiness
-### [Learning Catalog](developer/readiness/readiness-learning-catalog.md)
+### Learning Catalog
+#### [Learning Catalog](developer/readiness/readiness-learning-catalog.md)
+#### [Business Decision Maker Learning Catalog](readiness-learning-bus-decision-makers.md)
+#### [Business User Learning Catalog](readiness-learning-bus-users.md)
+#### [Developer Learning Catalog](readiness-learning-developers.md)
+#### [Functional Consultant Learning Catalog](readiness-learning-catalog-functional-consultants.md)
+#### [Pre-sales Learning Catalog](readiness-learning-presales.md)
+#### [Sales Learning Catalog](readiness-learning-sales.md)
+
 ### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 <!--AppSourcevalidation-->
 ## AppSource Validation
