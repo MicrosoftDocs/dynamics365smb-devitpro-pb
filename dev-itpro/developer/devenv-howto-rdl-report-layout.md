@@ -42,18 +42,23 @@ To facilitate testing your report layout, the following simple example extends t
     }
     ```
 2. Build the extension (Ctrl+Shift+B) to generate the MyRDLReport.rdl file.
-3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code:  
+3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report:  
     ```
-    dataset
+    report 50123 MyRdlReport
     {
-        dataitem(Customer; Customer)
+        DefaultLayout = RDLC;
+        RDLCLayout = 'MyRDLReport.rdl';
+    
+        dataset
         {
-            column(Name; Name)
+            dataitem(Customer; Customer)
             {
+                column(Name; Name)
+                {
+                }
             }
-        }
-    }   
-
+        }   
+    }
     ```
 4. Build the extension (Ctrl+Shift+B). The `MyRDLReport.rdl` file will be created in the root of the current project. 
 5. Open the generated report layout file in **Microsoft SQL Server Report Builder**.
