@@ -1,6 +1,6 @@
 ---
-title: "Countries and Translations supported"
-description: "Describing a matrix of supported countries with their translations."
+title: "Availability and supported Countries/Regions and Translations"
+description: "Overview of availability and supported translations."
 author: sorenfriisalexandersen
 ms.custom: na
 ms.date: 10/01/2019
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: soalex
 ---
 
-# Countries/Regions and Translations Supported
+# Country/Regional availability and Supported Translations
 
 This page lists the countries/regions that are supported with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and the supported languages for each country/region version. If you are developing an extension, this table provides the guideline for the translations your extension must support.
 
@@ -40,7 +40,7 @@ This page lists the countries/regions that are supported with [!INCLUDE[d365fin_
 
 ## Partner Supported Countries/Regions and Translations
 
-In countries, where Microsoft has not delivered a localization, partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. You can apply for access to build a localization on top of the international (W1) version of Dynamics 365 Business Central. The following table provides the list of countries/regions and translations supported through partners.
+In countries where Microsoft has not delivered a localization partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. These apps are built top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. The following table provides the list of countries/regions and translations supported through partners.
 
 |Country/Region|Language Code|
 |-------|-------------|
@@ -58,6 +58,21 @@ In countries, where Microsoft has not delivered a localization, partners can bui
 |Taiwan|zh-TW|
 |Thailand|en-US|
 |United Arab Emirates|en-US|
+
+## Planned Future Availability
+
+[!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is planned for future availability in the following countries/regions.
+
+Due to the nature of the joint effort where Microsoft is providing the international (W1) cloud service and partners are providing localization app(s), the below dates represent the earliest possible availability and can be exceeded if localization partners have not successfully published their app(s) to AppSource by this time. 
+
+|Country/Region|Language Code|Planned Availability|
+|-------|-------------|-------------|
+|Colombia|es-ES|2020 Wave 1|
+|Croatia|hr-HR|2020 Wave 1|
+|Hungary|hu-HU|2020 Wave 1|
+|Latvia|lv-LV|2020 Wave 1|
+|Slovenia|sl-SI|2020 Wave 1|
+|Peru|es-ES|2020 Wave 1|
 
 ## See Also
 
