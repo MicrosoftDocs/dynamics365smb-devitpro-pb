@@ -5,8 +5,8 @@ experimental: true
 experiment_id: "81ba5f65-59fb-4d"
 title: Business Central Learning Catalog
 description:
-ms.topic: hub-page
-ms.date: 10/31/2019
+ms.topic: article
+ms.date: 11/05/2019
 ms.service: "dynamics365-business-central"
 ms.author: loreleishannonmsft
 ---
