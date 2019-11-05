@@ -47,25 +47,20 @@ The number of the menu option that the user selected. If the user presses the Es
 
 ## Example  
  This example shows how to use the Dialog.STRMENU method.  
-  
- This code example requires that you create the following text constants and global variables.  
-  
-|Name|ConstValue|  
-|----------|----------------|  
-|Text000|'Save,Delete,Exit,Find'|  
-|Text001|'You selected option %1.'|  
-|Text002|'Choose one of the following options:'|  
-  
-|Name|DataType|Length|  
-|----------|--------------|------------|  
-|Options|Text|30|  
-|Selected|Integer|Not applicable|  
-  
-```  
-Options := Text000  
-// Sets the default to option 3  
-Selected := Dialog.STRMENU(Options, 3, Text002);  
-MESSAGE(Text001, Selected);  
+ 
+```
+var
+    Options: Text[30];
+    Selected: Integer;
+    Text000: TextConst ENU='Save,Delete,Exit,Find';
+    Text001: TextConst ENU='You selected option %1.';
+    Text002: TextConst ENU='Choose one of the following options:';
+begin
+    Options := Text000  
+    // Sets the default to option 3  
+    Selected := Dialog.STRMENU(Options, 3, Text002);  
+    MESSAGE(Text001, Selected);  
+end;
 ```  
   
  The menu window displays the following text:  

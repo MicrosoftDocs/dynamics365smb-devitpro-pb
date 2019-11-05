@@ -44,16 +44,16 @@ The current settings of the PrintOnlyIfDetail property.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example is from the OnAfterGetRecord trigger of a report. If the PrintOnlyIfDetail property is true and if a GLEntryPage record exists, given the current filters, then the PageGroupNo is incremented. This example requires that you create the following variables.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|GLEntryPage|Record|G/L Entry|  
-|PageGroupNo|Integer|Not applicable|  
-  
+ The following example is from the OnAfterGetRecord trigger of a report. If the PrintOnlyIfDetail property is true and if a GLEntryPage record exists, given the current filters, then the PageGroupNo is incremented.
+ 
 ```  
-if CurrReport.PRINTONLYifDETAIL AND GLEntryPage.FIND('-') then  
-  PageGroupNo := PageGroupNo + 1;  
+var
+    GLEntryPage: Record "G/L Entry";
+    PageGroupNo: Integer;
+begin
+    if CurrReport.PRINTONLYifDETAIL and GLEntryPage.FIND('-') then  
+      PageGroupNo := PageGroupNo + 1;  
+end;
 ```  
   
 ## Example  

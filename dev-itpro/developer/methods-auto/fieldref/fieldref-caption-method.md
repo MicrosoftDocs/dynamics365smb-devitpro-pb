@@ -43,28 +43,24 @@ CAPTION returns the caption of a field. CAPTION first looks for a [CaptionML Pro
  This method is similar to the [FIELDCAPTION Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The code uses the [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) to loop through field 1 through 9 and creates a FieldRef variable that is named MyFieldRef. For each field, the CAPTION method retrieves the caption of the field, stores it in the varCaption variable and displays it in a message box. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|varCaption|Text|  
-|i|Integer|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The caption for field %1 is "%2".|  
-  
-```  
-  
-CustomerRecref.OPEN(18);  
-for i := 1 to 9 do begin  
-  MyFieldRef := CustomerRecref.FIELD(i);  
-  varCaption := MyFieldRef.CAPTION;  
-  MESSAGE(Text000, i, varCaption);  
-end;  
-CustomerRecref.CLOSE;  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The code uses the [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) to loop through field 1 through 9 and creates a FieldRef variable that is named MyFieldRef. For each field, the CAPTION method retrieves the caption of the field, stores it in the varCaption variable and displays it in a message box. 
+
+```
+var
+    MyFieldRef: FieldRef;
+    CustomerRecref: RecordRef;
+    varCaption: Text;
+    i: Integer;
+    Text000: TextConst ENU='The caption for field %1 is "%2"';
+begin
+    CustomerRecref.OPEN(18);  
+    for i := 1 to 9 do begin  
+      MyFieldRef := CustomerRecref.FIELD(i);  
+      varCaption := MyFieldRef.CAPTION;  
+      MESSAGE(Text000, i, varCaption);  
+    end;  
+    CustomerRecref.CLOSE;  
+end;
 ```  
 
 ## See Also

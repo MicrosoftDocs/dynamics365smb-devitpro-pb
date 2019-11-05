@@ -59,19 +59,17 @@ For an Automation object, **CLEAR** releases the Automation object and decreases
 ## Example  
  This example shows how to use the **CLEAR** method.  
 
- This example requires that you create the following text constants.
-
-|Text constant|ConstValue|  
-|-------------------|----------------|  
-|Text000|Joe Raybon|  
-|Text001|Initially the variable "Name" contains: >;%1\>|  
-|Text002|After using CLEAR, the variable "Name" contains: >;%1\>|  
-
 ```  
-Name := Text000;  
-MESSAGE(Text001, Name);  
-CLEAR(Name);  
-MESSAGE(Text002, Name);  
+var
+    Text000: TextConst ENU='Joe Raybon';
+    Text001: TextConst ENU='Initially the variable "Name" contains: >;%1\>';
+    Text002: TextConst ENU='After using CLEAR, the variable "Name" contains: >;%1\>';
+begin
+    Name := Text000;  
+    MESSAGE(Text001, Name);  
+    CLEAR(Name);  
+    MESSAGE(Text002, Name);  
+end;
 ```  
 
  The first message window displays the following:  
@@ -86,36 +84,35 @@ MESSAGE(Text002, Name);
  In the following example you will declare two variables:  
 
 ```  
-MyTextVar, data type: "text".  
-GuidVar, data type: "GUID".  
+var 
+    MyTextVar: Text; 
+    GuidVar: GUID;
 ```  
 
  These variables will be declared and cleared, first by using **CLEAR** and then by using [CLEARALL Method](../../methods-auto/system/system-clearall-method.md).  
 
- This example requires that you create the following text constants  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|My Text|  
-|Text001|Initially the variable "MyTextVar" contains >;%1\> and "GuidVar" is defined as >;%2\>|  
-|Text002|After using CLEAR\(MyTextVar\), the variable "MyTextVar" contains >;%1\> and "GuidVar" is still defined as >;%2\>|  
-|Text003|After using CLEAR\(GuidVar\) the variable "GuidVar" becomes undefined|  
-|Text004|Giving the "MyTextVar" variable the initial value again and creating a new "GuidVar" results in >;%1\> and >;%2\>|  
-|Text005|Using CLEARALL results in an empty "MyTextVar" >;%1\> and an undefined "GuidVar"|  
-
 ```  
-MyTextVar := Text000;  
-GuidVar := CREATEGUID();  
-MESSAGE(Text001,MyTextVar,GuidVar);  
-CLEAR(MyTextVar);  
-MESSAGE(Text002,MyTextVar,GuidVar);  
-CLEAR(GuidVar);  
-MESSAGE(Text003,GuidVar);  
-MyTextVar := Text000;  
-GuidVar := CREATEGUID();  
-MESSAGE(Text004,MyTextVar,GuidVar);  
-CLEARALL;  
-MESSAGE(Text005,MyTextVar,GuidVar);  
+var 
+    Text000: TextConst ENU='My Text';
+    Text001: TextConst ENU='Initially the variable "MyTextVar" contains >;%1> and "GuidVar" is defined as >;%2>';
+    Text002: TextConst ENU='After using CLEAR(MyTextVar), the variable "MyTextVar" contains >;%1> and "GuidVar" is still defined as >;%2>';
+    Text003: TextConst ENU='After using CLEAR(GuidVar) the variable "GuidVar" becomes undefined';
+    Text004: TextConst ENU='Giving the "MyTextVar" variable the initial value again and creating a new "GuidVar" results in >;%1> and >;%2>';
+    Text005: TextConst ENU='Using CLEARALL results in an empty "MyTextVar" >;%1> and an undefined "GuidVar"';
+begin
+    MyTextVar : Text000;  
+    GuidVar := CREATEGUID();  
+    MESSAGE(Text001,MyTextVar,GuidVar);  
+    CLEAR(MyTextVar);  
+    MESSAGE(Text002,MyTextVar,GuidVar);  
+    CLEAR(GuidVar);  
+    MESSAGE(Text003,GuidVar);  
+    MyTextVar := Text000;  
+    GuidVar := CREATEGUID();  
+    MESSAGE(Text004,MyTextVar,GuidVar);  
+    CLEARALL;  
+    MESSAGE(Text005,MyTextVar,GuidVar); 
+end; 
 ```  
 
  The first message window displays the following:  

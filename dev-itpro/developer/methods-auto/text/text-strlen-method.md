@@ -45,25 +45,20 @@ The length of the string.
 ## Example  
  This example shows the difference between the STRLEN and the MAXSTRLEN methods.  
   
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|City|Text|30|  
-|MaxLength|Integer|Not applicable|  
-|Length|Integer|Not applicable|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Atlanta|  
-|Text001|The MAXSTRLEN method returns: %1,\\|  
-|Text002|whereas the STRLEN method returns: %2|  
-  
 ```  
-City := Text000;  
-MaxLength := MAXSTRLEN(City);  
-Length := STRLEN(City);  
-MESSAGE(Text001 + Text002, MaxLength, Length);  
+var
+    City: Text[30];
+    MaxLength: Integer;
+    Length: Integer;
+    Text000: TextConst ENU='Atlanta';
+    Text001: TextConst ENU='The MAXSTRLEN method returns: %1,\\';
+    Text002: TextConst ENU='whereas the STRLEN method returns: %2';
+begin
+    City := Text000;  
+    MaxLength := MAXSTRLEN(City);  
+    Length := STRLEN(City);  
+    MESSAGE(Text001 + Text002, MaxLength, Length);  
+end;
 ```  
   
  The message window displays the following:  

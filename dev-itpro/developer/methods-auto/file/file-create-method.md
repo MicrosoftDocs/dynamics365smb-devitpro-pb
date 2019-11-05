@@ -55,17 +55,16 @@ An instance of the [File](file-data-type.md) data type.
   
 ## Example  
  The following example creates a file that is named TestFile.txt in the path C:\\TestFolder\\. The TestFile variable stores the file and path that is created. If the file is created, a message that states that the file is created is displayed. Otherwise, an error message is displayed. This example requires that you create the following global variable.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|TestFile|File|  
-  
-```  
-  
-if TestFile.CREATE('C:\TestFolder\TestFile.txt') then begin  
-  MESSAGE('%1 is created', TestFile.NAME);  
-end else  
-ERROR('The file could not be created');  
+
+```
+ var
+    TestFile: File;
+begin
+    if TestFile.CREATE('C:\TestFolder\TestFile.txt') then begin  
+      MESSAGE('%1 is created', TestFile.NAME);  
+    end else  
+    ERROR('The file could not be created');  
+end;
 ```  
   
 ## See Also

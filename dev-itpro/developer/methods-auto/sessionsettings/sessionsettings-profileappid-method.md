@@ -54,12 +54,12 @@ This example creates a SessionSettings object that is populated with the current
 ```
 var
   MySessionSettings : SessionSettings;
-  begin
-    MySessionSettings.INIT;
-    MySessionSettings.PROFILEID('MyExtensionProfile');
-    MySessionSettings.PROFILEAPPID('12345678-1234-1234-1234-1234567890AB');
-    MySessionSettings.REQUESTSESSIONUPDATE(false);
-  end;  
+begin
+  MySessionSettings.INIT;
+  MySessionSettings.PROFILEID('MyExtensionProfile');
+  MySessionSettings.PROFILEAPPID('12345678-1234-1234-1234-1234567890AB');
+  MySessionSettings.REQUESTSESSIONUPDATE(false);
+end;  
 ```  
 
 

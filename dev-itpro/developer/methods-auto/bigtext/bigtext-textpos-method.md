@@ -45,15 +45,13 @@ The position at which a specific string first occurs in this BigText instance.
   
 ## Example  
  The following examples show how to use the [TEXTPOS Method](../../methods-auto/bigtext/bigtext-textpos-method.md). These examples require that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyBigText|BigText|  
-|VarPosition|Integer|  
-  
-|Text constant name|ENU value|  
-|------------------------|---------------|  
-|Text000|VarPosition = %1|  
+
+```
+var
+    MyBigText: BigText;
+    VarPosition: Text;
+    Text000: TextConst ENU='VarPosition = %1';
+```
   
  The following examples first initialize the content of the *BigText* variable with the text `ABCDEFG`.  
   

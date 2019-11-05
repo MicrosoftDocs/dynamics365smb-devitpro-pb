@@ -45,20 +45,19 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
  If the field is not an option an empty string is returned.  
   
 ## Example  
- The following example opens the Item table with RecordRef variable that is named ItemRecref and creates a reference to field 19 \(Price/Profit Calculation\), which is an Options field. The OPTIONSTRING method retrieves the options in the field and displays them as a comma separated list. This example requires that you create the following global variabless.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|ItemRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|OptionString|Text|  
-  
-```  
-  
-ItemRecref.OPEN(DATABASE::Item);  
-MyFieldRef := ItemRecref.FIELD(19);  
-OptionString := MyFieldRef.OPTIONSTRING;  
-MESSAGE(' %1', OptionString);  
+ The following example opens the Item table with RecordRef variable that is named ItemRecref and creates a reference to field 19 \(Price/Profit Calculation\), which is an Options field. The OPTIONSTRING method retrieves the options in the field and displays them as a comma separated list.
+
+ ```
+var
+    MyFieldRef: FieldRef;
+    ItemRecref: RecordRef;
+    OptionString: Text;
+begin
+    ItemRecref.OPEN(DATABASE::Item);  
+    MyFieldRef := ItemRecref.FIELD(19);  
+    OptionString := MyFieldRef.OPTIONSTRING;  
+    MESSAGE(' %1', OptionString);  
+end;
 ```  
 
 
