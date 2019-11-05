@@ -1,4 +1,4 @@
-https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/authenticating-users-with-azure-active-directory---
+---
 title: "Installation Considerations for Microsoft SQL Server and Business Central"
 ms.custom: na
 ms.date: 10/01/2019
@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 
 # Installation Considerations for Microsoft SQL Server and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
