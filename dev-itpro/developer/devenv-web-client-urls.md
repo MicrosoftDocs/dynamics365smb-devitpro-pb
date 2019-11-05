@@ -20,7 +20,7 @@ https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page
 ```
 The following URL opens report **5 Receivables – Payables** for the same company:
 ```  
-http://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&report=5   
+https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&report=5   
 ```  
 
 This article describe how you can constuct URLs, which can be useful for including in other sources, such as emails or Word documents, or sending as hyperlinks to other users.

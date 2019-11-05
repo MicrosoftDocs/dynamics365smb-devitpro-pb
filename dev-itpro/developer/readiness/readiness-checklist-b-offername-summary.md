@@ -74,7 +74,7 @@ How to create a good summary for your offer?
 - The summary should summarize the value proposition of your offer in one short and concise sentence.
 - The value proposition is a statement of the unique benefits your product delivers to the customer. 
 
-If you need help formulating a positioning statement, try the value proposition generator located [here.](http://neuralimpact.ca/valueproposition)
+If you need help formulating a positioning statement, try the value proposition generator located [here.](https://neuralimpact.ca/valueproposition)
 - Consider whether or not is relevant (or valuable) to include your offer name in the summary 
 - Don’t just state the offer name as an attempt to make it more memorable (names rarely give away any clues to the prospect about the value they will receive by starting to use your offer).
 

@@ -44,7 +44,7 @@ To mimic users with a specific subscription plan assigned, you can set them up w
 Depending on how you are running your Docker sandbox, you assign the experience in different ways.
 
 ### Azure VMs
-If you use [http://aka.ms/bcsandbox](http://aka.ms/bcsandbox) to create your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Sandbox Container Azure VM, the Azure Resource Manager template has two fields; **Assign Premium Plan** and **Create Test Users**, which by default are set to **Yes**.
+If you use [https://aka.ms/bcsandbox](https://aka.ms/bcsandbox) to create your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Sandbox Container Azure VM, the Azure Resource Manager template has two fields; **Assign Premium Plan** and **Create Test Users**, which by default are set to **Yes**.
 
 **Assign Premium Plan** specifies whether or not your admin user should be assigned a Premium plan. **Create Test Users** specifies whether or not you want the setup to include test users. 
 

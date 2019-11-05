@@ -37,7 +37,7 @@ The signing of an APP package file must be performed on a computer that has [!IN
 7. The following example signs the Proseware.app file with a time stamp using the certificate in the password-protected MyCert.pfx file. The command is run on the computer that was prepared for the signing. Once the command has been run, the Proseware.app file has been modified with a signature. This file is then used when publishing the extension.
 
 ```
-SignTool sign /f C:\Certificates\MyCert.pfx /p MyPassword /t http://timestamp.verisign.com/scripts/timestamp.dll “C:\NAV\Proseware.app”
+SignTool sign /f C:\Certificates\MyCert.pfx /p MyPassword /t https://timestamp.verisign.com/scripts/timestamp.dll “C:\NAV\Proseware.app”
 ```
 
 > [!IMPORTANT]  

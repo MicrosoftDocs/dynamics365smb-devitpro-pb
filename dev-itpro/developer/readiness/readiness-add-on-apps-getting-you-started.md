@@ -114,8 +114,8 @@ Partner Center is the single destination to manage your business relationship wi
 
 You have 3 options to work develop against the current version of Microsoft Dynamics 365 Business Central.
 - If your add-on is lightweight, it might be sufficient to use a [sandbox environment](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started) 
-- If you want to setup a Docker-based development environment on Azure, you can [use](http://aka.ms/BCSandboxAzure) 
-- If you want to setup a local Docker-based developer environment, you can download a PowerShell script available [here](http://aka.ms/BCSandboxLocal) 
+- If you want to setup a Docker-based development environment on Azure, you can [use](https://aka.ms/BCSandboxAzure) 
+- If you want to setup a local Docker-based developer environment, you can download a PowerShell script available [here](https://aka.ms/BCSandboxLocal) 
 
 ## The “Ready to Go” program
 

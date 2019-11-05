@@ -52,7 +52,7 @@ Web Client          : https://cdc633cdb0a2/NAV/
 NAV Admin Username  : admin
 NAV Admin Password  : Biba4071
  Files:
-http://cdc633cdb0a2:8080/certificate.cer
+https://cdc633cdb0a2:8080/certificate.cer
  Initialization took 83 seconds
 Ready for connections!
 ```
