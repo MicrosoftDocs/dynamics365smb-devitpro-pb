@@ -7,11 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 045e0883-f0ab-468d-832d-5cc1798db87b
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnDelete Trigger
 Runs when a user tries to delete a record.  

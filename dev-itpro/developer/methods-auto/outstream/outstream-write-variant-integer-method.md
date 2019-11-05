@@ -49,16 +49,19 @@ The number of bytes that were written.If you omit this optional return value and
  If the return value is present, you must verify that all the data was streamed.  
   
 ## Example  
-  
-```  
-recBinaries.FIND('-');  
-recBinaries.Data.CREATEOUTSTREAM(OutStream);  
-OutStream.WRITE('Secretary');  
-OutStream.WRITE('Alice');  
-OutStream.WRITE('Hart');  
-OutStream.WRITE(010696D);  
-recBinaries.MODIFY();  
-```  
+
+```
+ var
+    recBinaries: Record "Company Information";
+    OStream: OutStream;
+    Var: Variant;
+begin
+    recBinaries.FIND('-');  
+    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
+    OStream.WRITE(Var);  
+    recBinaries.MODIFY();  
+end;
+```   
   
 
 ## See Also

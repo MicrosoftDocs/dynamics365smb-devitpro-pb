@@ -54,21 +54,21 @@ If you omit this optional return value and the operation does not execute succes
   
  We recommend that you use the File data type for files that were created in earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)].  
   
- To read or write files in Unicode or in other formats, we recommend that you use .NET Framework interoperability and use the [System.IO Namespace](http://go.microsoft.com/fwlink/?LinkId=262250).  
+ To read or write files in Unicode or in other formats, we recommend that you use .NET Framework interoperability and use the [System.IO Namespace](https://go.microsoft.com/fwlink/?LinkId=262250).  
   
 ## Example  
- The following example opens a text file that is named C:\\TestFolder\\TestFile.txt. The READ method read the contents of the file and stores it in the String variable. The method returns the size of the text that was read, stores it in the varSize variable, and displays it in a message box. This example assumes that you have created a text file named C:\\TestFolder\\TestFile.txt that contains less than 500 bytes. This example requires that you create the following global variables.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|TestFile|File|Not applicable|  
-|String|Text|500|  
-|varSize|Integer|Not applicable|  
-  
-```  
-TestFile.OPEN('C:\TestFolder\TestFile.txt');  
-varSize := TestFile.READ(String);  
-MESSAGE('The text "%1" is %2 bytes.', String, varSize);  
+ The following example opens a text file that is named C:\\TestFolder\\TestFile.txt. The READ method read the contents of the file and stores it in the String variable. The method returns the size of the text that was read, stores it in the varSize variable, and displays it in a message box. This example assumes that you have created a text file named C:\\TestFolder\\TestFile.txt that contains less than 500 bytes. 
+
+```
+ var
+    Testfile: File;
+    String: Text[500];
+    varSize: Integer;
+begin
+    TestFile.OPEN('C:\TestFolder\TestFile.txt');  
+    varSize := TestFile.READ(String);  
+    MESSAGE('The text "%1" is %2 bytes.', String, varSize);  
+end;
 ```  
   
 

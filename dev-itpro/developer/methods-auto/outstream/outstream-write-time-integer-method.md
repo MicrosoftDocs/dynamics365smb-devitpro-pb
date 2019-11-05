@@ -50,15 +50,20 @@ The number of bytes that were written.If you omit this optional return value and
   
 ## Example  
   
-```  
-recBinaries.FIND('-');  
-recBinaries.Data.CREATEOUTSTREAM(OutStream);  
-OutStream.WRITE('Secretary');  
-OutStream.WRITE('Alice');  
-OutStream.WRITE('Hart');  
-OutStream.WRITE(010696D);  
-recBinaries.MODIFY();  
-```  
+This example requires that you create the following variables.  
+  
+```
+ var
+    recBinaries: Record "Company Information";
+    OStream: OutStream;
+    Tme: Time;
+begin
+    recBinaries.FIND('-');  
+    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
+    OStream.WRITE(Tme);  
+    recBinaries.MODIFY();  
+end;
+```   
   
 
 ## See Also

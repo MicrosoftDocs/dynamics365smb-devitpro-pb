@@ -92,28 +92,23 @@ With the objects in place, you can add and run the following AL code to import t
 
 The example code iterates over records in the **My Items** table. For each record, it looks in the *C:\images* folder for a file whose name matches the **No.** field of the record. If there is a match, the file is imported and a message appears; otherwise, nothing happens.
 
-The code requires that you create the following variable and text constant:
-
-|  Variable name  |  DataType  |  Subtype  |
-|-----------------|------------|-----------|
-|  myItemRec  |  Record  |  My Items  |
-|  fileName  |  Text  |  |
-|  imageID  |  GUID  |  |
-
-|Text constant name|ConstValue|
-|-------------------|--------------|
-|Text000|An image with the following ID has been imported on item %1: %2|
-
 ```
-if myItemRec.FindFirst() then begin
-    repeat begin
-        fileName := 'C:\images\' + Format(myItemRec."No.") + '.jpg';
-        if File.Exists(fileName) then begin
-          imageID := myItemRec.Image.ImportFile(fileName, 'Demo image for item ' + Format(myItemRec."No."));
-          myItemRec.Modify;
-          Message(Text000, myItemRec."No.", imageID)
-        end;
-    end until myItemRec.Next < 1;
+ var
+    myItemRec: Record "My Items";
+    fileName: Text;
+    imageID: GUID;
+    Text000: TextConst ENU='An image with the following ID has been imported on item %1: %2';
+begin
+    if myItemRec.FindFirst() then begin
+        repeat begin
+            fileName := 'C:\images\' + Format(myItemRec."No.") + '.jpg';
+            if File.Exists(fileName) then begin
+              imageID := myItemRec.Image.ImportFile(fileName, 'Demo image for item ' + Format(myItemRec."No."));
+              myItemRec.Modify;
+              Message(Text000, myItemRec."No.", imageID)
+            end;
+        end until myItemRec.Next < 1;
+    end;
 end;
 ```
 

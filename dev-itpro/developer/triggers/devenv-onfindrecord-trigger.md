@@ -7,11 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: d27b1678-5656-4483-9fbe-b6278e0cffc4
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnFindRecord Trigger
 Overrides the default page behavior and enables you to specify which record you want to display when the page opens.  

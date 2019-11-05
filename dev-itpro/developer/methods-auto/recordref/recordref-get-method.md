@@ -2,7 +2,7 @@
 title: "Get Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,23 +43,22 @@ The RecordID that contains the table number and the primary key of the table and
  This method always uses the primary key for the table. It ignores any filters that are set, except security filters. Security filters are applied or ignored based on the Security Filter Mode. The current key and filters are not changed after you call this method. <!--Links For more information, see [Security Filter Modes](Security-Filter-Modes.md)-->.  
   
 ## Example  
- The following example opens the Customer table with the RecordRef variable, RecRef. The code assigns the first field in the table, which is the No. field, to MyFieldRef variable. The variable is assigned a value of 30000 by using the [FIELD Method \(RecordRef\)](recordref-field-method.md). The [RECORDID Method \(RecordRef\)](recordref-recordid-method.md) retrieves the record ID of the record that has a value of 30000 in the No. field. The GET method then uses the RecID variable then to retrieves the record. This example requires that you create the following global variables.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|RecRef|RecordRef|  
-|MyFieldRef|FieldRef|  
-|RecID|RecordID|  
-  
-```  
-  
-RecRef.OPEN(DATABASE::Customer);  
-MyFieldRef := RecRef.FIELD(1);  
-MyFieldRef.VALUE := '30000';  
-IF RecRef.FIND('=') THEN BEGIN  
-  RecID := RecRef.RECORDID;  
-  RecRef.GET(RecID);  
-END  
+ The following example opens the Customer table with the RecordRef variable, RecRef. The code assigns the first field in the table, which is the No. field, to MyFieldRef variable. The variable is assigned a value of 30000 by using the [FIELD Method \(RecordRef\)](recordref-field-method.md). The [RECORDID Method \(RecordRef\)](recordref-recordid-method.md) retrieves the record ID of the record that has a value of 30000 in the No. field. The GET method then uses the RecID variable then to retrieves the record.
+ 
+```   
+var
+    RecRef: RecordRef;
+    MyFieldRef: FieldRef;
+    RecID: RecordId;
+begin     
+    RecRef.OPEN(DATABASE::Customer);  
+    MyFieldRef := RecRef.FIELD(1);  
+    MyFieldRef.VALUE := '30000';  
+    if RecRef.FIND('=') then begin  
+      RecID := RecRef.RECORDID;  
+      RecRef.GET(RecID);  
+    end;  
+end;
 ```  
 
 ## See Also

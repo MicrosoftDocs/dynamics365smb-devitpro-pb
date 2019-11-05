@@ -2,7 +2,7 @@
 title: "ChangeCompany Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *CompanyName*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The name of the company to which you want to change. If you omit this parameter, you change back to the current company.
-          
+The name of the company to which you want to change. If you omit this parameter, you change back to the current company.  
 
 
 ## Return Value
@@ -56,24 +55,19 @@ Even if you run the **CHANGECOMPANY** method, triggers still run in the current 
 ## Example  
 This example shows how to use the **CHANGECOMPANY** method. The following code takes a RecordRef to table **18 Customer** in the current company and redirects it to the table in another company \(in this case Company B\). The last record in the Customer table of Company B is then deleted.  
 
-This example requires that you create the following global variables and text constant  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyRecordRef|RecordRef|  
-|RecID|RecordID|  
-
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|Record to be deleted: %1|  
-
-```  
-MyRecordRef.OPEN(18);  
-MyRecordRef.CHANGECOMPANY('Company B');  
-MyRecordRef.FINDLAST;  
-RecID := MyRecordRef.RECORDID;  
-MESSAGE(Text000, RecID);  
-MyRecordRef.DELETE;  
+```
+var
+    RecID: RecordID;
+    MyRecordRef: RecordRef;
+    Text000: TextConst ENU='Record to be deleted: %1';
+begin
+    MyRecordRef.OPEN(18);  
+    MyRecordRef.CHANGECOMPANY('Company B');  
+    MyRecordRef.FINDLAST;  
+    RecID := MyRecordRef.RECORDID;  
+    MESSAGE(Text000, RecID);  
+    MyRecordRef.DELETE;  
+end;
 ```  
 
 ## See Also

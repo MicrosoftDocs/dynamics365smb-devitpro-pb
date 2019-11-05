@@ -50,20 +50,18 @@ CLEAR(BigText)
   
 ## Example  
  This example shows how to stream a BigText to a BLOB field in a table.  
-  
- This example requires that you define the following variables.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|Bstr|BigText|Not applicable|  
-|ItemRec|Record|Item|  
-|Ostream|OutStream|Not applicable|  
-  
-```  
-Bstr.ADDTEXT('This is the text string that we want to store in a BLOB field.');  
-ItemRec.Picture.CREATEOUTSTREAM(Ostream);  
-Bstr.WRITE(Ostream);  
-ItemRec.INSERT;  
+
+```
+var
+    Bstr: BigText;
+    Ostream: OutStream;
+    ItemRec: Record Item;
+begin 
+    Bstr.ADDTEXT('This is the text string that we want to store in a BLOB field.');  
+    ItemRec.Picture.CREATEOUTSTREAM(Ostream);  
+    Bstr.WRITE(Ostream);  
+    ItemRec.INSERT;  
+end;
 ```  
 
 ## See Also

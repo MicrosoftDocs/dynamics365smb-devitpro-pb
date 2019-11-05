@@ -47,18 +47,17 @@ If you use ARRAYLEN with an input parameter that is not an array, a run-time err
 ## Example  
 This example shows how to use the ARRAYLEN method.  
   
-This example requires that you create the following global variables.  
-  
-|Variable name|DataType|Dimension|  
-|-------------------|--------------|---------------|  
-|Array1|Integer|2|  
-|Array2|Integer|3;4|  
-  
+
 ```  
-MESSAGE('Array1, Total number of elements: %1', ARRAYLEN(Array1));  
-MESSAGE('Array2, Dimension 1 size: %1', ARRAYLEN(Array2,1));  
-MESSAGE('Array2, Dimension 2 size: %1', ARRAYLEN(Array2,2));  
-MESSAGE('Array2, Total number of elements: %1', ARRAYLEN(Array2));  
+var
+    Array1: array[2] of Integer;
+    Array2: array[3,4] of Integer;
+begin
+    MESSAGE('Array1, Total number of elements: %1', ARRAYLEN(Array1));  
+    MESSAGE('Array2, Dimension 1 size: %1', ARRAYLEN(Array2,1));  
+    MESSAGE('Array2, Dimension 2 size: %1', ARRAYLEN(Array2,2));  
+    MESSAGE('Array2, Total number of elements: %1', ARRAYLEN(Array2));  
+end;
 ```  
   
  The following messages are displayed.  

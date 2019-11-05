@@ -92,7 +92,7 @@ When running as connected with an on-premises solution, the [!INCLUDE[prodshort]
 To make setting up this read-only tenant more efficient, we created a new *Intelligent Cloud* user group and an *Intelligent Cloud* permission set. Once the intelligent cloud environment is configured, all users without SUPER permissions will be automatically assigned to the *Intelligent Cloud* user group. Only users with SUPER permissions will be allowed to make modifications to the system at this point.  
 
 > [!NOTE]  
-> Before you configure the a connection from on-premises to b[!INCLUDE [prodshort](../developer/includes/prodshort.md)], make sure that at least one user in each company is assigned SUPER permissions.  
+> Before you configure the a connection from on-premises to [!INCLUDE [prodshort](../developer/includes/prodshort.md)], make sure that at least one user in each company is assigned SUPER permissions.  
 
 Users that are reassigned to the Intelligent Cloud user group will have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user may create new user groups and permissions sets and assign users accordingly. It is highly recommended to create any new permissions sets from a copy of the Intelligent Cloud permission set and then take away permissions you do not want users to have.  
 
@@ -105,7 +105,7 @@ When an intelligent cloud environment is configured, it is highly recommended th
 
 ## System requirements
 
-To connect to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md), the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions. For more information, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
+To connect to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions. For more information, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
 
 ## See Also
 

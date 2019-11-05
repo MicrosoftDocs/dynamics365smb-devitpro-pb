@@ -60,28 +60,23 @@ Dialog windows that are opened by an object are closed when the object terminate
 ## Example  
  This example shows how to use the dialog.OPEN method.  
   
- This code example requires that you create the following variables and text constants.  
-  
-|Name|DataType|  
-|----------|--------------|  
-|MyDialog|Dialog|  
-|MyNext|Integer|  
-  
-|Text constant name|Constant value|  
-|------------------------|--------------------|  
-|Text000|Counting to 4 \#1|  
-  
-```  
-MyNext := 0;  
-MyDialog.OPEN(Text000,MyNext);  
-REPEAT  
-  // Do some processing.  
-  SLEEP(1000);  
-  MyNext := MyNext + 1;  
-  MyDialog.UPDATE(); // Update the field in the dialog.  
-UNTIL MyNext = 4;  
-SLEEP(1000);  
-MyDialog.CLOSE()  
+ ```
+var
+    MyDialog: Dialog;
+    MyNext: Integer;
+    Text000: TextConst ENU='Counting to 4 #1:';
+begin
+    MyNext := 0;  
+    MyDialog.OPEN(Text000,MyNext);  
+    repeat  
+      // Do some processing.  
+      SLEEP(1000);  
+      MyNext := MyNext + 1;  
+      MyDialog.UPDATE(); // Update the field in the dialog.  
+    until MyNext = 4;  
+    SLEEP(1000);  
+    MyDialog.CLOSE();  
+end;
 ```  
   
  The dialog window opens and displays this text:  
@@ -91,31 +86,24 @@ MyDialog.CLOSE()
  Every one second, the dialog window updates with the new value of *MyNext* until it reaches 4, then the dialog window closes.  
   
 ## Example  
- This example shows how to use the dialog.OPEN method to display a progress indicator in the [!INCLUDE[nav_windows_md](../../includes/nav_windows_md.md). The progress indicator will not display in the [!INCLUDE[webclient](../../includes/webclient.md)].
-  
-This code example requires that you create the following variables and text constants. 
-
-The progress indicator do
-  
-|Name|Datatype|  
-|----------|--------------|  
-|MyDialog|Dialog|  
-|MyNext|Integer|  
-  
-|Text constant name|Constant value|  
-|------------------------|--------------------|  
-|Text000|Progress from 0 to 9999 @1@@@@@|  
+ This example shows how to use the dialog.OPEN method to display a progress indicator in the [!INCLUDE[nav_windows_md](../../includes/nav_windows_md.md)]. The progress indicator will not display in the [!INCLUDE[webclient](../../includes/webclient.md)].
   
 ```  
-MyNext := 0;  
-MyDialog.OPEN(Text000,MyNext);  
-REPEAT  
-  // Do some processing.  
-  MyNext := MyNext + 1;  
-  MyDialog.UPDATE(); // Update the field in the dialog.  
-UNTIL MyNext = 9999;  
-SLEEP(1000);  
-MyDialog.CLOSE()  
+var
+    MyDialog: Dialog;
+    MyNext: Integer;
+    Text000: TextConst ENU='Progress from 0 to 9999 #1#####';
+begin
+    MyNext := 0;  
+    MyDialog.OPEN(Text000,MyNext);  
+    repeat  
+      // Do some processing.  
+      MyNext := MyNext + 1;  
+      MyDialog.UPDATE(); // Update the field in the dialog.  
+    until MyNext = 9999;  
+    SLEEP(1000);  
+    MyDialog.CLOSE();  
+end;
 ```  
   
 The dialog window opens and displays the progress indicator and percentage.  

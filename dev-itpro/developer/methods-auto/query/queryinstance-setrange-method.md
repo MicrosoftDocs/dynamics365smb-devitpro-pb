@@ -97,13 +97,11 @@ Query.READ;
   
 2.  Create the following AL variables and text constant in the object that will run the query, such as a codeunit.  
   
-    |Variable name|DataType|Subtype|  
-    |-------------------|--------------|-------------|  
-    |MyQuery|Query|Customer\_SalesQuantity|  
-  
-    |Text constant name|ENU Value|  
-    |------------------------|---------------|  
-    |Text000|Customer name = %1, Quantity = %2|  
+      ```
+     var
+        MyQuery: Query "Customer SalesQuantity";
+        Text000: TextConst ENU='Customer name = %1, Quantity = %2';
+    ``` 
   
  The following AL code uses the **SETRANGE** method to filter a query dataset over a range of values on the **Quantity** column. You can add the code to a codeunit, and then run the codeunit to see the results.  
   
@@ -116,10 +114,10 @@ MyQuery.SETFILTER(NAME, 'Selangorian Ltd.');
 MyQuery.OPEN;  
 // Reads each row in the dataset and displays message with column values.  
 // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
-WHILE MyQuery.READ DO  
-BEGIN  
+while MyQuery.READ do  
+begin  
   MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);  
-END;   
+end;   
 // Saves the resulting dataset as a CSV file.  
 MyQuery.SAVEASCSV('c:\temp\CustomerSales.csv');  
 MyQuery.CLOSE;  

@@ -9,6 +9,7 @@
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
+#### [Configure the Help Experience](deployment/configure-help.md)
 <!--Ready2Go-->
 ## Ready to Go
 ### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
@@ -28,7 +29,6 @@
 ## Online
 <!-- ### Onboarding your customer -->
 <!-- ### Free trial -->
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business Central Administration Center](administration/tenant-admin-center.md)
 ### [Managing Environments](administration/tenant-admin-center-environments.md)
 ### [Technical Support of Business Central](technical-support.md)
@@ -46,6 +46,7 @@
 #### [AppSource](deployment/embed-app-appsource.md)
 #### [Sandbox](deployment/embed-app-sandbox.md)
 #### [Ecosystem Features](deployment/embed-app-ecosystem.md)
+### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## On-Premises
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### [System requirements 2019 release wave 2](deployment/system-requirement-business-central-v15.md)
@@ -78,7 +79,6 @@
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating and Altering Databases](cside/cside-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
-## [Configuring the Help Experience](deployment/configure-help.md)
 <!-- end deployment -->
 <!-- administration-->
 # Administration
@@ -89,7 +89,7 @@
 #### [Administration Center Overview](administration/tenant-admin-center.md)
 #### [Managing Environments](administration/tenant-admin-center-environments.md)
 #### [Updating Environments](administration/tenant-admin-center-update-management.md)
-<!--#### [Database Exports](administration/tenant-admin-center-database-export.md)-->
+#### [Exporting Databases](administration/tenant-admin-center-database-export.md)
 #### [Tenant Notifications](administration/tenant-admin-center-notifications.md)
 #### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 #### [Administration Center API](administration/administration-center-api.md)
@@ -117,6 +117,7 @@
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
+### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### Monitoring Server Events
@@ -196,6 +197,7 @@
 ## Converting, Upgrading, and Installing Extensions
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
+### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
 ### [Generating Delta Files](developer/devenv-generating-delta-files.md)

@@ -53,27 +53,24 @@ If you do not use the optional return value and the data being read is less than
 If you use the return value, you must verify the validity of the data that has been read.  
   
 ## Example  
- This example shows how to use the InStream.READTEXT method. This example requires that you create the following variables.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|FileTest|File|  
-|StreamInTest|InStream|  
-|Int|Integer|  
-|Txt|Text|  
-  
+
+```
+ var
+    FileTest: File;
+    StreamInTest: Instream;
+    Txt: Text;
+    Int: Integer;
+begin
+    FileTest.OPEN('c:\XMLDocs\NewTest.txt');  
+    FileTest.CREATEINSTREAM(StreamInTest);  
+    // Starting a loop  
+    while not (StreamInTest.EOS) do begin 
+      Int := StreamInTest.READTEXT(Txt,100);  
+      MESSAGE(Txt + '\Size: ' + FORMAT(Int));  
+    end;  
+    FileTest.CLOSE();  
+end;
 ```  
-FileTest.OPEN('c:\XMLDocs\NewTest.txt');  
-FileTest.CREATEINSTREAM(StreamInTest);  
-// Starting a loop  
-WHILE NOT (StreamInTest.EOS) DO BEGIN  
-  Int := StreamInTest.READTEXT(Txt,100);  
-  MESSAGE(Txt + '\Size: ' + FORMAT(Int));  
-END;  
-FileTest.CLOSE();  
-```  
-  
-## Example
 
 
 ## See Also

@@ -28,11 +28,10 @@ To ease your journey, from the initial listing to the final publication of your 
 	
 **Getting you started with Add-on Apps** 
 - STEP 1: Create and set up your accounts
-- STEP 2: List your app on AppSource
 
 **Developing and publishing your Add-on App to AppSource**
-- STEP 3: Develop your app
-- STEP 4: Initiate the validation and publication process
+- STEP 2: Develop your app
+- STEP 3: Initiate the validation and publication process
 
 > [!IMPORTANT]  
 > Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
@@ -82,7 +81,7 @@ You will have to make a choice which object range is best for you. Some partners
 ## Developer account
 A developer account enables you to submit apps and add-ins to Microsoft’s marketplaces, including the Windows Store, Office Store, Azure Marketplace, and Microsoft AppSource.
 Note, you only need one developer account per company (not one per app submission).
-- [Register (or check if you already have access) here:](https://developer.microsoft.com/en-us/store/register)
+- Register (or check if you already have access) [here](https://developer.microsoft.com/en-us/store/register)
 - A one-time registration fee applies
 
 *Choosing a primary contact email and publisher display name*
@@ -106,16 +105,17 @@ It is key that you use the same display name and email throughout your app submi
 Partner Center is the single destination to manage your business relationship with Microsoft. 
 [Get Started by clicking this link](https://partner.microsoft.com/en-us/dashboard/account/v3/enrollment/introduction/azureisv)
 
-NOTE: This has replaced the Cloud Partner Portal. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
+> [!NOTE]  
+> This has replaced the Cloud Partner Portal. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
 
 ## Get onboarded to tools and programs
 
 ### Create your sandbox environment
 
 You have 3 options to work develop against the current version of Microsoft Dynamics 365 Business Central.
-- [If your add-on is lightweight, it might be sufficient to use a sandbox environment](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-get-started) 
-- [If you want to setup a Docker-based development environment on Azure, you can use:](http://aka.ms/BCSandboxAzure) 
-- [If you want to setup a local Docker-based developer environment, you can download a PowerShell script available at](http://aka.ms/BCSandboxLocal) 
+- If your add-on is lightweight, it might be sufficient to use a [sandbox environment](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-get-started) 
+- If you want to setup a Docker-based development environment on Azure, you can [use](http://aka.ms/BCSandboxAzure) 
+- If you want to setup a local Docker-based developer environment, you can download a PowerShell script available [here](http://aka.ms/BCSandboxLocal) 
 
 ## The “Ready to Go” program
 
@@ -147,7 +147,7 @@ To start the registration process, your company Global Administrator must first 
 Next, your company Global Administrator must click on the ‘Get Started’ option under the ‘Microsoft Collaborate’ header.
 - Note: If you are properly registered, and have setup your above Developer Account, the registration page should autofill with your Company details. If the page is not filled automatically, please complete the form manually.
 
-Once completed, be sure and click the 'Terms of Use' (TOU) checkbox at the bottom of the registration page. Note: You need to accept the TOU to successfully register (cf. image below).
+Once completed, be sure and click the 'Terms of Use' (TOU) checkbox at the bottom of the registration page. Note: You need to accept the TOU to successfully register.
 
 Click the **Next** button to complete your initial registration. When successful, you will see the image below.
 
@@ -157,7 +157,7 @@ As the final step, to complete registration, click ‘GO TO DASHBOARD’.
 - Please skip this part and move on to the next section called “Getting access to the available builds and engagements” to download packages through Microsoft Collaborate.
 
 If you DO want to add coworkers, please follow the 5 steps below:
-1.	Log on to Microsoft Collaborate with your Global Administrator account on [https://aka.ms/Collaborate](https://aka.ms/Collaborate).
+1.	Log on to Microsoft Collaborate with your Global Administrator account on [aka.ms/Collaborate](https://aka.ms/Collaborate).
 2. Click on the ‘Gear’ Icon on the top right corner of the page and then on ‘Account Settings’ as shown on the image below.
 
 3. Click on ‘Users’ under ‘Settings’ in the grey panel on the left-hand side of the page. The following image will appear.
@@ -165,20 +165,20 @@ If you DO want to add coworkers, please follow the 5 steps below:
 4. Click the grey ‘ADD USERS’ button and leave the default choice to ‘Add existing users’ as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey ‘ADD SELECTED’ button (see image below).
 
 5. You have now successfully added your coworker to Collaborate. The added users will appear in your list of users and will now be able to log on to Microsoft Collaborate using the following link:
-[https://aka.ms/Collaborate](https://aka.ms/Collaborate)
+[aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 *Getting access to the available builds and engagements*
 
 1. Register on [Microsoft Collaborate](https://aka.ms/Collaborate) by using your AAD Global Admin account (as described in detail above).
 2. Once you have successfully registered (and added coworkers) on  Microsoft Collaborate, your company’s Azure Active Directory (AAD) global administrator should send us an email to complete the on-boarding [Dynamics 365 Business Central Programs](mailto: Dyn365BEP@microsoft.com). We need to manually assign you to the right programs and engagements. Expect a response from us within 1-2 business days.
 3. In this email to [Dynamics 365 Business Central Programs](mailto: Dyn365BEP@microsoft.com), please specify the following:
+    - Your ‘Publisher Display Name’
+    - The name(s) of the people you have added to Microsoft Collaborate
+    - The email address(es) of the people you have added to Microsoft Collaborate (No personal email addresses please)
+    - The roles you have given then on Collaborate (Participant, Power user)
+    - MPN ID# and registered Partner Name
 
-- Your ‘Publisher Display Name’
-- The name(s) of the people you have added to Microsoft Collaborate
-- The email address(es) of the people you have added to Microsoft Collaborate (No personal email addresses please)
-- The roles you have given then on Collaborate (Participant, Power user)
-- MPN ID# and registered Partner Name
-
+<!--
 ## STEP 2: List your Add-on app on Microsoft AppSource
 
 To list your app, you need to register it on Microsoft AppSource.
@@ -194,10 +194,10 @@ When listing your app you need to specify the following:
 
 *App description: Intended users of the app (cf. IT professional, Developers, Business Users)*
 
-Upon listing your app on AppSource you will receive an email from us that outlines the next steps you need to take along with a list of useful resources that can help you bring your app to AppSource quickly.
+Upon listing your app on AppSource you will receive an email from us that outlines the next steps you need to take along with a list of useful resources that can help you bring your app to AppSource quickly. -->
 
 ## Next steps
-Now that you have completed step 1 and 2 (cf. setting up your accounts and listing your offer on AppSource) you can now proceed to step 3 and 4 (cf. Developing your offer initiating the validation and publication process). Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
+Now that you have completed step 1 (cf. setting up your accounts) you can now proceed to step 2 and 3 (cf. Developing your offer initiating the validation and publication process). Please review all of the steps and follow the [Marketing Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing) and [Technical Validation Checklist](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission). 
 
 ## Useful resources
 

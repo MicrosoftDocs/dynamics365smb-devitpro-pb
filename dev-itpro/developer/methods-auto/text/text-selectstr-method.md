@@ -51,31 +51,27 @@ The substring from the comma-separated string at the index specified.
  Quotes are not supported. For example, a,b,"c,d",e is treated as a five-element substring where substring 4 is d".  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|CommaStr|Text|60|  
-|CommaStr2|Text|60|  
-|SubStr1|Text|60|  
-|SubStr2|Text|60|  
-|SubStr3|Text|60|  
-|SubStr4|Text|60|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|This,is a comma,separated,string|  
-|Text001|The calls to SELECTSTR return:\\|  
-|Text002|11,22,33,,55,,,|  
-  
+ 
 ```  
-CommaStr := Text000;  
-CommaStr2 := Text002;  
-SubStr1 := SELECTSTR(2, CommaStr); // Pick out the 2nd substring.  
-SubStr2 := SELECTSTR(4, CommaStr); // Pick out the 4th substring.  
-SubStr3 := SELECTSTR(1, CommaStr2);  
-SubStr4 := SELECTSTR(3, CommaStr2);  
-MESSAGE(Text001 + '>%1<\' + '>%2<\' + '>%3<\' + '>%4<\', SubStr1, SubStr2, SubStr3, SubStr4);  
+var
+    CommaStr: Text[60];  
+    CommaStr2: Text[60];  
+    SubStr1: Text[60];  
+    SubStr2: Text[60];  
+    SubStr3: Text[60];  
+    SubStr4: Text[60];  
+    Text000: TextConst ENU='This,is a comma,separated,string';
+    Text001: TextConst ENU='The calls to SELECTSTR return:\\';
+    Text002: TextConst ENU='11,22,33,,55,,,';
+begin
+    CommaStr := Text000;  
+    CommaStr2 := Text002;  
+    SubStr1 := SELECTSTR(2, CommaStr); // Pick out the 2nd substring.  
+    SubStr2 := SELECTSTR(4, CommaStr); // Pick out the 4th substring.  
+    SubStr3 := SELECTSTR(1, CommaStr2);  
+    SubStr4 := SELECTSTR(3, CommaStr2);  
+    MESSAGE(Text001 + '>%1<\' + '>%2<\' + '>%3<\' + '>%4<\', SubStr1, SubStr2, SubStr3, SubStr4);  
+end;
 ```  
   
  The message window displays the following text:  
@@ -90,22 +86,17 @@ MESSAGE(Text001 + '>%1<\' + '>%2<\' + '>%3<\' + '>%4<\', SubStr1, SubStr2, SubSt
   
  **>33\<**  
   
-## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|CommaStr2|Text|60|  
-|SubStr5|Text|60|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text002|11,22,33,,55,,,|  
-  
+## Example   
 ```  
-CommaStr2 := Text002;  
-SubStr5 := SELECTSTR(6,CommaStr2);  
-MESSAGE('>%1<\', SubStr5);  
+var
+    CommaStr2: Text[60];  
+    SubStr5: Text[60];  
+    Text002: TextConst ENU='11,22,33,,55,,,';
+begin
+    CommaStr2 := Text002;  
+    SubStr5 := SELECTSTR(6,CommaStr2);  
+    MESSAGE('>%1<\', SubStr5);  
+end;
 ```  
   
  This example returns an error.  

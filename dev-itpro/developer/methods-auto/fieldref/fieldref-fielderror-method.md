@@ -41,30 +41,25 @@ Use this optional parameter to include the text of the error message. If this pa
  This method is like the FIELDERROR Method for the Record data type. For examples, see [FIELDERROR Method \(Record\)](../../methods-auto/record/record-fielderror-method.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The CustomerName variable is initialized with a blank text. `CustomerRecref.FIELD` creates a FieldRef that is named MyFieldRef for field1 \(No.\) and selects record 30000. Field 2 \(Name\) is then selected for record 30000. If the CustomerName variable is a blank text, then `MyFieldRef.FIELDERROR` is executed and an error message is displayed. The text in Text000 text constant is inserted into the error message that is displayed by [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. This example uses the default error message. This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|CustomerName|Text|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|cannot be blank|  
-  
-```  
-  
-CustomerRecref.OPEN(18);  
-CustomerName := '';  
-MyFieldRef := CustomerRecref.FIELD(1);  
-MyFieldRef.VALUE('30000');  
-MyFieldRef := CustomerRecref.FIELD(2);  
-IF CustomerName = '' THEN  
-  MyFieldRef.FIELDERROR(Text000)  
-ELSE  
-  //Do some processing  
-  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The CustomerName variable is initialized with a blank text. `CustomerRecref.FIELD` creates a FieldRef that is named MyFieldRef for field1 \(No.\) and selects record 30000. Field 2 \(Name\) is then selected for record 30000. If the CustomerName variable is a blank text, then `MyFieldRef.FIELDERROR` is executed and an error message is displayed. The text in Text000 text constant is inserted into the error message that is displayed by [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. 
+
+```
+var
+    MyFieldRef: FieldRef;
+    CustomerRecref: RecordRef;
+    CustomerName: Text;
+    Text000: TextConst ENU='cannot be blank';
+begin
+    CustomerRecref.OPEN(18);  
+    CustomerName := '';  
+    MyFieldRef := CustomerRecref.FIELD(1);  
+    MyFieldRef.VALUE('30000');  
+    MyFieldRef := CustomerRecref.FIELD(2);  
+    if CustomerName = '' then  
+      MyFieldRef.FIELDERROR(Text000)  
+    else  
+      //Do some processing  
+end;
 ```  
   
  This code example displays the following error message:  

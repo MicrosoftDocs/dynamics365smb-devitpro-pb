@@ -2,7 +2,7 @@
 title: "GetPosition Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *UseNames*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Indicates whether a reference to the field caption or the field number should be returned. The UseCaptions parameter is optional. If it is set to true (default value) or if it is empty, then the returned string contains references to field captions in the table with which the record is associated. If the parameter is set to false, then field numbers are used instead.
-          
+Indicates whether a reference to the field caption or the field number should be returned. The UseCaptions parameter is optional. If it is set to true (default value) or if it is empty, then the returned string contains references to field captions in the table with which the record is associated. If the parameter is set to false, then field numbers are used instead.  
 
 
 ## Return Value
@@ -44,22 +43,18 @@ The name or number of the field that contains the primary key.
  This method works just like the [GETPOSITION Method \(Record\)](../../methods/devenv-getposition-method-record.md).  
   
 ## Example  
- The following example opens the Customer table as a RecodRef that is named RecRef. The RecordRef variable uses the GETPOSITION method to retrieve the position of the primary key. The *UseCaptions* parameter is set to **true** so the caption of the field that contains the primary key is returned. If you set *UseCaptions* to **false**, the number of the field is returned. This example requires that you create the following global variables.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|RecRef|RecordRef|  
-|varPrimaryKey|Text|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The primary key is: %1.|  
-  
-```  
-  
-RecRef.OPEN(DATABASE::Customer);  
-varPrimaryKey := RecRef.GETPOSITION(TRUE);  
-MESSAGE(Text000, varPrimaryKey);  
+ The following example opens the Customer table as a RecodRef that is named RecRef. The RecordRef variable uses the GETPOSITION method to retrieve the position of the primary key. The *UseCaptions* parameter is set to **true** so the caption of the field that contains the primary key is returned. If you set *UseCaptions* to **false**, the number of the field is returned. 
+   
+```   
+var
+    RecRef: RecordRef;
+    varPrimaryKey: Text;
+    Text000: TexConst ENU='The primary key is: %1.';
+begin    
+    RecRef.OPEN(DATABASE::Customer);  
+    varPrimaryKey := RecRef.GETPOSITION(TRUE);  
+    MESSAGE(Text000, varPrimaryKey);  
+end;
 ```  
   
 

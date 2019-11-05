@@ -7,11 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 820616a5-daa7-4819-8bf8-02f376ef806e
 author: SusanneWindfeldPedersen
-manager: edupont
 ---
-
 
 # OnQueryClosePage Trigger
 Runs as a page closes and before the [OnClosePage Trigger](devenv-OnClosePage-Trigger.md) executes.  
@@ -37,7 +34,7 @@ end;
 
 ## Applies To  
 
--   Pages  
+- Pages  
 
 <!--NAV  
 > [!IMPORTANT]  

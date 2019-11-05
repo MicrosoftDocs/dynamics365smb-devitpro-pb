@@ -44,10 +44,10 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ```  
 CustomerList.OPENVIEW;  
 // Loops through all customers and displays the customer name.  
-IF CustomerList.FIRST THEN  
-  REPEAT  
-    MESSAGE(CustomerList.Name);  
-UNTIL NOT CustomerList.NEXT;  
+if CustomerList.FIRST then  
+  repeat  
+    MESSAGE('%1';CustomerList.Name);  
+until not CustomerList.NEXT;  
   
 ```
 

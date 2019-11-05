@@ -7,10 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
 
 # OnBeforeTestRun Trigger
 Runs before a test  of a test codeunit is run.  

@@ -51,11 +51,11 @@ This example creates a SessionSettings object that is populated with the current
 ```
 var
   MySessionSettings : SessionSettings;
-  begin
-    MySessionSettings.INIT;
-    MySessionSettings.LOCALEID(1033);
-    MySessionSettings.REQUESTSESSIONUPDATE(false);
-  end;  
+begin
+  MySessionSettings.INIT;
+  MySessionSettings.LOCALEID(1033);
+  MySessionSettings.REQUESTSESSIONUPDATE(false);
+end;  
 ```  
 
 

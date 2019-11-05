@@ -2,7 +2,7 @@
 title: "SetTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Rec*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-The Record for which you want to specify a table.  
+Specifies the Record that you want to refer to the table.  
 
 
 
@@ -40,20 +40,18 @@ The Record for which you want to specify a table.
 ## Example  
  This example shows that if you have a RecordID data type, you can get a RecordRef for the table that the RecordID refers to. Then you can use the RecordRef to set the table to which a Record variable refers.  
 
- This example requires that you create the following global or local variables.  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|InvtEventBuf|Record|Inventory Event Buffer|  
-|RecID|RecordID|Not applicable|  
-|RecRef|RecordRef|Not applicable|  
-|ProdOrderComp|Record|Prod. Order Component|  
-
 ```  
-InvtEventBuf.FIND('-');  
-RecID := InvtEventBuf."Source Line ID";  
-RecRef := RecID.GETRECORD;  
-RecRef.SETTABLE(ProdOrderComp);  
+var
+    RecRef: RecordRef;
+    InvtEventBuf: Record "Inventory Event Buffer";
+    RecID: RecordId;
+    ProdOrderComp: Record "Prod. Order Component";
+begin 
+    InvtEventBuf.FIND('-');  
+    RecID := InvtEventBuf."Source Line ID";  
+    RecRef := RecID.GETRECORD;  
+    RecRef.SETTABLE(ProdOrderComp);  
+end;
 ```  
 
 

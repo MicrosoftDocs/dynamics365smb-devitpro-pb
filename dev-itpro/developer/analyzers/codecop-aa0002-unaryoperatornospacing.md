@@ -2,17 +2,17 @@
 title: "There must be no space character."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/15/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: SusanneWindfeldPedersen
+author: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .xml or .resx files in the ModernDev repo.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0002
 There must be no space character.  
 

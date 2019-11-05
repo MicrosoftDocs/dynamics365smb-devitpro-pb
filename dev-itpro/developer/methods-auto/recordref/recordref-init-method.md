@@ -2,7 +2,7 @@
 title: "Init Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -64,29 +64,22 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
   
 > [!NOTE]  
 >  In this example, the INIT method is called before the primary key is assigned a value. The INIT method does not initialize primary key fields. Therefore calling the INIT method before or after you assign values to the primary key field does not make any difference.  
-  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The value of the field before initialization is %1.|  
-|Text001|The value of the field after you insert the record is %1.|  
-  
-```  
-  
-CustomerRecref.OPEN(18);  
-MyFieldRef := CustomerRecref.FIELD(1);  
-CustomerRecref.INIT;  
-MESSAGE(‘%1’, MyFieldRef.VALUE);  
-MyFieldRef.VALUE := '1120';  
-CustomerRecref.INSERT;  
-MESSAGE(‘%1’, MyFieldRef.VALUE);  
-  
+   
+```   
+var
+    CustomerRecref: RecordRef;
+    MyFieldRef: FieldRef;
+    Text000: TextConst ENU='The value of the field before initialization is %1.';
+    Text001: TextConst ENU='The value of the field after you insert the record is %1.';
+begin 
+    CustomerRecref.OPEN(18);  
+    MyFieldRef := CustomerRecref.FIELD(1);  
+    CustomerRecref.INIT;  
+    MESSAGE(‘%1’, MyFieldRef.VALUE);  
+    MyFieldRef.VALUE := '1120';  
+    CustomerRecref.INSERT;  
+    MESSAGE(‘%1’, MyFieldRef.VALUE);  
+end;
 ```  
   
 

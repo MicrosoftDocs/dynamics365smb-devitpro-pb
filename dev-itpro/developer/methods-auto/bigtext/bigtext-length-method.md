@@ -41,23 +41,20 @@ The length of the text stored in this BigText instance.
  To delete the content in a BigText variable use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md). The syntax for the CLEAR method is shown in the following code snippet: `CLEAR(BigText)`.  
   
 ## Example  
- The following example demonstrates how to retrieve the length of a BigText variable. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyBigText|BigText|  
-|VarLength|Integer|  
-  
-|Text constant name|ENU value|  
-|------------------------|---------------|  
-|Text000|VarLength = %1|  
-  
- In this example, the BigText variable is initialized with the text ‘ABCDEFG’. The length, which is 7, is stored in the VarLength variable and displayed in a message box.  
+ The following example demonstrates how to retrieve the length of a BigText variable. 
+
+In this example, the BigText variable is initialized with the text ‘ABCDEFG’. The length, which is 7, is stored in the VarLength variable and displayed in a message box.  
   
 ```  
-MyBigText.ADDTEXT('ABCDEFG');  
-VarLength := MyBigText.LENGTH;  
-MESSAGE(Text000, VarLength);  
+var
+    MyBigText: BigText;
+    VarLength: Text;
+    Text000: TextConst ENU='VarLength = %1';
+begin
+    MyBigText.ADDTEXT('ABCDEFG');  
+    VarLength := MyBigText.LENGTH;  
+    MESSAGE(Text000, VarLength);  
+end;
   
 ```  
   

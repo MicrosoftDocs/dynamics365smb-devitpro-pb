@@ -48,7 +48,7 @@ For details about each path, see the following articles:
 -->
 
 > [!NOTE]
-> Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to the latest cumulative update of [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
+> Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
 <!--
 ## Upgrade an unmodified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application
 

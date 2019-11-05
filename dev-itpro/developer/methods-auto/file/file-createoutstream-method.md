@@ -39,20 +39,18 @@ An instance of the [File](file-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example uses the CREATEOUTSTREAM method to export data from a table to an XML document. The code uses the [CREATE Method \(File\)](../../methods-auto/file/file-create-method.md) to create an XML file that is named CustXmlFile.xml in a folder that is named xmlData on drive C. The [CREATEOUTSTREAM Method \(FILE\)](../../methods-auto/file/file-createoutstream-method.md) opens a data stream to output the data from the table to the XML file. The [EXPORT Method \(XMLport\)](../../methods-auto/xmlport/xmlport-export-method.md) then exports the data and saves it at the specified location. The [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) closes the data stream. This example assumes that you have created a folder named xmlData on drive C. This example requires that you create the following global variables.  
+ The following example uses the CREATEOUTSTREAM method to export data from a table to an XML document. The code uses the [CREATE Method \(File\)](../../methods-auto/file/file-create-method.md) to create an XML file that is named CustXmlFile.xml in a folder that is named xmlData on drive C. The [CREATEOUTSTREAM Method \(FILE\)](../../methods-auto/file/file-createoutstream-method.md) opens a data stream to output the data from the table to the XML file. The [EXPORT Method \(XMLport\)](../../methods-auto/xmlport/xmlport-export-method.md) then exports the data and saves it at the specified location. The [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) closes the data stream. This example assumes that you have created a folder named xmlData on drive C. 
 
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|CustXmlFile|File|Not applicable|  
-|XmlStream|OutStream|Not applicable|  
-|varXmlPort|XMLport|50002<br /><br /> This inserts the name of the XMLport.|  
-
-```  
-
-CustXmlFile.CREATE('C:\XmlData\Customer.xml');  
-CustXmlFile.CREATEOUTSTREAM(XmlStream);  
-XMLPORT.EXPORT(50002, XmlStream);  
-CustXmlFile.CLOSE;  
+```
+ var
+    CustXmlFile: File;
+    XmlStream: OutStream;
+begin
+    CustXmlFile.CREATE('C:\XmlData\Customer.xml');  
+    CustXmlFile.CREATEOUTSTREAM(XmlStream);  
+    XMLPORT.EXPORT(50002, XmlStream);  
+    CustXmlFile.CLOSE;  
+end;
 
 ```  
 

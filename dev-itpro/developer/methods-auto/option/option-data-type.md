@@ -21,13 +21,15 @@ Denotes an option value. In the code snippet below, you can see how the Option d
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax example
+
 ```
 procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
     var 
         OptionVariable : Option C, "or D";
     begin
-        Message(OptionParameter::Alpha);
-        Message(OptionVariable::C);
+        Message('%1',OptionParameter::Alpha);
+        Message('%1',OptionVariable::C);
     end;
 ```
 
@@ -42,15 +44,15 @@ procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
  --> 
 
 ## Example  
-In the Purchase Header table, the Status field is an Option data type. In the following example, the option value is converted into an integer. This example requires that you create the following variables.  
-  
-|Name|Data type|Subtype|  
-|----------|---------------|-------------|  
-|Number|Integer|Not applicable|  
-|PurchHeaderRec|Record|Purchase Header|  
-  
-```  
-Number := PurchHeaderRec."Document Type";  
+In the Purchase Header table, the Status field is an Option data type. In the following example, the option value is converted into an integer.
+
+ ```
+ var
+    Number: Integer;
+    PurchHeaderRec: Record "Purchase Header";
+begin 
+    Number := PurchHeaderRec."Document Type";  
+end;
 ```  
   
 ## Example  

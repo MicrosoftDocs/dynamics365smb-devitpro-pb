@@ -2,7 +2,7 @@
 title: "IsTemporary Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,14 +45,14 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
   
 ```  
 // Previous code  
-IF RecordRefVar.Number >= 2000100000 THEN BEGIN  
+ifRecordRefVar.Number >= 2000100000 then begin  
   // Code for temporary tables  
-END;  
+end;  
   
 // New code  
-IF RecordRefVar.IsTemporary THEN BEGIN  
+ifRecordRefVar.IsTemporary then begin  
   // Code for temporary tables  
-END;  
+end;  
 ```  
 
 ## See Also

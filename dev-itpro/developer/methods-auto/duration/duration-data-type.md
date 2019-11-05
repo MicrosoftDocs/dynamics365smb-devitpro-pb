@@ -30,21 +30,19 @@ The following are examples of durations:
  DATETIME+DURATION=DATETIME  
   
 ## Example  
- This example shows how to calculate the difference between two DateTimes. It requires that you define the following variables.  
-  
-|Variable|DataType|  
-|--------|--------|  
-|DateTime1|DateTime|  
-|Datetime2|DateTime|  
-|Duration|Duration|  
-  
- This example is run on a computer with the Current Format in the Regional and Language Options set to English (United States).  
+ This example shows how to calculate the difference between two DateTimes. This example is run on a computer with the Current Format in the Regional and Language Options set to English (United States).  
   
 ```  
-DateTime1 := CREATEDATETIME(010109D, 080000T); // January 1, 2009 at 08:00:00 AM  
-DateTime2 := CREATEDATETIME(050509D, 133001T); // May 5, 2009 at 1:30:01 PM  
-Duration := DateTime2 - DateTime1;  
-MESSAGE(FORMAT(Duration));  
+var
+    DateTime1: DateTime;
+    DateTime2: DateTime1;
+    Duration: Duration;
+begin
+    DateTime1 := CREATEDATETIME(20090101D, 080000T); // January 1, 2009 at 08:00:00 AM  
+    DateTime2 := CREATEDATETIME(20090505D, 133001T); // May 5, 2009 at 1:30:01 PM  
+    Duration := DateTime2 - DateTime1;  
+    MESSAGE(FORMAT(Duration));  
+end;
 ```  
   
  The message window displays the following:  

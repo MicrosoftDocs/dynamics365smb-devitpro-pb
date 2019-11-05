@@ -72,7 +72,7 @@ We recommend that you use the methods in codeunit 419, File Management, to uploa
 ## Example  
 
 ```  
-UPLOAD('Upload file','C:\','Text file(*.txt)|*.txt','Test.txt',varTest)  
+UPLOAD('Upload file','C:\','Text file(*.txt)|*.txt','Test.txt',varTest);  
 ```  
 
 ## See Also

@@ -2,7 +2,7 @@
 title: "Field Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,35 +42,32 @@ A new FieldRef of the record
 ## Remarks  
  This method returns an error if the record is not opened and if the field is not found.  
   
- You might obtain better performance by using the [FIELDINDEX Method \(RecordRef\)](../../methods/devenv-fieldindex-method.md).  
+ You might obtain better performance by using the [FIELDINDEX Method \(RecordRef\)](recordref-fieldindex-method.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. MyRecordRef uses the FIELD method to create a reference to the No. field \(field 1\). The value in the No. field is then set to a specified record No. In this example, the record is set to 30000. The [FIND Method \(RecordRef\)](recordref-find-method.md) method.md records for record 30000. If record is found, the FIELD method retrieves the value in the Name field \(field 2\), stores it in the varOldName variable and displays it in a message box. The [VALUE Method \(FieldRef, TestPage Field\)](../fieldref/fieldref-value-method.md) changes the value in the Name field to a new name. In this example, the new name is ‘Contoso’. The table is then modified to reflect this change and the new value in the Name field is retrieved and displayed in a message box. You can specify any record in the table and change the value in the Name field. This example requires that you create the following global variables.  
-  
-|||  
-|-|-|  
-|Name|DataType|  
-|MyRecordRef|RecordRef|  
-|MyFieldRef|FieldRef|  
-|varOldName|FieldRef|  
-|varNewName|Text|  
-|MyRecord|Code|  
-  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. MyRecordRef uses the FIELD method to create a reference to the No. field \(field 1\). The value in the No. field is then set to a specified record No. In this example, the record is set to 30000. The [FIND Method \(RecordRef\)](recordref-find-method.md) method.md records for record 30000. If record is found, the FIELD method retrieves the value in the Name field \(field 2\), stores it in the varOldName variable and displays it in a message box. The [VALUE Method \(FieldRef, TestPage Field\)](../fieldref/fieldref-value-method.md) changes the value in the Name field to a new name. In this example, the new name is ‘Contoso’. The table is then modified to reflect this change and the new value in the Name field is retrieved and displayed in a message box. You can specify any record in the table and change the value in the Name field.
+ 
 ```  
-  
-MyRecord := '30000';  
-varNewName := 'Contoso';  
-MyRecordRef.OPEN(18);  
-MyFieldRef := MyRecordRef.FIELD(1);  
-MyFieldRef.VALUE := MyRecord;  
-IF MyRecordRef.FIND('=') THEN BEGIN  
-  varOldName := MyRecordRef.FIELD(2);  
-  MESSAGE('Old Name: %1', varOldName);  
-  varOldName.VALUE := varNewName;  
-  MyRecordRef.MODIFY;    
-  MESSAGE('New Name: %1', MyRecordRef.FIELD(2));  
-END;  
-  
+var
+    MyRecordRef: RecordRef;
+    MyFieldRef: FieldRef;
+    varOldName: FieldRef;
+    varNewName: Text;
+    MyRecord: Code;
+begin  
+    MyRecord := '30000';  
+    varNewName := 'Contoso';  
+    MyRecordRef.OPEN(18);  
+    MyFieldRef := MyRecordRef.FIELD(1);  
+    MyFieldRef.VALUE := MyRecord;  
+    if MyRecordRef.FIND('=') then begin  
+      varOldName := MyRecordRef.FIELD(2);  
+      MESSAGE('Old Name: %1', varOldName);  
+      varOldName.VALUE := varNewName;  
+      MyRecordRef.MODIFY;    
+      MESSAGE('New Name: %1', MyRecordRef.FIELD(2));  
+    end;  
+end;
 ```  
 
 ## See Also

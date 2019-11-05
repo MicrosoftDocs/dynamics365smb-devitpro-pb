@@ -50,11 +50,11 @@ This example uses the INIT method to create a SessionSettings object that includ
 ```
 var
   MySessionSettings : SessionSettings;
-  begin
-    MySessionSettings.INIT
-    MySessionSettings.COMPANY('MyCompany');
-    MySessionSettings.REQUESTSESSIONUPDATE(false);
-  end;  
+begin
+  MySessionSettings.INIT
+  MySessionSettings.COMPANY('MyCompany');
+  MySessionSettings.REQUESTSESSIONUPDATE(false);
+end;  
 ```  
 
 

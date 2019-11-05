@@ -54,25 +54,20 @@ Specifies whether to run the AL code in the OnInsert Trigger. If this parameter 
   
 > [!NOTE]  
 >  In this example, the INIT method is called before the primary key is assigned a value. The INIT method does not initialize primary key fields. Therefore calling the [INIT Method \(RecordRef\)](recordref-init-method.md) before or after you assign values to the primary key field does not make any difference.  
-  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The value of the field after you insert the record is %1.|  
-  
-```  
-CustomerRecref.OPEN(18);  
-MyFieldRef := CustomerRecref.FIELD(1);  
-CustomerRecref.INIT;  
-MyFieldRef.VALUE := '1120';  
-CustomerRecref.INSERT;  
-MESSAGE(‘%1’, MyFieldRef.VALUE);  
+   
+```   
+var
+    CustomerRecref: RecordRef;
+    MyFieldRef: FieldRef;
+    Text000: TextConst ENU='The value of the field after you insert the record is %1.';
+begin 
+    CustomerRecref.OPEN(18);  
+    MyFieldRef := CustomerRecref.FIELD(1);  
+    CustomerRecref.INIT;  
+    MyFieldRef.VALUE := '1120';  
+    CustomerRecref.INSERT;  
+    MESSAGE(‘%1’, MyFieldRef.VALUE);  
+end;
 ```  
 
 ## See Also

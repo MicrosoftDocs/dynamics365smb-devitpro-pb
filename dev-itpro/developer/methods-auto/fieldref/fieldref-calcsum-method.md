@@ -56,19 +56,17 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 ## Example  
  This example sets a RecordRef variable to refer to table 21, the **Cust. Ledger Entry** table. Next, it creates a reference to field 18, the **Sales \(LCY\)** field, in the **Cust. Ledger Entry** table and assigns the field reference to a FieldRef variable. The **Sales \(LCY\)** field is a decimal field and is one of the SumIndexFields on a [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] key in the **Cust. Ledger Entry** table. The code displays the original value of the FieldRef variable, then calls the CALCSUM method and displays the calculated value of the field.  
 
- This example requires that you create the following variables.  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyFieldRef|FieldRef|  
-|MyRecRef|RecordRef|  
-
-```  
-MyRecRef.OPEN(21);  
-MyFieldRef := MyRecRef.FIELD(18);  
-MESSAGE('Before CALCSUM, Sales (LCY) is %1.', MyFieldRef.VALUE);  
-MyFieldRef.CALCSUM;  
-MESSAGE('After CALCSUM, Sales (LCY) is %1.', MyFieldRef.VALUE);  
+```
+var
+    MyFieldRef: FieldRef;
+    MyRecRef: RecordRef;
+begin
+    MyRecRef.OPEN(21);  
+    MyFieldRef := MyRecRef.FIELD(18);  
+    MESSAGE('Before CALCSUM, Sales (LCY) is %1.', MyFieldRef.VALUE);  
+    MyFieldRef.CALCSUM;  
+    MESSAGE('After CALCSUM, Sales (LCY) is %1.', MyFieldRef.VALUE);  
+end;
 ```  
 
  On a computer that has the regional format set to English \(United States\), the first message window displays the following:  

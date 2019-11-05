@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 5d2c7db2-fc8b-46e1-a1c3-2be06f806258
-caps.latest.revision: 17
 author: SusanneWindfeldPedersen
 ---
 
@@ -23,7 +21,7 @@ You can use several specialized methods to display messages and gather input. We
 
 -   To let the user confirm a choice before the program continues running.  
 
- You can also use the STRMENU method to create pages that present options to the user. It is much faster to use this method than to design a page which only presents a limited set of options to the user. For more information about the STRMENU method, see [STRMENU Method](methods/devenv-STRMENU-Method.md).  
+ You can also use the STRMENU method to create pages that present options to the user. It is much faster to use this method than to design a page which only presents a limited set of options to the user. For more information about the STRMENU method, see [STRMENU Method](methods-auto/dialog/dialog-strmenu-Method.md).  
 
 ## Best practices for user messages  
  We recommend the following guidelines for writing messages for end users:  
@@ -32,9 +30,9 @@ You can use several specialized methods to display messages and gather input. We
 
 -   When you write a message that is similar to one in the .etx file, phrase it to be as similar to the .etx message as possible. This will make messages consistent throughout the system.  
 
--   Do not use backslashes to indicate line breaks in a message. Line formatting is completed automatically. The only exception is in the [OPEN Method \(Dialog\)](methods/devenv-OPEN-Method-Dialog.md). You must use backslashes for the message to be aligned correctly.  
+-   Do not use backslashes to indicate line breaks in a message. Line formatting is completed automatically. The only exception is in the [OPEN Method \(Dialog\)](methods-auto/dialog/dialog-open-Method.md). You must use backslashes for the message to be aligned correctly.  
 
--   Use the [FIELDCAPTION Method \(Record\)](methods/devenv-FIELDCAPTION-Method-Record.md) and [TABLECAPTION Method \(Record\)](methods/devenv-TABLECAPTION-Method-Record.md) whenever possible to return names of fields and tables as strings so that the user can always recognize a term that indicates a field or table name. The only exception to this is in [OPEN Method \(Dialog\)](methods/devenv-OPEN-Method-Dialog.md). In this method, you can use the field name directly. Otherwise, it can be difficult to align correctly. If you refer to a field name without using the FIELDCAPTION method, then type the field name without any single or double quotation marks.  
+-   Use the [FIELDCAPTION Method \(Record\)](methods-auto/record/record-fieldcaption-Method.md) and [TABLECAPTION Method \(Record\)]methods-auto/record/record-tablecaption-Method.md) whenever possible to return names of fields and tables as strings so that the user can always recognize a term that indicates a field or table name. The only exception to this is in [OPEN Method \(Dialog\)](methods-auto/dialog/dialog-open-Method.md). In this method, you can use the field name directly. Otherwise, it can be difficult to align correctly. If you refer to a field name without using the FIELDCAPTION method, then type the field name without any single or double quotation marks.  
 
 -   Try to write all messages on only one line. If you want to use more than one line, then start each new line after a period instead of in the middle of a sentence.  
 
@@ -53,12 +51,12 @@ You can use several specialized methods to display messages and gather input. We
  -->
 
 ## MESSAGE method  
- The [MESSAGE Method \(Dialog\)](methods/devenv-MESSAGE-Method-Dialog.md) displays a message in a window that remains open until the user chooses the **OK** button.  
+ The [MESSAGE Method \(Dialog\)](methods-auto/dialog/dialog-MESSAGE-Method.md) displays a message in a window that remains open until the user chooses the **OK** button.  
 
  The MESSAGE method has the following syntax.  
 
 ```  
-MESSAGE(String [, Value1, ...])  
+MESSAGE(String [, Value1, ...]);  
 ```  
 
  The MESSAGE method executes asynchronously, which means that MESSAGE is not executed until the method from which it was called ends or another method requests user input. The method is useful for notifying the user that some processing has been successfully completed.  
@@ -77,31 +75,34 @@ MESSAGE(Text001,"No.",SalesHeader2."No.");
 >  Unlike the progress window, the MESSAGE method does not require that you first declare a variable of type Dialog. The MESSAGE method creates a window of its own.  
 
 ## ERROR method  
- The [ERROR Method \(Dialog\)](methods/devenv-ERROR-Method-Dialog.md) is very similar to the MESSAGE method except that when the user has acknowledged the message from an ERROR method, execution ends. The ERROR method is also similar to the FIELDERROR method. For more information, see [CALCFIELDS, CALCSUMS,FIELDERROR, FIELDNAME, INIT, TESTFIELD, and VALIDATE Methods](devenv-CALCFIELDS-CALCSUMS-FIELDERROR-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
+ The [ERROR Method \(Dialog\)](methods-auto/dialog/dialog-error-Method.md) is very similar to the MESSAGE method except that when the user has acknowledged the message from an ERROR method, execution ends. The ERROR method is also similar to the FIELDERROR method. For more information, see [CALCFIELDS, CALCSUMS,FIELDERROR, FIELDNAME, INIT, TESTFIELD, and VALIDATE Methods](devenv-CALCFIELDS-CALCSUMS-FIELDERROR-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
 
  The ERROR method has the following syntax.  
 
 ```  
-ERROR(String [, Value1, ...])  
+ERROR(String [, Value1, ...]);  
 ```  
 
 ## CONFIRM method  
- The [CONFIRM Method \(Dialog\)](methods/devenv-CONFIRM-Method-Dialog.md) is used just like the MESSAGE method to display a message. However, unlike the MESSAGE method, the CONFIRM method has a required return value.  
+ The [CONFIRM Method \(Dialog\)](methods-auto/dialog/dialog-confirm-Method.md) is used just like the MESSAGE method to display a message. However, unlike the MESSAGE method, the CONFIRM method has a required return value.  
 
  The CONFIRM method has the following syntax.  
 
 ```  
-Ok := Dialog.CONFIRM(String [, Default] [, Value1] ,...)  
+Ok := Dialog.CONFIRM(String [, Default] [, Value1] ,...);  
 ```  
 
  The following example shows how to use the CONFIRM method.  
 
 ```  
-IF CONFIRM('Do you want to post the journal lines and print report %1?',FALSE, ReportID) THEN  
+if CONFIRM('Do you want to post the journal lines and print report %1?',FALSE, ReportID) then  
    MESSAGE('Posting')  
-ELSE  
+else  
    MESSAGE('No Posting');  
    EXIT;  
 ```  
 
  The FALSE parameter in the CONFIRM statement means that No is the default.
+
+ ## See Also  
+[Dialog Data Type](methods-auto/dialog/dialog-data-type.md) 

@@ -46,23 +46,22 @@ The InStream object from which you want to copy; the source stream.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example requires that you create the following variables.  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|F1|File|  
-|F2|File|  
-|InS|InStream|  
-|OutS|OutStream|  
 
 ```  
-F1.OPEN('c:\Test.txt');  
-F1.CREATEINSTREAM(InS);  
-F2.CREATE('c:\CopyTest.txt');  
-F2.CREATEOUTSTREAM(OutS);  
-COPYSTREAM(OutS,InS);  
-F1.CLOSE();  
-F2.CLOSE();  
+var
+    F1: File;
+    F2: File;
+    InS: InStream;
+    OutS: OutStream;
+begin
+    F1.OPEN('c:\Test.txt');  
+    F1.CREATEINSTREAM(InS);  
+    F2.CREATE('c:\CopyTest.txt');  
+    F2.CREATEOUTSTREAM(OutS);  
+    COPYSTREAM(OutS,InS);  
+    F1.CLOSE();  
+    F2.CLOSE();  
+end;
 ```  
 
 

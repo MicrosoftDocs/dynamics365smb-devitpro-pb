@@ -2,7 +2,7 @@
 title: "FieldExist Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,31 +40,24 @@ The FieldNo that you want to know whether exists in the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The code loops through fields 1 through 12 and uses the FIELDEXIST method to determine whether the specified field exists. If the field exists, the name of the field and a message that indicates that the field exists is displayed. Otherwise, a message that indicates that the field does not exist is displayed. This example requires that you create the following global variables and text constants.  
-  
-|||  
-|-|-|  
-|Name|DataType|  
-|MyRecordRef|RecordRef|  
-|i|Integer|  
-|VarFieldName|FieldRef|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|Field %1 exists.\\The name of the Field is: " %2 ".|  
-|Text001|Text|Field %1 does not exist.|  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The code loops through fields 1 through 12 and uses the FIELDEXIST method to determine whether the specified field exists. If the field exists, the name of the field and a message that indicates that the field exists is displayed. Otherwise, a message that indicates that the field does not exist is displayed. 
   
 ```  
-  
-MyRecordRef.OPEN(18);  
-FOR i := 1 TO 12 DO BEGIN  
-  IF MyRecordRef.FIELDEXIST(i) THEN BEGIN  
-     VarFieldName := MyRecordRef.FIELD(i);  
-     MESSAGE(Text000, i, VarFieldName.NAME);  
-    END  
-  ELSE  
-    MESSAGE(Text001, i);  
-  END;  
+var
+    MyRecordRef: RecordRef;
+    i: Integer;
+    VarFieldName: FieldRef;
+    Text000: TextConst ENU='The %1 table contains %2 field\(s\).\\';
+begin  
+    MyRecordRef.OPEN(18);  
+    for i := 1 to 12 do begin  
+      if MyRecordRef.FIELDEXIST(i) then begin  
+         VarFieldName := MyRecordRef.FIELD(i);  
+         MESSAGE(Text000, i, VarFieldName.NAME);  
+        end else  
+        MESSAGE(Text001, i);  
+      end;  
+end;
 ```  
   
 
