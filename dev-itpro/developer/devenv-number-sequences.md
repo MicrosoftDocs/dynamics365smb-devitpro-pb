@@ -26,7 +26,7 @@ Unlike number sequences, number series are specially designed for scenarios wher
 
 However, number series also include an option called **Allow Gaps in Nos.**. This option actually uses number sequences in the underlying code, and allows you to implement non-continuous, nun-blocking numbering. So, if there are no regulatory requirements for using continuous numbering, you can improve performance by allowing gaps and using a number sequence instead. Customer cards, sales quotes, and warehouse activities are examples of entities that typically do not require continuous numbering.
 
-For more information about number series, see [Create Number Series](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-create-number-series?branch=fall-2019#gaps-in-number-series) in the [!INCLUDE[prodshort](includes/prodshort.md)] application help.  
+For more information about number series, see [Create Number Series](https://docs.microsoft.com/dynamics365/business-central/ui-create-number-series?branch=fall-2019#gaps-in-number-series) in the [!INCLUDE[prodshort](includes/prodshort.md)] application help.  
 
 
 ## Creating and managing number sequences in AL
@@ -70,4 +70,4 @@ number := NumberSequence.Next('MySequence',true); ​
 
 ## See Also  
 [Number Sequence data type](methods-auto/numbersequence/numbersequence-data-type.md)  
-[SQL Server Sequence Numbers](https://docs.microsoft.com/en-us/sql/relational-databases/sequence-numbers/sequence-numbers?view=sql-server-2017)  
+[SQL Server Sequence Numbers](https://docs.microsoft.com/sql/relational-databases/sequence-numbers/sequence-numbers?view=sql-server-2017)  

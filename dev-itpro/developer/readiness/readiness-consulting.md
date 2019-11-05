@@ -24,7 +24,7 @@ AppSource consulting services offerings are customer-specific engagements that h
 ## How can I, as a user, find the consulting services that my business requires? 
 As a customer, you can easily search for consulting services offerings for solutions based on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], Power BI, and PowerApps that are available near you. Review the offer, and request to be contacted by the partner that offers the services that your business require. 
 
-Learn more about the consulting services that are currently offered on AppSource [here](https://appsource.microsoft.com/en-us/marketplace/consulting-services?country=US&page=1).
+Learn more about the consulting services that are currently offered on AppSource [here](https://appsource.microsoft.com/marketplace/consulting-services?country=US&page=1).
 
 ## How can I, as a Microsoft partner, benefit from offering using Microsoft AppSource consulting services? 
 Microsoft’s catalog of consulting services offerings for solutions is based on Dynamics 365, Power BI, and PowerApps to AppSource. As a Microsoft partner, AppSource Consulting Services enables you to provide your expertise to customers near you, as a fully working customized offering in one week or less. In doing so, this service allows you to showcase your proven expertise and offer pre-defined engagements that are fixed in scope. When bundling your quality consulting service offerings you get the benefit of going to market quickly, while being exposed to more Dynamics 365 trial prospects and customers.
@@ -39,9 +39,9 @@ If you are interested in listing consulting services on AppSource, you can find 
 
 ## Where do I learn more? 
 To learn more about Microsoft AppSource consulting services offerings select the following links:  
-- [AppSource Consulting Offerings](https://appsource.microsoft.com/en-us/marketplace/consulting-services?country=US&page=1) 
+- [AppSource Consulting Offerings](https://appsource.microsoft.com/marketplace/consulting-services?country=US&page=1) 
 - [Partner Eligibility](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf)  
-- [Partner Nomination Form](https://appsource.microsoft.com/en-us/partners/list-consulting-service) 
+- [Partner Nomination Form](https://appsource.microsoft.com/partners/list-consulting-service) 
 
 
 

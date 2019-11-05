@@ -24,7 +24,7 @@ Open your `settings.json` file in the project (or global settings if you prefer 
 
 - `"editor.codeLens": false` to remove code lens in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/Docs/editor/editingevolved#_reference-information).
 
-- Add the build folder to the exclusion list for [Windows Defender](https://support.microsoft.com/en-us/help/4028485/windows-10-add-an-exclusion-to-windows-security).
+- Add the build folder to the exclusion list for [Windows Defender](https://support.microsoft.com/help/4028485/windows-10-add-an-exclusion-to-windows-security).
 
 ## See also 
 [Development in AL](devenv-dev-overview.md)   

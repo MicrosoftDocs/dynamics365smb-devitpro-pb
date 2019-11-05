@@ -59,7 +59,7 @@ To update the symbols for a set of objects from the UI, start C/SIDE with the `g
 finsql.exe generatesymbolreference=yes
 ```
 
-This flag is also a part of the `Compile-NavApplicationObject` PowerShell command and you can use it to compile and generate symbols on a filtered set of application objects through PowerShell. This alternative should be considered if you do not work with the UI in C/SIDE. For more information about it, see [Compile-NavApplicationObject](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-ps).
+This flag is also a part of the `Compile-NavApplicationObject` PowerShell command and you can use it to compile and generate symbols on a filtered set of application objects through PowerShell. This alternative should be considered if you do not work with the UI in C/SIDE. For more information about it, see [Compile-NavApplicationObject](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-ps).
 
 
 ## Business Central on-premises server setting
