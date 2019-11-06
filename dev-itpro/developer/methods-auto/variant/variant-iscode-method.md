@@ -38,26 +38,23 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a code variable. The code initializes the MyCode variable with a string value. The MyCode variable is assigned to the variant variable that is named MyVariant. The **ISCODE** method determines whether the variant contains a code variable and stores the return value in the varResult variable. In this case, the variant contains a code variable so **true** is returned and displayed in a message box. The [ISTEXT Method (Variant)](../../methods/devenv-istext-method-variant.md) determines whether the variant contains a text variable. The return value is **false** because the variant does not contain a text. This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|MyCode|Code|100|  
-|MyVariant|Variant|Not applicable|  
-|varResult|Boolean|Not applicable|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|Does the variant >%1\< contain a code variable? %2.|  
-|Text001|Does the variant >%1\< contain a text variable? %2.|  
-  
+ The following example determines whether an AL variant contains a code variable. The code initializes the MyCode variable with a string value. The MyCode variable is assigned to the variant variable that is named MyVariant. The **ISCODE** method determines whether the variant contains a code variable and stores the return value in the varResult variable. In this case, the variant contains a code variable so **true** is returned and displayed in a message box. The [ISTEXT Method (Variant)](../../methods/devenv-istext-method-variant.md) determines whether the variant contains a text variable. The return value is **false** because the variant does not contain a text.
+   
 ```  
-MyCode := 'A1297';  
-MyVariant :=  MyCode;  
-varResult := MyVariant.ISCODE;  
-MESSAGE(Text000,MyVariant,varResult);  
-varResult := MyVariant.ISTEXT;  
-MESSAGE(Text001,MyVariant,varResult);  
+var
+    MyCode: Code[100];
+    MyVariant: Variant;
+    varResult: Boolean;
+    Text000: TextConst ENU='Does the variant >%1< contain a code variable? %2.';
+    Text001: TextConst ENU='Does the variant >%1< contain a text variable? %2.';
+begin
+    MyCode := 'A1297';  
+    MyVariant :=  MyCode;  
+    varResult := MyVariant.ISCODE;  
+    MESSAGE(Text000,MyVariant,varResult);  
+    varResult := MyVariant.ISTEXT;  
+    MESSAGE(Text001,MyVariant,varResult);  
+end;
 ```  
   
 

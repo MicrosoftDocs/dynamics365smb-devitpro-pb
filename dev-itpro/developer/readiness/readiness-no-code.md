@@ -39,15 +39,15 @@ You can provide customization services to respond to the customers individual ne
 To learn more about Microsoft Flow, Power BI and PowerApps, select the following links:  
 
 ### Microsoft Flow 
-https://docs.microsoft.com/en-us/flow/guided-learning/ 
-https://docs.microsoft.com/en-us/dynamics365/financials/across-how-use-financials-data-source-flow 
+https://docs.microsoft.com/flow/guided-learning/ 
+https://docs.microsoft.com/dynamics365/financials/across-how-use-financials-data-source-flow 
 
 ### Power BI 
-https://powerbi.microsoft.com/en-us/learning/ 
-https://docs.microsoft.com/en-us/dynamics365/financials/madeira-powerbi 
+https://powerbi.microsoft.com/learning/ 
+https://docs.microsoft.com/dynamics365/financials/madeira-powerbi 
  
 ### PowerApp 
-https://docs.microsoft.com/en-us/powerapps/getting-started 
-https://docs.microsoft.com/en-us/dynamics365/financials/across-how-use-financials-data-source-powerapps 
+https://docs.microsoft.com/powerapps/getting-started 
+https://docs.microsoft.com/dynamics365/financials/across-how-use-financials-data-source-powerapps 
 
 

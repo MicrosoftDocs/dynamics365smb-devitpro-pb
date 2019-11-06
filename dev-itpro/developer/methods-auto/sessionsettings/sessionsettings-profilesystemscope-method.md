@@ -51,9 +51,9 @@ This example creates a SessionSettings object, and then uses the PROFILESYSTEMSC
 ```
 var
   MySessionSettings : SessionSettings;
-  begin
-    MySessionSettings.PROFILESYSTEMSCOPE(true);
-  end;  
+begin
+  MySessionSettings.PROFILESYSTEMSCOPE(true);
+end;  
 ```  
 
 ## See Also

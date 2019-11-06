@@ -61,31 +61,26 @@ This example first imports two media files \(JPEG image files\) from a local fol
 
 For using media sets on records, the **Item** table includes a **MediaSet** data type field that is named **Picture**.  
 
-The example code requires that you create the following variables and text constant:  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|itemRec|Record|Item|  
-|count|Boolean| |  
-
-|  Text constant name  |  ConstValue  |
-|----------------------|--------------|
-|Text000|%1 media files were exported.|
-
  The code imports the JPEG image files \(.jpg\) from the folder *C:\images* to record *1000* in the **Item** table, and then exports the media files to the folder *C:\images\export*.  
 
 ```  
-// Import image files the C:\images folder.  
-itemRec.Get('1000');
-itemRec.Picture.ImportFile('C:\images\1000-v1.jpg', 'Demo image for item ' + Format(itemRec."No."));
-itemRec.Picture.ImportFile('C:\images\1000-v2.jpg', 'Demo image for item ' + Format(itemRec."No."));
-itemRec.Modify;
-Commit;
-
-// Export the MediaSet to two separate image files in the c:\images\export folder.  
-itemRec.Get('1000');
-count := itemRec.Picture.ExportFile('C:\images\export\' + 'Item1000Image.jpg');   
-Message('%1 files exported.', count);
+ var
+    itemRec: Record Item;
+    count: Boolean;
+    Text000: TextConst ENU='%1 media files were exported.';
+begin
+    // Import image files the C:\images folder.  
+    itemRec.Get('1000');
+    itemRec.Picture.ImportFile('C:\images\1000-v1.jpg', 'Demo image for item ' + Format(itemRec."No."));
+    itemRec.Picture.ImportFile('C:\images\1000-v2.jpg', 'Demo image for item ' + Format(itemRec."No."));
+    itemRec.Modify;
+    Commit;
+    
+    // Export the MediaSet to two separate image files in the c:\images\export folder.  
+    itemRec.Get('1000');
+    count := itemRec.Picture.ExportFile('C:\images\export\' + 'Item1000Image.jpg');   
+    Message('%1 files exported.', count);
+end;
 ```  
 
 ## See Also

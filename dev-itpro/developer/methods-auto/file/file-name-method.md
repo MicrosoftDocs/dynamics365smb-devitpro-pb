@@ -45,18 +45,17 @@ An instance of the [File](file-data-type.md) data type.
  You must use the [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) to open the file before you can use this method.  
   
 ## Example  
- The following example opens a text file that is named C:\\TestFolder\\TestFile.txt. The [NAME Method \(FILE\)](../../methods-auto/file/file-name-method.md) retrieves the name and path of the text file and stores it in the varName variable. The value in the variable is displayed in a message box. This example assumes that you have created a text file named C:\\TestFolder\\TestFile.txt. This example requires that you create the following global variables.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|TestFile|File|  
-|varName|Text|  
-  
-```  
-  
-TestFile.OPEN('C:\TestFolder\TestFile.txt');  
-varName := TestFile.NAME;  
-MESSAGE('The name of the file is: %1',varName);  
+ The following example opens a text file that is named C:\\TestFolder\\TestFile.txt. The [NAME Method \(FILE\)](../../methods-auto/file/file-name-method.md) retrieves the name and path of the text file and stores it in the varName variable. The value in the variable is displayed in a message box. This example assumes that you have created a text file named C:\\TestFolder\\TestFile.txt.
+
+ ```
+ var
+    Testfile: File;
+    varName: Text;
+begin
+    TestFile.OPEN('C:\TestFolder\TestFile.txt');  
+    varName := TestFile.NAME;  
+    MESSAGE('The name of the file is: %1',varName);  
+end;
 ```  
   
 

@@ -51,39 +51,35 @@ The incremented string.
  INCSTR only increments integer numbers within strings, not decimals. For example, if you call INCSTR on the string **a99.99b** then the result is **a99.100b**.  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|Account|Text|60|  
-|NegAccount|Text|60|  
-|EmptyAccount|Text|60|  
-|MyAccount|Text|60|  
-|ResultAccount|Text|60|  
-|ResultNegAccount|Text|60|  
-|ResultEmptyAccount|Text|60|  
-|ResultMyAccount|Text|60|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Account no. 99 does not balance.|  
-|Text001|Account no. 2342 shows a total of $-452.|  
-|Text002|My bank account is empty.|  
-|Text003|My bank account shows a total of $0.|  
-|Text004|The text strings before INCSTR is called:\\%1\\%2\\%3\\%4|  
-|Text005|The text strings after INCSTR is called:\\%1\\%2\\%3\\%5|  
-  
+
 ```  
-Account := Text000;  
-NegAccount := Text001;  
-EmptyAccount := Text002;  
-MyAccount := Text003;  
-MESSAGE(Text004, Account, NegAccount, EmptyAccount, MyAccount);  
-ResultAccount := INCSTR(Account);  
-ResultNegAccount := INCSTR(NegAccount);  
-ResultEmptyAccount := INCSTR(EmptyAccount);  
-ResultMyAccount := INCSTR(MyAccount);  
-MESSAGE(Text005, ResultAccount, ResultNegAccount, ResultEmptyAccount, ResultMyAccount);  
+var
+    Account: Text[60]; 
+    NegAccount: Text[60];  
+    EmptyAccount: Text[60];  
+    MyAccount: Text[60];  
+    ResultAccount: Text[60];  
+    ResultNegAccount: Text[60];  
+    ResultEmptyAccount: Text[60];  
+    ResultMyAccount: Text[60]; 
+    Text000: TexConst ENU='Account no. 99 does not balance.';  
+    Text001: TexConst ENU='Account no. 2342 shows a total of $-452.';  
+    Text002: TexConst ENU='My bank account is empty.';
+    Text003: TexConst ENU='My bank account shows a total of $0.';  
+    Text004: TexConst ENU='The text strings before INCSTR is called:\\%1\\%2\\%3\\%4';  
+    Text005: TexConst ENU='The text strings after INCSTR is called:\\%1\\%2\\%3\\%5'; 
+begin
+    Account := Text000;  
+    NegAccount := Text001;  
+    EmptyAccount := Text002;  
+    MyAccount := Text003;  
+    MESSAGE(Text004, Account, NegAccount, EmptyAccount, MyAccount);  
+    ResultAccount := INCSTR(Account);  
+    ResultNegAccount := INCSTR(NegAccount);  
+    ResultEmptyAccount := INCSTR(EmptyAccount);  
+    ResultMyAccount := INCSTR(MyAccount);  
+    MESSAGE(Text005, ResultAccount, ResultNegAccount, ResultEmptyAccount, ResultMyAccount);  
+end;
 ```  
   
  The first message displays the following:  

@@ -40,20 +40,16 @@ A variable of the DotNet data type to represent the .NET Framework type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following code example is based on codeunit 5300 in the [!INCLUDE[demolong](../../includes/demolong_md.md)]. This example requires that you create the following global variable and text constant.  
+ The following code example is based on codeunit 5300 in the [!INCLUDE[demolong](../../includes/demolong_md.md)]. 
 
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|OObjLibrary|DotNet|Microsoft.Dynamics.NAV.OLSync.OLSyncSupplier.OutlookObjectLibrary.'Microsoft.Dynamics.NAV.OLSync.OLSyncSupplier, Version=7.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'|  
-
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|MyError|Cannot access the specified type.|  
-
-```  
+```
+var
+    OObjLibrary: DotNet "Microsoft.Dynamics.NAV.OLSync.OLSyncSupplier.OutlookObjectLibrary.'Microsoft.Dynamics.NAV.OLSync.OLSyncSupplier, Version=7.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'";
+    MyError: TextConst ENU='Cannot access the specified type.';
 if not CANLOADTYPE(OObjLibrary) then  
    ERROR(MyError);  
 ```  
+
 ## See Also
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

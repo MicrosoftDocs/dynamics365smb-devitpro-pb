@@ -67,37 +67,30 @@ Query.ColumnName
 ## Example  
  The following example demonstrates how to use the **READ** method on a query. The example code sets filters on the query, opens the query, and then reads the dataset. For each row in the dataset, a message box is displayed that contains the values of the columns in the row.  
   
- This example requires that you do the following:  
-  
--   Create a query called **Customer\_SalesQuantity** that is links table **18 Customer** with table  **37 Sales Lines** from the [!INCLUDE[demolong](../../includes/demolong_md.md)]. Include columns for the **Name** and **No.** fields from the Customer table and the **Quantity** field from Sales Lines table.  
+ This example requires that you create a query called **Customer\_SalesQuantity** that is links table **18 Customer** with table  **37 Sales Lines** from the [!INCLUDE[demolong](../../includes/demolong_md.md)]. Include columns for the **Name** and **No.** fields from the Customer table and the **Quantity** field from Sales Lines table.  
   
      <!--NAV For step-by-step instructions for creating this query, see [Walkthrough: Creating a Query to Link Two Tables](Walkthrough--Creating-a-Query-to-Link-Two-Tables.md).-->  
   
--   Create the following variable and text constant.  
-  
-    |Variable name|DataType|Subtype|  
-    |-------------------|--------------|-------------|  
-    |MyQuery|Query|Customer\_SalesQuantity|  
-  
-    |Text constant name|ENU Value|  
-    |------------------------|---------------|  
-    |Text000|Customer name = %1, Quantity = %2|  
-  
  The following AL code opens the query, reads each row of dataset, and then displays a message that has the content of the row. You can add the code to a codeunit, and then run the codeunit to see the results.  
   
-```  
-// Sets a filter to display only sales quantities greater than 20.  
-MyQuery.SETFILTER(Quantity, '>20');   
-// Runs the query.  
-MyQuery.OPEN;  
-// Reads each row in the dataset and displays message with column values.  
-// Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
-while MyQuery.READ do  
-begin  
-  MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);   
-end;  
-// Closes the query.  
-MyQuery.CLOSE;  
+``` 
+var
+  MyQuery: Query "Customer SalesQuantity";
+  Text000: TextConst ENU='Customer name = %1, Quantity = %2'; 
+begin
+    // Sets a filter to display only sales quantities greater than 20.  
+    MyQuery.SETFILTER(Quantity, '>20');   
+    // Runs the query.  
+    MyQuery.OPEN;  
+    // Reads each row in the dataset and displays message with column values.  
+    // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
+    while MyQuery.READ do  
+    begin  
+      MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);   
+    end;  
+    // Closes the query.  
+    MyQuery.CLOSE;  
+end;
 ```
 
 ## See Also

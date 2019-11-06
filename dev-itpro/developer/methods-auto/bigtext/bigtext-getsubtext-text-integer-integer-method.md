@@ -56,14 +56,12 @@ The length of the result text.
 ## Example  
  The following examples demonstrate how to use the GETSUBTEXT method. This example requires that you create the following global variables and text constant.  
   
-|Variable Name|DataType|  
-|-------------------|--------------|  
-|MyBigText|BigText|  
-|VarSubText|Text|  
-  
-|Text Constant Name|ENU Value|  
-|------------------------|---------------|  
-|Text000|VarSubText = %1|  
+```
+var
+    MyBigText: BigText;
+    VarSubText: Text;
+    Text000: TextConst ENU='VarSubText = %1';
+```  
   
  The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method starts from the third position \(the character C\) in the MyBigText variable and retrieves two characters. The result is the subtext CD. This is because the number 2 is specified for *Length* .  
   

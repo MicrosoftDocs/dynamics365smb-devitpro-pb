@@ -53,44 +53,40 @@ The name of the company to which you want to change. If you omit this parameter,
 var r : record 2000000006;
 ```
 ## Example  
- The following example uses the OPEN method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a message box. At the end of the display, the [CLOSE Method \(RecordRef\)](recordref-close-method.md) closes the table. This example requires that you create the following global variable and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyRecordRef|RecordRef|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|'The %1 table contains %2 records.'|  
-  
+ The following example uses the OPEN method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a message box. At the end of the display, the [CLOSE Method \(RecordRef\)](recordref-close-method.md) closes the table. 
+
 ```  
-  
-MyRecordRef.OPEN(DATABASE::Customer);  
-MESSAGE(Text000, MyRecordRef.CAPTION, MyRecordRef.COUNT);  
-MyRecordRef.CLOSE;  
+var
+    MyRecordRef: RecordRef;
+    Text000: TextConst ENU='The %1 table contains %2 records.'; 
+begin    
+    MyRecordRef.OPEN(DATABASE::Customer);  
+    MESSAGE(Text000, MyRecordRef.CAPTION, MyRecordRef.COUNT);  
+    MyRecordRef.CLOSE;  
+end;
 ```  
   
 ## Example  
- This example shows how to use the OPEN method. In this example, "MyRecordRef" opens table 27 and then "FIND\('-'\)" finds the first record in the table. "TempMyRecordRef" opens a temporary table which is empty and therefore the "FIND\('-'\)" returns false. This example requires that you create the following global variables.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyRecordRef|RecordRef|  
-|TempMyRecordRef|RecordRef|  
+ This example shows how to use the OPEN method. In this example, "MyRecordRef" opens table 27 and then "FIND\('-'\)" finds the first record in the table. "TempMyRecordRef" opens a temporary table which is empty and therefore the "FIND\('-'\)" returns false.
   
 ```  
-MyRecordRef.OPEN(27,FALSE);  
-TempMyRecordRef.OPEN(27,TRUE);  
-  
-if MyRecordRef.FIND('-') then // This is true and will find the first record in the table.  
-  MESSAGE('MyRecordRef finds')  
-else  
-  MESSAGE('MyRecordRef does not find');  
-  
-if TempMyRecordRef.FIND('-') then // This is false because there are no records in a temporary table.  
-  MESSAGE('TempMyRecordRef finds')  
-else  
-  MESSAGE('TempMyRecordRef does not find');  
+var
+    MyRecordRef: RecordRef;
+    TempMyRecordRef: RecordRef;
+begin  
+    MyRecordRef.OPEN(27,FALSE);  
+    TempMyRecordRef.OPEN(27,TRUE);  
+      
+    if MyRecordRef.FIND('-') then // This is true and will find the first record in the table.  
+      MESSAGE('MyRecordRef finds')  
+    else  
+      MESSAGE('MyRecordRef does not find');  
+      
+    if TempMyRecordRef.FIND('-') then // This is false because there are no records in a temporary table.  
+      MESSAGE('TempMyRecordRef finds')  
+    else  
+      MESSAGE('TempMyRecordRef does not find');  
+end;
 ```  
 
 ## See Also

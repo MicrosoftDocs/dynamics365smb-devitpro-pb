@@ -14,9 +14,9 @@ author: jswymer
 
 Administrators for an Office 365 Tenant might not want their users to sign up for the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] service without their awareness. You can complete the following procedure in Azure Active Directory to block individual user signups.  
 
-To complete this procedure, you must install and use Azure AD cmdlets. For a list of MSOnline cmdlets that are available for Azure AD using Windows PowerShell, see [MSOnline](https://docs.microsoft.com/en-us/powershell/module/MSOnline/?view=azureadps-1.0&redirectedfrom=msdn).   
+To complete this procedure, you must install and use Azure AD cmdlets. For a list of MSOnline cmdlets that are available for Azure AD using Windows PowerShell, see [MSOnline](https://docs.microsoft.com/powershell/module/MSOnline/?view=azureadps-1.0&redirectedfrom=msdn).   
 
-PowerShell commands can be used with Azure Active Directory to disable adhoc (self-service) subscriptions. Please note that these steps are not specific to [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)]. This procedure will disable self-service subscriptions for [any other products and services](https://support.office.com/en-us/article/using-self-service-sign-up-in-your-organization-4f8712ff-9346-4c6c-bb63-a21ad7a62cbd ), as Azure AD does not provide tools for blocking signups from specific products. Self-service signups can be re-enabled later. 
+PowerShell commands can be used with Azure Active Directory to disable adhoc (self-service) subscriptions. Please note that these steps are not specific to [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)]. This procedure will disable self-service subscriptions for [any other products and services](https://support.office.com/article/using-self-service-sign-up-in-your-organization-4f8712ff-9346-4c6c-bb63-a21ad7a62cbd ), as Azure AD does not provide tools for blocking signups from specific products. Self-service signups can be re-enabled later. 
 
 ## Disable self-service signups
 1. Start Windows PowerShell as an administrator.

@@ -65,22 +65,20 @@ A record that is passed to the OnRun trigger of the codeunit that runs when the 
  Each background session has the same impact on resources as a regular user session. In addition, it takes time and resources to start each background session. Therefore, we recommend that you consider when and how you use background sessions. For example, do not use background sessions for small tasks that occur often because the cost of starting the session for each tasks is high.  
 
 ## Example  
- This example requires that you create the following variables.  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|OK|Boolean|Not applicable|  
-|SessionID|Integer|Not applicable|  
-|CacheStressTestRec|Record|Customer|  
-
  In this example, the Cache Stress Test codeunit is a custom codeunit.  
 
-```  
-OK := STARTSESSION(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
-if OK then  
-  STOPSESSION(SessionId, 'Logoff cache stress test session')  
-else  
-  ERROR('The session was not started successfully.');  
+```
+var
+    CacheStressTestRec: Record Customer;
+    SessionID: Integer;
+    OK: Boolean;
+begin  
+    OK := STARTSESSION(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
+    if OK then  
+      STOPSESSION(SessionId, 'Logoff cache stress test session')  
+    else  
+      ERROR('The session was not started successfully.');  
+end;
 ```  
 
 ## See Also

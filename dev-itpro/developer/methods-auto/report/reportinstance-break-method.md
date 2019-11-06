@@ -39,25 +39,21 @@ An instance of the [Report](report-data-type.md) data type.
 >  You can also use the [AL BREAK Statement](../../devenv-al-control-statements.md) to exit an iteration or loop. The difference is that the BREAK statement does not terminate the trigger. It just exits the loop.  
 
 ## Example  
- This example of code in a trigger on a report object requires that you create the following global variable and text constant.  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyVar|Integer|  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The variable is now %1.|  
 
 ```  
-MyVar := 0;  
-REPEAT  
-  MyVar := MyVar + 1;  
-  if MyVar = 5 then  
-    CurrReport.BREAK;  
-  MESSAGE(Text000,MyVar);  
-until Myvar = 10;  
-MESSAGE('After REPEAT-UNTIL loop'); //This statement is never called.  
+var
+    MyVar: Integer;
+    Text000: TextConst ENU="The variable is now %1.";
+begin
+    MyVar := 0;  
+    repeat  
+      MyVar := MyVar + 1;  
+      if MyVar = 5 then  
+        CurrReport.BREAK;  
+      MESSAGE(Text000,MyVar);  
+    until Myvar = 10;  
+    MESSAGE('After REPEAT-UNTIL loop'); //This statement is never called.  
+end;
 ```  
 
  When you run the previous code, the loop will end when MyVar is 5 and the execution of the current trigger ends. Statements after the loop are not executed. 

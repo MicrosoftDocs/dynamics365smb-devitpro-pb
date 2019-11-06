@@ -45,27 +45,21 @@ The FieldRef of the field that has the specified index.
  If the index is out of the range supplied or if no table is selected, then the method returns an error.  
 
 ## Example  
- This example requires that you create the following global variables and text constants.  
-
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|SalesInvHdr|RecordRef|Not applicable|  
-|FldRef|FieldRef|Not applicable|  
-|Str|Text|1024|  
-
-|Text constant name|Constant value|  
-|------------------------|--------------------|  
-|Text001|Index 1: %1\\|  
-|Text002|Index 2: %2\\|  
-|Text003|Index 3: %2|  
-
 ```  
-
-SalesInvHdr.OPEN(112);  
-FldRef1 := SalesInvHdr.FIELDINDEX(1);  
-FldRef2 := SalesInvHdr.FIELDINDEX(2);  
-FldRef3 := SalesInvHdr.FIELDINDEX(3);  
-MESSAGE(Text001 + Text002 + Text003, FldRef1.CAPTION, FldRef2.CAPTION, FldRef3.CAPTION);  
+var
+    SalesInvHdr: RecordRef;
+    FldRef: FieldRef;
+    Str: Text[1024];
+    Text001: TextConst ENU='Index 1: %1\\';
+    Text002: TextConst ENU='Index 2: %2\\';
+    Text003: TextConst ENU='Index 3: %3';
+begin
+    SalesInvHdr.OPEN(112);  
+    FldRef1 := SalesInvHdr.FIELDINDEX(1);  
+    FldRef2 := SalesInvHdr.FIELDINDEX(2);  
+    FldRef3 := SalesInvHdr.FIELDINDEX(3);  
+    MESSAGE(Text001 + Text002 + Text003, FldRef1.CAPTION, FldRef2.CAPTION, FldRef3.CAPTION);  
+end;
 ```  
 
  The message window displays the following:  

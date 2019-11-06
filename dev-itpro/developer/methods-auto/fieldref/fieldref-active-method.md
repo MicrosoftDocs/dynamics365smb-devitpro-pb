@@ -53,34 +53,27 @@ This method is like the [FIELDACTIVE Method \(Record\)](../../methods-auto/recor
 Recref.OPEN\(DATABASE::Customer\)
 ```
 
-
- This example requires that you create the following global variables and text constants.  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|Recref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|i|Integer|  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Field %1 is enabled.|  
-|Text001|Field %1 is not enabled.|  
-
-```  
-
-Recref.OPEN(18);  
-MyFieldRef := Recref.FIELD(1);  
-MyFieldRef.SETRANGE('30000');  
-Recref.FIND('-');  
-for i := 1 to 5 do begin
-  MyFieldRef := Recref.FIELDINDEX(i);  
-  if MyFieldRef.ACTIVE then  
-    MESSAGE(Text000, i)  
-  else begin 
-    MESSAGE(Text001, i)  
-  end;  
-end;  
+```
+var
+    Recref: RecordRef;
+    MyFieldRef: FieldRef;
+    i: Integer;
+    Text000: TextConst ENU='Field %1 is enabled.';
+    Text001: TextConst ENU='Field %1 is not enabled.';
+begin
+    Recref.OPEN(18);  
+    MyFieldRef := Recref.FIELD(1);  
+    MyFieldRef.SETRANGE('30000');  
+    Recref.FIND('-');  
+    for i := 1 to 5 do begin
+      MyFieldRef := Recref.FIELDINDEX(i);  
+      if MyFieldRef.ACTIVE then  
+        MESSAGE(Text000, i)  
+      else begin 
+        MESSAGE(Text001, i)  
+      end;  
+    end;  
+end;
 
 ```  
 
