@@ -55,7 +55,7 @@ Powershell example without prompt:
  ```
 
 ## Error Format
-If an error is encountered during the execution of an API method, it will respond back with an error object. While the specifics of any error encountered will vary from endpoint to endpoint and by the error, the error object returned should adhere to the following structure. When an error is encountered that does not fit this structure, it typically indicates that an error has occurred in the sending of the request or in the authentication of the request (i.e. The API has not yet recieved the request yet) 
+If an error is encountered during the execution of an API method, it will respond back with an error object. While the specifics of any error encountered will vary from endpoint to endpoint and by the error, the error object returned should adhere to the following structure. When an error is encountered that does not fit this structure, it typically indicates that an error has occurred in the sending of the request or in the authentication of the request (i.e. The API has not yet recieved the request). 
 
 **Error Response Object:**  
 ```
