@@ -43,28 +43,24 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
  This method is similar to the [FIELDNAME Method \(Record\)](../../methods-auto/record/record-fieldname-method.md).  
 
 ## Example  
- The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) creates a reference to the fields in the table and stores the FieldRef in the MyFieldRef variable. The code loops through field 1 through 5. For each field, the NAME method retrieves the name of the field and stores the value in the varName variable. The field number and the value in the varName variable are displayed in a message box. This example requires that you create the following global variables and text constant.  
+ The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) creates a reference to the fields in the table and stores the FieldRef in the MyFieldRef variable. The code loops through field 1 through 5. For each field, the NAME method retrieves the name of the field and stores the value in the varName variable. The field number and the value in the varName variable are displayed in a message box. 
 
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|varName|Text|  
-|i|Integer|  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The name of field %1 is "%2".\\|  
-
-```  
-
-for i := 1 to 5 do begin  
-    CustomerRecref.OPEN(DATABASE::Customer);  
-    MyFieldRef := CustomerRecref.FIELD(i);  
-    varName := MyFieldRef.NAME;  
-    MESSAGE(Text000, i, varName);  
-    CustomerRecref.CLOSE;  
-end;  
+```
+var
+    MyFieldRef: FieldRef;
+    CustomerRecref: RecordRef;
+    varName: Text;
+    i: Integer;
+    Text000: TextConst ENU='The name of field %1 is "%2".\\';
+begin
+    for i := 1 to 5 do begin  
+        CustomerRecref.OPEN(DATABASE::Customer);  
+        MyFieldRef := CustomerRecref.FIELD(i);  
+        varName := MyFieldRef.NAME;  
+        MESSAGE(Text000, i, varName);  
+        CustomerRecref.CLOSE;  
+    end;  
+end;
 
 ```  
 

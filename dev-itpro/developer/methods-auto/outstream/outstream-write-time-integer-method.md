@@ -52,17 +52,17 @@ The number of bytes that were written.If you omit this optional return value and
   
 This example requires that you create the following variables.  
   
-|Variable name|DataType|SubType|  
-|-------------------|--------------|---|  
-|recBinaries|Record|Company Information|  
-|OStream|OutStream|| 
-|Tme|Time|| 
-
-```  
-recBinaries.FIND('-');  
-recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-OStream.WRITE(Tme);  
-recBinaries.MODIFY();  
+```
+ var
+    recBinaries: Record "Company Information";
+    OStream: OutStream;
+    Tme: Time;
+begin
+    recBinaries.FIND('-');  
+    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
+    OStream.WRITE(Tme);  
+    recBinaries.MODIFY();  
+end;
 ```   
   
 

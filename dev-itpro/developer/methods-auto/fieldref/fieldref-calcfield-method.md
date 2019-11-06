@@ -43,29 +43,25 @@ When a FlowField is a direct source expression of a control on a page or a repor
 This method is similar to the [CALCFIELDS Method \(Record\)](../../methods-auto/record/record-calcfields-method.md) method.  
 
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustRecordref. The [FIND Method \(RecordRef\)](../../methods-auto/recordref/recordref-find-method.md) selects the first record in the table and then loops through all the records until no records could be found. For each record, the [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) creates a FieldRef variable that is named MyFieldref for the Balance Due field \(field 66\), which is a flow field. The CALCFIELD method is called to update the field before the customer ID and the balance due are displayed. Otherwise, the balance due for every record will be set to 0. This example requires that you create the following global variables and text constants.  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustRecordref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|Count|Integer|  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|%1: \\Balance Due: %2|  
-
-```  
-
-Count := 0;  
-CustRecordref.OPEN(18);  
-if CustRecordref.FIND('-') then  
-  repeat  
-    MyFieldRef := CustRecordref.FIELD(66);  
-    MyFieldRef.CALCFIELD;  
-    MESSAGE(Text000, CustRecordref.RECORDID, MyFieldRef);  
-    Count := Count + 1;  
-  until CustRecordref.NEXT = 0;  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustRecordref. The [FIND Method \(RecordRef\)](../../methods-auto/recordref/recordref-find-method.md) selects the first record in the table and then loops through all the records until no records could be found. For each record, the [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) creates a FieldRef variable that is named MyFieldref for the Balance Due field \(field 66\), which is a flow field. The CALCFIELD method is called to update the field before the customer ID and the balance due are displayed. Otherwise, the balance due for every record will be set to 0. 
+ 
+```
+var
+    CustRecordref: RecordRef;
+    MyFieldRef: FieldRef;
+    Count: Integer;
+    Text000: TextConst ENU='%1: \\Balance Due: %2.';
+begin
+    Count := 0;  
+    CustRecordref.OPEN(18);  
+    if CustRecordref.FIND('-') then  
+      repeat  
+        MyFieldRef := CustRecordref.FIELD(66);  
+        MyFieldRef.CALCFIELD;  
+        MESSAGE(Text000, CustRecordref.RECORDID, MyFieldRef);  
+        Count := Count + 1;  
+      until CustRecordref.NEXT = 0;  
+end;
 ```  
 
 ## See Also

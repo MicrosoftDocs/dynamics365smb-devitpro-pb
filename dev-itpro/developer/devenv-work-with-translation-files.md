@@ -80,7 +80,7 @@ In the generated .xlf file, you can see a `<source>` element for each label. For
 
 ```
 <ding="utf-8"?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language=”da-DK” original="ALProject16">
     <body>
       <group id="body">
@@ -115,7 +115,7 @@ The .xlf files approach cannot be used for translating the base application. If 
 
 We recommend that you use only one .txt file per language. There is no enforced naming on the .txt files, but a suggested good practice is to name it `<extensionname>.<language>.txt`.  
 
-For more information about importing and exporting .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/en-us/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
+For more information about importing and exporting .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
 
 ## See Also
 [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](https://docs.microsoft.com/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)  

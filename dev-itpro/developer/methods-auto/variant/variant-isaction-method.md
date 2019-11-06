@@ -38,25 +38,22 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains an Automation variable. The MyAutomation variable is assigned to the variant variable that is named MyVariant. The **ISAUTOMATION** method determines whether the variant contains an Automation variable and stores the return value in the varResult variable. In this case, the variant contains an Automation variable so **Yes** is returned and displayed in a message box. The [ISCODE Method (Variant)](../../methods/devenv-iscode-method-variant.md) determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code. This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|MyAutomation|Automation|AFormAut 1.0 Type Library|  
-|MyVariant|Variant|Not applicable|  
-|varResult|Boolean|Not applicable|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|Does the variant contain an Automation variable? %1|  
-|Text001|Does the variant contain a code variable? %1|  
-  
+ The following example determines whether an AL variant contains an Action variable. The MyAction variable is assigned to the variant variable that is named MyVariant. The **ISACTION** method determines whether the variant contains an Action variable and stores the return value in the varResult variable. In this case, the variant contains an Action variable so **Yes** is returned and displayed in a message box. The [ISCODE Method (Variant)](../../methods/devenv-iscode-method-variant.md) determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code. 
+
 ```  
-MyVariant := MyAutomation;  
-varResult := MyVariant.ISAUTOMATION;  
-MESSAGE(Text000,varResult);  
-varResult := MyVariant.ISCODE;  
-MESSAGE(Text001, varResult);  
+var
+    MyAction: Action;
+    MyVariant: Variant;
+    varResult: Boolean;
+    Text000: TextConst ENU='Does the variant contain an Action variable? %1.';
+    Text001: TextConst ENU='Does the variant- contain a code variable? %1.';
+begin
+    MyVariant := MyAction;  
+    varResult := MyVariant.ISACTION;  
+    MESSAGE(Text000,varResult);  
+    varResult := MyVariant.ISCODE;  
+    MESSAGE(Text001, varResult);  
+end;
 ```  
   
 

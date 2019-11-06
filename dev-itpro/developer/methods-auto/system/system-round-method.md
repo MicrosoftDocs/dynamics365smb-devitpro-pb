@@ -51,25 +51,22 @@ This optional parameter specifies how to round the Number parameter. The default
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example shows how to use the **ROUND** method. This example requires that you create the following global variables and text constant.  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|DecimalToRound|Decimal|  
-|Direction|Text|  
-|Precision|Decimal|  
-|Result|Decimal|  
-
-|Text Constant|ENU Value|  
-|-------------------|---------------|  
-|Text000|ROUND\(%1, %2, %3\) returns %4.|  
-
-```  
-DecimalToRound := 1234.56789;  
-Direction := '>';  
-Precision := 0.001;  
-Result := ROUND(DecimalToRound, Precision, Direction);  
-MESSAGE(Text000, Format(DecimalToRound,0,1), Precision, Direction, Result);  
+ This example shows how to use the **ROUND** method.
+ 
+``` 
+var
+    DecimalToRound: Decimal;
+    Direction: Text;
+    Precision: Decimal;
+    Result: Decimal;
+    Text00: TextConst ENU='ROUND(%1, %2, %3) returns %4.';
+begin
+    DecimalToRound := 1234.56789;  
+    Direction := '>';  
+    Precision := 0.001;  
+    Result := ROUND(DecimalToRound, Precision, Direction);  
+    MESSAGE(Text000, Format(DecimalToRound,0,1), Precision, Direction, Result);  
+end;
 ```  
 
  On a computer that has the regional format set to English \(United States\), the message window displays the following:  

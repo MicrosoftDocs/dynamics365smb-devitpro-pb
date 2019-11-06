@@ -80,16 +80,15 @@ The *FormatNumber* parameter specifies the format that you want to use. The basi
 > You cannot use both *FormatNumber* and *FormatStr* at the same time.
 
 ## Example  
-This example requires that you create the following global text constant.  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The formatted value: >%1\<|  
 
 ```  
-MESSAGE(Text000, FORMAT(-123456.78, 12, 3));  
-MESSAGE(Text000, FORMAT(-123456.78, 12, '<Standard Format,3>'));  
-MESSAGE(Text000, FORMAT(-123456.78, 12, '<Integer Thousand><Decimals><Sign,1>'));  
+var
+    Text000: TextConst ENU='The formatted value >%1<';
+begin
+    MESSAGE(Text000, FORMAT(-123456.78, 12, 3));  
+    MESSAGE(Text000, FORMAT(-123456.78, 12, '<Standard Format,3>'));  
+    MESSAGE(Text000, FORMAT(-123456.78, 12, '<Integer Thousand><Decimals><Sign,1>'));  
+end;
 
 ```  
 
@@ -110,14 +109,13 @@ On a computer that has the regional format set to Danish \(Denmark\), the messag
 **The formatted value: > 123.456,78-\<**  
 
 ## Example  
-This example shows how to use a string to build a format and requires that you create the following global text constant.  
-
-|Text constant|ENU value|  
-|-------------|---------|  
-|Text000|Today is %1.|  
-
+This example shows how to use a string to build a format.
 ```  
-MESSAGE(Text000, FORMAT(TODAY,0,'<Month Text> <Day>'));  
+var
+    Text000: TextConst ENU='Today is %1';
+begin 
+    MESSAGE(Text000, FORMAT(TODAY,0,'<Month Text> <Day>'));  
+end;
 ```  
 
 The message window displays the following:  

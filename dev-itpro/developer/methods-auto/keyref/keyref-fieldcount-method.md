@@ -38,20 +38,19 @@ The number of fields that have been defined in the key.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example retrieves the number of fields that are defined in a key in record. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KEYINDEX Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md) method retrieves the second key in the record and store the *KeyRef* in the varKeyRef variable. The [FIELDCOUNT Method \(KEYREF\)](../../methods/devenv-fieldcount-method-keyref.md) is then used to return the number of fields defined in the key and displayed in a message box. This example requires that you create the following global variables.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|RecRef|RecordRef|  
-|varKeyRef|KeyRef|  
-|VarCount|Integer|  
-  
+ The following example retrieves the number of fields that are defined in a key in record. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KEYINDEX Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md) method retrieves the second key in the record and store the *KeyRef* in the varKeyRef variable. The [FIELDCOUNT Method \(KEYREF\)](../../methods/devenv-fieldcount-method-keyref.md) is then used to return the number of fields defined in the key and displayed in a message box.
+ 
 ```  
-  
-RecRef.OPEN(18);  
-varKeyRef := RecRef.KEYINDEX(2);  
-VarCount := varKeyRef.FIELDCOUNT;  
-MESSAGE('The number of fields defined in the key is: %1', VarCount);  
+var
+    RecRef: RecordRef;
+    varKeyRef: KeyRef;
+    VarCount: Integer;
+begin 
+    RecRef.OPEN(18);  
+    varKeyRef := RecRef.KEYINDEX(2);  
+    VarCount := varKeyRef.FIELDCOUNT;  
+    MESSAGE('The number of fields defined in the key is: %1', VarCount);  
+end;
 ```  
   
 

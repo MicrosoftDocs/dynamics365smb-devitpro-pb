@@ -38,16 +38,14 @@ The input variant.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example requires that you create the following variables.  
-
-|Name|DataType|  
-|----------|--------------|  
-|TestTime|Time|  
-|variant1|Variant|  
-
 ```  
-variant1 := TIME;  
-TestTime := VARIANT2TIME(variant1);  
+var
+    TextTime: Time;
+    variant1: Variant;
+begin 
+    variant1 := TIME;  
+    TestTime := VARIANT2TIME(variant1);  
+end;
 ```  
 
 

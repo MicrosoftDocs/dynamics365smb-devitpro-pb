@@ -27,11 +27,11 @@ Learn more details on how you can build a Business Central offering in the **Rea
 
 ## Examples of vertical solutions 
 
-[Build Food](https://appsource.microsoft.com/en-us/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.industrybuilt%7CAID.cac55419-9441-4cbd-b8a3-1a7b3fcd8c0d%7CPAPPID.b3c7bfc9-8c72-45f5-a057-d051f1cd21c1) from Industry Built 
+[Build Food](https://appsource.microsoft.com/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.industrybuilt%7CAID.cac55419-9441-4cbd-b8a3-1a7b3fcd8c0d%7CPAPPID.b3c7bfc9-8c72-45f5-a057-d051f1cd21c1) from Industry Built 
 - This app adds functionality in industry expertise, which is useful for streamlining processes and systems. 
 - Build Food is designed for food manufactures that need special features to manage the unique demands of working with food. This solution extends the capabilities of Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to include the features that these companies need most by turning an already robust financial management system into a complete formulation and batch management system that is both powerful and easy to use. 
  
-[Progressus Software](https://appsource.microsoft.com/en-us/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.progressussoftware%7CAID.27c95c42-3724-4c23-bc71-1eccdf3de37c%7CPAPPID.760fc3a0-ddab-43aa-93a5-6430f34f1b76) from Plumbline Consulting LLC 
+[Progressus Software](https://appsource.microsoft.com/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.progressussoftware%7CAID.27c95c42-3724-4c23-bc71-1eccdf3de37c%7CPAPPID.760fc3a0-ddab-43aa-93a5-6430f34f1b76) from Plumbline Consulting LLC 
 - This app adds unique functionality to advanced project accounting and project management, which is useful for project managers, project employees, and project accountants. 
 - This business management solution extends the powerful financial management functionality of Microsoft [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to provide Professional Services Automation features for service and project based businesses. Progressus Software’s functionality spans all the important processes – resource management, project management, sales and marketing, human capital management, and financial management – to provide unparalled insight and control of critical business functions for different project based roles. 
 

@@ -38,23 +38,19 @@ The ID of the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The [FINDLAST Method \(RecordRef\)](recordref-findlast-method.md) finds the last record in the table. The record id of the last record is retrieved, stored in the RecID variable displayed in message box. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyRecordRef|RecordRef|  
-|RecID|RecordID|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|The record id for the last record is: %1|  
-  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The [FINDLAST Method \(RecordRef\)](recordref-findlast-method.md) finds the last record in the table. The record id of the last record is retrieved, stored in the RecID variable displayed in message box. 
+ 
 ```  
-  
-MyRecordRef.OPEN(18);  
-MyRecordRef.FINDLAST;  
-RecID := MyRecordRef.RECORDID;  
-MESSAGE(Text000, RecID);  
+var
+    MyRecordRef: RecordRef;
+    RecID: RecordId;
+    Text000: TextConst ENU='The record id for the last record is: %1'; 
+begin   
+    MyRecordRef.OPEN(18);  
+    MyRecordRef.FINDLAST;  
+    RecID := MyRecordRef.RECORDID;  
+    MESSAGE(Text000, RecID);  
+end;
 ```  
   
 

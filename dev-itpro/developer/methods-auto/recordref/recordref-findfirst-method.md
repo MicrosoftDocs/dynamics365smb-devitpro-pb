@@ -41,24 +41,20 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
  You should use this method only when you explicitly want to find the first record in a table or set. Do not use this method in combination with repeat..until.  
   
 ## Example  
- The following example opens the Item table \(27\) as a RecordRef variable that is named ItemRecref. The FINDFIRST method searches for the first record in the table. If the record is found, the description and unit price of the item in the record are displayed in a message box. Otherwise, a message that indicates that the first item was not found is displayed. This example requires that you create the following global variable and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|ItemRecref|RecordRef|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|The first item is %1 and the unit price is %2.|  
-|Text001|Text|The first item was not found.|  
-  
+ The following example opens the Item table \(27\) as a RecordRef variable that is named ItemRecref. The FINDFIRST method searches for the first record in the table. If the record is found, the description and unit price of the item in the record are displayed in a message box. Otherwise, a message that indicates that the first item was not found is displayed. 
+ 
 ```  
-  
-ItemRecref.OPEN(27);  
-if ItemRecref.FINDFIRST then  
-  MESSAGE(Text000, ItemRecref.FIELD(3),  ItemRecref.FIELD(18))  
-else  
-  MESSAGE(Text001);  
+var
+    ItemRecref: RecordRef;
+    Text000: TextConst ENU='The first item is %1 and the unit price is %2.';
+    Text001: TextConst ENU='The first item was not found.';
+begin 
+    ItemRecref.OPEN(27);  
+    if ItemRecref.FINDFIRST then  
+      MESSAGE(Text000, ItemRecref.FIELD(3),  ItemRecref.FIELD(18))  
+    else  
+      MESSAGE(Text001);  
+end;
   
 ```  
 

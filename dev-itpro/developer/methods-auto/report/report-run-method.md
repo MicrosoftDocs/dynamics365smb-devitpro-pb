@@ -72,16 +72,16 @@ REPORT.RUN(1001, FALSE, TRUE);
 ```  
 
 ## Example  
- This example shows how to run a report for which you specify a record. This example displays the request window and sends the report to the system printer. This example requires that you create the following global variable.  
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|MyRec|Record|Customer|  
-
+ This example shows how to run a report for which you specify a record. This example displays the request window and sends the report to the system printer.
+ 
 ```  
-MyRec.FINDLAST;  
-MyRec.SETRECFILTER;  
-Report.RUN(101, TRUE, TRUE, MyRec);  
+var
+    MyRec: Record Customer;
+begin
+    MyRec.FINDLAST;  
+    MyRec.SETRECFILTER;  
+    Report.RUN(101, TRUE, TRUE, MyRec);  
+end;
 ```   
 
 ## See Also

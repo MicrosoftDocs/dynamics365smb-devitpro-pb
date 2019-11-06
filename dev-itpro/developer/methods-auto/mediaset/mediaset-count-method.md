@@ -40,23 +40,16 @@ The number of media objects that are included in the MediaSet of a record.
 ## Example  
  This example counts the number of media objects that are available for item No. 1000 in table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)]. In this example, the field in the **Item** table that is used for the MediaSet data type is **Picture**.  
 
-This code requires you to create the following variables.
-
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|itemRec|Record|Item|  
-|count|Integer||  
-
- This code requires you to create the following text constant.  
-
-|  Text constant  |  ConstValue  |  
-|-----------------|--------------|  
-|Text000|The number of media files: %1|  
-
-```  
-itemRec.Get('1000');  
-    count := (itemRec.Picture.Count);  
-    Message(Text000,count);  
+```
+ var
+    itemRec: Record Item;
+    count: Integer;
+    Text000: TextConst ENU='The number of media files: %1';
+begin
+    itemRec.Get('1000');  
+        count := (itemRec.Picture.Count);  
+        Message(Text000,count);  
+end;
 ```  
 
 ## See Also

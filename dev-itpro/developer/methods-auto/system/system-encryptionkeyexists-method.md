@@ -43,8 +43,8 @@ if ENCRYPTIONENABLED then
           MESSAGE('Encryption has been enabled and the encryption key is present in this server instance')  
         else  
           MESSAGE('Encryption has been enabled but the encryption key is not present on this server instance')  
-      else  
-        MESSAGE('Encryption has not been enabled')  
+else  
+  MESSAGE('Encryption has not been enabled');  
 ``` 
 
 ## See Also

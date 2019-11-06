@@ -23,7 +23,7 @@ When you have created a profile, you can use the **User Personalization** page t
   
 |Field    |Description|  
 |---------|---------------------------------------|  
-|**User ID**|Choose the **AssistEdit** button to view all available user logins, select the relevant user, and then choose the **OK** button.<br /><br /> For more information, see [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions).|  
+|**User ID**|Choose the **AssistEdit** button to view all available user logins, select the relevant user, and then choose the **OK** button.<br /><br /> For more information, see [Managing Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions).|  
 |**Profile ID**|Select a profile ID that you have already created. Choose the **AssistEdit** button to view all available profiles.|  
 |**Language ID**|Select the appropriate language ID, or leave this field blank.|  
 |**Company**|Select a company from the **Companies** window.|  
@@ -33,4 +33,4 @@ When you have created a profile, you can use the **User Personalization** page t
   
 ## See Also  
 [Profile Object](devenv-profile-object.md)  
-[Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)  
+[Managing Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions)  
