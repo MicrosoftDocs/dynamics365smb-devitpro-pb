@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: a48ab300-5cef-4df9-a2bf-13d9ba64ec3f
-caps.latest.revision: 8
+author: SusanneWindfeldPedersen
 ---
 
 # SaveValues Property

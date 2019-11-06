@@ -81,7 +81,7 @@ If a `DataItemTableView` or `SourceTableView` is not defined, then end users can
 
 If you set the property [UseRequestPage](properties/devenv-userequestpage-property.md) to `No`, then the report or XMLport will start to print as soon as it is run. In this case, end users cannot cancel the report or XMLport run. It is still possible to cancel the report or XMLport, but some pages may print.
 
-In a complex report or XMLport that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports and XMLports so that end users cannot change the sort order in a way that affects the functionality of the report or XMLport.
+In a complex report or XMLport that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports and XMLports so that end users cannot change the sort order in a way that affects their functionality.
 
 For data items and table elements whose source table contains calculated fields, such as amounts and quantities, the **Filter totals by:** section is automatically included on the request page, which allows you to adjust various dimensions that influence calculations.
 
