@@ -40,7 +40,7 @@ This page lists the countries/regions that are supported with [!INCLUDE[d365fin_
 
 ## Partner Supported Countries/Regions and Translations
 
-In countries where Microsoft has not delivered a localization partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. These apps are built top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. The following table provides the list of countries/regions and translations supported through partners.
+In countries where Microsoft has not delivered a localization, partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. The following table provides the list of countries/regions and translations supported through partners.
 
 |Country/Region|Language Code|
 |-------|-------------|
