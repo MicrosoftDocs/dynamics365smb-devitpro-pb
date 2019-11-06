@@ -29,7 +29,7 @@ RequestFilterFields="No.","Search Name","Customer Posting Group";
 ```
   
 ## Remarks  
-A user can add other fields to the request page and set filters on these fields. We recommend that you use this property for common filter fields. If the source table of a report has many fields, then it is time-consuming for a user to add fields to the request page.  
+A user can add other fields to the request page and set filters on these fields. We recommend that you use this property for common filter fields. If the source table of a report or XMLport has many fields, then it is time-consuming for a user to add fields to the request page.  
   
 If you do not want users to add filters on fields, then use one of the following methods:  
   
