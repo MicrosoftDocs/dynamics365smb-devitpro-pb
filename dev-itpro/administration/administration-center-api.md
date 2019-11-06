@@ -1154,7 +1154,7 @@ Returns a detailed list of the database exports that occurred within the provide
 > All datetime values are in UTC
 
 
-### Case-Invariant blacklisted environment names
+### Case-Invariant blocked environment names
 **All environment types:**
    - invoicing
    - api
