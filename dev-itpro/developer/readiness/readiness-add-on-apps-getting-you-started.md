@@ -120,7 +120,7 @@ You have 3 options to work develop against the current version of Microsoft Dyna
 ## The “Ready to Go” program
 
 There are several things to keep in mind in building an Add-on app. The **"Ready to Go" program** is designed to support you in bringing your Microsoft Dynamics 365 Business Central offers into Microsoft Appsource. The program encompasses the following three core support options that you can leverage:
-- Element 1: [“Ready to Go” Online learning](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-learning-catalog)
+- Element 1: [“Ready to Go” Online learning](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 - Element 2: [“Ready to Go” Coaching](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go?tabs=coaching)
 - Element 3: [“Ready to Go” Platform](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go?tabs=learning)
 
