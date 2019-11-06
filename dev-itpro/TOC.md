@@ -13,13 +13,13 @@
 <!--Ready2Go-->
 ## Training and Readiness
 ### Learning Catalog
-#### [Learning Catalog](developer/readiness/readiness-learning-catalog.md)
-#### [Business Decision Maker Learning Catalog](developer/readiness/readiness-learning-bus-decision-makers.md)
-#### [Business User Learning Catalog](developer/readiness/readiness-learning-bus-users.md)
-#### [Developer Learning Catalog](developer/readiness/readiness-learning-developers.md)
-#### [Functional Consultant Learning Catalog](developer/readiness/readiness-learning-functional-consultants.md)
-#### [Pre-sales Learning Catalog](developer/readiness/readiness-learning-presales.md)
-#### [Sales Learning Catalog](developer/readiness/readiness-learning-sales.md)
+#### [Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Business Decision Maker Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-decision-makers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Business User Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-users?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Developer Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Functional Consultant Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Pre-sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-presales?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-sales?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
 ### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 <!--AppSourcevalidation-->
@@ -172,7 +172,7 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### Ready to Go
 #### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-#### [The “Ready to Go” Online Learning Catalog](developer/readiness/readiness-learning-catalog.md)
+#### [The “Ready to Go” Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
