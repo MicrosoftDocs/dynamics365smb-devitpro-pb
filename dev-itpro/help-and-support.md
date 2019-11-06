@@ -23,7 +23,7 @@ The functionality in the default version of [!INCLUDE[prodshort](includes/prodsh
 > |Name  |Location  |Description|
 > |---------|---------|---------|
 > |Business Central docs|[https://docs.microsoft.com/dynamics365/business-central](https://docs.microsoft.com/dynamics365/business-central/) |Use this library to learn about business functionality. |
-> |Business Central developer and ITpro docs|[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prodshort](includes/prodshort.md)].|
+> |Business Central developer and ITpro docs|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prodshort](includes/prodshort.md)].|
 
 ### Customize and extend the user assistance
 
