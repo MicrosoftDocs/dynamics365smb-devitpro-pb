@@ -43,26 +43,22 @@ String :=   System.GetLastErrorCode()
 ## Example  
  This example opens a file and then causes an error to occur by trying to open the file again. If the code for the error that occurred is not the expected error code, then an error message is displayed.  
   
- This example requires that you create the following text constant and variables.  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text001|The error code is not valid. Expected: %1. Actual: %2. Error message: %3|  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|ErrorCode|Text|1024|  
-|ExpectedErrorCode|Text|1024|  
-|FileObj1|File|Not applicable|  
-|FileObj2|File|Not applicable|  
-  
+
 ```  
-ExpectedErrorCode := 'StreamIO';  
-FileObj1.CREATETEMPFILE;  
-ASSERTERROR FileObj2.CREATE(FileObj1.NAME);  
-ErrorCode := GETLASTERRORCODE;  
-if ErrorCode <> ExpectedErrorCode then  
-  ERROR(Text001, ExpectedErrorCode, ErrorCode, GETLASTERRORTEXT);  
+var
+    ErrorCode: Text[1024];  
+    ExpectedErrorCode: Text[1024];  
+    FileObj1: File;
+    FileObj2: File;
+    Text0001: TexConst ENU='The error code is not valid. Expected: %1. Actual: %2. Error message: %3';
+begin
+    ExpectedErrorCode := 'StreamIO';  
+    FileObj1.CREATETEMPFILE;  
+    ASSERTERROR FileObj2.CREATE(FileObj1.NAME);  
+    ErrorCode := GETLASTERRORCODE;  
+    if ErrorCode <> ExpectedErrorCode then  
+      ERROR(Text001, ExpectedErrorCode, ErrorCode, GETLASTERRORTEXT);  
+end;
   
 ```  
 ## See Also

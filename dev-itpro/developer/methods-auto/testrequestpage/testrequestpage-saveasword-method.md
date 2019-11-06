@@ -52,27 +52,25 @@ The path and file name to which the report is saved. The file name extension sho
   
 -   A handler method of type RequestPageHandler called ReqPageHandler. This handler method has one parameter called RequestPage of Type TestRequestPage and Subtype Customer – Top 10 List. The RequestPage parameter is specified as VAR and is passed by reference to the handler method. 
 <!--Links For more information, see [How to: Create Handler Methods](devenv-How-to--Create-Handler-Methods.md).-->  
-  
- This example also requires that you create the following global variable of the SaveAsWord codeunit.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|Filename|Text|  
-  
+   
 ```  
-//Test method: TestSaveAsWord  
-Filename := TEMPORARYPATH + 'MyRep.doc';  
-MESSAGE(Filename);  
-IF NOT FILE.ERASE(Filename) THEN  
-  ERROR('Cannot erase %1',Filename);  
-REPORT.RUN(111);  
-IF NOT FILE.EXISTS(Filename) THEN  
-  ERROR('File should exist!');  
-  
-//Request Page Handler method  
-RequestPage.Customer.SETFILTER("No.", '20000');  
-RequestPage.ChartType.VALUE('Pie chart');  
-RequestPage.SAVEASEXCEL(Filename);  
+var
+    Filename: Text;
+begin
+    //Test method: TestSaveAsWord  
+    Filename := TEMPORARYPATH + 'MyRep.doc';  
+    MESSAGE(Filename);  
+    if not FILE.ERASE(Filename) then  
+      ERROR('Cannot erase %1',Filename);  
+    REPORT.RUN(111);  
+    if not FILE.EXISTS(Filename) then  
+      ERROR('File should exist!');  
+      
+    //Request Page Handler method  
+    RequestPage.Customer.SETFILTER("No.", '20000');  
+    RequestPage.ChartType.VALUE('Pie chart');  
+    RequestPage.SAVEASEXCEL(Filename);  
+end;
   
 ```
 

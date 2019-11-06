@@ -40,19 +40,15 @@ A number used to create a unique set of numbers.
 ## Example  
  The following example generates random numbers between 1 and 5 by using the *Seed* from the **RANDOMIZE** method to initialize the random number generator in the [RANDOM Method](../../methods-auto/system/system-random-method.md). The **RANDOMIZE** method uses the data from system clock as the *Seed* value.  
   
-|Variable name|DataType|  
-|-------------------|--------------|  
-|x|Integer|  
-  
-|Text constant name|ENU value|  
-|------------------------|---------------|  
-|Text000|X=%1|  
-  
 ```  
-  
-RANDOMIZE();  
-x := RANDOM(5);  
-MESSAGE(Text000, x);  
+var
+    x: Integer;
+    Text000: TextConst ENU='X=%1';
+begin
+    RANDOMIZE();  
+    x := RANDOM(5);  
+    MESSAGE(Text000, x);  
+end;
 ```  
 
 ## See Also

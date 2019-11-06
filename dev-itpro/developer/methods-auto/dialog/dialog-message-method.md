@@ -55,29 +55,22 @@ Any type of AL variable you want to insert into String. You can insert up to 10 
   
 ## Example  
  This example shows how to use the MESSAGE method.  
-  
- This code requires you to create the following variables.  
-  
-|Variable|DataType|  
-|--------------|--------------|  
-|Text|Text|  
-|Number|Decimal|  
-  
- This code requires you to create the following text constants.  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|You can use message windows to display text and numbers: \\|  
-|Text001|The number:|  
-|Text002|The text:|  
-  
-```  
-Text := 'ABCDE';  
-Number := 12345.678;  
-// The backslash indicates a new line.  
-// You can concatenate strings using the + operator.  
-// You can insert variable values using the % symbol.  
-MESSAGE(Text000 + Text001 + '%1\' +Text002 + '%2', Number, Text);  
+ 
+ ```
+var
+    Text: Text;
+    Number: Decimal;
+    Text000: TextConst ENU='You can use message windows to display text and numbers:';
+    Text001: TextConst ENU='The number:';
+    Text002: TextConst ENU='The text:';
+begin
+    Text := 'ABCDE';  
+    Number := 12345.678;  
+    // The backslash indicates a new line.  
+    // You can concatenate strings using the + operator.  
+    // You can insert variable values using the % symbol.  
+    MESSAGE(Text000 + Text001 + '%1\' +Text002 + '%2', Number, Text);  
+end;
 ```  
   
  The message window reads:  

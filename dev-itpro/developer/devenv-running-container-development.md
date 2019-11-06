@@ -22,9 +22,9 @@ Install Docker and configure it for Windows Containers.
 
 1. Please choose the version of Docker that is appropriate for the host operating system.
     - Use [Docker Community Edition]( https://hub.docker.com/editions/community/docker-ce-desktop-windows) if the host operating system is Windows 10.  
-        For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10).
+        For more information, see [Install instructions](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-10).
     - Use [Docker Enterprise Edition](https://www.docker.com/enterprise-edition) if the host operating system is Windows Server.  
-        For more information, see [Install instructions](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server).
+        For more information, see [Install instructions](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
 2. Switch Docker to use Windows containers. By default Docker uses Linux containers.
 
@@ -52,7 +52,7 @@ Web Client          : https://cdc633cdb0a2/NAV/
 NAV Admin Username  : admin
 NAV Admin Password  : Biba4071
  Files:
-http://cdc633cdb0a2:8080/certificate.cer
+https://cdc633cdb0a2:8080/certificate.cer
  Initialization took 83 seconds
 Ready for connections!
 ```

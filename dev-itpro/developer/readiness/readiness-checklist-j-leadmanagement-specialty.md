@@ -30,14 +30,14 @@ Choose which contact options that you want to include
 ## <a name="Localization"></a>Localization Apps
 
 > [!TIP]
-Learn how [Development of a Localization Solution.](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization)
+Learn how [Development of a Localization Solution.](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization)
 
 ## <a name="Connect"></a>Connect Apps
 
 > [!TIP]
-Learn how [Developing Connect Apps for Dynamics 365 Business Central.](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps) 
+Learn how [Developing Connect Apps for Dynamics 365 Business Central.](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps) 
 
 ## <a name="ConsultingServices"></a>Consulting Services App
 
 > [!TIP]
-Learn how [AppSource Consulting Services.](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-consulting) 
+Learn how [AppSource Consulting Services.](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-consulting) 

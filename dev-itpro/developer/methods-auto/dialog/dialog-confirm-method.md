@@ -50,26 +50,21 @@ Specifies the default button. If you do not specify a default button, then No is
  We recommend that you always end CONFIRM messages with a question mark. For more information about best practices for end-user messages, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).  
 
 ## Example  
- In the following example, the Dialog.CONFIRM method prompts the user for a **true** or **false** answer. This code example requires that you create the following variables.  
+ In the following example, the Dialog.CONFIRM method prompts the user for a **true** or **false** answer. 
 
-|Name|DataType|  
-|----------|--------------|  
-|Question|Text|  
-|Answer|Boolean|  
-|CustomerNo|Integer|  
-
- This code example requires that you create the following text constants.  
-
-|Name|ConstValue|  
-|----------|----------------|  
-|Text000|Exit without saving changes to customer %1?|  
-|Text001|You selected %1.|  
-
-```  
-CustomerNo := 01121212;  
-Question := Text000;  
-Answer := Dialog.CONFIRM(Question, TRUE, CustomerNo);  
-MESSAGE(Text001, Answer);  
+```
+var
+    Question: Text;
+    Answer: Boolean;
+    CustomerNo: Integer;
+    Text000: TextConst ENU='Exit without saving changes to customer %1?';
+    Text001: TextConst ENU='You selected %1.';
+begin
+    CustomerNo := 01121212;  
+    Question := Text000;  
+    Answer := Dialog.CONFIRM(Question, TRUE, CustomerNo);  
+    MESSAGE(Text001, Answer);  
+end;
 ```  
 
  The first dialog box shows:  

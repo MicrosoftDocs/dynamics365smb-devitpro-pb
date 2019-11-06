@@ -44,24 +44,20 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
  This method is similar to the [RELATION Method \(Record\)](../../methods-auto/record/record-relation-method.md).  
   
 ## Example  
- The following example opens table 37, the Sales Line table, as a RecordRef variable and creates a reference to field 2 \(Sell-to Customer No.\). The [FieldRef Data Type](../../datatypes/devenv-fieldref-data-type.md) of field 2 is stored in the MyFieldRef variable. The RELATION method retrieves the number of the table that has a relation with the Sell-To-Customer field \(field 2\). The table number is stored the varRelation variable and displayed in the message box. This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|SaleRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|varRelation|Integer|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Field 2 in the Sales Line \(37\) table has a relation with table %1.|  
-  
-```  
-  
-SaleRecref.OPEN(37);  
-MyFieldRef := SaleRecref.FIELD(2);  
-varRelation := MyFieldRef.RELATION;  
-MESSAGE(Text000, varRelation);  
+ The following example opens table 37, the Sales Line table, as a RecordRef variable and creates a reference to field 2 \(Sell-to Customer No.\). The [FieldRef Data Type](../../datatypes/devenv-fieldref-data-type.md) of field 2 is stored in the MyFieldRef variable. The RELATION method retrieves the number of the table that has a relation with the Sell-To-Customer field \(field 2\). The table number is stored the varRelation variable and displayed in the message box. 
+
+```
+var
+    MyFieldRef: FieldRef;
+    SaleRecref: RecordRef;
+    varRelation: Integer;
+    Text000: TextConst ENU='Field 2 in the Sales Line (37) table has a relation with table %1.';
+begin
+    SaleRecref.OPEN(37);  
+    MyFieldRef := SaleRecref.FIELD(2);  
+    varRelation := MyFieldRef.RELATION;  
+    MESSAGE(Text000, varRelation);  
+end;
 ```  
   
 ## See Also

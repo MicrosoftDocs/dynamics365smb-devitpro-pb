@@ -51,10 +51,11 @@ An instance of the [File](file-data-type.md) data type.
   
 ## Example  
  This example shows how to open an .xml file for reading in text mode. To use this example, you must create the simple.xml file at C:\\temp and create the following variable.  
-  
-|Variable|DataType|  
-|--------------|--------------|  
-|TestFile|File|  
+
+ ```
+ var
+    TestFile: File;
+```
   
 ```  
 TestFile.TEXTMODE(TRUE);  

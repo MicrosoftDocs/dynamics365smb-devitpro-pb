@@ -24,13 +24,13 @@ Optionally, you can add a custom interface in [!INCLUDE[d365_bus_central_md](../
 
 ## Examples of some of the current Connect apps on AppSource
 
-- [Shopify Connector from Scapta](https://appsource.microsoft.com/en-us/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview)
+- [Shopify Connector from Scapta](https://appsource.microsoft.com/product/dynamics-365-for-finance-and-operations-business-edition/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview)
     - This Connect app integrates [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to web shops, which is generally useful for companies selling items or services.
     - Shopify is a complete e-commerce solution that allows companies to set up an online store to sell their goods combined with the business process flows of the cutting edge ERP-system [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].
 - [Expensify from Stoneridge Software LLC](https://appsource.microsoft.com/da/product/dynamics-365-business-central/PUBID.stoneridge-software%7CAID.aaa85e5d-7f2d-473b-9e9e-d924795fcef1%7CPAPPID.99c36e84-67a4-422a-b8d9-5297c6ebfca5)
     - This Connect app integrates [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to an accounting solution, which is generally useful for companies of all shapes that wants to save time with automated expense management.
     - Expensify is a complete accounting solution that allows companies to automate every step of the expense reporting process, from receipt scanning to flagging the receipts that need human attention and automatically submitting and approving everything else. With multi-level approval workflows, Expensify gives you complete control and visibility over company finances.
-- [ADP Workforce Now Outbound Integration](https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/TYPE.connect%7CPUBID.adp%7CAID.msd_365_financial_erp_outbound_integration_app%7CPAPPID.00000000-0000-0000-0000-000000000000?tab=Overview)
+- [ADP Workforce Now Outbound Integration](https://appsource.microsoft.com/product/dynamics-365-business-central/TYPE.connect%7CPUBID.adp%7CAID.msd_365_financial_erp_outbound_integration_app%7CPAPPID.00000000-0000-0000-0000-000000000000?tab=Overview)
 
     - This Connect app integrates [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to an HCM system, which allows for handling people data with business management processes real-time.
     - ADP Workforce Now helps eliminate tedious administrative tasks and inefficiencies by incorporating people data and leveraging real time information that can help you manage finance issues.  Simplify and streamline the way you do business. Features include: General Ledger Data Integration, Employee Data Integration and more!

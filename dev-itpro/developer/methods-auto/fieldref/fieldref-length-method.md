@@ -41,26 +41,22 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
  For Text and Code fields this method returns the defined length. For other types of fields, it returns the fixed byte size, for example, Integer fields returns 4.  
   
 ## Example  
- The following example opens the Customer table as a RecordRef variable. The [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) creates a FieldRef for any specified field and stores the reference in the MyFieldRef variable. The LENGTH method retrieves the maximum size of the field and stores the value in the varLength variable. The value that is stored in the varLength is displayed in a message box. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|varLength|Integer|  
-|varFieldNo|Integer|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The maximum size of the field is %1.|  
-  
-```  
-  
-varFieldNo := 1;  
-CustomerRecref.OPEN(DATABASE::Customer);  
-MyFieldRef := CustomerRecref.FIELD(varFieldNo);  
-varLength := MyFieldRef.LENGTH;  
-MESSAGE(Text000, varLength);  
+ The following example opens the Customer table as a RecordRef variable. The [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) creates a FieldRef for any specified field and stores the reference in the MyFieldRef variable. The LENGTH method retrieves the maximum size of the field and stores the value in the varLength variable. The value that is stored in the varLength is displayed in a message box. 
+
+```
+var
+    MyFieldRef: FieldRef;
+    CustomerRecref: RecordRef;
+    varLength: Integer;
+    varFieldNo: Integer;
+    Text000: TextConst ENU='The maximum size of the field is %1.';
+begin  
+    varFieldNo := 1;  
+    CustomerRecref.OPEN(DATABASE::Customer);  
+    MyFieldRef := CustomerRecref.FIELD(varFieldNo);  
+    varLength := MyFieldRef.LENGTH();  
+    MESSAGE(Text000, varLength);  
+end;
 ```  
 
 ## See Also

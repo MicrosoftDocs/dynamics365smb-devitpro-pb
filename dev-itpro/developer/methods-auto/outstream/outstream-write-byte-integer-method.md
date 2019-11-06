@@ -58,9 +58,9 @@ recBinaries.Data.CREATEOUTSTREAM(OutStream);
 OutStream.WRITE('Secretary');  
 OutStream.WRITE('Alice');  
 OutStream.WRITE('Hart');  
-OutStream.WRITE(010696D);  
+OutStream.WRITE(19960106D);  
 recBinaries.MODIFY();  
-```  
+```   
   
 ## See Also
 [OutStream Data Type](outstream-data-type.md)  
