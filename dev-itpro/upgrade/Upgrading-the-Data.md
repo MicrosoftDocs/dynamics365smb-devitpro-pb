@@ -98,7 +98,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
 Create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
-For more information, see [Create a Full Database Backup \(SQL Server\)](http://msdn.microsoft.com/en-us/library/ms187510.aspx).  
+For more information, see [Create a Full Database Backup \(SQL Server\)](http://msdn.microsoft.com/library/ms187510.aspx).  
 
 ## Task 2 Uninstall all extensions in old database
 
@@ -137,7 +137,7 @@ For more information, see [[Uploading a License File for a Specific Database](..
 
 In the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] version that matches the database, open the old database, open Object Designer, select all objects except tables, and then choose **Delete**.
 
-You can also use the [DeleteObjects](https://docs.microsoft.com/en-us/dynamics-nav/deleteobjects
+You can also use the [DeleteObjects](https://docs.microsoft.com/dynamics-nav/deleteobjects
 ) command of the finsql.exe.
 
 ## <a name="ClearServer"></a>Task 5: Clear server instance and debugger breakpoint records in old database
@@ -228,7 +228,7 @@ For more information, see [Connecting a Server Instance to a Database](../admini
 
 You must increase the application version that is assigned to the database.
 
-Use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to increase the application version number of the database from its current version.
+Use the [Set-NAVApplication](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to increase the application version number of the database from its current version.
 
 To see the current version, use the following command:
 
@@ -254,7 +254,7 @@ For example, if the old version was `11.0.24279.0`, then you could change the ve
 
 Synchronize the database schema with validation.
 
-For example, run the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
+For example, run the [Sync-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
 
 ```
 Sync-NAVTenant -ServerInstance <ServerInstanceName>
@@ -272,7 +272,7 @@ For more information, see [Synchronizing the Tenant Database and Application Dat
   
 A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and upgrade tables, to migrate business data from the old table structure to the new table structure. You can start the data upgrade from the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
-Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:  
+Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run [Start-NavDataUpgrade](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:  
 
 ```  
 Start-NavDataUpgrade -ServerInstance <ServerInstanceName>  
@@ -361,7 +361,7 @@ In addition, other extensions used in the old deployment that you still want to 
     ```
     Get-NAVAppinfo -ServerInstance <ServerInstanceName> -SymbolsOnly
     ```
-2. Unpublish the existing system, test, and application symbols by using the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
+2. Unpublish the existing system, test, and application symbols by using the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
        
         ```
         Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <name> -Version <n.n.n.n>
@@ -413,20 +413,20 @@ In addition, other extensions used in the old deployment that you still want to 
 
     The new extension versions are found in the `\Extensions` folder of the installation media (DVD). Follow these steps for each extension by using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
 
-    1. Publish the new extension version by running the [Publish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
+    1. Publish the new extension version by running the [Publish-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) cmdlet: 
 
         ```
         Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
         ```
            
-    2.  Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
+    2.  Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
         ```    
         Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
     3. Upgrade the data of the extensions. This step is not required for the newly published local functionality extensions.
 
-        To run the data upgrade, run the [Start-NAVAppDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
+        To run the data upgrade, run the [Start-NAVAppDataUpgrade](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
         ```
         Start-NAVAppDataUpgrade -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
@@ -434,7 +434,7 @@ In addition, other extensions used in the old deployment that you still want to 
 
         Apart from upgrading the data, this command will install the new extension version.
 
-    3. Install the newly published local functionality extensions by running the [Install-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
+    3. Install the newly published local functionality extensions by running the [Install-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
 
         ```    
         Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
@@ -445,23 +445,23 @@ In addition, other extensions used in the old deployment that you still want to 
 
     For each extension, complete the following steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]: 
 
-    1. Compile the extension to make it work with the new platform by running the [Repair-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navappSynchronize) cmdlet.
+    1. Compile the extension to make it work with the new platform by running the [Repair-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet.
 
         ```
         Repair-NAVApp -ServerInstance <ServerInstanceName> -Name <Extension Name> -Version <N.N.N.N>
         ```
-   2. Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
+   2. Synchronize the schema with the database by running the [Sync-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
         ```    
         Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
-    3. Install the extension by running the [Install-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
+    3. Install the extension by running the [Install-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
 
         ```    
         Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
         ```
    
-7. (Optional) Unpublish unused extension versions by running the [Unpublish-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp): 
+7. (Optional) Unpublish unused extension versions by running the [Unpublish-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp): 
          
     ```
     Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
