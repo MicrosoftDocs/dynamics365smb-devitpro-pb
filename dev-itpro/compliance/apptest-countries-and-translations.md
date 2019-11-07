@@ -73,6 +73,8 @@ Due to the nature of the joint effort where Microsoft is providing the internati
 |Latvia|lv-LV|2020 Wave 1|
 |Slovenia|sl-SI|2020 Wave 1|
 |Peru|es-ES|2020 Wave 1|
+|Philippines|en-US|November 2019|
+|Vietnam|en-US|November 2019|
 
 ## See Also
 
