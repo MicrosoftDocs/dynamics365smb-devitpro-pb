@@ -172,7 +172,7 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### Ready to Go
 #### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-#### [The “Ready to Go” Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [The “Ready to Go” Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
