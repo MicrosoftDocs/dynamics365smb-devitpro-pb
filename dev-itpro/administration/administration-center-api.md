@@ -89,7 +89,7 @@ Environments are the instances of the application that have been set up for the 
 ### Get environments and Get environments by application family
 Returns a list of all the environments for the tenant. 
 
-```[200] GET /admin/v2.0/environments```
+```[200] GET /admin/v2.0/applications/environments```
 
 Returns a list of the environments for the specified application family.
 
@@ -446,7 +446,7 @@ Allows you to manage environment specific settings such as the environment's App
 ### Get Update Settings
 Returns the update settings for the environment.
 
-```[200] GET /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/settings/update```
+```[200] GET /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
 
 **Route Parameters:**
 
@@ -476,7 +476,7 @@ Returns the environment's update settings, or "null" if none exist
 ### Put Update Settings
 Sets the update window start and end times.
 
-```[200] PUT /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/settings/update```
+```[200] PUT /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade```
 
 **Route Parameters:**
 
@@ -521,7 +521,7 @@ Returns the updated settings
 ### Put AppInsights key
 Sets the key an environment uses for Azure AppInsights.
 
-```[202] PUT /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey```
+```[202] POST /admin/v2.0/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey```
 
 **Route Parameters:**
 
