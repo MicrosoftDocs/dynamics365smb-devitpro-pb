@@ -3,7 +3,7 @@ title: "Getting Started with AL"
 description: "Description of how to get started with the development environment"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/11/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,10 +40,27 @@ You now have a HelloWorld sample that compiles and runs. The JSON files in the p
 + Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
 + Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
 + Use **Ctrl+Shift+P** and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
++ In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System and Base Applications found in the project under `.alpackages`. For example:
+    ```
+    "dependencies": [
+        {
+        "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+        "publisher": "Microsoft",
+        "name": "System Application",
+        "version": "16.0.10037.0"
+        },
+                {
+        "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+        "publisher": "Microsoft",
+        "name": "Base Application",
+        "version": "16.0.10037.0"
+        }
+    ],
+    ```
 
 
 ## JSON file settings
-There are three JSON files in the project; the `app.json` file, the `launch.json` file and the `rad.json`. The files are automatically generated for your project. For more information, see [JSON files](devenv-json-files.md) and [Working with Rapid Application Development (RAD)](devenv-rad-publishing.md).
+There are three JSON files in the project; the `app.json` file, the `launch.json` file, and the `rad.json`. The files are automatically generated for your project. For more information, see [JSON files](devenv-json-files.md) and [Working with Rapid Application Development (RAD)](devenv-rad-publishing.md).
 
 ## AL configuration settings
 Use the AL configuration settings to specify general preferences for working with AL projects. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
