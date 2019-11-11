@@ -102,8 +102,7 @@ It is key that you use the same display name and email throughout your app submi
 - To enroll and sign in to the Collaborate tool and “Ready to Go” platform
 
 ## Access to Partner Center
-Partner Center is the single destination to manage your business relationship with Microsoft. 
-[Get Started by clicking this link](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv)
+Partner Center is the single destination to manage your business relationship with Microsoft. [Get Started by clicking this link](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv)
 
 > [!NOTE]  
 > This has replaced the Cloud Partner Portal. All AppSource apps have been migrated to Partner Center and you need to utilize Partner Center going forward.
@@ -113,9 +112,9 @@ Partner Center is the single destination to manage your business relationship wi
 ### Create your sandbox environment
 
 You have 3 options to work develop against the current version of Microsoft Dynamics 365 Business Central.
-- If your add-on is lightweight, it might be sufficient to use a [sandbox environment](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started) 
-- If you want to setup a Docker-based development environment on Azure, you can [use](https://aka.ms/BCSandboxAzure) 
-- If you want to setup a local Docker-based developer environment, you can download a PowerShell script available [here](https://aka.ms/BCSandboxLocal) 
+- If your add-on is lightweight, it might be sufficient to use a [sandbox environment](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started).
+- If you want to setup a Docker-based development environment on Azure, you can use [Business Central Azure Sandbox](https://aka.ms/BCSandboxAzure).
+- If you want to setup a local Docker-based developer environment, you can download a PowerShell script available [here](https://aka.ms/BCSandboxLocal).
 
 ## The “Ready to Go” program
 
@@ -157,15 +156,14 @@ As the final step, to complete registration, click ‘GO TO DASHBOARD’.
 - Please skip this part and move on to the next section called “Getting access to the available builds and engagements” to download packages through Microsoft Collaborate.
 
 If you DO want to add coworkers, please follow the 5 steps below:
-1.	Log on to Microsoft Collaborate with your Global Administrator account on [aka.ms/Collaborate](https://aka.ms/Collaborate).
+1. Log on to Microsoft Collaborate with your Global Administrator account on [aka.ms/Collaborate](https://aka.ms/Collaborate).
 2. Click on the ‘Gear’ Icon on the top right corner of the page and then on ‘Account Settings’ as shown on the image below.
 
 3. Click on ‘Users’ under ‘Settings’ in the grey panel on the left-hand side of the page. The following image will appear.
 
 4. Click the grey ‘ADD USERS’ button and leave the default choice to ‘Add existing users’ as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey ‘ADD SELECTED’ button (see image below).
 
-5. You have now successfully added your coworker to Collaborate. The added users will appear in your list of users and will now be able to log on to Microsoft Collaborate using the following link:
-[aka.ms/Collaborate](https://aka.ms/Collaborate)
+5. You have now successfully added your coworker to Collaborate. The added users will appear in your list of users and will now be able to log on to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 *Getting access to the available builds and engagements*
 
