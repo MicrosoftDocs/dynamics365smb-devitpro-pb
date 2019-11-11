@@ -13,7 +13,7 @@ ms.author: solsen
 ---
 
 # Getting Started with AL
-To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you will need a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross platform editor that you will use for coding and debugging.
+To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you will need a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you will use for coding and debugging.
 
 ## Steps to set up a sandbox environment and Visual Studio Code
 Go through the following steps to set up a sandbox environment. With this you get sample code that compiles and runs with just a few commands. 
@@ -28,7 +28,7 @@ Go through the following steps to set up a sandbox environment. With this you ge
 5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, choose the version to run, and then choose **Microsoft cloud sandbox**.  
     > [!NOTE]  
     > If you want to change your configuration at a later point in time, choose **Add Configuration** button on the right side, and then choose one of the available options.  
-6) Enter the credentials that you provided for the signup.
+6) Enter the credentials that you provided for the sign-up.
 7) Press **Ctrl+F5** to deploy and run the extension on your online sandbox tenant.  
 
 You now have a HelloWorld sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **Ctrl+F5** to build and deploy the solution.
