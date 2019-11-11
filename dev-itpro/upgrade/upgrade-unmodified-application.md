@@ -115,6 +115,16 @@ This task runs a technical upgrade on the application database to convert it fro
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
     -->
+
+    When completed, a message like the following displays in the console:
+
+    ```
+    DatabaseServer      : .\BCDEMO
+    DatabaseName        : Demo Database BC (14-0)
+    DatabaseCredentials :
+    DatabaseLocation    :
+    Collation           :
+    ```
 ## Task 4: Connect and configure the version 15 server instance to the application
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade and can be reverted after you complete the upgrade.
