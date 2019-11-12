@@ -1,1 +1,1 @@
-Microsoft Dynamics NAV Administration Shell
+Business Central Administration Shell
