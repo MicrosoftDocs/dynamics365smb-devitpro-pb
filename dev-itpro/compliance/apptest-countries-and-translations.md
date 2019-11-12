@@ -69,6 +69,7 @@ Due to the nature of the joint effort where Microsoft is providing the internati
 |-------|-------------|-------------|
 |Colombia|es-ES|2020 Wave 1|
 |Croatia|hr-HR|2020 Wave 1|
+|Czechia|cz-CZ|February 2020|
 |Hungary|hu-HU|2020 Wave 1|
 |Latvia|lv-LV|2020 Wave 1|
 |Slovenia|sl-SI|2020 Wave 1|
