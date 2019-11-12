@@ -287,7 +287,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
     To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
     ```
-    Mount-NAVTenant -ServerInstance <server instance name> -DatabaseName "<database name> -DatabaseServer <database server>\<database instance> -Tenant <tenant ID> -AllowAppDatabaseWrite
+    Mount-NAVTenant -ServerInstance <server instance name> -DatabaseName <database name> -DatabaseServer <database server>\<database instance> -Tenant <tenant ID> -AllowAppDatabaseWrite
     ```
     
     > [!IMPORTANT]
