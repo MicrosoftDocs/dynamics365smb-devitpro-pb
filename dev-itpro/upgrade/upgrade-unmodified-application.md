@@ -375,7 +375,6 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
     >  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the `Start-NavDataUpgrade` with the `-SkipCompanyIntitialization` parameter.
     -->
 2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
-    
 
 ## Task 9: Upgrade to the new versions of Microsoft extensions
 
@@ -386,7 +385,7 @@ Do the following steps for each extension, and for each tenant in a multitenant 
 1. Publish the extension.
 
     ```
-    Publish-NAVApp -ServerInstance <server instance name> -Path <path to extension package file> -SkipVerification
+    Publish-NAVApp -ServerInstance <server instance name> -Path <path to extension package file>
     ```
 
 2. Synchronize the tenant with the extension. 
@@ -399,6 +398,7 @@ Do the following steps for each extension, and for each tenant in a multitenant 
     ```
     Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "<extension name>" -Version <extension version>
     ```
+    This step will also automatically install the new extension version on the tenant.
 4. (Multitenant only) Repeat steps 2 and 3 for each tenant.
 
 
