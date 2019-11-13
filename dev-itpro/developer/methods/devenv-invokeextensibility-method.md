@@ -8,8 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 263b313f-935b-4eb9-b0d6-171f3b08f9c1
-caps.latest.revision: 8
 ---
 
 # InvokeExtensibilityMethod Method
@@ -28,7 +26,7 @@ Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_se
 |*callback*|Type: function<br /><br /> A function that is called when the extensibility method has finished execution on the server. This parameter is optional.|  
   
 > [!IMPORTANT]  
->  The callback function is useful for synchronizing multiple calls to the server. This is used, for example, when transferring multiple data blocks to the server to prevent overflowing the communication channel between the client and the server.  
+> The callback function is useful for synchronizing multiple calls to the server. This is used, for example, when transferring multiple data blocks to the server to prevent overflowing the communication channel between the client and the server.  
   
  **Callback Function Syntax**  
   
