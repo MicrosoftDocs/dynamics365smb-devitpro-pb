@@ -2,9 +2,9 @@
 title: "Profile Properties"
 description: "This topic lists properties that apply to profiles specifically."
 
-author: solsen
+author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/13/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,9 @@ The following topic lists properties that apply to [Profiles](../devenv-profile-
 - [ProfileDescription](devenv-profiledescription-property.md)  
 - [Enabled](devenv-enabled-profile-property.md)  
 - [Promoted](devenv-promoted-profile-property.md)
+- [RoleCenter](devenv-rolecenter-property.md)
+- [Customizations](devenv-customizations-property.md)
+- [Caption](devenv-caption-property.md)
 
 ## See also
 [Codeunit Properties](devenv-codeunit-properties.md)  
