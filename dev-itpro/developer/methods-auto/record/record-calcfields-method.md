@@ -41,6 +41,34 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+ FlowFields are virtual fields. The values in these fields are not saved in the table. This means that you must use either the **CalcFields** method or the [SetAutoCalcFields Method \(Record\)](record-SETAUTOCALCFIELDS-method.md) to update them. For example, if you retrieve a record using the [Find Method \(Record\)](record-FIND-method.md) and [Next Method \(Record\)](record-next-method.md), the FlowFields in those records are set to zero \(0\). Then, when you call **CalcFields**, their values are updated.  
+  
+ When a FlowField is a direct source expression on a page or a report, the calculation is performed automatically.  
+  
+ You can also use the **CalcFields** method to retrieve binary large objects \(BLOBs\). For more information, see [BLOB Data Type](../blob/BLOB-Data-Type.md).  
+  
+[!INCLUDE[prodlong](../../includes/prodlong.md)] automatically maintains a count for all SIFT indexes. Therefore, SumIndexField Technology (SIFT) is used by default when the calculation method for a FlowField is **Count** or **Average**.
+
+ You can prevent the SIFT indexes from being updated by setting the [MaintainSIFTIndex Property](../../properties/devenv-maintainsiftindex-property.md) of the index in the base table to **False**. Then [!INCLUDE[prodshort](../../includes/prodshort.md)] will traverse all records in the base table to perform the calculation instead of using SIFT. This can reduce the number of required SIFT indexes, which can improve performance. For more information, see [SIFT and Performance](../../devenv-sift-performance.md).
+ 
+ In [!INCLUDE[prodlong](../../includes/prodlong.md)], an index is not required to support a certain sorting, but sorting without an index could lead to bad performance if a search returns a large result set, which would then have to be sorted before the first row is returned.  
+  
+## Example  
+ This example shows how to use the **CalcFields** method to find the balance on December 31, 2008 and the net change for a customer in 2008.  
+  
+```  
+var
+    CustomerRec: Record Customer;
+begin
+    CustomerRec.SetRange("Date Filter",20080101D,20081231D);  
+    CustomerRec.CalcFields(Balance, "Net Change");  
+end;
+```  
+  
+ The first line sets up a filter for the Date Filter field in the Customer record. This field is a FlowFilter field which is used in the filter definition for several FlowFields in the Customer record. In the second line, the FlowFields are calculated.  
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
