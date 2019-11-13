@@ -78,3 +78,5 @@ Due to the nature of the joint effort where Microsoft is providing the internati
 
 [Rules and Guidelines for AL Code](apptest-overview.md)  
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
+[International availability of Microsoft Dynamics 365](/dynamics365/get-started/availability)  
+
