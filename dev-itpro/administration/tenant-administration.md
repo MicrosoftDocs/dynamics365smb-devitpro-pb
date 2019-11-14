@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 10/01/2019
+ms.date: 11/14/2019
 ms.author: edupont
 ---
 # Administration of Business Central Online
@@ -20,11 +20,29 @@ an administrator from the reselling partner company. Some of the tools are the s
 
 Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global admin** role in the Office 365 admin center. For more information, see [About admin roles](/office365/admin/add-users/about-admin-roles) in the Office 365 admin content.  
 
+### Administration in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+
 As the internal administrator, you can add users, grant permissions, set up integration to other products, and many other tasks right there in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Administration](/dynamics365/business-central/admin-setup-and-administration) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
 For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], where you can manage upgrade schedules and other tasks. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
-If the organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can then cancel the subscription. For more information, see [Unsubscribe, Remove, or Reset Business Central](/dynamics365/business-central/admin-cancel) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+### Administration of a trial
+
+If your organization has signed up for a [!INCLUDE [prodshort](../developer/includes/prodshort.md)] trial, you can extend the free trial, and you can start the process of finding a reselling partner to help you get a subscription. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview).  
+
+### Administration in the Office portal
+
+The **Global admin** role makes you an administrator of your organization's Office 365 tenant. This means that you can manage the subscription, add or remove users, and assign or remove licenses in the Office portal. For more information, see [Office 365 Admin help center](/office365/admin/admin-home).  
+
+### Unsubscribing from [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+
+If the organization decides not to continue with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can then cancel the subscription.  
+
+In the Office portal, you can remove licenses from users, but to cancel the subscription, you must contact your reselling partner. You must decide if you want to just remove [!INCLUDE [prodshort](../developer/includes/prodshort.md)] from your Office 365 subscription, or if you want to cancel your Office 365 subscription, including [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+
+Then, you can contact your reselling partner, and they can cancel the relevant subscriptions in the Partner Center.  
+
+For more information, see [Unsubscribe or Remove Business Central](/dynamics365/business-central/admin-cancel) in the business functionality content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
 
 ## Administration as a partner
 
@@ -66,7 +84,7 @@ However, sometimes 30 days is not quite enough to decide if they want to buy [!I
 If the prospect wants to extend the trial further than those 30 days, the partner can extend it another 30 days if the administrator, acting as the delegated administrator, log into the prospect's [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and extend the trial using the same **Extend Trial Period** guide. However, after those additional 30 days, the prospect must either purchase [!INCLUDE[prodshort](../developer/includes/prodshort.md)], or the partner can ask Microsoft for an additional extension of the trial by contacting Support.  
 
 > [!TIP]
-> As a reselling partner, you can suggest your prospects sign up for a trial, but you can also set up a customized demonstration environment based on a sandbox environment. This way, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Creating a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml).  
+> As a reselling partner, you can suggest your prospects sign up for a trial, but you can also help them set up a customized demonstration environment based on a sandbox environment. This way, you can easily add or remove functionality based on your prospects' expectations. For more information, see [Creating a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml).  
 
 ## See Also
 
