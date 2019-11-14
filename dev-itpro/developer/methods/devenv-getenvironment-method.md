@@ -7,10 +7,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 1f26922f-f83c-4065-a195-70cd3619b39c
-caps.latest.revision: 6
-manager: edupont
 ---
+
 # GetEnvironment Method
 Gets information about the environment that the control add-in is using.  
   
@@ -18,7 +16,7 @@ Gets information about the environment that the control add-in is using.
  `object Microsoft.Dynamics.NAV.GetEnvironment()`  
   
 ## Return Value  
- Returns an object that contains the following members:  
+Returns an object that contains the following members:  
   
 |Member|Description|  
 |------------|-----------------|  
@@ -31,7 +29,7 @@ Gets information about the environment that the control add-in is using.
 |UserInteractionMode|Type: Integer <br /><br />An integer indicating the user interaction mode that the control add-in is being rendered under. Possible values:<br /><br /> 0 - Mouse <br /><br /> 1 - Touch|  
   
 ## Example  
- This code example illustrates how you can assign members of the object return type to variables and use the **Busy** member to determine whether the client is busy or not.  
+This code example illustrates how you can assign members of the object return type to variables and use the **Busy** member to determine whether the client is busy or not.  
   
 ```  
 var environment = Microsoft.Dynamics.NAV.GetEnvironment();  

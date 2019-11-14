@@ -329,8 +329,9 @@
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
-### [AL Programming Guide](developer/devenv-programming-in-al.md)
-### [AL Simple Statements](developer/devenv-al-simple-statements.md)
+### [Programming in AL](developer/devenv-programming-in-al.md)
+### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
+### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
@@ -344,6 +345,11 @@
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### SumIndexField Technology (SIFT)
+#### [SIFT Overview](developer/devenv-sift-technology.md)
+#### [SIFT and SQL Server](developer/devenv-sift-and-sql-server.md)
+#### [SIFT Tuning and Tracing](developer/devenv-sift-tuning-and-tracing.md)
+#### [SIFT Performance](developer/devenv-sift-performance.md)
 ### [Number Sequences](developer/devenv-number-sequences.md)
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
 ### [Protected Variables](developer/devenv-protected-variables.md)

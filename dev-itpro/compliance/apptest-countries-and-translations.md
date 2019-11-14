@@ -69,12 +69,17 @@ Due to the nature of the joint effort where Microsoft is providing the internati
 |-------|-------------|-------------|
 |Colombia|es-ES|2020 Wave 1|
 |Croatia|hr-HR|2020 Wave 1|
+|Czechia|cz-CZ|February 2020|
 |Hungary|hu-HU|2020 Wave 1|
 |Latvia|lv-LV|2020 Wave 1|
 |Slovenia|sl-SI|2020 Wave 1|
 |Peru|es-ES|2020 Wave 1|
+|Philippines|en-US|November 2019|
+|Vietnam|en-US|November 2019|
 
 ## See Also
 
 [Rules and Guidelines for AL Code](apptest-overview.md)  
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
+[International availability of Microsoft Dynamics 365](/dynamics365/get-started/availability)  
+

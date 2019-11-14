@@ -115,6 +115,16 @@ This task runs a technical upgrade on the application database to convert it fro
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)"
     ```
     -->
+
+    When completed, a message like the following displays in the console:
+
+    ```
+    DatabaseServer      : .\BCDEMO
+    DatabaseName        : Demo Database BC (14-0)
+    DatabaseCredentials :
+    DatabaseLocation    :
+    Collation           :
+    ```
 ## Task 4: Connect and configure the version 15 server instance to the application
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade and can be reverted after you complete the upgrade.
@@ -277,7 +287,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
     To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
     ```
-    Mount-NAVTenant -ServerInstance <server instance name> -DatabaseName "<database name> -DatabaseServer <database server>\<database instance> -Tenant <tenant ID> -AllowAppDatabaseWrite
+    Mount-NAVTenant -ServerInstance <server instance name> -DatabaseName <database name> -DatabaseServer <database server>\<database instance> -Tenant <tenant ID> -AllowAppDatabaseWrite
     ```
     
     > [!IMPORTANT]
@@ -350,7 +360,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 ## Task 8: Upgrade the tenant data
 
-Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in application database and extensions.
+Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in by application and system application extensions.
 
 1. To run the data upgrade, use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
@@ -365,7 +375,6 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
     >  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the `Start-NavDataUpgrade` with the `-SkipCompanyIntitialization` parameter.
     -->
 2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
-    
 
 ## Task 9: Upgrade to the new versions of Microsoft extensions
 
@@ -376,7 +385,7 @@ Do the following steps for each extension, and for each tenant in a multitenant 
 1. Publish the extension.
 
     ```
-    Publish-NAVApp -ServerInstance <server instance name> -Path <path to extension package file> -SkipVerification
+    Publish-NAVApp -ServerInstance <server instance name> -Path <path to extension package file>
     ```
 
 2. Synchronize the tenant with the extension. 
@@ -389,6 +398,7 @@ Do the following steps for each extension, and for each tenant in a multitenant 
     ```
     Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "<extension name>" -Version <extension version>
     ```
+    This step will also automatically install the new extension version on the tenant.
 4. (Multitenant only) Repeat steps 2 and 3 for each tenant.
 
 

@@ -8,12 +8,10 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 1f2b2168-cf53-4859-98ec-99d170f05625
-caps.latest.revision: 8
 ---
 
 # GetImageResource Method
-Gets the URL for an image resource specified in the control add-in manifest. The image resource is stored in the NAV database as part of the .zip file for the control add-in and is exposed to the control add-in script running on the Microsoft Dynamics NAV client using the URL that this function returns.  
+Gets the URL for an image resource specified in the control add-in manifest. The image resource is stored in the database as part of the .zip file for the control add-in and is exposed to the control add-in script running on the Business Central client using the URL that this method returns.  
   
 ## Method Signature  
  `string Microsoft.Dynamics.NAV.GetImageResource(imageName)`  
@@ -41,6 +39,6 @@ var map = new VEMap('controlAddIn');
     pushpin.SetCustomIcon("<div><img src='" + imageUrl +"'/></div>");  
   
 ```  
-  
+
 ## See Also  
  [InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)
