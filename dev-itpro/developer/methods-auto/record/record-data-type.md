@@ -1,8 +1,8 @@
 ---
 title: "Record Data Type"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/14/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -98,7 +98,8 @@ The following methods are available on instances of the Record data type.
 |[TestField(Any, String)](record-testfield-joker-string-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Any)](record-testfield-joker-joker-method.md)|Tests whether the contents of a field match a given value.|
 |[FieldError(Any [, String])](record-fielderror-method.md)|Stops the execution of the code causing a run-time error, and creates an error message for a field.|
-|[TransferFields(var Record [, Boolean])](record-transferfields-method.md)|Copies all matching fields in one record to another record.|
+|[TransferFields(var Record [, Boolean])](record-transferfields-table-boolean-method.md)|Copies all matching fields in one record to another record.|
+|[TransferFields(var Record, Boolean, Boolean)](record-transferfields-table-boolean-boolean-method.md)|Copies all matching fields in one record to another record.|
 |[FieldName(Any)](record-fieldname-method.md)|Gets the name of a field as a string.|
 |[FieldCaption(Any)](record-fieldcaption-method.md)|Gets the current caption of the specified field as a string.|
 |[FieldActive(Any)](record-fieldactive-method.md)|Checks whether a field is enabled.|
