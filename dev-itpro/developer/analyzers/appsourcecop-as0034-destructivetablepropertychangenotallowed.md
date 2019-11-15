@@ -1,20 +1,20 @@
 ---
-title: "Property changes that cause destructive changes are not allowed."
-ms.author: solsen
+title: "Property changes that cause destructive changes are not allowed"
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/15/2019
+ms.date: 11/15/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0034
-Property changes that cause destructive changes are not allowed.  
+Property changes that cause destructive changes are not allowed  
 
 ## Description
 Destructive table properties that have been published should not be modified.
