@@ -1,17 +1,16 @@
 ---
 title: Environment Telemetry | Microsoft Docs
 description: Learn how the Business Central admin center provides telemetry for each environment.  
-author: jaredha
+author: edupont04
 
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 10/01/2019
-ms.author: jaredha
+ms.author: edupont
 ---
 
 # Environment Telemetry
