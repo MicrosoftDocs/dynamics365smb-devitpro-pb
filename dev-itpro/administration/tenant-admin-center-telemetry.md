@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/01/2019
+ms.date: 11/15/2019
 ms.author: edupont
 ---
 
@@ -28,7 +28,7 @@ To filter the telemetry for an environment:
 
 ## Sending telemetry to Microsoft Azure Application Insights (Preview)
 
-You can set up your environments to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. To read more about Application Insights, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
+You can set up your environments to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
 Currently, the only telemetry that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] emits to Application Insights pertains to long running SQL queries. We expect to add more telemetry in future updates.
 
@@ -42,9 +42,11 @@ Identifying long running SQL queries on a tenant database can be a good starting
 1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).
 2. Create an Application Insights resource in Azure.
 
-    The Application Insights resource will be assigned an instrumentation key. Copy this key because you will need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+    The Application Insights resource will be assigned an instrumentation key. Copy this key because you will need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
+    
+    The Application Insights instrumentation key can be in any Azure tenant that your organization has access to. For example, a delegated administrator from the reselling partner is the one analyzing the telemetry, and they might not have access to the customer's Azure instance. This scenario enables the partner to send the telemetry to their own Application Insights instance.
 
-    For more information, see [Create an Application Insights resource](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource).
+    For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
 3. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], on the **Environments** tab, select **Application Insights Key**.
 4. On the **Application Insights Key** page, enter the instrumentation key in the **Instrumentation Key** field.
