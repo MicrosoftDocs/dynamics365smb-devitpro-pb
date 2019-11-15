@@ -69,9 +69,9 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 > Several rules enforced by the AppSourceCop analyzer are incompatible with rules enforced by the PerTenantExtensionCop. Make sure to enable only one of these at a time.
 
 ## Configuration
-The AppSourceCop analyzer can be further configured by adding a file named ```AppSourceCop.json``` in the project's root folder. The AL Language extension will offer intellisense for this file.
+The AppSourceCop analyzer can be further configured by adding a file named `AppSourceCop.json` in the project's root folder. The AL Language extension will offer IntelliSense for this file.
 
-The following table describes the settings in the ```AppSourceCop.json``` file:
+The following table describes the settings in the `AppSourceCop.json` file:
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
@@ -80,15 +80,15 @@ The following table describes the settings in the ```AppSourceCop.json``` file:
 |version|Yes|The version of a previous version of this package with which you want to compare the current package for breaking changes.|
 |mandatoryAffixes|No|Affixes that must be prepended or appended to the name of all new application objects, extension objects, and fields.|
 
-The ```name```, ```publisher```, ```version``` properties are used for specifying a previous version of the current package. AppSourceCop will use this information to download the specified package from the server and compare the current package with it. AppSourceCop will report any breaking changes introduced by the current package.
+The `name`, `publisher`, `version` properties are used for specifying a previous version of the current package. AppSourceCop will use this information to download the specified package from the server and compare the current package with it. AppSourceCop will report any breaking changes introduced by the current package.
 
-The ```mandatoryAffixes``` property specifies strings that must be prepended or appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
+The `mandatoryAffixes` property specifies strings that must be prepended or appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
 
 ## Example
 In the following example, we will configure AppSourceCop to validate that all new elements have a name that contains one of the specified affixes.
 
 > [!NOTE]  
-> Make sure code analysis is enabled and ```${AppSourceCop}``` is in the list of enabled code analyzers.
+> Make sure that code analysis is enabled and `${AppSourceCop}` is in the list of enabled code analyzers.
 
 We start by creating the default "Hello world" extension.
 ```
@@ -103,7 +103,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 }
 ```
 
-We continue by adding the configuration file ```AppSourceCop.json``` in the project's root folder and setting its content to the following. 
+We continue by adding the configuration file `AppSourceCop.json` in the project's root folder and setting its content to the following. 
 
 ```
 {
@@ -119,7 +119,7 @@ AS0011: The identifier 'CustomerListExt' must have at least one of the mandatory
 Prepending **Foo** to the name of the page extension object will fix this error and prevent clashes between this page extension and page extensions added by other developers.
 
 > [!NOTE]  
-> It is still possible to use the ```mandatoryPrefix``` and ```mandatorySuffix``` properties in the ```AppSourceCop.json```, for more information see [AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md).
+> It is still possible to use the `mandatoryPrefix` and `mandatorySuffix` properties in the `AppSourceCop.json`. For more information see [AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md).
 
 ## See Also  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
