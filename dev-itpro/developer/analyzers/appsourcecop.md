@@ -100,7 +100,7 @@ The `mandatoryAffixes` property specifies strings that must be prepended or appe
 In the following example, we will configure AppSourceCop to validate that all new elements have a name that contains one of the specified affixes.
 
 > [!NOTE]  
-> Make sure that code analysis is enabled and `${AppSourceCop}` is in the list of enabled code analyzers.
+> Make sure that code analysis is enabled and `${AppSourceCop}` is specified in the list of enabled code analyzers. For more information see [AL Language Extension Configuration](../devenv-al-extension-configuration.md).
 
 We start by creating the default "Hello world" extension.
 ```
