@@ -1,23 +1,23 @@
 ---
-title: "An Argument in an event attribute cannot be changed to false."
-ms.author: solsen
+title: "An argument in an event attribute cannot be changed to false"
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/15/2019
+ms.date: 11/15/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0021
-An Argument in an event attribute cannot be changed to false.  
+An argument in an event attribute cannot be changed to false  
 
 ## Description
-An Argument in an event attribute cannot be changed to false.
+An argument in an event attribute cannot be changed to false.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

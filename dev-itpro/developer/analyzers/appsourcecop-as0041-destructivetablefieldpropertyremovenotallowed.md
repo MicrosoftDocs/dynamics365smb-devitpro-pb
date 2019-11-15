@@ -1,20 +1,20 @@
 ---
-title: "Table field property changes that cause destructive changes should not be removed."
-ms.author: solsen
+title: "Table field property changes that cause destructive changes should not be removed"
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/15/2019
+ms.date: 11/15/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0041
-Table field property changes that cause destructive changes should not be removed.  
+Table field property changes that cause destructive changes should not be removed  
 
 ## Description
 Table field property changes that cause destructive changes should not be removed.
