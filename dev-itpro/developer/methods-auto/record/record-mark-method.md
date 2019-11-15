@@ -1,8 +1,8 @@
 ---
 title: "Mark Method"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/14/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *Mark*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Marks a record. You can also use this method to determine whether a record is marked.  
+Specifies if a record is marked.  
 
 
 ## Return Value
