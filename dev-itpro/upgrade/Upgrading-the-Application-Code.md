@@ -208,7 +208,7 @@ After you have completed the merge, you import the new merged application object
 
     There are three ways to import the files:
 
-    - Use the [[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+    - Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
         For more information see [To import objects by using the development environment UI](../cside/cside-import-objects.md#ImportObjectsDevEnv).
     - Use the finsql.exe to run the [ImportObjects](https://docs.microsoft.com/en-us/dynamics-nav/importobjects) command.
