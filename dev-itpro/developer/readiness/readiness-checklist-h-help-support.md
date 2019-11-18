@@ -29,7 +29,7 @@ The help page needs to include online documentation that can be used as help.
 - Links to existing videos and documentation 
 - Links to the most frequently asked questions
 
-*Example of a help site that is set up according to our best practices:* [Open Door Technology’s help page](http://odtrentals365help.opendoorrentalsoftware.com/)
+*Example of a help site that is set up according to our best practices:* [Open Door Technology’s help page](https://odtrentals365help.opendoorrentalsoftware.com/)
 
 - Use the dropdown box to choose which countries your offer supports.
 

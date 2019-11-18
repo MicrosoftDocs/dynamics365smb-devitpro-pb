@@ -1,7 +1,7 @@
 ---
 title: "Deploying Business Central a Demonstration Environment"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,9 +56,9 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 
 -   [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components configuration:  
 
-    -   Service instance: NAVDEMO  
+    -   Service instance: BCDEMO  
 
-    -   Database: Demo Database NAV \(13-0\)  
+    -   Database: Demo Database BC (15-0)  
 
 -   NETWORK SERVICE account is used as the service account for [!INCLUDE[server](../developer/includes/server.md)] and database.  
 
@@ -86,19 +86,16 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 -   To open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from other devices on the network, open an Internet browser, and type the following URL in the address box:
 
     ```
-    http://ComputerName:8080/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]  
+    http://ComputerName:8080/BC150  
     ```
     Substitute **ComputerName** with the name of the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If you are working on the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)], then you can use **localhost**.  
 
     For example:
 
     ```
-    http://localhost:8080/BC130 
+    http://localhost:8080/BC150 
     ```
 
-> [!NOTE]  
->  If you get an error and the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] does not open, then see [Troubleshooting Web Server and Web Client Installation](https://docs.microsoft.com/en-us/dynamics-nav/troubleshooting-the-microsoft-dynamics-nav-web-client-installation) in the Dev and IT Pro help for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to try to resolve the problem.  
-
 ## See Also  
- [Business Central Web Server Overview](web-server-overview.md)   
+[Business Central Web Server Overview](web-server-overview.md)   
  

@@ -37,7 +37,7 @@ You can bring two types of offerings to Microsoft AppSource:
 - Individual Apps – where you bring your industry expertise to market.
 - Packaged Consulting Services – where you bring ready-made packaged engagements to market.  
  
-Find more information on which apps and Consulting Services are currently available on Microsoft AppSource [here](https://appsource.microsoft.com/en-us/marketplace/consulting-services?country=US&page=1).
+Find more information on which apps and Consulting Services are currently available on Microsoft AppSource [here](https://appsource.microsoft.com/marketplace/consulting-services?country=US&page=1).
 
 ## Getting started: find what is important to you 
 In order to inform you in the best possible way, we have organized the following content in categories based on what you want to bring to market.  

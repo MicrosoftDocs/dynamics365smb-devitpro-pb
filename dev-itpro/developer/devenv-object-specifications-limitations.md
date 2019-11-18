@@ -88,4 +88,4 @@ The following characteristics are based on maximum capacity specifications for S
   
 ## See Also  
  [Field Data Types](datatypes/devenv-field-data-types.md)   
- [Maximum Capacity Specifications for SQL Server](http://go.microsoft.com/fwlink/?LinkId=302003)
+ [Maximum Capacity Specifications for SQL Server](https://go.microsoft.com/fwlink/?LinkId=302003)

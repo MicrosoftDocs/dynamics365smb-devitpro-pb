@@ -13,7 +13,7 @@ author: freddydk
 ---
 
 # Working with Sandboxes and Entitlements
-The experience that a user has in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] depends on the purchased subscription plan. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two main plans; the Essential and the Premium plan, plus a few more. For more detailed information about the Essential and Premium plans, see [Business Central](https://dynamics.microsoft.com/en-us/business-central/overview/) on the Microsoft Dynamics 365 Marketing site. 
+The experience that a user has in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] depends on the purchased subscription plan. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two main plans; the Essential and the Premium plan, plus a few more. For more detailed information about the Essential and Premium plans, see [Business Central](https://dynamics.microsoft.com/business-central/overview/) on the Microsoft Dynamics 365 Marketing site. 
 
 When you develop in a Docker sandbox, the Essential experience is automatically assigned to you (you set the experience on the **Company Information** page), which makes it difficult to test how a user with the Premium plan assigned will experience what you have developed.
 <br>
@@ -38,13 +38,13 @@ To mimic users with a specific subscription plan assigned, you can set them up w
 |DELEGATEDADMIN|D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 BACKUP/RESTORE<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|D365 BASIC<br>D365 EXTENSION MGT<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>LOCAL<br>D365 BACKUP/RESTORE<br>TROUBLESHOOT TOOLS<br>D365 BASIC (non-default)<br>SECURITY (non-default)|
 
 > [!TIP]  
-> For more information about how to choose a user experience, see [Changing Which Features are Displayed](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features).
+> For more information about how to choose a user experience, see [Changing Which Features are Displayed](https://docs.microsoft.com/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features).
 
 ## Assigning the Premium plan to test users
 Depending on how you are running your Docker sandbox, you assign the experience in different ways.
 
 ### Azure VMs
-If you use [http://aka.ms/bcsandbox](http://aka.ms/bcsandbox) to create your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Sandbox Container Azure VM, the Azure Resource Manager template has two fields; **Assign Premium Plan** and **Create Test Users**, which by default are set to **Yes**.
+If you use [https://aka.ms/bcsandbox](https://aka.ms/bcsandbox) to create your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Sandbox Container Azure VM, the Azure Resource Manager template has two fields; **Assign Premium Plan** and **Create Test Users**, which by default are set to **Yes**.
 
 **Assign Premium Plan** specifies whether or not your admin user should be assigned a Premium plan. **Create Test Users** specifies whether or not you want the setup to include test users. 
 
@@ -96,4 +96,4 @@ This will assign the Premium plan to the admin user in the database.
 [Programming in AL](devenv-programming-in-al.md)  
 [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md)  
 [Container Sandbox](devenv-get-started-container-sandbox.md)  
-[Changing Which Features are Displayed](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features)
+[Changing Which Features are Displayed](https://docs.microsoft.com/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features)

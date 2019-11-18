@@ -11,9 +11,16 @@
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
 <!--Ready2Go-->
-## Ready to Go
-### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-### [Learning Catalog](developer/readiness/readiness-learning-catalog.md)
+## Training and Readiness
+### Learning Catalog
+#### [Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Business Decision Maker Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-decision-makers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Business User Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-bus-users?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Developer Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Functional Consultant Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-functional-consultants?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Pre-sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-presales?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Sales Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-sales?toc=/dynamics365/business-central/dev-itpro/toc.json)
+
 ### [Getting You Started with Building Apps](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 <!--AppSourcevalidation-->
 ## AppSource Validation
@@ -165,7 +172,7 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### Ready to Go
 #### [Getting Onboarded through Ready to Go](developer/readiness/readiness-ready-to-go.md)
-#### [The “Ready to Go” Online Learning Catalog](developer/readiness/readiness-learning-catalog.md)
+#### [The “Ready to Go” Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Add-On Apps - Getting You Started](developer/readiness/readiness-add-on-apps-getting-you-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
@@ -322,8 +329,9 @@
 ## [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
-### [AL Programming Guide](developer/devenv-programming-in-al.md)
-### [AL Simple Statements](developer/devenv-al-simple-statements.md)
+### [Programming in AL](developer/devenv-programming-in-al.md)
+### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
+### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
@@ -337,6 +345,11 @@
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### SumIndexField Technology (SIFT)
+#### [SIFT Overview](developer/devenv-sift-technology.md)
+#### [SIFT and SQL Server](developer/devenv-sift-and-sql-server.md)
+#### [SIFT Tuning and Tracing](developer/devenv-sift-tuning-and-tracing.md)
+#### [SIFT Performance](developer/devenv-sift-performance.md)
 ### [Number Sequences](developer/devenv-number-sequences.md)
 ### [Extensible Enums](developer/devenv-extensible-enums.md)
 ### [Protected Variables](developer/devenv-protected-variables.md)

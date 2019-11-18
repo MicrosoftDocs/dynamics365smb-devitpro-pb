@@ -30,7 +30,7 @@ ShortCutKey = 'Shift+Ctrl+D';
 ## Remarks  
 Pressing the key that you designate with this property provides the same result as selecting the action.  
 
-Some shortcut keys have default assignments. Do not reuse shortcut keys that are already assigned. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics 365 Business Central Web Client](https://docs.microsoft.com/en-us/dynamics365/business-central/keyboard-shortcuts). 
+Some shortcut keys have default assignments. Do not reuse shortcut keys that are already assigned. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics 365 Business Central Web Client](https://docs.microsoft.com/dynamics365/business-central/keyboard-shortcuts). 
 
 Note that the shortcut keys that you set with this property have precedence over the default shortcut keys of the web browser that you are using and that they will override their behavior.
   

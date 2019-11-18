@@ -31,7 +31,7 @@ When creating a name for your offer, you can use the following two naming struct
     *Example: Sales & Inventory Forecast*  
 
 > [!IMPORTANT]  
-> *If you are building a partner localized app (an app for a country where Microsoft has not provided a localization – see list of these [here](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations))*, you MUST provide an offer name with the structure “Feature” for “country / region” (for example “Sales and Inventory Forecast for Estonia”, “Tax Report for Serbia”) 
+> *If you are building a partner localized app (an app for a country where Microsoft has not provided a localization – see list of these [here](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations))*, you MUST provide an offer name with the structure “Feature” for “country / region” (for example “Sales and Inventory Forecast for Estonia”, “Tax Report for Serbia”) 
 
 | General requirements | Description | Requirements | 
 |----------------------|-------------|--------------|
@@ -74,7 +74,7 @@ How to create a good summary for your offer?
 - The summary should summarize the value proposition of your offer in one short and concise sentence.
 - The value proposition is a statement of the unique benefits your product delivers to the customer. 
 
-If you need help formulating a positioning statement, try the value proposition generator located [here.](http://neuralimpact.ca/valueproposition)
+If you need help formulating a positioning statement, try the value proposition generator located [here.](https://neuralimpact.ca/valueproposition)
 - Consider whether or not is relevant (or valuable) to include your offer name in the summary 
 - Don’t just state the offer name as an attempt to make it more memorable (names rarely give away any clues to the prospect about the value they will receive by starting to use your offer).
 

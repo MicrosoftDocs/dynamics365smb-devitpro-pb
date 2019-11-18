@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -28,7 +28,7 @@ The prefix of the attribute (if any).
         
 *NamespaceUri*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The URI of the attribute. If the prefix is xmlns, then this parameter must be http://www.w3.org/2000/xmlns/; otherwise an exception is thrown.  
+The URI of the attribute. If the prefix is xmlns, then this parameter must be https://www.w3.org/2000/xmlns/; otherwise an exception is thrown.  
 
 
 ## Return Value
