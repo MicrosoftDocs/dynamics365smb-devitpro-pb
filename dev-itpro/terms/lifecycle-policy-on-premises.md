@@ -33,7 +33,7 @@ Licensed customers must stay current with updates to the [!INCLUDE[prodlong](../
 
 [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) 2019 release wave 2 and newer updates are covered by the Modern Lifecycle Policy.  
 
-The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) software as indicated on the [Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on) page, but only if the customer keeps the deployed software current according to this policy. In keeping current you are getting all the latest feature and bug fixes.  
+The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (on-premises) software as indicated on the [Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/lifecycle/search?alpha=business%20central%20on) page, but only if the customer keeps the deployed software current according to this policy. In keeping current you are getting all the latest feature and bug fixes.  
 
 The following image illustrates the update schedule for [!INCLUDE [prodlong](../developer/includes/prodlong.md)].
 > [!div class="mx-imgBorder"]
@@ -47,7 +47,7 @@ The following image illustrates the update schedule for [!INCLUDE [prodlong](../
 
 ## See Also
 
-[Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/en-us/lifecycle/search?alpha=business%20central%20on)  
+[Microsoft Lifecycle Policy for Business Central on-premises](https://support.microsoft.com/lifecycle/search?alpha=business%20central%20on)  
 [Configuring Technical Support](../technical-support.md)  
 [Welcome to the Developer and IT-Pro Help for Dynamics 365 Business Central](../index.md)  
 [Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../upgrade/upgrading-to-business-central.md)  

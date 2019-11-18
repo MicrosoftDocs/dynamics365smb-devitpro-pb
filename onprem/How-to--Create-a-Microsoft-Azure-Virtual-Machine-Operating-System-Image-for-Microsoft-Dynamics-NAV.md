@@ -32,13 +32,13 @@ This topic describes how to create custom images in Microsoft Azure Gallery that
 
 #### To create a new Azure virtual machine  
 
-1.  Sign in to Azure at [http://azure.microsoft.com](http://go.microsoft.com/fwlink/?LinkID=285197).  
+1.  Sign in to Azure at [https://azure.microsoft.com](https://go.microsoft.com/fwlink/?LinkID=285197).  
 
-2.  Complete the instructions for creating a new virtual machine at [http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-tutorial](http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-tutorial).  
+2.  Complete the instructions for creating a new virtual machine at [https://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial).  
 
 3.  When the virtual machine has been created, establish a Remote Desktop connection to the virtual machine, and then run Windows Update and apply all recommended updates.  
 
-     To connect from the Azure management portal, under **Virtual Machines**, select the virtual machine, and then choose **Connect**. For more information, see [How to Log on to a Virtual Machine Running Windows Server](http://go.microsoft.com/fwlink/?LinkID=298930).  
+     To connect from the Azure management portal, under **Virtual Machines**, select the virtual machine, and then choose **Connect**. For more information, see [How to Log on to a Virtual Machine Running Windows Server](https://go.microsoft.com/fwlink/?LinkID=298930).  
 
 ##  <a name="InstallNET35"></a> Install Microsoft .NET Framework 3.5  
  If Microsoft .NET Framework is not installed on the image, the [!INCLUDE[navnow](includes/navnow_md.md)] Setup will install it automatically during deployment. However, by installing Microsoft .NET Framework 3.5 manually, you can decrease the installation time and eliminate potential installation problems.  
@@ -47,7 +47,7 @@ This topic describes how to create custom images in Microsoft Azure Gallery that
 
 1.  Establish a Remote Desktop Connection to the Azure virtual machine.  
 
-     From the Azure management portal, under **Virtual Machines**, choose the virtual machine from the list, and then choose **Connect**. For more information, see [How to Log on to a Virtual Machine Running Windows Server](http://go.microsoft.com/fwlink/?LinkID=298930).  
+     From the Azure management portal, under **Virtual Machines**, choose the virtual machine from the list, and then choose **Connect**. For more information, see [How to Log on to a Virtual Machine Running Windows Server](https://go.microsoft.com/fwlink/?LinkID=298930).  
 
 2.  Run Windows PowerShell as an Administrator.  
 
@@ -65,7 +65,7 @@ This topic describes how to create custom images in Microsoft Azure Gallery that
 > [!NOTE]  
 >  The following procedure illustrates how to use SysPrep to install a trial version of SQL Server.  
 >   
->  For more information about SQL Server 2012 installation using SysPrep and configuration file generation, see [Install SQL Server 2012 Using SysPrep](http://go.microsoft.com/fwlink/?LinkID=298932).  
+>  For more information about SQL Server 2012 installation using SysPrep and configuration file generation, see [Install SQL Server 2012 Using SysPrep](https://go.microsoft.com/fwlink/?LinkID=298932).  
 
 #### To install SQL Server  
 
@@ -74,7 +74,7 @@ This topic describes how to create custom images in Microsoft Azure Gallery that
     > [!NOTE]  
     >  From the Azure management portal, under **Virtual Machines**, choose the virtual machine from the list, and then choose **Connect**.  
 
-2.  Download SQL Server 2012 from [http://www.microsoft.com/sqlserver/en/us/get-sql-server/try-it.aspx](http://www.microsoft.com/sqlserver/en/us/get-sql-server/try-it.aspx).  
+2.  Download SQL Server 2012 from [https://www.microsoft.com/sqlserver/en/us/get-sql-server/try-it.aspx](https://www.microsoft.com/sqlserver/en/us/get-sql-server/try-it.aspx).  
 
     > [!NOTE]  
     >  By default, Windows Server 2012 is enabled with the Internet Explorer Enhanced Security Configuration feature. This might prevent you from downloading SQL Server 2012. If you encounter problems, disable the feature temporarily, and then enable it again after the download is finished. To enable or disable the feature, open **Server Manager**, and then set the **Internet Explorer Enhanced Security Configuration** option.  
@@ -89,7 +89,7 @@ This topic describes how to create custom images in Microsoft Azure Gallery that
 
 5.  Create a SQL SysPrep configuration file for running the SQL Server setup.exe file.  
 
-     You can use the example file that is described in [SQL Server Sysprep Installation Configuration File Example](SQL-Server-Sysprep-Installation-Configuration-File-Example.md) or follow the instructions at [Install SQL Server 2012 Using a Configuration File](http://msdn.microsoft.com/en-us/library/dd239405.aspx) to create your own file.  
+     You can use the example file that is described in [SQL Server Sysprep Installation Configuration File Example](SQL-Server-Sysprep-Installation-Configuration-File-Example.md) or follow the instructions at [Install SQL Server 2012 Using a Configuration File](https://msdn.microsoft.com/library/dd239405.aspx) to create your own file.  
 
      Name the file *ConfigurationFile.ini* and save it in the same location as the setup.exe file.  
 
@@ -128,7 +128,7 @@ This topic describes how to create custom images in Microsoft Azure Gallery that
 
 #### To capture the image and add it to the Azure Image Gallery  
 
--   For instructions about how to capture the image and add it to the Azure Image Gallery, see [How to Capture an Image of a Virtual Machine Running Windows Server](http://go.microsoft.com/fwlink/?LinkID=299670).  
+-   For instructions about how to capture the image and add it to the Azure Image Gallery, see [How to Capture an Image of a Virtual Machine Running Windows Server](https://go.microsoft.com/fwlink/?LinkID=299670).  
 
 ## .NET Framework Security  
- We recommend that the image adheres to the guidance that is provided on [Microsoft Solution Accelerators](http://go.microsoft.com/fwlink/?LinkID=294849).
+ We recommend that the image adheres to the guidance that is provided on [Microsoft Solution Accelerators](https://go.microsoft.com/fwlink/?LinkID=294849).

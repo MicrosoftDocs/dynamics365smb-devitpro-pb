@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Merging Application Objects using the Example Scripts
 The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media includes a folder with examples of how you can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to compare and merge application objects. In the **WindowsPowerShellScripts** folder on the product media, the **ApplicationMergeUtilities** folder contains [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] sample scripts and folders that contain demonstration data.  
@@ -35,6 +36,6 @@ Get-Help "NAV"
  For Help for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cmdlet, type `Get-Help <cmd name>`. For Help for the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE, press F1, or choose the Help menu, and then choose [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE Help.  
   
 ## See Also  
- [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)
+ [Business Central PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview)
  [Merge Application Changes](merge-application-changes.md)   
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)

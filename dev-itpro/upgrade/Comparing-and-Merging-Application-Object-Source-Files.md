@@ -83,4 +83,4 @@ When you create or modify application objects, you use the [!INCLUDE[nav_dev_lon
  [Compare and Update Application Object Source Files](compare-update-application-object-source-files.md)   
  [Handling Merge Conflicts](Handling-Merge-Conflicts.md)   
  [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md)      
- [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)
+ [Business Central PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview)

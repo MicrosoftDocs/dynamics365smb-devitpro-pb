@@ -72,7 +72,7 @@ To help you save time, we‘re sharing a list of the top 15 common pitfalls that
     Your app file must be digitally signed with a certificate from a third-party certification authority trusted by Windows.
 12. You tested your app on an obsolete [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version (or never even tested it)
 
-    Make sure that your app is properly tested on the correct version. For more information, see [Current Build - Developing for Dynamics 365 Business Central](https://partner.microsoft.com/en-us/dashboard/collaborate/packages/4756) on the Collaborate site.
+    Make sure that your app is properly tested on the correct version. For more information, see [Current Build - Developing for Dynamics 365 Business Central](https://partner.microsoft.com/dashboard/collaborate/packages/4756) on the Collaborate site.
 13. You tested using SUPER permissions
 
     You tested your app, but your user had SUPER permissions. This can hide critical errors. You must test with a user that doesn’t have the SUPER permissions. The user must have the ESSENTIAL license. For more information, see [Testing your Extension](apptest-testingyourextension.md).  

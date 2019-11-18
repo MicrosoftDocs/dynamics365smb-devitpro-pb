@@ -74,13 +74,13 @@ After publishing a web service, verify that the port that web service applicatio
 2. In the **Address** field, enter a URI in this format: 
 
     ```    
-    http://<Server>:<WebServicePort>/ServerInstance/ODataV4
+    https://<Server>:<WebServicePort>/ServerInstance/ODataV4
     ```  
 
     For example:
 
     ```  
-    http://localhost:7048/BC/ODataV4
+    https://localhost:7048/BC/ODataV4
     ```  
   
    - `Server`is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md.md)].  
@@ -89,11 +89,11 @@ After publishing a web service, verify that the port that web service applicatio
   
    - `ServiceInstance` is the name of the [!INCLUDE[server](../developer/includes/server.md.md)] instance for your solution. The default name is [!INCLUDE[server_instance](../developer/includes/serverinstance.md)].  
   
-      For example, if the [!INCLUDE[server](../developer/includes/server.md.md)] is running on the computer that you are working on, then you can use: **http://localhost:7048/DynamicsNAV/ODataV4/**  
+      For example, if the [!INCLUDE[server](../developer/includes/server.md.md)] is running on the computer that you are working on, then you can use: **https://localhost:7048/DynamicsNAV/ODataV4/**  
   
       The browser should now show the web service that you have published, in the following format <!-- of an AtomPub document.-->: 
 
-    {"@odata.context":"http://localhost:7048/BC150/ODataV4/$metadata","value":[{"name":"CustomerPriceAndLineDisc","kind":"EntitySet","url":"CustomerPriceAndLineDisc"}, 
+    {"@odata.context":"https://localhost:7048/BC150/ODataV4/$metadata","value":[{"name":"CustomerPriceAndLineDisc","kind":"EntitySet","url":"CustomerPriceAndLineDisc"}, 
   <!--
       ![Basic AtomPub document for a page](media/BasAtomPub.JPG "BasAtomPub")  -->
   
@@ -114,9 +114,9 @@ Next, you create a C\# console application in Visual Studio.
 2. On the **Configure Endpoint** page, you can either keep the **Service name** of **OData Service** or change it if you like. 
 2. In the **Address** field, enter the URI for your OData web service.
 
-    The endpoint has the format `http://<servercomputer>:<odataport>/<serverinstance>/ODataV4`, for example:
+    The endpoint has the format `https://<servercomputer>:<odataport>/<serverinstance>/ODataV4`, for example:
 
-    `http://localhost:7048/BC/ODataV4`
+    `https://localhost:7048/BC/ODataV4`
   
    > [!IMPORTANT]  
    > In this example, we use the HTTP protocol to illustrate the use of OData web services. We recommend that you use the more secure HTTPS protocol when you consume web services.
@@ -167,11 +167,11 @@ Next, you create a C\# console application in Visual Studio.
 3.  In the `Main` method, add the following code to establish the connection to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] through the web service:  
   
     ```  
-    NAV.NAV nav = new NAV.NAV(new Uri("http://localhost:7048/DynamicsNAV/ODataV4/Company('CRONUS%20International%20Ltd.')"));
+    NAV.NAV nav = new NAV.NAV(new Uri("https://localhost:7048/DynamicsNAV/ODataV4/Company('CRONUS%20International%20Ltd.')"));
     nav.Credentials = System.Net.CredentialCache.DefaultNetworkCredentials; 
     ```  
   
-    In the example, the name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that you modify data for is [!INCLUDE[demoname](../developer/includes/demoname_md.md)]. You must replace this with the name of the company that you have access to. To find the correct URI, you can paste the following URI into your browser and then see the exact URI that you must use: `http://localhost:7048/DynamicsNAV/OData/Company`.  
+    In the example, the name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that you modify data for is [!INCLUDE[demoname](../developer/includes/demoname_md.md)]. You must replace this with the name of the company that you have access to. To find the correct URI, you can paste the following URI into your browser and then see the exact URI that you must use: `https://localhost:7048/DynamicsNAV/OData/Company`.  
   
 4.  Add the following code to the `Main` method:  
   

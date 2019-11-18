@@ -58,4 +58,4 @@ manager: edupont
   
 ## See Also  
  [Provisioning the Microsoft Dynamics NAV Server Account](Provisioning-the-Microsoft-Dynamics-NAV-Server-Account.md)   
- [Corporate Customer Experience Improvement Program Client-to-Server Protocol Specification](http://go.microsoft.com/fwlink/?LinkId=260878)
+ [Corporate Customer Experience Improvement Program Client-to-Server Protocol Specification](https://go.microsoft.com/fwlink/?LinkId=260878)

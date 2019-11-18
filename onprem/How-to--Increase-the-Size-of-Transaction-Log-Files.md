@@ -15,7 +15,7 @@ manager: edupont
 You can expand your transaction log by increasing the size of one or more of its constituent files.  
   
 > [!NOTE]  
->  You must always make a backup of the database before you expand it. For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).  
+>  You must always make a backup of the database before you expand it. For more information, see [Create a Full Database Backup \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkID=296465).  
   
 ### To increase the size of a transaction log file  
   

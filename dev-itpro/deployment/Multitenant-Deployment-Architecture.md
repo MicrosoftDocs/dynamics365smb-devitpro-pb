@@ -68,16 +68,16 @@ caps.latest.revision: 13
  The URL can specify the tenant ID or the tenant host name if you specify host names as alternative IDs for tenants. For example, the following URL consumes the **Customer** ODATA web service for a specific tenant:  
   
 ```  
-http://localhost:7048/BC/OData/Company('CRONUS-International-Ltd.')/Customer?Tenant=Tenant1  
+https://localhost:7048/BC/OData/Company('CRONUS-International-Ltd.')/Customer?Tenant=Tenant1  
 ```  
   
  If the *mytenant.myservice.com* host name has been specified as an alternative ID for the tenant Tenant1, then the following URL returns the same ODATA web service:  
   
 ```  
-http://mytenant.myservice.com:7048/BC/OData/Company('CRONUS-International-Ltd.')/Customer  
+https://mytenant.myservice.com:7048/BC/OData/Company('CRONUS-International-Ltd.')/Customer  
 ```  
   
 ## See Also  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
- [Microsoft Dynamics 365 Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)   
+ [Microsoft Dynamics 365 Windows PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview)   
  [How to: Mount or Dismount a Tenant on a Microsoft Dynamics Server Instance](../administration/mount-dismount-tenant.md)

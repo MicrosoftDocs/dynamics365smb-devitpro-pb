@@ -27,7 +27,7 @@ To create an RDLC report layout, you use Visual Studio Report Designer.
   
      Visual Studio opens. The dataset in Visual Studio contains the dataset items that you added in Report Dataset Designer.  
   
-3.  Use Visual Studio Report Designer to add items from the dataset to the report and design the layout of the report. For more information, see [Defining a Report Layout \(Visual Studio Report Designer\)](http://go.microsoft.com/fwlink/?LinkID=133192).  
+3.  Use Visual Studio Report Designer to add items from the dataset to the report and design the layout of the report. For more information, see [Defining a Report Layout \(Visual Studio Report Designer\)](https://go.microsoft.com/fwlink/?LinkID=133192).  
   
 4.  In Visual Studio, on the **File** menu, choose **Save report.rdlc**, and then close Visual Studio.  
   

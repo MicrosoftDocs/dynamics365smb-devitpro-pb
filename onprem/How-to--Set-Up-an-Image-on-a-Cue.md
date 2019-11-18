@@ -34,7 +34,7 @@ When a field that defines the data in a cue has an integer data type, you can se
   
          If you do not want to include an image on the cue, then select **None**.  
   
-         To view all the available action images, see [Microsoft Dynamics NAV Icon Collection](http://go.microsoft.com/fwlink/?LinkID=394623).  
+         To view all the available action images, see [Microsoft Dynamics NAV Icon Collection](https://go.microsoft.com/fwlink/?LinkID=394623).  
   
 4.  Close the **Properties** window, and then save the page.  
   

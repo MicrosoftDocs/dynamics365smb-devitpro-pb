@@ -266,7 +266,7 @@ You can synchronize data, such as to-dos, contacts, and tasks, between [!INCLUDE
 
      Specify a Web service path in the **Web Service Path** text box:  
 
-     On premises \(default\): http://localhost:7047/DynamicsNAV71/WS/Codeunit/DynamicsNAVsynchOutlook  
+     On premises \(default\): https://localhost:7047/DynamicsNAV71/WS/Codeunit/DynamicsNAVsynchOutlook  
 
      -or-  
 

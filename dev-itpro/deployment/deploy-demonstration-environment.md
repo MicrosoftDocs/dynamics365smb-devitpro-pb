@@ -86,14 +86,14 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 -   To open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from other devices on the network, open an Internet browser, and type the following URL in the address box:
 
     ```
-    http://ComputerName:8080/BC150  
+    https://ComputerName:8080/BC150  
     ```
     Substitute **ComputerName** with the name of the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If you are working on the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)], then you can use **localhost**.  
 
     For example:
 
     ```
-    http://localhost:8080/BC150 
+    https://localhost:8080/BC150 
     ```
 
 ## See Also  

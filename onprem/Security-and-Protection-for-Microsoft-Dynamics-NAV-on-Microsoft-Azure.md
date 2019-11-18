@@ -37,7 +37,7 @@ This topic contains the following information and recommendations about the secu
 ### User Name and Passwords for the User Accounts  
  When you deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by using the example scripts, you specify the user name and passwords in the Set-PartnerSettings.ps1 file. The Set-PartnerSettings.ps1 file includes a user name parameter and password parameter for every user account. If you do not provide a value for a password parameter, then the [!INCLUDE[nav_prov_short](includes/nav_prov_short_md.md)] will automatically generate and assign a password to the account.  
   
- Like any computer, an Azure virtual machine is a potential object for a security attack. When you set the password, make sure that the password meets the Windows Server password complexity requirements. For more information, see [Passwords must meet complexity requirements](http://go.microsoft.com/fwlink/?LinkID=296611).  
+ Like any computer, an Azure virtual machine is a potential object for a security attack. When you set the password, make sure that the password meets the Windows Server password complexity requirements. For more information, see [Passwords must meet complexity requirements](https://go.microsoft.com/fwlink/?LinkID=296611).  
   
 ### Azure Virtual Machine Administrator Accounts  
  The [!INCLUDE[nav_prov_short](includes/nav_prov_short_md.md)] create new virtual machines on which [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components are installed. On each virtual machine, the [!INCLUDE[nav_prov_short](includes/nav_prov_short_md.md)] create a local Windows user account in the Administrator group. In the Set-PartnerSettings.ps1 file of the example scripts, you specify the user name and password for the virtual machine accounts by setting the following parameters:  
@@ -58,7 +58,7 @@ This topic contains the following information and recommendations about the secu
   
  If there is more than one [!INCLUDE[nav_server](includes/nav_server_md.md)] instance on the virtual machine, then you should create a separate service account for every instance.  
   
- You should control the resources, such as files and directories, on the virtual machines that the service accounts can access by configuring Access Control Lists \(ACLs\) for the resources. For more information, see [Access Control Lists](http://go.microsoft.com/fwlink/?LinkId=177398).  
+ You should control the resources, such as files and directories, on the virtual machines that the service accounts can access by configuring Access Control Lists \(ACLs\) for the resources. For more information, see [Access Control Lists](https://go.microsoft.com/fwlink/?LinkId=177398).  
   
 > [!NOTE]  
 >  The service account does not have to be a member of the Administrator group.  
@@ -93,7 +93,7 @@ This topic contains the following information and recommendations about the secu
 ###  <a name="RemoteDeskTop"></a> Remote Desktop \(RDP\)  
  The [!INCLUDE[nav_prov_short](includes/nav_prov_short_md.md)] enable Remote Desktop connections to virtual machines on Azure. We recommend that you limit scope of the IP addresses that have permission to establish a Remote Desktop connection to the virtual machine. To do this, modify the inbound rule that enables Remote Desktop connections \(RDP traffic\) in Windows Firewall of the virtual machine.  
   
- For more information, see [Remote Desktop Services and Windows Firewall](http://go.microsoft.com/fwlink/?LinkID=299451).  
+ For more information, see [Remote Desktop Services and Windows Firewall](https://go.microsoft.com/fwlink/?LinkID=299451).  
   
 ###  <a name="PSRemote"></a> Windows PowerShell Remoting  
  To deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by using the [!INCLUDE[nav_prov_short](includes/nav_prov_short_md.md)], Window PowerShell Remoting must be enabled on the Azure virtual machines. If you use an Azure Gallery image when you deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)], then Windows PowerShell Remoting is enabled by default. If you are using a custom image, then make sure that Windows PowerShell Remoting is enabled on the image. For more information, see [How to: Create a Microsoft Azure Virtual Machine Operating System Image for Microsoft Dynamics NAV](How-to--Create-a-Microsoft-Azure-Virtual-Machine-Operating-System-Image-for-Microsoft-Dynamics-NAV.md).  
@@ -106,7 +106,7 @@ This topic contains the following information and recommendations about the secu
  When you use the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] to develop [!INCLUDE[prodshort](../developer/includes/prodshort.md)] applications on Azure virtual machines, we recommended that you establish a Remote Desktop connection to the virtual machine, and then run the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] on the virtual machine. If you open ports in Windows Firewall on the SQL Server computer to enable access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database from a remote computer, then you introduce a potential security risk.  
   
 ##  <a name="CustomImage"></a> Custom Images for Azure Virtual Machines  
- The [!INCLUDE[nav_prov_short](includes/nav_prov_short_md.md)] example scripts create virtual machines based on a VHD image that you specify in the Set-PartnerSettings.ps1 file when you run the scripts. Instead of using an image from the Azure Marketplace, you can create a custom image. If you are using a custom image, then you should make sure that the image aligns with Microsoft solution accelerators. For more information, see [Microsoft Solution Accelerators](http://go.microsoft.com/fwlink/?LinkID=294849).  
+ The [!INCLUDE[nav_prov_short](includes/nav_prov_short_md.md)] example scripts create virtual machines based on a VHD image that you specify in the Set-PartnerSettings.ps1 file when you run the scripts. Instead of using an image from the Azure Marketplace, you can create a custom image. If you are using a custom image, then you should make sure that the image aligns with Microsoft solution accelerators. For more information, see [Microsoft Solution Accelerators](https://go.microsoft.com/fwlink/?LinkID=294849).  
   
  For more information about how to create an image, see [How to: Create a Microsoft Azure Virtual Machine Operating System Image for Microsoft Dynamics NAV](How-to--Create-a-Microsoft-Azure-Virtual-Machine-Operating-System-Image-for-Microsoft-Dynamics-NAV.md).  
   

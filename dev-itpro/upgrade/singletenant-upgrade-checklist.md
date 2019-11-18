@@ -29,7 +29,7 @@ This article provides an overview of the full upgrade process for Business Centr
 
 |Step|More info| Done |
 |----|-----------|--|
-|Backup the database.|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
+|Backup the database.|[See...](https://go.microsoft.com/fwlink/?LinkID=296465)||
 |Uninstall all extensions.|[See...](../developer/devenv-unpublish-and-uninstall-extension-v2.md)|
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 |Delete all objects except tables.<br /> **Important** Do not synchronize schema at this point.|[See...](upgrading-the-data.md#DeleteObjects)||
@@ -44,9 +44,9 @@ This article provides an overview of the full upgrade process for Business Centr
 |Import upgraded application and upgrade toolkit objects (.fob files).<br />**Important:** Select to synchronize **later**.|[See...](../cside/cside-import-objects.md)||
 |Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted  database.|[See...](../administration/connect-server-to-database.md)||
 |Compile all objects.<br />**Important:** Choose to synchronize schema **later**.|[See...](../cside/cside-compiling-objects.md)||
-|Increase the application version of the database,<br />**Note:** Dynamics NAV 2018 upgrade only|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication)|
+|Increase the application version of the database,<br />**Note:** Dynamics NAV 2018 upgrade only|[See...](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navapplication)|
 |Synchronize the database.|[See...](../administration/synchronize-tenant-database-and-application-database.md)||
-|Run the data upgrade.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade)||
+|Run the data upgrade.|[See...](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade)||
 |Update Javascipt control add-ins the data upgrade.|[See...](Converting-a-Database.md#JSaddins)||
 
 ## Publish, upgrade, and install extensions

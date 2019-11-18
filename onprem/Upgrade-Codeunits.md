@@ -25,7 +25,7 @@ A typical example of when to use an upgrade codeunit is when you remove a field 
 You implement upgrade codeunits when you make destructive changes to tables in [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)]. For more information about destructive changes, see [Handling Destructive Changes With Table Schema Synchronization](Synchronizing-Table-Schemas.md#HandlingDestChanges). After you have created an upgrade codeunit to handle table changes, you can use it when you upgrade data from an earlier version of [!INCLUDE[navnow](includes/navnow_md.md)] to the current version. A single upgrade codeunit will typically contain table schema synchronization instructions and data migration logic for multiple tables that have changed from one version of [!INCLUDE[navnow](includes/navnow_md.md)] to another.  
 
 > [!NOTE]  
->  For an example that explains how to create and implement upgrade codeunits, see the [!INCLUDE[navnow](includes/navnow_md.md)] Upgrade Demo Script document at [http://go.microsoft.com/fwlink/?LinkID=509977](http://go.microsoft.com/fwlink/?LinkID=509977). This document provides step-by-step instructions that support the concepts discussed in this topic.  
+>  For an example that explains how to create and implement upgrade codeunits, see the [!INCLUDE[navnow](includes/navnow_md.md)] Upgrade Demo Script document at [https://go.microsoft.com/fwlink/?LinkID=509977](https://go.microsoft.com/fwlink/?LinkID=509977). This document provides step-by-step instructions that support the concepts discussed in this topic.  
 
 ## Upgrade Codeunits Overview  
  An upgrade codeunit consists of three sections that are defined by specific function types:  

@@ -104,4 +104,4 @@ You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to comp
  [Handling Merge Conflicts](Handling-Merge-Conflicts.md)   
  [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md)   
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)  
- [Business Central PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview)
+ [Business Central PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview)

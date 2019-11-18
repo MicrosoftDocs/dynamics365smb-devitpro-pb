@@ -25,7 +25,7 @@ This topic provides an overview of how to configure user authentication with Sha
 |[!INCLUDE[nav_windows](includes/nav_windows_md.md)]|AccessControlService|Azure AD added to an Access Control service \(ACS\) namespace. **Important:**  The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] is currently not supported if the [!INCLUDE[navnow](includes/navnow_md.md)] deployment must be accessed by more than on Azure AD tenant.|  
   
 ### SharePoint On-Premise  
- When you want to deploy apps to SharePoint on-premises, you must configure the SharePoint sites first. For more information, see [Configure an environment for apps for SharePoint](http://go.microsoft.com/fwlink/?LinkId=324962) and [Plan for apps for SharePoint 2013](http://go.microsoft.com/fwlink/?LinkId=324963) on TechNet.  
+ When you want to deploy apps to SharePoint on-premises, you must configure the SharePoint sites first. For more information, see [Configure an environment for apps for SharePoint](https://go.microsoft.com/fwlink/?LinkId=324962) and [Plan for apps for SharePoint 2013](https://go.microsoft.com/fwlink/?LinkId=324963) on TechNet.  
   
  For SharePoint on-premises that must be accessible from the internet so that SharePoint and [!INCLUDE[navnow](includes/navnow_md.md)] are publicly accessible, the following [!INCLUDE[navnow](includes/navnow_md.md)] configurations are available:  
   

@@ -48,7 +48,7 @@ If your solution is configured for NavUserPassword or AccessControlService authe
     |To|See|  
     |--------|---------|  
     |Learn how to use the web access key in Excel PowerPivot|[Walkthrough: Viewing Page Data in Excel Using PowerPivot \(OData\)](Walkthrough--Viewing-Page-Data-in-Excel-Using-PowerPivot--OData.md)|  
-    |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](http://go.microsoft.com/fwlink/?LinkID=259554)|  
+    |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](https://go.microsoft.com/fwlink/?LinkID=259554)|  
   
 ## See Also  
  [Web Services Authentication](Web-Services-Authentication.md)   

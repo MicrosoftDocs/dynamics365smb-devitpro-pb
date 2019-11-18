@@ -14,7 +14,7 @@ manager: edupont
 # Connecting the Microsoft Dynamics NAV Clients over a Wide Area Network
 This topic contains information about how to implement a secure [!INCLUDE[nav_windows](includes/nav_windows_md.md)] connection to [!INCLUDE[nav_server](includes/nav_server_md.md)] over a wide area network \(WAN\). The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[nav_server](includes/nav_server_md.md)] computers can be in the same or separate Active Directory domains.  
   
- For additional information about hosting and WAN connections, see the [Microsoft Dynamics NAV Team Blog](http://go.microsoft.com/fwlink/?LinkId=205395) and search for the terms **hosting** and **performance**.  
+ For additional information about hosting and WAN connections, see the [Microsoft Dynamics NAV Team Blog](https://go.microsoft.com/fwlink/?LinkId=205395) and search for the terms **hosting** and **performance**.  
   
 ## Assumptions  
  The implementation that is used in these topics assumes the following:  
@@ -27,7 +27,7 @@ This topic contains information about how to implement a secure [!INCLUDE[nav_wi
   
 -   If the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or [!INCLUDE[nav_server](includes/nav_server_md.md)] is behind a firewall, then you must open a port to communicate with [!INCLUDE[nav_server](includes/nav_server_md.md)] on the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] computer and publish the port on the [!INCLUDE[nav_server](includes/nav_server_md.md)] computer. The default port number is 7046.  
   
--   The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[nav_server](includes/nav_server_md.md)] are configured as described in the [Walkthrough: Installing the Three Tiers on Three Computers](http://go.microsoft.com/fwlink/?LinkID=163660) topic in the MSDN Library.  
+-   The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[nav_server](includes/nav_server_md.md)] are configured as described in the [Walkthrough: Installing the Three Tiers on Three Computers](https://go.microsoft.com/fwlink/?LinkID=163660) topic in the MSDN Library.  
   
 ## Implementing the Windows Client  over a Wide Area Network  
  The implementation that is shown in these topics includes instructions for protecting your WAN connections with security certificates. We recommend that you do not implement remote access without security certificates.  

@@ -25,7 +25,7 @@ When you install the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], 
   
 -   The new web server instance has the same URL as other instances under the parent website, except that it includes the instance name that you specify with the New-NavWebServerInstance cmdlet.  
   
-     For example, the URL for the default [!INCLUDE[nav_web](includes/nav_web_md.md)] is http://MyNavWebServer:8080/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]/WebClient. The URL for the new [!INCLUDE[nav_web](includes/nav_web_md.md)] instance, which you name MyCompany, would be http://MyNavWebServer:8080/MyCompany/WebClient.  
+     For example, the URL for the default [!INCLUDE[nav_web](includes/nav_web_md.md)] is https://MyNavWebServer:8080/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]/WebClient. The URL for the new [!INCLUDE[nav_web](includes/nav_web_md.md)] instance, which you name MyCompany, would be https://MyNavWebServer:8080/MyCompany/WebClient.  
   
  You can run the cmdlet multiple times to create additional [!INCLUDE[navnow](includes/navnow_md.md)] web server instances on the server.  
   
@@ -53,7 +53,7 @@ When you install the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], 
     New-NAVWebServerInstance -WebServerInstance MyWebApp -Server NAVServer -ServerInstance NAVServerInstance  
     ```  
   
-    -   Change *MyWebApp* to the name that you want to give the virtual directory for the web server instance. This name will become part of the URL for the [!INCLUDE[nav_web](includes/nav_web_md.md)] application, for example, http://MyWebServer:8080/MyWebApp/WebClient.  
+    -   Change *MyWebApp* to the name that you want to give the virtual directory for the web server instance. This name will become part of the URL for the [!INCLUDE[nav_web](includes/nav_web_md.md)] application, for example, https://MyWebServer:8080/MyWebApp/WebClient.  
   
     -   Change *NAVServer* to the name of the computer that is running the [!INCLUDE[nav_server](includes/nav_server_md.md)] to which you want to connect.  
   

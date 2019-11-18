@@ -26,7 +26,7 @@ You can use the SystemService service in a SOAP web service application to retri
   
 4.  In Solution Explorer, right-click the **References** node in the project, and then choose **Add Service Reference**.  
   
-5.  In the **Add Service Reference** dialog box, choose the **Advanced** button, choose the **Add Web Reference** button, type or paste the URL that you used when checking the WSDL, such as `http://localhost:7047/BC130/WS/Services`, and then choose the green arrow to visit the URL.  
+5.  In the **Add Service Reference** dialog box, choose the **Advanced** button, choose the **Add Web Reference** button, type or paste the URL that you used when checking the WSDL, such as `https://localhost:7047/BC130/WS/Services`, and then choose the green arrow to visit the URL.  
   
 6.  When the **SystemService** service is displayed, choose **View Service**, wait for the service to be displayed, and then choose **Add Reference**. Rename the Web reference name from **localhost** to **NavSOAPService**.  
   

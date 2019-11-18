@@ -190,7 +190,7 @@ You can update custom report layouts by creating upgrade codeunits to handle cha
      Open [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] as an administrator. On the **Tools** menu, choose **Data Upgrade**, and then choose **Start** and follow the instructions.  
   
     > [!NOTE]  
-    >  You can also perform the data upgrade by running the [Start-NavDataUpgrade cmdlet](http://go.microsoft.com/fwlink/?LinkID=401404) from the [!INCLUDE[nav_shell](includes/nav_shell_md.md)].  
+    >  You can also perform the data upgrade by running the [Start-NavDataUpgrade cmdlet](https://go.microsoft.com/fwlink/?LinkID=401404) from the [!INCLUDE[nav_shell](includes/nav_shell_md.md)].  
   
 ## See Also  
  [Updating Report Layouts to Dataset Changes](Updating-Report-Layouts-to-Dataset-Changes.md)   

@@ -14,7 +14,7 @@ manager: edupont
 # How to: Set an Icon on an Action
 The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] includes images that you can use on actions in command bar menus and promoted actions on the ribbon.  
   
- You add images to page actions with Action Designer. To add an image to an action, you must provide the name of the image. To view all the available action images, see [Microsoft Dynamics NAV 2013 Icon Collection](http://go.microsoft.com/fwlink/?LinkID=394623).  
+ You add images to page actions with Action Designer. To add an image to an action, you must provide the name of the image. To view all the available action images, see [Microsoft Dynamics NAV 2013 Icon Collection](https://go.microsoft.com/fwlink/?LinkID=394623).  
   
  By default, the size of images is 16 pixels high by 16 pixels wide. For promoted actions, you can choose to display larger images that are 32 pixels high and 32 pixels wide.  
   

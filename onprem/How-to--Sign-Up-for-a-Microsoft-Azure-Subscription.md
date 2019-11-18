@@ -14,13 +14,13 @@ ms.author: jswymer
 # How to: Sign Up for a Microsoft Azure Subscription
 To gain access to the Microsoft Azure management portal, you must have an Azure subscription and a Microsoft account associated with that subscription. You use the Azure management portal when you configure [!INCLUDE[navnow](includes/navnow_md.md)] for use of Azure Active Directory \(Azure AD\) as authentication mechanism, or if you deploy [!INCLUDE[navnow](includes/navnow_md.md)] on Azure.  
 
- You will create one or more subscriptions for the Azure account. A subscription is a grouping of Azure services and applications, including the virtual machines. The subscription provides a way to control the access to and the use of the Azure subscribed service. In a situation where you will have multiple [!INCLUDE[navnow](includes/navnow_md.md)] deployments, you may decide to use a separate subscription for each deployment in order to track expenses related to each deployment. All of the [!INCLUDE[navnow](includes/navnow_md.md)] components for a single deployment must be deployed to the same subscription however. You can set up different administrators for each subscription as required. For more information, see [Overview of Subscription Management](http://go.microsoft.com/fwlink/?LinkID=317945).  
+ You will create one or more subscriptions for the Azure account. A subscription is a grouping of Azure services and applications, including the virtual machines. The subscription provides a way to control the access to and the use of the Azure subscribed service. In a situation where you will have multiple [!INCLUDE[navnow](includes/navnow_md.md)] deployments, you may decide to use a separate subscription for each deployment in order to track expenses related to each deployment. All of the [!INCLUDE[navnow](includes/navnow_md.md)] components for a single deployment must be deployed to the same subscription however. You can set up different administrators for each subscription as required. For more information, see [Overview of Subscription Management](https://go.microsoft.com/fwlink/?LinkID=317945).  
 
 ### To sign up for an Azure subscription  
 
-1.  On the [Microsoft Azure](http://go.microsoft.com/fwlink/?LinkID=285197) page, log in with a Microsoft account.  
+1.  On the [Microsoft Azure](https://go.microsoft.com/fwlink/?LinkID=285197) page, log in with a Microsoft account.  
 
-     For more information about Microsoft accounts, see the [What is a Microsoft account?](http://go.microsoft.com/fwlink/?LinkId=271494) page.  
+     For more information about Microsoft accounts, see the [What is a Microsoft account?](https://go.microsoft.com/fwlink/?LinkId=271494) page.  
 
 2.  Choose **Free Trial** and follow the instructions to create a new account. Alternatively, choose **Purchase Options** and then choose the agreement that suits your purpose.  
 
@@ -28,13 +28,13 @@ To gain access to the Microsoft Azure management portal, you must have an Azure 
 
 ### To create a subscription  
 
-1.  If you are not already signed on to the **Subscriptions** page of the Account Center, then visit the [Azure Account Management Portal](http://go.microsoft.com/fwlink/?LinkID=317944) page and choose **Account Center**.  
+1.  If you are not already signed on to the **Subscriptions** page of the Account Center, then visit the [Azure Account Management Portal](https://go.microsoft.com/fwlink/?LinkID=317944) page and choose **Account Center**.  
 
 2.  Choose **add a subscription**.  
 
 3.  On the **Add a Subscription** page, choose a subscription offer from the available list to create the subscription.  
 
- You can now use the [Azure management portal](http://manage.windowsazure.com) to manage Azure accounts, subscriptions, hosted services, virtual machines, storage accounts, databases, and more.  
+ You can now use the [Azure management portal](https://manage.windowsazure.com) to manage Azure accounts, subscriptions, hosted services, virtual machines, storage accounts, databases, and more.  
 
 ## See Also  
 [How to: Sign Up for a Microsoft Account](How-to--Sign-Up-for-a-Microsoft-Account.md)   

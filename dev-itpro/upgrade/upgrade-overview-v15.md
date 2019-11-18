@@ -89,7 +89,7 @@ For more information, see [Upgrade to the Microsoft Base Application](upgrade-fu
 
 ## New and changed application features
 
-There a several new and changed platform application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 release wave2 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2019 release wave 2](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-business-central/).
+There a several new and changed platform application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 release wave2 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/).
 
 To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
 

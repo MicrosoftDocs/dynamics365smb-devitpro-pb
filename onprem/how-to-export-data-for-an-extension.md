@@ -81,5 +81,5 @@ The data must be exported from [!INCLUDE[navnow](includes/navnow_md.md)] into fi
 [How to: Publish and Install an Extension](How-to--Publish-and-Install-an-Extension.md)   
 [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)  
 [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)  
-[Development Cmdlets for Microsoft Dynamics NAV](http://go.microsoft.com/fwlink/?LinkID=510540)
+[Development Cmdlets for Microsoft Dynamics NAV](https://go.microsoft.com/fwlink/?LinkID=510540)
 -->
