@@ -36,7 +36,7 @@ You can use the bank data conversion service from AMC to convert bank data from 
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Moved|The functionality has been moved to an extension. It now ships as the AMC Banking 365 Fundamentals extension, which can convert bank data to formats that are used by more than 600 banks worldwide. For more information, see [Using the AMC Banking 365 Fundamentals extension](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-extensions-amc-banking).|
+|Moved|The functionality has been moved to an extension. It now ships as the AMC Banking 365 Fundamentals extension, which can convert bank data to formats that are used by more than 600 banks worldwide. For more information, see [Using the AMC Banking 365 Fundamentals extension](https://docs.microsoft.com/dynamics365/business-central/ui-extensions-amc-banking).|
 
 ### The Windows Client
 You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Windows client that is installed on your computer. 
