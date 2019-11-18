@@ -7,10 +7,11 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Granting Permissions to Manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Databases in SQL Server
 
-Special permissions are required in SQL Server to create and manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, for example by using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] or [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)]. To grant these permissions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administrators, use [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms).  
+Special permissions are required in SQL Server to create and manage [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases, for example by using [!INCLUDE[adminshell](../developer/includes/adminshell.md)] or [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)]. To grant these permissions to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administrators, use [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-ssms).  
 
 ## Permissions for using and creating databases
   

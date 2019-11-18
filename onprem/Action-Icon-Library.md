@@ -17,7 +17,7 @@ The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] includes images that you
 ## Action Images  
  By default, an image’s size is 16 pixels high by 16 pixels wide. For promoted actions, the image size is 32 pixels high and 32 pixels wide.  
   
- To view all the available action images, see [Microsoft Dynamics NAV 2013 Icon Collection](http://go.microsoft.com/fwlink/?LinkID=394623)  
+ To view all the available action images, see [Microsoft Dynamics NAV 2013 Icon Collection](https://go.microsoft.com/fwlink/?LinkID=394623)  
   
 ## See Also  
  [How to: Set an Icon on an Action](How-to--Set-an-Icon-on-an-Action.md)   

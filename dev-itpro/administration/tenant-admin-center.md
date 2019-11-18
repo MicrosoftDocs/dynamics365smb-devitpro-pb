@@ -1,17 +1,16 @@
 ---
 title: Business Central Admin Center| Microsoft Docs
 description: Learn about how a VAR or an internal administrator can set update windows and other admin tasks.  
-author: jaredha
+author: edupont04
 
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 10/01/2019
-ms.author: jaredha
+ms.author: edupont
 
 ---
 # The Business Central Administration Center

@@ -16,9 +16,9 @@ You use a Microsoft account to sign in to the Microsoft Azure Management Portal 
 
 ### To obtain a Microsoft account  
 
--   Visit the [sign-up page](http://go.microsoft.com/fwlink/?LinkId=271493).  
+-   Visit the [sign-up page](https://go.microsoft.com/fwlink/?LinkId=271493).  
 
-     For more information about Microsoft accounts, see the [What is a Microsoft account?](http://go.microsoft.com/fwlink/?LinkId=271494).  
+     For more information about Microsoft accounts, see the [What is a Microsoft account?](https://go.microsoft.com/fwlink/?LinkId=271494).  
 
 ## See Also  
 [Authenticating Users with Microsoft Azure Access Control Service](Authenticating-Users-with-Microsoft-Azure-Access-Control-Service.md)   

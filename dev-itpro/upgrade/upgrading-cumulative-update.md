@@ -9,6 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 # Installing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Cumulative Update
 This article describes how to install a cumulative update for[!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. A cumulative update is a cumulative set of files that includes all hotfixes and regulatory features that have been released for Business Central.
@@ -45,7 +46,7 @@ To upgrade to the latest platform the database must be converted by using the Dy
 
 1. (Single-tenant deployment only) Uninstall all extensions. 
 
-    If the [!INCLUDE[server](../developer/includes/server.md)] is configured as a single-tenant instance, you must uninstall all extensions from tenant. For example, using the [Uninstall-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], you can run the following command:
+    If the [!INCLUDE[server](../developer/includes/server.md)] is configured as a single-tenant instance, you must uninstall all extensions from tenant. For example, using the [Uninstall-NAVApp cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], you can run the following command:
 
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
@@ -112,7 +113,7 @@ Make sure you synchronize the tenant after you delete the objects.
 
 You must increase the application version of the application database in order to perform a data upgrade. We recommend that you change to the application version to that of the cumulative update. You can get this version from the cumulative update release page. For more information, see [Version numbers in Business Central](../administration/version-numbers.md).  
 
-To set the application version, use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to set the application version as follows:
+To set the application version, use the [Set-NAVApplication](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to set the application version as follows:
 
 ```powershell
 Set-NAVApplication -ServerInstance <ServerInstanceName> -ApplicationVersion Major.CU.ApplicationBuild.Revision -Force
@@ -127,7 +128,7 @@ Set-NAVApplication -ServerInstance <ServerInstanceName> -ApplicationVersion Majo
 
 3. Run a data upgrade.
 
-    Run [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
+    Run [Start-NavDataUpgrade](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
     
     ```powershell
     Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -Tenant <TenantID>

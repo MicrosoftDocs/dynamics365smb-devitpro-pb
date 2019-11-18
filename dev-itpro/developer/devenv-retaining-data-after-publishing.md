@@ -24,7 +24,7 @@ The default value for `schemaUpdateMode` is set to the **Synchronize** mode, whi
      "type": "al",
      "request": "launch",
      "name": "your own server",
-     "server": "http://localhost",
+     "server": "https://localhost",
      "serverInstance": "Nav",
      "authentcation": "UserPassword", 
      "startupobjectId": 22,

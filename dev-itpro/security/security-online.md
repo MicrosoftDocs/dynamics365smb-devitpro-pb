@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 
 # Business Central Online Security 
@@ -31,12 +32,12 @@ Furthermore, Business Central Online uses encryption to help protect tenant data
 
 We recommend that you use encrypted network protocols to connect to the PowerBI server and Business Central web services. For more information, see the following articles:
 
-[Connect to Business Central with Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-nav) 
+[Connect to Business Central with Power BI](https://docs.microsoft.com/power-bi/service-connect-to-microsoft-dynamics-nav) 
 
 [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md) 
 
 ## See Also  
 
-[Microsoft Trust Center (what we do to make the service secure)](https://www.microsoft.com/en-us/trustcenter/security/default.aspx)  
+[Microsoft Trust Center (what we do to make the service secure)](https://www.microsoft.com/trustcenter/security/default.aspx)  
 [Microsoft Dynamics 365 Cloud Services Compliance](https://aka.ms/d365-compliance-list)  
 [Security and Protection](security-and-protection.md)  

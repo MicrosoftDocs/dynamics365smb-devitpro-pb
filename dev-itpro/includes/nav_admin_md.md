@@ -1,1 +1,0 @@
-Microsoft Dynamics NAV Server Administration tool

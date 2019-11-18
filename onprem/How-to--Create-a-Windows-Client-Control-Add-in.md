@@ -35,7 +35,7 @@ You develop [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-ins 
 
          By default, the path of the assembly is [!INCLUDE[navnow_install](includes/navnow_install_md.md)]\\RoleTailored Client. This reference is required for all control add-ins.  
 
-    -   [System.Windows.Forms](http://go.microsoft.com/fwlink/?LinkID=152505)  
+    -   [System.Windows.Forms](https://go.microsoft.com/fwlink/?LinkID=152505)  
 
          Contains classes for creating user interfaces for Windows-based applications.  
 
@@ -173,7 +173,7 @@ You develop [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-ins 
 ## Signing an Assembly That Contains a Control Add-in  
  To use an assembly that contains a control add-in with the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], it must be signed. Signing gives the assembly a *public token key*, which is a unique identity that is used to make sure that the control add-in runs code from a trusted assembly. When you register a control add-in in [!INCLUDE[nav_server](includes/nav_server_md.md)], you provide the public token key. At run time, the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] uses the public token key to load the appropriate control add-in.  
 
- Assemblies are signed with a key file that contains the public key token and an optional password. You can sign an assembly that contains a control add-in by creating a new key file or using an existing one. For more information about how to sign assemblies, see [How to: Sign Assemblies](http://go.microsoft.com/fwlink/?LinkID=151835&clcid=0x409) and [Strong-Name Signing for Managed Applications](http://go.microsoft.com/fwlink/?LinkID=150201&clcid=0x409).  
+ Assemblies are signed with a key file that contains the public key token and an optional password. You can sign an assembly that contains a control add-in by creating a new key file or using an existing one. For more information about how to sign assemblies, see [How to: Sign Assemblies](https://go.microsoft.com/fwlink/?LinkID=151835&clcid=0x409) and [Strong-Name Signing for Managed Applications](https://go.microsoft.com/fwlink/?LinkID=150201&clcid=0x409).  
 
 #### To sign the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] add-in assembly  
 

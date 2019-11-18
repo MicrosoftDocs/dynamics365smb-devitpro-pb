@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 The [!INCLUDE[admintool](../developer/includes/admintool.md)] is a Microsoft Management Console \(MMC\) snap-in for creating and managing [!INCLUDE[server](../developer/includes/server.md)] instances. 
 
 > [!TIP]  
->  You can also administrate your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment using [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Microsoft Dynamics 365 Windows PowerShell Cmdlets](https://docs.microsoft.com/en-us/powershell/business-central/overview).   
+>  You can also administrate your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment using [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Microsoft Dynamics 365 Windows PowerShell Cmdlets](https://docs.microsoft.com/powershell/business-central/overview).   
 
 ## Install the [!INCLUDE[admintool](../developer/includes/admintool.md)]
 
@@ -55,7 +55,7 @@ mmc
 # Connect to remote computers and multiple server instances
 You can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to connect to other computers on your network where [!INCLUDE[server](../developer/includes/server.md)] instances are installed, and then manage those instances.
 
-1. Configure the remote computers to receive Windows PowerShell remote commands by running the [Enable-PSRemoting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enable-psremoting) cmdlet on each computer.  
+1. Configure the remote computers to receive Windows PowerShell remote commands by running the [Enable-PSRemoting](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/enable-psremoting) cmdlet on each computer.  
 2. Next, you can start the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 3. If you want to connect to a single remote computer, you can start the [!INCLUDE[admintool](../developer/includes/admintool.md)] from the Start menu of your computer.
 4. If you want to connect to multiple remote computers, you must start the [!INCLUDE[admintool](../developer/includes/admintool.md)] from the **Run** program that you can access in the Start menu, 

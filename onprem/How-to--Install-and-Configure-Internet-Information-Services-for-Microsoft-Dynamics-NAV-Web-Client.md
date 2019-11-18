@@ -96,7 +96,7 @@ IIS must have the following features enabled:
 
 7.  Choose the **OK** button to complete the installation.  
 
-8.  To verify that the web server has been installed correctly, start your browser, and then type **http://localhost** in the address.  
+8.  To verify that the web server has been installed correctly, start your browser, and then type **https://localhost** in the address.  
 
      The default web site opens and should display an IIS 8 image.  
 
@@ -197,7 +197,7 @@ IIS must have the following features enabled:
 
 17. On the **Installation progress** page, confirm that your installation completed successfully, and then choose the **Close** button.  
 
-18. To verify that the web server has been installed correctly, start your browser, and then type **http://localhost** in the address.  
+18. To verify that the web server has been installed correctly, start your browser, and then type **https://localhost** in the address.  
 
      The default website opens and should display an IIS image. 
 

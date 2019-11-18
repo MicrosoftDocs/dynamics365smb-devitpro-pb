@@ -92,7 +92,7 @@ manager: edupont
  For more information about registering a control add-in, see [How to: Register a Windows Client Control Add-in](/dynamics-nav/How-to--Register-a-Windows-Client-Control-Add-in.md).  
   
 > [!TIP]  
->  You can also register the control add-in, import and manage the files by using the [New-NAVAddin cmdlet](http://go.microsoft.com/fwlink/?LinkID=521781), [Set-NAVAddin cmdlet](http://go.microsoft.com/fwlink/?LinkID=521784), [Get-NAVAddin](http://go.microsoft.com/fwlink/?LinkID=521782), or [Remove-NAVAddin](http://go.microsoft.com/fwlink/?LinkID=521783) cmdlets from the [!INCLUDE[nav_shell](includes/nav_shell_md.md)].  
+>  You can also register the control add-in, import and manage the files by using the [New-NAVAddin cmdlet](https://go.microsoft.com/fwlink/?LinkID=521781), [Set-NAVAddin cmdlet](https://go.microsoft.com/fwlink/?LinkID=521784), [Get-NAVAddin](https://go.microsoft.com/fwlink/?LinkID=521782), or [Remove-NAVAddin](https://go.microsoft.com/fwlink/?LinkID=521783) cmdlets from the [!INCLUDE[nav_shell](includes/nav_shell_md.md)].  
   
 ## See Also  
  [Installing and Configuring Windows Client Control Add-ins on Pages](Installing-and-Configuring-Windows-Client-Control-Add-ins-on-Pages.md)   

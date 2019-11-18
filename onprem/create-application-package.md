@@ -17,7 +17,7 @@ To complete the tasks in this article, you will need the following:
 
 -   The installation media (DVD) for the latest [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] version. 
 
-    Download the version from [Microsoft Collaborate](https://developer.microsoft.com/en-us/dashboard/collaborate/packages).
+    Download the version from [Microsoft Collaborate](https://developer.microsoft.com/dashboard/collaborate/packages).
 
 -   A [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] license.
 
@@ -28,16 +28,16 @@ To complete the tasks in this article, you will need the following:
     -   [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)]
 -    Microsoft SQL Server Management Studio installed.
 
-     You must use SQL Server Management Studio 2012 Service Pack 1 or later. To download the latest version, see [Download SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
+     You must use SQL Server Management Studio 2012 Service Pack 1 or later. To download the latest version, see [Download SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
 
 -   A Microsoft Dynamics Lifecycle Services (LCS) subscription.  
 
-    You will use LCS to upload your solution for deployment. To get a subscription, follow the step in [Sign up for a preview subscription](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription).
+    You will use LCS to upload your solution for deployment. To get a subscription, follow the step in [Sign up for a preview subscription](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 
 ## Upgrade your application
 1. Complete a technical upgrade of your current application to the [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] version.
 
-    This will convert your application database so that is runs on the new [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] platform. For more information, see [Converting a Database - Technical Upgrade](https://docs.microsoft.com/en-us/dynamics-nav/converting-a-database).
+    This will convert your application database so that is runs on the new [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] platform. For more information, see [Converting a Database - Technical Upgrade](https://docs.microsoft.com/dynamics-nav/converting-a-database).
 
     > [!IMPORTANT]  
     >  Be sure to upload your [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] to converted database.
@@ -48,7 +48,7 @@ To complete the tasks in this article, you will need the following:
 
     You only have to complete this step if you want any new application features that are part of the latest [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] version.
     
-    For more information, see [Upgrading the Application Code in Dynamics NAV](https://docs.microsoft.com/en-us/dynamics-nav/upgrading-the-application-code).
+    For more information, see [Upgrading the Application Code in Dynamics NAV](https://docs.microsoft.com/dynamics-nav/upgrading-the-application-code).
 
 3. Complete the following steps as needed:
     
@@ -120,7 +120,7 @@ When you deploy your application online, you must provide a compressed .zip file
     You can use any name for the .bacpac file. 
 4.  Repeat steps 2 and 3 for the other database.
 
-    For more information about exporting databases to .bacpac format, see [Export a Data-tier Application](https://msdn.microsoft.com/en-us/library/Hh213241.aspx).
+    For more information about exporting databases to .bacpac format, see [Export a Data-tier Application](https://msdn.microsoft.com/library/Hh213241.aspx).
 
 5. Create a single ZIP (compressed) file that contains the application and tenant database BACPAC files.
 

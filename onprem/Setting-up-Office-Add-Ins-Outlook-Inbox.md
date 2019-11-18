@@ -45,7 +45,7 @@ If your organization uses Exchange Server or Exchange Online (alone or part of O
 		[Using Certificates to Secure a Remote Client Connection](Using-Certificates-to-Secure-a-Remote-Client-Connection.md)
 2.	Exchange prerequisites
 	
-	If you are using Exchange Server, configure it to allow access to Exchange Web Services (EWS). For more information, see [How to: Control access to EWS in Exchange](https://msdn.microsoft.com/en-us/library/office/dn467892(v=exchg.150).aspx). 
+	If you are using Exchange Server, configure it to allow access to Exchange Web Services (EWS). For more information, see [How to: Control access to EWS in Exchange](https://msdn.microsoft.com/library/office/dn467892(v=exchg.150).aspx). 
 
 ## Configure the [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance to work with the Office Add-ins
 
@@ -90,7 +90,7 @@ If [!INCLUDE[navnow](includes/navnow_md.md)] is configured for NavUserPassword o
 
 Exchange Web Services (EWS) and Autodiscover will try to find the local Exchange Server:
 -	If EWS is not set up, you will receive an error message.
--	If Autodiscover cannot find the Exchange Server, you are prompted for an Exchange administrator email and password, and the local Exchange PowerShell endpoint. The Exchange PowerShell endpoint is a URI that has the format ```http://<ExchangeMailboxServer>/PowerShell```.  ```<ExchangeMailboxServer>``` is the fully qualified domian name of the Exchange Server, such as ```http://mail.cronus.com/PowerShell```. 
+-	If Autodiscover cannot find the Exchange Server, you are prompted for an Exchange administrator email and password, and the local Exchange PowerShell endpoint. The Exchange PowerShell endpoint is a URI that has the format ```https://<ExchangeMailboxServer>/PowerShell```.  ```<ExchangeMailboxServer>``` is the fully qualified domian name of the Exchange Server, such as ```https://mail.cronus.com/PowerShell```. 
 
   
 ## See Also  

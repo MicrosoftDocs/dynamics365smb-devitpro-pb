@@ -69,7 +69,7 @@ We recommend that you secure [!INCLUDE[navnow](includes/navnow_md.md)] data that
 7.  Choose the **OK** button, and then choose the **Close** button.  
   
 ##  <a name="Redirect"></a> Redirecting HTTP to HTTPS \(Optional\)  
- To ensure that users always access the site that is secured with SSL, you can automatically redirect HTTP requests to HTTPS. This means that users do not have to explicitly include https in the URL in the browser. For example, the nonsecure URL of the [!INCLUDE[nav_web](includes/nav_web_md.md)] could be http://MyWebclient:8080/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)] and the secure URL could be https://MyWebclient:443/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]. If a user types http://MyWebclient:8080/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)], the browser automatically redirects to **https://MyWebclient:443/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]**.  
+ To ensure that users always access the site that is secured with SSL, you can automatically redirect HTTP requests to HTTPS. This means that users do not have to explicitly include https in the URL in the browser. For example, the nonsecure URL of the [!INCLUDE[nav_web](includes/nav_web_md.md)] could be https://MyWebclient:8080/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)] and the secure URL could be https://MyWebclient:443/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]. If a user types https://MyWebclient:8080/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)], the browser automatically redirects to **https://MyWebclient:443/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]**.  
   
  There are different ways to redirect HTTP requests to HTTPS. The following procedure describes how to redirect HTTP requests to HTTPS by installing the Microsoft Application Request Routing for IIS 7 and modifying the web.config file for the [!INCLUDE[nav_web](includes/nav_web_md.md)].  
   
@@ -77,9 +77,9 @@ We recommend that you secure [!INCLUDE[navnow](includes/navnow_md.md)] data that
   
 1.  Download and install Microsoft Application Request Routing for IIS. You can use one of the following links:  
   
-    -   [Microsoft Application Request Routing Version 2 for IIS 7 \(x64\)](http://go.microsoft.com/fwlink/?LinkID=265360)  
+    -   [Microsoft Application Request Routing Version 2 for IIS 7 \(x64\)](https://go.microsoft.com/fwlink/?LinkID=265360)  
   
-    -   [Microsoft Application Request Routing Version 2 for IIS 7 \(x86\)](http://go.microsoft.com/fwlink/?LinkID=265361)  
+    -   [Microsoft Application Request Routing Version 2 for IIS 7 \(x86\)](https://go.microsoft.com/fwlink/?LinkID=265361)  
   
 2.  On the computer that is running [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], open the web.config file for the web server instance for [!INCLUDE[nav_web](includes/nav_web_md.md)]. Use a text editor, such as Notepad.  
   
