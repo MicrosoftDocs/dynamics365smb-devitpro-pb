@@ -13,13 +13,20 @@ caps.latest.revision: 16
 ---
 
 # Deprecated Features in W1
-This topic describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This information will probably change with future releases, and might not include each deprecated feature.
+This topic describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This information will change with future releases, and might not include each deprecated feature.
 
 > [!NOTE]
 > The features in this topic are deprecated in Business Central 2019 release wave 2.
 
-## What Do Moved, Removed, or Replaced Mean?
-Deprecated features will not be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. There are many reasons for deprecating features. For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed in this topic, either the feature itself or an extension of it, you should look for or develop an alternative. 
+Deprecated features will not be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which can happen for a variety of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions?--> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed in this topic, either the feature itself or an extension of it, you should look for or develop an alternative. 
+
+The next sections in this topic give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by "moved, removed, or replaced."
+
+|State  |Examples  |
+|---------|---------|
+|Moved     |The capability has been moved from local functionality to W1 because it was no longer specific to one or more country versions. The capability was combined with other, related functionality, to eliminate redundancy.|
+|Removed| The capability will be removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a coming release.|
+|Replaced  |Something better has become available, and will be used instead.|
 
 ## Deprecated Features in 2019 release wave 2
 The following sections describe the features that were deprecated in 2019 release wave 2.
@@ -29,11 +36,20 @@ You can use the bank data conversion service from AMC to convert bank data from 
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Moved|The functionality is shipped as the AMC Banking 365 Fundamentals extension, which can convert bank data to formats that are used by more than 600 banks worldwide. For more information, see [Using the AMC Banking 365 Fundamentals extension](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-extensions-amc-banking).|
+|Moved|The functionality has been moved to an extension. It now ships as the AMC Banking 365 Fundamentals extension, which can convert bank data to formats that are used by more than 600 banks worldwide. For more information, see [Using the AMC Banking 365 Fundamentals extension](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-extensions-amc-banking).|
 
-## The Windows Client
+### The Windows Client
 You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Windows client that is installed on your computer. 
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
 |Removed| [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is steadily moving toward being an online offering only, and a step in that direction is to use a browser-based user interface. |
+
+## Objects that have been marked as obsolete
+Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. <!--should probably mention the other tags too.-->
+
+### Breaking Changes
+When we move, remove, or replace an object, breaking changes can result in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document that lists known issues and suggestions for what to do about them.
+
+## See Also
+[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)
