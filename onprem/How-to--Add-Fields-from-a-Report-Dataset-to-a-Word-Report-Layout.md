@@ -21,7 +21,7 @@ A report dataset can consist of fields that display labels, data, and images. Th
   
 2.  Show the **Developer** tab in the ribbon of Word.  
   
-     By default, the **Developer** tab is not shown in the ribbon. For more information, see [How to: Show the Developer Tab on the Ribbon](http://go.microsoft.com/fwlink/?LinkID=389631).  
+     By default, the **Developer** tab is not shown in the ribbon. For more information, see [How to: Show the Developer Tab on the Ribbon](https://go.microsoft.com/fwlink/?LinkID=389631).  
   
 3.  On the **Developer** tab, choose **XML Mapping Pane**.  
   

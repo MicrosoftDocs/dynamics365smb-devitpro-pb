@@ -146,7 +146,7 @@ After you create an interface in Visual Studio that exposes a number of properti
         </Resources>
 
         <ScriptUrls>
-            <ScriptUrl>http://www.bing.com/api/maps/mapcontrol</ScriptUrl>
+            <ScriptUrl>https://www.bing.com/api/maps/mapcontrol</ScriptUrl>
         </ScriptUrls>
     
         <Script>

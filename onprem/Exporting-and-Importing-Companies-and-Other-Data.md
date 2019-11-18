@@ -52,7 +52,7 @@ You can export a company from a [!INCLUDE[navnow](includes/navnow_md.md)] databa
 >  Also, we recommend that you do not import an application into a database that users are accessing. A new application often defines a new database schema that changes the structure of the business data.  
   
 ### Windows PowerShell Cmdlets  
- You can import and export data in the [!INCLUDE[nav_shell](includes/nav_shell_md.md)]. The following table describes the available Windows PowerShell cmdlets. For more information, see [Administration Cmdlets for Microsoft Dynamics NAV](http://go.microsoft.com/fwlink/?LinkID=296818).  
+ You can import and export data in the [!INCLUDE[nav_shell](includes/nav_shell_md.md)]. The following table describes the available Windows PowerShell cmdlets. For more information, see [Administration Cmdlets for Microsoft Dynamics NAV](https://go.microsoft.com/fwlink/?LinkID=296818).  
   
 |Name|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
 |----------|---------------------------------------|  

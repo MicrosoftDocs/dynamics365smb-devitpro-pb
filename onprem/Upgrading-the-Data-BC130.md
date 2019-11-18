@@ -84,7 +84,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
 Create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
-For more information, see [Create a Full Database Backup \(SQL Server\)](http://msdn.microsoft.com/library/ms187510.aspx).  
+For more information, see [Create a Full Database Backup \(SQL Server\)](https://msdn.microsoft.com/library/ms187510.aspx).  
 
 ## Task 2 Uninstall all extensions in old database
  

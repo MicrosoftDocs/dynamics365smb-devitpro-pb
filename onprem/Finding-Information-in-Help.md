@@ -50,7 +50,7 @@ There are several ways to access Help information in [!INCLUDE[navnow](includes/
  For more information, see [Configuring Microsoft Dynamics NAV Help Server](Configuring-Microsoft-Dynamics-NAV-Help-Server.md).  
 
 ## MSDN  
- The latest version of the [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Developer and IT Pro Help is available in the [MSDN Library](http://go.microsoft.com/fwlink/?LinkId=262374).  
+ The latest version of the [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Developer and IT Pro Help is available in the [MSDN Library](https://go.microsoft.com/fwlink/?LinkId=262374).  
 
 ## See Also  
  [Getting Started](Getting-Started.md)   

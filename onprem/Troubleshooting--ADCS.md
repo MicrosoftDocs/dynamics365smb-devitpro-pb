@@ -35,7 +35,7 @@ This topic lists some common problems that can occur when you use Automated Data
   
  To resolve this error, check that you have specified the correct code page in your configuration file. You may want to update the **codePage** attribute.  
   
- For more information, see [How to: Configure ADCS Options](How-to--Configure-ADCS-Options.md). For a list of code pages, see [Code Page Identifiers](http://go.microsoft.com/fwlink/?LinkId=262203).  
+ For more information, see [How to: Configure ADCS Options](How-to--Configure-ADCS-Options.md). For a list of code pages, see [Code Page Identifiers](https://go.microsoft.com/fwlink/?LinkId=262203).  
   
 ## Performance considerations  
  Depending on the load on your system, you may encounter performance issues.  

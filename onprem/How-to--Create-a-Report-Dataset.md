@@ -25,7 +25,7 @@ A dataset determines the data that displays on a generated report. You build the
   
 3.  In Report Dataset Designer, the first line contains **DataItem** in the **Data Type** column. In the **Data Source** column, either enter a table name or table number, or choose the Assist button to select a table from the table list.  
   
-4.  In the **Name** field of the **DataItem** line, either enter a name or verify the default name. The name must be a Common Language Specification \(CLS\)–compliant name. For more information, see the "Naming" section in [Common Language Specification](http://go.microsoft.com/fwlink/?LinkId=193144) in the MSDN Library.  
+4.  In the **Name** field of the **DataItem** line, either enter a name or verify the default name. The name must be a Common Language Specification \(CLS\)–compliant name. For more information, see the "Naming" section in [Common Language Specification](https://go.microsoft.com/fwlink/?LinkId=193144) in the MSDN Library.  
   
 5.  In Report Dataset Designer, on the first blank line, in the **Data Type** column, select **Column** from the drop-down list.  
   

@@ -38,9 +38,9 @@ Developers planning to create [!INCLUDE[dyn_nav](../developer/includes/dyn_nav_m
   
  Whereas SOAP web services expose a WSDL document, OData web services expose an EDMX document containing metadata for all published web services.  
   
- OData is supported in PowerPivot, a data-analysis add-in to Microsoft Excel that provides enhanced Business Intelligence capabilities. PowerPivot supports sharing and collaboration on user-generated business intelligence solutions in a Microsoft SharePoint Server environment. For more information about PowerPivot, see [http://www.powerpivot.com/](http://go.microsoft.com/fwlink/?LinkID=262183).  
+ OData is supported in PowerPivot, a data-analysis add-in to Microsoft Excel that provides enhanced Business Intelligence capabilities. PowerPivot supports sharing and collaboration on user-generated business intelligence solutions in a Microsoft SharePoint Server environment. For more information about PowerPivot, see [https://www.powerpivot.com/](https://go.microsoft.com/fwlink/?LinkID=262183).  
   
- The extensions to the Atom Publishing Protocol defined in the AtomPub extensions to the OData protocol documentation \(which you can download [here](http://go.microsoft.com/fwlink/?LinkID=262184)\) describe how REST-based data services can enable resources, identified using URIs and defined in an abstract data model \(EDM\), to be published and edited by web clients within corporate networks and across the Internet using simple HTTP messages.  
+ The extensions to the Atom Publishing Protocol defined in the AtomPub extensions to the OData protocol documentation \(which you can download [here](https://go.microsoft.com/fwlink/?LinkID=262184)\) describe how REST-based data services can enable resources, identified using URIs and defined in an abstract data model \(EDM\), to be published and edited by web clients within corporate networks and across the Internet using simple HTTP messages.  
   
 In addition to the AtomPub format, the OData implementation in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] also supports the JSON format, a somewhat less verbose format that may perform better in low-bandwidth environments.  
 
@@ -74,7 +74,7 @@ For SOAP services, you can also use extension codeunits to extend the default se
  For example, the following URL consumes the **Customer** ODATA web service for a specific tenant:  
 
 ```  
-http://localhost:7048/BC130/OData/Company('CRONUS-International-Ltd.')/Customer?Tenant=Tenant1  
+https://localhost:7048/BC130/OData/Company('CRONUS-International-Ltd.')/Customer?Tenant=Tenant1  
 ```  
 For more information, see [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md).  
 

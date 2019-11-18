@@ -34,7 +34,7 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
 
 #### Create the connection user  
 
--   For more information about how to create users in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [http://go.microsoft.com/fwlink/?LinkID=616518](http://go.microsoft.com/fwlink/?LinkID=616518).  
+-   For more information about how to create users in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [https://go.microsoft.com/fwlink/?LinkID=616518](https://go.microsoft.com/fwlink/?LinkID=616518).  
 
 ##  <a name="InstallNavSolution"></a> Install the Business Central Integration Solution
   
@@ -51,11 +51,11 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
 
      This step adds the **Business Central Connection** entity and **Business Central Account Statistics** entity in the system and additional items such as Business Central integration security roles.  
 
-     For more information about how to manage solutions in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], [http://go.microsoft.com/fwlink/?LinkID=616519](http://go.microsoft.com/fwlink/?LinkID=616519).  
+     For more information about how to manage solutions in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], [https://go.microsoft.com/fwlink/?LinkID=616519](https://go.microsoft.com/fwlink/?LinkID=616519).  
 
 3.  (Optional) Set up the **Business Central Connection** entity to display in the **Settings** area of [!INCLUDE[crm_md](../developer/includes/crm_md.md)].  
 
-     This enables [!INCLUDE[crm_md](../developer/includes/crm_md.md)] users who are assigned the **Business Central Admin** role to modify the entity in [!INCLUDE[crm_md](../developer/includes/crm_md.md)]. For more information about how to modify entities in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [http://go.microsoft.com/fwlink/?LinkID=616521](http://go.microsoft.com/fwlink/?LinkID=616521).  
+     This enables [!INCLUDE[crm_md](../developer/includes/crm_md.md)] users who are assigned the **Business Central Admin** role to modify the entity in [!INCLUDE[crm_md](../developer/includes/crm_md.md)]. For more information about how to modify entities in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [https://go.microsoft.com/fwlink/?LinkID=616521](https://go.microsoft.com/fwlink/?LinkID=616521).  
 
 4.  Assign the **Business Central Integration Administrator** role to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connection user.  
 

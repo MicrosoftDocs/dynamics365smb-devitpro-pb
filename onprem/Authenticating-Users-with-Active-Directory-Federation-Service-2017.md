@@ -120,7 +120,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 4. Repeat steps 1 to 3 to add another rule, except this time, set the **Claim rule name** to ```objectidentifier```, the **Incoming claim type** to ```Primary SID```, and the **Outgoing claim type** to:
 
     ```
-    http://schemas.microsoft.com/identity/claims/objectidentifier
+    https://schemas.microsoft.com/identity/claims/objectidentifier
     ```
 
     Choose **OK** when done.
@@ -138,12 +138,12 @@ JWT tokens are not supported by AD FS 2.0 or [!INCLUDE[navcrete_md](includes/nav
 3. Set the **Claim rule name** to ```name```, and the  **Custom rule** to:
 
     ```
-    c:[Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"] => issue(Type = "unique_name", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
+    c:[Type == "https://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"] => issue(Type = "unique_name", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
 4. Repeat steps 1 to 3 to add another custom rule, and set the **Claim rule name** to ```objectidentifier```, and the **Custom rule** to:
 
     ```
-    c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
+    c:[Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
 5.  Close the **Edit Claim Rules** dialog box.
     ![AD FS Edit Claims Rule Done](media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")

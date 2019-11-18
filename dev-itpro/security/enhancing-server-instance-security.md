@@ -20,7 +20,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] is configured with a log
 The default configuration is for the service to log on using the NT Authority\\Network Service account. If [!INCLUDE[server](../developer/includes/server.md)] and SQL Server are on different computers, then we recommend that you configure [!INCLUDE[server](../developer/includes/server.md)] to log on using a dedicated Windows domain user account instead. This account should not be an administrator either in the domain or on any local computer. A dedicated domain user account is considered more secure because no other services and therefore no other users have permissions for this account.  
   
 ## Disk quotas  
- Client users can send files to be stored on [!INCLUDE[server](../developer/includes/server.md)], so we recommend that administrators set up disk quotas on all computers running [!INCLUDE[server](../developer/includes/server.md)]. This can prevent users from uploading too many files, which can make the server unstable. Disk quotas track and control disk space usage for NTFS volumes, which allows administrators to control the amount of data that each user can store on a specific NTFS volume. For more information about disk quotas, see the [Disk Quotas Technical Reference](http://go.microsoft.com/fwlink/?LinkId=119641) on Microsoft TechNet.  
+ Client users can send files to be stored on [!INCLUDE[server](../developer/includes/server.md)], so we recommend that administrators set up disk quotas on all computers running [!INCLUDE[server](../developer/includes/server.md)]. This can prevent users from uploading too many files, which can make the server unstable. Disk quotas track and control disk space usage for NTFS volumes, which allows administrators to control the amount of data that each user can store on a specific NTFS volume. For more information about disk quotas, see the [Disk Quotas Technical Reference](https://go.microsoft.com/fwlink/?LinkId=119641) on Microsoft TechNet.  
   
 ## Limiting port access
   
@@ -39,4 +39,4 @@ When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are runn
 ## See Also  
  [Configuring Business Central Server](../administration/configure-server-instance.md)   
  [Security and Protection](security-and-protection.md)   
- [How to Use the Netsh.exe Tool and Command-Line Switches](http://go.microsoft.com/fwlink/?LinkId=166310)
+ [How to Use the Netsh.exe Tool and Command-Line Switches](https://go.microsoft.com/fwlink/?LinkId=166310)

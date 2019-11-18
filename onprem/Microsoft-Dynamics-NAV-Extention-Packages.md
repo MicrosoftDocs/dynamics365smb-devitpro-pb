@@ -31,7 +31,7 @@ New-NAVAppManifest -Name ‘My Extension’ -Publisher ‘Proseware’ -Version 
 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
-<Package xmlns="http://schemas.microsoft.com/navx/2015/manifest">  
+<Package xmlns="https://schemas.microsoft.com/navx/2015/manifest">  
 <App Id="6147E5EF-197E-43CF-B4A2-168AAE537A0B"  
 Name="Microsoft Dynamics NAV Customer Loyalty"  
 Publisher="Microsoft Corporation"  

@@ -31,9 +31,9 @@ caps.latest.revision: 16
 ##  <a name="DataModel"></a> Design the Data Model  
  After you understand the problem that you want your application to solve, you must design the structure of the database for your application. For more information about how to design the data model, see the following topics:  
 
--   [Designing Databases \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkId=240055)  
+-   [Designing Databases \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkId=240055)  
 
--   [Database Basics \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkId=240053)  
+-   [Database Basics \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkId=240053)  
 
 ##  <a name="InstallTools"></a> Install the Development Tools  
 
@@ -79,7 +79,7 @@ caps.latest.revision: 16
 ### Follow the Microsoft Dynamics NAV User Experience Guidelines  
  The [!INCLUDE[navnow](includes/navnow_md.md)] User Experience guidelines can help you develop high quality and consistent applications. The guidelines provide answers to specific user experience issues, such as determining which page type to use or which components to include on a page. You can use the guidelines to design new application or improve existing ones.  
 
- For more information, see [Microsoft Dynamics NAV User Experience Guidelines](http://go.microsoft.com/fwlink/?LinkID=317424) in the MSDN Library.  
+ For more information, see [Microsoft Dynamics NAV User Experience Guidelines](https://go.microsoft.com/fwlink/?LinkID=317424) in the MSDN Library.  
 
 ##  <a name="Users"></a> Create Users and Grant Permissions to Objects  
  Like the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], you restrict access to [!INCLUDE[navnow](includes/navnow_md.md)] data by creating users in [!INCLUDE[navnow](includes/navnow_md.md)] and applying permission sets that grant access to [!INCLUDE[navnow](includes/navnow_md.md)] objects, such as pages and reports. You do not have to create separate user accounts for the [!INCLUDE[nav_web](includes/nav_web_md.md)] and [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. The same permission sets are applied to the user in both clients.  

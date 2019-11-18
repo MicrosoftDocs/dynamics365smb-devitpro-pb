@@ -23,14 +23,14 @@ Carefully planning the details of your database application will help to ensure 
 3.  Designing the application.  
 
 ### Understanding the Problem  
- First, you must understand the business problem that you want your application to solve. You may want to know who will be using the application and what they will be trying to accomplish. For more information about gathering information and using that information to plan your design, see [Developing a Database Plan \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkId=240052).  
+ First, you must understand the business problem that you want your application to solve. You may want to know who will be using the application and what they will be trying to accomplish. For more information about gathering information and using that information to plan your design, see [Developing a Database Plan \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkId=240052).  
 
 ### Designing the Data Model  
  After you understand the problem that you want your application to solve, you must design the structure of the database for your application. For more information about how to design the data model, see the following topics:  
 
--   [Designing Databases \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkId=240055)  
+-   [Designing Databases \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkId=240055)  
 
--   [Database Basics \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkId=240053)  
+-   [Database Basics \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkId=240053)  
 
  One consideration when you design your data model is data integrity. Enforcing data integrity guarantees the quality of the data in the database. You must consider how to define and enforce the following:  
 
@@ -44,7 +44,7 @@ Carefully planning the details of your database application will help to ensure 
 
 For more information about data integrity, see the following topics:  
 
--   [Data Integrity \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkId=240057)  
+-   [Data Integrity \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkId=240057)  
 
 -   [Table Keys](Table-Keys.md)  
 

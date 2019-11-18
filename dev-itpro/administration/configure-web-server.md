@@ -136,7 +136,7 @@ The following table describes the settings that are available in the navsettings
 |BaseHelpUrl|Specifies the link to the online Help library that the deployment uses, such as *https://mysite.com/{0}/mylibrary/*.<br /><br /> Default value: none<br /><br />For more information, see [Configuring the Help Experience](../deployment/configure-help.md). |
 |BlogLink|Specifies the target of the **blog** link on the **Help & Support** page. Use this link to give users access to your end-user blog. <br /><br />Value: a valid URL<br />Default value: https://go.microsoft.com/fwlink/?linkid=2076643|
 |ComingSoonLink|Specifies the target of **coming soon** link on the **Help & Support** page. Use this link to give users access to information about your roadmap or any upcoming features and fixes.<br /><br />Value: A valid URL.<br /> Default value: [https://go.microsoft.com/fwlink/?linkid=2047422](https://go.microsoft.com/fwlink/?linkid=2047422)|
-|CommunityLink|Specifies the URL to a community or resource for sharing information. <br /><br />Value: a valid URL <br />Default value: http://go.microsoft.com/fwlink/?LinkId=287089|
+|CommunityLink|Specifies the URL to a community or resource for sharing information. <br /><br />Value: a valid URL <br />Default value: https://go.microsoft.com/fwlink/?LinkId=287089|
 |ContactSalesLink|Specifies the target of the contact sales link on the **Help & Support** page. Use this link to give users access to your sales-focused web page where users can engage with your sales process. **Note** This setting and link are not used for Business Central on-premises.|
 |SigninHelpLink|Specifies the URL to open if the user selects help on the sign in page box. <br /><br />Value: a valid URL<br />Default value: none|
 
@@ -150,8 +150,8 @@ The following table describes the settings that are available in the navsettings
 |IosThirdPartyNotice||
 |FeedbackLink|Specifies the URL to a feedback system for gathering end-user feedback about the application. |
 |KeyboardShortcutsLink|Specifies the URL to an article that describes the keyboard shortcuts for the application.<br /><br />Default value: https://go.microsoft.com/fwlink/?linkid=2064754|
-|LegalLink|Specifies the URL to the legal information about application. <br /><br />Default value: http://go.microsoft.com/fwlink/?LinkId=843026|
-|PrivacyLink|Specifies the URL to the privacy information for the application. This link also appears in the sign-in page.<br /><br />Default value: http://go.microsoft.com/fwlink/?LinkId=837448|
+|LegalLink|Specifies the URL to the legal information about application. <br /><br />Default value: https://go.microsoft.com/fwlink/?LinkId=843026|
+|PrivacyLink|Specifies the URL to the privacy information for the application. This link also appears in the sign-in page.<br /><br />Default value: https://go.microsoft.com/fwlink/?LinkId=837448|
 -->
 
 ## See Also  

@@ -19,13 +19,13 @@ You can open a specific report in the [!INCLUDE[nav_web](includes/nav_web_md.md)
  The following address displays report 5 Receivables – Payables for the [!INCLUDE[demoname](includes/demoname_md.md)] company. The page is displayed in a [!INCLUDE[nav_web](includes/nav_web_md.md)] that is running on port 8080 of a computer that has the name MyWebServer.  
   
 ```  
-http://MyWebServer:8080/nav_server_instance/?report=5&company=CRONUS%20International%20Ltd.   
+https://MyWebServer:8080/nav_server_instance/?report=5&company=CRONUS%20International%20Ltd.   
 ```  
 
 Or for [!INCLUDE[nav2017](includes/nav2017.md)] and earlier versions:
 
 ```  
-http://MyWebServer:8080/nav_server_instance/WebClient/default.aspx?report=5&company=CRONUS%20International%20Ltd.   
+https://MyWebServer:8080/nav_server_instance/WebClient/default.aspx?report=5&company=CRONUS%20International%20Ltd.   
 ```  
   
  There are several parameters that define the URL for the report. These parameters are described in the [URL Parameters](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Paramters) section of this topic.  

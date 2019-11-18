@@ -19,7 +19,7 @@ You can use filter expressions in OData URIs to limit the results that are retur
  To add a filter to an OData URI, add `$filter=` to the end of the name of the published web service. For example, the following URI filters the **City** field in the **Customer** page to return all customers who are located in Miami:  
 
 ```  
-http://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
+https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
 ```  
 
  The following table shows the filters that are supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData web services and the equivalent AL filter expressions. All examples are based either on page 21, Customer \(published as **Customer**\), or on page 20, General Ledger Entry \(published as **GLEntry**\).  
@@ -58,7 +58,7 @@ http://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer?
 
 - Numeric values require no delimiters.  
 
-For more information about data types and other information about conventions and standards for OData URIs, see [Atom Publishing Protocol: URI Conventions](http://go.microsoft.com/fwlink/?LinkId=214635). Conventions for data types are addressed in section 2.2.2, "Abstract Type System."  
+For more information about data types and other information about conventions and standards for OData URIs, see [Atom Publishing Protocol: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=214635). Conventions for data types are addressed in section 2.2.2, "Abstract Type System."  
 
 ## See Also  
  [OData Web Services](OData-Web-Services.md)

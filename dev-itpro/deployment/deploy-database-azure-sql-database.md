@@ -112,11 +112,11 @@ If you want to use a different login account for the database, to the following:
 
 1. Create a new login that uses SQL Server authentication.  
   
-     For more information, see [Create a Login](http://msdn.microsoft.com/library/aa337562.aspx).  
+     For more information, see [Create a Login](https://msdn.microsoft.com/library/aa337562.aspx).  
   
 2.  Map the login to a user in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and add the user to the **db\_owner** role of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
   
-     For more information, see [Create a Database User](http://msdn.microsoft.com/library/aa337545.aspx).  
+     For more information, see [Create a Database User](https://msdn.microsoft.com/library/aa337545.aspx).  
 
 ## See Also
 

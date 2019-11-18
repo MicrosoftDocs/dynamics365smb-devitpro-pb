@@ -90,7 +90,7 @@ If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for N
 
 Exchange Web Services (EWS) and Autodiscover will try to find the local Exchange Server:
 -	If EWS is not set up, you will receive an error message.
--	If Autodiscover cannot find the Exchange Server, you are prompted for an Exchange administrator email and password, and the local Exchange PowerShell endpoint. The Exchange PowerShell endpoint is a URI that has the format ```http://<ExchangeMailboxServer>/PowerShell```.  ```<ExchangeMailboxServer>``` is the fully qualified domian name of the Exchange Server, such as ```http://mail.cronus.com/PowerShell```. 
+-	If Autodiscover cannot find the Exchange Server, you are prompted for an Exchange administrator email and password, and the local Exchange PowerShell endpoint. The Exchange PowerShell endpoint is a URI that has the format ```https://<ExchangeMailboxServer>/PowerShell```.  ```<ExchangeMailboxServer>``` is the fully qualified domian name of the Exchange Server, such as ```https://mail.cronus.com/PowerShell```. 
 
   
 ## See Also  

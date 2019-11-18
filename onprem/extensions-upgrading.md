@@ -26,7 +26,7 @@ You should not necessarily consider the upgrade of extensions as part of the upg
 
 
 ## How to Upgrade an Extension
-To upgrade an extension, you simply uninstall the old package and then install a new version of the package. The newer version takes care of the rest. You can do this by using the [Uninstall-NAVApp](http://go.microsoft.com/fwlink/?LinkID=618057) and [Install-NAVApp](http://go.microsoft.com/fwlink/?LinkID=618056) cmdlets.  
+To upgrade an extension, you simply uninstall the old package and then install a new version of the package. The newer version takes care of the rest. You can do this by using the [Uninstall-NAVApp](https://go.microsoft.com/fwlink/?LinkID=618057) and [Install-NAVApp](https://go.microsoft.com/fwlink/?LinkID=618056) cmdlets.  
 
 When an extension package is uninstalled, all data for the extension is archived into a set of special tables, so while the extension is now removed from the system, the data is still preserved. This becomes important when you install an update because at that time, it invokes code designed to upgrade or restore any data from the old version.  
 

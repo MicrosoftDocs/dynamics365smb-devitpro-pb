@@ -16,7 +16,7 @@ manager: edupont
 You can expand a database by creating a new database file in the database.  
   
 > [!NOTE]  
->  You must always make a backup of the database before you expand it. For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).  
+>  You must always make a backup of the database before you expand it. For more information, see [Create a Full Database Backup \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkID=296465).  
   
 ### To add a new database file  
   

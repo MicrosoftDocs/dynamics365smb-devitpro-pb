@@ -31,7 +31,7 @@ In the attach configuration, the `breakOnNext` setting specifies the next client
             "name": "My attach to local server",
             "type": "al",
             "request": "attach",
-            "server": "http://localhost",
+            "server": "https://localhost",
             "serverInstance": "BC150",
             "authentication": "Windows",
             "breakOnError": true,

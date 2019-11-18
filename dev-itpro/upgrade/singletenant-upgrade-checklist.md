@@ -29,7 +29,7 @@ This article provides an overview of the full upgrade process for Business Centr
 
 |Step|More info| Done |
 |----|-----------|--|
-|Backup the database.|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
+|Backup the database.|[See...](https://go.microsoft.com/fwlink/?LinkID=296465)||
 |Uninstall all extensions.|[See...](../developer/devenv-unpublish-and-uninstall-extension-v2.md)|
 |Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 |Delete all objects except tables.<br /> **Important** Do not synchronize schema at this point.|[See...](upgrading-the-data.md#DeleteObjects)||

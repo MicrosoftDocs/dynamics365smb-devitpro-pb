@@ -23,15 +23,15 @@ This page provides links to legal information for the Microsoft Dynamics NAV sof
 
 ## Apple
 
--	[Software License Terms for Microsoft Dynamics NAV for iPad and iPhone](http://www.microsoft.com/download/details.aspx?id=54119)  
--	[Third Party Notices for Microsoft Dynamics NAV for iPad and iPhone](http://www.microsoft.com/download/details.aspx?id=54120)  
+-	[Software License Terms for Microsoft Dynamics NAV for iPad and iPhone](https://www.microsoft.com/download/details.aspx?id=54119)  
+-	[Third Party Notices for Microsoft Dynamics NAV for iPad and iPhone](https://www.microsoft.com/download/details.aspx?id=54120)  
 -	[Privacy Statement](https://go.microsoft.com/fwlink/?linkid=825751)  
 -   [Copyright and Trademarks](../Copyright-and-Trademarks.md)
 
 ## Android
 
--	[Software License Terms for Microsoft Dynamics NAV for Android and Android Phone](http://www.microsoft.com/download/details.aspx?id=54121)  
--	[Third Party Notices for Microsoft Dynamics NAV for Android and Android Phone](http://www.microsoft.com/download/details.aspx?id=54118)  
+-	[Software License Terms for Microsoft Dynamics NAV for Android and Android Phone](https://www.microsoft.com/download/details.aspx?id=54121)  
+-	[Third Party Notices for Microsoft Dynamics NAV for Android and Android Phone](https://www.microsoft.com/download/details.aspx?id=54118)  
 -	[Privacy Statement](https://go.microsoft.com/fwlink/?linkid=825751)  
 -   [Copyright and Trademarks](../Copyright-and-Trademarks.md)
 

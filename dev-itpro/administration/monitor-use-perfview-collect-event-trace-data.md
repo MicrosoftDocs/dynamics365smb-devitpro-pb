@@ -16,7 +16,7 @@ This topic describes how to use PerfView to collect event trace data for [!INCLU
   
 ### To install PerfView  
   
--   Go to [http://go.microsoft.com/fwlink/?LinkID=313428](http://go.microsoft.com/fwlink/?LinkID=313428), and then follow the instructions to download and install PerfView.  
+-   Go to [https://go.microsoft.com/fwlink/?LinkID=313428](https://go.microsoft.com/fwlink/?LinkID=313428), and then follow the instructions to download and install PerfView.  
   
 ### To collect event trace data  
   

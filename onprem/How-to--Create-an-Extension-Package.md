@@ -113,7 +113,7 @@ SignTool sign /f MyCert.pfx /p MyPassword “C:\NAV\Proseware.navx”
 The following example signs the Proseware.navx file with a time stamp using the certificate in the password-protected MyCert.pfx file.
 
 ```
-SignTool sign /f MyCert.pfx /p MyPassword /t http://timestamp.verisign.com/scripts/timestamp.dll “C:\NAV\Proseware.navx”
+SignTool sign /f MyCert.pfx /p MyPassword /t https://timestamp.verisign.com/scripts/timestamp.dll “C:\NAV\Proseware.navx”
 ```
 
 The following example signs the Proseware.navx file using the certificate in the My store with a subject name of “Prosewaretest”.
@@ -134,7 +134,7 @@ SignTool sign /n Prosewaretest “C:\NAV\Extension\Proseware.navx”
  [How to: Publish and Install an Extension](How-to--Publish-and-Install-an-Extension.md)  
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)  
  [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)  
- [Development Cmdlets for Microsoft Dynamics NAV Extensions](http://go.microsoft.com/fwlink/?LinkID=626875)  
+ [Development Cmdlets for Microsoft Dynamics NAV Extensions](https://go.microsoft.com/fwlink/?LinkID=626875)  
  [Authenticode](https://msdn.microsoft.com/library/ms537359\(VS.85\).aspx)  
  [Introduction to Code Signing](https://msdn.microsoft.com/library/ms537361\(v=vs.85\).aspx)  
 -->

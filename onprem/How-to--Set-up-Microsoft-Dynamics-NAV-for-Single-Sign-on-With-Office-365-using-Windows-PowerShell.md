@@ -44,15 +44,15 @@ manager: edupont
   
 -   An Office365 subscription  
   
-     If you want to sign up for an Office 365 plan, you can use a plan such as Office 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account which you will use to access the Azure management portal. For example, if your Office 365 site is *Solutions.onmicrosoft.com*, your administrative account can be *admin@solutions.onmicrosoft.com*. For more information, see [Select an Office 365 plan for business](http://go.microsoft.com/fwlink/?LinkId=309050).  
+     If you want to sign up for an Office 365 plan, you can use a plan such as Office 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account which you will use to access the Azure management portal. For example, if your Office 365 site is *Solutions.onmicrosoft.com*, your administrative account can be *admin@solutions.onmicrosoft.com*. For more information, see [Select an Office 365 plan for business](https://go.microsoft.com/fwlink/?LinkId=309050).  
   
 -   Azure Active Directory Tenant Management Components  
   
      The cmdlet relies on the presence of the following components on the system:  
   
-    -   [Microsoft Online Services Sign-In Assistant for IT Professionals](http://go.microsoft.com/fwlink/?LinkId=394784)  
+    -   [Microsoft Online Services Sign-In Assistant for IT Professionals](https://go.microsoft.com/fwlink/?LinkId=394784)  
   
-    -   [Microsoft Azure Active Directory Module for Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=394785)  
+    -   [Microsoft Azure Active Directory Module for Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=394785)  
   
      You can download and install these components from the links provided earlier in this section. If you have to decide between 32-bit and 64-bit versions of components, download the version that matches the Windows Operating System type.  
   

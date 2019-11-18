@@ -15,7 +15,7 @@ manager: edupont
 # Creating Self-signed Security Certificate Using PowerShell Script
 With the `New-NavSelfSignedCertificate` PowerShell cmdlet, you can create a self-signed certificate to help secure the communication between the [!INCLUDE[nav_server](includes/nav_server_md.md)] and the [!INCLUDE[nav_web](includes/nav_web_md.md)].  
   
- Running the `New-NavSelfSignedCertificate` takes several parameters. One of these parameters is `MakeCertExePath`. This parameter must be filled in with the file path of the Windows SDK MakeCert.exe file. Typically, this file can be found under *C:\\Program Files \(x86\)\\Windows Kits\\8.1\\bin\\x86\\makecert.exe*. If you do not have a Windows 7.1 or 8.1 SDK on the [!INCLUDE[nav_server](includes/nav_server_md.md)] computer, you can download this from [MSDN](http://go.microsoft.com/fwlink/?LinkId=335897).  
+ Running the `New-NavSelfSignedCertificate` takes several parameters. One of these parameters is `MakeCertExePath`. This parameter must be filled in with the file path of the Windows SDK MakeCert.exe file. Typically, this file can be found under *C:\\Program Files \(x86\)\\Windows Kits\\8.1\\bin\\x86\\makecert.exe*. If you do not have a Windows 7.1 or 8.1 SDK on the [!INCLUDE[nav_server](includes/nav_server_md.md)] computer, you can download this from [MSDN](https://go.microsoft.com/fwlink/?LinkId=335897).  
   
 > [!IMPORTANT]  
 >  The `New-NavSelfSignedCertificate` PowerShell cmdlet will only create self-signed certificates that can be used on Windows and Windows Phone.  

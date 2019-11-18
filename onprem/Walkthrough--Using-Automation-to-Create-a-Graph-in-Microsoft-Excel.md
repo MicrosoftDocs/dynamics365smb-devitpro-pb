@@ -40,7 +40,7 @@ In this walkthrough, you will transfer data from the **G/L Entry** table to Micr
   
 -   The language in the regional settings of your computer matches the language version of Microsoft Excel.  
   
-     This is a known issue. For more information, see [Bug: "Old Format or invalid type library"](http://go.microsoft.com/fwlink/?LinkID=250990) in the Microsoft Support site.  
+     This is a known issue. For more information, see [Bug: "Old Format or invalid type library"](https://go.microsoft.com/fwlink/?LinkID=250990) in the Microsoft Support site.  
   
 ## Creating the Codeunit and Declaring Variables  
  To implement Automation in a codeunit, you define the Automation variables. To define an Automation variable, you specify an Automation server and the Automation object.  
@@ -107,7 +107,7 @@ In this walkthrough, you will transfer data from the **G/L Entry** table to Micr
   
  If this argument is a constant, the new workbook contains a single sheet of the specified type. Can be one of the following: XlWBATemplate constants: xlWBATChart, xlWBATExcel4IntlMacroSheet, xlWBATExcel4MacroSheet, or xlWBATWorkSheet.  
   
- For more information, see Workbooks.Add Method \(Excel\), [http://go.microsoft.com/fwlink/?LinkId=404331](http://go.microsoft.com/fwlink/?LinkId=404331).  
+ For more information, see Workbooks.Add Method \(Excel\), [https://go.microsoft.com/fwlink/?LinkId=404331](https://go.microsoft.com/fwlink/?LinkId=404331).  
   
  Instead of passing xlWBATWorkSheet as the **Template** argument, you are passing the number -4167. In this case, the **Template** argument, which is of type VARIANT, is an enumeration. Enumerations are either USERDEF types or not. This is not a USERDEF type, so it looks like a VARIANT in the C/AL Symbol Menu. You have to look in the Microsoft Excel Visual Basic Help to figure out that it is actually an enumeration. Arguments can be constants with names like xl\* in Excel, wd\* in Word, and ol\* in Outlook. In [!INCLUDE[navnow](includes/navnow_md.md)], you cannot use the symbolic name xlWBATWorkSheet. You have to use the enumerator -4167. The following procedure describes how you can find an enumerator value if you need to.  
   
@@ -225,7 +225,7 @@ In this walkthrough, you will transfer data from the **G/L Entry** table to Micr
      The Microsoft Excel graph should appear.  
   
     > [!NOTE]  
-    >  If you get an error states **Old format or invalid type library**, then make sure that the language in the regional settings of your computer matches the language version of Microsoft Excel. For more information, see [Bug: "Old Format or invalid type library"](http://go.microsoft.com/fwlink/?LinkID=250990).  
+    >  If you get an error states **Old format or invalid type library**, then make sure that the language in the regional settings of your computer matches the language version of Microsoft Excel. For more information, see [Bug: "Old Format or invalid type library"](https://go.microsoft.com/fwlink/?LinkID=250990).  
   
 ## See Also  
  [How to: Create an Automation Controller](How-to--Create-an-Automation-Controller.md)   

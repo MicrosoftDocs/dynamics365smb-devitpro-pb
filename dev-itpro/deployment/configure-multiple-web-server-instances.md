@@ -76,9 +76,9 @@ A *RootSite* instance is a root-level web site that is complete with content fil
 
 The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] URL for the RootSite instance has the format:
 
-`http://[WebserverComputerName]:[port]`
+`https://[WebserverComputerName]:[port]`
 
-For example: `http://localhost:8080`. 
+For example: `https://localhost:8080`. 
 
 **SubSite**
 
@@ -101,9 +101,9 @@ A *SubSite* instance is a web application that is under a container web site. Th
 
 The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] URL of a SubSite instance is generally longer than a RootSite because it also contains the application's alias (or virtual path) for the instance, which you define. The URL for a SubSite instance has the format:
 
-`http://[WebserverComputerName]:[port]/[WebServerInstance]`
+`https://[WebserverComputerName]:[port]/[WebServerInstance]`
 
-For example: `http://localhost:8080/BusinessCentralWebInstance1` and `http://localhost:8080/BusinessCentralWebInstance2`. 
+For example: `https://localhost:8080/BusinessCentralWebInstance1` and `https://localhost:8080/BusinessCentralWebInstance2`. 
 
 ### Run the New-NAVWebServerInstance cmdlet
 
@@ -120,7 +120,7 @@ SubSite example:
     New-NAVWebServerInstance -WebServerInstance MyWebApp -Server MyBCServer -ServerInstance MyBCServerInstance -SiteDeploymentType Subsite -ContainerSiteName MySiteContainer -WebSitePort 8081 -PublishFolder "C:\WebClient\WebPublish"
     ```  
 
--  Susbtitute *MyBCWebsite* with the name that you want to give the web application in IIS for the web server instance. If you are creating a SubSite deployment type, this name will become part of the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] application, for example, http://MyWebServer:8081/MyWebApp.  
+-  Susbtitute *MyBCWebsite* with the name that you want to give the web application in IIS for the web server instance. If you are creating a SubSite deployment type, this name will become part of the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] application, for example, https://MyWebServer:8081/MyWebApp.  
   
 - Susbtitute *MyBCServer* to the name of the computer that is running the [!INCLUDE[server](../developer/includes/server.md)] to which you want to connect.  
   

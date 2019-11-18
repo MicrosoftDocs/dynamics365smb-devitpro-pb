@@ -110,14 +110,14 @@ After publishing a web service, verify that the port that web service applicatio
 ### To verify availability of a Microsoft Dynamics NAV Web service action
 
 1.	Start **Postman** or another tool that can execute a POST command against the web service URI.
-2.	In the **Address** field, enter a URI in this format: `http://<Server>:<WebServicePort>/<ServerInstance>/api/beta/companies(<companyid>)/salesInvoices(<invoiceid>)/Microsoft.NAV.Copy)`.  
+2.	In the **Address** field, enter a URI in this format: `https://<Server>:<WebServicePort>/<ServerInstance>/api/beta/companies(<companyid>)/salesInvoices(<invoiceid>)/Microsoft.NAV.Copy)`.  
 
     - `<Server>` is the name of the computer that is running Business Central Server.
     - `<WebServicePort>` is the port that OData V4 is running on. The default port is 7047.
     - `<ServiceInstance>` is the name of the Business Central Server instance for your solution. The default name is DynamicsNAV90.  
 
     Example if the default Business Central Server is running on your local computer.
-    ```http://localhost:7047/BC130/api/beta/companies(b9248a6e-966d-478c-a25d-d91d28610397)/salesInvoices(8cc52602-3aa4-4256-b2c7-fdfef5248cbf)/Microsoft.NAV.Copy) ```
+    ```https://localhost:7047/BC130/api/beta/companies(b9248a6e-966d-478c-a25d-d91d28610397)/salesInvoices(8cc52602-3aa4-4256-b2c7-fdfef5248cbf)/Microsoft.NAV.Copy) ```
 3. Postman should now show the web service function that you have published, and perform the action of copying an invoice. 
 
 ## Return a value
@@ -152,7 +152,7 @@ After publishing a web service, verify that the port that web service applicatio
     `outParam := inParam + ' Completed';`
 
 8.	You can now issue a post request:  
-    `http://localhost:7047/Navision_NAV/ODataV4/Company('CRONUS International Ltd.')/SalesInvoice('Invoice', '1004')/NAV.Example`  
+    `https://localhost:7047/Navision_NAV/ODataV4/Company('CRONUS International Ltd.')/SalesInvoice('Invoice', '1004')/NAV.Example`  
     with a JSON body of:  
     `{
 	    "inParam": "Hello World"
@@ -160,7 +160,7 @@ After publishing a web service, verify that the port that web service applicatio
 9.	The returned value will be returned in the body of the message.  
     ```
     {
-        "@odata.context": "http://farpedro.northamerica.corp.microsoft.com:7047/Navision_NAV/ODataV4/$metadata#Edm.String",
+        "@odata.context": "https://farpedro.northamerica.corp.microsoft.com:7047/Navision_NAV/ODataV4/$metadata#Edm.String",
         "value": "Hello World Completed"
     }
     ```

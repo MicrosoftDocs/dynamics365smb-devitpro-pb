@@ -102,15 +102,15 @@ From the computer on which you installed the [!INCLUDE[nav_web_server](includes/
 
 -   Open a web browser, and then in the address box, type:
 
-    `http://localhost:port/ServiceName`
+    `https://localhost:port/ServiceName`
     
     Or for [!INCLUDE[nav2017](includes/nav2017.md)]:
     
-    `http://localhost:port/webclient`
+    `https://localhost:port/webclient`
 
     Replace `port` and `ServiceName` with that values that you chose during Setup. For example, the address with the default installation is:
     
-    http://localhost:8080/[!INCLUDE[nav_server_instance_md](includes/nav_server_instance_md.md)]
+    https://localhost:8080/[!INCLUDE[nav_server_instance_md](includes/nav_server_instance_md.md)]
 
 For more information, see [How to: Open the Microsoft Dynamics NAV Web Client](How-to--Open-the-Microsoft-Dynamics-NAV-Web-Client.md). If you get an error when trying to open the [!INCLUDE[nav_web](includes/nav_web_md.md)], see [Troubleshooting the Microsoft Dynamics NAV Web Client Installation](Troubleshooting-the-Microsoft-Dynamics-NAV-Web-Client-Installation.md) for information about resolving the problem.  
 

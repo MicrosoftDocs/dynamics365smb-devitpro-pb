@@ -57,9 +57,9 @@ This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../devel
   
 1.  Start Internet Explorer.  
   
-2.  In the **Address** field, enter a URI in this format: **http://\<Server>:\<WebServicePort>/\<ServerInstance>/OData**. For example:  
+2.  In the **Address** field, enter a URI in this format: **https://\<Server>:\<WebServicePort>/\<ServerInstance>/OData**. For example:  
   
-     **http://localhost:7048/BC130/OData**  
+     **https://localhost:7048/BC130/OData**  
   
     1.  **Server** is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
   
@@ -67,7 +67,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../devel
   
      **ServiceInstance** is the name of the [!INCLUDE[server](../developer/includes/server.md)] instance for your solution. The default name is [!INCLUDE[serverinstance](../developer/includes/serverinstance.md)].  
   
-     For example, if the [!INCLUDE[server](../developer/includes/server.md)] is running on the computer that you are working on, then you can use: **http://localhost:7048/BC130/OData/**  
+     For example, if the [!INCLUDE[server](../developer/includes/server.md)] is running on the computer that you are working on, then you can use: **https://localhost:7048/BC130/OData/**  
   
      The browser should now show the web service that you have published, in the format of an AtomPub document.  
   
@@ -86,7 +86,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../devel
   
 4.  In the Solution Explorer pane, right-click **References**, and then choose **Add Service Reference**.  
   
-5.  In the **Address** field, enter the URI for your OData web service, such as **http://localhost:7048/BC130/OData/**.  
+5.  In the **Address** field, enter the URI for your OData web service, such as **https://localhost:7048/BC130/OData/**.  
   
     > [!IMPORTANT] 
     >  In this example, we use the HTTP protocol to illustrate the use of OData web services. We recommend that you use the more secure HTTPS protocol when you consume web services.  
@@ -132,11 +132,11 @@ This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../devel
 3.  In the `Main` method, add the following code to establish the connection to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] through the web service:  
   
     ```  
-    NAV nav = new NAV(new Uri("http://localhost:7048/BC130/OData/Company('CRONUS-International-Ltd.')"));  
+    NAV nav = new NAV(new Uri("https://localhost:7048/BC130/OData/Company('CRONUS-International-Ltd.')"));  
     nav.Credentials = CredentialCache.DefaultNetworkCredentials;  
     ```  
   
-     In the example, the name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that you modify data for is [!INCLUDE[demoname](../developer/includes/demoname_md.md)]. You must replace this with the name of the company that you have access to. To find the correct URI, you can paste the following URI into your browser and then see the exact URI that you must use: `http://localhost:7048/BC130/OData/Company`.  
+     In the example, the name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that you modify data for is [!INCLUDE[demoname](../developer/includes/demoname_md.md)]. You must replace this with the name of the company that you have access to. To find the correct URI, you can paste the following URI into your browser and then see the exact URI that you must use: `https://localhost:7048/BC130/OData/Company`.  
   
 4.  Add the following code to the method:  
   

@@ -53,7 +53,7 @@ The following cmdlets have been changed in the Microsoft.Dynamics.NAV.Management
 |[New-NAVWebServerInstance](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance)|-RegionFormat, -Language, and -Company parameters have been removed.|
 |[Remove-NAVCompany](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/Remove-NAVCompany)|-ForceImmediateDataDeletion parameter has been added.|
 
-<!-- A number of other new cmdlets are available in the [!INCLUDE[nav_shell](includes/nav_shell_md.md)] but are not yet listed here. For a full list, see [Administration Cmdlets for Microsoft Dynamics NAV Extensions](http://go.microsoft.com/fwlink/?LinkID=626874).  -->
+<!-- A number of other new cmdlets are available in the [!INCLUDE[nav_shell](includes/nav_shell_md.md)] but are not yet listed here. For a full list, see [Administration Cmdlets for Microsoft Dynamics NAV Extensions](https://go.microsoft.com/fwlink/?LinkID=626874).  -->
 
 ### New and changed cmdlets for administering Dynamics NAV Extensions
 The following cmdlet are new in the Microsoft.Dynamics.NAV.Apps.Management module. 
@@ -84,7 +84,7 @@ The following cmdlets have been changed in the Microsoft.Dynamics.NAV.Model.Tool
 |[Compare-NAVApplicationObject](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.model.tools/Compare-NAVApplicationObject)|-IgnoreDocumentation parameter has been added.|
 |[New-NAVCrmTable](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.model.tools/New-NAVCrmTable)|-DeltaPath parameter has been added.|
 
-<!-- >  A number of other new cmdlets are available in the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] but are not yet listed here. For a full list, see [Development Cmdlets for Microsoft Dynamics NAV Extensions](http://go.microsoft.com/fwlink/?LinkId=626875). -->
+<!-- >  A number of other new cmdlets are available in the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] but are not yet listed here. For a full list, see [Development Cmdlets for Microsoft Dynamics NAV Extensions](https://go.microsoft.com/fwlink/?LinkId=626875). -->
 
 <!--
 ### Changed cmdlets for creating extension packages  

@@ -94,7 +94,7 @@ namespace oauthConsoleApp
             var authenticationContext = new AuthenticationContext("https://login.microsoftonline.com/" + AadTenantId, false);
             AuthenticationResult authenticationResult = authenticationContext.AcquireTokenAsync(ServerAppIdUri, ClientId, new Uri(ClientAppUri), new PlatformParameters(PromptBehavior.SelectAccount)).GetAwaiter().GetResult();
             // Connect to the Business Central OData web service and display a list of customers
-            var nav = new NAV.NAV(new Uri("http://myBCserver:7048/BC140/ODataV4"));
+            var nav = new NAV.NAV(new Uri("https://myBCserver:7048/BC140/ODataV4"));
             nav.BuildingRequest += (sender, eventArgs) => eventArgs.Headers.Add("Authorization", authenticationResult.CreateAuthorizationHeader());
             foreach (var customer in nav.Customer)
             {
@@ -330,7 +330,7 @@ Next, you create a C\# console application in Visual Studio.
 ### Add a Service Reference for your OData Web service (Visual Studio 2015 and earlier)
 1. In the Solution Explorer pane, right-click **References**, and then choose **Add Service Reference**.  
   
-2. In the **Address** field, enter the URI for your OData web service, such as **http://localhost:7048/DynamicsNAV/OData/**.  
+2. In the **Address** field, enter the URI for your OData web service, such as **https://localhost:7048/DynamicsNAV/OData/**.  
   
    > [!IMPORTANT]  
    >  In this example, we use the HTTP protocol to illustrate the use of OData web services. We recommend that you use the more secure HTTPS protocol when you consume web services.  
@@ -356,9 +356,9 @@ Next, you create a C\# console application in Visual Studio.
 
 4. In the **Address** field, enter the URI for your OData web service.
 
-    The endpoint has the format `http://<servercomputer>:<business-central-odata-port>/<business-central-server-instance>/ODataV4`, for example:
+    The endpoint has the format `https://<servercomputer>:<business-central-odata-port>/<business-central-server-instance>/ODataV4`, for example:
 
-    `http://localhost:7048/BC/ODataV4`
+    `https://localhost:7048/BC/ODataV4`
   
    > [!IMPORTANT]  
    >  In this example, we use the HTTP protocol to illustrate the use of OData web services. We recommend that you use the more secure HTTPS protocol when you consume web services.
@@ -423,7 +423,7 @@ Install the latest version of the package by using NuGet Package Manager in Visu
                 AuthenticationResult authenticationResult = authenticationContext.AcquireTokenAsync(ServerAppIdUri, ClientId, new Uri(ClientRedirectUrl), new PlatformParameters(PromptBehavior.SelectAccount)).GetAwaiter().GetResult();
     
                 // Connect to the Business Central OData web service and display a list of customers
-                var nav = new NAV.NAV(new Uri(<"http://localhost:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.'>)"));
+                var nav = new NAV.NAV(new Uri(<"https://localhost:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.'>)"));
                 nav.BuildingRequest += (sender, eventArgs) => eventArgs.Headers.Add("Authorization", authenticationResult.CreateAuthorizationHeader());
     
                 // Retrieve and return a list of the customers 

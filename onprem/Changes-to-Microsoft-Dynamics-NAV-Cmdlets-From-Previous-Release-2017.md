@@ -30,7 +30,7 @@ The following sections provide an overview of the new, changed, and removed cmdl
 |[Import-NAVMembershipEntitlement](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/Import-NAVMembershipEntitlement?view=dynamicsnav-ps-2017)|Imports the license entitlement data for a membership association.|
 |[Update-NAVScheduledTaskList](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/Update-NAVScheduledTaskList?view=dynamicsnav-ps-2017)|Updates the application-wide list of scheduled tasks with the information from the tenant database.|
 
-<!-- A number of other new cmdlets are available in the [!INCLUDE[nav_shell](includes/nav_shell_md.md)] but are not yet listed here. For a full list, see [Administration Cmdlets for Microsoft Dynamics NAV Extensions](http://go.microsoft.com/fwlink/?LinkID=626874).  -->
+<!-- A number of other new cmdlets are available in the [!INCLUDE[nav_shell](includes/nav_shell_md.md)] but are not yet listed here. For a full list, see [Administration Cmdlets for Microsoft Dynamics NAV Extensions](https://go.microsoft.com/fwlink/?LinkID=626874).  -->
 
 ### New cmdlets for administering Dynamics NAV Extensions
 
@@ -63,7 +63,7 @@ The following sections provide an overview of the new, changed, and removed cmdl
 |[Export-NAVAppTableData](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.tools/Export-NAVAppTableData.md) | Exports data from a Microsoft Dynamics NAV database table to file.|
 |[Export-NAVAppTenantWebService](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.tools/Export-NAVAppTenantWebService?view=dynamicsnav-ps-2017)| Exports the specified web service from the database to a file.|
 
-<!-- >  A number of other new cmdlets are available in the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] but are not yet listed here. For a full list, see [Development Cmdlets for Microsoft Dynamics NAV Extensions](http://go.microsoft.com/fwlink/?LinkId=626875). -->
+<!-- >  A number of other new cmdlets are available in the [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] but are not yet listed here. For a full list, see [Development Cmdlets for Microsoft Dynamics NAV Extensions](https://go.microsoft.com/fwlink/?LinkId=626875). -->
 
 ### Changed cmdlets  
 
