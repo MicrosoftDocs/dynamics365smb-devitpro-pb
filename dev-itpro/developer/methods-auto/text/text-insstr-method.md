@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -52,28 +52,23 @@ The input string including the specified substring
   
  If *Position* is greater than the length of *String*, *SubString* is added at the end of *String*. For example, `INSSTR("Thomas","AAA",999)` returns 'ThomasAAA'.  
   
-## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Subtype|  
-|-------------------|--------------|-------------|  
-|Str|Text|60|  
-|SubString|Text|60|  
-|NewString|Text|60|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Press ENTER to continue.|  
-|Text001|or ESC|  
-|Text002|The test string before INSSTR is called:>%1\<|  
-|Text003|The resulting string after INSSTR is called:>%1\<|  
-  
-```  
-Str := Text000;  
-SubString := Text001;  
-MESSAGE(Text002, Str);  
-NewString := INSSTR(Str, SubString, 13);  
-MESSAGE(Text003, NewString);  
+## Example   
+```
+var
+    Str: Text[60];  
+    SubString: Text[60];  
+    NewString: Text[60]; 
+    Text000: TextConst ENU='Press ENTER to continue.';  
+    Text001: TextConst ENU='or ESC';
+    Text002: TextConst ENU=' The test string before INSSTR is called:>%1<';
+    Text003: TextConst ENU=' The resulting string after INSSTR is called:>%1<'; 
+begin
+    Str := Text000;  
+    SubString := Text001;  
+    MESSAGE(Text002, Str);  
+    NewString := INSSTR(Str, SubString, 13);  
+    MESSAGE(Text003, NewString);  
+end;
 ```  
   
  The first message window displays the following:  

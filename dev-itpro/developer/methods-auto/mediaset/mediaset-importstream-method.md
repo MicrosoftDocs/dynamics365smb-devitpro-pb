@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -70,41 +70,36 @@ In addition, the media object is assigned to a MediaSet which also has a specifi
 
 With these tasks in place, you can add and run the following AL code to import the images. For this code example, create a codeunit and add the code to the OnRun trigger.  
 
-The code requires that you create the following variables and text constant:  
-
-|  Variable name  |  DataType  |  Subtype  |  
-|-----------------|------------|-----------|  
-|itemRec|Record|Item|  
-|fileName|Text||  
-|inStreamObject|InStream||  
-|importFile|File||
-|count|Integer||  
-|mediasetId|GUID||  
-
-|  Text constant name  |  ConstValue  |  
-|----------------------|--------------|  
-|Text000|The files have been imported. Item %1 has %2 pictures in MediaSet: %3|
-
-```  
-itemRec.Get('1000');
-
-fileName := 'C:\images\1000-v1.jpg';
-importFile.Open(fileName);  
-importFile.CreateInStream(inStreamObject);  
-itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + Format(itemRec."No."));  
-itemRec.Modify;  
-importFile.Close;  
-
-fileName := 'C:\images\1000-v2.jpg';
-importFile.Open(fileName);  
-importFile.CreateInStream(inStreamObject);  
-itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + FORMAT(itemRec."No."));  
-itemRec.Modify;  
-importFile.Close;
-
-count := (itemRec.Picture.Count);
-mediasetId := itemRec.Picture.MediaId;  
-Message(Text000,itemRec."No.",count,mediasetId);  
+```
+ var
+    itemRec: Record Item;
+    count: Integer;
+    fileName: Text;
+    inStreamObject: InStream;
+    importFile: File;
+    mediasetId: GUID;
+    Text000: TextConst ENU='The files have been imported. Item %1 has %2 pictures in MediaSet: %3';
+begin
+    itemRec.Get('1000');
+    
+    fileName := 'C:\images\1000-v1.jpg';
+    importFile.Open(fileName);  
+    importFile.CreateInStream(inStreamObject);  
+    itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + Format(itemRec."No."));  
+    itemRec.Modify;  
+    importFile.Close;  
+    
+    fileName := 'C:\images\1000-v2.jpg';
+    importFile.Open(fileName);  
+    importFile.CreateInStream(inStreamObject);  
+    itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + FORMAT(itemRec."No."));  
+    itemRec.Modify;  
+    importFile.Close;
+    
+    count := (itemRec.Picture.Count);
+    mediasetId := itemRec.Picture.MediaId;  
+    Message(Text000,itemRec."No.",count,mediasetId);  
+end;
 ```  
 
 If you run system table **2000000181 Tenant Media**, you should see the new images in the list.

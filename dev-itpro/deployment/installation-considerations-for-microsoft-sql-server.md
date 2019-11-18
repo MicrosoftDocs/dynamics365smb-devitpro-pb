@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 
 # Installation Considerations for Microsoft SQL Server and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
@@ -71,7 +72,7 @@ Both advanced server configuration options and database scoped configurations ca
 
 #### Instance configuration
   
-If you plan on installing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Demo database, and you want [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup to use an already installed version of SQL Server \(and not to install SQL Server Express\), you must create a SQL Server instance named **NAVDEMO** in SQL Server before you run Setup. Otherwise, Setup will install SQL Server Express automatically, even if there is a valid version of SQL Server already on the computer. If you do not plan to install the Demo database, or if you have no objection to using SQL Server Express, you are free to use the **default instance** and **Instance ID** on the **Instance Configuration** page, or to specify any instance name.  
+If you plan on installing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Demo database, and you want [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup to use an already installed version of SQL Server \(and not to install SQL Server Express\), you must create a SQL Server instance named **BCDEMO** in SQL Server before you run Setup. Otherwise, Setup will install SQL Server Express automatically, even if there is a valid version of SQL Server already on the computer. If you do not plan to install the Demo database, or if you have no objection to using SQL Server Express, you are free to use the **default instance** and **Instance ID** on the **Instance Configuration** page, or to specify any instance name.  
 
 ### Database engine service
 
@@ -125,7 +126,7 @@ You can deploy a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] datab
  For more information, see [Deploying a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md).  
 
 ## Data Encryption between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server  
- When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](http://go.microsoft.com/fwlink/?LinkId=147732), which is part of SQL Server 2008 Books Online in MSDN library.  
+ When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](https://go.microsoft.com/fwlink/?LinkId=147732), which is part of SQL Server 2008 Books Online in MSDN library.  
 
 ## See Also  
  [Data Access](../administration/optimize-sql-data-access.md)    

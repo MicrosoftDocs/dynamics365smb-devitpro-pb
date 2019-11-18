@@ -16,7 +16,7 @@ manager: edupont
 You can call .NET Framework type members, including methods, properties, and constructors, from C/AL code with the DotNet data type for C/AL variables. This section provides an overview of the DotNet data type, guidelines on its use, and aspects about calling members of a .NET Framework type. For information about how to create and use a DotNet variable to call members of a type, see [How to: Call .NET Framework Types From C/AL Code](How-to--Call-.NET-Framework-Types-From-C-AL-Code.md).  
 
 ## DotNet Data Type  
- The DotNet type resembles the Automation type in C/AL except that it references a .NET Framework type in an assembly. Assemblies can be either part of assemblies that are installed in the global assembly cache or custom assemblies that you have installed for [!INCLUDE[navnow](includes/navnow_md.md)]. For more information about how to install assemblies in global assembly cache, see [Assembly Installation in the GAC](http://go.microsoft.com/fwlink/?LinkID=196848).  
+ The DotNet type resembles the Automation type in C/AL except that it references a .NET Framework type in an assembly. Assemblies can be either part of assemblies that are installed in the global assembly cache or custom assemblies that you have installed for [!INCLUDE[navnow](includes/navnow_md.md)]. For more information about how to install assemblies in global assembly cache, see [Assembly Installation in the GAC](https://go.microsoft.com/fwlink/?LinkID=196848).  
 
  After you have defined a DotNet variable, you can call it in C/AL code to instantiate members of a .NET Framework type.  
 
@@ -34,7 +34,7 @@ You can call .NET Framework type members, including methods, properties, and con
 
 -   You use the same syntax to call static and instance methods.  
 
--   Calling static methods provides a factory pattern for creating object instances. For example, to create a new [System.TimeZoneInfo](https://msdn.microsoft.com/en-us/library/system.timezoneinfo\(v=vs.110\).aspx) object, you call the type’s [System.TimeZoneInfo.Local](https://msdn.microsoft.com/en-us/library/system.timezoneinfo.local\(v=vs.110\).aspx) static method with the following code.  
+-   Calling static methods provides a factory pattern for creating object instances. For example, to create a new [System.TimeZoneInfo](https://msdn.microsoft.com/library/system.timezoneinfo\(v=vs.110\).aspx) object, you call the type’s [System.TimeZoneInfo.Local](https://msdn.microsoft.com/library/system.timezoneinfo.local\(v=vs.110\).aspx) static method with the following code.  
 
     ```  
     zone := zone.Local;  

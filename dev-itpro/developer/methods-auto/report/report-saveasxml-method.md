@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -65,44 +65,44 @@ Specifies which record to use in the report. Any filters that have been applied 
  To resolve this issue, verify that the service account that is running the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance has write permissions on the path.  
 
 ## Example  
- This example shows how to use the SAVEASXML method to save a report as an .xml file on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a  computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. This example requires that you create the following variables.  
-
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|TempFile|File|Not applicable|  
-|Name|Text|250|  
-|NewStream|InStream|Not applicable|  
-|ToFile|Text|250|  
-|ReturnValue|Boolean|Not applicable|  
-
+ This example shows how to use the SAVEASXML method to save a report as an .xml file on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)], and then download the file to a  computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. 
+ 
 ```  
-// Specify that TempFile is opened as a binary file.  
-TempFile.TEXTMODE(FALSE);  
-// Specify that you can write to TempFile.  
-TempFile.WRITEMODE(TRUE);  
-Name := 'C:\Temp\TempReport.xml';  
-// Create and open TempFile.  
-TempFile.CREATE(Name);  
-// Close TempFile so that the SAVEASXML method can write to it.  
-TempFile.CLOSE;  
-
-REPORT.SAVEASXML(406,Name);  
-
-TempFile.OPEN(Name);  
-TempFile.CREATEINSTREAM(NewStream);  
-ToFile := 'Report.xml';  
-
-// Transfer the content from the temporary file on
-// server to a file on the client.  
-ReturnValue := DOWNLOADFROMSTREAM(  
-  NewStream,  
-  'Save file to client',  
-  '',  
-  'Excel File *.xml| *.xml',  
-  ToFile);  
-
-// Close the temporary file.  
-TempFile.CLOSE();  
+var
+    TempFile: File;
+    Name: Text[250];
+    NewStream: InStream;
+    ToFile: Text[250];
+    ReturnValue: Boolean;
+begin
+    // Specify that TempFile is opened as a binary file.  
+    TempFile.TEXTMODE(FALSE);  
+    // Specify that you can write to TempFile.  
+    TempFile.WRITEMODE(TRUE);  
+    Name := 'C:\Temp\TempReport.xml';  
+    // Create and open TempFile.  
+    TempFile.CREATE(Name);  
+    // Close TempFile so that the SAVEASXML method can write to it.  
+    TempFile.CLOSE;  
+    
+    REPORT.SAVEASXML(406,Name);  
+    
+    TempFile.OPEN(Name);  
+    TempFile.CREATEINSTREAM(NewStream);  
+    ToFile := 'Report.xml';  
+    
+    // Transfer the content from the temporary file on
+    // server to a file on the client.  
+    ReturnValue := DOWNLOADFROMSTREAM(  
+      NewStream,  
+      'Save file to client',  
+      '',  
+      'Excel File *.xml| *.xml',  
+      ToFile);  
+    
+    // Close the temporary file.  
+    TempFile.CLOSE();  
+end;
 ```  
 
  You can create an action on a page and set the action to run this code. When you run the action, the **Export File** dialog box opens. Choose **Save** to save the file to the client.  

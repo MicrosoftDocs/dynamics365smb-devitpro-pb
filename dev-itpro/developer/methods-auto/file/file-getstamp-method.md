@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -53,21 +53,18 @@ The time that the file was last written to. Optional.
 
 ## Example  
  The following example gets the date and time that a file was written to and displays the data in a message box. The code example assumes that you have created the file 'C:\\MyFolder\\MyText.txt'. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|varFileName|Text|  
-|varDate|Date|  
-|varTime|Time|  
-  
-|Text constant name|ConstValue|  
-|------------------------|----------------|  
-|Text000|This document was last written to on %1 at %2.|  
-  
-```  
-varFileName := 'C:\MyFolder\MyText.txt';  
-GETSTAMP(VarFileName, varDate, varTime);  
-MESSAGE(Text000, varDate, varTime);  
+
+```
+ var
+    varDate: Date;
+    varTime: Time;
+    varFileName: Text;
+    Text000: TextConst ENU='This document was last written to on %1 at %2.';
+begin
+    varFileName := 'C:\MyFolder\MyText.txt';  
+    GETSTAMP(VarFileName, varDate, varTime);  
+    MESSAGE(Text000, varDate, varTime);  
+end;
 ```  
 
 ## See Also

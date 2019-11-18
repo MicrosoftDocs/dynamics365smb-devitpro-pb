@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -49,28 +49,24 @@ The copied string.
  If *Position* combined with *Length* exceeds the length of the string, all the characters from *Position* to the end of the string are returned.  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|Str|Text|30|  
-|Position|Integer|Not applicable|  
-|Length|Integer|Not applicable|  
-|NewStr|Text|30|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Using the COPYSTR method|  
-|Text001|The original string is:>%1\<|  
-|Text002|The copied string is:>%1\<|  
-  
+
 ```  
-Str := Text000;  
-Position := 7;  
-Length := 8;  
-MESSAGE(Text001, Str);  
-NewStr := COPYSTR(Str, Position, Length);  
-MESSAGE(Text002, NewStr);  
+var
+    Str: Text[30];
+    Position: Integer;
+    Length: Integer;
+    NewStr: Text[30];
+    Text000: TextConst ENU='Using the COPYSTR method';
+    Text001: TextConst ENU='The original string is:>%1<';
+    Text002: TextConst ENU='The copied string is:>%1<';
+begin
+    Str := Text000;  
+    Position := 7;  
+    Length := 8;  
+    MESSAGE(Text001, Str);  
+    NewStr := COPYSTR(Str, Position, Length);  
+    MESSAGE(Text002, NewStr);  
+end;
 ```  
   
  The first message window shows the original string:  

@@ -125,16 +125,16 @@ In this scenario, you install the major components of the [!INCLUDE[navnowlong](
 
 -   To open the [!INCLUDE[nav_web](includes/nav_web_md.md)] from other devices on the network, open an Internet browser, and type the following URL in the address box:  
 
-    http://ComputerName:PortNumber/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]  
+    https://ComputerName:PortNumber/[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]  
     Or for [!INCLUDE[nav2017](includes/nav2017.md)]:
     
-    http://ComputerName:PortNumber/dynamicsnav100/webclient
+    https://ComputerName:PortNumber/dynamicsnav100/webclient
 
     -   Substitute **ComputerName** with the name of the computer where you installed [!INCLUDE[navnow](includes/navnow_md.md)]. If you are working on the computer where you installed [!INCLUDE[navnow](includes/navnow_md.md)], then you can use **localhost**.  
 
     -   Substitute **PortNumber** with the port that you configured for the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] during Setup.  
 
-        For example, if the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] is installed on port 8080, then you can use the following URL: `http://NavWeb:8080/DynamicsNAV110`. 
+        For example, if the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] is installed on port 8080, then you can use the following URL: `https://NavWeb:8080/DynamicsNAV110`. 
 
         For a list of supported devices and browsers, see [System Requirements for Microsoft Dynamics NAV](System-Requirements-for-Microsoft-Dynamics-NAV.md).  
 

@@ -21,7 +21,7 @@ There are several different web browsers that you can use to open the [!INCLUDE[
 |-------------|---------|  
 |Internet Explorer|[How to: Configure Internet Explorer for Microsoft Dynamics NAV Clients](How-to--Configure-Internet-Explorer-for-Microsoft-Dynamics-NAV-Clients.md)|  
 |Mozilla Firefox|[How to: Configure Mozilla Firefox for Microsoft Dynamics NAV Clients](How-to--Configure-Mozilla-Firefox-for-Microsoft-Dynamics-NAV-Clients.md)|  
-|Google Chrome|[Managing cookies](http://go.microsoft.com/fwlink/?LinkID=262171)<br /><br /> [Adjust JavaScript](http://go.microsoft.com/fwlink/?LinkID=262172)|  
-|Safari|[Manage cookies](http://go.microsoft.com/fwlink/?LinkID=262173)<br /><br /> [Enabling JavaScript](http://go.microsoft.com/fwlink/?LinkID=262174)|  
+|Google Chrome|[Managing cookies](https://go.microsoft.com/fwlink/?LinkID=262171)<br /><br /> [Adjust JavaScript](https://go.microsoft.com/fwlink/?LinkID=262172)|  
+|Safari|[Manage cookies](https://go.microsoft.com/fwlink/?LinkID=262173)<br /><br /> [Enabling JavaScript](https://go.microsoft.com/fwlink/?LinkID=262174)|  
 
  For a complete list of supported web browsers and versions, see [System Requirements for Microsoft Dynamics NAV](System-Requirements-for-Microsoft-Dynamics-NAV.md).

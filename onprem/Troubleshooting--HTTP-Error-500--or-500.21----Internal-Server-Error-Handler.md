@@ -21,7 +21,7 @@ When you try to access the [!INCLUDE[nav_web](includes/nav_web_md.md)], you get 
 ## Resolution  
  This error occurs because the Microsoft .NET Framework 4.0 configuration for ASP .NET has been damaged, which can occur if Microsoft Visual Studio 2012 was installed before Visual Studio 2010 or Microsoft SQL Server 2008.  
   
- To resolve this error, you must repair the .NET Framework 4.0.30319 version. However, the Microsoft .NET Framework 4.0 installation and configuration can vary depending on your system. You can try to repair the .NET Framework 4.0.30319 version from a command prompt \(as described in the following procedure\) or use the Microsoft .NET Framework Repair Tool that is available at [http://support.microsoft.com/kb/2698555](http://support.microsoft.com/kb/2698555).  
+ To resolve this error, you must repair the .NET Framework 4.0.30319 version. However, the Microsoft .NET Framework 4.0 installation and configuration can vary depending on your system. You can try to repair the .NET Framework 4.0.30319 version from a command prompt \(as described in the following procedure\) or use the Microsoft .NET Framework Repair Tool that is available at [https://support.microsoft.com/kb/2698555](https://support.microsoft.com/kb/2698555).  
   
 #### To repair the .NET Framework  
   

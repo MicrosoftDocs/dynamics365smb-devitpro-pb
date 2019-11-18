@@ -31,10 +31,10 @@ This range is for customizations. A partner can develop an extension tailored to
 The objects in this range are mainly designed when the Microsoft team localizes [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for a specific country or region. These objects cannot be used by partners.
 
 ## 1.000.000-69.999.999
-This is the Registered Solution Program (RSP) range which partners that have an ISV solution for on-premise have access to. The partner can choose to use this range for developing extensions that can be used either in [!INCLUDE[navnow_md](includes/navnow_md.md)] on-premise or in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] in the cloud. When used in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] these extensions are obtained as apps from [appsource.microsoft.com](http://appsource.microsoft.com).
+This is the Registered Solution Program (RSP) range which partners that have an ISV solution for on-premise have access to. The partner can choose to use this range for developing extensions that can be used either in [!INCLUDE[navnow_md](includes/navnow_md.md)] on-premise or in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] in the cloud. When used in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] these extensions are obtained as apps from [appsource.microsoft.com](https://appsource.microsoft.com).
 
 ## 70.000.000-74.999.999
-Partners can obtain ranges for extension development that runs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] in the cloud. This range is only available for extension development and only in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. These extensions are obtained as apps from [appsource.microsoft.com](http://appsource.microsoft.com).
+Partners can obtain ranges for extension development that runs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] in the cloud. This range is only available for extension development and only in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. These extensions are obtained as apps from [appsource.microsoft.com](https://appsource.microsoft.com).
 
 For more information, please see the [Ready To Go](https://aka.ms/readytogo) program.
 

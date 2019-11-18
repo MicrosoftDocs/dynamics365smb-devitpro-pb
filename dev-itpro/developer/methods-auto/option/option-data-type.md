@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,15 +44,15 @@ procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
  --> 
 
 ## Example  
-In the Purchase Header table, the Status field is an Option data type. In the following example, the option value is converted into an integer. This example requires that you create the following variables.  
-  
-|Name|Data type|Subtype|  
-|----------|---------------|-------------|  
-|Number|Integer|Not applicable|  
-|PurchHeaderRec|Record|Purchase Header|  
-  
-```  
-Number := PurchHeaderRec."Document Type";  
+In the Purchase Header table, the Status field is an Option data type. In the following example, the option value is converted into an integer.
+
+ ```
+ var
+    Number: Integer;
+    PurchHeaderRec: Record "Purchase Header";
+begin 
+    Number := PurchHeaderRec."Document Type";  
+end;
 ```  
   
 ## Example  

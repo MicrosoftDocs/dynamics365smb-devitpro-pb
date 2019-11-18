@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,26 +47,21 @@ The resulting checksum value.
 
 ## Example  
  This example shows how to use the STRCHECKSUM method to calculate a checksum.  
-
- This example requires that you create the following global variables and text constants.  
-
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|StrNumber|Text|30|  
-|Weight|Text|30|  
-|Modulus|Integer|Not applicable|  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The number: %1\\|  
-|Text001|has the checksum: %2|  
-
+ 
 ```  
-StrNumber := '4378';  
-Weight := '1234';  
-Modulus := 7;   
-CheckSum := STRCHECKSUM(StrNumber, Weight, Modulus);   
-MESSAGE(Text000 + Text001, StrNumber, CheckSum);  
+var
+    StrNumber: Text[30];
+    Weight: Text[30];
+    Modulus: Integer;
+    Text000: TextConst ENU='The number: %1\\';
+    Text001: TextConst ENU='has the checksum: %2';
+begin
+    StrNumber := '4378';  
+    Weight := '1234';  
+    Modulus := 7;   
+    CheckSum := STRCHECKSUM(StrNumber, Weight, Modulus);   
+    MESSAGE(Text000 + Text001, StrNumber, CheckSum);  
+end;
 ```  
 
  The formula is:  
@@ -96,24 +91,20 @@ MESSAGE(Text000 + Text001, StrNumber, CheckSum);
 
 5.  The modulus 10 checksum is then \(10 - Total MOD 10\) MOD 10.  
 
- This example requires that you create the following global variables and text constants.  
-
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|StrNumber|Text|30|  
-|Weight|Text|30|  
-|Modulus|Integer|Not applicable|  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The EAN code: %1\\|  
-|Text001|has the checksum: %2|  
-
+ 
 ```  
-StrNumber := '577622135746';  
-Weight := '131313131313';  
-CheckSum := STRCHECKSUM(StrNumber, Weight);  
-MESSAGE(Text000 + Text001, StrNumber, CheckSum);  
+var
+    StrNumber: Text[30];
+    Weight: Text[30];
+    Modulus: Integer;
+    Text000: TextConst ENU='The EAN code: %1\\';
+    Text001: TextConst ENU='has the checksum: %2';
+begin
+    StrNumber := '577622135746';  
+    Weight := '131313131313';  
+    CheckSum := STRCHECKSUM(StrNumber, Weight);  
+    MESSAGE(Text000 + Text001, StrNumber, CheckSum);  
+end;
 ```  
 
  The message window displays the following:  

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -46,24 +46,21 @@ The table lock is released (unlocked) when the transaction is committed.
  This method works the same as the [LOCKTABLE Method \(Record\)](../record/record-locktable-method.md).  
   
 ## Example  
- The following example opens table number 18 \(Customer\) as a RecordRef that is named MyRecordRef. The LOCKTABLE method locks the table. This ensures that no records are inserted or deleted during the counting process. The [COUNT Method \(RecordRef\)](recordref-count-method.md) then retrieves the number of records in the table. The number of records is stored in the Count variable. The name of the table and the number of records in the table is displayed in a message box. The varTableNo variable can be used to open any table and get the number of records in that table by changing the value of the varTableNo variable. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyRecordRef|RecordRef|  
-|Count|Integer|  
-|varTableNo|Integer|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|The number of records in the %1 table is: %2.|  
+ The following example opens table number 18 \(Customer\) as a RecordRef that is named MyRecordRef. The LOCKTABLE method locks the table. This ensures that no records are inserted or deleted during the counting process. The [COUNT Method \(RecordRef\)](recordref-count-method.md) then retrieves the number of records in the table. The number of records is stored in the Count variable. The name of the table and the number of records in the table is displayed in a message box. The varTableNo variable can be used to open any table and get the number of records in that table by changing the value of the varTableNo variable. 
   
 ```  
-varTableNo := 18;  
-MyRecordRef.OPEN(varTableNo);  
-MyRecordRef.LOCKTABLE;  
-Count := MyRecordRef.COUNT;  
-MESSAGE(Text000, MyRecordRef.NAME, Count);  
+var
+    CustomerRecref: RecordRef;
+    Count: Integer;
+    varTableNo: Integer;
+    Text000: TextConst ENU='The number of records in the %1 table is: %2.'; 
+begin
+    varTableNo := 18;  
+    MyRecordRef.OPEN(varTableNo);  
+    MyRecordRef.LOCKTABLE;  
+    Count := MyRecordRef.COUNT;  
+    MESSAGE(Text000, MyRecordRef.NAME, Count);  
+end;
 ```  
   
 ## Example  

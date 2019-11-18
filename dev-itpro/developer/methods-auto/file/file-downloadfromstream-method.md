@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -72,20 +72,19 @@ The name to give the downloaded file. This is the default file name that is show
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]   
 
 ## Example  
- This example requires that you create the following variables.  
 
-|Name|DataType|  
-|----------|--------------|  
-|TempFile|File|  
-|NewStream|InStream|  
-|ToFileName|Variant|  
-
-```  
-TempFile.CREATETEMPFILE();  
-TempFile.WRITE('abc');  
-TempFile.CREATEINSTREAM(NewStream);  
-ToFileName := 'SampleFile.txt';  
-DOWNLOADFROMSTREAM(NewStream,'Export','','All Files (*.*)|*.*',ToFileName)  
+```
+ var
+    TempFile: File;
+    NewStream: InsTream;
+    ToFileName: Variant;
+begin  
+    TempFile.CREATETEMPFILE();  
+    TempFile.WRITE('abc');  
+    TempFile.CREATEINSTREAM(NewStream);  
+    ToFileName := 'SampleFile.txt';  
+    DOWNLOADFROMSTREAM(NewStream,'Export','','All Files (*.*)|*.*',ToFileName);
+end;
 ```  
 
 

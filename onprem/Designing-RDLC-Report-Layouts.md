@@ -24,9 +24,9 @@ To create an RDLC layout, you use Report Designer for Visual Studio or Report Bu
   
  You generally display most data in the body of a report, and you use the header to display information before any dataset fields are displayed. For example, you can display a report title, company, and user information in the header of a report.  
   
- For general information about Visual Studio Report Designer, see [Report Designer \(Visual Studio\)](http://go.microsoft.com/fwlink/?LinkID=123725).  
+ For general information about Visual Studio Report Designer, see [Report Designer \(Visual Studio\)](https://go.microsoft.com/fwlink/?LinkID=123725).  
   
- For general information about SQL Server Report Builder, see [Report Design View \(Report Builder\)](http://go.microsoft.com/fwlink/?LinkId=317717).  
+ For general information about SQL Server Report Builder, see [Report Design View \(Report Builder\)](https://go.microsoft.com/fwlink/?LinkId=317717).  
   
 ## Working with SQL Server Report Builder or Visual Studio Report Designer  
  By default, Visual Studio Report Designer is used when you work with RDLC layouts if it is installed on the computer that is running the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)]. Otherwise, SQL Server Report Builder is used. SQL Server Report Builder is installed with the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)].  

@@ -30,7 +30,7 @@ The following table describes the settings in the `app.json` file:
 |privacyStatement|No, but required for AppSource submission|URL to the privacy statement for the extension.|
 |EULA|No, but required for AppSource submission|URL to the license terms for the extension.|
 |help|No, but required for AppSource submission|URL to an online description of the extension. The link is used in AppSource and can be the same as the value of the `contextSensitiveHelpUrl` property or a different link, such as a link to your marketing page.|
-|url|No|URL of the extension package.|
+|url|No, but required for AppSource submission|URL of the extension package.|
 |logo|No, but required for AppSource submission|Relative path to the app package logo from the root of the package.|
 |dependencies|No|List of dependencies for the extension package. For example: `"dependencies": [ {  "appId": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"},{}]`. <br>For dependencies to the System Application and Base Application, you must have a reference such as: `"dependencies": [{"appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f", "publisher": Microsoft", "name": "System Application", "version": "1.0.0.0"},{"appId": "437dbf0e-84ff-417a-965d-ed2bb9650972", "publisher": "Microsoft", "name": "Base Application", "version": "15.0.0.0" }]`<br>For more information, see [Overview of the System Application](devenv-system-application-overview.md).|
 |screenshots|No|Relative paths to any screenshots that should be in the extension package.|
@@ -56,7 +56,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |name|Yes|"Your own server"|
 |type|Yes|Must be set to `".al"`. Required by Visual Studio Code.|
 |request|Yes|Request type of the configuration. Must be set to `"launch"`. Required by Visual Studio Code.|
-|server|Yes|The HTTP URL of your server, for example: `"http://localhost|serverInstance"`|
+|server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|
 |port|No|The port assigned to the development service.|
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
 |authentication|Yes|Specifies the server authentication method and can be set to `"UserPassword"`, `"Windows"`, or `"AAD"`. Currently, AAD authentication is supported only for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandboxes. AAD authentication cannot be used for on-premise servers.|

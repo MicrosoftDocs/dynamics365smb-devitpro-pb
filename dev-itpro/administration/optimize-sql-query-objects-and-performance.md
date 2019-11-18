@@ -31,9 +31,9 @@ A *query* is an object in [!INCLUDE[prodlong](../developer/includes/prodlong.md)
   
  The SQL Server optimizer automatically chooses a covering index strategy whenever possible.  
   
- For more information about SQL Server covering indexes, see [SQL Server Optimization](http://go.microsoft.com/fwlink/?LinkId=257836).  
+ For more information about SQL Server covering indexes, see [SQL Server Optimization](https://go.microsoft.com/fwlink/?LinkId=257836).  
   
- For more information about SQL Server clustered and non-clustered indexes, see [Types of Indexes](http://go.microsoft.com/fwlink/?LinkID=257835).  
+ For more information about SQL Server clustered and non-clustered indexes, see [Types of Indexes](https://go.microsoft.com/fwlink/?LinkID=257835).  
   
 ## Covering SIFT Indexes  
  Similar to how indexes can be used to retrieve data for a query, SIFT indexes can be used to retrieve data for a query that contains totals. SIFT totals are maintained after each insert, modify, or delete call, and so some or all of the totals are already calculated. A SIFT index can be used when the following conditions are true:  
@@ -59,7 +59,7 @@ A *query* is an object in [!INCLUDE[prodlong](../developer/includes/prodlong.md)
 
 ## Enabling and Disabling Selected Query Hints
 
-SQL Server query optimizer will try to select the best execution plan for SELECT, INSERT, UPDATE, and DELETE statements. Most of the time, query optimizer makes the right choice. [Query hints](https://docs.microsoft.com/en-us/sql/t-sql/queries/hints-transact-sql-query?view=sql-server-2017) are strategies that can be enforced by the SQL Server query processor to override any execution plan that the query optimizer might select for a query. The [!INCLUDE[server](../developer/includes/server.md)] instance includes configuration settings that let you enable or disable the use of the selected query hints on the database.
+SQL Server query optimizer will try to select the best execution plan for SELECT, INSERT, UPDATE, and DELETE statements. Most of the time, query optimizer makes the right choice. [Query hints](https://docs.microsoft.com/sql/t-sql/queries/hints-transact-sql-query?view=sql-server-2017) are strategies that can be enforced by the SQL Server query processor to override any execution plan that the query optimizer might select for a query. The [!INCLUDE[server](../developer/includes/server.md)] instance includes configuration settings that let you enable or disable the use of the selected query hints on the database.
 
 For more information, see [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](sql-server-query-hints.md).
   

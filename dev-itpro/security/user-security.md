@@ -6,6 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
+author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # User Security in Business Central
@@ -17,9 +18,9 @@ ms.service: "dynamics365-business-central"
 
 For users to access the application, they must be have a valid user account in the application. Then, they must be granted permissions to the various areas of the application, based on their role. The management of user accounts and permissions is done from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. For more information, see the following articles in the Business Central application help:
 
--   [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions)  
+-   [Managing Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions)  
 
--   [Understanding Users, Profiles, and Role Centers](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-users-profiles-roles)
+-   [Understanding Users, Profiles, and Role Centers](https://docs.microsoft.com/dynamics365/business-central/admin-users-profiles-roles)
 
 ## User authentication
 Before users can sign-in to the application, they must be authenticated as valid user in the system. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports several authentication methods. You configure the authentication method on the server-tiers of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].

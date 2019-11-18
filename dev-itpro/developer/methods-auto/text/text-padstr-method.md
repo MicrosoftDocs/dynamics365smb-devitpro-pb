@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -51,35 +51,31 @@ A copy of the string with the expected length.
  If you omit *FillCharacter* and *String* is longer than *Length*, then *String* is truncated.  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|Str1|Text|30|  
-|Str2|Text|30|  
-|Len1|Integer|Not applicable|  
-|Len2|Integer|Not applicable|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|13 characters|  
-|Text001|Four|  
-|Text002|Before PADSTR is called:\\|  
-|Text003|>%1\< has the length %2\\|  
-|Text004|>%3\< has the length %4\\|  
-|Text005|After PADSTR is called:\\|  
-  
+
 ```  
-Str1 := Text000;  
-Str2 := Text001;  
-Len1 := STRLEN(Str1);  
-Len2 := STRLEN(Str2);  
-MESSAGE(Text002 + Text003 + Text004, Str1, Len1, Str2, Len2);  
-Str1 := PADSTR(Str1, 5); // Truncate the length to 5  
-Str2 := PADSTR(Str2, 15, 'w'); // Concatenate w until length = 15  
-Len1 := STRLEN(Str1);  
-Len2 := STRLEN(Str2);  
-MESSAGE(Text005 + Text003 + Text004, Str1, Len1, Str2, Len2);  
+var
+    Str1: Text[30];
+    Str2: Text[30];
+    Len1: Integer;
+    Len2: Integer;
+    Text000: TextConst ENU='13 characters';
+    Text001: TextConst ENU='Four';
+    Text002: TextConst ENU='Before PADSTR is called:\\';
+    Text003: TextConst ENU='>%1< has the length %2\\';
+    Text004: TextConst ENU='>%3< has the length %4\\';  
+    Text005: TextConst ENU='After PADSTR is called:\\';    
+begin
+    Str1 := Text000;  
+    Str2 := Text001;  
+    Len1 := STRLEN(Str1);  
+    Len2 := STRLEN(Str2);  
+    MESSAGE(Text002 + Text003 + Text004, Str1, Len1, Str2, Len2);  
+    Str1 := PADSTR(Str1, 5); // Truncate the length to 5  
+    Str2 := PADSTR(Str2, 15, 'w'); // Concatenate w until length = 15  
+    Len1 := STRLEN(Str1);  
+    Len2 := STRLEN(Str2);  
+    MESSAGE(Text005 + Text003 + Text004, Str1, Len1, Str2, Len2);  
+end;
 ```  
   
  The first message window displays the following:  

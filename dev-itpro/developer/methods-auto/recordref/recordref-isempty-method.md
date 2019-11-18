@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,24 +47,20 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
  This method works the same as the [ISEMPTY Method \(Record\)](../record/record-isempty-method.md).  
 
 ## Example  
- The following example opens table 18, the customer table as a RecordRef variable that is named. CustomerRecref. The [ISEMPTY Method \(RECORDREF\)](recordref-isempty-method.md) determines whether the table is empty. The message box displays **No** because the Customer table is not empty. **No** represents **false**. This example requires that you create the following global variable and text constant.  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecref|RecordRef|  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Is the table empty? %1.|  
+ The following example opens table 18, the customer table as a RecordRef variable that is named. CustomerRecref. The [ISEMPTY Method \(RECORDREF\)](recordref-isempty-method.md) determines whether the table is empty. The message box displays **false** because the Customer table is not empty. **false** represents **false**. 
 
 ```  
-
-CustomerRecref.OPEN(18);  
-IsEmpty := CustomerRecref.ISEMPTY;  
-MESSAGE(Text000, IsEmpty);  
+var
+    CustomerRecref: RecordRef;
+    Text000: TextConst ENU='Is the table empty? %1.';
+begin 
+    CustomerRecref.OPEN(18);  
+    IsEmpty := CustomerRecref.ISEMPTY;  
+    MESSAGE(Text000, IsEmpty);  
+end;
 ```  
 
- If you open table 78 \(Printer Selection\), the message will display **Yes** because the table is empty.  
+ If you open table 78 \(Printer Selection\), the message will display **true** because the table is empty.  
 
 
 ## See Also

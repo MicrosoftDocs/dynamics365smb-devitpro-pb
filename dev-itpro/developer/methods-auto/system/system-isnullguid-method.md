@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,30 +41,25 @@ The GUID that you want to check whether it is null.
  The GUID data type is useful when you want to uniquely identify data so that it can be exchanged with external applications. For example, if you want to transfer an item catalog to an external application, you add a GUID field to the record in the table and use it as the primary reference when you communicate with the external application. A GUID is a 16-byte binary data type that can be logically grouped into the following subgroups: 4byte-2byte-2byte-2byte-6byte.  
   
 ## Example  
- The following example initializes two variables named validGuid and nullGuid. The validGuid variable is assigned a valid GUID value, and the nullGuid variable is assigned a null GUID that consists of only zeros. The ISNULLGUID method determines whether the GUID that is contained in the *validGuid* parameter is null. In this case, the GUID is not null so a message that states that the GUID is not null is displayed and the value is displayed. The method then checks the *nullGuid* parameter. This time, a message that states that the GUID is null is displayed because the GUID is a null GUID that consists of only zeros. This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|validGuid|GUID|  
-|nullGuid|GUID|  
-  
-|Text constant name|ENU value|  
-|------------------------|---------------|  
-|Text000|The GUID is null.|  
-|Text001|The GUID is not null.\\|  
-|Text002|The value is: %1.|  
-  
+ The following example initializes two variables named validGuid and nullGuid. The validGuid variable is assigned a valid GUID value, and the nullGuid variable is assigned a null GUID that consists of only zeros. The ISNULLGUID method determines whether the GUID that is contained in the *validGuid* parameter is null. In this case, the GUID is not null so a message that states that the GUID is not null is displayed and the value is displayed. The method then checks the *nullGuid* parameter. This time, a message that states that the GUID is null is displayed because the GUID is a null GUID that consists of only zeros. 
+ 
 ```  
-  
-validGuid := '{FC841BE6-0ADA-46C4-A6A9-142AEC211613}';  
-nullGuid  := '{00000000-0000-0000-0000-000000000000}';  
-  
-if ISNULLGUID(validGuid) then  
-  MESSAGE(Text000)  
-else   
-  MESSAGE(Text001 + Text002, validGuid);  
-if ISNULLGUID(nullGuid) then  
-  MESSAGE(Text000);  
+var
+    validGuid: GUID;
+    nullGuid: GUID;
+    Text000: TextConst ENU='The GUID is null';
+    Text0001: TextConst ENU='The GUID is not null.\\';
+    Text0002: TextConst ENU='The value is %1.';
+begin
+    validGuid := '{FC841BE6-0ADA-46C4-A6A9-142AEC211613}';  
+    nullGuid  := '{00000000-0000-0000-0000-000000000000}';        
+    if ISNULLGUID(validGuid) then  
+      MESSAGE(Text000)  
+    else   
+      MESSAGE(Text001 + Text002, validGuid);  
+    if ISNULLGUID(nullGuid) then  
+      MESSAGE(Text000);  
+end;
 ```  
   
 

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,28 +47,27 @@ If you omit this optional return value and the operation does not execute succes
 
 For more information about how zero bytes and line endings are written and read, see [WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
 ## Example  
- This example requires that you create the following variables.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyHTMLFile|File|  
-|TestOutStream|OutStream|  
-  
+
  This example also requires that the c:\\TestFiles folder exists.  
   
 ```  
-MyHTMLFile.CREATE('c:\TestFiles\main.html');  
-MyHTMLFile.CREATEOUTSTREAM(TestOutStream);  
-TestOutStream.WRITETEXT('<html>');  
-TestOutStream.WRITETEXT;  
-TestOutStream.WRITETEXT('<head>');  
-TestOutStream.WRITETEXT('<title>My Page</title>');  
-TestOutStream.WRITETEXT('</head>');  
-TestOutStream.WRITETEXT;  
-TestOutStream.WRITETEXT('<P>Hello world!</p>');  
-TestOutStream.WRITETEXT;  
-TestOutStream.WRITETEXT('</html>');  
-FileMyHTML.CLOSE;  
+ var
+    MyHTMLFile: File;
+    TestOutStream: OutStream;
+begin
+    MyHTMLFile.CREATE('c:\TestFiles\main.html');  
+    MyHTMLFile.CREATEOUTSTREAM(TestOutStream);  
+    TestOutStream.WRITETEXT('<html>');  
+    TestOutStream.WRITETEXT;  
+    TestOutStream.WRITETEXT('<head>');  
+    TestOutStream.WRITETEXT('<title>My Page</title>');  
+    TestOutStream.WRITETEXT('</head>');  
+    TestOutStream.WRITETEXT;  
+    TestOutStream.WRITETEXT('<P>Hello world!</p>');  
+    TestOutStream.WRITETEXT;  
+    TestOutStream.WRITETEXT('</html>');  
+    FileMyHTML.CLOSE;  
+end;
 ```  
   
 ## See Also

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -36,24 +36,20 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example opens the Item table as a RecordRef variable that is named ItemRecref, creates a reference to field 1 \(No.\), and stores the value in the variable named MyFieldRef. The RECORD method uses the MyFieldRef variable to return the RecordRef of field 1 and stores the reference in a variable named MyRecRef. `MyRecRef.NUMBER` returns the table that the selected field belongs to. This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|ItemRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|MyRecRef|RecordRef|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The selected field is from table %1.|  
-  
-```  
-  
-ItemRecref.OPEN(DATABASE::Item);  
-MyFieldRef := ItemRecref.FIELD(1);  
-MyRecRef := MyFieldRef.RECORD;  
-MESSAGE(Text000, MyRecRef.NUMBER);  
+ The following example opens the Item table as a RecordRef variable that is named ItemRecref, creates a reference to field 1 \(No.\), and stores the value in the variable named MyFieldRef. The RECORD method uses the MyFieldRef variable to return the RecordRef of field 1 and stores the reference in a variable named MyRecRef. `MyRecRef.NUMBER` returns the table that the selected field belongs to. 
+
+```
+var
+    MyFieldRef: FieldRef;
+    ItemRecref: RecordRef;
+    MyRecRef: RecordRef;
+    Text000: TextConst ENU='The selected field is from table %1.';
+begin
+    ItemRecref.OPEN(DATABASE::Item);  
+    MyFieldRef := ItemRecref.FIELD(1);  
+    MyRecRef := MyFieldRef.RECORD;  
+    MESSAGE(Text000, MyRecRef.NUMBER);  
+end;
 ```  
   
 

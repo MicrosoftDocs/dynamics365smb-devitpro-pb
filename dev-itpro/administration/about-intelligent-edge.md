@@ -2,7 +2,6 @@
 title: Connect to the Intelligent Cloud from on-premises | Microsoft Docs
 description: Get a cloud copy of your data so you are connected to the intelligent cloud also when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL, or Dynamics NAV.
 author: bmeier94
-
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na

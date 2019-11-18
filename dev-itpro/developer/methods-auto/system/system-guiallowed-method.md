@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,15 +41,13 @@ Ok :=   System.GuiAllowed()
 ## Example  
  This example shows how to use the GUIALLOWED method.  
 
- This example requires that you create the following global text constant.  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Code is running on a client.|  
-
 ```  
-if GUIALLOWED then  
- MESSAGE(Text000);  
+var
+    Text000: TextConst ENU='Code is running on a client.';
+begin
+    if GUIALLOWED then  
+     MESSAGE(Text000);  
+end;
 ```  
 
  If the code runs on a client, which means that the user interface is available, a message box will appear with the following message.  

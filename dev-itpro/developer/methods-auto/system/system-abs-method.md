@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,20 +43,18 @@ The system automatically converts all of the numeric data types for you.
 
 ## Example 
 
-This example shows how to remove the sign from a negative numeric value. This example requires that you create the following global variables and text constant.
-
-|Variable name|DataType|  
-|-------------------|--------------|
-|y|Decimal|  
-
-|Text constant name|ENU Value|  
-|------------------------|---------------|  
-|Text000|x = %1, y = %2|  
+This example shows how to remove the sign from a negative numeric value. 
 
 ```  
-x := -10.235; // x is assigned a negative value  
-y := ABS(x); // y is assigned the value of x without sign  
-MESSAGE(Text000, x, y);  
+var
+    x: Decimal;
+    y: Decimal;
+    Text000: TextConst ENU="x = %1, y = %2";
+begin
+    x := -10.235; // x is assigned a negative value  
+    y := ABS(x); // y is assigned the value of x without sign  
+    MESSAGE(Text000, x, y);  
+end;
 ```  
 
  The message window displays the following:  

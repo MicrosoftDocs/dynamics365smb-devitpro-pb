@@ -15,7 +15,7 @@ A key pillar of helping users help themselves is to give them access to Help for
 
 ## App-level configuration
 
-At an app level, you can specify where the Help for your functionality is published in the app.json file. For example, if you publish your content to `https://mysite.com/en-us/mysolution`, then you would specify that in the *contextSensitiveHelpUrl* property as shown in the following example:
+At an app level, you can specify where the Help for your functionality is published in the app.json file. For example, if you publish your content to `https://mysite.com/mysolution`, then you would specify that in the *contextSensitiveHelpUrl* property as shown in the following example:
 
 ```json
   "contextSensitiveHelpUrl": "https://mysite.com/documentation",

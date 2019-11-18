@@ -39,7 +39,7 @@ To inspire you in creating a good landing page for your app, two of our valued p
 
 Have a look at their app landing pages and use them as inspiration to build your own landing page:
 
-[Industry Built’s Build Food app](http://www.buildfood.cloud/)
+[Industry Built’s Build Food app](https://www.buildfood.cloud/)
 
 [LS Retail’s LS Express Start app](https://lsexpress.lsretail.com/)
 
@@ -65,7 +65,7 @@ We urge you to review and implement these best practices on your landing page �
 - The upper-left corner of the landing page is the most valuable section of the entire landing page.
 - Place your company logo in this location.
 
-If you need help formulating a positioning statement, try the value proposition generator located at [here](http://neuralimpact.ca/valueproposition/) 
+If you need help formulating a positioning statement, try the value proposition generator located at [here](https://neuralimpact.ca/valueproposition/) 
 - There should ideally be 5 or fewer choices; do not include more than 7 options.
 - The menu text should state what the prospect gains if they click on the menu item
 - The text should be written from their perspective, not yours.

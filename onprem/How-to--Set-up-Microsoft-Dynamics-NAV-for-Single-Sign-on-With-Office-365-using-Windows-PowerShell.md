@@ -44,15 +44,15 @@ manager: edupont
   
 -   An Office365 subscription  
   
-     If you want to sign up for an Office 365 plan, you can use a plan such as Office 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account which you will use to access the Azure management portal. For example, if your Office 365 site is *Solutions.onmicrosoft.com*, your administrative account can be *admin@solutions.onmicrosoft.com*. For more information, see [Select an Office 365 plan for business](http://go.microsoft.com/fwlink/?LinkId=309050).  
+     If you want to sign up for an Office 365 plan, you can use a plan such as Office 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account which you will use to access the Azure management portal. For example, if your Office 365 site is *Solutions.onmicrosoft.com*, your administrative account can be *admin@solutions.onmicrosoft.com*. For more information, see [Select an Office 365 plan for business](https://go.microsoft.com/fwlink/?LinkId=309050).  
   
 -   Azure Active Directory Tenant Management Components  
   
      The cmdlet relies on the presence of the following components on the system:  
   
-    -   [Microsoft Online Services Sign-In Assistant for IT Professionals](http://go.microsoft.com/fwlink/?LinkId=394784)  
+    -   [Microsoft Online Services Sign-In Assistant for IT Professionals](https://go.microsoft.com/fwlink/?LinkId=394784)  
   
-    -   [Microsoft Azure Active Directory Module for Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=394785)  
+    -   [Microsoft Azure Active Directory Module for Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=394785)  
   
      You can download and install these components from the links provided earlier in this section. If you have to decide between 32-bit and 64-bit versions of components, download the version that matches the Windows Operating System type.  
   
@@ -79,7 +79,7 @@ manager: edupont
     |ServerInstanceName|Specifies the name of your [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. To find the names for the [!INCLUDE[nav_server](includes/nav_server_md.md)] instances, run the `Get-NAVServerInstance` cmdlet|  
     |WebServerInstanceName|Specifies the name of your [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. To find the names for the [!INCLUDE[nav_web](includes/nav_web_md.md)] instances running in your IIS, run the `Get-NAVWebServerInstance` cmdlet.|  
     |YourNavUser|Specifies the name of your [!INCLUDE[navnow](includes/navnow_md.md)] user account. `YourNavUser` links the [!INCLUDE[navnow](includes/navnow_md.md)] user account to your Office 365 account by providing your Office 365 email address as the `AuthenticationEmail` for the provided [!INCLUDE[navnow](includes/navnow_md.md)] user account. This parameter is optional.|  
-    |YourOffice365Email|Specifies the email address of your Office 365 user account. The syntax is *username@o365tenant.onmicrosoft.com*. This parameter is optional. **Important:**  This user must have administrative permissions, such as the Global Administrator role. If you create a custom administrator role for this account, the account must have permission to create service principals in Azure. For more information, see [Assigning admin roles](https://support.office.com/en-us/article/Assigning-admin-roles-d58b8089-cbfd-41ec-b64c-9cfcbef495ac).|  
+    |YourOffice365Email|Specifies the email address of your Office 365 user account. The syntax is *username@o365tenant.onmicrosoft.com*. This parameter is optional. **Important:**  This user must have administrative permissions, such as the Global Administrator role. If you create a custom administrator role for this account, the account must have permission to create service principals in Azure. For more information, see [Assigning admin roles](https://support.office.com/article/Assigning-admin-roles-d58b8089-cbfd-41ec-b64c-9cfcbef495ac).|  
     |SecurityCertificateThumbprint|Specifies the thumbprint for the security certificate that was used for securing the client–server communication channel. Get the list of thumbprints for your certificates by issuing this Windows PowerShell command: `Get-ChildItem -Path "Cert:\LocalMachine\My"` **Note:**  You can avoid providing this parameter if you already have your [!INCLUDE[nav_server](includes/nav_server_md.md)] configured to use a security certificate. This applies to [!INCLUDE[navnow](includes/navnow_md.md)] installations in the Azure environment, and other environments where any credential type other than Windows is active and functional.|  
   
 2.  When the `Set-NavSingleSignOnWithOffice365` cmdlet is run, a dialog box will open, requesting your Office 365 account user name and password.  

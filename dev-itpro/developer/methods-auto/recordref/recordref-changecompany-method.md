@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -55,24 +55,19 @@ Even if you run the **CHANGECOMPANY** method, triggers still run in the current 
 ## Example  
 This example shows how to use the **CHANGECOMPANY** method. The following code takes a RecordRef to table **18 Customer** in the current company and redirects it to the table in another company \(in this case Company B\). The last record in the Customer table of Company B is then deleted.  
 
-This example requires that you create the following global variables and text constant  
-
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyRecordRef|RecordRef|  
-|RecID|RecordID|  
-
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|Record to be deleted: %1|  
-
-```  
-MyRecordRef.OPEN(18);  
-MyRecordRef.CHANGECOMPANY('Company B');  
-MyRecordRef.FINDLAST;  
-RecID := MyRecordRef.RECORDID;  
-MESSAGE(Text000, RecID);  
-MyRecordRef.DELETE;  
+```
+var
+    RecID: RecordID;
+    MyRecordRef: RecordRef;
+    Text000: TextConst ENU='Record to be deleted: %1';
+begin
+    MyRecordRef.OPEN(18);  
+    MyRecordRef.CHANGECOMPANY('Company B');  
+    MyRecordRef.FINDLAST;  
+    RecID := MyRecordRef.RECORDID;  
+    MESSAGE(Text000, RecID);  
+    MyRecordRef.DELETE;  
+end;
 ```  
 
 ## See Also

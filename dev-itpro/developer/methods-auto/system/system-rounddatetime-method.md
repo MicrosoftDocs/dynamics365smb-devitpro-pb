@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -56,20 +56,20 @@ The rounded result.
  We recommend that you do not use a value greater than 60\*60\*1000, which is the number of milliseconds in an hour, for the *Precision* parameter. The Regional and Language Options in Windows affect how the hour and date parts of a DateTime are rounded. To display a DateTime in a specific format, we recommend that you use the [FORMAT Method \(Code, Text\)](../../methods/devenv-format-method-code-text.md) instead of the ROUNDDATETIME method.  
 
 ## Example  
- This example shows how to use the ROUNDDATETIME method to round to the nearest second. This example requires that you create the following global text constant.  
-
-|Text constant name|ENU value|  
-|------------------------|---------------|  
-|Text000|ROUNDDATETIME\(%1, %2\) returns %3.|  
-
+ This example shows how to use the ROUNDDATETIME method to round to the nearest second. 
+ 
 ```  
-DateToRound := 112708D;  
-TimeToRound := 093524.567T;  
-DateTimeToRound := CREATEDATETIME(DateToRound, TimeToRound);  
-Precision := 1000L;  
-FormatString := '<Month,2>/<Day,2>/<Year> <Hours24,2>:<Minutes,2>:<Seconds,2>.<Thousands,3>';  
-Result := ROUNDDATETIME(DateTimeToRound, Precision);  
-MESSAGE(TEXT000, Format(DateTimeToRound,0,FormatString), Precision, Format(Result,0,FormatString));  
+var
+    Text000: TextConst ENU='ROUNDDATETIME(%1, %2) returns %3.';
+begin
+    DateToRound := 20081127D;  
+    TimeToRound := 093524.567T;  
+    DateTimeToRound := CREATEDATETIME(DateToRound, TimeToRound);  
+    Precision := 1000L;  
+    FormatString := '<Month,2>/<Day,2>/<Year> <Hours24,2>:<Minutes,2>:<Seconds,2>.<Thousands,3>';  
+    Result := ROUNDDATETIME(DateTimeToRound, Precision);  
+    MESSAGE(TEXT000, Format(DateTimeToRound,0,FormatString), Precision, Format(Result,0,FormatString)); 
+end;
 ```  
 
  The message window displays the following:  

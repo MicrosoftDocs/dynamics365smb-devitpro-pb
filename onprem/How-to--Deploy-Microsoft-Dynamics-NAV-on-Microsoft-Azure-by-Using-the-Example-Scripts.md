@@ -101,7 +101,7 @@ This topic describes how to deploy [!INCLUDE[navnow](includes/navnow_md.md)] by 
     The NAV Server machine administrator password: 123NavVm!a  
     The NAV Server Instance is: nav_server_instance_Ins1  
     The NAV Server account credentials: NSTService/P@ssword312  
-    The Windows client can be downloaded via ClickOnce at: http://MyNavVm.cloudapp.net:9004  
+    The Windows client can be downloaded via ClickOnce at: https://MyNavVm.cloudapp.net:9004  
     The Web Client can be accessed at: https://MyNavVm.cloudapp.net/nav_server_instance_Ins1  
     A user has been added to the database with the following credentials:  
       user=navuser  

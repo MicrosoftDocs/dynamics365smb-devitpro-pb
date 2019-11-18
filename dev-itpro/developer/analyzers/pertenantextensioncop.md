@@ -1,14 +1,14 @@
 ---
 title: "PerTenantExtensionCop Analyzer"
-ms.author: solsen
+ms.author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/15/2019
+ms.date: 11/15/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,8 +20,8 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 
 |Id|Title|Description|MessageFormat|Category|Default Severity|IsEnabledbyDefault|
 |--|-----|-----------|-------------|--------|----------------|------------------|
-|[PTE0001](pertenantextensioncop-pte0001-objectidmustbeinfreerange.md)|Object ID must be in free range.|Object ID must be in free range.|{0} '{1}' has an ID of [{2}]. It must be between {3} and {4}.|ObjectValidation|Error|true|
-|[PTE0002](pertenantextensioncop-pte0002-fieldidmustbeinfreerange.md)|Field ID must be in free range.|Field ID must be in free range.|Field '{0}' has an ID of [{1}]. It must be between {2} and {3}.|ObjectValidation|Error|true|
+|[PTE0001](pertenantextensioncop-pte0001-objectidmustbeinfreerange.md)|Object ID must be in free range.|Object ID must be in free range.|{0} '{1}' has an ID of [{2}]. It must be between within the range '{3}'.|ObjectValidation|Error|true|
+|[PTE0002](pertenantextensioncop-pte0002-fieldidmustbeinfreerange.md)|Field ID must be in free range.|Field ID must be in free range.|Field '{0}' has an ID of [{1}]. It must be between within the range '{2}'.|ObjectValidation|Error|true|
 |[PTE0003](pertenantextensioncop-pte0003-donotsubscribetooncompanyopenevents.md)|Functions must not subscribe to CompanyOpen events.|Functions must not subscribe to CompanyOpen events.|Function {0} subscribes to {1}.|ObjectValidation|Error|true|
 |[PTE0004](pertenantextensioncop-pte0004-tablesmusthavepermissionsetdefined.md)|Table definitions must have a matching permission set.|Table definitions must have a matching permission set.|Table '{0}' is missing a matching permission set.|ObjectValidation|Error|true|
 |[PTE0005](pertenantextensioncop-pte0005-manifesttargetmustnotbeinternal.md)|Property 'target' has invalid value.|'Internal' is a reserved usage for the 'target' property.|App.json 'target' property must not be set to 'Internal' or 'OnPrem'.|PackageValidation|Error|true|

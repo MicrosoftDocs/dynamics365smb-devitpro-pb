@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -51,23 +51,21 @@ The one-based index of the first occurrence of the substring inside the string.
 ## Example  
  This example shows how to use the STRPOS method.  
   
- This example requires that you create the following text constants.  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|'ABC abc abc xy'|  
-|Text001|'abc'|  
-|Text002|'The search for the substring: >%1\<\\'|  
-|Text003|'in the string: >%2\<,\\'|  
-|Text004|'returns the position: %3'|  
-  
 ```  
-String := Text000;  
-SubStr := Text001  
-Pos := STRPOS(String, SubStr);  
-MESSAGE(Text002 + Text003 + Text004, SubStr, String, Pos);  
-// The STRPOS method is case-sensitive. Furthermore, it only  
-// returns the position of the 1st occurrence of the substring.  
+var
+    Text000: TextConst ENU='ABC abc abc xy';  
+    Text001: TextConst ENU='abc'; 
+    Text002: TextConst ENU='The search for the substring: >%1<\\'; 
+    Text003: TextConst ENU='in the string: >%2<,\\'; 
+    Text004: TextConst ENU='returns the position: %3';  
+begin
+    String := Text000;  
+    SubStr := Text001  
+    Pos := STRPOS(String, SubStr);  
+    MESSAGE(Text002 + Text003 + Text004, SubStr, String, Pos);  
+    // The STRPOS method is case-sensitive. Furthermore, it only  
+    // returns the position of the 1st occurrence of the substring.  
+end;
 ```  
   
  The message window displays the following:  

@@ -35,7 +35,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], creating new reports is di
 
 -   Resynchronizing the report layout with [!INCLUDE[navnow](includes/navnow_md.md)] and running the report.  
 
- For more information about how to design the layout of a report by using Visual Studio, see [Defining a Report Layout \(Visual Studio Report Designer\)](http://go.microsoft.com/fwlink/?LinkID=133192).  
+ For more information about how to design the layout of a report by using Visual Studio, see [Defining a Report Layout \(Visual Studio Report Designer\)](https://go.microsoft.com/fwlink/?LinkID=133192).  
 
 ### Prerequisites  
  To complete this walkthrough, you will need:  

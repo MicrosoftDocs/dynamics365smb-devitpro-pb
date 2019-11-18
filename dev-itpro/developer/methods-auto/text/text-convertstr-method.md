@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -53,30 +53,26 @@ The input string with the converted characters.
  If either the *FromCharacters* or the *ToCharacters* strings are empty, then the source is returned unchanged.  
   
 ## Example  
- This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|OriginalString|Text|30|  
-|FromChars|Text|30|  
-|ToChars|Text|30|  
-|NewString|Text|30|  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|Do you want to leave without saving?|  
-|Text001|lws|  
-|Text002|LWS|  
-|Text003|The original sentence is:\\ %1|  
-|Text004|The sentence is converted to:\\ %1|  
-  
+
 ```  
-OriginalString := Text000;  
-FromChars := Text001;  
-ToChars := Text002;   
-NewString := CONVERTSTR(OriginalString, FromChars, ToChars);  
-MESSAGE(Text003, OriginalString);  
-MESSAGE(Text004, NewString);  
+var
+    OriginalString: Text[30];
+    FromChars: Text[30];
+    ToChars: Text[30];
+    NewString: Text[30];
+    Text000: TextConst ENU='Do you want to leave without saving?';
+    Text001: TextConst ENU='lws';
+    Text002: TextConst ENU='LWS';
+    Text003: TextConst ENU='The original sentence is \\: %1';
+    Text004: TexConst ENU='The sentence is converted to:\\ %1';
+begin
+    OriginalString := Text000;  
+    FromChars := Text001;  
+    ToChars := Text002;   
+    NewString := CONVERTSTR(OriginalString, FromChars, ToChars);  
+    MESSAGE(Text003, OriginalString);  
+    MESSAGE(Text004, NewString);  
+end;
 ```  
   
  The first message window shows:  

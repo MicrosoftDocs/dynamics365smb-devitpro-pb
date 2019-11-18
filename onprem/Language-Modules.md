@@ -12,7 +12,7 @@ caps.latest.revision: 12
 manager: edupont
 ---
 # Language Modules
-To view [!INCLUDE[navnow](includes/navnow_md.md)] in multiple languages, you install one or more language modules. The topic describes language modules in [!INCLUDE[navnow](includes/navnow_md.md)]. For more information about how to install language modules in the original version of [!INCLUDE[navnow](includes/navnow_md.md)], see [Language Modules for Microsoft Dynamics NAV](http://go.microsoft.com/fwlink/?LinkId=157364) \(requires PartnerSource login\).  
+To view [!INCLUDE[navnow](includes/navnow_md.md)] in multiple languages, you install one or more language modules. The topic describes language modules in [!INCLUDE[navnow](includes/navnow_md.md)]. For more information about how to install language modules in the original version of [!INCLUDE[navnow](includes/navnow_md.md)], see [Language Modules for Microsoft Dynamics NAV](https://go.microsoft.com/fwlink/?LinkId=157364) \(requires PartnerSource login\).  
   
 ## Language Modules in [!INCLUDE[navnow](includes/navnow_md.md)]  
  A language module contains:  

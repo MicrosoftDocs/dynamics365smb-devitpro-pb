@@ -73,13 +73,13 @@ This topic describes how to upgrade data in the business database. You perform a
 ## Running From [!INCLUDE[nav_shell](includes/nav_shell_md.md)]  
  You can run and manage a data upgrade from the [!INCLUDE[nav_shell](includes/nav_shell_md.md)] by using one of the following cmdlets:  
 
--   [Start-NAVDataUpgrade](http://go.microsoft.com/fwlink/?LinkID=401404)  
+-   [Start-NAVDataUpgrade](https://go.microsoft.com/fwlink/?LinkID=401404)  
 
--   [Stop-NAVDataUpgrade](http://go.microsoft.com/fwlink/?LinkID=403853)  
+-   [Stop-NAVDataUpgrade](https://go.microsoft.com/fwlink/?LinkID=403853)  
 
--   [Resume-NAVDataUpgrade](http://go.microsoft.com/fwlink/?LinkID=403853)  
+-   [Resume-NAVDataUpgrade](https://go.microsoft.com/fwlink/?LinkID=403853)  
 
--   [Get-NAVDataUpgrade](http://go.microsoft.com/fwlink/?LinkID=403850)  
+-   [Get-NAVDataUpgrade](https://go.microsoft.com/fwlink/?LinkID=403850)  
 
  For more information about [!INCLUDE[nav_shell](includes/nav_shell_md.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md).  
 

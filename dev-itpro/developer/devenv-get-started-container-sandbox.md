@@ -66,12 +66,12 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
     Container IP Address: 172.22.147.63
     Container Hostname  : MyBizCentralApp
     Container Dns Name  : MyBizCentralApp
-    Web Client          : http://MyBizCentralApp/NAV/
-    Dev. Server         : http://MyBizCentralApp
+    Web Client          : https://MyBizCentralApp/NAV/
+    Dev. Server         : https://MyBizCentralApp
     Dev. ServerInstance : NAV
 
     Files:
-    http://MyBizCentralApp:8080/al-0.15.18566.vsix
+    https://MyBizCentralApp:8080/al-0.15.18566.vsix
 
     Initialization took 116 seconds
     Ready for connections!
@@ -86,7 +86,7 @@ You now have a container sandbox set up on your computer. The following shortcut
 - **\<Container name\> Windows Client** - opens the Windows client for your application in the container.
 - **\<Container name\> Web Client** - opens the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for the your application in the container.
 - **\<Container name\> CSIDE** - opens the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)] for developing your application using CSIDE.
-- **\<Container name\> PowerShell Prompt** - opens a Windows PowerShell prompt in the container. This gives you access to the [!INCLUDE[navnowg_md](includes/navnow_md.md)] (https://docs.microsoft.com/en-us/powershell/business-central/overview), which you can run against the container sandbox environment. 
+- **\<Container name\> PowerShell Prompt** - opens a Windows PowerShell prompt in the container. This gives you access to the [!INCLUDE[navnowg_md](includes/navnow_md.md)] (https://docs.microsoft.com/powershell/business-central/overview), which you can run against the container sandbox environment. 
 - **\<Container name\>Command Prompt**  - opens a Windows command prompt in the container.
 
 
@@ -103,7 +103,7 @@ After the container sandbox is set up, you must set up Visual Studio Code for ex
 5. Open the generated `launch.json` file, update the `"server"` setting with the value of the `Dev. Server` parameter and the `"serverInstance"` setting with the value of the `Dev. ServerInstance` to reflect the container you just created. For example:
 
     ```
-    "server": "http://MyBizCentralApp",
+    "server": "https://MyBizCentralApp",
     "serverInstance": "NAV",
     "authentication": "Windows",
     ```
@@ -133,12 +133,12 @@ Creating NAV user
 Container IP Address: 172.22.147.63
 Container Hostname  : MyBCapp2
 Container Dns Name  : MyBCapp2
-Web Client          : http://MyBCapp2/NAV/
-Dev. Server         : http://MyBCapp2
+Web Client          : https://MyBCapp2/NAV/
+Dev. Server         : https://MyBCapp2
 Dev. ServerInstance : NAV
 
 Files:
-http://MyBCapp2:8080/al-0.15.18566.vsix
+https://MyBCapp2:8080/al-0.15.18566.vsix
 
 Initialization took 116 seconds
 Ready for connections!

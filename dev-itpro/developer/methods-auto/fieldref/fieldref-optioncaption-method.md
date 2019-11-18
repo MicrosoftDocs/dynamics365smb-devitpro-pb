@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -45,20 +45,19 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
  This method returns an error if no field is selected.  
   
 ## Example  
- The following example opens the Item table as a RecordRef variable that is named ItemRecref. and creates a reference to field 19 \(Price/Profit Calculation field\), which is an Option field. The OPTIONCAPTION method retrieves the caption of the option field and displays the options as a comma separated list. This example requires that you create the following global variabless.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|ItemRecref|RecordRef|  
-|MyFieldRef|FieldRef|  
-|OptionCaption|Text|  
-  
-```  
-  
-ItemRecref.OPEN(DATABASE::Item);  
-MyFieldRef := ItemRecref.FIELD(19);  
-OptionCaption := MyFieldRef.OPTIONCAPTION;  
-MESSAGE('%1', OptionCaption);  
+ The following example opens the Item table as a RecordRef variable that is named ItemRecref. and creates a reference to field 19 \(Price/Profit Calculation field\), which is an Option field. The OPTIONCAPTION method retrieves the caption of the option field and displays the options as a comma separated list. 
+
+```
+var
+    MyFieldRef: FieldRef;
+    ItemRecref: RecordRef;
+    OptionCaption: Text;
+begin
+    ItemRecref.OPEN(DATABASE::Item);  
+    MyFieldRef := ItemRecref.FIELD(19);  
+    OptionCaption := MyFieldRef.OPTIONCAPTION;  
+    MESSAGE('%1', OptionCaption);  
+end;
 ```  
   
   

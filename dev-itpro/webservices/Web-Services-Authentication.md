@@ -50,7 +50,7 @@ Typically, you would create a user account strictly for web services, and then u
   
 1.  Create a user specifically for web services.  
   
-    For more information, see [Manage Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions).  
+    For more information, see [Manage Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions).  
   
 2.  Generate a web service access key in the user account.  
   
@@ -58,7 +58,7 @@ Typically, you would create a user account strictly for web services, and then u
   
     |To|See|  
     |--------|---------|  
-    |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](http://go.microsoft.com/fwlink/?LinkID=259554)|    
+    |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](https://go.microsoft.com/fwlink/?LinkID=259554)|    
   
 ## See Also   
  [Web Services Overview](web-services.md)   

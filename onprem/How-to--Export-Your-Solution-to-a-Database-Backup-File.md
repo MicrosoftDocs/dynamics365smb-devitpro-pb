@@ -18,7 +18,7 @@ If you are deploying your own [!INCLUDE[navnow](includes/navnow_md.md)] applicat
 
 1.  Create a backup of the SQL database for the [!INCLUDE[navnow](includes/navnow_md.md)] application.  
 
-     For more information, see [Create a Full Database Backup \(SQL Server\)](http://go.microsoft.com/fwlink/?LinkID=296465).  
+     For more information, see [Create a Full Database Backup \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkID=296465).  
 
 2.  Copy the backup file to the computer that you will use to provision [!INCLUDE[navnow](includes/navnow_md.md)] on Azure.  
 

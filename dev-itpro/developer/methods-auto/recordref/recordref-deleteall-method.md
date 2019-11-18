@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,25 +38,21 @@ Specifies whether the code in the OnDelete trigger will be executed. If this par
  This method works the same way as the [DELETEALL Method \(Record\)](../../methods/devenv-deleteall-method-record.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecRef. The [FIELD Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for field 1 \(No.\). From the No. field, the [SETRANGE Method \(FieldRef\)](../fieldref/fieldref-setrange-method.md) selects records in the range from 10000 to 20000. The number of records in the range is displayed in a message box. The DELETEALL method deletes all records in that range. The number of records is displayed again. This time, 0 is displayed because all the records in the range are deleted. This example requires that you create the following global variable and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|CustomerRecRef|RecordRef|  
-|MyFieldRef|FieldRef|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|The number of records in the range is %1.|  
-  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecRef. The [FIELD Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for field 1 \(No.\). From the No. field, the [SETRANGE Method \(FieldRef\)](../fieldref/fieldref-setrange-method.md) selects records in the range from 10000 to 20000. The number of records in the range is displayed in a message box. The DELETEALL method deletes all records in that range. The number of records is displayed again. This time, 0 is displayed because all the records in the range are deleted.
+ 
 ```  
-  
-CustomerRecRef.OPEN(18);  
-MyFieldRef := CustomerRecRef.FIELD(1);  
-MyFieldRef.SETRANGE('10000' , '20000');  
-MESSAGE(Text000 ,CustomerRecRef.COUNT);  
-CustomerRecRef.DELETEALL;  
-MESSAGE(Text000 ,CustomerRecRef.COUNT);  
+var
+    MyFieldRef: FieldRef;
+    CustomerRecRef: RecordRef;
+    Text000: TextConst ENU='The number of records in the range is %1.;
+begin 
+    CustomerRecRef.OPEN(18);  
+    MyFieldRef := CustomerRecRef.FIELD(1);  
+    MyFieldRef.SETRANGE('10000' , '20000');  
+    MESSAGE(Text000 ,CustomerRecRef.COUNT);  
+    CustomerRecRef.DELETEALL;  
+    MESSAGE(Text000 ,CustomerRecRef.COUNT);  
+end;
 ```  
   
 

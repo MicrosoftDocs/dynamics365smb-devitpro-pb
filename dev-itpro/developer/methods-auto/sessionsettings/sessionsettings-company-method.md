@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -52,11 +52,11 @@ This example creates a SessionSettings object that is populated with the current
 ```
 var
   MySessionSettings : SessionSettings;
-  begin
-    MySessionSettings.INIT;
-    MySessionSettings.COMPANY('MyCompany');
-    MySessionSettings.REQUESTSESSIONUPDATE(false);
-  end;  
+begin
+  MySessionSettings.INIT;
+  MySessionSettings.COMPANY('MyCompany');
+  MySessionSettings.REQUESTSESSIONUPDATE(false);
+end;  
 ```  
 
 

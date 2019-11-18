@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -45,22 +45,18 @@ The string format is the same as the SourceTableView property on pages.
  This method works the same way as the [GETVIEW Method \(Record\)](recordref-getview-method.md).  
   
 ## Example  
- The following example opens the Customer table as a RecordRef variable that is named RecRef. The RecRef variable uses the GETVIEW method to retrieve the field that the table is sorted on and stores the value in the varView variable. The Customer table does not have any filters and keys set so no filters or keys are displayed. The *UseCaptions* parameter is set to **true** so the name of the field is displayed. If you set the *UseCaptions* to **false**, the field number will be displayed. This example requires that you create the following global variables and text constant.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|RecRef|RecordRef|  
-|varView|Text|  
-  
-|Text constant name|DataType|ENU value|  
-|------------------------|--------------|---------------|  
-|Text000|Text|The current view of the table is: %1.|  
-  
-```  
-  
-RecRef.OPEN(DATABASE::Customer);  
-varView := RecRef.GETVIEW(TRUE);  
-MESSAGE(Text000, varView);  
+ The following example opens the Customer table as a RecordRef variable that is named RecRef. The RecRef variable uses the GETVIEW method to retrieve the field that the table is sorted on and stores the value in the varView variable. The Customer table does not have any filters and keys set so no filters or keys are displayed. The *UseCaptions* parameter is set to **true** so the name of the field is displayed. If you set the *UseCaptions* to **false**, the field number will be displayed. 
+ 
+```   
+var
+    RecRef: RecordRef;
+    varView: Text;
+    Text000: TextConst ENU='The current view of the table is: %1';
+begin    
+    RecRef.OPEN(DATABASE::Customer);  
+    varView := RecRef.GETVIEW(TRUE);  
+    MESSAGE(Text000, varView);  
+end;
 ```  
   
 

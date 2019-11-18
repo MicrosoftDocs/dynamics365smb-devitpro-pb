@@ -35,7 +35,7 @@ You can specify page settings and page orientation for a printed report from the
     > [!NOTE]  
     >  The printer that you use determines what to do if the actual paper size in the printer differs from the page size that is specified.  
   
- With [!INCLUDE[nav_web](includes/nav_web_md.md)], from the print preview, you can only print to a local printer. To print from the print preview, you must the install a client-side component. For more information, see [Printing Reports from ReportViewer](http://go.microsoft.com/fwlink/?LinkId=225474).  
+ With [!INCLUDE[nav_web](includes/nav_web_md.md)], from the print preview, you can only print to a local printer. To print from the print preview, you must the install a client-side component. For more information, see [Printing Reports from ReportViewer](https://go.microsoft.com/fwlink/?LinkId=225474).  
   
 ## Specifying Page Settings and Orientation  
  The following table describes how you access each of the dialog boxes in which you can specify page settings and orientation.  

@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -49,18 +49,18 @@ An instance of the [File](file-data-type.md) data type.
  This method should be used before File.OPEN is used to open the file. If you use this method on a file that is already open, then an error occurs.  
   
 ## Example  
- The following example sets the TEXTMODE to **true** when the file is open for writing. This means the file contents will be written to a text file that is named 'C:\\TestFolder\\TestFile.txt' by using ASCII characters. The [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) and the [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) open the file for writing and the text ‘Hello World’ is written. The [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file after the file is written to. This example requires that you create the following global variable. This example assumes that you have created a text file that is named C:\\TestFolder\\TestFile.txt.  
+ The following example sets the TEXTMODE to **true** when the file is open for writing. This means the file contents will be written to a text file that is named 'C:\\TestFolder\\TestFile.txt' by using ASCII characters. The [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) and the [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) open the file for writing and the text ‘Hello World’ is written. The [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file after the file is written to. This example assumes that you have created a text file that is named C:\\TestFolder\\TestFile.txt.  
   
-|Variable name|DataType|  
-|-------------------|--------------|  
-|TestFile|File|  
-  
-```  
-TestFile.TEXTMODE(TRUE);  
-TestFile.WRITEMODE(TRUE);  
-TestFile.OPEN('C:\TestFolder\TestFile.txt');  
-TestFile.WRITE('Hello World');  
-TestFile.CLOSE;  
+ ```
+ var
+    TestFile: File;
+begin 
+    TestFile.TEXTMODE(TRUE);  
+    TestFile.WRITEMODE(TRUE);  
+    TestFile.OPEN('C:\TestFolder\TestFile.txt');  
+    TestFile.WRITE('Hello World');  
+    TestFile.CLOSE;  
+end;
 ```  
   
 

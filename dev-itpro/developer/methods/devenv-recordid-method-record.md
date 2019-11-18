@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+
 # RECORDID Method (Record)
 Gets the RecordID of the record that is currently selected in the table. If no table is selected, an error is generated.  
   

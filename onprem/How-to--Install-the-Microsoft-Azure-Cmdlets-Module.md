@@ -15,7 +15,7 @@ This topic describes how to install the Microsoft Azure PowerShell module on the
   
 ### To install the Azure PowerShell module  
   
-1.  Go to the [Microsoft Azure Downloads](http://go.microsoft.com/fwlink/?LinkID=294711) page.  
+1.  Go to the [Microsoft Azure Downloads](https://go.microsoft.com/fwlink/?LinkID=294711) page.  
   
 2.  Under **Command Line Tools**, under **Windows PowerShell**, choose **Install**.  
   
@@ -23,7 +23,7 @@ This topic describes how to install the Microsoft Azure PowerShell module on the
   
 4.  Follow the online instructions to complete the installation.  
   
- For more information about the installing the Azure PowerShell module procedure, see [How to install and configure Azure PowerShell](http://go.microsoft.com/fwlink/?LinkId=275578).  
+ For more information about the installing the Azure PowerShell module procedure, see [How to install and configure Azure PowerShell](https://go.microsoft.com/fwlink/?LinkId=275578).  
   
 ## See Also  
  [Preparing for Deploying Microsoft Dynamics NAV on Microsoft Azure](Preparing-for-Deploying-Microsoft-Dynamics-NAV-on-Microsoft-Azure.md)   

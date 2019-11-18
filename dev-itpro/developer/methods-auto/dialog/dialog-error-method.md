@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -53,23 +53,20 @@ Any variable or expression to be inserted in String. You can insert up to 10 val
  For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).  
 
 ## Example  
- This example shows how to use the ERROR method. The code example requires that you create the following global variables and text constants.  
-
-|Name|DataType|  
-|----------|--------------|  
-|AccountNo|Integer|  
-
-|Name|ConstValue|  
-|----------|----------------|  
-|Text000|Finance Account \#1\#\#\#\# must not be blocked.|  
-|Text001|Placeholder message.|  
-
-```  
-AccountNo := 1230;  
-// The execution stops when the error statement is executed  
-// and all following statements will never be executed.  
-ERROR(Text000, AccountNo);  
-MESSAGE(Text001); // This line is not executed.  
+ This example shows how to use the ERROR method. 
+ 
+```
+var
+    AccountNo: Integer;
+    Text000: TextConst ENU='Finance Account #1#### must not be blocked.';
+    Text001: TextConst ENU='Placeholder message.';   
+begin 
+    AccountNo := 1230;  
+    // The execution stops when the error statement is executed  
+    // and all following statements will never be executed.  
+    ERROR(Text000, AccountNo);  
+    MESSAGE(Text001); // This line is not executed.  
+end;
 ```  
 
  The error window displays the following:  

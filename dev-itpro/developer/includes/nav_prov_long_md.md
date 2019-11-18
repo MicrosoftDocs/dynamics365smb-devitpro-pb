@@ -1,1 +1,0 @@
-Microsoft Dynamics NAV Provisioning Tools for Microsoft Azure

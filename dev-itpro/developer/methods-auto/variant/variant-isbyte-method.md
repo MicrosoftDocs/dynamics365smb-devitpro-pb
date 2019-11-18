@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,23 +38,20 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a Byte data type variable. The code initializes the MyByte data type variable with the constant text string **A**. The MyByte variable is assigned to the variant variable that is named MyVariant. The **ISBYTE** method determines whether the variant contains a Byte variable and stores the return value in the varResult variable. In this case, the variant contains a Byte variable so **true** is returned and displayed in a message box. This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|MyByte|Byte|  
-|MyVariant|Variant|  
-|varResult|Boolean|  
-  
-|Text constant name|Enu value|  
-|------------------------|---------------|  
-|Text000|Does the variant contain a Byte variable? %1.|  
-  
+ The following example determines whether an AL variant contains a Byte data type variable. The code initializes the MyByte data type variable with the constant text string **A**. The MyByte variable is assigned to the variant variable that is named MyVariant. The **ISBYTE** method determines whether the variant contains a Byte variable and stores the return value in the varResult variable. In this case, the variant contains a Byte variable so **true** is returned and displayed in a message box. 
+ 
 ```  
-MyByte := 'A';  
-MyVariant := MyByte;  
-varResult := MyVariant.ISBYTE;  
-MESSAGE(Text000,varResult);  
+var
+    MyByte: Byte;
+    MyVariant: Variant;
+    varResult: Boolean;
+    Text000: TextConst ENU='Does the variant contain a byte variable? %1.';
+begin
+    MyByte := 'A';  
+    MyVariant := MyByte;  
+    varResult := MyVariant.ISBYTE;  
+    MESSAGE(Text000,varResult);  
+end;
 ```  
   
 

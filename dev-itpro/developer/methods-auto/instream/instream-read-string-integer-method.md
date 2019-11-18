@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -53,26 +53,22 @@ If the return value is present, then you must verify the validity of the data th
   
   
 ## Example  
- The following example shows how to use the **Instream.READ** method to read data in binary format. The **FIND** method finds the first record from the **Company Information** table. The **CALCFIELDS** method retrieves the **Picture** field, which is a BLOB field. The **CREATEINSTREAM** method uses the recBinaries variable to create an InStream object that is named varInstream. The **varInstream.READ** method then reads three characters from the varInstream variable and stores the binary data in the varChars variable. The number of characters that is read is stored in the numChars variable. The binary data and the number of characters that is read are displayed in a message box. This example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|Subtype|Length|  
-|-------------------|--------------|-------------|------------|  
-|recBinaries|Record|Company Information|Not applicable|  
-|Picture|Binary|Not applicable|100|  
-|varInstream|InStream|Not applicable|Not applicable|  
-|varChars|Text|Not applicable|50|  
-|numChars|Integer|Not applicable|Not applicable|  
-  
-|Text constant name|ENU value|  
-|------------------------|---------------|  
-|Text000|Number of characters read: %1. Characters read: %2.|  
+ The following example shows how to use the **Instream.READ** method to read data in binary format. The **FIND** method finds the first record from the **Company Information** table. The **CALCFIELDS** method retrieves the **Picture** field, which is a BLOB field. The **CREATEINSTREAM** method uses the recBinaries variable to create an InStream object that is named varInstream. The **varInstream.READ** method then reads three characters from the varInstream variable and stores the binary data in the varChars variable. The number of characters that is read is stored in the numChars variable. The binary data and the number of characters that is read are displayed in a message box. 
   
 ```  
-recBinaries.FIND('-');  
-recBinaries.CALCFIELDS(recBinaries.Picture);  
-recBinaries.Picture.CREATEINSTREAM(varInstream);  
-numChars := varInstream.READ(varChars,3);  
-MESSAGE(Text000, numChars, varChars);  
+ var
+    recBinaries: Record "Company Information";
+    varInstream: Instream;
+    varChars: Text[50];
+    numChars: Integer;
+    Text000: TextConst ENU='Number of characters read: %1. Characters read: %2.';
+begin
+    recBinaries.FIND('-');  
+    recBinaries.CALCFIELDS(recBinaries.Picture);  
+    recBinaries.Picture.CREATEINSTREAM(varInstream);  
+    numChars := varInstream.READ(varChars,3);  
+    MESSAGE(Text000, numChars, varChars);  
+end;
 ```  
   
 

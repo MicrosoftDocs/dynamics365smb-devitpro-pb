@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,19 +38,15 @@ The name of the current key of the record.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example requires that you create the following text constants and global variables.  
-  
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|The current key in the "%1" table is "%2".|  
-  
-|Variable|Data type|  
-|--------------|---------------|  
-|RecRef|RecordRef|  
-  
+
 ```  
-RecRef.OPEN(18);  
-MESSAGE(Text000,RecRef.CAPTION,RecRef.CURRENTKEY)  
+var
+    RecRef: RecordRef;
+    Text000: TextConst ENU='The current key in the "%1" table is "%2".';
+begin
+    RecRef.OPEN(18);  
+    MESSAGE(Text000,RecRef.CAPTION,RecRef.CURRENTKEY);
+end;  
 ```  
   
  `RecRef.Open(18)` - Opens table 18 or causes a run-time error if table 18 does not exist.  

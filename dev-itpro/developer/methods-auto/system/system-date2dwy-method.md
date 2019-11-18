@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -48,28 +48,25 @@ The resulting day of the week, week number, or year.
  If the input date to the **DATE2DWY** method is in a week which spans two years, then the **DATE2DWY** method computes the output year as the year that has more days of the given week. For example, if the input date is 010114, then the date is in a week that starts on Monday, December 29, 2013, and ends Sunday, January 4, 2014. This week has three days in 2008 and four days in 2014. Therefore, the output year is 2014.  
   
 ## Example  
- This example shows a special case that occurs when you use the **DATE2DWY** method in a week which spans two years. This code example requires that you create the following global variables and text constants.  
-  
-|Variable name|DataType|  
-|-------------------|--------------|  
-|InputDate|Date|  
-|DayOfWeek|Integer|  
-|WeekNumber|Integer|  
-|Year|Integer|  
-  
-|Text constant name|ENU value|  
-|------------------------|---------------|  
-|Text000|The date %1 corresponds to:\\|  
-|Text001|The day of the week: %2\\|  
-|Text002|The week number: %3\\|  
-|Text003|The year: %4|  
-  
+ This example shows a special case that occurs when you use the **DATE2DWY** method in a week which spans two years. 
+ 
 ```  
-InputDate := 20140101D;  
-DayOfWeek := DATE2DWY(InputDate, 1);  
-WeekNumber := DATE2DWY(InputDate, 2);  
-Year := DATE2DWY(InputDate, 3);  
-MESSAGE(Text000 + Text001 + Text002 + Text003, InputDate, DayOfWeek, WeekNumber, Year);  
+var
+    InputDate: Date;
+    DayOfWeek: Integer;
+    WeekNumber: Integer;
+    Year: Integer;
+    Text000: TextConst ENU='The date %1 corresponds to:\\';
+    Text001: TextConst ENU='The day of the week: %2\\';
+    Text002: TextConst ENU='The week number: %3\\';
+    Text003: TextConst ENU='The year: %4';
+begin
+    InputDate := 20140101D;  
+    DayOfWeek := DATE2DWY(InputDate, 1);  
+    WeekNumber := DATE2DWY(InputDate, 2);  
+    Year := DATE2DWY(InputDate, 3);  
+    MESSAGE(Text000 + Text001 + Text002 + Text003, InputDate, DayOfWeek, WeekNumber, Year);  
+end;
 ```  
   
  The message window displays the following:  

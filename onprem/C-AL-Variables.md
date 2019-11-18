@@ -54,7 +54,7 @@ C/AL has the following types of variables:
 >  We do not recommend that you use characters that are outside the ASCII characters set, 0-127, because they may display differently on different computers.  
 
 > [!NOTE]  
->  [!INCLUDE[navnow](includes/navnow_md.md)] runs on the .NET Framework. Therefore, we recommend that you use variables names that are Common Language Specification (CLS)-compliant. For more information, see [Common Language Specification](http://go.microsoft.com/fwlink/?LinkId=193144) in the MSDN Library.  
+>  [!INCLUDE[navnow](includes/navnow_md.md)] runs on the .NET Framework. Therefore, we recommend that you use variables names that are Common Language Specification (CLS)-compliant. For more information, see [Common Language Specification](https://go.microsoft.com/fwlink/?LinkId=193144) in the MSDN Library.  
 
  When you name a variable, you cannot use special characters unless you enclose the variable name in quotation marks, as in "Customer No.". If you do not use double quotation marks, then the following rules apply:  
 

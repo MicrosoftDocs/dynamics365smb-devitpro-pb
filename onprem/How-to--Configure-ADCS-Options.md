@@ -61,7 +61,7 @@ Before you can work with Automated Data Capture Systems \(ADCS\), you have to co
     |*name*|Required. Endpoint name. The name must be unique.|  
     |*url*|Required. Endpoint URL address. **Note:**  This attribute does not have to be included if the *clientEndpointName* attribute is specified.|  
     |*type*|Optional. Fully qualified name of a non-default endpoint.|  
-    |*clientEndpointName*|Optional. Windows Communications Foundation client endpoint configuration name. If specified, a WCF configuration with the specified name must exist. For more information, see [Client Configuration](http://go.microsoft.com/fwlink/?LinkId=260871) in the MSDN Library.|  
+    |*clientEndpointName*|Optional. Windows Communications Foundation client endpoint configuration name. If specified, a WCF configuration with the specified name must exist. For more information, see [Client Configuration](https://go.microsoft.com/fwlink/?LinkId=260871) in the MSDN Library.|  
   
  The following example describes the XML for a **Terminal** element and the **Endpoints** element. It adds one endpoint for [!INCLUDE[navnow](includes/navnow_md.md)].  
   
@@ -73,7 +73,7 @@ Before you can work with Automated Data Capture Systems \(ADCS\), you have to co
 <VT100>  
 <Warehouse>  
 <Endpoints>  
-<add name="NavEndpoint" url="http://[local]:7047/nav_server_instance/WS/CRONUS%20International%20Ltd/Codeunit/ADCS" />  
+<add name="NavEndpoint" url="https://[local]:7047/nav_server_instance/WS/CRONUS%20International%20Ltd/Codeunit/ADCS" />  
 </Endpoints>  
 </Warehouse>  
 <Terminal listenIP="127.0.0.1" listenPort="6666" stylesheet="VT100_W2k_and_OtherClients.xsl" />  

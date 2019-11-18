@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -51,27 +51,23 @@ Specifies the full path and name of the file to create for the exported media.
 
  The example assumes that the **My Items** table already exists. Also, the table contains a **Media** data type field that is named **Image**, and one or more records already include media. For information about importing media, see [ImportFile Method \(Media\)](../../methods-auto/media/media-importfile-method.md) or [ImportStream Method \(Media\)](../../methods-auto/media/media-importstream-instream-text-text-method.md).  
 
-The example code requires that you create the following variables and text constant:  
-
-|  Variable name  |  DataType  |  Subtype  |  
-|-----------------|------------|-----------|  
-|myItemRec|Record|My Items|  
-|fileName|Text| |  
-|count|Integer|  |  
-
-|  Text constant name  |  ConstValue  |
-|----------------------|--------------|
-|Text000|%1 media files were exported.|
-
 The code iterates over records in the **My Items** table. If a media object is referenced in the *Image* field, the media is exported to a file in the *C:\images* folder. The file is given a name in the format *ItemNN.jpg*, where *NN* is the number assigned to item record in the table, as specified by the **No.** field.
+
 ```  
-if myItemRec.FindFirst() then begin
-    repeat begin 
-        fileName := 'C:\images\' + 'Item' + Format(myItemRec."No.") + '.jpg';  
-        if myItemRec.Image.ExportFile(fileName) then
-            count := count + 1
-    end until myItemRec.Next < 1;
-    Message(Text000, count);  
+ var
+    myItemRec: Record "My Items";
+    fileName: Text;
+    count: Integer;
+    Text000: TextConst ENU='%1 media files were exported';
+begin
+    if myItemRec.FindFirst() then begin
+        repeat begin 
+            fileName := 'C:\images\' + 'Item' + Format(myItemRec."No.") + '.jpg';  
+            if myItemRec.Image.ExportFile(fileName) then
+                count := count + 1
+        end until myItemRec.Next < 1;
+        Message(Text000, count);  
+    end;
 end;
 ```  
 

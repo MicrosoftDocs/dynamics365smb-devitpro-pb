@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -36,19 +36,14 @@ The name of the company, or an empty string if no company has been selected.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example requires that you create the following variables and text constants.  
-  
-|Variable name|DataType|Length|  
-|-------------------|--------------|------------|  
-|CompName|Text|1024|  
-  
-|Name|ConstValue|  
-|----------|----------------|  
-|Text000|The name is %1.|  
-  
-```  
-CompName := COMPANYNAME;  
-MESSAGE(Text000, CompName);  
+```
+var
+    CompName: Text[1024];
+    Text000: TextConst ENU='The name is %1.';
+begin
+    CompName := COMPANYNAME;  
+    MESSAGE(Text000, CompName);  
+end;
 ```  
 
 ## See Also

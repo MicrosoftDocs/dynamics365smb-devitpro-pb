@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -85,45 +85,36 @@ Query.READ;
 ## Example  
  The following AL code example demonstrates how to use the **SETFILTER** method on a query. The example code sets a filter on a query column, and then displays a message when the query is run that indicates the filter on the column.  
   
- This example requires that you do the following:  
+ This example requires that you create a query called **Customer\_SalesQuantity** that has the following characteristics:  
   
-1.  Create a query called **Customer\_SalesQuantity** that has the following characteristics:  
-  
-    -   Links table 18, Customer with table 37, Sales Lines from the [!INCLUDE[demolong](../../includes/demolong_md.md)].  
-  
-    -   Includes columns for the **Name** and **No.** fields from the **Customer** table and the **Quantity** field from **Sales Lines** table.  
-  
-         <!--NAV For step-by-step instructions for creating this query, see [Walkthrough: Creating a Query to Link Two Tables](Walkthrough--Creating-a-Query-to-Link-Two-Tables.md).-->  
-  
-2.  Create the following AL variables and text constant in the object that will run the query, such as a codeunit.  
-  
-    |Variable name|DataType|Subtype|  
-    |-------------------|--------------|-------------|  
-    |MyQuery|Query|Customer\_SalesQuantity|  
-  
-    |Text constant name|ENU Value|  
-    |------------------------|---------------|  
-    |Text000|Customer name = %1, Quantity = %2|  
-  
- The following AL code uses the **SETFILTER** method to filter the query dataset on the **Quantity** and **Name** columns. You can add the code to a codeunit, and then run the codeunit to see the results.  
+  -   Links table 18, Customer with table 37, Sales Lines from the [!INCLUDE[demolong](../../includes/demolong_md.md)].  
+
+  -   Includes columns for the **Name** and **No.** fields from the **Customer** table and the **Quantity** field from **Sales Lines** table.  
+
+        <!--NAV For step-by-step instructions for creating this query, see [Walkthrough: Creating a Query to Link Two Tables](Walkthrough--Creating-a-Query-to-Link-Two-Tables.md).-->  
   
 ```  
-// Sets a filter to display only sales quantities greater than 10.  
-MyQuery.SETFILTER(Quantity, '>10');  
-// Sets a filter to display the columns with the value Selangorian Ltd. only.  
-MyQuery.SETFILTER(NAME, 'Selangorian Ltd.');  
-// Runs the query.  
-MyQuery.OPEN;  
-// Reads each row in the dataset and displays message with column values.  
-// Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
-while MyQuery.READ do  
-begin  
-  MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);  
-end;   
-// Saves the resulting dataset as a CSV file.  
-MyQuery.SAVEASCSV('c:\temp\CustomerSales.csv');  
-// Closes the query.  
-Myquery.CLOSE;  
+var
+  MyQuery: Query "Customer SalesQuantity";
+  Text000: TextConst ENU='Customer name = %1, Quantity = %2';
+begin
+    // Sets a filter to display only sales quantities greater than 10.  
+    MyQuery.SETFILTER(Quantity, '>10');  
+    // Sets a filter to display the columns with the value Selangorian Ltd. only.  
+    MyQuery.SETFILTER(NAME, 'Selangorian Ltd.');  
+    // Runs the query.  
+    MyQuery.OPEN;  
+    // Reads each row in the dataset and displays message with column values.  
+    // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
+    while MyQuery.READ do  
+    begin  
+      MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);  
+    end;   
+    // Saves the resulting dataset as a CSV file.  
+    MyQuery.SAVEASCSV('c:\temp\CustomerSales.csv');  
+    // Closes the query.  
+    Myquery.CLOSE; 
+end;
 ```  
   
  When the code is run, a message that resembles the following appears for each row in the dataset:  

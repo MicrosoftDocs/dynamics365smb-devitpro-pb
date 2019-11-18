@@ -56,11 +56,11 @@ You can set the properties of pages and reports manually (see [Adding Pages and 
  
 4. If the cmdlet was not set up to import the modified page and report object text files, import them from the output folder into the database. 
 
-    See [How to: Import Objects](https://docs.microsoft.com/en-us/dynamics-nav/how-to--import-objects).
+    See [How to: Import Objects](https://docs.microsoft.com/dynamics-nav/how-to--import-objects).
 
 5. Compile the imported objects.
 
-    See [Compiling Objects](https://docs.microsoft.com/en-us/dynamics-nav/compiling-objects).
+    See [Compiling Objects](https://docs.microsoft.com/dynamics-nav/compiling-objects).
 
 6. In the **Tools** menu of the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)], select **Build Object Search Index**.
 

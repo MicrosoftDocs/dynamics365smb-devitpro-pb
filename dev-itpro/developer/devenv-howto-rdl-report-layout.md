@@ -3,7 +3,7 @@ title: "Creating an RDL Layout Report"
 description: "Describes the steps involved in creating a report that uses an RDL layout."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ When you create a new report for [!INCLUDE[d365fin_long_md](includes/d365fin_lon
 To create and modify RDL report layouts, you use SQL Server Report Builder or Visual Studio Report Designer. For information about required versions of these tools, see [System Requirements](../deployment/system-requirement-business-central.md).
 
 ## Create an RDL layout report
-To facilitate testing your report layout, the following example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
+To facilitate testing your report layout, the following simple example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
 
 1. Create a new extension to the Customer List page that contains code to run the report, as well as a simple report object by adding the following lines of code:
 
@@ -37,29 +37,34 @@ To facilitate testing your report layout, the following example extends the Cust
     report 50123 MyRdlReport
     {
         DefaultLayout = RDLC;
-        RDLCLayout = 'MyRDLCReport.rdl';
+        RDLCLayout = 'MyRDLReport.rdl';
 
     }
     ```
-2. Build the extension (Ctrl+Shift+B) to generate the MyRDLCReport.rdl file.
-3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code:  
+2. Build the extension (Ctrl+Shift+B) to generate the MyRDLReport.rdl file.
+3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report:  
     ```
-    dataset
+    report 50123 MyRdlReport
     {
-        dataitem(Customer; Customer)
+        DefaultLayout = RDLC;
+        RDLCLayout = 'MyRDLReport.rdl';
+    
+        dataset
         {
-            column(Name; Name)
+            dataitem(Customer; Customer)
             {
+                column(Name; Name)
+                {
+                }
             }
-        }
-    }   
-
+        }   
+    }
     ```
-4. Build the extension (Ctrl+Shift+B). The file will be created in the root of the current project. 
-5. Open the generated report layout file in Microsoft SQL Server Report Builder.
+4. Build the extension (Ctrl+Shift+B). The `MyRDLReport.rdl` file will be created in the root of the current project. 
+5. Open the generated report layout file in **Microsoft SQL Server Report Builder**.
 6. Edit the layout by inserting a table. 
-7. Add the **Name** column from the datasets folder into the table and save the file.
-8. Back in Visual Studio Code, press Shift+F5 to compile and run the report.  
+7. Add the **Name** column from the **Datasets** folder into the table and save the .rdl file.
+8. Back in Visual Studio Code, press Ctrl+F5 to compile and run the report in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].  
 
 You will now see the generated report in preview mode.
 

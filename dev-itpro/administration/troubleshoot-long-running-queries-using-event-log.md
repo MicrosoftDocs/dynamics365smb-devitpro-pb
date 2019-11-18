@@ -9,6 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
+author: SusanneWindfeldPedersen
 ---
 
 
@@ -69,5 +70,5 @@ CounterInformation:
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  
 [Business Central Server Administration Tool](administration-tool.md)  
 [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshoot-query-performance-using-query-store.md)  
-[SQL Trace](https://docs.microsoft.com/en-us/sql/relational-databases/sql-trace/sql-trace)
+[SQL Trace](https://docs.microsoft.com/sql/relational-databases/sql-trace/sql-trace)
 

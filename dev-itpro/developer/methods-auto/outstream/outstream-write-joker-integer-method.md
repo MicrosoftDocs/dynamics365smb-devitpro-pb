@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -56,7 +56,7 @@ recBinaries.Data.CREATEOUTSTREAM(OutStream);
 OutStream.WRITE('Secretary');  
 OutStream.WRITE('Alice');  
 OutStream.WRITE('Hart');  
-OutStream.WRITE(010696D);  
+OutStream.WRITE(19960106D);  
 recBinaries.MODIFY();  
 ```  
   

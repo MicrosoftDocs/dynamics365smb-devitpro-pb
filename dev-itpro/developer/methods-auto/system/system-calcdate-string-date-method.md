@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -81,36 +81,31 @@ Use this optional parameter to define a reference date. The default is the curre
 
 ## Example  
  This example shows how to use the CALCDATE method.  
-
- This code example requires that you create the following global variables and text constants.  
-
-|Variable Name|DataType|Length|  
-|-------------------|--------------|------------|  
-|Expr1|Text|30|  
-|Expr2|Text|30|  
-|Expr3|Text|30|  
-|RefDate|Date|Not applicable|  
-|Date1|Date|Not applicable|  
-|Date2|Date|Not applicable|  
-|Date3|Date|Not applicable|  
-
-|Text constant|ENU value|  
-|-------------------|---------------|  
-|Text000|'The reference date is: %1 \\'|  
-|Text001|'The expression: %2 returns %3\\'|  
-|Text002|'The expression: %4 returns %5\\'|  
-|Text003|'The expression: %6 returns %7'|  
-
-```  
-Expr1 := '<CQ+1M-10D>'; // Current quarter + 1 month - 10 days  
-Expr2 := '<-WD2>'; // The last weekday no.2, (last Tuesday)  
-Expr3 := '<CM+30D>'; // Current month + 30 days  
-RefDate := 19960521D;  
-Date1 := CALCDATE(Expr1, RefDate);  
-Date2 := CALCDATE(Expr2, RefDate);  
-Date3 := CALCDATE(Expr3, RefDate);  
-MESSAGE(Text000 + Text001 + Text002 + Text003,  
-  RefDate, Expr1, Date1, Expr2, Date2, Expr3, Date3);  
+ 
+``` 
+var
+    Expr1: Text[30];
+    Expr2: Text[30];
+    Expr3: Text[30];
+    RefDate: Date;
+    Date1: Date;
+    Date2: Date;
+    Date3: Date;
+    Text000: TextConst ENU='The reference date is: %1 \\';  
+    Text001: TextConst ENU='The expression: %2 returns %3\\';  
+    Text002: TextConst ENU='The expression: %4 returns %5\\';  
+    Text003: TextConst ENU='The expression: %6 returns %7';
+begin 
+    Expr1 := '<CQ+1M-10D>'; // Current quarter + 1 month - 10 days  
+    Expr2 := '<-WD2>'; // The last weekday no.2, (last Tuesday)  
+    Expr3 := '<CM+30D>'; // Current month + 30 days  
+    RefDate := 19960521D;  
+    Date1 := CALCDATE(Expr1, RefDate);  
+    Date2 := CALCDATE(Expr2, RefDate);  
+    Date3 := CALCDATE(Expr3, RefDate);  
+    MESSAGE(Text000 + Text001 + Text002 + Text003,  
+      RefDate, Expr1, Date1, Expr2, Date2, Expr3, Date3);  
+end;
 ```  
 
  The message window displays the following text:  

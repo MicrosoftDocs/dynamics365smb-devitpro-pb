@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -64,39 +64,33 @@ Query.READ;
 ## Example  
  The following AL code example demonstrates how to use the **GETFILTER** method on a query. The example code sets a filter on a query column, and then displays a message when the query is run that indicates the filter on the column.  
   
- This example requires that you do the following:  
+ This example requires that you create a query called **Customer\_SalesQuantity** that has the following characteristics:  
   
-1.  Create a query called **Customer\_SalesQuantity** that has the following characteristics:  
+-  Links table **18 Customer** with table **37 Sales Lines** from the CRONUS International Ltd. demonstration database.  
+
+-   Includes columns for the **Name** and **No.** fields from the **Customer** table and the **Quantity** field from **Sales Lines** table.  
   
-    -   Links table **18 Customer** with table **37 Sales Lines** from the CRONUS International Ltd. demonstration database.  
+<!--NAV For step-by-step instructions for creating this query, see [Walkthrough: Creating a Query to Link Two Tables](Walkthrough--Creating-a-Query-to-Link-Two-Tables.md).-->  
   
-    -   Includes columns for the **Name** and **No.** fields from the **Customer** table and the **Quantity** field from **Sales Lines** table.  
-  
-         <!--NAV For step-by-step instructions for creating this query, see [Walkthrough: Creating a Query to Link Two Tables](Walkthrough--Creating-a-Query-to-Link-Two-Tables.md).-->  
-  
-    -   The ColumnFilter property of the **Quantity** column is set to include values greater than 5.  
-  
-2.  Create the following AL variables and text constant in the object that will run the query, such as a codeunit.  
-  
-    |Variable name|DataType|Subtype|  
-    |-------------------|--------------|-------------|  
-    |MyQuery|Query|Customer\_SalesQuantity|  
-    |MyFilter|Text|Not applicable|  
-  
-    |Text constant name|ENU Value|  
-    |------------------------|---------------|  
-    |Text000|The filter is: %1|  
+-   The ColumnFilter property of the **Quantity** column is set to include values greater than 5.  
   
  The following AL code runs the query and displays a message that contains the filter that is set on a query column. You can add the code to a codeunit, and then run the codeunit to see the results.  
   
-```  
-// Sets a filter to display only sales quantities greater than 10. This overwrites the ColumnFilter property.  
-MyQuery.SETFILTER(Quantity, '>10');  
-// Runs the query and applies the filter.  
-MyQuery.OPEN;  
-// Returns the filter on the Quantity column and displays the filter in a message.  
-MyFilter := MyQuery.GETFILTER(Quantity);  
-MESSAGE(Text000, MyFilter);  
+  
+```
+var
+    MyQuery: Query "Customer SalesQuantity";
+    MyFilter: Text;
+    Text000: TextConst ENU='The filter is: %1';
+begin
+    // Sets a filter to display only sales quantities greater than 10. This overwrites the ColumnFilter property.  
+    MyQuery.SETFILTER(Quantity, '>10');  
+    // Runs the query and applies the filter.  
+    MyQuery.OPEN;  
+    // Returns the filter on the Quantity column and displays the filter in a message.  
+    MyFilter := MyQuery.GETFILTER(Quantity);  
+    MESSAGE(Text000, MyFilter);  
+end;
 ```  
   
  Running the code returns the following message:  

@@ -9,9 +9,9 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 # Use OData to Return and Obtain a Service Metadata (EDMX) Document
-The Entity Data Model \(**EDM**\) is a specification for defining the data that is used by applications that are built on the Entity Framework. **EDMX** is an XML-based file format that is the packaging format for the service metadata of a data service. When you interact with an OData service that is published from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can request EDM-based proxies and then use tools such as LINQ to create data access logic. LINQ is a programming model that developers can use to query data from a variety of data sources, including OData. For more information, see [LINQ \(Language-Integrated Query\)](http://go.microsoft.com/fwlink/?LinkId=230540)  
+The Entity Data Model \(**EDM**\) is a specification for defining the data that is used by applications that are built on the Entity Framework. **EDMX** is an XML-based file format that is the packaging format for the service metadata of a data service. When you interact with an OData service that is published from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can request EDM-based proxies and then use tools such as LINQ to create data access logic. LINQ is a programming model that developers can use to query data from a variety of data sources, including OData. For more information, see [LINQ \(Language-Integrated Query\)](https://go.microsoft.com/fwlink/?LinkId=230540)  
   
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] implementation of EDM follows the [.NET 4.0 WCF Data Service Framework implementation](http://go.microsoft.com/fwlink/?LinkId=214680).  
+The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] implementation of EDM follows the [.NET 4.0 WCF Data Service Framework implementation](https://go.microsoft.com/fwlink/?LinkId=214680).  
   
 The following guidelines have been implemented for EDM.  
   
@@ -26,13 +26,13 @@ The following guidelines have been implemented for EDM.
 2.  Start Windows Internet Explorer. In the **Address** field, enter a URI in this format:  
   
     ```  
-    http://<Server>:<WebServicePort>/<ServerInstance>/OData/$metadata  
+    https://<Server>:<WebServicePort>/<ServerInstance>/OData/$metadata  
     ```  
   
      If [!INCLUDE[server](../developer/includes/server.md)] is running on the local computer and is using the default [!INCLUDE[server](../developer/includes/server.md)] instance and OData port, then the address is:  
   
     ```  
-    http://localhost:7048/<server instance>/OData/$metadata  
+    https://localhost:7048/<server instance>/OData/$metadata  
     ```  
   
      The browser should now show the complete metadata for the page web service that you have published. The beginning of this document looks like this:  

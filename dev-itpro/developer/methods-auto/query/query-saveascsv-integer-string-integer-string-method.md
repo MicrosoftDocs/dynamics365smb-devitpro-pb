@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -87,25 +87,18 @@ Query.READ;
 ## Example  
  The following example shows how to save the dataset of a query with the name **My Customers Query** as a CSV file. The file is given the name **mycustomers.csv** and is saved on the c: drive of the computer running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The query consists of three columns: No., Name, and City. The file is set to place the columns at the following positions: 1, 10, and 40.  
 
- This example requires that you do the following:  
+ This example requires that you create a query called **My Customer Query** that is based on table **18 Customer** and contains the **No**, **Name**, and **City** columns. <!--NAV For more information, see [How to: Create Queries](How-to-Create-Queries.md). -->  
 
--   Create a query called **My Customer Query** that is based on table **18 Customer** and contains the **No**, **Name**, and **City** columns. <!--NAV For more information, see [How to: Create Queries](How-to-Create-Queries.md). -->  
-
--   Create the following variables and text constant:  
-
-    |Variable name|DataType|Subtype|  
-    |-------------------|--------------|-------------|  
-    |OK|Boolean|Not applicable|  
-    |MyCustomerQuery|Query|My Customer Query|  
-
-    |Text constant name|ENU Value|  
-    |------------------------|---------------|  
-    |Text000|Query was not saved.|  
-
-```  
-OK := MyCustomerQuery.SAVEASCSV('c:\mycustomers.csv', 0, '1,10,40');  
-if not OK then  
-  ERROR(Text000);  
+```
+var
+  MyCustomerQuery: Query "My Customer Query";
+  OK: Boolean;
+  Text000: TextConst ENU='Query was not saved.';
+begin
+    OK := MyCustomerQuery.SAVEASCSV('c:\mycustomers.csv', 0, '1,10,40');  
+    if not OK then  
+      ERROR(Text000);  
+end;
 ```  
 
  The following code shows an example of the content of the saved file.  

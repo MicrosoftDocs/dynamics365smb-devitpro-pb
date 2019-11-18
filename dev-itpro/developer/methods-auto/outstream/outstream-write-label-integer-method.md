@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,20 +44,19 @@ The number of bytes that were written.If you omit this optional return value and
 
 ## Example
 
-This example requires that you create the following variables.  
-  
-|Variable name|DataType|SubType|  
-|-------------------|--------------|---|  
-|recBinaries|Record|Company Information|  
-|OStream|OutStream|| 
-|lbl|Label|'Hello World'| 
+```
+ var
+    recBinaries: Record "Company Information";
+    OStream: OutStream;
+    Lbl: Label 'Hello World';
+begin
+    recBinaries.FIND('-');  
+    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
+    OStream.WRITE(lbl);  
+    recBinaries.MODIFY();  
+end;
+``` 
 
-```  
-recBinaries.FIND('-');  
-recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-OStream.WRITE(lbl);  
-recBinaries.MODIFY();  
-```   
 ## See Also
 [OutStream Data Type](outstream-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
