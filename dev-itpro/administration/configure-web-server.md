@@ -11,7 +11,7 @@ author: jswymer
 ---
 # Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances
 
-Accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] or App requires a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance on IIS. You create a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance for the [!INCLUDE[webserver](../developer/includes/webserver.md)] by using the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] or by running the [New-NAVWebServerInstance cmdlet](https://docs.microsoft.com/en-us/powershell/module/Microsoft.Dynamics.Nav.Management/new-navwebserverinstance). When you set up a web server instance, you are configuring the connection from the [!INCLUDE[webserver](../developer/includes/webserver.md)] to the [!INCLUDE[server](../developer/includes/server.md)] instance. The connection settings, along with several other configuration settings, are saved in a configuration file for the web server instance.
+Accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] or App requires a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance on IIS. You create a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance for the [!INCLUDE[webserver](../developer/includes/webserver.md)] by using the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] or by running the [New-NAVWebServerInstance cmdlet](https://docs.microsoft.com/powershell/module/Microsoft.Dynamics.Nav.Management/new-navwebserverinstance). When you set up a web server instance, you are configuring the connection from the [!INCLUDE[webserver](../developer/includes/webserver.md)] to the [!INCLUDE[server](../developer/includes/server.md)] instance. The connection settings, along with several other configuration settings, are saved in a configuration file for the web server instance.
 
 ## <a name="WebClientSettingsFile"></a>About the configuration file
 The configuration file for the web server instances is a .json file type called **navsettings.json**. The navsettings.json file is a Java Script Object Notification file type that is similar to files that use the XML file format.
@@ -54,7 +54,7 @@ The navsettings.json file is stored in the physical path of the web server insta
 
 ## Modify the navsettings.json file by using the Set-NAVWebServerInstanceConfiguration cmdlet
 
-The PowerShell script module **NAVWebClientManagement.psm1** includes the [Set-NAVWebServerInstanceConfiguration cmdlet](https://docs.microsoft.com/en-us/powershell/module/Microsoft.Dynamics.Nav.Management/Set-NAVWebServerInstanceConfiguration) that enables you to configure a web server instance.
+The PowerShell script module **NAVWebClientManagement.psm1** includes the [Set-NAVWebServerInstanceConfiguration cmdlet](https://docs.microsoft.com/powershell/module/Microsoft.Dynamics.Nav.Management/Set-NAVWebServerInstanceConfiguration) that enables you to configure a web server instance.
 
 1. Depending on your installation, run the [!INCLUDE[devshell](../developer/includes/devshell.md)] or Windows PowerShell as an administrator.
 
@@ -127,7 +127,7 @@ The following table describes the settings that are available in the navsettings
 |OfficeSuiteShellServiceClientTimeout |Defines the time Business Central will wait for the Office Suite Shell Service to respond.<br /><br />**Important:** This setting has been deprecated in Business Central, and it has no effect on the Web Server instance. <br /><br /> Default value: 10|
 |UseAdditionalSearchTerms|Specifies whether **Tell me** uses the additional search terms that are defined on pages and reports.<br /><br />The additional search terms are specified by the [AdditionalSearchTerms](../developer/properties/devenv-additionalsearchterms-property.md) and [AdditionalSearchTermsML](../developer/properties/devenv-additionalsearchtermsml-property.md) properties.<br /><br /> If you set this to `false` the additional search terms are ignored.<br /><br /> Default value: true |
 |DefaultRelativeHelpPath|Specifies the default Help article to open if no other context-sensitive link is specified.<br /><br /> Default value: none|
-|PersonalizationEnabled|Specifies whether personalization is enabled in the [!INCLUDE[webclient](../developer/includes/webclient.md)]. Set to `true` to enable personalization.<br /><br />For more information, see [Managing Personalization](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-manage).|
+|PersonalizationEnabled|Specifies whether personalization is enabled in the [!INCLUDE[webclient](../developer/includes/webclient.md)]. Set to `true` to enable personalization.<br /><br />For more information, see [Managing Personalization](https://docs.microsoft.com/dynamics365/business-central/ui-personalization-manage).|
 
 ### `ApplicationIdSettings` element settings
 

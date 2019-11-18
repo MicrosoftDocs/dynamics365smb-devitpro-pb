@@ -12,7 +12,7 @@ author: jswymer
 # How to: Use LogMan to Collect Event Trace Data
 This article describes how to use logman to collect event trace data for [!INCLUDE[server](../developer/includes/server.md)]. Logman (logman.exe) comes with the Windows Operating System. You can use it to create and manage event trace session and performance logs from the command prompt.
 
-This article provides a brief introduction to using logman to collect trace event data for [!INCLUDE[server](../developer/includes/server.md)] and telemetry events. For more detailed information about logman, see [Logman](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
+This article provides a brief introduction to using logman to collect trace event data for [!INCLUDE[server](../developer/includes/server.md)] and telemetry events. For more detailed information about logman, see [Logman](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
   
 ## Collect event trace data  
 You can collect [!INCLUDE[server](../developer/includes/server.md)] trace event data from two different trace event providers: **Microsoft-Dynamics365BusinessCentral-Server** and **Microsoft-Dynamics365BusinessCentral-Common**. **Microsoft-Dynamics365BusinessCentral-Server** is used for trace events like SQL traces, AL function traces, and session calls. **Microsoft-Dynamics365BusinessCentral-Common** is used for telemetry events. 
@@ -69,7 +69,7 @@ The data is now stored in an .etl file.
 There are various industry tools available for viewing data in .etl files.
 
 For example, from the command line, you can use the
- [tracerpt command](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732700(v=ws.11)) to create dump files, summary, and report files. The following code creates files for the MyTelemetryTraceData_000001.etl file:  
+ [tracerpt command](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732700(v=ws.11)) to create dump files, summary, and report files. The following code creates files for the MyTelemetryTraceData_000001.etl file:  
   
 ```
 tracerpt c:\perflogs\MyTelemetryTraceData_000001.etl -o c:\perflogs\MyTelemetry-dmp.xml -of XML -summary c:\perflogs\MyTelemetry-summary.txt -report c:\perflogs\MyTelemetry-rpt.xml

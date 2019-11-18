@@ -29,7 +29,7 @@ This article provides an overview of the full upgrade process for Business Centr
 |Step|More info| Done |
 |----|-----------|--|
 |Upgrade the application code.|[See...](upgrading-the-application-code.md)|
-|Mount the upgraded application on the [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navapplication)||
+|Mount the upgraded application on the [!INCLUDE[server](../developer/includes/server.md)] instance.|[See...](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/mount-navapplication)||
 |Import upgrade toolkit (.fob)|[See...](../cside/cside-import-objects.md)||
 |Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-application-code.md#AddExtensions)|
 |Publish the new Microsoft extension versions from the installation media.|[See...](upgrading-the-application-code.md#PublishNew)||
@@ -40,18 +40,18 @@ This article provides an overview of the full upgrade process for Business Centr
 |Step|More info| Done |
 |----|-----------|--|
 |Backup the tenant database.|[See...](http://go.microsoft.com/fwlink/?LinkID=296465)||
-|Uninstall all V1 extensions.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
-|Dismount the tenant from the old server instance.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant)||
+|Uninstall all V1 extensions.|[See...](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
+|Dismount the tenant from the old server instance.|[See...](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant)||
 
 ## Run the data upgrade on the tenant
 
 |Step|More info| Done |
 |----|-----------|--|
-|Mount the tenant on the [!INCLUDE[server](../developer/includes/server.md)] instance. **Important:** Use the `-AllowAppDatabaseWrite` parameter.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant)|
+|Mount the tenant on the [!INCLUDE[server](../developer/includes/server.md)] instance. **Important:** Use the `-AllowAppDatabaseWrite` parameter.|[See...](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/mount-navtenant)|
 |Synchronize the tenant.|[See...](../administration/synchronize-tenant-database-and-application-database.md)||
-|Synchronize all extensions.|[See..](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp)||
-|Run the data upgrade. **Important:** If there are V2 extensions, you must use  the `-FunctionExecutionMode Serial` parameter.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade)||
-|Install the new V2 extensions that were not installed in the old tenant.|[See...](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
+|Synchronize all extensions.|[See..](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp)||
+|Run the data upgrade. **Important:** If there are V2 extensions, you must use  the `-FunctionExecutionMode Serial` parameter.|[See...](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade)||
+|Install the new V2 extensions that were not installed in the old tenant.|[See...](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)|
 
 
 ## Post-upgrade tasks 

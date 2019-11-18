@@ -37,7 +37,7 @@ The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance includes 
 |EnableSqlConnectionEncryption​|true|Configures the server to request encryption on the SQL Connections used against the database.|
 |ODataServicesSSLEnabled​|false||
 |SOAPServicesSSLEnabled​|false||
-|ClientServicesProtection|EncryptAndSign|Protects the data stream between clients and [!INCLUDE[server](../developer/includes/server.md)] instance. For background information, see [Understanding Protection Level](https://docs.microsoft.com/en-us/dotnet/framework/wcf/understanding-protection-level)|
+|ClientServicesProtection|EncryptAndSign|Protects the data stream between clients and [!INCLUDE[server](../developer/includes/server.md)] instance. For background information, see [Understanding Protection Level](https://docs.microsoft.com/dotnet/framework/wcf/understanding-protection-level)|
 |ReportAppDomainIsolation​|||
 |ClientServicesMaxUploadSize​|30MB|Helps to avoid out-of-memory errors.|
 |RestrictedFileTypes​ (ClientServicesProhibitedFileTypes)||Prevents specific file types from uploaded to the database from the client. |

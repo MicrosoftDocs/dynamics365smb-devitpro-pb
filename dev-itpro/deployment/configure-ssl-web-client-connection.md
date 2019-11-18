@@ -58,7 +58,7 @@ In a production environment, you should obtain an SSL certificate from a certifi
   
 ### Redirect HTTP to HTTPS  
   
-1.  Download and install Microsoft Application Request Routing for IIS. For example, you can download from [Microsoft Application Request Routing](https://www.microsoft.com/en-us/download/details.aspx?id=47333).   
+1.  Download and install Microsoft Application Request Routing for IIS. For example, you can download from [Microsoft Application Request Routing](https://www.microsoft.com/download/details.aspx?id=47333).   
   
 2.  On the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], open the web.config file for the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. Use a text editor, such as Notepad.  
   

@@ -40,14 +40,14 @@ Depending on various factors, the account may already have this ability to log i
 
 When this permission is lacking, [!INCLUDE[server](../developer/includes/server.md)] instances may not be able to start. 
 
-For instructions for enabling an account to log in as a service, see [Manage User Accounts in Windows Server](https://docs.microsoft.com/en-us/windows-server-essentials/manage/manage-user-accounts-in-windows-server-essentials).  
+For instructions for enabling an account to log in as a service, see [Manage User Accounts in Windows Server](https://docs.microsoft.com/windows-server-essentials/manage/manage-user-accounts-in-windows-server-essentials).  
 
 
 
 ### Enabling the account to register an SPN on itself  
  To enable secure mutual authentication between clients and [!INCLUDE[server](../developer/includes/server.md)], you must configure the [!INCLUDE[server](../developer/includes/server.md)] account to self-register Service Principal Names \(SPNs\). Mutual authentication is recommended in a production environment but may not be necessary in a testing or staging environment. This is done by modifying the account in Active Directory. 
 
-For more information, see [Service Principal Names](https://docs.microsoft.com/en-us/windows/desktop/ad/service-principal-names) in the Active Directory documentation.  
+For more information, see [Service Principal Names](https://docs.microsoft.com/windows/desktop/ad/service-principal-names) in the Active Directory documentation.  
 
 <!--
 ##### To enable the [!INCLUDE[server](../developer/includes/server.md)] account to register an SPN on itself  
@@ -102,7 +102,7 @@ For more information, see [Service Principal Names](https://docs.microsoft.com/e
         </net.tcp>
     ```
 
-For more information about SMSvcHost.exe and the SMSvcHost.exe.config file, see [Configuring the Net.TCP Port Sharing Service](https://msdn.microsoft.com/en-us/library/aa702669%28v=vs.110%29.aspx).
+For more information about SMSvcHost.exe and the SMSvcHost.exe.config file, see [Configuring the Net.TCP Port Sharing Service](https://msdn.microsoft.com/library/aa702669%28v=vs.110%29.aspx).
 
 ###  <a name="dbo"></a> Giving the account necessary database privileges in SQL Server  
 The [!INCLUDE[server](../developer/includes/server.md)] account needs two privileges on SQL Server instance used for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
@@ -111,7 +111,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] account needs two privil
 
 2. To serve client requests and read/write to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, it must be member of the db\_owner database role on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. 
 
-When you install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database by using [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] or the [New-NAVDatabase](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/new-navdatabase) cmdlet, you can specify the [!INCLUDE[server](../developer/includes/server.md)] account. In these cases, the server account that you specify should already have the necessary privileges in SQL Server. If you change the [!INCLUDE[server](../developer/includes/server.md)] account for an existing installation, then you should verify the account has the required privileges in SQL Server.  
+When you install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database by using [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] or the [New-NAVDatabase](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/new-navdatabase) cmdlet, you can specify the [!INCLUDE[server](../developer/includes/server.md)] account. In these cases, the server account that you specify should already have the necessary privileges in SQL Server. If you change the [!INCLUDE[server](../developer/includes/server.md)] account for an existing installation, then you should verify the account has the required privileges in SQL Server.  
 
 To verify server-level and database-level privileges on SQL Server after you create your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, use SQL Server Management Studio and, if necessary, modify privileges. If you have installed SQL Server with the guidelines in [Installation Considerations for Microsoft SQL Server](Installation-Considerations-for-Microsoft-SQL-Server.md), then SQL Server Management Studio is already installed on your computer. Otherwise, update your SQL Server installation to include the **Management Tools - Complete option for SQL Server** (for SQL Server 2012/2014.) For SQL Server 2016, SQL Server Management Studio can be downloaded and installed as a standalone application.  
 

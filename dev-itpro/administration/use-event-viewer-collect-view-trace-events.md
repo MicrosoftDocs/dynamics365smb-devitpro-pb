@@ -25,7 +25,7 @@ By default the **Debug** logs are disabled and may also be hidden in the Event V
   
 1.  On the computer that is running [!INCLUDE[server](../developer/includes/server.md)], start Event Viewer.  
   
-     For more information, see [How to Start Event Viewer](http://technet.microsoft.com/en-us/library/gg163894.aspx).  
+     For more information, see [How to Start Event Viewer](http://technet.microsoft.com/library/gg163894.aspx).  
   
 2.  In the console tree, choose **Applications and Services Logs**, **Microsoft**, **Dynamics365BusinessCentral**, and then **Server** or **Common**.  
   
@@ -40,5 +40,5 @@ By default the **Debug** logs are disabled and may also be hidden in the Event V
   
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)    
- [Show or Hide Analytic and Debug](http://technet.microsoft.com/en-us/library/cc766275.aspx)   
- [Enable Analytic and Debug Logs](http://technet.microsoft.com/en-us/library/cc749492.aspx)
+ [Show or Hide Analytic and Debug](http://technet.microsoft.com/library/cc766275.aspx)   
+ [Enable Analytic and Debug Logs](http://technet.microsoft.com/library/cc749492.aspx)

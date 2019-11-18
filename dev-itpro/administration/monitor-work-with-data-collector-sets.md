@@ -22,7 +22,7 @@ A *Data Collector Set* organizes data collection points, such as performance cou
   
  [View Performance Counter Data for a Data Collector Set](monitor-view-performance-counter-data-for-data-collector-set.md)  
   
- For general information about Data Collector Sets, see [Creating Data Collector Sets](http://technet.microsoft.com/en-us/library/cc749337.aspx).  
+ For general information about Data Collector Sets, see [Creating Data Collector Sets](http://technet.microsoft.com/library/cc749337.aspx).  
   
 ## See Also  
  [Business Central Performance Counters](performance-counters.md)

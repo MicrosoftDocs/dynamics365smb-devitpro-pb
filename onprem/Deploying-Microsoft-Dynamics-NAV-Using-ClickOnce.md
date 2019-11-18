@@ -101,7 +101,7 @@ Follow these steps to host on a file share:
   
     1.  If you do not already have a code signing certificate, you will have to obtain one from one of the certification authorities. For a list of certification authorities, see [Microsoft Technet](http://go.microsoft.com/fwlink/?LinkId=262163).  
   
-    2.  You can also create a test certificate and use it for testing. For more information, see [How to: Create Your Own Test Certificate](http://msdn.microsoft.com/en-us/library/ff699202.aspx) or [New-SelfSignedCertificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/new-selfsignedcertificate).  
+    2.  You can also create a test certificate and use it for testing. For more information, see [How to: Create Your Own Test Certificate](http://msdn.microsoft.com/library/ff699202.aspx) or [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).  
   
     3.  For information about when it is acceptable to skip this step, see [Security Considerations](Deploying-Microsoft-Dynamics-NAV-Using-ClickOnce.md#Security).  
   
@@ -163,7 +163,7 @@ Follow these steps to host on a file share:
         > [!IMPORTANT]  
         >  You must specify the fully qualified path to mage.exe, such as `"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\Bin\NETFX 4.6.1 Tools\mage.exe"`.  
         
-        The *FromDirectory* parameter will include all files in all subdirectories found within the specified directory. If no directory is specified, such as in the example, mage.exe uses the current directory and subdirectories. For more information, see [Mage.exe](http://msdn.microsoft.com/en-us/library/acz3y3te\(v=vs.110\).aspx) in the MSDN Library.  
+        The *FromDirectory* parameter will include all files in all subdirectories found within the specified directory. If no directory is specified, such as in the example, mage.exe uses the current directory and subdirectories. For more information, see [Mage.exe](http://msdn.microsoft.com/library/acz3y3te\(v=vs.110\).aspx) in the MSDN Library.  
   
         ClickOnce does not support having the same assembly duplicated in different folders. If you receive an error, then you will have to remove one of the copies, either in the manifest file or on disk, and then run the mage.exe again. The copy of OpenXML.dll in Add-Ins folder will not be needed in a ClickOnce deployment, therefore you can delete it.  
   

@@ -64,7 +64,7 @@ Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an admi
  
     <!--From the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], on the **Tools** menu, choose **Sync. Schema For All Tables**, and then **With Validation**.  For more information, see [Synchronizing Table Schemas](Synchronizing-Table-Schemas.md).-->
 
-    You cannot use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] in this case. You must use the [Sync-NAVTenant cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], for example:
+    You cannot use the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] in this case. You must use the [Sync-NAVTenant cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], for example:
 
     ```
     Sync-NAVTenant -ServerInstance BC140 

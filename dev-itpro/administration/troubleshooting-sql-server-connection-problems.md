@@ -55,7 +55,7 @@ After installing and configuring [!INCLUDE[prodshort](../developer/includes/prod
  After exiting SQL Server Configuration Manager, start the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client again to see if the connection problem has been resolved.  
   
 ## Starting SQL Browser Service  
- When using a named database instance for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and [!INCLUDE[server](../developer/includes/server.md)] and the SQL server are on separate computers, then SQL Browser Service must be running on the SQL Server. For more information, see [Start SQL Browser Service](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/start-stop-pause-resume-restart-sql-server-services).  
+ When using a named database instance for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and [!INCLUDE[server](../developer/includes/server.md)] and the SQL server are on separate computers, then SQL Browser Service must be running on the SQL Server. For more information, see [Start SQL Browser Service](https://docs.microsoft.com/sql/database-engine/configure-windows/start-stop-pause-resume-restart-sql-server-services).  
   
 ## See Also  
 

@@ -52,7 +52,7 @@ Because of changes in [!INCLUDE[crm_md](../developer/includes/crm_md.md)] and th
 
 ## New and changed application features
 
-There a several new and changed application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central April '19 release](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-business-central).
+There a several new and changed application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central April '19 release](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-business-central).
 
 To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
 

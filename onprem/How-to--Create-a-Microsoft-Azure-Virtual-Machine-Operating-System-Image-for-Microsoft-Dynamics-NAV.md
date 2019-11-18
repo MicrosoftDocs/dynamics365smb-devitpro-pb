@@ -34,7 +34,7 @@ This topic describes how to create custom images in Microsoft Azure Gallery that
 
 1.  Sign in to Azure at [http://azure.microsoft.com](http://go.microsoft.com/fwlink/?LinkID=285197).  
 
-2.  Complete the instructions for creating a new virtual machine at [http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-tutorial](http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-tutorial).  
+2.  Complete the instructions for creating a new virtual machine at [http://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial](http://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial).  
 
 3.  When the virtual machine has been created, establish a Remote Desktop connection to the virtual machine, and then run Windows Update and apply all recommended updates.  
 
@@ -89,7 +89,7 @@ This topic describes how to create custom images in Microsoft Azure Gallery that
 
 5.  Create a SQL SysPrep configuration file for running the SQL Server setup.exe file.  
 
-     You can use the example file that is described in [SQL Server Sysprep Installation Configuration File Example](SQL-Server-Sysprep-Installation-Configuration-File-Example.md) or follow the instructions at [Install SQL Server 2012 Using a Configuration File](http://msdn.microsoft.com/en-us/library/dd239405.aspx) to create your own file.  
+     You can use the example file that is described in [SQL Server Sysprep Installation Configuration File Example](SQL-Server-Sysprep-Installation-Configuration-File-Example.md) or follow the instructions at [Install SQL Server 2012 Using a Configuration File](http://msdn.microsoft.com/library/dd239405.aspx) to create your own file.  
 
      Name the file *ConfigurationFile.ini* and save it in the same location as the setup.exe file.  
 

@@ -17,7 +17,7 @@ You change the compatibility level of the database by using SQL Server Managemen
 
 - Open the database properties, select the **Options** page, and then set the **Compatibility Level:**.
 
-   For more information, see [View or Change the Compatibility Level of a Database](https://docs.microsoft.com/en-us/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database). 
+   For more information, see [View or Change the Compatibility Level of a Database](https://docs.microsoft.com/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database). 
 - Run the following query:
 
     ```
@@ -29,7 +29,7 @@ You change the compatibility level of the database by using SQL Server Managemen
    -    `140` sets the database to be compatible with SQL Server 2017
    -    `130` sets the database to be compatible with SQL Server 2016 and Azure SQL Database
 
-   For more information, see [ALTER DATABASE (Transact-SQL) Compatibility Level](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-database-transact-sql-compatibility-level).
+   For more information, see [ALTER DATABASE (Transact-SQL) Compatibility Level](https://docs.microsoft.com/sql/t-sql/statements/alter-database-transact-sql-compatibility-level).
 
 > [!NOTE]  
 > The compatibility level for Azure SQL Database is subject to change. Refer to Azure SQL Database documentation for latest compatibility level.

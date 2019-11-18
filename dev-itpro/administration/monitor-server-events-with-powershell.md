@@ -57,7 +57,7 @@ There are two debug logs for [!INCLUDE[prodshort](../developer/includes/prodshor
     ```  
   
 > [!TIP]  
->  You can also enable the Debug log from Event Viewer. For more information, see [Enable Analytic and Debug Logs](http://technet.microsoft.com/en-us/library/cc749492.aspx).  
+>  You can also enable the Debug log from Event Viewer. For more information, see [Enable Analytic and Debug Logs](http://technet.microsoft.com/library/cc749492.aspx).  
   
 ## Filtering [!INCLUDE[server](../developer/includes/server.md)] Events  
 You can filter the events that you view in a [!INCLUDE[server](../developer/includes/server.md)] log by setting the *FilterXpath* parameter of the Get-WinEvent cmdlet. The following examples illustrate how you can use the *FilterXpath* parameter to filter the [!INCLUDE[server](../developer/includes/server.md)] events.  

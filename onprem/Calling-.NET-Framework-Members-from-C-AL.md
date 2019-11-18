@@ -34,7 +34,7 @@ You can call .NET Framework type members, including methods, properties, and con
 
 -   You use the same syntax to call static and instance methods.  
 
--   Calling static methods provides a factory pattern for creating object instances. For example, to create a new [System.TimeZoneInfo](https://msdn.microsoft.com/en-us/library/system.timezoneinfo\(v=vs.110\).aspx) object, you call the type’s [System.TimeZoneInfo.Local](https://msdn.microsoft.com/en-us/library/system.timezoneinfo.local\(v=vs.110\).aspx) static method with the following code.  
+-   Calling static methods provides a factory pattern for creating object instances. For example, to create a new [System.TimeZoneInfo](https://msdn.microsoft.com/library/system.timezoneinfo\(v=vs.110\).aspx) object, you call the type’s [System.TimeZoneInfo.Local](https://msdn.microsoft.com/library/system.timezoneinfo.local\(v=vs.110\).aspx) static method with the following code.  
 
     ```  
     zone := zone.Local;  

@@ -45,15 +45,15 @@ On the computer running the [!INCLUDE[server](../developer/includes/server.md)] 
   
 1.  Configure the SQL Server instance \(Database Engine\) that hosts the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to use SQL Server Authentication.  
   
-     To use SQL Server authentication, you configure the database instance to mixed authentication mode \(SQL Server and Windows Authentication\). For more information, see [Change Server Authentication Mode](http://technet.microsoft.com/en-us/library/ms188670.aspx).  
+     To use SQL Server authentication, you configure the database instance to mixed authentication mode \(SQL Server and Windows Authentication\). For more information, see [Change Server Authentication Mode](http://technet.microsoft.com/library/ms188670.aspx).  
   
 2.  In the SQL Server instance, create a login that uses SQL Server authentication.  
   
-     For more information, see [Create a Login](http://msdn.microsoft.com/en-us/library/aa337562.aspx).  
+     For more information, see [Create a Login](http://msdn.microsoft.com/library/aa337562.aspx).  
   
 3.  Map the login to a user in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and add the user to the **db\_owner** role of the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
   
-     For more information, see [Create a Database User](http://msdn.microsoft.com/en-us/library/aa337545.aspx).  
+     For more information, see [Create a Database User](http://msdn.microsoft.com/library/aa337545.aspx).  
   
 ##  <a name="ConfigNavServer"></a> Configure SQL Server Authentication on the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Instance \(Non-Multitenant\)  
  You configure the [!INCLUDE[server](../developer/includes/server.md)] instance with the login credentials \(user name and password\) of the user account in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server that you want to use for authentication. You can do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
