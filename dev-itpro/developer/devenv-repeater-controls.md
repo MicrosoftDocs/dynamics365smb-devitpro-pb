@@ -37,7 +37,7 @@ To the improve the visibility and readability of the list you can set some prope
 
 You should also consider limiting the number of columns and enabling a freeze column, by setting the [FreezeColumn Property](properties/devenv-freezecolumn-property.md), as well as applying filters to display only the most relevant data and minimize scrolling. This is particularly important when it comes to mobile devices, where there are restrictions as to how much content can be shown. You can also do this by defining a new view on a page. For more information, see [Views](devenv-views.md).
 
-Alternatively, you can add, move or hide fields and make adjustments like modifying the column width, directly from the user interface. To apply these changes you use the Designer tool. For more information, see [Using Designer](devenv-inclient-designer.md). If these changes are meant for your own workspace, then you use the Personalize tool. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-personalization-user). To sort the data and apply filters you can use the Filter Pane from the page. For more information, see [Sorting, Searching, and Filtering](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-enter-criteria-filters).
+Alternatively, you can add, move or hide fields and make adjustments like modifying the column width, directly from the user interface. To apply these changes you use the Designer tool. For more information, see [Using Designer](devenv-inclient-designer.md). If these changes are meant for your own workspace, then you use the Personalize tool. For more information, see [Personalizing Your Workspace](https://docs.microsoft.com/dynamics365/business-central/ui-personalization-user). To sort the data and apply filters you can use the Filter Pane from the page. For more information, see [Sorting, Searching, and Filtering](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters).
 
 You can also use the Tile View to display records as tiles (or bricks) instead of as rows and optimize the space and readability of data. For more information on how to customize the tile view, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).
 
@@ -131,5 +131,5 @@ pagecustomization MyCustomization customizes "Customer List"
 
 ## See Also
 [Pages Overview](devenv-pages-overview.md)  
-[Designing List Pages](devenv-designing-list-pages?tabs=about.md)  
+[Designing List Pages](devenv-designing-list-pages.md)  
 [Page Customization Object](devenv-page-customization-object.md)
