@@ -2,7 +2,7 @@
 title: "InvokeExtensibilityMethod Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/18/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] on the page that contains the control add-in.  
   
 ## Method Signature  
- `void Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(name, arguments, skipIfBusy, callback)`  
+`void Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(name, arguments, skipIfBusy, callback)`  
   
 ## Parameters  
   
@@ -27,27 +27,27 @@ Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_se
 |*callback*|Type: function<br /><br /> A function that is called when the extensibility method has finished execution on the server. This parameter is optional.|  
   
 > [!IMPORTANT]  
->  The callback function is useful for synchronizing multiple calls to the server. This is used, for example, when transferring multiple data blocks to the server to prevent overflowing the communication channel between the client and the server.  
+> The callback function is useful for synchronizing multiple calls to the server. This is used, for example, when transferring multiple data blocks to the server to prevent overflowing the communication channel between the client and the server.  
   
  **Callback Function Syntax**  
   
- The syntax of the callback function is the following:  
+The syntax of the callback function is the following:  
   
- `function callback()`  
+`function callback()`  
   
 ## skipIfBusy Options  
- The following table illustrates the different settings of `skipIfBusy` combined with the client’s status.  
+The following table illustrates the different settings of `skipIfBusy` combined with the client’s status.  
   
 |skipIfBusy set to|Client is busy|Action|  
-|-----------------------|--------------------|------------|  
+|-----------------|--------------|------------|  
 |**false**|**false**|Method call invoked.|  
 |**false**|**true**|Method call is queued and will be invoked once the client is no longer busy.|  
 |**true**|**false**|Method call invoked.|  
 |**true**|**true**|No method call.|  
 
- <!-- 
+<!-- 
 ## Example  
- For a detailed code example, see [Walkthrough: Creating and Using a Client Control Add-in](Walkthrough--Creating-and-Using-a-Client-Control-Add-in.md)  -->
+For a detailed code example, see [Walkthrough: Creating and Using a Client Control Add-in](Walkthrough--Creating-and-Using-a-Client-Control-Add-in.md)  -->
   
 ```  
 var map = new VEMap('controlAddIn');  
