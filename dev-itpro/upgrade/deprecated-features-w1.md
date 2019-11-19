@@ -46,12 +46,14 @@ You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Win
 |Removed| [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is steadily moving toward being an online offering only, and a step in that direction is to use a browser-based user interface. |
 
 ## Objects that have been marked as obsolete
-Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. <!--should probably mention the other tags too.-->
+Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
+<!--should probably mention the other tags too.-->
 
-### Breaking Changes
+## Breaking Changes
 When we move, remove, or replace an object, breaking changes can result in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document that lists known issues and suggestions for what to do about them.
 
-### Features that are available only in the online version
+## Features that are available only in the online version 
+<!--Should we include a section about this?-->
 Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises). 
 
 ## See Also
