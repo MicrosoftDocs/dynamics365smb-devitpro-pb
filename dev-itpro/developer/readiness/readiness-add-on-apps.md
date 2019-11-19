@@ -61,10 +61,8 @@ HDI - V9: Connect to webservices in an extension DONE -->
 - [How do I upgrade logic to an extension?](https://youtu.be/hm7mCGp7qug)
 
 ## How do I get my Add-on app published in Microsoft AppSource? 
-To ease your journey, from the initial idea submission to the final publication, we have created a guide that you can lean on throughout the process of bringing your app to AppSource. The guide consists of two documents that outline all the steps that must be taken to get your app to go live on the platform. You need to complete the steps in the given order to pass the different validation stages and getting your app published on AppSource. Learn more here:
+To ease your journey, from the initial idea submission to the final publication, we have created a page that you can lean on throughout the process of bringing your app to AppSource. Please have a look at [Getting You Started with Building Apps](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-add-on-apps-getting-you-started)
 
-- [Getting you started with Microsoft Dynamics 365 Business Central Add-on Apps](https://go.microsoft.com/fwlink/?linkid=869734).  
-- [Developing and publishing Microsoft Dynamics 365 Business Central Add-on Apps](https://go.microsoft.com/fwlink/?linkid=869733). 
 
 ## See Also
 [Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
