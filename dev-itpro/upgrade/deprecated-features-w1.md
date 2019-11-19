@@ -52,7 +52,7 @@ Part of deprecating features is marking the objects that comprise them as "obsol
 When we move, remove, or replace an object, breaking changes can result in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document that lists known issues and suggestions for what to do about them.
 
 ### Features that are available only in the online version
-Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises). 
+Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises). 
 
 ## See Also
 [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)
