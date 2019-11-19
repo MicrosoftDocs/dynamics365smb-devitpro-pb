@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-Use the `protected` keyword on the declaration of a var section to make the declared variable within that section accessible from other objects within the same module. If you want to only expose some variables as `protected`, you must created two sections of var declarations. See in the syntax below.
+Use the `protected` keyword on the declaration of a `var` section to make the declared variable within that section accessible from other objects across modules. The `protected` keyword can be used to make variables accessible between tables and table extensions and between pages and page extensions. If you want to only expose some variables as `protected`, you must create two sections of `var` declarations. See the syntax below.
 
 ## Syntax
 ```
@@ -24,8 +24,6 @@ protected var
 var
         myLocalInt: Integer;
 ```
-
-## Example
 
 ## See Also  
 [AL Method Reference](methods/devenv-al-method-reference.md)   
