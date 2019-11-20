@@ -27,10 +27,10 @@ MyVariable: Boolean;
 ```
 
 ## Remarks  
-You must define this attribute on a variable if it is used as the value of the [Editable Property](devenv-styleexpr-property.md), [Enabled Property](devenv-styleexpr-property.md), [Visible Property](devenv-styleexpr-property.md) and [StyleExpr Property](devenv-styleexpr-property.md).  
+You must define this attribute on a variable if it is used as the value of the [Editable Property](../properties/devenv-editable-property.md), [Enabled Property](../properties/devenv-enabled-property.md), [Visible Property](../properties/devenv-visible-property.md) and [StyleExpr Property](../properties/devenv-styleexpr-property.md).  
 
 ## See Also
-[StyleExpr Property](devenv-styleexpr-property.md)   
-[Editable Property](devenv-styleexpr-property.md)  
-[Enabled Property](devenv-styleexpr-property.md)  
-[Visible Property](devenv-styleexpr-property.md)
+[StyleExpr Property](../properties/devenv-styleexpr-property.md)   
+[Editable Property](../properties/devenv-editable-property.md)  
+[Enabled Property](../properties/devenv-enabled-property.md)  
+[Visible Property](../properties/devenv-visible-property.md)
