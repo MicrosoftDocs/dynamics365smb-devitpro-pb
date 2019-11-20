@@ -5084,6 +5084,11 @@
       "source_path": "dev-itpro/developer/readiness/readiness-learning-sales.md",
       "redirect_url": "dynamics365/business-central/readiness/readiness-learning-sales",
       "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/properties/devenv-indataset-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods/devenv-indataset-attribute",
+    "redirect_document_id": false
    }
   ]
 }
