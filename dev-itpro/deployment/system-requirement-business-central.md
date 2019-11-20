@@ -62,7 +62,7 @@ The following table shows the minimum system requirements for customizing or ext
 For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
 
 ###  <a name="WinClient"></a> [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] Requirements  
- The following table shows the minimum system requirements for using the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].  -->
+ The following table shows the minimum system requirements for using the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].  
 
 |||  
 |-|-|  
