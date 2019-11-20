@@ -24,7 +24,7 @@ protected var
 var
         myLocalInt: Integer;
 ```
-
+<!--
 ## Example
 page 50100 MyPage
 {
@@ -83,7 +83,7 @@ pageextension 50101 MyPageExt extends MyPage
         }
     }
 }
-
+-->
 
 ## See Also  
 [AL Method Reference](methods/devenv-al-method-reference.md)   
