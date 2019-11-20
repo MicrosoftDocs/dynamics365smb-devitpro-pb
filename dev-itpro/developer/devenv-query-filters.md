@@ -1,5 +1,5 @@
 ---
-title: Filtering From Query Designer and C/AL Code
+title: Filtering in Query Objects
 description: Specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table associated with the query.
 ms.custom: na
 ms.date: 10/01/2019
@@ -21,10 +21,10 @@ You can set up filters on a field directly in the query object, or you can use t
 ||Filter|Description|  
 |------------|------------|-----------------|  
 |In query object|Filter on a Data item|You can set the [DataItemTableFilter property](properties/devenv-dataitemtablefilter-property.md) of a data item to filter on a field in the table of the data item. You can apply the filter to any field in the table, not just fields that are defined as columns in the resulting dataset. A data item filter cannot be overwritten from AL code.|  
-||Filter on a Column|You can set the [ColumnFilter property](properties/devenv-columnfilter-property.md) of a column to filter on the source field of the column. A filter on a column can be overwritten by the SETFILTER and SETRANGE methods from AL code.|  
-||Add a filter row|A filter row lets you add a filter on a field that will not be included in the resulting dataset, but can be changed from AL code. To set up a filter row in Query Designer, you add a row of the type Filter that is set to the field that you want to filter, and then set its ColumnFilter property. A filter row is like a data item filter except a filter on a filter row can be overwritten by the SETFILTER and SETRANGE methods from C/AL code.|  
-|AL filter method calls|[SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md)|You can call the SETFILTER method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETFILTER method will overwrite any filter that is applied to a column or filter row on the same field by the ColumnFilter property.|  
-||[SETRANGE method](methods-auto/query/queryinstance-setrange-method.md)|You can SETRANGE method from C/AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETRANGE method will overwrite any filter that is applied to column or filter row on the same field.|  
+||Filter on a Column|You can set the [ColumnFilter property](properties/devenv-columnfilter-property.md) of a `column` control to filter on the source field of the column. A filter on a column can be overwritten by the [SETFILTER](methods-auto/record/record-setfilter-method.md) and [SETRANGE](methods-auto/record/record-setrange-method.md) methods from AL code.|  
+||Add a filter row|A filter row lets you add a filter on a field that will not be included in the resulting dataset, but can be changed from AL code. To set up a row filter add a `filter` control referencing the filed that you want to filter and then set its [ColumnFilter Property](properties/devenv-columnfilter-property.md). A filter row is like a data item filter except a filter on a filter row can be overwritten by the [SETFILTER](methods-auto/record/record-setfilter-method.md) and [SETRANGE](methods-auto/record/record-setrange-method.md) methods from AL code.|  
+|AL filter method calls|[SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md)|You can call the SETFILTER method from AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETFILTER method will overwrite any filter that is applied to a column or filter row on the same field by the [ColumnFilter Property](properties/devenv-columnfilter-property.md).|  
+||[SETRANGE method](methods-auto/query/queryinstance-setrange-method.md)|You can SETRANGE method from AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the SETRANGE method will overwrite any filter that is applied to column or filter row on the same field.|  
 
 ## Filtering on data items in query object
 
@@ -38,9 +38,9 @@ Where `String` is the filter expression.
 
 You can apply a filter on any field in a table, not just those fields that are represented by a column in the query object.
 
-A data item filter is static which means that it cannot be overwritten by a filter on a column or filter row in Query Designer or by the SETFILTER or SETRANGE methods in AL code. If one of these filter types is applied to the same field as the data item filter, then the filters are combined. In logical terms, this combination corresponds to an "AND" operation. For example, if the data item filter applies a filter on a field to include values greater than 10 \(>10\) and a column filter applies a filter on the same field to include values less than fifty \(\<50\), then the resultant filter includes values that are greater than 10 and less than fifty \(10\< value \<50\).  
+A data item filter is static which means that it cannot be overwritten by the [ColumnFilter Property](properties/devenv-columnfilter-property.md), `filter` controls or by the [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md) methods in AL code. If one of these filter types is applied to the same field as the data item filter, then the filters are combined. In logical terms, this combination corresponds to an "AND" operation. For example, if the data item filter applies a filter on a field to include values greater than 10 \(>10\) and a column filter applies a filter on the same field to include values less than fifty \(\<50\), then the resultant filter includes values that are greater than 10 and less than fifty \(10\< value \<50\).  
 
- The DataItemTableFilter property corresponds to a WHERE clause in an SQL SELECT statement. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-query-filters.md#SQL).  
+ The [DataItemTableFilter Property](properties/devenv-dataitemtablefilter-property.md) corresponds to a WHERE clause in an SQL SELECT statement. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-query-filters.md#SQL).  
 
 ### Example
 
@@ -80,7 +80,7 @@ query 50100 "Customer_Sales_Quantity"
 
 ## Filtering on columns and filter rows in query object
 
-Unlike data item filters, filters on a column or filter row are dynamic and can be overwritten from AL code at runtime by a call to the SETFILTER or SETRANGE method, if the method sets a filter on the same field.  
+Unlike data item filters, filters on a column or filter row are dynamic and can be overwritten from AL code at runtime by a call to the [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md) method, if the method sets a filter on the same field.  
 
 You use filters on a column to filter on fields that are included in the dataset. To apply a filter on a column, you set the [ColumnFilter Property](properties/devenv-ColumnFilter-Property.md) of the column.  You can apply a filter on any column, including aggregated columns that are applied an aggregate method by the [Method Property](properties/devenv-Method-Property.md).  The `ColumnFilter` property has the following syntax:
 
@@ -144,9 +144,9 @@ In an SQL SELECT statement, filters on a column or filter row that do not apply 
 
 ## Filtering from AL using SETFILTER and SETRANGE methods
 
-AL code includes the SETFILTER and SETRANGE methods that you can use to apply a filter on a field that is represented as a column or filter row in a query. The SETFILTER and SETRANGE methods enable you to set filters programmatically on a query at runtime. You use the SETRANGE method to filter on a range of values in a column or filter row. The SETFILTER method is more versatile than the SETRANGE method and enables you to filter a field based on a filter expression.  
+AL code includes the [SETFILTER](methods-auto/record/record-setfilter-method.md) and [SETRANGE](methods-auto/record/record-setrange-method.md) methods that you can use to apply a filter on a field that is represented as a column or filter row in a query. The SETFILTER and SETRANGE methods enable you to set filters programmatically on a query at runtime. You use the SETRANGE method to filter on a range of values in a column or filter row. The SETFILTER method is more versatile than the SETRANGE method and enables you to filter a field based on a filter expression.  
 
-The SETFILTER and SETRANGE methods will overwrite any filter on the same field that is set on a column or filter row by the `ColumnFilter` property in Query Designer. If a SETFILTER or SETRANGE method filters on the same field as a filter on a data item, as specified by the `DataItemTableFilter` property, then the method filter and `DataItemTableFilter` property filter are combined.  
+The SETFILTER and SETRANGE methods will overwrite any filter on the same field that is set on a column or filter row by the `ColumnFilter` property. If a SETFILTER or SETRANGE method filters on the same field as a filter on a data item, as specified by the `DataItemTableFilter` property, then the method filter and `DataItemTableFilter` property filter are combined.  
 
 ### Calling the SETFILTER and SETRANGE methods
 
@@ -216,7 +216,6 @@ HAVING Qty  50
 ## See Also
 
  [Query Object](devenv-query-object.md)  
- [Filtering Queries](devenv-query-filters.md)  
  [Aggregating Data](devenv-query-totals-grouping.md)  
  [SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md)
  [SETRANGE method](methods-auto/query/queryinstance-setrange-method.md)

@@ -83,7 +83,7 @@ query 50100 "Sample Query"
 
 ## How to link and join data items
 
-When you add data items to a query object in AL, you define them in a specific hierarchy, one after another, where each lower data item is embedded within the definition of the upper data item. The order of the data items determines the sequence in which data items are linked and joined to produce the resultsinthe dataset.  
+When you add data items to a query object in AL, you define them in a specific hierarchy, one after another, where each lower data item is embedded within the definition of the upper data item. The order of the data items determines the sequence in which data items are linked and joined to produce the results in the dataset.  
   
 In short, to join two data items, you set the [DataItemLink](properties/devenv-DataItemLink-query-property.md) and [SqlJoinType](properties/devenv-SqlJoinType-property.md) properties on the lower data item in the query object.
 

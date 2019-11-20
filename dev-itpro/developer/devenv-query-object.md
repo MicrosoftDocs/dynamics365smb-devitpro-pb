@@ -28,12 +28,12 @@ A Query object is defined ists of two main elements, `dataitem` and `column` ele
 A query object is comprised mainly of two different types of elements: dataitems and columns. A dataitem specifies the table to retrieve records from. A column specifies a field of the table to include in the resulting dataset of a query. The basic steps to create a query object are as follows:
 
 1. Add the `query` keyword, followed by the `elements` control.
-2. Build the dataset by adding `dataitem` controls and `column` controls withing the `elements` control.
+2. Build the dataset by adding `dataitem` controls and `column` controls within the `elements` control.
 
     The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add `column` controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add `column` controls as needed. You continue this pattern for additional tables and fields.
 3. When you have specified the dataitem and column elements, create links and joins between the `dataitem` elements.
 
-   Dataitem links and joins determine which records to include in the dataset based on the values of a field common between dataitems. For more information, see [Linking and Joining Data Items](devenv-query-links-joins.md).
+   Dataitem links and joins determine which records to include in the dataset based on the values of a field common between dataitems. You set a link between one or more fields of the data item tables with the [DataItemLink Property](properties/devenv-dataitemlink-query-property.md) and you define the type of the link using the [SQLJoinType Property](properties/devenv-sqljointype-property.md). Both are set on the lower data item in the query object. For more information, see [Linking and Joining Data Items](devenv-query-links-joins.md).
 
 The following shows the basic structure of a query object.
 
@@ -53,8 +53,11 @@ query ID Name
             }
             dataitem(DataItem2; Table2)
             {
+                // Sets a link between FieldY of Table2 and FieldY of Table2.
                 DataItemLink = FieldY = DataItem1.FieldX;
+                //The dataset contains records from Table1 and Table2 where a match is found between FieldY and FieldZ.
                 SqlJoinType = InnerJoin;
+
                 column(Column1; Field1)
                 {
                 }
@@ -157,9 +160,8 @@ query 50102 "Top Customer Overview"
 
 [Linking and Joining Data Items](devenv-query-links-joins.md)  
 [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
+[Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)  
+[Query Properties](properties/devenv-query-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [API Query Type](devenv-api-querytype.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Report Object](devenv-report-object.md)  
-[Page Properties](properties/devenv-page-property-overview.md)

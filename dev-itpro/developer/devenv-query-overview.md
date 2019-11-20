@@ -1,5 +1,5 @@
 ---
-title: "Query Object"
+title: "Query Overview"
 description: "Description of the query object."
 ms.custom: na
 ms.date: 10/01/2019
@@ -32,13 +32,19 @@ The following examples show how you can use queries in your [!INCLUDE[d365fin_lo
 
 - Exposing data as an OData web service. You can register and publish a query as a web service in the same way that you can register and publish pages or codeunits as web services. You use the **Web Services** page to register and publish pages, codeunits, or queries. After you expose a query as a web service, you can import it into other applications.
 
+- Using the query as data source for a page. To do this, you have to copy the query resulting dataset into a temporary table and set it as the source table for the page. 
+
+- Using the query as data source for a report. To do this, you have to copy the query resulting dataset into a temporary table which can then be used by the report. 
+
+- Performing calculations on data such as sums or averages, detecting duplicate records, replacing nested loops that use record variables to retrieve records, improving method performance, etc.
+
+
 ## See Also
-[Query Object](devenv-query-object.md)
+[Query Object](devenv-query-object.md)  
 [Linking and Joining Data Items](devenv-query-links-joins.md)  
 [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
 [API Query Type](devenv-api-querytype.md)  
+[Query Properties](properties/devenv-query-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
-[Report Object](devenv-report-object.md)  
-[Page Properties](properties/devenv-page-property-overview.md)
