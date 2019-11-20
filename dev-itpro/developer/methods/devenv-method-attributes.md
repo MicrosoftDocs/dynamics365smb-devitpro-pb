@@ -35,6 +35,7 @@ The following method attributes are available:
 - [Scope Attribute](devenv-scope-attribute.md)
 - [InternalEvent Attribute](devenv-internal-attribute.md)  
 - [Obsolete Attribute](devenv-obsolete-attribute.md)
+- [InDataSet Attribute](devenv-indataset-attribute.md)
 
 <!--Links [UpgradePerCompany](devenv-upgradepercompany-attribute.md)
 
