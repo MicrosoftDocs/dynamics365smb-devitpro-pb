@@ -18,7 +18,7 @@ This topic describes the features that have been moved, removed, or replaced in 
 > [!NOTE]
 > The features in this topic are deprecated in Business Central 2019 release wave 2.
 
-Deprecated features will not be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which can happen for a variety of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions?--> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed in this topic, either the feature itself or an extension of it, you should look for or develop an alternative. 
+Deprecated features will not be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which can happen for a variety of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed in this topic, either the feature itself or an extension of it, you should look for or develop an alternative. 
 
 The next sections in this topic give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by "moved, removed, or replaced."
 
@@ -45,9 +45,17 @@ You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Win
 |----|----|
 |Removed| [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is steadily moving toward being an online offering only, and a step in that direction is to use a browser-based user interface. |
 
+### Reports 204-207
+You can use the sales document reports to view important information about your sales numbers.
+
+|Column1  |Column2  |
+|---------|---------|
+|Removed|The reports in the 204-207 range contained much of the same capabilities as the reports in the 1304 to 1307 range. To avoid duplicated features, the reports in the 204-207 range are removed |
+<!--This is just stubbed in. Need the actual names of the reports and a better description of the information they provided.-->
+
 ## Objects that have been marked as obsolete
 Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
-<!--should probably mention the other tags too.-->
+<!--should probably mention the other tags too. For example, "after one year we will mark the object as "ObsoleteState:Removed."-->
 
 ## Breaking Changes
 When we move, remove, or replace an object, breaking changes can result in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document that lists known issues and suggestions for what to do about them.
