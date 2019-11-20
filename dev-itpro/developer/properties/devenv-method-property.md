@@ -7,8 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: f3f0f978-ebe6-41b7-bc31-49909aec58c7
-caps.latest.revision: 19
 author: SusanneWindfeldPedersen
 ---
 
@@ -34,11 +32,11 @@ Sets either a date method for retrieving the year, month, or day from a date fie
 ||Max|Retrieves the highest value of fields in the column within a group.|  
   
 ## Date Methods  
- You can only use the date methods on fields of the Date and DateTime data type.  
+You can only use the date methods on fields of the Date and DateTime data type.  
   
- When you set up a totals method on another column in the query, rows in the resulting dataset are grouped by the day, month, or year, depending on the **Method** property setting.  
+When you set up a totals method on another column in the query, rows in the resulting dataset are grouped by the day, month, or year, depending on the **Method** property setting.  
  
- For more information about date methods, see [Retrieving Date Data in Queries](../devenv-query-retrieve-date-data.md).
+For more information about date methods, see [Retrieving Date Data in Queries](../devenv-query-retrieve-date-data.md).
 
 ### Syntax
 ```
@@ -46,19 +44,18 @@ Method = Day;
 ```
   
 ## Totals Methods and Groups  
- A totals method performs a calculation on fields in a column and returns a single value. When you set a totals method on a column, the retrieved records are automatically grouped by the other columns in the query, as indicated by a check mark in the **Group By** column in Query Designer. When grouped by a column, records that have similar values for the column are grouped together. The totals method is applied against the records in the group. A summary value is calculated for the group and returned in a single row for the group in the dataset. The **Method** property values correspond to the SQL aggregate functions SUM, AVG, MIN, MAX, and COUNT in SQL SELECT statements.  
+A totals method performs a calculation on fields in a column and returns a single value. When you set a totals method on a column, the retrieved records are automatically grouped by the other columns in the query, as indicated by a check mark in the **Group By** column in Query Designer. When grouped by a column, records that have similar values for the column are grouped together. The totals method is applied against the records in the group. A summary value is calculated for the group and returned in a single row for the group in the dataset. The **Method** property values correspond to the SQL aggregate functions SUM, AVG, MIN, MAX, and COUNT in SQL SELECT statements.  
   
- Except for the **Count** method, you can only use a totals method on a field that has a numeric data type of **Decimal**, **Integer**, **BigInteger**, or **Duration**. The totals method returns a decimal value that is calculated from values of all fields in a column.  
+Except for the **Count** method, you can only use a totals method on a field that has a numeric data type of **Decimal**, **Integer**, **BigInteger**, or **Duration**. The totals method returns a decimal value that is calculated from values of all fields in a column.  
   
- **Count** is only associated with its parent **DataItem**, not a specific column. Therefore, when you set a column to **Count**, you leave the [DataSource Property](devenv-datasource-property.md) of the column blank. The **Count** method returns an integer value that corresponds to the number of rows that are returned from the table that is specified by the data item associated with the column.  
+**Count** is only associated with its parent **DataItem**, not a specific column. Therefore, when you set a column to **Count**, you leave the [DataSource Property](devenv-datasource-property.md) of the column blank. The **Count** method returns an integer value that corresponds to the number of rows that are returned from the table that is specified by the data item associated with the column.  
 
 ### Syntax
 ```
 Method = Max;
 ```
 
-  
+ 
 ## See Also  
- [MethodType Property](devenv-methodtype-property.md)   
- [Properties](devenv-properties.md)  
-
+[MethodType Property](devenv-methodtype-property.md)   
+[Properties](devenv-properties.md)  

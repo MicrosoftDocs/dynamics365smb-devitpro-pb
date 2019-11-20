@@ -24,9 +24,9 @@ protected var
 var
         myLocalInt: Integer;
 ```
-<!--
+
 ## Example
-page 50100 MyPage
+page 500100 MyPage
 {
     SourceTable = Customer;
     PageType = Card;
@@ -41,31 +41,41 @@ page 50100 MyPage
                 {
                     ApplicationArea = All;
                 }
+            }
+            group(Advanced)
+            {
+                Visible = ShowBalance;
+
                 field(Balance; Balance)
                 {
                     ApplicationArea = All;
-                    Visible = ShowBalance;
                 }
             }
         }
     }
 
     protected var
+        [InDataSet]
         ShowBalance: Boolean;
 }
 
-pageextension 50101 MyPageExt extends MyPage
+pageextension 500101 MyPageExt extends MyPage
 {
     layout
     {
-        addlast(General)
+        addlast(Content)
         {
-            field("Balance (LCY)"; "Balance (LCY)")
+            group(MoreBalance)
             {
-                ApplicationArea = All;
                 Visible = ShowBalance; // ShowBalance from MyPage
+
+                field("Balance (LCY)"; "Balance (LCY)")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
+
     }
 
     actions
@@ -83,7 +93,7 @@ pageextension 50101 MyPageExt extends MyPage
         }
     }
 }
--->
+
 
 ## See Also  
 [AL Method Reference](methods/devenv-al-method-reference.md)   
