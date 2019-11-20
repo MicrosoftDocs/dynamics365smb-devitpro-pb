@@ -1,7 +1,7 @@
 ---
 title: "Embed App Ecosystem Features"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/20/2019
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,14 +20,14 @@ The following integration capabilities of the [!include[prodshort](../developer/
 -   Microsoft Graph – [evaluating]  
 -   Dynamics 365 API endpoint (aka native API) – available if the base application objects are unchanged  
 -   Microsoft Office Outlook Add-in - available  
--   Microsoft Power BI – available (using customer own Power BI license)  
--   Microsoft Flow – available (using customer own Flow license)  
--   Microsoft PowerApps – available  
+-   Microsoft Power BI – available (using the customer's own Power BI license)  
+-   Microsoft Power Automate – available (using the customer's own Power Automate license)  
+-   Microsoft Power Apps – available  
 -   WalkMe (UI walkthroughs) – not available  
 -   Microsoft Apps included with [!include[prodshort](../developer/includes/prodshort.md)] (Yodlee, Quick Books, OCR, AMC...) - available, but the partner needs to setup his own agreement with these service providers (if needed)  
 -   Azure ML – available via partner's own Azure ML subscription  
 -   CDS/CRM integration (with Dynamics 365 for Sales) – pending CDS/CRM decision (Microsoft)  
--   Accountant Hub - available (if shipped by Microsoft)  
+-   Accountant Hub - available (if available in your country or region)  
  
 ## See Also 
 [[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md)   
