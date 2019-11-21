@@ -39,7 +39,7 @@ MyVariable: Boolean;
  [How to: Style Field Text on a Page](How-to--Style-Field-Text-on-a-Page.md)
 -->
 [Properties](devenv-properties.md)  
-[StyleExpr Property](devenv-styleexpr-property.md)   
-[Editable Property](devenv-styleexpr-property.md)  
-[Enabled Property](devenv-styleexpr-property.md)  
-[Visible Property](devenv-styleexpr-property.md)
+[StyleExpr Property](../properties/devenv-styleexpr-property.md)   
+[Editable Property](../properties/devenv-editable-property.md)  
+[Enabled Property](../properties/devenv-enabled-property.md)  
+[Visible Property](../properties/devenv-visible-property.md)

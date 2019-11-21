@@ -9,6 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 ms.service: "dynamics365-business-central"
+author: jswymer
 ---
 #  <a name="AddExtensions"></a>Publishing, Upgrading, and Installing Extensions During Upgrade
 
@@ -126,7 +127,7 @@ Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N
 ```
 For more information about publishing extensions, see [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md).
 
-## Repair, synchronize, and install any custom extensions (third-party) that are currently published and that you still want to use.
+## Repair, synchronize, and install any custom extensions (third-party) that are currently published and that you still want to use
 
 This ensures that the extensions work on the new platform and application versions. For each extension, complete the following steps from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]: 
 
