@@ -36,4 +36,4 @@ IndentationControls = Field1, Field2;
 >  [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. If you specify more than one column in the IndentationControls property, only the first column is used when the page is displayed in [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)].  
   
 ## See Also  
- [IndentationColumnName Property](devenv-indentationcolumnname-property.md)
+ [IndentationColumn Property](devenv-indentationcolumn-property.md)
