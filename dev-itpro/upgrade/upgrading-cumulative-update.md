@@ -11,8 +11,9 @@ ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Installing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Cumulative Update
-This article describes how to install a cumulative update for[!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. A cumulative update is a cumulative set of files that includes all hotfixes and regulatory features that have been released for Business Central.
+# Installing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 Cumulative Update
+
+This article describes how to install a cumulative update for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. A cumulative update is a cumulative set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
 ## Download the cumulative update package
 
@@ -21,7 +22,7 @@ The first thing to do is to download the Cumulative Update package that matches 
 1. Go to the relevant list of available updates for your on-premises version of Business Central, and then choose the Cumulative Update that you want.
 
     For a list of supported versions of Business Central on-premises, see the [See Also](#see-also) section.
-2. From the cumulative update page, under the **Release** section, select the link for downloading the update and follow the instructions.
+2. From the cumulative update page, under the **Resolution** section, select the link for downloading the update and follow the instructions.
 3. On the computer where you downloaded cumulative update, extract files from all .zip files.
 
 The cumulative update includes files that are separated into the following folders:
@@ -40,6 +41,7 @@ The following components are part of the [!INCLUDE[prodshort](../developer/inclu
 
 - [!INCLUDE[webserver](../developer/includes/webserver.md)]
 - [!INCLUDE[server](../developer/includes/server.md)]
+- SQL Server components
 - [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]
 
 To upgrade to the latest platform the database must be converted by using the Dynamics NAV Development Environment.

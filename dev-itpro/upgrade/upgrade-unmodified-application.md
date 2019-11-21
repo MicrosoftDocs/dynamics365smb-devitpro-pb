@@ -31,13 +31,15 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 ## Prerequisite
 
-1. Upgrade to Business Central Spring 2019 [Cumulative Update 4](https://support.microsoft.com/help/4518535) (version 14.5).
+1. Upgrade to Business Central Spring 2019 [Cumulative Update 5](https://support.microsoft.com/help/4522949) (version 14.6).
 
-   If your current deployment is already running cumulative update 5 (version 14.6), we recommend to wait until the first cumulative update for version 15 is released.
+   If your current deployment is already running cumulative update 6 (version 14.7), we recommend to wait until the Update 2 for version 15 is released.
 
  For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
 
 ## Task 1: Install Business Central version 15
+
+
 
 1. Before you install version 15, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these will be replaced with the version 15 tools.
 
