@@ -12,7 +12,7 @@ caps.latest.revision: 25
 manager: edupont
 ---
 # Walkthrough: Viewing Page Data in Excel Using PowerPivot (OData)
-This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] page as a web service and then analyze the page data using Microsoft PowerPivot for Excel 2013. Similar steps also apply to PowerPivot for Excel 2010. For information about PowerPivot, see [Microsoft PowerPivot](http://go.microsoft.com/fwlink/?LinkID=199906).  
+This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] page as a web service and then analyze the page data using Microsoft PowerPivot for Excel 2013. Similar steps also apply to PowerPivot for Excel 2010. For information about PowerPivot, see [Microsoft PowerPivot](https://go.microsoft.com/fwlink/?LinkID=199906).  
 
 ## About This Walkthrough  
  With OData and PowerPivot, you gain access to a powerful set of tools and technologies for data exchange and analysis. This walkthrough illustrates the following tasks:  
@@ -34,7 +34,7 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
 -   [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
 
--   Excel 2013 with the PowerPivot add-in enabled. For more information, see [Download PowerPivot page](http://go.microsoft.com/fwlink/?LinkId=200002).  
+-   Excel 2013 with the PowerPivot add-in enabled. For more information, see [Download PowerPivot page](https://go.microsoft.com/fwlink/?LinkId=200002).  
 
 -   Optionally, if you want to use a web service access key to authenticate access to the web service, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must meet the following requirements:  
 
@@ -72,7 +72,7 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
 1.  Start Windows Internet Explorer.  
 
-2.  In the **Address** field, enter a URI using the following format: **http://\<Server>:\<WebServicePort>/\<ServerInstance>/OData/**  
+2.  In the **Address** field, enter a URI using the following format: **https://\<Server>:\<WebServicePort>/\<ServerInstance>/OData/**  
 
     -   **Server** is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
 
@@ -80,7 +80,7 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
     -   **ServiceInstance** is the name of the [!INCLUDE[server](../developer/includes/server.md)] instance for your solution. The default name is [!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)].  
 
-     For example, if the [!INCLUDE[server](../developer/includes/server.md)] is running on the computer that you are working on, you can use: **http://localhost:7048/[!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)]/OData/**  
+     For example, if the [!INCLUDE[server](../developer/includes/server.md)] is running on the computer that you are working on, you can use: **https://localhost:7048/[!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)]/OData/**  
 
      The browser should now show the web service that you have published, as shown in the following illustration.  
 
@@ -112,11 +112,11 @@ This walkthrough describes how you can use OData to expose a [!INCLUDE[navnowlon
 
     3.  In the **UserID** field, type the user name for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account. For this walkthrough, use **NavTest**.  
 
-    4.  In the **Source** section, in the **Service Document URL** field, type the URL for the OData web service that you verified in the previous procedure,  for example, **http://localhost:7048/[!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)]/OData/**.  
+    4.  In the **Source** section, in the **Service Document URL** field, type the URL for the OData web service that you verified in the previous procedure,  for example, **https://localhost:7048/[!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)]/OData/**.  
 
     5.  Choose the **OK** button to return to the **Table Import Wizard**.  
 
-5.  In the **Connect to a Data Feed** page, in the **Data Feed Url** field, enter the OData URI that you verified in the previous procedure, for example **http://localhost:7048/[!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)]/OData/**. Choose the **Next** button.  
+5.  In the **Connect to a Data Feed** page, in the **Data Feed Url** field, enter the OData URI that you verified in the previous procedure, for example **https://localhost:7048/[!INCLUDE[<server instance>](../developer/includes/nav_server_instance_md.md)]/OData/**. Choose the **Next** button.  
 
     > [!IMPORTANT]  
     >  The URI must end with a slash \(/\) as shown in the example.  

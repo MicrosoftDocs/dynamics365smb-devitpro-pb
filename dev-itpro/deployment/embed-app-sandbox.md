@@ -16,7 +16,7 @@ author: jswymer
 
 The sandbox feature is currently in preview in the [!include[prodshort](../developer/includes/prodshort.md)] service, so additional license fees can apply when it is made available officially.  
 
-For customizing their tenants, the partners and customers can use VS Code and 50000-50149 object ID range. Learn more about customizing the application at http://aka.ms/BusinessCentralApps   
+For customizing their tenants, the partners and customers can use VS Code and 50000-50149 object ID range. Learn more about customizing the application at https://aka.ms/BusinessCentralApps   
   
 
 ## See Also  

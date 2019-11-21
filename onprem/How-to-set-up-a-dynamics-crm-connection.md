@@ -74,7 +74,7 @@ For all authentication types other than Office 365 authentication, you set your 
   </tr>
   <tr>
     <td>Version</td>
-    <td>Specifies the version of [!INCLUDE[crm_md](includes/crm_md.md)]. For more information about the supported versions, see [Microsoft Dynamics NAV System Requirements](http://go.microsoft.com/fwlink/?LinkID=317819).</td>
+    <td>Specifies the version of [!INCLUDE[crm_md](includes/crm_md.md)]. For more information about the supported versions, see [Microsoft Dynamics NAV System Requirements](https://go.microsoft.com/fwlink/?LinkID=317819).</td>
   </tr>
   <tr>
     <td>Dynamics 365 for Sales Connection User is Integration User</td>

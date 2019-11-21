@@ -28,7 +28,7 @@ For constructing the URL to the envionment, the path needs to contain the enviro
 
 In the following sections you can read more about setting up the two types of authentication and using both authentication methods in Postman.
 
-APIs can also be explored through the [OpenAPI specification for Business Central](https://docs.microsoft.com/en-us/dynamics-nav/api-reference/v1.0/dynamics-open-api).
+APIs can also be explored through the [OpenAPI specification for Business Central](https://docs.microsoft.com/dynamics-nav/api-reference/v1.0/dynamics-open-api).
 
 ## Setting up basic authentication
 If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the AAD based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use AAD/Oauth v2 authentication, see the section [Setting up Azure Active Directory (AAD) based authentication](#setting-up-azure-active-directory-(aad)-based-authentication).

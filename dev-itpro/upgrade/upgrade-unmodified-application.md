@@ -31,7 +31,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 ## Prerequisite
 
-1. Upgrade to Business Central Spring 2019 [Cumulative Update 4](https://support.microsoft.com/en-us/help/4518535) (version 14.5).
+1. Upgrade to Business Central Spring 2019 [Cumulative Update 4](https://support.microsoft.com/help/4518535) (version 14.5).
 
    If your current deployment is already running cumulative update 5 (version 14.6), we recommend to wait until the first cumulative update for version 15 is released.
 
@@ -53,7 +53,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
 3. Uninstall all extensions from the all tenants.
 
-    To uninstall an extension, you use the [Uninstall-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet. For example, together with the Get-NAVAPP cmdlet, you can uninstall all extensions with a single command:
+    To uninstall an extension, you use the [Uninstall-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet. For example, together with the Get-NAVAPP cmdlet, you can uninstall all extensions with a single command:
 
     ``` 
     Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID> | % { Uninstall-NAVApp -ServerInstance <server instance name> -Name $_.Name -Version $_.Version -Tenant <tenant ID>}
@@ -67,7 +67,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 3. Unpublish all 3rd party extensions.
 
-    To unpublish an extension, use the [Unpublish-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
+    To unpublish an extension, use the [Unpublish-NAVApp cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
     
     ``` 
     Unpublish-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
@@ -89,7 +89,7 @@ The process for upgrading the very similar for a single-tenant and multitenant d
     -->
 5. (Multitenant only) Dismount the tenants from the application server instance.
 
-    To dismount a tenant, use the [Dismount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
+    To dismount a tenant, use the [Dismount-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
     ```
     Dismount-NAVTenant -ServerInstance <server instance name> -Tenant <tenant ID>
@@ -205,7 +205,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 <!--
 1. Increase the application version of the application database, and restart the server instance.
 
-    Use the [Set-NAVApplication](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15 application version.
+    Use the [Set-NAVApplication](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15 application version.
 
     ```
     Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
@@ -284,7 +284,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 1. (Multitenant only) Mount the tenant to the version 15 server instance.
 
-    To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
+    To mount the tenant, use the [Mount-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
     ```
     Mount-NAVTenant -ServerInstance <server instance name> -DatabaseName <database name> -DatabaseServer <database server>\<database instance> -Tenant <tenant ID> -AllowAppDatabaseWrite
@@ -298,7 +298,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 2. Synchronize the tenant with the application database.
 
-    Use the [Sync-NAVTenant](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
+    Use the [Sync-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
 
     ```  
     Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
@@ -308,13 +308,13 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 3. Synchronize the tenant with the **System Application** extension (Microsoft_System Application):
 
-    Use the [Sync-NAVApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
+    Use the [Sync-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
     ```
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "System Application" -Version <extension version>
     ```
 
-    Replace `<extension version>` with the exact version of the published System Application. To get the version, you can use the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
+    Replace `<extension version>` with the exact version of the published System Application. To get the version, you can use the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
     
 5. Synchronize the tenant with the Business Central Base Application extension (Microsoft_BaseApp):
 
@@ -345,7 +345,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 1. Install the system application extension on the tenant.
 
-    To install the extension, you use the [Install-NAVApp cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
+    To install the extension, you use the [Install-NAVApp cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
 
     ```
     Install-NAVApp -ServerInstance <server instance name> -Name "System Application" -Version <extension version>
@@ -362,7 +362,7 @@ If you have a multitenant deployment, perform these steps for each tenant.
 
 Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables in by application and system application extensions.
 
-1. To run the data upgrade, use the [Start-NavDataUpgrade](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
+1. To run the data upgrade, use the [Start-NavDataUpgrade](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
     ```
     Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial -SkipAppVersionCheck -Force

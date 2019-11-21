@@ -31,7 +31,7 @@ You can open a specific page in the [!INCLUDE[nav_web](includes/nav_web_md.md)] 
 The following URL displays page 9305 Sales Order List for the [!INCLUDE[demoname](includes/demoname_md.md)] company. The page is displayed in a [!INCLUDE[nav_web](includes/nav_web_md.md)] that is running on port 8080 of a computer that has the name MyWebServer.
 
 ```
-http://MyWebServer:8080/nav_server_instance/WebClient/default.aspx?company=CRONUS%20International%20Ltd.&page=9305  
+https://MyWebServer:8080/nav_server_instance/WebClient/default.aspx?company=CRONUS%20International%20Ltd.&page=9305  
 ```
 
 There are several parameters that define the address for the page. These parameters are described in the [URL Parameters](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Paramters) section of this topic. You can also filter the data on specific fields of the page. For information about how to filter the data, see [Filtering Data on the Page](Opening-a-Page-in-the-Microsoft-Dynamics-NAV-Web-Client-by-Using-a-URL.md#Filtering).  
@@ -79,11 +79,11 @@ Use the following guidelines to write page URL syntax and create a URL:
 - Place parameters in any order after `aspx?` because the order is not important. For example, the following URLs will yield the same results.
 
     ```
-    http://MyWebServer:8080/nav_server_instance/?company=CRONUS%20International%20Ltd.&page=9305&mode=View
+    https://MyWebServer:8080/nav_server_instance/?company=CRONUS%20International%20Ltd.&page=9305&mode=View
     ```
 
     ```
-    http://MyWebServer:8080/nav_server_instance/?page=9305&mode=View&company=CRONUS%20International%20Ltd.
+    https://MyWebServer:8080/nav_server_instance/?page=9305&mode=View&company=CRONUS%20International%20Ltd.
     ```
 
 -   Separate parameters after `aspx?` with the ampersand symbol (`&`).
@@ -113,7 +113,7 @@ Use the following guidelines to write page URL syntax and create a URL:
 |`shownavigation`|Specifies whether to show the navigation pane when the specified page opens. <br /><br />If you want the navigation pane, either omit this parameter or set its value to `1`, such as `shownavigation=1`.<br /><br />If you do not want the navigation pane, set the value to `0`, such as `shownavigation=0`.<br /><br />**Note:** This parameter only works for pages of the list page type.|
 |`showuiparts`|Specifies whether to show UI parts when the specified page opens. The default value, if the parameter is not specified, is `1` which displays the UI parts. Use the value `0` to not show UI parts.<br /><br />If you want the UI parts, either omit this parameter or set its value to `1`, such as `showuiparts=1`.<br /><br />If you do not want the UI parts, set the value to `0`, such as `showuiparts=0`.<br /><br /> **Note:**  This parameter only works for pages of the list page type.|
 |`redirect`|Specifies whether users are presented with an option to download the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] when they open the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] in a browser in order to improve the user experience.<br /><br />If you want to give users this option, either omit this parameter or set its value to `1`, such as `redirect=1`.<br /><br />If you do not want to give users this option, set the value to `0`, such as `redirect=0`.<br /><br />|
-|`extension`|Specifies the unique identifier (ID) of an extension that is deployed on the tenant. This parameter is mainly used during the development of the specified extension in a non-production environment. When this parameter is set, only the specifed extension is available in the client; all other extensions are ignored and not visible. This enables you to isolate and focus on the behavior of the specified extension only.<br /><br />An extension ID is a 32-digit GUID, such as `72CC5E27-BD97-4271-AF55-F77E4471E493`. You set this parameter using the format `extension={GUID}`, for example:<br /><br />`&extension={72CC5E27-BD97-4271-AF55-F77E4471E493}`<br /><br />You can determine an extension ID by opening the extension in Visual Studio Code and looking in the app.json file, or by running the [Get-NAVAppManifest cmdlet](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.tools/Get-NAVAppManifest) on the extension package.|-->
+|`extension`|Specifies the unique identifier (ID) of an extension that is deployed on the tenant. This parameter is mainly used during the development of the specified extension in a non-production environment. When this parameter is set, only the specifed extension is available in the client; all other extensions are ignored and not visible. This enables you to isolate and focus on the behavior of the specified extension only.<br /><br />An extension ID is a 32-digit GUID, such as `72CC5E27-BD97-4271-AF55-F77E4471E493`. You set this parameter using the format `extension={GUID}`, for example:<br /><br />`&extension={72CC5E27-BD97-4271-AF55-F77E4471E493}`<br /><br />You can determine an extension ID by opening the extension in Visual Studio Code and looking in the app.json file, or by running the [Get-NAVAppManifest cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.tools/Get-NAVAppManifest) on the extension package.|-->
 
 For more information about framing the Web client, see [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md).
 
@@ -124,13 +124,13 @@ You can filter the data that is displayed in the page by using the filter parame
  The following address displays data in page 9305 only for the customer who has the Sell-to Customer No. 10000 and the Location Code Blue.
 
 ```
-http://MyWebServer:8080/nav_server_instance/?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'  
+https://MyWebServer:8080/nav_server_instance/?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'  
 ```
 
 Or for [!INCLUDE[nav2017](includes/nav2017.md)] and earlier versions:
 
 ```
-http://MyWebServer:8080/nav_server_instance/WebClient/default.aspx?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'  
+https://MyWebServer:8080/nav_server_instance/WebClient/default.aspx?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to-Customer-No.'-IS-'10000'-AND-'Location-Code'-IS-'BLUE'  
 ```
 
 ### Filter Syntax

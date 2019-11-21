@@ -19,7 +19,7 @@ When you try to access the [!INCLUDE[nav_web](includes/nav_web_md.md)], you get 
  This error can occur when there are multiple versions of the .NET Framework on the computer that is running IIS, and IIS was installed after .NET Framework 4.0 or before the Service Model in Windows Communication Foundation was registered.  
   
 ## Resolution  
- For Windows 7 and Windows Server 2008, use the ASP.NET IIS Registration Tool \(aspnet\_regiis.exe,\) to register the correct version of ASP.NET. For more information about the aspnet\_regiis.exe, see [ASP.NET IIS Registration Tool](http://go.microsoft.com/fwlink/?LinkID=259700).  
+ For Windows 7 and Windows Server 2008, use the ASP.NET IIS Registration Tool \(aspnet\_regiis.exe,\) to register the correct version of ASP.NET. For more information about the aspnet\_regiis.exe, see [ASP.NET IIS Registration Tool](https://go.microsoft.com/fwlink/?LinkID=259700).  
   
 #### To register the correct version of ASP.NET  
   

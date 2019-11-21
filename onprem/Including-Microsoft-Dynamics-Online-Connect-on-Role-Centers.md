@@ -12,7 +12,7 @@ caps.latest.revision: 20
 manager: edupont
 ---
 # Including Microsoft Dynamics Online Connect on Role Centers
-[!INCLUDE[navnowlong](includes/navnowlong_md.md)] includes a control add-in that you can use on Role Centers to display role-based content from Microsoft Dynamics Online Connect. Connect is a Web service that distributes Microsoft Dynamics product and business information from sources such as [CustomerSource](http://go.microsoft.com/fwlink/?LinkID=153696) and the Microsoft Dynamics community. The information that Connect provides on a Role Center is based on the Role Center's profile or a profile that the Role Center user chooses. If the content is available in different languages, then content is displayed in the language that matches language that is defined for the Role Center user.  
+[!INCLUDE[navnowlong](includes/navnowlong_md.md)] includes a control add-in that you can use on Role Centers to display role-based content from Microsoft Dynamics Online Connect. Connect is a Web service that distributes Microsoft Dynamics product and business information from sources such as [CustomerSource](https://go.microsoft.com/fwlink/?LinkID=153696) and the Microsoft Dynamics community. The information that Connect provides on a Role Center is based on the Role Center's profile or a profile that the Role Center user chooses. If the content is available in different languages, then content is displayed in the language that matches language that is defined for the Role Center user.  
   
  To set up a Role Center with Connect, you create a card part page that contains the Connect control add-in and then use the card part page on the Role Center. For more information, [How to: Include Microsoft Dynamics Online Connect on Role Centers](How-to--Include-Microsoft-Dynamics-Online-Connect-on-Role-Centers.md).  
   
@@ -56,7 +56,7 @@ manager: edupont
   
      The user changes the profile from within the Connect content. The profile that the use selects overrides the profile that is assigned to the Role Center.  
   
--   Sign in to [Windows Live™](http://go.microsoft.com/fwlink/?LinkID=159772).  
+-   Sign in to [Windows Live™](https://go.microsoft.com/fwlink/?LinkID=159772).  
   
      When a user signs in to Windows Live, additional content is available that is based on the user's CustomerSource account.  
   

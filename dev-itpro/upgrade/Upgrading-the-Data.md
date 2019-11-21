@@ -131,7 +131,7 @@ Open the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)] or [!IN
 
 By using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the old database, upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license to the database.
 
-For more information, see [[Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
+For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
 ## <a name="DeleteObjects"></a> Task 4: Delete all objects except tables in old database
 
@@ -149,7 +149,7 @@ Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoin
 
     ```
     DELETE FROM [<My NAV Database Name>].[dbo].[Server Instance]
-    DELETE from [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
+    DELETE FROM [<My NAV Database Name>].[dbo].[Debugger Breakpoint]
     ```
 
 ## <a name="ConvertDb"></a> Task 6: Convert old database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
@@ -363,9 +363,9 @@ In addition, other extensions used in the old deployment that you still want to 
     ```
 2. Unpublish the existing system, test, and application symbols by using the [Unpublish-NAVAPP cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
        
-        ```
-        Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <name> -Version <n.n.n.n>
-        ```
+    ```
+    Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <name> -Version <n.n.n.n>
+    ```
 3. <a name="PublishSymbols"></a>Publish the system.app and test.app symbol files.
 
     If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 

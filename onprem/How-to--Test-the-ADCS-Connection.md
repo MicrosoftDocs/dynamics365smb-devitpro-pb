@@ -42,7 +42,7 @@ The following procedure demonstrates how to use Windows Services and Telnet to t
  In the following procedure, you will open a terminal connection and use HyperTerminal to simulate using handheld devices. HyperTerminal is a program that you can use to connect to other computers, Telnet sites, bulletin board systems \(BBSs\), online services, and host computers. HyperTerminal connections are made using a modem, a null modem cable \(used to emulate modem communication\), or an Ethernet connection.  
 
 > [!NOTE]  
->  HyperTerminal is no longer included with Windows. You can usually find a free downloadable version on the Internet. For more information, see [What-happened-to-HyperTerminal](http://go.microsoft.com/fwlink/?LinkId=222571). Alternatively, in Windows 7, you can turn on the Telnet Client feature. For more information, see [Install Telnet Client](http://go.microsoft.com/fwlink/?LinkId=248471).  
+>  HyperTerminal is no longer included with Windows. You can usually find a free downloadable version on the Internet. For more information, see [What-happened-to-HyperTerminal](https://go.microsoft.com/fwlink/?LinkId=222571). Alternatively, in Windows 7, you can turn on the Telnet Client feature. For more information, see [Install Telnet Client](https://go.microsoft.com/fwlink/?LinkId=248471).  
 
 #### To test your ADCS connection  
 

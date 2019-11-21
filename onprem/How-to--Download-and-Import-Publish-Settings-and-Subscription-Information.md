@@ -11,11 +11,11 @@ ms.assetid: 7a45d42f-a80b-47cf-b1e6-4fcf968ebe24
 caps.latest.revision: 8
 ---
 # How to: Download and Import Publish Settings and Subscription Information
-Before you start using the Microsoft Azure cmdlets to automate deployments, you must configure connectivity between the provisioning computer and Azure. This procedure describes how to do this by using the Azure PowerShell console. For information about how to configure the connectivity, see [How to install and configure Azure PowerShell](http://go.microsoft.com/fwlink/?LinkId=275578).  
+Before you start using the Microsoft Azure cmdlets to automate deployments, you must configure connectivity between the provisioning computer and Azure. This procedure describes how to do this by using the Azure PowerShell console. For information about how to configure the connectivity, see [How to install and configure Azure PowerShell](https://go.microsoft.com/fwlink/?LinkId=275578).  
   
 ### To download and import publish settings and subscription information  
   
-1.  Sign in to the [Azure Management Portal](http://manage.windowsazure.com/).  
+1.  Sign in to the [Azure Management Portal](https://manage.windowsazure.com/).  
   
 2.  Open the Azure PowerShell console as an administrator as follows:  
   
@@ -29,7 +29,7 @@ Before you start using the Microsoft Azure cmdlets to automate deployments, you 
     Get-AzurePublishSettingsFile  
     ```  
   
-     A web browser opens at [http://go.microsoft.com/fwlink/?LinkID=294709](http://go.microsoft.com/fwlink/?LinkID=294709).  
+     A web browser opens at [https://go.microsoft.com/fwlink/?LinkID=294709](https://go.microsoft.com/fwlink/?LinkID=294709).  
   
 4.  When prompted, download and save the publishing settings file as a .publishsettings type file to your computer.  
   

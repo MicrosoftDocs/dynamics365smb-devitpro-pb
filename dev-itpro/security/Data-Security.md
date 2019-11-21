@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: SusanneWindfeldPedersen
 ---
 # [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Data Security
 
@@ -46,7 +47,7 @@ In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can only open 
 
 ### Managing user access to companies
   
-Users' access to companies is controlled by permission sets. When you assign a permission set to a user, you can specify a company to restrict the user’s access for that permission set to that specific company. For more information, see [Managing Users and Permissions](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-how-users-permissions) in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application help .
+Users' access to companies is controlled by permission sets. When you assign a permission set to a user, you can specify a company to restrict the user’s access for that permission set to that specific company. For more information, see [Managing Users and Permissions](https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions) in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application help .
 
 ## [Object-level security](#tab/object-level)
 

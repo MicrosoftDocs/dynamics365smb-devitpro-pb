@@ -1,1 +1,0 @@
-Microsoft Dynamics NAV 4.0

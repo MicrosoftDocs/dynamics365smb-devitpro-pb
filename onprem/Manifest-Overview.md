@@ -37,11 +37,11 @@ For a control add-in to work on all display targets there has to be a manifest. 
     </Resources>  
 
     <ScriptUrls>  
-        <ScriptUrl>http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.3</ScriptUrl>  
+        <ScriptUrl>https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.3</ScriptUrl>  
     </ScriptUrls>  
 
     <StyleSheetUrls>
-        <StyleSheetUrl>http://www.microsoft.com/stylesheets/colors.css</StyleSheetUrl>
+        <StyleSheetUrl>https://www.microsoft.com/stylesheets/colors.css</StyleSheetUrl>
     </StyleSheetUrls>
 
     <Script>  

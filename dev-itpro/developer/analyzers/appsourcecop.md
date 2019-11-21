@@ -67,7 +67,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0053](appsourcecop-as0053-applicationmanifestcompilationtargetmustbecloud.md)|The compilation target of an application must be a value that is allowed in a multi-tenant SaaS environment|The compilation target of an application must be a value that is allowed in a multi-tenant SaaS environment.|The compilation target is set to '{0}', but it must be set to 'Cloud' or 'Extension'.|Extensibility|Error|true|
 |[AS0054](appsourcecop-as0054-appsourcecopconfigurationmustspecifyaffixes.md)|The AppSourceCop configuration must specify the set of affixes used by the application|The AppSourceCop configuration must specify one of the following properties: 'mandatorySuffix', 'mandatoryPrefix', or 'mandatoryAffixes'. The use of these affixes is validated by the AppSourceCop analyzer and helps prevent conflicts between different AppSource applications.|The AppSourceCop configuration must specify one of the following properties: 'mandatorySuffix', 'mandatoryPrefix', or 'mandatoryAffixes'|Configuration|Error|true|
 |[AS0055](appsourcecop-as0055-appsourcecopconfigurationmustspecifysupportedcountries.md)|The AppSourceCop configuration must specify the list of countries targeted by the application|The AppSourceCop configuration must specify the list of countries targeted by the application.|The AppSourceCop configuration must specify the list of countries targeted by the application.|Configuration|Warning|true|
-|[AS0056](appsourcecop-as0056-appsourcecopconfigurationsupportedcountriesmustbevalidcountrycode.md)|The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes|The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes. Each country code must correspond to a country for which the product allows AppSource submissions. See [https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations] for more information.|The code '{0}' is not a valid ISO 3166-1 alpha-2 code for a country supported by the product.|Configuration|Error|true|
+|[AS0056](appsourcecop-as0056-appsourcecopconfigurationsupportedcountriesmustbevalidcountrycode.md)|The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes|The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes. Each country code must correspond to a country for which the product allows AppSource submissions. See [https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations] for more information.|The code '{0}' is not a valid ISO 3166-1 alpha-2 code for a country supported by the product.|Configuration|Error|true|
 |[AS0057](appsourcecop-as0057-translationsnotprovidedforlocale.md)|Translations must be provided for all the locales in which the application will be available|Translations must be provided for all the locales in which the application will be available.|Translations must be provided for the following language codes: {0}|Extensibility|Hidden|true|
 |[AS0058](appsourcecop-as0058-onlyuseasserterrorintestcodeunits.md)|Only use AssertError in Test Codeunits|Only use AssertError in Test Codeunits.|Only use AssertError in Test Codeunits.|Extensibility|Error|true|
 |[AS0059](appsourcecop-as0059-databasetablesarereadonly.md)|Reserved database tables are read-only in a multi-tenant environment|Application database tables and reserved application tables should be used only as temporary tables in a multi-tenant environment. Writing to these tables can lead to runtime errors or unexpected behavior.|The table '{0}' cannot be modified because it is part of the read-only application database or because it will result in undefined behavior.|Extensibility|Error|true|
@@ -81,9 +81,9 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 > Several rules enforced by the AppSourceCop analyzer are incompatible with rules enforced by the PerTenantExtensionCop. Make sure to enable only one of these at a time.
 
 ## Configuration
-The AppSourceCop analyzer can be further configured by adding a file named ```AppSourceCop.json``` in the project's root folder. The AL Language extension will offer intellisense for this file.
+The AppSourceCop analyzer can be further configured by adding a file named `AppSourceCop.json` in the project's root folder. The AL Language extension will offer IntelliSense for this file.
 
-The following table describes the settings in the ```AppSourceCop.json``` file:
+The following table describes the settings in the `AppSourceCop.json` file:
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
@@ -92,15 +92,15 @@ The following table describes the settings in the ```AppSourceCop.json``` file:
 |version|Yes|The version of a previous version of this package with which you want to compare the current package for breaking changes.|
 |mandatoryAffixes|No|Affixes that must be prepended or appended to the name of all new application objects, extension objects, and fields.|
 
-The ```name```, ```publisher```, ```version``` properties are used for specifying a previous version of the current package. AppSourceCop will use this information to download the specified package from the server and compare the current package with it. AppSourceCop will report any breaking changes introduced by the current package.
+The `name`, `publisher`, `version` properties are used for specifying a previous version of the current package. AppSourceCop will use this information to download the specified package from the server and compare the current package with it. AppSourceCop will report any breaking changes introduced by the current package.
 
-The ```mandatoryAffixes``` property specifies strings that must be prepended or appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
+The `mandatoryAffixes` property specifies strings that must be prepended or appended to the names of all new objects, extension objects and fields. By using these affixes, you can prevent clashes between objects added by your extension and objects added by other extensions.
 
 ## Example
 In the following example, we will configure AppSourceCop to validate that all new elements have a name that contains one of the specified affixes.
 
 > [!NOTE]  
-> Make sure code analysis is enabled and ```${AppSourceCop}``` is in the list of enabled code analyzers.
+> Make sure that code analysis is enabled and `${AppSourceCop}` is specified in the list of enabled code analyzers. For more information see [AL Language Extension Configuration](../devenv-al-extension-configuration.md).
 
 We start by creating the default "Hello world" extension.
 ```
@@ -115,7 +115,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 }
 ```
 
-We continue by adding the configuration file ```AppSourceCop.json``` in the project's root folder and setting its content to the following. 
+We continue by adding the configuration file `AppSourceCop.json` in the project's root folder and setting its content to the following. 
 
 ```
 {
@@ -131,7 +131,7 @@ AS0011: The identifier 'CustomerListExt' must have at least one of the mandatory
 Prepending **Foo** to the name of the page extension object will fix this error and prevent clashes between this page extension and page extensions added by other developers.
 
 > [!NOTE]  
-> It is still possible to use the ```mandatoryPrefix``` and ```mandatorySuffix``` properties in the ```AppSourceCop.json```, for more information see [AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md).
+> It is still possible to use the `mandatoryPrefix` and `mandatorySuffix` properties in the `AppSourceCop.json`. For more information see [AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md).
 
 ## See Also  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  

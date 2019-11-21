@@ -19,7 +19,7 @@ The NAV Server machine is: MyNavVm.cloudapp.net
 The NAV Server machine administrator password: 123NavVm!a  
 The NAV Server Instance is: DynamicsNAV90_Ins1  
 The NAV Server account credentials: NSTService/P@ssword312  
-The Windows Client can be downloaded via ClickOnce at: http://MyNavVm.cloudapp.net:9004  
+The Windows Client can be downloaded via ClickOnce at: https://MyNavVm.cloudapp.net:9004  
 The Web Client can be accessed at: https://MyNavVm.cloudapp.net/DynamicsNAV90_Ins1  
 A user has been added to the database with the following credentials:  
   user=navuser  
@@ -34,7 +34,7 @@ A user has been added to the database with the following credentials:
 
 2.  In the address, type the following address:  
 
-     **http://virtualmachine.cloudapp.net: port**  
+     **https://virtualmachine.cloudapp.net: port**  
 
      Substitute *virtualmachine* with the name of the virtual machine that in running the [!INCLUDE[nav_server](includes/nav_server_md.md)].  
 

@@ -51,7 +51,7 @@ This topic provides information about the features of the [!INCLUDE[nav_web](inc
  The [!INCLUDE[nav_web](includes/nav_web_md.md)] supports various assistive technologies, such as high contrast, screen readers, and voice recognition software. Some assistive technologies may not work well with certain elements on [!INCLUDE[navnow](includes/navnow_md.md)] content.  
   
 ## Additional Accessibility Information  
- For additional information about accessibility with Microsoft products and assistive technologies, see the [Microsoft Accessibility web site](http://go.microsoft.com/fwlink/?LinkID=251222).  
+ For additional information about accessibility with Microsoft products and assistive technologies, see the [Microsoft Accessibility web site](https://go.microsoft.com/fwlink/?LinkID=251222).  
   
 ## See Also  
  [Microsoft Dynamics NAV Web Client](Microsoft-Dynamics-NAV-Web-Client.md)   

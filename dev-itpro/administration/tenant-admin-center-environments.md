@@ -1,17 +1,16 @@
 ---
 title: Managing Environments | Microsoft Docs
 description: Use the Business Central administration center to manage your tenant environments. 
-author: jaredha
+author: edupont04
 
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.reviewer: edupont
 ms.search.keywords: administration, tenant, admin, environment, sandbox
 ms.date: 10/01/2019
-ms.author: jaredha
+ms.author: edupont
 ---
 
 # Managing Environments
