@@ -55,9 +55,9 @@ You can use the **Help and Support** page in your customers' tenants to find tec
 
 ## How does Microsoft handle database sizes?
 
-For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in the database. If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
+For [!INCLUDE [prodshort](developer/includes/prodshort.md)] online, there is a limit to how much data we allow each tenant to store in the environment (database). If a tenant exceeds this limit, we contact the partner and work with them to reduce the size of the data.  
 
-The limit for the size of each tenant's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.  
+The limit for the size of each environment's data in [!INCLUDE [prodshort](developer/includes/prodshort.md)] is currently set to 80 GB.  
 
 ## See Also
 
