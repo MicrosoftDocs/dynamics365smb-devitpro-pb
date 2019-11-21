@@ -46,11 +46,11 @@ You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Win
 |Removed| [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is steadily moving toward being an online offering only, and a step in that direction is to use a browser-based user interface. |
 
 ### Reports 204-207
-You can use the sales document reports to view important information about your sales numbers.
+You can generate external-facing documents, such as sales invoices and order confirmations, that you send to customers as PDF files.
 
 |Column1  |Column2  |
 |---------|---------|
-|Removed|The reports in the 204-207 range contained much of the same capabilities as the reports in the 1304 to 1307 range. To avoid duplicated features, the reports in the 204-207 range are removed |
+|Replaced|The reports in the 204-207 range are replaced by the reports in the 1304 to 1307 range. To avoid duplicated features, the reports in the 204-207 range will be removed.|
 <!--This is just stubbed in. Need the actual names of the reports and a better description of the information they provided.-->
 
 ## Objects that have been marked as obsolete
