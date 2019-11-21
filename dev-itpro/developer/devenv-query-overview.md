@@ -32,19 +32,40 @@ The following examples show how you can use queries in your [!INCLUDE[d365fin_lo
 
 - Exposing data as an OData web service. You can register and publish a query as a web service in the same way that you can register and publish pages or codeunits as web services. You use the **Web Services** page to register and publish pages, codeunits, or queries. After you expose a query as a web service, you can import it into other applications.
 
-- Using the query as data source for a page. To do this, you have to copy the query resulting dataset into a temporary table and set it as the source table for the page. 
+- Using the query as a data source for a page. To do this, you have to copy the query resulting dataset into a temporary table and set it as the source table for the page. 
 
-- Using the query as data source for a report. To do this, you have to copy the query resulting dataset into a temporary table which can then be used by the report. 
+- Using the query as a data source for a report. To do this, you have to copy the query resulting dataset into a temporary table which can then be used by the report. 
 
-- Performing calculations on data such as sums or averages, detecting duplicate records, replacing nested loops that use record variables to retrieve records, improving method performance, etc.
+- Performing calculations on data such as computing sums and averages. For more information see, [Query Totals and Grouping](devenv-query-totals-grouping.md).
 
+- Replacing nested loops that use record variables to retrieve or to detect duplicate records. For more information, see [Using Queries Instead of Record Variables](devenv-query-using-instead-record-variables.md).
+
+## Query Data Type
+The query resulting dataset cannot be used directly by other objects such as pages and reports. Instead, you must create a [Query Data Type](methods-auto/query/queery-data-type.md) instance to apply methods for handling the data from the query object. You must first call the [OPEN Method](methods-auto/query/query-open/method.md) to be able to perform actions such as reading the dataset or setting filters and you must use the [CLOSE Method](methods-auto/query/query-close-method.md) when you are finished. You may write the code in a codeunit, for example. The following code sample illustrates how to do this.
+
+```
+var
+    MyQuery: Query "Customer SalesQuantity";
+    Text000: TextConst ENU='Customer name = %1, Quantity = %2';
+begin
+    // Sets a filter to display only sales quantities greater than 20.  
+    MyQuery.SETFILTER(Quantity, '>20');   
+    // Runs the query.  
+    MyQuery.OPEN;  
+    // Reads each row in the dataset and displays a message with column values.  
+    // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
+    while MyQuery.READ do  
+    begin  
+      MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);  
+    end;  
+    MyQuery.CLOSE;  
+end;
+```
 
 ## See Also
 [Query Object](devenv-query-object.md)  
 [Linking and Joining Data Items](devenv-query-links-joins.md)  
 [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
-[API Query Type](devenv-api-querytype.md)  
 [Query Properties](properties/devenv-query-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
