@@ -32,11 +32,11 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 ## Prerequisites
 
-1. Upgrade to Business Central Spring 2019 [Cumulative Update 4](https://support.microsoft.com/help/4518535) (version 14).
+1. Upgrade to Business Central Spring 2019 [Cumulative Update 5](https://support.microsoft.com/help/4522949) (version 14.6).
 
-   If your current deployment is already running cumulative update 5 (version 14.6), we recommend to wait until the first cumulative update for version 15 is released.
+   If your current deployment is already running cumulative update 6 (version 14.7), we recommend to wait until the Update 2 for version 15 is released.
 
- For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
+For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
 
 <!-- Replace step 1 with this for CU1
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.X) that is compatible with the version 15 .
