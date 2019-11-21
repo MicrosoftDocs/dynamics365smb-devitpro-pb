@@ -266,6 +266,7 @@
 ##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
 #### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
+#### [Repeater Controls](developer/devenv-repeater-controls.md)
 #### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
