@@ -70,7 +70,7 @@ When this step is completed, you can proceed to update your Business Central sol
 
     1. Get a list of installed extensions.
     
-        This step is optional but it can be useful to the the names and versions of the extensions.
+        This step is optional, but it can be useful to the names and versions of the extensions.
 
         To get a list of installed extensions, use the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
 
