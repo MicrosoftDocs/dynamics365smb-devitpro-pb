@@ -191,7 +191,7 @@ You can analyze the conflicts in any tool, make the relevant changes, and then r
 
 ## Task 5: Import and Compile Merged Objects in an Empty Database
 
-After you have completed the merge, you import the new merged application objects as text files into a new (empty) [!INCLUDE[prodshort](../developer/includes/prodshort.md) database, and then compile all objects. You must resolve any compilation errors before you can continue. The text files include successfully merged code, and code that is partially merged. You can import the partially merged objects into the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] development environment and resolve the conflicts there.
+After you have completed the merge, you import the new merged application objects as text files into a new (empty) [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and then compile all objects. You must resolve any compilation errors before you can continue. The text files include successfully merged code, and code that is partially merged. You can import the partially merged objects into the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] development environment and resolve the conflicts there.
 
 1. Create a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database for the new upgraded application. The database should be empty, except for the system tables.
 
@@ -208,7 +208,7 @@ After you have completed the merge, you import the new merged application object
 
     There are three ways to import the files:
 
-    - Use the [[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+    - Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
         For more information see [To import objects by using the development environment UI](../cside/cside-import-objects.md#ImportObjectsDevEnv).
     - Use the finsql.exe to run the [ImportObjects](https://docs.microsoft.com/dynamics-nav/importobjects) command.
