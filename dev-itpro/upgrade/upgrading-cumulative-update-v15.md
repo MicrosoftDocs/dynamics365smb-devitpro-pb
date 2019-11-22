@@ -75,7 +75,7 @@ When this step is completed, you can proceed to update your Business Central sol
         To get a list of installed extensions, use the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
 
         ```powershell 
-        Get-NAVAppInfo -ServerInstance <server instance name> -Tenant Default | % { Uninstall-NAVApp -ServerInstance <server instance name> -Name $_.Name -Version $_.Version }
+        Get-NAVAppInfo -ServerInstance <server instance name> -Tenant Default
         ``` 
     2. Uninstall the extensions.
     
