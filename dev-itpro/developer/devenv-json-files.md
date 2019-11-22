@@ -71,6 +71,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |longRunningSqlStatementsThreshold|Yes|Sets the number of miliseconds spent before a SQL statement is considered as long running in the debugger.|
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
+|disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
 
 ### Publish to cloud settings
 |Setting|Mandatory|Value|
@@ -91,6 +92,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |longRunningSqlStatementsThreshold|Yes|Sets the number of miliseconds spent before a SQL statement is considered as long running in the debugger.|
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps are not part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
+|disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
 
 
 <!--
