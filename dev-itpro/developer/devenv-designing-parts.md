@@ -13,39 +13,49 @@ ms.author: mikebc
 ---
 # Page Parts Overview
 
-Pages can be composed of other pages, known as parts. A part is a special page that is designed to be embedded within another page. This is useful when designing richer user experiences and is also a great way to reuse code across multiple pages. 
+Parts are a special category of page that are intended to be embedded within another page. The hosting page can be composed of one or more page parts. This is useful when designing richer user experiences, displaying information from a table that is different from the source table of the hosting page, and is a great way to reuse your code across multiple pages.
 
-Parts can either represent self-contained functionality, or can be contextual and exchange context from the hosting page.
+## Hosting parts on a page
+The following table illustrates how parts can be creatively arranged on a page to deliver unique experiences.
 
-## Hosting Parts on a page
-
-<image1>
-<image2>
+|[![Illustration of a Role Center page consisting of multiple parts.](media/parts-rolecenter-illustration.png)]|description|
+|[![Illustration of a page display multiple FactBoxes in the FactBox pane.](media/parts-factbox-illustration.png)]|description|
+|[![Illustration of a document page displaying an embedded list.](media/parts-document-illustration.png)]|description|
+|[![Illustration of a page displaying multiple parts above eachother.](media/parts-multipart-illustration.png)]|description|
+|[![Illustration of a page displaying multiple parts side by side.](media/parts-sidebyside-illustration.png)]|description|
 
 ## Different types of parts
-Business Central offers different of parts that serve different purposes.
+Business Central offers different types of parts for embedding within other pages.
 
 |PageType|Purpose|Recommended use|
+|----|---|---|
 |[ListParts](devenv-designing-listparts.md)|Display a list of records|Role Centers, FactBoxes on Card\Document\worksheet\List, tabular step in Wizard, subpage on Document|
 |[CardParts](devenv-designing-cardparts.md)|Flexible canvas that can be used to display almost any page controls|Role Centers, FactBoxes on Card\Document\worksheet\List, step in Wizard|
 |[HeadlineParts](devenv-create-role-center-headline.md)|Display business insights|Role Centers only|
 
+## Adding a part to a page
+To add a part to a page in Visual Studio Code, you add a part control on the hosting page object that references the page part object. The part control also defines a small set of properties, such as the caption that will accompany the part. This allows separation of responsibility: the page part object defines self-contained functionality, whilst the hosting page defines how the part should behave without knowledge of its' functionality.
+
+For more information aboute the properties of a part control, see [Page Properties](properties/devenv-page-property-overview.md).
+
 ## Design considerations
 
 ### Part size
-The size of a part is automatically determined by the client and will vary depending on where the part has been embedded on the page, other content surrounding the part, and the overall available space of the display target. Developers cannot specify the prefferred, minimum or maximum height and width of a part.
+The size of a part is automatically determined by the client and will vary depending on where the part has been embedded on the page, other content surrounding the part, and the overall available space of the display target. Developers cannot specify the preferred, minimum or maximum height or width of a part.
 
 ### Good to know
+- Parts can either represent self-contained functionality, or can be contextual and exchange information with the hosting page.
 - A part cannot be hosted within another part. Business Central allows a maximum of one level of page nesting.
 - Parts cannot be placed within repeater controls.
-- Parts can be dynamically enabled.
+- Parts can be made visible programmatically, for example, depending on whether the feature has been set up by administrators.
 - Parts are not intended to be displayed on their own without a hosting page.
-
-## ??? Reference to part reference and properties???
+- Business users can hide parts or show hidden parts on the hosting page.
+- When implementing pages to suit a variety of customers, departments or business users, it is common practice to make visible the parts that are generally applicable, and hide the parts that are only valuable to some categories of users.
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
 [FactBoxes](devenv-adding-a-factbox-to-page.md)  
+[Designing pages with multiple lists](devenv-designing-multilist-pages.md)
 [Page Extension Object](devenv-page-ext-object.md)  
 [Personalizing Your Workspace](https://docs.microsoft.com/dynamics365/business-central/ui-personalization-user)  
 [Using Designer](devenv-inclient-designer.md)  
