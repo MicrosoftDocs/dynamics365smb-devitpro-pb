@@ -269,6 +269,7 @@
 ##### [Designing List Parts](developer/devenv-designing-listparts.md)
 ##### [Designing Card Parts](developer/devenv-designing-cardparts.md)
 ##### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
+##### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md)
 ##### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 #### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Fields
