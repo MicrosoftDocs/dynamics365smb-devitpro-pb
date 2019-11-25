@@ -15,9 +15,6 @@ caps.latest.revision: 16
 # Deprecated Features in W1
 This topic describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This information will change with future releases, and might not include each deprecated feature.
 
-> [!NOTE]
-> The features in this topic are deprecated in Business Central 2019 release wave 2.
-
 Deprecated features will not be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which can happen for a variety of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed in this topic, either the feature itself or an extension of it, you should look for or develop an alternative. 
 
 The next sections in this topic give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by "moved, removed, or replaced."
@@ -48,10 +45,29 @@ You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Win
 ### Reports 204-207
 You can generate external-facing documents, such as sales invoices and order confirmations, that you send to customers as PDF files.
 
-|Column1  |Column2  |
+|Moved, Removed, or Replaced? |Why?|
 |---------|---------|
 |Replaced|The reports in the 204-207 range are replaced by the reports in the 1304 to 1307 range. To avoid duplicated features, the reports in the 204-207 range will be removed.|
 <!--This is just stubbed in. Need the actual names of the reports and a better description of the information they provided.-->
+
+### User Personalizations and Profile Configurations
+You can personalize pages and configure profiles by adding or removing fields, and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will save your changes. 
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Replaced|The shift to AL caused the legacy personalization and profile configuration features to become outdated, so we have introduced new tooling. In this release, existing personalizations and configurations are discarded, and you must use the new tools to recreate them. Your new changes will be kept in future releases.|
+
+### Excel COM Add-In
+You can export data to an Excel workbook.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed| The Excel COM add-in was installed along with the Windows client. Now that the Windows Client is no longer available, neither is the add-in. To export data to Excel, use the **Edit in Excel** action.|
+
+### Printing Programmatically
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed| This feature was tied to the Windows Client, which is no longer available.|
 
 ## Objects that have been marked as obsolete
 Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
