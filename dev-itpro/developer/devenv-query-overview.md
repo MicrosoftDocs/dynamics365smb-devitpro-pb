@@ -41,7 +41,7 @@ The following examples show how you can use queries in your [!INCLUDE[d365fin_lo
 - Replacing nested loops that use record variables to retrieve or to detect duplicate records. For more information, see [Using Queries Instead of Record Variables](devenv-query-using-instead-record-variables.md).
 
 ## Query Data Type
-The query resulting dataset cannot be used directly by other objects such as pages and reports. Instead, you must create a [Query Data Type](methods-auto/query/queery-data-type.md) instance and apply methods for handling the data from the query object. You must first call the [OPEN Method](methods-auto/query/query-open/method.md) to be able to perform actions such as reading the dataset or setting filters and you must use the [CLOSE Method](methods-auto/query/query-close-method.md) when you are finished. You can write this code in a codeunit, for example. The following example illustrates how to do this.
+The query resulting dataset cannot be used directly by other objects such as pages and reports. Instead, you must create a [Query Data Type](methods-auto/query/query-data-type.md) instance and apply methods for handling the data from the query object. You must first call the [OPEN Method](methods-auto/query/queryinstance-open-method.md) to be able to perform actions such as reading the dataset or setting filters and you must use the [CLOSE Method](methods-auto/query/queryinstance-close-method.md) when you are finished. You can write this code in a codeunit, for example. The following example illustrates how to do this. 
 
 ```
 var
