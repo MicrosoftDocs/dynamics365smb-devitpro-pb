@@ -26,7 +26,7 @@ The following figure provides a high-level representation of a [!INCLUDE[prodsho
 The databases store the application metadata and business data. If you have a single-tenant deployment, this data is stored in a single database. In multitenant deployment, the application metadata is stored in the application database and the business data is stored in one or more tenant databases.
 
 ### Application stack
-The application is comprised of one or more AL extensions that define the objects (such as table, pages, reports, and codeunits) and code the make up the business logic. Each extension is compiled and delivered as a .app file, which is published to the Business Central Server instance.
+The application is comprised of one or more AL extensions that define the objects (such as table, pages, reports, and codeunits) and code that the make up the business logic. Each extension is compiled and delivered as a .app file, which is published to the Business Central Server instance.
 
 - Base application
 
@@ -40,7 +40,7 @@ The application is comprised of one or more AL extensions that define the object
 
 ### Single-tenant and multitenant deployments
 
-The process for upgrading the very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data are included in the same database, while with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+The process for upgrading is very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data are included in the same database, while with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
 ### Platform versus application update
 
@@ -48,7 +48,9 @@ A platform update does not change the application. It basically involves convert
 
 An application update essentially involves publishing new versions of extensions that include the latest application modifications, synchronizing the databases with any schema changes introduced by the new extensions, and updating affected data. The installation media (DVD) includes new versions of the Microsoft Base Application, Microsoft System Application and Microsoft extensions. For a custom Base Application, the DVD also includes the AL source code for the Microsoft Base Application, which you can use to compare and merge updates into your custom application. Third-party extensions for which you do not have a new version for the update will only have to be recompiled.
 
-## Download the update package
+## PREPARATION
+
+## Download update package
 
 The first thing to do is to download the update package that matches your Business Central solution.
 
@@ -60,7 +62,7 @@ The first thing to do is to download the update package that matches your Busine
 
 When this step is completed, you can proceed to update your Business Central solution to the new platform and application.
 
-## Prepare the existing databases
+## Prepare existing databases
 
 1. Backup your databases.
 
@@ -101,19 +103,46 @@ When this step is completed, you can proceed to update your Business Central sol
     Dismount-NAVTenant -ServerInstance <BC14 server instance> -Tenant <tenant ID>
     ```
 
-## Install Business Central components of the update
+## Install Business Central update
 
-From the installation media (DVD), run setup.exe to install Business Central. As a minimum, install the following components: Server, Web Server Components, SQL Server Components, and AL Development Environment (optional).
+From the installation media (DVD), run setup.exe to uninstall the current Business Central components and install the Business Central components included in the update. 
+
+1. Stop the [!INCLUDE[server](../developer/includes/server.md)] instance.
+
+    ```powershell
+    Stop-NAVServerInstance -ServerInstance <server instance>
+    ```
+2. Run setup.exe to uninstall your current version of Business Central.
+3. Run setup.exe again to install components of the update.
+
+    1. Follow setup pages until you get to the **Microsoft [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Setup** page.
+    2. Select **Advance installation options** > **Choose an installation option** > **Custom**.
+    3. On the **Customize the installation** page, select the following components as a minimum:
+
+        - AL Development Environment (optional but recommended)
+        - Server
+        - SQL Server Components
+            - Demo Database
+            
+            > [!IMPORTANT]
+            > You must select to install the Demo Database; otherwise the Server will not install. This is because in order the be installed, the server must connect to a  database that is compatible with the platform of the update. Because you have not converted your existing database, it is not compatible.
+        - Web Server Components.
+    3. Select **Next**.
+    4. On the **Specify parameters** page, specify the parameter values.
+    
+        > [!IMPORTANT]
+        > Make sure that you set the **SQL Database** to something other than the name of your database, so that your database is not overwritten.
+    5. Select **Apply** to complete the installation.
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## PLATFORM
+## PLATFORM UPDATE
 
 Follow the next few tasks to convert your database to the new platform of the update. In a multitenant deployment, this includes the application and tenant databases. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
 
 In addition, to ensure that the existing published extensions work on the new platform, you will recompile the extensions.
 
-## Convert the database to the new platform
+## Convert existing database to new platform
 
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the database conversion to the new platform.
@@ -134,7 +163,7 @@ In addition, to ensure that the existing published extensions work on the new pl
     Collation           :
     ```
 
-## Connect the server instance to the database
+## Connect server instance to database
 
 1. Connect the server instance to connect to the database.
 
@@ -169,7 +198,7 @@ Get-NAVAppInfo -ServerInstance <server instance> | Repair-NAVApp
 > [!NOTE]
 > If you plan on updating the application you can skip this step for extensions for which you have new versions built on the new platform. For example, this includes Microsoft extensions that are on the DVD.  
 
-## Synchronize the tenant
+## Synchronize tenant
 
 1. (Multitenant only) Mount the tenant to the new Business Central Server instance.
 
@@ -215,14 +244,14 @@ To install an extension, you use the [Install-NAVApp cmdlet](https://docs.micros
     ```
 At this point, your solution has been updated to the latest platform.
 
-## <a name="Application"></a> APPLICATION
+## <a name="Application"></a> APPLICATION UPDATE
 
 Follow the next tasks to update the application code to the new features and hotfixes. This includes publishing new versions of the System Application extension (if it was used in old solution), the Base Application extension, and any add-on extensions (Microsoft and third- party) that were used in the old solution.
 
 > [!NOTE]
 > If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](https://mbs.microsoft.com/customersource/northamerica/NAV/learning/documentation/how-to-articles/downloadnavlicensecs)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
 
-## Upgrade the System Application
+## Upgrade System Application
 
 Follow these steps if your existing solution uses the Microsoft System Application; if not, you can skip this procedure.
 
@@ -256,7 +285,7 @@ Follow these steps if your existing solution uses the Microsoft System Applicati
 
     Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables of the System Application.
 
-## Upgrade the Base Application
+## Upgrade Base Application
 
 ### Microsoft Base Application
 
@@ -287,7 +316,7 @@ Follow these steps if your existing solution uses the Microsoft Base Application
 
     Upgrading data updates the data that is stored in the tables of the tenant database to the schema changes that have been made to tables of the Base Application.
 
-### Upgrade a custom Base Application
+### Upgrade custom Base Application
 
 If you have a custom Base Application instead of the Microsoft Base Application, and you want the new application features and hotfixes that are included in the Microsoft Base Application, then you will have to merge the modifications made in the Microsoft Base Application into your custom Base Application and create a new version of your custom Base Application.
 
