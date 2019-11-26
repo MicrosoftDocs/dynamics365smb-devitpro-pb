@@ -18,11 +18,11 @@ Parts are a special category of page that are intended to be embedded within ano
 ## Hosting parts on a page
 The following table illustrates how parts can be creatively arranged on a page to deliver unique experiences.
 
-|[![Illustration of a Role Center page consisting of multiple parts.](media/parts-rolecenter-illustration.png)]|description|
-|[![Illustration of a page display multiple FactBoxes in the FactBox pane.](media/parts-factbox-illustration.png)]|description|
-|[![Illustration of a document page displaying an embedded list.](media/parts-document-illustration.png)]|description|
-|[![Illustration of a page displaying multiple parts above eachother.](media/parts-multipart-illustration.png)]|description|
-|[![Illustration of a page displaying multiple parts side by side.](media/parts-sidebyside-illustration.png)]|description|
+|![Illustration of a Role Center page consisting of multiple parts.](media/parts-rolecenter-illustration.png)|Pages of type **Role Center** are typically composed of multiple page parts that display business headlines, KPIs and other cues to help users get an overview of their work.|
+|![Illustration of a page display multiple FactBoxes in the FactBox pane.](media/parts-factbox-illustration.png)|Most page types can display a number of FactBoxes in the FactBox pane, that display information related to the current record.|
+|![Illustration of a document page displaying an embedded list.](media/parts-document-illustration.png)|Pages of type **Document** are  used to model transactional data which typically consists of a header and detailed lines. Since these records come from different tables, a part is used to display lines that originate from a related table.|
+|![Illustration of a page displaying multiple parts above eachother.](media/parts-multipart-illustration.png)|Related lists can be displayed above eachother. This is a common pattern allowing one list to be filled by the selected record of another list.|
+|![Illustration of a page displaying multiple parts side by side.](media/parts-sidebyside-illustration.png)|When records from two tables need to be compared together, parts can be displayed side by side.|
 
 ## Different types of parts
 Business Central offers different types of parts for embedding within other pages.
