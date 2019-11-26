@@ -8,7 +8,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/11/2019
+ms.date: 11/25/2019
 ms.author: edupont
 
 ---
@@ -72,9 +72,9 @@ You can submit support requests from the Partner Center or from the [!INCLUDE [p
 If you are logged into the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **New Support Request** link in the Help menu to submit a support request on behalf of your customer. This opens a new browser tab so that you can submit the support request in the Power Platform Admin Center.  
 
 > [!IMPORTANT]
-> You must be registered as a partner in order to submit a support request. You can be a member of the Helpdesk Agent group in the customer's Azure AD tenant, or you can be a global administrator. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).  
+> Your company must be registered as a partner in order to submit a support request, and you must have the ASfP (Advanced Support for Partners) support plan. The support person can be a member of the Helpdesk Agent group in the customer's Azure AD tenant or a global administrator. For more information, see [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad). Your service account manager can get you more information about getting the ASfP, and if you already have a support plan, they can get the contract information and access ID that you must specify when you submit a new support request on behalf of your customer.  
 
-In the Power Platform Admin Center, you are automatically logged in with information about the customer tenant that you are working on behalf of. Create a new support request and fill in the fields as appropriate. You can find most of the necessary information in the administration center, including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers.  
+In the Power Platform Admin Center, you are automatically logged in with information about the customer tenant that you are working on behalf of. Create a new support request and fill in the fields as appropriate. You can find most of the necessary information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], including the tenant ID and the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version numbers.  
 
 For more information, see [Power Platform Admin Center](/power-platform/admin/admin-documentation).
 

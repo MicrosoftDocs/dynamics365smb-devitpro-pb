@@ -90,7 +90,7 @@ Get-NavServerUser -serverInstance NAV -tenant default |? LicenseType -eq "FullUs
 This will assign the Premium plan to the admin user in the database.
 
 > [!TIP]  
-> To set up test users, you can clone the [createtestusers](https://github.com/NAVDEMO/CreateTestUsers) repository and modify the code to create the users on the `oninstall` trigger with the password that you want.
+> To set up test users, you can clone the [createtestusers](https://dev.azure.com/businesscentralapps/CreateTestUsers) repository and modify the code to create the users on the `oninstall` trigger with the password that you want.
 
 ## See Also
 [Programming in AL](devenv-programming-in-al.md)  
