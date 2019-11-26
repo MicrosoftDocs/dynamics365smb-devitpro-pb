@@ -247,6 +247,7 @@
 ### [Pages Overview](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
 ### [Page Extension Object](developer/devenv-page-ext-object.md)
+### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Role Centers
 #### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Sample Role Center](developer/devenv-simple-role-center-example.md)
@@ -271,7 +272,6 @@
 ##### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
 ##### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md)
 ##### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
-#### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
 #### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
