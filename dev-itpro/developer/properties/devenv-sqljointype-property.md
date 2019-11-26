@@ -24,7 +24,7 @@ Sets the data item link type between data items in a query to determine the reco
 ## Property Value  
  The **SQLJoinType** property has the following values.  
   
-|Value|[!INCLUDE[bp_tabledescription](../includes/bp_tabledescription_md.md)]|  
+|Value|Description| 
 |-----------|---------------------------------------|  
 |`LeftOuterJoin`|The resulting dataset contains every record from the upper data item table, even if a record does not have a matching value in the lower data item for fields that are linked by the [DataItemLink Property \(Query\)](devenv-dataitemlink-query-property.md).|  
 |`InnerJoin`|The resulting dataset contains records from data item tables where a match is found between the fields that are linked by the **DataItemLink** property of the lower data item.|  
