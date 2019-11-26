@@ -13,7 +13,7 @@ ms.author: mikebc
 ---
 # Working with Card Parts
 
-** Hang in there! This content is coming soon. **
+**Hang in there! This content is coming soon.**
 
 ## See Also
 [AL Development Environment](devenv-reference-overview.md)  
