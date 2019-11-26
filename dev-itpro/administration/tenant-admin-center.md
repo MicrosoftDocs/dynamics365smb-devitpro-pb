@@ -56,7 +56,12 @@ As a partner, you can access the administration center from the Partner Dashboar
 You can also get to the administration center by navigating directly to the URL of a tenant as described in the previous section.
 
 > [!NOTE]
-> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).  
+> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).
+
+
+### Mobile apps
+
+Mobile apps cannot natively handle a setup where there is no environment called 'production' and that you need to use the protocol handler [link] to deal with such. In the future the mobile apps would be able to handle this edge case. We recommend not to remove 'production' environment if mobile apps are in use. 
 
 ## See also
 
