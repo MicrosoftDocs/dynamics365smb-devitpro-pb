@@ -66,7 +66,9 @@ When this step is completed, you can proceed to update your Business Central sol
 
 1. Backup your databases.
 
-2. (Single-tenant only) Uninstall all extensions from the all tenants.
+2. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+
+3. (Single-tenant only) Uninstall all extensions from the all tenants.
 
     In this step, you uninstall the Base Application, System Application (if used), and any other extensions that are currently installed on the database.
 
@@ -97,7 +99,7 @@ When this step is completed, you can proceed to update your Business Central sol
         Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID> | % { Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name $_.Name -Version $_.Version -Force}
         ``` 
 
-3. (Multitenant only) Dismount the tenants from the application database.
+4. (Multitenant only) Dismount the tenants from the application database.
 
     To dismount a tenant, use the [Dismount-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
