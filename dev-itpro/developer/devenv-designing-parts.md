@@ -18,8 +18,7 @@ Parts are a special category of page that are intended to be embedded within ano
 ## Hosting parts on a page
 The following table illustrates how parts can be creatively arranged on a page to deliver unique experiences.
 
-
-|Illustration of pattern|Typical usage|
+|Illustration of page pattern|Explanation|
 |---|---|
 |![Illustration of a Role Center page consisting of multiple parts.](media/parts-rolecenter-illustration.png)|Pages of type **Role Center** are typically composed of multiple page parts that display business headlines, KPIs and other cues to help users get an overview of their work.|
 |![Illustration of a page display multiple FactBoxes in the FactBox pane.](media/parts-factbox-illustration.png)|Most page types can display a number of FactBoxes in the FactBox pane, that display information related to the current record.|
@@ -28,11 +27,15 @@ The following table illustrates how parts can be creatively arranged on a page t
 |![Illustration of a page displaying multiple parts side by side.](media/parts-sidebyside-illustration.png)|When records from two tables need to be compared together, parts can be displayed side by side.|
 
 ## Different types of parts
-Business Central offers different types of parts for embedding within other pages.
+Business Central offers different types of parts that each 
 
 |PageType|Purpose|Recommended use|
 |----|---|---|
-|[ListParts](devenv-designing-listparts.md)|Display a list of records|- Role Centers  - FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus - Tabular step in a Wizard - Subpage on a Document page|
+|[ListParts](devenv-designing-listparts.md)|Display a list of records|
+- Role Centers
+- FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus
+- Tabular step in a Wizard
+- Subpage on a Document page|
 |[CardParts](devenv-designing-cardparts.md)|Flexible canvas that can be used to display almost any page controls, such as fields, cue tiles, charts, images or control addins.|- Role Centers - FactBoxes on pages of type Card, Document, Worksheet, List, ListPlus - Step in a Wizard|
 |[HeadlineParts](devenv-create-role-center-headline.md)|Display relevant insights from across the business|Role Centers only|
 
