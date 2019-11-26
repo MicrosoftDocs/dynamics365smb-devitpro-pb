@@ -65,9 +65,11 @@ You can export data to an Excel workbook.
 |Removed| The Excel COM add-in was installed along with the Windows client. Now that the Windows Client is no longer available, neither is the add-in. To export data to Excel, use the **Edit in Excel** action.|
 
 ### Printing Programmatically
+You can print documents such as invoices automatically, without prompting the user or without the user choosing to do so.
+
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed| This feature was tied to the Windows Client, which is no longer available.|
+|Removed| This feature was tied to the Windows Client, which is no longer available. |
 
 ## Objects that have been marked as obsolete
 Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
